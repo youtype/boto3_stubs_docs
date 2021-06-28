@@ -66,10 +66,16 @@ Exceptions:
 
 ### assume_role
 
+Returns a set of temporary security credentials that you can use to access AWS
+resources that you might not normally have access to.
+
 Type annotations for `boto3.client("sts").assume_role` method.
 
 Boto3 documentation:
 [STS.Client.assume_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role)
+
+Arguments mapping described in
+[AssumeRoleRequestTypeDef](./type_defs.md#assumerolerequesttypedef).
 
 Keyword-only arguments:
 
@@ -86,14 +92,21 @@ Keyword-only arguments:
 - `TokenCode`: `str`
 - `SourceIdentity`: `str`
 
-Returns [AssumeRoleResponseTypeDef](./type_defs.md#assumeroleresponsetypedef).
+Returns
+[AssumeRoleResponseResponseTypeDef](./type_defs.md#assumeroleresponseresponsetypedef).
 
 ### assume_role_with_saml
+
+Returns a set of temporary security credentials for users who have been
+authenticated via a SAML authentication response.
 
 Type annotations for `boto3.client("sts").assume_role_with_saml` method.
 
 Boto3 documentation:
 [STS.Client.assume_role_with_saml](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role_with_saml)
+
+Arguments mapping described in
+[AssumeRoleWithSAMLRequestTypeDef](./type_defs.md#assumerolewithsamlrequesttypedef).
 
 Keyword-only arguments:
 
@@ -106,15 +119,21 @@ Keyword-only arguments:
 - `DurationSeconds`: `int`
 
 Returns
-[AssumeRoleWithSAMLResponseTypeDef](./type_defs.md#assumerolewithsamlresponsetypedef).
+[AssumeRoleWithSAMLResponseResponseTypeDef](./type_defs.md#assumerolewithsamlresponseresponsetypedef).
 
 ### assume_role_with_web_identity
+
+Returns a set of temporary security credentials for users who have been
+authenticated in a mobile or web application with a web identity provider.
 
 Type annotations for `boto3.client("sts").assume_role_with_web_identity`
 method.
 
 Boto3 documentation:
 [STS.Client.assume_role_with_web_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role_with_web_identity)
+
+Arguments mapping described in
+[AssumeRoleWithWebIdentityRequestTypeDef](./type_defs.md#assumerolewithwebidentityrequesttypedef).
 
 Keyword-only arguments:
 
@@ -128,9 +147,11 @@ Keyword-only arguments:
 - `DurationSeconds`: `int`
 
 Returns
-[AssumeRoleWithWebIdentityResponseTypeDef](./type_defs.md#assumerolewithwebidentityresponsetypedef).
+[AssumeRoleWithWebIdentityResponseResponseTypeDef](./type_defs.md#assumerolewithwebidentityresponseresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("sts").can_paginate` method.
 
@@ -145,19 +166,27 @@ Returns `bool`.
 
 ### decode_authorization_message
 
+Decodes additional information about the authorization status of a request from
+an encoded message returned in response to an AWS request.
+
 Type annotations for `boto3.client("sts").decode_authorization_message` method.
 
 Boto3 documentation:
 [STS.Client.decode_authorization_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.decode_authorization_message)
+
+Arguments mapping described in
+[DecodeAuthorizationMessageRequestTypeDef](./type_defs.md#decodeauthorizationmessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `EncodedMessage`: `str` *(required)*
 
 Returns
-[DecodeAuthorizationMessageResponseTypeDef](./type_defs.md#decodeauthorizationmessageresponsetypedef).
+[DecodeAuthorizationMessageResponseResponseTypeDef](./type_defs.md#decodeauthorizationmessageresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("sts").generate_presigned_url` method.
 
@@ -175,19 +204,27 @@ Returns `str`.
 
 ### get_access_key_info
 
+Returns the account identifier for the specified access key ID.
+
 Type annotations for `boto3.client("sts").get_access_key_info` method.
 
 Boto3 documentation:
 [STS.Client.get_access_key_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_access_key_info)
+
+Arguments mapping described in
+[GetAccessKeyInfoRequestTypeDef](./type_defs.md#getaccesskeyinforequesttypedef).
 
 Keyword-only arguments:
 
 - `AccessKeyId`: `str` *(required)*
 
 Returns
-[GetAccessKeyInfoResponseTypeDef](./type_defs.md#getaccesskeyinforesponsetypedef).
+[GetAccessKeyInfoResponseResponseTypeDef](./type_defs.md#getaccesskeyinforesponseresponsetypedef).
 
 ### get_caller_identity
+
+Returns details about the IAM user or role whose credentials are used to call
+the operation.
 
 Type annotations for `boto3.client("sts").get_caller_identity` method.
 
@@ -195,14 +232,20 @@ Boto3 documentation:
 [STS.Client.get_caller_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_caller_identity)
 
 Returns
-[GetCallerIdentityResponseTypeDef](./type_defs.md#getcalleridentityresponsetypedef).
+[GetCallerIdentityResponseResponseTypeDef](./type_defs.md#getcalleridentityresponseresponsetypedef).
 
 ### get_federation_token
+
+Returns a set of temporary security credentials (consisting of an access key
+ID, a secret access key, and a security token) for a federated user.
 
 Type annotations for `boto3.client("sts").get_federation_token` method.
 
 Boto3 documentation:
 [STS.Client.get_federation_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_federation_token)
+
+Arguments mapping described in
+[GetFederationTokenRequestTypeDef](./type_defs.md#getfederationtokenrequesttypedef).
 
 Keyword-only arguments:
 
@@ -214,14 +257,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[GetFederationTokenResponseTypeDef](./type_defs.md#getfederationtokenresponsetypedef).
+[GetFederationTokenResponseResponseTypeDef](./type_defs.md#getfederationtokenresponseresponsetypedef).
 
 ### get_session_token
+
+Returns a set of temporary credentials for an AWS account or IAM user.
 
 Type annotations for `boto3.client("sts").get_session_token` method.
 
 Boto3 documentation:
 [STS.Client.get_session_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_session_token)
+
+Arguments mapping described in
+[GetSessionTokenRequestTypeDef](./type_defs.md#getsessiontokenrequesttypedef).
 
 Keyword-only arguments:
 
@@ -230,4 +278,4 @@ Keyword-only arguments:
 - `TokenCode`: `str`
 
 Returns
-[GetSessionTokenResponseTypeDef](./type_defs.md#getsessiontokenresponsetypedef).
+[GetSessionTokenResponseResponseTypeDef](./type_defs.md#getsessiontokenresponseresponsetypedef).

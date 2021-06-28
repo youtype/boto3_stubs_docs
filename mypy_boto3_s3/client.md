@@ -162,10 +162,15 @@ Exceptions:
 
 ### abort_multipart_upload
 
+This action aborts a multipart upload.
+
 Type annotations for `boto3.client("s3").abort_multipart_upload` method.
 
 Boto3 documentation:
 [S3.Client.abort_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.abort_multipart_upload)
+
+Arguments mapping described in
+[AbortMultipartUploadRequestTypeDef](./type_defs.md#abortmultipartuploadrequesttypedef).
 
 Keyword-only arguments:
 
@@ -177,9 +182,11 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[AbortMultipartUploadOutputTypeDef](./type_defs.md#abortmultipartuploadoutputtypedef).
+[AbortMultipartUploadOutputResponseTypeDef](./type_defs.md#abortmultipartuploadoutputresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("s3").can_paginate` method.
 
@@ -194,10 +201,15 @@ Returns `bool`.
 
 ### complete_multipart_upload
 
+Completes a multipart upload by assembling previously uploaded parts.
+
 Type annotations for `boto3.client("s3").complete_multipart_upload` method.
 
 Boto3 documentation:
 [S3.Client.complete_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.complete_multipart_upload)
+
+Arguments mapping described in
+[CompleteMultipartUploadRequestTypeDef](./type_defs.md#completemultipartuploadrequesttypedef).
 
 Keyword-only arguments:
 
@@ -211,16 +223,21 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[CompleteMultipartUploadOutputTypeDef](./type_defs.md#completemultipartuploadoutputtypedef).
+[CompleteMultipartUploadOutputResponseTypeDef](./type_defs.md#completemultipartuploadoutputresponsetypedef).
 
 ### copy
+
+Copy an object from one S3 location to another.
 
 Type annotations for `boto3.client("s3").copy` method.
 
 Boto3 documentation:
 [S3.Client.copy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.copy)
 
-Arguments:
+Arguments mapping described in
+[ClientCopyRequestTypeDef](./type_defs.md#clientcopyrequesttypedef).
+
+Keyword-only arguments:
 
 - `CopySource`: [CopySourceTypeDef](./type_defs.md#copysourcetypedef)
   *(required)*
@@ -233,10 +250,15 @@ Arguments:
 
 ### copy_object
 
+Creates a copy of an object that is already stored in Amazon S3.
+
 Type annotations for `boto3.client("s3").copy_object` method.
 
 Boto3 documentation:
 [S3.Client.copy_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.copy_object)
+
+Arguments mapping described in
+[CopyObjectRequestTypeDef](./type_defs.md#copyobjectrequesttypedef).
 
 Keyword-only arguments:
 
@@ -251,10 +273,10 @@ Keyword-only arguments:
 - `ContentLanguage`: `str`
 - `ContentType`: `str`
 - `CopySourceIfMatch`: `str`
-- `CopySourceIfModifiedSince`: `datetime`
+- `CopySourceIfModifiedSince`: `Union`\[`datetime`, `str`\]
 - `CopySourceIfNoneMatch`: `str`
-- `CopySourceIfUnmodifiedSince`: `datetime`
-- `Expires`: `datetime`
+- `CopySourceIfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
+- `Expires`: `Union`\[`datetime`, `str`\]
 - `GrantFullControl`: `str`
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
@@ -281,20 +303,26 @@ Keyword-only arguments:
   [RequestPayerType](./literals.md#requestpayertype))
 - `Tagging`: `str`
 - `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
-- `ObjectLockRetainUntilDate`: `datetime`
+- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
 - `ObjectLockLegalHoldStatus`:
   [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `ExpectedBucketOwner`: `str`
 - `ExpectedSourceBucketOwner`: `str`
 
-Returns [CopyObjectOutputTypeDef](./type_defs.md#copyobjectoutputtypedef).
+Returns
+[CopyObjectOutputResponseTypeDef](./type_defs.md#copyobjectoutputresponsetypedef).
 
 ### create_bucket
+
+Creates a new S3 bucket.
 
 Type annotations for `boto3.client("s3").create_bucket` method.
 
 Boto3 documentation:
 [S3.Client.create_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.create_bucket)
+
+Arguments mapping described in
+[CreateBucketRequestTypeDef](./type_defs.md#createbucketrequesttypedef).
 
 Keyword-only arguments:
 
@@ -309,14 +337,20 @@ Keyword-only arguments:
 - `GrantWriteACP`: `str`
 - `ObjectLockEnabledForBucket`: `bool`
 
-Returns [CreateBucketOutputTypeDef](./type_defs.md#createbucketoutputtypedef).
+Returns
+[CreateBucketOutputResponseTypeDef](./type_defs.md#createbucketoutputresponsetypedef).
 
 ### create_multipart_upload
+
+This action initiates a multipart upload and returns an upload ID.
 
 Type annotations for `boto3.client("s3").create_multipart_upload` method.
 
 Boto3 documentation:
 [S3.Client.create_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.create_multipart_upload)
+
+Arguments mapping described in
+[CreateMultipartUploadRequestTypeDef](./type_defs.md#createmultipartuploadrequesttypedef).
 
 Keyword-only arguments:
 
@@ -328,7 +362,7 @@ Keyword-only arguments:
 - `ContentEncoding`: `str`
 - `ContentLanguage`: `str`
 - `ContentType`: `str`
-- `Expires`: `datetime`
+- `Expires`: `Union`\[`datetime`, `str`\]
 - `GrantFullControl`: `str`
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
@@ -348,20 +382,25 @@ Keyword-only arguments:
   [RequestPayerType](./literals.md#requestpayertype))
 - `Tagging`: `str`
 - `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
-- `ObjectLockRetainUntilDate`: `datetime`
+- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
 - `ObjectLockLegalHoldStatus`:
   [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[CreateMultipartUploadOutputTypeDef](./type_defs.md#createmultipartuploadoutputtypedef).
+[CreateMultipartUploadOutputResponseTypeDef](./type_defs.md#createmultipartuploadoutputresponsetypedef).
 
 ### delete_bucket
+
+Deletes the S3 bucket.
 
 Type annotations for `boto3.client("s3").delete_bucket` method.
 
 Boto3 documentation:
 [S3.Client.delete_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket)
+
+Arguments mapping described in
+[DeleteBucketRequestTypeDef](./type_defs.md#deletebucketrequesttypedef).
 
 Keyword-only arguments:
 
@@ -370,11 +409,17 @@ Keyword-only arguments:
 
 ### delete_bucket_analytics_configuration
 
+Deletes an analytics configuration for the bucket (specified by the analytics
+configuration ID).
+
 Type annotations for `boto3.client("s3").delete_bucket_analytics_configuration`
 method.
 
 Boto3 documentation:
 [S3.Client.delete_bucket_analytics_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_analytics_configuration)
+
+Arguments mapping described in
+[DeleteBucketAnalyticsConfigurationRequestTypeDef](./type_defs.md#deletebucketanalyticsconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -384,10 +429,15 @@ Keyword-only arguments:
 
 ### delete_bucket_cors
 
+Deletes the `cors` configuration information set for the bucket.
+
 Type annotations for `boto3.client("s3").delete_bucket_cors` method.
 
 Boto3 documentation:
 [S3.Client.delete_bucket_cors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_cors)
+
+Arguments mapping described in
+[DeleteBucketCorsRequestTypeDef](./type_defs.md#deletebucketcorsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -396,10 +446,16 @@ Keyword-only arguments:
 
 ### delete_bucket_encryption
 
+This implementation of the DELETE action removes default encryption from the
+bucket.
+
 Type annotations for `boto3.client("s3").delete_bucket_encryption` method.
 
 Boto3 documentation:
 [S3.Client.delete_bucket_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_encryption)
+
+Arguments mapping described in
+[DeleteBucketEncryptionRequestTypeDef](./type_defs.md#deletebucketencryptionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -408,11 +464,16 @@ Keyword-only arguments:
 
 ### delete_bucket_intelligent_tiering_configuration
 
+Deletes the S3 Intelligent-Tiering configuration from the specified bucket.
+
 Type annotations for
 `boto3.client("s3").delete_bucket_intelligent_tiering_configuration` method.
 
 Boto3 documentation:
 [S3.Client.delete_bucket_intelligent_tiering_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_intelligent_tiering_configuration)
+
+Arguments mapping described in
+[DeleteBucketIntelligentTieringConfigurationRequestTypeDef](./type_defs.md#deletebucketintelligenttieringconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -421,11 +482,17 @@ Keyword-only arguments:
 
 ### delete_bucket_inventory_configuration
 
+Deletes an inventory configuration (identified by the inventory ID) from the
+bucket.
+
 Type annotations for `boto3.client("s3").delete_bucket_inventory_configuration`
 method.
 
 Boto3 documentation:
 [S3.Client.delete_bucket_inventory_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_inventory_configuration)
+
+Arguments mapping described in
+[DeleteBucketInventoryConfigurationRequestTypeDef](./type_defs.md#deletebucketinventoryconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -435,10 +502,15 @@ Keyword-only arguments:
 
 ### delete_bucket_lifecycle
 
+Deletes the lifecycle configuration from the specified bucket.
+
 Type annotations for `boto3.client("s3").delete_bucket_lifecycle` method.
 
 Boto3 documentation:
 [S3.Client.delete_bucket_lifecycle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_lifecycle)
+
+Arguments mapping described in
+[DeleteBucketLifecycleRequestTypeDef](./type_defs.md#deletebucketlifecyclerequesttypedef).
 
 Keyword-only arguments:
 
@@ -447,11 +519,17 @@ Keyword-only arguments:
 
 ### delete_bucket_metrics_configuration
 
+Deletes a metrics configuration for the Amazon CloudWatch request metrics
+(specified by the metrics configuration ID) from the bucket.
+
 Type annotations for `boto3.client("s3").delete_bucket_metrics_configuration`
 method.
 
 Boto3 documentation:
 [S3.Client.delete_bucket_metrics_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_metrics_configuration)
+
+Arguments mapping described in
+[DeleteBucketMetricsConfigurationRequestTypeDef](./type_defs.md#deletebucketmetricsconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -461,11 +539,16 @@ Keyword-only arguments:
 
 ### delete_bucket_ownership_controls
 
+Removes `OwnershipControls` for an Amazon S3 bucket.
+
 Type annotations for `boto3.client("s3").delete_bucket_ownership_controls`
 method.
 
 Boto3 documentation:
 [S3.Client.delete_bucket_ownership_controls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_ownership_controls)
+
+Arguments mapping described in
+[DeleteBucketOwnershipControlsRequestTypeDef](./type_defs.md#deletebucketownershipcontrolsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -474,10 +557,16 @@ Keyword-only arguments:
 
 ### delete_bucket_policy
 
+This implementation of the DELETE action uses the policy subresource to delete
+the policy of a specified bucket.
+
 Type annotations for `boto3.client("s3").delete_bucket_policy` method.
 
 Boto3 documentation:
 [S3.Client.delete_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_policy)
+
+Arguments mapping described in
+[DeleteBucketPolicyRequestTypeDef](./type_defs.md#deletebucketpolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -486,10 +575,15 @@ Keyword-only arguments:
 
 ### delete_bucket_replication
 
+Deletes the replication configuration from the bucket.
+
 Type annotations for `boto3.client("s3").delete_bucket_replication` method.
 
 Boto3 documentation:
 [S3.Client.delete_bucket_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_replication)
+
+Arguments mapping described in
+[DeleteBucketReplicationRequestTypeDef](./type_defs.md#deletebucketreplicationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -498,10 +592,15 @@ Keyword-only arguments:
 
 ### delete_bucket_tagging
 
+Deletes the tags from the bucket.
+
 Type annotations for `boto3.client("s3").delete_bucket_tagging` method.
 
 Boto3 documentation:
 [S3.Client.delete_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_tagging)
+
+Arguments mapping described in
+[DeleteBucketTaggingRequestTypeDef](./type_defs.md#deletebuckettaggingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -510,10 +609,15 @@ Keyword-only arguments:
 
 ### delete_bucket_website
 
+This action removes the website configuration for a bucket.
+
 Type annotations for `boto3.client("s3").delete_bucket_website` method.
 
 Boto3 documentation:
 [S3.Client.delete_bucket_website](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_website)
+
+Arguments mapping described in
+[DeleteBucketWebsiteRequestTypeDef](./type_defs.md#deletebucketwebsiterequesttypedef).
 
 Keyword-only arguments:
 
@@ -522,10 +626,16 @@ Keyword-only arguments:
 
 ### delete_object
 
+Removes the null version (if there is one) of an object and inserts a delete
+marker, which becomes the latest version of the object.
+
 Type annotations for `boto3.client("s3").delete_object` method.
 
 Boto3 documentation:
 [S3.Client.delete_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_object)
+
+Arguments mapping described in
+[DeleteObjectRequestTypeDef](./type_defs.md#deleteobjectrequesttypedef).
 
 Keyword-only arguments:
 
@@ -538,14 +648,20 @@ Keyword-only arguments:
 - `BypassGovernanceRetention`: `bool`
 - `ExpectedBucketOwner`: `str`
 
-Returns [DeleteObjectOutputTypeDef](./type_defs.md#deleteobjectoutputtypedef).
+Returns
+[DeleteObjectOutputResponseTypeDef](./type_defs.md#deleteobjectoutputresponsetypedef).
 
 ### delete_object_tagging
+
+Removes the entire tag set from the specified object.
 
 Type annotations for `boto3.client("s3").delete_object_tagging` method.
 
 Boto3 documentation:
 [S3.Client.delete_object_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_object_tagging)
+
+Arguments mapping described in
+[DeleteObjectTaggingRequestTypeDef](./type_defs.md#deleteobjecttaggingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -555,14 +671,20 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[DeleteObjectTaggingOutputTypeDef](./type_defs.md#deleteobjecttaggingoutputtypedef).
+[DeleteObjectTaggingOutputResponseTypeDef](./type_defs.md#deleteobjecttaggingoutputresponsetypedef).
 
 ### delete_objects
+
+This action enables you to delete multiple objects from a bucket using a single
+HTTP request.
 
 Type annotations for `boto3.client("s3").delete_objects` method.
 
 Boto3 documentation:
 [S3.Client.delete_objects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_objects)
+
+Arguments mapping described in
+[DeleteObjectsRequestTypeDef](./type_defs.md#deleteobjectsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -575,14 +697,19 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[DeleteObjectsOutputTypeDef](./type_defs.md#deleteobjectsoutputtypedef).
+[DeleteObjectsOutputResponseTypeDef](./type_defs.md#deleteobjectsoutputresponsetypedef).
 
 ### delete_public_access_block
+
+Removes the `PublicAccessBlock` configuration for an Amazon S3 bucket.
 
 Type annotations for `boto3.client("s3").delete_public_access_block` method.
 
 Boto3 documentation:
 [S3.Client.delete_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_public_access_block)
+
+Arguments mapping described in
+[DeletePublicAccessBlockRequestTypeDef](./type_defs.md#deletepublicaccessblockrequesttypedef).
 
 Keyword-only arguments:
 
@@ -591,12 +718,17 @@ Keyword-only arguments:
 
 ### download_file
 
+Download an S3 object to a file.
+
 Type annotations for `boto3.client("s3").download_file` method.
 
 Boto3 documentation:
 [S3.Client.download_file](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.download_file)
 
-Arguments:
+Arguments mapping described in
+[ClientDownloadFileRequestTypeDef](./type_defs.md#clientdownloadfilerequesttypedef).
+
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `Key`: `str` *(required)*
@@ -607,12 +739,17 @@ Arguments:
 
 ### download_fileobj
 
+Download an object from S3 to a file-like object.
+
 Type annotations for `boto3.client("s3").download_fileobj` method.
 
 Boto3 documentation:
 [S3.Client.download_fileobj](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.download_fileobj)
 
-Arguments:
+Arguments mapping described in
+[ClientDownloadFileobjRequestTypeDef](./type_defs.md#clientdownloadfileobjrequesttypedef).
+
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `Key`: `str` *(required)*
@@ -623,12 +760,17 @@ Arguments:
 
 ### generate_presigned_post
 
+Builds the url and the form fields used for a presigned s3 post.
+
 Type annotations for `boto3.client("s3").generate_presigned_post` method.
 
 Boto3 documentation:
 [S3.Client.generate_presigned_post](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.generate_presigned_post)
 
-Arguments:
+Arguments mapping described in
+[ClientGeneratePresignedPostRequestTypeDef](./type_defs.md#clientgeneratepresignedpostrequesttypedef).
+
+Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `Key`: `str` *(required)*
@@ -639,6 +781,8 @@ Arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("s3").generate_presigned_url` method.
 
@@ -656,11 +800,18 @@ Returns `str`.
 
 ### get_bucket_accelerate_configuration
 
+This implementation of the GET action uses the `accelerate` subresource to
+return the Transfer Acceleration state of a bucket, which is either `Enabled`
+or `Suspended`.
+
 Type annotations for `boto3.client("s3").get_bucket_accelerate_configuration`
 method.
 
 Boto3 documentation:
 [S3.Client.get_bucket_accelerate_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_accelerate_configuration)
+
+Arguments mapping described in
+[GetBucketAccelerateConfigurationRequestTypeDef](./type_defs.md#getbucketaccelerateconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -668,23 +819,33 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketAccelerateConfigurationOutputTypeDef](./type_defs.md#getbucketaccelerateconfigurationoutputtypedef).
+[GetBucketAccelerateConfigurationOutputResponseTypeDef](./type_defs.md#getbucketaccelerateconfigurationoutputresponsetypedef).
 
 ### get_bucket_acl
+
+This implementation of the `GET` action uses the `acl` subresource to return
+the access control list (ACL) of a bucket.
 
 Type annotations for `boto3.client("s3").get_bucket_acl` method.
 
 Boto3 documentation:
 [S3.Client.get_bucket_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_acl)
 
+Arguments mapping described in
+[GetBucketAclRequestTypeDef](./type_defs.md#getbucketaclrequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
 
-Returns [GetBucketAclOutputTypeDef](./type_defs.md#getbucketacloutputtypedef).
+Returns
+[GetBucketAclOutputResponseTypeDef](./type_defs.md#getbucketacloutputresponsetypedef).
 
 ### get_bucket_analytics_configuration
+
+This implementation of the GET action returns an analytics configuration
+(identified by the analytics configuration ID) from the bucket.
 
 Type annotations for `boto3.client("s3").get_bucket_analytics_configuration`
 method.
@@ -692,6 +853,9 @@ method.
 Boto3 documentation:
 [S3.Client.get_bucket_analytics_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_analytics_configuration)
 
+Arguments mapping described in
+[GetBucketAnalyticsConfigurationRequestTypeDef](./type_defs.md#getbucketanalyticsconfigurationrequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
@@ -699,39 +863,51 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketAnalyticsConfigurationOutputTypeDef](./type_defs.md#getbucketanalyticsconfigurationoutputtypedef).
+[GetBucketAnalyticsConfigurationOutputResponseTypeDef](./type_defs.md#getbucketanalyticsconfigurationoutputresponsetypedef).
 
 ### get_bucket_cors
+
+Returns the cors configuration information set for the bucket.
 
 Type annotations for `boto3.client("s3").get_bucket_cors` method.
 
 Boto3 documentation:
 [S3.Client.get_bucket_cors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_cors)
 
+Arguments mapping described in
+[GetBucketCorsRequestTypeDef](./type_defs.md#getbucketcorsrequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketCorsOutputTypeDef](./type_defs.md#getbucketcorsoutputtypedef).
+[GetBucketCorsOutputResponseTypeDef](./type_defs.md#getbucketcorsoutputresponsetypedef).
 
 ### get_bucket_encryption
+
+Returns the default encryption configuration for an Amazon S3 bucket.
 
 Type annotations for `boto3.client("s3").get_bucket_encryption` method.
 
 Boto3 documentation:
 [S3.Client.get_bucket_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_encryption)
 
+Arguments mapping described in
+[GetBucketEncryptionRequestTypeDef](./type_defs.md#getbucketencryptionrequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketEncryptionOutputTypeDef](./type_defs.md#getbucketencryptionoutputtypedef).
+[GetBucketEncryptionOutputResponseTypeDef](./type_defs.md#getbucketencryptionoutputresponsetypedef).
 
 ### get_bucket_intelligent_tiering_configuration
+
+Gets the S3 Intelligent-Tiering configuration from the specified bucket.
 
 Type annotations for
 `boto3.client("s3").get_bucket_intelligent_tiering_configuration` method.
@@ -739,15 +915,21 @@ Type annotations for
 Boto3 documentation:
 [S3.Client.get_bucket_intelligent_tiering_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_intelligent_tiering_configuration)
 
+Arguments mapping described in
+[GetBucketIntelligentTieringConfigurationRequestTypeDef](./type_defs.md#getbucketintelligenttieringconfigurationrequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `Id`: `str` *(required)*
 
 Returns
-[GetBucketIntelligentTieringConfigurationOutputTypeDef](./type_defs.md#getbucketintelligenttieringconfigurationoutputtypedef).
+[GetBucketIntelligentTieringConfigurationOutputResponseTypeDef](./type_defs.md#getbucketintelligenttieringconfigurationoutputresponsetypedef).
 
 ### get_bucket_inventory_configuration
+
+Returns an inventory configuration (identified by the inventory configuration
+ID) from the bucket.
 
 Type annotations for `boto3.client("s3").get_bucket_inventory_configuration`
 method.
@@ -755,6 +937,9 @@ method.
 Boto3 documentation:
 [S3.Client.get_bucket_inventory_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_inventory_configuration)
 
+Arguments mapping described in
+[GetBucketInventoryConfigurationRequestTypeDef](./type_defs.md#getbucketinventoryconfigurationrequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
@@ -762,14 +947,19 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketInventoryConfigurationOutputTypeDef](./type_defs.md#getbucketinventoryconfigurationoutputtypedef).
+[GetBucketInventoryConfigurationOutputResponseTypeDef](./type_defs.md#getbucketinventoryconfigurationoutputresponsetypedef).
 
 ### get_bucket_lifecycle
+
+.
 
 Type annotations for `boto3.client("s3").get_bucket_lifecycle` method.
 
 Boto3 documentation:
 [S3.Client.get_bucket_lifecycle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_lifecycle)
+
+Arguments mapping described in
+[GetBucketLifecycleRequestTypeDef](./type_defs.md#getbucketlifecyclerequesttypedef).
 
 Keyword-only arguments:
 
@@ -777,9 +967,11 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketLifecycleOutputTypeDef](./type_defs.md#getbucketlifecycleoutputtypedef).
+[GetBucketLifecycleOutputResponseTypeDef](./type_defs.md#getbucketlifecycleoutputresponsetypedef).
 
 ### get_bucket_lifecycle_configuration
+
+.
 
 Type annotations for `boto3.client("s3").get_bucket_lifecycle_configuration`
 method.
@@ -787,51 +979,71 @@ method.
 Boto3 documentation:
 [S3.Client.get_bucket_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_lifecycle_configuration)
 
+Arguments mapping described in
+[GetBucketLifecycleConfigurationRequestTypeDef](./type_defs.md#getbucketlifecycleconfigurationrequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketLifecycleConfigurationOutputTypeDef](./type_defs.md#getbucketlifecycleconfigurationoutputtypedef).
+[GetBucketLifecycleConfigurationOutputResponseTypeDef](./type_defs.md#getbucketlifecycleconfigurationoutputresponsetypedef).
 
 ### get_bucket_location
+
+Returns the Region the bucket resides in.
 
 Type annotations for `boto3.client("s3").get_bucket_location` method.
 
 Boto3 documentation:
 [S3.Client.get_bucket_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_location)
 
+Arguments mapping described in
+[GetBucketLocationRequestTypeDef](./type_defs.md#getbucketlocationrequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketLocationOutputTypeDef](./type_defs.md#getbucketlocationoutputtypedef).
+[GetBucketLocationOutputResponseTypeDef](./type_defs.md#getbucketlocationoutputresponsetypedef).
 
 ### get_bucket_logging
+
+Returns the logging status of a bucket and the permissions users have to view
+and modify that status.
 
 Type annotations for `boto3.client("s3").get_bucket_logging` method.
 
 Boto3 documentation:
 [S3.Client.get_bucket_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_logging)
 
+Arguments mapping described in
+[GetBucketLoggingRequestTypeDef](./type_defs.md#getbucketloggingrequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketLoggingOutputTypeDef](./type_defs.md#getbucketloggingoutputtypedef).
+[GetBucketLoggingOutputResponseTypeDef](./type_defs.md#getbucketloggingoutputresponsetypedef).
 
 ### get_bucket_metrics_configuration
+
+Gets a metrics configuration (specified by the metrics configuration ID) from
+the bucket.
 
 Type annotations for `boto3.client("s3").get_bucket_metrics_configuration`
 method.
 
 Boto3 documentation:
 [S3.Client.get_bucket_metrics_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_metrics_configuration)
+
+Arguments mapping described in
+[GetBucketMetricsConfigurationRequestTypeDef](./type_defs.md#getbucketmetricsconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -840,14 +1052,21 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketMetricsConfigurationOutputTypeDef](./type_defs.md#getbucketmetricsconfigurationoutputtypedef).
+[GetBucketMetricsConfigurationOutputResponseTypeDef](./type_defs.md#getbucketmetricsconfigurationoutputresponsetypedef).
 
 ### get_bucket_notification
+
+No longer used, see
+`GetBucketNotificationConfiguration <https://docs.aws.amazon .com/AmazonS3/latest/API/API_GetBucketNotificationConfiguration.html>`\_\_
+.
 
 Type annotations for `boto3.client("s3").get_bucket_notification` method.
 
 Boto3 documentation:
 [S3.Client.get_bucket_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_notification)
+
+Arguments mapping described in
+[GetBucketNotificationConfigurationRequestTypeDef](./type_defs.md#getbucketnotificationconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -855,9 +1074,11 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[NotificationConfigurationDeprecatedTypeDef](./type_defs.md#notificationconfigurationdeprecatedtypedef).
+[NotificationConfigurationDeprecatedResponseTypeDef](./type_defs.md#notificationconfigurationdeprecatedresponsetypedef).
 
 ### get_bucket_notification_configuration
+
+Returns the notification configuration of a bucket.
 
 Type annotations for `boto3.client("s3").get_bucket_notification_configuration`
 method.
@@ -865,156 +1086,205 @@ method.
 Boto3 documentation:
 [S3.Client.get_bucket_notification_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_notification_configuration)
 
+Arguments mapping described in
+[GetBucketNotificationConfigurationRequestTypeDef](./type_defs.md#getbucketnotificationconfigurationrequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef).
+[NotificationConfigurationResponseTypeDef](./type_defs.md#notificationconfigurationresponsetypedef).
 
 ### get_bucket_ownership_controls
+
+Retrieves `OwnershipControls` for an Amazon S3 bucket.
 
 Type annotations for `boto3.client("s3").get_bucket_ownership_controls` method.
 
 Boto3 documentation:
 [S3.Client.get_bucket_ownership_controls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_ownership_controls)
 
+Arguments mapping described in
+[GetBucketOwnershipControlsRequestTypeDef](./type_defs.md#getbucketownershipcontrolsrequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketOwnershipControlsOutputTypeDef](./type_defs.md#getbucketownershipcontrolsoutputtypedef).
+[GetBucketOwnershipControlsOutputResponseTypeDef](./type_defs.md#getbucketownershipcontrolsoutputresponsetypedef).
 
 ### get_bucket_policy
+
+Returns the policy of a specified bucket.
 
 Type annotations for `boto3.client("s3").get_bucket_policy` method.
 
 Boto3 documentation:
 [S3.Client.get_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_policy)
 
+Arguments mapping described in
+[GetBucketPolicyRequestTypeDef](./type_defs.md#getbucketpolicyrequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketPolicyOutputTypeDef](./type_defs.md#getbucketpolicyoutputtypedef).
+[GetBucketPolicyOutputResponseTypeDef](./type_defs.md#getbucketpolicyoutputresponsetypedef).
 
 ### get_bucket_policy_status
+
+Retrieves the policy status for an Amazon S3 bucket, indicating whether the
+bucket is public.
 
 Type annotations for `boto3.client("s3").get_bucket_policy_status` method.
 
 Boto3 documentation:
 [S3.Client.get_bucket_policy_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_policy_status)
 
+Arguments mapping described in
+[GetBucketPolicyStatusRequestTypeDef](./type_defs.md#getbucketpolicystatusrequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketPolicyStatusOutputTypeDef](./type_defs.md#getbucketpolicystatusoutputtypedef).
+[GetBucketPolicyStatusOutputResponseTypeDef](./type_defs.md#getbucketpolicystatusoutputresponsetypedef).
 
 ### get_bucket_replication
+
+Returns the replication configuration of a bucket.
 
 Type annotations for `boto3.client("s3").get_bucket_replication` method.
 
 Boto3 documentation:
 [S3.Client.get_bucket_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_replication)
 
+Arguments mapping described in
+[GetBucketReplicationRequestTypeDef](./type_defs.md#getbucketreplicationrequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketReplicationOutputTypeDef](./type_defs.md#getbucketreplicationoutputtypedef).
+[GetBucketReplicationOutputResponseTypeDef](./type_defs.md#getbucketreplicationoutputresponsetypedef).
 
 ### get_bucket_request_payment
+
+Returns the request payment configuration of a bucket.
 
 Type annotations for `boto3.client("s3").get_bucket_request_payment` method.
 
 Boto3 documentation:
 [S3.Client.get_bucket_request_payment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_request_payment)
 
+Arguments mapping described in
+[GetBucketRequestPaymentRequestTypeDef](./type_defs.md#getbucketrequestpaymentrequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketRequestPaymentOutputTypeDef](./type_defs.md#getbucketrequestpaymentoutputtypedef).
+[GetBucketRequestPaymentOutputResponseTypeDef](./type_defs.md#getbucketrequestpaymentoutputresponsetypedef).
 
 ### get_bucket_tagging
+
+Returns the tag set associated with the bucket.
 
 Type annotations for `boto3.client("s3").get_bucket_tagging` method.
 
 Boto3 documentation:
 [S3.Client.get_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_tagging)
 
+Arguments mapping described in
+[GetBucketTaggingRequestTypeDef](./type_defs.md#getbuckettaggingrequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketTaggingOutputTypeDef](./type_defs.md#getbuckettaggingoutputtypedef).
+[GetBucketTaggingOutputResponseTypeDef](./type_defs.md#getbuckettaggingoutputresponsetypedef).
 
 ### get_bucket_versioning
+
+Returns the versioning state of a bucket.
 
 Type annotations for `boto3.client("s3").get_bucket_versioning` method.
 
 Boto3 documentation:
 [S3.Client.get_bucket_versioning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_versioning)
 
+Arguments mapping described in
+[GetBucketVersioningRequestTypeDef](./type_defs.md#getbucketversioningrequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketVersioningOutputTypeDef](./type_defs.md#getbucketversioningoutputtypedef).
+[GetBucketVersioningOutputResponseTypeDef](./type_defs.md#getbucketversioningoutputresponsetypedef).
 
 ### get_bucket_website
+
+Returns the website configuration for a bucket.
 
 Type annotations for `boto3.client("s3").get_bucket_website` method.
 
 Boto3 documentation:
 [S3.Client.get_bucket_website](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_website)
 
+Arguments mapping described in
+[GetBucketWebsiteRequestTypeDef](./type_defs.md#getbucketwebsiterequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketWebsiteOutputTypeDef](./type_defs.md#getbucketwebsiteoutputtypedef).
+[GetBucketWebsiteOutputResponseTypeDef](./type_defs.md#getbucketwebsiteoutputresponsetypedef).
 
 ### get_object
+
+Retrieves objects from Amazon S3.
 
 Type annotations for `boto3.client("s3").get_object` method.
 
 Boto3 documentation:
 [S3.Client.get_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object)
 
+Arguments mapping described in
+[GetObjectRequestTypeDef](./type_defs.md#getobjectrequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `Key`: `str` *(required)*
 - `IfMatch`: `str`
-- `IfModifiedSince`: `datetime`
+- `IfModifiedSince`: `Union`\[`datetime`, `str`\]
 - `IfNoneMatch`: `str`
-- `IfUnmodifiedSince`: `datetime`
+- `IfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
 - `Range`: `str`
 - `ResponseCacheControl`: `str`
 - `ResponseContentDisposition`: `str`
 - `ResponseContentEncoding`: `str`
 - `ResponseContentLanguage`: `str`
 - `ResponseContentType`: `str`
-- `ResponseExpires`: `datetime`
+- `ResponseExpires`: `Union`\[`datetime`, `str`\]
 - `VersionId`: `str`
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKey`: `str`
@@ -1024,15 +1294,21 @@ Keyword-only arguments:
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
 
-Returns [GetObjectOutputTypeDef](./type_defs.md#getobjectoutputtypedef).
+Returns
+[GetObjectOutputResponseTypeDef](./type_defs.md#getobjectoutputresponsetypedef).
 
 ### get_object_acl
+
+Returns the access control list (ACL) of an object.
 
 Type annotations for `boto3.client("s3").get_object_acl` method.
 
 Boto3 documentation:
 [S3.Client.get_object_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_acl)
 
+Arguments mapping described in
+[GetObjectAclRequestTypeDef](./type_defs.md#getobjectaclrequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
@@ -1042,15 +1318,21 @@ Keyword-only arguments:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
-Returns [GetObjectAclOutputTypeDef](./type_defs.md#getobjectacloutputtypedef).
+Returns
+[GetObjectAclOutputResponseTypeDef](./type_defs.md#getobjectacloutputresponsetypedef).
 
 ### get_object_legal_hold
+
+Gets an object's current Legal Hold status.
 
 Type annotations for `boto3.client("s3").get_object_legal_hold` method.
 
 Boto3 documentation:
 [S3.Client.get_object_legal_hold](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_legal_hold)
 
+Arguments mapping described in
+[GetObjectLegalHoldRequestTypeDef](./type_defs.md#getobjectlegalholdrequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
@@ -1061,30 +1343,40 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetObjectLegalHoldOutputTypeDef](./type_defs.md#getobjectlegalholdoutputtypedef).
+[GetObjectLegalHoldOutputResponseTypeDef](./type_defs.md#getobjectlegalholdoutputresponsetypedef).
 
 ### get_object_lock_configuration
+
+Gets the Object Lock configuration for a bucket.
 
 Type annotations for `boto3.client("s3").get_object_lock_configuration` method.
 
 Boto3 documentation:
 [S3.Client.get_object_lock_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_lock_configuration)
 
+Arguments mapping described in
+[GetObjectLockConfigurationRequestTypeDef](./type_defs.md#getobjectlockconfigurationrequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetObjectLockConfigurationOutputTypeDef](./type_defs.md#getobjectlockconfigurationoutputtypedef).
+[GetObjectLockConfigurationOutputResponseTypeDef](./type_defs.md#getobjectlockconfigurationoutputresponsetypedef).
 
 ### get_object_retention
+
+Retrieves an object's retention settings.
 
 Type annotations for `boto3.client("s3").get_object_retention` method.
 
 Boto3 documentation:
 [S3.Client.get_object_retention](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_retention)
 
+Arguments mapping described in
+[GetObjectRetentionRequestTypeDef](./type_defs.md#getobjectretentionrequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
@@ -1095,15 +1387,20 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetObjectRetentionOutputTypeDef](./type_defs.md#getobjectretentionoutputtypedef).
+[GetObjectRetentionOutputResponseTypeDef](./type_defs.md#getobjectretentionoutputresponsetypedef).
 
 ### get_object_tagging
+
+Returns the tag-set of an object.
 
 Type annotations for `boto3.client("s3").get_object_tagging` method.
 
 Boto3 documentation:
 [S3.Client.get_object_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_tagging)
 
+Arguments mapping described in
+[GetObjectTaggingRequestTypeDef](./type_defs.md#getobjecttaggingrequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
@@ -1114,14 +1411,19 @@ Keyword-only arguments:
   [RequestPayerType](./literals.md#requestpayertype))
 
 Returns
-[GetObjectTaggingOutputTypeDef](./type_defs.md#getobjecttaggingoutputtypedef).
+[GetObjectTaggingOutputResponseTypeDef](./type_defs.md#getobjecttaggingoutputresponsetypedef).
 
 ### get_object_torrent
+
+Returns torrent files from a bucket.
 
 Type annotations for `boto3.client("s3").get_object_torrent` method.
 
 Boto3 documentation:
 [S3.Client.get_object_torrent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_torrent)
+
+Arguments mapping described in
+[GetObjectTorrentRequestTypeDef](./type_defs.md#getobjecttorrentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1132,14 +1434,19 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetObjectTorrentOutputTypeDef](./type_defs.md#getobjecttorrentoutputtypedef).
+[GetObjectTorrentOutputResponseTypeDef](./type_defs.md#getobjecttorrentoutputresponsetypedef).
 
 ### get_public_access_block
+
+Retrieves the `PublicAccessBlock` configuration for an Amazon S3 bucket.
 
 Type annotations for `boto3.client("s3").get_public_access_block` method.
 
 Boto3 documentation:
 [S3.Client.get_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_public_access_block)
+
+Arguments mapping described in
+[GetPublicAccessBlockRequestTypeDef](./type_defs.md#getpublicaccessblockrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1147,14 +1454,20 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetPublicAccessBlockOutputTypeDef](./type_defs.md#getpublicaccessblockoutputtypedef).
+[GetPublicAccessBlockOutputResponseTypeDef](./type_defs.md#getpublicaccessblockoutputresponsetypedef).
 
 ### head_bucket
+
+This action is useful to determine if a bucket exists and you have permission
+to access it.
 
 Type annotations for `boto3.client("s3").head_bucket` method.
 
 Boto3 documentation:
 [S3.Client.head_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.head_bucket)
+
+Arguments mapping described in
+[HeadBucketRequestTypeDef](./type_defs.md#headbucketrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1163,19 +1476,25 @@ Keyword-only arguments:
 
 ### head_object
 
+The HEAD action retrieves metadata from an object without returning the object
+itself.
+
 Type annotations for `boto3.client("s3").head_object` method.
 
 Boto3 documentation:
 [S3.Client.head_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.head_object)
+
+Arguments mapping described in
+[HeadObjectRequestTypeDef](./type_defs.md#headobjectrequesttypedef).
 
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `Key`: `str` *(required)*
 - `IfMatch`: `str`
-- `IfModifiedSince`: `datetime`
+- `IfModifiedSince`: `Union`\[`datetime`, `str`\]
 - `IfNoneMatch`: `str`
-- `IfUnmodifiedSince`: `datetime`
+- `IfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
 - `Range`: `str`
 - `VersionId`: `str`
 - `SSECustomerAlgorithm`: `str`
@@ -1186,9 +1505,12 @@ Keyword-only arguments:
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
 
-Returns [HeadObjectOutputTypeDef](./type_defs.md#headobjectoutputtypedef).
+Returns
+[HeadObjectOutputResponseTypeDef](./type_defs.md#headobjectoutputresponsetypedef).
 
 ### list_bucket_analytics_configurations
+
+Lists the analytics configurations for the bucket.
 
 Type annotations for `boto3.client("s3").list_bucket_analytics_configurations`
 method.
@@ -1196,6 +1518,9 @@ method.
 Boto3 documentation:
 [S3.Client.list_bucket_analytics_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_bucket_analytics_configurations)
 
+Arguments mapping described in
+[ListBucketAnalyticsConfigurationsRequestTypeDef](./type_defs.md#listbucketanalyticsconfigurationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
@@ -1203,9 +1528,11 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[ListBucketAnalyticsConfigurationsOutputTypeDef](./type_defs.md#listbucketanalyticsconfigurationsoutputtypedef).
+[ListBucketAnalyticsConfigurationsOutputResponseTypeDef](./type_defs.md#listbucketanalyticsconfigurationsoutputresponsetypedef).
 
 ### list_bucket_intelligent_tiering_configurations
+
+Lists the S3 Intelligent-Tiering configuration from the specified bucket.
 
 Type annotations for
 `boto3.client("s3").list_bucket_intelligent_tiering_configurations` method.
@@ -1213,15 +1540,20 @@ Type annotations for
 Boto3 documentation:
 [S3.Client.list_bucket_intelligent_tiering_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_bucket_intelligent_tiering_configurations)
 
+Arguments mapping described in
+[ListBucketIntelligentTieringConfigurationsRequestTypeDef](./type_defs.md#listbucketintelligenttieringconfigurationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ContinuationToken`: `str`
 
 Returns
-[ListBucketIntelligentTieringConfigurationsOutputTypeDef](./type_defs.md#listbucketintelligenttieringconfigurationsoutputtypedef).
+[ListBucketIntelligentTieringConfigurationsOutputResponseTypeDef](./type_defs.md#listbucketintelligenttieringconfigurationsoutputresponsetypedef).
 
 ### list_bucket_inventory_configurations
+
+Returns a list of inventory configurations for the bucket.
 
 Type annotations for `boto3.client("s3").list_bucket_inventory_configurations`
 method.
@@ -1229,6 +1561,9 @@ method.
 Boto3 documentation:
 [S3.Client.list_bucket_inventory_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_bucket_inventory_configurations)
 
+Arguments mapping described in
+[ListBucketInventoryConfigurationsRequestTypeDef](./type_defs.md#listbucketinventoryconfigurationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
@@ -1236,9 +1571,11 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[ListBucketInventoryConfigurationsOutputTypeDef](./type_defs.md#listbucketinventoryconfigurationsoutputtypedef).
+[ListBucketInventoryConfigurationsOutputResponseTypeDef](./type_defs.md#listbucketinventoryconfigurationsoutputresponsetypedef).
 
 ### list_bucket_metrics_configurations
+
+Lists the metrics configurations for the bucket.
 
 Type annotations for `boto3.client("s3").list_bucket_metrics_configurations`
 method.
@@ -1246,6 +1583,9 @@ method.
 Boto3 documentation:
 [S3.Client.list_bucket_metrics_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_bucket_metrics_configurations)
 
+Arguments mapping described in
+[ListBucketMetricsConfigurationsRequestTypeDef](./type_defs.md#listbucketmetricsconfigurationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
@@ -1253,23 +1593,31 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[ListBucketMetricsConfigurationsOutputTypeDef](./type_defs.md#listbucketmetricsconfigurationsoutputtypedef).
+[ListBucketMetricsConfigurationsOutputResponseTypeDef](./type_defs.md#listbucketmetricsconfigurationsoutputresponsetypedef).
 
 ### list_buckets
+
+Returns a list of all buckets owned by the authenticated sender of the request.
 
 Type annotations for `boto3.client("s3").list_buckets` method.
 
 Boto3 documentation:
 [S3.Client.list_buckets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_buckets)
 
-Returns [ListBucketsOutputTypeDef](./type_defs.md#listbucketsoutputtypedef).
+Returns
+[ListBucketsOutputResponseTypeDef](./type_defs.md#listbucketsoutputresponsetypedef).
 
 ### list_multipart_uploads
+
+This action lists in-progress multipart uploads.
 
 Type annotations for `boto3.client("s3").list_multipart_uploads` method.
 
 Boto3 documentation:
 [S3.Client.list_multipart_uploads](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_multipart_uploads)
+
+Arguments mapping described in
+[ListMultipartUploadsRequestTypeDef](./type_defs.md#listmultipartuploadsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1284,14 +1632,19 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[ListMultipartUploadsOutputTypeDef](./type_defs.md#listmultipartuploadsoutputtypedef).
+[ListMultipartUploadsOutputResponseTypeDef](./type_defs.md#listmultipartuploadsoutputresponsetypedef).
 
 ### list_object_versions
+
+Returns metadata about all versions of the objects in a bucket.
 
 Type annotations for `boto3.client("s3").list_object_versions` method.
 
 Boto3 documentation:
 [S3.Client.list_object_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_object_versions)
+
+Arguments mapping described in
+[ListObjectVersionsRequestTypeDef](./type_defs.md#listobjectversionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1306,14 +1659,19 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[ListObjectVersionsOutputTypeDef](./type_defs.md#listobjectversionsoutputtypedef).
+[ListObjectVersionsOutputResponseTypeDef](./type_defs.md#listobjectversionsoutputresponsetypedef).
 
 ### list_objects
+
+Returns some or all (up to 1,000) of the objects in a bucket.
 
 Type annotations for `boto3.client("s3").list_objects` method.
 
 Boto3 documentation:
 [S3.Client.list_objects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_objects)
+
+Arguments mapping described in
+[ListObjectsRequestTypeDef](./type_defs.md#listobjectsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1328,14 +1686,20 @@ Keyword-only arguments:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
-Returns [ListObjectsOutputTypeDef](./type_defs.md#listobjectsoutputtypedef).
+Returns
+[ListObjectsOutputResponseTypeDef](./type_defs.md#listobjectsoutputresponsetypedef).
 
 ### list_objects_v2
+
+Returns some or all (up to 1,000) of the objects in a bucket with each request.
 
 Type annotations for `boto3.client("s3").list_objects_v2` method.
 
 Boto3 documentation:
 [S3.Client.list_objects_v2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_objects_v2)
+
+Arguments mapping described in
+[ListObjectsV2RequestTypeDef](./type_defs.md#listobjectsv2requesttypedef).
 
 Keyword-only arguments:
 
@@ -1353,14 +1717,19 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[ListObjectsV2OutputTypeDef](./type_defs.md#listobjectsv2outputtypedef).
+[ListObjectsV2OutputResponseTypeDef](./type_defs.md#listobjectsv2outputresponsetypedef).
 
 ### list_parts
+
+Lists the parts that have been uploaded for a specific multipart upload.
 
 Type annotations for `boto3.client("s3").list_parts` method.
 
 Boto3 documentation:
 [S3.Client.list_parts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_parts)
+
+Arguments mapping described in
+[ListPartsRequestTypeDef](./type_defs.md#listpartsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1373,15 +1742,21 @@ Keyword-only arguments:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
-Returns [ListPartsOutputTypeDef](./type_defs.md#listpartsoutputtypedef).
+Returns
+[ListPartsOutputResponseTypeDef](./type_defs.md#listpartsoutputresponsetypedef).
 
 ### put_bucket_accelerate_configuration
+
+Sets the accelerate configuration of an existing bucket.
 
 Type annotations for `boto3.client("s3").put_bucket_accelerate_configuration`
 method.
 
 Boto3 documentation:
 [S3.Client.put_bucket_accelerate_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_accelerate_configuration)
+
+Arguments mapping described in
+[PutBucketAccelerateConfigurationRequestTypeDef](./type_defs.md#putbucketaccelerateconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1393,10 +1768,15 @@ Keyword-only arguments:
 
 ### put_bucket_acl
 
+Sets the permissions on an existing bucket using access control lists (ACL).
+
 Type annotations for `boto3.client("s3").put_bucket_acl` method.
 
 Boto3 documentation:
 [S3.Client.put_bucket_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_acl)
+
+Arguments mapping described in
+[PutBucketAclRequestTypeDef](./type_defs.md#putbucketaclrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1413,11 +1793,17 @@ Keyword-only arguments:
 
 ### put_bucket_analytics_configuration
 
+Sets an analytics configuration for the bucket (specified by the analytics
+configuration ID).
+
 Type annotations for `boto3.client("s3").put_bucket_analytics_configuration`
 method.
 
 Boto3 documentation:
 [S3.Client.put_bucket_analytics_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_analytics_configuration)
+
+Arguments mapping described in
+[PutBucketAnalyticsConfigurationRequestTypeDef](./type_defs.md#putbucketanalyticsconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1430,10 +1816,15 @@ Keyword-only arguments:
 
 ### put_bucket_cors
 
+Sets the `cors` configuration for your bucket.
+
 Type annotations for `boto3.client("s3").put_bucket_cors` method.
 
 Boto3 documentation:
 [S3.Client.put_bucket_cors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_cors)
+
+Arguments mapping described in
+[PutBucketCorsRequestTypeDef](./type_defs.md#putbucketcorsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1445,10 +1836,16 @@ Keyword-only arguments:
 
 ### put_bucket_encryption
 
+This action uses the `encryption` subresource to configure default encryption
+and Amazon S3 Bucket Key for an existing bucket.
+
 Type annotations for `boto3.client("s3").put_bucket_encryption` method.
 
 Boto3 documentation:
 [S3.Client.put_bucket_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_encryption)
+
+Arguments mapping described in
+[PutBucketEncryptionRequestTypeDef](./type_defs.md#putbucketencryptionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1461,11 +1858,16 @@ Keyword-only arguments:
 
 ### put_bucket_intelligent_tiering_configuration
 
+Puts a S3 Intelligent-Tiering configuration to the specified bucket.
+
 Type annotations for
 `boto3.client("s3").put_bucket_intelligent_tiering_configuration` method.
 
 Boto3 documentation:
 [S3.Client.put_bucket_intelligent_tiering_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_intelligent_tiering_configuration)
+
+Arguments mapping described in
+[PutBucketIntelligentTieringConfigurationRequestTypeDef](./type_defs.md#putbucketintelligenttieringconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1477,11 +1879,17 @@ Keyword-only arguments:
 
 ### put_bucket_inventory_configuration
 
+This implementation of the `PUT` action adds an inventory configuration
+(identified by the inventory ID) to the bucket.
+
 Type annotations for `boto3.client("s3").put_bucket_inventory_configuration`
 method.
 
 Boto3 documentation:
 [S3.Client.put_bucket_inventory_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_inventory_configuration)
+
+Arguments mapping described in
+[PutBucketInventoryConfigurationRequestTypeDef](./type_defs.md#putbucketinventoryconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1494,10 +1902,15 @@ Keyword-only arguments:
 
 ### put_bucket_lifecycle
 
+.
+
 Type annotations for `boto3.client("s3").put_bucket_lifecycle` method.
 
 Boto3 documentation:
 [S3.Client.put_bucket_lifecycle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_lifecycle)
+
+Arguments mapping described in
+[PutBucketLifecycleRequestTypeDef](./type_defs.md#putbucketlifecyclerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1508,11 +1921,17 @@ Keyword-only arguments:
 
 ### put_bucket_lifecycle_configuration
 
+Creates a new lifecycle configuration for the bucket or replaces an existing
+lifecycle configuration.
+
 Type annotations for `boto3.client("s3").put_bucket_lifecycle_configuration`
 method.
 
 Boto3 documentation:
 [S3.Client.put_bucket_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_lifecycle_configuration)
+
+Arguments mapping described in
+[PutBucketLifecycleConfigurationRequestTypeDef](./type_defs.md#putbucketlifecycleconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1523,10 +1942,16 @@ Keyword-only arguments:
 
 ### put_bucket_logging
 
+Set the logging parameters for a bucket and to specify permissions for who can
+view and modify the logging parameters.
+
 Type annotations for `boto3.client("s3").put_bucket_logging` method.
 
 Boto3 documentation:
 [S3.Client.put_bucket_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_logging)
+
+Arguments mapping described in
+[PutBucketLoggingRequestTypeDef](./type_defs.md#putbucketloggingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1538,11 +1963,17 @@ Keyword-only arguments:
 
 ### put_bucket_metrics_configuration
 
+Sets a metrics configuration (specified by the metrics configuration ID) for
+the bucket.
+
 Type annotations for `boto3.client("s3").put_bucket_metrics_configuration`
 method.
 
 Boto3 documentation:
 [S3.Client.put_bucket_metrics_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_metrics_configuration)
+
+Arguments mapping described in
+[PutBucketMetricsConfigurationRequestTypeDef](./type_defs.md#putbucketmetricsconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1555,20 +1986,29 @@ Keyword-only arguments:
 
 ### put_bucket_notification
 
+No longer used, see the
+`PutBucketNotificationConfiguration <https://docs.aws.am azon.com/AmazonS3/latest/API/API_PutBucketNotificationConfiguration.html>`\_\_
+operation.
+
 Type annotations for `boto3.client("s3").put_bucket_notification` method.
 
 Boto3 documentation:
 [S3.Client.put_bucket_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_notification)
 
+Arguments mapping described in
+[PutBucketNotificationRequestTypeDef](./type_defs.md#putbucketnotificationrequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `NotificationConfiguration`:
-  [NotificationConfigurationDeprecatedTypeDef](./type_defs.md#notificationconfigurationdeprecatedtypedef)
+  [NotificationConfigurationDeprecatedResponseTypeDef](./type_defs.md#notificationconfigurationdeprecatedresponsetypedef)
   *(required)*
 - `ExpectedBucketOwner`: `str`
 
 ### put_bucket_notification_configuration
+
+Enables notifications of specified events for a bucket.
 
 Type annotations for `boto3.client("s3").put_bucket_notification_configuration`
 method.
@@ -1576,20 +2016,28 @@ method.
 Boto3 documentation:
 [S3.Client.put_bucket_notification_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_notification_configuration)
 
+Arguments mapping described in
+[PutBucketNotificationConfigurationRequestTypeDef](./type_defs.md#putbucketnotificationconfigurationrequesttypedef).
+
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `NotificationConfiguration`:
-  [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
+  [NotificationConfigurationResponseTypeDef](./type_defs.md#notificationconfigurationresponsetypedef)
   *(required)*
 - `ExpectedBucketOwner`: `str`
 
 ### put_bucket_ownership_controls
 
+Creates or modifies `OwnershipControls` for an Amazon S3 bucket.
+
 Type annotations for `boto3.client("s3").put_bucket_ownership_controls` method.
 
 Boto3 documentation:
 [S3.Client.put_bucket_ownership_controls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_ownership_controls)
+
+Arguments mapping described in
+[PutBucketOwnershipControlsRequestTypeDef](./type_defs.md#putbucketownershipcontrolsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1602,10 +2050,15 @@ Keyword-only arguments:
 
 ### put_bucket_policy
 
+Applies an Amazon S3 bucket policy to an Amazon S3 bucket.
+
 Type annotations for `boto3.client("s3").put_bucket_policy` method.
 
 Boto3 documentation:
 [S3.Client.put_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_policy)
+
+Arguments mapping described in
+[PutBucketPolicyRequestTypeDef](./type_defs.md#putbucketpolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1616,10 +2069,15 @@ Keyword-only arguments:
 
 ### put_bucket_replication
 
+Creates a replication configuration or replaces an existing one.
+
 Type annotations for `boto3.client("s3").put_bucket_replication` method.
 
 Boto3 documentation:
 [S3.Client.put_bucket_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_replication)
+
+Arguments mapping described in
+[PutBucketReplicationRequestTypeDef](./type_defs.md#putbucketreplicationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1632,10 +2090,15 @@ Keyword-only arguments:
 
 ### put_bucket_request_payment
 
+Sets the request payment configuration for a bucket.
+
 Type annotations for `boto3.client("s3").put_bucket_request_payment` method.
 
 Boto3 documentation:
 [S3.Client.put_bucket_request_payment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_request_payment)
+
+Arguments mapping described in
+[PutBucketRequestPaymentRequestTypeDef](./type_defs.md#putbucketrequestpaymentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1647,10 +2110,15 @@ Keyword-only arguments:
 
 ### put_bucket_tagging
 
+Sets the tags for a bucket.
+
 Type annotations for `boto3.client("s3").put_bucket_tagging` method.
 
 Boto3 documentation:
 [S3.Client.put_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_tagging)
+
+Arguments mapping described in
+[PutBucketTaggingRequestTypeDef](./type_defs.md#putbuckettaggingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1660,10 +2128,15 @@ Keyword-only arguments:
 
 ### put_bucket_versioning
 
+Sets the versioning state of an existing bucket.
+
 Type annotations for `boto3.client("s3").put_bucket_versioning` method.
 
 Boto3 documentation:
 [S3.Client.put_bucket_versioning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_versioning)
+
+Arguments mapping described in
+[PutBucketVersioningRequestTypeDef](./type_defs.md#putbucketversioningrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1676,10 +2149,16 @@ Keyword-only arguments:
 
 ### put_bucket_website
 
+Sets the configuration of the website that is specified in the `website`
+subresource.
+
 Type annotations for `boto3.client("s3").put_bucket_website` method.
 
 Boto3 documentation:
 [S3.Client.put_bucket_website](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_website)
+
+Arguments mapping described in
+[PutBucketWebsiteRequestTypeDef](./type_defs.md#putbucketwebsiterequesttypedef).
 
 Keyword-only arguments:
 
@@ -1691,10 +2170,15 @@ Keyword-only arguments:
 
 ### put_object
 
+Adds an object to a bucket.
+
 Type annotations for `boto3.client("s3").put_object` method.
 
 Boto3 documentation:
 [S3.Client.put_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object)
+
+Arguments mapping described in
+[PutObjectRequestTypeDef](./type_defs.md#putobjectrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1709,7 +2193,7 @@ Keyword-only arguments:
 - `ContentLength`: `int`
 - `ContentMD5`: `str`
 - `ContentType`: `str`
-- `Expires`: `datetime`
+- `Expires`: `Union`\[`datetime`, `str`\]
 - `GrantFullControl`: `str`
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
@@ -1729,19 +2213,26 @@ Keyword-only arguments:
   [RequestPayerType](./literals.md#requestpayertype))
 - `Tagging`: `str`
 - `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
-- `ObjectLockRetainUntilDate`: `datetime`
+- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
 - `ObjectLockLegalHoldStatus`:
   [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `ExpectedBucketOwner`: `str`
 
-Returns [PutObjectOutputTypeDef](./type_defs.md#putobjectoutputtypedef).
+Returns
+[PutObjectOutputResponseTypeDef](./type_defs.md#putobjectoutputresponsetypedef).
 
 ### put_object_acl
+
+Uses the `acl` subresource to set the access control list (ACL) permissions for
+a new or existing object in an S3 bucket.
 
 Type annotations for `boto3.client("s3").put_object_acl` method.
 
 Boto3 documentation:
 [S3.Client.put_object_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object_acl)
+
+Arguments mapping described in
+[PutObjectAclRequestTypeDef](./type_defs.md#putobjectaclrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1760,14 +2251,20 @@ Keyword-only arguments:
 - `VersionId`: `str`
 - `ExpectedBucketOwner`: `str`
 
-Returns [PutObjectAclOutputTypeDef](./type_defs.md#putobjectacloutputtypedef).
+Returns
+[PutObjectAclOutputResponseTypeDef](./type_defs.md#putobjectacloutputresponsetypedef).
 
 ### put_object_legal_hold
+
+Applies a Legal Hold configuration to the specified object.
 
 Type annotations for `boto3.client("s3").put_object_legal_hold` method.
 
 Boto3 documentation:
 [S3.Client.put_object_legal_hold](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object_legal_hold)
+
+Arguments mapping described in
+[PutObjectLegalHoldRequestTypeDef](./type_defs.md#putobjectlegalholdrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1782,14 +2279,19 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[PutObjectLegalHoldOutputTypeDef](./type_defs.md#putobjectlegalholdoutputtypedef).
+[PutObjectLegalHoldOutputResponseTypeDef](./type_defs.md#putobjectlegalholdoutputresponsetypedef).
 
 ### put_object_lock_configuration
+
+Places an Object Lock configuration on the specified bucket.
 
 Type annotations for `boto3.client("s3").put_object_lock_configuration` method.
 
 Boto3 documentation:
 [S3.Client.put_object_lock_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object_lock_configuration)
+
+Arguments mapping described in
+[PutObjectLockConfigurationRequestTypeDef](./type_defs.md#putobjectlockconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1803,14 +2305,19 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[PutObjectLockConfigurationOutputTypeDef](./type_defs.md#putobjectlockconfigurationoutputtypedef).
+[PutObjectLockConfigurationOutputResponseTypeDef](./type_defs.md#putobjectlockconfigurationoutputresponsetypedef).
 
 ### put_object_retention
+
+Places an Object Retention configuration on an object.
 
 Type annotations for `boto3.client("s3").put_object_retention` method.
 
 Boto3 documentation:
 [S3.Client.put_object_retention](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object_retention)
+
+Arguments mapping described in
+[PutObjectRetentionRequestTypeDef](./type_defs.md#putobjectretentionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1826,14 +2333,19 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[PutObjectRetentionOutputTypeDef](./type_defs.md#putobjectretentionoutputtypedef).
+[PutObjectRetentionOutputResponseTypeDef](./type_defs.md#putobjectretentionoutputresponsetypedef).
 
 ### put_object_tagging
+
+Sets the supplied tag-set to an object that already exists in a bucket.
 
 Type annotations for `boto3.client("s3").put_object_tagging` method.
 
 Boto3 documentation:
 [S3.Client.put_object_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object_tagging)
+
+Arguments mapping described in
+[PutObjectTaggingRequestTypeDef](./type_defs.md#putobjecttaggingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1847,14 +2359,20 @@ Keyword-only arguments:
   [RequestPayerType](./literals.md#requestpayertype))
 
 Returns
-[PutObjectTaggingOutputTypeDef](./type_defs.md#putobjecttaggingoutputtypedef).
+[PutObjectTaggingOutputResponseTypeDef](./type_defs.md#putobjecttaggingoutputresponsetypedef).
 
 ### put_public_access_block
+
+Creates or modifies the `PublicAccessBlock` configuration for an Amazon S3
+bucket.
 
 Type annotations for `boto3.client("s3").put_public_access_block` method.
 
 Boto3 documentation:
 [S3.Client.put_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_public_access_block)
+
+Arguments mapping described in
+[PutPublicAccessBlockRequestTypeDef](./type_defs.md#putpublicaccessblockrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1867,10 +2385,16 @@ Keyword-only arguments:
 
 ### restore_object
 
+Restores an archived copy of an object back into Amazon S3 This action is not
+supported by Amazon S3 on Outposts.
+
 Type annotations for `boto3.client("s3").restore_object` method.
 
 Boto3 documentation:
 [S3.Client.restore_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.restore_object)
+
+Arguments mapping described in
+[RestoreObjectRequestTypeDef](./type_defs.md#restoreobjectrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1884,14 +2408,20 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[RestoreObjectOutputTypeDef](./type_defs.md#restoreobjectoutputtypedef).
+[RestoreObjectOutputResponseTypeDef](./type_defs.md#restoreobjectoutputresponsetypedef).
 
 ### select_object_content
+
+This action filters the contents of an Amazon S3 object based on a simple
+structured query language (SQL) statement.
 
 Type annotations for `boto3.client("s3").select_object_content` method.
 
 Boto3 documentation:
 [S3.Client.select_object_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.select_object_content)
+
+Arguments mapping described in
+[SelectObjectContentRequestTypeDef](./type_defs.md#selectobjectcontentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1915,16 +2445,21 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[SelectObjectContentOutputTypeDef](./type_defs.md#selectobjectcontentoutputtypedef).
+[SelectObjectContentOutputResponseTypeDef](./type_defs.md#selectobjectcontentoutputresponsetypedef).
 
 ### upload_file
+
+Upload a file to an S3 object.
 
 Type annotations for `boto3.client("s3").upload_file` method.
 
 Boto3 documentation:
 [S3.Client.upload_file](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.upload_file)
 
-Arguments:
+Arguments mapping described in
+[ClientUploadFileRequestTypeDef](./type_defs.md#clientuploadfilerequesttypedef).
+
+Keyword-only arguments:
 
 - `Filename`: `str` *(required)*
 - `Bucket`: `str` *(required)*
@@ -1935,12 +2470,17 @@ Arguments:
 
 ### upload_fileobj
 
+Upload a file-like object to S3.
+
 Type annotations for `boto3.client("s3").upload_fileobj` method.
 
 Boto3 documentation:
 [S3.Client.upload_fileobj](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.upload_fileobj)
 
-Arguments:
+Arguments mapping described in
+[ClientUploadFileobjRequestTypeDef](./type_defs.md#clientuploadfileobjrequesttypedef).
+
+Keyword-only arguments:
 
 - `Fileobj`: `IO`\[`Any`\] *(required)*
 - `Bucket`: `str` *(required)*
@@ -1951,10 +2491,15 @@ Arguments:
 
 ### upload_part
 
+Uploads a part in a multipart upload.
+
 Type annotations for `boto3.client("s3").upload_part` method.
 
 Boto3 documentation:
 [S3.Client.upload_part](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.upload_part)
+
+Arguments mapping described in
+[UploadPartRequestTypeDef](./type_defs.md#uploadpartrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1972,14 +2517,20 @@ Keyword-only arguments:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
-Returns [UploadPartOutputTypeDef](./type_defs.md#uploadpartoutputtypedef).
+Returns
+[UploadPartOutputResponseTypeDef](./type_defs.md#uploadpartoutputresponsetypedef).
 
 ### upload_part_copy
+
+Uploads a part by copying data from an existing object as data source.
 
 Type annotations for `boto3.client("s3").upload_part_copy` method.
 
 Boto3 documentation:
 [S3.Client.upload_part_copy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.upload_part_copy)
+
+Arguments mapping described in
+[UploadPartCopyRequestTypeDef](./type_defs.md#uploadpartcopyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1990,9 +2541,9 @@ Keyword-only arguments:
 - `PartNumber`: `int` *(required)*
 - `UploadId`: `str` *(required)*
 - `CopySourceIfMatch`: `str`
-- `CopySourceIfModifiedSince`: `datetime`
+- `CopySourceIfModifiedSince`: `Union`\[`datetime`, `str`\]
 - `CopySourceIfNoneMatch`: `str`
-- `CopySourceIfUnmodifiedSince`: `datetime`
+- `CopySourceIfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
 - `CopySourceRange`: `str`
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKey`: `str`
@@ -2006,14 +2557,20 @@ Keyword-only arguments:
 - `ExpectedSourceBucketOwner`: `str`
 
 Returns
-[UploadPartCopyOutputTypeDef](./type_defs.md#uploadpartcopyoutputtypedef).
+[UploadPartCopyOutputResponseTypeDef](./type_defs.md#uploadpartcopyoutputresponsetypedef).
 
 ### write_get_object_response
+
+Passes transformed objects to a `GetObject` operation when using Object Lambda
+Access Points.
 
 Type annotations for `boto3.client("s3").write_get_object_response` method.
 
 Boto3 documentation:
 [S3.Client.write_get_object_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.write_get_object_response)
+
+Arguments mapping described in
+[WriteGetObjectResponseRequestTypeDef](./type_defs.md#writegetobjectresponserequesttypedef).
 
 Keyword-only arguments:
 
@@ -2033,15 +2590,15 @@ Keyword-only arguments:
 - `ContentType`: `str`
 - `DeleteMarker`: `bool`
 - `ETag`: `str`
-- `Expires`: `datetime`
+- `Expires`: `Union`\[`datetime`, `str`\]
 - `Expiration`: `str`
-- `LastModified`: `datetime`
+- `LastModified`: `Union`\[`datetime`, `str`\]
 - `MissingMeta`: `int`
 - `Metadata`: `Dict`\[`str`, `str`\]
 - `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
 - `ObjectLockLegalHoldStatus`:
   [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
-- `ObjectLockRetainUntilDate`: `datetime`
+- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
 - `PartsCount`: `int`
 - `ReplicationStatus`:
   [ReplicationStatusType](./literals.md#replicationstatustype)

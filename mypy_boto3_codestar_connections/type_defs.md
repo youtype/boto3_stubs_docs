@@ -9,16 +9,28 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 CodeStarconnections module](#typed-dictionaries-for-boto3-codestarconnections-module)
   - [ConnectionTypeDef](#connectiontypedef)
-  - [CreateConnectionOutputTypeDef](#createconnectionoutputtypedef)
-  - [CreateHostOutputTypeDef](#createhostoutputtypedef)
-  - [GetConnectionOutputTypeDef](#getconnectionoutputtypedef)
-  - [GetHostOutputTypeDef](#gethostoutputtypedef)
+  - [CreateConnectionInputTypeDef](#createconnectioninputtypedef)
+  - [CreateConnectionOutputResponseTypeDef](#createconnectionoutputresponsetypedef)
+  - [CreateHostInputTypeDef](#createhostinputtypedef)
+  - [CreateHostOutputResponseTypeDef](#createhostoutputresponsetypedef)
+  - [DeleteConnectionInputTypeDef](#deleteconnectioninputtypedef)
+  - [DeleteHostInputTypeDef](#deletehostinputtypedef)
+  - [GetConnectionInputTypeDef](#getconnectioninputtypedef)
+  - [GetConnectionOutputResponseTypeDef](#getconnectionoutputresponsetypedef)
+  - [GetHostInputTypeDef](#gethostinputtypedef)
+  - [GetHostOutputResponseTypeDef](#gethostoutputresponsetypedef)
   - [HostTypeDef](#hosttypedef)
-  - [ListConnectionsOutputTypeDef](#listconnectionsoutputtypedef)
-  - [ListHostsOutputTypeDef](#listhostsoutputtypedef)
-  - [ListTagsForResourceOutputTypeDef](#listtagsforresourceoutputtypedef)
+  - [ListConnectionsInputTypeDef](#listconnectionsinputtypedef)
+  - [ListConnectionsOutputResponseTypeDef](#listconnectionsoutputresponsetypedef)
+  - [ListHostsInputTypeDef](#listhostsinputtypedef)
+  - [ListHostsOutputResponseTypeDef](#listhostsoutputresponsetypedef)
+  - [ListTagsForResourceInputTypeDef](#listtagsforresourceinputtypedef)
+  - [ListTagsForResourceOutputResponseTypeDef](#listtagsforresourceoutputresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [TagResourceInputTypeDef](#tagresourceinputtypedef)
   - [TagTypeDef](#tagtypedef)
+  - [UntagResourceInputTypeDef](#untagresourceinputtypedef)
+  - [UpdateHostInputTypeDef](#updatehostinputtypedef)
   - [VpcConfigurationTypeDef](#vpcconfigurationtypedef)
 
 ## ConnectionTypeDef
@@ -37,10 +49,26 @@ Optional fields:
   [ConnectionStatusType](./literals.md#connectionstatustype)
 - `HostArn`: `str`
 
-## CreateConnectionOutputTypeDef
+## CreateConnectionInputTypeDef
 
 ```python
-from mypy_boto3_codestar_connections.type_defs import CreateConnectionOutputTypeDef
+from mypy_boto3_codestar_connections.type_defs import CreateConnectionInputTypeDef
+```
+
+Required fields:
+
+- `ConnectionName`: `str`
+
+Optional fields:
+
+- `ProviderType`: [ProviderTypeType](./literals.md#providertypetype)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `HostArn`: `str`
+
+## CreateConnectionOutputResponseTypeDef
+
+```python
+from mypy_boto3_codestar_connections.type_defs import CreateConnectionOutputResponseTypeDef
 ```
 
 Required fields:
@@ -50,10 +78,28 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateHostOutputTypeDef
+## CreateHostInputTypeDef
 
 ```python
-from mypy_boto3_codestar_connections.type_defs import CreateHostOutputTypeDef
+from mypy_boto3_codestar_connections.type_defs import CreateHostInputTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `ProviderType`: [ProviderTypeType](./literals.md#providertypetype)
+- `ProviderEndpoint`: `str`
+
+Optional fields:
+
+- `VpcConfiguration`:
+  [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateHostOutputResponseTypeDef
+
+```python
+from mypy_boto3_codestar_connections.type_defs import CreateHostOutputResponseTypeDef
 ```
 
 Required fields:
@@ -63,10 +109,40 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetConnectionOutputTypeDef
+## DeleteConnectionInputTypeDef
 
 ```python
-from mypy_boto3_codestar_connections.type_defs import GetConnectionOutputTypeDef
+from mypy_boto3_codestar_connections.type_defs import DeleteConnectionInputTypeDef
+```
+
+Required fields:
+
+- `ConnectionArn`: `str`
+
+## DeleteHostInputTypeDef
+
+```python
+from mypy_boto3_codestar_connections.type_defs import DeleteHostInputTypeDef
+```
+
+Required fields:
+
+- `HostArn`: `str`
+
+## GetConnectionInputTypeDef
+
+```python
+from mypy_boto3_codestar_connections.type_defs import GetConnectionInputTypeDef
+```
+
+Required fields:
+
+- `ConnectionArn`: `str`
+
+## GetConnectionOutputResponseTypeDef
+
+```python
+from mypy_boto3_codestar_connections.type_defs import GetConnectionOutputResponseTypeDef
 ```
 
 Required fields:
@@ -75,10 +151,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetHostOutputTypeDef
+## GetHostInputTypeDef
 
 ```python
-from mypy_boto3_codestar_connections.type_defs import GetHostOutputTypeDef
+from mypy_boto3_codestar_connections.type_defs import GetHostInputTypeDef
+```
+
+Required fields:
+
+- `HostArn`: `str`
+
+## GetHostOutputResponseTypeDef
+
+```python
+from mypy_boto3_codestar_connections.type_defs import GetHostOutputResponseTypeDef
 ```
 
 Required fields:
@@ -109,10 +195,23 @@ Optional fields:
 - `Status`: `str`
 - `StatusMessage`: `str`
 
-## ListConnectionsOutputTypeDef
+## ListConnectionsInputTypeDef
 
 ```python
-from mypy_boto3_codestar_connections.type_defs import ListConnectionsOutputTypeDef
+from mypy_boto3_codestar_connections.type_defs import ListConnectionsInputTypeDef
+```
+
+Optional fields:
+
+- `ProviderTypeFilter`: [ProviderTypeType](./literals.md#providertypetype)
+- `HostArnFilter`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListConnectionsOutputResponseTypeDef
+
+```python
+from mypy_boto3_codestar_connections.type_defs import ListConnectionsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -123,10 +222,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListHostsOutputTypeDef
+## ListHostsInputTypeDef
 
 ```python
-from mypy_boto3_codestar_connections.type_defs import ListHostsOutputTypeDef
+from mypy_boto3_codestar_connections.type_defs import ListHostsInputTypeDef
+```
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListHostsOutputResponseTypeDef
+
+```python
+from mypy_boto3_codestar_connections.type_defs import ListHostsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -136,10 +246,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceOutputTypeDef
+## ListTagsForResourceInputTypeDef
 
 ```python
-from mypy_boto3_codestar_connections.type_defs import ListTagsForResourceOutputTypeDef
+from mypy_boto3_codestar_connections.type_defs import ListTagsForResourceInputTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+
+## ListTagsForResourceOutputResponseTypeDef
+
+```python
+from mypy_boto3_codestar_connections.type_defs import ListTagsForResourceOutputResponseTypeDef
 ```
 
 Required fields:
@@ -162,6 +282,17 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
+## TagResourceInputTypeDef
+
+```python
+from mypy_boto3_codestar_connections.type_defs import TagResourceInputTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
 ## TagTypeDef
 
 ```python
@@ -172,6 +303,33 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+## UntagResourceInputTypeDef
+
+```python
+from mypy_boto3_codestar_connections.type_defs import UntagResourceInputTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## UpdateHostInputTypeDef
+
+```python
+from mypy_boto3_codestar_connections.type_defs import UpdateHostInputTypeDef
+```
+
+Required fields:
+
+- `HostArn`: `str`
+
+Optional fields:
+
+- `ProviderEndpoint`: `str`
+- `VpcConfiguration`:
+  [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
 
 ## VpcConfigurationTypeDef
 

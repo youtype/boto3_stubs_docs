@@ -29,7 +29,7 @@ def get_load_balancer_available_waiter() -> LoadBalancerAvailableWaiter:
 ```
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Waiter.load_balancer_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.load_balancer_available)
+[ElasticLoadBalancingv2.Waiter.load_balancer_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.LoadBalancerAvailable)
 
 Arguments for `LoadBalancerAvailableWaiter.wait` method:
 
@@ -54,7 +54,7 @@ def get_load_balancer_exists_waiter() -> LoadBalancerExistsWaiter:
 ```
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Waiter.load_balancer_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.load_balancer_exists)
+[ElasticLoadBalancingv2.Waiter.load_balancer_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.LoadBalancerExists)
 
 Arguments for `LoadBalancerExistsWaiter.wait` method:
 
@@ -79,7 +79,7 @@ def get_load_balancers_deleted_waiter() -> LoadBalancersDeletedWaiter:
 ```
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Waiter.load_balancers_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.load_balancers_deleted)
+[ElasticLoadBalancingv2.Waiter.load_balancers_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.LoadBalancersDeleted)
 
 Arguments for `LoadBalancersDeletedWaiter.wait` method:
 
@@ -103,7 +103,7 @@ def get_target_deregistered_waiter() -> TargetDeregisteredWaiter:
 ```
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Waiter.target_deregistered](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.target_deregistered)
+[ElasticLoadBalancingv2.Waiter.target_deregistered](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.TargetDeregistered)
 
 Arguments for `TargetDeregisteredWaiter.wait` method:
 
@@ -126,7 +126,7 @@ def get_target_in_service_waiter() -> TargetInServiceWaiter:
 ```
 
 Boto3 documentation:
-[ElasticLoadBalancingv2.Waiter.target_in_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.target_in_service)
+[ElasticLoadBalancingv2.Waiter.target_in_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.TargetInService)
 
 Arguments for `TargetInServiceWaiter.wait` method:
 

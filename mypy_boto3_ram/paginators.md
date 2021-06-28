@@ -40,7 +40,7 @@ Arguments for `GetResourcePoliciesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetResourcePoliciesPaginator.paginate` returns
-`Iterator`\[[GetResourcePoliciesResponseTypeDef](./type_defs.md#getresourcepoliciesresponsetypedef)\].
+`Iterator`\[[GetResourcePoliciesResponseResponseTypeDef](./type_defs.md#getresourcepoliciesresponseresponsetypedef)\].
 
 ## GetResourceShareAssociationsPaginator
 
@@ -73,7 +73,7 @@ Arguments for `GetResourceShareAssociationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetResourceShareAssociationsPaginator.paginate` returns
-`Iterator`\[[GetResourceShareAssociationsResponseTypeDef](./type_defs.md#getresourceshareassociationsresponsetypedef)\].
+`Iterator`\[[GetResourceShareAssociationsResponseResponseTypeDef](./type_defs.md#getresourceshareassociationsresponseresponsetypedef)\].
 
 ## GetResourceShareInvitationsPaginator
 
@@ -100,7 +100,7 @@ Arguments for `GetResourceShareInvitationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetResourceShareInvitationsPaginator.paginate` returns
-`Iterator`\[[GetResourceShareInvitationsResponseTypeDef](./type_defs.md#getresourceshareinvitationsresponsetypedef)\].
+`Iterator`\[[GetResourceShareInvitationsResponseResponseTypeDef](./type_defs.md#getresourceshareinvitationsresponseresponsetypedef)\].
 
 ## GetResourceSharesPaginator
 
@@ -133,7 +133,7 @@ Arguments for `GetResourceSharesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetResourceSharesPaginator.paginate` returns
-`Iterator`\[[GetResourceSharesResponseTypeDef](./type_defs.md#getresourcesharesresponsetypedef)\].
+`Iterator`\[[GetResourceSharesResponseResponseTypeDef](./type_defs.md#getresourcesharesresponseresponsetypedef)\].
 
 ## ListPrincipalsPaginator
 
@@ -163,7 +163,7 @@ Arguments for `ListPrincipalsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPrincipalsPaginator.paginate` returns
-`Iterator`\[[ListPrincipalsResponseTypeDef](./type_defs.md#listprincipalsresponsetypedef)\].
+`Iterator`\[[ListPrincipalsResponseResponseTypeDef](./type_defs.md#listprincipalsresponseresponsetypedef)\].
 
 ## ListResourcesPaginator
 
@@ -193,4 +193,4 @@ Arguments for `ListResourcesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResourcesPaginator.paginate` returns
-`Iterator`\[[ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef)\].
+`Iterator`\[[ListResourcesResponseResponseTypeDef](./type_defs.md#listresourcesresponseresponsetypedef)\].

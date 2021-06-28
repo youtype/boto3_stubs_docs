@@ -68,6 +68,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("fis").can_paginate` method.
 
 Boto3 documentation:
@@ -81,10 +83,15 @@ Returns `bool`.
 
 ### create_experiment_template
 
+Creates an experiment template.
+
 Type annotations for `boto3.client("fis").create_experiment_template` method.
 
 Boto3 documentation:
 [FIS.Client.create_experiment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.create_experiment_template)
+
+Arguments mapping described in
+[CreateExperimentTemplateRequestTypeDef](./type_defs.md#createexperimenttemplaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -102,23 +109,30 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateExperimentTemplateResponseTypeDef](./type_defs.md#createexperimenttemplateresponsetypedef).
+[CreateExperimentTemplateResponseResponseTypeDef](./type_defs.md#createexperimenttemplateresponseresponsetypedef).
 
 ### delete_experiment_template
+
+Deletes the specified experiment template.
 
 Type annotations for `boto3.client("fis").delete_experiment_template` method.
 
 Boto3 documentation:
 [FIS.Client.delete_experiment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.delete_experiment_template)
 
+Arguments mapping described in
+[DeleteExperimentTemplateRequestTypeDef](./type_defs.md#deleteexperimenttemplaterequesttypedef).
+
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
 Returns
-[DeleteExperimentTemplateResponseTypeDef](./type_defs.md#deleteexperimenttemplateresponsetypedef).
+[DeleteExperimentTemplateResponseResponseTypeDef](./type_defs.md#deleteexperimenttemplateresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("fis").generate_presigned_url` method.
 
@@ -136,110 +150,151 @@ Returns `str`.
 
 ### get_action
 
+Gets information about the specified AWS FIS action.
+
 Type annotations for `boto3.client("fis").get_action` method.
 
 Boto3 documentation:
 [FIS.Client.get_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.get_action)
 
+Arguments mapping described in
+[GetActionRequestTypeDef](./type_defs.md#getactionrequesttypedef).
+
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
-Returns [GetActionResponseTypeDef](./type_defs.md#getactionresponsetypedef).
+Returns
+[GetActionResponseResponseTypeDef](./type_defs.md#getactionresponseresponsetypedef).
 
 ### get_experiment
+
+Gets information about the specified experiment.
 
 Type annotations for `boto3.client("fis").get_experiment` method.
 
 Boto3 documentation:
 [FIS.Client.get_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.get_experiment)
 
+Arguments mapping described in
+[GetExperimentRequestTypeDef](./type_defs.md#getexperimentrequesttypedef).
+
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
 Returns
-[GetExperimentResponseTypeDef](./type_defs.md#getexperimentresponsetypedef).
+[GetExperimentResponseResponseTypeDef](./type_defs.md#getexperimentresponseresponsetypedef).
 
 ### get_experiment_template
+
+Gets information about the specified experiment template.
 
 Type annotations for `boto3.client("fis").get_experiment_template` method.
 
 Boto3 documentation:
 [FIS.Client.get_experiment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.get_experiment_template)
 
+Arguments mapping described in
+[GetExperimentTemplateRequestTypeDef](./type_defs.md#getexperimenttemplaterequesttypedef).
+
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
 Returns
-[GetExperimentTemplateResponseTypeDef](./type_defs.md#getexperimenttemplateresponsetypedef).
+[GetExperimentTemplateResponseResponseTypeDef](./type_defs.md#getexperimenttemplateresponseresponsetypedef).
 
 ### list_actions
+
+Lists the available AWS FIS actions.
 
 Type annotations for `boto3.client("fis").list_actions` method.
 
 Boto3 documentation:
 [FIS.Client.list_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_actions)
 
+Arguments mapping described in
+[ListActionsRequestTypeDef](./type_defs.md#listactionsrequesttypedef).
+
 Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListActionsResponseTypeDef](./type_defs.md#listactionsresponsetypedef).
+[ListActionsResponseResponseTypeDef](./type_defs.md#listactionsresponseresponsetypedef).
 
 ### list_experiment_templates
+
+Lists your experiment templates.
 
 Type annotations for `boto3.client("fis").list_experiment_templates` method.
 
 Boto3 documentation:
 [FIS.Client.list_experiment_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_experiment_templates)
 
+Arguments mapping described in
+[ListExperimentTemplatesRequestTypeDef](./type_defs.md#listexperimenttemplatesrequesttypedef).
+
 Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListExperimentTemplatesResponseTypeDef](./type_defs.md#listexperimenttemplatesresponsetypedef).
+[ListExperimentTemplatesResponseResponseTypeDef](./type_defs.md#listexperimenttemplatesresponseresponsetypedef).
 
 ### list_experiments
+
+Lists your experiments.
 
 Type annotations for `boto3.client("fis").list_experiments` method.
 
 Boto3 documentation:
 [FIS.Client.list_experiments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_experiments)
 
+Arguments mapping described in
+[ListExperimentsRequestTypeDef](./type_defs.md#listexperimentsrequesttypedef).
+
 Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListExperimentsResponseTypeDef](./type_defs.md#listexperimentsresponsetypedef).
+[ListExperimentsResponseResponseTypeDef](./type_defs.md#listexperimentsresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Lists the tags for the specified resource.
 
 Type annotations for `boto3.client("fis").list_tags_for_resource` method.
 
 Boto3 documentation:
 [FIS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### start_experiment
+
+Starts running an experiment from the specified experiment template.
 
 Type annotations for `boto3.client("fis").start_experiment` method.
 
 Boto3 documentation:
 [FIS.Client.start_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.start_experiment)
+
+Arguments mapping described in
+[StartExperimentRequestTypeDef](./type_defs.md#startexperimentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -248,28 +303,38 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[StartExperimentResponseTypeDef](./type_defs.md#startexperimentresponsetypedef).
+[StartExperimentResponseResponseTypeDef](./type_defs.md#startexperimentresponseresponsetypedef).
 
 ### stop_experiment
+
+Stops the specified experiment.
 
 Type annotations for `boto3.client("fis").stop_experiment` method.
 
 Boto3 documentation:
 [FIS.Client.stop_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.stop_experiment)
 
+Arguments mapping described in
+[StopExperimentRequestTypeDef](./type_defs.md#stopexperimentrequesttypedef).
+
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
 Returns
-[StopExperimentResponseTypeDef](./type_defs.md#stopexperimentresponsetypedef).
+[StopExperimentResponseResponseTypeDef](./type_defs.md#stopexperimentresponseresponsetypedef).
 
 ### tag_resource
+
+Applies the specified tags to the specified resource.
 
 Type annotations for `boto3.client("fis").tag_resource` method.
 
 Boto3 documentation:
 [FIS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -280,10 +345,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Removes the specified tags from the specified resource.
+
 Type annotations for `boto3.client("fis").untag_resource` method.
 
 Boto3 documentation:
 [FIS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -294,10 +364,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_experiment_template
 
+Updates the specified experiment template.
+
 Type annotations for `boto3.client("fis").update_experiment_template` method.
 
 Boto3 documentation:
 [FIS.Client.update_experiment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.update_experiment_template)
+
+Arguments mapping described in
+[UpdateExperimentTemplateRequestTypeDef](./type_defs.md#updateexperimenttemplaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -312,4 +387,4 @@ Keyword-only arguments:
 - `roleArn`: `str`
 
 Returns
-[UpdateExperimentTemplateResponseTypeDef](./type_defs.md#updateexperimenttemplateresponsetypedef).
+[UpdateExperimentTemplateResponseResponseTypeDef](./type_defs.md#updateexperimenttemplateresponseresponsetypedef).

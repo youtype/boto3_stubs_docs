@@ -313,12 +313,18 @@ Exceptions:
 
 ### associate_approval_rule_template_with_repository
 
+Creates an association between an approval rule template and a specified
+repository.
+
 Type annotations for
 `boto3.client("codecommit").associate_approval_rule_template_with_repository`
 method.
 
 Boto3 documentation:
 [CodeCommit.Client.associate_approval_rule_template_with_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.associate_approval_rule_template_with_repository)
+
+Arguments mapping described in
+[AssociateApprovalRuleTemplateWithRepositoryInputTypeDef](./type_defs.md#associateapprovalruletemplatewithrepositoryinputtypedef).
 
 Keyword-only arguments:
 
@@ -327,6 +333,9 @@ Keyword-only arguments:
 
 ### batch_associate_approval_rule_template_with_repositories
 
+Creates an association between an approval rule template and one or more
+specified repositories.
+
 Type annotations for
 `boto3.client("codecommit").batch_associate_approval_rule_template_with_repositories`
 method.
@@ -334,21 +343,30 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.batch_associate_approval_rule_template_with_repositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_associate_approval_rule_template_with_repositories)
 
+Arguments mapping described in
+[BatchAssociateApprovalRuleTemplateWithRepositoriesInputTypeDef](./type_defs.md#batchassociateapprovalruletemplatewithrepositoriesinputtypedef).
+
 Keyword-only arguments:
 
 - `approvalRuleTemplateName`: `str` *(required)*
 - `repositoryNames`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchAssociateApprovalRuleTemplateWithRepositoriesOutputTypeDef](./type_defs.md#batchassociateapprovalruletemplatewithrepositoriesoutputtypedef).
+[BatchAssociateApprovalRuleTemplateWithRepositoriesOutputResponseTypeDef](./type_defs.md#batchassociateapprovalruletemplatewithrepositoriesoutputresponsetypedef).
 
 ### batch_describe_merge_conflicts
+
+Returns information about one or more merge conflicts in the attempted merge of
+two commit specifiers using the squash or three-way merge strategy.
 
 Type annotations for
 `boto3.client("codecommit").batch_describe_merge_conflicts` method.
 
 Boto3 documentation:
 [CodeCommit.Client.batch_describe_merge_conflicts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_describe_merge_conflicts)
+
+Arguments mapping described in
+[BatchDescribeMergeConflictsInputTypeDef](./type_defs.md#batchdescribemergeconflictsinputtypedef).
 
 Keyword-only arguments:
 
@@ -367,9 +385,12 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[BatchDescribeMergeConflictsOutputTypeDef](./type_defs.md#batchdescribemergeconflictsoutputtypedef).
+[BatchDescribeMergeConflictsOutputResponseTypeDef](./type_defs.md#batchdescribemergeconflictsoutputresponsetypedef).
 
 ### batch_disassociate_approval_rule_template_from_repositories
+
+Removes the association between an approval rule template and one or more
+specified repositories.
 
 Type annotations for
 `boto3.client("codecommit").batch_disassociate_approval_rule_template_from_repositories`
@@ -378,20 +399,28 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.batch_disassociate_approval_rule_template_from_repositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_disassociate_approval_rule_template_from_repositories)
 
+Arguments mapping described in
+[BatchDisassociateApprovalRuleTemplateFromRepositoriesInputTypeDef](./type_defs.md#batchdisassociateapprovalruletemplatefromrepositoriesinputtypedef).
+
 Keyword-only arguments:
 
 - `approvalRuleTemplateName`: `str` *(required)*
 - `repositoryNames`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchDisassociateApprovalRuleTemplateFromRepositoriesOutputTypeDef](./type_defs.md#batchdisassociateapprovalruletemplatefromrepositoriesoutputtypedef).
+[BatchDisassociateApprovalRuleTemplateFromRepositoriesOutputResponseTypeDef](./type_defs.md#batchdisassociateapprovalruletemplatefromrepositoriesoutputresponsetypedef).
 
 ### batch_get_commits
+
+Returns information about the contents of one or more commits in a repository.
 
 Type annotations for `boto3.client("codecommit").batch_get_commits` method.
 
 Boto3 documentation:
 [CodeCommit.Client.batch_get_commits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_get_commits)
+
+Arguments mapping described in
+[BatchGetCommitsInputTypeDef](./type_defs.md#batchgetcommitsinputtypedef).
 
 Keyword-only arguments:
 
@@ -399,9 +428,11 @@ Keyword-only arguments:
 - `repositoryName`: `str` *(required)*
 
 Returns
-[BatchGetCommitsOutputTypeDef](./type_defs.md#batchgetcommitsoutputtypedef).
+[BatchGetCommitsOutputResponseTypeDef](./type_defs.md#batchgetcommitsoutputresponsetypedef).
 
 ### batch_get_repositories
+
+Returns information about one or more repositories.
 
 Type annotations for `boto3.client("codecommit").batch_get_repositories`
 method.
@@ -409,14 +440,19 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.batch_get_repositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.batch_get_repositories)
 
+Arguments mapping described in
+[BatchGetRepositoriesInputTypeDef](./type_defs.md#batchgetrepositoriesinputtypedef).
+
 Keyword-only arguments:
 
 - `repositoryNames`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetRepositoriesOutputTypeDef](./type_defs.md#batchgetrepositoriesoutputtypedef).
+[BatchGetRepositoriesOutputResponseTypeDef](./type_defs.md#batchgetrepositoriesoutputresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("codecommit").can_paginate` method.
 
@@ -431,11 +467,17 @@ Returns `bool`.
 
 ### create_approval_rule_template
 
+Creates a template for approval rules that can then be associated with one or
+more repositories in your AWS account.
+
 Type annotations for `boto3.client("codecommit").create_approval_rule_template`
 method.
 
 Boto3 documentation:
 [CodeCommit.Client.create_approval_rule_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_approval_rule_template)
+
+Arguments mapping described in
+[CreateApprovalRuleTemplateInputTypeDef](./type_defs.md#createapprovalruletemplateinputtypedef).
 
 Keyword-only arguments:
 
@@ -444,14 +486,19 @@ Keyword-only arguments:
 - `approvalRuleTemplateDescription`: `str`
 
 Returns
-[CreateApprovalRuleTemplateOutputTypeDef](./type_defs.md#createapprovalruletemplateoutputtypedef).
+[CreateApprovalRuleTemplateOutputResponseTypeDef](./type_defs.md#createapprovalruletemplateoutputresponsetypedef).
 
 ### create_branch
+
+Creates a branch in a repository and points the branch to a commit.
 
 Type annotations for `boto3.client("codecommit").create_branch` method.
 
 Boto3 documentation:
 [CodeCommit.Client.create_branch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_branch)
+
+Arguments mapping described in
+[CreateBranchInputTypeDef](./type_defs.md#createbranchinputtypedef).
 
 Keyword-only arguments:
 
@@ -461,10 +508,15 @@ Keyword-only arguments:
 
 ### create_commit
 
+Creates a commit for a repository on the tip of a specified branch.
+
 Type annotations for `boto3.client("codecommit").create_commit` method.
 
 Boto3 documentation:
 [CodeCommit.Client.create_commit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_commit)
+
+Arguments mapping described in
+[CreateCommitInputTypeDef](./type_defs.md#createcommitinputtypedef).
 
 Keyword-only arguments:
 
@@ -482,14 +534,20 @@ Keyword-only arguments:
 - `setFileModes`:
   `List`\[[SetFileModeEntryTypeDef](./type_defs.md#setfilemodeentrytypedef)\]
 
-Returns [CreateCommitOutputTypeDef](./type_defs.md#createcommitoutputtypedef).
+Returns
+[CreateCommitOutputResponseTypeDef](./type_defs.md#createcommitoutputresponsetypedef).
 
 ### create_pull_request
+
+Creates a pull request in the specified repository.
 
 Type annotations for `boto3.client("codecommit").create_pull_request` method.
 
 Boto3 documentation:
 [CodeCommit.Client.create_pull_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_pull_request)
+
+Arguments mapping described in
+[CreatePullRequestInputTypeDef](./type_defs.md#createpullrequestinputtypedef).
 
 Keyword-only arguments:
 
@@ -500,15 +558,20 @@ Keyword-only arguments:
 - `clientRequestToken`: `str`
 
 Returns
-[CreatePullRequestOutputTypeDef](./type_defs.md#createpullrequestoutputtypedef).
+[CreatePullRequestOutputResponseTypeDef](./type_defs.md#createpullrequestoutputresponsetypedef).
 
 ### create_pull_request_approval_rule
+
+Creates an approval rule for a pull request.
 
 Type annotations for
 `boto3.client("codecommit").create_pull_request_approval_rule` method.
 
 Boto3 documentation:
 [CodeCommit.Client.create_pull_request_approval_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_pull_request_approval_rule)
+
+Arguments mapping described in
+[CreatePullRequestApprovalRuleInputTypeDef](./type_defs.md#createpullrequestapprovalruleinputtypedef).
 
 Keyword-only arguments:
 
@@ -517,14 +580,19 @@ Keyword-only arguments:
 - `approvalRuleContent`: `str` *(required)*
 
 Returns
-[CreatePullRequestApprovalRuleOutputTypeDef](./type_defs.md#createpullrequestapprovalruleoutputtypedef).
+[CreatePullRequestApprovalRuleOutputResponseTypeDef](./type_defs.md#createpullrequestapprovalruleoutputresponsetypedef).
 
 ### create_repository
+
+Creates a new, empty repository.
 
 Type annotations for `boto3.client("codecommit").create_repository` method.
 
 Boto3 documentation:
 [CodeCommit.Client.create_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_repository)
+
+Arguments mapping described in
+[CreateRepositoryInputTypeDef](./type_defs.md#createrepositoryinputtypedef).
 
 Keyword-only arguments:
 
@@ -533,15 +601,21 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateRepositoryOutputTypeDef](./type_defs.md#createrepositoryoutputtypedef).
+[CreateRepositoryOutputResponseTypeDef](./type_defs.md#createrepositoryoutputresponsetypedef).
 
 ### create_unreferenced_merge_commit
+
+Creates an unreferenced commit that represents the result of merging two
+branches using a specified merge strategy.
 
 Type annotations for
 `boto3.client("codecommit").create_unreferenced_merge_commit` method.
 
 Boto3 documentation:
 [CodeCommit.Client.create_unreferenced_merge_commit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.create_unreferenced_merge_commit)
+
+Arguments mapping described in
+[CreateUnreferencedMergeCommitInputTypeDef](./type_defs.md#createunreferencedmergecommitinputtypedef).
 
 Keyword-only arguments:
 
@@ -562,9 +636,11 @@ Keyword-only arguments:
   [ConflictResolutionTypeDef](./type_defs.md#conflictresolutiontypedef)
 
 Returns
-[CreateUnreferencedMergeCommitOutputTypeDef](./type_defs.md#createunreferencedmergecommitoutputtypedef).
+[CreateUnreferencedMergeCommitOutputResponseTypeDef](./type_defs.md#createunreferencedmergecommitoutputresponsetypedef).
 
 ### delete_approval_rule_template
+
+Deletes a specified approval rule template.
 
 Type annotations for `boto3.client("codecommit").delete_approval_rule_template`
 method.
@@ -572,28 +648,41 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.delete_approval_rule_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_approval_rule_template)
 
+Arguments mapping described in
+[DeleteApprovalRuleTemplateInputTypeDef](./type_defs.md#deleteapprovalruletemplateinputtypedef).
+
 Keyword-only arguments:
 
 - `approvalRuleTemplateName`: `str` *(required)*
 
 Returns
-[DeleteApprovalRuleTemplateOutputTypeDef](./type_defs.md#deleteapprovalruletemplateoutputtypedef).
+[DeleteApprovalRuleTemplateOutputResponseTypeDef](./type_defs.md#deleteapprovalruletemplateoutputresponsetypedef).
 
 ### delete_branch
+
+Deletes a branch from a repository, unless that branch is the default branch
+for the repository.
 
 Type annotations for `boto3.client("codecommit").delete_branch` method.
 
 Boto3 documentation:
 [CodeCommit.Client.delete_branch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_branch)
 
+Arguments mapping described in
+[DeleteBranchInputTypeDef](./type_defs.md#deletebranchinputtypedef).
+
 Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `branchName`: `str` *(required)*
 
-Returns [DeleteBranchOutputTypeDef](./type_defs.md#deletebranchoutputtypedef).
+Returns
+[DeleteBranchOutputResponseTypeDef](./type_defs.md#deletebranchoutputresponsetypedef).
 
 ### delete_comment_content
+
+Deletes the content of a comment made on a change, file, or commit in a
+repository.
 
 Type annotations for `boto3.client("codecommit").delete_comment_content`
 method.
@@ -601,19 +690,27 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.delete_comment_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_comment_content)
 
+Arguments mapping described in
+[DeleteCommentContentInputTypeDef](./type_defs.md#deletecommentcontentinputtypedef).
+
 Keyword-only arguments:
 
 - `commentId`: `str` *(required)*
 
 Returns
-[DeleteCommentContentOutputTypeDef](./type_defs.md#deletecommentcontentoutputtypedef).
+[DeleteCommentContentOutputResponseTypeDef](./type_defs.md#deletecommentcontentoutputresponsetypedef).
 
 ### delete_file
+
+Deletes a specified file from a specified branch.
 
 Type annotations for `boto3.client("codecommit").delete_file` method.
 
 Boto3 documentation:
 [CodeCommit.Client.delete_file](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_file)
+
+Arguments mapping described in
+[DeleteFileInputTypeDef](./type_defs.md#deletefileinputtypedef).
 
 Keyword-only arguments:
 
@@ -626,9 +723,12 @@ Keyword-only arguments:
 - `name`: `str`
 - `email`: `str`
 
-Returns [DeleteFileOutputTypeDef](./type_defs.md#deletefileoutputtypedef).
+Returns
+[DeleteFileOutputResponseTypeDef](./type_defs.md#deletefileoutputresponsetypedef).
 
 ### delete_pull_request_approval_rule
+
+Deletes an approval rule from a specified pull request.
 
 Type annotations for
 `boto3.client("codecommit").delete_pull_request_approval_rule` method.
@@ -636,35 +736,49 @@ Type annotations for
 Boto3 documentation:
 [CodeCommit.Client.delete_pull_request_approval_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_pull_request_approval_rule)
 
+Arguments mapping described in
+[DeletePullRequestApprovalRuleInputTypeDef](./type_defs.md#deletepullrequestapprovalruleinputtypedef).
+
 Keyword-only arguments:
 
 - `pullRequestId`: `str` *(required)*
 - `approvalRuleName`: `str` *(required)*
 
 Returns
-[DeletePullRequestApprovalRuleOutputTypeDef](./type_defs.md#deletepullrequestapprovalruleoutputtypedef).
+[DeletePullRequestApprovalRuleOutputResponseTypeDef](./type_defs.md#deletepullrequestapprovalruleoutputresponsetypedef).
 
 ### delete_repository
+
+Deletes a repository.
 
 Type annotations for `boto3.client("codecommit").delete_repository` method.
 
 Boto3 documentation:
 [CodeCommit.Client.delete_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.delete_repository)
 
+Arguments mapping described in
+[DeleteRepositoryInputTypeDef](./type_defs.md#deleterepositoryinputtypedef).
+
 Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 
 Returns
-[DeleteRepositoryOutputTypeDef](./type_defs.md#deleterepositoryoutputtypedef).
+[DeleteRepositoryOutputResponseTypeDef](./type_defs.md#deleterepositoryoutputresponsetypedef).
 
 ### describe_merge_conflicts
+
+Returns information about one or more merge conflicts in the attempted merge of
+two commit specifiers using the squash or three-way merge strategy.
 
 Type annotations for `boto3.client("codecommit").describe_merge_conflicts`
 method.
 
 Boto3 documentation:
 [CodeCommit.Client.describe_merge_conflicts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.describe_merge_conflicts)
+
+Arguments mapping described in
+[DescribeMergeConflictsInputTypeDef](./type_defs.md#describemergeconflictsinputtypedef).
 
 Keyword-only arguments:
 
@@ -682,15 +796,20 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeMergeConflictsOutputTypeDef](./type_defs.md#describemergeconflictsoutputtypedef).
+[DescribeMergeConflictsOutputResponseTypeDef](./type_defs.md#describemergeconflictsoutputresponsetypedef).
 
 ### describe_pull_request_events
+
+Returns information about one or more pull request events.
 
 Type annotations for `boto3.client("codecommit").describe_pull_request_events`
 method.
 
 Boto3 documentation:
 [CodeCommit.Client.describe_pull_request_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.describe_pull_request_events)
+
+Arguments mapping described in
+[DescribePullRequestEventsInputTypeDef](./type_defs.md#describepullrequesteventsinputtypedef).
 
 Keyword-only arguments:
 
@@ -702,9 +821,13 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[DescribePullRequestEventsOutputTypeDef](./type_defs.md#describepullrequesteventsoutputtypedef).
+[DescribePullRequestEventsOutputResponseTypeDef](./type_defs.md#describepullrequesteventsoutputresponsetypedef).
 
 ### disassociate_approval_rule_template_from_repository
+
+Removes the association between a template and a repository so that approval
+rules based on the template are not automatically created when pull requests
+are created in the specified repository.
 
 Type annotations for
 `boto3.client("codecommit").disassociate_approval_rule_template_from_repository`
@@ -713,6 +836,9 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.disassociate_approval_rule_template_from_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.disassociate_approval_rule_template_from_repository)
 
+Arguments mapping described in
+[DisassociateApprovalRuleTemplateFromRepositoryInputTypeDef](./type_defs.md#disassociateapprovalruletemplatefromrepositoryinputtypedef).
+
 Keyword-only arguments:
 
 - `approvalRuleTemplateName`: `str` *(required)*
@@ -720,11 +846,17 @@ Keyword-only arguments:
 
 ### evaluate_pull_request_approval_rules
 
+Evaluates whether a pull request has met all the conditions specified in its
+associated approval rules.
+
 Type annotations for
 `boto3.client("codecommit").evaluate_pull_request_approval_rules` method.
 
 Boto3 documentation:
 [CodeCommit.Client.evaluate_pull_request_approval_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.evaluate_pull_request_approval_rules)
+
+Arguments mapping described in
+[EvaluatePullRequestApprovalRulesInputTypeDef](./type_defs.md#evaluatepullrequestapprovalrulesinputtypedef).
 
 Keyword-only arguments:
 
@@ -732,9 +864,11 @@ Keyword-only arguments:
 - `revisionId`: `str` *(required)*
 
 Returns
-[EvaluatePullRequestApprovalRulesOutputTypeDef](./type_defs.md#evaluatepullrequestapprovalrulesoutputtypedef).
+[EvaluatePullRequestApprovalRulesOutputResponseTypeDef](./type_defs.md#evaluatepullrequestapprovalrulesoutputresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("codecommit").generate_presigned_url`
 method.
@@ -753,66 +887,96 @@ Returns `str`.
 
 ### get_approval_rule_template
 
+Returns information about a specified approval rule template.
+
 Type annotations for `boto3.client("codecommit").get_approval_rule_template`
 method.
 
 Boto3 documentation:
 [CodeCommit.Client.get_approval_rule_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_approval_rule_template)
 
+Arguments mapping described in
+[GetApprovalRuleTemplateInputTypeDef](./type_defs.md#getapprovalruletemplateinputtypedef).
+
 Keyword-only arguments:
 
 - `approvalRuleTemplateName`: `str` *(required)*
 
 Returns
-[GetApprovalRuleTemplateOutputTypeDef](./type_defs.md#getapprovalruletemplateoutputtypedef).
+[GetApprovalRuleTemplateOutputResponseTypeDef](./type_defs.md#getapprovalruletemplateoutputresponsetypedef).
 
 ### get_blob
+
+Returns the base-64 encoded content of an individual blob in a repository.
 
 Type annotations for `boto3.client("codecommit").get_blob` method.
 
 Boto3 documentation:
 [CodeCommit.Client.get_blob](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_blob)
 
+Arguments mapping described in
+[GetBlobInputTypeDef](./type_defs.md#getblobinputtypedef).
+
 Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `blobId`: `str` *(required)*
 
-Returns [GetBlobOutputTypeDef](./type_defs.md#getbloboutputtypedef).
+Returns
+[GetBlobOutputResponseTypeDef](./type_defs.md#getbloboutputresponsetypedef).
 
 ### get_branch
+
+Returns information about a repository branch, including its name and the last
+commit ID.
 
 Type annotations for `boto3.client("codecommit").get_branch` method.
 
 Boto3 documentation:
 [CodeCommit.Client.get_branch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_branch)
 
+Arguments mapping described in
+[GetBranchInputTypeDef](./type_defs.md#getbranchinputtypedef).
+
 Keyword-only arguments:
 
 - `repositoryName`: `str`
 - `branchName`: `str`
 
-Returns [GetBranchOutputTypeDef](./type_defs.md#getbranchoutputtypedef).
+Returns
+[GetBranchOutputResponseTypeDef](./type_defs.md#getbranchoutputresponsetypedef).
 
 ### get_comment
+
+Returns the content of a comment made on a change, file, or commit in a
+repository.
 
 Type annotations for `boto3.client("codecommit").get_comment` method.
 
 Boto3 documentation:
 [CodeCommit.Client.get_comment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_comment)
 
+Arguments mapping described in
+[GetCommentInputTypeDef](./type_defs.md#getcommentinputtypedef).
+
 Keyword-only arguments:
 
 - `commentId`: `str` *(required)*
 
-Returns [GetCommentOutputTypeDef](./type_defs.md#getcommentoutputtypedef).
+Returns
+[GetCommentOutputResponseTypeDef](./type_defs.md#getcommentoutputresponsetypedef).
 
 ### get_comment_reactions
+
+Returns information about reactions to a specified comment ID.
 
 Type annotations for `boto3.client("codecommit").get_comment_reactions` method.
 
 Boto3 documentation:
 [CodeCommit.Client.get_comment_reactions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_comment_reactions)
+
+Arguments mapping described in
+[GetCommentReactionsInputTypeDef](./type_defs.md#getcommentreactionsinputtypedef).
 
 Keyword-only arguments:
 
@@ -822,15 +986,20 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetCommentReactionsOutputTypeDef](./type_defs.md#getcommentreactionsoutputtypedef).
+[GetCommentReactionsOutputResponseTypeDef](./type_defs.md#getcommentreactionsoutputresponsetypedef).
 
 ### get_comments_for_compared_commit
+
+Returns information about comments made on the comparison between two commits.
 
 Type annotations for
 `boto3.client("codecommit").get_comments_for_compared_commit` method.
 
 Boto3 documentation:
 [CodeCommit.Client.get_comments_for_compared_commit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_comments_for_compared_commit)
+
+Arguments mapping described in
+[GetCommentsForComparedCommitInputTypeDef](./type_defs.md#getcommentsforcomparedcommitinputtypedef).
 
 Keyword-only arguments:
 
@@ -841,15 +1010,20 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetCommentsForComparedCommitOutputTypeDef](./type_defs.md#getcommentsforcomparedcommitoutputtypedef).
+[GetCommentsForComparedCommitOutputResponseTypeDef](./type_defs.md#getcommentsforcomparedcommitoutputresponsetypedef).
 
 ### get_comments_for_pull_request
+
+Returns comments made on a pull request.
 
 Type annotations for `boto3.client("codecommit").get_comments_for_pull_request`
 method.
 
 Boto3 documentation:
 [CodeCommit.Client.get_comments_for_pull_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_comments_for_pull_request)
+
+Arguments mapping described in
+[GetCommentsForPullRequestInputTypeDef](./type_defs.md#getcommentsforpullrequestinputtypedef).
 
 Keyword-only arguments:
 
@@ -861,28 +1035,41 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetCommentsForPullRequestOutputTypeDef](./type_defs.md#getcommentsforpullrequestoutputtypedef).
+[GetCommentsForPullRequestOutputResponseTypeDef](./type_defs.md#getcommentsforpullrequestoutputresponsetypedef).
 
 ### get_commit
+
+Returns information about a commit, including commit message and committer
+information.
 
 Type annotations for `boto3.client("codecommit").get_commit` method.
 
 Boto3 documentation:
 [CodeCommit.Client.get_commit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_commit)
 
+Arguments mapping described in
+[GetCommitInputTypeDef](./type_defs.md#getcommitinputtypedef).
+
 Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `commitId`: `str` *(required)*
 
-Returns [GetCommitOutputTypeDef](./type_defs.md#getcommitoutputtypedef).
+Returns
+[GetCommitOutputResponseTypeDef](./type_defs.md#getcommitoutputresponsetypedef).
 
 ### get_differences
+
+Returns information about the differences in a valid commit specifier (such as
+a branch, tag, HEAD, commit ID, or other fully qualified reference).
 
 Type annotations for `boto3.client("codecommit").get_differences` method.
 
 Boto3 documentation:
 [CodeCommit.Client.get_differences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_differences)
+
+Arguments mapping described in
+[GetDifferencesInputTypeDef](./type_defs.md#getdifferencesinputtypedef).
 
 Keyword-only arguments:
 
@@ -895,14 +1082,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetDifferencesOutputTypeDef](./type_defs.md#getdifferencesoutputtypedef).
+[GetDifferencesOutputResponseTypeDef](./type_defs.md#getdifferencesoutputresponsetypedef).
 
 ### get_file
+
+Returns the base-64 encoded contents of a specified file and its metadata.
 
 Type annotations for `boto3.client("codecommit").get_file` method.
 
 Boto3 documentation:
 [CodeCommit.Client.get_file](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_file)
+
+Arguments mapping described in
+[GetFileInputTypeDef](./type_defs.md#getfileinputtypedef).
 
 Keyword-only arguments:
 
@@ -910,14 +1102,20 @@ Keyword-only arguments:
 - `filePath`: `str` *(required)*
 - `commitSpecifier`: `str`
 
-Returns [GetFileOutputTypeDef](./type_defs.md#getfileoutputtypedef).
+Returns
+[GetFileOutputResponseTypeDef](./type_defs.md#getfileoutputresponsetypedef).
 
 ### get_folder
+
+Returns the contents of a specified folder in a repository.
 
 Type annotations for `boto3.client("codecommit").get_folder` method.
 
 Boto3 documentation:
 [CodeCommit.Client.get_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_folder)
+
+Arguments mapping described in
+[GetFolderInputTypeDef](./type_defs.md#getfolderinputtypedef).
 
 Keyword-only arguments:
 
@@ -925,14 +1123,20 @@ Keyword-only arguments:
 - `folderPath`: `str` *(required)*
 - `commitSpecifier`: `str`
 
-Returns [GetFolderOutputTypeDef](./type_defs.md#getfolderoutputtypedef).
+Returns
+[GetFolderOutputResponseTypeDef](./type_defs.md#getfolderoutputresponsetypedef).
 
 ### get_merge_commit
+
+Returns information about a specified merge commit.
 
 Type annotations for `boto3.client("codecommit").get_merge_commit` method.
 
 Boto3 documentation:
 [CodeCommit.Client.get_merge_commit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_merge_commit)
+
+Arguments mapping described in
+[GetMergeCommitInputTypeDef](./type_defs.md#getmergecommitinputtypedef).
 
 Keyword-only arguments:
 
@@ -945,14 +1149,20 @@ Keyword-only arguments:
   [ConflictResolutionStrategyTypeEnumType](./literals.md#conflictresolutionstrategytypeenumtype)
 
 Returns
-[GetMergeCommitOutputTypeDef](./type_defs.md#getmergecommitoutputtypedef).
+[GetMergeCommitOutputResponseTypeDef](./type_defs.md#getmergecommitoutputresponsetypedef).
 
 ### get_merge_conflicts
+
+Returns information about merge conflicts between the before and after commit
+IDs for a pull request in a repository.
 
 Type annotations for `boto3.client("codecommit").get_merge_conflicts` method.
 
 Boto3 documentation:
 [CodeCommit.Client.get_merge_conflicts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_merge_conflicts)
+
+Arguments mapping described in
+[GetMergeConflictsInputTypeDef](./type_defs.md#getmergeconflictsinputtypedef).
 
 Keyword-only arguments:
 
@@ -969,14 +1179,20 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[GetMergeConflictsOutputTypeDef](./type_defs.md#getmergeconflictsoutputtypedef).
+[GetMergeConflictsOutputResponseTypeDef](./type_defs.md#getmergeconflictsoutputresponsetypedef).
 
 ### get_merge_options
+
+Returns information about the merge options available for merging two specified
+branches.
 
 Type annotations for `boto3.client("codecommit").get_merge_options` method.
 
 Boto3 documentation:
 [CodeCommit.Client.get_merge_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_merge_options)
+
+Arguments mapping described in
+[GetMergeOptionsInputTypeDef](./type_defs.md#getmergeoptionsinputtypedef).
 
 Keyword-only arguments:
 
@@ -989,23 +1205,30 @@ Keyword-only arguments:
   [ConflictResolutionStrategyTypeEnumType](./literals.md#conflictresolutionstrategytypeenumtype)
 
 Returns
-[GetMergeOptionsOutputTypeDef](./type_defs.md#getmergeoptionsoutputtypedef).
+[GetMergeOptionsOutputResponseTypeDef](./type_defs.md#getmergeoptionsoutputresponsetypedef).
 
 ### get_pull_request
+
+Gets information about a pull request in a specified repository.
 
 Type annotations for `boto3.client("codecommit").get_pull_request` method.
 
 Boto3 documentation:
 [CodeCommit.Client.get_pull_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_pull_request)
 
+Arguments mapping described in
+[GetPullRequestInputTypeDef](./type_defs.md#getpullrequestinputtypedef).
+
 Keyword-only arguments:
 
 - `pullRequestId`: `str` *(required)*
 
 Returns
-[GetPullRequestOutputTypeDef](./type_defs.md#getpullrequestoutputtypedef).
+[GetPullRequestOutputResponseTypeDef](./type_defs.md#getpullrequestoutputresponsetypedef).
 
 ### get_pull_request_approval_states
+
+Gets information about the approval states for a specified pull request.
 
 Type annotations for
 `boto3.client("codecommit").get_pull_request_approval_states` method.
@@ -1013,15 +1236,23 @@ Type annotations for
 Boto3 documentation:
 [CodeCommit.Client.get_pull_request_approval_states](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_pull_request_approval_states)
 
+Arguments mapping described in
+[GetPullRequestApprovalStatesInputTypeDef](./type_defs.md#getpullrequestapprovalstatesinputtypedef).
+
 Keyword-only arguments:
 
 - `pullRequestId`: `str` *(required)*
 - `revisionId`: `str` *(required)*
 
 Returns
-[GetPullRequestApprovalStatesOutputTypeDef](./type_defs.md#getpullrequestapprovalstatesoutputtypedef).
+[GetPullRequestApprovalStatesOutputResponseTypeDef](./type_defs.md#getpullrequestapprovalstatesoutputresponsetypedef).
 
 ### get_pull_request_override_state
+
+Returns information about whether approval rules have been set aside
+(overridden) for a pull request, and if so, the Amazon Resource Name (ARN) of
+the user or identity that overrode the rules and their requirements for the
+pull request.
 
 Type annotations for
 `boto3.client("codecommit").get_pull_request_override_state` method.
@@ -1029,29 +1260,39 @@ Type annotations for
 Boto3 documentation:
 [CodeCommit.Client.get_pull_request_override_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_pull_request_override_state)
 
+Arguments mapping described in
+[GetPullRequestOverrideStateInputTypeDef](./type_defs.md#getpullrequestoverridestateinputtypedef).
+
 Keyword-only arguments:
 
 - `pullRequestId`: `str` *(required)*
 - `revisionId`: `str` *(required)*
 
 Returns
-[GetPullRequestOverrideStateOutputTypeDef](./type_defs.md#getpullrequestoverridestateoutputtypedef).
+[GetPullRequestOverrideStateOutputResponseTypeDef](./type_defs.md#getpullrequestoverridestateoutputresponsetypedef).
 
 ### get_repository
+
+Returns information about a repository.
 
 Type annotations for `boto3.client("codecommit").get_repository` method.
 
 Boto3 documentation:
 [CodeCommit.Client.get_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_repository)
 
+Arguments mapping described in
+[GetRepositoryInputTypeDef](./type_defs.md#getrepositoryinputtypedef).
+
 Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 
 Returns
-[GetRepositoryOutputTypeDef](./type_defs.md#getrepositoryoutputtypedef).
+[GetRepositoryOutputResponseTypeDef](./type_defs.md#getrepositoryoutputresponsetypedef).
 
 ### get_repository_triggers
+
+Gets information about triggers configured for a repository.
 
 Type annotations for `boto3.client("codecommit").get_repository_triggers`
 method.
@@ -1059,14 +1300,20 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.get_repository_triggers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.get_repository_triggers)
 
+Arguments mapping described in
+[GetRepositoryTriggersInputTypeDef](./type_defs.md#getrepositorytriggersinputtypedef).
+
 Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 
 Returns
-[GetRepositoryTriggersOutputTypeDef](./type_defs.md#getrepositorytriggersoutputtypedef).
+[GetRepositoryTriggersOutputResponseTypeDef](./type_defs.md#getrepositorytriggersoutputresponsetypedef).
 
 ### list_approval_rule_templates
+
+Lists all approval rule templates in the specified AWS Region in your AWS
+account.
 
 Type annotations for `boto3.client("codecommit").list_approval_rule_templates`
 method.
@@ -1074,15 +1321,21 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.list_approval_rule_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_approval_rule_templates)
 
+Arguments mapping described in
+[ListApprovalRuleTemplatesInputTypeDef](./type_defs.md#listapprovalruletemplatesinputtypedef).
+
 Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[ListApprovalRuleTemplatesOutputTypeDef](./type_defs.md#listapprovalruletemplatesoutputtypedef).
+[ListApprovalRuleTemplatesOutputResponseTypeDef](./type_defs.md#listapprovalruletemplatesoutputresponsetypedef).
 
 ### list_associated_approval_rule_templates_for_repository
+
+Lists all approval rule templates that are associated with a specified
+repository.
 
 Type annotations for
 `boto3.client("codecommit").list_associated_approval_rule_templates_for_repository`
@@ -1091,6 +1344,9 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.list_associated_approval_rule_templates_for_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_associated_approval_rule_templates_for_repository)
 
+Arguments mapping described in
+[ListAssociatedApprovalRuleTemplatesForRepositoryInputTypeDef](./type_defs.md#listassociatedapprovalruletemplatesforrepositoryinputtypedef).
+
 Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
@@ -1098,28 +1354,39 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAssociatedApprovalRuleTemplatesForRepositoryOutputTypeDef](./type_defs.md#listassociatedapprovalruletemplatesforrepositoryoutputtypedef).
+[ListAssociatedApprovalRuleTemplatesForRepositoryOutputResponseTypeDef](./type_defs.md#listassociatedapprovalruletemplatesforrepositoryoutputresponsetypedef).
 
 ### list_branches
+
+Gets information about one or more branches in a repository.
 
 Type annotations for `boto3.client("codecommit").list_branches` method.
 
 Boto3 documentation:
 [CodeCommit.Client.list_branches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_branches)
 
+Arguments mapping described in
+[ListBranchesInputTypeDef](./type_defs.md#listbranchesinputtypedef).
+
 Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `nextToken`: `str`
 
-Returns [ListBranchesOutputTypeDef](./type_defs.md#listbranchesoutputtypedef).
+Returns
+[ListBranchesOutputResponseTypeDef](./type_defs.md#listbranchesoutputresponsetypedef).
 
 ### list_pull_requests
+
+Returns a list of pull requests for a specified repository.
 
 Type annotations for `boto3.client("codecommit").list_pull_requests` method.
 
 Boto3 documentation:
 [CodeCommit.Client.list_pull_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_pull_requests)
+
+Arguments mapping described in
+[ListPullRequestsInputTypeDef](./type_defs.md#listpullrequestsinputtypedef).
 
 Keyword-only arguments:
 
@@ -1131,14 +1398,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListPullRequestsOutputTypeDef](./type_defs.md#listpullrequestsoutputtypedef).
+[ListPullRequestsOutputResponseTypeDef](./type_defs.md#listpullrequestsoutputresponsetypedef).
 
 ### list_repositories
+
+Gets information about one or more repositories.
 
 Type annotations for `boto3.client("codecommit").list_repositories` method.
 
 Boto3 documentation:
 [CodeCommit.Client.list_repositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_repositories)
+
+Arguments mapping described in
+[ListRepositoriesInputTypeDef](./type_defs.md#listrepositoriesinputtypedef).
 
 Keyword-only arguments:
 
@@ -1147,9 +1419,11 @@ Keyword-only arguments:
 - `order`: [OrderEnumType](./literals.md#orderenumtype)
 
 Returns
-[ListRepositoriesOutputTypeDef](./type_defs.md#listrepositoriesoutputtypedef).
+[ListRepositoriesOutputResponseTypeDef](./type_defs.md#listrepositoriesoutputresponsetypedef).
 
 ### list_repositories_for_approval_rule_template
+
+Lists all repositories associated with the specified approval rule template.
 
 Type annotations for
 `boto3.client("codecommit").list_repositories_for_approval_rule_template`
@@ -1158,6 +1432,9 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.list_repositories_for_approval_rule_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_repositories_for_approval_rule_template)
 
+Arguments mapping described in
+[ListRepositoriesForApprovalRuleTemplateInputTypeDef](./type_defs.md#listrepositoriesforapprovalruletemplateinputtypedef).
+
 Keyword-only arguments:
 
 - `approvalRuleTemplateName`: `str` *(required)*
@@ -1165,9 +1442,12 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListRepositoriesForApprovalRuleTemplateOutputTypeDef](./type_defs.md#listrepositoriesforapprovalruletemplateoutputtypedef).
+[ListRepositoriesForApprovalRuleTemplateOutputResponseTypeDef](./type_defs.md#listrepositoriesforapprovalruletemplateoutputresponsetypedef).
 
 ### list_tags_for_resource
+
+Gets information about AWS tags for a specified Amazon Resource Name (ARN) in
+AWS CodeCommit.
 
 Type annotations for `boto3.client("codecommit").list_tags_for_resource`
 method.
@@ -1175,15 +1455,20 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceInputTypeDef](./type_defs.md#listtagsforresourceinputtypedef).
+
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `nextToken`: `str`
 
 Returns
-[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+[ListTagsForResourceOutputResponseTypeDef](./type_defs.md#listtagsforresourceoutputresponsetypedef).
 
 ### merge_branches_by_fast_forward
+
+Merges two branches using the fast-forward merge strategy.
 
 Type annotations for
 `boto3.client("codecommit").merge_branches_by_fast_forward` method.
@@ -1191,6 +1476,9 @@ Type annotations for
 Boto3 documentation:
 [CodeCommit.Client.merge_branches_by_fast_forward](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_branches_by_fast_forward)
 
+Arguments mapping described in
+[MergeBranchesByFastForwardInputTypeDef](./type_defs.md#mergebranchesbyfastforwardinputtypedef).
+
 Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
@@ -1199,9 +1487,11 @@ Keyword-only arguments:
 - `targetBranch`: `str`
 
 Returns
-[MergeBranchesByFastForwardOutputTypeDef](./type_defs.md#mergebranchesbyfastforwardoutputtypedef).
+[MergeBranchesByFastForwardOutputResponseTypeDef](./type_defs.md#mergebranchesbyfastforwardoutputresponsetypedef).
 
 ### merge_branches_by_squash
+
+Merges two branches using the squash merge strategy.
 
 Type annotations for `boto3.client("codecommit").merge_branches_by_squash`
 method.
@@ -1209,6 +1499,9 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.merge_branches_by_squash](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_branches_by_squash)
 
+Arguments mapping described in
+[MergeBranchesBySquashInputTypeDef](./type_defs.md#mergebranchesbysquashinputtypedef).
+
 Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
@@ -1227,9 +1520,11 @@ Keyword-only arguments:
   [ConflictResolutionTypeDef](./type_defs.md#conflictresolutiontypedef)
 
 Returns
-[MergeBranchesBySquashOutputTypeDef](./type_defs.md#mergebranchesbysquashoutputtypedef).
+[MergeBranchesBySquashOutputResponseTypeDef](./type_defs.md#mergebranchesbysquashoutputresponsetypedef).
 
 ### merge_branches_by_three_way
+
+Merges two specified branches using the three-way merge strategy.
 
 Type annotations for `boto3.client("codecommit").merge_branches_by_three_way`
 method.
@@ -1237,6 +1532,9 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.merge_branches_by_three_way](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_branches_by_three_way)
 
+Arguments mapping described in
+[MergeBranchesByThreeWayInputTypeDef](./type_defs.md#mergebranchesbythreewayinputtypedef).
+
 Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
@@ -1255,9 +1553,13 @@ Keyword-only arguments:
   [ConflictResolutionTypeDef](./type_defs.md#conflictresolutiontypedef)
 
 Returns
-[MergeBranchesByThreeWayOutputTypeDef](./type_defs.md#mergebranchesbythreewayoutputtypedef).
+[MergeBranchesByThreeWayOutputResponseTypeDef](./type_defs.md#mergebranchesbythreewayoutputresponsetypedef).
 
 ### merge_pull_request_by_fast_forward
+
+Attempts to merge the source commit of a pull request into the specified
+destination branch for that pull request at the specified commit using the
+fast- forward merge strategy.
 
 Type annotations for
 `boto3.client("codecommit").merge_pull_request_by_fast_forward` method.
@@ -1265,6 +1567,9 @@ Type annotations for
 Boto3 documentation:
 [CodeCommit.Client.merge_pull_request_by_fast_forward](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_pull_request_by_fast_forward)
 
+Arguments mapping described in
+[MergePullRequestByFastForwardInputTypeDef](./type_defs.md#mergepullrequestbyfastforwardinputtypedef).
+
 Keyword-only arguments:
 
 - `pullRequestId`: `str` *(required)*
@@ -1272,9 +1577,13 @@ Keyword-only arguments:
 - `sourceCommitId`: `str`
 
 Returns
-[MergePullRequestByFastForwardOutputTypeDef](./type_defs.md#mergepullrequestbyfastforwardoutputtypedef).
+[MergePullRequestByFastForwardOutputResponseTypeDef](./type_defs.md#mergepullrequestbyfastforwardoutputresponsetypedef).
 
 ### merge_pull_request_by_squash
+
+Attempts to merge the source commit of a pull request into the specified
+destination branch for that pull request at the specified commit using the
+squash merge strategy.
 
 Type annotations for `boto3.client("codecommit").merge_pull_request_by_squash`
 method.
@@ -1282,6 +1591,9 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.merge_pull_request_by_squash](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_pull_request_by_squash)
 
+Arguments mapping described in
+[MergePullRequestBySquashInputTypeDef](./type_defs.md#mergepullrequestbysquashinputtypedef).
+
 Keyword-only arguments:
 
 - `pullRequestId`: `str` *(required)*
@@ -1299,9 +1611,13 @@ Keyword-only arguments:
   [ConflictResolutionTypeDef](./type_defs.md#conflictresolutiontypedef)
 
 Returns
-[MergePullRequestBySquashOutputTypeDef](./type_defs.md#mergepullrequestbysquashoutputtypedef).
+[MergePullRequestBySquashOutputResponseTypeDef](./type_defs.md#mergepullrequestbysquashoutputresponsetypedef).
 
 ### merge_pull_request_by_three_way
+
+Attempts to merge the source commit of a pull request into the specified
+destination branch for that pull request at the specified commit using the
+three-way merge strategy.
 
 Type annotations for
 `boto3.client("codecommit").merge_pull_request_by_three_way` method.
@@ -1309,6 +1625,9 @@ Type annotations for
 Boto3 documentation:
 [CodeCommit.Client.merge_pull_request_by_three_way](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.merge_pull_request_by_three_way)
 
+Arguments mapping described in
+[MergePullRequestByThreeWayInputTypeDef](./type_defs.md#mergepullrequestbythreewayinputtypedef).
+
 Keyword-only arguments:
 
 - `pullRequestId`: `str` *(required)*
@@ -1326,15 +1645,21 @@ Keyword-only arguments:
   [ConflictResolutionTypeDef](./type_defs.md#conflictresolutiontypedef)
 
 Returns
-[MergePullRequestByThreeWayOutputTypeDef](./type_defs.md#mergepullrequestbythreewayoutputtypedef).
+[MergePullRequestByThreeWayOutputResponseTypeDef](./type_defs.md#mergepullrequestbythreewayoutputresponsetypedef).
 
 ### override_pull_request_approval_rules
+
+Sets aside (overrides) all approval rule requirements for a specified pull
+request.
 
 Type annotations for
 `boto3.client("codecommit").override_pull_request_approval_rules` method.
 
 Boto3 documentation:
 [CodeCommit.Client.override_pull_request_approval_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.override_pull_request_approval_rules)
+
+Arguments mapping described in
+[OverridePullRequestApprovalRulesInputTypeDef](./type_defs.md#overridepullrequestapprovalrulesinputtypedef).
 
 Keyword-only arguments:
 
@@ -1345,11 +1670,16 @@ Keyword-only arguments:
 
 ### post_comment_for_compared_commit
 
+Posts a comment on the comparison between two commits.
+
 Type annotations for
 `boto3.client("codecommit").post_comment_for_compared_commit` method.
 
 Boto3 documentation:
 [CodeCommit.Client.post_comment_for_compared_commit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.post_comment_for_compared_commit)
+
+Arguments mapping described in
+[PostCommentForComparedCommitInputTypeDef](./type_defs.md#postcommentforcomparedcommitinputtypedef).
 
 Keyword-only arguments:
 
@@ -1361,15 +1691,20 @@ Keyword-only arguments:
 - `clientRequestToken`: `str`
 
 Returns
-[PostCommentForComparedCommitOutputTypeDef](./type_defs.md#postcommentforcomparedcommitoutputtypedef).
+[PostCommentForComparedCommitOutputResponseTypeDef](./type_defs.md#postcommentforcomparedcommitoutputresponsetypedef).
 
 ### post_comment_for_pull_request
+
+Posts a comment on a pull request.
 
 Type annotations for `boto3.client("codecommit").post_comment_for_pull_request`
 method.
 
 Boto3 documentation:
 [CodeCommit.Client.post_comment_for_pull_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.post_comment_for_pull_request)
+
+Arguments mapping described in
+[PostCommentForPullRequestInputTypeDef](./type_defs.md#postcommentforpullrequestinputtypedef).
 
 Keyword-only arguments:
 
@@ -1382,14 +1717,20 @@ Keyword-only arguments:
 - `clientRequestToken`: `str`
 
 Returns
-[PostCommentForPullRequestOutputTypeDef](./type_defs.md#postcommentforpullrequestoutputtypedef).
+[PostCommentForPullRequestOutputResponseTypeDef](./type_defs.md#postcommentforpullrequestoutputresponsetypedef).
 
 ### post_comment_reply
+
+Posts a comment in reply to an existing comment on a comparison between commits
+or a pull request.
 
 Type annotations for `boto3.client("codecommit").post_comment_reply` method.
 
 Boto3 documentation:
 [CodeCommit.Client.post_comment_reply](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.post_comment_reply)
+
+Arguments mapping described in
+[PostCommentReplyInputTypeDef](./type_defs.md#postcommentreplyinputtypedef).
 
 Keyword-only arguments:
 
@@ -1398,14 +1739,20 @@ Keyword-only arguments:
 - `clientRequestToken`: `str`
 
 Returns
-[PostCommentReplyOutputTypeDef](./type_defs.md#postcommentreplyoutputtypedef).
+[PostCommentReplyOutputResponseTypeDef](./type_defs.md#postcommentreplyoutputresponsetypedef).
 
 ### put_comment_reaction
+
+Adds or updates a reaction to a specified comment for the user whose identity
+is used to make the request.
 
 Type annotations for `boto3.client("codecommit").put_comment_reaction` method.
 
 Boto3 documentation:
 [CodeCommit.Client.put_comment_reaction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.put_comment_reaction)
+
+Arguments mapping described in
+[PutCommentReactionInputTypeDef](./type_defs.md#putcommentreactioninputtypedef).
 
 Keyword-only arguments:
 
@@ -1414,10 +1761,16 @@ Keyword-only arguments:
 
 ### put_file
 
+Adds or updates a file in a branch in an AWS CodeCommit repository, and
+generates a commit for the addition in the specified branch.
+
 Type annotations for `boto3.client("codecommit").put_file` method.
 
 Boto3 documentation:
 [CodeCommit.Client.put_file](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.put_file)
+
+Arguments mapping described in
+[PutFileInputTypeDef](./type_defs.md#putfileinputtypedef).
 
 Keyword-only arguments:
 
@@ -1432,15 +1785,21 @@ Keyword-only arguments:
 - `name`: `str`
 - `email`: `str`
 
-Returns [PutFileOutputTypeDef](./type_defs.md#putfileoutputtypedef).
+Returns
+[PutFileOutputResponseTypeDef](./type_defs.md#putfileoutputresponsetypedef).
 
 ### put_repository_triggers
+
+Replaces all triggers for a repository.
 
 Type annotations for `boto3.client("codecommit").put_repository_triggers`
 method.
 
 Boto3 documentation:
 [CodeCommit.Client.put_repository_triggers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.put_repository_triggers)
+
+Arguments mapping described in
+[PutRepositoryTriggersInputTypeDef](./type_defs.md#putrepositorytriggersinputtypedef).
 
 Keyword-only arguments:
 
@@ -1450,14 +1809,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutRepositoryTriggersOutputTypeDef](./type_defs.md#putrepositorytriggersoutputtypedef).
+[PutRepositoryTriggersOutputResponseTypeDef](./type_defs.md#putrepositorytriggersoutputresponsetypedef).
 
 ### tag_resource
+
+Adds or updates tags for a resource in AWS CodeCommit.
 
 Type annotations for `boto3.client("codecommit").tag_resource` method.
 
 Boto3 documentation:
 [CodeCommit.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceInputTypeDef](./type_defs.md#tagresourceinputtypedef).
 
 Keyword-only arguments:
 
@@ -1466,11 +1830,17 @@ Keyword-only arguments:
 
 ### test_repository_triggers
 
+Tests the functionality of repository triggers by sending information to the
+trigger target.
+
 Type annotations for `boto3.client("codecommit").test_repository_triggers`
 method.
 
 Boto3 documentation:
 [CodeCommit.Client.test_repository_triggers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.test_repository_triggers)
+
+Arguments mapping described in
+[TestRepositoryTriggersInputTypeDef](./type_defs.md#testrepositorytriggersinputtypedef).
 
 Keyword-only arguments:
 
@@ -1480,14 +1850,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[TestRepositoryTriggersOutputTypeDef](./type_defs.md#testrepositorytriggersoutputtypedef).
+[TestRepositoryTriggersOutputResponseTypeDef](./type_defs.md#testrepositorytriggersoutputresponsetypedef).
 
 ### untag_resource
+
+Removes tags for a resource in AWS CodeCommit.
 
 Type annotations for `boto3.client("codecommit").untag_resource` method.
 
 Boto3 documentation:
 [CodeCommit.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceInputTypeDef](./type_defs.md#untagresourceinputtypedef).
 
 Keyword-only arguments:
 
@@ -1496,11 +1871,16 @@ Keyword-only arguments:
 
 ### update_approval_rule_template_content
 
+Updates the content of an approval rule template.
+
 Type annotations for
 `boto3.client("codecommit").update_approval_rule_template_content` method.
 
 Boto3 documentation:
 [CodeCommit.Client.update_approval_rule_template_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_approval_rule_template_content)
+
+Arguments mapping described in
+[UpdateApprovalRuleTemplateContentInputTypeDef](./type_defs.md#updateapprovalruletemplatecontentinputtypedef).
 
 Keyword-only arguments:
 
@@ -1509,9 +1889,11 @@ Keyword-only arguments:
 - `existingRuleContentSha256`: `str`
 
 Returns
-[UpdateApprovalRuleTemplateContentOutputTypeDef](./type_defs.md#updateapprovalruletemplatecontentoutputtypedef).
+[UpdateApprovalRuleTemplateContentOutputResponseTypeDef](./type_defs.md#updateapprovalruletemplatecontentoutputresponsetypedef).
 
 ### update_approval_rule_template_description
+
+Updates the description for a specified approval rule template.
 
 Type annotations for
 `boto3.client("codecommit").update_approval_rule_template_description` method.
@@ -1519,15 +1901,20 @@ Type annotations for
 Boto3 documentation:
 [CodeCommit.Client.update_approval_rule_template_description](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_approval_rule_template_description)
 
+Arguments mapping described in
+[UpdateApprovalRuleTemplateDescriptionInputTypeDef](./type_defs.md#updateapprovalruletemplatedescriptioninputtypedef).
+
 Keyword-only arguments:
 
 - `approvalRuleTemplateName`: `str` *(required)*
 - `approvalRuleTemplateDescription`: `str` *(required)*
 
 Returns
-[UpdateApprovalRuleTemplateDescriptionOutputTypeDef](./type_defs.md#updateapprovalruletemplatedescriptionoutputtypedef).
+[UpdateApprovalRuleTemplateDescriptionOutputResponseTypeDef](./type_defs.md#updateapprovalruletemplatedescriptionoutputresponsetypedef).
 
 ### update_approval_rule_template_name
+
+Updates the name of a specified approval rule template.
 
 Type annotations for
 `boto3.client("codecommit").update_approval_rule_template_name` method.
@@ -1535,20 +1922,28 @@ Type annotations for
 Boto3 documentation:
 [CodeCommit.Client.update_approval_rule_template_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_approval_rule_template_name)
 
+Arguments mapping described in
+[UpdateApprovalRuleTemplateNameInputTypeDef](./type_defs.md#updateapprovalruletemplatenameinputtypedef).
+
 Keyword-only arguments:
 
 - `oldApprovalRuleTemplateName`: `str` *(required)*
 - `newApprovalRuleTemplateName`: `str` *(required)*
 
 Returns
-[UpdateApprovalRuleTemplateNameOutputTypeDef](./type_defs.md#updateapprovalruletemplatenameoutputtypedef).
+[UpdateApprovalRuleTemplateNameOutputResponseTypeDef](./type_defs.md#updateapprovalruletemplatenameoutputresponsetypedef).
 
 ### update_comment
+
+Replaces the contents of a comment.
 
 Type annotations for `boto3.client("codecommit").update_comment` method.
 
 Boto3 documentation:
 [CodeCommit.Client.update_comment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_comment)
+
+Arguments mapping described in
+[UpdateCommentInputTypeDef](./type_defs.md#updatecommentinputtypedef).
 
 Keyword-only arguments:
 
@@ -1556,14 +1951,19 @@ Keyword-only arguments:
 - `content`: `str` *(required)*
 
 Returns
-[UpdateCommentOutputTypeDef](./type_defs.md#updatecommentoutputtypedef).
+[UpdateCommentOutputResponseTypeDef](./type_defs.md#updatecommentoutputresponsetypedef).
 
 ### update_default_branch
+
+Sets or changes the default branch name for the specified repository.
 
 Type annotations for `boto3.client("codecommit").update_default_branch` method.
 
 Boto3 documentation:
 [CodeCommit.Client.update_default_branch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_default_branch)
+
+Arguments mapping described in
+[UpdateDefaultBranchInputTypeDef](./type_defs.md#updatedefaultbranchinputtypedef).
 
 Keyword-only arguments:
 
@@ -1572,11 +1972,17 @@ Keyword-only arguments:
 
 ### update_pull_request_approval_rule_content
 
+Updates the structure of an approval rule created specifically for a pull
+request.
+
 Type annotations for
 `boto3.client("codecommit").update_pull_request_approval_rule_content` method.
 
 Boto3 documentation:
 [CodeCommit.Client.update_pull_request_approval_rule_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_approval_rule_content)
+
+Arguments mapping described in
+[UpdatePullRequestApprovalRuleContentInputTypeDef](./type_defs.md#updatepullrequestapprovalrulecontentinputtypedef).
 
 Keyword-only arguments:
 
@@ -1586,15 +1992,20 @@ Keyword-only arguments:
 - `existingRuleContentSha256`: `str`
 
 Returns
-[UpdatePullRequestApprovalRuleContentOutputTypeDef](./type_defs.md#updatepullrequestapprovalrulecontentoutputtypedef).
+[UpdatePullRequestApprovalRuleContentOutputResponseTypeDef](./type_defs.md#updatepullrequestapprovalrulecontentoutputresponsetypedef).
 
 ### update_pull_request_approval_state
+
+Updates the state of a user's approval on a pull request.
 
 Type annotations for
 `boto3.client("codecommit").update_pull_request_approval_state` method.
 
 Boto3 documentation:
 [CodeCommit.Client.update_pull_request_approval_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_approval_state)
+
+Arguments mapping described in
+[UpdatePullRequestApprovalStateInputTypeDef](./type_defs.md#updatepullrequestapprovalstateinputtypedef).
 
 Keyword-only arguments:
 
@@ -1605,11 +2016,16 @@ Keyword-only arguments:
 
 ### update_pull_request_description
 
+Replaces the contents of the description of a pull request.
+
 Type annotations for
 `boto3.client("codecommit").update_pull_request_description` method.
 
 Boto3 documentation:
 [CodeCommit.Client.update_pull_request_description](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_description)
+
+Arguments mapping described in
+[UpdatePullRequestDescriptionInputTypeDef](./type_defs.md#updatepullrequestdescriptioninputtypedef).
 
 Keyword-only arguments:
 
@@ -1617,15 +2033,20 @@ Keyword-only arguments:
 - `description`: `str` *(required)*
 
 Returns
-[UpdatePullRequestDescriptionOutputTypeDef](./type_defs.md#updatepullrequestdescriptionoutputtypedef).
+[UpdatePullRequestDescriptionOutputResponseTypeDef](./type_defs.md#updatepullrequestdescriptionoutputresponsetypedef).
 
 ### update_pull_request_status
+
+Updates the status of a pull request.
 
 Type annotations for `boto3.client("codecommit").update_pull_request_status`
 method.
 
 Boto3 documentation:
 [CodeCommit.Client.update_pull_request_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_status)
+
+Arguments mapping described in
+[UpdatePullRequestStatusInputTypeDef](./type_defs.md#updatepullrequeststatusinputtypedef).
 
 Keyword-only arguments:
 
@@ -1635,9 +2056,11 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdatePullRequestStatusOutputTypeDef](./type_defs.md#updatepullrequeststatusoutputtypedef).
+[UpdatePullRequestStatusOutputResponseTypeDef](./type_defs.md#updatepullrequeststatusoutputresponsetypedef).
 
 ### update_pull_request_title
+
+Replaces the title of a pull request.
 
 Type annotations for `boto3.client("codecommit").update_pull_request_title`
 method.
@@ -1645,21 +2068,29 @@ method.
 Boto3 documentation:
 [CodeCommit.Client.update_pull_request_title](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_pull_request_title)
 
+Arguments mapping described in
+[UpdatePullRequestTitleInputTypeDef](./type_defs.md#updatepullrequesttitleinputtypedef).
+
 Keyword-only arguments:
 
 - `pullRequestId`: `str` *(required)*
 - `title`: `str` *(required)*
 
 Returns
-[UpdatePullRequestTitleOutputTypeDef](./type_defs.md#updatepullrequesttitleoutputtypedef).
+[UpdatePullRequestTitleOutputResponseTypeDef](./type_defs.md#updatepullrequesttitleoutputresponsetypedef).
 
 ### update_repository_description
+
+Sets or changes the comment or description for a repository.
 
 Type annotations for `boto3.client("codecommit").update_repository_description`
 method.
 
 Boto3 documentation:
 [CodeCommit.Client.update_repository_description](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_repository_description)
+
+Arguments mapping described in
+[UpdateRepositoryDescriptionInputTypeDef](./type_defs.md#updaterepositorydescriptioninputtypedef).
 
 Keyword-only arguments:
 
@@ -1668,11 +2099,16 @@ Keyword-only arguments:
 
 ### update_repository_name
 
+Renames a repository.
+
 Type annotations for `boto3.client("codecommit").update_repository_name`
 method.
 
 Boto3 documentation:
 [CodeCommit.Client.update_repository_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit.Client.update_repository_name)
+
+Arguments mapping described in
+[UpdateRepositoryNameInputTypeDef](./type_defs.md#updaterepositorynameinputtypedef).
 
 Keyword-only arguments:
 

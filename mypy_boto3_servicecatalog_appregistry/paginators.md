@@ -36,7 +36,7 @@ Arguments for `ListApplicationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListApplicationsPaginator.paginate` returns
-`Iterator`\[[ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef)\].
+`Iterator`\[[ListApplicationsResponseResponseTypeDef](./type_defs.md#listapplicationsresponseresponsetypedef)\].
 
 ## ListAssociatedAttributeGroupsPaginator
 
@@ -62,7 +62,7 @@ Arguments for `ListAssociatedAttributeGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssociatedAttributeGroupsPaginator.paginate` returns
-`Iterator`\[[ListAssociatedAttributeGroupsResponseTypeDef](./type_defs.md#listassociatedattributegroupsresponsetypedef)\].
+`Iterator`\[[ListAssociatedAttributeGroupsResponseResponseTypeDef](./type_defs.md#listassociatedattributegroupsresponseresponsetypedef)\].
 
 ## ListAssociatedResourcesPaginator
 
@@ -88,7 +88,7 @@ Arguments for `ListAssociatedResourcesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssociatedResourcesPaginator.paginate` returns
-`Iterator`\[[ListAssociatedResourcesResponseTypeDef](./type_defs.md#listassociatedresourcesresponsetypedef)\].
+`Iterator`\[[ListAssociatedResourcesResponseResponseTypeDef](./type_defs.md#listassociatedresourcesresponseresponsetypedef)\].
 
 ## ListAttributeGroupsPaginator
 
@@ -113,4 +113,4 @@ Arguments for `ListAttributeGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAttributeGroupsPaginator.paginate` returns
-`Iterator`\[[ListAttributeGroupsResponseTypeDef](./type_defs.md#listattributegroupsresponsetypedef)\].
+`Iterator`\[[ListAttributeGroupsResponseResponseTypeDef](./type_defs.md#listattributegroupsresponseresponsetypedef)\].

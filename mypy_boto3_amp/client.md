@@ -63,6 +63,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("amp").can_paginate` method.
 
 Boto3 documentation:
@@ -76,10 +78,15 @@ Returns `bool`.
 
 ### create_workspace
 
+Creates a new AMP workspace.
+
 Type annotations for `boto3.client("amp").create_workspace` method.
 
 Boto3 documentation:
 [PrometheusService.Client.create_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.create_workspace)
+
+Arguments mapping described in
+[CreateWorkspaceRequestTypeDef](./type_defs.md#createworkspacerequesttypedef).
 
 Keyword-only arguments:
 
@@ -87,14 +94,19 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[CreateWorkspaceResponseTypeDef](./type_defs.md#createworkspaceresponsetypedef).
+[CreateWorkspaceResponseResponseTypeDef](./type_defs.md#createworkspaceresponseresponsetypedef).
 
 ### delete_workspace
+
+Deletes an AMP workspace.
 
 Type annotations for `boto3.client("amp").delete_workspace` method.
 
 Boto3 documentation:
 [PrometheusService.Client.delete_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.delete_workspace)
+
+Arguments mapping described in
+[DeleteWorkspaceRequestTypeDef](./type_defs.md#deleteworkspacerequesttypedef).
 
 Keyword-only arguments:
 
@@ -103,19 +115,26 @@ Keyword-only arguments:
 
 ### describe_workspace
 
+Describes an existing AMP workspace.
+
 Type annotations for `boto3.client("amp").describe_workspace` method.
 
 Boto3 documentation:
 [PrometheusService.Client.describe_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.describe_workspace)
+
+Arguments mapping described in
+[DescribeWorkspaceRequestTypeDef](./type_defs.md#describeworkspacerequesttypedef).
 
 Keyword-only arguments:
 
 - `workspaceId`: `str` *(required)*
 
 Returns
-[DescribeWorkspaceResponseTypeDef](./type_defs.md#describeworkspaceresponsetypedef).
+[DescribeWorkspaceResponseResponseTypeDef](./type_defs.md#describeworkspaceresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("amp").generate_presigned_url` method.
 
@@ -133,10 +152,15 @@ Returns `str`.
 
 ### list_workspaces
 
+Lists all AMP workspaces, including workspaces being created or deleted.
+
 Type annotations for `boto3.client("amp").list_workspaces` method.
 
 Boto3 documentation:
 [PrometheusService.Client.list_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.list_workspaces)
+
+Arguments mapping described in
+[ListWorkspacesRequestTypeDef](./type_defs.md#listworkspacesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -145,14 +169,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListWorkspacesResponseTypeDef](./type_defs.md#listworkspacesresponsetypedef).
+[ListWorkspacesResponseResponseTypeDef](./type_defs.md#listworkspacesresponseresponsetypedef).
 
 ### update_workspace_alias
+
+Updates an AMP workspace alias.
 
 Type annotations for `boto3.client("amp").update_workspace_alias` method.
 
 Boto3 documentation:
 [PrometheusService.Client.update_workspace_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.update_workspace_alias)
+
+Arguments mapping described in
+[UpdateWorkspaceAliasRequestTypeDef](./type_defs.md#updateworkspacealiasrequesttypedef).
 
 Keyword-only arguments:
 

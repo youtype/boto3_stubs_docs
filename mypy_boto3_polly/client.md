@@ -81,6 +81,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("polly").can_paginate` method.
 
 Boto3 documentation:
@@ -94,10 +96,15 @@ Returns `bool`.
 
 ### delete_lexicon
 
+Deletes the specified pronunciation lexicon stored in an AWS Region.
+
 Type annotations for `boto3.client("polly").delete_lexicon` method.
 
 Boto3 documentation:
 [Polly.Client.delete_lexicon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.delete_lexicon)
+
+Arguments mapping described in
+[DeleteLexiconInputTypeDef](./type_defs.md#deletelexiconinputtypedef).
 
 Keyword-only arguments:
 
@@ -107,10 +114,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_voices
 
+Returns the list of voices that are available for use when requesting speech
+synthesis.
+
 Type annotations for `boto3.client("polly").describe_voices` method.
 
 Boto3 documentation:
 [Polly.Client.describe_voices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.describe_voices)
+
+Arguments mapping described in
+[DescribeVoicesInputTypeDef](./type_defs.md#describevoicesinputtypedef).
 
 Keyword-only arguments:
 
@@ -120,9 +133,11 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeVoicesOutputTypeDef](./type_defs.md#describevoicesoutputtypedef).
+[DescribeVoicesOutputResponseTypeDef](./type_defs.md#describevoicesoutputresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("polly").generate_presigned_url` method.
 
@@ -140,51 +155,74 @@ Returns `str`.
 
 ### get_lexicon
 
+Returns the content of the specified pronunciation lexicon stored in an AWS
+Region.
+
 Type annotations for `boto3.client("polly").get_lexicon` method.
 
 Boto3 documentation:
 [Polly.Client.get_lexicon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.get_lexicon)
 
+Arguments mapping described in
+[GetLexiconInputTypeDef](./type_defs.md#getlexiconinputtypedef).
+
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
-Returns [GetLexiconOutputTypeDef](./type_defs.md#getlexiconoutputtypedef).
+Returns
+[GetLexiconOutputResponseTypeDef](./type_defs.md#getlexiconoutputresponsetypedef).
 
 ### get_speech_synthesis_task
+
+Retrieves a specific SpeechSynthesisTask object based on its TaskID.
 
 Type annotations for `boto3.client("polly").get_speech_synthesis_task` method.
 
 Boto3 documentation:
 [Polly.Client.get_speech_synthesis_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.get_speech_synthesis_task)
 
+Arguments mapping described in
+[GetSpeechSynthesisTaskInputTypeDef](./type_defs.md#getspeechsynthesistaskinputtypedef).
+
 Keyword-only arguments:
 
 - `TaskId`: `str` *(required)*
 
 Returns
-[GetSpeechSynthesisTaskOutputTypeDef](./type_defs.md#getspeechsynthesistaskoutputtypedef).
+[GetSpeechSynthesisTaskOutputResponseTypeDef](./type_defs.md#getspeechsynthesistaskoutputresponsetypedef).
 
 ### list_lexicons
+
+Returns a list of pronunciation lexicons stored in an AWS Region.
 
 Type annotations for `boto3.client("polly").list_lexicons` method.
 
 Boto3 documentation:
 [Polly.Client.list_lexicons](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.list_lexicons)
 
+Arguments mapping described in
+[ListLexiconsInputTypeDef](./type_defs.md#listlexiconsinputtypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 
-Returns [ListLexiconsOutputTypeDef](./type_defs.md#listlexiconsoutputtypedef).
+Returns
+[ListLexiconsOutputResponseTypeDef](./type_defs.md#listlexiconsoutputresponsetypedef).
 
 ### list_speech_synthesis_tasks
+
+Returns a list of SpeechSynthesisTask objects ordered by their creation date.
 
 Type annotations for `boto3.client("polly").list_speech_synthesis_tasks`
 method.
 
 Boto3 documentation:
 [Polly.Client.list_speech_synthesis_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.list_speech_synthesis_tasks)
+
+Arguments mapping described in
+[ListSpeechSynthesisTasksInputTypeDef](./type_defs.md#listspeechsynthesistasksinputtypedef).
 
 Keyword-only arguments:
 
@@ -193,14 +231,19 @@ Keyword-only arguments:
 - `Status`: [TaskStatusType](./literals.md#taskstatustype)
 
 Returns
-[ListSpeechSynthesisTasksOutputTypeDef](./type_defs.md#listspeechsynthesistasksoutputtypedef).
+[ListSpeechSynthesisTasksOutputResponseTypeDef](./type_defs.md#listspeechsynthesistasksoutputresponsetypedef).
 
 ### put_lexicon
+
+Stores a pronunciation lexicon in an AWS Region.
 
 Type annotations for `boto3.client("polly").put_lexicon` method.
 
 Boto3 documentation:
 [Polly.Client.put_lexicon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.put_lexicon)
+
+Arguments mapping described in
+[PutLexiconInputTypeDef](./type_defs.md#putlexiconinputtypedef).
 
 Keyword-only arguments:
 
@@ -211,11 +254,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### start_speech_synthesis_task
 
+Allows the creation of an asynchronous synthesis task, by starting a new
+`SpeechSynthesisTask`.
+
 Type annotations for `boto3.client("polly").start_speech_synthesis_task`
 method.
 
 Boto3 documentation:
 [Polly.Client.start_speech_synthesis_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.start_speech_synthesis_task)
+
+Arguments mapping described in
+[StartSpeechSynthesisTaskInputTypeDef](./type_defs.md#startspeechsynthesistaskinputtypedef).
 
 Keyword-only arguments:
 
@@ -235,14 +284,19 @@ Keyword-only arguments:
 - `TextType`: [TextTypeType](./literals.md#texttypetype)
 
 Returns
-[StartSpeechSynthesisTaskOutputTypeDef](./type_defs.md#startspeechsynthesistaskoutputtypedef).
+[StartSpeechSynthesisTaskOutputResponseTypeDef](./type_defs.md#startspeechsynthesistaskoutputresponsetypedef).
 
 ### synthesize_speech
+
+Synthesizes UTF-8 input, plain text or SSML, to a stream of bytes.
 
 Type annotations for `boto3.client("polly").synthesize_speech` method.
 
 Boto3 documentation:
 [Polly.Client.synthesize_speech](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.synthesize_speech)
+
+Arguments mapping described in
+[SynthesizeSpeechInputTypeDef](./type_defs.md#synthesizespeechinputtypedef).
 
 Keyword-only arguments:
 
@@ -259,7 +313,7 @@ Keyword-only arguments:
 - `TextType`: [TextTypeType](./literals.md#texttypetype)
 
 Returns
-[SynthesizeSpeechOutputTypeDef](./type_defs.md#synthesizespeechoutputtypedef).
+[SynthesizeSpeechOutputResponseTypeDef](./type_defs.md#synthesizespeechoutputresponsetypedef).
 
 ### get_paginator
 

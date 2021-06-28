@@ -44,7 +44,7 @@ Arguments for `ListAssignmentsForHITPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssignmentsForHITPaginator.paginate` returns
-`Iterator`\[[ListAssignmentsForHITResponseTypeDef](./type_defs.md#listassignmentsforhitresponsetypedef)\].
+`Iterator`\[[ListAssignmentsForHITResponseResponseTypeDef](./type_defs.md#listassignmentsforhitresponseresponsetypedef)\].
 
 ## ListBonusPaymentsPaginator
 
@@ -71,7 +71,7 @@ Arguments for `ListBonusPaymentsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListBonusPaymentsPaginator.paginate` returns
-`Iterator`\[[ListBonusPaymentsResponseTypeDef](./type_defs.md#listbonuspaymentsresponsetypedef)\].
+`Iterator`\[[ListBonusPaymentsResponseResponseTypeDef](./type_defs.md#listbonuspaymentsresponseresponsetypedef)\].
 
 ## ListHITsPaginator
 
@@ -95,7 +95,7 @@ Arguments for `ListHITsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListHITsPaginator.paginate` returns
-`Iterator`\[[ListHITsResponseTypeDef](./type_defs.md#listhitsresponsetypedef)\].
+`Iterator`\[[ListHITsResponseResponseTypeDef](./type_defs.md#listhitsresponseresponsetypedef)\].
 
 ## ListHITsForQualificationTypePaginator
 
@@ -121,7 +121,7 @@ Arguments for `ListHITsForQualificationTypePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListHITsForQualificationTypePaginator.paginate` returns
-`Iterator`\[[ListHITsForQualificationTypeResponseTypeDef](./type_defs.md#listhitsforqualificationtyperesponsetypedef)\].
+`Iterator`\[[ListHITsForQualificationTypeResponseResponseTypeDef](./type_defs.md#listhitsforqualificationtyperesponseresponsetypedef)\].
 
 ## ListQualificationRequestsPaginator
 
@@ -147,7 +147,7 @@ Arguments for `ListQualificationRequestsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListQualificationRequestsPaginator.paginate` returns
-`Iterator`\[[ListQualificationRequestsResponseTypeDef](./type_defs.md#listqualificationrequestsresponsetypedef)\].
+`Iterator`\[[ListQualificationRequestsResponseResponseTypeDef](./type_defs.md#listqualificationrequestsresponseresponsetypedef)\].
 
 ## ListQualificationTypesPaginator
 
@@ -175,7 +175,7 @@ Arguments for `ListQualificationTypesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListQualificationTypesPaginator.paginate` returns
-`Iterator`\[[ListQualificationTypesResponseTypeDef](./type_defs.md#listqualificationtypesresponsetypedef)\].
+`Iterator`\[[ListQualificationTypesResponseResponseTypeDef](./type_defs.md#listqualificationtypesresponseresponsetypedef)\].
 
 ## ListReviewableHITsPaginator
 
@@ -202,7 +202,7 @@ Arguments for `ListReviewableHITsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListReviewableHITsPaginator.paginate` returns
-`Iterator`\[[ListReviewableHITsResponseTypeDef](./type_defs.md#listreviewablehitsresponsetypedef)\].
+`Iterator`\[[ListReviewableHITsResponseResponseTypeDef](./type_defs.md#listreviewablehitsresponseresponsetypedef)\].
 
 ## ListWorkerBlocksPaginator
 
@@ -227,7 +227,7 @@ Arguments for `ListWorkerBlocksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListWorkerBlocksPaginator.paginate` returns
-`Iterator`\[[ListWorkerBlocksResponseTypeDef](./type_defs.md#listworkerblocksresponsetypedef)\].
+`Iterator`\[[ListWorkerBlocksResponseResponseTypeDef](./type_defs.md#listworkerblocksresponseresponsetypedef)\].
 
 ## ListWorkersWithQualificationTypePaginator
 
@@ -254,4 +254,4 @@ Arguments for `ListWorkersWithQualificationTypePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListWorkersWithQualificationTypePaginator.paginate` returns
-`Iterator`\[[ListWorkersWithQualificationTypeResponseTypeDef](./type_defs.md#listworkerswithqualificationtyperesponsetypedef)\].
+`Iterator`\[[ListWorkersWithQualificationTypeResponseResponseTypeDef](./type_defs.md#listworkerswithqualificationtyperesponseresponsetypedef)\].

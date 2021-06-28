@@ -98,6 +98,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("sms").can_paginate` method.
 
 Boto3 documentation:
@@ -111,10 +113,15 @@ Returns `bool`.
 
 ### create_app
 
+Creates an application.
+
 Type annotations for `boto3.client("sms").create_app` method.
 
 Boto3 documentation:
 [SMS.Client.create_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.create_app)
+
+Arguments mapping described in
+[CreateAppRequestTypeDef](./type_defs.md#createapprequesttypedef).
 
 Keyword-only arguments:
 
@@ -126,19 +133,25 @@ Keyword-only arguments:
   `List`\[[ServerGroupTypeDef](./type_defs.md#servergrouptypedef)\]
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns [CreateAppResponseTypeDef](./type_defs.md#createappresponsetypedef).
+Returns
+[CreateAppResponseResponseTypeDef](./type_defs.md#createappresponseresponsetypedef).
 
 ### create_replication_job
+
+Creates a replication job.
 
 Type annotations for `boto3.client("sms").create_replication_job` method.
 
 Boto3 documentation:
 [SMS.Client.create_replication_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.create_replication_job)
 
+Arguments mapping described in
+[CreateReplicationJobRequestTypeDef](./type_defs.md#createreplicationjobrequesttypedef).
+
 Keyword-only arguments:
 
 - `serverId`: `str` *(required)*
-- `seedReplicationTime`: `datetime` *(required)*
+- `seedReplicationTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `frequency`: `int`
 - `runOnce`: `bool`
 - `licenseType`: [LicenseTypeType](./literals.md#licensetypetype)
@@ -149,14 +162,19 @@ Keyword-only arguments:
 - `kmsKeyId`: `str`
 
 Returns
-[CreateReplicationJobResponseTypeDef](./type_defs.md#createreplicationjobresponsetypedef).
+[CreateReplicationJobResponseResponseTypeDef](./type_defs.md#createreplicationjobresponseresponsetypedef).
 
 ### delete_app
+
+Deletes the specified application.
 
 Type annotations for `boto3.client("sms").delete_app` method.
 
 Boto3 documentation:
 [SMS.Client.delete_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_app)
+
+Arguments mapping described in
+[DeleteAppRequestTypeDef](./type_defs.md#deleteapprequesttypedef).
 
 Keyword-only arguments:
 
@@ -168,11 +186,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_app_launch_configuration
 
+Deletes the launch configuration for the specified application.
+
 Type annotations for `boto3.client("sms").delete_app_launch_configuration`
 method.
 
 Boto3 documentation:
 [SMS.Client.delete_app_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_app_launch_configuration)
+
+Arguments mapping described in
+[DeleteAppLaunchConfigurationRequestTypeDef](./type_defs.md#deleteapplaunchconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -182,11 +205,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_app_replication_configuration
 
+Deletes the replication configuration for the specified application.
+
 Type annotations for `boto3.client("sms").delete_app_replication_configuration`
 method.
 
 Boto3 documentation:
 [SMS.Client.delete_app_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_app_replication_configuration)
+
+Arguments mapping described in
+[DeleteAppReplicationConfigurationRequestTypeDef](./type_defs.md#deleteappreplicationconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -196,11 +224,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_app_validation_configuration
 
+Deletes the validation configuration for the specified application.
+
 Type annotations for `boto3.client("sms").delete_app_validation_configuration`
 method.
 
 Boto3 documentation:
 [SMS.Client.delete_app_validation_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_app_validation_configuration)
+
+Arguments mapping described in
+[DeleteAppValidationConfigurationRequestTypeDef](./type_defs.md#deleteappvalidationconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -210,10 +243,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_replication_job
 
+Deletes the specified replication job.
+
 Type annotations for `boto3.client("sms").delete_replication_job` method.
 
 Boto3 documentation:
 [SMS.Client.delete_replication_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_replication_job)
+
+Arguments mapping described in
+[DeleteReplicationJobRequestTypeDef](./type_defs.md#deletereplicationjobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -222,6 +260,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### delete_server_catalog
+
+Deletes all servers from your server catalog.
 
 Type annotations for `boto3.client("sms").delete_server_catalog` method.
 
@@ -232,10 +272,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_connector
 
+Disassociates the specified connector from AWS SMS.
+
 Type annotations for `boto3.client("sms").disassociate_connector` method.
 
 Boto3 documentation:
 [SMS.Client.disassociate_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.disassociate_connector)
+
+Arguments mapping described in
+[DisassociateConnectorRequestTypeDef](./type_defs.md#disassociateconnectorrequesttypedef).
 
 Keyword-only arguments:
 
@@ -245,10 +290,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### generate_change_set
 
+Generates a target change set for a currently launched stack and writes it to
+an Amazon S3 object in the customer’s Amazon S3 bucket.
+
 Type annotations for `boto3.client("sms").generate_change_set` method.
 
 Boto3 documentation:
 [SMS.Client.generate_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.generate_change_set)
+
+Arguments mapping described in
+[GenerateChangeSetRequestTypeDef](./type_defs.md#generatechangesetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -256,9 +307,11 @@ Keyword-only arguments:
 - `changesetFormat`: [OutputFormatType](./literals.md#outputformattype)
 
 Returns
-[GenerateChangeSetResponseTypeDef](./type_defs.md#generatechangesetresponsetypedef).
+[GenerateChangeSetResponseResponseTypeDef](./type_defs.md#generatechangesetresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("sms").generate_presigned_url` method.
 
@@ -276,10 +329,17 @@ Returns `str`.
 
 ### generate_template
 
+Generates an AWS CloudFormation template based on the current launch
+configuration and writes it to an Amazon S3 object in the customer’s Amazon S3
+bucket.
+
 Type annotations for `boto3.client("sms").generate_template` method.
 
 Boto3 documentation:
 [SMS.Client.generate_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.generate_template)
+
+Arguments mapping described in
+[GenerateTemplateRequestTypeDef](./type_defs.md#generatetemplaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -287,36 +347,51 @@ Keyword-only arguments:
 - `templateFormat`: [OutputFormatType](./literals.md#outputformattype)
 
 Returns
-[GenerateTemplateResponseTypeDef](./type_defs.md#generatetemplateresponsetypedef).
+[GenerateTemplateResponseResponseTypeDef](./type_defs.md#generatetemplateresponseresponsetypedef).
 
 ### get_app
+
+Retrieve information about the specified application.
 
 Type annotations for `boto3.client("sms").get_app` method.
 
 Boto3 documentation:
 [SMS.Client.get_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app)
 
-Keyword-only arguments:
-
-- `appId`: `str`
-
-Returns [GetAppResponseTypeDef](./type_defs.md#getappresponsetypedef).
-
-### get_app_launch_configuration
-
-Type annotations for `boto3.client("sms").get_app_launch_configuration` method.
-
-Boto3 documentation:
-[SMS.Client.get_app_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app_launch_configuration)
+Arguments mapping described in
+[GetAppRequestTypeDef](./type_defs.md#getapprequesttypedef).
 
 Keyword-only arguments:
 
 - `appId`: `str`
 
 Returns
-[GetAppLaunchConfigurationResponseTypeDef](./type_defs.md#getapplaunchconfigurationresponsetypedef).
+[GetAppResponseResponseTypeDef](./type_defs.md#getappresponseresponsetypedef).
+
+### get_app_launch_configuration
+
+Retrieves the application launch configuration associated with the specified
+application.
+
+Type annotations for `boto3.client("sms").get_app_launch_configuration` method.
+
+Boto3 documentation:
+[SMS.Client.get_app_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app_launch_configuration)
+
+Arguments mapping described in
+[GetAppLaunchConfigurationRequestTypeDef](./type_defs.md#getapplaunchconfigurationrequesttypedef).
+
+Keyword-only arguments:
+
+- `appId`: `str`
+
+Returns
+[GetAppLaunchConfigurationResponseResponseTypeDef](./type_defs.md#getapplaunchconfigurationresponseresponsetypedef).
 
 ### get_app_replication_configuration
+
+Retrieves the application replication configuration associated with the
+specified application.
 
 Type annotations for `boto3.client("sms").get_app_replication_configuration`
 method.
@@ -324,14 +399,19 @@ method.
 Boto3 documentation:
 [SMS.Client.get_app_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app_replication_configuration)
 
+Arguments mapping described in
+[GetAppReplicationConfigurationRequestTypeDef](./type_defs.md#getappreplicationconfigurationrequesttypedef).
+
 Keyword-only arguments:
 
 - `appId`: `str`
 
 Returns
-[GetAppReplicationConfigurationResponseTypeDef](./type_defs.md#getappreplicationconfigurationresponsetypedef).
+[GetAppReplicationConfigurationResponseResponseTypeDef](./type_defs.md#getappreplicationconfigurationresponseresponsetypedef).
 
 ### get_app_validation_configuration
+
+Retrieves information about a configuration for validating an application.
 
 Type annotations for `boto3.client("sms").get_app_validation_configuration`
 method.
@@ -339,33 +419,46 @@ method.
 Boto3 documentation:
 [SMS.Client.get_app_validation_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app_validation_configuration)
 
+Arguments mapping described in
+[GetAppValidationConfigurationRequestTypeDef](./type_defs.md#getappvalidationconfigurationrequesttypedef).
+
 Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 
 Returns
-[GetAppValidationConfigurationResponseTypeDef](./type_defs.md#getappvalidationconfigurationresponsetypedef).
+[GetAppValidationConfigurationResponseResponseTypeDef](./type_defs.md#getappvalidationconfigurationresponseresponsetypedef).
 
 ### get_app_validation_output
+
+Retrieves output from validating an application.
 
 Type annotations for `boto3.client("sms").get_app_validation_output` method.
 
 Boto3 documentation:
 [SMS.Client.get_app_validation_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app_validation_output)
 
+Arguments mapping described in
+[GetAppValidationOutputRequestTypeDef](./type_defs.md#getappvalidationoutputrequesttypedef).
+
 Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 
 Returns
-[GetAppValidationOutputResponseTypeDef](./type_defs.md#getappvalidationoutputresponsetypedef).
+[GetAppValidationOutputResponseResponseTypeDef](./type_defs.md#getappvalidationoutputresponseresponsetypedef).
 
 ### get_connectors
+
+Describes the connectors registered with the AWS SMS.
 
 Type annotations for `boto3.client("sms").get_connectors` method.
 
 Boto3 documentation:
 [SMS.Client.get_connectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_connectors)
+
+Arguments mapping described in
+[GetConnectorsRequestTypeDef](./type_defs.md#getconnectorsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -373,14 +466,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetConnectorsResponseTypeDef](./type_defs.md#getconnectorsresponsetypedef).
+[GetConnectorsResponseResponseTypeDef](./type_defs.md#getconnectorsresponseresponsetypedef).
 
 ### get_replication_jobs
+
+Describes the specified replication job or all of your replication jobs.
 
 Type annotations for `boto3.client("sms").get_replication_jobs` method.
 
 Boto3 documentation:
 [SMS.Client.get_replication_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_replication_jobs)
+
+Arguments mapping described in
+[GetReplicationJobsRequestTypeDef](./type_defs.md#getreplicationjobsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -389,14 +487,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetReplicationJobsResponseTypeDef](./type_defs.md#getreplicationjobsresponsetypedef).
+[GetReplicationJobsResponseResponseTypeDef](./type_defs.md#getreplicationjobsresponseresponsetypedef).
 
 ### get_replication_runs
+
+Describes the replication runs for the specified replication job.
 
 Type annotations for `boto3.client("sms").get_replication_runs` method.
 
 Boto3 documentation:
 [SMS.Client.get_replication_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_replication_runs)
+
+Arguments mapping described in
+[GetReplicationRunsRequestTypeDef](./type_defs.md#getreplicationrunsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -405,14 +508,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetReplicationRunsResponseTypeDef](./type_defs.md#getreplicationrunsresponsetypedef).
+[GetReplicationRunsResponseResponseTypeDef](./type_defs.md#getreplicationrunsresponseresponsetypedef).
 
 ### get_servers
+
+Describes the servers in your server catalog.
 
 Type annotations for `boto3.client("sms").get_servers` method.
 
 Boto3 documentation:
 [SMS.Client.get_servers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_servers)
+
+Arguments mapping described in
+[GetServersRequestTypeDef](./type_defs.md#getserversrequesttypedef).
 
 Keyword-only arguments:
 
@@ -421,14 +529,20 @@ Keyword-only arguments:
 - `vmServerAddressList`:
   `List`\[[VmServerAddressTypeDef](./type_defs.md#vmserveraddresstypedef)\]
 
-Returns [GetServersResponseTypeDef](./type_defs.md#getserversresponsetypedef).
+Returns
+[GetServersResponseResponseTypeDef](./type_defs.md#getserversresponseresponsetypedef).
 
 ### import_app_catalog
+
+Allows application import from AWS Migration Hub.
 
 Type annotations for `boto3.client("sms").import_app_catalog` method.
 
 Boto3 documentation:
 [SMS.Client.import_app_catalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.import_app_catalog)
+
+Arguments mapping described in
+[ImportAppCatalogRequestTypeDef](./type_defs.md#importappcatalogrequesttypedef).
 
 Keyword-only arguments:
 
@@ -437,6 +551,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### import_server_catalog
+
+Gathers a complete list of on-premises servers.
 
 Type annotations for `boto3.client("sms").import_server_catalog` method.
 
@@ -447,10 +563,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### launch_app
 
+Launches the specified application as a stack in AWS CloudFormation.
+
 Type annotations for `boto3.client("sms").launch_app` method.
 
 Boto3 documentation:
 [SMS.Client.launch_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.launch_app)
+
+Arguments mapping described in
+[LaunchAppRequestTypeDef](./type_defs.md#launchapprequesttypedef).
 
 Keyword-only arguments:
 
@@ -460,10 +581,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### list_apps
 
+Retrieves summaries for all applications.
+
 Type annotations for `boto3.client("sms").list_apps` method.
 
 Boto3 documentation:
 [SMS.Client.list_apps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.list_apps)
+
+Arguments mapping described in
+[ListAppsRequestTypeDef](./type_defs.md#listappsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -471,14 +597,21 @@ Keyword-only arguments:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-Returns [ListAppsResponseTypeDef](./type_defs.md#listappsresponsetypedef).
+Returns
+[ListAppsResponseResponseTypeDef](./type_defs.md#listappsresponseresponsetypedef).
 
 ### notify_app_validation_output
+
+Provides information to AWS SMS about whether application validation is
+successful.
 
 Type annotations for `boto3.client("sms").notify_app_validation_output` method.
 
 Boto3 documentation:
 [SMS.Client.notify_app_validation_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.notify_app_validation_output)
+
+Arguments mapping described in
+[NotifyAppValidationOutputRequestTypeDef](./type_defs.md#notifyappvalidationoutputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -490,10 +623,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_app_launch_configuration
 
+Creates or updates the launch configuration for the specified application.
+
 Type annotations for `boto3.client("sms").put_app_launch_configuration` method.
 
 Boto3 documentation:
 [SMS.Client.put_app_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.put_app_launch_configuration)
+
+Arguments mapping described in
+[PutAppLaunchConfigurationRequestTypeDef](./type_defs.md#putapplaunchconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -507,11 +645,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_app_replication_configuration
 
+Creates or updates the replication configuration for the specified application.
+
 Type annotations for `boto3.client("sms").put_app_replication_configuration`
 method.
 
 Boto3 documentation:
 [SMS.Client.put_app_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.put_app_replication_configuration)
+
+Arguments mapping described in
+[PutAppReplicationConfigurationRequestTypeDef](./type_defs.md#putappreplicationconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -523,11 +666,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_app_validation_configuration
 
+Creates or updates a validation configuration for the specified application.
+
 Type annotations for `boto3.client("sms").put_app_validation_configuration`
 method.
 
 Boto3 documentation:
 [SMS.Client.put_app_validation_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.put_app_validation_configuration)
+
+Arguments mapping described in
+[PutAppValidationConfigurationRequestTypeDef](./type_defs.md#putappvalidationconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -541,10 +689,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### start_app_replication
 
+Starts replicating the specified application by creating replication jobs for
+each server in the application.
+
 Type annotations for `boto3.client("sms").start_app_replication` method.
 
 Boto3 documentation:
 [SMS.Client.start_app_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.start_app_replication)
+
+Arguments mapping described in
+[StartAppReplicationRequestTypeDef](./type_defs.md#startappreplicationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -554,11 +708,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### start_on_demand_app_replication
 
+Starts an on-demand replication run for the specified application.
+
 Type annotations for `boto3.client("sms").start_on_demand_app_replication`
 method.
 
 Boto3 documentation:
 [SMS.Client.start_on_demand_app_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.start_on_demand_app_replication)
+
+Arguments mapping described in
+[StartOnDemandAppReplicationRequestTypeDef](./type_defs.md#startondemandappreplicationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -569,11 +728,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### start_on_demand_replication_run
 
+Starts an on-demand replication run for the specified replication job.
+
 Type annotations for `boto3.client("sms").start_on_demand_replication_run`
 method.
 
 Boto3 documentation:
 [SMS.Client.start_on_demand_replication_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.start_on_demand_replication_run)
+
+Arguments mapping described in
+[StartOnDemandReplicationRunRequestTypeDef](./type_defs.md#startondemandreplicationrunrequesttypedef).
 
 Keyword-only arguments:
 
@@ -581,14 +745,20 @@ Keyword-only arguments:
 - `description`: `str`
 
 Returns
-[StartOnDemandReplicationRunResponseTypeDef](./type_defs.md#startondemandreplicationrunresponsetypedef).
+[StartOnDemandReplicationRunResponseResponseTypeDef](./type_defs.md#startondemandreplicationrunresponseresponsetypedef).
 
 ### stop_app_replication
+
+Stops replicating the specified application by deleting the replication job for
+each server in the application.
 
 Type annotations for `boto3.client("sms").stop_app_replication` method.
 
 Boto3 documentation:
 [SMS.Client.stop_app_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.stop_app_replication)
+
+Arguments mapping described in
+[StopAppReplicationRequestTypeDef](./type_defs.md#stopappreplicationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -598,10 +768,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### terminate_app
 
+Terminates the stack for the specified application.
+
 Type annotations for `boto3.client("sms").terminate_app` method.
 
 Boto3 documentation:
 [SMS.Client.terminate_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.terminate_app)
+
+Arguments mapping described in
+[TerminateAppRequestTypeDef](./type_defs.md#terminateapprequesttypedef).
 
 Keyword-only arguments:
 
@@ -611,10 +786,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_app
 
+Updates the specified application.
+
 Type annotations for `boto3.client("sms").update_app` method.
 
 Boto3 documentation:
 [SMS.Client.update_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.update_app)
+
+Arguments mapping described in
+[UpdateAppRequestTypeDef](./type_defs.md#updateapprequesttypedef).
 
 Keyword-only arguments:
 
@@ -626,20 +806,26 @@ Keyword-only arguments:
   `List`\[[ServerGroupTypeDef](./type_defs.md#servergrouptypedef)\]
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns [UpdateAppResponseTypeDef](./type_defs.md#updateappresponsetypedef).
+Returns
+[UpdateAppResponseResponseTypeDef](./type_defs.md#updateappresponseresponsetypedef).
 
 ### update_replication_job
+
+Updates the specified settings for the specified replication job.
 
 Type annotations for `boto3.client("sms").update_replication_job` method.
 
 Boto3 documentation:
 [SMS.Client.update_replication_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.update_replication_job)
 
+Arguments mapping described in
+[UpdateReplicationJobRequestTypeDef](./type_defs.md#updatereplicationjobrequesttypedef).
+
 Keyword-only arguments:
 
 - `replicationJobId`: `str` *(required)*
 - `frequency`: `int`
-- `nextReplicationRunStartTime`: `datetime`
+- `nextReplicationRunStartTime`: `Union`\[`datetime`, `str`\]
 - `licenseType`: [LicenseTypeType](./literals.md#licensetypetype)
 - `roleName`: `str`
 - `description`: `str`

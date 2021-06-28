@@ -73,11 +73,17 @@ Exceptions:
 
 ### batch_create_table_rows
 
+The BatchCreateTableRows API allows you to create one or more rows at the end
+of a table in a workbook.
+
 Type annotations for `boto3.client("honeycode").batch_create_table_rows`
 method.
 
 Boto3 documentation:
 [Honeycode.Client.batch_create_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_create_table_rows)
+
+Arguments mapping described in
+[BatchCreateTableRowsRequestTypeDef](./type_defs.md#batchcreatetablerowsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -89,15 +95,21 @@ Keyword-only arguments:
 - `clientRequestToken`: `str`
 
 Returns
-[BatchCreateTableRowsResultTypeDef](./type_defs.md#batchcreatetablerowsresulttypedef).
+[BatchCreateTableRowsResultResponseTypeDef](./type_defs.md#batchcreatetablerowsresultresponsetypedef).
 
 ### batch_delete_table_rows
+
+The BatchDeleteTableRows API allows you to delete one or more rows from a table
+in a workbook.
 
 Type annotations for `boto3.client("honeycode").batch_delete_table_rows`
 method.
 
 Boto3 documentation:
 [Honeycode.Client.batch_delete_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_delete_table_rows)
+
+Arguments mapping described in
+[BatchDeleteTableRowsRequestTypeDef](./type_defs.md#batchdeletetablerowsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -107,15 +119,21 @@ Keyword-only arguments:
 - `clientRequestToken`: `str`
 
 Returns
-[BatchDeleteTableRowsResultTypeDef](./type_defs.md#batchdeletetablerowsresulttypedef).
+[BatchDeleteTableRowsResultResponseTypeDef](./type_defs.md#batchdeletetablerowsresultresponsetypedef).
 
 ### batch_update_table_rows
+
+The BatchUpdateTableRows API allows you to update one or more rows in a table
+in a workbook.
 
 Type annotations for `boto3.client("honeycode").batch_update_table_rows`
 method.
 
 Boto3 documentation:
 [Honeycode.Client.batch_update_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_update_table_rows)
+
+Arguments mapping described in
+[BatchUpdateTableRowsRequestTypeDef](./type_defs.md#batchupdatetablerowsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -127,15 +145,20 @@ Keyword-only arguments:
 - `clientRequestToken`: `str`
 
 Returns
-[BatchUpdateTableRowsResultTypeDef](./type_defs.md#batchupdatetablerowsresulttypedef).
+[BatchUpdateTableRowsResultResponseTypeDef](./type_defs.md#batchupdatetablerowsresultresponsetypedef).
 
 ### batch_upsert_table_rows
+
+The BatchUpsertTableRows API allows you to upsert one or more rows in a table.
 
 Type annotations for `boto3.client("honeycode").batch_upsert_table_rows`
 method.
 
 Boto3 documentation:
 [Honeycode.Client.batch_upsert_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_upsert_table_rows)
+
+Arguments mapping described in
+[BatchUpsertTableRowsRequestTypeDef](./type_defs.md#batchupserttablerowsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -147,9 +170,11 @@ Keyword-only arguments:
 - `clientRequestToken`: `str`
 
 Returns
-[BatchUpsertTableRowsResultTypeDef](./type_defs.md#batchupserttablerowsresulttypedef).
+[BatchUpsertTableRowsResultResponseTypeDef](./type_defs.md#batchupserttablerowsresultresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("honeycode").can_paginate` method.
 
@@ -164,11 +189,17 @@ Returns `bool`.
 
 ### describe_table_data_import_job
 
+The DescribeTableDataImportJob API allows you to retrieve the status and
+details of a table data import job.
+
 Type annotations for `boto3.client("honeycode").describe_table_data_import_job`
 method.
 
 Boto3 documentation:
 [Honeycode.Client.describe_table_data_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.describe_table_data_import_job)
+
+Arguments mapping described in
+[DescribeTableDataImportJobRequestTypeDef](./type_defs.md#describetabledataimportjobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -177,9 +208,11 @@ Keyword-only arguments:
 - `jobId`: `str` *(required)*
 
 Returns
-[DescribeTableDataImportJobResultTypeDef](./type_defs.md#describetabledataimportjobresulttypedef).
+[DescribeTableDataImportJobResultResponseTypeDef](./type_defs.md#describetabledataimportjobresultresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("honeycode").generate_presigned_url` method.
 
@@ -197,10 +230,16 @@ Returns `str`.
 
 ### get_screen_data
 
+The GetScreenData API allows retrieval of data from a screen in a Honeycode
+app.
+
 Type annotations for `boto3.client("honeycode").get_screen_data` method.
 
 Boto3 documentation:
 [Honeycode.Client.get_screen_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.get_screen_data)
+
+Arguments mapping described in
+[GetScreenDataRequestTypeDef](./type_defs.md#getscreendatarequesttypedef).
 
 Keyword-only arguments:
 
@@ -213,15 +252,21 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[GetScreenDataResultTypeDef](./type_defs.md#getscreendataresulttypedef).
+[GetScreenDataResultResponseTypeDef](./type_defs.md#getscreendataresultresponsetypedef).
 
 ### invoke_screen_automation
+
+The InvokeScreenAutomation API allows invoking an action defined in a screen in
+a Honeycode app.
 
 Type annotations for `boto3.client("honeycode").invoke_screen_automation`
 method.
 
 Boto3 documentation:
 [Honeycode.Client.invoke_screen_automation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.invoke_screen_automation)
+
+Arguments mapping described in
+[InvokeScreenAutomationRequestTypeDef](./type_defs.md#invokescreenautomationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -235,14 +280,20 @@ Keyword-only arguments:
 - `clientRequestToken`: `str`
 
 Returns
-[InvokeScreenAutomationResultTypeDef](./type_defs.md#invokescreenautomationresulttypedef).
+[InvokeScreenAutomationResultResponseTypeDef](./type_defs.md#invokescreenautomationresultresponsetypedef).
 
 ### list_table_columns
+
+The ListTableColumns API allows you to retrieve a list of all the columns in a
+table in a workbook.
 
 Type annotations for `boto3.client("honeycode").list_table_columns` method.
 
 Boto3 documentation:
 [Honeycode.Client.list_table_columns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_table_columns)
+
+Arguments mapping described in
+[ListTableColumnsRequestTypeDef](./type_defs.md#listtablecolumnsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -251,14 +302,20 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListTableColumnsResultTypeDef](./type_defs.md#listtablecolumnsresulttypedef).
+[ListTableColumnsResultResponseTypeDef](./type_defs.md#listtablecolumnsresultresponsetypedef).
 
 ### list_table_rows
+
+The ListTableRows API allows you to retrieve a list of all the rows in a table
+in a workbook.
 
 Type annotations for `boto3.client("honeycode").list_table_rows` method.
 
 Boto3 documentation:
 [Honeycode.Client.list_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_table_rows)
+
+Arguments mapping described in
+[ListTableRowsRequestTypeDef](./type_defs.md#listtablerowsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -269,14 +326,20 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListTableRowsResultTypeDef](./type_defs.md#listtablerowsresulttypedef).
+[ListTableRowsResultResponseTypeDef](./type_defs.md#listtablerowsresultresponsetypedef).
 
 ### list_tables
+
+The ListTables API allows you to retrieve a list of all the tables in a
+workbook.
 
 Type annotations for `boto3.client("honeycode").list_tables` method.
 
 Boto3 documentation:
 [Honeycode.Client.list_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_tables)
+
+Arguments mapping described in
+[ListTablesRequestTypeDef](./type_defs.md#listtablesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -284,14 +347,21 @@ Keyword-only arguments:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-Returns [ListTablesResultTypeDef](./type_defs.md#listtablesresulttypedef).
+Returns
+[ListTablesResultResponseTypeDef](./type_defs.md#listtablesresultresponsetypedef).
 
 ### query_table_rows
+
+The QueryTableRows API allows you to use a filter formula to query for specific
+rows in a table.
 
 Type annotations for `boto3.client("honeycode").query_table_rows` method.
 
 Boto3 documentation:
 [Honeycode.Client.query_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.query_table_rows)
+
+Arguments mapping described in
+[QueryTableRowsRequestTypeDef](./type_defs.md#querytablerowsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -302,15 +372,20 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[QueryTableRowsResultTypeDef](./type_defs.md#querytablerowsresulttypedef).
+[QueryTableRowsResultResponseTypeDef](./type_defs.md#querytablerowsresultresponsetypedef).
 
 ### start_table_data_import_job
+
+The StartTableDataImportJob API allows you to start an import job on a table.
 
 Type annotations for `boto3.client("honeycode").start_table_data_import_job`
 method.
 
 Boto3 documentation:
 [Honeycode.Client.start_table_data_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.start_table_data_import_job)
+
+Arguments mapping described in
+[StartTableDataImportJobRequestTypeDef](./type_defs.md#starttabledataimportjobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -327,7 +402,7 @@ Keyword-only arguments:
 - `clientRequestToken`: `str` *(required)*
 
 Returns
-[StartTableDataImportJobResultTypeDef](./type_defs.md#starttabledataimportjobresulttypedef).
+[StartTableDataImportJobResultResponseTypeDef](./type_defs.md#starttabledataimportjobresultresponsetypedef).
 
 ### get_paginator
 

@@ -10,25 +10,47 @@ type annotations stubs module
 - [Typed dictionaries for boto3 ForecastService module](#typed-dictionaries-for-boto3-forecastservice-module)
   - [CategoricalParameterRangeTypeDef](#categoricalparameterrangetypedef)
   - [ContinuousParameterRangeTypeDef](#continuousparameterrangetypedef)
-  - [CreateDatasetGroupResponseTypeDef](#createdatasetgroupresponsetypedef)
-  - [CreateDatasetImportJobResponseTypeDef](#createdatasetimportjobresponsetypedef)
-  - [CreateDatasetResponseTypeDef](#createdatasetresponsetypedef)
-  - [CreateForecastExportJobResponseTypeDef](#createforecastexportjobresponsetypedef)
-  - [CreateForecastResponseTypeDef](#createforecastresponsetypedef)
-  - [CreatePredictorBacktestExportJobResponseTypeDef](#createpredictorbacktestexportjobresponsetypedef)
-  - [CreatePredictorResponseTypeDef](#createpredictorresponsetypedef)
+  - [CreateDatasetGroupRequestTypeDef](#createdatasetgrouprequesttypedef)
+  - [CreateDatasetGroupResponseResponseTypeDef](#createdatasetgroupresponseresponsetypedef)
+  - [CreateDatasetImportJobRequestTypeDef](#createdatasetimportjobrequesttypedef)
+  - [CreateDatasetImportJobResponseResponseTypeDef](#createdatasetimportjobresponseresponsetypedef)
+  - [CreateDatasetRequestTypeDef](#createdatasetrequesttypedef)
+  - [CreateDatasetResponseResponseTypeDef](#createdatasetresponseresponsetypedef)
+  - [CreateForecastExportJobRequestTypeDef](#createforecastexportjobrequesttypedef)
+  - [CreateForecastExportJobResponseResponseTypeDef](#createforecastexportjobresponseresponsetypedef)
+  - [CreateForecastRequestTypeDef](#createforecastrequesttypedef)
+  - [CreateForecastResponseResponseTypeDef](#createforecastresponseresponsetypedef)
+  - [CreatePredictorBacktestExportJobRequestTypeDef](#createpredictorbacktestexportjobrequesttypedef)
+  - [CreatePredictorBacktestExportJobResponseResponseTypeDef](#createpredictorbacktestexportjobresponseresponsetypedef)
+  - [CreatePredictorRequestTypeDef](#createpredictorrequesttypedef)
+  - [CreatePredictorResponseResponseTypeDef](#createpredictorresponseresponsetypedef)
   - [DataDestinationTypeDef](#datadestinationtypedef)
   - [DataSourceTypeDef](#datasourcetypedef)
   - [DatasetGroupSummaryTypeDef](#datasetgroupsummarytypedef)
   - [DatasetImportJobSummaryTypeDef](#datasetimportjobsummarytypedef)
   - [DatasetSummaryTypeDef](#datasetsummarytypedef)
-  - [DescribeDatasetGroupResponseTypeDef](#describedatasetgroupresponsetypedef)
-  - [DescribeDatasetImportJobResponseTypeDef](#describedatasetimportjobresponsetypedef)
-  - [DescribeDatasetResponseTypeDef](#describedatasetresponsetypedef)
-  - [DescribeForecastExportJobResponseTypeDef](#describeforecastexportjobresponsetypedef)
-  - [DescribeForecastResponseTypeDef](#describeforecastresponsetypedef)
-  - [DescribePredictorBacktestExportJobResponseTypeDef](#describepredictorbacktestexportjobresponsetypedef)
-  - [DescribePredictorResponseTypeDef](#describepredictorresponsetypedef)
+  - [DeleteDatasetGroupRequestTypeDef](#deletedatasetgrouprequesttypedef)
+  - [DeleteDatasetImportJobRequestTypeDef](#deletedatasetimportjobrequesttypedef)
+  - [DeleteDatasetRequestTypeDef](#deletedatasetrequesttypedef)
+  - [DeleteForecastExportJobRequestTypeDef](#deleteforecastexportjobrequesttypedef)
+  - [DeleteForecastRequestTypeDef](#deleteforecastrequesttypedef)
+  - [DeletePredictorBacktestExportJobRequestTypeDef](#deletepredictorbacktestexportjobrequesttypedef)
+  - [DeletePredictorRequestTypeDef](#deletepredictorrequesttypedef)
+  - [DeleteResourceTreeRequestTypeDef](#deleteresourcetreerequesttypedef)
+  - [DescribeDatasetGroupRequestTypeDef](#describedatasetgrouprequesttypedef)
+  - [DescribeDatasetGroupResponseResponseTypeDef](#describedatasetgroupresponseresponsetypedef)
+  - [DescribeDatasetImportJobRequestTypeDef](#describedatasetimportjobrequesttypedef)
+  - [DescribeDatasetImportJobResponseResponseTypeDef](#describedatasetimportjobresponseresponsetypedef)
+  - [DescribeDatasetRequestTypeDef](#describedatasetrequesttypedef)
+  - [DescribeDatasetResponseResponseTypeDef](#describedatasetresponseresponsetypedef)
+  - [DescribeForecastExportJobRequestTypeDef](#describeforecastexportjobrequesttypedef)
+  - [DescribeForecastExportJobResponseResponseTypeDef](#describeforecastexportjobresponseresponsetypedef)
+  - [DescribeForecastRequestTypeDef](#describeforecastrequesttypedef)
+  - [DescribeForecastResponseResponseTypeDef](#describeforecastresponseresponsetypedef)
+  - [DescribePredictorBacktestExportJobRequestTypeDef](#describepredictorbacktestexportjobrequesttypedef)
+  - [DescribePredictorBacktestExportJobResponseResponseTypeDef](#describepredictorbacktestexportjobresponseresponsetypedef)
+  - [DescribePredictorRequestTypeDef](#describepredictorrequesttypedef)
+  - [DescribePredictorResponseResponseTypeDef](#describepredictorresponseresponsetypedef)
   - [EncryptionConfigTypeDef](#encryptionconfigtypedef)
   - [ErrorMetricTypeDef](#errormetrictypedef)
   - [EvaluationParametersTypeDef](#evaluationparameterstypedef)
@@ -39,18 +61,27 @@ type annotations stubs module
   - [FilterTypeDef](#filtertypedef)
   - [ForecastExportJobSummaryTypeDef](#forecastexportjobsummarytypedef)
   - [ForecastSummaryTypeDef](#forecastsummarytypedef)
-  - [GetAccuracyMetricsResponseTypeDef](#getaccuracymetricsresponsetypedef)
+  - [GetAccuracyMetricsRequestTypeDef](#getaccuracymetricsrequesttypedef)
+  - [GetAccuracyMetricsResponseResponseTypeDef](#getaccuracymetricsresponseresponsetypedef)
   - [HyperParameterTuningJobConfigTypeDef](#hyperparametertuningjobconfigtypedef)
   - [InputDataConfigTypeDef](#inputdataconfigtypedef)
   - [IntegerParameterRangeTypeDef](#integerparameterrangetypedef)
-  - [ListDatasetGroupsResponseTypeDef](#listdatasetgroupsresponsetypedef)
-  - [ListDatasetImportJobsResponseTypeDef](#listdatasetimportjobsresponsetypedef)
-  - [ListDatasetsResponseTypeDef](#listdatasetsresponsetypedef)
-  - [ListForecastExportJobsResponseTypeDef](#listforecastexportjobsresponsetypedef)
-  - [ListForecastsResponseTypeDef](#listforecastsresponsetypedef)
-  - [ListPredictorBacktestExportJobsResponseTypeDef](#listpredictorbacktestexportjobsresponsetypedef)
-  - [ListPredictorsResponseTypeDef](#listpredictorsresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListDatasetGroupsRequestTypeDef](#listdatasetgroupsrequesttypedef)
+  - [ListDatasetGroupsResponseResponseTypeDef](#listdatasetgroupsresponseresponsetypedef)
+  - [ListDatasetImportJobsRequestTypeDef](#listdatasetimportjobsrequesttypedef)
+  - [ListDatasetImportJobsResponseResponseTypeDef](#listdatasetimportjobsresponseresponsetypedef)
+  - [ListDatasetsRequestTypeDef](#listdatasetsrequesttypedef)
+  - [ListDatasetsResponseResponseTypeDef](#listdatasetsresponseresponsetypedef)
+  - [ListForecastExportJobsRequestTypeDef](#listforecastexportjobsrequesttypedef)
+  - [ListForecastExportJobsResponseResponseTypeDef](#listforecastexportjobsresponseresponsetypedef)
+  - [ListForecastsRequestTypeDef](#listforecastsrequesttypedef)
+  - [ListForecastsResponseResponseTypeDef](#listforecastsresponseresponsetypedef)
+  - [ListPredictorBacktestExportJobsRequestTypeDef](#listpredictorbacktestexportjobsrequesttypedef)
+  - [ListPredictorBacktestExportJobsResponseResponseTypeDef](#listpredictorbacktestexportjobsresponseresponsetypedef)
+  - [ListPredictorsRequestTypeDef](#listpredictorsrequesttypedef)
+  - [ListPredictorsResponseResponseTypeDef](#listpredictorsresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [MetricsTypeDef](#metricstypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ParameterRangesTypeDef](#parameterrangestypedef)
@@ -58,13 +89,18 @@ type annotations stubs module
   - [PredictorExecutionDetailsTypeDef](#predictorexecutiondetailstypedef)
   - [PredictorExecutionTypeDef](#predictorexecutiontypedef)
   - [PredictorSummaryTypeDef](#predictorsummarytypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3ConfigTypeDef](#s3configtypedef)
   - [SchemaAttributeTypeDef](#schemaattributetypedef)
   - [SchemaTypeDef](#schematypedef)
   - [StatisticsTypeDef](#statisticstypedef)
+  - [StopResourceRequestTypeDef](#stopresourcerequesttypedef)
   - [SupplementaryFeatureTypeDef](#supplementaryfeaturetypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TestWindowSummaryTypeDef](#testwindowsummarytypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateDatasetGroupRequestTypeDef](#updatedatasetgrouprequesttypedef)
   - [WeightedQuantileLossTypeDef](#weightedquantilelosstypedef)
   - [WindowSummaryTypeDef](#windowsummarytypedef)
 
@@ -95,75 +131,227 @@ Optional fields:
 
 - `ScalingType`: [ScalingTypeType](./literals.md#scalingtypetype)
 
-## CreateDatasetGroupResponseTypeDef
+## CreateDatasetGroupRequestTypeDef
 
 ```python
-from mypy_boto3_forecast.type_defs import CreateDatasetGroupResponseTypeDef
+from mypy_boto3_forecast.type_defs import CreateDatasetGroupRequestTypeDef
 ```
 
+Required fields:
+
+- `DatasetGroupName`: `str`
+- `Domain`: [DomainType](./literals.md#domaintype)
+
 Optional fields:
+
+- `DatasetArns`: `List`\[`str`\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateDatasetGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import CreateDatasetGroupResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DatasetGroupArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDatasetImportJobResponseTypeDef
+## CreateDatasetImportJobRequestTypeDef
 
 ```python
-from mypy_boto3_forecast.type_defs import CreateDatasetImportJobResponseTypeDef
+from mypy_boto3_forecast.type_defs import CreateDatasetImportJobRequestTypeDef
 ```
 
+Required fields:
+
+- `DatasetImportJobName`: `str`
+- `DatasetArn`: `str`
+- `DataSource`: [DataSourceTypeDef](./type_defs.md#datasourcetypedef)
+
 Optional fields:
+
+- `TimestampFormat`: `str`
+- `TimeZone`: `str`
+- `UseGeolocationForTimeZone`: `bool`
+- `GeolocationFormat`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateDatasetImportJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import CreateDatasetImportJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DatasetImportJobArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDatasetResponseTypeDef
+## CreateDatasetRequestTypeDef
 
 ```python
-from mypy_boto3_forecast.type_defs import CreateDatasetResponseTypeDef
+from mypy_boto3_forecast.type_defs import CreateDatasetRequestTypeDef
 ```
 
+Required fields:
+
+- `DatasetName`: `str`
+- `Domain`: [DomainType](./literals.md#domaintype)
+- `DatasetType`: [DatasetTypeType](./literals.md#datasettypetype)
+- `Schema`: [SchemaTypeDef](./type_defs.md#schematypedef)
+
 Optional fields:
+
+- `DataFrequency`: `str`
+- `EncryptionConfig`:
+  [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateDatasetResponseResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import CreateDatasetResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DatasetArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateForecastExportJobResponseTypeDef
+## CreateForecastExportJobRequestTypeDef
 
 ```python
-from mypy_boto3_forecast.type_defs import CreateForecastExportJobResponseTypeDef
+from mypy_boto3_forecast.type_defs import CreateForecastExportJobRequestTypeDef
 ```
 
+Required fields:
+
+- `ForecastExportJobName`: `str`
+- `ForecastArn`: `str`
+- `Destination`:
+  [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef)
+
 Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateForecastExportJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import CreateForecastExportJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ForecastExportJobArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateForecastResponseTypeDef
+## CreateForecastRequestTypeDef
 
 ```python
-from mypy_boto3_forecast.type_defs import CreateForecastResponseTypeDef
+from mypy_boto3_forecast.type_defs import CreateForecastRequestTypeDef
 ```
 
+Required fields:
+
+- `ForecastName`: `str`
+- `PredictorArn`: `str`
+
 Optional fields:
+
+- `ForecastTypes`: `List`\[`str`\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateForecastResponseResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import CreateForecastResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ForecastArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePredictorBacktestExportJobResponseTypeDef
+## CreatePredictorBacktestExportJobRequestTypeDef
 
 ```python
-from mypy_boto3_forecast.type_defs import CreatePredictorBacktestExportJobResponseTypeDef
+from mypy_boto3_forecast.type_defs import CreatePredictorBacktestExportJobRequestTypeDef
 ```
 
+Required fields:
+
+- `PredictorBacktestExportJobName`: `str`
+- `PredictorArn`: `str`
+- `Destination`:
+  [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef)
+
 Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreatePredictorBacktestExportJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import CreatePredictorBacktestExportJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `PredictorBacktestExportJobArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePredictorResponseTypeDef
+## CreatePredictorRequestTypeDef
 
 ```python
-from mypy_boto3_forecast.type_defs import CreatePredictorResponseTypeDef
+from mypy_boto3_forecast.type_defs import CreatePredictorRequestTypeDef
 ```
+
+Required fields:
+
+- `PredictorName`: `str`
+- `ForecastHorizon`: `int`
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
+- `FeaturizationConfig`:
+  [FeaturizationConfigTypeDef](./type_defs.md#featurizationconfigtypedef)
 
 Optional fields:
 
+- `AlgorithmArn`: `str`
+- `ForecastTypes`: `List`\[`str`\]
+- `PerformAutoML`: `bool`
+- `AutoMLOverrideStrategy`: `Literal['LatencyOptimized']` (see
+  [AutoMLOverrideStrategyType](./literals.md#automloverridestrategytype))
+- `PerformHPO`: `bool`
+- `TrainingParameters`: `Dict`\[`str`, `str`\]
+- `EvaluationParameters`:
+  [EvaluationParametersTypeDef](./type_defs.md#evaluationparameterstypedef)
+- `HPOConfig`:
+  [HyperParameterTuningJobConfigTypeDef](./type_defs.md#hyperparametertuningjobconfigtypedef)
+- `EncryptionConfig`:
+  [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreatePredictorResponseResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import CreatePredictorResponseResponseTypeDef
+```
+
+Required fields:
+
 - `PredictorArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DataDestinationTypeDef
 
@@ -229,13 +417,103 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
 
-## DescribeDatasetGroupResponseTypeDef
+## DeleteDatasetGroupRequestTypeDef
 
 ```python
-from mypy_boto3_forecast.type_defs import DescribeDatasetGroupResponseTypeDef
+from mypy_boto3_forecast.type_defs import DeleteDatasetGroupRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DatasetGroupArn`: `str`
+
+## DeleteDatasetImportJobRequestTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import DeleteDatasetImportJobRequestTypeDef
+```
+
+Required fields:
+
+- `DatasetImportJobArn`: `str`
+
+## DeleteDatasetRequestTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import DeleteDatasetRequestTypeDef
+```
+
+Required fields:
+
+- `DatasetArn`: `str`
+
+## DeleteForecastExportJobRequestTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import DeleteForecastExportJobRequestTypeDef
+```
+
+Required fields:
+
+- `ForecastExportJobArn`: `str`
+
+## DeleteForecastRequestTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import DeleteForecastRequestTypeDef
+```
+
+Required fields:
+
+- `ForecastArn`: `str`
+
+## DeletePredictorBacktestExportJobRequestTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import DeletePredictorBacktestExportJobRequestTypeDef
+```
+
+Required fields:
+
+- `PredictorBacktestExportJobArn`: `str`
+
+## DeletePredictorRequestTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import DeletePredictorRequestTypeDef
+```
+
+Required fields:
+
+- `PredictorArn`: `str`
+
+## DeleteResourceTreeRequestTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import DeleteResourceTreeRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+
+## DescribeDatasetGroupRequestTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import DescribeDatasetGroupRequestTypeDef
+```
+
+Required fields:
+
+- `DatasetGroupArn`: `str`
+
+## DescribeDatasetGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import DescribeDatasetGroupResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DatasetGroupName`: `str`
 - `DatasetGroupArn`: `str`
@@ -244,14 +522,26 @@ Optional fields:
 - `Status`: `str`
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDatasetImportJobResponseTypeDef
+## DescribeDatasetImportJobRequestTypeDef
 
 ```python
-from mypy_boto3_forecast.type_defs import DescribeDatasetImportJobResponseTypeDef
+from mypy_boto3_forecast.type_defs import DescribeDatasetImportJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DatasetImportJobArn`: `str`
+
+## DescribeDatasetImportJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import DescribeDatasetImportJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DatasetImportJobName`: `str`
 - `DatasetImportJobArn`: `str`
@@ -269,14 +559,26 @@ Optional fields:
 - `Message`: `str`
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDatasetResponseTypeDef
+## DescribeDatasetRequestTypeDef
 
 ```python
-from mypy_boto3_forecast.type_defs import DescribeDatasetResponseTypeDef
+from mypy_boto3_forecast.type_defs import DescribeDatasetRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DatasetArn`: `str`
+
+## DescribeDatasetResponseResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import DescribeDatasetResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DatasetArn`: `str`
 - `DatasetName`: `str`
@@ -289,14 +591,26 @@ Optional fields:
 - `Status`: `str`
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeForecastExportJobResponseTypeDef
+## DescribeForecastExportJobRequestTypeDef
 
 ```python
-from mypy_boto3_forecast.type_defs import DescribeForecastExportJobResponseTypeDef
+from mypy_boto3_forecast.type_defs import DescribeForecastExportJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ForecastExportJobArn`: `str`
+
+## DescribeForecastExportJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import DescribeForecastExportJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ForecastExportJobArn`: `str`
 - `ForecastExportJobName`: `str`
@@ -307,14 +621,26 @@ Optional fields:
 - `Status`: `str`
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeForecastResponseTypeDef
+## DescribeForecastRequestTypeDef
 
 ```python
-from mypy_boto3_forecast.type_defs import DescribeForecastResponseTypeDef
+from mypy_boto3_forecast.type_defs import DescribeForecastRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ForecastArn`: `str`
+
+## DescribeForecastResponseResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import DescribeForecastResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ForecastArn`: `str`
 - `ForecastName`: `str`
@@ -326,14 +652,26 @@ Optional fields:
 - `Message`: `str`
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePredictorBacktestExportJobResponseTypeDef
+## DescribePredictorBacktestExportJobRequestTypeDef
 
 ```python
-from mypy_boto3_forecast.type_defs import DescribePredictorBacktestExportJobResponseTypeDef
+from mypy_boto3_forecast.type_defs import DescribePredictorBacktestExportJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `PredictorBacktestExportJobArn`: `str`
+
+## DescribePredictorBacktestExportJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import DescribePredictorBacktestExportJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `PredictorBacktestExportJobArn`: `str`
 - `PredictorBacktestExportJobName`: `str`
@@ -344,14 +682,26 @@ Optional fields:
 - `Status`: `str`
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePredictorResponseTypeDef
+## DescribePredictorRequestTypeDef
 
 ```python
-from mypy_boto3_forecast.type_defs import DescribePredictorResponseTypeDef
+from mypy_boto3_forecast.type_defs import DescribePredictorRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `PredictorArn`: `str`
+
+## DescribePredictorResponseResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import DescribePredictorResponseResponseTypeDef
+```
+
+Required fields:
 
 - `PredictorArn`: `str`
 - `PredictorName`: `str`
@@ -382,6 +732,8 @@ Optional fields:
 - `Message`: `str`
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## EncryptionConfigTypeDef
 
@@ -522,18 +874,30 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
 
-## GetAccuracyMetricsResponseTypeDef
+## GetAccuracyMetricsRequestTypeDef
 
 ```python
-from mypy_boto3_forecast.type_defs import GetAccuracyMetricsResponseTypeDef
+from mypy_boto3_forecast.type_defs import GetAccuracyMetricsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `PredictorArn`: `str`
+
+## GetAccuracyMetricsResponseResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import GetAccuracyMetricsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `PredictorEvaluationResults`:
   `List`\[[EvaluationResultTypeDef](./type_defs.md#evaluationresulttypedef)\]
 - `AutoMLOverrideStrategy`: `Literal['LatencyOptimized']` (see
   [AutoMLOverrideStrategyType](./literals.md#automloverridestrategytype))
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## HyperParameterTuningJobConfigTypeDef
 
@@ -577,99 +941,207 @@ Optional fields:
 
 - `ScalingType`: [ScalingTypeType](./literals.md#scalingtypetype)
 
-## ListDatasetGroupsResponseTypeDef
+## ListDatasetGroupsRequestTypeDef
 
 ```python
-from mypy_boto3_forecast.type_defs import ListDatasetGroupsResponseTypeDef
+from mypy_boto3_forecast.type_defs import ListDatasetGroupsRequestTypeDef
 ```
 
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListDatasetGroupsResponseResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import ListDatasetGroupsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DatasetGroups`:
   `List`\[[DatasetGroupSummaryTypeDef](./type_defs.md#datasetgroupsummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDatasetImportJobsResponseTypeDef
+## ListDatasetImportJobsRequestTypeDef
 
 ```python
-from mypy_boto3_forecast.type_defs import ListDatasetImportJobsResponseTypeDef
+from mypy_boto3_forecast.type_defs import ListDatasetImportJobsRequestTypeDef
 ```
 
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+## ListDatasetImportJobsResponseResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import ListDatasetImportJobsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DatasetImportJobs`:
   `List`\[[DatasetImportJobSummaryTypeDef](./type_defs.md#datasetimportjobsummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDatasetsResponseTypeDef
+## ListDatasetsRequestTypeDef
 
 ```python
-from mypy_boto3_forecast.type_defs import ListDatasetsResponseTypeDef
+from mypy_boto3_forecast.type_defs import ListDatasetsRequestTypeDef
 ```
 
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListDatasetsResponseResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import ListDatasetsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Datasets`:
   `List`\[[DatasetSummaryTypeDef](./type_defs.md#datasetsummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListForecastExportJobsResponseTypeDef
+## ListForecastExportJobsRequestTypeDef
 
 ```python
-from mypy_boto3_forecast.type_defs import ListForecastExportJobsResponseTypeDef
+from mypy_boto3_forecast.type_defs import ListForecastExportJobsRequestTypeDef
 ```
 
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+## ListForecastExportJobsResponseResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import ListForecastExportJobsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ForecastExportJobs`:
   `List`\[[ForecastExportJobSummaryTypeDef](./type_defs.md#forecastexportjobsummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListForecastsResponseTypeDef
+## ListForecastsRequestTypeDef
 
 ```python
-from mypy_boto3_forecast.type_defs import ListForecastsResponseTypeDef
+from mypy_boto3_forecast.type_defs import ListForecastsRequestTypeDef
 ```
 
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+## ListForecastsResponseResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import ListForecastsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Forecasts`:
   `List`\[[ForecastSummaryTypeDef](./type_defs.md#forecastsummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPredictorBacktestExportJobsResponseTypeDef
+## ListPredictorBacktestExportJobsRequestTypeDef
 
 ```python
-from mypy_boto3_forecast.type_defs import ListPredictorBacktestExportJobsResponseTypeDef
+from mypy_boto3_forecast.type_defs import ListPredictorBacktestExportJobsRequestTypeDef
 ```
 
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+## ListPredictorBacktestExportJobsResponseResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import ListPredictorBacktestExportJobsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `PredictorBacktestExportJobs`:
   `List`\[[PredictorBacktestExportJobSummaryTypeDef](./type_defs.md#predictorbacktestexportjobsummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPredictorsResponseTypeDef
+## ListPredictorsRequestTypeDef
 
 ```python
-from mypy_boto3_forecast.type_defs import ListPredictorsResponseTypeDef
+from mypy_boto3_forecast.type_defs import ListPredictorsRequestTypeDef
 ```
 
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+## ListPredictorsResponseResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import ListPredictorsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Predictors`:
   `List`\[[PredictorSummaryTypeDef](./type_defs.md#predictorsummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_forecast.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_forecast.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceArn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## MetricsTypeDef
 
@@ -768,6 +1240,20 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
 
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
 ## S3ConfigTypeDef
 
 ```python
@@ -826,6 +1312,16 @@ Optional fields:
 - `CountNullLong`: `int`
 - `CountNanLong`: `int`
 
+## StopResourceRequestTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import StopResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+
 ## SupplementaryFeatureTypeDef
 
 ```python
@@ -836,6 +1332,17 @@ Required fields:
 
 - `Name`: `str`
 - `Value`: `str`
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -860,6 +1367,28 @@ Optional fields:
 - `TestWindowEnd`: `datetime`
 - `Status`: `str`
 - `Message`: `str`
+
+## UntagResourceRequestTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## UpdateDatasetGroupRequestTypeDef
+
+```python
+from mypy_boto3_forecast.type_defs import UpdateDatasetGroupRequestTypeDef
+```
+
+Required fields:
+
+- `DatasetGroupArn`: `str`
+- `DatasetArns`: `List`\[`str`\]
 
 ## WeightedQuantileLossTypeDef
 

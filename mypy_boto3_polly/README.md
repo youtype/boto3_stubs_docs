@@ -116,20 +116,29 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_polly.type_defs import DescribeVoicesOutputTypeDef, ...
+from mypy_boto3_polly.type_defs import DeleteLexiconInputTypeDef, ...
 ```
 
-- [DescribeVoicesOutputTypeDef](./type_defs.md#describevoicesoutputtypedef)
-- [GetLexiconOutputTypeDef](./type_defs.md#getlexiconoutputtypedef)
-- [GetSpeechSynthesisTaskOutputTypeDef](./type_defs.md#getspeechsynthesistaskoutputtypedef)
+- [DeleteLexiconInputTypeDef](./type_defs.md#deletelexiconinputtypedef)
+- [DescribeVoicesInputTypeDef](./type_defs.md#describevoicesinputtypedef)
+- [DescribeVoicesOutputResponseTypeDef](./type_defs.md#describevoicesoutputresponsetypedef)
+- [GetLexiconInputTypeDef](./type_defs.md#getlexiconinputtypedef)
+- [GetLexiconOutputResponseTypeDef](./type_defs.md#getlexiconoutputresponsetypedef)
+- [GetSpeechSynthesisTaskInputTypeDef](./type_defs.md#getspeechsynthesistaskinputtypedef)
+- [GetSpeechSynthesisTaskOutputResponseTypeDef](./type_defs.md#getspeechsynthesistaskoutputresponsetypedef)
 - [LexiconAttributesTypeDef](./type_defs.md#lexiconattributestypedef)
 - [LexiconDescriptionTypeDef](./type_defs.md#lexicondescriptiontypedef)
 - [LexiconTypeDef](./type_defs.md#lexicontypedef)
-- [ListLexiconsOutputTypeDef](./type_defs.md#listlexiconsoutputtypedef)
-- [ListSpeechSynthesisTasksOutputTypeDef](./type_defs.md#listspeechsynthesistasksoutputtypedef)
+- [ListLexiconsInputTypeDef](./type_defs.md#listlexiconsinputtypedef)
+- [ListLexiconsOutputResponseTypeDef](./type_defs.md#listlexiconsoutputresponsetypedef)
+- [ListSpeechSynthesisTasksInputTypeDef](./type_defs.md#listspeechsynthesistasksinputtypedef)
+- [ListSpeechSynthesisTasksOutputResponseTypeDef](./type_defs.md#listspeechsynthesistasksoutputresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+- [PutLexiconInputTypeDef](./type_defs.md#putlexiconinputtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [StartSpeechSynthesisTaskOutputTypeDef](./type_defs.md#startspeechsynthesistaskoutputtypedef)
+- [StartSpeechSynthesisTaskInputTypeDef](./type_defs.md#startspeechsynthesistaskinputtypedef)
+- [StartSpeechSynthesisTaskOutputResponseTypeDef](./type_defs.md#startspeechsynthesistaskoutputresponsetypedef)
 - [SynthesisTaskTypeDef](./type_defs.md#synthesistasktypedef)
-- [SynthesizeSpeechOutputTypeDef](./type_defs.md#synthesizespeechoutputtypedef)
+- [SynthesizeSpeechInputTypeDef](./type_defs.md#synthesizespeechinputtypedef)
+- [SynthesizeSpeechOutputResponseTypeDef](./type_defs.md#synthesizespeechoutputresponsetypedef)
 - [VoiceTypeDef](./type_defs.md#voicetypedef)

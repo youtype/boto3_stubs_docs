@@ -8,36 +8,74 @@ type annotations stubs module
 [mypy_boto3_iotdeviceadvisor](https://pypi.org/project/mypy-boto3-iotdeviceadvisor/).
 
 - [Typed dictionaries for boto3 IoTDeviceAdvisor module](#typed-dictionaries-for-boto3-iotdeviceadvisor-module)
-  - [CreateSuiteDefinitionResponseTypeDef](#createsuitedefinitionresponsetypedef)
+  - [CreateSuiteDefinitionRequestTypeDef](#createsuitedefinitionrequesttypedef)
+  - [CreateSuiteDefinitionResponseResponseTypeDef](#createsuitedefinitionresponseresponsetypedef)
+  - [DeleteSuiteDefinitionRequestTypeDef](#deletesuitedefinitionrequesttypedef)
   - [DeviceUnderTestTypeDef](#deviceundertesttypedef)
-  - [GetSuiteDefinitionResponseTypeDef](#getsuitedefinitionresponsetypedef)
-  - [GetSuiteRunReportResponseTypeDef](#getsuiterunreportresponsetypedef)
-  - [GetSuiteRunResponseTypeDef](#getsuiterunresponsetypedef)
+  - [GetSuiteDefinitionRequestTypeDef](#getsuitedefinitionrequesttypedef)
+  - [GetSuiteDefinitionResponseResponseTypeDef](#getsuitedefinitionresponseresponsetypedef)
+  - [GetSuiteRunReportRequestTypeDef](#getsuiterunreportrequesttypedef)
+  - [GetSuiteRunReportResponseResponseTypeDef](#getsuiterunreportresponseresponsetypedef)
+  - [GetSuiteRunRequestTypeDef](#getsuiterunrequesttypedef)
+  - [GetSuiteRunResponseResponseTypeDef](#getsuiterunresponseresponsetypedef)
   - [GroupResultTypeDef](#groupresulttypedef)
-  - [ListSuiteDefinitionsResponseTypeDef](#listsuitedefinitionsresponsetypedef)
-  - [ListSuiteRunsResponseTypeDef](#listsuiterunsresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [StartSuiteRunResponseTypeDef](#startsuiterunresponsetypedef)
+  - [ListSuiteDefinitionsRequestTypeDef](#listsuitedefinitionsrequesttypedef)
+  - [ListSuiteDefinitionsResponseResponseTypeDef](#listsuitedefinitionsresponseresponsetypedef)
+  - [ListSuiteRunsRequestTypeDef](#listsuiterunsrequesttypedef)
+  - [ListSuiteRunsResponseResponseTypeDef](#listsuiterunsresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [StartSuiteRunRequestTypeDef](#startsuiterunrequesttypedef)
+  - [StartSuiteRunResponseResponseTypeDef](#startsuiterunresponseresponsetypedef)
+  - [StopSuiteRunRequestTypeDef](#stopsuiterunrequesttypedef)
   - [SuiteDefinitionConfigurationTypeDef](#suitedefinitionconfigurationtypedef)
   - [SuiteDefinitionInformationTypeDef](#suitedefinitioninformationtypedef)
   - [SuiteRunConfigurationTypeDef](#suiterunconfigurationtypedef)
   - [SuiteRunInformationTypeDef](#suiteruninformationtypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TestCaseRunTypeDef](#testcaseruntypedef)
   - [TestResultTypeDef](#testresulttypedef)
-  - [UpdateSuiteDefinitionResponseTypeDef](#updatesuitedefinitionresponsetypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateSuiteDefinitionRequestTypeDef](#updatesuitedefinitionrequesttypedef)
+  - [UpdateSuiteDefinitionResponseResponseTypeDef](#updatesuitedefinitionresponseresponsetypedef)
 
-## CreateSuiteDefinitionResponseTypeDef
+## CreateSuiteDefinitionRequestTypeDef
 
 ```python
-from mypy_boto3_iotdeviceadvisor.type_defs import CreateSuiteDefinitionResponseTypeDef
+from mypy_boto3_iotdeviceadvisor.type_defs import CreateSuiteDefinitionRequestTypeDef
 ```
 
 Optional fields:
+
+- `suiteDefinitionConfiguration`:
+  [SuiteDefinitionConfigurationTypeDef](./type_defs.md#suitedefinitionconfigurationtypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateSuiteDefinitionResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotdeviceadvisor.type_defs import CreateSuiteDefinitionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `suiteDefinitionId`: `str`
 - `suiteDefinitionArn`: `str`
 - `suiteDefinitionName`: `str`
 - `createdAt`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteSuiteDefinitionRequestTypeDef
+
+```python
+from mypy_boto3_iotdeviceadvisor.type_defs import DeleteSuiteDefinitionRequestTypeDef
+```
+
+Required fields:
+
+- `suiteDefinitionId`: `str`
 
 ## DeviceUnderTestTypeDef
 
@@ -50,13 +88,27 @@ Optional fields:
 - `thingArn`: `str`
 - `certificateArn`: `str`
 
-## GetSuiteDefinitionResponseTypeDef
+## GetSuiteDefinitionRequestTypeDef
 
 ```python
-from mypy_boto3_iotdeviceadvisor.type_defs import GetSuiteDefinitionResponseTypeDef
+from mypy_boto3_iotdeviceadvisor.type_defs import GetSuiteDefinitionRequestTypeDef
 ```
 
+Required fields:
+
+- `suiteDefinitionId`: `str`
+
 Optional fields:
+
+- `suiteDefinitionVersion`: `str`
+
+## GetSuiteDefinitionResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotdeviceadvisor.type_defs import GetSuiteDefinitionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `suiteDefinitionId`: `str`
 - `suiteDefinitionArn`: `str`
@@ -67,24 +119,50 @@ Optional fields:
 - `createdAt`: `datetime`
 - `lastModifiedAt`: `datetime`
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSuiteRunReportResponseTypeDef
+## GetSuiteRunReportRequestTypeDef
 
 ```python
-from mypy_boto3_iotdeviceadvisor.type_defs import GetSuiteRunReportResponseTypeDef
+from mypy_boto3_iotdeviceadvisor.type_defs import GetSuiteRunReportRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `suiteDefinitionId`: `str`
+- `suiteRunId`: `str`
+
+## GetSuiteRunReportResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotdeviceadvisor.type_defs import GetSuiteRunReportResponseResponseTypeDef
+```
+
+Required fields:
 
 - `qualificationReportDownloadUrl`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSuiteRunResponseTypeDef
+## GetSuiteRunRequestTypeDef
 
 ```python
-from mypy_boto3_iotdeviceadvisor.type_defs import GetSuiteRunResponseTypeDef
+from mypy_boto3_iotdeviceadvisor.type_defs import GetSuiteRunRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `suiteDefinitionId`: `str`
+- `suiteRunId`: `str`
+
+## GetSuiteRunResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotdeviceadvisor.type_defs import GetSuiteRunResponseResponseTypeDef
+```
+
+Required fields:
 
 - `suiteDefinitionId`: `str`
 - `suiteDefinitionVersion`: `str`
@@ -98,6 +176,8 @@ Optional fields:
 - `status`: [SuiteRunStatusType](./literals.md#suiterunstatustype)
 - `errorReason`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GroupResultTypeDef
 
@@ -111,51 +191,135 @@ Optional fields:
 - `groupName`: `str`
 - `tests`: `List`\[[TestCaseRunTypeDef](./type_defs.md#testcaseruntypedef)\]
 
-## ListSuiteDefinitionsResponseTypeDef
+## ListSuiteDefinitionsRequestTypeDef
 
 ```python
-from mypy_boto3_iotdeviceadvisor.type_defs import ListSuiteDefinitionsResponseTypeDef
+from mypy_boto3_iotdeviceadvisor.type_defs import ListSuiteDefinitionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListSuiteDefinitionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotdeviceadvisor.type_defs import ListSuiteDefinitionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `suiteDefinitionInformationList`:
   `List`\[[SuiteDefinitionInformationTypeDef](./type_defs.md#suitedefinitioninformationtypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSuiteRunsResponseTypeDef
+## ListSuiteRunsRequestTypeDef
 
 ```python
-from mypy_boto3_iotdeviceadvisor.type_defs import ListSuiteRunsResponseTypeDef
+from mypy_boto3_iotdeviceadvisor.type_defs import ListSuiteRunsRequestTypeDef
 ```
 
 Optional fields:
+
+- `suiteDefinitionId`: `str`
+- `suiteDefinitionVersion`: `str`
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListSuiteRunsResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotdeviceadvisor.type_defs import ListSuiteRunsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `suiteRunsList`:
   `List`\[[SuiteRunInformationTypeDef](./type_defs.md#suiteruninformationtypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_iotdeviceadvisor.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_iotdeviceadvisor.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `resourceArn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotdeviceadvisor.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartSuiteRunResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_iotdeviceadvisor.type_defs import StartSuiteRunResponseTypeDef
+from mypy_boto3_iotdeviceadvisor.type_defs import ResponseMetadataTypeDef
 ```
 
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## StartSuiteRunRequestTypeDef
+
+```python
+from mypy_boto3_iotdeviceadvisor.type_defs import StartSuiteRunRequestTypeDef
+```
+
+Required fields:
+
+- `suiteDefinitionId`: `str`
+
 Optional fields:
+
+- `suiteDefinitionVersion`: `str`
+- `suiteRunConfiguration`:
+  [SuiteRunConfigurationTypeDef](./type_defs.md#suiterunconfigurationtypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+
+## StartSuiteRunResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotdeviceadvisor.type_defs import StartSuiteRunResponseResponseTypeDef
+```
+
+Required fields:
 
 - `suiteRunId`: `str`
 - `suiteRunArn`: `str`
 - `createdAt`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StopSuiteRunRequestTypeDef
+
+```python
+from mypy_boto3_iotdeviceadvisor.type_defs import StopSuiteRunRequestTypeDef
+```
+
+Required fields:
+
+- `suiteDefinitionId`: `str`
+- `suiteRunId`: `str`
 
 ## SuiteDefinitionConfigurationTypeDef
 
@@ -218,6 +382,17 @@ Optional fields:
 - `passed`: `int`
 - `failed`: `int`
 
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_iotdeviceadvisor.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
 ## TestCaseRunTypeDef
 
 ```python
@@ -246,13 +421,39 @@ Optional fields:
 
 - `groups`: `List`\[[GroupResultTypeDef](./type_defs.md#groupresulttypedef)\]
 
-## UpdateSuiteDefinitionResponseTypeDef
+## UntagResourceRequestTypeDef
 
 ```python
-from mypy_boto3_iotdeviceadvisor.type_defs import UpdateSuiteDefinitionResponseTypeDef
+from mypy_boto3_iotdeviceadvisor.type_defs import UntagResourceRequestTypeDef
 ```
 
+Required fields:
+
+- `resourceArn`: `str`
+- `tagKeys`: `List`\[`str`\]
+
+## UpdateSuiteDefinitionRequestTypeDef
+
+```python
+from mypy_boto3_iotdeviceadvisor.type_defs import UpdateSuiteDefinitionRequestTypeDef
+```
+
+Required fields:
+
+- `suiteDefinitionId`: `str`
+
 Optional fields:
+
+- `suiteDefinitionConfiguration`:
+  [SuiteDefinitionConfigurationTypeDef](./type_defs.md#suitedefinitionconfigurationtypedef)
+
+## UpdateSuiteDefinitionResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotdeviceadvisor.type_defs import UpdateSuiteDefinitionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `suiteDefinitionId`: `str`
 - `suiteDefinitionArn`: `str`
@@ -260,3 +461,5 @@ Optional fields:
 - `suiteDefinitionVersion`: `str`
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

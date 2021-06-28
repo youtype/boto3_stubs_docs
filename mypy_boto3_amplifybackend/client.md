@@ -80,6 +80,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("amplifybackend").can_paginate` method.
 
 Boto3 documentation:
@@ -93,10 +95,15 @@ Returns `bool`.
 
 ### clone_backend
 
+This operation clones an existing backend.
+
 Type annotations for `boto3.client("amplifybackend").clone_backend` method.
 
 Boto3 documentation:
 [AmplifyBackend.Client.clone_backend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.clone_backend)
+
+Arguments mapping described in
+[CloneBackendRequestTypeDef](./type_defs.md#clonebackendrequesttypedef).
 
 Keyword-only arguments:
 
@@ -105,14 +112,19 @@ Keyword-only arguments:
 - `TargetEnvironmentName`: `str` *(required)*
 
 Returns
-[CloneBackendResponseTypeDef](./type_defs.md#clonebackendresponsetypedef).
+[CloneBackendResponseResponseTypeDef](./type_defs.md#clonebackendresponseresponsetypedef).
 
 ### create_backend
+
+This operation creates a backend for an Amplify app.
 
 Type annotations for `boto3.client("amplifybackend").create_backend` method.
 
 Boto3 documentation:
 [AmplifyBackend.Client.create_backend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend)
+
+Arguments mapping described in
+[CreateBackendRequestTypeDef](./type_defs.md#createbackendrequesttypedef).
 
 Keyword-only arguments:
 
@@ -123,15 +135,20 @@ Keyword-only arguments:
 - `ResourceName`: `str`
 
 Returns
-[CreateBackendResponseTypeDef](./type_defs.md#createbackendresponsetypedef).
+[CreateBackendResponseResponseTypeDef](./type_defs.md#createbackendresponseresponsetypedef).
 
 ### create_backend_api
+
+Creates a new backend API resource.
 
 Type annotations for `boto3.client("amplifybackend").create_backend_api`
 method.
 
 Boto3 documentation:
 [AmplifyBackend.Client.create_backend_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_api)
+
+Arguments mapping described in
+[CreateBackendAPIRequestTypeDef](./type_defs.md#createbackendapirequesttypedef).
 
 Keyword-only arguments:
 
@@ -143,15 +160,20 @@ Keyword-only arguments:
 - `ResourceName`: `str` *(required)*
 
 Returns
-[CreateBackendAPIResponseTypeDef](./type_defs.md#createbackendapiresponsetypedef).
+[CreateBackendAPIResponseResponseTypeDef](./type_defs.md#createbackendapiresponseresponsetypedef).
 
 ### create_backend_auth
+
+Creates a new backend authentication resource.
 
 Type annotations for `boto3.client("amplifybackend").create_backend_auth`
 method.
 
 Boto3 documentation:
 [AmplifyBackend.Client.create_backend_auth](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_auth)
+
+Arguments mapping described in
+[CreateBackendAuthRequestTypeDef](./type_defs.md#createbackendauthrequesttypedef).
 
 Keyword-only arguments:
 
@@ -163,9 +185,11 @@ Keyword-only arguments:
 - `ResourceName`: `str` *(required)*
 
 Returns
-[CreateBackendAuthResponseTypeDef](./type_defs.md#createbackendauthresponsetypedef).
+[CreateBackendAuthResponseResponseTypeDef](./type_defs.md#createbackendauthresponseresponsetypedef).
 
 ### create_backend_config
+
+Creates a config object for a backend.
 
 Type annotations for `boto3.client("amplifybackend").create_backend_config`
 method.
@@ -173,34 +197,48 @@ method.
 Boto3 documentation:
 [AmplifyBackend.Client.create_backend_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_config)
 
+Arguments mapping described in
+[CreateBackendConfigRequestTypeDef](./type_defs.md#createbackendconfigrequesttypedef).
+
 Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 - `BackendManagerAppId`: `str`
 
 Returns
-[CreateBackendConfigResponseTypeDef](./type_defs.md#createbackendconfigresponsetypedef).
+[CreateBackendConfigResponseResponseTypeDef](./type_defs.md#createbackendconfigresponseresponsetypedef).
 
 ### create_token
+
+Generates a one-time challenge code to authenticate a user into your Amplify
+Admin UI.
 
 Type annotations for `boto3.client("amplifybackend").create_token` method.
 
 Boto3 documentation:
 [AmplifyBackend.Client.create_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_token)
 
+Arguments mapping described in
+[CreateTokenRequestTypeDef](./type_defs.md#createtokenrequesttypedef).
+
 Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 
 Returns
-[CreateTokenResponseTypeDef](./type_defs.md#createtokenresponsetypedef).
+[CreateTokenResponseResponseTypeDef](./type_defs.md#createtokenresponseresponsetypedef).
 
 ### delete_backend
+
+Removes an existing environment from your Amplify project.
 
 Type annotations for `boto3.client("amplifybackend").delete_backend` method.
 
 Boto3 documentation:
 [AmplifyBackend.Client.delete_backend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend)
+
+Arguments mapping described in
+[DeleteBackendRequestTypeDef](./type_defs.md#deletebackendrequesttypedef).
 
 Keyword-only arguments:
 
@@ -208,15 +246,20 @@ Keyword-only arguments:
 - `BackendEnvironmentName`: `str` *(required)*
 
 Returns
-[DeleteBackendResponseTypeDef](./type_defs.md#deletebackendresponsetypedef).
+[DeleteBackendResponseResponseTypeDef](./type_defs.md#deletebackendresponseresponsetypedef).
 
 ### delete_backend_api
+
+Deletes an existing backend API resource.
 
 Type annotations for `boto3.client("amplifybackend").delete_backend_api`
 method.
 
 Boto3 documentation:
 [AmplifyBackend.Client.delete_backend_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend_api)
+
+Arguments mapping described in
+[DeleteBackendAPIRequestTypeDef](./type_defs.md#deletebackendapirequesttypedef).
 
 Keyword-only arguments:
 
@@ -227,9 +270,11 @@ Keyword-only arguments:
   [BackendAPIResourceConfigTypeDef](./type_defs.md#backendapiresourceconfigtypedef)
 
 Returns
-[DeleteBackendAPIResponseTypeDef](./type_defs.md#deletebackendapiresponsetypedef).
+[DeleteBackendAPIResponseResponseTypeDef](./type_defs.md#deletebackendapiresponseresponsetypedef).
 
 ### delete_backend_auth
+
+Deletes an existing backend authentication resource.
 
 Type annotations for `boto3.client("amplifybackend").delete_backend_auth`
 method.
@@ -237,6 +282,9 @@ method.
 Boto3 documentation:
 [AmplifyBackend.Client.delete_backend_auth](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend_auth)
 
+Arguments mapping described in
+[DeleteBackendAuthRequestTypeDef](./type_defs.md#deletebackendauthrequesttypedef).
+
 Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
@@ -244,14 +292,19 @@ Keyword-only arguments:
 - `ResourceName`: `str` *(required)*
 
 Returns
-[DeleteBackendAuthResponseTypeDef](./type_defs.md#deletebackendauthresponsetypedef).
+[DeleteBackendAuthResponseResponseTypeDef](./type_defs.md#deletebackendauthresponseresponsetypedef).
 
 ### delete_token
+
+Deletes the challenge token based on the given appId and sessionId.
 
 Type annotations for `boto3.client("amplifybackend").delete_token` method.
 
 Boto3 documentation:
 [AmplifyBackend.Client.delete_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_token)
+
+Arguments mapping described in
+[DeleteTokenRequestTypeDef](./type_defs.md#deletetokenrequesttypedef).
 
 Keyword-only arguments:
 
@@ -259,15 +312,20 @@ Keyword-only arguments:
 - `SessionId`: `str` *(required)*
 
 Returns
-[DeleteTokenResponseTypeDef](./type_defs.md#deletetokenresponsetypedef).
+[DeleteTokenResponseResponseTypeDef](./type_defs.md#deletetokenresponseresponsetypedef).
 
 ### generate_backend_api_models
+
+Generates a model schema for an existing backend API resource.
 
 Type annotations for
 `boto3.client("amplifybackend").generate_backend_api_models` method.
 
 Boto3 documentation:
 [AmplifyBackend.Client.generate_backend_api_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.generate_backend_api_models)
+
+Arguments mapping described in
+[GenerateBackendAPIModelsRequestTypeDef](./type_defs.md#generatebackendapimodelsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -276,9 +334,11 @@ Keyword-only arguments:
 - `ResourceName`: `str` *(required)*
 
 Returns
-[GenerateBackendAPIModelsResponseTypeDef](./type_defs.md#generatebackendapimodelsresponsetypedef).
+[GenerateBackendAPIModelsResponseResponseTypeDef](./type_defs.md#generatebackendapimodelsresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("amplifybackend").generate_presigned_url`
 method.
@@ -297,24 +357,35 @@ Returns `str`.
 
 ### get_backend
 
+Provides project-level details for your Amplify UI project.
+
 Type annotations for `boto3.client("amplifybackend").get_backend` method.
 
 Boto3 documentation:
 [AmplifyBackend.Client.get_backend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend)
+
+Arguments mapping described in
+[GetBackendRequestTypeDef](./type_defs.md#getbackendrequesttypedef).
 
 Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 - `BackendEnvironmentName`: `str`
 
-Returns [GetBackendResponseTypeDef](./type_defs.md#getbackendresponsetypedef).
+Returns
+[GetBackendResponseResponseTypeDef](./type_defs.md#getbackendresponseresponsetypedef).
 
 ### get_backend_api
+
+Gets the details for a backend API.
 
 Type annotations for `boto3.client("amplifybackend").get_backend_api` method.
 
 Boto3 documentation:
 [AmplifyBackend.Client.get_backend_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_api)
+
+Arguments mapping described in
+[GetBackendAPIRequestTypeDef](./type_defs.md#getbackendapirequesttypedef).
 
 Keyword-only arguments:
 
@@ -325,9 +396,11 @@ Keyword-only arguments:
   [BackendAPIResourceConfigTypeDef](./type_defs.md#backendapiresourceconfigtypedef)
 
 Returns
-[GetBackendAPIResponseTypeDef](./type_defs.md#getbackendapiresponsetypedef).
+[GetBackendAPIResponseResponseTypeDef](./type_defs.md#getbackendapiresponseresponsetypedef).
 
 ### get_backend_api_models
+
+Generates a model schema for existing backend API resource.
 
 Type annotations for `boto3.client("amplifybackend").get_backend_api_models`
 method.
@@ -335,6 +408,9 @@ method.
 Boto3 documentation:
 [AmplifyBackend.Client.get_backend_api_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_api_models)
 
+Arguments mapping described in
+[GetBackendAPIModelsRequestTypeDef](./type_defs.md#getbackendapimodelsrequesttypedef).
+
 Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
@@ -342,15 +418,20 @@ Keyword-only arguments:
 - `ResourceName`: `str` *(required)*
 
 Returns
-[GetBackendAPIModelsResponseTypeDef](./type_defs.md#getbackendapimodelsresponsetypedef).
+[GetBackendAPIModelsResponseResponseTypeDef](./type_defs.md#getbackendapimodelsresponseresponsetypedef).
 
 ### get_backend_auth
+
+Gets a backend auth details.
 
 Type annotations for `boto3.client("amplifybackend").get_backend_auth` method.
 
 Boto3 documentation:
 [AmplifyBackend.Client.get_backend_auth](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_auth)
 
+Arguments mapping described in
+[GetBackendAuthRequestTypeDef](./type_defs.md#getbackendauthrequesttypedef).
+
 Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
@@ -358,14 +439,19 @@ Keyword-only arguments:
 - `ResourceName`: `str` *(required)*
 
 Returns
-[GetBackendAuthResponseTypeDef](./type_defs.md#getbackendauthresponsetypedef).
+[GetBackendAuthResponseResponseTypeDef](./type_defs.md#getbackendauthresponseresponsetypedef).
 
 ### get_backend_job
+
+Returns information about a specific job.
 
 Type annotations for `boto3.client("amplifybackend").get_backend_job` method.
 
 Boto3 documentation:
 [AmplifyBackend.Client.get_backend_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_job)
+
+Arguments mapping described in
+[GetBackendJobRequestTypeDef](./type_defs.md#getbackendjobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -374,29 +460,40 @@ Keyword-only arguments:
 - `JobId`: `str` *(required)*
 
 Returns
-[GetBackendJobResponseTypeDef](./type_defs.md#getbackendjobresponsetypedef).
+[GetBackendJobResponseResponseTypeDef](./type_defs.md#getbackendjobresponseresponsetypedef).
 
 ### get_token
+
+Gets the challenge token based on the given appId and sessionId.
 
 Type annotations for `boto3.client("amplifybackend").get_token` method.
 
 Boto3 documentation:
 [AmplifyBackend.Client.get_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_token)
 
+Arguments mapping described in
+[GetTokenRequestTypeDef](./type_defs.md#gettokenrequesttypedef).
+
 Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 - `SessionId`: `str` *(required)*
 
-Returns [GetTokenResponseTypeDef](./type_defs.md#gettokenresponsetypedef).
+Returns
+[GetTokenResponseResponseTypeDef](./type_defs.md#gettokenresponseresponsetypedef).
 
 ### import_backend_auth
+
+Imports an existing backend authentication resource.
 
 Type annotations for `boto3.client("amplifybackend").import_backend_auth`
 method.
 
 Boto3 documentation:
 [AmplifyBackend.Client.import_backend_auth](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.import_backend_auth)
+
+Arguments mapping described in
+[ImportBackendAuthRequestTypeDef](./type_defs.md#importbackendauthrequesttypedef).
 
 Keyword-only arguments:
 
@@ -408,14 +505,19 @@ Keyword-only arguments:
 - `IdentityPoolId`: `str`
 
 Returns
-[ImportBackendAuthResponseTypeDef](./type_defs.md#importbackendauthresponsetypedef).
+[ImportBackendAuthResponseResponseTypeDef](./type_defs.md#importbackendauthresponseresponsetypedef).
 
 ### list_backend_jobs
+
+Lists the jobs for the backend of an Amplify app.
 
 Type annotations for `boto3.client("amplifybackend").list_backend_jobs` method.
 
 Boto3 documentation:
 [AmplifyBackend.Client.list_backend_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.list_backend_jobs)
+
+Arguments mapping described in
+[ListBackendJobsRequestTypeDef](./type_defs.md#listbackendjobsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -428,9 +530,11 @@ Keyword-only arguments:
 - `Status`: `str`
 
 Returns
-[ListBackendJobsResponseTypeDef](./type_defs.md#listbackendjobsresponsetypedef).
+[ListBackendJobsResponseResponseTypeDef](./type_defs.md#listbackendjobsresponseresponsetypedef).
 
 ### remove_all_backends
+
+Removes all backend environments from your Amplify project.
 
 Type annotations for `boto3.client("amplifybackend").remove_all_backends`
 method.
@@ -438,15 +542,20 @@ method.
 Boto3 documentation:
 [AmplifyBackend.Client.remove_all_backends](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.remove_all_backends)
 
+Arguments mapping described in
+[RemoveAllBackendsRequestTypeDef](./type_defs.md#removeallbackendsrequesttypedef).
+
 Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 - `CleanAmplifyApp`: `bool`
 
 Returns
-[RemoveAllBackendsResponseTypeDef](./type_defs.md#removeallbackendsresponsetypedef).
+[RemoveAllBackendsResponseResponseTypeDef](./type_defs.md#removeallbackendsresponseresponsetypedef).
 
 ### remove_backend_config
+
+Removes the AWS resources required to access the Amplify Admin UI.
 
 Type annotations for `boto3.client("amplifybackend").remove_backend_config`
 method.
@@ -454,20 +563,28 @@ method.
 Boto3 documentation:
 [AmplifyBackend.Client.remove_backend_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.remove_backend_config)
 
+Arguments mapping described in
+[RemoveBackendConfigRequestTypeDef](./type_defs.md#removebackendconfigrequesttypedef).
+
 Keyword-only arguments:
 
 - `AppId`: `str` *(required)*
 
 Returns
-[RemoveBackendConfigResponseTypeDef](./type_defs.md#removebackendconfigresponsetypedef).
+[RemoveBackendConfigResponseResponseTypeDef](./type_defs.md#removebackendconfigresponseresponsetypedef).
 
 ### update_backend_api
+
+Updates an existing backend API resource.
 
 Type annotations for `boto3.client("amplifybackend").update_backend_api`
 method.
 
 Boto3 documentation:
 [AmplifyBackend.Client.update_backend_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_api)
+
+Arguments mapping described in
+[UpdateBackendAPIRequestTypeDef](./type_defs.md#updatebackendapirequesttypedef).
 
 Keyword-only arguments:
 
@@ -478,15 +595,20 @@ Keyword-only arguments:
   [BackendAPIResourceConfigTypeDef](./type_defs.md#backendapiresourceconfigtypedef)
 
 Returns
-[UpdateBackendAPIResponseTypeDef](./type_defs.md#updatebackendapiresponsetypedef).
+[UpdateBackendAPIResponseResponseTypeDef](./type_defs.md#updatebackendapiresponseresponsetypedef).
 
 ### update_backend_auth
+
+Updates an existing backend authentication resource.
 
 Type annotations for `boto3.client("amplifybackend").update_backend_auth`
 method.
 
 Boto3 documentation:
 [AmplifyBackend.Client.update_backend_auth](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_auth)
+
+Arguments mapping described in
+[UpdateBackendAuthRequestTypeDef](./type_defs.md#updatebackendauthrequesttypedef).
 
 Keyword-only arguments:
 
@@ -498,15 +620,20 @@ Keyword-only arguments:
 - `ResourceName`: `str` *(required)*
 
 Returns
-[UpdateBackendAuthResponseTypeDef](./type_defs.md#updatebackendauthresponsetypedef).
+[UpdateBackendAuthResponseResponseTypeDef](./type_defs.md#updatebackendauthresponseresponsetypedef).
 
 ### update_backend_config
+
+Updates the AWS resources required to access the Amplify Admin UI.
 
 Type annotations for `boto3.client("amplifybackend").update_backend_config`
 method.
 
 Boto3 documentation:
 [AmplifyBackend.Client.update_backend_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_config)
+
+Arguments mapping described in
+[UpdateBackendConfigRequestTypeDef](./type_defs.md#updatebackendconfigrequesttypedef).
 
 Keyword-only arguments:
 
@@ -515,15 +642,20 @@ Keyword-only arguments:
   [LoginAuthConfigReqObjTypeDef](./type_defs.md#loginauthconfigreqobjtypedef)
 
 Returns
-[UpdateBackendConfigResponseTypeDef](./type_defs.md#updatebackendconfigresponsetypedef).
+[UpdateBackendConfigResponseResponseTypeDef](./type_defs.md#updatebackendconfigresponseresponsetypedef).
 
 ### update_backend_job
+
+Updates a specific job.
 
 Type annotations for `boto3.client("amplifybackend").update_backend_job`
 method.
 
 Boto3 documentation:
 [AmplifyBackend.Client.update_backend_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_job)
+
+Arguments mapping described in
+[UpdateBackendJobRequestTypeDef](./type_defs.md#updatebackendjobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -534,7 +666,7 @@ Keyword-only arguments:
 - `Status`: `str`
 
 Returns
-[UpdateBackendJobResponseTypeDef](./type_defs.md#updatebackendjobresponsetypedef).
+[UpdateBackendJobResponseResponseTypeDef](./type_defs.md#updatebackendjobresponseresponsetypedef).
 
 ### get_paginator
 

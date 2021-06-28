@@ -32,4 +32,4 @@ Arguments for `ListEnvironmentsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEnvironmentsPaginator.paginate` returns
-`Iterator`\[[ListEnvironmentsOutputTypeDef](./type_defs.md#listenvironmentsoutputtypedef)\].
+`Iterator`\[[ListEnvironmentsOutputResponseTypeDef](./type_defs.md#listenvironmentsoutputresponsetypedef)\].

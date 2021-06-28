@@ -47,7 +47,7 @@ Arguments for `DescribeCertificatesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCertificatesPaginator.paginate` returns
-`Iterator`\[[CertificateMessageTypeDef](./type_defs.md#certificatemessagetypedef)\].
+`Iterator`\[[CertificateMessageResponseTypeDef](./type_defs.md#certificatemessageresponsetypedef)\].
 
 ## DescribeDBClusterParameterGroupsPaginator
 
@@ -74,7 +74,7 @@ Arguments for `DescribeDBClusterParameterGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBClusterParameterGroupsPaginator.paginate` returns
-`Iterator`\[[DBClusterParameterGroupsMessageTypeDef](./type_defs.md#dbclusterparametergroupsmessagetypedef)\].
+`Iterator`\[[DBClusterParameterGroupsMessageResponseTypeDef](./type_defs.md#dbclusterparametergroupsmessageresponsetypedef)\].
 
 ## DescribeDBClusterParametersPaginator
 
@@ -102,7 +102,7 @@ Arguments for `DescribeDBClusterParametersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBClusterParametersPaginator.paginate` returns
-`Iterator`\[[DBClusterParameterGroupDetailsTypeDef](./type_defs.md#dbclusterparametergroupdetailstypedef)\].
+`Iterator`\[[DBClusterParameterGroupDetailsResponseTypeDef](./type_defs.md#dbclusterparametergroupdetailsresponsetypedef)\].
 
 ## DescribeDBClusterSnapshotsPaginator
 
@@ -133,7 +133,7 @@ Arguments for `DescribeDBClusterSnapshotsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBClusterSnapshotsPaginator.paginate` returns
-`Iterator`\[[DBClusterSnapshotMessageTypeDef](./type_defs.md#dbclustersnapshotmessagetypedef)\].
+`Iterator`\[[DBClusterSnapshotMessageResponseTypeDef](./type_defs.md#dbclustersnapshotmessageresponsetypedef)\].
 
 ## DescribeDBClustersPaginator
 
@@ -160,7 +160,7 @@ Arguments for `DescribeDBClustersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBClustersPaginator.paginate` returns
-`Iterator`\[[DBClusterMessageTypeDef](./type_defs.md#dbclustermessagetypedef)\].
+`Iterator`\[[DBClusterMessageResponseTypeDef](./type_defs.md#dbclustermessageresponsetypedef)\].
 
 ## DescribeDBEngineVersionsPaginator
 
@@ -192,7 +192,7 @@ Arguments for `DescribeDBEngineVersionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBEngineVersionsPaginator.paginate` returns
-`Iterator`\[[DBEngineVersionMessageTypeDef](./type_defs.md#dbengineversionmessagetypedef)\].
+`Iterator`\[[DBEngineVersionMessageResponseTypeDef](./type_defs.md#dbengineversionmessageresponsetypedef)\].
 
 ## DescribeDBInstancesPaginator
 
@@ -219,7 +219,7 @@ Arguments for `DescribeDBInstancesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBInstancesPaginator.paginate` returns
-`Iterator`\[[DBInstanceMessageTypeDef](./type_defs.md#dbinstancemessagetypedef)\].
+`Iterator`\[[DBInstanceMessageResponseTypeDef](./type_defs.md#dbinstancemessageresponsetypedef)\].
 
 ## DescribeDBSubnetGroupsPaginator
 
@@ -246,7 +246,7 @@ Arguments for `DescribeDBSubnetGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBSubnetGroupsPaginator.paginate` returns
-`Iterator`\[[DBSubnetGroupMessageTypeDef](./type_defs.md#dbsubnetgroupmessagetypedef)\].
+`Iterator`\[[DBSubnetGroupMessageResponseTypeDef](./type_defs.md#dbsubnetgroupmessageresponsetypedef)\].
 
 ## DescribeEventSubscriptionsPaginator
 
@@ -273,7 +273,7 @@ Arguments for `DescribeEventSubscriptionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEventSubscriptionsPaginator.paginate` returns
-`Iterator`\[[EventSubscriptionsMessageTypeDef](./type_defs.md#eventsubscriptionsmessagetypedef)\].
+`Iterator`\[[EventSubscriptionsMessageResponseTypeDef](./type_defs.md#eventsubscriptionsmessageresponsetypedef)\].
 
 ## DescribeEventsPaginator
 
@@ -295,8 +295,8 @@ Arguments for `DescribeEventsPaginator.paginate` method:
 
 - `SourceIdentifier`: `str`
 - `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
 - `Duration`: `int`
 - `EventCategories`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -304,7 +304,7 @@ Arguments for `DescribeEventsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEventsPaginator.paginate` returns
-`Iterator`\[[EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef)\].
+`Iterator`\[[EventsMessageResponseTypeDef](./type_defs.md#eventsmessageresponsetypedef)\].
 
 ## DescribeGlobalClustersPaginator
 
@@ -331,7 +331,7 @@ Arguments for `DescribeGlobalClustersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeGlobalClustersPaginator.paginate` returns
-`Iterator`\[[GlobalClustersMessageTypeDef](./type_defs.md#globalclustersmessagetypedef)\].
+`Iterator`\[[GlobalClustersMessageResponseTypeDef](./type_defs.md#globalclustersmessageresponsetypedef)\].
 
 ## DescribeOrderableDBInstanceOptionsPaginator
 
@@ -362,7 +362,7 @@ Arguments for `DescribeOrderableDBInstanceOptionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeOrderableDBInstanceOptionsPaginator.paginate` returns
-`Iterator`\[[OrderableDBInstanceOptionsMessageTypeDef](./type_defs.md#orderabledbinstanceoptionsmessagetypedef)\].
+`Iterator`\[[OrderableDBInstanceOptionsMessageResponseTypeDef](./type_defs.md#orderabledbinstanceoptionsmessageresponsetypedef)\].
 
 ## DescribePendingMaintenanceActionsPaginator
 
@@ -389,4 +389,4 @@ Arguments for `DescribePendingMaintenanceActionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribePendingMaintenanceActionsPaginator.paginate` returns
-`Iterator`\[[PendingMaintenanceActionsMessageTypeDef](./type_defs.md#pendingmaintenanceactionsmessagetypedef)\].
+`Iterator`\[[PendingMaintenanceActionsMessageResponseTypeDef](./type_defs.md#pendingmaintenanceactionsmessageresponsetypedef)\].

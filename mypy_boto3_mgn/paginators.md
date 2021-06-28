@@ -37,7 +37,7 @@ Arguments for `DescribeJobLogItemsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeJobLogItemsPaginator.paginate` returns
-`Iterator`\[[DescribeJobLogItemsResponseTypeDef](./type_defs.md#describejoblogitemsresponsetypedef)\].
+`Iterator`\[[DescribeJobLogItemsResponseResponseTypeDef](./type_defs.md#describejoblogitemsresponseresponsetypedef)\].
 
 ## DescribeJobsPaginator
 
@@ -64,7 +64,7 @@ Arguments for `DescribeJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeJobsPaginator.paginate` returns
-`Iterator`\[[DescribeJobsResponseTypeDef](./type_defs.md#describejobsresponsetypedef)\].
+`Iterator`\[[DescribeJobsResponseResponseTypeDef](./type_defs.md#describejobsresponseresponsetypedef)\].
 
 ## DescribeReplicationConfigurationTemplatesPaginator
 
@@ -91,7 +91,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReplicationConfigurationTemplatesPaginator.paginate` returns
-`Iterator`\[[DescribeReplicationConfigurationTemplatesResponseTypeDef](./type_defs.md#describereplicationconfigurationtemplatesresponsetypedef)\].
+`Iterator`\[[DescribeReplicationConfigurationTemplatesResponseResponseTypeDef](./type_defs.md#describereplicationconfigurationtemplatesresponseresponsetypedef)\].
 
 ## DescribeSourceServersPaginator
 
@@ -119,4 +119,4 @@ Arguments for `DescribeSourceServersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSourceServersPaginator.paginate` returns
-`Iterator`\[[DescribeSourceServersResponseTypeDef](./type_defs.md#describesourceserversresponsetypedef)\].
+`Iterator`\[[DescribeSourceServersResponseResponseTypeDef](./type_defs.md#describesourceserversresponseresponsetypedef)\].

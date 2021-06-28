@@ -70,10 +70,15 @@ Exceptions:
 
 ### analyze_document
 
+Analyzes an input document for relationships between detected items.
+
 Type annotations for `boto3.client("textract").analyze_document` method.
 
 Boto3 documentation:
 [Textract.Client.analyze_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.analyze_document)
+
+Arguments mapping described in
+[AnalyzeDocumentRequestTypeDef](./type_defs.md#analyzedocumentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -84,9 +89,11 @@ Keyword-only arguments:
   [HumanLoopConfigTypeDef](./type_defs.md#humanloopconfigtypedef)
 
 Returns
-[AnalyzeDocumentResponseTypeDef](./type_defs.md#analyzedocumentresponsetypedef).
+[AnalyzeDocumentResponseResponseTypeDef](./type_defs.md#analyzedocumentresponseresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("textract").can_paginate` method.
 
@@ -101,19 +108,26 @@ Returns `bool`.
 
 ### detect_document_text
 
+Detects text in the input document.
+
 Type annotations for `boto3.client("textract").detect_document_text` method.
 
 Boto3 documentation:
 [Textract.Client.detect_document_text](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.detect_document_text)
+
+Arguments mapping described in
+[DetectDocumentTextRequestTypeDef](./type_defs.md#detectdocumenttextrequesttypedef).
 
 Keyword-only arguments:
 
 - `Document`: [DocumentTypeDef](./type_defs.md#documenttypedef) *(required)*
 
 Returns
-[DetectDocumentTextResponseTypeDef](./type_defs.md#detectdocumenttextresponsetypedef).
+[DetectDocumentTextResponseResponseTypeDef](./type_defs.md#detectdocumenttextresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("textract").generate_presigned_url` method.
 
@@ -131,10 +145,16 @@ Returns `str`.
 
 ### get_document_analysis
 
+Gets the results for an Amazon Textract asynchronous operation that analyzes
+text in a document.
+
 Type annotations for `boto3.client("textract").get_document_analysis` method.
 
 Boto3 documentation:
 [Textract.Client.get_document_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.get_document_analysis)
+
+Arguments mapping described in
+[GetDocumentAnalysisRequestTypeDef](./type_defs.md#getdocumentanalysisrequesttypedef).
 
 Keyword-only arguments:
 
@@ -143,9 +163,12 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetDocumentAnalysisResponseTypeDef](./type_defs.md#getdocumentanalysisresponsetypedef).
+[GetDocumentAnalysisResponseResponseTypeDef](./type_defs.md#getdocumentanalysisresponseresponsetypedef).
 
 ### get_document_text_detection
+
+Gets the results for an Amazon Textract asynchronous operation that detects
+text in a document.
 
 Type annotations for `boto3.client("textract").get_document_text_detection`
 method.
@@ -153,6 +176,9 @@ method.
 Boto3 documentation:
 [Textract.Client.get_document_text_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.get_document_text_detection)
 
+Arguments mapping described in
+[GetDocumentTextDetectionRequestTypeDef](./type_defs.md#getdocumenttextdetectionrequesttypedef).
+
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
@@ -160,14 +186,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetDocumentTextDetectionResponseTypeDef](./type_defs.md#getdocumenttextdetectionresponsetypedef).
+[GetDocumentTextDetectionResponseResponseTypeDef](./type_defs.md#getdocumenttextdetectionresponseresponsetypedef).
 
 ### start_document_analysis
+
+Starts the asynchronous analysis of an input document for relationships between
+detected items such as key-value pairs, tables, and selection elements.
 
 Type annotations for `boto3.client("textract").start_document_analysis` method.
 
 Boto3 documentation:
 [Textract.Client.start_document_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.start_document_analysis)
+
+Arguments mapping described in
+[StartDocumentAnalysisRequestTypeDef](./type_defs.md#startdocumentanalysisrequesttypedef).
 
 Keyword-only arguments:
 
@@ -184,15 +216,20 @@ Keyword-only arguments:
 - `KMSKeyId`: `str`
 
 Returns
-[StartDocumentAnalysisResponseTypeDef](./type_defs.md#startdocumentanalysisresponsetypedef).
+[StartDocumentAnalysisResponseResponseTypeDef](./type_defs.md#startdocumentanalysisresponseresponsetypedef).
 
 ### start_document_text_detection
+
+Starts the asynchronous detection of text in a document.
 
 Type annotations for `boto3.client("textract").start_document_text_detection`
 method.
 
 Boto3 documentation:
 [Textract.Client.start_document_text_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.start_document_text_detection)
+
+Arguments mapping described in
+[StartDocumentTextDetectionRequestTypeDef](./type_defs.md#startdocumenttextdetectionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -207,4 +244,4 @@ Keyword-only arguments:
 - `KMSKeyId`: `str`
 
 Returns
-[StartDocumentTextDetectionResponseTypeDef](./type_defs.md#startdocumenttextdetectionresponsetypedef).
+[StartDocumentTextDetectionResponseResponseTypeDef](./type_defs.md#startdocumenttextdetectionresponseresponsetypedef).

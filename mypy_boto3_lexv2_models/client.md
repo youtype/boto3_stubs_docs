@@ -113,10 +113,15 @@ Exceptions:
 
 ### build_bot_locale
 
+Builds a bot, its intents, and its slot types into a specific locale.
+
 Type annotations for `boto3.client("lexv2-models").build_bot_locale` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.build_bot_locale](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.build_bot_locale)
+
+Arguments mapping described in
+[BuildBotLocaleRequestTypeDef](./type_defs.md#buildbotlocalerequesttypedef).
 
 Keyword-only arguments:
 
@@ -125,9 +130,11 @@ Keyword-only arguments:
 - `localeId`: `str` *(required)*
 
 Returns
-[BuildBotLocaleResponseTypeDef](./type_defs.md#buildbotlocaleresponsetypedef).
+[BuildBotLocaleResponseResponseTypeDef](./type_defs.md#buildbotlocaleresponseresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("lexv2-models").can_paginate` method.
 
@@ -142,10 +149,15 @@ Returns `bool`.
 
 ### create_bot
 
+Creates an Amazon Lex conversational bot.
+
 Type annotations for `boto3.client("lexv2-models").create_bot` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.create_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot)
+
+Arguments mapping described in
+[CreateBotRequestTypeDef](./type_defs.md#createbotrequesttypedef).
 
 Keyword-only arguments:
 
@@ -158,14 +170,20 @@ Keyword-only arguments:
 - `botTags`: `Dict`\[`str`, `str`\]
 - `testBotAliasTags`: `Dict`\[`str`, `str`\]
 
-Returns [CreateBotResponseTypeDef](./type_defs.md#createbotresponsetypedef).
+Returns
+[CreateBotResponseResponseTypeDef](./type_defs.md#createbotresponseresponsetypedef).
 
 ### create_bot_alias
+
+Creates an alias for the specified version of a bot.
 
 Type annotations for `boto3.client("lexv2-models").create_bot_alias` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.create_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot_alias)
+
+Arguments mapping described in
+[CreateBotAliasRequestTypeDef](./type_defs.md#createbotaliasrequesttypedef).
 
 Keyword-only arguments:
 
@@ -182,14 +200,19 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateBotAliasResponseTypeDef](./type_defs.md#createbotaliasresponsetypedef).
+[CreateBotAliasResponseResponseTypeDef](./type_defs.md#createbotaliasresponseresponsetypedef).
 
 ### create_bot_locale
+
+Creates a locale in the bot.
 
 Type annotations for `boto3.client("lexv2-models").create_bot_locale` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.create_bot_locale](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot_locale)
+
+Arguments mapping described in
+[CreateBotLocaleRequestTypeDef](./type_defs.md#createbotlocalerequesttypedef).
 
 Keyword-only arguments:
 
@@ -201,14 +224,19 @@ Keyword-only arguments:
 - `voiceSettings`: [VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef)
 
 Returns
-[CreateBotLocaleResponseTypeDef](./type_defs.md#createbotlocaleresponsetypedef).
+[CreateBotLocaleResponseResponseTypeDef](./type_defs.md#createbotlocaleresponseresponsetypedef).
 
 ### create_bot_version
+
+Creates a new version of the bot based on the `DRAFT` version.
 
 Type annotations for `boto3.client("lexv2-models").create_bot_version` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.create_bot_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot_version)
+
+Arguments mapping described in
+[CreateBotVersionRequestTypeDef](./type_defs.md#createbotversionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -219,14 +247,19 @@ Keyword-only arguments:
 - `description`: `str`
 
 Returns
-[CreateBotVersionResponseTypeDef](./type_defs.md#createbotversionresponsetypedef).
+[CreateBotVersionResponseResponseTypeDef](./type_defs.md#createbotversionresponseresponsetypedef).
 
 ### create_export
+
+Creates a zip archive containing the contents of a bot or a bot locale.
 
 Type annotations for `boto3.client("lexv2-models").create_export` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.create_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_export)
+
+Arguments mapping described in
+[CreateExportRequestTypeDef](./type_defs.md#createexportrequesttypedef).
 
 Keyword-only arguments:
 
@@ -239,14 +272,19 @@ Keyword-only arguments:
 - `filePassword`: `str`
 
 Returns
-[CreateExportResponseTypeDef](./type_defs.md#createexportresponsetypedef).
+[CreateExportResponseResponseTypeDef](./type_defs.md#createexportresponseresponsetypedef).
 
 ### create_intent
+
+Creates an intent.
 
 Type annotations for `boto3.client("lexv2-models").create_intent` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.create_intent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_intent)
+
+Arguments mapping described in
+[CreateIntentRequestTypeDef](./type_defs.md#createintentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -274,9 +312,11 @@ Keyword-only arguments:
   [KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef)
 
 Returns
-[CreateIntentResponseTypeDef](./type_defs.md#createintentresponsetypedef).
+[CreateIntentResponseResponseTypeDef](./type_defs.md#createintentresponseresponsetypedef).
 
 ### create_resource_policy
+
+Creates a new resource policy with the specified policy statements.
 
 Type annotations for `boto3.client("lexv2-models").create_resource_policy`
 method.
@@ -284,21 +324,29 @@ method.
 Boto3 documentation:
 [LexModelsV2.Client.create_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_resource_policy)
 
+Arguments mapping described in
+[CreateResourcePolicyRequestTypeDef](./type_defs.md#createresourcepolicyrequesttypedef).
+
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `policy`: `str` *(required)*
 
 Returns
-[CreateResourcePolicyResponseTypeDef](./type_defs.md#createresourcepolicyresponsetypedef).
+[CreateResourcePolicyResponseResponseTypeDef](./type_defs.md#createresourcepolicyresponseresponsetypedef).
 
 ### create_resource_policy_statement
+
+Adds a new resource policy statement to a bot or bot alias.
 
 Type annotations for
 `boto3.client("lexv2-models").create_resource_policy_statement` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.create_resource_policy_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_resource_policy_statement)
+
+Arguments mapping described in
+[CreateResourcePolicyStatementRequestTypeDef](./type_defs.md#createresourcepolicystatementrequesttypedef).
 
 Keyword-only arguments:
 
@@ -312,14 +360,19 @@ Keyword-only arguments:
 - `expectedRevisionId`: `str`
 
 Returns
-[CreateResourcePolicyStatementResponseTypeDef](./type_defs.md#createresourcepolicystatementresponsetypedef).
+[CreateResourcePolicyStatementResponseResponseTypeDef](./type_defs.md#createresourcepolicystatementresponseresponsetypedef).
 
 ### create_slot
+
+Creates a slot in an intent.
 
 Type annotations for `boto3.client("lexv2-models").create_slot` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.create_slot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_slot)
+
+Arguments mapping described in
+[CreateSlotRequestTypeDef](./type_defs.md#createslotrequesttypedef).
 
 Keyword-only arguments:
 
@@ -338,14 +391,22 @@ Keyword-only arguments:
 - `multipleValuesSetting`:
   [MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef)
 
-Returns [CreateSlotResponseTypeDef](./type_defs.md#createslotresponsetypedef).
+Returns
+[CreateSlotResponseResponseTypeDef](./type_defs.md#createslotresponseresponsetypedef).
 
 ### create_slot_type
+
+Creates a custom slot type To create a custom slot type, specify a name for the
+slot type and a set of enumeration values, the values that a slot of this type
+can assume.
 
 Type annotations for `boto3.client("lexv2-models").create_slot_type` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.create_slot_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_slot_type)
+
+Arguments mapping described in
+[CreateSlotTypeRequestTypeDef](./type_defs.md#createslottyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -362,9 +423,12 @@ Keyword-only arguments:
 - `parentSlotTypeSignature`: `str`
 
 Returns
-[CreateSlotTypeResponseTypeDef](./type_defs.md#createslottyperesponsetypedef).
+[CreateSlotTypeResponseResponseTypeDef](./type_defs.md#createslottyperesponseresponsetypedef).
 
 ### create_upload_url
+
+Gets a pre-signed S3 write URL that you use to upload the zip archive when
+importing a bot or a bot locale.
 
 Type annotations for `boto3.client("lexv2-models").create_upload_url` method.
 
@@ -372,28 +436,39 @@ Boto3 documentation:
 [LexModelsV2.Client.create_upload_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_upload_url)
 
 Returns
-[CreateUploadUrlResponseTypeDef](./type_defs.md#createuploadurlresponsetypedef).
+[CreateUploadUrlResponseResponseTypeDef](./type_defs.md#createuploadurlresponseresponsetypedef).
 
 ### delete_bot
+
+Deletes all versions of a bot, including the `Draft` version.
 
 Type annotations for `boto3.client("lexv2-models").delete_bot` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.delete_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot)
 
+Arguments mapping described in
+[DeleteBotRequestTypeDef](./type_defs.md#deletebotrequesttypedef).
+
 Keyword-only arguments:
 
 - `botId`: `str` *(required)*
 - `skipResourceInUseCheck`: `bool`
 
-Returns [DeleteBotResponseTypeDef](./type_defs.md#deletebotresponsetypedef).
+Returns
+[DeleteBotResponseResponseTypeDef](./type_defs.md#deletebotresponseresponsetypedef).
 
 ### delete_bot_alias
+
+Deletes the specified bot alias.
 
 Type annotations for `boto3.client("lexv2-models").delete_bot_alias` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.delete_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot_alias)
+
+Arguments mapping described in
+[DeleteBotAliasRequestTypeDef](./type_defs.md#deletebotaliasrequesttypedef).
 
 Keyword-only arguments:
 
@@ -402,14 +477,19 @@ Keyword-only arguments:
 - `skipResourceInUseCheck`: `bool`
 
 Returns
-[DeleteBotAliasResponseTypeDef](./type_defs.md#deletebotaliasresponsetypedef).
+[DeleteBotAliasResponseResponseTypeDef](./type_defs.md#deletebotaliasresponseresponsetypedef).
 
 ### delete_bot_locale
+
+Removes a locale from a bot.
 
 Type annotations for `boto3.client("lexv2-models").delete_bot_locale` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.delete_bot_locale](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot_locale)
+
+Arguments mapping described in
+[DeleteBotLocaleRequestTypeDef](./type_defs.md#deletebotlocalerequesttypedef).
 
 Keyword-only arguments:
 
@@ -418,14 +498,19 @@ Keyword-only arguments:
 - `localeId`: `str` *(required)*
 
 Returns
-[DeleteBotLocaleResponseTypeDef](./type_defs.md#deletebotlocaleresponsetypedef).
+[DeleteBotLocaleResponseResponseTypeDef](./type_defs.md#deletebotlocaleresponseresponsetypedef).
 
 ### delete_bot_version
+
+Deletes a specific version of a bot.
 
 Type annotations for `boto3.client("lexv2-models").delete_bot_version` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.delete_bot_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot_version)
+
+Arguments mapping described in
+[DeleteBotVersionRequestTypeDef](./type_defs.md#deletebotversionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -434,42 +519,57 @@ Keyword-only arguments:
 - `skipResourceInUseCheck`: `bool`
 
 Returns
-[DeleteBotVersionResponseTypeDef](./type_defs.md#deletebotversionresponsetypedef).
+[DeleteBotVersionResponseResponseTypeDef](./type_defs.md#deletebotversionresponseresponsetypedef).
 
 ### delete_export
+
+Removes a previous export and the associated files stored in an S3 bucket.
 
 Type annotations for `boto3.client("lexv2-models").delete_export` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.delete_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_export)
 
+Arguments mapping described in
+[DeleteExportRequestTypeDef](./type_defs.md#deleteexportrequesttypedef).
+
 Keyword-only arguments:
 
 - `exportId`: `str` *(required)*
 
 Returns
-[DeleteExportResponseTypeDef](./type_defs.md#deleteexportresponsetypedef).
+[DeleteExportResponseResponseTypeDef](./type_defs.md#deleteexportresponseresponsetypedef).
 
 ### delete_import
+
+Removes a previous import and the associated file stored in an S3 bucket.
 
 Type annotations for `boto3.client("lexv2-models").delete_import` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.delete_import](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_import)
 
+Arguments mapping described in
+[DeleteImportRequestTypeDef](./type_defs.md#deleteimportrequesttypedef).
+
 Keyword-only arguments:
 
 - `importId`: `str` *(required)*
 
 Returns
-[DeleteImportResponseTypeDef](./type_defs.md#deleteimportresponsetypedef).
+[DeleteImportResponseResponseTypeDef](./type_defs.md#deleteimportresponseresponsetypedef).
 
 ### delete_intent
+
+Removes the specified intent.
 
 Type annotations for `boto3.client("lexv2-models").delete_intent` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.delete_intent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_intent)
+
+Arguments mapping described in
+[DeleteIntentRequestTypeDef](./type_defs.md#deleteintentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -480,11 +580,16 @@ Keyword-only arguments:
 
 ### delete_resource_policy
 
+Removes an existing policy from a bot or bot alias.
+
 Type annotations for `boto3.client("lexv2-models").delete_resource_policy`
 method.
 
 Boto3 documentation:
 [LexModelsV2.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_resource_policy)
+
+Arguments mapping described in
+[DeleteResourcePolicyRequestTypeDef](./type_defs.md#deleteresourcepolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -492,15 +597,20 @@ Keyword-only arguments:
 - `expectedRevisionId`: `str`
 
 Returns
-[DeleteResourcePolicyResponseTypeDef](./type_defs.md#deleteresourcepolicyresponsetypedef).
+[DeleteResourcePolicyResponseResponseTypeDef](./type_defs.md#deleteresourcepolicyresponseresponsetypedef).
 
 ### delete_resource_policy_statement
+
+Deletes a policy statement from a resource policy.
 
 Type annotations for
 `boto3.client("lexv2-models").delete_resource_policy_statement` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.delete_resource_policy_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_resource_policy_statement)
+
+Arguments mapping described in
+[DeleteResourcePolicyStatementRequestTypeDef](./type_defs.md#deleteresourcepolicystatementrequesttypedef).
 
 Keyword-only arguments:
 
@@ -509,14 +619,19 @@ Keyword-only arguments:
 - `expectedRevisionId`: `str`
 
 Returns
-[DeleteResourcePolicyStatementResponseTypeDef](./type_defs.md#deleteresourcepolicystatementresponsetypedef).
+[DeleteResourcePolicyStatementResponseResponseTypeDef](./type_defs.md#deleteresourcepolicystatementresponseresponsetypedef).
 
 ### delete_slot
+
+Deletes the specified slot from an intent.
 
 Type annotations for `boto3.client("lexv2-models").delete_slot` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.delete_slot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_slot)
+
+Arguments mapping described in
+[DeleteSlotRequestTypeDef](./type_defs.md#deleteslotrequesttypedef).
 
 Keyword-only arguments:
 
@@ -528,10 +643,15 @@ Keyword-only arguments:
 
 ### delete_slot_type
 
+Deletes a slot type from a bot locale.
+
 Type annotations for `boto3.client("lexv2-models").delete_slot_type` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.delete_slot_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_slot_type)
+
+Arguments mapping described in
+[DeleteSlotTypeRequestTypeDef](./type_defs.md#deleteslottyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -543,24 +663,34 @@ Keyword-only arguments:
 
 ### describe_bot
 
+Provides metadata information about a bot.
+
 Type annotations for `boto3.client("lexv2-models").describe_bot` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.describe_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot)
+
+Arguments mapping described in
+[DescribeBotRequestTypeDef](./type_defs.md#describebotrequesttypedef).
 
 Keyword-only arguments:
 
 - `botId`: `str` *(required)*
 
 Returns
-[DescribeBotResponseTypeDef](./type_defs.md#describebotresponsetypedef).
+[DescribeBotResponseResponseTypeDef](./type_defs.md#describebotresponseresponsetypedef).
 
 ### describe_bot_alias
+
+Get information about a specific bot alias.
 
 Type annotations for `boto3.client("lexv2-models").describe_bot_alias` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.describe_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_alias)
+
+Arguments mapping described in
+[DescribeBotAliasRequestTypeDef](./type_defs.md#describebotaliasrequesttypedef).
 
 Keyword-only arguments:
 
@@ -568,14 +698,19 @@ Keyword-only arguments:
 - `botId`: `str` *(required)*
 
 Returns
-[DescribeBotAliasResponseTypeDef](./type_defs.md#describebotaliasresponsetypedef).
+[DescribeBotAliasResponseResponseTypeDef](./type_defs.md#describebotaliasresponseresponsetypedef).
 
 ### describe_bot_locale
+
+Describes the settings that a bot has for a specific locale.
 
 Type annotations for `boto3.client("lexv2-models").describe_bot_locale` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.describe_bot_locale](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_locale)
+
+Arguments mapping described in
+[DescribeBotLocaleRequestTypeDef](./type_defs.md#describebotlocalerequesttypedef).
 
 Keyword-only arguments:
 
@@ -584,9 +719,11 @@ Keyword-only arguments:
 - `localeId`: `str` *(required)*
 
 Returns
-[DescribeBotLocaleResponseTypeDef](./type_defs.md#describebotlocaleresponsetypedef).
+[DescribeBotLocaleResponseResponseTypeDef](./type_defs.md#describebotlocaleresponseresponsetypedef).
 
 ### describe_bot_version
+
+Provides metadata about a version of a bot.
 
 Type annotations for `boto3.client("lexv2-models").describe_bot_version`
 method.
@@ -594,48 +731,66 @@ method.
 Boto3 documentation:
 [LexModelsV2.Client.describe_bot_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_version)
 
+Arguments mapping described in
+[DescribeBotVersionRequestTypeDef](./type_defs.md#describebotversionrequesttypedef).
+
 Keyword-only arguments:
 
 - `botId`: `str` *(required)*
 - `botVersion`: `str` *(required)*
 
 Returns
-[DescribeBotVersionResponseTypeDef](./type_defs.md#describebotversionresponsetypedef).
+[DescribeBotVersionResponseResponseTypeDef](./type_defs.md#describebotversionresponseresponsetypedef).
 
 ### describe_export
+
+Gets information about a specific export.
 
 Type annotations for `boto3.client("lexv2-models").describe_export` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.describe_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_export)
 
+Arguments mapping described in
+[DescribeExportRequestTypeDef](./type_defs.md#describeexportrequesttypedef).
+
 Keyword-only arguments:
 
 - `exportId`: `str` *(required)*
 
 Returns
-[DescribeExportResponseTypeDef](./type_defs.md#describeexportresponsetypedef).
+[DescribeExportResponseResponseTypeDef](./type_defs.md#describeexportresponseresponsetypedef).
 
 ### describe_import
+
+Gets information about a specific import.
 
 Type annotations for `boto3.client("lexv2-models").describe_import` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.describe_import](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_import)
 
+Arguments mapping described in
+[DescribeImportRequestTypeDef](./type_defs.md#describeimportrequesttypedef).
+
 Keyword-only arguments:
 
 - `importId`: `str` *(required)*
 
 Returns
-[DescribeImportResponseTypeDef](./type_defs.md#describeimportresponsetypedef).
+[DescribeImportResponseResponseTypeDef](./type_defs.md#describeimportresponseresponsetypedef).
 
 ### describe_intent
+
+Returns metadata about an intent.
 
 Type annotations for `boto3.client("lexv2-models").describe_intent` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.describe_intent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_intent)
+
+Arguments mapping described in
+[DescribeIntentRequestTypeDef](./type_defs.md#describeintentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -645,9 +800,11 @@ Keyword-only arguments:
 - `localeId`: `str` *(required)*
 
 Returns
-[DescribeIntentResponseTypeDef](./type_defs.md#describeintentresponsetypedef).
+[DescribeIntentResponseResponseTypeDef](./type_defs.md#describeintentresponseresponsetypedef).
 
 ### describe_resource_policy
+
+Gets the resource policy and policy revision for a bot or bot alias.
 
 Type annotations for `boto3.client("lexv2-models").describe_resource_policy`
 method.
@@ -655,19 +812,27 @@ method.
 Boto3 documentation:
 [LexModelsV2.Client.describe_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_resource_policy)
 
+Arguments mapping described in
+[DescribeResourcePolicyRequestTypeDef](./type_defs.md#describeresourcepolicyrequesttypedef).
+
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[DescribeResourcePolicyResponseTypeDef](./type_defs.md#describeresourcepolicyresponsetypedef).
+[DescribeResourcePolicyResponseResponseTypeDef](./type_defs.md#describeresourcepolicyresponseresponsetypedef).
 
 ### describe_slot
+
+Gets metadata information about a slot.
 
 Type annotations for `boto3.client("lexv2-models").describe_slot` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.describe_slot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_slot)
+
+Arguments mapping described in
+[DescribeSlotRequestTypeDef](./type_defs.md#describeslotrequesttypedef).
 
 Keyword-only arguments:
 
@@ -678,14 +843,19 @@ Keyword-only arguments:
 - `intentId`: `str` *(required)*
 
 Returns
-[DescribeSlotResponseTypeDef](./type_defs.md#describeslotresponsetypedef).
+[DescribeSlotResponseResponseTypeDef](./type_defs.md#describeslotresponseresponsetypedef).
 
 ### describe_slot_type
+
+Gets metadata information about a slot type.
 
 Type annotations for `boto3.client("lexv2-models").describe_slot_type` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.describe_slot_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_slot_type)
+
+Arguments mapping described in
+[DescribeSlotTypeRequestTypeDef](./type_defs.md#describeslottyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -695,9 +865,11 @@ Keyword-only arguments:
 - `localeId`: `str` *(required)*
 
 Returns
-[DescribeSlotTypeResponseTypeDef](./type_defs.md#describeslottyperesponsetypedef).
+[DescribeSlotTypeResponseResponseTypeDef](./type_defs.md#describeslottyperesponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("lexv2-models").generate_presigned_url`
 method.
@@ -716,10 +888,15 @@ Returns `str`.
 
 ### list_bot_aliases
 
+Gets a list of aliases for the specified bot.
+
 Type annotations for `boto3.client("lexv2-models").list_bot_aliases` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.list_bot_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_aliases)
+
+Arguments mapping described in
+[ListBotAliasesRequestTypeDef](./type_defs.md#listbotaliasesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -728,14 +905,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListBotAliasesResponseTypeDef](./type_defs.md#listbotaliasesresponsetypedef).
+[ListBotAliasesResponseResponseTypeDef](./type_defs.md#listbotaliasesresponseresponsetypedef).
 
 ### list_bot_locales
+
+Gets a list of locales for the specified bot.
 
 Type annotations for `boto3.client("lexv2-models").list_bot_locales` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.list_bot_locales](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_locales)
+
+Arguments mapping described in
+[ListBotLocalesRequestTypeDef](./type_defs.md#listbotlocalesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -748,14 +930,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListBotLocalesResponseTypeDef](./type_defs.md#listbotlocalesresponsetypedef).
+[ListBotLocalesResponseResponseTypeDef](./type_defs.md#listbotlocalesresponseresponsetypedef).
 
 ### list_bot_versions
+
+Gets information about all of the versions of a bot.
 
 Type annotations for `boto3.client("lexv2-models").list_bot_versions` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.list_bot_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_versions)
+
+Arguments mapping described in
+[ListBotVersionsRequestTypeDef](./type_defs.md#listbotversionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -765,14 +952,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListBotVersionsResponseTypeDef](./type_defs.md#listbotversionsresponsetypedef).
+[ListBotVersionsResponseResponseTypeDef](./type_defs.md#listbotversionsresponseresponsetypedef).
 
 ### list_bots
+
+Gets a list of available bots.
 
 Type annotations for `boto3.client("lexv2-models").list_bots` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.list_bots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bots)
+
+Arguments mapping described in
+[ListBotsRequestTypeDef](./type_defs.md#listbotsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -781,15 +973,22 @@ Keyword-only arguments:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-Returns [ListBotsResponseTypeDef](./type_defs.md#listbotsresponsetypedef).
+Returns
+[ListBotsResponseResponseTypeDef](./type_defs.md#listbotsresponseresponsetypedef).
 
 ### list_built_in_intents
+
+Gets a list of built-in intents provided by Amazon Lex that you can use in your
+bot.
 
 Type annotations for `boto3.client("lexv2-models").list_built_in_intents`
 method.
 
 Boto3 documentation:
 [LexModelsV2.Client.list_built_in_intents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_built_in_intents)
+
+Arguments mapping described in
+[ListBuiltInIntentsRequestTypeDef](./type_defs.md#listbuiltinintentsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -800,15 +999,20 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListBuiltInIntentsResponseTypeDef](./type_defs.md#listbuiltinintentsresponsetypedef).
+[ListBuiltInIntentsResponseResponseTypeDef](./type_defs.md#listbuiltinintentsresponseresponsetypedef).
 
 ### list_built_in_slot_types
+
+Gets a list of built-in slot types that meet the specified criteria.
 
 Type annotations for `boto3.client("lexv2-models").list_built_in_slot_types`
 method.
 
 Boto3 documentation:
 [LexModelsV2.Client.list_built_in_slot_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_built_in_slot_types)
+
+Arguments mapping described in
+[ListBuiltInSlotTypesRequestTypeDef](./type_defs.md#listbuiltinslottypesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -819,14 +1023,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListBuiltInSlotTypesResponseTypeDef](./type_defs.md#listbuiltinslottypesresponsetypedef).
+[ListBuiltInSlotTypesResponseResponseTypeDef](./type_defs.md#listbuiltinslottypesresponseresponsetypedef).
 
 ### list_exports
+
+Lists the exports for a bot or bot locale.
 
 Type annotations for `boto3.client("lexv2-models").list_exports` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.list_exports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_exports)
+
+Arguments mapping described in
+[ListExportsRequestTypeDef](./type_defs.md#listexportsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -839,14 +1048,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListExportsResponseTypeDef](./type_defs.md#listexportsresponsetypedef).
+[ListExportsResponseResponseTypeDef](./type_defs.md#listexportsresponseresponsetypedef).
 
 ### list_imports
+
+Lists the imports for a bot or bot locale.
 
 Type annotations for `boto3.client("lexv2-models").list_imports` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.list_imports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_imports)
+
+Arguments mapping described in
+[ListImportsRequestTypeDef](./type_defs.md#listimportsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -859,14 +1073,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListImportsResponseTypeDef](./type_defs.md#listimportsresponsetypedef).
+[ListImportsResponseResponseTypeDef](./type_defs.md#listimportsresponseresponsetypedef).
 
 ### list_intents
+
+Get a list of intents that meet the specified criteria.
 
 Type annotations for `boto3.client("lexv2-models").list_intents` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.list_intents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_intents)
+
+Arguments mapping described in
+[ListIntentsRequestTypeDef](./type_defs.md#listintentsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -880,14 +1099,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListIntentsResponseTypeDef](./type_defs.md#listintentsresponsetypedef).
+[ListIntentsResponseResponseTypeDef](./type_defs.md#listintentsresponseresponsetypedef).
 
 ### list_slot_types
+
+Gets a list of slot types that match the specified criteria.
 
 Type annotations for `boto3.client("lexv2-models").list_slot_types` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.list_slot_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_slot_types)
+
+Arguments mapping described in
+[ListSlotTypesRequestTypeDef](./type_defs.md#listslottypesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -901,14 +1125,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListSlotTypesResponseTypeDef](./type_defs.md#listslottypesresponsetypedef).
+[ListSlotTypesResponseResponseTypeDef](./type_defs.md#listslottypesresponseresponsetypedef).
 
 ### list_slots
+
+Gets a list of slots that match the specified criteria.
 
 Type annotations for `boto3.client("lexv2-models").list_slots` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.list_slots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_slots)
+
+Arguments mapping described in
+[ListSlotsRequestTypeDef](./type_defs.md#listslotsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -921,9 +1150,12 @@ Keyword-only arguments:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-Returns [ListSlotsResponseTypeDef](./type_defs.md#listslotsresponsetypedef).
+Returns
+[ListSlotsResponseResponseTypeDef](./type_defs.md#listslotsresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Gets a list of tags associated with a resource.
 
 Type annotations for `boto3.client("lexv2-models").list_tags_for_resource`
 method.
@@ -931,19 +1163,28 @@ method.
 Boto3 documentation:
 [LexModelsV2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `resourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### start_import
+
+Starts importing a bot or bot locale from a zip archive that you uploaded to an
+S3 bucket.
 
 Type annotations for `boto3.client("lexv2-models").start_import` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.start_import](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.start_import)
+
+Arguments mapping described in
+[StartImportRequestTypeDef](./type_defs.md#startimportrequesttypedef).
 
 Keyword-only arguments:
 
@@ -956,14 +1197,19 @@ Keyword-only arguments:
 - `filePassword`: `str`
 
 Returns
-[StartImportResponseTypeDef](./type_defs.md#startimportresponsetypedef).
+[StartImportResponseResponseTypeDef](./type_defs.md#startimportresponseresponsetypedef).
 
 ### tag_resource
+
+Adds the specified tags to the specified resource.
 
 Type annotations for `boto3.client("lexv2-models").tag_resource` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -974,10 +1220,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Removes tags from a bot, bot alias, or bot channel.
+
 Type annotations for `boto3.client("lexv2-models").untag_resource` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -988,10 +1239,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_bot
 
+Updates the configuration of an existing bot.
+
 Type annotations for `boto3.client("lexv2-models").update_bot` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.update_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot)
+
+Arguments mapping described in
+[UpdateBotRequestTypeDef](./type_defs.md#updatebotrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1003,14 +1259,20 @@ Keyword-only arguments:
 - `idleSessionTTLInSeconds`: `int` *(required)*
 - `description`: `str`
 
-Returns [UpdateBotResponseTypeDef](./type_defs.md#updatebotresponsetypedef).
+Returns
+[UpdateBotResponseResponseTypeDef](./type_defs.md#updatebotresponseresponsetypedef).
 
 ### update_bot_alias
+
+Updates the configuration of an existing bot alias.
 
 Type annotations for `boto3.client("lexv2-models").update_bot_alias` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.update_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot_alias)
+
+Arguments mapping described in
+[UpdateBotAliasRequestTypeDef](./type_defs.md#updatebotaliasrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1027,14 +1289,19 @@ Keyword-only arguments:
   [SentimentAnalysisSettingsTypeDef](./type_defs.md#sentimentanalysissettingstypedef)
 
 Returns
-[UpdateBotAliasResponseTypeDef](./type_defs.md#updatebotaliasresponsetypedef).
+[UpdateBotAliasResponseResponseTypeDef](./type_defs.md#updatebotaliasresponseresponsetypedef).
 
 ### update_bot_locale
+
+Updates the settings that a bot has for a specific locale.
 
 Type annotations for `boto3.client("lexv2-models").update_bot_locale` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.update_bot_locale](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot_locale)
+
+Arguments mapping described in
+[UpdateBotLocaleRequestTypeDef](./type_defs.md#updatebotlocalerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1046,14 +1313,19 @@ Keyword-only arguments:
 - `voiceSettings`: [VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef)
 
 Returns
-[UpdateBotLocaleResponseTypeDef](./type_defs.md#updatebotlocaleresponsetypedef).
+[UpdateBotLocaleResponseResponseTypeDef](./type_defs.md#updatebotlocaleresponseresponsetypedef).
 
 ### update_export
+
+Updates the password used to protect an export zip archive.
 
 Type annotations for `boto3.client("lexv2-models").update_export` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.update_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_export)
+
+Arguments mapping described in
+[UpdateExportRequestTypeDef](./type_defs.md#updateexportrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1061,14 +1333,19 @@ Keyword-only arguments:
 - `filePassword`: `str`
 
 Returns
-[UpdateExportResponseTypeDef](./type_defs.md#updateexportresponsetypedef).
+[UpdateExportResponseResponseTypeDef](./type_defs.md#updateexportresponseresponsetypedef).
 
 ### update_intent
+
+Updates the settings for an intent.
 
 Type annotations for `boto3.client("lexv2-models").update_intent` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.update_intent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_intent)
+
+Arguments mapping described in
+[UpdateIntentRequestTypeDef](./type_defs.md#updateintentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1099,15 +1376,20 @@ Keyword-only arguments:
   [KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef)
 
 Returns
-[UpdateIntentResponseTypeDef](./type_defs.md#updateintentresponsetypedef).
+[UpdateIntentResponseResponseTypeDef](./type_defs.md#updateintentresponseresponsetypedef).
 
 ### update_resource_policy
+
+Replaces the existing resource policy for a bot or bot alias with a new one.
 
 Type annotations for `boto3.client("lexv2-models").update_resource_policy`
 method.
 
 Boto3 documentation:
 [LexModelsV2.Client.update_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_resource_policy)
+
+Arguments mapping described in
+[UpdateResourcePolicyRequestTypeDef](./type_defs.md#updateresourcepolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1116,14 +1398,19 @@ Keyword-only arguments:
 - `expectedRevisionId`: `str`
 
 Returns
-[UpdateResourcePolicyResponseTypeDef](./type_defs.md#updateresourcepolicyresponsetypedef).
+[UpdateResourcePolicyResponseResponseTypeDef](./type_defs.md#updateresourcepolicyresponseresponsetypedef).
 
 ### update_slot
+
+Updates the settings for a slot.
 
 Type annotations for `boto3.client("lexv2-models").update_slot` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.update_slot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_slot)
+
+Arguments mapping described in
+[UpdateSlotRequestTypeDef](./type_defs.md#updateslotrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1143,14 +1430,20 @@ Keyword-only arguments:
 - `multipleValuesSetting`:
   [MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef)
 
-Returns [UpdateSlotResponseTypeDef](./type_defs.md#updateslotresponsetypedef).
+Returns
+[UpdateSlotResponseResponseTypeDef](./type_defs.md#updateslotresponseresponsetypedef).
 
 ### update_slot_type
+
+Updates the configuration of an existing slot type.
 
 Type annotations for `boto3.client("lexv2-models").update_slot_type` method.
 
 Boto3 documentation:
 [LexModelsV2.Client.update_slot_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_slot_type)
+
+Arguments mapping described in
+[UpdateSlotTypeRequestTypeDef](./type_defs.md#updateslottyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -1168,4 +1461,4 @@ Keyword-only arguments:
 - `parentSlotTypeSignature`: `str`
 
 Returns
-[UpdateSlotTypeResponseTypeDef](./type_defs.md#updateslottyperesponsetypedef).
+[UpdateSlotTypeResponseResponseTypeDef](./type_defs.md#updateslottyperesponseresponsetypedef).

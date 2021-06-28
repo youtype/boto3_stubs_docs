@@ -83,16 +83,23 @@ Exceptions:
 
 ### associate_admin_account
 
+Sets the AWS Firewall Manager administrator account.
+
 Type annotations for `boto3.client("fms").associate_admin_account` method.
 
 Boto3 documentation:
 [FMS.Client.associate_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.associate_admin_account)
+
+Arguments mapping described in
+[AssociateAdminAccountRequestTypeDef](./type_defs.md#associateadminaccountrequesttypedef).
 
 Keyword-only arguments:
 
 - `AdminAccount`: `str` *(required)*
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("fms").can_paginate` method.
 
@@ -107,16 +114,25 @@ Returns `bool`.
 
 ### delete_apps_list
 
+Permanently deletes an AWS Firewall Manager applications list.
+
 Type annotations for `boto3.client("fms").delete_apps_list` method.
 
 Boto3 documentation:
 [FMS.Client.delete_apps_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_apps_list)
+
+Arguments mapping described in
+[DeleteAppsListRequestTypeDef](./type_defs.md#deleteappslistrequesttypedef).
 
 Keyword-only arguments:
 
 - `ListId`: `str` *(required)*
 
 ### delete_notification_channel
+
+Deletes an AWS Firewall Manager association with the IAM role and the Amazon
+Simple Notification Service (SNS) topic that is used to record AWS Firewall
+Manager SNS logs.
 
 Type annotations for `boto3.client("fms").delete_notification_channel` method.
 
@@ -125,10 +141,15 @@ Boto3 documentation:
 
 ### delete_policy
 
+Permanently deletes an AWS Firewall Manager policy.
+
 Type annotations for `boto3.client("fms").delete_policy` method.
 
 Boto3 documentation:
 [FMS.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_policy)
+
+Arguments mapping described in
+[DeletePolicyRequestTypeDef](./type_defs.md#deletepolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -137,10 +158,15 @@ Keyword-only arguments:
 
 ### delete_protocols_list
 
+Permanently deletes an AWS Firewall Manager protocols list.
+
 Type annotations for `boto3.client("fms").delete_protocols_list` method.
 
 Boto3 documentation:
 [FMS.Client.delete_protocols_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_protocols_list)
+
+Arguments mapping described in
+[DeleteProtocolsListRequestTypeDef](./type_defs.md#deleteprotocolslistrequesttypedef).
 
 Keyword-only arguments:
 
@@ -148,12 +174,17 @@ Keyword-only arguments:
 
 ### disassociate_admin_account
 
+Disassociates the account that has been set as the AWS Firewall Manager
+administrator account.
+
 Type annotations for `boto3.client("fms").disassociate_admin_account` method.
 
 Boto3 documentation:
 [FMS.Client.disassociate_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.disassociate_admin_account)
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("fms").generate_presigned_url` method.
 
@@ -171,20 +202,28 @@ Returns `str`.
 
 ### get_admin_account
 
+Returns the AWS Organizations master account that is associated with AWS
+Firewall Manager as the AWS Firewall Manager administrator.
+
 Type annotations for `boto3.client("fms").get_admin_account` method.
 
 Boto3 documentation:
 [FMS.Client.get_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_admin_account)
 
 Returns
-[GetAdminAccountResponseTypeDef](./type_defs.md#getadminaccountresponsetypedef).
+[GetAdminAccountResponseResponseTypeDef](./type_defs.md#getadminaccountresponseresponsetypedef).
 
 ### get_apps_list
+
+Returns information about the specified AWS Firewall Manager applications list.
 
 Type annotations for `boto3.client("fms").get_apps_list` method.
 
 Boto3 documentation:
 [FMS.Client.get_apps_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_apps_list)
+
+Arguments mapping described in
+[GetAppsListRequestTypeDef](./type_defs.md#getappslistrequesttypedef).
 
 Keyword-only arguments:
 
@@ -192,14 +231,19 @@ Keyword-only arguments:
 - `DefaultList`: `bool`
 
 Returns
-[GetAppsListResponseTypeDef](./type_defs.md#getappslistresponsetypedef).
+[GetAppsListResponseResponseTypeDef](./type_defs.md#getappslistresponseresponsetypedef).
 
 ### get_compliance_detail
+
+Returns detailed compliance information about the specified member account.
 
 Type annotations for `boto3.client("fms").get_compliance_detail` method.
 
 Boto3 documentation:
 [FMS.Client.get_compliance_detail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_compliance_detail)
+
+Arguments mapping described in
+[GetComplianceDetailRequestTypeDef](./type_defs.md#getcompliancedetailrequesttypedef).
 
 Keyword-only arguments:
 
@@ -207,9 +251,12 @@ Keyword-only arguments:
 - `MemberAccount`: `str` *(required)*
 
 Returns
-[GetComplianceDetailResponseTypeDef](./type_defs.md#getcompliancedetailresponsetypedef).
+[GetComplianceDetailResponseResponseTypeDef](./type_defs.md#getcompliancedetailresponseresponsetypedef).
 
 ### get_notification_channel
+
+Information about the Amazon Simple Notification Service (SNS) topic that is
+used to record AWS Firewall Manager SNS logs.
 
 Type annotations for `boto3.client("fms").get_notification_channel` method.
 
@@ -217,46 +264,63 @@ Boto3 documentation:
 [FMS.Client.get_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_notification_channel)
 
 Returns
-[GetNotificationChannelResponseTypeDef](./type_defs.md#getnotificationchannelresponsetypedef).
+[GetNotificationChannelResponseResponseTypeDef](./type_defs.md#getnotificationchannelresponseresponsetypedef).
 
 ### get_policy
+
+Returns information about the specified AWS Firewall Manager policy.
 
 Type annotations for `boto3.client("fms").get_policy` method.
 
 Boto3 documentation:
 [FMS.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_policy)
 
+Arguments mapping described in
+[GetPolicyRequestTypeDef](./type_defs.md#getpolicyrequesttypedef).
+
 Keyword-only arguments:
 
 - `PolicyId`: `str` *(required)*
 
-Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
+Returns
+[GetPolicyResponseResponseTypeDef](./type_defs.md#getpolicyresponseresponsetypedef).
 
 ### get_protection_status
+
+If you created a Shield Advanced policy, returns policy-level attack summary
+information in the event of a potential DDoS attack.
 
 Type annotations for `boto3.client("fms").get_protection_status` method.
 
 Boto3 documentation:
 [FMS.Client.get_protection_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_protection_status)
 
+Arguments mapping described in
+[GetProtectionStatusRequestTypeDef](./type_defs.md#getprotectionstatusrequesttypedef).
+
 Keyword-only arguments:
 
 - `PolicyId`: `str` *(required)*
 - `MemberAccountId`: `str`
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[GetProtectionStatusResponseTypeDef](./type_defs.md#getprotectionstatusresponsetypedef).
+[GetProtectionStatusResponseResponseTypeDef](./type_defs.md#getprotectionstatusresponseresponsetypedef).
 
 ### get_protocols_list
+
+Returns information about the specified AWS Firewall Manager protocols list.
 
 Type annotations for `boto3.client("fms").get_protocols_list` method.
 
 Boto3 documentation:
 [FMS.Client.get_protocols_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_protocols_list)
+
+Arguments mapping described in
+[GetProtocolsListRequestTypeDef](./type_defs.md#getprotocolslistrequesttypedef).
 
 Keyword-only arguments:
 
@@ -264,14 +328,20 @@ Keyword-only arguments:
 - `DefaultList`: `bool`
 
 Returns
-[GetProtocolsListResponseTypeDef](./type_defs.md#getprotocolslistresponsetypedef).
+[GetProtocolsListResponseResponseTypeDef](./type_defs.md#getprotocolslistresponseresponsetypedef).
 
 ### get_violation_details
+
+Retrieves violations for a resource based on the specified AWS Firewall Manager
+policy and AWS account.
 
 Type annotations for `boto3.client("fms").get_violation_details` method.
 
 Boto3 documentation:
 [FMS.Client.get_violation_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.get_violation_details)
+
+Arguments mapping described in
+[GetViolationDetailsRequestTypeDef](./type_defs.md#getviolationdetailsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -281,14 +351,19 @@ Keyword-only arguments:
 - `ResourceType`: `str` *(required)*
 
 Returns
-[GetViolationDetailsResponseTypeDef](./type_defs.md#getviolationdetailsresponsetypedef).
+[GetViolationDetailsResponseResponseTypeDef](./type_defs.md#getviolationdetailsresponseresponsetypedef).
 
 ### list_apps_lists
+
+Returns an array of `AppsListDataSummary` objects.
 
 Type annotations for `boto3.client("fms").list_apps_lists` method.
 
 Boto3 documentation:
 [FMS.Client.list_apps_lists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_apps_lists)
+
+Arguments mapping described in
+[ListAppsListsRequestTypeDef](./type_defs.md#listappslistsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -297,14 +372,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAppsListsResponseTypeDef](./type_defs.md#listappslistsresponsetypedef).
+[ListAppsListsResponseResponseTypeDef](./type_defs.md#listappslistsresponseresponsetypedef).
 
 ### list_compliance_status
+
+Returns an array of `PolicyComplianceStatus` objects.
 
 Type annotations for `boto3.client("fms").list_compliance_status` method.
 
 Boto3 documentation:
 [FMS.Client.list_compliance_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_compliance_status)
+
+Arguments mapping described in
+[ListComplianceStatusRequestTypeDef](./type_defs.md#listcompliancestatusrequesttypedef).
 
 Keyword-only arguments:
 
@@ -313,44 +393,60 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListComplianceStatusResponseTypeDef](./type_defs.md#listcompliancestatusresponsetypedef).
+[ListComplianceStatusResponseResponseTypeDef](./type_defs.md#listcompliancestatusresponseresponsetypedef).
 
 ### list_member_accounts
+
+Returns a `MemberAccounts` object that lists the member accounts in the
+administrator's AWS organization.
 
 Type annotations for `boto3.client("fms").list_member_accounts` method.
 
 Boto3 documentation:
 [FMS.Client.list_member_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_member_accounts)
 
+Arguments mapping described in
+[ListMemberAccountsRequestTypeDef](./type_defs.md#listmemberaccountsrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListMemberAccountsResponseTypeDef](./type_defs.md#listmemberaccountsresponsetypedef).
+[ListMemberAccountsResponseResponseTypeDef](./type_defs.md#listmemberaccountsresponseresponsetypedef).
 
 ### list_policies
+
+Returns an array of `PolicySummary` objects.
 
 Type annotations for `boto3.client("fms").list_policies` method.
 
 Boto3 documentation:
 [FMS.Client.list_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_policies)
 
+Arguments mapping described in
+[ListPoliciesRequestTypeDef](./type_defs.md#listpoliciesrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef).
+[ListPoliciesResponseResponseTypeDef](./type_defs.md#listpoliciesresponseresponsetypedef).
 
 ### list_protocols_lists
+
+Returns an array of `ProtocolsListDataSummary` objects.
 
 Type annotations for `boto3.client("fms").list_protocols_lists` method.
 
 Boto3 documentation:
 [FMS.Client.list_protocols_lists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_protocols_lists)
+
+Arguments mapping described in
+[ListProtocolsListsRequestTypeDef](./type_defs.md#listprotocolslistsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -359,28 +455,38 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListProtocolsListsResponseTypeDef](./type_defs.md#listprotocolslistsresponsetypedef).
+[ListProtocolsListsResponseResponseTypeDef](./type_defs.md#listprotocolslistsresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Retrieves the list of tags for the specified AWS resource.
 
 Type annotations for `boto3.client("fms").list_tags_for_resource` method.
 
 Boto3 documentation:
 [FMS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### put_apps_list
+
+Creates an AWS Firewall Manager applications list.
 
 Type annotations for `boto3.client("fms").put_apps_list` method.
 
 Boto3 documentation:
 [FMS.Client.put_apps_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_apps_list)
+
+Arguments mapping described in
+[PutAppsListRequestTypeDef](./type_defs.md#putappslistrequesttypedef).
 
 Keyword-only arguments:
 
@@ -389,14 +495,20 @@ Keyword-only arguments:
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[PutAppsListResponseTypeDef](./type_defs.md#putappslistresponsetypedef).
+[PutAppsListResponseResponseTypeDef](./type_defs.md#putappslistresponseresponsetypedef).
 
 ### put_notification_channel
+
+Designates the IAM role and Amazon Simple Notification Service (SNS) topic that
+AWS Firewall Manager uses to record SNS logs.
 
 Type annotations for `boto3.client("fms").put_notification_channel` method.
 
 Boto3 documentation:
 [FMS.Client.put_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_notification_channel)
+
+Arguments mapping described in
+[PutNotificationChannelRequestTypeDef](./type_defs.md#putnotificationchannelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -405,24 +517,35 @@ Keyword-only arguments:
 
 ### put_policy
 
+Creates an AWS Firewall Manager policy.
+
 Type annotations for `boto3.client("fms").put_policy` method.
 
 Boto3 documentation:
 [FMS.Client.put_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_policy)
+
+Arguments mapping described in
+[PutPolicyRequestTypeDef](./type_defs.md#putpolicyrequesttypedef).
 
 Keyword-only arguments:
 
 - `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef) *(required)*
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns [PutPolicyResponseTypeDef](./type_defs.md#putpolicyresponsetypedef).
+Returns
+[PutPolicyResponseResponseTypeDef](./type_defs.md#putpolicyresponseresponsetypedef).
 
 ### put_protocols_list
+
+Creates an AWS Firewall Manager protocols list.
 
 Type annotations for `boto3.client("fms").put_protocols_list` method.
 
 Boto3 documentation:
 [FMS.Client.put_protocols_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.put_protocols_list)
+
+Arguments mapping described in
+[PutProtocolsListRequestTypeDef](./type_defs.md#putprotocolslistrequesttypedef).
 
 Keyword-only arguments:
 
@@ -432,14 +555,19 @@ Keyword-only arguments:
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[PutProtocolsListResponseTypeDef](./type_defs.md#putprotocolslistresponsetypedef).
+[PutProtocolsListResponseResponseTypeDef](./type_defs.md#putprotocolslistresponseresponsetypedef).
 
 ### tag_resource
+
+Adds one or more tags to an AWS resource.
 
 Type annotations for `boto3.client("fms").tag_resource` method.
 
 Boto3 documentation:
 [FMS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -450,10 +578,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Removes one or more tags from an AWS resource.
+
 Type annotations for `boto3.client("fms").untag_resource` method.
 
 Boto3 documentation:
 [FMS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 

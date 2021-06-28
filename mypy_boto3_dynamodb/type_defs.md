@@ -20,12 +20,17 @@ type annotations stubs module
   - [BackupDescriptionTypeDef](#backupdescriptiontypedef)
   - [BackupDetailsTypeDef](#backupdetailstypedef)
   - [BackupSummaryTypeDef](#backupsummarytypedef)
-  - [BatchExecuteStatementOutputTypeDef](#batchexecutestatementoutputtypedef)
-  - [BatchGetItemOutputTypeDef](#batchgetitemoutputtypedef)
+  - [BatchExecuteStatementInputTypeDef](#batchexecutestatementinputtypedef)
+  - [BatchExecuteStatementOutputResponseTypeDef](#batchexecutestatementoutputresponsetypedef)
+  - [BatchGetItemInputServiceResourceTypeDef](#batchgetiteminputserviceresourcetypedef)
+  - [BatchGetItemInputTypeDef](#batchgetiteminputtypedef)
+  - [BatchGetItemOutputResponseTypeDef](#batchgetitemoutputresponsetypedef)
   - [BatchStatementErrorTypeDef](#batchstatementerrortypedef)
   - [BatchStatementRequestTypeDef](#batchstatementrequesttypedef)
   - [BatchStatementResponseTypeDef](#batchstatementresponsetypedef)
-  - [BatchWriteItemOutputTypeDef](#batchwriteitemoutputtypedef)
+  - [BatchWriteItemInputServiceResourceTypeDef](#batchwriteiteminputserviceresourcetypedef)
+  - [BatchWriteItemInputTypeDef](#batchwriteiteminputtypedef)
+  - [BatchWriteItemOutputResponseTypeDef](#batchwriteitemoutputresponsetypedef)
   - [BillingModeSummaryTypeDef](#billingmodesummarytypedef)
   - [CapacityTypeDef](#capacitytypedef)
   - [ConditionCheckTypeDef](#conditionchecktypedef)
@@ -33,41 +38,64 @@ type annotations stubs module
   - [ConsumedCapacityTypeDef](#consumedcapacitytypedef)
   - [ContinuousBackupsDescriptionTypeDef](#continuousbackupsdescriptiontypedef)
   - [ContributorInsightsSummaryTypeDef](#contributorinsightssummarytypedef)
-  - [CreateBackupOutputTypeDef](#createbackupoutputtypedef)
+  - [CreateBackupInputTypeDef](#createbackupinputtypedef)
+  - [CreateBackupOutputResponseTypeDef](#createbackupoutputresponsetypedef)
   - [CreateGlobalSecondaryIndexActionTypeDef](#createglobalsecondaryindexactiontypedef)
-  - [CreateGlobalTableOutputTypeDef](#createglobaltableoutputtypedef)
+  - [CreateGlobalTableInputTypeDef](#createglobaltableinputtypedef)
+  - [CreateGlobalTableOutputResponseTypeDef](#createglobaltableoutputresponsetypedef)
   - [CreateReplicaActionTypeDef](#createreplicaactiontypedef)
   - [CreateReplicationGroupMemberActionTypeDef](#createreplicationgroupmemberactiontypedef)
-  - [CreateTableOutputTypeDef](#createtableoutputtypedef)
-  - [DeleteBackupOutputTypeDef](#deletebackupoutputtypedef)
+  - [CreateTableInputServiceResourceTypeDef](#createtableinputserviceresourcetypedef)
+  - [CreateTableInputTypeDef](#createtableinputtypedef)
+  - [CreateTableOutputResponseTypeDef](#createtableoutputresponsetypedef)
+  - [DeleteBackupInputTypeDef](#deletebackupinputtypedef)
+  - [DeleteBackupOutputResponseTypeDef](#deletebackupoutputresponsetypedef)
   - [DeleteGlobalSecondaryIndexActionTypeDef](#deleteglobalsecondaryindexactiontypedef)
-  - [DeleteItemOutputTypeDef](#deleteitemoutputtypedef)
+  - [DeleteItemInputTableTypeDef](#deleteiteminputtabletypedef)
+  - [DeleteItemInputTypeDef](#deleteiteminputtypedef)
+  - [DeleteItemOutputResponseTypeDef](#deleteitemoutputresponsetypedef)
   - [DeleteReplicaActionTypeDef](#deletereplicaactiontypedef)
   - [DeleteReplicationGroupMemberActionTypeDef](#deletereplicationgroupmemberactiontypedef)
   - [DeleteRequestTypeDef](#deleterequesttypedef)
-  - [DeleteTableOutputTypeDef](#deletetableoutputtypedef)
+  - [DeleteTableInputTypeDef](#deletetableinputtypedef)
+  - [DeleteTableOutputResponseTypeDef](#deletetableoutputresponsetypedef)
   - [DeleteTypeDef](#deletetypedef)
-  - [DescribeBackupOutputTypeDef](#describebackupoutputtypedef)
-  - [DescribeContinuousBackupsOutputTypeDef](#describecontinuousbackupsoutputtypedef)
-  - [DescribeContributorInsightsOutputTypeDef](#describecontributorinsightsoutputtypedef)
-  - [DescribeEndpointsResponseTypeDef](#describeendpointsresponsetypedef)
-  - [DescribeExportOutputTypeDef](#describeexportoutputtypedef)
-  - [DescribeGlobalTableOutputTypeDef](#describeglobaltableoutputtypedef)
-  - [DescribeGlobalTableSettingsOutputTypeDef](#describeglobaltablesettingsoutputtypedef)
-  - [DescribeKinesisStreamingDestinationOutputTypeDef](#describekinesisstreamingdestinationoutputtypedef)
-  - [DescribeLimitsOutputTypeDef](#describelimitsoutputtypedef)
-  - [DescribeTableOutputTypeDef](#describetableoutputtypedef)
-  - [DescribeTableReplicaAutoScalingOutputTypeDef](#describetablereplicaautoscalingoutputtypedef)
-  - [DescribeTimeToLiveOutputTypeDef](#describetimetoliveoutputtypedef)
+  - [DescribeBackupInputTypeDef](#describebackupinputtypedef)
+  - [DescribeBackupOutputResponseTypeDef](#describebackupoutputresponsetypedef)
+  - [DescribeContinuousBackupsInputTypeDef](#describecontinuousbackupsinputtypedef)
+  - [DescribeContinuousBackupsOutputResponseTypeDef](#describecontinuousbackupsoutputresponsetypedef)
+  - [DescribeContributorInsightsInputTypeDef](#describecontributorinsightsinputtypedef)
+  - [DescribeContributorInsightsOutputResponseTypeDef](#describecontributorinsightsoutputresponsetypedef)
+  - [DescribeEndpointsResponseResponseTypeDef](#describeendpointsresponseresponsetypedef)
+  - [DescribeExportInputTypeDef](#describeexportinputtypedef)
+  - [DescribeExportOutputResponseTypeDef](#describeexportoutputresponsetypedef)
+  - [DescribeGlobalTableInputTypeDef](#describeglobaltableinputtypedef)
+  - [DescribeGlobalTableOutputResponseTypeDef](#describeglobaltableoutputresponsetypedef)
+  - [DescribeGlobalTableSettingsInputTypeDef](#describeglobaltablesettingsinputtypedef)
+  - [DescribeGlobalTableSettingsOutputResponseTypeDef](#describeglobaltablesettingsoutputresponsetypedef)
+  - [DescribeKinesisStreamingDestinationInputTypeDef](#describekinesisstreamingdestinationinputtypedef)
+  - [DescribeKinesisStreamingDestinationOutputResponseTypeDef](#describekinesisstreamingdestinationoutputresponsetypedef)
+  - [DescribeLimitsOutputResponseTypeDef](#describelimitsoutputresponsetypedef)
+  - [DescribeTableInputTypeDef](#describetableinputtypedef)
+  - [DescribeTableOutputResponseTypeDef](#describetableoutputresponsetypedef)
+  - [DescribeTableReplicaAutoScalingInputTypeDef](#describetablereplicaautoscalinginputtypedef)
+  - [DescribeTableReplicaAutoScalingOutputResponseTypeDef](#describetablereplicaautoscalingoutputresponsetypedef)
+  - [DescribeTimeToLiveInputTypeDef](#describetimetoliveinputtypedef)
+  - [DescribeTimeToLiveOutputResponseTypeDef](#describetimetoliveoutputresponsetypedef)
   - [EndpointTypeDef](#endpointtypedef)
-  - [ExecuteStatementOutputTypeDef](#executestatementoutputtypedef)
-  - [ExecuteTransactionOutputTypeDef](#executetransactionoutputtypedef)
+  - [ExecuteStatementInputTypeDef](#executestatementinputtypedef)
+  - [ExecuteStatementOutputResponseTypeDef](#executestatementoutputresponsetypedef)
+  - [ExecuteTransactionInputTypeDef](#executetransactioninputtypedef)
+  - [ExecuteTransactionOutputResponseTypeDef](#executetransactionoutputresponsetypedef)
   - [ExpectedAttributeValueTypeDef](#expectedattributevaluetypedef)
   - [ExportDescriptionTypeDef](#exportdescriptiontypedef)
   - [ExportSummaryTypeDef](#exportsummarytypedef)
-  - [ExportTableToPointInTimeOutputTypeDef](#exporttabletopointintimeoutputtypedef)
+  - [ExportTableToPointInTimeInputTypeDef](#exporttabletopointintimeinputtypedef)
+  - [ExportTableToPointInTimeOutputResponseTypeDef](#exporttabletopointintimeoutputresponsetypedef)
   - [FailureExceptionTypeDef](#failureexceptiontypedef)
-  - [GetItemOutputTypeDef](#getitemoutputtypedef)
+  - [GetItemInputTableTypeDef](#getiteminputtabletypedef)
+  - [GetItemInputTypeDef](#getiteminputtypedef)
+  - [GetItemOutputResponseTypeDef](#getitemoutputresponsetypedef)
   - [GetTypeDef](#gettypedef)
   - [GlobalSecondaryIndexAutoScalingUpdateTypeDef](#globalsecondaryindexautoscalingupdatetypedef)
   - [GlobalSecondaryIndexDescriptionTypeDef](#globalsecondaryindexdescriptiontypedef)
@@ -82,13 +110,20 @@ type annotations stubs module
   - [KeySchemaElementTypeDef](#keyschemaelementtypedef)
   - [KeysAndAttributesTypeDef](#keysandattributestypedef)
   - [KinesisDataStreamDestinationTypeDef](#kinesisdatastreamdestinationtypedef)
-  - [KinesisStreamingDestinationOutputTypeDef](#kinesisstreamingdestinationoutputtypedef)
-  - [ListBackupsOutputTypeDef](#listbackupsoutputtypedef)
-  - [ListContributorInsightsOutputTypeDef](#listcontributorinsightsoutputtypedef)
-  - [ListExportsOutputTypeDef](#listexportsoutputtypedef)
-  - [ListGlobalTablesOutputTypeDef](#listglobaltablesoutputtypedef)
-  - [ListTablesOutputTypeDef](#listtablesoutputtypedef)
-  - [ListTagsOfResourceOutputTypeDef](#listtagsofresourceoutputtypedef)
+  - [KinesisStreamingDestinationInputTypeDef](#kinesisstreamingdestinationinputtypedef)
+  - [KinesisStreamingDestinationOutputResponseTypeDef](#kinesisstreamingdestinationoutputresponsetypedef)
+  - [ListBackupsInputTypeDef](#listbackupsinputtypedef)
+  - [ListBackupsOutputResponseTypeDef](#listbackupsoutputresponsetypedef)
+  - [ListContributorInsightsInputTypeDef](#listcontributorinsightsinputtypedef)
+  - [ListContributorInsightsOutputResponseTypeDef](#listcontributorinsightsoutputresponsetypedef)
+  - [ListExportsInputTypeDef](#listexportsinputtypedef)
+  - [ListExportsOutputResponseTypeDef](#listexportsoutputresponsetypedef)
+  - [ListGlobalTablesInputTypeDef](#listglobaltablesinputtypedef)
+  - [ListGlobalTablesOutputResponseTypeDef](#listglobaltablesoutputresponsetypedef)
+  - [ListTablesInputTypeDef](#listtablesinputtypedef)
+  - [ListTablesOutputResponseTypeDef](#listtablesoutputresponsetypedef)
+  - [ListTagsOfResourceInputTypeDef](#listtagsofresourceinputtypedef)
+  - [ListTagsOfResourceOutputResponseTypeDef](#listtagsofresourceoutputresponsetypedef)
   - [LocalSecondaryIndexDescriptionTypeDef](#localsecondaryindexdescriptiontypedef)
   - [LocalSecondaryIndexInfoTypeDef](#localsecondaryindexinfotypedef)
   - [LocalSecondaryIndexTypeDef](#localsecondaryindextypedef)
@@ -100,10 +135,14 @@ type annotations stubs module
   - [ProvisionedThroughputDescriptionTypeDef](#provisionedthroughputdescriptiontypedef)
   - [ProvisionedThroughputOverrideTypeDef](#provisionedthroughputoverridetypedef)
   - [ProvisionedThroughputTypeDef](#provisionedthroughputtypedef)
-  - [PutItemOutputTypeDef](#putitemoutputtypedef)
+  - [PutItemInputTableTypeDef](#putiteminputtabletypedef)
+  - [PutItemInputTypeDef](#putiteminputtypedef)
+  - [PutItemOutputResponseTypeDef](#putitemoutputresponsetypedef)
   - [PutRequestTypeDef](#putrequesttypedef)
   - [PutTypeDef](#puttypedef)
-  - [QueryOutputTypeDef](#queryoutputtypedef)
+  - [QueryInputTableTypeDef](#queryinputtabletypedef)
+  - [QueryInputTypeDef](#queryinputtypedef)
+  - [QueryOutputResponseTypeDef](#queryoutputresponsetypedef)
   - [ReplicaAutoScalingDescriptionTypeDef](#replicaautoscalingdescriptiontypedef)
   - [ReplicaAutoScalingUpdateTypeDef](#replicaautoscalingupdatetypedef)
   - [ReplicaDescriptionTypeDef](#replicadescriptiontypedef)
@@ -120,33 +159,53 @@ type annotations stubs module
   - [ReplicationGroupUpdateTypeDef](#replicationgroupupdatetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RestoreSummaryTypeDef](#restoresummarytypedef)
-  - [RestoreTableFromBackupOutputTypeDef](#restoretablefrombackupoutputtypedef)
-  - [RestoreTableToPointInTimeOutputTypeDef](#restoretabletopointintimeoutputtypedef)
+  - [RestoreTableFromBackupInputTypeDef](#restoretablefrombackupinputtypedef)
+  - [RestoreTableFromBackupOutputResponseTypeDef](#restoretablefrombackupoutputresponsetypedef)
+  - [RestoreTableToPointInTimeInputTypeDef](#restoretabletopointintimeinputtypedef)
+  - [RestoreTableToPointInTimeOutputResponseTypeDef](#restoretabletopointintimeoutputresponsetypedef)
   - [SSEDescriptionTypeDef](#ssedescriptiontypedef)
   - [SSESpecificationTypeDef](#ssespecificationtypedef)
-  - [ScanOutputTypeDef](#scanoutputtypedef)
+  - [ScanInputTableTypeDef](#scaninputtabletypedef)
+  - [ScanInputTypeDef](#scaninputtypedef)
+  - [ScanOutputResponseTypeDef](#scanoutputresponsetypedef)
+  - [ServiceResourceTableRequestTypeDef](#serviceresourcetablerequesttypedef)
   - [SourceTableDetailsTypeDef](#sourcetabledetailstypedef)
   - [SourceTableFeatureDetailsTypeDef](#sourcetablefeaturedetailstypedef)
   - [StreamSpecificationTypeDef](#streamspecificationtypedef)
   - [TableAutoScalingDescriptionTypeDef](#tableautoscalingdescriptiontypedef)
+  - [TableBatchWriterRequestTypeDef](#tablebatchwriterrequesttypedef)
   - [TableDescriptionTypeDef](#tabledescriptiontypedef)
+  - [TagResourceInputTypeDef](#tagresourceinputtypedef)
   - [TagTypeDef](#tagtypedef)
   - [TimeToLiveDescriptionTypeDef](#timetolivedescriptiontypedef)
   - [TimeToLiveSpecificationTypeDef](#timetolivespecificationtypedef)
   - [TransactGetItemTypeDef](#transactgetitemtypedef)
-  - [TransactGetItemsOutputTypeDef](#transactgetitemsoutputtypedef)
+  - [TransactGetItemsInputTypeDef](#transactgetitemsinputtypedef)
+  - [TransactGetItemsOutputResponseTypeDef](#transactgetitemsoutputresponsetypedef)
   - [TransactWriteItemTypeDef](#transactwriteitemtypedef)
-  - [TransactWriteItemsOutputTypeDef](#transactwriteitemsoutputtypedef)
-  - [UpdateContinuousBackupsOutputTypeDef](#updatecontinuousbackupsoutputtypedef)
-  - [UpdateContributorInsightsOutputTypeDef](#updatecontributorinsightsoutputtypedef)
+  - [TransactWriteItemsInputTypeDef](#transactwriteitemsinputtypedef)
+  - [TransactWriteItemsOutputResponseTypeDef](#transactwriteitemsoutputresponsetypedef)
+  - [UntagResourceInputTypeDef](#untagresourceinputtypedef)
+  - [UpdateContinuousBackupsInputTypeDef](#updatecontinuousbackupsinputtypedef)
+  - [UpdateContinuousBackupsOutputResponseTypeDef](#updatecontinuousbackupsoutputresponsetypedef)
+  - [UpdateContributorInsightsInputTypeDef](#updatecontributorinsightsinputtypedef)
+  - [UpdateContributorInsightsOutputResponseTypeDef](#updatecontributorinsightsoutputresponsetypedef)
   - [UpdateGlobalSecondaryIndexActionTypeDef](#updateglobalsecondaryindexactiontypedef)
-  - [UpdateGlobalTableOutputTypeDef](#updateglobaltableoutputtypedef)
-  - [UpdateGlobalTableSettingsOutputTypeDef](#updateglobaltablesettingsoutputtypedef)
-  - [UpdateItemOutputTypeDef](#updateitemoutputtypedef)
+  - [UpdateGlobalTableInputTypeDef](#updateglobaltableinputtypedef)
+  - [UpdateGlobalTableOutputResponseTypeDef](#updateglobaltableoutputresponsetypedef)
+  - [UpdateGlobalTableSettingsInputTypeDef](#updateglobaltablesettingsinputtypedef)
+  - [UpdateGlobalTableSettingsOutputResponseTypeDef](#updateglobaltablesettingsoutputresponsetypedef)
+  - [UpdateItemInputTableTypeDef](#updateiteminputtabletypedef)
+  - [UpdateItemInputTypeDef](#updateiteminputtypedef)
+  - [UpdateItemOutputResponseTypeDef](#updateitemoutputresponsetypedef)
   - [UpdateReplicationGroupMemberActionTypeDef](#updatereplicationgroupmemberactiontypedef)
-  - [UpdateTableOutputTypeDef](#updatetableoutputtypedef)
-  - [UpdateTableReplicaAutoScalingOutputTypeDef](#updatetablereplicaautoscalingoutputtypedef)
-  - [UpdateTimeToLiveOutputTypeDef](#updatetimetoliveoutputtypedef)
+  - [UpdateTableInputTableTypeDef](#updatetableinputtabletypedef)
+  - [UpdateTableInputTypeDef](#updatetableinputtypedef)
+  - [UpdateTableOutputResponseTypeDef](#updatetableoutputresponsetypedef)
+  - [UpdateTableReplicaAutoScalingInputTypeDef](#updatetablereplicaautoscalinginputtypedef)
+  - [UpdateTableReplicaAutoScalingOutputResponseTypeDef](#updatetablereplicaautoscalingoutputresponsetypedef)
+  - [UpdateTimeToLiveInputTypeDef](#updatetimetoliveinputtypedef)
+  - [UpdateTimeToLiveOutputResponseTypeDef](#updatetimetoliveoutputresponsetypedef)
   - [UpdateTypeDef](#updatetypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
   - [WriteRequestTypeDef](#writerequesttypedef)
@@ -329,10 +388,21 @@ Optional fields:
 - `BackupType`: [BackupTypeType](./literals.md#backuptypetype)
 - `BackupSizeBytes`: `int`
 
-## BatchExecuteStatementOutputTypeDef
+## BatchExecuteStatementInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import BatchExecuteStatementOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import BatchExecuteStatementInputTypeDef
+```
+
+Required fields:
+
+- `Statements`:
+  `List`\[[BatchStatementRequestTypeDef](./type_defs.md#batchstatementrequesttypedef)\]
+
+## BatchExecuteStatementOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import BatchExecuteStatementOutputResponseTypeDef
 ```
 
 Required fields:
@@ -342,10 +412,42 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchGetItemOutputTypeDef
+## BatchGetItemInputServiceResourceTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import BatchGetItemOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import BatchGetItemInputServiceResourceTypeDef
+```
+
+Required fields:
+
+- `RequestItems`: `Dict`\[`str`,
+  [KeysAndAttributesTypeDef](./type_defs.md#keysandattributestypedef)\]
+
+Optional fields:
+
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
+
+## BatchGetItemInputTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import BatchGetItemInputTypeDef
+```
+
+Required fields:
+
+- `RequestItems`: `Dict`\[`str`,
+  [KeysAndAttributesTypeDef](./type_defs.md#keysandattributestypedef)\]
+
+Optional fields:
+
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
+
+## BatchGetItemOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import BatchGetItemOutputResponseTypeDef
 ```
 
 Required fields:
@@ -406,10 +508,46 @@ Optional fields:
   `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
   `Any`\], `None`\]\]
 
-## BatchWriteItemOutputTypeDef
+## BatchWriteItemInputServiceResourceTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import BatchWriteItemOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import BatchWriteItemInputServiceResourceTypeDef
+```
+
+Required fields:
+
+- `RequestItems`: `Dict`\[`str`,
+  `List`\[[WriteRequestTypeDef](./type_defs.md#writerequesttypedef)\]\]
+
+Optional fields:
+
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
+- `ReturnItemCollectionMetrics`:
+  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
+
+## BatchWriteItemInputTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import BatchWriteItemInputTypeDef
+```
+
+Required fields:
+
+- `RequestItems`: `Dict`\[`str`,
+  `List`\[[WriteRequestTypeDef](./type_defs.md#writerequesttypedef)\]\]
+
+Optional fields:
+
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
+- `ReturnItemCollectionMetrics`:
+  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
+
+## BatchWriteItemOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import BatchWriteItemOutputResponseTypeDef
 ```
 
 Required fields:
@@ -535,10 +673,21 @@ Optional fields:
 - `ContributorInsightsStatus`:
   [ContributorInsightsStatusType](./literals.md#contributorinsightsstatustype)
 
-## CreateBackupOutputTypeDef
+## CreateBackupInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import CreateBackupOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import CreateBackupInputTypeDef
+```
+
+Required fields:
+
+- `TableName`: `str`
+- `BackupName`: `str`
+
+## CreateBackupOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import CreateBackupOutputResponseTypeDef
 ```
 
 Required fields:
@@ -565,10 +714,21 @@ Optional fields:
 - `ProvisionedThroughput`:
   [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
 
-## CreateGlobalTableOutputTypeDef
+## CreateGlobalTableInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import CreateGlobalTableOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import CreateGlobalTableInputTypeDef
+```
+
+Required fields:
+
+- `GlobalTableName`: `str`
+- `ReplicationGroup`: `List`\[[ReplicaTypeDef](./type_defs.md#replicatypedef)\]
+
+## CreateGlobalTableOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import CreateGlobalTableOutputResponseTypeDef
 ```
 
 Required fields:
@@ -606,10 +766,68 @@ Optional fields:
 - `GlobalSecondaryIndexes`:
   `List`\[[ReplicaGlobalSecondaryIndexTypeDef](./type_defs.md#replicaglobalsecondaryindextypedef)\]
 
-## CreateTableOutputTypeDef
+## CreateTableInputServiceResourceTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import CreateTableOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import CreateTableInputServiceResourceTypeDef
+```
+
+Required fields:
+
+- `AttributeDefinitions`:
+  `List`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
+- `TableName`: `str`
+- `KeySchema`:
+  `List`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
+
+Optional fields:
+
+- `LocalSecondaryIndexes`:
+  `List`\[[LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef)\]
+- `GlobalSecondaryIndexes`:
+  `List`\[[GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef)\]
+- `BillingMode`: [BillingModeType](./literals.md#billingmodetype)
+- `ProvisionedThroughput`:
+  [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
+- `StreamSpecification`:
+  [StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef)
+- `SSESpecification`:
+  [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateTableInputTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import CreateTableInputTypeDef
+```
+
+Required fields:
+
+- `AttributeDefinitions`:
+  `List`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
+- `TableName`: `str`
+- `KeySchema`:
+  `List`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
+
+Optional fields:
+
+- `LocalSecondaryIndexes`:
+  `List`\[[LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef)\]
+- `GlobalSecondaryIndexes`:
+  `List`\[[GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef)\]
+- `BillingMode`: [BillingModeType](./literals.md#billingmodetype)
+- `ProvisionedThroughput`:
+  [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
+- `StreamSpecification`:
+  [StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef)
+- `SSESpecification`:
+  [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateTableOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import CreateTableOutputResponseTypeDef
 ```
 
 Required fields:
@@ -619,10 +837,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteBackupOutputTypeDef
+## DeleteBackupInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import DeleteBackupOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import DeleteBackupInputTypeDef
+```
+
+Required fields:
+
+- `BackupArn`: `str`
+
+## DeleteBackupOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import DeleteBackupOutputResponseTypeDef
 ```
 
 Required fields:
@@ -642,10 +870,71 @@ Required fields:
 
 - `IndexName`: `str`
 
-## DeleteItemOutputTypeDef
+## DeleteItemInputTableTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import DeleteItemOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import DeleteItemInputTableTypeDef
+```
+
+Required fields:
+
+- `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
+  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
+  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+
+Optional fields:
+
+- `Expected`: `Dict`\[`str`,
+  [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
+- `ConditionalOperator`:
+  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
+- `ReturnValues`: [ReturnValueType](./literals.md#returnvaluetype)
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
+- `ReturnItemCollectionMetrics`:
+  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
+- `ConditionExpression`: `str`
+- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
+  `Dict`\[`str`, `Any`\], `None`\]\]
+
+## DeleteItemInputTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import DeleteItemInputTypeDef
+```
+
+Required fields:
+
+- `TableName`: `str`
+- `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
+  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
+  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+
+Optional fields:
+
+- `Expected`: `Dict`\[`str`,
+  [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
+- `ConditionalOperator`:
+  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
+- `ReturnValues`: [ReturnValueType](./literals.md#returnvaluetype)
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
+- `ReturnItemCollectionMetrics`:
+  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
+- `ConditionExpression`: `str`
+- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
+  `Dict`\[`str`, `Any`\], `None`\]\]
+
+## DeleteItemOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import DeleteItemOutputResponseTypeDef
 ```
 
 Required fields:
@@ -693,10 +982,20 @@ Required fields:
   `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
   `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
 
-## DeleteTableOutputTypeDef
+## DeleteTableInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import DeleteTableOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import DeleteTableInputTypeDef
+```
+
+Required fields:
+
+- `TableName`: `str`
+
+## DeleteTableOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import DeleteTableOutputResponseTypeDef
 ```
 
 Required fields:
@@ -730,10 +1029,20 @@ Optional fields:
 - `ReturnValuesOnConditionCheckFailure`:
   [ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype)
 
-## DescribeBackupOutputTypeDef
+## DescribeBackupInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import DescribeBackupOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import DescribeBackupInputTypeDef
+```
+
+Required fields:
+
+- `BackupArn`: `str`
+
+## DescribeBackupOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import DescribeBackupOutputResponseTypeDef
 ```
 
 Required fields:
@@ -743,10 +1052,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeContinuousBackupsOutputTypeDef
+## DescribeContinuousBackupsInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import DescribeContinuousBackupsOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import DescribeContinuousBackupsInputTypeDef
+```
+
+Required fields:
+
+- `TableName`: `str`
+
+## DescribeContinuousBackupsOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import DescribeContinuousBackupsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -756,10 +1075,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeContributorInsightsOutputTypeDef
+## DescribeContributorInsightsInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import DescribeContributorInsightsOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import DescribeContributorInsightsInputTypeDef
+```
+
+Required fields:
+
+- `TableName`: `str`
+
+Optional fields:
+
+- `IndexName`: `str`
+
+## DescribeContributorInsightsOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import DescribeContributorInsightsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -775,20 +1108,32 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEndpointsResponseTypeDef
+## DescribeEndpointsResponseResponseTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import DescribeEndpointsResponseTypeDef
+from mypy_boto3_dynamodb.type_defs import DescribeEndpointsResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `Endpoints`: `List`\[[EndpointTypeDef](./type_defs.md#endpointtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeExportOutputTypeDef
+## DescribeExportInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import DescribeExportOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import DescribeExportInputTypeDef
+```
+
+Required fields:
+
+- `ExportArn`: `str`
+
+## DescribeExportOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import DescribeExportOutputResponseTypeDef
 ```
 
 Required fields:
@@ -798,10 +1143,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeGlobalTableOutputTypeDef
+## DescribeGlobalTableInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import DescribeGlobalTableOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import DescribeGlobalTableInputTypeDef
+```
+
+Required fields:
+
+- `GlobalTableName`: `str`
+
+## DescribeGlobalTableOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import DescribeGlobalTableOutputResponseTypeDef
 ```
 
 Required fields:
@@ -811,10 +1166,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeGlobalTableSettingsOutputTypeDef
+## DescribeGlobalTableSettingsInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import DescribeGlobalTableSettingsOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import DescribeGlobalTableSettingsInputTypeDef
+```
+
+Required fields:
+
+- `GlobalTableName`: `str`
+
+## DescribeGlobalTableSettingsOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import DescribeGlobalTableSettingsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -825,10 +1190,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeKinesisStreamingDestinationOutputTypeDef
+## DescribeKinesisStreamingDestinationInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import DescribeKinesisStreamingDestinationOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import DescribeKinesisStreamingDestinationInputTypeDef
+```
+
+Required fields:
+
+- `TableName`: `str`
+
+## DescribeKinesisStreamingDestinationOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import DescribeKinesisStreamingDestinationOutputResponseTypeDef
 ```
 
 Required fields:
@@ -839,10 +1214,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLimitsOutputTypeDef
+## DescribeLimitsOutputResponseTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import DescribeLimitsOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import DescribeLimitsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -854,10 +1229,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTableOutputTypeDef
+## DescribeTableInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import DescribeTableOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import DescribeTableInputTypeDef
+```
+
+Required fields:
+
+- `TableName`: `str`
+
+## DescribeTableOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import DescribeTableOutputResponseTypeDef
 ```
 
 Required fields:
@@ -866,10 +1251,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTableReplicaAutoScalingOutputTypeDef
+## DescribeTableReplicaAutoScalingInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import DescribeTableReplicaAutoScalingOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import DescribeTableReplicaAutoScalingInputTypeDef
+```
+
+Required fields:
+
+- `TableName`: `str`
+
+## DescribeTableReplicaAutoScalingOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import DescribeTableReplicaAutoScalingOutputResponseTypeDef
 ```
 
 Required fields:
@@ -879,10 +1274,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTimeToLiveOutputTypeDef
+## DescribeTimeToLiveInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import DescribeTimeToLiveOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import DescribeTimeToLiveInputTypeDef
+```
+
+Required fields:
+
+- `TableName`: `str`
+
+## DescribeTimeToLiveOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import DescribeTimeToLiveOutputResponseTypeDef
 ```
 
 Required fields:
@@ -903,10 +1308,28 @@ Required fields:
 - `Address`: `str`
 - `CachePeriodInMinutes`: `int`
 
-## ExecuteStatementOutputTypeDef
+## ExecuteStatementInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import ExecuteStatementOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import ExecuteStatementInputTypeDef
+```
+
+Required fields:
+
+- `Statement`: `str`
+
+Optional fields:
+
+- `Parameters`: `List`\[`Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
+  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
+  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+- `ConsistentRead`: `bool`
+- `NextToken`: `str`
+
+## ExecuteStatementOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import ExecuteStatementOutputResponseTypeDef
 ```
 
 Required fields:
@@ -919,10 +1342,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ExecuteTransactionOutputTypeDef
+## ExecuteTransactionInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import ExecuteTransactionOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import ExecuteTransactionInputTypeDef
+```
+
+Required fields:
+
+- `TransactStatements`:
+  `List`\[[ParameterizedStatementTypeDef](./type_defs.md#parameterizedstatementtypedef)\]
+
+Optional fields:
+
+- `ClientRequestToken`: `str`
+
+## ExecuteTransactionOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import ExecuteTransactionOutputResponseTypeDef
 ```
 
 Required fields:
@@ -990,10 +1428,31 @@ Optional fields:
 - `ExportArn`: `str`
 - `ExportStatus`: [ExportStatusType](./literals.md#exportstatustype)
 
-## ExportTableToPointInTimeOutputTypeDef
+## ExportTableToPointInTimeInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import ExportTableToPointInTimeOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import ExportTableToPointInTimeInputTypeDef
+```
+
+Required fields:
+
+- `TableArn`: `str`
+- `S3Bucket`: `str`
+
+Optional fields:
+
+- `ExportTime`: `Union`\[`datetime`, `str`\]
+- `ClientToken`: `str`
+- `S3BucketOwner`: `str`
+- `S3Prefix`: `str`
+- `S3SseAlgorithm`: [S3SseAlgorithmType](./literals.md#s3ssealgorithmtype)
+- `S3SseKmsKeyId`: `str`
+- `ExportFormat`: [ExportFormatType](./literals.md#exportformattype)
+
+## ExportTableToPointInTimeOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import ExportTableToPointInTimeOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1014,10 +1473,53 @@ Optional fields:
 - `ExceptionName`: `str`
 - `ExceptionDescription`: `str`
 
-## GetItemOutputTypeDef
+## GetItemInputTableTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import GetItemOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import GetItemInputTableTypeDef
+```
+
+Required fields:
+
+- `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
+  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
+  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+
+Optional fields:
+
+- `AttributesToGet`: `List`\[`str`\]
+- `ConsistentRead`: `bool`
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
+- `ProjectionExpression`: `str`
+- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
+
+## GetItemInputTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import GetItemInputTypeDef
+```
+
+Required fields:
+
+- `TableName`: `str`
+- `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
+  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
+  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+
+Optional fields:
+
+- `AttributesToGet`: `List`\[`str`\]
+- `ConsistentRead`: `bool`
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
+- `ProjectionExpression`: `str`
+- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
+
+## GetItemOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import GetItemOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1243,10 +1745,21 @@ Optional fields:
   [DestinationStatusType](./literals.md#destinationstatustype)
 - `DestinationStatusDescription`: `str`
 
-## KinesisStreamingDestinationOutputTypeDef
+## KinesisStreamingDestinationInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import KinesisStreamingDestinationOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import KinesisStreamingDestinationInputTypeDef
+```
+
+Required fields:
+
+- `TableName`: `str`
+- `StreamArn`: `str`
+
+## KinesisStreamingDestinationOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import KinesisStreamingDestinationOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1258,10 +1771,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListBackupsOutputTypeDef
+## ListBackupsInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import ListBackupsOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import ListBackupsInputTypeDef
+```
+
+Optional fields:
+
+- `TableName`: `str`
+- `Limit`: `int`
+- `TimeRangeLowerBound`: `Union`\[`datetime`, `str`\]
+- `TimeRangeUpperBound`: `Union`\[`datetime`, `str`\]
+- `ExclusiveStartBackupArn`: `str`
+- `BackupType`: [BackupTypeFilterType](./literals.md#backuptypefiltertype)
+
+## ListBackupsOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import ListBackupsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1272,10 +1800,22 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListContributorInsightsOutputTypeDef
+## ListContributorInsightsInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import ListContributorInsightsOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import ListContributorInsightsInputTypeDef
+```
+
+Optional fields:
+
+- `TableName`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListContributorInsightsOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import ListContributorInsightsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1286,10 +1826,22 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListExportsOutputTypeDef
+## ListExportsInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import ListExportsOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import ListExportsInputTypeDef
+```
+
+Optional fields:
+
+- `TableArn`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListExportsOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import ListExportsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1300,10 +1852,22 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListGlobalTablesOutputTypeDef
+## ListGlobalTablesInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import ListGlobalTablesOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import ListGlobalTablesInputTypeDef
+```
+
+Optional fields:
+
+- `ExclusiveStartGlobalTableName`: `str`
+- `Limit`: `int`
+- `RegionName`: `str`
+
+## ListGlobalTablesOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import ListGlobalTablesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1314,10 +1878,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTablesOutputTypeDef
+## ListTablesInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import ListTablesOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import ListTablesInputTypeDef
+```
+
+Optional fields:
+
+- `ExclusiveStartTableName`: `str`
+- `Limit`: `int`
+
+## ListTablesOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import ListTablesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1327,10 +1902,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsOfResourceOutputTypeDef
+## ListTagsOfResourceInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import ListTagsOfResourceOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import ListTagsOfResourceInputTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+
+## ListTagsOfResourceOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import ListTagsOfResourceOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1479,10 +2068,73 @@ Required fields:
 - `ReadCapacityUnits`: `int`
 - `WriteCapacityUnits`: `int`
 
-## PutItemOutputTypeDef
+## PutItemInputTableTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import PutItemOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import PutItemInputTableTypeDef
+```
+
+Required fields:
+
+- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
+  `Any`\], `None`\]\]
+
+Optional fields:
+
+- `Expected`: `Dict`\[`str`,
+  [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
+- `ReturnValues`: [ReturnValueType](./literals.md#returnvaluetype)
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
+- `ReturnItemCollectionMetrics`:
+  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
+- `ConditionalOperator`:
+  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
+- `ConditionExpression`: `str`
+- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
+  `Dict`\[`str`, `Any`\], `None`\]\]
+
+## PutItemInputTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import PutItemInputTypeDef
+```
+
+Required fields:
+
+- `TableName`: `str`
+- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
+  `Any`\], `None`\]\]
+
+Optional fields:
+
+- `Expected`: `Dict`\[`str`,
+  [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
+- `ReturnValues`: [ReturnValueType](./literals.md#returnvaluetype)
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
+- `ReturnItemCollectionMetrics`:
+  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
+- `ConditionalOperator`:
+  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
+- `ConditionExpression`: `str`
+- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
+  `Dict`\[`str`, `Any`\], `None`\]\]
+
+## PutItemOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import PutItemOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1536,10 +2188,84 @@ Optional fields:
 - `ReturnValuesOnConditionCheckFailure`:
   [ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype)
 
-## QueryOutputTypeDef
+## QueryInputTableTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import QueryOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import QueryInputTableTypeDef
+```
+
+Optional fields:
+
+- `IndexName`: `str`
+- `Select`: [SelectType](./literals.md#selecttype)
+- `AttributesToGet`: `List`\[`str`\]
+- `Limit`: `int`
+- `ConsistentRead`: `bool`
+- `KeyConditions`: `Dict`\[`str`,
+  [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
+- `QueryFilter`: `Dict`\[`str`,
+  [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
+- `ConditionalOperator`:
+  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
+- `ScanIndexForward`: `bool`
+- `ExclusiveStartKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
+  `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
+  `Any`\], `None`\]\]
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
+- `ProjectionExpression`: `str`
+- `FilterExpression`: `Union`\[`str`, `ConditionBase`\]
+- `KeyConditionExpression`: `Union`\[`str`, `ConditionBase`\]
+- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
+  `Dict`\[`str`, `Any`\], `None`\]\]
+
+## QueryInputTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import QueryInputTypeDef
+```
+
+Required fields:
+
+- `TableName`: `str`
+
+Optional fields:
+
+- `IndexName`: `str`
+- `Select`: [SelectType](./literals.md#selecttype)
+- `AttributesToGet`: `List`\[`str`\]
+- `Limit`: `int`
+- `ConsistentRead`: `bool`
+- `KeyConditions`: `Dict`\[`str`,
+  [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
+- `QueryFilter`: `Dict`\[`str`,
+  [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
+- `ConditionalOperator`:
+  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
+- `ScanIndexForward`: `bool`
+- `ExclusiveStartKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
+  `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
+  `Any`\], `None`\]\]
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
+- `ProjectionExpression`: `str`
+- `FilterExpression`: `str`
+- `KeyConditionExpression`: `str`
+- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
+  `Dict`\[`str`, `Any`\], `None`\]\]
+
+## QueryOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import QueryOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1812,10 +2538,33 @@ Optional fields:
 - `SourceBackupArn`: `str`
 - `SourceTableArn`: `str`
 
-## RestoreTableFromBackupOutputTypeDef
+## RestoreTableFromBackupInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import RestoreTableFromBackupOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import RestoreTableFromBackupInputTypeDef
+```
+
+Required fields:
+
+- `TargetTableName`: `str`
+- `BackupArn`: `str`
+
+Optional fields:
+
+- `BillingModeOverride`: [BillingModeType](./literals.md#billingmodetype)
+- `GlobalSecondaryIndexOverride`:
+  `List`\[[GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef)\]
+- `LocalSecondaryIndexOverride`:
+  `List`\[[LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef)\]
+- `ProvisionedThroughputOverride`:
+  [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
+- `SSESpecificationOverride`:
+  [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
+
+## RestoreTableFromBackupOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import RestoreTableFromBackupOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1825,10 +2574,36 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RestoreTableToPointInTimeOutputTypeDef
+## RestoreTableToPointInTimeInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import RestoreTableToPointInTimeOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import RestoreTableToPointInTimeInputTypeDef
+```
+
+Required fields:
+
+- `TargetTableName`: `str`
+
+Optional fields:
+
+- `SourceTableArn`: `str`
+- `SourceTableName`: `str`
+- `UseLatestRestorableTime`: `bool`
+- `RestoreDateTime`: `Union`\[`datetime`, `str`\]
+- `BillingModeOverride`: [BillingModeType](./literals.md#billingmodetype)
+- `GlobalSecondaryIndexOverride`:
+  `List`\[[GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef)\]
+- `LocalSecondaryIndexOverride`:
+  `List`\[[LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef)\]
+- `ProvisionedThroughputOverride`:
+  [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
+- `SSESpecificationOverride`:
+  [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
+
+## RestoreTableToPointInTimeOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import RestoreTableToPointInTimeOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1863,10 +2638,80 @@ Optional fields:
 - `SSEType`: [SSETypeType](./literals.md#ssetypetype)
 - `KMSMasterKeyId`: `str`
 
-## ScanOutputTypeDef
+## ScanInputTableTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import ScanOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import ScanInputTableTypeDef
+```
+
+Optional fields:
+
+- `IndexName`: `str`
+- `AttributesToGet`: `List`\[`str`\]
+- `Limit`: `int`
+- `Select`: [SelectType](./literals.md#selecttype)
+- `ScanFilter`: `Dict`\[`str`,
+  [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
+- `ConditionalOperator`:
+  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
+- `ExclusiveStartKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
+  `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
+  `Any`\], `None`\]\]
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
+- `TotalSegments`: `int`
+- `Segment`: `int`
+- `ProjectionExpression`: `str`
+- `FilterExpression`: `Union`\[`str`, `ConditionBase`\]
+- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
+  `Dict`\[`str`, `Any`\], `None`\]\]
+- `ConsistentRead`: `bool`
+
+## ScanInputTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import ScanInputTypeDef
+```
+
+Required fields:
+
+- `TableName`: `str`
+
+Optional fields:
+
+- `IndexName`: `str`
+- `AttributesToGet`: `List`\[`str`\]
+- `Limit`: `int`
+- `Select`: [SelectType](./literals.md#selecttype)
+- `ScanFilter`: `Dict`\[`str`,
+  [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
+- `ConditionalOperator`:
+  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
+- `ExclusiveStartKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
+  `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
+  `Any`\], `None`\]\]
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
+- `TotalSegments`: `int`
+- `Segment`: `int`
+- `ProjectionExpression`: `str`
+- `FilterExpression`: `str`
+- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
+  `Dict`\[`str`, `Any`\], `None`\]\]
+- `ConsistentRead`: `bool`
+
+## ScanOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import ScanOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1885,6 +2730,16 @@ Required fields:
   [ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ServiceResourceTableRequestTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import ServiceResourceTableRequestTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
 
 ## SourceTableDetailsTypeDef
 
@@ -1955,6 +2810,16 @@ Optional fields:
 - `Replicas`:
   `List`\[[ReplicaAutoScalingDescriptionTypeDef](./type_defs.md#replicaautoscalingdescriptiontypedef)\]
 
+## TableBatchWriterRequestTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import TableBatchWriterRequestTypeDef
+```
+
+Optional fields:
+
+- `overwrite_by_pkeys`: `List`\[`str`\]
+
 ## TableDescriptionTypeDef
 
 ```python
@@ -1995,6 +2860,17 @@ Optional fields:
   [SSEDescriptionTypeDef](./type_defs.md#ssedescriptiontypedef)
 - `ArchivalSummary`:
   [ArchivalSummaryTypeDef](./type_defs.md#archivalsummarytypedef)
+
+## TagResourceInputTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import TagResourceInputTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -2040,10 +2916,26 @@ Required fields:
 
 - `Get`: [GetTypeDef](./type_defs.md#gettypedef)
 
-## TransactGetItemsOutputTypeDef
+## TransactGetItemsInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import TransactGetItemsOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import TransactGetItemsInputTypeDef
+```
+
+Required fields:
+
+- `TransactItems`:
+  `List`\[[TransactGetItemTypeDef](./type_defs.md#transactgetitemtypedef)\]
+
+Optional fields:
+
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
+
+## TransactGetItemsOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import TransactGetItemsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -2069,10 +2961,29 @@ Optional fields:
 - `Delete`: [DeleteTypeDef](./type_defs.md#deletetypedef)
 - `Update`: [UpdateTypeDef](./type_defs.md#updatetypedef)
 
-## TransactWriteItemsOutputTypeDef
+## TransactWriteItemsInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import TransactWriteItemsOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import TransactWriteItemsInputTypeDef
+```
+
+Required fields:
+
+- `TransactItems`:
+  `List`\[[TransactWriteItemTypeDef](./type_defs.md#transactwriteitemtypedef)\]
+
+Optional fields:
+
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
+- `ReturnItemCollectionMetrics`:
+  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
+- `ClientRequestToken`: `str`
+
+## TransactWriteItemsOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import TransactWriteItemsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -2084,10 +2995,33 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateContinuousBackupsOutputTypeDef
+## UntagResourceInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import UpdateContinuousBackupsOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import UntagResourceInputTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## UpdateContinuousBackupsInputTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import UpdateContinuousBackupsInputTypeDef
+```
+
+Required fields:
+
+- `TableName`: `str`
+- `PointInTimeRecoverySpecification`:
+  [PointInTimeRecoverySpecificationTypeDef](./type_defs.md#pointintimerecoveryspecificationtypedef)
+
+## UpdateContinuousBackupsOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import UpdateContinuousBackupsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -2097,10 +3031,26 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateContributorInsightsOutputTypeDef
+## UpdateContributorInsightsInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import UpdateContributorInsightsOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import UpdateContributorInsightsInputTypeDef
+```
+
+Required fields:
+
+- `TableName`: `str`
+- `ContributorInsightsAction`:
+  [ContributorInsightsActionType](./literals.md#contributorinsightsactiontype)
+
+Optional fields:
+
+- `IndexName`: `str`
+
+## UpdateContributorInsightsOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import UpdateContributorInsightsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -2124,10 +3074,22 @@ Required fields:
 - `ProvisionedThroughput`:
   [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
 
-## UpdateGlobalTableOutputTypeDef
+## UpdateGlobalTableInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import UpdateGlobalTableOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import UpdateGlobalTableInputTypeDef
+```
+
+Required fields:
+
+- `GlobalTableName`: `str`
+- `ReplicaUpdates`:
+  `List`\[[ReplicaUpdateTypeDef](./type_defs.md#replicaupdatetypedef)\]
+
+## UpdateGlobalTableOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import UpdateGlobalTableOutputResponseTypeDef
 ```
 
 Required fields:
@@ -2137,10 +3099,31 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateGlobalTableSettingsOutputTypeDef
+## UpdateGlobalTableSettingsInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import UpdateGlobalTableSettingsOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import UpdateGlobalTableSettingsInputTypeDef
+```
+
+Required fields:
+
+- `GlobalTableName`: `str`
+
+Optional fields:
+
+- `GlobalTableBillingMode`: [BillingModeType](./literals.md#billingmodetype)
+- `GlobalTableProvisionedWriteCapacityUnits`: `int`
+- `GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate`:
+  [AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef)
+- `GlobalTableGlobalSecondaryIndexSettingsUpdate`:
+  `List`\[[GlobalTableGlobalSecondaryIndexSettingsUpdateTypeDef](./type_defs.md#globaltableglobalsecondaryindexsettingsupdatetypedef)\]
+- `ReplicaSettingsUpdate`:
+  `List`\[[ReplicaSettingsUpdateTypeDef](./type_defs.md#replicasettingsupdatetypedef)\]
+
+## UpdateGlobalTableSettingsOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import UpdateGlobalTableSettingsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -2151,10 +3134,77 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateItemOutputTypeDef
+## UpdateItemInputTableTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import UpdateItemOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import UpdateItemInputTableTypeDef
+```
+
+Required fields:
+
+- `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
+  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
+  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+
+Optional fields:
+
+- `AttributeUpdates`: `Dict`\[`str`,
+  [AttributeValueUpdateTypeDef](./type_defs.md#attributevalueupdatetypedef)\]
+- `Expected`: `Dict`\[`str`,
+  [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
+- `ConditionalOperator`:
+  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
+- `ReturnValues`: [ReturnValueType](./literals.md#returnvaluetype)
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
+- `ReturnItemCollectionMetrics`:
+  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
+- `UpdateExpression`: `str`
+- `ConditionExpression`: `str`
+- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
+  `Dict`\[`str`, `Any`\], `None`\]\]
+
+## UpdateItemInputTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import UpdateItemInputTypeDef
+```
+
+Required fields:
+
+- `TableName`: `str`
+- `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
+  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
+  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+
+Optional fields:
+
+- `AttributeUpdates`: `Dict`\[`str`,
+  [AttributeValueUpdateTypeDef](./type_defs.md#attributevalueupdatetypedef)\]
+- `Expected`: `Dict`\[`str`,
+  [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
+- `ConditionalOperator`:
+  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
+- `ReturnValues`: [ReturnValueType](./literals.md#returnvaluetype)
+- `ReturnConsumedCapacity`:
+  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
+- `ReturnItemCollectionMetrics`:
+  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
+- `UpdateExpression`: `str`
+- `ConditionExpression`: `str`
+- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
+  `Dict`\[`str`, `Any`\], `None`\]\]
+
+## UpdateItemOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import UpdateItemOutputResponseTypeDef
 ```
 
 Required fields:
@@ -2188,10 +3238,58 @@ Optional fields:
 - `GlobalSecondaryIndexes`:
   `List`\[[ReplicaGlobalSecondaryIndexTypeDef](./type_defs.md#replicaglobalsecondaryindextypedef)\]
 
-## UpdateTableOutputTypeDef
+## UpdateTableInputTableTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import UpdateTableOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import UpdateTableInputTableTypeDef
+```
+
+Optional fields:
+
+- `AttributeDefinitions`:
+  `List`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
+- `BillingMode`: [BillingModeType](./literals.md#billingmodetype)
+- `ProvisionedThroughput`:
+  [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
+- `GlobalSecondaryIndexUpdates`:
+  `List`\[[GlobalSecondaryIndexUpdateTypeDef](./type_defs.md#globalsecondaryindexupdatetypedef)\]
+- `StreamSpecification`:
+  [StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef)
+- `SSESpecification`:
+  [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
+- `ReplicaUpdates`:
+  `List`\[[ReplicationGroupUpdateTypeDef](./type_defs.md#replicationgroupupdatetypedef)\]
+
+## UpdateTableInputTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import UpdateTableInputTypeDef
+```
+
+Required fields:
+
+- `TableName`: `str`
+
+Optional fields:
+
+- `AttributeDefinitions`:
+  `List`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
+- `BillingMode`: [BillingModeType](./literals.md#billingmodetype)
+- `ProvisionedThroughput`:
+  [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
+- `GlobalSecondaryIndexUpdates`:
+  `List`\[[GlobalSecondaryIndexUpdateTypeDef](./type_defs.md#globalsecondaryindexupdatetypedef)\]
+- `StreamSpecification`:
+  [StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef)
+- `SSESpecification`:
+  [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
+- `ReplicaUpdates`:
+  `List`\[[ReplicationGroupUpdateTypeDef](./type_defs.md#replicationgroupupdatetypedef)\]
+
+## UpdateTableOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import UpdateTableOutputResponseTypeDef
 ```
 
 Required fields:
@@ -2201,10 +3299,29 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateTableReplicaAutoScalingOutputTypeDef
+## UpdateTableReplicaAutoScalingInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import UpdateTableReplicaAutoScalingOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import UpdateTableReplicaAutoScalingInputTypeDef
+```
+
+Required fields:
+
+- `TableName`: `str`
+
+Optional fields:
+
+- `GlobalSecondaryIndexUpdates`:
+  `List`\[[GlobalSecondaryIndexAutoScalingUpdateTypeDef](./type_defs.md#globalsecondaryindexautoscalingupdatetypedef)\]
+- `ProvisionedWriteCapacityAutoScalingUpdate`:
+  [AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef)
+- `ReplicaUpdates`:
+  `List`\[[ReplicaAutoScalingUpdateTypeDef](./type_defs.md#replicaautoscalingupdatetypedef)\]
+
+## UpdateTableReplicaAutoScalingOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import UpdateTableReplicaAutoScalingOutputResponseTypeDef
 ```
 
 Required fields:
@@ -2214,10 +3331,22 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateTimeToLiveOutputTypeDef
+## UpdateTimeToLiveInputTypeDef
 
 ```python
-from mypy_boto3_dynamodb.type_defs import UpdateTimeToLiveOutputTypeDef
+from mypy_boto3_dynamodb.type_defs import UpdateTimeToLiveInputTypeDef
+```
+
+Required fields:
+
+- `TableName`: `str`
+- `TimeToLiveSpecification`:
+  [TimeToLiveSpecificationTypeDef](./type_defs.md#timetolivespecificationtypedef)
+
+## UpdateTimeToLiveOutputResponseTypeDef
+
+```python
+from mypy_boto3_dynamodb.type_defs import UpdateTimeToLiveOutputResponseTypeDef
 ```
 
 Required fields:

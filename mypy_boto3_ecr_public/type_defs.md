@@ -9,33 +9,50 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 ECRPublic module](#typed-dictionaries-for-boto3-ecrpublic-module)
   - [AuthorizationDataTypeDef](#authorizationdatatypedef)
-  - [BatchCheckLayerAvailabilityResponseTypeDef](#batchchecklayeravailabilityresponsetypedef)
-  - [BatchDeleteImageResponseTypeDef](#batchdeleteimageresponsetypedef)
-  - [CompleteLayerUploadResponseTypeDef](#completelayeruploadresponsetypedef)
-  - [CreateRepositoryResponseTypeDef](#createrepositoryresponsetypedef)
-  - [DeleteRepositoryPolicyResponseTypeDef](#deleterepositorypolicyresponsetypedef)
-  - [DeleteRepositoryResponseTypeDef](#deleterepositoryresponsetypedef)
-  - [DescribeImageTagsResponseTypeDef](#describeimagetagsresponsetypedef)
-  - [DescribeImagesResponseTypeDef](#describeimagesresponsetypedef)
-  - [DescribeRegistriesResponseTypeDef](#describeregistriesresponsetypedef)
-  - [DescribeRepositoriesResponseTypeDef](#describerepositoriesresponsetypedef)
-  - [GetAuthorizationTokenResponseTypeDef](#getauthorizationtokenresponsetypedef)
-  - [GetRegistryCatalogDataResponseTypeDef](#getregistrycatalogdataresponsetypedef)
-  - [GetRepositoryCatalogDataResponseTypeDef](#getrepositorycatalogdataresponsetypedef)
-  - [GetRepositoryPolicyResponseTypeDef](#getrepositorypolicyresponsetypedef)
+  - [BatchCheckLayerAvailabilityRequestTypeDef](#batchchecklayeravailabilityrequesttypedef)
+  - [BatchCheckLayerAvailabilityResponseResponseTypeDef](#batchchecklayeravailabilityresponseresponsetypedef)
+  - [BatchDeleteImageRequestTypeDef](#batchdeleteimagerequesttypedef)
+  - [BatchDeleteImageResponseResponseTypeDef](#batchdeleteimageresponseresponsetypedef)
+  - [CompleteLayerUploadRequestTypeDef](#completelayeruploadrequesttypedef)
+  - [CompleteLayerUploadResponseResponseTypeDef](#completelayeruploadresponseresponsetypedef)
+  - [CreateRepositoryRequestTypeDef](#createrepositoryrequesttypedef)
+  - [CreateRepositoryResponseResponseTypeDef](#createrepositoryresponseresponsetypedef)
+  - [DeleteRepositoryPolicyRequestTypeDef](#deleterepositorypolicyrequesttypedef)
+  - [DeleteRepositoryPolicyResponseResponseTypeDef](#deleterepositorypolicyresponseresponsetypedef)
+  - [DeleteRepositoryRequestTypeDef](#deleterepositoryrequesttypedef)
+  - [DeleteRepositoryResponseResponseTypeDef](#deleterepositoryresponseresponsetypedef)
+  - [DescribeImageTagsRequestTypeDef](#describeimagetagsrequesttypedef)
+  - [DescribeImageTagsResponseResponseTypeDef](#describeimagetagsresponseresponsetypedef)
+  - [DescribeImagesRequestTypeDef](#describeimagesrequesttypedef)
+  - [DescribeImagesResponseResponseTypeDef](#describeimagesresponseresponsetypedef)
+  - [DescribeRegistriesRequestTypeDef](#describeregistriesrequesttypedef)
+  - [DescribeRegistriesResponseResponseTypeDef](#describeregistriesresponseresponsetypedef)
+  - [DescribeRepositoriesRequestTypeDef](#describerepositoriesrequesttypedef)
+  - [DescribeRepositoriesResponseResponseTypeDef](#describerepositoriesresponseresponsetypedef)
+  - [GetAuthorizationTokenResponseResponseTypeDef](#getauthorizationtokenresponseresponsetypedef)
+  - [GetRegistryCatalogDataResponseResponseTypeDef](#getregistrycatalogdataresponseresponsetypedef)
+  - [GetRepositoryCatalogDataRequestTypeDef](#getrepositorycatalogdatarequesttypedef)
+  - [GetRepositoryCatalogDataResponseResponseTypeDef](#getrepositorycatalogdataresponseresponsetypedef)
+  - [GetRepositoryPolicyRequestTypeDef](#getrepositorypolicyrequesttypedef)
+  - [GetRepositoryPolicyResponseResponseTypeDef](#getrepositorypolicyresponseresponsetypedef)
   - [ImageDetailTypeDef](#imagedetailtypedef)
   - [ImageFailureTypeDef](#imagefailuretypedef)
   - [ImageIdentifierTypeDef](#imageidentifiertypedef)
   - [ImageTagDetailTypeDef](#imagetagdetailtypedef)
   - [ImageTypeDef](#imagetypedef)
-  - [InitiateLayerUploadResponseTypeDef](#initiatelayeruploadresponsetypedef)
+  - [InitiateLayerUploadRequestTypeDef](#initiatelayeruploadrequesttypedef)
+  - [InitiateLayerUploadResponseResponseTypeDef](#initiatelayeruploadresponseresponsetypedef)
   - [LayerFailureTypeDef](#layerfailuretypedef)
   - [LayerTypeDef](#layertypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutImageResponseTypeDef](#putimageresponsetypedef)
-  - [PutRegistryCatalogDataResponseTypeDef](#putregistrycatalogdataresponsetypedef)
-  - [PutRepositoryCatalogDataResponseTypeDef](#putrepositorycatalogdataresponsetypedef)
+  - [PutImageRequestTypeDef](#putimagerequesttypedef)
+  - [PutImageResponseResponseTypeDef](#putimageresponseresponsetypedef)
+  - [PutRegistryCatalogDataRequestTypeDef](#putregistrycatalogdatarequesttypedef)
+  - [PutRegistryCatalogDataResponseResponseTypeDef](#putregistrycatalogdataresponseresponsetypedef)
+  - [PutRepositoryCatalogDataRequestTypeDef](#putrepositorycatalogdatarequesttypedef)
+  - [PutRepositoryCatalogDataResponseResponseTypeDef](#putrepositorycatalogdataresponseresponsetypedef)
   - [ReferencedImageDetailTypeDef](#referencedimagedetailtypedef)
   - [RegistryAliasTypeDef](#registryaliastypedef)
   - [RegistryCatalogDataTypeDef](#registrycatalogdatatypedef)
@@ -43,9 +60,14 @@ type annotations stubs module
   - [RepositoryCatalogDataInputTypeDef](#repositorycatalogdatainputtypedef)
   - [RepositoryCatalogDataTypeDef](#repositorycatalogdatatypedef)
   - [RepositoryTypeDef](#repositorytypedef)
-  - [SetRepositoryPolicyResponseTypeDef](#setrepositorypolicyresponsetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [SetRepositoryPolicyRequestTypeDef](#setrepositorypolicyrequesttypedef)
+  - [SetRepositoryPolicyResponseResponseTypeDef](#setrepositorypolicyresponseresponsetypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TagTypeDef](#tagtypedef)
-  - [UploadLayerPartResponseTypeDef](#uploadlayerpartresponsetypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UploadLayerPartRequestTypeDef](#uploadlayerpartrequesttypedef)
+  - [UploadLayerPartResponseResponseTypeDef](#uploadlayerpartresponseresponsetypedef)
 
 ## AuthorizationDataTypeDef
 
@@ -58,172 +80,375 @@ Optional fields:
 - `authorizationToken`: `str`
 - `expiresAt`: `datetime`
 
-## BatchCheckLayerAvailabilityResponseTypeDef
+## BatchCheckLayerAvailabilityRequestTypeDef
 
 ```python
-from mypy_boto3_ecr_public.type_defs import BatchCheckLayerAvailabilityResponseTypeDef
+from mypy_boto3_ecr_public.type_defs import BatchCheckLayerAvailabilityRequestTypeDef
 ```
 
+Required fields:
+
+- `repositoryName`: `str`
+- `layerDigests`: `List`\[`str`\]
+
 Optional fields:
+
+- `registryId`: `str`
+
+## BatchCheckLayerAvailabilityResponseResponseTypeDef
+
+```python
+from mypy_boto3_ecr_public.type_defs import BatchCheckLayerAvailabilityResponseResponseTypeDef
+```
+
+Required fields:
 
 - `layers`: `List`\[[LayerTypeDef](./type_defs.md#layertypedef)\]
 - `failures`:
   `List`\[[LayerFailureTypeDef](./type_defs.md#layerfailuretypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchDeleteImageResponseTypeDef
+## BatchDeleteImageRequestTypeDef
 
 ```python
-from mypy_boto3_ecr_public.type_defs import BatchDeleteImageResponseTypeDef
+from mypy_boto3_ecr_public.type_defs import BatchDeleteImageRequestTypeDef
 ```
 
+Required fields:
+
+- `repositoryName`: `str`
+- `imageIds`:
+  `List`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
+
 Optional fields:
+
+- `registryId`: `str`
+
+## BatchDeleteImageResponseResponseTypeDef
+
+```python
+from mypy_boto3_ecr_public.type_defs import BatchDeleteImageResponseResponseTypeDef
+```
+
+Required fields:
 
 - `imageIds`:
   `List`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
 - `failures`:
   `List`\[[ImageFailureTypeDef](./type_defs.md#imagefailuretypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CompleteLayerUploadResponseTypeDef
+## CompleteLayerUploadRequestTypeDef
 
 ```python
-from mypy_boto3_ecr_public.type_defs import CompleteLayerUploadResponseTypeDef
+from mypy_boto3_ecr_public.type_defs import CompleteLayerUploadRequestTypeDef
 ```
 
+Required fields:
+
+- `repositoryName`: `str`
+- `uploadId`: `str`
+- `layerDigests`: `List`\[`str`\]
+
 Optional fields:
+
+- `registryId`: `str`
+
+## CompleteLayerUploadResponseResponseTypeDef
+
+```python
+from mypy_boto3_ecr_public.type_defs import CompleteLayerUploadResponseResponseTypeDef
+```
+
+Required fields:
 
 - `registryId`: `str`
 - `repositoryName`: `str`
 - `uploadId`: `str`
 - `layerDigest`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRepositoryResponseTypeDef
+## CreateRepositoryRequestTypeDef
 
 ```python
-from mypy_boto3_ecr_public.type_defs import CreateRepositoryResponseTypeDef
+from mypy_boto3_ecr_public.type_defs import CreateRepositoryRequestTypeDef
 ```
 
+Required fields:
+
+- `repositoryName`: `str`
+
 Optional fields:
+
+- `catalogData`:
+  [RepositoryCatalogDataInputTypeDef](./type_defs.md#repositorycatalogdatainputtypedef)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateRepositoryResponseResponseTypeDef
+
+```python
+from mypy_boto3_ecr_public.type_defs import CreateRepositoryResponseResponseTypeDef
+```
+
+Required fields:
 
 - `repository`: [RepositoryTypeDef](./type_defs.md#repositorytypedef)
 - `catalogData`:
   [RepositoryCatalogDataTypeDef](./type_defs.md#repositorycatalogdatatypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteRepositoryPolicyResponseTypeDef
+## DeleteRepositoryPolicyRequestTypeDef
 
 ```python
-from mypy_boto3_ecr_public.type_defs import DeleteRepositoryPolicyResponseTypeDef
+from mypy_boto3_ecr_public.type_defs import DeleteRepositoryPolicyRequestTypeDef
 ```
+
+Required fields:
+
+- `repositoryName`: `str`
 
 Optional fields:
 
 - `registryId`: `str`
+
+## DeleteRepositoryPolicyResponseResponseTypeDef
+
+```python
+from mypy_boto3_ecr_public.type_defs import DeleteRepositoryPolicyResponseResponseTypeDef
+```
+
+Required fields:
+
+- `registryId`: `str`
 - `repositoryName`: `str`
 - `policyText`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteRepositoryResponseTypeDef
+## DeleteRepositoryRequestTypeDef
 
 ```python
-from mypy_boto3_ecr_public.type_defs import DeleteRepositoryResponseTypeDef
+from mypy_boto3_ecr_public.type_defs import DeleteRepositoryRequestTypeDef
 ```
 
+Required fields:
+
+- `repositoryName`: `str`
+
 Optional fields:
+
+- `registryId`: `str`
+- `force`: `bool`
+
+## DeleteRepositoryResponseResponseTypeDef
+
+```python
+from mypy_boto3_ecr_public.type_defs import DeleteRepositoryResponseResponseTypeDef
+```
+
+Required fields:
 
 - `repository`: [RepositoryTypeDef](./type_defs.md#repositorytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeImageTagsResponseTypeDef
+## DescribeImageTagsRequestTypeDef
 
 ```python
-from mypy_boto3_ecr_public.type_defs import DescribeImageTagsResponseTypeDef
+from mypy_boto3_ecr_public.type_defs import DescribeImageTagsRequestTypeDef
 ```
 
+Required fields:
+
+- `repositoryName`: `str`
+
 Optional fields:
+
+- `registryId`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## DescribeImageTagsResponseResponseTypeDef
+
+```python
+from mypy_boto3_ecr_public.type_defs import DescribeImageTagsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `imageTagDetails`:
   `List`\[[ImageTagDetailTypeDef](./type_defs.md#imagetagdetailtypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeImagesResponseTypeDef
+## DescribeImagesRequestTypeDef
 
 ```python
-from mypy_boto3_ecr_public.type_defs import DescribeImagesResponseTypeDef
+from mypy_boto3_ecr_public.type_defs import DescribeImagesRequestTypeDef
 ```
 
+Required fields:
+
+- `repositoryName`: `str`
+
 Optional fields:
+
+- `registryId`: `str`
+- `imageIds`:
+  `List`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## DescribeImagesResponseResponseTypeDef
+
+```python
+from mypy_boto3_ecr_public.type_defs import DescribeImagesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `imageDetails`:
   `List`\[[ImageDetailTypeDef](./type_defs.md#imagedetailtypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeRegistriesResponseTypeDef
+## DescribeRegistriesRequestTypeDef
 
 ```python
-from mypy_boto3_ecr_public.type_defs import DescribeRegistriesResponseTypeDef
+from mypy_boto3_ecr_public.type_defs import DescribeRegistriesRequestTypeDef
+```
+
+Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## DescribeRegistriesResponseResponseTypeDef
+
+```python
+from mypy_boto3_ecr_public.type_defs import DescribeRegistriesResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `registries`: `List`\[[RegistryTypeDef](./type_defs.md#registrytypedef)\]
-
-Optional fields:
-
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeRepositoriesResponseTypeDef
+## DescribeRepositoriesRequestTypeDef
 
 ```python
-from mypy_boto3_ecr_public.type_defs import DescribeRepositoriesResponseTypeDef
+from mypy_boto3_ecr_public.type_defs import DescribeRepositoriesRequestTypeDef
 ```
 
 Optional fields:
+
+- `registryId`: `str`
+- `repositoryNames`: `List`\[`str`\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## DescribeRepositoriesResponseResponseTypeDef
+
+```python
+from mypy_boto3_ecr_public.type_defs import DescribeRepositoriesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `repositories`:
   `List`\[[RepositoryTypeDef](./type_defs.md#repositorytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAuthorizationTokenResponseTypeDef
+## GetAuthorizationTokenResponseResponseTypeDef
 
 ```python
-from mypy_boto3_ecr_public.type_defs import GetAuthorizationTokenResponseTypeDef
+from mypy_boto3_ecr_public.type_defs import GetAuthorizationTokenResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `authorizationData`:
   [AuthorizationDataTypeDef](./type_defs.md#authorizationdatatypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRegistryCatalogDataResponseTypeDef
+## GetRegistryCatalogDataResponseResponseTypeDef
 
 ```python
-from mypy_boto3_ecr_public.type_defs import GetRegistryCatalogDataResponseTypeDef
+from mypy_boto3_ecr_public.type_defs import GetRegistryCatalogDataResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `registryCatalogData`:
   [RegistryCatalogDataTypeDef](./type_defs.md#registrycatalogdatatypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRepositoryCatalogDataResponseTypeDef
-
-```python
-from mypy_boto3_ecr_public.type_defs import GetRepositoryCatalogDataResponseTypeDef
-```
-
-Optional fields:
-
-- `catalogData`:
-  [RepositoryCatalogDataTypeDef](./type_defs.md#repositorycatalogdatatypedef)
-
-## GetRepositoryPolicyResponseTypeDef
+## GetRepositoryCatalogDataRequestTypeDef
 
 ```python
-from mypy_boto3_ecr_public.type_defs import GetRepositoryPolicyResponseTypeDef
+from mypy_boto3_ecr_public.type_defs import GetRepositoryCatalogDataRequestTypeDef
 ```
+
+Required fields:
+
+- `repositoryName`: `str`
 
 Optional fields:
 
 - `registryId`: `str`
+
+## GetRepositoryCatalogDataResponseResponseTypeDef
+
+```python
+from mypy_boto3_ecr_public.type_defs import GetRepositoryCatalogDataResponseResponseTypeDef
+```
+
+Required fields:
+
+- `catalogData`:
+  [RepositoryCatalogDataTypeDef](./type_defs.md#repositorycatalogdatatypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetRepositoryPolicyRequestTypeDef
+
+```python
+from mypy_boto3_ecr_public.type_defs import GetRepositoryPolicyRequestTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+
+Optional fields:
+
+- `registryId`: `str`
+
+## GetRepositoryPolicyResponseResponseTypeDef
+
+```python
+from mypy_boto3_ecr_public.type_defs import GetRepositoryPolicyResponseResponseTypeDef
+```
+
+Required fields:
+
+- `registryId`: `str`
 - `repositoryName`: `str`
 - `policyText`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ImageDetailTypeDef
 
@@ -292,16 +517,32 @@ Optional fields:
 - `imageManifest`: `str`
 - `imageManifestMediaType`: `str`
 
-## InitiateLayerUploadResponseTypeDef
+## InitiateLayerUploadRequestTypeDef
 
 ```python
-from mypy_boto3_ecr_public.type_defs import InitiateLayerUploadResponseTypeDef
+from mypy_boto3_ecr_public.type_defs import InitiateLayerUploadRequestTypeDef
 ```
+
+Required fields:
+
+- `repositoryName`: `str`
 
 Optional fields:
 
+- `registryId`: `str`
+
+## InitiateLayerUploadResponseResponseTypeDef
+
+```python
+from mypy_boto3_ecr_public.type_defs import InitiateLayerUploadResponseResponseTypeDef
+```
+
+Required fields:
+
 - `uploadId`: `str`
 - `partSize`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LayerFailureTypeDef
 
@@ -329,15 +570,27 @@ Optional fields:
 - `layerSize`: `int`
 - `mediaType`: `str`
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_ecr_public.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_ecr_public.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `resourceArn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_ecr_public.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -351,37 +604,87 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## PutImageResponseTypeDef
+## PutImageRequestTypeDef
 
 ```python
-from mypy_boto3_ecr_public.type_defs import PutImageResponseTypeDef
+from mypy_boto3_ecr_public.type_defs import PutImageRequestTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `imageManifest`: `str`
+
+Optional fields:
+
+- `registryId`: `str`
+- `imageManifestMediaType`: `str`
+- `imageTag`: `str`
+- `imageDigest`: `str`
+
+## PutImageResponseResponseTypeDef
+
+```python
+from mypy_boto3_ecr_public.type_defs import PutImageResponseResponseTypeDef
+```
+
+Required fields:
+
+- `image`: [ImageTypeDef](./type_defs.md#imagetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## PutRegistryCatalogDataRequestTypeDef
+
+```python
+from mypy_boto3_ecr_public.type_defs import PutRegistryCatalogDataRequestTypeDef
 ```
 
 Optional fields:
 
-- `image`: [ImageTypeDef](./type_defs.md#imagetypedef)
+- `displayName`: `str`
 
-## PutRegistryCatalogDataResponseTypeDef
+## PutRegistryCatalogDataResponseResponseTypeDef
 
 ```python
-from mypy_boto3_ecr_public.type_defs import PutRegistryCatalogDataResponseTypeDef
+from mypy_boto3_ecr_public.type_defs import PutRegistryCatalogDataResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `registryCatalogData`:
   [RegistryCatalogDataTypeDef](./type_defs.md#registrycatalogdatatypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutRepositoryCatalogDataResponseTypeDef
+## PutRepositoryCatalogDataRequestTypeDef
 
 ```python
-from mypy_boto3_ecr_public.type_defs import PutRepositoryCatalogDataResponseTypeDef
+from mypy_boto3_ecr_public.type_defs import PutRepositoryCatalogDataRequestTypeDef
 ```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `catalogData`:
+  [RepositoryCatalogDataInputTypeDef](./type_defs.md#repositorycatalogdatainputtypedef)
 
 Optional fields:
 
+- `registryId`: `str`
+
+## PutRepositoryCatalogDataResponseResponseTypeDef
+
+```python
+from mypy_boto3_ecr_public.type_defs import PutRepositoryCatalogDataResponseResponseTypeDef
+```
+
+Required fields:
+
 - `catalogData`:
   [RepositoryCatalogDataTypeDef](./type_defs.md#repositorycatalogdatatypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ReferencedImageDetailTypeDef
 
@@ -480,17 +783,60 @@ Optional fields:
 - `repositoryUri`: `str`
 - `createdAt`: `datetime`
 
-## SetRepositoryPolicyResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_ecr_public.type_defs import SetRepositoryPolicyResponseTypeDef
+from mypy_boto3_ecr_public.type_defs import ResponseMetadataTypeDef
 ```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## SetRepositoryPolicyRequestTypeDef
+
+```python
+from mypy_boto3_ecr_public.type_defs import SetRepositoryPolicyRequestTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `policyText`: `str`
 
 Optional fields:
 
 - `registryId`: `str`
+- `force`: `bool`
+
+## SetRepositoryPolicyResponseResponseTypeDef
+
+```python
+from mypy_boto3_ecr_public.type_defs import SetRepositoryPolicyResponseResponseTypeDef
+```
+
+Required fields:
+
+- `registryId`: `str`
 - `repositoryName`: `str`
 - `policyText`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_ecr_public.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -503,15 +849,46 @@ Optional fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## UploadLayerPartResponseTypeDef
+## UntagResourceRequestTypeDef
 
 ```python
-from mypy_boto3_ecr_public.type_defs import UploadLayerPartResponseTypeDef
+from mypy_boto3_ecr_public.type_defs import UntagResourceRequestTypeDef
 ```
 
+Required fields:
+
+- `resourceArn`: `str`
+- `tagKeys`: `List`\[`str`\]
+
+## UploadLayerPartRequestTypeDef
+
+```python
+from mypy_boto3_ecr_public.type_defs import UploadLayerPartRequestTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `uploadId`: `str`
+- `partFirstByte`: `int`
+- `partLastByte`: `int`
+- `layerPartBlob`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+
 Optional fields:
+
+- `registryId`: `str`
+
+## UploadLayerPartResponseResponseTypeDef
+
+```python
+from mypy_boto3_ecr_public.type_defs import UploadLayerPartResponseResponseTypeDef
+```
+
+Required fields:
 
 - `registryId`: `str`
 - `repositoryName`: `str`
 - `uploadId`: `str`
 - `lastByteReceived`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

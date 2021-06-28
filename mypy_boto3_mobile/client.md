@@ -68,6 +68,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("mobile").can_paginate` method.
 
 Boto3 documentation:
@@ -81,10 +83,15 @@ Returns `bool`.
 
 ### create_project
 
+Creates an AWS Mobile Hub project.
+
 Type annotations for `boto3.client("mobile").create_project` method.
 
 Boto3 documentation:
 [Mobile.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.create_project)
+
+Arguments mapping described in
+[CreateProjectRequestTypeDef](./type_defs.md#createprojectrequesttypedef).
 
 Keyword-only arguments:
 
@@ -94,42 +101,57 @@ Keyword-only arguments:
 - `snapshotId`: `str`
 
 Returns
-[CreateProjectResultTypeDef](./type_defs.md#createprojectresulttypedef).
+[CreateProjectResultResponseTypeDef](./type_defs.md#createprojectresultresponsetypedef).
 
 ### delete_project
+
+Delets a project in AWS Mobile Hub.
 
 Type annotations for `boto3.client("mobile").delete_project` method.
 
 Boto3 documentation:
 [Mobile.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.delete_project)
 
+Arguments mapping described in
+[DeleteProjectRequestTypeDef](./type_defs.md#deleteprojectrequesttypedef).
+
 Keyword-only arguments:
 
 - `projectId`: `str` *(required)*
 
 Returns
-[DeleteProjectResultTypeDef](./type_defs.md#deleteprojectresulttypedef).
+[DeleteProjectResultResponseTypeDef](./type_defs.md#deleteprojectresultresponsetypedef).
 
 ### describe_bundle
+
+Get the bundle details for the requested bundle id.
 
 Type annotations for `boto3.client("mobile").describe_bundle` method.
 
 Boto3 documentation:
 [Mobile.Client.describe_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.describe_bundle)
 
+Arguments mapping described in
+[DescribeBundleRequestTypeDef](./type_defs.md#describebundlerequesttypedef).
+
 Keyword-only arguments:
 
 - `bundleId`: `str` *(required)*
 
 Returns
-[DescribeBundleResultTypeDef](./type_defs.md#describebundleresulttypedef).
+[DescribeBundleResultResponseTypeDef](./type_defs.md#describebundleresultresponsetypedef).
 
 ### describe_project
+
+Gets details about a project in AWS Mobile Hub.
 
 Type annotations for `boto3.client("mobile").describe_project` method.
 
 Boto3 documentation:
 [Mobile.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.describe_project)
+
+Arguments mapping described in
+[DescribeProjectRequestTypeDef](./type_defs.md#describeprojectrequesttypedef).
 
 Keyword-only arguments:
 
@@ -137,14 +159,20 @@ Keyword-only arguments:
 - `syncFromResources`: `bool`
 
 Returns
-[DescribeProjectResultTypeDef](./type_defs.md#describeprojectresulttypedef).
+[DescribeProjectResultResponseTypeDef](./type_defs.md#describeprojectresultresponsetypedef).
 
 ### export_bundle
+
+Generates customized software development kit (SDK) and or tool packages used
+to integrate mobile web or mobile app clients with backend AWS resources.
 
 Type annotations for `boto3.client("mobile").export_bundle` method.
 
 Boto3 documentation:
 [Mobile.Client.export_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.export_bundle)
+
+Arguments mapping described in
+[ExportBundleRequestTypeDef](./type_defs.md#exportbundlerequesttypedef).
 
 Keyword-only arguments:
 
@@ -152,23 +180,31 @@ Keyword-only arguments:
 - `projectId`: `str`
 - `platform`: [PlatformType](./literals.md#platformtype)
 
-Returns [ExportBundleResultTypeDef](./type_defs.md#exportbundleresulttypedef).
+Returns
+[ExportBundleResultResponseTypeDef](./type_defs.md#exportbundleresultresponsetypedef).
 
 ### export_project
+
+Exports project configuration to a snapshot which can be downloaded and shared.
 
 Type annotations for `boto3.client("mobile").export_project` method.
 
 Boto3 documentation:
 [Mobile.Client.export_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.export_project)
 
+Arguments mapping described in
+[ExportProjectRequestTypeDef](./type_defs.md#exportprojectrequesttypedef).
+
 Keyword-only arguments:
 
 - `projectId`: `str` *(required)*
 
 Returns
-[ExportProjectResultTypeDef](./type_defs.md#exportprojectresulttypedef).
+[ExportProjectResultResponseTypeDef](./type_defs.md#exportprojectresultresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("mobile").generate_presigned_url` method.
 
@@ -186,38 +222,55 @@ Returns `str`.
 
 ### list_bundles
 
+List all available bundles.
+
 Type annotations for `boto3.client("mobile").list_bundles` method.
 
 Boto3 documentation:
 [Mobile.Client.list_bundles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.list_bundles)
+
+Arguments mapping described in
+[ListBundlesRequestTypeDef](./type_defs.md#listbundlesrequesttypedef).
 
 Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-Returns [ListBundlesResultTypeDef](./type_defs.md#listbundlesresulttypedef).
+Returns
+[ListBundlesResultResponseTypeDef](./type_defs.md#listbundlesresultresponsetypedef).
 
 ### list_projects
+
+Lists projects in AWS Mobile Hub.
 
 Type annotations for `boto3.client("mobile").list_projects` method.
 
 Boto3 documentation:
 [Mobile.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.list_projects)
 
+Arguments mapping described in
+[ListProjectsRequestTypeDef](./type_defs.md#listprojectsrequesttypedef).
+
 Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-Returns [ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef).
+Returns
+[ListProjectsResultResponseTypeDef](./type_defs.md#listprojectsresultresponsetypedef).
 
 ### update_project
+
+Update an existing project.
 
 Type annotations for `boto3.client("mobile").update_project` method.
 
 Boto3 documentation:
 [Mobile.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.update_project)
+
+Arguments mapping described in
+[UpdateProjectRequestTypeDef](./type_defs.md#updateprojectrequesttypedef).
 
 Keyword-only arguments:
 
@@ -225,7 +278,7 @@ Keyword-only arguments:
 - `contents`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 Returns
-[UpdateProjectResultTypeDef](./type_defs.md#updateprojectresulttypedef).
+[UpdateProjectResultResponseTypeDef](./type_defs.md#updateprojectresultresponsetypedef).
 
 ### get_paginator
 

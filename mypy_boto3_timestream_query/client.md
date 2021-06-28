@@ -61,6 +61,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("timestream-query").can_paginate` method.
 
 Boto3 documentation:
@@ -74,19 +76,27 @@ Returns `bool`.
 
 ### cancel_query
 
+Cancels a query that has been issued.
+
 Type annotations for `boto3.client("timestream-query").cancel_query` method.
 
 Boto3 documentation:
 [TimestreamQuery.Client.cancel_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.cancel_query)
+
+Arguments mapping described in
+[CancelQueryRequestTypeDef](./type_defs.md#cancelqueryrequesttypedef).
 
 Keyword-only arguments:
 
 - `QueryId`: `str` *(required)*
 
 Returns
-[CancelQueryResponseTypeDef](./type_defs.md#cancelqueryresponsetypedef).
+[CancelQueryResponseResponseTypeDef](./type_defs.md#cancelqueryresponseresponsetypedef).
 
 ### describe_endpoints
+
+DescribeEndpoints returns a list of available endpoints to make Timestream API
+calls against.
 
 Type annotations for `boto3.client("timestream-query").describe_endpoints`
 method.
@@ -95,9 +105,11 @@ Boto3 documentation:
 [TimestreamQuery.Client.describe_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.describe_endpoints)
 
 Returns
-[DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef).
+[DescribeEndpointsResponseResponseTypeDef](./type_defs.md#describeendpointsresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("timestream-query").generate_presigned_url`
 method.
@@ -116,10 +128,15 @@ Returns `str`.
 
 ### query
 
+Query is a synchronous operation that enables you to execute a query.
+
 Type annotations for `boto3.client("timestream-query").query` method.
 
 Boto3 documentation:
 [TimestreamQuery.Client.query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.query)
+
+Arguments mapping described in
+[QueryRequestTypeDef](./type_defs.md#queryrequesttypedef).
 
 Keyword-only arguments:
 
@@ -128,7 +145,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxRows`: `int`
 
-Returns [QueryResponseTypeDef](./type_defs.md#queryresponsetypedef).
+Returns
+[QueryResponseResponseTypeDef](./type_defs.md#queryresponseresponsetypedef).
 
 ### get_paginator
 

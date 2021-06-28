@@ -22,8 +22,10 @@ type annotations stubs module
   - [AggregatedSourceStatusTypeDef](#aggregatedsourcestatustypedef)
   - [AggregationAuthorizationTypeDef](#aggregationauthorizationtypedef)
   - [BaseConfigurationItemTypeDef](#baseconfigurationitemtypedef)
-  - [BatchGetAggregateResourceConfigResponseTypeDef](#batchgetaggregateresourceconfigresponsetypedef)
-  - [BatchGetResourceConfigResponseTypeDef](#batchgetresourceconfigresponsetypedef)
+  - [BatchGetAggregateResourceConfigRequestTypeDef](#batchgetaggregateresourceconfigrequesttypedef)
+  - [BatchGetAggregateResourceConfigResponseResponseTypeDef](#batchgetaggregateresourceconfigresponseresponsetypedef)
+  - [BatchGetResourceConfigRequestTypeDef](#batchgetresourceconfigrequesttypedef)
+  - [BatchGetResourceConfigResponseResponseTypeDef](#batchgetresourceconfigresponseresponsetypedef)
   - [ComplianceByConfigRuleTypeDef](#compliancebyconfigruletypedef)
   - [ComplianceByResourceTypeDef](#compliancebyresourcetypedef)
   - [ComplianceContributorCountTypeDef](#compliancecontributorcounttypedef)
@@ -49,35 +51,76 @@ type annotations stubs module
   - [ConformancePackInputParameterTypeDef](#conformancepackinputparametertypedef)
   - [ConformancePackRuleComplianceTypeDef](#conformancepackrulecompliancetypedef)
   - [ConformancePackStatusDetailTypeDef](#conformancepackstatusdetailtypedef)
-  - [DeleteRemediationExceptionsResponseTypeDef](#deleteremediationexceptionsresponsetypedef)
-  - [DeliverConfigSnapshotResponseTypeDef](#deliverconfigsnapshotresponsetypedef)
+  - [DeleteAggregationAuthorizationRequestTypeDef](#deleteaggregationauthorizationrequesttypedef)
+  - [DeleteConfigRuleRequestTypeDef](#deleteconfigrulerequesttypedef)
+  - [DeleteConfigurationAggregatorRequestTypeDef](#deleteconfigurationaggregatorrequesttypedef)
+  - [DeleteConfigurationRecorderRequestTypeDef](#deleteconfigurationrecorderrequesttypedef)
+  - [DeleteConformancePackRequestTypeDef](#deleteconformancepackrequesttypedef)
+  - [DeleteDeliveryChannelRequestTypeDef](#deletedeliverychannelrequesttypedef)
+  - [DeleteEvaluationResultsRequestTypeDef](#deleteevaluationresultsrequesttypedef)
+  - [DeleteOrganizationConfigRuleRequestTypeDef](#deleteorganizationconfigrulerequesttypedef)
+  - [DeleteOrganizationConformancePackRequestTypeDef](#deleteorganizationconformancepackrequesttypedef)
+  - [DeletePendingAggregationRequestRequestTypeDef](#deletependingaggregationrequestrequesttypedef)
+  - [DeleteRemediationConfigurationRequestTypeDef](#deleteremediationconfigurationrequesttypedef)
+  - [DeleteRemediationExceptionsRequestTypeDef](#deleteremediationexceptionsrequesttypedef)
+  - [DeleteRemediationExceptionsResponseResponseTypeDef](#deleteremediationexceptionsresponseresponsetypedef)
+  - [DeleteResourceConfigRequestTypeDef](#deleteresourceconfigrequesttypedef)
+  - [DeleteRetentionConfigurationRequestTypeDef](#deleteretentionconfigurationrequesttypedef)
+  - [DeleteStoredQueryRequestTypeDef](#deletestoredqueryrequesttypedef)
+  - [DeliverConfigSnapshotRequestTypeDef](#deliverconfigsnapshotrequesttypedef)
+  - [DeliverConfigSnapshotResponseResponseTypeDef](#deliverconfigsnapshotresponseresponsetypedef)
   - [DeliveryChannelStatusTypeDef](#deliverychannelstatustypedef)
   - [DeliveryChannelTypeDef](#deliverychanneltypedef)
-  - [DescribeAggregateComplianceByConfigRulesResponseTypeDef](#describeaggregatecompliancebyconfigrulesresponsetypedef)
-  - [DescribeAggregateComplianceByConformancePacksResponseTypeDef](#describeaggregatecompliancebyconformancepacksresponsetypedef)
-  - [DescribeAggregationAuthorizationsResponseTypeDef](#describeaggregationauthorizationsresponsetypedef)
-  - [DescribeComplianceByConfigRuleResponseTypeDef](#describecompliancebyconfigruleresponsetypedef)
-  - [DescribeComplianceByResourceResponseTypeDef](#describecompliancebyresourceresponsetypedef)
-  - [DescribeConfigRuleEvaluationStatusResponseTypeDef](#describeconfigruleevaluationstatusresponsetypedef)
-  - [DescribeConfigRulesResponseTypeDef](#describeconfigrulesresponsetypedef)
-  - [DescribeConfigurationAggregatorSourcesStatusResponseTypeDef](#describeconfigurationaggregatorsourcesstatusresponsetypedef)
-  - [DescribeConfigurationAggregatorsResponseTypeDef](#describeconfigurationaggregatorsresponsetypedef)
-  - [DescribeConfigurationRecorderStatusResponseTypeDef](#describeconfigurationrecorderstatusresponsetypedef)
-  - [DescribeConfigurationRecordersResponseTypeDef](#describeconfigurationrecordersresponsetypedef)
-  - [DescribeConformancePackComplianceResponseTypeDef](#describeconformancepackcomplianceresponsetypedef)
-  - [DescribeConformancePackStatusResponseTypeDef](#describeconformancepackstatusresponsetypedef)
-  - [DescribeConformancePacksResponseTypeDef](#describeconformancepacksresponsetypedef)
-  - [DescribeDeliveryChannelStatusResponseTypeDef](#describedeliverychannelstatusresponsetypedef)
-  - [DescribeDeliveryChannelsResponseTypeDef](#describedeliverychannelsresponsetypedef)
-  - [DescribeOrganizationConfigRuleStatusesResponseTypeDef](#describeorganizationconfigrulestatusesresponsetypedef)
-  - [DescribeOrganizationConfigRulesResponseTypeDef](#describeorganizationconfigrulesresponsetypedef)
-  - [DescribeOrganizationConformancePackStatusesResponseTypeDef](#describeorganizationconformancepackstatusesresponsetypedef)
-  - [DescribeOrganizationConformancePacksResponseTypeDef](#describeorganizationconformancepacksresponsetypedef)
-  - [DescribePendingAggregationRequestsResponseTypeDef](#describependingaggregationrequestsresponsetypedef)
-  - [DescribeRemediationConfigurationsResponseTypeDef](#describeremediationconfigurationsresponsetypedef)
-  - [DescribeRemediationExceptionsResponseTypeDef](#describeremediationexceptionsresponsetypedef)
-  - [DescribeRemediationExecutionStatusResponseTypeDef](#describeremediationexecutionstatusresponsetypedef)
-  - [DescribeRetentionConfigurationsResponseTypeDef](#describeretentionconfigurationsresponsetypedef)
+  - [DescribeAggregateComplianceByConfigRulesRequestTypeDef](#describeaggregatecompliancebyconfigrulesrequesttypedef)
+  - [DescribeAggregateComplianceByConfigRulesResponseResponseTypeDef](#describeaggregatecompliancebyconfigrulesresponseresponsetypedef)
+  - [DescribeAggregateComplianceByConformancePacksRequestTypeDef](#describeaggregatecompliancebyconformancepacksrequesttypedef)
+  - [DescribeAggregateComplianceByConformancePacksResponseResponseTypeDef](#describeaggregatecompliancebyconformancepacksresponseresponsetypedef)
+  - [DescribeAggregationAuthorizationsRequestTypeDef](#describeaggregationauthorizationsrequesttypedef)
+  - [DescribeAggregationAuthorizationsResponseResponseTypeDef](#describeaggregationauthorizationsresponseresponsetypedef)
+  - [DescribeComplianceByConfigRuleRequestTypeDef](#describecompliancebyconfigrulerequesttypedef)
+  - [DescribeComplianceByConfigRuleResponseResponseTypeDef](#describecompliancebyconfigruleresponseresponsetypedef)
+  - [DescribeComplianceByResourceRequestTypeDef](#describecompliancebyresourcerequesttypedef)
+  - [DescribeComplianceByResourceResponseResponseTypeDef](#describecompliancebyresourceresponseresponsetypedef)
+  - [DescribeConfigRuleEvaluationStatusRequestTypeDef](#describeconfigruleevaluationstatusrequesttypedef)
+  - [DescribeConfigRuleEvaluationStatusResponseResponseTypeDef](#describeconfigruleevaluationstatusresponseresponsetypedef)
+  - [DescribeConfigRulesRequestTypeDef](#describeconfigrulesrequesttypedef)
+  - [DescribeConfigRulesResponseResponseTypeDef](#describeconfigrulesresponseresponsetypedef)
+  - [DescribeConfigurationAggregatorSourcesStatusRequestTypeDef](#describeconfigurationaggregatorsourcesstatusrequesttypedef)
+  - [DescribeConfigurationAggregatorSourcesStatusResponseResponseTypeDef](#describeconfigurationaggregatorsourcesstatusresponseresponsetypedef)
+  - [DescribeConfigurationAggregatorsRequestTypeDef](#describeconfigurationaggregatorsrequesttypedef)
+  - [DescribeConfigurationAggregatorsResponseResponseTypeDef](#describeconfigurationaggregatorsresponseresponsetypedef)
+  - [DescribeConfigurationRecorderStatusRequestTypeDef](#describeconfigurationrecorderstatusrequesttypedef)
+  - [DescribeConfigurationRecorderStatusResponseResponseTypeDef](#describeconfigurationrecorderstatusresponseresponsetypedef)
+  - [DescribeConfigurationRecordersRequestTypeDef](#describeconfigurationrecordersrequesttypedef)
+  - [DescribeConfigurationRecordersResponseResponseTypeDef](#describeconfigurationrecordersresponseresponsetypedef)
+  - [DescribeConformancePackComplianceRequestTypeDef](#describeconformancepackcompliancerequesttypedef)
+  - [DescribeConformancePackComplianceResponseResponseTypeDef](#describeconformancepackcomplianceresponseresponsetypedef)
+  - [DescribeConformancePackStatusRequestTypeDef](#describeconformancepackstatusrequesttypedef)
+  - [DescribeConformancePackStatusResponseResponseTypeDef](#describeconformancepackstatusresponseresponsetypedef)
+  - [DescribeConformancePacksRequestTypeDef](#describeconformancepacksrequesttypedef)
+  - [DescribeConformancePacksResponseResponseTypeDef](#describeconformancepacksresponseresponsetypedef)
+  - [DescribeDeliveryChannelStatusRequestTypeDef](#describedeliverychannelstatusrequesttypedef)
+  - [DescribeDeliveryChannelStatusResponseResponseTypeDef](#describedeliverychannelstatusresponseresponsetypedef)
+  - [DescribeDeliveryChannelsRequestTypeDef](#describedeliverychannelsrequesttypedef)
+  - [DescribeDeliveryChannelsResponseResponseTypeDef](#describedeliverychannelsresponseresponsetypedef)
+  - [DescribeOrganizationConfigRuleStatusesRequestTypeDef](#describeorganizationconfigrulestatusesrequesttypedef)
+  - [DescribeOrganizationConfigRuleStatusesResponseResponseTypeDef](#describeorganizationconfigrulestatusesresponseresponsetypedef)
+  - [DescribeOrganizationConfigRulesRequestTypeDef](#describeorganizationconfigrulesrequesttypedef)
+  - [DescribeOrganizationConfigRulesResponseResponseTypeDef](#describeorganizationconfigrulesresponseresponsetypedef)
+  - [DescribeOrganizationConformancePackStatusesRequestTypeDef](#describeorganizationconformancepackstatusesrequesttypedef)
+  - [DescribeOrganizationConformancePackStatusesResponseResponseTypeDef](#describeorganizationconformancepackstatusesresponseresponsetypedef)
+  - [DescribeOrganizationConformancePacksRequestTypeDef](#describeorganizationconformancepacksrequesttypedef)
+  - [DescribeOrganizationConformancePacksResponseResponseTypeDef](#describeorganizationconformancepacksresponseresponsetypedef)
+  - [DescribePendingAggregationRequestsRequestTypeDef](#describependingaggregationrequestsrequesttypedef)
+  - [DescribePendingAggregationRequestsResponseResponseTypeDef](#describependingaggregationrequestsresponseresponsetypedef)
+  - [DescribeRemediationConfigurationsRequestTypeDef](#describeremediationconfigurationsrequesttypedef)
+  - [DescribeRemediationConfigurationsResponseResponseTypeDef](#describeremediationconfigurationsresponseresponsetypedef)
+  - [DescribeRemediationExceptionsRequestTypeDef](#describeremediationexceptionsrequesttypedef)
+  - [DescribeRemediationExceptionsResponseResponseTypeDef](#describeremediationexceptionsresponseresponsetypedef)
+  - [DescribeRemediationExecutionStatusRequestTypeDef](#describeremediationexecutionstatusrequesttypedef)
+  - [DescribeRemediationExecutionStatusResponseResponseTypeDef](#describeremediationexecutionstatusresponseresponsetypedef)
+  - [DescribeRetentionConfigurationsRequestTypeDef](#describeretentionconfigurationsrequesttypedef)
+  - [DescribeRetentionConfigurationsResponseResponseTypeDef](#describeretentionconfigurationsresponseresponsetypedef)
   - [EvaluationResultIdentifierTypeDef](#evaluationresultidentifiertypedef)
   - [EvaluationResultQualifierTypeDef](#evaluationresultqualifiertypedef)
   - [EvaluationResultTypeDef](#evaluationresulttypedef)
@@ -88,27 +131,46 @@ type annotations stubs module
   - [FailedRemediationBatchTypeDef](#failedremediationbatchtypedef)
   - [FailedRemediationExceptionBatchTypeDef](#failedremediationexceptionbatchtypedef)
   - [FieldInfoTypeDef](#fieldinfotypedef)
-  - [GetAggregateComplianceDetailsByConfigRuleResponseTypeDef](#getaggregatecompliancedetailsbyconfigruleresponsetypedef)
-  - [GetAggregateConfigRuleComplianceSummaryResponseTypeDef](#getaggregateconfigrulecompliancesummaryresponsetypedef)
-  - [GetAggregateConformancePackComplianceSummaryResponseTypeDef](#getaggregateconformancepackcompliancesummaryresponsetypedef)
-  - [GetAggregateDiscoveredResourceCountsResponseTypeDef](#getaggregatediscoveredresourcecountsresponsetypedef)
-  - [GetAggregateResourceConfigResponseTypeDef](#getaggregateresourceconfigresponsetypedef)
-  - [GetComplianceDetailsByConfigRuleResponseTypeDef](#getcompliancedetailsbyconfigruleresponsetypedef)
-  - [GetComplianceDetailsByResourceResponseTypeDef](#getcompliancedetailsbyresourceresponsetypedef)
-  - [GetComplianceSummaryByConfigRuleResponseTypeDef](#getcompliancesummarybyconfigruleresponsetypedef)
-  - [GetComplianceSummaryByResourceTypeResponseTypeDef](#getcompliancesummarybyresourcetyperesponsetypedef)
-  - [GetConformancePackComplianceDetailsResponseTypeDef](#getconformancepackcompliancedetailsresponsetypedef)
-  - [GetConformancePackComplianceSummaryResponseTypeDef](#getconformancepackcompliancesummaryresponsetypedef)
-  - [GetDiscoveredResourceCountsResponseTypeDef](#getdiscoveredresourcecountsresponsetypedef)
-  - [GetOrganizationConfigRuleDetailedStatusResponseTypeDef](#getorganizationconfigruledetailedstatusresponsetypedef)
-  - [GetOrganizationConformancePackDetailedStatusResponseTypeDef](#getorganizationconformancepackdetailedstatusresponsetypedef)
-  - [GetResourceConfigHistoryResponseTypeDef](#getresourceconfighistoryresponsetypedef)
-  - [GetStoredQueryResponseTypeDef](#getstoredqueryresponsetypedef)
+  - [GetAggregateComplianceDetailsByConfigRuleRequestTypeDef](#getaggregatecompliancedetailsbyconfigrulerequesttypedef)
+  - [GetAggregateComplianceDetailsByConfigRuleResponseResponseTypeDef](#getaggregatecompliancedetailsbyconfigruleresponseresponsetypedef)
+  - [GetAggregateConfigRuleComplianceSummaryRequestTypeDef](#getaggregateconfigrulecompliancesummaryrequesttypedef)
+  - [GetAggregateConfigRuleComplianceSummaryResponseResponseTypeDef](#getaggregateconfigrulecompliancesummaryresponseresponsetypedef)
+  - [GetAggregateConformancePackComplianceSummaryRequestTypeDef](#getaggregateconformancepackcompliancesummaryrequesttypedef)
+  - [GetAggregateConformancePackComplianceSummaryResponseResponseTypeDef](#getaggregateconformancepackcompliancesummaryresponseresponsetypedef)
+  - [GetAggregateDiscoveredResourceCountsRequestTypeDef](#getaggregatediscoveredresourcecountsrequesttypedef)
+  - [GetAggregateDiscoveredResourceCountsResponseResponseTypeDef](#getaggregatediscoveredresourcecountsresponseresponsetypedef)
+  - [GetAggregateResourceConfigRequestTypeDef](#getaggregateresourceconfigrequesttypedef)
+  - [GetAggregateResourceConfigResponseResponseTypeDef](#getaggregateresourceconfigresponseresponsetypedef)
+  - [GetComplianceDetailsByConfigRuleRequestTypeDef](#getcompliancedetailsbyconfigrulerequesttypedef)
+  - [GetComplianceDetailsByConfigRuleResponseResponseTypeDef](#getcompliancedetailsbyconfigruleresponseresponsetypedef)
+  - [GetComplianceDetailsByResourceRequestTypeDef](#getcompliancedetailsbyresourcerequesttypedef)
+  - [GetComplianceDetailsByResourceResponseResponseTypeDef](#getcompliancedetailsbyresourceresponseresponsetypedef)
+  - [GetComplianceSummaryByConfigRuleResponseResponseTypeDef](#getcompliancesummarybyconfigruleresponseresponsetypedef)
+  - [GetComplianceSummaryByResourceTypeRequestTypeDef](#getcompliancesummarybyresourcetyperequesttypedef)
+  - [GetComplianceSummaryByResourceTypeResponseResponseTypeDef](#getcompliancesummarybyresourcetyperesponseresponsetypedef)
+  - [GetConformancePackComplianceDetailsRequestTypeDef](#getconformancepackcompliancedetailsrequesttypedef)
+  - [GetConformancePackComplianceDetailsResponseResponseTypeDef](#getconformancepackcompliancedetailsresponseresponsetypedef)
+  - [GetConformancePackComplianceSummaryRequestTypeDef](#getconformancepackcompliancesummaryrequesttypedef)
+  - [GetConformancePackComplianceSummaryResponseResponseTypeDef](#getconformancepackcompliancesummaryresponseresponsetypedef)
+  - [GetDiscoveredResourceCountsRequestTypeDef](#getdiscoveredresourcecountsrequesttypedef)
+  - [GetDiscoveredResourceCountsResponseResponseTypeDef](#getdiscoveredresourcecountsresponseresponsetypedef)
+  - [GetOrganizationConfigRuleDetailedStatusRequestTypeDef](#getorganizationconfigruledetailedstatusrequesttypedef)
+  - [GetOrganizationConfigRuleDetailedStatusResponseResponseTypeDef](#getorganizationconfigruledetailedstatusresponseresponsetypedef)
+  - [GetOrganizationConformancePackDetailedStatusRequestTypeDef](#getorganizationconformancepackdetailedstatusrequesttypedef)
+  - [GetOrganizationConformancePackDetailedStatusResponseResponseTypeDef](#getorganizationconformancepackdetailedstatusresponseresponsetypedef)
+  - [GetResourceConfigHistoryRequestTypeDef](#getresourceconfighistoryrequesttypedef)
+  - [GetResourceConfigHistoryResponseResponseTypeDef](#getresourceconfighistoryresponseresponsetypedef)
+  - [GetStoredQueryRequestTypeDef](#getstoredqueryrequesttypedef)
+  - [GetStoredQueryResponseResponseTypeDef](#getstoredqueryresponseresponsetypedef)
   - [GroupedResourceCountTypeDef](#groupedresourcecounttypedef)
-  - [ListAggregateDiscoveredResourcesResponseTypeDef](#listaggregatediscoveredresourcesresponsetypedef)
-  - [ListDiscoveredResourcesResponseTypeDef](#listdiscoveredresourcesresponsetypedef)
-  - [ListStoredQueriesResponseTypeDef](#liststoredqueriesresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListAggregateDiscoveredResourcesRequestTypeDef](#listaggregatediscoveredresourcesrequesttypedef)
+  - [ListAggregateDiscoveredResourcesResponseResponseTypeDef](#listaggregatediscoveredresourcesresponseresponsetypedef)
+  - [ListDiscoveredResourcesRequestTypeDef](#listdiscoveredresourcesrequesttypedef)
+  - [ListDiscoveredResourcesResponseResponseTypeDef](#listdiscoveredresourcesresponseresponsetypedef)
+  - [ListStoredQueriesRequestTypeDef](#liststoredqueriesrequesttypedef)
+  - [ListStoredQueriesResponseResponseTypeDef](#liststoredqueriesresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [MemberAccountStatusTypeDef](#memberaccountstatustypedef)
   - [OrganizationAggregationSourceTypeDef](#organizationaggregationsourcetypedef)
   - [OrganizationConfigRuleStatusTypeDef](#organizationconfigrulestatustypedef)
@@ -121,16 +183,31 @@ type annotations stubs module
   - [OrganizationResourceDetailedStatusFiltersTypeDef](#organizationresourcedetailedstatusfilterstypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PendingAggregationRequestTypeDef](#pendingaggregationrequesttypedef)
-  - [PutAggregationAuthorizationResponseTypeDef](#putaggregationauthorizationresponsetypedef)
-  - [PutConfigurationAggregatorResponseTypeDef](#putconfigurationaggregatorresponsetypedef)
-  - [PutConformancePackResponseTypeDef](#putconformancepackresponsetypedef)
-  - [PutEvaluationsResponseTypeDef](#putevaluationsresponsetypedef)
-  - [PutOrganizationConfigRuleResponseTypeDef](#putorganizationconfigruleresponsetypedef)
-  - [PutOrganizationConformancePackResponseTypeDef](#putorganizationconformancepackresponsetypedef)
-  - [PutRemediationConfigurationsResponseTypeDef](#putremediationconfigurationsresponsetypedef)
-  - [PutRemediationExceptionsResponseTypeDef](#putremediationexceptionsresponsetypedef)
-  - [PutRetentionConfigurationResponseTypeDef](#putretentionconfigurationresponsetypedef)
-  - [PutStoredQueryResponseTypeDef](#putstoredqueryresponsetypedef)
+  - [PutAggregationAuthorizationRequestTypeDef](#putaggregationauthorizationrequesttypedef)
+  - [PutAggregationAuthorizationResponseResponseTypeDef](#putaggregationauthorizationresponseresponsetypedef)
+  - [PutConfigRuleRequestTypeDef](#putconfigrulerequesttypedef)
+  - [PutConfigurationAggregatorRequestTypeDef](#putconfigurationaggregatorrequesttypedef)
+  - [PutConfigurationAggregatorResponseResponseTypeDef](#putconfigurationaggregatorresponseresponsetypedef)
+  - [PutConfigurationRecorderRequestTypeDef](#putconfigurationrecorderrequesttypedef)
+  - [PutConformancePackRequestTypeDef](#putconformancepackrequesttypedef)
+  - [PutConformancePackResponseResponseTypeDef](#putconformancepackresponseresponsetypedef)
+  - [PutDeliveryChannelRequestTypeDef](#putdeliverychannelrequesttypedef)
+  - [PutEvaluationsRequestTypeDef](#putevaluationsrequesttypedef)
+  - [PutEvaluationsResponseResponseTypeDef](#putevaluationsresponseresponsetypedef)
+  - [PutExternalEvaluationRequestTypeDef](#putexternalevaluationrequesttypedef)
+  - [PutOrganizationConfigRuleRequestTypeDef](#putorganizationconfigrulerequesttypedef)
+  - [PutOrganizationConfigRuleResponseResponseTypeDef](#putorganizationconfigruleresponseresponsetypedef)
+  - [PutOrganizationConformancePackRequestTypeDef](#putorganizationconformancepackrequesttypedef)
+  - [PutOrganizationConformancePackResponseResponseTypeDef](#putorganizationconformancepackresponseresponsetypedef)
+  - [PutRemediationConfigurationsRequestTypeDef](#putremediationconfigurationsrequesttypedef)
+  - [PutRemediationConfigurationsResponseResponseTypeDef](#putremediationconfigurationsresponseresponsetypedef)
+  - [PutRemediationExceptionsRequestTypeDef](#putremediationexceptionsrequesttypedef)
+  - [PutRemediationExceptionsResponseResponseTypeDef](#putremediationexceptionsresponseresponsetypedef)
+  - [PutResourceConfigRequestTypeDef](#putresourceconfigrequesttypedef)
+  - [PutRetentionConfigurationRequestTypeDef](#putretentionconfigurationrequesttypedef)
+  - [PutRetentionConfigurationResponseResponseTypeDef](#putretentionconfigurationresponseresponsetypedef)
+  - [PutStoredQueryRequestTypeDef](#putstoredqueryrequesttypedef)
+  - [PutStoredQueryResponseResponseTypeDef](#putstoredqueryresponseresponsetypedef)
   - [QueryInfoTypeDef](#queryinfotypedef)
   - [RecordingGroupTypeDef](#recordinggrouptypedef)
   - [RelationshipTypeDef](#relationshiptypedef)
@@ -146,19 +223,28 @@ type annotations stubs module
   - [ResourceIdentifierTypeDef](#resourceidentifiertypedef)
   - [ResourceKeyTypeDef](#resourcekeytypedef)
   - [ResourceValueTypeDef](#resourcevaluetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RetentionConfigurationTypeDef](#retentionconfigurationtypedef)
   - [ScopeTypeDef](#scopetypedef)
-  - [SelectAggregateResourceConfigResponseTypeDef](#selectaggregateresourceconfigresponsetypedef)
-  - [SelectResourceConfigResponseTypeDef](#selectresourceconfigresponsetypedef)
+  - [SelectAggregateResourceConfigRequestTypeDef](#selectaggregateresourceconfigrequesttypedef)
+  - [SelectAggregateResourceConfigResponseResponseTypeDef](#selectaggregateresourceconfigresponseresponsetypedef)
+  - [SelectResourceConfigRequestTypeDef](#selectresourceconfigrequesttypedef)
+  - [SelectResourceConfigResponseResponseTypeDef](#selectresourceconfigresponseresponsetypedef)
   - [SourceDetailTypeDef](#sourcedetailtypedef)
   - [SourceTypeDef](#sourcetypedef)
   - [SsmControlsTypeDef](#ssmcontrolstypedef)
-  - [StartRemediationExecutionResponseTypeDef](#startremediationexecutionresponsetypedef)
+  - [StartConfigRulesEvaluationRequestTypeDef](#startconfigrulesevaluationrequesttypedef)
+  - [StartConfigurationRecorderRequestTypeDef](#startconfigurationrecorderrequesttypedef)
+  - [StartRemediationExecutionRequestTypeDef](#startremediationexecutionrequesttypedef)
+  - [StartRemediationExecutionResponseResponseTypeDef](#startremediationexecutionresponseresponsetypedef)
   - [StaticValueTypeDef](#staticvaluetypedef)
   - [StatusDetailFiltersTypeDef](#statusdetailfilterstypedef)
+  - [StopConfigurationRecorderRequestTypeDef](#stopconfigurationrecorderrequesttypedef)
   - [StoredQueryMetadataTypeDef](#storedquerymetadatatypedef)
   - [StoredQueryTypeDef](#storedquerytypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TagTypeDef](#tagtypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
 
 ## AccountAggregationSourceTypeDef
 
@@ -365,31 +451,58 @@ Optional fields:
 - `configuration`: `str`
 - `supplementaryConfiguration`: `Dict`\[`str`, `str`\]
 
-## BatchGetAggregateResourceConfigResponseTypeDef
+## BatchGetAggregateResourceConfigRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import BatchGetAggregateResourceConfigResponseTypeDef
+from mypy_boto3_config.type_defs import BatchGetAggregateResourceConfigRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ConfigurationAggregatorName`: `str`
+- `ResourceIdentifiers`:
+  `List`\[[AggregateResourceIdentifierTypeDef](./type_defs.md#aggregateresourceidentifiertypedef)\]
+
+## BatchGetAggregateResourceConfigResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import BatchGetAggregateResourceConfigResponseResponseTypeDef
+```
+
+Required fields:
 
 - `BaseConfigurationItems`:
   `List`\[[BaseConfigurationItemTypeDef](./type_defs.md#baseconfigurationitemtypedef)\]
 - `UnprocessedResourceIdentifiers`:
   `List`\[[AggregateResourceIdentifierTypeDef](./type_defs.md#aggregateresourceidentifiertypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchGetResourceConfigResponseTypeDef
+## BatchGetResourceConfigRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import BatchGetResourceConfigResponseTypeDef
+from mypy_boto3_config.type_defs import BatchGetResourceConfigRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `resourceKeys`:
+  `List`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
+
+## BatchGetResourceConfigResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import BatchGetResourceConfigResponseResponseTypeDef
+```
+
+Required fields:
 
 - `baseConfigurationItems`:
   `List`\[[BaseConfigurationItemTypeDef](./type_defs.md#baseconfigurationitemtypedef)\]
 - `unprocessedResourceKeys`:
   `List`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ComplianceByConfigRuleTypeDef
 
@@ -770,26 +883,199 @@ Optional fields:
 - `ConformancePackStatusReason`: `str`
 - `LastUpdateCompletedTime`: `datetime`
 
-## DeleteRemediationExceptionsResponseTypeDef
+## DeleteAggregationAuthorizationRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import DeleteRemediationExceptionsResponseTypeDef
+from mypy_boto3_config.type_defs import DeleteAggregationAuthorizationRequestTypeDef
 ```
 
+Required fields:
+
+- `AuthorizedAccountId`: `str`
+- `AuthorizedAwsRegion`: `str`
+
+## DeleteConfigRuleRequestTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DeleteConfigRuleRequestTypeDef
+```
+
+Required fields:
+
+- `ConfigRuleName`: `str`
+
+## DeleteConfigurationAggregatorRequestTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DeleteConfigurationAggregatorRequestTypeDef
+```
+
+Required fields:
+
+- `ConfigurationAggregatorName`: `str`
+
+## DeleteConfigurationRecorderRequestTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DeleteConfigurationRecorderRequestTypeDef
+```
+
+Required fields:
+
+- `ConfigurationRecorderName`: `str`
+
+## DeleteConformancePackRequestTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DeleteConformancePackRequestTypeDef
+```
+
+Required fields:
+
+- `ConformancePackName`: `str`
+
+## DeleteDeliveryChannelRequestTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DeleteDeliveryChannelRequestTypeDef
+```
+
+Required fields:
+
+- `DeliveryChannelName`: `str`
+
+## DeleteEvaluationResultsRequestTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DeleteEvaluationResultsRequestTypeDef
+```
+
+Required fields:
+
+- `ConfigRuleName`: `str`
+
+## DeleteOrganizationConfigRuleRequestTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DeleteOrganizationConfigRuleRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationConfigRuleName`: `str`
+
+## DeleteOrganizationConformancePackRequestTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DeleteOrganizationConformancePackRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationConformancePackName`: `str`
+
+## DeletePendingAggregationRequestRequestTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DeletePendingAggregationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `RequesterAccountId`: `str`
+- `RequesterAwsRegion`: `str`
+
+## DeleteRemediationConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DeleteRemediationConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `ConfigRuleName`: `str`
+
 Optional fields:
+
+- `ResourceType`: `str`
+
+## DeleteRemediationExceptionsRequestTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DeleteRemediationExceptionsRequestTypeDef
+```
+
+Required fields:
+
+- `ConfigRuleName`: `str`
+- `ResourceKeys`:
+  `List`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
+
+## DeleteRemediationExceptionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DeleteRemediationExceptionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FailedBatches`:
   `List`\[[FailedDeleteRemediationExceptionsBatchTypeDef](./type_defs.md#faileddeleteremediationexceptionsbatchtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeliverConfigSnapshotResponseTypeDef
+## DeleteResourceConfigRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import DeliverConfigSnapshotResponseTypeDef
+from mypy_boto3_config.type_defs import DeleteResourceConfigRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceType`: `str`
+- `ResourceId`: `str`
+
+## DeleteRetentionConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DeleteRetentionConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `RetentionConfigurationName`: `str`
+
+## DeleteStoredQueryRequestTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DeleteStoredQueryRequestTypeDef
+```
+
+Required fields:
+
+- `QueryName`: `str`
+
+## DeliverConfigSnapshotRequestTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DeliverConfigSnapshotRequestTypeDef
+```
+
+Required fields:
+
+- `deliveryChannelName`: `str`
+
+## DeliverConfigSnapshotResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DeliverConfigSnapshotResponseResponseTypeDef
+```
+
+Required fields:
 
 - `configSnapshotId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DeliveryChannelStatusTypeDef
 
@@ -823,140 +1109,324 @@ Optional fields:
 - `configSnapshotDeliveryProperties`:
   [ConfigSnapshotDeliveryPropertiesTypeDef](./type_defs.md#configsnapshotdeliverypropertiestypedef)
 
-## DescribeAggregateComplianceByConfigRulesResponseTypeDef
+## DescribeAggregateComplianceByConfigRulesRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import DescribeAggregateComplianceByConfigRulesResponseTypeDef
+from mypy_boto3_config.type_defs import DescribeAggregateComplianceByConfigRulesRequestTypeDef
 ```
 
+Required fields:
+
+- `ConfigurationAggregatorName`: `str`
+
 Optional fields:
+
+- `Filters`:
+  [ConfigRuleComplianceFiltersTypeDef](./type_defs.md#configrulecompliancefilterstypedef)
+- `Limit`: `int`
+- `NextToken`: `str`
+
+## DescribeAggregateComplianceByConfigRulesResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DescribeAggregateComplianceByConfigRulesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AggregateComplianceByConfigRules`:
   `List`\[[AggregateComplianceByConfigRuleTypeDef](./type_defs.md#aggregatecompliancebyconfigruletypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAggregateComplianceByConformancePacksResponseTypeDef
+## DescribeAggregateComplianceByConformancePacksRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import DescribeAggregateComplianceByConformancePacksResponseTypeDef
+from mypy_boto3_config.type_defs import DescribeAggregateComplianceByConformancePacksRequestTypeDef
 ```
 
+Required fields:
+
+- `ConfigurationAggregatorName`: `str`
+
 Optional fields:
+
+- `Filters`:
+  [AggregateConformancePackComplianceFiltersTypeDef](./type_defs.md#aggregateconformancepackcompliancefilterstypedef)
+- `Limit`: `int`
+- `NextToken`: `str`
+
+## DescribeAggregateComplianceByConformancePacksResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DescribeAggregateComplianceByConformancePacksResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AggregateComplianceByConformancePacks`:
   `List`\[[AggregateComplianceByConformancePackTypeDef](./type_defs.md#aggregatecompliancebyconformancepacktypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAggregationAuthorizationsResponseTypeDef
+## DescribeAggregationAuthorizationsRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import DescribeAggregationAuthorizationsResponseTypeDef
+from mypy_boto3_config.type_defs import DescribeAggregationAuthorizationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Limit`: `int`
+- `NextToken`: `str`
+
+## DescribeAggregationAuthorizationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DescribeAggregationAuthorizationsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AggregationAuthorizations`:
   `List`\[[AggregationAuthorizationTypeDef](./type_defs.md#aggregationauthorizationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeComplianceByConfigRuleResponseTypeDef
+## DescribeComplianceByConfigRuleRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import DescribeComplianceByConfigRuleResponseTypeDef
+from mypy_boto3_config.type_defs import DescribeComplianceByConfigRuleRequestTypeDef
 ```
 
 Optional fields:
+
+- `ConfigRuleNames`: `List`\[`str`\]
+- `ComplianceTypes`:
+  `List`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
+- `NextToken`: `str`
+
+## DescribeComplianceByConfigRuleResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DescribeComplianceByConfigRuleResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ComplianceByConfigRules`:
   `List`\[[ComplianceByConfigRuleTypeDef](./type_defs.md#compliancebyconfigruletypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeComplianceByResourceResponseTypeDef
+## DescribeComplianceByResourceRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import DescribeComplianceByResourceResponseTypeDef
+from mypy_boto3_config.type_defs import DescribeComplianceByResourceRequestTypeDef
 ```
 
 Optional fields:
+
+- `ResourceType`: `str`
+- `ResourceId`: `str`
+- `ComplianceTypes`:
+  `List`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
+- `Limit`: `int`
+- `NextToken`: `str`
+
+## DescribeComplianceByResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DescribeComplianceByResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ComplianceByResources`:
   `List`\[[ComplianceByResourceTypeDef](./type_defs.md#compliancebyresourcetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeConfigRuleEvaluationStatusResponseTypeDef
+## DescribeConfigRuleEvaluationStatusRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import DescribeConfigRuleEvaluationStatusResponseTypeDef
+from mypy_boto3_config.type_defs import DescribeConfigRuleEvaluationStatusRequestTypeDef
 ```
 
 Optional fields:
+
+- `ConfigRuleNames`: `List`\[`str`\]
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## DescribeConfigRuleEvaluationStatusResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DescribeConfigRuleEvaluationStatusResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ConfigRulesEvaluationStatus`:
   `List`\[[ConfigRuleEvaluationStatusTypeDef](./type_defs.md#configruleevaluationstatustypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeConfigRulesResponseTypeDef
+## DescribeConfigRulesRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import DescribeConfigRulesResponseTypeDef
+from mypy_boto3_config.type_defs import DescribeConfigRulesRequestTypeDef
 ```
 
 Optional fields:
+
+- `ConfigRuleNames`: `List`\[`str`\]
+- `NextToken`: `str`
+
+## DescribeConfigRulesResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DescribeConfigRulesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ConfigRules`:
   `List`\[[ConfigRuleTypeDef](./type_defs.md#configruletypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeConfigurationAggregatorSourcesStatusResponseTypeDef
+## DescribeConfigurationAggregatorSourcesStatusRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import DescribeConfigurationAggregatorSourcesStatusResponseTypeDef
+from mypy_boto3_config.type_defs import DescribeConfigurationAggregatorSourcesStatusRequestTypeDef
 ```
 
+Required fields:
+
+- `ConfigurationAggregatorName`: `str`
+
 Optional fields:
+
+- `UpdateStatus`:
+  `List`\[[AggregatedSourceStatusTypeType](./literals.md#aggregatedsourcestatustypetype)\]
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## DescribeConfigurationAggregatorSourcesStatusResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DescribeConfigurationAggregatorSourcesStatusResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AggregatedSourceStatusList`:
   `List`\[[AggregatedSourceStatusTypeDef](./type_defs.md#aggregatedsourcestatustypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeConfigurationAggregatorsResponseTypeDef
+## DescribeConfigurationAggregatorsRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import DescribeConfigurationAggregatorsResponseTypeDef
+from mypy_boto3_config.type_defs import DescribeConfigurationAggregatorsRequestTypeDef
 ```
 
 Optional fields:
+
+- `ConfigurationAggregatorNames`: `List`\[`str`\]
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## DescribeConfigurationAggregatorsResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DescribeConfigurationAggregatorsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ConfigurationAggregators`:
   `List`\[[ConfigurationAggregatorTypeDef](./type_defs.md#configurationaggregatortypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeConfigurationRecorderStatusResponseTypeDef
+## DescribeConfigurationRecorderStatusRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import DescribeConfigurationRecorderStatusResponseTypeDef
+from mypy_boto3_config.type_defs import DescribeConfigurationRecorderStatusRequestTypeDef
 ```
 
 Optional fields:
+
+- `ConfigurationRecorderNames`: `List`\[`str`\]
+
+## DescribeConfigurationRecorderStatusResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DescribeConfigurationRecorderStatusResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ConfigurationRecordersStatus`:
   `List`\[[ConfigurationRecorderStatusTypeDef](./type_defs.md#configurationrecorderstatustypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeConfigurationRecordersResponseTypeDef
+## DescribeConfigurationRecordersRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import DescribeConfigurationRecordersResponseTypeDef
+from mypy_boto3_config.type_defs import DescribeConfigurationRecordersRequestTypeDef
 ```
 
 Optional fields:
 
-- `ConfigurationRecorders`:
-  `List`\[[ConfigurationRecorderTypeDef](./type_defs.md#configurationrecordertypedef)\]
+- `ConfigurationRecorderNames`: `List`\[`str`\]
 
-## DescribeConformancePackComplianceResponseTypeDef
+## DescribeConfigurationRecordersResponseResponseTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import DescribeConformancePackComplianceResponseTypeDef
+from mypy_boto3_config.type_defs import DescribeConfigurationRecordersResponseResponseTypeDef
+```
+
+Required fields:
+
+- `ConfigurationRecorders`:
+  `List`\[[ConfigurationRecorderTypeDef](./type_defs.md#configurationrecordertypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeConformancePackComplianceRequestTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DescribeConformancePackComplianceRequestTypeDef
+```
+
+Required fields:
+
+- `ConformancePackName`: `str`
+
+Optional fields:
+
+- `Filters`:
+  [ConformancePackComplianceFiltersTypeDef](./type_defs.md#conformancepackcompliancefilterstypedef)
+- `Limit`: `int`
+- `NextToken`: `str`
+
+## DescribeConformancePackComplianceResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DescribeConformancePackComplianceResponseResponseTypeDef
 ```
 
 Required fields:
@@ -964,163 +1434,346 @@ Required fields:
 - `ConformancePackName`: `str`
 - `ConformancePackRuleComplianceList`:
   `List`\[[ConformancePackRuleComplianceTypeDef](./type_defs.md#conformancepackrulecompliancetypedef)\]
-
-Optional fields:
-
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeConformancePackStatusResponseTypeDef
+## DescribeConformancePackStatusRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import DescribeConformancePackStatusResponseTypeDef
+from mypy_boto3_config.type_defs import DescribeConformancePackStatusRequestTypeDef
 ```
 
 Optional fields:
+
+- `ConformancePackNames`: `List`\[`str`\]
+- `Limit`: `int`
+- `NextToken`: `str`
+
+## DescribeConformancePackStatusResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DescribeConformancePackStatusResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ConformancePackStatusDetails`:
   `List`\[[ConformancePackStatusDetailTypeDef](./type_defs.md#conformancepackstatusdetailtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeConformancePacksResponseTypeDef
+## DescribeConformancePacksRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import DescribeConformancePacksResponseTypeDef
+from mypy_boto3_config.type_defs import DescribeConformancePacksRequestTypeDef
 ```
 
 Optional fields:
+
+- `ConformancePackNames`: `List`\[`str`\]
+- `Limit`: `int`
+- `NextToken`: `str`
+
+## DescribeConformancePacksResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DescribeConformancePacksResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ConformancePackDetails`:
   `List`\[[ConformancePackDetailTypeDef](./type_defs.md#conformancepackdetailtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDeliveryChannelStatusResponseTypeDef
+## DescribeDeliveryChannelStatusRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import DescribeDeliveryChannelStatusResponseTypeDef
+from mypy_boto3_config.type_defs import DescribeDeliveryChannelStatusRequestTypeDef
 ```
 
 Optional fields:
+
+- `DeliveryChannelNames`: `List`\[`str`\]
+
+## DescribeDeliveryChannelStatusResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DescribeDeliveryChannelStatusResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DeliveryChannelsStatus`:
   `List`\[[DeliveryChannelStatusTypeDef](./type_defs.md#deliverychannelstatustypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDeliveryChannelsResponseTypeDef
+## DescribeDeliveryChannelsRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import DescribeDeliveryChannelsResponseTypeDef
+from mypy_boto3_config.type_defs import DescribeDeliveryChannelsRequestTypeDef
 ```
 
 Optional fields:
+
+- `DeliveryChannelNames`: `List`\[`str`\]
+
+## DescribeDeliveryChannelsResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DescribeDeliveryChannelsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DeliveryChannels`:
   `List`\[[DeliveryChannelTypeDef](./type_defs.md#deliverychanneltypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeOrganizationConfigRuleStatusesResponseTypeDef
+## DescribeOrganizationConfigRuleStatusesRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import DescribeOrganizationConfigRuleStatusesResponseTypeDef
+from mypy_boto3_config.type_defs import DescribeOrganizationConfigRuleStatusesRequestTypeDef
 ```
 
 Optional fields:
+
+- `OrganizationConfigRuleNames`: `List`\[`str`\]
+- `Limit`: `int`
+- `NextToken`: `str`
+
+## DescribeOrganizationConfigRuleStatusesResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DescribeOrganizationConfigRuleStatusesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `OrganizationConfigRuleStatuses`:
   `List`\[[OrganizationConfigRuleStatusTypeDef](./type_defs.md#organizationconfigrulestatustypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeOrganizationConfigRulesResponseTypeDef
+## DescribeOrganizationConfigRulesRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import DescribeOrganizationConfigRulesResponseTypeDef
+from mypy_boto3_config.type_defs import DescribeOrganizationConfigRulesRequestTypeDef
 ```
 
 Optional fields:
+
+- `OrganizationConfigRuleNames`: `List`\[`str`\]
+- `Limit`: `int`
+- `NextToken`: `str`
+
+## DescribeOrganizationConfigRulesResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DescribeOrganizationConfigRulesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `OrganizationConfigRules`:
   `List`\[[OrganizationConfigRuleTypeDef](./type_defs.md#organizationconfigruletypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeOrganizationConformancePackStatusesResponseTypeDef
+## DescribeOrganizationConformancePackStatusesRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import DescribeOrganizationConformancePackStatusesResponseTypeDef
+from mypy_boto3_config.type_defs import DescribeOrganizationConformancePackStatusesRequestTypeDef
 ```
 
 Optional fields:
+
+- `OrganizationConformancePackNames`: `List`\[`str`\]
+- `Limit`: `int`
+- `NextToken`: `str`
+
+## DescribeOrganizationConformancePackStatusesResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DescribeOrganizationConformancePackStatusesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `OrganizationConformancePackStatuses`:
   `List`\[[OrganizationConformancePackStatusTypeDef](./type_defs.md#organizationconformancepackstatustypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeOrganizationConformancePacksResponseTypeDef
+## DescribeOrganizationConformancePacksRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import DescribeOrganizationConformancePacksResponseTypeDef
+from mypy_boto3_config.type_defs import DescribeOrganizationConformancePacksRequestTypeDef
 ```
 
 Optional fields:
+
+- `OrganizationConformancePackNames`: `List`\[`str`\]
+- `Limit`: `int`
+- `NextToken`: `str`
+
+## DescribeOrganizationConformancePacksResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DescribeOrganizationConformancePacksResponseResponseTypeDef
+```
+
+Required fields:
 
 - `OrganizationConformancePacks`:
   `List`\[[OrganizationConformancePackTypeDef](./type_defs.md#organizationconformancepacktypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePendingAggregationRequestsResponseTypeDef
+## DescribePendingAggregationRequestsRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import DescribePendingAggregationRequestsResponseTypeDef
+from mypy_boto3_config.type_defs import DescribePendingAggregationRequestsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Limit`: `int`
+- `NextToken`: `str`
+
+## DescribePendingAggregationRequestsResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DescribePendingAggregationRequestsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `PendingAggregationRequests`:
   `List`\[[PendingAggregationRequestTypeDef](./type_defs.md#pendingaggregationrequesttypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeRemediationConfigurationsResponseTypeDef
+## DescribeRemediationConfigurationsRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import DescribeRemediationConfigurationsResponseTypeDef
+from mypy_boto3_config.type_defs import DescribeRemediationConfigurationsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ConfigRuleNames`: `List`\[`str`\]
+
+## DescribeRemediationConfigurationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DescribeRemediationConfigurationsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `RemediationConfigurations`:
   `List`\[[RemediationConfigurationTypeDef](./type_defs.md#remediationconfigurationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeRemediationExceptionsResponseTypeDef
+## DescribeRemediationExceptionsRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import DescribeRemediationExceptionsResponseTypeDef
+from mypy_boto3_config.type_defs import DescribeRemediationExceptionsRequestTypeDef
 ```
 
+Required fields:
+
+- `ConfigRuleName`: `str`
+
 Optional fields:
+
+- `ResourceKeys`:
+  `List`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
+- `Limit`: `int`
+- `NextToken`: `str`
+
+## DescribeRemediationExceptionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DescribeRemediationExceptionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `RemediationExceptions`:
   `List`\[[RemediationExceptionTypeDef](./type_defs.md#remediationexceptiontypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeRemediationExecutionStatusResponseTypeDef
+## DescribeRemediationExecutionStatusRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import DescribeRemediationExecutionStatusResponseTypeDef
+from mypy_boto3_config.type_defs import DescribeRemediationExecutionStatusRequestTypeDef
 ```
 
+Required fields:
+
+- `ConfigRuleName`: `str`
+
 Optional fields:
+
+- `ResourceKeys`:
+  `List`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
+- `Limit`: `int`
+- `NextToken`: `str`
+
+## DescribeRemediationExecutionStatusResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DescribeRemediationExecutionStatusResponseResponseTypeDef
+```
+
+Required fields:
 
 - `RemediationExecutionStatuses`:
   `List`\[[RemediationExecutionStatusTypeDef](./type_defs.md#remediationexecutionstatustypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeRetentionConfigurationsResponseTypeDef
+## DescribeRetentionConfigurationsRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import DescribeRetentionConfigurationsResponseTypeDef
+from mypy_boto3_config.type_defs import DescribeRetentionConfigurationsRequestTypeDef
 ```
 
 Optional fields:
 
+- `RetentionConfigurationNames`: `List`\[`str`\]
+- `NextToken`: `str`
+
+## DescribeRetentionConfigurationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import DescribeRetentionConfigurationsResponseResponseTypeDef
+```
+
+Required fields:
+
 - `RetentionConfigurations`:
   `List`\[[RetentionConfigurationTypeDef](./type_defs.md#retentionconfigurationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## EvaluationResultIdentifierTypeDef
 
@@ -1173,7 +1826,7 @@ Required fields:
 - `ComplianceResourceType`: `str`
 - `ComplianceResourceId`: `str`
 - `ComplianceType`: [ComplianceTypeType](./literals.md#compliancetypetype)
-- `OrderingTimestamp`: `datetime`
+- `OrderingTimestamp`: `Union`\[`datetime`, `str`\]
 
 Optional fields:
 
@@ -1200,7 +1853,7 @@ Required fields:
 - `ComplianceResourceType`: `str`
 - `ComplianceResourceId`: `str`
 - `ComplianceType`: [ComplianceTypeType](./literals.md#compliancetypetype)
-- `OrderingTimestamp`: `datetime`
+- `OrderingTimestamp`: `Union`\[`datetime`, `str`\]
 
 Optional fields:
 
@@ -1252,122 +1905,269 @@ Optional fields:
 
 - `Name`: `str`
 
-## GetAggregateComplianceDetailsByConfigRuleResponseTypeDef
+## GetAggregateComplianceDetailsByConfigRuleRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import GetAggregateComplianceDetailsByConfigRuleResponseTypeDef
+from mypy_boto3_config.type_defs import GetAggregateComplianceDetailsByConfigRuleRequestTypeDef
 ```
 
+Required fields:
+
+- `ConfigurationAggregatorName`: `str`
+- `ConfigRuleName`: `str`
+- `AccountId`: `str`
+- `AwsRegion`: `str`
+
 Optional fields:
+
+- `ComplianceType`: [ComplianceTypeType](./literals.md#compliancetypetype)
+- `Limit`: `int`
+- `NextToken`: `str`
+
+## GetAggregateComplianceDetailsByConfigRuleResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import GetAggregateComplianceDetailsByConfigRuleResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AggregateEvaluationResults`:
   `List`\[[AggregateEvaluationResultTypeDef](./type_defs.md#aggregateevaluationresulttypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAggregateConfigRuleComplianceSummaryResponseTypeDef
+## GetAggregateConfigRuleComplianceSummaryRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import GetAggregateConfigRuleComplianceSummaryResponseTypeDef
+from mypy_boto3_config.type_defs import GetAggregateConfigRuleComplianceSummaryRequestTypeDef
 ```
 
+Required fields:
+
+- `ConfigurationAggregatorName`: `str`
+
 Optional fields:
+
+- `Filters`:
+  [ConfigRuleComplianceSummaryFiltersTypeDef](./type_defs.md#configrulecompliancesummaryfilterstypedef)
+- `GroupByKey`:
+  [ConfigRuleComplianceSummaryGroupKeyType](./literals.md#configrulecompliancesummarygroupkeytype)
+- `Limit`: `int`
+- `NextToken`: `str`
+
+## GetAggregateConfigRuleComplianceSummaryResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import GetAggregateConfigRuleComplianceSummaryResponseResponseTypeDef
+```
+
+Required fields:
 
 - `GroupByKey`: `str`
 - `AggregateComplianceCounts`:
   `List`\[[AggregateComplianceCountTypeDef](./type_defs.md#aggregatecompliancecounttypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAggregateConformancePackComplianceSummaryResponseTypeDef
+## GetAggregateConformancePackComplianceSummaryRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import GetAggregateConformancePackComplianceSummaryResponseTypeDef
+from mypy_boto3_config.type_defs import GetAggregateConformancePackComplianceSummaryRequestTypeDef
 ```
 
+Required fields:
+
+- `ConfigurationAggregatorName`: `str`
+
 Optional fields:
+
+- `Filters`:
+  [AggregateConformancePackComplianceSummaryFiltersTypeDef](./type_defs.md#aggregateconformancepackcompliancesummaryfilterstypedef)
+- `GroupByKey`:
+  [AggregateConformancePackComplianceSummaryGroupKeyType](./literals.md#aggregateconformancepackcompliancesummarygroupkeytype)
+- `Limit`: `int`
+- `NextToken`: `str`
+
+## GetAggregateConformancePackComplianceSummaryResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import GetAggregateConformancePackComplianceSummaryResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AggregateConformancePackComplianceSummaries`:
   `List`\[[AggregateConformancePackComplianceSummaryTypeDef](./type_defs.md#aggregateconformancepackcompliancesummarytypedef)\]
 - `GroupByKey`: `str`
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAggregateDiscoveredResourceCountsResponseTypeDef
+## GetAggregateDiscoveredResourceCountsRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import GetAggregateDiscoveredResourceCountsResponseTypeDef
+from mypy_boto3_config.type_defs import GetAggregateDiscoveredResourceCountsRequestTypeDef
+```
+
+Required fields:
+
+- `ConfigurationAggregatorName`: `str`
+
+Optional fields:
+
+- `Filters`:
+  [ResourceCountFiltersTypeDef](./type_defs.md#resourcecountfilterstypedef)
+- `GroupByKey`:
+  [ResourceCountGroupKeyType](./literals.md#resourcecountgroupkeytype)
+- `Limit`: `int`
+- `NextToken`: `str`
+
+## GetAggregateDiscoveredResourceCountsResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import GetAggregateDiscoveredResourceCountsResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `TotalDiscoveredResources`: `int`
-
-Optional fields:
-
 - `GroupByKey`: `str`
 - `GroupedResourceCounts`:
   `List`\[[GroupedResourceCountTypeDef](./type_defs.md#groupedresourcecounttypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAggregateResourceConfigResponseTypeDef
+## GetAggregateResourceConfigRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import GetAggregateResourceConfigResponseTypeDef
+from mypy_boto3_config.type_defs import GetAggregateResourceConfigRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ConfigurationAggregatorName`: `str`
+- `ResourceIdentifier`:
+  [AggregateResourceIdentifierTypeDef](./type_defs.md#aggregateresourceidentifiertypedef)
+
+## GetAggregateResourceConfigResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import GetAggregateResourceConfigResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ConfigurationItem`:
   [ConfigurationItemTypeDef](./type_defs.md#configurationitemtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetComplianceDetailsByConfigRuleResponseTypeDef
+## GetComplianceDetailsByConfigRuleRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import GetComplianceDetailsByConfigRuleResponseTypeDef
+from mypy_boto3_config.type_defs import GetComplianceDetailsByConfigRuleRequestTypeDef
 ```
 
+Required fields:
+
+- `ConfigRuleName`: `str`
+
 Optional fields:
+
+- `ComplianceTypes`:
+  `List`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
+- `Limit`: `int`
+- `NextToken`: `str`
+
+## GetComplianceDetailsByConfigRuleResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import GetComplianceDetailsByConfigRuleResponseResponseTypeDef
+```
+
+Required fields:
 
 - `EvaluationResults`:
   `List`\[[EvaluationResultTypeDef](./type_defs.md#evaluationresulttypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetComplianceDetailsByResourceResponseTypeDef
+## GetComplianceDetailsByResourceRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import GetComplianceDetailsByResourceResponseTypeDef
+from mypy_boto3_config.type_defs import GetComplianceDetailsByResourceRequestTypeDef
 ```
 
+Required fields:
+
+- `ResourceType`: `str`
+- `ResourceId`: `str`
+
 Optional fields:
+
+- `ComplianceTypes`:
+  `List`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
+- `NextToken`: `str`
+
+## GetComplianceDetailsByResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import GetComplianceDetailsByResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `EvaluationResults`:
   `List`\[[EvaluationResultTypeDef](./type_defs.md#evaluationresulttypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetComplianceSummaryByConfigRuleResponseTypeDef
+## GetComplianceSummaryByConfigRuleResponseResponseTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import GetComplianceSummaryByConfigRuleResponseTypeDef
+from mypy_boto3_config.type_defs import GetComplianceSummaryByConfigRuleResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `ComplianceSummary`:
   [ComplianceSummaryTypeDef](./type_defs.md#compliancesummarytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetComplianceSummaryByResourceTypeResponseTypeDef
+## GetComplianceSummaryByResourceTypeRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import GetComplianceSummaryByResourceTypeResponseTypeDef
+from mypy_boto3_config.type_defs import GetComplianceSummaryByResourceTypeRequestTypeDef
 ```
 
 Optional fields:
 
-- `ComplianceSummariesByResourceType`:
-  `List`\[[ComplianceSummaryByResourceTypeTypeDef](./type_defs.md#compliancesummarybyresourcetypetypedef)\]
+- `ResourceTypes`: `List`\[`str`\]
 
-## GetConformancePackComplianceDetailsResponseTypeDef
+## GetComplianceSummaryByResourceTypeResponseResponseTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import GetConformancePackComplianceDetailsResponseTypeDef
+from mypy_boto3_config.type_defs import GetComplianceSummaryByResourceTypeResponseResponseTypeDef
+```
+
+Required fields:
+
+- `ComplianceSummariesByResourceType`:
+  `List`\[[ComplianceSummaryByResourceTypeTypeDef](./type_defs.md#compliancesummarybyresourcetypetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetConformancePackComplianceDetailsRequestTypeDef
+
+```python
+from mypy_boto3_config.type_defs import GetConformancePackComplianceDetailsRequestTypeDef
 ```
 
 Required fields:
@@ -1376,80 +2176,199 @@ Required fields:
 
 Optional fields:
 
+- `Filters`:
+  [ConformancePackEvaluationFiltersTypeDef](./type_defs.md#conformancepackevaluationfilterstypedef)
+- `Limit`: `int`
+- `NextToken`: `str`
+
+## GetConformancePackComplianceDetailsResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import GetConformancePackComplianceDetailsResponseResponseTypeDef
+```
+
+Required fields:
+
+- `ConformancePackName`: `str`
 - `ConformancePackRuleEvaluationResults`:
   `List`\[[ConformancePackEvaluationResultTypeDef](./type_defs.md#conformancepackevaluationresulttypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetConformancePackComplianceSummaryResponseTypeDef
+## GetConformancePackComplianceSummaryRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import GetConformancePackComplianceSummaryResponseTypeDef
+from mypy_boto3_config.type_defs import GetConformancePackComplianceSummaryRequestTypeDef
 ```
 
+Required fields:
+
+- `ConformancePackNames`: `List`\[`str`\]
+
 Optional fields:
+
+- `Limit`: `int`
+- `NextToken`: `str`
+
+## GetConformancePackComplianceSummaryResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import GetConformancePackComplianceSummaryResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ConformancePackComplianceSummaryList`:
   `List`\[[ConformancePackComplianceSummaryTypeDef](./type_defs.md#conformancepackcompliancesummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDiscoveredResourceCountsResponseTypeDef
+## GetDiscoveredResourceCountsRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import GetDiscoveredResourceCountsResponseTypeDef
+from mypy_boto3_config.type_defs import GetDiscoveredResourceCountsRequestTypeDef
 ```
 
 Optional fields:
+
+- `resourceTypes`: `List`\[`str`\]
+- `limit`: `int`
+- `nextToken`: `str`
+
+## GetDiscoveredResourceCountsResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import GetDiscoveredResourceCountsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `totalDiscoveredResources`: `int`
 - `resourceCounts`:
   `List`\[[ResourceCountTypeDef](./type_defs.md#resourcecounttypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetOrganizationConfigRuleDetailedStatusResponseTypeDef
+## GetOrganizationConfigRuleDetailedStatusRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import GetOrganizationConfigRuleDetailedStatusResponseTypeDef
+from mypy_boto3_config.type_defs import GetOrganizationConfigRuleDetailedStatusRequestTypeDef
 ```
 
+Required fields:
+
+- `OrganizationConfigRuleName`: `str`
+
 Optional fields:
+
+- `Filters`:
+  [StatusDetailFiltersTypeDef](./type_defs.md#statusdetailfilterstypedef)
+- `Limit`: `int`
+- `NextToken`: `str`
+
+## GetOrganizationConfigRuleDetailedStatusResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import GetOrganizationConfigRuleDetailedStatusResponseResponseTypeDef
+```
+
+Required fields:
 
 - `OrganizationConfigRuleDetailedStatus`:
   `List`\[[MemberAccountStatusTypeDef](./type_defs.md#memberaccountstatustypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetOrganizationConformancePackDetailedStatusResponseTypeDef
+## GetOrganizationConformancePackDetailedStatusRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import GetOrganizationConformancePackDetailedStatusResponseTypeDef
+from mypy_boto3_config.type_defs import GetOrganizationConformancePackDetailedStatusRequestTypeDef
 ```
 
+Required fields:
+
+- `OrganizationConformancePackName`: `str`
+
 Optional fields:
+
+- `Filters`:
+  [OrganizationResourceDetailedStatusFiltersTypeDef](./type_defs.md#organizationresourcedetailedstatusfilterstypedef)
+- `Limit`: `int`
+- `NextToken`: `str`
+
+## GetOrganizationConformancePackDetailedStatusResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import GetOrganizationConformancePackDetailedStatusResponseResponseTypeDef
+```
+
+Required fields:
 
 - `OrganizationConformancePackDetailedStatuses`:
   `List`\[[OrganizationConformancePackDetailedStatusTypeDef](./type_defs.md#organizationconformancepackdetailedstatustypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResourceConfigHistoryResponseTypeDef
+## GetResourceConfigHistoryRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import GetResourceConfigHistoryResponseTypeDef
+from mypy_boto3_config.type_defs import GetResourceConfigHistoryRequestTypeDef
 ```
 
+Required fields:
+
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+- `resourceId`: `str`
+
 Optional fields:
+
+- `laterTime`: `Union`\[`datetime`, `str`\]
+- `earlierTime`: `Union`\[`datetime`, `str`\]
+- `chronologicalOrder`:
+  [ChronologicalOrderType](./literals.md#chronologicalordertype)
+- `limit`: `int`
+- `nextToken`: `str`
+
+## GetResourceConfigHistoryResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import GetResourceConfigHistoryResponseResponseTypeDef
+```
+
+Required fields:
 
 - `configurationItems`:
   `List`\[[ConfigurationItemTypeDef](./type_defs.md#configurationitemtypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetStoredQueryResponseTypeDef
+## GetStoredQueryRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import GetStoredQueryResponseTypeDef
+from mypy_boto3_config.type_defs import GetStoredQueryRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `QueryName`: `str`
+
+## GetStoredQueryResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import GetStoredQueryResponseResponseTypeDef
+```
+
+Required fields:
 
 - `StoredQuery`: [StoredQueryTypeDef](./type_defs.md#storedquerytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GroupedResourceCountTypeDef
 
@@ -1462,52 +2381,121 @@ Required fields:
 - `GroupName`: `str`
 - `ResourceCount`: `int`
 
-## ListAggregateDiscoveredResourcesResponseTypeDef
+## ListAggregateDiscoveredResourcesRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import ListAggregateDiscoveredResourcesResponseTypeDef
+from mypy_boto3_config.type_defs import ListAggregateDiscoveredResourcesRequestTypeDef
 ```
 
+Required fields:
+
+- `ConfigurationAggregatorName`: `str`
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+
 Optional fields:
+
+- `Filters`: [ResourceFiltersTypeDef](./type_defs.md#resourcefilterstypedef)
+- `Limit`: `int`
+- `NextToken`: `str`
+
+## ListAggregateDiscoveredResourcesResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import ListAggregateDiscoveredResourcesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResourceIdentifiers`:
   `List`\[[AggregateResourceIdentifierTypeDef](./type_defs.md#aggregateresourceidentifiertypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDiscoveredResourcesResponseTypeDef
+## ListDiscoveredResourcesRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import ListDiscoveredResourcesResponseTypeDef
+from mypy_boto3_config.type_defs import ListDiscoveredResourcesRequestTypeDef
 ```
 
+Required fields:
+
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+
 Optional fields:
+
+- `resourceIds`: `List`\[`str`\]
+- `resourceName`: `str`
+- `limit`: `int`
+- `includeDeletedResources`: `bool`
+- `nextToken`: `str`
+
+## ListDiscoveredResourcesResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import ListDiscoveredResourcesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `resourceIdentifiers`:
   `List`\[[ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListStoredQueriesResponseTypeDef
+## ListStoredQueriesRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import ListStoredQueriesResponseTypeDef
+from mypy_boto3_config.type_defs import ListStoredQueriesRequestTypeDef
 ```
 
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListStoredQueriesResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import ListStoredQueriesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `StoredQueryMetadata`:
   `List`\[[StoredQueryMetadataTypeDef](./type_defs.md#storedquerymetadatatypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_config.type_defs import ListTagsForResourceRequestTypeDef
 ```
+
+Required fields:
+
+- `ResourceArn`: `str`
 
 Optional fields:
 
+- `Limit`: `int`
+- `NextToken`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
+
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## MemberAccountStatusTypeDef
 
@@ -1717,111 +2705,355 @@ Optional fields:
 - `RequesterAccountId`: `str`
 - `RequesterAwsRegion`: `str`
 
-## PutAggregationAuthorizationResponseTypeDef
+## PutAggregationAuthorizationRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import PutAggregationAuthorizationResponseTypeDef
+from mypy_boto3_config.type_defs import PutAggregationAuthorizationRequestTypeDef
 ```
 
+Required fields:
+
+- `AuthorizedAccountId`: `str`
+- `AuthorizedAwsRegion`: `str`
+
 Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## PutAggregationAuthorizationResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import PutAggregationAuthorizationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AggregationAuthorization`:
   [AggregationAuthorizationTypeDef](./type_defs.md#aggregationauthorizationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutConfigurationAggregatorResponseTypeDef
+## PutConfigRuleRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import PutConfigurationAggregatorResponseTypeDef
+from mypy_boto3_config.type_defs import PutConfigRuleRequestTypeDef
 ```
 
+Required fields:
+
+- `ConfigRule`: [ConfigRuleTypeDef](./type_defs.md#configruletypedef)
+
 Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## PutConfigurationAggregatorRequestTypeDef
+
+```python
+from mypy_boto3_config.type_defs import PutConfigurationAggregatorRequestTypeDef
+```
+
+Required fields:
+
+- `ConfigurationAggregatorName`: `str`
+
+Optional fields:
+
+- `AccountAggregationSources`:
+  `List`\[[AccountAggregationSourceTypeDef](./type_defs.md#accountaggregationsourcetypedef)\]
+- `OrganizationAggregationSource`:
+  [OrganizationAggregationSourceTypeDef](./type_defs.md#organizationaggregationsourcetypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## PutConfigurationAggregatorResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import PutConfigurationAggregatorResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ConfigurationAggregator`:
   [ConfigurationAggregatorTypeDef](./type_defs.md#configurationaggregatortypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutConformancePackResponseTypeDef
+## PutConfigurationRecorderRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import PutConformancePackResponseTypeDef
+from mypy_boto3_config.type_defs import PutConfigurationRecorderRequestTypeDef
 ```
 
+Required fields:
+
+- `ConfigurationRecorder`:
+  [ConfigurationRecorderTypeDef](./type_defs.md#configurationrecordertypedef)
+
+## PutConformancePackRequestTypeDef
+
+```python
+from mypy_boto3_config.type_defs import PutConformancePackRequestTypeDef
+```
+
+Required fields:
+
+- `ConformancePackName`: `str`
+
 Optional fields:
+
+- `TemplateS3Uri`: `str`
+- `TemplateBody`: `str`
+- `DeliveryS3Bucket`: `str`
+- `DeliveryS3KeyPrefix`: `str`
+- `ConformancePackInputParameters`:
+  `List`\[[ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef)\]
+
+## PutConformancePackResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import PutConformancePackResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ConformancePackArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutEvaluationsResponseTypeDef
+## PutDeliveryChannelRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import PutEvaluationsResponseTypeDef
+from mypy_boto3_config.type_defs import PutDeliveryChannelRequestTypeDef
 ```
 
+Required fields:
+
+- `DeliveryChannel`:
+  [DeliveryChannelTypeDef](./type_defs.md#deliverychanneltypedef)
+
+## PutEvaluationsRequestTypeDef
+
+```python
+from mypy_boto3_config.type_defs import PutEvaluationsRequestTypeDef
+```
+
+Required fields:
+
+- `ResultToken`: `str`
+
 Optional fields:
+
+- `Evaluations`:
+  `List`\[[EvaluationTypeDef](./type_defs.md#evaluationtypedef)\]
+- `TestMode`: `bool`
+
+## PutEvaluationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import PutEvaluationsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FailedEvaluations`:
   `List`\[[EvaluationTypeDef](./type_defs.md#evaluationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutOrganizationConfigRuleResponseTypeDef
+## PutExternalEvaluationRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import PutOrganizationConfigRuleResponseTypeDef
+from mypy_boto3_config.type_defs import PutExternalEvaluationRequestTypeDef
 ```
 
+Required fields:
+
+- `ConfigRuleName`: `str`
+- `ExternalEvaluation`:
+  [ExternalEvaluationTypeDef](./type_defs.md#externalevaluationtypedef)
+
+## PutOrganizationConfigRuleRequestTypeDef
+
+```python
+from mypy_boto3_config.type_defs import PutOrganizationConfigRuleRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationConfigRuleName`: `str`
+
 Optional fields:
+
+- `OrganizationManagedRuleMetadata`:
+  [OrganizationManagedRuleMetadataTypeDef](./type_defs.md#organizationmanagedrulemetadatatypedef)
+- `OrganizationCustomRuleMetadata`:
+  [OrganizationCustomRuleMetadataTypeDef](./type_defs.md#organizationcustomrulemetadatatypedef)
+- `ExcludedAccounts`: `List`\[`str`\]
+
+## PutOrganizationConfigRuleResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import PutOrganizationConfigRuleResponseResponseTypeDef
+```
+
+Required fields:
 
 - `OrganizationConfigRuleArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutOrganizationConformancePackResponseTypeDef
+## PutOrganizationConformancePackRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import PutOrganizationConformancePackResponseTypeDef
+from mypy_boto3_config.type_defs import PutOrganizationConformancePackRequestTypeDef
 ```
 
+Required fields:
+
+- `OrganizationConformancePackName`: `str`
+
 Optional fields:
+
+- `TemplateS3Uri`: `str`
+- `TemplateBody`: `str`
+- `DeliveryS3Bucket`: `str`
+- `DeliveryS3KeyPrefix`: `str`
+- `ConformancePackInputParameters`:
+  `List`\[[ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef)\]
+- `ExcludedAccounts`: `List`\[`str`\]
+
+## PutOrganizationConformancePackResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import PutOrganizationConformancePackResponseResponseTypeDef
+```
+
+Required fields:
 
 - `OrganizationConformancePackArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutRemediationConfigurationsResponseTypeDef
+## PutRemediationConfigurationsRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import PutRemediationConfigurationsResponseTypeDef
+from mypy_boto3_config.type_defs import PutRemediationConfigurationsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `RemediationConfigurations`:
+  `List`\[[RemediationConfigurationTypeDef](./type_defs.md#remediationconfigurationtypedef)\]
+
+## PutRemediationConfigurationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import PutRemediationConfigurationsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FailedBatches`:
   `List`\[[FailedRemediationBatchTypeDef](./type_defs.md#failedremediationbatchtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutRemediationExceptionsResponseTypeDef
+## PutRemediationExceptionsRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import PutRemediationExceptionsResponseTypeDef
+from mypy_boto3_config.type_defs import PutRemediationExceptionsRequestTypeDef
 ```
 
+Required fields:
+
+- `ConfigRuleName`: `str`
+- `ResourceKeys`:
+  `List`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
+
 Optional fields:
+
+- `Message`: `str`
+- `ExpirationTime`: `Union`\[`datetime`, `str`\]
+
+## PutRemediationExceptionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import PutRemediationExceptionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FailedBatches`:
   `List`\[[FailedRemediationExceptionBatchTypeDef](./type_defs.md#failedremediationexceptionbatchtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutRetentionConfigurationResponseTypeDef
+## PutResourceConfigRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import PutRetentionConfigurationResponseTypeDef
+from mypy_boto3_config.type_defs import PutResourceConfigRequestTypeDef
 ```
 
+Required fields:
+
+- `ResourceType`: `str`
+- `SchemaVersionId`: `str`
+- `ResourceId`: `str`
+- `Configuration`: `str`
+
 Optional fields:
+
+- `ResourceName`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## PutRetentionConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_config.type_defs import PutRetentionConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `RetentionPeriodInDays`: `int`
+
+## PutRetentionConfigurationResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import PutRetentionConfigurationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `RetentionConfiguration`:
   [RetentionConfigurationTypeDef](./type_defs.md#retentionconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutStoredQueryResponseTypeDef
+## PutStoredQueryRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import PutStoredQueryResponseTypeDef
+from mypy_boto3_config.type_defs import PutStoredQueryRequestTypeDef
 ```
+
+Required fields:
+
+- `StoredQuery`: [StoredQueryTypeDef](./type_defs.md#storedquerytypedef)
 
 Optional fields:
 
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## PutStoredQueryResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import PutStoredQueryResponseResponseTypeDef
+```
+
+Required fields:
+
 - `QueryArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## QueryInfoTypeDef
 
@@ -2026,6 +3258,20 @@ Required fields:
 - `Value`: `Literal['RESOURCE_ID']` (see
   [ResourceValueTypeType](./literals.md#resourcevaluetypetype))
 
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_config.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
 ## RetentionConfigurationTypeDef
 
 ```python
@@ -2050,29 +3296,65 @@ Optional fields:
 - `TagValue`: `str`
 - `ComplianceResourceId`: `str`
 
-## SelectAggregateResourceConfigResponseTypeDef
+## SelectAggregateResourceConfigRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import SelectAggregateResourceConfigResponseTypeDef
+from mypy_boto3_config.type_defs import SelectAggregateResourceConfigRequestTypeDef
 ```
 
+Required fields:
+
+- `Expression`: `str`
+- `ConfigurationAggregatorName`: `str`
+
 Optional fields:
+
+- `Limit`: `int`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## SelectAggregateResourceConfigResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import SelectAggregateResourceConfigResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Results`: `List`\[`str`\]
 - `QueryInfo`: [QueryInfoTypeDef](./type_defs.md#queryinfotypedef)
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SelectResourceConfigResponseTypeDef
+## SelectResourceConfigRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import SelectResourceConfigResponseTypeDef
+from mypy_boto3_config.type_defs import SelectResourceConfigRequestTypeDef
 ```
 
+Required fields:
+
+- `Expression`: `str`
+
 Optional fields:
+
+- `Limit`: `int`
+- `NextToken`: `str`
+
+## SelectResourceConfigResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import SelectResourceConfigResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Results`: `List`\[`str`\]
 - `QueryInfo`: [QueryInfoTypeDef](./type_defs.md#queryinfotypedef)
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## SourceDetailTypeDef
 
@@ -2115,17 +3397,51 @@ Optional fields:
 - `ConcurrentExecutionRatePercentage`: `int`
 - `ErrorPercentage`: `int`
 
-## StartRemediationExecutionResponseTypeDef
+## StartConfigRulesEvaluationRequestTypeDef
 
 ```python
-from mypy_boto3_config.type_defs import StartRemediationExecutionResponseTypeDef
+from mypy_boto3_config.type_defs import StartConfigRulesEvaluationRequestTypeDef
 ```
 
 Optional fields:
 
+- `ConfigRuleNames`: `List`\[`str`\]
+
+## StartConfigurationRecorderRequestTypeDef
+
+```python
+from mypy_boto3_config.type_defs import StartConfigurationRecorderRequestTypeDef
+```
+
+Required fields:
+
+- `ConfigurationRecorderName`: `str`
+
+## StartRemediationExecutionRequestTypeDef
+
+```python
+from mypy_boto3_config.type_defs import StartRemediationExecutionRequestTypeDef
+```
+
+Required fields:
+
+- `ConfigRuleName`: `str`
+- `ResourceKeys`:
+  `List`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
+
+## StartRemediationExecutionResponseResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import StartRemediationExecutionResponseResponseTypeDef
+```
+
+Required fields:
+
 - `FailureMessage`: `str`
 - `FailedItems`:
   `List`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## StaticValueTypeDef
 
@@ -2148,6 +3464,16 @@ Optional fields:
 - `AccountId`: `str`
 - `MemberAccountRuleStatus`:
   [MemberAccountRuleStatusType](./literals.md#memberaccountrulestatustype)
+
+## StopConfigurationRecorderRequestTypeDef
+
+```python
+from mypy_boto3_config.type_defs import StopConfigurationRecorderRequestTypeDef
+```
+
+Required fields:
+
+- `ConfigurationRecorderName`: `str`
 
 ## StoredQueryMetadataTypeDef
 
@@ -2182,6 +3508,17 @@ Optional fields:
 - `Description`: `str`
 - `Expression`: `str`
 
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_config.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
 ## TagTypeDef
 
 ```python
@@ -2192,3 +3529,14 @@ Optional fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+## UntagResourceRequestTypeDef
+
+```python
+from mypy_boto3_config.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `TagKeys`: `List`\[`str`\]

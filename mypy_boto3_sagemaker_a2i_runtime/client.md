@@ -62,6 +62,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("sagemaker-a2i-runtime").can_paginate`
 method.
 
@@ -76,11 +78,16 @@ Returns `bool`.
 
 ### delete_human_loop
 
+Deletes the specified human loop for a flow definition.
+
 Type annotations for `boto3.client("sagemaker-a2i-runtime").delete_human_loop`
 method.
 
 Boto3 documentation:
 [AugmentedAIRuntime.Client.delete_human_loop](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.delete_human_loop)
+
+Arguments mapping described in
+[DeleteHumanLoopRequestTypeDef](./type_defs.md#deletehumanlooprequesttypedef).
 
 Keyword-only arguments:
 
@@ -90,20 +97,27 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_human_loop
 
+Returns information about the specified human loop.
+
 Type annotations for
 `boto3.client("sagemaker-a2i-runtime").describe_human_loop` method.
 
 Boto3 documentation:
 [AugmentedAIRuntime.Client.describe_human_loop](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.describe_human_loop)
 
+Arguments mapping described in
+[DescribeHumanLoopRequestTypeDef](./type_defs.md#describehumanlooprequesttypedef).
+
 Keyword-only arguments:
 
 - `HumanLoopName`: `str` *(required)*
 
 Returns
-[DescribeHumanLoopResponseTypeDef](./type_defs.md#describehumanloopresponsetypedef).
+[DescribeHumanLoopResponseResponseTypeDef](./type_defs.md#describehumanloopresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for
 `boto3.client("sagemaker-a2i-runtime").generate_presigned_url` method.
@@ -122,31 +136,41 @@ Returns `str`.
 
 ### list_human_loops
 
+Returns information about human loops, given the specified parameters.
+
 Type annotations for `boto3.client("sagemaker-a2i-runtime").list_human_loops`
 method.
 
 Boto3 documentation:
 [AugmentedAIRuntime.Client.list_human_loops](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.list_human_loops)
 
+Arguments mapping described in
+[ListHumanLoopsRequestTypeDef](./type_defs.md#listhumanloopsrequesttypedef).
+
 Keyword-only arguments:
 
 - `FlowDefinitionArn`: `str` *(required)*
-- `CreationTimeAfter`: `datetime`
-- `CreationTimeBefore`: `datetime`
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListHumanLoopsResponseTypeDef](./type_defs.md#listhumanloopsresponsetypedef).
+[ListHumanLoopsResponseResponseTypeDef](./type_defs.md#listhumanloopsresponseresponsetypedef).
 
 ### start_human_loop
+
+Starts a human loop, provided that at least one activation condition is met.
 
 Type annotations for `boto3.client("sagemaker-a2i-runtime").start_human_loop`
 method.
 
 Boto3 documentation:
 [AugmentedAIRuntime.Client.start_human_loop](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.start_human_loop)
+
+Arguments mapping described in
+[StartHumanLoopRequestTypeDef](./type_defs.md#starthumanlooprequesttypedef).
 
 Keyword-only arguments:
 
@@ -158,15 +182,20 @@ Keyword-only arguments:
   [HumanLoopDataAttributesTypeDef](./type_defs.md#humanloopdataattributestypedef)
 
 Returns
-[StartHumanLoopResponseTypeDef](./type_defs.md#starthumanloopresponsetypedef).
+[StartHumanLoopResponseResponseTypeDef](./type_defs.md#starthumanloopresponseresponsetypedef).
 
 ### stop_human_loop
+
+Stops the specified human loop.
 
 Type annotations for `boto3.client("sagemaker-a2i-runtime").stop_human_loop`
 method.
 
 Boto3 documentation:
 [AugmentedAIRuntime.Client.stop_human_loop](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.stop_human_loop)
+
+Arguments mapping described in
+[StopHumanLoopRequestTypeDef](./type_defs.md#stophumanlooprequesttypedef).
 
 Keyword-only arguments:
 

@@ -180,6 +180,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("quicksight").can_paginate` method.
 
 Boto3 documentation:
@@ -193,10 +195,15 @@ Returns `bool`.
 
 ### cancel_ingestion
 
+Cancels an ongoing ingestion of data into SPICE.
+
 Type annotations for `boto3.client("quicksight").cancel_ingestion` method.
 
 Boto3 documentation:
 [QuickSight.Client.cancel_ingestion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.cancel_ingestion)
+
+Arguments mapping described in
+[CancelIngestionRequestTypeDef](./type_defs.md#cancelingestionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -205,15 +212,20 @@ Keyword-only arguments:
 - `IngestionId`: `str` *(required)*
 
 Returns
-[CancelIngestionResponseTypeDef](./type_defs.md#cancelingestionresponsetypedef).
+[CancelIngestionResponseResponseTypeDef](./type_defs.md#cancelingestionresponseresponsetypedef).
 
 ### create_account_customization
+
+Creates Amazon QuickSight customizations the current AWS Region.
 
 Type annotations for `boto3.client("quicksight").create_account_customization`
 method.
 
 Boto3 documentation:
 [QuickSight.Client.create_account_customization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_account_customization)
+
+Arguments mapping described in
+[CreateAccountCustomizationRequestTypeDef](./type_defs.md#createaccountcustomizationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -225,14 +237,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateAccountCustomizationResponseTypeDef](./type_defs.md#createaccountcustomizationresponsetypedef).
+[CreateAccountCustomizationResponseResponseTypeDef](./type_defs.md#createaccountcustomizationresponseresponsetypedef).
 
 ### create_analysis
+
+Creates an analysis in Amazon QuickSight.
 
 Type annotations for `boto3.client("quicksight").create_analysis` method.
 
 Boto3 documentation:
 [QuickSight.Client.create_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_analysis)
+
+Arguments mapping described in
+[CreateAnalysisRequestTypeDef](./type_defs.md#createanalysisrequesttypedef).
 
 Keyword-only arguments:
 
@@ -249,14 +266,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateAnalysisResponseTypeDef](./type_defs.md#createanalysisresponsetypedef).
+[CreateAnalysisResponseResponseTypeDef](./type_defs.md#createanalysisresponseresponsetypedef).
 
 ### create_dashboard
+
+Creates a dashboard from a template.
 
 Type annotations for `boto3.client("quicksight").create_dashboard` method.
 
 Boto3 documentation:
 [QuickSight.Client.create_dashboard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_dashboard)
+
+Arguments mapping described in
+[CreateDashboardRequestTypeDef](./type_defs.md#createdashboardrequesttypedef).
 
 Keyword-only arguments:
 
@@ -276,14 +298,19 @@ Keyword-only arguments:
 - `ThemeArn`: `str`
 
 Returns
-[CreateDashboardResponseTypeDef](./type_defs.md#createdashboardresponsetypedef).
+[CreateDashboardResponseResponseTypeDef](./type_defs.md#createdashboardresponseresponsetypedef).
 
 ### create_data_set
+
+Creates a dataset.
 
 Type annotations for `boto3.client("quicksight").create_data_set` method.
 
 Boto3 documentation:
 [QuickSight.Client.create_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_data_set)
+
+Arguments mapping described in
+[CreateDataSetRequestTypeDef](./type_defs.md#createdatasetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -309,14 +336,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDataSetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
+[CreateDataSetResponseResponseTypeDef](./type_defs.md#createdatasetresponseresponsetypedef).
 
 ### create_data_source
+
+Creates a data source.
 
 Type annotations for `boto3.client("quicksight").create_data_source` method.
 
 Boto3 documentation:
 [QuickSight.Client.create_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_data_source)
+
+Arguments mapping described in
+[CreateDataSourceRequestTypeDef](./type_defs.md#createdatasourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -336,14 +368,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef).
+[CreateDataSourceResponseResponseTypeDef](./type_defs.md#createdatasourceresponseresponsetypedef).
 
 ### create_folder
+
+Creates an empty shared folder.
 
 Type annotations for `boto3.client("quicksight").create_folder` method.
 
 Boto3 documentation:
 [QuickSight.Client.create_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_folder)
+
+Arguments mapping described in
+[CreateFolderRequestTypeDef](./type_defs.md#createfolderrequesttypedef).
 
 Keyword-only arguments:
 
@@ -358,15 +395,20 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateFolderResponseTypeDef](./type_defs.md#createfolderresponsetypedef).
+[CreateFolderResponseResponseTypeDef](./type_defs.md#createfolderresponseresponsetypedef).
 
 ### create_folder_membership
+
+Adds an asset, such as a dashboard, analysis, or dataset into a folder.
 
 Type annotations for `boto3.client("quicksight").create_folder_membership`
 method.
 
 Boto3 documentation:
 [QuickSight.Client.create_folder_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_folder_membership)
+
+Arguments mapping described in
+[CreateFolderMembershipRequestTypeDef](./type_defs.md#createfoldermembershiprequesttypedef).
 
 Keyword-only arguments:
 
@@ -376,14 +418,19 @@ Keyword-only arguments:
 - `MemberType`: [MemberTypeType](./literals.md#membertypetype) *(required)*
 
 Returns
-[CreateFolderMembershipResponseTypeDef](./type_defs.md#createfoldermembershipresponsetypedef).
+[CreateFolderMembershipResponseResponseTypeDef](./type_defs.md#createfoldermembershipresponseresponsetypedef).
 
 ### create_group
+
+Creates an Amazon QuickSight group.
 
 Type annotations for `boto3.client("quicksight").create_group` method.
 
 Boto3 documentation:
 [QuickSight.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_group)
+
+Arguments mapping described in
+[CreateGroupRequestTypeDef](./type_defs.md#creategrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -393,15 +440,20 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[CreateGroupResponseTypeDef](./type_defs.md#creategroupresponsetypedef).
+[CreateGroupResponseResponseTypeDef](./type_defs.md#creategroupresponseresponsetypedef).
 
 ### create_group_membership
+
+Adds an Amazon QuickSight user to an Amazon QuickSight group.
 
 Type annotations for `boto3.client("quicksight").create_group_membership`
 method.
 
 Boto3 documentation:
 [QuickSight.Client.create_group_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_group_membership)
+
+Arguments mapping described in
+[CreateGroupMembershipRequestTypeDef](./type_defs.md#creategroupmembershiprequesttypedef).
 
 Keyword-only arguments:
 
@@ -411,15 +463,21 @@ Keyword-only arguments:
 - `Namespace`: `str` *(required)*
 
 Returns
-[CreateGroupMembershipResponseTypeDef](./type_defs.md#creategroupmembershipresponsetypedef).
+[CreateGroupMembershipResponseResponseTypeDef](./type_defs.md#creategroupmembershipresponseresponsetypedef).
 
 ### create_iam_policy_assignment
+
+Creates an assignment with one specified IAM policy, identified by its Amazon
+Resource Name (ARN).
 
 Type annotations for `boto3.client("quicksight").create_iam_policy_assignment`
 method.
 
 Boto3 documentation:
 [QuickSight.Client.create_iam_policy_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_iam_policy_assignment)
+
+Arguments mapping described in
+[CreateIAMPolicyAssignmentRequestTypeDef](./type_defs.md#createiampolicyassignmentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -432,14 +490,21 @@ Keyword-only arguments:
 - `Identities`: `Dict`\[`str`, `List`\[`str`\]\]
 
 Returns
-[CreateIAMPolicyAssignmentResponseTypeDef](./type_defs.md#createiampolicyassignmentresponsetypedef).
+[CreateIAMPolicyAssignmentResponseResponseTypeDef](./type_defs.md#createiampolicyassignmentresponseresponsetypedef).
 
 ### create_ingestion
+
+Creates and starts a new SPICE ingestion on a dataset Any ingestions operating
+on tagged datasets inherit the same tags automatically for use in access
+control.
 
 Type annotations for `boto3.client("quicksight").create_ingestion` method.
 
 Boto3 documentation:
 [QuickSight.Client.create_ingestion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_ingestion)
+
+Arguments mapping described in
+[CreateIngestionRequestTypeDef](./type_defs.md#createingestionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -448,14 +513,20 @@ Keyword-only arguments:
 - `AwsAccountId`: `str` *(required)*
 
 Returns
-[CreateIngestionResponseTypeDef](./type_defs.md#createingestionresponsetypedef).
+[CreateIngestionResponseResponseTypeDef](./type_defs.md#createingestionresponseresponsetypedef).
 
 ### create_namespace
+
+(Enterprise edition only) Creates a new namespace for you to use with Amazon
+QuickSight.
 
 Type annotations for `boto3.client("quicksight").create_namespace` method.
 
 Boto3 documentation:
 [QuickSight.Client.create_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_namespace)
+
+Arguments mapping described in
+[CreateNamespaceRequestTypeDef](./type_defs.md#createnamespacerequesttypedef).
 
 Keyword-only arguments:
 
@@ -466,14 +537,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateNamespaceResponseTypeDef](./type_defs.md#createnamespaceresponsetypedef).
+[CreateNamespaceResponseResponseTypeDef](./type_defs.md#createnamespaceresponseresponsetypedef).
 
 ### create_template
+
+Creates a template from an existing QuickSight analysis or template.
 
 Type annotations for `boto3.client("quicksight").create_template` method.
 
 Boto3 documentation:
 [QuickSight.Client.create_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_template)
+
+Arguments mapping described in
+[CreateTemplateRequestTypeDef](./type_defs.md#createtemplaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -489,14 +565,19 @@ Keyword-only arguments:
 - `VersionDescription`: `str`
 
 Returns
-[CreateTemplateResponseTypeDef](./type_defs.md#createtemplateresponsetypedef).
+[CreateTemplateResponseResponseTypeDef](./type_defs.md#createtemplateresponseresponsetypedef).
 
 ### create_template_alias
+
+Creates a template alias for a template.
 
 Type annotations for `boto3.client("quicksight").create_template_alias` method.
 
 Boto3 documentation:
 [QuickSight.Client.create_template_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_template_alias)
+
+Arguments mapping described in
+[CreateTemplateAliasRequestTypeDef](./type_defs.md#createtemplatealiasrequesttypedef).
 
 Keyword-only arguments:
 
@@ -506,14 +587,19 @@ Keyword-only arguments:
 - `TemplateVersionNumber`: `int` *(required)*
 
 Returns
-[CreateTemplateAliasResponseTypeDef](./type_defs.md#createtemplatealiasresponsetypedef).
+[CreateTemplateAliasResponseResponseTypeDef](./type_defs.md#createtemplatealiasresponseresponsetypedef).
 
 ### create_theme
+
+Creates a theme.
 
 Type annotations for `boto3.client("quicksight").create_theme` method.
 
 Boto3 documentation:
 [QuickSight.Client.create_theme](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_theme)
+
+Arguments mapping described in
+[CreateThemeRequestTypeDef](./type_defs.md#createthemerequesttypedef).
 
 Keyword-only arguments:
 
@@ -530,14 +616,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateThemeResponseTypeDef](./type_defs.md#createthemeresponsetypedef).
+[CreateThemeResponseResponseTypeDef](./type_defs.md#createthemeresponseresponsetypedef).
 
 ### create_theme_alias
+
+Creates a theme alias for a theme.
 
 Type annotations for `boto3.client("quicksight").create_theme_alias` method.
 
 Boto3 documentation:
 [QuickSight.Client.create_theme_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.create_theme_alias)
+
+Arguments mapping described in
+[CreateThemeAliasRequestTypeDef](./type_defs.md#createthemealiasrequesttypedef).
 
 Keyword-only arguments:
 
@@ -547,9 +638,12 @@ Keyword-only arguments:
 - `ThemeVersionNumber`: `int` *(required)*
 
 Returns
-[CreateThemeAliasResponseTypeDef](./type_defs.md#createthemealiasresponsetypedef).
+[CreateThemeAliasResponseResponseTypeDef](./type_defs.md#createthemealiasresponseresponsetypedef).
 
 ### delete_account_customization
+
+Deletes all Amazon QuickSight customizations in this AWS Region for the
+specified AWS account and QuickSight namespace.
 
 Type annotations for `boto3.client("quicksight").delete_account_customization`
 method.
@@ -557,20 +651,28 @@ method.
 Boto3 documentation:
 [QuickSight.Client.delete_account_customization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_account_customization)
 
+Arguments mapping described in
+[DeleteAccountCustomizationRequestTypeDef](./type_defs.md#deleteaccountcustomizationrequesttypedef).
+
 Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `Namespace`: `str`
 
 Returns
-[DeleteAccountCustomizationResponseTypeDef](./type_defs.md#deleteaccountcustomizationresponsetypedef).
+[DeleteAccountCustomizationResponseResponseTypeDef](./type_defs.md#deleteaccountcustomizationresponseresponsetypedef).
 
 ### delete_analysis
+
+Deletes an analysis from Amazon QuickSight.
 
 Type annotations for `boto3.client("quicksight").delete_analysis` method.
 
 Boto3 documentation:
 [QuickSight.Client.delete_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_analysis)
+
+Arguments mapping described in
+[DeleteAnalysisRequestTypeDef](./type_defs.md#deleteanalysisrequesttypedef).
 
 Keyword-only arguments:
 
@@ -580,14 +682,19 @@ Keyword-only arguments:
 - `ForceDeleteWithoutRecovery`: `bool`
 
 Returns
-[DeleteAnalysisResponseTypeDef](./type_defs.md#deleteanalysisresponsetypedef).
+[DeleteAnalysisResponseResponseTypeDef](./type_defs.md#deleteanalysisresponseresponsetypedef).
 
 ### delete_dashboard
+
+Deletes a dashboard.
 
 Type annotations for `boto3.client("quicksight").delete_dashboard` method.
 
 Boto3 documentation:
 [QuickSight.Client.delete_dashboard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_dashboard)
+
+Arguments mapping described in
+[DeleteDashboardRequestTypeDef](./type_defs.md#deletedashboardrequesttypedef).
 
 Keyword-only arguments:
 
@@ -596,14 +703,19 @@ Keyword-only arguments:
 - `VersionNumber`: `int`
 
 Returns
-[DeleteDashboardResponseTypeDef](./type_defs.md#deletedashboardresponsetypedef).
+[DeleteDashboardResponseResponseTypeDef](./type_defs.md#deletedashboardresponseresponsetypedef).
 
 ### delete_data_set
+
+Deletes a dataset.
 
 Type annotations for `boto3.client("quicksight").delete_data_set` method.
 
 Boto3 documentation:
 [QuickSight.Client.delete_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_data_set)
+
+Arguments mapping described in
+[DeleteDataSetRequestTypeDef](./type_defs.md#deletedatasetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -611,14 +723,19 @@ Keyword-only arguments:
 - `DataSetId`: `str` *(required)*
 
 Returns
-[DeleteDataSetResponseTypeDef](./type_defs.md#deletedatasetresponsetypedef).
+[DeleteDataSetResponseResponseTypeDef](./type_defs.md#deletedatasetresponseresponsetypedef).
 
 ### delete_data_source
+
+Deletes the data source permanently.
 
 Type annotations for `boto3.client("quicksight").delete_data_source` method.
 
 Boto3 documentation:
 [QuickSight.Client.delete_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_data_source)
+
+Arguments mapping described in
+[DeleteDataSourceRequestTypeDef](./type_defs.md#deletedatasourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -626,14 +743,19 @@ Keyword-only arguments:
 - `DataSourceId`: `str` *(required)*
 
 Returns
-[DeleteDataSourceResponseTypeDef](./type_defs.md#deletedatasourceresponsetypedef).
+[DeleteDataSourceResponseResponseTypeDef](./type_defs.md#deletedatasourceresponseresponsetypedef).
 
 ### delete_folder
+
+Deletes an empty folder.
 
 Type annotations for `boto3.client("quicksight").delete_folder` method.
 
 Boto3 documentation:
 [QuickSight.Client.delete_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_folder)
+
+Arguments mapping described in
+[DeleteFolderRequestTypeDef](./type_defs.md#deletefolderrequesttypedef).
 
 Keyword-only arguments:
 
@@ -641,15 +763,20 @@ Keyword-only arguments:
 - `FolderId`: `str` *(required)*
 
 Returns
-[DeleteFolderResponseTypeDef](./type_defs.md#deletefolderresponsetypedef).
+[DeleteFolderResponseResponseTypeDef](./type_defs.md#deletefolderresponseresponsetypedef).
 
 ### delete_folder_membership
+
+Removes an asset, such as a dashboard, analysis, or dataset, from a folder.
 
 Type annotations for `boto3.client("quicksight").delete_folder_membership`
 method.
 
 Boto3 documentation:
 [QuickSight.Client.delete_folder_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_folder_membership)
+
+Arguments mapping described in
+[DeleteFolderMembershipRequestTypeDef](./type_defs.md#deletefoldermembershiprequesttypedef).
 
 Keyword-only arguments:
 
@@ -659,14 +786,19 @@ Keyword-only arguments:
 - `MemberType`: [MemberTypeType](./literals.md#membertypetype) *(required)*
 
 Returns
-[DeleteFolderMembershipResponseTypeDef](./type_defs.md#deletefoldermembershipresponsetypedef).
+[DeleteFolderMembershipResponseResponseTypeDef](./type_defs.md#deletefoldermembershipresponseresponsetypedef).
 
 ### delete_group
+
+Removes a user group from Amazon QuickSight.
 
 Type annotations for `boto3.client("quicksight").delete_group` method.
 
 Boto3 documentation:
 [QuickSight.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_group)
+
+Arguments mapping described in
+[DeleteGroupRequestTypeDef](./type_defs.md#deletegrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -675,15 +807,21 @@ Keyword-only arguments:
 - `Namespace`: `str` *(required)*
 
 Returns
-[DeleteGroupResponseTypeDef](./type_defs.md#deletegroupresponsetypedef).
+[DeleteGroupResponseResponseTypeDef](./type_defs.md#deletegroupresponseresponsetypedef).
 
 ### delete_group_membership
+
+Removes a user from a group so that the user is no longer a member of the
+group.
 
 Type annotations for `boto3.client("quicksight").delete_group_membership`
 method.
 
 Boto3 documentation:
 [QuickSight.Client.delete_group_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_group_membership)
+
+Arguments mapping described in
+[DeleteGroupMembershipRequestTypeDef](./type_defs.md#deletegroupmembershiprequesttypedef).
 
 Keyword-only arguments:
 
@@ -693,15 +831,20 @@ Keyword-only arguments:
 - `Namespace`: `str` *(required)*
 
 Returns
-[DeleteGroupMembershipResponseTypeDef](./type_defs.md#deletegroupmembershipresponsetypedef).
+[DeleteGroupMembershipResponseResponseTypeDef](./type_defs.md#deletegroupmembershipresponseresponsetypedef).
 
 ### delete_iam_policy_assignment
+
+Deletes an existing IAM policy assignment.
 
 Type annotations for `boto3.client("quicksight").delete_iam_policy_assignment`
 method.
 
 Boto3 documentation:
 [QuickSight.Client.delete_iam_policy_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_iam_policy_assignment)
+
+Arguments mapping described in
+[DeleteIAMPolicyAssignmentRequestTypeDef](./type_defs.md#deleteiampolicyassignmentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -710,14 +853,20 @@ Keyword-only arguments:
 - `Namespace`: `str` *(required)*
 
 Returns
-[DeleteIAMPolicyAssignmentResponseTypeDef](./type_defs.md#deleteiampolicyassignmentresponsetypedef).
+[DeleteIAMPolicyAssignmentResponseResponseTypeDef](./type_defs.md#deleteiampolicyassignmentresponseresponsetypedef).
 
 ### delete_namespace
+
+Deletes a namespace and the users and groups that are associated with the
+namespace.
 
 Type annotations for `boto3.client("quicksight").delete_namespace` method.
 
 Boto3 documentation:
 [QuickSight.Client.delete_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_namespace)
+
+Arguments mapping described in
+[DeleteNamespaceRequestTypeDef](./type_defs.md#deletenamespacerequesttypedef).
 
 Keyword-only arguments:
 
@@ -725,15 +874,20 @@ Keyword-only arguments:
 - `Namespace`: `str` *(required)*
 
 Returns
-[DeleteNamespaceResponseTypeDef](./type_defs.md#deletenamespaceresponsetypedef).
+[DeleteNamespaceResponseResponseTypeDef](./type_defs.md#deletenamespaceresponseresponsetypedef).
 
 ### delete_template
+
+Deletes a template.
 
 Type annotations for `boto3.client("quicksight").delete_template` method.
 
 Boto3 documentation:
 [QuickSight.Client.delete_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_template)
 
+Arguments mapping described in
+[DeleteTemplateRequestTypeDef](./type_defs.md#deletetemplaterequesttypedef).
+
 Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
@@ -741,15 +895,20 @@ Keyword-only arguments:
 - `VersionNumber`: `int`
 
 Returns
-[DeleteTemplateResponseTypeDef](./type_defs.md#deletetemplateresponsetypedef).
+[DeleteTemplateResponseResponseTypeDef](./type_defs.md#deletetemplateresponseresponsetypedef).
 
 ### delete_template_alias
+
+Deletes the item that the specified template alias points to.
 
 Type annotations for `boto3.client("quicksight").delete_template_alias` method.
 
 Boto3 documentation:
 [QuickSight.Client.delete_template_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_template_alias)
 
+Arguments mapping described in
+[DeleteTemplateAliasRequestTypeDef](./type_defs.md#deletetemplatealiasrequesttypedef).
+
 Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
@@ -757,14 +916,19 @@ Keyword-only arguments:
 - `AliasName`: `str` *(required)*
 
 Returns
-[DeleteTemplateAliasResponseTypeDef](./type_defs.md#deletetemplatealiasresponsetypedef).
+[DeleteTemplateAliasResponseResponseTypeDef](./type_defs.md#deletetemplatealiasresponseresponsetypedef).
 
 ### delete_theme
+
+Deletes a theme.
 
 Type annotations for `boto3.client("quicksight").delete_theme` method.
 
 Boto3 documentation:
 [QuickSight.Client.delete_theme](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_theme)
+
+Arguments mapping described in
+[DeleteThemeRequestTypeDef](./type_defs.md#deletethemerequesttypedef).
 
 Keyword-only arguments:
 
@@ -773,14 +937,19 @@ Keyword-only arguments:
 - `VersionNumber`: `int`
 
 Returns
-[DeleteThemeResponseTypeDef](./type_defs.md#deletethemeresponsetypedef).
+[DeleteThemeResponseResponseTypeDef](./type_defs.md#deletethemeresponseresponsetypedef).
 
 ### delete_theme_alias
+
+Deletes the version of the theme that the specified theme alias points to.
 
 Type annotations for `boto3.client("quicksight").delete_theme_alias` method.
 
 Boto3 documentation:
 [QuickSight.Client.delete_theme_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_theme_alias)
+
+Arguments mapping described in
+[DeleteThemeAliasRequestTypeDef](./type_defs.md#deletethemealiasrequesttypedef).
 
 Keyword-only arguments:
 
@@ -789,14 +958,20 @@ Keyword-only arguments:
 - `AliasName`: `str` *(required)*
 
 Returns
-[DeleteThemeAliasResponseTypeDef](./type_defs.md#deletethemealiasresponsetypedef).
+[DeleteThemeAliasResponseResponseTypeDef](./type_defs.md#deletethemealiasresponseresponsetypedef).
 
 ### delete_user
+
+Deletes the Amazon QuickSight user that is associated with the identity of the
+AWS Identity and Access Management (IAM) user or role that's making the call.
 
 Type annotations for `boto3.client("quicksight").delete_user` method.
 
 Boto3 documentation:
 [QuickSight.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_user)
+
+Arguments mapping described in
+[DeleteUserRequestTypeDef](./type_defs.md#deleteuserrequesttypedef).
 
 Keyword-only arguments:
 
@@ -804,15 +979,21 @@ Keyword-only arguments:
 - `AwsAccountId`: `str` *(required)*
 - `Namespace`: `str` *(required)*
 
-Returns [DeleteUserResponseTypeDef](./type_defs.md#deleteuserresponsetypedef).
+Returns
+[DeleteUserResponseResponseTypeDef](./type_defs.md#deleteuserresponseresponsetypedef).
 
 ### delete_user_by_principal_id
+
+Deletes a user identified by its principal ID.
 
 Type annotations for `boto3.client("quicksight").delete_user_by_principal_id`
 method.
 
 Boto3 documentation:
 [QuickSight.Client.delete_user_by_principal_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.delete_user_by_principal_id)
+
+Arguments mapping described in
+[DeleteUserByPrincipalIdRequestTypeDef](./type_defs.md#deleteuserbyprincipalidrequesttypedef).
 
 Keyword-only arguments:
 
@@ -821,15 +1002,21 @@ Keyword-only arguments:
 - `Namespace`: `str` *(required)*
 
 Returns
-[DeleteUserByPrincipalIdResponseTypeDef](./type_defs.md#deleteuserbyprincipalidresponsetypedef).
+[DeleteUserByPrincipalIdResponseResponseTypeDef](./type_defs.md#deleteuserbyprincipalidresponseresponsetypedef).
 
 ### describe_account_customization
+
+Describes the customizations associated with the provided AWS account and
+Amazon QuickSight namespace in an AWS Region.
 
 Type annotations for
 `boto3.client("quicksight").describe_account_customization` method.
 
 Boto3 documentation:
 [QuickSight.Client.describe_account_customization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_account_customization)
+
+Arguments mapping described in
+[DescribeAccountCustomizationRequestTypeDef](./type_defs.md#describeaccountcustomizationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -838,9 +1025,12 @@ Keyword-only arguments:
 - `Resolved`: `bool`
 
 Returns
-[DescribeAccountCustomizationResponseTypeDef](./type_defs.md#describeaccountcustomizationresponsetypedef).
+[DescribeAccountCustomizationResponseResponseTypeDef](./type_defs.md#describeaccountcustomizationresponseresponsetypedef).
 
 ### describe_account_settings
+
+Describes the settings that were used when your QuickSight subscription was
+first created in this AWS account.
 
 Type annotations for `boto3.client("quicksight").describe_account_settings`
 method.
@@ -848,19 +1038,27 @@ method.
 Boto3 documentation:
 [QuickSight.Client.describe_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_account_settings)
 
+Arguments mapping described in
+[DescribeAccountSettingsRequestTypeDef](./type_defs.md#describeaccountsettingsrequesttypedef).
+
 Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 
 Returns
-[DescribeAccountSettingsResponseTypeDef](./type_defs.md#describeaccountsettingsresponsetypedef).
+[DescribeAccountSettingsResponseResponseTypeDef](./type_defs.md#describeaccountsettingsresponseresponsetypedef).
 
 ### describe_analysis
+
+Provides a summary of the metadata for an analysis.
 
 Type annotations for `boto3.client("quicksight").describe_analysis` method.
 
 Boto3 documentation:
 [QuickSight.Client.describe_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_analysis)
+
+Arguments mapping described in
+[DescribeAnalysisRequestTypeDef](./type_defs.md#describeanalysisrequesttypedef).
 
 Keyword-only arguments:
 
@@ -868,9 +1066,11 @@ Keyword-only arguments:
 - `AnalysisId`: `str` *(required)*
 
 Returns
-[DescribeAnalysisResponseTypeDef](./type_defs.md#describeanalysisresponsetypedef).
+[DescribeAnalysisResponseResponseTypeDef](./type_defs.md#describeanalysisresponseresponsetypedef).
 
 ### describe_analysis_permissions
+
+Provides the read and write permissions for an analysis.
 
 Type annotations for `boto3.client("quicksight").describe_analysis_permissions`
 method.
@@ -878,20 +1078,28 @@ method.
 Boto3 documentation:
 [QuickSight.Client.describe_analysis_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_analysis_permissions)
 
+Arguments mapping described in
+[DescribeAnalysisPermissionsRequestTypeDef](./type_defs.md#describeanalysispermissionsrequesttypedef).
+
 Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `AnalysisId`: `str` *(required)*
 
 Returns
-[DescribeAnalysisPermissionsResponseTypeDef](./type_defs.md#describeanalysispermissionsresponsetypedef).
+[DescribeAnalysisPermissionsResponseResponseTypeDef](./type_defs.md#describeanalysispermissionsresponseresponsetypedef).
 
 ### describe_dashboard
+
+Provides a summary for a dashboard.
 
 Type annotations for `boto3.client("quicksight").describe_dashboard` method.
 
 Boto3 documentation:
 [QuickSight.Client.describe_dashboard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_dashboard)
+
+Arguments mapping described in
+[DescribeDashboardRequestTypeDef](./type_defs.md#describedashboardrequesttypedef).
 
 Keyword-only arguments:
 
@@ -901,9 +1109,11 @@ Keyword-only arguments:
 - `AliasName`: `str`
 
 Returns
-[DescribeDashboardResponseTypeDef](./type_defs.md#describedashboardresponsetypedef).
+[DescribeDashboardResponseResponseTypeDef](./type_defs.md#describedashboardresponseresponsetypedef).
 
 ### describe_dashboard_permissions
+
+Describes read and write permissions for a dashboard.
 
 Type annotations for
 `boto3.client("quicksight").describe_dashboard_permissions` method.
@@ -911,20 +1121,28 @@ Type annotations for
 Boto3 documentation:
 [QuickSight.Client.describe_dashboard_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_dashboard_permissions)
 
+Arguments mapping described in
+[DescribeDashboardPermissionsRequestTypeDef](./type_defs.md#describedashboardpermissionsrequesttypedef).
+
 Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `DashboardId`: `str` *(required)*
 
 Returns
-[DescribeDashboardPermissionsResponseTypeDef](./type_defs.md#describedashboardpermissionsresponsetypedef).
+[DescribeDashboardPermissionsResponseResponseTypeDef](./type_defs.md#describedashboardpermissionsresponseresponsetypedef).
 
 ### describe_data_set
+
+Describes a dataset.
 
 Type annotations for `boto3.client("quicksight").describe_data_set` method.
 
 Boto3 documentation:
 [QuickSight.Client.describe_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_data_set)
+
+Arguments mapping described in
+[DescribeDataSetRequestTypeDef](./type_defs.md#describedatasetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -932,9 +1150,11 @@ Keyword-only arguments:
 - `DataSetId`: `str` *(required)*
 
 Returns
-[DescribeDataSetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
+[DescribeDataSetResponseResponseTypeDef](./type_defs.md#describedatasetresponseresponsetypedef).
 
 ### describe_data_set_permissions
+
+Describes the permissions on a dataset.
 
 Type annotations for `boto3.client("quicksight").describe_data_set_permissions`
 method.
@@ -942,20 +1162,28 @@ method.
 Boto3 documentation:
 [QuickSight.Client.describe_data_set_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_data_set_permissions)
 
+Arguments mapping described in
+[DescribeDataSetPermissionsRequestTypeDef](./type_defs.md#describedatasetpermissionsrequesttypedef).
+
 Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `DataSetId`: `str` *(required)*
 
 Returns
-[DescribeDataSetPermissionsResponseTypeDef](./type_defs.md#describedatasetpermissionsresponsetypedef).
+[DescribeDataSetPermissionsResponseResponseTypeDef](./type_defs.md#describedatasetpermissionsresponseresponsetypedef).
 
 ### describe_data_source
+
+Describes a data source.
 
 Type annotations for `boto3.client("quicksight").describe_data_source` method.
 
 Boto3 documentation:
 [QuickSight.Client.describe_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_data_source)
+
+Arguments mapping described in
+[DescribeDataSourceRequestTypeDef](./type_defs.md#describedatasourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -963,9 +1191,11 @@ Keyword-only arguments:
 - `DataSourceId`: `str` *(required)*
 
 Returns
-[DescribeDataSourceResponseTypeDef](./type_defs.md#describedatasourceresponsetypedef).
+[DescribeDataSourceResponseResponseTypeDef](./type_defs.md#describedatasourceresponseresponsetypedef).
 
 ### describe_data_source_permissions
+
+Describes the resource permissions for a data source.
 
 Type annotations for
 `boto3.client("quicksight").describe_data_source_permissions` method.
@@ -973,20 +1203,28 @@ Type annotations for
 Boto3 documentation:
 [QuickSight.Client.describe_data_source_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_data_source_permissions)
 
+Arguments mapping described in
+[DescribeDataSourcePermissionsRequestTypeDef](./type_defs.md#describedatasourcepermissionsrequesttypedef).
+
 Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `DataSourceId`: `str` *(required)*
 
 Returns
-[DescribeDataSourcePermissionsResponseTypeDef](./type_defs.md#describedatasourcepermissionsresponsetypedef).
+[DescribeDataSourcePermissionsResponseResponseTypeDef](./type_defs.md#describedatasourcepermissionsresponseresponsetypedef).
 
 ### describe_folder
+
+Describes a folder.
 
 Type annotations for `boto3.client("quicksight").describe_folder` method.
 
 Boto3 documentation:
 [QuickSight.Client.describe_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_folder)
+
+Arguments mapping described in
+[DescribeFolderRequestTypeDef](./type_defs.md#describefolderrequesttypedef).
 
 Keyword-only arguments:
 
@@ -994,9 +1232,11 @@ Keyword-only arguments:
 - `FolderId`: `str` *(required)*
 
 Returns
-[DescribeFolderResponseTypeDef](./type_defs.md#describefolderresponsetypedef).
+[DescribeFolderResponseResponseTypeDef](./type_defs.md#describefolderresponseresponsetypedef).
 
 ### describe_folder_permissions
+
+Describes permissions for a folder.
 
 Type annotations for `boto3.client("quicksight").describe_folder_permissions`
 method.
@@ -1004,15 +1244,20 @@ method.
 Boto3 documentation:
 [QuickSight.Client.describe_folder_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_folder_permissions)
 
+Arguments mapping described in
+[DescribeFolderPermissionsRequestTypeDef](./type_defs.md#describefolderpermissionsrequesttypedef).
+
 Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `FolderId`: `str` *(required)*
 
 Returns
-[DescribeFolderPermissionsResponseTypeDef](./type_defs.md#describefolderpermissionsresponsetypedef).
+[DescribeFolderPermissionsResponseResponseTypeDef](./type_defs.md#describefolderpermissionsresponseresponsetypedef).
 
 ### describe_folder_resolved_permissions
+
+Describes the folder resolved permissions.
 
 Type annotations for
 `boto3.client("quicksight").describe_folder_resolved_permissions` method.
@@ -1020,20 +1265,29 @@ Type annotations for
 Boto3 documentation:
 [QuickSight.Client.describe_folder_resolved_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_folder_resolved_permissions)
 
+Arguments mapping described in
+[DescribeFolderResolvedPermissionsRequestTypeDef](./type_defs.md#describefolderresolvedpermissionsrequesttypedef).
+
 Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `FolderId`: `str` *(required)*
 
 Returns
-[DescribeFolderResolvedPermissionsResponseTypeDef](./type_defs.md#describefolderresolvedpermissionsresponsetypedef).
+[DescribeFolderResolvedPermissionsResponseResponseTypeDef](./type_defs.md#describefolderresolvedpermissionsresponseresponsetypedef).
 
 ### describe_group
+
+Returns an Amazon QuickSight group's description and Amazon Resource Name
+(ARN).
 
 Type annotations for `boto3.client("quicksight").describe_group` method.
 
 Boto3 documentation:
 [QuickSight.Client.describe_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_group)
+
+Arguments mapping described in
+[DescribeGroupRequestTypeDef](./type_defs.md#describegrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -1042,15 +1296,21 @@ Keyword-only arguments:
 - `Namespace`: `str` *(required)*
 
 Returns
-[DescribeGroupResponseTypeDef](./type_defs.md#describegroupresponsetypedef).
+[DescribeGroupResponseResponseTypeDef](./type_defs.md#describegroupresponseresponsetypedef).
 
 ### describe_iam_policy_assignment
+
+Describes an existing IAM policy assignment, as specified by the assignment
+name.
 
 Type annotations for
 `boto3.client("quicksight").describe_iam_policy_assignment` method.
 
 Boto3 documentation:
 [QuickSight.Client.describe_iam_policy_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_iam_policy_assignment)
+
+Arguments mapping described in
+[DescribeIAMPolicyAssignmentRequestTypeDef](./type_defs.md#describeiampolicyassignmentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1059,14 +1319,19 @@ Keyword-only arguments:
 - `Namespace`: `str` *(required)*
 
 Returns
-[DescribeIAMPolicyAssignmentResponseTypeDef](./type_defs.md#describeiampolicyassignmentresponsetypedef).
+[DescribeIAMPolicyAssignmentResponseResponseTypeDef](./type_defs.md#describeiampolicyassignmentresponseresponsetypedef).
 
 ### describe_ingestion
+
+Describes a SPICE ingestion.
 
 Type annotations for `boto3.client("quicksight").describe_ingestion` method.
 
 Boto3 documentation:
 [QuickSight.Client.describe_ingestion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_ingestion)
+
+Arguments mapping described in
+[DescribeIngestionRequestTypeDef](./type_defs.md#describeingestionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1075,14 +1340,19 @@ Keyword-only arguments:
 - `IngestionId`: `str` *(required)*
 
 Returns
-[DescribeIngestionResponseTypeDef](./type_defs.md#describeingestionresponsetypedef).
+[DescribeIngestionResponseResponseTypeDef](./type_defs.md#describeingestionresponseresponsetypedef).
 
 ### describe_namespace
+
+Describes the current namespace.
 
 Type annotations for `boto3.client("quicksight").describe_namespace` method.
 
 Boto3 documentation:
 [QuickSight.Client.describe_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_namespace)
+
+Arguments mapping described in
+[DescribeNamespaceRequestTypeDef](./type_defs.md#describenamespacerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1090,14 +1360,19 @@ Keyword-only arguments:
 - `Namespace`: `str` *(required)*
 
 Returns
-[DescribeNamespaceResponseTypeDef](./type_defs.md#describenamespaceresponsetypedef).
+[DescribeNamespaceResponseResponseTypeDef](./type_defs.md#describenamespaceresponseresponsetypedef).
 
 ### describe_template
+
+Describes a template's metadata.
 
 Type annotations for `boto3.client("quicksight").describe_template` method.
 
 Boto3 documentation:
 [QuickSight.Client.describe_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_template)
+
+Arguments mapping described in
+[DescribeTemplateRequestTypeDef](./type_defs.md#describetemplaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -1107,9 +1382,11 @@ Keyword-only arguments:
 - `AliasName`: `str`
 
 Returns
-[DescribeTemplateResponseTypeDef](./type_defs.md#describetemplateresponsetypedef).
+[DescribeTemplateResponseResponseTypeDef](./type_defs.md#describetemplateresponseresponsetypedef).
 
 ### describe_template_alias
+
+Describes the template alias for a template.
 
 Type annotations for `boto3.client("quicksight").describe_template_alias`
 method.
@@ -1117,6 +1394,9 @@ method.
 Boto3 documentation:
 [QuickSight.Client.describe_template_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_template_alias)
 
+Arguments mapping described in
+[DescribeTemplateAliasRequestTypeDef](./type_defs.md#describetemplatealiasrequesttypedef).
+
 Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
@@ -1124,9 +1404,11 @@ Keyword-only arguments:
 - `AliasName`: `str` *(required)*
 
 Returns
-[DescribeTemplateAliasResponseTypeDef](./type_defs.md#describetemplatealiasresponsetypedef).
+[DescribeTemplateAliasResponseResponseTypeDef](./type_defs.md#describetemplatealiasresponseresponsetypedef).
 
 ### describe_template_permissions
+
+Describes read and write permissions on a template.
 
 Type annotations for `boto3.client("quicksight").describe_template_permissions`
 method.
@@ -1134,20 +1416,28 @@ method.
 Boto3 documentation:
 [QuickSight.Client.describe_template_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_template_permissions)
 
+Arguments mapping described in
+[DescribeTemplatePermissionsRequestTypeDef](./type_defs.md#describetemplatepermissionsrequesttypedef).
+
 Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `TemplateId`: `str` *(required)*
 
 Returns
-[DescribeTemplatePermissionsResponseTypeDef](./type_defs.md#describetemplatepermissionsresponsetypedef).
+[DescribeTemplatePermissionsResponseResponseTypeDef](./type_defs.md#describetemplatepermissionsresponseresponsetypedef).
 
 ### describe_theme
+
+Describes a theme.
 
 Type annotations for `boto3.client("quicksight").describe_theme` method.
 
 Boto3 documentation:
 [QuickSight.Client.describe_theme](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_theme)
+
+Arguments mapping described in
+[DescribeThemeRequestTypeDef](./type_defs.md#describethemerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1157,14 +1447,19 @@ Keyword-only arguments:
 - `AliasName`: `str`
 
 Returns
-[DescribeThemeResponseTypeDef](./type_defs.md#describethemeresponsetypedef).
+[DescribeThemeResponseResponseTypeDef](./type_defs.md#describethemeresponseresponsetypedef).
 
 ### describe_theme_alias
+
+Describes the alias for a theme.
 
 Type annotations for `boto3.client("quicksight").describe_theme_alias` method.
 
 Boto3 documentation:
 [QuickSight.Client.describe_theme_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_theme_alias)
+
+Arguments mapping described in
+[DescribeThemeAliasRequestTypeDef](./type_defs.md#describethemealiasrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1173,9 +1468,11 @@ Keyword-only arguments:
 - `AliasName`: `str` *(required)*
 
 Returns
-[DescribeThemeAliasResponseTypeDef](./type_defs.md#describethemealiasresponsetypedef).
+[DescribeThemeAliasResponseResponseTypeDef](./type_defs.md#describethemealiasresponseresponsetypedef).
 
 ### describe_theme_permissions
+
+Describes the read and write permissions for a theme.
 
 Type annotations for `boto3.client("quicksight").describe_theme_permissions`
 method.
@@ -1183,20 +1480,28 @@ method.
 Boto3 documentation:
 [QuickSight.Client.describe_theme_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_theme_permissions)
 
+Arguments mapping described in
+[DescribeThemePermissionsRequestTypeDef](./type_defs.md#describethemepermissionsrequesttypedef).
+
 Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `ThemeId`: `str` *(required)*
 
 Returns
-[DescribeThemePermissionsResponseTypeDef](./type_defs.md#describethemepermissionsresponsetypedef).
+[DescribeThemePermissionsResponseResponseTypeDef](./type_defs.md#describethemepermissionsresponseresponsetypedef).
 
 ### describe_user
+
+Returns information about a user, given the user name.
 
 Type annotations for `boto3.client("quicksight").describe_user` method.
 
 Boto3 documentation:
 [QuickSight.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_user)
+
+Arguments mapping described in
+[DescribeUserRequestTypeDef](./type_defs.md#describeuserrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1205,9 +1510,11 @@ Keyword-only arguments:
 - `Namespace`: `str` *(required)*
 
 Returns
-[DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef).
+[DescribeUserResponseResponseTypeDef](./type_defs.md#describeuserresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("quicksight").generate_presigned_url`
 method.
@@ -1226,11 +1533,17 @@ Returns `str`.
 
 ### get_dashboard_embed_url
 
+Generates a session URL and authorization code that you can use to embed an
+Amazon QuickSight read-only dashboard in your web server code.
+
 Type annotations for `boto3.client("quicksight").get_dashboard_embed_url`
 method.
 
 Boto3 documentation:
 [QuickSight.Client.get_dashboard_embed_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.get_dashboard_embed_url)
+
+Arguments mapping described in
+[GetDashboardEmbedUrlRequestTypeDef](./type_defs.md#getdashboardembedurlrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1248,14 +1561,20 @@ Keyword-only arguments:
 - `AdditionalDashboardIds`: `List`\[`str`\]
 
 Returns
-[GetDashboardEmbedUrlResponseTypeDef](./type_defs.md#getdashboardembedurlresponsetypedef).
+[GetDashboardEmbedUrlResponseResponseTypeDef](./type_defs.md#getdashboardembedurlresponseresponsetypedef).
 
 ### get_session_embed_url
+
+Generates a session URL and authorization code that you can use to embed the
+Amazon QuickSight console in your web server code.
 
 Type annotations for `boto3.client("quicksight").get_session_embed_url` method.
 
 Boto3 documentation:
 [QuickSight.Client.get_session_embed_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.get_session_embed_url)
+
+Arguments mapping described in
+[GetSessionEmbedUrlRequestTypeDef](./type_defs.md#getsessionembedurlrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1265,14 +1584,19 @@ Keyword-only arguments:
 - `UserArn`: `str`
 
 Returns
-[GetSessionEmbedUrlResponseTypeDef](./type_defs.md#getsessionembedurlresponsetypedef).
+[GetSessionEmbedUrlResponseResponseTypeDef](./type_defs.md#getsessionembedurlresponseresponsetypedef).
 
 ### list_analyses
+
+Lists Amazon QuickSight analyses that exist in the specified AWS account.
 
 Type annotations for `boto3.client("quicksight").list_analyses` method.
 
 Boto3 documentation:
 [QuickSight.Client.list_analyses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_analyses)
+
+Arguments mapping described in
+[ListAnalysesRequestTypeDef](./type_defs.md#listanalysesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1281,15 +1605,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListAnalysesResponseTypeDef](./type_defs.md#listanalysesresponsetypedef).
+[ListAnalysesResponseResponseTypeDef](./type_defs.md#listanalysesresponseresponsetypedef).
 
 ### list_dashboard_versions
+
+Lists all the versions of the dashboards in the QuickSight subscription.
 
 Type annotations for `boto3.client("quicksight").list_dashboard_versions`
 method.
 
 Boto3 documentation:
 [QuickSight.Client.list_dashboard_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_dashboard_versions)
+
+Arguments mapping described in
+[ListDashboardVersionsRequestTypeDef](./type_defs.md#listdashboardversionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1299,15 +1628,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDashboardVersionsResponseTypeDef](./type_defs.md#listdashboardversionsresponsetypedef).
+[ListDashboardVersionsResponseResponseTypeDef](./type_defs.md#listdashboardversionsresponseresponsetypedef).
 
 ### list_dashboards
+
+Lists dashboards in an AWS account.
 
 Type annotations for `boto3.client("quicksight").list_dashboards` method.
 
 Boto3 documentation:
 [QuickSight.Client.list_dashboards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_dashboards)
 
+Arguments mapping described in
+[ListDashboardsRequestTypeDef](./type_defs.md#listdashboardsrequesttypedef).
+
 Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
@@ -1315,15 +1649,21 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDashboardsResponseTypeDef](./type_defs.md#listdashboardsresponsetypedef).
+[ListDashboardsResponseResponseTypeDef](./type_defs.md#listdashboardsresponseresponsetypedef).
 
 ### list_data_sets
+
+Lists all of the datasets belonging to the current AWS account in an AWS
+Region.
 
 Type annotations for `boto3.client("quicksight").list_data_sets` method.
 
 Boto3 documentation:
 [QuickSight.Client.list_data_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_data_sets)
 
+Arguments mapping described in
+[ListDataSetsRequestTypeDef](./type_defs.md#listdatasetsrequesttypedef).
+
 Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
@@ -1331,15 +1671,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDataSetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
+[ListDataSetsResponseResponseTypeDef](./type_defs.md#listdatasetsresponseresponsetypedef).
 
 ### list_data_sources
+
+Lists data sources in current AWS Region that belong to this AWS account.
 
 Type annotations for `boto3.client("quicksight").list_data_sources` method.
 
 Boto3 documentation:
 [QuickSight.Client.list_data_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_data_sources)
 
+Arguments mapping described in
+[ListDataSourcesRequestTypeDef](./type_defs.md#listdatasourcesrequesttypedef).
+
 Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
@@ -1347,14 +1692,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef).
+[ListDataSourcesResponseResponseTypeDef](./type_defs.md#listdatasourcesresponseresponsetypedef).
 
 ### list_folder_members
+
+List all assets (`DASHBOARD` , `ANALYSIS` , and `DATASET` ) in a folder.
 
 Type annotations for `boto3.client("quicksight").list_folder_members` method.
 
 Boto3 documentation:
 [QuickSight.Client.list_folder_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_folder_members)
+
+Arguments mapping described in
+[ListFolderMembersRequestTypeDef](./type_defs.md#listfoldermembersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1364,14 +1714,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListFolderMembersResponseTypeDef](./type_defs.md#listfoldermembersresponsetypedef).
+[ListFolderMembersResponseResponseTypeDef](./type_defs.md#listfoldermembersresponseresponsetypedef).
 
 ### list_folders
+
+Lists all folders in an account.
 
 Type annotations for `boto3.client("quicksight").list_folders` method.
 
 Boto3 documentation:
 [QuickSight.Client.list_folders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_folders)
+
+Arguments mapping described in
+[ListFoldersRequestTypeDef](./type_defs.md#listfoldersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1380,15 +1735,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListFoldersResponseTypeDef](./type_defs.md#listfoldersresponsetypedef).
+[ListFoldersResponseResponseTypeDef](./type_defs.md#listfoldersresponseresponsetypedef).
 
 ### list_group_memberships
+
+Lists member users in a group.
 
 Type annotations for `boto3.client("quicksight").list_group_memberships`
 method.
 
 Boto3 documentation:
 [QuickSight.Client.list_group_memberships](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_group_memberships)
+
+Arguments mapping described in
+[ListGroupMembershipsRequestTypeDef](./type_defs.md#listgroupmembershipsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1399,14 +1759,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListGroupMembershipsResponseTypeDef](./type_defs.md#listgroupmembershipsresponsetypedef).
+[ListGroupMembershipsResponseResponseTypeDef](./type_defs.md#listgroupmembershipsresponseresponsetypedef).
 
 ### list_groups
+
+Lists all user groups in Amazon QuickSight.
 
 Type annotations for `boto3.client("quicksight").list_groups` method.
 
 Boto3 documentation:
 [QuickSight.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_groups)
+
+Arguments mapping described in
+[ListGroupsRequestTypeDef](./type_defs.md#listgroupsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1415,15 +1780,21 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
+Returns
+[ListGroupsResponseResponseTypeDef](./type_defs.md#listgroupsresponseresponsetypedef).
 
 ### list_iam_policy_assignments
+
+Lists IAM policy assignments in the current Amazon QuickSight account.
 
 Type annotations for `boto3.client("quicksight").list_iam_policy_assignments`
 method.
 
 Boto3 documentation:
 [QuickSight.Client.list_iam_policy_assignments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_iam_policy_assignments)
+
+Arguments mapping described in
+[ListIAMPolicyAssignmentsRequestTypeDef](./type_defs.md#listiampolicyassignmentsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1435,15 +1806,22 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListIAMPolicyAssignmentsResponseTypeDef](./type_defs.md#listiampolicyassignmentsresponsetypedef).
+[ListIAMPolicyAssignmentsResponseResponseTypeDef](./type_defs.md#listiampolicyassignmentsresponseresponsetypedef).
 
 ### list_iam_policy_assignments_for_user
+
+Lists all the IAM policy assignments, including the Amazon Resource Names
+(ARNs) for the IAM policies assigned to the specified user and group or groups
+that the user belongs to.
 
 Type annotations for
 `boto3.client("quicksight").list_iam_policy_assignments_for_user` method.
 
 Boto3 documentation:
 [QuickSight.Client.list_iam_policy_assignments_for_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_iam_policy_assignments_for_user)
+
+Arguments mapping described in
+[ListIAMPolicyAssignmentsForUserRequestTypeDef](./type_defs.md#listiampolicyassignmentsforuserrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1454,14 +1832,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListIAMPolicyAssignmentsForUserResponseTypeDef](./type_defs.md#listiampolicyassignmentsforuserresponsetypedef).
+[ListIAMPolicyAssignmentsForUserResponseResponseTypeDef](./type_defs.md#listiampolicyassignmentsforuserresponseresponsetypedef).
 
 ### list_ingestions
+
+Lists the history of SPICE ingestions for a dataset.
 
 Type annotations for `boto3.client("quicksight").list_ingestions` method.
 
 Boto3 documentation:
 [QuickSight.Client.list_ingestions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_ingestions)
+
+Arguments mapping described in
+[ListIngestionsRequestTypeDef](./type_defs.md#listingestionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1471,14 +1854,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListIngestionsResponseTypeDef](./type_defs.md#listingestionsresponsetypedef).
+[ListIngestionsResponseResponseTypeDef](./type_defs.md#listingestionsresponseresponsetypedef).
 
 ### list_namespaces
+
+Lists the namespaces for the specified AWS account.
 
 Type annotations for `boto3.client("quicksight").list_namespaces` method.
 
 Boto3 documentation:
 [QuickSight.Client.list_namespaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_namespaces)
+
+Arguments mapping described in
+[ListNamespacesRequestTypeDef](./type_defs.md#listnamespacesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1487,9 +1875,11 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListNamespacesResponseTypeDef](./type_defs.md#listnamespacesresponsetypedef).
+[ListNamespacesResponseResponseTypeDef](./type_defs.md#listnamespacesresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Lists the tags assigned to a resource.
 
 Type annotations for `boto3.client("quicksight").list_tags_for_resource`
 method.
@@ -1497,19 +1887,27 @@ method.
 Boto3 documentation:
 [QuickSight.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### list_template_aliases
+
+Lists all the aliases of a template.
 
 Type annotations for `boto3.client("quicksight").list_template_aliases` method.
 
 Boto3 documentation:
 [QuickSight.Client.list_template_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_template_aliases)
+
+Arguments mapping described in
+[ListTemplateAliasesRequestTypeDef](./type_defs.md#listtemplatealiasesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1519,9 +1917,12 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListTemplateAliasesResponseTypeDef](./type_defs.md#listtemplatealiasesresponsetypedef).
+[ListTemplateAliasesResponseResponseTypeDef](./type_defs.md#listtemplatealiasesresponseresponsetypedef).
 
 ### list_template_versions
+
+Lists all the versions of the templates in the current Amazon QuickSight
+account.
 
 Type annotations for `boto3.client("quicksight").list_template_versions`
 method.
@@ -1529,6 +1930,9 @@ method.
 Boto3 documentation:
 [QuickSight.Client.list_template_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_template_versions)
 
+Arguments mapping described in
+[ListTemplateVersionsRequestTypeDef](./type_defs.md#listtemplateversionsrequesttypedef).
+
 Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
@@ -1537,15 +1941,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListTemplateVersionsResponseTypeDef](./type_defs.md#listtemplateversionsresponsetypedef).
+[ListTemplateVersionsResponseResponseTypeDef](./type_defs.md#listtemplateversionsresponseresponsetypedef).
 
 ### list_templates
+
+Lists all the templates in the current Amazon QuickSight account.
 
 Type annotations for `boto3.client("quicksight").list_templates` method.
 
 Boto3 documentation:
 [QuickSight.Client.list_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_templates)
 
+Arguments mapping described in
+[ListTemplatesRequestTypeDef](./type_defs.md#listtemplatesrequesttypedef).
+
 Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
@@ -1553,15 +1962,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListTemplatesResponseTypeDef](./type_defs.md#listtemplatesresponsetypedef).
+[ListTemplatesResponseResponseTypeDef](./type_defs.md#listtemplatesresponseresponsetypedef).
 
 ### list_theme_aliases
+
+Lists all the aliases of a theme.
 
 Type annotations for `boto3.client("quicksight").list_theme_aliases` method.
 
 Boto3 documentation:
 [QuickSight.Client.list_theme_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_theme_aliases)
 
+Arguments mapping described in
+[ListThemeAliasesRequestTypeDef](./type_defs.md#listthemealiasesrequesttypedef).
+
 Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
@@ -1570,15 +1984,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListThemeAliasesResponseTypeDef](./type_defs.md#listthemealiasesresponsetypedef).
+[ListThemeAliasesResponseResponseTypeDef](./type_defs.md#listthemealiasesresponseresponsetypedef).
 
 ### list_theme_versions
+
+Lists all the versions of the themes in the current AWS account.
 
 Type annotations for `boto3.client("quicksight").list_theme_versions` method.
 
 Boto3 documentation:
 [QuickSight.Client.list_theme_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_theme_versions)
 
+Arguments mapping described in
+[ListThemeVersionsRequestTypeDef](./type_defs.md#listthemeversionsrequesttypedef).
+
 Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
@@ -1587,14 +2006,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListThemeVersionsResponseTypeDef](./type_defs.md#listthemeversionsresponsetypedef).
+[ListThemeVersionsResponseResponseTypeDef](./type_defs.md#listthemeversionsresponseresponsetypedef).
 
 ### list_themes
+
+Lists all the themes in the current AWS account.
 
 Type annotations for `boto3.client("quicksight").list_themes` method.
 
 Boto3 documentation:
 [QuickSight.Client.list_themes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_themes)
+
+Arguments mapping described in
+[ListThemesRequestTypeDef](./type_defs.md#listthemesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1603,14 +2027,21 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `Type`: [ThemeTypeType](./literals.md#themetypetype)
 
-Returns [ListThemesResponseTypeDef](./type_defs.md#listthemesresponsetypedef).
+Returns
+[ListThemesResponseResponseTypeDef](./type_defs.md#listthemesresponseresponsetypedef).
 
 ### list_user_groups
+
+Lists the Amazon QuickSight groups that an Amazon QuickSight user is a member
+of.
 
 Type annotations for `boto3.client("quicksight").list_user_groups` method.
 
 Boto3 documentation:
 [QuickSight.Client.list_user_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_user_groups)
+
+Arguments mapping described in
+[ListUserGroupsRequestTypeDef](./type_defs.md#listusergroupsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1621,14 +2052,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListUserGroupsResponseTypeDef](./type_defs.md#listusergroupsresponsetypedef).
+[ListUserGroupsResponseResponseTypeDef](./type_defs.md#listusergroupsresponseresponsetypedef).
 
 ### list_users
+
+Returns a list of all of the Amazon QuickSight users belonging to this account.
 
 Type annotations for `boto3.client("quicksight").list_users` method.
 
 Boto3 documentation:
 [QuickSight.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.list_users)
+
+Arguments mapping described in
+[ListUsersRequestTypeDef](./type_defs.md#listusersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1637,14 +2073,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
+Returns
+[ListUsersResponseResponseTypeDef](./type_defs.md#listusersresponseresponsetypedef).
 
 ### register_user
+
+.
 
 Type annotations for `boto3.client("quicksight").register_user` method.
 
 Boto3 documentation:
 [QuickSight.Client.register_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.register_user)
+
+Arguments mapping described in
+[RegisterUserRequestTypeDef](./type_defs.md#registeruserrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1663,14 +2105,19 @@ Keyword-only arguments:
 - `ExternalLoginId`: `str`
 
 Returns
-[RegisterUserResponseTypeDef](./type_defs.md#registeruserresponsetypedef).
+[RegisterUserResponseResponseTypeDef](./type_defs.md#registeruserresponseresponsetypedef).
 
 ### restore_analysis
+
+Restores an analysis.
 
 Type annotations for `boto3.client("quicksight").restore_analysis` method.
 
 Boto3 documentation:
 [QuickSight.Client.restore_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.restore_analysis)
+
+Arguments mapping described in
+[RestoreAnalysisRequestTypeDef](./type_defs.md#restoreanalysisrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1678,14 +2125,19 @@ Keyword-only arguments:
 - `AnalysisId`: `str` *(required)*
 
 Returns
-[RestoreAnalysisResponseTypeDef](./type_defs.md#restoreanalysisresponsetypedef).
+[RestoreAnalysisResponseResponseTypeDef](./type_defs.md#restoreanalysisresponseresponsetypedef).
 
 ### search_analyses
+
+Searches for analyses that belong to the user specified in the filter.
 
 Type annotations for `boto3.client("quicksight").search_analyses` method.
 
 Boto3 documentation:
 [QuickSight.Client.search_analyses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.search_analyses)
+
+Arguments mapping described in
+[SearchAnalysesRequestTypeDef](./type_defs.md#searchanalysesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1697,14 +2149,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[SearchAnalysesResponseTypeDef](./type_defs.md#searchanalysesresponsetypedef).
+[SearchAnalysesResponseResponseTypeDef](./type_defs.md#searchanalysesresponseresponsetypedef).
 
 ### search_dashboards
+
+Searches for dashboards that belong to a user.
 
 Type annotations for `boto3.client("quicksight").search_dashboards` method.
 
 Boto3 documentation:
 [QuickSight.Client.search_dashboards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.search_dashboards)
+
+Arguments mapping described in
+[SearchDashboardsRequestTypeDef](./type_defs.md#searchdashboardsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1716,14 +2173,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[SearchDashboardsResponseTypeDef](./type_defs.md#searchdashboardsresponsetypedef).
+[SearchDashboardsResponseResponseTypeDef](./type_defs.md#searchdashboardsresponseresponsetypedef).
 
 ### search_folders
+
+Searches the subfolders in a folder.
 
 Type annotations for `boto3.client("quicksight").search_folders` method.
 
 Boto3 documentation:
 [QuickSight.Client.search_folders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.search_folders)
+
+Arguments mapping described in
+[SearchFoldersRequestTypeDef](./type_defs.md#searchfoldersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1735,14 +2197,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[SearchFoldersResponseTypeDef](./type_defs.md#searchfoldersresponsetypedef).
+[SearchFoldersResponseResponseTypeDef](./type_defs.md#searchfoldersresponseresponsetypedef).
 
 ### tag_resource
+
+Assigns one or more tags (key-value pairs) to the specified QuickSight
+resource.
 
 Type annotations for `boto3.client("quicksight").tag_resource` method.
 
 Boto3 documentation:
 [QuickSight.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1750,14 +2218,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns
-[TagResourceResponseTypeDef](./type_defs.md#tagresourceresponsetypedef).
+[TagResourceResponseResponseTypeDef](./type_defs.md#tagresourceresponseresponsetypedef).
 
 ### untag_resource
+
+Removes a tag or tags from a resource.
 
 Type annotations for `boto3.client("quicksight").untag_resource` method.
 
 Boto3 documentation:
 [QuickSight.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1765,15 +2238,20 @@ Keyword-only arguments:
 - `TagKeys`: `List`\[`str`\] *(required)*
 
 Returns
-[UntagResourceResponseTypeDef](./type_defs.md#untagresourceresponsetypedef).
+[UntagResourceResponseResponseTypeDef](./type_defs.md#untagresourceresponseresponsetypedef).
 
 ### update_account_customization
+
+Updates Amazon QuickSight customizations the current AWS Region.
 
 Type annotations for `boto3.client("quicksight").update_account_customization`
 method.
 
 Boto3 documentation:
 [QuickSight.Client.update_account_customization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_account_customization)
+
+Arguments mapping described in
+[UpdateAccountCustomizationRequestTypeDef](./type_defs.md#updateaccountcustomizationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1784,15 +2262,20 @@ Keyword-only arguments:
 - `Namespace`: `str`
 
 Returns
-[UpdateAccountCustomizationResponseTypeDef](./type_defs.md#updateaccountcustomizationresponsetypedef).
+[UpdateAccountCustomizationResponseResponseTypeDef](./type_defs.md#updateaccountcustomizationresponseresponsetypedef).
 
 ### update_account_settings
+
+Updates the Amazon QuickSight settings in your AWS account.
 
 Type annotations for `boto3.client("quicksight").update_account_settings`
 method.
 
 Boto3 documentation:
 [QuickSight.Client.update_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_account_settings)
+
+Arguments mapping described in
+[UpdateAccountSettingsRequestTypeDef](./type_defs.md#updateaccountsettingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1801,14 +2284,22 @@ Keyword-only arguments:
 - `NotificationEmail`: `str`
 
 Returns
-[UpdateAccountSettingsResponseTypeDef](./type_defs.md#updateaccountsettingsresponsetypedef).
+[UpdateAccountSettingsResponseResponseTypeDef](./type_defs.md#updateaccountsettingsresponseresponsetypedef).
 
 ### update_analysis
+
+Updates an analysis in Amazon QuickSight See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/quicksight-2018-04-01/UpdateAnalysis>`\_
+**Request Syntax** response = client.update_analysis( AwsAccountId='string',
+AnalysisId='string', Name='string',...
 
 Type annotations for `boto3.client("quicksight").update_analysis` method.
 
 Boto3 documentation:
 [QuickSight.Client.update_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_analysis)
+
+Arguments mapping described in
+[UpdateAnalysisRequestTypeDef](./type_defs.md#updateanalysisrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1822,15 +2313,20 @@ Keyword-only arguments:
 - `ThemeArn`: `str`
 
 Returns
-[UpdateAnalysisResponseTypeDef](./type_defs.md#updateanalysisresponsetypedef).
+[UpdateAnalysisResponseResponseTypeDef](./type_defs.md#updateanalysisresponseresponsetypedef).
 
 ### update_analysis_permissions
+
+Updates the read and write permissions for an analysis.
 
 Type annotations for `boto3.client("quicksight").update_analysis_permissions`
 method.
 
 Boto3 documentation:
 [QuickSight.Client.update_analysis_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_analysis_permissions)
+
+Arguments mapping described in
+[UpdateAnalysisPermissionsRequestTypeDef](./type_defs.md#updateanalysispermissionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1842,14 +2338,19 @@ Keyword-only arguments:
   `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 Returns
-[UpdateAnalysisPermissionsResponseTypeDef](./type_defs.md#updateanalysispermissionsresponsetypedef).
+[UpdateAnalysisPermissionsResponseResponseTypeDef](./type_defs.md#updateanalysispermissionsresponseresponsetypedef).
 
 ### update_dashboard
+
+Updates a dashboard in an AWS account.
 
 Type annotations for `boto3.client("quicksight").update_dashboard` method.
 
 Boto3 documentation:
 [QuickSight.Client.update_dashboard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_dashboard)
+
+Arguments mapping described in
+[UpdateDashboardRequestTypeDef](./type_defs.md#updatedashboardrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1866,15 +2367,20 @@ Keyword-only arguments:
 - `ThemeArn`: `str`
 
 Returns
-[UpdateDashboardResponseTypeDef](./type_defs.md#updatedashboardresponsetypedef).
+[UpdateDashboardResponseResponseTypeDef](./type_defs.md#updatedashboardresponseresponsetypedef).
 
 ### update_dashboard_permissions
+
+Updates read and write permissions on a dashboard.
 
 Type annotations for `boto3.client("quicksight").update_dashboard_permissions`
 method.
 
 Boto3 documentation:
 [QuickSight.Client.update_dashboard_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_dashboard_permissions)
+
+Arguments mapping described in
+[UpdateDashboardPermissionsRequestTypeDef](./type_defs.md#updatedashboardpermissionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1886,15 +2392,20 @@ Keyword-only arguments:
   `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 Returns
-[UpdateDashboardPermissionsResponseTypeDef](./type_defs.md#updatedashboardpermissionsresponsetypedef).
+[UpdateDashboardPermissionsResponseResponseTypeDef](./type_defs.md#updatedashboardpermissionsresponseresponsetypedef).
 
 ### update_dashboard_published_version
+
+Updates the published version of a dashboard.
 
 Type annotations for
 `boto3.client("quicksight").update_dashboard_published_version` method.
 
 Boto3 documentation:
 [QuickSight.Client.update_dashboard_published_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_dashboard_published_version)
+
+Arguments mapping described in
+[UpdateDashboardPublishedVersionRequestTypeDef](./type_defs.md#updatedashboardpublishedversionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1903,14 +2414,19 @@ Keyword-only arguments:
 - `VersionNumber`: `int` *(required)*
 
 Returns
-[UpdateDashboardPublishedVersionResponseTypeDef](./type_defs.md#updatedashboardpublishedversionresponsetypedef).
+[UpdateDashboardPublishedVersionResponseResponseTypeDef](./type_defs.md#updatedashboardpublishedversionresponseresponsetypedef).
 
 ### update_data_set
+
+Updates a dataset.
 
 Type annotations for `boto3.client("quicksight").update_data_set` method.
 
 Boto3 documentation:
 [QuickSight.Client.update_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_data_set)
+
+Arguments mapping described in
+[UpdateDataSetRequestTypeDef](./type_defs.md#updatedatasetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1933,15 +2449,20 @@ Keyword-only arguments:
   `List`\[[ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef)\]
 
 Returns
-[UpdateDataSetResponseTypeDef](./type_defs.md#updatedatasetresponsetypedef).
+[UpdateDataSetResponseResponseTypeDef](./type_defs.md#updatedatasetresponseresponsetypedef).
 
 ### update_data_set_permissions
+
+Updates the permissions on a dataset.
 
 Type annotations for `boto3.client("quicksight").update_data_set_permissions`
 method.
 
 Boto3 documentation:
 [QuickSight.Client.update_data_set_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_data_set_permissions)
+
+Arguments mapping described in
+[UpdateDataSetPermissionsRequestTypeDef](./type_defs.md#updatedatasetpermissionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1953,14 +2474,19 @@ Keyword-only arguments:
   `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 Returns
-[UpdateDataSetPermissionsResponseTypeDef](./type_defs.md#updatedatasetpermissionsresponsetypedef).
+[UpdateDataSetPermissionsResponseResponseTypeDef](./type_defs.md#updatedatasetpermissionsresponseresponsetypedef).
 
 ### update_data_source
+
+Updates a data source.
 
 Type annotations for `boto3.client("quicksight").update_data_source` method.
 
 Boto3 documentation:
 [QuickSight.Client.update_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_data_source)
+
+Arguments mapping described in
+[UpdateDataSourceRequestTypeDef](./type_defs.md#updatedatasourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1976,15 +2502,20 @@ Keyword-only arguments:
 - `SslProperties`: [SslPropertiesTypeDef](./type_defs.md#sslpropertiestypedef)
 
 Returns
-[UpdateDataSourceResponseTypeDef](./type_defs.md#updatedatasourceresponsetypedef).
+[UpdateDataSourceResponseResponseTypeDef](./type_defs.md#updatedatasourceresponseresponsetypedef).
 
 ### update_data_source_permissions
+
+Updates the permissions to a data source.
 
 Type annotations for
 `boto3.client("quicksight").update_data_source_permissions` method.
 
 Boto3 documentation:
 [QuickSight.Client.update_data_source_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_data_source_permissions)
+
+Arguments mapping described in
+[UpdateDataSourcePermissionsRequestTypeDef](./type_defs.md#updatedatasourcepermissionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1996,14 +2527,19 @@ Keyword-only arguments:
   `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 Returns
-[UpdateDataSourcePermissionsResponseTypeDef](./type_defs.md#updatedatasourcepermissionsresponsetypedef).
+[UpdateDataSourcePermissionsResponseResponseTypeDef](./type_defs.md#updatedatasourcepermissionsresponseresponsetypedef).
 
 ### update_folder
+
+Updates the name of a folder.
 
 Type annotations for `boto3.client("quicksight").update_folder` method.
 
 Boto3 documentation:
 [QuickSight.Client.update_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_folder)
+
+Arguments mapping described in
+[UpdateFolderRequestTypeDef](./type_defs.md#updatefolderrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2012,15 +2548,20 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[UpdateFolderResponseTypeDef](./type_defs.md#updatefolderresponsetypedef).
+[UpdateFolderResponseResponseTypeDef](./type_defs.md#updatefolderresponseresponsetypedef).
 
 ### update_folder_permissions
+
+Updates permissions of a folder.
 
 Type annotations for `boto3.client("quicksight").update_folder_permissions`
 method.
 
 Boto3 documentation:
 [QuickSight.Client.update_folder_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_folder_permissions)
+
+Arguments mapping described in
+[UpdateFolderPermissionsRequestTypeDef](./type_defs.md#updatefolderpermissionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2032,14 +2573,19 @@ Keyword-only arguments:
   `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 Returns
-[UpdateFolderPermissionsResponseTypeDef](./type_defs.md#updatefolderpermissionsresponsetypedef).
+[UpdateFolderPermissionsResponseResponseTypeDef](./type_defs.md#updatefolderpermissionsresponseresponsetypedef).
 
 ### update_group
+
+Changes a group description.
 
 Type annotations for `boto3.client("quicksight").update_group` method.
 
 Boto3 documentation:
 [QuickSight.Client.update_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_group)
+
+Arguments mapping described in
+[UpdateGroupRequestTypeDef](./type_defs.md#updategrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -2049,15 +2595,20 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[UpdateGroupResponseTypeDef](./type_defs.md#updategroupresponsetypedef).
+[UpdateGroupResponseResponseTypeDef](./type_defs.md#updategroupresponseresponsetypedef).
 
 ### update_iam_policy_assignment
+
+Updates an existing IAM policy assignment.
 
 Type annotations for `boto3.client("quicksight").update_iam_policy_assignment`
 method.
 
 Boto3 documentation:
 [QuickSight.Client.update_iam_policy_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_iam_policy_assignment)
+
+Arguments mapping described in
+[UpdateIAMPolicyAssignmentRequestTypeDef](./type_defs.md#updateiampolicyassignmentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2070,14 +2621,20 @@ Keyword-only arguments:
 - `Identities`: `Dict`\[`str`, `List`\[`str`\]\]
 
 Returns
-[UpdateIAMPolicyAssignmentResponseTypeDef](./type_defs.md#updateiampolicyassignmentresponsetypedef).
+[UpdateIAMPolicyAssignmentResponseResponseTypeDef](./type_defs.md#updateiampolicyassignmentresponseresponsetypedef).
 
 ### update_template
+
+Updates a template from an existing Amazon QuickSight analysis or another
+template.
 
 Type annotations for `boto3.client("quicksight").update_template` method.
 
 Boto3 documentation:
 [QuickSight.Client.update_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_template)
+
+Arguments mapping described in
+[UpdateTemplateRequestTypeDef](./type_defs.md#updatetemplaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -2090,14 +2647,19 @@ Keyword-only arguments:
 - `Name`: `str`
 
 Returns
-[UpdateTemplateResponseTypeDef](./type_defs.md#updatetemplateresponsetypedef).
+[UpdateTemplateResponseResponseTypeDef](./type_defs.md#updatetemplateresponseresponsetypedef).
 
 ### update_template_alias
+
+Updates the template alias of a template.
 
 Type annotations for `boto3.client("quicksight").update_template_alias` method.
 
 Boto3 documentation:
 [QuickSight.Client.update_template_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_template_alias)
+
+Arguments mapping described in
+[UpdateTemplateAliasRequestTypeDef](./type_defs.md#updatetemplatealiasrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2107,15 +2669,20 @@ Keyword-only arguments:
 - `TemplateVersionNumber`: `int` *(required)*
 
 Returns
-[UpdateTemplateAliasResponseTypeDef](./type_defs.md#updatetemplatealiasresponsetypedef).
+[UpdateTemplateAliasResponseResponseTypeDef](./type_defs.md#updatetemplatealiasresponseresponsetypedef).
 
 ### update_template_permissions
+
+Updates the resource permissions for a template.
 
 Type annotations for `boto3.client("quicksight").update_template_permissions`
 method.
 
 Boto3 documentation:
 [QuickSight.Client.update_template_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_template_permissions)
+
+Arguments mapping described in
+[UpdateTemplatePermissionsRequestTypeDef](./type_defs.md#updatetemplatepermissionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2127,14 +2694,19 @@ Keyword-only arguments:
   `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 Returns
-[UpdateTemplatePermissionsResponseTypeDef](./type_defs.md#updatetemplatepermissionsresponsetypedef).
+[UpdateTemplatePermissionsResponseResponseTypeDef](./type_defs.md#updatetemplatepermissionsresponseresponsetypedef).
 
 ### update_theme
+
+Updates a theme.
 
 Type annotations for `boto3.client("quicksight").update_theme` method.
 
 Boto3 documentation:
 [QuickSight.Client.update_theme](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_theme)
+
+Arguments mapping described in
+[UpdateThemeRequestTypeDef](./type_defs.md#updatethemerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2147,14 +2719,19 @@ Keyword-only arguments:
   [ThemeConfigurationTypeDef](./type_defs.md#themeconfigurationtypedef)
 
 Returns
-[UpdateThemeResponseTypeDef](./type_defs.md#updatethemeresponsetypedef).
+[UpdateThemeResponseResponseTypeDef](./type_defs.md#updatethemeresponseresponsetypedef).
 
 ### update_theme_alias
+
+Updates an alias of a theme.
 
 Type annotations for `boto3.client("quicksight").update_theme_alias` method.
 
 Boto3 documentation:
 [QuickSight.Client.update_theme_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_theme_alias)
+
+Arguments mapping described in
+[UpdateThemeAliasRequestTypeDef](./type_defs.md#updatethemealiasrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2164,15 +2741,20 @@ Keyword-only arguments:
 - `ThemeVersionNumber`: `int` *(required)*
 
 Returns
-[UpdateThemeAliasResponseTypeDef](./type_defs.md#updatethemealiasresponsetypedef).
+[UpdateThemeAliasResponseResponseTypeDef](./type_defs.md#updatethemealiasresponseresponsetypedef).
 
 ### update_theme_permissions
+
+Updates the resource permissions for a theme.
 
 Type annotations for `boto3.client("quicksight").update_theme_permissions`
 method.
 
 Boto3 documentation:
 [QuickSight.Client.update_theme_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_theme_permissions)
+
+Arguments mapping described in
+[UpdateThemePermissionsRequestTypeDef](./type_defs.md#updatethemepermissionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2184,14 +2766,19 @@ Keyword-only arguments:
   `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 Returns
-[UpdateThemePermissionsResponseTypeDef](./type_defs.md#updatethemepermissionsresponsetypedef).
+[UpdateThemePermissionsResponseResponseTypeDef](./type_defs.md#updatethemepermissionsresponseresponsetypedef).
 
 ### update_user
+
+Updates an Amazon QuickSight user.
 
 Type annotations for `boto3.client("quicksight").update_user` method.
 
 Boto3 documentation:
 [QuickSight.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_user)
+
+Arguments mapping described in
+[UpdateUserRequestTypeDef](./type_defs.md#updateuserrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2206,7 +2793,8 @@ Keyword-only arguments:
 - `CustomFederationProviderUrl`: `str`
 - `ExternalLoginId`: `str`
 
-Returns [UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef).
+Returns
+[UpdateUserResponseResponseTypeDef](./type_defs.md#updateuserresponseresponsetypedef).
 
 ### get_paginator
 

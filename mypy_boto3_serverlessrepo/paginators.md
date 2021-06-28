@@ -37,7 +37,7 @@ Arguments for `ListApplicationDependenciesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListApplicationDependenciesPaginator.paginate` returns
-`Iterator`\[[ListApplicationDependenciesResponseTypeDef](./type_defs.md#listapplicationdependenciesresponsetypedef)\].
+`Iterator`\[[ListApplicationDependenciesResponseResponseTypeDef](./type_defs.md#listapplicationdependenciesresponseresponsetypedef)\].
 
 ## ListApplicationVersionsPaginator
 
@@ -63,7 +63,7 @@ Arguments for `ListApplicationVersionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListApplicationVersionsPaginator.paginate` returns
-`Iterator`\[[ListApplicationVersionsResponseTypeDef](./type_defs.md#listapplicationversionsresponsetypedef)\].
+`Iterator`\[[ListApplicationVersionsResponseResponseTypeDef](./type_defs.md#listapplicationversionsresponseresponsetypedef)\].
 
 ## ListApplicationsPaginator
 
@@ -88,4 +88,4 @@ Arguments for `ListApplicationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListApplicationsPaginator.paginate` returns
-`Iterator`\[[ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef)\].
+`Iterator`\[[ListApplicationsResponseResponseTypeDef](./type_defs.md#listapplicationsresponseresponsetypedef)\].

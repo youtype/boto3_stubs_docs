@@ -104,6 +104,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("personalize").can_paginate` method.
 
 Boto3 documentation:
@@ -117,11 +119,16 @@ Returns `bool`.
 
 ### create_batch_inference_job
 
+Creates a batch inference job.
+
 Type annotations for `boto3.client("personalize").create_batch_inference_job`
 method.
 
 Boto3 documentation:
 [Personalize.Client.create_batch_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_batch_inference_job)
+
+Arguments mapping described in
+[CreateBatchInferenceJobRequestTypeDef](./type_defs.md#createbatchinferencejobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -140,14 +147,19 @@ Keyword-only arguments:
   [BatchInferenceJobConfigTypeDef](./type_defs.md#batchinferencejobconfigtypedef)
 
 Returns
-[CreateBatchInferenceJobResponseTypeDef](./type_defs.md#createbatchinferencejobresponsetypedef).
+[CreateBatchInferenceJobResponseResponseTypeDef](./type_defs.md#createbatchinferencejobresponseresponsetypedef).
 
 ### create_campaign
+
+Creates a campaign by deploying a solution version.
 
 Type annotations for `boto3.client("personalize").create_campaign` method.
 
 Boto3 documentation:
 [Personalize.Client.create_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_campaign)
+
+Arguments mapping described in
+[CreateCampaignRequestTypeDef](./type_defs.md#createcampaignrequesttypedef).
 
 Keyword-only arguments:
 
@@ -158,14 +170,19 @@ Keyword-only arguments:
   [CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef)
 
 Returns
-[CreateCampaignResponseTypeDef](./type_defs.md#createcampaignresponsetypedef).
+[CreateCampaignResponseResponseTypeDef](./type_defs.md#createcampaignresponseresponsetypedef).
 
 ### create_dataset
+
+Creates an empty dataset and adds it to the specified dataset group.
 
 Type annotations for `boto3.client("personalize").create_dataset` method.
 
 Boto3 documentation:
 [Personalize.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset)
+
+Arguments mapping described in
+[CreateDatasetRequestTypeDef](./type_defs.md#createdatasetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -175,15 +192,20 @@ Keyword-only arguments:
 - `datasetType`: `str` *(required)*
 
 Returns
-[CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
+[CreateDatasetResponseResponseTypeDef](./type_defs.md#createdatasetresponseresponsetypedef).
 
 ### create_dataset_export_job
+
+Creates a job that exports data from your dataset to an Amazon S3 bucket.
 
 Type annotations for `boto3.client("personalize").create_dataset_export_job`
 method.
 
 Boto3 documentation:
 [Personalize.Client.create_dataset_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_export_job)
+
+Arguments mapping described in
+[CreateDatasetExportJobRequestTypeDef](./type_defs.md#createdatasetexportjobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -196,14 +218,19 @@ Keyword-only arguments:
 - `ingestionMode`: [IngestionModeType](./literals.md#ingestionmodetype)
 
 Returns
-[CreateDatasetExportJobResponseTypeDef](./type_defs.md#createdatasetexportjobresponsetypedef).
+[CreateDatasetExportJobResponseResponseTypeDef](./type_defs.md#createdatasetexportjobresponseresponsetypedef).
 
 ### create_dataset_group
+
+Creates an empty dataset group.
 
 Type annotations for `boto3.client("personalize").create_dataset_group` method.
 
 Boto3 documentation:
 [Personalize.Client.create_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_group)
+
+Arguments mapping described in
+[CreateDatasetGroupRequestTypeDef](./type_defs.md#createdatasetgrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -212,15 +239,21 @@ Keyword-only arguments:
 - `kmsKeyArn`: `str`
 
 Returns
-[CreateDatasetGroupResponseTypeDef](./type_defs.md#createdatasetgroupresponsetypedef).
+[CreateDatasetGroupResponseResponseTypeDef](./type_defs.md#createdatasetgroupresponseresponsetypedef).
 
 ### create_dataset_import_job
+
+Creates a job that imports training data from your data source (an Amazon S3
+bucket) to an Amazon Personalize dataset.
 
 Type annotations for `boto3.client("personalize").create_dataset_import_job`
 method.
 
 Boto3 documentation:
 [Personalize.Client.create_dataset_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_import_job)
+
+Arguments mapping described in
+[CreateDatasetImportJobRequestTypeDef](./type_defs.md#createdatasetimportjobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -231,14 +264,22 @@ Keyword-only arguments:
 - `roleArn`: `str` *(required)*
 
 Returns
-[CreateDatasetImportJobResponseTypeDef](./type_defs.md#createdatasetimportjobresponsetypedef).
+[CreateDatasetImportJobResponseResponseTypeDef](./type_defs.md#createdatasetimportjobresponseresponsetypedef).
 
 ### create_event_tracker
+
+Creates an event tracker that you use when adding event data to a specified
+dataset group using the
+`PutEvents <https://docs.aws.amazon.com/personalize/latest/dg/API_UBS_PutEvents.html>`\_\_
+API.
 
 Type annotations for `boto3.client("personalize").create_event_tracker` method.
 
 Boto3 documentation:
 [Personalize.Client.create_event_tracker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_event_tracker)
+
+Arguments mapping described in
+[CreateEventTrackerRequestTypeDef](./type_defs.md#createeventtrackerrequesttypedef).
 
 Keyword-only arguments:
 
@@ -246,14 +287,19 @@ Keyword-only arguments:
 - `datasetGroupArn`: `str` *(required)*
 
 Returns
-[CreateEventTrackerResponseTypeDef](./type_defs.md#createeventtrackerresponsetypedef).
+[CreateEventTrackerResponseResponseTypeDef](./type_defs.md#createeventtrackerresponseresponsetypedef).
 
 ### create_filter
+
+Creates a recommendation filter.
 
 Type annotations for `boto3.client("personalize").create_filter` method.
 
 Boto3 documentation:
 [Personalize.Client.create_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_filter)
+
+Arguments mapping described in
+[CreateFilterRequestTypeDef](./type_defs.md#createfilterrequesttypedef).
 
 Keyword-only arguments:
 
@@ -262,14 +308,19 @@ Keyword-only arguments:
 - `filterExpression`: `str` *(required)*
 
 Returns
-[CreateFilterResponseTypeDef](./type_defs.md#createfilterresponsetypedef).
+[CreateFilterResponseResponseTypeDef](./type_defs.md#createfilterresponseresponsetypedef).
 
 ### create_schema
+
+Creates an Amazon Personalize schema from the specified schema string.
 
 Type annotations for `boto3.client("personalize").create_schema` method.
 
 Boto3 documentation:
 [Personalize.Client.create_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_schema)
+
+Arguments mapping described in
+[CreateSchemaRequestTypeDef](./type_defs.md#createschemarequesttypedef).
 
 Keyword-only arguments:
 
@@ -277,14 +328,19 @@ Keyword-only arguments:
 - `schema`: `str` *(required)*
 
 Returns
-[CreateSchemaResponseTypeDef](./type_defs.md#createschemaresponsetypedef).
+[CreateSchemaResponseResponseTypeDef](./type_defs.md#createschemaresponseresponsetypedef).
 
 ### create_solution
+
+Creates the configuration for training a model.
 
 Type annotations for `boto3.client("personalize").create_solution` method.
 
 Boto3 documentation:
 [Personalize.Client.create_solution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_solution)
+
+Arguments mapping described in
+[CreateSolutionRequestTypeDef](./type_defs.md#createsolutionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -298,9 +354,11 @@ Keyword-only arguments:
   [SolutionConfigTypeDef](./type_defs.md#solutionconfigtypedef)
 
 Returns
-[CreateSolutionResponseTypeDef](./type_defs.md#createsolutionresponsetypedef).
+[CreateSolutionResponseResponseTypeDef](./type_defs.md#createsolutionresponseresponsetypedef).
 
 ### create_solution_version
+
+Trains or retrains an active solution.
 
 Type annotations for `boto3.client("personalize").create_solution_version`
 method.
@@ -308,20 +366,28 @@ method.
 Boto3 documentation:
 [Personalize.Client.create_solution_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_solution_version)
 
+Arguments mapping described in
+[CreateSolutionVersionRequestTypeDef](./type_defs.md#createsolutionversionrequesttypedef).
+
 Keyword-only arguments:
 
 - `solutionArn`: `str` *(required)*
 - `trainingMode`: [TrainingModeType](./literals.md#trainingmodetype)
 
 Returns
-[CreateSolutionVersionResponseTypeDef](./type_defs.md#createsolutionversionresponsetypedef).
+[CreateSolutionVersionResponseResponseTypeDef](./type_defs.md#createsolutionversionresponseresponsetypedef).
 
 ### delete_campaign
+
+Removes a campaign by deleting the solution deployment.
 
 Type annotations for `boto3.client("personalize").delete_campaign` method.
 
 Boto3 documentation:
 [Personalize.Client.delete_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_campaign)
+
+Arguments mapping described in
+[DeleteCampaignRequestTypeDef](./type_defs.md#deletecampaignrequesttypedef).
 
 Keyword-only arguments:
 
@@ -329,10 +395,15 @@ Keyword-only arguments:
 
 ### delete_dataset
 
+Deletes a dataset.
+
 Type annotations for `boto3.client("personalize").delete_dataset` method.
 
 Boto3 documentation:
 [Personalize.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_dataset)
+
+Arguments mapping described in
+[DeleteDatasetRequestTypeDef](./type_defs.md#deletedatasetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -340,10 +411,15 @@ Keyword-only arguments:
 
 ### delete_dataset_group
 
+Deletes a dataset group.
+
 Type annotations for `boto3.client("personalize").delete_dataset_group` method.
 
 Boto3 documentation:
 [Personalize.Client.delete_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_dataset_group)
+
+Arguments mapping described in
+[DeleteDatasetGroupRequestTypeDef](./type_defs.md#deletedatasetgrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -351,10 +427,15 @@ Keyword-only arguments:
 
 ### delete_event_tracker
 
+Deletes the event tracker.
+
 Type annotations for `boto3.client("personalize").delete_event_tracker` method.
 
 Boto3 documentation:
 [Personalize.Client.delete_event_tracker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_event_tracker)
+
+Arguments mapping described in
+[DeleteEventTrackerRequestTypeDef](./type_defs.md#deleteeventtrackerrequesttypedef).
 
 Keyword-only arguments:
 
@@ -362,10 +443,15 @@ Keyword-only arguments:
 
 ### delete_filter
 
+Deletes a filter.
+
 Type annotations for `boto3.client("personalize").delete_filter` method.
 
 Boto3 documentation:
 [Personalize.Client.delete_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_filter)
+
+Arguments mapping described in
+[DeleteFilterRequestTypeDef](./type_defs.md#deletefilterrequesttypedef).
 
 Keyword-only arguments:
 
@@ -373,10 +459,15 @@ Keyword-only arguments:
 
 ### delete_schema
 
+Deletes a schema.
+
 Type annotations for `boto3.client("personalize").delete_schema` method.
 
 Boto3 documentation:
 [Personalize.Client.delete_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_schema)
+
+Arguments mapping described in
+[DeleteSchemaRequestTypeDef](./type_defs.md#deleteschemarequesttypedef).
 
 Keyword-only arguments:
 
@@ -384,10 +475,15 @@ Keyword-only arguments:
 
 ### delete_solution
 
+Deletes all versions of a solution and the `Solution` object itself.
+
 Type annotations for `boto3.client("personalize").delete_solution` method.
 
 Boto3 documentation:
 [Personalize.Client.delete_solution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_solution)
+
+Arguments mapping described in
+[DeleteSolutionRequestTypeDef](./type_defs.md#deletesolutionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -395,19 +491,28 @@ Keyword-only arguments:
 
 ### describe_algorithm
 
+Describes the given algorithm.
+
 Type annotations for `boto3.client("personalize").describe_algorithm` method.
 
 Boto3 documentation:
 [Personalize.Client.describe_algorithm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_algorithm)
+
+Arguments mapping described in
+[DescribeAlgorithmRequestTypeDef](./type_defs.md#describealgorithmrequesttypedef).
 
 Keyword-only arguments:
 
 - `algorithmArn`: `str` *(required)*
 
 Returns
-[DescribeAlgorithmResponseTypeDef](./type_defs.md#describealgorithmresponsetypedef).
+[DescribeAlgorithmResponseResponseTypeDef](./type_defs.md#describealgorithmresponseresponsetypedef).
 
 ### describe_batch_inference_job
+
+Gets the properties of a batch inference job including name, Amazon Resource
+Name (ARN), status, input and output configurations, and the ARN of the
+solution version used to generate the recommendations.
 
 Type annotations for `boto3.client("personalize").describe_batch_inference_job`
 method.
@@ -415,42 +520,58 @@ method.
 Boto3 documentation:
 [Personalize.Client.describe_batch_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_batch_inference_job)
 
+Arguments mapping described in
+[DescribeBatchInferenceJobRequestTypeDef](./type_defs.md#describebatchinferencejobrequesttypedef).
+
 Keyword-only arguments:
 
 - `batchInferenceJobArn`: `str` *(required)*
 
 Returns
-[DescribeBatchInferenceJobResponseTypeDef](./type_defs.md#describebatchinferencejobresponsetypedef).
+[DescribeBatchInferenceJobResponseResponseTypeDef](./type_defs.md#describebatchinferencejobresponseresponsetypedef).
 
 ### describe_campaign
+
+Describes the given campaign, including its status.
 
 Type annotations for `boto3.client("personalize").describe_campaign` method.
 
 Boto3 documentation:
 [Personalize.Client.describe_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_campaign)
 
+Arguments mapping described in
+[DescribeCampaignRequestTypeDef](./type_defs.md#describecampaignrequesttypedef).
+
 Keyword-only arguments:
 
 - `campaignArn`: `str` *(required)*
 
 Returns
-[DescribeCampaignResponseTypeDef](./type_defs.md#describecampaignresponsetypedef).
+[DescribeCampaignResponseResponseTypeDef](./type_defs.md#describecampaignresponseresponsetypedef).
 
 ### describe_dataset
+
+Describes the given dataset.
 
 Type annotations for `boto3.client("personalize").describe_dataset` method.
 
 Boto3 documentation:
 [Personalize.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset)
 
+Arguments mapping described in
+[DescribeDatasetRequestTypeDef](./type_defs.md#describedatasetrequesttypedef).
+
 Keyword-only arguments:
 
 - `datasetArn`: `str` *(required)*
 
 Returns
-[DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
+[DescribeDatasetResponseResponseTypeDef](./type_defs.md#describedatasetresponseresponsetypedef).
 
 ### describe_dataset_export_job
+
+Describes the dataset export job created by CreateDatasetExportJob , including
+the export job status.
 
 Type annotations for `boto3.client("personalize").describe_dataset_export_job`
 method.
@@ -458,14 +579,19 @@ method.
 Boto3 documentation:
 [Personalize.Client.describe_dataset_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_export_job)
 
+Arguments mapping described in
+[DescribeDatasetExportJobRequestTypeDef](./type_defs.md#describedatasetexportjobrequesttypedef).
+
 Keyword-only arguments:
 
 - `datasetExportJobArn`: `str` *(required)*
 
 Returns
-[DescribeDatasetExportJobResponseTypeDef](./type_defs.md#describedatasetexportjobresponsetypedef).
+[DescribeDatasetExportJobResponseResponseTypeDef](./type_defs.md#describedatasetexportjobresponseresponsetypedef).
 
 ### describe_dataset_group
+
+Describes the given dataset group.
 
 Type annotations for `boto3.client("personalize").describe_dataset_group`
 method.
@@ -473,14 +599,20 @@ method.
 Boto3 documentation:
 [Personalize.Client.describe_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_group)
 
+Arguments mapping described in
+[DescribeDatasetGroupRequestTypeDef](./type_defs.md#describedatasetgrouprequesttypedef).
+
 Keyword-only arguments:
 
 - `datasetGroupArn`: `str` *(required)*
 
 Returns
-[DescribeDatasetGroupResponseTypeDef](./type_defs.md#describedatasetgroupresponsetypedef).
+[DescribeDatasetGroupResponseResponseTypeDef](./type_defs.md#describedatasetgroupresponseresponsetypedef).
 
 ### describe_dataset_import_job
+
+Describes the dataset import job created by CreateDatasetImportJob , including
+the import job status.
 
 Type annotations for `boto3.client("personalize").describe_dataset_import_job`
 method.
@@ -488,14 +620,19 @@ method.
 Boto3 documentation:
 [Personalize.Client.describe_dataset_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_import_job)
 
+Arguments mapping described in
+[DescribeDatasetImportJobRequestTypeDef](./type_defs.md#describedatasetimportjobrequesttypedef).
+
 Keyword-only arguments:
 
 - `datasetImportJobArn`: `str` *(required)*
 
 Returns
-[DescribeDatasetImportJobResponseTypeDef](./type_defs.md#describedatasetimportjobresponsetypedef).
+[DescribeDatasetImportJobResponseResponseTypeDef](./type_defs.md#describedatasetimportjobresponseresponsetypedef).
 
 ### describe_event_tracker
+
+Describes an event tracker.
 
 Type annotations for `boto3.client("personalize").describe_event_tracker`
 method.
@@ -503,14 +640,19 @@ method.
 Boto3 documentation:
 [Personalize.Client.describe_event_tracker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_event_tracker)
 
+Arguments mapping described in
+[DescribeEventTrackerRequestTypeDef](./type_defs.md#describeeventtrackerrequesttypedef).
+
 Keyword-only arguments:
 
 - `eventTrackerArn`: `str` *(required)*
 
 Returns
-[DescribeEventTrackerResponseTypeDef](./type_defs.md#describeeventtrackerresponsetypedef).
+[DescribeEventTrackerResponseResponseTypeDef](./type_defs.md#describeeventtrackerresponseresponsetypedef).
 
 ### describe_feature_transformation
+
+Describes the given feature transformation.
 
 Type annotations for
 `boto3.client("personalize").describe_feature_transformation` method.
@@ -518,70 +660,95 @@ Type annotations for
 Boto3 documentation:
 [Personalize.Client.describe_feature_transformation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_feature_transformation)
 
+Arguments mapping described in
+[DescribeFeatureTransformationRequestTypeDef](./type_defs.md#describefeaturetransformationrequesttypedef).
+
 Keyword-only arguments:
 
 - `featureTransformationArn`: `str` *(required)*
 
 Returns
-[DescribeFeatureTransformationResponseTypeDef](./type_defs.md#describefeaturetransformationresponsetypedef).
+[DescribeFeatureTransformationResponseResponseTypeDef](./type_defs.md#describefeaturetransformationresponseresponsetypedef).
 
 ### describe_filter
+
+Describes a filter's properties.
 
 Type annotations for `boto3.client("personalize").describe_filter` method.
 
 Boto3 documentation:
 [Personalize.Client.describe_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_filter)
 
+Arguments mapping described in
+[DescribeFilterRequestTypeDef](./type_defs.md#describefilterrequesttypedef).
+
 Keyword-only arguments:
 
 - `filterArn`: `str` *(required)*
 
 Returns
-[DescribeFilterResponseTypeDef](./type_defs.md#describefilterresponsetypedef).
+[DescribeFilterResponseResponseTypeDef](./type_defs.md#describefilterresponseresponsetypedef).
 
 ### describe_recipe
+
+Describes a recipe.
 
 Type annotations for `boto3.client("personalize").describe_recipe` method.
 
 Boto3 documentation:
 [Personalize.Client.describe_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_recipe)
 
+Arguments mapping described in
+[DescribeRecipeRequestTypeDef](./type_defs.md#describereciperequesttypedef).
+
 Keyword-only arguments:
 
 - `recipeArn`: `str` *(required)*
 
 Returns
-[DescribeRecipeResponseTypeDef](./type_defs.md#describereciperesponsetypedef).
+[DescribeRecipeResponseResponseTypeDef](./type_defs.md#describereciperesponseresponsetypedef).
 
 ### describe_schema
+
+Describes a schema.
 
 Type annotations for `boto3.client("personalize").describe_schema` method.
 
 Boto3 documentation:
 [Personalize.Client.describe_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_schema)
 
+Arguments mapping described in
+[DescribeSchemaRequestTypeDef](./type_defs.md#describeschemarequesttypedef).
+
 Keyword-only arguments:
 
 - `schemaArn`: `str` *(required)*
 
 Returns
-[DescribeSchemaResponseTypeDef](./type_defs.md#describeschemaresponsetypedef).
+[DescribeSchemaResponseResponseTypeDef](./type_defs.md#describeschemaresponseresponsetypedef).
 
 ### describe_solution
+
+Describes a solution.
 
 Type annotations for `boto3.client("personalize").describe_solution` method.
 
 Boto3 documentation:
 [Personalize.Client.describe_solution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_solution)
 
+Arguments mapping described in
+[DescribeSolutionRequestTypeDef](./type_defs.md#describesolutionrequesttypedef).
+
 Keyword-only arguments:
 
 - `solutionArn`: `str` *(required)*
 
 Returns
-[DescribeSolutionResponseTypeDef](./type_defs.md#describesolutionresponsetypedef).
+[DescribeSolutionResponseResponseTypeDef](./type_defs.md#describesolutionresponseresponsetypedef).
 
 ### describe_solution_version
+
+Describes a specific version of a solution.
 
 Type annotations for `boto3.client("personalize").describe_solution_version`
 method.
@@ -589,14 +756,19 @@ method.
 Boto3 documentation:
 [Personalize.Client.describe_solution_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_solution_version)
 
+Arguments mapping described in
+[DescribeSolutionVersionRequestTypeDef](./type_defs.md#describesolutionversionrequesttypedef).
+
 Keyword-only arguments:
 
 - `solutionVersionArn`: `str` *(required)*
 
 Returns
-[DescribeSolutionVersionResponseTypeDef](./type_defs.md#describesolutionversionresponsetypedef).
+[DescribeSolutionVersionResponseResponseTypeDef](./type_defs.md#describesolutionversionresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("personalize").generate_presigned_url`
 method.
@@ -615,25 +787,36 @@ Returns `str`.
 
 ### get_solution_metrics
 
+Gets the metrics for the specified solution version.
+
 Type annotations for `boto3.client("personalize").get_solution_metrics` method.
 
 Boto3 documentation:
 [Personalize.Client.get_solution_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.get_solution_metrics)
+
+Arguments mapping described in
+[GetSolutionMetricsRequestTypeDef](./type_defs.md#getsolutionmetricsrequesttypedef).
 
 Keyword-only arguments:
 
 - `solutionVersionArn`: `str` *(required)*
 
 Returns
-[GetSolutionMetricsResponseTypeDef](./type_defs.md#getsolutionmetricsresponsetypedef).
+[GetSolutionMetricsResponseResponseTypeDef](./type_defs.md#getsolutionmetricsresponseresponsetypedef).
 
 ### list_batch_inference_jobs
+
+Gets a list of the batch inference jobs that have been performed off of a
+solution version.
 
 Type annotations for `boto3.client("personalize").list_batch_inference_jobs`
 method.
 
 Boto3 documentation:
 [Personalize.Client.list_batch_inference_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_batch_inference_jobs)
+
+Arguments mapping described in
+[ListBatchInferenceJobsRequestTypeDef](./type_defs.md#listbatchinferencejobsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -642,14 +825,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListBatchInferenceJobsResponseTypeDef](./type_defs.md#listbatchinferencejobsresponsetypedef).
+[ListBatchInferenceJobsResponseResponseTypeDef](./type_defs.md#listbatchinferencejobsresponseresponsetypedef).
 
 ### list_campaigns
+
+Returns a list of campaigns that use the given solution.
 
 Type annotations for `boto3.client("personalize").list_campaigns` method.
 
 Boto3 documentation:
 [Personalize.Client.list_campaigns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_campaigns)
+
+Arguments mapping described in
+[ListCampaignsRequestTypeDef](./type_defs.md#listcampaignsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -658,9 +846,11 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListCampaignsResponseTypeDef](./type_defs.md#listcampaignsresponsetypedef).
+[ListCampaignsResponseResponseTypeDef](./type_defs.md#listcampaignsresponseresponsetypedef).
 
 ### list_dataset_export_jobs
+
+Returns a list of dataset export jobs that use the given dataset.
 
 Type annotations for `boto3.client("personalize").list_dataset_export_jobs`
 method.
@@ -668,6 +858,9 @@ method.
 Boto3 documentation:
 [Personalize.Client.list_dataset_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_export_jobs)
 
+Arguments mapping described in
+[ListDatasetExportJobsRequestTypeDef](./type_defs.md#listdatasetexportjobsrequesttypedef).
+
 Keyword-only arguments:
 
 - `datasetArn`: `str`
@@ -675,14 +868,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListDatasetExportJobsResponseTypeDef](./type_defs.md#listdatasetexportjobsresponsetypedef).
+[ListDatasetExportJobsResponseResponseTypeDef](./type_defs.md#listdatasetexportjobsresponseresponsetypedef).
 
 ### list_dataset_groups
+
+Returns a list of dataset groups.
 
 Type annotations for `boto3.client("personalize").list_dataset_groups` method.
 
 Boto3 documentation:
 [Personalize.Client.list_dataset_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_groups)
+
+Arguments mapping described in
+[ListDatasetGroupsRequestTypeDef](./type_defs.md#listdatasetgroupsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -690,9 +888,11 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListDatasetGroupsResponseTypeDef](./type_defs.md#listdatasetgroupsresponsetypedef).
+[ListDatasetGroupsResponseResponseTypeDef](./type_defs.md#listdatasetgroupsresponseresponsetypedef).
 
 ### list_dataset_import_jobs
+
+Returns a list of dataset import jobs that use the given dataset.
 
 Type annotations for `boto3.client("personalize").list_dataset_import_jobs`
 method.
@@ -700,6 +900,9 @@ method.
 Boto3 documentation:
 [Personalize.Client.list_dataset_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_import_jobs)
 
+Arguments mapping described in
+[ListDatasetImportJobsRequestTypeDef](./type_defs.md#listdatasetimportjobsrequesttypedef).
+
 Keyword-only arguments:
 
 - `datasetArn`: `str`
@@ -707,15 +910,20 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListDatasetImportJobsResponseTypeDef](./type_defs.md#listdatasetimportjobsresponsetypedef).
+[ListDatasetImportJobsResponseResponseTypeDef](./type_defs.md#listdatasetimportjobsresponseresponsetypedef).
 
 ### list_datasets
+
+Returns the list of datasets contained in the given dataset group.
 
 Type annotations for `boto3.client("personalize").list_datasets` method.
 
 Boto3 documentation:
 [Personalize.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_datasets)
 
+Arguments mapping described in
+[ListDatasetsRequestTypeDef](./type_defs.md#listdatasetsrequesttypedef).
+
 Keyword-only arguments:
 
 - `datasetGroupArn`: `str`
@@ -723,15 +931,20 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
+[ListDatasetsResponseResponseTypeDef](./type_defs.md#listdatasetsresponseresponsetypedef).
 
 ### list_event_trackers
+
+Returns the list of event trackers associated with the account.
 
 Type annotations for `boto3.client("personalize").list_event_trackers` method.
 
 Boto3 documentation:
 [Personalize.Client.list_event_trackers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_event_trackers)
 
+Arguments mapping described in
+[ListEventTrackersRequestTypeDef](./type_defs.md#listeventtrackersrequesttypedef).
+
 Keyword-only arguments:
 
 - `datasetGroupArn`: `str`
@@ -739,15 +952,20 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListEventTrackersResponseTypeDef](./type_defs.md#listeventtrackersresponsetypedef).
+[ListEventTrackersResponseResponseTypeDef](./type_defs.md#listeventtrackersresponseresponsetypedef).
 
 ### list_filters
+
+Lists all filters that belong to a given dataset group.
 
 Type annotations for `boto3.client("personalize").list_filters` method.
 
 Boto3 documentation:
 [Personalize.Client.list_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_filters)
 
+Arguments mapping described in
+[ListFiltersRequestTypeDef](./type_defs.md#listfiltersrequesttypedef).
+
 Keyword-only arguments:
 
 - `datasetGroupArn`: `str`
@@ -755,14 +973,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListFiltersResponseTypeDef](./type_defs.md#listfiltersresponsetypedef).
+[ListFiltersResponseResponseTypeDef](./type_defs.md#listfiltersresponseresponsetypedef).
 
 ### list_recipes
+
+Returns a list of available recipes.
 
 Type annotations for `boto3.client("personalize").list_recipes` method.
 
 Boto3 documentation:
 [Personalize.Client.list_recipes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_recipes)
+
+Arguments mapping described in
+[ListRecipesRequestTypeDef](./type_defs.md#listrecipesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -772,14 +995,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListRecipesResponseTypeDef](./type_defs.md#listrecipesresponsetypedef).
+[ListRecipesResponseResponseTypeDef](./type_defs.md#listrecipesresponseresponsetypedef).
 
 ### list_schemas
+
+Returns the list of schemas associated with the account.
 
 Type annotations for `boto3.client("personalize").list_schemas` method.
 
 Boto3 documentation:
 [Personalize.Client.list_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_schemas)
+
+Arguments mapping described in
+[ListSchemasRequestTypeDef](./type_defs.md#listschemasrequesttypedef).
 
 Keyword-only arguments:
 
@@ -787,15 +1015,20 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef).
+[ListSchemasResponseResponseTypeDef](./type_defs.md#listschemasresponseresponsetypedef).
 
 ### list_solution_versions
+
+Returns a list of solution versions for the given solution.
 
 Type annotations for `boto3.client("personalize").list_solution_versions`
 method.
 
 Boto3 documentation:
 [Personalize.Client.list_solution_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_solution_versions)
+
+Arguments mapping described in
+[ListSolutionVersionsRequestTypeDef](./type_defs.md#listsolutionversionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -804,14 +1037,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListSolutionVersionsResponseTypeDef](./type_defs.md#listsolutionversionsresponsetypedef).
+[ListSolutionVersionsResponseResponseTypeDef](./type_defs.md#listsolutionversionsresponseresponsetypedef).
 
 ### list_solutions
+
+Returns a list of solutions that use the given dataset group.
 
 Type annotations for `boto3.client("personalize").list_solutions` method.
 
 Boto3 documentation:
 [Personalize.Client.list_solutions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_solutions)
+
+Arguments mapping described in
+[ListSolutionsRequestTypeDef](./type_defs.md#listsolutionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -820,9 +1058,12 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListSolutionsResponseTypeDef](./type_defs.md#listsolutionsresponsetypedef).
+[ListSolutionsResponseResponseTypeDef](./type_defs.md#listsolutionsresponseresponsetypedef).
 
 ### stop_solution_version_creation
+
+Stops creating a solution version that is in a state of CREATE_PENDING or
+CREATE IN_PROGRESS.
 
 Type annotations for
 `boto3.client("personalize").stop_solution_version_creation` method.
@@ -830,16 +1071,25 @@ Type annotations for
 Boto3 documentation:
 [Personalize.Client.stop_solution_version_creation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.stop_solution_version_creation)
 
+Arguments mapping described in
+[StopSolutionVersionCreationRequestTypeDef](./type_defs.md#stopsolutionversioncreationrequesttypedef).
+
 Keyword-only arguments:
 
 - `solutionVersionArn`: `str` *(required)*
 
 ### update_campaign
 
+Updates a campaign by either deploying a new solution or changing the value of
+the campaign's `minProvisionedTPS` parameter.
+
 Type annotations for `boto3.client("personalize").update_campaign` method.
 
 Boto3 documentation:
 [Personalize.Client.update_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.update_campaign)
+
+Arguments mapping described in
+[UpdateCampaignRequestTypeDef](./type_defs.md#updatecampaignrequesttypedef).
 
 Keyword-only arguments:
 
@@ -850,7 +1100,7 @@ Keyword-only arguments:
   [CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef)
 
 Returns
-[UpdateCampaignResponseTypeDef](./type_defs.md#updatecampaignresponsetypedef).
+[UpdateCampaignResponseResponseTypeDef](./type_defs.md#updatecampaignresponseresponsetypedef).
 
 ### get_paginator
 

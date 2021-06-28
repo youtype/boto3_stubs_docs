@@ -74,6 +74,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("timestream-write").can_paginate` method.
 
 Boto3 documentation:
@@ -87,10 +89,15 @@ Returns `bool`.
 
 ### create_database
 
+Creates a new Timestream database.
+
 Type annotations for `boto3.client("timestream-write").create_database` method.
 
 Boto3 documentation:
 [TimestreamWrite.Client.create_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.create_database)
+
+Arguments mapping described in
+[CreateDatabaseRequestTypeDef](./type_defs.md#createdatabaserequesttypedef).
 
 Keyword-only arguments:
 
@@ -99,14 +106,20 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDatabaseResponseTypeDef](./type_defs.md#createdatabaseresponsetypedef).
+[CreateDatabaseResponseResponseTypeDef](./type_defs.md#createdatabaseresponseresponsetypedef).
 
 ### create_table
+
+The CreateTable operation adds a new table to an existing database in your
+account.
 
 Type annotations for `boto3.client("timestream-write").create_table` method.
 
 Boto3 documentation:
 [TimestreamWrite.Client.create_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.create_table)
+
+Arguments mapping described in
+[CreateTableRequestTypeDef](./type_defs.md#createtablerequesttypedef).
 
 Keyword-only arguments:
 
@@ -117,14 +130,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateTableResponseTypeDef](./type_defs.md#createtableresponsetypedef).
+[CreateTableResponseResponseTypeDef](./type_defs.md#createtableresponseresponsetypedef).
 
 ### delete_database
+
+Deletes a given Timestream database.
 
 Type annotations for `boto3.client("timestream-write").delete_database` method.
 
 Boto3 documentation:
 [TimestreamWrite.Client.delete_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.delete_database)
+
+Arguments mapping described in
+[DeleteDatabaseRequestTypeDef](./type_defs.md#deletedatabaserequesttypedef).
 
 Keyword-only arguments:
 
@@ -132,10 +150,15 @@ Keyword-only arguments:
 
 ### delete_table
 
+Deletes a given Timestream table.
+
 Type annotations for `boto3.client("timestream-write").delete_table` method.
 
 Boto3 documentation:
 [TimestreamWrite.Client.delete_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.delete_table)
+
+Arguments mapping described in
+[DeleteTableRequestTypeDef](./type_defs.md#deletetablerequesttypedef).
 
 Keyword-only arguments:
 
@@ -144,20 +167,30 @@ Keyword-only arguments:
 
 ### describe_database
 
+Returns information about the database, including the database name, time that
+the database was created, and the total number of tables found within the
+database.
+
 Type annotations for `boto3.client("timestream-write").describe_database`
 method.
 
 Boto3 documentation:
 [TimestreamWrite.Client.describe_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.describe_database)
 
+Arguments mapping described in
+[DescribeDatabaseRequestTypeDef](./type_defs.md#describedatabaserequesttypedef).
+
 Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 
 Returns
-[DescribeDatabaseResponseTypeDef](./type_defs.md#describedatabaseresponsetypedef).
+[DescribeDatabaseResponseResponseTypeDef](./type_defs.md#describedatabaseresponseresponsetypedef).
 
 ### describe_endpoints
+
+DescribeEndpoints returns a list of available endpoints to make Timestream API
+calls against.
 
 Type annotations for `boto3.client("timestream-write").describe_endpoints`
 method.
@@ -166,14 +199,20 @@ Boto3 documentation:
 [TimestreamWrite.Client.describe_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.describe_endpoints)
 
 Returns
-[DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef).
+[DescribeEndpointsResponseResponseTypeDef](./type_defs.md#describeendpointsresponseresponsetypedef).
 
 ### describe_table
+
+Returns information about the table, including the table name, database name,
+retention duration of the memory store and the magnetic store.
 
 Type annotations for `boto3.client("timestream-write").describe_table` method.
 
 Boto3 documentation:
 [TimestreamWrite.Client.describe_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.describe_table)
+
+Arguments mapping described in
+[DescribeTableRequestTypeDef](./type_defs.md#describetablerequesttypedef).
 
 Keyword-only arguments:
 
@@ -181,9 +220,11 @@ Keyword-only arguments:
 - `TableName`: `str` *(required)*
 
 Returns
-[DescribeTableResponseTypeDef](./type_defs.md#describetableresponsetypedef).
+[DescribeTableResponseResponseTypeDef](./type_defs.md#describetableresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("timestream-write").generate_presigned_url`
 method.
@@ -202,10 +243,15 @@ Returns `str`.
 
 ### list_databases
 
+Returns a list of your Timestream databases.
+
 Type annotations for `boto3.client("timestream-write").list_databases` method.
 
 Boto3 documentation:
 [TimestreamWrite.Client.list_databases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_databases)
+
+Arguments mapping described in
+[ListDatabasesRequestTypeDef](./type_defs.md#listdatabasesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -213,14 +259,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDatabasesResponseTypeDef](./type_defs.md#listdatabasesresponsetypedef).
+[ListDatabasesResponseResponseTypeDef](./type_defs.md#listdatabasesresponseresponsetypedef).
 
 ### list_tables
+
+A list of tables, along with the name, status and retention properties of each
+table.
 
 Type annotations for `boto3.client("timestream-write").list_tables` method.
 
 Boto3 documentation:
 [TimestreamWrite.Client.list_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_tables)
+
+Arguments mapping described in
+[ListTablesRequestTypeDef](./type_defs.md#listtablesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -228,9 +280,12 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns [ListTablesResponseTypeDef](./type_defs.md#listtablesresponsetypedef).
+Returns
+[ListTablesResponseResponseTypeDef](./type_defs.md#listtablesresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+List all tags on a Timestream resource.
 
 Type annotations for `boto3.client("timestream-write").list_tags_for_resource`
 method.
@@ -238,19 +293,27 @@ method.
 Boto3 documentation:
 [TimestreamWrite.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### tag_resource
+
+Associate a set of tags with a Timestream resource.
 
 Type annotations for `boto3.client("timestream-write").tag_resource` method.
 
 Boto3 documentation:
 [TimestreamWrite.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -261,10 +324,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Removes the association of tags from a Timestream resource.
+
 Type annotations for `boto3.client("timestream-write").untag_resource` method.
 
 Boto3 documentation:
 [TimestreamWrite.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -275,10 +343,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_database
 
+Modifies the KMS key for an existing database.
+
 Type annotations for `boto3.client("timestream-write").update_database` method.
 
 Boto3 documentation:
 [TimestreamWrite.Client.update_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.update_database)
+
+Arguments mapping described in
+[UpdateDatabaseRequestTypeDef](./type_defs.md#updatedatabaserequesttypedef).
 
 Keyword-only arguments:
 
@@ -286,14 +359,20 @@ Keyword-only arguments:
 - `KmsKeyId`: `str` *(required)*
 
 Returns
-[UpdateDatabaseResponseTypeDef](./type_defs.md#updatedatabaseresponsetypedef).
+[UpdateDatabaseResponseResponseTypeDef](./type_defs.md#updatedatabaseresponseresponsetypedef).
 
 ### update_table
+
+Modifies the retention duration of the memory store and magnetic store for your
+Timestream table.
 
 Type annotations for `boto3.client("timestream-write").update_table` method.
 
 Boto3 documentation:
 [TimestreamWrite.Client.update_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.update_table)
+
+Arguments mapping described in
+[UpdateTableRequestTypeDef](./type_defs.md#updatetablerequesttypedef).
 
 Keyword-only arguments:
 
@@ -304,14 +383,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateTableResponseTypeDef](./type_defs.md#updatetableresponsetypedef).
+[UpdateTableResponseResponseTypeDef](./type_defs.md#updatetableresponseresponsetypedef).
 
 ### write_records
+
+The WriteRecords operation enables you to write your time series data into
+Timestream.
 
 Type annotations for `boto3.client("timestream-write").write_records` method.
 
 Boto3 documentation:
 [TimestreamWrite.Client.write_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.write_records)
+
+Arguments mapping described in
+[WriteRecordsRequestTypeDef](./type_defs.md#writerecordsrequesttypedef).
 
 Keyword-only arguments:
 

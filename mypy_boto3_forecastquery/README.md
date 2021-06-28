@@ -58,4 +58,6 @@ from mypy_boto3_forecastquery.type_defs import DataPointTypeDef, ...
 
 - [DataPointTypeDef](./type_defs.md#datapointtypedef)
 - [ForecastTypeDef](./type_defs.md#forecasttypedef)
-- [QueryForecastResponseTypeDef](./type_defs.md#queryforecastresponsetypedef)
+- [QueryForecastRequestTypeDef](./type_defs.md#queryforecastrequesttypedef)
+- [QueryForecastResponseResponseTypeDef](./type_defs.md#queryforecastresponseresponsetypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

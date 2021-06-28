@@ -95,6 +95,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("amplify").can_paginate` method.
 
 Boto3 documentation:
@@ -108,10 +110,15 @@ Returns `bool`.
 
 ### create_app
 
+Creates a new Amplify app.
+
 Type annotations for `boto3.client("amplify").create_app` method.
 
 Boto3 documentation:
 [Amplify.Client.create_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_app)
+
+Arguments mapping described in
+[CreateAppRequestTypeDef](./type_defs.md#createapprequesttypedef).
 
 Keyword-only arguments:
 
@@ -137,15 +144,21 @@ Keyword-only arguments:
 - `autoBranchCreationConfig`:
   [AutoBranchCreationConfigTypeDef](./type_defs.md#autobranchcreationconfigtypedef)
 
-Returns [CreateAppResultTypeDef](./type_defs.md#createappresulttypedef).
+Returns
+[CreateAppResultResponseTypeDef](./type_defs.md#createappresultresponsetypedef).
 
 ### create_backend_environment
+
+Creates a new backend environment for an Amplify app.
 
 Type annotations for `boto3.client("amplify").create_backend_environment`
 method.
 
 Boto3 documentation:
 [Amplify.Client.create_backend_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_backend_environment)
+
+Arguments mapping described in
+[CreateBackendEnvironmentRequestTypeDef](./type_defs.md#createbackendenvironmentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -155,14 +168,19 @@ Keyword-only arguments:
 - `deploymentArtifacts`: `str`
 
 Returns
-[CreateBackendEnvironmentResultTypeDef](./type_defs.md#createbackendenvironmentresulttypedef).
+[CreateBackendEnvironmentResultResponseTypeDef](./type_defs.md#createbackendenvironmentresultresponsetypedef).
 
 ### create_branch
+
+Creates a new branch for an Amplify app.
 
 Type annotations for `boto3.client("amplify").create_branch` method.
 
 Boto3 documentation:
 [Amplify.Client.create_branch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_branch)
+
+Arguments mapping described in
+[CreateBranchRequestTypeDef](./type_defs.md#createbranchrequesttypedef).
 
 Keyword-only arguments:
 
@@ -185,14 +203,20 @@ Keyword-only arguments:
 - `pullRequestEnvironmentName`: `str`
 - `backendEnvironmentArn`: `str`
 
-Returns [CreateBranchResultTypeDef](./type_defs.md#createbranchresulttypedef).
+Returns
+[CreateBranchResultResponseTypeDef](./type_defs.md#createbranchresultresponsetypedef).
 
 ### create_deployment
+
+Creates a deployment for a manually deployed Amplify app.
 
 Type annotations for `boto3.client("amplify").create_deployment` method.
 
 Boto3 documentation:
 [Amplify.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_deployment)
+
+Arguments mapping described in
+[CreateDeploymentRequestTypeDef](./type_defs.md#createdeploymentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -201,15 +225,20 @@ Keyword-only arguments:
 - `fileMap`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateDeploymentResultTypeDef](./type_defs.md#createdeploymentresulttypedef).
+[CreateDeploymentResultResponseTypeDef](./type_defs.md#createdeploymentresultresponsetypedef).
 
 ### create_domain_association
+
+Creates a new domain association for an Amplify app.
 
 Type annotations for `boto3.client("amplify").create_domain_association`
 method.
 
 Boto3 documentation:
 [Amplify.Client.create_domain_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_domain_association)
+
+Arguments mapping described in
+[CreateDomainAssociationRequestTypeDef](./type_defs.md#createdomainassociationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -223,14 +252,19 @@ Keyword-only arguments:
 - `autoSubDomainIAMRole`: `str`
 
 Returns
-[CreateDomainAssociationResultTypeDef](./type_defs.md#createdomainassociationresulttypedef).
+[CreateDomainAssociationResultResponseTypeDef](./type_defs.md#createdomainassociationresultresponsetypedef).
 
 ### create_webhook
+
+Creates a new webhook on an Amplify app.
 
 Type annotations for `boto3.client("amplify").create_webhook` method.
 
 Boto3 documentation:
 [Amplify.Client.create_webhook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.create_webhook)
+
+Arguments mapping described in
+[CreateWebhookRequestTypeDef](./type_defs.md#createwebhookrequesttypedef).
 
 Keyword-only arguments:
 
@@ -239,22 +273,30 @@ Keyword-only arguments:
 - `description`: `str`
 
 Returns
-[CreateWebhookResultTypeDef](./type_defs.md#createwebhookresulttypedef).
+[CreateWebhookResultResponseTypeDef](./type_defs.md#createwebhookresultresponsetypedef).
 
 ### delete_app
+
+Deletes an existing Amplify app specified by an app ID.
 
 Type annotations for `boto3.client("amplify").delete_app` method.
 
 Boto3 documentation:
 [Amplify.Client.delete_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_app)
 
+Arguments mapping described in
+[DeleteAppRequestTypeDef](./type_defs.md#deleteapprequesttypedef).
+
 Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 
-Returns [DeleteAppResultTypeDef](./type_defs.md#deleteappresulttypedef).
+Returns
+[DeleteAppResultResponseTypeDef](./type_defs.md#deleteappresultresponsetypedef).
 
 ### delete_backend_environment
+
+Deletes a backend environment for an Amplify app.
 
 Type annotations for `boto3.client("amplify").delete_backend_environment`
 method.
@@ -262,29 +304,40 @@ method.
 Boto3 documentation:
 [Amplify.Client.delete_backend_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_backend_environment)
 
+Arguments mapping described in
+[DeleteBackendEnvironmentRequestTypeDef](./type_defs.md#deletebackendenvironmentrequesttypedef).
+
 Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 - `environmentName`: `str` *(required)*
 
 Returns
-[DeleteBackendEnvironmentResultTypeDef](./type_defs.md#deletebackendenvironmentresulttypedef).
+[DeleteBackendEnvironmentResultResponseTypeDef](./type_defs.md#deletebackendenvironmentresultresponsetypedef).
 
 ### delete_branch
+
+Deletes a branch for an Amplify app.
 
 Type annotations for `boto3.client("amplify").delete_branch` method.
 
 Boto3 documentation:
 [Amplify.Client.delete_branch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_branch)
 
+Arguments mapping described in
+[DeleteBranchRequestTypeDef](./type_defs.md#deletebranchrequesttypedef).
+
 Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 - `branchName`: `str` *(required)*
 
-Returns [DeleteBranchResultTypeDef](./type_defs.md#deletebranchresulttypedef).
+Returns
+[DeleteBranchResultResponseTypeDef](./type_defs.md#deletebranchresultresponsetypedef).
 
 ### delete_domain_association
+
+Deletes a domain association for an Amplify app.
 
 Type annotations for `boto3.client("amplify").delete_domain_association`
 method.
@@ -292,20 +345,28 @@ method.
 Boto3 documentation:
 [Amplify.Client.delete_domain_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_domain_association)
 
+Arguments mapping described in
+[DeleteDomainAssociationRequestTypeDef](./type_defs.md#deletedomainassociationrequesttypedef).
+
 Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 - `domainName`: `str` *(required)*
 
 Returns
-[DeleteDomainAssociationResultTypeDef](./type_defs.md#deletedomainassociationresulttypedef).
+[DeleteDomainAssociationResultResponseTypeDef](./type_defs.md#deletedomainassociationresultresponsetypedef).
 
 ### delete_job
+
+Deletes a job for a branch of an Amplify app.
 
 Type annotations for `boto3.client("amplify").delete_job` method.
 
 Boto3 documentation:
 [Amplify.Client.delete_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_job)
+
+Arguments mapping described in
+[DeleteJobRequestTypeDef](./type_defs.md#deletejobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -313,40 +374,54 @@ Keyword-only arguments:
 - `branchName`: `str` *(required)*
 - `jobId`: `str` *(required)*
 
-Returns [DeleteJobResultTypeDef](./type_defs.md#deletejobresulttypedef).
+Returns
+[DeleteJobResultResponseTypeDef](./type_defs.md#deletejobresultresponsetypedef).
 
 ### delete_webhook
+
+Deletes a webhook.
 
 Type annotations for `boto3.client("amplify").delete_webhook` method.
 
 Boto3 documentation:
 [Amplify.Client.delete_webhook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.delete_webhook)
 
+Arguments mapping described in
+[DeleteWebhookRequestTypeDef](./type_defs.md#deletewebhookrequesttypedef).
+
 Keyword-only arguments:
 
 - `webhookId`: `str` *(required)*
 
 Returns
-[DeleteWebhookResultTypeDef](./type_defs.md#deletewebhookresulttypedef).
+[DeleteWebhookResultResponseTypeDef](./type_defs.md#deletewebhookresultresponsetypedef).
 
 ### generate_access_logs
+
+Returns the website access logs for a specific time range using a presigned
+URL.
 
 Type annotations for `boto3.client("amplify").generate_access_logs` method.
 
 Boto3 documentation:
 [Amplify.Client.generate_access_logs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.generate_access_logs)
 
+Arguments mapping described in
+[GenerateAccessLogsRequestTypeDef](./type_defs.md#generateaccesslogsrequesttypedef).
+
 Keyword-only arguments:
 
 - `domainName`: `str` *(required)*
 - `appId`: `str` *(required)*
-- `startTime`: `datetime`
-- `endTime`: `datetime`
+- `startTime`: `Union`\[`datetime`, `str`\]
+- `endTime`: `Union`\[`datetime`, `str`\]
 
 Returns
-[GenerateAccessLogsResultTypeDef](./type_defs.md#generateaccesslogsresulttypedef).
+[GenerateAccessLogsResultResponseTypeDef](./type_defs.md#generateaccesslogsresultresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("amplify").generate_presigned_url` method.
 
@@ -364,37 +439,53 @@ Returns `str`.
 
 ### get_app
 
+Returns an existing Amplify app by appID.
+
 Type annotations for `boto3.client("amplify").get_app` method.
 
 Boto3 documentation:
 [Amplify.Client.get_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_app)
 
+Arguments mapping described in
+[GetAppRequestTypeDef](./type_defs.md#getapprequesttypedef).
+
 Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 
-Returns [GetAppResultTypeDef](./type_defs.md#getappresulttypedef).
+Returns
+[GetAppResultResponseTypeDef](./type_defs.md#getappresultresponsetypedef).
 
 ### get_artifact_url
+
+Returns the artifact info that corresponds to an artifact id.
 
 Type annotations for `boto3.client("amplify").get_artifact_url` method.
 
 Boto3 documentation:
 [Amplify.Client.get_artifact_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_artifact_url)
 
+Arguments mapping described in
+[GetArtifactUrlRequestTypeDef](./type_defs.md#getartifacturlrequesttypedef).
+
 Keyword-only arguments:
 
 - `artifactId`: `str` *(required)*
 
 Returns
-[GetArtifactUrlResultTypeDef](./type_defs.md#getartifacturlresulttypedef).
+[GetArtifactUrlResultResponseTypeDef](./type_defs.md#getartifacturlresultresponsetypedef).
 
 ### get_backend_environment
+
+Returns a backend environment for an Amplify app.
 
 Type annotations for `boto3.client("amplify").get_backend_environment` method.
 
 Boto3 documentation:
 [Amplify.Client.get_backend_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_backend_environment)
+
+Arguments mapping described in
+[GetBackendEnvironmentRequestTypeDef](./type_defs.md#getbackendenvironmentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -402,28 +493,39 @@ Keyword-only arguments:
 - `environmentName`: `str` *(required)*
 
 Returns
-[GetBackendEnvironmentResultTypeDef](./type_defs.md#getbackendenvironmentresulttypedef).
+[GetBackendEnvironmentResultResponseTypeDef](./type_defs.md#getbackendenvironmentresultresponsetypedef).
 
 ### get_branch
+
+Returns a branch for an Amplify app.
 
 Type annotations for `boto3.client("amplify").get_branch` method.
 
 Boto3 documentation:
 [Amplify.Client.get_branch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_branch)
 
+Arguments mapping described in
+[GetBranchRequestTypeDef](./type_defs.md#getbranchrequesttypedef).
+
 Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 - `branchName`: `str` *(required)*
 
-Returns [GetBranchResultTypeDef](./type_defs.md#getbranchresulttypedef).
+Returns
+[GetBranchResultResponseTypeDef](./type_defs.md#getbranchresultresponsetypedef).
 
 ### get_domain_association
+
+Returns the domain information for an Amplify app.
 
 Type annotations for `boto3.client("amplify").get_domain_association` method.
 
 Boto3 documentation:
 [Amplify.Client.get_domain_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_domain_association)
+
+Arguments mapping described in
+[GetDomainAssociationRequestTypeDef](./type_defs.md#getdomainassociationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -431,14 +533,19 @@ Keyword-only arguments:
 - `domainName`: `str` *(required)*
 
 Returns
-[GetDomainAssociationResultTypeDef](./type_defs.md#getdomainassociationresulttypedef).
+[GetDomainAssociationResultResponseTypeDef](./type_defs.md#getdomainassociationresultresponsetypedef).
 
 ### get_job
+
+Returns a job for a branch of an Amplify app.
 
 Type annotations for `boto3.client("amplify").get_job` method.
 
 Boto3 documentation:
 [Amplify.Client.get_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_job)
+
+Arguments mapping described in
+[GetJobRequestTypeDef](./type_defs.md#getjobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -446,41 +553,59 @@ Keyword-only arguments:
 - `branchName`: `str` *(required)*
 - `jobId`: `str` *(required)*
 
-Returns [GetJobResultTypeDef](./type_defs.md#getjobresulttypedef).
+Returns
+[GetJobResultResponseTypeDef](./type_defs.md#getjobresultresponsetypedef).
 
 ### get_webhook
+
+Returns the webhook information that corresponds to a specified webhook ID.
 
 Type annotations for `boto3.client("amplify").get_webhook` method.
 
 Boto3 documentation:
 [Amplify.Client.get_webhook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.get_webhook)
 
+Arguments mapping described in
+[GetWebhookRequestTypeDef](./type_defs.md#getwebhookrequesttypedef).
+
 Keyword-only arguments:
 
 - `webhookId`: `str` *(required)*
 
-Returns [GetWebhookResultTypeDef](./type_defs.md#getwebhookresulttypedef).
+Returns
+[GetWebhookResultResponseTypeDef](./type_defs.md#getwebhookresultresponsetypedef).
 
 ### list_apps
+
+Returns a list of the existing Amplify apps.
 
 Type annotations for `boto3.client("amplify").list_apps` method.
 
 Boto3 documentation:
 [Amplify.Client.list_apps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_apps)
 
+Arguments mapping described in
+[ListAppsRequestTypeDef](./type_defs.md#listappsrequesttypedef).
+
 Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-Returns [ListAppsResultTypeDef](./type_defs.md#listappsresulttypedef).
+Returns
+[ListAppsResultResponseTypeDef](./type_defs.md#listappsresultresponsetypedef).
 
 ### list_artifacts
+
+Returns a list of artifacts for a specified app, branch, and job.
 
 Type annotations for `boto3.client("amplify").list_artifacts` method.
 
 Boto3 documentation:
 [Amplify.Client.list_artifacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_artifacts)
+
+Arguments mapping described in
+[ListArtifactsRequestTypeDef](./type_defs.md#listartifactsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -491,15 +616,20 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListArtifactsResultTypeDef](./type_defs.md#listartifactsresulttypedef).
+[ListArtifactsResultResponseTypeDef](./type_defs.md#listartifactsresultresponsetypedef).
 
 ### list_backend_environments
+
+Lists the backend environments for an Amplify app.
 
 Type annotations for `boto3.client("amplify").list_backend_environments`
 method.
 
 Boto3 documentation:
 [Amplify.Client.list_backend_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_backend_environments)
+
+Arguments mapping described in
+[ListBackendEnvironmentsRequestTypeDef](./type_defs.md#listbackendenvironmentsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -509,29 +639,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListBackendEnvironmentsResultTypeDef](./type_defs.md#listbackendenvironmentsresulttypedef).
+[ListBackendEnvironmentsResultResponseTypeDef](./type_defs.md#listbackendenvironmentsresultresponsetypedef).
 
 ### list_branches
+
+Lists the branches of an Amplify app.
 
 Type annotations for `boto3.client("amplify").list_branches` method.
 
 Boto3 documentation:
 [Amplify.Client.list_branches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_branches)
 
-Keyword-only arguments:
-
-- `appId`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-Returns [ListBranchesResultTypeDef](./type_defs.md#listbranchesresulttypedef).
-
-### list_domain_associations
-
-Type annotations for `boto3.client("amplify").list_domain_associations` method.
-
-Boto3 documentation:
-[Amplify.Client.list_domain_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_domain_associations)
+Arguments mapping described in
+[ListBranchesRequestTypeDef](./type_defs.md#listbranchesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -540,14 +660,40 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListDomainAssociationsResultTypeDef](./type_defs.md#listdomainassociationsresulttypedef).
+[ListBranchesResultResponseTypeDef](./type_defs.md#listbranchesresultresponsetypedef).
+
+### list_domain_associations
+
+Returns the domain associations for an Amplify app.
+
+Type annotations for `boto3.client("amplify").list_domain_associations` method.
+
+Boto3 documentation:
+[Amplify.Client.list_domain_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_domain_associations)
+
+Arguments mapping described in
+[ListDomainAssociationsRequestTypeDef](./type_defs.md#listdomainassociationsrequesttypedef).
+
+Keyword-only arguments:
+
+- `appId`: `str` *(required)*
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListDomainAssociationsResultResponseTypeDef](./type_defs.md#listdomainassociationsresultresponsetypedef).
 
 ### list_jobs
+
+Lists the jobs for a branch of an Amplify app.
 
 Type annotations for `boto3.client("amplify").list_jobs` method.
 
 Boto3 documentation:
 [Amplify.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_jobs)
+
+Arguments mapping described in
+[ListJobsRequestTypeDef](./type_defs.md#listjobsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -556,28 +702,39 @@ Keyword-only arguments:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-Returns [ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef).
+Returns
+[ListJobsResultResponseTypeDef](./type_defs.md#listjobsresultresponsetypedef).
 
 ### list_tags_for_resource
+
+Returns a list of tags for a specified Amazon Resource Name (ARN).
 
 Type annotations for `boto3.client("amplify").list_tags_for_resource` method.
 
 Boto3 documentation:
 [Amplify.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### list_webhooks
+
+Returns a list of webhooks for an Amplify app.
 
 Type annotations for `boto3.client("amplify").list_webhooks` method.
 
 Boto3 documentation:
 [Amplify.Client.list_webhooks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.list_webhooks)
+
+Arguments mapping described in
+[ListWebhooksRequestTypeDef](./type_defs.md#listwebhooksrequesttypedef).
 
 Keyword-only arguments:
 
@@ -585,14 +742,20 @@ Keyword-only arguments:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-Returns [ListWebhooksResultTypeDef](./type_defs.md#listwebhooksresulttypedef).
+Returns
+[ListWebhooksResultResponseTypeDef](./type_defs.md#listwebhooksresultresponsetypedef).
 
 ### start_deployment
+
+Starts a deployment for a manually deployed app.
 
 Type annotations for `boto3.client("amplify").start_deployment` method.
 
 Boto3 documentation:
 [Amplify.Client.start_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.start_deployment)
+
+Arguments mapping described in
+[StartDeploymentRequestTypeDef](./type_defs.md#startdeploymentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -602,14 +765,19 @@ Keyword-only arguments:
 - `sourceUrl`: `str`
 
 Returns
-[StartDeploymentResultTypeDef](./type_defs.md#startdeploymentresulttypedef).
+[StartDeploymentResultResponseTypeDef](./type_defs.md#startdeploymentresultresponsetypedef).
 
 ### start_job
+
+Starts a new job for a branch of an Amplify app.
 
 Type annotations for `boto3.client("amplify").start_job` method.
 
 Boto3 documentation:
 [Amplify.Client.start_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.start_job)
+
+Arguments mapping described in
+[StartJobRequestTypeDef](./type_defs.md#startjobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -620,16 +788,22 @@ Keyword-only arguments:
 - `jobReason`: `str`
 - `commitId`: `str`
 - `commitMessage`: `str`
-- `commitTime`: `datetime`
+- `commitTime`: `Union`\[`datetime`, `str`\]
 
-Returns [StartJobResultTypeDef](./type_defs.md#startjobresulttypedef).
+Returns
+[StartJobResultResponseTypeDef](./type_defs.md#startjobresultresponsetypedef).
 
 ### stop_job
+
+Stops a job that is in progress for a branch of an Amplify app.
 
 Type annotations for `boto3.client("amplify").stop_job` method.
 
 Boto3 documentation:
 [Amplify.Client.stop_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.stop_job)
+
+Arguments mapping described in
+[StopJobRequestTypeDef](./type_defs.md#stopjobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -637,14 +811,20 @@ Keyword-only arguments:
 - `branchName`: `str` *(required)*
 - `jobId`: `str` *(required)*
 
-Returns [StopJobResultTypeDef](./type_defs.md#stopjobresulttypedef).
+Returns
+[StopJobResultResponseTypeDef](./type_defs.md#stopjobresultresponsetypedef).
 
 ### tag_resource
+
+Tags the resource with a tag key and value.
 
 Type annotations for `boto3.client("amplify").tag_resource` method.
 
 Boto3 documentation:
 [Amplify.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -655,10 +835,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Untags a resource with a specified Amazon Resource Name (ARN).
+
 Type annotations for `boto3.client("amplify").untag_resource` method.
 
 Boto3 documentation:
 [Amplify.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -669,10 +854,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_app
 
+Updates an existing Amplify app.
+
 Type annotations for `boto3.client("amplify").update_app` method.
 
 Boto3 documentation:
 [Amplify.Client.update_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.update_app)
+
+Arguments mapping described in
+[UpdateAppRequestTypeDef](./type_defs.md#updateapprequesttypedef).
 
 Keyword-only arguments:
 
@@ -698,14 +888,20 @@ Keyword-only arguments:
 - `oauthToken`: `str`
 - `accessToken`: `str`
 
-Returns [UpdateAppResultTypeDef](./type_defs.md#updateappresulttypedef).
+Returns
+[UpdateAppResultResponseTypeDef](./type_defs.md#updateappresultresponsetypedef).
 
 ### update_branch
+
+Updates a branch for an Amplify app.
 
 Type annotations for `boto3.client("amplify").update_branch` method.
 
 Boto3 documentation:
 [Amplify.Client.update_branch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.update_branch)
+
+Arguments mapping described in
+[UpdateBranchRequestTypeDef](./type_defs.md#updatebranchrequesttypedef).
 
 Keyword-only arguments:
 
@@ -727,15 +923,21 @@ Keyword-only arguments:
 - `pullRequestEnvironmentName`: `str`
 - `backendEnvironmentArn`: `str`
 
-Returns [UpdateBranchResultTypeDef](./type_defs.md#updatebranchresulttypedef).
+Returns
+[UpdateBranchResultResponseTypeDef](./type_defs.md#updatebranchresultresponsetypedef).
 
 ### update_domain_association
+
+Creates a new domain association for an Amplify app.
 
 Type annotations for `boto3.client("amplify").update_domain_association`
 method.
 
 Boto3 documentation:
 [Amplify.Client.update_domain_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.update_domain_association)
+
+Arguments mapping described in
+[UpdateDomainAssociationRequestTypeDef](./type_defs.md#updatedomainassociationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -749,14 +951,19 @@ Keyword-only arguments:
 - `autoSubDomainIAMRole`: `str`
 
 Returns
-[UpdateDomainAssociationResultTypeDef](./type_defs.md#updatedomainassociationresulttypedef).
+[UpdateDomainAssociationResultResponseTypeDef](./type_defs.md#updatedomainassociationresultresponsetypedef).
 
 ### update_webhook
+
+Updates a webhook.
 
 Type annotations for `boto3.client("amplify").update_webhook` method.
 
 Boto3 documentation:
 [Amplify.Client.update_webhook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.update_webhook)
+
+Arguments mapping described in
+[UpdateWebhookRequestTypeDef](./type_defs.md#updatewebhookrequesttypedef).
 
 Keyword-only arguments:
 
@@ -765,7 +972,7 @@ Keyword-only arguments:
 - `description`: `str`
 
 Returns
-[UpdateWebhookResultTypeDef](./type_defs.md#updatewebhookresulttypedef).
+[UpdateWebhookResultResponseTypeDef](./type_defs.md#updatewebhookresultresponsetypedef).
 
 ### get_paginator
 

@@ -59,6 +59,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("migrationhub-config").can_paginate` method.
 
 Boto3 documentation:
@@ -72,11 +74,16 @@ Returns `bool`.
 
 ### create_home_region_control
 
+This API sets up the home region for the calling account only.
+
 Type annotations for
 `boto3.client("migrationhub-config").create_home_region_control` method.
 
 Boto3 documentation:
 [MigrationHubConfig.Client.create_home_region_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.create_home_region_control)
+
+Arguments mapping described in
+[CreateHomeRegionControlRequestTypeDef](./type_defs.md#createhomeregioncontrolrequesttypedef).
 
 Keyword-only arguments:
 
@@ -85,15 +92,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[CreateHomeRegionControlResultTypeDef](./type_defs.md#createhomeregioncontrolresulttypedef).
+[CreateHomeRegionControlResultResponseTypeDef](./type_defs.md#createhomeregioncontrolresultresponsetypedef).
 
 ### describe_home_region_controls
+
+This API permits filtering on the `ControlId` and `HomeRegion` fields.
 
 Type annotations for
 `boto3.client("migrationhub-config").describe_home_region_controls` method.
 
 Boto3 documentation:
 [MigrationHubConfig.Client.describe_home_region_controls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.describe_home_region_controls)
+
+Arguments mapping described in
+[DescribeHomeRegionControlsRequestTypeDef](./type_defs.md#describehomeregioncontrolsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -104,9 +116,11 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeHomeRegionControlsResultTypeDef](./type_defs.md#describehomeregioncontrolsresulttypedef).
+[DescribeHomeRegionControlsResultResponseTypeDef](./type_defs.md#describehomeregioncontrolsresultresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for
 `boto3.client("migrationhub-config").generate_presigned_url` method.
@@ -125,6 +139,8 @@ Returns `str`.
 
 ### get_home_region
 
+Returns the calling account’s home region, if configured.
+
 Type annotations for `boto3.client("migrationhub-config").get_home_region`
 method.
 
@@ -132,4 +148,4 @@ Boto3 documentation:
 [MigrationHubConfig.Client.get_home_region](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.get_home_region)
 
 Returns
-[GetHomeRegionResultTypeDef](./type_defs.md#gethomeregionresulttypedef).
+[GetHomeRegionResultResponseTypeDef](./type_defs.md#gethomeregionresultresponsetypedef).

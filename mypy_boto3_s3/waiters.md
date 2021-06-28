@@ -27,7 +27,7 @@ def get_bucket_exists_waiter() -> BucketExistsWaiter:
 ```
 
 Boto3 documentation:
-[S3.Waiter.bucket_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Waiter.bucket_exists)
+[S3.Waiter.bucket_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Waiter.BucketExists)
 
 Arguments for `BucketExistsWaiter.wait` method:
 
@@ -49,7 +49,7 @@ def get_bucket_not_exists_waiter() -> BucketNotExistsWaiter:
 ```
 
 Boto3 documentation:
-[S3.Waiter.bucket_not_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Waiter.bucket_not_exists)
+[S3.Waiter.bucket_not_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Waiter.BucketNotExists)
 
 Arguments for `BucketNotExistsWaiter.wait` method:
 
@@ -71,16 +71,16 @@ def get_object_exists_waiter() -> ObjectExistsWaiter:
 ```
 
 Boto3 documentation:
-[S3.Waiter.object_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Waiter.object_exists)
+[S3.Waiter.object_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Waiter.ObjectExists)
 
 Arguments for `ObjectExistsWaiter.wait` method:
 
 - `Bucket`: `str` *(required)*
 - `Key`: `str` *(required)*
 - `IfMatch`: `str`
-- `IfModifiedSince`: `datetime`
+- `IfModifiedSince`: `Union`\[`datetime`, `str`\]
 - `IfNoneMatch`: `str`
-- `IfUnmodifiedSince`: `datetime`
+- `IfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
 - `Range`: `str`
 - `VersionId`: `str`
 - `SSECustomerAlgorithm`: `str`
@@ -106,16 +106,16 @@ def get_object_not_exists_waiter() -> ObjectNotExistsWaiter:
 ```
 
 Boto3 documentation:
-[S3.Waiter.object_not_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Waiter.object_not_exists)
+[S3.Waiter.object_not_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Waiter.ObjectNotExists)
 
 Arguments for `ObjectNotExistsWaiter.wait` method:
 
 - `Bucket`: `str` *(required)*
 - `Key`: `str` *(required)*
 - `IfMatch`: `str`
-- `IfModifiedSince`: `datetime`
+- `IfModifiedSince`: `Union`\[`datetime`, `str`\]
 - `IfNoneMatch`: `str`
-- `IfUnmodifiedSince`: `datetime`
+- `IfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
 - `Range`: `str`
 - `VersionId`: `str`
 - `SSECustomerAlgorithm`: `str`

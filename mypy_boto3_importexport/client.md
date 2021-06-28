@@ -77,6 +77,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("importexport").can_paginate` method.
 
 Boto3 documentation:
@@ -90,24 +92,36 @@ Returns `bool`.
 
 ### cancel_job
 
+This operation cancels a specified job.
+
 Type annotations for `boto3.client("importexport").cancel_job` method.
 
 Boto3 documentation:
 [ImportExport.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.cancel_job)
+
+Arguments mapping described in
+[CancelJobInputTypeDef](./type_defs.md#canceljobinputtypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 - `APIVersion`: `str`
 
-Returns [CancelJobOutputTypeDef](./type_defs.md#canceljoboutputtypedef).
+Returns
+[CancelJobOutputResponseTypeDef](./type_defs.md#canceljoboutputresponsetypedef).
 
 ### create_job
+
+This operation initiates the process of scheduling an upload or download of
+your data.
 
 Type annotations for `boto3.client("importexport").create_job` method.
 
 Boto3 documentation:
 [ImportExport.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.create_job)
+
+Arguments mapping described in
+[CreateJobInputTypeDef](./type_defs.md#createjobinputtypedef).
 
 Keyword-only arguments:
 
@@ -117,9 +131,12 @@ Keyword-only arguments:
 - `ManifestAddendum`: `str`
 - `APIVersion`: `str`
 
-Returns [CreateJobOutputTypeDef](./type_defs.md#createjoboutputtypedef).
+Returns
+[CreateJobOutputResponseTypeDef](./type_defs.md#createjoboutputresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("importexport").generate_presigned_url`
 method.
@@ -138,10 +155,16 @@ Returns `str`.
 
 ### get_shipping_label
 
+This operation generates a pre-paid UPS shipping label that you will use to
+ship your device to AWS for processing.
+
 Type annotations for `boto3.client("importexport").get_shipping_label` method.
 
 Boto3 documentation:
 [ImportExport.Client.get_shipping_label](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.get_shipping_label)
+
+Arguments mapping described in
+[GetShippingLabelInputTypeDef](./type_defs.md#getshippinglabelinputtypedef).
 
 Keyword-only arguments:
 
@@ -159,28 +182,41 @@ Keyword-only arguments:
 - `APIVersion`: `str`
 
 Returns
-[GetShippingLabelOutputTypeDef](./type_defs.md#getshippinglabeloutputtypedef).
+[GetShippingLabelOutputResponseTypeDef](./type_defs.md#getshippinglabeloutputresponsetypedef).
 
 ### get_status
+
+This operation returns information about a job, including where the job is in
+the processing pipeline, the status of the results, and the signature value
+associated with the job.
 
 Type annotations for `boto3.client("importexport").get_status` method.
 
 Boto3 documentation:
 [ImportExport.Client.get_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.get_status)
 
+Arguments mapping described in
+[GetStatusInputTypeDef](./type_defs.md#getstatusinputtypedef).
+
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 - `APIVersion`: `str`
 
-Returns [GetStatusOutputTypeDef](./type_defs.md#getstatusoutputtypedef).
+Returns
+[GetStatusOutputResponseTypeDef](./type_defs.md#getstatusoutputresponsetypedef).
 
 ### list_jobs
+
+This operation returns the jobs associated with the requester.
 
 Type annotations for `boto3.client("importexport").list_jobs` method.
 
 Boto3 documentation:
 [ImportExport.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.list_jobs)
+
+Arguments mapping described in
+[ListJobsInputTypeDef](./type_defs.md#listjobsinputtypedef).
 
 Keyword-only arguments:
 
@@ -188,14 +224,21 @@ Keyword-only arguments:
 - `Marker`: `str`
 - `APIVersion`: `str`
 
-Returns [ListJobsOutputTypeDef](./type_defs.md#listjobsoutputtypedef).
+Returns
+[ListJobsOutputResponseTypeDef](./type_defs.md#listjobsoutputresponsetypedef).
 
 ### update_job
+
+You use this operation to change the parameters specified in the original
+manifest file by supplying a new manifest file.
 
 Type annotations for `boto3.client("importexport").update_job` method.
 
 Boto3 documentation:
 [ImportExport.Client.update_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.update_job)
+
+Arguments mapping described in
+[UpdateJobInputTypeDef](./type_defs.md#updatejobinputtypedef).
 
 Keyword-only arguments:
 
@@ -205,7 +248,8 @@ Keyword-only arguments:
 - `ValidateOnly`: `bool` *(required)*
 - `APIVersion`: `str`
 
-Returns [UpdateJobOutputTypeDef](./type_defs.md#updatejoboutputtypedef).
+Returns
+[UpdateJobOutputResponseTypeDef](./type_defs.md#updatejoboutputresponsetypedef).
 
 ### get_paginator
 

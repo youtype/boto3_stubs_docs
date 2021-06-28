@@ -79,11 +79,16 @@ Exceptions:
 
 ### add_notification_channel
 
+Adds a notification channel to DevOps Guru.
+
 Type annotations for `boto3.client("devops-guru").add_notification_channel`
 method.
 
 Boto3 documentation:
 [DevOpsGuru.Client.add_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.add_notification_channel)
+
+Arguments mapping described in
+[AddNotificationChannelRequestTypeDef](./type_defs.md#addnotificationchannelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -92,9 +97,11 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[AddNotificationChannelResponseTypeDef](./type_defs.md#addnotificationchannelresponsetypedef).
+[AddNotificationChannelResponseResponseTypeDef](./type_defs.md#addnotificationchannelresponseresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("devops-guru").can_paginate` method.
 
@@ -109,6 +116,9 @@ Returns `bool`.
 
 ### describe_account_health
 
+Returns the number of open reactive insights, the number of open proactive
+insights, and the number of metrics analyzed in your AWS account.
+
 Type annotations for `boto3.client("devops-guru").describe_account_health`
 method.
 
@@ -116,9 +126,13 @@ Boto3 documentation:
 [DevOpsGuru.Client.describe_account_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.describe_account_health)
 
 Returns
-[DescribeAccountHealthResponseTypeDef](./type_defs.md#describeaccounthealthresponsetypedef).
+[DescribeAccountHealthResponseResponseTypeDef](./type_defs.md#describeaccounthealthresponseresponsetypedef).
 
 ### describe_account_overview
+
+For the time range passed in, returns the number of open reactive insight that
+were created, the number of open proactive insights that were created, and the
+Mean Time to Recover (MTTR) for all closed reactive insights.
 
 Type annotations for `boto3.client("devops-guru").describe_account_overview`
 method.
@@ -126,63 +140,89 @@ method.
 Boto3 documentation:
 [DevOpsGuru.Client.describe_account_overview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.describe_account_overview)
 
+Arguments mapping described in
+[DescribeAccountOverviewRequestTypeDef](./type_defs.md#describeaccountoverviewrequesttypedef).
+
 Keyword-only arguments:
 
-- `FromTime`: `datetime` *(required)*
-- `ToTime`: `datetime`
+- `FromTime`: `Union`\[`datetime`, `str`\] *(required)*
+- `ToTime`: `Union`\[`datetime`, `str`\]
 
 Returns
-[DescribeAccountOverviewResponseTypeDef](./type_defs.md#describeaccountoverviewresponsetypedef).
+[DescribeAccountOverviewResponseResponseTypeDef](./type_defs.md#describeaccountoverviewresponseresponsetypedef).
 
 ### describe_anomaly
+
+Returns details about an anomaly that you specify using its ID.
 
 Type annotations for `boto3.client("devops-guru").describe_anomaly` method.
 
 Boto3 documentation:
 [DevOpsGuru.Client.describe_anomaly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.describe_anomaly)
 
+Arguments mapping described in
+[DescribeAnomalyRequestTypeDef](./type_defs.md#describeanomalyrequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[DescribeAnomalyResponseTypeDef](./type_defs.md#describeanomalyresponsetypedef).
+[DescribeAnomalyResponseResponseTypeDef](./type_defs.md#describeanomalyresponseresponsetypedef).
 
 ### describe_feedback
+
+Returns the most recent feedback submitted in the current AWS account and
+Region.
 
 Type annotations for `boto3.client("devops-guru").describe_feedback` method.
 
 Boto3 documentation:
 [DevOpsGuru.Client.describe_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.describe_feedback)
 
+Arguments mapping described in
+[DescribeFeedbackRequestTypeDef](./type_defs.md#describefeedbackrequesttypedef).
+
 Keyword-only arguments:
 
 - `InsightId`: `str`
 
 Returns
-[DescribeFeedbackResponseTypeDef](./type_defs.md#describefeedbackresponsetypedef).
+[DescribeFeedbackResponseResponseTypeDef](./type_defs.md#describefeedbackresponseresponsetypedef).
 
 ### describe_insight
+
+Returns details about an insight that you specify using its ID.
 
 Type annotations for `boto3.client("devops-guru").describe_insight` method.
 
 Boto3 documentation:
 [DevOpsGuru.Client.describe_insight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.describe_insight)
 
+Arguments mapping described in
+[DescribeInsightRequestTypeDef](./type_defs.md#describeinsightrequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[DescribeInsightResponseTypeDef](./type_defs.md#describeinsightresponsetypedef).
+[DescribeInsightResponseResponseTypeDef](./type_defs.md#describeinsightresponseresponsetypedef).
 
 ### describe_resource_collection_health
+
+Returns the number of open proactive insights, open reactive insights, and the
+Mean Time to Recover (MTTR) for all closed insights in resource collections in
+your account.
 
 Type annotations for
 `boto3.client("devops-guru").describe_resource_collection_health` method.
 
 Boto3 documentation:
 [DevOpsGuru.Client.describe_resource_collection_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.describe_resource_collection_health)
+
+Arguments mapping described in
+[DescribeResourceCollectionHealthRequestTypeDef](./type_defs.md#describeresourcecollectionhealthrequesttypedef).
 
 Keyword-only arguments:
 
@@ -192,9 +232,12 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeResourceCollectionHealthResponseTypeDef](./type_defs.md#describeresourcecollectionhealthresponsetypedef).
+[DescribeResourceCollectionHealthResponseResponseTypeDef](./type_defs.md#describeresourcecollectionhealthresponseresponsetypedef).
 
 ### describe_service_integration
+
+Returns the integration status of services that are integrated with DevOps
+Guru.
 
 Type annotations for `boto3.client("devops-guru").describe_service_integration`
 method.
@@ -203,9 +246,11 @@ Boto3 documentation:
 [DevOpsGuru.Client.describe_service_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.describe_service_integration)
 
 Returns
-[DescribeServiceIntegrationResponseTypeDef](./type_defs.md#describeserviceintegrationresponsetypedef).
+[DescribeServiceIntegrationResponseResponseTypeDef](./type_defs.md#describeserviceintegrationresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("devops-guru").generate_presigned_url`
 method.
@@ -224,25 +269,36 @@ Returns `str`.
 
 ### get_cost_estimation
 
+Returns an estimate of the monthly cost for DevOps Guru to analyze your AWS
+resources.
+
 Type annotations for `boto3.client("devops-guru").get_cost_estimation` method.
 
 Boto3 documentation:
 [DevOpsGuru.Client.get_cost_estimation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.get_cost_estimation)
+
+Arguments mapping described in
+[GetCostEstimationRequestTypeDef](./type_defs.md#getcostestimationrequesttypedef).
 
 Keyword-only arguments:
 
 - `NextToken`: `str`
 
 Returns
-[GetCostEstimationResponseTypeDef](./type_defs.md#getcostestimationresponsetypedef).
+[GetCostEstimationResponseResponseTypeDef](./type_defs.md#getcostestimationresponseresponsetypedef).
 
 ### get_resource_collection
+
+Returns lists AWS resources that are of the specified resource collection type.
 
 Type annotations for `boto3.client("devops-guru").get_resource_collection`
 method.
 
 Boto3 documentation:
 [DevOpsGuru.Client.get_resource_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.get_resource_collection)
+
+Arguments mapping described in
+[GetResourceCollectionRequestTypeDef](./type_defs.md#getresourcecollectionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -252,15 +308,21 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetResourceCollectionResponseTypeDef](./type_defs.md#getresourcecollectionresponsetypedef).
+[GetResourceCollectionResponseResponseTypeDef](./type_defs.md#getresourcecollectionresponseresponsetypedef).
 
 ### list_anomalies_for_insight
+
+Returns a list of the anomalies that belong to an insight that you specify
+using its ID.
 
 Type annotations for `boto3.client("devops-guru").list_anomalies_for_insight`
 method.
 
 Boto3 documentation:
 [DevOpsGuru.Client.list_anomalies_for_insight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.list_anomalies_for_insight)
+
+Arguments mapping described in
+[ListAnomaliesForInsightRequestTypeDef](./type_defs.md#listanomaliesforinsightrequesttypedef).
 
 Keyword-only arguments:
 
@@ -271,14 +333,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAnomaliesForInsightResponseTypeDef](./type_defs.md#listanomaliesforinsightresponsetypedef).
+[ListAnomaliesForInsightResponseResponseTypeDef](./type_defs.md#listanomaliesforinsightresponseresponsetypedef).
 
 ### list_events
+
+Returns a list of the events emitted by the resources that are evaluated by
+DevOps Guru.
 
 Type annotations for `boto3.client("devops-guru").list_events` method.
 
 Boto3 documentation:
 [DevOpsGuru.Client.list_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.list_events)
+
+Arguments mapping described in
+[ListEventsRequestTypeDef](./type_defs.md#listeventsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -288,14 +356,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns [ListEventsResponseTypeDef](./type_defs.md#listeventsresponsetypedef).
+Returns
+[ListEventsResponseResponseTypeDef](./type_defs.md#listeventsresponseresponsetypedef).
 
 ### list_insights
+
+Returns a list of insights in your AWS account.
 
 Type annotations for `boto3.client("devops-guru").list_insights` method.
 
 Boto3 documentation:
 [DevOpsGuru.Client.list_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.list_insights)
+
+Arguments mapping described in
+[ListInsightsRequestTypeDef](./type_defs.md#listinsightsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -306,9 +380,11 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListInsightsResponseTypeDef](./type_defs.md#listinsightsresponsetypedef).
+[ListInsightsResponseResponseTypeDef](./type_defs.md#listinsightsresponseresponsetypedef).
 
 ### list_notification_channels
+
+Returns a list of notification channels configured for DevOps Guru.
 
 Type annotations for `boto3.client("devops-guru").list_notification_channels`
 method.
@@ -316,19 +392,27 @@ method.
 Boto3 documentation:
 [DevOpsGuru.Client.list_notification_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.list_notification_channels)
 
+Arguments mapping described in
+[ListNotificationChannelsRequestTypeDef](./type_defs.md#listnotificationchannelsrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 
 Returns
-[ListNotificationChannelsResponseTypeDef](./type_defs.md#listnotificationchannelsresponsetypedef).
+[ListNotificationChannelsResponseResponseTypeDef](./type_defs.md#listnotificationchannelsresponseresponsetypedef).
 
 ### list_recommendations
+
+Returns a list of a specified insight's recommendations.
 
 Type annotations for `boto3.client("devops-guru").list_recommendations` method.
 
 Boto3 documentation:
 [DevOpsGuru.Client.list_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.list_recommendations)
+
+Arguments mapping described in
+[ListRecommendationsRequestTypeDef](./type_defs.md#listrecommendationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -337,14 +421,19 @@ Keyword-only arguments:
 - `Locale`: [LocaleType](./literals.md#localetype)
 
 Returns
-[ListRecommendationsResponseTypeDef](./type_defs.md#listrecommendationsresponsetypedef).
+[ListRecommendationsResponseResponseTypeDef](./type_defs.md#listrecommendationsresponseresponsetypedef).
 
 ### put_feedback
+
+Collects customer feedback about the specified insight.
 
 Type annotations for `boto3.client("devops-guru").put_feedback` method.
 
 Boto3 documentation:
 [DevOpsGuru.Client.put_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.put_feedback)
+
+Arguments mapping described in
+[PutFeedbackRequestTypeDef](./type_defs.md#putfeedbackrequesttypedef).
 
 Keyword-only arguments:
 
@@ -355,11 +444,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### remove_notification_channel
 
+Removes a notification channel from DevOps Guru.
+
 Type annotations for `boto3.client("devops-guru").remove_notification_channel`
 method.
 
 Boto3 documentation:
 [DevOpsGuru.Client.remove_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.remove_notification_channel)
+
+Arguments mapping described in
+[RemoveNotificationChannelRequestTypeDef](./type_defs.md#removenotificationchannelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -369,10 +463,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### search_insights
 
+Returns a list of insights in your AWS account.
+
 Type annotations for `boto3.client("devops-guru").search_insights` method.
 
 Boto3 documentation:
 [DevOpsGuru.Client.search_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.search_insights)
+
+Arguments mapping described in
+[SearchInsightsRequestTypeDef](./type_defs.md#searchinsightsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -385,15 +484,21 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[SearchInsightsResponseTypeDef](./type_defs.md#searchinsightsresponsetypedef).
+[SearchInsightsResponseResponseTypeDef](./type_defs.md#searchinsightsresponseresponsetypedef).
 
 ### start_cost_estimation
+
+Starts the creation of an estimate of the monthly cost to analyze your AWS
+resources.
 
 Type annotations for `boto3.client("devops-guru").start_cost_estimation`
 method.
 
 Boto3 documentation:
 [DevOpsGuru.Client.start_cost_estimation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.start_cost_estimation)
+
+Arguments mapping described in
+[StartCostEstimationRequestTypeDef](./type_defs.md#startcostestimationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -406,11 +511,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_resource_collection
 
+Updates the collection of resources that DevOps Guru analyzes.
+
 Type annotations for `boto3.client("devops-guru").update_resource_collection`
 method.
 
 Boto3 documentation:
 [DevOpsGuru.Client.update_resource_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.update_resource_collection)
+
+Arguments mapping described in
+[UpdateResourceCollectionRequestTypeDef](./type_defs.md#updateresourcecollectionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -425,11 +535,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_service_integration
 
+Enables or disables integration with a service that can be integrated with
+DevOps Guru.
+
 Type annotations for `boto3.client("devops-guru").update_service_integration`
 method.
 
 Boto3 documentation:
 [DevOpsGuru.Client.update_service_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.update_service_integration)
+
+Arguments mapping described in
+[UpdateServiceIntegrationRequestTypeDef](./type_defs.md#updateserviceintegrationrequesttypedef).
 
 Keyword-only arguments:
 

@@ -98,19 +98,36 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_iot1click_projects.type_defs import DescribePlacementResponseTypeDef, ...
+from mypy_boto3_iot1click_projects.type_defs import AssociateDeviceWithPlacementRequestTypeDef, ...
 ```
 
-- [DescribePlacementResponseTypeDef](./type_defs.md#describeplacementresponsetypedef)
-- [DescribeProjectResponseTypeDef](./type_defs.md#describeprojectresponsetypedef)
+- [AssociateDeviceWithPlacementRequestTypeDef](./type_defs.md#associatedevicewithplacementrequesttypedef)
+- [CreatePlacementRequestTypeDef](./type_defs.md#createplacementrequesttypedef)
+- [CreateProjectRequestTypeDef](./type_defs.md#createprojectrequesttypedef)
+- [DeletePlacementRequestTypeDef](./type_defs.md#deleteplacementrequesttypedef)
+- [DeleteProjectRequestTypeDef](./type_defs.md#deleteprojectrequesttypedef)
+- [DescribePlacementRequestTypeDef](./type_defs.md#describeplacementrequesttypedef)
+- [DescribePlacementResponseResponseTypeDef](./type_defs.md#describeplacementresponseresponsetypedef)
+- [DescribeProjectRequestTypeDef](./type_defs.md#describeprojectrequesttypedef)
+- [DescribeProjectResponseResponseTypeDef](./type_defs.md#describeprojectresponseresponsetypedef)
 - [DeviceTemplateTypeDef](./type_defs.md#devicetemplatetypedef)
-- [GetDevicesInPlacementResponseTypeDef](./type_defs.md#getdevicesinplacementresponsetypedef)
-- [ListPlacementsResponseTypeDef](./type_defs.md#listplacementsresponsetypedef)
-- [ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef)
-- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [DisassociateDeviceFromPlacementRequestTypeDef](./type_defs.md#disassociatedevicefromplacementrequesttypedef)
+- [GetDevicesInPlacementRequestTypeDef](./type_defs.md#getdevicesinplacementrequesttypedef)
+- [GetDevicesInPlacementResponseResponseTypeDef](./type_defs.md#getdevicesinplacementresponseresponsetypedef)
+- [ListPlacementsRequestTypeDef](./type_defs.md#listplacementsrequesttypedef)
+- [ListPlacementsResponseResponseTypeDef](./type_defs.md#listplacementsresponseresponsetypedef)
+- [ListProjectsRequestTypeDef](./type_defs.md#listprojectsrequesttypedef)
+- [ListProjectsResponseResponseTypeDef](./type_defs.md#listprojectsresponseresponsetypedef)
+- [ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef)
+- [ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [PlacementDescriptionTypeDef](./type_defs.md#placementdescriptiontypedef)
 - [PlacementSummaryTypeDef](./type_defs.md#placementsummarytypedef)
 - [PlacementTemplateTypeDef](./type_defs.md#placementtemplatetypedef)
 - [ProjectDescriptionTypeDef](./type_defs.md#projectdescriptiontypedef)
 - [ProjectSummaryTypeDef](./type_defs.md#projectsummarytypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef)
+- [UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef)
+- [UpdatePlacementRequestTypeDef](./type_defs.md#updateplacementrequesttypedef)
+- [UpdateProjectRequestTypeDef](./type_defs.md#updateprojectrequesttypedef)

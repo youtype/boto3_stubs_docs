@@ -32,4 +32,4 @@ Arguments for `ListServersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListServersPaginator.paginate` returns
-`Iterator`\[[ListServersResponseTypeDef](./type_defs.md#listserversresponsetypedef)\].
+`Iterator`\[[ListServersResponseResponseTypeDef](./type_defs.md#listserversresponseresponsetypedef)\].

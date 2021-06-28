@@ -56,6 +56,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("forecastquery").can_paginate` method.
 
 Boto3 documentation:
@@ -68,6 +70,8 @@ Arguments:
 Returns `bool`.
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("forecastquery").generate_presigned_url`
 method.
@@ -86,10 +90,15 @@ Returns `str`.
 
 ### query_forecast
 
+Retrieves a forecast for a single item, filtered by the supplied criteria.
+
 Type annotations for `boto3.client("forecastquery").query_forecast` method.
 
 Boto3 documentation:
 [ForecastQueryService.Client.query_forecast](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService.Client.query_forecast)
+
+Arguments mapping described in
+[QueryForecastRequestTypeDef](./type_defs.md#queryforecastrequesttypedef).
 
 Keyword-only arguments:
 
@@ -100,4 +109,4 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[QueryForecastResponseTypeDef](./type_defs.md#queryforecastresponsetypedef).
+[QueryForecastResponseResponseTypeDef](./type_defs.md#queryforecastresponseresponsetypedef).

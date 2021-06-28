@@ -506,11 +506,17 @@ Exceptions:
 
 ### accept_reserved_instances_exchange_quote
 
+Accepts the Convertible Reserved Instance exchange quote described in the
+GetReservedInstancesExchangeQuote call.
+
 Type annotations for
 `boto3.client("ec2").accept_reserved_instances_exchange_quote` method.
 
 Boto3 documentation:
 [EC2.Client.accept_reserved_instances_exchange_quote](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.accept_reserved_instances_exchange_quote)
+
+Arguments mapping described in
+[AcceptReservedInstancesExchangeQuoteRequestTypeDef](./type_defs.md#acceptreservedinstancesexchangequoterequesttypedef).
 
 Keyword-only arguments:
 
@@ -520,9 +526,11 @@ Keyword-only arguments:
   `List`\[[TargetConfigurationRequestTypeDef](./type_defs.md#targetconfigurationrequesttypedef)\]
 
 Returns
-[AcceptReservedInstancesExchangeQuoteResultTypeDef](./type_defs.md#acceptreservedinstancesexchangequoteresulttypedef).
+[AcceptReservedInstancesExchangeQuoteResultResponseTypeDef](./type_defs.md#acceptreservedinstancesexchangequoteresultresponsetypedef).
 
 ### accept_transit_gateway_multicast_domain_associations
+
+Accepts a request to associate subnets with a transit gateway multicast domain.
 
 Type annotations for
 `boto3.client("ec2").accept_transit_gateway_multicast_domain_associations`
@@ -530,6 +538,9 @@ method.
 
 Boto3 documentation:
 [EC2.Client.accept_transit_gateway_multicast_domain_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.accept_transit_gateway_multicast_domain_associations)
+
+Arguments mapping described in
+[AcceptTransitGatewayMulticastDomainAssociationsRequestTypeDef](./type_defs.md#accepttransitgatewaymulticastdomainassociationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -539,9 +550,11 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[AcceptTransitGatewayMulticastDomainAssociationsResultTypeDef](./type_defs.md#accepttransitgatewaymulticastdomainassociationsresulttypedef).
+[AcceptTransitGatewayMulticastDomainAssociationsResultResponseTypeDef](./type_defs.md#accepttransitgatewaymulticastdomainassociationsresultresponsetypedef).
 
 ### accept_transit_gateway_peering_attachment
+
+Accepts a transit gateway peering attachment request.
 
 Type annotations for
 `boto3.client("ec2").accept_transit_gateway_peering_attachment` method.
@@ -549,15 +562,20 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.accept_transit_gateway_peering_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.accept_transit_gateway_peering_attachment)
 
+Arguments mapping described in
+[AcceptTransitGatewayPeeringAttachmentRequestTypeDef](./type_defs.md#accepttransitgatewaypeeringattachmentrequesttypedef).
+
 Keyword-only arguments:
 
 - `TransitGatewayAttachmentId`: `str` *(required)*
 - `DryRun`: `bool`
 
 Returns
-[AcceptTransitGatewayPeeringAttachmentResultTypeDef](./type_defs.md#accepttransitgatewaypeeringattachmentresulttypedef).
+[AcceptTransitGatewayPeeringAttachmentResultResponseTypeDef](./type_defs.md#accepttransitgatewaypeeringattachmentresultresponsetypedef).
 
 ### accept_transit_gateway_vpc_attachment
+
+Accepts a request to attach a VPC to a transit gateway.
 
 Type annotations for
 `boto3.client("ec2").accept_transit_gateway_vpc_attachment` method.
@@ -565,21 +583,30 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.accept_transit_gateway_vpc_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.accept_transit_gateway_vpc_attachment)
 
+Arguments mapping described in
+[AcceptTransitGatewayVpcAttachmentRequestTypeDef](./type_defs.md#accepttransitgatewayvpcattachmentrequesttypedef).
+
 Keyword-only arguments:
 
 - `TransitGatewayAttachmentId`: `str` *(required)*
 - `DryRun`: `bool`
 
 Returns
-[AcceptTransitGatewayVpcAttachmentResultTypeDef](./type_defs.md#accepttransitgatewayvpcattachmentresulttypedef).
+[AcceptTransitGatewayVpcAttachmentResultResponseTypeDef](./type_defs.md#accepttransitgatewayvpcattachmentresultresponsetypedef).
 
 ### accept_vpc_endpoint_connections
+
+Accepts one or more interface VPC endpoint connection requests to your VPC
+endpoint service.
 
 Type annotations for `boto3.client("ec2").accept_vpc_endpoint_connections`
 method.
 
 Boto3 documentation:
 [EC2.Client.accept_vpc_endpoint_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.accept_vpc_endpoint_connections)
+
+Arguments mapping described in
+[AcceptVpcEndpointConnectionsRequestTypeDef](./type_defs.md#acceptvpcendpointconnectionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -588,9 +615,11 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[AcceptVpcEndpointConnectionsResultTypeDef](./type_defs.md#acceptvpcendpointconnectionsresulttypedef).
+[AcceptVpcEndpointConnectionsResultResponseTypeDef](./type_defs.md#acceptvpcendpointconnectionsresultresponsetypedef).
 
 ### accept_vpc_peering_connection
+
+Accept a VPC peering connection request.
 
 Type annotations for `boto3.client("ec2").accept_vpc_peering_connection`
 method.
@@ -598,20 +627,29 @@ method.
 Boto3 documentation:
 [EC2.Client.accept_vpc_peering_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.accept_vpc_peering_connection)
 
+Arguments mapping described in
+[AcceptVpcPeeringConnectionRequestTypeDef](./type_defs.md#acceptvpcpeeringconnectionrequesttypedef).
+
 Keyword-only arguments:
 
 - `DryRun`: `bool`
 - `VpcPeeringConnectionId`: `str`
 
 Returns
-[AcceptVpcPeeringConnectionResultTypeDef](./type_defs.md#acceptvpcpeeringconnectionresulttypedef).
+[AcceptVpcPeeringConnectionResultResponseTypeDef](./type_defs.md#acceptvpcpeeringconnectionresultresponsetypedef).
 
 ### advertise_byoip_cidr
+
+Advertises an IPv4 or IPv6 address range that is provisioned for use with your
+Amazon Web Services resources through bring your own IP addresses (BYOIP).
 
 Type annotations for `boto3.client("ec2").advertise_byoip_cidr` method.
 
 Boto3 documentation:
 [EC2.Client.advertise_byoip_cidr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.advertise_byoip_cidr)
+
+Arguments mapping described in
+[AdvertiseByoipCidrRequestTypeDef](./type_defs.md#advertisebyoipcidrrequesttypedef).
 
 Keyword-only arguments:
 
@@ -619,14 +657,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[AdvertiseByoipCidrResultTypeDef](./type_defs.md#advertisebyoipcidrresulttypedef).
+[AdvertiseByoipCidrResultResponseTypeDef](./type_defs.md#advertisebyoipcidrresultresponsetypedef).
 
 ### allocate_address
+
+Allocates an Elastic IP address to your account.
 
 Type annotations for `boto3.client("ec2").allocate_address` method.
 
 Boto3 documentation:
 [EC2.Client.allocate_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.allocate_address)
+
+Arguments mapping described in
+[AllocateAddressRequestTypeDef](./type_defs.md#allocateaddressrequesttypedef).
 
 Keyword-only arguments:
 
@@ -640,14 +683,19 @@ Keyword-only arguments:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
-[AllocateAddressResultTypeDef](./type_defs.md#allocateaddressresulttypedef).
+[AllocateAddressResultResponseTypeDef](./type_defs.md#allocateaddressresultresponsetypedef).
 
 ### allocate_hosts
+
+Allocates a Dedicated Host to your account.
 
 Type annotations for `boto3.client("ec2").allocate_hosts` method.
 
 Boto3 documentation:
 [EC2.Client.allocate_hosts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.allocate_hosts)
+
+Arguments mapping described in
+[AllocateHostsRequestTypeDef](./type_defs.md#allocatehostsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -662,9 +710,12 @@ Keyword-only arguments:
 - `HostRecovery`: [HostRecoveryType](./literals.md#hostrecoverytype)
 
 Returns
-[AllocateHostsResultTypeDef](./type_defs.md#allocatehostsresulttypedef).
+[AllocateHostsResultResponseTypeDef](./type_defs.md#allocatehostsresultresponsetypedef).
 
 ### apply_security_groups_to_client_vpn_target_network
+
+Applies a security group to the association between the target network and the
+Client VPN endpoint.
 
 Type annotations for
 `boto3.client("ec2").apply_security_groups_to_client_vpn_target_network`
@@ -672,6 +723,9 @@ method.
 
 Boto3 documentation:
 [EC2.Client.apply_security_groups_to_client_vpn_target_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.apply_security_groups_to_client_vpn_target_network)
+
+Arguments mapping described in
+[ApplySecurityGroupsToClientVpnTargetNetworkRequestTypeDef](./type_defs.md#applysecuritygroupstoclientvpntargetnetworkrequesttypedef).
 
 Keyword-only arguments:
 
@@ -681,14 +735,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[ApplySecurityGroupsToClientVpnTargetNetworkResultTypeDef](./type_defs.md#applysecuritygroupstoclientvpntargetnetworkresulttypedef).
+[ApplySecurityGroupsToClientVpnTargetNetworkResultResponseTypeDef](./type_defs.md#applysecuritygroupstoclientvpntargetnetworkresultresponsetypedef).
 
 ### assign_ipv6_addresses
+
+Assigns one or more IPv6 addresses to the specified network interface.
 
 Type annotations for `boto3.client("ec2").assign_ipv6_addresses` method.
 
 Boto3 documentation:
 [EC2.Client.assign_ipv6_addresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.assign_ipv6_addresses)
+
+Arguments mapping described in
+[AssignIpv6AddressesRequestTypeDef](./type_defs.md#assignipv6addressesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -697,14 +756,20 @@ Keyword-only arguments:
 - `Ipv6Addresses`: `List`\[`str`\]
 
 Returns
-[AssignIpv6AddressesResultTypeDef](./type_defs.md#assignipv6addressesresulttypedef).
+[AssignIpv6AddressesResultResponseTypeDef](./type_defs.md#assignipv6addressesresultresponsetypedef).
 
 ### assign_private_ip_addresses
+
+Assigns one or more secondary private IP addresses to the specified network
+interface.
 
 Type annotations for `boto3.client("ec2").assign_private_ip_addresses` method.
 
 Boto3 documentation:
 [EC2.Client.assign_private_ip_addresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.assign_private_ip_addresses)
+
+Arguments mapping described in
+[AssignPrivateIpAddressesRequestTypeDef](./type_defs.md#assignprivateipaddressesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -714,14 +779,20 @@ Keyword-only arguments:
 - `SecondaryPrivateIpAddressCount`: `int`
 
 Returns
-[AssignPrivateIpAddressesResultTypeDef](./type_defs.md#assignprivateipaddressesresulttypedef).
+[AssignPrivateIpAddressesResultResponseTypeDef](./type_defs.md#assignprivateipaddressesresultresponsetypedef).
 
 ### associate_address
+
+Associates an Elastic IP address, or carrier IP address (for instances that are
+in subnets in Wavelength Zones) with an instance or a network interface.
 
 Type annotations for `boto3.client("ec2").associate_address` method.
 
 Boto3 documentation:
 [EC2.Client.associate_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_address)
+
+Arguments mapping described in
+[AssociateAddressRequestTypeDef](./type_defs.md#associateaddressrequesttypedef).
 
 Keyword-only arguments:
 
@@ -734,15 +805,20 @@ Keyword-only arguments:
 - `PrivateIpAddress`: `str`
 
 Returns
-[AssociateAddressResultTypeDef](./type_defs.md#associateaddressresulttypedef).
+[AssociateAddressResultResponseTypeDef](./type_defs.md#associateaddressresultresponsetypedef).
 
 ### associate_client_vpn_target_network
+
+Associates a target network with a Client VPN endpoint.
 
 Type annotations for `boto3.client("ec2").associate_client_vpn_target_network`
 method.
 
 Boto3 documentation:
 [EC2.Client.associate_client_vpn_target_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_client_vpn_target_network)
+
+Arguments mapping described in
+[AssociateClientVpnTargetNetworkRequestTypeDef](./type_defs.md#associateclientvpntargetnetworkrequesttypedef).
 
 Keyword-only arguments:
 
@@ -752,14 +828,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[AssociateClientVpnTargetNetworkResultTypeDef](./type_defs.md#associateclientvpntargetnetworkresulttypedef).
+[AssociateClientVpnTargetNetworkResultResponseTypeDef](./type_defs.md#associateclientvpntargetnetworkresultresponsetypedef).
 
 ### associate_dhcp_options
+
+Associates a set of DHCP options (that you've previously created) with the
+specified VPC, or associates no DHCP options with the VPC.
 
 Type annotations for `boto3.client("ec2").associate_dhcp_options` method.
 
 Boto3 documentation:
 [EC2.Client.associate_dhcp_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_dhcp_options)
+
+Arguments mapping described in
+[AssociateDhcpOptionsRequestTypeDef](./type_defs.md#associatedhcpoptionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -769,11 +851,17 @@ Keyword-only arguments:
 
 ### associate_enclave_certificate_iam_role
 
+Associates an AWS Identity and Access Management (IAM) role with an AWS
+Certificate Manager (ACM) certificate.
+
 Type annotations for
 `boto3.client("ec2").associate_enclave_certificate_iam_role` method.
 
 Boto3 documentation:
 [EC2.Client.associate_enclave_certificate_iam_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_enclave_certificate_iam_role)
+
+Arguments mapping described in
+[AssociateEnclaveCertificateIamRoleRequestTypeDef](./type_defs.md#associateenclavecertificateiamrolerequesttypedef).
 
 Keyword-only arguments:
 
@@ -782,15 +870,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[AssociateEnclaveCertificateIamRoleResultTypeDef](./type_defs.md#associateenclavecertificateiamroleresulttypedef).
+[AssociateEnclaveCertificateIamRoleResultResponseTypeDef](./type_defs.md#associateenclavecertificateiamroleresultresponsetypedef).
 
 ### associate_iam_instance_profile
+
+Associates an IAM instance profile with a running or stopped instance.
 
 Type annotations for `boto3.client("ec2").associate_iam_instance_profile`
 method.
 
 Boto3 documentation:
 [EC2.Client.associate_iam_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_iam_instance_profile)
+
+Arguments mapping described in
+[AssociateIamInstanceProfileRequestTypeDef](./type_defs.md#associateiaminstanceprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -800,14 +893,20 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 
 Returns
-[AssociateIamInstanceProfileResultTypeDef](./type_defs.md#associateiaminstanceprofileresulttypedef).
+[AssociateIamInstanceProfileResultResponseTypeDef](./type_defs.md#associateiaminstanceprofileresultresponsetypedef).
 
 ### associate_route_table
+
+Associates a subnet in your VPC or an internet gateway or virtual private
+gateway attached to your VPC with a route table in your VPC.
 
 Type annotations for `boto3.client("ec2").associate_route_table` method.
 
 Boto3 documentation:
 [EC2.Client.associate_route_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_route_table)
+
+Arguments mapping described in
+[AssociateRouteTableRequestTypeDef](./type_defs.md#associateroutetablerequesttypedef).
 
 Keyword-only arguments:
 
@@ -817,14 +916,19 @@ Keyword-only arguments:
 - `GatewayId`: `str`
 
 Returns
-[AssociateRouteTableResultTypeDef](./type_defs.md#associateroutetableresulttypedef).
+[AssociateRouteTableResultResponseTypeDef](./type_defs.md#associateroutetableresultresponsetypedef).
 
 ### associate_subnet_cidr_block
+
+Associates a CIDR block with your subnet.
 
 Type annotations for `boto3.client("ec2").associate_subnet_cidr_block` method.
 
 Boto3 documentation:
 [EC2.Client.associate_subnet_cidr_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_subnet_cidr_block)
+
+Arguments mapping described in
+[AssociateSubnetCidrBlockRequestTypeDef](./type_defs.md#associatesubnetcidrblockrequesttypedef).
 
 Keyword-only arguments:
 
@@ -832,15 +936,21 @@ Keyword-only arguments:
 - `SubnetId`: `str` *(required)*
 
 Returns
-[AssociateSubnetCidrBlockResultTypeDef](./type_defs.md#associatesubnetcidrblockresulttypedef).
+[AssociateSubnetCidrBlockResultResponseTypeDef](./type_defs.md#associatesubnetcidrblockresultresponsetypedef).
 
 ### associate_transit_gateway_multicast_domain
+
+Associates the specified subnets and transit gateway attachments with the
+specified transit gateway multicast domain.
 
 Type annotations for
 `boto3.client("ec2").associate_transit_gateway_multicast_domain` method.
 
 Boto3 documentation:
 [EC2.Client.associate_transit_gateway_multicast_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_transit_gateway_multicast_domain)
+
+Arguments mapping described in
+[AssociateTransitGatewayMulticastDomainRequestTypeDef](./type_defs.md#associatetransitgatewaymulticastdomainrequesttypedef).
 
 Keyword-only arguments:
 
@@ -850,15 +960,21 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[AssociateTransitGatewayMulticastDomainResultTypeDef](./type_defs.md#associatetransitgatewaymulticastdomainresulttypedef).
+[AssociateTransitGatewayMulticastDomainResultResponseTypeDef](./type_defs.md#associatetransitgatewaymulticastdomainresultresponsetypedef).
 
 ### associate_transit_gateway_route_table
+
+Associates the specified attachment with the specified transit gateway route
+table.
 
 Type annotations for
 `boto3.client("ec2").associate_transit_gateway_route_table` method.
 
 Boto3 documentation:
 [EC2.Client.associate_transit_gateway_route_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_transit_gateway_route_table)
+
+Arguments mapping described in
+[AssociateTransitGatewayRouteTableRequestTypeDef](./type_defs.md#associatetransitgatewayroutetablerequesttypedef).
 
 Keyword-only arguments:
 
@@ -867,14 +983,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[AssociateTransitGatewayRouteTableResultTypeDef](./type_defs.md#associatetransitgatewayroutetableresulttypedef).
+[AssociateTransitGatewayRouteTableResultResponseTypeDef](./type_defs.md#associatetransitgatewayroutetableresultresponsetypedef).
 
 ### associate_trunk_interface
+
+Associates a branch network interface with a trunk network interface.
 
 Type annotations for `boto3.client("ec2").associate_trunk_interface` method.
 
 Boto3 documentation:
 [EC2.Client.associate_trunk_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_trunk_interface)
+
+Arguments mapping described in
+[AssociateTrunkInterfaceRequestTypeDef](./type_defs.md#associatetrunkinterfacerequesttypedef).
 
 Keyword-only arguments:
 
@@ -886,14 +1007,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[AssociateTrunkInterfaceResultTypeDef](./type_defs.md#associatetrunkinterfaceresulttypedef).
+[AssociateTrunkInterfaceResultResponseTypeDef](./type_defs.md#associatetrunkinterfaceresultresponsetypedef).
 
 ### associate_vpc_cidr_block
+
+Associates a CIDR block with your VPC.
 
 Type annotations for `boto3.client("ec2").associate_vpc_cidr_block` method.
 
 Boto3 documentation:
 [EC2.Client.associate_vpc_cidr_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_vpc_cidr_block)
+
+Arguments mapping described in
+[AssociateVpcCidrBlockRequestTypeDef](./type_defs.md#associatevpccidrblockrequesttypedef).
 
 Keyword-only arguments:
 
@@ -905,14 +1031,20 @@ Keyword-only arguments:
 - `Ipv6CidrBlock`: `str`
 
 Returns
-[AssociateVpcCidrBlockResultTypeDef](./type_defs.md#associatevpccidrblockresulttypedef).
+[AssociateVpcCidrBlockResultResponseTypeDef](./type_defs.md#associatevpccidrblockresultresponsetypedef).
 
 ### attach_classic_link_vpc
+
+Links an EC2-Classic instance to a ClassicLink-enabled VPC through one or more
+of the VPC's security groups.
 
 Type annotations for `boto3.client("ec2").attach_classic_link_vpc` method.
 
 Boto3 documentation:
 [EC2.Client.attach_classic_link_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.attach_classic_link_vpc)
+
+Arguments mapping described in
+[AttachClassicLinkVpcRequestTypeDef](./type_defs.md#attachclassiclinkvpcrequesttypedef).
 
 Keyword-only arguments:
 
@@ -922,14 +1054,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[AttachClassicLinkVpcResultTypeDef](./type_defs.md#attachclassiclinkvpcresulttypedef).
+[AttachClassicLinkVpcResultResponseTypeDef](./type_defs.md#attachclassiclinkvpcresultresponsetypedef).
 
 ### attach_internet_gateway
+
+Attaches an internet gateway or a virtual private gateway to a VPC, enabling
+connectivity between the internet and the VPC.
 
 Type annotations for `boto3.client("ec2").attach_internet_gateway` method.
 
 Boto3 documentation:
 [EC2.Client.attach_internet_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.attach_internet_gateway)
+
+Arguments mapping described in
+[AttachInternetGatewayRequestTypeDef](./type_defs.md#attachinternetgatewayrequesttypedef).
 
 Keyword-only arguments:
 
@@ -939,10 +1077,15 @@ Keyword-only arguments:
 
 ### attach_network_interface
 
+Attaches a network interface to an instance.
+
 Type annotations for `boto3.client("ec2").attach_network_interface` method.
 
 Boto3 documentation:
 [EC2.Client.attach_network_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.attach_network_interface)
+
+Arguments mapping described in
+[AttachNetworkInterfaceRequestTypeDef](./type_defs.md#attachnetworkinterfacerequesttypedef).
 
 Keyword-only arguments:
 
@@ -953,14 +1096,20 @@ Keyword-only arguments:
 - `NetworkCardIndex`: `int`
 
 Returns
-[AttachNetworkInterfaceResultTypeDef](./type_defs.md#attachnetworkinterfaceresulttypedef).
+[AttachNetworkInterfaceResultResponseTypeDef](./type_defs.md#attachnetworkinterfaceresultresponsetypedef).
 
 ### attach_volume
+
+Attaches an EBS volume to a running or stopped instance and exposes it to the
+instance with the specified device name.
 
 Type annotations for `boto3.client("ec2").attach_volume` method.
 
 Boto3 documentation:
 [EC2.Client.attach_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.attach_volume)
+
+Arguments mapping described in
+[AttachVolumeRequestTypeDef](./type_defs.md#attachvolumerequesttypedef).
 
 Keyword-only arguments:
 
@@ -969,14 +1118,20 @@ Keyword-only arguments:
 - `VolumeId`: `str` *(required)*
 - `DryRun`: `bool`
 
-Returns [VolumeAttachmentTypeDef](./type_defs.md#volumeattachmenttypedef).
+Returns
+[VolumeAttachmentResponseTypeDef](./type_defs.md#volumeattachmentresponsetypedef).
 
 ### attach_vpn_gateway
+
+Attaches a virtual private gateway to a VPC.
 
 Type annotations for `boto3.client("ec2").attach_vpn_gateway` method.
 
 Boto3 documentation:
 [EC2.Client.attach_vpn_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.attach_vpn_gateway)
+
+Arguments mapping described in
+[AttachVpnGatewayRequestTypeDef](./type_defs.md#attachvpngatewayrequesttypedef).
 
 Keyword-only arguments:
 
@@ -985,14 +1140,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[AttachVpnGatewayResultTypeDef](./type_defs.md#attachvpngatewayresulttypedef).
+[AttachVpnGatewayResultResponseTypeDef](./type_defs.md#attachvpngatewayresultresponsetypedef).
 
 ### authorize_client_vpn_ingress
+
+Adds an ingress authorization rule to a Client VPN endpoint.
 
 Type annotations for `boto3.client("ec2").authorize_client_vpn_ingress` method.
 
 Boto3 documentation:
 [EC2.Client.authorize_client_vpn_ingress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.authorize_client_vpn_ingress)
+
+Arguments mapping described in
+[AuthorizeClientVpnIngressRequestTypeDef](./type_defs.md#authorizeclientvpningressrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1005,7 +1165,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[AuthorizeClientVpnIngressResultTypeDef](./type_defs.md#authorizeclientvpningressresulttypedef).
+[AuthorizeClientVpnIngressResultResponseTypeDef](./type_defs.md#authorizeclientvpningressresultresponsetypedef).
 
 ### authorize_security_group_egress
 
@@ -1014,6 +1174,9 @@ method.
 
 Boto3 documentation:
 [EC2.Client.authorize_security_group_egress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.authorize_security_group_egress)
+
+Arguments mapping described in
+[AuthorizeSecurityGroupEgressRequestTypeDef](./type_defs.md#authorizesecuritygroupegressrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1030,11 +1193,16 @@ Keyword-only arguments:
 
 ### authorize_security_group_ingress
 
+Adds the specified ingress rules to a security group.
+
 Type annotations for `boto3.client("ec2").authorize_security_group_ingress`
 method.
 
 Boto3 documentation:
 [EC2.Client.authorize_security_group_ingress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.authorize_security_group_ingress)
+
+Arguments mapping described in
+[AuthorizeSecurityGroupIngressRequestTypeDef](./type_defs.md#authorizesecuritygroupingressrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1052,10 +1220,15 @@ Keyword-only arguments:
 
 ### bundle_instance
 
+Bundles an Amazon instance store-backed Windows instance.
+
 Type annotations for `boto3.client("ec2").bundle_instance` method.
 
 Boto3 documentation:
 [EC2.Client.bundle_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.bundle_instance)
+
+Arguments mapping described in
+[BundleInstanceRequestTypeDef](./type_defs.md#bundleinstancerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1064,9 +1237,11 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[BundleInstanceResultTypeDef](./type_defs.md#bundleinstanceresulttypedef).
+[BundleInstanceResultResponseTypeDef](./type_defs.md#bundleinstanceresultresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("ec2").can_paginate` method.
 
@@ -1081,10 +1256,15 @@ Returns `bool`.
 
 ### cancel_bundle_task
 
+Cancels a bundling operation for an instance store-backed Windows instance.
+
 Type annotations for `boto3.client("ec2").cancel_bundle_task` method.
 
 Boto3 documentation:
 [EC2.Client.cancel_bundle_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_bundle_task)
+
+Arguments mapping described in
+[CancelBundleTaskRequestTypeDef](./type_defs.md#cancelbundletaskrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1092,14 +1272,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[CancelBundleTaskResultTypeDef](./type_defs.md#cancelbundletaskresulttypedef).
+[CancelBundleTaskResultResponseTypeDef](./type_defs.md#cancelbundletaskresultresponsetypedef).
 
 ### cancel_capacity_reservation
+
+Cancels the specified Capacity Reservation, releases the reserved capacity, and
+changes the Capacity Reservation's state to `cancelled` .
 
 Type annotations for `boto3.client("ec2").cancel_capacity_reservation` method.
 
 Boto3 documentation:
 [EC2.Client.cancel_capacity_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_capacity_reservation)
+
+Arguments mapping described in
+[CancelCapacityReservationRequestTypeDef](./type_defs.md#cancelcapacityreservationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1107,14 +1293,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[CancelCapacityReservationResultTypeDef](./type_defs.md#cancelcapacityreservationresulttypedef).
+[CancelCapacityReservationResultResponseTypeDef](./type_defs.md#cancelcapacityreservationresultresponsetypedef).
 
 ### cancel_conversion_task
+
+Cancels an active conversion task.
 
 Type annotations for `boto3.client("ec2").cancel_conversion_task` method.
 
 Boto3 documentation:
 [EC2.Client.cancel_conversion_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_conversion_task)
+
+Arguments mapping described in
+[CancelConversionRequestTypeDef](./type_defs.md#cancelconversionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1124,10 +1315,15 @@ Keyword-only arguments:
 
 ### cancel_export_task
 
+Cancels an active export task.
+
 Type annotations for `boto3.client("ec2").cancel_export_task` method.
 
 Boto3 documentation:
 [EC2.Client.cancel_export_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_export_task)
+
+Arguments mapping described in
+[CancelExportTaskRequestTypeDef](./type_defs.md#cancelexporttaskrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1135,10 +1331,15 @@ Keyword-only arguments:
 
 ### cancel_import_task
 
+Cancels an in-process import virtual machine or import snapshot task.
+
 Type annotations for `boto3.client("ec2").cancel_import_task` method.
 
 Boto3 documentation:
 [EC2.Client.cancel_import_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_import_task)
+
+Arguments mapping described in
+[CancelImportTaskRequestTypeDef](./type_defs.md#cancelimporttaskrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1147,9 +1348,12 @@ Keyword-only arguments:
 - `ImportTaskId`: `str`
 
 Returns
-[CancelImportTaskResultTypeDef](./type_defs.md#cancelimporttaskresulttypedef).
+[CancelImportTaskResultResponseTypeDef](./type_defs.md#cancelimporttaskresultresponsetypedef).
 
 ### cancel_reserved_instances_listing
+
+Cancels the specified Reserved Instance listing in the Reserved Instance
+Marketplace.
 
 Type annotations for `boto3.client("ec2").cancel_reserved_instances_listing`
 method.
@@ -1157,19 +1361,27 @@ method.
 Boto3 documentation:
 [EC2.Client.cancel_reserved_instances_listing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_reserved_instances_listing)
 
+Arguments mapping described in
+[CancelReservedInstancesListingRequestTypeDef](./type_defs.md#cancelreservedinstanceslistingrequesttypedef).
+
 Keyword-only arguments:
 
 - `ReservedInstancesListingId`: `str` *(required)*
 
 Returns
-[CancelReservedInstancesListingResultTypeDef](./type_defs.md#cancelreservedinstanceslistingresulttypedef).
+[CancelReservedInstancesListingResultResponseTypeDef](./type_defs.md#cancelreservedinstanceslistingresultresponsetypedef).
 
 ### cancel_spot_fleet_requests
+
+Cancels the specified Spot Fleet requests.
 
 Type annotations for `boto3.client("ec2").cancel_spot_fleet_requests` method.
 
 Boto3 documentation:
 [EC2.Client.cancel_spot_fleet_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_spot_fleet_requests)
+
+Arguments mapping described in
+[CancelSpotFleetRequestsRequestTypeDef](./type_defs.md#cancelspotfleetrequestsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1178,9 +1390,11 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[CancelSpotFleetRequestsResponseTypeDef](./type_defs.md#cancelspotfleetrequestsresponsetypedef).
+[CancelSpotFleetRequestsResponseResponseTypeDef](./type_defs.md#cancelspotfleetrequestsresponseresponsetypedef).
 
 ### cancel_spot_instance_requests
+
+Cancels one or more Spot Instance requests.
 
 Type annotations for `boto3.client("ec2").cancel_spot_instance_requests`
 method.
@@ -1188,20 +1402,28 @@ method.
 Boto3 documentation:
 [EC2.Client.cancel_spot_instance_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_spot_instance_requests)
 
+Arguments mapping described in
+[CancelSpotInstanceRequestsRequestTypeDef](./type_defs.md#cancelspotinstancerequestsrequesttypedef).
+
 Keyword-only arguments:
 
 - `SpotInstanceRequestIds`: `List`\[`str`\] *(required)*
 - `DryRun`: `bool`
 
 Returns
-[CancelSpotInstanceRequestsResultTypeDef](./type_defs.md#cancelspotinstancerequestsresulttypedef).
+[CancelSpotInstanceRequestsResultResponseTypeDef](./type_defs.md#cancelspotinstancerequestsresultresponsetypedef).
 
 ### confirm_product_instance
+
+Determines whether a product code is associated with an instance.
 
 Type annotations for `boto3.client("ec2").confirm_product_instance` method.
 
 Boto3 documentation:
 [EC2.Client.confirm_product_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.confirm_product_instance)
+
+Arguments mapping described in
+[ConfirmProductInstanceRequestTypeDef](./type_defs.md#confirmproductinstancerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1210,14 +1432,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[ConfirmProductInstanceResultTypeDef](./type_defs.md#confirmproductinstanceresulttypedef).
+[ConfirmProductInstanceResultResponseTypeDef](./type_defs.md#confirmproductinstanceresultresponsetypedef).
 
 ### copy_fpga_image
+
+Copies the specified Amazon FPGA Image (AFI) to the current Region.
 
 Type annotations for `boto3.client("ec2").copy_fpga_image` method.
 
 Boto3 documentation:
 [EC2.Client.copy_fpga_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.copy_fpga_image)
+
+Arguments mapping described in
+[CopyFpgaImageRequestTypeDef](./type_defs.md#copyfpgaimagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1229,14 +1456,19 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns
-[CopyFpgaImageResultTypeDef](./type_defs.md#copyfpgaimageresulttypedef).
+[CopyFpgaImageResultResponseTypeDef](./type_defs.md#copyfpgaimageresultresponsetypedef).
 
 ### copy_image
+
+Initiates the copy of an AMI.
 
 Type annotations for `boto3.client("ec2").copy_image` method.
 
 Boto3 documentation:
 [EC2.Client.copy_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.copy_image)
+
+Arguments mapping described in
+[CopyImageRequestTypeDef](./type_defs.md#copyimagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1250,14 +1482,20 @@ Keyword-only arguments:
 - `DestinationOutpostArn`: `str`
 - `DryRun`: `bool`
 
-Returns [CopyImageResultTypeDef](./type_defs.md#copyimageresulttypedef).
+Returns
+[CopyImageResultResponseTypeDef](./type_defs.md#copyimageresultresponsetypedef).
 
 ### copy_snapshot
+
+Copies a point-in-time snapshot of an EBS volume and stores it in Amazon S3.
 
 Type annotations for `boto3.client("ec2").copy_snapshot` method.
 
 Boto3 documentation:
 [EC2.Client.copy_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.copy_snapshot)
+
+Arguments mapping described in
+[CopySnapshotRequestTypeDef](./type_defs.md#copysnapshotrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1273,14 +1511,20 @@ Keyword-only arguments:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
-Returns [CopySnapshotResultTypeDef](./type_defs.md#copysnapshotresulttypedef).
+Returns
+[CopySnapshotResultResponseTypeDef](./type_defs.md#copysnapshotresultresponsetypedef).
 
 ### create_capacity_reservation
+
+Creates a new Capacity Reservation with the specified attributes.
 
 Type annotations for `boto3.client("ec2").create_capacity_reservation` method.
 
 Boto3 documentation:
 [EC2.Client.create_capacity_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_capacity_reservation)
+
+Arguments mapping described in
+[CreateCapacityReservationRequestTypeDef](./type_defs.md#createcapacityreservationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1296,7 +1540,7 @@ Keyword-only arguments:
   [CapacityReservationTenancyType](./literals.md#capacityreservationtenancytype)
 - `EbsOptimized`: `bool`
 - `EphemeralStorage`: `bool`
-- `EndDate`: `datetime`
+- `EndDate`: `Union`\[`datetime`, `str`\]
 - `EndDateType`: [EndDateTypeType](./literals.md#enddatetypetype)
 - `InstanceMatchCriteria`:
   [InstanceMatchCriteriaType](./literals.md#instancematchcriteriatype)
@@ -1306,14 +1550,19 @@ Keyword-only arguments:
 - `OutpostArn`: `str`
 
 Returns
-[CreateCapacityReservationResultTypeDef](./type_defs.md#createcapacityreservationresulttypedef).
+[CreateCapacityReservationResultResponseTypeDef](./type_defs.md#createcapacityreservationresultresponsetypedef).
 
 ### create_carrier_gateway
+
+Creates a carrier gateway.
 
 Type annotations for `boto3.client("ec2").create_carrier_gateway` method.
 
 Boto3 documentation:
 [EC2.Client.create_carrier_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_carrier_gateway)
+
+Arguments mapping described in
+[CreateCarrierGatewayRequestTypeDef](./type_defs.md#createcarriergatewayrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1324,14 +1573,19 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns
-[CreateCarrierGatewayResultTypeDef](./type_defs.md#createcarriergatewayresulttypedef).
+[CreateCarrierGatewayResultResponseTypeDef](./type_defs.md#createcarriergatewayresultresponsetypedef).
 
 ### create_client_vpn_endpoint
+
+Creates a Client VPN endpoint.
 
 Type annotations for `boto3.client("ec2").create_client_vpn_endpoint` method.
 
 Boto3 documentation:
 [EC2.Client.create_client_vpn_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_client_vpn_endpoint)
+
+Arguments mapping described in
+[CreateClientVpnEndpointRequestTypeDef](./type_defs.md#createclientvpnendpointrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1361,14 +1615,19 @@ Keyword-only arguments:
   [ClientConnectOptionsTypeDef](./type_defs.md#clientconnectoptionstypedef)
 
 Returns
-[CreateClientVpnEndpointResultTypeDef](./type_defs.md#createclientvpnendpointresulttypedef).
+[CreateClientVpnEndpointResultResponseTypeDef](./type_defs.md#createclientvpnendpointresultresponsetypedef).
 
 ### create_client_vpn_route
+
+Adds a route to a network to a Client VPN endpoint.
 
 Type annotations for `boto3.client("ec2").create_client_vpn_route` method.
 
 Boto3 documentation:
 [EC2.Client.create_client_vpn_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_client_vpn_route)
+
+Arguments mapping described in
+[CreateClientVpnRouteRequestTypeDef](./type_defs.md#createclientvpnrouterequesttypedef).
 
 Keyword-only arguments:
 
@@ -1380,14 +1639,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[CreateClientVpnRouteResultTypeDef](./type_defs.md#createclientvpnrouteresulttypedef).
+[CreateClientVpnRouteResultResponseTypeDef](./type_defs.md#createclientvpnrouteresultresponsetypedef).
 
 ### create_customer_gateway
+
+Provides information to AWS about your VPN customer gateway device.
 
 Type annotations for `boto3.client("ec2").create_customer_gateway` method.
 
 Boto3 documentation:
 [EC2.Client.create_customer_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_customer_gateway)
+
+Arguments mapping described in
+[CreateCustomerGatewayRequestTypeDef](./type_defs.md#createcustomergatewayrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1402,14 +1666,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[CreateCustomerGatewayResultTypeDef](./type_defs.md#createcustomergatewayresulttypedef).
+[CreateCustomerGatewayResultResponseTypeDef](./type_defs.md#createcustomergatewayresultresponsetypedef).
 
 ### create_default_subnet
+
+Creates a default subnet with a size `/20` IPv4 CIDR block in the specified
+Availability Zone in your default VPC.
 
 Type annotations for `boto3.client("ec2").create_default_subnet` method.
 
 Boto3 documentation:
 [EC2.Client.create_default_subnet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_default_subnet)
+
+Arguments mapping described in
+[CreateDefaultSubnetRequestTypeDef](./type_defs.md#createdefaultsubnetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1417,28 +1687,39 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[CreateDefaultSubnetResultTypeDef](./type_defs.md#createdefaultsubnetresulttypedef).
+[CreateDefaultSubnetResultResponseTypeDef](./type_defs.md#createdefaultsubnetresultresponsetypedef).
 
 ### create_default_vpc
+
+Creates a default VPC with a size `/16` IPv4 CIDR block and a default subnet in
+each Availability Zone.
 
 Type annotations for `boto3.client("ec2").create_default_vpc` method.
 
 Boto3 documentation:
 [EC2.Client.create_default_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_default_vpc)
 
+Arguments mapping described in
+[CreateDefaultVpcRequestTypeDef](./type_defs.md#createdefaultvpcrequesttypedef).
+
 Keyword-only arguments:
 
 - `DryRun`: `bool`
 
 Returns
-[CreateDefaultVpcResultTypeDef](./type_defs.md#createdefaultvpcresulttypedef).
+[CreateDefaultVpcResultResponseTypeDef](./type_defs.md#createdefaultvpcresultresponsetypedef).
 
 ### create_dhcp_options
+
+Creates a set of DHCP options for your VPC.
 
 Type annotations for `boto3.client("ec2").create_dhcp_options` method.
 
 Boto3 documentation:
 [EC2.Client.create_dhcp_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_dhcp_options)
+
+Arguments mapping described in
+[CreateDhcpOptionsRequestTypeDef](./type_defs.md#createdhcpoptionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1450,7 +1731,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[CreateDhcpOptionsResultTypeDef](./type_defs.md#createdhcpoptionsresulttypedef).
+[CreateDhcpOptionsResultResponseTypeDef](./type_defs.md#createdhcpoptionsresultresponsetypedef).
 
 ### create_egress_only_internet_gateway
 
@@ -1459,6 +1740,9 @@ method.
 
 Boto3 documentation:
 [EC2.Client.create_egress_only_internet_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_egress_only_internet_gateway)
+
+Arguments mapping described in
+[CreateEgressOnlyInternetGatewayRequestTypeDef](./type_defs.md#createegressonlyinternetgatewayrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1469,14 +1753,19 @@ Keyword-only arguments:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
-[CreateEgressOnlyInternetGatewayResultTypeDef](./type_defs.md#createegressonlyinternetgatewayresulttypedef).
+[CreateEgressOnlyInternetGatewayResultResponseTypeDef](./type_defs.md#createegressonlyinternetgatewayresultresponsetypedef).
 
 ### create_fleet
+
+Launches an EC2 Fleet.
 
 Type annotations for `boto3.client("ec2").create_fleet` method.
 
 Boto3 documentation:
 [EC2.Client.create_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_fleet)
+
+Arguments mapping described in
+[CreateFleetRequestTypeDef](./type_defs.md#createfleetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1496,20 +1785,27 @@ Keyword-only arguments:
   [FleetExcessCapacityTerminationPolicyType](./literals.md#fleetexcesscapacityterminationpolicytype)
 - `TerminateInstancesWithExpiration`: `bool`
 - `Type`: [FleetTypeType](./literals.md#fleettypetype)
-- `ValidFrom`: `datetime`
-- `ValidUntil`: `datetime`
+- `ValidFrom`: `Union`\[`datetime`, `str`\]
+- `ValidUntil`: `Union`\[`datetime`, `str`\]
 - `ReplaceUnhealthyInstances`: `bool`
 - `TagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
-Returns [CreateFleetResultTypeDef](./type_defs.md#createfleetresulttypedef).
+Returns
+[CreateFleetResultResponseTypeDef](./type_defs.md#createfleetresultresponsetypedef).
 
 ### create_flow_logs
+
+Creates one or more flow logs to capture information about IP traffic for a
+specific network interface, subnet, or VPC.
 
 Type annotations for `boto3.client("ec2").create_flow_logs` method.
 
 Boto3 documentation:
 [EC2.Client.create_flow_logs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_flow_logs)
+
+Arguments mapping described in
+[CreateFlowLogsRequestTypeDef](./type_defs.md#createflowlogsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1531,14 +1827,19 @@ Keyword-only arguments:
 - `MaxAggregationInterval`: `int`
 
 Returns
-[CreateFlowLogsResultTypeDef](./type_defs.md#createflowlogsresulttypedef).
+[CreateFlowLogsResultResponseTypeDef](./type_defs.md#createflowlogsresultresponsetypedef).
 
 ### create_fpga_image
+
+Creates an Amazon FPGA Image (AFI) from the specified design checkpoint (DCP).
 
 Type annotations for `boto3.client("ec2").create_fpga_image` method.
 
 Boto3 documentation:
 [EC2.Client.create_fpga_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_fpga_image)
+
+Arguments mapping described in
+[CreateFpgaImageRequestTypeDef](./type_defs.md#createfpgaimagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1554,14 +1855,20 @@ Keyword-only arguments:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
-[CreateFpgaImageResultTypeDef](./type_defs.md#createfpgaimageresulttypedef).
+[CreateFpgaImageResultResponseTypeDef](./type_defs.md#createfpgaimageresultresponsetypedef).
 
 ### create_image
+
+Creates an Amazon EBS-backed AMI from an Amazon EBS-backed instance that is
+either running or stopped.
 
 Type annotations for `boto3.client("ec2").create_image` method.
 
 Boto3 documentation:
 [EC2.Client.create_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_image)
+
+Arguments mapping described in
+[CreateImageRequestTypeDef](./type_defs.md#createimagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1575,14 +1882,20 @@ Keyword-only arguments:
 - `TagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
-Returns [CreateImageResultTypeDef](./type_defs.md#createimageresulttypedef).
+Returns
+[CreateImageResultResponseTypeDef](./type_defs.md#createimageresultresponsetypedef).
 
 ### create_instance_export_task
+
+Exports a running or stopped instance to an Amazon S3 bucket.
 
 Type annotations for `boto3.client("ec2").create_instance_export_task` method.
 
 Boto3 documentation:
 [EC2.Client.create_instance_export_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_instance_export_task)
+
+Arguments mapping described in
+[CreateInstanceExportTaskRequestTypeDef](./type_defs.md#createinstanceexporttaskrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1597,14 +1910,19 @@ Keyword-only arguments:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
-[CreateInstanceExportTaskResultTypeDef](./type_defs.md#createinstanceexporttaskresulttypedef).
+[CreateInstanceExportTaskResultResponseTypeDef](./type_defs.md#createinstanceexporttaskresultresponsetypedef).
 
 ### create_internet_gateway
+
+Creates an internet gateway for use with a VPC.
 
 Type annotations for `boto3.client("ec2").create_internet_gateway` method.
 
 Boto3 documentation:
 [EC2.Client.create_internet_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_internet_gateway)
+
+Arguments mapping described in
+[CreateInternetGatewayRequestTypeDef](./type_defs.md#createinternetgatewayrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1613,14 +1931,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[CreateInternetGatewayResultTypeDef](./type_defs.md#createinternetgatewayresulttypedef).
+[CreateInternetGatewayResultResponseTypeDef](./type_defs.md#createinternetgatewayresultresponsetypedef).
 
 ### create_key_pair
+
+Creates a 2048-bit RSA key pair with the specified name.
 
 Type annotations for `boto3.client("ec2").create_key_pair` method.
 
 Boto3 documentation:
 [EC2.Client.create_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_key_pair)
+
+Arguments mapping described in
+[CreateKeyPairRequestTypeDef](./type_defs.md#createkeypairrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1629,14 +1952,19 @@ Keyword-only arguments:
 - `TagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
-Returns [KeyPairTypeDef](./type_defs.md#keypairtypedef).
+Returns [KeyPairResponseTypeDef](./type_defs.md#keypairresponsetypedef).
 
 ### create_launch_template
+
+Creates a launch template.
 
 Type annotations for `boto3.client("ec2").create_launch_template` method.
 
 Boto3 documentation:
 [EC2.Client.create_launch_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_launch_template)
+
+Arguments mapping described in
+[CreateLaunchTemplateRequestTypeDef](./type_defs.md#createlaunchtemplaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -1651,15 +1979,20 @@ Keyword-only arguments:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
-[CreateLaunchTemplateResultTypeDef](./type_defs.md#createlaunchtemplateresulttypedef).
+[CreateLaunchTemplateResultResponseTypeDef](./type_defs.md#createlaunchtemplateresultresponsetypedef).
 
 ### create_launch_template_version
+
+Creates a new version for a launch template.
 
 Type annotations for `boto3.client("ec2").create_launch_template_version`
 method.
 
 Boto3 documentation:
 [EC2.Client.create_launch_template_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_launch_template_version)
+
+Arguments mapping described in
+[CreateLaunchTemplateVersionRequestTypeDef](./type_defs.md#createlaunchtemplateversionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1674,14 +2007,19 @@ Keyword-only arguments:
 - `VersionDescription`: `str`
 
 Returns
-[CreateLaunchTemplateVersionResultTypeDef](./type_defs.md#createlaunchtemplateversionresulttypedef).
+[CreateLaunchTemplateVersionResultResponseTypeDef](./type_defs.md#createlaunchtemplateversionresultresponsetypedef).
 
 ### create_local_gateway_route
+
+Creates a static route for the specified local gateway route table.
 
 Type annotations for `boto3.client("ec2").create_local_gateway_route` method.
 
 Boto3 documentation:
 [EC2.Client.create_local_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_local_gateway_route)
+
+Arguments mapping described in
+[CreateLocalGatewayRouteRequestTypeDef](./type_defs.md#createlocalgatewayrouterequesttypedef).
 
 Keyword-only arguments:
 
@@ -1691,15 +2029,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[CreateLocalGatewayRouteResultTypeDef](./type_defs.md#createlocalgatewayrouteresulttypedef).
+[CreateLocalGatewayRouteResultResponseTypeDef](./type_defs.md#createlocalgatewayrouteresultresponsetypedef).
 
 ### create_local_gateway_route_table_vpc_association
+
+Associates the specified VPC with the specified local gateway route table.
 
 Type annotations for
 `boto3.client("ec2").create_local_gateway_route_table_vpc_association` method.
 
 Boto3 documentation:
 [EC2.Client.create_local_gateway_route_table_vpc_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_local_gateway_route_table_vpc_association)
+
+Arguments mapping described in
+[CreateLocalGatewayRouteTableVpcAssociationRequestTypeDef](./type_defs.md#createlocalgatewayroutetablevpcassociationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1710,14 +2053,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[CreateLocalGatewayRouteTableVpcAssociationResultTypeDef](./type_defs.md#createlocalgatewayroutetablevpcassociationresulttypedef).
+[CreateLocalGatewayRouteTableVpcAssociationResultResponseTypeDef](./type_defs.md#createlocalgatewayroutetablevpcassociationresultresponsetypedef).
 
 ### create_managed_prefix_list
+
+Creates a managed prefix list.
 
 Type annotations for `boto3.client("ec2").create_managed_prefix_list` method.
 
 Boto3 documentation:
 [EC2.Client.create_managed_prefix_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_managed_prefix_list)
+
+Arguments mapping described in
+[CreateManagedPrefixListRequestTypeDef](./type_defs.md#createmanagedprefixlistrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1732,14 +2080,19 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns
-[CreateManagedPrefixListResultTypeDef](./type_defs.md#createmanagedprefixlistresulttypedef).
+[CreateManagedPrefixListResultResponseTypeDef](./type_defs.md#createmanagedprefixlistresultresponsetypedef).
 
 ### create_nat_gateway
+
+Creates a NAT gateway in the specified subnet.
 
 Type annotations for `boto3.client("ec2").create_nat_gateway` method.
 
 Boto3 documentation:
 [EC2.Client.create_nat_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_nat_gateway)
+
+Arguments mapping described in
+[CreateNatGatewayRequestTypeDef](./type_defs.md#createnatgatewayrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1753,14 +2106,19 @@ Keyword-only arguments:
   [ConnectivityTypeType](./literals.md#connectivitytypetype)
 
 Returns
-[CreateNatGatewayResultTypeDef](./type_defs.md#createnatgatewayresulttypedef).
+[CreateNatGatewayResultResponseTypeDef](./type_defs.md#createnatgatewayresultresponsetypedef).
 
 ### create_network_acl
+
+Creates a network ACL in a VPC.
 
 Type annotations for `boto3.client("ec2").create_network_acl` method.
 
 Boto3 documentation:
 [EC2.Client.create_network_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_network_acl)
+
+Arguments mapping described in
+[CreateNetworkAclRequestTypeDef](./type_defs.md#createnetworkaclrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1770,14 +2128,19 @@ Keyword-only arguments:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
-[CreateNetworkAclResultTypeDef](./type_defs.md#createnetworkaclresulttypedef).
+[CreateNetworkAclResultResponseTypeDef](./type_defs.md#createnetworkaclresultresponsetypedef).
 
 ### create_network_acl_entry
+
+Creates an entry (a rule) in a network ACL with the specified rule number.
 
 Type annotations for `boto3.client("ec2").create_network_acl_entry` method.
 
 Boto3 documentation:
 [EC2.Client.create_network_acl_entry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_network_acl_entry)
+
+Arguments mapping described in
+[CreateNetworkAclEntryRequestTypeDef](./type_defs.md#createnetworkaclentryrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1794,10 +2157,15 @@ Keyword-only arguments:
 
 ### create_network_insights_path
 
+Creates a path to analyze for reachability.
+
 Type annotations for `boto3.client("ec2").create_network_insights_path` method.
 
 Boto3 documentation:
 [EC2.Client.create_network_insights_path](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_network_insights_path)
+
+Arguments mapping described in
+[CreateNetworkInsightsPathRequestTypeDef](./type_defs.md#createnetworkinsightspathrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1813,14 +2181,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[CreateNetworkInsightsPathResultTypeDef](./type_defs.md#createnetworkinsightspathresulttypedef).
+[CreateNetworkInsightsPathResultResponseTypeDef](./type_defs.md#createnetworkinsightspathresultresponsetypedef).
 
 ### create_network_interface
+
+Creates a network interface in the specified subnet.
 
 Type annotations for `boto3.client("ec2").create_network_interface` method.
 
 Boto3 documentation:
 [EC2.Client.create_network_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_network_interface)
+
+Arguments mapping described in
+[CreateNetworkInterfaceRequestTypeDef](./type_defs.md#createnetworkinterfacerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1842,15 +2215,21 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns
-[CreateNetworkInterfaceResultTypeDef](./type_defs.md#createnetworkinterfaceresulttypedef).
+[CreateNetworkInterfaceResultResponseTypeDef](./type_defs.md#createnetworkinterfaceresultresponsetypedef).
 
 ### create_network_interface_permission
+
+Grants an Amazon Web Services-authorized account permission to attach the
+specified network interface to an instance in their account.
 
 Type annotations for `boto3.client("ec2").create_network_interface_permission`
 method.
 
 Boto3 documentation:
 [EC2.Client.create_network_interface_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_network_interface_permission)
+
+Arguments mapping described in
+[CreateNetworkInterfacePermissionRequestTypeDef](./type_defs.md#createnetworkinterfacepermissionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1863,14 +2242,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[CreateNetworkInterfacePermissionResultTypeDef](./type_defs.md#createnetworkinterfacepermissionresulttypedef).
+[CreateNetworkInterfacePermissionResultResponseTypeDef](./type_defs.md#createnetworkinterfacepermissionresultresponsetypedef).
 
 ### create_placement_group
+
+Creates a placement group in which to launch instances.
 
 Type annotations for `boto3.client("ec2").create_placement_group` method.
 
 Boto3 documentation:
 [EC2.Client.create_placement_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_placement_group)
+
+Arguments mapping described in
+[CreatePlacementGroupRequestTypeDef](./type_defs.md#createplacementgrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -1882,15 +2266,20 @@ Keyword-only arguments:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
-[CreatePlacementGroupResultTypeDef](./type_defs.md#createplacementgroupresulttypedef).
+[CreatePlacementGroupResultResponseTypeDef](./type_defs.md#createplacementgroupresultresponsetypedef).
 
 ### create_replace_root_volume_task
+
+Creates a root volume replacement task for an Amazon EC2 instance.
 
 Type annotations for `boto3.client("ec2").create_replace_root_volume_task`
 method.
 
 Boto3 documentation:
 [EC2.Client.create_replace_root_volume_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_replace_root_volume_task)
+
+Arguments mapping described in
+[CreateReplaceRootVolumeTaskRequestTypeDef](./type_defs.md#createreplacerootvolumetaskrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1902,15 +2291,21 @@ Keyword-only arguments:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
-[CreateReplaceRootVolumeTaskResultTypeDef](./type_defs.md#createreplacerootvolumetaskresulttypedef).
+[CreateReplaceRootVolumeTaskResultResponseTypeDef](./type_defs.md#createreplacerootvolumetaskresultresponsetypedef).
 
 ### create_reserved_instances_listing
+
+Creates a listing for Amazon EC2 Standard Reserved Instances to be sold in the
+Reserved Instance Marketplace.
 
 Type annotations for `boto3.client("ec2").create_reserved_instances_listing`
 method.
 
 Boto3 documentation:
 [EC2.Client.create_reserved_instances_listing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_reserved_instances_listing)
+
+Arguments mapping described in
+[CreateReservedInstancesListingRequestTypeDef](./type_defs.md#createreservedinstanceslistingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1922,14 +2317,22 @@ Keyword-only arguments:
 - `ReservedInstancesId`: `str` *(required)*
 
 Returns
-[CreateReservedInstancesListingResultTypeDef](./type_defs.md#createreservedinstanceslistingresulttypedef).
+[CreateReservedInstancesListingResultResponseTypeDef](./type_defs.md#createreservedinstanceslistingresultresponsetypedef).
 
 ### create_restore_image_task
+
+Starts a task that restores an AMI from an S3 object that was previously
+created by using
+`CreateStoreImageTask <https://docs.aws.amazon.com/AWSEC2/latest/APIRef erence/API_CreateStoreImageTask.html>`\_\_
+.
 
 Type annotations for `boto3.client("ec2").create_restore_image_task` method.
 
 Boto3 documentation:
 [EC2.Client.create_restore_image_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_restore_image_task)
+
+Arguments mapping described in
+[CreateRestoreImageTaskRequestTypeDef](./type_defs.md#createrestoreimagetaskrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1941,14 +2344,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[CreateRestoreImageTaskResultTypeDef](./type_defs.md#createrestoreimagetaskresulttypedef).
+[CreateRestoreImageTaskResultResponseTypeDef](./type_defs.md#createrestoreimagetaskresultresponsetypedef).
 
 ### create_route
+
+Creates a route in a route table within a VPC.
 
 Type annotations for `boto3.client("ec2").create_route` method.
 
 Boto3 documentation:
 [EC2.Client.create_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_route)
+
+Arguments mapping described in
+[CreateRouteRequestTypeDef](./type_defs.md#createrouterequesttypedef).
 
 Keyword-only arguments:
 
@@ -1968,14 +2376,20 @@ Keyword-only arguments:
 - `NetworkInterfaceId`: `str`
 - `VpcPeeringConnectionId`: `str`
 
-Returns [CreateRouteResultTypeDef](./type_defs.md#createrouteresulttypedef).
+Returns
+[CreateRouteResultResponseTypeDef](./type_defs.md#createrouteresultresponsetypedef).
 
 ### create_route_table
+
+Creates a route table for the specified VPC.
 
 Type annotations for `boto3.client("ec2").create_route_table` method.
 
 Boto3 documentation:
 [EC2.Client.create_route_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_route_table)
+
+Arguments mapping described in
+[CreateRouteTableRequestTypeDef](./type_defs.md#createroutetablerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1985,14 +2399,19 @@ Keyword-only arguments:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
-[CreateRouteTableResultTypeDef](./type_defs.md#createroutetableresulttypedef).
+[CreateRouteTableResultResponseTypeDef](./type_defs.md#createroutetableresultresponsetypedef).
 
 ### create_security_group
+
+Creates a security group.
 
 Type annotations for `boto3.client("ec2").create_security_group` method.
 
 Boto3 documentation:
 [EC2.Client.create_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_security_group)
+
+Arguments mapping described in
+[CreateSecurityGroupRequestTypeDef](./type_defs.md#createsecuritygrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -2004,14 +2423,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[CreateSecurityGroupResultTypeDef](./type_defs.md#createsecuritygroupresulttypedef).
+[CreateSecurityGroupResultResponseTypeDef](./type_defs.md#createsecuritygroupresultresponsetypedef).
 
 ### create_snapshot
+
+Creates a snapshot of an EBS volume and stores it in Amazon S3.
 
 Type annotations for `boto3.client("ec2").create_snapshot` method.
 
 Boto3 documentation:
 [EC2.Client.create_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_snapshot)
+
+Arguments mapping described in
+[CreateSnapshotRequestTypeDef](./type_defs.md#createsnapshotrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2022,14 +2446,20 @@ Keyword-only arguments:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
-Returns [SnapshotTypeDef](./type_defs.md#snapshottypedef).
+Returns [SnapshotResponseTypeDef](./type_defs.md#snapshotresponsetypedef).
 
 ### create_snapshots
+
+Creates crash-consistent snapshots of multiple EBS volumes and stores the data
+in S3.
 
 Type annotations for `boto3.client("ec2").create_snapshots` method.
 
 Boto3 documentation:
 [EC2.Client.create_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_snapshots)
+
+Arguments mapping described in
+[CreateSnapshotsRequestTypeDef](./type_defs.md#createsnapshotsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2045,15 +2475,21 @@ Keyword-only arguments:
   [CopyTagsFromSourceType](./literals.md#copytagsfromsourcetype))
 
 Returns
-[CreateSnapshotsResultTypeDef](./type_defs.md#createsnapshotsresulttypedef).
+[CreateSnapshotsResultResponseTypeDef](./type_defs.md#createsnapshotsresultresponsetypedef).
 
 ### create_spot_datafeed_subscription
+
+Creates a data feed for Spot Instances, enabling you to view Spot Instance
+usage logs.
 
 Type annotations for `boto3.client("ec2").create_spot_datafeed_subscription`
 method.
 
 Boto3 documentation:
 [EC2.Client.create_spot_datafeed_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_spot_datafeed_subscription)
+
+Arguments mapping described in
+[CreateSpotDatafeedSubscriptionRequestTypeDef](./type_defs.md#createspotdatafeedsubscriptionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2062,14 +2498,19 @@ Keyword-only arguments:
 - `Prefix`: `str`
 
 Returns
-[CreateSpotDatafeedSubscriptionResultTypeDef](./type_defs.md#createspotdatafeedsubscriptionresulttypedef).
+[CreateSpotDatafeedSubscriptionResultResponseTypeDef](./type_defs.md#createspotdatafeedsubscriptionresultresponsetypedef).
 
 ### create_store_image_task
+
+Stores an AMI as a single object in an S3 bucket.
 
 Type annotations for `boto3.client("ec2").create_store_image_task` method.
 
 Boto3 documentation:
 [EC2.Client.create_store_image_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_store_image_task)
+
+Arguments mapping described in
+[CreateStoreImageTaskRequestTypeDef](./type_defs.md#createstoreimagetaskrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2080,14 +2521,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[CreateStoreImageTaskResultTypeDef](./type_defs.md#createstoreimagetaskresulttypedef).
+[CreateStoreImageTaskResultResponseTypeDef](./type_defs.md#createstoreimagetaskresultresponsetypedef).
 
 ### create_subnet
+
+Creates a subnet in a specified VPC.
 
 Type annotations for `boto3.client("ec2").create_subnet` method.
 
 Boto3 documentation:
 [EC2.Client.create_subnet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_subnet)
+
+Arguments mapping described in
+[CreateSubnetRequestTypeDef](./type_defs.md#createsubnetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2101,14 +2547,21 @@ Keyword-only arguments:
 - `OutpostArn`: `str`
 - `DryRun`: `bool`
 
-Returns [CreateSubnetResultTypeDef](./type_defs.md#createsubnetresulttypedef).
+Returns
+[CreateSubnetResultResponseTypeDef](./type_defs.md#createsubnetresultresponsetypedef).
 
 ### create_tags
+
+Adds or overwrites only the specified tags for the specified Amazon EC2
+resource or resources.
 
 Type annotations for `boto3.client("ec2").create_tags` method.
 
 Boto3 documentation:
 [EC2.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_tags)
+
+Arguments mapping described in
+[CreateTagsRequestTypeDef](./type_defs.md#createtagsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2119,10 +2572,15 @@ Keyword-only arguments:
 
 ### create_traffic_mirror_filter
 
+Creates a Traffic Mirror filter.
+
 Type annotations for `boto3.client("ec2").create_traffic_mirror_filter` method.
 
 Boto3 documentation:
 [EC2.Client.create_traffic_mirror_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_traffic_mirror_filter)
+
+Arguments mapping described in
+[CreateTrafficMirrorFilterRequestTypeDef](./type_defs.md#createtrafficmirrorfilterrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2133,15 +2591,20 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns
-[CreateTrafficMirrorFilterResultTypeDef](./type_defs.md#createtrafficmirrorfilterresulttypedef).
+[CreateTrafficMirrorFilterResultResponseTypeDef](./type_defs.md#createtrafficmirrorfilterresultresponsetypedef).
 
 ### create_traffic_mirror_filter_rule
+
+Creates a Traffic Mirror filter rule.
 
 Type annotations for `boto3.client("ec2").create_traffic_mirror_filter_rule`
 method.
 
 Boto3 documentation:
 [EC2.Client.create_traffic_mirror_filter_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_traffic_mirror_filter_rule)
+
+Arguments mapping described in
+[CreateTrafficMirrorFilterRuleRequestTypeDef](./type_defs.md#createtrafficmirrorfilterrulerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2164,15 +2627,20 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns
-[CreateTrafficMirrorFilterRuleResultTypeDef](./type_defs.md#createtrafficmirrorfilterruleresulttypedef).
+[CreateTrafficMirrorFilterRuleResultResponseTypeDef](./type_defs.md#createtrafficmirrorfilterruleresultresponsetypedef).
 
 ### create_traffic_mirror_session
+
+Creates a Traffic Mirror session.
 
 Type annotations for `boto3.client("ec2").create_traffic_mirror_session`
 method.
 
 Boto3 documentation:
 [EC2.Client.create_traffic_mirror_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_traffic_mirror_session)
+
+Arguments mapping described in
+[CreateTrafficMirrorSessionRequestTypeDef](./type_defs.md#createtrafficmirrorsessionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2189,14 +2657,19 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns
-[CreateTrafficMirrorSessionResultTypeDef](./type_defs.md#createtrafficmirrorsessionresulttypedef).
+[CreateTrafficMirrorSessionResultResponseTypeDef](./type_defs.md#createtrafficmirrorsessionresultresponsetypedef).
 
 ### create_traffic_mirror_target
+
+Creates a target for your Traffic Mirror session.
 
 Type annotations for `boto3.client("ec2").create_traffic_mirror_target` method.
 
 Boto3 documentation:
 [EC2.Client.create_traffic_mirror_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_traffic_mirror_target)
+
+Arguments mapping described in
+[CreateTrafficMirrorTargetRequestTypeDef](./type_defs.md#createtrafficmirrortargetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2209,14 +2682,19 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns
-[CreateTrafficMirrorTargetResultTypeDef](./type_defs.md#createtrafficmirrortargetresulttypedef).
+[CreateTrafficMirrorTargetResultResponseTypeDef](./type_defs.md#createtrafficmirrortargetresultresponsetypedef).
 
 ### create_transit_gateway
+
+Creates a transit gateway.
 
 Type annotations for `boto3.client("ec2").create_transit_gateway` method.
 
 Boto3 documentation:
 [EC2.Client.create_transit_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway)
+
+Arguments mapping described in
+[CreateTransitGatewayRequestTypeDef](./type_defs.md#createtransitgatewayrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2228,15 +2706,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[CreateTransitGatewayResultTypeDef](./type_defs.md#createtransitgatewayresulttypedef).
+[CreateTransitGatewayResultResponseTypeDef](./type_defs.md#createtransitgatewayresultresponsetypedef).
 
 ### create_transit_gateway_connect
+
+Creates a Connect attachment from a specified transit gateway attachment.
 
 Type annotations for `boto3.client("ec2").create_transit_gateway_connect`
 method.
 
 Boto3 documentation:
 [EC2.Client.create_transit_gateway_connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_connect)
+
+Arguments mapping described in
+[CreateTransitGatewayConnectRequestTypeDef](./type_defs.md#createtransitgatewayconnectrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2249,15 +2732,21 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[CreateTransitGatewayConnectResultTypeDef](./type_defs.md#createtransitgatewayconnectresulttypedef).
+[CreateTransitGatewayConnectResultResponseTypeDef](./type_defs.md#createtransitgatewayconnectresultresponsetypedef).
 
 ### create_transit_gateway_connect_peer
+
+Creates a Connect peer for a specified transit gateway Connect attachment
+between a transit gateway and an appliance.
 
 Type annotations for `boto3.client("ec2").create_transit_gateway_connect_peer`
 method.
 
 Boto3 documentation:
 [EC2.Client.create_transit_gateway_connect_peer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_connect_peer)
+
+Arguments mapping described in
+[CreateTransitGatewayConnectPeerRequestTypeDef](./type_defs.md#createtransitgatewayconnectpeerrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2272,15 +2761,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[CreateTransitGatewayConnectPeerResultTypeDef](./type_defs.md#createtransitgatewayconnectpeerresulttypedef).
+[CreateTransitGatewayConnectPeerResultResponseTypeDef](./type_defs.md#createtransitgatewayconnectpeerresultresponsetypedef).
 
 ### create_transit_gateway_multicast_domain
+
+Creates a multicast domain using the specified transit gateway.
 
 Type annotations for
 `boto3.client("ec2").create_transit_gateway_multicast_domain` method.
 
 Boto3 documentation:
 [EC2.Client.create_transit_gateway_multicast_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_multicast_domain)
+
+Arguments mapping described in
+[CreateTransitGatewayMulticastDomainRequestTypeDef](./type_defs.md#createtransitgatewaymulticastdomainrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2292,15 +2786,21 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[CreateTransitGatewayMulticastDomainResultTypeDef](./type_defs.md#createtransitgatewaymulticastdomainresulttypedef).
+[CreateTransitGatewayMulticastDomainResultResponseTypeDef](./type_defs.md#createtransitgatewaymulticastdomainresultresponsetypedef).
 
 ### create_transit_gateway_peering_attachment
+
+Requests a transit gateway peering attachment between the specified transit
+gateway (requester) and a peer transit gateway (accepter).
 
 Type annotations for
 `boto3.client("ec2").create_transit_gateway_peering_attachment` method.
 
 Boto3 documentation:
 [EC2.Client.create_transit_gateway_peering_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_peering_attachment)
+
+Arguments mapping described in
+[CreateTransitGatewayPeeringAttachmentRequestTypeDef](./type_defs.md#createtransitgatewaypeeringattachmentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2313,15 +2813,21 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[CreateTransitGatewayPeeringAttachmentResultTypeDef](./type_defs.md#createtransitgatewaypeeringattachmentresulttypedef).
+[CreateTransitGatewayPeeringAttachmentResultResponseTypeDef](./type_defs.md#createtransitgatewaypeeringattachmentresultresponsetypedef).
 
 ### create_transit_gateway_prefix_list_reference
+
+Creates a reference (route) to a prefix list in a specified transit gateway
+route table.
 
 Type annotations for
 `boto3.client("ec2").create_transit_gateway_prefix_list_reference` method.
 
 Boto3 documentation:
 [EC2.Client.create_transit_gateway_prefix_list_reference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_prefix_list_reference)
+
+Arguments mapping described in
+[CreateTransitGatewayPrefixListReferenceRequestTypeDef](./type_defs.md#createtransitgatewayprefixlistreferencerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2332,14 +2838,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[CreateTransitGatewayPrefixListReferenceResultTypeDef](./type_defs.md#createtransitgatewayprefixlistreferenceresulttypedef).
+[CreateTransitGatewayPrefixListReferenceResultResponseTypeDef](./type_defs.md#createtransitgatewayprefixlistreferenceresultresponsetypedef).
 
 ### create_transit_gateway_route
+
+Creates a static route for the specified transit gateway route table.
 
 Type annotations for `boto3.client("ec2").create_transit_gateway_route` method.
 
 Boto3 documentation:
 [EC2.Client.create_transit_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_route)
+
+Arguments mapping described in
+[CreateTransitGatewayRouteRequestTypeDef](./type_defs.md#createtransitgatewayrouterequesttypedef).
 
 Keyword-only arguments:
 
@@ -2350,15 +2861,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[CreateTransitGatewayRouteResultTypeDef](./type_defs.md#createtransitgatewayrouteresulttypedef).
+[CreateTransitGatewayRouteResultResponseTypeDef](./type_defs.md#createtransitgatewayrouteresultresponsetypedef).
 
 ### create_transit_gateway_route_table
+
+Creates a route table for the specified transit gateway.
 
 Type annotations for `boto3.client("ec2").create_transit_gateway_route_table`
 method.
 
 Boto3 documentation:
 [EC2.Client.create_transit_gateway_route_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_route_table)
+
+Arguments mapping described in
+[CreateTransitGatewayRouteTableRequestTypeDef](./type_defs.md#createtransitgatewayroutetablerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2368,15 +2884,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[CreateTransitGatewayRouteTableResultTypeDef](./type_defs.md#createtransitgatewayroutetableresulttypedef).
+[CreateTransitGatewayRouteTableResultResponseTypeDef](./type_defs.md#createtransitgatewayroutetableresultresponsetypedef).
 
 ### create_transit_gateway_vpc_attachment
+
+Attaches the specified VPC to the specified transit gateway.
 
 Type annotations for
 `boto3.client("ec2").create_transit_gateway_vpc_attachment` method.
 
 Boto3 documentation:
 [EC2.Client.create_transit_gateway_vpc_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_transit_gateway_vpc_attachment)
+
+Arguments mapping described in
+[CreateTransitGatewayVpcAttachmentRequestTypeDef](./type_defs.md#createtransitgatewayvpcattachmentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2390,14 +2911,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[CreateTransitGatewayVpcAttachmentResultTypeDef](./type_defs.md#createtransitgatewayvpcattachmentresulttypedef).
+[CreateTransitGatewayVpcAttachmentResultResponseTypeDef](./type_defs.md#createtransitgatewayvpcattachmentresultresponsetypedef).
 
 ### create_volume
+
+Creates an EBS volume that can be attached to an instance in the same
+Availability Zone.
 
 Type annotations for `boto3.client("ec2").create_volume` method.
 
 Boto3 documentation:
 [EC2.Client.create_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_volume)
+
+Arguments mapping described in
+[CreateVolumeRequestTypeDef](./type_defs.md#createvolumerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2415,14 +2942,19 @@ Keyword-only arguments:
 - `MultiAttachEnabled`: `bool`
 - `Throughput`: `int`
 
-Returns [VolumeTypeDef](./type_defs.md#volumetypedef).
+Returns [VolumeResponseTypeDef](./type_defs.md#volumeresponsetypedef).
 
 ### create_vpc
+
+Creates a VPC with the specified IPv4 CIDR block.
 
 Type annotations for `boto3.client("ec2").create_vpc` method.
 
 Boto3 documentation:
 [EC2.Client.create_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpc)
+
+Arguments mapping described in
+[CreateVpcRequestTypeDef](./type_defs.md#createvpcrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2436,14 +2968,20 @@ Keyword-only arguments:
 - `TagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
-Returns [CreateVpcResultTypeDef](./type_defs.md#createvpcresulttypedef).
+Returns
+[CreateVpcResultResponseTypeDef](./type_defs.md#createvpcresultresponsetypedef).
 
 ### create_vpc_endpoint
+
+Creates a VPC endpoint for a specified service.
 
 Type annotations for `boto3.client("ec2").create_vpc_endpoint` method.
 
 Boto3 documentation:
 [EC2.Client.create_vpc_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpc_endpoint)
+
+Arguments mapping described in
+[CreateVpcEndpointRequestTypeDef](./type_defs.md#createvpcendpointrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2461,15 +2999,21 @@ Keyword-only arguments:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
-[CreateVpcEndpointResultTypeDef](./type_defs.md#createvpcendpointresulttypedef).
+[CreateVpcEndpointResultResponseTypeDef](./type_defs.md#createvpcendpointresultresponsetypedef).
 
 ### create_vpc_endpoint_connection_notification
+
+Creates a connection notification for a specified VPC endpoint or VPC endpoint
+service.
 
 Type annotations for
 `boto3.client("ec2").create_vpc_endpoint_connection_notification` method.
 
 Boto3 documentation:
 [EC2.Client.create_vpc_endpoint_connection_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpc_endpoint_connection_notification)
+
+Arguments mapping described in
+[CreateVpcEndpointConnectionNotificationRequestTypeDef](./type_defs.md#createvpcendpointconnectionnotificationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2481,15 +3025,21 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns
-[CreateVpcEndpointConnectionNotificationResultTypeDef](./type_defs.md#createvpcendpointconnectionnotificationresulttypedef).
+[CreateVpcEndpointConnectionNotificationResultResponseTypeDef](./type_defs.md#createvpcendpointconnectionnotificationresultresponsetypedef).
 
 ### create_vpc_endpoint_service_configuration
+
+Creates a VPC endpoint service configuration to which service consumers (AWS
+accounts, IAM users, and IAM roles) can connect.
 
 Type annotations for
 `boto3.client("ec2").create_vpc_endpoint_service_configuration` method.
 
 Boto3 documentation:
 [EC2.Client.create_vpc_endpoint_service_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpc_endpoint_service_configuration)
+
+Arguments mapping described in
+[CreateVpcEndpointServiceConfigurationRequestTypeDef](./type_defs.md#createvpcendpointserviceconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2503,15 +3053,21 @@ Keyword-only arguments:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
-[CreateVpcEndpointServiceConfigurationResultTypeDef](./type_defs.md#createvpcendpointserviceconfigurationresulttypedef).
+[CreateVpcEndpointServiceConfigurationResultResponseTypeDef](./type_defs.md#createvpcendpointserviceconfigurationresultresponsetypedef).
 
 ### create_vpc_peering_connection
+
+Requests a VPC peering connection between two VPCs: a requester VPC that you
+own and an accepter VPC with which to create the connection.
 
 Type annotations for `boto3.client("ec2").create_vpc_peering_connection`
 method.
 
 Boto3 documentation:
 [EC2.Client.create_vpc_peering_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpc_peering_connection)
+
+Arguments mapping described in
+[CreateVpcPeeringConnectionRequestTypeDef](./type_defs.md#createvpcpeeringconnectionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2524,14 +3080,20 @@ Keyword-only arguments:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
-[CreateVpcPeeringConnectionResultTypeDef](./type_defs.md#createvpcpeeringconnectionresulttypedef).
+[CreateVpcPeeringConnectionResultResponseTypeDef](./type_defs.md#createvpcpeeringconnectionresultresponsetypedef).
 
 ### create_vpn_connection
+
+Creates a VPN connection between an existing virtual private gateway or transit
+gateway and a customer gateway.
 
 Type annotations for `boto3.client("ec2").create_vpn_connection` method.
 
 Boto3 documentation:
 [EC2.Client.create_vpn_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpn_connection)
+
+Arguments mapping described in
+[CreateVpnConnectionRequestTypeDef](./type_defs.md#createvpnconnectionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2546,14 +3108,20 @@ Keyword-only arguments:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
-[CreateVpnConnectionResultTypeDef](./type_defs.md#createvpnconnectionresulttypedef).
+[CreateVpnConnectionResultResponseTypeDef](./type_defs.md#createvpnconnectionresultresponsetypedef).
 
 ### create_vpn_connection_route
+
+Creates a static route associated with a VPN connection between an existing
+virtual private gateway and a VPN customer gateway.
 
 Type annotations for `boto3.client("ec2").create_vpn_connection_route` method.
 
 Boto3 documentation:
 [EC2.Client.create_vpn_connection_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpn_connection_route)
+
+Arguments mapping described in
+[CreateVpnConnectionRouteRequestTypeDef](./type_defs.md#createvpnconnectionrouterequesttypedef).
 
 Keyword-only arguments:
 
@@ -2562,10 +3130,15 @@ Keyword-only arguments:
 
 ### create_vpn_gateway
 
+Creates a virtual private gateway.
+
 Type annotations for `boto3.client("ec2").create_vpn_gateway` method.
 
 Boto3 documentation:
 [EC2.Client.create_vpn_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_vpn_gateway)
+
+Arguments mapping described in
+[CreateVpnGatewayRequestTypeDef](./type_defs.md#createvpngatewayrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2578,14 +3151,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[CreateVpnGatewayResultTypeDef](./type_defs.md#createvpngatewayresulttypedef).
+[CreateVpnGatewayResultResponseTypeDef](./type_defs.md#createvpngatewayresultresponsetypedef).
 
 ### delete_carrier_gateway
+
+Deletes a carrier gateway.
 
 Type annotations for `boto3.client("ec2").delete_carrier_gateway` method.
 
 Boto3 documentation:
 [EC2.Client.delete_carrier_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_carrier_gateway)
+
+Arguments mapping described in
+[DeleteCarrierGatewayRequestTypeDef](./type_defs.md#deletecarriergatewayrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2593,14 +3171,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DeleteCarrierGatewayResultTypeDef](./type_defs.md#deletecarriergatewayresulttypedef).
+[DeleteCarrierGatewayResultResponseTypeDef](./type_defs.md#deletecarriergatewayresultresponsetypedef).
 
 ### delete_client_vpn_endpoint
+
+Deletes the specified Client VPN endpoint.
 
 Type annotations for `boto3.client("ec2").delete_client_vpn_endpoint` method.
 
 Boto3 documentation:
 [EC2.Client.delete_client_vpn_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_client_vpn_endpoint)
+
+Arguments mapping described in
+[DeleteClientVpnEndpointRequestTypeDef](./type_defs.md#deleteclientvpnendpointrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2608,14 +3191,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DeleteClientVpnEndpointResultTypeDef](./type_defs.md#deleteclientvpnendpointresulttypedef).
+[DeleteClientVpnEndpointResultResponseTypeDef](./type_defs.md#deleteclientvpnendpointresultresponsetypedef).
 
 ### delete_client_vpn_route
+
+Deletes a route from a Client VPN endpoint.
 
 Type annotations for `boto3.client("ec2").delete_client_vpn_route` method.
 
 Boto3 documentation:
 [EC2.Client.delete_client_vpn_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_client_vpn_route)
+
+Arguments mapping described in
+[DeleteClientVpnRouteRequestTypeDef](./type_defs.md#deleteclientvpnrouterequesttypedef).
 
 Keyword-only arguments:
 
@@ -2625,14 +3213,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DeleteClientVpnRouteResultTypeDef](./type_defs.md#deleteclientvpnrouteresulttypedef).
+[DeleteClientVpnRouteResultResponseTypeDef](./type_defs.md#deleteclientvpnrouteresultresponsetypedef).
 
 ### delete_customer_gateway
+
+Deletes the specified customer gateway.
 
 Type annotations for `boto3.client("ec2").delete_customer_gateway` method.
 
 Boto3 documentation:
 [EC2.Client.delete_customer_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_customer_gateway)
+
+Arguments mapping described in
+[DeleteCustomerGatewayRequestTypeDef](./type_defs.md#deletecustomergatewayrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2641,10 +3234,15 @@ Keyword-only arguments:
 
 ### delete_dhcp_options
 
+Deletes the specified set of DHCP options.
+
 Type annotations for `boto3.client("ec2").delete_dhcp_options` method.
 
 Boto3 documentation:
 [EC2.Client.delete_dhcp_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_dhcp_options)
+
+Arguments mapping described in
+[DeleteDhcpOptionsRequestTypeDef](./type_defs.md#deletedhcpoptionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2653,11 +3251,16 @@ Keyword-only arguments:
 
 ### delete_egress_only_internet_gateway
 
+Deletes an egress-only internet gateway.
+
 Type annotations for `boto3.client("ec2").delete_egress_only_internet_gateway`
 method.
 
 Boto3 documentation:
 [EC2.Client.delete_egress_only_internet_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_egress_only_internet_gateway)
+
+Arguments mapping described in
+[DeleteEgressOnlyInternetGatewayRequestTypeDef](./type_defs.md#deleteegressonlyinternetgatewayrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2665,14 +3268,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DeleteEgressOnlyInternetGatewayResultTypeDef](./type_defs.md#deleteegressonlyinternetgatewayresulttypedef).
+[DeleteEgressOnlyInternetGatewayResultResponseTypeDef](./type_defs.md#deleteegressonlyinternetgatewayresultresponsetypedef).
 
 ### delete_fleets
+
+Deletes the specified EC2 Fleet.
 
 Type annotations for `boto3.client("ec2").delete_fleets` method.
 
 Boto3 documentation:
 [EC2.Client.delete_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_fleets)
+
+Arguments mapping described in
+[DeleteFleetsRequestTypeDef](./type_defs.md#deletefleetsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2680,14 +3288,20 @@ Keyword-only arguments:
 - `TerminateInstances`: `bool` *(required)*
 - `DryRun`: `bool`
 
-Returns [DeleteFleetsResultTypeDef](./type_defs.md#deletefleetsresulttypedef).
+Returns
+[DeleteFleetsResultResponseTypeDef](./type_defs.md#deletefleetsresultresponsetypedef).
 
 ### delete_flow_logs
+
+Deletes one or more flow logs.
 
 Type annotations for `boto3.client("ec2").delete_flow_logs` method.
 
 Boto3 documentation:
 [EC2.Client.delete_flow_logs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_flow_logs)
+
+Arguments mapping described in
+[DeleteFlowLogsRequestTypeDef](./type_defs.md#deleteflowlogsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2695,14 +3309,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DeleteFlowLogsResultTypeDef](./type_defs.md#deleteflowlogsresulttypedef).
+[DeleteFlowLogsResultResponseTypeDef](./type_defs.md#deleteflowlogsresultresponsetypedef).
 
 ### delete_fpga_image
+
+Deletes the specified Amazon FPGA Image (AFI).
 
 Type annotations for `boto3.client("ec2").delete_fpga_image` method.
 
 Boto3 documentation:
 [EC2.Client.delete_fpga_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_fpga_image)
+
+Arguments mapping described in
+[DeleteFpgaImageRequestTypeDef](./type_defs.md#deletefpgaimagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2710,14 +3329,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DeleteFpgaImageResultTypeDef](./type_defs.md#deletefpgaimageresulttypedef).
+[DeleteFpgaImageResultResponseTypeDef](./type_defs.md#deletefpgaimageresultresponsetypedef).
 
 ### delete_internet_gateway
+
+Deletes the specified internet gateway.
 
 Type annotations for `boto3.client("ec2").delete_internet_gateway` method.
 
 Boto3 documentation:
 [EC2.Client.delete_internet_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_internet_gateway)
+
+Arguments mapping described in
+[DeleteInternetGatewayRequestTypeDef](./type_defs.md#deleteinternetgatewayrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2726,10 +3350,15 @@ Keyword-only arguments:
 
 ### delete_key_pair
 
+Deletes the specified key pair, by removing the public key from Amazon EC2.
+
 Type annotations for `boto3.client("ec2").delete_key_pair` method.
 
 Boto3 documentation:
 [EC2.Client.delete_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_key_pair)
+
+Arguments mapping described in
+[DeleteKeyPairRequestTypeDef](./type_defs.md#deletekeypairrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2739,10 +3368,15 @@ Keyword-only arguments:
 
 ### delete_launch_template
 
+Deletes a launch template.
+
 Type annotations for `boto3.client("ec2").delete_launch_template` method.
 
 Boto3 documentation:
 [EC2.Client.delete_launch_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_launch_template)
+
+Arguments mapping described in
+[DeleteLaunchTemplateRequestTypeDef](./type_defs.md#deletelaunchtemplaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -2751,15 +3385,20 @@ Keyword-only arguments:
 - `LaunchTemplateName`: `str`
 
 Returns
-[DeleteLaunchTemplateResultTypeDef](./type_defs.md#deletelaunchtemplateresulttypedef).
+[DeleteLaunchTemplateResultResponseTypeDef](./type_defs.md#deletelaunchtemplateresultresponsetypedef).
 
 ### delete_launch_template_versions
+
+Deletes one or more versions of a launch template.
 
 Type annotations for `boto3.client("ec2").delete_launch_template_versions`
 method.
 
 Boto3 documentation:
 [EC2.Client.delete_launch_template_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_launch_template_versions)
+
+Arguments mapping described in
+[DeleteLaunchTemplateVersionsRequestTypeDef](./type_defs.md#deletelaunchtemplateversionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2769,14 +3408,19 @@ Keyword-only arguments:
 - `LaunchTemplateName`: `str`
 
 Returns
-[DeleteLaunchTemplateVersionsResultTypeDef](./type_defs.md#deletelaunchtemplateversionsresulttypedef).
+[DeleteLaunchTemplateVersionsResultResponseTypeDef](./type_defs.md#deletelaunchtemplateversionsresultresponsetypedef).
 
 ### delete_local_gateway_route
+
+Deletes the specified route from the specified local gateway route table.
 
 Type annotations for `boto3.client("ec2").delete_local_gateway_route` method.
 
 Boto3 documentation:
 [EC2.Client.delete_local_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_local_gateway_route)
+
+Arguments mapping described in
+[DeleteLocalGatewayRouteRequestTypeDef](./type_defs.md#deletelocalgatewayrouterequesttypedef).
 
 Keyword-only arguments:
 
@@ -2785,9 +3429,11 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DeleteLocalGatewayRouteResultTypeDef](./type_defs.md#deletelocalgatewayrouteresulttypedef).
+[DeleteLocalGatewayRouteResultResponseTypeDef](./type_defs.md#deletelocalgatewayrouteresultresponsetypedef).
 
 ### delete_local_gateway_route_table_vpc_association
+
+Deletes the specified association between a VPC and local gateway route table.
 
 Type annotations for
 `boto3.client("ec2").delete_local_gateway_route_table_vpc_association` method.
@@ -2795,20 +3441,28 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.delete_local_gateway_route_table_vpc_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_local_gateway_route_table_vpc_association)
 
+Arguments mapping described in
+[DeleteLocalGatewayRouteTableVpcAssociationRequestTypeDef](./type_defs.md#deletelocalgatewayroutetablevpcassociationrequesttypedef).
+
 Keyword-only arguments:
 
 - `LocalGatewayRouteTableVpcAssociationId`: `str` *(required)*
 - `DryRun`: `bool`
 
 Returns
-[DeleteLocalGatewayRouteTableVpcAssociationResultTypeDef](./type_defs.md#deletelocalgatewayroutetablevpcassociationresulttypedef).
+[DeleteLocalGatewayRouteTableVpcAssociationResultResponseTypeDef](./type_defs.md#deletelocalgatewayroutetablevpcassociationresultresponsetypedef).
 
 ### delete_managed_prefix_list
+
+Deletes the specified managed prefix list.
 
 Type annotations for `boto3.client("ec2").delete_managed_prefix_list` method.
 
 Boto3 documentation:
 [EC2.Client.delete_managed_prefix_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_managed_prefix_list)
+
+Arguments mapping described in
+[DeleteManagedPrefixListRequestTypeDef](./type_defs.md#deletemanagedprefixlistrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2816,14 +3470,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DeleteManagedPrefixListResultTypeDef](./type_defs.md#deletemanagedprefixlistresulttypedef).
+[DeleteManagedPrefixListResultResponseTypeDef](./type_defs.md#deletemanagedprefixlistresultresponsetypedef).
 
 ### delete_nat_gateway
+
+Deletes the specified NAT gateway.
 
 Type annotations for `boto3.client("ec2").delete_nat_gateway` method.
 
 Boto3 documentation:
 [EC2.Client.delete_nat_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_nat_gateway)
+
+Arguments mapping described in
+[DeleteNatGatewayRequestTypeDef](./type_defs.md#deletenatgatewayrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2831,14 +3490,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DeleteNatGatewayResultTypeDef](./type_defs.md#deletenatgatewayresulttypedef).
+[DeleteNatGatewayResultResponseTypeDef](./type_defs.md#deletenatgatewayresultresponsetypedef).
 
 ### delete_network_acl
+
+Deletes the specified network ACL.
 
 Type annotations for `boto3.client("ec2").delete_network_acl` method.
 
 Boto3 documentation:
 [EC2.Client.delete_network_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_network_acl)
+
+Arguments mapping described in
+[DeleteNetworkAclRequestTypeDef](./type_defs.md#deletenetworkaclrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2847,10 +3511,16 @@ Keyword-only arguments:
 
 ### delete_network_acl_entry
 
+Deletes the specified ingress or egress entry (rule) from the specified network
+ACL.
+
 Type annotations for `boto3.client("ec2").delete_network_acl_entry` method.
 
 Boto3 documentation:
 [EC2.Client.delete_network_acl_entry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_network_acl_entry)
+
+Arguments mapping described in
+[DeleteNetworkAclEntryRequestTypeDef](./type_defs.md#deletenetworkaclentryrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2861,11 +3531,16 @@ Keyword-only arguments:
 
 ### delete_network_insights_analysis
 
+Deletes the specified network insights analysis.
+
 Type annotations for `boto3.client("ec2").delete_network_insights_analysis`
 method.
 
 Boto3 documentation:
 [EC2.Client.delete_network_insights_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_network_insights_analysis)
+
+Arguments mapping described in
+[DeleteNetworkInsightsAnalysisRequestTypeDef](./type_defs.md#deletenetworkinsightsanalysisrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2873,14 +3548,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DeleteNetworkInsightsAnalysisResultTypeDef](./type_defs.md#deletenetworkinsightsanalysisresulttypedef).
+[DeleteNetworkInsightsAnalysisResultResponseTypeDef](./type_defs.md#deletenetworkinsightsanalysisresultresponsetypedef).
 
 ### delete_network_insights_path
+
+Deletes the specified path.
 
 Type annotations for `boto3.client("ec2").delete_network_insights_path` method.
 
 Boto3 documentation:
 [EC2.Client.delete_network_insights_path](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_network_insights_path)
+
+Arguments mapping described in
+[DeleteNetworkInsightsPathRequestTypeDef](./type_defs.md#deletenetworkinsightspathrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2888,14 +3568,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DeleteNetworkInsightsPathResultTypeDef](./type_defs.md#deletenetworkinsightspathresulttypedef).
+[DeleteNetworkInsightsPathResultResponseTypeDef](./type_defs.md#deletenetworkinsightspathresultresponsetypedef).
 
 ### delete_network_interface
+
+Deletes the specified network interface.
 
 Type annotations for `boto3.client("ec2").delete_network_interface` method.
 
 Boto3 documentation:
 [EC2.Client.delete_network_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_network_interface)
+
+Arguments mapping described in
+[DeleteNetworkInterfaceRequestTypeDef](./type_defs.md#deletenetworkinterfacerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2904,11 +3589,16 @@ Keyword-only arguments:
 
 ### delete_network_interface_permission
 
+Deletes a permission for a network interface.
+
 Type annotations for `boto3.client("ec2").delete_network_interface_permission`
 method.
 
 Boto3 documentation:
 [EC2.Client.delete_network_interface_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_network_interface_permission)
+
+Arguments mapping described in
+[DeleteNetworkInterfacePermissionRequestTypeDef](./type_defs.md#deletenetworkinterfacepermissionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2917,14 +3607,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DeleteNetworkInterfacePermissionResultTypeDef](./type_defs.md#deletenetworkinterfacepermissionresulttypedef).
+[DeleteNetworkInterfacePermissionResultResponseTypeDef](./type_defs.md#deletenetworkinterfacepermissionresultresponsetypedef).
 
 ### delete_placement_group
+
+Deletes the specified placement group.
 
 Type annotations for `boto3.client("ec2").delete_placement_group` method.
 
 Boto3 documentation:
 [EC2.Client.delete_placement_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_placement_group)
+
+Arguments mapping described in
+[DeletePlacementGroupRequestTypeDef](./type_defs.md#deleteplacementgrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -2933,11 +3628,16 @@ Keyword-only arguments:
 
 ### delete_queued_reserved_instances
 
+Deletes the queued purchases for the specified Reserved Instances.
+
 Type annotations for `boto3.client("ec2").delete_queued_reserved_instances`
 method.
 
 Boto3 documentation:
 [EC2.Client.delete_queued_reserved_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_queued_reserved_instances)
+
+Arguments mapping described in
+[DeleteQueuedReservedInstancesRequestTypeDef](./type_defs.md#deletequeuedreservedinstancesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2945,14 +3645,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DeleteQueuedReservedInstancesResultTypeDef](./type_defs.md#deletequeuedreservedinstancesresulttypedef).
+[DeleteQueuedReservedInstancesResultResponseTypeDef](./type_defs.md#deletequeuedreservedinstancesresultresponsetypedef).
 
 ### delete_route
+
+Deletes the specified route from the specified route table.
 
 Type annotations for `boto3.client("ec2").delete_route` method.
 
 Boto3 documentation:
 [EC2.Client.delete_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_route)
+
+Arguments mapping described in
+[DeleteRouteRequestTypeDef](./type_defs.md#deleterouterequesttypedef).
 
 Keyword-only arguments:
 
@@ -2964,10 +3669,15 @@ Keyword-only arguments:
 
 ### delete_route_table
 
+Deletes the specified route table.
+
 Type annotations for `boto3.client("ec2").delete_route_table` method.
 
 Boto3 documentation:
 [EC2.Client.delete_route_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_route_table)
+
+Arguments mapping described in
+[DeleteRouteTableRequestTypeDef](./type_defs.md#deleteroutetablerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2976,10 +3686,15 @@ Keyword-only arguments:
 
 ### delete_security_group
 
+Deletes a security group.
+
 Type annotations for `boto3.client("ec2").delete_security_group` method.
 
 Boto3 documentation:
 [EC2.Client.delete_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_security_group)
+
+Arguments mapping described in
+[DeleteSecurityGroupRequestTypeDef](./type_defs.md#deletesecuritygrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -2989,10 +3704,15 @@ Keyword-only arguments:
 
 ### delete_snapshot
 
+Deletes the specified snapshot.
+
 Type annotations for `boto3.client("ec2").delete_snapshot` method.
 
 Boto3 documentation:
 [EC2.Client.delete_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_snapshot)
+
+Arguments mapping described in
+[DeleteSnapshotRequestTypeDef](./type_defs.md#deletesnapshotrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3001,11 +3721,16 @@ Keyword-only arguments:
 
 ### delete_spot_datafeed_subscription
 
+Deletes the data feed for Spot Instances.
+
 Type annotations for `boto3.client("ec2").delete_spot_datafeed_subscription`
 method.
 
 Boto3 documentation:
 [EC2.Client.delete_spot_datafeed_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_spot_datafeed_subscription)
+
+Arguments mapping described in
+[DeleteSpotDatafeedSubscriptionRequestTypeDef](./type_defs.md#deletespotdatafeedsubscriptionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3013,10 +3738,15 @@ Keyword-only arguments:
 
 ### delete_subnet
 
+Deletes the specified subnet.
+
 Type annotations for `boto3.client("ec2").delete_subnet` method.
 
 Boto3 documentation:
 [EC2.Client.delete_subnet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_subnet)
+
+Arguments mapping described in
+[DeleteSubnetRequestTypeDef](./type_defs.md#deletesubnetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3025,10 +3755,15 @@ Keyword-only arguments:
 
 ### delete_tags
 
+Deletes the specified set of tags from the specified set of resources.
+
 Type annotations for `boto3.client("ec2").delete_tags` method.
 
 Boto3 documentation:
 [EC2.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_tags)
+
+Arguments mapping described in
+[DeleteTagsRequestTypeDef](./type_defs.md#deletetagsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3038,10 +3773,15 @@ Keyword-only arguments:
 
 ### delete_traffic_mirror_filter
 
+Deletes the specified Traffic Mirror filter.
+
 Type annotations for `boto3.client("ec2").delete_traffic_mirror_filter` method.
 
 Boto3 documentation:
 [EC2.Client.delete_traffic_mirror_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_traffic_mirror_filter)
+
+Arguments mapping described in
+[DeleteTrafficMirrorFilterRequestTypeDef](./type_defs.md#deletetrafficmirrorfilterrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3049,9 +3789,11 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DeleteTrafficMirrorFilterResultTypeDef](./type_defs.md#deletetrafficmirrorfilterresulttypedef).
+[DeleteTrafficMirrorFilterResultResponseTypeDef](./type_defs.md#deletetrafficmirrorfilterresultresponsetypedef).
 
 ### delete_traffic_mirror_filter_rule
+
+Deletes the specified Traffic Mirror rule.
 
 Type annotations for `boto3.client("ec2").delete_traffic_mirror_filter_rule`
 method.
@@ -3059,15 +3801,20 @@ method.
 Boto3 documentation:
 [EC2.Client.delete_traffic_mirror_filter_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_traffic_mirror_filter_rule)
 
+Arguments mapping described in
+[DeleteTrafficMirrorFilterRuleRequestTypeDef](./type_defs.md#deletetrafficmirrorfilterrulerequesttypedef).
+
 Keyword-only arguments:
 
 - `TrafficMirrorFilterRuleId`: `str` *(required)*
 - `DryRun`: `bool`
 
 Returns
-[DeleteTrafficMirrorFilterRuleResultTypeDef](./type_defs.md#deletetrafficmirrorfilterruleresulttypedef).
+[DeleteTrafficMirrorFilterRuleResultResponseTypeDef](./type_defs.md#deletetrafficmirrorfilterruleresultresponsetypedef).
 
 ### delete_traffic_mirror_session
+
+Deletes the specified Traffic Mirror session.
 
 Type annotations for `boto3.client("ec2").delete_traffic_mirror_session`
 method.
@@ -3075,20 +3822,28 @@ method.
 Boto3 documentation:
 [EC2.Client.delete_traffic_mirror_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_traffic_mirror_session)
 
+Arguments mapping described in
+[DeleteTrafficMirrorSessionRequestTypeDef](./type_defs.md#deletetrafficmirrorsessionrequesttypedef).
+
 Keyword-only arguments:
 
 - `TrafficMirrorSessionId`: `str` *(required)*
 - `DryRun`: `bool`
 
 Returns
-[DeleteTrafficMirrorSessionResultTypeDef](./type_defs.md#deletetrafficmirrorsessionresulttypedef).
+[DeleteTrafficMirrorSessionResultResponseTypeDef](./type_defs.md#deletetrafficmirrorsessionresultresponsetypedef).
 
 ### delete_traffic_mirror_target
+
+Deletes the specified Traffic Mirror target.
 
 Type annotations for `boto3.client("ec2").delete_traffic_mirror_target` method.
 
 Boto3 documentation:
 [EC2.Client.delete_traffic_mirror_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_traffic_mirror_target)
+
+Arguments mapping described in
+[DeleteTrafficMirrorTargetRequestTypeDef](./type_defs.md#deletetrafficmirrortargetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3096,14 +3851,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DeleteTrafficMirrorTargetResultTypeDef](./type_defs.md#deletetrafficmirrortargetresulttypedef).
+[DeleteTrafficMirrorTargetResultResponseTypeDef](./type_defs.md#deletetrafficmirrortargetresultresponsetypedef).
 
 ### delete_transit_gateway
+
+Deletes the specified transit gateway.
 
 Type annotations for `boto3.client("ec2").delete_transit_gateway` method.
 
 Boto3 documentation:
 [EC2.Client.delete_transit_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_transit_gateway)
+
+Arguments mapping described in
+[DeleteTransitGatewayRequestTypeDef](./type_defs.md#deletetransitgatewayrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3111,9 +3871,11 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DeleteTransitGatewayResultTypeDef](./type_defs.md#deletetransitgatewayresulttypedef).
+[DeleteTransitGatewayResultResponseTypeDef](./type_defs.md#deletetransitgatewayresultresponsetypedef).
 
 ### delete_transit_gateway_connect
+
+Deletes the specified Connect attachment.
 
 Type annotations for `boto3.client("ec2").delete_transit_gateway_connect`
 method.
@@ -3121,15 +3883,20 @@ method.
 Boto3 documentation:
 [EC2.Client.delete_transit_gateway_connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_transit_gateway_connect)
 
+Arguments mapping described in
+[DeleteTransitGatewayConnectRequestTypeDef](./type_defs.md#deletetransitgatewayconnectrequesttypedef).
+
 Keyword-only arguments:
 
 - `TransitGatewayAttachmentId`: `str` *(required)*
 - `DryRun`: `bool`
 
 Returns
-[DeleteTransitGatewayConnectResultTypeDef](./type_defs.md#deletetransitgatewayconnectresulttypedef).
+[DeleteTransitGatewayConnectResultResponseTypeDef](./type_defs.md#deletetransitgatewayconnectresultresponsetypedef).
 
 ### delete_transit_gateway_connect_peer
+
+Deletes the specified Connect peer.
 
 Type annotations for `boto3.client("ec2").delete_transit_gateway_connect_peer`
 method.
@@ -3137,15 +3904,20 @@ method.
 Boto3 documentation:
 [EC2.Client.delete_transit_gateway_connect_peer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_transit_gateway_connect_peer)
 
+Arguments mapping described in
+[DeleteTransitGatewayConnectPeerRequestTypeDef](./type_defs.md#deletetransitgatewayconnectpeerrequesttypedef).
+
 Keyword-only arguments:
 
 - `TransitGatewayConnectPeerId`: `str` *(required)*
 - `DryRun`: `bool`
 
 Returns
-[DeleteTransitGatewayConnectPeerResultTypeDef](./type_defs.md#deletetransitgatewayconnectpeerresulttypedef).
+[DeleteTransitGatewayConnectPeerResultResponseTypeDef](./type_defs.md#deletetransitgatewayconnectpeerresultresponsetypedef).
 
 ### delete_transit_gateway_multicast_domain
+
+Deletes the specified transit gateway multicast domain.
 
 Type annotations for
 `boto3.client("ec2").delete_transit_gateway_multicast_domain` method.
@@ -3153,15 +3925,20 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.delete_transit_gateway_multicast_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_transit_gateway_multicast_domain)
 
+Arguments mapping described in
+[DeleteTransitGatewayMulticastDomainRequestTypeDef](./type_defs.md#deletetransitgatewaymulticastdomainrequesttypedef).
+
 Keyword-only arguments:
 
 - `TransitGatewayMulticastDomainId`: `str` *(required)*
 - `DryRun`: `bool`
 
 Returns
-[DeleteTransitGatewayMulticastDomainResultTypeDef](./type_defs.md#deletetransitgatewaymulticastdomainresulttypedef).
+[DeleteTransitGatewayMulticastDomainResultResponseTypeDef](./type_defs.md#deletetransitgatewaymulticastdomainresultresponsetypedef).
 
 ### delete_transit_gateway_peering_attachment
+
+Deletes a transit gateway peering attachment.
 
 Type annotations for
 `boto3.client("ec2").delete_transit_gateway_peering_attachment` method.
@@ -3169,21 +3946,30 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.delete_transit_gateway_peering_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_transit_gateway_peering_attachment)
 
+Arguments mapping described in
+[DeleteTransitGatewayPeeringAttachmentRequestTypeDef](./type_defs.md#deletetransitgatewaypeeringattachmentrequesttypedef).
+
 Keyword-only arguments:
 
 - `TransitGatewayAttachmentId`: `str` *(required)*
 - `DryRun`: `bool`
 
 Returns
-[DeleteTransitGatewayPeeringAttachmentResultTypeDef](./type_defs.md#deletetransitgatewaypeeringattachmentresulttypedef).
+[DeleteTransitGatewayPeeringAttachmentResultResponseTypeDef](./type_defs.md#deletetransitgatewaypeeringattachmentresultresponsetypedef).
 
 ### delete_transit_gateway_prefix_list_reference
+
+Deletes a reference (route) to a prefix list in a specified transit gateway
+route table.
 
 Type annotations for
 `boto3.client("ec2").delete_transit_gateway_prefix_list_reference` method.
 
 Boto3 documentation:
 [EC2.Client.delete_transit_gateway_prefix_list_reference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_transit_gateway_prefix_list_reference)
+
+Arguments mapping described in
+[DeleteTransitGatewayPrefixListReferenceRequestTypeDef](./type_defs.md#deletetransitgatewayprefixlistreferencerequesttypedef).
 
 Keyword-only arguments:
 
@@ -3192,14 +3978,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DeleteTransitGatewayPrefixListReferenceResultTypeDef](./type_defs.md#deletetransitgatewayprefixlistreferenceresulttypedef).
+[DeleteTransitGatewayPrefixListReferenceResultResponseTypeDef](./type_defs.md#deletetransitgatewayprefixlistreferenceresultresponsetypedef).
 
 ### delete_transit_gateway_route
+
+Deletes the specified route from the specified transit gateway route table.
 
 Type annotations for `boto3.client("ec2").delete_transit_gateway_route` method.
 
 Boto3 documentation:
 [EC2.Client.delete_transit_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_transit_gateway_route)
+
+Arguments mapping described in
+[DeleteTransitGatewayRouteRequestTypeDef](./type_defs.md#deletetransitgatewayrouterequesttypedef).
 
 Keyword-only arguments:
 
@@ -3208,9 +3999,11 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DeleteTransitGatewayRouteResultTypeDef](./type_defs.md#deletetransitgatewayrouteresulttypedef).
+[DeleteTransitGatewayRouteResultResponseTypeDef](./type_defs.md#deletetransitgatewayrouteresultresponsetypedef).
 
 ### delete_transit_gateway_route_table
+
+Deletes the specified transit gateway route table.
 
 Type annotations for `boto3.client("ec2").delete_transit_gateway_route_table`
 method.
@@ -3218,15 +4011,20 @@ method.
 Boto3 documentation:
 [EC2.Client.delete_transit_gateway_route_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_transit_gateway_route_table)
 
+Arguments mapping described in
+[DeleteTransitGatewayRouteTableRequestTypeDef](./type_defs.md#deletetransitgatewayroutetablerequesttypedef).
+
 Keyword-only arguments:
 
 - `TransitGatewayRouteTableId`: `str` *(required)*
 - `DryRun`: `bool`
 
 Returns
-[DeleteTransitGatewayRouteTableResultTypeDef](./type_defs.md#deletetransitgatewayroutetableresulttypedef).
+[DeleteTransitGatewayRouteTableResultResponseTypeDef](./type_defs.md#deletetransitgatewayroutetableresultresponsetypedef).
 
 ### delete_transit_gateway_vpc_attachment
+
+Deletes the specified VPC attachment.
 
 Type annotations for
 `boto3.client("ec2").delete_transit_gateway_vpc_attachment` method.
@@ -3234,20 +4032,28 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.delete_transit_gateway_vpc_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_transit_gateway_vpc_attachment)
 
+Arguments mapping described in
+[DeleteTransitGatewayVpcAttachmentRequestTypeDef](./type_defs.md#deletetransitgatewayvpcattachmentrequesttypedef).
+
 Keyword-only arguments:
 
 - `TransitGatewayAttachmentId`: `str` *(required)*
 - `DryRun`: `bool`
 
 Returns
-[DeleteTransitGatewayVpcAttachmentResultTypeDef](./type_defs.md#deletetransitgatewayvpcattachmentresulttypedef).
+[DeleteTransitGatewayVpcAttachmentResultResponseTypeDef](./type_defs.md#deletetransitgatewayvpcattachmentresultresponsetypedef).
 
 ### delete_volume
+
+Deletes the specified EBS volume.
 
 Type annotations for `boto3.client("ec2").delete_volume` method.
 
 Boto3 documentation:
 [EC2.Client.delete_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_volume)
+
+Arguments mapping described in
+[DeleteVolumeRequestTypeDef](./type_defs.md#deletevolumerequesttypedef).
 
 Keyword-only arguments:
 
@@ -3256,10 +4062,15 @@ Keyword-only arguments:
 
 ### delete_vpc
 
+Deletes the specified VPC.
+
 Type annotations for `boto3.client("ec2").delete_vpc` method.
 
 Boto3 documentation:
 [EC2.Client.delete_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_vpc)
+
+Arguments mapping described in
+[DeleteVpcRequestTypeDef](./type_defs.md#deletevpcrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3268,11 +4079,16 @@ Keyword-only arguments:
 
 ### delete_vpc_endpoint_connection_notifications
 
+Deletes one or more VPC endpoint connection notifications.
+
 Type annotations for
 `boto3.client("ec2").delete_vpc_endpoint_connection_notifications` method.
 
 Boto3 documentation:
 [EC2.Client.delete_vpc_endpoint_connection_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_vpc_endpoint_connection_notifications)
+
+Arguments mapping described in
+[DeleteVpcEndpointConnectionNotificationsRequestTypeDef](./type_defs.md#deletevpcendpointconnectionnotificationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3280,9 +4096,11 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DeleteVpcEndpointConnectionNotificationsResultTypeDef](./type_defs.md#deletevpcendpointconnectionnotificationsresulttypedef).
+[DeleteVpcEndpointConnectionNotificationsResultResponseTypeDef](./type_defs.md#deletevpcendpointconnectionnotificationsresultresponsetypedef).
 
 ### delete_vpc_endpoint_service_configurations
+
+Deletes one or more VPC endpoint service configurations in your account.
 
 Type annotations for
 `boto3.client("ec2").delete_vpc_endpoint_service_configurations` method.
@@ -3290,20 +4108,28 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.delete_vpc_endpoint_service_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_vpc_endpoint_service_configurations)
 
+Arguments mapping described in
+[DeleteVpcEndpointServiceConfigurationsRequestTypeDef](./type_defs.md#deletevpcendpointserviceconfigurationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `ServiceIds`: `List`\[`str`\] *(required)*
 - `DryRun`: `bool`
 
 Returns
-[DeleteVpcEndpointServiceConfigurationsResultTypeDef](./type_defs.md#deletevpcendpointserviceconfigurationsresulttypedef).
+[DeleteVpcEndpointServiceConfigurationsResultResponseTypeDef](./type_defs.md#deletevpcendpointserviceconfigurationsresultresponsetypedef).
 
 ### delete_vpc_endpoints
+
+Deletes one or more specified VPC endpoints.
 
 Type annotations for `boto3.client("ec2").delete_vpc_endpoints` method.
 
 Boto3 documentation:
 [EC2.Client.delete_vpc_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_vpc_endpoints)
+
+Arguments mapping described in
+[DeleteVpcEndpointsRequestTypeDef](./type_defs.md#deletevpcendpointsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3311,9 +4137,11 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DeleteVpcEndpointsResultTypeDef](./type_defs.md#deletevpcendpointsresulttypedef).
+[DeleteVpcEndpointsResultResponseTypeDef](./type_defs.md#deletevpcendpointsresultresponsetypedef).
 
 ### delete_vpc_peering_connection
+
+Deletes a VPC peering connection.
 
 Type annotations for `boto3.client("ec2").delete_vpc_peering_connection`
 method.
@@ -3321,20 +4149,28 @@ method.
 Boto3 documentation:
 [EC2.Client.delete_vpc_peering_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_vpc_peering_connection)
 
+Arguments mapping described in
+[DeleteVpcPeeringConnectionRequestTypeDef](./type_defs.md#deletevpcpeeringconnectionrequesttypedef).
+
 Keyword-only arguments:
 
 - `VpcPeeringConnectionId`: `str` *(required)*
 - `DryRun`: `bool`
 
 Returns
-[DeleteVpcPeeringConnectionResultTypeDef](./type_defs.md#deletevpcpeeringconnectionresulttypedef).
+[DeleteVpcPeeringConnectionResultResponseTypeDef](./type_defs.md#deletevpcpeeringconnectionresultresponsetypedef).
 
 ### delete_vpn_connection
+
+Deletes the specified VPN connection.
 
 Type annotations for `boto3.client("ec2").delete_vpn_connection` method.
 
 Boto3 documentation:
 [EC2.Client.delete_vpn_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_vpn_connection)
+
+Arguments mapping described in
+[DeleteVpnConnectionRequestTypeDef](./type_defs.md#deletevpnconnectionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3343,10 +4179,16 @@ Keyword-only arguments:
 
 ### delete_vpn_connection_route
 
+Deletes the specified static route associated with a VPN connection between an
+existing virtual private gateway and a VPN customer gateway.
+
 Type annotations for `boto3.client("ec2").delete_vpn_connection_route` method.
 
 Boto3 documentation:
 [EC2.Client.delete_vpn_connection_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_vpn_connection_route)
+
+Arguments mapping described in
+[DeleteVpnConnectionRouteRequestTypeDef](./type_defs.md#deletevpnconnectionrouterequesttypedef).
 
 Keyword-only arguments:
 
@@ -3355,10 +4197,15 @@ Keyword-only arguments:
 
 ### delete_vpn_gateway
 
+Deletes the specified virtual private gateway.
+
 Type annotations for `boto3.client("ec2").delete_vpn_gateway` method.
 
 Boto3 documentation:
 [EC2.Client.delete_vpn_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_vpn_gateway)
+
+Arguments mapping described in
+[DeleteVpnGatewayRequestTypeDef](./type_defs.md#deletevpngatewayrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3367,10 +4214,17 @@ Keyword-only arguments:
 
 ### deprovision_byoip_cidr
 
+Releases the specified address range that you provisioned for use with your
+Amazon Web Services resources through bring your own IP addresses (BYOIP) and
+deletes the corresponding address pool.
+
 Type annotations for `boto3.client("ec2").deprovision_byoip_cidr` method.
 
 Boto3 documentation:
 [EC2.Client.deprovision_byoip_cidr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.deprovision_byoip_cidr)
+
+Arguments mapping described in
+[DeprovisionByoipCidrRequestTypeDef](./type_defs.md#deprovisionbyoipcidrrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3378,14 +4232,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DeprovisionByoipCidrResultTypeDef](./type_defs.md#deprovisionbyoipcidrresulttypedef).
+[DeprovisionByoipCidrResultResponseTypeDef](./type_defs.md#deprovisionbyoipcidrresultresponsetypedef).
 
 ### deregister_image
+
+Deregisters the specified AMI.
 
 Type annotations for `boto3.client("ec2").deregister_image` method.
 
 Boto3 documentation:
 [EC2.Client.deregister_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.deregister_image)
+
+Arguments mapping described in
+[DeregisterImageRequestTypeDef](./type_defs.md#deregisterimagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -3394,11 +4253,17 @@ Keyword-only arguments:
 
 ### deregister_instance_event_notification_attributes
 
+Deregisters tag keys to prevent tags that have the specified tag keys from
+being included in scheduled event notifications for resources in the Region.
+
 Type annotations for
 `boto3.client("ec2").deregister_instance_event_notification_attributes` method.
 
 Boto3 documentation:
 [EC2.Client.deregister_instance_event_notification_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.deregister_instance_event_notification_attributes)
+
+Arguments mapping described in
+[DeregisterInstanceEventNotificationAttributesRequestTypeDef](./type_defs.md#deregisterinstanceeventnotificationattributesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3407,9 +4272,12 @@ Keyword-only arguments:
   [DeregisterInstanceTagAttributeRequestTypeDef](./type_defs.md#deregisterinstancetagattributerequesttypedef)
 
 Returns
-[DeregisterInstanceEventNotificationAttributesResultTypeDef](./type_defs.md#deregisterinstanceeventnotificationattributesresulttypedef).
+[DeregisterInstanceEventNotificationAttributesResultResponseTypeDef](./type_defs.md#deregisterinstanceeventnotificationattributesresultresponsetypedef).
 
 ### deregister_transit_gateway_multicast_group_members
+
+Deregisters the specified members (network interfaces) from the transit gateway
+multicast group.
 
 Type annotations for
 `boto3.client("ec2").deregister_transit_gateway_multicast_group_members`
@@ -3418,6 +4286,9 @@ method.
 Boto3 documentation:
 [EC2.Client.deregister_transit_gateway_multicast_group_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.deregister_transit_gateway_multicast_group_members)
 
+Arguments mapping described in
+[DeregisterTransitGatewayMulticastGroupMembersRequestTypeDef](./type_defs.md#deregistertransitgatewaymulticastgroupmembersrequesttypedef).
+
 Keyword-only arguments:
 
 - `TransitGatewayMulticastDomainId`: `str`
@@ -3426,9 +4297,12 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DeregisterTransitGatewayMulticastGroupMembersResultTypeDef](./type_defs.md#deregistertransitgatewaymulticastgroupmembersresulttypedef).
+[DeregisterTransitGatewayMulticastGroupMembersResultResponseTypeDef](./type_defs.md#deregistertransitgatewaymulticastgroupmembersresultresponsetypedef).
 
 ### deregister_transit_gateway_multicast_group_sources
+
+Deregisters the specified sources (network interfaces) from the transit gateway
+multicast group.
 
 Type annotations for
 `boto3.client("ec2").deregister_transit_gateway_multicast_group_sources`
@@ -3437,6 +4311,9 @@ method.
 Boto3 documentation:
 [EC2.Client.deregister_transit_gateway_multicast_group_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.deregister_transit_gateway_multicast_group_sources)
 
+Arguments mapping described in
+[DeregisterTransitGatewayMulticastGroupSourcesRequestTypeDef](./type_defs.md#deregistertransitgatewaymulticastgroupsourcesrequesttypedef).
+
 Keyword-only arguments:
 
 - `TransitGatewayMulticastDomainId`: `str`
@@ -3445,14 +4322,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DeregisterTransitGatewayMulticastGroupSourcesResultTypeDef](./type_defs.md#deregistertransitgatewaymulticastgroupsourcesresulttypedef).
+[DeregisterTransitGatewayMulticastGroupSourcesResultResponseTypeDef](./type_defs.md#deregistertransitgatewaymulticastgroupsourcesresultresponsetypedef).
 
 ### describe_account_attributes
+
+Describes attributes of your AWS account.
 
 Type annotations for `boto3.client("ec2").describe_account_attributes` method.
 
 Boto3 documentation:
 [EC2.Client.describe_account_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_account_attributes)
+
+Arguments mapping described in
+[DescribeAccountAttributesRequestTypeDef](./type_defs.md#describeaccountattributesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3461,14 +4343,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeAccountAttributesResultTypeDef](./type_defs.md#describeaccountattributesresulttypedef).
+[DescribeAccountAttributesResultResponseTypeDef](./type_defs.md#describeaccountattributesresultresponsetypedef).
 
 ### describe_addresses
+
+Describes the specified Elastic IP addresses or all of your Elastic IP
+addresses.
 
 Type annotations for `boto3.client("ec2").describe_addresses` method.
 
 Boto3 documentation:
 [EC2.Client.describe_addresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_addresses)
+
+Arguments mapping described in
+[DescribeAddressesRequestTypeDef](./type_defs.md#describeaddressesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3478,14 +4366,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeAddressesResultTypeDef](./type_defs.md#describeaddressesresulttypedef).
+[DescribeAddressesResultResponseTypeDef](./type_defs.md#describeaddressesresultresponsetypedef).
 
 ### describe_addresses_attribute
+
+Describes the attributes of the specified Elastic IP addresses.
 
 Type annotations for `boto3.client("ec2").describe_addresses_attribute` method.
 
 Boto3 documentation:
 [EC2.Client.describe_addresses_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_addresses_attribute)
+
+Arguments mapping described in
+[DescribeAddressesAttributeRequestTypeDef](./type_defs.md#describeaddressesattributerequesttypedef).
 
 Keyword-only arguments:
 
@@ -3497,28 +4390,40 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeAddressesAttributeResultTypeDef](./type_defs.md#describeaddressesattributeresulttypedef).
+[DescribeAddressesAttributeResultResponseTypeDef](./type_defs.md#describeaddressesattributeresultresponsetypedef).
 
 ### describe_aggregate_id_format
+
+Describes the longer ID format settings for all resource types in a specific
+Region.
 
 Type annotations for `boto3.client("ec2").describe_aggregate_id_format` method.
 
 Boto3 documentation:
 [EC2.Client.describe_aggregate_id_format](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_aggregate_id_format)
 
+Arguments mapping described in
+[DescribeAggregateIdFormatRequestTypeDef](./type_defs.md#describeaggregateidformatrequesttypedef).
+
 Keyword-only arguments:
 
 - `DryRun`: `bool`
 
 Returns
-[DescribeAggregateIdFormatResultTypeDef](./type_defs.md#describeaggregateidformatresulttypedef).
+[DescribeAggregateIdFormatResultResponseTypeDef](./type_defs.md#describeaggregateidformatresultresponsetypedef).
 
 ### describe_availability_zones
+
+Describes the Availability Zones, Local Zones, and Wavelength Zones that are
+available to you.
 
 Type annotations for `boto3.client("ec2").describe_availability_zones` method.
 
 Boto3 documentation:
 [EC2.Client.describe_availability_zones](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_availability_zones)
+
+Arguments mapping described in
+[DescribeAvailabilityZonesRequestTypeDef](./type_defs.md#describeavailabilityzonesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3529,14 +4434,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeAvailabilityZonesResultTypeDef](./type_defs.md#describeavailabilityzonesresulttypedef).
+[DescribeAvailabilityZonesResultResponseTypeDef](./type_defs.md#describeavailabilityzonesresultresponsetypedef).
 
 ### describe_bundle_tasks
+
+Describes the specified bundle tasks or all of your bundle tasks.
 
 Type annotations for `boto3.client("ec2").describe_bundle_tasks` method.
 
 Boto3 documentation:
 [EC2.Client.describe_bundle_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_bundle_tasks)
+
+Arguments mapping described in
+[DescribeBundleTasksRequestTypeDef](./type_defs.md#describebundletasksrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3545,14 +4455,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeBundleTasksResultTypeDef](./type_defs.md#describebundletasksresulttypedef).
+[DescribeBundleTasksResultResponseTypeDef](./type_defs.md#describebundletasksresultresponsetypedef).
 
 ### describe_byoip_cidrs
+
+Describes the IP address ranges that were specified in calls to
+ProvisionByoipCidr .
 
 Type annotations for `boto3.client("ec2").describe_byoip_cidrs` method.
 
 Boto3 documentation:
 [EC2.Client.describe_byoip_cidrs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_byoip_cidrs)
+
+Arguments mapping described in
+[DescribeByoipCidrsRequestTypeDef](./type_defs.md#describebyoipcidrsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3561,15 +4477,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeByoipCidrsResultTypeDef](./type_defs.md#describebyoipcidrsresulttypedef).
+[DescribeByoipCidrsResultResponseTypeDef](./type_defs.md#describebyoipcidrsresultresponsetypedef).
 
 ### describe_capacity_reservations
+
+Describes one or more of your Capacity Reservations.
 
 Type annotations for `boto3.client("ec2").describe_capacity_reservations`
 method.
 
 Boto3 documentation:
 [EC2.Client.describe_capacity_reservations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_capacity_reservations)
+
+Arguments mapping described in
+[DescribeCapacityReservationsRequestTypeDef](./type_defs.md#describecapacityreservationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3580,14 +4501,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeCapacityReservationsResultTypeDef](./type_defs.md#describecapacityreservationsresulttypedef).
+[DescribeCapacityReservationsResultResponseTypeDef](./type_defs.md#describecapacityreservationsresultresponsetypedef).
 
 ### describe_carrier_gateways
+
+Describes one or more of your carrier gateways.
 
 Type annotations for `boto3.client("ec2").describe_carrier_gateways` method.
 
 Boto3 documentation:
 [EC2.Client.describe_carrier_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_carrier_gateways)
+
+Arguments mapping described in
+[DescribeCarrierGatewaysRequestTypeDef](./type_defs.md#describecarriergatewaysrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3598,15 +4524,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeCarrierGatewaysResultTypeDef](./type_defs.md#describecarriergatewaysresulttypedef).
+[DescribeCarrierGatewaysResultResponseTypeDef](./type_defs.md#describecarriergatewaysresultresponsetypedef).
 
 ### describe_classic_link_instances
+
+Describes one or more of your linked EC2-Classic instances.
 
 Type annotations for `boto3.client("ec2").describe_classic_link_instances`
 method.
 
 Boto3 documentation:
 [EC2.Client.describe_classic_link_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_classic_link_instances)
+
+Arguments mapping described in
+[DescribeClassicLinkInstancesRequestTypeDef](./type_defs.md#describeclassiclinkinstancesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3617,9 +4548,11 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeClassicLinkInstancesResultTypeDef](./type_defs.md#describeclassiclinkinstancesresulttypedef).
+[DescribeClassicLinkInstancesResultResponseTypeDef](./type_defs.md#describeclassiclinkinstancesresultresponsetypedef).
 
 ### describe_client_vpn_authorization_rules
+
+Describes the authorization rules for a specified Client VPN endpoint.
 
 Type annotations for
 `boto3.client("ec2").describe_client_vpn_authorization_rules` method.
@@ -3627,6 +4560,9 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.describe_client_vpn_authorization_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_client_vpn_authorization_rules)
 
+Arguments mapping described in
+[DescribeClientVpnAuthorizationRulesRequestTypeDef](./type_defs.md#describeclientvpnauthorizationrulesrequesttypedef).
+
 Keyword-only arguments:
 
 - `ClientVpnEndpointId`: `str` *(required)*
@@ -3636,9 +4572,12 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeClientVpnAuthorizationRulesResultTypeDef](./type_defs.md#describeclientvpnauthorizationrulesresulttypedef).
+[DescribeClientVpnAuthorizationRulesResultResponseTypeDef](./type_defs.md#describeclientvpnauthorizationrulesresultresponsetypedef).
 
 ### describe_client_vpn_connections
+
+Describes active client connections and connections that have been terminated
+within the last 60 minutes for the specified Client VPN endpoint.
 
 Type annotations for `boto3.client("ec2").describe_client_vpn_connections`
 method.
@@ -3646,6 +4585,9 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_client_vpn_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_client_vpn_connections)
 
+Arguments mapping described in
+[DescribeClientVpnConnectionsRequestTypeDef](./type_defs.md#describeclientvpnconnectionsrequesttypedef).
+
 Keyword-only arguments:
 
 - `ClientVpnEndpointId`: `str` *(required)*
@@ -3655,15 +4597,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeClientVpnConnectionsResultTypeDef](./type_defs.md#describeclientvpnconnectionsresulttypedef).
+[DescribeClientVpnConnectionsResultResponseTypeDef](./type_defs.md#describeclientvpnconnectionsresultresponsetypedef).
 
 ### describe_client_vpn_endpoints
+
+Describes one or more Client VPN endpoints in the account.
 
 Type annotations for `boto3.client("ec2").describe_client_vpn_endpoints`
 method.
 
 Boto3 documentation:
 [EC2.Client.describe_client_vpn_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_client_vpn_endpoints)
+
+Arguments mapping described in
+[DescribeClientVpnEndpointsRequestTypeDef](./type_defs.md#describeclientvpnendpointsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3674,14 +4621,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeClientVpnEndpointsResultTypeDef](./type_defs.md#describeclientvpnendpointsresulttypedef).
+[DescribeClientVpnEndpointsResultResponseTypeDef](./type_defs.md#describeclientvpnendpointsresultresponsetypedef).
 
 ### describe_client_vpn_routes
+
+Describes the routes for the specified Client VPN endpoint.
 
 Type annotations for `boto3.client("ec2").describe_client_vpn_routes` method.
 
 Boto3 documentation:
 [EC2.Client.describe_client_vpn_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_client_vpn_routes)
+
+Arguments mapping described in
+[DescribeClientVpnRoutesRequestTypeDef](./type_defs.md#describeclientvpnroutesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3692,15 +4644,21 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeClientVpnRoutesResultTypeDef](./type_defs.md#describeclientvpnroutesresulttypedef).
+[DescribeClientVpnRoutesResultResponseTypeDef](./type_defs.md#describeclientvpnroutesresultresponsetypedef).
 
 ### describe_client_vpn_target_networks
+
+Describes the target networks associated with the specified Client VPN
+endpoint.
 
 Type annotations for `boto3.client("ec2").describe_client_vpn_target_networks`
 method.
 
 Boto3 documentation:
 [EC2.Client.describe_client_vpn_target_networks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_client_vpn_target_networks)
+
+Arguments mapping described in
+[DescribeClientVpnTargetNetworksRequestTypeDef](./type_defs.md#describeclientvpntargetnetworksrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3712,14 +4670,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeClientVpnTargetNetworksResultTypeDef](./type_defs.md#describeclientvpntargetnetworksresulttypedef).
+[DescribeClientVpnTargetNetworksResultResponseTypeDef](./type_defs.md#describeclientvpntargetnetworksresultresponsetypedef).
 
 ### describe_coip_pools
+
+Describes the specified customer-owned address pools or all of your customer-
+owned address pools.
 
 Type annotations for `boto3.client("ec2").describe_coip_pools` method.
 
 Boto3 documentation:
 [EC2.Client.describe_coip_pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_coip_pools)
+
+Arguments mapping described in
+[DescribeCoipPoolsRequestTypeDef](./type_defs.md#describecoippoolsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3730,14 +4694,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeCoipPoolsResultTypeDef](./type_defs.md#describecoippoolsresulttypedef).
+[DescribeCoipPoolsResultResponseTypeDef](./type_defs.md#describecoippoolsresultresponsetypedef).
 
 ### describe_conversion_tasks
+
+Describes the specified conversion tasks or all your conversion tasks.
 
 Type annotations for `boto3.client("ec2").describe_conversion_tasks` method.
 
 Boto3 documentation:
 [EC2.Client.describe_conversion_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_conversion_tasks)
+
+Arguments mapping described in
+[DescribeConversionTasksRequestTypeDef](./type_defs.md#describeconversiontasksrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3745,14 +4714,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeConversionTasksResultTypeDef](./type_defs.md#describeconversiontasksresulttypedef).
+[DescribeConversionTasksResultResponseTypeDef](./type_defs.md#describeconversiontasksresultresponsetypedef).
 
 ### describe_customer_gateways
+
+Describes one or more of your VPN customer gateways.
 
 Type annotations for `boto3.client("ec2").describe_customer_gateways` method.
 
 Boto3 documentation:
 [EC2.Client.describe_customer_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_customer_gateways)
+
+Arguments mapping described in
+[DescribeCustomerGatewaysRequestTypeDef](./type_defs.md#describecustomergatewaysrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3761,14 +4735,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeCustomerGatewaysResultTypeDef](./type_defs.md#describecustomergatewaysresulttypedef).
+[DescribeCustomerGatewaysResultResponseTypeDef](./type_defs.md#describecustomergatewaysresultresponsetypedef).
 
 ### describe_dhcp_options
+
+Describes one or more of your DHCP options sets.
 
 Type annotations for `boto3.client("ec2").describe_dhcp_options` method.
 
 Boto3 documentation:
 [EC2.Client.describe_dhcp_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_dhcp_options)
+
+Arguments mapping described in
+[DescribeDhcpOptionsRequestTypeDef](./type_defs.md#describedhcpoptionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3779,15 +4758,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeDhcpOptionsResultTypeDef](./type_defs.md#describedhcpoptionsresulttypedef).
+[DescribeDhcpOptionsResultResponseTypeDef](./type_defs.md#describedhcpoptionsresultresponsetypedef).
 
 ### describe_egress_only_internet_gateways
+
+Describes one or more of your egress-only internet gateways.
 
 Type annotations for
 `boto3.client("ec2").describe_egress_only_internet_gateways` method.
 
 Boto3 documentation:
 [EC2.Client.describe_egress_only_internet_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_egress_only_internet_gateways)
+
+Arguments mapping described in
+[DescribeEgressOnlyInternetGatewaysRequestTypeDef](./type_defs.md#describeegressonlyinternetgatewaysrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3798,14 +4782,19 @@ Keyword-only arguments:
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[DescribeEgressOnlyInternetGatewaysResultTypeDef](./type_defs.md#describeegressonlyinternetgatewaysresulttypedef).
+[DescribeEgressOnlyInternetGatewaysResultResponseTypeDef](./type_defs.md#describeegressonlyinternetgatewaysresultresponsetypedef).
 
 ### describe_elastic_gpus
+
+Describes the Elastic Graphics accelerator associated with your instances.
 
 Type annotations for `boto3.client("ec2").describe_elastic_gpus` method.
 
 Boto3 documentation:
 [EC2.Client.describe_elastic_gpus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_elastic_gpus)
+
+Arguments mapping described in
+[DescribeElasticGpusRequestTypeDef](./type_defs.md#describeelasticgpusrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3816,14 +4805,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeElasticGpusResultTypeDef](./type_defs.md#describeelasticgpusresulttypedef).
+[DescribeElasticGpusResultResponseTypeDef](./type_defs.md#describeelasticgpusresultresponsetypedef).
 
 ### describe_export_image_tasks
+
+Describes the specified export image tasks or all of your export image tasks.
 
 Type annotations for `boto3.client("ec2").describe_export_image_tasks` method.
 
 Boto3 documentation:
 [EC2.Client.describe_export_image_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_export_image_tasks)
+
+Arguments mapping described in
+[DescribeExportImageTasksRequestTypeDef](./type_defs.md#describeexportimagetasksrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3834,14 +4828,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeExportImageTasksResultTypeDef](./type_defs.md#describeexportimagetasksresulttypedef).
+[DescribeExportImageTasksResultResponseTypeDef](./type_defs.md#describeexportimagetasksresultresponsetypedef).
 
 ### describe_export_tasks
+
+Describes the specified export instance tasks or all of your export instance
+tasks.
 
 Type annotations for `boto3.client("ec2").describe_export_tasks` method.
 
 Boto3 documentation:
 [EC2.Client.describe_export_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_export_tasks)
+
+Arguments mapping described in
+[DescribeExportTasksRequestTypeDef](./type_defs.md#describeexporttasksrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3849,9 +4849,11 @@ Keyword-only arguments:
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[DescribeExportTasksResultTypeDef](./type_defs.md#describeexporttasksresulttypedef).
+[DescribeExportTasksResultResponseTypeDef](./type_defs.md#describeexporttasksresultresponsetypedef).
 
 ### describe_fast_snapshot_restores
+
+Describes the state of fast snapshot restores for your snapshots.
 
 Type annotations for `boto3.client("ec2").describe_fast_snapshot_restores`
 method.
@@ -3859,6 +4861,9 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_fast_snapshot_restores](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_fast_snapshot_restores)
 
+Arguments mapping described in
+[DescribeFastSnapshotRestoresRequestTypeDef](./type_defs.md#describefastsnapshotrestoresrequesttypedef).
+
 Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -3867,33 +4872,43 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeFastSnapshotRestoresResultTypeDef](./type_defs.md#describefastsnapshotrestoresresulttypedef).
+[DescribeFastSnapshotRestoresResultResponseTypeDef](./type_defs.md#describefastsnapshotrestoresresultresponsetypedef).
 
 ### describe_fleet_history
+
+Describes the events for the specified EC2 Fleet during the specified time.
 
 Type annotations for `boto3.client("ec2").describe_fleet_history` method.
 
 Boto3 documentation:
 [EC2.Client.describe_fleet_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_fleet_history)
 
+Arguments mapping described in
+[DescribeFleetHistoryRequestTypeDef](./type_defs.md#describefleethistoryrequesttypedef).
+
 Keyword-only arguments:
 
 - `FleetId`: `str` *(required)*
-- `StartTime`: `datetime` *(required)*
+- `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `DryRun`: `bool`
 - `EventType`: [FleetEventTypeType](./literals.md#fleeteventtypetype)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[DescribeFleetHistoryResultTypeDef](./type_defs.md#describefleethistoryresulttypedef).
+[DescribeFleetHistoryResultResponseTypeDef](./type_defs.md#describefleethistoryresultresponsetypedef).
 
 ### describe_fleet_instances
+
+Describes the running instances for the specified EC2 Fleet.
 
 Type annotations for `boto3.client("ec2").describe_fleet_instances` method.
 
 Boto3 documentation:
 [EC2.Client.describe_fleet_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_fleet_instances)
+
+Arguments mapping described in
+[DescribeFleetInstancesRequestTypeDef](./type_defs.md#describefleetinstancesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3904,14 +4919,19 @@ Keyword-only arguments:
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[DescribeFleetInstancesResultTypeDef](./type_defs.md#describefleetinstancesresulttypedef).
+[DescribeFleetInstancesResultResponseTypeDef](./type_defs.md#describefleetinstancesresultresponsetypedef).
 
 ### describe_fleets
+
+Describes the specified EC2 Fleets or all of your EC2 Fleets.
 
 Type annotations for `boto3.client("ec2").describe_fleets` method.
 
 Boto3 documentation:
 [EC2.Client.describe_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_fleets)
+
+Arguments mapping described in
+[DescribeFleetsRequestTypeDef](./type_defs.md#describefleetsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3922,14 +4942,19 @@ Keyword-only arguments:
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[DescribeFleetsResultTypeDef](./type_defs.md#describefleetsresulttypedef).
+[DescribeFleetsResultResponseTypeDef](./type_defs.md#describefleetsresultresponsetypedef).
 
 ### describe_flow_logs
+
+Describes one or more flow logs.
 
 Type annotations for `boto3.client("ec2").describe_flow_logs` method.
 
 Boto3 documentation:
 [EC2.Client.describe_flow_logs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_flow_logs)
+
+Arguments mapping described in
+[DescribeFlowLogsRequestTypeDef](./type_defs.md#describeflowlogsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3940,15 +4965,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeFlowLogsResultTypeDef](./type_defs.md#describeflowlogsresulttypedef).
+[DescribeFlowLogsResultResponseTypeDef](./type_defs.md#describeflowlogsresultresponsetypedef).
 
 ### describe_fpga_image_attribute
+
+Describes the specified attribute of the specified Amazon FPGA Image (AFI).
 
 Type annotations for `boto3.client("ec2").describe_fpga_image_attribute`
 method.
 
 Boto3 documentation:
 [EC2.Client.describe_fpga_image_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_fpga_image_attribute)
+
+Arguments mapping described in
+[DescribeFpgaImageAttributeRequestTypeDef](./type_defs.md#describefpgaimageattributerequesttypedef).
 
 Keyword-only arguments:
 
@@ -3959,14 +4989,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeFpgaImageAttributeResultTypeDef](./type_defs.md#describefpgaimageattributeresulttypedef).
+[DescribeFpgaImageAttributeResultResponseTypeDef](./type_defs.md#describefpgaimageattributeresultresponsetypedef).
 
 ### describe_fpga_images
+
+Describes the Amazon FPGA Images (AFIs) available to you.
 
 Type annotations for `boto3.client("ec2").describe_fpga_images` method.
 
 Boto3 documentation:
 [EC2.Client.describe_fpga_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_fpga_images)
+
+Arguments mapping described in
+[DescribeFpgaImagesRequestTypeDef](./type_defs.md#describefpgaimagesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3978,15 +5013,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeFpgaImagesResultTypeDef](./type_defs.md#describefpgaimagesresulttypedef).
+[DescribeFpgaImagesResultResponseTypeDef](./type_defs.md#describefpgaimagesresultresponsetypedef).
 
 ### describe_host_reservation_offerings
+
+Describes the Dedicated Host reservations that are available to purchase.
 
 Type annotations for `boto3.client("ec2").describe_host_reservation_offerings`
 method.
 
 Boto3 documentation:
 [EC2.Client.describe_host_reservation_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_host_reservation_offerings)
+
+Arguments mapping described in
+[DescribeHostReservationOfferingsRequestTypeDef](./type_defs.md#describehostreservationofferingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3998,14 +5038,20 @@ Keyword-only arguments:
 - `OfferingId`: `str`
 
 Returns
-[DescribeHostReservationOfferingsResultTypeDef](./type_defs.md#describehostreservationofferingsresulttypedef).
+[DescribeHostReservationOfferingsResultResponseTypeDef](./type_defs.md#describehostreservationofferingsresultresponsetypedef).
 
 ### describe_host_reservations
+
+Describes reservations that are associated with Dedicated Hosts in your
+account.
 
 Type annotations for `boto3.client("ec2").describe_host_reservations` method.
 
 Boto3 documentation:
 [EC2.Client.describe_host_reservations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_host_reservations)
+
+Arguments mapping described in
+[DescribeHostReservationsRequestTypeDef](./type_defs.md#describehostreservationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4015,14 +5061,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeHostReservationsResultTypeDef](./type_defs.md#describehostreservationsresulttypedef).
+[DescribeHostReservationsResultResponseTypeDef](./type_defs.md#describehostreservationsresultresponsetypedef).
 
 ### describe_hosts
+
+Describes the specified Dedicated Hosts or all your Dedicated Hosts.
 
 Type annotations for `boto3.client("ec2").describe_hosts` method.
 
 Boto3 documentation:
 [EC2.Client.describe_hosts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_hosts)
+
+Arguments mapping described in
+[DescribeHostsRequestTypeDef](./type_defs.md#describehostsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4032,15 +5083,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeHostsResultTypeDef](./type_defs.md#describehostsresulttypedef).
+[DescribeHostsResultResponseTypeDef](./type_defs.md#describehostsresultresponsetypedef).
 
 ### describe_iam_instance_profile_associations
+
+Describes your IAM instance profile associations.
 
 Type annotations for
 `boto3.client("ec2").describe_iam_instance_profile_associations` method.
 
 Boto3 documentation:
 [EC2.Client.describe_iam_instance_profile_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_iam_instance_profile_associations)
+
+Arguments mapping described in
+[DescribeIamInstanceProfileAssociationsRequestTypeDef](./type_defs.md#describeiaminstanceprofileassociationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4050,28 +5106,40 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeIamInstanceProfileAssociationsResultTypeDef](./type_defs.md#describeiaminstanceprofileassociationsresulttypedef).
+[DescribeIamInstanceProfileAssociationsResultResponseTypeDef](./type_defs.md#describeiaminstanceprofileassociationsresultresponsetypedef).
 
 ### describe_id_format
+
+Describes the ID format settings for your resources on a per-Region basis, for
+example, to view which resource types are enabled for longer IDs.
 
 Type annotations for `boto3.client("ec2").describe_id_format` method.
 
 Boto3 documentation:
 [EC2.Client.describe_id_format](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_id_format)
 
+Arguments mapping described in
+[DescribeIdFormatRequestTypeDef](./type_defs.md#describeidformatrequesttypedef).
+
 Keyword-only arguments:
 
 - `Resource`: `str`
 
 Returns
-[DescribeIdFormatResultTypeDef](./type_defs.md#describeidformatresulttypedef).
+[DescribeIdFormatResultResponseTypeDef](./type_defs.md#describeidformatresultresponsetypedef).
 
 ### describe_identity_id_format
+
+Describes the ID format settings for resources for the specified IAM user, IAM
+role, or root user.
 
 Type annotations for `boto3.client("ec2").describe_identity_id_format` method.
 
 Boto3 documentation:
 [EC2.Client.describe_identity_id_format](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_identity_id_format)
+
+Arguments mapping described in
+[DescribeIdentityIdFormatRequestTypeDef](./type_defs.md#describeidentityidformatrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4079,14 +5147,19 @@ Keyword-only arguments:
 - `Resource`: `str`
 
 Returns
-[DescribeIdentityIdFormatResultTypeDef](./type_defs.md#describeidentityidformatresulttypedef).
+[DescribeIdentityIdFormatResultResponseTypeDef](./type_defs.md#describeidentityidformatresultresponsetypedef).
 
 ### describe_image_attribute
+
+Describes the specified attribute of the specified AMI.
 
 Type annotations for `boto3.client("ec2").describe_image_attribute` method.
 
 Boto3 documentation:
 [EC2.Client.describe_image_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_image_attribute)
+
+Arguments mapping described in
+[DescribeImageAttributeRequestTypeDef](./type_defs.md#describeimageattributerequesttypedef).
 
 Keyword-only arguments:
 
@@ -4095,14 +5168,21 @@ Keyword-only arguments:
 - `ImageId`: `str` *(required)*
 - `DryRun`: `bool`
 
-Returns [ImageAttributeTypeDef](./type_defs.md#imageattributetypedef).
+Returns
+[ImageAttributeResponseTypeDef](./type_defs.md#imageattributeresponsetypedef).
 
 ### describe_images
+
+Describes the specified images (AMIs, AKIs, and ARIs) available to you or all
+of the images available to you.
 
 Type annotations for `boto3.client("ec2").describe_images` method.
 
 Boto3 documentation:
 [EC2.Client.describe_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_images)
+
+Arguments mapping described in
+[DescribeImagesRequestTypeDef](./type_defs.md#describeimagesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4114,14 +5194,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeImagesResultTypeDef](./type_defs.md#describeimagesresulttypedef).
+[DescribeImagesResultResponseTypeDef](./type_defs.md#describeimagesresultresponsetypedef).
 
 ### describe_import_image_tasks
+
+Displays details about an import virtual machine or import snapshot tasks that
+are already created.
 
 Type annotations for `boto3.client("ec2").describe_import_image_tasks` method.
 
 Boto3 documentation:
 [EC2.Client.describe_import_image_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_import_image_tasks)
+
+Arguments mapping described in
+[DescribeImportImageTasksRequestTypeDef](./type_defs.md#describeimportimagetasksrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4132,9 +5218,11 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeImportImageTasksResultTypeDef](./type_defs.md#describeimportimagetasksresulttypedef).
+[DescribeImportImageTasksResultResponseTypeDef](./type_defs.md#describeimportimagetasksresultresponsetypedef).
 
 ### describe_import_snapshot_tasks
+
+Describes your import snapshot tasks.
 
 Type annotations for `boto3.client("ec2").describe_import_snapshot_tasks`
 method.
@@ -4142,6 +5230,9 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_import_snapshot_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_import_snapshot_tasks)
 
+Arguments mapping described in
+[DescribeImportSnapshotTasksRequestTypeDef](./type_defs.md#describeimportsnapshottasksrequesttypedef).
+
 Keyword-only arguments:
 
 - `DryRun`: `bool`
@@ -4151,14 +5242,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeImportSnapshotTasksResultTypeDef](./type_defs.md#describeimportsnapshottasksresulttypedef).
+[DescribeImportSnapshotTasksResultResponseTypeDef](./type_defs.md#describeimportsnapshottasksresultresponsetypedef).
 
 ### describe_instance_attribute
+
+Describes the specified attribute of the specified instance.
 
 Type annotations for `boto3.client("ec2").describe_instance_attribute` method.
 
 Boto3 documentation:
 [EC2.Client.describe_instance_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instance_attribute)
+
+Arguments mapping described in
+[DescribeInstanceAttributeRequestTypeDef](./type_defs.md#describeinstanceattributerequesttypedef).
 
 Keyword-only arguments:
 
@@ -4168,15 +5264,22 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `DryRun`: `bool`
 
-Returns [InstanceAttributeTypeDef](./type_defs.md#instanceattributetypedef).
+Returns
+[InstanceAttributeResponseTypeDef](./type_defs.md#instanceattributeresponsetypedef).
 
 ### describe_instance_credit_specifications
+
+Describes the credit option for CPU usage of the specified burstable
+performance instances.
 
 Type annotations for
 `boto3.client("ec2").describe_instance_credit_specifications` method.
 
 Boto3 documentation:
 [EC2.Client.describe_instance_credit_specifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instance_credit_specifications)
+
+Arguments mapping described in
+[DescribeInstanceCreditSpecificationsRequestTypeDef](./type_defs.md#describeinstancecreditspecificationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4187,9 +5290,12 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeInstanceCreditSpecificationsResultTypeDef](./type_defs.md#describeinstancecreditspecificationsresulttypedef).
+[DescribeInstanceCreditSpecificationsResultResponseTypeDef](./type_defs.md#describeinstancecreditspecificationsresultresponsetypedef).
 
 ### describe_instance_event_notification_attributes
+
+Describes the tag keys that are registered to appear in scheduled event
+notifications for resources in the current Region.
 
 Type annotations for
 `boto3.client("ec2").describe_instance_event_notification_attributes` method.
@@ -4197,19 +5303,27 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.describe_instance_event_notification_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instance_event_notification_attributes)
 
+Arguments mapping described in
+[DescribeInstanceEventNotificationAttributesRequestTypeDef](./type_defs.md#describeinstanceeventnotificationattributesrequesttypedef).
+
 Keyword-only arguments:
 
 - `DryRun`: `bool`
 
 Returns
-[DescribeInstanceEventNotificationAttributesResultTypeDef](./type_defs.md#describeinstanceeventnotificationattributesresulttypedef).
+[DescribeInstanceEventNotificationAttributesResultResponseTypeDef](./type_defs.md#describeinstanceeventnotificationattributesresultresponsetypedef).
 
 ### describe_instance_status
+
+Describes the status of the specified instances or all of your instances.
 
 Type annotations for `boto3.client("ec2").describe_instance_status` method.
 
 Boto3 documentation:
 [EC2.Client.describe_instance_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instance_status)
+
+Arguments mapping described in
+[DescribeInstanceStatusRequestTypeDef](./type_defs.md#describeinstancestatusrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4221,15 +5335,20 @@ Keyword-only arguments:
 - `IncludeAllInstances`: `bool`
 
 Returns
-[DescribeInstanceStatusResultTypeDef](./type_defs.md#describeinstancestatusresulttypedef).
+[DescribeInstanceStatusResultResponseTypeDef](./type_defs.md#describeinstancestatusresultresponsetypedef).
 
 ### describe_instance_type_offerings
+
+Returns a list of all instance types offered.
 
 Type annotations for `boto3.client("ec2").describe_instance_type_offerings`
 method.
 
 Boto3 documentation:
 [EC2.Client.describe_instance_type_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instance_type_offerings)
+
+Arguments mapping described in
+[DescribeInstanceTypeOfferingsRequestTypeDef](./type_defs.md#describeinstancetypeofferingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4240,14 +5359,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeInstanceTypeOfferingsResultTypeDef](./type_defs.md#describeinstancetypeofferingsresulttypedef).
+[DescribeInstanceTypeOfferingsResultResponseTypeDef](./type_defs.md#describeinstancetypeofferingsresultresponsetypedef).
 
 ### describe_instance_types
+
+Describes the details of the instance types that are offered in a location.
 
 Type annotations for `boto3.client("ec2").describe_instance_types` method.
 
 Boto3 documentation:
 [EC2.Client.describe_instance_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instance_types)
+
+Arguments mapping described in
+[DescribeInstanceTypesRequestTypeDef](./type_defs.md#describeinstancetypesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4258,14 +5382,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeInstanceTypesResultTypeDef](./type_defs.md#describeinstancetypesresulttypedef).
+[DescribeInstanceTypesResultResponseTypeDef](./type_defs.md#describeinstancetypesresultresponsetypedef).
 
 ### describe_instances
+
+Describes the specified instances or all instances.
 
 Type annotations for `boto3.client("ec2").describe_instances` method.
 
 Boto3 documentation:
 [EC2.Client.describe_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instances)
+
+Arguments mapping described in
+[DescribeInstancesRequestTypeDef](./type_defs.md#describeinstancesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4276,14 +5405,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeInstancesResultTypeDef](./type_defs.md#describeinstancesresulttypedef).
+[DescribeInstancesResultResponseTypeDef](./type_defs.md#describeinstancesresultresponsetypedef).
 
 ### describe_internet_gateways
+
+Describes one or more of your internet gateways.
 
 Type annotations for `boto3.client("ec2").describe_internet_gateways` method.
 
 Boto3 documentation:
 [EC2.Client.describe_internet_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_internet_gateways)
+
+Arguments mapping described in
+[DescribeInternetGatewaysRequestTypeDef](./type_defs.md#describeinternetgatewaysrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4294,14 +5428,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeInternetGatewaysResultTypeDef](./type_defs.md#describeinternetgatewaysresulttypedef).
+[DescribeInternetGatewaysResultResponseTypeDef](./type_defs.md#describeinternetgatewaysresultresponsetypedef).
 
 ### describe_ipv6_pools
+
+Describes your IPv6 address pools.
 
 Type annotations for `boto3.client("ec2").describe_ipv6_pools` method.
 
 Boto3 documentation:
 [EC2.Client.describe_ipv6_pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_ipv6_pools)
+
+Arguments mapping described in
+[DescribeIpv6PoolsRequestTypeDef](./type_defs.md#describeipv6poolsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4312,14 +5451,19 @@ Keyword-only arguments:
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[DescribeIpv6PoolsResultTypeDef](./type_defs.md#describeipv6poolsresulttypedef).
+[DescribeIpv6PoolsResultResponseTypeDef](./type_defs.md#describeipv6poolsresultresponsetypedef).
 
 ### describe_key_pairs
+
+Describes the specified key pairs or all of your key pairs.
 
 Type annotations for `boto3.client("ec2").describe_key_pairs` method.
 
 Boto3 documentation:
 [EC2.Client.describe_key_pairs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_key_pairs)
+
+Arguments mapping described in
+[DescribeKeyPairsRequestTypeDef](./type_defs.md#describekeypairsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4329,15 +5473,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeKeyPairsResultTypeDef](./type_defs.md#describekeypairsresulttypedef).
+[DescribeKeyPairsResultResponseTypeDef](./type_defs.md#describekeypairsresultresponsetypedef).
 
 ### describe_launch_template_versions
+
+Describes one or more versions of a specified launch template.
 
 Type annotations for `boto3.client("ec2").describe_launch_template_versions`
 method.
 
 Boto3 documentation:
 [EC2.Client.describe_launch_template_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_launch_template_versions)
+
+Arguments mapping described in
+[DescribeLaunchTemplateVersionsRequestTypeDef](./type_defs.md#describelaunchtemplateversionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4352,14 +5501,19 @@ Keyword-only arguments:
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[DescribeLaunchTemplateVersionsResultTypeDef](./type_defs.md#describelaunchtemplateversionsresulttypedef).
+[DescribeLaunchTemplateVersionsResultResponseTypeDef](./type_defs.md#describelaunchtemplateversionsresultresponsetypedef).
 
 ### describe_launch_templates
+
+Describes one or more launch templates.
 
 Type annotations for `boto3.client("ec2").describe_launch_templates` method.
 
 Boto3 documentation:
 [EC2.Client.describe_launch_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_launch_templates)
+
+Arguments mapping described in
+[DescribeLaunchTemplatesRequestTypeDef](./type_defs.md#describelaunchtemplatesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4371,9 +5525,12 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeLaunchTemplatesResultTypeDef](./type_defs.md#describelaunchtemplatesresulttypedef).
+[DescribeLaunchTemplatesResultResponseTypeDef](./type_defs.md#describelaunchtemplatesresultresponsetypedef).
 
 ### describe_local_gateway_route_table_virtual_interface_group_associations
+
+Describes the associations between virtual interface groups and local gateway
+route tables.
 
 Type annotations for
 `boto3.client("ec2").describe_local_gateway_route_table_virtual_interface_group_associations`
@@ -4381,6 +5538,9 @@ method.
 
 Boto3 documentation:
 [EC2.Client.describe_local_gateway_route_table_virtual_interface_group_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_local_gateway_route_table_virtual_interface_group_associations)
+
+Arguments mapping described in
+[DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsRequestTypeDef](./type_defs.md#describelocalgatewayroutetablevirtualinterfacegroupassociationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4391,9 +5551,12 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResultTypeDef](./type_defs.md#describelocalgatewayroutetablevirtualinterfacegroupassociationsresulttypedef).
+[DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResultResponseTypeDef](./type_defs.md#describelocalgatewayroutetablevirtualinterfacegroupassociationsresultresponsetypedef).
 
 ### describe_local_gateway_route_table_vpc_associations
+
+Describes the specified associations between VPCs and local gateway route
+tables.
 
 Type annotations for
 `boto3.client("ec2").describe_local_gateway_route_table_vpc_associations`
@@ -4401,6 +5564,9 @@ method.
 
 Boto3 documentation:
 [EC2.Client.describe_local_gateway_route_table_vpc_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_local_gateway_route_table_vpc_associations)
+
+Arguments mapping described in
+[DescribeLocalGatewayRouteTableVpcAssociationsRequestTypeDef](./type_defs.md#describelocalgatewayroutetablevpcassociationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4411,15 +5577,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeLocalGatewayRouteTableVpcAssociationsResultTypeDef](./type_defs.md#describelocalgatewayroutetablevpcassociationsresulttypedef).
+[DescribeLocalGatewayRouteTableVpcAssociationsResultResponseTypeDef](./type_defs.md#describelocalgatewayroutetablevpcassociationsresultresponsetypedef).
 
 ### describe_local_gateway_route_tables
+
+Describes one or more local gateway route tables.
 
 Type annotations for `boto3.client("ec2").describe_local_gateway_route_tables`
 method.
 
 Boto3 documentation:
 [EC2.Client.describe_local_gateway_route_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_local_gateway_route_tables)
+
+Arguments mapping described in
+[DescribeLocalGatewayRouteTablesRequestTypeDef](./type_defs.md#describelocalgatewayroutetablesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4430,15 +5601,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeLocalGatewayRouteTablesResultTypeDef](./type_defs.md#describelocalgatewayroutetablesresulttypedef).
+[DescribeLocalGatewayRouteTablesResultResponseTypeDef](./type_defs.md#describelocalgatewayroutetablesresultresponsetypedef).
 
 ### describe_local_gateway_virtual_interface_groups
+
+Describes the specified local gateway virtual interface groups.
 
 Type annotations for
 `boto3.client("ec2").describe_local_gateway_virtual_interface_groups` method.
 
 Boto3 documentation:
 [EC2.Client.describe_local_gateway_virtual_interface_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_local_gateway_virtual_interface_groups)
+
+Arguments mapping described in
+[DescribeLocalGatewayVirtualInterfaceGroupsRequestTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacegroupsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4449,15 +5625,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeLocalGatewayVirtualInterfaceGroupsResultTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacegroupsresulttypedef).
+[DescribeLocalGatewayVirtualInterfaceGroupsResultResponseTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacegroupsresultresponsetypedef).
 
 ### describe_local_gateway_virtual_interfaces
+
+Describes the specified local gateway virtual interfaces.
 
 Type annotations for
 `boto3.client("ec2").describe_local_gateway_virtual_interfaces` method.
 
 Boto3 documentation:
 [EC2.Client.describe_local_gateway_virtual_interfaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_local_gateway_virtual_interfaces)
+
+Arguments mapping described in
+[DescribeLocalGatewayVirtualInterfacesRequestTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4468,14 +5649,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeLocalGatewayVirtualInterfacesResultTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacesresulttypedef).
+[DescribeLocalGatewayVirtualInterfacesResultResponseTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacesresultresponsetypedef).
 
 ### describe_local_gateways
+
+Describes one or more local gateways.
 
 Type annotations for `boto3.client("ec2").describe_local_gateways` method.
 
 Boto3 documentation:
 [EC2.Client.describe_local_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_local_gateways)
+
+Arguments mapping described in
+[DescribeLocalGatewaysRequestTypeDef](./type_defs.md#describelocalgatewaysrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4486,15 +5672,21 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeLocalGatewaysResultTypeDef](./type_defs.md#describelocalgatewaysresulttypedef).
+[DescribeLocalGatewaysResultResponseTypeDef](./type_defs.md#describelocalgatewaysresultresponsetypedef).
 
 ### describe_managed_prefix_lists
+
+Describes your managed prefix lists and any Amazon Web Services-managed prefix
+lists.
 
 Type annotations for `boto3.client("ec2").describe_managed_prefix_lists`
 method.
 
 Boto3 documentation:
 [EC2.Client.describe_managed_prefix_lists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_managed_prefix_lists)
+
+Arguments mapping described in
+[DescribeManagedPrefixListsRequestTypeDef](./type_defs.md#describemanagedprefixlistsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4505,14 +5697,20 @@ Keyword-only arguments:
 - `PrefixListIds`: `List`\[`str`\]
 
 Returns
-[DescribeManagedPrefixListsResultTypeDef](./type_defs.md#describemanagedprefixlistsresulttypedef).
+[DescribeManagedPrefixListsResultResponseTypeDef](./type_defs.md#describemanagedprefixlistsresultresponsetypedef).
 
 ### describe_moving_addresses
+
+Describes your Elastic IP addresses that are being moved to the EC2-VPC
+platform, or that are being restored to the EC2-Classic platform.
 
 Type annotations for `boto3.client("ec2").describe_moving_addresses` method.
 
 Boto3 documentation:
 [EC2.Client.describe_moving_addresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_moving_addresses)
+
+Arguments mapping described in
+[DescribeMovingAddressesRequestTypeDef](./type_defs.md#describemovingaddressesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4523,14 +5721,19 @@ Keyword-only arguments:
 - `PublicIps`: `List`\[`str`\]
 
 Returns
-[DescribeMovingAddressesResultTypeDef](./type_defs.md#describemovingaddressesresulttypedef).
+[DescribeMovingAddressesResultResponseTypeDef](./type_defs.md#describemovingaddressesresultresponsetypedef).
 
 ### describe_nat_gateways
+
+Describes one or more of your NAT gateways.
 
 Type annotations for `boto3.client("ec2").describe_nat_gateways` method.
 
 Boto3 documentation:
 [EC2.Client.describe_nat_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_nat_gateways)
+
+Arguments mapping described in
+[DescribeNatGatewaysRequestTypeDef](./type_defs.md#describenatgatewaysrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4541,14 +5744,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeNatGatewaysResultTypeDef](./type_defs.md#describenatgatewaysresulttypedef).
+[DescribeNatGatewaysResultResponseTypeDef](./type_defs.md#describenatgatewaysresultresponsetypedef).
 
 ### describe_network_acls
+
+Describes one or more of your network ACLs.
 
 Type annotations for `boto3.client("ec2").describe_network_acls` method.
 
 Boto3 documentation:
 [EC2.Client.describe_network_acls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_network_acls)
+
+Arguments mapping described in
+[DescribeNetworkAclsRequestTypeDef](./type_defs.md#describenetworkaclsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4559,9 +5767,11 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeNetworkAclsResultTypeDef](./type_defs.md#describenetworkaclsresulttypedef).
+[DescribeNetworkAclsResultResponseTypeDef](./type_defs.md#describenetworkaclsresultresponsetypedef).
 
 ### describe_network_insights_analyses
+
+Describes one or more of your network insights analyses.
 
 Type annotations for `boto3.client("ec2").describe_network_insights_analyses`
 method.
@@ -4569,27 +5779,35 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_network_insights_analyses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_network_insights_analyses)
 
+Arguments mapping described in
+[DescribeNetworkInsightsAnalysesRequestTypeDef](./type_defs.md#describenetworkinsightsanalysesrequesttypedef).
+
 Keyword-only arguments:
 
 - `NetworkInsightsAnalysisIds`: `List`\[`str`\]
 - `NetworkInsightsPathId`: `str`
-- `AnalysisStartTime`: `datetime`
-- `AnalysisEndTime`: `datetime`
+- `AnalysisStartTime`: `Union`\[`datetime`, `str`\]
+- `AnalysisEndTime`: `Union`\[`datetime`, `str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `DryRun`: `bool`
 - `NextToken`: `str`
 
 Returns
-[DescribeNetworkInsightsAnalysesResultTypeDef](./type_defs.md#describenetworkinsightsanalysesresulttypedef).
+[DescribeNetworkInsightsAnalysesResultResponseTypeDef](./type_defs.md#describenetworkinsightsanalysesresultresponsetypedef).
 
 ### describe_network_insights_paths
+
+Describes one or more of your paths.
 
 Type annotations for `boto3.client("ec2").describe_network_insights_paths`
 method.
 
 Boto3 documentation:
 [EC2.Client.describe_network_insights_paths](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_network_insights_paths)
+
+Arguments mapping described in
+[DescribeNetworkInsightsPathsRequestTypeDef](./type_defs.md#describenetworkinsightspathsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4600,15 +5818,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeNetworkInsightsPathsResultTypeDef](./type_defs.md#describenetworkinsightspathsresulttypedef).
+[DescribeNetworkInsightsPathsResultResponseTypeDef](./type_defs.md#describenetworkinsightspathsresultresponsetypedef).
 
 ### describe_network_interface_attribute
+
+Describes a network interface attribute.
 
 Type annotations for `boto3.client("ec2").describe_network_interface_attribute`
 method.
 
 Boto3 documentation:
 [EC2.Client.describe_network_interface_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_network_interface_attribute)
+
+Arguments mapping described in
+[DescribeNetworkInterfaceAttributeRequestTypeDef](./type_defs.md#describenetworkinterfaceattributerequesttypedef).
 
 Keyword-only arguments:
 
@@ -4618,15 +5841,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeNetworkInterfaceAttributeResultTypeDef](./type_defs.md#describenetworkinterfaceattributeresulttypedef).
+[DescribeNetworkInterfaceAttributeResultResponseTypeDef](./type_defs.md#describenetworkinterfaceattributeresultresponsetypedef).
 
 ### describe_network_interface_permissions
+
+Describes the permissions for your network interfaces.
 
 Type annotations for
 `boto3.client("ec2").describe_network_interface_permissions` method.
 
 Boto3 documentation:
 [EC2.Client.describe_network_interface_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_network_interface_permissions)
+
+Arguments mapping described in
+[DescribeNetworkInterfacePermissionsRequestTypeDef](./type_defs.md#describenetworkinterfacepermissionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4636,14 +5864,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeNetworkInterfacePermissionsResultTypeDef](./type_defs.md#describenetworkinterfacepermissionsresulttypedef).
+[DescribeNetworkInterfacePermissionsResultResponseTypeDef](./type_defs.md#describenetworkinterfacepermissionsresultresponsetypedef).
 
 ### describe_network_interfaces
+
+Describes one or more of your network interfaces.
 
 Type annotations for `boto3.client("ec2").describe_network_interfaces` method.
 
 Boto3 documentation:
 [EC2.Client.describe_network_interfaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_network_interfaces)
+
+Arguments mapping described in
+[DescribeNetworkInterfacesRequestTypeDef](./type_defs.md#describenetworkinterfacesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4654,14 +5887,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeNetworkInterfacesResultTypeDef](./type_defs.md#describenetworkinterfacesresulttypedef).
+[DescribeNetworkInterfacesResultResponseTypeDef](./type_defs.md#describenetworkinterfacesresultresponsetypedef).
 
 ### describe_placement_groups
+
+Describes the specified placement groups or all of your placement groups.
 
 Type annotations for `boto3.client("ec2").describe_placement_groups` method.
 
 Boto3 documentation:
 [EC2.Client.describe_placement_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_placement_groups)
+
+Arguments mapping described in
+[DescribePlacementGroupsRequestTypeDef](./type_defs.md#describeplacementgroupsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4671,14 +5909,21 @@ Keyword-only arguments:
 - `GroupIds`: `List`\[`str`\]
 
 Returns
-[DescribePlacementGroupsResultTypeDef](./type_defs.md#describeplacementgroupsresulttypedef).
+[DescribePlacementGroupsResultResponseTypeDef](./type_defs.md#describeplacementgroupsresultresponsetypedef).
 
 ### describe_prefix_lists
+
+Describes available Amazon Web Services services in a prefix list format, which
+includes the prefix list name and prefix list ID of the service and the IP
+address range for the service.
 
 Type annotations for `boto3.client("ec2").describe_prefix_lists` method.
 
 Boto3 documentation:
 [EC2.Client.describe_prefix_lists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_prefix_lists)
+
+Arguments mapping described in
+[DescribePrefixListsRequestTypeDef](./type_defs.md#describeprefixlistsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4689,14 +5934,20 @@ Keyword-only arguments:
 - `PrefixListIds`: `List`\[`str`\]
 
 Returns
-[DescribePrefixListsResultTypeDef](./type_defs.md#describeprefixlistsresulttypedef).
+[DescribePrefixListsResultResponseTypeDef](./type_defs.md#describeprefixlistsresultresponsetypedef).
 
 ### describe_principal_id_format
+
+Describes the ID format settings for the root user and all IAM roles and IAM
+users that have explicitly specified a longer ID (17-character ID) preference.
 
 Type annotations for `boto3.client("ec2").describe_principal_id_format` method.
 
 Boto3 documentation:
 [EC2.Client.describe_principal_id_format](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_principal_id_format)
+
+Arguments mapping described in
+[DescribePrincipalIdFormatRequestTypeDef](./type_defs.md#describeprincipalidformatrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4706,14 +5957,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribePrincipalIdFormatResultTypeDef](./type_defs.md#describeprincipalidformatresulttypedef).
+[DescribePrincipalIdFormatResultResponseTypeDef](./type_defs.md#describeprincipalidformatresultresponsetypedef).
 
 ### describe_public_ipv4_pools
+
+Describes the specified IPv4 address pools.
 
 Type annotations for `boto3.client("ec2").describe_public_ipv4_pools` method.
 
 Boto3 documentation:
 [EC2.Client.describe_public_ipv4_pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_public_ipv4_pools)
+
+Arguments mapping described in
+[DescribePublicIpv4PoolsRequestTypeDef](./type_defs.md#describepublicipv4poolsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4723,14 +5979,19 @@ Keyword-only arguments:
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[DescribePublicIpv4PoolsResultTypeDef](./type_defs.md#describepublicipv4poolsresulttypedef).
+[DescribePublicIpv4PoolsResultResponseTypeDef](./type_defs.md#describepublicipv4poolsresultresponsetypedef).
 
 ### describe_regions
+
+Describes the Regions that are enabled for your account, or all Regions.
 
 Type annotations for `boto3.client("ec2").describe_regions` method.
 
 Boto3 documentation:
 [EC2.Client.describe_regions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_regions)
+
+Arguments mapping described in
+[DescribeRegionsRequestTypeDef](./type_defs.md#describeregionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4740,15 +6001,20 @@ Keyword-only arguments:
 - `AllRegions`: `bool`
 
 Returns
-[DescribeRegionsResultTypeDef](./type_defs.md#describeregionsresulttypedef).
+[DescribeRegionsResultResponseTypeDef](./type_defs.md#describeregionsresultresponsetypedef).
 
 ### describe_replace_root_volume_tasks
+
+Describes a root volume replacement task.
 
 Type annotations for `boto3.client("ec2").describe_replace_root_volume_tasks`
 method.
 
 Boto3 documentation:
 [EC2.Client.describe_replace_root_volume_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_replace_root_volume_tasks)
+
+Arguments mapping described in
+[DescribeReplaceRootVolumeTasksRequestTypeDef](./type_defs.md#describereplacerootvolumetasksrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4759,14 +6025,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeReplaceRootVolumeTasksResultTypeDef](./type_defs.md#describereplacerootvolumetasksresulttypedef).
+[DescribeReplaceRootVolumeTasksResultResponseTypeDef](./type_defs.md#describereplacerootvolumetasksresultresponsetypedef).
 
 ### describe_reserved_instances
+
+Describes one or more of the Reserved Instances that you purchased.
 
 Type annotations for `boto3.client("ec2").describe_reserved_instances` method.
 
 Boto3 documentation:
 [EC2.Client.describe_reserved_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_reserved_instances)
+
+Arguments mapping described in
+[DescribeReservedInstancesRequestTypeDef](./type_defs.md#describereservedinstancesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4778,15 +6049,21 @@ Keyword-only arguments:
   [OfferingTypeValuesType](./literals.md#offeringtypevaluestype)
 
 Returns
-[DescribeReservedInstancesResultTypeDef](./type_defs.md#describereservedinstancesresulttypedef).
+[DescribeReservedInstancesResultResponseTypeDef](./type_defs.md#describereservedinstancesresultresponsetypedef).
 
 ### describe_reserved_instances_listings
+
+Describes your account's Reserved Instance listings in the Reserved Instance
+Marketplace.
 
 Type annotations for `boto3.client("ec2").describe_reserved_instances_listings`
 method.
 
 Boto3 documentation:
 [EC2.Client.describe_reserved_instances_listings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_reserved_instances_listings)
+
+Arguments mapping described in
+[DescribeReservedInstancesListingsRequestTypeDef](./type_defs.md#describereservedinstanceslistingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4795,15 +6072,20 @@ Keyword-only arguments:
 - `ReservedInstancesListingId`: `str`
 
 Returns
-[DescribeReservedInstancesListingsResultTypeDef](./type_defs.md#describereservedinstanceslistingsresulttypedef).
+[DescribeReservedInstancesListingsResultResponseTypeDef](./type_defs.md#describereservedinstanceslistingsresultresponsetypedef).
 
 ### describe_reserved_instances_modifications
+
+Describes the modifications made to your Reserved Instances.
 
 Type annotations for
 `boto3.client("ec2").describe_reserved_instances_modifications` method.
 
 Boto3 documentation:
 [EC2.Client.describe_reserved_instances_modifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_reserved_instances_modifications)
+
+Arguments mapping described in
+[DescribeReservedInstancesModificationsRequestTypeDef](./type_defs.md#describereservedinstancesmodificationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4812,15 +6094,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeReservedInstancesModificationsResultTypeDef](./type_defs.md#describereservedinstancesmodificationsresulttypedef).
+[DescribeReservedInstancesModificationsResultResponseTypeDef](./type_defs.md#describereservedinstancesmodificationsresultresponsetypedef).
 
 ### describe_reserved_instances_offerings
+
+Describes Reserved Instance offerings that are available for purchase.
 
 Type annotations for
 `boto3.client("ec2").describe_reserved_instances_offerings` method.
 
 Boto3 documentation:
 [EC2.Client.describe_reserved_instances_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_reserved_instances_offerings)
+
+Arguments mapping described in
+[DescribeReservedInstancesOfferingsRequestTypeDef](./type_defs.md#describereservedinstancesofferingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4843,14 +6130,19 @@ Keyword-only arguments:
   [OfferingTypeValuesType](./literals.md#offeringtypevaluestype)
 
 Returns
-[DescribeReservedInstancesOfferingsResultTypeDef](./type_defs.md#describereservedinstancesofferingsresulttypedef).
+[DescribeReservedInstancesOfferingsResultResponseTypeDef](./type_defs.md#describereservedinstancesofferingsresultresponsetypedef).
 
 ### describe_route_tables
+
+Describes one or more of your route tables.
 
 Type annotations for `boto3.client("ec2").describe_route_tables` method.
 
 Boto3 documentation:
 [EC2.Client.describe_route_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_route_tables)
+
+Arguments mapping described in
+[DescribeRouteTablesRequestTypeDef](./type_defs.md#describeroutetablesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4861,15 +6153,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeRouteTablesResultTypeDef](./type_defs.md#describeroutetablesresulttypedef).
+[DescribeRouteTablesResultResponseTypeDef](./type_defs.md#describeroutetablesresultresponsetypedef).
 
 ### describe_scheduled_instance_availability
+
+Finds available schedules that meet the specified criteria.
 
 Type annotations for
 `boto3.client("ec2").describe_scheduled_instance_availability` method.
 
 Boto3 documentation:
 [EC2.Client.describe_scheduled_instance_availability](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_scheduled_instance_availability)
+
+Arguments mapping described in
+[DescribeScheduledInstanceAvailabilityRequestTypeDef](./type_defs.md#describescheduledinstanceavailabilityrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4887,14 +6184,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeScheduledInstanceAvailabilityResultTypeDef](./type_defs.md#describescheduledinstanceavailabilityresulttypedef).
+[DescribeScheduledInstanceAvailabilityResultResponseTypeDef](./type_defs.md#describescheduledinstanceavailabilityresultresponsetypedef).
 
 ### describe_scheduled_instances
+
+Describes the specified Scheduled Instances or all your Scheduled Instances.
 
 Type annotations for `boto3.client("ec2").describe_scheduled_instances` method.
 
 Boto3 documentation:
 [EC2.Client.describe_scheduled_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_scheduled_instances)
+
+Arguments mapping described in
+[DescribeScheduledInstancesRequestTypeDef](./type_defs.md#describescheduledinstancesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4907,7 +6209,7 @@ Keyword-only arguments:
   [SlotStartTimeRangeRequestTypeDef](./type_defs.md#slotstarttimerangerequesttypedef)
 
 Returns
-[DescribeScheduledInstancesResultTypeDef](./type_defs.md#describescheduledinstancesresulttypedef).
+[DescribeScheduledInstancesResultResponseTypeDef](./type_defs.md#describescheduledinstancesresultresponsetypedef).
 
 ### describe_security_group_references
 
@@ -4917,20 +6219,28 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_security_group_references](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_security_group_references)
 
+Arguments mapping described in
+[DescribeSecurityGroupReferencesRequestTypeDef](./type_defs.md#describesecuritygroupreferencesrequesttypedef).
+
 Keyword-only arguments:
 
 - `GroupId`: `List`\[`str`\] *(required)*
 - `DryRun`: `bool`
 
 Returns
-[DescribeSecurityGroupReferencesResultTypeDef](./type_defs.md#describesecuritygroupreferencesresulttypedef).
+[DescribeSecurityGroupReferencesResultResponseTypeDef](./type_defs.md#describesecuritygroupreferencesresultresponsetypedef).
 
 ### describe_security_groups
+
+Describes the specified security groups or all of your security groups.
 
 Type annotations for `boto3.client("ec2").describe_security_groups` method.
 
 Boto3 documentation:
 [EC2.Client.describe_security_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_security_groups)
+
+Arguments mapping described in
+[DescribeSecurityGroupsRequestTypeDef](./type_defs.md#describesecuritygroupsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4942,14 +6252,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeSecurityGroupsResultTypeDef](./type_defs.md#describesecuritygroupsresulttypedef).
+[DescribeSecurityGroupsResultResponseTypeDef](./type_defs.md#describesecuritygroupsresultresponsetypedef).
 
 ### describe_snapshot_attribute
+
+Describes the specified attribute of the specified snapshot.
 
 Type annotations for `boto3.client("ec2").describe_snapshot_attribute` method.
 
 Boto3 documentation:
 [EC2.Client.describe_snapshot_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_snapshot_attribute)
+
+Arguments mapping described in
+[DescribeSnapshotAttributeRequestTypeDef](./type_defs.md#describesnapshotattributerequesttypedef).
 
 Keyword-only arguments:
 
@@ -4960,14 +6275,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeSnapshotAttributeResultTypeDef](./type_defs.md#describesnapshotattributeresulttypedef).
+[DescribeSnapshotAttributeResultResponseTypeDef](./type_defs.md#describesnapshotattributeresultresponsetypedef).
 
 ### describe_snapshots
+
+Describes the specified EBS snapshots available to you or all of the EBS
+snapshots available to you.
 
 Type annotations for `boto3.client("ec2").describe_snapshots` method.
 
 Boto3 documentation:
 [EC2.Client.describe_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_snapshots)
+
+Arguments mapping described in
+[DescribeSnapshotsRequestTypeDef](./type_defs.md#describesnapshotsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4980,9 +6301,11 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeSnapshotsResultTypeDef](./type_defs.md#describesnapshotsresulttypedef).
+[DescribeSnapshotsResultResponseTypeDef](./type_defs.md#describesnapshotsresultresponsetypedef).
 
 ### describe_spot_datafeed_subscription
+
+Describes the data feed for Spot Instances.
 
 Type annotations for `boto3.client("ec2").describe_spot_datafeed_subscription`
 method.
@@ -4990,14 +6313,19 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_spot_datafeed_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_spot_datafeed_subscription)
 
+Arguments mapping described in
+[DescribeSpotDatafeedSubscriptionRequestTypeDef](./type_defs.md#describespotdatafeedsubscriptionrequesttypedef).
+
 Keyword-only arguments:
 
 - `DryRun`: `bool`
 
 Returns
-[DescribeSpotDatafeedSubscriptionResultTypeDef](./type_defs.md#describespotdatafeedsubscriptionresulttypedef).
+[DescribeSpotDatafeedSubscriptionResultResponseTypeDef](./type_defs.md#describespotdatafeedsubscriptionresultresponsetypedef).
 
 ### describe_spot_fleet_instances
+
+Describes the running instances for the specified Spot Fleet.
 
 Type annotations for `boto3.client("ec2").describe_spot_fleet_instances`
 method.
@@ -5005,6 +6333,9 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_spot_fleet_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_spot_fleet_instances)
 
+Arguments mapping described in
+[DescribeSpotFleetInstancesRequestTypeDef](./type_defs.md#describespotfleetinstancesrequesttypedef).
+
 Keyword-only arguments:
 
 - `SpotFleetRequestId`: `str` *(required)*
@@ -5013,9 +6344,12 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeSpotFleetInstancesResponseTypeDef](./type_defs.md#describespotfleetinstancesresponsetypedef).
+[DescribeSpotFleetInstancesResponseResponseTypeDef](./type_defs.md#describespotfleetinstancesresponseresponsetypedef).
 
 ### describe_spot_fleet_request_history
+
+Describes the events for the specified Spot Fleet request during the specified
+time.
 
 Type annotations for `boto3.client("ec2").describe_spot_fleet_request_history`
 method.
@@ -5023,24 +6357,32 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_spot_fleet_request_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_spot_fleet_request_history)
 
+Arguments mapping described in
+[DescribeSpotFleetRequestHistoryRequestTypeDef](./type_defs.md#describespotfleetrequesthistoryrequesttypedef).
+
 Keyword-only arguments:
 
 - `SpotFleetRequestId`: `str` *(required)*
-- `StartTime`: `datetime` *(required)*
+- `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `DryRun`: `bool`
 - `EventType`: [EventTypeType](./literals.md#eventtypetype)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[DescribeSpotFleetRequestHistoryResponseTypeDef](./type_defs.md#describespotfleetrequesthistoryresponsetypedef).
+[DescribeSpotFleetRequestHistoryResponseResponseTypeDef](./type_defs.md#describespotfleetrequesthistoryresponseresponsetypedef).
 
 ### describe_spot_fleet_requests
+
+.
 
 Type annotations for `boto3.client("ec2").describe_spot_fleet_requests` method.
 
 Boto3 documentation:
 [EC2.Client.describe_spot_fleet_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_spot_fleet_requests)
+
+Arguments mapping described in
+[DescribeSpotFleetRequestsRequestTypeDef](./type_defs.md#describespotfleetrequestsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5050,15 +6392,20 @@ Keyword-only arguments:
 - `SpotFleetRequestIds`: `List`\[`str`\]
 
 Returns
-[DescribeSpotFleetRequestsResponseTypeDef](./type_defs.md#describespotfleetrequestsresponsetypedef).
+[DescribeSpotFleetRequestsResponseResponseTypeDef](./type_defs.md#describespotfleetrequestsresponseresponsetypedef).
 
 ### describe_spot_instance_requests
+
+Describes the specified Spot Instance requests.
 
 Type annotations for `boto3.client("ec2").describe_spot_instance_requests`
 method.
 
 Boto3 documentation:
 [EC2.Client.describe_spot_instance_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_spot_instance_requests)
+
+Arguments mapping described in
+[DescribeSpotInstanceRequestsRequestTypeDef](./type_defs.md#describespotinstancerequestsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5069,29 +6416,34 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeSpotInstanceRequestsResultTypeDef](./type_defs.md#describespotinstancerequestsresulttypedef).
+[DescribeSpotInstanceRequestsResultResponseTypeDef](./type_defs.md#describespotinstancerequestsresultresponsetypedef).
 
 ### describe_spot_price_history
+
+Describes the Spot price history.
 
 Type annotations for `boto3.client("ec2").describe_spot_price_history` method.
 
 Boto3 documentation:
 [EC2.Client.describe_spot_price_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_spot_price_history)
 
+Arguments mapping described in
+[DescribeSpotPriceHistoryRequestTypeDef](./type_defs.md#describespotpricehistoryrequesttypedef).
+
 Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `AvailabilityZone`: `str`
 - `DryRun`: `bool`
-- `EndTime`: `datetime`
+- `EndTime`: `Union`\[`datetime`, `str`\]
 - `InstanceTypes`: `List`\[[InstanceTypeType](./literals.md#instancetypetype)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `ProductDescriptions`: `List`\[`str`\]
-- `StartTime`: `datetime`
+- `StartTime`: `Union`\[`datetime`, `str`\]
 
 Returns
-[DescribeSpotPriceHistoryResultTypeDef](./type_defs.md#describespotpricehistoryresulttypedef).
+[DescribeSpotPriceHistoryResultResponseTypeDef](./type_defs.md#describespotpricehistoryresultresponsetypedef).
 
 ### describe_stale_security_groups
 
@@ -5101,6 +6453,9 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_stale_security_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_stale_security_groups)
 
+Arguments mapping described in
+[DescribeStaleSecurityGroupsRequestTypeDef](./type_defs.md#describestalesecuritygroupsrequesttypedef).
+
 Keyword-only arguments:
 
 - `VpcId`: `str` *(required)*
@@ -5109,14 +6464,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeStaleSecurityGroupsResultTypeDef](./type_defs.md#describestalesecuritygroupsresulttypedef).
+[DescribeStaleSecurityGroupsResultResponseTypeDef](./type_defs.md#describestalesecuritygroupsresultresponsetypedef).
 
 ### describe_store_image_tasks
+
+Describes the progress of the AMI store tasks.
 
 Type annotations for `boto3.client("ec2").describe_store_image_tasks` method.
 
 Boto3 documentation:
 [EC2.Client.describe_store_image_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_store_image_tasks)
+
+Arguments mapping described in
+[DescribeStoreImageTasksRequestTypeDef](./type_defs.md#describestoreimagetasksrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5127,14 +6487,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeStoreImageTasksResultTypeDef](./type_defs.md#describestoreimagetasksresulttypedef).
+[DescribeStoreImageTasksResultResponseTypeDef](./type_defs.md#describestoreimagetasksresultresponsetypedef).
 
 ### describe_subnets
+
+Describes one or more of your subnets.
 
 Type annotations for `boto3.client("ec2").describe_subnets` method.
 
 Boto3 documentation:
 [EC2.Client.describe_subnets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_subnets)
+
+Arguments mapping described in
+[DescribeSubnetsRequestTypeDef](./type_defs.md#describesubnetsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5145,14 +6510,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeSubnetsResultTypeDef](./type_defs.md#describesubnetsresulttypedef).
+[DescribeSubnetsResultResponseTypeDef](./type_defs.md#describesubnetsresultresponsetypedef).
 
 ### describe_tags
+
+Describes the specified tags for your EC2 resources.
 
 Type annotations for `boto3.client("ec2").describe_tags` method.
 
 Boto3 documentation:
 [EC2.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_tags)
+
+Arguments mapping described in
+[DescribeTagsRequestTypeDef](./type_defs.md#describetagsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5161,15 +6531,21 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns [DescribeTagsResultTypeDef](./type_defs.md#describetagsresulttypedef).
+Returns
+[DescribeTagsResultResponseTypeDef](./type_defs.md#describetagsresultresponsetypedef).
 
 ### describe_traffic_mirror_filters
+
+Describes one or more Traffic Mirror filters.
 
 Type annotations for `boto3.client("ec2").describe_traffic_mirror_filters`
 method.
 
 Boto3 documentation:
 [EC2.Client.describe_traffic_mirror_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_traffic_mirror_filters)
+
+Arguments mapping described in
+[DescribeTrafficMirrorFiltersRequestTypeDef](./type_defs.md#describetrafficmirrorfiltersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5180,15 +6556,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeTrafficMirrorFiltersResultTypeDef](./type_defs.md#describetrafficmirrorfiltersresulttypedef).
+[DescribeTrafficMirrorFiltersResultResponseTypeDef](./type_defs.md#describetrafficmirrorfiltersresultresponsetypedef).
 
 ### describe_traffic_mirror_sessions
+
+Describes one or more Traffic Mirror sessions.
 
 Type annotations for `boto3.client("ec2").describe_traffic_mirror_sessions`
 method.
 
 Boto3 documentation:
 [EC2.Client.describe_traffic_mirror_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_traffic_mirror_sessions)
+
+Arguments mapping described in
+[DescribeTrafficMirrorSessionsRequestTypeDef](./type_defs.md#describetrafficmirrorsessionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5199,15 +6580,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeTrafficMirrorSessionsResultTypeDef](./type_defs.md#describetrafficmirrorsessionsresulttypedef).
+[DescribeTrafficMirrorSessionsResultResponseTypeDef](./type_defs.md#describetrafficmirrorsessionsresultresponsetypedef).
 
 ### describe_traffic_mirror_targets
+
+Information about one or more Traffic Mirror targets.
 
 Type annotations for `boto3.client("ec2").describe_traffic_mirror_targets`
 method.
 
 Boto3 documentation:
 [EC2.Client.describe_traffic_mirror_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_traffic_mirror_targets)
+
+Arguments mapping described in
+[DescribeTrafficMirrorTargetsRequestTypeDef](./type_defs.md#describetrafficmirrortargetsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5218,15 +6604,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeTrafficMirrorTargetsResultTypeDef](./type_defs.md#describetrafficmirrortargetsresulttypedef).
+[DescribeTrafficMirrorTargetsResultResponseTypeDef](./type_defs.md#describetrafficmirrortargetsresultresponsetypedef).
 
 ### describe_transit_gateway_attachments
+
+Describes one or more attachments between resources and transit gateways.
 
 Type annotations for `boto3.client("ec2").describe_transit_gateway_attachments`
 method.
 
 Boto3 documentation:
 [EC2.Client.describe_transit_gateway_attachments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateway_attachments)
+
+Arguments mapping described in
+[DescribeTransitGatewayAttachmentsRequestTypeDef](./type_defs.md#describetransitgatewayattachmentsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5237,15 +6628,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeTransitGatewayAttachmentsResultTypeDef](./type_defs.md#describetransitgatewayattachmentsresulttypedef).
+[DescribeTransitGatewayAttachmentsResultResponseTypeDef](./type_defs.md#describetransitgatewayattachmentsresultresponsetypedef).
 
 ### describe_transit_gateway_connect_peers
+
+Describes one or more Connect peers.
 
 Type annotations for
 `boto3.client("ec2").describe_transit_gateway_connect_peers` method.
 
 Boto3 documentation:
 [EC2.Client.describe_transit_gateway_connect_peers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateway_connect_peers)
+
+Arguments mapping described in
+[DescribeTransitGatewayConnectPeersRequestTypeDef](./type_defs.md#describetransitgatewayconnectpeersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5256,15 +6652,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeTransitGatewayConnectPeersResultTypeDef](./type_defs.md#describetransitgatewayconnectpeersresulttypedef).
+[DescribeTransitGatewayConnectPeersResultResponseTypeDef](./type_defs.md#describetransitgatewayconnectpeersresultresponsetypedef).
 
 ### describe_transit_gateway_connects
+
+Describes one or more Connect attachments.
 
 Type annotations for `boto3.client("ec2").describe_transit_gateway_connects`
 method.
 
 Boto3 documentation:
 [EC2.Client.describe_transit_gateway_connects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateway_connects)
+
+Arguments mapping described in
+[DescribeTransitGatewayConnectsRequestTypeDef](./type_defs.md#describetransitgatewayconnectsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5275,15 +6676,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeTransitGatewayConnectsResultTypeDef](./type_defs.md#describetransitgatewayconnectsresulttypedef).
+[DescribeTransitGatewayConnectsResultResponseTypeDef](./type_defs.md#describetransitgatewayconnectsresultresponsetypedef).
 
 ### describe_transit_gateway_multicast_domains
+
+Describes one or more transit gateway multicast domains.
 
 Type annotations for
 `boto3.client("ec2").describe_transit_gateway_multicast_domains` method.
 
 Boto3 documentation:
 [EC2.Client.describe_transit_gateway_multicast_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateway_multicast_domains)
+
+Arguments mapping described in
+[DescribeTransitGatewayMulticastDomainsRequestTypeDef](./type_defs.md#describetransitgatewaymulticastdomainsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5294,15 +6700,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeTransitGatewayMulticastDomainsResultTypeDef](./type_defs.md#describetransitgatewaymulticastdomainsresulttypedef).
+[DescribeTransitGatewayMulticastDomainsResultResponseTypeDef](./type_defs.md#describetransitgatewaymulticastdomainsresultresponsetypedef).
 
 ### describe_transit_gateway_peering_attachments
+
+Describes your transit gateway peering attachments.
 
 Type annotations for
 `boto3.client("ec2").describe_transit_gateway_peering_attachments` method.
 
 Boto3 documentation:
 [EC2.Client.describe_transit_gateway_peering_attachments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateway_peering_attachments)
+
+Arguments mapping described in
+[DescribeTransitGatewayPeeringAttachmentsRequestTypeDef](./type_defs.md#describetransitgatewaypeeringattachmentsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5313,15 +6724,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeTransitGatewayPeeringAttachmentsResultTypeDef](./type_defs.md#describetransitgatewaypeeringattachmentsresulttypedef).
+[DescribeTransitGatewayPeeringAttachmentsResultResponseTypeDef](./type_defs.md#describetransitgatewaypeeringattachmentsresultresponsetypedef).
 
 ### describe_transit_gateway_route_tables
+
+Describes one or more transit gateway route tables.
 
 Type annotations for
 `boto3.client("ec2").describe_transit_gateway_route_tables` method.
 
 Boto3 documentation:
 [EC2.Client.describe_transit_gateway_route_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateway_route_tables)
+
+Arguments mapping described in
+[DescribeTransitGatewayRouteTablesRequestTypeDef](./type_defs.md#describetransitgatewayroutetablesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5332,15 +6748,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeTransitGatewayRouteTablesResultTypeDef](./type_defs.md#describetransitgatewayroutetablesresulttypedef).
+[DescribeTransitGatewayRouteTablesResultResponseTypeDef](./type_defs.md#describetransitgatewayroutetablesresultresponsetypedef).
 
 ### describe_transit_gateway_vpc_attachments
+
+Describes one or more VPC attachments.
 
 Type annotations for
 `boto3.client("ec2").describe_transit_gateway_vpc_attachments` method.
 
 Boto3 documentation:
 [EC2.Client.describe_transit_gateway_vpc_attachments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateway_vpc_attachments)
+
+Arguments mapping described in
+[DescribeTransitGatewayVpcAttachmentsRequestTypeDef](./type_defs.md#describetransitgatewayvpcattachmentsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5351,14 +6772,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeTransitGatewayVpcAttachmentsResultTypeDef](./type_defs.md#describetransitgatewayvpcattachmentsresulttypedef).
+[DescribeTransitGatewayVpcAttachmentsResultResponseTypeDef](./type_defs.md#describetransitgatewayvpcattachmentsresultresponsetypedef).
 
 ### describe_transit_gateways
+
+Describes one or more transit gateways.
 
 Type annotations for `boto3.client("ec2").describe_transit_gateways` method.
 
 Boto3 documentation:
 [EC2.Client.describe_transit_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_transit_gateways)
+
+Arguments mapping described in
+[DescribeTransitGatewaysRequestTypeDef](./type_defs.md#describetransitgatewaysrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5369,15 +6795,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeTransitGatewaysResultTypeDef](./type_defs.md#describetransitgatewaysresulttypedef).
+[DescribeTransitGatewaysResultResponseTypeDef](./type_defs.md#describetransitgatewaysresultresponsetypedef).
 
 ### describe_trunk_interface_associations
+
+Describes one or more network interface trunk associations.
 
 Type annotations for
 `boto3.client("ec2").describe_trunk_interface_associations` method.
 
 Boto3 documentation:
 [EC2.Client.describe_trunk_interface_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_trunk_interface_associations)
+
+Arguments mapping described in
+[DescribeTrunkInterfaceAssociationsRequestTypeDef](./type_defs.md#describetrunkinterfaceassociationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5388,14 +6819,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeTrunkInterfaceAssociationsResultTypeDef](./type_defs.md#describetrunkinterfaceassociationsresulttypedef).
+[DescribeTrunkInterfaceAssociationsResultResponseTypeDef](./type_defs.md#describetrunkinterfaceassociationsresultresponsetypedef).
 
 ### describe_volume_attribute
+
+Describes the specified attribute of the specified volume.
 
 Type annotations for `boto3.client("ec2").describe_volume_attribute` method.
 
 Boto3 documentation:
 [EC2.Client.describe_volume_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_volume_attribute)
+
+Arguments mapping described in
+[DescribeVolumeAttributeRequestTypeDef](./type_defs.md#describevolumeattributerequesttypedef).
 
 Keyword-only arguments:
 
@@ -5405,15 +6841,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeVolumeAttributeResultTypeDef](./type_defs.md#describevolumeattributeresulttypedef).
+[DescribeVolumeAttributeResultResponseTypeDef](./type_defs.md#describevolumeattributeresultresponsetypedef).
 
 ### describe_volume_status
+
+Describes the status of the specified volumes.
 
 Type annotations for `boto3.client("ec2").describe_volume_status` method.
 
 Boto3 documentation:
 [EC2.Client.describe_volume_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_volume_status)
 
+Arguments mapping described in
+[DescribeVolumeStatusRequestTypeDef](./type_defs.md#describevolumestatusrequesttypedef).
+
 Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -5423,15 +6864,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeVolumeStatusResultTypeDef](./type_defs.md#describevolumestatusresulttypedef).
+[DescribeVolumeStatusResultResponseTypeDef](./type_defs.md#describevolumestatusresultresponsetypedef).
 
 ### describe_volumes
+
+Describes the specified EBS volumes or all of your EBS volumes.
 
 Type annotations for `boto3.client("ec2").describe_volumes` method.
 
 Boto3 documentation:
 [EC2.Client.describe_volumes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_volumes)
 
+Arguments mapping described in
+[DescribeVolumesRequestTypeDef](./type_defs.md#describevolumesrequesttypedef).
+
 Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -5441,9 +6887,12 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeVolumesResultTypeDef](./type_defs.md#describevolumesresulttypedef).
+[DescribeVolumesResultResponseTypeDef](./type_defs.md#describevolumesresultresponsetypedef).
 
 ### describe_volumes_modifications
+
+Describes the most recent volume modification request for the specified EBS
+volumes.
 
 Type annotations for `boto3.client("ec2").describe_volumes_modifications`
 method.
@@ -5451,6 +6900,9 @@ method.
 Boto3 documentation:
 [EC2.Client.describe_volumes_modifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_volumes_modifications)
 
+Arguments mapping described in
+[DescribeVolumesModificationsRequestTypeDef](./type_defs.md#describevolumesmodificationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `DryRun`: `bool`
@@ -5460,14 +6912,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeVolumesModificationsResultTypeDef](./type_defs.md#describevolumesmodificationsresulttypedef).
+[DescribeVolumesModificationsResultResponseTypeDef](./type_defs.md#describevolumesmodificationsresultresponsetypedef).
 
 ### describe_vpc_attribute
+
+Describes the specified attribute of the specified VPC.
 
 Type annotations for `boto3.client("ec2").describe_vpc_attribute` method.
 
 Boto3 documentation:
 [EC2.Client.describe_vpc_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_attribute)
+
+Arguments mapping described in
+[DescribeVpcAttributeRequestTypeDef](./type_defs.md#describevpcattributerequesttypedef).
 
 Keyword-only arguments:
 
@@ -5477,14 +6934,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeVpcAttributeResultTypeDef](./type_defs.md#describevpcattributeresulttypedef).
+[DescribeVpcAttributeResultResponseTypeDef](./type_defs.md#describevpcattributeresultresponsetypedef).
 
 ### describe_vpc_classic_link
+
+Describes the ClassicLink status of one or more VPCs.
 
 Type annotations for `boto3.client("ec2").describe_vpc_classic_link` method.
 
 Boto3 documentation:
 [EC2.Client.describe_vpc_classic_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_classic_link)
+
+Arguments mapping described in
+[DescribeVpcClassicLinkRequestTypeDef](./type_defs.md#describevpcclassiclinkrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5493,15 +6955,20 @@ Keyword-only arguments:
 - `VpcIds`: `List`\[`str`\]
 
 Returns
-[DescribeVpcClassicLinkResultTypeDef](./type_defs.md#describevpcclassiclinkresulttypedef).
+[DescribeVpcClassicLinkResultResponseTypeDef](./type_defs.md#describevpcclassiclinkresultresponsetypedef).
 
 ### describe_vpc_classic_link_dns_support
+
+Describes the ClassicLink DNS support status of one or more VPCs.
 
 Type annotations for
 `boto3.client("ec2").describe_vpc_classic_link_dns_support` method.
 
 Boto3 documentation:
 [EC2.Client.describe_vpc_classic_link_dns_support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_classic_link_dns_support)
+
+Arguments mapping described in
+[DescribeVpcClassicLinkDnsSupportRequestTypeDef](./type_defs.md#describevpcclassiclinkdnssupportrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5510,15 +6977,21 @@ Keyword-only arguments:
 - `VpcIds`: `List`\[`str`\]
 
 Returns
-[DescribeVpcClassicLinkDnsSupportResultTypeDef](./type_defs.md#describevpcclassiclinkdnssupportresulttypedef).
+[DescribeVpcClassicLinkDnsSupportResultResponseTypeDef](./type_defs.md#describevpcclassiclinkdnssupportresultresponsetypedef).
 
 ### describe_vpc_endpoint_connection_notifications
+
+Describes the connection notifications for VPC endpoints and VPC endpoint
+services.
 
 Type annotations for
 `boto3.client("ec2").describe_vpc_endpoint_connection_notifications` method.
 
 Boto3 documentation:
 [EC2.Client.describe_vpc_endpoint_connection_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_endpoint_connection_notifications)
+
+Arguments mapping described in
+[DescribeVpcEndpointConnectionNotificationsRequestTypeDef](./type_defs.md#describevpcendpointconnectionnotificationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5529,15 +7002,21 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeVpcEndpointConnectionNotificationsResultTypeDef](./type_defs.md#describevpcendpointconnectionnotificationsresulttypedef).
+[DescribeVpcEndpointConnectionNotificationsResultResponseTypeDef](./type_defs.md#describevpcendpointconnectionnotificationsresultresponsetypedef).
 
 ### describe_vpc_endpoint_connections
+
+Describes the VPC endpoint connections to your VPC endpoint services, including
+any endpoints that are pending your acceptance.
 
 Type annotations for `boto3.client("ec2").describe_vpc_endpoint_connections`
 method.
 
 Boto3 documentation:
 [EC2.Client.describe_vpc_endpoint_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_endpoint_connections)
+
+Arguments mapping described in
+[DescribeVpcEndpointConnectionsRequestTypeDef](./type_defs.md#describevpcendpointconnectionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5547,15 +7026,21 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeVpcEndpointConnectionsResultTypeDef](./type_defs.md#describevpcendpointconnectionsresulttypedef).
+[DescribeVpcEndpointConnectionsResultResponseTypeDef](./type_defs.md#describevpcendpointconnectionsresultresponsetypedef).
 
 ### describe_vpc_endpoint_service_configurations
+
+Describes the VPC endpoint service configurations in your account (your
+services).
 
 Type annotations for
 `boto3.client("ec2").describe_vpc_endpoint_service_configurations` method.
 
 Boto3 documentation:
 [EC2.Client.describe_vpc_endpoint_service_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_endpoint_service_configurations)
+
+Arguments mapping described in
+[DescribeVpcEndpointServiceConfigurationsRequestTypeDef](./type_defs.md#describevpcendpointserviceconfigurationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5566,15 +7051,21 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeVpcEndpointServiceConfigurationsResultTypeDef](./type_defs.md#describevpcendpointserviceconfigurationsresulttypedef).
+[DescribeVpcEndpointServiceConfigurationsResultResponseTypeDef](./type_defs.md#describevpcendpointserviceconfigurationsresultresponsetypedef).
 
 ### describe_vpc_endpoint_service_permissions
+
+Describes the principals (service consumers) that are permitted to discover
+your VPC endpoint service.
 
 Type annotations for
 `boto3.client("ec2").describe_vpc_endpoint_service_permissions` method.
 
 Boto3 documentation:
 [EC2.Client.describe_vpc_endpoint_service_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_endpoint_service_permissions)
+
+Arguments mapping described in
+[DescribeVpcEndpointServicePermissionsRequestTypeDef](./type_defs.md#describevpcendpointservicepermissionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5585,15 +7076,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeVpcEndpointServicePermissionsResultTypeDef](./type_defs.md#describevpcendpointservicepermissionsresulttypedef).
+[DescribeVpcEndpointServicePermissionsResultResponseTypeDef](./type_defs.md#describevpcendpointservicepermissionsresultresponsetypedef).
 
 ### describe_vpc_endpoint_services
+
+Describes available services to which you can create a VPC endpoint.
 
 Type annotations for `boto3.client("ec2").describe_vpc_endpoint_services`
 method.
 
 Boto3 documentation:
 [EC2.Client.describe_vpc_endpoint_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_endpoint_services)
+
+Arguments mapping described in
+[DescribeVpcEndpointServicesRequestTypeDef](./type_defs.md#describevpcendpointservicesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5604,14 +7100,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeVpcEndpointServicesResultTypeDef](./type_defs.md#describevpcendpointservicesresulttypedef).
+[DescribeVpcEndpointServicesResultResponseTypeDef](./type_defs.md#describevpcendpointservicesresultresponsetypedef).
 
 ### describe_vpc_endpoints
+
+Describes one or more of your VPC endpoints.
 
 Type annotations for `boto3.client("ec2").describe_vpc_endpoints` method.
 
 Boto3 documentation:
 [EC2.Client.describe_vpc_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_endpoints)
+
+Arguments mapping described in
+[DescribeVpcEndpointsRequestTypeDef](./type_defs.md#describevpcendpointsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5622,15 +7123,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeVpcEndpointsResultTypeDef](./type_defs.md#describevpcendpointsresulttypedef).
+[DescribeVpcEndpointsResultResponseTypeDef](./type_defs.md#describevpcendpointsresultresponsetypedef).
 
 ### describe_vpc_peering_connections
+
+Describes one or more of your VPC peering connections.
 
 Type annotations for `boto3.client("ec2").describe_vpc_peering_connections`
 method.
 
 Boto3 documentation:
 [EC2.Client.describe_vpc_peering_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpc_peering_connections)
+
+Arguments mapping described in
+[DescribeVpcPeeringConnectionsRequestTypeDef](./type_defs.md#describevpcpeeringconnectionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5641,14 +7147,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeVpcPeeringConnectionsResultTypeDef](./type_defs.md#describevpcpeeringconnectionsresulttypedef).
+[DescribeVpcPeeringConnectionsResultResponseTypeDef](./type_defs.md#describevpcpeeringconnectionsresultresponsetypedef).
 
 ### describe_vpcs
+
+Describes one or more of your VPCs.
 
 Type annotations for `boto3.client("ec2").describe_vpcs` method.
 
 Boto3 documentation:
 [EC2.Client.describe_vpcs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpcs)
+
+Arguments mapping described in
+[DescribeVpcsRequestTypeDef](./type_defs.md#describevpcsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5658,14 +7169,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns [DescribeVpcsResultTypeDef](./type_defs.md#describevpcsresulttypedef).
+Returns
+[DescribeVpcsResultResponseTypeDef](./type_defs.md#describevpcsresultresponsetypedef).
 
 ### describe_vpn_connections
+
+Describes one or more of your VPN connections.
 
 Type annotations for `boto3.client("ec2").describe_vpn_connections` method.
 
 Boto3 documentation:
 [EC2.Client.describe_vpn_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpn_connections)
+
+Arguments mapping described in
+[DescribeVpnConnectionsRequestTypeDef](./type_defs.md#describevpnconnectionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5674,14 +7191,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeVpnConnectionsResultTypeDef](./type_defs.md#describevpnconnectionsresulttypedef).
+[DescribeVpnConnectionsResultResponseTypeDef](./type_defs.md#describevpnconnectionsresultresponsetypedef).
 
 ### describe_vpn_gateways
+
+Describes one or more of your virtual private gateways.
 
 Type annotations for `boto3.client("ec2").describe_vpn_gateways` method.
 
 Boto3 documentation:
 [EC2.Client.describe_vpn_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_vpn_gateways)
+
+Arguments mapping described in
+[DescribeVpnGatewaysRequestTypeDef](./type_defs.md#describevpngatewaysrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5690,14 +7212,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DescribeVpnGatewaysResultTypeDef](./type_defs.md#describevpngatewaysresulttypedef).
+[DescribeVpnGatewaysResultResponseTypeDef](./type_defs.md#describevpngatewaysresultresponsetypedef).
 
 ### detach_classic_link_vpc
+
+Unlinks (detaches) a linked EC2-Classic instance from a VPC.
 
 Type annotations for `boto3.client("ec2").detach_classic_link_vpc` method.
 
 Boto3 documentation:
 [EC2.Client.detach_classic_link_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.detach_classic_link_vpc)
+
+Arguments mapping described in
+[DetachClassicLinkVpcRequestTypeDef](./type_defs.md#detachclassiclinkvpcrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5706,14 +7233,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DetachClassicLinkVpcResultTypeDef](./type_defs.md#detachclassiclinkvpcresulttypedef).
+[DetachClassicLinkVpcResultResponseTypeDef](./type_defs.md#detachclassiclinkvpcresultresponsetypedef).
 
 ### detach_internet_gateway
+
+Detaches an internet gateway from a VPC, disabling connectivity between the
+internet and the VPC.
 
 Type annotations for `boto3.client("ec2").detach_internet_gateway` method.
 
 Boto3 documentation:
 [EC2.Client.detach_internet_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.detach_internet_gateway)
+
+Arguments mapping described in
+[DetachInternetGatewayRequestTypeDef](./type_defs.md#detachinternetgatewayrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5723,10 +7256,15 @@ Keyword-only arguments:
 
 ### detach_network_interface
 
+Detaches a network interface from an instance.
+
 Type annotations for `boto3.client("ec2").detach_network_interface` method.
 
 Boto3 documentation:
 [EC2.Client.detach_network_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.detach_network_interface)
+
+Arguments mapping described in
+[DetachNetworkInterfaceRequestTypeDef](./type_defs.md#detachnetworkinterfacerequesttypedef).
 
 Keyword-only arguments:
 
@@ -5736,10 +7274,15 @@ Keyword-only arguments:
 
 ### detach_volume
 
+Detaches an EBS volume from an instance.
+
 Type annotations for `boto3.client("ec2").detach_volume` method.
 
 Boto3 documentation:
 [EC2.Client.detach_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.detach_volume)
+
+Arguments mapping described in
+[DetachVolumeRequestTypeDef](./type_defs.md#detachvolumerequesttypedef).
 
 Keyword-only arguments:
 
@@ -5749,14 +7292,20 @@ Keyword-only arguments:
 - `InstanceId`: `str`
 - `DryRun`: `bool`
 
-Returns [VolumeAttachmentTypeDef](./type_defs.md#volumeattachmenttypedef).
+Returns
+[VolumeAttachmentResponseTypeDef](./type_defs.md#volumeattachmentresponsetypedef).
 
 ### detach_vpn_gateway
+
+Detaches a virtual private gateway from a VPC.
 
 Type annotations for `boto3.client("ec2").detach_vpn_gateway` method.
 
 Boto3 documentation:
 [EC2.Client.detach_vpn_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.detach_vpn_gateway)
+
+Arguments mapping described in
+[DetachVpnGatewayRequestTypeDef](./type_defs.md#detachvpngatewayrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5766,26 +7315,37 @@ Keyword-only arguments:
 
 ### disable_ebs_encryption_by_default
 
+Disables EBS encryption by default for your account in the current Region.
+
 Type annotations for `boto3.client("ec2").disable_ebs_encryption_by_default`
 method.
 
 Boto3 documentation:
 [EC2.Client.disable_ebs_encryption_by_default](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_ebs_encryption_by_default)
 
+Arguments mapping described in
+[DisableEbsEncryptionByDefaultRequestTypeDef](./type_defs.md#disableebsencryptionbydefaultrequesttypedef).
+
 Keyword-only arguments:
 
 - `DryRun`: `bool`
 
 Returns
-[DisableEbsEncryptionByDefaultResultTypeDef](./type_defs.md#disableebsencryptionbydefaultresulttypedef).
+[DisableEbsEncryptionByDefaultResultResponseTypeDef](./type_defs.md#disableebsencryptionbydefaultresultresponsetypedef).
 
 ### disable_fast_snapshot_restores
+
+Disables fast snapshot restores for the specified snapshots in the specified
+Availability Zones.
 
 Type annotations for `boto3.client("ec2").disable_fast_snapshot_restores`
 method.
 
 Boto3 documentation:
 [EC2.Client.disable_fast_snapshot_restores](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_fast_snapshot_restores)
+
+Arguments mapping described in
+[DisableFastSnapshotRestoresRequestTypeDef](./type_defs.md#disablefastsnapshotrestoresrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5794,14 +7354,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DisableFastSnapshotRestoresResultTypeDef](./type_defs.md#disablefastsnapshotrestoresresulttypedef).
+[DisableFastSnapshotRestoresResultResponseTypeDef](./type_defs.md#disablefastsnapshotrestoresresultresponsetypedef).
 
 ### disable_image_deprecation
+
+Cancels the deprecation of the specified AMI.
 
 Type annotations for `boto3.client("ec2").disable_image_deprecation` method.
 
 Boto3 documentation:
 [EC2.Client.disable_image_deprecation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_image_deprecation)
+
+Arguments mapping described in
+[DisableImageDeprecationRequestTypeDef](./type_defs.md#disableimagedeprecationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5809,9 +7374,11 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DisableImageDeprecationResultTypeDef](./type_defs.md#disableimagedeprecationresulttypedef).
+[DisableImageDeprecationResultResponseTypeDef](./type_defs.md#disableimagedeprecationresultresponsetypedef).
 
 ### disable_serial_console_access
+
+Disables access to the EC2 serial console of all instances for your account.
 
 Type annotations for `boto3.client("ec2").disable_serial_console_access`
 method.
@@ -5819,20 +7386,29 @@ method.
 Boto3 documentation:
 [EC2.Client.disable_serial_console_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_serial_console_access)
 
+Arguments mapping described in
+[DisableSerialConsoleAccessRequestTypeDef](./type_defs.md#disableserialconsoleaccessrequesttypedef).
+
 Keyword-only arguments:
 
 - `DryRun`: `bool`
 
 Returns
-[DisableSerialConsoleAccessResultTypeDef](./type_defs.md#disableserialconsoleaccessresulttypedef).
+[DisableSerialConsoleAccessResultResponseTypeDef](./type_defs.md#disableserialconsoleaccessresultresponsetypedef).
 
 ### disable_transit_gateway_route_table_propagation
+
+Disables the specified resource attachment from propagating routes to the
+specified propagation route table.
 
 Type annotations for
 `boto3.client("ec2").disable_transit_gateway_route_table_propagation` method.
 
 Boto3 documentation:
 [EC2.Client.disable_transit_gateway_route_table_propagation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_transit_gateway_route_table_propagation)
+
+Arguments mapping described in
+[DisableTransitGatewayRouteTablePropagationRequestTypeDef](./type_defs.md#disabletransitgatewayroutetablepropagationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5841,15 +7417,21 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DisableTransitGatewayRouteTablePropagationResultTypeDef](./type_defs.md#disabletransitgatewayroutetablepropagationresulttypedef).
+[DisableTransitGatewayRouteTablePropagationResultResponseTypeDef](./type_defs.md#disabletransitgatewayroutetablepropagationresultresponsetypedef).
 
 ### disable_vgw_route_propagation
+
+Disables a virtual private gateway (VGW) from propagating routes to a specified
+route table of a VPC.
 
 Type annotations for `boto3.client("ec2").disable_vgw_route_propagation`
 method.
 
 Boto3 documentation:
 [EC2.Client.disable_vgw_route_propagation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_vgw_route_propagation)
+
+Arguments mapping described in
+[DisableVgwRoutePropagationRequestTypeDef](./type_defs.md#disablevgwroutepropagationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5859,10 +7441,15 @@ Keyword-only arguments:
 
 ### disable_vpc_classic_link
 
+Disables ClassicLink for a VPC.
+
 Type annotations for `boto3.client("ec2").disable_vpc_classic_link` method.
 
 Boto3 documentation:
 [EC2.Client.disable_vpc_classic_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_vpc_classic_link)
+
+Arguments mapping described in
+[DisableVpcClassicLinkRequestTypeDef](./type_defs.md#disablevpcclassiclinkrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5870,9 +7457,11 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DisableVpcClassicLinkResultTypeDef](./type_defs.md#disablevpcclassiclinkresulttypedef).
+[DisableVpcClassicLinkResultResponseTypeDef](./type_defs.md#disablevpcclassiclinkresultresponsetypedef).
 
 ### disable_vpc_classic_link_dns_support
+
+Disables ClassicLink DNS support for a VPC.
 
 Type annotations for `boto3.client("ec2").disable_vpc_classic_link_dns_support`
 method.
@@ -5880,19 +7469,28 @@ method.
 Boto3 documentation:
 [EC2.Client.disable_vpc_classic_link_dns_support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disable_vpc_classic_link_dns_support)
 
+Arguments mapping described in
+[DisableVpcClassicLinkDnsSupportRequestTypeDef](./type_defs.md#disablevpcclassiclinkdnssupportrequesttypedef).
+
 Keyword-only arguments:
 
 - `VpcId`: `str`
 
 Returns
-[DisableVpcClassicLinkDnsSupportResultTypeDef](./type_defs.md#disablevpcclassiclinkdnssupportresulttypedef).
+[DisableVpcClassicLinkDnsSupportResultResponseTypeDef](./type_defs.md#disablevpcclassiclinkdnssupportresultresponsetypedef).
 
 ### disassociate_address
+
+Disassociates an Elastic IP address from the instance or network interface it's
+associated with.
 
 Type annotations for `boto3.client("ec2").disassociate_address` method.
 
 Boto3 documentation:
 [EC2.Client.disassociate_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_address)
+
+Arguments mapping described in
+[DisassociateAddressRequestTypeDef](./type_defs.md#disassociateaddressrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5902,11 +7500,16 @@ Keyword-only arguments:
 
 ### disassociate_client_vpn_target_network
 
+Disassociates a target network from the specified Client VPN endpoint.
+
 Type annotations for
 `boto3.client("ec2").disassociate_client_vpn_target_network` method.
 
 Boto3 documentation:
 [EC2.Client.disassociate_client_vpn_target_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_client_vpn_target_network)
+
+Arguments mapping described in
+[DisassociateClientVpnTargetNetworkRequestTypeDef](./type_defs.md#disassociateclientvpntargetnetworkrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5915,15 +7518,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DisassociateClientVpnTargetNetworkResultTypeDef](./type_defs.md#disassociateclientvpntargetnetworkresulttypedef).
+[DisassociateClientVpnTargetNetworkResultResponseTypeDef](./type_defs.md#disassociateclientvpntargetnetworkresultresponsetypedef).
 
 ### disassociate_enclave_certificate_iam_role
+
+Disassociates an IAM role from an AWS Certificate Manager (ACM) certificate.
 
 Type annotations for
 `boto3.client("ec2").disassociate_enclave_certificate_iam_role` method.
 
 Boto3 documentation:
 [EC2.Client.disassociate_enclave_certificate_iam_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_enclave_certificate_iam_role)
+
+Arguments mapping described in
+[DisassociateEnclaveCertificateIamRoleRequestTypeDef](./type_defs.md#disassociateenclavecertificateiamrolerequesttypedef).
 
 Keyword-only arguments:
 
@@ -5932,9 +7540,11 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DisassociateEnclaveCertificateIamRoleResultTypeDef](./type_defs.md#disassociateenclavecertificateiamroleresulttypedef).
+[DisassociateEnclaveCertificateIamRoleResultResponseTypeDef](./type_defs.md#disassociateenclavecertificateiamroleresultresponsetypedef).
 
 ### disassociate_iam_instance_profile
+
+Disassociates an IAM instance profile from a running or stopped instance.
 
 Type annotations for `boto3.client("ec2").disassociate_iam_instance_profile`
 method.
@@ -5942,19 +7552,27 @@ method.
 Boto3 documentation:
 [EC2.Client.disassociate_iam_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_iam_instance_profile)
 
+Arguments mapping described in
+[DisassociateIamInstanceProfileRequestTypeDef](./type_defs.md#disassociateiaminstanceprofilerequesttypedef).
+
 Keyword-only arguments:
 
 - `AssociationId`: `str` *(required)*
 
 Returns
-[DisassociateIamInstanceProfileResultTypeDef](./type_defs.md#disassociateiaminstanceprofileresulttypedef).
+[DisassociateIamInstanceProfileResultResponseTypeDef](./type_defs.md#disassociateiaminstanceprofileresultresponsetypedef).
 
 ### disassociate_route_table
+
+Disassociates a subnet or gateway from a route table.
 
 Type annotations for `boto3.client("ec2").disassociate_route_table` method.
 
 Boto3 documentation:
 [EC2.Client.disassociate_route_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_route_table)
+
+Arguments mapping described in
+[DisassociateRouteTableRequestTypeDef](./type_defs.md#disassociateroutetablerequesttypedef).
 
 Keyword-only arguments:
 
@@ -5963,26 +7581,36 @@ Keyword-only arguments:
 
 ### disassociate_subnet_cidr_block
 
+Disassociates a CIDR block from a subnet.
+
 Type annotations for `boto3.client("ec2").disassociate_subnet_cidr_block`
 method.
 
 Boto3 documentation:
 [EC2.Client.disassociate_subnet_cidr_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_subnet_cidr_block)
 
+Arguments mapping described in
+[DisassociateSubnetCidrBlockRequestTypeDef](./type_defs.md#disassociatesubnetcidrblockrequesttypedef).
+
 Keyword-only arguments:
 
 - `AssociationId`: `str` *(required)*
 
 Returns
-[DisassociateSubnetCidrBlockResultTypeDef](./type_defs.md#disassociatesubnetcidrblockresulttypedef).
+[DisassociateSubnetCidrBlockResultResponseTypeDef](./type_defs.md#disassociatesubnetcidrblockresultresponsetypedef).
 
 ### disassociate_transit_gateway_multicast_domain
+
+Disassociates the specified subnets from the transit gateway multicast domain.
 
 Type annotations for
 `boto3.client("ec2").disassociate_transit_gateway_multicast_domain` method.
 
 Boto3 documentation:
 [EC2.Client.disassociate_transit_gateway_multicast_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_transit_gateway_multicast_domain)
+
+Arguments mapping described in
+[DisassociateTransitGatewayMulticastDomainRequestTypeDef](./type_defs.md#disassociatetransitgatewaymulticastdomainrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5992,15 +7620,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DisassociateTransitGatewayMulticastDomainResultTypeDef](./type_defs.md#disassociatetransitgatewaymulticastdomainresulttypedef).
+[DisassociateTransitGatewayMulticastDomainResultResponseTypeDef](./type_defs.md#disassociatetransitgatewaymulticastdomainresultresponsetypedef).
 
 ### disassociate_transit_gateway_route_table
+
+Disassociates a resource attachment from a transit gateway route table.
 
 Type annotations for
 `boto3.client("ec2").disassociate_transit_gateway_route_table` method.
 
 Boto3 documentation:
 [EC2.Client.disassociate_transit_gateway_route_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_transit_gateway_route_table)
+
+Arguments mapping described in
+[DisassociateTransitGatewayRouteTableRequestTypeDef](./type_defs.md#disassociatetransitgatewayroutetablerequesttypedef).
 
 Keyword-only arguments:
 
@@ -6009,14 +7642,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DisassociateTransitGatewayRouteTableResultTypeDef](./type_defs.md#disassociatetransitgatewayroutetableresulttypedef).
+[DisassociateTransitGatewayRouteTableResultResponseTypeDef](./type_defs.md#disassociatetransitgatewayroutetableresultresponsetypedef).
 
 ### disassociate_trunk_interface
+
+Removes an association between a branch network interface with a trunk network
+interface.
 
 Type annotations for `boto3.client("ec2").disassociate_trunk_interface` method.
 
 Boto3 documentation:
 [EC2.Client.disassociate_trunk_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_trunk_interface)
+
+Arguments mapping described in
+[DisassociateTrunkInterfaceRequestTypeDef](./type_defs.md#disassociatetrunkinterfacerequesttypedef).
 
 Keyword-only arguments:
 
@@ -6025,23 +7664,30 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[DisassociateTrunkInterfaceResultTypeDef](./type_defs.md#disassociatetrunkinterfaceresulttypedef).
+[DisassociateTrunkInterfaceResultResponseTypeDef](./type_defs.md#disassociatetrunkinterfaceresultresponsetypedef).
 
 ### disassociate_vpc_cidr_block
+
+Disassociates a CIDR block from a VPC.
 
 Type annotations for `boto3.client("ec2").disassociate_vpc_cidr_block` method.
 
 Boto3 documentation:
 [EC2.Client.disassociate_vpc_cidr_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_vpc_cidr_block)
 
+Arguments mapping described in
+[DisassociateVpcCidrBlockRequestTypeDef](./type_defs.md#disassociatevpccidrblockrequesttypedef).
+
 Keyword-only arguments:
 
 - `AssociationId`: `str` *(required)*
 
 Returns
-[DisassociateVpcCidrBlockResultTypeDef](./type_defs.md#disassociatevpccidrblockresulttypedef).
+[DisassociateVpcCidrBlockResultResponseTypeDef](./type_defs.md#disassociatevpccidrblockresultresponsetypedef).
 
 ### enable_ebs_encryption_by_default
+
+Enables EBS encryption by default for your account in the current Region.
 
 Type annotations for `boto3.client("ec2").enable_ebs_encryption_by_default`
 method.
@@ -6049,20 +7695,29 @@ method.
 Boto3 documentation:
 [EC2.Client.enable_ebs_encryption_by_default](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_ebs_encryption_by_default)
 
+Arguments mapping described in
+[EnableEbsEncryptionByDefaultRequestTypeDef](./type_defs.md#enableebsencryptionbydefaultrequesttypedef).
+
 Keyword-only arguments:
 
 - `DryRun`: `bool`
 
 Returns
-[EnableEbsEncryptionByDefaultResultTypeDef](./type_defs.md#enableebsencryptionbydefaultresulttypedef).
+[EnableEbsEncryptionByDefaultResultResponseTypeDef](./type_defs.md#enableebsencryptionbydefaultresultresponsetypedef).
 
 ### enable_fast_snapshot_restores
+
+Enables fast snapshot restores for the specified snapshots in the specified
+Availability Zones.
 
 Type annotations for `boto3.client("ec2").enable_fast_snapshot_restores`
 method.
 
 Boto3 documentation:
 [EC2.Client.enable_fast_snapshot_restores](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_fast_snapshot_restores)
+
+Arguments mapping described in
+[EnableFastSnapshotRestoresRequestTypeDef](./type_defs.md#enablefastsnapshotrestoresrequesttypedef).
 
 Keyword-only arguments:
 
@@ -6071,45 +7726,61 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[EnableFastSnapshotRestoresResultTypeDef](./type_defs.md#enablefastsnapshotrestoresresulttypedef).
+[EnableFastSnapshotRestoresResultResponseTypeDef](./type_defs.md#enablefastsnapshotrestoresresultresponsetypedef).
 
 ### enable_image_deprecation
+
+Enables deprecation of the specified AMI at the specified date and time.
 
 Type annotations for `boto3.client("ec2").enable_image_deprecation` method.
 
 Boto3 documentation:
 [EC2.Client.enable_image_deprecation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_image_deprecation)
 
+Arguments mapping described in
+[EnableImageDeprecationRequestTypeDef](./type_defs.md#enableimagedeprecationrequesttypedef).
+
 Keyword-only arguments:
 
 - `ImageId`: `str` *(required)*
-- `DeprecateAt`: `datetime` *(required)*
+- `DeprecateAt`: `Union`\[`datetime`, `str`\] *(required)*
 - `DryRun`: `bool`
 
 Returns
-[EnableImageDeprecationResultTypeDef](./type_defs.md#enableimagedeprecationresulttypedef).
+[EnableImageDeprecationResultResponseTypeDef](./type_defs.md#enableimagedeprecationresultresponsetypedef).
 
 ### enable_serial_console_access
+
+Enables access to the EC2 serial console of all instances for your account.
 
 Type annotations for `boto3.client("ec2").enable_serial_console_access` method.
 
 Boto3 documentation:
 [EC2.Client.enable_serial_console_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_serial_console_access)
 
+Arguments mapping described in
+[EnableSerialConsoleAccessRequestTypeDef](./type_defs.md#enableserialconsoleaccessrequesttypedef).
+
 Keyword-only arguments:
 
 - `DryRun`: `bool`
 
 Returns
-[EnableSerialConsoleAccessResultTypeDef](./type_defs.md#enableserialconsoleaccessresulttypedef).
+[EnableSerialConsoleAccessResultResponseTypeDef](./type_defs.md#enableserialconsoleaccessresultresponsetypedef).
 
 ### enable_transit_gateway_route_table_propagation
+
+Enables the specified attachment to propagate routes to the specified
+propagation route table.
 
 Type annotations for
 `boto3.client("ec2").enable_transit_gateway_route_table_propagation` method.
 
 Boto3 documentation:
 [EC2.Client.enable_transit_gateway_route_table_propagation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_transit_gateway_route_table_propagation)
+
+Arguments mapping described in
+[EnableTransitGatewayRouteTablePropagationRequestTypeDef](./type_defs.md#enabletransitgatewayroutetablepropagationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -6118,14 +7789,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[EnableTransitGatewayRouteTablePropagationResultTypeDef](./type_defs.md#enabletransitgatewayroutetablepropagationresulttypedef).
+[EnableTransitGatewayRouteTablePropagationResultResponseTypeDef](./type_defs.md#enabletransitgatewayroutetablepropagationresultresponsetypedef).
 
 ### enable_vgw_route_propagation
+
+Enables a virtual private gateway (VGW) to propagate routes to the specified
+route table of a VPC.
 
 Type annotations for `boto3.client("ec2").enable_vgw_route_propagation` method.
 
 Boto3 documentation:
 [EC2.Client.enable_vgw_route_propagation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_vgw_route_propagation)
+
+Arguments mapping described in
+[EnableVgwRoutePropagationRequestTypeDef](./type_defs.md#enablevgwroutepropagationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -6135,10 +7812,16 @@ Keyword-only arguments:
 
 ### enable_volume_io
 
+Enables I/O operations for a volume that had I/O operations disabled because
+the data on the volume was potentially inconsistent.
+
 Type annotations for `boto3.client("ec2").enable_volume_io` method.
 
 Boto3 documentation:
 [EC2.Client.enable_volume_io](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_volume_io)
+
+Arguments mapping described in
+[EnableVolumeIORequestTypeDef](./type_defs.md#enablevolumeiorequesttypedef).
 
 Keyword-only arguments:
 
@@ -6147,10 +7830,15 @@ Keyword-only arguments:
 
 ### enable_vpc_classic_link
 
+Enables a VPC for ClassicLink.
+
 Type annotations for `boto3.client("ec2").enable_vpc_classic_link` method.
 
 Boto3 documentation:
 [EC2.Client.enable_vpc_classic_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_vpc_classic_link)
+
+Arguments mapping described in
+[EnableVpcClassicLinkRequestTypeDef](./type_defs.md#enablevpcclassiclinkrequesttypedef).
 
 Keyword-only arguments:
 
@@ -6158,9 +7846,11 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[EnableVpcClassicLinkResultTypeDef](./type_defs.md#enablevpcclassiclinkresulttypedef).
+[EnableVpcClassicLinkResultResponseTypeDef](./type_defs.md#enablevpcclassiclinkresultresponsetypedef).
 
 ### enable_vpc_classic_link_dns_support
+
+Enables a VPC to support DNS hostname resolution for ClassicLink.
 
 Type annotations for `boto3.client("ec2").enable_vpc_classic_link_dns_support`
 method.
@@ -6168,14 +7858,20 @@ method.
 Boto3 documentation:
 [EC2.Client.enable_vpc_classic_link_dns_support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.enable_vpc_classic_link_dns_support)
 
+Arguments mapping described in
+[EnableVpcClassicLinkDnsSupportRequestTypeDef](./type_defs.md#enablevpcclassiclinkdnssupportrequesttypedef).
+
 Keyword-only arguments:
 
 - `VpcId`: `str`
 
 Returns
-[EnableVpcClassicLinkDnsSupportResultTypeDef](./type_defs.md#enablevpcclassiclinkdnssupportresulttypedef).
+[EnableVpcClassicLinkDnsSupportResultResponseTypeDef](./type_defs.md#enablevpcclassiclinkdnssupportresultresponsetypedef).
 
 ### export_client_vpn_client_certificate_revocation_list
+
+Downloads the client certificate revocation list for the specified Client VPN
+endpoint.
 
 Type annotations for
 `boto3.client("ec2").export_client_vpn_client_certificate_revocation_list`
@@ -6184,15 +7880,21 @@ method.
 Boto3 documentation:
 [EC2.Client.export_client_vpn_client_certificate_revocation_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.export_client_vpn_client_certificate_revocation_list)
 
+Arguments mapping described in
+[ExportClientVpnClientCertificateRevocationListRequestTypeDef](./type_defs.md#exportclientvpnclientcertificaterevocationlistrequesttypedef).
+
 Keyword-only arguments:
 
 - `ClientVpnEndpointId`: `str` *(required)*
 - `DryRun`: `bool`
 
 Returns
-[ExportClientVpnClientCertificateRevocationListResultTypeDef](./type_defs.md#exportclientvpnclientcertificaterevocationlistresulttypedef).
+[ExportClientVpnClientCertificateRevocationListResultResponseTypeDef](./type_defs.md#exportclientvpnclientcertificaterevocationlistresultresponsetypedef).
 
 ### export_client_vpn_client_configuration
+
+Downloads the contents of the Client VPN endpoint configuration file for the
+specified Client VPN endpoint.
 
 Type annotations for
 `boto3.client("ec2").export_client_vpn_client_configuration` method.
@@ -6200,20 +7902,28 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.export_client_vpn_client_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.export_client_vpn_client_configuration)
 
+Arguments mapping described in
+[ExportClientVpnClientConfigurationRequestTypeDef](./type_defs.md#exportclientvpnclientconfigurationrequesttypedef).
+
 Keyword-only arguments:
 
 - `ClientVpnEndpointId`: `str` *(required)*
 - `DryRun`: `bool`
 
 Returns
-[ExportClientVpnClientConfigurationResultTypeDef](./type_defs.md#exportclientvpnclientconfigurationresulttypedef).
+[ExportClientVpnClientConfigurationResultResponseTypeDef](./type_defs.md#exportclientvpnclientconfigurationresultresponsetypedef).
 
 ### export_image
+
+Exports an Amazon Machine Image (AMI) to a VM file.
 
 Type annotations for `boto3.client("ec2").export_image` method.
 
 Boto3 documentation:
 [EC2.Client.export_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.export_image)
+
+Arguments mapping described in
+[ExportImageRequestTypeDef](./type_defs.md#exportimagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -6230,15 +7940,22 @@ Keyword-only arguments:
 - `TagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
-Returns [ExportImageResultTypeDef](./type_defs.md#exportimageresulttypedef).
+Returns
+[ExportImageResultResponseTypeDef](./type_defs.md#exportimageresultresponsetypedef).
 
 ### export_transit_gateway_routes
+
+Exports routes from the specified transit gateway route table to the specified
+S3 bucket.
 
 Type annotations for `boto3.client("ec2").export_transit_gateway_routes`
 method.
 
 Boto3 documentation:
 [EC2.Client.export_transit_gateway_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.export_transit_gateway_routes)
+
+Arguments mapping described in
+[ExportTransitGatewayRoutesRequestTypeDef](./type_defs.md#exporttransitgatewayroutesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -6248,9 +7965,11 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[ExportTransitGatewayRoutesResultTypeDef](./type_defs.md#exporttransitgatewayroutesresulttypedef).
+[ExportTransitGatewayRoutesResultResponseTypeDef](./type_defs.md#exporttransitgatewayroutesresultresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("ec2").generate_presigned_url` method.
 
@@ -6268,11 +7987,17 @@ Returns `str`.
 
 ### get_associated_enclave_certificate_iam_roles
 
+Returns the IAM roles that are associated with the specified AWS Certificate
+Manager (ACM) certificate.
+
 Type annotations for
 `boto3.client("ec2").get_associated_enclave_certificate_iam_roles` method.
 
 Boto3 documentation:
 [EC2.Client.get_associated_enclave_certificate_iam_roles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_associated_enclave_certificate_iam_roles)
+
+Arguments mapping described in
+[GetAssociatedEnclaveCertificateIamRolesRequestTypeDef](./type_defs.md#getassociatedenclavecertificateiamrolesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -6280,15 +8005,21 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[GetAssociatedEnclaveCertificateIamRolesResultTypeDef](./type_defs.md#getassociatedenclavecertificateiamrolesresulttypedef).
+[GetAssociatedEnclaveCertificateIamRolesResultResponseTypeDef](./type_defs.md#getassociatedenclavecertificateiamrolesresultresponsetypedef).
 
 ### get_associated_ipv6_pool_cidrs
+
+Gets information about the IPv6 CIDR block associations for a specified IPv6
+address pool.
 
 Type annotations for `boto3.client("ec2").get_associated_ipv6_pool_cidrs`
 method.
 
 Boto3 documentation:
 [EC2.Client.get_associated_ipv6_pool_cidrs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_associated_ipv6_pool_cidrs)
+
+Arguments mapping described in
+[GetAssociatedIpv6PoolCidrsRequestTypeDef](./type_defs.md#getassociatedipv6poolcidrsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -6298,15 +8029,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[GetAssociatedIpv6PoolCidrsResultTypeDef](./type_defs.md#getassociatedipv6poolcidrsresulttypedef).
+[GetAssociatedIpv6PoolCidrsResultResponseTypeDef](./type_defs.md#getassociatedipv6poolcidrsresultresponsetypedef).
 
 ### get_capacity_reservation_usage
+
+Gets usage information about a Capacity Reservation.
 
 Type annotations for `boto3.client("ec2").get_capacity_reservation_usage`
 method.
 
 Boto3 documentation:
 [EC2.Client.get_capacity_reservation_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_capacity_reservation_usage)
+
+Arguments mapping described in
+[GetCapacityReservationUsageRequestTypeDef](./type_defs.md#getcapacityreservationusagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -6316,14 +8052,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[GetCapacityReservationUsageResultTypeDef](./type_defs.md#getcapacityreservationusageresulttypedef).
+[GetCapacityReservationUsageResultResponseTypeDef](./type_defs.md#getcapacityreservationusageresultresponsetypedef).
 
 ### get_coip_pool_usage
+
+Describes the allocations from the specified customer-owned address pool.
 
 Type annotations for `boto3.client("ec2").get_coip_pool_usage` method.
 
 Boto3 documentation:
 [EC2.Client.get_coip_pool_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_coip_pool_usage)
+
+Arguments mapping described in
+[GetCoipPoolUsageRequestTypeDef](./type_defs.md#getcoippoolusagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -6334,14 +8075,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[GetCoipPoolUsageResultTypeDef](./type_defs.md#getcoippoolusageresulttypedef).
+[GetCoipPoolUsageResultResponseTypeDef](./type_defs.md#getcoippoolusageresultresponsetypedef).
 
 ### get_console_output
+
+Gets the console output for the specified instance.
 
 Type annotations for `boto3.client("ec2").get_console_output` method.
 
 Boto3 documentation:
 [EC2.Client.get_console_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_console_output)
+
+Arguments mapping described in
+[GetConsoleOutputRequestTypeDef](./type_defs.md#getconsoleoutputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -6350,14 +8096,20 @@ Keyword-only arguments:
 - `Latest`: `bool`
 
 Returns
-[GetConsoleOutputResultTypeDef](./type_defs.md#getconsoleoutputresulttypedef).
+[GetConsoleOutputResultResponseTypeDef](./type_defs.md#getconsoleoutputresultresponsetypedef).
 
 ### get_console_screenshot
+
+Retrieve a JPG-format screenshot of a running instance to help with
+troubleshooting.
 
 Type annotations for `boto3.client("ec2").get_console_screenshot` method.
 
 Boto3 documentation:
 [EC2.Client.get_console_screenshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_console_screenshot)
+
+Arguments mapping described in
+[GetConsoleScreenshotRequestTypeDef](./type_defs.md#getconsolescreenshotrequesttypedef).
 
 Keyword-only arguments:
 
@@ -6366,15 +8118,21 @@ Keyword-only arguments:
 - `WakeUp`: `bool`
 
 Returns
-[GetConsoleScreenshotResultTypeDef](./type_defs.md#getconsolescreenshotresulttypedef).
+[GetConsoleScreenshotResultResponseTypeDef](./type_defs.md#getconsolescreenshotresultresponsetypedef).
 
 ### get_default_credit_specification
+
+Describes the default credit option for CPU usage of a burstable performance
+instance family.
 
 Type annotations for `boto3.client("ec2").get_default_credit_specification`
 method.
 
 Boto3 documentation:
 [EC2.Client.get_default_credit_specification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_default_credit_specification)
+
+Arguments mapping described in
+[GetDefaultCreditSpecificationRequestTypeDef](./type_defs.md#getdefaultcreditspecificationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -6384,23 +8142,32 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[GetDefaultCreditSpecificationResultTypeDef](./type_defs.md#getdefaultcreditspecificationresulttypedef).
+[GetDefaultCreditSpecificationResultResponseTypeDef](./type_defs.md#getdefaultcreditspecificationresultresponsetypedef).
 
 ### get_ebs_default_kms_key_id
+
+Describes the default customer master key (CMK) for EBS encryption by default
+for your account in this Region.
 
 Type annotations for `boto3.client("ec2").get_ebs_default_kms_key_id` method.
 
 Boto3 documentation:
 [EC2.Client.get_ebs_default_kms_key_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_ebs_default_kms_key_id)
 
+Arguments mapping described in
+[GetEbsDefaultKmsKeyIdRequestTypeDef](./type_defs.md#getebsdefaultkmskeyidrequesttypedef).
+
 Keyword-only arguments:
 
 - `DryRun`: `bool`
 
 Returns
-[GetEbsDefaultKmsKeyIdResultTypeDef](./type_defs.md#getebsdefaultkmskeyidresulttypedef).
+[GetEbsDefaultKmsKeyIdResultResponseTypeDef](./type_defs.md#getebsdefaultkmskeyidresultresponsetypedef).
 
 ### get_ebs_encryption_by_default
+
+Describes whether EBS encryption by default is enabled for your account in the
+current Region.
 
 Type annotations for `boto3.client("ec2").get_ebs_encryption_by_default`
 method.
@@ -6408,20 +8175,29 @@ method.
 Boto3 documentation:
 [EC2.Client.get_ebs_encryption_by_default](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_ebs_encryption_by_default)
 
+Arguments mapping described in
+[GetEbsEncryptionByDefaultRequestTypeDef](./type_defs.md#getebsencryptionbydefaultrequesttypedef).
+
 Keyword-only arguments:
 
 - `DryRun`: `bool`
 
 Returns
-[GetEbsEncryptionByDefaultResultTypeDef](./type_defs.md#getebsencryptionbydefaultresulttypedef).
+[GetEbsEncryptionByDefaultResultResponseTypeDef](./type_defs.md#getebsencryptionbydefaultresultresponsetypedef).
 
 ### get_flow_logs_integration_template
+
+Generates a CloudFormation template that streamlines and automates the
+integration of VPC flow logs with Amazon Athena.
 
 Type annotations for `boto3.client("ec2").get_flow_logs_integration_template`
 method.
 
 Boto3 documentation:
 [EC2.Client.get_flow_logs_integration_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_flow_logs_integration_template)
+
+Arguments mapping described in
+[GetFlowLogsIntegrationTemplateRequestTypeDef](./type_defs.md#getflowlogsintegrationtemplaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -6433,15 +8209,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[GetFlowLogsIntegrationTemplateResultTypeDef](./type_defs.md#getflowlogsintegrationtemplateresulttypedef).
+[GetFlowLogsIntegrationTemplateResultResponseTypeDef](./type_defs.md#getflowlogsintegrationtemplateresultresponsetypedef).
 
 ### get_groups_for_capacity_reservation
+
+Lists the resource groups to which a Capacity Reservation has been added.
 
 Type annotations for `boto3.client("ec2").get_groups_for_capacity_reservation`
 method.
 
 Boto3 documentation:
 [EC2.Client.get_groups_for_capacity_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_groups_for_capacity_reservation)
+
+Arguments mapping described in
+[GetGroupsForCapacityReservationRequestTypeDef](./type_defs.md#getgroupsforcapacityreservationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -6451,9 +8232,12 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[GetGroupsForCapacityReservationResultTypeDef](./type_defs.md#getgroupsforcapacityreservationresulttypedef).
+[GetGroupsForCapacityReservationResultResponseTypeDef](./type_defs.md#getgroupsforcapacityreservationresultresponsetypedef).
 
 ### get_host_reservation_purchase_preview
+
+Preview a reservation purchase with configurations that match those of your
+Dedicated Host.
 
 Type annotations for
 `boto3.client("ec2").get_host_reservation_purchase_preview` method.
@@ -6461,20 +8245,28 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.get_host_reservation_purchase_preview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_host_reservation_purchase_preview)
 
+Arguments mapping described in
+[GetHostReservationPurchasePreviewRequestTypeDef](./type_defs.md#gethostreservationpurchasepreviewrequesttypedef).
+
 Keyword-only arguments:
 
 - `HostIdSet`: `List`\[`str`\] *(required)*
 - `OfferingId`: `str` *(required)*
 
 Returns
-[GetHostReservationPurchasePreviewResultTypeDef](./type_defs.md#gethostreservationpurchasepreviewresulttypedef).
+[GetHostReservationPurchasePreviewResultResponseTypeDef](./type_defs.md#gethostreservationpurchasepreviewresultresponsetypedef).
 
 ### get_launch_template_data
+
+Retrieves the configuration data of the specified instance.
 
 Type annotations for `boto3.client("ec2").get_launch_template_data` method.
 
 Boto3 documentation:
 [EC2.Client.get_launch_template_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_launch_template_data)
+
+Arguments mapping described in
+[GetLaunchTemplateDataRequestTypeDef](./type_defs.md#getlaunchtemplatedatarequesttypedef).
 
 Keyword-only arguments:
 
@@ -6482,15 +8274,21 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[GetLaunchTemplateDataResultTypeDef](./type_defs.md#getlaunchtemplatedataresulttypedef).
+[GetLaunchTemplateDataResultResponseTypeDef](./type_defs.md#getlaunchtemplatedataresultresponsetypedef).
 
 ### get_managed_prefix_list_associations
+
+Gets information about the resources that are associated with the specified
+managed prefix list.
 
 Type annotations for `boto3.client("ec2").get_managed_prefix_list_associations`
 method.
 
 Boto3 documentation:
 [EC2.Client.get_managed_prefix_list_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_managed_prefix_list_associations)
+
+Arguments mapping described in
+[GetManagedPrefixListAssociationsRequestTypeDef](./type_defs.md#getmanagedprefixlistassociationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -6500,15 +8298,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetManagedPrefixListAssociationsResultTypeDef](./type_defs.md#getmanagedprefixlistassociationsresulttypedef).
+[GetManagedPrefixListAssociationsResultResponseTypeDef](./type_defs.md#getmanagedprefixlistassociationsresultresponsetypedef).
 
 ### get_managed_prefix_list_entries
+
+Gets information about the entries for a specified managed prefix list.
 
 Type annotations for `boto3.client("ec2").get_managed_prefix_list_entries`
 method.
 
 Boto3 documentation:
 [EC2.Client.get_managed_prefix_list_entries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_managed_prefix_list_entries)
+
+Arguments mapping described in
+[GetManagedPrefixListEntriesRequestTypeDef](./type_defs.md#getmanagedprefixlistentriesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -6519,14 +8322,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetManagedPrefixListEntriesResultTypeDef](./type_defs.md#getmanagedprefixlistentriesresulttypedef).
+[GetManagedPrefixListEntriesResultResponseTypeDef](./type_defs.md#getmanagedprefixlistentriesresultresponsetypedef).
 
 ### get_password_data
+
+Retrieves the encrypted administrator password for a running Windows instance.
 
 Type annotations for `boto3.client("ec2").get_password_data` method.
 
 Boto3 documentation:
 [EC2.Client.get_password_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_password_data)
+
+Arguments mapping described in
+[GetPasswordDataRequestTypeDef](./type_defs.md#getpassworddatarequesttypedef).
 
 Keyword-only arguments:
 
@@ -6534,15 +8342,21 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[GetPasswordDataResultTypeDef](./type_defs.md#getpassworddataresulttypedef).
+[GetPasswordDataResultResponseTypeDef](./type_defs.md#getpassworddataresultresponsetypedef).
 
 ### get_reserved_instances_exchange_quote
+
+Returns a quote and exchange information for exchanging one or more specified
+Convertible Reserved Instances for a new Convertible Reserved Instance.
 
 Type annotations for
 `boto3.client("ec2").get_reserved_instances_exchange_quote` method.
 
 Boto3 documentation:
 [EC2.Client.get_reserved_instances_exchange_quote](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_reserved_instances_exchange_quote)
+
+Arguments mapping described in
+[GetReservedInstancesExchangeQuoteRequestTypeDef](./type_defs.md#getreservedinstancesexchangequoterequesttypedef).
 
 Keyword-only arguments:
 
@@ -6552,9 +8366,12 @@ Keyword-only arguments:
   `List`\[[TargetConfigurationRequestTypeDef](./type_defs.md#targetconfigurationrequesttypedef)\]
 
 Returns
-[GetReservedInstancesExchangeQuoteResultTypeDef](./type_defs.md#getreservedinstancesexchangequoteresulttypedef).
+[GetReservedInstancesExchangeQuoteResultResponseTypeDef](./type_defs.md#getreservedinstancesexchangequoteresultresponsetypedef).
 
 ### get_serial_console_access_status
+
+Retrieves the access status of your account to the EC2 serial console of all
+instances.
 
 Type annotations for `boto3.client("ec2").get_serial_console_access_status`
 method.
@@ -6562,20 +8379,29 @@ method.
 Boto3 documentation:
 [EC2.Client.get_serial_console_access_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_serial_console_access_status)
 
+Arguments mapping described in
+[GetSerialConsoleAccessStatusRequestTypeDef](./type_defs.md#getserialconsoleaccessstatusrequesttypedef).
+
 Keyword-only arguments:
 
 - `DryRun`: `bool`
 
 Returns
-[GetSerialConsoleAccessStatusResultTypeDef](./type_defs.md#getserialconsoleaccessstatusresulttypedef).
+[GetSerialConsoleAccessStatusResultResponseTypeDef](./type_defs.md#getserialconsoleaccessstatusresultresponsetypedef).
 
 ### get_transit_gateway_attachment_propagations
+
+Lists the route tables to which the specified resource attachment propagates
+routes.
 
 Type annotations for
 `boto3.client("ec2").get_transit_gateway_attachment_propagations` method.
 
 Boto3 documentation:
 [EC2.Client.get_transit_gateway_attachment_propagations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_transit_gateway_attachment_propagations)
+
+Arguments mapping described in
+[GetTransitGatewayAttachmentPropagationsRequestTypeDef](./type_defs.md#gettransitgatewayattachmentpropagationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -6586,15 +8412,21 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[GetTransitGatewayAttachmentPropagationsResultTypeDef](./type_defs.md#gettransitgatewayattachmentpropagationsresulttypedef).
+[GetTransitGatewayAttachmentPropagationsResultResponseTypeDef](./type_defs.md#gettransitgatewayattachmentpropagationsresultresponsetypedef).
 
 ### get_transit_gateway_multicast_domain_associations
+
+Gets information about the associations for the transit gateway multicast
+domain.
 
 Type annotations for
 `boto3.client("ec2").get_transit_gateway_multicast_domain_associations` method.
 
 Boto3 documentation:
 [EC2.Client.get_transit_gateway_multicast_domain_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_transit_gateway_multicast_domain_associations)
+
+Arguments mapping described in
+[GetTransitGatewayMulticastDomainAssociationsRequestTypeDef](./type_defs.md#gettransitgatewaymulticastdomainassociationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -6605,9 +8437,12 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[GetTransitGatewayMulticastDomainAssociationsResultTypeDef](./type_defs.md#gettransitgatewaymulticastdomainassociationsresulttypedef).
+[GetTransitGatewayMulticastDomainAssociationsResultResponseTypeDef](./type_defs.md#gettransitgatewaymulticastdomainassociationsresultresponsetypedef).
 
 ### get_transit_gateway_prefix_list_references
+
+Gets information about the prefix list references in a specified transit
+gateway route table.
 
 Type annotations for
 `boto3.client("ec2").get_transit_gateway_prefix_list_references` method.
@@ -6615,6 +8450,9 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.get_transit_gateway_prefix_list_references](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_transit_gateway_prefix_list_references)
 
+Arguments mapping described in
+[GetTransitGatewayPrefixListReferencesRequestTypeDef](./type_defs.md#gettransitgatewayprefixlistreferencesrequesttypedef).
+
 Keyword-only arguments:
 
 - `TransitGatewayRouteTableId`: `str` *(required)*
@@ -6624,9 +8462,12 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[GetTransitGatewayPrefixListReferencesResultTypeDef](./type_defs.md#gettransitgatewayprefixlistreferencesresulttypedef).
+[GetTransitGatewayPrefixListReferencesResultResponseTypeDef](./type_defs.md#gettransitgatewayprefixlistreferencesresultresponsetypedef).
 
 ### get_transit_gateway_route_table_associations
+
+Gets information about the associations for the specified transit gateway route
+table.
 
 Type annotations for
 `boto3.client("ec2").get_transit_gateway_route_table_associations` method.
@@ -6634,6 +8475,9 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.get_transit_gateway_route_table_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_transit_gateway_route_table_associations)
 
+Arguments mapping described in
+[GetTransitGatewayRouteTableAssociationsRequestTypeDef](./type_defs.md#gettransitgatewayroutetableassociationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `TransitGatewayRouteTableId`: `str` *(required)*
@@ -6643,9 +8487,12 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[GetTransitGatewayRouteTableAssociationsResultTypeDef](./type_defs.md#gettransitgatewayroutetableassociationsresulttypedef).
+[GetTransitGatewayRouteTableAssociationsResultResponseTypeDef](./type_defs.md#gettransitgatewayroutetableassociationsresultresponsetypedef).
 
 ### get_transit_gateway_route_table_propagations
+
+Gets information about the route table propagations for the specified transit
+gateway route table.
 
 Type annotations for
 `boto3.client("ec2").get_transit_gateway_route_table_propagations` method.
@@ -6653,6 +8500,9 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.get_transit_gateway_route_table_propagations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_transit_gateway_route_table_propagations)
 
+Arguments mapping described in
+[GetTransitGatewayRouteTablePropagationsRequestTypeDef](./type_defs.md#gettransitgatewayroutetablepropagationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `TransitGatewayRouteTableId`: `str` *(required)*
@@ -6662,9 +8512,12 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[GetTransitGatewayRouteTablePropagationsResultTypeDef](./type_defs.md#gettransitgatewayroutetablepropagationsresulttypedef).
+[GetTransitGatewayRouteTablePropagationsResultResponseTypeDef](./type_defs.md#gettransitgatewayroutetablepropagationsresultresponsetypedef).
 
 ### import_client_vpn_client_certificate_revocation_list
+
+Uploads a client certificate revocation list to the specified Client VPN
+endpoint.
 
 Type annotations for
 `boto3.client("ec2").import_client_vpn_client_certificate_revocation_list`
@@ -6673,6 +8526,9 @@ method.
 Boto3 documentation:
 [EC2.Client.import_client_vpn_client_certificate_revocation_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.import_client_vpn_client_certificate_revocation_list)
 
+Arguments mapping described in
+[ImportClientVpnClientCertificateRevocationListRequestTypeDef](./type_defs.md#importclientvpnclientcertificaterevocationlistrequesttypedef).
+
 Keyword-only arguments:
 
 - `ClientVpnEndpointId`: `str` *(required)*
@@ -6680,14 +8536,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[ImportClientVpnClientCertificateRevocationListResultTypeDef](./type_defs.md#importclientvpnclientcertificaterevocationlistresulttypedef).
+[ImportClientVpnClientCertificateRevocationListResultResponseTypeDef](./type_defs.md#importclientvpnclientcertificaterevocationlistresultresponsetypedef).
 
 ### import_image
+
+Import single or multi-volume disk images or EBS snapshots into an Amazon
+Machine Image (AMI).
 
 Type annotations for `boto3.client("ec2").import_image` method.
 
 Boto3 documentation:
 [EC2.Client.import_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.import_image)
+
+Arguments mapping described in
+[ImportImageRequestTypeDef](./type_defs.md#importimagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -6709,14 +8571,20 @@ Keyword-only arguments:
 - `TagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
-Returns [ImportImageResultTypeDef](./type_defs.md#importimageresulttypedef).
+Returns
+[ImportImageResultResponseTypeDef](./type_defs.md#importimageresultresponsetypedef).
 
 ### import_instance
+
+Creates an import instance task using metadata from the specified disk image.
 
 Type annotations for `boto3.client("ec2").import_instance` method.
 
 Boto3 documentation:
 [EC2.Client.import_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.import_instance)
+
+Arguments mapping described in
+[ImportInstanceRequestTypeDef](./type_defs.md#importinstancerequesttypedef).
 
 Keyword-only arguments:
 
@@ -6729,14 +8597,20 @@ Keyword-only arguments:
   [ImportInstanceLaunchSpecificationTypeDef](./type_defs.md#importinstancelaunchspecificationtypedef)
 
 Returns
-[ImportInstanceResultTypeDef](./type_defs.md#importinstanceresulttypedef).
+[ImportInstanceResultResponseTypeDef](./type_defs.md#importinstanceresultresponsetypedef).
 
 ### import_key_pair
+
+Imports the public key from an RSA key pair that you created with a third-party
+tool.
 
 Type annotations for `boto3.client("ec2").import_key_pair` method.
 
 Boto3 documentation:
 [EC2.Client.import_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.import_key_pair)
+
+Arguments mapping described in
+[ImportKeyPairRequestTypeDef](./type_defs.md#importkeypairrequesttypedef).
 
 Keyword-only arguments:
 
@@ -6748,14 +8622,19 @@ Keyword-only arguments:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
-[ImportKeyPairResultTypeDef](./type_defs.md#importkeypairresulttypedef).
+[ImportKeyPairResultResponseTypeDef](./type_defs.md#importkeypairresultresponsetypedef).
 
 ### import_snapshot
+
+Imports a disk into an EBS snapshot.
 
 Type annotations for `boto3.client("ec2").import_snapshot` method.
 
 Boto3 documentation:
 [EC2.Client.import_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.import_snapshot)
+
+Arguments mapping described in
+[ImportSnapshotRequestTypeDef](./type_defs.md#importsnapshotrequesttypedef).
 
 Keyword-only arguments:
 
@@ -6772,14 +8651,19 @@ Keyword-only arguments:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
-[ImportSnapshotResultTypeDef](./type_defs.md#importsnapshotresulttypedef).
+[ImportSnapshotResultResponseTypeDef](./type_defs.md#importsnapshotresultresponsetypedef).
 
 ### import_volume
+
+Creates an import volume task using metadata from the specified disk image.
 
 Type annotations for `boto3.client("ec2").import_volume` method.
 
 Boto3 documentation:
 [EC2.Client.import_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.import_volume)
+
+Arguments mapping described in
+[ImportVolumeRequestTypeDef](./type_defs.md#importvolumerequesttypedef).
 
 Keyword-only arguments:
 
@@ -6791,14 +8675,20 @@ Keyword-only arguments:
 - `Description`: `str`
 - `DryRun`: `bool`
 
-Returns [ImportVolumeResultTypeDef](./type_defs.md#importvolumeresulttypedef).
+Returns
+[ImportVolumeResultResponseTypeDef](./type_defs.md#importvolumeresultresponsetypedef).
 
 ### modify_address_attribute
+
+Modifies an attribute of the specified Elastic IP address.
 
 Type annotations for `boto3.client("ec2").modify_address_attribute` method.
 
 Boto3 documentation:
 [EC2.Client.modify_address_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_address_attribute)
+
+Arguments mapping described in
+[ModifyAddressAttributeRequestTypeDef](./type_defs.md#modifyaddressattributerequesttypedef).
 
 Keyword-only arguments:
 
@@ -6807,15 +8697,21 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[ModifyAddressAttributeResultTypeDef](./type_defs.md#modifyaddressattributeresulttypedef).
+[ModifyAddressAttributeResultResponseTypeDef](./type_defs.md#modifyaddressattributeresultresponsetypedef).
 
 ### modify_availability_zone_group
+
+Changes the opt-in status of the Local Zone and Wavelength Zone group for your
+account.
 
 Type annotations for `boto3.client("ec2").modify_availability_zone_group`
 method.
 
 Boto3 documentation:
 [EC2.Client.modify_availability_zone_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_availability_zone_group)
+
+Arguments mapping described in
+[ModifyAvailabilityZoneGroupRequestTypeDef](./type_defs.md#modifyavailabilityzonegrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -6826,33 +8722,44 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[ModifyAvailabilityZoneGroupResultTypeDef](./type_defs.md#modifyavailabilityzonegroupresulttypedef).
+[ModifyAvailabilityZoneGroupResultResponseTypeDef](./type_defs.md#modifyavailabilityzonegroupresultresponsetypedef).
 
 ### modify_capacity_reservation
+
+Modifies a Capacity Reservation's capacity and the conditions under which it is
+to be released.
 
 Type annotations for `boto3.client("ec2").modify_capacity_reservation` method.
 
 Boto3 documentation:
 [EC2.Client.modify_capacity_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_capacity_reservation)
 
+Arguments mapping described in
+[ModifyCapacityReservationRequestTypeDef](./type_defs.md#modifycapacityreservationrequesttypedef).
+
 Keyword-only arguments:
 
 - `CapacityReservationId`: `str` *(required)*
 - `InstanceCount`: `int`
-- `EndDate`: `datetime`
+- `EndDate`: `Union`\[`datetime`, `str`\]
 - `EndDateType`: [EndDateTypeType](./literals.md#enddatetypetype)
 - `Accept`: `bool`
 - `DryRun`: `bool`
 
 Returns
-[ModifyCapacityReservationResultTypeDef](./type_defs.md#modifycapacityreservationresulttypedef).
+[ModifyCapacityReservationResultResponseTypeDef](./type_defs.md#modifycapacityreservationresultresponsetypedef).
 
 ### modify_client_vpn_endpoint
+
+Modifies the specified Client VPN endpoint.
 
 Type annotations for `boto3.client("ec2").modify_client_vpn_endpoint` method.
 
 Boto3 documentation:
 [EC2.Client.modify_client_vpn_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_client_vpn_endpoint)
+
+Arguments mapping described in
+[ModifyClientVpnEndpointRequestTypeDef](./type_defs.md#modifyclientvpnendpointrequesttypedef).
 
 Keyword-only arguments:
 
@@ -6874,15 +8781,21 @@ Keyword-only arguments:
   [ClientConnectOptionsTypeDef](./type_defs.md#clientconnectoptionstypedef)
 
 Returns
-[ModifyClientVpnEndpointResultTypeDef](./type_defs.md#modifyclientvpnendpointresulttypedef).
+[ModifyClientVpnEndpointResultResponseTypeDef](./type_defs.md#modifyclientvpnendpointresultresponsetypedef).
 
 ### modify_default_credit_specification
+
+Modifies the default credit option for CPU usage of burstable performance
+instances.
 
 Type annotations for `boto3.client("ec2").modify_default_credit_specification`
 method.
 
 Boto3 documentation:
 [EC2.Client.modify_default_credit_specification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_default_credit_specification)
+
+Arguments mapping described in
+[ModifyDefaultCreditSpecificationRequestTypeDef](./type_defs.md#modifydefaultcreditspecificationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -6893,9 +8806,12 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[ModifyDefaultCreditSpecificationResultTypeDef](./type_defs.md#modifydefaultcreditspecificationresulttypedef).
+[ModifyDefaultCreditSpecificationResultResponseTypeDef](./type_defs.md#modifydefaultcreditspecificationresultresponsetypedef).
 
 ### modify_ebs_default_kms_key_id
+
+Changes the default customer master key (CMK) for EBS encryption by default for
+your account in this Region.
 
 Type annotations for `boto3.client("ec2").modify_ebs_default_kms_key_id`
 method.
@@ -6903,20 +8819,28 @@ method.
 Boto3 documentation:
 [EC2.Client.modify_ebs_default_kms_key_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_ebs_default_kms_key_id)
 
+Arguments mapping described in
+[ModifyEbsDefaultKmsKeyIdRequestTypeDef](./type_defs.md#modifyebsdefaultkmskeyidrequesttypedef).
+
 Keyword-only arguments:
 
 - `KmsKeyId`: `str` *(required)*
 - `DryRun`: `bool`
 
 Returns
-[ModifyEbsDefaultKmsKeyIdResultTypeDef](./type_defs.md#modifyebsdefaultkmskeyidresulttypedef).
+[ModifyEbsDefaultKmsKeyIdResultResponseTypeDef](./type_defs.md#modifyebsdefaultkmskeyidresultresponsetypedef).
 
 ### modify_fleet
+
+Modifies the specified EC2 Fleet.
 
 Type annotations for `boto3.client("ec2").modify_fleet` method.
 
 Boto3 documentation:
 [EC2.Client.modify_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_fleet)
+
+Arguments mapping described in
+[ModifyFleetRequestTypeDef](./type_defs.md#modifyfleetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -6929,14 +8853,20 @@ Keyword-only arguments:
 - `TargetCapacitySpecification`:
   [TargetCapacitySpecificationRequestTypeDef](./type_defs.md#targetcapacityspecificationrequesttypedef)
 
-Returns [ModifyFleetResultTypeDef](./type_defs.md#modifyfleetresulttypedef).
+Returns
+[ModifyFleetResultResponseTypeDef](./type_defs.md#modifyfleetresultresponsetypedef).
 
 ### modify_fpga_image_attribute
+
+Modifies the specified attribute of the specified Amazon FPGA Image (AFI).
 
 Type annotations for `boto3.client("ec2").modify_fpga_image_attribute` method.
 
 Boto3 documentation:
 [EC2.Client.modify_fpga_image_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_fpga_image_attribute)
+
+Arguments mapping described in
+[ModifyFpgaImageAttributeRequestTypeDef](./type_defs.md#modifyfpgaimageattributerequesttypedef).
 
 Keyword-only arguments:
 
@@ -6954,14 +8884,19 @@ Keyword-only arguments:
 - `Name`: `str`
 
 Returns
-[ModifyFpgaImageAttributeResultTypeDef](./type_defs.md#modifyfpgaimageattributeresulttypedef).
+[ModifyFpgaImageAttributeResultResponseTypeDef](./type_defs.md#modifyfpgaimageattributeresultresponsetypedef).
 
 ### modify_hosts
+
+Modify the auto-placement setting of a Dedicated Host.
 
 Type annotations for `boto3.client("ec2").modify_hosts` method.
 
 Boto3 documentation:
 [EC2.Client.modify_hosts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_hosts)
+
+Arguments mapping described in
+[ModifyHostsRequestTypeDef](./type_defs.md#modifyhostsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -6971,14 +8906,20 @@ Keyword-only arguments:
 - `InstanceType`: `str`
 - `InstanceFamily`: `str`
 
-Returns [ModifyHostsResultTypeDef](./type_defs.md#modifyhostsresulttypedef).
+Returns
+[ModifyHostsResultResponseTypeDef](./type_defs.md#modifyhostsresultresponsetypedef).
 
 ### modify_id_format
+
+Modifies the ID format for the specified resource on a per-Region basis.
 
 Type annotations for `boto3.client("ec2").modify_id_format` method.
 
 Boto3 documentation:
 [EC2.Client.modify_id_format](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_id_format)
+
+Arguments mapping described in
+[ModifyIdFormatRequestTypeDef](./type_defs.md#modifyidformatrequesttypedef).
 
 Keyword-only arguments:
 
@@ -6987,10 +8928,17 @@ Keyword-only arguments:
 
 ### modify_identity_id_format
 
+Modifies the ID format of a resource for a specified IAM user, IAM role, or the
+root user for an account; or all IAM users, IAM roles, and the root user for an
+account.
+
 Type annotations for `boto3.client("ec2").modify_identity_id_format` method.
 
 Boto3 documentation:
 [EC2.Client.modify_identity_id_format](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_identity_id_format)
+
+Arguments mapping described in
+[ModifyIdentityIdFormatRequestTypeDef](./type_defs.md#modifyidentityidformatrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7000,10 +8948,15 @@ Keyword-only arguments:
 
 ### modify_image_attribute
 
+Modifies the specified attribute of the specified AMI.
+
 Type annotations for `boto3.client("ec2").modify_image_attribute` method.
 
 Boto3 documentation:
 [EC2.Client.modify_image_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_image_attribute)
+
+Arguments mapping described in
+[ModifyImageAttributeRequestTypeDef](./type_defs.md#modifyimageattributerequesttypedef).
 
 Keyword-only arguments:
 
@@ -7021,10 +8974,15 @@ Keyword-only arguments:
 
 ### modify_instance_attribute
 
+Modifies the specified attribute of the specified instance.
+
 Type annotations for `boto3.client("ec2").modify_instance_attribute` method.
 
 Boto3 documentation:
 [EC2.Client.modify_instance_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_instance_attribute)
+
+Arguments mapping described in
+[ModifyInstanceAttributeRequestTypeDef](./type_defs.md#modifyinstanceattributerequesttypedef).
 
 Keyword-only arguments:
 
@@ -7056,11 +9014,16 @@ Keyword-only arguments:
 
 ### modify_instance_capacity_reservation_attributes
 
+Modifies the Capacity Reservation settings for a stopped instance.
+
 Type annotations for
 `boto3.client("ec2").modify_instance_capacity_reservation_attributes` method.
 
 Boto3 documentation:
 [EC2.Client.modify_instance_capacity_reservation_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_instance_capacity_reservation_attributes)
+
+Arguments mapping described in
+[ModifyInstanceCapacityReservationAttributesRequestTypeDef](./type_defs.md#modifyinstancecapacityreservationattributesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7071,15 +9034,21 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[ModifyInstanceCapacityReservationAttributesResultTypeDef](./type_defs.md#modifyinstancecapacityreservationattributesresulttypedef).
+[ModifyInstanceCapacityReservationAttributesResultResponseTypeDef](./type_defs.md#modifyinstancecapacityreservationattributesresultresponsetypedef).
 
 ### modify_instance_credit_specification
+
+Modifies the credit option for CPU usage on a running or stopped burstable
+performance instance.
 
 Type annotations for `boto3.client("ec2").modify_instance_credit_specification`
 method.
 
 Boto3 documentation:
 [EC2.Client.modify_instance_credit_specification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_instance_credit_specification)
+
+Arguments mapping described in
+[ModifyInstanceCreditSpecificationRequestTypeDef](./type_defs.md#modifyinstancecreditspecificationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7090,9 +9059,11 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns
-[ModifyInstanceCreditSpecificationResultTypeDef](./type_defs.md#modifyinstancecreditspecificationresulttypedef).
+[ModifyInstanceCreditSpecificationResultResponseTypeDef](./type_defs.md#modifyinstancecreditspecificationresultresponsetypedef).
 
 ### modify_instance_event_start_time
+
+Modifies the start time for a scheduled Amazon EC2 instance event.
 
 Type annotations for `boto3.client("ec2").modify_instance_event_start_time`
 method.
@@ -7100,23 +9071,31 @@ method.
 Boto3 documentation:
 [EC2.Client.modify_instance_event_start_time](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_instance_event_start_time)
 
+Arguments mapping described in
+[ModifyInstanceEventStartTimeRequestTypeDef](./type_defs.md#modifyinstanceeventstarttimerequesttypedef).
+
 Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `InstanceEventId`: `str` *(required)*
-- `NotBefore`: `datetime` *(required)*
+- `NotBefore`: `Union`\[`datetime`, `str`\] *(required)*
 - `DryRun`: `bool`
 
 Returns
-[ModifyInstanceEventStartTimeResultTypeDef](./type_defs.md#modifyinstanceeventstarttimeresulttypedef).
+[ModifyInstanceEventStartTimeResultResponseTypeDef](./type_defs.md#modifyinstanceeventstarttimeresultresponsetypedef).
 
 ### modify_instance_metadata_options
+
+Modify the instance metadata parameters on a running or stopped instance.
 
 Type annotations for `boto3.client("ec2").modify_instance_metadata_options`
 method.
 
 Boto3 documentation:
 [EC2.Client.modify_instance_metadata_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_instance_metadata_options)
+
+Arguments mapping described in
+[ModifyInstanceMetadataOptionsRequestTypeDef](./type_defs.md#modifyinstancemetadataoptionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7128,14 +9107,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[ModifyInstanceMetadataOptionsResultTypeDef](./type_defs.md#modifyinstancemetadataoptionsresulttypedef).
+[ModifyInstanceMetadataOptionsResultResponseTypeDef](./type_defs.md#modifyinstancemetadataoptionsresultresponsetypedef).
 
 ### modify_instance_placement
+
+Modifies the placement attributes for a specified instance.
 
 Type annotations for `boto3.client("ec2").modify_instance_placement` method.
 
 Boto3 documentation:
 [EC2.Client.modify_instance_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_instance_placement)
+
+Arguments mapping described in
+[ModifyInstancePlacementRequestTypeDef](./type_defs.md#modifyinstanceplacementrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7148,14 +9132,19 @@ Keyword-only arguments:
 - `HostResourceGroupArn`: `str`
 
 Returns
-[ModifyInstancePlacementResultTypeDef](./type_defs.md#modifyinstanceplacementresulttypedef).
+[ModifyInstancePlacementResultResponseTypeDef](./type_defs.md#modifyinstanceplacementresultresponsetypedef).
 
 ### modify_launch_template
+
+Modifies a launch template.
 
 Type annotations for `boto3.client("ec2").modify_launch_template` method.
 
 Boto3 documentation:
 [EC2.Client.modify_launch_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_launch_template)
+
+Arguments mapping described in
+[ModifyLaunchTemplateRequestTypeDef](./type_defs.md#modifylaunchtemplaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -7166,14 +9155,19 @@ Keyword-only arguments:
 - `DefaultVersion`: `str`
 
 Returns
-[ModifyLaunchTemplateResultTypeDef](./type_defs.md#modifylaunchtemplateresulttypedef).
+[ModifyLaunchTemplateResultResponseTypeDef](./type_defs.md#modifylaunchtemplateresultresponsetypedef).
 
 ### modify_managed_prefix_list
+
+Modifies the specified managed prefix list.
 
 Type annotations for `boto3.client("ec2").modify_managed_prefix_list` method.
 
 Boto3 documentation:
 [EC2.Client.modify_managed_prefix_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_managed_prefix_list)
+
+Arguments mapping described in
+[ModifyManagedPrefixListRequestTypeDef](./type_defs.md#modifymanagedprefixlistrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7187,15 +9181,20 @@ Keyword-only arguments:
   `List`\[[RemovePrefixListEntryTypeDef](./type_defs.md#removeprefixlistentrytypedef)\]
 
 Returns
-[ModifyManagedPrefixListResultTypeDef](./type_defs.md#modifymanagedprefixlistresulttypedef).
+[ModifyManagedPrefixListResultResponseTypeDef](./type_defs.md#modifymanagedprefixlistresultresponsetypedef).
 
 ### modify_network_interface_attribute
+
+Modifies the specified network interface attribute.
 
 Type annotations for `boto3.client("ec2").modify_network_interface_attribute`
 method.
 
 Boto3 documentation:
 [EC2.Client.modify_network_interface_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_network_interface_attribute)
+
+Arguments mapping described in
+[ModifyNetworkInterfaceAttributeRequestTypeDef](./type_defs.md#modifynetworkinterfaceattributerequesttypedef).
 
 Keyword-only arguments:
 
@@ -7210,10 +9209,16 @@ Keyword-only arguments:
 
 ### modify_reserved_instances
 
+Modifies the Availability Zone, instance count, instance type, or network
+platform (EC2-Classic or EC2-VPC) of your Reserved Instances.
+
 Type annotations for `boto3.client("ec2").modify_reserved_instances` method.
 
 Boto3 documentation:
 [EC2.Client.modify_reserved_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_reserved_instances)
+
+Arguments mapping described in
+[ModifyReservedInstancesRequestTypeDef](./type_defs.md#modifyreservedinstancesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7224,14 +9229,19 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns
-[ModifyReservedInstancesResultTypeDef](./type_defs.md#modifyreservedinstancesresulttypedef).
+[ModifyReservedInstancesResultResponseTypeDef](./type_defs.md#modifyreservedinstancesresultresponsetypedef).
 
 ### modify_snapshot_attribute
+
+Adds or removes permission settings for the specified snapshot.
 
 Type annotations for `boto3.client("ec2").modify_snapshot_attribute` method.
 
 Boto3 documentation:
 [EC2.Client.modify_snapshot_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_snapshot_attribute)
+
+Arguments mapping described in
+[ModifySnapshotAttributeRequestTypeDef](./type_defs.md#modifysnapshotattributerequesttypedef).
 
 Keyword-only arguments:
 
@@ -7247,10 +9257,15 @@ Keyword-only arguments:
 
 ### modify_spot_fleet_request
 
+Modifies the specified Spot Fleet request.
+
 Type annotations for `boto3.client("ec2").modify_spot_fleet_request` method.
 
 Boto3 documentation:
 [EC2.Client.modify_spot_fleet_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_spot_fleet_request)
+
+Arguments mapping described in
+[ModifySpotFleetRequestRequestTypeDef](./type_defs.md#modifyspotfleetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7263,14 +9278,19 @@ Keyword-only arguments:
 - `OnDemandTargetCapacity`: `int`
 
 Returns
-[ModifySpotFleetRequestResponseTypeDef](./type_defs.md#modifyspotfleetrequestresponsetypedef).
+[ModifySpotFleetRequestResponseResponseTypeDef](./type_defs.md#modifyspotfleetrequestresponseresponsetypedef).
 
 ### modify_subnet_attribute
+
+Modifies a subnet attribute.
 
 Type annotations for `boto3.client("ec2").modify_subnet_attribute` method.
 
 Boto3 documentation:
 [EC2.Client.modify_subnet_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_subnet_attribute)
+
+Arguments mapping described in
+[ModifySubnetAttributeRequestTypeDef](./type_defs.md#modifysubnetattributerequesttypedef).
 
 Keyword-only arguments:
 
@@ -7285,11 +9305,16 @@ Keyword-only arguments:
 
 ### modify_traffic_mirror_filter_network_services
 
+Allows or restricts mirroring network services.
+
 Type annotations for
 `boto3.client("ec2").modify_traffic_mirror_filter_network_services` method.
 
 Boto3 documentation:
 [EC2.Client.modify_traffic_mirror_filter_network_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_traffic_mirror_filter_network_services)
+
+Arguments mapping described in
+[ModifyTrafficMirrorFilterNetworkServicesRequestTypeDef](./type_defs.md#modifytrafficmirrorfilternetworkservicesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7301,15 +9326,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[ModifyTrafficMirrorFilterNetworkServicesResultTypeDef](./type_defs.md#modifytrafficmirrorfilternetworkservicesresulttypedef).
+[ModifyTrafficMirrorFilterNetworkServicesResultResponseTypeDef](./type_defs.md#modifytrafficmirrorfilternetworkservicesresultresponsetypedef).
 
 ### modify_traffic_mirror_filter_rule
+
+Modifies the specified Traffic Mirror rule.
 
 Type annotations for `boto3.client("ec2").modify_traffic_mirror_filter_rule`
 method.
 
 Boto3 documentation:
 [EC2.Client.modify_traffic_mirror_filter_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_traffic_mirror_filter_rule)
+
+Arguments mapping described in
+[ModifyTrafficMirrorFilterRuleRequestTypeDef](./type_defs.md#modifytrafficmirrorfilterrulerequesttypedef).
 
 Keyword-only arguments:
 
@@ -7332,15 +9362,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[ModifyTrafficMirrorFilterRuleResultTypeDef](./type_defs.md#modifytrafficmirrorfilterruleresulttypedef).
+[ModifyTrafficMirrorFilterRuleResultResponseTypeDef](./type_defs.md#modifytrafficmirrorfilterruleresultresponsetypedef).
 
 ### modify_traffic_mirror_session
+
+Modifies a Traffic Mirror session.
 
 Type annotations for `boto3.client("ec2").modify_traffic_mirror_session`
 method.
 
 Boto3 documentation:
 [EC2.Client.modify_traffic_mirror_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_traffic_mirror_session)
+
+Arguments mapping described in
+[ModifyTrafficMirrorSessionRequestTypeDef](./type_defs.md#modifytrafficmirrorsessionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7356,14 +9391,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[ModifyTrafficMirrorSessionResultTypeDef](./type_defs.md#modifytrafficmirrorsessionresulttypedef).
+[ModifyTrafficMirrorSessionResultResponseTypeDef](./type_defs.md#modifytrafficmirrorsessionresultresponsetypedef).
 
 ### modify_transit_gateway
+
+Modifies the specified transit gateway.
 
 Type annotations for `boto3.client("ec2").modify_transit_gateway` method.
 
 Boto3 documentation:
 [EC2.Client.modify_transit_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_transit_gateway)
+
+Arguments mapping described in
+[ModifyTransitGatewayRequestTypeDef](./type_defs.md#modifytransitgatewayrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7374,15 +9414,21 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[ModifyTransitGatewayResultTypeDef](./type_defs.md#modifytransitgatewayresulttypedef).
+[ModifyTransitGatewayResultResponseTypeDef](./type_defs.md#modifytransitgatewayresultresponsetypedef).
 
 ### modify_transit_gateway_prefix_list_reference
+
+Modifies a reference (route) to a prefix list in a specified transit gateway
+route table.
 
 Type annotations for
 `boto3.client("ec2").modify_transit_gateway_prefix_list_reference` method.
 
 Boto3 documentation:
 [EC2.Client.modify_transit_gateway_prefix_list_reference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_transit_gateway_prefix_list_reference)
+
+Arguments mapping described in
+[ModifyTransitGatewayPrefixListReferenceRequestTypeDef](./type_defs.md#modifytransitgatewayprefixlistreferencerequesttypedef).
 
 Keyword-only arguments:
 
@@ -7393,15 +9439,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[ModifyTransitGatewayPrefixListReferenceResultTypeDef](./type_defs.md#modifytransitgatewayprefixlistreferenceresulttypedef).
+[ModifyTransitGatewayPrefixListReferenceResultResponseTypeDef](./type_defs.md#modifytransitgatewayprefixlistreferenceresultresponsetypedef).
 
 ### modify_transit_gateway_vpc_attachment
+
+Modifies the specified VPC attachment.
 
 Type annotations for
 `boto3.client("ec2").modify_transit_gateway_vpc_attachment` method.
 
 Boto3 documentation:
 [EC2.Client.modify_transit_gateway_vpc_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_transit_gateway_vpc_attachment)
+
+Arguments mapping described in
+[ModifyTransitGatewayVpcAttachmentRequestTypeDef](./type_defs.md#modifytransitgatewayvpcattachmentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7413,14 +9464,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[ModifyTransitGatewayVpcAttachmentResultTypeDef](./type_defs.md#modifytransitgatewayvpcattachmentresulttypedef).
+[ModifyTransitGatewayVpcAttachmentResultResponseTypeDef](./type_defs.md#modifytransitgatewayvpcattachmentresultresponsetypedef).
 
 ### modify_volume
+
+You can modify several parameters of an existing EBS volume, including volume
+size, volume type, and IOPS capacity.
 
 Type annotations for `boto3.client("ec2").modify_volume` method.
 
 Boto3 documentation:
 [EC2.Client.modify_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_volume)
+
+Arguments mapping described in
+[ModifyVolumeRequestTypeDef](./type_defs.md#modifyvolumerequesttypedef).
 
 Keyword-only arguments:
 
@@ -7432,14 +9489,20 @@ Keyword-only arguments:
 - `Throughput`: `int`
 - `MultiAttachEnabled`: `bool`
 
-Returns [ModifyVolumeResultTypeDef](./type_defs.md#modifyvolumeresulttypedef).
+Returns
+[ModifyVolumeResultResponseTypeDef](./type_defs.md#modifyvolumeresultresponsetypedef).
 
 ### modify_volume_attribute
+
+Modifies a volume attribute.
 
 Type annotations for `boto3.client("ec2").modify_volume_attribute` method.
 
 Boto3 documentation:
 [EC2.Client.modify_volume_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_volume_attribute)
+
+Arguments mapping described in
+[ModifyVolumeAttributeRequestTypeDef](./type_defs.md#modifyvolumeattributerequesttypedef).
 
 Keyword-only arguments:
 
@@ -7450,10 +9513,15 @@ Keyword-only arguments:
 
 ### modify_vpc_attribute
 
+Modifies the specified attribute of the specified VPC.
+
 Type annotations for `boto3.client("ec2").modify_vpc_attribute` method.
 
 Boto3 documentation:
 [EC2.Client.modify_vpc_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_attribute)
+
+Arguments mapping described in
+[ModifyVpcAttributeRequestTypeDef](./type_defs.md#modifyvpcattributerequesttypedef).
 
 Keyword-only arguments:
 
@@ -7465,10 +9533,15 @@ Keyword-only arguments:
 
 ### modify_vpc_endpoint
 
+Modifies attributes of a specified VPC endpoint.
+
 Type annotations for `boto3.client("ec2").modify_vpc_endpoint` method.
 
 Boto3 documentation:
 [EC2.Client.modify_vpc_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_endpoint)
+
+Arguments mapping described in
+[ModifyVpcEndpointRequestTypeDef](./type_defs.md#modifyvpcendpointrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7485,15 +9558,20 @@ Keyword-only arguments:
 - `PrivateDnsEnabled`: `bool`
 
 Returns
-[ModifyVpcEndpointResultTypeDef](./type_defs.md#modifyvpcendpointresulttypedef).
+[ModifyVpcEndpointResultResponseTypeDef](./type_defs.md#modifyvpcendpointresultresponsetypedef).
 
 ### modify_vpc_endpoint_connection_notification
+
+Modifies a connection notification for VPC endpoint or VPC endpoint service.
 
 Type annotations for
 `boto3.client("ec2").modify_vpc_endpoint_connection_notification` method.
 
 Boto3 documentation:
 [EC2.Client.modify_vpc_endpoint_connection_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_endpoint_connection_notification)
+
+Arguments mapping described in
+[ModifyVpcEndpointConnectionNotificationRequestTypeDef](./type_defs.md#modifyvpcendpointconnectionnotificationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7503,15 +9581,20 @@ Keyword-only arguments:
 - `ConnectionEvents`: `List`\[`str`\]
 
 Returns
-[ModifyVpcEndpointConnectionNotificationResultTypeDef](./type_defs.md#modifyvpcendpointconnectionnotificationresulttypedef).
+[ModifyVpcEndpointConnectionNotificationResultResponseTypeDef](./type_defs.md#modifyvpcendpointconnectionnotificationresultresponsetypedef).
 
 ### modify_vpc_endpoint_service_configuration
+
+Modifies the attributes of your VPC endpoint service configuration.
 
 Type annotations for
 `boto3.client("ec2").modify_vpc_endpoint_service_configuration` method.
 
 Boto3 documentation:
 [EC2.Client.modify_vpc_endpoint_service_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_endpoint_service_configuration)
+
+Arguments mapping described in
+[ModifyVpcEndpointServiceConfigurationRequestTypeDef](./type_defs.md#modifyvpcendpointserviceconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7526,15 +9609,21 @@ Keyword-only arguments:
 - `RemoveGatewayLoadBalancerArns`: `List`\[`str`\]
 
 Returns
-[ModifyVpcEndpointServiceConfigurationResultTypeDef](./type_defs.md#modifyvpcendpointserviceconfigurationresulttypedef).
+[ModifyVpcEndpointServiceConfigurationResultResponseTypeDef](./type_defs.md#modifyvpcendpointserviceconfigurationresultresponsetypedef).
 
 ### modify_vpc_endpoint_service_permissions
+
+Modifies the permissions for your
+`VPC endpoint service <https://docs.aws.amazon.com/vpc/latest/userguide/endpoint-service.html>`\_\_.
 
 Type annotations for
 `boto3.client("ec2").modify_vpc_endpoint_service_permissions` method.
 
 Boto3 documentation:
 [EC2.Client.modify_vpc_endpoint_service_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_endpoint_service_permissions)
+
+Arguments mapping described in
+[ModifyVpcEndpointServicePermissionsRequestTypeDef](./type_defs.md#modifyvpcendpointservicepermissionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7544,15 +9633,21 @@ Keyword-only arguments:
 - `RemoveAllowedPrincipals`: `List`\[`str`\]
 
 Returns
-[ModifyVpcEndpointServicePermissionsResultTypeDef](./type_defs.md#modifyvpcendpointservicepermissionsresulttypedef).
+[ModifyVpcEndpointServicePermissionsResultResponseTypeDef](./type_defs.md#modifyvpcendpointservicepermissionsresultresponsetypedef).
 
 ### modify_vpc_peering_connection_options
+
+Modifies the VPC peering connection options on one side of a VPC peering
+connection.
 
 Type annotations for
 `boto3.client("ec2").modify_vpc_peering_connection_options` method.
 
 Boto3 documentation:
 [EC2.Client.modify_vpc_peering_connection_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_peering_connection_options)
+
+Arguments mapping described in
+[ModifyVpcPeeringConnectionOptionsRequestTypeDef](./type_defs.md#modifyvpcpeeringconnectionoptionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7564,14 +9659,19 @@ Keyword-only arguments:
   [PeeringConnectionOptionsRequestTypeDef](./type_defs.md#peeringconnectionoptionsrequesttypedef)
 
 Returns
-[ModifyVpcPeeringConnectionOptionsResultTypeDef](./type_defs.md#modifyvpcpeeringconnectionoptionsresulttypedef).
+[ModifyVpcPeeringConnectionOptionsResultResponseTypeDef](./type_defs.md#modifyvpcpeeringconnectionoptionsresultresponsetypedef).
 
 ### modify_vpc_tenancy
+
+Modifies the instance tenancy attribute of the specified VPC.
 
 Type annotations for `boto3.client("ec2").modify_vpc_tenancy` method.
 
 Boto3 documentation:
 [EC2.Client.modify_vpc_tenancy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpc_tenancy)
+
+Arguments mapping described in
+[ModifyVpcTenancyRequestTypeDef](./type_defs.md#modifyvpctenancyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7581,14 +9681,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[ModifyVpcTenancyResultTypeDef](./type_defs.md#modifyvpctenancyresulttypedef).
+[ModifyVpcTenancyResultResponseTypeDef](./type_defs.md#modifyvpctenancyresultresponsetypedef).
 
 ### modify_vpn_connection
+
+Modifies the customer gateway or the target gateway of an AWS Site-to-Site VPN
+connection.
 
 Type annotations for `boto3.client("ec2").modify_vpn_connection` method.
 
 Boto3 documentation:
 [EC2.Client.modify_vpn_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpn_connection)
+
+Arguments mapping described in
+[ModifyVpnConnectionRequestTypeDef](./type_defs.md#modifyvpnconnectionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7599,15 +9705,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[ModifyVpnConnectionResultTypeDef](./type_defs.md#modifyvpnconnectionresulttypedef).
+[ModifyVpnConnectionResultResponseTypeDef](./type_defs.md#modifyvpnconnectionresultresponsetypedef).
 
 ### modify_vpn_connection_options
+
+Modifies the connection options for your Site-to-Site VPN connection.
 
 Type annotations for `boto3.client("ec2").modify_vpn_connection_options`
 method.
 
 Boto3 documentation:
 [EC2.Client.modify_vpn_connection_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpn_connection_options)
+
+Arguments mapping described in
+[ModifyVpnConnectionOptionsRequestTypeDef](./type_defs.md#modifyvpnconnectionoptionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7619,15 +9730,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[ModifyVpnConnectionOptionsResultTypeDef](./type_defs.md#modifyvpnconnectionoptionsresulttypedef).
+[ModifyVpnConnectionOptionsResultResponseTypeDef](./type_defs.md#modifyvpnconnectionoptionsresultresponsetypedef).
 
 ### modify_vpn_tunnel_certificate
+
+Modifies the VPN tunnel endpoint certificate.
 
 Type annotations for `boto3.client("ec2").modify_vpn_tunnel_certificate`
 method.
 
 Boto3 documentation:
 [EC2.Client.modify_vpn_tunnel_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpn_tunnel_certificate)
+
+Arguments mapping described in
+[ModifyVpnTunnelCertificateRequestTypeDef](./type_defs.md#modifyvpntunnelcertificaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -7636,14 +9752,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[ModifyVpnTunnelCertificateResultTypeDef](./type_defs.md#modifyvpntunnelcertificateresulttypedef).
+[ModifyVpnTunnelCertificateResultResponseTypeDef](./type_defs.md#modifyvpntunnelcertificateresultresponsetypedef).
 
 ### modify_vpn_tunnel_options
+
+Modifies the options for a VPN tunnel in an AWS Site-to-Site VPN connection.
 
 Type annotations for `boto3.client("ec2").modify_vpn_tunnel_options` method.
 
 Boto3 documentation:
 [EC2.Client.modify_vpn_tunnel_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_vpn_tunnel_options)
+
+Arguments mapping described in
+[ModifyVpnTunnelOptionsRequestTypeDef](./type_defs.md#modifyvpntunneloptionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7655,14 +9776,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[ModifyVpnTunnelOptionsResultTypeDef](./type_defs.md#modifyvpntunneloptionsresulttypedef).
+[ModifyVpnTunnelOptionsResultResponseTypeDef](./type_defs.md#modifyvpntunneloptionsresultresponsetypedef).
 
 ### monitor_instances
+
+Enables detailed monitoring for a running instance.
 
 Type annotations for `boto3.client("ec2").monitor_instances` method.
 
 Boto3 documentation:
 [EC2.Client.monitor_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.monitor_instances)
+
+Arguments mapping described in
+[MonitorInstancesRequestTypeDef](./type_defs.md#monitorinstancesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7670,14 +9796,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[MonitorInstancesResultTypeDef](./type_defs.md#monitorinstancesresulttypedef).
+[MonitorInstancesResultResponseTypeDef](./type_defs.md#monitorinstancesresultresponsetypedef).
 
 ### move_address_to_vpc
+
+Moves an Elastic IP address from the EC2-Classic platform to the EC2-VPC
+platform.
 
 Type annotations for `boto3.client("ec2").move_address_to_vpc` method.
 
 Boto3 documentation:
 [EC2.Client.move_address_to_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.move_address_to_vpc)
+
+Arguments mapping described in
+[MoveAddressToVpcRequestTypeDef](./type_defs.md#moveaddresstovpcrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7685,14 +9817,21 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[MoveAddressToVpcResultTypeDef](./type_defs.md#moveaddresstovpcresulttypedef).
+[MoveAddressToVpcResultResponseTypeDef](./type_defs.md#moveaddresstovpcresultresponsetypedef).
 
 ### provision_byoip_cidr
+
+Provisions an IPv4 or IPv6 address range for use with your Amazon Web Services
+resources through bring your own IP addresses (BYOIP) and creates a
+corresponding address pool.
 
 Type annotations for `boto3.client("ec2").provision_byoip_cidr` method.
 
 Boto3 documentation:
 [EC2.Client.provision_byoip_cidr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.provision_byoip_cidr)
+
+Arguments mapping described in
+[ProvisionByoipCidrRequestTypeDef](./type_defs.md#provisionbyoipcidrrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7707,14 +9846,20 @@ Keyword-only arguments:
 - `MultiRegion`: `bool`
 
 Returns
-[ProvisionByoipCidrResultTypeDef](./type_defs.md#provisionbyoipcidrresulttypedef).
+[ProvisionByoipCidrResultResponseTypeDef](./type_defs.md#provisionbyoipcidrresultresponsetypedef).
 
 ### purchase_host_reservation
+
+Purchase a reservation with configurations that match those of your Dedicated
+Host.
 
 Type annotations for `boto3.client("ec2").purchase_host_reservation` method.
 
 Boto3 documentation:
 [EC2.Client.purchase_host_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.purchase_host_reservation)
+
+Arguments mapping described in
+[PurchaseHostReservationRequestTypeDef](./type_defs.md#purchasehostreservationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7728,15 +9873,20 @@ Keyword-only arguments:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
-[PurchaseHostReservationResultTypeDef](./type_defs.md#purchasehostreservationresulttypedef).
+[PurchaseHostReservationResultResponseTypeDef](./type_defs.md#purchasehostreservationresultresponsetypedef).
 
 ### purchase_reserved_instances_offering
+
+Purchases a Reserved Instance for use with your account.
 
 Type annotations for `boto3.client("ec2").purchase_reserved_instances_offering`
 method.
 
 Boto3 documentation:
 [EC2.Client.purchase_reserved_instances_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.purchase_reserved_instances_offering)
+
+Arguments mapping described in
+[PurchaseReservedInstancesOfferingRequestTypeDef](./type_defs.md#purchasereservedinstancesofferingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7745,17 +9895,22 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 - `LimitPrice`:
   [ReservedInstanceLimitPriceTypeDef](./type_defs.md#reservedinstancelimitpricetypedef)
-- `PurchaseTime`: `datetime`
+- `PurchaseTime`: `Union`\[`datetime`, `str`\]
 
 Returns
-[PurchaseReservedInstancesOfferingResultTypeDef](./type_defs.md#purchasereservedinstancesofferingresulttypedef).
+[PurchaseReservedInstancesOfferingResultResponseTypeDef](./type_defs.md#purchasereservedinstancesofferingresultresponsetypedef).
 
 ### purchase_scheduled_instances
+
+Purchases the Scheduled Instances with the specified schedule.
 
 Type annotations for `boto3.client("ec2").purchase_scheduled_instances` method.
 
 Boto3 documentation:
 [EC2.Client.purchase_scheduled_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.purchase_scheduled_instances)
+
+Arguments mapping described in
+[PurchaseScheduledInstancesRequestTypeDef](./type_defs.md#purchasescheduledinstancesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7766,14 +9921,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[PurchaseScheduledInstancesResultTypeDef](./type_defs.md#purchasescheduledinstancesresulttypedef).
+[PurchaseScheduledInstancesResultResponseTypeDef](./type_defs.md#purchasescheduledinstancesresultresponsetypedef).
 
 ### reboot_instances
+
+Requests a reboot of the specified instances.
 
 Type annotations for `boto3.client("ec2").reboot_instances` method.
 
 Boto3 documentation:
 [EC2.Client.reboot_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reboot_instances)
+
+Arguments mapping described in
+[RebootInstancesRequestTypeDef](./type_defs.md#rebootinstancesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7782,10 +9942,15 @@ Keyword-only arguments:
 
 ### register_image
 
+Registers an AMI.
+
 Type annotations for `boto3.client("ec2").register_image` method.
 
 Boto3 documentation:
 [EC2.Client.register_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.register_image)
+
+Arguments mapping described in
+[RegisterImageRequestTypeDef](./type_defs.md#registerimagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -7807,15 +9972,21 @@ Keyword-only arguments:
 - `BootMode`: [BootModeValuesType](./literals.md#bootmodevaluestype)
 
 Returns
-[RegisterImageResultTypeDef](./type_defs.md#registerimageresulttypedef).
+[RegisterImageResultResponseTypeDef](./type_defs.md#registerimageresultresponsetypedef).
 
 ### register_instance_event_notification_attributes
+
+Registers a set of tag keys to include in scheduled event notifications for
+your resources.
 
 Type annotations for
 `boto3.client("ec2").register_instance_event_notification_attributes` method.
 
 Boto3 documentation:
 [EC2.Client.register_instance_event_notification_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.register_instance_event_notification_attributes)
+
+Arguments mapping described in
+[RegisterInstanceEventNotificationAttributesRequestTypeDef](./type_defs.md#registerinstanceeventnotificationattributesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7824,9 +9995,12 @@ Keyword-only arguments:
   [RegisterInstanceTagAttributeRequestTypeDef](./type_defs.md#registerinstancetagattributerequesttypedef)
 
 Returns
-[RegisterInstanceEventNotificationAttributesResultTypeDef](./type_defs.md#registerinstanceeventnotificationattributesresulttypedef).
+[RegisterInstanceEventNotificationAttributesResultResponseTypeDef](./type_defs.md#registerinstanceeventnotificationattributesresultresponsetypedef).
 
 ### register_transit_gateway_multicast_group_members
+
+Registers members (network interfaces) with the transit gateway multicast
+group.
 
 Type annotations for
 `boto3.client("ec2").register_transit_gateway_multicast_group_members` method.
@@ -7834,6 +10008,9 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.register_transit_gateway_multicast_group_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.register_transit_gateway_multicast_group_members)
 
+Arguments mapping described in
+[RegisterTransitGatewayMulticastGroupMembersRequestTypeDef](./type_defs.md#registertransitgatewaymulticastgroupmembersrequesttypedef).
+
 Keyword-only arguments:
 
 - `TransitGatewayMulticastDomainId`: `str`
@@ -7842,9 +10019,12 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[RegisterTransitGatewayMulticastGroupMembersResultTypeDef](./type_defs.md#registertransitgatewaymulticastgroupmembersresulttypedef).
+[RegisterTransitGatewayMulticastGroupMembersResultResponseTypeDef](./type_defs.md#registertransitgatewaymulticastgroupmembersresultresponsetypedef).
 
 ### register_transit_gateway_multicast_group_sources
+
+Registers sources (network interfaces) with the specified transit gateway
+multicast group.
 
 Type annotations for
 `boto3.client("ec2").register_transit_gateway_multicast_group_sources` method.
@@ -7852,6 +10032,9 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.register_transit_gateway_multicast_group_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.register_transit_gateway_multicast_group_sources)
 
+Arguments mapping described in
+[RegisterTransitGatewayMulticastGroupSourcesRequestTypeDef](./type_defs.md#registertransitgatewaymulticastgroupsourcesrequesttypedef).
+
 Keyword-only arguments:
 
 - `TransitGatewayMulticastDomainId`: `str`
@@ -7860,9 +10043,12 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[RegisterTransitGatewayMulticastGroupSourcesResultTypeDef](./type_defs.md#registertransitgatewaymulticastgroupsourcesresulttypedef).
+[RegisterTransitGatewayMulticastGroupSourcesResultResponseTypeDef](./type_defs.md#registertransitgatewaymulticastgroupsourcesresultresponsetypedef).
 
 ### reject_transit_gateway_multicast_domain_associations
+
+Rejects a request to associate cross-account subnets with a transit gateway
+multicast domain.
 
 Type annotations for
 `boto3.client("ec2").reject_transit_gateway_multicast_domain_associations`
@@ -7870,6 +10056,9 @@ method.
 
 Boto3 documentation:
 [EC2.Client.reject_transit_gateway_multicast_domain_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reject_transit_gateway_multicast_domain_associations)
+
+Arguments mapping described in
+[RejectTransitGatewayMulticastDomainAssociationsRequestTypeDef](./type_defs.md#rejecttransitgatewaymulticastdomainassociationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7879,9 +10068,11 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[RejectTransitGatewayMulticastDomainAssociationsResultTypeDef](./type_defs.md#rejecttransitgatewaymulticastdomainassociationsresulttypedef).
+[RejectTransitGatewayMulticastDomainAssociationsResultResponseTypeDef](./type_defs.md#rejecttransitgatewaymulticastdomainassociationsresultresponsetypedef).
 
 ### reject_transit_gateway_peering_attachment
+
+Rejects a transit gateway peering attachment request.
 
 Type annotations for
 `boto3.client("ec2").reject_transit_gateway_peering_attachment` method.
@@ -7889,15 +10080,20 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.reject_transit_gateway_peering_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reject_transit_gateway_peering_attachment)
 
+Arguments mapping described in
+[RejectTransitGatewayPeeringAttachmentRequestTypeDef](./type_defs.md#rejecttransitgatewaypeeringattachmentrequesttypedef).
+
 Keyword-only arguments:
 
 - `TransitGatewayAttachmentId`: `str` *(required)*
 - `DryRun`: `bool`
 
 Returns
-[RejectTransitGatewayPeeringAttachmentResultTypeDef](./type_defs.md#rejecttransitgatewaypeeringattachmentresulttypedef).
+[RejectTransitGatewayPeeringAttachmentResultResponseTypeDef](./type_defs.md#rejecttransitgatewaypeeringattachmentresultresponsetypedef).
 
 ### reject_transit_gateway_vpc_attachment
+
+Rejects a request to attach a VPC to a transit gateway.
 
 Type annotations for
 `boto3.client("ec2").reject_transit_gateway_vpc_attachment` method.
@@ -7905,21 +10101,30 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.reject_transit_gateway_vpc_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reject_transit_gateway_vpc_attachment)
 
+Arguments mapping described in
+[RejectTransitGatewayVpcAttachmentRequestTypeDef](./type_defs.md#rejecttransitgatewayvpcattachmentrequesttypedef).
+
 Keyword-only arguments:
 
 - `TransitGatewayAttachmentId`: `str` *(required)*
 - `DryRun`: `bool`
 
 Returns
-[RejectTransitGatewayVpcAttachmentResultTypeDef](./type_defs.md#rejecttransitgatewayvpcattachmentresulttypedef).
+[RejectTransitGatewayVpcAttachmentResultResponseTypeDef](./type_defs.md#rejecttransitgatewayvpcattachmentresultresponsetypedef).
 
 ### reject_vpc_endpoint_connections
+
+Rejects one or more VPC endpoint connection requests to your VPC endpoint
+service.
 
 Type annotations for `boto3.client("ec2").reject_vpc_endpoint_connections`
 method.
 
 Boto3 documentation:
 [EC2.Client.reject_vpc_endpoint_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reject_vpc_endpoint_connections)
+
+Arguments mapping described in
+[RejectVpcEndpointConnectionsRequestTypeDef](./type_defs.md#rejectvpcendpointconnectionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7928,9 +10133,11 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[RejectVpcEndpointConnectionsResultTypeDef](./type_defs.md#rejectvpcendpointconnectionsresulttypedef).
+[RejectVpcEndpointConnectionsResultResponseTypeDef](./type_defs.md#rejectvpcendpointconnectionsresultresponsetypedef).
 
 ### reject_vpc_peering_connection
+
+Rejects a VPC peering connection request.
 
 Type annotations for `boto3.client("ec2").reject_vpc_peering_connection`
 method.
@@ -7938,20 +10145,28 @@ method.
 Boto3 documentation:
 [EC2.Client.reject_vpc_peering_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reject_vpc_peering_connection)
 
+Arguments mapping described in
+[RejectVpcPeeringConnectionRequestTypeDef](./type_defs.md#rejectvpcpeeringconnectionrequesttypedef).
+
 Keyword-only arguments:
 
 - `VpcPeeringConnectionId`: `str` *(required)*
 - `DryRun`: `bool`
 
 Returns
-[RejectVpcPeeringConnectionResultTypeDef](./type_defs.md#rejectvpcpeeringconnectionresulttypedef).
+[RejectVpcPeeringConnectionResultResponseTypeDef](./type_defs.md#rejectvpcpeeringconnectionresultresponsetypedef).
 
 ### release_address
+
+Releases the specified Elastic IP address.
 
 Type annotations for `boto3.client("ec2").release_address` method.
 
 Boto3 documentation:
 [EC2.Client.release_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.release_address)
+
+Arguments mapping described in
+[ReleaseAddressRequestTypeDef](./type_defs.md#releaseaddressrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7962,24 +10177,35 @@ Keyword-only arguments:
 
 ### release_hosts
 
+When you no longer want to use an On-Demand Dedicated Host it can be released.
+
 Type annotations for `boto3.client("ec2").release_hosts` method.
 
 Boto3 documentation:
 [EC2.Client.release_hosts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.release_hosts)
 
+Arguments mapping described in
+[ReleaseHostsRequestTypeDef](./type_defs.md#releasehostsrequesttypedef).
+
 Keyword-only arguments:
 
 - `HostIds`: `List`\[`str`\] *(required)*
 
-Returns [ReleaseHostsResultTypeDef](./type_defs.md#releasehostsresulttypedef).
+Returns
+[ReleaseHostsResultResponseTypeDef](./type_defs.md#releasehostsresultresponsetypedef).
 
 ### replace_iam_instance_profile_association
+
+Replaces an IAM instance profile for the specified running instance.
 
 Type annotations for
 `boto3.client("ec2").replace_iam_instance_profile_association` method.
 
 Boto3 documentation:
 [EC2.Client.replace_iam_instance_profile_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.replace_iam_instance_profile_association)
+
+Arguments mapping described in
+[ReplaceIamInstanceProfileAssociationRequestTypeDef](./type_defs.md#replaceiaminstanceprofileassociationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -7989,15 +10215,20 @@ Keyword-only arguments:
 - `AssociationId`: `str` *(required)*
 
 Returns
-[ReplaceIamInstanceProfileAssociationResultTypeDef](./type_defs.md#replaceiaminstanceprofileassociationresulttypedef).
+[ReplaceIamInstanceProfileAssociationResultResponseTypeDef](./type_defs.md#replaceiaminstanceprofileassociationresultresponsetypedef).
 
 ### replace_network_acl_association
+
+Changes which network ACL a subnet is associated with.
 
 Type annotations for `boto3.client("ec2").replace_network_acl_association`
 method.
 
 Boto3 documentation:
 [EC2.Client.replace_network_acl_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.replace_network_acl_association)
+
+Arguments mapping described in
+[ReplaceNetworkAclAssociationRequestTypeDef](./type_defs.md#replacenetworkaclassociationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -8006,14 +10237,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[ReplaceNetworkAclAssociationResultTypeDef](./type_defs.md#replacenetworkaclassociationresulttypedef).
+[ReplaceNetworkAclAssociationResultResponseTypeDef](./type_defs.md#replacenetworkaclassociationresultresponsetypedef).
 
 ### replace_network_acl_entry
+
+Replaces an entry (rule) in a network ACL.
 
 Type annotations for `boto3.client("ec2").replace_network_acl_entry` method.
 
 Boto3 documentation:
 [EC2.Client.replace_network_acl_entry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.replace_network_acl_entry)
+
+Arguments mapping described in
+[ReplaceNetworkAclEntryRequestTypeDef](./type_defs.md#replacenetworkaclentryrequesttypedef).
 
 Keyword-only arguments:
 
@@ -8030,10 +10266,15 @@ Keyword-only arguments:
 
 ### replace_route
 
+Replaces an existing route within a route table in a VPC.
+
 Type annotations for `boto3.client("ec2").replace_route` method.
 
 Boto3 documentation:
 [EC2.Client.replace_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.replace_route)
+
+Arguments mapping described in
+[ReplaceRouteRequestTypeDef](./type_defs.md#replacerouterequesttypedef).
 
 Keyword-only arguments:
 
@@ -8056,11 +10297,17 @@ Keyword-only arguments:
 
 ### replace_route_table_association
 
+Changes the route table associated with a given subnet, internet gateway, or
+virtual private gateway in a VPC.
+
 Type annotations for `boto3.client("ec2").replace_route_table_association`
 method.
 
 Boto3 documentation:
 [EC2.Client.replace_route_table_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.replace_route_table_association)
+
+Arguments mapping described in
+[ReplaceRouteTableAssociationRequestTypeDef](./type_defs.md#replaceroutetableassociationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -8069,15 +10316,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[ReplaceRouteTableAssociationResultTypeDef](./type_defs.md#replaceroutetableassociationresulttypedef).
+[ReplaceRouteTableAssociationResultResponseTypeDef](./type_defs.md#replaceroutetableassociationresultresponsetypedef).
 
 ### replace_transit_gateway_route
+
+Replaces the specified route in the specified transit gateway route table.
 
 Type annotations for `boto3.client("ec2").replace_transit_gateway_route`
 method.
 
 Boto3 documentation:
 [EC2.Client.replace_transit_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.replace_transit_gateway_route)
+
+Arguments mapping described in
+[ReplaceTransitGatewayRouteRequestTypeDef](./type_defs.md#replacetransitgatewayrouterequesttypedef).
 
 Keyword-only arguments:
 
@@ -8088,14 +10340,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[ReplaceTransitGatewayRouteResultTypeDef](./type_defs.md#replacetransitgatewayrouteresulttypedef).
+[ReplaceTransitGatewayRouteResultResponseTypeDef](./type_defs.md#replacetransitgatewayrouteresultresponsetypedef).
 
 ### report_instance_status
+
+Submits feedback about the status of an instance.
 
 Type annotations for `boto3.client("ec2").report_instance_status` method.
 
 Boto3 documentation:
 [EC2.Client.report_instance_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.report_instance_status)
+
+Arguments mapping described in
+[ReportInstanceStatusRequestTypeDef](./type_defs.md#reportinstancestatusrequesttypedef).
 
 Keyword-only arguments:
 
@@ -8107,15 +10364,20 @@ Keyword-only arguments:
   *(required)*
 - `Description`: `str`
 - `DryRun`: `bool`
-- `EndTime`: `datetime`
-- `StartTime`: `datetime`
+- `EndTime`: `Union`\[`datetime`, `str`\]
+- `StartTime`: `Union`\[`datetime`, `str`\]
 
 ### request_spot_fleet
+
+.
 
 Type annotations for `boto3.client("ec2").request_spot_fleet` method.
 
 Boto3 documentation:
 [EC2.Client.request_spot_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.request_spot_fleet)
+
+Arguments mapping described in
+[RequestSpotFleetRequestTypeDef](./type_defs.md#requestspotfleetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -8125,14 +10387,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[RequestSpotFleetResponseTypeDef](./type_defs.md#requestspotfleetresponsetypedef).
+[RequestSpotFleetResponseResponseTypeDef](./type_defs.md#requestspotfleetresponseresponsetypedef).
 
 ### request_spot_instances
+
+Creates a Spot Instance request.
 
 Type annotations for `boto3.client("ec2").request_spot_instances` method.
 
 Boto3 documentation:
 [EC2.Client.request_spot_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.request_spot_instances)
+
+Arguments mapping described in
+[RequestSpotInstancesRequestTypeDef](./type_defs.md#requestspotinstancesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -8146,22 +10413,27 @@ Keyword-only arguments:
   [RequestSpotLaunchSpecificationTypeDef](./type_defs.md#requestspotlaunchspecificationtypedef)
 - `SpotPrice`: `str`
 - `Type`: [SpotInstanceTypeType](./literals.md#spotinstancetypetype)
-- `ValidFrom`: `datetime`
-- `ValidUntil`: `datetime`
+- `ValidFrom`: `Union`\[`datetime`, `str`\]
+- `ValidUntil`: `Union`\[`datetime`, `str`\]
 - `TagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `InstanceInterruptionBehavior`:
   [InstanceInterruptionBehaviorType](./literals.md#instanceinterruptionbehaviortype)
 
 Returns
-[RequestSpotInstancesResultTypeDef](./type_defs.md#requestspotinstancesresulttypedef).
+[RequestSpotInstancesResultResponseTypeDef](./type_defs.md#requestspotinstancesresultresponsetypedef).
 
 ### reset_address_attribute
+
+Resets the attribute of the specified IP address.
 
 Type annotations for `boto3.client("ec2").reset_address_attribute` method.
 
 Boto3 documentation:
 [EC2.Client.reset_address_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reset_address_attribute)
+
+Arguments mapping described in
+[ResetAddressAttributeRequestTypeDef](./type_defs.md#resetaddressattributerequesttypedef).
 
 Keyword-only arguments:
 
@@ -8172,28 +10444,40 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[ResetAddressAttributeResultTypeDef](./type_defs.md#resetaddressattributeresulttypedef).
+[ResetAddressAttributeResultResponseTypeDef](./type_defs.md#resetaddressattributeresultresponsetypedef).
 
 ### reset_ebs_default_kms_key_id
+
+Resets the default customer master key (CMK) for EBS encryption for your
+account in this Region to the AWS managed CMK for EBS.
 
 Type annotations for `boto3.client("ec2").reset_ebs_default_kms_key_id` method.
 
 Boto3 documentation:
 [EC2.Client.reset_ebs_default_kms_key_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reset_ebs_default_kms_key_id)
 
+Arguments mapping described in
+[ResetEbsDefaultKmsKeyIdRequestTypeDef](./type_defs.md#resetebsdefaultkmskeyidrequesttypedef).
+
 Keyword-only arguments:
 
 - `DryRun`: `bool`
 
 Returns
-[ResetEbsDefaultKmsKeyIdResultTypeDef](./type_defs.md#resetebsdefaultkmskeyidresulttypedef).
+[ResetEbsDefaultKmsKeyIdResultResponseTypeDef](./type_defs.md#resetebsdefaultkmskeyidresultresponsetypedef).
 
 ### reset_fpga_image_attribute
+
+Resets the specified attribute of the specified Amazon FPGA Image (AFI) to its
+default value.
 
 Type annotations for `boto3.client("ec2").reset_fpga_image_attribute` method.
 
 Boto3 documentation:
 [EC2.Client.reset_fpga_image_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reset_fpga_image_attribute)
+
+Arguments mapping described in
+[ResetFpgaImageAttributeRequestTypeDef](./type_defs.md#resetfpgaimageattributerequesttypedef).
 
 Keyword-only arguments:
 
@@ -8203,14 +10487,19 @@ Keyword-only arguments:
   [ResetFpgaImageAttributeNameType](./literals.md#resetfpgaimageattributenametype))
 
 Returns
-[ResetFpgaImageAttributeResultTypeDef](./type_defs.md#resetfpgaimageattributeresulttypedef).
+[ResetFpgaImageAttributeResultResponseTypeDef](./type_defs.md#resetfpgaimageattributeresultresponsetypedef).
 
 ### reset_image_attribute
+
+Resets an attribute of an AMI to its default value.
 
 Type annotations for `boto3.client("ec2").reset_image_attribute` method.
 
 Boto3 documentation:
 [EC2.Client.reset_image_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reset_image_attribute)
+
+Arguments mapping described in
+[ResetImageAttributeRequestTypeDef](./type_defs.md#resetimageattributerequesttypedef).
 
 Keyword-only arguments:
 
@@ -8222,10 +10511,15 @@ Keyword-only arguments:
 
 ### reset_instance_attribute
 
+Resets an attribute of an instance to its default value.
+
 Type annotations for `boto3.client("ec2").reset_instance_attribute` method.
 
 Boto3 documentation:
 [EC2.Client.reset_instance_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reset_instance_attribute)
+
+Arguments mapping described in
+[ResetInstanceAttributeRequestTypeDef](./type_defs.md#resetinstanceattributerequesttypedef).
 
 Keyword-only arguments:
 
@@ -8237,11 +10531,16 @@ Keyword-only arguments:
 
 ### reset_network_interface_attribute
 
+Resets a network interface attribute.
+
 Type annotations for `boto3.client("ec2").reset_network_interface_attribute`
 method.
 
 Boto3 documentation:
 [EC2.Client.reset_network_interface_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reset_network_interface_attribute)
+
+Arguments mapping described in
+[ResetNetworkInterfaceAttributeRequestTypeDef](./type_defs.md#resetnetworkinterfaceattributerequesttypedef).
 
 Keyword-only arguments:
 
@@ -8251,10 +10550,15 @@ Keyword-only arguments:
 
 ### reset_snapshot_attribute
 
+Resets permission settings for the specified snapshot.
+
 Type annotations for `boto3.client("ec2").reset_snapshot_attribute` method.
 
 Boto3 documentation:
 [EC2.Client.reset_snapshot_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.reset_snapshot_attribute)
+
+Arguments mapping described in
+[ResetSnapshotAttributeRequestTypeDef](./type_defs.md#resetsnapshotattributerequesttypedef).
 
 Keyword-only arguments:
 
@@ -8266,10 +10570,16 @@ Keyword-only arguments:
 
 ### restore_address_to_classic
 
+Restores an Elastic IP address that was previously moved to the EC2-VPC
+platform back to the EC2-Classic platform.
+
 Type annotations for `boto3.client("ec2").restore_address_to_classic` method.
 
 Boto3 documentation:
 [EC2.Client.restore_address_to_classic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.restore_address_to_classic)
+
+Arguments mapping described in
+[RestoreAddressToClassicRequestTypeDef](./type_defs.md#restoreaddresstoclassicrequesttypedef).
 
 Keyword-only arguments:
 
@@ -8277,15 +10587,21 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[RestoreAddressToClassicResultTypeDef](./type_defs.md#restoreaddresstoclassicresulttypedef).
+[RestoreAddressToClassicResultResponseTypeDef](./type_defs.md#restoreaddresstoclassicresultresponsetypedef).
 
 ### restore_managed_prefix_list_version
+
+Restores the entries from a previous version of a managed prefix list to a new
+version of the prefix list.
 
 Type annotations for `boto3.client("ec2").restore_managed_prefix_list_version`
 method.
 
 Boto3 documentation:
 [EC2.Client.restore_managed_prefix_list_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.restore_managed_prefix_list_version)
+
+Arguments mapping described in
+[RestoreManagedPrefixListVersionRequestTypeDef](./type_defs.md#restoremanagedprefixlistversionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -8295,14 +10611,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[RestoreManagedPrefixListVersionResultTypeDef](./type_defs.md#restoremanagedprefixlistversionresulttypedef).
+[RestoreManagedPrefixListVersionResultResponseTypeDef](./type_defs.md#restoremanagedprefixlistversionresultresponsetypedef).
 
 ### revoke_client_vpn_ingress
+
+Removes an ingress authorization rule from a Client VPN endpoint.
 
 Type annotations for `boto3.client("ec2").revoke_client_vpn_ingress` method.
 
 Boto3 documentation:
 [EC2.Client.revoke_client_vpn_ingress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.revoke_client_vpn_ingress)
+
+Arguments mapping described in
+[RevokeClientVpnIngressRequestTypeDef](./type_defs.md#revokeclientvpningressrequesttypedef).
 
 Keyword-only arguments:
 
@@ -8313,7 +10634,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[RevokeClientVpnIngressResultTypeDef](./type_defs.md#revokeclientvpningressresulttypedef).
+[RevokeClientVpnIngressResultResponseTypeDef](./type_defs.md#revokeclientvpningressresultresponsetypedef).
 
 ### revoke_security_group_egress
 
@@ -8321,6 +10642,9 @@ Type annotations for `boto3.client("ec2").revoke_security_group_egress` method.
 
 Boto3 documentation:
 [EC2.Client.revoke_security_group_egress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.revoke_security_group_egress)
+
+Arguments mapping described in
+[RevokeSecurityGroupEgressRequestTypeDef](./type_defs.md#revokesecuritygroupegressrequesttypedef).
 
 Keyword-only arguments:
 
@@ -8336,15 +10660,20 @@ Keyword-only arguments:
 - `SourceSecurityGroupOwnerId`: `str`
 
 Returns
-[RevokeSecurityGroupEgressResultTypeDef](./type_defs.md#revokesecuritygroupegressresulttypedef).
+[RevokeSecurityGroupEgressResultResponseTypeDef](./type_defs.md#revokesecuritygroupegressresultresponsetypedef).
 
 ### revoke_security_group_ingress
+
+Removes the specified ingress rules from a security group.
 
 Type annotations for `boto3.client("ec2").revoke_security_group_ingress`
 method.
 
 Boto3 documentation:
 [EC2.Client.revoke_security_group_ingress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.revoke_security_group_ingress)
+
+Arguments mapping described in
+[RevokeSecurityGroupIngressRequestTypeDef](./type_defs.md#revokesecuritygroupingressrequesttypedef).
 
 Keyword-only arguments:
 
@@ -8361,14 +10690,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[RevokeSecurityGroupIngressResultTypeDef](./type_defs.md#revokesecuritygroupingressresulttypedef).
+[RevokeSecurityGroupIngressResultResponseTypeDef](./type_defs.md#revokesecuritygroupingressresultresponsetypedef).
 
 ### run_instances
+
+Launches the specified number of instances using an AMI for which you have
+permissions.
 
 Type annotations for `boto3.client("ec2").run_instances` method.
 
 Boto3 documentation:
 [EC2.Client.run_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.run_instances)
+
+Arguments mapping described in
+[RunInstancesRequestTypeDef](./type_defs.md#runinstancesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -8432,10 +10767,15 @@ Returns [ReservationTypeDef](./type_defs.md#reservationtypedef).
 
 ### run_scheduled_instances
 
+Launches the specified Scheduled Instances.
+
 Type annotations for `boto3.client("ec2").run_scheduled_instances` method.
 
 Boto3 documentation:
 [EC2.Client.run_scheduled_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.run_scheduled_instances)
+
+Arguments mapping described in
+[RunScheduledInstancesRequestTypeDef](./type_defs.md#runscheduledinstancesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -8448,14 +10788,19 @@ Keyword-only arguments:
 - `InstanceCount`: `int`
 
 Returns
-[RunScheduledInstancesResultTypeDef](./type_defs.md#runscheduledinstancesresulttypedef).
+[RunScheduledInstancesResultResponseTypeDef](./type_defs.md#runscheduledinstancesresultresponsetypedef).
 
 ### search_local_gateway_routes
+
+Searches for routes in the specified local gateway route table.
 
 Type annotations for `boto3.client("ec2").search_local_gateway_routes` method.
 
 Boto3 documentation:
 [EC2.Client.search_local_gateway_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.search_local_gateway_routes)
+
+Arguments mapping described in
+[SearchLocalGatewayRoutesRequestTypeDef](./type_defs.md#searchlocalgatewayroutesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -8467,15 +10812,21 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[SearchLocalGatewayRoutesResultTypeDef](./type_defs.md#searchlocalgatewayroutesresulttypedef).
+[SearchLocalGatewayRoutesResultResponseTypeDef](./type_defs.md#searchlocalgatewayroutesresultresponsetypedef).
 
 ### search_transit_gateway_multicast_groups
+
+Searches one or more transit gateway multicast groups and returns the group
+membership information.
 
 Type annotations for
 `boto3.client("ec2").search_transit_gateway_multicast_groups` method.
 
 Boto3 documentation:
 [EC2.Client.search_transit_gateway_multicast_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.search_transit_gateway_multicast_groups)
+
+Arguments mapping described in
+[SearchTransitGatewayMulticastGroupsRequestTypeDef](./type_defs.md#searchtransitgatewaymulticastgroupsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -8486,15 +10837,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[SearchTransitGatewayMulticastGroupsResultTypeDef](./type_defs.md#searchtransitgatewaymulticastgroupsresulttypedef).
+[SearchTransitGatewayMulticastGroupsResultResponseTypeDef](./type_defs.md#searchtransitgatewaymulticastgroupsresultresponsetypedef).
 
 ### search_transit_gateway_routes
+
+Searches for routes in the specified transit gateway route table.
 
 Type annotations for `boto3.client("ec2").search_transit_gateway_routes`
 method.
 
 Boto3 documentation:
 [EC2.Client.search_transit_gateway_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.search_transit_gateway_routes)
+
+Arguments mapping described in
+[SearchTransitGatewayRoutesRequestTypeDef](./type_defs.md#searchtransitgatewayroutesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -8505,14 +10861,21 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[SearchTransitGatewayRoutesResultTypeDef](./type_defs.md#searchtransitgatewayroutesresulttypedef).
+[SearchTransitGatewayRoutesResultResponseTypeDef](./type_defs.md#searchtransitgatewayroutesresultresponsetypedef).
 
 ### send_diagnostic_interrupt
+
+Sends a diagnostic interrupt to the specified Amazon EC2 instance to trigger a
+*kernel panic* (on Linux instances), or a *blue screen* /*stop error* (on
+Windows instances).
 
 Type annotations for `boto3.client("ec2").send_diagnostic_interrupt` method.
 
 Boto3 documentation:
 [EC2.Client.send_diagnostic_interrupt](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.send_diagnostic_interrupt)
+
+Arguments mapping described in
+[SendDiagnosticInterruptRequestTypeDef](./type_defs.md#senddiagnosticinterruptrequesttypedef).
 
 Keyword-only arguments:
 
@@ -8521,10 +10884,15 @@ Keyword-only arguments:
 
 ### start_instances
 
+Starts an Amazon EBS-backed instance that you've previously stopped.
+
 Type annotations for `boto3.client("ec2").start_instances` method.
 
 Boto3 documentation:
 [EC2.Client.start_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.start_instances)
+
+Arguments mapping described in
+[StartInstancesRequestTypeDef](./type_defs.md#startinstancesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -8533,15 +10901,20 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[StartInstancesResultTypeDef](./type_defs.md#startinstancesresulttypedef).
+[StartInstancesResultResponseTypeDef](./type_defs.md#startinstancesresultresponsetypedef).
 
 ### start_network_insights_analysis
+
+Starts analyzing the specified path.
 
 Type annotations for `boto3.client("ec2").start_network_insights_analysis`
 method.
 
 Boto3 documentation:
 [EC2.Client.start_network_insights_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.start_network_insights_analysis)
+
+Arguments mapping described in
+[StartNetworkInsightsAnalysisRequestTypeDef](./type_defs.md#startnetworkinsightsanalysisrequesttypedef).
 
 Keyword-only arguments:
 
@@ -8553,9 +10926,12 @@ Keyword-only arguments:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns
-[StartNetworkInsightsAnalysisResultTypeDef](./type_defs.md#startnetworkinsightsanalysisresulttypedef).
+[StartNetworkInsightsAnalysisResultResponseTypeDef](./type_defs.md#startnetworkinsightsanalysisresultresponsetypedef).
 
 ### start_vpc_endpoint_service_private_dns_verification
+
+Initiates the verification process to prove that the service provider owns the
+private DNS name domain for the endpoint service.
 
 Type annotations for
 `boto3.client("ec2").start_vpc_endpoint_service_private_dns_verification`
@@ -8564,20 +10940,28 @@ method.
 Boto3 documentation:
 [EC2.Client.start_vpc_endpoint_service_private_dns_verification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.start_vpc_endpoint_service_private_dns_verification)
 
+Arguments mapping described in
+[StartVpcEndpointServicePrivateDnsVerificationRequestTypeDef](./type_defs.md#startvpcendpointserviceprivatednsverificationrequesttypedef).
+
 Keyword-only arguments:
 
 - `ServiceId`: `str` *(required)*
 - `DryRun`: `bool`
 
 Returns
-[StartVpcEndpointServicePrivateDnsVerificationResultTypeDef](./type_defs.md#startvpcendpointserviceprivatednsverificationresulttypedef).
+[StartVpcEndpointServicePrivateDnsVerificationResultResponseTypeDef](./type_defs.md#startvpcendpointserviceprivatednsverificationresultresponsetypedef).
 
 ### stop_instances
+
+Stops an Amazon EBS-backed instance.
 
 Type annotations for `boto3.client("ec2").stop_instances` method.
 
 Boto3 documentation:
 [EC2.Client.stop_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.stop_instances)
+
+Arguments mapping described in
+[StopInstancesRequestTypeDef](./type_defs.md#stopinstancesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -8587,15 +10971,20 @@ Keyword-only arguments:
 - `Force`: `bool`
 
 Returns
-[StopInstancesResultTypeDef](./type_defs.md#stopinstancesresulttypedef).
+[StopInstancesResultResponseTypeDef](./type_defs.md#stopinstancesresultresponsetypedef).
 
 ### terminate_client_vpn_connections
+
+Terminates active Client VPN endpoint connections.
 
 Type annotations for `boto3.client("ec2").terminate_client_vpn_connections`
 method.
 
 Boto3 documentation:
 [EC2.Client.terminate_client_vpn_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.terminate_client_vpn_connections)
+
+Arguments mapping described in
+[TerminateClientVpnConnectionsRequestTypeDef](./type_defs.md#terminateclientvpnconnectionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -8605,14 +10994,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[TerminateClientVpnConnectionsResultTypeDef](./type_defs.md#terminateclientvpnconnectionsresulttypedef).
+[TerminateClientVpnConnectionsResultResponseTypeDef](./type_defs.md#terminateclientvpnconnectionsresultresponsetypedef).
 
 ### terminate_instances
+
+Shuts down the specified instances.
 
 Type annotations for `boto3.client("ec2").terminate_instances` method.
 
 Boto3 documentation:
 [EC2.Client.terminate_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.terminate_instances)
+
+Arguments mapping described in
+[TerminateInstancesRequestTypeDef](./type_defs.md#terminateinstancesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -8620,14 +11014,19 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[TerminateInstancesResultTypeDef](./type_defs.md#terminateinstancesresulttypedef).
+[TerminateInstancesResultResponseTypeDef](./type_defs.md#terminateinstancesresultresponsetypedef).
 
 ### unassign_ipv6_addresses
+
+Unassigns one or more IPv6 addresses from a network interface.
 
 Type annotations for `boto3.client("ec2").unassign_ipv6_addresses` method.
 
 Boto3 documentation:
 [EC2.Client.unassign_ipv6_addresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.unassign_ipv6_addresses)
+
+Arguments mapping described in
+[UnassignIpv6AddressesRequestTypeDef](./type_defs.md#unassignipv6addressesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -8635,15 +11034,20 @@ Keyword-only arguments:
 - `Ipv6Addresses`: `List`\[`str`\] *(required)*
 
 Returns
-[UnassignIpv6AddressesResultTypeDef](./type_defs.md#unassignipv6addressesresulttypedef).
+[UnassignIpv6AddressesResultResponseTypeDef](./type_defs.md#unassignipv6addressesresultresponsetypedef).
 
 ### unassign_private_ip_addresses
+
+Unassigns one or more secondary private IP addresses from a network interface.
 
 Type annotations for `boto3.client("ec2").unassign_private_ip_addresses`
 method.
 
 Boto3 documentation:
 [EC2.Client.unassign_private_ip_addresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.unassign_private_ip_addresses)
+
+Arguments mapping described in
+[UnassignPrivateIpAddressesRequestTypeDef](./type_defs.md#unassignprivateipaddressesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -8652,10 +11056,15 @@ Keyword-only arguments:
 
 ### unmonitor_instances
 
+Disables detailed monitoring for a running instance.
+
 Type annotations for `boto3.client("ec2").unmonitor_instances` method.
 
 Boto3 documentation:
 [EC2.Client.unmonitor_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.unmonitor_instances)
+
+Arguments mapping described in
+[UnmonitorInstancesRequestTypeDef](./type_defs.md#unmonitorinstancesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -8663,7 +11072,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[UnmonitorInstancesResultTypeDef](./type_defs.md#unmonitorinstancesresulttypedef).
+[UnmonitorInstancesResultResponseTypeDef](./type_defs.md#unmonitorinstancesresultresponsetypedef).
 
 ### update_security_group_rule_descriptions_egress
 
@@ -8673,6 +11082,9 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.update_security_group_rule_descriptions_egress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.update_security_group_rule_descriptions_egress)
 
+Arguments mapping described in
+[UpdateSecurityGroupRuleDescriptionsEgressRequestTypeDef](./type_defs.md#updatesecuritygroupruledescriptionsegressrequesttypedef).
+
 Keyword-only arguments:
 
 - `IpPermissions`:
@@ -8683,9 +11095,11 @@ Keyword-only arguments:
 - `GroupName`: `str`
 
 Returns
-[UpdateSecurityGroupRuleDescriptionsEgressResultTypeDef](./type_defs.md#updatesecuritygroupruledescriptionsegressresulttypedef).
+[UpdateSecurityGroupRuleDescriptionsEgressResultResponseTypeDef](./type_defs.md#updatesecuritygroupruledescriptionsegressresultresponsetypedef).
 
 ### update_security_group_rule_descriptions_ingress
+
+Updates the description of an ingress (inbound) security group rule.
 
 Type annotations for
 `boto3.client("ec2").update_security_group_rule_descriptions_ingress` method.
@@ -8693,6 +11107,9 @@ Type annotations for
 Boto3 documentation:
 [EC2.Client.update_security_group_rule_descriptions_ingress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.update_security_group_rule_descriptions_ingress)
 
+Arguments mapping described in
+[UpdateSecurityGroupRuleDescriptionsIngressRequestTypeDef](./type_defs.md#updatesecuritygroupruledescriptionsingressrequesttypedef).
+
 Keyword-only arguments:
 
 - `IpPermissions`:
@@ -8703,14 +11120,19 @@ Keyword-only arguments:
 - `GroupName`: `str`
 
 Returns
-[UpdateSecurityGroupRuleDescriptionsIngressResultTypeDef](./type_defs.md#updatesecuritygroupruledescriptionsingressresulttypedef).
+[UpdateSecurityGroupRuleDescriptionsIngressResultResponseTypeDef](./type_defs.md#updatesecuritygroupruledescriptionsingressresultresponsetypedef).
 
 ### withdraw_byoip_cidr
+
+Stops advertising an address range that is provisioned as an address pool.
 
 Type annotations for `boto3.client("ec2").withdraw_byoip_cidr` method.
 
 Boto3 documentation:
 [EC2.Client.withdraw_byoip_cidr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.withdraw_byoip_cidr)
+
+Arguments mapping described in
+[WithdrawByoipCidrRequestTypeDef](./type_defs.md#withdrawbyoipcidrrequesttypedef).
 
 Keyword-only arguments:
 
@@ -8718,7 +11140,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[WithdrawByoipCidrResultTypeDef](./type_defs.md#withdrawbyoipcidrresulttypedef).
+[WithdrawByoipCidrResultResponseTypeDef](./type_defs.md#withdrawbyoipcidrresultresponsetypedef).
 
 ### get_paginator
 

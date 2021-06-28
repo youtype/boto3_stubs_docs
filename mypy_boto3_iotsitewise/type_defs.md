@@ -29,47 +29,79 @@ type annotations stubs module
   - [AssetRelationshipSummaryTypeDef](#assetrelationshipsummarytypedef)
   - [AssetStatusTypeDef](#assetstatustypedef)
   - [AssetSummaryTypeDef](#assetsummarytypedef)
+  - [AssociateAssetsRequestTypeDef](#associateassetsrequesttypedef)
   - [AssociatedAssetsSummaryTypeDef](#associatedassetssummarytypedef)
   - [AttributeTypeDef](#attributetypedef)
-  - [BatchAssociateProjectAssetsResponseTypeDef](#batchassociateprojectassetsresponsetypedef)
-  - [BatchDisassociateProjectAssetsResponseTypeDef](#batchdisassociateprojectassetsresponsetypedef)
+  - [BatchAssociateProjectAssetsRequestTypeDef](#batchassociateprojectassetsrequesttypedef)
+  - [BatchAssociateProjectAssetsResponseResponseTypeDef](#batchassociateprojectassetsresponseresponsetypedef)
+  - [BatchDisassociateProjectAssetsRequestTypeDef](#batchdisassociateprojectassetsrequesttypedef)
+  - [BatchDisassociateProjectAssetsResponseResponseTypeDef](#batchdisassociateprojectassetsresponseresponsetypedef)
   - [BatchPutAssetPropertyErrorEntryTypeDef](#batchputassetpropertyerrorentrytypedef)
   - [BatchPutAssetPropertyErrorTypeDef](#batchputassetpropertyerrortypedef)
-  - [BatchPutAssetPropertyValueResponseTypeDef](#batchputassetpropertyvalueresponsetypedef)
+  - [BatchPutAssetPropertyValueRequestTypeDef](#batchputassetpropertyvaluerequesttypedef)
+  - [BatchPutAssetPropertyValueResponseResponseTypeDef](#batchputassetpropertyvalueresponseresponsetypedef)
   - [CompositeModelPropertyTypeDef](#compositemodelpropertytypedef)
   - [ConfigurationErrorDetailsTypeDef](#configurationerrordetailstypedef)
   - [ConfigurationStatusTypeDef](#configurationstatustypedef)
-  - [CreateAccessPolicyResponseTypeDef](#createaccesspolicyresponsetypedef)
-  - [CreateAssetModelResponseTypeDef](#createassetmodelresponsetypedef)
-  - [CreateAssetResponseTypeDef](#createassetresponsetypedef)
-  - [CreateDashboardResponseTypeDef](#createdashboardresponsetypedef)
-  - [CreateGatewayResponseTypeDef](#creategatewayresponsetypedef)
-  - [CreatePortalResponseTypeDef](#createportalresponsetypedef)
-  - [CreateProjectResponseTypeDef](#createprojectresponsetypedef)
+  - [CreateAccessPolicyRequestTypeDef](#createaccesspolicyrequesttypedef)
+  - [CreateAccessPolicyResponseResponseTypeDef](#createaccesspolicyresponseresponsetypedef)
+  - [CreateAssetModelRequestTypeDef](#createassetmodelrequesttypedef)
+  - [CreateAssetModelResponseResponseTypeDef](#createassetmodelresponseresponsetypedef)
+  - [CreateAssetRequestTypeDef](#createassetrequesttypedef)
+  - [CreateAssetResponseResponseTypeDef](#createassetresponseresponsetypedef)
+  - [CreateDashboardRequestTypeDef](#createdashboardrequesttypedef)
+  - [CreateDashboardResponseResponseTypeDef](#createdashboardresponseresponsetypedef)
+  - [CreateGatewayRequestTypeDef](#creategatewayrequesttypedef)
+  - [CreateGatewayResponseResponseTypeDef](#creategatewayresponseresponsetypedef)
+  - [CreatePortalRequestTypeDef](#createportalrequesttypedef)
+  - [CreatePortalResponseResponseTypeDef](#createportalresponseresponsetypedef)
+  - [CreateProjectRequestTypeDef](#createprojectrequesttypedef)
+  - [CreateProjectResponseResponseTypeDef](#createprojectresponseresponsetypedef)
   - [DashboardSummaryTypeDef](#dashboardsummarytypedef)
-  - [DeleteAssetModelResponseTypeDef](#deleteassetmodelresponsetypedef)
-  - [DeleteAssetResponseTypeDef](#deleteassetresponsetypedef)
-  - [DeletePortalResponseTypeDef](#deleteportalresponsetypedef)
-  - [DescribeAccessPolicyResponseTypeDef](#describeaccesspolicyresponsetypedef)
-  - [DescribeAssetModelResponseTypeDef](#describeassetmodelresponsetypedef)
-  - [DescribeAssetPropertyResponseTypeDef](#describeassetpropertyresponsetypedef)
-  - [DescribeAssetResponseTypeDef](#describeassetresponsetypedef)
-  - [DescribeDashboardResponseTypeDef](#describedashboardresponsetypedef)
-  - [DescribeDefaultEncryptionConfigurationResponseTypeDef](#describedefaultencryptionconfigurationresponsetypedef)
-  - [DescribeGatewayCapabilityConfigurationResponseTypeDef](#describegatewaycapabilityconfigurationresponsetypedef)
-  - [DescribeGatewayResponseTypeDef](#describegatewayresponsetypedef)
-  - [DescribeLoggingOptionsResponseTypeDef](#describeloggingoptionsresponsetypedef)
-  - [DescribePortalResponseTypeDef](#describeportalresponsetypedef)
-  - [DescribeProjectResponseTypeDef](#describeprojectresponsetypedef)
+  - [DeleteAccessPolicyRequestTypeDef](#deleteaccesspolicyrequesttypedef)
+  - [DeleteAssetModelRequestTypeDef](#deleteassetmodelrequesttypedef)
+  - [DeleteAssetModelResponseResponseTypeDef](#deleteassetmodelresponseresponsetypedef)
+  - [DeleteAssetRequestTypeDef](#deleteassetrequesttypedef)
+  - [DeleteAssetResponseResponseTypeDef](#deleteassetresponseresponsetypedef)
+  - [DeleteDashboardRequestTypeDef](#deletedashboardrequesttypedef)
+  - [DeleteGatewayRequestTypeDef](#deletegatewayrequesttypedef)
+  - [DeletePortalRequestTypeDef](#deleteportalrequesttypedef)
+  - [DeletePortalResponseResponseTypeDef](#deleteportalresponseresponsetypedef)
+  - [DeleteProjectRequestTypeDef](#deleteprojectrequesttypedef)
+  - [DescribeAccessPolicyRequestTypeDef](#describeaccesspolicyrequesttypedef)
+  - [DescribeAccessPolicyResponseResponseTypeDef](#describeaccesspolicyresponseresponsetypedef)
+  - [DescribeAssetModelRequestTypeDef](#describeassetmodelrequesttypedef)
+  - [DescribeAssetModelResponseResponseTypeDef](#describeassetmodelresponseresponsetypedef)
+  - [DescribeAssetPropertyRequestTypeDef](#describeassetpropertyrequesttypedef)
+  - [DescribeAssetPropertyResponseResponseTypeDef](#describeassetpropertyresponseresponsetypedef)
+  - [DescribeAssetRequestTypeDef](#describeassetrequesttypedef)
+  - [DescribeAssetResponseResponseTypeDef](#describeassetresponseresponsetypedef)
+  - [DescribeDashboardRequestTypeDef](#describedashboardrequesttypedef)
+  - [DescribeDashboardResponseResponseTypeDef](#describedashboardresponseresponsetypedef)
+  - [DescribeDefaultEncryptionConfigurationResponseResponseTypeDef](#describedefaultencryptionconfigurationresponseresponsetypedef)
+  - [DescribeGatewayCapabilityConfigurationRequestTypeDef](#describegatewaycapabilityconfigurationrequesttypedef)
+  - [DescribeGatewayCapabilityConfigurationResponseResponseTypeDef](#describegatewaycapabilityconfigurationresponseresponsetypedef)
+  - [DescribeGatewayRequestTypeDef](#describegatewayrequesttypedef)
+  - [DescribeGatewayResponseResponseTypeDef](#describegatewayresponseresponsetypedef)
+  - [DescribeLoggingOptionsResponseResponseTypeDef](#describeloggingoptionsresponseresponsetypedef)
+  - [DescribePortalRequestTypeDef](#describeportalrequesttypedef)
+  - [DescribePortalResponseResponseTypeDef](#describeportalresponseresponsetypedef)
+  - [DescribeProjectRequestTypeDef](#describeprojectrequesttypedef)
+  - [DescribeProjectResponseResponseTypeDef](#describeprojectresponseresponsetypedef)
+  - [DisassociateAssetsRequestTypeDef](#disassociateassetsrequesttypedef)
   - [ErrorDetailsTypeDef](#errordetailstypedef)
   - [ExpressionVariableTypeDef](#expressionvariabletypedef)
   - [GatewayCapabilitySummaryTypeDef](#gatewaycapabilitysummarytypedef)
   - [GatewayPlatformTypeDef](#gatewayplatformtypedef)
   - [GatewaySummaryTypeDef](#gatewaysummarytypedef)
-  - [GetAssetPropertyAggregatesResponseTypeDef](#getassetpropertyaggregatesresponsetypedef)
-  - [GetAssetPropertyValueHistoryResponseTypeDef](#getassetpropertyvaluehistoryresponsetypedef)
-  - [GetAssetPropertyValueResponseTypeDef](#getassetpropertyvalueresponsetypedef)
-  - [GetInterpolatedAssetPropertyValuesResponseTypeDef](#getinterpolatedassetpropertyvaluesresponsetypedef)
+  - [GetAssetPropertyAggregatesRequestTypeDef](#getassetpropertyaggregatesrequesttypedef)
+  - [GetAssetPropertyAggregatesResponseResponseTypeDef](#getassetpropertyaggregatesresponseresponsetypedef)
+  - [GetAssetPropertyValueHistoryRequestTypeDef](#getassetpropertyvaluehistoryrequesttypedef)
+  - [GetAssetPropertyValueHistoryResponseResponseTypeDef](#getassetpropertyvaluehistoryresponseresponsetypedef)
+  - [GetAssetPropertyValueRequestTypeDef](#getassetpropertyvaluerequesttypedef)
+  - [GetAssetPropertyValueResponseResponseTypeDef](#getassetpropertyvalueresponseresponsetypedef)
+  - [GetInterpolatedAssetPropertyValuesRequestTypeDef](#getinterpolatedassetpropertyvaluesrequesttypedef)
+  - [GetInterpolatedAssetPropertyValuesResponseResponseTypeDef](#getinterpolatedassetpropertyvaluesresponseresponsetypedef)
   - [GreengrassTypeDef](#greengrasstypedef)
   - [GroupIdentityTypeDef](#groupidentitytypedef)
   - [IAMRoleIdentityTypeDef](#iamroleidentitytypedef)
@@ -79,17 +111,28 @@ type annotations stubs module
   - [ImageLocationTypeDef](#imagelocationtypedef)
   - [ImageTypeDef](#imagetypedef)
   - [InterpolatedAssetPropertyValueTypeDef](#interpolatedassetpropertyvaluetypedef)
-  - [ListAccessPoliciesResponseTypeDef](#listaccesspoliciesresponsetypedef)
-  - [ListAssetModelsResponseTypeDef](#listassetmodelsresponsetypedef)
-  - [ListAssetRelationshipsResponseTypeDef](#listassetrelationshipsresponsetypedef)
-  - [ListAssetsResponseTypeDef](#listassetsresponsetypedef)
-  - [ListAssociatedAssetsResponseTypeDef](#listassociatedassetsresponsetypedef)
-  - [ListDashboardsResponseTypeDef](#listdashboardsresponsetypedef)
-  - [ListGatewaysResponseTypeDef](#listgatewaysresponsetypedef)
-  - [ListPortalsResponseTypeDef](#listportalsresponsetypedef)
-  - [ListProjectAssetsResponseTypeDef](#listprojectassetsresponsetypedef)
-  - [ListProjectsResponseTypeDef](#listprojectsresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListAccessPoliciesRequestTypeDef](#listaccesspoliciesrequesttypedef)
+  - [ListAccessPoliciesResponseResponseTypeDef](#listaccesspoliciesresponseresponsetypedef)
+  - [ListAssetModelsRequestTypeDef](#listassetmodelsrequesttypedef)
+  - [ListAssetModelsResponseResponseTypeDef](#listassetmodelsresponseresponsetypedef)
+  - [ListAssetRelationshipsRequestTypeDef](#listassetrelationshipsrequesttypedef)
+  - [ListAssetRelationshipsResponseResponseTypeDef](#listassetrelationshipsresponseresponsetypedef)
+  - [ListAssetsRequestTypeDef](#listassetsrequesttypedef)
+  - [ListAssetsResponseResponseTypeDef](#listassetsresponseresponsetypedef)
+  - [ListAssociatedAssetsRequestTypeDef](#listassociatedassetsrequesttypedef)
+  - [ListAssociatedAssetsResponseResponseTypeDef](#listassociatedassetsresponseresponsetypedef)
+  - [ListDashboardsRequestTypeDef](#listdashboardsrequesttypedef)
+  - [ListDashboardsResponseResponseTypeDef](#listdashboardsresponseresponsetypedef)
+  - [ListGatewaysRequestTypeDef](#listgatewaysrequesttypedef)
+  - [ListGatewaysResponseResponseTypeDef](#listgatewaysresponseresponsetypedef)
+  - [ListPortalsRequestTypeDef](#listportalsrequesttypedef)
+  - [ListPortalsResponseResponseTypeDef](#listportalsresponseresponsetypedef)
+  - [ListProjectAssetsRequestTypeDef](#listprojectassetsrequesttypedef)
+  - [ListProjectAssetsResponseResponseTypeDef](#listprojectassetsresponseresponsetypedef)
+  - [ListProjectsRequestTypeDef](#listprojectsrequesttypedef)
+  - [ListProjectsResponseResponseTypeDef](#listprojectsresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [LoggingOptionsTypeDef](#loggingoptionstypedef)
   - [MetricTypeDef](#metrictypedef)
   - [MetricWindowTypeDef](#metricwindowtypedef)
@@ -104,15 +147,29 @@ type annotations stubs module
   - [PropertyTypeDef](#propertytypedef)
   - [PropertyTypeTypeDef](#propertytypetypedef)
   - [PutAssetPropertyValueEntryTypeDef](#putassetpropertyvalueentrytypedef)
-  - [PutDefaultEncryptionConfigurationResponseTypeDef](#putdefaultencryptionconfigurationresponsetypedef)
+  - [PutDefaultEncryptionConfigurationRequestTypeDef](#putdefaultencryptionconfigurationrequesttypedef)
+  - [PutDefaultEncryptionConfigurationResponseResponseTypeDef](#putdefaultencryptionconfigurationresponseresponsetypedef)
+  - [PutLoggingOptionsRequestTypeDef](#putloggingoptionsrequesttypedef)
   - [ResourceTypeDef](#resourcetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TimeInNanosTypeDef](#timeinnanostypedef)
   - [TransformTypeDef](#transformtypedef)
   - [TumblingWindowTypeDef](#tumblingwindowtypedef)
-  - [UpdateAssetModelResponseTypeDef](#updateassetmodelresponsetypedef)
-  - [UpdateAssetResponseTypeDef](#updateassetresponsetypedef)
-  - [UpdateGatewayCapabilityConfigurationResponseTypeDef](#updategatewaycapabilityconfigurationresponsetypedef)
-  - [UpdatePortalResponseTypeDef](#updateportalresponsetypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateAccessPolicyRequestTypeDef](#updateaccesspolicyrequesttypedef)
+  - [UpdateAssetModelRequestTypeDef](#updateassetmodelrequesttypedef)
+  - [UpdateAssetModelResponseResponseTypeDef](#updateassetmodelresponseresponsetypedef)
+  - [UpdateAssetPropertyRequestTypeDef](#updateassetpropertyrequesttypedef)
+  - [UpdateAssetRequestTypeDef](#updateassetrequesttypedef)
+  - [UpdateAssetResponseResponseTypeDef](#updateassetresponseresponsetypedef)
+  - [UpdateDashboardRequestTypeDef](#updatedashboardrequesttypedef)
+  - [UpdateGatewayCapabilityConfigurationRequestTypeDef](#updategatewaycapabilityconfigurationrequesttypedef)
+  - [UpdateGatewayCapabilityConfigurationResponseResponseTypeDef](#updategatewaycapabilityconfigurationresponseresponsetypedef)
+  - [UpdateGatewayRequestTypeDef](#updategatewayrequesttypedef)
+  - [UpdatePortalRequestTypeDef](#updateportalrequesttypedef)
+  - [UpdatePortalResponseResponseTypeDef](#updateportalresponseresponsetypedef)
+  - [UpdateProjectRequestTypeDef](#updateprojectrequesttypedef)
   - [UserIdentityTypeDef](#useridentitytypedef)
   - [VariableValueTypeDef](#variablevaluetypedef)
   - [VariantTypeDef](#varianttypedef)
@@ -443,6 +500,22 @@ Required fields:
 - `hierarchies`:
   `List`\[[AssetHierarchyTypeDef](./type_defs.md#assethierarchytypedef)\]
 
+## AssociateAssetsRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import AssociateAssetsRequestTypeDef
+```
+
+Required fields:
+
+- `assetId`: `str`
+- `hierarchyId`: `str`
+- `childAssetId`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
+
 ## AssociatedAssetsSummaryTypeDef
 
 ```python
@@ -471,27 +544,61 @@ Optional fields:
 
 - `defaultValue`: `str`
 
-## BatchAssociateProjectAssetsResponseTypeDef
+## BatchAssociateProjectAssetsRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import BatchAssociateProjectAssetsResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import BatchAssociateProjectAssetsRequestTypeDef
 ```
+
+Required fields:
+
+- `projectId`: `str`
+- `assetIds`: `List`\[`str`\]
 
 Optional fields:
 
-- `errors`:
-  `List`\[[AssetErrorDetailsTypeDef](./type_defs.md#asseterrordetailstypedef)\]
+- `clientToken`: `str`
 
-## BatchDisassociateProjectAssetsResponseTypeDef
+## BatchAssociateProjectAssetsResponseResponseTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import BatchDisassociateProjectAssetsResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import BatchAssociateProjectAssetsResponseResponseTypeDef
 ```
+
+Required fields:
+
+- `errors`:
+  `List`\[[AssetErrorDetailsTypeDef](./type_defs.md#asseterrordetailstypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## BatchDisassociateProjectAssetsRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import BatchDisassociateProjectAssetsRequestTypeDef
+```
+
+Required fields:
+
+- `projectId`: `str`
+- `assetIds`: `List`\[`str`\]
 
 Optional fields:
 
+- `clientToken`: `str`
+
+## BatchDisassociateProjectAssetsResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import BatchDisassociateProjectAssetsResponseResponseTypeDef
+```
+
+Required fields:
+
 - `errors`:
   `List`\[[AssetErrorDetailsTypeDef](./type_defs.md#asseterrordetailstypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## BatchPutAssetPropertyErrorEntryTypeDef
 
@@ -519,16 +626,29 @@ Required fields:
 - `timestamps`:
   `List`\[[TimeInNanosTypeDef](./type_defs.md#timeinnanostypedef)\]
 
-## BatchPutAssetPropertyValueResponseTypeDef
+## BatchPutAssetPropertyValueRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import BatchPutAssetPropertyValueResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import BatchPutAssetPropertyValueRequestTypeDef
+```
+
+Required fields:
+
+- `entries`:
+  `List`\[[PutAssetPropertyValueEntryTypeDef](./type_defs.md#putassetpropertyvalueentrytypedef)\]
+
+## BatchPutAssetPropertyValueResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import BatchPutAssetPropertyValueResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `errorEntries`:
   `List`\[[BatchPutAssetPropertyErrorEntryTypeDef](./type_defs.md#batchputassetpropertyerrorentrytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CompositeModelPropertyTypeDef
 
@@ -568,21 +688,62 @@ Optional fields:
 - `error`:
   [ConfigurationErrorDetailsTypeDef](./type_defs.md#configurationerrordetailstypedef)
 
-## CreateAccessPolicyResponseTypeDef
+## CreateAccessPolicyRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import CreateAccessPolicyResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import CreateAccessPolicyRequestTypeDef
+```
+
+Required fields:
+
+- `accessPolicyIdentity`: [IdentityTypeDef](./type_defs.md#identitytypedef)
+- `accessPolicyResource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
+- `accessPolicyPermission`: [PermissionType](./literals.md#permissiontype)
+
+Optional fields:
+
+- `clientToken`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateAccessPolicyResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import CreateAccessPolicyResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `accessPolicyId`: `str`
 - `accessPolicyArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateAssetModelResponseTypeDef
+## CreateAssetModelRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import CreateAssetModelResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import CreateAssetModelRequestTypeDef
+```
+
+Required fields:
+
+- `assetModelName`: `str`
+
+Optional fields:
+
+- `assetModelDescription`: `str`
+- `assetModelProperties`:
+  `List`\[[AssetModelPropertyDefinitionTypeDef](./type_defs.md#assetmodelpropertydefinitiontypedef)\]
+- `assetModelHierarchies`:
+  `List`\[[AssetModelHierarchyDefinitionTypeDef](./type_defs.md#assetmodelhierarchydefinitiontypedef)\]
+- `assetModelCompositeModels`:
+  `List`\[[AssetModelCompositeModelDefinitionTypeDef](./type_defs.md#assetmodelcompositemodeldefinitiontypedef)\]
+- `clientToken`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateAssetModelResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import CreateAssetModelResponseResponseTypeDef
 ```
 
 Required fields:
@@ -591,11 +752,29 @@ Required fields:
 - `assetModelArn`: `str`
 - `assetModelStatus`:
   [AssetModelStatusTypeDef](./type_defs.md#assetmodelstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateAssetResponseTypeDef
+## CreateAssetRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import CreateAssetResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import CreateAssetRequestTypeDef
+```
+
+Required fields:
+
+- `assetName`: `str`
+- `assetModelId`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateAssetResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import CreateAssetResponseResponseTypeDef
 ```
 
 Required fields:
@@ -603,33 +782,95 @@ Required fields:
 - `assetId`: `str`
 - `assetArn`: `str`
 - `assetStatus`: [AssetStatusTypeDef](./type_defs.md#assetstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDashboardResponseTypeDef
+## CreateDashboardRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import CreateDashboardResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import CreateDashboardRequestTypeDef
+```
+
+Required fields:
+
+- `projectId`: `str`
+- `dashboardName`: `str`
+- `dashboardDefinition`: `str`
+
+Optional fields:
+
+- `dashboardDescription`: `str`
+- `clientToken`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateDashboardResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import CreateDashboardResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `dashboardId`: `str`
 - `dashboardArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateGatewayResponseTypeDef
+## CreateGatewayRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import CreateGatewayResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import CreateGatewayRequestTypeDef
+```
+
+Required fields:
+
+- `gatewayName`: `str`
+- `gatewayPlatform`:
+  [GatewayPlatformTypeDef](./type_defs.md#gatewayplatformtypedef)
+
+Optional fields:
+
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateGatewayResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import CreateGatewayResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `gatewayId`: `str`
 - `gatewayArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePortalResponseTypeDef
+## CreatePortalRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import CreatePortalResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import CreatePortalRequestTypeDef
+```
+
+Required fields:
+
+- `portalName`: `str`
+- `portalContactEmail`: `str`
+- `roleArn`: `str`
+
+Optional fields:
+
+- `portalDescription`: `str`
+- `clientToken`: `str`
+- `portalLogoImageFile`: [ImageFileTypeDef](./type_defs.md#imagefiletypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+- `portalAuthMode`: [AuthModeType](./literals.md#authmodetype)
+- `notificationSenderEmail`: `str`
+- `alarms`: [AlarmsTypeDef](./type_defs.md#alarmstypedef)
+
+## CreatePortalResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import CreatePortalResponseResponseTypeDef
 ```
 
 Required fields:
@@ -639,17 +880,38 @@ Required fields:
 - `portalStartUrl`: `str`
 - `portalStatus`: [PortalStatusTypeDef](./type_defs.md#portalstatustypedef)
 - `ssoApplicationId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateProjectResponseTypeDef
+## CreateProjectRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import CreateProjectResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import CreateProjectRequestTypeDef
+```
+
+Required fields:
+
+- `portalId`: `str`
+- `projectName`: `str`
+
+Optional fields:
+
+- `projectDescription`: `str`
+- `clientToken`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateProjectResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import CreateProjectResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `projectId`: `str`
 - `projectArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DashboardSummaryTypeDef
 
@@ -668,41 +930,151 @@ Optional fields:
 - `creationDate`: `datetime`
 - `lastUpdateDate`: `datetime`
 
-## DeleteAssetModelResponseTypeDef
+## DeleteAccessPolicyRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import DeleteAssetModelResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import DeleteAccessPolicyRequestTypeDef
+```
+
+Required fields:
+
+- `accessPolicyId`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
+
+## DeleteAssetModelRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import DeleteAssetModelRequestTypeDef
+```
+
+Required fields:
+
+- `assetModelId`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
+
+## DeleteAssetModelResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import DeleteAssetModelResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `assetModelStatus`:
   [AssetModelStatusTypeDef](./type_defs.md#assetmodelstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteAssetResponseTypeDef
+## DeleteAssetRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import DeleteAssetResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import DeleteAssetRequestTypeDef
+```
+
+Required fields:
+
+- `assetId`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
+
+## DeleteAssetResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import DeleteAssetResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `assetStatus`: [AssetStatusTypeDef](./type_defs.md#assetstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeletePortalResponseTypeDef
+## DeleteDashboardRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import DeletePortalResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import DeleteDashboardRequestTypeDef
+```
+
+Required fields:
+
+- `dashboardId`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
+
+## DeleteGatewayRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import DeleteGatewayRequestTypeDef
+```
+
+Required fields:
+
+- `gatewayId`: `str`
+
+## DeletePortalRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import DeletePortalRequestTypeDef
+```
+
+Required fields:
+
+- `portalId`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
+
+## DeletePortalResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import DeletePortalResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `portalStatus`: [PortalStatusTypeDef](./type_defs.md#portalstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAccessPolicyResponseTypeDef
+## DeleteProjectRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import DescribeAccessPolicyResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import DeleteProjectRequestTypeDef
+```
+
+Required fields:
+
+- `projectId`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
+
+## DescribeAccessPolicyRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import DescribeAccessPolicyRequestTypeDef
+```
+
+Required fields:
+
+- `accessPolicyId`: `str`
+
+## DescribeAccessPolicyResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import DescribeAccessPolicyResponseResponseTypeDef
 ```
 
 Required fields:
@@ -714,11 +1086,23 @@ Required fields:
 - `accessPolicyPermission`: [PermissionType](./literals.md#permissiontype)
 - `accessPolicyCreationDate`: `datetime`
 - `accessPolicyLastUpdateDate`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAssetModelResponseTypeDef
+## DescribeAssetModelRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import DescribeAssetModelResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import DescribeAssetModelRequestTypeDef
+```
+
+Required fields:
+
+- `assetModelId`: `str`
+
+## DescribeAssetModelResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import DescribeAssetModelResponseResponseTypeDef
 ```
 
 Required fields:
@@ -731,20 +1115,30 @@ Required fields:
   `List`\[[AssetModelPropertyTypeDef](./type_defs.md#assetmodelpropertytypedef)\]
 - `assetModelHierarchies`:
   `List`\[[AssetModelHierarchyTypeDef](./type_defs.md#assetmodelhierarchytypedef)\]
+- `assetModelCompositeModels`:
+  `List`\[[AssetModelCompositeModelTypeDef](./type_defs.md#assetmodelcompositemodeltypedef)\]
 - `assetModelCreationDate`: `datetime`
 - `assetModelLastUpdateDate`: `datetime`
 - `assetModelStatus`:
   [AssetModelStatusTypeDef](./type_defs.md#assetmodelstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-Optional fields:
-
-- `assetModelCompositeModels`:
-  `List`\[[AssetModelCompositeModelTypeDef](./type_defs.md#assetmodelcompositemodeltypedef)\]
-
-## DescribeAssetPropertyResponseTypeDef
+## DescribeAssetPropertyRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import DescribeAssetPropertyResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import DescribeAssetPropertyRequestTypeDef
+```
+
+Required fields:
+
+- `assetId`: `str`
+- `propertyId`: `str`
+
+## DescribeAssetPropertyResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import DescribeAssetPropertyResponseResponseTypeDef
 ```
 
 Required fields:
@@ -752,17 +1146,26 @@ Required fields:
 - `assetId`: `str`
 - `assetName`: `str`
 - `assetModelId`: `str`
-
-Optional fields:
-
 - `assetProperty`: [PropertyTypeDef](./type_defs.md#propertytypedef)
 - `compositeModel`:
   [CompositeModelPropertyTypeDef](./type_defs.md#compositemodelpropertytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAssetResponseTypeDef
+## DescribeAssetRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import DescribeAssetResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import DescribeAssetRequestTypeDef
+```
+
+Required fields:
+
+- `assetId`: `str`
+
+## DescribeAssetResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import DescribeAssetResponseResponseTypeDef
 ```
 
 Required fields:
@@ -775,19 +1178,28 @@ Required fields:
   `List`\[[AssetPropertyTypeDef](./type_defs.md#assetpropertytypedef)\]
 - `assetHierarchies`:
   `List`\[[AssetHierarchyTypeDef](./type_defs.md#assethierarchytypedef)\]
+- `assetCompositeModels`:
+  `List`\[[AssetCompositeModelTypeDef](./type_defs.md#assetcompositemodeltypedef)\]
 - `assetCreationDate`: `datetime`
 - `assetLastUpdateDate`: `datetime`
 - `assetStatus`: [AssetStatusTypeDef](./type_defs.md#assetstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-Optional fields:
-
-- `assetCompositeModels`:
-  `List`\[[AssetCompositeModelTypeDef](./type_defs.md#assetcompositemodeltypedef)\]
-
-## DescribeDashboardResponseTypeDef
+## DescribeDashboardRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import DescribeDashboardResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import DescribeDashboardRequestTypeDef
+```
+
+Required fields:
+
+- `dashboardId`: `str`
+
+## DescribeDashboardResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import DescribeDashboardResponseResponseTypeDef
 ```
 
 Required fields:
@@ -796,34 +1208,43 @@ Required fields:
 - `dashboardArn`: `str`
 - `dashboardName`: `str`
 - `projectId`: `str`
+- `dashboardDescription`: `str`
 - `dashboardDefinition`: `str`
 - `dashboardCreationDate`: `datetime`
 - `dashboardLastUpdateDate`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-Optional fields:
-
-- `dashboardDescription`: `str`
-
-## DescribeDefaultEncryptionConfigurationResponseTypeDef
+## DescribeDefaultEncryptionConfigurationResponseResponseTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import DescribeDefaultEncryptionConfigurationResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import DescribeDefaultEncryptionConfigurationResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `encryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
+- `kmsKeyArn`: `str`
 - `configurationStatus`:
   [ConfigurationStatusTypeDef](./type_defs.md#configurationstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-Optional fields:
-
-- `kmsKeyArn`: `str`
-
-## DescribeGatewayCapabilityConfigurationResponseTypeDef
+## DescribeGatewayCapabilityConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import DescribeGatewayCapabilityConfigurationResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import DescribeGatewayCapabilityConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `gatewayId`: `str`
+- `capabilityNamespace`: `str`
+
+## DescribeGatewayCapabilityConfigurationResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import DescribeGatewayCapabilityConfigurationResponseResponseTypeDef
 ```
 
 Required fields:
@@ -833,11 +1254,23 @@ Required fields:
 - `capabilityConfiguration`: `str`
 - `capabilitySyncStatus`:
   [CapabilitySyncStatusType](./literals.md#capabilitysyncstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeGatewayResponseTypeDef
+## DescribeGatewayRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import DescribeGatewayResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import DescribeGatewayRequestTypeDef
+```
+
+Required fields:
+
+- `gatewayId`: `str`
+
+## DescribeGatewayResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import DescribeGatewayResponseResponseTypeDef
 ```
 
 Required fields:
@@ -845,31 +1278,42 @@ Required fields:
 - `gatewayId`: `str`
 - `gatewayName`: `str`
 - `gatewayArn`: `str`
+- `gatewayPlatform`:
+  [GatewayPlatformTypeDef](./type_defs.md#gatewayplatformtypedef)
 - `gatewayCapabilitySummaries`:
   `List`\[[GatewayCapabilitySummaryTypeDef](./type_defs.md#gatewaycapabilitysummarytypedef)\]
 - `creationDate`: `datetime`
 - `lastUpdateDate`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-Optional fields:
-
-- `gatewayPlatform`:
-  [GatewayPlatformTypeDef](./type_defs.md#gatewayplatformtypedef)
-
-## DescribeLoggingOptionsResponseTypeDef
+## DescribeLoggingOptionsResponseResponseTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import DescribeLoggingOptionsResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import DescribeLoggingOptionsResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `loggingOptions`:
   [LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePortalResponseTypeDef
+## DescribePortalRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import DescribePortalResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import DescribePortalRequestTypeDef
+```
+
+Required fields:
+
+- `portalId`: `str`
+
+## DescribePortalResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import DescribePortalResponseResponseTypeDef
 ```
 
 Required fields:
@@ -877,27 +1321,36 @@ Required fields:
 - `portalId`: `str`
 - `portalArn`: `str`
 - `portalName`: `str`
+- `portalDescription`: `str`
 - `portalClientId`: `str`
 - `portalStartUrl`: `str`
 - `portalContactEmail`: `str`
 - `portalStatus`: [PortalStatusTypeDef](./type_defs.md#portalstatustypedef)
 - `portalCreationDate`: `datetime`
 - `portalLastUpdateDate`: `datetime`
-
-Optional fields:
-
-- `portalDescription`: `str`
 - `portalLogoImageLocation`:
   [ImageLocationTypeDef](./type_defs.md#imagelocationtypedef)
 - `roleArn`: `str`
 - `portalAuthMode`: [AuthModeType](./literals.md#authmodetype)
 - `notificationSenderEmail`: `str`
 - `alarms`: [AlarmsTypeDef](./type_defs.md#alarmstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeProjectResponseTypeDef
+## DescribeProjectRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import DescribeProjectResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import DescribeProjectRequestTypeDef
+```
+
+Required fields:
+
+- `projectId`: `str`
+
+## DescribeProjectResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import DescribeProjectResponseResponseTypeDef
 ```
 
 Required fields:
@@ -906,12 +1359,27 @@ Required fields:
 - `projectArn`: `str`
 - `projectName`: `str`
 - `portalId`: `str`
+- `projectDescription`: `str`
 - `projectCreationDate`: `datetime`
 - `projectLastUpdateDate`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DisassociateAssetsRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import DisassociateAssetsRequestTypeDef
+```
+
+Required fields:
+
+- `assetId`: `str`
+- `hierarchyId`: `str`
+- `childAssetId`: `str`
 
 Optional fields:
 
-- `projectDescription`: `str`
+- `clientToken`: `str`
 
 ## ErrorDetailsTypeDef
 
@@ -975,61 +1443,138 @@ Optional fields:
 - `gatewayCapabilitySummaries`:
   `List`\[[GatewayCapabilitySummaryTypeDef](./type_defs.md#gatewaycapabilitysummarytypedef)\]
 
-## GetAssetPropertyAggregatesResponseTypeDef
+## GetAssetPropertyAggregatesRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import GetAssetPropertyAggregatesResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import GetAssetPropertyAggregatesRequestTypeDef
+```
+
+Required fields:
+
+- `aggregateTypes`:
+  `List`\[[AggregateTypeType](./literals.md#aggregatetypetype)\]
+- `resolution`: `str`
+- `startDate`: `Union`\[`datetime`, `str`\]
+- `endDate`: `Union`\[`datetime`, `str`\]
+
+Optional fields:
+
+- `assetId`: `str`
+- `propertyId`: `str`
+- `propertyAlias`: `str`
+- `qualities`: `List`\[[QualityType](./literals.md#qualitytype)\]
+- `timeOrdering`: [TimeOrderingType](./literals.md#timeorderingtype)
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## GetAssetPropertyAggregatesResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import GetAssetPropertyAggregatesResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `aggregatedValues`:
   `List`\[[AggregatedValueTypeDef](./type_defs.md#aggregatedvaluetypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetAssetPropertyValueHistoryRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import GetAssetPropertyValueHistoryRequestTypeDef
+```
 
 Optional fields:
 
+- `assetId`: `str`
+- `propertyId`: `str`
+- `propertyAlias`: `str`
+- `startDate`: `Union`\[`datetime`, `str`\]
+- `endDate`: `Union`\[`datetime`, `str`\]
+- `qualities`: `List`\[[QualityType](./literals.md#qualitytype)\]
+- `timeOrdering`: [TimeOrderingType](./literals.md#timeorderingtype)
 - `nextToken`: `str`
+- `maxResults`: `int`
 
-## GetAssetPropertyValueHistoryResponseTypeDef
+## GetAssetPropertyValueHistoryResponseResponseTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import GetAssetPropertyValueHistoryResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import GetAssetPropertyValueHistoryResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `assetPropertyValueHistory`:
   `List`\[[AssetPropertyValueTypeDef](./type_defs.md#assetpropertyvaluetypedef)\]
-
-Optional fields:
-
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAssetPropertyValueResponseTypeDef
+## GetAssetPropertyValueRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import GetAssetPropertyValueResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import GetAssetPropertyValueRequestTypeDef
 ```
 
 Optional fields:
 
-- `propertyValue`:
-  [AssetPropertyValueTypeDef](./type_defs.md#assetpropertyvaluetypedef)
+- `assetId`: `str`
+- `propertyId`: `str`
+- `propertyAlias`: `str`
 
-## GetInterpolatedAssetPropertyValuesResponseTypeDef
+## GetAssetPropertyValueResponseResponseTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import GetInterpolatedAssetPropertyValuesResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import GetAssetPropertyValueResponseResponseTypeDef
+```
+
+Required fields:
+
+- `propertyValue`:
+  [AssetPropertyValueTypeDef](./type_defs.md#assetpropertyvaluetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetInterpolatedAssetPropertyValuesRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import GetInterpolatedAssetPropertyValuesRequestTypeDef
+```
+
+Required fields:
+
+- `startTimeInSeconds`: `int`
+- `endTimeInSeconds`: `int`
+- `quality`: [QualityType](./literals.md#qualitytype)
+- `intervalInSeconds`: `int`
+- `type`: `str`
+
+Optional fields:
+
+- `assetId`: `str`
+- `propertyId`: `str`
+- `propertyAlias`: `str`
+- `startTimeOffsetInNanos`: `int`
+- `endTimeOffsetInNanos`: `int`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## GetInterpolatedAssetPropertyValuesResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import GetInterpolatedAssetPropertyValuesResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `interpolatedAssetPropertyValues`:
   `List`\[[InterpolatedAssetPropertyValueTypeDef](./type_defs.md#interpolatedassetpropertyvaluetypedef)\]
-
-Optional fields:
-
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GreengrassTypeDef
 
@@ -1129,161 +1674,308 @@ Required fields:
 - `timestamp`: [TimeInNanosTypeDef](./type_defs.md#timeinnanostypedef)
 - `value`: [VariantTypeDef](./type_defs.md#varianttypedef)
 
-## ListAccessPoliciesResponseTypeDef
+## ListAccessPoliciesRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import ListAccessPoliciesResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import ListAccessPoliciesRequestTypeDef
+```
+
+Optional fields:
+
+- `identityType`: [IdentityTypeType](./literals.md#identitytypetype)
+- `identityId`: `str`
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+- `resourceId`: `str`
+- `iamArn`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListAccessPoliciesResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import ListAccessPoliciesResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `accessPolicySummaries`:
   `List`\[[AccessPolicySummaryTypeDef](./type_defs.md#accesspolicysummarytypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListAssetModelsRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import ListAssetModelsRequestTypeDef
+```
 
 Optional fields:
 
 - `nextToken`: `str`
+- `maxResults`: `int`
 
-## ListAssetModelsResponseTypeDef
+## ListAssetModelsResponseResponseTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import ListAssetModelsResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import ListAssetModelsResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `assetModelSummaries`:
   `List`\[[AssetModelSummaryTypeDef](./type_defs.md#assetmodelsummarytypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListAssetRelationshipsRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import ListAssetRelationshipsRequestTypeDef
+```
+
+Required fields:
+
+- `assetId`: `str`
+- `traversalType`: `Literal['PATH_TO_ROOT']` (see
+  [TraversalTypeType](./literals.md#traversaltypetype))
 
 Optional fields:
 
 - `nextToken`: `str`
+- `maxResults`: `int`
 
-## ListAssetRelationshipsResponseTypeDef
+## ListAssetRelationshipsResponseResponseTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import ListAssetRelationshipsResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import ListAssetRelationshipsResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `assetRelationshipSummaries`:
   `List`\[[AssetRelationshipSummaryTypeDef](./type_defs.md#assetrelationshipsummarytypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListAssetsRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import ListAssetsRequestTypeDef
+```
 
 Optional fields:
 
 - `nextToken`: `str`
+- `maxResults`: `int`
+- `assetModelId`: `str`
+- `filter`: [ListAssetsFilterType](./literals.md#listassetsfiltertype)
 
-## ListAssetsResponseTypeDef
+## ListAssetsResponseResponseTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import ListAssetsResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import ListAssetsResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `assetSummaries`:
   `List`\[[AssetSummaryTypeDef](./type_defs.md#assetsummarytypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListAssociatedAssetsRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import ListAssociatedAssetsRequestTypeDef
+```
+
+Required fields:
+
+- `assetId`: `str`
 
 Optional fields:
 
+- `hierarchyId`: `str`
+- `traversalDirection`:
+  [TraversalDirectionType](./literals.md#traversaldirectiontype)
 - `nextToken`: `str`
+- `maxResults`: `int`
 
-## ListAssociatedAssetsResponseTypeDef
+## ListAssociatedAssetsResponseResponseTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import ListAssociatedAssetsResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import ListAssociatedAssetsResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `assetSummaries`:
   `List`\[[AssociatedAssetsSummaryTypeDef](./type_defs.md#associatedassetssummarytypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListDashboardsRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import ListDashboardsRequestTypeDef
+```
+
+Required fields:
+
+- `projectId`: `str`
 
 Optional fields:
 
 - `nextToken`: `str`
+- `maxResults`: `int`
 
-## ListDashboardsResponseTypeDef
+## ListDashboardsResponseResponseTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import ListDashboardsResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import ListDashboardsResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `dashboardSummaries`:
   `List`\[[DashboardSummaryTypeDef](./type_defs.md#dashboardsummarytypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListGatewaysRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import ListGatewaysRequestTypeDef
+```
 
 Optional fields:
 
 - `nextToken`: `str`
+- `maxResults`: `int`
 
-## ListGatewaysResponseTypeDef
+## ListGatewaysResponseResponseTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import ListGatewaysResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import ListGatewaysResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `gatewaySummaries`:
   `List`\[[GatewaySummaryTypeDef](./type_defs.md#gatewaysummarytypedef)\]
-
-Optional fields:
-
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPortalsResponseTypeDef
+## ListPortalsRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import ListPortalsResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import ListPortalsRequestTypeDef
 ```
 
 Optional fields:
 
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListPortalsResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import ListPortalsResponseResponseTypeDef
+```
+
+Required fields:
+
 - `portalSummaries`:
   `List`\[[PortalSummaryTypeDef](./type_defs.md#portalsummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListProjectAssetsResponseTypeDef
+## ListProjectAssetsRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import ListProjectAssetsResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import ListProjectAssetsRequestTypeDef
+```
+
+Required fields:
+
+- `projectId`: `str`
+
+Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListProjectAssetsResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import ListProjectAssetsResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `assetIds`: `List`\[`str`\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListProjectsRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import ListProjectsRequestTypeDef
+```
+
+Required fields:
+
+- `portalId`: `str`
 
 Optional fields:
 
 - `nextToken`: `str`
+- `maxResults`: `int`
 
-## ListProjectsResponseTypeDef
+## ListProjectsResponseResponseTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import ListProjectsResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import ListProjectsResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `projectSummaries`:
   `List`\[[ProjectSummaryTypeDef](./type_defs.md#projectsummarytypedef)\]
-
-Optional fields:
-
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `resourceArn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LoggingOptionsTypeDef
 
@@ -1476,21 +2168,45 @@ Optional fields:
 - `propertyId`: `str`
 - `propertyAlias`: `str`
 
-## PutDefaultEncryptionConfigurationResponseTypeDef
+## PutDefaultEncryptionConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import PutDefaultEncryptionConfigurationResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import PutDefaultEncryptionConfigurationRequestTypeDef
 ```
 
 Required fields:
 
 - `encryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
-- `configurationStatus`:
-  [ConfigurationStatusTypeDef](./type_defs.md#configurationstatustypedef)
 
 Optional fields:
 
+- `kmsKeyId`: `str`
+
+## PutDefaultEncryptionConfigurationResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import PutDefaultEncryptionConfigurationResponseResponseTypeDef
+```
+
+Required fields:
+
+- `encryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
 - `kmsKeyArn`: `str`
+- `configurationStatus`:
+  [ConfigurationStatusTypeDef](./type_defs.md#configurationstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## PutLoggingOptionsRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import PutLoggingOptionsRequestTypeDef
+```
+
+Required fields:
+
+- `loggingOptions`:
+  [LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef)
 
 ## ResourceTypeDef
 
@@ -1502,6 +2218,31 @@ Optional fields:
 
 - `portal`: [PortalResourceTypeDef](./type_defs.md#portalresourcetypedef)
 - `project`: [ProjectResourceTypeDef](./type_defs.md#projectresourcetypedef)
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## TimeInNanosTypeDef
 
@@ -1539,31 +2280,147 @@ Required fields:
 
 - `interval`: `str`
 
-## UpdateAssetModelResponseTypeDef
+## UntagResourceRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import UpdateAssetModelResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tagKeys`: `List`\[`str`\]
+
+## UpdateAccessPolicyRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import UpdateAccessPolicyRequestTypeDef
+```
+
+Required fields:
+
+- `accessPolicyId`: `str`
+- `accessPolicyIdentity`: [IdentityTypeDef](./type_defs.md#identitytypedef)
+- `accessPolicyResource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
+- `accessPolicyPermission`: [PermissionType](./literals.md#permissiontype)
+
+Optional fields:
+
+- `clientToken`: `str`
+
+## UpdateAssetModelRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import UpdateAssetModelRequestTypeDef
+```
+
+Required fields:
+
+- `assetModelId`: `str`
+- `assetModelName`: `str`
+
+Optional fields:
+
+- `assetModelDescription`: `str`
+- `assetModelProperties`:
+  `List`\[[AssetModelPropertyTypeDef](./type_defs.md#assetmodelpropertytypedef)\]
+- `assetModelHierarchies`:
+  `List`\[[AssetModelHierarchyTypeDef](./type_defs.md#assetmodelhierarchytypedef)\]
+- `assetModelCompositeModels`:
+  `List`\[[AssetModelCompositeModelTypeDef](./type_defs.md#assetmodelcompositemodeltypedef)\]
+- `clientToken`: `str`
+
+## UpdateAssetModelResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import UpdateAssetModelResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `assetModelStatus`:
   [AssetModelStatusTypeDef](./type_defs.md#assetmodelstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateAssetResponseTypeDef
+## UpdateAssetPropertyRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import UpdateAssetResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import UpdateAssetPropertyRequestTypeDef
+```
+
+Required fields:
+
+- `assetId`: `str`
+- `propertyId`: `str`
+
+Optional fields:
+
+- `propertyAlias`: `str`
+- `propertyNotificationState`:
+  [PropertyNotificationStateType](./literals.md#propertynotificationstatetype)
+- `clientToken`: `str`
+
+## UpdateAssetRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import UpdateAssetRequestTypeDef
+```
+
+Required fields:
+
+- `assetId`: `str`
+- `assetName`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
+
+## UpdateAssetResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import UpdateAssetResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `assetStatus`: [AssetStatusTypeDef](./type_defs.md#assetstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateGatewayCapabilityConfigurationResponseTypeDef
+## UpdateDashboardRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import UpdateGatewayCapabilityConfigurationResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import UpdateDashboardRequestTypeDef
+```
+
+Required fields:
+
+- `dashboardId`: `str`
+- `dashboardName`: `str`
+- `dashboardDefinition`: `str`
+
+Optional fields:
+
+- `dashboardDescription`: `str`
+- `clientToken`: `str`
+
+## UpdateGatewayCapabilityConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import UpdateGatewayCapabilityConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `gatewayId`: `str`
+- `capabilityNamespace`: `str`
+- `capabilityConfiguration`: `str`
+
+## UpdateGatewayCapabilityConfigurationResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import UpdateGatewayCapabilityConfigurationResponseResponseTypeDef
 ```
 
 Required fields:
@@ -1571,16 +2428,68 @@ Required fields:
 - `capabilityNamespace`: `str`
 - `capabilitySyncStatus`:
   [CapabilitySyncStatusType](./literals.md#capabilitysyncstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdatePortalResponseTypeDef
+## UpdateGatewayRequestTypeDef
 
 ```python
-from mypy_boto3_iotsitewise.type_defs import UpdatePortalResponseTypeDef
+from mypy_boto3_iotsitewise.type_defs import UpdateGatewayRequestTypeDef
+```
+
+Required fields:
+
+- `gatewayId`: `str`
+- `gatewayName`: `str`
+
+## UpdatePortalRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import UpdatePortalRequestTypeDef
+```
+
+Required fields:
+
+- `portalId`: `str`
+- `portalName`: `str`
+- `portalContactEmail`: `str`
+- `roleArn`: `str`
+
+Optional fields:
+
+- `portalDescription`: `str`
+- `portalLogoImage`: [ImageTypeDef](./type_defs.md#imagetypedef)
+- `clientToken`: `str`
+- `notificationSenderEmail`: `str`
+- `alarms`: [AlarmsTypeDef](./type_defs.md#alarmstypedef)
+
+## UpdatePortalResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import UpdatePortalResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `portalStatus`: [PortalStatusTypeDef](./type_defs.md#portalstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateProjectRequestTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import UpdateProjectRequestTypeDef
+```
+
+Required fields:
+
+- `projectId`: `str`
+- `projectName`: `str`
+
+Optional fields:
+
+- `projectDescription`: `str`
+- `clientToken`: `str`
 
 ## UserIdentityTypeDef
 

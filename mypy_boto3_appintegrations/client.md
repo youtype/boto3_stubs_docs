@@ -66,6 +66,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("appintegrations").can_paginate` method.
 
 Boto3 documentation:
@@ -79,11 +81,17 @@ Returns `bool`.
 
 ### create_event_integration
 
+The Amazon AppIntegrations APIs are in preview release and are subject to
+change.
+
 Type annotations for `boto3.client("appintegrations").create_event_integration`
 method.
 
 Boto3 documentation:
 [AppIntegrationsService.Client.create_event_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.create_event_integration)
+
+Arguments mapping described in
+[CreateEventIntegrationRequestTypeDef](./type_defs.md#createeventintegrationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -96,15 +104,21 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateEventIntegrationResponseTypeDef](./type_defs.md#createeventintegrationresponsetypedef).
+[CreateEventIntegrationResponseResponseTypeDef](./type_defs.md#createeventintegrationresponseresponsetypedef).
 
 ### delete_event_integration
+
+The Amazon AppIntegrations APIs are in preview release and are subject to
+change.
 
 Type annotations for `boto3.client("appintegrations").delete_event_integration`
 method.
 
 Boto3 documentation:
 [AppIntegrationsService.Client.delete_event_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.delete_event_integration)
+
+Arguments mapping described in
+[DeleteEventIntegrationRequestTypeDef](./type_defs.md#deleteeventintegrationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -113,6 +127,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("appintegrations").generate_presigned_url`
 method.
@@ -131,26 +147,38 @@ Returns `str`.
 
 ### get_event_integration
 
+The Amazon AppIntegrations APIs are in preview release and are subject to
+change.
+
 Type annotations for `boto3.client("appintegrations").get_event_integration`
 method.
 
 Boto3 documentation:
 [AppIntegrationsService.Client.get_event_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.get_event_integration)
 
+Arguments mapping described in
+[GetEventIntegrationRequestTypeDef](./type_defs.md#geteventintegrationrequesttypedef).
+
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[GetEventIntegrationResponseTypeDef](./type_defs.md#geteventintegrationresponsetypedef).
+[GetEventIntegrationResponseResponseTypeDef](./type_defs.md#geteventintegrationresponseresponsetypedef).
 
 ### list_event_integration_associations
+
+The Amazon AppIntegrations APIs are in preview release and are subject to
+change.
 
 Type annotations for
 `boto3.client("appintegrations").list_event_integration_associations` method.
 
 Boto3 documentation:
 [AppIntegrationsService.Client.list_event_integration_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_event_integration_associations)
+
+Arguments mapping described in
+[ListEventIntegrationAssociationsRequestTypeDef](./type_defs.md#listeventintegrationassociationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -159,9 +187,12 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListEventIntegrationAssociationsResponseTypeDef](./type_defs.md#listeventintegrationassociationsresponsetypedef).
+[ListEventIntegrationAssociationsResponseResponseTypeDef](./type_defs.md#listeventintegrationassociationsresponseresponsetypedef).
 
 ### list_event_integrations
+
+The Amazon AppIntegrations APIs are in preview release and are subject to
+change.
 
 Type annotations for `boto3.client("appintegrations").list_event_integrations`
 method.
@@ -169,15 +200,21 @@ method.
 Boto3 documentation:
 [AppIntegrationsService.Client.list_event_integrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_event_integrations)
 
+Arguments mapping described in
+[ListEventIntegrationsRequestTypeDef](./type_defs.md#listeventintegrationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListEventIntegrationsResponseTypeDef](./type_defs.md#listeventintegrationsresponsetypedef).
+[ListEventIntegrationsResponseResponseTypeDef](./type_defs.md#listeventintegrationsresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+The Amazon AppIntegrations APIs are in preview release and are subject to
+change.
 
 Type annotations for `boto3.client("appintegrations").list_tags_for_resource`
 method.
@@ -185,19 +222,28 @@ method.
 Boto3 documentation:
 [AppIntegrationsService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### tag_resource
+
+The Amazon AppIntegrations APIs are in preview release and are subject to
+change.
 
 Type annotations for `boto3.client("appintegrations").tag_resource` method.
 
 Boto3 documentation:
 [AppIntegrationsService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -208,10 +254,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+The Amazon AppIntegrations APIs are in preview release and are subject to
+change.
+
 Type annotations for `boto3.client("appintegrations").untag_resource` method.
 
 Boto3 documentation:
 [AppIntegrationsService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -222,11 +274,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_event_integration
 
+The Amazon AppIntegrations APIs are in preview release and are subject to
+change.
+
 Type annotations for `boto3.client("appintegrations").update_event_integration`
 method.
 
 Boto3 documentation:
 [AppIntegrationsService.Client.update_event_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.update_event_integration)
+
+Arguments mapping described in
+[UpdateEventIntegrationRequestTypeDef](./type_defs.md#updateeventintegrationrequesttypedef).
 
 Keyword-only arguments:
 

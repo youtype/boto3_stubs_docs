@@ -37,4 +37,4 @@ Arguments for `GetEntitlementsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetEntitlementsPaginator.paginate` returns
-`Iterator`\[[GetEntitlementsResultTypeDef](./type_defs.md#getentitlementsresulttypedef)\].
+`Iterator`\[[GetEntitlementsResultResponseTypeDef](./type_defs.md#getentitlementsresultresponsetypedef)\].

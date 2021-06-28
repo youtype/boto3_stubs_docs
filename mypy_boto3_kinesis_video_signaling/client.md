@@ -59,6 +59,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("kinesis-video-signaling").can_paginate`
 method.
 
@@ -72,6 +74,8 @@ Arguments:
 Returns `bool`.
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for
 `boto3.client("kinesis-video-signaling").generate_presigned_url` method.
@@ -90,11 +94,18 @@ Returns `str`.
 
 ### get_ice_server_config
 
+Gets the Interactive Connectivity Establishment (ICE) server configuration
+information, including URIs, username, and password which can be used to
+configure the WebRTC connection.
+
 Type annotations for
 `boto3.client("kinesis-video-signaling").get_ice_server_config` method.
 
 Boto3 documentation:
 [KinesisVideoSignalingChannels.Client.get_ice_server_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.get_ice_server_config)
+
+Arguments mapping described in
+[GetIceServerConfigRequestTypeDef](./type_defs.md#geticeserverconfigrequesttypedef).
 
 Keyword-only arguments:
 
@@ -104,15 +115,21 @@ Keyword-only arguments:
 - `Username`: `str`
 
 Returns
-[GetIceServerConfigResponseTypeDef](./type_defs.md#geticeserverconfigresponsetypedef).
+[GetIceServerConfigResponseResponseTypeDef](./type_defs.md#geticeserverconfigresponseresponsetypedef).
 
 ### send_alexa_offer_to_master
+
+This API allows you to connect WebRTC-enabled devices with Alexa display
+devices.
 
 Type annotations for
 `boto3.client("kinesis-video-signaling").send_alexa_offer_to_master` method.
 
 Boto3 documentation:
 [KinesisVideoSignalingChannels.Client.send_alexa_offer_to_master](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.send_alexa_offer_to_master)
+
+Arguments mapping described in
+[SendAlexaOfferToMasterRequestTypeDef](./type_defs.md#sendalexaoffertomasterrequesttypedef).
 
 Keyword-only arguments:
 
@@ -121,4 +138,4 @@ Keyword-only arguments:
 - `MessagePayload`: `str` *(required)*
 
 Returns
-[SendAlexaOfferToMasterResponseTypeDef](./type_defs.md#sendalexaoffertomasterresponsetypedef).
+[SendAlexaOfferToMasterResponseResponseTypeDef](./type_defs.md#sendalexaoffertomasterresponseresponsetypedef).

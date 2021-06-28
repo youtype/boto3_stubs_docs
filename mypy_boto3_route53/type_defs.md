@@ -9,53 +9,92 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 Route53 module](#typed-dictionaries-for-boto3-route53-module)
   - [AccountLimitTypeDef](#accountlimittypedef)
-  - [ActivateKeySigningKeyResponseTypeDef](#activatekeysigningkeyresponsetypedef)
+  - [ActivateKeySigningKeyRequestTypeDef](#activatekeysigningkeyrequesttypedef)
+  - [ActivateKeySigningKeyResponseResponseTypeDef](#activatekeysigningkeyresponseresponsetypedef)
   - [AlarmIdentifierTypeDef](#alarmidentifiertypedef)
   - [AliasTargetTypeDef](#aliastargettypedef)
-  - [AssociateVPCWithHostedZoneResponseTypeDef](#associatevpcwithhostedzoneresponsetypedef)
+  - [AssociateVPCWithHostedZoneRequestTypeDef](#associatevpcwithhostedzonerequesttypedef)
+  - [AssociateVPCWithHostedZoneResponseResponseTypeDef](#associatevpcwithhostedzoneresponseresponsetypedef)
   - [ChangeBatchTypeDef](#changebatchtypedef)
   - [ChangeInfoTypeDef](#changeinfotypedef)
-  - [ChangeResourceRecordSetsResponseTypeDef](#changeresourcerecordsetsresponsetypedef)
+  - [ChangeResourceRecordSetsRequestTypeDef](#changeresourcerecordsetsrequesttypedef)
+  - [ChangeResourceRecordSetsResponseResponseTypeDef](#changeresourcerecordsetsresponseresponsetypedef)
+  - [ChangeTagsForResourceRequestTypeDef](#changetagsforresourcerequesttypedef)
   - [ChangeTypeDef](#changetypedef)
   - [CloudWatchAlarmConfigurationTypeDef](#cloudwatchalarmconfigurationtypedef)
-  - [CreateHealthCheckResponseTypeDef](#createhealthcheckresponsetypedef)
-  - [CreateHostedZoneResponseTypeDef](#createhostedzoneresponsetypedef)
-  - [CreateKeySigningKeyResponseTypeDef](#createkeysigningkeyresponsetypedef)
-  - [CreateQueryLoggingConfigResponseTypeDef](#createqueryloggingconfigresponsetypedef)
-  - [CreateReusableDelegationSetResponseTypeDef](#createreusabledelegationsetresponsetypedef)
-  - [CreateTrafficPolicyInstanceResponseTypeDef](#createtrafficpolicyinstanceresponsetypedef)
-  - [CreateTrafficPolicyResponseTypeDef](#createtrafficpolicyresponsetypedef)
-  - [CreateTrafficPolicyVersionResponseTypeDef](#createtrafficpolicyversionresponsetypedef)
-  - [CreateVPCAssociationAuthorizationResponseTypeDef](#createvpcassociationauthorizationresponsetypedef)
+  - [CreateHealthCheckRequestTypeDef](#createhealthcheckrequesttypedef)
+  - [CreateHealthCheckResponseResponseTypeDef](#createhealthcheckresponseresponsetypedef)
+  - [CreateHostedZoneRequestTypeDef](#createhostedzonerequesttypedef)
+  - [CreateHostedZoneResponseResponseTypeDef](#createhostedzoneresponseresponsetypedef)
+  - [CreateKeySigningKeyRequestTypeDef](#createkeysigningkeyrequesttypedef)
+  - [CreateKeySigningKeyResponseResponseTypeDef](#createkeysigningkeyresponseresponsetypedef)
+  - [CreateQueryLoggingConfigRequestTypeDef](#createqueryloggingconfigrequesttypedef)
+  - [CreateQueryLoggingConfigResponseResponseTypeDef](#createqueryloggingconfigresponseresponsetypedef)
+  - [CreateReusableDelegationSetRequestTypeDef](#createreusabledelegationsetrequesttypedef)
+  - [CreateReusableDelegationSetResponseResponseTypeDef](#createreusabledelegationsetresponseresponsetypedef)
+  - [CreateTrafficPolicyInstanceRequestTypeDef](#createtrafficpolicyinstancerequesttypedef)
+  - [CreateTrafficPolicyInstanceResponseResponseTypeDef](#createtrafficpolicyinstanceresponseresponsetypedef)
+  - [CreateTrafficPolicyRequestTypeDef](#createtrafficpolicyrequesttypedef)
+  - [CreateTrafficPolicyResponseResponseTypeDef](#createtrafficpolicyresponseresponsetypedef)
+  - [CreateTrafficPolicyVersionRequestTypeDef](#createtrafficpolicyversionrequesttypedef)
+  - [CreateTrafficPolicyVersionResponseResponseTypeDef](#createtrafficpolicyversionresponseresponsetypedef)
+  - [CreateVPCAssociationAuthorizationRequestTypeDef](#createvpcassociationauthorizationrequesttypedef)
+  - [CreateVPCAssociationAuthorizationResponseResponseTypeDef](#createvpcassociationauthorizationresponseresponsetypedef)
   - [DNSSECStatusTypeDef](#dnssecstatustypedef)
-  - [DeactivateKeySigningKeyResponseTypeDef](#deactivatekeysigningkeyresponsetypedef)
+  - [DeactivateKeySigningKeyRequestTypeDef](#deactivatekeysigningkeyrequesttypedef)
+  - [DeactivateKeySigningKeyResponseResponseTypeDef](#deactivatekeysigningkeyresponseresponsetypedef)
   - [DelegationSetTypeDef](#delegationsettypedef)
-  - [DeleteHostedZoneResponseTypeDef](#deletehostedzoneresponsetypedef)
-  - [DeleteKeySigningKeyResponseTypeDef](#deletekeysigningkeyresponsetypedef)
+  - [DeleteHealthCheckRequestTypeDef](#deletehealthcheckrequesttypedef)
+  - [DeleteHostedZoneRequestTypeDef](#deletehostedzonerequesttypedef)
+  - [DeleteHostedZoneResponseResponseTypeDef](#deletehostedzoneresponseresponsetypedef)
+  - [DeleteKeySigningKeyRequestTypeDef](#deletekeysigningkeyrequesttypedef)
+  - [DeleteKeySigningKeyResponseResponseTypeDef](#deletekeysigningkeyresponseresponsetypedef)
+  - [DeleteQueryLoggingConfigRequestTypeDef](#deletequeryloggingconfigrequesttypedef)
+  - [DeleteReusableDelegationSetRequestTypeDef](#deletereusabledelegationsetrequesttypedef)
+  - [DeleteTrafficPolicyInstanceRequestTypeDef](#deletetrafficpolicyinstancerequesttypedef)
+  - [DeleteTrafficPolicyRequestTypeDef](#deletetrafficpolicyrequesttypedef)
+  - [DeleteVPCAssociationAuthorizationRequestTypeDef](#deletevpcassociationauthorizationrequesttypedef)
   - [DimensionTypeDef](#dimensiontypedef)
-  - [DisableHostedZoneDNSSECResponseTypeDef](#disablehostedzonednssecresponsetypedef)
-  - [DisassociateVPCFromHostedZoneResponseTypeDef](#disassociatevpcfromhostedzoneresponsetypedef)
-  - [EnableHostedZoneDNSSECResponseTypeDef](#enablehostedzonednssecresponsetypedef)
+  - [DisableHostedZoneDNSSECRequestTypeDef](#disablehostedzonednssecrequesttypedef)
+  - [DisableHostedZoneDNSSECResponseResponseTypeDef](#disablehostedzonednssecresponseresponsetypedef)
+  - [DisassociateVPCFromHostedZoneRequestTypeDef](#disassociatevpcfromhostedzonerequesttypedef)
+  - [DisassociateVPCFromHostedZoneResponseResponseTypeDef](#disassociatevpcfromhostedzoneresponseresponsetypedef)
+  - [EnableHostedZoneDNSSECRequestTypeDef](#enablehostedzonednssecrequesttypedef)
+  - [EnableHostedZoneDNSSECResponseResponseTypeDef](#enablehostedzonednssecresponseresponsetypedef)
   - [GeoLocationDetailsTypeDef](#geolocationdetailstypedef)
   - [GeoLocationTypeDef](#geolocationtypedef)
-  - [GetAccountLimitResponseTypeDef](#getaccountlimitresponsetypedef)
-  - [GetChangeResponseTypeDef](#getchangeresponsetypedef)
-  - [GetCheckerIpRangesResponseTypeDef](#getcheckeriprangesresponsetypedef)
-  - [GetDNSSECResponseTypeDef](#getdnssecresponsetypedef)
-  - [GetGeoLocationResponseTypeDef](#getgeolocationresponsetypedef)
-  - [GetHealthCheckCountResponseTypeDef](#gethealthcheckcountresponsetypedef)
-  - [GetHealthCheckLastFailureReasonResponseTypeDef](#gethealthchecklastfailurereasonresponsetypedef)
-  - [GetHealthCheckResponseTypeDef](#gethealthcheckresponsetypedef)
-  - [GetHealthCheckStatusResponseTypeDef](#gethealthcheckstatusresponsetypedef)
-  - [GetHostedZoneCountResponseTypeDef](#gethostedzonecountresponsetypedef)
-  - [GetHostedZoneLimitResponseTypeDef](#gethostedzonelimitresponsetypedef)
-  - [GetHostedZoneResponseTypeDef](#gethostedzoneresponsetypedef)
-  - [GetQueryLoggingConfigResponseTypeDef](#getqueryloggingconfigresponsetypedef)
-  - [GetReusableDelegationSetLimitResponseTypeDef](#getreusabledelegationsetlimitresponsetypedef)
-  - [GetReusableDelegationSetResponseTypeDef](#getreusabledelegationsetresponsetypedef)
-  - [GetTrafficPolicyInstanceCountResponseTypeDef](#gettrafficpolicyinstancecountresponsetypedef)
-  - [GetTrafficPolicyInstanceResponseTypeDef](#gettrafficpolicyinstanceresponsetypedef)
-  - [GetTrafficPolicyResponseTypeDef](#gettrafficpolicyresponsetypedef)
+  - [GetAccountLimitRequestTypeDef](#getaccountlimitrequesttypedef)
+  - [GetAccountLimitResponseResponseTypeDef](#getaccountlimitresponseresponsetypedef)
+  - [GetChangeRequestTypeDef](#getchangerequesttypedef)
+  - [GetChangeResponseResponseTypeDef](#getchangeresponseresponsetypedef)
+  - [GetCheckerIpRangesResponseResponseTypeDef](#getcheckeriprangesresponseresponsetypedef)
+  - [GetDNSSECRequestTypeDef](#getdnssecrequesttypedef)
+  - [GetDNSSECResponseResponseTypeDef](#getdnssecresponseresponsetypedef)
+  - [GetGeoLocationRequestTypeDef](#getgeolocationrequesttypedef)
+  - [GetGeoLocationResponseResponseTypeDef](#getgeolocationresponseresponsetypedef)
+  - [GetHealthCheckCountResponseResponseTypeDef](#gethealthcheckcountresponseresponsetypedef)
+  - [GetHealthCheckLastFailureReasonRequestTypeDef](#gethealthchecklastfailurereasonrequesttypedef)
+  - [GetHealthCheckLastFailureReasonResponseResponseTypeDef](#gethealthchecklastfailurereasonresponseresponsetypedef)
+  - [GetHealthCheckRequestTypeDef](#gethealthcheckrequesttypedef)
+  - [GetHealthCheckResponseResponseTypeDef](#gethealthcheckresponseresponsetypedef)
+  - [GetHealthCheckStatusRequestTypeDef](#gethealthcheckstatusrequesttypedef)
+  - [GetHealthCheckStatusResponseResponseTypeDef](#gethealthcheckstatusresponseresponsetypedef)
+  - [GetHostedZoneCountResponseResponseTypeDef](#gethostedzonecountresponseresponsetypedef)
+  - [GetHostedZoneLimitRequestTypeDef](#gethostedzonelimitrequesttypedef)
+  - [GetHostedZoneLimitResponseResponseTypeDef](#gethostedzonelimitresponseresponsetypedef)
+  - [GetHostedZoneRequestTypeDef](#gethostedzonerequesttypedef)
+  - [GetHostedZoneResponseResponseTypeDef](#gethostedzoneresponseresponsetypedef)
+  - [GetQueryLoggingConfigRequestTypeDef](#getqueryloggingconfigrequesttypedef)
+  - [GetQueryLoggingConfigResponseResponseTypeDef](#getqueryloggingconfigresponseresponsetypedef)
+  - [GetReusableDelegationSetLimitRequestTypeDef](#getreusabledelegationsetlimitrequesttypedef)
+  - [GetReusableDelegationSetLimitResponseResponseTypeDef](#getreusabledelegationsetlimitresponseresponsetypedef)
+  - [GetReusableDelegationSetRequestTypeDef](#getreusabledelegationsetrequesttypedef)
+  - [GetReusableDelegationSetResponseResponseTypeDef](#getreusabledelegationsetresponseresponsetypedef)
+  - [GetTrafficPolicyInstanceCountResponseResponseTypeDef](#gettrafficpolicyinstancecountresponseresponsetypedef)
+  - [GetTrafficPolicyInstanceRequestTypeDef](#gettrafficpolicyinstancerequesttypedef)
+  - [GetTrafficPolicyInstanceResponseResponseTypeDef](#gettrafficpolicyinstanceresponseresponsetypedef)
+  - [GetTrafficPolicyRequestTypeDef](#gettrafficpolicyrequesttypedef)
+  - [GetTrafficPolicyResponseResponseTypeDef](#gettrafficpolicyresponseresponsetypedef)
   - [HealthCheckConfigTypeDef](#healthcheckconfigtypedef)
   - [HealthCheckObservationTypeDef](#healthcheckobservationtypedef)
   - [HealthCheckTypeDef](#healthchecktypedef)
@@ -66,38 +105,60 @@ type annotations stubs module
   - [HostedZoneTypeDef](#hostedzonetypedef)
   - [KeySigningKeyTypeDef](#keysigningkeytypedef)
   - [LinkedServiceTypeDef](#linkedservicetypedef)
-  - [ListGeoLocationsResponseTypeDef](#listgeolocationsresponsetypedef)
-  - [ListHealthChecksResponseTypeDef](#listhealthchecksresponsetypedef)
-  - [ListHostedZonesByNameResponseTypeDef](#listhostedzonesbynameresponsetypedef)
-  - [ListHostedZonesByVPCResponseTypeDef](#listhostedzonesbyvpcresponsetypedef)
-  - [ListHostedZonesResponseTypeDef](#listhostedzonesresponsetypedef)
-  - [ListQueryLoggingConfigsResponseTypeDef](#listqueryloggingconfigsresponsetypedef)
-  - [ListResourceRecordSetsResponseTypeDef](#listresourcerecordsetsresponsetypedef)
-  - [ListReusableDelegationSetsResponseTypeDef](#listreusabledelegationsetsresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListTagsForResourcesResponseTypeDef](#listtagsforresourcesresponsetypedef)
-  - [ListTrafficPoliciesResponseTypeDef](#listtrafficpoliciesresponsetypedef)
-  - [ListTrafficPolicyInstancesByHostedZoneResponseTypeDef](#listtrafficpolicyinstancesbyhostedzoneresponsetypedef)
-  - [ListTrafficPolicyInstancesByPolicyResponseTypeDef](#listtrafficpolicyinstancesbypolicyresponsetypedef)
-  - [ListTrafficPolicyInstancesResponseTypeDef](#listtrafficpolicyinstancesresponsetypedef)
-  - [ListTrafficPolicyVersionsResponseTypeDef](#listtrafficpolicyversionsresponsetypedef)
-  - [ListVPCAssociationAuthorizationsResponseTypeDef](#listvpcassociationauthorizationsresponsetypedef)
+  - [ListGeoLocationsRequestTypeDef](#listgeolocationsrequesttypedef)
+  - [ListGeoLocationsResponseResponseTypeDef](#listgeolocationsresponseresponsetypedef)
+  - [ListHealthChecksRequestTypeDef](#listhealthchecksrequesttypedef)
+  - [ListHealthChecksResponseResponseTypeDef](#listhealthchecksresponseresponsetypedef)
+  - [ListHostedZonesByNameRequestTypeDef](#listhostedzonesbynamerequesttypedef)
+  - [ListHostedZonesByNameResponseResponseTypeDef](#listhostedzonesbynameresponseresponsetypedef)
+  - [ListHostedZonesByVPCRequestTypeDef](#listhostedzonesbyvpcrequesttypedef)
+  - [ListHostedZonesByVPCResponseResponseTypeDef](#listhostedzonesbyvpcresponseresponsetypedef)
+  - [ListHostedZonesRequestTypeDef](#listhostedzonesrequesttypedef)
+  - [ListHostedZonesResponseResponseTypeDef](#listhostedzonesresponseresponsetypedef)
+  - [ListQueryLoggingConfigsRequestTypeDef](#listqueryloggingconfigsrequesttypedef)
+  - [ListQueryLoggingConfigsResponseResponseTypeDef](#listqueryloggingconfigsresponseresponsetypedef)
+  - [ListResourceRecordSetsRequestTypeDef](#listresourcerecordsetsrequesttypedef)
+  - [ListResourceRecordSetsResponseResponseTypeDef](#listresourcerecordsetsresponseresponsetypedef)
+  - [ListReusableDelegationSetsRequestTypeDef](#listreusabledelegationsetsrequesttypedef)
+  - [ListReusableDelegationSetsResponseResponseTypeDef](#listreusabledelegationsetsresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListTagsForResourcesRequestTypeDef](#listtagsforresourcesrequesttypedef)
+  - [ListTagsForResourcesResponseResponseTypeDef](#listtagsforresourcesresponseresponsetypedef)
+  - [ListTrafficPoliciesRequestTypeDef](#listtrafficpoliciesrequesttypedef)
+  - [ListTrafficPoliciesResponseResponseTypeDef](#listtrafficpoliciesresponseresponsetypedef)
+  - [ListTrafficPolicyInstancesByHostedZoneRequestTypeDef](#listtrafficpolicyinstancesbyhostedzonerequesttypedef)
+  - [ListTrafficPolicyInstancesByHostedZoneResponseResponseTypeDef](#listtrafficpolicyinstancesbyhostedzoneresponseresponsetypedef)
+  - [ListTrafficPolicyInstancesByPolicyRequestTypeDef](#listtrafficpolicyinstancesbypolicyrequesttypedef)
+  - [ListTrafficPolicyInstancesByPolicyResponseResponseTypeDef](#listtrafficpolicyinstancesbypolicyresponseresponsetypedef)
+  - [ListTrafficPolicyInstancesRequestTypeDef](#listtrafficpolicyinstancesrequesttypedef)
+  - [ListTrafficPolicyInstancesResponseResponseTypeDef](#listtrafficpolicyinstancesresponseresponsetypedef)
+  - [ListTrafficPolicyVersionsRequestTypeDef](#listtrafficpolicyversionsrequesttypedef)
+  - [ListTrafficPolicyVersionsResponseResponseTypeDef](#listtrafficpolicyversionsresponseresponsetypedef)
+  - [ListVPCAssociationAuthorizationsRequestTypeDef](#listvpcassociationauthorizationsrequesttypedef)
+  - [ListVPCAssociationAuthorizationsResponseResponseTypeDef](#listvpcassociationauthorizationsresponseresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [QueryLoggingConfigTypeDef](#queryloggingconfigtypedef)
   - [ResourceRecordSetTypeDef](#resourcerecordsettypedef)
   - [ResourceRecordTypeDef](#resourcerecordtypedef)
   - [ResourceTagSetTypeDef](#resourcetagsettypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [ReusableDelegationSetLimitTypeDef](#reusabledelegationsetlimittypedef)
   - [StatusReportTypeDef](#statusreporttypedef)
   - [TagTypeDef](#tagtypedef)
-  - [TestDNSAnswerResponseTypeDef](#testdnsanswerresponsetypedef)
+  - [TestDNSAnswerRequestTypeDef](#testdnsanswerrequesttypedef)
+  - [TestDNSAnswerResponseResponseTypeDef](#testdnsanswerresponseresponsetypedef)
   - [TrafficPolicyInstanceTypeDef](#trafficpolicyinstancetypedef)
   - [TrafficPolicySummaryTypeDef](#trafficpolicysummarytypedef)
   - [TrafficPolicyTypeDef](#trafficpolicytypedef)
-  - [UpdateHealthCheckResponseTypeDef](#updatehealthcheckresponsetypedef)
-  - [UpdateHostedZoneCommentResponseTypeDef](#updatehostedzonecommentresponsetypedef)
-  - [UpdateTrafficPolicyCommentResponseTypeDef](#updatetrafficpolicycommentresponsetypedef)
-  - [UpdateTrafficPolicyInstanceResponseTypeDef](#updatetrafficpolicyinstanceresponsetypedef)
+  - [UpdateHealthCheckRequestTypeDef](#updatehealthcheckrequesttypedef)
+  - [UpdateHealthCheckResponseResponseTypeDef](#updatehealthcheckresponseresponsetypedef)
+  - [UpdateHostedZoneCommentRequestTypeDef](#updatehostedzonecommentrequesttypedef)
+  - [UpdateHostedZoneCommentResponseResponseTypeDef](#updatehostedzonecommentresponseresponsetypedef)
+  - [UpdateTrafficPolicyCommentRequestTypeDef](#updatetrafficpolicycommentrequesttypedef)
+  - [UpdateTrafficPolicyCommentResponseResponseTypeDef](#updatetrafficpolicycommentresponseresponsetypedef)
+  - [UpdateTrafficPolicyInstanceRequestTypeDef](#updatetrafficpolicyinstancerequesttypedef)
+  - [UpdateTrafficPolicyInstanceResponseResponseTypeDef](#updatetrafficpolicyinstanceresponseresponsetypedef)
   - [VPCTypeDef](#vpctypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
@@ -112,15 +173,28 @@ Required fields:
 - `Type`: [AccountLimitTypeType](./literals.md#accountlimittypetype)
 - `Value`: `int`
 
-## ActivateKeySigningKeyResponseTypeDef
+## ActivateKeySigningKeyRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import ActivateKeySigningKeyResponseTypeDef
+from mypy_boto3_route53.type_defs import ActivateKeySigningKeyRequestTypeDef
+```
+
+Required fields:
+
+- `HostedZoneId`: `str`
+- `Name`: `str`
+
+## ActivateKeySigningKeyResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import ActivateKeySigningKeyResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## AlarmIdentifierTypeDef
 
@@ -145,15 +219,32 @@ Required fields:
 - `DNSName`: `str`
 - `EvaluateTargetHealth`: `bool`
 
-## AssociateVPCWithHostedZoneResponseTypeDef
+## AssociateVPCWithHostedZoneRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import AssociateVPCWithHostedZoneResponseTypeDef
+from mypy_boto3_route53.type_defs import AssociateVPCWithHostedZoneRequestTypeDef
+```
+
+Required fields:
+
+- `HostedZoneId`: `str`
+- `VPC`: [VPCTypeDef](./type_defs.md#vpctypedef)
+
+Optional fields:
+
+- `Comment`: `str`
+
+## AssociateVPCWithHostedZoneResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import AssociateVPCWithHostedZoneResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ChangeBatchTypeDef
 
@@ -185,15 +276,44 @@ Optional fields:
 
 - `Comment`: `str`
 
-## ChangeResourceRecordSetsResponseTypeDef
+## ChangeResourceRecordSetsRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import ChangeResourceRecordSetsResponseTypeDef
+from mypy_boto3_route53.type_defs import ChangeResourceRecordSetsRequestTypeDef
+```
+
+Required fields:
+
+- `HostedZoneId`: `str`
+- `ChangeBatch`: [ChangeBatchTypeDef](./type_defs.md#changebatchtypedef)
+
+## ChangeResourceRecordSetsResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import ChangeResourceRecordSetsResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ChangeTagsForResourceRequestTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import ChangeTagsForResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceType`: [TagResourceTypeType](./literals.md#tagresourcetypetype)
+- `ResourceId`: `str`
+
+Optional fields:
+
+- `AddTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `RemoveTagKeys`: `List`\[`str`\]
 
 ## ChangeTypeDef
 
@@ -228,21 +348,53 @@ Optional fields:
 
 - `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 
-## CreateHealthCheckResponseTypeDef
+## CreateHealthCheckRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import CreateHealthCheckResponseTypeDef
+from mypy_boto3_route53.type_defs import CreateHealthCheckRequestTypeDef
+```
+
+Required fields:
+
+- `CallerReference`: `str`
+- `HealthCheckConfig`:
+  [HealthCheckConfigTypeDef](./type_defs.md#healthcheckconfigtypedef)
+
+## CreateHealthCheckResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import CreateHealthCheckResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `HealthCheck`: [HealthCheckTypeDef](./type_defs.md#healthchecktypedef)
 - `Location`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateHostedZoneResponseTypeDef
+## CreateHostedZoneRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import CreateHostedZoneResponseTypeDef
+from mypy_boto3_route53.type_defs import CreateHostedZoneRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `CallerReference`: `str`
+
+Optional fields:
+
+- `VPC`: [VPCTypeDef](./type_defs.md#vpctypedef)
+- `HostedZoneConfig`:
+  [HostedZoneConfigTypeDef](./type_defs.md#hostedzoneconfigtypedef)
+- `DelegationSetId`: `str`
+
+## CreateHostedZoneResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import CreateHostedZoneResponseResponseTypeDef
 ```
 
 Required fields:
@@ -250,16 +402,29 @@ Required fields:
 - `HostedZone`: [HostedZoneTypeDef](./type_defs.md#hostedzonetypedef)
 - `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
 - `DelegationSet`: [DelegationSetTypeDef](./type_defs.md#delegationsettypedef)
-- `Location`: `str`
-
-Optional fields:
-
 - `VPC`: [VPCTypeDef](./type_defs.md#vpctypedef)
+- `Location`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateKeySigningKeyResponseTypeDef
+## CreateKeySigningKeyRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import CreateKeySigningKeyResponseTypeDef
+from mypy_boto3_route53.type_defs import CreateKeySigningKeyRequestTypeDef
+```
+
+Required fields:
+
+- `CallerReference`: `str`
+- `HostedZoneId`: `str`
+- `KeyManagementServiceArn`: `str`
+- `Name`: `str`
+- `Status`: `str`
+
+## CreateKeySigningKeyResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import CreateKeySigningKeyResponseResponseTypeDef
 ```
 
 Required fields:
@@ -267,11 +432,24 @@ Required fields:
 - `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
 - `KeySigningKey`: [KeySigningKeyTypeDef](./type_defs.md#keysigningkeytypedef)
 - `Location`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateQueryLoggingConfigResponseTypeDef
+## CreateQueryLoggingConfigRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import CreateQueryLoggingConfigResponseTypeDef
+from mypy_boto3_route53.type_defs import CreateQueryLoggingConfigRequestTypeDef
+```
+
+Required fields:
+
+- `HostedZoneId`: `str`
+- `CloudWatchLogsLogGroupArn`: `str`
+
+## CreateQueryLoggingConfigResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import CreateQueryLoggingConfigResponseResponseTypeDef
 ```
 
 Required fields:
@@ -279,22 +457,54 @@ Required fields:
 - `QueryLoggingConfig`:
   [QueryLoggingConfigTypeDef](./type_defs.md#queryloggingconfigtypedef)
 - `Location`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateReusableDelegationSetResponseTypeDef
+## CreateReusableDelegationSetRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import CreateReusableDelegationSetResponseTypeDef
+from mypy_boto3_route53.type_defs import CreateReusableDelegationSetRequestTypeDef
+```
+
+Required fields:
+
+- `CallerReference`: `str`
+
+Optional fields:
+
+- `HostedZoneId`: `str`
+
+## CreateReusableDelegationSetResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import CreateReusableDelegationSetResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `DelegationSet`: [DelegationSetTypeDef](./type_defs.md#delegationsettypedef)
 - `Location`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTrafficPolicyInstanceResponseTypeDef
+## CreateTrafficPolicyInstanceRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import CreateTrafficPolicyInstanceResponseTypeDef
+from mypy_boto3_route53.type_defs import CreateTrafficPolicyInstanceRequestTypeDef
+```
+
+Required fields:
+
+- `HostedZoneId`: `str`
+- `Name`: `str`
+- `TTL`: `int`
+- `TrafficPolicyId`: `str`
+- `TrafficPolicyVersion`: `int`
+
+## CreateTrafficPolicyInstanceResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import CreateTrafficPolicyInstanceResponseResponseTypeDef
 ```
 
 Required fields:
@@ -302,39 +512,88 @@ Required fields:
 - `TrafficPolicyInstance`:
   [TrafficPolicyInstanceTypeDef](./type_defs.md#trafficpolicyinstancetypedef)
 - `Location`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTrafficPolicyResponseTypeDef
+## CreateTrafficPolicyRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import CreateTrafficPolicyResponseTypeDef
+from mypy_boto3_route53.type_defs import CreateTrafficPolicyRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Document`: `str`
+
+Optional fields:
+
+- `Comment`: `str`
+
+## CreateTrafficPolicyResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import CreateTrafficPolicyResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `TrafficPolicy`: [TrafficPolicyTypeDef](./type_defs.md#trafficpolicytypedef)
 - `Location`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTrafficPolicyVersionResponseTypeDef
+## CreateTrafficPolicyVersionRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import CreateTrafficPolicyVersionResponseTypeDef
+from mypy_boto3_route53.type_defs import CreateTrafficPolicyVersionRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `Document`: `str`
+
+Optional fields:
+
+- `Comment`: `str`
+
+## CreateTrafficPolicyVersionResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import CreateTrafficPolicyVersionResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `TrafficPolicy`: [TrafficPolicyTypeDef](./type_defs.md#trafficpolicytypedef)
 - `Location`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateVPCAssociationAuthorizationResponseTypeDef
+## CreateVPCAssociationAuthorizationRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import CreateVPCAssociationAuthorizationResponseTypeDef
+from mypy_boto3_route53.type_defs import CreateVPCAssociationAuthorizationRequestTypeDef
 ```
 
 Required fields:
 
 - `HostedZoneId`: `str`
 - `VPC`: [VPCTypeDef](./type_defs.md#vpctypedef)
+
+## CreateVPCAssociationAuthorizationResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import CreateVPCAssociationAuthorizationResponseResponseTypeDef
+```
+
+Required fields:
+
+- `HostedZoneId`: `str`
+- `VPC`: [VPCTypeDef](./type_defs.md#vpctypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DNSSECStatusTypeDef
 
@@ -347,15 +606,28 @@ Optional fields:
 - `ServeSignature`: `str`
 - `StatusMessage`: `str`
 
-## DeactivateKeySigningKeyResponseTypeDef
+## DeactivateKeySigningKeyRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import DeactivateKeySigningKeyResponseTypeDef
+from mypy_boto3_route53.type_defs import DeactivateKeySigningKeyRequestTypeDef
+```
+
+Required fields:
+
+- `HostedZoneId`: `str`
+- `Name`: `str`
+
+## DeactivateKeySigningKeyResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import DeactivateKeySigningKeyResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DelegationSetTypeDef
 
@@ -372,25 +644,112 @@ Optional fields:
 - `Id`: `str`
 - `CallerReference`: `str`
 
-## DeleteHostedZoneResponseTypeDef
+## DeleteHealthCheckRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import DeleteHostedZoneResponseTypeDef
+from mypy_boto3_route53.type_defs import DeleteHealthCheckRequestTypeDef
+```
+
+Required fields:
+
+- `HealthCheckId`: `str`
+
+## DeleteHostedZoneRequestTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import DeleteHostedZoneRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## DeleteHostedZoneResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import DeleteHostedZoneResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteKeySigningKeyResponseTypeDef
+## DeleteKeySigningKeyRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import DeleteKeySigningKeyResponseTypeDef
+from mypy_boto3_route53.type_defs import DeleteKeySigningKeyRequestTypeDef
+```
+
+Required fields:
+
+- `HostedZoneId`: `str`
+- `Name`: `str`
+
+## DeleteKeySigningKeyResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import DeleteKeySigningKeyResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteQueryLoggingConfigRequestTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import DeleteQueryLoggingConfigRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## DeleteReusableDelegationSetRequestTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import DeleteReusableDelegationSetRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## DeleteTrafficPolicyInstanceRequestTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import DeleteTrafficPolicyInstanceRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## DeleteTrafficPolicyRequestTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import DeleteTrafficPolicyRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `Version`: `int`
+
+## DeleteVPCAssociationAuthorizationRequestTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import DeleteVPCAssociationAuthorizationRequestTypeDef
+```
+
+Required fields:
+
+- `HostedZoneId`: `str`
+- `VPC`: [VPCTypeDef](./type_defs.md#vpctypedef)
 
 ## DimensionTypeDef
 
@@ -403,35 +762,76 @@ Required fields:
 - `Name`: `str`
 - `Value`: `str`
 
-## DisableHostedZoneDNSSECResponseTypeDef
+## DisableHostedZoneDNSSECRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import DisableHostedZoneDNSSECResponseTypeDef
+from mypy_boto3_route53.type_defs import DisableHostedZoneDNSSECRequestTypeDef
+```
+
+Required fields:
+
+- `HostedZoneId`: `str`
+
+## DisableHostedZoneDNSSECResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import DisableHostedZoneDNSSECResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociateVPCFromHostedZoneResponseTypeDef
+## DisassociateVPCFromHostedZoneRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import DisassociateVPCFromHostedZoneResponseTypeDef
+from mypy_boto3_route53.type_defs import DisassociateVPCFromHostedZoneRequestTypeDef
+```
+
+Required fields:
+
+- `HostedZoneId`: `str`
+- `VPC`: [VPCTypeDef](./type_defs.md#vpctypedef)
+
+Optional fields:
+
+- `Comment`: `str`
+
+## DisassociateVPCFromHostedZoneResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import DisassociateVPCFromHostedZoneResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## EnableHostedZoneDNSSECResponseTypeDef
+## EnableHostedZoneDNSSECRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import EnableHostedZoneDNSSECResponseTypeDef
+from mypy_boto3_route53.type_defs import EnableHostedZoneDNSSECRequestTypeDef
+```
+
+Required fields:
+
+- `HostedZoneId`: `str`
+
+## EnableHostedZoneDNSSECResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import EnableHostedZoneDNSSECResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GeoLocationDetailsTypeDef
 
@@ -460,41 +860,77 @@ Optional fields:
 - `CountryCode`: `str`
 - `SubdivisionCode`: `str`
 
-## GetAccountLimitResponseTypeDef
+## GetAccountLimitRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import GetAccountLimitResponseTypeDef
+from mypy_boto3_route53.type_defs import GetAccountLimitRequestTypeDef
+```
+
+Required fields:
+
+- `Type`: [AccountLimitTypeType](./literals.md#accountlimittypetype)
+
+## GetAccountLimitResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import GetAccountLimitResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `Limit`: [AccountLimitTypeDef](./type_defs.md#accountlimittypedef)
 - `Count`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetChangeResponseTypeDef
+## GetChangeRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import GetChangeResponseTypeDef
+from mypy_boto3_route53.type_defs import GetChangeRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## GetChangeResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import GetChangeResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCheckerIpRangesResponseTypeDef
+## GetCheckerIpRangesResponseResponseTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import GetCheckerIpRangesResponseTypeDef
+from mypy_boto3_route53.type_defs import GetCheckerIpRangesResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `CheckerIpRanges`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDNSSECResponseTypeDef
+## GetDNSSECRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import GetDNSSECResponseTypeDef
+from mypy_boto3_route53.type_defs import GetDNSSECRequestTypeDef
+```
+
+Required fields:
+
+- `HostedZoneId`: `str`
+
+## GetDNSSECResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import GetDNSSECResponseResponseTypeDef
 ```
 
 Required fields:
@@ -502,111 +938,213 @@ Required fields:
 - `Status`: [DNSSECStatusTypeDef](./type_defs.md#dnssecstatustypedef)
 - `KeySigningKeys`:
   `List`\[[KeySigningKeyTypeDef](./type_defs.md#keysigningkeytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetGeoLocationResponseTypeDef
+## GetGeoLocationRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import GetGeoLocationResponseTypeDef
+from mypy_boto3_route53.type_defs import GetGeoLocationRequestTypeDef
+```
+
+Optional fields:
+
+- `ContinentCode`: `str`
+- `CountryCode`: `str`
+- `SubdivisionCode`: `str`
+
+## GetGeoLocationResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import GetGeoLocationResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `GeoLocationDetails`:
   [GeoLocationDetailsTypeDef](./type_defs.md#geolocationdetailstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetHealthCheckCountResponseTypeDef
+## GetHealthCheckCountResponseResponseTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import GetHealthCheckCountResponseTypeDef
+from mypy_boto3_route53.type_defs import GetHealthCheckCountResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `HealthCheckCount`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetHealthCheckLastFailureReasonResponseTypeDef
+## GetHealthCheckLastFailureReasonRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import GetHealthCheckLastFailureReasonResponseTypeDef
+from mypy_boto3_route53.type_defs import GetHealthCheckLastFailureReasonRequestTypeDef
+```
+
+Required fields:
+
+- `HealthCheckId`: `str`
+
+## GetHealthCheckLastFailureReasonResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import GetHealthCheckLastFailureReasonResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `HealthCheckObservations`:
   `List`\[[HealthCheckObservationTypeDef](./type_defs.md#healthcheckobservationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetHealthCheckResponseTypeDef
+## GetHealthCheckRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import GetHealthCheckResponseTypeDef
+from mypy_boto3_route53.type_defs import GetHealthCheckRequestTypeDef
+```
+
+Required fields:
+
+- `HealthCheckId`: `str`
+
+## GetHealthCheckResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import GetHealthCheckResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `HealthCheck`: [HealthCheckTypeDef](./type_defs.md#healthchecktypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetHealthCheckStatusResponseTypeDef
+## GetHealthCheckStatusRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import GetHealthCheckStatusResponseTypeDef
+from mypy_boto3_route53.type_defs import GetHealthCheckStatusRequestTypeDef
+```
+
+Required fields:
+
+- `HealthCheckId`: `str`
+
+## GetHealthCheckStatusResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import GetHealthCheckStatusResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `HealthCheckObservations`:
   `List`\[[HealthCheckObservationTypeDef](./type_defs.md#healthcheckobservationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetHostedZoneCountResponseTypeDef
+## GetHostedZoneCountResponseResponseTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import GetHostedZoneCountResponseTypeDef
+from mypy_boto3_route53.type_defs import GetHostedZoneCountResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `HostedZoneCount`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetHostedZoneLimitResponseTypeDef
+## GetHostedZoneLimitRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import GetHostedZoneLimitResponseTypeDef
+from mypy_boto3_route53.type_defs import GetHostedZoneLimitRequestTypeDef
+```
+
+Required fields:
+
+- `Type`: [HostedZoneLimitTypeType](./literals.md#hostedzonelimittypetype)
+- `HostedZoneId`: `str`
+
+## GetHostedZoneLimitResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import GetHostedZoneLimitResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `Limit`: [HostedZoneLimitTypeDef](./type_defs.md#hostedzonelimittypedef)
 - `Count`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetHostedZoneResponseTypeDef
+## GetHostedZoneRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import GetHostedZoneResponseTypeDef
+from mypy_boto3_route53.type_defs import GetHostedZoneRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## GetHostedZoneResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import GetHostedZoneResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `HostedZone`: [HostedZoneTypeDef](./type_defs.md#hostedzonetypedef)
-
-Optional fields:
-
 - `DelegationSet`: [DelegationSetTypeDef](./type_defs.md#delegationsettypedef)
 - `VPCs`: `List`\[[VPCTypeDef](./type_defs.md#vpctypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetQueryLoggingConfigResponseTypeDef
+## GetQueryLoggingConfigRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import GetQueryLoggingConfigResponseTypeDef
+from mypy_boto3_route53.type_defs import GetQueryLoggingConfigRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## GetQueryLoggingConfigResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import GetQueryLoggingConfigResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `QueryLoggingConfig`:
   [QueryLoggingConfigTypeDef](./type_defs.md#queryloggingconfigtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetReusableDelegationSetLimitResponseTypeDef
+## GetReusableDelegationSetLimitRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import GetReusableDelegationSetLimitResponseTypeDef
+from mypy_boto3_route53.type_defs import GetReusableDelegationSetLimitRequestTypeDef
+```
+
+Required fields:
+
+- `Type`: `Literal['MAX_ZONES_BY_REUSABLE_DELEGATION_SET']` (see
+  [ReusableDelegationSetLimitTypeType](./literals.md#reusabledelegationsetlimittypetype))
+- `DelegationSetId`: `str`
+
+## GetReusableDelegationSetLimitResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import GetReusableDelegationSetLimitResponseResponseTypeDef
 ```
 
 Required fields:
@@ -614,47 +1152,88 @@ Required fields:
 - `Limit`:
   [ReusableDelegationSetLimitTypeDef](./type_defs.md#reusabledelegationsetlimittypedef)
 - `Count`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetReusableDelegationSetResponseTypeDef
+## GetReusableDelegationSetRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import GetReusableDelegationSetResponseTypeDef
+from mypy_boto3_route53.type_defs import GetReusableDelegationSetRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## GetReusableDelegationSetResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import GetReusableDelegationSetResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `DelegationSet`: [DelegationSetTypeDef](./type_defs.md#delegationsettypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTrafficPolicyInstanceCountResponseTypeDef
+## GetTrafficPolicyInstanceCountResponseResponseTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import GetTrafficPolicyInstanceCountResponseTypeDef
+from mypy_boto3_route53.type_defs import GetTrafficPolicyInstanceCountResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `TrafficPolicyInstanceCount`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTrafficPolicyInstanceResponseTypeDef
+## GetTrafficPolicyInstanceRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import GetTrafficPolicyInstanceResponseTypeDef
+from mypy_boto3_route53.type_defs import GetTrafficPolicyInstanceRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## GetTrafficPolicyInstanceResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import GetTrafficPolicyInstanceResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `TrafficPolicyInstance`:
   [TrafficPolicyInstanceTypeDef](./type_defs.md#trafficpolicyinstancetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTrafficPolicyResponseTypeDef
+## GetTrafficPolicyRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import GetTrafficPolicyResponseTypeDef
+from mypy_boto3_route53.type_defs import GetTrafficPolicyRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `Version`: `int`
+
+## GetTrafficPolicyResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import GetTrafficPolicyResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `TrafficPolicy`: [TrafficPolicyTypeDef](./type_defs.md#trafficpolicytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## HealthCheckConfigTypeDef
 
@@ -819,10 +1398,23 @@ Optional fields:
 - `ServicePrincipal`: `str`
 - `Description`: `str`
 
-## ListGeoLocationsResponseTypeDef
+## ListGeoLocationsRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import ListGeoLocationsResponseTypeDef
+from mypy_boto3_route53.type_defs import ListGeoLocationsRequestTypeDef
+```
+
+Optional fields:
+
+- `StartContinentCode`: `str`
+- `StartCountryCode`: `str`
+- `StartSubdivisionCode`: `str`
+- `MaxItems`: `str`
+
+## ListGeoLocationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import ListGeoLocationsResponseResponseTypeDef
 ```
 
 Required fields:
@@ -830,18 +1422,28 @@ Required fields:
 - `GeoLocationDetailsList`:
   `List`\[[GeoLocationDetailsTypeDef](./type_defs.md#geolocationdetailstypedef)\]
 - `IsTruncated`: `bool`
-- `MaxItems`: `str`
-
-Optional fields:
-
 - `NextContinentCode`: `str`
 - `NextCountryCode`: `str`
 - `NextSubdivisionCode`: `str`
+- `MaxItems`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListHealthChecksResponseTypeDef
+## ListHealthChecksRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import ListHealthChecksResponseTypeDef
+from mypy_boto3_route53.type_defs import ListHealthChecksRequestTypeDef
+```
+
+Optional fields:
+
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+## ListHealthChecksResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import ListHealthChecksResponseResponseTypeDef
 ```
 
 Required fields:
@@ -850,36 +1452,62 @@ Required fields:
   `List`\[[HealthCheckTypeDef](./type_defs.md#healthchecktypedef)\]
 - `Marker`: `str`
 - `IsTruncated`: `bool`
+- `NextMarker`: `str`
 - `MaxItems`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListHostedZonesByNameRequestTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import ListHostedZonesByNameRequestTypeDef
+```
 
 Optional fields:
 
-- `NextMarker`: `str`
+- `DNSName`: `str`
+- `HostedZoneId`: `str`
+- `MaxItems`: `str`
 
-## ListHostedZonesByNameResponseTypeDef
+## ListHostedZonesByNameResponseResponseTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import ListHostedZonesByNameResponseTypeDef
+from mypy_boto3_route53.type_defs import ListHostedZonesByNameResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `HostedZones`:
   `List`\[[HostedZoneTypeDef](./type_defs.md#hostedzonetypedef)\]
+- `DNSName`: `str`
+- `HostedZoneId`: `str`
 - `IsTruncated`: `bool`
+- `NextDNSName`: `str`
+- `NextHostedZoneId`: `str`
 - `MaxItems`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListHostedZonesByVPCRequestTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import ListHostedZonesByVPCRequestTypeDef
+```
+
+Required fields:
+
+- `VPCId`: `str`
+- `VPCRegion`: [VPCRegionType](./literals.md#vpcregiontype)
 
 Optional fields:
 
-- `DNSName`: `str`
-- `HostedZoneId`: `str`
-- `NextDNSName`: `str`
-- `NextHostedZoneId`: `str`
+- `MaxItems`: `str`
+- `NextToken`: `str`
 
-## ListHostedZonesByVPCResponseTypeDef
+## ListHostedZonesByVPCResponseResponseTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import ListHostedZonesByVPCResponseTypeDef
+from mypy_boto3_route53.type_defs import ListHostedZonesByVPCResponseResponseTypeDef
 ```
 
 Required fields:
@@ -887,15 +1515,26 @@ Required fields:
 - `HostedZoneSummaries`:
   `List`\[[HostedZoneSummaryTypeDef](./type_defs.md#hostedzonesummarytypedef)\]
 - `MaxItems`: `str`
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListHostedZonesRequestTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import ListHostedZonesRequestTypeDef
+```
 
 Optional fields:
 
-- `NextToken`: `str`
+- `Marker`: `str`
+- `MaxItems`: `str`
+- `DelegationSetId`: `str`
 
-## ListHostedZonesResponseTypeDef
+## ListHostedZonesResponseResponseTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import ListHostedZonesResponseTypeDef
+from mypy_boto3_route53.type_defs import ListHostedZonesResponseResponseTypeDef
 ```
 
 Required fields:
@@ -904,31 +1543,58 @@ Required fields:
   `List`\[[HostedZoneTypeDef](./type_defs.md#hostedzonetypedef)\]
 - `Marker`: `str`
 - `IsTruncated`: `bool`
+- `NextMarker`: `str`
 - `MaxItems`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListQueryLoggingConfigsRequestTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import ListQueryLoggingConfigsRequestTypeDef
+```
 
 Optional fields:
 
-- `NextMarker`: `str`
+- `HostedZoneId`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `str`
 
-## ListQueryLoggingConfigsResponseTypeDef
+## ListQueryLoggingConfigsResponseResponseTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import ListQueryLoggingConfigsResponseTypeDef
+from mypy_boto3_route53.type_defs import ListQueryLoggingConfigsResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `QueryLoggingConfigs`:
   `List`\[[QueryLoggingConfigTypeDef](./type_defs.md#queryloggingconfigtypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListResourceRecordSetsRequestTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import ListResourceRecordSetsRequestTypeDef
+```
+
+Required fields:
+
+- `HostedZoneId`: `str`
 
 Optional fields:
 
-- `NextToken`: `str`
+- `StartRecordName`: `str`
+- `StartRecordType`: [RRTypeType](./literals.md#rrtypetype)
+- `StartRecordIdentifier`: `str`
+- `MaxItems`: `str`
 
-## ListResourceRecordSetsResponseTypeDef
+## ListResourceRecordSetsResponseResponseTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import ListResourceRecordSetsResponseTypeDef
+from mypy_boto3_route53.type_defs import ListResourceRecordSetsResponseResponseTypeDef
 ```
 
 Required fields:
@@ -936,18 +1602,28 @@ Required fields:
 - `ResourceRecordSets`:
   `List`\[[ResourceRecordSetTypeDef](./type_defs.md#resourcerecordsettypedef)\]
 - `IsTruncated`: `bool`
-- `MaxItems`: `str`
-
-Optional fields:
-
 - `NextRecordName`: `str`
 - `NextRecordType`: [RRTypeType](./literals.md#rrtypetype)
 - `NextRecordIdentifier`: `str`
+- `MaxItems`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListReusableDelegationSetsResponseTypeDef
+## ListReusableDelegationSetsRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import ListReusableDelegationSetsResponseTypeDef
+from mypy_boto3_route53.type_defs import ListReusableDelegationSetsRequestTypeDef
+```
+
+Optional fields:
+
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+## ListReusableDelegationSetsResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import ListReusableDelegationSetsResponseResponseTypeDef
 ```
 
 Required fields:
@@ -956,38 +1632,74 @@ Required fields:
   `List`\[[DelegationSetTypeDef](./type_defs.md#delegationsettypedef)\]
 - `Marker`: `str`
 - `IsTruncated`: `bool`
-- `MaxItems`: `str`
-
-Optional fields:
-
 - `NextMarker`: `str`
+- `MaxItems`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_route53.type_defs import ListTagsForResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceType`: [TagResourceTypeType](./literals.md#tagresourcetypetype)
+- `ResourceId`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import ListTagsForResourceResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `ResourceTagSet`:
   [ResourceTagSetTypeDef](./type_defs.md#resourcetagsettypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourcesResponseTypeDef
+## ListTagsForResourcesRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import ListTagsForResourcesResponseTypeDef
+from mypy_boto3_route53.type_defs import ListTagsForResourcesRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceType`: [TagResourceTypeType](./literals.md#tagresourcetypetype)
+- `ResourceIds`: `List`\[`str`\]
+
+## ListTagsForResourcesResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import ListTagsForResourcesResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `ResourceTagSets`:
   `List`\[[ResourceTagSetTypeDef](./type_defs.md#resourcetagsettypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTrafficPoliciesResponseTypeDef
+## ListTrafficPoliciesRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import ListTrafficPoliciesResponseTypeDef
+from mypy_boto3_route53.type_defs import ListTrafficPoliciesRequestTypeDef
+```
+
+Optional fields:
+
+- `TrafficPolicyIdMarker`: `str`
+- `MaxItems`: `str`
+
+## ListTrafficPoliciesResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import ListTrafficPoliciesResponseResponseTypeDef
 ```
 
 Required fields:
@@ -997,67 +1709,128 @@ Required fields:
 - `IsTruncated`: `bool`
 - `TrafficPolicyIdMarker`: `str`
 - `MaxItems`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTrafficPolicyInstancesByHostedZoneResponseTypeDef
+## ListTrafficPolicyInstancesByHostedZoneRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import ListTrafficPolicyInstancesByHostedZoneResponseTypeDef
+from mypy_boto3_route53.type_defs import ListTrafficPolicyInstancesByHostedZoneRequestTypeDef
 ```
 
 Required fields:
 
-- `TrafficPolicyInstances`:
-  `List`\[[TrafficPolicyInstanceTypeDef](./type_defs.md#trafficpolicyinstancetypedef)\]
-- `IsTruncated`: `bool`
-- `MaxItems`: `str`
+- `HostedZoneId`: `str`
 
 Optional fields:
 
 - `TrafficPolicyInstanceNameMarker`: `str`
 - `TrafficPolicyInstanceTypeMarker`: [RRTypeType](./literals.md#rrtypetype)
+- `MaxItems`: `str`
 
-## ListTrafficPolicyInstancesByPolicyResponseTypeDef
+## ListTrafficPolicyInstancesByHostedZoneResponseResponseTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import ListTrafficPolicyInstancesByPolicyResponseTypeDef
+from mypy_boto3_route53.type_defs import ListTrafficPolicyInstancesByHostedZoneResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `TrafficPolicyInstances`:
   `List`\[[TrafficPolicyInstanceTypeDef](./type_defs.md#trafficpolicyinstancetypedef)\]
-- `IsTruncated`: `bool`
-- `MaxItems`: `str`
-
-Optional fields:
-
-- `HostedZoneIdMarker`: `str`
 - `TrafficPolicyInstanceNameMarker`: `str`
 - `TrafficPolicyInstanceTypeMarker`: [RRTypeType](./literals.md#rrtypetype)
+- `IsTruncated`: `bool`
+- `MaxItems`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTrafficPolicyInstancesResponseTypeDef
+## ListTrafficPolicyInstancesByPolicyRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import ListTrafficPolicyInstancesResponseTypeDef
+from mypy_boto3_route53.type_defs import ListTrafficPolicyInstancesByPolicyRequestTypeDef
 ```
 
 Required fields:
 
-- `TrafficPolicyInstances`:
-  `List`\[[TrafficPolicyInstanceTypeDef](./type_defs.md#trafficpolicyinstancetypedef)\]
-- `IsTruncated`: `bool`
-- `MaxItems`: `str`
+- `TrafficPolicyId`: `str`
+- `TrafficPolicyVersion`: `int`
 
 Optional fields:
 
 - `HostedZoneIdMarker`: `str`
 - `TrafficPolicyInstanceNameMarker`: `str`
 - `TrafficPolicyInstanceTypeMarker`: [RRTypeType](./literals.md#rrtypetype)
+- `MaxItems`: `str`
 
-## ListTrafficPolicyVersionsResponseTypeDef
+## ListTrafficPolicyInstancesByPolicyResponseResponseTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import ListTrafficPolicyVersionsResponseTypeDef
+from mypy_boto3_route53.type_defs import ListTrafficPolicyInstancesByPolicyResponseResponseTypeDef
+```
+
+Required fields:
+
+- `TrafficPolicyInstances`:
+  `List`\[[TrafficPolicyInstanceTypeDef](./type_defs.md#trafficpolicyinstancetypedef)\]
+- `HostedZoneIdMarker`: `str`
+- `TrafficPolicyInstanceNameMarker`: `str`
+- `TrafficPolicyInstanceTypeMarker`: [RRTypeType](./literals.md#rrtypetype)
+- `IsTruncated`: `bool`
+- `MaxItems`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListTrafficPolicyInstancesRequestTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import ListTrafficPolicyInstancesRequestTypeDef
+```
+
+Optional fields:
+
+- `HostedZoneIdMarker`: `str`
+- `TrafficPolicyInstanceNameMarker`: `str`
+- `TrafficPolicyInstanceTypeMarker`: [RRTypeType](./literals.md#rrtypetype)
+- `MaxItems`: `str`
+
+## ListTrafficPolicyInstancesResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import ListTrafficPolicyInstancesResponseResponseTypeDef
+```
+
+Required fields:
+
+- `TrafficPolicyInstances`:
+  `List`\[[TrafficPolicyInstanceTypeDef](./type_defs.md#trafficpolicyinstancetypedef)\]
+- `HostedZoneIdMarker`: `str`
+- `TrafficPolicyInstanceNameMarker`: `str`
+- `TrafficPolicyInstanceTypeMarker`: [RRTypeType](./literals.md#rrtypetype)
+- `IsTruncated`: `bool`
+- `MaxItems`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListTrafficPolicyVersionsRequestTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import ListTrafficPolicyVersionsRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+Optional fields:
+
+- `TrafficPolicyVersionMarker`: `str`
+- `MaxItems`: `str`
+
+## ListTrafficPolicyVersionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import ListTrafficPolicyVersionsResponseResponseTypeDef
 ```
 
 Required fields:
@@ -1067,21 +1840,37 @@ Required fields:
 - `IsTruncated`: `bool`
 - `TrafficPolicyVersionMarker`: `str`
 - `MaxItems`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListVPCAssociationAuthorizationsResponseTypeDef
+## ListVPCAssociationAuthorizationsRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import ListVPCAssociationAuthorizationsResponseTypeDef
+from mypy_boto3_route53.type_defs import ListVPCAssociationAuthorizationsRequestTypeDef
 ```
 
 Required fields:
 
 - `HostedZoneId`: `str`
-- `VPCs`: `List`\[[VPCTypeDef](./type_defs.md#vpctypedef)\]
 
 Optional fields:
 
 - `NextToken`: `str`
+- `MaxResults`: `str`
+
+## ListVPCAssociationAuthorizationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import ListVPCAssociationAuthorizationsResponseResponseTypeDef
+```
+
+Required fields:
+
+- `HostedZoneId`: `str`
+- `NextToken`: `str`
+- `VPCs`: `List`\[[VPCTypeDef](./type_defs.md#vpctypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -1157,6 +1946,20 @@ Optional fields:
 - `ResourceId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
 ## ReusableDelegationSetLimitTypeDef
 
 ```python
@@ -1191,10 +1994,28 @@ Optional fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## TestDNSAnswerResponseTypeDef
+## TestDNSAnswerRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import TestDNSAnswerResponseTypeDef
+from mypy_boto3_route53.type_defs import TestDNSAnswerRequestTypeDef
+```
+
+Required fields:
+
+- `HostedZoneId`: `str`
+- `RecordName`: `str`
+- `RecordType`: [RRTypeType](./literals.md#rrtypetype)
+
+Optional fields:
+
+- `ResolverIP`: `str`
+- `EDNS0ClientSubnetIP`: `str`
+- `EDNS0ClientSubnetMask`: `str`
+
+## TestDNSAnswerResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import TestDNSAnswerResponseResponseTypeDef
 ```
 
 Required fields:
@@ -1205,6 +2026,8 @@ Required fields:
 - `RecordData`: `List`\[`str`\]
 - `ResponseCode`: `str`
 - `Protocol`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## TrafficPolicyInstanceTypeDef
 
@@ -1256,46 +2079,126 @@ Optional fields:
 
 - `Comment`: `str`
 
-## UpdateHealthCheckResponseTypeDef
+## UpdateHealthCheckRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import UpdateHealthCheckResponseTypeDef
+from mypy_boto3_route53.type_defs import UpdateHealthCheckRequestTypeDef
+```
+
+Required fields:
+
+- `HealthCheckId`: `str`
+
+Optional fields:
+
+- `HealthCheckVersion`: `int`
+- `IPAddress`: `str`
+- `Port`: `int`
+- `ResourcePath`: `str`
+- `FullyQualifiedDomainName`: `str`
+- `SearchString`: `str`
+- `FailureThreshold`: `int`
+- `Inverted`: `bool`
+- `Disabled`: `bool`
+- `HealthThreshold`: `int`
+- `ChildHealthChecks`: `List`\[`str`\]
+- `EnableSNI`: `bool`
+- `Regions`:
+  `List`\[[HealthCheckRegionType](./literals.md#healthcheckregiontype)\]
+- `AlarmIdentifier`:
+  [AlarmIdentifierTypeDef](./type_defs.md#alarmidentifiertypedef)
+- `InsufficientDataHealthStatus`:
+  [InsufficientDataHealthStatusType](./literals.md#insufficientdatahealthstatustype)
+- `ResetElements`:
+  `List`\[[ResettableElementNameType](./literals.md#resettableelementnametype)\]
+
+## UpdateHealthCheckResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import UpdateHealthCheckResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `HealthCheck`: [HealthCheckTypeDef](./type_defs.md#healthchecktypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateHostedZoneCommentResponseTypeDef
+## UpdateHostedZoneCommentRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import UpdateHostedZoneCommentResponseTypeDef
+from mypy_boto3_route53.type_defs import UpdateHostedZoneCommentRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+Optional fields:
+
+- `Comment`: `str`
+
+## UpdateHostedZoneCommentResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import UpdateHostedZoneCommentResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `HostedZone`: [HostedZoneTypeDef](./type_defs.md#hostedzonetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateTrafficPolicyCommentResponseTypeDef
+## UpdateTrafficPolicyCommentRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import UpdateTrafficPolicyCommentResponseTypeDef
+from mypy_boto3_route53.type_defs import UpdateTrafficPolicyCommentRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `Version`: `int`
+- `Comment`: `str`
+
+## UpdateTrafficPolicyCommentResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import UpdateTrafficPolicyCommentResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `TrafficPolicy`: [TrafficPolicyTypeDef](./type_defs.md#trafficpolicytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateTrafficPolicyInstanceResponseTypeDef
+## UpdateTrafficPolicyInstanceRequestTypeDef
 
 ```python
-from mypy_boto3_route53.type_defs import UpdateTrafficPolicyInstanceResponseTypeDef
+from mypy_boto3_route53.type_defs import UpdateTrafficPolicyInstanceRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `TTL`: `int`
+- `TrafficPolicyId`: `str`
+- `TrafficPolicyVersion`: `int`
+
+## UpdateTrafficPolicyInstanceResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53.type_defs import UpdateTrafficPolicyInstanceResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `TrafficPolicyInstance`:
   [TrafficPolicyInstanceTypeDef](./type_defs.md#trafficpolicyinstancetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## VPCTypeDef
 

@@ -54,6 +54,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("personalize-runtime").can_paginate` method.
 
 Boto3 documentation:
@@ -66,6 +68,8 @@ Arguments:
 Returns `bool`.
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for
 `boto3.client("personalize-runtime").generate_presigned_url` method.
@@ -84,11 +88,16 @@ Returns `str`.
 
 ### get_personalized_ranking
 
+Re-ranks a list of recommended items for the given user.
+
 Type annotations for
 `boto3.client("personalize-runtime").get_personalized_ranking` method.
 
 Boto3 documentation:
 [PersonalizeRuntime.Client.get_personalized_ranking](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.get_personalized_ranking)
+
+Arguments mapping described in
+[GetPersonalizedRankingRequestTypeDef](./type_defs.md#getpersonalizedrankingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -100,15 +109,20 @@ Keyword-only arguments:
 - `filterValues`: `Dict`\[`str`, `str`\]
 
 Returns
-[GetPersonalizedRankingResponseTypeDef](./type_defs.md#getpersonalizedrankingresponsetypedef).
+[GetPersonalizedRankingResponseResponseTypeDef](./type_defs.md#getpersonalizedrankingresponseresponsetypedef).
 
 ### get_recommendations
+
+Returns a list of recommended items.
 
 Type annotations for `boto3.client("personalize-runtime").get_recommendations`
 method.
 
 Boto3 documentation:
 [PersonalizeRuntime.Client.get_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.get_recommendations)
+
+Arguments mapping described in
+[GetRecommendationsRequestTypeDef](./type_defs.md#getrecommendationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -121,4 +135,4 @@ Keyword-only arguments:
 - `filterValues`: `Dict`\[`str`, `str`\]
 
 Returns
-[GetRecommendationsResponseTypeDef](./type_defs.md#getrecommendationsresponsetypedef).
+[GetRecommendationsResponseResponseTypeDef](./type_defs.md#getrecommendationsresponseresponsetypedef).

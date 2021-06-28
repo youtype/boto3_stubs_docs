@@ -38,7 +38,7 @@ Arguments for `ListConfigsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListConfigsPaginator.paginate` returns
-`Iterator`\[[ListConfigsResponseTypeDef](./type_defs.md#listconfigsresponsetypedef)\].
+`Iterator`\[[ListConfigsResponseResponseTypeDef](./type_defs.md#listconfigsresponseresponsetypedef)\].
 
 ## ListContactsPaginator
 
@@ -59,8 +59,8 @@ Boto3 documentation:
 
 Arguments for `ListContactsPaginator.paginate` method:
 
-- `endTime`: `datetime` *(required)*
-- `startTime`: `datetime` *(required)*
+- `endTime`: `Union`\[`datetime`, `str`\] *(required)*
+- `startTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `statusList`: `List`\[[ContactStatusType](./literals.md#contactstatustype)\]
   *(required)*
 - `groundStation`: `str`
@@ -70,7 +70,7 @@ Arguments for `ListContactsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListContactsPaginator.paginate` returns
-`Iterator`\[[ListContactsResponseTypeDef](./type_defs.md#listcontactsresponsetypedef)\].
+`Iterator`\[[ListContactsResponseResponseTypeDef](./type_defs.md#listcontactsresponseresponsetypedef)\].
 
 ## ListDataflowEndpointGroupsPaginator
 
@@ -95,7 +95,7 @@ Arguments for `ListDataflowEndpointGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDataflowEndpointGroupsPaginator.paginate` returns
-`Iterator`\[[ListDataflowEndpointGroupsResponseTypeDef](./type_defs.md#listdataflowendpointgroupsresponsetypedef)\].
+`Iterator`\[[ListDataflowEndpointGroupsResponseResponseTypeDef](./type_defs.md#listdataflowendpointgroupsresponseresponsetypedef)\].
 
 ## ListGroundStationsPaginator
 
@@ -121,7 +121,7 @@ Arguments for `ListGroundStationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGroundStationsPaginator.paginate` returns
-`Iterator`\[[ListGroundStationsResponseTypeDef](./type_defs.md#listgroundstationsresponsetypedef)\].
+`Iterator`\[[ListGroundStationsResponseResponseTypeDef](./type_defs.md#listgroundstationsresponseresponsetypedef)\].
 
 ## ListMissionProfilesPaginator
 
@@ -146,7 +146,7 @@ Arguments for `ListMissionProfilesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMissionProfilesPaginator.paginate` returns
-`Iterator`\[[ListMissionProfilesResponseTypeDef](./type_defs.md#listmissionprofilesresponsetypedef)\].
+`Iterator`\[[ListMissionProfilesResponseResponseTypeDef](./type_defs.md#listmissionprofilesresponseresponsetypedef)\].
 
 ## ListSatellitesPaginator
 
@@ -171,4 +171,4 @@ Arguments for `ListSatellitesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSatellitesPaginator.paginate` returns
-`Iterator`\[[ListSatellitesResponseTypeDef](./type_defs.md#listsatellitesresponsetypedef)\].
+`Iterator`\[[ListSatellitesResponseResponseTypeDef](./type_defs.md#listsatellitesresponseresponsetypedef)\].

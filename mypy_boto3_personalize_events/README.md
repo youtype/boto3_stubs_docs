@@ -58,4 +58,7 @@ from mypy_boto3_personalize_events.type_defs import EventTypeDef, ...
 
 - [EventTypeDef](./type_defs.md#eventtypedef)
 - [ItemTypeDef](./type_defs.md#itemtypedef)
+- [PutEventsRequestTypeDef](./type_defs.md#puteventsrequesttypedef)
+- [PutItemsRequestTypeDef](./type_defs.md#putitemsrequesttypedef)
+- [PutUsersRequestTypeDef](./type_defs.md#putusersrequesttypedef)
 - [UserTypeDef](./type_defs.md#usertypedef)

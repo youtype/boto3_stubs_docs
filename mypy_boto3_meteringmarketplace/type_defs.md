@@ -8,59 +8,142 @@ type annotations stubs module
 [mypy_boto3_meteringmarketplace](https://pypi.org/project/mypy-boto3-meteringmarketplace/).
 
 - [Typed dictionaries for boto3 MarketplaceMetering module](#typed-dictionaries-for-boto3-marketplacemetering-module)
-  - [BatchMeterUsageResultTypeDef](#batchmeterusageresulttypedef)
-  - [MeterUsageResultTypeDef](#meterusageresulttypedef)
-  - [RegisterUsageResultTypeDef](#registerusageresulttypedef)
-  - [ResolveCustomerResultTypeDef](#resolvecustomerresulttypedef)
+  - [BatchMeterUsageRequestTypeDef](#batchmeterusagerequesttypedef)
+  - [BatchMeterUsageResultResponseTypeDef](#batchmeterusageresultresponsetypedef)
+  - [MeterUsageRequestTypeDef](#meterusagerequesttypedef)
+  - [MeterUsageResultResponseTypeDef](#meterusageresultresponsetypedef)
+  - [RegisterUsageRequestTypeDef](#registerusagerequesttypedef)
+  - [RegisterUsageResultResponseTypeDef](#registerusageresultresponsetypedef)
+  - [ResolveCustomerRequestTypeDef](#resolvecustomerrequesttypedef)
+  - [ResolveCustomerResultResponseTypeDef](#resolvecustomerresultresponsetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [TagTypeDef](#tagtypedef)
   - [UsageAllocationTypeDef](#usageallocationtypedef)
   - [UsageRecordResultTypeDef](#usagerecordresulttypedef)
   - [UsageRecordTypeDef](#usagerecordtypedef)
 
-## BatchMeterUsageResultTypeDef
+## BatchMeterUsageRequestTypeDef
 
 ```python
-from mypy_boto3_meteringmarketplace.type_defs import BatchMeterUsageResultTypeDef
+from mypy_boto3_meteringmarketplace.type_defs import BatchMeterUsageRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `UsageRecords`:
+  `List`\[[UsageRecordTypeDef](./type_defs.md#usagerecordtypedef)\]
+- `ProductCode`: `str`
+
+## BatchMeterUsageResultResponseTypeDef
+
+```python
+from mypy_boto3_meteringmarketplace.type_defs import BatchMeterUsageResultResponseTypeDef
+```
+
+Required fields:
 
 - `Results`:
   `List`\[[UsageRecordResultTypeDef](./type_defs.md#usagerecordresulttypedef)\]
 - `UnprocessedRecords`:
   `List`\[[UsageRecordTypeDef](./type_defs.md#usagerecordtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## MeterUsageResultTypeDef
+## MeterUsageRequestTypeDef
 
 ```python
-from mypy_boto3_meteringmarketplace.type_defs import MeterUsageResultTypeDef
+from mypy_boto3_meteringmarketplace.type_defs import MeterUsageRequestTypeDef
 ```
 
+Required fields:
+
+- `ProductCode`: `str`
+- `Timestamp`: `Union`\[`datetime`, `str`\]
+- `UsageDimension`: `str`
+
 Optional fields:
+
+- `UsageQuantity`: `int`
+- `DryRun`: `bool`
+- `UsageAllocations`:
+  `List`\[[UsageAllocationTypeDef](./type_defs.md#usageallocationtypedef)\]
+
+## MeterUsageResultResponseTypeDef
+
+```python
+from mypy_boto3_meteringmarketplace.type_defs import MeterUsageResultResponseTypeDef
+```
+
+Required fields:
 
 - `MeteringRecordId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RegisterUsageResultTypeDef
+## RegisterUsageRequestTypeDef
 
 ```python
-from mypy_boto3_meteringmarketplace.type_defs import RegisterUsageResultTypeDef
+from mypy_boto3_meteringmarketplace.type_defs import RegisterUsageRequestTypeDef
 ```
 
+Required fields:
+
+- `ProductCode`: `str`
+- `PublicKeyVersion`: `int`
+
 Optional fields:
+
+- `Nonce`: `str`
+
+## RegisterUsageResultResponseTypeDef
+
+```python
+from mypy_boto3_meteringmarketplace.type_defs import RegisterUsageResultResponseTypeDef
+```
+
+Required fields:
 
 - `PublicKeyRotationTimestamp`: `datetime`
 - `Signature`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ResolveCustomerResultTypeDef
+## ResolveCustomerRequestTypeDef
 
 ```python
-from mypy_boto3_meteringmarketplace.type_defs import ResolveCustomerResultTypeDef
+from mypy_boto3_meteringmarketplace.type_defs import ResolveCustomerRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `RegistrationToken`: `str`
+
+## ResolveCustomerResultResponseTypeDef
+
+```python
+from mypy_boto3_meteringmarketplace.type_defs import ResolveCustomerResultResponseTypeDef
+```
+
+Required fields:
 
 - `CustomerIdentifier`: `str`
 - `ProductCode`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_meteringmarketplace.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## TagTypeDef
 
@@ -108,7 +191,7 @@ from mypy_boto3_meteringmarketplace.type_defs import UsageRecordTypeDef
 
 Required fields:
 
-- `Timestamp`: `datetime`
+- `Timestamp`: `Union`\[`datetime`, `str`\]
 - `CustomerIdentifier`: `str`
 - `Dimension`: `str`
 

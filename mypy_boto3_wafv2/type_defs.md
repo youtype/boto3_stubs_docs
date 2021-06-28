@@ -11,22 +11,37 @@ type annotations stubs module
   - [ActionConditionTypeDef](#actionconditiontypedef)
   - [AllowActionTypeDef](#allowactiontypedef)
   - [AndStatementTypeDef](#andstatementtypedef)
+  - [AssociateWebACLRequestTypeDef](#associatewebaclrequesttypedef)
   - [BlockActionTypeDef](#blockactiontypedef)
   - [ByteMatchStatementTypeDef](#bytematchstatementtypedef)
-  - [CheckCapacityResponseTypeDef](#checkcapacityresponsetypedef)
+  - [CheckCapacityRequestTypeDef](#checkcapacityrequesttypedef)
+  - [CheckCapacityResponseResponseTypeDef](#checkcapacityresponseresponsetypedef)
   - [ConditionTypeDef](#conditiontypedef)
   - [CountActionTypeDef](#countactiontypedef)
-  - [CreateIPSetResponseTypeDef](#createipsetresponsetypedef)
-  - [CreateRegexPatternSetResponseTypeDef](#createregexpatternsetresponsetypedef)
-  - [CreateRuleGroupResponseTypeDef](#createrulegroupresponsetypedef)
-  - [CreateWebACLResponseTypeDef](#createwebaclresponsetypedef)
+  - [CreateIPSetRequestTypeDef](#createipsetrequesttypedef)
+  - [CreateIPSetResponseResponseTypeDef](#createipsetresponseresponsetypedef)
+  - [CreateRegexPatternSetRequestTypeDef](#createregexpatternsetrequesttypedef)
+  - [CreateRegexPatternSetResponseResponseTypeDef](#createregexpatternsetresponseresponsetypedef)
+  - [CreateRuleGroupRequestTypeDef](#createrulegrouprequesttypedef)
+  - [CreateRuleGroupResponseResponseTypeDef](#createrulegroupresponseresponsetypedef)
+  - [CreateWebACLRequestTypeDef](#createwebaclrequesttypedef)
+  - [CreateWebACLResponseResponseTypeDef](#createwebaclresponseresponsetypedef)
   - [CustomHTTPHeaderTypeDef](#customhttpheadertypedef)
   - [CustomRequestHandlingTypeDef](#customrequesthandlingtypedef)
   - [CustomResponseBodyTypeDef](#customresponsebodytypedef)
   - [CustomResponseTypeDef](#customresponsetypedef)
   - [DefaultActionTypeDef](#defaultactiontypedef)
-  - [DeleteFirewallManagerRuleGroupsResponseTypeDef](#deletefirewallmanagerrulegroupsresponsetypedef)
-  - [DescribeManagedRuleGroupResponseTypeDef](#describemanagedrulegroupresponsetypedef)
+  - [DeleteFirewallManagerRuleGroupsRequestTypeDef](#deletefirewallmanagerrulegroupsrequesttypedef)
+  - [DeleteFirewallManagerRuleGroupsResponseResponseTypeDef](#deletefirewallmanagerrulegroupsresponseresponsetypedef)
+  - [DeleteIPSetRequestTypeDef](#deleteipsetrequesttypedef)
+  - [DeleteLoggingConfigurationRequestTypeDef](#deleteloggingconfigurationrequesttypedef)
+  - [DeletePermissionPolicyRequestTypeDef](#deletepermissionpolicyrequesttypedef)
+  - [DeleteRegexPatternSetRequestTypeDef](#deleteregexpatternsetrequesttypedef)
+  - [DeleteRuleGroupRequestTypeDef](#deleterulegrouprequesttypedef)
+  - [DeleteWebACLRequestTypeDef](#deletewebaclrequesttypedef)
+  - [DescribeManagedRuleGroupRequestTypeDef](#describemanagedrulegrouprequesttypedef)
+  - [DescribeManagedRuleGroupResponseResponseTypeDef](#describemanagedrulegroupresponseresponsetypedef)
+  - [DisassociateWebACLRequestTypeDef](#disassociatewebaclrequesttypedef)
   - [ExcludedRuleTypeDef](#excludedruletypedef)
   - [FieldToMatchTypeDef](#fieldtomatchtypedef)
   - [FilterTypeDef](#filtertypedef)
@@ -34,15 +49,24 @@ type annotations stubs module
   - [FirewallManagerStatementTypeDef](#firewallmanagerstatementtypedef)
   - [ForwardedIPConfigTypeDef](#forwardedipconfigtypedef)
   - [GeoMatchStatementTypeDef](#geomatchstatementtypedef)
-  - [GetIPSetResponseTypeDef](#getipsetresponsetypedef)
-  - [GetLoggingConfigurationResponseTypeDef](#getloggingconfigurationresponsetypedef)
-  - [GetPermissionPolicyResponseTypeDef](#getpermissionpolicyresponsetypedef)
-  - [GetRateBasedStatementManagedKeysResponseTypeDef](#getratebasedstatementmanagedkeysresponsetypedef)
-  - [GetRegexPatternSetResponseTypeDef](#getregexpatternsetresponsetypedef)
-  - [GetRuleGroupResponseTypeDef](#getrulegroupresponsetypedef)
-  - [GetSampledRequestsResponseTypeDef](#getsampledrequestsresponsetypedef)
-  - [GetWebACLForResourceResponseTypeDef](#getwebaclforresourceresponsetypedef)
-  - [GetWebACLResponseTypeDef](#getwebaclresponsetypedef)
+  - [GetIPSetRequestTypeDef](#getipsetrequesttypedef)
+  - [GetIPSetResponseResponseTypeDef](#getipsetresponseresponsetypedef)
+  - [GetLoggingConfigurationRequestTypeDef](#getloggingconfigurationrequesttypedef)
+  - [GetLoggingConfigurationResponseResponseTypeDef](#getloggingconfigurationresponseresponsetypedef)
+  - [GetPermissionPolicyRequestTypeDef](#getpermissionpolicyrequesttypedef)
+  - [GetPermissionPolicyResponseResponseTypeDef](#getpermissionpolicyresponseresponsetypedef)
+  - [GetRateBasedStatementManagedKeysRequestTypeDef](#getratebasedstatementmanagedkeysrequesttypedef)
+  - [GetRateBasedStatementManagedKeysResponseResponseTypeDef](#getratebasedstatementmanagedkeysresponseresponsetypedef)
+  - [GetRegexPatternSetRequestTypeDef](#getregexpatternsetrequesttypedef)
+  - [GetRegexPatternSetResponseResponseTypeDef](#getregexpatternsetresponseresponsetypedef)
+  - [GetRuleGroupRequestTypeDef](#getrulegrouprequesttypedef)
+  - [GetRuleGroupResponseResponseTypeDef](#getrulegroupresponseresponsetypedef)
+  - [GetSampledRequestsRequestTypeDef](#getsampledrequestsrequesttypedef)
+  - [GetSampledRequestsResponseResponseTypeDef](#getsampledrequestsresponseresponsetypedef)
+  - [GetWebACLForResourceRequestTypeDef](#getwebaclforresourcerequesttypedef)
+  - [GetWebACLForResourceResponseResponseTypeDef](#getwebaclforresourceresponseresponsetypedef)
+  - [GetWebACLRequestTypeDef](#getwebaclrequesttypedef)
+  - [GetWebACLResponseResponseTypeDef](#getwebaclresponseresponsetypedef)
   - [HTTPHeaderTypeDef](#httpheadertypedef)
   - [HTTPRequestTypeDef](#httprequesttypedef)
   - [IPSetForwardedIPConfigTypeDef](#ipsetforwardedipconfigtypedef)
@@ -55,14 +79,22 @@ type annotations stubs module
   - [LabelNameConditionTypeDef](#labelnameconditiontypedef)
   - [LabelSummaryTypeDef](#labelsummarytypedef)
   - [LabelTypeDef](#labeltypedef)
-  - [ListAvailableManagedRuleGroupsResponseTypeDef](#listavailablemanagedrulegroupsresponsetypedef)
-  - [ListIPSetsResponseTypeDef](#listipsetsresponsetypedef)
-  - [ListLoggingConfigurationsResponseTypeDef](#listloggingconfigurationsresponsetypedef)
-  - [ListRegexPatternSetsResponseTypeDef](#listregexpatternsetsresponsetypedef)
-  - [ListResourcesForWebACLResponseTypeDef](#listresourcesforwebaclresponsetypedef)
-  - [ListRuleGroupsResponseTypeDef](#listrulegroupsresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListWebACLsResponseTypeDef](#listwebaclsresponsetypedef)
+  - [ListAvailableManagedRuleGroupsRequestTypeDef](#listavailablemanagedrulegroupsrequesttypedef)
+  - [ListAvailableManagedRuleGroupsResponseResponseTypeDef](#listavailablemanagedrulegroupsresponseresponsetypedef)
+  - [ListIPSetsRequestTypeDef](#listipsetsrequesttypedef)
+  - [ListIPSetsResponseResponseTypeDef](#listipsetsresponseresponsetypedef)
+  - [ListLoggingConfigurationsRequestTypeDef](#listloggingconfigurationsrequesttypedef)
+  - [ListLoggingConfigurationsResponseResponseTypeDef](#listloggingconfigurationsresponseresponsetypedef)
+  - [ListRegexPatternSetsRequestTypeDef](#listregexpatternsetsrequesttypedef)
+  - [ListRegexPatternSetsResponseResponseTypeDef](#listregexpatternsetsresponseresponsetypedef)
+  - [ListResourcesForWebACLRequestTypeDef](#listresourcesforwebaclrequesttypedef)
+  - [ListResourcesForWebACLResponseResponseTypeDef](#listresourcesforwebaclresponseresponsetypedef)
+  - [ListRuleGroupsRequestTypeDef](#listrulegroupsrequesttypedef)
+  - [ListRuleGroupsResponseResponseTypeDef](#listrulegroupsresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListWebACLsRequestTypeDef](#listwebaclsrequesttypedef)
+  - [ListWebACLsResponseResponseTypeDef](#listwebaclsresponseresponsetypedef)
   - [LoggingConfigurationTypeDef](#loggingconfigurationtypedef)
   - [LoggingFilterTypeDef](#loggingfiltertypedef)
   - [ManagedRuleGroupStatementTypeDef](#managedrulegroupstatementtypedef)
@@ -70,13 +102,16 @@ type annotations stubs module
   - [NotStatementTypeDef](#notstatementtypedef)
   - [OrStatementTypeDef](#orstatementtypedef)
   - [OverrideActionTypeDef](#overrideactiontypedef)
-  - [PutLoggingConfigurationResponseTypeDef](#putloggingconfigurationresponsetypedef)
+  - [PutLoggingConfigurationRequestTypeDef](#putloggingconfigurationrequesttypedef)
+  - [PutLoggingConfigurationResponseResponseTypeDef](#putloggingconfigurationresponseresponsetypedef)
+  - [PutPermissionPolicyRequestTypeDef](#putpermissionpolicyrequesttypedef)
   - [RateBasedStatementManagedKeysIPSetTypeDef](#ratebasedstatementmanagedkeysipsettypedef)
   - [RateBasedStatementTypeDef](#ratebasedstatementtypedef)
   - [RegexPatternSetReferenceStatementTypeDef](#regexpatternsetreferencestatementtypedef)
   - [RegexPatternSetSummaryTypeDef](#regexpatternsetsummarytypedef)
   - [RegexPatternSetTypeDef](#regexpatternsettypedef)
   - [RegexTypeDef](#regextypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RuleActionTypeDef](#ruleactiontypedef)
   - [RuleGroupReferenceStatementTypeDef](#rulegroupreferencestatementtypedef)
   - [RuleGroupSummaryTypeDef](#rulegroupsummarytypedef)
@@ -90,13 +125,19 @@ type annotations stubs module
   - [SqliMatchStatementTypeDef](#sqlimatchstatementtypedef)
   - [StatementTypeDef](#statementtypedef)
   - [TagInfoForResourceTypeDef](#taginfoforresourcetypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TextTransformationTypeDef](#texttransformationtypedef)
   - [TimeWindowTypeDef](#timewindowtypedef)
-  - [UpdateIPSetResponseTypeDef](#updateipsetresponsetypedef)
-  - [UpdateRegexPatternSetResponseTypeDef](#updateregexpatternsetresponsetypedef)
-  - [UpdateRuleGroupResponseTypeDef](#updaterulegroupresponsetypedef)
-  - [UpdateWebACLResponseTypeDef](#updatewebaclresponsetypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateIPSetRequestTypeDef](#updateipsetrequesttypedef)
+  - [UpdateIPSetResponseResponseTypeDef](#updateipsetresponseresponsetypedef)
+  - [UpdateRegexPatternSetRequestTypeDef](#updateregexpatternsetrequesttypedef)
+  - [UpdateRegexPatternSetResponseResponseTypeDef](#updateregexpatternsetresponseresponsetypedef)
+  - [UpdateRuleGroupRequestTypeDef](#updaterulegrouprequesttypedef)
+  - [UpdateRuleGroupResponseResponseTypeDef](#updaterulegroupresponseresponsetypedef)
+  - [UpdateWebACLRequestTypeDef](#updatewebaclrequesttypedef)
+  - [UpdateWebACLResponseResponseTypeDef](#updatewebaclresponseresponsetypedef)
   - [VisibilityConfigTypeDef](#visibilityconfigtypedef)
   - [WebACLSummaryTypeDef](#webaclsummarytypedef)
   - [WebACLTypeDef](#webacltypedef)
@@ -133,6 +174,17 @@ Required fields:
 
 - `Statements`: `List`\[[StatementTypeDef](./type_defs.md#statementtypedef)\]
 
+## AssociateWebACLRequestTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import AssociateWebACLRequestTypeDef
+```
+
+Required fields:
+
+- `WebACLArn`: `str`
+- `ResourceArn`: `str`
+
 ## BlockActionTypeDef
 
 ```python
@@ -159,15 +211,28 @@ Required fields:
 - `PositionalConstraint`:
   [PositionalConstraintType](./literals.md#positionalconstrainttype)
 
-## CheckCapacityResponseTypeDef
+## CheckCapacityRequestTypeDef
 
 ```python
-from mypy_boto3_wafv2.type_defs import CheckCapacityResponseTypeDef
+from mypy_boto3_wafv2.type_defs import CheckCapacityRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Scope`: [ScopeType](./literals.md#scopetype)
+- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+
+## CheckCapacityResponseResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import CheckCapacityResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Capacity`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ConditionTypeDef
 
@@ -193,46 +258,135 @@ Optional fields:
 - `CustomRequestHandling`:
   [CustomRequestHandlingTypeDef](./type_defs.md#customrequesthandlingtypedef)
 
-## CreateIPSetResponseTypeDef
+## CreateIPSetRequestTypeDef
 
 ```python
-from mypy_boto3_wafv2.type_defs import CreateIPSetResponseTypeDef
+from mypy_boto3_wafv2.type_defs import CreateIPSetRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+- `Scope`: [ScopeType](./literals.md#scopetype)
+- `IPAddressVersion`:
+  [IPAddressVersionType](./literals.md#ipaddressversiontype)
+- `Addresses`: `List`\[`str`\]
+
 Optional fields:
+
+- `Description`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateIPSetResponseResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import CreateIPSetResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Summary`: [IPSetSummaryTypeDef](./type_defs.md#ipsetsummarytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRegexPatternSetResponseTypeDef
+## CreateRegexPatternSetRequestTypeDef
 
 ```python
-from mypy_boto3_wafv2.type_defs import CreateRegexPatternSetResponseTypeDef
+from mypy_boto3_wafv2.type_defs import CreateRegexPatternSetRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+- `Scope`: [ScopeType](./literals.md#scopetype)
+- `RegularExpressionList`:
+  `List`\[[RegexTypeDef](./type_defs.md#regextypedef)\]
+
 Optional fields:
+
+- `Description`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateRegexPatternSetResponseResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import CreateRegexPatternSetResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Summary`:
   [RegexPatternSetSummaryTypeDef](./type_defs.md#regexpatternsetsummarytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRuleGroupResponseTypeDef
+## CreateRuleGroupRequestTypeDef
 
 ```python
-from mypy_boto3_wafv2.type_defs import CreateRuleGroupResponseTypeDef
+from mypy_boto3_wafv2.type_defs import CreateRuleGroupRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+- `Scope`: [ScopeType](./literals.md#scopetype)
+- `Capacity`: `int`
+- `VisibilityConfig`:
+  [VisibilityConfigTypeDef](./type_defs.md#visibilityconfigtypedef)
+
 Optional fields:
+
+- `Description`: `str`
+- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `CustomResponseBodies`: `Dict`\[`str`,
+  [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
+
+## CreateRuleGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import CreateRuleGroupResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Summary`: [RuleGroupSummaryTypeDef](./type_defs.md#rulegroupsummarytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateWebACLResponseTypeDef
+## CreateWebACLRequestTypeDef
 
 ```python
-from mypy_boto3_wafv2.type_defs import CreateWebACLResponseTypeDef
+from mypy_boto3_wafv2.type_defs import CreateWebACLRequestTypeDef
 ```
+
+Required fields:
+
+- `Name`: `str`
+- `Scope`: [ScopeType](./literals.md#scopetype)
+- `DefaultAction`: [DefaultActionTypeDef](./type_defs.md#defaultactiontypedef)
+- `VisibilityConfig`:
+  [VisibilityConfigTypeDef](./type_defs.md#visibilityconfigtypedef)
 
 Optional fields:
 
+- `Description`: `str`
+- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `CustomResponseBodies`: `Dict`\[`str`,
+  [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
+
+## CreateWebACLResponseResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import CreateWebACLResponseResponseTypeDef
+```
+
+Required fields:
+
 - `Summary`: [WebACLSummaryTypeDef](./type_defs.md#webaclsummarytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CustomHTTPHeaderTypeDef
 
@@ -295,23 +449,120 @@ Optional fields:
 - `Block`: [BlockActionTypeDef](./type_defs.md#blockactiontypedef)
 - `Allow`: [AllowActionTypeDef](./type_defs.md#allowactiontypedef)
 
-## DeleteFirewallManagerRuleGroupsResponseTypeDef
+## DeleteFirewallManagerRuleGroupsRequestTypeDef
 
 ```python
-from mypy_boto3_wafv2.type_defs import DeleteFirewallManagerRuleGroupsResponseTypeDef
+from mypy_boto3_wafv2.type_defs import DeleteFirewallManagerRuleGroupsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `WebACLArn`: `str`
+- `WebACLLockToken`: `str`
+
+## DeleteFirewallManagerRuleGroupsResponseResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import DeleteFirewallManagerRuleGroupsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextWebACLLockToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeManagedRuleGroupResponseTypeDef
+## DeleteIPSetRequestTypeDef
 
 ```python
-from mypy_boto3_wafv2.type_defs import DescribeManagedRuleGroupResponseTypeDef
+from mypy_boto3_wafv2.type_defs import DeleteIPSetRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Name`: `str`
+- `Scope`: [ScopeType](./literals.md#scopetype)
+- `Id`: `str`
+- `LockToken`: `str`
+
+## DeleteLoggingConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import DeleteLoggingConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+
+## DeletePermissionPolicyRequestTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import DeletePermissionPolicyRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+
+## DeleteRegexPatternSetRequestTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import DeleteRegexPatternSetRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Scope`: [ScopeType](./literals.md#scopetype)
+- `Id`: `str`
+- `LockToken`: `str`
+
+## DeleteRuleGroupRequestTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import DeleteRuleGroupRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Scope`: [ScopeType](./literals.md#scopetype)
+- `Id`: `str`
+- `LockToken`: `str`
+
+## DeleteWebACLRequestTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import DeleteWebACLRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Scope`: [ScopeType](./literals.md#scopetype)
+- `Id`: `str`
+- `LockToken`: `str`
+
+## DescribeManagedRuleGroupRequestTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import DescribeManagedRuleGroupRequestTypeDef
+```
+
+Required fields:
+
+- `VendorName`: `str`
+- `Name`: `str`
+- `Scope`: [ScopeType](./literals.md#scopetype)
+
+## DescribeManagedRuleGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import DescribeManagedRuleGroupResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Capacity`: `int`
 - `Rules`: `List`\[[RuleSummaryTypeDef](./type_defs.md#rulesummarytypedef)\]
@@ -320,6 +571,18 @@ Optional fields:
   `List`\[[LabelSummaryTypeDef](./type_defs.md#labelsummarytypedef)\]
 - `ConsumedLabels`:
   `List`\[[LabelSummaryTypeDef](./type_defs.md#labelsummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DisassociateWebACLRequestTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import DisassociateWebACLRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
 
 ## ExcludedRuleTypeDef
 
@@ -415,107 +678,231 @@ Optional fields:
 - `ForwardedIPConfig`:
   [ForwardedIPConfigTypeDef](./type_defs.md#forwardedipconfigtypedef)
 
-## GetIPSetResponseTypeDef
+## GetIPSetRequestTypeDef
 
 ```python
-from mypy_boto3_wafv2.type_defs import GetIPSetResponseTypeDef
+from mypy_boto3_wafv2.type_defs import GetIPSetRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Name`: `str`
+- `Scope`: [ScopeType](./literals.md#scopetype)
+- `Id`: `str`
+
+## GetIPSetResponseResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import GetIPSetResponseResponseTypeDef
+```
+
+Required fields:
 
 - `IPSet`: [IPSetTypeDef](./type_defs.md#ipsettypedef)
 - `LockToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLoggingConfigurationResponseTypeDef
+## GetLoggingConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_wafv2.type_defs import GetLoggingConfigurationResponseTypeDef
+from mypy_boto3_wafv2.type_defs import GetLoggingConfigurationRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceArn`: `str`
+
+## GetLoggingConfigurationResponseResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import GetLoggingConfigurationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `LoggingConfiguration`:
   [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPermissionPolicyResponseTypeDef
+## GetPermissionPolicyRequestTypeDef
 
 ```python
-from mypy_boto3_wafv2.type_defs import GetPermissionPolicyResponseTypeDef
+from mypy_boto3_wafv2.type_defs import GetPermissionPolicyRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceArn`: `str`
+
+## GetPermissionPolicyResponseResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import GetPermissionPolicyResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Policy`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRateBasedStatementManagedKeysResponseTypeDef
+## GetRateBasedStatementManagedKeysRequestTypeDef
 
 ```python
-from mypy_boto3_wafv2.type_defs import GetRateBasedStatementManagedKeysResponseTypeDef
+from mypy_boto3_wafv2.type_defs import GetRateBasedStatementManagedKeysRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Scope`: [ScopeType](./literals.md#scopetype)
+- `WebACLName`: `str`
+- `WebACLId`: `str`
+- `RuleName`: `str`
+
+## GetRateBasedStatementManagedKeysResponseResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import GetRateBasedStatementManagedKeysResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ManagedKeysIPV4`:
   [RateBasedStatementManagedKeysIPSetTypeDef](./type_defs.md#ratebasedstatementmanagedkeysipsettypedef)
 - `ManagedKeysIPV6`:
   [RateBasedStatementManagedKeysIPSetTypeDef](./type_defs.md#ratebasedstatementmanagedkeysipsettypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRegexPatternSetResponseTypeDef
+## GetRegexPatternSetRequestTypeDef
 
 ```python
-from mypy_boto3_wafv2.type_defs import GetRegexPatternSetResponseTypeDef
+from mypy_boto3_wafv2.type_defs import GetRegexPatternSetRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Name`: `str`
+- `Scope`: [ScopeType](./literals.md#scopetype)
+- `Id`: `str`
+
+## GetRegexPatternSetResponseResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import GetRegexPatternSetResponseResponseTypeDef
+```
+
+Required fields:
 
 - `RegexPatternSet`:
   [RegexPatternSetTypeDef](./type_defs.md#regexpatternsettypedef)
 - `LockToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRuleGroupResponseTypeDef
+## GetRuleGroupRequestTypeDef
 
 ```python
-from mypy_boto3_wafv2.type_defs import GetRuleGroupResponseTypeDef
+from mypy_boto3_wafv2.type_defs import GetRuleGroupRequestTypeDef
 ```
 
 Optional fields:
+
+- `Name`: `str`
+- `Scope`: [ScopeType](./literals.md#scopetype)
+- `Id`: `str`
+- `ARN`: `str`
+
+## GetRuleGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import GetRuleGroupResponseResponseTypeDef
+```
+
+Required fields:
 
 - `RuleGroup`: [RuleGroupTypeDef](./type_defs.md#rulegrouptypedef)
 - `LockToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSampledRequestsResponseTypeDef
+## GetSampledRequestsRequestTypeDef
 
 ```python
-from mypy_boto3_wafv2.type_defs import GetSampledRequestsResponseTypeDef
+from mypy_boto3_wafv2.type_defs import GetSampledRequestsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `WebAclArn`: `str`
+- `RuleMetricName`: `str`
+- `Scope`: [ScopeType](./literals.md#scopetype)
+- `TimeWindow`: [TimeWindowTypeDef](./type_defs.md#timewindowtypedef)
+- `MaxItems`: `int`
+
+## GetSampledRequestsResponseResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import GetSampledRequestsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `SampledRequests`:
   `List`\[[SampledHTTPRequestTypeDef](./type_defs.md#sampledhttprequesttypedef)\]
 - `PopulationSize`: `int`
 - `TimeWindow`: [TimeWindowTypeDef](./type_defs.md#timewindowtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetWebACLForResourceResponseTypeDef
+## GetWebACLForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_wafv2.type_defs import GetWebACLForResourceResponseTypeDef
+from mypy_boto3_wafv2.type_defs import GetWebACLForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceArn`: `str`
+
+## GetWebACLForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import GetWebACLForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `WebACL`: [WebACLTypeDef](./type_defs.md#webacltypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetWebACLResponseTypeDef
+## GetWebACLRequestTypeDef
 
 ```python
-from mypy_boto3_wafv2.type_defs import GetWebACLResponseTypeDef
+from mypy_boto3_wafv2.type_defs import GetWebACLRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Name`: `str`
+- `Scope`: [ScopeType](./literals.md#scopetype)
+- `Id`: `str`
+
+## GetWebACLResponseResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import GetWebACLResponseResponseTypeDef
+```
+
+Required fields:
 
 - `WebACL`: [WebACLTypeDef](./type_defs.md#webacltypedef)
 - `LockToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## HTTPHeaderTypeDef
 
@@ -673,98 +1060,230 @@ Required fields:
 
 - `Name`: `str`
 
-## ListAvailableManagedRuleGroupsResponseTypeDef
+## ListAvailableManagedRuleGroupsRequestTypeDef
 
 ```python
-from mypy_boto3_wafv2.type_defs import ListAvailableManagedRuleGroupsResponseTypeDef
+from mypy_boto3_wafv2.type_defs import ListAvailableManagedRuleGroupsRequestTypeDef
 ```
 
+Required fields:
+
+- `Scope`: [ScopeType](./literals.md#scopetype)
+
 Optional fields:
+
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+## ListAvailableManagedRuleGroupsResponseResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import ListAvailableManagedRuleGroupsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextMarker`: `str`
 - `ManagedRuleGroups`:
   `List`\[[ManagedRuleGroupSummaryTypeDef](./type_defs.md#managedrulegroupsummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListIPSetsResponseTypeDef
+## ListIPSetsRequestTypeDef
 
 ```python
-from mypy_boto3_wafv2.type_defs import ListIPSetsResponseTypeDef
+from mypy_boto3_wafv2.type_defs import ListIPSetsRequestTypeDef
 ```
+
+Required fields:
+
+- `Scope`: [ScopeType](./literals.md#scopetype)
 
 Optional fields:
 
 - `NextMarker`: `str`
-- `IPSets`: `List`\[[IPSetSummaryTypeDef](./type_defs.md#ipsetsummarytypedef)\]
+- `Limit`: `int`
 
-## ListLoggingConfigurationsResponseTypeDef
+## ListIPSetsResponseResponseTypeDef
 
 ```python
-from mypy_boto3_wafv2.type_defs import ListLoggingConfigurationsResponseTypeDef
+from mypy_boto3_wafv2.type_defs import ListIPSetsResponseResponseTypeDef
+```
+
+Required fields:
+
+- `NextMarker`: `str`
+- `IPSets`: `List`\[[IPSetSummaryTypeDef](./type_defs.md#ipsetsummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListLoggingConfigurationsRequestTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import ListLoggingConfigurationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Scope`: [ScopeType](./literals.md#scopetype)
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+## ListLoggingConfigurationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import ListLoggingConfigurationsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `LoggingConfigurations`:
   `List`\[[LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)\]
 - `NextMarker`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRegexPatternSetsResponseTypeDef
+## ListRegexPatternSetsRequestTypeDef
 
 ```python
-from mypy_boto3_wafv2.type_defs import ListRegexPatternSetsResponseTypeDef
+from mypy_boto3_wafv2.type_defs import ListRegexPatternSetsRequestTypeDef
 ```
 
+Required fields:
+
+- `Scope`: [ScopeType](./literals.md#scopetype)
+
 Optional fields:
+
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+## ListRegexPatternSetsResponseResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import ListRegexPatternSetsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextMarker`: `str`
 - `RegexPatternSets`:
   `List`\[[RegexPatternSetSummaryTypeDef](./type_defs.md#regexpatternsetsummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListResourcesForWebACLResponseTypeDef
+## ListResourcesForWebACLRequestTypeDef
 
 ```python
-from mypy_boto3_wafv2.type_defs import ListResourcesForWebACLResponseTypeDef
+from mypy_boto3_wafv2.type_defs import ListResourcesForWebACLRequestTypeDef
 ```
 
+Required fields:
+
+- `WebACLArn`: `str`
+
 Optional fields:
+
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+
+## ListResourcesForWebACLResponseResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import ListResourcesForWebACLResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResourceArns`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRuleGroupsResponseTypeDef
+## ListRuleGroupsRequestTypeDef
 
 ```python
-from mypy_boto3_wafv2.type_defs import ListRuleGroupsResponseTypeDef
+from mypy_boto3_wafv2.type_defs import ListRuleGroupsRequestTypeDef
 ```
 
+Required fields:
+
+- `Scope`: [ScopeType](./literals.md#scopetype)
+
 Optional fields:
+
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+## ListRuleGroupsResponseResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import ListRuleGroupsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextMarker`: `str`
 - `RuleGroups`:
   `List`\[[RuleGroupSummaryTypeDef](./type_defs.md#rulegroupsummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_wafv2.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_wafv2.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
+Required fields:
+
+- `ResourceARN`: `str`
+
 Optional fields:
+
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextMarker`: `str`
 - `TagInfoForResource`:
   [TagInfoForResourceTypeDef](./type_defs.md#taginfoforresourcetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListWebACLsResponseTypeDef
+## ListWebACLsRequestTypeDef
 
 ```python
-from mypy_boto3_wafv2.type_defs import ListWebACLsResponseTypeDef
+from mypy_boto3_wafv2.type_defs import ListWebACLsRequestTypeDef
 ```
+
+Required fields:
+
+- `Scope`: [ScopeType](./literals.md#scopetype)
 
 Optional fields:
 
 - `NextMarker`: `str`
+- `Limit`: `int`
+
+## ListWebACLsResponseResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import ListWebACLsResponseResponseTypeDef
+```
+
+Required fields:
+
+- `NextMarker`: `str`
 - `WebACLs`:
   `List`\[[WebACLSummaryTypeDef](./type_defs.md#webaclsummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LoggingConfigurationTypeDef
 
@@ -855,16 +1374,40 @@ Optional fields:
 - `Count`: [CountActionTypeDef](./type_defs.md#countactiontypedef)
 - `None`: `Dict`\[`str`, `Any`\]
 
-## PutLoggingConfigurationResponseTypeDef
+## PutLoggingConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_wafv2.type_defs import PutLoggingConfigurationResponseTypeDef
+from mypy_boto3_wafv2.type_defs import PutLoggingConfigurationRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `LoggingConfiguration`:
   [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
+
+## PutLoggingConfigurationResponseResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import PutLoggingConfigurationResponseResponseTypeDef
+```
+
+Required fields:
+
+- `LoggingConfiguration`:
+  [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## PutPermissionPolicyRequestTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import PutPermissionPolicyRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `Policy`: `str`
 
 ## RateBasedStatementManagedKeysIPSetTypeDef
 
@@ -947,6 +1490,20 @@ from mypy_boto3_wafv2.type_defs import RegexTypeDef
 Optional fields:
 
 - `RegexString`: `str`
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## RuleActionTypeDef
 
@@ -1161,6 +1718,17 @@ Optional fields:
 - `ResourceARN`: `str`
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
 ## TagTypeDef
 
 ```python
@@ -1192,48 +1760,149 @@ from mypy_boto3_wafv2.type_defs import TimeWindowTypeDef
 
 Required fields:
 
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
 
-## UpdateIPSetResponseTypeDef
+## UntagResourceRequestTypeDef
 
 ```python
-from mypy_boto3_wafv2.type_defs import UpdateIPSetResponseTypeDef
+from mypy_boto3_wafv2.type_defs import UntagResourceRequestTypeDef
 ```
+
+Required fields:
+
+- `ResourceARN`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## UpdateIPSetRequestTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import UpdateIPSetRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Scope`: [ScopeType](./literals.md#scopetype)
+- `Id`: `str`
+- `Addresses`: `List`\[`str`\]
+- `LockToken`: `str`
 
 Optional fields:
 
-- `NextLockToken`: `str`
+- `Description`: `str`
 
-## UpdateRegexPatternSetResponseTypeDef
+## UpdateIPSetResponseResponseTypeDef
 
 ```python
-from mypy_boto3_wafv2.type_defs import UpdateRegexPatternSetResponseTypeDef
+from mypy_boto3_wafv2.type_defs import UpdateIPSetResponseResponseTypeDef
 ```
+
+Required fields:
+
+- `NextLockToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateRegexPatternSetRequestTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import UpdateRegexPatternSetRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Scope`: [ScopeType](./literals.md#scopetype)
+- `Id`: `str`
+- `RegularExpressionList`:
+  `List`\[[RegexTypeDef](./type_defs.md#regextypedef)\]
+- `LockToken`: `str`
 
 Optional fields:
 
-- `NextLockToken`: `str`
+- `Description`: `str`
 
-## UpdateRuleGroupResponseTypeDef
+## UpdateRegexPatternSetResponseResponseTypeDef
 
 ```python
-from mypy_boto3_wafv2.type_defs import UpdateRuleGroupResponseTypeDef
+from mypy_boto3_wafv2.type_defs import UpdateRegexPatternSetResponseResponseTypeDef
 ```
+
+Required fields:
+
+- `NextLockToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateRuleGroupRequestTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import UpdateRuleGroupRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Scope`: [ScopeType](./literals.md#scopetype)
+- `Id`: `str`
+- `VisibilityConfig`:
+  [VisibilityConfigTypeDef](./type_defs.md#visibilityconfigtypedef)
+- `LockToken`: `str`
 
 Optional fields:
 
-- `NextLockToken`: `str`
+- `Description`: `str`
+- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `CustomResponseBodies`: `Dict`\[`str`,
+  [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
 
-## UpdateWebACLResponseTypeDef
+## UpdateRuleGroupResponseResponseTypeDef
 
 ```python
-from mypy_boto3_wafv2.type_defs import UpdateWebACLResponseTypeDef
+from mypy_boto3_wafv2.type_defs import UpdateRuleGroupResponseResponseTypeDef
 ```
+
+Required fields:
+
+- `NextLockToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateWebACLRequestTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import UpdateWebACLRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Scope`: [ScopeType](./literals.md#scopetype)
+- `Id`: `str`
+- `DefaultAction`: [DefaultActionTypeDef](./type_defs.md#defaultactiontypedef)
+- `VisibilityConfig`:
+  [VisibilityConfigTypeDef](./type_defs.md#visibilityconfigtypedef)
+- `LockToken`: `str`
 
 Optional fields:
 
+- `Description`: `str`
+- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `CustomResponseBodies`: `Dict`\[`str`,
+  [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
+
+## UpdateWebACLResponseResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import UpdateWebACLResponseResponseTypeDef
+```
+
+Required fields:
+
 - `NextLockToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## VisibilityConfigTypeDef
 

@@ -69,6 +69,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("braket").can_paginate` method.
 
 Boto3 documentation:
@@ -82,10 +84,15 @@ Returns `bool`.
 
 ### cancel_quantum_task
 
+Cancels the specified task.
+
 Type annotations for `boto3.client("braket").cancel_quantum_task` method.
 
 Boto3 documentation:
 [Braket.Client.cancel_quantum_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.cancel_quantum_task)
+
+Arguments mapping described in
+[CancelQuantumTaskRequestTypeDef](./type_defs.md#cancelquantumtaskrequesttypedef).
 
 Keyword-only arguments:
 
@@ -93,14 +100,19 @@ Keyword-only arguments:
 - `quantumTaskArn`: `str` *(required)*
 
 Returns
-[CancelQuantumTaskResponseTypeDef](./type_defs.md#cancelquantumtaskresponsetypedef).
+[CancelQuantumTaskResponseResponseTypeDef](./type_defs.md#cancelquantumtaskresponseresponsetypedef).
 
 ### create_quantum_task
+
+Creates a quantum task.
 
 Type annotations for `boto3.client("braket").create_quantum_task` method.
 
 Boto3 documentation:
 [Braket.Client.create_quantum_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.create_quantum_task)
+
+Arguments mapping described in
+[CreateQuantumTaskRequestTypeDef](./type_defs.md#createquantumtaskrequesttypedef).
 
 Keyword-only arguments:
 
@@ -114,9 +126,11 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateQuantumTaskResponseTypeDef](./type_defs.md#createquantumtaskresponsetypedef).
+[CreateQuantumTaskResponseResponseTypeDef](./type_defs.md#createquantumtaskresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("braket").generate_presigned_url` method.
 
@@ -134,51 +148,72 @@ Returns `str`.
 
 ### get_device
 
+Retrieves the devices available in Amazon Braket.
+
 Type annotations for `boto3.client("braket").get_device` method.
 
 Boto3 documentation:
 [Braket.Client.get_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.get_device)
 
+Arguments mapping described in
+[GetDeviceRequestTypeDef](./type_defs.md#getdevicerequesttypedef).
+
 Keyword-only arguments:
 
 - `deviceArn`: `str` *(required)*
 
-Returns [GetDeviceResponseTypeDef](./type_defs.md#getdeviceresponsetypedef).
+Returns
+[GetDeviceResponseResponseTypeDef](./type_defs.md#getdeviceresponseresponsetypedef).
 
 ### get_quantum_task
+
+Retrieves the specified quantum task.
 
 Type annotations for `boto3.client("braket").get_quantum_task` method.
 
 Boto3 documentation:
 [Braket.Client.get_quantum_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.get_quantum_task)
 
+Arguments mapping described in
+[GetQuantumTaskRequestTypeDef](./type_defs.md#getquantumtaskrequesttypedef).
+
 Keyword-only arguments:
 
 - `quantumTaskArn`: `str` *(required)*
 
 Returns
-[GetQuantumTaskResponseTypeDef](./type_defs.md#getquantumtaskresponsetypedef).
+[GetQuantumTaskResponseResponseTypeDef](./type_defs.md#getquantumtaskresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Shows the tags associated with this resource.
 
 Type annotations for `boto3.client("braket").list_tags_for_resource` method.
 
 Boto3 documentation:
 [Braket.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### search_devices
+
+Searches for devices using the specified filters.
 
 Type annotations for `boto3.client("braket").search_devices` method.
 
 Boto3 documentation:
 [Braket.Client.search_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.search_devices)
+
+Arguments mapping described in
+[SearchDevicesRequestTypeDef](./type_defs.md#searchdevicesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -189,14 +224,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[SearchDevicesResponseTypeDef](./type_defs.md#searchdevicesresponsetypedef).
+[SearchDevicesResponseResponseTypeDef](./type_defs.md#searchdevicesresponseresponsetypedef).
 
 ### search_quantum_tasks
+
+Searches for tasks that match the specified filter values.
 
 Type annotations for `boto3.client("braket").search_quantum_tasks` method.
 
 Boto3 documentation:
 [Braket.Client.search_quantum_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.search_quantum_tasks)
+
+Arguments mapping described in
+[SearchQuantumTasksRequestTypeDef](./type_defs.md#searchquantumtasksrequesttypedef).
 
 Keyword-only arguments:
 
@@ -207,14 +247,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[SearchQuantumTasksResponseTypeDef](./type_defs.md#searchquantumtasksresponsetypedef).
+[SearchQuantumTasksResponseResponseTypeDef](./type_defs.md#searchquantumtasksresponseresponsetypedef).
 
 ### tag_resource
+
+Add a tag to the specified resource.
 
 Type annotations for `boto3.client("braket").tag_resource` method.
 
 Boto3 documentation:
 [Braket.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -225,10 +270,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Remove tags from a resource.
+
 Type annotations for `boto3.client("braket").untag_resource` method.
 
 Boto3 documentation:
 [Braket.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 

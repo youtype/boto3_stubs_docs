@@ -38,7 +38,7 @@ Arguments for `ListApplicationStatesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListApplicationStatesPaginator.paginate` returns
-`Iterator`\[[ListApplicationStatesResultTypeDef](./type_defs.md#listapplicationstatesresulttypedef)\].
+`Iterator`\[[ListApplicationStatesResultResponseTypeDef](./type_defs.md#listapplicationstatesresultresponsetypedef)\].
 
 ## ListCreatedArtifactsPaginator
 
@@ -65,7 +65,7 @@ Arguments for `ListCreatedArtifactsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCreatedArtifactsPaginator.paginate` returns
-`Iterator`\[[ListCreatedArtifactsResultTypeDef](./type_defs.md#listcreatedartifactsresulttypedef)\].
+`Iterator`\[[ListCreatedArtifactsResultResponseTypeDef](./type_defs.md#listcreatedartifactsresultresponsetypedef)\].
 
 ## ListDiscoveredResourcesPaginator
 
@@ -92,7 +92,7 @@ Arguments for `ListDiscoveredResourcesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDiscoveredResourcesPaginator.paginate` returns
-`Iterator`\[[ListDiscoveredResourcesResultTypeDef](./type_defs.md#listdiscoveredresourcesresulttypedef)\].
+`Iterator`\[[ListDiscoveredResourcesResultResponseTypeDef](./type_defs.md#listdiscoveredresourcesresultresponsetypedef)\].
 
 ## ListMigrationTasksPaginator
 
@@ -118,7 +118,7 @@ Arguments for `ListMigrationTasksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMigrationTasksPaginator.paginate` returns
-`Iterator`\[[ListMigrationTasksResultTypeDef](./type_defs.md#listmigrationtasksresulttypedef)\].
+`Iterator`\[[ListMigrationTasksResultResponseTypeDef](./type_defs.md#listmigrationtasksresultresponsetypedef)\].
 
 ## ListProgressUpdateStreamsPaginator
 
@@ -143,4 +143,4 @@ Arguments for `ListProgressUpdateStreamsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProgressUpdateStreamsPaginator.paginate` returns
-`Iterator`\[[ListProgressUpdateStreamsResultTypeDef](./type_defs.md#listprogressupdatestreamsresulttypedef)\].
+`Iterator`\[[ListProgressUpdateStreamsResultResponseTypeDef](./type_defs.md#listprogressupdatestreamsresultresponsetypedef)\].

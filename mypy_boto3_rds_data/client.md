@@ -62,10 +62,15 @@ Exceptions:
 
 ### batch_execute_statement
 
+Runs a batch SQL statement over an array of data.
+
 Type annotations for `boto3.client("rds-data").batch_execute_statement` method.
 
 Boto3 documentation:
 [RDSDataService.Client.batch_execute_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.batch_execute_statement)
+
+Arguments mapping described in
+[BatchExecuteStatementRequestTypeDef](./type_defs.md#batchexecutestatementrequesttypedef).
 
 Keyword-only arguments:
 
@@ -79,14 +84,19 @@ Keyword-only arguments:
 - `transactionId`: `str`
 
 Returns
-[BatchExecuteStatementResponseTypeDef](./type_defs.md#batchexecutestatementresponsetypedef).
+[BatchExecuteStatementResponseResponseTypeDef](./type_defs.md#batchexecutestatementresponseresponsetypedef).
 
 ### begin_transaction
+
+Starts a SQL transaction.
 
 Type annotations for `boto3.client("rds-data").begin_transaction` method.
 
 Boto3 documentation:
 [RDSDataService.Client.begin_transaction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.begin_transaction)
+
+Arguments mapping described in
+[BeginTransactionRequestTypeDef](./type_defs.md#begintransactionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -96,9 +106,11 @@ Keyword-only arguments:
 - `schema`: `str`
 
 Returns
-[BeginTransactionResponseTypeDef](./type_defs.md#begintransactionresponsetypedef).
+[BeginTransactionResponseResponseTypeDef](./type_defs.md#begintransactionresponseresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("rds-data").can_paginate` method.
 
@@ -113,10 +125,16 @@ Returns `bool`.
 
 ### commit_transaction
 
+Ends a SQL transaction started with the `BeginTransaction` operation and
+commits the changes.
+
 Type annotations for `boto3.client("rds-data").commit_transaction` method.
 
 Boto3 documentation:
 [RDSDataService.Client.commit_transaction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.commit_transaction)
+
+Arguments mapping described in
+[CommitTransactionRequestTypeDef](./type_defs.md#committransactionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -125,14 +143,19 @@ Keyword-only arguments:
 - `transactionId`: `str` *(required)*
 
 Returns
-[CommitTransactionResponseTypeDef](./type_defs.md#committransactionresponsetypedef).
+[CommitTransactionResponseResponseTypeDef](./type_defs.md#committransactionresponseresponsetypedef).
 
 ### execute_sql
+
+Runs one or more SQL statements.
 
 Type annotations for `boto3.client("rds-data").execute_sql` method.
 
 Boto3 documentation:
 [RDSDataService.Client.execute_sql](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.execute_sql)
+
+Arguments mapping described in
+[ExecuteSqlRequestTypeDef](./type_defs.md#executesqlrequesttypedef).
 
 Keyword-only arguments:
 
@@ -142,14 +165,20 @@ Keyword-only arguments:
 - `database`: `str`
 - `schema`: `str`
 
-Returns [ExecuteSqlResponseTypeDef](./type_defs.md#executesqlresponsetypedef).
+Returns
+[ExecuteSqlResponseResponseTypeDef](./type_defs.md#executesqlresponseresponsetypedef).
 
 ### execute_statement
+
+Runs a SQL statement against a database.
 
 Type annotations for `boto3.client("rds-data").execute_statement` method.
 
 Boto3 documentation:
 [RDSDataService.Client.execute_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.execute_statement)
+
+Arguments mapping described in
+[ExecuteStatementRequestTypeDef](./type_defs.md#executestatementrequesttypedef).
 
 Keyword-only arguments:
 
@@ -167,9 +196,11 @@ Keyword-only arguments:
 - `transactionId`: `str`
 
 Returns
-[ExecuteStatementResponseTypeDef](./type_defs.md#executestatementresponsetypedef).
+[ExecuteStatementResponseResponseTypeDef](./type_defs.md#executestatementresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("rds-data").generate_presigned_url` method.
 
@@ -187,10 +218,15 @@ Returns `str`.
 
 ### rollback_transaction
 
+Performs a rollback of a transaction.
+
 Type annotations for `boto3.client("rds-data").rollback_transaction` method.
 
 Boto3 documentation:
 [RDSDataService.Client.rollback_transaction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.rollback_transaction)
+
+Arguments mapping described in
+[RollbackTransactionRequestTypeDef](./type_defs.md#rollbacktransactionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -199,4 +235,4 @@ Keyword-only arguments:
 - `transactionId`: `str` *(required)*
 
 Returns
-[RollbackTransactionResponseTypeDef](./type_defs.md#rollbacktransactionresponsetypedef).
+[RollbackTransactionResponseResponseTypeDef](./type_defs.md#rollbacktransactionresponseresponsetypedef).

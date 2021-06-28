@@ -78,6 +78,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("mediastore").can_paginate` method.
 
 Boto3 documentation:
@@ -91,10 +93,15 @@ Returns `bool`.
 
 ### create_container
 
+Creates a storage container to hold objects.
+
 Type annotations for `boto3.client("mediastore").create_container` method.
 
 Boto3 documentation:
 [MediaStore.Client.create_container](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.create_container)
+
+Arguments mapping described in
+[CreateContainerInputTypeDef](./type_defs.md#createcontainerinputtypedef).
 
 Keyword-only arguments:
 
@@ -102,14 +109,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateContainerOutputTypeDef](./type_defs.md#createcontaineroutputtypedef).
+[CreateContainerOutputResponseTypeDef](./type_defs.md#createcontaineroutputresponsetypedef).
 
 ### delete_container
+
+Deletes the specified container.
 
 Type annotations for `boto3.client("mediastore").delete_container` method.
 
 Boto3 documentation:
 [MediaStore.Client.delete_container](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_container)
+
+Arguments mapping described in
+[DeleteContainerInputTypeDef](./type_defs.md#deletecontainerinputtypedef).
 
 Keyword-only arguments:
 
@@ -119,11 +131,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_container_policy
 
+Deletes the access policy that is associated with the specified container.
+
 Type annotations for `boto3.client("mediastore").delete_container_policy`
 method.
 
 Boto3 documentation:
 [MediaStore.Client.delete_container_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_container_policy)
+
+Arguments mapping described in
+[DeleteContainerPolicyInputTypeDef](./type_defs.md#deletecontainerpolicyinputtypedef).
 
 Keyword-only arguments:
 
@@ -133,10 +150,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_cors_policy
 
+Deletes the cross-origin resource sharing (CORS) configuration information that
+is set for the container.
+
 Type annotations for `boto3.client("mediastore").delete_cors_policy` method.
 
 Boto3 documentation:
 [MediaStore.Client.delete_cors_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_cors_policy)
+
+Arguments mapping described in
+[DeleteCorsPolicyInputTypeDef](./type_defs.md#deletecorspolicyinputtypedef).
 
 Keyword-only arguments:
 
@@ -146,11 +169,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_lifecycle_policy
 
+Removes an object lifecycle policy from a container.
+
 Type annotations for `boto3.client("mediastore").delete_lifecycle_policy`
 method.
 
 Boto3 documentation:
 [MediaStore.Client.delete_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_lifecycle_policy)
+
+Arguments mapping described in
+[DeleteLifecyclePolicyInputTypeDef](./type_defs.md#deletelifecyclepolicyinputtypedef).
 
 Keyword-only arguments:
 
@@ -160,10 +188,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_metric_policy
 
+Deletes the metric policy that is associated with the specified container.
+
 Type annotations for `boto3.client("mediastore").delete_metric_policy` method.
 
 Boto3 documentation:
 [MediaStore.Client.delete_metric_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.delete_metric_policy)
+
+Arguments mapping described in
+[DeleteMetricPolicyInputTypeDef](./type_defs.md#deletemetricpolicyinputtypedef).
 
 Keyword-only arguments:
 
@@ -173,19 +206,26 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_container
 
+Retrieves the properties of the requested container.
+
 Type annotations for `boto3.client("mediastore").describe_container` method.
 
 Boto3 documentation:
 [MediaStore.Client.describe_container](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.describe_container)
+
+Arguments mapping described in
+[DescribeContainerInputTypeDef](./type_defs.md#describecontainerinputtypedef).
 
 Keyword-only arguments:
 
 - `ContainerName`: `str`
 
 Returns
-[DescribeContainerOutputTypeDef](./type_defs.md#describecontaineroutputtypedef).
+[DescribeContainerOutputResponseTypeDef](./type_defs.md#describecontaineroutputresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("mediastore").generate_presigned_url`
 method.
@@ -204,66 +244,92 @@ Returns `str`.
 
 ### get_container_policy
 
+Retrieves the access policy for the specified container.
+
 Type annotations for `boto3.client("mediastore").get_container_policy` method.
 
 Boto3 documentation:
 [MediaStore.Client.get_container_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.get_container_policy)
+
+Arguments mapping described in
+[GetContainerPolicyInputTypeDef](./type_defs.md#getcontainerpolicyinputtypedef).
 
 Keyword-only arguments:
 
 - `ContainerName`: `str` *(required)*
 
 Returns
-[GetContainerPolicyOutputTypeDef](./type_defs.md#getcontainerpolicyoutputtypedef).
+[GetContainerPolicyOutputResponseTypeDef](./type_defs.md#getcontainerpolicyoutputresponsetypedef).
 
 ### get_cors_policy
+
+Returns the cross-origin resource sharing (CORS) configuration information that
+is set for the container.
 
 Type annotations for `boto3.client("mediastore").get_cors_policy` method.
 
 Boto3 documentation:
 [MediaStore.Client.get_cors_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.get_cors_policy)
 
+Arguments mapping described in
+[GetCorsPolicyInputTypeDef](./type_defs.md#getcorspolicyinputtypedef).
+
 Keyword-only arguments:
 
 - `ContainerName`: `str` *(required)*
 
 Returns
-[GetCorsPolicyOutputTypeDef](./type_defs.md#getcorspolicyoutputtypedef).
+[GetCorsPolicyOutputResponseTypeDef](./type_defs.md#getcorspolicyoutputresponsetypedef).
 
 ### get_lifecycle_policy
+
+Retrieves the object lifecycle policy that is assigned to a container.
 
 Type annotations for `boto3.client("mediastore").get_lifecycle_policy` method.
 
 Boto3 documentation:
 [MediaStore.Client.get_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.get_lifecycle_policy)
 
+Arguments mapping described in
+[GetLifecyclePolicyInputTypeDef](./type_defs.md#getlifecyclepolicyinputtypedef).
+
 Keyword-only arguments:
 
 - `ContainerName`: `str` *(required)*
 
 Returns
-[GetLifecyclePolicyOutputTypeDef](./type_defs.md#getlifecyclepolicyoutputtypedef).
+[GetLifecyclePolicyOutputResponseTypeDef](./type_defs.md#getlifecyclepolicyoutputresponsetypedef).
 
 ### get_metric_policy
+
+Returns the metric policy for the specified container.
 
 Type annotations for `boto3.client("mediastore").get_metric_policy` method.
 
 Boto3 documentation:
 [MediaStore.Client.get_metric_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.get_metric_policy)
 
+Arguments mapping described in
+[GetMetricPolicyInputTypeDef](./type_defs.md#getmetricpolicyinputtypedef).
+
 Keyword-only arguments:
 
 - `ContainerName`: `str` *(required)*
 
 Returns
-[GetMetricPolicyOutputTypeDef](./type_defs.md#getmetricpolicyoutputtypedef).
+[GetMetricPolicyOutputResponseTypeDef](./type_defs.md#getmetricpolicyoutputresponsetypedef).
 
 ### list_containers
+
+Lists the properties of all containers in AWS Elemental MediaStore.
 
 Type annotations for `boto3.client("mediastore").list_containers` method.
 
 Boto3 documentation:
 [MediaStore.Client.list_containers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.list_containers)
+
+Arguments mapping described in
+[ListContainersInputTypeDef](./type_defs.md#listcontainersinputtypedef).
 
 Keyword-only arguments:
 
@@ -271,9 +337,11 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListContainersOutputTypeDef](./type_defs.md#listcontainersoutputtypedef).
+[ListContainersOutputResponseTypeDef](./type_defs.md#listcontainersoutputresponsetypedef).
 
 ### list_tags_for_resource
+
+Returns a list of the tags assigned to the specified container.
 
 Type annotations for `boto3.client("mediastore").list_tags_for_resource`
 method.
@@ -281,19 +349,28 @@ method.
 Boto3 documentation:
 [MediaStore.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceInputTypeDef](./type_defs.md#listtagsforresourceinputtypedef).
+
 Keyword-only arguments:
 
 - `Resource`: `str` *(required)*
 
 Returns
-[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+[ListTagsForResourceOutputResponseTypeDef](./type_defs.md#listtagsforresourceoutputresponsetypedef).
 
 ### put_container_policy
+
+Creates an access policy for the specified container to restrict the users and
+clients that can access it.
 
 Type annotations for `boto3.client("mediastore").put_container_policy` method.
 
 Boto3 documentation:
 [MediaStore.Client.put_container_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.put_container_policy)
+
+Arguments mapping described in
+[PutContainerPolicyInputTypeDef](./type_defs.md#putcontainerpolicyinputtypedef).
 
 Keyword-only arguments:
 
@@ -304,10 +381,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_cors_policy
 
+Sets the cross-origin resource sharing (CORS) configuration on a container so
+that the container can service cross-origin requests.
+
 Type annotations for `boto3.client("mediastore").put_cors_policy` method.
 
 Boto3 documentation:
 [MediaStore.Client.put_cors_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.put_cors_policy)
+
+Arguments mapping described in
+[PutCorsPolicyInputTypeDef](./type_defs.md#putcorspolicyinputtypedef).
 
 Keyword-only arguments:
 
@@ -319,10 +402,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_lifecycle_policy
 
+Writes an object lifecycle policy to a container.
+
 Type annotations for `boto3.client("mediastore").put_lifecycle_policy` method.
 
 Boto3 documentation:
 [MediaStore.Client.put_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.put_lifecycle_policy)
+
+Arguments mapping described in
+[PutLifecyclePolicyInputTypeDef](./type_defs.md#putlifecyclepolicyinputtypedef).
 
 Keyword-only arguments:
 
@@ -333,10 +421,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_metric_policy
 
+The metric policy that you want to add to the container.
+
 Type annotations for `boto3.client("mediastore").put_metric_policy` method.
 
 Boto3 documentation:
 [MediaStore.Client.put_metric_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.put_metric_policy)
+
+Arguments mapping described in
+[PutMetricPolicyInputTypeDef](./type_defs.md#putmetricpolicyinputtypedef).
 
 Keyword-only arguments:
 
@@ -348,10 +441,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### start_access_logging
 
+Starts access logging on the specified container.
+
 Type annotations for `boto3.client("mediastore").start_access_logging` method.
 
 Boto3 documentation:
 [MediaStore.Client.start_access_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.start_access_logging)
+
+Arguments mapping described in
+[StartAccessLoggingInputTypeDef](./type_defs.md#startaccesslogginginputtypedef).
 
 Keyword-only arguments:
 
@@ -361,10 +459,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### stop_access_logging
 
+Stops access logging on the specified container.
+
 Type annotations for `boto3.client("mediastore").stop_access_logging` method.
 
 Boto3 documentation:
 [MediaStore.Client.stop_access_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.stop_access_logging)
+
+Arguments mapping described in
+[StopAccessLoggingInputTypeDef](./type_defs.md#stopaccesslogginginputtypedef).
 
 Keyword-only arguments:
 
@@ -374,10 +477,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### tag_resource
 
+Adds tags to the specified AWS Elemental MediaStore container.
+
 Type annotations for `boto3.client("mediastore").tag_resource` method.
 
 Boto3 documentation:
 [MediaStore.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceInputTypeDef](./type_defs.md#tagresourceinputtypedef).
 
 Keyword-only arguments:
 
@@ -388,10 +496,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Removes tags from the specified container.
+
 Type annotations for `boto3.client("mediastore").untag_resource` method.
 
 Boto3 documentation:
 [MediaStore.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceInputTypeDef](./type_defs.md#untagresourceinputtypedef).
 
 Keyword-only arguments:
 

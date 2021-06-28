@@ -146,24 +146,36 @@ Exceptions:
 
 ### accept_handshake
 
+Sends a response to the originator of a handshake agreeing to the action
+proposed by the handshake request.
+
 Type annotations for `boto3.client("organizations").accept_handshake` method.
 
 Boto3 documentation:
 [Organizations.Client.accept_handshake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.accept_handshake)
+
+Arguments mapping described in
+[AcceptHandshakeRequestTypeDef](./type_defs.md#accepthandshakerequesttypedef).
 
 Keyword-only arguments:
 
 - `HandshakeId`: `str` *(required)*
 
 Returns
-[AcceptHandshakeResponseTypeDef](./type_defs.md#accepthandshakeresponsetypedef).
+[AcceptHandshakeResponseResponseTypeDef](./type_defs.md#accepthandshakeresponseresponsetypedef).
 
 ### attach_policy
+
+Attaches a policy to a root, an organizational unit (OU), or an individual
+account.
 
 Type annotations for `boto3.client("organizations").attach_policy` method.
 
 Boto3 documentation:
 [Organizations.Client.attach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.attach_policy)
+
+Arguments mapping described in
+[AttachPolicyRequestTypeDef](./type_defs.md#attachpolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -171,6 +183,8 @@ Keyword-only arguments:
 - `TargetId`: `str` *(required)*
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("organizations").can_paginate` method.
 
@@ -185,24 +199,35 @@ Returns `bool`.
 
 ### cancel_handshake
 
+Cancels a handshake.
+
 Type annotations for `boto3.client("organizations").cancel_handshake` method.
 
 Boto3 documentation:
 [Organizations.Client.cancel_handshake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.cancel_handshake)
+
+Arguments mapping described in
+[CancelHandshakeRequestTypeDef](./type_defs.md#cancelhandshakerequesttypedef).
 
 Keyword-only arguments:
 
 - `HandshakeId`: `str` *(required)*
 
 Returns
-[CancelHandshakeResponseTypeDef](./type_defs.md#cancelhandshakeresponsetypedef).
+[CancelHandshakeResponseResponseTypeDef](./type_defs.md#cancelhandshakeresponseresponsetypedef).
 
 ### create_account
+
+Creates an AWS account that is automatically a member of the organization whose
+credentials made the request.
 
 Type annotations for `boto3.client("organizations").create_account` method.
 
 Boto3 documentation:
 [Organizations.Client.create_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_account)
+
+Arguments mapping described in
+[CreateAccountRequestTypeDef](./type_defs.md#createaccountrequesttypedef).
 
 Keyword-only arguments:
 
@@ -214,9 +239,12 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateAccountResponseTypeDef](./type_defs.md#createaccountresponsetypedef).
+[CreateAccountResponseResponseTypeDef](./type_defs.md#createaccountresponseresponsetypedef).
 
 ### create_gov_cloud_account
+
+This action is available if all of the following are true * You're authorized
+to create accounts in the AWS GovCloud (US) Region.
 
 Type annotations for `boto3.client("organizations").create_gov_cloud_account`
 method.
@@ -224,6 +252,9 @@ method.
 Boto3 documentation:
 [Organizations.Client.create_gov_cloud_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_gov_cloud_account)
 
+Arguments mapping described in
+[CreateGovCloudAccountRequestTypeDef](./type_defs.md#creategovcloudaccountrequesttypedef).
+
 Keyword-only arguments:
 
 - `Email`: `str` *(required)*
@@ -234,9 +265,11 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateGovCloudAccountResponseTypeDef](./type_defs.md#creategovcloudaccountresponsetypedef).
+[CreateGovCloudAccountResponseResponseTypeDef](./type_defs.md#creategovcloudaccountresponseresponsetypedef).
 
 ### create_organization
+
+Creates an AWS organization.
 
 Type annotations for `boto3.client("organizations").create_organization`
 method.
@@ -244,21 +277,29 @@ method.
 Boto3 documentation:
 [Organizations.Client.create_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_organization)
 
+Arguments mapping described in
+[CreateOrganizationRequestTypeDef](./type_defs.md#createorganizationrequesttypedef).
+
 Keyword-only arguments:
 
 - `FeatureSet`:
   [OrganizationFeatureSetType](./literals.md#organizationfeaturesettype)
 
 Returns
-[CreateOrganizationResponseTypeDef](./type_defs.md#createorganizationresponsetypedef).
+[CreateOrganizationResponseResponseTypeDef](./type_defs.md#createorganizationresponseresponsetypedef).
 
 ### create_organizational_unit
+
+Creates an organizational unit (OU) within a root or parent OU.
 
 Type annotations for `boto3.client("organizations").create_organizational_unit`
 method.
 
 Boto3 documentation:
 [Organizations.Client.create_organizational_unit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_organizational_unit)
+
+Arguments mapping described in
+[CreateOrganizationalUnitRequestTypeDef](./type_defs.md#createorganizationalunitrequesttypedef).
 
 Keyword-only arguments:
 
@@ -267,14 +308,20 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateOrganizationalUnitResponseTypeDef](./type_defs.md#createorganizationalunitresponsetypedef).
+[CreateOrganizationalUnitResponseResponseTypeDef](./type_defs.md#createorganizationalunitresponseresponsetypedef).
 
 ### create_policy
+
+Creates a policy of a specified type that you can attach to a root, an
+organizational unit (OU), or an individual AWS account.
 
 Type annotations for `boto3.client("organizations").create_policy` method.
 
 Boto3 documentation:
 [Organizations.Client.create_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_policy)
+
+Arguments mapping described in
+[CreatePolicyRequestTypeDef](./type_defs.md#createpolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -285,23 +332,30 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreatePolicyResponseTypeDef](./type_defs.md#createpolicyresponsetypedef).
+[CreatePolicyResponseResponseTypeDef](./type_defs.md#createpolicyresponseresponsetypedef).
 
 ### decline_handshake
+
+Declines a handshake request.
 
 Type annotations for `boto3.client("organizations").decline_handshake` method.
 
 Boto3 documentation:
 [Organizations.Client.decline_handshake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.decline_handshake)
 
+Arguments mapping described in
+[DeclineHandshakeRequestTypeDef](./type_defs.md#declinehandshakerequesttypedef).
+
 Keyword-only arguments:
 
 - `HandshakeId`: `str` *(required)*
 
 Returns
-[DeclineHandshakeResponseTypeDef](./type_defs.md#declinehandshakeresponsetypedef).
+[DeclineHandshakeResponseResponseTypeDef](./type_defs.md#declinehandshakeresponseresponsetypedef).
 
 ### delete_organization
+
+Deletes the organization.
 
 Type annotations for `boto3.client("organizations").delete_organization`
 method.
@@ -311,11 +365,16 @@ Boto3 documentation:
 
 ### delete_organizational_unit
 
+Deletes an organizational unit (OU) from a root or another OU.
+
 Type annotations for `boto3.client("organizations").delete_organizational_unit`
 method.
 
 Boto3 documentation:
 [Organizations.Client.delete_organizational_unit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.delete_organizational_unit)
+
+Arguments mapping described in
+[DeleteOrganizationalUnitRequestTypeDef](./type_defs.md#deleteorganizationalunitrequesttypedef).
 
 Keyword-only arguments:
 
@@ -323,10 +382,15 @@ Keyword-only arguments:
 
 ### delete_policy
 
+Deletes the specified policy from your organization.
+
 Type annotations for `boto3.client("organizations").delete_policy` method.
 
 Boto3 documentation:
 [Organizations.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.delete_policy)
+
+Arguments mapping described in
+[DeletePolicyRequestTypeDef](./type_defs.md#deletepolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -334,11 +398,17 @@ Keyword-only arguments:
 
 ### deregister_delegated_administrator
 
+Removes the specified member AWS account as a delegated administrator for the
+specified AWS service.
+
 Type annotations for
 `boto3.client("organizations").deregister_delegated_administrator` method.
 
 Boto3 documentation:
 [Organizations.Client.deregister_delegated_administrator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.deregister_delegated_administrator)
+
+Arguments mapping described in
+[DeregisterDelegatedAdministratorRequestTypeDef](./type_defs.md#deregisterdelegatedadministratorrequesttypedef).
 
 Keyword-only arguments:
 
@@ -347,19 +417,26 @@ Keyword-only arguments:
 
 ### describe_account
 
+Retrieves AWS Organizations-related information about the specified account.
+
 Type annotations for `boto3.client("organizations").describe_account` method.
 
 Boto3 documentation:
 [Organizations.Client.describe_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_account)
+
+Arguments mapping described in
+[DescribeAccountRequestTypeDef](./type_defs.md#describeaccountrequesttypedef).
 
 Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 
 Returns
-[DescribeAccountResponseTypeDef](./type_defs.md#describeaccountresponsetypedef).
+[DescribeAccountResponseResponseTypeDef](./type_defs.md#describeaccountresponseresponsetypedef).
 
 ### describe_create_account_status
+
+Retrieves the current status of an asynchronous request to create an account.
 
 Type annotations for
 `boto3.client("organizations").describe_create_account_status` method.
@@ -367,20 +444,29 @@ Type annotations for
 Boto3 documentation:
 [Organizations.Client.describe_create_account_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_create_account_status)
 
+Arguments mapping described in
+[DescribeCreateAccountStatusRequestTypeDef](./type_defs.md#describecreateaccountstatusrequesttypedef).
+
 Keyword-only arguments:
 
 - `CreateAccountRequestId`: `str` *(required)*
 
 Returns
-[DescribeCreateAccountStatusResponseTypeDef](./type_defs.md#describecreateaccountstatusresponsetypedef).
+[DescribeCreateAccountStatusResponseResponseTypeDef](./type_defs.md#describecreateaccountstatusresponseresponsetypedef).
 
 ### describe_effective_policy
+
+Returns the contents of the effective policy for specified policy type and
+account.
 
 Type annotations for `boto3.client("organizations").describe_effective_policy`
 method.
 
 Boto3 documentation:
 [Organizations.Client.describe_effective_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_effective_policy)
+
+Arguments mapping described in
+[DescribeEffectivePolicyRequestTypeDef](./type_defs.md#describeeffectivepolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -389,23 +475,31 @@ Keyword-only arguments:
 - `TargetId`: `str`
 
 Returns
-[DescribeEffectivePolicyResponseTypeDef](./type_defs.md#describeeffectivepolicyresponsetypedef).
+[DescribeEffectivePolicyResponseResponseTypeDef](./type_defs.md#describeeffectivepolicyresponseresponsetypedef).
 
 ### describe_handshake
+
+Retrieves information about a previously requested handshake.
 
 Type annotations for `boto3.client("organizations").describe_handshake` method.
 
 Boto3 documentation:
 [Organizations.Client.describe_handshake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_handshake)
 
+Arguments mapping described in
+[DescribeHandshakeRequestTypeDef](./type_defs.md#describehandshakerequesttypedef).
+
 Keyword-only arguments:
 
 - `HandshakeId`: `str` *(required)*
 
 Returns
-[DescribeHandshakeResponseTypeDef](./type_defs.md#describehandshakeresponsetypedef).
+[DescribeHandshakeResponseResponseTypeDef](./type_defs.md#describehandshakeresponseresponsetypedef).
 
 ### describe_organization
+
+Retrieves information about the organization that the user's account belongs
+to.
 
 Type annotations for `boto3.client("organizations").describe_organization`
 method.
@@ -414,9 +508,11 @@ Boto3 documentation:
 [Organizations.Client.describe_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_organization)
 
 Returns
-[DescribeOrganizationResponseTypeDef](./type_defs.md#describeorganizationresponsetypedef).
+[DescribeOrganizationResponseResponseTypeDef](./type_defs.md#describeorganizationresponseresponsetypedef).
 
 ### describe_organizational_unit
+
+Retrieves information about an organizational unit (OU).
 
 Type annotations for
 `boto3.client("organizations").describe_organizational_unit` method.
@@ -424,33 +520,46 @@ Type annotations for
 Boto3 documentation:
 [Organizations.Client.describe_organizational_unit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_organizational_unit)
 
+Arguments mapping described in
+[DescribeOrganizationalUnitRequestTypeDef](./type_defs.md#describeorganizationalunitrequesttypedef).
+
 Keyword-only arguments:
 
 - `OrganizationalUnitId`: `str` *(required)*
 
 Returns
-[DescribeOrganizationalUnitResponseTypeDef](./type_defs.md#describeorganizationalunitresponsetypedef).
+[DescribeOrganizationalUnitResponseResponseTypeDef](./type_defs.md#describeorganizationalunitresponseresponsetypedef).
 
 ### describe_policy
+
+Retrieves information about a policy.
 
 Type annotations for `boto3.client("organizations").describe_policy` method.
 
 Boto3 documentation:
 [Organizations.Client.describe_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_policy)
 
+Arguments mapping described in
+[DescribePolicyRequestTypeDef](./type_defs.md#describepolicyrequesttypedef).
+
 Keyword-only arguments:
 
 - `PolicyId`: `str` *(required)*
 
 Returns
-[DescribePolicyResponseTypeDef](./type_defs.md#describepolicyresponsetypedef).
+[DescribePolicyResponseResponseTypeDef](./type_defs.md#describepolicyresponseresponsetypedef).
 
 ### detach_policy
+
+Detaches a policy from a target root, organizational unit (OU), or account.
 
 Type annotations for `boto3.client("organizations").detach_policy` method.
 
 Boto3 documentation:
 [Organizations.Client.detach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.detach_policy)
+
+Arguments mapping described in
+[DetachPolicyRequestTypeDef](./type_defs.md#detachpolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -459,11 +568,17 @@ Keyword-only arguments:
 
 ### disable_aws_service_access
 
+Disables the integration of an AWS service (the service that is specified by
+`ServicePrincipal` ) with AWS Organizations.
+
 Type annotations for `boto3.client("organizations").disable_aws_service_access`
 method.
 
 Boto3 documentation:
 [Organizations.Client.disable_aws_service_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.disable_aws_service_access)
+
+Arguments mapping described in
+[DisableAWSServiceAccessRequestTypeDef](./type_defs.md#disableawsserviceaccessrequesttypedef).
 
 Keyword-only arguments:
 
@@ -471,11 +586,16 @@ Keyword-only arguments:
 
 ### disable_policy_type
 
+Disables an organizational policy type in a root.
+
 Type annotations for `boto3.client("organizations").disable_policy_type`
 method.
 
 Boto3 documentation:
 [Organizations.Client.disable_policy_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.disable_policy_type)
+
+Arguments mapping described in
+[DisablePolicyTypeRequestTypeDef](./type_defs.md#disablepolicytyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -483,9 +603,11 @@ Keyword-only arguments:
 - `PolicyType`: [PolicyTypeType](./literals.md#policytypetype) *(required)*
 
 Returns
-[DisablePolicyTypeResponseTypeDef](./type_defs.md#disablepolicytyperesponsetypedef).
+[DisablePolicyTypeResponseResponseTypeDef](./type_defs.md#disablepolicytyperesponseresponsetypedef).
 
 ### enable_all_features
+
+Enables all features in an organization.
 
 Type annotations for `boto3.client("organizations").enable_all_features`
 method.
@@ -494,9 +616,12 @@ Boto3 documentation:
 [Organizations.Client.enable_all_features](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_all_features)
 
 Returns
-[EnableAllFeaturesResponseTypeDef](./type_defs.md#enableallfeaturesresponsetypedef).
+[EnableAllFeaturesResponseResponseTypeDef](./type_defs.md#enableallfeaturesresponseresponsetypedef).
 
 ### enable_aws_service_access
+
+Enables the integration of an AWS service (the service that is specified by
+`ServicePrincipal` ) with AWS Organizations.
 
 Type annotations for `boto3.client("organizations").enable_aws_service_access`
 method.
@@ -504,16 +629,24 @@ method.
 Boto3 documentation:
 [Organizations.Client.enable_aws_service_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_aws_service_access)
 
+Arguments mapping described in
+[EnableAWSServiceAccessRequestTypeDef](./type_defs.md#enableawsserviceaccessrequesttypedef).
+
 Keyword-only arguments:
 
 - `ServicePrincipal`: `str` *(required)*
 
 ### enable_policy_type
 
+Enables a policy type in a root.
+
 Type annotations for `boto3.client("organizations").enable_policy_type` method.
 
 Boto3 documentation:
 [Organizations.Client.enable_policy_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_policy_type)
+
+Arguments mapping described in
+[EnablePolicyTypeRequestTypeDef](./type_defs.md#enablepolicytyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -521,9 +654,11 @@ Keyword-only arguments:
 - `PolicyType`: [PolicyTypeType](./literals.md#policytypetype) *(required)*
 
 Returns
-[EnablePolicyTypeResponseTypeDef](./type_defs.md#enablepolicytyperesponsetypedef).
+[EnablePolicyTypeResponseResponseTypeDef](./type_defs.md#enablepolicytyperesponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("organizations").generate_presigned_url`
 method.
@@ -542,11 +677,17 @@ Returns `str`.
 
 ### invite_account_to_organization
 
+Sends an invitation to another account to join your organization as a member
+account.
+
 Type annotations for
 `boto3.client("organizations").invite_account_to_organization` method.
 
 Boto3 documentation:
 [Organizations.Client.invite_account_to_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.invite_account_to_organization)
+
+Arguments mapping described in
+[InviteAccountToOrganizationRequestTypeDef](./type_defs.md#inviteaccounttoorganizationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -556,9 +697,11 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[InviteAccountToOrganizationResponseTypeDef](./type_defs.md#inviteaccounttoorganizationresponsetypedef).
+[InviteAccountToOrganizationResponseResponseTypeDef](./type_defs.md#inviteaccounttoorganizationresponseresponsetypedef).
 
 ### leave_organization
+
+Removes a member account from its parent organization.
 
 Type annotations for `boto3.client("organizations").leave_organization` method.
 
@@ -567,10 +710,15 @@ Boto3 documentation:
 
 ### list_accounts
 
+Lists all the accounts in the organization.
+
 Type annotations for `boto3.client("organizations").list_accounts` method.
 
 Boto3 documentation:
 [Organizations.Client.list_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_accounts)
+
+Arguments mapping described in
+[ListAccountsRequestTypeDef](./type_defs.md#listaccountsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -578,15 +726,21 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef).
+[ListAccountsResponseResponseTypeDef](./type_defs.md#listaccountsresponseresponsetypedef).
 
 ### list_accounts_for_parent
+
+Lists the accounts in an organization that are contained by the specified
+target root or organizational unit (OU).
 
 Type annotations for `boto3.client("organizations").list_accounts_for_parent`
 method.
 
 Boto3 documentation:
 [Organizations.Client.list_accounts_for_parent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_accounts_for_parent)
+
+Arguments mapping described in
+[ListAccountsForParentRequestTypeDef](./type_defs.md#listaccountsforparentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -595,9 +749,12 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListAccountsForParentResponseTypeDef](./type_defs.md#listaccountsforparentresponsetypedef).
+[ListAccountsForParentResponseResponseTypeDef](./type_defs.md#listaccountsforparentresponseresponsetypedef).
 
 ### list_aws_service_access_for_organization
+
+Returns a list of the AWS services that you enabled to integrate with your
+organization.
 
 Type annotations for
 `boto3.client("organizations").list_aws_service_access_for_organization`
@@ -606,20 +763,29 @@ method.
 Boto3 documentation:
 [Organizations.Client.list_aws_service_access_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_aws_service_access_for_organization)
 
+Arguments mapping described in
+[ListAWSServiceAccessForOrganizationRequestTypeDef](./type_defs.md#listawsserviceaccessfororganizationrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListAWSServiceAccessForOrganizationResponseTypeDef](./type_defs.md#listawsserviceaccessfororganizationresponsetypedef).
+[ListAWSServiceAccessForOrganizationResponseResponseTypeDef](./type_defs.md#listawsserviceaccessfororganizationresponseresponsetypedef).
 
 ### list_children
+
+Lists all of the organizational units (OUs) or accounts that are contained in
+the specified parent OU or root.
 
 Type annotations for `boto3.client("organizations").list_children` method.
 
 Boto3 documentation:
 [Organizations.Client.list_children](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_children)
+
+Arguments mapping described in
+[ListChildrenRequestTypeDef](./type_defs.md#listchildrenrequesttypedef).
 
 Keyword-only arguments:
 
@@ -629,15 +795,21 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListChildrenResponseTypeDef](./type_defs.md#listchildrenresponsetypedef).
+[ListChildrenResponseResponseTypeDef](./type_defs.md#listchildrenresponseresponsetypedef).
 
 ### list_create_account_status
+
+Lists the account creation requests that match the specified status that is
+currently being tracked for the organization.
 
 Type annotations for `boto3.client("organizations").list_create_account_status`
 method.
 
 Boto3 documentation:
 [Organizations.Client.list_create_account_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_create_account_status)
+
+Arguments mapping described in
+[ListCreateAccountStatusRequestTypeDef](./type_defs.md#listcreateaccountstatusrequesttypedef).
 
 Keyword-only arguments:
 
@@ -647,15 +819,21 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListCreateAccountStatusResponseTypeDef](./type_defs.md#listcreateaccountstatusresponsetypedef).
+[ListCreateAccountStatusResponseResponseTypeDef](./type_defs.md#listcreateaccountstatusresponseresponsetypedef).
 
 ### list_delegated_administrators
+
+Lists the AWS accounts that are designated as delegated administrators in this
+organization.
 
 Type annotations for
 `boto3.client("organizations").list_delegated_administrators` method.
 
 Boto3 documentation:
 [Organizations.Client.list_delegated_administrators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_delegated_administrators)
+
+Arguments mapping described in
+[ListDelegatedAdministratorsRequestTypeDef](./type_defs.md#listdelegatedadministratorsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -664,15 +842,21 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDelegatedAdministratorsResponseTypeDef](./type_defs.md#listdelegatedadministratorsresponsetypedef).
+[ListDelegatedAdministratorsResponseResponseTypeDef](./type_defs.md#listdelegatedadministratorsresponseresponsetypedef).
 
 ### list_delegated_services_for_account
+
+List the AWS services for which the specified account is a delegated
+administrator.
 
 Type annotations for
 `boto3.client("organizations").list_delegated_services_for_account` method.
 
 Boto3 documentation:
 [Organizations.Client.list_delegated_services_for_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_delegated_services_for_account)
+
+Arguments mapping described in
+[ListDelegatedServicesForAccountRequestTypeDef](./type_defs.md#listdelegatedservicesforaccountrequesttypedef).
 
 Keyword-only arguments:
 
@@ -681,9 +865,12 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDelegatedServicesForAccountResponseTypeDef](./type_defs.md#listdelegatedservicesforaccountresponsetypedef).
+[ListDelegatedServicesForAccountResponseResponseTypeDef](./type_defs.md#listdelegatedservicesforaccountresponseresponsetypedef).
 
 ### list_handshakes_for_account
+
+Lists the current handshakes that are associated with the account of the
+requesting user.
 
 Type annotations for
 `boto3.client("organizations").list_handshakes_for_account` method.
@@ -691,6 +878,9 @@ Type annotations for
 Boto3 documentation:
 [Organizations.Client.list_handshakes_for_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_handshakes_for_account)
 
+Arguments mapping described in
+[ListHandshakesForAccountRequestTypeDef](./type_defs.md#listhandshakesforaccountrequesttypedef).
+
 Keyword-only arguments:
 
 - `Filter`: [HandshakeFilterTypeDef](./type_defs.md#handshakefiltertypedef)
@@ -698,9 +888,12 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListHandshakesForAccountResponseTypeDef](./type_defs.md#listhandshakesforaccountresponsetypedef).
+[ListHandshakesForAccountResponseResponseTypeDef](./type_defs.md#listhandshakesforaccountresponseresponsetypedef).
 
 ### list_handshakes_for_organization
+
+Lists the handshakes that are associated with the organization that the
+requesting user is part of.
 
 Type annotations for
 `boto3.client("organizations").list_handshakes_for_organization` method.
@@ -708,6 +901,9 @@ Type annotations for
 Boto3 documentation:
 [Organizations.Client.list_handshakes_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_handshakes_for_organization)
 
+Arguments mapping described in
+[ListHandshakesForOrganizationRequestTypeDef](./type_defs.md#listhandshakesfororganizationrequesttypedef).
+
 Keyword-only arguments:
 
 - `Filter`: [HandshakeFilterTypeDef](./type_defs.md#handshakefiltertypedef)
@@ -715,15 +911,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListHandshakesForOrganizationResponseTypeDef](./type_defs.md#listhandshakesfororganizationresponsetypedef).
+[ListHandshakesForOrganizationResponseResponseTypeDef](./type_defs.md#listhandshakesfororganizationresponseresponsetypedef).
 
 ### list_organizational_units_for_parent
+
+Lists the organizational units (OUs) in a parent organizational unit or root.
 
 Type annotations for
 `boto3.client("organizations").list_organizational_units_for_parent` method.
 
 Boto3 documentation:
 [Organizations.Client.list_organizational_units_for_parent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_organizational_units_for_parent)
+
+Arguments mapping described in
+[ListOrganizationalUnitsForParentRequestTypeDef](./type_defs.md#listorganizationalunitsforparentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -732,14 +933,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListOrganizationalUnitsForParentResponseTypeDef](./type_defs.md#listorganizationalunitsforparentresponsetypedef).
+[ListOrganizationalUnitsForParentResponseResponseTypeDef](./type_defs.md#listorganizationalunitsforparentresponseresponsetypedef).
 
 ### list_parents
+
+Lists the root or organizational units (OUs) that serve as the immediate parent
+of the specified child OU or account.
 
 Type annotations for `boto3.client("organizations").list_parents` method.
 
 Boto3 documentation:
 [Organizations.Client.list_parents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_parents)
+
+Arguments mapping described in
+[ListParentsRequestTypeDef](./type_defs.md#listparentsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -748,14 +955,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListParentsResponseTypeDef](./type_defs.md#listparentsresponsetypedef).
+[ListParentsResponseResponseTypeDef](./type_defs.md#listparentsresponseresponsetypedef).
 
 ### list_policies
+
+Retrieves the list of all policies in an organization of a specified type.
 
 Type annotations for `boto3.client("organizations").list_policies` method.
 
 Boto3 documentation:
 [Organizations.Client.list_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_policies)
+
+Arguments mapping described in
+[ListPoliciesRequestTypeDef](./type_defs.md#listpoliciesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -764,15 +976,21 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef).
+[ListPoliciesResponseResponseTypeDef](./type_defs.md#listpoliciesresponseresponsetypedef).
 
 ### list_policies_for_target
+
+Lists the policies that are directly attached to the specified target root,
+organizational unit (OU), or account.
 
 Type annotations for `boto3.client("organizations").list_policies_for_target`
 method.
 
 Boto3 documentation:
 [Organizations.Client.list_policies_for_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_policies_for_target)
+
+Arguments mapping described in
+[ListPoliciesForTargetRequestTypeDef](./type_defs.md#listpoliciesfortargetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -782,23 +1000,31 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListPoliciesForTargetResponseTypeDef](./type_defs.md#listpoliciesfortargetresponsetypedef).
+[ListPoliciesForTargetResponseResponseTypeDef](./type_defs.md#listpoliciesfortargetresponseresponsetypedef).
 
 ### list_roots
+
+Lists the roots that are defined in the current organization.
 
 Type annotations for `boto3.client("organizations").list_roots` method.
 
 Boto3 documentation:
 [Organizations.Client.list_roots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_roots)
 
+Arguments mapping described in
+[ListRootsRequestTypeDef](./type_defs.md#listrootsrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns [ListRootsResponseTypeDef](./type_defs.md#listrootsresponsetypedef).
+Returns
+[ListRootsResponseResponseTypeDef](./type_defs.md#listrootsresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Lists tags that are attached to the specified resource.
 
 Type annotations for `boto3.client("organizations").list_tags_for_resource`
 method.
@@ -806,21 +1032,30 @@ method.
 Boto3 documentation:
 [Organizations.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `NextToken`: `str`
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### list_targets_for_policy
+
+Lists all the roots, organizational units (OUs), and accounts that the
+specified policy is attached to.
 
 Type annotations for `boto3.client("organizations").list_targets_for_policy`
 method.
 
 Boto3 documentation:
 [Organizations.Client.list_targets_for_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_targets_for_policy)
+
+Arguments mapping described in
+[ListTargetsForPolicyRequestTypeDef](./type_defs.md#listtargetsforpolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -829,14 +1064,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListTargetsForPolicyResponseTypeDef](./type_defs.md#listtargetsforpolicyresponsetypedef).
+[ListTargetsForPolicyResponseResponseTypeDef](./type_defs.md#listtargetsforpolicyresponseresponsetypedef).
 
 ### move_account
+
+Moves an account from its current source parent root or organizational unit
+(OU) to the specified destination parent root or OU.
 
 Type annotations for `boto3.client("organizations").move_account` method.
 
 Boto3 documentation:
 [Organizations.Client.move_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.move_account)
+
+Arguments mapping described in
+[MoveAccountRequestTypeDef](./type_defs.md#moveaccountrequesttypedef).
 
 Keyword-only arguments:
 
@@ -846,11 +1087,17 @@ Keyword-only arguments:
 
 ### register_delegated_administrator
 
+Enables the specified member account to administer the Organizations features
+of the specified AWS service.
+
 Type annotations for
 `boto3.client("organizations").register_delegated_administrator` method.
 
 Boto3 documentation:
 [Organizations.Client.register_delegated_administrator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.register_delegated_administrator)
+
+Arguments mapping described in
+[RegisterDelegatedAdministratorRequestTypeDef](./type_defs.md#registerdelegatedadministratorrequesttypedef).
 
 Keyword-only arguments:
 
@@ -859,11 +1106,16 @@ Keyword-only arguments:
 
 ### remove_account_from_organization
 
+Removes the specified account from the organization.
+
 Type annotations for
 `boto3.client("organizations").remove_account_from_organization` method.
 
 Boto3 documentation:
 [Organizations.Client.remove_account_from_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.remove_account_from_organization)
+
+Arguments mapping described in
+[RemoveAccountFromOrganizationRequestTypeDef](./type_defs.md#removeaccountfromorganizationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -871,10 +1123,15 @@ Keyword-only arguments:
 
 ### tag_resource
 
+Adds one or more tags to the specified resource.
+
 Type annotations for `boto3.client("organizations").tag_resource` method.
 
 Boto3 documentation:
 [Organizations.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -883,10 +1140,15 @@ Keyword-only arguments:
 
 ### untag_resource
 
+Removes any tags with the specified keys from the specified resource.
+
 Type annotations for `boto3.client("organizations").untag_resource` method.
 
 Boto3 documentation:
 [Organizations.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -895,11 +1157,16 @@ Keyword-only arguments:
 
 ### update_organizational_unit
 
+Renames the specified organizational unit (OU).
+
 Type annotations for `boto3.client("organizations").update_organizational_unit`
 method.
 
 Boto3 documentation:
 [Organizations.Client.update_organizational_unit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.update_organizational_unit)
+
+Arguments mapping described in
+[UpdateOrganizationalUnitRequestTypeDef](./type_defs.md#updateorganizationalunitrequesttypedef).
 
 Keyword-only arguments:
 
@@ -907,14 +1174,19 @@ Keyword-only arguments:
 - `Name`: `str`
 
 Returns
-[UpdateOrganizationalUnitResponseTypeDef](./type_defs.md#updateorganizationalunitresponsetypedef).
+[UpdateOrganizationalUnitResponseResponseTypeDef](./type_defs.md#updateorganizationalunitresponseresponsetypedef).
 
 ### update_policy
+
+Updates an existing policy with a new name, description, or content.
 
 Type annotations for `boto3.client("organizations").update_policy` method.
 
 Boto3 documentation:
 [Organizations.Client.update_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.update_policy)
+
+Arguments mapping described in
+[UpdatePolicyRequestTypeDef](./type_defs.md#updatepolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -924,7 +1196,7 @@ Keyword-only arguments:
 - `Content`: `str`
 
 Returns
-[UpdatePolicyResponseTypeDef](./type_defs.md#updatepolicyresponsetypedef).
+[UpdatePolicyResponseResponseTypeDef](./type_defs.md#updatepolicyresponseresponsetypedef).
 
 ### get_paginator
 

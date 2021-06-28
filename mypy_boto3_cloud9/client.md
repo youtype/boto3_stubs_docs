@@ -72,6 +72,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("cloud9").can_paginate` method.
 
 Boto3 documentation:
@@ -85,10 +87,17 @@ Returns `bool`.
 
 ### create_environment_ec2
 
+Creates an Cloud9 development environment, launches an Amazon Elastic Compute
+Cloud (Amazon EC2) instance, and then connects from the instance to the
+environment.
+
 Type annotations for `boto3.client("cloud9").create_environment_ec2` method.
 
 Boto3 documentation:
 [Cloud9.Client.create_environment_ec2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.create_environment_ec2)
+
+Arguments mapping described in
+[CreateEnvironmentEC2RequestTypeDef](./type_defs.md#createenvironmentec2requesttypedef).
 
 Keyword-only arguments:
 
@@ -104,15 +113,20 @@ Keyword-only arguments:
 - `connectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
 
 Returns
-[CreateEnvironmentEC2ResultTypeDef](./type_defs.md#createenvironmentec2resulttypedef).
+[CreateEnvironmentEC2ResultResponseTypeDef](./type_defs.md#createenvironmentec2resultresponsetypedef).
 
 ### create_environment_membership
+
+Adds an environment member to an Cloud9 development environment.
 
 Type annotations for `boto3.client("cloud9").create_environment_membership`
 method.
 
 Boto3 documentation:
 [Cloud9.Client.create_environment_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.create_environment_membership)
+
+Arguments mapping described in
+[CreateEnvironmentMembershipRequestTypeDef](./type_defs.md#createenvironmentmembershiprequesttypedef).
 
 Keyword-only arguments:
 
@@ -122,14 +136,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateEnvironmentMembershipResultTypeDef](./type_defs.md#createenvironmentmembershipresulttypedef).
+[CreateEnvironmentMembershipResultResponseTypeDef](./type_defs.md#createenvironmentmembershipresultresponsetypedef).
 
 ### delete_environment
+
+Deletes an Cloud9 development environment.
 
 Type annotations for `boto3.client("cloud9").delete_environment` method.
 
 Boto3 documentation:
 [Cloud9.Client.delete_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.delete_environment)
+
+Arguments mapping described in
+[DeleteEnvironmentRequestTypeDef](./type_defs.md#deleteenvironmentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -139,11 +158,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_environment_membership
 
+Deletes an environment member from an Cloud9 development environment.
+
 Type annotations for `boto3.client("cloud9").delete_environment_membership`
 method.
 
 Boto3 documentation:
 [Cloud9.Client.delete_environment_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.delete_environment_membership)
+
+Arguments mapping described in
+[DeleteEnvironmentMembershipRequestTypeDef](./type_defs.md#deleteenvironmentmembershiprequesttypedef).
 
 Keyword-only arguments:
 
@@ -154,11 +178,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_environment_memberships
 
+Gets information about environment members for an Cloud9 development
+environment.
+
 Type annotations for `boto3.client("cloud9").describe_environment_memberships`
 method.
 
 Boto3 documentation:
 [Cloud9.Client.describe_environment_memberships](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.describe_environment_memberships)
+
+Arguments mapping described in
+[DescribeEnvironmentMembershipsRequestTypeDef](./type_defs.md#describeenvironmentmembershipsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -169,9 +199,11 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[DescribeEnvironmentMembershipsResultTypeDef](./type_defs.md#describeenvironmentmembershipsresulttypedef).
+[DescribeEnvironmentMembershipsResultResponseTypeDef](./type_defs.md#describeenvironmentmembershipsresultresponsetypedef).
 
 ### describe_environment_status
+
+Gets status information for an Cloud9 development environment.
 
 Type annotations for `boto3.client("cloud9").describe_environment_status`
 method.
@@ -179,28 +211,38 @@ method.
 Boto3 documentation:
 [Cloud9.Client.describe_environment_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.describe_environment_status)
 
+Arguments mapping described in
+[DescribeEnvironmentStatusRequestTypeDef](./type_defs.md#describeenvironmentstatusrequesttypedef).
+
 Keyword-only arguments:
 
 - `environmentId`: `str` *(required)*
 
 Returns
-[DescribeEnvironmentStatusResultTypeDef](./type_defs.md#describeenvironmentstatusresulttypedef).
+[DescribeEnvironmentStatusResultResponseTypeDef](./type_defs.md#describeenvironmentstatusresultresponsetypedef).
 
 ### describe_environments
+
+Gets information about Cloud9 development environments.
 
 Type annotations for `boto3.client("cloud9").describe_environments` method.
 
 Boto3 documentation:
 [Cloud9.Client.describe_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.describe_environments)
 
+Arguments mapping described in
+[DescribeEnvironmentsRequestTypeDef](./type_defs.md#describeenvironmentsrequesttypedef).
+
 Keyword-only arguments:
 
 - `environmentIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeEnvironmentsResultTypeDef](./type_defs.md#describeenvironmentsresulttypedef).
+[DescribeEnvironmentsResultResponseTypeDef](./type_defs.md#describeenvironmentsresultresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("cloud9").generate_presigned_url` method.
 
@@ -218,10 +260,15 @@ Returns `str`.
 
 ### list_environments
 
+Gets a list of Cloud9 development environment identifiers.
+
 Type annotations for `boto3.client("cloud9").list_environments` method.
 
 Boto3 documentation:
 [Cloud9.Client.list_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.list_environments)
+
+Arguments mapping described in
+[ListEnvironmentsRequestTypeDef](./type_defs.md#listenvironmentsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -229,28 +276,38 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListEnvironmentsResultTypeDef](./type_defs.md#listenvironmentsresulttypedef).
+[ListEnvironmentsResultResponseTypeDef](./type_defs.md#listenvironmentsresultresponsetypedef).
 
 ### list_tags_for_resource
+
+Gets a list of the tags associated with an Cloud9 development environment.
 
 Type annotations for `boto3.client("cloud9").list_tags_for_resource` method.
 
 Boto3 documentation:
 [Cloud9.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### tag_resource
+
+Adds tags to an Cloud9 development environment.
 
 Type annotations for `boto3.client("cloud9").tag_resource` method.
 
 Boto3 documentation:
 [Cloud9.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -261,10 +318,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Removes tags from an Cloud9 development environment.
+
 Type annotations for `boto3.client("cloud9").untag_resource` method.
 
 Boto3 documentation:
 [Cloud9.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -275,10 +337,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_environment
 
+Changes the settings of an existing Cloud9 development environment.
+
 Type annotations for `boto3.client("cloud9").update_environment` method.
 
 Boto3 documentation:
 [Cloud9.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.update_environment)
+
+Arguments mapping described in
+[UpdateEnvironmentRequestTypeDef](./type_defs.md#updateenvironmentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -290,11 +357,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_environment_membership
 
+Changes the settings of an existing environment member for an Cloud9
+development environment.
+
 Type annotations for `boto3.client("cloud9").update_environment_membership`
 method.
 
 Boto3 documentation:
 [Cloud9.Client.update_environment_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.update_environment_membership)
+
+Arguments mapping described in
+[UpdateEnvironmentMembershipRequestTypeDef](./type_defs.md#updateenvironmentmembershiprequesttypedef).
 
 Keyword-only arguments:
 
@@ -304,7 +377,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateEnvironmentMembershipResultTypeDef](./type_defs.md#updateenvironmentmembershipresulttypedef).
+[UpdateEnvironmentMembershipResultResponseTypeDef](./type_defs.md#updateenvironmentmembershipresultresponsetypedef).
 
 ### get_paginator
 

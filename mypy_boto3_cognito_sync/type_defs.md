@@ -8,37 +8,67 @@ type annotations stubs module
 [mypy_boto3_cognito_sync](https://pypi.org/project/mypy-boto3-cognito-sync/).
 
 - [Typed dictionaries for boto3 CognitoSync module](#typed-dictionaries-for-boto3-cognitosync-module)
-  - [BulkPublishResponseTypeDef](#bulkpublishresponsetypedef)
+  - [BulkPublishRequestTypeDef](#bulkpublishrequesttypedef)
+  - [BulkPublishResponseResponseTypeDef](#bulkpublishresponseresponsetypedef)
   - [CognitoStreamsTypeDef](#cognitostreamstypedef)
   - [DatasetTypeDef](#datasettypedef)
-  - [DeleteDatasetResponseTypeDef](#deletedatasetresponsetypedef)
-  - [DescribeDatasetResponseTypeDef](#describedatasetresponsetypedef)
-  - [DescribeIdentityPoolUsageResponseTypeDef](#describeidentitypoolusageresponsetypedef)
-  - [DescribeIdentityUsageResponseTypeDef](#describeidentityusageresponsetypedef)
-  - [GetBulkPublishDetailsResponseTypeDef](#getbulkpublishdetailsresponsetypedef)
-  - [GetCognitoEventsResponseTypeDef](#getcognitoeventsresponsetypedef)
-  - [GetIdentityPoolConfigurationResponseTypeDef](#getidentitypoolconfigurationresponsetypedef)
+  - [DeleteDatasetRequestTypeDef](#deletedatasetrequesttypedef)
+  - [DeleteDatasetResponseResponseTypeDef](#deletedatasetresponseresponsetypedef)
+  - [DescribeDatasetRequestTypeDef](#describedatasetrequesttypedef)
+  - [DescribeDatasetResponseResponseTypeDef](#describedatasetresponseresponsetypedef)
+  - [DescribeIdentityPoolUsageRequestTypeDef](#describeidentitypoolusagerequesttypedef)
+  - [DescribeIdentityPoolUsageResponseResponseTypeDef](#describeidentitypoolusageresponseresponsetypedef)
+  - [DescribeIdentityUsageRequestTypeDef](#describeidentityusagerequesttypedef)
+  - [DescribeIdentityUsageResponseResponseTypeDef](#describeidentityusageresponseresponsetypedef)
+  - [GetBulkPublishDetailsRequestTypeDef](#getbulkpublishdetailsrequesttypedef)
+  - [GetBulkPublishDetailsResponseResponseTypeDef](#getbulkpublishdetailsresponseresponsetypedef)
+  - [GetCognitoEventsRequestTypeDef](#getcognitoeventsrequesttypedef)
+  - [GetCognitoEventsResponseResponseTypeDef](#getcognitoeventsresponseresponsetypedef)
+  - [GetIdentityPoolConfigurationRequestTypeDef](#getidentitypoolconfigurationrequesttypedef)
+  - [GetIdentityPoolConfigurationResponseResponseTypeDef](#getidentitypoolconfigurationresponseresponsetypedef)
   - [IdentityPoolUsageTypeDef](#identitypoolusagetypedef)
   - [IdentityUsageTypeDef](#identityusagetypedef)
-  - [ListDatasetsResponseTypeDef](#listdatasetsresponsetypedef)
-  - [ListIdentityPoolUsageResponseTypeDef](#listidentitypoolusageresponsetypedef)
-  - [ListRecordsResponseTypeDef](#listrecordsresponsetypedef)
+  - [ListDatasetsRequestTypeDef](#listdatasetsrequesttypedef)
+  - [ListDatasetsResponseResponseTypeDef](#listdatasetsresponseresponsetypedef)
+  - [ListIdentityPoolUsageRequestTypeDef](#listidentitypoolusagerequesttypedef)
+  - [ListIdentityPoolUsageResponseResponseTypeDef](#listidentitypoolusageresponseresponsetypedef)
+  - [ListRecordsRequestTypeDef](#listrecordsrequesttypedef)
+  - [ListRecordsResponseResponseTypeDef](#listrecordsresponseresponsetypedef)
   - [PushSyncTypeDef](#pushsynctypedef)
   - [RecordPatchTypeDef](#recordpatchtypedef)
   - [RecordTypeDef](#recordtypedef)
-  - [RegisterDeviceResponseTypeDef](#registerdeviceresponsetypedef)
-  - [SetIdentityPoolConfigurationResponseTypeDef](#setidentitypoolconfigurationresponsetypedef)
-  - [UpdateRecordsResponseTypeDef](#updaterecordsresponsetypedef)
+  - [RegisterDeviceRequestTypeDef](#registerdevicerequesttypedef)
+  - [RegisterDeviceResponseResponseTypeDef](#registerdeviceresponseresponsetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [SetCognitoEventsRequestTypeDef](#setcognitoeventsrequesttypedef)
+  - [SetIdentityPoolConfigurationRequestTypeDef](#setidentitypoolconfigurationrequesttypedef)
+  - [SetIdentityPoolConfigurationResponseResponseTypeDef](#setidentitypoolconfigurationresponseresponsetypedef)
+  - [SubscribeToDatasetRequestTypeDef](#subscribetodatasetrequesttypedef)
+  - [UnsubscribeFromDatasetRequestTypeDef](#unsubscribefromdatasetrequesttypedef)
+  - [UpdateRecordsRequestTypeDef](#updaterecordsrequesttypedef)
+  - [UpdateRecordsResponseResponseTypeDef](#updaterecordsresponseresponsetypedef)
 
-## BulkPublishResponseTypeDef
+## BulkPublishRequestTypeDef
 
 ```python
-from mypy_boto3_cognito_sync.type_defs import BulkPublishResponseTypeDef
+from mypy_boto3_cognito_sync.type_defs import BulkPublishRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `IdentityPoolId`: `str`
+
+## BulkPublishResponseResponseTypeDef
+
+```python
+from mypy_boto3_cognito_sync.type_defs import BulkPublishResponseResponseTypeDef
+```
+
+Required fields:
+
+- `IdentityPoolId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CognitoStreamsTypeDef
 
@@ -68,54 +98,117 @@ Optional fields:
 - `DataStorage`: `int`
 - `NumRecords`: `int`
 
-## DeleteDatasetResponseTypeDef
+## DeleteDatasetRequestTypeDef
 
 ```python
-from mypy_boto3_cognito_sync.type_defs import DeleteDatasetResponseTypeDef
+from mypy_boto3_cognito_sync.type_defs import DeleteDatasetRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `IdentityPoolId`: `str`
+- `IdentityId`: `str`
+- `DatasetName`: `str`
+
+## DeleteDatasetResponseResponseTypeDef
+
+```python
+from mypy_boto3_cognito_sync.type_defs import DeleteDatasetResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Dataset`: [DatasetTypeDef](./type_defs.md#datasettypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDatasetResponseTypeDef
+## DescribeDatasetRequestTypeDef
 
 ```python
-from mypy_boto3_cognito_sync.type_defs import DescribeDatasetResponseTypeDef
+from mypy_boto3_cognito_sync.type_defs import DescribeDatasetRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `IdentityPoolId`: `str`
+- `IdentityId`: `str`
+- `DatasetName`: `str`
+
+## DescribeDatasetResponseResponseTypeDef
+
+```python
+from mypy_boto3_cognito_sync.type_defs import DescribeDatasetResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Dataset`: [DatasetTypeDef](./type_defs.md#datasettypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeIdentityPoolUsageResponseTypeDef
+## DescribeIdentityPoolUsageRequestTypeDef
 
 ```python
-from mypy_boto3_cognito_sync.type_defs import DescribeIdentityPoolUsageResponseTypeDef
+from mypy_boto3_cognito_sync.type_defs import DescribeIdentityPoolUsageRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `IdentityPoolId`: `str`
+
+## DescribeIdentityPoolUsageResponseResponseTypeDef
+
+```python
+from mypy_boto3_cognito_sync.type_defs import DescribeIdentityPoolUsageResponseResponseTypeDef
+```
+
+Required fields:
 
 - `IdentityPoolUsage`:
   [IdentityPoolUsageTypeDef](./type_defs.md#identitypoolusagetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeIdentityUsageResponseTypeDef
+## DescribeIdentityUsageRequestTypeDef
 
 ```python
-from mypy_boto3_cognito_sync.type_defs import DescribeIdentityUsageResponseTypeDef
+from mypy_boto3_cognito_sync.type_defs import DescribeIdentityUsageRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `IdentityPoolId`: `str`
+- `IdentityId`: `str`
+
+## DescribeIdentityUsageResponseResponseTypeDef
+
+```python
+from mypy_boto3_cognito_sync.type_defs import DescribeIdentityUsageResponseResponseTypeDef
+```
+
+Required fields:
 
 - `IdentityUsage`: [IdentityUsageTypeDef](./type_defs.md#identityusagetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBulkPublishDetailsResponseTypeDef
+## GetBulkPublishDetailsRequestTypeDef
 
 ```python
-from mypy_boto3_cognito_sync.type_defs import GetBulkPublishDetailsResponseTypeDef
+from mypy_boto3_cognito_sync.type_defs import GetBulkPublishDetailsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `IdentityPoolId`: `str`
+
+## GetBulkPublishDetailsResponseResponseTypeDef
+
+```python
+from mypy_boto3_cognito_sync.type_defs import GetBulkPublishDetailsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `IdentityPoolId`: `str`
 - `BulkPublishStartTime`: `datetime`
@@ -123,29 +216,55 @@ Optional fields:
 - `BulkPublishStatus`:
   [BulkPublishStatusType](./literals.md#bulkpublishstatustype)
 - `FailureMessage`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCognitoEventsResponseTypeDef
+## GetCognitoEventsRequestTypeDef
 
 ```python
-from mypy_boto3_cognito_sync.type_defs import GetCognitoEventsResponseTypeDef
+from mypy_boto3_cognito_sync.type_defs import GetCognitoEventsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `IdentityPoolId`: `str`
+
+## GetCognitoEventsResponseResponseTypeDef
+
+```python
+from mypy_boto3_cognito_sync.type_defs import GetCognitoEventsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Events`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetIdentityPoolConfigurationResponseTypeDef
+## GetIdentityPoolConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_cognito_sync.type_defs import GetIdentityPoolConfigurationResponseTypeDef
+from mypy_boto3_cognito_sync.type_defs import GetIdentityPoolConfigurationRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `IdentityPoolId`: `str`
+
+## GetIdentityPoolConfigurationResponseResponseTypeDef
+
+```python
+from mypy_boto3_cognito_sync.type_defs import GetIdentityPoolConfigurationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `IdentityPoolId`: `str`
 - `PushSync`: [PushSyncTypeDef](./type_defs.md#pushsynctypedef)
 - `CognitoStreams`:
   [CognitoStreamsTypeDef](./type_defs.md#cognitostreamstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## IdentityPoolUsageTypeDef
 
@@ -174,39 +293,89 @@ Optional fields:
 - `DatasetCount`: `int`
 - `DataStorage`: `int`
 
-## ListDatasetsResponseTypeDef
+## ListDatasetsRequestTypeDef
 
 ```python
-from mypy_boto3_cognito_sync.type_defs import ListDatasetsResponseTypeDef
+from mypy_boto3_cognito_sync.type_defs import ListDatasetsRequestTypeDef
 ```
 
+Required fields:
+
+- `IdentityPoolId`: `str`
+- `IdentityId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListDatasetsResponseResponseTypeDef
+
+```python
+from mypy_boto3_cognito_sync.type_defs import ListDatasetsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Datasets`: `List`\[[DatasetTypeDef](./type_defs.md#datasettypedef)\]
 - `Count`: `int`
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListIdentityPoolUsageResponseTypeDef
+## ListIdentityPoolUsageRequestTypeDef
 
 ```python
-from mypy_boto3_cognito_sync.type_defs import ListIdentityPoolUsageResponseTypeDef
+from mypy_boto3_cognito_sync.type_defs import ListIdentityPoolUsageRequestTypeDef
 ```
 
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListIdentityPoolUsageResponseResponseTypeDef
+
+```python
+from mypy_boto3_cognito_sync.type_defs import ListIdentityPoolUsageResponseResponseTypeDef
+```
+
+Required fields:
 
 - `IdentityPoolUsages`:
   `List`\[[IdentityPoolUsageTypeDef](./type_defs.md#identitypoolusagetypedef)\]
 - `MaxResults`: `int`
 - `Count`: `int`
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRecordsResponseTypeDef
+## ListRecordsRequestTypeDef
 
 ```python
-from mypy_boto3_cognito_sync.type_defs import ListRecordsResponseTypeDef
+from mypy_boto3_cognito_sync.type_defs import ListRecordsRequestTypeDef
 ```
 
+Required fields:
+
+- `IdentityPoolId`: `str`
+- `IdentityId`: `str`
+- `DatasetName`: `str`
+
 Optional fields:
+
+- `LastSyncCount`: `int`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `SyncSessionToken`: `str`
+
+## ListRecordsResponseResponseTypeDef
+
+```python
+from mypy_boto3_cognito_sync.type_defs import ListRecordsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Records`: `List`\[[RecordTypeDef](./type_defs.md#recordtypedef)\]
 - `NextToken`: `str`
@@ -217,6 +386,8 @@ Optional fields:
 - `DatasetExists`: `bool`
 - `DatasetDeletedAfterRequestedSyncCount`: `bool`
 - `SyncSessionToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PushSyncTypeDef
 
@@ -244,7 +415,7 @@ Required fields:
 Optional fields:
 
 - `Value`: `str`
-- `DeviceLastModifiedDate`: `datetime`
+- `DeviceLastModifiedDate`: `Union`\[`datetime`, `str`\]
 
 ## RecordTypeDef
 
@@ -261,35 +432,141 @@ Optional fields:
 - `LastModifiedBy`: `str`
 - `DeviceLastModifiedDate`: `datetime`
 
-## RegisterDeviceResponseTypeDef
+## RegisterDeviceRequestTypeDef
 
 ```python
-from mypy_boto3_cognito_sync.type_defs import RegisterDeviceResponseTypeDef
+from mypy_boto3_cognito_sync.type_defs import RegisterDeviceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `IdentityPoolId`: `str`
+- `IdentityId`: `str`
+- `Platform`: [PlatformType](./literals.md#platformtype)
+- `Token`: `str`
+
+## RegisterDeviceResponseResponseTypeDef
+
+```python
+from mypy_boto3_cognito_sync.type_defs import RegisterDeviceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DeviceId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SetIdentityPoolConfigurationResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_cognito_sync.type_defs import SetIdentityPoolConfigurationResponseTypeDef
+from mypy_boto3_cognito_sync.type_defs import ResponseMetadataTypeDef
 ```
 
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## SetCognitoEventsRequestTypeDef
+
+```python
+from mypy_boto3_cognito_sync.type_defs import SetCognitoEventsRequestTypeDef
+```
+
+Required fields:
+
+- `IdentityPoolId`: `str`
+- `Events`: `Dict`\[`str`, `str`\]
+
+## SetIdentityPoolConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_cognito_sync.type_defs import SetIdentityPoolConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `IdentityPoolId`: `str`
+
 Optional fields:
+
+- `PushSync`: [PushSyncTypeDef](./type_defs.md#pushsynctypedef)
+- `CognitoStreams`:
+  [CognitoStreamsTypeDef](./type_defs.md#cognitostreamstypedef)
+
+## SetIdentityPoolConfigurationResponseResponseTypeDef
+
+```python
+from mypy_boto3_cognito_sync.type_defs import SetIdentityPoolConfigurationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `IdentityPoolId`: `str`
 - `PushSync`: [PushSyncTypeDef](./type_defs.md#pushsynctypedef)
 - `CognitoStreams`:
   [CognitoStreamsTypeDef](./type_defs.md#cognitostreamstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateRecordsResponseTypeDef
+## SubscribeToDatasetRequestTypeDef
 
 ```python
-from mypy_boto3_cognito_sync.type_defs import UpdateRecordsResponseTypeDef
+from mypy_boto3_cognito_sync.type_defs import SubscribeToDatasetRequestTypeDef
 ```
+
+Required fields:
+
+- `IdentityPoolId`: `str`
+- `IdentityId`: `str`
+- `DatasetName`: `str`
+- `DeviceId`: `str`
+
+## UnsubscribeFromDatasetRequestTypeDef
+
+```python
+from mypy_boto3_cognito_sync.type_defs import UnsubscribeFromDatasetRequestTypeDef
+```
+
+Required fields:
+
+- `IdentityPoolId`: `str`
+- `IdentityId`: `str`
+- `DatasetName`: `str`
+- `DeviceId`: `str`
+
+## UpdateRecordsRequestTypeDef
+
+```python
+from mypy_boto3_cognito_sync.type_defs import UpdateRecordsRequestTypeDef
+```
+
+Required fields:
+
+- `IdentityPoolId`: `str`
+- `IdentityId`: `str`
+- `DatasetName`: `str`
+- `SyncSessionToken`: `str`
 
 Optional fields:
 
+- `DeviceId`: `str`
+- `RecordPatches`:
+  `List`\[[RecordPatchTypeDef](./type_defs.md#recordpatchtypedef)\]
+- `ClientContext`: `str`
+
+## UpdateRecordsResponseResponseTypeDef
+
+```python
+from mypy_boto3_cognito_sync.type_defs import UpdateRecordsResponseResponseTypeDef
+```
+
+Required fields:
+
 - `Records`: `List`\[[RecordTypeDef](./type_defs.md#recordtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

@@ -73,11 +73,16 @@ Exceptions:
 
 ### associate_repository
 
+.
+
 Type annotations for `boto3.client("codeguru-reviewer").associate_repository`
 method.
 
 Boto3 documentation:
 [CodeGuruReviewer.Client.associate_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.associate_repository)
+
+Arguments mapping described in
+[AssociateRepositoryRequestTypeDef](./type_defs.md#associaterepositoryrequesttypedef).
 
 Keyword-only arguments:
 
@@ -88,9 +93,11 @@ Keyword-only arguments:
 - `KMSKeyDetails`: [KMSKeyDetailsTypeDef](./type_defs.md#kmskeydetailstypedef)
 
 Returns
-[AssociateRepositoryResponseTypeDef](./type_defs.md#associaterepositoryresponsetypedef).
+[AssociateRepositoryResponseResponseTypeDef](./type_defs.md#associaterepositoryresponseresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("codeguru-reviewer").can_paginate` method.
 
@@ -105,11 +112,16 @@ Returns `bool`.
 
 ### create_code_review
 
+.
+
 Type annotations for `boto3.client("codeguru-reviewer").create_code_review`
 method.
 
 Boto3 documentation:
 [CodeGuruReviewer.Client.create_code_review](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.create_code_review)
+
+Arguments mapping described in
+[CreateCodeReviewRequestTypeDef](./type_defs.md#createcodereviewrequesttypedef).
 
 Keyword-only arguments:
 
@@ -120,9 +132,11 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 
 Returns
-[CreateCodeReviewResponseTypeDef](./type_defs.md#createcodereviewresponsetypedef).
+[CreateCodeReviewResponseResponseTypeDef](./type_defs.md#createcodereviewresponseresponsetypedef).
 
 ### describe_code_review
+
+.
 
 Type annotations for `boto3.client("codeguru-reviewer").describe_code_review`
 method.
@@ -130,20 +144,28 @@ method.
 Boto3 documentation:
 [CodeGuruReviewer.Client.describe_code_review](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.describe_code_review)
 
+Arguments mapping described in
+[DescribeCodeReviewRequestTypeDef](./type_defs.md#describecodereviewrequesttypedef).
+
 Keyword-only arguments:
 
 - `CodeReviewArn`: `str` *(required)*
 
 Returns
-[DescribeCodeReviewResponseTypeDef](./type_defs.md#describecodereviewresponsetypedef).
+[DescribeCodeReviewResponseResponseTypeDef](./type_defs.md#describecodereviewresponseresponsetypedef).
 
 ### describe_recommendation_feedback
+
+.
 
 Type annotations for
 `boto3.client("codeguru-reviewer").describe_recommendation_feedback` method.
 
 Boto3 documentation:
 [CodeGuruReviewer.Client.describe_recommendation_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.describe_recommendation_feedback)
+
+Arguments mapping described in
+[DescribeRecommendationFeedbackRequestTypeDef](./type_defs.md#describerecommendationfeedbackrequesttypedef).
 
 Keyword-only arguments:
 
@@ -152,9 +174,11 @@ Keyword-only arguments:
 - `UserId`: `str`
 
 Returns
-[DescribeRecommendationFeedbackResponseTypeDef](./type_defs.md#describerecommendationfeedbackresponsetypedef).
+[DescribeRecommendationFeedbackResponseResponseTypeDef](./type_defs.md#describerecommendationfeedbackresponseresponsetypedef).
 
 ### describe_repository_association
+
+.
 
 Type annotations for
 `boto3.client("codeguru-reviewer").describe_repository_association` method.
@@ -162,14 +186,19 @@ Type annotations for
 Boto3 documentation:
 [CodeGuruReviewer.Client.describe_repository_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.describe_repository_association)
 
+Arguments mapping described in
+[DescribeRepositoryAssociationRequestTypeDef](./type_defs.md#describerepositoryassociationrequesttypedef).
+
 Keyword-only arguments:
 
 - `AssociationArn`: `str` *(required)*
 
 Returns
-[DescribeRepositoryAssociationResponseTypeDef](./type_defs.md#describerepositoryassociationresponsetypedef).
+[DescribeRepositoryAssociationResponseResponseTypeDef](./type_defs.md#describerepositoryassociationresponseresponsetypedef).
 
 ### disassociate_repository
+
+.
 
 Type annotations for
 `boto3.client("codeguru-reviewer").disassociate_repository` method.
@@ -177,14 +206,19 @@ Type annotations for
 Boto3 documentation:
 [CodeGuruReviewer.Client.disassociate_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.disassociate_repository)
 
+Arguments mapping described in
+[DisassociateRepositoryRequestTypeDef](./type_defs.md#disassociaterepositoryrequesttypedef).
+
 Keyword-only arguments:
 
 - `AssociationArn`: `str` *(required)*
 
 Returns
-[DisassociateRepositoryResponseTypeDef](./type_defs.md#disassociaterepositoryresponsetypedef).
+[DisassociateRepositoryResponseResponseTypeDef](./type_defs.md#disassociaterepositoryresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("codeguru-reviewer").generate_presigned_url`
 method.
@@ -203,11 +237,16 @@ Returns `str`.
 
 ### list_code_reviews
 
+.
+
 Type annotations for `boto3.client("codeguru-reviewer").list_code_reviews`
 method.
 
 Boto3 documentation:
 [CodeGuruReviewer.Client.list_code_reviews](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_code_reviews)
+
+Arguments mapping described in
+[ListCodeReviewsRequestTypeDef](./type_defs.md#listcodereviewsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -219,15 +258,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListCodeReviewsResponseTypeDef](./type_defs.md#listcodereviewsresponsetypedef).
+[ListCodeReviewsResponseResponseTypeDef](./type_defs.md#listcodereviewsresponseresponsetypedef).
 
 ### list_recommendation_feedback
+
+.
 
 Type annotations for
 `boto3.client("codeguru-reviewer").list_recommendation_feedback` method.
 
 Boto3 documentation:
 [CodeGuruReviewer.Client.list_recommendation_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_recommendation_feedback)
+
+Arguments mapping described in
+[ListRecommendationFeedbackRequestTypeDef](./type_defs.md#listrecommendationfeedbackrequesttypedef).
 
 Keyword-only arguments:
 
@@ -238,15 +282,20 @@ Keyword-only arguments:
 - `RecommendationIds`: `List`\[`str`\]
 
 Returns
-[ListRecommendationFeedbackResponseTypeDef](./type_defs.md#listrecommendationfeedbackresponsetypedef).
+[ListRecommendationFeedbackResponseResponseTypeDef](./type_defs.md#listrecommendationfeedbackresponseresponsetypedef).
 
 ### list_recommendations
+
+.
 
 Type annotations for `boto3.client("codeguru-reviewer").list_recommendations`
 method.
 
 Boto3 documentation:
 [CodeGuruReviewer.Client.list_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_recommendations)
+
+Arguments mapping described in
+[ListRecommendationsRequestTypeDef](./type_defs.md#listrecommendationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -255,15 +304,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListRecommendationsResponseTypeDef](./type_defs.md#listrecommendationsresponsetypedef).
+[ListRecommendationsResponseResponseTypeDef](./type_defs.md#listrecommendationsresponseresponsetypedef).
 
 ### list_repository_associations
+
+.
 
 Type annotations for
 `boto3.client("codeguru-reviewer").list_repository_associations` method.
 
 Boto3 documentation:
 [CodeGuruReviewer.Client.list_repository_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_repository_associations)
+
+Arguments mapping described in
+[ListRepositoryAssociationsRequestTypeDef](./type_defs.md#listrepositoryassociationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -276,9 +330,11 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListRepositoryAssociationsResponseTypeDef](./type_defs.md#listrepositoryassociationsresponsetypedef).
+[ListRepositoryAssociationsResponseResponseTypeDef](./type_defs.md#listrepositoryassociationsresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+.
 
 Type annotations for `boto3.client("codeguru-reviewer").list_tags_for_resource`
 method.
@@ -286,20 +342,28 @@ method.
 Boto3 documentation:
 [CodeGuruReviewer.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### put_recommendation_feedback
+
+.
 
 Type annotations for
 `boto3.client("codeguru-reviewer").put_recommendation_feedback` method.
 
 Boto3 documentation:
 [CodeGuruReviewer.Client.put_recommendation_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.put_recommendation_feedback)
+
+Arguments mapping described in
+[PutRecommendationFeedbackRequestTypeDef](./type_defs.md#putrecommendationfeedbackrequesttypedef).
 
 Keyword-only arguments:
 
@@ -312,10 +376,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### tag_resource
 
+.
+
 Type annotations for `boto3.client("codeguru-reviewer").tag_resource` method.
 
 Boto3 documentation:
 [CodeGuruReviewer.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -326,10 +395,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+.
+
 Type annotations for `boto3.client("codeguru-reviewer").untag_resource` method.
 
 Boto3 documentation:
 [CodeGuruReviewer.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 

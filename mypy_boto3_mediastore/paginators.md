@@ -33,4 +33,4 @@ Arguments for `ListContainersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListContainersPaginator.paginate` returns
-`Iterator`\[[ListContainersOutputTypeDef](./type_defs.md#listcontainersoutputtypedef)\].
+`Iterator`\[[ListContainersOutputResponseTypeDef](./type_defs.md#listcontainersoutputresponsetypedef)\].

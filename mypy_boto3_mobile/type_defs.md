@@ -9,19 +9,29 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 Mobile module](#typed-dictionaries-for-boto3-mobile-module)
   - [BundleDetailsTypeDef](#bundledetailstypedef)
-  - [CreateProjectResultTypeDef](#createprojectresulttypedef)
-  - [DeleteProjectResultTypeDef](#deleteprojectresulttypedef)
-  - [DescribeBundleResultTypeDef](#describebundleresulttypedef)
-  - [DescribeProjectResultTypeDef](#describeprojectresulttypedef)
-  - [ExportBundleResultTypeDef](#exportbundleresulttypedef)
-  - [ExportProjectResultTypeDef](#exportprojectresulttypedef)
-  - [ListBundlesResultTypeDef](#listbundlesresulttypedef)
-  - [ListProjectsResultTypeDef](#listprojectsresulttypedef)
+  - [CreateProjectRequestTypeDef](#createprojectrequesttypedef)
+  - [CreateProjectResultResponseTypeDef](#createprojectresultresponsetypedef)
+  - [DeleteProjectRequestTypeDef](#deleteprojectrequesttypedef)
+  - [DeleteProjectResultResponseTypeDef](#deleteprojectresultresponsetypedef)
+  - [DescribeBundleRequestTypeDef](#describebundlerequesttypedef)
+  - [DescribeBundleResultResponseTypeDef](#describebundleresultresponsetypedef)
+  - [DescribeProjectRequestTypeDef](#describeprojectrequesttypedef)
+  - [DescribeProjectResultResponseTypeDef](#describeprojectresultresponsetypedef)
+  - [ExportBundleRequestTypeDef](#exportbundlerequesttypedef)
+  - [ExportBundleResultResponseTypeDef](#exportbundleresultresponsetypedef)
+  - [ExportProjectRequestTypeDef](#exportprojectrequesttypedef)
+  - [ExportProjectResultResponseTypeDef](#exportprojectresultresponsetypedef)
+  - [ListBundlesRequestTypeDef](#listbundlesrequesttypedef)
+  - [ListBundlesResultResponseTypeDef](#listbundlesresultresponsetypedef)
+  - [ListProjectsRequestTypeDef](#listprojectsrequesttypedef)
+  - [ListProjectsResultResponseTypeDef](#listprojectsresultresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ProjectDetailsTypeDef](#projectdetailstypedef)
   - [ProjectSummaryTypeDef](#projectsummarytypedef)
   - [ResourceTypeDef](#resourcetypedef)
-  - [UpdateProjectResultTypeDef](#updateprojectresulttypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [UpdateProjectRequestTypeDef](#updateprojectrequesttypedef)
+  - [UpdateProjectResultResponseTypeDef](#updateprojectresultresponsetypedef)
 
 ## BundleDetailsTypeDef
 
@@ -38,94 +48,204 @@ Optional fields:
 - `iconUrl`: `str`
 - `availablePlatforms`: `List`\[[PlatformType](./literals.md#platformtype)\]
 
-## CreateProjectResultTypeDef
+## CreateProjectRequestTypeDef
 
 ```python
-from mypy_boto3_mobile.type_defs import CreateProjectResultTypeDef
+from mypy_boto3_mobile.type_defs import CreateProjectRequestTypeDef
 ```
 
 Optional fields:
+
+- `name`: `str`
+- `region`: `str`
+- `contents`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `snapshotId`: `str`
+
+## CreateProjectResultResponseTypeDef
+
+```python
+from mypy_boto3_mobile.type_defs import CreateProjectResultResponseTypeDef
+```
+
+Required fields:
 
 - `details`: [ProjectDetailsTypeDef](./type_defs.md#projectdetailstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteProjectResultTypeDef
+## DeleteProjectRequestTypeDef
 
 ```python
-from mypy_boto3_mobile.type_defs import DeleteProjectResultTypeDef
+from mypy_boto3_mobile.type_defs import DeleteProjectRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `projectId`: `str`
+
+## DeleteProjectResultResponseTypeDef
+
+```python
+from mypy_boto3_mobile.type_defs import DeleteProjectResultResponseTypeDef
+```
+
+Required fields:
 
 - `deletedResources`:
   `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
 - `orphanedResources`:
   `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeBundleResultTypeDef
+## DescribeBundleRequestTypeDef
 
 ```python
-from mypy_boto3_mobile.type_defs import DescribeBundleResultTypeDef
+from mypy_boto3_mobile.type_defs import DescribeBundleRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `bundleId`: `str`
+
+## DescribeBundleResultResponseTypeDef
+
+```python
+from mypy_boto3_mobile.type_defs import DescribeBundleResultResponseTypeDef
+```
+
+Required fields:
 
 - `details`: [BundleDetailsTypeDef](./type_defs.md#bundledetailstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeProjectResultTypeDef
+## DescribeProjectRequestTypeDef
 
 ```python
-from mypy_boto3_mobile.type_defs import DescribeProjectResultTypeDef
+from mypy_boto3_mobile.type_defs import DescribeProjectRequestTypeDef
 ```
 
+Required fields:
+
+- `projectId`: `str`
+
 Optional fields:
+
+- `syncFromResources`: `bool`
+
+## DescribeProjectResultResponseTypeDef
+
+```python
+from mypy_boto3_mobile.type_defs import DescribeProjectResultResponseTypeDef
+```
+
+Required fields:
 
 - `details`: [ProjectDetailsTypeDef](./type_defs.md#projectdetailstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ExportBundleResultTypeDef
+## ExportBundleRequestTypeDef
 
 ```python
-from mypy_boto3_mobile.type_defs import ExportBundleResultTypeDef
+from mypy_boto3_mobile.type_defs import ExportBundleRequestTypeDef
 ```
 
+Required fields:
+
+- `bundleId`: `str`
+
 Optional fields:
+
+- `projectId`: `str`
+- `platform`: [PlatformType](./literals.md#platformtype)
+
+## ExportBundleResultResponseTypeDef
+
+```python
+from mypy_boto3_mobile.type_defs import ExportBundleResultResponseTypeDef
+```
+
+Required fields:
 
 - `downloadUrl`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ExportProjectResultTypeDef
+## ExportProjectRequestTypeDef
 
 ```python
-from mypy_boto3_mobile.type_defs import ExportProjectResultTypeDef
+from mypy_boto3_mobile.type_defs import ExportProjectRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `projectId`: `str`
+
+## ExportProjectResultResponseTypeDef
+
+```python
+from mypy_boto3_mobile.type_defs import ExportProjectResultResponseTypeDef
+```
+
+Required fields:
 
 - `downloadUrl`: `str`
 - `shareUrl`: `str`
 - `snapshotId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListBundlesResultTypeDef
+## ListBundlesRequestTypeDef
 
 ```python
-from mypy_boto3_mobile.type_defs import ListBundlesResultTypeDef
+from mypy_boto3_mobile.type_defs import ListBundlesRequestTypeDef
 ```
 
 Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListBundlesResultResponseTypeDef
+
+```python
+from mypy_boto3_mobile.type_defs import ListBundlesResultResponseTypeDef
+```
+
+Required fields:
 
 - `bundleList`:
   `List`\[[BundleDetailsTypeDef](./type_defs.md#bundledetailstypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListProjectsResultTypeDef
+## ListProjectsRequestTypeDef
 
 ```python
-from mypy_boto3_mobile.type_defs import ListProjectsResultTypeDef
+from mypy_boto3_mobile.type_defs import ListProjectsRequestTypeDef
 ```
 
 Optional fields:
 
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListProjectsResultResponseTypeDef
+
+```python
+from mypy_boto3_mobile.type_defs import ListProjectsResultResponseTypeDef
+```
+
+Required fields:
+
 - `projects`:
   `List`\[[ProjectSummaryTypeDef](./type_defs.md#projectsummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -181,12 +301,42 @@ Optional fields:
 - `feature`: `str`
 - `attributes`: `Dict`\[`str`, `str`\]
 
-## UpdateProjectResultTypeDef
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_mobile.type_defs import UpdateProjectResultTypeDef
+from mypy_boto3_mobile.type_defs import ResponseMetadataTypeDef
 ```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## UpdateProjectRequestTypeDef
+
+```python
+from mypy_boto3_mobile.type_defs import UpdateProjectRequestTypeDef
+```
+
+Required fields:
+
+- `projectId`: `str`
 
 Optional fields:
 
+- `contents`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+
+## UpdateProjectResultResponseTypeDef
+
+```python
+from mypy_boto3_mobile.type_defs import UpdateProjectResultResponseTypeDef
+```
+
+Required fields:
+
 - `details`: [ProjectDetailsTypeDef](./type_defs.md#projectdetailstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

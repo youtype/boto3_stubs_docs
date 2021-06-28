@@ -27,7 +27,7 @@ def get_environment_exists_waiter() -> EnvironmentExistsWaiter:
 ```
 
 Boto3 documentation:
-[ElasticBeanstalk.Waiter.environment_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Waiter.environment_exists)
+[ElasticBeanstalk.Waiter.environment_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Waiter.EnvironmentExists)
 
 Arguments for `EnvironmentExistsWaiter.wait` method:
 
@@ -36,7 +36,7 @@ Arguments for `EnvironmentExistsWaiter.wait` method:
 - `EnvironmentIds`: `List`\[`str`\]
 - `EnvironmentNames`: `List`\[`str`\]
 - `IncludeDeleted`: `bool`
-- `IncludedDeletedBackTo`: `datetime`
+- `IncludedDeletedBackTo`: `Union`\[`datetime`, `str`\]
 - `MaxRecords`: `int`
 - `NextToken`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
@@ -56,7 +56,7 @@ def get_environment_terminated_waiter() -> EnvironmentTerminatedWaiter:
 ```
 
 Boto3 documentation:
-[ElasticBeanstalk.Waiter.environment_terminated](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Waiter.environment_terminated)
+[ElasticBeanstalk.Waiter.environment_terminated](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Waiter.EnvironmentTerminated)
 
 Arguments for `EnvironmentTerminatedWaiter.wait` method:
 
@@ -65,7 +65,7 @@ Arguments for `EnvironmentTerminatedWaiter.wait` method:
 - `EnvironmentIds`: `List`\[`str`\]
 - `EnvironmentNames`: `List`\[`str`\]
 - `IncludeDeleted`: `bool`
-- `IncludedDeletedBackTo`: `datetime`
+- `IncludedDeletedBackTo`: `Union`\[`datetime`, `str`\]
 - `MaxRecords`: `int`
 - `NextToken`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
@@ -85,7 +85,7 @@ def get_environment_updated_waiter() -> EnvironmentUpdatedWaiter:
 ```
 
 Boto3 documentation:
-[ElasticBeanstalk.Waiter.environment_updated](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Waiter.environment_updated)
+[ElasticBeanstalk.Waiter.environment_updated](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Waiter.EnvironmentUpdated)
 
 Arguments for `EnvironmentUpdatedWaiter.wait` method:
 
@@ -94,7 +94,7 @@ Arguments for `EnvironmentUpdatedWaiter.wait` method:
 - `EnvironmentIds`: `List`\[`str`\]
 - `EnvironmentNames`: `List`\[`str`\]
 - `IncludeDeleted`: `bool`
-- `IncludedDeletedBackTo`: `datetime`
+- `IncludedDeletedBackTo`: `Union`\[`datetime`, `str`\]
 - `MaxRecords`: `int`
 - `NextToken`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

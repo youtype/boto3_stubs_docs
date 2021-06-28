@@ -41,7 +41,7 @@ Arguments for `GetApisPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetApisPaginator.paginate` returns
-`Iterator`\[[GetApisResponseTypeDef](./type_defs.md#getapisresponsetypedef)\].
+`Iterator`\[[GetApisResponseResponseTypeDef](./type_defs.md#getapisresponseresponsetypedef)\].
 
 ## GetAuthorizersPaginator
 
@@ -67,7 +67,7 @@ Arguments for `GetAuthorizersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetAuthorizersPaginator.paginate` returns
-`Iterator`\[[GetAuthorizersResponseTypeDef](./type_defs.md#getauthorizersresponsetypedef)\].
+`Iterator`\[[GetAuthorizersResponseResponseTypeDef](./type_defs.md#getauthorizersresponseresponsetypedef)\].
 
 ## GetDeploymentsPaginator
 
@@ -93,7 +93,7 @@ Arguments for `GetDeploymentsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetDeploymentsPaginator.paginate` returns
-`Iterator`\[[GetDeploymentsResponseTypeDef](./type_defs.md#getdeploymentsresponsetypedef)\].
+`Iterator`\[[GetDeploymentsResponseResponseTypeDef](./type_defs.md#getdeploymentsresponseresponsetypedef)\].
 
 ## GetDomainNamesPaginator
 
@@ -118,7 +118,7 @@ Arguments for `GetDomainNamesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetDomainNamesPaginator.paginate` returns
-`Iterator`\[[GetDomainNamesResponseTypeDef](./type_defs.md#getdomainnamesresponsetypedef)\].
+`Iterator`\[[GetDomainNamesResponseResponseTypeDef](./type_defs.md#getdomainnamesresponseresponsetypedef)\].
 
 ## GetIntegrationResponsesPaginator
 
@@ -145,7 +145,7 @@ Arguments for `GetIntegrationResponsesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetIntegrationResponsesPaginator.paginate` returns
-`Iterator`\[[GetIntegrationResponsesResponseTypeDef](./type_defs.md#getintegrationresponsesresponsetypedef)\].
+`Iterator`\[[GetIntegrationResponsesResponseResponseTypeDef](./type_defs.md#getintegrationresponsesresponseresponsetypedef)\].
 
 ## GetIntegrationsPaginator
 
@@ -171,7 +171,7 @@ Arguments for `GetIntegrationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetIntegrationsPaginator.paginate` returns
-`Iterator`\[[GetIntegrationsResponseTypeDef](./type_defs.md#getintegrationsresponsetypedef)\].
+`Iterator`\[[GetIntegrationsResponseResponseTypeDef](./type_defs.md#getintegrationsresponseresponsetypedef)\].
 
 ## GetModelsPaginator
 
@@ -197,7 +197,7 @@ Arguments for `GetModelsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetModelsPaginator.paginate` returns
-`Iterator`\[[GetModelsResponseTypeDef](./type_defs.md#getmodelsresponsetypedef)\].
+`Iterator`\[[GetModelsResponseResponseTypeDef](./type_defs.md#getmodelsresponseresponsetypedef)\].
 
 ## GetRouteResponsesPaginator
 
@@ -224,7 +224,7 @@ Arguments for `GetRouteResponsesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetRouteResponsesPaginator.paginate` returns
-`Iterator`\[[GetRouteResponsesResponseTypeDef](./type_defs.md#getrouteresponsesresponsetypedef)\].
+`Iterator`\[[GetRouteResponsesResponseResponseTypeDef](./type_defs.md#getrouteresponsesresponseresponsetypedef)\].
 
 ## GetRoutesPaginator
 
@@ -250,7 +250,7 @@ Arguments for `GetRoutesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetRoutesPaginator.paginate` returns
-`Iterator`\[[GetRoutesResponseTypeDef](./type_defs.md#getroutesresponsetypedef)\].
+`Iterator`\[[GetRoutesResponseResponseTypeDef](./type_defs.md#getroutesresponseresponsetypedef)\].
 
 ## GetStagesPaginator
 
@@ -276,4 +276,4 @@ Arguments for `GetStagesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetStagesPaginator.paginate` returns
-`Iterator`\[[GetStagesResponseTypeDef](./type_defs.md#getstagesresponsetypedef)\].
+`Iterator`\[[GetStagesResponseResponseTypeDef](./type_defs.md#getstagesresponseresponsetypedef)\].

@@ -40,7 +40,7 @@ Arguments for `GetQueryResultsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetQueryResultsPaginator.paginate` returns
-`Iterator`\[[GetQueryResultsOutputTypeDef](./type_defs.md#getqueryresultsoutputtypedef)\].
+`Iterator`\[[GetQueryResultsOutputResponseTypeDef](./type_defs.md#getqueryresultsoutputresponsetypedef)\].
 
 ## ListDataCatalogsPaginator
 
@@ -65,7 +65,7 @@ Arguments for `ListDataCatalogsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDataCatalogsPaginator.paginate` returns
-`Iterator`\[[ListDataCatalogsOutputTypeDef](./type_defs.md#listdatacatalogsoutputtypedef)\].
+`Iterator`\[[ListDataCatalogsOutputResponseTypeDef](./type_defs.md#listdatacatalogsoutputresponsetypedef)\].
 
 ## ListDatabasesPaginator
 
@@ -90,7 +90,7 @@ Arguments for `ListDatabasesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDatabasesPaginator.paginate` returns
-`Iterator`\[[ListDatabasesOutputTypeDef](./type_defs.md#listdatabasesoutputtypedef)\].
+`Iterator`\[[ListDatabasesOutputResponseTypeDef](./type_defs.md#listdatabasesoutputresponsetypedef)\].
 
 ## ListNamedQueriesPaginator
 
@@ -116,7 +116,7 @@ Arguments for `ListNamedQueriesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListNamedQueriesPaginator.paginate` returns
-`Iterator`\[[ListNamedQueriesOutputTypeDef](./type_defs.md#listnamedqueriesoutputtypedef)\].
+`Iterator`\[[ListNamedQueriesOutputResponseTypeDef](./type_defs.md#listnamedqueriesoutputresponsetypedef)\].
 
 ## ListQueryExecutionsPaginator
 
@@ -142,7 +142,7 @@ Arguments for `ListQueryExecutionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListQueryExecutionsPaginator.paginate` returns
-`Iterator`\[[ListQueryExecutionsOutputTypeDef](./type_defs.md#listqueryexecutionsoutputtypedef)\].
+`Iterator`\[[ListQueryExecutionsOutputResponseTypeDef](./type_defs.md#listqueryexecutionsoutputresponsetypedef)\].
 
 ## ListTableMetadataPaginator
 
@@ -170,7 +170,7 @@ Arguments for `ListTableMetadataPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTableMetadataPaginator.paginate` returns
-`Iterator`\[[ListTableMetadataOutputTypeDef](./type_defs.md#listtablemetadataoutputtypedef)\].
+`Iterator`\[[ListTableMetadataOutputResponseTypeDef](./type_defs.md#listtablemetadataoutputresponsetypedef)\].
 
 ## ListTagsForResourcePaginator
 
@@ -196,4 +196,4 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsForResourcePaginator.paginate` returns
-`Iterator`\[[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef)\].
+`Iterator`\[[ListTagsForResourceOutputResponseTypeDef](./type_defs.md#listtagsforresourceoutputresponsetypedef)\].

@@ -9,14 +9,23 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 ConnectParticipant module](#typed-dictionaries-for-boto3-connectparticipant-module)
   - [AttachmentItemTypeDef](#attachmentitemtypedef)
+  - [CompleteAttachmentUploadRequestTypeDef](#completeattachmentuploadrequesttypedef)
   - [ConnectionCredentialsTypeDef](#connectioncredentialstypedef)
-  - [CreateParticipantConnectionResponseTypeDef](#createparticipantconnectionresponsetypedef)
-  - [GetAttachmentResponseTypeDef](#getattachmentresponsetypedef)
-  - [GetTranscriptResponseTypeDef](#gettranscriptresponsetypedef)
+  - [CreateParticipantConnectionRequestTypeDef](#createparticipantconnectionrequesttypedef)
+  - [CreateParticipantConnectionResponseResponseTypeDef](#createparticipantconnectionresponseresponsetypedef)
+  - [DisconnectParticipantRequestTypeDef](#disconnectparticipantrequesttypedef)
+  - [GetAttachmentRequestTypeDef](#getattachmentrequesttypedef)
+  - [GetAttachmentResponseResponseTypeDef](#getattachmentresponseresponsetypedef)
+  - [GetTranscriptRequestTypeDef](#gettranscriptrequesttypedef)
+  - [GetTranscriptResponseResponseTypeDef](#gettranscriptresponseresponsetypedef)
   - [ItemTypeDef](#itemtypedef)
-  - [SendEventResponseTypeDef](#sendeventresponsetypedef)
-  - [SendMessageResponseTypeDef](#sendmessageresponsetypedef)
-  - [StartAttachmentUploadResponseTypeDef](#startattachmentuploadresponsetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [SendEventRequestTypeDef](#sendeventrequesttypedef)
+  - [SendEventResponseResponseTypeDef](#sendeventresponseresponsetypedef)
+  - [SendMessageRequestTypeDef](#sendmessagerequesttypedef)
+  - [SendMessageResponseResponseTypeDef](#sendmessageresponseresponsetypedef)
+  - [StartAttachmentUploadRequestTypeDef](#startattachmentuploadrequesttypedef)
+  - [StartAttachmentUploadResponseResponseTypeDef](#startattachmentuploadresponseresponsetypedef)
   - [StartPositionTypeDef](#startpositiontypedef)
   - [UploadMetadataTypeDef](#uploadmetadatatypedef)
   - [WebsocketTypeDef](#websockettypedef)
@@ -34,6 +43,18 @@ Optional fields:
 - `AttachmentName`: `str`
 - `Status`: [ArtifactStatusType](./literals.md#artifactstatustype)
 
+## CompleteAttachmentUploadRequestTypeDef
+
+```python
+from mypy_boto3_connectparticipant.type_defs import CompleteAttachmentUploadRequestTypeDef
+```
+
+Required fields:
+
+- `AttachmentIds`: `List`\[`str`\]
+- `ClientToken`: `str`
+- `ConnectionToken`: `str`
+
 ## ConnectionCredentialsTypeDef
 
 ```python
@@ -45,40 +66,101 @@ Optional fields:
 - `ConnectionToken`: `str`
 - `Expiry`: `str`
 
-## CreateParticipantConnectionResponseTypeDef
+## CreateParticipantConnectionRequestTypeDef
 
 ```python
-from mypy_boto3_connectparticipant.type_defs import CreateParticipantConnectionResponseTypeDef
+from mypy_boto3_connectparticipant.type_defs import CreateParticipantConnectionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Type`: `List`\[[ConnectionTypeType](./literals.md#connectiontypetype)\]
+- `ParticipantToken`: `str`
+
+## CreateParticipantConnectionResponseResponseTypeDef
+
+```python
+from mypy_boto3_connectparticipant.type_defs import CreateParticipantConnectionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Websocket`: [WebsocketTypeDef](./type_defs.md#websockettypedef)
 - `ConnectionCredentials`:
   [ConnectionCredentialsTypeDef](./type_defs.md#connectioncredentialstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAttachmentResponseTypeDef
+## DisconnectParticipantRequestTypeDef
 
 ```python
-from mypy_boto3_connectparticipant.type_defs import GetAttachmentResponseTypeDef
+from mypy_boto3_connectparticipant.type_defs import DisconnectParticipantRequestTypeDef
 ```
 
+Required fields:
+
+- `ConnectionToken`: `str`
+
 Optional fields:
+
+- `ClientToken`: `str`
+
+## GetAttachmentRequestTypeDef
+
+```python
+from mypy_boto3_connectparticipant.type_defs import GetAttachmentRequestTypeDef
+```
+
+Required fields:
+
+- `AttachmentId`: `str`
+- `ConnectionToken`: `str`
+
+## GetAttachmentResponseResponseTypeDef
+
+```python
+from mypy_boto3_connectparticipant.type_defs import GetAttachmentResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Url`: `str`
 - `UrlExpiry`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTranscriptResponseTypeDef
+## GetTranscriptRequestTypeDef
 
 ```python
-from mypy_boto3_connectparticipant.type_defs import GetTranscriptResponseTypeDef
+from mypy_boto3_connectparticipant.type_defs import GetTranscriptRequestTypeDef
 ```
 
+Required fields:
+
+- `ConnectionToken`: `str`
+
 Optional fields:
+
+- `ContactId`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `ScanDirection`: [ScanDirectionType](./literals.md#scandirectiontype)
+- `SortOrder`: [SortKeyType](./literals.md#sortkeytype)
+- `StartPosition`: [StartPositionTypeDef](./type_defs.md#startpositiontypedef)
+
+## GetTranscriptResponseResponseTypeDef
+
+```python
+from mypy_boto3_connectparticipant.type_defs import GetTranscriptResponseResponseTypeDef
+```
+
+Required fields:
 
 - `InitialContactId`: `str`
 - `Transcript`: `List`\[[ItemTypeDef](./type_defs.md#itemtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ItemTypeDef
 
@@ -99,39 +181,105 @@ Optional fields:
 - `Attachments`:
   `List`\[[AttachmentItemTypeDef](./type_defs.md#attachmentitemtypedef)\]
 
-## SendEventResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_connectparticipant.type_defs import SendEventResponseTypeDef
+from mypy_boto3_connectparticipant.type_defs import ResponseMetadataTypeDef
 ```
 
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## SendEventRequestTypeDef
+
+```python
+from mypy_boto3_connectparticipant.type_defs import SendEventRequestTypeDef
+```
+
+Required fields:
+
+- `ContentType`: `str`
+- `ConnectionToken`: `str`
+
 Optional fields:
+
+- `Content`: `str`
+- `ClientToken`: `str`
+
+## SendEventResponseResponseTypeDef
+
+```python
+from mypy_boto3_connectparticipant.type_defs import SendEventResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Id`: `str`
 - `AbsoluteTime`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SendMessageResponseTypeDef
+## SendMessageRequestTypeDef
 
 ```python
-from mypy_boto3_connectparticipant.type_defs import SendMessageResponseTypeDef
+from mypy_boto3_connectparticipant.type_defs import SendMessageRequestTypeDef
 ```
 
+Required fields:
+
+- `ContentType`: `str`
+- `Content`: `str`
+- `ConnectionToken`: `str`
+
 Optional fields:
+
+- `ClientToken`: `str`
+
+## SendMessageResponseResponseTypeDef
+
+```python
+from mypy_boto3_connectparticipant.type_defs import SendMessageResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Id`: `str`
 - `AbsoluteTime`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartAttachmentUploadResponseTypeDef
+## StartAttachmentUploadRequestTypeDef
 
 ```python
-from mypy_boto3_connectparticipant.type_defs import StartAttachmentUploadResponseTypeDef
+from mypy_boto3_connectparticipant.type_defs import StartAttachmentUploadRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ContentType`: `str`
+- `AttachmentSizeInBytes`: `int`
+- `AttachmentName`: `str`
+- `ClientToken`: `str`
+- `ConnectionToken`: `str`
+
+## StartAttachmentUploadResponseResponseTypeDef
+
+```python
+from mypy_boto3_connectparticipant.type_defs import StartAttachmentUploadResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AttachmentId`: `str`
 - `UploadMetadata`:
   [UploadMetadataTypeDef](./type_defs.md#uploadmetadatatypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## StartPositionTypeDef
 

@@ -58,8 +58,11 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2_instance_connect.type_defs import SendSSHPublicKeyResponseTypeDef, ...
+from mypy_boto3_ec2_instance_connect.type_defs import ResponseMetadataTypeDef, ...
 ```
 
-- [SendSSHPublicKeyResponseTypeDef](./type_defs.md#sendsshpublickeyresponsetypedef)
-- [SendSerialConsoleSSHPublicKeyResponseTypeDef](./type_defs.md#sendserialconsolesshpublickeyresponsetypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [SendSSHPublicKeyRequestTypeDef](./type_defs.md#sendsshpublickeyrequesttypedef)
+- [SendSSHPublicKeyResponseResponseTypeDef](./type_defs.md#sendsshpublickeyresponseresponsetypedef)
+- [SendSerialConsoleSSHPublicKeyRequestTypeDef](./type_defs.md#sendserialconsolesshpublickeyrequesttypedef)
+- [SendSerialConsoleSSHPublicKeyResponseResponseTypeDef](./type_defs.md#sendserialconsolesshpublickeyresponseresponsetypedef)

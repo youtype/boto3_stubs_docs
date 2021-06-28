@@ -124,10 +124,15 @@ Boto3 documentation:
 
 ### SNSServiceResource.PlatformApplication method
 
+Creates a PlatformApplication resource.
+
 Type annotations for `boto3.resource("sns").PlatformApplication` method.
 
 Boto3 documentation:
 [SNS.ServiceResource.PlatformApplication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.PlatformApplication)
+
+Arguments mapping described in
+[ServiceResourcePlatformApplicationRequestTypeDef](./type_defs.md#serviceresourceplatformapplicationrequesttypedef).
 
 Arguments:
 
@@ -137,10 +142,15 @@ Returns [PlatformApplication](#platformapplication).
 
 ### SNSServiceResource.PlatformEndpoint method
 
+Creates a PlatformEndpoint resource.
+
 Type annotations for `boto3.resource("sns").PlatformEndpoint` method.
 
 Boto3 documentation:
 [SNS.ServiceResource.PlatformEndpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.PlatformEndpoint)
+
+Arguments mapping described in
+[ServiceResourcePlatformEndpointRequestTypeDef](./type_defs.md#serviceresourceplatformendpointrequesttypedef).
 
 Arguments:
 
@@ -150,10 +160,15 @@ Returns [PlatformEndpoint](#platformendpoint).
 
 ### SNSServiceResource.Subscription method
 
+Creates a Subscription resource.
+
 Type annotations for `boto3.resource("sns").Subscription` method.
 
 Boto3 documentation:
 [SNS.ServiceResource.Subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.Subscription)
+
+Arguments mapping described in
+[ServiceResourceSubscriptionRequestTypeDef](./type_defs.md#serviceresourcesubscriptionrequesttypedef).
 
 Arguments:
 
@@ -163,10 +178,15 @@ Returns [Subscription](#subscription).
 
 ### SNSServiceResource.Topic method
 
+Creates a Topic resource.
+
 Type annotations for `boto3.resource("sns").Topic` method.
 
 Boto3 documentation:
 [SNS.ServiceResource.Topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.Topic)
+
+Arguments mapping described in
+[ServiceResourceTopicRequestTypeDef](./type_defs.md#serviceresourcetopicrequesttypedef).
 
 Arguments:
 
@@ -176,11 +196,18 @@ Returns [Topic](#topic).
 
 ### SNSServiceResource.create_platform_application method
 
+Creates a platform application object for one of the supported push
+notification services, such as APNS and GCM (Firebase Cloud Messaging), to
+which devices and mobile apps may register.
+
 Type annotations for `boto3.resource("sns").create_platform_application`
 method.
 
 Boto3 documentation:
 [SNS.ServiceResource.create_platform_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.create_platform_application)
+
+Arguments mapping described in
+[CreatePlatformApplicationInputServiceResourceTypeDef](./type_defs.md#createplatformapplicationinputserviceresourcetypedef).
 
 Keyword-only arguments:
 
@@ -192,10 +219,15 @@ Returns [PlatformApplication](#platformapplication).
 
 ### SNSServiceResource.create_topic method
 
+Creates a topic to which notifications can be published.
+
 Type annotations for `boto3.resource("sns").create_topic` method.
 
 Boto3 documentation:
 [SNS.ServiceResource.create_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.create_topic)
+
+Arguments mapping described in
+[CreateTopicInputServiceResourceTypeDef](./type_defs.md#createtopicinputserviceresourcetypedef).
 
 Keyword-only arguments:
 
@@ -206,6 +238,8 @@ Keyword-only arguments:
 Returns [Topic](#topic).
 
 ### SNSServiceResource.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("sns").get_available_subresources` method.
 
@@ -263,10 +297,16 @@ Boto3 documentation:
 
 #### PlatformApplication.create_platform_endpoint method
 
+Creates an endpoint for a device and mobile app on one of the supported push
+notification services, such as GCM (Firebase Cloud Messaging) and APNS.
+
 Type annotations for `boto3.resource("sns").create_platform_endpoint` method.
 
 Boto3 documentation:
 [SNS.PlatformApplication.create_platform_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.create_platform_endpoint)
+
+Arguments mapping described in
+[CreatePlatformEndpointInputPlatformApplicationTypeDef](./type_defs.md#createplatformendpointinputplatformapplicationtypedef).
 
 Keyword-only arguments:
 
@@ -278,12 +318,17 @@ Returns [PlatformEndpoint](#platformendpoint).
 
 #### PlatformApplication.delete method
 
+Deletes a platform application object for one of the supported push
+notification services, such as APNS and GCM (Firebase Cloud Messaging).
+
 Type annotations for `boto3.resource("sns").delete` method.
 
 Boto3 documentation:
 [SNS.PlatformApplication.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.delete)
 
 #### PlatformApplication.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("sns").get_available_subresources` method.
 
@@ -294,12 +339,18 @@ Returns `List`\[`str`\].
 
 #### PlatformApplication.load method
 
+Calls :py:meth:`SNS.Client.get_platform_application_attributes` to update the
+attributes of the PlatformApplication resource.
+
 Type annotations for `boto3.resource("sns").load` method.
 
 Boto3 documentation:
 [SNS.PlatformApplication.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.load)
 
 #### PlatformApplication.reload method
+
+Calls :py:meth:`SNS.Client.get_platform_application_attributes` to update the
+attributes of the PlatformApplication resource.
 
 Type annotations for `boto3.resource("sns").reload` method.
 
@@ -308,10 +359,16 @@ Boto3 documentation:
 
 #### PlatformApplication.set_attributes method
 
+Sets the attributes of the platform application object for the supported push
+notification services, such as APNS and GCM (Firebase Cloud Messaging).
+
 Type annotations for `boto3.resource("sns").set_attributes` method.
 
 Boto3 documentation:
 [SNS.PlatformApplication.set_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.set_attributes)
+
+Arguments mapping described in
+[SetPlatformApplicationAttributesInputPlatformApplicationTypeDef](./type_defs.md#setplatformapplicationattributesinputplatformapplicationtypedef).
 
 Keyword-only arguments:
 
@@ -342,12 +399,16 @@ Boto3 documentation:
 
 #### PlatformEndpoint.delete method
 
+Deletes the endpoint for a device and mobile app from Amazon SNS.
+
 Type annotations for `boto3.resource("sns").delete` method.
 
 Boto3 documentation:
 [SNS.PlatformEndpoint.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.delete)
 
 #### PlatformEndpoint.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("sns").get_available_subresources` method.
 
@@ -358,6 +419,9 @@ Returns `List`\[`str`\].
 
 #### PlatformEndpoint.load method
 
+Calls :py:meth:`SNS.Client.get_endpoint_attributes` to update the attributes of
+the PlatformEndpoint resource.
+
 Type annotations for `boto3.resource("sns").load` method.
 
 Boto3 documentation:
@@ -365,10 +429,17 @@ Boto3 documentation:
 
 #### PlatformEndpoint.publish method
 
+Sends a message to an Amazon SNS topic, a text message (SMS message) directly
+to a phone number, or a message to a mobile platform endpoint (when you specify
+the `TargetArn` ).
+
 Type annotations for `boto3.resource("sns").publish` method.
 
 Boto3 documentation:
 [SNS.PlatformEndpoint.publish](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.publish)
+
+Arguments mapping described in
+[PublishInputPlatformEndpointTypeDef](./type_defs.md#publishinputplatformendpointtypedef).
 
 Keyword-only arguments:
 
@@ -382,9 +453,13 @@ Keyword-only arguments:
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`
 
-Returns [PublishResponseTypeDef](./type_defs.md#publishresponsetypedef).
+Returns
+[PublishResponseResponseTypeDef](./type_defs.md#publishresponseresponsetypedef).
 
 #### PlatformEndpoint.reload method
+
+Calls :py:meth:`SNS.Client.get_endpoint_attributes` to update the attributes of
+the PlatformEndpoint resource.
 
 Type annotations for `boto3.resource("sns").reload` method.
 
@@ -393,10 +468,16 @@ Boto3 documentation:
 
 #### PlatformEndpoint.set_attributes method
 
+Sets the attributes for an endpoint for a device on one of the supported push
+notification services, such as GCM (Firebase Cloud Messaging) and APNS.
+
 Type annotations for `boto3.resource("sns").set_attributes` method.
 
 Boto3 documentation:
 [SNS.PlatformEndpoint.set_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.set_attributes)
+
+Arguments mapping described in
+[SetEndpointAttributesInputPlatformEndpointTypeDef](./type_defs.md#setendpointattributesinputplatformendpointtypedef).
 
 Keyword-only arguments:
 
@@ -427,12 +508,16 @@ Boto3 documentation:
 
 #### Subscription.delete method
 
+Deletes a subscription.
+
 Type annotations for `boto3.resource("sns").delete` method.
 
 Boto3 documentation:
 [SNS.Subscription.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.delete)
 
 #### Subscription.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("sns").get_available_subresources` method.
 
@@ -443,12 +528,18 @@ Returns `List`\[`str`\].
 
 #### Subscription.load method
 
+Calls :py:meth:`SNS.Client.get_subscription_attributes` to update the
+attributes of the Subscription resource.
+
 Type annotations for `boto3.resource("sns").load` method.
 
 Boto3 documentation:
 [SNS.Subscription.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.load)
 
 #### Subscription.reload method
+
+Calls :py:meth:`SNS.Client.get_subscription_attributes` to update the
+attributes of the Subscription resource.
 
 Type annotations for `boto3.resource("sns").reload` method.
 
@@ -457,10 +548,16 @@ Boto3 documentation:
 
 #### Subscription.set_attributes method
 
+Allows a subscription owner to set an attribute of the subscription to a new
+value.
+
 Type annotations for `boto3.resource("sns").set_attributes` method.
 
 Boto3 documentation:
 [SNS.Subscription.set_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.set_attributes)
+
+Arguments mapping described in
+[SetSubscriptionAttributesInputSubscriptionTypeDef](./type_defs.md#setsubscriptionattributesinputsubscriptiontypedef).
 
 Keyword-only arguments:
 
@@ -516,10 +613,16 @@ Boto3 documentation:
 
 #### Topic.add_permission method
 
+Adds a statement to a topic's access control policy, granting access for the
+specified AWS accounts to the specified actions.
+
 Type annotations for `boto3.resource("sns").add_permission` method.
 
 Boto3 documentation:
 [SNS.Topic.add_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.add_permission)
+
+Arguments mapping described in
+[AddPermissionInputTopicTypeDef](./type_defs.md#addpermissioninputtopictypedef).
 
 Keyword-only arguments:
 
@@ -529,10 +632,16 @@ Keyword-only arguments:
 
 #### Topic.confirm_subscription method
 
+Verifies an endpoint owner's intent to receive messages by validating the token
+sent to the endpoint by an earlier `Subscribe` action.
+
 Type annotations for `boto3.resource("sns").confirm_subscription` method.
 
 Boto3 documentation:
 [SNS.Topic.confirm_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.confirm_subscription)
+
+Arguments mapping described in
+[ConfirmSubscriptionInputTopicTypeDef](./type_defs.md#confirmsubscriptioninputtopictypedef).
 
 Keyword-only arguments:
 
@@ -543,12 +652,16 @@ Returns [Subscription](#subscription).
 
 #### Topic.delete method
 
+Deletes a topic and all its subscriptions.
+
 Type annotations for `boto3.resource("sns").delete` method.
 
 Boto3 documentation:
 [SNS.Topic.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.delete)
 
 #### Topic.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("sns").get_available_subresources` method.
 
@@ -559,6 +672,9 @@ Returns `List`\[`str`\].
 
 #### Topic.load method
 
+Calls :py:meth:`SNS.Client.get_topic_attributes` to update the attributes of
+the Topic resource.
+
 Type annotations for `boto3.resource("sns").load` method.
 
 Boto3 documentation:
@@ -566,10 +682,17 @@ Boto3 documentation:
 
 #### Topic.publish method
 
+Sends a message to an Amazon SNS topic, a text message (SMS message) directly
+to a phone number, or a message to a mobile platform endpoint (when you specify
+the `TargetArn` ).
+
 Type annotations for `boto3.resource("sns").publish` method.
 
 Boto3 documentation:
 [SNS.Topic.publish](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.publish)
+
+Arguments mapping described in
+[PublishInputTopicTypeDef](./type_defs.md#publishinputtopictypedef).
 
 Keyword-only arguments:
 
@@ -583,9 +706,13 @@ Keyword-only arguments:
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`
 
-Returns [PublishResponseTypeDef](./type_defs.md#publishresponsetypedef).
+Returns
+[PublishResponseResponseTypeDef](./type_defs.md#publishresponseresponsetypedef).
 
 #### Topic.reload method
+
+Calls :py:meth:`SNS.Client.get_topic_attributes` to update the attributes of
+the Topic resource.
 
 Type annotations for `boto3.resource("sns").reload` method.
 
@@ -594,10 +721,15 @@ Boto3 documentation:
 
 #### Topic.remove_permission method
 
+Removes a statement from a topic's access control policy.
+
 Type annotations for `boto3.resource("sns").remove_permission` method.
 
 Boto3 documentation:
 [SNS.Topic.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.remove_permission)
+
+Arguments mapping described in
+[RemovePermissionInputTopicTypeDef](./type_defs.md#removepermissioninputtopictypedef).
 
 Keyword-only arguments:
 
@@ -605,10 +737,15 @@ Keyword-only arguments:
 
 #### Topic.set_attributes method
 
+Allows a topic owner to set an attribute of the topic to a new value.
+
 Type annotations for `boto3.resource("sns").set_attributes` method.
 
 Boto3 documentation:
 [SNS.Topic.set_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.set_attributes)
+
+Arguments mapping described in
+[SetTopicAttributesInputTopicTypeDef](./type_defs.md#settopicattributesinputtopictypedef).
 
 Keyword-only arguments:
 
@@ -617,10 +754,15 @@ Keyword-only arguments:
 
 #### Topic.subscribe method
 
+Subscribes an endpoint to an Amazon SNS topic.
+
 Type annotations for `boto3.resource("sns").subscribe` method.
 
 Boto3 documentation:
 [SNS.Topic.subscribe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.subscribe)
+
+Arguments mapping described in
+[SubscribeInputTopicTypeDef](./type_defs.md#subscribeinputtopictypedef).
 
 Keyword-only arguments:
 

@@ -8,83 +8,196 @@ type annotations stubs module
 [mypy_boto3_ds](https://pypi.org/project/mypy-boto3-ds/).
 
 - [Typed dictionaries for boto3 DirectoryService module](#typed-dictionaries-for-boto3-directoryservice-module)
-  - [AcceptSharedDirectoryResultTypeDef](#acceptshareddirectoryresulttypedef)
+  - [AcceptSharedDirectoryRequestTypeDef](#acceptshareddirectoryrequesttypedef)
+  - [AcceptSharedDirectoryResultResponseTypeDef](#acceptshareddirectoryresultresponsetypedef)
+  - [AddIpRoutesRequestTypeDef](#addiproutesrequesttypedef)
+  - [AddRegionRequestTypeDef](#addregionrequesttypedef)
+  - [AddTagsToResourceRequestTypeDef](#addtagstoresourcerequesttypedef)
   - [AttributeTypeDef](#attributetypedef)
+  - [CancelSchemaExtensionRequestTypeDef](#cancelschemaextensionrequesttypedef)
   - [CertificateInfoTypeDef](#certificateinfotypedef)
   - [CertificateTypeDef](#certificatetypedef)
   - [ClientCertAuthSettingsTypeDef](#clientcertauthsettingstypedef)
   - [ComputerTypeDef](#computertypedef)
   - [ConditionalForwarderTypeDef](#conditionalforwardertypedef)
-  - [ConnectDirectoryResultTypeDef](#connectdirectoryresulttypedef)
-  - [CreateAliasResultTypeDef](#createaliasresulttypedef)
-  - [CreateComputerResultTypeDef](#createcomputerresulttypedef)
-  - [CreateDirectoryResultTypeDef](#createdirectoryresulttypedef)
-  - [CreateMicrosoftADResultTypeDef](#createmicrosoftadresulttypedef)
-  - [CreateSnapshotResultTypeDef](#createsnapshotresulttypedef)
-  - [CreateTrustResultTypeDef](#createtrustresulttypedef)
-  - [DeleteDirectoryResultTypeDef](#deletedirectoryresulttypedef)
-  - [DeleteSnapshotResultTypeDef](#deletesnapshotresulttypedef)
-  - [DeleteTrustResultTypeDef](#deletetrustresulttypedef)
-  - [DescribeCertificateResultTypeDef](#describecertificateresulttypedef)
-  - [DescribeConditionalForwardersResultTypeDef](#describeconditionalforwardersresulttypedef)
-  - [DescribeDirectoriesResultTypeDef](#describedirectoriesresulttypedef)
-  - [DescribeDomainControllersResultTypeDef](#describedomaincontrollersresulttypedef)
-  - [DescribeEventTopicsResultTypeDef](#describeeventtopicsresulttypedef)
-  - [DescribeLDAPSSettingsResultTypeDef](#describeldapssettingsresulttypedef)
-  - [DescribeRegionsResultTypeDef](#describeregionsresulttypedef)
-  - [DescribeSharedDirectoriesResultTypeDef](#describeshareddirectoriesresulttypedef)
-  - [DescribeSnapshotsResultTypeDef](#describesnapshotsresulttypedef)
-  - [DescribeTrustsResultTypeDef](#describetrustsresulttypedef)
+  - [ConnectDirectoryRequestTypeDef](#connectdirectoryrequesttypedef)
+  - [ConnectDirectoryResultResponseTypeDef](#connectdirectoryresultresponsetypedef)
+  - [CreateAliasRequestTypeDef](#createaliasrequesttypedef)
+  - [CreateAliasResultResponseTypeDef](#createaliasresultresponsetypedef)
+  - [CreateComputerRequestTypeDef](#createcomputerrequesttypedef)
+  - [CreateComputerResultResponseTypeDef](#createcomputerresultresponsetypedef)
+  - [CreateConditionalForwarderRequestTypeDef](#createconditionalforwarderrequesttypedef)
+  - [CreateDirectoryRequestTypeDef](#createdirectoryrequesttypedef)
+  - [CreateDirectoryResultResponseTypeDef](#createdirectoryresultresponsetypedef)
+  - [CreateLogSubscriptionRequestTypeDef](#createlogsubscriptionrequesttypedef)
+  - [CreateMicrosoftADRequestTypeDef](#createmicrosoftadrequesttypedef)
+  - [CreateMicrosoftADResultResponseTypeDef](#createmicrosoftadresultresponsetypedef)
+  - [CreateSnapshotRequestTypeDef](#createsnapshotrequesttypedef)
+  - [CreateSnapshotResultResponseTypeDef](#createsnapshotresultresponsetypedef)
+  - [CreateTrustRequestTypeDef](#createtrustrequesttypedef)
+  - [CreateTrustResultResponseTypeDef](#createtrustresultresponsetypedef)
+  - [DeleteConditionalForwarderRequestTypeDef](#deleteconditionalforwarderrequesttypedef)
+  - [DeleteDirectoryRequestTypeDef](#deletedirectoryrequesttypedef)
+  - [DeleteDirectoryResultResponseTypeDef](#deletedirectoryresultresponsetypedef)
+  - [DeleteLogSubscriptionRequestTypeDef](#deletelogsubscriptionrequesttypedef)
+  - [DeleteSnapshotRequestTypeDef](#deletesnapshotrequesttypedef)
+  - [DeleteSnapshotResultResponseTypeDef](#deletesnapshotresultresponsetypedef)
+  - [DeleteTrustRequestTypeDef](#deletetrustrequesttypedef)
+  - [DeleteTrustResultResponseTypeDef](#deletetrustresultresponsetypedef)
+  - [DeregisterCertificateRequestTypeDef](#deregistercertificaterequesttypedef)
+  - [DeregisterEventTopicRequestTypeDef](#deregistereventtopicrequesttypedef)
+  - [DescribeCertificateRequestTypeDef](#describecertificaterequesttypedef)
+  - [DescribeCertificateResultResponseTypeDef](#describecertificateresultresponsetypedef)
+  - [DescribeConditionalForwardersRequestTypeDef](#describeconditionalforwardersrequesttypedef)
+  - [DescribeConditionalForwardersResultResponseTypeDef](#describeconditionalforwardersresultresponsetypedef)
+  - [DescribeDirectoriesRequestTypeDef](#describedirectoriesrequesttypedef)
+  - [DescribeDirectoriesResultResponseTypeDef](#describedirectoriesresultresponsetypedef)
+  - [DescribeDomainControllersRequestTypeDef](#describedomaincontrollersrequesttypedef)
+  - [DescribeDomainControllersResultResponseTypeDef](#describedomaincontrollersresultresponsetypedef)
+  - [DescribeEventTopicsRequestTypeDef](#describeeventtopicsrequesttypedef)
+  - [DescribeEventTopicsResultResponseTypeDef](#describeeventtopicsresultresponsetypedef)
+  - [DescribeLDAPSSettingsRequestTypeDef](#describeldapssettingsrequesttypedef)
+  - [DescribeLDAPSSettingsResultResponseTypeDef](#describeldapssettingsresultresponsetypedef)
+  - [DescribeRegionsRequestTypeDef](#describeregionsrequesttypedef)
+  - [DescribeRegionsResultResponseTypeDef](#describeregionsresultresponsetypedef)
+  - [DescribeSharedDirectoriesRequestTypeDef](#describeshareddirectoriesrequesttypedef)
+  - [DescribeSharedDirectoriesResultResponseTypeDef](#describeshareddirectoriesresultresponsetypedef)
+  - [DescribeSnapshotsRequestTypeDef](#describesnapshotsrequesttypedef)
+  - [DescribeSnapshotsResultResponseTypeDef](#describesnapshotsresultresponsetypedef)
+  - [DescribeTrustsRequestTypeDef](#describetrustsrequesttypedef)
+  - [DescribeTrustsResultResponseTypeDef](#describetrustsresultresponsetypedef)
   - [DirectoryConnectSettingsDescriptionTypeDef](#directoryconnectsettingsdescriptiontypedef)
   - [DirectoryConnectSettingsTypeDef](#directoryconnectsettingstypedef)
   - [DirectoryDescriptionTypeDef](#directorydescriptiontypedef)
   - [DirectoryLimitsTypeDef](#directorylimitstypedef)
   - [DirectoryVpcSettingsDescriptionTypeDef](#directoryvpcsettingsdescriptiontypedef)
   - [DirectoryVpcSettingsTypeDef](#directoryvpcsettingstypedef)
+  - [DisableClientAuthenticationRequestTypeDef](#disableclientauthenticationrequesttypedef)
+  - [DisableLDAPSRequestTypeDef](#disableldapsrequesttypedef)
+  - [DisableRadiusRequestTypeDef](#disableradiusrequesttypedef)
+  - [DisableSsoRequestTypeDef](#disablessorequesttypedef)
   - [DomainControllerTypeDef](#domaincontrollertypedef)
+  - [EnableClientAuthenticationRequestTypeDef](#enableclientauthenticationrequesttypedef)
+  - [EnableLDAPSRequestTypeDef](#enableldapsrequesttypedef)
+  - [EnableRadiusRequestTypeDef](#enableradiusrequesttypedef)
+  - [EnableSsoRequestTypeDef](#enablessorequesttypedef)
   - [EventTopicTypeDef](#eventtopictypedef)
-  - [GetDirectoryLimitsResultTypeDef](#getdirectorylimitsresulttypedef)
-  - [GetSnapshotLimitsResultTypeDef](#getsnapshotlimitsresulttypedef)
+  - [GetDirectoryLimitsResultResponseTypeDef](#getdirectorylimitsresultresponsetypedef)
+  - [GetSnapshotLimitsRequestTypeDef](#getsnapshotlimitsrequesttypedef)
+  - [GetSnapshotLimitsResultResponseTypeDef](#getsnapshotlimitsresultresponsetypedef)
   - [IpRouteInfoTypeDef](#iprouteinfotypedef)
   - [IpRouteTypeDef](#iproutetypedef)
   - [LDAPSSettingInfoTypeDef](#ldapssettinginfotypedef)
-  - [ListCertificatesResultTypeDef](#listcertificatesresulttypedef)
-  - [ListIpRoutesResultTypeDef](#listiproutesresulttypedef)
-  - [ListLogSubscriptionsResultTypeDef](#listlogsubscriptionsresulttypedef)
-  - [ListSchemaExtensionsResultTypeDef](#listschemaextensionsresulttypedef)
-  - [ListTagsForResourceResultTypeDef](#listtagsforresourceresulttypedef)
+  - [ListCertificatesRequestTypeDef](#listcertificatesrequesttypedef)
+  - [ListCertificatesResultResponseTypeDef](#listcertificatesresultresponsetypedef)
+  - [ListIpRoutesRequestTypeDef](#listiproutesrequesttypedef)
+  - [ListIpRoutesResultResponseTypeDef](#listiproutesresultresponsetypedef)
+  - [ListLogSubscriptionsRequestTypeDef](#listlogsubscriptionsrequesttypedef)
+  - [ListLogSubscriptionsResultResponseTypeDef](#listlogsubscriptionsresultresponsetypedef)
+  - [ListSchemaExtensionsRequestTypeDef](#listschemaextensionsrequesttypedef)
+  - [ListSchemaExtensionsResultResponseTypeDef](#listschemaextensionsresultresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResultResponseTypeDef](#listtagsforresourceresultresponsetypedef)
   - [LogSubscriptionTypeDef](#logsubscriptiontypedef)
   - [OwnerDirectoryDescriptionTypeDef](#ownerdirectorydescriptiontypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [RadiusSettingsTypeDef](#radiussettingstypedef)
   - [RegionDescriptionTypeDef](#regiondescriptiontypedef)
   - [RegionsInfoTypeDef](#regionsinfotypedef)
-  - [RegisterCertificateResultTypeDef](#registercertificateresulttypedef)
-  - [RejectSharedDirectoryResultTypeDef](#rejectshareddirectoryresulttypedef)
+  - [RegisterCertificateRequestTypeDef](#registercertificaterequesttypedef)
+  - [RegisterCertificateResultResponseTypeDef](#registercertificateresultresponsetypedef)
+  - [RegisterEventTopicRequestTypeDef](#registereventtopicrequesttypedef)
+  - [RejectSharedDirectoryRequestTypeDef](#rejectshareddirectoryrequesttypedef)
+  - [RejectSharedDirectoryResultResponseTypeDef](#rejectshareddirectoryresultresponsetypedef)
+  - [RemoveIpRoutesRequestTypeDef](#removeiproutesrequesttypedef)
+  - [RemoveRegionRequestTypeDef](#removeregionrequesttypedef)
+  - [RemoveTagsFromResourceRequestTypeDef](#removetagsfromresourcerequesttypedef)
+  - [ResetUserPasswordRequestTypeDef](#resetuserpasswordrequesttypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [RestoreFromSnapshotRequestTypeDef](#restorefromsnapshotrequesttypedef)
   - [SchemaExtensionInfoTypeDef](#schemaextensioninfotypedef)
-  - [ShareDirectoryResultTypeDef](#sharedirectoryresulttypedef)
+  - [ShareDirectoryRequestTypeDef](#sharedirectoryrequesttypedef)
+  - [ShareDirectoryResultResponseTypeDef](#sharedirectoryresultresponsetypedef)
   - [ShareTargetTypeDef](#sharetargettypedef)
   - [SharedDirectoryTypeDef](#shareddirectorytypedef)
   - [SnapshotLimitsTypeDef](#snapshotlimitstypedef)
   - [SnapshotTypeDef](#snapshottypedef)
-  - [StartSchemaExtensionResultTypeDef](#startschemaextensionresulttypedef)
+  - [StartSchemaExtensionRequestTypeDef](#startschemaextensionrequesttypedef)
+  - [StartSchemaExtensionResultResponseTypeDef](#startschemaextensionresultresponsetypedef)
   - [TagTypeDef](#tagtypedef)
   - [TrustTypeDef](#trusttypedef)
-  - [UnshareDirectoryResultTypeDef](#unsharedirectoryresulttypedef)
+  - [UnshareDirectoryRequestTypeDef](#unsharedirectoryrequesttypedef)
+  - [UnshareDirectoryResultResponseTypeDef](#unsharedirectoryresultresponsetypedef)
   - [UnshareTargetTypeDef](#unsharetargettypedef)
-  - [UpdateTrustResultTypeDef](#updatetrustresulttypedef)
-  - [VerifyTrustResultTypeDef](#verifytrustresulttypedef)
+  - [UpdateConditionalForwarderRequestTypeDef](#updateconditionalforwarderrequesttypedef)
+  - [UpdateNumberOfDomainControllersRequestTypeDef](#updatenumberofdomaincontrollersrequesttypedef)
+  - [UpdateRadiusRequestTypeDef](#updateradiusrequesttypedef)
+  - [UpdateTrustRequestTypeDef](#updatetrustrequesttypedef)
+  - [UpdateTrustResultResponseTypeDef](#updatetrustresultresponsetypedef)
+  - [VerifyTrustRequestTypeDef](#verifytrustrequesttypedef)
+  - [VerifyTrustResultResponseTypeDef](#verifytrustresultresponsetypedef)
 
-## AcceptSharedDirectoryResultTypeDef
+## AcceptSharedDirectoryRequestTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import AcceptSharedDirectoryResultTypeDef
+from mypy_boto3_ds.type_defs import AcceptSharedDirectoryRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `SharedDirectoryId`: `str`
+
+## AcceptSharedDirectoryResultResponseTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import AcceptSharedDirectoryResultResponseTypeDef
+```
+
+Required fields:
 
 - `SharedDirectory`:
   [SharedDirectoryTypeDef](./type_defs.md#shareddirectorytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## AddIpRoutesRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import AddIpRoutesRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+- `IpRoutes`: `List`\[[IpRouteTypeDef](./type_defs.md#iproutetypedef)\]
+
+Optional fields:
+
+- `UpdateSecurityGroupForDirectoryControllers`: `bool`
+
+## AddRegionRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import AddRegionRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+- `RegionName`: `str`
+- `VPCSettings`:
+  [DirectoryVpcSettingsTypeDef](./type_defs.md#directoryvpcsettingstypedef)
+
+## AddTagsToResourceRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import AddTagsToResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceId`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## AttributeTypeDef
 
@@ -96,6 +209,17 @@ Optional fields:
 
 - `Name`: `str`
 - `Value`: `str`
+
+## CancelSchemaExtensionRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import CancelSchemaExtensionRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+- `SchemaExtensionId`: `str`
 
 ## CertificateInfoTypeDef
 
@@ -165,220 +289,620 @@ Optional fields:
 - `ReplicationScope`: `Literal['Domain']` (see
   [ReplicationScopeType](./literals.md#replicationscopetype))
 
-## ConnectDirectoryResultTypeDef
+## ConnectDirectoryRequestTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import ConnectDirectoryResultTypeDef
+from mypy_boto3_ds.type_defs import ConnectDirectoryRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+- `Password`: `str`
+- `Size`: [DirectorySizeType](./literals.md#directorysizetype)
+- `ConnectSettings`:
+  [DirectoryConnectSettingsTypeDef](./type_defs.md#directoryconnectsettingstypedef)
+
 Optional fields:
+
+- `ShortName`: `str`
+- `Description`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## ConnectDirectoryResultResponseTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import ConnectDirectoryResultResponseTypeDef
+```
+
+Required fields:
 
 - `DirectoryId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateAliasResultTypeDef
+## CreateAliasRequestTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import CreateAliasResultTypeDef
+from mypy_boto3_ds.type_defs import CreateAliasRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `DirectoryId`: `str`
 - `Alias`: `str`
 
-## CreateComputerResultTypeDef
+## CreateAliasResultResponseTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import CreateComputerResultTypeDef
+from mypy_boto3_ds.type_defs import CreateAliasResultResponseTypeDef
 ```
 
+Required fields:
+
+- `DirectoryId`: `str`
+- `Alias`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateComputerRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import CreateComputerRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+- `ComputerName`: `str`
+- `Password`: `str`
+
 Optional fields:
+
+- `OrganizationalUnitDistinguishedName`: `str`
+- `ComputerAttributes`:
+  `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
+
+## CreateComputerResultResponseTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import CreateComputerResultResponseTypeDef
+```
+
+Required fields:
 
 - `Computer`: [ComputerTypeDef](./type_defs.md#computertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDirectoryResultTypeDef
+## CreateConditionalForwarderRequestTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import CreateDirectoryResultTypeDef
+from mypy_boto3_ds.type_defs import CreateConditionalForwarderRequestTypeDef
 ```
 
+Required fields:
+
+- `DirectoryId`: `str`
+- `RemoteDomainName`: `str`
+- `DnsIpAddrs`: `List`\[`str`\]
+
+## CreateDirectoryRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import CreateDirectoryRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Password`: `str`
+- `Size`: [DirectorySizeType](./literals.md#directorysizetype)
+
 Optional fields:
+
+- `ShortName`: `str`
+- `Description`: `str`
+- `VpcSettings`:
+  [DirectoryVpcSettingsTypeDef](./type_defs.md#directoryvpcsettingstypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateDirectoryResultResponseTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import CreateDirectoryResultResponseTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateLogSubscriptionRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import CreateLogSubscriptionRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+- `LogGroupName`: `str`
+
+## CreateMicrosoftADRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import CreateMicrosoftADRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Password`: `str`
+- `VpcSettings`:
+  [DirectoryVpcSettingsTypeDef](./type_defs.md#directoryvpcsettingstypedef)
+
+Optional fields:
+
+- `ShortName`: `str`
+- `Description`: `str`
+- `Edition`: [DirectoryEditionType](./literals.md#directoryeditiontype)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateMicrosoftADResultResponseTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import CreateMicrosoftADResultResponseTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateSnapshotRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import CreateSnapshotRequestTypeDef
+```
+
+Required fields:
 
 - `DirectoryId`: `str`
 
-## CreateMicrosoftADResultTypeDef
+Optional fields:
+
+- `Name`: `str`
+
+## CreateSnapshotResultResponseTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import CreateMicrosoftADResultTypeDef
+from mypy_boto3_ds.type_defs import CreateSnapshotResultResponseTypeDef
 ```
 
+Required fields:
+
+- `SnapshotId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateTrustRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import CreateTrustRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+- `RemoteDomainName`: `str`
+- `TrustPassword`: `str`
+- `TrustDirection`: [TrustDirectionType](./literals.md#trustdirectiontype)
+
 Optional fields:
+
+- `TrustType`: [TrustTypeType](./literals.md#trusttypetype)
+- `ConditionalForwarderIpAddrs`: `List`\[`str`\]
+- `SelectiveAuth`: [SelectiveAuthType](./literals.md#selectiveauthtype)
+
+## CreateTrustResultResponseTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import CreateTrustResultResponseTypeDef
+```
+
+Required fields:
+
+- `TrustId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteConditionalForwarderRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import DeleteConditionalForwarderRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+- `RemoteDomainName`: `str`
+
+## DeleteDirectoryRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import DeleteDirectoryRequestTypeDef
+```
+
+Required fields:
 
 - `DirectoryId`: `str`
 
-## CreateSnapshotResultTypeDef
+## DeleteDirectoryResultResponseTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import CreateSnapshotResultTypeDef
+from mypy_boto3_ds.type_defs import DeleteDirectoryResultResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DirectoryId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteLogSubscriptionRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import DeleteLogSubscriptionRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+
+## DeleteSnapshotRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import DeleteSnapshotRequestTypeDef
+```
+
+Required fields:
 
 - `SnapshotId`: `str`
 
-## CreateTrustResultTypeDef
+## DeleteSnapshotResultResponseTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import CreateTrustResultTypeDef
+from mypy_boto3_ds.type_defs import DeleteSnapshotResultResponseTypeDef
 ```
 
-Optional fields:
-
-- `TrustId`: `str`
-
-## DeleteDirectoryResultTypeDef
-
-```python
-from mypy_boto3_ds.type_defs import DeleteDirectoryResultTypeDef
-```
-
-Optional fields:
-
-- `DirectoryId`: `str`
-
-## DeleteSnapshotResultTypeDef
-
-```python
-from mypy_boto3_ds.type_defs import DeleteSnapshotResultTypeDef
-```
-
-Optional fields:
+Required fields:
 
 - `SnapshotId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteTrustResultTypeDef
+## DeleteTrustRequestTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import DeleteTrustResultTypeDef
+from mypy_boto3_ds.type_defs import DeleteTrustRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `TrustId`: `str`
 
-## DescribeCertificateResultTypeDef
+Optional fields:
+
+- `DeleteAssociatedConditionalForwarder`: `bool`
+
+## DeleteTrustResultResponseTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import DescribeCertificateResultTypeDef
+from mypy_boto3_ds.type_defs import DeleteTrustResultResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `TrustId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeregisterCertificateRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import DeregisterCertificateRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+- `CertificateId`: `str`
+
+## DeregisterEventTopicRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import DeregisterEventTopicRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+- `TopicName`: `str`
+
+## DescribeCertificateRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import DescribeCertificateRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+- `CertificateId`: `str`
+
+## DescribeCertificateResultResponseTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import DescribeCertificateResultResponseTypeDef
+```
+
+Required fields:
 
 - `Certificate`: [CertificateTypeDef](./type_defs.md#certificatetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeConditionalForwardersResultTypeDef
+## DescribeConditionalForwardersRequestTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import DescribeConditionalForwardersResultTypeDef
+from mypy_boto3_ds.type_defs import DescribeConditionalForwardersRequestTypeDef
 ```
 
+Required fields:
+
+- `DirectoryId`: `str`
+
 Optional fields:
+
+- `RemoteDomainNames`: `List`\[`str`\]
+
+## DescribeConditionalForwardersResultResponseTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import DescribeConditionalForwardersResultResponseTypeDef
+```
+
+Required fields:
 
 - `ConditionalForwarders`:
   `List`\[[ConditionalForwarderTypeDef](./type_defs.md#conditionalforwardertypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDirectoriesResultTypeDef
+## DescribeDirectoriesRequestTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import DescribeDirectoriesResultTypeDef
+from mypy_boto3_ds.type_defs import DescribeDirectoriesRequestTypeDef
 ```
 
 Optional fields:
+
+- `DirectoryIds`: `List`\[`str`\]
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## DescribeDirectoriesResultResponseTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import DescribeDirectoriesResultResponseTypeDef
+```
+
+Required fields:
 
 - `DirectoryDescriptions`:
   `List`\[[DirectoryDescriptionTypeDef](./type_defs.md#directorydescriptiontypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDomainControllersResultTypeDef
+## DescribeDomainControllersRequestTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import DescribeDomainControllersResultTypeDef
+from mypy_boto3_ds.type_defs import DescribeDomainControllersRequestTypeDef
 ```
 
+Required fields:
+
+- `DirectoryId`: `str`
+
 Optional fields:
+
+- `DomainControllerIds`: `List`\[`str`\]
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## DescribeDomainControllersResultResponseTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import DescribeDomainControllersResultResponseTypeDef
+```
+
+Required fields:
 
 - `DomainControllers`:
   `List`\[[DomainControllerTypeDef](./type_defs.md#domaincontrollertypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEventTopicsResultTypeDef
+## DescribeEventTopicsRequestTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import DescribeEventTopicsResultTypeDef
+from mypy_boto3_ds.type_defs import DescribeEventTopicsRequestTypeDef
 ```
 
 Optional fields:
+
+- `DirectoryId`: `str`
+- `TopicNames`: `List`\[`str`\]
+
+## DescribeEventTopicsResultResponseTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import DescribeEventTopicsResultResponseTypeDef
+```
+
+Required fields:
 
 - `EventTopics`:
   `List`\[[EventTopicTypeDef](./type_defs.md#eventtopictypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLDAPSSettingsResultTypeDef
+## DescribeLDAPSSettingsRequestTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import DescribeLDAPSSettingsResultTypeDef
+from mypy_boto3_ds.type_defs import DescribeLDAPSSettingsRequestTypeDef
 ```
 
+Required fields:
+
+- `DirectoryId`: `str`
+
 Optional fields:
+
+- `Type`: `Literal['Client']` (see
+  [LDAPSTypeType](./literals.md#ldapstypetype))
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## DescribeLDAPSSettingsResultResponseTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import DescribeLDAPSSettingsResultResponseTypeDef
+```
+
+Required fields:
 
 - `LDAPSSettingsInfo`:
   `List`\[[LDAPSSettingInfoTypeDef](./type_defs.md#ldapssettinginfotypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeRegionsResultTypeDef
+## DescribeRegionsRequestTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import DescribeRegionsResultTypeDef
+from mypy_boto3_ds.type_defs import DescribeRegionsRequestTypeDef
 ```
 
+Required fields:
+
+- `DirectoryId`: `str`
+
 Optional fields:
+
+- `RegionName`: `str`
+- `NextToken`: `str`
+
+## DescribeRegionsResultResponseTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import DescribeRegionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `RegionsDescription`:
   `List`\[[RegionDescriptionTypeDef](./type_defs.md#regiondescriptiontypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSharedDirectoriesResultTypeDef
+## DescribeSharedDirectoriesRequestTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import DescribeSharedDirectoriesResultTypeDef
+from mypy_boto3_ds.type_defs import DescribeSharedDirectoriesRequestTypeDef
 ```
 
+Required fields:
+
+- `OwnerDirectoryId`: `str`
+
 Optional fields:
+
+- `SharedDirectoryIds`: `List`\[`str`\]
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## DescribeSharedDirectoriesResultResponseTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import DescribeSharedDirectoriesResultResponseTypeDef
+```
+
+Required fields:
 
 - `SharedDirectories`:
   `List`\[[SharedDirectoryTypeDef](./type_defs.md#shareddirectorytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSnapshotsResultTypeDef
+## DescribeSnapshotsRequestTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import DescribeSnapshotsResultTypeDef
+from mypy_boto3_ds.type_defs import DescribeSnapshotsRequestTypeDef
 ```
 
 Optional fields:
+
+- `DirectoryId`: `str`
+- `SnapshotIds`: `List`\[`str`\]
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## DescribeSnapshotsResultResponseTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import DescribeSnapshotsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Snapshots`: `List`\[[SnapshotTypeDef](./type_defs.md#snapshottypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTrustsResultTypeDef
+## DescribeTrustsRequestTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import DescribeTrustsResultTypeDef
+from mypy_boto3_ds.type_defs import DescribeTrustsRequestTypeDef
 ```
 
 Optional fields:
 
+- `DirectoryId`: `str`
+- `TrustIds`: `List`\[`str`\]
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## DescribeTrustsResultResponseTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import DescribeTrustsResultResponseTypeDef
+```
+
+Required fields:
+
 - `Trusts`: `List`\[[TrustTypeDef](./type_defs.md#trusttypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DirectoryConnectSettingsDescriptionTypeDef
 
@@ -488,6 +1012,55 @@ Required fields:
 - `VpcId`: `str`
 - `SubnetIds`: `List`\[`str`\]
 
+## DisableClientAuthenticationRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import DisableClientAuthenticationRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+- `Type`: `Literal['SmartCard']` (see
+  [ClientAuthenticationTypeType](./literals.md#clientauthenticationtypetype))
+
+## DisableLDAPSRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import DisableLDAPSRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+- `Type`: `Literal['Client']` (see
+  [LDAPSTypeType](./literals.md#ldapstypetype))
+
+## DisableRadiusRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import DisableRadiusRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+
+## DisableSsoRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import DisableSsoRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+
+Optional fields:
+
+- `UserName`: `str`
+- `Password`: `str`
+
 ## DomainControllerTypeDef
 
 ```python
@@ -508,6 +1081,57 @@ Optional fields:
 - `LaunchTime`: `datetime`
 - `StatusLastUpdatedDateTime`: `datetime`
 
+## EnableClientAuthenticationRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import EnableClientAuthenticationRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+- `Type`: `Literal['SmartCard']` (see
+  [ClientAuthenticationTypeType](./literals.md#clientauthenticationtypetype))
+
+## EnableLDAPSRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import EnableLDAPSRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+- `Type`: `Literal['Client']` (see
+  [LDAPSTypeType](./literals.md#ldapstypetype))
+
+## EnableRadiusRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import EnableRadiusRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+- `RadiusSettings`:
+  [RadiusSettingsTypeDef](./type_defs.md#radiussettingstypedef)
+
+## EnableSsoRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import EnableSsoRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+
+Optional fields:
+
+- `UserName`: `str`
+- `Password`: `str`
+
 ## EventTopicTypeDef
 
 ```python
@@ -522,27 +1146,41 @@ Optional fields:
 - `CreatedDateTime`: `datetime`
 - `Status`: [TopicStatusType](./literals.md#topicstatustype)
 
-## GetDirectoryLimitsResultTypeDef
+## GetDirectoryLimitsResultResponseTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import GetDirectoryLimitsResultTypeDef
+from mypy_boto3_ds.type_defs import GetDirectoryLimitsResultResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `DirectoryLimits`:
   [DirectoryLimitsTypeDef](./type_defs.md#directorylimitstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSnapshotLimitsResultTypeDef
+## GetSnapshotLimitsRequestTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import GetSnapshotLimitsResultTypeDef
+from mypy_boto3_ds.type_defs import GetSnapshotLimitsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DirectoryId`: `str`
+
+## GetSnapshotLimitsResultResponseTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import GetSnapshotLimitsResultResponseTypeDef
+```
+
+Required fields:
 
 - `SnapshotLimits`:
   [SnapshotLimitsTypeDef](./type_defs.md#snapshotlimitstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## IpRouteInfoTypeDef
 
@@ -583,64 +1221,146 @@ Optional fields:
 - `LDAPSStatusReason`: `str`
 - `LastUpdatedDateTime`: `datetime`
 
-## ListCertificatesResultTypeDef
+## ListCertificatesRequestTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import ListCertificatesResultTypeDef
+from mypy_boto3_ds.type_defs import ListCertificatesRequestTypeDef
 ```
 
+Required fields:
+
+- `DirectoryId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## ListCertificatesResultResponseTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import ListCertificatesResultResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `CertificatesInfo`:
   `List`\[[CertificateInfoTypeDef](./type_defs.md#certificateinfotypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListIpRoutesResultTypeDef
+## ListIpRoutesRequestTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import ListIpRoutesResultTypeDef
+from mypy_boto3_ds.type_defs import ListIpRoutesRequestTypeDef
 ```
 
+Required fields:
+
+- `DirectoryId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## ListIpRoutesResultResponseTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import ListIpRoutesResultResponseTypeDef
+```
+
+Required fields:
 
 - `IpRoutesInfo`:
   `List`\[[IpRouteInfoTypeDef](./type_defs.md#iprouteinfotypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListLogSubscriptionsResultTypeDef
+## ListLogSubscriptionsRequestTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import ListLogSubscriptionsResultTypeDef
+from mypy_boto3_ds.type_defs import ListLogSubscriptionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `DirectoryId`: `str`
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## ListLogSubscriptionsResultResponseTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import ListLogSubscriptionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `LogSubscriptions`:
   `List`\[[LogSubscriptionTypeDef](./type_defs.md#logsubscriptiontypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSchemaExtensionsResultTypeDef
+## ListSchemaExtensionsRequestTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import ListSchemaExtensionsResultTypeDef
+from mypy_boto3_ds.type_defs import ListSchemaExtensionsRequestTypeDef
 ```
 
+Required fields:
+
+- `DirectoryId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## ListSchemaExtensionsResultResponseTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import ListSchemaExtensionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `SchemaExtensionsInfo`:
   `List`\[[SchemaExtensionInfoTypeDef](./type_defs.md#schemaextensioninfotypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResultTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import ListTagsForResourceResultTypeDef
+from mypy_boto3_ds.type_defs import ListTagsForResourceRequestTypeDef
 ```
+
+Required fields:
+
+- `ResourceId`: `str`
 
 Optional fields:
 
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## ListTagsForResourceResultResponseTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import ListTagsForResourceResultResponseTypeDef
+```
+
+Required fields:
+
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LogSubscriptionTypeDef
 
@@ -731,25 +1451,135 @@ Optional fields:
 - `PrimaryRegion`: `str`
 - `AdditionalRegions`: `List`\[`str`\]
 
-## RegisterCertificateResultTypeDef
+## RegisterCertificateRequestTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import RegisterCertificateResultTypeDef
+from mypy_boto3_ds.type_defs import RegisterCertificateRequestTypeDef
 ```
 
+Required fields:
+
+- `DirectoryId`: `str`
+- `CertificateData`: `str`
+
 Optional fields:
+
+- `Type`: [CertificateTypeType](./literals.md#certificatetypetype)
+- `ClientCertAuthSettings`:
+  [ClientCertAuthSettingsTypeDef](./type_defs.md#clientcertauthsettingstypedef)
+
+## RegisterCertificateResultResponseTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import RegisterCertificateResultResponseTypeDef
+```
+
+Required fields:
 
 - `CertificateId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RejectSharedDirectoryResultTypeDef
+## RegisterEventTopicRequestTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import RejectSharedDirectoryResultTypeDef
+from mypy_boto3_ds.type_defs import RegisterEventTopicRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DirectoryId`: `str`
+- `TopicName`: `str`
+
+## RejectSharedDirectoryRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import RejectSharedDirectoryRequestTypeDef
+```
+
+Required fields:
 
 - `SharedDirectoryId`: `str`
+
+## RejectSharedDirectoryResultResponseTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import RejectSharedDirectoryResultResponseTypeDef
+```
+
+Required fields:
+
+- `SharedDirectoryId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## RemoveIpRoutesRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import RemoveIpRoutesRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+- `CidrIps`: `List`\[`str`\]
+
+## RemoveRegionRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import RemoveRegionRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+
+## RemoveTagsFromResourceRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import RemoveTagsFromResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceId`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## ResetUserPasswordRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import ResetUserPasswordRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+- `UserName`: `str`
+- `NewPassword`: `str`
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## RestoreFromSnapshotRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import RestoreFromSnapshotRequestTypeDef
+```
+
+Required fields:
+
+- `SnapshotId`: `str`
 
 ## SchemaExtensionInfoTypeDef
 
@@ -768,15 +1598,33 @@ Optional fields:
 - `StartDateTime`: `datetime`
 - `EndDateTime`: `datetime`
 
-## ShareDirectoryResultTypeDef
+## ShareDirectoryRequestTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import ShareDirectoryResultTypeDef
+from mypy_boto3_ds.type_defs import ShareDirectoryRequestTypeDef
 ```
+
+Required fields:
+
+- `DirectoryId`: `str`
+- `ShareTarget`: [ShareTargetTypeDef](./type_defs.md#sharetargettypedef)
+- `ShareMethod`: [ShareMethodType](./literals.md#sharemethodtype)
 
 Optional fields:
 
+- `ShareNotes`: `str`
+
+## ShareDirectoryResultResponseTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import ShareDirectoryResultResponseTypeDef
+```
+
+Required fields:
+
 - `SharedDirectoryId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ShareTargetTypeDef
 
@@ -835,15 +1683,30 @@ Optional fields:
 - `Status`: [SnapshotStatusType](./literals.md#snapshotstatustype)
 - `StartTime`: `datetime`
 
-## StartSchemaExtensionResultTypeDef
+## StartSchemaExtensionRequestTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import StartSchemaExtensionResultTypeDef
+from mypy_boto3_ds.type_defs import StartSchemaExtensionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DirectoryId`: `str`
+- `CreateSnapshotBeforeSchemaExtension`: `bool`
+- `LdifContent`: `str`
+- `Description`: `str`
+
+## StartSchemaExtensionResultResponseTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import StartSchemaExtensionResultResponseTypeDef
+```
+
+Required fields:
 
 - `SchemaExtensionId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## TagTypeDef
 
@@ -876,15 +1739,28 @@ Optional fields:
 - `TrustStateReason`: `str`
 - `SelectiveAuth`: [SelectiveAuthType](./literals.md#selectiveauthtype)
 
-## UnshareDirectoryResultTypeDef
+## UnshareDirectoryRequestTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import UnshareDirectoryResultTypeDef
+from mypy_boto3_ds.type_defs import UnshareDirectoryRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DirectoryId`: `str`
+- `UnshareTarget`: [UnshareTargetTypeDef](./type_defs.md#unsharetargettypedef)
+
+## UnshareDirectoryResultResponseTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import UnshareDirectoryResultResponseTypeDef
+```
+
+Required fields:
 
 - `SharedDirectoryId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UnshareTargetTypeDef
 
@@ -898,23 +1774,86 @@ Required fields:
 - `Type`: `Literal['ACCOUNT']` (see
   [TargetTypeType](./literals.md#targettypetype))
 
-## UpdateTrustResultTypeDef
+## UpdateConditionalForwarderRequestTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import UpdateTrustResultTypeDef
+from mypy_boto3_ds.type_defs import UpdateConditionalForwarderRequestTypeDef
 ```
 
+Required fields:
+
+- `DirectoryId`: `str`
+- `RemoteDomainName`: `str`
+- `DnsIpAddrs`: `List`\[`str`\]
+
+## UpdateNumberOfDomainControllersRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import UpdateNumberOfDomainControllersRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+- `DesiredNumber`: `int`
+
+## UpdateRadiusRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import UpdateRadiusRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+- `RadiusSettings`:
+  [RadiusSettingsTypeDef](./type_defs.md#radiussettingstypedef)
+
+## UpdateTrustRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import UpdateTrustRequestTypeDef
+```
+
+Required fields:
+
+- `TrustId`: `str`
+
 Optional fields:
+
+- `SelectiveAuth`: [SelectiveAuthType](./literals.md#selectiveauthtype)
+
+## UpdateTrustResultResponseTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import UpdateTrustResultResponseTypeDef
+```
+
+Required fields:
 
 - `RequestId`: `str`
 - `TrustId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## VerifyTrustResultTypeDef
+## VerifyTrustRequestTypeDef
 
 ```python
-from mypy_boto3_ds.type_defs import VerifyTrustResultTypeDef
+from mypy_boto3_ds.type_defs import VerifyTrustRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `TrustId`: `str`
+
+## VerifyTrustResultResponseTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import VerifyTrustResultResponseTypeDef
+```
+
+Required fields:
+
+- `TrustId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

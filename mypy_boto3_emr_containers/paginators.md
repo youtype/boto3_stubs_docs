@@ -32,15 +32,15 @@ Boto3 documentation:
 Arguments for `ListJobRunsPaginator.paginate` method:
 
 - `virtualClusterId`: `str` *(required)*
-- `createdBefore`: `datetime`
-- `createdAfter`: `datetime`
+- `createdBefore`: `Union`\[`datetime`, `str`\]
+- `createdAfter`: `Union`\[`datetime`, `str`\]
 - `name`: `str`
 - `states`: `List`\[[JobRunStateType](./literals.md#jobrunstatetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobRunsPaginator.paginate` returns
-`Iterator`\[[ListJobRunsResponseTypeDef](./type_defs.md#listjobrunsresponsetypedef)\].
+`Iterator`\[[ListJobRunsResponseResponseTypeDef](./type_defs.md#listjobrunsresponseresponsetypedef)\].
 
 ## ListManagedEndpointsPaginator
 
@@ -62,15 +62,15 @@ Boto3 documentation:
 Arguments for `ListManagedEndpointsPaginator.paginate` method:
 
 - `virtualClusterId`: `str` *(required)*
-- `createdBefore`: `datetime`
-- `createdAfter`: `datetime`
+- `createdBefore`: `Union`\[`datetime`, `str`\]
+- `createdAfter`: `Union`\[`datetime`, `str`\]
 - `types`: `List`\[`str`\]
 - `states`: `List`\[[EndpointStateType](./literals.md#endpointstatetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListManagedEndpointsPaginator.paginate` returns
-`Iterator`\[[ListManagedEndpointsResponseTypeDef](./type_defs.md#listmanagedendpointsresponsetypedef)\].
+`Iterator`\[[ListManagedEndpointsResponseResponseTypeDef](./type_defs.md#listmanagedendpointsresponseresponsetypedef)\].
 
 ## ListVirtualClustersPaginator
 
@@ -94,12 +94,12 @@ Arguments for `ListVirtualClustersPaginator.paginate` method:
 - `containerProviderId`: `str`
 - `containerProviderType`: `Literal['EKS']` (see
   [ContainerProviderTypeType](./literals.md#containerprovidertypetype))
-- `createdAfter`: `datetime`
-- `createdBefore`: `datetime`
+- `createdAfter`: `Union`\[`datetime`, `str`\]
+- `createdBefore`: `Union`\[`datetime`, `str`\]
 - `states`:
   `List`\[[VirtualClusterStateType](./literals.md#virtualclusterstatetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListVirtualClustersPaginator.paginate` returns
-`Iterator`\[[ListVirtualClustersResponseTypeDef](./type_defs.md#listvirtualclustersresponsetypedef)\].
+`Iterator`\[[ListVirtualClustersResponseResponseTypeDef](./type_defs.md#listvirtualclustersresponseresponsetypedef)\].

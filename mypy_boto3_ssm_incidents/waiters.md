@@ -26,7 +26,7 @@ def get_wait_for_replication_set_active_waiter() -> WaitForReplicationSetActiveW
 ```
 
 Boto3 documentation:
-[SSMIncidents.Waiter.wait_for_replication_set_active](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Waiter.wait_for_replication_set_active)
+[SSMIncidents.Waiter.wait_for_replication_set_active](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Waiter.WaitForReplicationSetActive)
 
 Arguments for `WaitForReplicationSetActiveWaiter.wait` method:
 
@@ -48,7 +48,7 @@ def get_wait_for_replication_set_deleted_waiter() -> WaitForReplicationSetDelete
 ```
 
 Boto3 documentation:
-[SSMIncidents.Waiter.wait_for_replication_set_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Waiter.wait_for_replication_set_deleted)
+[SSMIncidents.Waiter.wait_for_replication_set_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Waiter.WaitForReplicationSetDeleted)
 
 Arguments for `WaitForReplicationSetDeletedWaiter.wait` method:
 

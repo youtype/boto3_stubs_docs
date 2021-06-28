@@ -13,10 +13,12 @@ type annotations stubs module
   - [ActionTargetTypeDef](#actiontargettypedef)
   - [ActionTypeDef](#actiontypedef)
   - [CreateExperimentTemplateActionInputTypeDef](#createexperimenttemplateactioninputtypedef)
-  - [CreateExperimentTemplateResponseTypeDef](#createexperimenttemplateresponsetypedef)
+  - [CreateExperimentTemplateRequestTypeDef](#createexperimenttemplaterequesttypedef)
+  - [CreateExperimentTemplateResponseResponseTypeDef](#createexperimenttemplateresponseresponsetypedef)
   - [CreateExperimentTemplateStopConditionInputTypeDef](#createexperimenttemplatestopconditioninputtypedef)
   - [CreateExperimentTemplateTargetInputTypeDef](#createexperimenttemplatetargetinputtypedef)
-  - [DeleteExperimentTemplateResponseTypeDef](#deleteexperimenttemplateresponsetypedef)
+  - [DeleteExperimentTemplateRequestTypeDef](#deleteexperimenttemplaterequesttypedef)
+  - [DeleteExperimentTemplateResponseResponseTypeDef](#deleteexperimenttemplateresponseresponsetypedef)
   - [ExperimentActionStateTypeDef](#experimentactionstatetypedef)
   - [ExperimentActionTypeDef](#experimentactiontypedef)
   - [ExperimentStateTypeDef](#experimentstatetypedef)
@@ -32,17 +34,30 @@ type annotations stubs module
   - [ExperimentTemplateTargetTypeDef](#experimenttemplatetargettypedef)
   - [ExperimentTemplateTypeDef](#experimenttemplatetypedef)
   - [ExperimentTypeDef](#experimenttypedef)
-  - [GetActionResponseTypeDef](#getactionresponsetypedef)
-  - [GetExperimentResponseTypeDef](#getexperimentresponsetypedef)
-  - [GetExperimentTemplateResponseTypeDef](#getexperimenttemplateresponsetypedef)
-  - [ListActionsResponseTypeDef](#listactionsresponsetypedef)
-  - [ListExperimentTemplatesResponseTypeDef](#listexperimenttemplatesresponsetypedef)
-  - [ListExperimentsResponseTypeDef](#listexperimentsresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [StartExperimentResponseTypeDef](#startexperimentresponsetypedef)
-  - [StopExperimentResponseTypeDef](#stopexperimentresponsetypedef)
+  - [GetActionRequestTypeDef](#getactionrequesttypedef)
+  - [GetActionResponseResponseTypeDef](#getactionresponseresponsetypedef)
+  - [GetExperimentRequestTypeDef](#getexperimentrequesttypedef)
+  - [GetExperimentResponseResponseTypeDef](#getexperimentresponseresponsetypedef)
+  - [GetExperimentTemplateRequestTypeDef](#getexperimenttemplaterequesttypedef)
+  - [GetExperimentTemplateResponseResponseTypeDef](#getexperimenttemplateresponseresponsetypedef)
+  - [ListActionsRequestTypeDef](#listactionsrequesttypedef)
+  - [ListActionsResponseResponseTypeDef](#listactionsresponseresponsetypedef)
+  - [ListExperimentTemplatesRequestTypeDef](#listexperimenttemplatesrequesttypedef)
+  - [ListExperimentTemplatesResponseResponseTypeDef](#listexperimenttemplatesresponseresponsetypedef)
+  - [ListExperimentsRequestTypeDef](#listexperimentsrequesttypedef)
+  - [ListExperimentsResponseResponseTypeDef](#listexperimentsresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [StartExperimentRequestTypeDef](#startexperimentrequesttypedef)
+  - [StartExperimentResponseResponseTypeDef](#startexperimentresponseresponsetypedef)
+  - [StopExperimentRequestTypeDef](#stopexperimentrequesttypedef)
+  - [StopExperimentResponseResponseTypeDef](#stopexperimentresponseresponsetypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
   - [UpdateExperimentTemplateActionInputItemTypeDef](#updateexperimenttemplateactioninputitemtypedef)
-  - [UpdateExperimentTemplateResponseTypeDef](#updateexperimenttemplateresponsetypedef)
+  - [UpdateExperimentTemplateRequestTypeDef](#updateexperimenttemplaterequesttypedef)
+  - [UpdateExperimentTemplateResponseResponseTypeDef](#updateexperimenttemplateresponseresponsetypedef)
   - [UpdateExperimentTemplateStopConditionInputTypeDef](#updateexperimenttemplatestopconditioninputtypedef)
   - [UpdateExperimentTemplateTargetInputTypeDef](#updateexperimenttemplatetargetinputtypedef)
 
@@ -114,16 +129,40 @@ Optional fields:
 - `targets`: `Dict`\[`str`, `str`\]
 - `startAfter`: `List`\[`str`\]
 
-## CreateExperimentTemplateResponseTypeDef
+## CreateExperimentTemplateRequestTypeDef
 
 ```python
-from mypy_boto3_fis.type_defs import CreateExperimentTemplateResponseTypeDef
+from mypy_boto3_fis.type_defs import CreateExperimentTemplateRequestTypeDef
 ```
+
+Required fields:
+
+- `clientToken`: `str`
+- `description`: `str`
+- `stopConditions`:
+  `List`\[[CreateExperimentTemplateStopConditionInputTypeDef](./type_defs.md#createexperimenttemplatestopconditioninputtypedef)\]
+- `actions`: `Dict`\[`str`,
+  [CreateExperimentTemplateActionInputTypeDef](./type_defs.md#createexperimenttemplateactioninputtypedef)\]
+- `roleArn`: `str`
 
 Optional fields:
 
+- `targets`: `Dict`\[`str`,
+  [CreateExperimentTemplateTargetInputTypeDef](./type_defs.md#createexperimenttemplatetargetinputtypedef)\]
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateExperimentTemplateResponseResponseTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import CreateExperimentTemplateResponseResponseTypeDef
+```
+
+Required fields:
+
 - `experimentTemplate`:
   [ExperimentTemplateTypeDef](./type_defs.md#experimenttemplatetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateExperimentTemplateStopConditionInputTypeDef
 
@@ -157,16 +196,28 @@ Optional fields:
 - `filters`:
   `List`\[[ExperimentTemplateTargetInputFilterTypeDef](./type_defs.md#experimenttemplatetargetinputfiltertypedef)\]
 
-## DeleteExperimentTemplateResponseTypeDef
+## DeleteExperimentTemplateRequestTypeDef
 
 ```python
-from mypy_boto3_fis.type_defs import DeleteExperimentTemplateResponseTypeDef
+from mypy_boto3_fis.type_defs import DeleteExperimentTemplateRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `id`: `str`
+
+## DeleteExperimentTemplateResponseResponseTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import DeleteExperimentTemplateResponseResponseTypeDef
+```
+
+Required fields:
 
 - `experimentTemplate`:
   [ExperimentTemplateTypeDef](./type_defs.md#experimenttemplatetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ExperimentActionStateTypeDef
 
@@ -378,102 +429,257 @@ Optional fields:
 - `endTime`: `datetime`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## GetActionResponseTypeDef
+## GetActionRequestTypeDef
 
 ```python
-from mypy_boto3_fis.type_defs import GetActionResponseTypeDef
+from mypy_boto3_fis.type_defs import GetActionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `id`: `str`
+
+## GetActionResponseResponseTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import GetActionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `action`: [ActionTypeDef](./type_defs.md#actiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetExperimentResponseTypeDef
+## GetExperimentRequestTypeDef
 
 ```python
-from mypy_boto3_fis.type_defs import GetExperimentResponseTypeDef
+from mypy_boto3_fis.type_defs import GetExperimentRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `id`: `str`
+
+## GetExperimentResponseResponseTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import GetExperimentResponseResponseTypeDef
+```
+
+Required fields:
 
 - `experiment`: [ExperimentTypeDef](./type_defs.md#experimenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetExperimentTemplateResponseTypeDef
+## GetExperimentTemplateRequestTypeDef
 
 ```python
-from mypy_boto3_fis.type_defs import GetExperimentTemplateResponseTypeDef
+from mypy_boto3_fis.type_defs import GetExperimentTemplateRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `id`: `str`
+
+## GetExperimentTemplateResponseResponseTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import GetExperimentTemplateResponseResponseTypeDef
+```
+
+Required fields:
 
 - `experimentTemplate`:
   [ExperimentTemplateTypeDef](./type_defs.md#experimenttemplatetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListActionsResponseTypeDef
+## ListActionsRequestTypeDef
 
 ```python
-from mypy_boto3_fis.type_defs import ListActionsResponseTypeDef
+from mypy_boto3_fis.type_defs import ListActionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListActionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import ListActionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `actions`:
   `List`\[[ActionSummaryTypeDef](./type_defs.md#actionsummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListExperimentTemplatesResponseTypeDef
+## ListExperimentTemplatesRequestTypeDef
 
 ```python
-from mypy_boto3_fis.type_defs import ListExperimentTemplatesResponseTypeDef
+from mypy_boto3_fis.type_defs import ListExperimentTemplatesRequestTypeDef
 ```
 
 Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListExperimentTemplatesResponseResponseTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import ListExperimentTemplatesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `experimentTemplates`:
   `List`\[[ExperimentTemplateSummaryTypeDef](./type_defs.md#experimenttemplatesummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListExperimentsResponseTypeDef
+## ListExperimentsRequestTypeDef
 
 ```python
-from mypy_boto3_fis.type_defs import ListExperimentsResponseTypeDef
+from mypy_boto3_fis.type_defs import ListExperimentsRequestTypeDef
 ```
 
 Optional fields:
 
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListExperimentsResponseResponseTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import ListExperimentsResponseResponseTypeDef
+```
+
+Required fields:
+
 - `experiments`:
   `List`\[[ExperimentSummaryTypeDef](./type_defs.md#experimentsummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_fis.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_fis.type_defs import ListTagsForResourceRequestTypeDef
 ```
+
+Required fields:
+
+- `resourceArn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
+
+- `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## StartExperimentRequestTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import StartExperimentRequestTypeDef
+```
+
+Required fields:
+
+- `clientToken`: `str`
+- `experimentTemplateId`: `str`
 
 Optional fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
 
-## StartExperimentResponseTypeDef
+## StartExperimentResponseResponseTypeDef
 
 ```python
-from mypy_boto3_fis.type_defs import StartExperimentResponseTypeDef
+from mypy_boto3_fis.type_defs import StartExperimentResponseResponseTypeDef
 ```
+
+Required fields:
+
+- `experiment`: [ExperimentTypeDef](./type_defs.md#experimenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StopExperimentRequestTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import StopExperimentRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
+## StopExperimentResponseResponseTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import StopExperimentResponseResponseTypeDef
+```
+
+Required fields:
+
+- `experiment`: [ExperimentTypeDef](./type_defs.md#experimenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## UntagResourceRequestTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
 
 Optional fields:
 
-- `experiment`: [ExperimentTypeDef](./type_defs.md#experimenttypedef)
-
-## StopExperimentResponseTypeDef
-
-```python
-from mypy_boto3_fis.type_defs import StopExperimentResponseTypeDef
-```
-
-Optional fields:
-
-- `experiment`: [ExperimentTypeDef](./type_defs.md#experimenttypedef)
+- `tagKeys`: `List`\[`str`\]
 
 ## UpdateExperimentTemplateActionInputItemTypeDef
 
@@ -489,16 +695,39 @@ Optional fields:
 - `targets`: `Dict`\[`str`, `str`\]
 - `startAfter`: `List`\[`str`\]
 
-## UpdateExperimentTemplateResponseTypeDef
+## UpdateExperimentTemplateRequestTypeDef
 
 ```python
-from mypy_boto3_fis.type_defs import UpdateExperimentTemplateResponseTypeDef
+from mypy_boto3_fis.type_defs import UpdateExperimentTemplateRequestTypeDef
 ```
+
+Required fields:
+
+- `id`: `str`
 
 Optional fields:
 
+- `description`: `str`
+- `stopConditions`:
+  `List`\[[UpdateExperimentTemplateStopConditionInputTypeDef](./type_defs.md#updateexperimenttemplatestopconditioninputtypedef)\]
+- `targets`: `Dict`\[`str`,
+  [UpdateExperimentTemplateTargetInputTypeDef](./type_defs.md#updateexperimenttemplatetargetinputtypedef)\]
+- `actions`: `Dict`\[`str`,
+  [UpdateExperimentTemplateActionInputItemTypeDef](./type_defs.md#updateexperimenttemplateactioninputitemtypedef)\]
+- `roleArn`: `str`
+
+## UpdateExperimentTemplateResponseResponseTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import UpdateExperimentTemplateResponseResponseTypeDef
+```
+
+Required fields:
+
 - `experimentTemplate`:
   [ExperimentTemplateTypeDef](./type_defs.md#experimenttemplatetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UpdateExperimentTemplateStopConditionInputTypeDef
 

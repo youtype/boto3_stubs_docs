@@ -74,10 +74,15 @@ Exceptions:
 
 ### add_tags_to_resource
 
+This is documentation for **AWS CloudHSM Classic**.
+
 Type annotations for `boto3.client("cloudhsm").add_tags_to_resource` method.
 
 Boto3 documentation:
 [CloudHSM.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.add_tags_to_resource)
+
+Arguments mapping described in
+[AddTagsToResourceRequestTypeDef](./type_defs.md#addtagstoresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -85,9 +90,11 @@ Keyword-only arguments:
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns
-[AddTagsToResourceResponseTypeDef](./type_defs.md#addtagstoresourceresponsetypedef).
+[AddTagsToResourceResponseResponseTypeDef](./type_defs.md#addtagstoresourceresponseresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("cloudhsm").can_paginate` method.
 
@@ -102,23 +109,34 @@ Returns `bool`.
 
 ### create_hapg
 
+This is documentation for **AWS CloudHSM Classic**.
+
 Type annotations for `boto3.client("cloudhsm").create_hapg` method.
 
 Boto3 documentation:
 [CloudHSM.Client.create_hapg](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_hapg)
 
+Arguments mapping described in
+[CreateHapgRequestTypeDef](./type_defs.md#createhapgrequesttypedef).
+
 Keyword-only arguments:
 
 - `Label`: `str` *(required)*
 
-Returns [CreateHapgResponseTypeDef](./type_defs.md#createhapgresponsetypedef).
+Returns
+[CreateHapgResponseResponseTypeDef](./type_defs.md#createhapgresponseresponsetypedef).
 
 ### create_hsm
+
+This is documentation for **AWS CloudHSM Classic**.
 
 Type annotations for `boto3.client("cloudhsm").create_hsm` method.
 
 Boto3 documentation:
 [CloudHSM.Client.create_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_hsm)
+
+Arguments mapping described in
+[CreateHsmRequestTypeDef](./type_defs.md#createhsmrequesttypedef).
 
 Keyword-only arguments:
 
@@ -132,14 +150,20 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 - `SyslogIp`: `str`
 
-Returns [CreateHsmResponseTypeDef](./type_defs.md#createhsmresponsetypedef).
+Returns
+[CreateHsmResponseResponseTypeDef](./type_defs.md#createhsmresponseresponsetypedef).
 
 ### create_luna_client
+
+This is documentation for **AWS CloudHSM Classic**.
 
 Type annotations for `boto3.client("cloudhsm").create_luna_client` method.
 
 Boto3 documentation:
 [CloudHSM.Client.create_luna_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.create_luna_client)
+
+Arguments mapping described in
+[CreateLunaClientRequestTypeDef](./type_defs.md#createlunaclientrequesttypedef).
 
 Keyword-only arguments:
 
@@ -147,68 +171,95 @@ Keyword-only arguments:
 - `Label`: `str`
 
 Returns
-[CreateLunaClientResponseTypeDef](./type_defs.md#createlunaclientresponsetypedef).
+[CreateLunaClientResponseResponseTypeDef](./type_defs.md#createlunaclientresponseresponsetypedef).
 
 ### delete_hapg
+
+This is documentation for **AWS CloudHSM Classic**.
 
 Type annotations for `boto3.client("cloudhsm").delete_hapg` method.
 
 Boto3 documentation:
 [CloudHSM.Client.delete_hapg](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_hapg)
 
+Arguments mapping described in
+[DeleteHapgRequestTypeDef](./type_defs.md#deletehapgrequesttypedef).
+
 Keyword-only arguments:
 
 - `HapgArn`: `str` *(required)*
 
-Returns [DeleteHapgResponseTypeDef](./type_defs.md#deletehapgresponsetypedef).
+Returns
+[DeleteHapgResponseResponseTypeDef](./type_defs.md#deletehapgresponseresponsetypedef).
 
 ### delete_hsm
+
+This is documentation for **AWS CloudHSM Classic**.
 
 Type annotations for `boto3.client("cloudhsm").delete_hsm` method.
 
 Boto3 documentation:
 [CloudHSM.Client.delete_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_hsm)
 
+Arguments mapping described in
+[DeleteHsmRequestTypeDef](./type_defs.md#deletehsmrequesttypedef).
+
 Keyword-only arguments:
 
 - `HsmArn`: `str` *(required)*
 
-Returns [DeleteHsmResponseTypeDef](./type_defs.md#deletehsmresponsetypedef).
+Returns
+[DeleteHsmResponseResponseTypeDef](./type_defs.md#deletehsmresponseresponsetypedef).
 
 ### delete_luna_client
+
+This is documentation for **AWS CloudHSM Classic**.
 
 Type annotations for `boto3.client("cloudhsm").delete_luna_client` method.
 
 Boto3 documentation:
 [CloudHSM.Client.delete_luna_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.delete_luna_client)
 
+Arguments mapping described in
+[DeleteLunaClientRequestTypeDef](./type_defs.md#deletelunaclientrequesttypedef).
+
 Keyword-only arguments:
 
 - `ClientArn`: `str` *(required)*
 
 Returns
-[DeleteLunaClientResponseTypeDef](./type_defs.md#deletelunaclientresponsetypedef).
+[DeleteLunaClientResponseResponseTypeDef](./type_defs.md#deletelunaclientresponseresponsetypedef).
 
 ### describe_hapg
+
+This is documentation for **AWS CloudHSM Classic**.
 
 Type annotations for `boto3.client("cloudhsm").describe_hapg` method.
 
 Boto3 documentation:
 [CloudHSM.Client.describe_hapg](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_hapg)
 
+Arguments mapping described in
+[DescribeHapgRequestTypeDef](./type_defs.md#describehapgrequesttypedef).
+
 Keyword-only arguments:
 
 - `HapgArn`: `str` *(required)*
 
 Returns
-[DescribeHapgResponseTypeDef](./type_defs.md#describehapgresponsetypedef).
+[DescribeHapgResponseResponseTypeDef](./type_defs.md#describehapgresponseresponsetypedef).
 
 ### describe_hsm
+
+This is documentation for **AWS CloudHSM Classic**.
 
 Type annotations for `boto3.client("cloudhsm").describe_hsm` method.
 
 Boto3 documentation:
 [CloudHSM.Client.describe_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_hsm)
+
+Arguments mapping described in
+[DescribeHsmRequestTypeDef](./type_defs.md#describehsmrequesttypedef).
 
 Keyword-only arguments:
 
@@ -216,14 +267,19 @@ Keyword-only arguments:
 - `HsmSerialNumber`: `str`
 
 Returns
-[DescribeHsmResponseTypeDef](./type_defs.md#describehsmresponsetypedef).
+[DescribeHsmResponseResponseTypeDef](./type_defs.md#describehsmresponseresponsetypedef).
 
 ### describe_luna_client
+
+This is documentation for **AWS CloudHSM Classic**.
 
 Type annotations for `boto3.client("cloudhsm").describe_luna_client` method.
 
 Boto3 documentation:
 [CloudHSM.Client.describe_luna_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.describe_luna_client)
+
+Arguments mapping described in
+[DescribeLunaClientRequestTypeDef](./type_defs.md#describelunaclientrequesttypedef).
 
 Keyword-only arguments:
 
@@ -231,9 +287,11 @@ Keyword-only arguments:
 - `CertificateFingerprint`: `str`
 
 Returns
-[DescribeLunaClientResponseTypeDef](./type_defs.md#describelunaclientresponsetypedef).
+[DescribeLunaClientResponseResponseTypeDef](./type_defs.md#describelunaclientresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("cloudhsm").generate_presigned_url` method.
 
@@ -251,10 +309,15 @@ Returns `str`.
 
 ### get_config
 
+This is documentation for **AWS CloudHSM Classic**.
+
 Type annotations for `boto3.client("cloudhsm").get_config` method.
 
 Boto3 documentation:
 [CloudHSM.Client.get_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.get_config)
+
+Arguments mapping described in
+[GetConfigRequestTypeDef](./type_defs.md#getconfigrequesttypedef).
 
 Keyword-only arguments:
 
@@ -263,9 +326,12 @@ Keyword-only arguments:
   *(required)*
 - `HapgList`: `List`\[`str`\] *(required)*
 
-Returns [GetConfigResponseTypeDef](./type_defs.md#getconfigresponsetypedef).
+Returns
+[GetConfigResponseResponseTypeDef](./type_defs.md#getconfigresponseresponsetypedef).
 
 ### list_available_zones
+
+This is documentation for **AWS CloudHSM Classic**.
 
 Type annotations for `boto3.client("cloudhsm").list_available_zones` method.
 
@@ -273,68 +339,95 @@ Boto3 documentation:
 [CloudHSM.Client.list_available_zones](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_available_zones)
 
 Returns
-[ListAvailableZonesResponseTypeDef](./type_defs.md#listavailablezonesresponsetypedef).
+[ListAvailableZonesResponseResponseTypeDef](./type_defs.md#listavailablezonesresponseresponsetypedef).
 
 ### list_hapgs
+
+This is documentation for **AWS CloudHSM Classic**.
 
 Type annotations for `boto3.client("cloudhsm").list_hapgs` method.
 
 Boto3 documentation:
 [CloudHSM.Client.list_hapgs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_hapgs)
 
+Arguments mapping described in
+[ListHapgsRequestTypeDef](./type_defs.md#listhapgsrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 
-Returns [ListHapgsResponseTypeDef](./type_defs.md#listhapgsresponsetypedef).
+Returns
+[ListHapgsResponseResponseTypeDef](./type_defs.md#listhapgsresponseresponsetypedef).
 
 ### list_hsms
+
+This is documentation for **AWS CloudHSM Classic**.
 
 Type annotations for `boto3.client("cloudhsm").list_hsms` method.
 
 Boto3 documentation:
 [CloudHSM.Client.list_hsms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_hsms)
 
+Arguments mapping described in
+[ListHsmsRequestTypeDef](./type_defs.md#listhsmsrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 
-Returns [ListHsmsResponseTypeDef](./type_defs.md#listhsmsresponsetypedef).
+Returns
+[ListHsmsResponseResponseTypeDef](./type_defs.md#listhsmsresponseresponsetypedef).
 
 ### list_luna_clients
+
+This is documentation for **AWS CloudHSM Classic**.
 
 Type annotations for `boto3.client("cloudhsm").list_luna_clients` method.
 
 Boto3 documentation:
 [CloudHSM.Client.list_luna_clients](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_luna_clients)
 
+Arguments mapping described in
+[ListLunaClientsRequestTypeDef](./type_defs.md#listlunaclientsrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 
 Returns
-[ListLunaClientsResponseTypeDef](./type_defs.md#listlunaclientsresponsetypedef).
+[ListLunaClientsResponseResponseTypeDef](./type_defs.md#listlunaclientsresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+This is documentation for **AWS CloudHSM Classic**.
 
 Type annotations for `boto3.client("cloudhsm").list_tags_for_resource` method.
 
 Boto3 documentation:
 [CloudHSM.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### modify_hapg
+
+This is documentation for **AWS CloudHSM Classic**.
 
 Type annotations for `boto3.client("cloudhsm").modify_hapg` method.
 
 Boto3 documentation:
 [CloudHSM.Client.modify_hapg](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_hapg)
+
+Arguments mapping described in
+[ModifyHapgRequestTypeDef](./type_defs.md#modifyhapgrequesttypedef).
 
 Keyword-only arguments:
 
@@ -342,14 +435,20 @@ Keyword-only arguments:
 - `Label`: `str`
 - `PartitionSerialList`: `List`\[`str`\]
 
-Returns [ModifyHapgResponseTypeDef](./type_defs.md#modifyhapgresponsetypedef).
+Returns
+[ModifyHapgResponseResponseTypeDef](./type_defs.md#modifyhapgresponseresponsetypedef).
 
 ### modify_hsm
+
+This is documentation for **AWS CloudHSM Classic**.
 
 Type annotations for `boto3.client("cloudhsm").modify_hsm` method.
 
 Boto3 documentation:
 [CloudHSM.Client.modify_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_hsm)
+
+Arguments mapping described in
+[ModifyHsmRequestTypeDef](./type_defs.md#modifyhsmrequesttypedef).
 
 Keyword-only arguments:
 
@@ -360,14 +459,20 @@ Keyword-only arguments:
 - `ExternalId`: `str`
 - `SyslogIp`: `str`
 
-Returns [ModifyHsmResponseTypeDef](./type_defs.md#modifyhsmresponsetypedef).
+Returns
+[ModifyHsmResponseResponseTypeDef](./type_defs.md#modifyhsmresponseresponsetypedef).
 
 ### modify_luna_client
+
+This is documentation for **AWS CloudHSM Classic**.
 
 Type annotations for `boto3.client("cloudhsm").modify_luna_client` method.
 
 Boto3 documentation:
 [CloudHSM.Client.modify_luna_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.modify_luna_client)
+
+Arguments mapping described in
+[ModifyLunaClientRequestTypeDef](./type_defs.md#modifylunaclientrequesttypedef).
 
 Keyword-only arguments:
 
@@ -375,9 +480,11 @@ Keyword-only arguments:
 - `Certificate`: `str` *(required)*
 
 Returns
-[ModifyLunaClientResponseTypeDef](./type_defs.md#modifylunaclientresponsetypedef).
+[ModifyLunaClientResponseResponseTypeDef](./type_defs.md#modifylunaclientresponseresponsetypedef).
 
 ### remove_tags_from_resource
+
+This is documentation for **AWS CloudHSM Classic**.
 
 Type annotations for `boto3.client("cloudhsm").remove_tags_from_resource`
 method.
@@ -385,13 +492,16 @@ method.
 Boto3 documentation:
 [CloudHSM.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.remove_tags_from_resource)
 
+Arguments mapping described in
+[RemoveTagsFromResourceRequestTypeDef](./type_defs.md#removetagsfromresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeyList`: `List`\[`str`\] *(required)*
 
 Returns
-[RemoveTagsFromResourceResponseTypeDef](./type_defs.md#removetagsfromresourceresponsetypedef).
+[RemoveTagsFromResourceResponseResponseTypeDef](./type_defs.md#removetagsfromresourceresponseresponsetypedef).
 
 ### get_paginator
 

@@ -77,13 +77,22 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_finspace.type_defs import CreateEnvironmentResponseTypeDef, ...
+from mypy_boto3_finspace.type_defs import CreateEnvironmentRequestTypeDef, ...
 ```
 
-- [CreateEnvironmentResponseTypeDef](./type_defs.md#createenvironmentresponsetypedef)
+- [CreateEnvironmentRequestTypeDef](./type_defs.md#createenvironmentrequesttypedef)
+- [CreateEnvironmentResponseResponseTypeDef](./type_defs.md#createenvironmentresponseresponsetypedef)
+- [DeleteEnvironmentRequestTypeDef](./type_defs.md#deleteenvironmentrequesttypedef)
 - [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 - [FederationParametersTypeDef](./type_defs.md#federationparameterstypedef)
-- [GetEnvironmentResponseTypeDef](./type_defs.md#getenvironmentresponsetypedef)
-- [ListEnvironmentsResponseTypeDef](./type_defs.md#listenvironmentsresponsetypedef)
-- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
-- [UpdateEnvironmentResponseTypeDef](./type_defs.md#updateenvironmentresponsetypedef)
+- [GetEnvironmentRequestTypeDef](./type_defs.md#getenvironmentrequesttypedef)
+- [GetEnvironmentResponseResponseTypeDef](./type_defs.md#getenvironmentresponseresponsetypedef)
+- [ListEnvironmentsRequestTypeDef](./type_defs.md#listenvironmentsrequesttypedef)
+- [ListEnvironmentsResponseResponseTypeDef](./type_defs.md#listenvironmentsresponseresponsetypedef)
+- [ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef)
+- [ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef)
+- [UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef)
+- [UpdateEnvironmentRequestTypeDef](./type_defs.md#updateenvironmentrequesttypedef)
+- [UpdateEnvironmentResponseResponseTypeDef](./type_defs.md#updateenvironmentresponseresponsetypedef)

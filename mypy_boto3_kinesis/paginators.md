@@ -37,7 +37,7 @@ Arguments for `DescribeStreamPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeStreamPaginator.paginate` returns
-`Iterator`\[[DescribeStreamOutputTypeDef](./type_defs.md#describestreamoutputtypedef)\].
+`Iterator`\[[DescribeStreamOutputResponseTypeDef](./type_defs.md#describestreamoutputresponsetypedef)\].
 
 ## ListShardsPaginator
 
@@ -59,13 +59,13 @@ Arguments for `ListShardsPaginator.paginate` method:
 
 - `StreamName`: `str`
 - `ExclusiveStartShardId`: `str`
-- `StreamCreationTimestamp`: `datetime`
+- `StreamCreationTimestamp`: `Union`\[`datetime`, `str`\]
 - `ShardFilter`: [ShardFilterTypeDef](./type_defs.md#shardfiltertypedef)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListShardsPaginator.paginate` returns
-`Iterator`\[[ListShardsOutputTypeDef](./type_defs.md#listshardsoutputtypedef)\].
+`Iterator`\[[ListShardsOutputResponseTypeDef](./type_defs.md#listshardsoutputresponsetypedef)\].
 
 ## ListStreamConsumersPaginator
 
@@ -87,12 +87,12 @@ Boto3 documentation:
 Arguments for `ListStreamConsumersPaginator.paginate` method:
 
 - `StreamARN`: `str` *(required)*
-- `StreamCreationTimestamp`: `datetime`
+- `StreamCreationTimestamp`: `Union`\[`datetime`, `str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStreamConsumersPaginator.paginate` returns
-`Iterator`\[[ListStreamConsumersOutputTypeDef](./type_defs.md#liststreamconsumersoutputtypedef)\].
+`Iterator`\[[ListStreamConsumersOutputResponseTypeDef](./type_defs.md#liststreamconsumersoutputresponsetypedef)\].
 
 ## ListStreamsPaginator
 
@@ -116,4 +116,4 @@ Arguments for `ListStreamsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStreamsPaginator.paginate` returns
-`Iterator`\[[ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef)\].
+`Iterator`\[[ListStreamsOutputResponseTypeDef](./type_defs.md#liststreamsoutputresponsetypedef)\].

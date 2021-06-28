@@ -53,7 +53,7 @@ Arguments for `GetApiKeysPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetApiKeysPaginator.paginate` returns
-`Iterator`\[[ApiKeysTypeDef](./type_defs.md#apikeystypedef)\].
+`Iterator`\[[ApiKeysResponseTypeDef](./type_defs.md#apikeysresponsetypedef)\].
 
 ## GetAuthorizersPaginator
 
@@ -79,7 +79,7 @@ Arguments for `GetAuthorizersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetAuthorizersPaginator.paginate` returns
-`Iterator`\[[AuthorizersTypeDef](./type_defs.md#authorizerstypedef)\].
+`Iterator`\[[AuthorizersResponseTypeDef](./type_defs.md#authorizersresponsetypedef)\].
 
 ## GetBasePathMappingsPaginator
 
@@ -105,7 +105,7 @@ Arguments for `GetBasePathMappingsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetBasePathMappingsPaginator.paginate` returns
-`Iterator`\[[BasePathMappingsTypeDef](./type_defs.md#basepathmappingstypedef)\].
+`Iterator`\[[BasePathMappingsResponseTypeDef](./type_defs.md#basepathmappingsresponsetypedef)\].
 
 ## GetClientCertificatesPaginator
 
@@ -130,7 +130,7 @@ Arguments for `GetClientCertificatesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetClientCertificatesPaginator.paginate` returns
-`Iterator`\[[ClientCertificatesTypeDef](./type_defs.md#clientcertificatestypedef)\].
+`Iterator`\[[ClientCertificatesResponseTypeDef](./type_defs.md#clientcertificatesresponsetypedef)\].
 
 ## GetDeploymentsPaginator
 
@@ -156,7 +156,7 @@ Arguments for `GetDeploymentsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetDeploymentsPaginator.paginate` returns
-`Iterator`\[[DeploymentsTypeDef](./type_defs.md#deploymentstypedef)\].
+`Iterator`\[[DeploymentsResponseTypeDef](./type_defs.md#deploymentsresponsetypedef)\].
 
 ## GetDocumentationPartsPaginator
 
@@ -187,7 +187,7 @@ Arguments for `GetDocumentationPartsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetDocumentationPartsPaginator.paginate` returns
-`Iterator`\[[DocumentationPartsTypeDef](./type_defs.md#documentationpartstypedef)\].
+`Iterator`\[[DocumentationPartsResponseTypeDef](./type_defs.md#documentationpartsresponsetypedef)\].
 
 ## GetDocumentationVersionsPaginator
 
@@ -213,7 +213,7 @@ Arguments for `GetDocumentationVersionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetDocumentationVersionsPaginator.paginate` returns
-`Iterator`\[[DocumentationVersionsTypeDef](./type_defs.md#documentationversionstypedef)\].
+`Iterator`\[[DocumentationVersionsResponseTypeDef](./type_defs.md#documentationversionsresponsetypedef)\].
 
 ## GetDomainNamesPaginator
 
@@ -238,7 +238,7 @@ Arguments for `GetDomainNamesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetDomainNamesPaginator.paginate` returns
-`Iterator`\[[DomainNamesTypeDef](./type_defs.md#domainnamestypedef)\].
+`Iterator`\[[DomainNamesResponseTypeDef](./type_defs.md#domainnamesresponsetypedef)\].
 
 ## GetGatewayResponsesPaginator
 
@@ -264,7 +264,7 @@ Arguments for `GetGatewayResponsesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetGatewayResponsesPaginator.paginate` returns
-`Iterator`\[[GatewayResponsesTypeDef](./type_defs.md#gatewayresponsestypedef)\].
+`Iterator`\[[GatewayResponsesResponseTypeDef](./type_defs.md#gatewayresponsesresponsetypedef)\].
 
 ## GetModelsPaginator
 
@@ -289,7 +289,7 @@ Arguments for `GetModelsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetModelsPaginator.paginate` returns
-`Iterator`\[[ModelsTypeDef](./type_defs.md#modelstypedef)\].
+`Iterator`\[[ModelsResponseTypeDef](./type_defs.md#modelsresponsetypedef)\].
 
 ## GetRequestValidatorsPaginator
 
@@ -315,7 +315,7 @@ Arguments for `GetRequestValidatorsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetRequestValidatorsPaginator.paginate` returns
-`Iterator`\[[RequestValidatorsTypeDef](./type_defs.md#requestvalidatorstypedef)\].
+`Iterator`\[[RequestValidatorsResponseTypeDef](./type_defs.md#requestvalidatorsresponsetypedef)\].
 
 ## GetResourcesPaginator
 
@@ -342,7 +342,7 @@ Arguments for `GetResourcesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetResourcesPaginator.paginate` returns
-`Iterator`\[[ResourcesTypeDef](./type_defs.md#resourcestypedef)\].
+`Iterator`\[[ResourcesResponseTypeDef](./type_defs.md#resourcesresponsetypedef)\].
 
 ## GetRestApisPaginator
 
@@ -367,7 +367,7 @@ Arguments for `GetRestApisPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetRestApisPaginator.paginate` returns
-`Iterator`\[[RestApisTypeDef](./type_defs.md#restapistypedef)\].
+`Iterator`\[[RestApisResponseTypeDef](./type_defs.md#restapisresponsetypedef)\].
 
 ## GetSdkTypesPaginator
 
@@ -392,7 +392,7 @@ Arguments for `GetSdkTypesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetSdkTypesPaginator.paginate` returns
-`Iterator`\[[SdkTypesTypeDef](./type_defs.md#sdktypestypedef)\].
+`Iterator`\[[SdkTypesResponseTypeDef](./type_defs.md#sdktypesresponsetypedef)\].
 
 ## GetUsagePaginator
 
@@ -420,7 +420,7 @@ Arguments for `GetUsagePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetUsagePaginator.paginate` returns
-`Iterator`\[[UsageTypeDef](./type_defs.md#usagetypedef)\].
+`Iterator`\[[UsageResponseTypeDef](./type_defs.md#usageresponsetypedef)\].
 
 ## GetUsagePlanKeysPaginator
 
@@ -447,7 +447,7 @@ Arguments for `GetUsagePlanKeysPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetUsagePlanKeysPaginator.paginate` returns
-`Iterator`\[[UsagePlanKeysTypeDef](./type_defs.md#usageplankeystypedef)\].
+`Iterator`\[[UsagePlanKeysResponseTypeDef](./type_defs.md#usageplankeysresponsetypedef)\].
 
 ## GetUsagePlansPaginator
 
@@ -473,7 +473,7 @@ Arguments for `GetUsagePlansPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetUsagePlansPaginator.paginate` returns
-`Iterator`\[[UsagePlansTypeDef](./type_defs.md#usageplanstypedef)\].
+`Iterator`\[[UsagePlansResponseTypeDef](./type_defs.md#usageplansresponsetypedef)\].
 
 ## GetVpcLinksPaginator
 
@@ -498,4 +498,4 @@ Arguments for `GetVpcLinksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetVpcLinksPaginator.paginate` returns
-`Iterator`\[[VpcLinksTypeDef](./type_defs.md#vpclinkstypedef)\].
+`Iterator`\[[VpcLinksResponseTypeDef](./type_defs.md#vpclinksresponsetypedef)\].

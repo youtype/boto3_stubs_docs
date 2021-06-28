@@ -65,6 +65,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("iotfleethub").can_paginate` method.
 
 Boto3 documentation:
@@ -78,10 +80,15 @@ Returns `bool`.
 
 ### create_application
 
+Creates a Fleet Hub for AWS IoT Device Management web application.
+
 Type annotations for `boto3.client("iotfleethub").create_application` method.
 
 Boto3 documentation:
 [IoTFleetHub.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.create_application)
+
+Arguments mapping described in
+[CreateApplicationRequestTypeDef](./type_defs.md#createapplicationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -92,14 +99,19 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
+[CreateApplicationResponseResponseTypeDef](./type_defs.md#createapplicationresponseresponsetypedef).
 
 ### delete_application
+
+Deletes a Fleet Hub for AWS IoT Device Management web application.
 
 Type annotations for `boto3.client("iotfleethub").delete_application` method.
 
 Boto3 documentation:
 [IoTFleetHub.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.delete_application)
+
+Arguments mapping described in
+[DeleteApplicationRequestTypeDef](./type_defs.md#deleteapplicationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -110,19 +122,27 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_application
 
+Gets information about a Fleet Hub for AWS IoT Device Management web
+application.
+
 Type annotations for `boto3.client("iotfleethub").describe_application` method.
 
 Boto3 documentation:
 [IoTFleetHub.Client.describe_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.describe_application)
+
+Arguments mapping described in
+[DescribeApplicationRequestTypeDef](./type_defs.md#describeapplicationrequesttypedef).
 
 Keyword-only arguments:
 
 - `applicationId`: `str` *(required)*
 
 Returns
-[DescribeApplicationResponseTypeDef](./type_defs.md#describeapplicationresponsetypedef).
+[DescribeApplicationResponseResponseTypeDef](./type_defs.md#describeapplicationresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("iotfleethub").generate_presigned_url`
 method.
@@ -141,19 +161,27 @@ Returns `str`.
 
 ### list_applications
 
+Gets a list of Fleet Hub for AWS IoT Device Management web applications for the
+current account.
+
 Type annotations for `boto3.client("iotfleethub").list_applications` method.
 
 Boto3 documentation:
 [IoTFleetHub.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.list_applications)
+
+Arguments mapping described in
+[ListApplicationsRequestTypeDef](./type_defs.md#listapplicationsrequesttypedef).
 
 Keyword-only arguments:
 
 - `nextToken`: `str`
 
 Returns
-[ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef).
+[ListApplicationsResponseResponseTypeDef](./type_defs.md#listapplicationsresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Lists the tags for the specified resource.
 
 Type annotations for `boto3.client("iotfleethub").list_tags_for_resource`
 method.
@@ -161,19 +189,27 @@ method.
 Boto3 documentation:
 [IoTFleetHub.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### tag_resource
+
+Adds to or modifies the tags of the specified resource.
 
 Type annotations for `boto3.client("iotfleethub").tag_resource` method.
 
 Boto3 documentation:
 [IoTFleetHub.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -184,10 +220,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Removes the specified tags (metadata) from the resource.
+
 Type annotations for `boto3.client("iotfleethub").untag_resource` method.
 
 Boto3 documentation:
 [IoTFleetHub.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -198,10 +239,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_application
 
+Updates information about a Fleet Hub for a AWS IoT Device Management web
+application.
+
 Type annotations for `boto3.client("iotfleethub").update_application` method.
 
 Boto3 documentation:
 [IoTFleetHub.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.update_application)
+
+Arguments mapping described in
+[UpdateApplicationRequestTypeDef](./type_defs.md#updateapplicationrequesttypedef).
 
 Keyword-only arguments:
 

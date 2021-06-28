@@ -8,12 +8,18 @@ type annotations stubs module
 [mypy_boto3_codebuild](https://pypi.org/project/mypy-boto3-codebuild/).
 
 - [Typed dictionaries for boto3 CodeBuild module](#typed-dictionaries-for-boto3-codebuild-module)
-  - [BatchDeleteBuildsOutputTypeDef](#batchdeletebuildsoutputtypedef)
-  - [BatchGetBuildBatchesOutputTypeDef](#batchgetbuildbatchesoutputtypedef)
-  - [BatchGetBuildsOutputTypeDef](#batchgetbuildsoutputtypedef)
-  - [BatchGetProjectsOutputTypeDef](#batchgetprojectsoutputtypedef)
-  - [BatchGetReportGroupsOutputTypeDef](#batchgetreportgroupsoutputtypedef)
-  - [BatchGetReportsOutputTypeDef](#batchgetreportsoutputtypedef)
+  - [BatchDeleteBuildsInputTypeDef](#batchdeletebuildsinputtypedef)
+  - [BatchDeleteBuildsOutputResponseTypeDef](#batchdeletebuildsoutputresponsetypedef)
+  - [BatchGetBuildBatchesInputTypeDef](#batchgetbuildbatchesinputtypedef)
+  - [BatchGetBuildBatchesOutputResponseTypeDef](#batchgetbuildbatchesoutputresponsetypedef)
+  - [BatchGetBuildsInputTypeDef](#batchgetbuildsinputtypedef)
+  - [BatchGetBuildsOutputResponseTypeDef](#batchgetbuildsoutputresponsetypedef)
+  - [BatchGetProjectsInputTypeDef](#batchgetprojectsinputtypedef)
+  - [BatchGetProjectsOutputResponseTypeDef](#batchgetprojectsoutputresponsetypedef)
+  - [BatchGetReportGroupsInputTypeDef](#batchgetreportgroupsinputtypedef)
+  - [BatchGetReportGroupsOutputResponseTypeDef](#batchgetreportgroupsoutputresponsetypedef)
+  - [BatchGetReportsInputTypeDef](#batchgetreportsinputtypedef)
+  - [BatchGetReportsOutputResponseTypeDef](#batchgetreportsoutputresponsetypedef)
   - [BatchRestrictionsTypeDef](#batchrestrictionstypedef)
   - [BuildArtifactsTypeDef](#buildartifactstypedef)
   - [BuildBatchFilterTypeDef](#buildbatchfiltertypedef)
@@ -28,35 +34,61 @@ type annotations stubs module
   - [CloudWatchLogsConfigTypeDef](#cloudwatchlogsconfigtypedef)
   - [CodeCoverageReportSummaryTypeDef](#codecoveragereportsummarytypedef)
   - [CodeCoverageTypeDef](#codecoveragetypedef)
-  - [CreateProjectOutputTypeDef](#createprojectoutputtypedef)
-  - [CreateReportGroupOutputTypeDef](#createreportgroupoutputtypedef)
-  - [CreateWebhookOutputTypeDef](#createwebhookoutputtypedef)
+  - [CreateProjectInputTypeDef](#createprojectinputtypedef)
+  - [CreateProjectOutputResponseTypeDef](#createprojectoutputresponsetypedef)
+  - [CreateReportGroupInputTypeDef](#createreportgroupinputtypedef)
+  - [CreateReportGroupOutputResponseTypeDef](#createreportgroupoutputresponsetypedef)
+  - [CreateWebhookInputTypeDef](#createwebhookinputtypedef)
+  - [CreateWebhookOutputResponseTypeDef](#createwebhookoutputresponsetypedef)
   - [DebugSessionTypeDef](#debugsessiontypedef)
-  - [DeleteBuildBatchOutputTypeDef](#deletebuildbatchoutputtypedef)
-  - [DeleteSourceCredentialsOutputTypeDef](#deletesourcecredentialsoutputtypedef)
-  - [DescribeCodeCoveragesOutputTypeDef](#describecodecoveragesoutputtypedef)
-  - [DescribeTestCasesOutputTypeDef](#describetestcasesoutputtypedef)
+  - [DeleteBuildBatchInputTypeDef](#deletebuildbatchinputtypedef)
+  - [DeleteBuildBatchOutputResponseTypeDef](#deletebuildbatchoutputresponsetypedef)
+  - [DeleteProjectInputTypeDef](#deleteprojectinputtypedef)
+  - [DeleteReportGroupInputTypeDef](#deletereportgroupinputtypedef)
+  - [DeleteReportInputTypeDef](#deletereportinputtypedef)
+  - [DeleteResourcePolicyInputTypeDef](#deleteresourcepolicyinputtypedef)
+  - [DeleteSourceCredentialsInputTypeDef](#deletesourcecredentialsinputtypedef)
+  - [DeleteSourceCredentialsOutputResponseTypeDef](#deletesourcecredentialsoutputresponsetypedef)
+  - [DeleteWebhookInputTypeDef](#deletewebhookinputtypedef)
+  - [DescribeCodeCoveragesInputTypeDef](#describecodecoveragesinputtypedef)
+  - [DescribeCodeCoveragesOutputResponseTypeDef](#describecodecoveragesoutputresponsetypedef)
+  - [DescribeTestCasesInputTypeDef](#describetestcasesinputtypedef)
+  - [DescribeTestCasesOutputResponseTypeDef](#describetestcasesoutputresponsetypedef)
   - [EnvironmentImageTypeDef](#environmentimagetypedef)
   - [EnvironmentLanguageTypeDef](#environmentlanguagetypedef)
   - [EnvironmentPlatformTypeDef](#environmentplatformtypedef)
   - [EnvironmentVariableTypeDef](#environmentvariabletypedef)
   - [ExportedEnvironmentVariableTypeDef](#exportedenvironmentvariabletypedef)
-  - [GetReportGroupTrendOutputTypeDef](#getreportgrouptrendoutputtypedef)
-  - [GetResourcePolicyOutputTypeDef](#getresourcepolicyoutputtypedef)
+  - [GetReportGroupTrendInputTypeDef](#getreportgrouptrendinputtypedef)
+  - [GetReportGroupTrendOutputResponseTypeDef](#getreportgrouptrendoutputresponsetypedef)
+  - [GetResourcePolicyInputTypeDef](#getresourcepolicyinputtypedef)
+  - [GetResourcePolicyOutputResponseTypeDef](#getresourcepolicyoutputresponsetypedef)
   - [GitSubmodulesConfigTypeDef](#gitsubmodulesconfigtypedef)
-  - [ImportSourceCredentialsOutputTypeDef](#importsourcecredentialsoutputtypedef)
-  - [ListBuildBatchesForProjectOutputTypeDef](#listbuildbatchesforprojectoutputtypedef)
-  - [ListBuildBatchesOutputTypeDef](#listbuildbatchesoutputtypedef)
-  - [ListBuildsForProjectOutputTypeDef](#listbuildsforprojectoutputtypedef)
-  - [ListBuildsOutputTypeDef](#listbuildsoutputtypedef)
-  - [ListCuratedEnvironmentImagesOutputTypeDef](#listcuratedenvironmentimagesoutputtypedef)
-  - [ListProjectsOutputTypeDef](#listprojectsoutputtypedef)
-  - [ListReportGroupsOutputTypeDef](#listreportgroupsoutputtypedef)
-  - [ListReportsForReportGroupOutputTypeDef](#listreportsforreportgroupoutputtypedef)
-  - [ListReportsOutputTypeDef](#listreportsoutputtypedef)
-  - [ListSharedProjectsOutputTypeDef](#listsharedprojectsoutputtypedef)
-  - [ListSharedReportGroupsOutputTypeDef](#listsharedreportgroupsoutputtypedef)
-  - [ListSourceCredentialsOutputTypeDef](#listsourcecredentialsoutputtypedef)
+  - [ImportSourceCredentialsInputTypeDef](#importsourcecredentialsinputtypedef)
+  - [ImportSourceCredentialsOutputResponseTypeDef](#importsourcecredentialsoutputresponsetypedef)
+  - [InvalidateProjectCacheInputTypeDef](#invalidateprojectcacheinputtypedef)
+  - [ListBuildBatchesForProjectInputTypeDef](#listbuildbatchesforprojectinputtypedef)
+  - [ListBuildBatchesForProjectOutputResponseTypeDef](#listbuildbatchesforprojectoutputresponsetypedef)
+  - [ListBuildBatchesInputTypeDef](#listbuildbatchesinputtypedef)
+  - [ListBuildBatchesOutputResponseTypeDef](#listbuildbatchesoutputresponsetypedef)
+  - [ListBuildsForProjectInputTypeDef](#listbuildsforprojectinputtypedef)
+  - [ListBuildsForProjectOutputResponseTypeDef](#listbuildsforprojectoutputresponsetypedef)
+  - [ListBuildsInputTypeDef](#listbuildsinputtypedef)
+  - [ListBuildsOutputResponseTypeDef](#listbuildsoutputresponsetypedef)
+  - [ListCuratedEnvironmentImagesOutputResponseTypeDef](#listcuratedenvironmentimagesoutputresponsetypedef)
+  - [ListProjectsInputTypeDef](#listprojectsinputtypedef)
+  - [ListProjectsOutputResponseTypeDef](#listprojectsoutputresponsetypedef)
+  - [ListReportGroupsInputTypeDef](#listreportgroupsinputtypedef)
+  - [ListReportGroupsOutputResponseTypeDef](#listreportgroupsoutputresponsetypedef)
+  - [ListReportsForReportGroupInputTypeDef](#listreportsforreportgroupinputtypedef)
+  - [ListReportsForReportGroupOutputResponseTypeDef](#listreportsforreportgroupoutputresponsetypedef)
+  - [ListReportsInputTypeDef](#listreportsinputtypedef)
+  - [ListReportsOutputResponseTypeDef](#listreportsoutputresponsetypedef)
+  - [ListSharedProjectsInputTypeDef](#listsharedprojectsinputtypedef)
+  - [ListSharedProjectsOutputResponseTypeDef](#listsharedprojectsoutputresponsetypedef)
+  - [ListSharedReportGroupsInputTypeDef](#listsharedreportgroupsinputtypedef)
+  - [ListSharedReportGroupsOutputResponseTypeDef](#listsharedreportgroupsoutputresponsetypedef)
+  - [ListSourceCredentialsOutputResponseTypeDef](#listsourcecredentialsoutputresponsetypedef)
   - [LogsConfigTypeDef](#logsconfigtypedef)
   - [LogsLocationTypeDef](#logslocationtypedef)
   - [NetworkInterfaceTypeDef](#networkinterfacetypedef)
@@ -71,7 +103,8 @@ type annotations stubs module
   - [ProjectSourceTypeDef](#projectsourcetypedef)
   - [ProjectSourceVersionTypeDef](#projectsourceversiontypedef)
   - [ProjectTypeDef](#projecttypedef)
-  - [PutResourcePolicyOutputTypeDef](#putresourcepolicyoutputtypedef)
+  - [PutResourcePolicyInputTypeDef](#putresourcepolicyinputtypedef)
+  - [PutResourcePolicyOutputResponseTypeDef](#putresourcepolicyoutputresponsetypedef)
   - [RegistryCredentialTypeDef](#registrycredentialtypedef)
   - [ReportExportConfigTypeDef](#reportexportconfigtypedef)
   - [ReportFilterTypeDef](#reportfiltertypedef)
@@ -81,31 +114,50 @@ type annotations stubs module
   - [ReportWithRawDataTypeDef](#reportwithrawdatatypedef)
   - [ResolvedArtifactTypeDef](#resolvedartifacttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RetryBuildBatchOutputTypeDef](#retrybuildbatchoutputtypedef)
-  - [RetryBuildOutputTypeDef](#retrybuildoutputtypedef)
+  - [RetryBuildBatchInputTypeDef](#retrybuildbatchinputtypedef)
+  - [RetryBuildBatchOutputResponseTypeDef](#retrybuildbatchoutputresponsetypedef)
+  - [RetryBuildInputTypeDef](#retrybuildinputtypedef)
+  - [RetryBuildOutputResponseTypeDef](#retrybuildoutputresponsetypedef)
   - [S3LogsConfigTypeDef](#s3logsconfigtypedef)
   - [S3ReportExportConfigTypeDef](#s3reportexportconfigtypedef)
   - [SourceAuthTypeDef](#sourceauthtypedef)
   - [SourceCredentialsInfoTypeDef](#sourcecredentialsinfotypedef)
-  - [StartBuildBatchOutputTypeDef](#startbuildbatchoutputtypedef)
-  - [StartBuildOutputTypeDef](#startbuildoutputtypedef)
-  - [StopBuildBatchOutputTypeDef](#stopbuildbatchoutputtypedef)
-  - [StopBuildOutputTypeDef](#stopbuildoutputtypedef)
+  - [StartBuildBatchInputTypeDef](#startbuildbatchinputtypedef)
+  - [StartBuildBatchOutputResponseTypeDef](#startbuildbatchoutputresponsetypedef)
+  - [StartBuildInputTypeDef](#startbuildinputtypedef)
+  - [StartBuildOutputResponseTypeDef](#startbuildoutputresponsetypedef)
+  - [StopBuildBatchInputTypeDef](#stopbuildbatchinputtypedef)
+  - [StopBuildBatchOutputResponseTypeDef](#stopbuildbatchoutputresponsetypedef)
+  - [StopBuildInputTypeDef](#stopbuildinputtypedef)
+  - [StopBuildOutputResponseTypeDef](#stopbuildoutputresponsetypedef)
   - [TagTypeDef](#tagtypedef)
   - [TestCaseFilterTypeDef](#testcasefiltertypedef)
   - [TestCaseTypeDef](#testcasetypedef)
   - [TestReportSummaryTypeDef](#testreportsummarytypedef)
-  - [UpdateProjectOutputTypeDef](#updateprojectoutputtypedef)
-  - [UpdateReportGroupOutputTypeDef](#updatereportgroupoutputtypedef)
-  - [UpdateWebhookOutputTypeDef](#updatewebhookoutputtypedef)
+  - [UpdateProjectInputTypeDef](#updateprojectinputtypedef)
+  - [UpdateProjectOutputResponseTypeDef](#updateprojectoutputresponsetypedef)
+  - [UpdateReportGroupInputTypeDef](#updatereportgroupinputtypedef)
+  - [UpdateReportGroupOutputResponseTypeDef](#updatereportgroupoutputresponsetypedef)
+  - [UpdateWebhookInputTypeDef](#updatewebhookinputtypedef)
+  - [UpdateWebhookOutputResponseTypeDef](#updatewebhookoutputresponsetypedef)
   - [VpcConfigTypeDef](#vpcconfigtypedef)
   - [WebhookFilterTypeDef](#webhookfiltertypedef)
   - [WebhookTypeDef](#webhooktypedef)
 
-## BatchDeleteBuildsOutputTypeDef
+## BatchDeleteBuildsInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import BatchDeleteBuildsOutputTypeDef
+from mypy_boto3_codebuild.type_defs import BatchDeleteBuildsInputTypeDef
+```
+
+Required fields:
+
+- `ids`: `List`\[`str`\]
+
+## BatchDeleteBuildsOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import BatchDeleteBuildsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -116,10 +168,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchGetBuildBatchesOutputTypeDef
+## BatchGetBuildBatchesInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import BatchGetBuildBatchesOutputTypeDef
+from mypy_boto3_codebuild.type_defs import BatchGetBuildBatchesInputTypeDef
+```
+
+Required fields:
+
+- `ids`: `List`\[`str`\]
+
+## BatchGetBuildBatchesOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import BatchGetBuildBatchesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -130,10 +192,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchGetBuildsOutputTypeDef
+## BatchGetBuildsInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import BatchGetBuildsOutputTypeDef
+from mypy_boto3_codebuild.type_defs import BatchGetBuildsInputTypeDef
+```
+
+Required fields:
+
+- `ids`: `List`\[`str`\]
+
+## BatchGetBuildsOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import BatchGetBuildsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -143,10 +215,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchGetProjectsOutputTypeDef
+## BatchGetProjectsInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import BatchGetProjectsOutputTypeDef
+from mypy_boto3_codebuild.type_defs import BatchGetProjectsInputTypeDef
+```
+
+Required fields:
+
+- `names`: `List`\[`str`\]
+
+## BatchGetProjectsOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import BatchGetProjectsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -156,10 +238,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchGetReportGroupsOutputTypeDef
+## BatchGetReportGroupsInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import BatchGetReportGroupsOutputTypeDef
+from mypy_boto3_codebuild.type_defs import BatchGetReportGroupsInputTypeDef
+```
+
+Required fields:
+
+- `reportGroupArns`: `List`\[`str`\]
+
+## BatchGetReportGroupsOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import BatchGetReportGroupsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -170,10 +262,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchGetReportsOutputTypeDef
+## BatchGetReportsInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import BatchGetReportsOutputTypeDef
+from mypy_boto3_codebuild.type_defs import BatchGetReportsInputTypeDef
+```
+
+Required fields:
+
+- `reportArns`: `List`\[`str`\]
+
+## BatchGetReportsOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import BatchGetReportsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -449,10 +551,50 @@ Optional fields:
 - `branchesMissed`: `int`
 - `expired`: `datetime`
 
-## CreateProjectOutputTypeDef
+## CreateProjectInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import CreateProjectOutputTypeDef
+from mypy_boto3_codebuild.type_defs import CreateProjectInputTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+- `source`: [ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)
+- `artifacts`:
+  [ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)
+- `environment`:
+  [ProjectEnvironmentTypeDef](./type_defs.md#projectenvironmenttypedef)
+- `serviceRole`: `str`
+
+Optional fields:
+
+- `description`: `str`
+- `secondarySources`:
+  `List`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
+- `sourceVersion`: `str`
+- `secondarySourceVersions`:
+  `List`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
+- `secondaryArtifacts`:
+  `List`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
+- `cache`: [ProjectCacheTypeDef](./type_defs.md#projectcachetypedef)
+- `timeoutInMinutes`: `int`
+- `queuedTimeoutInMinutes`: `int`
+- `encryptionKey`: `str`
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `vpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
+- `badgeEnabled`: `bool`
+- `logsConfig`: [LogsConfigTypeDef](./type_defs.md#logsconfigtypedef)
+- `fileSystemLocations`:
+  `List`\[[ProjectFileSystemLocationTypeDef](./type_defs.md#projectfilesystemlocationtypedef)\]
+- `buildBatchConfig`:
+  [ProjectBuildBatchConfigTypeDef](./type_defs.md#projectbuildbatchconfigtypedef)
+- `concurrentBuildLimit`: `int`
+
+## CreateProjectOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import CreateProjectOutputResponseTypeDef
 ```
 
 Required fields:
@@ -461,10 +603,27 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateReportGroupOutputTypeDef
+## CreateReportGroupInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import CreateReportGroupOutputTypeDef
+from mypy_boto3_codebuild.type_defs import CreateReportGroupInputTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+- `type`: [ReportTypeType](./literals.md#reporttypetype)
+- `exportConfig`:
+  [ReportExportConfigTypeDef](./type_defs.md#reportexportconfigtypedef)
+
+Optional fields:
+
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateReportGroupOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import CreateReportGroupOutputResponseTypeDef
 ```
 
 Required fields:
@@ -473,10 +632,27 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateWebhookOutputTypeDef
+## CreateWebhookInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import CreateWebhookOutputTypeDef
+from mypy_boto3_codebuild.type_defs import CreateWebhookInputTypeDef
+```
+
+Required fields:
+
+- `projectName`: `str`
+
+Optional fields:
+
+- `branchFilter`: `str`
+- `filterGroups`:
+  `List`\[`List`\[[WebhookFilterTypeDef](./type_defs.md#webhookfiltertypedef)\]\]
+- `buildType`: [WebhookBuildTypeType](./literals.md#webhookbuildtypetype)
+
+## CreateWebhookOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import CreateWebhookOutputResponseTypeDef
 ```
 
 Required fields:
@@ -496,10 +672,20 @@ Optional fields:
 - `sessionEnabled`: `bool`
 - `sessionTarget`: `str`
 
-## DeleteBuildBatchOutputTypeDef
+## DeleteBuildBatchInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import DeleteBuildBatchOutputTypeDef
+from mypy_boto3_codebuild.type_defs import DeleteBuildBatchInputTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
+## DeleteBuildBatchOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import DeleteBuildBatchOutputResponseTypeDef
 ```
 
 Required fields:
@@ -511,10 +697,64 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteSourceCredentialsOutputTypeDef
+## DeleteProjectInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import DeleteSourceCredentialsOutputTypeDef
+from mypy_boto3_codebuild.type_defs import DeleteProjectInputTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+
+## DeleteReportGroupInputTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import DeleteReportGroupInputTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+
+Optional fields:
+
+- `deleteReports`: `bool`
+
+## DeleteReportInputTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import DeleteReportInputTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+
+## DeleteResourcePolicyInputTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import DeleteResourcePolicyInputTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+
+## DeleteSourceCredentialsInputTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import DeleteSourceCredentialsInputTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+
+## DeleteSourceCredentialsOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import DeleteSourceCredentialsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -523,10 +763,40 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeCodeCoveragesOutputTypeDef
+## DeleteWebhookInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import DescribeCodeCoveragesOutputTypeDef
+from mypy_boto3_codebuild.type_defs import DeleteWebhookInputTypeDef
+```
+
+Required fields:
+
+- `projectName`: `str`
+
+## DescribeCodeCoveragesInputTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import DescribeCodeCoveragesInputTypeDef
+```
+
+Required fields:
+
+- `reportArn`: `str`
+
+Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
+- `sortBy`:
+  [ReportCodeCoverageSortByTypeType](./literals.md#reportcodecoveragesortbytypetype)
+- `minLineCoveragePercentage`: `float`
+- `maxLineCoveragePercentage`: `float`
+
+## DescribeCodeCoveragesOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import DescribeCodeCoveragesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -537,10 +807,26 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTestCasesOutputTypeDef
+## DescribeTestCasesInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import DescribeTestCasesOutputTypeDef
+from mypy_boto3_codebuild.type_defs import DescribeTestCasesInputTypeDef
+```
+
+Required fields:
+
+- `reportArn`: `str`
+
+Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `filter`: [TestCaseFilterTypeDef](./type_defs.md#testcasefiltertypedef)
+
+## DescribeTestCasesOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import DescribeTestCasesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -613,10 +899,26 @@ Optional fields:
 - `name`: `str`
 - `value`: `str`
 
-## GetReportGroupTrendOutputTypeDef
+## GetReportGroupTrendInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import GetReportGroupTrendOutputTypeDef
+from mypy_boto3_codebuild.type_defs import GetReportGroupTrendInputTypeDef
+```
+
+Required fields:
+
+- `reportGroupArn`: `str`
+- `trendField`:
+  [ReportGroupTrendFieldTypeType](./literals.md#reportgrouptrendfieldtypetype)
+
+Optional fields:
+
+- `numOfReports`: `int`
+
+## GetReportGroupTrendOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import GetReportGroupTrendOutputResponseTypeDef
 ```
 
 Required fields:
@@ -628,10 +930,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResourcePolicyOutputTypeDef
+## GetResourcePolicyInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import GetResourcePolicyOutputTypeDef
+from mypy_boto3_codebuild.type_defs import GetResourcePolicyInputTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+
+## GetResourcePolicyOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import GetResourcePolicyOutputResponseTypeDef
 ```
 
 Required fields:
@@ -650,10 +962,27 @@ Required fields:
 
 - `fetchSubmodules`: `bool`
 
-## ImportSourceCredentialsOutputTypeDef
+## ImportSourceCredentialsInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import ImportSourceCredentialsOutputTypeDef
+from mypy_boto3_codebuild.type_defs import ImportSourceCredentialsInputTypeDef
+```
+
+Required fields:
+
+- `token`: `str`
+- `serverType`: [ServerTypeType](./literals.md#servertypetype)
+- `authType`: [AuthTypeType](./literals.md#authtypetype)
+
+Optional fields:
+
+- `username`: `str`
+- `shouldOverwrite`: `bool`
+
+## ImportSourceCredentialsOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import ImportSourceCredentialsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -662,10 +991,34 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListBuildBatchesForProjectOutputTypeDef
+## InvalidateProjectCacheInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import ListBuildBatchesForProjectOutputTypeDef
+from mypy_boto3_codebuild.type_defs import InvalidateProjectCacheInputTypeDef
+```
+
+Required fields:
+
+- `projectName`: `str`
+
+## ListBuildBatchesForProjectInputTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import ListBuildBatchesForProjectInputTypeDef
+```
+
+Optional fields:
+
+- `projectName`: `str`
+- `filter`: [BuildBatchFilterTypeDef](./type_defs.md#buildbatchfiltertypedef)
+- `maxResults`: `int`
+- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
+- `nextToken`: `str`
+
+## ListBuildBatchesForProjectOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import ListBuildBatchesForProjectOutputResponseTypeDef
 ```
 
 Required fields:
@@ -675,10 +1028,23 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListBuildBatchesOutputTypeDef
+## ListBuildBatchesInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import ListBuildBatchesOutputTypeDef
+from mypy_boto3_codebuild.type_defs import ListBuildBatchesInputTypeDef
+```
+
+Optional fields:
+
+- `filter`: [BuildBatchFilterTypeDef](./type_defs.md#buildbatchfiltertypedef)
+- `maxResults`: `int`
+- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
+- `nextToken`: `str`
+
+## ListBuildBatchesOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import ListBuildBatchesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -688,10 +1054,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListBuildsForProjectOutputTypeDef
+## ListBuildsForProjectInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import ListBuildsForProjectOutputTypeDef
+from mypy_boto3_codebuild.type_defs import ListBuildsForProjectInputTypeDef
+```
+
+Required fields:
+
+- `projectName`: `str`
+
+Optional fields:
+
+- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
+- `nextToken`: `str`
+
+## ListBuildsForProjectOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import ListBuildsForProjectOutputResponseTypeDef
 ```
 
 Required fields:
@@ -701,10 +1082,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListBuildsOutputTypeDef
+## ListBuildsInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import ListBuildsOutputTypeDef
+from mypy_boto3_codebuild.type_defs import ListBuildsInputTypeDef
+```
+
+Optional fields:
+
+- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
+- `nextToken`: `str`
+
+## ListBuildsOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import ListBuildsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -714,10 +1106,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListCuratedEnvironmentImagesOutputTypeDef
+## ListCuratedEnvironmentImagesOutputResponseTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import ListCuratedEnvironmentImagesOutputTypeDef
+from mypy_boto3_codebuild.type_defs import ListCuratedEnvironmentImagesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -727,10 +1119,22 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListProjectsOutputTypeDef
+## ListProjectsInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import ListProjectsOutputTypeDef
+from mypy_boto3_codebuild.type_defs import ListProjectsInputTypeDef
+```
+
+Optional fields:
+
+- `sortBy`: [ProjectSortByTypeType](./literals.md#projectsortbytypetype)
+- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
+- `nextToken`: `str`
+
+## ListProjectsOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import ListProjectsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -740,10 +1144,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListReportGroupsOutputTypeDef
+## ListReportGroupsInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import ListReportGroupsOutputTypeDef
+from mypy_boto3_codebuild.type_defs import ListReportGroupsInputTypeDef
+```
+
+Optional fields:
+
+- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
+- `sortBy`:
+  [ReportGroupSortByTypeType](./literals.md#reportgroupsortbytypetype)
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListReportGroupsOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import ListReportGroupsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -753,10 +1171,27 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListReportsForReportGroupOutputTypeDef
+## ListReportsForReportGroupInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import ListReportsForReportGroupOutputTypeDef
+from mypy_boto3_codebuild.type_defs import ListReportsForReportGroupInputTypeDef
+```
+
+Required fields:
+
+- `reportGroupArn`: `str`
+
+Optional fields:
+
+- `nextToken`: `str`
+- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
+- `maxResults`: `int`
+- `filter`: [ReportFilterTypeDef](./type_defs.md#reportfiltertypedef)
+
+## ListReportsForReportGroupOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import ListReportsForReportGroupOutputResponseTypeDef
 ```
 
 Required fields:
@@ -766,10 +1201,23 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListReportsOutputTypeDef
+## ListReportsInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import ListReportsOutputTypeDef
+from mypy_boto3_codebuild.type_defs import ListReportsInputTypeDef
+```
+
+Optional fields:
+
+- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `filter`: [ReportFilterTypeDef](./type_defs.md#reportfiltertypedef)
+
+## ListReportsOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import ListReportsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -779,10 +1227,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSharedProjectsOutputTypeDef
+## ListSharedProjectsInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import ListSharedProjectsOutputTypeDef
+from mypy_boto3_codebuild.type_defs import ListSharedProjectsInputTypeDef
+```
+
+Optional fields:
+
+- `sortBy`:
+  [SharedResourceSortByTypeType](./literals.md#sharedresourcesortbytypetype)
+- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListSharedProjectsOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import ListSharedProjectsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -792,10 +1254,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSharedReportGroupsOutputTypeDef
+## ListSharedReportGroupsInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import ListSharedReportGroupsOutputTypeDef
+from mypy_boto3_codebuild.type_defs import ListSharedReportGroupsInputTypeDef
+```
+
+Optional fields:
+
+- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
+- `sortBy`:
+  [SharedResourceSortByTypeType](./literals.md#sharedresourcesortbytypetype)
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListSharedReportGroupsOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import ListSharedReportGroupsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -805,10 +1281,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSourceCredentialsOutputTypeDef
+## ListSourceCredentialsOutputResponseTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import ListSourceCredentialsOutputTypeDef
+from mypy_boto3_codebuild.type_defs import ListSourceCredentialsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1057,10 +1533,21 @@ Optional fields:
   [ProjectBuildBatchConfigTypeDef](./type_defs.md#projectbuildbatchconfigtypedef)
 - `concurrentBuildLimit`: `int`
 
-## PutResourcePolicyOutputTypeDef
+## PutResourcePolicyInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import PutResourcePolicyOutputTypeDef
+from mypy_boto3_codebuild.type_defs import PutResourcePolicyInputTypeDef
+```
+
+Required fields:
+
+- `policy`: `str`
+- `resourceArn`: `str`
+
+## PutResourcePolicyOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import PutResourcePolicyOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1196,10 +1683,22 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## RetryBuildBatchOutputTypeDef
+## RetryBuildBatchInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import RetryBuildBatchOutputTypeDef
+from mypy_boto3_codebuild.type_defs import RetryBuildBatchInputTypeDef
+```
+
+Optional fields:
+
+- `id`: `str`
+- `idempotencyToken`: `str`
+- `retryType`: [RetryBuildBatchTypeType](./literals.md#retrybuildbatchtypetype)
+
+## RetryBuildBatchOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import RetryBuildBatchOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1208,10 +1707,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RetryBuildOutputTypeDef
+## RetryBuildInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import RetryBuildOutputTypeDef
+from mypy_boto3_codebuild.type_defs import RetryBuildInputTypeDef
+```
+
+Optional fields:
+
+- `id`: `str`
+- `idempotencyToken`: `str`
+
+## RetryBuildOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import RetryBuildOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1277,10 +1787,63 @@ Optional fields:
 - `serverType`: [ServerTypeType](./literals.md#servertypetype)
 - `authType`: [AuthTypeType](./literals.md#authtypetype)
 
-## StartBuildBatchOutputTypeDef
+## StartBuildBatchInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import StartBuildBatchOutputTypeDef
+from mypy_boto3_codebuild.type_defs import StartBuildBatchInputTypeDef
+```
+
+Required fields:
+
+- `projectName`: `str`
+
+Optional fields:
+
+- `secondarySourcesOverride`:
+  `List`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
+- `secondarySourcesVersionOverride`:
+  `List`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
+- `sourceVersion`: `str`
+- `artifactsOverride`:
+  [ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)
+- `secondaryArtifactsOverride`:
+  `List`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
+- `environmentVariablesOverride`:
+  `List`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
+- `sourceTypeOverride`: [SourceTypeType](./literals.md#sourcetypetype)
+- `sourceLocationOverride`: `str`
+- `sourceAuthOverride`: [SourceAuthTypeDef](./type_defs.md#sourceauthtypedef)
+- `gitCloneDepthOverride`: `int`
+- `gitSubmodulesConfigOverride`:
+  [GitSubmodulesConfigTypeDef](./type_defs.md#gitsubmodulesconfigtypedef)
+- `buildspecOverride`: `str`
+- `insecureSslOverride`: `bool`
+- `reportBuildBatchStatusOverride`: `bool`
+- `environmentTypeOverride`:
+  [EnvironmentTypeType](./literals.md#environmenttypetype)
+- `imageOverride`: `str`
+- `computeTypeOverride`: [ComputeTypeType](./literals.md#computetypetype)
+- `certificateOverride`: `str`
+- `cacheOverride`: [ProjectCacheTypeDef](./type_defs.md#projectcachetypedef)
+- `serviceRoleOverride`: `str`
+- `privilegedModeOverride`: `bool`
+- `buildTimeoutInMinutesOverride`: `int`
+- `queuedTimeoutInMinutesOverride`: `int`
+- `encryptionKeyOverride`: `str`
+- `idempotencyToken`: `str`
+- `logsConfigOverride`: [LogsConfigTypeDef](./type_defs.md#logsconfigtypedef)
+- `registryCredentialOverride`:
+  [RegistryCredentialTypeDef](./type_defs.md#registrycredentialtypedef)
+- `imagePullCredentialsTypeOverride`:
+  [ImagePullCredentialsTypeType](./literals.md#imagepullcredentialstypetype)
+- `buildBatchConfigOverride`:
+  [ProjectBuildBatchConfigTypeDef](./type_defs.md#projectbuildbatchconfigtypedef)
+- `debugSessionEnabled`: `bool`
+
+## StartBuildBatchOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import StartBuildBatchOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1289,10 +1852,63 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartBuildOutputTypeDef
+## StartBuildInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import StartBuildOutputTypeDef
+from mypy_boto3_codebuild.type_defs import StartBuildInputTypeDef
+```
+
+Required fields:
+
+- `projectName`: `str`
+
+Optional fields:
+
+- `secondarySourcesOverride`:
+  `List`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
+- `secondarySourcesVersionOverride`:
+  `List`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
+- `sourceVersion`: `str`
+- `artifactsOverride`:
+  [ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)
+- `secondaryArtifactsOverride`:
+  `List`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
+- `environmentVariablesOverride`:
+  `List`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
+- `sourceTypeOverride`: [SourceTypeType](./literals.md#sourcetypetype)
+- `sourceLocationOverride`: `str`
+- `sourceAuthOverride`: [SourceAuthTypeDef](./type_defs.md#sourceauthtypedef)
+- `gitCloneDepthOverride`: `int`
+- `gitSubmodulesConfigOverride`:
+  [GitSubmodulesConfigTypeDef](./type_defs.md#gitsubmodulesconfigtypedef)
+- `buildspecOverride`: `str`
+- `insecureSslOverride`: `bool`
+- `reportBuildStatusOverride`: `bool`
+- `buildStatusConfigOverride`:
+  [BuildStatusConfigTypeDef](./type_defs.md#buildstatusconfigtypedef)
+- `environmentTypeOverride`:
+  [EnvironmentTypeType](./literals.md#environmenttypetype)
+- `imageOverride`: `str`
+- `computeTypeOverride`: [ComputeTypeType](./literals.md#computetypetype)
+- `certificateOverride`: `str`
+- `cacheOverride`: [ProjectCacheTypeDef](./type_defs.md#projectcachetypedef)
+- `serviceRoleOverride`: `str`
+- `privilegedModeOverride`: `bool`
+- `timeoutInMinutesOverride`: `int`
+- `queuedTimeoutInMinutesOverride`: `int`
+- `encryptionKeyOverride`: `str`
+- `idempotencyToken`: `str`
+- `logsConfigOverride`: [LogsConfigTypeDef](./type_defs.md#logsconfigtypedef)
+- `registryCredentialOverride`:
+  [RegistryCredentialTypeDef](./type_defs.md#registrycredentialtypedef)
+- `imagePullCredentialsTypeOverride`:
+  [ImagePullCredentialsTypeType](./literals.md#imagepullcredentialstypetype)
+- `debugSessionEnabled`: `bool`
+
+## StartBuildOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import StartBuildOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1301,10 +1917,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopBuildBatchOutputTypeDef
+## StopBuildBatchInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import StopBuildBatchOutputTypeDef
+from mypy_boto3_codebuild.type_defs import StopBuildBatchInputTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
+## StopBuildBatchOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import StopBuildBatchOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1313,10 +1939,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopBuildOutputTypeDef
+## StopBuildInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import StopBuildOutputTypeDef
+from mypy_boto3_codebuild.type_defs import StopBuildInputTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
+## StopBuildOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import StopBuildOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1376,10 +2012,50 @@ Required fields:
 - `statusCounts`: `Dict`\[`str`, `int`\]
 - `durationInNanoSeconds`: `int`
 
-## UpdateProjectOutputTypeDef
+## UpdateProjectInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import UpdateProjectOutputTypeDef
+from mypy_boto3_codebuild.type_defs import UpdateProjectInputTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+
+Optional fields:
+
+- `description`: `str`
+- `source`: [ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)
+- `secondarySources`:
+  `List`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
+- `sourceVersion`: `str`
+- `secondarySourceVersions`:
+  `List`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
+- `artifacts`:
+  [ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)
+- `secondaryArtifacts`:
+  `List`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
+- `cache`: [ProjectCacheTypeDef](./type_defs.md#projectcachetypedef)
+- `environment`:
+  [ProjectEnvironmentTypeDef](./type_defs.md#projectenvironmenttypedef)
+- `serviceRole`: `str`
+- `timeoutInMinutes`: `int`
+- `queuedTimeoutInMinutes`: `int`
+- `encryptionKey`: `str`
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `vpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
+- `badgeEnabled`: `bool`
+- `logsConfig`: [LogsConfigTypeDef](./type_defs.md#logsconfigtypedef)
+- `fileSystemLocations`:
+  `List`\[[ProjectFileSystemLocationTypeDef](./type_defs.md#projectfilesystemlocationtypedef)\]
+- `buildBatchConfig`:
+  [ProjectBuildBatchConfigTypeDef](./type_defs.md#projectbuildbatchconfigtypedef)
+- `concurrentBuildLimit`: `int`
+
+## UpdateProjectOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import UpdateProjectOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1388,10 +2064,26 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateReportGroupOutputTypeDef
+## UpdateReportGroupInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import UpdateReportGroupOutputTypeDef
+from mypy_boto3_codebuild.type_defs import UpdateReportGroupInputTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+
+Optional fields:
+
+- `exportConfig`:
+  [ReportExportConfigTypeDef](./type_defs.md#reportexportconfigtypedef)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## UpdateReportGroupOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import UpdateReportGroupOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1400,10 +2092,28 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateWebhookOutputTypeDef
+## UpdateWebhookInputTypeDef
 
 ```python
-from mypy_boto3_codebuild.type_defs import UpdateWebhookOutputTypeDef
+from mypy_boto3_codebuild.type_defs import UpdateWebhookInputTypeDef
+```
+
+Required fields:
+
+- `projectName`: `str`
+
+Optional fields:
+
+- `branchFilter`: `str`
+- `rotateSecret`: `bool`
+- `filterGroups`:
+  `List`\[`List`\[[WebhookFilterTypeDef](./type_defs.md#webhookfiltertypedef)\]\]
+- `buildType`: [WebhookBuildTypeType](./literals.md#webhookbuildtypetype)
+
+## UpdateWebhookOutputResponseTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import UpdateWebhookOutputResponseTypeDef
 ```
 
 Required fields:

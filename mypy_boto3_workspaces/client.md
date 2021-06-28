@@ -118,11 +118,17 @@ Exceptions:
 
 ### associate_connection_alias
 
+Associates the specified connection alias with the specified directory to
+enable cross-Region redirection.
+
 Type annotations for `boto3.client("workspaces").associate_connection_alias`
 method.
 
 Boto3 documentation:
 [WorkSpaces.Client.associate_connection_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.associate_connection_alias)
+
+Arguments mapping described in
+[AssociateConnectionAliasRequestTypeDef](./type_defs.md#associateconnectionaliasrequesttypedef).
 
 Keyword-only arguments:
 
@@ -130,14 +136,19 @@ Keyword-only arguments:
 - `ResourceId`: `str` *(required)*
 
 Returns
-[AssociateConnectionAliasResultTypeDef](./type_defs.md#associateconnectionaliasresulttypedef).
+[AssociateConnectionAliasResultResponseTypeDef](./type_defs.md#associateconnectionaliasresultresponsetypedef).
 
 ### associate_ip_groups
+
+Associates the specified IP access control group with the specified directory.
 
 Type annotations for `boto3.client("workspaces").associate_ip_groups` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.associate_ip_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.associate_ip_groups)
+
+Arguments mapping described in
+[AssociateIpGroupsRequestTypeDef](./type_defs.md#associateipgroupsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -148,10 +159,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### authorize_ip_rules
 
+Adds one or more rules to the specified IP access control group.
+
 Type annotations for `boto3.client("workspaces").authorize_ip_rules` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.authorize_ip_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.authorize_ip_rules)
+
+Arguments mapping described in
+[AuthorizeIpRulesRequestTypeDef](./type_defs.md#authorizeiprulesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -162,6 +178,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("workspaces").can_paginate` method.
 
@@ -176,10 +194,15 @@ Returns `bool`.
 
 ### copy_workspace_image
 
+Copies the specified image from the specified Region to the current Region.
+
 Type annotations for `boto3.client("workspaces").copy_workspace_image` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.copy_workspace_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.copy_workspace_image)
+
+Arguments mapping described in
+[CopyWorkspaceImageRequestTypeDef](./type_defs.md#copyworkspaceimagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -190,9 +213,11 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CopyWorkspaceImageResultTypeDef](./type_defs.md#copyworkspaceimageresulttypedef).
+[CopyWorkspaceImageResultResponseTypeDef](./type_defs.md#copyworkspaceimageresultresponsetypedef).
 
 ### create_connection_alias
+
+Creates the specified connection alias for use with cross-Region redirection.
 
 Type annotations for `boto3.client("workspaces").create_connection_alias`
 method.
@@ -200,20 +225,28 @@ method.
 Boto3 documentation:
 [WorkSpaces.Client.create_connection_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_connection_alias)
 
+Arguments mapping described in
+[CreateConnectionAliasRequestTypeDef](./type_defs.md#createconnectionaliasrequesttypedef).
+
 Keyword-only arguments:
 
 - `ConnectionString`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateConnectionAliasResultTypeDef](./type_defs.md#createconnectionaliasresulttypedef).
+[CreateConnectionAliasResultResponseTypeDef](./type_defs.md#createconnectionaliasresultresponsetypedef).
 
 ### create_ip_group
+
+Creates an IP access control group.
 
 Type annotations for `boto3.client("workspaces").create_ip_group` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.create_ip_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_ip_group)
+
+Arguments mapping described in
+[CreateIpGroupRequestTypeDef](./type_defs.md#createipgrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -223,14 +256,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateIpGroupResultTypeDef](./type_defs.md#createipgroupresulttypedef).
+[CreateIpGroupResultResponseTypeDef](./type_defs.md#createipgroupresultresponsetypedef).
 
 ### create_tags
+
+Creates the specified tags for the specified WorkSpaces resource.
 
 Type annotations for `boto3.client("workspaces").create_tags` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_tags)
+
+Arguments mapping described in
+[CreateTagsRequestTypeDef](./type_defs.md#createtagsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -241,11 +279,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### create_workspace_bundle
 
+Creates the specified WorkSpace bundle.
+
 Type annotations for `boto3.client("workspaces").create_workspace_bundle`
 method.
 
 Boto3 documentation:
 [WorkSpaces.Client.create_workspace_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_workspace_bundle)
+
+Arguments mapping described in
+[CreateWorkspaceBundleRequestTypeDef](./type_defs.md#createworkspacebundlerequesttypedef).
 
 Keyword-only arguments:
 
@@ -260,14 +303,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateWorkspaceBundleResultTypeDef](./type_defs.md#createworkspacebundleresulttypedef).
+[CreateWorkspaceBundleResultResponseTypeDef](./type_defs.md#createworkspacebundleresultresponsetypedef).
 
 ### create_workspaces
+
+Creates one or more WorkSpaces.
 
 Type annotations for `boto3.client("workspaces").create_workspaces` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.create_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_workspaces)
+
+Arguments mapping described in
+[CreateWorkspacesRequestTypeDef](./type_defs.md#createworkspacesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -276,15 +324,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateWorkspacesResultTypeDef](./type_defs.md#createworkspacesresulttypedef).
+[CreateWorkspacesResultResponseTypeDef](./type_defs.md#createworkspacesresultresponsetypedef).
 
 ### delete_connection_alias
+
+Deletes the specified connection alias.
 
 Type annotations for `boto3.client("workspaces").delete_connection_alias`
 method.
 
 Boto3 documentation:
 [WorkSpaces.Client.delete_connection_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_connection_alias)
+
+Arguments mapping described in
+[DeleteConnectionAliasRequestTypeDef](./type_defs.md#deleteconnectionaliasrequesttypedef).
 
 Keyword-only arguments:
 
@@ -294,10 +347,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_ip_group
 
+Deletes the specified IP access control group.
+
 Type annotations for `boto3.client("workspaces").delete_ip_group` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.delete_ip_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_ip_group)
+
+Arguments mapping described in
+[DeleteIpGroupRequestTypeDef](./type_defs.md#deleteipgrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -307,10 +365,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_tags
 
+Deletes the specified tags from the specified WorkSpaces resource.
+
 Type annotations for `boto3.client("workspaces").delete_tags` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_tags)
+
+Arguments mapping described in
+[DeleteTagsRequestTypeDef](./type_defs.md#deletetagsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -321,11 +384,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_workspace_bundle
 
+Deletes the specified WorkSpace bundle.
+
 Type annotations for `boto3.client("workspaces").delete_workspace_bundle`
 method.
 
 Boto3 documentation:
 [WorkSpaces.Client.delete_workspace_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_workspace_bundle)
+
+Arguments mapping described in
+[DeleteWorkspaceBundleRequestTypeDef](./type_defs.md#deleteworkspacebundlerequesttypedef).
 
 Keyword-only arguments:
 
@@ -335,11 +403,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_workspace_image
 
+Deletes the specified image from your account.
+
 Type annotations for `boto3.client("workspaces").delete_workspace_image`
 method.
 
 Boto3 documentation:
 [WorkSpaces.Client.delete_workspace_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_workspace_image)
+
+Arguments mapping described in
+[DeleteWorkspaceImageRequestTypeDef](./type_defs.md#deleteworkspaceimagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -349,11 +422,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### deregister_workspace_directory
 
+Deregisters the specified directory.
+
 Type annotations for
 `boto3.client("workspaces").deregister_workspace_directory` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.deregister_workspace_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.deregister_workspace_directory)
+
+Arguments mapping described in
+[DeregisterWorkspaceDirectoryRequestTypeDef](./type_defs.md#deregisterworkspacedirectoryrequesttypedef).
 
 Keyword-only arguments:
 
@@ -363,15 +441,21 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_account
 
+Retrieves a list that describes the configuration of Bring Your Own License
+(BYOL) for the specified account.
+
 Type annotations for `boto3.client("workspaces").describe_account` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.describe_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_account)
 
 Returns
-[DescribeAccountResultTypeDef](./type_defs.md#describeaccountresulttypedef).
+[DescribeAccountResultResponseTypeDef](./type_defs.md#describeaccountresultresponsetypedef).
 
 ### describe_account_modifications
+
+Retrieves a list that describes modifications to the configuration of Bring
+Your Own License (BYOL) for the specified account.
 
 Type annotations for
 `boto3.client("workspaces").describe_account_modifications` method.
@@ -379,14 +463,20 @@ Type annotations for
 Boto3 documentation:
 [WorkSpaces.Client.describe_account_modifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_account_modifications)
 
+Arguments mapping described in
+[DescribeAccountModificationsRequestTypeDef](./type_defs.md#describeaccountmodificationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 
 Returns
-[DescribeAccountModificationsResultTypeDef](./type_defs.md#describeaccountmodificationsresulttypedef).
+[DescribeAccountModificationsResultResponseTypeDef](./type_defs.md#describeaccountmodificationsresultresponsetypedef).
 
 ### describe_client_properties
+
+Retrieves a list that describes one or more specified Amazon WorkSpaces
+clients.
 
 Type annotations for `boto3.client("workspaces").describe_client_properties`
 method.
@@ -394,20 +484,29 @@ method.
 Boto3 documentation:
 [WorkSpaces.Client.describe_client_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_client_properties)
 
+Arguments mapping described in
+[DescribeClientPropertiesRequestTypeDef](./type_defs.md#describeclientpropertiesrequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeClientPropertiesResultTypeDef](./type_defs.md#describeclientpropertiesresulttypedef).
+[DescribeClientPropertiesResultResponseTypeDef](./type_defs.md#describeclientpropertiesresultresponsetypedef).
 
 ### describe_connection_alias_permissions
+
+Describes the permissions that the owner of a connection alias has granted to
+another AWS account for the specified connection alias.
 
 Type annotations for
 `boto3.client("workspaces").describe_connection_alias_permissions` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.describe_connection_alias_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_connection_alias_permissions)
+
+Arguments mapping described in
+[DescribeConnectionAliasPermissionsRequestTypeDef](./type_defs.md#describeconnectionaliaspermissionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -416,15 +515,21 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeConnectionAliasPermissionsResultTypeDef](./type_defs.md#describeconnectionaliaspermissionsresulttypedef).
+[DescribeConnectionAliasPermissionsResultResponseTypeDef](./type_defs.md#describeconnectionaliaspermissionsresultresponsetypedef).
 
 ### describe_connection_aliases
+
+Retrieves a list that describes the connection aliases used for cross-Region
+redirection.
 
 Type annotations for `boto3.client("workspaces").describe_connection_aliases`
 method.
 
 Boto3 documentation:
 [WorkSpaces.Client.describe_connection_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_connection_aliases)
+
+Arguments mapping described in
+[DescribeConnectionAliasesRequestTypeDef](./type_defs.md#describeconnectionaliasesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -434,14 +539,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeConnectionAliasesResultTypeDef](./type_defs.md#describeconnectionaliasesresulttypedef).
+[DescribeConnectionAliasesResultResponseTypeDef](./type_defs.md#describeconnectionaliasesresultresponsetypedef).
 
 ### describe_ip_groups
+
+Describes one or more of your IP access control groups.
 
 Type annotations for `boto3.client("workspaces").describe_ip_groups` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.describe_ip_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_ip_groups)
+
+Arguments mapping described in
+[DescribeIpGroupsRequestTypeDef](./type_defs.md#describeipgroupsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -450,28 +560,39 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeIpGroupsResultTypeDef](./type_defs.md#describeipgroupsresulttypedef).
+[DescribeIpGroupsResultResponseTypeDef](./type_defs.md#describeipgroupsresultresponsetypedef).
 
 ### describe_tags
+
+Describes the specified tags for the specified WorkSpaces resource.
 
 Type annotations for `boto3.client("workspaces").describe_tags` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_tags)
 
+Arguments mapping described in
+[DescribeTagsRequestTypeDef](./type_defs.md#describetagsrequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 
-Returns [DescribeTagsResultTypeDef](./type_defs.md#describetagsresulttypedef).
+Returns
+[DescribeTagsResultResponseTypeDef](./type_defs.md#describetagsresultresponsetypedef).
 
 ### describe_workspace_bundles
+
+Retrieves a list that describes the available WorkSpace bundles.
 
 Type annotations for `boto3.client("workspaces").describe_workspace_bundles`
 method.
 
 Boto3 documentation:
 [WorkSpaces.Client.describe_workspace_bundles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_bundles)
+
+Arguments mapping described in
+[DescribeWorkspaceBundlesRequestTypeDef](./type_defs.md#describeworkspacebundlesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -480,15 +601,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeWorkspaceBundlesResultTypeDef](./type_defs.md#describeworkspacebundlesresulttypedef).
+[DescribeWorkspaceBundlesResultResponseTypeDef](./type_defs.md#describeworkspacebundlesresultresponsetypedef).
 
 ### describe_workspace_directories
+
+Describes the available directories that are registered with Amazon WorkSpaces.
 
 Type annotations for
 `boto3.client("workspaces").describe_workspace_directories` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.describe_workspace_directories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_directories)
+
+Arguments mapping described in
+[DescribeWorkspaceDirectoriesRequestTypeDef](./type_defs.md#describeworkspacedirectoriesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -497,15 +623,21 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeWorkspaceDirectoriesResultTypeDef](./type_defs.md#describeworkspacedirectoriesresulttypedef).
+[DescribeWorkspaceDirectoriesResultResponseTypeDef](./type_defs.md#describeworkspacedirectoriesresultresponsetypedef).
 
 ### describe_workspace_image_permissions
+
+Describes the permissions that the owner of an image has granted to other AWS
+accounts for an image.
 
 Type annotations for
 `boto3.client("workspaces").describe_workspace_image_permissions` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.describe_workspace_image_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_image_permissions)
+
+Arguments mapping described in
+[DescribeWorkspaceImagePermissionsRequestTypeDef](./type_defs.md#describeworkspaceimagepermissionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -514,15 +646,21 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeWorkspaceImagePermissionsResultTypeDef](./type_defs.md#describeworkspaceimagepermissionsresulttypedef).
+[DescribeWorkspaceImagePermissionsResultResponseTypeDef](./type_defs.md#describeworkspaceimagepermissionsresultresponsetypedef).
 
 ### describe_workspace_images
+
+Retrieves a list that describes one or more specified images, if the image
+identifiers are provided.
 
 Type annotations for `boto3.client("workspaces").describe_workspace_images`
 method.
 
 Boto3 documentation:
 [WorkSpaces.Client.describe_workspace_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_images)
+
+Arguments mapping described in
+[DescribeWorkspaceImagesRequestTypeDef](./type_defs.md#describeworkspaceimagesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -532,9 +670,11 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeWorkspaceImagesResultTypeDef](./type_defs.md#describeworkspaceimagesresulttypedef).
+[DescribeWorkspaceImagesResultResponseTypeDef](./type_defs.md#describeworkspaceimagesresultresponsetypedef).
 
 ### describe_workspace_snapshots
+
+Describes the snapshots for the specified WorkSpace.
 
 Type annotations for `boto3.client("workspaces").describe_workspace_snapshots`
 method.
@@ -542,19 +682,27 @@ method.
 Boto3 documentation:
 [WorkSpaces.Client.describe_workspace_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_snapshots)
 
+Arguments mapping described in
+[DescribeWorkspaceSnapshotsRequestTypeDef](./type_defs.md#describeworkspacesnapshotsrequesttypedef).
+
 Keyword-only arguments:
 
 - `WorkspaceId`: `str` *(required)*
 
 Returns
-[DescribeWorkspaceSnapshotsResultTypeDef](./type_defs.md#describeworkspacesnapshotsresulttypedef).
+[DescribeWorkspaceSnapshotsResultResponseTypeDef](./type_defs.md#describeworkspacesnapshotsresultresponsetypedef).
 
 ### describe_workspaces
+
+Describes the specified WorkSpaces.
 
 Type annotations for `boto3.client("workspaces").describe_workspaces` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.describe_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspaces)
+
+Arguments mapping described in
+[DescribeWorkspacesRequestTypeDef](./type_defs.md#describeworkspacesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -566,9 +714,11 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeWorkspacesResultTypeDef](./type_defs.md#describeworkspacesresulttypedef).
+[DescribeWorkspacesResultResponseTypeDef](./type_defs.md#describeworkspacesresultresponsetypedef).
 
 ### describe_workspaces_connection_status
+
+Describes the connection status of the specified WorkSpaces.
 
 Type annotations for
 `boto3.client("workspaces").describe_workspaces_connection_status` method.
@@ -576,21 +726,29 @@ Type annotations for
 Boto3 documentation:
 [WorkSpaces.Client.describe_workspaces_connection_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspaces_connection_status)
 
+Arguments mapping described in
+[DescribeWorkspacesConnectionStatusRequestTypeDef](./type_defs.md#describeworkspacesconnectionstatusrequesttypedef).
+
 Keyword-only arguments:
 
 - `WorkspaceIds`: `List`\[`str`\]
 - `NextToken`: `str`
 
 Returns
-[DescribeWorkspacesConnectionStatusResultTypeDef](./type_defs.md#describeworkspacesconnectionstatusresulttypedef).
+[DescribeWorkspacesConnectionStatusResultResponseTypeDef](./type_defs.md#describeworkspacesconnectionstatusresultresponsetypedef).
 
 ### disassociate_connection_alias
+
+Disassociates a connection alias from a directory.
 
 Type annotations for `boto3.client("workspaces").disassociate_connection_alias`
 method.
 
 Boto3 documentation:
 [WorkSpaces.Client.disassociate_connection_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.disassociate_connection_alias)
+
+Arguments mapping described in
+[DisassociateConnectionAliasRequestTypeDef](./type_defs.md#disassociateconnectionaliasrequesttypedef).
 
 Keyword-only arguments:
 
@@ -600,11 +758,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_ip_groups
 
+Disassociates the specified IP access control group from the specified
+directory.
+
 Type annotations for `boto3.client("workspaces").disassociate_ip_groups`
 method.
 
 Boto3 documentation:
 [WorkSpaces.Client.disassociate_ip_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.disassociate_ip_groups)
+
+Arguments mapping described in
+[DisassociateIpGroupsRequestTypeDef](./type_defs.md#disassociateipgroupsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -614,6 +778,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("workspaces").generate_presigned_url`
 method.
@@ -632,11 +798,17 @@ Returns `str`.
 
 ### import_workspace_image
 
+Imports the specified Windows 10 Bring Your Own License (BYOL) image into
+Amazon WorkSpaces.
+
 Type annotations for `boto3.client("workspaces").import_workspace_image`
 method.
 
 Boto3 documentation:
 [WorkSpaces.Client.import_workspace_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.import_workspace_image)
+
+Arguments mapping described in
+[ImportWorkspaceImageRequestTypeDef](./type_defs.md#importworkspaceimagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -650,15 +822,22 @@ Keyword-only arguments:
 - `Applications`: `List`\[[ApplicationType](./literals.md#applicationtype)\]
 
 Returns
-[ImportWorkspaceImageResultTypeDef](./type_defs.md#importworkspaceimageresulttypedef).
+[ImportWorkspaceImageResultResponseTypeDef](./type_defs.md#importworkspaceimageresultresponsetypedef).
 
 ### list_available_management_cidr_ranges
+
+Retrieves a list of IP address ranges, specified as IPv4 CIDR blocks, that you
+can use for the network management interface when you enable Bring Your Own
+License (BYOL).
 
 Type annotations for
 `boto3.client("workspaces").list_available_management_cidr_ranges` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.list_available_management_cidr_ranges](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.list_available_management_cidr_ranges)
+
+Arguments mapping described in
+[ListAvailableManagementCidrRangesRequestTypeDef](./type_defs.md#listavailablemanagementcidrrangesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -667,14 +846,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAvailableManagementCidrRangesResultTypeDef](./type_defs.md#listavailablemanagementcidrrangesresulttypedef).
+[ListAvailableManagementCidrRangesResultResponseTypeDef](./type_defs.md#listavailablemanagementcidrrangesresultresponsetypedef).
 
 ### migrate_workspace
+
+Migrates a WorkSpace from one operating system or bundle type to another, while
+retaining the data on the user volume.
 
 Type annotations for `boto3.client("workspaces").migrate_workspace` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.migrate_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.migrate_workspace)
+
+Arguments mapping described in
+[MigrateWorkspaceRequestTypeDef](./type_defs.md#migrateworkspacerequesttypedef).
 
 Keyword-only arguments:
 
@@ -682,14 +867,20 @@ Keyword-only arguments:
 - `BundleId`: `str` *(required)*
 
 Returns
-[MigrateWorkspaceResultTypeDef](./type_defs.md#migrateworkspaceresulttypedef).
+[MigrateWorkspaceResultResponseTypeDef](./type_defs.md#migrateworkspaceresultresponsetypedef).
 
 ### modify_account
+
+Modifies the configuration of Bring Your Own License (BYOL) for the specified
+account.
 
 Type annotations for `boto3.client("workspaces").modify_account` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.modify_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_account)
+
+Arguments mapping described in
+[ModifyAccountRequestTypeDef](./type_defs.md#modifyaccountrequesttypedef).
 
 Keyword-only arguments:
 
@@ -701,11 +892,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### modify_client_properties
 
+Modifies the properties of the specified Amazon WorkSpaces clients.
+
 Type annotations for `boto3.client("workspaces").modify_client_properties`
 method.
 
 Boto3 documentation:
 [WorkSpaces.Client.modify_client_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_client_properties)
+
+Arguments mapping described in
+[ModifyClientPropertiesRequestTypeDef](./type_defs.md#modifyclientpropertiesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -718,11 +914,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### modify_selfservice_permissions
 
+Modifies the self-service WorkSpace management capabilities for your users.
+
 Type annotations for
 `boto3.client("workspaces").modify_selfservice_permissions` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.modify_selfservice_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_selfservice_permissions)
+
+Arguments mapping described in
+[ModifySelfservicePermissionsRequestTypeDef](./type_defs.md#modifyselfservicepermissionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -735,11 +936,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### modify_workspace_access_properties
 
+Specifies which devices and operating systems users can use to access their
+WorkSpaces.
+
 Type annotations for
 `boto3.client("workspaces").modify_workspace_access_properties` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.modify_workspace_access_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_access_properties)
+
+Arguments mapping described in
+[ModifyWorkspaceAccessPropertiesRequestTypeDef](./type_defs.md#modifyworkspaceaccesspropertiesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -752,11 +959,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### modify_workspace_creation_properties
 
+Modify the default properties used to create WorkSpaces.
+
 Type annotations for
 `boto3.client("workspaces").modify_workspace_creation_properties` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.modify_workspace_creation_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_creation_properties)
+
+Arguments mapping described in
+[ModifyWorkspaceCreationPropertiesRequestTypeDef](./type_defs.md#modifyworkspacecreationpropertiesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -769,11 +981,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### modify_workspace_properties
 
+Modifies the specified WorkSpace properties.
+
 Type annotations for `boto3.client("workspaces").modify_workspace_properties`
 method.
 
 Boto3 documentation:
 [WorkSpaces.Client.modify_workspace_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_properties)
+
+Arguments mapping described in
+[ModifyWorkspacePropertiesRequestTypeDef](./type_defs.md#modifyworkspacepropertiesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -786,11 +1003,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### modify_workspace_state
 
+Sets the state of the specified WorkSpace.
+
 Type annotations for `boto3.client("workspaces").modify_workspace_state`
 method.
 
 Boto3 documentation:
 [WorkSpaces.Client.modify_workspace_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_state)
+
+Arguments mapping described in
+[ModifyWorkspaceStateRequestTypeDef](./type_defs.md#modifyworkspacestaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -803,10 +1025,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### reboot_workspaces
 
+Reboots the specified WorkSpaces.
+
 Type annotations for `boto3.client("workspaces").reboot_workspaces` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.reboot_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.reboot_workspaces)
+
+Arguments mapping described in
+[RebootWorkspacesRequestTypeDef](./type_defs.md#rebootworkspacesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -815,14 +1042,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[RebootWorkspacesResultTypeDef](./type_defs.md#rebootworkspacesresulttypedef).
+[RebootWorkspacesResultResponseTypeDef](./type_defs.md#rebootworkspacesresultresponsetypedef).
 
 ### rebuild_workspaces
+
+Rebuilds the specified WorkSpace.
 
 Type annotations for `boto3.client("workspaces").rebuild_workspaces` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.rebuild_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.rebuild_workspaces)
+
+Arguments mapping described in
+[RebuildWorkspacesRequestTypeDef](./type_defs.md#rebuildworkspacesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -831,15 +1063,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[RebuildWorkspacesResultTypeDef](./type_defs.md#rebuildworkspacesresulttypedef).
+[RebuildWorkspacesResultResponseTypeDef](./type_defs.md#rebuildworkspacesresultresponsetypedef).
 
 ### register_workspace_directory
+
+Registers the specified directory.
 
 Type annotations for `boto3.client("workspaces").register_workspace_directory`
 method.
 
 Boto3 documentation:
 [WorkSpaces.Client.register_workspace_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.register_workspace_directory)
+
+Arguments mapping described in
+[RegisterWorkspaceDirectoryRequestTypeDef](./type_defs.md#registerworkspacedirectoryrequesttypedef).
 
 Keyword-only arguments:
 
@@ -854,10 +1091,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### restore_workspace
 
+Restores the specified WorkSpace to its last known healthy state.
+
 Type annotations for `boto3.client("workspaces").restore_workspace` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.restore_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.restore_workspace)
+
+Arguments mapping described in
+[RestoreWorkspaceRequestTypeDef](./type_defs.md#restoreworkspacerequesttypedef).
 
 Keyword-only arguments:
 
@@ -867,10 +1109,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### revoke_ip_rules
 
+Removes one or more rules from the specified IP access control group.
+
 Type annotations for `boto3.client("workspaces").revoke_ip_rules` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.revoke_ip_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.revoke_ip_rules)
+
+Arguments mapping described in
+[RevokeIpRulesRequestTypeDef](./type_defs.md#revokeiprulesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -881,10 +1128,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### start_workspaces
 
+Starts the specified WorkSpaces.
+
 Type annotations for `boto3.client("workspaces").start_workspaces` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.start_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.start_workspaces)
+
+Arguments mapping described in
+[StartWorkspacesRequestTypeDef](./type_defs.md#startworkspacesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -893,14 +1145,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[StartWorkspacesResultTypeDef](./type_defs.md#startworkspacesresulttypedef).
+[StartWorkspacesResultResponseTypeDef](./type_defs.md#startworkspacesresultresponsetypedef).
 
 ### stop_workspaces
+
+Stops the specified WorkSpaces.
 
 Type annotations for `boto3.client("workspaces").stop_workspaces` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.stop_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.stop_workspaces)
+
+Arguments mapping described in
+[StopWorkspacesRequestTypeDef](./type_defs.md#stopworkspacesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -909,14 +1166,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[StopWorkspacesResultTypeDef](./type_defs.md#stopworkspacesresulttypedef).
+[StopWorkspacesResultResponseTypeDef](./type_defs.md#stopworkspacesresultresponsetypedef).
 
 ### terminate_workspaces
+
+Terminates the specified WorkSpaces.
 
 Type annotations for `boto3.client("workspaces").terminate_workspaces` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.terminate_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.terminate_workspaces)
+
+Arguments mapping described in
+[TerminateWorkspacesRequestTypeDef](./type_defs.md#terminateworkspacesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -925,15 +1187,21 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[TerminateWorkspacesResultTypeDef](./type_defs.md#terminateworkspacesresulttypedef).
+[TerminateWorkspacesResultResponseTypeDef](./type_defs.md#terminateworkspacesresultresponsetypedef).
 
 ### update_connection_alias_permission
+
+Shares or unshares a connection alias with one account by specifying whether
+that account has permission to associate the connection alias with a directory.
 
 Type annotations for
 `boto3.client("workspaces").update_connection_alias_permission` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.update_connection_alias_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_connection_alias_permission)
+
+Arguments mapping described in
+[UpdateConnectionAliasPermissionRequestTypeDef](./type_defs.md#updateconnectionaliaspermissionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -946,11 +1214,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_rules_of_ip_group
 
+Replaces the current rules of the specified IP access control group with the
+specified rules.
+
 Type annotations for `boto3.client("workspaces").update_rules_of_ip_group`
 method.
 
 Boto3 documentation:
 [WorkSpaces.Client.update_rules_of_ip_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_rules_of_ip_group)
+
+Arguments mapping described in
+[UpdateRulesOfIpGroupRequestTypeDef](./type_defs.md#updaterulesofipgrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -962,11 +1236,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_workspace_bundle
 
+Updates a WorkSpace bundle with a new image.
+
 Type annotations for `boto3.client("workspaces").update_workspace_bundle`
 method.
 
 Boto3 documentation:
 [WorkSpaces.Client.update_workspace_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_workspace_bundle)
+
+Arguments mapping described in
+[UpdateWorkspaceBundleRequestTypeDef](./type_defs.md#updateworkspacebundlerequesttypedef).
 
 Keyword-only arguments:
 
@@ -977,11 +1256,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_workspace_image_permission
 
+Shares or unshares an image with one account in the same AWS Region by
+specifying whether that account has permission to copy the image.
+
 Type annotations for
 `boto3.client("workspaces").update_workspace_image_permission` method.
 
 Boto3 documentation:
 [WorkSpaces.Client.update_workspace_image_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_workspace_image_permission)
+
+Arguments mapping described in
+[UpdateWorkspaceImagePermissionRequestTypeDef](./type_defs.md#updateworkspaceimagepermissionrequesttypedef).
 
 Keyword-only arguments:
 

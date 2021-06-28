@@ -88,6 +88,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("datasync").can_paginate` method.
 
 Boto3 documentation:
@@ -101,10 +103,15 @@ Returns `bool`.
 
 ### cancel_task_execution
 
+Cancels execution of a task.
+
 Type annotations for `boto3.client("datasync").cancel_task_execution` method.
 
 Boto3 documentation:
 [DataSync.Client.cancel_task_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.cancel_task_execution)
+
+Arguments mapping described in
+[CancelTaskExecutionRequestTypeDef](./type_defs.md#canceltaskexecutionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -114,10 +121,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### create_agent
 
+Activates an AWS DataSync agent that you have deployed on your host.
+
 Type annotations for `boto3.client("datasync").create_agent` method.
 
 Boto3 documentation:
 [DataSync.Client.create_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_agent)
+
+Arguments mapping described in
+[CreateAgentRequestTypeDef](./type_defs.md#createagentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -129,14 +141,19 @@ Keyword-only arguments:
 - `SecurityGroupArns`: `List`\[`str`\]
 
 Returns
-[CreateAgentResponseTypeDef](./type_defs.md#createagentresponsetypedef).
+[CreateAgentResponseResponseTypeDef](./type_defs.md#createagentresponseresponsetypedef).
 
 ### create_location_efs
+
+Creates an endpoint for an Amazon EFS file system.
 
 Type annotations for `boto3.client("datasync").create_location_efs` method.
 
 Boto3 documentation:
 [DataSync.Client.create_location_efs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_efs)
+
+Arguments mapping described in
+[CreateLocationEfsRequestTypeDef](./type_defs.md#createlocationefsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -146,15 +163,20 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
 Returns
-[CreateLocationEfsResponseTypeDef](./type_defs.md#createlocationefsresponsetypedef).
+[CreateLocationEfsResponseResponseTypeDef](./type_defs.md#createlocationefsresponseresponsetypedef).
 
 ### create_location_fsx_windows
+
+Creates an endpoint for an Amazon FSx for Windows File Server file system.
 
 Type annotations for `boto3.client("datasync").create_location_fsx_windows`
 method.
 
 Boto3 documentation:
 [DataSync.Client.create_location_fsx_windows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_fsx_windows)
+
+Arguments mapping described in
+[CreateLocationFsxWindowsRequestTypeDef](./type_defs.md#createlocationfsxwindowsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -167,14 +189,20 @@ Keyword-only arguments:
 - `Domain`: `str`
 
 Returns
-[CreateLocationFsxWindowsResponseTypeDef](./type_defs.md#createlocationfsxwindowsresponsetypedef).
+[CreateLocationFsxWindowsResponseResponseTypeDef](./type_defs.md#createlocationfsxwindowsresponseresponsetypedef).
 
 ### create_location_nfs
+
+Defines a file system on a Network File System (NFS) server that can be read
+from or written to.
 
 Type annotations for `boto3.client("datasync").create_location_nfs` method.
 
 Boto3 documentation:
 [DataSync.Client.create_location_nfs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_nfs)
+
+Arguments mapping described in
+[CreateLocationNfsRequestTypeDef](./type_defs.md#createlocationnfsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -187,15 +215,20 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
 Returns
-[CreateLocationNfsResponseTypeDef](./type_defs.md#createlocationnfsresponsetypedef).
+[CreateLocationNfsResponseResponseTypeDef](./type_defs.md#createlocationnfsresponseresponsetypedef).
 
 ### create_location_object_storage
+
+Creates an endpoint for a self-managed object storage bucket.
 
 Type annotations for `boto3.client("datasync").create_location_object_storage`
 method.
 
 Boto3 documentation:
 [DataSync.Client.create_location_object_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_object_storage)
+
+Arguments mapping described in
+[CreateLocationObjectStorageRequestTypeDef](./type_defs.md#createlocationobjectstoragerequesttypedef).
 
 Keyword-only arguments:
 
@@ -211,14 +244,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
 Returns
-[CreateLocationObjectStorageResponseTypeDef](./type_defs.md#createlocationobjectstorageresponsetypedef).
+[CreateLocationObjectStorageResponseResponseTypeDef](./type_defs.md#createlocationobjectstorageresponseresponsetypedef).
 
 ### create_location_s3
+
+Creates an endpoint for an Amazon S3 bucket.
 
 Type annotations for `boto3.client("datasync").create_location_s3` method.
 
 Boto3 documentation:
 [DataSync.Client.create_location_s3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_s3)
+
+Arguments mapping described in
+[CreateLocationS3RequestTypeDef](./type_defs.md#createlocations3requesttypedef).
 
 Keyword-only arguments:
 
@@ -230,14 +268,20 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
 Returns
-[CreateLocationS3ResponseTypeDef](./type_defs.md#createlocations3responsetypedef).
+[CreateLocationS3ResponseResponseTypeDef](./type_defs.md#createlocations3responseresponsetypedef).
 
 ### create_location_smb
+
+Defines a file system on a Server Message Block (SMB) server that can be read
+from or written to.
 
 Type annotations for `boto3.client("datasync").create_location_smb` method.
 
 Boto3 documentation:
 [DataSync.Client.create_location_smb](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_smb)
+
+Arguments mapping described in
+[CreateLocationSmbRequestTypeDef](./type_defs.md#createlocationsmbrequesttypedef).
 
 Keyword-only arguments:
 
@@ -252,14 +296,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
 Returns
-[CreateLocationSmbResponseTypeDef](./type_defs.md#createlocationsmbresponsetypedef).
+[CreateLocationSmbResponseResponseTypeDef](./type_defs.md#createlocationsmbresponseresponsetypedef).
 
 ### create_task
+
+Creates a task.
 
 Type annotations for `boto3.client("datasync").create_task` method.
 
 Boto3 documentation:
 [DataSync.Client.create_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_task)
+
+Arguments mapping described in
+[CreateTaskRequestTypeDef](./type_defs.md#createtaskrequesttypedef).
 
 Keyword-only arguments:
 
@@ -272,14 +321,20 @@ Keyword-only arguments:
 - `Schedule`: [TaskScheduleTypeDef](./type_defs.md#taskscheduletypedef)
 - `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
-Returns [CreateTaskResponseTypeDef](./type_defs.md#createtaskresponsetypedef).
+Returns
+[CreateTaskResponseResponseTypeDef](./type_defs.md#createtaskresponseresponsetypedef).
 
 ### delete_agent
+
+Deletes an agent.
 
 Type annotations for `boto3.client("datasync").delete_agent` method.
 
 Boto3 documentation:
 [DataSync.Client.delete_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.delete_agent)
+
+Arguments mapping described in
+[DeleteAgentRequestTypeDef](./type_defs.md#deleteagentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -289,10 +344,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_location
 
+Deletes the configuration of a location used by AWS DataSync.
+
 Type annotations for `boto3.client("datasync").delete_location` method.
 
 Boto3 documentation:
 [DataSync.Client.delete_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.delete_location)
+
+Arguments mapping described in
+[DeleteLocationRequestTypeDef](./type_defs.md#deletelocationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -302,10 +362,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_task
 
+Deletes a task.
+
 Type annotations for `boto3.client("datasync").delete_task` method.
 
 Boto3 documentation:
 [DataSync.Client.delete_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.delete_task)
+
+Arguments mapping described in
+[DeleteTaskRequestTypeDef](./type_defs.md#deletetaskrequesttypedef).
 
 Keyword-only arguments:
 
@@ -315,33 +380,47 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_agent
 
+Returns metadata such as the name, the network interfaces, and the status (that
+is, whether the agent is running or not) for an agent.
+
 Type annotations for `boto3.client("datasync").describe_agent` method.
 
 Boto3 documentation:
 [DataSync.Client.describe_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_agent)
+
+Arguments mapping described in
+[DescribeAgentRequestTypeDef](./type_defs.md#describeagentrequesttypedef).
 
 Keyword-only arguments:
 
 - `AgentArn`: `str` *(required)*
 
 Returns
-[DescribeAgentResponseTypeDef](./type_defs.md#describeagentresponsetypedef).
+[DescribeAgentResponseResponseTypeDef](./type_defs.md#describeagentresponseresponsetypedef).
 
 ### describe_location_efs
+
+Returns metadata, such as the path information about an Amazon EFS location.
 
 Type annotations for `boto3.client("datasync").describe_location_efs` method.
 
 Boto3 documentation:
 [DataSync.Client.describe_location_efs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_efs)
 
+Arguments mapping described in
+[DescribeLocationEfsRequestTypeDef](./type_defs.md#describelocationefsrequesttypedef).
+
 Keyword-only arguments:
 
 - `LocationArn`: `str` *(required)*
 
 Returns
-[DescribeLocationEfsResponseTypeDef](./type_defs.md#describelocationefsresponsetypedef).
+[DescribeLocationEfsResponseResponseTypeDef](./type_defs.md#describelocationefsresponseresponsetypedef).
 
 ### describe_location_fsx_windows
+
+Returns metadata, such as the path information about an Amazon FSx for Windows
+File Server location.
 
 Type annotations for `boto3.client("datasync").describe_location_fsx_windows`
 method.
@@ -349,28 +428,38 @@ method.
 Boto3 documentation:
 [DataSync.Client.describe_location_fsx_windows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_fsx_windows)
 
+Arguments mapping described in
+[DescribeLocationFsxWindowsRequestTypeDef](./type_defs.md#describelocationfsxwindowsrequesttypedef).
+
 Keyword-only arguments:
 
 - `LocationArn`: `str` *(required)*
 
 Returns
-[DescribeLocationFsxWindowsResponseTypeDef](./type_defs.md#describelocationfsxwindowsresponsetypedef).
+[DescribeLocationFsxWindowsResponseResponseTypeDef](./type_defs.md#describelocationfsxwindowsresponseresponsetypedef).
 
 ### describe_location_nfs
+
+Returns metadata, such as the path information, about an NFS location.
 
 Type annotations for `boto3.client("datasync").describe_location_nfs` method.
 
 Boto3 documentation:
 [DataSync.Client.describe_location_nfs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_nfs)
 
+Arguments mapping described in
+[DescribeLocationNfsRequestTypeDef](./type_defs.md#describelocationnfsrequesttypedef).
+
 Keyword-only arguments:
 
 - `LocationArn`: `str` *(required)*
 
 Returns
-[DescribeLocationNfsResponseTypeDef](./type_defs.md#describelocationnfsresponsetypedef).
+[DescribeLocationNfsResponseResponseTypeDef](./type_defs.md#describelocationnfsresponseresponsetypedef).
 
 ### describe_location_object_storage
+
+Returns metadata about a self-managed object storage server location.
 
 Type annotations for
 `boto3.client("datasync").describe_location_object_storage` method.
@@ -378,70 +467,95 @@ Type annotations for
 Boto3 documentation:
 [DataSync.Client.describe_location_object_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_object_storage)
 
+Arguments mapping described in
+[DescribeLocationObjectStorageRequestTypeDef](./type_defs.md#describelocationobjectstoragerequesttypedef).
+
 Keyword-only arguments:
 
 - `LocationArn`: `str` *(required)*
 
 Returns
-[DescribeLocationObjectStorageResponseTypeDef](./type_defs.md#describelocationobjectstorageresponsetypedef).
+[DescribeLocationObjectStorageResponseResponseTypeDef](./type_defs.md#describelocationobjectstorageresponseresponsetypedef).
 
 ### describe_location_s3
+
+Returns metadata, such as bucket name, about an Amazon S3 bucket location.
 
 Type annotations for `boto3.client("datasync").describe_location_s3` method.
 
 Boto3 documentation:
 [DataSync.Client.describe_location_s3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_s3)
 
+Arguments mapping described in
+[DescribeLocationS3RequestTypeDef](./type_defs.md#describelocations3requesttypedef).
+
 Keyword-only arguments:
 
 - `LocationArn`: `str` *(required)*
 
 Returns
-[DescribeLocationS3ResponseTypeDef](./type_defs.md#describelocations3responsetypedef).
+[DescribeLocationS3ResponseResponseTypeDef](./type_defs.md#describelocations3responseresponsetypedef).
 
 ### describe_location_smb
+
+Returns metadata, such as the path and user information about an SMB location.
 
 Type annotations for `boto3.client("datasync").describe_location_smb` method.
 
 Boto3 documentation:
 [DataSync.Client.describe_location_smb](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_smb)
 
+Arguments mapping described in
+[DescribeLocationSmbRequestTypeDef](./type_defs.md#describelocationsmbrequesttypedef).
+
 Keyword-only arguments:
 
 - `LocationArn`: `str` *(required)*
 
 Returns
-[DescribeLocationSmbResponseTypeDef](./type_defs.md#describelocationsmbresponsetypedef).
+[DescribeLocationSmbResponseResponseTypeDef](./type_defs.md#describelocationsmbresponseresponsetypedef).
 
 ### describe_task
+
+Returns metadata about a task.
 
 Type annotations for `boto3.client("datasync").describe_task` method.
 
 Boto3 documentation:
 [DataSync.Client.describe_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_task)
 
+Arguments mapping described in
+[DescribeTaskRequestTypeDef](./type_defs.md#describetaskrequesttypedef).
+
 Keyword-only arguments:
 
 - `TaskArn`: `str` *(required)*
 
 Returns
-[DescribeTaskResponseTypeDef](./type_defs.md#describetaskresponsetypedef).
+[DescribeTaskResponseResponseTypeDef](./type_defs.md#describetaskresponseresponsetypedef).
 
 ### describe_task_execution
+
+Returns detailed metadata about a task that is being executed.
 
 Type annotations for `boto3.client("datasync").describe_task_execution` method.
 
 Boto3 documentation:
 [DataSync.Client.describe_task_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_task_execution)
 
+Arguments mapping described in
+[DescribeTaskExecutionRequestTypeDef](./type_defs.md#describetaskexecutionrequesttypedef).
+
 Keyword-only arguments:
 
 - `TaskExecutionArn`: `str` *(required)*
 
 Returns
-[DescribeTaskExecutionResponseTypeDef](./type_defs.md#describetaskexecutionresponsetypedef).
+[DescribeTaskExecutionResponseResponseTypeDef](./type_defs.md#describetaskexecutionresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("datasync").generate_presigned_url` method.
 
@@ -459,24 +573,36 @@ Returns `str`.
 
 ### list_agents
 
+Returns a list of agents owned by an AWS account in the AWS Region specified in
+the request.
+
 Type annotations for `boto3.client("datasync").list_agents` method.
 
 Boto3 documentation:
 [DataSync.Client.list_agents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_agents)
+
+Arguments mapping described in
+[ListAgentsRequestTypeDef](./type_defs.md#listagentsrequesttypedef).
 
 Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns [ListAgentsResponseTypeDef](./type_defs.md#listagentsresponsetypedef).
+Returns
+[ListAgentsResponseResponseTypeDef](./type_defs.md#listagentsresponseresponsetypedef).
 
 ### list_locations
+
+Returns a list of source and destination locations.
 
 Type annotations for `boto3.client("datasync").list_locations` method.
 
 Boto3 documentation:
 [DataSync.Client.list_locations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_locations)
+
+Arguments mapping described in
+[ListLocationsRequestTypeDef](./type_defs.md#listlocationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -486,14 +612,19 @@ Keyword-only arguments:
   `List`\[[LocationFilterTypeDef](./type_defs.md#locationfiltertypedef)\]
 
 Returns
-[ListLocationsResponseTypeDef](./type_defs.md#listlocationsresponsetypedef).
+[ListLocationsResponseResponseTypeDef](./type_defs.md#listlocationsresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Returns all the tags associated with a specified resource.
 
 Type annotations for `boto3.client("datasync").list_tags_for_resource` method.
 
 Boto3 documentation:
 [DataSync.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_tags_for_resource)
+
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -502,14 +633,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### list_task_executions
+
+Returns a list of executed tasks.
 
 Type annotations for `boto3.client("datasync").list_task_executions` method.
 
 Boto3 documentation:
 [DataSync.Client.list_task_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_task_executions)
+
+Arguments mapping described in
+[ListTaskExecutionsRequestTypeDef](./type_defs.md#listtaskexecutionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -518,14 +654,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTaskExecutionsResponseTypeDef](./type_defs.md#listtaskexecutionsresponsetypedef).
+[ListTaskExecutionsResponseResponseTypeDef](./type_defs.md#listtaskexecutionsresponseresponsetypedef).
 
 ### list_tasks
+
+Returns a list of all the tasks.
 
 Type annotations for `boto3.client("datasync").list_tasks` method.
 
 Boto3 documentation:
 [DataSync.Client.list_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_tasks)
+
+Arguments mapping described in
+[ListTasksRequestTypeDef](./type_defs.md#listtasksrequesttypedef).
 
 Keyword-only arguments:
 
@@ -533,14 +674,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `Filters`: `List`\[[TaskFilterTypeDef](./type_defs.md#taskfiltertypedef)\]
 
-Returns [ListTasksResponseTypeDef](./type_defs.md#listtasksresponsetypedef).
+Returns
+[ListTasksResponseResponseTypeDef](./type_defs.md#listtasksresponseresponsetypedef).
 
 ### start_task_execution
+
+Starts a specific invocation of a task.
 
 Type annotations for `boto3.client("datasync").start_task_execution` method.
 
 Boto3 documentation:
 [DataSync.Client.start_task_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.start_task_execution)
+
+Arguments mapping described in
+[StartTaskExecutionRequestTypeDef](./type_defs.md#starttaskexecutionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -549,14 +696,19 @@ Keyword-only arguments:
 - `Includes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
 
 Returns
-[StartTaskExecutionResponseTypeDef](./type_defs.md#starttaskexecutionresponsetypedef).
+[StartTaskExecutionResponseResponseTypeDef](./type_defs.md#starttaskexecutionresponseresponsetypedef).
 
 ### tag_resource
+
+Applies a key-value pair to an AWS resource.
 
 Type annotations for `boto3.client("datasync").tag_resource` method.
 
 Boto3 documentation:
 [DataSync.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -568,10 +720,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Removes a tag from an AWS resource.
+
 Type annotations for `boto3.client("datasync").untag_resource` method.
 
 Boto3 documentation:
 [DataSync.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -582,10 +739,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_agent
 
+Updates the name of an agent.
+
 Type annotations for `boto3.client("datasync").update_agent` method.
 
 Boto3 documentation:
 [DataSync.Client.update_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_agent)
+
+Arguments mapping described in
+[UpdateAgentRequestTypeDef](./type_defs.md#updateagentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -596,10 +758,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_location_nfs
 
+Updates some of the parameters of a previously created location for Network
+File System (NFS) access.
+
 Type annotations for `boto3.client("datasync").update_location_nfs` method.
 
 Boto3 documentation:
 [DataSync.Client.update_location_nfs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_nfs)
+
+Arguments mapping described in
+[UpdateLocationNfsRequestTypeDef](./type_defs.md#updatelocationnfsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -613,11 +781,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_location_object_storage
 
+Updates some of the parameters of a previously created location for
+self-managed object storage server access.
+
 Type annotations for `boto3.client("datasync").update_location_object_storage`
 method.
 
 Boto3 documentation:
 [DataSync.Client.update_location_object_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_object_storage)
+
+Arguments mapping described in
+[UpdateLocationObjectStorageRequestTypeDef](./type_defs.md#updatelocationobjectstoragerequesttypedef).
 
 Keyword-only arguments:
 
@@ -634,10 +808,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_location_smb
 
+Updates some of the parameters of a previously created location for Server
+Message Block (SMB) file system access.
+
 Type annotations for `boto3.client("datasync").update_location_smb` method.
 
 Boto3 documentation:
 [DataSync.Client.update_location_smb](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_smb)
+
+Arguments mapping described in
+[UpdateLocationSmbRequestTypeDef](./type_defs.md#updatelocationsmbrequesttypedef).
 
 Keyword-only arguments:
 
@@ -654,10 +834,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_task
 
+Updates the metadata associated with a task.
+
 Type annotations for `boto3.client("datasync").update_task` method.
 
 Boto3 documentation:
 [DataSync.Client.update_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_task)
+
+Arguments mapping described in
+[UpdateTaskRequestTypeDef](./type_defs.md#updatetaskrequesttypedef).
 
 Keyword-only arguments:
 
@@ -672,10 +857,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_task_execution
 
+Updates execution of a task.
+
 Type annotations for `boto3.client("datasync").update_task_execution` method.
 
 Boto3 documentation:
 [DataSync.Client.update_task_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_task_execution)
+
+Arguments mapping described in
+[UpdateTaskExecutionRequestTypeDef](./type_defs.md#updatetaskexecutionrequesttypedef).
 
 Keyword-only arguments:
 

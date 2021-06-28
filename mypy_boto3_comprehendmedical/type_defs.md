@@ -11,38 +11,60 @@ type annotations stubs module
   - [AttributeTypeDef](#attributetypedef)
   - [ComprehendMedicalAsyncJobFilterTypeDef](#comprehendmedicalasyncjobfiltertypedef)
   - [ComprehendMedicalAsyncJobPropertiesTypeDef](#comprehendmedicalasyncjobpropertiestypedef)
-  - [DescribeEntitiesDetectionV2JobResponseTypeDef](#describeentitiesdetectionv2jobresponsetypedef)
-  - [DescribeICD10CMInferenceJobResponseTypeDef](#describeicd10cminferencejobresponsetypedef)
-  - [DescribePHIDetectionJobResponseTypeDef](#describephidetectionjobresponsetypedef)
-  - [DescribeRxNormInferenceJobResponseTypeDef](#describerxnorminferencejobresponsetypedef)
-  - [DetectEntitiesResponseTypeDef](#detectentitiesresponsetypedef)
-  - [DetectEntitiesV2ResponseTypeDef](#detectentitiesv2responsetypedef)
-  - [DetectPHIResponseTypeDef](#detectphiresponsetypedef)
+  - [DescribeEntitiesDetectionV2JobRequestTypeDef](#describeentitiesdetectionv2jobrequesttypedef)
+  - [DescribeEntitiesDetectionV2JobResponseResponseTypeDef](#describeentitiesdetectionv2jobresponseresponsetypedef)
+  - [DescribeICD10CMInferenceJobRequestTypeDef](#describeicd10cminferencejobrequesttypedef)
+  - [DescribeICD10CMInferenceJobResponseResponseTypeDef](#describeicd10cminferencejobresponseresponsetypedef)
+  - [DescribePHIDetectionJobRequestTypeDef](#describephidetectionjobrequesttypedef)
+  - [DescribePHIDetectionJobResponseResponseTypeDef](#describephidetectionjobresponseresponsetypedef)
+  - [DescribeRxNormInferenceJobRequestTypeDef](#describerxnorminferencejobrequesttypedef)
+  - [DescribeRxNormInferenceJobResponseResponseTypeDef](#describerxnorminferencejobresponseresponsetypedef)
+  - [DetectEntitiesRequestTypeDef](#detectentitiesrequesttypedef)
+  - [DetectEntitiesResponseResponseTypeDef](#detectentitiesresponseresponsetypedef)
+  - [DetectEntitiesV2RequestTypeDef](#detectentitiesv2requesttypedef)
+  - [DetectEntitiesV2ResponseResponseTypeDef](#detectentitiesv2responseresponsetypedef)
+  - [DetectPHIRequestTypeDef](#detectphirequesttypedef)
+  - [DetectPHIResponseResponseTypeDef](#detectphiresponseresponsetypedef)
   - [EntityTypeDef](#entitytypedef)
   - [ICD10CMAttributeTypeDef](#icd10cmattributetypedef)
   - [ICD10CMConceptTypeDef](#icd10cmconcepttypedef)
   - [ICD10CMEntityTypeDef](#icd10cmentitytypedef)
   - [ICD10CMTraitTypeDef](#icd10cmtraittypedef)
-  - [InferICD10CMResponseTypeDef](#infericd10cmresponsetypedef)
-  - [InferRxNormResponseTypeDef](#inferrxnormresponsetypedef)
+  - [InferICD10CMRequestTypeDef](#infericd10cmrequesttypedef)
+  - [InferICD10CMResponseResponseTypeDef](#infericd10cmresponseresponsetypedef)
+  - [InferRxNormRequestTypeDef](#inferrxnormrequesttypedef)
+  - [InferRxNormResponseResponseTypeDef](#inferrxnormresponseresponsetypedef)
   - [InputDataConfigTypeDef](#inputdataconfigtypedef)
-  - [ListEntitiesDetectionV2JobsResponseTypeDef](#listentitiesdetectionv2jobsresponsetypedef)
-  - [ListICD10CMInferenceJobsResponseTypeDef](#listicd10cminferencejobsresponsetypedef)
-  - [ListPHIDetectionJobsResponseTypeDef](#listphidetectionjobsresponsetypedef)
-  - [ListRxNormInferenceJobsResponseTypeDef](#listrxnorminferencejobsresponsetypedef)
+  - [ListEntitiesDetectionV2JobsRequestTypeDef](#listentitiesdetectionv2jobsrequesttypedef)
+  - [ListEntitiesDetectionV2JobsResponseResponseTypeDef](#listentitiesdetectionv2jobsresponseresponsetypedef)
+  - [ListICD10CMInferenceJobsRequestTypeDef](#listicd10cminferencejobsrequesttypedef)
+  - [ListICD10CMInferenceJobsResponseResponseTypeDef](#listicd10cminferencejobsresponseresponsetypedef)
+  - [ListPHIDetectionJobsRequestTypeDef](#listphidetectionjobsrequesttypedef)
+  - [ListPHIDetectionJobsResponseResponseTypeDef](#listphidetectionjobsresponseresponsetypedef)
+  - [ListRxNormInferenceJobsRequestTypeDef](#listrxnorminferencejobsrequesttypedef)
+  - [ListRxNormInferenceJobsResponseResponseTypeDef](#listrxnorminferencejobsresponseresponsetypedef)
   - [OutputDataConfigTypeDef](#outputdataconfigtypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RxNormAttributeTypeDef](#rxnormattributetypedef)
   - [RxNormConceptTypeDef](#rxnormconcepttypedef)
   - [RxNormEntityTypeDef](#rxnormentitytypedef)
   - [RxNormTraitTypeDef](#rxnormtraittypedef)
-  - [StartEntitiesDetectionV2JobResponseTypeDef](#startentitiesdetectionv2jobresponsetypedef)
-  - [StartICD10CMInferenceJobResponseTypeDef](#starticd10cminferencejobresponsetypedef)
-  - [StartPHIDetectionJobResponseTypeDef](#startphidetectionjobresponsetypedef)
-  - [StartRxNormInferenceJobResponseTypeDef](#startrxnorminferencejobresponsetypedef)
-  - [StopEntitiesDetectionV2JobResponseTypeDef](#stopentitiesdetectionv2jobresponsetypedef)
-  - [StopICD10CMInferenceJobResponseTypeDef](#stopicd10cminferencejobresponsetypedef)
-  - [StopPHIDetectionJobResponseTypeDef](#stopphidetectionjobresponsetypedef)
-  - [StopRxNormInferenceJobResponseTypeDef](#stoprxnorminferencejobresponsetypedef)
+  - [StartEntitiesDetectionV2JobRequestTypeDef](#startentitiesdetectionv2jobrequesttypedef)
+  - [StartEntitiesDetectionV2JobResponseResponseTypeDef](#startentitiesdetectionv2jobresponseresponsetypedef)
+  - [StartICD10CMInferenceJobRequestTypeDef](#starticd10cminferencejobrequesttypedef)
+  - [StartICD10CMInferenceJobResponseResponseTypeDef](#starticd10cminferencejobresponseresponsetypedef)
+  - [StartPHIDetectionJobRequestTypeDef](#startphidetectionjobrequesttypedef)
+  - [StartPHIDetectionJobResponseResponseTypeDef](#startphidetectionjobresponseresponsetypedef)
+  - [StartRxNormInferenceJobRequestTypeDef](#startrxnorminferencejobrequesttypedef)
+  - [StartRxNormInferenceJobResponseResponseTypeDef](#startrxnorminferencejobresponseresponsetypedef)
+  - [StopEntitiesDetectionV2JobRequestTypeDef](#stopentitiesdetectionv2jobrequesttypedef)
+  - [StopEntitiesDetectionV2JobResponseResponseTypeDef](#stopentitiesdetectionv2jobresponseresponsetypedef)
+  - [StopICD10CMInferenceJobRequestTypeDef](#stopicd10cminferencejobrequesttypedef)
+  - [StopICD10CMInferenceJobResponseResponseTypeDef](#stopicd10cminferencejobresponseresponsetypedef)
+  - [StopPHIDetectionJobRequestTypeDef](#stopphidetectionjobrequesttypedef)
+  - [StopPHIDetectionJobResponseResponseTypeDef](#stopphidetectionjobresponseresponsetypedef)
+  - [StopRxNormInferenceJobRequestTypeDef](#stoprxnorminferencejobrequesttypedef)
+  - [StopRxNormInferenceJobResponseResponseTypeDef](#stoprxnorminferencejobresponseresponsetypedef)
   - [TraitTypeDef](#traittypedef)
   - [UnmappedAttributeTypeDef](#unmappedattributetypedef)
 
@@ -76,8 +98,8 @@ Optional fields:
 
 - `JobName`: `str`
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
-- `SubmitTimeBefore`: `datetime`
-- `SubmitTimeAfter`: `datetime`
+- `SubmitTimeBefore`: `Union`\[`datetime`, `str`\]
+- `SubmitTimeAfter`: `Union`\[`datetime`, `str`\]
 
 ## ComprehendMedicalAsyncJobPropertiesTypeDef
 
@@ -105,98 +127,173 @@ Optional fields:
 - `KMSKey`: `str`
 - `ModelVersion`: `str`
 
-## DescribeEntitiesDetectionV2JobResponseTypeDef
+## DescribeEntitiesDetectionV2JobRequestTypeDef
 
 ```python
-from mypy_boto3_comprehendmedical.type_defs import DescribeEntitiesDetectionV2JobResponseTypeDef
+from mypy_boto3_comprehendmedical.type_defs import DescribeEntitiesDetectionV2JobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `JobId`: `str`
+
+## DescribeEntitiesDetectionV2JobResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehendmedical.type_defs import DescribeEntitiesDetectionV2JobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ComprehendMedicalAsyncJobProperties`:
   [ComprehendMedicalAsyncJobPropertiesTypeDef](./type_defs.md#comprehendmedicalasyncjobpropertiestypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeICD10CMInferenceJobResponseTypeDef
+## DescribeICD10CMInferenceJobRequestTypeDef
 
 ```python
-from mypy_boto3_comprehendmedical.type_defs import DescribeICD10CMInferenceJobResponseTypeDef
+from mypy_boto3_comprehendmedical.type_defs import DescribeICD10CMInferenceJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `JobId`: `str`
+
+## DescribeICD10CMInferenceJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehendmedical.type_defs import DescribeICD10CMInferenceJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ComprehendMedicalAsyncJobProperties`:
   [ComprehendMedicalAsyncJobPropertiesTypeDef](./type_defs.md#comprehendmedicalasyncjobpropertiestypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePHIDetectionJobResponseTypeDef
+## DescribePHIDetectionJobRequestTypeDef
 
 ```python
-from mypy_boto3_comprehendmedical.type_defs import DescribePHIDetectionJobResponseTypeDef
+from mypy_boto3_comprehendmedical.type_defs import DescribePHIDetectionJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `JobId`: `str`
+
+## DescribePHIDetectionJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehendmedical.type_defs import DescribePHIDetectionJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ComprehendMedicalAsyncJobProperties`:
   [ComprehendMedicalAsyncJobPropertiesTypeDef](./type_defs.md#comprehendmedicalasyncjobpropertiestypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeRxNormInferenceJobResponseTypeDef
+## DescribeRxNormInferenceJobRequestTypeDef
 
 ```python
-from mypy_boto3_comprehendmedical.type_defs import DescribeRxNormInferenceJobResponseTypeDef
+from mypy_boto3_comprehendmedical.type_defs import DescribeRxNormInferenceJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `JobId`: `str`
+
+## DescribeRxNormInferenceJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehendmedical.type_defs import DescribeRxNormInferenceJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ComprehendMedicalAsyncJobProperties`:
   [ComprehendMedicalAsyncJobPropertiesTypeDef](./type_defs.md#comprehendmedicalasyncjobpropertiestypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DetectEntitiesResponseTypeDef
+## DetectEntitiesRequestTypeDef
 
 ```python
-from mypy_boto3_comprehendmedical.type_defs import DetectEntitiesResponseTypeDef
+from mypy_boto3_comprehendmedical.type_defs import DetectEntitiesRequestTypeDef
+```
+
+Required fields:
+
+- `Text`: `str`
+
+## DetectEntitiesResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehendmedical.type_defs import DetectEntitiesResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `Entities`: `List`\[[EntityTypeDef](./type_defs.md#entitytypedef)\]
-- `ModelVersion`: `str`
-
-Optional fields:
-
 - `UnmappedAttributes`:
   `List`\[[UnmappedAttributeTypeDef](./type_defs.md#unmappedattributetypedef)\]
 - `PaginationToken`: `str`
+- `ModelVersion`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DetectEntitiesV2ResponseTypeDef
+## DetectEntitiesV2RequestTypeDef
 
 ```python
-from mypy_boto3_comprehendmedical.type_defs import DetectEntitiesV2ResponseTypeDef
+from mypy_boto3_comprehendmedical.type_defs import DetectEntitiesV2RequestTypeDef
+```
+
+Required fields:
+
+- `Text`: `str`
+
+## DetectEntitiesV2ResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehendmedical.type_defs import DetectEntitiesV2ResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `Entities`: `List`\[[EntityTypeDef](./type_defs.md#entitytypedef)\]
-- `ModelVersion`: `str`
-
-Optional fields:
-
 - `UnmappedAttributes`:
   `List`\[[UnmappedAttributeTypeDef](./type_defs.md#unmappedattributetypedef)\]
 - `PaginationToken`: `str`
+- `ModelVersion`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DetectPHIResponseTypeDef
+## DetectPHIRequestTypeDef
 
 ```python
-from mypy_boto3_comprehendmedical.type_defs import DetectPHIResponseTypeDef
+from mypy_boto3_comprehendmedical.type_defs import DetectPHIRequestTypeDef
+```
+
+Required fields:
+
+- `Text`: `str`
+
+## DetectPHIResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehendmedical.type_defs import DetectPHIResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `Entities`: `List`\[[EntityTypeDef](./type_defs.md#entitytypedef)\]
-- `ModelVersion`: `str`
-
-Optional fields:
-
 - `PaginationToken`: `str`
+- `ModelVersion`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## EntityTypeDef
 
@@ -281,37 +378,55 @@ Optional fields:
 - `Name`: [ICD10CMTraitNameType](./literals.md#icd10cmtraitnametype)
 - `Score`: `float`
 
-## InferICD10CMResponseTypeDef
+## InferICD10CMRequestTypeDef
 
 ```python
-from mypy_boto3_comprehendmedical.type_defs import InferICD10CMResponseTypeDef
+from mypy_boto3_comprehendmedical.type_defs import InferICD10CMRequestTypeDef
+```
+
+Required fields:
+
+- `Text`: `str`
+
+## InferICD10CMResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehendmedical.type_defs import InferICD10CMResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `Entities`:
   `List`\[[ICD10CMEntityTypeDef](./type_defs.md#icd10cmentitytypedef)\]
-
-Optional fields:
-
 - `PaginationToken`: `str`
 - `ModelVersion`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## InferRxNormResponseTypeDef
+## InferRxNormRequestTypeDef
 
 ```python
-from mypy_boto3_comprehendmedical.type_defs import InferRxNormResponseTypeDef
+from mypy_boto3_comprehendmedical.type_defs import InferRxNormRequestTypeDef
+```
+
+Required fields:
+
+- `Text`: `str`
+
+## InferRxNormResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehendmedical.type_defs import InferRxNormResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `Entities`:
   `List`\[[RxNormEntityTypeDef](./type_defs.md#rxnormentitytypedef)\]
-
-Optional fields:
-
 - `PaginationToken`: `str`
 - `ModelVersion`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## InputDataConfigTypeDef
 
@@ -327,53 +442,113 @@ Optional fields:
 
 - `S3Key`: `str`
 
-## ListEntitiesDetectionV2JobsResponseTypeDef
+## ListEntitiesDetectionV2JobsRequestTypeDef
 
 ```python
-from mypy_boto3_comprehendmedical.type_defs import ListEntitiesDetectionV2JobsResponseTypeDef
+from mypy_boto3_comprehendmedical.type_defs import ListEntitiesDetectionV2JobsRequestTypeDef
 ```
 
 Optional fields:
 
+- `Filter`:
+  [ComprehendMedicalAsyncJobFilterTypeDef](./type_defs.md#comprehendmedicalasyncjobfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListEntitiesDetectionV2JobsResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehendmedical.type_defs import ListEntitiesDetectionV2JobsResponseResponseTypeDef
+```
+
+Required fields:
+
 - `ComprehendMedicalAsyncJobPropertiesList`:
   `List`\[[ComprehendMedicalAsyncJobPropertiesTypeDef](./type_defs.md#comprehendmedicalasyncjobpropertiestypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListICD10CMInferenceJobsResponseTypeDef
+## ListICD10CMInferenceJobsRequestTypeDef
 
 ```python
-from mypy_boto3_comprehendmedical.type_defs import ListICD10CMInferenceJobsResponseTypeDef
+from mypy_boto3_comprehendmedical.type_defs import ListICD10CMInferenceJobsRequestTypeDef
 ```
 
 Optional fields:
 
+- `Filter`:
+  [ComprehendMedicalAsyncJobFilterTypeDef](./type_defs.md#comprehendmedicalasyncjobfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListICD10CMInferenceJobsResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehendmedical.type_defs import ListICD10CMInferenceJobsResponseResponseTypeDef
+```
+
+Required fields:
+
 - `ComprehendMedicalAsyncJobPropertiesList`:
   `List`\[[ComprehendMedicalAsyncJobPropertiesTypeDef](./type_defs.md#comprehendmedicalasyncjobpropertiestypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPHIDetectionJobsResponseTypeDef
+## ListPHIDetectionJobsRequestTypeDef
 
 ```python
-from mypy_boto3_comprehendmedical.type_defs import ListPHIDetectionJobsResponseTypeDef
+from mypy_boto3_comprehendmedical.type_defs import ListPHIDetectionJobsRequestTypeDef
 ```
 
 Optional fields:
 
+- `Filter`:
+  [ComprehendMedicalAsyncJobFilterTypeDef](./type_defs.md#comprehendmedicalasyncjobfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListPHIDetectionJobsResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehendmedical.type_defs import ListPHIDetectionJobsResponseResponseTypeDef
+```
+
+Required fields:
+
 - `ComprehendMedicalAsyncJobPropertiesList`:
   `List`\[[ComprehendMedicalAsyncJobPropertiesTypeDef](./type_defs.md#comprehendmedicalasyncjobpropertiestypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRxNormInferenceJobsResponseTypeDef
+## ListRxNormInferenceJobsRequestTypeDef
 
 ```python
-from mypy_boto3_comprehendmedical.type_defs import ListRxNormInferenceJobsResponseTypeDef
+from mypy_boto3_comprehendmedical.type_defs import ListRxNormInferenceJobsRequestTypeDef
 ```
 
 Optional fields:
 
+- `Filter`:
+  [ComprehendMedicalAsyncJobFilterTypeDef](./type_defs.md#comprehendmedicalasyncjobfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListRxNormInferenceJobsResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehendmedical.type_defs import ListRxNormInferenceJobsResponseResponseTypeDef
+```
+
+Required fields:
+
 - `ComprehendMedicalAsyncJobPropertiesList`:
   `List`\[[ComprehendMedicalAsyncJobPropertiesTypeDef](./type_defs.md#comprehendmedicalasyncjobpropertiestypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## OutputDataConfigTypeDef
 
@@ -388,6 +563,20 @@ Required fields:
 Optional fields:
 
 - `S3Key`: `str`
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_comprehendmedical.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## RxNormAttributeTypeDef
 
@@ -452,85 +641,229 @@ Optional fields:
   [RxNormTraitNameType](./literals.md#rxnormtraitnametype))
 - `Score`: `float`
 
-## StartEntitiesDetectionV2JobResponseTypeDef
+## StartEntitiesDetectionV2JobRequestTypeDef
 
 ```python
-from mypy_boto3_comprehendmedical.type_defs import StartEntitiesDetectionV2JobResponseTypeDef
+from mypy_boto3_comprehendmedical.type_defs import StartEntitiesDetectionV2JobRequestTypeDef
 ```
+
+Required fields:
+
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
+- `DataAccessRoleArn`: `str`
+- `LanguageCode`: `Literal['en']` (see
+  [LanguageCodeType](./literals.md#languagecodetype))
 
 Optional fields:
 
-- `JobId`: `str`
+- `JobName`: `str`
+- `ClientRequestToken`: `str`
+- `KMSKey`: `str`
 
-## StartICD10CMInferenceJobResponseTypeDef
+## StartEntitiesDetectionV2JobResponseResponseTypeDef
 
 ```python
-from mypy_boto3_comprehendmedical.type_defs import StartICD10CMInferenceJobResponseTypeDef
+from mypy_boto3_comprehendmedical.type_defs import StartEntitiesDetectionV2JobResponseResponseTypeDef
 ```
+
+Required fields:
+
+- `JobId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StartICD10CMInferenceJobRequestTypeDef
+
+```python
+from mypy_boto3_comprehendmedical.type_defs import StartICD10CMInferenceJobRequestTypeDef
+```
+
+Required fields:
+
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
+- `DataAccessRoleArn`: `str`
+- `LanguageCode`: `Literal['en']` (see
+  [LanguageCodeType](./literals.md#languagecodetype))
 
 Optional fields:
 
-- `JobId`: `str`
+- `JobName`: `str`
+- `ClientRequestToken`: `str`
+- `KMSKey`: `str`
 
-## StartPHIDetectionJobResponseTypeDef
+## StartICD10CMInferenceJobResponseResponseTypeDef
 
 ```python
-from mypy_boto3_comprehendmedical.type_defs import StartPHIDetectionJobResponseTypeDef
+from mypy_boto3_comprehendmedical.type_defs import StartICD10CMInferenceJobResponseResponseTypeDef
 ```
+
+Required fields:
+
+- `JobId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StartPHIDetectionJobRequestTypeDef
+
+```python
+from mypy_boto3_comprehendmedical.type_defs import StartPHIDetectionJobRequestTypeDef
+```
+
+Required fields:
+
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
+- `DataAccessRoleArn`: `str`
+- `LanguageCode`: `Literal['en']` (see
+  [LanguageCodeType](./literals.md#languagecodetype))
 
 Optional fields:
 
-- `JobId`: `str`
+- `JobName`: `str`
+- `ClientRequestToken`: `str`
+- `KMSKey`: `str`
 
-## StartRxNormInferenceJobResponseTypeDef
+## StartPHIDetectionJobResponseResponseTypeDef
 
 ```python
-from mypy_boto3_comprehendmedical.type_defs import StartRxNormInferenceJobResponseTypeDef
+from mypy_boto3_comprehendmedical.type_defs import StartPHIDetectionJobResponseResponseTypeDef
 ```
+
+Required fields:
+
+- `JobId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StartRxNormInferenceJobRequestTypeDef
+
+```python
+from mypy_boto3_comprehendmedical.type_defs import StartRxNormInferenceJobRequestTypeDef
+```
+
+Required fields:
+
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
+- `DataAccessRoleArn`: `str`
+- `LanguageCode`: `Literal['en']` (see
+  [LanguageCodeType](./literals.md#languagecodetype))
 
 Optional fields:
 
-- `JobId`: `str`
+- `JobName`: `str`
+- `ClientRequestToken`: `str`
+- `KMSKey`: `str`
 
-## StopEntitiesDetectionV2JobResponseTypeDef
-
-```python
-from mypy_boto3_comprehendmedical.type_defs import StopEntitiesDetectionV2JobResponseTypeDef
-```
-
-Optional fields:
-
-- `JobId`: `str`
-
-## StopICD10CMInferenceJobResponseTypeDef
+## StartRxNormInferenceJobResponseResponseTypeDef
 
 ```python
-from mypy_boto3_comprehendmedical.type_defs import StopICD10CMInferenceJobResponseTypeDef
+from mypy_boto3_comprehendmedical.type_defs import StartRxNormInferenceJobResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `JobId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopPHIDetectionJobResponseTypeDef
+## StopEntitiesDetectionV2JobRequestTypeDef
 
 ```python
-from mypy_boto3_comprehendmedical.type_defs import StopPHIDetectionJobResponseTypeDef
+from mypy_boto3_comprehendmedical.type_defs import StopEntitiesDetectionV2JobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `JobId`: `str`
 
-## StopRxNormInferenceJobResponseTypeDef
+## StopEntitiesDetectionV2JobResponseResponseTypeDef
 
 ```python
-from mypy_boto3_comprehendmedical.type_defs import StopRxNormInferenceJobResponseTypeDef
+from mypy_boto3_comprehendmedical.type_defs import StopEntitiesDetectionV2JobResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `JobId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StopICD10CMInferenceJobRequestTypeDef
+
+```python
+from mypy_boto3_comprehendmedical.type_defs import StopICD10CMInferenceJobRequestTypeDef
+```
+
+Required fields:
+
+- `JobId`: `str`
+
+## StopICD10CMInferenceJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehendmedical.type_defs import StopICD10CMInferenceJobResponseResponseTypeDef
+```
+
+Required fields:
+
+- `JobId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StopPHIDetectionJobRequestTypeDef
+
+```python
+from mypy_boto3_comprehendmedical.type_defs import StopPHIDetectionJobRequestTypeDef
+```
+
+Required fields:
+
+- `JobId`: `str`
+
+## StopPHIDetectionJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehendmedical.type_defs import StopPHIDetectionJobResponseResponseTypeDef
+```
+
+Required fields:
+
+- `JobId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StopRxNormInferenceJobRequestTypeDef
+
+```python
+from mypy_boto3_comprehendmedical.type_defs import StopRxNormInferenceJobRequestTypeDef
+```
+
+Required fields:
+
+- `JobId`: `str`
+
+## StopRxNormInferenceJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehendmedical.type_defs import StopRxNormInferenceJobResponseResponseTypeDef
+```
+
+Required fields:
+
+- `JobId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## TraitTypeDef
 

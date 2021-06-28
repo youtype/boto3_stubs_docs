@@ -90,10 +90,15 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_cur.type_defs import DeleteReportDefinitionResponseTypeDef, ...
+from mypy_boto3_cur.type_defs import DeleteReportDefinitionRequestTypeDef, ...
 ```
 
-- [DeleteReportDefinitionResponseTypeDef](./type_defs.md#deletereportdefinitionresponsetypedef)
-- [DescribeReportDefinitionsResponseTypeDef](./type_defs.md#describereportdefinitionsresponsetypedef)
+- [DeleteReportDefinitionRequestTypeDef](./type_defs.md#deletereportdefinitionrequesttypedef)
+- [DeleteReportDefinitionResponseResponseTypeDef](./type_defs.md#deletereportdefinitionresponseresponsetypedef)
+- [DescribeReportDefinitionsRequestTypeDef](./type_defs.md#describereportdefinitionsrequesttypedef)
+- [DescribeReportDefinitionsResponseResponseTypeDef](./type_defs.md#describereportdefinitionsresponseresponsetypedef)
+- [ModifyReportDefinitionRequestTypeDef](./type_defs.md#modifyreportdefinitionrequesttypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+- [PutReportDefinitionRequestTypeDef](./type_defs.md#putreportdefinitionrequesttypedef)
 - [ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

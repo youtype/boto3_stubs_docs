@@ -74,10 +74,15 @@ Boto3 documentation:
 
 ### OpsWorksServiceResource.Layer method
 
+Creates a Layer resource.
+
 Type annotations for `boto3.resource("opsworks").Layer` method.
 
 Boto3 documentation:
 [OpsWorks.ServiceResource.Layer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.Layer)
+
+Arguments mapping described in
+[ServiceResourceLayerRequestTypeDef](./type_defs.md#serviceresourcelayerrequesttypedef).
 
 Arguments:
 
@@ -87,10 +92,15 @@ Returns [Layer](#layer).
 
 ### OpsWorksServiceResource.Stack method
 
+Creates a Stack resource.
+
 Type annotations for `boto3.resource("opsworks").Stack` method.
 
 Boto3 documentation:
 [OpsWorks.ServiceResource.Stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.Stack)
+
+Arguments mapping described in
+[ServiceResourceStackRequestTypeDef](./type_defs.md#serviceresourcestackrequesttypedef).
 
 Arguments:
 
@@ -100,10 +110,15 @@ Returns [Stack](#stack).
 
 ### OpsWorksServiceResource.StackSummary method
 
+Creates a StackSummary resource.
+
 Type annotations for `boto3.resource("opsworks").StackSummary` method.
 
 Boto3 documentation:
 [OpsWorks.ServiceResource.StackSummary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.StackSummary)
+
+Arguments mapping described in
+[ServiceResourceStackSummaryRequestTypeDef](./type_defs.md#serviceresourcestacksummaryrequesttypedef).
 
 Arguments:
 
@@ -113,10 +128,15 @@ Returns [StackSummary](#stacksummary).
 
 ### OpsWorksServiceResource.create_stack method
 
+Creates a new stack.
+
 Type annotations for `boto3.resource("opsworks").create_stack` method.
 
 Boto3 documentation:
 [OpsWorks.ServiceResource.create_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.ServiceResource.create_stack)
+
+Arguments mapping described in
+[CreateStackRequestServiceResourceTypeDef](./type_defs.md#createstackrequestserviceresourcetypedef).
 
 Keyword-only arguments:
 
@@ -147,6 +167,8 @@ Keyword-only arguments:
 Returns [Stack](#stack).
 
 ### OpsWorksServiceResource.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("opsworks").get_available_subresources`
 method.
@@ -204,12 +226,16 @@ Boto3 documentation:
 
 #### Layer.delete method
 
+Deletes a specified layer.
+
 Type annotations for `boto3.resource("opsworks").delete` method.
 
 Boto3 documentation:
 [OpsWorks.Layer.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Layer.delete)
 
 #### Layer.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("opsworks").get_available_subresources`
 method.
@@ -221,12 +247,18 @@ Returns `List`\[`str`\].
 
 #### Layer.load method
 
+Calls :py:meth:`OpsWorks.Client.describe_layers` to update the attributes of
+the Layer resource.
+
 Type annotations for `boto3.resource("opsworks").load` method.
 
 Boto3 documentation:
 [OpsWorks.Layer.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Layer.load)
 
 #### Layer.reload method
+
+Calls :py:meth:`OpsWorks.Client.describe_layers` to update the attributes of
+the Layer resource.
 
 Type annotations for `boto3.resource("opsworks").reload` method.
 
@@ -301,6 +333,8 @@ Boto3 documentation:
 
 #### Stack.Summary method
 
+Creates a StackSummary resource.
+
 Type annotations for `boto3.resource("opsworks").Summary` method.
 
 Boto3 documentation:
@@ -310,10 +344,15 @@ Returns [StackSummary](#stacksummary).
 
 #### Stack.create_layer method
 
+Creates a layer.
+
 Type annotations for `boto3.resource("opsworks").create_layer` method.
 
 Boto3 documentation:
 [OpsWorks.Stack.create_layer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.create_layer)
+
+Arguments mapping described in
+[CreateLayerRequestStackTypeDef](./type_defs.md#createlayerrequeststacktypedef).
 
 Keyword-only arguments:
 
@@ -344,12 +383,16 @@ Returns [Layer](#layer).
 
 #### Stack.delete method
 
+Deletes a specified stack.
+
 Type annotations for `boto3.resource("opsworks").delete` method.
 
 Boto3 documentation:
 [OpsWorks.Stack.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.delete)
 
 #### Stack.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("opsworks").get_available_subresources`
 method.
@@ -361,12 +404,18 @@ Returns `List`\[`str`\].
 
 #### Stack.load method
 
+Calls :py:meth:`OpsWorks.Client.describe_stacks` to update the attributes of
+the Stack resource.
+
 Type annotations for `boto3.resource("opsworks").load` method.
 
 Boto3 documentation:
 [OpsWorks.Stack.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.load)
 
 #### Stack.reload method
+
+Calls :py:meth:`OpsWorks.Client.describe_stacks` to update the attributes of
+the Stack resource.
 
 Type annotations for `boto3.resource("opsworks").reload` method.
 
@@ -402,6 +451,8 @@ Boto3 documentation:
 
 #### StackSummary.Stack method
 
+Creates a Stack resource.
+
 Type annotations for `boto3.resource("opsworks").Stack` method.
 
 Boto3 documentation:
@@ -410,6 +461,8 @@ Boto3 documentation:
 Returns [Stack](#stack).
 
 #### StackSummary.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("opsworks").get_available_subresources`
 method.
@@ -421,12 +474,18 @@ Returns `List`\[`str`\].
 
 #### StackSummary.load method
 
+Calls :py:meth:`OpsWorks.Client.describe_stack_summary` to update the
+attributes of the StackSummary resource.
+
 Type annotations for `boto3.resource("opsworks").load` method.
 
 Boto3 documentation:
 [OpsWorks.StackSummary.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.StackSummary.load)
 
 #### StackSummary.reload method
+
+Calls :py:meth:`OpsWorks.Client.describe_stack_summary` to update the
+attributes of the StackSummary resource.
 
 Type annotations for `boto3.resource("opsworks").reload` method.
 

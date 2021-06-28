@@ -14,32 +14,52 @@ type annotations stubs module
   - [AutomationExecutionTypeDef](#automationexecutiontypedef)
   - [ChatChannelTypeDef](#chatchanneltypedef)
   - [ConditionTypeDef](#conditiontypedef)
-  - [CreateReplicationSetOutputTypeDef](#createreplicationsetoutputtypedef)
-  - [CreateResponsePlanOutputTypeDef](#createresponseplanoutputtypedef)
-  - [CreateTimelineEventOutputTypeDef](#createtimelineeventoutputtypedef)
+  - [CreateReplicationSetInputTypeDef](#createreplicationsetinputtypedef)
+  - [CreateReplicationSetOutputResponseTypeDef](#createreplicationsetoutputresponsetypedef)
+  - [CreateResponsePlanInputTypeDef](#createresponseplaninputtypedef)
+  - [CreateResponsePlanOutputResponseTypeDef](#createresponseplanoutputresponsetypedef)
+  - [CreateTimelineEventInputTypeDef](#createtimelineeventinputtypedef)
+  - [CreateTimelineEventOutputResponseTypeDef](#createtimelineeventoutputresponsetypedef)
+  - [DeleteIncidentRecordInputTypeDef](#deleteincidentrecordinputtypedef)
   - [DeleteRegionActionTypeDef](#deleteregionactiontypedef)
+  - [DeleteReplicationSetInputTypeDef](#deletereplicationsetinputtypedef)
+  - [DeleteResourcePolicyInputTypeDef](#deleteresourcepolicyinputtypedef)
+  - [DeleteResponsePlanInputTypeDef](#deleteresponseplaninputtypedef)
+  - [DeleteTimelineEventInputTypeDef](#deletetimelineeventinputtypedef)
   - [EventSummaryTypeDef](#eventsummarytypedef)
   - [FilterTypeDef](#filtertypedef)
-  - [GetIncidentRecordOutputTypeDef](#getincidentrecordoutputtypedef)
-  - [GetReplicationSetOutputTypeDef](#getreplicationsetoutputtypedef)
-  - [GetResourcePoliciesOutputTypeDef](#getresourcepoliciesoutputtypedef)
-  - [GetResponsePlanOutputTypeDef](#getresponseplanoutputtypedef)
-  - [GetTimelineEventOutputTypeDef](#gettimelineeventoutputtypedef)
+  - [GetIncidentRecordInputTypeDef](#getincidentrecordinputtypedef)
+  - [GetIncidentRecordOutputResponseTypeDef](#getincidentrecordoutputresponsetypedef)
+  - [GetReplicationSetInputTypeDef](#getreplicationsetinputtypedef)
+  - [GetReplicationSetOutputResponseTypeDef](#getreplicationsetoutputresponsetypedef)
+  - [GetResourcePoliciesInputTypeDef](#getresourcepoliciesinputtypedef)
+  - [GetResourcePoliciesOutputResponseTypeDef](#getresourcepoliciesoutputresponsetypedef)
+  - [GetResponsePlanInputTypeDef](#getresponseplaninputtypedef)
+  - [GetResponsePlanOutputResponseTypeDef](#getresponseplanoutputresponsetypedef)
+  - [GetTimelineEventInputTypeDef](#gettimelineeventinputtypedef)
+  - [GetTimelineEventOutputResponseTypeDef](#gettimelineeventoutputresponsetypedef)
   - [IncidentRecordSourceTypeDef](#incidentrecordsourcetypedef)
   - [IncidentRecordSummaryTypeDef](#incidentrecordsummarytypedef)
   - [IncidentRecordTypeDef](#incidentrecordtypedef)
   - [IncidentTemplateTypeDef](#incidenttemplatetypedef)
   - [ItemIdentifierTypeDef](#itemidentifiertypedef)
   - [ItemValueTypeDef](#itemvaluetypedef)
-  - [ListIncidentRecordsOutputTypeDef](#listincidentrecordsoutputtypedef)
-  - [ListRelatedItemsOutputTypeDef](#listrelateditemsoutputtypedef)
-  - [ListReplicationSetsOutputTypeDef](#listreplicationsetsoutputtypedef)
-  - [ListResponsePlansOutputTypeDef](#listresponseplansoutputtypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListTimelineEventsOutputTypeDef](#listtimelineeventsoutputtypedef)
+  - [ListIncidentRecordsInputTypeDef](#listincidentrecordsinputtypedef)
+  - [ListIncidentRecordsOutputResponseTypeDef](#listincidentrecordsoutputresponsetypedef)
+  - [ListRelatedItemsInputTypeDef](#listrelateditemsinputtypedef)
+  - [ListRelatedItemsOutputResponseTypeDef](#listrelateditemsoutputresponsetypedef)
+  - [ListReplicationSetsInputTypeDef](#listreplicationsetsinputtypedef)
+  - [ListReplicationSetsOutputResponseTypeDef](#listreplicationsetsoutputresponsetypedef)
+  - [ListResponsePlansInputTypeDef](#listresponseplansinputtypedef)
+  - [ListResponsePlansOutputResponseTypeDef](#listresponseplansoutputresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListTimelineEventsInputTypeDef](#listtimelineeventsinputtypedef)
+  - [ListTimelineEventsOutputResponseTypeDef](#listtimelineeventsoutputresponsetypedef)
   - [NotificationTargetItemTypeDef](#notificationtargetitemtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutResourcePolicyOutputTypeDef](#putresourcepolicyoutputtypedef)
+  - [PutResourcePolicyInputTypeDef](#putresourcepolicyinputtypedef)
+  - [PutResourcePolicyOutputResponseTypeDef](#putresourcepolicyoutputresponsetypedef)
   - [RegionInfoTypeDef](#regioninfotypedef)
   - [RegionMapInputValueTypeDef](#regionmapinputvaluetypedef)
   - [RelatedItemTypeDef](#relateditemtypedef)
@@ -49,10 +69,19 @@ type annotations stubs module
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [ResponsePlanSummaryTypeDef](#responseplansummarytypedef)
   - [SsmAutomationTypeDef](#ssmautomationtypedef)
-  - [StartIncidentOutputTypeDef](#startincidentoutputtypedef)
+  - [StartIncidentInputTypeDef](#startincidentinputtypedef)
+  - [StartIncidentOutputResponseTypeDef](#startincidentoutputresponsetypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TimelineEventTypeDef](#timelineeventtypedef)
   - [TriggerDetailsTypeDef](#triggerdetailstypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateDeletionProtectionInputTypeDef](#updatedeletionprotectioninputtypedef)
+  - [UpdateIncidentRecordInputTypeDef](#updateincidentrecordinputtypedef)
+  - [UpdateRelatedItemsInputTypeDef](#updaterelateditemsinputtypedef)
   - [UpdateReplicationSetActionTypeDef](#updatereplicationsetactiontypedef)
+  - [UpdateReplicationSetInputTypeDef](#updatereplicationsetinputtypedef)
+  - [UpdateResponsePlanInputTypeDef](#updateresponseplaninputtypedef)
+  - [UpdateTimelineEventInputTypeDef](#updatetimelineeventinputtypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
 ## ActionTypeDef
@@ -119,15 +148,30 @@ from mypy_boto3_ssm_incidents.type_defs import ConditionTypeDef
 
 Optional fields:
 
-- `after`: `datetime`
-- `before`: `datetime`
+- `after`: `Union`\[`datetime`, `str`\]
+- `before`: `Union`\[`datetime`, `str`\]
 - `equals`:
   [AttributeValueListTypeDef](./type_defs.md#attributevaluelisttypedef)
 
-## CreateReplicationSetOutputTypeDef
+## CreateReplicationSetInputTypeDef
 
 ```python
-from mypy_boto3_ssm_incidents.type_defs import CreateReplicationSetOutputTypeDef
+from mypy_boto3_ssm_incidents.type_defs import CreateReplicationSetInputTypeDef
+```
+
+Required fields:
+
+- `regions`: `Dict`\[`str`,
+  [RegionMapInputValueTypeDef](./type_defs.md#regionmapinputvaluetypedef)\]
+
+Optional fields:
+
+- `clientToken`: `str`
+
+## CreateReplicationSetOutputResponseTypeDef
+
+```python
+from mypy_boto3_ssm_incidents.type_defs import CreateReplicationSetOutputResponseTypeDef
 ```
 
 Required fields:
@@ -136,10 +180,31 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateResponsePlanOutputTypeDef
+## CreateResponsePlanInputTypeDef
 
 ```python
-from mypy_boto3_ssm_incidents.type_defs import CreateResponsePlanOutputTypeDef
+from mypy_boto3_ssm_incidents.type_defs import CreateResponsePlanInputTypeDef
+```
+
+Required fields:
+
+- `incidentTemplate`:
+  [IncidentTemplateTypeDef](./type_defs.md#incidenttemplatetypedef)
+- `name`: `str`
+
+Optional fields:
+
+- `actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
+- `chatChannel`: [ChatChannelTypeDef](./type_defs.md#chatchanneltypedef)
+- `clientToken`: `str`
+- `displayName`: `str`
+- `engagements`: `List`\[`str`\]
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateResponsePlanOutputResponseTypeDef
+
+```python
+from mypy_boto3_ssm_incidents.type_defs import CreateResponsePlanOutputResponseTypeDef
 ```
 
 Required fields:
@@ -148,10 +213,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTimelineEventOutputTypeDef
+## CreateTimelineEventInputTypeDef
 
 ```python
-from mypy_boto3_ssm_incidents.type_defs import CreateTimelineEventOutputTypeDef
+from mypy_boto3_ssm_incidents.type_defs import CreateTimelineEventInputTypeDef
+```
+
+Required fields:
+
+- `clientToken`: `str`
+- `eventData`: `str`
+- `eventTime`: `Union`\[`datetime`, `str`\]
+- `eventType`: `str`
+- `incidentRecordArn`: `str`
+
+## CreateTimelineEventOutputResponseTypeDef
+
+```python
+from mypy_boto3_ssm_incidents.type_defs import CreateTimelineEventOutputResponseTypeDef
 ```
 
 Required fields:
@@ -160,6 +239,16 @@ Required fields:
 - `incidentRecordArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteIncidentRecordInputTypeDef
+
+```python
+from mypy_boto3_ssm_incidents.type_defs import DeleteIncidentRecordInputTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
 
 ## DeleteRegionActionTypeDef
 
@@ -170,6 +259,48 @@ from mypy_boto3_ssm_incidents.type_defs import DeleteRegionActionTypeDef
 Required fields:
 
 - `regionName`: `str`
+
+## DeleteReplicationSetInputTypeDef
+
+```python
+from mypy_boto3_ssm_incidents.type_defs import DeleteReplicationSetInputTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+
+## DeleteResourcePolicyInputTypeDef
+
+```python
+from mypy_boto3_ssm_incidents.type_defs import DeleteResourcePolicyInputTypeDef
+```
+
+Required fields:
+
+- `policyId`: `str`
+- `resourceArn`: `str`
+
+## DeleteResponsePlanInputTypeDef
+
+```python
+from mypy_boto3_ssm_incidents.type_defs import DeleteResponsePlanInputTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+
+## DeleteTimelineEventInputTypeDef
+
+```python
+from mypy_boto3_ssm_incidents.type_defs import DeleteTimelineEventInputTypeDef
+```
+
+Required fields:
+
+- `eventId`: `str`
+- `incidentRecordArn`: `str`
 
 ## EventSummaryTypeDef
 
@@ -196,10 +327,20 @@ Required fields:
 - `condition`: [ConditionTypeDef](./type_defs.md#conditiontypedef)
 - `key`: `str`
 
-## GetIncidentRecordOutputTypeDef
+## GetIncidentRecordInputTypeDef
 
 ```python
-from mypy_boto3_ssm_incidents.type_defs import GetIncidentRecordOutputTypeDef
+from mypy_boto3_ssm_incidents.type_defs import GetIncidentRecordInputTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+
+## GetIncidentRecordOutputResponseTypeDef
+
+```python
+from mypy_boto3_ssm_incidents.type_defs import GetIncidentRecordOutputResponseTypeDef
 ```
 
 Required fields:
@@ -209,10 +350,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetReplicationSetOutputTypeDef
+## GetReplicationSetInputTypeDef
 
 ```python
-from mypy_boto3_ssm_incidents.type_defs import GetReplicationSetOutputTypeDef
+from mypy_boto3_ssm_incidents.type_defs import GetReplicationSetInputTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+
+## GetReplicationSetOutputResponseTypeDef
+
+```python
+from mypy_boto3_ssm_incidents.type_defs import GetReplicationSetOutputResponseTypeDef
 ```
 
 Required fields:
@@ -222,10 +373,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResourcePoliciesOutputTypeDef
+## GetResourcePoliciesInputTypeDef
 
 ```python
-from mypy_boto3_ssm_incidents.type_defs import GetResourcePoliciesOutputTypeDef
+from mypy_boto3_ssm_incidents.type_defs import GetResourcePoliciesInputTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+
+Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## GetResourcePoliciesOutputResponseTypeDef
+
+```python
+from mypy_boto3_ssm_incidents.type_defs import GetResourcePoliciesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -236,10 +402,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResponsePlanOutputTypeDef
+## GetResponsePlanInputTypeDef
 
 ```python
-from mypy_boto3_ssm_incidents.type_defs import GetResponsePlanOutputTypeDef
+from mypy_boto3_ssm_incidents.type_defs import GetResponsePlanInputTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+
+## GetResponsePlanOutputResponseTypeDef
+
+```python
+from mypy_boto3_ssm_incidents.type_defs import GetResponsePlanOutputResponseTypeDef
 ```
 
 Required fields:
@@ -255,10 +431,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTimelineEventOutputTypeDef
+## GetTimelineEventInputTypeDef
 
 ```python
-from mypy_boto3_ssm_incidents.type_defs import GetTimelineEventOutputTypeDef
+from mypy_boto3_ssm_incidents.type_defs import GetTimelineEventInputTypeDef
+```
+
+Required fields:
+
+- `eventId`: `str`
+- `incidentRecordArn`: `str`
+
+## GetTimelineEventOutputResponseTypeDef
+
+```python
+from mypy_boto3_ssm_incidents.type_defs import GetTimelineEventOutputResponseTypeDef
 ```
 
 Required fields:
@@ -373,10 +560,22 @@ Optional fields:
 - `metricDefinition`: `str`
 - `url`: `str`
 
-## ListIncidentRecordsOutputTypeDef
+## ListIncidentRecordsInputTypeDef
 
 ```python
-from mypy_boto3_ssm_incidents.type_defs import ListIncidentRecordsOutputTypeDef
+from mypy_boto3_ssm_incidents.type_defs import ListIncidentRecordsInputTypeDef
+```
+
+Optional fields:
+
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListIncidentRecordsOutputResponseTypeDef
+
+```python
+from mypy_boto3_ssm_incidents.type_defs import ListIncidentRecordsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -387,10 +586,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRelatedItemsOutputTypeDef
+## ListRelatedItemsInputTypeDef
 
 ```python
-from mypy_boto3_ssm_incidents.type_defs import ListRelatedItemsOutputTypeDef
+from mypy_boto3_ssm_incidents.type_defs import ListRelatedItemsInputTypeDef
+```
+
+Required fields:
+
+- `incidentRecordArn`: `str`
+
+Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListRelatedItemsOutputResponseTypeDef
+
+```python
+from mypy_boto3_ssm_incidents.type_defs import ListRelatedItemsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -401,10 +615,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListReplicationSetsOutputTypeDef
+## ListReplicationSetsInputTypeDef
 
 ```python
-from mypy_boto3_ssm_incidents.type_defs import ListReplicationSetsOutputTypeDef
+from mypy_boto3_ssm_incidents.type_defs import ListReplicationSetsInputTypeDef
+```
+
+Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListReplicationSetsOutputResponseTypeDef
+
+```python
+from mypy_boto3_ssm_incidents.type_defs import ListReplicationSetsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -414,10 +639,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListResponsePlansOutputTypeDef
+## ListResponsePlansInputTypeDef
 
 ```python
-from mypy_boto3_ssm_incidents.type_defs import ListResponsePlansOutputTypeDef
+from mypy_boto3_ssm_incidents.type_defs import ListResponsePlansInputTypeDef
+```
+
+Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListResponsePlansOutputResponseTypeDef
+
+```python
+from mypy_boto3_ssm_incidents.type_defs import ListResponsePlansOutputResponseTypeDef
 ```
 
 Required fields:
@@ -428,20 +664,51 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_ssm_incidents.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_ssm_incidents.type_defs import ListTagsForResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_ssm_incidents.type_defs import ListTagsForResourceResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTimelineEventsOutputTypeDef
+## ListTimelineEventsInputTypeDef
 
 ```python
-from mypy_boto3_ssm_incidents.type_defs import ListTimelineEventsOutputTypeDef
+from mypy_boto3_ssm_incidents.type_defs import ListTimelineEventsInputTypeDef
+```
+
+Required fields:
+
+- `incidentRecordArn`: `str`
+
+Optional fields:
+
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+- `sortBy`: `Literal['EVENT_TIME']` (see
+  [TimelineEventSortType](./literals.md#timelineeventsorttype))
+- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
+
+## ListTimelineEventsOutputResponseTypeDef
+
+```python
+from mypy_boto3_ssm_incidents.type_defs import ListTimelineEventsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -474,10 +741,21 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## PutResourcePolicyOutputTypeDef
+## PutResourcePolicyInputTypeDef
 
 ```python
-from mypy_boto3_ssm_incidents.type_defs import PutResourcePolicyOutputTypeDef
+from mypy_boto3_ssm_incidents.type_defs import PutResourcePolicyInputTypeDef
+```
+
+Required fields:
+
+- `policy`: `str`
+- `resourceArn`: `str`
+
+## PutResourcePolicyOutputResponseTypeDef
+
+```python
+from mypy_boto3_ssm_incidents.type_defs import PutResourcePolicyOutputResponseTypeDef
 ```
 
 Required fields:
@@ -612,10 +890,30 @@ Optional fields:
 - `parameters`: `Dict`\[`str`, `List`\[`str`\]\]
 - `targetAccount`: [SsmTargetAccountType](./literals.md#ssmtargetaccounttype)
 
-## StartIncidentOutputTypeDef
+## StartIncidentInputTypeDef
 
 ```python
-from mypy_boto3_ssm_incidents.type_defs import StartIncidentOutputTypeDef
+from mypy_boto3_ssm_incidents.type_defs import StartIncidentInputTypeDef
+```
+
+Required fields:
+
+- `responsePlanArn`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
+- `impact`: `int`
+- `relatedItems`:
+  `List`\[[RelatedItemTypeDef](./type_defs.md#relateditemtypedef)\]
+- `title`: `str`
+- `triggerDetails`:
+  [TriggerDetailsTypeDef](./type_defs.md#triggerdetailstypedef)
+
+## StartIncidentOutputResponseTypeDef
+
+```python
+from mypy_boto3_ssm_incidents.type_defs import StartIncidentOutputResponseTypeDef
 ```
 
 Required fields:
@@ -623,6 +921,17 @@ Required fields:
 - `incidentRecordArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_ssm_incidents.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## TimelineEventTypeDef
 
@@ -648,12 +957,75 @@ from mypy_boto3_ssm_incidents.type_defs import TriggerDetailsTypeDef
 Required fields:
 
 - `source`: `str`
-- `timestamp`: `datetime`
+- `timestamp`: `Union`\[`datetime`, `str`\]
 
 Optional fields:
 
 - `rawData`: `str`
 - `triggerArn`: `str`
+
+## UntagResourceRequestTypeDef
+
+```python
+from mypy_boto3_ssm_incidents.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tagKeys`: `List`\[`str`\]
+
+## UpdateDeletionProtectionInputTypeDef
+
+```python
+from mypy_boto3_ssm_incidents.type_defs import UpdateDeletionProtectionInputTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+- `deletionProtected`: `bool`
+
+Optional fields:
+
+- `clientToken`: `str`
+
+## UpdateIncidentRecordInputTypeDef
+
+```python
+from mypy_boto3_ssm_incidents.type_defs import UpdateIncidentRecordInputTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+
+Optional fields:
+
+- `chatChannel`: [ChatChannelTypeDef](./type_defs.md#chatchanneltypedef)
+- `clientToken`: `str`
+- `impact`: `int`
+- `notificationTargets`:
+  `List`\[[NotificationTargetItemTypeDef](./type_defs.md#notificationtargetitemtypedef)\]
+- `status`: [IncidentRecordStatusType](./literals.md#incidentrecordstatustype)
+- `summary`: `str`
+- `title`: `str`
+
+## UpdateRelatedItemsInputTypeDef
+
+```python
+from mypy_boto3_ssm_incidents.type_defs import UpdateRelatedItemsInputTypeDef
+```
+
+Required fields:
+
+- `incidentRecordArn`: `str`
+- `relatedItemsUpdate`:
+  [RelatedItemsUpdateTypeDef](./type_defs.md#relateditemsupdatetypedef)
+
+Optional fields:
+
+- `clientToken`: `str`
 
 ## UpdateReplicationSetActionTypeDef
 
@@ -667,6 +1039,64 @@ Optional fields:
   [AddRegionActionTypeDef](./type_defs.md#addregionactiontypedef)
 - `deleteRegionAction`:
   [DeleteRegionActionTypeDef](./type_defs.md#deleteregionactiontypedef)
+
+## UpdateReplicationSetInputTypeDef
+
+```python
+from mypy_boto3_ssm_incidents.type_defs import UpdateReplicationSetInputTypeDef
+```
+
+Required fields:
+
+- `actions`:
+  `List`\[[UpdateReplicationSetActionTypeDef](./type_defs.md#updatereplicationsetactiontypedef)\]
+- `arn`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
+
+## UpdateResponsePlanInputTypeDef
+
+```python
+from mypy_boto3_ssm_incidents.type_defs import UpdateResponsePlanInputTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+
+Optional fields:
+
+- `actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
+- `chatChannel`: [ChatChannelTypeDef](./type_defs.md#chatchanneltypedef)
+- `clientToken`: `str`
+- `displayName`: `str`
+- `engagements`: `List`\[`str`\]
+- `incidentTemplateDedupeString`: `str`
+- `incidentTemplateImpact`: `int`
+- `incidentTemplateNotificationTargets`:
+  `List`\[[NotificationTargetItemTypeDef](./type_defs.md#notificationtargetitemtypedef)\]
+- `incidentTemplateSummary`: `str`
+- `incidentTemplateTitle`: `str`
+
+## UpdateTimelineEventInputTypeDef
+
+```python
+from mypy_boto3_ssm_incidents.type_defs import UpdateTimelineEventInputTypeDef
+```
+
+Required fields:
+
+- `clientToken`: `str`
+- `eventId`: `str`
+- `incidentRecordArn`: `str`
+
+Optional fields:
+
+- `eventData`: `str`
+- `eventTime`: `Union`\[`datetime`, `str`\]
+- `eventType`: `str`
 
 ## WaiterConfigTypeDef
 

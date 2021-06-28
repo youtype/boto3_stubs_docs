@@ -72,6 +72,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("batch").can_paginate` method.
 
 Boto3 documentation:
@@ -85,10 +87,15 @@ Returns `bool`.
 
 ### cancel_job
 
+Cancels a job in an AWS Batch job queue.
+
 Type annotations for `boto3.client("batch").cancel_job` method.
 
 Boto3 documentation:
 [Batch.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.cancel_job)
+
+Arguments mapping described in
+[CancelJobRequestTypeDef](./type_defs.md#canceljobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -99,10 +106,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### create_compute_environment
 
+Creates an AWS Batch compute environment.
+
 Type annotations for `boto3.client("batch").create_compute_environment` method.
 
 Boto3 documentation:
 [Batch.Client.create_compute_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.create_compute_environment)
+
+Arguments mapping described in
+[CreateComputeEnvironmentRequestTypeDef](./type_defs.md#createcomputeenvironmentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -115,14 +127,19 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateComputeEnvironmentResponseTypeDef](./type_defs.md#createcomputeenvironmentresponsetypedef).
+[CreateComputeEnvironmentResponseResponseTypeDef](./type_defs.md#createcomputeenvironmentresponseresponsetypedef).
 
 ### create_job_queue
+
+Creates an AWS Batch job queue.
 
 Type annotations for `boto3.client("batch").create_job_queue` method.
 
 Boto3 documentation:
 [Batch.Client.create_job_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.create_job_queue)
+
+Arguments mapping described in
+[CreateJobQueueRequestTypeDef](./type_defs.md#createjobqueuerequesttypedef).
 
 Keyword-only arguments:
 
@@ -135,14 +152,19 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateJobQueueResponseTypeDef](./type_defs.md#createjobqueueresponsetypedef).
+[CreateJobQueueResponseResponseTypeDef](./type_defs.md#createjobqueueresponseresponsetypedef).
 
 ### delete_compute_environment
+
+Deletes an AWS Batch compute environment.
 
 Type annotations for `boto3.client("batch").delete_compute_environment` method.
 
 Boto3 documentation:
 [Batch.Client.delete_compute_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.delete_compute_environment)
+
+Arguments mapping described in
+[DeleteComputeEnvironmentRequestTypeDef](./type_defs.md#deletecomputeenvironmentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -152,10 +174,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_job_queue
 
+Deletes the specified job queue.
+
 Type annotations for `boto3.client("batch").delete_job_queue` method.
 
 Boto3 documentation:
 [Batch.Client.delete_job_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.delete_job_queue)
+
+Arguments mapping described in
+[DeleteJobQueueRequestTypeDef](./type_defs.md#deletejobqueuerequesttypedef).
 
 Keyword-only arguments:
 
@@ -165,10 +192,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### deregister_job_definition
 
+Deregisters an AWS Batch job definition.
+
 Type annotations for `boto3.client("batch").deregister_job_definition` method.
 
 Boto3 documentation:
 [Batch.Client.deregister_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.deregister_job_definition)
+
+Arguments mapping described in
+[DeregisterJobDefinitionRequestTypeDef](./type_defs.md#deregisterjobdefinitionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -178,11 +210,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_compute_environments
 
+Describes one or more of your compute environments.
+
 Type annotations for `boto3.client("batch").describe_compute_environments`
 method.
 
 Boto3 documentation:
 [Batch.Client.describe_compute_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_compute_environments)
+
+Arguments mapping described in
+[DescribeComputeEnvironmentsRequestTypeDef](./type_defs.md#describecomputeenvironmentsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -191,14 +228,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeComputeEnvironmentsResponseTypeDef](./type_defs.md#describecomputeenvironmentsresponsetypedef).
+[DescribeComputeEnvironmentsResponseResponseTypeDef](./type_defs.md#describecomputeenvironmentsresponseresponsetypedef).
 
 ### describe_job_definitions
+
+Describes a list of job definitions.
 
 Type annotations for `boto3.client("batch").describe_job_definitions` method.
 
 Boto3 documentation:
 [Batch.Client.describe_job_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_job_definitions)
+
+Arguments mapping described in
+[DescribeJobDefinitionsRequestTypeDef](./type_defs.md#describejobdefinitionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -209,14 +251,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeJobDefinitionsResponseTypeDef](./type_defs.md#describejobdefinitionsresponsetypedef).
+[DescribeJobDefinitionsResponseResponseTypeDef](./type_defs.md#describejobdefinitionsresponseresponsetypedef).
 
 ### describe_job_queues
+
+Describes one or more of your job queues.
 
 Type annotations for `boto3.client("batch").describe_job_queues` method.
 
 Boto3 documentation:
 [Batch.Client.describe_job_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_job_queues)
+
+Arguments mapping described in
+[DescribeJobQueuesRequestTypeDef](./type_defs.md#describejobqueuesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -225,23 +272,30 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeJobQueuesResponseTypeDef](./type_defs.md#describejobqueuesresponsetypedef).
+[DescribeJobQueuesResponseResponseTypeDef](./type_defs.md#describejobqueuesresponseresponsetypedef).
 
 ### describe_jobs
+
+.
 
 Type annotations for `boto3.client("batch").describe_jobs` method.
 
 Boto3 documentation:
 [Batch.Client.describe_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_jobs)
 
+Arguments mapping described in
+[DescribeJobsRequestTypeDef](./type_defs.md#describejobsrequesttypedef).
+
 Keyword-only arguments:
 
 - `jobs`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeJobsResponseTypeDef](./type_defs.md#describejobsresponsetypedef).
+[DescribeJobsResponseResponseTypeDef](./type_defs.md#describejobsresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("batch").generate_presigned_url` method.
 
@@ -259,10 +313,15 @@ Returns `str`.
 
 ### list_jobs
 
+Returns a list of AWS Batch jobs.
+
 Type annotations for `boto3.client("batch").list_jobs` method.
 
 Boto3 documentation:
 [Batch.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.list_jobs)
+
+Arguments mapping described in
+[ListJobsRequestTypeDef](./type_defs.md#listjobsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -273,28 +332,39 @@ Keyword-only arguments:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
+Returns
+[ListJobsResponseResponseTypeDef](./type_defs.md#listjobsresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Lists the tags for an AWS Batch resource.
 
 Type annotations for `boto3.client("batch").list_tags_for_resource` method.
 
 Boto3 documentation:
 [Batch.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### register_job_definition
+
+Registers an AWS Batch job definition.
 
 Type annotations for `boto3.client("batch").register_job_definition` method.
 
 Boto3 documentation:
 [Batch.Client.register_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.register_job_definition)
+
+Arguments mapping described in
+[RegisterJobDefinitionRequestTypeDef](./type_defs.md#registerjobdefinitionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -314,14 +384,19 @@ Keyword-only arguments:
   `List`\[[PlatformCapabilityType](./literals.md#platformcapabilitytype)\]
 
 Returns
-[RegisterJobDefinitionResponseTypeDef](./type_defs.md#registerjobdefinitionresponsetypedef).
+[RegisterJobDefinitionResponseResponseTypeDef](./type_defs.md#registerjobdefinitionresponseresponsetypedef).
 
 ### submit_job
+
+Submits an AWS Batch job from a job definition.
 
 Type annotations for `boto3.client("batch").submit_job` method.
 
 Boto3 documentation:
 [Batch.Client.submit_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.submit_job)
+
+Arguments mapping described in
+[SubmitJobRequestTypeDef](./type_defs.md#submitjobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -341,14 +416,20 @@ Keyword-only arguments:
 - `timeout`: [JobTimeoutTypeDef](./type_defs.md#jobtimeouttypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
-Returns [SubmitJobResponseTypeDef](./type_defs.md#submitjobresponsetypedef).
+Returns
+[SubmitJobResponseResponseTypeDef](./type_defs.md#submitjobresponseresponsetypedef).
 
 ### tag_resource
+
+Associates the specified tags to a resource with the specified `resourceArn`.
 
 Type annotations for `boto3.client("batch").tag_resource` method.
 
 Boto3 documentation:
 [Batch.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -359,10 +440,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### terminate_job
 
+Terminates a job in a job queue.
+
 Type annotations for `boto3.client("batch").terminate_job` method.
 
 Boto3 documentation:
 [Batch.Client.terminate_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.terminate_job)
+
+Arguments mapping described in
+[TerminateJobRequestTypeDef](./type_defs.md#terminatejobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -373,10 +459,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Deletes specified tags from an AWS Batch resource.
+
 Type annotations for `boto3.client("batch").untag_resource` method.
 
 Boto3 documentation:
 [Batch.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -387,10 +478,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_compute_environment
 
+Updates an AWS Batch compute environment.
+
 Type annotations for `boto3.client("batch").update_compute_environment` method.
 
 Boto3 documentation:
 [Batch.Client.update_compute_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.update_compute_environment)
+
+Arguments mapping described in
+[UpdateComputeEnvironmentRequestTypeDef](./type_defs.md#updatecomputeenvironmentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -401,14 +497,19 @@ Keyword-only arguments:
 - `serviceRole`: `str`
 
 Returns
-[UpdateComputeEnvironmentResponseTypeDef](./type_defs.md#updatecomputeenvironmentresponsetypedef).
+[UpdateComputeEnvironmentResponseResponseTypeDef](./type_defs.md#updatecomputeenvironmentresponseresponsetypedef).
 
 ### update_job_queue
+
+Updates a job queue.
 
 Type annotations for `boto3.client("batch").update_job_queue` method.
 
 Boto3 documentation:
 [Batch.Client.update_job_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.update_job_queue)
+
+Arguments mapping described in
+[UpdateJobQueueRequestTypeDef](./type_defs.md#updatejobqueuerequesttypedef).
 
 Keyword-only arguments:
 
@@ -419,7 +520,7 @@ Keyword-only arguments:
   `List`\[[ComputeEnvironmentOrderTypeDef](./type_defs.md#computeenvironmentordertypedef)\]
 
 Returns
-[UpdateJobQueueResponseTypeDef](./type_defs.md#updatejobqueueresponsetypedef).
+[UpdateJobQueueResponseResponseTypeDef](./type_defs.md#updatejobqueueresponseresponsetypedef).
 
 ### get_paginator
 

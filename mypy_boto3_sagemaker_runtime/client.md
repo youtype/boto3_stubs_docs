@@ -55,6 +55,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("sagemaker-runtime").can_paginate` method.
 
 Boto3 documentation:
@@ -67,6 +69,8 @@ Arguments:
 Returns `bool`.
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("sagemaker-runtime").generate_presigned_url`
 method.
@@ -85,11 +89,18 @@ Returns `str`.
 
 ### invoke_endpoint
 
+After you deploy a model into production using Amazon SageMaker hosting
+services, your client applications use this API to get inferences from the
+model hosted at the specified endpoint.
+
 Type annotations for `boto3.client("sagemaker-runtime").invoke_endpoint`
 method.
 
 Boto3 documentation:
 [SageMakerRuntime.Client.invoke_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime.Client.invoke_endpoint)
+
+Arguments mapping described in
+[InvokeEndpointInputTypeDef](./type_defs.md#invokeendpointinputtypedef).
 
 Keyword-only arguments:
 
@@ -104,4 +115,4 @@ Keyword-only arguments:
 - `InferenceId`: `str`
 
 Returns
-[InvokeEndpointOutputTypeDef](./type_defs.md#invokeendpointoutputtypedef).
+[InvokeEndpointOutputResponseTypeDef](./type_defs.md#invokeendpointoutputresponsetypedef).

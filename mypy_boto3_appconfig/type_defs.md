@@ -8,49 +8,106 @@ type annotations stubs module
 [mypy_boto3_appconfig](https://pypi.org/project/mypy-boto3-appconfig/).
 
 - [Typed dictionaries for boto3 AppConfig module](#typed-dictionaries-for-boto3-appconfig-module)
-  - [ApplicationTypeDef](#applicationtypedef)
-  - [ApplicationsTypeDef](#applicationstypedef)
+  - [ApplicationResponseTypeDef](#applicationresponsetypedef)
+  - [ApplicationsResponseTypeDef](#applicationsresponsetypedef)
+  - [ConfigurationProfileResponseTypeDef](#configurationprofileresponsetypedef)
   - [ConfigurationProfileSummaryTypeDef](#configurationprofilesummarytypedef)
-  - [ConfigurationProfileTypeDef](#configurationprofiletypedef)
-  - [ConfigurationProfilesTypeDef](#configurationprofilestypedef)
-  - [ConfigurationTypeDef](#configurationtypedef)
+  - [ConfigurationProfilesResponseTypeDef](#configurationprofilesresponsetypedef)
+  - [ConfigurationResponseTypeDef](#configurationresponsetypedef)
+  - [CreateApplicationRequestTypeDef](#createapplicationrequesttypedef)
+  - [CreateConfigurationProfileRequestTypeDef](#createconfigurationprofilerequesttypedef)
+  - [CreateDeploymentStrategyRequestTypeDef](#createdeploymentstrategyrequesttypedef)
+  - [CreateEnvironmentRequestTypeDef](#createenvironmentrequesttypedef)
+  - [CreateHostedConfigurationVersionRequestTypeDef](#createhostedconfigurationversionrequesttypedef)
+  - [DeleteApplicationRequestTypeDef](#deleteapplicationrequesttypedef)
+  - [DeleteConfigurationProfileRequestTypeDef](#deleteconfigurationprofilerequesttypedef)
+  - [DeleteDeploymentStrategyRequestTypeDef](#deletedeploymentstrategyrequesttypedef)
+  - [DeleteEnvironmentRequestTypeDef](#deleteenvironmentrequesttypedef)
+  - [DeleteHostedConfigurationVersionRequestTypeDef](#deletehostedconfigurationversionrequesttypedef)
   - [DeploymentEventTypeDef](#deploymenteventtypedef)
-  - [DeploymentStrategiesTypeDef](#deploymentstrategiestypedef)
-  - [DeploymentStrategyTypeDef](#deploymentstrategytypedef)
+  - [DeploymentResponseTypeDef](#deploymentresponsetypedef)
+  - [DeploymentStrategiesResponseTypeDef](#deploymentstrategiesresponsetypedef)
+  - [DeploymentStrategyResponseTypeDef](#deploymentstrategyresponsetypedef)
   - [DeploymentSummaryTypeDef](#deploymentsummarytypedef)
-  - [DeploymentTypeDef](#deploymenttypedef)
-  - [DeploymentsTypeDef](#deploymentstypedef)
-  - [EnvironmentTypeDef](#environmenttypedef)
-  - [EnvironmentsTypeDef](#environmentstypedef)
+  - [DeploymentsResponseTypeDef](#deploymentsresponsetypedef)
+  - [EnvironmentResponseTypeDef](#environmentresponsetypedef)
+  - [EnvironmentsResponseTypeDef](#environmentsresponsetypedef)
+  - [GetApplicationRequestTypeDef](#getapplicationrequesttypedef)
+  - [GetConfigurationProfileRequestTypeDef](#getconfigurationprofilerequesttypedef)
+  - [GetConfigurationRequestTypeDef](#getconfigurationrequesttypedef)
+  - [GetDeploymentRequestTypeDef](#getdeploymentrequesttypedef)
+  - [GetDeploymentStrategyRequestTypeDef](#getdeploymentstrategyrequesttypedef)
+  - [GetEnvironmentRequestTypeDef](#getenvironmentrequesttypedef)
+  - [GetHostedConfigurationVersionRequestTypeDef](#gethostedconfigurationversionrequesttypedef)
+  - [HostedConfigurationVersionResponseTypeDef](#hostedconfigurationversionresponsetypedef)
   - [HostedConfigurationVersionSummaryTypeDef](#hostedconfigurationversionsummarytypedef)
-  - [HostedConfigurationVersionTypeDef](#hostedconfigurationversiontypedef)
-  - [HostedConfigurationVersionsTypeDef](#hostedconfigurationversionstypedef)
+  - [HostedConfigurationVersionsResponseTypeDef](#hostedconfigurationversionsresponsetypedef)
+  - [ListApplicationsRequestTypeDef](#listapplicationsrequesttypedef)
+  - [ListConfigurationProfilesRequestTypeDef](#listconfigurationprofilesrequesttypedef)
+  - [ListDeploymentStrategiesRequestTypeDef](#listdeploymentstrategiesrequesttypedef)
+  - [ListDeploymentsRequestTypeDef](#listdeploymentsrequesttypedef)
+  - [ListEnvironmentsRequestTypeDef](#listenvironmentsrequesttypedef)
+  - [ListHostedConfigurationVersionsRequestTypeDef](#listhostedconfigurationversionsrequesttypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
   - [MonitorTypeDef](#monitortypedef)
-  - [ResourceTagsTypeDef](#resourcetagstypedef)
+  - [ResourceTagsResponseTypeDef](#resourcetagsresponsetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [StartDeploymentRequestTypeDef](#startdeploymentrequesttypedef)
+  - [StopDeploymentRequestTypeDef](#stopdeploymentrequesttypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateApplicationRequestTypeDef](#updateapplicationrequesttypedef)
+  - [UpdateConfigurationProfileRequestTypeDef](#updateconfigurationprofilerequesttypedef)
+  - [UpdateDeploymentStrategyRequestTypeDef](#updatedeploymentstrategyrequesttypedef)
+  - [UpdateEnvironmentRequestTypeDef](#updateenvironmentrequesttypedef)
+  - [ValidateConfigurationRequestTypeDef](#validateconfigurationrequesttypedef)
   - [ValidatorTypeDef](#validatortypedef)
 
-## ApplicationTypeDef
+## ApplicationResponseTypeDef
 
 ```python
-from mypy_boto3_appconfig.type_defs import ApplicationTypeDef
+from mypy_boto3_appconfig.type_defs import ApplicationResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Id`: `str`
 - `Name`: `str`
 - `Description`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ApplicationsTypeDef
+## ApplicationsResponseTypeDef
 
 ```python
-from mypy_boto3_appconfig.type_defs import ApplicationsTypeDef
+from mypy_boto3_appconfig.type_defs import ApplicationsResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
-- `Items`: `List`\[[ApplicationTypeDef](./type_defs.md#applicationtypedef)\]
+- `Items`:
+  `List`\[[ApplicationResponseTypeDef](./type_defs.md#applicationresponsetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ConfigurationProfileResponseTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import ConfigurationProfileResponseTypeDef
+```
+
+Required fields:
+
+- `ApplicationId`: `str`
+- `Id`: `str`
+- `Name`: `str`
+- `Description`: `str`
+- `LocationUri`: `str`
+- `RetrievalRoleArn`: `str`
+- `Validators`: `List`\[[ValidatorTypeDef](./type_defs.md#validatortypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ConfigurationProfileSummaryTypeDef
 
@@ -67,45 +124,176 @@ Optional fields:
 - `ValidatorTypes`:
   `List`\[[ValidatorTypeType](./literals.md#validatortypetype)\]
 
-## ConfigurationProfileTypeDef
+## ConfigurationProfilesResponseTypeDef
 
 ```python
-from mypy_boto3_appconfig.type_defs import ConfigurationProfileTypeDef
+from mypy_boto3_appconfig.type_defs import ConfigurationProfilesResponseTypeDef
 ```
 
-Optional fields:
-
-- `ApplicationId`: `str`
-- `Id`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `LocationUri`: `str`
-- `RetrievalRoleArn`: `str`
-- `Validators`: `List`\[[ValidatorTypeDef](./type_defs.md#validatortypedef)\]
-
-## ConfigurationProfilesTypeDef
-
-```python
-from mypy_boto3_appconfig.type_defs import ConfigurationProfilesTypeDef
-```
-
-Optional fields:
+Required fields:
 
 - `Items`:
   `List`\[[ConfigurationProfileSummaryTypeDef](./type_defs.md#configurationprofilesummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ConfigurationTypeDef
+## ConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_appconfig.type_defs import ConfigurationTypeDef
+from mypy_boto3_appconfig.type_defs import ConfigurationResponseTypeDef
 ```
+
+Required fields:
+
+- `Content`: `bytes`
+- `ConfigurationVersion`: `str`
+- `ContentType`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateApplicationRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import CreateApplicationRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
 
 Optional fields:
 
+- `Description`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## CreateConfigurationProfileRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import CreateConfigurationProfileRequestTypeDef
+```
+
+Required fields:
+
+- `ApplicationId`: `str`
+- `Name`: `str`
+- `LocationUri`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+- `RetrievalRoleArn`: `str`
+- `Validators`: `List`\[[ValidatorTypeDef](./type_defs.md#validatortypedef)\]
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## CreateDeploymentStrategyRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import CreateDeploymentStrategyRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `DeploymentDurationInMinutes`: `int`
+- `GrowthFactor`: `float`
+- `ReplicateTo`: [ReplicateToType](./literals.md#replicatetotype)
+
+Optional fields:
+
+- `Description`: `str`
+- `FinalBakeTimeInMinutes`: `int`
+- `GrowthType`: [GrowthTypeType](./literals.md#growthtypetype)
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## CreateEnvironmentRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import CreateEnvironmentRequestTypeDef
+```
+
+Required fields:
+
+- `ApplicationId`: `str`
+- `Name`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+- `Monitors`: `List`\[[MonitorTypeDef](./type_defs.md#monitortypedef)\]
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## CreateHostedConfigurationVersionRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import CreateHostedConfigurationVersionRequestTypeDef
+```
+
+Required fields:
+
+- `ApplicationId`: `str`
+- `ConfigurationProfileId`: `str`
 - `Content`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `ConfigurationVersion`: `str`
 - `ContentType`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+- `LatestVersionNumber`: `int`
+
+## DeleteApplicationRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import DeleteApplicationRequestTypeDef
+```
+
+Required fields:
+
+- `ApplicationId`: `str`
+
+## DeleteConfigurationProfileRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import DeleteConfigurationProfileRequestTypeDef
+```
+
+Required fields:
+
+- `ApplicationId`: `str`
+- `ConfigurationProfileId`: `str`
+
+## DeleteDeploymentStrategyRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import DeleteDeploymentStrategyRequestTypeDef
+```
+
+Required fields:
+
+- `DeploymentStrategyId`: `str`
+
+## DeleteEnvironmentRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import DeleteEnvironmentRequestTypeDef
+```
+
+Required fields:
+
+- `ApplicationId`: `str`
+- `EnvironmentId`: `str`
+
+## DeleteHostedConfigurationVersionRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import DeleteHostedConfigurationVersionRequestTypeDef
+```
+
+Required fields:
+
+- `ApplicationId`: `str`
+- `ConfigurationProfileId`: `str`
+- `VersionNumber`: `int`
 
 ## DeploymentEventTypeDef
 
@@ -120,25 +308,57 @@ Optional fields:
 - `Description`: `str`
 - `OccurredAt`: `datetime`
 
-## DeploymentStrategiesTypeDef
+## DeploymentResponseTypeDef
 
 ```python
-from mypy_boto3_appconfig.type_defs import DeploymentStrategiesTypeDef
+from mypy_boto3_appconfig.type_defs import DeploymentResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ApplicationId`: `str`
+- `EnvironmentId`: `str`
+- `DeploymentStrategyId`: `str`
+- `ConfigurationProfileId`: `str`
+- `DeploymentNumber`: `int`
+- `ConfigurationName`: `str`
+- `ConfigurationLocationUri`: `str`
+- `ConfigurationVersion`: `str`
+- `Description`: `str`
+- `DeploymentDurationInMinutes`: `int`
+- `GrowthType`: [GrowthTypeType](./literals.md#growthtypetype)
+- `GrowthFactor`: `float`
+- `FinalBakeTimeInMinutes`: `int`
+- `State`: [DeploymentStateType](./literals.md#deploymentstatetype)
+- `EventLog`:
+  `List`\[[DeploymentEventTypeDef](./type_defs.md#deploymenteventtypedef)\]
+- `PercentageComplete`: `float`
+- `StartedAt`: `datetime`
+- `CompletedAt`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeploymentStrategiesResponseTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import DeploymentStrategiesResponseTypeDef
+```
+
+Required fields:
 
 - `Items`:
-  `List`\[[DeploymentStrategyTypeDef](./type_defs.md#deploymentstrategytypedef)\]
+  `List`\[[DeploymentStrategyResponseTypeDef](./type_defs.md#deploymentstrategyresponsetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeploymentStrategyTypeDef
+## DeploymentStrategyResponseTypeDef
 
 ```python
-from mypy_boto3_appconfig.type_defs import DeploymentStrategyTypeDef
+from mypy_boto3_appconfig.type_defs import DeploymentStrategyResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Id`: `str`
 - `Name`: `str`
@@ -148,6 +368,8 @@ Optional fields:
 - `GrowthFactor`: `float`
 - `FinalBakeTimeInMinutes`: `int`
 - `ReplicateTo`: [ReplicateToType](./literals.md#replicatetotype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DeploymentSummaryTypeDef
 
@@ -169,53 +391,27 @@ Optional fields:
 - `StartedAt`: `datetime`
 - `CompletedAt`: `datetime`
 
-## DeploymentTypeDef
+## DeploymentsResponseTypeDef
 
 ```python
-from mypy_boto3_appconfig.type_defs import DeploymentTypeDef
+from mypy_boto3_appconfig.type_defs import DeploymentsResponseTypeDef
 ```
 
-Optional fields:
-
-- `ApplicationId`: `str`
-- `EnvironmentId`: `str`
-- `DeploymentStrategyId`: `str`
-- `ConfigurationProfileId`: `str`
-- `DeploymentNumber`: `int`
-- `ConfigurationName`: `str`
-- `ConfigurationLocationUri`: `str`
-- `ConfigurationVersion`: `str`
-- `Description`: `str`
-- `DeploymentDurationInMinutes`: `int`
-- `GrowthType`: [GrowthTypeType](./literals.md#growthtypetype)
-- `GrowthFactor`: `float`
-- `FinalBakeTimeInMinutes`: `int`
-- `State`: [DeploymentStateType](./literals.md#deploymentstatetype)
-- `EventLog`:
-  `List`\[[DeploymentEventTypeDef](./type_defs.md#deploymenteventtypedef)\]
-- `PercentageComplete`: `float`
-- `StartedAt`: `datetime`
-- `CompletedAt`: `datetime`
-
-## DeploymentsTypeDef
-
-```python
-from mypy_boto3_appconfig.type_defs import DeploymentsTypeDef
-```
-
-Optional fields:
+Required fields:
 
 - `Items`:
   `List`\[[DeploymentSummaryTypeDef](./type_defs.md#deploymentsummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## EnvironmentTypeDef
+## EnvironmentResponseTypeDef
 
 ```python
-from mypy_boto3_appconfig.type_defs import EnvironmentTypeDef
+from mypy_boto3_appconfig.type_defs import EnvironmentResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `ApplicationId`: `str`
 - `Id`: `str`
@@ -223,17 +419,122 @@ Optional fields:
 - `Description`: `str`
 - `State`: [EnvironmentStateType](./literals.md#environmentstatetype)
 - `Monitors`: `List`\[[MonitorTypeDef](./type_defs.md#monitortypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## EnvironmentsTypeDef
+## EnvironmentsResponseTypeDef
 
 ```python
-from mypy_boto3_appconfig.type_defs import EnvironmentsTypeDef
+from mypy_boto3_appconfig.type_defs import EnvironmentsResponseTypeDef
 ```
+
+Required fields:
+
+- `Items`:
+  `List`\[[EnvironmentResponseTypeDef](./type_defs.md#environmentresponsetypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetApplicationRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import GetApplicationRequestTypeDef
+```
+
+Required fields:
+
+- `ApplicationId`: `str`
+
+## GetConfigurationProfileRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import GetConfigurationProfileRequestTypeDef
+```
+
+Required fields:
+
+- `ApplicationId`: `str`
+- `ConfigurationProfileId`: `str`
+
+## GetConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import GetConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `Application`: `str`
+- `Environment`: `str`
+- `Configuration`: `str`
+- `ClientId`: `str`
 
 Optional fields:
 
-- `Items`: `List`\[[EnvironmentTypeDef](./type_defs.md#environmenttypedef)\]
-- `NextToken`: `str`
+- `ClientConfigurationVersion`: `str`
+
+## GetDeploymentRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import GetDeploymentRequestTypeDef
+```
+
+Required fields:
+
+- `ApplicationId`: `str`
+- `EnvironmentId`: `str`
+- `DeploymentNumber`: `int`
+
+## GetDeploymentStrategyRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import GetDeploymentStrategyRequestTypeDef
+```
+
+Required fields:
+
+- `DeploymentStrategyId`: `str`
+
+## GetEnvironmentRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import GetEnvironmentRequestTypeDef
+```
+
+Required fields:
+
+- `ApplicationId`: `str`
+- `EnvironmentId`: `str`
+
+## GetHostedConfigurationVersionRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import GetHostedConfigurationVersionRequestTypeDef
+```
+
+Required fields:
+
+- `ApplicationId`: `str`
+- `ConfigurationProfileId`: `str`
+- `VersionNumber`: `int`
+
+## HostedConfigurationVersionResponseTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import HostedConfigurationVersionResponseTypeDef
+```
+
+Required fields:
+
+- `ApplicationId`: `str`
+- `ConfigurationProfileId`: `str`
+- `VersionNumber`: `int`
+- `Description`: `str`
+- `Content`: `bytes`
+- `ContentType`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## HostedConfigurationVersionSummaryTypeDef
 
@@ -249,32 +550,113 @@ Optional fields:
 - `Description`: `str`
 - `ContentType`: `str`
 
-## HostedConfigurationVersionTypeDef
+## HostedConfigurationVersionsResponseTypeDef
 
 ```python
-from mypy_boto3_appconfig.type_defs import HostedConfigurationVersionTypeDef
+from mypy_boto3_appconfig.type_defs import HostedConfigurationVersionsResponseTypeDef
 ```
 
-Optional fields:
-
-- `ApplicationId`: `str`
-- `ConfigurationProfileId`: `str`
-- `VersionNumber`: `int`
-- `Description`: `str`
-- `Content`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `ContentType`: `str`
-
-## HostedConfigurationVersionsTypeDef
-
-```python
-from mypy_boto3_appconfig.type_defs import HostedConfigurationVersionsTypeDef
-```
-
-Optional fields:
+Required fields:
 
 - `Items`:
   `List`\[[HostedConfigurationVersionSummaryTypeDef](./type_defs.md#hostedconfigurationversionsummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListApplicationsRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import ListApplicationsRequestTypeDef
+```
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListConfigurationProfilesRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import ListConfigurationProfilesRequestTypeDef
+```
+
+Required fields:
+
+- `ApplicationId`: `str`
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListDeploymentStrategiesRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import ListDeploymentStrategiesRequestTypeDef
+```
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListDeploymentsRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import ListDeploymentsRequestTypeDef
+```
+
+Required fields:
+
+- `ApplicationId`: `str`
+- `EnvironmentId`: `str`
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListEnvironmentsRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import ListEnvironmentsRequestTypeDef
+```
+
+Required fields:
+
+- `ApplicationId`: `str`
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListHostedConfigurationVersionsRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import ListHostedConfigurationVersionsRequestTypeDef
+```
+
+Required fields:
+
+- `ApplicationId`: `str`
+- `ConfigurationProfileId`: `str`
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListTagsForResourceRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import ListTagsForResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
 
 ## MonitorTypeDef
 
@@ -287,15 +669,164 @@ Optional fields:
 - `AlarmArn`: `str`
 - `AlarmRoleArn`: `str`
 
-## ResourceTagsTypeDef
+## ResourceTagsResponseTypeDef
 
 ```python
-from mypy_boto3_appconfig.type_defs import ResourceTagsTypeDef
+from mypy_boto3_appconfig.type_defs import ResourceTagsResponseTypeDef
 ```
+
+Required fields:
+
+- `Tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## StartDeploymentRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import StartDeploymentRequestTypeDef
+```
+
+Required fields:
+
+- `ApplicationId`: `str`
+- `EnvironmentId`: `str`
+- `DeploymentStrategyId`: `str`
+- `ConfigurationProfileId`: `str`
+- `ConfigurationVersion`: `str`
 
 Optional fields:
 
+- `Description`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
+
+## StopDeploymentRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import StopDeploymentRequestTypeDef
+```
+
+Required fields:
+
+- `ApplicationId`: `str`
+- `EnvironmentId`: `str`
+- `DeploymentNumber`: `int`
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## UntagResourceRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## UpdateApplicationRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import UpdateApplicationRequestTypeDef
+```
+
+Required fields:
+
+- `ApplicationId`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+- `Description`: `str`
+
+## UpdateConfigurationProfileRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import UpdateConfigurationProfileRequestTypeDef
+```
+
+Required fields:
+
+- `ApplicationId`: `str`
+- `ConfigurationProfileId`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+- `Description`: `str`
+- `RetrievalRoleArn`: `str`
+- `Validators`: `List`\[[ValidatorTypeDef](./type_defs.md#validatortypedef)\]
+
+## UpdateDeploymentStrategyRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import UpdateDeploymentStrategyRequestTypeDef
+```
+
+Required fields:
+
+- `DeploymentStrategyId`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+- `DeploymentDurationInMinutes`: `int`
+- `FinalBakeTimeInMinutes`: `int`
+- `GrowthFactor`: `float`
+- `GrowthType`: [GrowthTypeType](./literals.md#growthtypetype)
+
+## UpdateEnvironmentRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import UpdateEnvironmentRequestTypeDef
+```
+
+Required fields:
+
+- `ApplicationId`: `str`
+- `EnvironmentId`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+- `Description`: `str`
+- `Monitors`: `List`\[[MonitorTypeDef](./type_defs.md#monitortypedef)\]
+
+## ValidateConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_appconfig.type_defs import ValidateConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `ApplicationId`: `str`
+- `ConfigurationProfileId`: `str`
+- `ConfigurationVersion`: `str`
 
 ## ValidatorTypeDef
 

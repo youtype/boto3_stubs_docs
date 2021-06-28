@@ -41,7 +41,7 @@ Arguments for `DescribeImageScanFindingsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeImageScanFindingsPaginator.paginate` returns
-`Iterator`\[[DescribeImageScanFindingsResponseTypeDef](./type_defs.md#describeimagescanfindingsresponsetypedef)\].
+`Iterator`\[[DescribeImageScanFindingsResponseResponseTypeDef](./type_defs.md#describeimagescanfindingsresponseresponsetypedef)\].
 
 ## DescribeImagesPaginator
 
@@ -71,7 +71,7 @@ Arguments for `DescribeImagesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeImagesPaginator.paginate` returns
-`Iterator`\[[DescribeImagesResponseTypeDef](./type_defs.md#describeimagesresponsetypedef)\].
+`Iterator`\[[DescribeImagesResponseResponseTypeDef](./type_defs.md#describeimagesresponseresponsetypedef)\].
 
 ## DescribeRepositoriesPaginator
 
@@ -98,7 +98,7 @@ Arguments for `DescribeRepositoriesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeRepositoriesPaginator.paginate` returns
-`Iterator`\[[DescribeRepositoriesResponseTypeDef](./type_defs.md#describerepositoriesresponsetypedef)\].
+`Iterator`\[[DescribeRepositoriesResponseResponseTypeDef](./type_defs.md#describerepositoriesresponseresponsetypedef)\].
 
 ## GetLifecyclePolicyPreviewPaginator
 
@@ -129,7 +129,7 @@ Arguments for `GetLifecyclePolicyPreviewPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetLifecyclePolicyPreviewPaginator.paginate` returns
-`Iterator`\[[GetLifecyclePolicyPreviewResponseTypeDef](./type_defs.md#getlifecyclepolicypreviewresponsetypedef)\].
+`Iterator`\[[GetLifecyclePolicyPreviewResponseResponseTypeDef](./type_defs.md#getlifecyclepolicypreviewresponseresponsetypedef)\].
 
 ## ListImagesPaginator
 
@@ -156,4 +156,4 @@ Arguments for `ListImagesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListImagesPaginator.paginate` returns
-`Iterator`\[[ListImagesResponseTypeDef](./type_defs.md#listimagesresponsetypedef)\].
+`Iterator`\[[ListImagesResponseResponseTypeDef](./type_defs.md#listimagesresponseresponsetypedef)\].

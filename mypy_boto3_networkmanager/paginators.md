@@ -42,7 +42,7 @@ Arguments for `DescribeGlobalNetworksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeGlobalNetworksPaginator.paginate` returns
-`Iterator`\[[DescribeGlobalNetworksResponseTypeDef](./type_defs.md#describeglobalnetworksresponsetypedef)\].
+`Iterator`\[[DescribeGlobalNetworksResponseResponseTypeDef](./type_defs.md#describeglobalnetworksresponseresponsetypedef)\].
 
 ## GetConnectionsPaginator
 
@@ -70,7 +70,7 @@ Arguments for `GetConnectionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetConnectionsPaginator.paginate` returns
-`Iterator`\[[GetConnectionsResponseTypeDef](./type_defs.md#getconnectionsresponsetypedef)\].
+`Iterator`\[[GetConnectionsResponseResponseTypeDef](./type_defs.md#getconnectionsresponseresponsetypedef)\].
 
 ## GetCustomerGatewayAssociationsPaginator
 
@@ -97,7 +97,7 @@ Arguments for `GetCustomerGatewayAssociationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetCustomerGatewayAssociationsPaginator.paginate` returns
-`Iterator`\[[GetCustomerGatewayAssociationsResponseTypeDef](./type_defs.md#getcustomergatewayassociationsresponsetypedef)\].
+`Iterator`\[[GetCustomerGatewayAssociationsResponseResponseTypeDef](./type_defs.md#getcustomergatewayassociationsresponseresponsetypedef)\].
 
 ## GetDevicesPaginator
 
@@ -125,7 +125,7 @@ Arguments for `GetDevicesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetDevicesPaginator.paginate` returns
-`Iterator`\[[GetDevicesResponseTypeDef](./type_defs.md#getdevicesresponsetypedef)\].
+`Iterator`\[[GetDevicesResponseResponseTypeDef](./type_defs.md#getdevicesresponseresponsetypedef)\].
 
 ## GetLinkAssociationsPaginator
 
@@ -153,7 +153,7 @@ Arguments for `GetLinkAssociationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetLinkAssociationsPaginator.paginate` returns
-`Iterator`\[[GetLinkAssociationsResponseTypeDef](./type_defs.md#getlinkassociationsresponsetypedef)\].
+`Iterator`\[[GetLinkAssociationsResponseResponseTypeDef](./type_defs.md#getlinkassociationsresponseresponsetypedef)\].
 
 ## GetLinksPaginator
 
@@ -183,7 +183,7 @@ Arguments for `GetLinksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetLinksPaginator.paginate` returns
-`Iterator`\[[GetLinksResponseTypeDef](./type_defs.md#getlinksresponsetypedef)\].
+`Iterator`\[[GetLinksResponseResponseTypeDef](./type_defs.md#getlinksresponseresponsetypedef)\].
 
 ## GetSitesPaginator
 
@@ -210,7 +210,7 @@ Arguments for `GetSitesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetSitesPaginator.paginate` returns
-`Iterator`\[[GetSitesResponseTypeDef](./type_defs.md#getsitesresponsetypedef)\].
+`Iterator`\[[GetSitesResponseResponseTypeDef](./type_defs.md#getsitesresponseresponsetypedef)\].
 
 ## GetTransitGatewayConnectPeerAssociationsPaginator
 
@@ -238,7 +238,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTransitGatewayConnectPeerAssociationsPaginator.paginate` returns
-`Iterator`\[[GetTransitGatewayConnectPeerAssociationsResponseTypeDef](./type_defs.md#gettransitgatewayconnectpeerassociationsresponsetypedef)\].
+`Iterator`\[[GetTransitGatewayConnectPeerAssociationsResponseResponseTypeDef](./type_defs.md#gettransitgatewayconnectpeerassociationsresponseresponsetypedef)\].
 
 ## GetTransitGatewayRegistrationsPaginator
 
@@ -265,4 +265,4 @@ Arguments for `GetTransitGatewayRegistrationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTransitGatewayRegistrationsPaginator.paginate` returns
-`Iterator`\[[GetTransitGatewayRegistrationsResponseTypeDef](./type_defs.md#gettransitgatewayregistrationsresponsetypedef)\].
+`Iterator`\[[GetTransitGatewayRegistrationsResponseResponseTypeDef](./type_defs.md#gettransitgatewayregistrationsresponseresponsetypedef)\].

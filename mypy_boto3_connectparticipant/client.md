@@ -64,6 +64,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("connectparticipant").can_paginate` method.
 
 Boto3 documentation:
@@ -77,11 +79,17 @@ Returns `bool`.
 
 ### complete_attachment_upload
 
+Allows you to confirm that the attachment has been uploaded using the
+pre-signed URL provided in StartAttachmentUpload API.
+
 Type annotations for
 `boto3.client("connectparticipant").complete_attachment_upload` method.
 
 Boto3 documentation:
 [ConnectParticipant.Client.complete_attachment_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.complete_attachment_upload)
+
+Arguments mapping described in
+[CompleteAttachmentUploadRequestTypeDef](./type_defs.md#completeattachmentuploadrequesttypedef).
 
 Keyword-only arguments:
 
@@ -93,11 +101,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### create_participant_connection
 
+Creates the participant's connection.
+
 Type annotations for
 `boto3.client("connectparticipant").create_participant_connection` method.
 
 Boto3 documentation:
 [ConnectParticipant.Client.create_participant_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.create_participant_connection)
+
+Arguments mapping described in
+[CreateParticipantConnectionRequestTypeDef](./type_defs.md#createparticipantconnectionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -106,15 +119,20 @@ Keyword-only arguments:
 - `ParticipantToken`: `str` *(required)*
 
 Returns
-[CreateParticipantConnectionResponseTypeDef](./type_defs.md#createparticipantconnectionresponsetypedef).
+[CreateParticipantConnectionResponseResponseTypeDef](./type_defs.md#createparticipantconnectionresponseresponsetypedef).
 
 ### disconnect_participant
+
+Disconnects a participant.
 
 Type annotations for
 `boto3.client("connectparticipant").disconnect_participant` method.
 
 Boto3 documentation:
 [ConnectParticipant.Client.disconnect_participant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.disconnect_participant)
+
+Arguments mapping described in
+[DisconnectParticipantRequestTypeDef](./type_defs.md#disconnectparticipantrequesttypedef).
 
 Keyword-only arguments:
 
@@ -124,6 +142,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for
 `boto3.client("connectparticipant").generate_presigned_url` method.
@@ -142,11 +162,16 @@ Returns `str`.
 
 ### get_attachment
 
+Provides a pre-signed URL for download of a completed attachment.
+
 Type annotations for `boto3.client("connectparticipant").get_attachment`
 method.
 
 Boto3 documentation:
 [ConnectParticipant.Client.get_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.get_attachment)
+
+Arguments mapping described in
+[GetAttachmentRequestTypeDef](./type_defs.md#getattachmentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -154,15 +179,20 @@ Keyword-only arguments:
 - `ConnectionToken`: `str` *(required)*
 
 Returns
-[GetAttachmentResponseTypeDef](./type_defs.md#getattachmentresponsetypedef).
+[GetAttachmentResponseResponseTypeDef](./type_defs.md#getattachmentresponseresponsetypedef).
 
 ### get_transcript
+
+Retrieves a transcript of the session, including details about any attachments.
 
 Type annotations for `boto3.client("connectparticipant").get_transcript`
 method.
 
 Boto3 documentation:
 [ConnectParticipant.Client.get_transcript](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.get_transcript)
+
+Arguments mapping described in
+[GetTranscriptRequestTypeDef](./type_defs.md#gettranscriptrequesttypedef).
 
 Keyword-only arguments:
 
@@ -175,14 +205,19 @@ Keyword-only arguments:
 - `StartPosition`: [StartPositionTypeDef](./type_defs.md#startpositiontypedef)
 
 Returns
-[GetTranscriptResponseTypeDef](./type_defs.md#gettranscriptresponsetypedef).
+[GetTranscriptResponseResponseTypeDef](./type_defs.md#gettranscriptresponseresponsetypedef).
 
 ### send_event
+
+Sends an event.
 
 Type annotations for `boto3.client("connectparticipant").send_event` method.
 
 Boto3 documentation:
 [ConnectParticipant.Client.send_event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.send_event)
+
+Arguments mapping described in
+[SendEventRequestTypeDef](./type_defs.md#sendeventrequesttypedef).
 
 Keyword-only arguments:
 
@@ -191,14 +226,20 @@ Keyword-only arguments:
 - `Content`: `str`
 - `ClientToken`: `str`
 
-Returns [SendEventResponseTypeDef](./type_defs.md#sendeventresponsetypedef).
+Returns
+[SendEventResponseResponseTypeDef](./type_defs.md#sendeventresponseresponsetypedef).
 
 ### send_message
+
+Sends a message.
 
 Type annotations for `boto3.client("connectparticipant").send_message` method.
 
 Boto3 documentation:
 [ConnectParticipant.Client.send_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.send_message)
+
+Arguments mapping described in
+[SendMessageRequestTypeDef](./type_defs.md#sendmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -208,15 +249,21 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns
-[SendMessageResponseTypeDef](./type_defs.md#sendmessageresponsetypedef).
+[SendMessageResponseResponseTypeDef](./type_defs.md#sendmessageresponseresponsetypedef).
 
 ### start_attachment_upload
+
+Provides a pre-signed Amazon S3 URL in response for uploading the file directly
+to S3.
 
 Type annotations for
 `boto3.client("connectparticipant").start_attachment_upload` method.
 
 Boto3 documentation:
 [ConnectParticipant.Client.start_attachment_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.start_attachment_upload)
+
+Arguments mapping described in
+[StartAttachmentUploadRequestTypeDef](./type_defs.md#startattachmentuploadrequesttypedef).
 
 Keyword-only arguments:
 
@@ -227,4 +274,4 @@ Keyword-only arguments:
 - `ConnectionToken`: `str` *(required)*
 
 Returns
-[StartAttachmentUploadResponseTypeDef](./type_defs.md#startattachmentuploadresponsetypedef).
+[StartAttachmentUploadResponseResponseTypeDef](./type_defs.md#startattachmentuploadresponseresponsetypedef).

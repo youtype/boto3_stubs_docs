@@ -34,7 +34,7 @@ Arguments for `DescribeAccountLimitsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAccountLimitsPaginator.paginate` returns
-`Iterator`\[[DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef)\].
+`Iterator`\[[DescribeAccountLimitsOutputResponseTypeDef](./type_defs.md#describeaccountlimitsoutputresponsetypedef)\].
 
 ## DescribeLoadBalancersPaginator
 
@@ -60,4 +60,4 @@ Arguments for `DescribeLoadBalancersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLoadBalancersPaginator.paginate` returns
-`Iterator`\[[DescribeAccessPointsOutputTypeDef](./type_defs.md#describeaccesspointsoutputtypedef)\].
+`Iterator`\[[DescribeAccessPointsOutputResponseTypeDef](./type_defs.md#describeaccesspointsoutputresponsetypedef)\].

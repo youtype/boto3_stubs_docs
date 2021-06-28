@@ -29,7 +29,7 @@ def get_app_exists_waiter() -> AppExistsWaiter:
 ```
 
 Boto3 documentation:
-[OpsWorks.Waiter.app_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.app_exists)
+[OpsWorks.Waiter.app_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.AppExists)
 
 Arguments for `AppExistsWaiter.wait` method:
 
@@ -52,7 +52,7 @@ def get_deployment_successful_waiter() -> DeploymentSuccessfulWaiter:
 ```
 
 Boto3 documentation:
-[OpsWorks.Waiter.deployment_successful](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.deployment_successful)
+[OpsWorks.Waiter.deployment_successful](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.DeploymentSuccessful)
 
 Arguments for `DeploymentSuccessfulWaiter.wait` method:
 
@@ -75,7 +75,7 @@ def get_instance_online_waiter() -> InstanceOnlineWaiter:
 ```
 
 Boto3 documentation:
-[OpsWorks.Waiter.instance_online](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.instance_online)
+[OpsWorks.Waiter.instance_online](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.InstanceOnline)
 
 Arguments for `InstanceOnlineWaiter.wait` method:
 
@@ -99,7 +99,7 @@ def get_instance_registered_waiter() -> InstanceRegisteredWaiter:
 ```
 
 Boto3 documentation:
-[OpsWorks.Waiter.instance_registered](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.instance_registered)
+[OpsWorks.Waiter.instance_registered](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.InstanceRegistered)
 
 Arguments for `InstanceRegisteredWaiter.wait` method:
 
@@ -122,7 +122,7 @@ def get_instance_stopped_waiter() -> InstanceStoppedWaiter:
 ```
 
 Boto3 documentation:
-[OpsWorks.Waiter.instance_stopped](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.instance_stopped)
+[OpsWorks.Waiter.instance_stopped](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.InstanceStopped)
 
 Arguments for `InstanceStoppedWaiter.wait` method:
 
@@ -146,7 +146,7 @@ def get_instance_terminated_waiter() -> InstanceTerminatedWaiter:
 ```
 
 Boto3 documentation:
-[OpsWorks.Waiter.instance_terminated](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.instance_terminated)
+[OpsWorks.Waiter.instance_terminated](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Waiter.InstanceTerminated)
 
 Arguments for `InstanceTerminatedWaiter.wait` method:
 

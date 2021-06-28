@@ -85,11 +85,17 @@ Exceptions:
 
 ### add_profile_key
 
+Associates a new key value with a specific profile, such as a Contact Trace
+Record (CTR) ContactId.
+
 Type annotations for `boto3.client("customer-profiles").add_profile_key`
 method.
 
 Boto3 documentation:
 [CustomerProfiles.Client.add_profile_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.add_profile_key)
+
+Arguments mapping described in
+[AddProfileKeyRequestTypeDef](./type_defs.md#addprofilekeyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -99,9 +105,11 @@ Keyword-only arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[AddProfileKeyResponseTypeDef](./type_defs.md#addprofilekeyresponsetypedef).
+[AddProfileKeyResponseResponseTypeDef](./type_defs.md#addprofilekeyresponseresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("customer-profiles").can_paginate` method.
 
@@ -116,10 +124,16 @@ Returns `bool`.
 
 ### create_domain
 
+Creates a domain, which is a container for all customer data, such as customer
+profile attributes, object types, profile keys, and encryption keys.
+
 Type annotations for `boto3.client("customer-profiles").create_domain` method.
 
 Boto3 documentation:
 [CustomerProfiles.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.create_domain)
+
+Arguments mapping described in
+[CreateDomainRequestTypeDef](./type_defs.md#createdomainrequesttypedef).
 
 Keyword-only arguments:
 
@@ -131,14 +145,19 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateDomainResponseTypeDef](./type_defs.md#createdomainresponsetypedef).
+[CreateDomainResponseResponseTypeDef](./type_defs.md#createdomainresponseresponsetypedef).
 
 ### create_profile
+
+Creates a standard profile.
 
 Type annotations for `boto3.client("customer-profiles").create_profile` method.
 
 Boto3 documentation:
 [CustomerProfiles.Client.create_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.create_profile)
+
+Arguments mapping described in
+[CreateProfileRequestTypeDef](./type_defs.md#createprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -166,23 +185,31 @@ Keyword-only arguments:
 - `Attributes`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateProfileResponseTypeDef](./type_defs.md#createprofileresponsetypedef).
+[CreateProfileResponseResponseTypeDef](./type_defs.md#createprofileresponseresponsetypedef).
 
 ### delete_domain
+
+Deletes a specific domain and all of its customer data, such as customer
+profile attributes and their related objects.
 
 Type annotations for `boto3.client("customer-profiles").delete_domain` method.
 
 Boto3 documentation:
 [CustomerProfiles.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_domain)
 
+Arguments mapping described in
+[DeleteDomainRequestTypeDef](./type_defs.md#deletedomainrequesttypedef).
+
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
 Returns
-[DeleteDomainResponseTypeDef](./type_defs.md#deletedomainresponsetypedef).
+[DeleteDomainResponseResponseTypeDef](./type_defs.md#deletedomainresponseresponsetypedef).
 
 ### delete_integration
+
+Removes an integration from a specific domain.
 
 Type annotations for `boto3.client("customer-profiles").delete_integration`
 method.
@@ -190,20 +217,28 @@ method.
 Boto3 documentation:
 [CustomerProfiles.Client.delete_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_integration)
 
+Arguments mapping described in
+[DeleteIntegrationRequestTypeDef](./type_defs.md#deleteintegrationrequesttypedef).
+
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `Uri`: `str` *(required)*
 
 Returns
-[DeleteIntegrationResponseTypeDef](./type_defs.md#deleteintegrationresponsetypedef).
+[DeleteIntegrationResponseResponseTypeDef](./type_defs.md#deleteintegrationresponseresponsetypedef).
 
 ### delete_profile
+
+Deletes the standard customer profile and all data pertaining to the profile.
 
 Type annotations for `boto3.client("customer-profiles").delete_profile` method.
 
 Boto3 documentation:
 [CustomerProfiles.Client.delete_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_profile)
+
+Arguments mapping described in
+[DeleteProfileRequestTypeDef](./type_defs.md#deleteprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -211,15 +246,20 @@ Keyword-only arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[DeleteProfileResponseTypeDef](./type_defs.md#deleteprofileresponsetypedef).
+[DeleteProfileResponseResponseTypeDef](./type_defs.md#deleteprofileresponseresponsetypedef).
 
 ### delete_profile_key
+
+Removes a searchable key from a customer profile.
 
 Type annotations for `boto3.client("customer-profiles").delete_profile_key`
 method.
 
 Boto3 documentation:
 [CustomerProfiles.Client.delete_profile_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_profile_key)
+
+Arguments mapping described in
+[DeleteProfileKeyRequestTypeDef](./type_defs.md#deleteprofilekeyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -229,15 +269,20 @@ Keyword-only arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[DeleteProfileKeyResponseTypeDef](./type_defs.md#deleteprofilekeyresponsetypedef).
+[DeleteProfileKeyResponseResponseTypeDef](./type_defs.md#deleteprofilekeyresponseresponsetypedef).
 
 ### delete_profile_object
+
+Removes an object associated with a profile of a given ProfileObjectType.
 
 Type annotations for `boto3.client("customer-profiles").delete_profile_object`
 method.
 
 Boto3 documentation:
 [CustomerProfiles.Client.delete_profile_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_profile_object)
+
+Arguments mapping described in
+[DeleteProfileObjectRequestTypeDef](./type_defs.md#deleteprofileobjectrequesttypedef).
 
 Keyword-only arguments:
 
@@ -247,9 +292,12 @@ Keyword-only arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[DeleteProfileObjectResponseTypeDef](./type_defs.md#deleteprofileobjectresponsetypedef).
+[DeleteProfileObjectResponseResponseTypeDef](./type_defs.md#deleteprofileobjectresponseresponsetypedef).
 
 ### delete_profile_object_type
+
+Removes a ProfileObjectType from a specific domain as well as removes all the
+ProfileObjects of that type.
 
 Type annotations for
 `boto3.client("customer-profiles").delete_profile_object_type` method.
@@ -257,15 +305,20 @@ Type annotations for
 Boto3 documentation:
 [CustomerProfiles.Client.delete_profile_object_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_profile_object_type)
 
+Arguments mapping described in
+[DeleteProfileObjectTypeRequestTypeDef](./type_defs.md#deleteprofileobjecttyperequesttypedef).
+
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `ObjectTypeName`: `str` *(required)*
 
 Returns
-[DeleteProfileObjectTypeResponseTypeDef](./type_defs.md#deleteprofileobjecttyperesponsetypedef).
+[DeleteProfileObjectTypeResponseResponseTypeDef](./type_defs.md#deleteprofileobjecttyperesponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("customer-profiles").generate_presigned_url`
 method.
@@ -284,18 +337,26 @@ Returns `str`.
 
 ### get_domain
 
+Returns information about a specific domain.
+
 Type annotations for `boto3.client("customer-profiles").get_domain` method.
 
 Boto3 documentation:
 [CustomerProfiles.Client.get_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.get_domain)
 
+Arguments mapping described in
+[GetDomainRequestTypeDef](./type_defs.md#getdomainrequesttypedef).
+
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
-Returns [GetDomainResponseTypeDef](./type_defs.md#getdomainresponsetypedef).
+Returns
+[GetDomainResponseResponseTypeDef](./type_defs.md#getdomainresponseresponsetypedef).
 
 ### get_integration
+
+Returns an integration for a domain.
 
 Type annotations for `boto3.client("customer-profiles").get_integration`
 method.
@@ -303,20 +364,28 @@ method.
 Boto3 documentation:
 [CustomerProfiles.Client.get_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.get_integration)
 
+Arguments mapping described in
+[GetIntegrationRequestTypeDef](./type_defs.md#getintegrationrequesttypedef).
+
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `Uri`: `str` *(required)*
 
 Returns
-[GetIntegrationResponseTypeDef](./type_defs.md#getintegrationresponsetypedef).
+[GetIntegrationResponseResponseTypeDef](./type_defs.md#getintegrationresponseresponsetypedef).
 
 ### get_matches
+
+This API is in preview release for Amazon Connect and subject to change.
 
 Type annotations for `boto3.client("customer-profiles").get_matches` method.
 
 Boto3 documentation:
 [CustomerProfiles.Client.get_matches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.get_matches)
+
+Arguments mapping described in
+[GetMatchesRequestTypeDef](./type_defs.md#getmatchesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -324,9 +393,12 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns [GetMatchesResponseTypeDef](./type_defs.md#getmatchesresponsetypedef).
+Returns
+[GetMatchesResponseResponseTypeDef](./type_defs.md#getmatchesresponseresponsetypedef).
 
 ### get_profile_object_type
+
+Returns the object types for a specific domain.
 
 Type annotations for
 `boto3.client("customer-profiles").get_profile_object_type` method.
@@ -334,15 +406,20 @@ Type annotations for
 Boto3 documentation:
 [CustomerProfiles.Client.get_profile_object_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.get_profile_object_type)
 
+Arguments mapping described in
+[GetProfileObjectTypeRequestTypeDef](./type_defs.md#getprofileobjecttyperequesttypedef).
+
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `ObjectTypeName`: `str` *(required)*
 
 Returns
-[GetProfileObjectTypeResponseTypeDef](./type_defs.md#getprofileobjecttyperesponsetypedef).
+[GetProfileObjectTypeResponseResponseTypeDef](./type_defs.md#getprofileobjecttyperesponseresponsetypedef).
 
 ### get_profile_object_type_template
+
+Returns the template information for a specific object type.
 
 Type annotations for
 `boto3.client("customer-profiles").get_profile_object_type_template` method.
@@ -350,20 +427,28 @@ Type annotations for
 Boto3 documentation:
 [CustomerProfiles.Client.get_profile_object_type_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.get_profile_object_type_template)
 
+Arguments mapping described in
+[GetProfileObjectTypeTemplateRequestTypeDef](./type_defs.md#getprofileobjecttypetemplaterequesttypedef).
+
 Keyword-only arguments:
 
 - `TemplateId`: `str` *(required)*
 
 Returns
-[GetProfileObjectTypeTemplateResponseTypeDef](./type_defs.md#getprofileobjecttypetemplateresponsetypedef).
+[GetProfileObjectTypeTemplateResponseResponseTypeDef](./type_defs.md#getprofileobjecttypetemplateresponseresponsetypedef).
 
 ### list_account_integrations
+
+Lists all of the integrations associated to a specific URI in the AWS account.
 
 Type annotations for
 `boto3.client("customer-profiles").list_account_integrations` method.
 
 Boto3 documentation:
 [CustomerProfiles.Client.list_account_integrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_account_integrations)
+
+Arguments mapping described in
+[ListAccountIntegrationsRequestTypeDef](./type_defs.md#listaccountintegrationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -372,14 +457,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListAccountIntegrationsResponseTypeDef](./type_defs.md#listaccountintegrationsresponsetypedef).
+[ListAccountIntegrationsResponseResponseTypeDef](./type_defs.md#listaccountintegrationsresponseresponsetypedef).
 
 ### list_domains
+
+Returns a list of all the domains for an AWS account that have been created.
 
 Type annotations for `boto3.client("customer-profiles").list_domains` method.
 
 Boto3 documentation:
 [CustomerProfiles.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_domains)
+
+Arguments mapping described in
+[ListDomainsRequestTypeDef](./type_defs.md#listdomainsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -387,9 +477,11 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef).
+[ListDomainsResponseResponseTypeDef](./type_defs.md#listdomainsresponseresponsetypedef).
 
 ### list_integrations
+
+Lists all of the integrations in your domain.
 
 Type annotations for `boto3.client("customer-profiles").list_integrations`
 method.
@@ -397,6 +489,9 @@ method.
 Boto3 documentation:
 [CustomerProfiles.Client.list_integrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_integrations)
 
+Arguments mapping described in
+[ListIntegrationsRequestTypeDef](./type_defs.md#listintegrationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
@@ -404,9 +499,11 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListIntegrationsResponseTypeDef](./type_defs.md#listintegrationsresponsetypedef).
+[ListIntegrationsResponseResponseTypeDef](./type_defs.md#listintegrationsresponseresponsetypedef).
 
 ### list_profile_object_type_templates
+
+Lists all of the template information for object types.
 
 Type annotations for
 `boto3.client("customer-profiles").list_profile_object_type_templates` method.
@@ -414,21 +511,29 @@ Type annotations for
 Boto3 documentation:
 [CustomerProfiles.Client.list_profile_object_type_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_profile_object_type_templates)
 
+Arguments mapping described in
+[ListProfileObjectTypeTemplatesRequestTypeDef](./type_defs.md#listprofileobjecttypetemplatesrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListProfileObjectTypeTemplatesResponseTypeDef](./type_defs.md#listprofileobjecttypetemplatesresponsetypedef).
+[ListProfileObjectTypeTemplatesResponseResponseTypeDef](./type_defs.md#listprofileobjecttypetemplatesresponseresponsetypedef).
 
 ### list_profile_object_types
+
+Lists all of the templates available within the service.
 
 Type annotations for
 `boto3.client("customer-profiles").list_profile_object_types` method.
 
 Boto3 documentation:
 [CustomerProfiles.Client.list_profile_object_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_profile_object_types)
+
+Arguments mapping described in
+[ListProfileObjectTypesRequestTypeDef](./type_defs.md#listprofileobjecttypesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -437,15 +542,21 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListProfileObjectTypesResponseTypeDef](./type_defs.md#listprofileobjecttypesresponsetypedef).
+[ListProfileObjectTypesResponseResponseTypeDef](./type_defs.md#listprofileobjecttypesresponseresponsetypedef).
 
 ### list_profile_objects
+
+Returns a list of objects associated with a profile of a given
+ProfileObjectType.
 
 Type annotations for `boto3.client("customer-profiles").list_profile_objects`
 method.
 
 Boto3 documentation:
 [CustomerProfiles.Client.list_profile_objects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_profile_objects)
+
+Arguments mapping described in
+[ListProfileObjectsRequestTypeDef](./type_defs.md#listprofileobjectsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -456,9 +567,11 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListProfileObjectsResponseTypeDef](./type_defs.md#listprofileobjectsresponsetypedef).
+[ListProfileObjectsResponseResponseTypeDef](./type_defs.md#listprofileobjectsresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Displays the tags associated with an Amazon Connect Customer Profiles resource.
 
 Type annotations for `boto3.client("customer-profiles").list_tags_for_resource`
 method.
@@ -466,19 +579,27 @@ method.
 Boto3 documentation:
 [CustomerProfiles.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### merge_profiles
+
+This API is in preview release for Amazon Connect and subject to change.
 
 Type annotations for `boto3.client("customer-profiles").merge_profiles` method.
 
 Boto3 documentation:
 [CustomerProfiles.Client.merge_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.merge_profiles)
+
+Arguments mapping described in
+[MergeProfilesRequestTypeDef](./type_defs.md#mergeprofilesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -489,15 +610,21 @@ Keyword-only arguments:
   [FieldSourceProfileIdsTypeDef](./type_defs.md#fieldsourceprofileidstypedef)
 
 Returns
-[MergeProfilesResponseTypeDef](./type_defs.md#mergeprofilesresponsetypedef).
+[MergeProfilesResponseResponseTypeDef](./type_defs.md#mergeprofilesresponseresponsetypedef).
 
 ### put_integration
+
+Adds an integration between the service and a third-party service, which
+includes Amazon AppFlow and Amazon Connect.
 
 Type annotations for `boto3.client("customer-profiles").put_integration`
 method.
 
 Boto3 documentation:
 [CustomerProfiles.Client.put_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.put_integration)
+
+Arguments mapping described in
+[PutIntegrationRequestTypeDef](./type_defs.md#putintegrationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -509,15 +636,20 @@ Keyword-only arguments:
   [FlowDefinitionTypeDef](./type_defs.md#flowdefinitiontypedef)
 
 Returns
-[PutIntegrationResponseTypeDef](./type_defs.md#putintegrationresponsetypedef).
+[PutIntegrationResponseResponseTypeDef](./type_defs.md#putintegrationresponseresponsetypedef).
 
 ### put_profile_object
+
+Adds additional objects to customer profiles of a given ObjectType.
 
 Type annotations for `boto3.client("customer-profiles").put_profile_object`
 method.
 
 Boto3 documentation:
 [CustomerProfiles.Client.put_profile_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.put_profile_object)
+
+Arguments mapping described in
+[PutProfileObjectRequestTypeDef](./type_defs.md#putprofileobjectrequesttypedef).
 
 Keyword-only arguments:
 
@@ -526,15 +658,20 @@ Keyword-only arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[PutProfileObjectResponseTypeDef](./type_defs.md#putprofileobjectresponsetypedef).
+[PutProfileObjectResponseResponseTypeDef](./type_defs.md#putprofileobjectresponseresponsetypedef).
 
 ### put_profile_object_type
+
+Defines a ProfileObjectType.
 
 Type annotations for
 `boto3.client("customer-profiles").put_profile_object_type` method.
 
 Boto3 documentation:
 [CustomerProfiles.Client.put_profile_object_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.put_profile_object_type)
+
+Arguments mapping described in
+[PutProfileObjectTypeRequestTypeDef](./type_defs.md#putprofileobjecttyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -552,15 +689,21 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[PutProfileObjectTypeResponseTypeDef](./type_defs.md#putprofileobjecttyperesponsetypedef).
+[PutProfileObjectTypeResponseResponseTypeDef](./type_defs.md#putprofileobjecttyperesponseresponsetypedef).
 
 ### search_profiles
+
+Searches for profiles within a specific domain name using name, phone number,
+email address, account number, or a custom defined index.
 
 Type annotations for `boto3.client("customer-profiles").search_profiles`
 method.
 
 Boto3 documentation:
 [CustomerProfiles.Client.search_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.search_profiles)
+
+Arguments mapping described in
+[SearchProfilesRequestTypeDef](./type_defs.md#searchprofilesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -571,14 +714,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[SearchProfilesResponseTypeDef](./type_defs.md#searchprofilesresponsetypedef).
+[SearchProfilesResponseResponseTypeDef](./type_defs.md#searchprofilesresponseresponsetypedef).
 
 ### tag_resource
+
+Assigns one or more tags (key-value pairs) to the specified Amazon Connect
+Customer Profiles resource.
 
 Type annotations for `boto3.client("customer-profiles").tag_resource` method.
 
 Boto3 documentation:
 [CustomerProfiles.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -589,10 +738,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Removes one or more tags from the specified Amazon Connect Customer Profiles
+resource.
+
 Type annotations for `boto3.client("customer-profiles").untag_resource` method.
 
 Boto3 documentation:
 [CustomerProfiles.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -603,10 +758,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_domain
 
+Updates the properties of a domain, including creating or selecting a dead
+letter queue or an encryption key.
+
 Type annotations for `boto3.client("customer-profiles").update_domain` method.
 
 Boto3 documentation:
 [CustomerProfiles.Client.update_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.update_domain)
+
+Arguments mapping described in
+[UpdateDomainRequestTypeDef](./type_defs.md#updatedomainrequesttypedef).
 
 Keyword-only arguments:
 
@@ -618,14 +779,19 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[UpdateDomainResponseTypeDef](./type_defs.md#updatedomainresponsetypedef).
+[UpdateDomainResponseResponseTypeDef](./type_defs.md#updatedomainresponseresponsetypedef).
 
 ### update_profile
+
+Updates the properties of a profile.
 
 Type annotations for `boto3.client("customer-profiles").update_profile` method.
 
 Boto3 documentation:
 [CustomerProfiles.Client.update_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.update_profile)
+
+Arguments mapping described in
+[UpdateProfileRequestTypeDef](./type_defs.md#updateprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -655,4 +821,4 @@ Keyword-only arguments:
 - `Attributes`: `Dict`\[`str`, `str`\]
 
 Returns
-[UpdateProfileResponseTypeDef](./type_defs.md#updateprofileresponsetypedef).
+[UpdateProfileResponseResponseTypeDef](./type_defs.md#updateprofileresponseresponsetypedef).

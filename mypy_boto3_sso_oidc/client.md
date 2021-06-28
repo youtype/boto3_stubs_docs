@@ -65,6 +65,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("sso-oidc").can_paginate` method.
 
 Boto3 documentation:
@@ -78,10 +80,15 @@ Returns `bool`.
 
 ### create_token
 
+Creates and returns an access token for the authorized client.
+
 Type annotations for `boto3.client("sso-oidc").create_token` method.
 
 Boto3 documentation:
 [SSOOIDC.Client.create_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.create_token)
+
+Arguments mapping described in
+[CreateTokenRequestTypeDef](./type_defs.md#createtokenrequesttypedef).
 
 Keyword-only arguments:
 
@@ -95,9 +102,11 @@ Keyword-only arguments:
 - `redirectUri`: `str`
 
 Returns
-[CreateTokenResponseTypeDef](./type_defs.md#createtokenresponsetypedef).
+[CreateTokenResponseResponseTypeDef](./type_defs.md#createtokenresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("sso-oidc").generate_presigned_url` method.
 
@@ -115,10 +124,15 @@ Returns `str`.
 
 ### register_client
 
+Registers a client with AWS SSO.
+
 Type annotations for `boto3.client("sso-oidc").register_client` method.
 
 Boto3 documentation:
 [SSOOIDC.Client.register_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.register_client)
+
+Arguments mapping described in
+[RegisterClientRequestTypeDef](./type_defs.md#registerclientrequesttypedef).
 
 Keyword-only arguments:
 
@@ -127,15 +141,21 @@ Keyword-only arguments:
 - `scopes`: `List`\[`str`\]
 
 Returns
-[RegisterClientResponseTypeDef](./type_defs.md#registerclientresponsetypedef).
+[RegisterClientResponseResponseTypeDef](./type_defs.md#registerclientresponseresponsetypedef).
 
 ### start_device_authorization
+
+Initiates device authorization by requesting a pair of verification codes from
+the authorization service.
 
 Type annotations for `boto3.client("sso-oidc").start_device_authorization`
 method.
 
 Boto3 documentation:
 [SSOOIDC.Client.start_device_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.start_device_authorization)
+
+Arguments mapping described in
+[StartDeviceAuthorizationRequestTypeDef](./type_defs.md#startdeviceauthorizationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -144,4 +164,4 @@ Keyword-only arguments:
 - `startUrl`: `str` *(required)*
 
 Returns
-[StartDeviceAuthorizationResponseTypeDef](./type_defs.md#startdeviceauthorizationresponsetypedef).
+[StartDeviceAuthorizationResponseResponseTypeDef](./type_defs.md#startdeviceauthorizationresponseresponsetypedef).

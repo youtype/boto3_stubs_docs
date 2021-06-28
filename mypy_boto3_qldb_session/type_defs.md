@@ -18,7 +18,9 @@ type annotations stubs module
   - [FetchPageResultTypeDef](#fetchpageresulttypedef)
   - [IOUsageTypeDef](#iousagetypedef)
   - [PageTypeDef](#pagetypedef)
-  - [SendCommandResultTypeDef](#sendcommandresulttypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [SendCommandRequestTypeDef](#sendcommandrequesttypedef)
+  - [SendCommandResultResponseTypeDef](#sendcommandresultresponsetypedef)
   - [StartSessionRequestTypeDef](#startsessionrequesttypedef)
   - [StartSessionResultTypeDef](#startsessionresulttypedef)
   - [StartTransactionResultTypeDef](#starttransactionresulttypedef)
@@ -56,7 +58,7 @@ from mypy_boto3_qldb_session.type_defs import CommitTransactionResultTypeDef
 Optional fields:
 
 - `TransactionId`: `str`
-- `CommitDigest`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `CommitDigest`: `bytes`
 - `TimingInformation`:
   [TimingInformationTypeDef](./type_defs.md#timinginformationtypedef)
 - `ConsumedIOs`: [IOUsageTypeDef](./type_defs.md#iousagetypedef)
@@ -147,13 +149,48 @@ Optional fields:
 - `Values`: `List`\[[ValueHolderTypeDef](./type_defs.md#valueholdertypedef)\]
 - `NextPageToken`: `str`
 
-## SendCommandResultTypeDef
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_qldb_session.type_defs import SendCommandResultTypeDef
+from mypy_boto3_qldb_session.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## SendCommandRequestTypeDef
+
+```python
+from mypy_boto3_qldb_session.type_defs import SendCommandRequestTypeDef
 ```
 
 Optional fields:
+
+- `SessionToken`: `str`
+- `StartSession`:
+  [StartSessionRequestTypeDef](./type_defs.md#startsessionrequesttypedef)
+- `StartTransaction`: `Dict`\[`str`, `Any`\]
+- `EndSession`: `Dict`\[`str`, `Any`\]
+- `CommitTransaction`:
+  [CommitTransactionRequestTypeDef](./type_defs.md#committransactionrequesttypedef)
+- `AbortTransaction`: `Dict`\[`str`, `Any`\]
+- `ExecuteStatement`:
+  [ExecuteStatementRequestTypeDef](./type_defs.md#executestatementrequesttypedef)
+- `FetchPage`:
+  [FetchPageRequestTypeDef](./type_defs.md#fetchpagerequesttypedef)
+
+## SendCommandResultResponseTypeDef
+
+```python
+from mypy_boto3_qldb_session.type_defs import SendCommandResultResponseTypeDef
+```
+
+Required fields:
 
 - `StartSession`:
   [StartSessionResultTypeDef](./type_defs.md#startsessionresulttypedef)
@@ -168,6 +205,8 @@ Optional fields:
 - `ExecuteStatement`:
   [ExecuteStatementResultTypeDef](./type_defs.md#executestatementresulttypedef)
 - `FetchPage`: [FetchPageResultTypeDef](./type_defs.md#fetchpageresulttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## StartSessionRequestTypeDef
 

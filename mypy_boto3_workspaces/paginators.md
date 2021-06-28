@@ -40,7 +40,7 @@ Arguments for `DescribeAccountModificationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAccountModificationsPaginator.paginate` returns
-`Iterator`\[[DescribeAccountModificationsResultTypeDef](./type_defs.md#describeaccountmodificationsresulttypedef)\].
+`Iterator`\[[DescribeAccountModificationsResultResponseTypeDef](./type_defs.md#describeaccountmodificationsresultresponsetypedef)\].
 
 ## DescribeIpGroupsPaginator
 
@@ -66,7 +66,7 @@ Arguments for `DescribeIpGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeIpGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeIpGroupsResultTypeDef](./type_defs.md#describeipgroupsresulttypedef)\].
+`Iterator`\[[DescribeIpGroupsResultResponseTypeDef](./type_defs.md#describeipgroupsresultresponsetypedef)\].
 
 ## DescribeWorkspaceBundlesPaginator
 
@@ -93,7 +93,7 @@ Arguments for `DescribeWorkspaceBundlesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeWorkspaceBundlesPaginator.paginate` returns
-`Iterator`\[[DescribeWorkspaceBundlesResultTypeDef](./type_defs.md#describeworkspacebundlesresulttypedef)\].
+`Iterator`\[[DescribeWorkspaceBundlesResultResponseTypeDef](./type_defs.md#describeworkspacebundlesresultresponsetypedef)\].
 
 ## DescribeWorkspaceDirectoriesPaginator
 
@@ -120,7 +120,7 @@ Arguments for `DescribeWorkspaceDirectoriesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeWorkspaceDirectoriesPaginator.paginate` returns
-`Iterator`\[[DescribeWorkspaceDirectoriesResultTypeDef](./type_defs.md#describeworkspacedirectoriesresulttypedef)\].
+`Iterator`\[[DescribeWorkspaceDirectoriesResultResponseTypeDef](./type_defs.md#describeworkspacedirectoriesresultresponsetypedef)\].
 
 ## DescribeWorkspaceImagesPaginator
 
@@ -147,7 +147,7 @@ Arguments for `DescribeWorkspaceImagesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeWorkspaceImagesPaginator.paginate` returns
-`Iterator`\[[DescribeWorkspaceImagesResultTypeDef](./type_defs.md#describeworkspaceimagesresulttypedef)\].
+`Iterator`\[[DescribeWorkspaceImagesResultResponseTypeDef](./type_defs.md#describeworkspaceimagesresultresponsetypedef)\].
 
 ## DescribeWorkspacesPaginator
 
@@ -176,7 +176,7 @@ Arguments for `DescribeWorkspacesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeWorkspacesPaginator.paginate` returns
-`Iterator`\[[DescribeWorkspacesResultTypeDef](./type_defs.md#describeworkspacesresulttypedef)\].
+`Iterator`\[[DescribeWorkspacesResultResponseTypeDef](./type_defs.md#describeworkspacesresultresponsetypedef)\].
 
 ## DescribeWorkspacesConnectionStatusPaginator
 
@@ -202,7 +202,7 @@ Arguments for `DescribeWorkspacesConnectionStatusPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeWorkspacesConnectionStatusPaginator.paginate` returns
-`Iterator`\[[DescribeWorkspacesConnectionStatusResultTypeDef](./type_defs.md#describeworkspacesconnectionstatusresulttypedef)\].
+`Iterator`\[[DescribeWorkspacesConnectionStatusResultResponseTypeDef](./type_defs.md#describeworkspacesconnectionstatusresultresponsetypedef)\].
 
 ## ListAvailableManagementCidrRangesPaginator
 
@@ -228,4 +228,4 @@ Arguments for `ListAvailableManagementCidrRangesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAvailableManagementCidrRangesPaginator.paginate` returns
-`Iterator`\[[ListAvailableManagementCidrRangesResultTypeDef](./type_defs.md#listavailablemanagementcidrrangesresulttypedef)\].
+`Iterator`\[[ListAvailableManagementCidrRangesResultResponseTypeDef](./type_defs.md#listavailablemanagementcidrrangesresultresponsetypedef)\].

@@ -11,15 +11,21 @@ type annotations stubs module
   - [ArtworkTypeDef](#artworktypedef)
   - [AudioCodecOptionsTypeDef](#audiocodecoptionstypedef)
   - [AudioParametersTypeDef](#audioparameterstypedef)
+  - [CancelJobRequestTypeDef](#canceljobrequesttypedef)
   - [CaptionFormatTypeDef](#captionformattypedef)
   - [CaptionSourceTypeDef](#captionsourcetypedef)
   - [CaptionsTypeDef](#captionstypedef)
   - [ClipTypeDef](#cliptypedef)
   - [CreateJobOutputTypeDef](#createjoboutputtypedef)
   - [CreateJobPlaylistTypeDef](#createjobplaylisttypedef)
-  - [CreateJobResponseTypeDef](#createjobresponsetypedef)
-  - [CreatePipelineResponseTypeDef](#createpipelineresponsetypedef)
-  - [CreatePresetResponseTypeDef](#createpresetresponsetypedef)
+  - [CreateJobRequestTypeDef](#createjobrequesttypedef)
+  - [CreateJobResponseResponseTypeDef](#createjobresponseresponsetypedef)
+  - [CreatePipelineRequestTypeDef](#createpipelinerequesttypedef)
+  - [CreatePipelineResponseResponseTypeDef](#createpipelineresponseresponsetypedef)
+  - [CreatePresetRequestTypeDef](#createpresetrequesttypedef)
+  - [CreatePresetResponseResponseTypeDef](#createpresetresponseresponsetypedef)
+  - [DeletePipelineRequestTypeDef](#deletepipelinerequesttypedef)
+  - [DeletePresetRequestTypeDef](#deletepresetrequesttypedef)
   - [DetectedPropertiesTypeDef](#detectedpropertiestypedef)
   - [EncryptionTypeDef](#encryptiontypedef)
   - [HlsContentProtectionTypeDef](#hlscontentprotectiontypedef)
@@ -29,10 +35,14 @@ type annotations stubs module
   - [JobOutputTypeDef](#joboutputtypedef)
   - [JobTypeDef](#jobtypedef)
   - [JobWatermarkTypeDef](#jobwatermarktypedef)
-  - [ListJobsByPipelineResponseTypeDef](#listjobsbypipelineresponsetypedef)
-  - [ListJobsByStatusResponseTypeDef](#listjobsbystatusresponsetypedef)
-  - [ListPipelinesResponseTypeDef](#listpipelinesresponsetypedef)
-  - [ListPresetsResponseTypeDef](#listpresetsresponsetypedef)
+  - [ListJobsByPipelineRequestTypeDef](#listjobsbypipelinerequesttypedef)
+  - [ListJobsByPipelineResponseResponseTypeDef](#listjobsbypipelineresponseresponsetypedef)
+  - [ListJobsByStatusRequestTypeDef](#listjobsbystatusrequesttypedef)
+  - [ListJobsByStatusResponseResponseTypeDef](#listjobsbystatusresponseresponsetypedef)
+  - [ListPipelinesRequestTypeDef](#listpipelinesrequesttypedef)
+  - [ListPipelinesResponseResponseTypeDef](#listpipelinesresponseresponsetypedef)
+  - [ListPresetsRequestTypeDef](#listpresetsrequesttypedef)
+  - [ListPresetsResponseResponseTypeDef](#listpresetsresponseresponsetypedef)
   - [NotificationsTypeDef](#notificationstypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PermissionTypeDef](#permissiontypedef)
@@ -42,17 +52,24 @@ type annotations stubs module
   - [PlaylistTypeDef](#playlisttypedef)
   - [PresetTypeDef](#presettypedef)
   - [PresetWatermarkTypeDef](#presetwatermarktypedef)
-  - [ReadJobResponseTypeDef](#readjobresponsetypedef)
-  - [ReadPipelineResponseTypeDef](#readpipelineresponsetypedef)
-  - [ReadPresetResponseTypeDef](#readpresetresponsetypedef)
+  - [ReadJobRequestTypeDef](#readjobrequesttypedef)
+  - [ReadJobResponseResponseTypeDef](#readjobresponseresponsetypedef)
+  - [ReadPipelineRequestTypeDef](#readpipelinerequesttypedef)
+  - [ReadPipelineResponseResponseTypeDef](#readpipelineresponseresponsetypedef)
+  - [ReadPresetRequestTypeDef](#readpresetrequesttypedef)
+  - [ReadPresetResponseResponseTypeDef](#readpresetresponseresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [TestRoleResponseTypeDef](#testroleresponsetypedef)
+  - [TestRoleRequestTypeDef](#testrolerequesttypedef)
+  - [TestRoleResponseResponseTypeDef](#testroleresponseresponsetypedef)
   - [ThumbnailsTypeDef](#thumbnailstypedef)
   - [TimeSpanTypeDef](#timespantypedef)
   - [TimingTypeDef](#timingtypedef)
-  - [UpdatePipelineNotificationsResponseTypeDef](#updatepipelinenotificationsresponsetypedef)
-  - [UpdatePipelineResponseTypeDef](#updatepipelineresponsetypedef)
-  - [UpdatePipelineStatusResponseTypeDef](#updatepipelinestatusresponsetypedef)
+  - [UpdatePipelineNotificationsRequestTypeDef](#updatepipelinenotificationsrequesttypedef)
+  - [UpdatePipelineNotificationsResponseResponseTypeDef](#updatepipelinenotificationsresponseresponsetypedef)
+  - [UpdatePipelineRequestTypeDef](#updatepipelinerequesttypedef)
+  - [UpdatePipelineResponseResponseTypeDef](#updatepipelineresponseresponsetypedef)
+  - [UpdatePipelineStatusRequestTypeDef](#updatepipelinestatusrequesttypedef)
+  - [UpdatePipelineStatusResponseResponseTypeDef](#updatepipelinestatusresponseresponsetypedef)
   - [VideoParametersTypeDef](#videoparameterstypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
   - [WarningTypeDef](#warningtypedef)
@@ -101,6 +118,16 @@ Optional fields:
 - `AudioPackingMode`: `str`
 - `CodecOptions`:
   [AudioCodecOptionsTypeDef](./type_defs.md#audiocodecoptionstypedef)
+
+## CancelJobRequestTypeDef
+
+```python
+from mypy_boto3_elastictranscoder.type_defs import CancelJobRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
 
 ## CaptionFormatTypeDef
 
@@ -158,7 +185,7 @@ Optional fields:
 from mypy_boto3_elastictranscoder.type_defs import CreateJobOutputTypeDef
 ```
 
-Required fields:
+Optional fields:
 
 - `Key`: `str`
 - `ThumbnailPattern`: `str`
@@ -172,8 +199,6 @@ Required fields:
 - `Composition`: `List`\[[ClipTypeDef](./type_defs.md#cliptypedef)\]
 - `Captions`: [CaptionsTypeDef](./type_defs.md#captionstypedef)
 - `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateJobPlaylistTypeDef
 
@@ -190,37 +215,125 @@ Optional fields:
   [HlsContentProtectionTypeDef](./type_defs.md#hlscontentprotectiontypedef)
 - `PlayReadyDrm`: [PlayReadyDrmTypeDef](./type_defs.md#playreadydrmtypedef)
 
-## CreateJobResponseTypeDef
+## CreateJobRequestTypeDef
 
 ```python
-from mypy_boto3_elastictranscoder.type_defs import CreateJobResponseTypeDef
+from mypy_boto3_elastictranscoder.type_defs import CreateJobRequestTypeDef
 ```
 
+Required fields:
+
+- `PipelineId`: `str`
+
 Optional fields:
+
+- `Input`: [JobInputTypeDef](./type_defs.md#jobinputtypedef)
+- `Inputs`: `List`\[[JobInputTypeDef](./type_defs.md#jobinputtypedef)\]
+- `Output`: [CreateJobOutputTypeDef](./type_defs.md#createjoboutputtypedef)
+- `Outputs`:
+  `List`\[[CreateJobOutputTypeDef](./type_defs.md#createjoboutputtypedef)\]
+- `OutputKeyPrefix`: `str`
+- `Playlists`:
+  `List`\[[CreateJobPlaylistTypeDef](./type_defs.md#createjobplaylisttypedef)\]
+- `UserMetadata`: `Dict`\[`str`, `str`\]
+
+## CreateJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_elastictranscoder.type_defs import CreateJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Job`: [JobTypeDef](./type_defs.md#jobtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePipelineResponseTypeDef
+## CreatePipelineRequestTypeDef
 
 ```python
-from mypy_boto3_elastictranscoder.type_defs import CreatePipelineResponseTypeDef
+from mypy_boto3_elastictranscoder.type_defs import CreatePipelineRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+- `InputBucket`: `str`
+- `Role`: `str`
+
 Optional fields:
+
+- `OutputBucket`: `str`
+- `AwsKmsKeyArn`: `str`
+- `Notifications`: [NotificationsTypeDef](./type_defs.md#notificationstypedef)
+- `ContentConfig`:
+  [PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef)
+- `ThumbnailConfig`:
+  [PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef)
+
+## CreatePipelineResponseResponseTypeDef
+
+```python
+from mypy_boto3_elastictranscoder.type_defs import CreatePipelineResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Pipeline`: [PipelineTypeDef](./type_defs.md#pipelinetypedef)
 - `Warnings`: `List`\[[WarningTypeDef](./type_defs.md#warningtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePresetResponseTypeDef
+## CreatePresetRequestTypeDef
 
 ```python
-from mypy_boto3_elastictranscoder.type_defs import CreatePresetResponseTypeDef
+from mypy_boto3_elastictranscoder.type_defs import CreatePresetRequestTypeDef
 ```
+
+Required fields:
+
+- `Name`: `str`
+- `Container`: `str`
 
 Optional fields:
 
+- `Description`: `str`
+- `Video`: [VideoParametersTypeDef](./type_defs.md#videoparameterstypedef)
+- `Audio`: [AudioParametersTypeDef](./type_defs.md#audioparameterstypedef)
+- `Thumbnails`: [ThumbnailsTypeDef](./type_defs.md#thumbnailstypedef)
+
+## CreatePresetResponseResponseTypeDef
+
+```python
+from mypy_boto3_elastictranscoder.type_defs import CreatePresetResponseResponseTypeDef
+```
+
+Required fields:
+
 - `Preset`: [PresetTypeDef](./type_defs.md#presettypedef)
 - `Warning`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeletePipelineRequestTypeDef
+
+```python
+from mypy_boto3_elastictranscoder.type_defs import DeletePipelineRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## DeletePresetRequestTypeDef
+
+```python
+from mypy_boto3_elastictranscoder.type_defs import DeletePresetRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
 
 ## DetectedPropertiesTypeDef
 
@@ -313,7 +426,7 @@ Optional fields:
 from mypy_boto3_elastictranscoder.type_defs import JobOutputTypeDef
 ```
 
-Required fields:
+Optional fields:
 
 - `Id`: `str`
 - `Key`: `str`
@@ -337,8 +450,6 @@ Required fields:
 - `Captions`: [CaptionsTypeDef](./type_defs.md#captionstypedef)
 - `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
 - `AppliedColorSpaceConversion`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## JobTypeDef
 
@@ -373,49 +484,109 @@ Optional fields:
 - `InputKey`: `str`
 - `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
 
-## ListJobsByPipelineResponseTypeDef
+## ListJobsByPipelineRequestTypeDef
 
 ```python
-from mypy_boto3_elastictranscoder.type_defs import ListJobsByPipelineResponseTypeDef
+from mypy_boto3_elastictranscoder.type_defs import ListJobsByPipelineRequestTypeDef
 ```
 
+Required fields:
+
+- `PipelineId`: `str`
+
 Optional fields:
+
+- `Ascending`: `str`
+- `PageToken`: `str`
+
+## ListJobsByPipelineResponseResponseTypeDef
+
+```python
+from mypy_boto3_elastictranscoder.type_defs import ListJobsByPipelineResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Jobs`: `List`\[[JobTypeDef](./type_defs.md#jobtypedef)\]
 - `NextPageToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListJobsByStatusResponseTypeDef
+## ListJobsByStatusRequestTypeDef
 
 ```python
-from mypy_boto3_elastictranscoder.type_defs import ListJobsByStatusResponseTypeDef
+from mypy_boto3_elastictranscoder.type_defs import ListJobsByStatusRequestTypeDef
 ```
 
+Required fields:
+
+- `Status`: `str`
+
 Optional fields:
+
+- `Ascending`: `str`
+- `PageToken`: `str`
+
+## ListJobsByStatusResponseResponseTypeDef
+
+```python
+from mypy_boto3_elastictranscoder.type_defs import ListJobsByStatusResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Jobs`: `List`\[[JobTypeDef](./type_defs.md#jobtypedef)\]
 - `NextPageToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPipelinesResponseTypeDef
+## ListPipelinesRequestTypeDef
 
 ```python
-from mypy_boto3_elastictranscoder.type_defs import ListPipelinesResponseTypeDef
+from mypy_boto3_elastictranscoder.type_defs import ListPipelinesRequestTypeDef
 ```
 
 Optional fields:
+
+- `Ascending`: `str`
+- `PageToken`: `str`
+
+## ListPipelinesResponseResponseTypeDef
+
+```python
+from mypy_boto3_elastictranscoder.type_defs import ListPipelinesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Pipelines`: `List`\[[PipelineTypeDef](./type_defs.md#pipelinetypedef)\]
 - `NextPageToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPresetsResponseTypeDef
+## ListPresetsRequestTypeDef
 
 ```python
-from mypy_boto3_elastictranscoder.type_defs import ListPresetsResponseTypeDef
+from mypy_boto3_elastictranscoder.type_defs import ListPresetsRequestTypeDef
 ```
 
 Optional fields:
 
+- `Ascending`: `str`
+- `PageToken`: `str`
+
+## ListPresetsResponseResponseTypeDef
+
+```python
+from mypy_boto3_elastictranscoder.type_defs import ListPresetsResponseResponseTypeDef
+```
+
+Required fields:
+
 - `Presets`: `List`\[[PresetTypeDef](./type_defs.md#presettypedef)\]
 - `NextPageToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## NotificationsTypeDef
 
@@ -558,36 +729,72 @@ Optional fields:
 - `Opacity`: `str`
 - `Target`: `str`
 
-## ReadJobResponseTypeDef
+## ReadJobRequestTypeDef
 
 ```python
-from mypy_boto3_elastictranscoder.type_defs import ReadJobResponseTypeDef
+from mypy_boto3_elastictranscoder.type_defs import ReadJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## ReadJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_elastictranscoder.type_defs import ReadJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Job`: [JobTypeDef](./type_defs.md#jobtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ReadPipelineResponseTypeDef
+## ReadPipelineRequestTypeDef
 
 ```python
-from mypy_boto3_elastictranscoder.type_defs import ReadPipelineResponseTypeDef
+from mypy_boto3_elastictranscoder.type_defs import ReadPipelineRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## ReadPipelineResponseResponseTypeDef
+
+```python
+from mypy_boto3_elastictranscoder.type_defs import ReadPipelineResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Pipeline`: [PipelineTypeDef](./type_defs.md#pipelinetypedef)
 - `Warnings`: `List`\[[WarningTypeDef](./type_defs.md#warningtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ReadPresetResponseTypeDef
+## ReadPresetRequestTypeDef
 
 ```python
-from mypy_boto3_elastictranscoder.type_defs import ReadPresetResponseTypeDef
+from mypy_boto3_elastictranscoder.type_defs import ReadPresetRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## ReadPresetResponseResponseTypeDef
+
+```python
+from mypy_boto3_elastictranscoder.type_defs import ReadPresetResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Preset`: [PresetTypeDef](./type_defs.md#presettypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ResponseMetadataTypeDef
 
@@ -603,16 +810,31 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## TestRoleResponseTypeDef
+## TestRoleRequestTypeDef
 
 ```python
-from mypy_boto3_elastictranscoder.type_defs import TestRoleResponseTypeDef
+from mypy_boto3_elastictranscoder.type_defs import TestRoleRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Role`: `str`
+- `InputBucket`: `str`
+- `OutputBucket`: `str`
+- `Topics`: `List`\[`str`\]
+
+## TestRoleResponseResponseTypeDef
+
+```python
+from mypy_boto3_elastictranscoder.type_defs import TestRoleResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Success`: `str`
 - `Messages`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ThumbnailsTypeDef
 
@@ -654,36 +876,86 @@ Optional fields:
 - `StartTimeMillis`: `int`
 - `FinishTimeMillis`: `int`
 
-## UpdatePipelineNotificationsResponseTypeDef
+## UpdatePipelineNotificationsRequestTypeDef
 
 ```python
-from mypy_boto3_elastictranscoder.type_defs import UpdatePipelineNotificationsResponseTypeDef
+from mypy_boto3_elastictranscoder.type_defs import UpdatePipelineNotificationsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+- `Notifications`: [NotificationsTypeDef](./type_defs.md#notificationstypedef)
+
+## UpdatePipelineNotificationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_elastictranscoder.type_defs import UpdatePipelineNotificationsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Pipeline`: [PipelineTypeDef](./type_defs.md#pipelinetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdatePipelineResponseTypeDef
+## UpdatePipelineRequestTypeDef
 
 ```python
-from mypy_boto3_elastictranscoder.type_defs import UpdatePipelineResponseTypeDef
+from mypy_boto3_elastictranscoder.type_defs import UpdatePipelineRequestTypeDef
 ```
 
+Required fields:
+
+- `Id`: `str`
+
 Optional fields:
+
+- `Name`: `str`
+- `InputBucket`: `str`
+- `Role`: `str`
+- `AwsKmsKeyArn`: `str`
+- `Notifications`: [NotificationsTypeDef](./type_defs.md#notificationstypedef)
+- `ContentConfig`:
+  [PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef)
+- `ThumbnailConfig`:
+  [PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef)
+
+## UpdatePipelineResponseResponseTypeDef
+
+```python
+from mypy_boto3_elastictranscoder.type_defs import UpdatePipelineResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Pipeline`: [PipelineTypeDef](./type_defs.md#pipelinetypedef)
 - `Warnings`: `List`\[[WarningTypeDef](./type_defs.md#warningtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdatePipelineStatusResponseTypeDef
+## UpdatePipelineStatusRequestTypeDef
 
 ```python
-from mypy_boto3_elastictranscoder.type_defs import UpdatePipelineStatusResponseTypeDef
+from mypy_boto3_elastictranscoder.type_defs import UpdatePipelineStatusRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+- `Status`: `str`
+
+## UpdatePipelineStatusResponseResponseTypeDef
+
+```python
+from mypy_boto3_elastictranscoder.type_defs import UpdatePipelineStatusResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Pipeline`: [PipelineTypeDef](./type_defs.md#pipelinetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## VideoParametersTypeDef
 

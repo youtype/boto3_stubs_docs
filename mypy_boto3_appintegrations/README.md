@@ -63,14 +63,24 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_appintegrations.type_defs import CreateEventIntegrationResponseTypeDef, ...
+from mypy_boto3_appintegrations.type_defs import CreateEventIntegrationRequestTypeDef, ...
 ```
 
-- [CreateEventIntegrationResponseTypeDef](./type_defs.md#createeventintegrationresponsetypedef)
+- [CreateEventIntegrationRequestTypeDef](./type_defs.md#createeventintegrationrequesttypedef)
+- [CreateEventIntegrationResponseResponseTypeDef](./type_defs.md#createeventintegrationresponseresponsetypedef)
+- [DeleteEventIntegrationRequestTypeDef](./type_defs.md#deleteeventintegrationrequesttypedef)
 - [EventFilterTypeDef](./type_defs.md#eventfiltertypedef)
 - [EventIntegrationAssociationTypeDef](./type_defs.md#eventintegrationassociationtypedef)
 - [EventIntegrationTypeDef](./type_defs.md#eventintegrationtypedef)
-- [GetEventIntegrationResponseTypeDef](./type_defs.md#geteventintegrationresponsetypedef)
-- [ListEventIntegrationAssociationsResponseTypeDef](./type_defs.md#listeventintegrationassociationsresponsetypedef)
-- [ListEventIntegrationsResponseTypeDef](./type_defs.md#listeventintegrationsresponsetypedef)
-- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [GetEventIntegrationRequestTypeDef](./type_defs.md#geteventintegrationrequesttypedef)
+- [GetEventIntegrationResponseResponseTypeDef](./type_defs.md#geteventintegrationresponseresponsetypedef)
+- [ListEventIntegrationAssociationsRequestTypeDef](./type_defs.md#listeventintegrationassociationsrequesttypedef)
+- [ListEventIntegrationAssociationsResponseResponseTypeDef](./type_defs.md#listeventintegrationassociationsresponseresponsetypedef)
+- [ListEventIntegrationsRequestTypeDef](./type_defs.md#listeventintegrationsrequesttypedef)
+- [ListEventIntegrationsResponseResponseTypeDef](./type_defs.md#listeventintegrationsresponseresponsetypedef)
+- [ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef)
+- [ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef)
+- [UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef)
+- [UpdateEventIntegrationRequestTypeDef](./type_defs.md#updateeventintegrationrequesttypedef)

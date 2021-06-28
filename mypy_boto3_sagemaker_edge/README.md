@@ -54,5 +54,8 @@ from mypy_boto3_sagemaker_edge.type_defs import EdgeMetricTypeDef, ...
 ```
 
 - [EdgeMetricTypeDef](./type_defs.md#edgemetrictypedef)
-- [GetDeviceRegistrationResultTypeDef](./type_defs.md#getdeviceregistrationresulttypedef)
+- [GetDeviceRegistrationRequestTypeDef](./type_defs.md#getdeviceregistrationrequesttypedef)
+- [GetDeviceRegistrationResultResponseTypeDef](./type_defs.md#getdeviceregistrationresultresponsetypedef)
 - [ModelTypeDef](./type_defs.md#modeltypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [SendHeartbeatRequestTypeDef](./type_defs.md#sendheartbeatrequesttypedef)

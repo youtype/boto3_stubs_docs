@@ -37,7 +37,7 @@ Arguments for `ListConfigurationSetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListConfigurationSetsPaginator.paginate` returns
-`Iterator`\[[ListConfigurationSetsResponseTypeDef](./type_defs.md#listconfigurationsetsresponsetypedef)\].
+`Iterator`\[[ListConfigurationSetsResponseResponseTypeDef](./type_defs.md#listconfigurationsetsresponseresponsetypedef)\].
 
 ## ListCustomVerificationEmailTemplatesPaginator
 
@@ -62,7 +62,7 @@ Arguments for `ListCustomVerificationEmailTemplatesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCustomVerificationEmailTemplatesPaginator.paginate` returns
-`Iterator`\[[ListCustomVerificationEmailTemplatesResponseTypeDef](./type_defs.md#listcustomverificationemailtemplatesresponsetypedef)\].
+`Iterator`\[[ListCustomVerificationEmailTemplatesResponseResponseTypeDef](./type_defs.md#listcustomverificationemailtemplatesresponseresponsetypedef)\].
 
 ## ListIdentitiesPaginator
 
@@ -87,7 +87,7 @@ Arguments for `ListIdentitiesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListIdentitiesPaginator.paginate` returns
-`Iterator`\[[ListIdentitiesResponseTypeDef](./type_defs.md#listidentitiesresponsetypedef)\].
+`Iterator`\[[ListIdentitiesResponseResponseTypeDef](./type_defs.md#listidentitiesresponseresponsetypedef)\].
 
 ## ListReceiptRuleSetsPaginator
 
@@ -112,7 +112,7 @@ Arguments for `ListReceiptRuleSetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListReceiptRuleSetsPaginator.paginate` returns
-`Iterator`\[[ListReceiptRuleSetsResponseTypeDef](./type_defs.md#listreceiptrulesetsresponsetypedef)\].
+`Iterator`\[[ListReceiptRuleSetsResponseResponseTypeDef](./type_defs.md#listreceiptrulesetsresponseresponsetypedef)\].
 
 ## ListTemplatesPaginator
 
@@ -136,4 +136,4 @@ Arguments for `ListTemplatesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTemplatesPaginator.paginate` returns
-`Iterator`\[[ListTemplatesResponseTypeDef](./type_defs.md#listtemplatesresponsetypedef)\].
+`Iterator`\[[ListTemplatesResponseResponseTypeDef](./type_defs.md#listtemplatesresponseresponsetypedef)\].

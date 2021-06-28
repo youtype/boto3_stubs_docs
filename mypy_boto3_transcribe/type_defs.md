@@ -9,40 +9,68 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 TranscribeService module](#typed-dictionaries-for-boto3-transcribeservice-module)
   - [ContentRedactionTypeDef](#contentredactiontypedef)
-  - [CreateLanguageModelResponseTypeDef](#createlanguagemodelresponsetypedef)
-  - [CreateMedicalVocabularyResponseTypeDef](#createmedicalvocabularyresponsetypedef)
-  - [CreateVocabularyFilterResponseTypeDef](#createvocabularyfilterresponsetypedef)
-  - [CreateVocabularyResponseTypeDef](#createvocabularyresponsetypedef)
-  - [DescribeLanguageModelResponseTypeDef](#describelanguagemodelresponsetypedef)
-  - [GetMedicalTranscriptionJobResponseTypeDef](#getmedicaltranscriptionjobresponsetypedef)
-  - [GetMedicalVocabularyResponseTypeDef](#getmedicalvocabularyresponsetypedef)
-  - [GetTranscriptionJobResponseTypeDef](#gettranscriptionjobresponsetypedef)
-  - [GetVocabularyFilterResponseTypeDef](#getvocabularyfilterresponsetypedef)
-  - [GetVocabularyResponseTypeDef](#getvocabularyresponsetypedef)
+  - [CreateLanguageModelRequestTypeDef](#createlanguagemodelrequesttypedef)
+  - [CreateLanguageModelResponseResponseTypeDef](#createlanguagemodelresponseresponsetypedef)
+  - [CreateMedicalVocabularyRequestTypeDef](#createmedicalvocabularyrequesttypedef)
+  - [CreateMedicalVocabularyResponseResponseTypeDef](#createmedicalvocabularyresponseresponsetypedef)
+  - [CreateVocabularyFilterRequestTypeDef](#createvocabularyfilterrequesttypedef)
+  - [CreateVocabularyFilterResponseResponseTypeDef](#createvocabularyfilterresponseresponsetypedef)
+  - [CreateVocabularyRequestTypeDef](#createvocabularyrequesttypedef)
+  - [CreateVocabularyResponseResponseTypeDef](#createvocabularyresponseresponsetypedef)
+  - [DeleteLanguageModelRequestTypeDef](#deletelanguagemodelrequesttypedef)
+  - [DeleteMedicalTranscriptionJobRequestTypeDef](#deletemedicaltranscriptionjobrequesttypedef)
+  - [DeleteMedicalVocabularyRequestTypeDef](#deletemedicalvocabularyrequesttypedef)
+  - [DeleteTranscriptionJobRequestTypeDef](#deletetranscriptionjobrequesttypedef)
+  - [DeleteVocabularyFilterRequestTypeDef](#deletevocabularyfilterrequesttypedef)
+  - [DeleteVocabularyRequestTypeDef](#deletevocabularyrequesttypedef)
+  - [DescribeLanguageModelRequestTypeDef](#describelanguagemodelrequesttypedef)
+  - [DescribeLanguageModelResponseResponseTypeDef](#describelanguagemodelresponseresponsetypedef)
+  - [GetMedicalTranscriptionJobRequestTypeDef](#getmedicaltranscriptionjobrequesttypedef)
+  - [GetMedicalTranscriptionJobResponseResponseTypeDef](#getmedicaltranscriptionjobresponseresponsetypedef)
+  - [GetMedicalVocabularyRequestTypeDef](#getmedicalvocabularyrequesttypedef)
+  - [GetMedicalVocabularyResponseResponseTypeDef](#getmedicalvocabularyresponseresponsetypedef)
+  - [GetTranscriptionJobRequestTypeDef](#gettranscriptionjobrequesttypedef)
+  - [GetTranscriptionJobResponseResponseTypeDef](#gettranscriptionjobresponseresponsetypedef)
+  - [GetVocabularyFilterRequestTypeDef](#getvocabularyfilterrequesttypedef)
+  - [GetVocabularyFilterResponseResponseTypeDef](#getvocabularyfilterresponseresponsetypedef)
+  - [GetVocabularyRequestTypeDef](#getvocabularyrequesttypedef)
+  - [GetVocabularyResponseResponseTypeDef](#getvocabularyresponseresponsetypedef)
   - [InputDataConfigTypeDef](#inputdataconfigtypedef)
   - [JobExecutionSettingsTypeDef](#jobexecutionsettingstypedef)
   - [LanguageModelTypeDef](#languagemodeltypedef)
-  - [ListLanguageModelsResponseTypeDef](#listlanguagemodelsresponsetypedef)
-  - [ListMedicalTranscriptionJobsResponseTypeDef](#listmedicaltranscriptionjobsresponsetypedef)
-  - [ListMedicalVocabulariesResponseTypeDef](#listmedicalvocabulariesresponsetypedef)
-  - [ListTranscriptionJobsResponseTypeDef](#listtranscriptionjobsresponsetypedef)
-  - [ListVocabulariesResponseTypeDef](#listvocabulariesresponsetypedef)
-  - [ListVocabularyFiltersResponseTypeDef](#listvocabularyfiltersresponsetypedef)
+  - [ListLanguageModelsRequestTypeDef](#listlanguagemodelsrequesttypedef)
+  - [ListLanguageModelsResponseResponseTypeDef](#listlanguagemodelsresponseresponsetypedef)
+  - [ListMedicalTranscriptionJobsRequestTypeDef](#listmedicaltranscriptionjobsrequesttypedef)
+  - [ListMedicalTranscriptionJobsResponseResponseTypeDef](#listmedicaltranscriptionjobsresponseresponsetypedef)
+  - [ListMedicalVocabulariesRequestTypeDef](#listmedicalvocabulariesrequesttypedef)
+  - [ListMedicalVocabulariesResponseResponseTypeDef](#listmedicalvocabulariesresponseresponsetypedef)
+  - [ListTranscriptionJobsRequestTypeDef](#listtranscriptionjobsrequesttypedef)
+  - [ListTranscriptionJobsResponseResponseTypeDef](#listtranscriptionjobsresponseresponsetypedef)
+  - [ListVocabulariesRequestTypeDef](#listvocabulariesrequesttypedef)
+  - [ListVocabulariesResponseResponseTypeDef](#listvocabulariesresponseresponsetypedef)
+  - [ListVocabularyFiltersRequestTypeDef](#listvocabularyfiltersrequesttypedef)
+  - [ListVocabularyFiltersResponseResponseTypeDef](#listvocabularyfiltersresponseresponsetypedef)
   - [MediaTypeDef](#mediatypedef)
   - [MedicalTranscriptTypeDef](#medicaltranscripttypedef)
   - [MedicalTranscriptionJobSummaryTypeDef](#medicaltranscriptionjobsummarytypedef)
   - [MedicalTranscriptionJobTypeDef](#medicaltranscriptionjobtypedef)
   - [MedicalTranscriptionSettingTypeDef](#medicaltranscriptionsettingtypedef)
   - [ModelSettingsTypeDef](#modelsettingstypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SettingsTypeDef](#settingstypedef)
-  - [StartMedicalTranscriptionJobResponseTypeDef](#startmedicaltranscriptionjobresponsetypedef)
-  - [StartTranscriptionJobResponseTypeDef](#starttranscriptionjobresponsetypedef)
+  - [StartMedicalTranscriptionJobRequestTypeDef](#startmedicaltranscriptionjobrequesttypedef)
+  - [StartMedicalTranscriptionJobResponseResponseTypeDef](#startmedicaltranscriptionjobresponseresponsetypedef)
+  - [StartTranscriptionJobRequestTypeDef](#starttranscriptionjobrequesttypedef)
+  - [StartTranscriptionJobResponseResponseTypeDef](#starttranscriptionjobresponseresponsetypedef)
   - [TranscriptTypeDef](#transcripttypedef)
   - [TranscriptionJobSummaryTypeDef](#transcriptionjobsummarytypedef)
   - [TranscriptionJobTypeDef](#transcriptionjobtypedef)
-  - [UpdateMedicalVocabularyResponseTypeDef](#updatemedicalvocabularyresponsetypedef)
-  - [UpdateVocabularyFilterResponseTypeDef](#updatevocabularyfilterresponsetypedef)
-  - [UpdateVocabularyResponseTypeDef](#updatevocabularyresponsetypedef)
+  - [UpdateMedicalVocabularyRequestTypeDef](#updatemedicalvocabularyrequesttypedef)
+  - [UpdateMedicalVocabularyResponseResponseTypeDef](#updatemedicalvocabularyresponseresponsetypedef)
+  - [UpdateVocabularyFilterRequestTypeDef](#updatevocabularyfilterrequesttypedef)
+  - [UpdateVocabularyFilterResponseResponseTypeDef](#updatevocabularyfilterresponseresponsetypedef)
+  - [UpdateVocabularyRequestTypeDef](#updatevocabularyrequesttypedef)
+  - [UpdateVocabularyResponseResponseTypeDef](#updatevocabularyresponseresponsetypedef)
   - [VocabularyFilterInfoTypeDef](#vocabularyfilterinfotypedef)
   - [VocabularyInfoTypeDef](#vocabularyinfotypedef)
 
@@ -58,13 +86,27 @@ Required fields:
   [RedactionTypeType](./literals.md#redactiontypetype))
 - `RedactionOutput`: [RedactionOutputType](./literals.md#redactionoutputtype)
 
-## CreateLanguageModelResponseTypeDef
+## CreateLanguageModelRequestTypeDef
 
 ```python
-from mypy_boto3_transcribe.type_defs import CreateLanguageModelResponseTypeDef
+from mypy_boto3_transcribe.type_defs import CreateLanguageModelRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `LanguageCode`: [CLMLanguageCodeType](./literals.md#clmlanguagecodetype)
+- `BaseModelName`: [BaseModelNameType](./literals.md#basemodelnametype)
+- `ModelName`: `str`
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
+
+## CreateLanguageModelResponseResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import CreateLanguageModelResponseResponseTypeDef
+```
+
+Required fields:
 
 - `LanguageCode`: [CLMLanguageCodeType](./literals.md#clmlanguagecodetype)
 - `BaseModelName`: [BaseModelNameType](./literals.md#basemodelnametype)
@@ -72,75 +114,221 @@ Optional fields:
 - `InputDataConfig`:
   [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
 - `ModelStatus`: [ModelStatusType](./literals.md#modelstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateMedicalVocabularyResponseTypeDef
+## CreateMedicalVocabularyRequestTypeDef
 
 ```python
-from mypy_boto3_transcribe.type_defs import CreateMedicalVocabularyResponseTypeDef
+from mypy_boto3_transcribe.type_defs import CreateMedicalVocabularyRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `VocabularyName`: `str`
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+- `VocabularyFileUri`: `str`
+
+## CreateMedicalVocabularyResponseResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import CreateMedicalVocabularyResponseResponseTypeDef
+```
+
+Required fields:
 
 - `VocabularyName`: `str`
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `VocabularyState`: [VocabularyStateType](./literals.md#vocabularystatetype)
 - `LastModifiedTime`: `datetime`
 - `FailureReason`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateVocabularyFilterResponseTypeDef
+## CreateVocabularyFilterRequestTypeDef
 
 ```python
-from mypy_boto3_transcribe.type_defs import CreateVocabularyFilterResponseTypeDef
+from mypy_boto3_transcribe.type_defs import CreateVocabularyFilterRequestTypeDef
 ```
 
+Required fields:
+
+- `VocabularyFilterName`: `str`
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+
 Optional fields:
+
+- `Words`: `List`\[`str`\]
+- `VocabularyFilterFileUri`: `str`
+
+## CreateVocabularyFilterResponseResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import CreateVocabularyFilterResponseResponseTypeDef
+```
+
+Required fields:
 
 - `VocabularyFilterName`: `str`
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `LastModifiedTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateVocabularyResponseTypeDef
+## CreateVocabularyRequestTypeDef
 
 ```python
-from mypy_boto3_transcribe.type_defs import CreateVocabularyResponseTypeDef
+from mypy_boto3_transcribe.type_defs import CreateVocabularyRequestTypeDef
 ```
 
+Required fields:
+
+- `VocabularyName`: `str`
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+
 Optional fields:
+
+- `Phrases`: `List`\[`str`\]
+- `VocabularyFileUri`: `str`
+
+## CreateVocabularyResponseResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import CreateVocabularyResponseResponseTypeDef
+```
+
+Required fields:
 
 - `VocabularyName`: `str`
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `VocabularyState`: [VocabularyStateType](./literals.md#vocabularystatetype)
 - `LastModifiedTime`: `datetime`
 - `FailureReason`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLanguageModelResponseTypeDef
+## DeleteLanguageModelRequestTypeDef
 
 ```python
-from mypy_boto3_transcribe.type_defs import DescribeLanguageModelResponseTypeDef
+from mypy_boto3_transcribe.type_defs import DeleteLanguageModelRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ModelName`: `str`
+
+## DeleteMedicalTranscriptionJobRequestTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import DeleteMedicalTranscriptionJobRequestTypeDef
+```
+
+Required fields:
+
+- `MedicalTranscriptionJobName`: `str`
+
+## DeleteMedicalVocabularyRequestTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import DeleteMedicalVocabularyRequestTypeDef
+```
+
+Required fields:
+
+- `VocabularyName`: `str`
+
+## DeleteTranscriptionJobRequestTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import DeleteTranscriptionJobRequestTypeDef
+```
+
+Required fields:
+
+- `TranscriptionJobName`: `str`
+
+## DeleteVocabularyFilterRequestTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import DeleteVocabularyFilterRequestTypeDef
+```
+
+Required fields:
+
+- `VocabularyFilterName`: `str`
+
+## DeleteVocabularyRequestTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import DeleteVocabularyRequestTypeDef
+```
+
+Required fields:
+
+- `VocabularyName`: `str`
+
+## DescribeLanguageModelRequestTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import DescribeLanguageModelRequestTypeDef
+```
+
+Required fields:
+
+- `ModelName`: `str`
+
+## DescribeLanguageModelResponseResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import DescribeLanguageModelResponseResponseTypeDef
+```
+
+Required fields:
 
 - `LanguageModel`: [LanguageModelTypeDef](./type_defs.md#languagemodeltypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMedicalTranscriptionJobResponseTypeDef
+## GetMedicalTranscriptionJobRequestTypeDef
 
 ```python
-from mypy_boto3_transcribe.type_defs import GetMedicalTranscriptionJobResponseTypeDef
+from mypy_boto3_transcribe.type_defs import GetMedicalTranscriptionJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `MedicalTranscriptionJobName`: `str`
+
+## GetMedicalTranscriptionJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import GetMedicalTranscriptionJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `MedicalTranscriptionJob`:
   [MedicalTranscriptionJobTypeDef](./type_defs.md#medicaltranscriptionjobtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMedicalVocabularyResponseTypeDef
+## GetMedicalVocabularyRequestTypeDef
 
 ```python
-from mypy_boto3_transcribe.type_defs import GetMedicalVocabularyResponseTypeDef
+from mypy_boto3_transcribe.type_defs import GetMedicalVocabularyRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `VocabularyName`: `str`
+
+## GetMedicalVocabularyResponseResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import GetMedicalVocabularyResponseResponseTypeDef
+```
+
+Required fields:
 
 - `VocabularyName`: `str`
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
@@ -148,38 +336,74 @@ Optional fields:
 - `LastModifiedTime`: `datetime`
 - `FailureReason`: `str`
 - `DownloadUri`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTranscriptionJobResponseTypeDef
+## GetTranscriptionJobRequestTypeDef
 
 ```python
-from mypy_boto3_transcribe.type_defs import GetTranscriptionJobResponseTypeDef
+from mypy_boto3_transcribe.type_defs import GetTranscriptionJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `TranscriptionJobName`: `str`
+
+## GetTranscriptionJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import GetTranscriptionJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `TranscriptionJob`:
   [TranscriptionJobTypeDef](./type_defs.md#transcriptionjobtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetVocabularyFilterResponseTypeDef
+## GetVocabularyFilterRequestTypeDef
 
 ```python
-from mypy_boto3_transcribe.type_defs import GetVocabularyFilterResponseTypeDef
+from mypy_boto3_transcribe.type_defs import GetVocabularyFilterRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `VocabularyFilterName`: `str`
+
+## GetVocabularyFilterResponseResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import GetVocabularyFilterResponseResponseTypeDef
+```
+
+Required fields:
 
 - `VocabularyFilterName`: `str`
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `LastModifiedTime`: `datetime`
 - `DownloadUri`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetVocabularyResponseTypeDef
+## GetVocabularyRequestTypeDef
 
 ```python
-from mypy_boto3_transcribe.type_defs import GetVocabularyResponseTypeDef
+from mypy_boto3_transcribe.type_defs import GetVocabularyRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `VocabularyName`: `str`
+
+## GetVocabularyResponseResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import GetVocabularyResponseResponseTypeDef
+```
+
+Required fields:
 
 - `VocabularyName`: `str`
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
@@ -187,6 +411,8 @@ Optional fields:
 - `LastModifiedTime`: `datetime`
 - `FailureReason`: `str`
 - `DownloadUri`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## InputDataConfigTypeDef
 
@@ -233,83 +459,174 @@ Optional fields:
 - `InputDataConfig`:
   [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
 
-## ListLanguageModelsResponseTypeDef
+## ListLanguageModelsRequestTypeDef
 
 ```python
-from mypy_boto3_transcribe.type_defs import ListLanguageModelsResponseTypeDef
+from mypy_boto3_transcribe.type_defs import ListLanguageModelsRequestTypeDef
 ```
 
 Optional fields:
+
+- `StatusEquals`: [ModelStatusType](./literals.md#modelstatustype)
+- `NameContains`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListLanguageModelsResponseResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import ListLanguageModelsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `Models`:
   `List`\[[LanguageModelTypeDef](./type_defs.md#languagemodeltypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListMedicalTranscriptionJobsResponseTypeDef
+## ListMedicalTranscriptionJobsRequestTypeDef
 
 ```python
-from mypy_boto3_transcribe.type_defs import ListMedicalTranscriptionJobsResponseTypeDef
+from mypy_boto3_transcribe.type_defs import ListMedicalTranscriptionJobsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Status`:
+  [TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype)
+- `JobNameContains`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListMedicalTranscriptionJobsResponseResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import ListMedicalTranscriptionJobsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Status`:
   [TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype)
 - `NextToken`: `str`
 - `MedicalTranscriptionJobSummaries`:
   `List`\[[MedicalTranscriptionJobSummaryTypeDef](./type_defs.md#medicaltranscriptionjobsummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListMedicalVocabulariesResponseTypeDef
+## ListMedicalVocabulariesRequestTypeDef
 
 ```python
-from mypy_boto3_transcribe.type_defs import ListMedicalVocabulariesResponseTypeDef
+from mypy_boto3_transcribe.type_defs import ListMedicalVocabulariesRequestTypeDef
 ```
 
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `StateEquals`: [VocabularyStateType](./literals.md#vocabularystatetype)
+- `NameContains`: `str`
+
+## ListMedicalVocabulariesResponseResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import ListMedicalVocabulariesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Status`: [VocabularyStateType](./literals.md#vocabularystatetype)
 - `NextToken`: `str`
 - `Vocabularies`:
   `List`\[[VocabularyInfoTypeDef](./type_defs.md#vocabularyinfotypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTranscriptionJobsResponseTypeDef
+## ListTranscriptionJobsRequestTypeDef
 
 ```python
-from mypy_boto3_transcribe.type_defs import ListTranscriptionJobsResponseTypeDef
+from mypy_boto3_transcribe.type_defs import ListTranscriptionJobsRequestTypeDef
 ```
 
 Optional fields:
 
 - `Status`:
   [TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype)
+- `JobNameContains`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListTranscriptionJobsResponseResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import ListTranscriptionJobsResponseResponseTypeDef
+```
+
+Required fields:
+
+- `Status`:
+  [TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype)
 - `NextToken`: `str`
 - `TranscriptionJobSummaries`:
   `List`\[[TranscriptionJobSummaryTypeDef](./type_defs.md#transcriptionjobsummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListVocabulariesResponseTypeDef
+## ListVocabulariesRequestTypeDef
 
 ```python
-from mypy_boto3_transcribe.type_defs import ListVocabulariesResponseTypeDef
+from mypy_boto3_transcribe.type_defs import ListVocabulariesRequestTypeDef
 ```
 
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `StateEquals`: [VocabularyStateType](./literals.md#vocabularystatetype)
+- `NameContains`: `str`
+
+## ListVocabulariesResponseResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import ListVocabulariesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Status`: [VocabularyStateType](./literals.md#vocabularystatetype)
 - `NextToken`: `str`
 - `Vocabularies`:
   `List`\[[VocabularyInfoTypeDef](./type_defs.md#vocabularyinfotypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListVocabularyFiltersResponseTypeDef
+## ListVocabularyFiltersRequestTypeDef
 
 ```python
-from mypy_boto3_transcribe.type_defs import ListVocabularyFiltersResponseTypeDef
+from mypy_boto3_transcribe.type_defs import ListVocabularyFiltersRequestTypeDef
 ```
 
 Optional fields:
 
 - `NextToken`: `str`
+- `MaxResults`: `int`
+- `NameContains`: `str`
+
+## ListVocabularyFiltersResponseResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import ListVocabularyFiltersResponseResponseTypeDef
+```
+
+Required fields:
+
+- `NextToken`: `str`
 - `VocabularyFilters`:
   `List`\[[VocabularyFilterInfoTypeDef](./type_defs.md#vocabularyfilterinfotypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## MediaTypeDef
 
@@ -409,6 +726,20 @@ Optional fields:
 
 - `LanguageModelName`: `str`
 
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
 ## SettingsTypeDef
 
 ```python
@@ -427,27 +758,87 @@ Optional fields:
 - `VocabularyFilterMethod`:
   [VocabularyFilterMethodType](./literals.md#vocabularyfiltermethodtype)
 
-## StartMedicalTranscriptionJobResponseTypeDef
+## StartMedicalTranscriptionJobRequestTypeDef
 
 ```python
-from mypy_boto3_transcribe.type_defs import StartMedicalTranscriptionJobResponseTypeDef
+from mypy_boto3_transcribe.type_defs import StartMedicalTranscriptionJobRequestTypeDef
 ```
 
+Required fields:
+
+- `MedicalTranscriptionJobName`: `str`
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+- `Media`: [MediaTypeDef](./type_defs.md#mediatypedef)
+- `OutputBucketName`: `str`
+- `Specialty`: `Literal['PRIMARYCARE']` (see
+  [SpecialtyType](./literals.md#specialtytype))
+- `Type`: [TypeType](./literals.md#typetype)
+
 Optional fields:
+
+- `MediaSampleRateHertz`: `int`
+- `MediaFormat`: [MediaFormatType](./literals.md#mediaformattype)
+- `OutputKey`: `str`
+- `OutputEncryptionKMSKeyId`: `str`
+- `Settings`:
+  [MedicalTranscriptionSettingTypeDef](./type_defs.md#medicaltranscriptionsettingtypedef)
+- `ContentIdentificationType`: `Literal['PHI']` (see
+  [MedicalContentIdentificationTypeType](./literals.md#medicalcontentidentificationtypetype))
+
+## StartMedicalTranscriptionJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import StartMedicalTranscriptionJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `MedicalTranscriptionJob`:
   [MedicalTranscriptionJobTypeDef](./type_defs.md#medicaltranscriptionjobtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartTranscriptionJobResponseTypeDef
+## StartTranscriptionJobRequestTypeDef
 
 ```python
-from mypy_boto3_transcribe.type_defs import StartTranscriptionJobResponseTypeDef
+from mypy_boto3_transcribe.type_defs import StartTranscriptionJobRequestTypeDef
 ```
+
+Required fields:
+
+- `TranscriptionJobName`: `str`
+- `Media`: [MediaTypeDef](./type_defs.md#mediatypedef)
 
 Optional fields:
 
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+- `MediaSampleRateHertz`: `int`
+- `MediaFormat`: [MediaFormatType](./literals.md#mediaformattype)
+- `OutputBucketName`: `str`
+- `OutputKey`: `str`
+- `OutputEncryptionKMSKeyId`: `str`
+- `Settings`: [SettingsTypeDef](./type_defs.md#settingstypedef)
+- `ModelSettings`: [ModelSettingsTypeDef](./type_defs.md#modelsettingstypedef)
+- `JobExecutionSettings`:
+  [JobExecutionSettingsTypeDef](./type_defs.md#jobexecutionsettingstypedef)
+- `ContentRedaction`:
+  [ContentRedactionTypeDef](./type_defs.md#contentredactiontypedef)
+- `IdentifyLanguage`: `bool`
+- `LanguageOptions`:
+  `List`\[[LanguageCodeType](./literals.md#languagecodetype)\]
+
+## StartTranscriptionJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import StartTranscriptionJobResponseResponseTypeDef
+```
+
+Required fields:
+
 - `TranscriptionJob`:
   [TranscriptionJobTypeDef](./type_defs.md#transcriptionjobtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## TranscriptTypeDef
 
@@ -515,43 +906,95 @@ Optional fields:
   `List`\[[LanguageCodeType](./literals.md#languagecodetype)\]
 - `IdentifiedLanguageScore`: `float`
 
-## UpdateMedicalVocabularyResponseTypeDef
+## UpdateMedicalVocabularyRequestTypeDef
 
 ```python
-from mypy_boto3_transcribe.type_defs import UpdateMedicalVocabularyResponseTypeDef
+from mypy_boto3_transcribe.type_defs import UpdateMedicalVocabularyRequestTypeDef
 ```
 
+Required fields:
+
+- `VocabularyName`: `str`
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+
 Optional fields:
+
+- `VocabularyFileUri`: `str`
+
+## UpdateMedicalVocabularyResponseResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import UpdateMedicalVocabularyResponseResponseTypeDef
+```
+
+Required fields:
 
 - `VocabularyName`: `str`
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `LastModifiedTime`: `datetime`
 - `VocabularyState`: [VocabularyStateType](./literals.md#vocabularystatetype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateVocabularyFilterResponseTypeDef
+## UpdateVocabularyFilterRequestTypeDef
 
 ```python
-from mypy_boto3_transcribe.type_defs import UpdateVocabularyFilterResponseTypeDef
+from mypy_boto3_transcribe.type_defs import UpdateVocabularyFilterRequestTypeDef
 ```
 
+Required fields:
+
+- `VocabularyFilterName`: `str`
+
 Optional fields:
+
+- `Words`: `List`\[`str`\]
+- `VocabularyFilterFileUri`: `str`
+
+## UpdateVocabularyFilterResponseResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import UpdateVocabularyFilterResponseResponseTypeDef
+```
+
+Required fields:
 
 - `VocabularyFilterName`: `str`
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `LastModifiedTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateVocabularyResponseTypeDef
+## UpdateVocabularyRequestTypeDef
 
 ```python
-from mypy_boto3_transcribe.type_defs import UpdateVocabularyResponseTypeDef
+from mypy_boto3_transcribe.type_defs import UpdateVocabularyRequestTypeDef
 ```
 
+Required fields:
+
+- `VocabularyName`: `str`
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+
 Optional fields:
+
+- `Phrases`: `List`\[`str`\]
+- `VocabularyFileUri`: `str`
+
+## UpdateVocabularyResponseResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import UpdateVocabularyResponseResponseTypeDef
+```
+
+Required fields:
 
 - `VocabularyName`: `str`
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `LastModifiedTime`: `datetime`
 - `VocabularyState`: [VocabularyStateType](./literals.md#vocabularystatetype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## VocabularyFilterInfoTypeDef
 

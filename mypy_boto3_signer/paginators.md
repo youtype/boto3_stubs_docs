@@ -35,14 +35,14 @@ Arguments for `ListSigningJobsPaginator.paginate` method:
 - `platformId`: `str`
 - `requestedBy`: `str`
 - `isRevoked`: `bool`
-- `signatureExpiresBefore`: `datetime`
-- `signatureExpiresAfter`: `datetime`
+- `signatureExpiresBefore`: `Union`\[`datetime`, `str`\]
+- `signatureExpiresAfter`: `Union`\[`datetime`, `str`\]
 - `jobInvoker`: `str`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSigningJobsPaginator.paginate` returns
-`Iterator`\[[ListSigningJobsResponseTypeDef](./type_defs.md#listsigningjobsresponsetypedef)\].
+`Iterator`\[[ListSigningJobsResponseResponseTypeDef](./type_defs.md#listsigningjobsresponseresponsetypedef)\].
 
 ## ListSigningPlatformsPaginator
 
@@ -70,7 +70,7 @@ Arguments for `ListSigningPlatformsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSigningPlatformsPaginator.paginate` returns
-`Iterator`\[[ListSigningPlatformsResponseTypeDef](./type_defs.md#listsigningplatformsresponsetypedef)\].
+`Iterator`\[[ListSigningPlatformsResponseResponseTypeDef](./type_defs.md#listsigningplatformsresponseresponsetypedef)\].
 
 ## ListSigningProfilesPaginator
 
@@ -99,4 +99,4 @@ Arguments for `ListSigningProfilesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSigningProfilesPaginator.paginate` returns
-`Iterator`\[[ListSigningProfilesResponseTypeDef](./type_defs.md#listsigningprofilesresponsetypedef)\].
+`Iterator`\[[ListSigningProfilesResponseResponseTypeDef](./type_defs.md#listsigningprofilesresponseresponsetypedef)\].

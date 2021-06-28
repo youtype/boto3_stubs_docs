@@ -8,74 +8,187 @@ type annotations stubs module
 [mypy_boto3_cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
 
 - [Typed dictionaries for boto3 Cloud9 module](#typed-dictionaries-for-boto3-cloud9-module)
-  - [CreateEnvironmentEC2ResultTypeDef](#createenvironmentec2resulttypedef)
-  - [CreateEnvironmentMembershipResultTypeDef](#createenvironmentmembershipresulttypedef)
-  - [DescribeEnvironmentMembershipsResultTypeDef](#describeenvironmentmembershipsresulttypedef)
-  - [DescribeEnvironmentStatusResultTypeDef](#describeenvironmentstatusresulttypedef)
-  - [DescribeEnvironmentsResultTypeDef](#describeenvironmentsresulttypedef)
+  - [CreateEnvironmentEC2RequestTypeDef](#createenvironmentec2requesttypedef)
+  - [CreateEnvironmentEC2ResultResponseTypeDef](#createenvironmentec2resultresponsetypedef)
+  - [CreateEnvironmentMembershipRequestTypeDef](#createenvironmentmembershiprequesttypedef)
+  - [CreateEnvironmentMembershipResultResponseTypeDef](#createenvironmentmembershipresultresponsetypedef)
+  - [DeleteEnvironmentMembershipRequestTypeDef](#deleteenvironmentmembershiprequesttypedef)
+  - [DeleteEnvironmentRequestTypeDef](#deleteenvironmentrequesttypedef)
+  - [DescribeEnvironmentMembershipsRequestTypeDef](#describeenvironmentmembershipsrequesttypedef)
+  - [DescribeEnvironmentMembershipsResultResponseTypeDef](#describeenvironmentmembershipsresultresponsetypedef)
+  - [DescribeEnvironmentStatusRequestTypeDef](#describeenvironmentstatusrequesttypedef)
+  - [DescribeEnvironmentStatusResultResponseTypeDef](#describeenvironmentstatusresultresponsetypedef)
+  - [DescribeEnvironmentsRequestTypeDef](#describeenvironmentsrequesttypedef)
+  - [DescribeEnvironmentsResultResponseTypeDef](#describeenvironmentsresultresponsetypedef)
   - [EnvironmentLifecycleTypeDef](#environmentlifecycletypedef)
   - [EnvironmentMemberTypeDef](#environmentmembertypedef)
   - [EnvironmentTypeDef](#environmenttypedef)
-  - [ListEnvironmentsResultTypeDef](#listenvironmentsresulttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListEnvironmentsRequestTypeDef](#listenvironmentsrequesttypedef)
+  - [ListEnvironmentsResultResponseTypeDef](#listenvironmentsresultresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TagTypeDef](#tagtypedef)
-  - [UpdateEnvironmentMembershipResultTypeDef](#updateenvironmentmembershipresulttypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateEnvironmentMembershipRequestTypeDef](#updateenvironmentmembershiprequesttypedef)
+  - [UpdateEnvironmentMembershipResultResponseTypeDef](#updateenvironmentmembershipresultresponsetypedef)
+  - [UpdateEnvironmentRequestTypeDef](#updateenvironmentrequesttypedef)
 
-## CreateEnvironmentEC2ResultTypeDef
+## CreateEnvironmentEC2RequestTypeDef
 
 ```python
-from mypy_boto3_cloud9.type_defs import CreateEnvironmentEC2ResultTypeDef
+from mypy_boto3_cloud9.type_defs import CreateEnvironmentEC2RequestTypeDef
 ```
+
+Required fields:
+
+- `name`: `str`
+- `instanceType`: `str`
 
 Optional fields:
 
-- `environmentId`: `str`
+- `description`: `str`
+- `clientRequestToken`: `str`
+- `subnetId`: `str`
+- `imageId`: `str`
+- `automaticStopTimeMinutes`: `int`
+- `ownerArn`: `str`
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `connectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
 
-## CreateEnvironmentMembershipResultTypeDef
+## CreateEnvironmentEC2ResultResponseTypeDef
 
 ```python
-from mypy_boto3_cloud9.type_defs import CreateEnvironmentMembershipResultTypeDef
+from mypy_boto3_cloud9.type_defs import CreateEnvironmentEC2ResultResponseTypeDef
+```
+
+Required fields:
+
+- `environmentId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateEnvironmentMembershipRequestTypeDef
+
+```python
+from mypy_boto3_cloud9.type_defs import CreateEnvironmentMembershipRequestTypeDef
+```
+
+Required fields:
+
+- `environmentId`: `str`
+- `userArn`: `str`
+- `permissions`: [MemberPermissionsType](./literals.md#memberpermissionstype)
+
+## CreateEnvironmentMembershipResultResponseTypeDef
+
+```python
+from mypy_boto3_cloud9.type_defs import CreateEnvironmentMembershipResultResponseTypeDef
 ```
 
 Required fields:
 
 - `membership`:
   [EnvironmentMemberTypeDef](./type_defs.md#environmentmembertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEnvironmentMembershipsResultTypeDef
+## DeleteEnvironmentMembershipRequestTypeDef
 
 ```python
-from mypy_boto3_cloud9.type_defs import DescribeEnvironmentMembershipsResultTypeDef
+from mypy_boto3_cloud9.type_defs import DeleteEnvironmentMembershipRequestTypeDef
+```
+
+Required fields:
+
+- `environmentId`: `str`
+- `userArn`: `str`
+
+## DeleteEnvironmentRequestTypeDef
+
+```python
+from mypy_boto3_cloud9.type_defs import DeleteEnvironmentRequestTypeDef
+```
+
+Required fields:
+
+- `environmentId`: `str`
+
+## DescribeEnvironmentMembershipsRequestTypeDef
+
+```python
+from mypy_boto3_cloud9.type_defs import DescribeEnvironmentMembershipsRequestTypeDef
 ```
 
 Optional fields:
 
+- `userArn`: `str`
+- `environmentId`: `str`
+- `permissions`: `List`\[[PermissionsType](./literals.md#permissionstype)\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## DescribeEnvironmentMembershipsResultResponseTypeDef
+
+```python
+from mypy_boto3_cloud9.type_defs import DescribeEnvironmentMembershipsResultResponseTypeDef
+```
+
+Required fields:
+
 - `memberships`:
   `List`\[[EnvironmentMemberTypeDef](./type_defs.md#environmentmembertypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEnvironmentStatusResultTypeDef
+## DescribeEnvironmentStatusRequestTypeDef
 
 ```python
-from mypy_boto3_cloud9.type_defs import DescribeEnvironmentStatusResultTypeDef
+from mypy_boto3_cloud9.type_defs import DescribeEnvironmentStatusRequestTypeDef
+```
+
+Required fields:
+
+- `environmentId`: `str`
+
+## DescribeEnvironmentStatusResultResponseTypeDef
+
+```python
+from mypy_boto3_cloud9.type_defs import DescribeEnvironmentStatusResultResponseTypeDef
 ```
 
 Required fields:
 
 - `status`: [EnvironmentStatusType](./literals.md#environmentstatustype)
 - `message`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEnvironmentsResultTypeDef
+## DescribeEnvironmentsRequestTypeDef
 
 ```python
-from mypy_boto3_cloud9.type_defs import DescribeEnvironmentsResultTypeDef
+from mypy_boto3_cloud9.type_defs import DescribeEnvironmentsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `environmentIds`: `List`\[`str`\]
+
+## DescribeEnvironmentsResultResponseTypeDef
+
+```python
+from mypy_boto3_cloud9.type_defs import DescribeEnvironmentsResultResponseTypeDef
+```
+
+Required fields:
 
 - `environments`:
   `List`\[[EnvironmentTypeDef](./type_defs.md#environmenttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## EnvironmentLifecycleTypeDef
 
@@ -130,26 +243,51 @@ Optional fields:
 - `managedCredentialsStatus`:
   [ManagedCredentialsStatusType](./literals.md#managedcredentialsstatustype)
 
-## ListEnvironmentsResultTypeDef
+## ListEnvironmentsRequestTypeDef
 
 ```python
-from mypy_boto3_cloud9.type_defs import ListEnvironmentsResultTypeDef
+from mypy_boto3_cloud9.type_defs import ListEnvironmentsRequestTypeDef
 ```
 
 Optional fields:
 
 - `nextToken`: `str`
-- `environmentIds`: `List`\[`str`\]
+- `maxResults`: `int`
 
-## ListTagsForResourceResponseTypeDef
+## ListEnvironmentsResultResponseTypeDef
 
 ```python
-from mypy_boto3_cloud9.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_cloud9.type_defs import ListEnvironmentsResultResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `nextToken`: `str`
+- `environmentIds`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListTagsForResourceRequestTypeDef
+
+```python
+from mypy_boto3_cloud9.type_defs import ListTagsForResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_cloud9.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -163,6 +301,31 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_cloud9.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_cloud9.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
 ## TagTypeDef
 
 ```python
@@ -174,13 +337,53 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## UpdateEnvironmentMembershipResultTypeDef
+## UntagResourceRequestTypeDef
 
 ```python
-from mypy_boto3_cloud9.type_defs import UpdateEnvironmentMembershipResultTypeDef
+from mypy_boto3_cloud9.type_defs import UntagResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceARN`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## UpdateEnvironmentMembershipRequestTypeDef
+
+```python
+from mypy_boto3_cloud9.type_defs import UpdateEnvironmentMembershipRequestTypeDef
+```
+
+Required fields:
+
+- `environmentId`: `str`
+- `userArn`: `str`
+- `permissions`: [MemberPermissionsType](./literals.md#memberpermissionstype)
+
+## UpdateEnvironmentMembershipResultResponseTypeDef
+
+```python
+from mypy_boto3_cloud9.type_defs import UpdateEnvironmentMembershipResultResponseTypeDef
+```
+
+Required fields:
 
 - `membership`:
   [EnvironmentMemberTypeDef](./type_defs.md#environmentmembertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateEnvironmentRequestTypeDef
+
+```python
+from mypy_boto3_cloud9.type_defs import UpdateEnvironmentRequestTypeDef
+```
+
+Required fields:
+
+- `environmentId`: `str`
+
+Optional fields:
+
+- `name`: `str`
+- `description`: `str`

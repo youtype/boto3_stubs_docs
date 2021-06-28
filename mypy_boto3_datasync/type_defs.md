@@ -9,30 +9,56 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 DataSync module](#typed-dictionaries-for-boto3-datasync-module)
   - [AgentListEntryTypeDef](#agentlistentrytypedef)
-  - [CreateAgentResponseTypeDef](#createagentresponsetypedef)
-  - [CreateLocationEfsResponseTypeDef](#createlocationefsresponsetypedef)
-  - [CreateLocationFsxWindowsResponseTypeDef](#createlocationfsxwindowsresponsetypedef)
-  - [CreateLocationNfsResponseTypeDef](#createlocationnfsresponsetypedef)
-  - [CreateLocationObjectStorageResponseTypeDef](#createlocationobjectstorageresponsetypedef)
-  - [CreateLocationS3ResponseTypeDef](#createlocations3responsetypedef)
-  - [CreateLocationSmbResponseTypeDef](#createlocationsmbresponsetypedef)
-  - [CreateTaskResponseTypeDef](#createtaskresponsetypedef)
-  - [DescribeAgentResponseTypeDef](#describeagentresponsetypedef)
-  - [DescribeLocationEfsResponseTypeDef](#describelocationefsresponsetypedef)
-  - [DescribeLocationFsxWindowsResponseTypeDef](#describelocationfsxwindowsresponsetypedef)
-  - [DescribeLocationNfsResponseTypeDef](#describelocationnfsresponsetypedef)
-  - [DescribeLocationObjectStorageResponseTypeDef](#describelocationobjectstorageresponsetypedef)
-  - [DescribeLocationS3ResponseTypeDef](#describelocations3responsetypedef)
-  - [DescribeLocationSmbResponseTypeDef](#describelocationsmbresponsetypedef)
-  - [DescribeTaskExecutionResponseTypeDef](#describetaskexecutionresponsetypedef)
-  - [DescribeTaskResponseTypeDef](#describetaskresponsetypedef)
+  - [CancelTaskExecutionRequestTypeDef](#canceltaskexecutionrequesttypedef)
+  - [CreateAgentRequestTypeDef](#createagentrequesttypedef)
+  - [CreateAgentResponseResponseTypeDef](#createagentresponseresponsetypedef)
+  - [CreateLocationEfsRequestTypeDef](#createlocationefsrequesttypedef)
+  - [CreateLocationEfsResponseResponseTypeDef](#createlocationefsresponseresponsetypedef)
+  - [CreateLocationFsxWindowsRequestTypeDef](#createlocationfsxwindowsrequesttypedef)
+  - [CreateLocationFsxWindowsResponseResponseTypeDef](#createlocationfsxwindowsresponseresponsetypedef)
+  - [CreateLocationNfsRequestTypeDef](#createlocationnfsrequesttypedef)
+  - [CreateLocationNfsResponseResponseTypeDef](#createlocationnfsresponseresponsetypedef)
+  - [CreateLocationObjectStorageRequestTypeDef](#createlocationobjectstoragerequesttypedef)
+  - [CreateLocationObjectStorageResponseResponseTypeDef](#createlocationobjectstorageresponseresponsetypedef)
+  - [CreateLocationS3RequestTypeDef](#createlocations3requesttypedef)
+  - [CreateLocationS3ResponseResponseTypeDef](#createlocations3responseresponsetypedef)
+  - [CreateLocationSmbRequestTypeDef](#createlocationsmbrequesttypedef)
+  - [CreateLocationSmbResponseResponseTypeDef](#createlocationsmbresponseresponsetypedef)
+  - [CreateTaskRequestTypeDef](#createtaskrequesttypedef)
+  - [CreateTaskResponseResponseTypeDef](#createtaskresponseresponsetypedef)
+  - [DeleteAgentRequestTypeDef](#deleteagentrequesttypedef)
+  - [DeleteLocationRequestTypeDef](#deletelocationrequesttypedef)
+  - [DeleteTaskRequestTypeDef](#deletetaskrequesttypedef)
+  - [DescribeAgentRequestTypeDef](#describeagentrequesttypedef)
+  - [DescribeAgentResponseResponseTypeDef](#describeagentresponseresponsetypedef)
+  - [DescribeLocationEfsRequestTypeDef](#describelocationefsrequesttypedef)
+  - [DescribeLocationEfsResponseResponseTypeDef](#describelocationefsresponseresponsetypedef)
+  - [DescribeLocationFsxWindowsRequestTypeDef](#describelocationfsxwindowsrequesttypedef)
+  - [DescribeLocationFsxWindowsResponseResponseTypeDef](#describelocationfsxwindowsresponseresponsetypedef)
+  - [DescribeLocationNfsRequestTypeDef](#describelocationnfsrequesttypedef)
+  - [DescribeLocationNfsResponseResponseTypeDef](#describelocationnfsresponseresponsetypedef)
+  - [DescribeLocationObjectStorageRequestTypeDef](#describelocationobjectstoragerequesttypedef)
+  - [DescribeLocationObjectStorageResponseResponseTypeDef](#describelocationobjectstorageresponseresponsetypedef)
+  - [DescribeLocationS3RequestTypeDef](#describelocations3requesttypedef)
+  - [DescribeLocationS3ResponseResponseTypeDef](#describelocations3responseresponsetypedef)
+  - [DescribeLocationSmbRequestTypeDef](#describelocationsmbrequesttypedef)
+  - [DescribeLocationSmbResponseResponseTypeDef](#describelocationsmbresponseresponsetypedef)
+  - [DescribeTaskExecutionRequestTypeDef](#describetaskexecutionrequesttypedef)
+  - [DescribeTaskExecutionResponseResponseTypeDef](#describetaskexecutionresponseresponsetypedef)
+  - [DescribeTaskRequestTypeDef](#describetaskrequesttypedef)
+  - [DescribeTaskResponseResponseTypeDef](#describetaskresponseresponsetypedef)
   - [Ec2ConfigTypeDef](#ec2configtypedef)
   - [FilterRuleTypeDef](#filterruletypedef)
-  - [ListAgentsResponseTypeDef](#listagentsresponsetypedef)
-  - [ListLocationsResponseTypeDef](#listlocationsresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListTaskExecutionsResponseTypeDef](#listtaskexecutionsresponsetypedef)
-  - [ListTasksResponseTypeDef](#listtasksresponsetypedef)
+  - [ListAgentsRequestTypeDef](#listagentsrequesttypedef)
+  - [ListAgentsResponseResponseTypeDef](#listagentsresponseresponsetypedef)
+  - [ListLocationsRequestTypeDef](#listlocationsrequesttypedef)
+  - [ListLocationsResponseResponseTypeDef](#listlocationsresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListTaskExecutionsRequestTypeDef](#listtaskexecutionsrequesttypedef)
+  - [ListTaskExecutionsResponseResponseTypeDef](#listtaskexecutionsresponseresponsetypedef)
+  - [ListTasksRequestTypeDef](#listtasksrequesttypedef)
+  - [ListTasksResponseResponseTypeDef](#listtasksresponseresponsetypedef)
   - [LocationFilterTypeDef](#locationfiltertypedef)
   - [LocationListEntryTypeDef](#locationlistentrytypedef)
   - [NfsMountOptionsTypeDef](#nfsmountoptionstypedef)
@@ -40,15 +66,25 @@ type annotations stubs module
   - [OptionsTypeDef](#optionstypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PrivateLinkConfigTypeDef](#privatelinkconfigtypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3ConfigTypeDef](#s3configtypedef)
   - [SmbMountOptionsTypeDef](#smbmountoptionstypedef)
-  - [StartTaskExecutionResponseTypeDef](#starttaskexecutionresponsetypedef)
+  - [StartTaskExecutionRequestTypeDef](#starttaskexecutionrequesttypedef)
+  - [StartTaskExecutionResponseResponseTypeDef](#starttaskexecutionresponseresponsetypedef)
   - [TagListEntryTypeDef](#taglistentrytypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TaskExecutionListEntryTypeDef](#taskexecutionlistentrytypedef)
   - [TaskExecutionResultDetailTypeDef](#taskexecutionresultdetailtypedef)
   - [TaskFilterTypeDef](#taskfiltertypedef)
   - [TaskListEntryTypeDef](#tasklistentrytypedef)
   - [TaskScheduleTypeDef](#taskscheduletypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateAgentRequestTypeDef](#updateagentrequesttypedef)
+  - [UpdateLocationNfsRequestTypeDef](#updatelocationnfsrequesttypedef)
+  - [UpdateLocationObjectStorageRequestTypeDef](#updatelocationobjectstoragerequesttypedef)
+  - [UpdateLocationSmbRequestTypeDef](#updatelocationsmbrequesttypedef)
+  - [UpdateTaskExecutionRequestTypeDef](#updatetaskexecutionrequesttypedef)
+  - [UpdateTaskRequestTypeDef](#updatetaskrequesttypedef)
 
 ## AgentListEntryTypeDef
 
@@ -62,93 +98,311 @@ Optional fields:
 - `Name`: `str`
 - `Status`: [AgentStatusType](./literals.md#agentstatustype)
 
-## CreateAgentResponseTypeDef
+## CancelTaskExecutionRequestTypeDef
 
 ```python
-from mypy_boto3_datasync.type_defs import CreateAgentResponseTypeDef
+from mypy_boto3_datasync.type_defs import CancelTaskExecutionRequestTypeDef
 ```
 
+Required fields:
+
+- `TaskExecutionArn`: `str`
+
+## CreateAgentRequestTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import CreateAgentRequestTypeDef
+```
+
+Required fields:
+
+- `ActivationKey`: `str`
+
 Optional fields:
+
+- `AgentName`: `str`
+- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+- `VpcEndpointId`: `str`
+- `SubnetArns`: `List`\[`str`\]
+- `SecurityGroupArns`: `List`\[`str`\]
+
+## CreateAgentResponseResponseTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import CreateAgentResponseResponseTypeDef
+```
+
+Required fields:
+
+- `AgentArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateLocationEfsRequestTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import CreateLocationEfsRequestTypeDef
+```
+
+Required fields:
+
+- `EfsFilesystemArn`: `str`
+- `Ec2Config`: [Ec2ConfigTypeDef](./type_defs.md#ec2configtypedef)
+
+Optional fields:
+
+- `Subdirectory`: `str`
+- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+
+## CreateLocationEfsResponseResponseTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import CreateLocationEfsResponseResponseTypeDef
+```
+
+Required fields:
+
+- `LocationArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateLocationFsxWindowsRequestTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import CreateLocationFsxWindowsRequestTypeDef
+```
+
+Required fields:
+
+- `FsxFilesystemArn`: `str`
+- `SecurityGroupArns`: `List`\[`str`\]
+- `User`: `str`
+- `Password`: `str`
+
+Optional fields:
+
+- `Subdirectory`: `str`
+- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+- `Domain`: `str`
+
+## CreateLocationFsxWindowsResponseResponseTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import CreateLocationFsxWindowsResponseResponseTypeDef
+```
+
+Required fields:
+
+- `LocationArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateLocationNfsRequestTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import CreateLocationNfsRequestTypeDef
+```
+
+Required fields:
+
+- `Subdirectory`: `str`
+- `ServerHostname`: `str`
+- `OnPremConfig`: [OnPremConfigTypeDef](./type_defs.md#onpremconfigtypedef)
+
+Optional fields:
+
+- `MountOptions`:
+  [NfsMountOptionsTypeDef](./type_defs.md#nfsmountoptionstypedef)
+- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+
+## CreateLocationNfsResponseResponseTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import CreateLocationNfsResponseResponseTypeDef
+```
+
+Required fields:
+
+- `LocationArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateLocationObjectStorageRequestTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import CreateLocationObjectStorageRequestTypeDef
+```
+
+Required fields:
+
+- `ServerHostname`: `str`
+- `BucketName`: `str`
+- `AgentArns`: `List`\[`str`\]
+
+Optional fields:
+
+- `ServerPort`: `int`
+- `ServerProtocol`:
+  [ObjectStorageServerProtocolType](./literals.md#objectstorageserverprotocoltype)
+- `Subdirectory`: `str`
+- `AccessKey`: `str`
+- `SecretKey`: `str`
+- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+
+## CreateLocationObjectStorageResponseResponseTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import CreateLocationObjectStorageResponseResponseTypeDef
+```
+
+Required fields:
+
+- `LocationArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateLocationS3RequestTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import CreateLocationS3RequestTypeDef
+```
+
+Required fields:
+
+- `S3BucketArn`: `str`
+- `S3Config`: [S3ConfigTypeDef](./type_defs.md#s3configtypedef)
+
+Optional fields:
+
+- `Subdirectory`: `str`
+- `S3StorageClass`: [S3StorageClassType](./literals.md#s3storageclasstype)
+- `AgentArns`: `List`\[`str`\]
+- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+
+## CreateLocationS3ResponseResponseTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import CreateLocationS3ResponseResponseTypeDef
+```
+
+Required fields:
+
+- `LocationArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateLocationSmbRequestTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import CreateLocationSmbRequestTypeDef
+```
+
+Required fields:
+
+- `Subdirectory`: `str`
+- `ServerHostname`: `str`
+- `User`: `str`
+- `Password`: `str`
+- `AgentArns`: `List`\[`str`\]
+
+Optional fields:
+
+- `Domain`: `str`
+- `MountOptions`:
+  [SmbMountOptionsTypeDef](./type_defs.md#smbmountoptionstypedef)
+- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+
+## CreateLocationSmbResponseResponseTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import CreateLocationSmbResponseResponseTypeDef
+```
+
+Required fields:
+
+- `LocationArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateTaskRequestTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import CreateTaskRequestTypeDef
+```
+
+Required fields:
+
+- `SourceLocationArn`: `str`
+- `DestinationLocationArn`: `str`
+
+Optional fields:
+
+- `CloudWatchLogGroupArn`: `str`
+- `Name`: `str`
+- `Options`: [OptionsTypeDef](./type_defs.md#optionstypedef)
+- `Excludes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
+- `Schedule`: [TaskScheduleTypeDef](./type_defs.md#taskscheduletypedef)
+- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+
+## CreateTaskResponseResponseTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import CreateTaskResponseResponseTypeDef
+```
+
+Required fields:
+
+- `TaskArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteAgentRequestTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import DeleteAgentRequestTypeDef
+```
+
+Required fields:
 
 - `AgentArn`: `str`
 
-## CreateLocationEfsResponseTypeDef
+## DeleteLocationRequestTypeDef
 
 ```python
-from mypy_boto3_datasync.type_defs import CreateLocationEfsResponseTypeDef
+from mypy_boto3_datasync.type_defs import DeleteLocationRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `LocationArn`: `str`
 
-## CreateLocationFsxWindowsResponseTypeDef
+## DeleteTaskRequestTypeDef
 
 ```python
-from mypy_boto3_datasync.type_defs import CreateLocationFsxWindowsResponseTypeDef
+from mypy_boto3_datasync.type_defs import DeleteTaskRequestTypeDef
 ```
 
-Optional fields:
-
-- `LocationArn`: `str`
-
-## CreateLocationNfsResponseTypeDef
-
-```python
-from mypy_boto3_datasync.type_defs import CreateLocationNfsResponseTypeDef
-```
-
-Optional fields:
-
-- `LocationArn`: `str`
-
-## CreateLocationObjectStorageResponseTypeDef
-
-```python
-from mypy_boto3_datasync.type_defs import CreateLocationObjectStorageResponseTypeDef
-```
-
-Optional fields:
-
-- `LocationArn`: `str`
-
-## CreateLocationS3ResponseTypeDef
-
-```python
-from mypy_boto3_datasync.type_defs import CreateLocationS3ResponseTypeDef
-```
-
-Optional fields:
-
-- `LocationArn`: `str`
-
-## CreateLocationSmbResponseTypeDef
-
-```python
-from mypy_boto3_datasync.type_defs import CreateLocationSmbResponseTypeDef
-```
-
-Optional fields:
-
-- `LocationArn`: `str`
-
-## CreateTaskResponseTypeDef
-
-```python
-from mypy_boto3_datasync.type_defs import CreateTaskResponseTypeDef
-```
-
-Optional fields:
+Required fields:
 
 - `TaskArn`: `str`
 
-## DescribeAgentResponseTypeDef
+## DescribeAgentRequestTypeDef
 
 ```python
-from mypy_boto3_datasync.type_defs import DescribeAgentResponseTypeDef
+from mypy_boto3_datasync.type_defs import DescribeAgentRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AgentArn`: `str`
+
+## DescribeAgentResponseResponseTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import DescribeAgentResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AgentArn`: `str`
 - `Name`: `str`
@@ -158,27 +412,51 @@ Optional fields:
 - `EndpointType`: [EndpointTypeType](./literals.md#endpointtypetype)
 - `PrivateLinkConfig`:
   [PrivateLinkConfigTypeDef](./type_defs.md#privatelinkconfigtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLocationEfsResponseTypeDef
+## DescribeLocationEfsRequestTypeDef
 
 ```python
-from mypy_boto3_datasync.type_defs import DescribeLocationEfsResponseTypeDef
+from mypy_boto3_datasync.type_defs import DescribeLocationEfsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `LocationArn`: `str`
+
+## DescribeLocationEfsResponseResponseTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import DescribeLocationEfsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `LocationArn`: `str`
 - `LocationUri`: `str`
 - `Ec2Config`: [Ec2ConfigTypeDef](./type_defs.md#ec2configtypedef)
 - `CreationTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLocationFsxWindowsResponseTypeDef
+## DescribeLocationFsxWindowsRequestTypeDef
 
 ```python
-from mypy_boto3_datasync.type_defs import DescribeLocationFsxWindowsResponseTypeDef
+from mypy_boto3_datasync.type_defs import DescribeLocationFsxWindowsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `LocationArn`: `str`
+
+## DescribeLocationFsxWindowsResponseResponseTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import DescribeLocationFsxWindowsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `LocationArn`: `str`
 - `LocationUri`: `str`
@@ -186,14 +464,26 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `User`: `str`
 - `Domain`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLocationNfsResponseTypeDef
+## DescribeLocationNfsRequestTypeDef
 
 ```python
-from mypy_boto3_datasync.type_defs import DescribeLocationNfsResponseTypeDef
+from mypy_boto3_datasync.type_defs import DescribeLocationNfsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `LocationArn`: `str`
+
+## DescribeLocationNfsResponseResponseTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import DescribeLocationNfsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `LocationArn`: `str`
 - `LocationUri`: `str`
@@ -201,14 +491,26 @@ Optional fields:
 - `MountOptions`:
   [NfsMountOptionsTypeDef](./type_defs.md#nfsmountoptionstypedef)
 - `CreationTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLocationObjectStorageResponseTypeDef
+## DescribeLocationObjectStorageRequestTypeDef
 
 ```python
-from mypy_boto3_datasync.type_defs import DescribeLocationObjectStorageResponseTypeDef
+from mypy_boto3_datasync.type_defs import DescribeLocationObjectStorageRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `LocationArn`: `str`
+
+## DescribeLocationObjectStorageResponseResponseTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import DescribeLocationObjectStorageResponseResponseTypeDef
+```
+
+Required fields:
 
 - `LocationArn`: `str`
 - `LocationUri`: `str`
@@ -218,14 +520,26 @@ Optional fields:
   [ObjectStorageServerProtocolType](./literals.md#objectstorageserverprotocoltype)
 - `AgentArns`: `List`\[`str`\]
 - `CreationTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLocationS3ResponseTypeDef
+## DescribeLocationS3RequestTypeDef
 
 ```python
-from mypy_boto3_datasync.type_defs import DescribeLocationS3ResponseTypeDef
+from mypy_boto3_datasync.type_defs import DescribeLocationS3RequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `LocationArn`: `str`
+
+## DescribeLocationS3ResponseResponseTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import DescribeLocationS3ResponseResponseTypeDef
+```
+
+Required fields:
 
 - `LocationArn`: `str`
 - `LocationUri`: `str`
@@ -233,14 +547,26 @@ Optional fields:
 - `S3Config`: [S3ConfigTypeDef](./type_defs.md#s3configtypedef)
 - `AgentArns`: `List`\[`str`\]
 - `CreationTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLocationSmbResponseTypeDef
+## DescribeLocationSmbRequestTypeDef
 
 ```python
-from mypy_boto3_datasync.type_defs import DescribeLocationSmbResponseTypeDef
+from mypy_boto3_datasync.type_defs import DescribeLocationSmbRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `LocationArn`: `str`
+
+## DescribeLocationSmbResponseResponseTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import DescribeLocationSmbResponseResponseTypeDef
+```
+
+Required fields:
 
 - `LocationArn`: `str`
 - `LocationUri`: `str`
@@ -250,14 +576,26 @@ Optional fields:
 - `MountOptions`:
   [SmbMountOptionsTypeDef](./type_defs.md#smbmountoptionstypedef)
 - `CreationTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTaskExecutionResponseTypeDef
+## DescribeTaskExecutionRequestTypeDef
 
 ```python
-from mypy_boto3_datasync.type_defs import DescribeTaskExecutionResponseTypeDef
+from mypy_boto3_datasync.type_defs import DescribeTaskExecutionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `TaskExecutionArn`: `str`
+
+## DescribeTaskExecutionResponseResponseTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import DescribeTaskExecutionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `TaskExecutionArn`: `str`
 - `Status`: [TaskExecutionStatusType](./literals.md#taskexecutionstatustype)
@@ -272,14 +610,26 @@ Optional fields:
 - `BytesTransferred`: `int`
 - `Result`:
   [TaskExecutionResultDetailTypeDef](./type_defs.md#taskexecutionresultdetailtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTaskResponseTypeDef
+## DescribeTaskRequestTypeDef
 
 ```python
-from mypy_boto3_datasync.type_defs import DescribeTaskResponseTypeDef
+from mypy_boto3_datasync.type_defs import DescribeTaskRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `TaskArn`: `str`
+
+## DescribeTaskResponseResponseTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import DescribeTaskResponseResponseTypeDef
+```
+
+Required fields:
 
 - `TaskArn`: `str`
 - `Status`: [TaskStatusType](./literals.md#taskstatustype)
@@ -296,6 +646,8 @@ Optional fields:
 - `ErrorCode`: `str`
 - `ErrorDetail`: `str`
 - `CreationTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## Ec2ConfigTypeDef
 
@@ -320,64 +672,137 @@ Optional fields:
   [FilterTypeType](./literals.md#filtertypetype))
 - `Value`: `str`
 
-## ListAgentsResponseTypeDef
+## ListAgentsRequestTypeDef
 
 ```python
-from mypy_boto3_datasync.type_defs import ListAgentsResponseTypeDef
+from mypy_boto3_datasync.type_defs import ListAgentsRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListAgentsResponseResponseTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import ListAgentsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Agents`:
   `List`\[[AgentListEntryTypeDef](./type_defs.md#agentlistentrytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListLocationsResponseTypeDef
+## ListLocationsRequestTypeDef
 
 ```python
-from mypy_boto3_datasync.type_defs import ListLocationsResponseTypeDef
+from mypy_boto3_datasync.type_defs import ListLocationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`:
+  `List`\[[LocationFilterTypeDef](./type_defs.md#locationfiltertypedef)\]
+
+## ListLocationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import ListLocationsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Locations`:
   `List`\[[LocationListEntryTypeDef](./type_defs.md#locationlistentrytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_datasync.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_datasync.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
+Required fields:
+
+- `ResourceArn`: `str`
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTaskExecutionsResponseTypeDef
+## ListTaskExecutionsRequestTypeDef
 
 ```python
-from mypy_boto3_datasync.type_defs import ListTaskExecutionsResponseTypeDef
+from mypy_boto3_datasync.type_defs import ListTaskExecutionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `TaskArn`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListTaskExecutionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import ListTaskExecutionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `TaskExecutions`:
   `List`\[[TaskExecutionListEntryTypeDef](./type_defs.md#taskexecutionlistentrytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTasksResponseTypeDef
+## ListTasksRequestTypeDef
 
 ```python
-from mypy_boto3_datasync.type_defs import ListTasksResponseTypeDef
+from mypy_boto3_datasync.type_defs import ListTasksRequestTypeDef
 ```
 
 Optional fields:
 
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`: `List`\[[TaskFilterTypeDef](./type_defs.md#taskfiltertypedef)\]
+
+## ListTasksResponseResponseTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import ListTasksResponseResponseTypeDef
+```
+
+Required fields:
+
 - `Tasks`:
   `List`\[[TaskListEntryTypeDef](./type_defs.md#tasklistentrytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LocationFilterTypeDef
 
@@ -473,6 +898,20 @@ Optional fields:
 - `SubnetArns`: `List`\[`str`\]
 - `SecurityGroupArns`: `List`\[`str`\]
 
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
 ## S3ConfigTypeDef
 
 ```python
@@ -493,15 +932,32 @@ Optional fields:
 
 - `Version`: [SmbVersionType](./literals.md#smbversiontype)
 
-## StartTaskExecutionResponseTypeDef
+## StartTaskExecutionRequestTypeDef
 
 ```python
-from mypy_boto3_datasync.type_defs import StartTaskExecutionResponseTypeDef
+from mypy_boto3_datasync.type_defs import StartTaskExecutionRequestTypeDef
 ```
+
+Required fields:
+
+- `TaskArn`: `str`
 
 Optional fields:
 
+- `OverrideOptions`: [OptionsTypeDef](./type_defs.md#optionstypedef)
+- `Includes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
+
+## StartTaskExecutionResponseResponseTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import StartTaskExecutionResponseResponseTypeDef
+```
+
+Required fields:
+
 - `TaskExecutionArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## TagListEntryTypeDef
 
@@ -516,6 +972,17 @@ Required fields:
 Optional fields:
 
 - `Value`: `str`
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
 ## TaskExecutionListEntryTypeDef
 
@@ -579,3 +1046,114 @@ from mypy_boto3_datasync.type_defs import TaskScheduleTypeDef
 Required fields:
 
 - `ScheduleExpression`: `str`
+
+## UntagResourceRequestTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `Keys`: `List`\[`str`\]
+
+## UpdateAgentRequestTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import UpdateAgentRequestTypeDef
+```
+
+Required fields:
+
+- `AgentArn`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+
+## UpdateLocationNfsRequestTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import UpdateLocationNfsRequestTypeDef
+```
+
+Required fields:
+
+- `LocationArn`: `str`
+
+Optional fields:
+
+- `Subdirectory`: `str`
+- `OnPremConfig`: [OnPremConfigTypeDef](./type_defs.md#onpremconfigtypedef)
+- `MountOptions`:
+  [NfsMountOptionsTypeDef](./type_defs.md#nfsmountoptionstypedef)
+
+## UpdateLocationObjectStorageRequestTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import UpdateLocationObjectStorageRequestTypeDef
+```
+
+Required fields:
+
+- `LocationArn`: `str`
+
+Optional fields:
+
+- `ServerPort`: `int`
+- `ServerProtocol`:
+  [ObjectStorageServerProtocolType](./literals.md#objectstorageserverprotocoltype)
+- `Subdirectory`: `str`
+- `AccessKey`: `str`
+- `SecretKey`: `str`
+- `AgentArns`: `List`\[`str`\]
+
+## UpdateLocationSmbRequestTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import UpdateLocationSmbRequestTypeDef
+```
+
+Required fields:
+
+- `LocationArn`: `str`
+
+Optional fields:
+
+- `Subdirectory`: `str`
+- `User`: `str`
+- `Domain`: `str`
+- `Password`: `str`
+- `AgentArns`: `List`\[`str`\]
+- `MountOptions`:
+  [SmbMountOptionsTypeDef](./type_defs.md#smbmountoptionstypedef)
+
+## UpdateTaskExecutionRequestTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import UpdateTaskExecutionRequestTypeDef
+```
+
+Required fields:
+
+- `TaskExecutionArn`: `str`
+- `Options`: [OptionsTypeDef](./type_defs.md#optionstypedef)
+
+## UpdateTaskRequestTypeDef
+
+```python
+from mypy_boto3_datasync.type_defs import UpdateTaskRequestTypeDef
+```
+
+Required fields:
+
+- `TaskArn`: `str`
+
+Optional fields:
+
+- `Options`: [OptionsTypeDef](./type_defs.md#optionstypedef)
+- `Excludes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
+- `Schedule`: [TaskScheduleTypeDef](./type_defs.md#taskscheduletypedef)
+- `Name`: `str`
+- `CloudWatchLogGroupArn`: `str`

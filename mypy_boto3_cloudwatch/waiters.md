@@ -25,7 +25,7 @@ def get_alarm_exists_waiter() -> AlarmExistsWaiter:
 ```
 
 Boto3 documentation:
-[CloudWatch.Waiter.alarm_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Waiter.alarm_exists)
+[CloudWatch.Waiter.alarm_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Waiter.AlarmExists)
 
 Arguments for `AlarmExistsWaiter.wait` method:
 
@@ -55,7 +55,7 @@ def get_composite_alarm_exists_waiter() -> CompositeAlarmExistsWaiter:
 ```
 
 Boto3 documentation:
-[CloudWatch.Waiter.composite_alarm_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Waiter.composite_alarm_exists)
+[CloudWatch.Waiter.composite_alarm_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Waiter.CompositeAlarmExists)
 
 Arguments for `CompositeAlarmExistsWaiter.wait` method:
 

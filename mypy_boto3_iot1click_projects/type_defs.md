@@ -8,41 +8,149 @@ type annotations stubs module
 [mypy_boto3_iot1click_projects](https://pypi.org/project/mypy-boto3-iot1click-projects/).
 
 - [Typed dictionaries for boto3 IoT1ClickProjects module](#typed-dictionaries-for-boto3-iot1clickprojects-module)
-  - [DescribePlacementResponseTypeDef](#describeplacementresponsetypedef)
-  - [DescribeProjectResponseTypeDef](#describeprojectresponsetypedef)
+  - [AssociateDeviceWithPlacementRequestTypeDef](#associatedevicewithplacementrequesttypedef)
+  - [CreatePlacementRequestTypeDef](#createplacementrequesttypedef)
+  - [CreateProjectRequestTypeDef](#createprojectrequesttypedef)
+  - [DeletePlacementRequestTypeDef](#deleteplacementrequesttypedef)
+  - [DeleteProjectRequestTypeDef](#deleteprojectrequesttypedef)
+  - [DescribePlacementRequestTypeDef](#describeplacementrequesttypedef)
+  - [DescribePlacementResponseResponseTypeDef](#describeplacementresponseresponsetypedef)
+  - [DescribeProjectRequestTypeDef](#describeprojectrequesttypedef)
+  - [DescribeProjectResponseResponseTypeDef](#describeprojectresponseresponsetypedef)
   - [DeviceTemplateTypeDef](#devicetemplatetypedef)
-  - [GetDevicesInPlacementResponseTypeDef](#getdevicesinplacementresponsetypedef)
-  - [ListPlacementsResponseTypeDef](#listplacementsresponsetypedef)
-  - [ListProjectsResponseTypeDef](#listprojectsresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [DisassociateDeviceFromPlacementRequestTypeDef](#disassociatedevicefromplacementrequesttypedef)
+  - [GetDevicesInPlacementRequestTypeDef](#getdevicesinplacementrequesttypedef)
+  - [GetDevicesInPlacementResponseResponseTypeDef](#getdevicesinplacementresponseresponsetypedef)
+  - [ListPlacementsRequestTypeDef](#listplacementsrequesttypedef)
+  - [ListPlacementsResponseResponseTypeDef](#listplacementsresponseresponsetypedef)
+  - [ListProjectsRequestTypeDef](#listprojectsrequesttypedef)
+  - [ListProjectsResponseResponseTypeDef](#listprojectsresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PlacementDescriptionTypeDef](#placementdescriptiontypedef)
   - [PlacementSummaryTypeDef](#placementsummarytypedef)
   - [PlacementTemplateTypeDef](#placementtemplatetypedef)
   - [ProjectDescriptionTypeDef](#projectdescriptiontypedef)
   - [ProjectSummaryTypeDef](#projectsummarytypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdatePlacementRequestTypeDef](#updateplacementrequesttypedef)
+  - [UpdateProjectRequestTypeDef](#updateprojectrequesttypedef)
 
-## DescribePlacementResponseTypeDef
+## AssociateDeviceWithPlacementRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_projects.type_defs import DescribePlacementResponseTypeDef
+from mypy_boto3_iot1click_projects.type_defs import AssociateDeviceWithPlacementRequestTypeDef
+```
+
+Required fields:
+
+- `projectName`: `str`
+- `placementName`: `str`
+- `deviceId`: `str`
+- `deviceTemplateName`: `str`
+
+## CreatePlacementRequestTypeDef
+
+```python
+from mypy_boto3_iot1click_projects.type_defs import CreatePlacementRequestTypeDef
+```
+
+Required fields:
+
+- `placementName`: `str`
+- `projectName`: `str`
+
+Optional fields:
+
+- `attributes`: `Dict`\[`str`, `str`\]
+
+## CreateProjectRequestTypeDef
+
+```python
+from mypy_boto3_iot1click_projects.type_defs import CreateProjectRequestTypeDef
+```
+
+Required fields:
+
+- `projectName`: `str`
+
+Optional fields:
+
+- `description`: `str`
+- `placementTemplate`:
+  [PlacementTemplateTypeDef](./type_defs.md#placementtemplatetypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+
+## DeletePlacementRequestTypeDef
+
+```python
+from mypy_boto3_iot1click_projects.type_defs import DeletePlacementRequestTypeDef
+```
+
+Required fields:
+
+- `placementName`: `str`
+- `projectName`: `str`
+
+## DeleteProjectRequestTypeDef
+
+```python
+from mypy_boto3_iot1click_projects.type_defs import DeleteProjectRequestTypeDef
+```
+
+Required fields:
+
+- `projectName`: `str`
+
+## DescribePlacementRequestTypeDef
+
+```python
+from mypy_boto3_iot1click_projects.type_defs import DescribePlacementRequestTypeDef
+```
+
+Required fields:
+
+- `placementName`: `str`
+- `projectName`: `str`
+
+## DescribePlacementResponseResponseTypeDef
+
+```python
+from mypy_boto3_iot1click_projects.type_defs import DescribePlacementResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `placement`:
   [PlacementDescriptionTypeDef](./type_defs.md#placementdescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeProjectResponseTypeDef
+## DescribeProjectRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_projects.type_defs import DescribeProjectResponseTypeDef
+from mypy_boto3_iot1click_projects.type_defs import DescribeProjectRequestTypeDef
+```
+
+Required fields:
+
+- `projectName`: `str`
+
+## DescribeProjectResponseResponseTypeDef
+
+```python
+from mypy_boto3_iot1click_projects.type_defs import DescribeProjectResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `project`:
   [ProjectDescriptionTypeDef](./type_defs.md#projectdescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DeviceTemplateTypeDef
 
@@ -55,55 +163,116 @@ Optional fields:
 - `deviceType`: `str`
 - `callbackOverrides`: `Dict`\[`str`, `str`\]
 
-## GetDevicesInPlacementResponseTypeDef
+## DisassociateDeviceFromPlacementRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_projects.type_defs import GetDevicesInPlacementResponseTypeDef
+from mypy_boto3_iot1click_projects.type_defs import DisassociateDeviceFromPlacementRequestTypeDef
+```
+
+Required fields:
+
+- `projectName`: `str`
+- `placementName`: `str`
+- `deviceTemplateName`: `str`
+
+## GetDevicesInPlacementRequestTypeDef
+
+```python
+from mypy_boto3_iot1click_projects.type_defs import GetDevicesInPlacementRequestTypeDef
+```
+
+Required fields:
+
+- `projectName`: `str`
+- `placementName`: `str`
+
+## GetDevicesInPlacementResponseResponseTypeDef
+
+```python
+from mypy_boto3_iot1click_projects.type_defs import GetDevicesInPlacementResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `devices`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPlacementsResponseTypeDef
+## ListPlacementsRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_projects.type_defs import ListPlacementsResponseTypeDef
+from mypy_boto3_iot1click_projects.type_defs import ListPlacementsRequestTypeDef
+```
+
+Required fields:
+
+- `projectName`: `str`
+
+Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListPlacementsResponseResponseTypeDef
+
+```python
+from mypy_boto3_iot1click_projects.type_defs import ListPlacementsResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `placements`:
   `List`\[[PlacementSummaryTypeDef](./type_defs.md#placementsummarytypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListProjectsRequestTypeDef
+
+```python
+from mypy_boto3_iot1click_projects.type_defs import ListProjectsRequestTypeDef
+```
 
 Optional fields:
 
 - `nextToken`: `str`
+- `maxResults`: `int`
 
-## ListProjectsResponseTypeDef
+## ListProjectsResponseResponseTypeDef
 
 ```python
-from mypy_boto3_iot1click_projects.type_defs import ListProjectsResponseTypeDef
+from mypy_boto3_iot1click_projects.type_defs import ListProjectsResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `projects`:
   `List`\[[ProjectSummaryTypeDef](./type_defs.md#projectsummarytypedef)\]
-
-Optional fields:
-
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_iot1click_projects.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_iot1click_projects.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `resourceArn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_iot1click_projects.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -192,3 +361,70 @@ Optional fields:
 
 - `arn`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_iot1click_projects.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_iot1click_projects.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## UntagResourceRequestTypeDef
+
+```python
+from mypy_boto3_iot1click_projects.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tagKeys`: `List`\[`str`\]
+
+## UpdatePlacementRequestTypeDef
+
+```python
+from mypy_boto3_iot1click_projects.type_defs import UpdatePlacementRequestTypeDef
+```
+
+Required fields:
+
+- `placementName`: `str`
+- `projectName`: `str`
+
+Optional fields:
+
+- `attributes`: `Dict`\[`str`, `str`\]
+
+## UpdateProjectRequestTypeDef
+
+```python
+from mypy_boto3_iot1click_projects.type_defs import UpdateProjectRequestTypeDef
+```
+
+Required fields:
+
+- `projectName`: `str`
+
+Optional fields:
+
+- `description`: `str`
+- `placementTemplate`:
+  [PlacementTemplateTypeDef](./type_defs.md#placementtemplatetypedef)

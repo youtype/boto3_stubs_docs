@@ -62,10 +62,16 @@ Exceptions:
 
 ### associate_member_account
 
+Associates a specified AWS account with Amazon Macie Classic as a member
+account.
+
 Type annotations for `boto3.client("macie").associate_member_account` method.
 
 Boto3 documentation:
 [Macie.Client.associate_member_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.associate_member_account)
+
+Arguments mapping described in
+[AssociateMemberAccountRequestTypeDef](./type_defs.md#associatememberaccountrequesttypedef).
 
 Keyword-only arguments:
 
@@ -73,10 +79,16 @@ Keyword-only arguments:
 
 ### associate_s3_resources
 
+Associates specified S3 resources with Amazon Macie Classic for monitoring and
+data classification.
+
 Type annotations for `boto3.client("macie").associate_s3_resources` method.
 
 Boto3 documentation:
 [Macie.Client.associate_s3_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.associate_s3_resources)
+
+Arguments mapping described in
+[AssociateS3ResourcesRequestTypeDef](./type_defs.md#associates3resourcesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -86,9 +98,11 @@ Keyword-only arguments:
 - `memberAccountId`: `str`
 
 Returns
-[AssociateS3ResourcesResultTypeDef](./type_defs.md#associates3resourcesresulttypedef).
+[AssociateS3ResourcesResultResponseTypeDef](./type_defs.md#associates3resourcesresultresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("macie").can_paginate` method.
 
@@ -103,11 +117,16 @@ Returns `bool`.
 
 ### disassociate_member_account
 
+Removes the specified member account from Amazon Macie Classic.
+
 Type annotations for `boto3.client("macie").disassociate_member_account`
 method.
 
 Boto3 documentation:
 [Macie.Client.disassociate_member_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.disassociate_member_account)
+
+Arguments mapping described in
+[DisassociateMemberAccountRequestTypeDef](./type_defs.md#disassociatememberaccountrequesttypedef).
 
 Keyword-only arguments:
 
@@ -115,10 +134,15 @@ Keyword-only arguments:
 
 ### disassociate_s3_resources
 
+Removes specified S3 resources from being monitored by Amazon Macie Classic.
+
 Type annotations for `boto3.client("macie").disassociate_s3_resources` method.
 
 Boto3 documentation:
 [Macie.Client.disassociate_s3_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.disassociate_s3_resources)
+
+Arguments mapping described in
+[DisassociateS3ResourcesRequestTypeDef](./type_defs.md#disassociates3resourcesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -127,9 +151,11 @@ Keyword-only arguments:
 - `memberAccountId`: `str`
 
 Returns
-[DisassociateS3ResourcesResultTypeDef](./type_defs.md#disassociates3resourcesresulttypedef).
+[DisassociateS3ResourcesResultResponseTypeDef](./type_defs.md#disassociates3resourcesresultresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("macie").generate_presigned_url` method.
 
@@ -147,10 +173,16 @@ Returns `str`.
 
 ### list_member_accounts
 
+Lists all Amazon Macie Classic member accounts for the current Macie Classic
+administrator account.
+
 Type annotations for `boto3.client("macie").list_member_accounts` method.
 
 Boto3 documentation:
 [Macie.Client.list_member_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.list_member_accounts)
+
+Arguments mapping described in
+[ListMemberAccountsRequestTypeDef](./type_defs.md#listmemberaccountsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -158,14 +190,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListMemberAccountsResultTypeDef](./type_defs.md#listmemberaccountsresulttypedef).
+[ListMemberAccountsResultResponseTypeDef](./type_defs.md#listmemberaccountsresultresponsetypedef).
 
 ### list_s3_resources
+
+Lists all the S3 resources associated with Amazon Macie Classic.
 
 Type annotations for `boto3.client("macie").list_s3_resources` method.
 
 Boto3 documentation:
 [Macie.Client.list_s3_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.list_s3_resources)
+
+Arguments mapping described in
+[ListS3ResourcesRequestTypeDef](./type_defs.md#lists3resourcesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -174,14 +211,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListS3ResourcesResultTypeDef](./type_defs.md#lists3resourcesresulttypedef).
+[ListS3ResourcesResultResponseTypeDef](./type_defs.md#lists3resourcesresultresponsetypedef).
 
 ### update_s3_resources
+
+Updates the classification types for the specified S3 resources.
 
 Type annotations for `boto3.client("macie").update_s3_resources` method.
 
 Boto3 documentation:
 [Macie.Client.update_s3_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.update_s3_resources)
+
+Arguments mapping described in
+[UpdateS3ResourcesRequestTypeDef](./type_defs.md#updates3resourcesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -191,7 +233,7 @@ Keyword-only arguments:
 - `memberAccountId`: `str`
 
 Returns
-[UpdateS3ResourcesResultTypeDef](./type_defs.md#updates3resourcesresulttypedef).
+[UpdateS3ResourcesResultResponseTypeDef](./type_defs.md#updates3resourcesresultresponsetypedef).
 
 ### get_paginator
 

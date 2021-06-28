@@ -14,28 +14,60 @@ type annotations stubs module
   - [ActivityMetricsTypeDef](#activitymetricstypedef)
   - [AwsLambdaTransformationTypeDef](#awslambdatransformationtypedef)
   - [BucketLevelTypeDef](#bucketleveltypedef)
-  - [CreateAccessPointForObjectLambdaResultTypeDef](#createaccesspointforobjectlambdaresulttypedef)
-  - [CreateAccessPointResultTypeDef](#createaccesspointresulttypedef)
+  - [CreateAccessPointForObjectLambdaRequestTypeDef](#createaccesspointforobjectlambdarequesttypedef)
+  - [CreateAccessPointForObjectLambdaResultResponseTypeDef](#createaccesspointforobjectlambdaresultresponsetypedef)
+  - [CreateAccessPointRequestTypeDef](#createaccesspointrequesttypedef)
+  - [CreateAccessPointResultResponseTypeDef](#createaccesspointresultresponsetypedef)
   - [CreateBucketConfigurationTypeDef](#createbucketconfigurationtypedef)
-  - [CreateBucketResultTypeDef](#createbucketresulttypedef)
-  - [CreateJobResultTypeDef](#createjobresulttypedef)
-  - [DescribeJobResultTypeDef](#describejobresulttypedef)
+  - [CreateBucketRequestTypeDef](#createbucketrequesttypedef)
+  - [CreateBucketResultResponseTypeDef](#createbucketresultresponsetypedef)
+  - [CreateJobRequestTypeDef](#createjobrequesttypedef)
+  - [CreateJobResultResponseTypeDef](#createjobresultresponsetypedef)
+  - [DeleteAccessPointForObjectLambdaRequestTypeDef](#deleteaccesspointforobjectlambdarequesttypedef)
+  - [DeleteAccessPointPolicyForObjectLambdaRequestTypeDef](#deleteaccesspointpolicyforobjectlambdarequesttypedef)
+  - [DeleteAccessPointPolicyRequestTypeDef](#deleteaccesspointpolicyrequesttypedef)
+  - [DeleteAccessPointRequestTypeDef](#deleteaccesspointrequesttypedef)
+  - [DeleteBucketLifecycleConfigurationRequestTypeDef](#deletebucketlifecycleconfigurationrequesttypedef)
+  - [DeleteBucketPolicyRequestTypeDef](#deletebucketpolicyrequesttypedef)
+  - [DeleteBucketRequestTypeDef](#deletebucketrequesttypedef)
+  - [DeleteBucketTaggingRequestTypeDef](#deletebuckettaggingrequesttypedef)
+  - [DeleteJobTaggingRequestTypeDef](#deletejobtaggingrequesttypedef)
+  - [DeletePublicAccessBlockRequestTypeDef](#deletepublicaccessblockrequesttypedef)
+  - [DeleteStorageLensConfigurationRequestTypeDef](#deletestoragelensconfigurationrequesttypedef)
+  - [DeleteStorageLensConfigurationTaggingRequestTypeDef](#deletestoragelensconfigurationtaggingrequesttypedef)
+  - [DescribeJobRequestTypeDef](#describejobrequesttypedef)
+  - [DescribeJobResultResponseTypeDef](#describejobresultresponsetypedef)
   - [ExcludeTypeDef](#excludetypedef)
-  - [GetAccessPointConfigurationForObjectLambdaResultTypeDef](#getaccesspointconfigurationforobjectlambdaresulttypedef)
-  - [GetAccessPointForObjectLambdaResultTypeDef](#getaccesspointforobjectlambdaresulttypedef)
-  - [GetAccessPointPolicyForObjectLambdaResultTypeDef](#getaccesspointpolicyforobjectlambdaresulttypedef)
-  - [GetAccessPointPolicyResultTypeDef](#getaccesspointpolicyresulttypedef)
-  - [GetAccessPointPolicyStatusForObjectLambdaResultTypeDef](#getaccesspointpolicystatusforobjectlambdaresulttypedef)
-  - [GetAccessPointPolicyStatusResultTypeDef](#getaccesspointpolicystatusresulttypedef)
-  - [GetAccessPointResultTypeDef](#getaccesspointresulttypedef)
-  - [GetBucketLifecycleConfigurationResultTypeDef](#getbucketlifecycleconfigurationresulttypedef)
-  - [GetBucketPolicyResultTypeDef](#getbucketpolicyresulttypedef)
-  - [GetBucketResultTypeDef](#getbucketresulttypedef)
-  - [GetBucketTaggingResultTypeDef](#getbuckettaggingresulttypedef)
-  - [GetJobTaggingResultTypeDef](#getjobtaggingresulttypedef)
-  - [GetPublicAccessBlockOutputTypeDef](#getpublicaccessblockoutputtypedef)
-  - [GetStorageLensConfigurationResultTypeDef](#getstoragelensconfigurationresulttypedef)
-  - [GetStorageLensConfigurationTaggingResultTypeDef](#getstoragelensconfigurationtaggingresulttypedef)
+  - [GetAccessPointConfigurationForObjectLambdaRequestTypeDef](#getaccesspointconfigurationforobjectlambdarequesttypedef)
+  - [GetAccessPointConfigurationForObjectLambdaResultResponseTypeDef](#getaccesspointconfigurationforobjectlambdaresultresponsetypedef)
+  - [GetAccessPointForObjectLambdaRequestTypeDef](#getaccesspointforobjectlambdarequesttypedef)
+  - [GetAccessPointForObjectLambdaResultResponseTypeDef](#getaccesspointforobjectlambdaresultresponsetypedef)
+  - [GetAccessPointPolicyForObjectLambdaRequestTypeDef](#getaccesspointpolicyforobjectlambdarequesttypedef)
+  - [GetAccessPointPolicyForObjectLambdaResultResponseTypeDef](#getaccesspointpolicyforobjectlambdaresultresponsetypedef)
+  - [GetAccessPointPolicyRequestTypeDef](#getaccesspointpolicyrequesttypedef)
+  - [GetAccessPointPolicyResultResponseTypeDef](#getaccesspointpolicyresultresponsetypedef)
+  - [GetAccessPointPolicyStatusForObjectLambdaRequestTypeDef](#getaccesspointpolicystatusforobjectlambdarequesttypedef)
+  - [GetAccessPointPolicyStatusForObjectLambdaResultResponseTypeDef](#getaccesspointpolicystatusforobjectlambdaresultresponsetypedef)
+  - [GetAccessPointPolicyStatusRequestTypeDef](#getaccesspointpolicystatusrequesttypedef)
+  - [GetAccessPointPolicyStatusResultResponseTypeDef](#getaccesspointpolicystatusresultresponsetypedef)
+  - [GetAccessPointRequestTypeDef](#getaccesspointrequesttypedef)
+  - [GetAccessPointResultResponseTypeDef](#getaccesspointresultresponsetypedef)
+  - [GetBucketLifecycleConfigurationRequestTypeDef](#getbucketlifecycleconfigurationrequesttypedef)
+  - [GetBucketLifecycleConfigurationResultResponseTypeDef](#getbucketlifecycleconfigurationresultresponsetypedef)
+  - [GetBucketPolicyRequestTypeDef](#getbucketpolicyrequesttypedef)
+  - [GetBucketPolicyResultResponseTypeDef](#getbucketpolicyresultresponsetypedef)
+  - [GetBucketRequestTypeDef](#getbucketrequesttypedef)
+  - [GetBucketResultResponseTypeDef](#getbucketresultresponsetypedef)
+  - [GetBucketTaggingRequestTypeDef](#getbuckettaggingrequesttypedef)
+  - [GetBucketTaggingResultResponseTypeDef](#getbuckettaggingresultresponsetypedef)
+  - [GetJobTaggingRequestTypeDef](#getjobtaggingrequesttypedef)
+  - [GetJobTaggingResultResponseTypeDef](#getjobtaggingresultresponsetypedef)
+  - [GetPublicAccessBlockOutputResponseTypeDef](#getpublicaccessblockoutputresponsetypedef)
+  - [GetPublicAccessBlockRequestTypeDef](#getpublicaccessblockrequesttypedef)
+  - [GetStorageLensConfigurationRequestTypeDef](#getstoragelensconfigurationrequesttypedef)
+  - [GetStorageLensConfigurationResultResponseTypeDef](#getstoragelensconfigurationresultresponsetypedef)
+  - [GetStorageLensConfigurationTaggingRequestTypeDef](#getstoragelensconfigurationtaggingrequesttypedef)
+  - [GetStorageLensConfigurationTaggingResultResponseTypeDef](#getstoragelensconfigurationtaggingresultresponsetypedef)
   - [IncludeTypeDef](#includetypedef)
   - [JobDescriptorTypeDef](#jobdescriptortypedef)
   - [JobFailureTypeDef](#jobfailuretypedef)
@@ -52,12 +84,17 @@ type annotations stubs module
   - [LifecycleRuleAndOperatorTypeDef](#lifecycleruleandoperatortypedef)
   - [LifecycleRuleFilterTypeDef](#lifecyclerulefiltertypedef)
   - [LifecycleRuleTypeDef](#lifecycleruletypedef)
-  - [ListAccessPointsForObjectLambdaResultTypeDef](#listaccesspointsforobjectlambdaresulttypedef)
-  - [ListAccessPointsResultTypeDef](#listaccesspointsresulttypedef)
-  - [ListJobsResultTypeDef](#listjobsresulttypedef)
-  - [ListRegionalBucketsResultTypeDef](#listregionalbucketsresulttypedef)
+  - [ListAccessPointsForObjectLambdaRequestTypeDef](#listaccesspointsforobjectlambdarequesttypedef)
+  - [ListAccessPointsForObjectLambdaResultResponseTypeDef](#listaccesspointsforobjectlambdaresultresponsetypedef)
+  - [ListAccessPointsRequestTypeDef](#listaccesspointsrequesttypedef)
+  - [ListAccessPointsResultResponseTypeDef](#listaccesspointsresultresponsetypedef)
+  - [ListJobsRequestTypeDef](#listjobsrequesttypedef)
+  - [ListJobsResultResponseTypeDef](#listjobsresultresponsetypedef)
+  - [ListRegionalBucketsRequestTypeDef](#listregionalbucketsrequesttypedef)
+  - [ListRegionalBucketsResultResponseTypeDef](#listregionalbucketsresultresponsetypedef)
   - [ListStorageLensConfigurationEntryTypeDef](#liststoragelensconfigurationentrytypedef)
-  - [ListStorageLensConfigurationsResultTypeDef](#liststoragelensconfigurationsresulttypedef)
+  - [ListStorageLensConfigurationsRequestTypeDef](#liststoragelensconfigurationsrequesttypedef)
+  - [ListStorageLensConfigurationsResultResponseTypeDef](#liststoragelensconfigurationsresultresponsetypedef)
   - [NoncurrentVersionExpirationTypeDef](#noncurrentversionexpirationtypedef)
   - [NoncurrentVersionTransitionTypeDef](#noncurrentversiontransitiontypedef)
   - [ObjectLambdaAccessPointTypeDef](#objectlambdaaccesspointtypedef)
@@ -69,6 +106,16 @@ type annotations stubs module
   - [PrefixLevelStorageMetricsTypeDef](#prefixlevelstoragemetricstypedef)
   - [PrefixLevelTypeDef](#prefixleveltypedef)
   - [PublicAccessBlockConfigurationTypeDef](#publicaccessblockconfigurationtypedef)
+  - [PutAccessPointConfigurationForObjectLambdaRequestTypeDef](#putaccesspointconfigurationforobjectlambdarequesttypedef)
+  - [PutAccessPointPolicyForObjectLambdaRequestTypeDef](#putaccesspointpolicyforobjectlambdarequesttypedef)
+  - [PutAccessPointPolicyRequestTypeDef](#putaccesspointpolicyrequesttypedef)
+  - [PutBucketLifecycleConfigurationRequestTypeDef](#putbucketlifecycleconfigurationrequesttypedef)
+  - [PutBucketPolicyRequestTypeDef](#putbucketpolicyrequesttypedef)
+  - [PutBucketTaggingRequestTypeDef](#putbuckettaggingrequesttypedef)
+  - [PutJobTaggingRequestTypeDef](#putjobtaggingrequesttypedef)
+  - [PutPublicAccessBlockRequestTypeDef](#putpublicaccessblockrequesttypedef)
+  - [PutStorageLensConfigurationRequestTypeDef](#putstoragelensconfigurationrequesttypedef)
+  - [PutStorageLensConfigurationTaggingRequestTypeDef](#putstoragelensconfigurationtaggingrequesttypedef)
   - [RegionalBucketTypeDef](#regionalbuckettypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3AccessControlListTypeDef](#s3accesscontrollisttypedef)
@@ -96,8 +143,10 @@ type annotations stubs module
   - [StorageLensTagTypeDef](#storagelenstagtypedef)
   - [TaggingTypeDef](#taggingtypedef)
   - [TransitionTypeDef](#transitiontypedef)
-  - [UpdateJobPriorityResultTypeDef](#updatejobpriorityresulttypedef)
-  - [UpdateJobStatusResultTypeDef](#updatejobstatusresulttypedef)
+  - [UpdateJobPriorityRequestTypeDef](#updatejobpriorityrequesttypedef)
+  - [UpdateJobPriorityResultResponseTypeDef](#updatejobpriorityresultresponsetypedef)
+  - [UpdateJobStatusRequestTypeDef](#updatejobstatusrequesttypedef)
+  - [UpdateJobStatusResultResponseTypeDef](#updatejobstatusresultresponsetypedef)
   - [VpcConfigurationTypeDef](#vpcconfigurationtypedef)
 
 ## AbortIncompleteMultipartUploadTypeDef
@@ -179,25 +228,61 @@ Optional fields:
   [ActivityMetricsTypeDef](./type_defs.md#activitymetricstypedef)
 - `PrefixLevel`: [PrefixLevelTypeDef](./type_defs.md#prefixleveltypedef)
 
-## CreateAccessPointForObjectLambdaResultTypeDef
+## CreateAccessPointForObjectLambdaRequestTypeDef
 
 ```python
-from mypy_boto3_s3control.type_defs import CreateAccessPointForObjectLambdaResultTypeDef
+from mypy_boto3_s3control.type_defs import CreateAccessPointForObjectLambdaRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AccountId`: `str`
+- `Name`: `str`
+- `Configuration`:
+  [ObjectLambdaConfigurationTypeDef](./type_defs.md#objectlambdaconfigurationtypedef)
+
+## CreateAccessPointForObjectLambdaResultResponseTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import CreateAccessPointForObjectLambdaResultResponseTypeDef
+```
+
+Required fields:
 
 - `ObjectLambdaAccessPointArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateAccessPointResultTypeDef
+## CreateAccessPointRequestTypeDef
 
 ```python
-from mypy_boto3_s3control.type_defs import CreateAccessPointResultTypeDef
+from mypy_boto3_s3control.type_defs import CreateAccessPointRequestTypeDef
 ```
+
+Required fields:
+
+- `AccountId`: `str`
+- `Name`: `str`
+- `Bucket`: `str`
 
 Optional fields:
 
+- `VpcConfiguration`:
+  [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
+- `PublicAccessBlockConfiguration`:
+  [PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef)
+
+## CreateAccessPointResultResponseTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import CreateAccessPointResultResponseTypeDef
+```
+
+Required fields:
+
 - `AccessPointArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateBucketConfigurationTypeDef
 
@@ -210,36 +295,229 @@ Optional fields:
 - `LocationConstraint`:
   [BucketLocationConstraintType](./literals.md#bucketlocationconstrainttype)
 
-## CreateBucketResultTypeDef
+## CreateBucketRequestTypeDef
 
 ```python
-from mypy_boto3_s3control.type_defs import CreateBucketResultTypeDef
+from mypy_boto3_s3control.type_defs import CreateBucketRequestTypeDef
 ```
 
+Required fields:
+
+- `Bucket`: `str`
+
 Optional fields:
+
+- `ACL`: [BucketCannedACLType](./literals.md#bucketcannedacltype)
+- `CreateBucketConfiguration`:
+  [CreateBucketConfigurationTypeDef](./type_defs.md#createbucketconfigurationtypedef)
+- `GrantFullControl`: `str`
+- `GrantRead`: `str`
+- `GrantReadACP`: `str`
+- `GrantWrite`: `str`
+- `GrantWriteACP`: `str`
+- `ObjectLockEnabledForBucket`: `bool`
+- `OutpostId`: `str`
+
+## CreateBucketResultResponseTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import CreateBucketResultResponseTypeDef
+```
+
+Required fields:
 
 - `Location`: `str`
 - `BucketArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateJobResultTypeDef
+## CreateJobRequestTypeDef
 
 ```python
-from mypy_boto3_s3control.type_defs import CreateJobResultTypeDef
+from mypy_boto3_s3control.type_defs import CreateJobRequestTypeDef
 ```
 
+Required fields:
+
+- `AccountId`: `str`
+- `Operation`: [JobOperationTypeDef](./type_defs.md#joboperationtypedef)
+- `Report`: [JobReportTypeDef](./type_defs.md#jobreporttypedef)
+- `ClientRequestToken`: `str`
+- `Manifest`: [JobManifestTypeDef](./type_defs.md#jobmanifesttypedef)
+- `Priority`: `int`
+- `RoleArn`: `str`
+
 Optional fields:
+
+- `ConfirmationRequired`: `bool`
+- `Description`: `str`
+- `Tags`: `List`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
+
+## CreateJobResultResponseTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import CreateJobResultResponseTypeDef
+```
+
+Required fields:
 
 - `JobId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeJobResultTypeDef
+## DeleteAccessPointForObjectLambdaRequestTypeDef
 
 ```python
-from mypy_boto3_s3control.type_defs import DescribeJobResultTypeDef
+from mypy_boto3_s3control.type_defs import DeleteAccessPointForObjectLambdaRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AccountId`: `str`
+- `Name`: `str`
+
+## DeleteAccessPointPolicyForObjectLambdaRequestTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import DeleteAccessPointPolicyForObjectLambdaRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `Name`: `str`
+
+## DeleteAccessPointPolicyRequestTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import DeleteAccessPointPolicyRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `Name`: `str`
+
+## DeleteAccessPointRequestTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import DeleteAccessPointRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `Name`: `str`
+
+## DeleteBucketLifecycleConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import DeleteBucketLifecycleConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `Bucket`: `str`
+
+## DeleteBucketPolicyRequestTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import DeleteBucketPolicyRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `Bucket`: `str`
+
+## DeleteBucketRequestTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import DeleteBucketRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `Bucket`: `str`
+
+## DeleteBucketTaggingRequestTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import DeleteBucketTaggingRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `Bucket`: `str`
+
+## DeleteJobTaggingRequestTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import DeleteJobTaggingRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `JobId`: `str`
+
+## DeletePublicAccessBlockRequestTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import DeletePublicAccessBlockRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+
+## DeleteStorageLensConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import DeleteStorageLensConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `ConfigId`: `str`
+- `AccountId`: `str`
+
+## DeleteStorageLensConfigurationTaggingRequestTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import DeleteStorageLensConfigurationTaggingRequestTypeDef
+```
+
+Required fields:
+
+- `ConfigId`: `str`
+- `AccountId`: `str`
+
+## DescribeJobRequestTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import DescribeJobRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `JobId`: `str`
+
+## DescribeJobResultResponseTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import DescribeJobResultResponseTypeDef
+```
+
+Required fields:
 
 - `Job`: [JobDescriptorTypeDef](./type_defs.md#jobdescriptortypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ExcludeTypeDef
 
@@ -252,77 +530,166 @@ Optional fields:
 - `Buckets`: `List`\[`str`\]
 - `Regions`: `List`\[`str`\]
 
-## GetAccessPointConfigurationForObjectLambdaResultTypeDef
+## GetAccessPointConfigurationForObjectLambdaRequestTypeDef
 
 ```python
-from mypy_boto3_s3control.type_defs import GetAccessPointConfigurationForObjectLambdaResultTypeDef
+from mypy_boto3_s3control.type_defs import GetAccessPointConfigurationForObjectLambdaRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AccountId`: `str`
+- `Name`: `str`
+
+## GetAccessPointConfigurationForObjectLambdaResultResponseTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import GetAccessPointConfigurationForObjectLambdaResultResponseTypeDef
+```
+
+Required fields:
 
 - `Configuration`:
   [ObjectLambdaConfigurationTypeDef](./type_defs.md#objectlambdaconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAccessPointForObjectLambdaResultTypeDef
+## GetAccessPointForObjectLambdaRequestTypeDef
 
 ```python
-from mypy_boto3_s3control.type_defs import GetAccessPointForObjectLambdaResultTypeDef
+from mypy_boto3_s3control.type_defs import GetAccessPointForObjectLambdaRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AccountId`: `str`
+- `Name`: `str`
+
+## GetAccessPointForObjectLambdaResultResponseTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import GetAccessPointForObjectLambdaResultResponseTypeDef
+```
+
+Required fields:
 
 - `Name`: `str`
 - `PublicAccessBlockConfiguration`:
   [PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef)
 - `CreationDate`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAccessPointPolicyForObjectLambdaResultTypeDef
+## GetAccessPointPolicyForObjectLambdaRequestTypeDef
 
 ```python
-from mypy_boto3_s3control.type_defs import GetAccessPointPolicyForObjectLambdaResultTypeDef
+from mypy_boto3_s3control.type_defs import GetAccessPointPolicyForObjectLambdaRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AccountId`: `str`
+- `Name`: `str`
+
+## GetAccessPointPolicyForObjectLambdaResultResponseTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import GetAccessPointPolicyForObjectLambdaResultResponseTypeDef
+```
+
+Required fields:
 
 - `Policy`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAccessPointPolicyResultTypeDef
+## GetAccessPointPolicyRequestTypeDef
 
 ```python
-from mypy_boto3_s3control.type_defs import GetAccessPointPolicyResultTypeDef
+from mypy_boto3_s3control.type_defs import GetAccessPointPolicyRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AccountId`: `str`
+- `Name`: `str`
+
+## GetAccessPointPolicyResultResponseTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import GetAccessPointPolicyResultResponseTypeDef
+```
+
+Required fields:
 
 - `Policy`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAccessPointPolicyStatusForObjectLambdaResultTypeDef
+## GetAccessPointPolicyStatusForObjectLambdaRequestTypeDef
 
 ```python
-from mypy_boto3_s3control.type_defs import GetAccessPointPolicyStatusForObjectLambdaResultTypeDef
+from mypy_boto3_s3control.type_defs import GetAccessPointPolicyStatusForObjectLambdaRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AccountId`: `str`
+- `Name`: `str`
+
+## GetAccessPointPolicyStatusForObjectLambdaResultResponseTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import GetAccessPointPolicyStatusForObjectLambdaResultResponseTypeDef
+```
+
+Required fields:
 
 - `PolicyStatus`: [PolicyStatusTypeDef](./type_defs.md#policystatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAccessPointPolicyStatusResultTypeDef
+## GetAccessPointPolicyStatusRequestTypeDef
 
 ```python
-from mypy_boto3_s3control.type_defs import GetAccessPointPolicyStatusResultTypeDef
+from mypy_boto3_s3control.type_defs import GetAccessPointPolicyStatusRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AccountId`: `str`
+- `Name`: `str`
+
+## GetAccessPointPolicyStatusResultResponseTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import GetAccessPointPolicyStatusResultResponseTypeDef
+```
+
+Required fields:
 
 - `PolicyStatus`: [PolicyStatusTypeDef](./type_defs.md#policystatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAccessPointResultTypeDef
+## GetAccessPointRequestTypeDef
 
 ```python
-from mypy_boto3_s3control.type_defs import GetAccessPointResultTypeDef
+from mypy_boto3_s3control.type_defs import GetAccessPointRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AccountId`: `str`
+- `Name`: `str`
+
+## GetAccessPointResultResponseTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import GetAccessPointResultResponseTypeDef
+```
+
+Required fields:
 
 - `Name`: `str`
 - `Bucket`: `str`
@@ -332,64 +699,131 @@ Optional fields:
 - `PublicAccessBlockConfiguration`:
   [PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef)
 - `CreationDate`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketLifecycleConfigurationResultTypeDef
+## GetBucketLifecycleConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_s3control.type_defs import GetBucketLifecycleConfigurationResultTypeDef
+from mypy_boto3_s3control.type_defs import GetBucketLifecycleConfigurationRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AccountId`: `str`
+- `Bucket`: `str`
+
+## GetBucketLifecycleConfigurationResultResponseTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import GetBucketLifecycleConfigurationResultResponseTypeDef
+```
+
+Required fields:
 
 - `Rules`:
   `List`\[[LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketPolicyResultTypeDef
+## GetBucketPolicyRequestTypeDef
 
 ```python
-from mypy_boto3_s3control.type_defs import GetBucketPolicyResultTypeDef
+from mypy_boto3_s3control.type_defs import GetBucketPolicyRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AccountId`: `str`
+- `Bucket`: `str`
+
+## GetBucketPolicyResultResponseTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import GetBucketPolicyResultResponseTypeDef
+```
+
+Required fields:
 
 - `Policy`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketResultTypeDef
+## GetBucketRequestTypeDef
 
 ```python
-from mypy_boto3_s3control.type_defs import GetBucketResultTypeDef
+from mypy_boto3_s3control.type_defs import GetBucketRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AccountId`: `str`
+- `Bucket`: `str`
+
+## GetBucketResultResponseTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import GetBucketResultResponseTypeDef
+```
+
+Required fields:
 
 - `Bucket`: `str`
 - `PublicAccessBlockEnabled`: `bool`
 - `CreationDate`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketTaggingResultTypeDef
+## GetBucketTaggingRequestTypeDef
 
 ```python
-from mypy_boto3_s3control.type_defs import GetBucketTaggingResultTypeDef
+from mypy_boto3_s3control.type_defs import GetBucketTaggingRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `Bucket`: `str`
+
+## GetBucketTaggingResultResponseTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import GetBucketTaggingResultResponseTypeDef
 ```
 
 Required fields:
 
 - `TagSet`: `List`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetJobTaggingResultTypeDef
+## GetJobTaggingRequestTypeDef
 
 ```python
-from mypy_boto3_s3control.type_defs import GetJobTaggingResultTypeDef
+from mypy_boto3_s3control.type_defs import GetJobTaggingRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
-- `Tags`: `List`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
+- `AccountId`: `str`
+- `JobId`: `str`
 
-## GetPublicAccessBlockOutputTypeDef
+## GetJobTaggingResultResponseTypeDef
 
 ```python
-from mypy_boto3_s3control.type_defs import GetPublicAccessBlockOutputTypeDef
+from mypy_boto3_s3control.type_defs import GetJobTaggingResultResponseTypeDef
+```
+
+Required fields:
+
+- `Tags`: `List`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetPublicAccessBlockOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import GetPublicAccessBlockOutputResponseTypeDef
 ```
 
 Required fields:
@@ -399,27 +833,63 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetStorageLensConfigurationResultTypeDef
+## GetPublicAccessBlockRequestTypeDef
 
 ```python
-from mypy_boto3_s3control.type_defs import GetStorageLensConfigurationResultTypeDef
+from mypy_boto3_s3control.type_defs import GetPublicAccessBlockRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AccountId`: `str`
+
+## GetStorageLensConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import GetStorageLensConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `ConfigId`: `str`
+- `AccountId`: `str`
+
+## GetStorageLensConfigurationResultResponseTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import GetStorageLensConfigurationResultResponseTypeDef
+```
+
+Required fields:
 
 - `StorageLensConfiguration`:
   [StorageLensConfigurationTypeDef](./type_defs.md#storagelensconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetStorageLensConfigurationTaggingResultTypeDef
+## GetStorageLensConfigurationTaggingRequestTypeDef
 
 ```python
-from mypy_boto3_s3control.type_defs import GetStorageLensConfigurationTaggingResultTypeDef
+from mypy_boto3_s3control.type_defs import GetStorageLensConfigurationTaggingRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ConfigId`: `str`
+- `AccountId`: `str`
+
+## GetStorageLensConfigurationTaggingResultResponseTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import GetStorageLensConfigurationTaggingResultResponseTypeDef
+```
+
+Required fields:
 
 - `Tags`:
   `List`\[[StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## IncludeTypeDef
 
@@ -668,53 +1138,124 @@ Optional fields:
 - `AbortIncompleteMultipartUpload`:
   [AbortIncompleteMultipartUploadTypeDef](./type_defs.md#abortincompletemultipartuploadtypedef)
 
-## ListAccessPointsForObjectLambdaResultTypeDef
+## ListAccessPointsForObjectLambdaRequestTypeDef
 
 ```python
-from mypy_boto3_s3control.type_defs import ListAccessPointsForObjectLambdaResultTypeDef
+from mypy_boto3_s3control.type_defs import ListAccessPointsForObjectLambdaRequestTypeDef
 ```
 
+Required fields:
+
+- `AccountId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListAccessPointsForObjectLambdaResultResponseTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import ListAccessPointsForObjectLambdaResultResponseTypeDef
+```
+
+Required fields:
 
 - `ObjectLambdaAccessPointList`:
   `List`\[[ObjectLambdaAccessPointTypeDef](./type_defs.md#objectlambdaaccesspointtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAccessPointsResultTypeDef
+## ListAccessPointsRequestTypeDef
 
 ```python
-from mypy_boto3_s3control.type_defs import ListAccessPointsResultTypeDef
+from mypy_boto3_s3control.type_defs import ListAccessPointsRequestTypeDef
 ```
 
+Required fields:
+
+- `AccountId`: `str`
+
 Optional fields:
+
+- `Bucket`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListAccessPointsResultResponseTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import ListAccessPointsResultResponseTypeDef
+```
+
+Required fields:
 
 - `AccessPointList`:
   `List`\[[AccessPointTypeDef](./type_defs.md#accesspointtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListJobsResultTypeDef
+## ListJobsRequestTypeDef
 
 ```python
-from mypy_boto3_s3control.type_defs import ListJobsResultTypeDef
+from mypy_boto3_s3control.type_defs import ListJobsRequestTypeDef
 ```
 
+Required fields:
+
+- `AccountId`: `str`
+
 Optional fields:
+
+- `JobStatuses`: `List`\[[JobStatusType](./literals.md#jobstatustype)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListJobsResultResponseTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import ListJobsResultResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `Jobs`:
   `List`\[[JobListDescriptorTypeDef](./type_defs.md#joblistdescriptortypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRegionalBucketsResultTypeDef
+## ListRegionalBucketsRequestTypeDef
 
 ```python
-from mypy_boto3_s3control.type_defs import ListRegionalBucketsResultTypeDef
+from mypy_boto3_s3control.type_defs import ListRegionalBucketsRequestTypeDef
 ```
 
+Required fields:
+
+- `AccountId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `OutpostId`: `str`
+
+## ListRegionalBucketsResultResponseTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import ListRegionalBucketsResultResponseTypeDef
+```
+
+Required fields:
 
 - `RegionalBucketList`:
   `List`\[[RegionalBucketTypeDef](./type_defs.md#regionalbuckettypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListStorageLensConfigurationEntryTypeDef
 
@@ -732,17 +1273,33 @@ Optional fields:
 
 - `IsEnabled`: `bool`
 
-## ListStorageLensConfigurationsResultTypeDef
+## ListStorageLensConfigurationsRequestTypeDef
 
 ```python
-from mypy_boto3_s3control.type_defs import ListStorageLensConfigurationsResultTypeDef
+from mypy_boto3_s3control.type_defs import ListStorageLensConfigurationsRequestTypeDef
 ```
+
+Required fields:
+
+- `AccountId`: `str`
 
 Optional fields:
 
 - `NextToken`: `str`
+
+## ListStorageLensConfigurationsResultResponseTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import ListStorageLensConfigurationsResultResponseTypeDef
+```
+
+Required fields:
+
+- `NextToken`: `str`
 - `StorageLensConfigurationList`:
   `List`\[[ListStorageLensConfigurationEntryTypeDef](./type_defs.md#liststoragelensconfigurationentrytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## NoncurrentVersionExpirationTypeDef
 
@@ -880,6 +1437,142 @@ Optional fields:
 - `BlockPublicPolicy`: `bool`
 - `RestrictPublicBuckets`: `bool`
 
+## PutAccessPointConfigurationForObjectLambdaRequestTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import PutAccessPointConfigurationForObjectLambdaRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `Name`: `str`
+- `Configuration`:
+  [ObjectLambdaConfigurationTypeDef](./type_defs.md#objectlambdaconfigurationtypedef)
+
+## PutAccessPointPolicyForObjectLambdaRequestTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import PutAccessPointPolicyForObjectLambdaRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `Name`: `str`
+- `Policy`: `str`
+
+## PutAccessPointPolicyRequestTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import PutAccessPointPolicyRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `Name`: `str`
+- `Policy`: `str`
+
+## PutBucketLifecycleConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import PutBucketLifecycleConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `Bucket`: `str`
+
+Optional fields:
+
+- `LifecycleConfiguration`:
+  [LifecycleConfigurationTypeDef](./type_defs.md#lifecycleconfigurationtypedef)
+
+## PutBucketPolicyRequestTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import PutBucketPolicyRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `Bucket`: `str`
+- `Policy`: `str`
+
+Optional fields:
+
+- `ConfirmRemoveSelfBucketAccess`: `bool`
+
+## PutBucketTaggingRequestTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import PutBucketTaggingRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `Bucket`: `str`
+- `Tagging`: [TaggingTypeDef](./type_defs.md#taggingtypedef)
+
+## PutJobTaggingRequestTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import PutJobTaggingRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `JobId`: `str`
+- `Tags`: `List`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
+
+## PutPublicAccessBlockRequestTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import PutPublicAccessBlockRequestTypeDef
+```
+
+Required fields:
+
+- `PublicAccessBlockConfiguration`:
+  [PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef)
+- `AccountId`: `str`
+
+## PutStorageLensConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import PutStorageLensConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `ConfigId`: `str`
+- `AccountId`: `str`
+- `StorageLensConfiguration`:
+  [StorageLensConfigurationTypeDef](./type_defs.md#storagelensconfigurationtypedef)
+
+Optional fields:
+
+- `Tags`:
+  `List`\[[StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef)\]
+
+## PutStorageLensConfigurationTaggingRequestTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import PutStorageLensConfigurationTaggingRequestTypeDef
+```
+
+Required fields:
+
+- `ConfigId`: `str`
+- `AccountId`: `str`
+- `Tags`:
+  `List`\[[StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef)\]
+
 ## RegionalBucketTypeDef
 
 ```python
@@ -973,20 +1666,20 @@ Optional fields:
   `List`\[[S3GrantTypeDef](./type_defs.md#s3granttypedef)\]
 - `MetadataDirective`:
   [S3MetadataDirectiveType](./literals.md#s3metadatadirectivetype)
-- `ModifiedSinceConstraint`: `datetime`
+- `ModifiedSinceConstraint`: `Union`\[`datetime`, `str`\]
 - `NewObjectMetadata`:
   [S3ObjectMetadataTypeDef](./type_defs.md#s3objectmetadatatypedef)
 - `NewObjectTagging`: `List`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
 - `RedirectLocation`: `str`
 - `RequesterPays`: `bool`
 - `StorageClass`: [S3StorageClassType](./literals.md#s3storageclasstype)
-- `UnModifiedSinceConstraint`: `datetime`
+- `UnModifiedSinceConstraint`: `Union`\[`datetime`, `str`\]
 - `SSEAwsKmsKeyId`: `str`
 - `TargetKeyPrefix`: `str`
 - `ObjectLockLegalHoldStatus`:
   [S3ObjectLockLegalHoldStatusType](./literals.md#s3objectlocklegalholdstatustype)
 - `ObjectLockMode`: [S3ObjectLockModeType](./literals.md#s3objectlockmodetype)
-- `ObjectLockRetainUntilDate`: `datetime`
+- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
 - `BucketKeyEnabled`: `bool`
 
 ## S3GrantTypeDef
@@ -1051,7 +1744,7 @@ Optional fields:
 - `ContentLength`: `int`
 - `ContentMD5`: `str`
 - `ContentType`: `str`
-- `HttpExpiresDate`: `datetime`
+- `HttpExpiresDate`: `Union`\[`datetime`, `str`\]
 - `RequesterCharged`: `bool`
 - `SSEAlgorithm`: [S3SSEAlgorithmType](./literals.md#s3ssealgorithmtype)
 
@@ -1074,7 +1767,7 @@ from mypy_boto3_s3control.type_defs import S3RetentionTypeDef
 
 Optional fields:
 
-- `RetainUntilDate`: `datetime`
+- `RetainUntilDate`: `Union`\[`datetime`, `str`\]
 - `Mode`:
   [S3ObjectLockRetentionModeType](./literals.md#s3objectlockretentionmodetype)
 
@@ -1244,28 +1937,61 @@ Optional fields:
 - `StorageClass`:
   [TransitionStorageClassType](./literals.md#transitionstorageclasstype)
 
-## UpdateJobPriorityResultTypeDef
+## UpdateJobPriorityRequestTypeDef
 
 ```python
-from mypy_boto3_s3control.type_defs import UpdateJobPriorityResultTypeDef
+from mypy_boto3_s3control.type_defs import UpdateJobPriorityRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `JobId`: `str`
+- `Priority`: `int`
+
+## UpdateJobPriorityResultResponseTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import UpdateJobPriorityResultResponseTypeDef
 ```
 
 Required fields:
 
 - `JobId`: `str`
 - `Priority`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateJobStatusResultTypeDef
+## UpdateJobStatusRequestTypeDef
 
 ```python
-from mypy_boto3_s3control.type_defs import UpdateJobStatusResultTypeDef
+from mypy_boto3_s3control.type_defs import UpdateJobStatusRequestTypeDef
 ```
 
+Required fields:
+
+- `AccountId`: `str`
+- `JobId`: `str`
+- `RequestedJobStatus`:
+  [RequestedJobStatusType](./literals.md#requestedjobstatustype)
+
 Optional fields:
+
+- `StatusUpdateReason`: `str`
+
+## UpdateJobStatusResultResponseTypeDef
+
+```python
+from mypy_boto3_s3control.type_defs import UpdateJobStatusResultResponseTypeDef
+```
+
+Required fields:
 
 - `JobId`: `str`
 - `Status`: [JobStatusType](./literals.md#jobstatustype)
 - `StatusUpdateReason`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## VpcConfigurationTypeDef
 

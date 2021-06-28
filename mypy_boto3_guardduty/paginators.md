@@ -40,7 +40,7 @@ Arguments for `ListDetectorsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDetectorsPaginator.paginate` returns
-`Iterator`\[[ListDetectorsResponseTypeDef](./type_defs.md#listdetectorsresponsetypedef)\].
+`Iterator`\[[ListDetectorsResponseResponseTypeDef](./type_defs.md#listdetectorsresponseresponsetypedef)\].
 
 ## ListFiltersPaginator
 
@@ -65,7 +65,7 @@ Arguments for `ListFiltersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFiltersPaginator.paginate` returns
-`Iterator`\[[ListFiltersResponseTypeDef](./type_defs.md#listfiltersresponsetypedef)\].
+`Iterator`\[[ListFiltersResponseResponseTypeDef](./type_defs.md#listfiltersresponseresponsetypedef)\].
 
 ## ListFindingsPaginator
 
@@ -94,7 +94,7 @@ Arguments for `ListFindingsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFindingsPaginator.paginate` returns
-`Iterator`\[[ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef)\].
+`Iterator`\[[ListFindingsResponseResponseTypeDef](./type_defs.md#listfindingsresponseresponsetypedef)\].
 
 ## ListIPSetsPaginator
 
@@ -119,7 +119,7 @@ Arguments for `ListIPSetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListIPSetsPaginator.paginate` returns
-`Iterator`\[[ListIPSetsResponseTypeDef](./type_defs.md#listipsetsresponsetypedef)\].
+`Iterator`\[[ListIPSetsResponseResponseTypeDef](./type_defs.md#listipsetsresponseresponsetypedef)\].
 
 ## ListInvitationsPaginator
 
@@ -144,7 +144,7 @@ Arguments for `ListInvitationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListInvitationsPaginator.paginate` returns
-`Iterator`\[[ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef)\].
+`Iterator`\[[ListInvitationsResponseResponseTypeDef](./type_defs.md#listinvitationsresponseresponsetypedef)\].
 
 ## ListMembersPaginator
 
@@ -170,7 +170,7 @@ Arguments for `ListMembersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMembersPaginator.paginate` returns
-`Iterator`\[[ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef)\].
+`Iterator`\[[ListMembersResponseResponseTypeDef](./type_defs.md#listmembersresponseresponsetypedef)\].
 
 ## ListOrganizationAdminAccountsPaginator
 
@@ -195,7 +195,7 @@ Arguments for `ListOrganizationAdminAccountsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOrganizationAdminAccountsPaginator.paginate` returns
-`Iterator`\[[ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef)\].
+`Iterator`\[[ListOrganizationAdminAccountsResponseResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponseresponsetypedef)\].
 
 ## ListThreatIntelSetsPaginator
 
@@ -221,4 +221,4 @@ Arguments for `ListThreatIntelSetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListThreatIntelSetsPaginator.paginate` returns
-`Iterator`\[[ListThreatIntelSetsResponseTypeDef](./type_defs.md#listthreatintelsetsresponsetypedef)\].
+`Iterator`\[[ListThreatIntelSetsResponseResponseTypeDef](./type_defs.md#listthreatintelsetsresponseresponsetypedef)\].

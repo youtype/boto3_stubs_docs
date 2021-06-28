@@ -53,6 +53,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("sagemaker-edge").can_paginate` method.
 
 Boto3 documentation:
@@ -65,6 +67,8 @@ Arguments:
 Returns `bool`.
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("sagemaker-edge").generate_presigned_url`
 method.
@@ -83,11 +87,16 @@ Returns `str`.
 
 ### get_device_registration
 
+Use to check if a device is registered with SageMaker Edge Manager.
+
 Type annotations for `boto3.client("sagemaker-edge").get_device_registration`
 method.
 
 Boto3 documentation:
 [SagemakerEdgeManager.Client.get_device_registration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client.get_device_registration)
+
+Arguments mapping described in
+[GetDeviceRegistrationRequestTypeDef](./type_defs.md#getdeviceregistrationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -95,14 +104,19 @@ Keyword-only arguments:
 - `DeviceFleetName`: `str` *(required)*
 
 Returns
-[GetDeviceRegistrationResultTypeDef](./type_defs.md#getdeviceregistrationresulttypedef).
+[GetDeviceRegistrationResultResponseTypeDef](./type_defs.md#getdeviceregistrationresultresponsetypedef).
 
 ### send_heartbeat
+
+Use to get the current status of devices registered on SageMaker Edge Manager.
 
 Type annotations for `boto3.client("sagemaker-edge").send_heartbeat` method.
 
 Boto3 documentation:
 [SagemakerEdgeManager.Client.send_heartbeat](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client.send_heartbeat)
+
+Arguments mapping described in
+[SendHeartbeatRequestTypeDef](./type_defs.md#sendheartbeatrequesttypedef).
 
 Keyword-only arguments:
 

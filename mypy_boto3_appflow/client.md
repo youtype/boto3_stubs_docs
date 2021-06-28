@@ -76,6 +76,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("appflow").can_paginate` method.
 
 Boto3 documentation:
@@ -89,10 +91,15 @@ Returns `bool`.
 
 ### create_connector_profile
 
+Creates a new connector profile associated with your AWS account.
+
 Type annotations for `boto3.client("appflow").create_connector_profile` method.
 
 Boto3 documentation:
 [Appflow.Client.create_connector_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.create_connector_profile)
+
+Arguments mapping described in
+[CreateConnectorProfileRequestTypeDef](./type_defs.md#createconnectorprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -107,14 +114,19 @@ Keyword-only arguments:
 - `kmsArn`: `str`
 
 Returns
-[CreateConnectorProfileResponseTypeDef](./type_defs.md#createconnectorprofileresponsetypedef).
+[CreateConnectorProfileResponseResponseTypeDef](./type_defs.md#createconnectorprofileresponseresponsetypedef).
 
 ### create_flow
+
+Enables your application to create a new flow using Amazon AppFlow.
 
 Type annotations for `boto3.client("appflow").create_flow` method.
 
 Boto3 documentation:
 [Appflow.Client.create_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.create_flow)
+
+Arguments mapping described in
+[CreateFlowRequestTypeDef](./type_defs.md#createflowrequesttypedef).
 
 Keyword-only arguments:
 
@@ -132,14 +144,20 @@ Keyword-only arguments:
 - `kmsArn`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-Returns [CreateFlowResponseTypeDef](./type_defs.md#createflowresponsetypedef).
+Returns
+[CreateFlowResponseResponseTypeDef](./type_defs.md#createflowresponseresponsetypedef).
 
 ### delete_connector_profile
+
+Enables you to delete an existing connector profile.
 
 Type annotations for `boto3.client("appflow").delete_connector_profile` method.
 
 Boto3 documentation:
 [Appflow.Client.delete_connector_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.delete_connector_profile)
+
+Arguments mapping described in
+[DeleteConnectorProfileRequestTypeDef](./type_defs.md#deleteconnectorprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -150,10 +168,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_flow
 
+Enables your application to delete an existing flow.
+
 Type annotations for `boto3.client("appflow").delete_flow` method.
 
 Boto3 documentation:
 [Appflow.Client.delete_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.delete_flow)
+
+Arguments mapping described in
+[DeleteFlowRequestTypeDef](./type_defs.md#deleteflowrequesttypedef).
 
 Keyword-only arguments:
 
@@ -164,11 +187,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_connector_entity
 
+Provides details regarding the entity used with the connector, with a
+description of the data model for each entity.
+
 Type annotations for `boto3.client("appflow").describe_connector_entity`
 method.
 
 Boto3 documentation:
 [Appflow.Client.describe_connector_entity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connector_entity)
+
+Arguments mapping described in
+[DescribeConnectorEntityRequestTypeDef](./type_defs.md#describeconnectorentityrequesttypedef).
 
 Keyword-only arguments:
 
@@ -177,15 +206,21 @@ Keyword-only arguments:
 - `connectorProfileName`: `str`
 
 Returns
-[DescribeConnectorEntityResponseTypeDef](./type_defs.md#describeconnectorentityresponsetypedef).
+[DescribeConnectorEntityResponseResponseTypeDef](./type_defs.md#describeconnectorentityresponseresponsetypedef).
 
 ### describe_connector_profiles
+
+Returns a list of `connector-profile` details matching the provided
+`connector- profile` names and `connector-types`.
 
 Type annotations for `boto3.client("appflow").describe_connector_profiles`
 method.
 
 Boto3 documentation:
 [Appflow.Client.describe_connector_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connector_profiles)
+
+Arguments mapping described in
+[DescribeConnectorProfilesRequestTypeDef](./type_defs.md#describeconnectorprofilesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -195,14 +230,20 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeConnectorProfilesResponseTypeDef](./type_defs.md#describeconnectorprofilesresponsetypedef).
+[DescribeConnectorProfilesResponseResponseTypeDef](./type_defs.md#describeconnectorprofilesresponseresponsetypedef).
 
 ### describe_connectors
+
+Describes the connectors vended by Amazon AppFlow for specified connector
+types.
 
 Type annotations for `boto3.client("appflow").describe_connectors` method.
 
 Boto3 documentation:
 [Appflow.Client.describe_connectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connectors)
+
+Arguments mapping described in
+[DescribeConnectorsRequestTypeDef](./type_defs.md#describeconnectorsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -211,29 +252,39 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeConnectorsResponseTypeDef](./type_defs.md#describeconnectorsresponsetypedef).
+[DescribeConnectorsResponseResponseTypeDef](./type_defs.md#describeconnectorsresponseresponsetypedef).
 
 ### describe_flow
+
+Provides a description of the specified flow.
 
 Type annotations for `boto3.client("appflow").describe_flow` method.
 
 Boto3 documentation:
 [Appflow.Client.describe_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_flow)
 
+Arguments mapping described in
+[DescribeFlowRequestTypeDef](./type_defs.md#describeflowrequesttypedef).
+
 Keyword-only arguments:
 
 - `flowName`: `str` *(required)*
 
 Returns
-[DescribeFlowResponseTypeDef](./type_defs.md#describeflowresponsetypedef).
+[DescribeFlowResponseResponseTypeDef](./type_defs.md#describeflowresponseresponsetypedef).
 
 ### describe_flow_execution_records
+
+Fetches the execution history of the flow.
 
 Type annotations for `boto3.client("appflow").describe_flow_execution_records`
 method.
 
 Boto3 documentation:
 [Appflow.Client.describe_flow_execution_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_flow_execution_records)
+
+Arguments mapping described in
+[DescribeFlowExecutionRecordsRequestTypeDef](./type_defs.md#describeflowexecutionrecordsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -242,9 +293,11 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeFlowExecutionRecordsResponseTypeDef](./type_defs.md#describeflowexecutionrecordsresponsetypedef).
+[DescribeFlowExecutionRecordsResponseResponseTypeDef](./type_defs.md#describeflowexecutionrecordsresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("appflow").generate_presigned_url` method.
 
@@ -262,10 +315,15 @@ Returns `str`.
 
 ### list_connector_entities
 
+Returns the list of available connector entities supported by Amazon AppFlow.
+
 Type annotations for `boto3.client("appflow").list_connector_entities` method.
 
 Boto3 documentation:
 [Appflow.Client.list_connector_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_connector_entities)
+
+Arguments mapping described in
+[ListConnectorEntitiesRequestTypeDef](./type_defs.md#listconnectorentitiesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -274,68 +332,96 @@ Keyword-only arguments:
 - `entitiesPath`: `str`
 
 Returns
-[ListConnectorEntitiesResponseTypeDef](./type_defs.md#listconnectorentitiesresponsetypedef).
+[ListConnectorEntitiesResponseResponseTypeDef](./type_defs.md#listconnectorentitiesresponseresponsetypedef).
 
 ### list_flows
+
+Lists all of the flows associated with your account.
 
 Type annotations for `boto3.client("appflow").list_flows` method.
 
 Boto3 documentation:
 [Appflow.Client.list_flows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_flows)
 
+Arguments mapping described in
+[ListFlowsRequestTypeDef](./type_defs.md#listflowsrequesttypedef).
+
 Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-Returns [ListFlowsResponseTypeDef](./type_defs.md#listflowsresponsetypedef).
+Returns
+[ListFlowsResponseResponseTypeDef](./type_defs.md#listflowsresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Retrieves the tags that are associated with a specified flow.
 
 Type annotations for `boto3.client("appflow").list_tags_for_resource` method.
 
 Boto3 documentation:
 [Appflow.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### start_flow
+
+Activates an existing flow.
 
 Type annotations for `boto3.client("appflow").start_flow` method.
 
 Boto3 documentation:
 [Appflow.Client.start_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.start_flow)
 
+Arguments mapping described in
+[StartFlowRequestTypeDef](./type_defs.md#startflowrequesttypedef).
+
 Keyword-only arguments:
 
 - `flowName`: `str` *(required)*
 
-Returns [StartFlowResponseTypeDef](./type_defs.md#startflowresponsetypedef).
+Returns
+[StartFlowResponseResponseTypeDef](./type_defs.md#startflowresponseresponsetypedef).
 
 ### stop_flow
+
+Deactivates the existing flow.
 
 Type annotations for `boto3.client("appflow").stop_flow` method.
 
 Boto3 documentation:
 [Appflow.Client.stop_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.stop_flow)
 
+Arguments mapping described in
+[StopFlowRequestTypeDef](./type_defs.md#stopflowrequesttypedef).
+
 Keyword-only arguments:
 
 - `flowName`: `str` *(required)*
 
-Returns [StopFlowResponseTypeDef](./type_defs.md#stopflowresponsetypedef).
+Returns
+[StopFlowResponseResponseTypeDef](./type_defs.md#stopflowresponseresponsetypedef).
 
 ### tag_resource
+
+Applies a tag to the specified flow.
 
 Type annotations for `boto3.client("appflow").tag_resource` method.
 
 Boto3 documentation:
 [Appflow.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -346,10 +432,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Removes a tag from the specified flow.
+
 Type annotations for `boto3.client("appflow").untag_resource` method.
 
 Boto3 documentation:
 [Appflow.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -360,10 +451,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_connector_profile
 
+Updates a given connector profile associated with your account.
+
 Type annotations for `boto3.client("appflow").update_connector_profile` method.
 
 Boto3 documentation:
 [Appflow.Client.update_connector_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.update_connector_profile)
+
+Arguments mapping described in
+[UpdateConnectorProfileRequestTypeDef](./type_defs.md#updateconnectorprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -375,14 +471,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateConnectorProfileResponseTypeDef](./type_defs.md#updateconnectorprofileresponsetypedef).
+[UpdateConnectorProfileResponseResponseTypeDef](./type_defs.md#updateconnectorprofileresponseresponsetypedef).
 
 ### update_flow
+
+Updates an existing flow.
 
 Type annotations for `boto3.client("appflow").update_flow` method.
 
 Boto3 documentation:
 [Appflow.Client.update_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.update_flow)
+
+Arguments mapping described in
+[UpdateFlowRequestTypeDef](./type_defs.md#updateflowrequesttypedef).
 
 Keyword-only arguments:
 
@@ -397,4 +498,5 @@ Keyword-only arguments:
 - `sourceFlowConfig`:
   [SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef)
 
-Returns [UpdateFlowResponseTypeDef](./type_defs.md#updateflowresponsetypedef).
+Returns
+[UpdateFlowResponseResponseTypeDef](./type_defs.md#updateflowresponseresponsetypedef).

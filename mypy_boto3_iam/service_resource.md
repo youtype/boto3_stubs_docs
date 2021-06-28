@@ -313,10 +313,15 @@ Boto3 documentation:
 
 ### IAMServiceResource.AccessKey method
 
+Creates a AccessKey resource.
+
 Type annotations for `boto3.resource("iam").AccessKey` method.
 
 Boto3 documentation:
 [IAM.ServiceResource.AccessKey](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AccessKey)
+
+Arguments mapping described in
+[ServiceResourceAccessKeyRequestTypeDef](./type_defs.md#serviceresourceaccesskeyrequesttypedef).
 
 Arguments:
 
@@ -327,10 +332,15 @@ Returns [AccessKey](#accesskey).
 
 ### IAMServiceResource.AccessKeyPair method
 
+Creates a AccessKeyPair resource.
+
 Type annotations for `boto3.resource("iam").AccessKeyPair` method.
 
 Boto3 documentation:
 [IAM.ServiceResource.AccessKeyPair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AccessKeyPair)
+
+Arguments mapping described in
+[ServiceResourceAccessKeyPairRequestTypeDef](./type_defs.md#serviceresourceaccesskeypairrequesttypedef).
 
 Arguments:
 
@@ -342,6 +352,8 @@ Returns [AccessKeyPair](#accesskeypair).
 
 ### IAMServiceResource.AccountPasswordPolicy method
 
+Creates a AccountPasswordPolicy resource.
+
 Type annotations for `boto3.resource("iam").AccountPasswordPolicy` method.
 
 Boto3 documentation:
@@ -350,6 +362,8 @@ Boto3 documentation:
 Returns [AccountPasswordPolicy](#accountpasswordpolicy).
 
 ### IAMServiceResource.AccountSummary method
+
+Creates a AccountSummary resource.
 
 Type annotations for `boto3.resource("iam").AccountSummary` method.
 
@@ -360,10 +374,15 @@ Returns [AccountSummary](#accountsummary).
 
 ### IAMServiceResource.AssumeRolePolicy method
 
+Creates a AssumeRolePolicy resource.
+
 Type annotations for `boto3.resource("iam").AssumeRolePolicy` method.
 
 Boto3 documentation:
 [IAM.ServiceResource.AssumeRolePolicy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.AssumeRolePolicy)
+
+Arguments mapping described in
+[ServiceResourceAssumeRolePolicyRequestTypeDef](./type_defs.md#serviceresourceassumerolepolicyrequesttypedef).
 
 Arguments:
 
@@ -372,6 +391,8 @@ Arguments:
 Returns [AssumeRolePolicy](#assumerolepolicy).
 
 ### IAMServiceResource.CurrentUser method
+
+Creates a CurrentUser resource.
 
 Type annotations for `boto3.resource("iam").CurrentUser` method.
 
@@ -382,10 +403,15 @@ Returns [CurrentUser](#currentuser).
 
 ### IAMServiceResource.Group method
 
+Creates a Group resource.
+
 Type annotations for `boto3.resource("iam").Group` method.
 
 Boto3 documentation:
 [IAM.ServiceResource.Group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.Group)
+
+Arguments mapping described in
+[ServiceResourceGroupRequestTypeDef](./type_defs.md#serviceresourcegrouprequesttypedef).
 
 Arguments:
 
@@ -395,10 +421,15 @@ Returns [Group](#group).
 
 ### IAMServiceResource.GroupPolicy method
 
+Creates a GroupPolicy resource.
+
 Type annotations for `boto3.resource("iam").GroupPolicy` method.
 
 Boto3 documentation:
 [IAM.ServiceResource.GroupPolicy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.GroupPolicy)
+
+Arguments mapping described in
+[ServiceResourceGroupPolicyRequestTypeDef](./type_defs.md#serviceresourcegrouppolicyrequesttypedef).
 
 Arguments:
 
@@ -409,10 +440,15 @@ Returns [GroupPolicy](#grouppolicy).
 
 ### IAMServiceResource.InstanceProfile method
 
+Creates a InstanceProfile resource.
+
 Type annotations for `boto3.resource("iam").InstanceProfile` method.
 
 Boto3 documentation:
 [IAM.ServiceResource.InstanceProfile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.InstanceProfile)
+
+Arguments mapping described in
+[ServiceResourceInstanceProfileRequestTypeDef](./type_defs.md#serviceresourceinstanceprofilerequesttypedef).
 
 Arguments:
 
@@ -422,10 +458,15 @@ Returns [InstanceProfile](#instanceprofile).
 
 ### IAMServiceResource.LoginProfile method
 
+Creates a LoginProfile resource.
+
 Type annotations for `boto3.resource("iam").LoginProfile` method.
 
 Boto3 documentation:
 [IAM.ServiceResource.LoginProfile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.LoginProfile)
+
+Arguments mapping described in
+[ServiceResourceLoginProfileRequestTypeDef](./type_defs.md#serviceresourceloginprofilerequesttypedef).
 
 Arguments:
 
@@ -435,10 +476,15 @@ Returns [LoginProfile](#loginprofile).
 
 ### IAMServiceResource.MfaDevice method
 
+Creates a MfaDevice resource.
+
 Type annotations for `boto3.resource("iam").MfaDevice` method.
 
 Boto3 documentation:
 [IAM.ServiceResource.MfaDevice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.MfaDevice)
+
+Arguments mapping described in
+[ServiceResourceMfaDeviceRequestTypeDef](./type_defs.md#serviceresourcemfadevicerequesttypedef).
 
 Arguments:
 
@@ -449,10 +495,15 @@ Returns [MfaDevice](#mfadevice).
 
 ### IAMServiceResource.Policy method
 
+Creates a Policy resource.
+
 Type annotations for `boto3.resource("iam").Policy` method.
 
 Boto3 documentation:
 [IAM.ServiceResource.Policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.Policy)
+
+Arguments mapping described in
+[ServiceResourcePolicyRequestTypeDef](./type_defs.md#serviceresourcepolicyrequesttypedef).
 
 Arguments:
 
@@ -462,10 +513,15 @@ Returns [Policy](#policy).
 
 ### IAMServiceResource.PolicyVersion method
 
+Creates a PolicyVersion resource.
+
 Type annotations for `boto3.resource("iam").PolicyVersion` method.
 
 Boto3 documentation:
 [IAM.ServiceResource.PolicyVersion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.PolicyVersion)
+
+Arguments mapping described in
+[ServiceResourcePolicyVersionRequestTypeDef](./type_defs.md#serviceresourcepolicyversionrequesttypedef).
 
 Arguments:
 
@@ -476,10 +532,15 @@ Returns [PolicyVersion](#policyversion).
 
 ### IAMServiceResource.Role method
 
+Creates a Role resource.
+
 Type annotations for `boto3.resource("iam").Role` method.
 
 Boto3 documentation:
 [IAM.ServiceResource.Role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.Role)
+
+Arguments mapping described in
+[ServiceResourceRoleRequestTypeDef](./type_defs.md#serviceresourcerolerequesttypedef).
 
 Arguments:
 
@@ -489,10 +550,15 @@ Returns [Role](#role).
 
 ### IAMServiceResource.RolePolicy method
 
+Creates a RolePolicy resource.
+
 Type annotations for `boto3.resource("iam").RolePolicy` method.
 
 Boto3 documentation:
 [IAM.ServiceResource.RolePolicy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.RolePolicy)
+
+Arguments mapping described in
+[ServiceResourceRolePolicyRequestTypeDef](./type_defs.md#serviceresourcerolepolicyrequesttypedef).
 
 Arguments:
 
@@ -503,10 +569,15 @@ Returns [RolePolicy](#rolepolicy).
 
 ### IAMServiceResource.SamlProvider method
 
+Creates a SamlProvider resource.
+
 Type annotations for `boto3.resource("iam").SamlProvider` method.
 
 Boto3 documentation:
 [IAM.ServiceResource.SamlProvider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.SamlProvider)
+
+Arguments mapping described in
+[ServiceResourceSamlProviderRequestTypeDef](./type_defs.md#serviceresourcesamlproviderrequesttypedef).
 
 Arguments:
 
@@ -516,10 +587,15 @@ Returns [SamlProvider](#samlprovider).
 
 ### IAMServiceResource.ServerCertificate method
 
+Creates a ServerCertificate resource.
+
 Type annotations for `boto3.resource("iam").ServerCertificate` method.
 
 Boto3 documentation:
 [IAM.ServiceResource.ServerCertificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.ServerCertificate)
+
+Arguments mapping described in
+[ServiceResourceServerCertificateRequestTypeDef](./type_defs.md#serviceresourceservercertificaterequesttypedef).
 
 Arguments:
 
@@ -529,10 +605,15 @@ Returns [ServerCertificate](#servercertificate).
 
 ### IAMServiceResource.SigningCertificate method
 
+Creates a SigningCertificate resource.
+
 Type annotations for `boto3.resource("iam").SigningCertificate` method.
 
 Boto3 documentation:
 [IAM.ServiceResource.SigningCertificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.SigningCertificate)
+
+Arguments mapping described in
+[ServiceResourceSigningCertificateRequestTypeDef](./type_defs.md#serviceresourcesigningcertificaterequesttypedef).
 
 Arguments:
 
@@ -543,10 +624,15 @@ Returns [SigningCertificate](#signingcertificate).
 
 ### IAMServiceResource.User method
 
+Creates a User resource.
+
 Type annotations for `boto3.resource("iam").User` method.
 
 Boto3 documentation:
 [IAM.ServiceResource.User](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.User)
+
+Arguments mapping described in
+[ServiceResourceUserRequestTypeDef](./type_defs.md#serviceresourceuserrequesttypedef).
 
 Arguments:
 
@@ -556,10 +642,15 @@ Returns [User](#user).
 
 ### IAMServiceResource.UserPolicy method
 
+Creates a UserPolicy resource.
+
 Type annotations for `boto3.resource("iam").UserPolicy` method.
 
 Boto3 documentation:
 [IAM.ServiceResource.UserPolicy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.UserPolicy)
+
+Arguments mapping described in
+[ServiceResourceUserPolicyRequestTypeDef](./type_defs.md#serviceresourceuserpolicyrequesttypedef).
 
 Arguments:
 
@@ -570,10 +661,15 @@ Returns [UserPolicy](#userpolicy).
 
 ### IAMServiceResource.VirtualMfaDevice method
 
+Creates a VirtualMfaDevice resource.
+
 Type annotations for `boto3.resource("iam").VirtualMfaDevice` method.
 
 Boto3 documentation:
 [IAM.ServiceResource.VirtualMfaDevice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.VirtualMfaDevice)
+
+Arguments mapping described in
+[ServiceResourceVirtualMfaDeviceRequestTypeDef](./type_defs.md#serviceresourcevirtualmfadevicerequesttypedef).
 
 Arguments:
 
@@ -583,10 +679,15 @@ Returns [VirtualMfaDevice](#virtualmfadevice).
 
 ### IAMServiceResource.change_password method
 
+Changes the password of the IAM user who is calling this operation.
+
 Type annotations for `boto3.resource("iam").change_password` method.
 
 Boto3 documentation:
 [IAM.ServiceResource.change_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.change_password)
+
+Arguments mapping described in
+[ChangePasswordRequestServiceResourceTypeDef](./type_defs.md#changepasswordrequestserviceresourcetypedef).
 
 Keyword-only arguments:
 
@@ -595,10 +696,15 @@ Keyword-only arguments:
 
 ### IAMServiceResource.create_account_alias method
 
+Creates an alias for your AWS account.
+
 Type annotations for `boto3.resource("iam").create_account_alias` method.
 
 Boto3 documentation:
 [IAM.ServiceResource.create_account_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_account_alias)
+
+Arguments mapping described in
+[CreateAccountAliasRequestServiceResourceTypeDef](./type_defs.md#createaccountaliasrequestserviceresourcetypedef).
 
 Keyword-only arguments:
 
@@ -606,11 +712,16 @@ Keyword-only arguments:
 
 ### IAMServiceResource.create_account_password_policy method
 
+Updates the password policy settings for the AWS account.
+
 Type annotations for `boto3.resource("iam").create_account_password_policy`
 method.
 
 Boto3 documentation:
 [IAM.ServiceResource.create_account_password_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_account_password_policy)
+
+Arguments mapping described in
+[UpdateAccountPasswordPolicyRequestServiceResourceTypeDef](./type_defs.md#updateaccountpasswordpolicyrequestserviceresourcetypedef).
 
 Keyword-only arguments:
 
@@ -628,10 +739,15 @@ Returns [AccountPasswordPolicy](#accountpasswordpolicy).
 
 ### IAMServiceResource.create_group method
 
+Creates a new group.
+
 Type annotations for `boto3.resource("iam").create_group` method.
 
 Boto3 documentation:
 [IAM.ServiceResource.create_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_group)
+
+Arguments mapping described in
+[CreateGroupRequestServiceResourceTypeDef](./type_defs.md#creategrouprequestserviceresourcetypedef).
 
 Keyword-only arguments:
 
@@ -642,10 +758,15 @@ Returns [Group](#group).
 
 ### IAMServiceResource.create_instance_profile method
 
+Creates a new instance profile.
+
 Type annotations for `boto3.resource("iam").create_instance_profile` method.
 
 Boto3 documentation:
 [IAM.ServiceResource.create_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_instance_profile)
+
+Arguments mapping described in
+[CreateInstanceProfileRequestServiceResourceTypeDef](./type_defs.md#createinstanceprofilerequestserviceresourcetypedef).
 
 Keyword-only arguments:
 
@@ -657,10 +778,15 @@ Returns [InstanceProfile](#instanceprofile).
 
 ### IAMServiceResource.create_policy method
 
+Creates a new managed policy for your AWS account.
+
 Type annotations for `boto3.resource("iam").create_policy` method.
 
 Boto3 documentation:
 [IAM.ServiceResource.create_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_policy)
+
+Arguments mapping described in
+[CreatePolicyRequestServiceResourceTypeDef](./type_defs.md#createpolicyrequestserviceresourcetypedef).
 
 Keyword-only arguments:
 
@@ -674,10 +800,15 @@ Returns [Policy](#policy).
 
 ### IAMServiceResource.create_role method
 
+Creates a new role for your AWS account.
+
 Type annotations for `boto3.resource("iam").create_role` method.
 
 Boto3 documentation:
 [IAM.ServiceResource.create_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_role)
+
+Arguments mapping described in
+[CreateRoleRequestServiceResourceTypeDef](./type_defs.md#createrolerequestserviceresourcetypedef).
 
 Keyword-only arguments:
 
@@ -693,10 +824,16 @@ Returns [Role](#role).
 
 ### IAMServiceResource.create_saml_provider method
 
+Creates an IAM resource that describes an identity provider (IdP) that supports
+SAML 2.0.
+
 Type annotations for `boto3.resource("iam").create_saml_provider` method.
 
 Boto3 documentation:
 [IAM.ServiceResource.create_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_saml_provider)
+
+Arguments mapping described in
+[CreateSAMLProviderRequestServiceResourceTypeDef](./type_defs.md#createsamlproviderrequestserviceresourcetypedef).
 
 Keyword-only arguments:
 
@@ -708,10 +845,15 @@ Returns [SamlProvider](#samlprovider).
 
 ### IAMServiceResource.create_server_certificate method
 
+Uploads a server certificate entity for the AWS account.
+
 Type annotations for `boto3.resource("iam").create_server_certificate` method.
 
 Boto3 documentation:
 [IAM.ServiceResource.create_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_server_certificate)
+
+Arguments mapping described in
+[UploadServerCertificateRequestServiceResourceTypeDef](./type_defs.md#uploadservercertificaterequestserviceresourcetypedef).
 
 Keyword-only arguments:
 
@@ -726,10 +868,16 @@ Returns [ServerCertificate](#servercertificate).
 
 ### IAMServiceResource.create_signing_certificate method
 
+Uploads an X.509 signing certificate and associates it with the specified IAM
+user.
+
 Type annotations for `boto3.resource("iam").create_signing_certificate` method.
 
 Boto3 documentation:
 [IAM.ServiceResource.create_signing_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_signing_certificate)
+
+Arguments mapping described in
+[UploadSigningCertificateRequestServiceResourceTypeDef](./type_defs.md#uploadsigningcertificaterequestserviceresourcetypedef).
 
 Keyword-only arguments:
 
@@ -740,10 +888,15 @@ Returns [SigningCertificate](#signingcertificate).
 
 ### IAMServiceResource.create_user method
 
+Creates a new IAM user for your AWS account.
+
 Type annotations for `boto3.resource("iam").create_user` method.
 
 Boto3 documentation:
 [IAM.ServiceResource.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_user)
+
+Arguments mapping described in
+[CreateUserRequestServiceResourceTypeDef](./type_defs.md#createuserrequestserviceresourcetypedef).
 
 Keyword-only arguments:
 
@@ -756,10 +909,15 @@ Returns [User](#user).
 
 ### IAMServiceResource.create_virtual_mfa_device method
 
+Creates a new virtual MFA device for the AWS account.
+
 Type annotations for `boto3.resource("iam").create_virtual_mfa_device` method.
 
 Boto3 documentation:
 [IAM.ServiceResource.create_virtual_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServiceResource.create_virtual_mfa_device)
+
+Arguments mapping described in
+[CreateVirtualMFADeviceRequestServiceResourceTypeDef](./type_defs.md#createvirtualmfadevicerequestserviceresourcetypedef).
 
 Keyword-only arguments:
 
@@ -770,6 +928,8 @@ Keyword-only arguments:
 Returns [VirtualMfaDevice](#virtualmfadevice).
 
 ### IAMServiceResource.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
@@ -806,6 +966,8 @@ Boto3 documentation:
 
 #### AccessKey.User method
 
+Creates a User resource.
+
 Type annotations for `boto3.resource("iam").User` method.
 
 Boto3 documentation:
@@ -815,10 +977,16 @@ Returns [User](#user).
 
 #### AccessKey.activate method
 
+Changes the status of the specified access key from Active to Inactive, or vice
+versa.
+
 Type annotations for `boto3.resource("iam").activate` method.
 
 Boto3 documentation:
 [IAM.AccessKey.activate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKey.activate)
+
+Arguments mapping described in
+[UpdateAccessKeyRequestAccessKeyTypeDef](./type_defs.md#updateaccesskeyrequestaccesskeytypedef).
 
 Keyword-only arguments:
 
@@ -826,10 +994,16 @@ Keyword-only arguments:
 
 #### AccessKey.deactivate method
 
+Changes the status of the specified access key from Active to Inactive, or vice
+versa.
+
 Type annotations for `boto3.resource("iam").deactivate` method.
 
 Boto3 documentation:
 [IAM.AccessKey.deactivate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKey.deactivate)
+
+Arguments mapping described in
+[UpdateAccessKeyRequestAccessKeyTypeDef](./type_defs.md#updateaccesskeyrequestaccesskeytypedef).
 
 Keyword-only arguments:
 
@@ -837,12 +1011,16 @@ Keyword-only arguments:
 
 #### AccessKey.delete method
 
+Deletes the access key pair associated with the specified IAM user.
+
 Type annotations for `boto3.resource("iam").delete` method.
 
 Boto3 documentation:
 [IAM.AccessKey.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKey.delete)
 
 #### AccessKey.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
@@ -881,10 +1059,16 @@ Boto3 documentation:
 
 #### AccessKeyPair.activate method
 
+Changes the status of the specified access key from Active to Inactive, or vice
+versa.
+
 Type annotations for `boto3.resource("iam").activate` method.
 
 Boto3 documentation:
 [IAM.AccessKeyPair.activate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKeyPair.activate)
+
+Arguments mapping described in
+[UpdateAccessKeyRequestAccessKeyPairTypeDef](./type_defs.md#updateaccesskeyrequestaccesskeypairtypedef).
 
 Keyword-only arguments:
 
@@ -892,10 +1076,16 @@ Keyword-only arguments:
 
 #### AccessKeyPair.deactivate method
 
+Changes the status of the specified access key from Active to Inactive, or vice
+versa.
+
 Type annotations for `boto3.resource("iam").deactivate` method.
 
 Boto3 documentation:
 [IAM.AccessKeyPair.deactivate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKeyPair.deactivate)
+
+Arguments mapping described in
+[UpdateAccessKeyRequestAccessKeyPairTypeDef](./type_defs.md#updateaccesskeyrequestaccesskeypairtypedef).
 
 Keyword-only arguments:
 
@@ -903,12 +1093,16 @@ Keyword-only arguments:
 
 #### AccessKeyPair.delete method
 
+Deletes the access key pair associated with the specified IAM user.
+
 Type annotations for `boto3.resource("iam").delete` method.
 
 Boto3 documentation:
 [IAM.AccessKeyPair.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKeyPair.delete)
 
 #### AccessKeyPair.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
@@ -950,12 +1144,16 @@ Boto3 documentation:
 
 #### AccountPasswordPolicy.delete method
 
+Deletes the password policy for the AWS account.
+
 Type annotations for `boto3.resource("iam").delete` method.
 
 Boto3 documentation:
 [IAM.AccountPasswordPolicy.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountPasswordPolicy.delete)
 
 #### AccountPasswordPolicy.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
@@ -966,12 +1164,18 @@ Returns `List`\[`str`\].
 
 #### AccountPasswordPolicy.load method
 
+Calls :py:meth:`IAM.Client.get_account_password_policy` to update the
+attributes of the AccountPasswordPolicy resource.
+
 Type annotations for `boto3.resource("iam").load` method.
 
 Boto3 documentation:
 [IAM.AccountPasswordPolicy.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountPasswordPolicy.load)
 
 #### AccountPasswordPolicy.reload method
+
+Calls :py:meth:`IAM.Client.get_account_password_policy` to update the
+attributes of the AccountPasswordPolicy resource.
 
 Type annotations for `boto3.resource("iam").reload` method.
 
@@ -980,10 +1184,15 @@ Boto3 documentation:
 
 #### AccountPasswordPolicy.update method
 
+Updates the password policy settings for the AWS account.
+
 Type annotations for `boto3.resource("iam").update` method.
 
 Boto3 documentation:
 [IAM.AccountPasswordPolicy.update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountPasswordPolicy.update)
+
+Arguments mapping described in
+[UpdateAccountPasswordPolicyRequestAccountPasswordPolicyTypeDef](./type_defs.md#updateaccountpasswordpolicyrequestaccountpasswordpolicytypedef).
 
 Keyword-only arguments:
 
@@ -1021,6 +1230,8 @@ Boto3 documentation:
 
 #### AccountSummary.get_available_subresources method
 
+Returns a list of all the available sub-resources for this Resource.
+
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
 Boto3 documentation:
@@ -1030,12 +1241,18 @@ Returns `List`\[`str`\].
 
 #### AccountSummary.load method
 
+Calls :py:meth:`IAM.Client.get_account_summary` to update the attributes of the
+AccountSummary resource.
+
 Type annotations for `boto3.resource("iam").load` method.
 
 Boto3 documentation:
 [IAM.AccountSummary.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountSummary.load)
 
 #### AccountSummary.reload method
+
+Calls :py:meth:`IAM.Client.get_account_summary` to update the attributes of the
+AccountSummary resource.
 
 Type annotations for `boto3.resource("iam").reload` method.
 
@@ -1066,6 +1283,8 @@ Boto3 documentation:
 
 #### AssumeRolePolicy.Role method
 
+Creates a Role resource.
+
 Type annotations for `boto3.resource("iam").Role` method.
 
 Boto3 documentation:
@@ -1074,6 +1293,8 @@ Boto3 documentation:
 Returns [Role](#role).
 
 #### AssumeRolePolicy.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
@@ -1084,10 +1305,15 @@ Returns `List`\[`str`\].
 
 #### AssumeRolePolicy.update method
 
+Updates the policy that grants an IAM entity permission to assume a role.
+
 Type annotations for `boto3.resource("iam").update` method.
 
 Boto3 documentation:
 [IAM.AssumeRolePolicy.update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AssumeRolePolicy.update)
+
+Arguments mapping described in
+[UpdateAssumeRolePolicyRequestAssumeRolePolicyTypeDef](./type_defs.md#updateassumerolepolicyrequestassumerolepolicytypedef).
 
 Keyword-only arguments:
 
@@ -1193,6 +1419,8 @@ Boto3 documentation:
 
 #### CurrentUser.get_available_subresources method
 
+Returns a list of all the available sub-resources for this Resource.
+
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
 Boto3 documentation:
@@ -1202,12 +1430,18 @@ Returns `List`\[`str`\].
 
 #### CurrentUser.load method
 
+Calls :py:meth:`IAM.Client.get_user` to update the attributes of the
+CurrentUser resource.
+
 Type annotations for `boto3.resource("iam").load` method.
 
 Boto3 documentation:
 [IAM.CurrentUser.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.CurrentUser.load)
 
 #### CurrentUser.reload method
+
+Calls :py:meth:`IAM.Client.get_user` to update the attributes of the
+CurrentUser resource.
 
 Type annotations for `boto3.resource("iam").reload` method.
 
@@ -1307,10 +1541,15 @@ Boto3 documentation:
 
 #### Group.Policy method
 
+Creates a GroupPolicy resource.
+
 Type annotations for `boto3.resource("iam").Policy` method.
 
 Boto3 documentation:
 [IAM.Group.Policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.Policy)
+
+Arguments mapping described in
+[GroupPolicyRequestTypeDef](./type_defs.md#grouppolicyrequesttypedef).
 
 Arguments:
 
@@ -1320,10 +1559,15 @@ Returns [GroupPolicy](#grouppolicy).
 
 #### Group.add_user method
 
+Adds the specified user to the specified group.
+
 Type annotations for `boto3.resource("iam").add_user` method.
 
 Boto3 documentation:
 [IAM.Group.add_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.add_user)
+
+Arguments mapping described in
+[AddUserToGroupRequestGroupTypeDef](./type_defs.md#addusertogrouprequestgrouptypedef).
 
 Keyword-only arguments:
 
@@ -1331,10 +1575,15 @@ Keyword-only arguments:
 
 #### Group.attach_policy method
 
+Attaches the specified managed policy to the specified IAM group.
+
 Type annotations for `boto3.resource("iam").attach_policy` method.
 
 Boto3 documentation:
 [IAM.Group.attach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.attach_policy)
+
+Arguments mapping described in
+[AttachGroupPolicyRequestGroupTypeDef](./type_defs.md#attachgrouppolicyrequestgrouptypedef).
 
 Keyword-only arguments:
 
@@ -1342,10 +1591,15 @@ Keyword-only arguments:
 
 #### Group.create method
 
+Creates a new group.
+
 Type annotations for `boto3.resource("iam").create` method.
 
 Boto3 documentation:
 [IAM.Group.create](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.create)
+
+Arguments mapping described in
+[CreateGroupRequestGroupTypeDef](./type_defs.md#creategrouprequestgrouptypedef).
 
 Keyword-only arguments:
 
@@ -1355,10 +1609,16 @@ Returns [Group](#group).
 
 #### Group.create_policy method
 
+Adds or updates an inline policy document that is embedded in the specified IAM
+group.
+
 Type annotations for `boto3.resource("iam").create_policy` method.
 
 Boto3 documentation:
 [IAM.Group.create_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.create_policy)
+
+Arguments mapping described in
+[PutGroupPolicyRequestGroupTypeDef](./type_defs.md#putgrouppolicyrequestgrouptypedef).
 
 Keyword-only arguments:
 
@@ -1369,6 +1629,8 @@ Returns [GroupPolicy](#grouppolicy).
 
 #### Group.delete method
 
+Deletes the specified IAM group.
+
 Type annotations for `boto3.resource("iam").delete` method.
 
 Boto3 documentation:
@@ -1376,16 +1638,23 @@ Boto3 documentation:
 
 #### Group.detach_policy method
 
+Removes the specified managed policy from the specified IAM group.
+
 Type annotations for `boto3.resource("iam").detach_policy` method.
 
 Boto3 documentation:
 [IAM.Group.detach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.detach_policy)
+
+Arguments mapping described in
+[DetachGroupPolicyRequestGroupTypeDef](./type_defs.md#detachgrouppolicyrequestgrouptypedef).
 
 Keyword-only arguments:
 
 - `PolicyArn`: `str` *(required)*
 
 #### Group.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
@@ -1396,12 +1665,18 @@ Returns `List`\[`str`\].
 
 #### Group.load method
 
+Calls :py:meth:`IAM.Client.get_group` to update the attributes of the Group
+resource.
+
 Type annotations for `boto3.resource("iam").load` method.
 
 Boto3 documentation:
 [IAM.Group.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.load)
 
 #### Group.reload method
+
+Calls :py:meth:`IAM.Client.get_group` to update the attributes of the Group
+resource.
 
 Type annotations for `boto3.resource("iam").reload` method.
 
@@ -1410,10 +1685,15 @@ Boto3 documentation:
 
 #### Group.remove_user method
 
+Removes the specified user from the specified group.
+
 Type annotations for `boto3.resource("iam").remove_user` method.
 
 Boto3 documentation:
 [IAM.Group.remove_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.remove_user)
+
+Arguments mapping described in
+[RemoveUserFromGroupRequestGroupTypeDef](./type_defs.md#removeuserfromgrouprequestgrouptypedef).
 
 Keyword-only arguments:
 
@@ -1421,10 +1701,15 @@ Keyword-only arguments:
 
 #### Group.update method
 
+Updates the name and/or the path of the specified IAM group.
+
 Type annotations for `boto3.resource("iam").update` method.
 
 Boto3 documentation:
 [IAM.Group.update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.update)
+
+Arguments mapping described in
+[UpdateGroupRequestGroupTypeDef](./type_defs.md#updategrouprequestgrouptypedef).
 
 Keyword-only arguments:
 
@@ -1460,6 +1745,8 @@ Boto3 documentation:
 
 #### GroupPolicy.Group method
 
+Creates a Group resource.
+
 Type annotations for `boto3.resource("iam").Group` method.
 
 Boto3 documentation:
@@ -1469,12 +1756,17 @@ Returns [Group](#group).
 
 #### GroupPolicy.delete method
 
+Deletes the specified inline policy that is embedded in the specified IAM
+group.
+
 Type annotations for `boto3.resource("iam").delete` method.
 
 Boto3 documentation:
 [IAM.GroupPolicy.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.GroupPolicy.delete)
 
 #### GroupPolicy.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
@@ -1485,6 +1777,9 @@ Returns `List`\[`str`\].
 
 #### GroupPolicy.load method
 
+Calls :py:meth:`IAM.Client.get_group_policy` to update the attributes of the
+GroupPolicy resource.
+
 Type annotations for `boto3.resource("iam").load` method.
 
 Boto3 documentation:
@@ -1492,16 +1787,25 @@ Boto3 documentation:
 
 #### GroupPolicy.put method
 
+Adds or updates an inline policy document that is embedded in the specified IAM
+group.
+
 Type annotations for `boto3.resource("iam").put` method.
 
 Boto3 documentation:
 [IAM.GroupPolicy.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.GroupPolicy.put)
+
+Arguments mapping described in
+[PutGroupPolicyRequestGroupPolicyTypeDef](./type_defs.md#putgrouppolicyrequestgrouppolicytypedef).
 
 Keyword-only arguments:
 
 - `PolicyDocument`: `str` *(required)*
 
 #### GroupPolicy.reload method
+
+Calls :py:meth:`IAM.Client.get_group_policy` to update the attributes of the
+GroupPolicy resource.
 
 Type annotations for `boto3.resource("iam").reload` method.
 
@@ -1540,10 +1844,15 @@ Boto3 documentation:
 
 #### InstanceProfile.add_role method
 
+Adds the specified IAM role to the specified instance profile.
+
 Type annotations for `boto3.resource("iam").add_role` method.
 
 Boto3 documentation:
 [IAM.InstanceProfile.add_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.add_role)
+
+Arguments mapping described in
+[AddRoleToInstanceProfileRequestInstanceProfileTypeDef](./type_defs.md#addroletoinstanceprofilerequestinstanceprofiletypedef).
 
 Keyword-only arguments:
 
@@ -1551,12 +1860,16 @@ Keyword-only arguments:
 
 #### InstanceProfile.delete method
 
+Deletes the specified instance profile.
+
 Type annotations for `boto3.resource("iam").delete` method.
 
 Boto3 documentation:
 [IAM.InstanceProfile.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.delete)
 
 #### InstanceProfile.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
@@ -1567,12 +1880,18 @@ Returns `List`\[`str`\].
 
 #### InstanceProfile.load method
 
+Calls :py:meth:`IAM.Client.get_instance_profile` to update the attributes of
+the InstanceProfile resource.
+
 Type annotations for `boto3.resource("iam").load` method.
 
 Boto3 documentation:
 [IAM.InstanceProfile.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.load)
 
 #### InstanceProfile.reload method
+
+Calls :py:meth:`IAM.Client.get_instance_profile` to update the attributes of
+the InstanceProfile resource.
 
 Type annotations for `boto3.resource("iam").reload` method.
 
@@ -1581,10 +1900,15 @@ Boto3 documentation:
 
 #### InstanceProfile.remove_role method
 
+Removes the specified IAM role from the specified EC2 instance profile.
+
 Type annotations for `boto3.resource("iam").remove_role` method.
 
 Boto3 documentation:
 [IAM.InstanceProfile.remove_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.remove_role)
+
+Arguments mapping described in
+[RemoveRoleFromInstanceProfileRequestInstanceProfileTypeDef](./type_defs.md#removerolefrominstanceprofilerequestinstanceprofiletypedef).
 
 Keyword-only arguments:
 
@@ -1616,6 +1940,8 @@ Boto3 documentation:
 
 #### LoginProfile.User method
 
+Creates a User resource.
+
 Type annotations for `boto3.resource("iam").User` method.
 
 Boto3 documentation:
@@ -1625,10 +1951,15 @@ Returns [User](#user).
 
 #### LoginProfile.create method
 
+Creates a password for the specified IAM user.
+
 Type annotations for `boto3.resource("iam").create` method.
 
 Boto3 documentation:
 [IAM.LoginProfile.create](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.create)
+
+Arguments mapping described in
+[CreateLoginProfileRequestLoginProfileTypeDef](./type_defs.md#createloginprofilerequestloginprofiletypedef).
 
 Keyword-only arguments:
 
@@ -1639,12 +1970,17 @@ Returns [LoginProfile](#loginprofile).
 
 #### LoginProfile.delete method
 
+Deletes the password for the specified IAM user, which terminates the user's
+ability to access AWS services through the AWS Management Console.
+
 Type annotations for `boto3.resource("iam").delete` method.
 
 Boto3 documentation:
 [IAM.LoginProfile.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.delete)
 
 #### LoginProfile.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
@@ -1655,12 +1991,18 @@ Returns `List`\[`str`\].
 
 #### LoginProfile.load method
 
+Calls :py:meth:`IAM.Client.get_login_profile` to update the attributes of the
+LoginProfile resource.
+
 Type annotations for `boto3.resource("iam").load` method.
 
 Boto3 documentation:
 [IAM.LoginProfile.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.load)
 
 #### LoginProfile.reload method
+
+Calls :py:meth:`IAM.Client.get_login_profile` to update the attributes of the
+LoginProfile resource.
 
 Type annotations for `boto3.resource("iam").reload` method.
 
@@ -1669,10 +2011,15 @@ Boto3 documentation:
 
 #### LoginProfile.update method
 
+Changes the password for the specified IAM user.
+
 Type annotations for `boto3.resource("iam").update` method.
 
 Boto3 documentation:
 [IAM.LoginProfile.update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.update)
+
+Arguments mapping described in
+[UpdateLoginProfileRequestLoginProfileTypeDef](./type_defs.md#updateloginprofilerequestloginprofiletypedef).
 
 Keyword-only arguments:
 
@@ -1705,6 +2052,8 @@ Boto3 documentation:
 
 #### MfaDevice.User method
 
+Creates a User resource.
+
 Type annotations for `boto3.resource("iam").User` method.
 
 Boto3 documentation:
@@ -1714,10 +2063,15 @@ Returns [User](#user).
 
 #### MfaDevice.associate method
 
+Enables the specified MFA device and associates it with the specified IAM user.
+
 Type annotations for `boto3.resource("iam").associate` method.
 
 Boto3 documentation:
 [IAM.MfaDevice.associate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.MfaDevice.associate)
+
+Arguments mapping described in
+[EnableMFADeviceRequestMfaDeviceTypeDef](./type_defs.md#enablemfadevicerequestmfadevicetypedef).
 
 Keyword-only arguments:
 
@@ -1726,12 +2080,17 @@ Keyword-only arguments:
 
 #### MfaDevice.disassociate method
 
+Deactivates the specified MFA device and removes it from association with the
+user name for which it was originally enabled.
+
 Type annotations for `boto3.resource("iam").disassociate` method.
 
 Boto3 documentation:
 [IAM.MfaDevice.disassociate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.MfaDevice.disassociate)
 
 #### MfaDevice.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
@@ -1742,10 +2101,16 @@ Returns `List`\[`str`\].
 
 #### MfaDevice.resync method
 
+Synchronizes the specified MFA device with its IAM resource object on the AWS
+servers.
+
 Type annotations for `boto3.resource("iam").resync` method.
 
 Boto3 documentation:
 [IAM.MfaDevice.resync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.MfaDevice.resync)
+
+Arguments mapping described in
+[ResyncMFADeviceRequestMfaDeviceTypeDef](./type_defs.md#resyncmfadevicerequestmfadevicetypedef).
 
 Keyword-only arguments:
 
@@ -1876,10 +2241,15 @@ Boto3 documentation:
 
 #### Policy.attach_group method
 
+Attaches the specified managed policy to the specified IAM group.
+
 Type annotations for `boto3.resource("iam").attach_group` method.
 
 Boto3 documentation:
 [IAM.Policy.attach_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.attach_group)
+
+Arguments mapping described in
+[AttachGroupPolicyRequestPolicyTypeDef](./type_defs.md#attachgrouppolicyrequestpolicytypedef).
 
 Keyword-only arguments:
 
@@ -1887,10 +2257,15 @@ Keyword-only arguments:
 
 #### Policy.attach_role method
 
+Attaches the specified managed policy to the specified IAM role.
+
 Type annotations for `boto3.resource("iam").attach_role` method.
 
 Boto3 documentation:
 [IAM.Policy.attach_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.attach_role)
+
+Arguments mapping described in
+[AttachRolePolicyRequestPolicyTypeDef](./type_defs.md#attachrolepolicyrequestpolicytypedef).
 
 Keyword-only arguments:
 
@@ -1898,10 +2273,15 @@ Keyword-only arguments:
 
 #### Policy.attach_user method
 
+Attaches the specified managed policy to the specified user.
+
 Type annotations for `boto3.resource("iam").attach_user` method.
 
 Boto3 documentation:
 [IAM.Policy.attach_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.attach_user)
+
+Arguments mapping described in
+[AttachUserPolicyRequestPolicyTypeDef](./type_defs.md#attachuserpolicyrequestpolicytypedef).
 
 Keyword-only arguments:
 
@@ -1909,10 +2289,15 @@ Keyword-only arguments:
 
 #### Policy.create_version method
 
+Creates a new version of the specified managed policy.
+
 Type annotations for `boto3.resource("iam").create_version` method.
 
 Boto3 documentation:
 [IAM.Policy.create_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.create_version)
+
+Arguments mapping described in
+[CreatePolicyVersionRequestPolicyTypeDef](./type_defs.md#createpolicyversionrequestpolicytypedef).
 
 Keyword-only arguments:
 
@@ -1923,6 +2308,8 @@ Returns [PolicyVersion](#policyversion).
 
 #### Policy.delete method
 
+Deletes the specified managed policy.
+
 Type annotations for `boto3.resource("iam").delete` method.
 
 Boto3 documentation:
@@ -1930,10 +2317,15 @@ Boto3 documentation:
 
 #### Policy.detach_group method
 
+Removes the specified managed policy from the specified IAM group.
+
 Type annotations for `boto3.resource("iam").detach_group` method.
 
 Boto3 documentation:
 [IAM.Policy.detach_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.detach_group)
+
+Arguments mapping described in
+[DetachGroupPolicyRequestPolicyTypeDef](./type_defs.md#detachgrouppolicyrequestpolicytypedef).
 
 Keyword-only arguments:
 
@@ -1941,10 +2333,15 @@ Keyword-only arguments:
 
 #### Policy.detach_role method
 
+Removes the specified managed policy from the specified role.
+
 Type annotations for `boto3.resource("iam").detach_role` method.
 
 Boto3 documentation:
 [IAM.Policy.detach_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.detach_role)
+
+Arguments mapping described in
+[DetachRolePolicyRequestPolicyTypeDef](./type_defs.md#detachrolepolicyrequestpolicytypedef).
 
 Keyword-only arguments:
 
@@ -1952,16 +2349,23 @@ Keyword-only arguments:
 
 #### Policy.detach_user method
 
+Removes the specified managed policy from the specified user.
+
 Type annotations for `boto3.resource("iam").detach_user` method.
 
 Boto3 documentation:
 [IAM.Policy.detach_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.detach_user)
+
+Arguments mapping described in
+[DetachUserPolicyRequestPolicyTypeDef](./type_defs.md#detachuserpolicyrequestpolicytypedef).
 
 Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 
 #### Policy.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
@@ -1972,12 +2376,18 @@ Returns `List`\[`str`\].
 
 #### Policy.load method
 
+Calls :py:meth:`IAM.Client.get_policy` to update the attributes of the Policy
+resource.
+
 Type annotations for `boto3.resource("iam").load` method.
 
 Boto3 documentation:
 [IAM.Policy.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.load)
 
 #### Policy.reload method
+
+Calls :py:meth:`IAM.Client.get_policy` to update the attributes of the Policy
+resource.
 
 Type annotations for `boto3.resource("iam").reload` method.
 
@@ -2012,12 +2422,16 @@ Boto3 documentation:
 
 #### PolicyVersion.delete method
 
+Deletes the specified version from the specified managed policy.
+
 Type annotations for `boto3.resource("iam").delete` method.
 
 Boto3 documentation:
 [IAM.PolicyVersion.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.PolicyVersion.delete)
 
 #### PolicyVersion.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
@@ -2028,6 +2442,9 @@ Returns `List`\[`str`\].
 
 #### PolicyVersion.load method
 
+Calls :py:meth:`IAM.Client.get_policy_version` to update the attributes of the
+PolicyVersion resource.
+
 Type annotations for `boto3.resource("iam").load` method.
 
 Boto3 documentation:
@@ -2035,12 +2452,18 @@ Boto3 documentation:
 
 #### PolicyVersion.reload method
 
+Calls :py:meth:`IAM.Client.get_policy_version` to update the attributes of the
+PolicyVersion resource.
+
 Type annotations for `boto3.resource("iam").reload` method.
 
 Boto3 documentation:
 [IAM.PolicyVersion.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.PolicyVersion.reload)
 
 #### PolicyVersion.set_as_default method
+
+Sets the specified version of the specified policy as the policy's default
+(operative) version.
 
 Type annotations for `boto3.resource("iam").set_as_default` method.
 
@@ -2148,6 +2571,8 @@ Boto3 documentation:
 
 #### Role.AssumeRolePolicy method
 
+Creates a AssumeRolePolicy resource.
+
 Type annotations for `boto3.resource("iam").AssumeRolePolicy` method.
 
 Boto3 documentation:
@@ -2157,10 +2582,15 @@ Returns [AssumeRolePolicy](#assumerolepolicy).
 
 #### Role.Policy method
 
+Creates a RolePolicy resource.
+
 Type annotations for `boto3.resource("iam").Policy` method.
 
 Boto3 documentation:
 [IAM.Role.Policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.Policy)
+
+Arguments mapping described in
+[RolePolicyRequestTypeDef](./type_defs.md#rolepolicyrequesttypedef).
 
 Arguments:
 
@@ -2170,16 +2600,23 @@ Returns [RolePolicy](#rolepolicy).
 
 #### Role.attach_policy method
 
+Attaches the specified managed policy to the specified IAM role.
+
 Type annotations for `boto3.resource("iam").attach_policy` method.
 
 Boto3 documentation:
 [IAM.Role.attach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.attach_policy)
+
+Arguments mapping described in
+[AttachRolePolicyRequestRoleTypeDef](./type_defs.md#attachrolepolicyrequestroletypedef).
 
 Keyword-only arguments:
 
 - `PolicyArn`: `str` *(required)*
 
 #### Role.delete method
+
+Deletes the specified role.
 
 Type annotations for `boto3.resource("iam").delete` method.
 
@@ -2188,16 +2625,23 @@ Boto3 documentation:
 
 #### Role.detach_policy method
 
+Removes the specified managed policy from the specified role.
+
 Type annotations for `boto3.resource("iam").detach_policy` method.
 
 Boto3 documentation:
 [IAM.Role.detach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.detach_policy)
+
+Arguments mapping described in
+[DetachRolePolicyRequestRoleTypeDef](./type_defs.md#detachrolepolicyrequestroletypedef).
 
 Keyword-only arguments:
 
 - `PolicyArn`: `str` *(required)*
 
 #### Role.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
@@ -2208,12 +2652,18 @@ Returns `List`\[`str`\].
 
 #### Role.load method
 
+Calls :py:meth:`IAM.Client.get_role` to update the attributes of the Role
+resource.
+
 Type annotations for `boto3.resource("iam").load` method.
 
 Boto3 documentation:
 [IAM.Role.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.load)
 
 #### Role.reload method
+
+Calls :py:meth:`IAM.Client.get_role` to update the attributes of the Role
+resource.
 
 Type annotations for `boto3.resource("iam").reload` method.
 
@@ -2247,6 +2697,8 @@ Boto3 documentation:
 
 #### RolePolicy.Role method
 
+Creates a Role resource.
+
 Type annotations for `boto3.resource("iam").Role` method.
 
 Boto3 documentation:
@@ -2256,12 +2708,16 @@ Returns [Role](#role).
 
 #### RolePolicy.delete method
 
+Deletes the specified inline policy that is embedded in the specified IAM role.
+
 Type annotations for `boto3.resource("iam").delete` method.
 
 Boto3 documentation:
 [IAM.RolePolicy.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.RolePolicy.delete)
 
 #### RolePolicy.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
@@ -2272,6 +2728,9 @@ Returns `List`\[`str`\].
 
 #### RolePolicy.load method
 
+Calls :py:meth:`IAM.Client.get_role_policy` to update the attributes of the
+RolePolicy resource.
+
 Type annotations for `boto3.resource("iam").load` method.
 
 Boto3 documentation:
@@ -2279,16 +2738,25 @@ Boto3 documentation:
 
 #### RolePolicy.put method
 
+Adds or updates an inline policy document that is embedded in the specified IAM
+role.
+
 Type annotations for `boto3.resource("iam").put` method.
 
 Boto3 documentation:
 [IAM.RolePolicy.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.RolePolicy.put)
+
+Arguments mapping described in
+[PutRolePolicyRequestRolePolicyTypeDef](./type_defs.md#putrolepolicyrequestrolepolicytypedef).
 
 Keyword-only arguments:
 
 - `PolicyDocument`: `str` *(required)*
 
 #### RolePolicy.reload method
+
+Calls :py:meth:`IAM.Client.get_role_policy` to update the attributes of the
+RolePolicy resource.
 
 Type annotations for `boto3.resource("iam").reload` method.
 
@@ -2323,12 +2791,16 @@ Boto3 documentation:
 
 #### SamlProvider.delete method
 
+Deletes a SAML provider resource in IAM.
+
 Type annotations for `boto3.resource("iam").delete` method.
 
 Boto3 documentation:
 [IAM.SamlProvider.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SamlProvider.delete)
 
 #### SamlProvider.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
@@ -2339,12 +2811,18 @@ Returns `List`\[`str`\].
 
 #### SamlProvider.load method
 
+Calls :py:meth:`IAM.Client.get_saml_provider` to update the attributes of the
+SamlProvider resource.
+
 Type annotations for `boto3.resource("iam").load` method.
 
 Boto3 documentation:
 [IAM.SamlProvider.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SamlProvider.load)
 
 #### SamlProvider.reload method
+
+Calls :py:meth:`IAM.Client.get_saml_provider` to update the attributes of the
+SamlProvider resource.
 
 Type annotations for `boto3.resource("iam").reload` method.
 
@@ -2353,17 +2831,22 @@ Boto3 documentation:
 
 #### SamlProvider.update method
 
+Updates the metadata document for an existing SAML provider resource object.
+
 Type annotations for `boto3.resource("iam").update` method.
 
 Boto3 documentation:
 [IAM.SamlProvider.update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SamlProvider.update)
+
+Arguments mapping described in
+[UpdateSAMLProviderRequestSamlProviderTypeDef](./type_defs.md#updatesamlproviderrequestsamlprovidertypedef).
 
 Keyword-only arguments:
 
 - `SAMLMetadataDocument`: `str` *(required)*
 
 Returns
-[UpdateSAMLProviderResponseTypeDef](./type_defs.md#updatesamlproviderresponsetypedef).
+[UpdateSAMLProviderResponseResponseTypeDef](./type_defs.md#updatesamlproviderresponseresponsetypedef).
 
 ## ServerCertificate
 
@@ -2393,12 +2876,16 @@ Boto3 documentation:
 
 #### ServerCertificate.delete method
 
+Deletes the specified server certificate.
+
 Type annotations for `boto3.resource("iam").delete` method.
 
 Boto3 documentation:
 [IAM.ServerCertificate.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServerCertificate.delete)
 
 #### ServerCertificate.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
@@ -2409,12 +2896,18 @@ Returns `List`\[`str`\].
 
 #### ServerCertificate.load method
 
+Calls :py:meth:`IAM.Client.get_server_certificate` to update the attributes of
+the ServerCertificate resource.
+
 Type annotations for `boto3.resource("iam").load` method.
 
 Boto3 documentation:
 [IAM.ServerCertificate.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServerCertificate.load)
 
 #### ServerCertificate.reload method
+
+Calls :py:meth:`IAM.Client.get_server_certificate` to update the attributes of
+the ServerCertificate resource.
 
 Type annotations for `boto3.resource("iam").reload` method.
 
@@ -2423,10 +2916,16 @@ Boto3 documentation:
 
 #### ServerCertificate.update method
 
+Updates the name and/or the path of the specified server certificate stored in
+IAM.
+
 Type annotations for `boto3.resource("iam").update` method.
 
 Boto3 documentation:
 [IAM.ServerCertificate.update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServerCertificate.update)
+
+Arguments mapping described in
+[UpdateServerCertificateRequestServerCertificateTypeDef](./type_defs.md#updateservercertificaterequestservercertificatetypedef).
 
 Keyword-only arguments:
 
@@ -2464,6 +2963,8 @@ Boto3 documentation:
 
 #### SigningCertificate.User method
 
+Creates a User resource.
+
 Type annotations for `boto3.resource("iam").User` method.
 
 Boto3 documentation:
@@ -2473,10 +2974,16 @@ Returns [User](#user).
 
 #### SigningCertificate.activate method
 
+Changes the status of the specified user signing certificate from active to
+disabled, or vice versa.
+
 Type annotations for `boto3.resource("iam").activate` method.
 
 Boto3 documentation:
 [IAM.SigningCertificate.activate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SigningCertificate.activate)
+
+Arguments mapping described in
+[UpdateSigningCertificateRequestSigningCertificateTypeDef](./type_defs.md#updatesigningcertificaterequestsigningcertificatetypedef).
 
 Keyword-only arguments:
 
@@ -2484,10 +2991,16 @@ Keyword-only arguments:
 
 #### SigningCertificate.deactivate method
 
+Changes the status of the specified user signing certificate from active to
+disabled, or vice versa.
+
 Type annotations for `boto3.resource("iam").deactivate` method.
 
 Boto3 documentation:
 [IAM.SigningCertificate.deactivate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SigningCertificate.deactivate)
+
+Arguments mapping described in
+[UpdateSigningCertificateRequestSigningCertificateTypeDef](./type_defs.md#updatesigningcertificaterequestsigningcertificatetypedef).
 
 Keyword-only arguments:
 
@@ -2495,12 +3008,16 @@ Keyword-only arguments:
 
 #### SigningCertificate.delete method
 
+Deletes a signing certificate associated with the specified IAM user.
+
 Type annotations for `boto3.resource("iam").delete` method.
 
 Boto3 documentation:
 [IAM.SigningCertificate.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SigningCertificate.delete)
 
 #### SigningCertificate.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
@@ -2667,10 +3184,15 @@ Boto3 documentation:
 
 #### User.AccessKey method
 
+Creates a AccessKey resource.
+
 Type annotations for `boto3.resource("iam").AccessKey` method.
 
 Boto3 documentation:
 [IAM.User.AccessKey](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.AccessKey)
+
+Arguments mapping described in
+[UserAccessKeyRequestTypeDef](./type_defs.md#useraccesskeyrequesttypedef).
 
 Arguments:
 
@@ -2679,6 +3201,8 @@ Arguments:
 Returns [AccessKey](#accesskey).
 
 #### User.LoginProfile method
+
+Creates a LoginProfile resource.
 
 Type annotations for `boto3.resource("iam").LoginProfile` method.
 
@@ -2689,10 +3213,15 @@ Returns [LoginProfile](#loginprofile).
 
 #### User.MfaDevice method
 
+Creates a MfaDevice resource.
+
 Type annotations for `boto3.resource("iam").MfaDevice` method.
 
 Boto3 documentation:
 [IAM.User.MfaDevice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.MfaDevice)
+
+Arguments mapping described in
+[UserMfaDeviceRequestTypeDef](./type_defs.md#usermfadevicerequesttypedef).
 
 Arguments:
 
@@ -2702,10 +3231,15 @@ Returns [MfaDevice](#mfadevice).
 
 #### User.Policy method
 
+Creates a UserPolicy resource.
+
 Type annotations for `boto3.resource("iam").Policy` method.
 
 Boto3 documentation:
 [IAM.User.Policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.Policy)
+
+Arguments mapping described in
+[UserPolicyRequestTypeDef](./type_defs.md#userpolicyrequesttypedef).
 
 Arguments:
 
@@ -2715,10 +3249,15 @@ Returns [UserPolicy](#userpolicy).
 
 #### User.SigningCertificate method
 
+Creates a SigningCertificate resource.
+
 Type annotations for `boto3.resource("iam").SigningCertificate` method.
 
 Boto3 documentation:
 [IAM.User.SigningCertificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.SigningCertificate)
+
+Arguments mapping described in
+[UserSigningCertificateRequestTypeDef](./type_defs.md#usersigningcertificaterequesttypedef).
 
 Arguments:
 
@@ -2728,10 +3267,15 @@ Returns [SigningCertificate](#signingcertificate).
 
 #### User.add_group method
 
+Adds the specified user to the specified group.
+
 Type annotations for `boto3.resource("iam").add_group` method.
 
 Boto3 documentation:
 [IAM.User.add_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.add_group)
+
+Arguments mapping described in
+[AddUserToGroupRequestUserTypeDef](./type_defs.md#addusertogrouprequestusertypedef).
 
 Keyword-only arguments:
 
@@ -2739,10 +3283,15 @@ Keyword-only arguments:
 
 #### User.attach_policy method
 
+Attaches the specified managed policy to the specified user.
+
 Type annotations for `boto3.resource("iam").attach_policy` method.
 
 Boto3 documentation:
 [IAM.User.attach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.attach_policy)
+
+Arguments mapping described in
+[AttachUserPolicyRequestUserTypeDef](./type_defs.md#attachuserpolicyrequestusertypedef).
 
 Keyword-only arguments:
 
@@ -2750,10 +3299,15 @@ Keyword-only arguments:
 
 #### User.create method
 
+Creates a new IAM user for your AWS account.
+
 Type annotations for `boto3.resource("iam").create` method.
 
 Boto3 documentation:
 [IAM.User.create](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.create)
+
+Arguments mapping described in
+[CreateUserRequestUserTypeDef](./type_defs.md#createuserrequestusertypedef).
 
 Keyword-only arguments:
 
@@ -2765,6 +3319,9 @@ Returns [User](#user).
 
 #### User.create_access_key_pair method
 
+Creates a new AWS secret access key and corresponding AWS access key ID for the
+specified user.
+
 Type annotations for `boto3.resource("iam").create_access_key_pair` method.
 
 Boto3 documentation:
@@ -2774,10 +3331,15 @@ Returns [AccessKeyPair](#accesskeypair).
 
 #### User.create_login_profile method
 
+Creates a password for the specified IAM user.
+
 Type annotations for `boto3.resource("iam").create_login_profile` method.
 
 Boto3 documentation:
 [IAM.User.create_login_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.create_login_profile)
+
+Arguments mapping described in
+[CreateLoginProfileRequestUserTypeDef](./type_defs.md#createloginprofilerequestusertypedef).
 
 Keyword-only arguments:
 
@@ -2788,10 +3350,16 @@ Returns [LoginProfile](#loginprofile).
 
 #### User.create_policy method
 
+Adds or updates an inline policy document that is embedded in the specified IAM
+user.
+
 Type annotations for `boto3.resource("iam").create_policy` method.
 
 Boto3 documentation:
 [IAM.User.create_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.create_policy)
+
+Arguments mapping described in
+[PutUserPolicyRequestUserTypeDef](./type_defs.md#putuserpolicyrequestusertypedef).
 
 Keyword-only arguments:
 
@@ -2802,6 +3370,8 @@ Returns [UserPolicy](#userpolicy).
 
 #### User.delete method
 
+Deletes the specified IAM user.
+
 Type annotations for `boto3.resource("iam").delete` method.
 
 Boto3 documentation:
@@ -2809,10 +3379,15 @@ Boto3 documentation:
 
 #### User.detach_policy method
 
+Removes the specified managed policy from the specified user.
+
 Type annotations for `boto3.resource("iam").detach_policy` method.
 
 Boto3 documentation:
 [IAM.User.detach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.detach_policy)
+
+Arguments mapping described in
+[DetachUserPolicyRequestUserTypeDef](./type_defs.md#detachuserpolicyrequestusertypedef).
 
 Keyword-only arguments:
 
@@ -2820,10 +3395,15 @@ Keyword-only arguments:
 
 #### User.enable_mfa method
 
+Enables the specified MFA device and associates it with the specified IAM user.
+
 Type annotations for `boto3.resource("iam").enable_mfa` method.
 
 Boto3 documentation:
 [IAM.User.enable_mfa](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.enable_mfa)
+
+Arguments mapping described in
+[EnableMFADeviceRequestUserTypeDef](./type_defs.md#enablemfadevicerequestusertypedef).
 
 Keyword-only arguments:
 
@@ -2835,6 +3415,8 @@ Returns [MfaDevice](#mfadevice).
 
 #### User.get_available_subresources method
 
+Returns a list of all the available sub-resources for this Resource.
+
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
 Boto3 documentation:
@@ -2844,12 +3426,18 @@ Returns `List`\[`str`\].
 
 #### User.load method
 
+Calls :py:meth:`IAM.Client.get_user` to update the attributes of the User
+resource.
+
 Type annotations for `boto3.resource("iam").load` method.
 
 Boto3 documentation:
 [IAM.User.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.load)
 
 #### User.reload method
+
+Calls :py:meth:`IAM.Client.get_user` to update the attributes of the User
+resource.
 
 Type annotations for `boto3.resource("iam").reload` method.
 
@@ -2858,10 +3446,15 @@ Boto3 documentation:
 
 #### User.remove_group method
 
+Removes the specified user from the specified group.
+
 Type annotations for `boto3.resource("iam").remove_group` method.
 
 Boto3 documentation:
 [IAM.User.remove_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.remove_group)
+
+Arguments mapping described in
+[RemoveUserFromGroupRequestUserTypeDef](./type_defs.md#removeuserfromgrouprequestusertypedef).
 
 Keyword-only arguments:
 
@@ -2869,10 +3462,15 @@ Keyword-only arguments:
 
 #### User.update method
 
+Updates the name and/or the path of the specified IAM user.
+
 Type annotations for `boto3.resource("iam").update` method.
 
 Boto3 documentation:
 [IAM.User.update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.update)
+
+Arguments mapping described in
+[UpdateUserRequestUserTypeDef](./type_defs.md#updateuserrequestusertypedef).
 
 Keyword-only arguments:
 
@@ -2908,6 +3506,8 @@ Boto3 documentation:
 
 #### UserPolicy.User method
 
+Creates a User resource.
+
 Type annotations for `boto3.resource("iam").User` method.
 
 Boto3 documentation:
@@ -2917,12 +3517,16 @@ Returns [User](#user).
 
 #### UserPolicy.delete method
 
+Deletes the specified inline policy that is embedded in the specified IAM user.
+
 Type annotations for `boto3.resource("iam").delete` method.
 
 Boto3 documentation:
 [IAM.UserPolicy.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.UserPolicy.delete)
 
 #### UserPolicy.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 
@@ -2933,6 +3537,9 @@ Returns `List`\[`str`\].
 
 #### UserPolicy.load method
 
+Calls :py:meth:`IAM.Client.get_user_policy` to update the attributes of the
+UserPolicy resource.
+
 Type annotations for `boto3.resource("iam").load` method.
 
 Boto3 documentation:
@@ -2940,16 +3547,25 @@ Boto3 documentation:
 
 #### UserPolicy.put method
 
+Adds or updates an inline policy document that is embedded in the specified IAM
+user.
+
 Type annotations for `boto3.resource("iam").put` method.
 
 Boto3 documentation:
 [IAM.UserPolicy.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.UserPolicy.put)
+
+Arguments mapping described in
+[PutUserPolicyRequestUserPolicyTypeDef](./type_defs.md#putuserpolicyrequestuserpolicytypedef).
 
 Keyword-only arguments:
 
 - `PolicyDocument`: `str` *(required)*
 
 #### UserPolicy.reload method
+
+Calls :py:meth:`IAM.Client.get_user_policy` to update the attributes of the
+UserPolicy resource.
 
 Type annotations for `boto3.resource("iam").reload` method.
 
@@ -2986,12 +3602,16 @@ Boto3 documentation:
 
 #### VirtualMfaDevice.delete method
 
+Deletes a virtual MFA device.
+
 Type annotations for `boto3.resource("iam").delete` method.
 
 Boto3 documentation:
 [IAM.VirtualMfaDevice.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.VirtualMfaDevice.delete)
 
 #### VirtualMfaDevice.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("iam").get_available_subresources` method.
 

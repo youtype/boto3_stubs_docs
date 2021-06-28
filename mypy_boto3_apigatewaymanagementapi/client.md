@@ -57,6 +57,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("apigatewaymanagementapi").can_paginate`
 method.
 
@@ -71,17 +73,24 @@ Returns `bool`.
 
 ### delete_connection
 
+Delete the connection with the provided id.
+
 Type annotations for
 `boto3.client("apigatewaymanagementapi").delete_connection` method.
 
 Boto3 documentation:
 [ApiGatewayManagementApi.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.delete_connection)
 
+Arguments mapping described in
+[DeleteConnectionRequestTypeDef](./type_defs.md#deleteconnectionrequesttypedef).
+
 Keyword-only arguments:
 
 - `ConnectionId`: `str` *(required)*
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for
 `boto3.client("apigatewaymanagementapi").generate_presigned_url` method.
@@ -100,26 +109,36 @@ Returns `str`.
 
 ### get_connection
 
+Get information about the connection with the provided id.
+
 Type annotations for `boto3.client("apigatewaymanagementapi").get_connection`
 method.
 
 Boto3 documentation:
 [ApiGatewayManagementApi.Client.get_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.get_connection)
 
+Arguments mapping described in
+[GetConnectionRequestTypeDef](./type_defs.md#getconnectionrequesttypedef).
+
 Keyword-only arguments:
 
 - `ConnectionId`: `str` *(required)*
 
 Returns
-[GetConnectionResponseTypeDef](./type_defs.md#getconnectionresponsetypedef).
+[GetConnectionResponseResponseTypeDef](./type_defs.md#getconnectionresponseresponsetypedef).
 
 ### post_to_connection
+
+Sends the provided data to the specified connection.
 
 Type annotations for
 `boto3.client("apigatewaymanagementapi").post_to_connection` method.
 
 Boto3 documentation:
 [ApiGatewayManagementApi.Client.post_to_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client.post_to_connection)
+
+Arguments mapping described in
+[PostToConnectionRequestTypeDef](./type_defs.md#posttoconnectionrequesttypedef).
 
 Keyword-only arguments:
 

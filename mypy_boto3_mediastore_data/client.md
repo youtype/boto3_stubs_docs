@@ -60,6 +60,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("mediastore-data").can_paginate` method.
 
 Boto3 documentation:
@@ -73,10 +75,15 @@ Returns `bool`.
 
 ### delete_object
 
+Deletes an object at the specified path.
+
 Type annotations for `boto3.client("mediastore-data").delete_object` method.
 
 Boto3 documentation:
 [MediaStoreData.Client.delete_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.delete_object)
+
+Arguments mapping described in
+[DeleteObjectRequestTypeDef](./type_defs.md#deleteobjectrequesttypedef).
 
 Keyword-only arguments:
 
@@ -86,19 +93,26 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_object
 
+Gets the headers for an object at the specified path.
+
 Type annotations for `boto3.client("mediastore-data").describe_object` method.
 
 Boto3 documentation:
 [MediaStoreData.Client.describe_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.describe_object)
+
+Arguments mapping described in
+[DescribeObjectRequestTypeDef](./type_defs.md#describeobjectrequesttypedef).
 
 Keyword-only arguments:
 
 - `Path`: `str` *(required)*
 
 Returns
-[DescribeObjectResponseTypeDef](./type_defs.md#describeobjectresponsetypedef).
+[DescribeObjectResponseResponseTypeDef](./type_defs.md#describeobjectresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("mediastore-data").generate_presigned_url`
 method.
@@ -117,24 +131,36 @@ Returns `str`.
 
 ### get_object
 
+Downloads the object at the specified path.
+
 Type annotations for `boto3.client("mediastore-data").get_object` method.
 
 Boto3 documentation:
 [MediaStoreData.Client.get_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.get_object)
+
+Arguments mapping described in
+[GetObjectRequestTypeDef](./type_defs.md#getobjectrequesttypedef).
 
 Keyword-only arguments:
 
 - `Path`: `str` *(required)*
 - `Range`: `str`
 
-Returns [GetObjectResponseTypeDef](./type_defs.md#getobjectresponsetypedef).
+Returns
+[GetObjectResponseResponseTypeDef](./type_defs.md#getobjectresponseresponsetypedef).
 
 ### list_items
+
+Provides a list of metadata entries about folders and objects in the specified
+folder.
 
 Type annotations for `boto3.client("mediastore-data").list_items` method.
 
 Boto3 documentation:
 [MediaStoreData.Client.list_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.list_items)
+
+Arguments mapping described in
+[ListItemsRequestTypeDef](./type_defs.md#listitemsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -142,14 +168,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns [ListItemsResponseTypeDef](./type_defs.md#listitemsresponsetypedef).
+Returns
+[ListItemsResponseResponseTypeDef](./type_defs.md#listitemsresponseresponsetypedef).
 
 ### put_object
+
+Uploads an object to the specified path.
 
 Type annotations for `boto3.client("mediastore-data").put_object` method.
 
 Boto3 documentation:
 [MediaStoreData.Client.put_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.put_object)
+
+Arguments mapping described in
+[PutObjectRequestTypeDef](./type_defs.md#putobjectrequesttypedef).
 
 Keyword-only arguments:
 
@@ -162,7 +194,8 @@ Keyword-only arguments:
 - `UploadAvailability`:
   [UploadAvailabilityType](./literals.md#uploadavailabilitytype)
 
-Returns [PutObjectResponseTypeDef](./type_defs.md#putobjectresponsetypedef).
+Returns
+[PutObjectResponseResponseTypeDef](./type_defs.md#putobjectresponseresponsetypedef).
 
 ### get_paginator
 

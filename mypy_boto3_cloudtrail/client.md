@@ -113,10 +113,15 @@ Exceptions:
 
 ### add_tags
 
+Adds one or more tags to a trail, up to a limit of 50.
+
 Type annotations for `boto3.client("cloudtrail").add_tags` method.
 
 Boto3 documentation:
 [CloudTrail.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.add_tags)
+
+Arguments mapping described in
+[AddTagsRequestTypeDef](./type_defs.md#addtagsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -126,6 +131,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("cloudtrail").can_paginate` method.
 
@@ -140,10 +147,16 @@ Returns `bool`.
 
 ### create_trail
 
+Creates a trail that specifies the settings for delivery of log data to an
+Amazon S3 bucket.
+
 Type annotations for `boto3.client("cloudtrail").create_trail` method.
 
 Boto3 documentation:
 [CloudTrail.Client.create_trail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.create_trail)
+
+Arguments mapping described in
+[CreateTrailRequestTypeDef](./type_defs.md#createtrailrequesttypedef).
 
 Keyword-only arguments:
 
@@ -161,14 +174,19 @@ Keyword-only arguments:
 - `TagsList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateTrailResponseTypeDef](./type_defs.md#createtrailresponsetypedef).
+[CreateTrailResponseResponseTypeDef](./type_defs.md#createtrailresponseresponsetypedef).
 
 ### delete_trail
+
+Deletes a trail.
 
 Type annotations for `boto3.client("cloudtrail").delete_trail` method.
 
 Boto3 documentation:
 [CloudTrail.Client.delete_trail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.delete_trail)
+
+Arguments mapping described in
+[DeleteTrailRequestTypeDef](./type_defs.md#deletetrailrequesttypedef).
 
 Keyword-only arguments:
 
@@ -178,10 +196,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_trails
 
+Retrieves settings for one or more trails associated with the current region
+for your account.
+
 Type annotations for `boto3.client("cloudtrail").describe_trails` method.
 
 Boto3 documentation:
 [CloudTrail.Client.describe_trails](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.describe_trails)
+
+Arguments mapping described in
+[DescribeTrailsRequestTypeDef](./type_defs.md#describetrailsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -189,9 +213,11 @@ Keyword-only arguments:
 - `includeShadowTrails`: `bool`
 
 Returns
-[DescribeTrailsResponseTypeDef](./type_defs.md#describetrailsresponsetypedef).
+[DescribeTrailsResponseResponseTypeDef](./type_defs.md#describetrailsresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("cloudtrail").generate_presigned_url`
 method.
@@ -210,129 +236,183 @@ Returns `str`.
 
 ### get_event_selectors
 
+Describes the settings for the event selectors that you configured for your
+trail.
+
 Type annotations for `boto3.client("cloudtrail").get_event_selectors` method.
 
 Boto3 documentation:
 [CloudTrail.Client.get_event_selectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_event_selectors)
+
+Arguments mapping described in
+[GetEventSelectorsRequestTypeDef](./type_defs.md#geteventselectorsrequesttypedef).
 
 Keyword-only arguments:
 
 - `TrailName`: `str` *(required)*
 
 Returns
-[GetEventSelectorsResponseTypeDef](./type_defs.md#geteventselectorsresponsetypedef).
+[GetEventSelectorsResponseResponseTypeDef](./type_defs.md#geteventselectorsresponseresponsetypedef).
 
 ### get_insight_selectors
+
+Describes the settings for the Insights event selectors that you configured for
+your trail.
 
 Type annotations for `boto3.client("cloudtrail").get_insight_selectors` method.
 
 Boto3 documentation:
 [CloudTrail.Client.get_insight_selectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_insight_selectors)
 
+Arguments mapping described in
+[GetInsightSelectorsRequestTypeDef](./type_defs.md#getinsightselectorsrequesttypedef).
+
 Keyword-only arguments:
 
 - `TrailName`: `str` *(required)*
 
 Returns
-[GetInsightSelectorsResponseTypeDef](./type_defs.md#getinsightselectorsresponsetypedef).
+[GetInsightSelectorsResponseResponseTypeDef](./type_defs.md#getinsightselectorsresponseresponsetypedef).
 
 ### get_trail
+
+Returns settings information for a specified trail.
 
 Type annotations for `boto3.client("cloudtrail").get_trail` method.
 
 Boto3 documentation:
 [CloudTrail.Client.get_trail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_trail)
 
+Arguments mapping described in
+[GetTrailRequestTypeDef](./type_defs.md#gettrailrequesttypedef).
+
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
-Returns [GetTrailResponseTypeDef](./type_defs.md#gettrailresponsetypedef).
+Returns
+[GetTrailResponseResponseTypeDef](./type_defs.md#gettrailresponseresponsetypedef).
 
 ### get_trail_status
+
+Returns a JSON-formatted list of information about the specified trail.
 
 Type annotations for `boto3.client("cloudtrail").get_trail_status` method.
 
 Boto3 documentation:
 [CloudTrail.Client.get_trail_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_trail_status)
 
+Arguments mapping described in
+[GetTrailStatusRequestTypeDef](./type_defs.md#gettrailstatusrequesttypedef).
+
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[GetTrailStatusResponseTypeDef](./type_defs.md#gettrailstatusresponsetypedef).
+[GetTrailStatusResponseResponseTypeDef](./type_defs.md#gettrailstatusresponseresponsetypedef).
 
 ### list_public_keys
+
+Returns all public keys whose private keys were used to sign the digest files
+within the specified time range.
 
 Type annotations for `boto3.client("cloudtrail").list_public_keys` method.
 
 Boto3 documentation:
 [CloudTrail.Client.list_public_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_public_keys)
 
+Arguments mapping described in
+[ListPublicKeysRequestTypeDef](./type_defs.md#listpublickeysrequesttypedef).
+
 Keyword-only arguments:
 
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
 - `NextToken`: `str`
 
 Returns
-[ListPublicKeysResponseTypeDef](./type_defs.md#listpublickeysresponsetypedef).
+[ListPublicKeysResponseResponseTypeDef](./type_defs.md#listpublickeysresponseresponsetypedef).
 
 ### list_tags
+
+Lists the tags for the trail in the current region.
 
 Type annotations for `boto3.client("cloudtrail").list_tags` method.
 
 Boto3 documentation:
 [CloudTrail.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_tags)
 
+Arguments mapping described in
+[ListTagsRequestTypeDef](./type_defs.md#listtagsrequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceIdList`: `List`\[`str`\] *(required)*
 - `NextToken`: `str`
 
-Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
+Returns
+[ListTagsResponseResponseTypeDef](./type_defs.md#listtagsresponseresponsetypedef).
 
 ### list_trails
+
+Lists trails that are in the current account.
 
 Type annotations for `boto3.client("cloudtrail").list_trails` method.
 
 Boto3 documentation:
 [CloudTrail.Client.list_trails](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_trails)
 
+Arguments mapping described in
+[ListTrailsRequestTypeDef](./type_defs.md#listtrailsrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 
-Returns [ListTrailsResponseTypeDef](./type_defs.md#listtrailsresponsetypedef).
+Returns
+[ListTrailsResponseResponseTypeDef](./type_defs.md#listtrailsresponseresponsetypedef).
 
 ### lookup_events
+
+Looks up
+`management events <https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail- concepts.html#cloudtrail-concepts-management-events>`\_\_
+or
+`CloudTrail Insights events <https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail- concepts.html#cloudtrail-concepts-insigh...`.
 
 Type annotations for `boto3.client("cloudtrail").lookup_events` method.
 
 Boto3 documentation:
 [CloudTrail.Client.lookup_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.lookup_events)
 
+Arguments mapping described in
+[LookupEventsRequestTypeDef](./type_defs.md#lookupeventsrequesttypedef).
+
 Keyword-only arguments:
 
 - `LookupAttributes`:
   `List`\[[LookupAttributeTypeDef](./type_defs.md#lookupattributetypedef)\]
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
 - `EventCategory`: `Literal['insight']` (see
   [EventCategoryType](./literals.md#eventcategorytype))
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[LookupEventsResponseTypeDef](./type_defs.md#lookupeventsresponsetypedef).
+[LookupEventsResponseResponseTypeDef](./type_defs.md#lookupeventsresponseresponsetypedef).
 
 ### put_event_selectors
+
+Configures an event selector or advanced event selectors for your trail.
 
 Type annotations for `boto3.client("cloudtrail").put_event_selectors` method.
 
 Boto3 documentation:
 [CloudTrail.Client.put_event_selectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.put_event_selectors)
+
+Arguments mapping described in
+[PutEventSelectorsRequestTypeDef](./type_defs.md#puteventselectorsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -343,14 +423,20 @@ Keyword-only arguments:
   `List`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
 
 Returns
-[PutEventSelectorsResponseTypeDef](./type_defs.md#puteventselectorsresponsetypedef).
+[PutEventSelectorsResponseResponseTypeDef](./type_defs.md#puteventselectorsresponseresponsetypedef).
 
 ### put_insight_selectors
+
+Lets you enable Insights event logging by specifying the Insights selectors
+that you want to enable on an existing trail.
 
 Type annotations for `boto3.client("cloudtrail").put_insight_selectors` method.
 
 Boto3 documentation:
 [CloudTrail.Client.put_insight_selectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.put_insight_selectors)
+
+Arguments mapping described in
+[PutInsightSelectorsRequestTypeDef](./type_defs.md#putinsightselectorsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -360,14 +446,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutInsightSelectorsResponseTypeDef](./type_defs.md#putinsightselectorsresponsetypedef).
+[PutInsightSelectorsResponseResponseTypeDef](./type_defs.md#putinsightselectorsresponseresponsetypedef).
 
 ### remove_tags
+
+Removes the specified tags from a trail.
 
 Type annotations for `boto3.client("cloudtrail").remove_tags` method.
 
 Boto3 documentation:
 [CloudTrail.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.remove_tags)
+
+Arguments mapping described in
+[RemoveTagsRequestTypeDef](./type_defs.md#removetagsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -378,10 +469,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### start_logging
 
+Starts the recording of AWS API calls and log file delivery for a trail.
+
 Type annotations for `boto3.client("cloudtrail").start_logging` method.
 
 Boto3 documentation:
 [CloudTrail.Client.start_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.start_logging)
+
+Arguments mapping described in
+[StartLoggingRequestTypeDef](./type_defs.md#startloggingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -391,10 +487,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### stop_logging
 
+Suspends the recording of AWS API calls and log file delivery for the specified
+trail.
+
 Type annotations for `boto3.client("cloudtrail").stop_logging` method.
 
 Boto3 documentation:
 [CloudTrail.Client.stop_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.stop_logging)
+
+Arguments mapping described in
+[StopLoggingRequestTypeDef](./type_defs.md#stoploggingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -404,10 +506,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_trail
 
+Updates the settings that specify delivery of log files.
+
 Type annotations for `boto3.client("cloudtrail").update_trail` method.
 
 Boto3 documentation:
 [CloudTrail.Client.update_trail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.update_trail)
+
+Arguments mapping described in
+[UpdateTrailRequestTypeDef](./type_defs.md#updatetrailrequesttypedef).
 
 Keyword-only arguments:
 
@@ -424,7 +531,7 @@ Keyword-only arguments:
 - `IsOrganizationTrail`: `bool`
 
 Returns
-[UpdateTrailResponseTypeDef](./type_defs.md#updatetrailresponsetypedef).
+[UpdateTrailResponseResponseTypeDef](./type_defs.md#updatetrailresponseresponsetypedef).
 
 ### get_paginator
 

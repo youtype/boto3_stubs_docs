@@ -32,7 +32,7 @@ def get_environment_deployed_waiter() -> EnvironmentDeployedWaiter:
 ```
 
 Boto3 documentation:
-[Proton.Waiter.environment_deployed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.environment_deployed)
+[Proton.Waiter.environment_deployed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.EnvironmentDeployed)
 
 Arguments for `EnvironmentDeployedWaiter.wait` method:
 
@@ -54,7 +54,7 @@ def get_environment_template_version_registered_waiter() -> EnvironmentTemplateV
 ```
 
 Boto3 documentation:
-[Proton.Waiter.environment_template_version_registered](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.environment_template_version_registered)
+[Proton.Waiter.environment_template_version_registered](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.EnvironmentTemplateVersionRegistered)
 
 Arguments for `EnvironmentTemplateVersionRegisteredWaiter.wait` method:
 
@@ -77,7 +77,7 @@ def get_service_created_waiter() -> ServiceCreatedWaiter:
 ```
 
 Boto3 documentation:
-[Proton.Waiter.service_created](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.service_created)
+[Proton.Waiter.service_created](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.ServiceCreated)
 
 Arguments for `ServiceCreatedWaiter.wait` method:
 
@@ -98,7 +98,7 @@ def get_service_deleted_waiter() -> ServiceDeletedWaiter:
 ```
 
 Boto3 documentation:
-[Proton.Waiter.service_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.service_deleted)
+[Proton.Waiter.service_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.ServiceDeleted)
 
 Arguments for `ServiceDeletedWaiter.wait` method:
 
@@ -120,7 +120,7 @@ def get_service_instance_deployed_waiter() -> ServiceInstanceDeployedWaiter:
 ```
 
 Boto3 documentation:
-[Proton.Waiter.service_instance_deployed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.service_instance_deployed)
+[Proton.Waiter.service_instance_deployed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.ServiceInstanceDeployed)
 
 Arguments for `ServiceInstanceDeployedWaiter.wait` method:
 
@@ -143,7 +143,7 @@ def get_service_pipeline_deployed_waiter() -> ServicePipelineDeployedWaiter:
 ```
 
 Boto3 documentation:
-[Proton.Waiter.service_pipeline_deployed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.service_pipeline_deployed)
+[Proton.Waiter.service_pipeline_deployed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.ServicePipelineDeployed)
 
 Arguments for `ServicePipelineDeployedWaiter.wait` method:
 
@@ -165,7 +165,7 @@ def get_service_template_version_registered_waiter() -> ServiceTemplateVersionRe
 ```
 
 Boto3 documentation:
-[Proton.Waiter.service_template_version_registered](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.service_template_version_registered)
+[Proton.Waiter.service_template_version_registered](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.ServiceTemplateVersionRegistered)
 
 Arguments for `ServiceTemplateVersionRegisteredWaiter.wait` method:
 
@@ -188,7 +188,7 @@ def get_service_updated_waiter() -> ServiceUpdatedWaiter:
 ```
 
 Boto3 documentation:
-[Proton.Waiter.service_updated](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.service_updated)
+[Proton.Waiter.service_updated](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.ServiceUpdated)
 
 Arguments for `ServiceUpdatedWaiter.wait` method:
 

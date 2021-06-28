@@ -68,9 +68,12 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_kinesis_video_signaling.type_defs import GetIceServerConfigResponseTypeDef, ...
+from mypy_boto3_kinesis_video_signaling.type_defs import GetIceServerConfigRequestTypeDef, ...
 ```
 
-- [GetIceServerConfigResponseTypeDef](./type_defs.md#geticeserverconfigresponsetypedef)
+- [GetIceServerConfigRequestTypeDef](./type_defs.md#geticeserverconfigrequesttypedef)
+- [GetIceServerConfigResponseResponseTypeDef](./type_defs.md#geticeserverconfigresponseresponsetypedef)
 - [IceServerTypeDef](./type_defs.md#iceservertypedef)
-- [SendAlexaOfferToMasterResponseTypeDef](./type_defs.md#sendalexaoffertomasterresponsetypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [SendAlexaOfferToMasterRequestTypeDef](./type_defs.md#sendalexaoffertomasterrequesttypedef)
+- [SendAlexaOfferToMasterResponseResponseTypeDef](./type_defs.md#sendalexaoffertomasterresponseresponsetypedef)

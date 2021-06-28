@@ -12,17 +12,24 @@ type annotations stubs module
   - [AdministrativeActionFailureDetailsTypeDef](#administrativeactionfailuredetailstypedef)
   - [AdministrativeActionTypeDef](#administrativeactiontypedef)
   - [AliasTypeDef](#aliastypedef)
-  - [AssociateFileSystemAliasesResponseTypeDef](#associatefilesystemaliasesresponsetypedef)
+  - [AssociateFileSystemAliasesRequestTypeDef](#associatefilesystemaliasesrequesttypedef)
+  - [AssociateFileSystemAliasesResponseResponseTypeDef](#associatefilesystemaliasesresponseresponsetypedef)
   - [BackupFailureDetailsTypeDef](#backupfailuredetailstypedef)
   - [BackupTypeDef](#backuptypedef)
-  - [CancelDataRepositoryTaskResponseTypeDef](#canceldatarepositorytaskresponsetypedef)
+  - [CancelDataRepositoryTaskRequestTypeDef](#canceldatarepositorytaskrequesttypedef)
+  - [CancelDataRepositoryTaskResponseResponseTypeDef](#canceldatarepositorytaskresponseresponsetypedef)
   - [CompletionReportTypeDef](#completionreporttypedef)
-  - [CopyBackupResponseTypeDef](#copybackupresponsetypedef)
-  - [CreateBackupResponseTypeDef](#createbackupresponsetypedef)
-  - [CreateDataRepositoryTaskResponseTypeDef](#createdatarepositorytaskresponsetypedef)
-  - [CreateFileSystemFromBackupResponseTypeDef](#createfilesystemfrombackupresponsetypedef)
+  - [CopyBackupRequestTypeDef](#copybackuprequesttypedef)
+  - [CopyBackupResponseResponseTypeDef](#copybackupresponseresponsetypedef)
+  - [CreateBackupRequestTypeDef](#createbackuprequesttypedef)
+  - [CreateBackupResponseResponseTypeDef](#createbackupresponseresponsetypedef)
+  - [CreateDataRepositoryTaskRequestTypeDef](#createdatarepositorytaskrequesttypedef)
+  - [CreateDataRepositoryTaskResponseResponseTypeDef](#createdatarepositorytaskresponseresponsetypedef)
+  - [CreateFileSystemFromBackupRequestTypeDef](#createfilesystemfrombackuprequesttypedef)
+  - [CreateFileSystemFromBackupResponseResponseTypeDef](#createfilesystemfrombackupresponseresponsetypedef)
   - [CreateFileSystemLustreConfigurationTypeDef](#createfilesystemlustreconfigurationtypedef)
-  - [CreateFileSystemResponseTypeDef](#createfilesystemresponsetypedef)
+  - [CreateFileSystemRequestTypeDef](#createfilesystemrequesttypedef)
+  - [CreateFileSystemResponseResponseTypeDef](#createfilesystemresponseresponsetypedef)
   - [CreateFileSystemWindowsConfigurationTypeDef](#createfilesystemwindowsconfigurationtypedef)
   - [DataRepositoryConfigurationTypeDef](#datarepositoryconfigurationtypedef)
   - [DataRepositoryFailureDetailsTypeDef](#datarepositoryfailuredetailstypedef)
@@ -30,29 +37,41 @@ type annotations stubs module
   - [DataRepositoryTaskFilterTypeDef](#datarepositorytaskfiltertypedef)
   - [DataRepositoryTaskStatusTypeDef](#datarepositorytaskstatustypedef)
   - [DataRepositoryTaskTypeDef](#datarepositorytasktypedef)
-  - [DeleteBackupResponseTypeDef](#deletebackupresponsetypedef)
+  - [DeleteBackupRequestTypeDef](#deletebackuprequesttypedef)
+  - [DeleteBackupResponseResponseTypeDef](#deletebackupresponseresponsetypedef)
   - [DeleteFileSystemLustreConfigurationTypeDef](#deletefilesystemlustreconfigurationtypedef)
   - [DeleteFileSystemLustreResponseTypeDef](#deletefilesystemlustreresponsetypedef)
-  - [DeleteFileSystemResponseTypeDef](#deletefilesystemresponsetypedef)
+  - [DeleteFileSystemRequestTypeDef](#deletefilesystemrequesttypedef)
+  - [DeleteFileSystemResponseResponseTypeDef](#deletefilesystemresponseresponsetypedef)
   - [DeleteFileSystemWindowsConfigurationTypeDef](#deletefilesystemwindowsconfigurationtypedef)
   - [DeleteFileSystemWindowsResponseTypeDef](#deletefilesystemwindowsresponsetypedef)
-  - [DescribeBackupsResponseTypeDef](#describebackupsresponsetypedef)
-  - [DescribeDataRepositoryTasksResponseTypeDef](#describedatarepositorytasksresponsetypedef)
-  - [DescribeFileSystemAliasesResponseTypeDef](#describefilesystemaliasesresponsetypedef)
-  - [DescribeFileSystemsResponseTypeDef](#describefilesystemsresponsetypedef)
-  - [DisassociateFileSystemAliasesResponseTypeDef](#disassociatefilesystemaliasesresponsetypedef)
+  - [DescribeBackupsRequestTypeDef](#describebackupsrequesttypedef)
+  - [DescribeBackupsResponseResponseTypeDef](#describebackupsresponseresponsetypedef)
+  - [DescribeDataRepositoryTasksRequestTypeDef](#describedatarepositorytasksrequesttypedef)
+  - [DescribeDataRepositoryTasksResponseResponseTypeDef](#describedatarepositorytasksresponseresponsetypedef)
+  - [DescribeFileSystemAliasesRequestTypeDef](#describefilesystemaliasesrequesttypedef)
+  - [DescribeFileSystemAliasesResponseResponseTypeDef](#describefilesystemaliasesresponseresponsetypedef)
+  - [DescribeFileSystemsRequestTypeDef](#describefilesystemsrequesttypedef)
+  - [DescribeFileSystemsResponseResponseTypeDef](#describefilesystemsresponseresponsetypedef)
+  - [DisassociateFileSystemAliasesRequestTypeDef](#disassociatefilesystemaliasesrequesttypedef)
+  - [DisassociateFileSystemAliasesResponseResponseTypeDef](#disassociatefilesystemaliasesresponseresponsetypedef)
   - [FileSystemFailureDetailsTypeDef](#filesystemfailuredetailstypedef)
   - [FileSystemTypeDef](#filesystemtypedef)
   - [FilterTypeDef](#filtertypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [LustreFileSystemConfigurationTypeDef](#lustrefilesystemconfigurationtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SelfManagedActiveDirectoryAttributesTypeDef](#selfmanagedactivedirectoryattributestypedef)
   - [SelfManagedActiveDirectoryConfigurationTypeDef](#selfmanagedactivedirectoryconfigurationtypedef)
   - [SelfManagedActiveDirectoryConfigurationUpdatesTypeDef](#selfmanagedactivedirectoryconfigurationupdatestypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TagTypeDef](#tagtypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
   - [UpdateFileSystemLustreConfigurationTypeDef](#updatefilesystemlustreconfigurationtypedef)
-  - [UpdateFileSystemResponseTypeDef](#updatefilesystemresponsetypedef)
+  - [UpdateFileSystemRequestTypeDef](#updatefilesystemrequesttypedef)
+  - [UpdateFileSystemResponseResponseTypeDef](#updatefilesystemresponseresponsetypedef)
   - [UpdateFileSystemWindowsConfigurationTypeDef](#updatefilesystemwindowsconfigurationtypedef)
   - [WindowsAuditLogConfigurationTypeDef](#windowsauditlogconfigurationtypedef)
   - [WindowsAuditLogCreateConfigurationTypeDef](#windowsauditlogcreateconfigurationtypedef)
@@ -109,15 +128,32 @@ Optional fields:
 - `Name`: `str`
 - `Lifecycle`: [AliasLifecycleType](./literals.md#aliaslifecycletype)
 
-## AssociateFileSystemAliasesResponseTypeDef
+## AssociateFileSystemAliasesRequestTypeDef
 
 ```python
-from mypy_boto3_fsx.type_defs import AssociateFileSystemAliasesResponseTypeDef
+from mypy_boto3_fsx.type_defs import AssociateFileSystemAliasesRequestTypeDef
 ```
+
+Required fields:
+
+- `FileSystemId`: `str`
+- `Aliases`: `List`\[`str`\]
 
 Optional fields:
 
+- `ClientRequestToken`: `str`
+
+## AssociateFileSystemAliasesResponseResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import AssociateFileSystemAliasesResponseResponseTypeDef
+```
+
+Required fields:
+
 - `Aliases`: `List`\[[AliasTypeDef](./type_defs.md#aliastypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## BackupFailureDetailsTypeDef
 
@@ -157,17 +193,29 @@ Optional fields:
 - `SourceBackupId`: `str`
 - `SourceBackupRegion`: `str`
 
-## CancelDataRepositoryTaskResponseTypeDef
+## CancelDataRepositoryTaskRequestTypeDef
 
 ```python
-from mypy_boto3_fsx.type_defs import CancelDataRepositoryTaskResponseTypeDef
+from mypy_boto3_fsx.type_defs import CancelDataRepositoryTaskRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `TaskId`: `str`
+
+## CancelDataRepositoryTaskResponseResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import CancelDataRepositoryTaskResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Lifecycle`:
   [DataRepositoryTaskLifecycleType](./literals.md#datarepositorytasklifecycletype)
 - `TaskId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CompletionReportTypeDef
 
@@ -187,46 +235,129 @@ Optional fields:
 - `Scope`: `Literal['FAILED_FILES_ONLY']` (see
   [ReportScopeType](./literals.md#reportscopetype))
 
-## CopyBackupResponseTypeDef
+## CopyBackupRequestTypeDef
 
 ```python
-from mypy_boto3_fsx.type_defs import CopyBackupResponseTypeDef
+from mypy_boto3_fsx.type_defs import CopyBackupRequestTypeDef
 ```
 
+Required fields:
+
+- `SourceBackupId`: `str`
+
 Optional fields:
+
+- `ClientRequestToken`: `str`
+- `SourceRegion`: `str`
+- `KmsKeyId`: `str`
+- `CopyTags`: `bool`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CopyBackupResponseResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import CopyBackupResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Backup`: [BackupTypeDef](./type_defs.md#backuptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateBackupResponseTypeDef
+## CreateBackupRequestTypeDef
 
 ```python
-from mypy_boto3_fsx.type_defs import CreateBackupResponseTypeDef
+from mypy_boto3_fsx.type_defs import CreateBackupRequestTypeDef
 ```
 
+Required fields:
+
+- `FileSystemId`: `str`
+
 Optional fields:
+
+- `ClientRequestToken`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateBackupResponseResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import CreateBackupResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Backup`: [BackupTypeDef](./type_defs.md#backuptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDataRepositoryTaskResponseTypeDef
+## CreateDataRepositoryTaskRequestTypeDef
 
 ```python
-from mypy_boto3_fsx.type_defs import CreateDataRepositoryTaskResponseTypeDef
+from mypy_boto3_fsx.type_defs import CreateDataRepositoryTaskRequestTypeDef
 ```
 
+Required fields:
+
+- `Type`: `Literal['EXPORT_TO_REPOSITORY']` (see
+  [DataRepositoryTaskTypeType](./literals.md#datarepositorytasktypetype))
+- `FileSystemId`: `str`
+- `Report`: [CompletionReportTypeDef](./type_defs.md#completionreporttypedef)
+
 Optional fields:
+
+- `Paths`: `List`\[`str`\]
+- `ClientRequestToken`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateDataRepositoryTaskResponseResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import CreateDataRepositoryTaskResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DataRepositoryTask`:
   [DataRepositoryTaskTypeDef](./type_defs.md#datarepositorytasktypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateFileSystemFromBackupResponseTypeDef
+## CreateFileSystemFromBackupRequestTypeDef
 
 ```python
-from mypy_boto3_fsx.type_defs import CreateFileSystemFromBackupResponseTypeDef
+from mypy_boto3_fsx.type_defs import CreateFileSystemFromBackupRequestTypeDef
 ```
+
+Required fields:
+
+- `BackupId`: `str`
+- `SubnetIds`: `List`\[`str`\]
 
 Optional fields:
 
+- `ClientRequestToken`: `str`
+- `SecurityGroupIds`: `List`\[`str`\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `WindowsConfiguration`:
+  [CreateFileSystemWindowsConfigurationTypeDef](./type_defs.md#createfilesystemwindowsconfigurationtypedef)
+- `LustreConfiguration`:
+  [CreateFileSystemLustreConfigurationTypeDef](./type_defs.md#createfilesystemlustreconfigurationtypedef)
+- `StorageType`: [StorageTypeType](./literals.md#storagetypetype)
+- `KmsKeyId`: `str`
+
+## CreateFileSystemFromBackupResponseResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import CreateFileSystemFromBackupResponseResponseTypeDef
+```
+
+Required fields:
+
 - `FileSystem`: [FileSystemTypeDef](./type_defs.md#filesystemtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateFileSystemLustreConfigurationTypeDef
 
@@ -252,15 +383,41 @@ Optional fields:
 - `DataCompressionType`:
   [DataCompressionTypeType](./literals.md#datacompressiontypetype)
 
-## CreateFileSystemResponseTypeDef
+## CreateFileSystemRequestTypeDef
 
 ```python
-from mypy_boto3_fsx.type_defs import CreateFileSystemResponseTypeDef
+from mypy_boto3_fsx.type_defs import CreateFileSystemRequestTypeDef
 ```
+
+Required fields:
+
+- `FileSystemType`: [FileSystemTypeType](./literals.md#filesystemtypetype)
+- `StorageCapacity`: `int`
+- `SubnetIds`: `List`\[`str`\]
 
 Optional fields:
 
+- `ClientRequestToken`: `str`
+- `StorageType`: [StorageTypeType](./literals.md#storagetypetype)
+- `SecurityGroupIds`: `List`\[`str`\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `KmsKeyId`: `str`
+- `WindowsConfiguration`:
+  [CreateFileSystemWindowsConfigurationTypeDef](./type_defs.md#createfilesystemwindowsconfigurationtypedef)
+- `LustreConfiguration`:
+  [CreateFileSystemLustreConfigurationTypeDef](./type_defs.md#createfilesystemlustreconfigurationtypedef)
+
+## CreateFileSystemResponseResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import CreateFileSystemResponseResponseTypeDef
+```
+
+Required fields:
+
 - `FileSystem`: [FileSystemTypeDef](./type_defs.md#filesystemtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateFileSystemWindowsConfigurationTypeDef
 
@@ -380,16 +537,32 @@ Optional fields:
   [DataRepositoryTaskStatusTypeDef](./type_defs.md#datarepositorytaskstatustypedef)
 - `Report`: [CompletionReportTypeDef](./type_defs.md#completionreporttypedef)
 
-## DeleteBackupResponseTypeDef
+## DeleteBackupRequestTypeDef
 
 ```python
-from mypy_boto3_fsx.type_defs import DeleteBackupResponseTypeDef
+from mypy_boto3_fsx.type_defs import DeleteBackupRequestTypeDef
 ```
+
+Required fields:
+
+- `BackupId`: `str`
 
 Optional fields:
 
+- `ClientRequestToken`: `str`
+
+## DeleteBackupResponseResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DeleteBackupResponseResponseTypeDef
+```
+
+Required fields:
+
 - `BackupId`: `str`
 - `Lifecycle`: [BackupLifecycleType](./literals.md#backuplifecycletype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DeleteFileSystemLustreConfigurationTypeDef
 
@@ -413,13 +586,31 @@ Optional fields:
 - `FinalBackupId`: `str`
 - `FinalBackupTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## DeleteFileSystemResponseTypeDef
+## DeleteFileSystemRequestTypeDef
 
 ```python
-from mypy_boto3_fsx.type_defs import DeleteFileSystemResponseTypeDef
+from mypy_boto3_fsx.type_defs import DeleteFileSystemRequestTypeDef
 ```
 
+Required fields:
+
+- `FileSystemId`: `str`
+
 Optional fields:
+
+- `ClientRequestToken`: `str`
+- `WindowsConfiguration`:
+  [DeleteFileSystemWindowsConfigurationTypeDef](./type_defs.md#deletefilesystemwindowsconfigurationtypedef)
+- `LustreConfiguration`:
+  [DeleteFileSystemLustreConfigurationTypeDef](./type_defs.md#deletefilesystemlustreconfigurationtypedef)
+
+## DeleteFileSystemResponseResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DeleteFileSystemResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FileSystemId`: `str`
 - `Lifecycle`: [FileSystemLifecycleType](./literals.md#filesystemlifecycletype)
@@ -427,6 +618,8 @@ Optional fields:
   [DeleteFileSystemWindowsResponseTypeDef](./type_defs.md#deletefilesystemwindowsresponsetypedef)
 - `LustreResponse`:
   [DeleteFileSystemLustreResponseTypeDef](./type_defs.md#deletefilesystemlustreresponsetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DeleteFileSystemWindowsConfigurationTypeDef
 
@@ -450,61 +643,141 @@ Optional fields:
 - `FinalBackupId`: `str`
 - `FinalBackupTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## DescribeBackupsResponseTypeDef
+## DescribeBackupsRequestTypeDef
 
 ```python
-from mypy_boto3_fsx.type_defs import DescribeBackupsResponseTypeDef
+from mypy_boto3_fsx.type_defs import DescribeBackupsRequestTypeDef
 ```
 
 Optional fields:
+
+- `BackupIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeBackupsResponseResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DescribeBackupsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Backups`: `List`\[[BackupTypeDef](./type_defs.md#backuptypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDataRepositoryTasksResponseTypeDef
+## DescribeDataRepositoryTasksRequestTypeDef
 
 ```python
-from mypy_boto3_fsx.type_defs import DescribeDataRepositoryTasksResponseTypeDef
+from mypy_boto3_fsx.type_defs import DescribeDataRepositoryTasksRequestTypeDef
 ```
 
 Optional fields:
+
+- `TaskIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[DataRepositoryTaskFilterTypeDef](./type_defs.md#datarepositorytaskfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeDataRepositoryTasksResponseResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DescribeDataRepositoryTasksResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DataRepositoryTasks`:
   `List`\[[DataRepositoryTaskTypeDef](./type_defs.md#datarepositorytasktypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFileSystemAliasesResponseTypeDef
+## DescribeFileSystemAliasesRequestTypeDef
 
 ```python
-from mypy_boto3_fsx.type_defs import DescribeFileSystemAliasesResponseTypeDef
+from mypy_boto3_fsx.type_defs import DescribeFileSystemAliasesRequestTypeDef
 ```
 
+Required fields:
+
+- `FileSystemId`: `str`
+
 Optional fields:
+
+- `ClientRequestToken`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeFileSystemAliasesResponseResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DescribeFileSystemAliasesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Aliases`: `List`\[[AliasTypeDef](./type_defs.md#aliastypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFileSystemsResponseTypeDef
+## DescribeFileSystemsRequestTypeDef
 
 ```python
-from mypy_boto3_fsx.type_defs import DescribeFileSystemsResponseTypeDef
+from mypy_boto3_fsx.type_defs import DescribeFileSystemsRequestTypeDef
 ```
 
 Optional fields:
+
+- `FileSystemIds`: `List`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeFileSystemsResponseResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DescribeFileSystemsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FileSystems`:
   `List`\[[FileSystemTypeDef](./type_defs.md#filesystemtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociateFileSystemAliasesResponseTypeDef
+## DisassociateFileSystemAliasesRequestTypeDef
 
 ```python
-from mypy_boto3_fsx.type_defs import DisassociateFileSystemAliasesResponseTypeDef
+from mypy_boto3_fsx.type_defs import DisassociateFileSystemAliasesRequestTypeDef
 ```
+
+Required fields:
+
+- `FileSystemId`: `str`
+- `Aliases`: `List`\[`str`\]
 
 Optional fields:
 
+- `ClientRequestToken`: `str`
+
+## DisassociateFileSystemAliasesResponseResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DisassociateFileSystemAliasesResponseResponseTypeDef
+```
+
+Required fields:
+
 - `Aliases`: `List`\[[AliasTypeDef](./type_defs.md#aliastypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## FileSystemFailureDetailsTypeDef
 
@@ -558,16 +831,33 @@ Optional fields:
 - `Name`: [FilterNameType](./literals.md#filternametype)
 - `Values`: `List`\[`str`\]
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_fsx.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_fsx.type_defs import ListTagsForResourceRequestTypeDef
 ```
+
+Required fields:
+
+- `ResourceARN`: `str`
 
 Optional fields:
 
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
+
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LustreFileSystemConfigurationTypeDef
 
@@ -602,6 +892,20 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## SelfManagedActiveDirectoryAttributesTypeDef
 
@@ -647,6 +951,17 @@ Optional fields:
 - `Password`: `str`
 - `DnsIps`: `List`\[`str`\]
 
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
 ## TagTypeDef
 
 ```python
@@ -657,6 +972,17 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+## UntagResourceRequestTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+- `TagKeys`: `List`\[`str`\]
 
 ## UpdateFileSystemLustreConfigurationTypeDef
 
@@ -674,15 +1000,36 @@ Optional fields:
 - `DataCompressionType`:
   [DataCompressionTypeType](./literals.md#datacompressiontypetype)
 
-## UpdateFileSystemResponseTypeDef
+## UpdateFileSystemRequestTypeDef
 
 ```python
-from mypy_boto3_fsx.type_defs import UpdateFileSystemResponseTypeDef
+from mypy_boto3_fsx.type_defs import UpdateFileSystemRequestTypeDef
 ```
+
+Required fields:
+
+- `FileSystemId`: `str`
 
 Optional fields:
 
+- `ClientRequestToken`: `str`
+- `StorageCapacity`: `int`
+- `WindowsConfiguration`:
+  [UpdateFileSystemWindowsConfigurationTypeDef](./type_defs.md#updatefilesystemwindowsconfigurationtypedef)
+- `LustreConfiguration`:
+  [UpdateFileSystemLustreConfigurationTypeDef](./type_defs.md#updatefilesystemlustreconfigurationtypedef)
+
+## UpdateFileSystemResponseResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import UpdateFileSystemResponseResponseTypeDef
+```
+
+Required fields:
+
 - `FileSystem`: [FileSystemTypeDef](./type_defs.md#filesystemtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UpdateFileSystemWindowsConfigurationTypeDef
 

@@ -143,10 +143,15 @@ Exceptions:
 
 ### activate_gateway
 
+Activates the gateway you previously deployed on your host.
+
 Type annotations for `boto3.client("storagegateway").activate_gateway` method.
 
 Boto3 documentation:
 [StorageGateway.Client.activate_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.activate_gateway)
+
+Arguments mapping described in
+[ActivateGatewayInputTypeDef](./type_defs.md#activategatewayinputtypedef).
 
 Keyword-only arguments:
 
@@ -160,23 +165,31 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[ActivateGatewayOutputTypeDef](./type_defs.md#activategatewayoutputtypedef).
+[ActivateGatewayOutputResponseTypeDef](./type_defs.md#activategatewayoutputresponsetypedef).
 
 ### add_cache
+
+Configures one or more gateway local disks as cache for a gateway.
 
 Type annotations for `boto3.client("storagegateway").add_cache` method.
 
 Boto3 documentation:
 [StorageGateway.Client.add_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.add_cache)
 
+Arguments mapping described in
+[AddCacheInputTypeDef](./type_defs.md#addcacheinputtypedef).
+
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 - `DiskIds`: `List`\[`str`\] *(required)*
 
-Returns [AddCacheOutputTypeDef](./type_defs.md#addcacheoutputtypedef).
+Returns
+[AddCacheOutputResponseTypeDef](./type_defs.md#addcacheoutputresponsetypedef).
 
 ### add_tags_to_resource
+
+Adds one or more tags to the specified resource.
 
 Type annotations for `boto3.client("storagegateway").add_tags_to_resource`
 method.
@@ -184,20 +197,29 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.add_tags_to_resource)
 
+Arguments mapping described in
+[AddTagsToResourceInputTypeDef](./type_defs.md#addtagstoresourceinputtypedef).
+
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns
-[AddTagsToResourceOutputTypeDef](./type_defs.md#addtagstoresourceoutputtypedef).
+[AddTagsToResourceOutputResponseTypeDef](./type_defs.md#addtagstoresourceoutputresponsetypedef).
 
 ### add_upload_buffer
+
+Configures one or more gateway local disks as upload buffer for a specified
+gateway.
 
 Type annotations for `boto3.client("storagegateway").add_upload_buffer` method.
 
 Boto3 documentation:
 [StorageGateway.Client.add_upload_buffer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.add_upload_buffer)
+
+Arguments mapping described in
+[AddUploadBufferInputTypeDef](./type_defs.md#adduploadbufferinputtypedef).
 
 Keyword-only arguments:
 
@@ -205,9 +227,11 @@ Keyword-only arguments:
 - `DiskIds`: `List`\[`str`\] *(required)*
 
 Returns
-[AddUploadBufferOutputTypeDef](./type_defs.md#adduploadbufferoutputtypedef).
+[AddUploadBufferOutputResponseTypeDef](./type_defs.md#adduploadbufferoutputresponsetypedef).
 
 ### add_working_storage
+
+Configures one or more gateway local disks as working storage for a gateway.
 
 Type annotations for `boto3.client("storagegateway").add_working_storage`
 method.
@@ -215,20 +239,28 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.add_working_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.add_working_storage)
 
+Arguments mapping described in
+[AddWorkingStorageInputTypeDef](./type_defs.md#addworkingstorageinputtypedef).
+
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 - `DiskIds`: `List`\[`str`\] *(required)*
 
 Returns
-[AddWorkingStorageOutputTypeDef](./type_defs.md#addworkingstorageoutputtypedef).
+[AddWorkingStorageOutputResponseTypeDef](./type_defs.md#addworkingstorageoutputresponsetypedef).
 
 ### assign_tape_pool
+
+Assigns a tape to a tape pool for archiving.
 
 Type annotations for `boto3.client("storagegateway").assign_tape_pool` method.
 
 Boto3 documentation:
 [StorageGateway.Client.assign_tape_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.assign_tape_pool)
+
+Arguments mapping described in
+[AssignTapePoolInputTypeDef](./type_defs.md#assigntapepoolinputtypedef).
 
 Keyword-only arguments:
 
@@ -237,15 +269,20 @@ Keyword-only arguments:
 - `BypassGovernanceRetention`: `bool`
 
 Returns
-[AssignTapePoolOutputTypeDef](./type_defs.md#assigntapepooloutputtypedef).
+[AssignTapePoolOutputResponseTypeDef](./type_defs.md#assigntapepooloutputresponsetypedef).
 
 ### associate_file_system
+
+Associate an Amazon FSx file system with the Amazon FSx file gateway.
 
 Type annotations for `boto3.client("storagegateway").associate_file_system`
 method.
 
 Boto3 documentation:
 [StorageGateway.Client.associate_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.associate_file_system)
+
+Arguments mapping described in
+[AssociateFileSystemInputTypeDef](./type_defs.md#associatefilesysteminputtypedef).
 
 Keyword-only arguments:
 
@@ -260,14 +297,20 @@ Keyword-only arguments:
   [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
 
 Returns
-[AssociateFileSystemOutputTypeDef](./type_defs.md#associatefilesystemoutputtypedef).
+[AssociateFileSystemOutputResponseTypeDef](./type_defs.md#associatefilesystemoutputresponsetypedef).
 
 ### attach_volume
+
+Connects a volume to an iSCSI connection and then attaches the volume to the
+specified gateway.
 
 Type annotations for `boto3.client("storagegateway").attach_volume` method.
 
 Boto3 documentation:
 [StorageGateway.Client.attach_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.attach_volume)
+
+Arguments mapping described in
+[AttachVolumeInputTypeDef](./type_defs.md#attachvolumeinputtypedef).
 
 Keyword-only arguments:
 
@@ -277,9 +320,12 @@ Keyword-only arguments:
 - `TargetName`: `str`
 - `DiskId`: `str`
 
-Returns [AttachVolumeOutputTypeDef](./type_defs.md#attachvolumeoutputtypedef).
+Returns
+[AttachVolumeOutputResponseTypeDef](./type_defs.md#attachvolumeoutputresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("storagegateway").can_paginate` method.
 
@@ -294,10 +340,16 @@ Returns `bool`.
 
 ### cancel_archival
 
+Cancels archiving of a virtual tape to the virtual tape shelf (VTS) after the
+archiving process is initiated.
+
 Type annotations for `boto3.client("storagegateway").cancel_archival` method.
 
 Boto3 documentation:
 [StorageGateway.Client.cancel_archival](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.cancel_archival)
+
+Arguments mapping described in
+[CancelArchivalInputTypeDef](./type_defs.md#cancelarchivalinputtypedef).
 
 Keyword-only arguments:
 
@@ -305,30 +357,41 @@ Keyword-only arguments:
 - `TapeARN`: `str` *(required)*
 
 Returns
-[CancelArchivalOutputTypeDef](./type_defs.md#cancelarchivaloutputtypedef).
+[CancelArchivalOutputResponseTypeDef](./type_defs.md#cancelarchivaloutputresponsetypedef).
 
 ### cancel_retrieval
+
+Cancels retrieval of a virtual tape from the virtual tape shelf (VTS) to a
+gateway after the retrieval process is initiated.
 
 Type annotations for `boto3.client("storagegateway").cancel_retrieval` method.
 
 Boto3 documentation:
 [StorageGateway.Client.cancel_retrieval](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.cancel_retrieval)
 
+Arguments mapping described in
+[CancelRetrievalInputTypeDef](./type_defs.md#cancelretrievalinputtypedef).
+
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 - `TapeARN`: `str` *(required)*
 
 Returns
-[CancelRetrievalOutputTypeDef](./type_defs.md#cancelretrievaloutputtypedef).
+[CancelRetrievalOutputResponseTypeDef](./type_defs.md#cancelretrievaloutputresponsetypedef).
 
 ### create_cached_iscsi_volume
+
+Creates a cached volume on a specified cached volume gateway.
 
 Type annotations for
 `boto3.client("storagegateway").create_cached_iscsi_volume` method.
 
 Boto3 documentation:
 [StorageGateway.Client.create_cached_iscsi_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_cached_iscsi_volume)
+
+Arguments mapping described in
+[CreateCachediSCSIVolumeInputTypeDef](./type_defs.md#createcachediscsivolumeinputtypedef).
 
 Keyword-only arguments:
 
@@ -344,15 +407,20 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateCachediSCSIVolumeOutputTypeDef](./type_defs.md#createcachediscsivolumeoutputtypedef).
+[CreateCachediSCSIVolumeOutputResponseTypeDef](./type_defs.md#createcachediscsivolumeoutputresponsetypedef).
 
 ### create_nfs_file_share
+
+Creates a Network File System (NFS) file share on an existing file gateway.
 
 Type annotations for `boto3.client("storagegateway").create_nfs_file_share`
 method.
 
 Boto3 documentation:
 [StorageGateway.Client.create_nfs_file_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_nfs_file_share)
+
+Arguments mapping described in
+[CreateNFSFileShareInputTypeDef](./type_defs.md#createnfsfileshareinputtypedef).
 
 Keyword-only arguments:
 
@@ -378,15 +446,20 @@ Keyword-only arguments:
 - `NotificationPolicy`: `str`
 
 Returns
-[CreateNFSFileShareOutputTypeDef](./type_defs.md#createnfsfileshareoutputtypedef).
+[CreateNFSFileShareOutputResponseTypeDef](./type_defs.md#createnfsfileshareoutputresponsetypedef).
 
 ### create_smb_file_share
+
+Creates a Server Message Block (SMB) file share on an existing file gateway.
 
 Type annotations for `boto3.client("storagegateway").create_smb_file_share`
 method.
 
 Boto3 documentation:
 [StorageGateway.Client.create_smb_file_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_smb_file_share)
+
+Arguments mapping described in
+[CreateSMBFileShareInputTypeDef](./type_defs.md#createsmbfileshareinputtypedef).
 
 Keyword-only arguments:
 
@@ -416,14 +489,19 @@ Keyword-only arguments:
 - `NotificationPolicy`: `str`
 
 Returns
-[CreateSMBFileShareOutputTypeDef](./type_defs.md#createsmbfileshareoutputtypedef).
+[CreateSMBFileShareOutputResponseTypeDef](./type_defs.md#createsmbfileshareoutputresponsetypedef).
 
 ### create_snapshot
+
+Initiates a snapshot of a volume.
 
 Type annotations for `boto3.client("storagegateway").create_snapshot` method.
 
 Boto3 documentation:
 [StorageGateway.Client.create_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_snapshot)
+
+Arguments mapping described in
+[CreateSnapshotInputTypeDef](./type_defs.md#createsnapshotinputtypedef).
 
 Keyword-only arguments:
 
@@ -432,9 +510,11 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateSnapshotOutputTypeDef](./type_defs.md#createsnapshotoutputtypedef).
+[CreateSnapshotOutputResponseTypeDef](./type_defs.md#createsnapshotoutputresponsetypedef).
 
 ### create_snapshot_from_volume_recovery_point
+
+Initiates a snapshot of a gateway from a volume recovery point.
 
 Type annotations for
 `boto3.client("storagegateway").create_snapshot_from_volume_recovery_point`
@@ -443,6 +523,9 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.create_snapshot_from_volume_recovery_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_snapshot_from_volume_recovery_point)
 
+Arguments mapping described in
+[CreateSnapshotFromVolumeRecoveryPointInputTypeDef](./type_defs.md#createsnapshotfromvolumerecoverypointinputtypedef).
+
 Keyword-only arguments:
 
 - `VolumeARN`: `str` *(required)*
@@ -450,15 +533,20 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateSnapshotFromVolumeRecoveryPointOutputTypeDef](./type_defs.md#createsnapshotfromvolumerecoverypointoutputtypedef).
+[CreateSnapshotFromVolumeRecoveryPointOutputResponseTypeDef](./type_defs.md#createsnapshotfromvolumerecoverypointoutputresponsetypedef).
 
 ### create_stored_iscsi_volume
+
+Creates a volume on a specified gateway.
 
 Type annotations for
 `boto3.client("storagegateway").create_stored_iscsi_volume` method.
 
 Boto3 documentation:
 [StorageGateway.Client.create_stored_iscsi_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_stored_iscsi_volume)
+
+Arguments mapping described in
+[CreateStorediSCSIVolumeInputTypeDef](./type_defs.md#createstorediscsivolumeinputtypedef).
 
 Keyword-only arguments:
 
@@ -473,14 +561,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateStorediSCSIVolumeOutputTypeDef](./type_defs.md#createstorediscsivolumeoutputtypedef).
+[CreateStorediSCSIVolumeOutputResponseTypeDef](./type_defs.md#createstorediscsivolumeoutputresponsetypedef).
 
 ### create_tape_pool
+
+Creates a new custom tape pool.
 
 Type annotations for `boto3.client("storagegateway").create_tape_pool` method.
 
 Boto3 documentation:
 [StorageGateway.Client.create_tape_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_tape_pool)
+
+Arguments mapping described in
+[CreateTapePoolInputTypeDef](./type_defs.md#createtapepoolinputtypedef).
 
 Keyword-only arguments:
 
@@ -493,15 +586,20 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateTapePoolOutputTypeDef](./type_defs.md#createtapepooloutputtypedef).
+[CreateTapePoolOutputResponseTypeDef](./type_defs.md#createtapepooloutputresponsetypedef).
 
 ### create_tape_with_barcode
+
+Creates a virtual tape by using your own barcode.
 
 Type annotations for `boto3.client("storagegateway").create_tape_with_barcode`
 method.
 
 Boto3 documentation:
 [StorageGateway.Client.create_tape_with_barcode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_tape_with_barcode)
+
+Arguments mapping described in
+[CreateTapeWithBarcodeInputTypeDef](./type_defs.md#createtapewithbarcodeinputtypedef).
 
 Keyword-only arguments:
 
@@ -515,14 +613,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateTapeWithBarcodeOutputTypeDef](./type_defs.md#createtapewithbarcodeoutputtypedef).
+[CreateTapeWithBarcodeOutputResponseTypeDef](./type_defs.md#createtapewithbarcodeoutputresponsetypedef).
 
 ### create_tapes
+
+Creates one or more virtual tapes.
 
 Type annotations for `boto3.client("storagegateway").create_tapes` method.
 
 Boto3 documentation:
 [StorageGateway.Client.create_tapes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_tapes)
+
+Arguments mapping described in
+[CreateTapesInputTypeDef](./type_defs.md#createtapesinputtypedef).
 
 Keyword-only arguments:
 
@@ -537,9 +640,12 @@ Keyword-only arguments:
 - `Worm`: `bool`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns [CreateTapesOutputTypeDef](./type_defs.md#createtapesoutputtypedef).
+Returns
+[CreateTapesOutputResponseTypeDef](./type_defs.md#createtapesoutputresponsetypedef).
 
 ### delete_automatic_tape_creation_policy
+
+Deletes the automatic tape creation policy of a gateway.
 
 Type annotations for
 `boto3.client("storagegateway").delete_automatic_tape_creation_policy` method.
@@ -547,14 +653,19 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.delete_automatic_tape_creation_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_automatic_tape_creation_policy)
 
+Arguments mapping described in
+[DeleteAutomaticTapeCreationPolicyInputTypeDef](./type_defs.md#deleteautomatictapecreationpolicyinputtypedef).
+
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
 Returns
-[DeleteAutomaticTapeCreationPolicyOutputTypeDef](./type_defs.md#deleteautomatictapecreationpolicyoutputtypedef).
+[DeleteAutomaticTapeCreationPolicyOutputResponseTypeDef](./type_defs.md#deleteautomatictapecreationpolicyoutputresponsetypedef).
 
 ### delete_bandwidth_rate_limit
+
+Deletes the bandwidth rate limits of a gateway.
 
 Type annotations for
 `boto3.client("storagegateway").delete_bandwidth_rate_limit` method.
@@ -562,15 +673,21 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.delete_bandwidth_rate_limit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_bandwidth_rate_limit)
 
+Arguments mapping described in
+[DeleteBandwidthRateLimitInputTypeDef](./type_defs.md#deletebandwidthratelimitinputtypedef).
+
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 - `BandwidthType`: `str` *(required)*
 
 Returns
-[DeleteBandwidthRateLimitOutputTypeDef](./type_defs.md#deletebandwidthratelimitoutputtypedef).
+[DeleteBandwidthRateLimitOutputResponseTypeDef](./type_defs.md#deletebandwidthratelimitoutputresponsetypedef).
 
 ### delete_chap_credentials
+
+Deletes Challenge-Handshake Authentication Protocol (CHAP) credentials for a
+specified iSCSI target and initiator pair.
 
 Type annotations for `boto3.client("storagegateway").delete_chap_credentials`
 method.
@@ -578,20 +695,28 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.delete_chap_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_chap_credentials)
 
+Arguments mapping described in
+[DeleteChapCredentialsInputTypeDef](./type_defs.md#deletechapcredentialsinputtypedef).
+
 Keyword-only arguments:
 
 - `TargetARN`: `str` *(required)*
 - `InitiatorName`: `str` *(required)*
 
 Returns
-[DeleteChapCredentialsOutputTypeDef](./type_defs.md#deletechapcredentialsoutputtypedef).
+[DeleteChapCredentialsOutputResponseTypeDef](./type_defs.md#deletechapcredentialsoutputresponsetypedef).
 
 ### delete_file_share
+
+Deletes a file share from a file gateway.
 
 Type annotations for `boto3.client("storagegateway").delete_file_share` method.
 
 Boto3 documentation:
 [StorageGateway.Client.delete_file_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_file_share)
+
+Arguments mapping described in
+[DeleteFileShareInputTypeDef](./type_defs.md#deletefileshareinputtypedef).
 
 Keyword-only arguments:
 
@@ -599,23 +724,30 @@ Keyword-only arguments:
 - `ForceDelete`: `bool`
 
 Returns
-[DeleteFileShareOutputTypeDef](./type_defs.md#deletefileshareoutputtypedef).
+[DeleteFileShareOutputResponseTypeDef](./type_defs.md#deletefileshareoutputresponsetypedef).
 
 ### delete_gateway
+
+Deletes a gateway.
 
 Type annotations for `boto3.client("storagegateway").delete_gateway` method.
 
 Boto3 documentation:
 [StorageGateway.Client.delete_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_gateway)
 
+Arguments mapping described in
+[DeleteGatewayInputTypeDef](./type_defs.md#deletegatewayinputtypedef).
+
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
 Returns
-[DeleteGatewayOutputTypeDef](./type_defs.md#deletegatewayoutputtypedef).
+[DeleteGatewayOutputResponseTypeDef](./type_defs.md#deletegatewayoutputresponsetypedef).
 
 ### delete_snapshot_schedule
+
+Deletes a snapshot of a volume.
 
 Type annotations for `boto3.client("storagegateway").delete_snapshot_schedule`
 method.
@@ -623,19 +755,27 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.delete_snapshot_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_snapshot_schedule)
 
+Arguments mapping described in
+[DeleteSnapshotScheduleInputTypeDef](./type_defs.md#deletesnapshotscheduleinputtypedef).
+
 Keyword-only arguments:
 
 - `VolumeARN`: `str` *(required)*
 
 Returns
-[DeleteSnapshotScheduleOutputTypeDef](./type_defs.md#deletesnapshotscheduleoutputtypedef).
+[DeleteSnapshotScheduleOutputResponseTypeDef](./type_defs.md#deletesnapshotscheduleoutputresponsetypedef).
 
 ### delete_tape
+
+Deletes the specified virtual tape.
 
 Type annotations for `boto3.client("storagegateway").delete_tape` method.
 
 Boto3 documentation:
 [StorageGateway.Client.delete_tape](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_tape)
+
+Arguments mapping described in
+[DeleteTapeInputTypeDef](./type_defs.md#deletetapeinputtypedef).
 
 Keyword-only arguments:
 
@@ -643,9 +783,12 @@ Keyword-only arguments:
 - `TapeARN`: `str` *(required)*
 - `BypassGovernanceRetention`: `bool`
 
-Returns [DeleteTapeOutputTypeDef](./type_defs.md#deletetapeoutputtypedef).
+Returns
+[DeleteTapeOutputResponseTypeDef](./type_defs.md#deletetapeoutputresponsetypedef).
 
 ### delete_tape_archive
+
+Deletes the specified virtual tape from the virtual tape shelf (VTS).
 
 Type annotations for `boto3.client("storagegateway").delete_tape_archive`
 method.
@@ -653,42 +796,60 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.delete_tape_archive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_tape_archive)
 
+Arguments mapping described in
+[DeleteTapeArchiveInputTypeDef](./type_defs.md#deletetapearchiveinputtypedef).
+
 Keyword-only arguments:
 
 - `TapeARN`: `str` *(required)*
 - `BypassGovernanceRetention`: `bool`
 
 Returns
-[DeleteTapeArchiveOutputTypeDef](./type_defs.md#deletetapearchiveoutputtypedef).
+[DeleteTapeArchiveOutputResponseTypeDef](./type_defs.md#deletetapearchiveoutputresponsetypedef).
 
 ### delete_tape_pool
+
+Delete a custom tape pool.
 
 Type annotations for `boto3.client("storagegateway").delete_tape_pool` method.
 
 Boto3 documentation:
 [StorageGateway.Client.delete_tape_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_tape_pool)
 
+Arguments mapping described in
+[DeleteTapePoolInputTypeDef](./type_defs.md#deletetapepoolinputtypedef).
+
 Keyword-only arguments:
 
 - `PoolARN`: `str` *(required)*
 
 Returns
-[DeleteTapePoolOutputTypeDef](./type_defs.md#deletetapepooloutputtypedef).
+[DeleteTapePoolOutputResponseTypeDef](./type_defs.md#deletetapepooloutputresponsetypedef).
 
 ### delete_volume
+
+Deletes the specified storage volume that you previously created using the
+CreateCachediSCSIVolume or CreateStorediSCSIVolume API.
 
 Type annotations for `boto3.client("storagegateway").delete_volume` method.
 
 Boto3 documentation:
 [StorageGateway.Client.delete_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_volume)
 
+Arguments mapping described in
+[DeleteVolumeInputTypeDef](./type_defs.md#deletevolumeinputtypedef).
+
 Keyword-only arguments:
 
 - `VolumeARN`: `str` *(required)*
 
-Returns [DeleteVolumeOutputTypeDef](./type_defs.md#deletevolumeoutputtypedef).
+Returns
+[DeleteVolumeOutputResponseTypeDef](./type_defs.md#deletevolumeoutputresponsetypedef).
 
 ### describe_availability_monitor_test
+
+Returns information about the most recent high availability monitoring test
+that was performed on the host in a cluster.
 
 Type annotations for
 `boto3.client("storagegateway").describe_availability_monitor_test` method.
@@ -696,14 +857,19 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.describe_availability_monitor_test](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_availability_monitor_test)
 
+Arguments mapping described in
+[DescribeAvailabilityMonitorTestInputTypeDef](./type_defs.md#describeavailabilitymonitortestinputtypedef).
+
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
 Returns
-[DescribeAvailabilityMonitorTestOutputTypeDef](./type_defs.md#describeavailabilitymonitortestoutputtypedef).
+[DescribeAvailabilityMonitorTestOutputResponseTypeDef](./type_defs.md#describeavailabilitymonitortestoutputresponsetypedef).
 
 ### describe_bandwidth_rate_limit
+
+Returns the bandwidth rate limits of a gateway.
 
 Type annotations for
 `boto3.client("storagegateway").describe_bandwidth_rate_limit` method.
@@ -711,14 +877,19 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.describe_bandwidth_rate_limit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_bandwidth_rate_limit)
 
+Arguments mapping described in
+[DescribeBandwidthRateLimitInputTypeDef](./type_defs.md#describebandwidthratelimitinputtypedef).
+
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
 Returns
-[DescribeBandwidthRateLimitOutputTypeDef](./type_defs.md#describebandwidthratelimitoutputtypedef).
+[DescribeBandwidthRateLimitOutputResponseTypeDef](./type_defs.md#describebandwidthratelimitoutputresponsetypedef).
 
 ### describe_bandwidth_rate_limit_schedule
+
+Returns information about the bandwidth rate limit schedule of a gateway.
 
 Type annotations for
 `boto3.client("storagegateway").describe_bandwidth_rate_limit_schedule` method.
@@ -726,28 +897,38 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.describe_bandwidth_rate_limit_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_bandwidth_rate_limit_schedule)
 
+Arguments mapping described in
+[DescribeBandwidthRateLimitScheduleInputTypeDef](./type_defs.md#describebandwidthratelimitscheduleinputtypedef).
+
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
 Returns
-[DescribeBandwidthRateLimitScheduleOutputTypeDef](./type_defs.md#describebandwidthratelimitscheduleoutputtypedef).
+[DescribeBandwidthRateLimitScheduleOutputResponseTypeDef](./type_defs.md#describebandwidthratelimitscheduleoutputresponsetypedef).
 
 ### describe_cache
+
+Returns information about the cache of a gateway.
 
 Type annotations for `boto3.client("storagegateway").describe_cache` method.
 
 Boto3 documentation:
 [StorageGateway.Client.describe_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_cache)
 
+Arguments mapping described in
+[DescribeCacheInputTypeDef](./type_defs.md#describecacheinputtypedef).
+
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
 Returns
-[DescribeCacheOutputTypeDef](./type_defs.md#describecacheoutputtypedef).
+[DescribeCacheOutputResponseTypeDef](./type_defs.md#describecacheoutputresponsetypedef).
 
 ### describe_cached_iscsi_volumes
+
+Returns a description of the gateway volumes specified in the request.
 
 Type annotations for
 `boto3.client("storagegateway").describe_cached_iscsi_volumes` method.
@@ -755,14 +936,21 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.describe_cached_iscsi_volumes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_cached_iscsi_volumes)
 
+Arguments mapping described in
+[DescribeCachediSCSIVolumesInputTypeDef](./type_defs.md#describecachediscsivolumesinputtypedef).
+
 Keyword-only arguments:
 
 - `VolumeARNs`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeCachediSCSIVolumesOutputTypeDef](./type_defs.md#describecachediscsivolumesoutputtypedef).
+[DescribeCachediSCSIVolumesOutputResponseTypeDef](./type_defs.md#describecachediscsivolumesoutputresponsetypedef).
 
 ### describe_chap_credentials
+
+Returns an array of Challenge-Handshake Authentication Protocol (CHAP)
+credentials information for a specified iSCSI target, one for each target-
+initiator pair.
 
 Type annotations for `boto3.client("storagegateway").describe_chap_credentials`
 method.
@@ -770,14 +958,19 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.describe_chap_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_chap_credentials)
 
+Arguments mapping described in
+[DescribeChapCredentialsInputTypeDef](./type_defs.md#describechapcredentialsinputtypedef).
+
 Keyword-only arguments:
 
 - `TargetARN`: `str` *(required)*
 
 Returns
-[DescribeChapCredentialsOutputTypeDef](./type_defs.md#describechapcredentialsoutputtypedef).
+[DescribeChapCredentialsOutputResponseTypeDef](./type_defs.md#describechapcredentialsoutputresponsetypedef).
 
 ### describe_file_system_associations
+
+Gets the file system association information.
 
 Type annotations for
 `boto3.client("storagegateway").describe_file_system_associations` method.
@@ -785,14 +978,20 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.describe_file_system_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_file_system_associations)
 
+Arguments mapping described in
+[DescribeFileSystemAssociationsInputTypeDef](./type_defs.md#describefilesystemassociationsinputtypedef).
+
 Keyword-only arguments:
 
 - `FileSystemAssociationARNList`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeFileSystemAssociationsOutputTypeDef](./type_defs.md#describefilesystemassociationsoutputtypedef).
+[DescribeFileSystemAssociationsOutputResponseTypeDef](./type_defs.md#describefilesystemassociationsoutputresponsetypedef).
 
 ### describe_gateway_information
+
+Returns metadata about a gateway such as its name, network interfaces,
+configured time zone, and the state (whether the gateway is running or not).
 
 Type annotations for
 `boto3.client("storagegateway").describe_gateway_information` method.
@@ -800,14 +999,20 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.describe_gateway_information](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_gateway_information)
 
+Arguments mapping described in
+[DescribeGatewayInformationInputTypeDef](./type_defs.md#describegatewayinformationinputtypedef).
+
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
 Returns
-[DescribeGatewayInformationOutputTypeDef](./type_defs.md#describegatewayinformationoutputtypedef).
+[DescribeGatewayInformationOutputResponseTypeDef](./type_defs.md#describegatewayinformationoutputresponsetypedef).
 
 ### describe_maintenance_start_time
+
+Returns your gateway's weekly maintenance start time including the day and time
+of the week.
 
 Type annotations for
 `boto3.client("storagegateway").describe_maintenance_start_time` method.
@@ -815,14 +1020,20 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.describe_maintenance_start_time](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_maintenance_start_time)
 
+Arguments mapping described in
+[DescribeMaintenanceStartTimeInputTypeDef](./type_defs.md#describemaintenancestarttimeinputtypedef).
+
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
 Returns
-[DescribeMaintenanceStartTimeOutputTypeDef](./type_defs.md#describemaintenancestarttimeoutputtypedef).
+[DescribeMaintenanceStartTimeOutputResponseTypeDef](./type_defs.md#describemaintenancestarttimeoutputresponsetypedef).
 
 ### describe_nfs_file_shares
+
+Gets a description for one or more Network File System (NFS) file shares from a
+file gateway.
 
 Type annotations for `boto3.client("storagegateway").describe_nfs_file_shares`
 method.
@@ -830,14 +1041,20 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.describe_nfs_file_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_nfs_file_shares)
 
+Arguments mapping described in
+[DescribeNFSFileSharesInputTypeDef](./type_defs.md#describenfsfilesharesinputtypedef).
+
 Keyword-only arguments:
 
 - `FileShareARNList`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeNFSFileSharesOutputTypeDef](./type_defs.md#describenfsfilesharesoutputtypedef).
+[DescribeNFSFileSharesOutputResponseTypeDef](./type_defs.md#describenfsfilesharesoutputresponsetypedef).
 
 ### describe_smb_file_shares
+
+Gets a description for one or more Server Message Block (SMB) file shares from
+a file gateway.
 
 Type annotations for `boto3.client("storagegateway").describe_smb_file_shares`
 method.
@@ -845,14 +1062,20 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.describe_smb_file_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_smb_file_shares)
 
+Arguments mapping described in
+[DescribeSMBFileSharesInputTypeDef](./type_defs.md#describesmbfilesharesinputtypedef).
+
 Keyword-only arguments:
 
 - `FileShareARNList`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeSMBFileSharesOutputTypeDef](./type_defs.md#describesmbfilesharesoutputtypedef).
+[DescribeSMBFileSharesOutputResponseTypeDef](./type_defs.md#describesmbfilesharesoutputresponsetypedef).
 
 ### describe_smb_settings
+
+Gets a description of a Server Message Block (SMB) file share settings from a
+file gateway.
 
 Type annotations for `boto3.client("storagegateway").describe_smb_settings`
 method.
@@ -860,14 +1083,19 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.describe_smb_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_smb_settings)
 
+Arguments mapping described in
+[DescribeSMBSettingsInputTypeDef](./type_defs.md#describesmbsettingsinputtypedef).
+
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
 Returns
-[DescribeSMBSettingsOutputTypeDef](./type_defs.md#describesmbsettingsoutputtypedef).
+[DescribeSMBSettingsOutputResponseTypeDef](./type_defs.md#describesmbsettingsoutputresponsetypedef).
 
 ### describe_snapshot_schedule
+
+Describes the snapshot schedule for the specified gateway volume.
 
 Type annotations for
 `boto3.client("storagegateway").describe_snapshot_schedule` method.
@@ -875,14 +1103,19 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.describe_snapshot_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_snapshot_schedule)
 
+Arguments mapping described in
+[DescribeSnapshotScheduleInputTypeDef](./type_defs.md#describesnapshotscheduleinputtypedef).
+
 Keyword-only arguments:
 
 - `VolumeARN`: `str` *(required)*
 
 Returns
-[DescribeSnapshotScheduleOutputTypeDef](./type_defs.md#describesnapshotscheduleoutputtypedef).
+[DescribeSnapshotScheduleOutputResponseTypeDef](./type_defs.md#describesnapshotscheduleoutputresponsetypedef).
 
 ### describe_stored_iscsi_volumes
+
+Returns the description of the gateway volumes specified in the request.
 
 Type annotations for
 `boto3.client("storagegateway").describe_stored_iscsi_volumes` method.
@@ -890,14 +1123,20 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.describe_stored_iscsi_volumes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_stored_iscsi_volumes)
 
+Arguments mapping described in
+[DescribeStorediSCSIVolumesInputTypeDef](./type_defs.md#describestorediscsivolumesinputtypedef).
+
 Keyword-only arguments:
 
 - `VolumeARNs`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeStorediSCSIVolumesOutputTypeDef](./type_defs.md#describestorediscsivolumesoutputtypedef).
+[DescribeStorediSCSIVolumesOutputResponseTypeDef](./type_defs.md#describestorediscsivolumesoutputresponsetypedef).
 
 ### describe_tape_archives
+
+Returns a description of specified virtual tapes in the virtual tape shelf
+(VTS).
 
 Type annotations for `boto3.client("storagegateway").describe_tape_archives`
 method.
@@ -905,6 +1144,9 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.describe_tape_archives](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_tape_archives)
 
+Arguments mapping described in
+[DescribeTapeArchivesInputTypeDef](./type_defs.md#describetapearchivesinputtypedef).
+
 Keyword-only arguments:
 
 - `TapeARNs`: `List`\[`str`\]
@@ -912,9 +1154,12 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeTapeArchivesOutputTypeDef](./type_defs.md#describetapearchivesoutputtypedef).
+[DescribeTapeArchivesOutputResponseTypeDef](./type_defs.md#describetapearchivesoutputresponsetypedef).
 
 ### describe_tape_recovery_points
+
+Returns a list of virtual tape recovery points that are available for the
+specified tape gateway.
 
 Type annotations for
 `boto3.client("storagegateway").describe_tape_recovery_points` method.
@@ -922,6 +1167,9 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.describe_tape_recovery_points](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_tape_recovery_points)
 
+Arguments mapping described in
+[DescribeTapeRecoveryPointsInputTypeDef](./type_defs.md#describetaperecoverypointsinputtypedef).
+
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
@@ -929,14 +1177,20 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeTapeRecoveryPointsOutputTypeDef](./type_defs.md#describetaperecoverypointsoutputtypedef).
+[DescribeTapeRecoveryPointsOutputResponseTypeDef](./type_defs.md#describetaperecoverypointsoutputresponsetypedef).
 
 ### describe_tapes
+
+Returns a description of the specified Amazon Resource Name (ARN) of virtual
+tapes.
 
 Type annotations for `boto3.client("storagegateway").describe_tapes` method.
 
 Boto3 documentation:
 [StorageGateway.Client.describe_tapes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_tapes)
+
+Arguments mapping described in
+[DescribeTapesInputTypeDef](./type_defs.md#describetapesinputtypedef).
 
 Keyword-only arguments:
 
@@ -946,9 +1200,11 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeTapesOutputTypeDef](./type_defs.md#describetapesoutputtypedef).
+[DescribeTapesOutputResponseTypeDef](./type_defs.md#describetapesoutputresponsetypedef).
 
 ### describe_upload_buffer
+
+Returns information about the upload buffer of a gateway.
 
 Type annotations for `boto3.client("storagegateway").describe_upload_buffer`
 method.
@@ -956,20 +1212,29 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.describe_upload_buffer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_upload_buffer)
 
+Arguments mapping described in
+[DescribeUploadBufferInputTypeDef](./type_defs.md#describeuploadbufferinputtypedef).
+
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
 Returns
-[DescribeUploadBufferOutputTypeDef](./type_defs.md#describeuploadbufferoutputtypedef).
+[DescribeUploadBufferOutputResponseTypeDef](./type_defs.md#describeuploadbufferoutputresponsetypedef).
 
 ### describe_vtl_devices
+
+Returns a description of virtual tape library (VTL) devices for the specified
+tape gateway.
 
 Type annotations for `boto3.client("storagegateway").describe_vtl_devices`
 method.
 
 Boto3 documentation:
 [StorageGateway.Client.describe_vtl_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_vtl_devices)
+
+Arguments mapping described in
+[DescribeVTLDevicesInputTypeDef](./type_defs.md#describevtldevicesinputtypedef).
 
 Keyword-only arguments:
 
@@ -979,9 +1244,11 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeVTLDevicesOutputTypeDef](./type_defs.md#describevtldevicesoutputtypedef).
+[DescribeVTLDevicesOutputResponseTypeDef](./type_defs.md#describevtldevicesoutputresponsetypedef).
 
 ### describe_working_storage
+
+Returns information about the working storage of a gateway.
 
 Type annotations for `boto3.client("storagegateway").describe_working_storage`
 method.
@@ -989,42 +1256,59 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.describe_working_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_working_storage)
 
+Arguments mapping described in
+[DescribeWorkingStorageInputTypeDef](./type_defs.md#describeworkingstorageinputtypedef).
+
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
 Returns
-[DescribeWorkingStorageOutputTypeDef](./type_defs.md#describeworkingstorageoutputtypedef).
+[DescribeWorkingStorageOutputResponseTypeDef](./type_defs.md#describeworkingstorageoutputresponsetypedef).
 
 ### detach_volume
+
+Disconnects a volume from an iSCSI connection and then detaches the volume from
+the specified gateway.
 
 Type annotations for `boto3.client("storagegateway").detach_volume` method.
 
 Boto3 documentation:
 [StorageGateway.Client.detach_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.detach_volume)
 
+Arguments mapping described in
+[DetachVolumeInputTypeDef](./type_defs.md#detachvolumeinputtypedef).
+
 Keyword-only arguments:
 
 - `VolumeARN`: `str` *(required)*
 - `ForceDetach`: `bool`
 
-Returns [DetachVolumeOutputTypeDef](./type_defs.md#detachvolumeoutputtypedef).
+Returns
+[DetachVolumeOutputResponseTypeDef](./type_defs.md#detachvolumeoutputresponsetypedef).
 
 ### disable_gateway
+
+Disables a tape gateway when the gateway is no longer functioning.
 
 Type annotations for `boto3.client("storagegateway").disable_gateway` method.
 
 Boto3 documentation:
 [StorageGateway.Client.disable_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.disable_gateway)
 
+Arguments mapping described in
+[DisableGatewayInputTypeDef](./type_defs.md#disablegatewayinputtypedef).
+
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
 Returns
-[DisableGatewayOutputTypeDef](./type_defs.md#disablegatewayoutputtypedef).
+[DisableGatewayOutputResponseTypeDef](./type_defs.md#disablegatewayoutputresponsetypedef).
 
 ### disassociate_file_system
+
+Disassociates an Amazon FSx file system from the specified gateway.
 
 Type annotations for `boto3.client("storagegateway").disassociate_file_system`
 method.
@@ -1032,15 +1316,20 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.disassociate_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.disassociate_file_system)
 
+Arguments mapping described in
+[DisassociateFileSystemInputTypeDef](./type_defs.md#disassociatefilesysteminputtypedef).
+
 Keyword-only arguments:
 
 - `FileSystemAssociationARN`: `str` *(required)*
 - `ForceDelete`: `bool`
 
 Returns
-[DisassociateFileSystemOutputTypeDef](./type_defs.md#disassociatefilesystemoutputtypedef).
+[DisassociateFileSystemOutputResponseTypeDef](./type_defs.md#disassociatefilesystemoutputresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("storagegateway").generate_presigned_url`
 method.
@@ -1059,10 +1348,15 @@ Returns `str`.
 
 ### join_domain
 
+Adds a file gateway to an Active Directory domain.
+
 Type annotations for `boto3.client("storagegateway").join_domain` method.
 
 Boto3 documentation:
 [StorageGateway.Client.join_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.join_domain)
+
+Arguments mapping described in
+[JoinDomainInputTypeDef](./type_defs.md#joindomaininputtypedef).
 
 Keyword-only arguments:
 
@@ -1074,9 +1368,12 @@ Keyword-only arguments:
 - `DomainControllers`: `List`\[`str`\]
 - `TimeoutInSeconds`: `int`
 
-Returns [JoinDomainOutputTypeDef](./type_defs.md#joindomainoutputtypedef).
+Returns
+[JoinDomainOutputResponseTypeDef](./type_defs.md#joindomainoutputresponsetypedef).
 
 ### list_automatic_tape_creation_policies
+
+Lists the automatic tape creation policies for a gateway.
 
 Type annotations for
 `boto3.client("storagegateway").list_automatic_tape_creation_policies` method.
@@ -1084,19 +1381,28 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.list_automatic_tape_creation_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_automatic_tape_creation_policies)
 
+Arguments mapping described in
+[ListAutomaticTapeCreationPoliciesInputTypeDef](./type_defs.md#listautomatictapecreationpoliciesinputtypedef).
+
 Keyword-only arguments:
 
 - `GatewayARN`: `str`
 
 Returns
-[ListAutomaticTapeCreationPoliciesOutputTypeDef](./type_defs.md#listautomatictapecreationpoliciesoutputtypedef).
+[ListAutomaticTapeCreationPoliciesOutputResponseTypeDef](./type_defs.md#listautomatictapecreationpoliciesoutputresponsetypedef).
 
 ### list_file_shares
+
+Gets a list of the file shares for a specific file gateway, or the list of file
+shares that belong to the calling user account.
 
 Type annotations for `boto3.client("storagegateway").list_file_shares` method.
 
 Boto3 documentation:
 [StorageGateway.Client.list_file_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_file_shares)
+
+Arguments mapping described in
+[ListFileSharesInputTypeDef](./type_defs.md#listfilesharesinputtypedef).
 
 Keyword-only arguments:
 
@@ -1105,9 +1411,11 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[ListFileSharesOutputTypeDef](./type_defs.md#listfilesharesoutputtypedef).
+[ListFileSharesOutputResponseTypeDef](./type_defs.md#listfilesharesoutputresponsetypedef).
 
 ### list_file_system_associations
+
+Gets a list of `FileSystemAssociationSummary` objects.
 
 Type annotations for
 `boto3.client("storagegateway").list_file_system_associations` method.
@@ -1115,6 +1423,9 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.list_file_system_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_file_system_associations)
 
+Arguments mapping described in
+[ListFileSystemAssociationsInputTypeDef](./type_defs.md#listfilesystemassociationsinputtypedef).
+
 Keyword-only arguments:
 
 - `GatewayARN`: `str`
@@ -1122,43 +1433,60 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[ListFileSystemAssociationsOutputTypeDef](./type_defs.md#listfilesystemassociationsoutputtypedef).
+[ListFileSystemAssociationsOutputResponseTypeDef](./type_defs.md#listfilesystemassociationsoutputresponsetypedef).
 
 ### list_gateways
+
+Lists gateways owned by an AWS account in an AWS Region specified in the
+request.
 
 Type annotations for `boto3.client("storagegateway").list_gateways` method.
 
 Boto3 documentation:
 [StorageGateway.Client.list_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_gateways)
 
+Arguments mapping described in
+[ListGatewaysInputTypeDef](./type_defs.md#listgatewaysinputtypedef).
+
 Keyword-only arguments:
 
 - `Marker`: `str`
 - `Limit`: `int`
 
-Returns [ListGatewaysOutputTypeDef](./type_defs.md#listgatewaysoutputtypedef).
+Returns
+[ListGatewaysOutputResponseTypeDef](./type_defs.md#listgatewaysoutputresponsetypedef).
 
 ### list_local_disks
+
+Returns a list of the gateway's local disks.
 
 Type annotations for `boto3.client("storagegateway").list_local_disks` method.
 
 Boto3 documentation:
 [StorageGateway.Client.list_local_disks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_local_disks)
 
+Arguments mapping described in
+[ListLocalDisksInputTypeDef](./type_defs.md#listlocaldisksinputtypedef).
+
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
 Returns
-[ListLocalDisksOutputTypeDef](./type_defs.md#listlocaldisksoutputtypedef).
+[ListLocalDisksOutputResponseTypeDef](./type_defs.md#listlocaldisksoutputresponsetypedef).
 
 ### list_tags_for_resource
+
+Lists the tags that have been added to the specified resource.
 
 Type annotations for `boto3.client("storagegateway").list_tags_for_resource`
 method.
 
 Boto3 documentation:
 [StorageGateway.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_tags_for_resource)
+
+Arguments mapping described in
+[ListTagsForResourceInputTypeDef](./type_defs.md#listtagsforresourceinputtypedef).
 
 Keyword-only arguments:
 
@@ -1167,14 +1495,19 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+[ListTagsForResourceOutputResponseTypeDef](./type_defs.md#listtagsforresourceoutputresponsetypedef).
 
 ### list_tape_pools
+
+Lists custom tape pools.
 
 Type annotations for `boto3.client("storagegateway").list_tape_pools` method.
 
 Boto3 documentation:
 [StorageGateway.Client.list_tape_pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_tape_pools)
+
+Arguments mapping described in
+[ListTapePoolsInputTypeDef](./type_defs.md#listtapepoolsinputtypedef).
 
 Keyword-only arguments:
 
@@ -1183,14 +1516,20 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListTapePoolsOutputTypeDef](./type_defs.md#listtapepoolsoutputtypedef).
+[ListTapePoolsOutputResponseTypeDef](./type_defs.md#listtapepoolsoutputresponsetypedef).
 
 ### list_tapes
+
+Lists virtual tapes in your virtual tape library (VTL) and your virtual tape
+shelf (VTS).
 
 Type annotations for `boto3.client("storagegateway").list_tapes` method.
 
 Boto3 documentation:
 [StorageGateway.Client.list_tapes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_tapes)
+
+Arguments mapping described in
+[ListTapesInputTypeDef](./type_defs.md#listtapesinputtypedef).
 
 Keyword-only arguments:
 
@@ -1198,9 +1537,12 @@ Keyword-only arguments:
 - `Marker`: `str`
 - `Limit`: `int`
 
-Returns [ListTapesOutputTypeDef](./type_defs.md#listtapesoutputtypedef).
+Returns
+[ListTapesOutputResponseTypeDef](./type_defs.md#listtapesoutputresponsetypedef).
 
 ### list_volume_initiators
+
+Lists iSCSI initiators that are connected to a volume.
 
 Type annotations for `boto3.client("storagegateway").list_volume_initiators`
 method.
@@ -1208,14 +1550,19 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.list_volume_initiators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_volume_initiators)
 
+Arguments mapping described in
+[ListVolumeInitiatorsInputTypeDef](./type_defs.md#listvolumeinitiatorsinputtypedef).
+
 Keyword-only arguments:
 
 - `VolumeARN`: `str` *(required)*
 
 Returns
-[ListVolumeInitiatorsOutputTypeDef](./type_defs.md#listvolumeinitiatorsoutputtypedef).
+[ListVolumeInitiatorsOutputResponseTypeDef](./type_defs.md#listvolumeinitiatorsoutputresponsetypedef).
 
 ### list_volume_recovery_points
+
+Lists the recovery points for a specified gateway.
 
 Type annotations for
 `boto3.client("storagegateway").list_volume_recovery_points` method.
@@ -1223,19 +1570,27 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.list_volume_recovery_points](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_volume_recovery_points)
 
+Arguments mapping described in
+[ListVolumeRecoveryPointsInputTypeDef](./type_defs.md#listvolumerecoverypointsinputtypedef).
+
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
 Returns
-[ListVolumeRecoveryPointsOutputTypeDef](./type_defs.md#listvolumerecoverypointsoutputtypedef).
+[ListVolumeRecoveryPointsOutputResponseTypeDef](./type_defs.md#listvolumerecoverypointsoutputresponsetypedef).
 
 ### list_volumes
+
+Lists the iSCSI stored volumes of a gateway.
 
 Type annotations for `boto3.client("storagegateway").list_volumes` method.
 
 Boto3 documentation:
 [StorageGateway.Client.list_volumes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_volumes)
+
+Arguments mapping described in
+[ListVolumesInputTypeDef](./type_defs.md#listvolumesinputtypedef).
 
 Keyword-only arguments:
 
@@ -1243,9 +1598,13 @@ Keyword-only arguments:
 - `Marker`: `str`
 - `Limit`: `int`
 
-Returns [ListVolumesOutputTypeDef](./type_defs.md#listvolumesoutputtypedef).
+Returns
+[ListVolumesOutputResponseTypeDef](./type_defs.md#listvolumesoutputresponsetypedef).
 
 ### notify_when_uploaded
+
+Sends you notification through CloudWatch Events when all files written to your
+file share have been uploaded to Amazon S3.
 
 Type annotations for `boto3.client("storagegateway").notify_when_uploaded`
 method.
@@ -1253,19 +1612,27 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.notify_when_uploaded](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.notify_when_uploaded)
 
+Arguments mapping described in
+[NotifyWhenUploadedInputTypeDef](./type_defs.md#notifywhenuploadedinputtypedef).
+
 Keyword-only arguments:
 
 - `FileShareARN`: `str` *(required)*
 
 Returns
-[NotifyWhenUploadedOutputTypeDef](./type_defs.md#notifywhenuploadedoutputtypedef).
+[NotifyWhenUploadedOutputResponseTypeDef](./type_defs.md#notifywhenuploadedoutputresponsetypedef).
 
 ### refresh_cache
+
+Refreshes the cached inventory of objects for the specified file share.
 
 Type annotations for `boto3.client("storagegateway").refresh_cache` method.
 
 Boto3 documentation:
 [StorageGateway.Client.refresh_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.refresh_cache)
+
+Arguments mapping described in
+[RefreshCacheInputTypeDef](./type_defs.md#refreshcacheinputtypedef).
 
 Keyword-only arguments:
 
@@ -1273,9 +1640,12 @@ Keyword-only arguments:
 - `FolderList`: `List`\[`str`\]
 - `Recursive`: `bool`
 
-Returns [RefreshCacheOutputTypeDef](./type_defs.md#refreshcacheoutputtypedef).
+Returns
+[RefreshCacheOutputResponseTypeDef](./type_defs.md#refreshcacheoutputresponsetypedef).
 
 ### remove_tags_from_resource
+
+Removes one or more tags from the specified resource.
 
 Type annotations for `boto3.client("storagegateway").remove_tags_from_resource`
 method.
@@ -1283,28 +1653,41 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.remove_tags_from_resource)
 
+Arguments mapping described in
+[RemoveTagsFromResourceInputTypeDef](./type_defs.md#removetagsfromresourceinputtypedef).
+
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
 
 Returns
-[RemoveTagsFromResourceOutputTypeDef](./type_defs.md#removetagsfromresourceoutputtypedef).
+[RemoveTagsFromResourceOutputResponseTypeDef](./type_defs.md#removetagsfromresourceoutputresponsetypedef).
 
 ### reset_cache
+
+Resets all cache disks that have encountered an error and makes the disks
+available for reconfiguration as cache storage.
 
 Type annotations for `boto3.client("storagegateway").reset_cache` method.
 
 Boto3 documentation:
 [StorageGateway.Client.reset_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.reset_cache)
 
+Arguments mapping described in
+[ResetCacheInputTypeDef](./type_defs.md#resetcacheinputtypedef).
+
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
-Returns [ResetCacheOutputTypeDef](./type_defs.md#resetcacheoutputtypedef).
+Returns
+[ResetCacheOutputResponseTypeDef](./type_defs.md#resetcacheoutputresponsetypedef).
 
 ### retrieve_tape_archive
+
+Retrieves an archived virtual tape from the virtual tape shelf (VTS) to a tape
+gateway.
 
 Type annotations for `boto3.client("storagegateway").retrieve_tape_archive`
 method.
@@ -1312,15 +1695,20 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.retrieve_tape_archive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.retrieve_tape_archive)
 
+Arguments mapping described in
+[RetrieveTapeArchiveInputTypeDef](./type_defs.md#retrievetapearchiveinputtypedef).
+
 Keyword-only arguments:
 
 - `TapeARN`: `str` *(required)*
 - `GatewayARN`: `str` *(required)*
 
 Returns
-[RetrieveTapeArchiveOutputTypeDef](./type_defs.md#retrievetapearchiveoutputtypedef).
+[RetrieveTapeArchiveOutputResponseTypeDef](./type_defs.md#retrievetapearchiveoutputresponsetypedef).
 
 ### retrieve_tape_recovery_point
+
+Retrieves the recovery point for the specified virtual tape.
 
 Type annotations for
 `boto3.client("storagegateway").retrieve_tape_recovery_point` method.
@@ -1328,15 +1716,20 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.retrieve_tape_recovery_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.retrieve_tape_recovery_point)
 
+Arguments mapping described in
+[RetrieveTapeRecoveryPointInputTypeDef](./type_defs.md#retrievetaperecoverypointinputtypedef).
+
 Keyword-only arguments:
 
 - `TapeARN`: `str` *(required)*
 - `GatewayARN`: `str` *(required)*
 
 Returns
-[RetrieveTapeRecoveryPointOutputTypeDef](./type_defs.md#retrievetaperecoverypointoutputtypedef).
+[RetrieveTapeRecoveryPointOutputResponseTypeDef](./type_defs.md#retrievetaperecoverypointoutputresponsetypedef).
 
 ### set_local_console_password
+
+Sets the password for your VM local console.
 
 Type annotations for
 `boto3.client("storagegateway").set_local_console_password` method.
@@ -1344,15 +1737,20 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.set_local_console_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.set_local_console_password)
 
+Arguments mapping described in
+[SetLocalConsolePasswordInputTypeDef](./type_defs.md#setlocalconsolepasswordinputtypedef).
+
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 - `LocalConsolePassword`: `str` *(required)*
 
 Returns
-[SetLocalConsolePasswordOutputTypeDef](./type_defs.md#setlocalconsolepasswordoutputtypedef).
+[SetLocalConsolePasswordOutputResponseTypeDef](./type_defs.md#setlocalconsolepasswordoutputresponsetypedef).
 
 ### set_smb_guest_password
+
+Sets the password for the guest user `smbguest`.
 
 Type annotations for `boto3.client("storagegateway").set_smb_guest_password`
 method.
@@ -1360,29 +1758,40 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.set_smb_guest_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.set_smb_guest_password)
 
+Arguments mapping described in
+[SetSMBGuestPasswordInputTypeDef](./type_defs.md#setsmbguestpasswordinputtypedef).
+
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 - `Password`: `str` *(required)*
 
 Returns
-[SetSMBGuestPasswordOutputTypeDef](./type_defs.md#setsmbguestpasswordoutputtypedef).
+[SetSMBGuestPasswordOutputResponseTypeDef](./type_defs.md#setsmbguestpasswordoutputresponsetypedef).
 
 ### shutdown_gateway
+
+Shuts down a gateway.
 
 Type annotations for `boto3.client("storagegateway").shutdown_gateway` method.
 
 Boto3 documentation:
 [StorageGateway.Client.shutdown_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.shutdown_gateway)
 
+Arguments mapping described in
+[ShutdownGatewayInputTypeDef](./type_defs.md#shutdowngatewayinputtypedef).
+
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
 Returns
-[ShutdownGatewayOutputTypeDef](./type_defs.md#shutdowngatewayoutputtypedef).
+[ShutdownGatewayOutputResponseTypeDef](./type_defs.md#shutdowngatewayoutputresponsetypedef).
 
 ### start_availability_monitor_test
+
+Start a test that verifies that the specified gateway is configured for High
+Availability monitoring in your host environment.
 
 Type annotations for
 `boto3.client("storagegateway").start_availability_monitor_test` method.
@@ -1390,33 +1799,47 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.start_availability_monitor_test](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.start_availability_monitor_test)
 
+Arguments mapping described in
+[StartAvailabilityMonitorTestInputTypeDef](./type_defs.md#startavailabilitymonitortestinputtypedef).
+
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
 Returns
-[StartAvailabilityMonitorTestOutputTypeDef](./type_defs.md#startavailabilitymonitortestoutputtypedef).
+[StartAvailabilityMonitorTestOutputResponseTypeDef](./type_defs.md#startavailabilitymonitortestoutputresponsetypedef).
 
 ### start_gateway
+
+Starts a gateway that you previously shut down (see ShutdownGateway ).
 
 Type annotations for `boto3.client("storagegateway").start_gateway` method.
 
 Boto3 documentation:
 [StorageGateway.Client.start_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.start_gateway)
 
+Arguments mapping described in
+[StartGatewayInputTypeDef](./type_defs.md#startgatewayinputtypedef).
+
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
-Returns [StartGatewayOutputTypeDef](./type_defs.md#startgatewayoutputtypedef).
+Returns
+[StartGatewayOutputResponseTypeDef](./type_defs.md#startgatewayoutputresponsetypedef).
 
 ### update_automatic_tape_creation_policy
+
+Updates the automatic tape creation policy of a gateway.
 
 Type annotations for
 `boto3.client("storagegateway").update_automatic_tape_creation_policy` method.
 
 Boto3 documentation:
 [StorageGateway.Client.update_automatic_tape_creation_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_automatic_tape_creation_policy)
+
+Arguments mapping described in
+[UpdateAutomaticTapeCreationPolicyInputTypeDef](./type_defs.md#updateautomatictapecreationpolicyinputtypedef).
 
 Keyword-only arguments:
 
@@ -1426,15 +1849,20 @@ Keyword-only arguments:
 - `GatewayARN`: `str` *(required)*
 
 Returns
-[UpdateAutomaticTapeCreationPolicyOutputTypeDef](./type_defs.md#updateautomatictapecreationpolicyoutputtypedef).
+[UpdateAutomaticTapeCreationPolicyOutputResponseTypeDef](./type_defs.md#updateautomatictapecreationpolicyoutputresponsetypedef).
 
 ### update_bandwidth_rate_limit
+
+Updates the bandwidth rate limits of a gateway.
 
 Type annotations for
 `boto3.client("storagegateway").update_bandwidth_rate_limit` method.
 
 Boto3 documentation:
 [StorageGateway.Client.update_bandwidth_rate_limit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_bandwidth_rate_limit)
+
+Arguments mapping described in
+[UpdateBandwidthRateLimitInputTypeDef](./type_defs.md#updatebandwidthratelimitinputtypedef).
 
 Keyword-only arguments:
 
@@ -1443,15 +1871,20 @@ Keyword-only arguments:
 - `AverageDownloadRateLimitInBitsPerSec`: `int`
 
 Returns
-[UpdateBandwidthRateLimitOutputTypeDef](./type_defs.md#updatebandwidthratelimitoutputtypedef).
+[UpdateBandwidthRateLimitOutputResponseTypeDef](./type_defs.md#updatebandwidthratelimitoutputresponsetypedef).
 
 ### update_bandwidth_rate_limit_schedule
+
+Updates the bandwidth rate limit schedule for a specified gateway.
 
 Type annotations for
 `boto3.client("storagegateway").update_bandwidth_rate_limit_schedule` method.
 
 Boto3 documentation:
 [StorageGateway.Client.update_bandwidth_rate_limit_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_bandwidth_rate_limit_schedule)
+
+Arguments mapping described in
+[UpdateBandwidthRateLimitScheduleInputTypeDef](./type_defs.md#updatebandwidthratelimitscheduleinputtypedef).
 
 Keyword-only arguments:
 
@@ -1461,15 +1894,21 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateBandwidthRateLimitScheduleOutputTypeDef](./type_defs.md#updatebandwidthratelimitscheduleoutputtypedef).
+[UpdateBandwidthRateLimitScheduleOutputResponseTypeDef](./type_defs.md#updatebandwidthratelimitscheduleoutputresponsetypedef).
 
 ### update_chap_credentials
+
+Updates the Challenge-Handshake Authentication Protocol (CHAP) credentials for
+a specified iSCSI target.
 
 Type annotations for `boto3.client("storagegateway").update_chap_credentials`
 method.
 
 Boto3 documentation:
 [StorageGateway.Client.update_chap_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_chap_credentials)
+
+Arguments mapping described in
+[UpdateChapCredentialsInputTypeDef](./type_defs.md#updatechapcredentialsinputtypedef).
 
 Keyword-only arguments:
 
@@ -1479,15 +1918,20 @@ Keyword-only arguments:
 - `SecretToAuthenticateTarget`: `str`
 
 Returns
-[UpdateChapCredentialsOutputTypeDef](./type_defs.md#updatechapcredentialsoutputtypedef).
+[UpdateChapCredentialsOutputResponseTypeDef](./type_defs.md#updatechapcredentialsoutputresponsetypedef).
 
 ### update_file_system_association
+
+Updates a file system association.
 
 Type annotations for
 `boto3.client("storagegateway").update_file_system_association` method.
 
 Boto3 documentation:
 [StorageGateway.Client.update_file_system_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_file_system_association)
+
+Arguments mapping described in
+[UpdateFileSystemAssociationInputTypeDef](./type_defs.md#updatefilesystemassociationinputtypedef).
 
 Keyword-only arguments:
 
@@ -1499,15 +1943,20 @@ Keyword-only arguments:
   [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
 
 Returns
-[UpdateFileSystemAssociationOutputTypeDef](./type_defs.md#updatefilesystemassociationoutputtypedef).
+[UpdateFileSystemAssociationOutputResponseTypeDef](./type_defs.md#updatefilesystemassociationoutputresponsetypedef).
 
 ### update_gateway_information
+
+Updates a gateway's metadata, which includes the gateway's name and time zone.
 
 Type annotations for
 `boto3.client("storagegateway").update_gateway_information` method.
 
 Boto3 documentation:
 [StorageGateway.Client.update_gateway_information](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_gateway_information)
+
+Arguments mapping described in
+[UpdateGatewayInformationInputTypeDef](./type_defs.md#updategatewayinformationinputtypedef).
 
 Keyword-only arguments:
 
@@ -1517,9 +1966,11 @@ Keyword-only arguments:
 - `CloudWatchLogGroupARN`: `str`
 
 Returns
-[UpdateGatewayInformationOutputTypeDef](./type_defs.md#updategatewayinformationoutputtypedef).
+[UpdateGatewayInformationOutputResponseTypeDef](./type_defs.md#updategatewayinformationoutputresponsetypedef).
 
 ### update_gateway_software_now
+
+Updates the gateway virtual machine (VM) software.
 
 Type annotations for
 `boto3.client("storagegateway").update_gateway_software_now` method.
@@ -1527,20 +1978,29 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.update_gateway_software_now](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_gateway_software_now)
 
+Arguments mapping described in
+[UpdateGatewaySoftwareNowInputTypeDef](./type_defs.md#updategatewaysoftwarenowinputtypedef).
+
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 
 Returns
-[UpdateGatewaySoftwareNowOutputTypeDef](./type_defs.md#updategatewaysoftwarenowoutputtypedef).
+[UpdateGatewaySoftwareNowOutputResponseTypeDef](./type_defs.md#updategatewaysoftwarenowoutputresponsetypedef).
 
 ### update_maintenance_start_time
+
+Updates a gateway's weekly maintenance start time information, including day
+and time of the week.
 
 Type annotations for
 `boto3.client("storagegateway").update_maintenance_start_time` method.
 
 Boto3 documentation:
 [StorageGateway.Client.update_maintenance_start_time](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_maintenance_start_time)
+
+Arguments mapping described in
+[UpdateMaintenanceStartTimeInputTypeDef](./type_defs.md#updatemaintenancestarttimeinputtypedef).
 
 Keyword-only arguments:
 
@@ -1551,15 +2011,20 @@ Keyword-only arguments:
 - `DayOfMonth`: `int`
 
 Returns
-[UpdateMaintenanceStartTimeOutputTypeDef](./type_defs.md#updatemaintenancestarttimeoutputtypedef).
+[UpdateMaintenanceStartTimeOutputResponseTypeDef](./type_defs.md#updatemaintenancestarttimeoutputresponsetypedef).
 
 ### update_nfs_file_share
+
+Updates a Network File System (NFS) file share.
 
 Type annotations for `boto3.client("storagegateway").update_nfs_file_share`
 method.
 
 Boto3 documentation:
 [StorageGateway.Client.update_nfs_file_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_nfs_file_share)
+
+Arguments mapping described in
+[UpdateNFSFileShareInputTypeDef](./type_defs.md#updatenfsfileshareinputtypedef).
 
 Keyword-only arguments:
 
@@ -1581,15 +2046,20 @@ Keyword-only arguments:
 - `NotificationPolicy`: `str`
 
 Returns
-[UpdateNFSFileShareOutputTypeDef](./type_defs.md#updatenfsfileshareoutputtypedef).
+[UpdateNFSFileShareOutputResponseTypeDef](./type_defs.md#updatenfsfileshareoutputresponsetypedef).
 
 ### update_smb_file_share
+
+Updates a Server Message Block (SMB) file share.
 
 Type annotations for `boto3.client("storagegateway").update_smb_file_share`
 method.
 
 Boto3 documentation:
 [StorageGateway.Client.update_smb_file_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_smb_file_share)
+
+Arguments mapping described in
+[UpdateSMBFileShareInputTypeDef](./type_defs.md#updatesmbfileshareinputtypedef).
 
 Keyword-only arguments:
 
@@ -1614,9 +2084,12 @@ Keyword-only arguments:
 - `NotificationPolicy`: `str`
 
 Returns
-[UpdateSMBFileShareOutputTypeDef](./type_defs.md#updatesmbfileshareoutputtypedef).
+[UpdateSMBFileShareOutputResponseTypeDef](./type_defs.md#updatesmbfileshareoutputresponsetypedef).
 
 ### update_smb_file_share_visibility
+
+Controls whether the shares on a gateway are visible in a net view or browse
+list.
 
 Type annotations for
 `boto3.client("storagegateway").update_smb_file_share_visibility` method.
@@ -1624,21 +2097,29 @@ Type annotations for
 Boto3 documentation:
 [StorageGateway.Client.update_smb_file_share_visibility](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_smb_file_share_visibility)
 
+Arguments mapping described in
+[UpdateSMBFileShareVisibilityInputTypeDef](./type_defs.md#updatesmbfilesharevisibilityinputtypedef).
+
 Keyword-only arguments:
 
 - `GatewayARN`: `str` *(required)*
 - `FileSharesVisible`: `bool` *(required)*
 
 Returns
-[UpdateSMBFileShareVisibilityOutputTypeDef](./type_defs.md#updatesmbfilesharevisibilityoutputtypedef).
+[UpdateSMBFileShareVisibilityOutputResponseTypeDef](./type_defs.md#updatesmbfilesharevisibilityoutputresponsetypedef).
 
 ### update_smb_security_strategy
+
+Updates the SMB security strategy on a file gateway.
 
 Type annotations for
 `boto3.client("storagegateway").update_smb_security_strategy` method.
 
 Boto3 documentation:
 [StorageGateway.Client.update_smb_security_strategy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_smb_security_strategy)
+
+Arguments mapping described in
+[UpdateSMBSecurityStrategyInputTypeDef](./type_defs.md#updatesmbsecuritystrategyinputtypedef).
 
 Keyword-only arguments:
 
@@ -1647,15 +2128,20 @@ Keyword-only arguments:
   [SMBSecurityStrategyType](./literals.md#smbsecuritystrategytype) *(required)*
 
 Returns
-[UpdateSMBSecurityStrategyOutputTypeDef](./type_defs.md#updatesmbsecuritystrategyoutputtypedef).
+[UpdateSMBSecurityStrategyOutputResponseTypeDef](./type_defs.md#updatesmbsecuritystrategyoutputresponsetypedef).
 
 ### update_snapshot_schedule
+
+Updates a snapshot schedule configured for a gateway volume.
 
 Type annotations for `boto3.client("storagegateway").update_snapshot_schedule`
 method.
 
 Boto3 documentation:
 [StorageGateway.Client.update_snapshot_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_snapshot_schedule)
+
+Arguments mapping described in
+[UpdateSnapshotScheduleInputTypeDef](./type_defs.md#updatesnapshotscheduleinputtypedef).
 
 Keyword-only arguments:
 
@@ -1666,9 +2152,11 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[UpdateSnapshotScheduleOutputTypeDef](./type_defs.md#updatesnapshotscheduleoutputtypedef).
+[UpdateSnapshotScheduleOutputResponseTypeDef](./type_defs.md#updatesnapshotscheduleoutputresponsetypedef).
 
 ### update_vtl_device_type
+
+Updates the type of medium changer in a tape gateway.
 
 Type annotations for `boto3.client("storagegateway").update_vtl_device_type`
 method.
@@ -1676,13 +2164,16 @@ method.
 Boto3 documentation:
 [StorageGateway.Client.update_vtl_device_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_vtl_device_type)
 
+Arguments mapping described in
+[UpdateVTLDeviceTypeInputTypeDef](./type_defs.md#updatevtldevicetypeinputtypedef).
+
 Keyword-only arguments:
 
 - `VTLDeviceARN`: `str` *(required)*
 - `DeviceType`: `str` *(required)*
 
 Returns
-[UpdateVTLDeviceTypeOutputTypeDef](./type_defs.md#updatevtldevicetypeoutputtypedef).
+[UpdateVTLDeviceTypeOutputResponseTypeDef](./type_defs.md#updatevtldevicetypeoutputresponsetypedef).
 
 ### get_paginator
 

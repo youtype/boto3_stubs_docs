@@ -89,16 +89,23 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_applicationcostprofiler.type_defs import DeleteReportDefinitionResultTypeDef, ...
+from mypy_boto3_applicationcostprofiler.type_defs import DeleteReportDefinitionRequestTypeDef, ...
 ```
 
-- [DeleteReportDefinitionResultTypeDef](./type_defs.md#deletereportdefinitionresulttypedef)
-- [GetReportDefinitionResultTypeDef](./type_defs.md#getreportdefinitionresulttypedef)
-- [ImportApplicationUsageResultTypeDef](./type_defs.md#importapplicationusageresulttypedef)
-- [ListReportDefinitionsResultTypeDef](./type_defs.md#listreportdefinitionsresulttypedef)
+- [DeleteReportDefinitionRequestTypeDef](./type_defs.md#deletereportdefinitionrequesttypedef)
+- [DeleteReportDefinitionResultResponseTypeDef](./type_defs.md#deletereportdefinitionresultresponsetypedef)
+- [GetReportDefinitionRequestTypeDef](./type_defs.md#getreportdefinitionrequesttypedef)
+- [GetReportDefinitionResultResponseTypeDef](./type_defs.md#getreportdefinitionresultresponsetypedef)
+- [ImportApplicationUsageRequestTypeDef](./type_defs.md#importapplicationusagerequesttypedef)
+- [ImportApplicationUsageResultResponseTypeDef](./type_defs.md#importapplicationusageresultresponsetypedef)
+- [ListReportDefinitionsRequestTypeDef](./type_defs.md#listreportdefinitionsrequesttypedef)
+- [ListReportDefinitionsResultResponseTypeDef](./type_defs.md#listreportdefinitionsresultresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
-- [PutReportDefinitionResultTypeDef](./type_defs.md#putreportdefinitionresulttypedef)
+- [PutReportDefinitionRequestTypeDef](./type_defs.md#putreportdefinitionrequesttypedef)
+- [PutReportDefinitionResultResponseTypeDef](./type_defs.md#putreportdefinitionresultresponsetypedef)
 - [ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 - [SourceS3LocationTypeDef](./type_defs.md#sources3locationtypedef)
-- [UpdateReportDefinitionResultTypeDef](./type_defs.md#updatereportdefinitionresulttypedef)
+- [UpdateReportDefinitionRequestTypeDef](./type_defs.md#updatereportdefinitionrequesttypedef)
+- [UpdateReportDefinitionResultResponseTypeDef](./type_defs.md#updatereportdefinitionresultresponsetypedef)

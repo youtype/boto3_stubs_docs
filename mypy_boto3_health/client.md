@@ -67,6 +67,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("health").can_paginate` method.
 
 Boto3 documentation:
@@ -80,11 +82,17 @@ Returns `bool`.
 
 ### describe_affected_accounts_for_organization
 
+Returns a list of accounts in the organization from AWS Organizations that are
+affected by the provided event.
+
 Type annotations for
 `boto3.client("health").describe_affected_accounts_for_organization` method.
 
 Boto3 documentation:
 [Health.Client.describe_affected_accounts_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_affected_accounts_for_organization)
+
+Arguments mapping described in
+[DescribeAffectedAccountsForOrganizationRequestTypeDef](./type_defs.md#describeaffectedaccountsfororganizationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -93,15 +101,21 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[DescribeAffectedAccountsForOrganizationResponseTypeDef](./type_defs.md#describeaffectedaccountsfororganizationresponsetypedef).
+[DescribeAffectedAccountsForOrganizationResponseResponseTypeDef](./type_defs.md#describeaffectedaccountsfororganizationresponseresponsetypedef).
 
 ### describe_affected_entities
+
+Returns a list of entities that have been affected by the specified events,
+based on the specified filter criteria.
 
 Type annotations for `boto3.client("health").describe_affected_entities`
 method.
 
 Boto3 documentation:
 [Health.Client.describe_affected_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_affected_entities)
+
+Arguments mapping described in
+[DescribeAffectedEntitiesRequestTypeDef](./type_defs.md#describeaffectedentitiesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -112,15 +126,22 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[DescribeAffectedEntitiesResponseTypeDef](./type_defs.md#describeaffectedentitiesresponsetypedef).
+[DescribeAffectedEntitiesResponseResponseTypeDef](./type_defs.md#describeaffectedentitiesresponseresponsetypedef).
 
 ### describe_affected_entities_for_organization
+
+Returns a list of entities that have been affected by one or more events for
+one or more accounts in your organization in AWS Organizations, based on the
+filter criteria.
 
 Type annotations for
 `boto3.client("health").describe_affected_entities_for_organization` method.
 
 Boto3 documentation:
 [Health.Client.describe_affected_entities_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_affected_entities_for_organization)
+
+Arguments mapping described in
+[DescribeAffectedEntitiesForOrganizationRequestTypeDef](./type_defs.md#describeaffectedentitiesfororganizationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -132,9 +153,12 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[DescribeAffectedEntitiesForOrganizationResponseTypeDef](./type_defs.md#describeaffectedentitiesfororganizationresponsetypedef).
+[DescribeAffectedEntitiesForOrganizationResponseResponseTypeDef](./type_defs.md#describeaffectedentitiesfororganizationresponseresponsetypedef).
 
 ### describe_entity_aggregates
+
+Returns the number of entities that are affected by each of the specified
+events.
 
 Type annotations for `boto3.client("health").describe_entity_aggregates`
 method.
@@ -142,19 +166,28 @@ method.
 Boto3 documentation:
 [Health.Client.describe_entity_aggregates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_entity_aggregates)
 
+Arguments mapping described in
+[DescribeEntityAggregatesRequestTypeDef](./type_defs.md#describeentityaggregatesrequesttypedef).
+
 Keyword-only arguments:
 
 - `eventArns`: `List`\[`str`\]
 
 Returns
-[DescribeEntityAggregatesResponseTypeDef](./type_defs.md#describeentityaggregatesresponsetypedef).
+[DescribeEntityAggregatesResponseResponseTypeDef](./type_defs.md#describeentityaggregatesresponseresponsetypedef).
 
 ### describe_event_aggregates
+
+Returns the number of events of each event type (issue, scheduled change, and
+account notification).
 
 Type annotations for `boto3.client("health").describe_event_aggregates` method.
 
 Boto3 documentation:
 [Health.Client.describe_event_aggregates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_aggregates)
+
+Arguments mapping described in
+[DescribeEventAggregatesRequestTypeDef](./type_defs.md#describeeventaggregatesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -166,14 +199,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeEventAggregatesResponseTypeDef](./type_defs.md#describeeventaggregatesresponsetypedef).
+[DescribeEventAggregatesResponseResponseTypeDef](./type_defs.md#describeeventaggregatesresponseresponsetypedef).
 
 ### describe_event_details
+
+Returns detailed information about one or more specified events.
 
 Type annotations for `boto3.client("health").describe_event_details` method.
 
 Boto3 documentation:
 [Health.Client.describe_event_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_details)
+
+Arguments mapping described in
+[DescribeEventDetailsRequestTypeDef](./type_defs.md#describeeventdetailsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -181,15 +219,21 @@ Keyword-only arguments:
 - `locale`: `str`
 
 Returns
-[DescribeEventDetailsResponseTypeDef](./type_defs.md#describeeventdetailsresponsetypedef).
+[DescribeEventDetailsResponseResponseTypeDef](./type_defs.md#describeeventdetailsresponseresponsetypedef).
 
 ### describe_event_details_for_organization
+
+Returns detailed information about one or more specified events for one or more
+AWS accounts in your organization.
 
 Type annotations for
 `boto3.client("health").describe_event_details_for_organization` method.
 
 Boto3 documentation:
 [Health.Client.describe_event_details_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_details_for_organization)
+
+Arguments mapping described in
+[DescribeEventDetailsForOrganizationRequestTypeDef](./type_defs.md#describeeventdetailsfororganizationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -199,14 +243,19 @@ Keyword-only arguments:
 - `locale`: `str`
 
 Returns
-[DescribeEventDetailsForOrganizationResponseTypeDef](./type_defs.md#describeeventdetailsfororganizationresponsetypedef).
+[DescribeEventDetailsForOrganizationResponseResponseTypeDef](./type_defs.md#describeeventdetailsfororganizationresponseresponsetypedef).
 
 ### describe_event_types
+
+Returns the event types that meet the specified filter criteria.
 
 Type annotations for `boto3.client("health").describe_event_types` method.
 
 Boto3 documentation:
 [Health.Client.describe_event_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_event_types)
+
+Arguments mapping described in
+[DescribeEventTypesRequestTypeDef](./type_defs.md#describeeventtypesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -216,14 +265,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[DescribeEventTypesResponseTypeDef](./type_defs.md#describeeventtypesresponsetypedef).
+[DescribeEventTypesResponseResponseTypeDef](./type_defs.md#describeeventtypesresponseresponsetypedef).
 
 ### describe_events
+
+Returns information about events that meet the specified filter criteria.
 
 Type annotations for `boto3.client("health").describe_events` method.
 
 Boto3 documentation:
 [Health.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_events)
+
+Arguments mapping described in
+[DescribeEventsRequestTypeDef](./type_defs.md#describeeventsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -233,15 +287,20 @@ Keyword-only arguments:
 - `locale`: `str`
 
 Returns
-[DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef).
+[DescribeEventsResponseResponseTypeDef](./type_defs.md#describeeventsresponseresponsetypedef).
 
 ### describe_events_for_organization
+
+Returns information about events across your organization in AWS Organizations.
 
 Type annotations for `boto3.client("health").describe_events_for_organization`
 method.
 
 Boto3 documentation:
 [Health.Client.describe_events_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_events_for_organization)
+
+Arguments mapping described in
+[DescribeEventsForOrganizationRequestTypeDef](./type_defs.md#describeeventsfororganizationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -252,9 +311,12 @@ Keyword-only arguments:
 - `locale`: `str`
 
 Returns
-[DescribeEventsForOrganizationResponseTypeDef](./type_defs.md#describeeventsfororganizationresponsetypedef).
+[DescribeEventsForOrganizationResponseResponseTypeDef](./type_defs.md#describeeventsfororganizationresponseresponsetypedef).
 
 ### describe_health_service_status_for_organization
+
+This operation provides status information on enabling or disabling AWS Health
+to work with your organization.
 
 Type annotations for
 `boto3.client("health").describe_health_service_status_for_organization`
@@ -264,9 +326,11 @@ Boto3 documentation:
 [Health.Client.describe_health_service_status_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.describe_health_service_status_for_organization)
 
 Returns
-[DescribeHealthServiceStatusForOrganizationResponseTypeDef](./type_defs.md#describehealthservicestatusfororganizationresponsetypedef).
+[DescribeHealthServiceStatusForOrganizationResponseResponseTypeDef](./type_defs.md#describehealthservicestatusfororganizationresponseresponsetypedef).
 
 ### disable_health_service_access_for_organization
+
+Disables AWS Health from working with AWS Organizations.
 
 Type annotations for
 `boto3.client("health").disable_health_service_access_for_organization` method.
@@ -276,6 +340,8 @@ Boto3 documentation:
 
 ### enable_health_service_access_for_organization
 
+Enables AWS Health to work with AWS Organizations.
+
 Type annotations for
 `boto3.client("health").enable_health_service_access_for_organization` method.
 
@@ -283,6 +349,8 @@ Boto3 documentation:
 [Health.Client.enable_health_service_access_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.enable_health_service_access_for_organization)
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("health").generate_presigned_url` method.
 

@@ -81,13 +81,18 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_meteringmarketplace.type_defs import BatchMeterUsageResultTypeDef, ...
+from mypy_boto3_meteringmarketplace.type_defs import BatchMeterUsageRequestTypeDef, ...
 ```
 
-- [BatchMeterUsageResultTypeDef](./type_defs.md#batchmeterusageresulttypedef)
-- [MeterUsageResultTypeDef](./type_defs.md#meterusageresulttypedef)
-- [RegisterUsageResultTypeDef](./type_defs.md#registerusageresulttypedef)
-- [ResolveCustomerResultTypeDef](./type_defs.md#resolvecustomerresulttypedef)
+- [BatchMeterUsageRequestTypeDef](./type_defs.md#batchmeterusagerequesttypedef)
+- [BatchMeterUsageResultResponseTypeDef](./type_defs.md#batchmeterusageresultresponsetypedef)
+- [MeterUsageRequestTypeDef](./type_defs.md#meterusagerequesttypedef)
+- [MeterUsageResultResponseTypeDef](./type_defs.md#meterusageresultresponsetypedef)
+- [RegisterUsageRequestTypeDef](./type_defs.md#registerusagerequesttypedef)
+- [RegisterUsageResultResponseTypeDef](./type_defs.md#registerusageresultresponsetypedef)
+- [ResolveCustomerRequestTypeDef](./type_defs.md#resolvecustomerrequesttypedef)
+- [ResolveCustomerResultResponseTypeDef](./type_defs.md#resolvecustomerresultresponsetypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)
 - [UsageAllocationTypeDef](./type_defs.md#usageallocationtypedef)
 - [UsageRecordResultTypeDef](./type_defs.md#usagerecordresulttypedef)

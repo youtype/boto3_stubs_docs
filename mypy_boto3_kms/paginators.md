@@ -36,7 +36,7 @@ Arguments for `ListAliasesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAliasesPaginator.paginate` returns
-`Iterator`\[[ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef)\].
+`Iterator`\[[ListAliasesResponseResponseTypeDef](./type_defs.md#listaliasesresponseresponsetypedef)\].
 
 ## ListGrantsPaginator
 
@@ -63,7 +63,7 @@ Arguments for `ListGrantsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGrantsPaginator.paginate` returns
-`Iterator`\[[ListGrantsResponseTypeDef](./type_defs.md#listgrantsresponsetypedef)\].
+`Iterator`\[[ListGrantsResponseResponseTypeDef](./type_defs.md#listgrantsresponseresponsetypedef)\].
 
 ## ListKeyPoliciesPaginator
 
@@ -88,7 +88,7 @@ Arguments for `ListKeyPoliciesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListKeyPoliciesPaginator.paginate` returns
-`Iterator`\[[ListKeyPoliciesResponseTypeDef](./type_defs.md#listkeypoliciesresponsetypedef)\].
+`Iterator`\[[ListKeyPoliciesResponseResponseTypeDef](./type_defs.md#listkeypoliciesresponseresponsetypedef)\].
 
 ## ListKeysPaginator
 
@@ -112,4 +112,4 @@ Arguments for `ListKeysPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListKeysPaginator.paginate` returns
-`Iterator`\[[ListKeysResponseTypeDef](./type_defs.md#listkeysresponsetypedef)\].
+`Iterator`\[[ListKeysResponseResponseTypeDef](./type_defs.md#listkeysresponseresponsetypedef)\].

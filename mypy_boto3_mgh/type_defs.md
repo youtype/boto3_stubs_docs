@@ -9,20 +9,38 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 MigrationHub module](#typed-dictionaries-for-boto3-migrationhub-module)
   - [ApplicationStateTypeDef](#applicationstatetypedef)
+  - [AssociateCreatedArtifactRequestTypeDef](#associatecreatedartifactrequesttypedef)
+  - [AssociateDiscoveredResourceRequestTypeDef](#associatediscoveredresourcerequesttypedef)
+  - [CreateProgressUpdateStreamRequestTypeDef](#createprogressupdatestreamrequesttypedef)
   - [CreatedArtifactTypeDef](#createdartifacttypedef)
-  - [DescribeApplicationStateResultTypeDef](#describeapplicationstateresulttypedef)
-  - [DescribeMigrationTaskResultTypeDef](#describemigrationtaskresulttypedef)
+  - [DeleteProgressUpdateStreamRequestTypeDef](#deleteprogressupdatestreamrequesttypedef)
+  - [DescribeApplicationStateRequestTypeDef](#describeapplicationstaterequesttypedef)
+  - [DescribeApplicationStateResultResponseTypeDef](#describeapplicationstateresultresponsetypedef)
+  - [DescribeMigrationTaskRequestTypeDef](#describemigrationtaskrequesttypedef)
+  - [DescribeMigrationTaskResultResponseTypeDef](#describemigrationtaskresultresponsetypedef)
+  - [DisassociateCreatedArtifactRequestTypeDef](#disassociatecreatedartifactrequesttypedef)
+  - [DisassociateDiscoveredResourceRequestTypeDef](#disassociatediscoveredresourcerequesttypedef)
   - [DiscoveredResourceTypeDef](#discoveredresourcetypedef)
-  - [ListApplicationStatesResultTypeDef](#listapplicationstatesresulttypedef)
-  - [ListCreatedArtifactsResultTypeDef](#listcreatedartifactsresulttypedef)
-  - [ListDiscoveredResourcesResultTypeDef](#listdiscoveredresourcesresulttypedef)
-  - [ListMigrationTasksResultTypeDef](#listmigrationtasksresulttypedef)
-  - [ListProgressUpdateStreamsResultTypeDef](#listprogressupdatestreamsresulttypedef)
+  - [ImportMigrationTaskRequestTypeDef](#importmigrationtaskrequesttypedef)
+  - [ListApplicationStatesRequestTypeDef](#listapplicationstatesrequesttypedef)
+  - [ListApplicationStatesResultResponseTypeDef](#listapplicationstatesresultresponsetypedef)
+  - [ListCreatedArtifactsRequestTypeDef](#listcreatedartifactsrequesttypedef)
+  - [ListCreatedArtifactsResultResponseTypeDef](#listcreatedartifactsresultresponsetypedef)
+  - [ListDiscoveredResourcesRequestTypeDef](#listdiscoveredresourcesrequesttypedef)
+  - [ListDiscoveredResourcesResultResponseTypeDef](#listdiscoveredresourcesresultresponsetypedef)
+  - [ListMigrationTasksRequestTypeDef](#listmigrationtasksrequesttypedef)
+  - [ListMigrationTasksResultResponseTypeDef](#listmigrationtasksresultresponsetypedef)
+  - [ListProgressUpdateStreamsRequestTypeDef](#listprogressupdatestreamsrequesttypedef)
+  - [ListProgressUpdateStreamsResultResponseTypeDef](#listprogressupdatestreamsresultresponsetypedef)
   - [MigrationTaskSummaryTypeDef](#migrationtasksummarytypedef)
   - [MigrationTaskTypeDef](#migrationtasktypedef)
+  - [NotifyApplicationStateRequestTypeDef](#notifyapplicationstaterequesttypedef)
+  - [NotifyMigrationTaskStateRequestTypeDef](#notifymigrationtaskstaterequesttypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ProgressUpdateStreamSummaryTypeDef](#progressupdatestreamsummarytypedef)
+  - [PutResourceAttributesRequestTypeDef](#putresourceattributesrequesttypedef)
   - [ResourceAttributeTypeDef](#resourceattributetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [TaskTypeDef](#tasktypedef)
 
 ## ApplicationStateTypeDef
@@ -38,6 +56,54 @@ Optional fields:
   [ApplicationStatusType](./literals.md#applicationstatustype)
 - `LastUpdatedTime`: `datetime`
 
+## AssociateCreatedArtifactRequestTypeDef
+
+```python
+from mypy_boto3_mgh.type_defs import AssociateCreatedArtifactRequestTypeDef
+```
+
+Required fields:
+
+- `ProgressUpdateStream`: `str`
+- `MigrationTaskName`: `str`
+- `CreatedArtifact`:
+  [CreatedArtifactTypeDef](./type_defs.md#createdartifacttypedef)
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## AssociateDiscoveredResourceRequestTypeDef
+
+```python
+from mypy_boto3_mgh.type_defs import AssociateDiscoveredResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ProgressUpdateStream`: `str`
+- `MigrationTaskName`: `str`
+- `DiscoveredResource`:
+  [DiscoveredResourceTypeDef](./type_defs.md#discoveredresourcetypedef)
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## CreateProgressUpdateStreamRequestTypeDef
+
+```python
+from mypy_boto3_mgh.type_defs import CreateProgressUpdateStreamRequestTypeDef
+```
+
+Required fields:
+
+- `ProgressUpdateStreamName`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
 ## CreatedArtifactTypeDef
 
 ```python
@@ -52,27 +118,98 @@ Optional fields:
 
 - `Description`: `str`
 
-## DescribeApplicationStateResultTypeDef
+## DeleteProgressUpdateStreamRequestTypeDef
 
 ```python
-from mypy_boto3_mgh.type_defs import DescribeApplicationStateResultTypeDef
+from mypy_boto3_mgh.type_defs import DeleteProgressUpdateStreamRequestTypeDef
 ```
 
+Required fields:
+
+- `ProgressUpdateStreamName`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DescribeApplicationStateRequestTypeDef
+
+```python
+from mypy_boto3_mgh.type_defs import DescribeApplicationStateRequestTypeDef
+```
+
+Required fields:
+
+- `ApplicationId`: `str`
+
+## DescribeApplicationStateResultResponseTypeDef
+
+```python
+from mypy_boto3_mgh.type_defs import DescribeApplicationStateResultResponseTypeDef
+```
+
+Required fields:
 
 - `ApplicationStatus`:
   [ApplicationStatusType](./literals.md#applicationstatustype)
 - `LastUpdatedTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeMigrationTaskResultTypeDef
+## DescribeMigrationTaskRequestTypeDef
 
 ```python
-from mypy_boto3_mgh.type_defs import DescribeMigrationTaskResultTypeDef
+from mypy_boto3_mgh.type_defs import DescribeMigrationTaskRequestTypeDef
 ```
+
+Required fields:
+
+- `ProgressUpdateStream`: `str`
+- `MigrationTaskName`: `str`
+
+## DescribeMigrationTaskResultResponseTypeDef
+
+```python
+from mypy_boto3_mgh.type_defs import DescribeMigrationTaskResultResponseTypeDef
+```
+
+Required fields:
+
+- `MigrationTask`: [MigrationTaskTypeDef](./type_defs.md#migrationtasktypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DisassociateCreatedArtifactRequestTypeDef
+
+```python
+from mypy_boto3_mgh.type_defs import DisassociateCreatedArtifactRequestTypeDef
+```
+
+Required fields:
+
+- `ProgressUpdateStream`: `str`
+- `MigrationTaskName`: `str`
+- `CreatedArtifactName`: `str`
 
 Optional fields:
 
-- `MigrationTask`: [MigrationTaskTypeDef](./type_defs.md#migrationtasktypedef)
+- `DryRun`: `bool`
+
+## DisassociateDiscoveredResourceRequestTypeDef
+
+```python
+from mypy_boto3_mgh.type_defs import DisassociateDiscoveredResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ProgressUpdateStream`: `str`
+- `MigrationTaskName`: `str`
+- `ConfigurationId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
 
 ## DiscoveredResourceTypeDef
 
@@ -88,65 +225,157 @@ Optional fields:
 
 - `Description`: `str`
 
-## ListApplicationStatesResultTypeDef
+## ImportMigrationTaskRequestTypeDef
 
 ```python
-from mypy_boto3_mgh.type_defs import ListApplicationStatesResultTypeDef
+from mypy_boto3_mgh.type_defs import ImportMigrationTaskRequestTypeDef
+```
+
+Required fields:
+
+- `ProgressUpdateStream`: `str`
+- `MigrationTaskName`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## ListApplicationStatesRequestTypeDef
+
+```python
+from mypy_boto3_mgh.type_defs import ListApplicationStatesRequestTypeDef
 ```
 
 Optional fields:
+
+- `ApplicationIds`: `List`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListApplicationStatesResultResponseTypeDef
+
+```python
+from mypy_boto3_mgh.type_defs import ListApplicationStatesResultResponseTypeDef
+```
+
+Required fields:
 
 - `ApplicationStateList`:
   `List`\[[ApplicationStateTypeDef](./type_defs.md#applicationstatetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListCreatedArtifactsResultTypeDef
+## ListCreatedArtifactsRequestTypeDef
 
 ```python
-from mypy_boto3_mgh.type_defs import ListCreatedArtifactsResultTypeDef
+from mypy_boto3_mgh.type_defs import ListCreatedArtifactsRequestTypeDef
 ```
 
+Required fields:
+
+- `ProgressUpdateStream`: `str`
+- `MigrationTaskName`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListCreatedArtifactsResultResponseTypeDef
+
+```python
+from mypy_boto3_mgh.type_defs import ListCreatedArtifactsResultResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `CreatedArtifactList`:
   `List`\[[CreatedArtifactTypeDef](./type_defs.md#createdartifacttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDiscoveredResourcesResultTypeDef
+## ListDiscoveredResourcesRequestTypeDef
 
 ```python
-from mypy_boto3_mgh.type_defs import ListDiscoveredResourcesResultTypeDef
+from mypy_boto3_mgh.type_defs import ListDiscoveredResourcesRequestTypeDef
 ```
 
+Required fields:
+
+- `ProgressUpdateStream`: `str`
+- `MigrationTaskName`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListDiscoveredResourcesResultResponseTypeDef
+
+```python
+from mypy_boto3_mgh.type_defs import ListDiscoveredResourcesResultResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `DiscoveredResourceList`:
   `List`\[[DiscoveredResourceTypeDef](./type_defs.md#discoveredresourcetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListMigrationTasksResultTypeDef
+## ListMigrationTasksRequestTypeDef
 
 ```python
-from mypy_boto3_mgh.type_defs import ListMigrationTasksResultTypeDef
+from mypy_boto3_mgh.type_defs import ListMigrationTasksRequestTypeDef
 ```
 
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `ResourceName`: `str`
+
+## ListMigrationTasksResultResponseTypeDef
+
+```python
+from mypy_boto3_mgh.type_defs import ListMigrationTasksResultResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `MigrationTaskSummaryList`:
   `List`\[[MigrationTaskSummaryTypeDef](./type_defs.md#migrationtasksummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListProgressUpdateStreamsResultTypeDef
+## ListProgressUpdateStreamsRequestTypeDef
 
 ```python
-from mypy_boto3_mgh.type_defs import ListProgressUpdateStreamsResultTypeDef
+from mypy_boto3_mgh.type_defs import ListProgressUpdateStreamsRequestTypeDef
 ```
 
 Optional fields:
 
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListProgressUpdateStreamsResultResponseTypeDef
+
+```python
+from mypy_boto3_mgh.type_defs import ListProgressUpdateStreamsResultResponseTypeDef
+```
+
+Required fields:
+
 - `ProgressUpdateStreamSummaryList`:
   `List`\[[ProgressUpdateStreamSummaryTypeDef](./type_defs.md#progressupdatestreamsummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## MigrationTaskSummaryTypeDef
 
@@ -178,6 +407,40 @@ Optional fields:
 - `ResourceAttributeList`:
   `List`\[[ResourceAttributeTypeDef](./type_defs.md#resourceattributetypedef)\]
 
+## NotifyApplicationStateRequestTypeDef
+
+```python
+from mypy_boto3_mgh.type_defs import NotifyApplicationStateRequestTypeDef
+```
+
+Required fields:
+
+- `ApplicationId`: `str`
+- `Status`: [ApplicationStatusType](./literals.md#applicationstatustype)
+
+Optional fields:
+
+- `UpdateDateTime`: `Union`\[`datetime`, `str`\]
+- `DryRun`: `bool`
+
+## NotifyMigrationTaskStateRequestTypeDef
+
+```python
+from mypy_boto3_mgh.type_defs import NotifyMigrationTaskStateRequestTypeDef
+```
+
+Required fields:
+
+- `ProgressUpdateStream`: `str`
+- `MigrationTaskName`: `str`
+- `Task`: [TaskTypeDef](./type_defs.md#tasktypedef)
+- `UpdateDateTime`: `Union`\[`datetime`, `str`\]
+- `NextUpdateSeconds`: `int`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -200,6 +463,23 @@ Optional fields:
 
 - `ProgressUpdateStreamName`: `str`
 
+## PutResourceAttributesRequestTypeDef
+
+```python
+from mypy_boto3_mgh.type_defs import PutResourceAttributesRequestTypeDef
+```
+
+Required fields:
+
+- `ProgressUpdateStream`: `str`
+- `MigrationTaskName`: `str`
+- `ResourceAttributeList`:
+  `List`\[[ResourceAttributeTypeDef](./type_defs.md#resourceattributetypedef)\]
+
+Optional fields:
+
+- `DryRun`: `bool`
+
 ## ResourceAttributeTypeDef
 
 ```python
@@ -210,6 +490,20 @@ Required fields:
 
 - `Type`: [ResourceAttributeTypeType](./literals.md#resourceattributetypetype)
 - `Value`: `str`
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_mgh.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## TaskTypeDef
 

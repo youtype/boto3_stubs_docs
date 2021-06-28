@@ -8,48 +8,97 @@ type annotations stubs module
 [mypy_boto3_directconnect](https://pypi.org/project/mypy-boto3-directconnect/).
 
 - [Typed dictionaries for boto3 DirectConnect module](#typed-dictionaries-for-boto3-directconnect-module)
-  - [AcceptDirectConnectGatewayAssociationProposalResultTypeDef](#acceptdirectconnectgatewayassociationproposalresulttypedef)
-  - [AllocateTransitVirtualInterfaceResultTypeDef](#allocatetransitvirtualinterfaceresulttypedef)
-  - [AssociateMacSecKeyResponseTypeDef](#associatemacseckeyresponsetypedef)
+  - [AcceptDirectConnectGatewayAssociationProposalRequestTypeDef](#acceptdirectconnectgatewayassociationproposalrequesttypedef)
+  - [AcceptDirectConnectGatewayAssociationProposalResultResponseTypeDef](#acceptdirectconnectgatewayassociationproposalresultresponsetypedef)
+  - [AllocateConnectionOnInterconnectRequestTypeDef](#allocateconnectiononinterconnectrequesttypedef)
+  - [AllocateHostedConnectionRequestTypeDef](#allocatehostedconnectionrequesttypedef)
+  - [AllocatePrivateVirtualInterfaceRequestTypeDef](#allocateprivatevirtualinterfacerequesttypedef)
+  - [AllocatePublicVirtualInterfaceRequestTypeDef](#allocatepublicvirtualinterfacerequesttypedef)
+  - [AllocateTransitVirtualInterfaceRequestTypeDef](#allocatetransitvirtualinterfacerequesttypedef)
+  - [AllocateTransitVirtualInterfaceResultResponseTypeDef](#allocatetransitvirtualinterfaceresultresponsetypedef)
+  - [AssociateConnectionWithLagRequestTypeDef](#associateconnectionwithlagrequesttypedef)
+  - [AssociateHostedConnectionRequestTypeDef](#associatehostedconnectionrequesttypedef)
+  - [AssociateMacSecKeyRequestTypeDef](#associatemacseckeyrequesttypedef)
+  - [AssociateMacSecKeyResponseResponseTypeDef](#associatemacseckeyresponseresponsetypedef)
+  - [AssociateVirtualInterfaceRequestTypeDef](#associatevirtualinterfacerequesttypedef)
   - [AssociatedGatewayTypeDef](#associatedgatewaytypedef)
   - [BGPPeerTypeDef](#bgppeertypedef)
-  - [ConfirmConnectionResponseTypeDef](#confirmconnectionresponsetypedef)
-  - [ConfirmPrivateVirtualInterfaceResponseTypeDef](#confirmprivatevirtualinterfaceresponsetypedef)
-  - [ConfirmPublicVirtualInterfaceResponseTypeDef](#confirmpublicvirtualinterfaceresponsetypedef)
-  - [ConfirmTransitVirtualInterfaceResponseTypeDef](#confirmtransitvirtualinterfaceresponsetypedef)
-  - [ConnectionTypeDef](#connectiontypedef)
-  - [ConnectionsTypeDef](#connectionstypedef)
-  - [CreateBGPPeerResponseTypeDef](#createbgppeerresponsetypedef)
-  - [CreateDirectConnectGatewayAssociationProposalResultTypeDef](#createdirectconnectgatewayassociationproposalresulttypedef)
-  - [CreateDirectConnectGatewayAssociationResultTypeDef](#createdirectconnectgatewayassociationresulttypedef)
-  - [CreateDirectConnectGatewayResultTypeDef](#createdirectconnectgatewayresulttypedef)
-  - [CreateTransitVirtualInterfaceResultTypeDef](#createtransitvirtualinterfaceresulttypedef)
-  - [DeleteBGPPeerResponseTypeDef](#deletebgppeerresponsetypedef)
-  - [DeleteDirectConnectGatewayAssociationProposalResultTypeDef](#deletedirectconnectgatewayassociationproposalresulttypedef)
-  - [DeleteDirectConnectGatewayAssociationResultTypeDef](#deletedirectconnectgatewayassociationresulttypedef)
-  - [DeleteDirectConnectGatewayResultTypeDef](#deletedirectconnectgatewayresulttypedef)
-  - [DeleteInterconnectResponseTypeDef](#deleteinterconnectresponsetypedef)
-  - [DeleteVirtualInterfaceResponseTypeDef](#deletevirtualinterfaceresponsetypedef)
-  - [DescribeConnectionLoaResponseTypeDef](#describeconnectionloaresponsetypedef)
-  - [DescribeDirectConnectGatewayAssociationProposalsResultTypeDef](#describedirectconnectgatewayassociationproposalsresulttypedef)
-  - [DescribeDirectConnectGatewayAssociationsResultTypeDef](#describedirectconnectgatewayassociationsresulttypedef)
-  - [DescribeDirectConnectGatewayAttachmentsResultTypeDef](#describedirectconnectgatewayattachmentsresulttypedef)
-  - [DescribeDirectConnectGatewaysResultTypeDef](#describedirectconnectgatewaysresulttypedef)
-  - [DescribeInterconnectLoaResponseTypeDef](#describeinterconnectloaresponsetypedef)
-  - [DescribeTagsResponseTypeDef](#describetagsresponsetypedef)
+  - [ConfirmConnectionRequestTypeDef](#confirmconnectionrequesttypedef)
+  - [ConfirmConnectionResponseResponseTypeDef](#confirmconnectionresponseresponsetypedef)
+  - [ConfirmPrivateVirtualInterfaceRequestTypeDef](#confirmprivatevirtualinterfacerequesttypedef)
+  - [ConfirmPrivateVirtualInterfaceResponseResponseTypeDef](#confirmprivatevirtualinterfaceresponseresponsetypedef)
+  - [ConfirmPublicVirtualInterfaceRequestTypeDef](#confirmpublicvirtualinterfacerequesttypedef)
+  - [ConfirmPublicVirtualInterfaceResponseResponseTypeDef](#confirmpublicvirtualinterfaceresponseresponsetypedef)
+  - [ConfirmTransitVirtualInterfaceRequestTypeDef](#confirmtransitvirtualinterfacerequesttypedef)
+  - [ConfirmTransitVirtualInterfaceResponseResponseTypeDef](#confirmtransitvirtualinterfaceresponseresponsetypedef)
+  - [ConnectionResponseTypeDef](#connectionresponsetypedef)
+  - [ConnectionsResponseTypeDef](#connectionsresponsetypedef)
+  - [CreateBGPPeerRequestTypeDef](#createbgppeerrequesttypedef)
+  - [CreateBGPPeerResponseResponseTypeDef](#createbgppeerresponseresponsetypedef)
+  - [CreateConnectionRequestTypeDef](#createconnectionrequesttypedef)
+  - [CreateDirectConnectGatewayAssociationProposalRequestTypeDef](#createdirectconnectgatewayassociationproposalrequesttypedef)
+  - [CreateDirectConnectGatewayAssociationProposalResultResponseTypeDef](#createdirectconnectgatewayassociationproposalresultresponsetypedef)
+  - [CreateDirectConnectGatewayAssociationRequestTypeDef](#createdirectconnectgatewayassociationrequesttypedef)
+  - [CreateDirectConnectGatewayAssociationResultResponseTypeDef](#createdirectconnectgatewayassociationresultresponsetypedef)
+  - [CreateDirectConnectGatewayRequestTypeDef](#createdirectconnectgatewayrequesttypedef)
+  - [CreateDirectConnectGatewayResultResponseTypeDef](#createdirectconnectgatewayresultresponsetypedef)
+  - [CreateInterconnectRequestTypeDef](#createinterconnectrequesttypedef)
+  - [CreateLagRequestTypeDef](#createlagrequesttypedef)
+  - [CreatePrivateVirtualInterfaceRequestTypeDef](#createprivatevirtualinterfacerequesttypedef)
+  - [CreatePublicVirtualInterfaceRequestTypeDef](#createpublicvirtualinterfacerequesttypedef)
+  - [CreateTransitVirtualInterfaceRequestTypeDef](#createtransitvirtualinterfacerequesttypedef)
+  - [CreateTransitVirtualInterfaceResultResponseTypeDef](#createtransitvirtualinterfaceresultresponsetypedef)
+  - [DeleteBGPPeerRequestTypeDef](#deletebgppeerrequesttypedef)
+  - [DeleteBGPPeerResponseResponseTypeDef](#deletebgppeerresponseresponsetypedef)
+  - [DeleteConnectionRequestTypeDef](#deleteconnectionrequesttypedef)
+  - [DeleteDirectConnectGatewayAssociationProposalRequestTypeDef](#deletedirectconnectgatewayassociationproposalrequesttypedef)
+  - [DeleteDirectConnectGatewayAssociationProposalResultResponseTypeDef](#deletedirectconnectgatewayassociationproposalresultresponsetypedef)
+  - [DeleteDirectConnectGatewayAssociationRequestTypeDef](#deletedirectconnectgatewayassociationrequesttypedef)
+  - [DeleteDirectConnectGatewayAssociationResultResponseTypeDef](#deletedirectconnectgatewayassociationresultresponsetypedef)
+  - [DeleteDirectConnectGatewayRequestTypeDef](#deletedirectconnectgatewayrequesttypedef)
+  - [DeleteDirectConnectGatewayResultResponseTypeDef](#deletedirectconnectgatewayresultresponsetypedef)
+  - [DeleteInterconnectRequestTypeDef](#deleteinterconnectrequesttypedef)
+  - [DeleteInterconnectResponseResponseTypeDef](#deleteinterconnectresponseresponsetypedef)
+  - [DeleteLagRequestTypeDef](#deletelagrequesttypedef)
+  - [DeleteVirtualInterfaceRequestTypeDef](#deletevirtualinterfacerequesttypedef)
+  - [DeleteVirtualInterfaceResponseResponseTypeDef](#deletevirtualinterfaceresponseresponsetypedef)
+  - [DescribeConnectionLoaRequestTypeDef](#describeconnectionloarequesttypedef)
+  - [DescribeConnectionLoaResponseResponseTypeDef](#describeconnectionloaresponseresponsetypedef)
+  - [DescribeConnectionsOnInterconnectRequestTypeDef](#describeconnectionsoninterconnectrequesttypedef)
+  - [DescribeConnectionsRequestTypeDef](#describeconnectionsrequesttypedef)
+  - [DescribeDirectConnectGatewayAssociationProposalsRequestTypeDef](#describedirectconnectgatewayassociationproposalsrequesttypedef)
+  - [DescribeDirectConnectGatewayAssociationProposalsResultResponseTypeDef](#describedirectconnectgatewayassociationproposalsresultresponsetypedef)
+  - [DescribeDirectConnectGatewayAssociationsRequestTypeDef](#describedirectconnectgatewayassociationsrequesttypedef)
+  - [DescribeDirectConnectGatewayAssociationsResultResponseTypeDef](#describedirectconnectgatewayassociationsresultresponsetypedef)
+  - [DescribeDirectConnectGatewayAttachmentsRequestTypeDef](#describedirectconnectgatewayattachmentsrequesttypedef)
+  - [DescribeDirectConnectGatewayAttachmentsResultResponseTypeDef](#describedirectconnectgatewayattachmentsresultresponsetypedef)
+  - [DescribeDirectConnectGatewaysRequestTypeDef](#describedirectconnectgatewaysrequesttypedef)
+  - [DescribeDirectConnectGatewaysResultResponseTypeDef](#describedirectconnectgatewaysresultresponsetypedef)
+  - [DescribeHostedConnectionsRequestTypeDef](#describehostedconnectionsrequesttypedef)
+  - [DescribeInterconnectLoaRequestTypeDef](#describeinterconnectloarequesttypedef)
+  - [DescribeInterconnectLoaResponseResponseTypeDef](#describeinterconnectloaresponseresponsetypedef)
+  - [DescribeInterconnectsRequestTypeDef](#describeinterconnectsrequesttypedef)
+  - [DescribeLagsRequestTypeDef](#describelagsrequesttypedef)
+  - [DescribeLoaRequestTypeDef](#describeloarequesttypedef)
+  - [DescribeTagsRequestTypeDef](#describetagsrequesttypedef)
+  - [DescribeTagsResponseResponseTypeDef](#describetagsresponseresponsetypedef)
+  - [DescribeVirtualInterfacesRequestTypeDef](#describevirtualinterfacesrequesttypedef)
   - [DirectConnectGatewayAssociationProposalTypeDef](#directconnectgatewayassociationproposaltypedef)
   - [DirectConnectGatewayAssociationTypeDef](#directconnectgatewayassociationtypedef)
   - [DirectConnectGatewayAttachmentTypeDef](#directconnectgatewayattachmenttypedef)
   - [DirectConnectGatewayTypeDef](#directconnectgatewaytypedef)
-  - [DisassociateMacSecKeyResponseTypeDef](#disassociatemacseckeyresponsetypedef)
-  - [InterconnectTypeDef](#interconnecttypedef)
-  - [InterconnectsTypeDef](#interconnectstypedef)
-  - [LagTypeDef](#lagtypedef)
-  - [LagsTypeDef](#lagstypedef)
-  - [ListVirtualInterfaceTestHistoryResponseTypeDef](#listvirtualinterfacetesthistoryresponsetypedef)
+  - [DisassociateConnectionFromLagRequestTypeDef](#disassociateconnectionfromlagrequesttypedef)
+  - [DisassociateMacSecKeyRequestTypeDef](#disassociatemacseckeyrequesttypedef)
+  - [DisassociateMacSecKeyResponseResponseTypeDef](#disassociatemacseckeyresponseresponsetypedef)
+  - [InterconnectResponseTypeDef](#interconnectresponsetypedef)
+  - [InterconnectsResponseTypeDef](#interconnectsresponsetypedef)
+  - [LagResponseTypeDef](#lagresponsetypedef)
+  - [LagsResponseTypeDef](#lagsresponsetypedef)
+  - [ListVirtualInterfaceTestHistoryRequestTypeDef](#listvirtualinterfacetesthistoryrequesttypedef)
+  - [ListVirtualInterfaceTestHistoryResponseResponseTypeDef](#listvirtualinterfacetesthistoryresponseresponsetypedef)
   - [LoaTypeDef](#loatypedef)
   - [LocationTypeDef](#locationtypedef)
-  - [LocationsTypeDef](#locationstypedef)
+  - [LocationsResponseTypeDef](#locationsresponsetypedef)
   - [MacSecKeyTypeDef](#macseckeytypedef)
   - [NewBGPPeerTypeDef](#newbgppeertypedef)
   - [NewPrivateVirtualInterfaceAllocationTypeDef](#newprivatevirtualinterfaceallocationtypedef)
@@ -60,49 +109,201 @@ type annotations stubs module
   - [NewTransitVirtualInterfaceTypeDef](#newtransitvirtualinterfacetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResourceTagTypeDef](#resourcetagtypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RouteFilterPrefixTypeDef](#routefilterprefixtypedef)
-  - [StartBgpFailoverTestResponseTypeDef](#startbgpfailovertestresponsetypedef)
-  - [StopBgpFailoverTestResponseTypeDef](#stopbgpfailovertestresponsetypedef)
+  - [StartBgpFailoverTestRequestTypeDef](#startbgpfailovertestrequesttypedef)
+  - [StartBgpFailoverTestResponseResponseTypeDef](#startbgpfailovertestresponseresponsetypedef)
+  - [StopBgpFailoverTestRequestTypeDef](#stopbgpfailovertestrequesttypedef)
+  - [StopBgpFailoverTestResponseResponseTypeDef](#stopbgpfailovertestresponseresponsetypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TagTypeDef](#tagtypedef)
-  - [UpdateDirectConnectGatewayAssociationResultTypeDef](#updatedirectconnectgatewayassociationresulttypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateConnectionRequestTypeDef](#updateconnectionrequesttypedef)
+  - [UpdateDirectConnectGatewayAssociationRequestTypeDef](#updatedirectconnectgatewayassociationrequesttypedef)
+  - [UpdateDirectConnectGatewayAssociationResultResponseTypeDef](#updatedirectconnectgatewayassociationresultresponsetypedef)
+  - [UpdateLagRequestTypeDef](#updatelagrequesttypedef)
+  - [UpdateVirtualInterfaceAttributesRequestTypeDef](#updatevirtualinterfaceattributesrequesttypedef)
   - [VirtualGatewayTypeDef](#virtualgatewaytypedef)
-  - [VirtualGatewaysTypeDef](#virtualgatewaystypedef)
+  - [VirtualGatewaysResponseTypeDef](#virtualgatewaysresponsetypedef)
+  - [VirtualInterfaceResponseTypeDef](#virtualinterfaceresponsetypedef)
   - [VirtualInterfaceTestHistoryTypeDef](#virtualinterfacetesthistorytypedef)
-  - [VirtualInterfaceTypeDef](#virtualinterfacetypedef)
-  - [VirtualInterfacesTypeDef](#virtualinterfacestypedef)
+  - [VirtualInterfacesResponseTypeDef](#virtualinterfacesresponsetypedef)
 
-## AcceptDirectConnectGatewayAssociationProposalResultTypeDef
+## AcceptDirectConnectGatewayAssociationProposalRequestTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import AcceptDirectConnectGatewayAssociationProposalResultTypeDef
+from mypy_boto3_directconnect.type_defs import AcceptDirectConnectGatewayAssociationProposalRequestTypeDef
 ```
 
+Required fields:
+
+- `directConnectGatewayId`: `str`
+- `proposalId`: `str`
+- `associatedGatewayOwnerAccount`: `str`
+
 Optional fields:
+
+- `overrideAllowedPrefixesToDirectConnectGateway`:
+  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+
+## AcceptDirectConnectGatewayAssociationProposalResultResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import AcceptDirectConnectGatewayAssociationProposalResultResponseTypeDef
+```
+
+Required fields:
 
 - `directConnectGatewayAssociation`:
   [DirectConnectGatewayAssociationTypeDef](./type_defs.md#directconnectgatewayassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AllocateTransitVirtualInterfaceResultTypeDef
+## AllocateConnectionOnInterconnectRequestTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import AllocateTransitVirtualInterfaceResultTypeDef
+from mypy_boto3_directconnect.type_defs import AllocateConnectionOnInterconnectRequestTypeDef
 ```
 
+Required fields:
+
+- `bandwidth`: `str`
+- `connectionName`: `str`
+- `ownerAccount`: `str`
+- `interconnectId`: `str`
+- `vlan`: `int`
+
+## AllocateHostedConnectionRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import AllocateHostedConnectionRequestTypeDef
+```
+
+Required fields:
+
+- `connectionId`: `str`
+- `ownerAccount`: `str`
+- `bandwidth`: `str`
+- `connectionName`: `str`
+- `vlan`: `int`
+
 Optional fields:
+
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## AllocatePrivateVirtualInterfaceRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import AllocatePrivateVirtualInterfaceRequestTypeDef
+```
+
+Required fields:
+
+- `connectionId`: `str`
+- `ownerAccount`: `str`
+- `newPrivateVirtualInterfaceAllocation`:
+  [NewPrivateVirtualInterfaceAllocationTypeDef](./type_defs.md#newprivatevirtualinterfaceallocationtypedef)
+
+## AllocatePublicVirtualInterfaceRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import AllocatePublicVirtualInterfaceRequestTypeDef
+```
+
+Required fields:
+
+- `connectionId`: `str`
+- `ownerAccount`: `str`
+- `newPublicVirtualInterfaceAllocation`:
+  [NewPublicVirtualInterfaceAllocationTypeDef](./type_defs.md#newpublicvirtualinterfaceallocationtypedef)
+
+## AllocateTransitVirtualInterfaceRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import AllocateTransitVirtualInterfaceRequestTypeDef
+```
+
+Required fields:
+
+- `connectionId`: `str`
+- `ownerAccount`: `str`
+- `newTransitVirtualInterfaceAllocation`:
+  [NewTransitVirtualInterfaceAllocationTypeDef](./type_defs.md#newtransitvirtualinterfaceallocationtypedef)
+
+## AllocateTransitVirtualInterfaceResultResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import AllocateTransitVirtualInterfaceResultResponseTypeDef
+```
+
+Required fields:
 
 - `virtualInterface`:
-  [VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef)
+  [VirtualInterfaceResponseTypeDef](./type_defs.md#virtualinterfaceresponsetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssociateMacSecKeyResponseTypeDef
+## AssociateConnectionWithLagRequestTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import AssociateMacSecKeyResponseTypeDef
+from mypy_boto3_directconnect.type_defs import AssociateConnectionWithLagRequestTypeDef
 ```
 
+Required fields:
+
+- `connectionId`: `str`
+- `lagId`: `str`
+
+## AssociateHostedConnectionRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import AssociateHostedConnectionRequestTypeDef
+```
+
+Required fields:
+
+- `connectionId`: `str`
+- `parentConnectionId`: `str`
+
+## AssociateMacSecKeyRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import AssociateMacSecKeyRequestTypeDef
+```
+
+Required fields:
+
+- `connectionId`: `str`
+
 Optional fields:
+
+- `secretARN`: `str`
+- `ckn`: `str`
+- `cak`: `str`
+
+## AssociateMacSecKeyResponseResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import AssociateMacSecKeyResponseResponseTypeDef
+```
+
+Required fields:
 
 - `connectionId`: `str`
 - `macSecKeys`: `List`\[[MacSecKeyTypeDef](./type_defs.md#macseckeytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## AssociateVirtualInterfaceRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import AssociateVirtualInterfaceRequestTypeDef
+```
+
+Required fields:
+
+- `virtualInterfaceId`: `str`
+- `connectionId`: `str`
 
 ## AssociatedGatewayTypeDef
 
@@ -135,56 +336,110 @@ Optional fields:
 - `bgpStatus`: [BGPStatusType](./literals.md#bgpstatustype)
 - `awsDeviceV2`: `str`
 
-## ConfirmConnectionResponseTypeDef
+## ConfirmConnectionRequestTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import ConfirmConnectionResponseTypeDef
+from mypy_boto3_directconnect.type_defs import ConfirmConnectionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `connectionId`: `str`
+
+## ConfirmConnectionResponseResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import ConfirmConnectionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `connectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ConfirmPrivateVirtualInterfaceResponseTypeDef
+## ConfirmPrivateVirtualInterfaceRequestTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import ConfirmPrivateVirtualInterfaceResponseTypeDef
+from mypy_boto3_directconnect.type_defs import ConfirmPrivateVirtualInterfaceRequestTypeDef
 ```
 
+Required fields:
+
+- `virtualInterfaceId`: `str`
+
 Optional fields:
+
+- `virtualGatewayId`: `str`
+- `directConnectGatewayId`: `str`
+
+## ConfirmPrivateVirtualInterfaceResponseResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import ConfirmPrivateVirtualInterfaceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `virtualInterfaceState`:
   [VirtualInterfaceStateType](./literals.md#virtualinterfacestatetype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ConfirmPublicVirtualInterfaceResponseTypeDef
+## ConfirmPublicVirtualInterfaceRequestTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import ConfirmPublicVirtualInterfaceResponseTypeDef
+from mypy_boto3_directconnect.type_defs import ConfirmPublicVirtualInterfaceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `virtualInterfaceId`: `str`
+
+## ConfirmPublicVirtualInterfaceResponseResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import ConfirmPublicVirtualInterfaceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `virtualInterfaceState`:
   [VirtualInterfaceStateType](./literals.md#virtualinterfacestatetype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ConfirmTransitVirtualInterfaceResponseTypeDef
+## ConfirmTransitVirtualInterfaceRequestTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import ConfirmTransitVirtualInterfaceResponseTypeDef
+from mypy_boto3_directconnect.type_defs import ConfirmTransitVirtualInterfaceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `virtualInterfaceId`: `str`
+- `directConnectGatewayId`: `str`
+
+## ConfirmTransitVirtualInterfaceResponseResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import ConfirmTransitVirtualInterfaceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `virtualInterfaceState`:
   [VirtualInterfaceStateType](./literals.md#virtualinterfacestatetype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ConnectionTypeDef
+## ConnectionResponseTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import ConnectionTypeDef
+from mypy_boto3_directconnect.type_defs import ConnectionResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `ownerAccount`: `str`
 - `connectionId`: `str`
@@ -208,217 +463,670 @@ Optional fields:
 - `portEncryptionStatus`: `str`
 - `encryptionMode`: `str`
 - `macSecKeys`: `List`\[[MacSecKeyTypeDef](./type_defs.md#macseckeytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ConnectionsTypeDef
+## ConnectionsResponseTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import ConnectionsTypeDef
+from mypy_boto3_directconnect.type_defs import ConnectionsResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `connections`:
-  `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
+  `List`\[[ConnectionResponseTypeDef](./type_defs.md#connectionresponsetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateBGPPeerResponseTypeDef
+## CreateBGPPeerRequestTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import CreateBGPPeerResponseTypeDef
+from mypy_boto3_directconnect.type_defs import CreateBGPPeerRequestTypeDef
 ```
 
 Optional fields:
+
+- `virtualInterfaceId`: `str`
+- `newBGPPeer`: [NewBGPPeerTypeDef](./type_defs.md#newbgppeertypedef)
+
+## CreateBGPPeerResponseResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import CreateBGPPeerResponseResponseTypeDef
+```
+
+Required fields:
 
 - `virtualInterface`:
-  [VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef)
+  [VirtualInterfaceResponseTypeDef](./type_defs.md#virtualinterfaceresponsetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDirectConnectGatewayAssociationProposalResultTypeDef
+## CreateConnectionRequestTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import CreateDirectConnectGatewayAssociationProposalResultTypeDef
+from mypy_boto3_directconnect.type_defs import CreateConnectionRequestTypeDef
 ```
 
+Required fields:
+
+- `location`: `str`
+- `bandwidth`: `str`
+- `connectionName`: `str`
+
 Optional fields:
+
+- `lagId`: `str`
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `providerName`: `str`
+- `requestMACSec`: `bool`
+
+## CreateDirectConnectGatewayAssociationProposalRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import CreateDirectConnectGatewayAssociationProposalRequestTypeDef
+```
+
+Required fields:
+
+- `directConnectGatewayId`: `str`
+- `directConnectGatewayOwnerAccount`: `str`
+- `gatewayId`: `str`
+
+Optional fields:
+
+- `addAllowedPrefixesToDirectConnectGateway`:
+  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+- `removeAllowedPrefixesToDirectConnectGateway`:
+  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+
+## CreateDirectConnectGatewayAssociationProposalResultResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import CreateDirectConnectGatewayAssociationProposalResultResponseTypeDef
+```
+
+Required fields:
 
 - `directConnectGatewayAssociationProposal`:
   [DirectConnectGatewayAssociationProposalTypeDef](./type_defs.md#directconnectgatewayassociationproposaltypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDirectConnectGatewayAssociationResultTypeDef
+## CreateDirectConnectGatewayAssociationRequestTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import CreateDirectConnectGatewayAssociationResultTypeDef
+from mypy_boto3_directconnect.type_defs import CreateDirectConnectGatewayAssociationRequestTypeDef
 ```
 
+Required fields:
+
+- `directConnectGatewayId`: `str`
+
 Optional fields:
+
+- `gatewayId`: `str`
+- `addAllowedPrefixesToDirectConnectGateway`:
+  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+- `virtualGatewayId`: `str`
+
+## CreateDirectConnectGatewayAssociationResultResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import CreateDirectConnectGatewayAssociationResultResponseTypeDef
+```
+
+Required fields:
 
 - `directConnectGatewayAssociation`:
   [DirectConnectGatewayAssociationTypeDef](./type_defs.md#directconnectgatewayassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDirectConnectGatewayResultTypeDef
+## CreateDirectConnectGatewayRequestTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import CreateDirectConnectGatewayResultTypeDef
+from mypy_boto3_directconnect.type_defs import CreateDirectConnectGatewayRequestTypeDef
 ```
 
+Required fields:
+
+- `directConnectGatewayName`: `str`
+
 Optional fields:
+
+- `amazonSideAsn`: `int`
+
+## CreateDirectConnectGatewayResultResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import CreateDirectConnectGatewayResultResponseTypeDef
+```
+
+Required fields:
 
 - `directConnectGateway`:
   [DirectConnectGatewayTypeDef](./type_defs.md#directconnectgatewaytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTransitVirtualInterfaceResultTypeDef
+## CreateInterconnectRequestTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import CreateTransitVirtualInterfaceResultTypeDef
+from mypy_boto3_directconnect.type_defs import CreateInterconnectRequestTypeDef
 ```
 
+Required fields:
+
+- `interconnectName`: `str`
+- `bandwidth`: `str`
+- `location`: `str`
+
 Optional fields:
+
+- `lagId`: `str`
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `providerName`: `str`
+
+## CreateLagRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import CreateLagRequestTypeDef
+```
+
+Required fields:
+
+- `numberOfConnections`: `int`
+- `location`: `str`
+- `connectionsBandwidth`: `str`
+- `lagName`: `str`
+
+Optional fields:
+
+- `connectionId`: `str`
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `childConnectionTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `providerName`: `str`
+- `requestMACSec`: `bool`
+
+## CreatePrivateVirtualInterfaceRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import CreatePrivateVirtualInterfaceRequestTypeDef
+```
+
+Required fields:
+
+- `connectionId`: `str`
+- `newPrivateVirtualInterface`:
+  [NewPrivateVirtualInterfaceTypeDef](./type_defs.md#newprivatevirtualinterfacetypedef)
+
+## CreatePublicVirtualInterfaceRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import CreatePublicVirtualInterfaceRequestTypeDef
+```
+
+Required fields:
+
+- `connectionId`: `str`
+- `newPublicVirtualInterface`:
+  [NewPublicVirtualInterfaceTypeDef](./type_defs.md#newpublicvirtualinterfacetypedef)
+
+## CreateTransitVirtualInterfaceRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import CreateTransitVirtualInterfaceRequestTypeDef
+```
+
+Required fields:
+
+- `connectionId`: `str`
+- `newTransitVirtualInterface`:
+  [NewTransitVirtualInterfaceTypeDef](./type_defs.md#newtransitvirtualinterfacetypedef)
+
+## CreateTransitVirtualInterfaceResultResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import CreateTransitVirtualInterfaceResultResponseTypeDef
+```
+
+Required fields:
 
 - `virtualInterface`:
-  [VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef)
+  [VirtualInterfaceResponseTypeDef](./type_defs.md#virtualinterfaceresponsetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteBGPPeerResponseTypeDef
+## DeleteBGPPeerRequestTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import DeleteBGPPeerResponseTypeDef
+from mypy_boto3_directconnect.type_defs import DeleteBGPPeerRequestTypeDef
 ```
 
 Optional fields:
+
+- `virtualInterfaceId`: `str`
+- `asn`: `int`
+- `customerAddress`: `str`
+- `bgpPeerId`: `str`
+
+## DeleteBGPPeerResponseResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import DeleteBGPPeerResponseResponseTypeDef
+```
+
+Required fields:
 
 - `virtualInterface`:
-  [VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef)
+  [VirtualInterfaceResponseTypeDef](./type_defs.md#virtualinterfaceresponsetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteDirectConnectGatewayAssociationProposalResultTypeDef
+## DeleteConnectionRequestTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import DeleteDirectConnectGatewayAssociationProposalResultTypeDef
+from mypy_boto3_directconnect.type_defs import DeleteConnectionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `connectionId`: `str`
+
+## DeleteDirectConnectGatewayAssociationProposalRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import DeleteDirectConnectGatewayAssociationProposalRequestTypeDef
+```
+
+Required fields:
+
+- `proposalId`: `str`
+
+## DeleteDirectConnectGatewayAssociationProposalResultResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import DeleteDirectConnectGatewayAssociationProposalResultResponseTypeDef
+```
+
+Required fields:
 
 - `directConnectGatewayAssociationProposal`:
   [DirectConnectGatewayAssociationProposalTypeDef](./type_defs.md#directconnectgatewayassociationproposaltypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteDirectConnectGatewayAssociationResultTypeDef
+## DeleteDirectConnectGatewayAssociationRequestTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import DeleteDirectConnectGatewayAssociationResultTypeDef
+from mypy_boto3_directconnect.type_defs import DeleteDirectConnectGatewayAssociationRequestTypeDef
 ```
 
 Optional fields:
+
+- `associationId`: `str`
+- `directConnectGatewayId`: `str`
+- `virtualGatewayId`: `str`
+
+## DeleteDirectConnectGatewayAssociationResultResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import DeleteDirectConnectGatewayAssociationResultResponseTypeDef
+```
+
+Required fields:
 
 - `directConnectGatewayAssociation`:
   [DirectConnectGatewayAssociationTypeDef](./type_defs.md#directconnectgatewayassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteDirectConnectGatewayResultTypeDef
+## DeleteDirectConnectGatewayRequestTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import DeleteDirectConnectGatewayResultTypeDef
+from mypy_boto3_directconnect.type_defs import DeleteDirectConnectGatewayRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `directConnectGatewayId`: `str`
+
+## DeleteDirectConnectGatewayResultResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import DeleteDirectConnectGatewayResultResponseTypeDef
+```
+
+Required fields:
 
 - `directConnectGateway`:
   [DirectConnectGatewayTypeDef](./type_defs.md#directconnectgatewaytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteInterconnectResponseTypeDef
+## DeleteInterconnectRequestTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import DeleteInterconnectResponseTypeDef
+from mypy_boto3_directconnect.type_defs import DeleteInterconnectRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `interconnectId`: `str`
+
+## DeleteInterconnectResponseResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import DeleteInterconnectResponseResponseTypeDef
+```
+
+Required fields:
 
 - `interconnectState`:
   [InterconnectStateType](./literals.md#interconnectstatetype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteVirtualInterfaceResponseTypeDef
+## DeleteLagRequestTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import DeleteVirtualInterfaceResponseTypeDef
+from mypy_boto3_directconnect.type_defs import DeleteLagRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `lagId`: `str`
+
+## DeleteVirtualInterfaceRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import DeleteVirtualInterfaceRequestTypeDef
+```
+
+Required fields:
+
+- `virtualInterfaceId`: `str`
+
+## DeleteVirtualInterfaceResponseResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import DeleteVirtualInterfaceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `virtualInterfaceState`:
   [VirtualInterfaceStateType](./literals.md#virtualinterfacestatetype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeConnectionLoaResponseTypeDef
+## DescribeConnectionLoaRequestTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import DescribeConnectionLoaResponseTypeDef
+from mypy_boto3_directconnect.type_defs import DescribeConnectionLoaRequestTypeDef
 ```
 
+Required fields:
+
+- `connectionId`: `str`
+
 Optional fields:
+
+- `providerName`: `str`
+- `loaContentType`: `Literal['application/pdf']` (see
+  [LoaContentTypeType](./literals.md#loacontenttypetype))
+
+## DescribeConnectionLoaResponseResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import DescribeConnectionLoaResponseResponseTypeDef
+```
+
+Required fields:
 
 - `loa`: [LoaTypeDef](./type_defs.md#loatypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDirectConnectGatewayAssociationProposalsResultTypeDef
+## DescribeConnectionsOnInterconnectRequestTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import DescribeDirectConnectGatewayAssociationProposalsResultTypeDef
+from mypy_boto3_directconnect.type_defs import DescribeConnectionsOnInterconnectRequestTypeDef
+```
+
+Required fields:
+
+- `interconnectId`: `str`
+
+## DescribeConnectionsRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import DescribeConnectionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `connectionId`: `str`
+
+## DescribeDirectConnectGatewayAssociationProposalsRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import DescribeDirectConnectGatewayAssociationProposalsRequestTypeDef
+```
+
+Optional fields:
+
+- `directConnectGatewayId`: `str`
+- `proposalId`: `str`
+- `associatedGatewayId`: `str`
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## DescribeDirectConnectGatewayAssociationProposalsResultResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import DescribeDirectConnectGatewayAssociationProposalsResultResponseTypeDef
+```
+
+Required fields:
 
 - `directConnectGatewayAssociationProposals`:
   `List`\[[DirectConnectGatewayAssociationProposalTypeDef](./type_defs.md#directconnectgatewayassociationproposaltypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDirectConnectGatewayAssociationsResultTypeDef
+## DescribeDirectConnectGatewayAssociationsRequestTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import DescribeDirectConnectGatewayAssociationsResultTypeDef
+from mypy_boto3_directconnect.type_defs import DescribeDirectConnectGatewayAssociationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `associationId`: `str`
+- `associatedGatewayId`: `str`
+- `directConnectGatewayId`: `str`
+- `maxResults`: `int`
+- `nextToken`: `str`
+- `virtualGatewayId`: `str`
+
+## DescribeDirectConnectGatewayAssociationsResultResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import DescribeDirectConnectGatewayAssociationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `directConnectGatewayAssociations`:
   `List`\[[DirectConnectGatewayAssociationTypeDef](./type_defs.md#directconnectgatewayassociationtypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDirectConnectGatewayAttachmentsResultTypeDef
+## DescribeDirectConnectGatewayAttachmentsRequestTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import DescribeDirectConnectGatewayAttachmentsResultTypeDef
+from mypy_boto3_directconnect.type_defs import DescribeDirectConnectGatewayAttachmentsRequestTypeDef
 ```
 
 Optional fields:
+
+- `directConnectGatewayId`: `str`
+- `virtualInterfaceId`: `str`
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## DescribeDirectConnectGatewayAttachmentsResultResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import DescribeDirectConnectGatewayAttachmentsResultResponseTypeDef
+```
+
+Required fields:
 
 - `directConnectGatewayAttachments`:
   `List`\[[DirectConnectGatewayAttachmentTypeDef](./type_defs.md#directconnectgatewayattachmenttypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDirectConnectGatewaysResultTypeDef
+## DescribeDirectConnectGatewaysRequestTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import DescribeDirectConnectGatewaysResultTypeDef
+from mypy_boto3_directconnect.type_defs import DescribeDirectConnectGatewaysRequestTypeDef
 ```
 
 Optional fields:
+
+- `directConnectGatewayId`: `str`
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## DescribeDirectConnectGatewaysResultResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import DescribeDirectConnectGatewaysResultResponseTypeDef
+```
+
+Required fields:
 
 - `directConnectGateways`:
   `List`\[[DirectConnectGatewayTypeDef](./type_defs.md#directconnectgatewaytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInterconnectLoaResponseTypeDef
+## DescribeHostedConnectionsRequestTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import DescribeInterconnectLoaResponseTypeDef
+from mypy_boto3_directconnect.type_defs import DescribeHostedConnectionsRequestTypeDef
 ```
 
+Required fields:
+
+- `connectionId`: `str`
+
+## DescribeInterconnectLoaRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import DescribeInterconnectLoaRequestTypeDef
+```
+
+Required fields:
+
+- `interconnectId`: `str`
+
 Optional fields:
+
+- `providerName`: `str`
+- `loaContentType`: `Literal['application/pdf']` (see
+  [LoaContentTypeType](./literals.md#loacontenttypetype))
+
+## DescribeInterconnectLoaResponseResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import DescribeInterconnectLoaResponseResponseTypeDef
+```
+
+Required fields:
 
 - `loa`: [LoaTypeDef](./type_defs.md#loatypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTagsResponseTypeDef
+## DescribeInterconnectsRequestTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import DescribeTagsResponseTypeDef
+from mypy_boto3_directconnect.type_defs import DescribeInterconnectsRequestTypeDef
 ```
 
 Optional fields:
+
+- `interconnectId`: `str`
+
+## DescribeLagsRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import DescribeLagsRequestTypeDef
+```
+
+Optional fields:
+
+- `lagId`: `str`
+
+## DescribeLoaRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import DescribeLoaRequestTypeDef
+```
+
+Required fields:
+
+- `connectionId`: `str`
+
+Optional fields:
+
+- `providerName`: `str`
+- `loaContentType`: `Literal['application/pdf']` (see
+  [LoaContentTypeType](./literals.md#loacontenttypetype))
+
+## DescribeTagsRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import DescribeTagsRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArns`: `List`\[`str`\]
+
+## DescribeTagsResponseResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import DescribeTagsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `resourceTags`:
   `List`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeVirtualInterfacesRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import DescribeVirtualInterfacesRequestTypeDef
+```
+
+Optional fields:
+
+- `connectionId`: `str`
+- `virtualInterfaceId`: `str`
 
 ## DirectConnectGatewayAssociationProposalTypeDef
 
@@ -496,24 +1204,48 @@ Optional fields:
   [DirectConnectGatewayStateType](./literals.md#directconnectgatewaystatetype)
 - `stateChangeError`: `str`
 
-## DisassociateMacSecKeyResponseTypeDef
+## DisassociateConnectionFromLagRequestTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import DisassociateMacSecKeyResponseTypeDef
+from mypy_boto3_directconnect.type_defs import DisassociateConnectionFromLagRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `connectionId`: `str`
+- `lagId`: `str`
+
+## DisassociateMacSecKeyRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import DisassociateMacSecKeyRequestTypeDef
+```
+
+Required fields:
+
+- `connectionId`: `str`
+- `secretARN`: `str`
+
+## DisassociateMacSecKeyResponseResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import DisassociateMacSecKeyResponseResponseTypeDef
+```
+
+Required fields:
 
 - `connectionId`: `str`
 - `macSecKeys`: `List`\[[MacSecKeyTypeDef](./type_defs.md#macseckeytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## InterconnectTypeDef
+## InterconnectResponseTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import InterconnectTypeDef
+from mypy_boto3_directconnect.type_defs import InterconnectResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `interconnectId`: `str`
 - `interconnectName`: `str`
@@ -531,25 +1263,29 @@ Optional fields:
   [HasLogicalRedundancyType](./literals.md#haslogicalredundancytype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `providerName`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## InterconnectsTypeDef
+## InterconnectsResponseTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import InterconnectsTypeDef
+from mypy_boto3_directconnect.type_defs import InterconnectsResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `interconnects`:
-  `List`\[[InterconnectTypeDef](./type_defs.md#interconnecttypedef)\]
+  `List`\[[InterconnectResponseTypeDef](./type_defs.md#interconnectresponsetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## LagTypeDef
+## LagResponseTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import LagTypeDef
+from mypy_boto3_directconnect.type_defs import LagResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `connectionsBandwidth`: `str`
 - `numberOfConnections`: `int`
@@ -563,7 +1299,7 @@ Optional fields:
 - `awsDevice`: `str`
 - `awsDeviceV2`: `str`
 - `connections`:
-  `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
+  `List`\[[ConnectionResponseTypeDef](./type_defs.md#connectionresponsetypedef)\]
 - `allowsHostedConnections`: `bool`
 - `jumboFrameCapable`: `bool`
 - `hasLogicalRedundancy`:
@@ -573,28 +1309,49 @@ Optional fields:
 - `macSecCapable`: `bool`
 - `encryptionMode`: `str`
 - `macSecKeys`: `List`\[[MacSecKeyTypeDef](./type_defs.md#macseckeytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## LagsTypeDef
+## LagsResponseTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import LagsTypeDef
+from mypy_boto3_directconnect.type_defs import LagsResponseTypeDef
+```
+
+Required fields:
+
+- `lags`: `List`\[[LagResponseTypeDef](./type_defs.md#lagresponsetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListVirtualInterfaceTestHistoryRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import ListVirtualInterfaceTestHistoryRequestTypeDef
 ```
 
 Optional fields:
 
-- `lags`: `List`\[[LagTypeDef](./type_defs.md#lagtypedef)\]
+- `testId`: `str`
+- `virtualInterfaceId`: `str`
+- `bgpPeers`: `List`\[`str`\]
+- `status`: `str`
+- `maxResults`: `int`
+- `nextToken`: `str`
 
-## ListVirtualInterfaceTestHistoryResponseTypeDef
+## ListVirtualInterfaceTestHistoryResponseResponseTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import ListVirtualInterfaceTestHistoryResponseTypeDef
+from mypy_boto3_directconnect.type_defs import ListVirtualInterfaceTestHistoryResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `virtualInterfaceTestHistory`:
   `List`\[[VirtualInterfaceTestHistoryTypeDef](./type_defs.md#virtualinterfacetesthistorytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LoaTypeDef
 
@@ -604,7 +1361,7 @@ from mypy_boto3_directconnect.type_defs import LoaTypeDef
 
 Optional fields:
 
-- `loaContent`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `loaContent`: `bytes`
 - `loaContentType`: `Literal['application/pdf']` (see
   [LoaContentTypeType](./literals.md#loacontenttypetype))
 
@@ -623,15 +1380,17 @@ Optional fields:
 - `availableProviders`: `List`\[`str`\]
 - `availableMacSecPortSpeeds`: `List`\[`str`\]
 
-## LocationsTypeDef
+## LocationsResponseTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import LocationsTypeDef
+from mypy_boto3_directconnect.type_defs import LocationsResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `locations`: `List`\[[LocationTypeDef](./type_defs.md#locationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## MacSecKeyTypeDef
 
@@ -808,6 +1567,20 @@ Optional fields:
 - `resourceArn`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
 ## RouteFilterPrefixTypeDef
 
 ```python
@@ -818,27 +1591,67 @@ Optional fields:
 
 - `cidr`: `str`
 
-## StartBgpFailoverTestResponseTypeDef
+## StartBgpFailoverTestRequestTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import StartBgpFailoverTestResponseTypeDef
+from mypy_boto3_directconnect.type_defs import StartBgpFailoverTestRequestTypeDef
 ```
+
+Required fields:
+
+- `virtualInterfaceId`: `str`
 
 Optional fields:
 
-- `virtualInterfaceTest`:
-  [VirtualInterfaceTestHistoryTypeDef](./type_defs.md#virtualinterfacetesthistorytypedef)
+- `bgpPeers`: `List`\[`str`\]
+- `testDurationInMinutes`: `int`
 
-## StopBgpFailoverTestResponseTypeDef
+## StartBgpFailoverTestResponseResponseTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import StopBgpFailoverTestResponseTypeDef
+from mypy_boto3_directconnect.type_defs import StartBgpFailoverTestResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `virtualInterfaceTest`:
   [VirtualInterfaceTestHistoryTypeDef](./type_defs.md#virtualinterfacetesthistorytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StopBgpFailoverTestRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import StopBgpFailoverTestRequestTypeDef
+```
+
+Required fields:
+
+- `virtualInterfaceId`: `str`
+
+## StopBgpFailoverTestResponseResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import StopBgpFailoverTestResponseResponseTypeDef
+```
+
+Required fields:
+
+- `virtualInterfaceTest`:
+  [VirtualInterfaceTestHistoryTypeDef](./type_defs.md#virtualinterfacetesthistorytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -854,16 +1667,88 @@ Optional fields:
 
 - `value`: `str`
 
-## UpdateDirectConnectGatewayAssociationResultTypeDef
+## UntagResourceRequestTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import UpdateDirectConnectGatewayAssociationResultTypeDef
+from mypy_boto3_directconnect.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tagKeys`: `List`\[`str`\]
+
+## UpdateConnectionRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import UpdateConnectionRequestTypeDef
+```
+
+Required fields:
+
+- `connectionId`: `str`
+
+Optional fields:
+
+- `connectionName`: `str`
+- `encryptionMode`: `str`
+
+## UpdateDirectConnectGatewayAssociationRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import UpdateDirectConnectGatewayAssociationRequestTypeDef
 ```
 
 Optional fields:
 
+- `associationId`: `str`
+- `addAllowedPrefixesToDirectConnectGateway`:
+  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+- `removeAllowedPrefixesToDirectConnectGateway`:
+  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+
+## UpdateDirectConnectGatewayAssociationResultResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import UpdateDirectConnectGatewayAssociationResultResponseTypeDef
+```
+
+Required fields:
+
 - `directConnectGatewayAssociation`:
   [DirectConnectGatewayAssociationTypeDef](./type_defs.md#directconnectgatewayassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateLagRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import UpdateLagRequestTypeDef
+```
+
+Required fields:
+
+- `lagId`: `str`
+
+Optional fields:
+
+- `lagName`: `str`
+- `minimumLinks`: `int`
+- `encryptionMode`: `str`
+
+## UpdateVirtualInterfaceAttributesRequestTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import UpdateVirtualInterfaceAttributesRequestTypeDef
+```
+
+Required fields:
+
+- `virtualInterfaceId`: `str`
+
+Optional fields:
+
+- `mtu`: `int`
 
 ## VirtualGatewayTypeDef
 
@@ -876,41 +1761,26 @@ Optional fields:
 - `virtualGatewayId`: `str`
 - `virtualGatewayState`: `str`
 
-## VirtualGatewaysTypeDef
+## VirtualGatewaysResponseTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import VirtualGatewaysTypeDef
+from mypy_boto3_directconnect.type_defs import VirtualGatewaysResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `virtualGateways`:
   `List`\[[VirtualGatewayTypeDef](./type_defs.md#virtualgatewaytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## VirtualInterfaceTestHistoryTypeDef
-
-```python
-from mypy_boto3_directconnect.type_defs import VirtualInterfaceTestHistoryTypeDef
-```
-
-Optional fields:
-
-- `testId`: `str`
-- `virtualInterfaceId`: `str`
-- `bgpPeers`: `List`\[`str`\]
-- `status`: `str`
-- `ownerAccount`: `str`
-- `testDurationInMinutes`: `int`
-- `startTime`: `datetime`
-- `endTime`: `datetime`
-
-## VirtualInterfaceTypeDef
+## VirtualInterfaceResponseTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import VirtualInterfaceTypeDef
+from mypy_boto3_directconnect.type_defs import VirtualInterfaceResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `ownerAccount`: `str`
 - `virtualInterfaceId`: `str`
@@ -938,14 +1808,35 @@ Optional fields:
 - `region`: `str`
 - `awsDeviceV2`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## VirtualInterfacesTypeDef
+## VirtualInterfaceTestHistoryTypeDef
 
 ```python
-from mypy_boto3_directconnect.type_defs import VirtualInterfacesTypeDef
+from mypy_boto3_directconnect.type_defs import VirtualInterfaceTestHistoryTypeDef
 ```
 
 Optional fields:
 
+- `testId`: `str`
+- `virtualInterfaceId`: `str`
+- `bgpPeers`: `List`\[`str`\]
+- `status`: `str`
+- `ownerAccount`: `str`
+- `testDurationInMinutes`: `int`
+- `startTime`: `datetime`
+- `endTime`: `datetime`
+
+## VirtualInterfacesResponseTypeDef
+
+```python
+from mypy_boto3_directconnect.type_defs import VirtualInterfacesResponseTypeDef
+```
+
+Required fields:
+
 - `virtualInterfaces`:
-  `List`\[[VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef)\]
+  `List`\[[VirtualInterfaceResponseTypeDef](./type_defs.md#virtualinterfaceresponsetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

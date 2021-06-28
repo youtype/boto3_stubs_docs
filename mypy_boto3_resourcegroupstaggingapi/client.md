@@ -65,6 +65,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("resourcegroupstaggingapi").can_paginate`
 method.
 
@@ -79,6 +81,8 @@ Returns `bool`.
 
 ### describe_report_creation
 
+Describes the status of the `StartReportCreation` operation.
+
 Type annotations for
 `boto3.client("resourcegroupstaggingapi").describe_report_creation` method.
 
@@ -86,9 +90,11 @@ Boto3 documentation:
 [ResourceGroupsTaggingAPI.Client.describe_report_creation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.describe_report_creation)
 
 Returns
-[DescribeReportCreationOutputTypeDef](./type_defs.md#describereportcreationoutputtypedef).
+[DescribeReportCreationOutputResponseTypeDef](./type_defs.md#describereportcreationoutputresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for
 `boto3.client("resourcegroupstaggingapi").generate_presigned_url` method.
@@ -107,11 +113,17 @@ Returns `str`.
 
 ### get_compliance_summary
 
+Returns a table that shows counts of resources that are noncompliant with their
+tag policies.
+
 Type annotations for
 `boto3.client("resourcegroupstaggingapi").get_compliance_summary` method.
 
 Boto3 documentation:
 [ResourceGroupsTaggingAPI.Client.get_compliance_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_compliance_summary)
+
+Arguments mapping described in
+[GetComplianceSummaryInputTypeDef](./type_defs.md#getcompliancesummaryinputtypedef).
 
 Keyword-only arguments:
 
@@ -125,15 +137,21 @@ Keyword-only arguments:
 - `PaginationToken`: `str`
 
 Returns
-[GetComplianceSummaryOutputTypeDef](./type_defs.md#getcompliancesummaryoutputtypedef).
+[GetComplianceSummaryOutputResponseTypeDef](./type_defs.md#getcompliancesummaryoutputresponsetypedef).
 
 ### get_resources
+
+Returns all the tagged or previously tagged resources that are located in the
+specified Region for the AWS account.
 
 Type annotations for `boto3.client("resourcegroupstaggingapi").get_resources`
 method.
 
 Boto3 documentation:
 [ResourceGroupsTaggingAPI.Client.get_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_resources)
+
+Arguments mapping described in
+[GetResourcesInputTypeDef](./type_defs.md#getresourcesinputtypedef).
 
 Keyword-only arguments:
 
@@ -146,9 +164,13 @@ Keyword-only arguments:
 - `ExcludeCompliantResources`: `bool`
 - `ResourceARNList`: `List`\[`str`\]
 
-Returns [GetResourcesOutputTypeDef](./type_defs.md#getresourcesoutputtypedef).
+Returns
+[GetResourcesOutputResponseTypeDef](./type_defs.md#getresourcesoutputresponsetypedef).
 
 ### get_tag_keys
+
+Returns all tag keys currently in use in the specified Region for the calling
+AWS account.
 
 Type annotations for `boto3.client("resourcegroupstaggingapi").get_tag_keys`
 method.
@@ -156,13 +178,20 @@ method.
 Boto3 documentation:
 [ResourceGroupsTaggingAPI.Client.get_tag_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_tag_keys)
 
+Arguments mapping described in
+[GetTagKeysInputTypeDef](./type_defs.md#gettagkeysinputtypedef).
+
 Keyword-only arguments:
 
 - `PaginationToken`: `str`
 
-Returns [GetTagKeysOutputTypeDef](./type_defs.md#gettagkeysoutputtypedef).
+Returns
+[GetTagKeysOutputResponseTypeDef](./type_defs.md#gettagkeysoutputresponsetypedef).
 
 ### get_tag_values
+
+Returns all tag values for the specified key that are used in the specified AWS
+Region for the calling AWS account.
 
 Type annotations for `boto3.client("resourcegroupstaggingapi").get_tag_values`
 method.
@@ -170,20 +199,31 @@ method.
 Boto3 documentation:
 [ResourceGroupsTaggingAPI.Client.get_tag_values](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_tag_values)
 
+Arguments mapping described in
+[GetTagValuesInputTypeDef](./type_defs.md#gettagvaluesinputtypedef).
+
 Keyword-only arguments:
 
 - `Key`: `str` *(required)*
 - `PaginationToken`: `str`
 
-Returns [GetTagValuesOutputTypeDef](./type_defs.md#gettagvaluesoutputtypedef).
+Returns
+[GetTagValuesOutputResponseTypeDef](./type_defs.md#gettagvaluesoutputresponsetypedef).
 
 ### start_report_creation
+
+Generates a report that lists all tagged resources in the accounts across your
+organization and tells whether each resource is compliant with the effective
+tag policy.
 
 Type annotations for
 `boto3.client("resourcegroupstaggingapi").start_report_creation` method.
 
 Boto3 documentation:
 [ResourceGroupsTaggingAPI.Client.start_report_creation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.start_report_creation)
+
+Arguments mapping described in
+[StartReportCreationInputTypeDef](./type_defs.md#startreportcreationinputtypedef).
 
 Keyword-only arguments:
 
@@ -193,20 +233,28 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### tag_resources
 
+.
+
 Type annotations for `boto3.client("resourcegroupstaggingapi").tag_resources`
 method.
 
 Boto3 documentation:
 [ResourceGroupsTaggingAPI.Client.tag_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.tag_resources)
 
+Arguments mapping described in
+[TagResourcesInputTypeDef](./type_defs.md#tagresourcesinputtypedef).
+
 Keyword-only arguments:
 
 - `ResourceARNList`: `List`\[`str`\] *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
 
-Returns [TagResourcesOutputTypeDef](./type_defs.md#tagresourcesoutputtypedef).
+Returns
+[TagResourcesOutputResponseTypeDef](./type_defs.md#tagresourcesoutputresponsetypedef).
 
 ### untag_resources
+
+.
 
 Type annotations for `boto3.client("resourcegroupstaggingapi").untag_resources`
 method.
@@ -214,13 +262,16 @@ method.
 Boto3 documentation:
 [ResourceGroupsTaggingAPI.Client.untag_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.untag_resources)
 
+Arguments mapping described in
+[UntagResourcesInputTypeDef](./type_defs.md#untagresourcesinputtypedef).
+
 Keyword-only arguments:
 
 - `ResourceARNList`: `List`\[`str`\] *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
 
 Returns
-[UntagResourcesOutputTypeDef](./type_defs.md#untagresourcesoutputtypedef).
+[UntagResourcesOutputResponseTypeDef](./type_defs.md#untagresourcesoutputresponsetypedef).
 
 ### get_paginator
 

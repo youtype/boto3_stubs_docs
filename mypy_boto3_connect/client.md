@@ -169,11 +169,16 @@ Exceptions:
 
 ### associate_approved_origin
 
+This API is in preview release for Amazon Connect and is subject to change.
+
 Type annotations for `boto3.client("connect").associate_approved_origin`
 method.
 
 Boto3 documentation:
 [Connect.Client.associate_approved_origin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_approved_origin)
+
+Arguments mapping described in
+[AssociateApprovedOriginRequestTypeDef](./type_defs.md#associateapprovedoriginrequesttypedef).
 
 Keyword-only arguments:
 
@@ -182,10 +187,15 @@ Keyword-only arguments:
 
 ### associate_bot
 
+This API is in preview release for Amazon Connect and is subject to change.
+
 Type annotations for `boto3.client("connect").associate_bot` method.
 
 Boto3 documentation:
 [Connect.Client.associate_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_bot)
+
+Arguments mapping described in
+[AssociateBotRequestTypeDef](./type_defs.md#associatebotrequesttypedef).
 
 Keyword-only arguments:
 
@@ -195,11 +205,16 @@ Keyword-only arguments:
 
 ### associate_instance_storage_config
 
+This API is in preview release for Amazon Connect and is subject to change.
+
 Type annotations for
 `boto3.client("connect").associate_instance_storage_config` method.
 
 Boto3 documentation:
 [Connect.Client.associate_instance_storage_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_instance_storage_config)
+
+Arguments mapping described in
+[AssociateInstanceStorageConfigRequestTypeDef](./type_defs.md#associateinstancestorageconfigrequesttypedef).
 
 Keyword-only arguments:
 
@@ -212,15 +227,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[AssociateInstanceStorageConfigResponseTypeDef](./type_defs.md#associateinstancestorageconfigresponsetypedef).
+[AssociateInstanceStorageConfigResponseResponseTypeDef](./type_defs.md#associateinstancestorageconfigresponseresponsetypedef).
 
 ### associate_lambda_function
+
+This API is in preview release for Amazon Connect and is subject to change.
 
 Type annotations for `boto3.client("connect").associate_lambda_function`
 method.
 
 Boto3 documentation:
 [Connect.Client.associate_lambda_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_lambda_function)
+
+Arguments mapping described in
+[AssociateLambdaFunctionRequestTypeDef](./type_defs.md#associatelambdafunctionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -229,10 +249,15 @@ Keyword-only arguments:
 
 ### associate_lex_bot
 
+This API is in preview release for Amazon Connect and is subject to change.
+
 Type annotations for `boto3.client("connect").associate_lex_bot` method.
 
 Boto3 documentation:
 [Connect.Client.associate_lex_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_lex_bot)
+
+Arguments mapping described in
+[AssociateLexBotRequestTypeDef](./type_defs.md#associatelexbotrequesttypedef).
 
 Keyword-only arguments:
 
@@ -241,11 +266,16 @@ Keyword-only arguments:
 
 ### associate_queue_quick_connects
 
+This API is in preview release for Amazon Connect and is subject to change.
+
 Type annotations for `boto3.client("connect").associate_queue_quick_connects`
 method.
 
 Boto3 documentation:
 [Connect.Client.associate_queue_quick_connects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_queue_quick_connects)
+
+Arguments mapping described in
+[AssociateQueueQuickConnectsRequestTypeDef](./type_defs.md#associatequeuequickconnectsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -255,11 +285,16 @@ Keyword-only arguments:
 
 ### associate_routing_profile_queues
 
+Associates a set of queues with a routing profile.
+
 Type annotations for `boto3.client("connect").associate_routing_profile_queues`
 method.
 
 Boto3 documentation:
 [Connect.Client.associate_routing_profile_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_routing_profile_queues)
+
+Arguments mapping described in
+[AssociateRoutingProfileQueuesRequestTypeDef](./type_defs.md#associateroutingprofilequeuesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -271,10 +306,15 @@ Keyword-only arguments:
 
 ### associate_security_key
 
+This API is in preview release for Amazon Connect and is subject to change.
+
 Type annotations for `boto3.client("connect").associate_security_key` method.
 
 Boto3 documentation:
 [Connect.Client.associate_security_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_security_key)
+
+Arguments mapping described in
+[AssociateSecurityKeyRequestTypeDef](./type_defs.md#associatesecuritykeyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -282,9 +322,11 @@ Keyword-only arguments:
 - `Key`: `str` *(required)*
 
 Returns
-[AssociateSecurityKeyResponseTypeDef](./type_defs.md#associatesecuritykeyresponsetypedef).
+[AssociateSecurityKeyResponseResponseTypeDef](./type_defs.md#associatesecuritykeyresponseresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("connect").can_paginate` method.
 
@@ -299,10 +341,15 @@ Returns `bool`.
 
 ### create_contact_flow
 
+Creates a contact flow for the specified Amazon Connect instance.
+
 Type annotations for `boto3.client("connect").create_contact_flow` method.
 
 Boto3 documentation:
 [Connect.Client.create_contact_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_contact_flow)
+
+Arguments mapping described in
+[CreateContactFlowRequestTypeDef](./type_defs.md#createcontactflowrequesttypedef).
 
 Keyword-only arguments:
 
@@ -314,14 +361,19 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateContactFlowResponseTypeDef](./type_defs.md#createcontactflowresponsetypedef).
+[CreateContactFlowResponseResponseTypeDef](./type_defs.md#createcontactflowresponseresponsetypedef).
 
 ### create_instance
+
+This API is in preview release for Amazon Connect and is subject to change.
 
 Type annotations for `boto3.client("connect").create_instance` method.
 
 Boto3 documentation:
 [Connect.Client.create_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_instance)
+
+Arguments mapping described in
+[CreateInstanceRequestTypeDef](./type_defs.md#createinstancerequesttypedef).
 
 Keyword-only arguments:
 
@@ -334,15 +386,20 @@ Keyword-only arguments:
 - `DirectoryId`: `str`
 
 Returns
-[CreateInstanceResponseTypeDef](./type_defs.md#createinstanceresponsetypedef).
+[CreateInstanceResponseResponseTypeDef](./type_defs.md#createinstanceresponseresponsetypedef).
 
 ### create_integration_association
+
+Create an AppIntegration association with an Amazon Connect instance.
 
 Type annotations for `boto3.client("connect").create_integration_association`
 method.
 
 Boto3 documentation:
 [Connect.Client.create_integration_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_integration_association)
+
+Arguments mapping described in
+[CreateIntegrationAssociationRequestTypeDef](./type_defs.md#createintegrationassociationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -356,14 +413,19 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateIntegrationAssociationResponseTypeDef](./type_defs.md#createintegrationassociationresponsetypedef).
+[CreateIntegrationAssociationResponseResponseTypeDef](./type_defs.md#createintegrationassociationresponseresponsetypedef).
 
 ### create_queue
+
+This API is in preview release for Amazon Connect and is subject to change.
 
 Type annotations for `boto3.client("connect").create_queue` method.
 
 Boto3 documentation:
 [Connect.Client.create_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_queue)
+
+Arguments mapping described in
+[CreateQueueRequestTypeDef](./type_defs.md#createqueuerequesttypedef).
 
 Keyword-only arguments:
 
@@ -378,14 +440,19 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateQueueResponseTypeDef](./type_defs.md#createqueueresponsetypedef).
+[CreateQueueResponseResponseTypeDef](./type_defs.md#createqueueresponseresponsetypedef).
 
 ### create_quick_connect
+
+Creates a quick connect for the specified Amazon Connect instance.
 
 Type annotations for `boto3.client("connect").create_quick_connect` method.
 
 Boto3 documentation:
 [Connect.Client.create_quick_connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_quick_connect)
+
+Arguments mapping described in
+[CreateQuickConnectRequestTypeDef](./type_defs.md#createquickconnectrequesttypedef).
 
 Keyword-only arguments:
 
@@ -398,14 +465,19 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateQuickConnectResponseTypeDef](./type_defs.md#createquickconnectresponsetypedef).
+[CreateQuickConnectResponseResponseTypeDef](./type_defs.md#createquickconnectresponseresponsetypedef).
 
 ### create_routing_profile
+
+Creates a new routing profile.
 
 Type annotations for `boto3.client("connect").create_routing_profile` method.
 
 Boto3 documentation:
 [Connect.Client.create_routing_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_routing_profile)
+
+Arguments mapping described in
+[CreateRoutingProfileRequestTypeDef](./type_defs.md#createroutingprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -421,14 +493,19 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateRoutingProfileResponseTypeDef](./type_defs.md#createroutingprofileresponsetypedef).
+[CreateRoutingProfileResponseResponseTypeDef](./type_defs.md#createroutingprofileresponseresponsetypedef).
 
 ### create_use_case
+
+Creates a use case for an AppIntegration association.
 
 Type annotations for `boto3.client("connect").create_use_case` method.
 
 Boto3 documentation:
 [Connect.Client.create_use_case](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_use_case)
+
+Arguments mapping described in
+[CreateUseCaseRequestTypeDef](./type_defs.md#createusecaserequesttypedef).
 
 Keyword-only arguments:
 
@@ -439,14 +516,19 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateUseCaseResponseTypeDef](./type_defs.md#createusecaseresponsetypedef).
+[CreateUseCaseResponseResponseTypeDef](./type_defs.md#createusecaseresponseresponsetypedef).
 
 ### create_user
+
+Creates a user account for the specified Amazon Connect instance.
 
 Type annotations for `boto3.client("connect").create_user` method.
 
 Boto3 documentation:
 [Connect.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_user)
+
+Arguments mapping described in
+[CreateUserRequestTypeDef](./type_defs.md#createuserrequesttypedef).
 
 Keyword-only arguments:
 
@@ -463,15 +545,21 @@ Keyword-only arguments:
 - `HierarchyGroupId`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
+Returns
+[CreateUserResponseResponseTypeDef](./type_defs.md#createuserresponseresponsetypedef).
 
 ### create_user_hierarchy_group
+
+Creates a new user hierarchy group.
 
 Type annotations for `boto3.client("connect").create_user_hierarchy_group`
 method.
 
 Boto3 documentation:
 [Connect.Client.create_user_hierarchy_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_user_hierarchy_group)
+
+Arguments mapping described in
+[CreateUserHierarchyGroupRequestTypeDef](./type_defs.md#createuserhierarchygrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -480,14 +568,19 @@ Keyword-only arguments:
 - `ParentGroupId`: `str`
 
 Returns
-[CreateUserHierarchyGroupResponseTypeDef](./type_defs.md#createuserhierarchygroupresponsetypedef).
+[CreateUserHierarchyGroupResponseResponseTypeDef](./type_defs.md#createuserhierarchygroupresponseresponsetypedef).
 
 ### delete_instance
+
+This API is in preview release for Amazon Connect and is subject to change.
 
 Type annotations for `boto3.client("connect").delete_instance` method.
 
 Boto3 documentation:
 [Connect.Client.delete_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_instance)
+
+Arguments mapping described in
+[DeleteInstanceRequestTypeDef](./type_defs.md#deleteinstancerequesttypedef).
 
 Keyword-only arguments:
 
@@ -495,11 +588,16 @@ Keyword-only arguments:
 
 ### delete_integration_association
 
+Deletes an AppIntegration association from an Amazon Connect instance.
+
 Type annotations for `boto3.client("connect").delete_integration_association`
 method.
 
 Boto3 documentation:
 [Connect.Client.delete_integration_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_integration_association)
+
+Arguments mapping described in
+[DeleteIntegrationAssociationRequestTypeDef](./type_defs.md#deleteintegrationassociationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -508,10 +606,15 @@ Keyword-only arguments:
 
 ### delete_quick_connect
 
+Deletes a quick connect.
+
 Type annotations for `boto3.client("connect").delete_quick_connect` method.
 
 Boto3 documentation:
 [Connect.Client.delete_quick_connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_quick_connect)
+
+Arguments mapping described in
+[DeleteQuickConnectRequestTypeDef](./type_defs.md#deletequickconnectrequesttypedef).
 
 Keyword-only arguments:
 
@@ -520,10 +623,15 @@ Keyword-only arguments:
 
 ### delete_use_case
 
+Deletes a use case from an AppIntegration association.
+
 Type annotations for `boto3.client("connect").delete_use_case` method.
 
 Boto3 documentation:
 [Connect.Client.delete_use_case](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_use_case)
+
+Arguments mapping described in
+[DeleteUseCaseRequestTypeDef](./type_defs.md#deleteusecaserequesttypedef).
 
 Keyword-only arguments:
 
@@ -533,10 +641,15 @@ Keyword-only arguments:
 
 ### delete_user
 
+Deletes a user account from the specified Amazon Connect instance.
+
 Type annotations for `boto3.client("connect").delete_user` method.
 
 Boto3 documentation:
 [Connect.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_user)
+
+Arguments mapping described in
+[DeleteUserRequestTypeDef](./type_defs.md#deleteuserrequesttypedef).
 
 Keyword-only arguments:
 
@@ -545,11 +658,16 @@ Keyword-only arguments:
 
 ### delete_user_hierarchy_group
 
+Deletes an existing user hierarchy group.
+
 Type annotations for `boto3.client("connect").delete_user_hierarchy_group`
 method.
 
 Boto3 documentation:
 [Connect.Client.delete_user_hierarchy_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_user_hierarchy_group)
+
+Arguments mapping described in
+[DeleteUserHierarchyGroupRequestTypeDef](./type_defs.md#deleteuserhierarchygrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -558,10 +676,15 @@ Keyword-only arguments:
 
 ### describe_contact_flow
 
+Describes the specified contact flow.
+
 Type annotations for `boto3.client("connect").describe_contact_flow` method.
 
 Boto3 documentation:
 [Connect.Client.describe_contact_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_contact_flow)
+
+Arguments mapping described in
+[DescribeContactFlowRequestTypeDef](./type_defs.md#describecontactflowrequesttypedef).
 
 Keyword-only arguments:
 
@@ -569,9 +692,11 @@ Keyword-only arguments:
 - `ContactFlowId`: `str` *(required)*
 
 Returns
-[DescribeContactFlowResponseTypeDef](./type_defs.md#describecontactflowresponsetypedef).
+[DescribeContactFlowResponseResponseTypeDef](./type_defs.md#describecontactflowresponseresponsetypedef).
 
 ### describe_hours_of_operation
+
+This API is in preview release for Amazon Connect and is subject to change.
 
 Type annotations for `boto3.client("connect").describe_hours_of_operation`
 method.
@@ -579,35 +704,48 @@ method.
 Boto3 documentation:
 [Connect.Client.describe_hours_of_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_hours_of_operation)
 
+Arguments mapping described in
+[DescribeHoursOfOperationRequestTypeDef](./type_defs.md#describehoursofoperationrequesttypedef).
+
 Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `HoursOfOperationId`: `str` *(required)*
 
 Returns
-[DescribeHoursOfOperationResponseTypeDef](./type_defs.md#describehoursofoperationresponsetypedef).
+[DescribeHoursOfOperationResponseResponseTypeDef](./type_defs.md#describehoursofoperationresponseresponsetypedef).
 
 ### describe_instance
+
+This API is in preview release for Amazon Connect and is subject to change.
 
 Type annotations for `boto3.client("connect").describe_instance` method.
 
 Boto3 documentation:
 [Connect.Client.describe_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_instance)
 
+Arguments mapping described in
+[DescribeInstanceRequestTypeDef](./type_defs.md#describeinstancerequesttypedef).
+
 Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 
 Returns
-[DescribeInstanceResponseTypeDef](./type_defs.md#describeinstanceresponsetypedef).
+[DescribeInstanceResponseResponseTypeDef](./type_defs.md#describeinstanceresponseresponsetypedef).
 
 ### describe_instance_attribute
+
+This API is in preview release for Amazon Connect and is subject to change.
 
 Type annotations for `boto3.client("connect").describe_instance_attribute`
 method.
 
 Boto3 documentation:
 [Connect.Client.describe_instance_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_instance_attribute)
+
+Arguments mapping described in
+[DescribeInstanceAttributeRequestTypeDef](./type_defs.md#describeinstanceattributerequesttypedef).
 
 Keyword-only arguments:
 
@@ -617,15 +755,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[DescribeInstanceAttributeResponseTypeDef](./type_defs.md#describeinstanceattributeresponsetypedef).
+[DescribeInstanceAttributeResponseResponseTypeDef](./type_defs.md#describeinstanceattributeresponseresponsetypedef).
 
 ### describe_instance_storage_config
+
+This API is in preview release for Amazon Connect and is subject to change.
 
 Type annotations for `boto3.client("connect").describe_instance_storage_config`
 method.
 
 Boto3 documentation:
 [Connect.Client.describe_instance_storage_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_instance_storage_config)
+
+Arguments mapping described in
+[DescribeInstanceStorageConfigRequestTypeDef](./type_defs.md#describeinstancestorageconfigrequesttypedef).
 
 Keyword-only arguments:
 
@@ -636,14 +779,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[DescribeInstanceStorageConfigResponseTypeDef](./type_defs.md#describeinstancestorageconfigresponsetypedef).
+[DescribeInstanceStorageConfigResponseResponseTypeDef](./type_defs.md#describeinstancestorageconfigresponseresponsetypedef).
 
 ### describe_queue
+
+This API is in preview release for Amazon Connect and is subject to change.
 
 Type annotations for `boto3.client("connect").describe_queue` method.
 
 Boto3 documentation:
 [Connect.Client.describe_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_queue)
+
+Arguments mapping described in
+[DescribeQueueRequestTypeDef](./type_defs.md#describequeuerequesttypedef).
 
 Keyword-only arguments:
 
@@ -651,14 +799,19 @@ Keyword-only arguments:
 - `QueueId`: `str` *(required)*
 
 Returns
-[DescribeQueueResponseTypeDef](./type_defs.md#describequeueresponsetypedef).
+[DescribeQueueResponseResponseTypeDef](./type_defs.md#describequeueresponseresponsetypedef).
 
 ### describe_quick_connect
+
+Describes the quick connect.
 
 Type annotations for `boto3.client("connect").describe_quick_connect` method.
 
 Boto3 documentation:
 [Connect.Client.describe_quick_connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_quick_connect)
+
+Arguments mapping described in
+[DescribeQuickConnectRequestTypeDef](./type_defs.md#describequickconnectrequesttypedef).
 
 Keyword-only arguments:
 
@@ -666,14 +819,19 @@ Keyword-only arguments:
 - `QuickConnectId`: `str` *(required)*
 
 Returns
-[DescribeQuickConnectResponseTypeDef](./type_defs.md#describequickconnectresponsetypedef).
+[DescribeQuickConnectResponseResponseTypeDef](./type_defs.md#describequickconnectresponseresponsetypedef).
 
 ### describe_routing_profile
+
+Describes the specified routing profile.
 
 Type annotations for `boto3.client("connect").describe_routing_profile` method.
 
 Boto3 documentation:
 [Connect.Client.describe_routing_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_routing_profile)
+
+Arguments mapping described in
+[DescribeRoutingProfileRequestTypeDef](./type_defs.md#describeroutingprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -681,14 +839,19 @@ Keyword-only arguments:
 - `RoutingProfileId`: `str` *(required)*
 
 Returns
-[DescribeRoutingProfileResponseTypeDef](./type_defs.md#describeroutingprofileresponsetypedef).
+[DescribeRoutingProfileResponseResponseTypeDef](./type_defs.md#describeroutingprofileresponseresponsetypedef).
 
 ### describe_user
+
+Describes the specified user account.
 
 Type annotations for `boto3.client("connect").describe_user` method.
 
 Boto3 documentation:
 [Connect.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_user)
+
+Arguments mapping described in
+[DescribeUserRequestTypeDef](./type_defs.md#describeuserrequesttypedef).
 
 Keyword-only arguments:
 
@@ -696,9 +859,11 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 
 Returns
-[DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef).
+[DescribeUserResponseResponseTypeDef](./type_defs.md#describeuserresponseresponsetypedef).
 
 ### describe_user_hierarchy_group
+
+Describes the specified hierarchy group.
 
 Type annotations for `boto3.client("connect").describe_user_hierarchy_group`
 method.
@@ -706,15 +871,20 @@ method.
 Boto3 documentation:
 [Connect.Client.describe_user_hierarchy_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_user_hierarchy_group)
 
+Arguments mapping described in
+[DescribeUserHierarchyGroupRequestTypeDef](./type_defs.md#describeuserhierarchygrouprequesttypedef).
+
 Keyword-only arguments:
 
 - `HierarchyGroupId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
 
 Returns
-[DescribeUserHierarchyGroupResponseTypeDef](./type_defs.md#describeuserhierarchygroupresponsetypedef).
+[DescribeUserHierarchyGroupResponseResponseTypeDef](./type_defs.md#describeuserhierarchygroupresponseresponsetypedef).
 
 ### describe_user_hierarchy_structure
+
+Describes the hierarchy structure of the specified Amazon Connect instance.
 
 Type annotations for
 `boto3.client("connect").describe_user_hierarchy_structure` method.
@@ -722,20 +892,28 @@ Type annotations for
 Boto3 documentation:
 [Connect.Client.describe_user_hierarchy_structure](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_user_hierarchy_structure)
 
+Arguments mapping described in
+[DescribeUserHierarchyStructureRequestTypeDef](./type_defs.md#describeuserhierarchystructurerequesttypedef).
+
 Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 
 Returns
-[DescribeUserHierarchyStructureResponseTypeDef](./type_defs.md#describeuserhierarchystructureresponsetypedef).
+[DescribeUserHierarchyStructureResponseResponseTypeDef](./type_defs.md#describeuserhierarchystructureresponseresponsetypedef).
 
 ### disassociate_approved_origin
+
+This API is in preview release for Amazon Connect and is subject to change.
 
 Type annotations for `boto3.client("connect").disassociate_approved_origin`
 method.
 
 Boto3 documentation:
 [Connect.Client.disassociate_approved_origin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_approved_origin)
+
+Arguments mapping described in
+[DisassociateApprovedOriginRequestTypeDef](./type_defs.md#disassociateapprovedoriginrequesttypedef).
 
 Keyword-only arguments:
 
@@ -744,10 +922,15 @@ Keyword-only arguments:
 
 ### disassociate_bot
 
+This API is in preview release for Amazon Connect and is subject to change.
+
 Type annotations for `boto3.client("connect").disassociate_bot` method.
 
 Boto3 documentation:
 [Connect.Client.disassociate_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_bot)
+
+Arguments mapping described in
+[DisassociateBotRequestTypeDef](./type_defs.md#disassociatebotrequesttypedef).
 
 Keyword-only arguments:
 
@@ -757,11 +940,16 @@ Keyword-only arguments:
 
 ### disassociate_instance_storage_config
 
+This API is in preview release for Amazon Connect and is subject to change.
+
 Type annotations for
 `boto3.client("connect").disassociate_instance_storage_config` method.
 
 Boto3 documentation:
 [Connect.Client.disassociate_instance_storage_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_instance_storage_config)
+
+Arguments mapping described in
+[DisassociateInstanceStorageConfigRequestTypeDef](./type_defs.md#disassociateinstancestorageconfigrequesttypedef).
 
 Keyword-only arguments:
 
@@ -773,11 +961,16 @@ Keyword-only arguments:
 
 ### disassociate_lambda_function
 
+This API is in preview release for Amazon Connect and is subject to change.
+
 Type annotations for `boto3.client("connect").disassociate_lambda_function`
 method.
 
 Boto3 documentation:
 [Connect.Client.disassociate_lambda_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_lambda_function)
+
+Arguments mapping described in
+[DisassociateLambdaFunctionRequestTypeDef](./type_defs.md#disassociatelambdafunctionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -786,10 +979,15 @@ Keyword-only arguments:
 
 ### disassociate_lex_bot
 
+This API is in preview release for Amazon Connect and is subject to change.
+
 Type annotations for `boto3.client("connect").disassociate_lex_bot` method.
 
 Boto3 documentation:
 [Connect.Client.disassociate_lex_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_lex_bot)
+
+Arguments mapping described in
+[DisassociateLexBotRequestTypeDef](./type_defs.md#disassociatelexbotrequesttypedef).
 
 Keyword-only arguments:
 
@@ -799,11 +997,16 @@ Keyword-only arguments:
 
 ### disassociate_queue_quick_connects
 
+This API is in preview release for Amazon Connect and is subject to change.
+
 Type annotations for
 `boto3.client("connect").disassociate_queue_quick_connects` method.
 
 Boto3 documentation:
 [Connect.Client.disassociate_queue_quick_connects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_queue_quick_connects)
+
+Arguments mapping described in
+[DisassociateQueueQuickConnectsRequestTypeDef](./type_defs.md#disassociatequeuequickconnectsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -813,11 +1016,16 @@ Keyword-only arguments:
 
 ### disassociate_routing_profile_queues
 
+Disassociates a set of queues from a routing profile.
+
 Type annotations for
 `boto3.client("connect").disassociate_routing_profile_queues` method.
 
 Boto3 documentation:
 [Connect.Client.disassociate_routing_profile_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_routing_profile_queues)
+
+Arguments mapping described in
+[DisassociateRoutingProfileQueuesRequestTypeDef](./type_defs.md#disassociateroutingprofilequeuesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -829,11 +1037,16 @@ Keyword-only arguments:
 
 ### disassociate_security_key
 
+This API is in preview release for Amazon Connect and is subject to change.
+
 Type annotations for `boto3.client("connect").disassociate_security_key`
 method.
 
 Boto3 documentation:
 [Connect.Client.disassociate_security_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_security_key)
+
+Arguments mapping described in
+[DisassociateSecurityKeyRequestTypeDef](./type_defs.md#disassociatesecuritykeyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -841,6 +1054,8 @@ Keyword-only arguments:
 - `AssociationId`: `str` *(required)*
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("connect").generate_presigned_url` method.
 
@@ -858,10 +1073,15 @@ Returns `str`.
 
 ### get_contact_attributes
 
+Retrieves the contact attributes for the specified contact.
+
 Type annotations for `boto3.client("connect").get_contact_attributes` method.
 
 Boto3 documentation:
 [Connect.Client.get_contact_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.get_contact_attributes)
+
+Arguments mapping described in
+[GetContactAttributesRequestTypeDef](./type_defs.md#getcontactattributesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -869,14 +1089,19 @@ Keyword-only arguments:
 - `InitialContactId`: `str` *(required)*
 
 Returns
-[GetContactAttributesResponseTypeDef](./type_defs.md#getcontactattributesresponsetypedef).
+[GetContactAttributesResponseResponseTypeDef](./type_defs.md#getcontactattributesresponseresponsetypedef).
 
 ### get_current_metric_data
+
+Gets the real-time metric data from the specified Amazon Connect instance.
 
 Type annotations for `boto3.client("connect").get_current_metric_data` method.
 
 Boto3 documentation:
 [Connect.Client.get_current_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.get_current_metric_data)
+
+Arguments mapping described in
+[GetCurrentMetricDataRequestTypeDef](./type_defs.md#getcurrentmetricdatarequesttypedef).
 
 Keyword-only arguments:
 
@@ -890,34 +1115,44 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetCurrentMetricDataResponseTypeDef](./type_defs.md#getcurrentmetricdataresponsetypedef).
+[GetCurrentMetricDataResponseResponseTypeDef](./type_defs.md#getcurrentmetricdataresponseresponsetypedef).
 
 ### get_federation_token
+
+Retrieves a token for federation.
 
 Type annotations for `boto3.client("connect").get_federation_token` method.
 
 Boto3 documentation:
 [Connect.Client.get_federation_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.get_federation_token)
 
+Arguments mapping described in
+[GetFederationTokenRequestTypeDef](./type_defs.md#getfederationtokenrequesttypedef).
+
 Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 
 Returns
-[GetFederationTokenResponseTypeDef](./type_defs.md#getfederationtokenresponsetypedef).
+[GetFederationTokenResponseResponseTypeDef](./type_defs.md#getfederationtokenresponseresponsetypedef).
 
 ### get_metric_data
+
+Gets historical metric data from the specified Amazon Connect instance.
 
 Type annotations for `boto3.client("connect").get_metric_data` method.
 
 Boto3 documentation:
 [Connect.Client.get_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.get_metric_data)
 
+Arguments mapping described in
+[GetMetricDataRequestTypeDef](./type_defs.md#getmetricdatarequesttypedef).
+
 Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
-- `StartTime`: `datetime` *(required)*
-- `EndTime`: `datetime` *(required)*
+- `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
+- `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `Filters`: [FiltersTypeDef](./type_defs.md#filterstypedef) *(required)*
 - `HistoricalMetrics`:
   `List`\[[HistoricalMetricTypeDef](./type_defs.md#historicalmetrictypedef)\]
@@ -927,14 +1162,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetMetricDataResponseTypeDef](./type_defs.md#getmetricdataresponsetypedef).
+[GetMetricDataResponseResponseTypeDef](./type_defs.md#getmetricdataresponseresponsetypedef).
 
 ### list_approved_origins
+
+This API is in preview release for Amazon Connect and is subject to change.
 
 Type annotations for `boto3.client("connect").list_approved_origins` method.
 
 Boto3 documentation:
 [Connect.Client.list_approved_origins](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_approved_origins)
+
+Arguments mapping described in
+[ListApprovedOriginsRequestTypeDef](./type_defs.md#listapprovedoriginsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -943,14 +1183,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListApprovedOriginsResponseTypeDef](./type_defs.md#listapprovedoriginsresponsetypedef).
+[ListApprovedOriginsResponseResponseTypeDef](./type_defs.md#listapprovedoriginsresponseresponsetypedef).
 
 ### list_bots
+
+This API is in preview release for Amazon Connect and is subject to change.
 
 Type annotations for `boto3.client("connect").list_bots` method.
 
 Boto3 documentation:
 [Connect.Client.list_bots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_bots)
+
+Arguments mapping described in
+[ListBotsRequestTypeDef](./type_defs.md#listbotsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -959,14 +1204,21 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns [ListBotsResponseTypeDef](./type_defs.md#listbotsresponsetypedef).
+Returns
+[ListBotsResponseResponseTypeDef](./type_defs.md#listbotsresponseresponsetypedef).
 
 ### list_contact_flows
+
+Provides information about the contact flows for the specified Amazon Connect
+instance.
 
 Type annotations for `boto3.client("connect").list_contact_flows` method.
 
 Boto3 documentation:
 [Connect.Client.list_contact_flows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_contact_flows)
+
+Arguments mapping described in
+[ListContactFlowsRequestTypeDef](./type_defs.md#listcontactflowsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -977,15 +1229,21 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListContactFlowsResponseTypeDef](./type_defs.md#listcontactflowsresponsetypedef).
+[ListContactFlowsResponseResponseTypeDef](./type_defs.md#listcontactflowsresponseresponsetypedef).
 
 ### list_hours_of_operations
+
+Provides information about the hours of operation for the specified Amazon
+Connect instance.
 
 Type annotations for `boto3.client("connect").list_hours_of_operations` method.
 
 Boto3 documentation:
 [Connect.Client.list_hours_of_operations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_hours_of_operations)
 
+Arguments mapping described in
+[ListHoursOfOperationsRequestTypeDef](./type_defs.md#listhoursofoperationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
@@ -993,15 +1251,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListHoursOfOperationsResponseTypeDef](./type_defs.md#listhoursofoperationsresponsetypedef).
+[ListHoursOfOperationsResponseResponseTypeDef](./type_defs.md#listhoursofoperationsresponseresponsetypedef).
 
 ### list_instance_attributes
+
+This API is in preview release for Amazon Connect and is subject to change.
 
 Type annotations for `boto3.client("connect").list_instance_attributes` method.
 
 Boto3 documentation:
 [Connect.Client.list_instance_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_instance_attributes)
 
+Arguments mapping described in
+[ListInstanceAttributesRequestTypeDef](./type_defs.md#listinstanceattributesrequesttypedef).
+
 Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
@@ -1009,15 +1272,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListInstanceAttributesResponseTypeDef](./type_defs.md#listinstanceattributesresponsetypedef).
+[ListInstanceAttributesResponseResponseTypeDef](./type_defs.md#listinstanceattributesresponseresponsetypedef).
 
 ### list_instance_storage_configs
+
+This API is in preview release for Amazon Connect and is subject to change.
 
 Type annotations for `boto3.client("connect").list_instance_storage_configs`
 method.
 
 Boto3 documentation:
 [Connect.Client.list_instance_storage_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_instance_storage_configs)
+
+Arguments mapping described in
+[ListInstanceStorageConfigsRequestTypeDef](./type_defs.md#listinstancestorageconfigsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1029,14 +1297,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListInstanceStorageConfigsResponseTypeDef](./type_defs.md#listinstancestorageconfigsresponsetypedef).
+[ListInstanceStorageConfigsResponseResponseTypeDef](./type_defs.md#listinstancestorageconfigsresponseresponsetypedef).
 
 ### list_instances
+
+This API is in preview release for Amazon Connect and is subject to change.
 
 Type annotations for `boto3.client("connect").list_instances` method.
 
 Boto3 documentation:
 [Connect.Client.list_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_instances)
+
+Arguments mapping described in
+[ListInstancesRequestTypeDef](./type_defs.md#listinstancesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1044,9 +1317,12 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef).
+[ListInstancesResponseResponseTypeDef](./type_defs.md#listinstancesresponseresponsetypedef).
 
 ### list_integration_associations
+
+Provides summary information about the AppIntegration associations for the
+specified Amazon Connect instance.
 
 Type annotations for `boto3.client("connect").list_integration_associations`
 method.
@@ -1054,6 +1330,9 @@ method.
 Boto3 documentation:
 [Connect.Client.list_integration_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_integration_associations)
 
+Arguments mapping described in
+[ListIntegrationAssociationsRequestTypeDef](./type_defs.md#listintegrationassociationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
@@ -1061,15 +1340,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListIntegrationAssociationsResponseTypeDef](./type_defs.md#listintegrationassociationsresponsetypedef).
+[ListIntegrationAssociationsResponseResponseTypeDef](./type_defs.md#listintegrationassociationsresponseresponsetypedef).
 
 ### list_lambda_functions
+
+This API is in preview release for Amazon Connect and is subject to change.
 
 Type annotations for `boto3.client("connect").list_lambda_functions` method.
 
 Boto3 documentation:
 [Connect.Client.list_lambda_functions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_lambda_functions)
 
+Arguments mapping described in
+[ListLambdaFunctionsRequestTypeDef](./type_defs.md#listlambdafunctionsrequesttypedef).
+
 Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
@@ -1077,15 +1361,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListLambdaFunctionsResponseTypeDef](./type_defs.md#listlambdafunctionsresponsetypedef).
+[ListLambdaFunctionsResponseResponseTypeDef](./type_defs.md#listlambdafunctionsresponseresponsetypedef).
 
 ### list_lex_bots
+
+This API is in preview release for Amazon Connect and is subject to change.
 
 Type annotations for `boto3.client("connect").list_lex_bots` method.
 
 Boto3 documentation:
 [Connect.Client.list_lex_bots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_lex_bots)
 
+Arguments mapping described in
+[ListLexBotsRequestTypeDef](./type_defs.md#listlexbotsrequesttypedef).
+
 Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
@@ -1093,14 +1382,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListLexBotsResponseTypeDef](./type_defs.md#listlexbotsresponsetypedef).
+[ListLexBotsResponseResponseTypeDef](./type_defs.md#listlexbotsresponseresponsetypedef).
 
 ### list_phone_numbers
+
+Provides information about the phone numbers for the specified Amazon Connect
+instance.
 
 Type annotations for `boto3.client("connect").list_phone_numbers` method.
 
 Boto3 documentation:
 [Connect.Client.list_phone_numbers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_phone_numbers)
+
+Arguments mapping described in
+[ListPhoneNumbersRequestTypeDef](./type_defs.md#listphonenumbersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1113,14 +1408,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListPhoneNumbersResponseTypeDef](./type_defs.md#listphonenumbersresponsetypedef).
+[ListPhoneNumbersResponseResponseTypeDef](./type_defs.md#listphonenumbersresponseresponsetypedef).
 
 ### list_prompts
+
+Provides information about the prompts for the specified Amazon Connect
+instance.
 
 Type annotations for `boto3.client("connect").list_prompts` method.
 
 Boto3 documentation:
 [Connect.Client.list_prompts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_prompts)
+
+Arguments mapping described in
+[ListPromptsRequestTypeDef](./type_defs.md#listpromptsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1129,15 +1430,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListPromptsResponseTypeDef](./type_defs.md#listpromptsresponsetypedef).
+[ListPromptsResponseResponseTypeDef](./type_defs.md#listpromptsresponseresponsetypedef).
 
 ### list_queue_quick_connects
+
+This API is in preview release for Amazon Connect and is subject to change.
 
 Type annotations for `boto3.client("connect").list_queue_quick_connects`
 method.
 
 Boto3 documentation:
 [Connect.Client.list_queue_quick_connects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_queue_quick_connects)
+
+Arguments mapping described in
+[ListQueueQuickConnectsRequestTypeDef](./type_defs.md#listqueuequickconnectsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1147,14 +1453,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListQueueQuickConnectsResponseTypeDef](./type_defs.md#listqueuequickconnectsresponsetypedef).
+[ListQueueQuickConnectsResponseResponseTypeDef](./type_defs.md#listqueuequickconnectsresponseresponsetypedef).
 
 ### list_queues
+
+Provides information about the queues for the specified Amazon Connect
+instance.
 
 Type annotations for `boto3.client("connect").list_queues` method.
 
 Boto3 documentation:
 [Connect.Client.list_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_queues)
+
+Arguments mapping described in
+[ListQueuesRequestTypeDef](./type_defs.md#listqueuesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1163,14 +1475,21 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns [ListQueuesResponseTypeDef](./type_defs.md#listqueuesresponsetypedef).
+Returns
+[ListQueuesResponseResponseTypeDef](./type_defs.md#listqueuesresponseresponsetypedef).
 
 ### list_quick_connects
+
+Provides information about the quick connects for the specified Amazon Connect
+instance.
 
 Type annotations for `boto3.client("connect").list_quick_connects` method.
 
 Boto3 documentation:
 [Connect.Client.list_quick_connects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_quick_connects)
+
+Arguments mapping described in
+[ListQuickConnectsRequestTypeDef](./type_defs.md#listquickconnectsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1181,15 +1500,20 @@ Keyword-only arguments:
   `List`\[[QuickConnectTypeType](./literals.md#quickconnecttypetype)\]
 
 Returns
-[ListQuickConnectsResponseTypeDef](./type_defs.md#listquickconnectsresponsetypedef).
+[ListQuickConnectsResponseResponseTypeDef](./type_defs.md#listquickconnectsresponseresponsetypedef).
 
 ### list_routing_profile_queues
+
+Lists the queues associated with a routing profile.
 
 Type annotations for `boto3.client("connect").list_routing_profile_queues`
 method.
 
 Boto3 documentation:
 [Connect.Client.list_routing_profile_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_routing_profile_queues)
+
+Arguments mapping described in
+[ListRoutingProfileQueuesRequestTypeDef](./type_defs.md#listroutingprofilequeuesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1199,15 +1523,21 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListRoutingProfileQueuesResponseTypeDef](./type_defs.md#listroutingprofilequeuesresponsetypedef).
+[ListRoutingProfileQueuesResponseResponseTypeDef](./type_defs.md#listroutingprofilequeuesresponseresponsetypedef).
 
 ### list_routing_profiles
+
+Provides summary information about the routing profiles for the specified
+Amazon Connect instance.
 
 Type annotations for `boto3.client("connect").list_routing_profiles` method.
 
 Boto3 documentation:
 [Connect.Client.list_routing_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_routing_profiles)
 
+Arguments mapping described in
+[ListRoutingProfilesRequestTypeDef](./type_defs.md#listroutingprofilesrequesttypedef).
+
 Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
@@ -1215,15 +1545,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListRoutingProfilesResponseTypeDef](./type_defs.md#listroutingprofilesresponsetypedef).
+[ListRoutingProfilesResponseResponseTypeDef](./type_defs.md#listroutingprofilesresponseresponsetypedef).
 
 ### list_security_keys
+
+This API is in preview release for Amazon Connect and is subject to change.
 
 Type annotations for `boto3.client("connect").list_security_keys` method.
 
 Boto3 documentation:
 [Connect.Client.list_security_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_security_keys)
 
+Arguments mapping described in
+[ListSecurityKeysRequestTypeDef](./type_defs.md#listsecuritykeysrequesttypedef).
+
 Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
@@ -1231,15 +1566,21 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListSecurityKeysResponseTypeDef](./type_defs.md#listsecuritykeysresponsetypedef).
+[ListSecurityKeysResponseResponseTypeDef](./type_defs.md#listsecuritykeysresponseresponsetypedef).
 
 ### list_security_profiles
+
+Provides summary information about the security profiles for the specified
+Amazon Connect instance.
 
 Type annotations for `boto3.client("connect").list_security_profiles` method.
 
 Boto3 documentation:
 [Connect.Client.list_security_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_security_profiles)
 
+Arguments mapping described in
+[ListSecurityProfilesRequestTypeDef](./type_defs.md#listsecurityprofilesrequesttypedef).
+
 Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
@@ -1247,28 +1588,38 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListSecurityProfilesResponseTypeDef](./type_defs.md#listsecurityprofilesresponsetypedef).
+[ListSecurityProfilesResponseResponseTypeDef](./type_defs.md#listsecurityprofilesresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Lists the tags for the specified resource.
 
 Type annotations for `boto3.client("connect").list_tags_for_resource` method.
 
 Boto3 documentation:
 [Connect.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### list_use_cases
+
+Lists the use cases.
 
 Type annotations for `boto3.client("connect").list_use_cases` method.
 
 Boto3 documentation:
 [Connect.Client.list_use_cases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_use_cases)
+
+Arguments mapping described in
+[ListUseCasesRequestTypeDef](./type_defs.md#listusecasesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1278,15 +1629,21 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListUseCasesResponseTypeDef](./type_defs.md#listusecasesresponsetypedef).
+[ListUseCasesResponseResponseTypeDef](./type_defs.md#listusecasesresponseresponsetypedef).
 
 ### list_user_hierarchy_groups
+
+Provides summary information about the hierarchy groups for the specified
+Amazon Connect instance.
 
 Type annotations for `boto3.client("connect").list_user_hierarchy_groups`
 method.
 
 Boto3 documentation:
 [Connect.Client.list_user_hierarchy_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_user_hierarchy_groups)
+
+Arguments mapping described in
+[ListUserHierarchyGroupsRequestTypeDef](./type_defs.md#listuserhierarchygroupsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1295,14 +1652,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListUserHierarchyGroupsResponseTypeDef](./type_defs.md#listuserhierarchygroupsresponsetypedef).
+[ListUserHierarchyGroupsResponseResponseTypeDef](./type_defs.md#listuserhierarchygroupsresponseresponsetypedef).
 
 ### list_users
+
+Provides summary information about the users for the specified Amazon Connect
+instance.
 
 Type annotations for `boto3.client("connect").list_users` method.
 
 Boto3 documentation:
 [Connect.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_users)
+
+Arguments mapping described in
+[ListUsersRequestTypeDef](./type_defs.md#listusersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1310,14 +1673,21 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
+Returns
+[ListUsersResponseResponseTypeDef](./type_defs.md#listusersresponseresponsetypedef).
 
 ### resume_contact_recording
+
+When a contact is being recorded, and the recording has been suspended using
+SuspendContactRecording, this API resumes recording the call.
 
 Type annotations for `boto3.client("connect").resume_contact_recording` method.
 
 Boto3 documentation:
 [Connect.Client.resume_contact_recording](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.resume_contact_recording)
+
+Arguments mapping described in
+[ResumeContactRecordingRequestTypeDef](./type_defs.md#resumecontactrecordingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1329,10 +1699,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### start_chat_contact
 
+Initiates a contact flow to start a new chat for the customer.
+
 Type annotations for `boto3.client("connect").start_chat_contact` method.
 
 Boto3 documentation:
 [Connect.Client.start_chat_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_chat_contact)
+
+Arguments mapping described in
+[StartChatContactRequestTypeDef](./type_defs.md#startchatcontactrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1346,14 +1721,19 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns
-[StartChatContactResponseTypeDef](./type_defs.md#startchatcontactresponsetypedef).
+[StartChatContactResponseResponseTypeDef](./type_defs.md#startchatcontactresponseresponsetypedef).
 
 ### start_contact_recording
+
+Starts recording the contact when the agent joins the call.
 
 Type annotations for `boto3.client("connect").start_contact_recording` method.
 
 Boto3 documentation:
 [Connect.Client.start_contact_recording](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_contact_recording)
+
+Arguments mapping described in
+[StartContactRecordingRequestTypeDef](./type_defs.md#startcontactrecordingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1368,11 +1748,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### start_outbound_voice_contact
 
+Places an outbound call to a contact, and then initiates the contact flow.
+
 Type annotations for `boto3.client("connect").start_outbound_voice_contact`
 method.
 
 Boto3 documentation:
 [Connect.Client.start_outbound_voice_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_outbound_voice_contact)
+
+Arguments mapping described in
+[StartOutboundVoiceContactRequestTypeDef](./type_defs.md#startoutboundvoicecontactrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1385,14 +1770,19 @@ Keyword-only arguments:
 - `Attributes`: `Dict`\[`str`, `str`\]
 
 Returns
-[StartOutboundVoiceContactResponseTypeDef](./type_defs.md#startoutboundvoicecontactresponsetypedef).
+[StartOutboundVoiceContactResponseResponseTypeDef](./type_defs.md#startoutboundvoicecontactresponseresponsetypedef).
 
 ### start_task_contact
+
+Initiates a contact flow to start a new task.
 
 Type annotations for `boto3.client("connect").start_task_contact` method.
 
 Boto3 documentation:
 [Connect.Client.start_task_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_task_contact)
+
+Arguments mapping described in
+[StartTaskContactRequestTypeDef](./type_defs.md#starttaskcontactrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1407,14 +1797,19 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns
-[StartTaskContactResponseTypeDef](./type_defs.md#starttaskcontactresponsetypedef).
+[StartTaskContactResponseResponseTypeDef](./type_defs.md#starttaskcontactresponseresponsetypedef).
 
 ### stop_contact
+
+Ends the specified contact.
 
 Type annotations for `boto3.client("connect").stop_contact` method.
 
 Boto3 documentation:
 [Connect.Client.stop_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.stop_contact)
+
+Arguments mapping described in
+[StopContactRequestTypeDef](./type_defs.md#stopcontactrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1425,10 +1820,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### stop_contact_recording
 
+Stops recording a call when a contact is being recorded.
+
 Type annotations for `boto3.client("connect").stop_contact_recording` method.
 
 Boto3 documentation:
 [Connect.Client.stop_contact_recording](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.stop_contact_recording)
+
+Arguments mapping described in
+[StopContactRecordingRequestTypeDef](./type_defs.md#stopcontactrecordingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1440,11 +1840,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### suspend_contact_recording
 
+When a contact is being recorded, this API suspends recording the call.
+
 Type annotations for `boto3.client("connect").suspend_contact_recording`
 method.
 
 Boto3 documentation:
 [Connect.Client.suspend_contact_recording](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.suspend_contact_recording)
+
+Arguments mapping described in
+[SuspendContactRecordingRequestTypeDef](./type_defs.md#suspendcontactrecordingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1456,10 +1861,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### tag_resource
 
+Adds the specified tags to the specified resource.
+
 Type annotations for `boto3.client("connect").tag_resource` method.
 
 Boto3 documentation:
 [Connect.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1468,10 +1878,15 @@ Keyword-only arguments:
 
 ### untag_resource
 
+Removes the specified tags from the specified resource.
+
 Type annotations for `boto3.client("connect").untag_resource` method.
 
 Boto3 documentation:
 [Connect.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1480,11 +1895,17 @@ Keyword-only arguments:
 
 ### update_contact_attributes
 
+Creates or updates user-defined contact attributes associated with the
+specified contact.
+
 Type annotations for `boto3.client("connect").update_contact_attributes`
 method.
 
 Boto3 documentation:
 [Connect.Client.update_contact_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_attributes)
+
+Arguments mapping described in
+[UpdateContactAttributesRequestTypeDef](./type_defs.md#updatecontactattributesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1496,11 +1917,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_contact_flow_content
 
+Updates the specified contact flow.
+
 Type annotations for `boto3.client("connect").update_contact_flow_content`
 method.
 
 Boto3 documentation:
 [Connect.Client.update_contact_flow_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_flow_content)
+
+Arguments mapping described in
+[UpdateContactFlowContentRequestTypeDef](./type_defs.md#updatecontactflowcontentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1510,10 +1936,15 @@ Keyword-only arguments:
 
 ### update_contact_flow_name
 
+The name of the contact flow.
+
 Type annotations for `boto3.client("connect").update_contact_flow_name` method.
 
 Boto3 documentation:
 [Connect.Client.update_contact_flow_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_flow_name)
+
+Arguments mapping described in
+[UpdateContactFlowNameRequestTypeDef](./type_defs.md#updatecontactflownamerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1524,11 +1955,16 @@ Keyword-only arguments:
 
 ### update_instance_attribute
 
+This API is in preview release for Amazon Connect and is subject to change.
+
 Type annotations for `boto3.client("connect").update_instance_attribute`
 method.
 
 Boto3 documentation:
 [Connect.Client.update_instance_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_instance_attribute)
+
+Arguments mapping described in
+[UpdateInstanceAttributeRequestTypeDef](./type_defs.md#updateinstanceattributerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1540,11 +1976,16 @@ Keyword-only arguments:
 
 ### update_instance_storage_config
 
+This API is in preview release for Amazon Connect and is subject to change.
+
 Type annotations for `boto3.client("connect").update_instance_storage_config`
 method.
 
 Boto3 documentation:
 [Connect.Client.update_instance_storage_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_instance_storage_config)
+
+Arguments mapping described in
+[UpdateInstanceStorageConfigRequestTypeDef](./type_defs.md#updateinstancestorageconfigrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1559,11 +2000,16 @@ Keyword-only arguments:
 
 ### update_queue_hours_of_operation
 
+This API is in preview release for Amazon Connect and is subject to change.
+
 Type annotations for `boto3.client("connect").update_queue_hours_of_operation`
 method.
 
 Boto3 documentation:
 [Connect.Client.update_queue_hours_of_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_hours_of_operation)
+
+Arguments mapping described in
+[UpdateQueueHoursOfOperationRequestTypeDef](./type_defs.md#updatequeuehoursofoperationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1573,11 +2019,16 @@ Keyword-only arguments:
 
 ### update_queue_max_contacts
 
+This API is in preview release for Amazon Connect and is subject to change.
+
 Type annotations for `boto3.client("connect").update_queue_max_contacts`
 method.
 
 Boto3 documentation:
 [Connect.Client.update_queue_max_contacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_max_contacts)
+
+Arguments mapping described in
+[UpdateQueueMaxContactsRequestTypeDef](./type_defs.md#updatequeuemaxcontactsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1587,10 +2038,15 @@ Keyword-only arguments:
 
 ### update_queue_name
 
+This API is in preview release for Amazon Connect and is subject to change.
+
 Type annotations for `boto3.client("connect").update_queue_name` method.
 
 Boto3 documentation:
 [Connect.Client.update_queue_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_name)
+
+Arguments mapping described in
+[UpdateQueueNameRequestTypeDef](./type_defs.md#updatequeuenamerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1601,11 +2057,16 @@ Keyword-only arguments:
 
 ### update_queue_outbound_caller_config
 
+This API is in preview release for Amazon Connect and is subject to change.
+
 Type annotations for
 `boto3.client("connect").update_queue_outbound_caller_config` method.
 
 Boto3 documentation:
 [Connect.Client.update_queue_outbound_caller_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_outbound_caller_config)
+
+Arguments mapping described in
+[UpdateQueueOutboundCallerConfigRequestTypeDef](./type_defs.md#updatequeueoutboundcallerconfigrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1617,10 +2078,15 @@ Keyword-only arguments:
 
 ### update_queue_status
 
+This API is in preview release for Amazon Connect and is subject to change.
+
 Type annotations for `boto3.client("connect").update_queue_status` method.
 
 Boto3 documentation:
 [Connect.Client.update_queue_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_status)
+
+Arguments mapping described in
+[UpdateQueueStatusRequestTypeDef](./type_defs.md#updatequeuestatusrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1630,11 +2096,16 @@ Keyword-only arguments:
 
 ### update_quick_connect_config
 
+Updates the configuration settings for the specified quick connect.
+
 Type annotations for `boto3.client("connect").update_quick_connect_config`
 method.
 
 Boto3 documentation:
 [Connect.Client.update_quick_connect_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_quick_connect_config)
+
+Arguments mapping described in
+[UpdateQuickConnectConfigRequestTypeDef](./type_defs.md#updatequickconnectconfigrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1646,11 +2117,16 @@ Keyword-only arguments:
 
 ### update_quick_connect_name
 
+Updates the name and description of a quick connect.
+
 Type annotations for `boto3.client("connect").update_quick_connect_name`
 method.
 
 Boto3 documentation:
 [Connect.Client.update_quick_connect_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_quick_connect_name)
+
+Arguments mapping described in
+[UpdateQuickConnectNameRequestTypeDef](./type_defs.md#updatequickconnectnamerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1661,11 +2137,17 @@ Keyword-only arguments:
 
 ### update_routing_profile_concurrency
 
+Updates the channels that agents can handle in the Contact Control Panel (CCP)
+for a routing profile.
+
 Type annotations for
 `boto3.client("connect").update_routing_profile_concurrency` method.
 
 Boto3 documentation:
 [Connect.Client.update_routing_profile_concurrency](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_routing_profile_concurrency)
+
+Arguments mapping described in
+[UpdateRoutingProfileConcurrencyRequestTypeDef](./type_defs.md#updateroutingprofileconcurrencyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1677,11 +2159,16 @@ Keyword-only arguments:
 
 ### update_routing_profile_default_outbound_queue
 
+Updates the default outbound queue of a routing profile.
+
 Type annotations for
 `boto3.client("connect").update_routing_profile_default_outbound_queue` method.
 
 Boto3 documentation:
 [Connect.Client.update_routing_profile_default_outbound_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_routing_profile_default_outbound_queue)
+
+Arguments mapping described in
+[UpdateRoutingProfileDefaultOutboundQueueRequestTypeDef](./type_defs.md#updateroutingprofiledefaultoutboundqueuerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1691,11 +2178,16 @@ Keyword-only arguments:
 
 ### update_routing_profile_name
 
+Updates the name and description of a routing profile.
+
 Type annotations for `boto3.client("connect").update_routing_profile_name`
 method.
 
 Boto3 documentation:
 [Connect.Client.update_routing_profile_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_routing_profile_name)
+
+Arguments mapping described in
+[UpdateRoutingProfileNameRequestTypeDef](./type_defs.md#updateroutingprofilenamerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1706,11 +2198,16 @@ Keyword-only arguments:
 
 ### update_routing_profile_queues
 
+Updates the properties associated with a set of queues for a routing profile.
+
 Type annotations for `boto3.client("connect").update_routing_profile_queues`
 method.
 
 Boto3 documentation:
 [Connect.Client.update_routing_profile_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_routing_profile_queues)
+
+Arguments mapping described in
+[UpdateRoutingProfileQueuesRequestTypeDef](./type_defs.md#updateroutingprofilequeuesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1722,10 +2219,15 @@ Keyword-only arguments:
 
 ### update_user_hierarchy
 
+Assigns the specified hierarchy group to the specified user.
+
 Type annotations for `boto3.client("connect").update_user_hierarchy` method.
 
 Boto3 documentation:
 [Connect.Client.update_user_hierarchy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_hierarchy)
+
+Arguments mapping described in
+[UpdateUserHierarchyRequestTypeDef](./type_defs.md#updateuserhierarchyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1735,11 +2237,16 @@ Keyword-only arguments:
 
 ### update_user_hierarchy_group_name
 
+Updates the name of the user hierarchy group.
+
 Type annotations for `boto3.client("connect").update_user_hierarchy_group_name`
 method.
 
 Boto3 documentation:
 [Connect.Client.update_user_hierarchy_group_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_hierarchy_group_name)
+
+Arguments mapping described in
+[UpdateUserHierarchyGroupNameRequestTypeDef](./type_defs.md#updateuserhierarchygroupnamerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1749,11 +2256,17 @@ Keyword-only arguments:
 
 ### update_user_hierarchy_structure
 
+Updates the user hierarchy structure: add, remove, and rename user hierarchy
+levels.
+
 Type annotations for `boto3.client("connect").update_user_hierarchy_structure`
 method.
 
 Boto3 documentation:
 [Connect.Client.update_user_hierarchy_structure](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_hierarchy_structure)
+
+Arguments mapping described in
+[UpdateUserHierarchyStructureRequestTypeDef](./type_defs.md#updateuserhierarchystructurerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1764,11 +2277,16 @@ Keyword-only arguments:
 
 ### update_user_identity_info
 
+Updates the identity information for the specified user.
+
 Type annotations for `boto3.client("connect").update_user_identity_info`
 method.
 
 Boto3 documentation:
 [Connect.Client.update_user_identity_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_identity_info)
+
+Arguments mapping described in
+[UpdateUserIdentityInfoRequestTypeDef](./type_defs.md#updateuseridentityinforequesttypedef).
 
 Keyword-only arguments:
 
@@ -1780,10 +2298,15 @@ Keyword-only arguments:
 
 ### update_user_phone_config
 
+Updates the phone configuration settings for the specified user.
+
 Type annotations for `boto3.client("connect").update_user_phone_config` method.
 
 Boto3 documentation:
 [Connect.Client.update_user_phone_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_phone_config)
+
+Arguments mapping described in
+[UpdateUserPhoneConfigRequestTypeDef](./type_defs.md#updateuserphoneconfigrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1794,11 +2317,16 @@ Keyword-only arguments:
 
 ### update_user_routing_profile
 
+Assigns the specified routing profile to the specified user.
+
 Type annotations for `boto3.client("connect").update_user_routing_profile`
 method.
 
 Boto3 documentation:
 [Connect.Client.update_user_routing_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_routing_profile)
+
+Arguments mapping described in
+[UpdateUserRoutingProfileRequestTypeDef](./type_defs.md#updateuserroutingprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1808,11 +2336,16 @@ Keyword-only arguments:
 
 ### update_user_security_profiles
 
+Assigns the specified security profiles to the specified user.
+
 Type annotations for `boto3.client("connect").update_user_security_profiles`
 method.
 
 Boto3 documentation:
 [Connect.Client.update_user_security_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_security_profiles)
+
+Arguments mapping described in
+[UpdateUserSecurityProfilesRequestTypeDef](./type_defs.md#updateusersecurityprofilesrequesttypedef).
 
 Keyword-only arguments:
 

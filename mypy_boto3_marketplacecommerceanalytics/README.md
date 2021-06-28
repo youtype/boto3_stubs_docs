@@ -64,8 +64,11 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_marketplacecommerceanalytics.type_defs import GenerateDataSetResultTypeDef, ...
+from mypy_boto3_marketplacecommerceanalytics.type_defs import GenerateDataSetRequestTypeDef, ...
 ```
 
-- [GenerateDataSetResultTypeDef](./type_defs.md#generatedatasetresulttypedef)
-- [StartSupportDataExportResultTypeDef](./type_defs.md#startsupportdataexportresulttypedef)
+- [GenerateDataSetRequestTypeDef](./type_defs.md#generatedatasetrequesttypedef)
+- [GenerateDataSetResultResponseTypeDef](./type_defs.md#generatedatasetresultresponsetypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [StartSupportDataExportRequestTypeDef](./type_defs.md#startsupportdataexportrequesttypedef)
+- [StartSupportDataExportResultResponseTypeDef](./type_defs.md#startsupportdataexportresultresponsetypedef)

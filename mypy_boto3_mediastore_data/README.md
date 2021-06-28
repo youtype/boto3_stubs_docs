@@ -87,12 +87,18 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_mediastore_data.type_defs import DescribeObjectResponseTypeDef, ...
+from mypy_boto3_mediastore_data.type_defs import DeleteObjectRequestTypeDef, ...
 ```
 
-- [DescribeObjectResponseTypeDef](./type_defs.md#describeobjectresponsetypedef)
-- [GetObjectResponseTypeDef](./type_defs.md#getobjectresponsetypedef)
+- [DeleteObjectRequestTypeDef](./type_defs.md#deleteobjectrequesttypedef)
+- [DescribeObjectRequestTypeDef](./type_defs.md#describeobjectrequesttypedef)
+- [DescribeObjectResponseResponseTypeDef](./type_defs.md#describeobjectresponseresponsetypedef)
+- [GetObjectRequestTypeDef](./type_defs.md#getobjectrequesttypedef)
+- [GetObjectResponseResponseTypeDef](./type_defs.md#getobjectresponseresponsetypedef)
 - [ItemTypeDef](./type_defs.md#itemtypedef)
-- [ListItemsResponseTypeDef](./type_defs.md#listitemsresponsetypedef)
+- [ListItemsRequestTypeDef](./type_defs.md#listitemsrequesttypedef)
+- [ListItemsResponseResponseTypeDef](./type_defs.md#listitemsresponseresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
-- [PutObjectResponseTypeDef](./type_defs.md#putobjectresponsetypedef)
+- [PutObjectRequestTypeDef](./type_defs.md#putobjectrequesttypedef)
+- [PutObjectResponseResponseTypeDef](./type_defs.md#putobjectresponseresponsetypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

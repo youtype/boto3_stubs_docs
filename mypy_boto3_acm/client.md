@@ -83,10 +83,15 @@ Exceptions:
 
 ### add_tags_to_certificate
 
+Adds one or more tags to an ACM certificate.
+
 Type annotations for `boto3.client("acm").add_tags_to_certificate` method.
 
 Boto3 documentation:
 [ACM.Client.add_tags_to_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.add_tags_to_certificate)
+
+Arguments mapping described in
+[AddTagsToCertificateRequestTypeDef](./type_defs.md#addtagstocertificaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -94,6 +99,8 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("acm").can_paginate` method.
 
@@ -108,10 +115,15 @@ Returns `bool`.
 
 ### delete_certificate
 
+Deletes a certificate and its associated private key.
+
 Type annotations for `boto3.client("acm").delete_certificate` method.
 
 Boto3 documentation:
 [ACM.Client.delete_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.delete_certificate)
+
+Arguments mapping described in
+[DeleteCertificateRequestTypeDef](./type_defs.md#deletecertificaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -119,24 +131,35 @@ Keyword-only arguments:
 
 ### describe_certificate
 
+Returns detailed metadata about the specified ACM certificate.
+
 Type annotations for `boto3.client("acm").describe_certificate` method.
 
 Boto3 documentation:
 [ACM.Client.describe_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.describe_certificate)
+
+Arguments mapping described in
+[DescribeCertificateRequestTypeDef](./type_defs.md#describecertificaterequesttypedef).
 
 Keyword-only arguments:
 
 - `CertificateArn`: `str` *(required)*
 
 Returns
-[DescribeCertificateResponseTypeDef](./type_defs.md#describecertificateresponsetypedef).
+[DescribeCertificateResponseResponseTypeDef](./type_defs.md#describecertificateresponseresponsetypedef).
 
 ### export_certificate
+
+Exports a private certificate issued by a private certificate authority (CA)
+for use anywhere.
 
 Type annotations for `boto3.client("acm").export_certificate` method.
 
 Boto3 documentation:
 [ACM.Client.export_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.export_certificate)
+
+Arguments mapping described in
+[ExportCertificateRequestTypeDef](./type_defs.md#exportcertificaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -145,9 +168,11 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[ExportCertificateResponseTypeDef](./type_defs.md#exportcertificateresponsetypedef).
+[ExportCertificateResponseResponseTypeDef](./type_defs.md#exportcertificateresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("acm").generate_presigned_url` method.
 
@@ -165,34 +190,47 @@ Returns `str`.
 
 ### get_account_configuration
 
+Returns the account configuration options associated with an AWS account.
+
 Type annotations for `boto3.client("acm").get_account_configuration` method.
 
 Boto3 documentation:
 [ACM.Client.get_account_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.get_account_configuration)
 
 Returns
-[GetAccountConfigurationResponseTypeDef](./type_defs.md#getaccountconfigurationresponsetypedef).
+[GetAccountConfigurationResponseResponseTypeDef](./type_defs.md#getaccountconfigurationresponseresponsetypedef).
 
 ### get_certificate
+
+Retrieves an Amazon-issued certificate and its certificate chain.
 
 Type annotations for `boto3.client("acm").get_certificate` method.
 
 Boto3 documentation:
 [ACM.Client.get_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.get_certificate)
 
+Arguments mapping described in
+[GetCertificateRequestTypeDef](./type_defs.md#getcertificaterequesttypedef).
+
 Keyword-only arguments:
 
 - `CertificateArn`: `str` *(required)*
 
 Returns
-[GetCertificateResponseTypeDef](./type_defs.md#getcertificateresponsetypedef).
+[GetCertificateResponseResponseTypeDef](./type_defs.md#getcertificateresponseresponsetypedef).
 
 ### import_certificate
+
+Imports a certificate into AWS Certificate Manager (ACM) to use with services
+that are integrated with ACM.
 
 Type annotations for `boto3.client("acm").import_certificate` method.
 
 Boto3 documentation:
 [ACM.Client.import_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.import_certificate)
+
+Arguments mapping described in
+[ImportCertificateRequestTypeDef](./type_defs.md#importcertificaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -205,14 +243,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[ImportCertificateResponseTypeDef](./type_defs.md#importcertificateresponsetypedef).
+[ImportCertificateResponseResponseTypeDef](./type_defs.md#importcertificateresponseresponsetypedef).
 
 ### list_certificates
+
+Retrieves a list of certificate ARNs and domain names.
 
 Type annotations for `boto3.client("acm").list_certificates` method.
 
 Boto3 documentation:
 [ACM.Client.list_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.list_certificates)
+
+Arguments mapping described in
+[ListCertificatesRequestTypeDef](./type_defs.md#listcertificatesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -223,28 +266,38 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListCertificatesResponseTypeDef](./type_defs.md#listcertificatesresponsetypedef).
+[ListCertificatesResponseResponseTypeDef](./type_defs.md#listcertificatesresponseresponsetypedef).
 
 ### list_tags_for_certificate
+
+Lists the tags that have been applied to the ACM certificate.
 
 Type annotations for `boto3.client("acm").list_tags_for_certificate` method.
 
 Boto3 documentation:
 [ACM.Client.list_tags_for_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.list_tags_for_certificate)
 
+Arguments mapping described in
+[ListTagsForCertificateRequestTypeDef](./type_defs.md#listtagsforcertificaterequesttypedef).
+
 Keyword-only arguments:
 
 - `CertificateArn`: `str` *(required)*
 
 Returns
-[ListTagsForCertificateResponseTypeDef](./type_defs.md#listtagsforcertificateresponsetypedef).
+[ListTagsForCertificateResponseResponseTypeDef](./type_defs.md#listtagsforcertificateresponseresponsetypedef).
 
 ### put_account_configuration
+
+Adds or modifies account-level configurations in ACM.
 
 Type annotations for `boto3.client("acm").put_account_configuration` method.
 
 Boto3 documentation:
 [ACM.Client.put_account_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.put_account_configuration)
+
+Arguments mapping described in
+[PutAccountConfigurationRequestTypeDef](./type_defs.md#putaccountconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -254,10 +307,15 @@ Keyword-only arguments:
 
 ### remove_tags_from_certificate
 
+Remove one or more tags from an ACM certificate.
+
 Type annotations for `boto3.client("acm").remove_tags_from_certificate` method.
 
 Boto3 documentation:
 [ACM.Client.remove_tags_from_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.remove_tags_from_certificate)
+
+Arguments mapping described in
+[RemoveTagsFromCertificateRequestTypeDef](./type_defs.md#removetagsfromcertificaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -266,10 +324,15 @@ Keyword-only arguments:
 
 ### renew_certificate
 
+Renews an eligible ACM certificate.
+
 Type annotations for `boto3.client("acm").renew_certificate` method.
 
 Boto3 documentation:
 [ACM.Client.renew_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.renew_certificate)
+
+Arguments mapping described in
+[RenewCertificateRequestTypeDef](./type_defs.md#renewcertificaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -277,10 +340,15 @@ Keyword-only arguments:
 
 ### request_certificate
 
+Requests an ACM certificate for use with other AWS services.
+
 Type annotations for `boto3.client("acm").request_certificate` method.
 
 Boto3 documentation:
 [ACM.Client.request_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.request_certificate)
+
+Arguments mapping described in
+[RequestCertificateRequestTypeDef](./type_defs.md#requestcertificaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -297,14 +365,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[RequestCertificateResponseTypeDef](./type_defs.md#requestcertificateresponsetypedef).
+[RequestCertificateResponseResponseTypeDef](./type_defs.md#requestcertificateresponseresponsetypedef).
 
 ### resend_validation_email
+
+Resends the email that requests domain ownership validation.
 
 Type annotations for `boto3.client("acm").resend_validation_email` method.
 
 Boto3 documentation:
 [ACM.Client.resend_validation_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.resend_validation_email)
+
+Arguments mapping described in
+[ResendValidationEmailRequestTypeDef](./type_defs.md#resendvalidationemailrequesttypedef).
 
 Keyword-only arguments:
 
@@ -314,10 +387,15 @@ Keyword-only arguments:
 
 ### update_certificate_options
 
+Updates a certificate.
+
 Type annotations for `boto3.client("acm").update_certificate_options` method.
 
 Boto3 documentation:
 [ACM.Client.update_certificate_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.update_certificate_options)
+
+Arguments mapping described in
+[UpdateCertificateOptionsRequestTypeDef](./type_defs.md#updatecertificateoptionsrequesttypedef).
 
 Keyword-only arguments:
 

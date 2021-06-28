@@ -8,50 +8,92 @@ type annotations stubs module
 [mypy_boto3_route53domains](https://pypi.org/project/mypy-boto3-route53domains/).
 
 - [Typed dictionaries for boto3 Route53Domains module](#typed-dictionaries-for-boto3-route53domains-module)
-  - [AcceptDomainTransferFromAnotherAwsAccountResponseTypeDef](#acceptdomaintransferfromanotherawsaccountresponsetypedef)
+  - [AcceptDomainTransferFromAnotherAwsAccountRequestTypeDef](#acceptdomaintransferfromanotherawsaccountrequesttypedef)
+  - [AcceptDomainTransferFromAnotherAwsAccountResponseResponseTypeDef](#acceptdomaintransferfromanotherawsaccountresponseresponsetypedef)
   - [BillingRecordTypeDef](#billingrecordtypedef)
-  - [CancelDomainTransferToAnotherAwsAccountResponseTypeDef](#canceldomaintransfertoanotherawsaccountresponsetypedef)
-  - [CheckDomainAvailabilityResponseTypeDef](#checkdomainavailabilityresponsetypedef)
-  - [CheckDomainTransferabilityResponseTypeDef](#checkdomaintransferabilityresponsetypedef)
+  - [CancelDomainTransferToAnotherAwsAccountRequestTypeDef](#canceldomaintransfertoanotherawsaccountrequesttypedef)
+  - [CancelDomainTransferToAnotherAwsAccountResponseResponseTypeDef](#canceldomaintransfertoanotherawsaccountresponseresponsetypedef)
+  - [CheckDomainAvailabilityRequestTypeDef](#checkdomainavailabilityrequesttypedef)
+  - [CheckDomainAvailabilityResponseResponseTypeDef](#checkdomainavailabilityresponseresponsetypedef)
+  - [CheckDomainTransferabilityRequestTypeDef](#checkdomaintransferabilityrequesttypedef)
+  - [CheckDomainTransferabilityResponseResponseTypeDef](#checkdomaintransferabilityresponseresponsetypedef)
   - [ContactDetailTypeDef](#contactdetailtypedef)
-  - [DisableDomainTransferLockResponseTypeDef](#disabledomaintransferlockresponsetypedef)
+  - [DeleteTagsForDomainRequestTypeDef](#deletetagsfordomainrequesttypedef)
+  - [DisableDomainAutoRenewRequestTypeDef](#disabledomainautorenewrequesttypedef)
+  - [DisableDomainTransferLockRequestTypeDef](#disabledomaintransferlockrequesttypedef)
+  - [DisableDomainTransferLockResponseResponseTypeDef](#disabledomaintransferlockresponseresponsetypedef)
   - [DomainSuggestionTypeDef](#domainsuggestiontypedef)
   - [DomainSummaryTypeDef](#domainsummarytypedef)
   - [DomainTransferabilityTypeDef](#domaintransferabilitytypedef)
-  - [EnableDomainTransferLockResponseTypeDef](#enabledomaintransferlockresponsetypedef)
+  - [EnableDomainAutoRenewRequestTypeDef](#enabledomainautorenewrequesttypedef)
+  - [EnableDomainTransferLockRequestTypeDef](#enabledomaintransferlockrequesttypedef)
+  - [EnableDomainTransferLockResponseResponseTypeDef](#enabledomaintransferlockresponseresponsetypedef)
   - [ExtraParamTypeDef](#extraparamtypedef)
-  - [GetContactReachabilityStatusResponseTypeDef](#getcontactreachabilitystatusresponsetypedef)
-  - [GetDomainDetailResponseTypeDef](#getdomaindetailresponsetypedef)
-  - [GetDomainSuggestionsResponseTypeDef](#getdomainsuggestionsresponsetypedef)
-  - [GetOperationDetailResponseTypeDef](#getoperationdetailresponsetypedef)
-  - [ListDomainsResponseTypeDef](#listdomainsresponsetypedef)
-  - [ListOperationsResponseTypeDef](#listoperationsresponsetypedef)
-  - [ListTagsForDomainResponseTypeDef](#listtagsfordomainresponsetypedef)
+  - [GetContactReachabilityStatusRequestTypeDef](#getcontactreachabilitystatusrequesttypedef)
+  - [GetContactReachabilityStatusResponseResponseTypeDef](#getcontactreachabilitystatusresponseresponsetypedef)
+  - [GetDomainDetailRequestTypeDef](#getdomaindetailrequesttypedef)
+  - [GetDomainDetailResponseResponseTypeDef](#getdomaindetailresponseresponsetypedef)
+  - [GetDomainSuggestionsRequestTypeDef](#getdomainsuggestionsrequesttypedef)
+  - [GetDomainSuggestionsResponseResponseTypeDef](#getdomainsuggestionsresponseresponsetypedef)
+  - [GetOperationDetailRequestTypeDef](#getoperationdetailrequesttypedef)
+  - [GetOperationDetailResponseResponseTypeDef](#getoperationdetailresponseresponsetypedef)
+  - [ListDomainsRequestTypeDef](#listdomainsrequesttypedef)
+  - [ListDomainsResponseResponseTypeDef](#listdomainsresponseresponsetypedef)
+  - [ListOperationsRequestTypeDef](#listoperationsrequesttypedef)
+  - [ListOperationsResponseResponseTypeDef](#listoperationsresponseresponsetypedef)
+  - [ListTagsForDomainRequestTypeDef](#listtagsfordomainrequesttypedef)
+  - [ListTagsForDomainResponseResponseTypeDef](#listtagsfordomainresponseresponsetypedef)
   - [NameserverTypeDef](#nameservertypedef)
   - [OperationSummaryTypeDef](#operationsummarytypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [RegisterDomainResponseTypeDef](#registerdomainresponsetypedef)
-  - [RejectDomainTransferFromAnotherAwsAccountResponseTypeDef](#rejectdomaintransferfromanotherawsaccountresponsetypedef)
-  - [RenewDomainResponseTypeDef](#renewdomainresponsetypedef)
-  - [ResendContactReachabilityEmailResponseTypeDef](#resendcontactreachabilityemailresponsetypedef)
-  - [RetrieveDomainAuthCodeResponseTypeDef](#retrievedomainauthcoderesponsetypedef)
+  - [RegisterDomainRequestTypeDef](#registerdomainrequesttypedef)
+  - [RegisterDomainResponseResponseTypeDef](#registerdomainresponseresponsetypedef)
+  - [RejectDomainTransferFromAnotherAwsAccountRequestTypeDef](#rejectdomaintransferfromanotherawsaccountrequesttypedef)
+  - [RejectDomainTransferFromAnotherAwsAccountResponseResponseTypeDef](#rejectdomaintransferfromanotherawsaccountresponseresponsetypedef)
+  - [RenewDomainRequestTypeDef](#renewdomainrequesttypedef)
+  - [RenewDomainResponseResponseTypeDef](#renewdomainresponseresponsetypedef)
+  - [ResendContactReachabilityEmailRequestTypeDef](#resendcontactreachabilityemailrequesttypedef)
+  - [ResendContactReachabilityEmailResponseResponseTypeDef](#resendcontactreachabilityemailresponseresponsetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [RetrieveDomainAuthCodeRequestTypeDef](#retrievedomainauthcoderequesttypedef)
+  - [RetrieveDomainAuthCodeResponseResponseTypeDef](#retrievedomainauthcoderesponseresponsetypedef)
   - [TagTypeDef](#tagtypedef)
-  - [TransferDomainResponseTypeDef](#transferdomainresponsetypedef)
-  - [TransferDomainToAnotherAwsAccountResponseTypeDef](#transferdomaintoanotherawsaccountresponsetypedef)
-  - [UpdateDomainContactPrivacyResponseTypeDef](#updatedomaincontactprivacyresponsetypedef)
-  - [UpdateDomainContactResponseTypeDef](#updatedomaincontactresponsetypedef)
-  - [UpdateDomainNameserversResponseTypeDef](#updatedomainnameserversresponsetypedef)
-  - [ViewBillingResponseTypeDef](#viewbillingresponsetypedef)
+  - [TransferDomainRequestTypeDef](#transferdomainrequesttypedef)
+  - [TransferDomainResponseResponseTypeDef](#transferdomainresponseresponsetypedef)
+  - [TransferDomainToAnotherAwsAccountRequestTypeDef](#transferdomaintoanotherawsaccountrequesttypedef)
+  - [TransferDomainToAnotherAwsAccountResponseResponseTypeDef](#transferdomaintoanotherawsaccountresponseresponsetypedef)
+  - [UpdateDomainContactPrivacyRequestTypeDef](#updatedomaincontactprivacyrequesttypedef)
+  - [UpdateDomainContactPrivacyResponseResponseTypeDef](#updatedomaincontactprivacyresponseresponsetypedef)
+  - [UpdateDomainContactRequestTypeDef](#updatedomaincontactrequesttypedef)
+  - [UpdateDomainContactResponseResponseTypeDef](#updatedomaincontactresponseresponsetypedef)
+  - [UpdateDomainNameserversRequestTypeDef](#updatedomainnameserversrequesttypedef)
+  - [UpdateDomainNameserversResponseResponseTypeDef](#updatedomainnameserversresponseresponsetypedef)
+  - [UpdateTagsForDomainRequestTypeDef](#updatetagsfordomainrequesttypedef)
+  - [ViewBillingRequestTypeDef](#viewbillingrequesttypedef)
+  - [ViewBillingResponseResponseTypeDef](#viewbillingresponseresponsetypedef)
 
-## AcceptDomainTransferFromAnotherAwsAccountResponseTypeDef
+## AcceptDomainTransferFromAnotherAwsAccountRequestTypeDef
 
 ```python
-from mypy_boto3_route53domains.type_defs import AcceptDomainTransferFromAnotherAwsAccountResponseTypeDef
+from mypy_boto3_route53domains.type_defs import AcceptDomainTransferFromAnotherAwsAccountRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DomainName`: `str`
+- `Password`: `str`
+
+## AcceptDomainTransferFromAnotherAwsAccountResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import AcceptDomainTransferFromAnotherAwsAccountResponseResponseTypeDef
+```
+
+Required fields:
 
 - `OperationId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## BillingRecordTypeDef
 
@@ -67,37 +109,81 @@ Optional fields:
 - `BillDate`: `datetime`
 - `Price`: `float`
 
-## CancelDomainTransferToAnotherAwsAccountResponseTypeDef
+## CancelDomainTransferToAnotherAwsAccountRequestTypeDef
 
 ```python
-from mypy_boto3_route53domains.type_defs import CancelDomainTransferToAnotherAwsAccountResponseTypeDef
+from mypy_boto3_route53domains.type_defs import CancelDomainTransferToAnotherAwsAccountRequestTypeDef
 ```
+
+Required fields:
+
+- `DomainName`: `str`
+
+## CancelDomainTransferToAnotherAwsAccountResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import CancelDomainTransferToAnotherAwsAccountResponseResponseTypeDef
+```
+
+Required fields:
+
+- `OperationId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CheckDomainAvailabilityRequestTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import CheckDomainAvailabilityRequestTypeDef
+```
+
+Required fields:
+
+- `DomainName`: `str`
 
 Optional fields:
 
-- `OperationId`: `str`
+- `IdnLangCode`: `str`
 
-## CheckDomainAvailabilityResponseTypeDef
+## CheckDomainAvailabilityResponseResponseTypeDef
 
 ```python
-from mypy_boto3_route53domains.type_defs import CheckDomainAvailabilityResponseTypeDef
+from mypy_boto3_route53domains.type_defs import CheckDomainAvailabilityResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `Availability`:
   [DomainAvailabilityType](./literals.md#domainavailabilitytype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CheckDomainTransferabilityResponseTypeDef
+## CheckDomainTransferabilityRequestTypeDef
 
 ```python
-from mypy_boto3_route53domains.type_defs import CheckDomainTransferabilityResponseTypeDef
+from mypy_boto3_route53domains.type_defs import CheckDomainTransferabilityRequestTypeDef
+```
+
+Required fields:
+
+- `DomainName`: `str`
+
+Optional fields:
+
+- `AuthCode`: `str`
+
+## CheckDomainTransferabilityResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import CheckDomainTransferabilityResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `Transferability`:
   [DomainTransferabilityTypeDef](./type_defs.md#domaintransferabilitytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ContactDetailTypeDef
 
@@ -123,15 +209,48 @@ Optional fields:
 - `ExtraParams`:
   `List`\[[ExtraParamTypeDef](./type_defs.md#extraparamtypedef)\]
 
-## DisableDomainTransferLockResponseTypeDef
+## DeleteTagsForDomainRequestTypeDef
 
 ```python
-from mypy_boto3_route53domains.type_defs import DisableDomainTransferLockResponseTypeDef
+from mypy_boto3_route53domains.type_defs import DeleteTagsForDomainRequestTypeDef
+```
+
+Required fields:
+
+- `DomainName`: `str`
+- `TagsToDelete`: `List`\[`str`\]
+
+## DisableDomainAutoRenewRequestTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import DisableDomainAutoRenewRequestTypeDef
+```
+
+Required fields:
+
+- `DomainName`: `str`
+
+## DisableDomainTransferLockRequestTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import DisableDomainTransferLockRequestTypeDef
+```
+
+Required fields:
+
+- `DomainName`: `str`
+
+## DisableDomainTransferLockResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import DisableDomainTransferLockResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `OperationId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DomainSuggestionTypeDef
 
@@ -170,15 +289,37 @@ Optional fields:
 
 - `Transferable`: [TransferableType](./literals.md#transferabletype)
 
-## EnableDomainTransferLockResponseTypeDef
+## EnableDomainAutoRenewRequestTypeDef
 
 ```python
-from mypy_boto3_route53domains.type_defs import EnableDomainTransferLockResponseTypeDef
+from mypy_boto3_route53domains.type_defs import EnableDomainAutoRenewRequestTypeDef
+```
+
+Required fields:
+
+- `DomainName`: `str`
+
+## EnableDomainTransferLockRequestTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import EnableDomainTransferLockRequestTypeDef
+```
+
+Required fields:
+
+- `DomainName`: `str`
+
+## EnableDomainTransferLockResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import EnableDomainTransferLockResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `OperationId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ExtraParamTypeDef
 
@@ -191,21 +332,43 @@ Required fields:
 - `Name`: [ExtraParamNameType](./literals.md#extraparamnametype)
 - `Value`: `str`
 
-## GetContactReachabilityStatusResponseTypeDef
+## GetContactReachabilityStatusRequestTypeDef
 
 ```python
-from mypy_boto3_route53domains.type_defs import GetContactReachabilityStatusResponseTypeDef
+from mypy_boto3_route53domains.type_defs import GetContactReachabilityStatusRequestTypeDef
 ```
 
 Optional fields:
 
 - `domainName`: `str`
-- `status`: [ReachabilityStatusType](./literals.md#reachabilitystatustype)
 
-## GetDomainDetailResponseTypeDef
+## GetContactReachabilityStatusResponseResponseTypeDef
 
 ```python
-from mypy_boto3_route53domains.type_defs import GetDomainDetailResponseTypeDef
+from mypy_boto3_route53domains.type_defs import GetContactReachabilityStatusResponseResponseTypeDef
+```
+
+Required fields:
+
+- `domainName`: `str`
+- `status`: [ReachabilityStatusType](./literals.md#reachabilitystatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetDomainDetailRequestTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import GetDomainDetailRequestTypeDef
+```
+
+Required fields:
+
+- `DomainName`: `str`
+
+## GetDomainDetailResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import GetDomainDetailResponseResponseTypeDef
 ```
 
 Required fields:
@@ -213,14 +376,11 @@ Required fields:
 - `DomainName`: `str`
 - `Nameservers`:
   `List`\[[NameserverTypeDef](./type_defs.md#nameservertypedef)\]
+- `AutoRenew`: `bool`
 - `AdminContact`: [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
 - `RegistrantContact`:
   [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
 - `TechContact`: [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
-
-Optional fields:
-
-- `AutoRenew`: `bool`
 - `AdminPrivacy`: `bool`
 - `RegistrantPrivacy`: `bool`
 - `TechPrivacy`: `bool`
@@ -236,25 +396,51 @@ Optional fields:
 - `Reseller`: `str`
 - `DnsSec`: `str`
 - `StatusList`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDomainSuggestionsResponseTypeDef
+## GetDomainSuggestionsRequestTypeDef
 
 ```python
-from mypy_boto3_route53domains.type_defs import GetDomainSuggestionsResponseTypeDef
+from mypy_boto3_route53domains.type_defs import GetDomainSuggestionsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DomainName`: `str`
+- `SuggestionCount`: `int`
+- `OnlyAvailable`: `bool`
+
+## GetDomainSuggestionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import GetDomainSuggestionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `SuggestionsList`:
   `List`\[[DomainSuggestionTypeDef](./type_defs.md#domainsuggestiontypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetOperationDetailResponseTypeDef
+## GetOperationDetailRequestTypeDef
 
 ```python
-from mypy_boto3_route53domains.type_defs import GetOperationDetailResponseTypeDef
+from mypy_boto3_route53domains.type_defs import GetOperationDetailRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `OperationId`: `str`
+
+## GetOperationDetailResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import GetOperationDetailResponseResponseTypeDef
+```
+
+Required fields:
 
 - `OperationId`: `str`
 - `Status`: [OperationStatusType](./literals.md#operationstatustype)
@@ -262,46 +448,81 @@ Optional fields:
 - `DomainName`: `str`
 - `Type`: [OperationTypeType](./literals.md#operationtypetype)
 - `SubmittedDate`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDomainsResponseTypeDef
+## ListDomainsRequestTypeDef
 
 ```python
-from mypy_boto3_route53domains.type_defs import ListDomainsResponseTypeDef
+from mypy_boto3_route53domains.type_defs import ListDomainsRequestTypeDef
+```
+
+Optional fields:
+
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+## ListDomainsResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import ListDomainsResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `Domains`:
   `List`\[[DomainSummaryTypeDef](./type_defs.md#domainsummarytypedef)\]
+- `NextPageMarker`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListOperationsRequestTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import ListOperationsRequestTypeDef
+```
 
 Optional fields:
 
-- `NextPageMarker`: `str`
+- `SubmittedSince`: `Union`\[`datetime`, `str`\]
+- `Marker`: `str`
+- `MaxItems`: `int`
 
-## ListOperationsResponseTypeDef
+## ListOperationsResponseResponseTypeDef
 
 ```python
-from mypy_boto3_route53domains.type_defs import ListOperationsResponseTypeDef
+from mypy_boto3_route53domains.type_defs import ListOperationsResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `Operations`:
   `List`\[[OperationSummaryTypeDef](./type_defs.md#operationsummarytypedef)\]
-
-Optional fields:
-
 - `NextPageMarker`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForDomainResponseTypeDef
+## ListTagsForDomainRequestTypeDef
 
 ```python
-from mypy_boto3_route53domains.type_defs import ListTagsForDomainResponseTypeDef
+from mypy_boto3_route53domains.type_defs import ListTagsForDomainRequestTypeDef
+```
+
+Required fields:
+
+- `DomainName`: `str`
+
+## ListTagsForDomainResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import ListTagsForDomainResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## NameserverTypeDef
 
@@ -342,57 +563,149 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## RegisterDomainResponseTypeDef
+## RegisterDomainRequestTypeDef
 
 ```python
-from mypy_boto3_route53domains.type_defs import RegisterDomainResponseTypeDef
+from mypy_boto3_route53domains.type_defs import RegisterDomainRequestTypeDef
 ```
 
 Required fields:
 
-- `OperationId`: `str`
-
-## RejectDomainTransferFromAnotherAwsAccountResponseTypeDef
-
-```python
-from mypy_boto3_route53domains.type_defs import RejectDomainTransferFromAnotherAwsAccountResponseTypeDef
-```
+- `DomainName`: `str`
+- `DurationInYears`: `int`
+- `AdminContact`: [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
+- `RegistrantContact`:
+  [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
+- `TechContact`: [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
 
 Optional fields:
 
-- `OperationId`: `str`
+- `IdnLangCode`: `str`
+- `AutoRenew`: `bool`
+- `PrivacyProtectAdminContact`: `bool`
+- `PrivacyProtectRegistrantContact`: `bool`
+- `PrivacyProtectTechContact`: `bool`
 
-## RenewDomainResponseTypeDef
+## RegisterDomainResponseResponseTypeDef
 
 ```python
-from mypy_boto3_route53domains.type_defs import RenewDomainResponseTypeDef
+from mypy_boto3_route53domains.type_defs import RegisterDomainResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `OperationId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ResendContactReachabilityEmailResponseTypeDef
+## RejectDomainTransferFromAnotherAwsAccountRequestTypeDef
 
 ```python
-from mypy_boto3_route53domains.type_defs import ResendContactReachabilityEmailResponseTypeDef
+from mypy_boto3_route53domains.type_defs import RejectDomainTransferFromAnotherAwsAccountRequestTypeDef
+```
+
+Required fields:
+
+- `DomainName`: `str`
+
+## RejectDomainTransferFromAnotherAwsAccountResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import RejectDomainTransferFromAnotherAwsAccountResponseResponseTypeDef
+```
+
+Required fields:
+
+- `OperationId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## RenewDomainRequestTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import RenewDomainRequestTypeDef
+```
+
+Required fields:
+
+- `DomainName`: `str`
+- `CurrentExpiryYear`: `int`
+
+Optional fields:
+
+- `DurationInYears`: `int`
+
+## RenewDomainResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import RenewDomainResponseResponseTypeDef
+```
+
+Required fields:
+
+- `OperationId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ResendContactReachabilityEmailRequestTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import ResendContactReachabilityEmailRequestTypeDef
 ```
 
 Optional fields:
 
 - `domainName`: `str`
-- `emailAddress`: `str`
-- `isAlreadyVerified`: `bool`
 
-## RetrieveDomainAuthCodeResponseTypeDef
+## ResendContactReachabilityEmailResponseResponseTypeDef
 
 ```python
-from mypy_boto3_route53domains.type_defs import RetrieveDomainAuthCodeResponseTypeDef
+from mypy_boto3_route53domains.type_defs import ResendContactReachabilityEmailResponseResponseTypeDef
+```
+
+Required fields:
+
+- `domainName`: `str`
+- `emailAddress`: `str`
+- `isAlreadyVerified`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## RetrieveDomainAuthCodeRequestTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import RetrieveDomainAuthCodeRequestTypeDef
+```
+
+Required fields:
+
+- `DomainName`: `str`
+
+## RetrieveDomainAuthCodeResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import RetrieveDomainAuthCodeResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `AuthCode`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## TagTypeDef
 
@@ -405,65 +718,190 @@ Optional fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## TransferDomainResponseTypeDef
+## TransferDomainRequestTypeDef
 
 ```python
-from mypy_boto3_route53domains.type_defs import TransferDomainResponseTypeDef
+from mypy_boto3_route53domains.type_defs import TransferDomainRequestTypeDef
+```
+
+Required fields:
+
+- `DomainName`: `str`
+- `DurationInYears`: `int`
+- `AdminContact`: [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
+- `RegistrantContact`:
+  [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
+- `TechContact`: [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
+
+Optional fields:
+
+- `IdnLangCode`: `str`
+- `Nameservers`:
+  `List`\[[NameserverTypeDef](./type_defs.md#nameservertypedef)\]
+- `AuthCode`: `str`
+- `AutoRenew`: `bool`
+- `PrivacyProtectAdminContact`: `bool`
+- `PrivacyProtectRegistrantContact`: `bool`
+- `PrivacyProtectTechContact`: `bool`
+
+## TransferDomainResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import TransferDomainResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `OperationId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## TransferDomainToAnotherAwsAccountResponseTypeDef
+## TransferDomainToAnotherAwsAccountRequestTypeDef
 
 ```python
-from mypy_boto3_route53domains.type_defs import TransferDomainToAnotherAwsAccountResponseTypeDef
+from mypy_boto3_route53domains.type_defs import TransferDomainToAnotherAwsAccountRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DomainName`: `str`
+- `AccountId`: `str`
+
+## TransferDomainToAnotherAwsAccountResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import TransferDomainToAnotherAwsAccountResponseResponseTypeDef
+```
+
+Required fields:
 
 - `OperationId`: `str`
 - `Password`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateDomainContactPrivacyResponseTypeDef
+## UpdateDomainContactPrivacyRequestTypeDef
 
 ```python
-from mypy_boto3_route53domains.type_defs import UpdateDomainContactPrivacyResponseTypeDef
+from mypy_boto3_route53domains.type_defs import UpdateDomainContactPrivacyRequestTypeDef
+```
+
+Required fields:
+
+- `DomainName`: `str`
+
+Optional fields:
+
+- `AdminPrivacy`: `bool`
+- `RegistrantPrivacy`: `bool`
+- `TechPrivacy`: `bool`
+
+## UpdateDomainContactPrivacyResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import UpdateDomainContactPrivacyResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `OperationId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateDomainContactResponseTypeDef
+## UpdateDomainContactRequestTypeDef
 
 ```python
-from mypy_boto3_route53domains.type_defs import UpdateDomainContactResponseTypeDef
+from mypy_boto3_route53domains.type_defs import UpdateDomainContactRequestTypeDef
+```
+
+Required fields:
+
+- `DomainName`: `str`
+
+Optional fields:
+
+- `AdminContact`: [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
+- `RegistrantContact`:
+  [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
+- `TechContact`: [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
+
+## UpdateDomainContactResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import UpdateDomainContactResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `OperationId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateDomainNameserversResponseTypeDef
+## UpdateDomainNameserversRequestTypeDef
 
 ```python
-from mypy_boto3_route53domains.type_defs import UpdateDomainNameserversResponseTypeDef
+from mypy_boto3_route53domains.type_defs import UpdateDomainNameserversRequestTypeDef
+```
+
+Required fields:
+
+- `DomainName`: `str`
+- `Nameservers`:
+  `List`\[[NameserverTypeDef](./type_defs.md#nameservertypedef)\]
+
+Optional fields:
+
+- `FIAuthKey`: `str`
+
+## UpdateDomainNameserversResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import UpdateDomainNameserversResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `OperationId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ViewBillingResponseTypeDef
+## UpdateTagsForDomainRequestTypeDef
 
 ```python
-from mypy_boto3_route53domains.type_defs import ViewBillingResponseTypeDef
+from mypy_boto3_route53domains.type_defs import UpdateTagsForDomainRequestTypeDef
+```
+
+Required fields:
+
+- `DomainName`: `str`
+
+Optional fields:
+
+- `TagsToUpdate`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## ViewBillingRequestTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import ViewBillingRequestTypeDef
 ```
 
 Optional fields:
+
+- `Start`: `Union`\[`datetime`, `str`\]
+- `End`: `Union`\[`datetime`, `str`\]
+- `Marker`: `str`
+- `MaxItems`: `int`
+
+## ViewBillingResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53domains.type_defs import ViewBillingResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextPageMarker`: `str`
 - `BillingRecords`:
   `List`\[[BillingRecordTypeDef](./type_defs.md#billingrecordtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

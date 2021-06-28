@@ -12,33 +12,66 @@ type annotations stubs module
   - [ApplicationSettingsResponseTypeDef](#applicationsettingsresponsetypedef)
   - [ApplicationSettingsTypeDef](#applicationsettingstypedef)
   - [ApplicationTypeDef](#applicationtypedef)
-  - [BatchAssociateUserStackResultTypeDef](#batchassociateuserstackresulttypedef)
-  - [BatchDisassociateUserStackResultTypeDef](#batchdisassociateuserstackresulttypedef)
+  - [AssociateFleetRequestTypeDef](#associatefleetrequesttypedef)
+  - [BatchAssociateUserStackRequestTypeDef](#batchassociateuserstackrequesttypedef)
+  - [BatchAssociateUserStackResultResponseTypeDef](#batchassociateuserstackresultresponsetypedef)
+  - [BatchDisassociateUserStackRequestTypeDef](#batchdisassociateuserstackrequesttypedef)
+  - [BatchDisassociateUserStackResultResponseTypeDef](#batchdisassociateuserstackresultresponsetypedef)
   - [ComputeCapacityStatusTypeDef](#computecapacitystatustypedef)
   - [ComputeCapacityTypeDef](#computecapacitytypedef)
-  - [CopyImageResponseTypeDef](#copyimageresponsetypedef)
-  - [CreateDirectoryConfigResultTypeDef](#createdirectoryconfigresulttypedef)
-  - [CreateFleetResultTypeDef](#createfleetresulttypedef)
-  - [CreateImageBuilderResultTypeDef](#createimagebuilderresulttypedef)
-  - [CreateImageBuilderStreamingURLResultTypeDef](#createimagebuilderstreamingurlresulttypedef)
-  - [CreateStackResultTypeDef](#createstackresulttypedef)
-  - [CreateStreamingURLResultTypeDef](#createstreamingurlresulttypedef)
-  - [CreateUpdatedImageResultTypeDef](#createupdatedimageresulttypedef)
-  - [CreateUsageReportSubscriptionResultTypeDef](#createusagereportsubscriptionresulttypedef)
-  - [DeleteImageBuilderResultTypeDef](#deleteimagebuilderresulttypedef)
-  - [DeleteImageResultTypeDef](#deleteimageresulttypedef)
-  - [DescribeDirectoryConfigsResultTypeDef](#describedirectoryconfigsresulttypedef)
-  - [DescribeFleetsResultTypeDef](#describefleetsresulttypedef)
-  - [DescribeImageBuildersResultTypeDef](#describeimagebuildersresulttypedef)
-  - [DescribeImagePermissionsResultTypeDef](#describeimagepermissionsresulttypedef)
-  - [DescribeImagesResultTypeDef](#describeimagesresulttypedef)
-  - [DescribeSessionsResultTypeDef](#describesessionsresulttypedef)
-  - [DescribeStacksResultTypeDef](#describestacksresulttypedef)
-  - [DescribeUsageReportSubscriptionsResultTypeDef](#describeusagereportsubscriptionsresulttypedef)
-  - [DescribeUserStackAssociationsResultTypeDef](#describeuserstackassociationsresulttypedef)
-  - [DescribeUsersResultTypeDef](#describeusersresulttypedef)
+  - [CopyImageRequestTypeDef](#copyimagerequesttypedef)
+  - [CopyImageResponseResponseTypeDef](#copyimageresponseresponsetypedef)
+  - [CreateDirectoryConfigRequestTypeDef](#createdirectoryconfigrequesttypedef)
+  - [CreateDirectoryConfigResultResponseTypeDef](#createdirectoryconfigresultresponsetypedef)
+  - [CreateFleetRequestTypeDef](#createfleetrequesttypedef)
+  - [CreateFleetResultResponseTypeDef](#createfleetresultresponsetypedef)
+  - [CreateImageBuilderRequestTypeDef](#createimagebuilderrequesttypedef)
+  - [CreateImageBuilderResultResponseTypeDef](#createimagebuilderresultresponsetypedef)
+  - [CreateImageBuilderStreamingURLRequestTypeDef](#createimagebuilderstreamingurlrequesttypedef)
+  - [CreateImageBuilderStreamingURLResultResponseTypeDef](#createimagebuilderstreamingurlresultresponsetypedef)
+  - [CreateStackRequestTypeDef](#createstackrequesttypedef)
+  - [CreateStackResultResponseTypeDef](#createstackresultresponsetypedef)
+  - [CreateStreamingURLRequestTypeDef](#createstreamingurlrequesttypedef)
+  - [CreateStreamingURLResultResponseTypeDef](#createstreamingurlresultresponsetypedef)
+  - [CreateUpdatedImageRequestTypeDef](#createupdatedimagerequesttypedef)
+  - [CreateUpdatedImageResultResponseTypeDef](#createupdatedimageresultresponsetypedef)
+  - [CreateUsageReportSubscriptionResultResponseTypeDef](#createusagereportsubscriptionresultresponsetypedef)
+  - [CreateUserRequestTypeDef](#createuserrequesttypedef)
+  - [DeleteDirectoryConfigRequestTypeDef](#deletedirectoryconfigrequesttypedef)
+  - [DeleteFleetRequestTypeDef](#deletefleetrequesttypedef)
+  - [DeleteImageBuilderRequestTypeDef](#deleteimagebuilderrequesttypedef)
+  - [DeleteImageBuilderResultResponseTypeDef](#deleteimagebuilderresultresponsetypedef)
+  - [DeleteImagePermissionsRequestTypeDef](#deleteimagepermissionsrequesttypedef)
+  - [DeleteImageRequestTypeDef](#deleteimagerequesttypedef)
+  - [DeleteImageResultResponseTypeDef](#deleteimageresultresponsetypedef)
+  - [DeleteStackRequestTypeDef](#deletestackrequesttypedef)
+  - [DeleteUserRequestTypeDef](#deleteuserrequesttypedef)
+  - [DescribeDirectoryConfigsRequestTypeDef](#describedirectoryconfigsrequesttypedef)
+  - [DescribeDirectoryConfigsResultResponseTypeDef](#describedirectoryconfigsresultresponsetypedef)
+  - [DescribeFleetsRequestTypeDef](#describefleetsrequesttypedef)
+  - [DescribeFleetsResultResponseTypeDef](#describefleetsresultresponsetypedef)
+  - [DescribeImageBuildersRequestTypeDef](#describeimagebuildersrequesttypedef)
+  - [DescribeImageBuildersResultResponseTypeDef](#describeimagebuildersresultresponsetypedef)
+  - [DescribeImagePermissionsRequestTypeDef](#describeimagepermissionsrequesttypedef)
+  - [DescribeImagePermissionsResultResponseTypeDef](#describeimagepermissionsresultresponsetypedef)
+  - [DescribeImagesRequestTypeDef](#describeimagesrequesttypedef)
+  - [DescribeImagesResultResponseTypeDef](#describeimagesresultresponsetypedef)
+  - [DescribeSessionsRequestTypeDef](#describesessionsrequesttypedef)
+  - [DescribeSessionsResultResponseTypeDef](#describesessionsresultresponsetypedef)
+  - [DescribeStacksRequestTypeDef](#describestacksrequesttypedef)
+  - [DescribeStacksResultResponseTypeDef](#describestacksresultresponsetypedef)
+  - [DescribeUsageReportSubscriptionsRequestTypeDef](#describeusagereportsubscriptionsrequesttypedef)
+  - [DescribeUsageReportSubscriptionsResultResponseTypeDef](#describeusagereportsubscriptionsresultresponsetypedef)
+  - [DescribeUserStackAssociationsRequestTypeDef](#describeuserstackassociationsrequesttypedef)
+  - [DescribeUserStackAssociationsResultResponseTypeDef](#describeuserstackassociationsresultresponsetypedef)
+  - [DescribeUsersRequestTypeDef](#describeusersrequesttypedef)
+  - [DescribeUsersResultResponseTypeDef](#describeusersresultresponsetypedef)
   - [DirectoryConfigTypeDef](#directoryconfigtypedef)
+  - [DisableUserRequestTypeDef](#disableuserrequesttypedef)
+  - [DisassociateFleetRequestTypeDef](#disassociatefleetrequesttypedef)
   - [DomainJoinInfoTypeDef](#domainjoininfotypedef)
+  - [EnableUserRequestTypeDef](#enableuserrequesttypedef)
+  - [ExpireSessionRequestTypeDef](#expiresessionrequesttypedef)
   - [FleetErrorTypeDef](#fleeterrortypedef)
   - [FleetTypeDef](#fleettypedef)
   - [ImageBuilderStateChangeReasonTypeDef](#imagebuilderstatechangereasontypedef)
@@ -47,23 +80,37 @@ type annotations stubs module
   - [ImageStateChangeReasonTypeDef](#imagestatechangereasontypedef)
   - [ImageTypeDef](#imagetypedef)
   - [LastReportGenerationExecutionErrorTypeDef](#lastreportgenerationexecutionerrortypedef)
-  - [ListAssociatedFleetsResultTypeDef](#listassociatedfleetsresulttypedef)
-  - [ListAssociatedStacksResultTypeDef](#listassociatedstacksresulttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListAssociatedFleetsRequestTypeDef](#listassociatedfleetsrequesttypedef)
+  - [ListAssociatedFleetsResultResponseTypeDef](#listassociatedfleetsresultresponsetypedef)
+  - [ListAssociatedStacksRequestTypeDef](#listassociatedstacksrequesttypedef)
+  - [ListAssociatedStacksResultResponseTypeDef](#listassociatedstacksresultresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [NetworkAccessConfigurationTypeDef](#networkaccessconfigurationtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResourceErrorTypeDef](#resourceerrortypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [ServiceAccountCredentialsTypeDef](#serviceaccountcredentialstypedef)
   - [SessionTypeDef](#sessiontypedef)
   - [SharedImagePermissionsTypeDef](#sharedimagepermissionstypedef)
   - [StackErrorTypeDef](#stackerrortypedef)
   - [StackTypeDef](#stacktypedef)
-  - [StartImageBuilderResultTypeDef](#startimagebuilderresulttypedef)
-  - [StopImageBuilderResultTypeDef](#stopimagebuilderresulttypedef)
+  - [StartFleetRequestTypeDef](#startfleetrequesttypedef)
+  - [StartImageBuilderRequestTypeDef](#startimagebuilderrequesttypedef)
+  - [StartImageBuilderResultResponseTypeDef](#startimagebuilderresultresponsetypedef)
+  - [StopFleetRequestTypeDef](#stopfleetrequesttypedef)
+  - [StopImageBuilderRequestTypeDef](#stopimagebuilderrequesttypedef)
+  - [StopImageBuilderResultResponseTypeDef](#stopimagebuilderresultresponsetypedef)
   - [StorageConnectorTypeDef](#storageconnectortypedef)
-  - [UpdateDirectoryConfigResultTypeDef](#updatedirectoryconfigresulttypedef)
-  - [UpdateFleetResultTypeDef](#updatefleetresulttypedef)
-  - [UpdateStackResultTypeDef](#updatestackresulttypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateDirectoryConfigRequestTypeDef](#updatedirectoryconfigrequesttypedef)
+  - [UpdateDirectoryConfigResultResponseTypeDef](#updatedirectoryconfigresultresponsetypedef)
+  - [UpdateFleetRequestTypeDef](#updatefleetrequesttypedef)
+  - [UpdateFleetResultResponseTypeDef](#updatefleetresultresponsetypedef)
+  - [UpdateImagePermissionsRequestTypeDef](#updateimagepermissionsrequesttypedef)
+  - [UpdateStackRequestTypeDef](#updatestackrequesttypedef)
+  - [UpdateStackResultResponseTypeDef](#updatestackresultresponsetypedef)
   - [UsageReportSubscriptionTypeDef](#usagereportsubscriptiontypedef)
   - [UserSettingTypeDef](#usersettingtypedef)
   - [UserStackAssociationErrorTypeDef](#userstackassociationerrortypedef)
@@ -129,27 +176,64 @@ Optional fields:
 - `Enabled`: `bool`
 - `Metadata`: `Dict`\[`str`, `str`\]
 
-## BatchAssociateUserStackResultTypeDef
+## AssociateFleetRequestTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import BatchAssociateUserStackResultTypeDef
+from mypy_boto3_appstream.type_defs import AssociateFleetRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `FleetName`: `str`
+- `StackName`: `str`
+
+## BatchAssociateUserStackRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import BatchAssociateUserStackRequestTypeDef
+```
+
+Required fields:
+
+- `UserStackAssociations`:
+  `List`\[[UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef)\]
+
+## BatchAssociateUserStackResultResponseTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import BatchAssociateUserStackResultResponseTypeDef
+```
+
+Required fields:
 
 - `errors`:
   `List`\[[UserStackAssociationErrorTypeDef](./type_defs.md#userstackassociationerrortypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchDisassociateUserStackResultTypeDef
+## BatchDisassociateUserStackRequestTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import BatchDisassociateUserStackResultTypeDef
+from mypy_boto3_appstream.type_defs import BatchDisassociateUserStackRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `UserStackAssociations`:
+  `List`\[[UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef)\]
+
+## BatchDisassociateUserStackResultResponseTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import BatchDisassociateUserStackResultResponseTypeDef
+```
+
+Required fields:
 
 - `errors`:
   `List`\[[UserStackAssociationErrorTypeDef](./type_defs.md#userstackassociationerrortypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ComputeCapacityStatusTypeDef
 
@@ -177,237 +261,674 @@ Required fields:
 
 - `DesiredInstances`: `int`
 
-## CopyImageResponseTypeDef
+## CopyImageRequestTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import CopyImageResponseTypeDef
+from mypy_boto3_appstream.type_defs import CopyImageRequestTypeDef
 ```
 
+Required fields:
+
+- `SourceImageName`: `str`
+- `DestinationImageName`: `str`
+- `DestinationRegion`: `str`
+
 Optional fields:
+
+- `DestinationImageDescription`: `str`
+
+## CopyImageResponseResponseTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import CopyImageResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DestinationImageName`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDirectoryConfigResultTypeDef
+## CreateDirectoryConfigRequestTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import CreateDirectoryConfigResultTypeDef
+from mypy_boto3_appstream.type_defs import CreateDirectoryConfigRequestTypeDef
 ```
 
+Required fields:
+
+- `DirectoryName`: `str`
+- `OrganizationalUnitDistinguishedNames`: `List`\[`str`\]
+
 Optional fields:
+
+- `ServiceAccountCredentials`:
+  [ServiceAccountCredentialsTypeDef](./type_defs.md#serviceaccountcredentialstypedef)
+
+## CreateDirectoryConfigResultResponseTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import CreateDirectoryConfigResultResponseTypeDef
+```
+
+Required fields:
 
 - `DirectoryConfig`:
   [DirectoryConfigTypeDef](./type_defs.md#directoryconfigtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateFleetResultTypeDef
+## CreateFleetRequestTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import CreateFleetResultTypeDef
+from mypy_boto3_appstream.type_defs import CreateFleetRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+- `InstanceType`: `str`
+- `ComputeCapacity`:
+  [ComputeCapacityTypeDef](./type_defs.md#computecapacitytypedef)
+
 Optional fields:
+
+- `ImageName`: `str`
+- `ImageArn`: `str`
+- `FleetType`: [FleetTypeType](./literals.md#fleettypetype)
+- `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
+- `MaxUserDurationInSeconds`: `int`
+- `DisconnectTimeoutInSeconds`: `int`
+- `Description`: `str`
+- `DisplayName`: `str`
+- `EnableDefaultInternetAccess`: `bool`
+- `DomainJoinInfo`:
+  [DomainJoinInfoTypeDef](./type_defs.md#domainjoininfotypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
+- `IdleDisconnectTimeoutInSeconds`: `int`
+- `IamRoleArn`: `str`
+- `StreamView`: [StreamViewType](./literals.md#streamviewtype)
+
+## CreateFleetResultResponseTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import CreateFleetResultResponseTypeDef
+```
+
+Required fields:
 
 - `Fleet`: [FleetTypeDef](./type_defs.md#fleettypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateImageBuilderResultTypeDef
+## CreateImageBuilderRequestTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import CreateImageBuilderResultTypeDef
+from mypy_boto3_appstream.type_defs import CreateImageBuilderRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+- `InstanceType`: `str`
+
 Optional fields:
+
+- `ImageName`: `str`
+- `ImageArn`: `str`
+- `Description`: `str`
+- `DisplayName`: `str`
+- `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
+- `IamRoleArn`: `str`
+- `EnableDefaultInternetAccess`: `bool`
+- `DomainJoinInfo`:
+  [DomainJoinInfoTypeDef](./type_defs.md#domainjoininfotypedef)
+- `AppstreamAgentVersion`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+- `AccessEndpoints`:
+  `List`\[[AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)\]
+
+## CreateImageBuilderResultResponseTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import CreateImageBuilderResultResponseTypeDef
+```
+
+Required fields:
 
 - `ImageBuilder`: [ImageBuilderTypeDef](./type_defs.md#imagebuildertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateImageBuilderStreamingURLResultTypeDef
+## CreateImageBuilderStreamingURLRequestTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import CreateImageBuilderStreamingURLResultTypeDef
+from mypy_boto3_appstream.type_defs import CreateImageBuilderStreamingURLRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+
 Optional fields:
+
+- `Validity`: `int`
+
+## CreateImageBuilderStreamingURLResultResponseTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import CreateImageBuilderStreamingURLResultResponseTypeDef
+```
+
+Required fields:
 
 - `StreamingURL`: `str`
 - `Expires`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateStackResultTypeDef
+## CreateStackRequestTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import CreateStackResultTypeDef
+from mypy_boto3_appstream.type_defs import CreateStackRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+
 Optional fields:
+
+- `Description`: `str`
+- `DisplayName`: `str`
+- `StorageConnectors`:
+  `List`\[[StorageConnectorTypeDef](./type_defs.md#storageconnectortypedef)\]
+- `RedirectURL`: `str`
+- `FeedbackURL`: `str`
+- `UserSettings`:
+  `List`\[[UserSettingTypeDef](./type_defs.md#usersettingtypedef)\]
+- `ApplicationSettings`:
+  [ApplicationSettingsTypeDef](./type_defs.md#applicationsettingstypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
+- `AccessEndpoints`:
+  `List`\[[AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)\]
+- `EmbedHostDomains`: `List`\[`str`\]
+
+## CreateStackResultResponseTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import CreateStackResultResponseTypeDef
+```
+
+Required fields:
 
 - `Stack`: [StackTypeDef](./type_defs.md#stacktypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateStreamingURLResultTypeDef
+## CreateStreamingURLRequestTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import CreateStreamingURLResultTypeDef
+from mypy_boto3_appstream.type_defs import CreateStreamingURLRequestTypeDef
 ```
 
+Required fields:
+
+- `StackName`: `str`
+- `FleetName`: `str`
+- `UserId`: `str`
+
 Optional fields:
+
+- `ApplicationId`: `str`
+- `Validity`: `int`
+- `SessionContext`: `str`
+
+## CreateStreamingURLResultResponseTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import CreateStreamingURLResultResponseTypeDef
+```
+
+Required fields:
 
 - `StreamingURL`: `str`
 - `Expires`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateUpdatedImageResultTypeDef
+## CreateUpdatedImageRequestTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import CreateUpdatedImageResultTypeDef
+from mypy_boto3_appstream.type_defs import CreateUpdatedImageRequestTypeDef
 ```
 
+Required fields:
+
+- `existingImageName`: `str`
+- `newImageName`: `str`
+
 Optional fields:
+
+- `newImageDescription`: `str`
+- `newImageDisplayName`: `str`
+- `newImageTags`: `Dict`\[`str`, `str`\]
+- `dryRun`: `bool`
+
+## CreateUpdatedImageResultResponseTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import CreateUpdatedImageResultResponseTypeDef
+```
+
+Required fields:
 
 - `image`: [ImageTypeDef](./type_defs.md#imagetypedef)
 - `canUpdateImage`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateUsageReportSubscriptionResultTypeDef
+## CreateUsageReportSubscriptionResultResponseTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import CreateUsageReportSubscriptionResultTypeDef
+from mypy_boto3_appstream.type_defs import CreateUsageReportSubscriptionResultResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `S3BucketName`: `str`
 - `Schedule`: `Literal['DAILY']` (see
   [UsageReportScheduleType](./literals.md#usagereportscheduletype))
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteImageBuilderResultTypeDef
+## CreateUserRequestTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import DeleteImageBuilderResultTypeDef
+from mypy_boto3_appstream.type_defs import CreateUserRequestTypeDef
 ```
 
+Required fields:
+
+- `UserName`: `str`
+- `AuthenticationType`:
+  [AuthenticationTypeType](./literals.md#authenticationtypetype)
+
 Optional fields:
+
+- `MessageAction`: [MessageActionType](./literals.md#messageactiontype)
+- `FirstName`: `str`
+- `LastName`: `str`
+
+## DeleteDirectoryConfigRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DeleteDirectoryConfigRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryName`: `str`
+
+## DeleteFleetRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DeleteFleetRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+## DeleteImageBuilderRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DeleteImageBuilderRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+## DeleteImageBuilderResultResponseTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DeleteImageBuilderResultResponseTypeDef
+```
+
+Required fields:
 
 - `ImageBuilder`: [ImageBuilderTypeDef](./type_defs.md#imagebuildertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteImageResultTypeDef
+## DeleteImagePermissionsRequestTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import DeleteImageResultTypeDef
+from mypy_boto3_appstream.type_defs import DeleteImagePermissionsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Name`: `str`
+- `SharedAccountId`: `str`
+
+## DeleteImageRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DeleteImageRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+## DeleteImageResultResponseTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DeleteImageResultResponseTypeDef
+```
+
+Required fields:
 
 - `Image`: [ImageTypeDef](./type_defs.md#imagetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDirectoryConfigsResultTypeDef
+## DeleteStackRequestTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import DescribeDirectoryConfigsResultTypeDef
+from mypy_boto3_appstream.type_defs import DeleteStackRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+## DeleteUserRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DeleteUserRequestTypeDef
+```
+
+Required fields:
+
+- `UserName`: `str`
+- `AuthenticationType`:
+  [AuthenticationTypeType](./literals.md#authenticationtypetype)
+
+## DescribeDirectoryConfigsRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DescribeDirectoryConfigsRequestTypeDef
 ```
 
 Optional fields:
+
+- `DirectoryNames`: `List`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeDirectoryConfigsResultResponseTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DescribeDirectoryConfigsResultResponseTypeDef
+```
+
+Required fields:
 
 - `DirectoryConfigs`:
   `List`\[[DirectoryConfigTypeDef](./type_defs.md#directoryconfigtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFleetsResultTypeDef
+## DescribeFleetsRequestTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import DescribeFleetsResultTypeDef
+from mypy_boto3_appstream.type_defs import DescribeFleetsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Names`: `List`\[`str`\]
+- `NextToken`: `str`
+
+## DescribeFleetsResultResponseTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DescribeFleetsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Fleets`: `List`\[[FleetTypeDef](./type_defs.md#fleettypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeImageBuildersResultTypeDef
+## DescribeImageBuildersRequestTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import DescribeImageBuildersResultTypeDef
+from mypy_boto3_appstream.type_defs import DescribeImageBuildersRequestTypeDef
 ```
 
 Optional fields:
+
+- `Names`: `List`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeImageBuildersResultResponseTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DescribeImageBuildersResultResponseTypeDef
+```
+
+Required fields:
 
 - `ImageBuilders`:
   `List`\[[ImageBuilderTypeDef](./type_defs.md#imagebuildertypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeImagePermissionsResultTypeDef
+## DescribeImagePermissionsRequestTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import DescribeImagePermissionsResultTypeDef
+from mypy_boto3_appstream.type_defs import DescribeImagePermissionsRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `SharedAwsAccountIds`: `List`\[`str`\]
+- `NextToken`: `str`
+
+## DescribeImagePermissionsResultResponseTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DescribeImagePermissionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Name`: `str`
 - `SharedImagePermissionsList`:
   `List`\[[SharedImagePermissionsTypeDef](./type_defs.md#sharedimagepermissionstypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeImagesResultTypeDef
+## DescribeImagesRequestTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import DescribeImagesResultTypeDef
+from mypy_boto3_appstream.type_defs import DescribeImagesRequestTypeDef
 ```
 
 Optional fields:
+
+- `Names`: `List`\[`str`\]
+- `Arns`: `List`\[`str`\]
+- `Type`: [VisibilityTypeType](./literals.md#visibilitytypetype)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeImagesResultResponseTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DescribeImagesResultResponseTypeDef
+```
+
+Required fields:
 
 - `Images`: `List`\[[ImageTypeDef](./type_defs.md#imagetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSessionsResultTypeDef
+## DescribeSessionsRequestTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import DescribeSessionsResultTypeDef
+from mypy_boto3_appstream.type_defs import DescribeSessionsRequestTypeDef
 ```
 
+Required fields:
+
+- `StackName`: `str`
+- `FleetName`: `str`
+
 Optional fields:
+
+- `UserId`: `str`
+- `NextToken`: `str`
+- `Limit`: `int`
+- `AuthenticationType`:
+  [AuthenticationTypeType](./literals.md#authenticationtypetype)
+
+## DescribeSessionsResultResponseTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DescribeSessionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Sessions`: `List`\[[SessionTypeDef](./type_defs.md#sessiontypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeStacksResultTypeDef
+## DescribeStacksRequestTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import DescribeStacksResultTypeDef
+from mypy_boto3_appstream.type_defs import DescribeStacksRequestTypeDef
 ```
 
 Optional fields:
+
+- `Names`: `List`\[`str`\]
+- `NextToken`: `str`
+
+## DescribeStacksResultResponseTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DescribeStacksResultResponseTypeDef
+```
+
+Required fields:
 
 - `Stacks`: `List`\[[StackTypeDef](./type_defs.md#stacktypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeUsageReportSubscriptionsResultTypeDef
+## DescribeUsageReportSubscriptionsRequestTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import DescribeUsageReportSubscriptionsResultTypeDef
+from mypy_boto3_appstream.type_defs import DescribeUsageReportSubscriptionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeUsageReportSubscriptionsResultResponseTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DescribeUsageReportSubscriptionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `UsageReportSubscriptions`:
   `List`\[[UsageReportSubscriptionTypeDef](./type_defs.md#usagereportsubscriptiontypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeUserStackAssociationsResultTypeDef
+## DescribeUserStackAssociationsRequestTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import DescribeUserStackAssociationsResultTypeDef
+from mypy_boto3_appstream.type_defs import DescribeUserStackAssociationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `StackName`: `str`
+- `UserName`: `str`
+- `AuthenticationType`:
+  [AuthenticationTypeType](./literals.md#authenticationtypetype)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeUserStackAssociationsResultResponseTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DescribeUserStackAssociationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `UserStackAssociations`:
   `List`\[[UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeUsersResultTypeDef
+## DescribeUsersRequestTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import DescribeUsersResultTypeDef
+from mypy_boto3_appstream.type_defs import DescribeUsersRequestTypeDef
 ```
+
+Required fields:
+
+- `AuthenticationType`:
+  [AuthenticationTypeType](./literals.md#authenticationtypetype)
 
 Optional fields:
 
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeUsersResultResponseTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DescribeUsersResultResponseTypeDef
+```
+
+Required fields:
+
 - `Users`: `List`\[[UserTypeDef](./type_defs.md#usertypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DirectoryConfigTypeDef
 
@@ -426,6 +947,29 @@ Optional fields:
   [ServiceAccountCredentialsTypeDef](./type_defs.md#serviceaccountcredentialstypedef)
 - `CreatedTime`: `datetime`
 
+## DisableUserRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DisableUserRequestTypeDef
+```
+
+Required fields:
+
+- `UserName`: `str`
+- `AuthenticationType`:
+  [AuthenticationTypeType](./literals.md#authenticationtypetype)
+
+## DisassociateFleetRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DisassociateFleetRequestTypeDef
+```
+
+Required fields:
+
+- `FleetName`: `str`
+- `StackName`: `str`
+
 ## DomainJoinInfoTypeDef
 
 ```python
@@ -436,6 +980,28 @@ Optional fields:
 
 - `DirectoryName`: `str`
 - `OrganizationalUnitDistinguishedName`: `str`
+
+## EnableUserRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import EnableUserRequestTypeDef
+```
+
+Required fields:
+
+- `UserName`: `str`
+- `AuthenticationType`:
+  [AuthenticationTypeType](./literals.md#authenticationtypetype)
+
+## ExpireSessionRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import ExpireSessionRequestTypeDef
+```
+
+Required fields:
+
+- `SessionId`: `str`
 
 ## FleetErrorTypeDef
 
@@ -598,37 +1164,81 @@ Optional fields:
   [UsageReportExecutionErrorCodeType](./literals.md#usagereportexecutionerrorcodetype)
 - `ErrorMessage`: `str`
 
-## ListAssociatedFleetsResultTypeDef
+## ListAssociatedFleetsRequestTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import ListAssociatedFleetsResultTypeDef
+from mypy_boto3_appstream.type_defs import ListAssociatedFleetsRequestTypeDef
 ```
 
+Required fields:
+
+- `StackName`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+
+## ListAssociatedFleetsResultResponseTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import ListAssociatedFleetsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Names`: `List`\[`str`\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAssociatedStacksResultTypeDef
+## ListAssociatedStacksRequestTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import ListAssociatedStacksResultTypeDef
+from mypy_boto3_appstream.type_defs import ListAssociatedStacksRequestTypeDef
 ```
 
+Required fields:
+
+- `FleetName`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+
+## ListAssociatedStacksResultResponseTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import ListAssociatedStacksResultResponseTypeDef
+```
+
+Required fields:
 
 - `Names`: `List`\[`str`\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_appstream.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceArn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## NetworkAccessConfigurationTypeDef
 
@@ -664,6 +1274,20 @@ Optional fields:
 - `ErrorCode`: [FleetErrorCodeType](./literals.md#fleeterrorcodetype)
 - `ErrorMessage`: `str`
 - `ErrorTimestamp`: `datetime`
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## ServiceAccountCredentialsTypeDef
 
@@ -754,25 +1378,73 @@ Optional fields:
   `List`\[[AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)\]
 - `EmbedHostDomains`: `List`\[`str`\]
 
-## StartImageBuilderResultTypeDef
+## StartFleetRequestTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import StartImageBuilderResultTypeDef
+from mypy_boto3_appstream.type_defs import StartFleetRequestTypeDef
 ```
+
+Required fields:
+
+- `Name`: `str`
+
+## StartImageBuilderRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import StartImageBuilderRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
 
 Optional fields:
 
-- `ImageBuilder`: [ImageBuilderTypeDef](./type_defs.md#imagebuildertypedef)
+- `AppstreamAgentVersion`: `str`
 
-## StopImageBuilderResultTypeDef
+## StartImageBuilderResultResponseTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import StopImageBuilderResultTypeDef
+from mypy_boto3_appstream.type_defs import StartImageBuilderResultResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `ImageBuilder`: [ImageBuilderTypeDef](./type_defs.md#imagebuildertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StopFleetRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import StopFleetRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+## StopImageBuilderRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import StopImageBuilderRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+## StopImageBuilderResultResponseTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import StopImageBuilderResultResponseTypeDef
+```
+
+Required fields:
+
+- `ImageBuilder`: [ImageBuilderTypeDef](./type_defs.md#imagebuildertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## StorageConnectorTypeDef
 
@@ -790,36 +1462,151 @@ Optional fields:
 - `ResourceIdentifier`: `str`
 - `Domains`: `List`\[`str`\]
 
-## UpdateDirectoryConfigResultTypeDef
+## TagResourceRequestTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import UpdateDirectoryConfigResultTypeDef
+from mypy_boto3_appstream.type_defs import TagResourceRequestTypeDef
 ```
 
+Required fields:
+
+- `ResourceArn`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## UntagResourceRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## UpdateDirectoryConfigRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import UpdateDirectoryConfigRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryName`: `str`
+
 Optional fields:
+
+- `OrganizationalUnitDistinguishedNames`: `List`\[`str`\]
+- `ServiceAccountCredentials`:
+  [ServiceAccountCredentialsTypeDef](./type_defs.md#serviceaccountcredentialstypedef)
+
+## UpdateDirectoryConfigResultResponseTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import UpdateDirectoryConfigResultResponseTypeDef
+```
+
+Required fields:
 
 - `DirectoryConfig`:
   [DirectoryConfigTypeDef](./type_defs.md#directoryconfigtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateFleetResultTypeDef
+## UpdateFleetRequestTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import UpdateFleetResultTypeDef
+from mypy_boto3_appstream.type_defs import UpdateFleetRequestTypeDef
 ```
 
 Optional fields:
+
+- `ImageName`: `str`
+- `ImageArn`: `str`
+- `Name`: `str`
+- `InstanceType`: `str`
+- `ComputeCapacity`:
+  [ComputeCapacityTypeDef](./type_defs.md#computecapacitytypedef)
+- `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
+- `MaxUserDurationInSeconds`: `int`
+- `DisconnectTimeoutInSeconds`: `int`
+- `DeleteVpcConfig`: `bool`
+- `Description`: `str`
+- `DisplayName`: `str`
+- `EnableDefaultInternetAccess`: `bool`
+- `DomainJoinInfo`:
+  [DomainJoinInfoTypeDef](./type_defs.md#domainjoininfotypedef)
+- `IdleDisconnectTimeoutInSeconds`: `int`
+- `AttributesToDelete`:
+  `List`\[[FleetAttributeType](./literals.md#fleetattributetype)\]
+- `IamRoleArn`: `str`
+- `StreamView`: [StreamViewType](./literals.md#streamviewtype)
+
+## UpdateFleetResultResponseTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import UpdateFleetResultResponseTypeDef
+```
+
+Required fields:
 
 - `Fleet`: [FleetTypeDef](./type_defs.md#fleettypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateStackResultTypeDef
+## UpdateImagePermissionsRequestTypeDef
 
 ```python
-from mypy_boto3_appstream.type_defs import UpdateStackResultTypeDef
+from mypy_boto3_appstream.type_defs import UpdateImagePermissionsRequestTypeDef
 ```
+
+Required fields:
+
+- `Name`: `str`
+- `SharedAccountId`: `str`
+- `ImagePermissions`:
+  [ImagePermissionsTypeDef](./type_defs.md#imagepermissionstypedef)
+
+## UpdateStackRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import UpdateStackRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
 
 Optional fields:
 
+- `DisplayName`: `str`
+- `Description`: `str`
+- `StorageConnectors`:
+  `List`\[[StorageConnectorTypeDef](./type_defs.md#storageconnectortypedef)\]
+- `DeleteStorageConnectors`: `bool`
+- `RedirectURL`: `str`
+- `FeedbackURL`: `str`
+- `AttributesToDelete`:
+  `List`\[[StackAttributeType](./literals.md#stackattributetype)\]
+- `UserSettings`:
+  `List`\[[UserSettingTypeDef](./type_defs.md#usersettingtypedef)\]
+- `ApplicationSettings`:
+  [ApplicationSettingsTypeDef](./type_defs.md#applicationsettingstypedef)
+- `AccessEndpoints`:
+  `List`\[[AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)\]
+- `EmbedHostDomains`: `List`\[`str`\]
+
+## UpdateStackResultResponseTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import UpdateStackResultResponseTypeDef
+```
+
+Required fields:
+
 - `Stack`: [StackTypeDef](./type_defs.md#stacktypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UsageReportSubscriptionTypeDef
 

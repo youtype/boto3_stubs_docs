@@ -46,7 +46,7 @@ Arguments for `DescribeBucketsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeBucketsPaginator.paginate` returns
-`Iterator`\[[DescribeBucketsResponseTypeDef](./type_defs.md#describebucketsresponsetypedef)\].
+`Iterator`\[[DescribeBucketsResponseResponseTypeDef](./type_defs.md#describebucketsresponseresponsetypedef)\].
 
 ## GetUsageStatisticsPaginator
 
@@ -76,7 +76,7 @@ Arguments for `GetUsageStatisticsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetUsageStatisticsPaginator.paginate` returns
-`Iterator`\[[GetUsageStatisticsResponseTypeDef](./type_defs.md#getusagestatisticsresponsetypedef)\].
+`Iterator`\[[GetUsageStatisticsResponseResponseTypeDef](./type_defs.md#getusagestatisticsresponseresponsetypedef)\].
 
 ## ListClassificationJobsPaginator
 
@@ -105,7 +105,7 @@ Arguments for `ListClassificationJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListClassificationJobsPaginator.paginate` returns
-`Iterator`\[[ListClassificationJobsResponseTypeDef](./type_defs.md#listclassificationjobsresponsetypedef)\].
+`Iterator`\[[ListClassificationJobsResponseResponseTypeDef](./type_defs.md#listclassificationjobsresponseresponsetypedef)\].
 
 ## ListCustomDataIdentifiersPaginator
 
@@ -130,7 +130,7 @@ Arguments for `ListCustomDataIdentifiersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCustomDataIdentifiersPaginator.paginate` returns
-`Iterator`\[[ListCustomDataIdentifiersResponseTypeDef](./type_defs.md#listcustomdataidentifiersresponsetypedef)\].
+`Iterator`\[[ListCustomDataIdentifiersResponseResponseTypeDef](./type_defs.md#listcustomdataidentifiersresponseresponsetypedef)\].
 
 ## ListFindingsPaginator
 
@@ -157,7 +157,7 @@ Arguments for `ListFindingsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFindingsPaginator.paginate` returns
-`Iterator`\[[ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef)\].
+`Iterator`\[[ListFindingsResponseResponseTypeDef](./type_defs.md#listfindingsresponseresponsetypedef)\].
 
 ## ListFindingsFiltersPaginator
 
@@ -182,7 +182,7 @@ Arguments for `ListFindingsFiltersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFindingsFiltersPaginator.paginate` returns
-`Iterator`\[[ListFindingsFiltersResponseTypeDef](./type_defs.md#listfindingsfiltersresponsetypedef)\].
+`Iterator`\[[ListFindingsFiltersResponseResponseTypeDef](./type_defs.md#listfindingsfiltersresponseresponsetypedef)\].
 
 ## ListInvitationsPaginator
 
@@ -207,7 +207,7 @@ Arguments for `ListInvitationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListInvitationsPaginator.paginate` returns
-`Iterator`\[[ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef)\].
+`Iterator`\[[ListInvitationsResponseResponseTypeDef](./type_defs.md#listinvitationsresponseresponsetypedef)\].
 
 ## ListMembersPaginator
 
@@ -232,7 +232,7 @@ Arguments for `ListMembersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMembersPaginator.paginate` returns
-`Iterator`\[[ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef)\].
+`Iterator`\[[ListMembersResponseResponseTypeDef](./type_defs.md#listmembersresponseresponsetypedef)\].
 
 ## ListOrganizationAdminAccountsPaginator
 
@@ -257,7 +257,7 @@ Arguments for `ListOrganizationAdminAccountsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOrganizationAdminAccountsPaginator.paginate` returns
-`Iterator`\[[ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef)\].
+`Iterator`\[[ListOrganizationAdminAccountsResponseResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponseresponsetypedef)\].
 
 ## SearchResourcesPaginator
 
@@ -286,4 +286,4 @@ Arguments for `SearchResourcesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchResourcesPaginator.paginate` returns
-`Iterator`\[[SearchResourcesResponseTypeDef](./type_defs.md#searchresourcesresponsetypedef)\].
+`Iterator`\[[SearchResourcesResponseResponseTypeDef](./type_defs.md#searchresourcesresponseresponsetypedef)\].

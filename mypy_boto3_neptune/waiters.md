@@ -26,7 +26,7 @@ def get_db_instance_available_waiter() -> DBInstanceAvailableWaiter:
 ```
 
 Boto3 documentation:
-[Neptune.Waiter.db_instance_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Waiter.db_instance_available)
+[Neptune.Waiter.db_instance_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Waiter.DBInstanceAvailable)
 
 Arguments for `DBInstanceAvailableWaiter.wait` method:
 
@@ -51,7 +51,7 @@ def get_db_instance_deleted_waiter() -> DBInstanceDeletedWaiter:
 ```
 
 Boto3 documentation:
-[Neptune.Waiter.db_instance_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Waiter.db_instance_deleted)
+[Neptune.Waiter.db_instance_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Waiter.DBInstanceDeleted)
 
 Arguments for `DBInstanceDeletedWaiter.wait` method:
 

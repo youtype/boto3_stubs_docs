@@ -8,31 +8,72 @@ type annotations stubs module
 [mypy_boto3_sso_oidc](https://pypi.org/project/mypy-boto3-sso-oidc/).
 
 - [Typed dictionaries for boto3 SSOOIDC module](#typed-dictionaries-for-boto3-ssooidc-module)
-  - [CreateTokenResponseTypeDef](#createtokenresponsetypedef)
-  - [RegisterClientResponseTypeDef](#registerclientresponsetypedef)
-  - [StartDeviceAuthorizationResponseTypeDef](#startdeviceauthorizationresponsetypedef)
+  - [CreateTokenRequestTypeDef](#createtokenrequesttypedef)
+  - [CreateTokenResponseResponseTypeDef](#createtokenresponseresponsetypedef)
+  - [RegisterClientRequestTypeDef](#registerclientrequesttypedef)
+  - [RegisterClientResponseResponseTypeDef](#registerclientresponseresponsetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [StartDeviceAuthorizationRequestTypeDef](#startdeviceauthorizationrequesttypedef)
+  - [StartDeviceAuthorizationResponseResponseTypeDef](#startdeviceauthorizationresponseresponsetypedef)
 
-## CreateTokenResponseTypeDef
+## CreateTokenRequestTypeDef
 
 ```python
-from mypy_boto3_sso_oidc.type_defs import CreateTokenResponseTypeDef
+from mypy_boto3_sso_oidc.type_defs import CreateTokenRequestTypeDef
 ```
 
+Required fields:
+
+- `clientId`: `str`
+- `clientSecret`: `str`
+- `grantType`: `str`
+- `deviceCode`: `str`
+
 Optional fields:
+
+- `code`: `str`
+- `refreshToken`: `str`
+- `scope`: `List`\[`str`\]
+- `redirectUri`: `str`
+
+## CreateTokenResponseResponseTypeDef
+
+```python
+from mypy_boto3_sso_oidc.type_defs import CreateTokenResponseResponseTypeDef
+```
+
+Required fields:
 
 - `accessToken`: `str`
 - `tokenType`: `str`
 - `expiresIn`: `int`
 - `refreshToken`: `str`
 - `idToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RegisterClientResponseTypeDef
+## RegisterClientRequestTypeDef
 
 ```python
-from mypy_boto3_sso_oidc.type_defs import RegisterClientResponseTypeDef
+from mypy_boto3_sso_oidc.type_defs import RegisterClientRequestTypeDef
 ```
 
+Required fields:
+
+- `clientName`: `str`
+- `clientType`: `str`
+
 Optional fields:
+
+- `scopes`: `List`\[`str`\]
+
+## RegisterClientResponseResponseTypeDef
+
+```python
+from mypy_boto3_sso_oidc.type_defs import RegisterClientResponseResponseTypeDef
+```
+
+Required fields:
 
 - `clientId`: `str`
 - `clientSecret`: `str`
@@ -40,14 +81,42 @@ Optional fields:
 - `clientSecretExpiresAt`: `int`
 - `authorizationEndpoint`: `str`
 - `tokenEndpoint`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartDeviceAuthorizationResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_sso_oidc.type_defs import StartDeviceAuthorizationResponseTypeDef
+from mypy_boto3_sso_oidc.type_defs import ResponseMetadataTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## StartDeviceAuthorizationRequestTypeDef
+
+```python
+from mypy_boto3_sso_oidc.type_defs import StartDeviceAuthorizationRequestTypeDef
+```
+
+Required fields:
+
+- `clientId`: `str`
+- `clientSecret`: `str`
+- `startUrl`: `str`
+
+## StartDeviceAuthorizationResponseResponseTypeDef
+
+```python
+from mypy_boto3_sso_oidc.type_defs import StartDeviceAuthorizationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `deviceCode`: `str`
 - `userCode`: `str`
@@ -55,3 +124,5 @@ Optional fields:
 - `verificationUriComplete`: `str`
 - `expiresIn`: `int`
 - `interval`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

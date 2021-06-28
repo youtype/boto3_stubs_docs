@@ -60,6 +60,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("elastic-inference").can_paginate` method.
 
 Boto3 documentation:
@@ -73,11 +75,17 @@ Returns `bool`.
 
 ### describe_accelerator_offerings
 
+Describes the locations in which a given accelerator type or set of types is
+present in a given region.
+
 Type annotations for
 `boto3.client("elastic-inference").describe_accelerator_offerings` method.
 
 Boto3 documentation:
 [ElasticInference.Client.describe_accelerator_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.describe_accelerator_offerings)
+
+Arguments mapping described in
+[DescribeAcceleratorOfferingsRequestTypeDef](./type_defs.md#describeacceleratorofferingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -86,9 +94,12 @@ Keyword-only arguments:
 - `acceleratorTypes`: `List`\[`str`\]
 
 Returns
-[DescribeAcceleratorOfferingsResponseTypeDef](./type_defs.md#describeacceleratorofferingsresponsetypedef).
+[DescribeAcceleratorOfferingsResponseResponseTypeDef](./type_defs.md#describeacceleratorofferingsresponseresponsetypedef).
 
 ### describe_accelerator_types
+
+Describes the accelerator types available in a given region, as well as their
+characteristics, such as memory and throughput.
 
 Type annotations for
 `boto3.client("elastic-inference").describe_accelerator_types` method.
@@ -97,15 +108,21 @@ Boto3 documentation:
 [ElasticInference.Client.describe_accelerator_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.describe_accelerator_types)
 
 Returns
-[DescribeAcceleratorTypesResponseTypeDef](./type_defs.md#describeacceleratortypesresponsetypedef).
+[DescribeAcceleratorTypesResponseResponseTypeDef](./type_defs.md#describeacceleratortypesresponseresponsetypedef).
 
 ### describe_accelerators
+
+Describes information over a provided set of accelerators belonging to an
+account.
 
 Type annotations for `boto3.client("elastic-inference").describe_accelerators`
 method.
 
 Boto3 documentation:
 [ElasticInference.Client.describe_accelerators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.describe_accelerators)
+
+Arguments mapping described in
+[DescribeAcceleratorsRequestTypeDef](./type_defs.md#describeacceleratorsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -115,9 +132,11 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeAcceleratorsResponseTypeDef](./type_defs.md#describeacceleratorsresponsetypedef).
+[DescribeAcceleratorsResponseResponseTypeDef](./type_defs.md#describeacceleratorsresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("elastic-inference").generate_presigned_url`
 method.
@@ -136,25 +155,35 @@ Returns `str`.
 
 ### list_tags_for_resource
 
+Returns all tags of an Elastic Inference Accelerator.
+
 Type annotations for `boto3.client("elastic-inference").list_tags_for_resource`
 method.
 
 Boto3 documentation:
 [ElasticInference.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
+[ListTagsForResourceResultResponseTypeDef](./type_defs.md#listtagsforresourceresultresponsetypedef).
 
 ### tag_resource
+
+Adds the specified tags to an Elastic Inference Accelerator.
 
 Type annotations for `boto3.client("elastic-inference").tag_resource` method.
 
 Boto3 documentation:
 [ElasticInference.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -165,10 +194,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Removes the specified tags from an Elastic Inference Accelerator.
+
 Type annotations for `boto3.client("elastic-inference").untag_resource` method.
 
 Boto3 documentation:
 [ElasticInference.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 

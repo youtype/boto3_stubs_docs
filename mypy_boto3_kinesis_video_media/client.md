@@ -57,6 +57,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("kinesis-video-media").can_paginate` method.
 
 Boto3 documentation:
@@ -69,6 +71,8 @@ Arguments:
 Returns `bool`.
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for
 `boto3.client("kinesis-video-media").generate_presigned_url` method.
@@ -87,10 +91,15 @@ Returns `str`.
 
 ### get_media
 
+Use this API to retrieve media content from a Kinesis video stream.
+
 Type annotations for `boto3.client("kinesis-video-media").get_media` method.
 
 Boto3 documentation:
 [KinesisVideoMedia.Client.get_media](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.get_media)
+
+Arguments mapping described in
+[GetMediaInputTypeDef](./type_defs.md#getmediainputtypedef).
 
 Keyword-only arguments:
 
@@ -99,4 +108,5 @@ Keyword-only arguments:
 - `StreamName`: `str`
 - `StreamARN`: `str`
 
-Returns [GetMediaOutputTypeDef](./type_defs.md#getmediaoutputtypedef).
+Returns
+[GetMediaOutputResponseTypeDef](./type_defs.md#getmediaoutputresponsetypedef).

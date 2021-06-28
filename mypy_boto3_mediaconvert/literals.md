@@ -64,6 +64,7 @@ type annotations stubs module
   - [CmafClientCacheType](#cmafclientcachetype)
   - [CmafCodecSpecificationType](#cmafcodecspecificationtype)
   - [CmafEncryptionTypeType](#cmafencryptiontypetype)
+  - [CmafImageBasedTrickPlayType](#cmafimagebasedtrickplaytype)
   - [CmafInitializationVectorInManifestType](#cmafinitializationvectorinmanifesttype)
   - [CmafKeyProviderTypeType](#cmafkeyprovidertypetype)
   - [CmafManifestCompressionType](#cmafmanifestcompressiontype)
@@ -89,6 +90,7 @@ type annotations stubs module
   - [ContainerTypeType](#containertypetype)
   - [DashIsoGroupAudioChannelConfigSchemeIdUriType](#dashisogroupaudiochannelconfigschemeiduritype)
   - [DashIsoHbbtvComplianceType](#dashisohbbtvcompliancetype)
+  - [DashIsoImageBasedTrickPlayType](#dashisoimagebasedtrickplaytype)
   - [DashIsoMpdProfileType](#dashisompdprofiletype)
   - [DashIsoPlaybackDeviceCompatibilityType](#dashisoplaybackdevicecompatibilitytype)
   - [DashIsoPtsOffsetHandlingForBFramesType](#dashisoptsoffsethandlingforbframestype)
@@ -114,8 +116,10 @@ type annotations stubs module
   - [Eac3AtmosBitstreamModeType](#eac3atmosbitstreammodetype)
   - [Eac3AtmosCodingModeType](#eac3atmoscodingmodetype)
   - [Eac3AtmosDialogueIntelligenceType](#eac3atmosdialogueintelligencetype)
+  - [Eac3AtmosDownmixControlType](#eac3atmosdownmixcontroltype)
   - [Eac3AtmosDynamicRangeCompressionLineType](#eac3atmosdynamicrangecompressionlinetype)
   - [Eac3AtmosDynamicRangeCompressionRfType](#eac3atmosdynamicrangecompressionrftype)
+  - [Eac3AtmosDynamicRangeControlType](#eac3atmosdynamicrangecontroltype)
   - [Eac3AtmosMeteringModeType](#eac3atmosmeteringmodetype)
   - [Eac3AtmosStereoDownmixType](#eac3atmosstereodownmixtype)
   - [Eac3AtmosSurroundExModeType](#eac3atmossurroundexmodetype)
@@ -198,6 +202,7 @@ type annotations stubs module
   - [HlsDirectoryStructureType](#hlsdirectorystructuretype)
   - [HlsEncryptionTypeType](#hlsencryptiontypetype)
   - [HlsIFrameOnlyManifestType](#hlsiframeonlymanifesttype)
+  - [HlsImageBasedTrickPlayType](#hlsimagebasedtrickplaytype)
   - [HlsInitializationVectorInManifestType](#hlsinitializationvectorinmanifesttype)
   - [HlsKeyProviderTypeType](#hlskeyprovidertypetype)
   - [HlsManifestCompressionType](#hlsmanifestcompressiontype)
@@ -281,6 +286,7 @@ type annotations stubs module
   - [MsSmoothManifestEncodingType](#mssmoothmanifestencodingtype)
   - [MxfAfdSignalingType](#mxfafdsignalingtype)
   - [MxfProfileType](#mxfprofiletype)
+  - [MxfXavcDurationModeType](#mxfxavcdurationmodetype)
   - [NielsenActiveWatermarkProcessTypeType](#nielsenactivewatermarkprocesstypetype)
   - [NielsenSourceWatermarkStatusTypeType](#nielsensourcewatermarkstatustypetype)
   - [NielsenUniqueTicPerAudioTrackTypeType](#nielsenuniqueticperaudiotracktypetype)
@@ -291,6 +297,7 @@ type annotations stubs module
   - [OutputSdtType](#outputsdttype)
   - [PresetListByType](#presetlistbytype)
   - [PricingPlanType](#pricingplantype)
+  - [ProresChromaSamplingType](#proreschromasamplingtype)
   - [ProresCodecProfileType](#prorescodecprofiletype)
   - [ProresFramerateControlType](#proresframeratecontroltype)
   - [ProresFramerateConversionAlgorithmType](#proresframerateconversionalgorithmtype)
@@ -306,6 +313,7 @@ type annotations stubs module
   - [RespondToAfdType](#respondtoafdtype)
   - [S3ObjectCannedAclType](#s3objectcannedacltype)
   - [S3ServerSideEncryptionTypeType](#s3serversideencryptiontypetype)
+  - [SampleRangeConversionType](#samplerangeconversiontype)
   - [ScalingBehaviorType](#scalingbehaviortype)
   - [SccDestinationFramerateType](#sccdestinationframeratetype)
   - [SimulateReservedQueueType](#simulatereservedqueuetype)
@@ -338,6 +346,26 @@ type annotations stubs module
   - [WatermarkingStrengthType](#watermarkingstrengthtype)
   - [WavFormatType](#wavformattype)
   - [WebvttStylePassthroughType](#webvttstylepassthroughtype)
+  - [Xavc4kIntraCbgProfileClassType](#xavc4kintracbgprofileclasstype)
+  - [Xavc4kIntraVbrProfileClassType](#xavc4kintravbrprofileclasstype)
+  - [Xavc4kProfileBitrateClassType](#xavc4kprofilebitrateclasstype)
+  - [Xavc4kProfileCodecProfileType](#xavc4kprofilecodecprofiletype)
+  - [Xavc4kProfileQualityTuningLevelType](#xavc4kprofilequalitytuningleveltype)
+  - [XavcAdaptiveQuantizationType](#xavcadaptivequantizationtype)
+  - [XavcEntropyEncodingType](#xavcentropyencodingtype)
+  - [XavcFlickerAdaptiveQuantizationType](#xavcflickeradaptivequantizationtype)
+  - [XavcFramerateControlType](#xavcframeratecontroltype)
+  - [XavcFramerateConversionAlgorithmType](#xavcframerateconversionalgorithmtype)
+  - [XavcGopBReferenceType](#xavcgopbreferencetype)
+  - [XavcHdIntraCbgProfileClassType](#xavchdintracbgprofileclasstype)
+  - [XavcHdProfileBitrateClassType](#xavchdprofilebitrateclasstype)
+  - [XavcHdProfileQualityTuningLevelType](#xavchdprofilequalitytuningleveltype)
+  - [XavcHdProfileTelecineType](#xavchdprofiletelecinetype)
+  - [XavcInterlaceModeType](#xavcinterlacemodetype)
+  - [XavcProfileType](#xavcprofiletype)
+  - [XavcSlowPalType](#xavcslowpaltype)
+  - [XavcSpatialAdaptiveQuantizationType](#xavcspatialadaptivequantizationtype)
+  - [XavcTemporalAdaptiveQuantizationType](#xavctemporaladaptivequantizationtype)
 
 ## AacAudioDescriptionBroadcasterMixType
 
@@ -716,6 +744,7 @@ from mypy_boto3_mediaconvert.literals import AudioSelectorTypeType
 
 Values:
 
+- `HLS_RENDITION_GROUP`
 - `LANGUAGE_CODE`
 - `PID`
 - `TRACK`
@@ -1050,6 +1079,18 @@ Values:
 - `AES_CTR`
 - `SAMPLE_AES`
 
+## CmafImageBasedTrickPlayType
+
+```python
+from mypy_boto3_mediaconvert.literals import CmafImageBasedTrickPlayType
+```
+
+Values:
+
+- `NONE`
+- `THUMBNAIL`
+- `THUMBNAIL_AND_FULLFRAME`
+
 ## CmafInitializationVectorInManifestType
 
 ```python
@@ -1340,6 +1381,18 @@ Values:
 - `HBBTV_1_5`
 - `NONE`
 
+## DashIsoImageBasedTrickPlayType
+
+```python
+from mypy_boto3_mediaconvert.literals import DashIsoImageBasedTrickPlayType
+```
+
+Values:
+
+- `NONE`
+- `THUMBNAIL`
+- `THUMBNAIL_AND_FULLFRAME`
+
 ## DashIsoMpdProfileType
 
 ```python
@@ -1614,7 +1667,10 @@ from mypy_boto3_mediaconvert.literals import Eac3AtmosCodingModeType
 
 Values:
 
+- `CODING_MODE_5_1_4`
+- `CODING_MODE_7_1_4`
 - `CODING_MODE_9_1_6`
+- `CODING_MODE_AUTO`
 
 ## Eac3AtmosDialogueIntelligenceType
 
@@ -1626,6 +1682,17 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+## Eac3AtmosDownmixControlType
+
+```python
+from mypy_boto3_mediaconvert.literals import Eac3AtmosDownmixControlType
+```
+
+Values:
+
+- `INITIALIZE_FROM_SOURCE`
+- `SPECIFIED`
 
 ## Eac3AtmosDynamicRangeCompressionLineType
 
@@ -1656,6 +1723,17 @@ Values:
 - `MUSIC_STANDARD`
 - `NONE`
 - `SPEECH`
+
+## Eac3AtmosDynamicRangeControlType
+
+```python
+from mypy_boto3_mediaconvert.literals import Eac3AtmosDynamicRangeControlType
+```
+
+Values:
+
+- `INITIALIZE_FROM_SOURCE`
+- `SPECIFIED`
 
 ## Eac3AtmosMeteringModeType
 
@@ -2647,6 +2725,18 @@ Values:
 
 - `EXCLUDE`
 - `INCLUDE`
+
+## HlsImageBasedTrickPlayType
+
+```python
+from mypy_boto3_mediaconvert.literals import HlsImageBasedTrickPlayType
+```
+
+Values:
+
+- `NONE`
+- `THUMBNAIL`
+- `THUMBNAIL_AND_FULLFRAME`
 
 ## HlsInitializationVectorInManifestType
 
@@ -3774,7 +3864,19 @@ Values:
 
 - `D_10`
 - `OP1A`
+- `XAVC`
 - `XDCAM`
+
+## MxfXavcDurationModeType
+
+```python
+from mypy_boto3_mediaconvert.literals import MxfXavcDurationModeType
+```
+
+Values:
+
+- `ALLOW_ANY_DURATION`
+- `DROP_FRAMES_FOR_COMPLIANCE`
 
 ## NielsenActiveWatermarkProcessTypeType
 
@@ -3900,6 +4002,17 @@ Values:
 - `ON_DEMAND`
 - `RESERVED`
 
+## ProresChromaSamplingType
+
+```python
+from mypy_boto3_mediaconvert.literals import ProresChromaSamplingType
+```
+
+Values:
+
+- `PRESERVE_444_SAMPLING`
+- `SUBSAMPLE_TO_422`
+
 ## ProresCodecProfileType
 
 ```python
@@ -3912,6 +4025,8 @@ Values:
 - `APPLE_PRORES_422_HQ`
 - `APPLE_PRORES_422_LT`
 - `APPLE_PRORES_422_PROXY`
+- `APPLE_PRORES_4444`
+- `APPLE_PRORES_4444_XQ`
 
 ## ProresFramerateControlType
 
@@ -4073,6 +4188,17 @@ Values:
 
 - `SERVER_SIDE_ENCRYPTION_KMS`
 - `SERVER_SIDE_ENCRYPTION_S3`
+
+## SampleRangeConversionType
+
+```python
+from mypy_boto3_mediaconvert.literals import SampleRangeConversionType
+```
+
+Values:
+
+- `LIMITED_RANGE_SQUEEZE`
+- `NONE`
 
 ## ScalingBehaviorType
 
@@ -4308,6 +4434,7 @@ Values:
 - `VC3`
 - `VP8`
 - `VP9`
+- `XAVC`
 
 ## VideoTimecodeInsertionType
 
@@ -4459,6 +4586,246 @@ Values:
 
 ```python
 from mypy_boto3_mediaconvert.literals import WebvttStylePassthroughType
+```
+
+Values:
+
+- `DISABLED`
+- `ENABLED`
+
+## Xavc4kIntraCbgProfileClassType
+
+```python
+from mypy_boto3_mediaconvert.literals import Xavc4kIntraCbgProfileClassType
+```
+
+Values:
+
+- `CLASS_100`
+- `CLASS_300`
+- `CLASS_480`
+
+## Xavc4kIntraVbrProfileClassType
+
+```python
+from mypy_boto3_mediaconvert.literals import Xavc4kIntraVbrProfileClassType
+```
+
+Values:
+
+- `CLASS_100`
+- `CLASS_300`
+- `CLASS_480`
+
+## Xavc4kProfileBitrateClassType
+
+```python
+from mypy_boto3_mediaconvert.literals import Xavc4kProfileBitrateClassType
+```
+
+Values:
+
+- `BITRATE_CLASS_100`
+- `BITRATE_CLASS_140`
+- `BITRATE_CLASS_200`
+
+## Xavc4kProfileCodecProfileType
+
+```python
+from mypy_boto3_mediaconvert.literals import Xavc4kProfileCodecProfileType
+```
+
+Values:
+
+- `HIGH`
+- `HIGH_422`
+
+## Xavc4kProfileQualityTuningLevelType
+
+```python
+from mypy_boto3_mediaconvert.literals import Xavc4kProfileQualityTuningLevelType
+```
+
+Values:
+
+- `MULTI_PASS_HQ`
+- `SINGLE_PASS`
+- `SINGLE_PASS_HQ`
+
+## XavcAdaptiveQuantizationType
+
+```python
+from mypy_boto3_mediaconvert.literals import XavcAdaptiveQuantizationType
+```
+
+Values:
+
+- `AUTO`
+- `HIGH`
+- `HIGHER`
+- `LOW`
+- `MAX`
+- `MEDIUM`
+- `OFF`
+
+## XavcEntropyEncodingType
+
+```python
+from mypy_boto3_mediaconvert.literals import XavcEntropyEncodingType
+```
+
+Values:
+
+- `AUTO`
+- `CABAC`
+- `CAVLC`
+
+## XavcFlickerAdaptiveQuantizationType
+
+```python
+from mypy_boto3_mediaconvert.literals import XavcFlickerAdaptiveQuantizationType
+```
+
+Values:
+
+- `DISABLED`
+- `ENABLED`
+
+## XavcFramerateControlType
+
+```python
+from mypy_boto3_mediaconvert.literals import XavcFramerateControlType
+```
+
+Values:
+
+- `INITIALIZE_FROM_SOURCE`
+- `SPECIFIED`
+
+## XavcFramerateConversionAlgorithmType
+
+```python
+from mypy_boto3_mediaconvert.literals import XavcFramerateConversionAlgorithmType
+```
+
+Values:
+
+- `DUPLICATE_DROP`
+- `FRAMEFORMER`
+- `INTERPOLATE`
+
+## XavcGopBReferenceType
+
+```python
+from mypy_boto3_mediaconvert.literals import XavcGopBReferenceType
+```
+
+Values:
+
+- `DISABLED`
+- `ENABLED`
+
+## XavcHdIntraCbgProfileClassType
+
+```python
+from mypy_boto3_mediaconvert.literals import XavcHdIntraCbgProfileClassType
+```
+
+Values:
+
+- `CLASS_100`
+- `CLASS_200`
+- `CLASS_50`
+
+## XavcHdProfileBitrateClassType
+
+```python
+from mypy_boto3_mediaconvert.literals import XavcHdProfileBitrateClassType
+```
+
+Values:
+
+- `BITRATE_CLASS_25`
+- `BITRATE_CLASS_35`
+- `BITRATE_CLASS_50`
+
+## XavcHdProfileQualityTuningLevelType
+
+```python
+from mypy_boto3_mediaconvert.literals import XavcHdProfileQualityTuningLevelType
+```
+
+Values:
+
+- `MULTI_PASS_HQ`
+- `SINGLE_PASS`
+- `SINGLE_PASS_HQ`
+
+## XavcHdProfileTelecineType
+
+```python
+from mypy_boto3_mediaconvert.literals import XavcHdProfileTelecineType
+```
+
+Values:
+
+- `HARD`
+- `NONE`
+
+## XavcInterlaceModeType
+
+```python
+from mypy_boto3_mediaconvert.literals import XavcInterlaceModeType
+```
+
+Values:
+
+- `BOTTOM_FIELD`
+- `FOLLOW_BOTTOM_FIELD`
+- `FOLLOW_TOP_FIELD`
+- `PROGRESSIVE`
+- `TOP_FIELD`
+
+## XavcProfileType
+
+```python
+from mypy_boto3_mediaconvert.literals import XavcProfileType
+```
+
+Values:
+
+- `XAVC_4K`
+- `XAVC_4K_INTRA_CBG`
+- `XAVC_4K_INTRA_VBR`
+- `XAVC_HD`
+- `XAVC_HD_INTRA_CBG`
+
+## XavcSlowPalType
+
+```python
+from mypy_boto3_mediaconvert.literals import XavcSlowPalType
+```
+
+Values:
+
+- `DISABLED`
+- `ENABLED`
+
+## XavcSpatialAdaptiveQuantizationType
+
+```python
+from mypy_boto3_mediaconvert.literals import XavcSpatialAdaptiveQuantizationType
+```
+
+Values:
+
+- `DISABLED`
+- `ENABLED`
+
+## XavcTemporalAdaptiveQuantizationType
+
+```python
+from mypy_boto3_mediaconvert.literals import XavcTemporalAdaptiveQuantizationType
 ```
 
 Values:

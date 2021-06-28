@@ -8,15 +8,22 @@ type annotations stubs module
 [mypy_boto3_mwaa](https://pypi.org/project/mypy-boto3-mwaa/).
 
 - [Typed dictionaries for boto3 MWAA module](#typed-dictionaries-for-boto3-mwaa-module)
-  - [CreateCliTokenResponseTypeDef](#createclitokenresponsetypedef)
-  - [CreateEnvironmentOutputTypeDef](#createenvironmentoutputtypedef)
-  - [CreateWebLoginTokenResponseTypeDef](#createweblogintokenresponsetypedef)
+  - [CreateCliTokenRequestTypeDef](#createclitokenrequesttypedef)
+  - [CreateCliTokenResponseResponseTypeDef](#createclitokenresponseresponsetypedef)
+  - [CreateEnvironmentInputTypeDef](#createenvironmentinputtypedef)
+  - [CreateEnvironmentOutputResponseTypeDef](#createenvironmentoutputresponsetypedef)
+  - [CreateWebLoginTokenRequestTypeDef](#createweblogintokenrequesttypedef)
+  - [CreateWebLoginTokenResponseResponseTypeDef](#createweblogintokenresponseresponsetypedef)
+  - [DeleteEnvironmentInputTypeDef](#deleteenvironmentinputtypedef)
   - [DimensionTypeDef](#dimensiontypedef)
   - [EnvironmentTypeDef](#environmenttypedef)
-  - [GetEnvironmentOutputTypeDef](#getenvironmentoutputtypedef)
+  - [GetEnvironmentInputTypeDef](#getenvironmentinputtypedef)
+  - [GetEnvironmentOutputResponseTypeDef](#getenvironmentoutputresponsetypedef)
   - [LastUpdateTypeDef](#lastupdatetypedef)
-  - [ListEnvironmentsOutputTypeDef](#listenvironmentsoutputtypedef)
-  - [ListTagsForResourceOutputTypeDef](#listtagsforresourceoutputtypedef)
+  - [ListEnvironmentsInputTypeDef](#listenvironmentsinputtypedef)
+  - [ListEnvironmentsOutputResponseTypeDef](#listenvironmentsoutputresponsetypedef)
+  - [ListTagsForResourceInputTypeDef](#listtagsforresourceinputtypedef)
+  - [ListTagsForResourceOutputResponseTypeDef](#listtagsforresourceoutputresponsetypedef)
   - [LoggingConfigurationInputTypeDef](#loggingconfigurationinputtypedef)
   - [LoggingConfigurationTypeDef](#loggingconfigurationtypedef)
   - [MetricDatumTypeDef](#metricdatumtypedef)
@@ -24,27 +31,78 @@ type annotations stubs module
   - [ModuleLoggingConfigurationTypeDef](#moduleloggingconfigurationtypedef)
   - [NetworkConfigurationTypeDef](#networkconfigurationtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
+  - [PublishMetricsInputTypeDef](#publishmetricsinputtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [StatisticSetTypeDef](#statisticsettypedef)
-  - [UpdateEnvironmentOutputTypeDef](#updateenvironmentoutputtypedef)
+  - [TagResourceInputTypeDef](#tagresourceinputtypedef)
+  - [UntagResourceInputTypeDef](#untagresourceinputtypedef)
+  - [UpdateEnvironmentInputTypeDef](#updateenvironmentinputtypedef)
+  - [UpdateEnvironmentOutputResponseTypeDef](#updateenvironmentoutputresponsetypedef)
   - [UpdateErrorTypeDef](#updateerrortypedef)
   - [UpdateNetworkConfigurationInputTypeDef](#updatenetworkconfigurationinputtypedef)
 
-## CreateCliTokenResponseTypeDef
+## CreateCliTokenRequestTypeDef
 
 ```python
-from mypy_boto3_mwaa.type_defs import CreateCliTokenResponseTypeDef
+from mypy_boto3_mwaa.type_defs import CreateCliTokenRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Name`: `str`
+
+## CreateCliTokenResponseResponseTypeDef
+
+```python
+from mypy_boto3_mwaa.type_defs import CreateCliTokenResponseResponseTypeDef
+```
+
+Required fields:
 
 - `CliToken`: `str`
 - `WebServerHostname`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateEnvironmentOutputTypeDef
+## CreateEnvironmentInputTypeDef
 
 ```python
-from mypy_boto3_mwaa.type_defs import CreateEnvironmentOutputTypeDef
+from mypy_boto3_mwaa.type_defs import CreateEnvironmentInputTypeDef
+```
+
+Required fields:
+
+- `DagS3Path`: `str`
+- `ExecutionRoleArn`: `str`
+- `Name`: `str`
+- `NetworkConfiguration`:
+  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
+- `SourceBucketArn`: `str`
+
+Optional fields:
+
+- `AirflowConfigurationOptions`: `Dict`\[`str`, `str`\]
+- `AirflowVersion`: `str`
+- `EnvironmentClass`: `str`
+- `KmsKey`: `str`
+- `LoggingConfiguration`:
+  [LoggingConfigurationInputTypeDef](./type_defs.md#loggingconfigurationinputtypedef)
+- `MaxWorkers`: `int`
+- `MinWorkers`: `int`
+- `PluginsS3ObjectVersion`: `str`
+- `PluginsS3Path`: `str`
+- `RequirementsS3ObjectVersion`: `str`
+- `RequirementsS3Path`: `str`
+- `Schedulers`: `int`
+- `Tags`: `Dict`\[`str`, `str`\]
+- `WebserverAccessMode`:
+  [WebserverAccessModeType](./literals.md#webserveraccessmodetype)
+- `WeeklyMaintenanceWindowStart`: `str`
+
+## CreateEnvironmentOutputResponseTypeDef
+
+```python
+from mypy_boto3_mwaa.type_defs import CreateEnvironmentOutputResponseTypeDef
 ```
 
 Required fields:
@@ -53,16 +111,38 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateWebLoginTokenResponseTypeDef
+## CreateWebLoginTokenRequestTypeDef
 
 ```python
-from mypy_boto3_mwaa.type_defs import CreateWebLoginTokenResponseTypeDef
+from mypy_boto3_mwaa.type_defs import CreateWebLoginTokenRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Name`: `str`
+
+## CreateWebLoginTokenResponseResponseTypeDef
+
+```python
+from mypy_boto3_mwaa.type_defs import CreateWebLoginTokenResponseResponseTypeDef
+```
+
+Required fields:
 
 - `WebServerHostname`: `str`
 - `WebToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteEnvironmentInputTypeDef
+
+```python
+from mypy_boto3_mwaa.type_defs import DeleteEnvironmentInputTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
 
 ## DimensionTypeDef
 
@@ -113,10 +193,20 @@ Optional fields:
 - `WebserverUrl`: `str`
 - `WeeklyMaintenanceWindowStart`: `str`
 
-## GetEnvironmentOutputTypeDef
+## GetEnvironmentInputTypeDef
 
 ```python
-from mypy_boto3_mwaa.type_defs import GetEnvironmentOutputTypeDef
+from mypy_boto3_mwaa.type_defs import GetEnvironmentInputTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+## GetEnvironmentOutputResponseTypeDef
+
+```python
+from mypy_boto3_mwaa.type_defs import GetEnvironmentOutputResponseTypeDef
 ```
 
 Required fields:
@@ -137,10 +227,21 @@ Optional fields:
 - `Error`: [UpdateErrorTypeDef](./type_defs.md#updateerrortypedef)
 - `Status`: [UpdateStatusType](./literals.md#updatestatustype)
 
-## ListEnvironmentsOutputTypeDef
+## ListEnvironmentsInputTypeDef
 
 ```python
-from mypy_boto3_mwaa.type_defs import ListEnvironmentsOutputTypeDef
+from mypy_boto3_mwaa.type_defs import ListEnvironmentsInputTypeDef
+```
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListEnvironmentsOutputResponseTypeDef
+
+```python
+from mypy_boto3_mwaa.type_defs import ListEnvironmentsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -150,10 +251,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceOutputTypeDef
+## ListTagsForResourceInputTypeDef
 
 ```python
-from mypy_boto3_mwaa.type_defs import ListTagsForResourceOutputTypeDef
+from mypy_boto3_mwaa.type_defs import ListTagsForResourceInputTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+
+## ListTagsForResourceOutputResponseTypeDef
+
+```python
+from mypy_boto3_mwaa.type_defs import ListTagsForResourceOutputResponseTypeDef
 ```
 
 Required fields:
@@ -209,7 +320,7 @@ from mypy_boto3_mwaa.type_defs import MetricDatumTypeDef
 Required fields:
 
 - `MetricName`: `str`
-- `Timestamp`: `datetime`
+- `Timestamp`: `Union`\[`datetime`, `str`\]
 
 Optional fields:
 
@@ -264,6 +375,18 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+## PublishMetricsInputTypeDef
+
+```python
+from mypy_boto3_mwaa.type_defs import PublishMetricsInputTypeDef
+```
+
+Required fields:
+
+- `EnvironmentName`: `str`
+- `MetricData`:
+  `List`\[[MetricDatumTypeDef](./type_defs.md#metricdatumtypedef)\]
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -291,10 +414,65 @@ Optional fields:
 - `SampleCount`: `int`
 - `Sum`: `float`
 
-## UpdateEnvironmentOutputTypeDef
+## TagResourceInputTypeDef
 
 ```python
-from mypy_boto3_mwaa.type_defs import UpdateEnvironmentOutputTypeDef
+from mypy_boto3_mwaa.type_defs import TagResourceInputTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## UntagResourceInputTypeDef
+
+```python
+from mypy_boto3_mwaa.type_defs import UntagResourceInputTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `tagKeys`: `List`\[`str`\]
+
+## UpdateEnvironmentInputTypeDef
+
+```python
+from mypy_boto3_mwaa.type_defs import UpdateEnvironmentInputTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+Optional fields:
+
+- `AirflowConfigurationOptions`: `Dict`\[`str`, `str`\]
+- `AirflowVersion`: `str`
+- `DagS3Path`: `str`
+- `EnvironmentClass`: `str`
+- `ExecutionRoleArn`: `str`
+- `LoggingConfiguration`:
+  [LoggingConfigurationInputTypeDef](./type_defs.md#loggingconfigurationinputtypedef)
+- `MaxWorkers`: `int`
+- `MinWorkers`: `int`
+- `NetworkConfiguration`:
+  [UpdateNetworkConfigurationInputTypeDef](./type_defs.md#updatenetworkconfigurationinputtypedef)
+- `PluginsS3ObjectVersion`: `str`
+- `PluginsS3Path`: `str`
+- `RequirementsS3ObjectVersion`: `str`
+- `RequirementsS3Path`: `str`
+- `Schedulers`: `int`
+- `SourceBucketArn`: `str`
+- `WebserverAccessMode`:
+  [WebserverAccessModeType](./literals.md#webserveraccessmodetype)
+- `WeeklyMaintenanceWindowStart`: `str`
+
+## UpdateEnvironmentOutputResponseTypeDef
+
+```python
+from mypy_boto3_mwaa.type_defs import UpdateEnvironmentOutputResponseTypeDef
 ```
 
 Required fields:

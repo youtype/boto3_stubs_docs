@@ -8,31 +8,60 @@ type annotations stubs module
 [mypy_boto3_applicationcostprofiler](https://pypi.org/project/mypy-boto3-applicationcostprofiler/).
 
 - [Typed dictionaries for boto3 ApplicationCostProfiler module](#typed-dictionaries-for-boto3-applicationcostprofiler-module)
-  - [DeleteReportDefinitionResultTypeDef](#deletereportdefinitionresulttypedef)
-  - [GetReportDefinitionResultTypeDef](#getreportdefinitionresulttypedef)
-  - [ImportApplicationUsageResultTypeDef](#importapplicationusageresulttypedef)
-  - [ListReportDefinitionsResultTypeDef](#listreportdefinitionsresulttypedef)
+  - [DeleteReportDefinitionRequestTypeDef](#deletereportdefinitionrequesttypedef)
+  - [DeleteReportDefinitionResultResponseTypeDef](#deletereportdefinitionresultresponsetypedef)
+  - [GetReportDefinitionRequestTypeDef](#getreportdefinitionrequesttypedef)
+  - [GetReportDefinitionResultResponseTypeDef](#getreportdefinitionresultresponsetypedef)
+  - [ImportApplicationUsageRequestTypeDef](#importapplicationusagerequesttypedef)
+  - [ImportApplicationUsageResultResponseTypeDef](#importapplicationusageresultresponsetypedef)
+  - [ListReportDefinitionsRequestTypeDef](#listreportdefinitionsrequesttypedef)
+  - [ListReportDefinitionsResultResponseTypeDef](#listreportdefinitionsresultresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutReportDefinitionResultTypeDef](#putreportdefinitionresulttypedef)
+  - [PutReportDefinitionRequestTypeDef](#putreportdefinitionrequesttypedef)
+  - [PutReportDefinitionResultResponseTypeDef](#putreportdefinitionresultresponsetypedef)
   - [ReportDefinitionTypeDef](#reportdefinitiontypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3LocationTypeDef](#s3locationtypedef)
   - [SourceS3LocationTypeDef](#sources3locationtypedef)
-  - [UpdateReportDefinitionResultTypeDef](#updatereportdefinitionresulttypedef)
+  - [UpdateReportDefinitionRequestTypeDef](#updatereportdefinitionrequesttypedef)
+  - [UpdateReportDefinitionResultResponseTypeDef](#updatereportdefinitionresultresponsetypedef)
 
-## DeleteReportDefinitionResultTypeDef
+## DeleteReportDefinitionRequestTypeDef
 
 ```python
-from mypy_boto3_applicationcostprofiler.type_defs import DeleteReportDefinitionResultTypeDef
+from mypy_boto3_applicationcostprofiler.type_defs import DeleteReportDefinitionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `reportId`: `str`
 
-## GetReportDefinitionResultTypeDef
+## DeleteReportDefinitionResultResponseTypeDef
 
 ```python
-from mypy_boto3_applicationcostprofiler.type_defs import GetReportDefinitionResultTypeDef
+from mypy_boto3_applicationcostprofiler.type_defs import DeleteReportDefinitionResultResponseTypeDef
+```
+
+Required fields:
+
+- `reportId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetReportDefinitionRequestTypeDef
+
+```python
+from mypy_boto3_applicationcostprofiler.type_defs import GetReportDefinitionRequestTypeDef
+```
+
+Required fields:
+
+- `reportId`: `str`
+
+## GetReportDefinitionResultResponseTypeDef
+
+```python
+from mypy_boto3_applicationcostprofiler.type_defs import GetReportDefinitionResultResponseTypeDef
 ```
 
 Required fields:
@@ -45,28 +74,56 @@ Required fields:
   [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 - `createdAt`: `datetime`
 - `lastUpdated`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ImportApplicationUsageResultTypeDef
+## ImportApplicationUsageRequestTypeDef
 
 ```python
-from mypy_boto3_applicationcostprofiler.type_defs import ImportApplicationUsageResultTypeDef
+from mypy_boto3_applicationcostprofiler.type_defs import ImportApplicationUsageRequestTypeDef
+```
+
+Required fields:
+
+- `sourceS3Location`:
+  [SourceS3LocationTypeDef](./type_defs.md#sources3locationtypedef)
+
+## ImportApplicationUsageResultResponseTypeDef
+
+```python
+from mypy_boto3_applicationcostprofiler.type_defs import ImportApplicationUsageResultResponseTypeDef
 ```
 
 Required fields:
 
 - `importId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListReportDefinitionsResultTypeDef
+## ListReportDefinitionsRequestTypeDef
 
 ```python
-from mypy_boto3_applicationcostprofiler.type_defs import ListReportDefinitionsResultTypeDef
+from mypy_boto3_applicationcostprofiler.type_defs import ListReportDefinitionsRequestTypeDef
 ```
 
 Optional fields:
 
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListReportDefinitionsResultResponseTypeDef
+
+```python
+from mypy_boto3_applicationcostprofiler.type_defs import ListReportDefinitionsResultResponseTypeDef
+```
+
+Required fields:
+
 - `reportDefinitions`:
   `List`\[[ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -80,15 +137,32 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## PutReportDefinitionResultTypeDef
+## PutReportDefinitionRequestTypeDef
 
 ```python
-from mypy_boto3_applicationcostprofiler.type_defs import PutReportDefinitionResultTypeDef
+from mypy_boto3_applicationcostprofiler.type_defs import PutReportDefinitionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `reportId`: `str`
+- `reportDescription`: `str`
+- `reportFrequency`: [ReportFrequencyType](./literals.md#reportfrequencytype)
+- `format`: [FormatType](./literals.md#formattype)
+- `destinationS3Location`:
+  [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+
+## PutReportDefinitionResultResponseTypeDef
+
+```python
+from mypy_boto3_applicationcostprofiler.type_defs import PutReportDefinitionResultResponseTypeDef
+```
+
+Required fields:
+
+- `reportId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ReportDefinitionTypeDef
 
@@ -106,6 +180,20 @@ Optional fields:
   [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_applicationcostprofiler.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## S3LocationTypeDef
 
@@ -133,12 +221,29 @@ Optional fields:
 
 - `region`: [S3BucketRegionType](./literals.md#s3bucketregiontype)
 
-## UpdateReportDefinitionResultTypeDef
+## UpdateReportDefinitionRequestTypeDef
 
 ```python
-from mypy_boto3_applicationcostprofiler.type_defs import UpdateReportDefinitionResultTypeDef
+from mypy_boto3_applicationcostprofiler.type_defs import UpdateReportDefinitionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `reportId`: `str`
+- `reportDescription`: `str`
+- `reportFrequency`: [ReportFrequencyType](./literals.md#reportfrequencytype)
+- `format`: [FormatType](./literals.md#formattype)
+- `destinationS3Location`:
+  [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+
+## UpdateReportDefinitionResultResponseTypeDef
+
+```python
+from mypy_boto3_applicationcostprofiler.type_defs import UpdateReportDefinitionResultResponseTypeDef
+```
+
+Required fields:
+
+- `reportId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

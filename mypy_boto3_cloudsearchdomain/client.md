@@ -55,6 +55,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("cloudsearchdomain").can_paginate` method.
 
 Boto3 documentation:
@@ -67,6 +69,8 @@ Arguments:
 Returns `bool`.
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("cloudsearchdomain").generate_presigned_url`
 method.
@@ -85,10 +89,15 @@ Returns `str`.
 
 ### search
 
+Retrieves a list of documents that match the specified search criteria.
+
 Type annotations for `boto3.client("cloudsearchdomain").search` method.
 
 Boto3 documentation:
 [CloudSearchDomain.Client.search](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.search)
+
+Arguments mapping described in
+[SearchRequestTypeDef](./type_defs.md#searchrequesttypedef).
 
 Keyword-only arguments:
 
@@ -107,14 +116,20 @@ Keyword-only arguments:
 - `start`: `int`
 - `stats`: `str`
 
-Returns [SearchResponseTypeDef](./type_defs.md#searchresponsetypedef).
+Returns
+[SearchResponseResponseTypeDef](./type_defs.md#searchresponseresponsetypedef).
 
 ### suggest
+
+Retrieves autocomplete suggestions for a partial query string.
 
 Type annotations for `boto3.client("cloudsearchdomain").suggest` method.
 
 Boto3 documentation:
 [CloudSearchDomain.Client.suggest](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.suggest)
+
+Arguments mapping described in
+[SuggestRequestTypeDef](./type_defs.md#suggestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -122,15 +137,21 @@ Keyword-only arguments:
 - `suggester`: `str` *(required)*
 - `size`: `int`
 
-Returns [SuggestResponseTypeDef](./type_defs.md#suggestresponsetypedef).
+Returns
+[SuggestResponseResponseTypeDef](./type_defs.md#suggestresponseresponsetypedef).
 
 ### upload_documents
+
+Posts a batch of documents to a search domain for indexing.
 
 Type annotations for `boto3.client("cloudsearchdomain").upload_documents`
 method.
 
 Boto3 documentation:
 [CloudSearchDomain.Client.upload_documents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.upload_documents)
+
+Arguments mapping described in
+[UploadDocumentsRequestTypeDef](./type_defs.md#uploaddocumentsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -139,4 +160,4 @@ Keyword-only arguments:
 - `contentType`: [ContentTypeType](./literals.md#contenttypetype) *(required)*
 
 Returns
-[UploadDocumentsResponseTypeDef](./type_defs.md#uploaddocumentsresponsetypedef).
+[UploadDocumentsResponseResponseTypeDef](./type_defs.md#uploaddocumentsresponseresponsetypedef).

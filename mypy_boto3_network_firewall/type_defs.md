@@ -10,23 +10,38 @@ type annotations stubs module
 - [Typed dictionaries for boto3 NetworkFirewall module](#typed-dictionaries-for-boto3-networkfirewall-module)
   - [ActionDefinitionTypeDef](#actiondefinitiontypedef)
   - [AddressTypeDef](#addresstypedef)
-  - [AssociateFirewallPolicyResponseTypeDef](#associatefirewallpolicyresponsetypedef)
-  - [AssociateSubnetsResponseTypeDef](#associatesubnetsresponsetypedef)
+  - [AssociateFirewallPolicyRequestTypeDef](#associatefirewallpolicyrequesttypedef)
+  - [AssociateFirewallPolicyResponseResponseTypeDef](#associatefirewallpolicyresponseresponsetypedef)
+  - [AssociateSubnetsRequestTypeDef](#associatesubnetsrequesttypedef)
+  - [AssociateSubnetsResponseResponseTypeDef](#associatesubnetsresponseresponsetypedef)
   - [AttachmentTypeDef](#attachmenttypedef)
-  - [CreateFirewallPolicyResponseTypeDef](#createfirewallpolicyresponsetypedef)
-  - [CreateFirewallResponseTypeDef](#createfirewallresponsetypedef)
-  - [CreateRuleGroupResponseTypeDef](#createrulegroupresponsetypedef)
+  - [CreateFirewallPolicyRequestTypeDef](#createfirewallpolicyrequesttypedef)
+  - [CreateFirewallPolicyResponseResponseTypeDef](#createfirewallpolicyresponseresponsetypedef)
+  - [CreateFirewallRequestTypeDef](#createfirewallrequesttypedef)
+  - [CreateFirewallResponseResponseTypeDef](#createfirewallresponseresponsetypedef)
+  - [CreateRuleGroupRequestTypeDef](#createrulegrouprequesttypedef)
+  - [CreateRuleGroupResponseResponseTypeDef](#createrulegroupresponseresponsetypedef)
   - [CustomActionTypeDef](#customactiontypedef)
-  - [DeleteFirewallPolicyResponseTypeDef](#deletefirewallpolicyresponsetypedef)
-  - [DeleteFirewallResponseTypeDef](#deletefirewallresponsetypedef)
-  - [DeleteRuleGroupResponseTypeDef](#deleterulegroupresponsetypedef)
-  - [DescribeFirewallPolicyResponseTypeDef](#describefirewallpolicyresponsetypedef)
-  - [DescribeFirewallResponseTypeDef](#describefirewallresponsetypedef)
-  - [DescribeLoggingConfigurationResponseTypeDef](#describeloggingconfigurationresponsetypedef)
-  - [DescribeResourcePolicyResponseTypeDef](#describeresourcepolicyresponsetypedef)
-  - [DescribeRuleGroupResponseTypeDef](#describerulegroupresponsetypedef)
+  - [DeleteFirewallPolicyRequestTypeDef](#deletefirewallpolicyrequesttypedef)
+  - [DeleteFirewallPolicyResponseResponseTypeDef](#deletefirewallpolicyresponseresponsetypedef)
+  - [DeleteFirewallRequestTypeDef](#deletefirewallrequesttypedef)
+  - [DeleteFirewallResponseResponseTypeDef](#deletefirewallresponseresponsetypedef)
+  - [DeleteResourcePolicyRequestTypeDef](#deleteresourcepolicyrequesttypedef)
+  - [DeleteRuleGroupRequestTypeDef](#deleterulegrouprequesttypedef)
+  - [DeleteRuleGroupResponseResponseTypeDef](#deleterulegroupresponseresponsetypedef)
+  - [DescribeFirewallPolicyRequestTypeDef](#describefirewallpolicyrequesttypedef)
+  - [DescribeFirewallPolicyResponseResponseTypeDef](#describefirewallpolicyresponseresponsetypedef)
+  - [DescribeFirewallRequestTypeDef](#describefirewallrequesttypedef)
+  - [DescribeFirewallResponseResponseTypeDef](#describefirewallresponseresponsetypedef)
+  - [DescribeLoggingConfigurationRequestTypeDef](#describeloggingconfigurationrequesttypedef)
+  - [DescribeLoggingConfigurationResponseResponseTypeDef](#describeloggingconfigurationresponseresponsetypedef)
+  - [DescribeResourcePolicyRequestTypeDef](#describeresourcepolicyrequesttypedef)
+  - [DescribeResourcePolicyResponseResponseTypeDef](#describeresourcepolicyresponseresponsetypedef)
+  - [DescribeRuleGroupRequestTypeDef](#describerulegrouprequesttypedef)
+  - [DescribeRuleGroupResponseResponseTypeDef](#describerulegroupresponseresponsetypedef)
   - [DimensionTypeDef](#dimensiontypedef)
-  - [DisassociateSubnetsResponseTypeDef](#disassociatesubnetsresponsetypedef)
+  - [DisassociateSubnetsRequestTypeDef](#disassociatesubnetsrequesttypedef)
+  - [DisassociateSubnetsResponseResponseTypeDef](#disassociatesubnetsresponseresponsetypedef)
   - [FirewallMetadataTypeDef](#firewallmetadatatypedef)
   - [FirewallPolicyMetadataTypeDef](#firewallpolicymetadatatypedef)
   - [FirewallPolicyResponseTypeDef](#firewallpolicyresponsetypedef)
@@ -35,10 +50,14 @@ type annotations stubs module
   - [FirewallTypeDef](#firewalltypedef)
   - [HeaderTypeDef](#headertypedef)
   - [IPSetTypeDef](#ipsettypedef)
-  - [ListFirewallPoliciesResponseTypeDef](#listfirewallpoliciesresponsetypedef)
-  - [ListFirewallsResponseTypeDef](#listfirewallsresponsetypedef)
-  - [ListRuleGroupsResponseTypeDef](#listrulegroupsresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListFirewallPoliciesRequestTypeDef](#listfirewallpoliciesrequesttypedef)
+  - [ListFirewallPoliciesResponseResponseTypeDef](#listfirewallpoliciesresponseresponsetypedef)
+  - [ListFirewallsRequestTypeDef](#listfirewallsrequesttypedef)
+  - [ListFirewallsResponseResponseTypeDef](#listfirewallsresponseresponsetypedef)
+  - [ListRuleGroupsRequestTypeDef](#listrulegroupsrequesttypedef)
+  - [ListRuleGroupsResponseResponseTypeDef](#listrulegroupsresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [LogDestinationConfigTypeDef](#logdestinationconfigtypedef)
   - [LoggingConfigurationTypeDef](#loggingconfigurationtypedef)
   - [MatchAttributesTypeDef](#matchattributestypedef)
@@ -47,6 +66,8 @@ type annotations stubs module
   - [PortRangeTypeDef](#portrangetypedef)
   - [PortSetTypeDef](#portsettypedef)
   - [PublishMetricActionTypeDef](#publishmetricactiontypedef)
+  - [PutResourcePolicyRequestTypeDef](#putresourcepolicyrequesttypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RuleDefinitionTypeDef](#ruledefinitiontypedef)
   - [RuleGroupMetadataTypeDef](#rulegroupmetadatatypedef)
   - [RuleGroupResponseTypeDef](#rulegroupresponsetypedef)
@@ -63,14 +84,23 @@ type annotations stubs module
   - [SubnetMappingTypeDef](#subnetmappingtypedef)
   - [SyncStateTypeDef](#syncstatetypedef)
   - [TCPFlagFieldTypeDef](#tcpflagfieldtypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TagTypeDef](#tagtypedef)
-  - [UpdateFirewallDeleteProtectionResponseTypeDef](#updatefirewalldeleteprotectionresponsetypedef)
-  - [UpdateFirewallDescriptionResponseTypeDef](#updatefirewalldescriptionresponsetypedef)
-  - [UpdateFirewallPolicyChangeProtectionResponseTypeDef](#updatefirewallpolicychangeprotectionresponsetypedef)
-  - [UpdateFirewallPolicyResponseTypeDef](#updatefirewallpolicyresponsetypedef)
-  - [UpdateLoggingConfigurationResponseTypeDef](#updateloggingconfigurationresponsetypedef)
-  - [UpdateRuleGroupResponseTypeDef](#updaterulegroupresponsetypedef)
-  - [UpdateSubnetChangeProtectionResponseTypeDef](#updatesubnetchangeprotectionresponsetypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateFirewallDeleteProtectionRequestTypeDef](#updatefirewalldeleteprotectionrequesttypedef)
+  - [UpdateFirewallDeleteProtectionResponseResponseTypeDef](#updatefirewalldeleteprotectionresponseresponsetypedef)
+  - [UpdateFirewallDescriptionRequestTypeDef](#updatefirewalldescriptionrequesttypedef)
+  - [UpdateFirewallDescriptionResponseResponseTypeDef](#updatefirewalldescriptionresponseresponsetypedef)
+  - [UpdateFirewallPolicyChangeProtectionRequestTypeDef](#updatefirewallpolicychangeprotectionrequesttypedef)
+  - [UpdateFirewallPolicyChangeProtectionResponseResponseTypeDef](#updatefirewallpolicychangeprotectionresponseresponsetypedef)
+  - [UpdateFirewallPolicyRequestTypeDef](#updatefirewallpolicyrequesttypedef)
+  - [UpdateFirewallPolicyResponseResponseTypeDef](#updatefirewallpolicyresponseresponsetypedef)
+  - [UpdateLoggingConfigurationRequestTypeDef](#updateloggingconfigurationrequesttypedef)
+  - [UpdateLoggingConfigurationResponseResponseTypeDef](#updateloggingconfigurationresponseresponsetypedef)
+  - [UpdateRuleGroupRequestTypeDef](#updaterulegrouprequesttypedef)
+  - [UpdateRuleGroupResponseResponseTypeDef](#updaterulegroupresponseresponsetypedef)
+  - [UpdateSubnetChangeProtectionRequestTypeDef](#updatesubnetchangeprotectionrequesttypedef)
+  - [UpdateSubnetChangeProtectionResponseResponseTypeDef](#updatesubnetchangeprotectionresponseresponsetypedef)
 
 ## ActionDefinitionTypeDef
 
@@ -93,32 +123,69 @@ Required fields:
 
 - `AddressDefinition`: `str`
 
-## AssociateFirewallPolicyResponseTypeDef
+## AssociateFirewallPolicyRequestTypeDef
 
 ```python
-from mypy_boto3_network_firewall.type_defs import AssociateFirewallPolicyResponseTypeDef
+from mypy_boto3_network_firewall.type_defs import AssociateFirewallPolicyRequestTypeDef
 ```
 
+Required fields:
+
+- `FirewallPolicyArn`: `str`
+
 Optional fields:
+
+- `UpdateToken`: `str`
+- `FirewallArn`: `str`
+- `FirewallName`: `str`
+
+## AssociateFirewallPolicyResponseResponseTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import AssociateFirewallPolicyResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FirewallArn`: `str`
 - `FirewallName`: `str`
 - `FirewallPolicyArn`: `str`
 - `UpdateToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssociateSubnetsResponseTypeDef
+## AssociateSubnetsRequestTypeDef
 
 ```python
-from mypy_boto3_network_firewall.type_defs import AssociateSubnetsResponseTypeDef
+from mypy_boto3_network_firewall.type_defs import AssociateSubnetsRequestTypeDef
 ```
 
+Required fields:
+
+- `SubnetMappings`:
+  `List`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
+
 Optional fields:
+
+- `UpdateToken`: `str`
+- `FirewallArn`: `str`
+- `FirewallName`: `str`
+
+## AssociateSubnetsResponseResponseTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import AssociateSubnetsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FirewallArn`: `str`
 - `FirewallName`: `str`
 - `SubnetMappings`:
   `List`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
 - `UpdateToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## AttachmentTypeDef
 
@@ -132,10 +199,28 @@ Optional fields:
 - `EndpointId`: `str`
 - `Status`: [AttachmentStatusType](./literals.md#attachmentstatustype)
 
-## CreateFirewallPolicyResponseTypeDef
+## CreateFirewallPolicyRequestTypeDef
 
 ```python
-from mypy_boto3_network_firewall.type_defs import CreateFirewallPolicyResponseTypeDef
+from mypy_boto3_network_firewall.type_defs import CreateFirewallPolicyRequestTypeDef
+```
+
+Required fields:
+
+- `FirewallPolicyName`: `str`
+- `FirewallPolicy`:
+  [FirewallPolicyTypeDef](./type_defs.md#firewallpolicytypedef)
+
+Optional fields:
+
+- `Description`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `DryRun`: `bool`
+
+## CreateFirewallPolicyResponseResponseTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import CreateFirewallPolicyResponseResponseTypeDef
 ```
 
 Required fields:
@@ -143,23 +228,69 @@ Required fields:
 - `UpdateToken`: `str`
 - `FirewallPolicyResponse`:
   [FirewallPolicyResponseTypeDef](./type_defs.md#firewallpolicyresponsetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateFirewallResponseTypeDef
+## CreateFirewallRequestTypeDef
 
 ```python
-from mypy_boto3_network_firewall.type_defs import CreateFirewallResponseTypeDef
+from mypy_boto3_network_firewall.type_defs import CreateFirewallRequestTypeDef
 ```
 
+Required fields:
+
+- `FirewallName`: `str`
+- `FirewallPolicyArn`: `str`
+- `VpcId`: `str`
+- `SubnetMappings`:
+  `List`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
+
 Optional fields:
+
+- `DeleteProtection`: `bool`
+- `SubnetChangeProtection`: `bool`
+- `FirewallPolicyChangeProtection`: `bool`
+- `Description`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateFirewallResponseResponseTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import CreateFirewallResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Firewall`: [FirewallTypeDef](./type_defs.md#firewalltypedef)
 - `FirewallStatus`:
   [FirewallStatusTypeDef](./type_defs.md#firewallstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRuleGroupResponseTypeDef
+## CreateRuleGroupRequestTypeDef
 
 ```python
-from mypy_boto3_network_firewall.type_defs import CreateRuleGroupResponseTypeDef
+from mypy_boto3_network_firewall.type_defs import CreateRuleGroupRequestTypeDef
+```
+
+Required fields:
+
+- `RuleGroupName`: `str`
+- `Type`: [RuleGroupTypeType](./literals.md#rulegrouptypetype)
+- `Capacity`: `int`
+
+Optional fields:
+
+- `RuleGroup`: [RuleGroupTypeDef](./type_defs.md#rulegrouptypedef)
+- `Rules`: `str`
+- `Description`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `DryRun`: `bool`
+
+## CreateRuleGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import CreateRuleGroupResponseResponseTypeDef
 ```
 
 Required fields:
@@ -167,6 +298,8 @@ Required fields:
 - `UpdateToken`: `str`
 - `RuleGroupResponse`:
   [RuleGroupResponseTypeDef](./type_defs.md#rulegroupresponsetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CustomActionTypeDef
 
@@ -180,44 +313,105 @@ Required fields:
 - `ActionDefinition`:
   [ActionDefinitionTypeDef](./type_defs.md#actiondefinitiontypedef)
 
-## DeleteFirewallPolicyResponseTypeDef
+## DeleteFirewallPolicyRequestTypeDef
 
 ```python
-from mypy_boto3_network_firewall.type_defs import DeleteFirewallPolicyResponseTypeDef
+from mypy_boto3_network_firewall.type_defs import DeleteFirewallPolicyRequestTypeDef
+```
+
+Optional fields:
+
+- `FirewallPolicyName`: `str`
+- `FirewallPolicyArn`: `str`
+
+## DeleteFirewallPolicyResponseResponseTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import DeleteFirewallPolicyResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `FirewallPolicyResponse`:
   [FirewallPolicyResponseTypeDef](./type_defs.md#firewallpolicyresponsetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteFirewallResponseTypeDef
+## DeleteFirewallRequestTypeDef
 
 ```python
-from mypy_boto3_network_firewall.type_defs import DeleteFirewallResponseTypeDef
+from mypy_boto3_network_firewall.type_defs import DeleteFirewallRequestTypeDef
 ```
 
 Optional fields:
 
+- `FirewallName`: `str`
+- `FirewallArn`: `str`
+
+## DeleteFirewallResponseResponseTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import DeleteFirewallResponseResponseTypeDef
+```
+
+Required fields:
+
 - `Firewall`: [FirewallTypeDef](./type_defs.md#firewalltypedef)
 - `FirewallStatus`:
   [FirewallStatusTypeDef](./type_defs.md#firewallstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteRuleGroupResponseTypeDef
+## DeleteResourcePolicyRequestTypeDef
 
 ```python
-from mypy_boto3_network_firewall.type_defs import DeleteRuleGroupResponseTypeDef
+from mypy_boto3_network_firewall.type_defs import DeleteResourcePolicyRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+
+## DeleteRuleGroupRequestTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import DeleteRuleGroupRequestTypeDef
+```
+
+Optional fields:
+
+- `RuleGroupName`: `str`
+- `RuleGroupArn`: `str`
+- `Type`: [RuleGroupTypeType](./literals.md#rulegrouptypetype)
+
+## DeleteRuleGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import DeleteRuleGroupResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `RuleGroupResponse`:
   [RuleGroupResponseTypeDef](./type_defs.md#rulegroupresponsetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFirewallPolicyResponseTypeDef
+## DescribeFirewallPolicyRequestTypeDef
 
 ```python
-from mypy_boto3_network_firewall.type_defs import DescribeFirewallPolicyResponseTypeDef
+from mypy_boto3_network_firewall.type_defs import DescribeFirewallPolicyRequestTypeDef
+```
+
+Optional fields:
+
+- `FirewallPolicyName`: `str`
+- `FirewallPolicyArn`: `str`
+
+## DescribeFirewallPolicyResponseResponseTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import DescribeFirewallPolicyResponseResponseTypeDef
 ```
 
 Required fields:
@@ -225,62 +419,110 @@ Required fields:
 - `UpdateToken`: `str`
 - `FirewallPolicyResponse`:
   [FirewallPolicyResponseTypeDef](./type_defs.md#firewallpolicyresponsetypedef)
-
-Optional fields:
-
 - `FirewallPolicy`:
   [FirewallPolicyTypeDef](./type_defs.md#firewallpolicytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFirewallResponseTypeDef
+## DescribeFirewallRequestTypeDef
 
 ```python
-from mypy_boto3_network_firewall.type_defs import DescribeFirewallResponseTypeDef
+from mypy_boto3_network_firewall.type_defs import DescribeFirewallRequestTypeDef
 ```
 
 Optional fields:
+
+- `FirewallName`: `str`
+- `FirewallArn`: `str`
+
+## DescribeFirewallResponseResponseTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import DescribeFirewallResponseResponseTypeDef
+```
+
+Required fields:
 
 - `UpdateToken`: `str`
 - `Firewall`: [FirewallTypeDef](./type_defs.md#firewalltypedef)
 - `FirewallStatus`:
   [FirewallStatusTypeDef](./type_defs.md#firewallstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLoggingConfigurationResponseTypeDef
+## DescribeLoggingConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_network_firewall.type_defs import DescribeLoggingConfigurationResponseTypeDef
+from mypy_boto3_network_firewall.type_defs import DescribeLoggingConfigurationRequestTypeDef
 ```
 
 Optional fields:
 
 - `FirewallArn`: `str`
-- `LoggingConfiguration`:
-  [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
+- `FirewallName`: `str`
 
-## DescribeResourcePolicyResponseTypeDef
+## DescribeLoggingConfigurationResponseResponseTypeDef
 
 ```python
-from mypy_boto3_network_firewall.type_defs import DescribeResourcePolicyResponseTypeDef
+from mypy_boto3_network_firewall.type_defs import DescribeLoggingConfigurationResponseResponseTypeDef
+```
+
+Required fields:
+
+- `FirewallArn`: `str`
+- `LoggingConfiguration`:
+  [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeResourcePolicyRequestTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import DescribeResourcePolicyRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+
+## DescribeResourcePolicyResponseResponseTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import DescribeResourcePolicyResponseResponseTypeDef
+```
+
+Required fields:
+
+- `Policy`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeRuleGroupRequestTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import DescribeRuleGroupRequestTypeDef
 ```
 
 Optional fields:
 
-- `Policy`: `str`
+- `RuleGroupName`: `str`
+- `RuleGroupArn`: `str`
+- `Type`: [RuleGroupTypeType](./literals.md#rulegrouptypetype)
 
-## DescribeRuleGroupResponseTypeDef
+## DescribeRuleGroupResponseResponseTypeDef
 
 ```python
-from mypy_boto3_network_firewall.type_defs import DescribeRuleGroupResponseTypeDef
+from mypy_boto3_network_firewall.type_defs import DescribeRuleGroupResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `UpdateToken`: `str`
+- `RuleGroup`: [RuleGroupTypeDef](./type_defs.md#rulegrouptypedef)
 - `RuleGroupResponse`:
   [RuleGroupResponseTypeDef](./type_defs.md#rulegroupresponsetypedef)
-
-Optional fields:
-
-- `RuleGroup`: [RuleGroupTypeDef](./type_defs.md#rulegrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DimensionTypeDef
 
@@ -292,19 +534,37 @@ Required fields:
 
 - `Value`: `str`
 
-## DisassociateSubnetsResponseTypeDef
+## DisassociateSubnetsRequestTypeDef
 
 ```python
-from mypy_boto3_network_firewall.type_defs import DisassociateSubnetsResponseTypeDef
+from mypy_boto3_network_firewall.type_defs import DisassociateSubnetsRequestTypeDef
 ```
 
+Required fields:
+
+- `SubnetIds`: `List`\[`str`\]
+
 Optional fields:
+
+- `UpdateToken`: `str`
+- `FirewallArn`: `str`
+- `FirewallName`: `str`
+
+## DisassociateSubnetsResponseResponseTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import DisassociateSubnetsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FirewallArn`: `str`
 - `FirewallName`: `str`
 - `SubnetMappings`:
   `List`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
 - `UpdateToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## FirewallMetadataTypeDef
 
@@ -435,52 +695,109 @@ Required fields:
 
 - `Definition`: `List`\[`str`\]
 
-## ListFirewallPoliciesResponseTypeDef
+## ListFirewallPoliciesRequestTypeDef
 
 ```python
-from mypy_boto3_network_firewall.type_defs import ListFirewallPoliciesResponseTypeDef
+from mypy_boto3_network_firewall.type_defs import ListFirewallPoliciesRequestTypeDef
 ```
 
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListFirewallPoliciesResponseResponseTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import ListFirewallPoliciesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `FirewallPolicies`:
   `List`\[[FirewallPolicyMetadataTypeDef](./type_defs.md#firewallpolicymetadatatypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFirewallsResponseTypeDef
+## ListFirewallsRequestTypeDef
 
 ```python
-from mypy_boto3_network_firewall.type_defs import ListFirewallsResponseTypeDef
+from mypy_boto3_network_firewall.type_defs import ListFirewallsRequestTypeDef
 ```
 
 Optional fields:
+
+- `NextToken`: `str`
+- `VpcIds`: `List`\[`str`\]
+- `MaxResults`: `int`
+
+## ListFirewallsResponseResponseTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import ListFirewallsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `Firewalls`:
   `List`\[[FirewallMetadataTypeDef](./type_defs.md#firewallmetadatatypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRuleGroupsResponseTypeDef
+## ListRuleGroupsRequestTypeDef
 
 ```python
-from mypy_boto3_network_firewall.type_defs import ListRuleGroupsResponseTypeDef
+from mypy_boto3_network_firewall.type_defs import ListRuleGroupsRequestTypeDef
 ```
 
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListRuleGroupsResponseResponseTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import ListRuleGroupsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `RuleGroups`:
   `List`\[[RuleGroupMetadataTypeDef](./type_defs.md#rulegroupmetadatatypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_network_firewall.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_network_firewall.type_defs import ListTagsForResourceRequestTypeDef
 ```
+
+Required fields:
+
+- `ResourceArn`: `str`
 
 Optional fields:
 
 - `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
+
+- `NextToken`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LogDestinationConfigTypeDef
 
@@ -577,6 +894,31 @@ from mypy_boto3_network_firewall.type_defs import PublishMetricActionTypeDef
 Required fields:
 
 - `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+
+## PutResourcePolicyRequestTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import PutResourcePolicyRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `Policy`: `str`
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## RuleDefinitionTypeDef
 
@@ -787,6 +1129,17 @@ Optional fields:
 
 - `Masks`: `List`\[[TCPFlagType](./literals.md#tcpflagtype)\]
 
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
 ## TagTypeDef
 
 ```python
@@ -798,49 +1151,130 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## UpdateFirewallDeleteProtectionResponseTypeDef
+## UntagResourceRequestTypeDef
 
 ```python
-from mypy_boto3_network_firewall.type_defs import UpdateFirewallDeleteProtectionResponseTypeDef
+from mypy_boto3_network_firewall.type_defs import UntagResourceRequestTypeDef
 ```
 
+Required fields:
+
+- `ResourceArn`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## UpdateFirewallDeleteProtectionRequestTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import UpdateFirewallDeleteProtectionRequestTypeDef
+```
+
+Required fields:
+
+- `DeleteProtection`: `bool`
+
 Optional fields:
+
+- `UpdateToken`: `str`
+- `FirewallArn`: `str`
+- `FirewallName`: `str`
+
+## UpdateFirewallDeleteProtectionResponseResponseTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import UpdateFirewallDeleteProtectionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FirewallArn`: `str`
 - `FirewallName`: `str`
 - `DeleteProtection`: `bool`
 - `UpdateToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateFirewallDescriptionResponseTypeDef
+## UpdateFirewallDescriptionRequestTypeDef
 
 ```python
-from mypy_boto3_network_firewall.type_defs import UpdateFirewallDescriptionResponseTypeDef
+from mypy_boto3_network_firewall.type_defs import UpdateFirewallDescriptionRequestTypeDef
 ```
 
 Optional fields:
+
+- `UpdateToken`: `str`
+- `FirewallArn`: `str`
+- `FirewallName`: `str`
+- `Description`: `str`
+
+## UpdateFirewallDescriptionResponseResponseTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import UpdateFirewallDescriptionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FirewallArn`: `str`
 - `FirewallName`: `str`
 - `Description`: `str`
 - `UpdateToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateFirewallPolicyChangeProtectionResponseTypeDef
+## UpdateFirewallPolicyChangeProtectionRequestTypeDef
 
 ```python
-from mypy_boto3_network_firewall.type_defs import UpdateFirewallPolicyChangeProtectionResponseTypeDef
+from mypy_boto3_network_firewall.type_defs import UpdateFirewallPolicyChangeProtectionRequestTypeDef
 ```
+
+Required fields:
+
+- `FirewallPolicyChangeProtection`: `bool`
 
 Optional fields:
 
 - `UpdateToken`: `str`
 - `FirewallArn`: `str`
 - `FirewallName`: `str`
-- `FirewallPolicyChangeProtection`: `bool`
 
-## UpdateFirewallPolicyResponseTypeDef
+## UpdateFirewallPolicyChangeProtectionResponseResponseTypeDef
 
 ```python
-from mypy_boto3_network_firewall.type_defs import UpdateFirewallPolicyResponseTypeDef
+from mypy_boto3_network_firewall.type_defs import UpdateFirewallPolicyChangeProtectionResponseResponseTypeDef
+```
+
+Required fields:
+
+- `UpdateToken`: `str`
+- `FirewallArn`: `str`
+- `FirewallName`: `str`
+- `FirewallPolicyChangeProtection`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateFirewallPolicyRequestTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import UpdateFirewallPolicyRequestTypeDef
+```
+
+Required fields:
+
+- `UpdateToken`: `str`
+- `FirewallPolicy`:
+  [FirewallPolicyTypeDef](./type_defs.md#firewallpolicytypedef)
+
+Optional fields:
+
+- `FirewallPolicyArn`: `str`
+- `FirewallPolicyName`: `str`
+- `Description`: `str`
+- `DryRun`: `bool`
+
+## UpdateFirewallPolicyResponseResponseTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import UpdateFirewallPolicyResponseResponseTypeDef
 ```
 
 Required fields:
@@ -848,11 +1282,13 @@ Required fields:
 - `UpdateToken`: `str`
 - `FirewallPolicyResponse`:
   [FirewallPolicyResponseTypeDef](./type_defs.md#firewallpolicyresponsetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateLoggingConfigurationResponseTypeDef
+## UpdateLoggingConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_network_firewall.type_defs import UpdateLoggingConfigurationResponseTypeDef
+from mypy_boto3_network_firewall.type_defs import UpdateLoggingConfigurationRequestTypeDef
 ```
 
 Optional fields:
@@ -862,10 +1298,45 @@ Optional fields:
 - `LoggingConfiguration`:
   [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
 
-## UpdateRuleGroupResponseTypeDef
+## UpdateLoggingConfigurationResponseResponseTypeDef
 
 ```python
-from mypy_boto3_network_firewall.type_defs import UpdateRuleGroupResponseTypeDef
+from mypy_boto3_network_firewall.type_defs import UpdateLoggingConfigurationResponseResponseTypeDef
+```
+
+Required fields:
+
+- `FirewallArn`: `str`
+- `FirewallName`: `str`
+- `LoggingConfiguration`:
+  [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateRuleGroupRequestTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import UpdateRuleGroupRequestTypeDef
+```
+
+Required fields:
+
+- `UpdateToken`: `str`
+
+Optional fields:
+
+- `RuleGroupArn`: `str`
+- `RuleGroupName`: `str`
+- `RuleGroup`: [RuleGroupTypeDef](./type_defs.md#rulegrouptypedef)
+- `Rules`: `str`
+- `Type`: [RuleGroupTypeType](./literals.md#rulegrouptypetype)
+- `Description`: `str`
+- `DryRun`: `bool`
+
+## UpdateRuleGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import UpdateRuleGroupResponseResponseTypeDef
 ```
 
 Required fields:
@@ -873,16 +1344,36 @@ Required fields:
 - `UpdateToken`: `str`
 - `RuleGroupResponse`:
   [RuleGroupResponseTypeDef](./type_defs.md#rulegroupresponsetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateSubnetChangeProtectionResponseTypeDef
+## UpdateSubnetChangeProtectionRequestTypeDef
 
 ```python
-from mypy_boto3_network_firewall.type_defs import UpdateSubnetChangeProtectionResponseTypeDef
+from mypy_boto3_network_firewall.type_defs import UpdateSubnetChangeProtectionRequestTypeDef
 ```
+
+Required fields:
+
+- `SubnetChangeProtection`: `bool`
 
 Optional fields:
 
 - `UpdateToken`: `str`
 - `FirewallArn`: `str`
 - `FirewallName`: `str`
+
+## UpdateSubnetChangeProtectionResponseResponseTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import UpdateSubnetChangeProtectionResponseResponseTypeDef
+```
+
+Required fields:
+
+- `UpdateToken`: `str`
+- `FirewallArn`: `str`
+- `FirewallName`: `str`
 - `SubnetChangeProtection`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

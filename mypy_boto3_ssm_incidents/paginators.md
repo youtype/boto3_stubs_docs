@@ -39,7 +39,7 @@ Arguments for `GetResourcePoliciesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetResourcePoliciesPaginator.paginate` returns
-`Iterator`\[[GetResourcePoliciesOutputTypeDef](./type_defs.md#getresourcepoliciesoutputtypedef)\].
+`Iterator`\[[GetResourcePoliciesOutputResponseTypeDef](./type_defs.md#getresourcepoliciesoutputresponsetypedef)\].
 
 ## ListIncidentRecordsPaginator
 
@@ -65,7 +65,7 @@ Arguments for `ListIncidentRecordsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListIncidentRecordsPaginator.paginate` returns
-`Iterator`\[[ListIncidentRecordsOutputTypeDef](./type_defs.md#listincidentrecordsoutputtypedef)\].
+`Iterator`\[[ListIncidentRecordsOutputResponseTypeDef](./type_defs.md#listincidentrecordsoutputresponsetypedef)\].
 
 ## ListRelatedItemsPaginator
 
@@ -91,7 +91,7 @@ Arguments for `ListRelatedItemsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRelatedItemsPaginator.paginate` returns
-`Iterator`\[[ListRelatedItemsOutputTypeDef](./type_defs.md#listrelateditemsoutputtypedef)\].
+`Iterator`\[[ListRelatedItemsOutputResponseTypeDef](./type_defs.md#listrelateditemsoutputresponsetypedef)\].
 
 ## ListReplicationSetsPaginator
 
@@ -116,7 +116,7 @@ Arguments for `ListReplicationSetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListReplicationSetsPaginator.paginate` returns
-`Iterator`\[[ListReplicationSetsOutputTypeDef](./type_defs.md#listreplicationsetsoutputtypedef)\].
+`Iterator`\[[ListReplicationSetsOutputResponseTypeDef](./type_defs.md#listreplicationsetsoutputresponsetypedef)\].
 
 ## ListResponsePlansPaginator
 
@@ -141,7 +141,7 @@ Arguments for `ListResponsePlansPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResponsePlansPaginator.paginate` returns
-`Iterator`\[[ListResponsePlansOutputTypeDef](./type_defs.md#listresponseplansoutputtypedef)\].
+`Iterator`\[[ListResponsePlansOutputResponseTypeDef](./type_defs.md#listresponseplansoutputresponsetypedef)\].
 
 ## ListTimelineEventsPaginator
 
@@ -171,4 +171,4 @@ Arguments for `ListTimelineEventsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTimelineEventsPaginator.paginate` returns
-`Iterator`\[[ListTimelineEventsOutputTypeDef](./type_defs.md#listtimelineeventsoutputtypedef)\].
+`Iterator`\[[ListTimelineEventsOutputResponseTypeDef](./type_defs.md#listtimelineeventsoutputresponsetypedef)\].

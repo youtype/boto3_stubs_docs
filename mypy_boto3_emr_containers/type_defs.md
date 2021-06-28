@@ -8,44 +8,73 @@ type annotations stubs module
 [mypy_boto3_emr_containers](https://pypi.org/project/mypy-boto3-emr-containers/).
 
 - [Typed dictionaries for boto3 EMRContainers module](#typed-dictionaries-for-boto3-emrcontainers-module)
-  - [CancelJobRunResponseTypeDef](#canceljobrunresponsetypedef)
+  - [CancelJobRunRequestTypeDef](#canceljobrunrequesttypedef)
+  - [CancelJobRunResponseResponseTypeDef](#canceljobrunresponseresponsetypedef)
   - [CloudWatchMonitoringConfigurationTypeDef](#cloudwatchmonitoringconfigurationtypedef)
   - [ConfigurationOverridesTypeDef](#configurationoverridestypedef)
   - [ConfigurationTypeDef](#configurationtypedef)
   - [ContainerInfoTypeDef](#containerinfotypedef)
   - [ContainerProviderTypeDef](#containerprovidertypedef)
-  - [CreateManagedEndpointResponseTypeDef](#createmanagedendpointresponsetypedef)
-  - [CreateVirtualClusterResponseTypeDef](#createvirtualclusterresponsetypedef)
-  - [DeleteManagedEndpointResponseTypeDef](#deletemanagedendpointresponsetypedef)
-  - [DeleteVirtualClusterResponseTypeDef](#deletevirtualclusterresponsetypedef)
-  - [DescribeJobRunResponseTypeDef](#describejobrunresponsetypedef)
-  - [DescribeManagedEndpointResponseTypeDef](#describemanagedendpointresponsetypedef)
-  - [DescribeVirtualClusterResponseTypeDef](#describevirtualclusterresponsetypedef)
+  - [CreateManagedEndpointRequestTypeDef](#createmanagedendpointrequesttypedef)
+  - [CreateManagedEndpointResponseResponseTypeDef](#createmanagedendpointresponseresponsetypedef)
+  - [CreateVirtualClusterRequestTypeDef](#createvirtualclusterrequesttypedef)
+  - [CreateVirtualClusterResponseResponseTypeDef](#createvirtualclusterresponseresponsetypedef)
+  - [DeleteManagedEndpointRequestTypeDef](#deletemanagedendpointrequesttypedef)
+  - [DeleteManagedEndpointResponseResponseTypeDef](#deletemanagedendpointresponseresponsetypedef)
+  - [DeleteVirtualClusterRequestTypeDef](#deletevirtualclusterrequesttypedef)
+  - [DeleteVirtualClusterResponseResponseTypeDef](#deletevirtualclusterresponseresponsetypedef)
+  - [DescribeJobRunRequestTypeDef](#describejobrunrequesttypedef)
+  - [DescribeJobRunResponseResponseTypeDef](#describejobrunresponseresponsetypedef)
+  - [DescribeManagedEndpointRequestTypeDef](#describemanagedendpointrequesttypedef)
+  - [DescribeManagedEndpointResponseResponseTypeDef](#describemanagedendpointresponseresponsetypedef)
+  - [DescribeVirtualClusterRequestTypeDef](#describevirtualclusterrequesttypedef)
+  - [DescribeVirtualClusterResponseResponseTypeDef](#describevirtualclusterresponseresponsetypedef)
   - [EksInfoTypeDef](#eksinfotypedef)
   - [EndpointTypeDef](#endpointtypedef)
   - [JobDriverTypeDef](#jobdrivertypedef)
   - [JobRunTypeDef](#jobruntypedef)
-  - [ListJobRunsResponseTypeDef](#listjobrunsresponsetypedef)
-  - [ListManagedEndpointsResponseTypeDef](#listmanagedendpointsresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListVirtualClustersResponseTypeDef](#listvirtualclustersresponsetypedef)
+  - [ListJobRunsRequestTypeDef](#listjobrunsrequesttypedef)
+  - [ListJobRunsResponseResponseTypeDef](#listjobrunsresponseresponsetypedef)
+  - [ListManagedEndpointsRequestTypeDef](#listmanagedendpointsrequesttypedef)
+  - [ListManagedEndpointsResponseResponseTypeDef](#listmanagedendpointsresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListVirtualClustersRequestTypeDef](#listvirtualclustersrequesttypedef)
+  - [ListVirtualClustersResponseResponseTypeDef](#listvirtualclustersresponseresponsetypedef)
   - [MonitoringConfigurationTypeDef](#monitoringconfigurationtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3MonitoringConfigurationTypeDef](#s3monitoringconfigurationtypedef)
   - [SparkSubmitJobDriverTypeDef](#sparksubmitjobdrivertypedef)
-  - [StartJobRunResponseTypeDef](#startjobrunresponsetypedef)
+  - [StartJobRunRequestTypeDef](#startjobrunrequesttypedef)
+  - [StartJobRunResponseResponseTypeDef](#startjobrunresponseresponsetypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
   - [VirtualClusterTypeDef](#virtualclustertypedef)
 
-## CancelJobRunResponseTypeDef
+## CancelJobRunRequestTypeDef
 
 ```python
-from mypy_boto3_emr_containers.type_defs import CancelJobRunResponseTypeDef
+from mypy_boto3_emr_containers.type_defs import CancelJobRunRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `id`: `str`
 - `virtualClusterId`: `str`
+
+## CancelJobRunResponseResponseTypeDef
+
+```python
+from mypy_boto3_emr_containers.type_defs import CancelJobRunResponseResponseTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+- `virtualClusterId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CloudWatchMonitoringConfigurationTypeDef
 
@@ -116,82 +145,188 @@ Optional fields:
 
 - `info`: [ContainerInfoTypeDef](./type_defs.md#containerinfotypedef)
 
-## CreateManagedEndpointResponseTypeDef
+## CreateManagedEndpointRequestTypeDef
 
 ```python
-from mypy_boto3_emr_containers.type_defs import CreateManagedEndpointResponseTypeDef
+from mypy_boto3_emr_containers.type_defs import CreateManagedEndpointRequestTypeDef
 ```
 
+Required fields:
+
+- `name`: `str`
+- `virtualClusterId`: `str`
+- `type`: `str`
+- `releaseLabel`: `str`
+- `executionRoleArn`: `str`
+- `certificateArn`: `str`
+- `clientToken`: `str`
+
 Optional fields:
+
+- `configurationOverrides`:
+  [ConfigurationOverridesTypeDef](./type_defs.md#configurationoverridestypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateManagedEndpointResponseResponseTypeDef
+
+```python
+from mypy_boto3_emr_containers.type_defs import CreateManagedEndpointResponseResponseTypeDef
+```
+
+Required fields:
 
 - `id`: `str`
 - `name`: `str`
 - `arn`: `str`
 - `virtualClusterId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateVirtualClusterResponseTypeDef
+## CreateVirtualClusterRequestTypeDef
 
 ```python
-from mypy_boto3_emr_containers.type_defs import CreateVirtualClusterResponseTypeDef
+from mypy_boto3_emr_containers.type_defs import CreateVirtualClusterRequestTypeDef
 ```
 
+Required fields:
+
+- `name`: `str`
+- `containerProvider`:
+  [ContainerProviderTypeDef](./type_defs.md#containerprovidertypedef)
+- `clientToken`: `str`
+
 Optional fields:
+
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateVirtualClusterResponseResponseTypeDef
+
+```python
+from mypy_boto3_emr_containers.type_defs import CreateVirtualClusterResponseResponseTypeDef
+```
+
+Required fields:
 
 - `id`: `str`
 - `name`: `str`
 - `arn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteManagedEndpointResponseTypeDef
+## DeleteManagedEndpointRequestTypeDef
 
 ```python
-from mypy_boto3_emr_containers.type_defs import DeleteManagedEndpointResponseTypeDef
+from mypy_boto3_emr_containers.type_defs import DeleteManagedEndpointRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `id`: `str`
 - `virtualClusterId`: `str`
 
-## DeleteVirtualClusterResponseTypeDef
+## DeleteManagedEndpointResponseResponseTypeDef
 
 ```python
-from mypy_boto3_emr_containers.type_defs import DeleteVirtualClusterResponseTypeDef
+from mypy_boto3_emr_containers.type_defs import DeleteManagedEndpointResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `id`: `str`
+- `virtualClusterId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteVirtualClusterRequestTypeDef
+
+```python
+from mypy_boto3_emr_containers.type_defs import DeleteVirtualClusterRequestTypeDef
+```
+
+Required fields:
 
 - `id`: `str`
 
-## DescribeJobRunResponseTypeDef
+## DeleteVirtualClusterResponseResponseTypeDef
 
 ```python
-from mypy_boto3_emr_containers.type_defs import DescribeJobRunResponseTypeDef
+from mypy_boto3_emr_containers.type_defs import DeleteVirtualClusterResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `id`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeJobRunRequestTypeDef
+
+```python
+from mypy_boto3_emr_containers.type_defs import DescribeJobRunRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+- `virtualClusterId`: `str`
+
+## DescribeJobRunResponseResponseTypeDef
+
+```python
+from mypy_boto3_emr_containers.type_defs import DescribeJobRunResponseResponseTypeDef
+```
+
+Required fields:
 
 - `jobRun`: [JobRunTypeDef](./type_defs.md#jobruntypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeManagedEndpointResponseTypeDef
+## DescribeManagedEndpointRequestTypeDef
 
 ```python
-from mypy_boto3_emr_containers.type_defs import DescribeManagedEndpointResponseTypeDef
+from mypy_boto3_emr_containers.type_defs import DescribeManagedEndpointRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `id`: `str`
+- `virtualClusterId`: `str`
+
+## DescribeManagedEndpointResponseResponseTypeDef
+
+```python
+from mypy_boto3_emr_containers.type_defs import DescribeManagedEndpointResponseResponseTypeDef
+```
+
+Required fields:
 
 - `endpoint`: [EndpointTypeDef](./type_defs.md#endpointtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeVirtualClusterResponseTypeDef
+## DescribeVirtualClusterRequestTypeDef
 
 ```python
-from mypy_boto3_emr_containers.type_defs import DescribeVirtualClusterResponseTypeDef
+from mypy_boto3_emr_containers.type_defs import DescribeVirtualClusterRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `id`: `str`
+
+## DescribeVirtualClusterResponseResponseTypeDef
+
+```python
+from mypy_boto3_emr_containers.type_defs import DescribeVirtualClusterResponseResponseTypeDef
+```
+
+Required fields:
 
 - `virtualCluster`:
   [VirtualClusterTypeDef](./type_defs.md#virtualclustertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## EksInfoTypeDef
 
@@ -265,49 +400,123 @@ Optional fields:
 - `failureReason`: [FailureReasonType](./literals.md#failurereasontype)
 - `tags`: `Dict`\[`str`, `str`\]
 
-## ListJobRunsResponseTypeDef
+## ListJobRunsRequestTypeDef
 
 ```python
-from mypy_boto3_emr_containers.type_defs import ListJobRunsResponseTypeDef
+from mypy_boto3_emr_containers.type_defs import ListJobRunsRequestTypeDef
 ```
 
+Required fields:
+
+- `virtualClusterId`: `str`
+
 Optional fields:
+
+- `createdBefore`: `Union`\[`datetime`, `str`\]
+- `createdAfter`: `Union`\[`datetime`, `str`\]
+- `name`: `str`
+- `states`: `List`\[[JobRunStateType](./literals.md#jobrunstatetype)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListJobRunsResponseResponseTypeDef
+
+```python
+from mypy_boto3_emr_containers.type_defs import ListJobRunsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `jobRuns`: `List`\[[JobRunTypeDef](./type_defs.md#jobruntypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListManagedEndpointsResponseTypeDef
+## ListManagedEndpointsRequestTypeDef
 
 ```python
-from mypy_boto3_emr_containers.type_defs import ListManagedEndpointsResponseTypeDef
+from mypy_boto3_emr_containers.type_defs import ListManagedEndpointsRequestTypeDef
 ```
 
+Required fields:
+
+- `virtualClusterId`: `str`
+
 Optional fields:
+
+- `createdBefore`: `Union`\[`datetime`, `str`\]
+- `createdAfter`: `Union`\[`datetime`, `str`\]
+- `types`: `List`\[`str`\]
+- `states`: `List`\[[EndpointStateType](./literals.md#endpointstatetype)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListManagedEndpointsResponseResponseTypeDef
+
+```python
+from mypy_boto3_emr_containers.type_defs import ListManagedEndpointsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `endpoints`: `List`\[[EndpointTypeDef](./type_defs.md#endpointtypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_emr_containers.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_emr_containers.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `resourceArn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_emr_containers.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListVirtualClustersResponseTypeDef
+## ListVirtualClustersRequestTypeDef
 
 ```python
-from mypy_boto3_emr_containers.type_defs import ListVirtualClustersResponseTypeDef
+from mypy_boto3_emr_containers.type_defs import ListVirtualClustersRequestTypeDef
 ```
 
 Optional fields:
+
+- `containerProviderId`: `str`
+- `containerProviderType`: `Literal['EKS']` (see
+  [ContainerProviderTypeType](./literals.md#containerprovidertypetype))
+- `createdAfter`: `Union`\[`datetime`, `str`\]
+- `createdBefore`: `Union`\[`datetime`, `str`\]
+- `states`:
+  `List`\[[VirtualClusterStateType](./literals.md#virtualclusterstatetype)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListVirtualClustersResponseResponseTypeDef
+
+```python
+from mypy_boto3_emr_containers.type_defs import ListVirtualClustersResponseResponseTypeDef
+```
+
+Required fields:
 
 - `virtualClusters`:
   `List`\[[VirtualClusterTypeDef](./type_defs.md#virtualclustertypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## MonitoringConfigurationTypeDef
 
@@ -335,6 +544,20 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_emr_containers.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
 ## S3MonitoringConfigurationTypeDef
 
 ```python
@@ -360,18 +583,63 @@ Optional fields:
 - `entryPointArguments`: `List`\[`str`\]
 - `sparkSubmitParameters`: `str`
 
-## StartJobRunResponseTypeDef
+## StartJobRunRequestTypeDef
 
 ```python
-from mypy_boto3_emr_containers.type_defs import StartJobRunResponseTypeDef
+from mypy_boto3_emr_containers.type_defs import StartJobRunRequestTypeDef
 ```
 
+Required fields:
+
+- `virtualClusterId`: `str`
+- `clientToken`: `str`
+- `executionRoleArn`: `str`
+- `releaseLabel`: `str`
+- `jobDriver`: [JobDriverTypeDef](./type_defs.md#jobdrivertypedef)
+
 Optional fields:
+
+- `name`: `str`
+- `configurationOverrides`:
+  [ConfigurationOverridesTypeDef](./type_defs.md#configurationoverridestypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+
+## StartJobRunResponseResponseTypeDef
+
+```python
+from mypy_boto3_emr_containers.type_defs import StartJobRunResponseResponseTypeDef
+```
+
+Required fields:
 
 - `id`: `str`
 - `name`: `str`
 - `arn`: `str`
 - `virtualClusterId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_emr_containers.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## UntagResourceRequestTypeDef
+
+```python
+from mypy_boto3_emr_containers.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tagKeys`: `List`\[`str`\]
 
 ## VirtualClusterTypeDef
 

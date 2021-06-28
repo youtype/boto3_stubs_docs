@@ -39,7 +39,7 @@ Arguments for
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReservedElasticsearchInstanceOfferingsPaginator.paginate` returns
-`Iterator`\[[DescribeReservedElasticsearchInstanceOfferingsResponseTypeDef](./type_defs.md#describereservedelasticsearchinstanceofferingsresponsetypedef)\].
+`Iterator`\[[DescribeReservedElasticsearchInstanceOfferingsResponseResponseTypeDef](./type_defs.md#describereservedelasticsearchinstanceofferingsresponseresponsetypedef)\].
 
 ## DescribeReservedElasticsearchInstancesPaginator
 
@@ -66,7 +66,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReservedElasticsearchInstancesPaginator.paginate` returns
-`Iterator`\[[DescribeReservedElasticsearchInstancesResponseTypeDef](./type_defs.md#describereservedelasticsearchinstancesresponsetypedef)\].
+`Iterator`\[[DescribeReservedElasticsearchInstancesResponseResponseTypeDef](./type_defs.md#describereservedelasticsearchinstancesresponseresponsetypedef)\].
 
 ## GetUpgradeHistoryPaginator
 
@@ -91,7 +91,7 @@ Arguments for `GetUpgradeHistoryPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetUpgradeHistoryPaginator.paginate` returns
-`Iterator`\[[GetUpgradeHistoryResponseTypeDef](./type_defs.md#getupgradehistoryresponsetypedef)\].
+`Iterator`\[[GetUpgradeHistoryResponseResponseTypeDef](./type_defs.md#getupgradehistoryresponseresponsetypedef)\].
 
 ## ListElasticsearchInstanceTypesPaginator
 
@@ -118,7 +118,7 @@ Arguments for `ListElasticsearchInstanceTypesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListElasticsearchInstanceTypesPaginator.paginate` returns
-`Iterator`\[[ListElasticsearchInstanceTypesResponseTypeDef](./type_defs.md#listelasticsearchinstancetypesresponsetypedef)\].
+`Iterator`\[[ListElasticsearchInstanceTypesResponseResponseTypeDef](./type_defs.md#listelasticsearchinstancetypesresponseresponsetypedef)\].
 
 ## ListElasticsearchVersionsPaginator
 
@@ -143,4 +143,4 @@ Arguments for `ListElasticsearchVersionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListElasticsearchVersionsPaginator.paginate` returns
-`Iterator`\[[ListElasticsearchVersionsResponseTypeDef](./type_defs.md#listelasticsearchversionsresponsetypedef)\].
+`Iterator`\[[ListElasticsearchVersionsResponseResponseTypeDef](./type_defs.md#listelasticsearchversionsresponseresponsetypedef)\].

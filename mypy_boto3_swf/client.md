@@ -98,6 +98,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("swf").can_paginate` method.
 
 Boto3 documentation:
@@ -111,11 +113,17 @@ Returns `bool`.
 
 ### count_closed_workflow_executions
 
+Returns the number of closed workflow executions within the given domain that
+meet the specified filtering criteria.
+
 Type annotations for `boto3.client("swf").count_closed_workflow_executions`
 method.
 
 Boto3 documentation:
 [SWF.Client.count_closed_workflow_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.count_closed_workflow_executions)
+
+Arguments mapping described in
+[CountClosedWorkflowExecutionsInputTypeDef](./type_defs.md#countclosedworkflowexecutionsinputtypedef).
 
 Keyword-only arguments:
 
@@ -133,15 +141,21 @@ Keyword-only arguments:
   [CloseStatusFilterTypeDef](./type_defs.md#closestatusfiltertypedef)
 
 Returns
-[WorkflowExecutionCountTypeDef](./type_defs.md#workflowexecutioncounttypedef).
+[WorkflowExecutionCountResponseTypeDef](./type_defs.md#workflowexecutioncountresponsetypedef).
 
 ### count_open_workflow_executions
+
+Returns the number of open workflow executions within the given domain that
+meet the specified filtering criteria.
 
 Type annotations for `boto3.client("swf").count_open_workflow_executions`
 method.
 
 Boto3 documentation:
 [SWF.Client.count_open_workflow_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.count_open_workflow_executions)
+
+Arguments mapping described in
+[CountOpenWorkflowExecutionsInputTypeDef](./type_defs.md#countopenworkflowexecutionsinputtypedef).
 
 Keyword-only arguments:
 
@@ -156,42 +170,59 @@ Keyword-only arguments:
   [WorkflowExecutionFilterTypeDef](./type_defs.md#workflowexecutionfiltertypedef)
 
 Returns
-[WorkflowExecutionCountTypeDef](./type_defs.md#workflowexecutioncounttypedef).
+[WorkflowExecutionCountResponseTypeDef](./type_defs.md#workflowexecutioncountresponsetypedef).
 
 ### count_pending_activity_tasks
+
+Returns the estimated number of activity tasks in the specified task list.
 
 Type annotations for `boto3.client("swf").count_pending_activity_tasks` method.
 
 Boto3 documentation:
 [SWF.Client.count_pending_activity_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.count_pending_activity_tasks)
 
+Arguments mapping described in
+[CountPendingActivityTasksInputTypeDef](./type_defs.md#countpendingactivitytasksinputtypedef).
+
 Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef) *(required)*
 
-Returns [PendingTaskCountTypeDef](./type_defs.md#pendingtaskcounttypedef).
+Returns
+[PendingTaskCountResponseTypeDef](./type_defs.md#pendingtaskcountresponsetypedef).
 
 ### count_pending_decision_tasks
+
+Returns the estimated number of decision tasks in the specified task list.
 
 Type annotations for `boto3.client("swf").count_pending_decision_tasks` method.
 
 Boto3 documentation:
 [SWF.Client.count_pending_decision_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.count_pending_decision_tasks)
 
+Arguments mapping described in
+[CountPendingDecisionTasksInputTypeDef](./type_defs.md#countpendingdecisiontasksinputtypedef).
+
 Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef) *(required)*
 
-Returns [PendingTaskCountTypeDef](./type_defs.md#pendingtaskcounttypedef).
+Returns
+[PendingTaskCountResponseTypeDef](./type_defs.md#pendingtaskcountresponsetypedef).
 
 ### deprecate_activity_type
+
+Deprecates the specified *activity type*.
 
 Type annotations for `boto3.client("swf").deprecate_activity_type` method.
 
 Boto3 documentation:
 [SWF.Client.deprecate_activity_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.deprecate_activity_type)
+
+Arguments mapping described in
+[DeprecateActivityTypeInputTypeDef](./type_defs.md#deprecateactivitytypeinputtypedef).
 
 Keyword-only arguments:
 
@@ -201,10 +232,15 @@ Keyword-only arguments:
 
 ### deprecate_domain
 
+Deprecates the specified domain.
+
 Type annotations for `boto3.client("swf").deprecate_domain` method.
 
 Boto3 documentation:
 [SWF.Client.deprecate_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.deprecate_domain)
+
+Arguments mapping described in
+[DeprecateDomainInputTypeDef](./type_defs.md#deprecatedomaininputtypedef).
 
 Keyword-only arguments:
 
@@ -212,10 +248,15 @@ Keyword-only arguments:
 
 ### deprecate_workflow_type
 
+Deprecates the specified *workflow type*.
+
 Type annotations for `boto3.client("swf").deprecate_workflow_type` method.
 
 Boto3 documentation:
 [SWF.Client.deprecate_workflow_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.deprecate_workflow_type)
+
+Arguments mapping described in
+[DeprecateWorkflowTypeInputTypeDef](./type_defs.md#deprecateworkflowtypeinputtypedef).
 
 Keyword-only arguments:
 
@@ -225,10 +266,15 @@ Keyword-only arguments:
 
 ### describe_activity_type
 
+Returns information about the specified activity type.
+
 Type annotations for `boto3.client("swf").describe_activity_type` method.
 
 Boto3 documentation:
 [SWF.Client.describe_activity_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.describe_activity_type)
+
+Arguments mapping described in
+[DescribeActivityTypeInputTypeDef](./type_defs.md#describeactivitytypeinputtypedef).
 
 Keyword-only arguments:
 
@@ -236,27 +282,41 @@ Keyword-only arguments:
 - `activityType`: [ActivityTypeTypeDef](./type_defs.md#activitytypetypedef)
   *(required)*
 
-Returns [ActivityTypeDetailTypeDef](./type_defs.md#activitytypedetailtypedef).
+Returns
+[ActivityTypeDetailResponseTypeDef](./type_defs.md#activitytypedetailresponsetypedef).
 
 ### describe_domain
+
+Returns information about the specified domain, including description and
+status.
 
 Type annotations for `boto3.client("swf").describe_domain` method.
 
 Boto3 documentation:
 [SWF.Client.describe_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.describe_domain)
 
+Arguments mapping described in
+[DescribeDomainInputTypeDef](./type_defs.md#describedomaininputtypedef).
+
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
-Returns [DomainDetailTypeDef](./type_defs.md#domaindetailtypedef).
+Returns
+[DomainDetailResponseTypeDef](./type_defs.md#domaindetailresponsetypedef).
 
 ### describe_workflow_execution
+
+Returns information about the specified workflow execution including its type
+and some statistics.
 
 Type annotations for `boto3.client("swf").describe_workflow_execution` method.
 
 Boto3 documentation:
 [SWF.Client.describe_workflow_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.describe_workflow_execution)
+
+Arguments mapping described in
+[DescribeWorkflowExecutionInputTypeDef](./type_defs.md#describeworkflowexecutioninputtypedef).
 
 Keyword-only arguments:
 
@@ -266,14 +326,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[WorkflowExecutionDetailTypeDef](./type_defs.md#workflowexecutiondetailtypedef).
+[WorkflowExecutionDetailResponseTypeDef](./type_defs.md#workflowexecutiondetailresponsetypedef).
 
 ### describe_workflow_type
+
+Returns information about the specified *workflow type*.
 
 Type annotations for `boto3.client("swf").describe_workflow_type` method.
 
 Boto3 documentation:
 [SWF.Client.describe_workflow_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.describe_workflow_type)
+
+Arguments mapping described in
+[DescribeWorkflowTypeInputTypeDef](./type_defs.md#describeworkflowtypeinputtypedef).
 
 Keyword-only arguments:
 
@@ -281,9 +346,12 @@ Keyword-only arguments:
 - `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
   *(required)*
 
-Returns [WorkflowTypeDetailTypeDef](./type_defs.md#workflowtypedetailtypedef).
+Returns
+[WorkflowTypeDetailResponseTypeDef](./type_defs.md#workflowtypedetailresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("swf").generate_presigned_url` method.
 
@@ -301,11 +369,16 @@ Returns `str`.
 
 ### get_workflow_execution_history
 
+Returns the history of the specified workflow execution.
+
 Type annotations for `boto3.client("swf").get_workflow_execution_history`
 method.
 
 Boto3 documentation:
 [SWF.Client.get_workflow_execution_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.get_workflow_execution_history)
+
+Arguments mapping described in
+[GetWorkflowExecutionHistoryInputTypeDef](./type_defs.md#getworkflowexecutionhistoryinputtypedef).
 
 Keyword-only arguments:
 
@@ -317,14 +390,20 @@ Keyword-only arguments:
 - `maximumPageSize`: `int`
 - `reverseOrder`: `bool`
 
-Returns [HistoryTypeDef](./type_defs.md#historytypedef).
+Returns [HistoryResponseTypeDef](./type_defs.md#historyresponsetypedef).
 
 ### list_activity_types
+
+Returns information about all activities registered in the specified domain
+that match the specified name and registration status.
 
 Type annotations for `boto3.client("swf").list_activity_types` method.
 
 Boto3 documentation:
 [SWF.Client.list_activity_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_activity_types)
+
+Arguments mapping described in
+[ListActivityTypesInputTypeDef](./type_defs.md#listactivitytypesinputtypedef).
 
 Keyword-only arguments:
 
@@ -336,15 +415,22 @@ Keyword-only arguments:
 - `maximumPageSize`: `int`
 - `reverseOrder`: `bool`
 
-Returns [ActivityTypeInfosTypeDef](./type_defs.md#activitytypeinfostypedef).
+Returns
+[ActivityTypeInfosResponseTypeDef](./type_defs.md#activitytypeinfosresponsetypedef).
 
 ### list_closed_workflow_executions
+
+Returns a list of closed workflow executions in the specified domain that meet
+the filtering criteria.
 
 Type annotations for `boto3.client("swf").list_closed_workflow_executions`
 method.
 
 Boto3 documentation:
 [SWF.Client.list_closed_workflow_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_closed_workflow_executions)
+
+Arguments mapping described in
+[ListClosedWorkflowExecutionsInputTypeDef](./type_defs.md#listclosedworkflowexecutionsinputtypedef).
 
 Keyword-only arguments:
 
@@ -365,14 +451,19 @@ Keyword-only arguments:
 - `reverseOrder`: `bool`
 
 Returns
-[WorkflowExecutionInfosTypeDef](./type_defs.md#workflowexecutioninfostypedef).
+[WorkflowExecutionInfosResponseTypeDef](./type_defs.md#workflowexecutioninfosresponsetypedef).
 
 ### list_domains
+
+Returns the list of domains registered in the account.
 
 Type annotations for `boto3.client("swf").list_domains` method.
 
 Boto3 documentation:
 [SWF.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_domains)
+
+Arguments mapping described in
+[ListDomainsInputTypeDef](./type_defs.md#listdomainsinputtypedef).
 
 Keyword-only arguments:
 
@@ -382,15 +473,22 @@ Keyword-only arguments:
 - `maximumPageSize`: `int`
 - `reverseOrder`: `bool`
 
-Returns [DomainInfosTypeDef](./type_defs.md#domaininfostypedef).
+Returns
+[DomainInfosResponseTypeDef](./type_defs.md#domaininfosresponsetypedef).
 
 ### list_open_workflow_executions
+
+Returns a list of open workflow executions in the specified domain that meet
+the filtering criteria.
 
 Type annotations for `boto3.client("swf").list_open_workflow_executions`
 method.
 
 Boto3 documentation:
 [SWF.Client.list_open_workflow_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_open_workflow_executions)
+
+Arguments mapping described in
+[ListOpenWorkflowExecutionsInputTypeDef](./type_defs.md#listopenworkflowexecutionsinputtypedef).
 
 Keyword-only arguments:
 
@@ -408,28 +506,38 @@ Keyword-only arguments:
   [WorkflowExecutionFilterTypeDef](./type_defs.md#workflowexecutionfiltertypedef)
 
 Returns
-[WorkflowExecutionInfosTypeDef](./type_defs.md#workflowexecutioninfostypedef).
+[WorkflowExecutionInfosResponseTypeDef](./type_defs.md#workflowexecutioninfosresponsetypedef).
 
 ### list_tags_for_resource
+
+List tags for a given domain.
 
 Type annotations for `boto3.client("swf").list_tags_for_resource` method.
 
 Boto3 documentation:
 [SWF.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceInputTypeDef](./type_defs.md#listtagsforresourceinputtypedef).
+
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+[ListTagsForResourceOutputResponseTypeDef](./type_defs.md#listtagsforresourceoutputresponsetypedef).
 
 ### list_workflow_types
+
+Returns information about workflow types in the specified domain.
 
 Type annotations for `boto3.client("swf").list_workflow_types` method.
 
 Boto3 documentation:
 [SWF.Client.list_workflow_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_workflow_types)
+
+Arguments mapping described in
+[ListWorkflowTypesInputTypeDef](./type_defs.md#listworkflowtypesinputtypedef).
 
 Keyword-only arguments:
 
@@ -441,14 +549,20 @@ Keyword-only arguments:
 - `maximumPageSize`: `int`
 - `reverseOrder`: `bool`
 
-Returns [WorkflowTypeInfosTypeDef](./type_defs.md#workflowtypeinfostypedef).
+Returns
+[WorkflowTypeInfosResponseTypeDef](./type_defs.md#workflowtypeinfosresponsetypedef).
 
 ### poll_for_activity_task
+
+Used by workers to get an ActivityTask from the specified activity `taskList`.
 
 Type annotations for `boto3.client("swf").poll_for_activity_task` method.
 
 Boto3 documentation:
 [SWF.Client.poll_for_activity_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.poll_for_activity_task)
+
+Arguments mapping described in
+[PollForActivityTaskInputTypeDef](./type_defs.md#pollforactivitytaskinputtypedef).
 
 Keyword-only arguments:
 
@@ -456,14 +570,20 @@ Keyword-only arguments:
 - `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef) *(required)*
 - `identity`: `str`
 
-Returns [ActivityTaskTypeDef](./type_defs.md#activitytasktypedef).
+Returns
+[ActivityTaskResponseTypeDef](./type_defs.md#activitytaskresponsetypedef).
 
 ### poll_for_decision_task
+
+Used by deciders to get a DecisionTask from the specified decision `taskList`.
 
 Type annotations for `boto3.client("swf").poll_for_decision_task` method.
 
 Boto3 documentation:
 [SWF.Client.poll_for_decision_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.poll_for_decision_task)
+
+Arguments mapping described in
+[PollForDecisionTaskInputTypeDef](./type_defs.md#pollfordecisiontaskinputtypedef).
 
 Keyword-only arguments:
 
@@ -474,9 +594,13 @@ Keyword-only arguments:
 - `maximumPageSize`: `int`
 - `reverseOrder`: `bool`
 
-Returns [DecisionTaskTypeDef](./type_defs.md#decisiontasktypedef).
+Returns
+[DecisionTaskResponseTypeDef](./type_defs.md#decisiontaskresponsetypedef).
 
 ### record_activity_task_heartbeat
+
+Used by activity workers to report to the service that the ActivityTask
+represented by the specified `taskToken` is still making progress.
 
 Type annotations for `boto3.client("swf").record_activity_task_heartbeat`
 method.
@@ -484,19 +608,29 @@ method.
 Boto3 documentation:
 [SWF.Client.record_activity_task_heartbeat](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.record_activity_task_heartbeat)
 
+Arguments mapping described in
+[RecordActivityTaskHeartbeatInputTypeDef](./type_defs.md#recordactivitytaskheartbeatinputtypedef).
+
 Keyword-only arguments:
 
 - `taskToken`: `str` *(required)*
 - `details`: `str`
 
-Returns [ActivityTaskStatusTypeDef](./type_defs.md#activitytaskstatustypedef).
+Returns
+[ActivityTaskStatusResponseTypeDef](./type_defs.md#activitytaskstatusresponsetypedef).
 
 ### register_activity_type
+
+Registers a new *activity type* along with its configuration settings in the
+specified domain.
 
 Type annotations for `boto3.client("swf").register_activity_type` method.
 
 Boto3 documentation:
 [SWF.Client.register_activity_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.register_activity_type)
+
+Arguments mapping described in
+[RegisterActivityTypeInputTypeDef](./type_defs.md#registeractivitytypeinputtypedef).
 
 Keyword-only arguments:
 
@@ -513,10 +647,15 @@ Keyword-only arguments:
 
 ### register_domain
 
+Registers a new domain.
+
 Type annotations for `boto3.client("swf").register_domain` method.
 
 Boto3 documentation:
 [SWF.Client.register_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.register_domain)
+
+Arguments mapping described in
+[RegisterDomainInputTypeDef](./type_defs.md#registerdomaininputtypedef).
 
 Keyword-only arguments:
 
@@ -527,10 +666,16 @@ Keyword-only arguments:
 
 ### register_workflow_type
 
+Registers a new *workflow type* and its configuration settings in the specified
+domain.
+
 Type annotations for `boto3.client("swf").register_workflow_type` method.
 
 Boto3 documentation:
 [SWF.Client.register_workflow_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.register_workflow_type)
+
+Arguments mapping described in
+[RegisterWorkflowTypeInputTypeDef](./type_defs.md#registerworkflowtypeinputtypedef).
 
 Keyword-only arguments:
 
@@ -547,11 +692,17 @@ Keyword-only arguments:
 
 ### request_cancel_workflow_execution
 
+Records a `WorkflowExecutionCancelRequested` event in the currently running
+workflow execution identified by the given domain, workflowId, and runId.
+
 Type annotations for `boto3.client("swf").request_cancel_workflow_execution`
 method.
 
 Boto3 documentation:
 [SWF.Client.request_cancel_workflow_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.request_cancel_workflow_execution)
+
+Arguments mapping described in
+[RequestCancelWorkflowExecutionInputTypeDef](./type_defs.md#requestcancelworkflowexecutioninputtypedef).
 
 Keyword-only arguments:
 
@@ -561,11 +712,17 @@ Keyword-only arguments:
 
 ### respond_activity_task_canceled
 
+Used by workers to tell the service that the ActivityTask identified by the
+`taskToken` was successfully canceled.
+
 Type annotations for `boto3.client("swf").respond_activity_task_canceled`
 method.
 
 Boto3 documentation:
 [SWF.Client.respond_activity_task_canceled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.respond_activity_task_canceled)
+
+Arguments mapping described in
+[RespondActivityTaskCanceledInputTypeDef](./type_defs.md#respondactivitytaskcanceledinputtypedef).
 
 Keyword-only arguments:
 
@@ -574,11 +731,17 @@ Keyword-only arguments:
 
 ### respond_activity_task_completed
 
+Used by workers to tell the service that the ActivityTask identified by the
+`taskToken` completed successfully with a `result` (if provided).
+
 Type annotations for `boto3.client("swf").respond_activity_task_completed`
 method.
 
 Boto3 documentation:
 [SWF.Client.respond_activity_task_completed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.respond_activity_task_completed)
+
+Arguments mapping described in
+[RespondActivityTaskCompletedInputTypeDef](./type_defs.md#respondactivitytaskcompletedinputtypedef).
 
 Keyword-only arguments:
 
@@ -587,10 +750,16 @@ Keyword-only arguments:
 
 ### respond_activity_task_failed
 
+Used by workers to tell the service that the ActivityTask identified by the
+`taskToken` has failed with `reason` (if specified).
+
 Type annotations for `boto3.client("swf").respond_activity_task_failed` method.
 
 Boto3 documentation:
 [SWF.Client.respond_activity_task_failed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.respond_activity_task_failed)
+
+Arguments mapping described in
+[RespondActivityTaskFailedInputTypeDef](./type_defs.md#respondactivitytaskfailedinputtypedef).
 
 Keyword-only arguments:
 
@@ -600,11 +769,17 @@ Keyword-only arguments:
 
 ### respond_decision_task_completed
 
+Used by deciders to tell the service that the DecisionTask identified by the
+`taskToken` has successfully completed.
+
 Type annotations for `boto3.client("swf").respond_decision_task_completed`
 method.
 
 Boto3 documentation:
 [SWF.Client.respond_decision_task_completed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.respond_decision_task_completed)
+
+Arguments mapping described in
+[RespondDecisionTaskCompletedInputTypeDef](./type_defs.md#responddecisiontaskcompletedinputtypedef).
 
 Keyword-only arguments:
 
@@ -614,10 +789,17 @@ Keyword-only arguments:
 
 ### signal_workflow_execution
 
+Records a `WorkflowExecutionSignaled` event in the workflow execution history
+and creates a decision task for the workflow execution identified by the given
+domain, workflowId and runId.
+
 Type annotations for `boto3.client("swf").signal_workflow_execution` method.
 
 Boto3 documentation:
 [SWF.Client.signal_workflow_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.signal_workflow_execution)
+
+Arguments mapping described in
+[SignalWorkflowExecutionInputTypeDef](./type_defs.md#signalworkflowexecutioninputtypedef).
 
 Keyword-only arguments:
 
@@ -629,10 +811,16 @@ Keyword-only arguments:
 
 ### start_workflow_execution
 
+Starts an execution of the workflow type in the specified domain using the
+provided `workflowId` and input data.
+
 Type annotations for `boto3.client("swf").start_workflow_execution` method.
 
 Boto3 documentation:
 [SWF.Client.start_workflow_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.start_workflow_execution)
+
+Arguments mapping described in
+[StartWorkflowExecutionInputTypeDef](./type_defs.md#startworkflowexecutioninputtypedef).
 
 Keyword-only arguments:
 
@@ -649,14 +837,19 @@ Keyword-only arguments:
 - `childPolicy`: [ChildPolicyType](./literals.md#childpolicytype)
 - `lambdaRole`: `str`
 
-Returns [RunTypeDef](./type_defs.md#runtypedef).
+Returns [RunResponseTypeDef](./type_defs.md#runresponsetypedef).
 
 ### tag_resource
+
+Add a tag to a Amazon SWF domain.
 
 Type annotations for `boto3.client("swf").tag_resource` method.
 
 Boto3 documentation:
 [SWF.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceInputTypeDef](./type_defs.md#tagresourceinputtypedef).
 
 Keyword-only arguments:
 
@@ -666,10 +859,16 @@ Keyword-only arguments:
 
 ### terminate_workflow_execution
 
+Records a `WorkflowExecutionTerminated` event and forces closure of the
+workflow execution identified by the given domain, runId, and workflowId.
+
 Type annotations for `boto3.client("swf").terminate_workflow_execution` method.
 
 Boto3 documentation:
 [SWF.Client.terminate_workflow_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.terminate_workflow_execution)
+
+Arguments mapping described in
+[TerminateWorkflowExecutionInputTypeDef](./type_defs.md#terminateworkflowexecutioninputtypedef).
 
 Keyword-only arguments:
 
@@ -682,10 +881,15 @@ Keyword-only arguments:
 
 ### undeprecate_activity_type
 
+Undeprecates a previously deprecated *activity type*.
+
 Type annotations for `boto3.client("swf").undeprecate_activity_type` method.
 
 Boto3 documentation:
 [SWF.Client.undeprecate_activity_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.undeprecate_activity_type)
+
+Arguments mapping described in
+[UndeprecateActivityTypeInputTypeDef](./type_defs.md#undeprecateactivitytypeinputtypedef).
 
 Keyword-only arguments:
 
@@ -695,10 +899,15 @@ Keyword-only arguments:
 
 ### undeprecate_domain
 
+Undeprecates a previously deprecated domain.
+
 Type annotations for `boto3.client("swf").undeprecate_domain` method.
 
 Boto3 documentation:
 [SWF.Client.undeprecate_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.undeprecate_domain)
+
+Arguments mapping described in
+[UndeprecateDomainInputTypeDef](./type_defs.md#undeprecatedomaininputtypedef).
 
 Keyword-only arguments:
 
@@ -706,10 +915,15 @@ Keyword-only arguments:
 
 ### undeprecate_workflow_type
 
+Undeprecates a previously deprecated *workflow type*.
+
 Type annotations for `boto3.client("swf").undeprecate_workflow_type` method.
 
 Boto3 documentation:
 [SWF.Client.undeprecate_workflow_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.undeprecate_workflow_type)
+
+Arguments mapping described in
+[UndeprecateWorkflowTypeInputTypeDef](./type_defs.md#undeprecateworkflowtypeinputtypedef).
 
 Keyword-only arguments:
 
@@ -719,10 +933,15 @@ Keyword-only arguments:
 
 ### untag_resource
 
+Remove a tag from a Amazon SWF domain.
+
 Type annotations for `boto3.client("swf").untag_resource` method.
 
 Boto3 documentation:
 [SWF.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceInputTypeDef](./type_defs.md#untagresourceinputtypedef).
 
 Keyword-only arguments:
 

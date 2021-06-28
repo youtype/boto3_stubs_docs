@@ -82,15 +82,15 @@ Arguments for `ListActionsPaginator.paginate` method:
 
 - `SourceUri`: `str`
 - `ActionType`: `str`
-- `CreatedAfter`: `datetime`
-- `CreatedBefore`: `datetime`
+- `CreatedAfter`: `Union`\[`datetime`, `str`\]
+- `CreatedBefore`: `Union`\[`datetime`, `str`\]
 - `SortBy`: [SortActionsByType](./literals.md#sortactionsbytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListActionsPaginator.paginate` returns
-`Iterator`\[[ListActionsResponseTypeDef](./type_defs.md#listactionsresponsetypedef)\].
+`Iterator`\[[ListActionsResponseResponseTypeDef](./type_defs.md#listactionsresponseresponsetypedef)\].
 
 ## ListAlgorithmsPaginator
 
@@ -111,8 +111,8 @@ Boto3 documentation:
 
 Arguments for `ListAlgorithmsPaginator.paginate` method:
 
-- `CreationTimeAfter`: `datetime`
-- `CreationTimeBefore`: `datetime`
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
 - `NameContains`: `str`
 - `SortBy`: [AlgorithmSortByType](./literals.md#algorithmsortbytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
@@ -120,7 +120,7 @@ Arguments for `ListAlgorithmsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAlgorithmsPaginator.paginate` returns
-`Iterator`\[[ListAlgorithmsOutputTypeDef](./type_defs.md#listalgorithmsoutputtypedef)\].
+`Iterator`\[[ListAlgorithmsOutputResponseTypeDef](./type_defs.md#listalgorithmsoutputresponsetypedef)\].
 
 ## ListAppImageConfigsPaginator
 
@@ -142,10 +142,10 @@ Boto3 documentation:
 Arguments for `ListAppImageConfigsPaginator.paginate` method:
 
 - `NameContains`: `str`
-- `CreationTimeBefore`: `datetime`
-- `CreationTimeAfter`: `datetime`
-- `ModifiedTimeBefore`: `datetime`
-- `ModifiedTimeAfter`: `datetime`
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `ModifiedTimeBefore`: `Union`\[`datetime`, `str`\]
+- `ModifiedTimeAfter`: `Union`\[`datetime`, `str`\]
 - `SortBy`:
   [AppImageConfigSortKeyType](./literals.md#appimageconfigsortkeytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
@@ -153,7 +153,7 @@ Arguments for `ListAppImageConfigsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAppImageConfigsPaginator.paginate` returns
-`Iterator`\[[ListAppImageConfigsResponseTypeDef](./type_defs.md#listappimageconfigsresponsetypedef)\].
+`Iterator`\[[ListAppImageConfigsResponseResponseTypeDef](./type_defs.md#listappimageconfigsresponseresponsetypedef)\].
 
 ## ListAppsPaginator
 
@@ -182,7 +182,7 @@ Arguments for `ListAppsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAppsPaginator.paginate` returns
-`Iterator`\[[ListAppsResponseTypeDef](./type_defs.md#listappsresponsetypedef)\].
+`Iterator`\[[ListAppsResponseResponseTypeDef](./type_defs.md#listappsresponseresponsetypedef)\].
 
 ## ListArtifactsPaginator
 
@@ -205,8 +205,8 @@ Arguments for `ListArtifactsPaginator.paginate` method:
 
 - `SourceUri`: `str`
 - `ArtifactType`: `str`
-- `CreatedAfter`: `datetime`
-- `CreatedBefore`: `datetime`
+- `CreatedAfter`: `Union`\[`datetime`, `str`\]
+- `CreatedBefore`: `Union`\[`datetime`, `str`\]
 - `SortBy`: `Literal['CreationTime']` (see
   [SortArtifactsByType](./literals.md#sortartifactsbytype))
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
@@ -214,7 +214,7 @@ Arguments for `ListArtifactsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListArtifactsPaginator.paginate` returns
-`Iterator`\[[ListArtifactsResponseTypeDef](./type_defs.md#listartifactsresponsetypedef)\].
+`Iterator`\[[ListArtifactsResponseResponseTypeDef](./type_defs.md#listartifactsresponseresponsetypedef)\].
 
 ## ListAssociationsPaginator
 
@@ -241,15 +241,15 @@ Arguments for `ListAssociationsPaginator.paginate` method:
 - `DestinationType`: `str`
 - `AssociationType`:
   [AssociationEdgeTypeType](./literals.md#associationedgetypetype)
-- `CreatedAfter`: `datetime`
-- `CreatedBefore`: `datetime`
+- `CreatedAfter`: `Union`\[`datetime`, `str`\]
+- `CreatedBefore`: `Union`\[`datetime`, `str`\]
 - `SortBy`: [SortAssociationsByType](./literals.md#sortassociationsbytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssociationsPaginator.paginate` returns
-`Iterator`\[[ListAssociationsResponseTypeDef](./type_defs.md#listassociationsresponsetypedef)\].
+`Iterator`\[[ListAssociationsResponseResponseTypeDef](./type_defs.md#listassociationsresponseresponsetypedef)\].
 
 ## ListAutoMLJobsPaginator
 
@@ -270,10 +270,10 @@ Boto3 documentation:
 
 Arguments for `ListAutoMLJobsPaginator.paginate` method:
 
-- `CreationTimeAfter`: `datetime`
-- `CreationTimeBefore`: `datetime`
-- `LastModifiedTimeAfter`: `datetime`
-- `LastModifiedTimeBefore`: `datetime`
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeAfter`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeBefore`: `Union`\[`datetime`, `str`\]
 - `NameContains`: `str`
 - `StatusEquals`: [AutoMLJobStatusType](./literals.md#automljobstatustype)
 - `SortOrder`: [AutoMLSortOrderType](./literals.md#automlsortordertype)
@@ -282,7 +282,7 @@ Arguments for `ListAutoMLJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAutoMLJobsPaginator.paginate` returns
-`Iterator`\[[ListAutoMLJobsResponseTypeDef](./type_defs.md#listautomljobsresponsetypedef)\].
+`Iterator`\[[ListAutoMLJobsResponseResponseTypeDef](./type_defs.md#listautomljobsresponseresponsetypedef)\].
 
 ## ListCandidatesForAutoMLJobPaginator
 
@@ -312,7 +312,7 @@ Arguments for `ListCandidatesForAutoMLJobPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCandidatesForAutoMLJobPaginator.paginate` returns
-`Iterator`\[[ListCandidatesForAutoMLJobResponseTypeDef](./type_defs.md#listcandidatesforautomljobresponsetypedef)\].
+`Iterator`\[[ListCandidatesForAutoMLJobResponseResponseTypeDef](./type_defs.md#listcandidatesforautomljobresponseresponsetypedef)\].
 
 ## ListCodeRepositoriesPaginator
 
@@ -333,10 +333,10 @@ Boto3 documentation:
 
 Arguments for `ListCodeRepositoriesPaginator.paginate` method:
 
-- `CreationTimeAfter`: `datetime`
-- `CreationTimeBefore`: `datetime`
-- `LastModifiedTimeAfter`: `datetime`
-- `LastModifiedTimeBefore`: `datetime`
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeAfter`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeBefore`: `Union`\[`datetime`, `str`\]
 - `NameContains`: `str`
 - `SortBy`: [CodeRepositorySortByType](./literals.md#coderepositorysortbytype)
 - `SortOrder`:
@@ -345,7 +345,7 @@ Arguments for `ListCodeRepositoriesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCodeRepositoriesPaginator.paginate` returns
-`Iterator`\[[ListCodeRepositoriesOutputTypeDef](./type_defs.md#listcoderepositoriesoutputtypedef)\].
+`Iterator`\[[ListCodeRepositoriesOutputResponseTypeDef](./type_defs.md#listcoderepositoriesoutputresponsetypedef)\].
 
 ## ListCompilationJobsPaginator
 
@@ -366,10 +366,10 @@ Boto3 documentation:
 
 Arguments for `ListCompilationJobsPaginator.paginate` method:
 
-- `CreationTimeAfter`: `datetime`
-- `CreationTimeBefore`: `datetime`
-- `LastModifiedTimeAfter`: `datetime`
-- `LastModifiedTimeBefore`: `datetime`
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeAfter`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeBefore`: `Union`\[`datetime`, `str`\]
 - `NameContains`: `str`
 - `StatusEquals`:
   [CompilationJobStatusType](./literals.md#compilationjobstatustype)
@@ -380,7 +380,7 @@ Arguments for `ListCompilationJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCompilationJobsPaginator.paginate` returns
-`Iterator`\[[ListCompilationJobsResponseTypeDef](./type_defs.md#listcompilationjobsresponsetypedef)\].
+`Iterator`\[[ListCompilationJobsResponseResponseTypeDef](./type_defs.md#listcompilationjobsresponseresponsetypedef)\].
 
 ## ListContextsPaginator
 
@@ -403,15 +403,15 @@ Arguments for `ListContextsPaginator.paginate` method:
 
 - `SourceUri`: `str`
 - `ContextType`: `str`
-- `CreatedAfter`: `datetime`
-- `CreatedBefore`: `datetime`
+- `CreatedAfter`: `Union`\[`datetime`, `str`\]
+- `CreatedBefore`: `Union`\[`datetime`, `str`\]
 - `SortBy`: [SortContextsByType](./literals.md#sortcontextsbytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListContextsPaginator.paginate` returns
-`Iterator`\[[ListContextsResponseTypeDef](./type_defs.md#listcontextsresponsetypedef)\].
+`Iterator`\[[ListContextsResponseResponseTypeDef](./type_defs.md#listcontextsresponseresponsetypedef)\].
 
 ## ListDataQualityJobDefinitionsPaginator
 
@@ -437,13 +437,13 @@ Arguments for `ListDataQualityJobDefinitionsPaginator.paginate` method:
   [MonitoringJobDefinitionSortKeyType](./literals.md#monitoringjobdefinitionsortkeytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `NameContains`: `str`
-- `CreationTimeBefore`: `datetime`
-- `CreationTimeAfter`: `datetime`
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDataQualityJobDefinitionsPaginator.paginate` returns
-`Iterator`\[[ListDataQualityJobDefinitionsResponseTypeDef](./type_defs.md#listdataqualityjobdefinitionsresponsetypedef)\].
+`Iterator`\[[ListDataQualityJobDefinitionsResponseResponseTypeDef](./type_defs.md#listdataqualityjobdefinitionsresponseresponsetypedef)\].
 
 ## ListDeviceFleetsPaginator
 
@@ -464,10 +464,10 @@ Boto3 documentation:
 
 Arguments for `ListDeviceFleetsPaginator.paginate` method:
 
-- `CreationTimeAfter`: `datetime`
-- `CreationTimeBefore`: `datetime`
-- `LastModifiedTimeAfter`: `datetime`
-- `LastModifiedTimeBefore`: `datetime`
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeAfter`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeBefore`: `Union`\[`datetime`, `str`\]
 - `NameContains`: `str`
 - `SortBy`:
   [ListDeviceFleetsSortByType](./literals.md#listdevicefleetssortbytype)
@@ -476,7 +476,7 @@ Arguments for `ListDeviceFleetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDeviceFleetsPaginator.paginate` returns
-`Iterator`\[[ListDeviceFleetsResponseTypeDef](./type_defs.md#listdevicefleetsresponsetypedef)\].
+`Iterator`\[[ListDeviceFleetsResponseResponseTypeDef](./type_defs.md#listdevicefleetsresponseresponsetypedef)\].
 
 ## ListDevicesPaginator
 
@@ -496,14 +496,14 @@ Boto3 documentation:
 
 Arguments for `ListDevicesPaginator.paginate` method:
 
-- `LatestHeartbeatAfter`: `datetime`
+- `LatestHeartbeatAfter`: `Union`\[`datetime`, `str`\]
 - `ModelName`: `str`
 - `DeviceFleetName`: `str`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDevicesPaginator.paginate` returns
-`Iterator`\[[ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef)\].
+`Iterator`\[[ListDevicesResponseResponseTypeDef](./type_defs.md#listdevicesresponseresponsetypedef)\].
 
 ## ListDomainsPaginator
 
@@ -527,7 +527,7 @@ Arguments for `ListDomainsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDomainsPaginator.paginate` returns
-`Iterator`\[[ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef)\].
+`Iterator`\[[ListDomainsResponseResponseTypeDef](./type_defs.md#listdomainsresponseresponsetypedef)\].
 
 ## ListEdgePackagingJobsPaginator
 
@@ -548,10 +548,10 @@ Boto3 documentation:
 
 Arguments for `ListEdgePackagingJobsPaginator.paginate` method:
 
-- `CreationTimeAfter`: `datetime`
-- `CreationTimeBefore`: `datetime`
-- `LastModifiedTimeAfter`: `datetime`
-- `LastModifiedTimeBefore`: `datetime`
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeAfter`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeBefore`: `Union`\[`datetime`, `str`\]
 - `NameContains`: `str`
 - `ModelNameContains`: `str`
 - `StatusEquals`:
@@ -563,7 +563,7 @@ Arguments for `ListEdgePackagingJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEdgePackagingJobsPaginator.paginate` returns
-`Iterator`\[[ListEdgePackagingJobsResponseTypeDef](./type_defs.md#listedgepackagingjobsresponsetypedef)\].
+`Iterator`\[[ListEdgePackagingJobsResponseResponseTypeDef](./type_defs.md#listedgepackagingjobsresponseresponsetypedef)\].
 
 ## ListEndpointConfigsPaginator
 
@@ -588,13 +588,13 @@ Arguments for `ListEndpointConfigsPaginator.paginate` method:
   [EndpointConfigSortKeyType](./literals.md#endpointconfigsortkeytype)
 - `SortOrder`: [OrderKeyType](./literals.md#orderkeytype)
 - `NameContains`: `str`
-- `CreationTimeBefore`: `datetime`
-- `CreationTimeAfter`: `datetime`
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEndpointConfigsPaginator.paginate` returns
-`Iterator`\[[ListEndpointConfigsOutputTypeDef](./type_defs.md#listendpointconfigsoutputtypedef)\].
+`Iterator`\[[ListEndpointConfigsOutputResponseTypeDef](./type_defs.md#listendpointconfigsoutputresponsetypedef)\].
 
 ## ListEndpointsPaginator
 
@@ -618,16 +618,16 @@ Arguments for `ListEndpointsPaginator.paginate` method:
 - `SortBy`: [EndpointSortKeyType](./literals.md#endpointsortkeytype)
 - `SortOrder`: [OrderKeyType](./literals.md#orderkeytype)
 - `NameContains`: `str`
-- `CreationTimeBefore`: `datetime`
-- `CreationTimeAfter`: `datetime`
-- `LastModifiedTimeBefore`: `datetime`
-- `LastModifiedTimeAfter`: `datetime`
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeBefore`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeAfter`: `Union`\[`datetime`, `str`\]
 - `StatusEquals`: [EndpointStatusType](./literals.md#endpointstatustype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEndpointsPaginator.paginate` returns
-`Iterator`\[[ListEndpointsOutputTypeDef](./type_defs.md#listendpointsoutputtypedef)\].
+`Iterator`\[[ListEndpointsOutputResponseTypeDef](./type_defs.md#listendpointsoutputresponsetypedef)\].
 
 ## ListExperimentsPaginator
 
@@ -648,15 +648,15 @@ Boto3 documentation:
 
 Arguments for `ListExperimentsPaginator.paginate` method:
 
-- `CreatedAfter`: `datetime`
-- `CreatedBefore`: `datetime`
+- `CreatedAfter`: `Union`\[`datetime`, `str`\]
+- `CreatedBefore`: `Union`\[`datetime`, `str`\]
 - `SortBy`: [SortExperimentsByType](./literals.md#sortexperimentsbytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListExperimentsPaginator.paginate` returns
-`Iterator`\[[ListExperimentsResponseTypeDef](./type_defs.md#listexperimentsresponsetypedef)\].
+`Iterator`\[[ListExperimentsResponseResponseTypeDef](./type_defs.md#listexperimentsresponseresponsetypedef)\].
 
 ## ListFeatureGroupsPaginator
 
@@ -682,8 +682,8 @@ Arguments for `ListFeatureGroupsPaginator.paginate` method:
   [FeatureGroupStatusType](./literals.md#featuregroupstatustype)
 - `OfflineStoreStatusEquals`:
   [OfflineStoreStatusValueType](./literals.md#offlinestorestatusvaluetype)
-- `CreationTimeAfter`: `datetime`
-- `CreationTimeBefore`: `datetime`
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
 - `SortOrder`:
   [FeatureGroupSortOrderType](./literals.md#featuregroupsortordertype)
 - `SortBy`: [FeatureGroupSortByType](./literals.md#featuregroupsortbytype)
@@ -691,7 +691,7 @@ Arguments for `ListFeatureGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFeatureGroupsPaginator.paginate` returns
-`Iterator`\[[ListFeatureGroupsResponseTypeDef](./type_defs.md#listfeaturegroupsresponsetypedef)\].
+`Iterator`\[[ListFeatureGroupsResponseResponseTypeDef](./type_defs.md#listfeaturegroupsresponseresponsetypedef)\].
 
 ## ListFlowDefinitionsPaginator
 
@@ -712,14 +712,14 @@ Boto3 documentation:
 
 Arguments for `ListFlowDefinitionsPaginator.paginate` method:
 
-- `CreationTimeAfter`: `datetime`
-- `CreationTimeBefore`: `datetime`
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFlowDefinitionsPaginator.paginate` returns
-`Iterator`\[[ListFlowDefinitionsResponseTypeDef](./type_defs.md#listflowdefinitionsresponsetypedef)\].
+`Iterator`\[[ListFlowDefinitionsResponseResponseTypeDef](./type_defs.md#listflowdefinitionsresponseresponsetypedef)\].
 
 ## ListHumanTaskUisPaginator
 
@@ -740,14 +740,14 @@ Boto3 documentation:
 
 Arguments for `ListHumanTaskUisPaginator.paginate` method:
 
-- `CreationTimeAfter`: `datetime`
-- `CreationTimeBefore`: `datetime`
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListHumanTaskUisPaginator.paginate` returns
-`Iterator`\[[ListHumanTaskUisResponseTypeDef](./type_defs.md#listhumantaskuisresponsetypedef)\].
+`Iterator`\[[ListHumanTaskUisResponseResponseTypeDef](./type_defs.md#listhumantaskuisresponseresponsetypedef)\].
 
 ## ListHyperParameterTuningJobsPaginator
 
@@ -772,17 +772,17 @@ Arguments for `ListHyperParameterTuningJobsPaginator.paginate` method:
   [HyperParameterTuningJobSortByOptionsType](./literals.md#hyperparametertuningjobsortbyoptionstype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `NameContains`: `str`
-- `CreationTimeAfter`: `datetime`
-- `CreationTimeBefore`: `datetime`
-- `LastModifiedTimeAfter`: `datetime`
-- `LastModifiedTimeBefore`: `datetime`
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeAfter`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeBefore`: `Union`\[`datetime`, `str`\]
 - `StatusEquals`:
   [HyperParameterTuningJobStatusType](./literals.md#hyperparametertuningjobstatustype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListHyperParameterTuningJobsPaginator.paginate` returns
-`Iterator`\[[ListHyperParameterTuningJobsResponseTypeDef](./type_defs.md#listhyperparametertuningjobsresponsetypedef)\].
+`Iterator`\[[ListHyperParameterTuningJobsResponseResponseTypeDef](./type_defs.md#listhyperparametertuningjobsresponseresponsetypedef)\].
 
 ## ListImageVersionsPaginator
 
@@ -804,10 +804,10 @@ Boto3 documentation:
 Arguments for `ListImageVersionsPaginator.paginate` method:
 
 - `ImageName`: `str` *(required)*
-- `CreationTimeAfter`: `datetime`
-- `CreationTimeBefore`: `datetime`
-- `LastModifiedTimeAfter`: `datetime`
-- `LastModifiedTimeBefore`: `datetime`
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeAfter`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeBefore`: `Union`\[`datetime`, `str`\]
 - `SortBy`: [ImageVersionSortByType](./literals.md#imageversionsortbytype)
 - `SortOrder`:
   [ImageVersionSortOrderType](./literals.md#imageversionsortordertype)
@@ -815,7 +815,7 @@ Arguments for `ListImageVersionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListImageVersionsPaginator.paginate` returns
-`Iterator`\[[ListImageVersionsResponseTypeDef](./type_defs.md#listimageversionsresponsetypedef)\].
+`Iterator`\[[ListImageVersionsResponseResponseTypeDef](./type_defs.md#listimageversionsresponseresponsetypedef)\].
 
 ## ListImagesPaginator
 
@@ -835,10 +835,10 @@ Boto3 documentation:
 
 Arguments for `ListImagesPaginator.paginate` method:
 
-- `CreationTimeAfter`: `datetime`
-- `CreationTimeBefore`: `datetime`
-- `LastModifiedTimeAfter`: `datetime`
-- `LastModifiedTimeBefore`: `datetime`
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeAfter`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeBefore`: `Union`\[`datetime`, `str`\]
 - `NameContains`: `str`
 - `SortBy`: [ImageSortByType](./literals.md#imagesortbytype)
 - `SortOrder`: [ImageSortOrderType](./literals.md#imagesortordertype)
@@ -846,7 +846,7 @@ Arguments for `ListImagesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListImagesPaginator.paginate` returns
-`Iterator`\[[ListImagesResponseTypeDef](./type_defs.md#listimagesresponsetypedef)\].
+`Iterator`\[[ListImagesResponseResponseTypeDef](./type_defs.md#listimagesresponseresponsetypedef)\].
 
 ## ListLabelingJobsPaginator
 
@@ -867,10 +867,10 @@ Boto3 documentation:
 
 Arguments for `ListLabelingJobsPaginator.paginate` method:
 
-- `CreationTimeAfter`: `datetime`
-- `CreationTimeBefore`: `datetime`
-- `LastModifiedTimeAfter`: `datetime`
-- `LastModifiedTimeBefore`: `datetime`
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeAfter`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeBefore`: `Union`\[`datetime`, `str`\]
 - `NameContains`: `str`
 - `SortBy`: [SortByType](./literals.md#sortbytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
@@ -879,7 +879,7 @@ Arguments for `ListLabelingJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListLabelingJobsPaginator.paginate` returns
-`Iterator`\[[ListLabelingJobsResponseTypeDef](./type_defs.md#listlabelingjobsresponsetypedef)\].
+`Iterator`\[[ListLabelingJobsResponseResponseTypeDef](./type_defs.md#listlabelingjobsresponseresponsetypedef)\].
 
 ## ListLabelingJobsForWorkteamPaginator
 
@@ -901,8 +901,8 @@ Boto3 documentation:
 Arguments for `ListLabelingJobsForWorkteamPaginator.paginate` method:
 
 - `WorkteamArn`: `str` *(required)*
-- `CreationTimeAfter`: `datetime`
-- `CreationTimeBefore`: `datetime`
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
 - `JobReferenceCodeContains`: `str`
 - `SortBy`: `Literal['CreationTime']` (see
   [ListLabelingJobsForWorkteamSortByOptionsType](./literals.md#listlabelingjobsforworkteamsortbyoptionstype))
@@ -911,7 +911,7 @@ Arguments for `ListLabelingJobsForWorkteamPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListLabelingJobsForWorkteamPaginator.paginate` returns
-`Iterator`\[[ListLabelingJobsForWorkteamResponseTypeDef](./type_defs.md#listlabelingjobsforworkteamresponsetypedef)\].
+`Iterator`\[[ListLabelingJobsForWorkteamResponseResponseTypeDef](./type_defs.md#listlabelingjobsforworkteamresponseresponsetypedef)\].
 
 ## ListModelBiasJobDefinitionsPaginator
 
@@ -937,13 +937,13 @@ Arguments for `ListModelBiasJobDefinitionsPaginator.paginate` method:
   [MonitoringJobDefinitionSortKeyType](./literals.md#monitoringjobdefinitionsortkeytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `NameContains`: `str`
-- `CreationTimeBefore`: `datetime`
-- `CreationTimeAfter`: `datetime`
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListModelBiasJobDefinitionsPaginator.paginate` returns
-`Iterator`\[[ListModelBiasJobDefinitionsResponseTypeDef](./type_defs.md#listmodelbiasjobdefinitionsresponsetypedef)\].
+`Iterator`\[[ListModelBiasJobDefinitionsResponseResponseTypeDef](./type_defs.md#listmodelbiasjobdefinitionsresponseresponsetypedef)\].
 
 ## ListModelExplainabilityJobDefinitionsPaginator
 
@@ -969,13 +969,13 @@ Arguments for `ListModelExplainabilityJobDefinitionsPaginator.paginate` method:
   [MonitoringJobDefinitionSortKeyType](./literals.md#monitoringjobdefinitionsortkeytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `NameContains`: `str`
-- `CreationTimeBefore`: `datetime`
-- `CreationTimeAfter`: `datetime`
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListModelExplainabilityJobDefinitionsPaginator.paginate` returns
-`Iterator`\[[ListModelExplainabilityJobDefinitionsResponseTypeDef](./type_defs.md#listmodelexplainabilityjobdefinitionsresponsetypedef)\].
+`Iterator`\[[ListModelExplainabilityJobDefinitionsResponseResponseTypeDef](./type_defs.md#listmodelexplainabilityjobdefinitionsresponseresponsetypedef)\].
 
 ## ListModelPackageGroupsPaginator
 
@@ -996,8 +996,8 @@ Boto3 documentation:
 
 Arguments for `ListModelPackageGroupsPaginator.paginate` method:
 
-- `CreationTimeAfter`: `datetime`
-- `CreationTimeBefore`: `datetime`
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
 - `NameContains`: `str`
 - `SortBy`:
   [ModelPackageGroupSortByType](./literals.md#modelpackagegroupsortbytype)
@@ -1006,7 +1006,7 @@ Arguments for `ListModelPackageGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListModelPackageGroupsPaginator.paginate` returns
-`Iterator`\[[ListModelPackageGroupsOutputTypeDef](./type_defs.md#listmodelpackagegroupsoutputtypedef)\].
+`Iterator`\[[ListModelPackageGroupsOutputResponseTypeDef](./type_defs.md#listmodelpackagegroupsoutputresponsetypedef)\].
 
 ## ListModelPackagesPaginator
 
@@ -1027,8 +1027,8 @@ Boto3 documentation:
 
 Arguments for `ListModelPackagesPaginator.paginate` method:
 
-- `CreationTimeAfter`: `datetime`
-- `CreationTimeBefore`: `datetime`
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
 - `NameContains`: `str`
 - `ModelApprovalStatus`:
   [ModelApprovalStatusType](./literals.md#modelapprovalstatustype)
@@ -1041,7 +1041,7 @@ Arguments for `ListModelPackagesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListModelPackagesPaginator.paginate` returns
-`Iterator`\[[ListModelPackagesOutputTypeDef](./type_defs.md#listmodelpackagesoutputtypedef)\].
+`Iterator`\[[ListModelPackagesOutputResponseTypeDef](./type_defs.md#listmodelpackagesoutputresponsetypedef)\].
 
 ## ListModelQualityJobDefinitionsPaginator
 
@@ -1067,13 +1067,13 @@ Arguments for `ListModelQualityJobDefinitionsPaginator.paginate` method:
   [MonitoringJobDefinitionSortKeyType](./literals.md#monitoringjobdefinitionsortkeytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `NameContains`: `str`
-- `CreationTimeBefore`: `datetime`
-- `CreationTimeAfter`: `datetime`
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListModelQualityJobDefinitionsPaginator.paginate` returns
-`Iterator`\[[ListModelQualityJobDefinitionsResponseTypeDef](./type_defs.md#listmodelqualityjobdefinitionsresponsetypedef)\].
+`Iterator`\[[ListModelQualityJobDefinitionsResponseResponseTypeDef](./type_defs.md#listmodelqualityjobdefinitionsresponseresponsetypedef)\].
 
 ## ListModelsPaginator
 
@@ -1096,13 +1096,13 @@ Arguments for `ListModelsPaginator.paginate` method:
 - `SortBy`: [ModelSortKeyType](./literals.md#modelsortkeytype)
 - `SortOrder`: [OrderKeyType](./literals.md#orderkeytype)
 - `NameContains`: `str`
-- `CreationTimeBefore`: `datetime`
-- `CreationTimeAfter`: `datetime`
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListModelsPaginator.paginate` returns
-`Iterator`\[[ListModelsOutputTypeDef](./type_defs.md#listmodelsoutputtypedef)\].
+`Iterator`\[[ListModelsOutputResponseTypeDef](./type_defs.md#listmodelsoutputresponsetypedef)\].
 
 ## ListMonitoringExecutionsPaginator
 
@@ -1128,12 +1128,12 @@ Arguments for `ListMonitoringExecutionsPaginator.paginate` method:
 - `SortBy`:
   [MonitoringExecutionSortKeyType](./literals.md#monitoringexecutionsortkeytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `ScheduledTimeBefore`: `datetime`
-- `ScheduledTimeAfter`: `datetime`
-- `CreationTimeBefore`: `datetime`
-- `CreationTimeAfter`: `datetime`
-- `LastModifiedTimeBefore`: `datetime`
-- `LastModifiedTimeAfter`: `datetime`
+- `ScheduledTimeBefore`: `Union`\[`datetime`, `str`\]
+- `ScheduledTimeAfter`: `Union`\[`datetime`, `str`\]
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeBefore`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeAfter`: `Union`\[`datetime`, `str`\]
 - `StatusEquals`: [ExecutionStatusType](./literals.md#executionstatustype)
 - `MonitoringJobDefinitionName`: `str`
 - `MonitoringTypeEquals`:
@@ -1142,7 +1142,7 @@ Arguments for `ListMonitoringExecutionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMonitoringExecutionsPaginator.paginate` returns
-`Iterator`\[[ListMonitoringExecutionsResponseTypeDef](./type_defs.md#listmonitoringexecutionsresponsetypedef)\].
+`Iterator`\[[ListMonitoringExecutionsResponseResponseTypeDef](./type_defs.md#listmonitoringexecutionsresponseresponsetypedef)\].
 
 ## ListMonitoringSchedulesPaginator
 
@@ -1168,10 +1168,10 @@ Arguments for `ListMonitoringSchedulesPaginator.paginate` method:
   [MonitoringScheduleSortKeyType](./literals.md#monitoringschedulesortkeytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `NameContains`: `str`
-- `CreationTimeBefore`: `datetime`
-- `CreationTimeAfter`: `datetime`
-- `LastModifiedTimeBefore`: `datetime`
-- `LastModifiedTimeAfter`: `datetime`
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeBefore`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeAfter`: `Union`\[`datetime`, `str`\]
 - `StatusEquals`: [ScheduleStatusType](./literals.md#schedulestatustype)
 - `MonitoringJobDefinitionName`: `str`
 - `MonitoringTypeEquals`:
@@ -1180,7 +1180,7 @@ Arguments for `ListMonitoringSchedulesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMonitoringSchedulesPaginator.paginate` returns
-`Iterator`\[[ListMonitoringSchedulesResponseTypeDef](./type_defs.md#listmonitoringschedulesresponsetypedef)\].
+`Iterator`\[[ListMonitoringSchedulesResponseResponseTypeDef](./type_defs.md#listmonitoringschedulesresponseresponsetypedef)\].
 
 ## ListNotebookInstanceLifecycleConfigsPaginator
 
@@ -1206,15 +1206,15 @@ Arguments for `ListNotebookInstanceLifecycleConfigsPaginator.paginate` method:
 - `SortOrder`:
   [NotebookInstanceLifecycleConfigSortOrderType](./literals.md#notebookinstancelifecycleconfigsortordertype)
 - `NameContains`: `str`
-- `CreationTimeBefore`: `datetime`
-- `CreationTimeAfter`: `datetime`
-- `LastModifiedTimeBefore`: `datetime`
-- `LastModifiedTimeAfter`: `datetime`
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeBefore`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeAfter`: `Union`\[`datetime`, `str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListNotebookInstanceLifecycleConfigsPaginator.paginate` returns
-`Iterator`\[[ListNotebookInstanceLifecycleConfigsOutputTypeDef](./type_defs.md#listnotebookinstancelifecycleconfigsoutputtypedef)\].
+`Iterator`\[[ListNotebookInstanceLifecycleConfigsOutputResponseTypeDef](./type_defs.md#listnotebookinstancelifecycleconfigsoutputresponsetypedef)\].
 
 ## ListNotebookInstancesPaginator
 
@@ -1240,10 +1240,10 @@ Arguments for `ListNotebookInstancesPaginator.paginate` method:
 - `SortOrder`:
   [NotebookInstanceSortOrderType](./literals.md#notebookinstancesortordertype)
 - `NameContains`: `str`
-- `CreationTimeBefore`: `datetime`
-- `CreationTimeAfter`: `datetime`
-- `LastModifiedTimeBefore`: `datetime`
-- `LastModifiedTimeAfter`: `datetime`
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeBefore`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeAfter`: `Union`\[`datetime`, `str`\]
 - `StatusEquals`:
   [NotebookInstanceStatusType](./literals.md#notebookinstancestatustype)
 - `NotebookInstanceLifecycleConfigNameContains`: `str`
@@ -1253,7 +1253,7 @@ Arguments for `ListNotebookInstancesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListNotebookInstancesPaginator.paginate` returns
-`Iterator`\[[ListNotebookInstancesOutputTypeDef](./type_defs.md#listnotebookinstancesoutputtypedef)\].
+`Iterator`\[[ListNotebookInstancesOutputResponseTypeDef](./type_defs.md#listnotebookinstancesoutputresponsetypedef)\].
 
 ## ListPipelineExecutionStepsPaginator
 
@@ -1280,7 +1280,7 @@ Arguments for `ListPipelineExecutionStepsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPipelineExecutionStepsPaginator.paginate` returns
-`Iterator`\[[ListPipelineExecutionStepsResponseTypeDef](./type_defs.md#listpipelineexecutionstepsresponsetypedef)\].
+`Iterator`\[[ListPipelineExecutionStepsResponseResponseTypeDef](./type_defs.md#listpipelineexecutionstepsresponseresponsetypedef)\].
 
 ## ListPipelineExecutionsPaginator
 
@@ -1302,8 +1302,8 @@ Boto3 documentation:
 Arguments for `ListPipelineExecutionsPaginator.paginate` method:
 
 - `PipelineName`: `str` *(required)*
-- `CreatedAfter`: `datetime`
-- `CreatedBefore`: `datetime`
+- `CreatedAfter`: `Union`\[`datetime`, `str`\]
+- `CreatedBefore`: `Union`\[`datetime`, `str`\]
 - `SortBy`:
   [SortPipelineExecutionsByType](./literals.md#sortpipelineexecutionsbytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
@@ -1311,7 +1311,7 @@ Arguments for `ListPipelineExecutionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPipelineExecutionsPaginator.paginate` returns
-`Iterator`\[[ListPipelineExecutionsResponseTypeDef](./type_defs.md#listpipelineexecutionsresponsetypedef)\].
+`Iterator`\[[ListPipelineExecutionsResponseResponseTypeDef](./type_defs.md#listpipelineexecutionsresponseresponsetypedef)\].
 
 ## ListPipelineParametersForExecutionPaginator
 
@@ -1337,7 +1337,7 @@ Arguments for `ListPipelineParametersForExecutionPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPipelineParametersForExecutionPaginator.paginate` returns
-`Iterator`\[[ListPipelineParametersForExecutionResponseTypeDef](./type_defs.md#listpipelineparametersforexecutionresponsetypedef)\].
+`Iterator`\[[ListPipelineParametersForExecutionResponseResponseTypeDef](./type_defs.md#listpipelineparametersforexecutionresponseresponsetypedef)\].
 
 ## ListPipelinesPaginator
 
@@ -1359,15 +1359,15 @@ Boto3 documentation:
 Arguments for `ListPipelinesPaginator.paginate` method:
 
 - `PipelineNamePrefix`: `str`
-- `CreatedAfter`: `datetime`
-- `CreatedBefore`: `datetime`
+- `CreatedAfter`: `Union`\[`datetime`, `str`\]
+- `CreatedBefore`: `Union`\[`datetime`, `str`\]
 - `SortBy`: [SortPipelinesByType](./literals.md#sortpipelinesbytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPipelinesPaginator.paginate` returns
-`Iterator`\[[ListPipelinesResponseTypeDef](./type_defs.md#listpipelinesresponsetypedef)\].
+`Iterator`\[[ListPipelinesResponseResponseTypeDef](./type_defs.md#listpipelinesresponseresponsetypedef)\].
 
 ## ListProcessingJobsPaginator
 
@@ -1388,10 +1388,10 @@ Boto3 documentation:
 
 Arguments for `ListProcessingJobsPaginator.paginate` method:
 
-- `CreationTimeAfter`: `datetime`
-- `CreationTimeBefore`: `datetime`
-- `LastModifiedTimeAfter`: `datetime`
-- `LastModifiedTimeBefore`: `datetime`
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeAfter`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeBefore`: `Union`\[`datetime`, `str`\]
 - `NameContains`: `str`
 - `StatusEquals`:
   [ProcessingJobStatusType](./literals.md#processingjobstatustype)
@@ -1401,7 +1401,7 @@ Arguments for `ListProcessingJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProcessingJobsPaginator.paginate` returns
-`Iterator`\[[ListProcessingJobsResponseTypeDef](./type_defs.md#listprocessingjobsresponsetypedef)\].
+`Iterator`\[[ListProcessingJobsResponseResponseTypeDef](./type_defs.md#listprocessingjobsresponseresponsetypedef)\].
 
 ## ListSubscribedWorkteamsPaginator
 
@@ -1427,7 +1427,7 @@ Arguments for `ListSubscribedWorkteamsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSubscribedWorkteamsPaginator.paginate` returns
-`Iterator`\[[ListSubscribedWorkteamsResponseTypeDef](./type_defs.md#listsubscribedworkteamsresponsetypedef)\].
+`Iterator`\[[ListSubscribedWorkteamsResponseResponseTypeDef](./type_defs.md#listsubscribedworkteamsresponseresponsetypedef)\].
 
 ## ListTagsPaginator
 
@@ -1452,7 +1452,7 @@ Arguments for `ListTagsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsPaginator.paginate` returns
-`Iterator`\[[ListTagsOutputTypeDef](./type_defs.md#listtagsoutputtypedef)\].
+`Iterator`\[[ListTagsOutputResponseTypeDef](./type_defs.md#listtagsoutputresponsetypedef)\].
 
 ## ListTrainingJobsPaginator
 
@@ -1473,10 +1473,10 @@ Boto3 documentation:
 
 Arguments for `ListTrainingJobsPaginator.paginate` method:
 
-- `CreationTimeAfter`: `datetime`
-- `CreationTimeBefore`: `datetime`
-- `LastModifiedTimeAfter`: `datetime`
-- `LastModifiedTimeBefore`: `datetime`
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeAfter`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeBefore`: `Union`\[`datetime`, `str`\]
 - `NameContains`: `str`
 - `StatusEquals`: [TrainingJobStatusType](./literals.md#trainingjobstatustype)
 - `SortBy`: [SortByType](./literals.md#sortbytype)
@@ -1485,7 +1485,7 @@ Arguments for `ListTrainingJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTrainingJobsPaginator.paginate` returns
-`Iterator`\[[ListTrainingJobsResponseTypeDef](./type_defs.md#listtrainingjobsresponsetypedef)\].
+`Iterator`\[[ListTrainingJobsResponseResponseTypeDef](./type_defs.md#listtrainingjobsresponseresponsetypedef)\].
 
 ## ListTrainingJobsForHyperParameterTuningJobPaginator
 
@@ -1516,7 +1516,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTrainingJobsForHyperParameterTuningJobPaginator.paginate` returns
-`Iterator`\[[ListTrainingJobsForHyperParameterTuningJobResponseTypeDef](./type_defs.md#listtrainingjobsforhyperparametertuningjobresponsetypedef)\].
+`Iterator`\[[ListTrainingJobsForHyperParameterTuningJobResponseResponseTypeDef](./type_defs.md#listtrainingjobsforhyperparametertuningjobresponseresponsetypedef)\].
 
 ## ListTransformJobsPaginator
 
@@ -1537,10 +1537,10 @@ Boto3 documentation:
 
 Arguments for `ListTransformJobsPaginator.paginate` method:
 
-- `CreationTimeAfter`: `datetime`
-- `CreationTimeBefore`: `datetime`
-- `LastModifiedTimeAfter`: `datetime`
-- `LastModifiedTimeBefore`: `datetime`
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeAfter`: `Union`\[`datetime`, `str`\]
+- `LastModifiedTimeBefore`: `Union`\[`datetime`, `str`\]
 - `NameContains`: `str`
 - `StatusEquals`:
   [TransformJobStatusType](./literals.md#transformjobstatustype)
@@ -1550,7 +1550,7 @@ Arguments for `ListTransformJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTransformJobsPaginator.paginate` returns
-`Iterator`\[[ListTransformJobsResponseTypeDef](./type_defs.md#listtransformjobsresponsetypedef)\].
+`Iterator`\[[ListTransformJobsResponseResponseTypeDef](./type_defs.md#listtransformjobsresponseresponsetypedef)\].
 
 ## ListTrialComponentsPaginator
 
@@ -1574,8 +1574,8 @@ Arguments for `ListTrialComponentsPaginator.paginate` method:
 - `ExperimentName`: `str`
 - `TrialName`: `str`
 - `SourceArn`: `str`
-- `CreatedAfter`: `datetime`
-- `CreatedBefore`: `datetime`
+- `CreatedAfter`: `Union`\[`datetime`, `str`\]
+- `CreatedBefore`: `Union`\[`datetime`, `str`\]
 - `SortBy`:
   [SortTrialComponentsByType](./literals.md#sorttrialcomponentsbytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
@@ -1583,7 +1583,7 @@ Arguments for `ListTrialComponentsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTrialComponentsPaginator.paginate` returns
-`Iterator`\[[ListTrialComponentsResponseTypeDef](./type_defs.md#listtrialcomponentsresponsetypedef)\].
+`Iterator`\[[ListTrialComponentsResponseResponseTypeDef](./type_defs.md#listtrialcomponentsresponseresponsetypedef)\].
 
 ## ListTrialsPaginator
 
@@ -1605,15 +1605,15 @@ Arguments for `ListTrialsPaginator.paginate` method:
 
 - `ExperimentName`: `str`
 - `TrialComponentName`: `str`
-- `CreatedAfter`: `datetime`
-- `CreatedBefore`: `datetime`
+- `CreatedAfter`: `Union`\[`datetime`, `str`\]
+- `CreatedBefore`: `Union`\[`datetime`, `str`\]
 - `SortBy`: [SortTrialsByType](./literals.md#sorttrialsbytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTrialsPaginator.paginate` returns
-`Iterator`\[[ListTrialsResponseTypeDef](./type_defs.md#listtrialsresponsetypedef)\].
+`Iterator`\[[ListTrialsResponseResponseTypeDef](./type_defs.md#listtrialsresponseresponsetypedef)\].
 
 ## ListUserProfilesPaginator
 
@@ -1642,7 +1642,7 @@ Arguments for `ListUserProfilesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListUserProfilesPaginator.paginate` returns
-`Iterator`\[[ListUserProfilesResponseTypeDef](./type_defs.md#listuserprofilesresponsetypedef)\].
+`Iterator`\[[ListUserProfilesResponseResponseTypeDef](./type_defs.md#listuserprofilesresponseresponsetypedef)\].
 
 ## ListWorkforcesPaginator
 
@@ -1671,7 +1671,7 @@ Arguments for `ListWorkforcesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListWorkforcesPaginator.paginate` returns
-`Iterator`\[[ListWorkforcesResponseTypeDef](./type_defs.md#listworkforcesresponsetypedef)\].
+`Iterator`\[[ListWorkforcesResponseResponseTypeDef](./type_defs.md#listworkforcesresponseresponsetypedef)\].
 
 ## ListWorkteamsPaginator
 
@@ -1700,7 +1700,7 @@ Arguments for `ListWorkteamsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListWorkteamsPaginator.paginate` returns
-`Iterator`\[[ListWorkteamsResponseTypeDef](./type_defs.md#listworkteamsresponsetypedef)\].
+`Iterator`\[[ListWorkteamsResponseResponseTypeDef](./type_defs.md#listworkteamsresponseresponsetypedef)\].
 
 ## SearchPaginator
 
@@ -1729,4 +1729,4 @@ Arguments for `SearchPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchPaginator.paginate` returns
-`Iterator`\[[SearchResponseTypeDef](./type_defs.md#searchresponsetypedef)\].
+`Iterator`\[[SearchResponseResponseTypeDef](./type_defs.md#searchresponseresponsetypedef)\].

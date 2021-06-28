@@ -61,6 +61,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("ec2-instance-connect").can_paginate`
 method.
 
@@ -74,6 +76,8 @@ Arguments:
 Returns `bool`.
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for
 `boto3.client("ec2-instance-connect").generate_presigned_url` method.
@@ -92,12 +96,17 @@ Returns `str`.
 
 ### send_serial_console_ssh_public_key
 
+Pushes an SSH public key to the specified EC2 instance.
+
 Type annotations for
 `boto3.client("ec2-instance-connect").send_serial_console_ssh_public_key`
 method.
 
 Boto3 documentation:
 [EC2InstanceConnect.Client.send_serial_console_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2-instance-connect.html#EC2InstanceConnect.Client.send_serial_console_ssh_public_key)
+
+Arguments mapping described in
+[SendSerialConsoleSSHPublicKeyRequestTypeDef](./type_defs.md#sendserialconsolesshpublickeyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -106,15 +115,21 @@ Keyword-only arguments:
 - `SerialPort`: `int`
 
 Returns
-[SendSerialConsoleSSHPublicKeyResponseTypeDef](./type_defs.md#sendserialconsolesshpublickeyresponsetypedef).
+[SendSerialConsoleSSHPublicKeyResponseResponseTypeDef](./type_defs.md#sendserialconsolesshpublickeyresponseresponsetypedef).
 
 ### send_ssh_public_key
+
+Pushes an SSH public key to the specified EC2 instance for use by the specified
+user.
 
 Type annotations for `boto3.client("ec2-instance-connect").send_ssh_public_key`
 method.
 
 Boto3 documentation:
 [EC2InstanceConnect.Client.send_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2-instance-connect.html#EC2InstanceConnect.Client.send_ssh_public_key)
+
+Arguments mapping described in
+[SendSSHPublicKeyRequestTypeDef](./type_defs.md#sendsshpublickeyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -124,4 +139,4 @@ Keyword-only arguments:
 - `AvailabilityZone`: `str` *(required)*
 
 Returns
-[SendSSHPublicKeyResponseTypeDef](./type_defs.md#sendsshpublickeyresponsetypedef).
+[SendSSHPublicKeyResponseResponseTypeDef](./type_defs.md#sendsshpublickeyresponseresponsetypedef).

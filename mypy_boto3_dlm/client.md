@@ -62,6 +62,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("dlm").can_paginate` method.
 
 Boto3 documentation:
@@ -75,10 +77,15 @@ Returns `bool`.
 
 ### create_lifecycle_policy
 
+Creates a policy to manage the lifecycle of the specified AWS resources.
+
 Type annotations for `boto3.client("dlm").create_lifecycle_policy` method.
 
 Boto3 documentation:
 [DLM.Client.create_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.create_lifecycle_policy)
+
+Arguments mapping described in
+[CreateLifecyclePolicyRequestTypeDef](./type_defs.md#createlifecyclepolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -92,14 +99,20 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateLifecyclePolicyResponseTypeDef](./type_defs.md#createlifecyclepolicyresponsetypedef).
+[CreateLifecyclePolicyResponseResponseTypeDef](./type_defs.md#createlifecyclepolicyresponseresponsetypedef).
 
 ### delete_lifecycle_policy
+
+Deletes the specified lifecycle policy and halts the automated operations that
+the policy specified.
 
 Type annotations for `boto3.client("dlm").delete_lifecycle_policy` method.
 
 Boto3 documentation:
 [DLM.Client.delete_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.delete_lifecycle_policy)
+
+Arguments mapping described in
+[DeleteLifecyclePolicyRequestTypeDef](./type_defs.md#deletelifecyclepolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -108,6 +121,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("dlm").generate_presigned_url` method.
 
@@ -125,10 +140,15 @@ Returns `str`.
 
 ### get_lifecycle_policies
 
+Gets summary information about all or the specified data lifecycle policies.
+
 Type annotations for `boto3.client("dlm").get_lifecycle_policies` method.
 
 Boto3 documentation:
 [DLM.Client.get_lifecycle_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.get_lifecycle_policies)
+
+Arguments mapping described in
+[GetLifecyclePoliciesRequestTypeDef](./type_defs.md#getlifecyclepoliciesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -141,42 +161,57 @@ Keyword-only arguments:
 - `TagsToAdd`: `List`\[`str`\]
 
 Returns
-[GetLifecyclePoliciesResponseTypeDef](./type_defs.md#getlifecyclepoliciesresponsetypedef).
+[GetLifecyclePoliciesResponseResponseTypeDef](./type_defs.md#getlifecyclepoliciesresponseresponsetypedef).
 
 ### get_lifecycle_policy
+
+Gets detailed information about the specified lifecycle policy.
 
 Type annotations for `boto3.client("dlm").get_lifecycle_policy` method.
 
 Boto3 documentation:
 [DLM.Client.get_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.get_lifecycle_policy)
 
+Arguments mapping described in
+[GetLifecyclePolicyRequestTypeDef](./type_defs.md#getlifecyclepolicyrequesttypedef).
+
 Keyword-only arguments:
 
 - `PolicyId`: `str` *(required)*
 
 Returns
-[GetLifecyclePolicyResponseTypeDef](./type_defs.md#getlifecyclepolicyresponsetypedef).
+[GetLifecyclePolicyResponseResponseTypeDef](./type_defs.md#getlifecyclepolicyresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Lists the tags for the specified resource.
 
 Type annotations for `boto3.client("dlm").list_tags_for_resource` method.
 
 Boto3 documentation:
 [DLM.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### tag_resource
+
+Adds the specified tags to the specified resource.
 
 Type annotations for `boto3.client("dlm").tag_resource` method.
 
 Boto3 documentation:
 [DLM.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -187,10 +222,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Removes the specified tags from the specified resource.
+
 Type annotations for `boto3.client("dlm").untag_resource` method.
 
 Boto3 documentation:
 [DLM.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -201,10 +241,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_lifecycle_policy
 
+Updates the specified lifecycle policy.
+
 Type annotations for `boto3.client("dlm").update_lifecycle_policy` method.
 
 Boto3 documentation:
 [DLM.Client.update_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.update_lifecycle_policy)
+
+Arguments mapping described in
+[UpdateLifecyclePolicyRequestTypeDef](./type_defs.md#updatelifecyclepolicyrequesttypedef).
 
 Keyword-only arguments:
 

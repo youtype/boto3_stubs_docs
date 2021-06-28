@@ -91,11 +91,16 @@ Exceptions:
 
 ### add_flow_media_streams
 
+Adds media streams to an existing flow.
+
 Type annotations for `boto3.client("mediaconnect").add_flow_media_streams`
 method.
 
 Boto3 documentation:
 [MediaConnect.Client.add_flow_media_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_media_streams)
+
+Arguments mapping described in
+[AddFlowMediaStreamsRequestTypeDef](./type_defs.md#addflowmediastreamsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -105,14 +110,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[AddFlowMediaStreamsResponseTypeDef](./type_defs.md#addflowmediastreamsresponsetypedef).
+[AddFlowMediaStreamsResponseResponseTypeDef](./type_defs.md#addflowmediastreamsresponseresponsetypedef).
 
 ### add_flow_outputs
+
+Adds outputs to an existing flow.
 
 Type annotations for `boto3.client("mediaconnect").add_flow_outputs` method.
 
 Boto3 documentation:
 [MediaConnect.Client.add_flow_outputs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_outputs)
+
+Arguments mapping described in
+[AddFlowOutputsRequestTypeDef](./type_defs.md#addflowoutputsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -122,14 +132,22 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[AddFlowOutputsResponseTypeDef](./type_defs.md#addflowoutputsresponsetypedef).
+[AddFlowOutputsResponseResponseTypeDef](./type_defs.md#addflowoutputsresponseresponsetypedef).
 
 ### add_flow_sources
+
+Adds Sources to flow See also:
+`AWS API Documentation <https://docs.aws.amazon.c om/goto/WebAPI/mediaconnect-2018-11-14/AddFlowSources>`\_
+**Request Syntax** response = client.add_flow_sources( FlowArn='string',
+Sources=\[ { 'Decryption': { ...
 
 Type annotations for `boto3.client("mediaconnect").add_flow_sources` method.
 
 Boto3 documentation:
 [MediaConnect.Client.add_flow_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_sources)
+
+Arguments mapping described in
+[AddFlowSourcesRequestTypeDef](./type_defs.md#addflowsourcesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -139,15 +157,23 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[AddFlowSourcesResponseTypeDef](./type_defs.md#addflowsourcesresponsetypedef).
+[AddFlowSourcesResponseResponseTypeDef](./type_defs.md#addflowsourcesresponseresponsetypedef).
 
 ### add_flow_vpc_interfaces
+
+Adds VPC interfaces to flow See also:
+`AWS API Documentation <https://docs.aws.a mazon.com/goto/WebAPI/mediaconnect-2018-11-14/AddFlowVpcInterfaces>`\_
+**Request Syntax** response = client.add_flow_vpc_interfaces( FlowArn='string',
+VpcInterfaces=\[ { 'Na...
 
 Type annotations for `boto3.client("mediaconnect").add_flow_vpc_interfaces`
 method.
 
 Boto3 documentation:
 [MediaConnect.Client.add_flow_vpc_interfaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_vpc_interfaces)
+
+Arguments mapping described in
+[AddFlowVpcInterfacesRequestTypeDef](./type_defs.md#addflowvpcinterfacesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -157,9 +183,11 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[AddFlowVpcInterfacesResponseTypeDef](./type_defs.md#addflowvpcinterfacesresponsetypedef).
+[AddFlowVpcInterfacesResponseResponseTypeDef](./type_defs.md#addflowvpcinterfacesresponseresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("mediaconnect").can_paginate` method.
 
@@ -174,10 +202,15 @@ Returns `bool`.
 
 ### create_flow
 
+Creates a new flow.
+
 Type annotations for `boto3.client("mediaconnect").create_flow` method.
 
 Boto3 documentation:
 [MediaConnect.Client.create_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.create_flow)
+
+Arguments mapping described in
+[CreateFlowRequestTypeDef](./type_defs.md#createflowrequesttypedef).
 
 Keyword-only arguments:
 
@@ -197,50 +230,69 @@ Keyword-only arguments:
 - `VpcInterfaces`:
   `List`\[[VpcInterfaceRequestTypeDef](./type_defs.md#vpcinterfacerequesttypedef)\]
 
-Returns [CreateFlowResponseTypeDef](./type_defs.md#createflowresponsetypedef).
+Returns
+[CreateFlowResponseResponseTypeDef](./type_defs.md#createflowresponseresponsetypedef).
 
 ### delete_flow
+
+Deletes a flow.
 
 Type annotations for `boto3.client("mediaconnect").delete_flow` method.
 
 Boto3 documentation:
 [MediaConnect.Client.delete_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.delete_flow)
 
+Arguments mapping described in
+[DeleteFlowRequestTypeDef](./type_defs.md#deleteflowrequesttypedef).
+
 Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 
-Returns [DeleteFlowResponseTypeDef](./type_defs.md#deleteflowresponsetypedef).
+Returns
+[DeleteFlowResponseResponseTypeDef](./type_defs.md#deleteflowresponseresponsetypedef).
 
 ### describe_flow
+
+Displays the details of a flow.
 
 Type annotations for `boto3.client("mediaconnect").describe_flow` method.
 
 Boto3 documentation:
 [MediaConnect.Client.describe_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.describe_flow)
 
+Arguments mapping described in
+[DescribeFlowRequestTypeDef](./type_defs.md#describeflowrequesttypedef).
+
 Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 
 Returns
-[DescribeFlowResponseTypeDef](./type_defs.md#describeflowresponsetypedef).
+[DescribeFlowResponseResponseTypeDef](./type_defs.md#describeflowresponseresponsetypedef).
 
 ### describe_offering
+
+Displays the details of an offering.
 
 Type annotations for `boto3.client("mediaconnect").describe_offering` method.
 
 Boto3 documentation:
 [MediaConnect.Client.describe_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.describe_offering)
 
+Arguments mapping described in
+[DescribeOfferingRequestTypeDef](./type_defs.md#describeofferingrequesttypedef).
+
 Keyword-only arguments:
 
 - `OfferingArn`: `str` *(required)*
 
 Returns
-[DescribeOfferingResponseTypeDef](./type_defs.md#describeofferingresponsetypedef).
+[DescribeOfferingResponseResponseTypeDef](./type_defs.md#describeofferingresponseresponsetypedef).
 
 ### describe_reservation
+
+Displays the details of a reservation.
 
 Type annotations for `boto3.client("mediaconnect").describe_reservation`
 method.
@@ -248,14 +300,19 @@ method.
 Boto3 documentation:
 [MediaConnect.Client.describe_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.describe_reservation)
 
+Arguments mapping described in
+[DescribeReservationRequestTypeDef](./type_defs.md#describereservationrequesttypedef).
+
 Keyword-only arguments:
 
 - `ReservationArn`: `str` *(required)*
 
 Returns
-[DescribeReservationResponseTypeDef](./type_defs.md#describereservationresponsetypedef).
+[DescribeReservationResponseResponseTypeDef](./type_defs.md#describereservationresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("mediaconnect").generate_presigned_url`
 method.
@@ -274,11 +331,16 @@ Returns `str`.
 
 ### grant_flow_entitlements
 
+Grants entitlements to an existing flow.
+
 Type annotations for `boto3.client("mediaconnect").grant_flow_entitlements`
 method.
 
 Boto3 documentation:
 [MediaConnect.Client.grant_flow_entitlements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.grant_flow_entitlements)
+
+Arguments mapping described in
+[GrantFlowEntitlementsRequestTypeDef](./type_defs.md#grantflowentitlementsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -288,68 +350,96 @@ Keyword-only arguments:
 - `FlowArn`: `str` *(required)*
 
 Returns
-[GrantFlowEntitlementsResponseTypeDef](./type_defs.md#grantflowentitlementsresponsetypedef).
+[GrantFlowEntitlementsResponseResponseTypeDef](./type_defs.md#grantflowentitlementsresponseresponsetypedef).
 
 ### list_entitlements
+
+Displays a list of all entitlements that have been granted to this account.
 
 Type annotations for `boto3.client("mediaconnect").list_entitlements` method.
 
 Boto3 documentation:
 [MediaConnect.Client.list_entitlements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_entitlements)
 
+Arguments mapping described in
+[ListEntitlementsRequestTypeDef](./type_defs.md#listentitlementsrequesttypedef).
+
 Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListEntitlementsResponseTypeDef](./type_defs.md#listentitlementsresponsetypedef).
+[ListEntitlementsResponseResponseTypeDef](./type_defs.md#listentitlementsresponseresponsetypedef).
 
 ### list_flows
+
+Displays a list of flows that are associated with this account.
 
 Type annotations for `boto3.client("mediaconnect").list_flows` method.
 
 Boto3 documentation:
 [MediaConnect.Client.list_flows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_flows)
 
+Arguments mapping described in
+[ListFlowsRequestTypeDef](./type_defs.md#listflowsrequesttypedef).
+
 Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns [ListFlowsResponseTypeDef](./type_defs.md#listflowsresponsetypedef).
+Returns
+[ListFlowsResponseResponseTypeDef](./type_defs.md#listflowsresponseresponsetypedef).
 
 ### list_offerings
+
+Displays a list of all offerings that are available to this account in the
+current AWS Region.
 
 Type annotations for `boto3.client("mediaconnect").list_offerings` method.
 
 Boto3 documentation:
 [MediaConnect.Client.list_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_offerings)
 
+Arguments mapping described in
+[ListOfferingsRequestTypeDef](./type_defs.md#listofferingsrequesttypedef).
+
 Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListOfferingsResponseTypeDef](./type_defs.md#listofferingsresponsetypedef).
+[ListOfferingsResponseResponseTypeDef](./type_defs.md#listofferingsresponseresponsetypedef).
 
 ### list_reservations
+
+Displays a list of all reservations that have been purchased by this account in
+the current AWS Region.
 
 Type annotations for `boto3.client("mediaconnect").list_reservations` method.
 
 Boto3 documentation:
 [MediaConnect.Client.list_reservations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_reservations)
 
+Arguments mapping described in
+[ListReservationsRequestTypeDef](./type_defs.md#listreservationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListReservationsResponseTypeDef](./type_defs.md#listreservationsresponsetypedef).
+[ListReservationsResponseResponseTypeDef](./type_defs.md#listreservationsresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+List all tags on an AWS Elemental MediaConnect resource See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/mediaconnect-2018-11-14/L istTagsForResource>`\_
+**Request Syntax** response = client.list_tags_for_resource(
+ResourceArn='string' ).
 
 Type annotations for `boto3.client("mediaconnect").list_tags_for_resource`
 method.
@@ -357,19 +447,27 @@ method.
 Boto3 documentation:
 [MediaConnect.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### purchase_offering
+
+Submits a request to purchase an offering.
 
 Type annotations for `boto3.client("mediaconnect").purchase_offering` method.
 
 Boto3 documentation:
 [MediaConnect.Client.purchase_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.purchase_offering)
+
+Arguments mapping described in
+[PurchaseOfferingRequestTypeDef](./type_defs.md#purchaseofferingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -378,9 +476,11 @@ Keyword-only arguments:
 - `Start`: `str` *(required)*
 
 Returns
-[PurchaseOfferingResponseTypeDef](./type_defs.md#purchaseofferingresponsetypedef).
+[PurchaseOfferingResponseResponseTypeDef](./type_defs.md#purchaseofferingresponseresponsetypedef).
 
 ### remove_flow_media_stream
+
+Removes a media stream from a flow.
 
 Type annotations for `boto3.client("mediaconnect").remove_flow_media_stream`
 method.
@@ -388,20 +488,28 @@ method.
 Boto3 documentation:
 [MediaConnect.Client.remove_flow_media_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_media_stream)
 
+Arguments mapping described in
+[RemoveFlowMediaStreamRequestTypeDef](./type_defs.md#removeflowmediastreamrequesttypedef).
+
 Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 - `MediaStreamName`: `str` *(required)*
 
 Returns
-[RemoveFlowMediaStreamResponseTypeDef](./type_defs.md#removeflowmediastreamresponsetypedef).
+[RemoveFlowMediaStreamResponseResponseTypeDef](./type_defs.md#removeflowmediastreamresponseresponsetypedef).
 
 ### remove_flow_output
+
+Removes an output from an existing flow.
 
 Type annotations for `boto3.client("mediaconnect").remove_flow_output` method.
 
 Boto3 documentation:
 [MediaConnect.Client.remove_flow_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_output)
+
+Arguments mapping described in
+[RemoveFlowOutputRequestTypeDef](./type_defs.md#removeflowoutputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -409,14 +517,19 @@ Keyword-only arguments:
 - `OutputArn`: `str` *(required)*
 
 Returns
-[RemoveFlowOutputResponseTypeDef](./type_defs.md#removeflowoutputresponsetypedef).
+[RemoveFlowOutputResponseResponseTypeDef](./type_defs.md#removeflowoutputresponseresponsetypedef).
 
 ### remove_flow_source
+
+Removes a source from an existing flow.
 
 Type annotations for `boto3.client("mediaconnect").remove_flow_source` method.
 
 Boto3 documentation:
 [MediaConnect.Client.remove_flow_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_source)
+
+Arguments mapping described in
+[RemoveFlowSourceRequestTypeDef](./type_defs.md#removeflowsourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -424,9 +537,11 @@ Keyword-only arguments:
 - `SourceArn`: `str` *(required)*
 
 Returns
-[RemoveFlowSourceResponseTypeDef](./type_defs.md#removeflowsourceresponsetypedef).
+[RemoveFlowSourceResponseResponseTypeDef](./type_defs.md#removeflowsourceresponseresponsetypedef).
 
 ### remove_flow_vpc_interface
+
+Removes a VPC Interface from an existing flow.
 
 Type annotations for `boto3.client("mediaconnect").remove_flow_vpc_interface`
 method.
@@ -434,15 +549,20 @@ method.
 Boto3 documentation:
 [MediaConnect.Client.remove_flow_vpc_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_vpc_interface)
 
+Arguments mapping described in
+[RemoveFlowVpcInterfaceRequestTypeDef](./type_defs.md#removeflowvpcinterfacerequesttypedef).
+
 Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 - `VpcInterfaceName`: `str` *(required)*
 
 Returns
-[RemoveFlowVpcInterfaceResponseTypeDef](./type_defs.md#removeflowvpcinterfaceresponsetypedef).
+[RemoveFlowVpcInterfaceResponseResponseTypeDef](./type_defs.md#removeflowvpcinterfaceresponseresponsetypedef).
 
 ### revoke_flow_entitlement
+
+Revokes an entitlement from a flow.
 
 Type annotations for `boto3.client("mediaconnect").revoke_flow_entitlement`
 method.
@@ -450,46 +570,66 @@ method.
 Boto3 documentation:
 [MediaConnect.Client.revoke_flow_entitlement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.revoke_flow_entitlement)
 
+Arguments mapping described in
+[RevokeFlowEntitlementRequestTypeDef](./type_defs.md#revokeflowentitlementrequesttypedef).
+
 Keyword-only arguments:
 
 - `EntitlementArn`: `str` *(required)*
 - `FlowArn`: `str` *(required)*
 
 Returns
-[RevokeFlowEntitlementResponseTypeDef](./type_defs.md#revokeflowentitlementresponsetypedef).
+[RevokeFlowEntitlementResponseResponseTypeDef](./type_defs.md#revokeflowentitlementresponseresponsetypedef).
 
 ### start_flow
+
+Starts a flow.
 
 Type annotations for `boto3.client("mediaconnect").start_flow` method.
 
 Boto3 documentation:
 [MediaConnect.Client.start_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.start_flow)
 
+Arguments mapping described in
+[StartFlowRequestTypeDef](./type_defs.md#startflowrequesttypedef).
+
 Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 
-Returns [StartFlowResponseTypeDef](./type_defs.md#startflowresponsetypedef).
+Returns
+[StartFlowResponseResponseTypeDef](./type_defs.md#startflowresponseresponsetypedef).
 
 ### stop_flow
+
+Stops a flow.
 
 Type annotations for `boto3.client("mediaconnect").stop_flow` method.
 
 Boto3 documentation:
 [MediaConnect.Client.stop_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.stop_flow)
 
+Arguments mapping described in
+[StopFlowRequestTypeDef](./type_defs.md#stopflowrequesttypedef).
+
 Keyword-only arguments:
 
 - `FlowArn`: `str` *(required)*
 
-Returns [StopFlowResponseTypeDef](./type_defs.md#stopflowresponsetypedef).
+Returns
+[StopFlowResponseResponseTypeDef](./type_defs.md#stopflowresponseresponsetypedef).
 
 ### tag_resource
+
+Associates the specified tags to a resource with the specified resourceArn.
 
 Type annotations for `boto3.client("mediaconnect").tag_resource` method.
 
 Boto3 documentation:
 [MediaConnect.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -498,10 +638,15 @@ Keyword-only arguments:
 
 ### untag_resource
 
+Deletes specified tags from a resource.
+
 Type annotations for `boto3.client("mediaconnect").untag_resource` method.
 
 Boto3 documentation:
 [MediaConnect.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -510,10 +655,18 @@ Keyword-only arguments:
 
 ### update_flow
 
+Updates flow See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/mediaconnect-2018-11-14/UpdateFlow>`\_
+**Request Syntax** response = client.update_flow( FlowArn='string',
+SourceFailoverConfig={ 'FailoverMode': 'MERGE'|'FAILOVER', 'Re...
+
 Type annotations for `boto3.client("mediaconnect").update_flow` method.
 
 Boto3 documentation:
 [MediaConnect.Client.update_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow)
+
+Arguments mapping described in
+[UpdateFlowRequestTypeDef](./type_defs.md#updateflowrequesttypedef).
 
 Keyword-only arguments:
 
@@ -521,15 +674,21 @@ Keyword-only arguments:
 - `SourceFailoverConfig`:
   [UpdateFailoverConfigTypeDef](./type_defs.md#updatefailoverconfigtypedef)
 
-Returns [UpdateFlowResponseTypeDef](./type_defs.md#updateflowresponsetypedef).
+Returns
+[UpdateFlowResponseResponseTypeDef](./type_defs.md#updateflowresponseresponsetypedef).
 
 ### update_flow_entitlement
+
+You can change an entitlement's description, subscribers, and encryption.
 
 Type annotations for `boto3.client("mediaconnect").update_flow_entitlement`
 method.
 
 Boto3 documentation:
 [MediaConnect.Client.update_flow_entitlement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_entitlement)
+
+Arguments mapping described in
+[UpdateFlowEntitlementRequestTypeDef](./type_defs.md#updateflowentitlementrequesttypedef).
 
 Keyword-only arguments:
 
@@ -543,15 +702,20 @@ Keyword-only arguments:
 - `Subscribers`: `List`\[`str`\]
 
 Returns
-[UpdateFlowEntitlementResponseTypeDef](./type_defs.md#updateflowentitlementresponsetypedef).
+[UpdateFlowEntitlementResponseResponseTypeDef](./type_defs.md#updateflowentitlementresponseresponsetypedef).
 
 ### update_flow_media_stream
+
+Updates an existing media stream.
 
 Type annotations for `boto3.client("mediaconnect").update_flow_media_stream`
 method.
 
 Boto3 documentation:
 [MediaConnect.Client.update_flow_media_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_media_stream)
+
+Arguments mapping described in
+[UpdateFlowMediaStreamRequestTypeDef](./type_defs.md#updateflowmediastreamrequesttypedef).
 
 Keyword-only arguments:
 
@@ -565,14 +729,19 @@ Keyword-only arguments:
 - `VideoFormat`: `str`
 
 Returns
-[UpdateFlowMediaStreamResponseTypeDef](./type_defs.md#updateflowmediastreamresponsetypedef).
+[UpdateFlowMediaStreamResponseResponseTypeDef](./type_defs.md#updateflowmediastreamresponseresponsetypedef).
 
 ### update_flow_output
+
+Updates an existing flow output.
 
 Type annotations for `boto3.client("mediaconnect").update_flow_output` method.
 
 Boto3 documentation:
 [MediaConnect.Client.update_flow_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_output)
+
+Arguments mapping described in
+[UpdateFlowOutputRequestTypeDef](./type_defs.md#updateflowoutputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -596,14 +765,19 @@ Keyword-only arguments:
   [VpcInterfaceAttachmentTypeDef](./type_defs.md#vpcinterfaceattachmenttypedef)
 
 Returns
-[UpdateFlowOutputResponseTypeDef](./type_defs.md#updateflowoutputresponsetypedef).
+[UpdateFlowOutputResponseResponseTypeDef](./type_defs.md#updateflowoutputresponseresponsetypedef).
 
 ### update_flow_source
+
+Updates the source of a flow.
 
 Type annotations for `boto3.client("mediaconnect").update_flow_source` method.
 
 Boto3 documentation:
 [MediaConnect.Client.update_flow_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_source)
+
+Arguments mapping described in
+[UpdateFlowSourceRequestTypeDef](./type_defs.md#updateflowsourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -626,7 +800,7 @@ Keyword-only arguments:
 - `WhitelistCidr`: `str`
 
 Returns
-[UpdateFlowSourceResponseTypeDef](./type_defs.md#updateflowsourceresponsetypedef).
+[UpdateFlowSourceResponseResponseTypeDef](./type_defs.md#updateflowsourceresponseresponsetypedef).
 
 ### get_paginator
 

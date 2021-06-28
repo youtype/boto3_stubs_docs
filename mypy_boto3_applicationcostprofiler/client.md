@@ -62,6 +62,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("applicationcostprofiler").can_paginate`
 method.
 
@@ -76,20 +78,27 @@ Returns `bool`.
 
 ### delete_report_definition
 
+Deletes the specified report definition in AWS Application Cost Profiler.
+
 Type annotations for
 `boto3.client("applicationcostprofiler").delete_report_definition` method.
 
 Boto3 documentation:
 [ApplicationCostProfiler.Client.delete_report_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.delete_report_definition)
 
+Arguments mapping described in
+[DeleteReportDefinitionRequestTypeDef](./type_defs.md#deletereportdefinitionrequesttypedef).
+
 Keyword-only arguments:
 
 - `reportId`: `str` *(required)*
 
 Returns
-[DeleteReportDefinitionResultTypeDef](./type_defs.md#deletereportdefinitionresulttypedef).
+[DeleteReportDefinitionResultResponseTypeDef](./type_defs.md#deletereportdefinitionresultresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for
 `boto3.client("applicationcostprofiler").generate_presigned_url` method.
@@ -108,26 +117,37 @@ Returns `str`.
 
 ### get_report_definition
 
+Retrieves the definition of a report already configured in AWS Application Cost
+Profiler.
+
 Type annotations for
 `boto3.client("applicationcostprofiler").get_report_definition` method.
 
 Boto3 documentation:
 [ApplicationCostProfiler.Client.get_report_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.get_report_definition)
 
+Arguments mapping described in
+[GetReportDefinitionRequestTypeDef](./type_defs.md#getreportdefinitionrequesttypedef).
+
 Keyword-only arguments:
 
 - `reportId`: `str` *(required)*
 
 Returns
-[GetReportDefinitionResultTypeDef](./type_defs.md#getreportdefinitionresulttypedef).
+[GetReportDefinitionResultResponseTypeDef](./type_defs.md#getreportdefinitionresultresponsetypedef).
 
 ### import_application_usage
+
+Ingests application usage data from Amazon Simple Storage Service (Amazon S3).
 
 Type annotations for
 `boto3.client("applicationcostprofiler").import_application_usage` method.
 
 Boto3 documentation:
 [ApplicationCostProfiler.Client.import_application_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.import_application_usage)
+
+Arguments mapping described in
+[ImportApplicationUsageRequestTypeDef](./type_defs.md#importapplicationusagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -136,9 +156,11 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[ImportApplicationUsageResultTypeDef](./type_defs.md#importapplicationusageresulttypedef).
+[ImportApplicationUsageResultResponseTypeDef](./type_defs.md#importapplicationusageresultresponsetypedef).
 
 ### list_report_definitions
+
+Retrieves a list of all reports and their configurations for your AWS account.
 
 Type annotations for
 `boto3.client("applicationcostprofiler").list_report_definitions` method.
@@ -146,15 +168,20 @@ Type annotations for
 Boto3 documentation:
 [ApplicationCostProfiler.Client.list_report_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.list_report_definitions)
 
+Arguments mapping described in
+[ListReportDefinitionsRequestTypeDef](./type_defs.md#listreportdefinitionsrequesttypedef).
+
 Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[ListReportDefinitionsResultTypeDef](./type_defs.md#listreportdefinitionsresulttypedef).
+[ListReportDefinitionsResultResponseTypeDef](./type_defs.md#listreportdefinitionsresultresponsetypedef).
 
 ### put_report_definition
+
+Creates the report definition for a report in Application Cost Profiler.
 
 Type annotations for
 `boto3.client("applicationcostprofiler").put_report_definition` method.
@@ -162,6 +189,9 @@ Type annotations for
 Boto3 documentation:
 [ApplicationCostProfiler.Client.put_report_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.put_report_definition)
 
+Arguments mapping described in
+[PutReportDefinitionRequestTypeDef](./type_defs.md#putreportdefinitionrequesttypedef).
+
 Keyword-only arguments:
 
 - `reportId`: `str` *(required)*
@@ -173,9 +203,11 @@ Keyword-only arguments:
   [S3LocationTypeDef](./type_defs.md#s3locationtypedef) *(required)*
 
 Returns
-[PutReportDefinitionResultTypeDef](./type_defs.md#putreportdefinitionresulttypedef).
+[PutReportDefinitionResultResponseTypeDef](./type_defs.md#putreportdefinitionresultresponsetypedef).
 
 ### update_report_definition
+
+Updates existing report in AWS Application Cost Profiler.
 
 Type annotations for
 `boto3.client("applicationcostprofiler").update_report_definition` method.
@@ -183,6 +215,9 @@ Type annotations for
 Boto3 documentation:
 [ApplicationCostProfiler.Client.update_report_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.update_report_definition)
 
+Arguments mapping described in
+[UpdateReportDefinitionRequestTypeDef](./type_defs.md#updatereportdefinitionrequesttypedef).
+
 Keyword-only arguments:
 
 - `reportId`: `str` *(required)*
@@ -194,7 +229,7 @@ Keyword-only arguments:
   [S3LocationTypeDef](./type_defs.md#s3locationtypedef) *(required)*
 
 Returns
-[UpdateReportDefinitionResultTypeDef](./type_defs.md#updatereportdefinitionresulttypedef).
+[UpdateReportDefinitionResultResponseTypeDef](./type_defs.md#updatereportdefinitionresultresponsetypedef).
 
 ### get_paginator
 

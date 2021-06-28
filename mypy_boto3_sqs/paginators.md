@@ -35,7 +35,7 @@ Arguments for `ListDeadLetterSourceQueuesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDeadLetterSourceQueuesPaginator.paginate` returns
-`Iterator`\[[ListDeadLetterSourceQueuesResultTypeDef](./type_defs.md#listdeadlettersourcequeuesresulttypedef)\].
+`Iterator`\[[ListDeadLetterSourceQueuesResultResponseTypeDef](./type_defs.md#listdeadlettersourcequeuesresultresponsetypedef)\].
 
 ## ListQueuesPaginator
 
@@ -60,4 +60,4 @@ Arguments for `ListQueuesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListQueuesPaginator.paginate` returns
-`Iterator`\[[ListQueuesResultTypeDef](./type_defs.md#listqueuesresulttypedef)\].
+`Iterator`\[[ListQueuesResultResponseTypeDef](./type_defs.md#listqueuesresultresponsetypedef)\].

@@ -38,7 +38,7 @@ Arguments for `DescribeEndpointsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEndpointsPaginator.paginate` returns
-`Iterator`\[[DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef)\].
+`Iterator`\[[DescribeEndpointsResponseResponseTypeDef](./type_defs.md#describeendpointsresponseresponsetypedef)\].
 
 ## ListJobTemplatesPaginator
 
@@ -66,7 +66,7 @@ Arguments for `ListJobTemplatesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobTemplatesPaginator.paginate` returns
-`Iterator`\[[ListJobTemplatesResponseTypeDef](./type_defs.md#listjobtemplatesresponsetypedef)\].
+`Iterator`\[[ListJobTemplatesResponseResponseTypeDef](./type_defs.md#listjobtemplatesresponseresponsetypedef)\].
 
 ## ListJobsPaginator
 
@@ -93,7 +93,7 @@ Arguments for `ListJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobsPaginator.paginate` returns
-`Iterator`\[[ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef)\].
+`Iterator`\[[ListJobsResponseResponseTypeDef](./type_defs.md#listjobsresponseresponsetypedef)\].
 
 ## ListPresetsPaginator
 
@@ -121,7 +121,7 @@ Arguments for `ListPresetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPresetsPaginator.paginate` returns
-`Iterator`\[[ListPresetsResponseTypeDef](./type_defs.md#listpresetsresponsetypedef)\].
+`Iterator`\[[ListPresetsResponseResponseTypeDef](./type_defs.md#listpresetsresponseresponsetypedef)\].
 
 ## ListQueuesPaginator
 
@@ -148,4 +148,4 @@ Arguments for `ListQueuesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListQueuesPaginator.paginate` returns
-`Iterator`\[[ListQueuesResponseTypeDef](./type_defs.md#listqueuesresponsetypedef)\].
+`Iterator`\[[ListQueuesResponseResponseTypeDef](./type_defs.md#listqueuesresponseresponsetypedef)\].

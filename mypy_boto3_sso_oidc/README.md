@@ -61,9 +61,13 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_sso_oidc.type_defs import CreateTokenResponseTypeDef, ...
+from mypy_boto3_sso_oidc.type_defs import CreateTokenRequestTypeDef, ...
 ```
 
-- [CreateTokenResponseTypeDef](./type_defs.md#createtokenresponsetypedef)
-- [RegisterClientResponseTypeDef](./type_defs.md#registerclientresponsetypedef)
-- [StartDeviceAuthorizationResponseTypeDef](./type_defs.md#startdeviceauthorizationresponsetypedef)
+- [CreateTokenRequestTypeDef](./type_defs.md#createtokenrequesttypedef)
+- [CreateTokenResponseResponseTypeDef](./type_defs.md#createtokenresponseresponsetypedef)
+- [RegisterClientRequestTypeDef](./type_defs.md#registerclientrequesttypedef)
+- [RegisterClientResponseResponseTypeDef](./type_defs.md#registerclientresponseresponsetypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [StartDeviceAuthorizationRequestTypeDef](./type_defs.md#startdeviceauthorizationrequesttypedef)
+- [StartDeviceAuthorizationResponseResponseTypeDef](./type_defs.md#startdeviceauthorizationresponseresponsetypedef)

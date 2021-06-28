@@ -105,12 +105,18 @@ Exceptions:
 
 ### associate_assessment_report_evidence_folder
 
+Associates an evidence folder to the specified assessment report in AWS Audit
+Manager.
+
 Type annotations for
 `boto3.client("auditmanager").associate_assessment_report_evidence_folder`
 method.
 
 Boto3 documentation:
 [AuditManager.Client.associate_assessment_report_evidence_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.associate_assessment_report_evidence_folder)
+
+Arguments mapping described in
+[AssociateAssessmentReportEvidenceFolderRequestTypeDef](./type_defs.md#associateassessmentreportevidencefolderrequesttypedef).
 
 Keyword-only arguments:
 
@@ -121,12 +127,18 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### batch_associate_assessment_report_evidence
 
+Associates a list of evidence to an assessment report in an AWS Audit Manager
+assessment.
+
 Type annotations for
 `boto3.client("auditmanager").batch_associate_assessment_report_evidence`
 method.
 
 Boto3 documentation:
 [AuditManager.Client.batch_associate_assessment_report_evidence](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_associate_assessment_report_evidence)
+
+Arguments mapping described in
+[BatchAssociateAssessmentReportEvidenceRequestTypeDef](./type_defs.md#batchassociateassessmentreportevidencerequesttypedef).
 
 Keyword-only arguments:
 
@@ -135,15 +147,20 @@ Keyword-only arguments:
 - `evidenceIds`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchAssociateAssessmentReportEvidenceResponseTypeDef](./type_defs.md#batchassociateassessmentreportevidenceresponsetypedef).
+[BatchAssociateAssessmentReportEvidenceResponseResponseTypeDef](./type_defs.md#batchassociateassessmentreportevidenceresponseresponsetypedef).
 
 ### batch_create_delegation_by_assessment
+
+Create a batch of delegations for a specified assessment in AWS Audit Manager.
 
 Type annotations for
 `boto3.client("auditmanager").batch_create_delegation_by_assessment` method.
 
 Boto3 documentation:
 [AuditManager.Client.batch_create_delegation_by_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_create_delegation_by_assessment)
+
+Arguments mapping described in
+[BatchCreateDelegationByAssessmentRequestTypeDef](./type_defs.md#batchcreatedelegationbyassessmentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -153,9 +170,11 @@ Keyword-only arguments:
 - `assessmentId`: `str` *(required)*
 
 Returns
-[BatchCreateDelegationByAssessmentResponseTypeDef](./type_defs.md#batchcreatedelegationbyassessmentresponsetypedef).
+[BatchCreateDelegationByAssessmentResponseResponseTypeDef](./type_defs.md#batchcreatedelegationbyassessmentresponseresponsetypedef).
 
 ### batch_delete_delegation_by_assessment
+
+Deletes the delegations in the specified AWS Audit Manager assessment.
 
 Type annotations for
 `boto3.client("auditmanager").batch_delete_delegation_by_assessment` method.
@@ -163,15 +182,21 @@ Type annotations for
 Boto3 documentation:
 [AuditManager.Client.batch_delete_delegation_by_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_delete_delegation_by_assessment)
 
+Arguments mapping described in
+[BatchDeleteDelegationByAssessmentRequestTypeDef](./type_defs.md#batchdeletedelegationbyassessmentrequesttypedef).
+
 Keyword-only arguments:
 
 - `delegationIds`: `List`\[`str`\] *(required)*
 - `assessmentId`: `str` *(required)*
 
 Returns
-[BatchDeleteDelegationByAssessmentResponseTypeDef](./type_defs.md#batchdeletedelegationbyassessmentresponsetypedef).
+[BatchDeleteDelegationByAssessmentResponseResponseTypeDef](./type_defs.md#batchdeletedelegationbyassessmentresponseresponsetypedef).
 
 ### batch_disassociate_assessment_report_evidence
+
+Disassociates a list of evidence from the specified assessment report in AWS
+Audit Manager.
 
 Type annotations for
 `boto3.client("auditmanager").batch_disassociate_assessment_report_evidence`
@@ -180,6 +205,9 @@ method.
 Boto3 documentation:
 [AuditManager.Client.batch_disassociate_assessment_report_evidence](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_disassociate_assessment_report_evidence)
 
+Arguments mapping described in
+[BatchDisassociateAssessmentReportEvidenceRequestTypeDef](./type_defs.md#batchdisassociateassessmentreportevidencerequesttypedef).
+
 Keyword-only arguments:
 
 - `assessmentId`: `str` *(required)*
@@ -187,9 +215,12 @@ Keyword-only arguments:
 - `evidenceIds`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchDisassociateAssessmentReportEvidenceResponseTypeDef](./type_defs.md#batchdisassociateassessmentreportevidenceresponsetypedef).
+[BatchDisassociateAssessmentReportEvidenceResponseResponseTypeDef](./type_defs.md#batchdisassociateassessmentreportevidenceresponseresponsetypedef).
 
 ### batch_import_evidence_to_assessment_control
+
+Uploads one or more pieces of evidence to the specified control in the
+assessment in AWS Audit Manager.
 
 Type annotations for
 `boto3.client("auditmanager").batch_import_evidence_to_assessment_control`
@@ -197,6 +228,9 @@ method.
 
 Boto3 documentation:
 [AuditManager.Client.batch_import_evidence_to_assessment_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_import_evidence_to_assessment_control)
+
+Arguments mapping described in
+[BatchImportEvidenceToAssessmentControlRequestTypeDef](./type_defs.md#batchimportevidencetoassessmentcontrolrequesttypedef).
 
 Keyword-only arguments:
 
@@ -208,9 +242,11 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchImportEvidenceToAssessmentControlResponseTypeDef](./type_defs.md#batchimportevidencetoassessmentcontrolresponsetypedef).
+[BatchImportEvidenceToAssessmentControlResponseResponseTypeDef](./type_defs.md#batchimportevidencetoassessmentcontrolresponseresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("auditmanager").can_paginate` method.
 
@@ -225,10 +261,15 @@ Returns `bool`.
 
 ### create_assessment
 
+Creates an assessment in AWS Audit Manager.
+
 Type annotations for `boto3.client("auditmanager").create_assessment` method.
 
 Boto3 documentation:
 [AuditManager.Client.create_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_assessment)
+
+Arguments mapping described in
+[CreateAssessmentRequestTypeDef](./type_defs.md#createassessmentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -243,15 +284,20 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateAssessmentResponseTypeDef](./type_defs.md#createassessmentresponsetypedef).
+[CreateAssessmentResponseResponseTypeDef](./type_defs.md#createassessmentresponseresponsetypedef).
 
 ### create_assessment_framework
+
+Creates a custom framework in AWS Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").create_assessment_framework`
 method.
 
 Boto3 documentation:
 [AuditManager.Client.create_assessment_framework](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_assessment_framework)
+
+Arguments mapping described in
+[CreateAssessmentFrameworkRequestTypeDef](./type_defs.md#createassessmentframeworkrequesttypedef).
 
 Keyword-only arguments:
 
@@ -264,15 +310,20 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateAssessmentFrameworkResponseTypeDef](./type_defs.md#createassessmentframeworkresponsetypedef).
+[CreateAssessmentFrameworkResponseResponseTypeDef](./type_defs.md#createassessmentframeworkresponseresponsetypedef).
 
 ### create_assessment_report
+
+Creates an assessment report for the specified assessment.
 
 Type annotations for `boto3.client("auditmanager").create_assessment_report`
 method.
 
 Boto3 documentation:
 [AuditManager.Client.create_assessment_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_assessment_report)
+
+Arguments mapping described in
+[CreateAssessmentReportRequestTypeDef](./type_defs.md#createassessmentreportrequesttypedef).
 
 Keyword-only arguments:
 
@@ -281,14 +332,19 @@ Keyword-only arguments:
 - `description`: `str`
 
 Returns
-[CreateAssessmentReportResponseTypeDef](./type_defs.md#createassessmentreportresponsetypedef).
+[CreateAssessmentReportResponseResponseTypeDef](./type_defs.md#createassessmentreportresponseresponsetypedef).
 
 ### create_control
+
+Creates a new custom control in AWS Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").create_control` method.
 
 Boto3 documentation:
 [AuditManager.Client.create_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_control)
+
+Arguments mapping described in
+[CreateControlRequestTypeDef](./type_defs.md#createcontrolrequesttypedef).
 
 Keyword-only arguments:
 
@@ -303,14 +359,19 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateControlResponseTypeDef](./type_defs.md#createcontrolresponsetypedef).
+[CreateControlResponseResponseTypeDef](./type_defs.md#createcontrolresponseresponsetypedef).
 
 ### delete_assessment
+
+Deletes an assessment in AWS Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").delete_assessment` method.
 
 Boto3 documentation:
 [AuditManager.Client.delete_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_assessment)
+
+Arguments mapping described in
+[DeleteAssessmentRequestTypeDef](./type_defs.md#deleteassessmentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -320,11 +381,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_assessment_framework
 
+Deletes a custom framework in AWS Audit Manager.
+
 Type annotations for `boto3.client("auditmanager").delete_assessment_framework`
 method.
 
 Boto3 documentation:
 [AuditManager.Client.delete_assessment_framework](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_assessment_framework)
+
+Arguments mapping described in
+[DeleteAssessmentFrameworkRequestTypeDef](./type_defs.md#deleteassessmentframeworkrequesttypedef).
 
 Keyword-only arguments:
 
@@ -334,11 +400,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_assessment_report
 
+Deletes an assessment report from an assessment in AWS Audit Manager.
+
 Type annotations for `boto3.client("auditmanager").delete_assessment_report`
 method.
 
 Boto3 documentation:
 [AuditManager.Client.delete_assessment_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_assessment_report)
+
+Arguments mapping described in
+[DeleteAssessmentReportRequestTypeDef](./type_defs.md#deleteassessmentreportrequesttypedef).
 
 Keyword-only arguments:
 
@@ -349,10 +420,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_control
 
+Deletes a custom control in AWS Audit Manager.
+
 Type annotations for `boto3.client("auditmanager").delete_control` method.
 
 Boto3 documentation:
 [AuditManager.Client.delete_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_control)
+
+Arguments mapping described in
+[DeleteControlRequestTypeDef](./type_defs.md#deletecontrolrequesttypedef).
 
 Keyword-only arguments:
 
@@ -362,21 +438,28 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### deregister_account
 
+Deregisters an account in AWS Audit Manager.
+
 Type annotations for `boto3.client("auditmanager").deregister_account` method.
 
 Boto3 documentation:
 [AuditManager.Client.deregister_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.deregister_account)
 
 Returns
-[DeregisterAccountResponseTypeDef](./type_defs.md#deregisteraccountresponsetypedef).
+[DeregisterAccountResponseResponseTypeDef](./type_defs.md#deregisteraccountresponseresponsetypedef).
 
 ### deregister_organization_admin_account
+
+Deregisters the delegated AWS administrator account from the AWS organization.
 
 Type annotations for
 `boto3.client("auditmanager").deregister_organization_admin_account` method.
 
 Boto3 documentation:
 [AuditManager.Client.deregister_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.deregister_organization_admin_account)
+
+Arguments mapping described in
+[DeregisterOrganizationAdminAccountRequestTypeDef](./type_defs.md#deregisterorganizationadminaccountrequesttypedef).
 
 Keyword-only arguments:
 
@@ -386,12 +469,18 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_assessment_report_evidence_folder
 
+Disassociates an evidence folder from the specified assessment report in AWS
+Audit Manager.
+
 Type annotations for
 `boto3.client("auditmanager").disassociate_assessment_report_evidence_folder`
 method.
 
 Boto3 documentation:
 [AuditManager.Client.disassociate_assessment_report_evidence_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.disassociate_assessment_report_evidence_folder)
+
+Arguments mapping described in
+[DisassociateAssessmentReportEvidenceFolderRequestTypeDef](./type_defs.md#disassociateassessmentreportevidencefolderrequesttypedef).
 
 Keyword-only arguments:
 
@@ -401,6 +490,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("auditmanager").generate_presigned_url`
 method.
@@ -419,29 +510,38 @@ Returns `str`.
 
 ### get_account_status
 
+Returns the registration status of an account in AWS Audit Manager.
+
 Type annotations for `boto3.client("auditmanager").get_account_status` method.
 
 Boto3 documentation:
 [AuditManager.Client.get_account_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_account_status)
 
 Returns
-[GetAccountStatusResponseTypeDef](./type_defs.md#getaccountstatusresponsetypedef).
+[GetAccountStatusResponseResponseTypeDef](./type_defs.md#getaccountstatusresponseresponsetypedef).
 
 ### get_assessment
+
+Returns an assessment from AWS Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").get_assessment` method.
 
 Boto3 documentation:
 [AuditManager.Client.get_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_assessment)
 
+Arguments mapping described in
+[GetAssessmentRequestTypeDef](./type_defs.md#getassessmentrequesttypedef).
+
 Keyword-only arguments:
 
 - `assessmentId`: `str` *(required)*
 
 Returns
-[GetAssessmentResponseTypeDef](./type_defs.md#getassessmentresponsetypedef).
+[GetAssessmentResponseResponseTypeDef](./type_defs.md#getassessmentresponseresponsetypedef).
 
 ### get_assessment_framework
+
+Returns a framework from AWS Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").get_assessment_framework`
 method.
@@ -449,14 +549,19 @@ method.
 Boto3 documentation:
 [AuditManager.Client.get_assessment_framework](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_assessment_framework)
 
+Arguments mapping described in
+[GetAssessmentFrameworkRequestTypeDef](./type_defs.md#getassessmentframeworkrequesttypedef).
+
 Keyword-only arguments:
 
 - `frameworkId`: `str` *(required)*
 
 Returns
-[GetAssessmentFrameworkResponseTypeDef](./type_defs.md#getassessmentframeworkresponsetypedef).
+[GetAssessmentFrameworkResponseResponseTypeDef](./type_defs.md#getassessmentframeworkresponseresponsetypedef).
 
 ### get_assessment_report_url
+
+Returns the URL of a specified assessment report in AWS Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").get_assessment_report_url`
 method.
@@ -464,20 +569,28 @@ method.
 Boto3 documentation:
 [AuditManager.Client.get_assessment_report_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_assessment_report_url)
 
+Arguments mapping described in
+[GetAssessmentReportUrlRequestTypeDef](./type_defs.md#getassessmentreporturlrequesttypedef).
+
 Keyword-only arguments:
 
 - `assessmentReportId`: `str` *(required)*
 - `assessmentId`: `str` *(required)*
 
 Returns
-[GetAssessmentReportUrlResponseTypeDef](./type_defs.md#getassessmentreporturlresponsetypedef).
+[GetAssessmentReportUrlResponseResponseTypeDef](./type_defs.md#getassessmentreporturlresponseresponsetypedef).
 
 ### get_change_logs
+
+Returns a list of changelogs from AWS Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").get_change_logs` method.
 
 Boto3 documentation:
 [AuditManager.Client.get_change_logs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_change_logs)
+
+Arguments mapping described in
+[GetChangeLogsRequestTypeDef](./type_defs.md#getchangelogsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -488,27 +601,38 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetChangeLogsResponseTypeDef](./type_defs.md#getchangelogsresponsetypedef).
+[GetChangeLogsResponseResponseTypeDef](./type_defs.md#getchangelogsresponseresponsetypedef).
 
 ### get_control
+
+Returns a control from AWS Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").get_control` method.
 
 Boto3 documentation:
 [AuditManager.Client.get_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_control)
 
+Arguments mapping described in
+[GetControlRequestTypeDef](./type_defs.md#getcontrolrequesttypedef).
+
 Keyword-only arguments:
 
 - `controlId`: `str` *(required)*
 
-Returns [GetControlResponseTypeDef](./type_defs.md#getcontrolresponsetypedef).
+Returns
+[GetControlResponseResponseTypeDef](./type_defs.md#getcontrolresponseresponsetypedef).
 
 ### get_delegations
+
+Returns a list of delegations from an audit owner to a delegate.
 
 Type annotations for `boto3.client("auditmanager").get_delegations` method.
 
 Boto3 documentation:
 [AuditManager.Client.get_delegations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_delegations)
+
+Arguments mapping described in
+[GetDelegationsRequestTypeDef](./type_defs.md#getdelegationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -516,14 +640,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetDelegationsResponseTypeDef](./type_defs.md#getdelegationsresponsetypedef).
+[GetDelegationsResponseResponseTypeDef](./type_defs.md#getdelegationsresponseresponsetypedef).
 
 ### get_evidence
+
+Returns evidence from AWS Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").get_evidence` method.
 
 Boto3 documentation:
 [AuditManager.Client.get_evidence](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence)
+
+Arguments mapping described in
+[GetEvidenceRequestTypeDef](./type_defs.md#getevidencerequesttypedef).
 
 Keyword-only arguments:
 
@@ -533,9 +662,11 @@ Keyword-only arguments:
 - `evidenceId`: `str` *(required)*
 
 Returns
-[GetEvidenceResponseTypeDef](./type_defs.md#getevidenceresponsetypedef).
+[GetEvidenceResponseResponseTypeDef](./type_defs.md#getevidenceresponseresponsetypedef).
 
 ### get_evidence_by_evidence_folder
+
+Returns all evidence from a specified evidence folder in AWS Audit Manager.
 
 Type annotations for
 `boto3.client("auditmanager").get_evidence_by_evidence_folder` method.
@@ -543,6 +674,9 @@ Type annotations for
 Boto3 documentation:
 [AuditManager.Client.get_evidence_by_evidence_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_by_evidence_folder)
 
+Arguments mapping described in
+[GetEvidenceByEvidenceFolderRequestTypeDef](./type_defs.md#getevidencebyevidencefolderrequesttypedef).
+
 Keyword-only arguments:
 
 - `assessmentId`: `str` *(required)*
@@ -552,14 +686,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetEvidenceByEvidenceFolderResponseTypeDef](./type_defs.md#getevidencebyevidencefolderresponsetypedef).
+[GetEvidenceByEvidenceFolderResponseResponseTypeDef](./type_defs.md#getevidencebyevidencefolderresponseresponsetypedef).
 
 ### get_evidence_folder
+
+Returns an evidence folder from the specified assessment in AWS Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").get_evidence_folder` method.
 
 Boto3 documentation:
 [AuditManager.Client.get_evidence_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folder)
+
+Arguments mapping described in
+[GetEvidenceFolderRequestTypeDef](./type_defs.md#getevidencefolderrequesttypedef).
 
 Keyword-only arguments:
 
@@ -568,9 +707,11 @@ Keyword-only arguments:
 - `evidenceFolderId`: `str` *(required)*
 
 Returns
-[GetEvidenceFolderResponseTypeDef](./type_defs.md#getevidencefolderresponsetypedef).
+[GetEvidenceFolderResponseResponseTypeDef](./type_defs.md#getevidencefolderresponseresponsetypedef).
 
 ### get_evidence_folders_by_assessment
+
+Returns the evidence folders from a specified assessment in AWS Audit Manager.
 
 Type annotations for
 `boto3.client("auditmanager").get_evidence_folders_by_assessment` method.
@@ -578,6 +719,9 @@ Type annotations for
 Boto3 documentation:
 [AuditManager.Client.get_evidence_folders_by_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folders_by_assessment)
 
+Arguments mapping described in
+[GetEvidenceFoldersByAssessmentRequestTypeDef](./type_defs.md#getevidencefoldersbyassessmentrequesttypedef).
+
 Keyword-only arguments:
 
 - `assessmentId`: `str` *(required)*
@@ -585,9 +729,12 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetEvidenceFoldersByAssessmentResponseTypeDef](./type_defs.md#getevidencefoldersbyassessmentresponsetypedef).
+[GetEvidenceFoldersByAssessmentResponseResponseTypeDef](./type_defs.md#getevidencefoldersbyassessmentresponseresponsetypedef).
 
 ### get_evidence_folders_by_assessment_control
+
+Returns a list of evidence folders associated with a specified control of an
+assessment in AWS Audit Manager.
 
 Type annotations for
 `boto3.client("auditmanager").get_evidence_folders_by_assessment_control`
@@ -595,6 +742,9 @@ method.
 
 Boto3 documentation:
 [AuditManager.Client.get_evidence_folders_by_assessment_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folders_by_assessment_control)
+
+Arguments mapping described in
+[GetEvidenceFoldersByAssessmentControlRequestTypeDef](./type_defs.md#getevidencefoldersbyassessmentcontrolrequesttypedef).
 
 Keyword-only arguments:
 
@@ -605,9 +755,12 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetEvidenceFoldersByAssessmentControlResponseTypeDef](./type_defs.md#getevidencefoldersbyassessmentcontrolresponsetypedef).
+[GetEvidenceFoldersByAssessmentControlResponseResponseTypeDef](./type_defs.md#getevidencefoldersbyassessmentcontrolresponseresponsetypedef).
 
 ### get_organization_admin_account
+
+Returns the name of the delegated AWS administrator account for the AWS
+organization.
 
 Type annotations for
 `boto3.client("auditmanager").get_organization_admin_account` method.
@@ -616,9 +769,11 @@ Boto3 documentation:
 [AuditManager.Client.get_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_organization_admin_account)
 
 Returns
-[GetOrganizationAdminAccountResponseTypeDef](./type_defs.md#getorganizationadminaccountresponsetypedef).
+[GetOrganizationAdminAccountResponseResponseTypeDef](./type_defs.md#getorganizationadminaccountresponseresponsetypedef).
 
 ### get_services_in_scope
+
+Returns a list of the in-scope AWS services for the specified assessment.
 
 Type annotations for `boto3.client("auditmanager").get_services_in_scope`
 method.
@@ -627,14 +782,19 @@ Boto3 documentation:
 [AuditManager.Client.get_services_in_scope](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_services_in_scope)
 
 Returns
-[GetServicesInScopeResponseTypeDef](./type_defs.md#getservicesinscoperesponsetypedef).
+[GetServicesInScopeResponseResponseTypeDef](./type_defs.md#getservicesinscoperesponseresponsetypedef).
 
 ### get_settings
+
+Returns the settings for the specified AWS account.
 
 Type annotations for `boto3.client("auditmanager").get_settings` method.
 
 Boto3 documentation:
 [AuditManager.Client.get_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_settings)
+
+Arguments mapping described in
+[GetSettingsRequestTypeDef](./type_defs.md#getsettingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -642,15 +802,21 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[GetSettingsResponseTypeDef](./type_defs.md#getsettingsresponsetypedef).
+[GetSettingsResponseResponseTypeDef](./type_defs.md#getsettingsresponseresponsetypedef).
 
 ### list_assessment_frameworks
+
+Returns a list of the frameworks available in the AWS Audit Manager framework
+library.
 
 Type annotations for `boto3.client("auditmanager").list_assessment_frameworks`
 method.
 
 Boto3 documentation:
 [AuditManager.Client.list_assessment_frameworks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessment_frameworks)
+
+Arguments mapping described in
+[ListAssessmentFrameworksRequestTypeDef](./type_defs.md#listassessmentframeworksrequesttypedef).
 
 Keyword-only arguments:
 
@@ -660,9 +826,11 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAssessmentFrameworksResponseTypeDef](./type_defs.md#listassessmentframeworksresponsetypedef).
+[ListAssessmentFrameworksResponseResponseTypeDef](./type_defs.md#listassessmentframeworksresponseresponsetypedef).
 
 ### list_assessment_reports
+
+Returns a list of assessment reports created in AWS Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").list_assessment_reports`
 method.
@@ -670,35 +838,48 @@ method.
 Boto3 documentation:
 [AuditManager.Client.list_assessment_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessment_reports)
 
+Arguments mapping described in
+[ListAssessmentReportsRequestTypeDef](./type_defs.md#listassessmentreportsrequesttypedef).
+
 Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[ListAssessmentReportsResponseTypeDef](./type_defs.md#listassessmentreportsresponsetypedef).
+[ListAssessmentReportsResponseResponseTypeDef](./type_defs.md#listassessmentreportsresponseresponsetypedef).
 
 ### list_assessments
+
+Returns a list of current and past assessments from AWS Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").list_assessments` method.
 
 Boto3 documentation:
 [AuditManager.Client.list_assessments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessments)
 
+Arguments mapping described in
+[ListAssessmentsRequestTypeDef](./type_defs.md#listassessmentsrequesttypedef).
+
 Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[ListAssessmentsResponseTypeDef](./type_defs.md#listassessmentsresponsetypedef).
+[ListAssessmentsResponseResponseTypeDef](./type_defs.md#listassessmentsresponseresponsetypedef).
 
 ### list_controls
+
+Returns a list of controls from AWS Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").list_controls` method.
 
 Boto3 documentation:
 [AuditManager.Client.list_controls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_controls)
+
+Arguments mapping described in
+[ListControlsRequestTypeDef](./type_defs.md#listcontrolsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -707,15 +888,21 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListControlsResponseTypeDef](./type_defs.md#listcontrolsresponsetypedef).
+[ListControlsResponseResponseTypeDef](./type_defs.md#listcontrolsresponseresponsetypedef).
 
 ### list_keywords_for_data_source
+
+Returns a list of keywords that pre-mapped to the specified control data
+source.
 
 Type annotations for
 `boto3.client("auditmanager").list_keywords_for_data_source` method.
 
 Boto3 documentation:
 [AuditManager.Client.list_keywords_for_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_keywords_for_data_source)
+
+Arguments mapping described in
+[ListKeywordsForDataSourceRequestTypeDef](./type_defs.md#listkeywordsfordatasourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -724,14 +911,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListKeywordsForDataSourceResponseTypeDef](./type_defs.md#listkeywordsfordatasourceresponsetypedef).
+[ListKeywordsForDataSourceResponseResponseTypeDef](./type_defs.md#listkeywordsfordatasourceresponseresponsetypedef).
 
 ### list_notifications
+
+Returns a list of all AWS Audit Manager notifications.
 
 Type annotations for `boto3.client("auditmanager").list_notifications` method.
 
 Boto3 documentation:
 [AuditManager.Client.list_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_notifications)
+
+Arguments mapping described in
+[ListNotificationsRequestTypeDef](./type_defs.md#listnotificationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -739,9 +931,11 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListNotificationsResponseTypeDef](./type_defs.md#listnotificationsresponsetypedef).
+[ListNotificationsResponseResponseTypeDef](./type_defs.md#listnotificationsresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Returns a list of tags for the specified resource in AWS Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").list_tags_for_resource`
 method.
@@ -749,19 +943,27 @@ method.
 Boto3 documentation:
 [AuditManager.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### register_account
+
+Enables AWS Audit Manager for the specified AWS account.
 
 Type annotations for `boto3.client("auditmanager").register_account` method.
 
 Boto3 documentation:
 [AuditManager.Client.register_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.register_account)
+
+Arguments mapping described in
+[RegisterAccountRequestTypeDef](./type_defs.md#registeraccountrequesttypedef).
 
 Keyword-only arguments:
 
@@ -769,9 +971,12 @@ Keyword-only arguments:
 - `delegatedAdminAccount`: `str`
 
 Returns
-[RegisterAccountResponseTypeDef](./type_defs.md#registeraccountresponsetypedef).
+[RegisterAccountResponseResponseTypeDef](./type_defs.md#registeraccountresponseresponsetypedef).
 
 ### register_organization_admin_account
+
+Enables an AWS account within the organization as the delegated administrator
+for AWS Audit Manager.
 
 Type annotations for
 `boto3.client("auditmanager").register_organization_admin_account` method.
@@ -779,19 +984,27 @@ Type annotations for
 Boto3 documentation:
 [AuditManager.Client.register_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.register_organization_admin_account)
 
+Arguments mapping described in
+[RegisterOrganizationAdminAccountRequestTypeDef](./type_defs.md#registerorganizationadminaccountrequesttypedef).
+
 Keyword-only arguments:
 
 - `adminAccountId`: `str` *(required)*
 
 Returns
-[RegisterOrganizationAdminAccountResponseTypeDef](./type_defs.md#registerorganizationadminaccountresponsetypedef).
+[RegisterOrganizationAdminAccountResponseResponseTypeDef](./type_defs.md#registerorganizationadminaccountresponseresponsetypedef).
 
 ### tag_resource
+
+Tags the specified resource in AWS Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").tag_resource` method.
 
 Boto3 documentation:
 [AuditManager.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -802,10 +1015,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Removes a tag from a resource in AWS Audit Manager.
+
 Type annotations for `boto3.client("auditmanager").untag_resource` method.
 
 Boto3 documentation:
 [AuditManager.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -816,10 +1034,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_assessment
 
+Edits an AWS Audit Manager assessment.
+
 Type annotations for `boto3.client("auditmanager").update_assessment` method.
 
 Boto3 documentation:
 [AuditManager.Client.update_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment)
+
+Arguments mapping described in
+[UpdateAssessmentRequestTypeDef](./type_defs.md#updateassessmentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -832,15 +1055,20 @@ Keyword-only arguments:
 - `roles`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
 
 Returns
-[UpdateAssessmentResponseTypeDef](./type_defs.md#updateassessmentresponsetypedef).
+[UpdateAssessmentResponseResponseTypeDef](./type_defs.md#updateassessmentresponseresponsetypedef).
 
 ### update_assessment_control
+
+Updates a control within an assessment in AWS Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").update_assessment_control`
 method.
 
 Boto3 documentation:
 [AuditManager.Client.update_assessment_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_control)
+
+Arguments mapping described in
+[UpdateAssessmentControlRequestTypeDef](./type_defs.md#updateassessmentcontrolrequesttypedef).
 
 Keyword-only arguments:
 
@@ -851,15 +1079,20 @@ Keyword-only arguments:
 - `commentBody`: `str`
 
 Returns
-[UpdateAssessmentControlResponseTypeDef](./type_defs.md#updateassessmentcontrolresponsetypedef).
+[UpdateAssessmentControlResponseResponseTypeDef](./type_defs.md#updateassessmentcontrolresponseresponsetypedef).
 
 ### update_assessment_control_set_status
+
+Updates the status of a control set in an AWS Audit Manager assessment.
 
 Type annotations for
 `boto3.client("auditmanager").update_assessment_control_set_status` method.
 
 Boto3 documentation:
 [AuditManager.Client.update_assessment_control_set_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_control_set_status)
+
+Arguments mapping described in
+[UpdateAssessmentControlSetStatusRequestTypeDef](./type_defs.md#updateassessmentcontrolsetstatusrequesttypedef).
 
 Keyword-only arguments:
 
@@ -870,15 +1103,20 @@ Keyword-only arguments:
 - `comment`: `str` *(required)*
 
 Returns
-[UpdateAssessmentControlSetStatusResponseTypeDef](./type_defs.md#updateassessmentcontrolsetstatusresponsetypedef).
+[UpdateAssessmentControlSetStatusResponseResponseTypeDef](./type_defs.md#updateassessmentcontrolsetstatusresponseresponsetypedef).
 
 ### update_assessment_framework
+
+Updates a custom framework in AWS Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").update_assessment_framework`
 method.
 
 Boto3 documentation:
 [AuditManager.Client.update_assessment_framework](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_framework)
+
+Arguments mapping described in
+[UpdateAssessmentFrameworkRequestTypeDef](./type_defs.md#updateassessmentframeworkrequesttypedef).
 
 Keyword-only arguments:
 
@@ -891,15 +1129,20 @@ Keyword-only arguments:
 - `complianceType`: `str`
 
 Returns
-[UpdateAssessmentFrameworkResponseTypeDef](./type_defs.md#updateassessmentframeworkresponsetypedef).
+[UpdateAssessmentFrameworkResponseResponseTypeDef](./type_defs.md#updateassessmentframeworkresponseresponsetypedef).
 
 ### update_assessment_status
+
+Updates the status of an assessment in AWS Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").update_assessment_status`
 method.
 
 Boto3 documentation:
 [AuditManager.Client.update_assessment_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_status)
+
+Arguments mapping described in
+[UpdateAssessmentStatusRequestTypeDef](./type_defs.md#updateassessmentstatusrequesttypedef).
 
 Keyword-only arguments:
 
@@ -908,14 +1151,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateAssessmentStatusResponseTypeDef](./type_defs.md#updateassessmentstatusresponsetypedef).
+[UpdateAssessmentStatusResponseResponseTypeDef](./type_defs.md#updateassessmentstatusresponseresponsetypedef).
 
 ### update_control
+
+Updates a custom control in AWS Audit Manager.
 
 Type annotations for `boto3.client("auditmanager").update_control` method.
 
 Boto3 documentation:
 [AuditManager.Client.update_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_control)
+
+Arguments mapping described in
+[UpdateControlRequestTypeDef](./type_defs.md#updatecontrolrequesttypedef).
 
 Keyword-only arguments:
 
@@ -930,14 +1178,19 @@ Keyword-only arguments:
 - `actionPlanInstructions`: `str`
 
 Returns
-[UpdateControlResponseTypeDef](./type_defs.md#updatecontrolresponsetypedef).
+[UpdateControlResponseResponseTypeDef](./type_defs.md#updatecontrolresponseresponsetypedef).
 
 ### update_settings
+
+Updates AWS Audit Manager settings for the current user account.
 
 Type annotations for `boto3.client("auditmanager").update_settings` method.
 
 Boto3 documentation:
 [AuditManager.Client.update_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_settings)
+
+Arguments mapping described in
+[UpdateSettingsRequestTypeDef](./type_defs.md#updatesettingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -948,9 +1201,11 @@ Keyword-only arguments:
 - `kmsKey`: `str`
 
 Returns
-[UpdateSettingsResponseTypeDef](./type_defs.md#updatesettingsresponsetypedef).
+[UpdateSettingsResponseResponseTypeDef](./type_defs.md#updatesettingsresponseresponsetypedef).
 
 ### validate_assessment_report_integrity
+
+Validates the integrity of an assessment report in AWS Audit Manager.
 
 Type annotations for
 `boto3.client("auditmanager").validate_assessment_report_integrity` method.
@@ -958,9 +1213,12 @@ Type annotations for
 Boto3 documentation:
 [AuditManager.Client.validate_assessment_report_integrity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.validate_assessment_report_integrity)
 
+Arguments mapping described in
+[ValidateAssessmentReportIntegrityRequestTypeDef](./type_defs.md#validateassessmentreportintegrityrequesttypedef).
+
 Keyword-only arguments:
 
 - `s3RelativePath`: `str` *(required)*
 
 Returns
-[ValidateAssessmentReportIntegrityResponseTypeDef](./type_defs.md#validateassessmentreportintegrityresponsetypedef).
+[ValidateAssessmentReportIntegrityResponseResponseTypeDef](./type_defs.md#validateassessmentreportintegrityresponseresponsetypedef).

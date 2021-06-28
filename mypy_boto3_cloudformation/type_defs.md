@@ -10,52 +10,103 @@ type annotations stubs module
 - [Typed dictionaries for boto3 CloudFormation module](#typed-dictionaries-for-boto3-cloudformation-module)
   - [AccountGateResultTypeDef](#accountgateresulttypedef)
   - [AccountLimitTypeDef](#accountlimittypedef)
-  - [ActivateTypeOutputTypeDef](#activatetypeoutputtypedef)
+  - [ActivateTypeInputTypeDef](#activatetypeinputtypedef)
+  - [ActivateTypeOutputResponseTypeDef](#activatetypeoutputresponsetypedef)
   - [AutoDeploymentTypeDef](#autodeploymenttypedef)
   - [BatchDescribeTypeConfigurationsErrorTypeDef](#batchdescribetypeconfigurationserrortypedef)
-  - [BatchDescribeTypeConfigurationsOutputTypeDef](#batchdescribetypeconfigurationsoutputtypedef)
+  - [BatchDescribeTypeConfigurationsInputTypeDef](#batchdescribetypeconfigurationsinputtypedef)
+  - [BatchDescribeTypeConfigurationsOutputResponseTypeDef](#batchdescribetypeconfigurationsoutputresponsetypedef)
+  - [CancelUpdateStackInputStackTypeDef](#cancelupdatestackinputstacktypedef)
+  - [CancelUpdateStackInputTypeDef](#cancelupdatestackinputtypedef)
   - [ChangeSetSummaryTypeDef](#changesetsummarytypedef)
   - [ChangeTypeDef](#changetypedef)
-  - [CreateChangeSetOutputTypeDef](#createchangesetoutputtypedef)
-  - [CreateStackInstancesOutputTypeDef](#createstackinstancesoutputtypedef)
-  - [CreateStackOutputTypeDef](#createstackoutputtypedef)
-  - [CreateStackSetOutputTypeDef](#createstacksetoutputtypedef)
-  - [DeleteStackInstancesOutputTypeDef](#deletestackinstancesoutputtypedef)
+  - [ContinueUpdateRollbackInputTypeDef](#continueupdaterollbackinputtypedef)
+  - [CreateChangeSetInputTypeDef](#createchangesetinputtypedef)
+  - [CreateChangeSetOutputResponseTypeDef](#createchangesetoutputresponsetypedef)
+  - [CreateStackInputServiceResourceTypeDef](#createstackinputserviceresourcetypedef)
+  - [CreateStackInputTypeDef](#createstackinputtypedef)
+  - [CreateStackInstancesInputTypeDef](#createstackinstancesinputtypedef)
+  - [CreateStackInstancesOutputResponseTypeDef](#createstackinstancesoutputresponsetypedef)
+  - [CreateStackOutputResponseTypeDef](#createstackoutputresponsetypedef)
+  - [CreateStackSetInputTypeDef](#createstacksetinputtypedef)
+  - [CreateStackSetOutputResponseTypeDef](#createstacksetoutputresponsetypedef)
+  - [DeactivateTypeInputTypeDef](#deactivatetypeinputtypedef)
+  - [DeleteChangeSetInputTypeDef](#deletechangesetinputtypedef)
+  - [DeleteStackInputStackTypeDef](#deletestackinputstacktypedef)
+  - [DeleteStackInputTypeDef](#deletestackinputtypedef)
+  - [DeleteStackInstancesInputTypeDef](#deletestackinstancesinputtypedef)
+  - [DeleteStackInstancesOutputResponseTypeDef](#deletestackinstancesoutputresponsetypedef)
+  - [DeleteStackSetInputTypeDef](#deletestacksetinputtypedef)
   - [DeploymentTargetsTypeDef](#deploymenttargetstypedef)
-  - [DescribeAccountLimitsOutputTypeDef](#describeaccountlimitsoutputtypedef)
-  - [DescribeChangeSetOutputTypeDef](#describechangesetoutputtypedef)
-  - [DescribePublisherOutputTypeDef](#describepublisheroutputtypedef)
-  - [DescribeStackDriftDetectionStatusOutputTypeDef](#describestackdriftdetectionstatusoutputtypedef)
-  - [DescribeStackEventsOutputTypeDef](#describestackeventsoutputtypedef)
-  - [DescribeStackInstanceOutputTypeDef](#describestackinstanceoutputtypedef)
-  - [DescribeStackResourceDriftsOutputTypeDef](#describestackresourcedriftsoutputtypedef)
-  - [DescribeStackResourceOutputTypeDef](#describestackresourceoutputtypedef)
-  - [DescribeStackResourcesOutputTypeDef](#describestackresourcesoutputtypedef)
-  - [DescribeStackSetOperationOutputTypeDef](#describestacksetoperationoutputtypedef)
-  - [DescribeStackSetOutputTypeDef](#describestacksetoutputtypedef)
-  - [DescribeStacksOutputTypeDef](#describestacksoutputtypedef)
-  - [DescribeTypeOutputTypeDef](#describetypeoutputtypedef)
-  - [DescribeTypeRegistrationOutputTypeDef](#describetyperegistrationoutputtypedef)
-  - [DetectStackDriftOutputTypeDef](#detectstackdriftoutputtypedef)
-  - [DetectStackResourceDriftOutputTypeDef](#detectstackresourcedriftoutputtypedef)
-  - [DetectStackSetDriftOutputTypeDef](#detectstacksetdriftoutputtypedef)
-  - [EstimateTemplateCostOutputTypeDef](#estimatetemplatecostoutputtypedef)
+  - [DeregisterTypeInputTypeDef](#deregistertypeinputtypedef)
+  - [DescribeAccountLimitsInputTypeDef](#describeaccountlimitsinputtypedef)
+  - [DescribeAccountLimitsOutputResponseTypeDef](#describeaccountlimitsoutputresponsetypedef)
+  - [DescribeChangeSetInputTypeDef](#describechangesetinputtypedef)
+  - [DescribeChangeSetOutputResponseTypeDef](#describechangesetoutputresponsetypedef)
+  - [DescribePublisherInputTypeDef](#describepublisherinputtypedef)
+  - [DescribePublisherOutputResponseTypeDef](#describepublisheroutputresponsetypedef)
+  - [DescribeStackDriftDetectionStatusInputTypeDef](#describestackdriftdetectionstatusinputtypedef)
+  - [DescribeStackDriftDetectionStatusOutputResponseTypeDef](#describestackdriftdetectionstatusoutputresponsetypedef)
+  - [DescribeStackEventsInputTypeDef](#describestackeventsinputtypedef)
+  - [DescribeStackEventsOutputResponseTypeDef](#describestackeventsoutputresponsetypedef)
+  - [DescribeStackInstanceInputTypeDef](#describestackinstanceinputtypedef)
+  - [DescribeStackInstanceOutputResponseTypeDef](#describestackinstanceoutputresponsetypedef)
+  - [DescribeStackResourceDriftsInputTypeDef](#describestackresourcedriftsinputtypedef)
+  - [DescribeStackResourceDriftsOutputResponseTypeDef](#describestackresourcedriftsoutputresponsetypedef)
+  - [DescribeStackResourceInputTypeDef](#describestackresourceinputtypedef)
+  - [DescribeStackResourceOutputResponseTypeDef](#describestackresourceoutputresponsetypedef)
+  - [DescribeStackResourcesInputTypeDef](#describestackresourcesinputtypedef)
+  - [DescribeStackResourcesOutputResponseTypeDef](#describestackresourcesoutputresponsetypedef)
+  - [DescribeStackSetInputTypeDef](#describestacksetinputtypedef)
+  - [DescribeStackSetOperationInputTypeDef](#describestacksetoperationinputtypedef)
+  - [DescribeStackSetOperationOutputResponseTypeDef](#describestacksetoperationoutputresponsetypedef)
+  - [DescribeStackSetOutputResponseTypeDef](#describestacksetoutputresponsetypedef)
+  - [DescribeStacksInputTypeDef](#describestacksinputtypedef)
+  - [DescribeStacksOutputResponseTypeDef](#describestacksoutputresponsetypedef)
+  - [DescribeTypeInputTypeDef](#describetypeinputtypedef)
+  - [DescribeTypeOutputResponseTypeDef](#describetypeoutputresponsetypedef)
+  - [DescribeTypeRegistrationInputTypeDef](#describetyperegistrationinputtypedef)
+  - [DescribeTypeRegistrationOutputResponseTypeDef](#describetyperegistrationoutputresponsetypedef)
+  - [DetectStackDriftInputTypeDef](#detectstackdriftinputtypedef)
+  - [DetectStackDriftOutputResponseTypeDef](#detectstackdriftoutputresponsetypedef)
+  - [DetectStackResourceDriftInputTypeDef](#detectstackresourcedriftinputtypedef)
+  - [DetectStackResourceDriftOutputResponseTypeDef](#detectstackresourcedriftoutputresponsetypedef)
+  - [DetectStackSetDriftInputTypeDef](#detectstacksetdriftinputtypedef)
+  - [DetectStackSetDriftOutputResponseTypeDef](#detectstacksetdriftoutputresponsetypedef)
+  - [EstimateTemplateCostInputTypeDef](#estimatetemplatecostinputtypedef)
+  - [EstimateTemplateCostOutputResponseTypeDef](#estimatetemplatecostoutputresponsetypedef)
+  - [ExecuteChangeSetInputTypeDef](#executechangesetinputtypedef)
   - [ExportTypeDef](#exporttypedef)
-  - [GetStackPolicyOutputTypeDef](#getstackpolicyoutputtypedef)
-  - [GetTemplateOutputTypeDef](#gettemplateoutputtypedef)
-  - [GetTemplateSummaryOutputTypeDef](#gettemplatesummaryoutputtypedef)
-  - [ListChangeSetsOutputTypeDef](#listchangesetsoutputtypedef)
-  - [ListExportsOutputTypeDef](#listexportsoutputtypedef)
-  - [ListImportsOutputTypeDef](#listimportsoutputtypedef)
-  - [ListStackInstancesOutputTypeDef](#liststackinstancesoutputtypedef)
-  - [ListStackResourcesOutputTypeDef](#liststackresourcesoutputtypedef)
-  - [ListStackSetOperationResultsOutputTypeDef](#liststacksetoperationresultsoutputtypedef)
-  - [ListStackSetOperationsOutputTypeDef](#liststacksetoperationsoutputtypedef)
-  - [ListStackSetsOutputTypeDef](#liststacksetsoutputtypedef)
-  - [ListStacksOutputTypeDef](#liststacksoutputtypedef)
-  - [ListTypeRegistrationsOutputTypeDef](#listtyperegistrationsoutputtypedef)
-  - [ListTypeVersionsOutputTypeDef](#listtypeversionsoutputtypedef)
-  - [ListTypesOutputTypeDef](#listtypesoutputtypedef)
+  - [GetStackPolicyInputTypeDef](#getstackpolicyinputtypedef)
+  - [GetStackPolicyOutputResponseTypeDef](#getstackpolicyoutputresponsetypedef)
+  - [GetTemplateInputTypeDef](#gettemplateinputtypedef)
+  - [GetTemplateOutputResponseTypeDef](#gettemplateoutputresponsetypedef)
+  - [GetTemplateSummaryInputTypeDef](#gettemplatesummaryinputtypedef)
+  - [GetTemplateSummaryOutputResponseTypeDef](#gettemplatesummaryoutputresponsetypedef)
+  - [ListChangeSetsInputTypeDef](#listchangesetsinputtypedef)
+  - [ListChangeSetsOutputResponseTypeDef](#listchangesetsoutputresponsetypedef)
+  - [ListExportsInputTypeDef](#listexportsinputtypedef)
+  - [ListExportsOutputResponseTypeDef](#listexportsoutputresponsetypedef)
+  - [ListImportsInputTypeDef](#listimportsinputtypedef)
+  - [ListImportsOutputResponseTypeDef](#listimportsoutputresponsetypedef)
+  - [ListStackInstancesInputTypeDef](#liststackinstancesinputtypedef)
+  - [ListStackInstancesOutputResponseTypeDef](#liststackinstancesoutputresponsetypedef)
+  - [ListStackResourcesInputTypeDef](#liststackresourcesinputtypedef)
+  - [ListStackResourcesOutputResponseTypeDef](#liststackresourcesoutputresponsetypedef)
+  - [ListStackSetOperationResultsInputTypeDef](#liststacksetoperationresultsinputtypedef)
+  - [ListStackSetOperationResultsOutputResponseTypeDef](#liststacksetoperationresultsoutputresponsetypedef)
+  - [ListStackSetOperationsInputTypeDef](#liststacksetoperationsinputtypedef)
+  - [ListStackSetOperationsOutputResponseTypeDef](#liststacksetoperationsoutputresponsetypedef)
+  - [ListStackSetsInputTypeDef](#liststacksetsinputtypedef)
+  - [ListStackSetsOutputResponseTypeDef](#liststacksetsoutputresponsetypedef)
+  - [ListStacksInputTypeDef](#liststacksinputtypedef)
+  - [ListStacksOutputResponseTypeDef](#liststacksoutputresponsetypedef)
+  - [ListTypeRegistrationsInputTypeDef](#listtyperegistrationsinputtypedef)
+  - [ListTypeRegistrationsOutputResponseTypeDef](#listtyperegistrationsoutputresponsetypedef)
+  - [ListTypeVersionsInputTypeDef](#listtypeversionsinputtypedef)
+  - [ListTypeVersionsOutputResponseTypeDef](#listtypeversionsoutputresponsetypedef)
+  - [ListTypesInputTypeDef](#listtypesinputtypedef)
+  - [ListTypesOutputResponseTypeDef](#listtypesoutputresponsetypedef)
   - [LoggingConfigTypeDef](#loggingconfigtypedef)
   - [ModuleInfoTypeDef](#moduleinfotypedef)
   - [OutputTypeDef](#outputtypedef)
@@ -65,9 +116,13 @@ type annotations stubs module
   - [ParameterTypeDef](#parametertypedef)
   - [PhysicalResourceIdContextKeyValuePairTypeDef](#physicalresourceidcontextkeyvaluepairtypedef)
   - [PropertyDifferenceTypeDef](#propertydifferencetypedef)
-  - [PublishTypeOutputTypeDef](#publishtypeoutputtypedef)
-  - [RegisterPublisherOutputTypeDef](#registerpublisheroutputtypedef)
-  - [RegisterTypeOutputTypeDef](#registertypeoutputtypedef)
+  - [PublishTypeInputTypeDef](#publishtypeinputtypedef)
+  - [PublishTypeOutputResponseTypeDef](#publishtypeoutputresponsetypedef)
+  - [RecordHandlerProgressInputTypeDef](#recordhandlerprogressinputtypedef)
+  - [RegisterPublisherInputTypeDef](#registerpublisherinputtypedef)
+  - [RegisterPublisherOutputResponseTypeDef](#registerpublisheroutputresponsetypedef)
+  - [RegisterTypeInputTypeDef](#registertypeinputtypedef)
+  - [RegisterTypeOutputResponseTypeDef](#registertypeoutputresponsetypedef)
   - [RequiredActivatedTypeTypeDef](#requiredactivatedtypetypedef)
   - [ResourceChangeDetailTypeDef](#resourcechangedetailtypedef)
   - [ResourceChangeTypeDef](#resourcechangetypedef)
@@ -77,7 +132,15 @@ type annotations stubs module
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RollbackConfigurationTypeDef](#rollbackconfigurationtypedef)
   - [RollbackTriggerTypeDef](#rollbacktriggertypedef)
-  - [SetTypeConfigurationOutputTypeDef](#settypeconfigurationoutputtypedef)
+  - [ServiceResourceEventRequestTypeDef](#serviceresourceeventrequesttypedef)
+  - [ServiceResourceStackRequestTypeDef](#serviceresourcestackrequesttypedef)
+  - [ServiceResourceStackResourceRequestTypeDef](#serviceresourcestackresourcerequesttypedef)
+  - [ServiceResourceStackResourceSummaryRequestTypeDef](#serviceresourcestackresourcesummaryrequesttypedef)
+  - [SetStackPolicyInputTypeDef](#setstackpolicyinputtypedef)
+  - [SetTypeConfigurationInputTypeDef](#settypeconfigurationinputtypedef)
+  - [SetTypeConfigurationOutputResponseTypeDef](#settypeconfigurationoutputresponsetypedef)
+  - [SetTypeDefaultVersionInputTypeDef](#settypedefaultversioninputtypedef)
+  - [SignalResourceInputTypeDef](#signalresourceinputtypedef)
   - [StackDriftInformationSummaryTypeDef](#stackdriftinformationsummarytypedef)
   - [StackDriftInformationTypeDef](#stackdriftinformationtypedef)
   - [StackEventTypeDef](#stackeventtypedef)
@@ -89,6 +152,7 @@ type annotations stubs module
   - [StackResourceDriftInformationSummaryTypeDef](#stackresourcedriftinformationsummarytypedef)
   - [StackResourceDriftInformationTypeDef](#stackresourcedriftinformationtypedef)
   - [StackResourceDriftTypeDef](#stackresourcedrifttypedef)
+  - [StackResourceRequestTypeDef](#stackresourcerequesttypedef)
   - [StackResourceSummaryTypeDef](#stackresourcesummarytypedef)
   - [StackResourceTypeDef](#stackresourcetypedef)
   - [StackSetDriftDetectionDetailsTypeDef](#stacksetdriftdetectiondetailstypedef)
@@ -100,19 +164,27 @@ type annotations stubs module
   - [StackSetTypeDef](#stacksettypedef)
   - [StackSummaryTypeDef](#stacksummarytypedef)
   - [StackTypeDef](#stacktypedef)
+  - [StopStackSetOperationInputTypeDef](#stopstacksetoperationinputtypedef)
   - [TagTypeDef](#tagtypedef)
   - [TemplateParameterTypeDef](#templateparametertypedef)
-  - [TestTypeOutputTypeDef](#testtypeoutputtypedef)
+  - [TestTypeInputTypeDef](#testtypeinputtypedef)
+  - [TestTypeOutputResponseTypeDef](#testtypeoutputresponsetypedef)
   - [TypeConfigurationDetailsTypeDef](#typeconfigurationdetailstypedef)
   - [TypeConfigurationIdentifierTypeDef](#typeconfigurationidentifiertypedef)
   - [TypeFiltersTypeDef](#typefilterstypedef)
   - [TypeSummaryTypeDef](#typesummarytypedef)
   - [TypeVersionSummaryTypeDef](#typeversionsummarytypedef)
-  - [UpdateStackInstancesOutputTypeDef](#updatestackinstancesoutputtypedef)
-  - [UpdateStackOutputTypeDef](#updatestackoutputtypedef)
-  - [UpdateStackSetOutputTypeDef](#updatestacksetoutputtypedef)
-  - [UpdateTerminationProtectionOutputTypeDef](#updateterminationprotectionoutputtypedef)
-  - [ValidateTemplateOutputTypeDef](#validatetemplateoutputtypedef)
+  - [UpdateStackInputStackTypeDef](#updatestackinputstacktypedef)
+  - [UpdateStackInputTypeDef](#updatestackinputtypedef)
+  - [UpdateStackInstancesInputTypeDef](#updatestackinstancesinputtypedef)
+  - [UpdateStackInstancesOutputResponseTypeDef](#updatestackinstancesoutputresponsetypedef)
+  - [UpdateStackOutputResponseTypeDef](#updatestackoutputresponsetypedef)
+  - [UpdateStackSetInputTypeDef](#updatestacksetinputtypedef)
+  - [UpdateStackSetOutputResponseTypeDef](#updatestacksetoutputresponsetypedef)
+  - [UpdateTerminationProtectionInputTypeDef](#updateterminationprotectioninputtypedef)
+  - [UpdateTerminationProtectionOutputResponseTypeDef](#updateterminationprotectionoutputresponsetypedef)
+  - [ValidateTemplateInputTypeDef](#validatetemplateinputtypedef)
+  - [ValidateTemplateOutputResponseTypeDef](#validatetemplateoutputresponsetypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
 ## AccountGateResultTypeDef
@@ -137,10 +209,29 @@ Optional fields:
 - `Name`: `str`
 - `Value`: `int`
 
-## ActivateTypeOutputTypeDef
+## ActivateTypeInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import ActivateTypeOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import ActivateTypeInputTypeDef
+```
+
+Optional fields:
+
+- `Type`: [ThirdPartyTypeType](./literals.md#thirdpartytypetype)
+- `PublicTypeArn`: `str`
+- `PublisherId`: `str`
+- `TypeName`: `str`
+- `TypeNameAlias`: `str`
+- `AutoUpdate`: `bool`
+- `LoggingConfig`: [LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef)
+- `ExecutionRoleArn`: `str`
+- `VersionBump`: [VersionBumpType](./literals.md#versionbumptype)
+- `MajorVersion`: `int`
+
+## ActivateTypeOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import ActivateTypeOutputResponseTypeDef
 ```
 
 Required fields:
@@ -173,10 +264,21 @@ Optional fields:
 - `TypeConfigurationIdentifier`:
   [TypeConfigurationIdentifierTypeDef](./type_defs.md#typeconfigurationidentifiertypedef)
 
-## BatchDescribeTypeConfigurationsOutputTypeDef
+## BatchDescribeTypeConfigurationsInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import BatchDescribeTypeConfigurationsOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import BatchDescribeTypeConfigurationsInputTypeDef
+```
+
+Required fields:
+
+- `TypeConfigurationIdentifiers`:
+  `List`\[[TypeConfigurationIdentifierTypeDef](./type_defs.md#typeconfigurationidentifiertypedef)\]
+
+## BatchDescribeTypeConfigurationsOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import BatchDescribeTypeConfigurationsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -189,6 +291,30 @@ Required fields:
   `List`\[[TypeConfigurationDetailsTypeDef](./type_defs.md#typeconfigurationdetailstypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CancelUpdateStackInputStackTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import CancelUpdateStackInputStackTypeDef
+```
+
+Optional fields:
+
+- `ClientRequestToken`: `str`
+
+## CancelUpdateStackInputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import CancelUpdateStackInputTypeDef
+```
+
+Required fields:
+
+- `StackName`: `str`
+
+Optional fields:
+
+- `ClientRequestToken`: `str`
 
 ## ChangeSetSummaryTypeDef
 
@@ -224,10 +350,57 @@ Optional fields:
 - `ResourceChange`:
   [ResourceChangeTypeDef](./type_defs.md#resourcechangetypedef)
 
-## CreateChangeSetOutputTypeDef
+## ContinueUpdateRollbackInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import CreateChangeSetOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import ContinueUpdateRollbackInputTypeDef
+```
+
+Required fields:
+
+- `StackName`: `str`
+
+Optional fields:
+
+- `RoleARN`: `str`
+- `ResourcesToSkip`: `List`\[`str`\]
+- `ClientRequestToken`: `str`
+
+## CreateChangeSetInputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import CreateChangeSetInputTypeDef
+```
+
+Required fields:
+
+- `StackName`: `str`
+- `ChangeSetName`: `str`
+
+Optional fields:
+
+- `TemplateBody`: `str`
+- `TemplateURL`: `str`
+- `UsePreviousTemplate`: `bool`
+- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
+- `ResourceTypes`: `List`\[`str`\]
+- `RoleARN`: `str`
+- `RollbackConfiguration`:
+  [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
+- `NotificationARNs`: `List`\[`str`\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ClientToken`: `str`
+- `Description`: `str`
+- `ChangeSetType`: [ChangeSetTypeType](./literals.md#changesettypetype)
+- `ResourcesToImport`:
+  `List`\[[ResourceToImportTypeDef](./type_defs.md#resourcetoimporttypedef)\]
+- `IncludeNestedStacks`: `bool`
+
+## CreateChangeSetOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import CreateChangeSetOutputResponseTypeDef
 ```
 
 Required fields:
@@ -237,10 +410,93 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateStackInstancesOutputTypeDef
+## CreateStackInputServiceResourceTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import CreateStackInstancesOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import CreateStackInputServiceResourceTypeDef
+```
+
+Required fields:
+
+- `StackName`: `str`
+
+Optional fields:
+
+- `TemplateBody`: `str`
+- `TemplateURL`: `str`
+- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `DisableRollback`: `bool`
+- `RollbackConfiguration`:
+  [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
+- `TimeoutInMinutes`: `int`
+- `NotificationARNs`: `List`\[`str`\]
+- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
+- `ResourceTypes`: `List`\[`str`\]
+- `RoleARN`: `str`
+- `OnFailure`: [OnFailureType](./literals.md#onfailuretype)
+- `StackPolicyBody`: `str`
+- `StackPolicyURL`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ClientRequestToken`: `str`
+- `EnableTerminationProtection`: `bool`
+
+## CreateStackInputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import CreateStackInputTypeDef
+```
+
+Required fields:
+
+- `StackName`: `str`
+
+Optional fields:
+
+- `TemplateBody`: `str`
+- `TemplateURL`: `str`
+- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `DisableRollback`: `bool`
+- `RollbackConfiguration`:
+  [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
+- `TimeoutInMinutes`: `int`
+- `NotificationARNs`: `List`\[`str`\]
+- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
+- `ResourceTypes`: `List`\[`str`\]
+- `RoleARN`: `str`
+- `OnFailure`: [OnFailureType](./literals.md#onfailuretype)
+- `StackPolicyBody`: `str`
+- `StackPolicyURL`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ClientRequestToken`: `str`
+- `EnableTerminationProtection`: `bool`
+
+## CreateStackInstancesInputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import CreateStackInstancesInputTypeDef
+```
+
+Required fields:
+
+- `StackSetName`: `str`
+- `Regions`: `List`\[`str`\]
+
+Optional fields:
+
+- `Accounts`: `List`\[`str`\]
+- `DeploymentTargets`:
+  [DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef)
+- `ParameterOverrides`:
+  `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `OperationPreferences`:
+  [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
+- `OperationId`: `str`
+- `CallAs`: [CallAsType](./literals.md#callastype)
+
+## CreateStackInstancesOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import CreateStackInstancesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -249,10 +505,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateStackOutputTypeDef
+## CreateStackOutputResponseTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import CreateStackOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import CreateStackOutputResponseTypeDef
 ```
 
 Required fields:
@@ -261,10 +517,36 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateStackSetOutputTypeDef
+## CreateStackSetInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import CreateStackSetOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import CreateStackSetInputTypeDef
+```
+
+Required fields:
+
+- `StackSetName`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+- `TemplateBody`: `str`
+- `TemplateURL`: `str`
+- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `AdministrationRoleARN`: `str`
+- `ExecutionRoleName`: `str`
+- `PermissionModel`: [PermissionModelsType](./literals.md#permissionmodelstype)
+- `AutoDeployment`:
+  [AutoDeploymentTypeDef](./type_defs.md#autodeploymenttypedef)
+- `CallAs`: [CallAsType](./literals.md#callastype)
+- `ClientRequestToken`: `str`
+
+## CreateStackSetOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import CreateStackSetOutputResponseTypeDef
 ```
 
 Required fields:
@@ -273,10 +555,86 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteStackInstancesOutputTypeDef
+## DeactivateTypeInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import DeleteStackInstancesOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import DeactivateTypeInputTypeDef
+```
+
+Optional fields:
+
+- `TypeName`: `str`
+- `Type`: [ThirdPartyTypeType](./literals.md#thirdpartytypetype)
+- `Arn`: `str`
+
+## DeleteChangeSetInputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import DeleteChangeSetInputTypeDef
+```
+
+Required fields:
+
+- `ChangeSetName`: `str`
+
+Optional fields:
+
+- `StackName`: `str`
+
+## DeleteStackInputStackTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import DeleteStackInputStackTypeDef
+```
+
+Optional fields:
+
+- `RetainResources`: `List`\[`str`\]
+- `RoleARN`: `str`
+- `ClientRequestToken`: `str`
+
+## DeleteStackInputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import DeleteStackInputTypeDef
+```
+
+Required fields:
+
+- `StackName`: `str`
+
+Optional fields:
+
+- `RetainResources`: `List`\[`str`\]
+- `RoleARN`: `str`
+- `ClientRequestToken`: `str`
+
+## DeleteStackInstancesInputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import DeleteStackInstancesInputTypeDef
+```
+
+Required fields:
+
+- `StackSetName`: `str`
+- `Regions`: `List`\[`str`\]
+- `RetainStacks`: `bool`
+
+Optional fields:
+
+- `Accounts`: `List`\[`str`\]
+- `DeploymentTargets`:
+  [DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef)
+- `OperationPreferences`:
+  [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
+- `OperationId`: `str`
+- `CallAs`: [CallAsType](./literals.md#callastype)
+
+## DeleteStackInstancesOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import DeleteStackInstancesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -284,6 +642,20 @@ Required fields:
 - `OperationId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteStackSetInputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import DeleteStackSetInputTypeDef
+```
+
+Required fields:
+
+- `StackSetName`: `str`
+
+Optional fields:
+
+- `CallAs`: [CallAsType](./literals.md#callastype)
 
 ## DeploymentTargetsTypeDef
 
@@ -297,10 +669,33 @@ Optional fields:
 - `AccountsUrl`: `str`
 - `OrganizationalUnitIds`: `List`\[`str`\]
 
-## DescribeAccountLimitsOutputTypeDef
+## DeregisterTypeInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import DescribeAccountLimitsOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import DeregisterTypeInputTypeDef
+```
+
+Optional fields:
+
+- `Arn`: `str`
+- `Type`: [RegistryTypeType](./literals.md#registrytypetype)
+- `TypeName`: `str`
+- `VersionId`: `str`
+
+## DescribeAccountLimitsInputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import DescribeAccountLimitsInputTypeDef
+```
+
+Optional fields:
+
+- `NextToken`: `str`
+
+## DescribeAccountLimitsOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import DescribeAccountLimitsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -311,10 +706,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeChangeSetOutputTypeDef
+## DescribeChangeSetInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import DescribeChangeSetOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import DescribeChangeSetInputTypeDef
+```
+
+Required fields:
+
+- `ChangeSetName`: `str`
+
+Optional fields:
+
+- `StackName`: `str`
+- `NextToken`: `str`
+
+## DescribeChangeSetOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import DescribeChangeSetOutputResponseTypeDef
 ```
 
 Required fields:
@@ -342,10 +752,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePublisherOutputTypeDef
+## DescribePublisherInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import DescribePublisherOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import DescribePublisherInputTypeDef
+```
+
+Optional fields:
+
+- `PublisherId`: `str`
+
+## DescribePublisherOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import DescribePublisherOutputResponseTypeDef
 ```
 
 Required fields:
@@ -358,10 +778,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeStackDriftDetectionStatusOutputTypeDef
+## DescribeStackDriftDetectionStatusInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import DescribeStackDriftDetectionStatusOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import DescribeStackDriftDetectionStatusInputTypeDef
+```
+
+Required fields:
+
+- `StackDriftDetectionId`: `str`
+
+## DescribeStackDriftDetectionStatusOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import DescribeStackDriftDetectionStatusOutputResponseTypeDef
 ```
 
 Required fields:
@@ -378,10 +808,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeStackEventsOutputTypeDef
+## DescribeStackEventsInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import DescribeStackEventsOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import DescribeStackEventsInputTypeDef
+```
+
+Optional fields:
+
+- `StackName`: `str`
+- `NextToken`: `str`
+
+## DescribeStackEventsOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import DescribeStackEventsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -392,10 +833,26 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeStackInstanceOutputTypeDef
+## DescribeStackInstanceInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import DescribeStackInstanceOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import DescribeStackInstanceInputTypeDef
+```
+
+Required fields:
+
+- `StackSetName`: `str`
+- `StackInstanceAccount`: `str`
+- `StackInstanceRegion`: `str`
+
+Optional fields:
+
+- `CallAs`: [CallAsType](./literals.md#callastype)
+
+## DescribeStackInstanceOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import DescribeStackInstanceOutputResponseTypeDef
 ```
 
 Required fields:
@@ -404,10 +861,27 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeStackResourceDriftsOutputTypeDef
+## DescribeStackResourceDriftsInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import DescribeStackResourceDriftsOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import DescribeStackResourceDriftsInputTypeDef
+```
+
+Required fields:
+
+- `StackName`: `str`
+
+Optional fields:
+
+- `StackResourceDriftStatusFilters`:
+  `List`\[[StackResourceDriftStatusType](./literals.md#stackresourcedriftstatustype)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeStackResourceDriftsOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import DescribeStackResourceDriftsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -418,10 +892,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeStackResourceOutputTypeDef
+## DescribeStackResourceInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import DescribeStackResourceOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import DescribeStackResourceInputTypeDef
+```
+
+Required fields:
+
+- `StackName`: `str`
+- `LogicalResourceId`: `str`
+
+## DescribeStackResourceOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import DescribeStackResourceOutputResponseTypeDef
 ```
 
 Required fields:
@@ -431,10 +916,22 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeStackResourcesOutputTypeDef
+## DescribeStackResourcesInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import DescribeStackResourcesOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import DescribeStackResourcesInputTypeDef
+```
+
+Optional fields:
+
+- `StackName`: `str`
+- `LogicalResourceId`: `str`
+- `PhysicalResourceId`: `str`
+
+## DescribeStackResourcesOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import DescribeStackResourcesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -444,10 +941,39 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeStackSetOperationOutputTypeDef
+## DescribeStackSetInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import DescribeStackSetOperationOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import DescribeStackSetInputTypeDef
+```
+
+Required fields:
+
+- `StackSetName`: `str`
+
+Optional fields:
+
+- `CallAs`: [CallAsType](./literals.md#callastype)
+
+## DescribeStackSetOperationInputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import DescribeStackSetOperationInputTypeDef
+```
+
+Required fields:
+
+- `StackSetName`: `str`
+- `OperationId`: `str`
+
+Optional fields:
+
+- `CallAs`: [CallAsType](./literals.md#callastype)
+
+## DescribeStackSetOperationOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import DescribeStackSetOperationOutputResponseTypeDef
 ```
 
 Required fields:
@@ -457,10 +983,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeStackSetOutputTypeDef
+## DescribeStackSetOutputResponseTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import DescribeStackSetOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import DescribeStackSetOutputResponseTypeDef
 ```
 
 Required fields:
@@ -469,10 +995,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeStacksOutputTypeDef
+## DescribeStacksInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import DescribeStacksOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import DescribeStacksInputTypeDef
+```
+
+Optional fields:
+
+- `StackName`: `str`
+- `NextToken`: `str`
+
+## DescribeStacksOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import DescribeStacksOutputResponseTypeDef
 ```
 
 Required fields:
@@ -482,10 +1019,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTypeOutputTypeDef
+## DescribeTypeInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import DescribeTypeOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import DescribeTypeInputTypeDef
+```
+
+Optional fields:
+
+- `Type`: [RegistryTypeType](./literals.md#registrytypetype)
+- `TypeName`: `str`
+- `Arn`: `str`
+- `VersionId`: `str`
+- `PublisherId`: `str`
+- `PublicVersionNumber`: `str`
+
+## DescribeTypeOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import DescribeTypeOutputResponseTypeDef
 ```
 
 Required fields:
@@ -523,10 +1075,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTypeRegistrationOutputTypeDef
+## DescribeTypeRegistrationInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import DescribeTypeRegistrationOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import DescribeTypeRegistrationInputTypeDef
+```
+
+Required fields:
+
+- `RegistrationToken`: `str`
+
+## DescribeTypeRegistrationOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import DescribeTypeRegistrationOutputResponseTypeDef
 ```
 
 Required fields:
@@ -539,10 +1101,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DetectStackDriftOutputTypeDef
+## DetectStackDriftInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import DetectStackDriftOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import DetectStackDriftInputTypeDef
+```
+
+Required fields:
+
+- `StackName`: `str`
+
+Optional fields:
+
+- `LogicalResourceIds`: `List`\[`str`\]
+
+## DetectStackDriftOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import DetectStackDriftOutputResponseTypeDef
 ```
 
 Required fields:
@@ -551,10 +1127,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DetectStackResourceDriftOutputTypeDef
+## DetectStackResourceDriftInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import DetectStackResourceDriftOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import DetectStackResourceDriftInputTypeDef
+```
+
+Required fields:
+
+- `StackName`: `str`
+- `LogicalResourceId`: `str`
+
+## DetectStackResourceDriftOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import DetectStackResourceDriftOutputResponseTypeDef
 ```
 
 Required fields:
@@ -564,10 +1151,27 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DetectStackSetDriftOutputTypeDef
+## DetectStackSetDriftInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import DetectStackSetDriftOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import DetectStackSetDriftInputTypeDef
+```
+
+Required fields:
+
+- `StackSetName`: `str`
+
+Optional fields:
+
+- `OperationPreferences`:
+  [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
+- `OperationId`: `str`
+- `CallAs`: [CallAsType](./literals.md#callastype)
+
+## DetectStackSetDriftOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import DetectStackSetDriftOutputResponseTypeDef
 ```
 
 Required fields:
@@ -576,10 +1180,22 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## EstimateTemplateCostOutputTypeDef
+## EstimateTemplateCostInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import EstimateTemplateCostOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import EstimateTemplateCostInputTypeDef
+```
+
+Optional fields:
+
+- `TemplateBody`: `str`
+- `TemplateURL`: `str`
+- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+
+## EstimateTemplateCostOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import EstimateTemplateCostOutputResponseTypeDef
 ```
 
 Required fields:
@@ -587,6 +1203,21 @@ Required fields:
 - `Url`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ExecuteChangeSetInputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import ExecuteChangeSetInputTypeDef
+```
+
+Required fields:
+
+- `ChangeSetName`: `str`
+
+Optional fields:
+
+- `StackName`: `str`
+- `ClientRequestToken`: `str`
 
 ## ExportTypeDef
 
@@ -600,10 +1231,20 @@ Optional fields:
 - `Name`: `str`
 - `Value`: `str`
 
-## GetStackPolicyOutputTypeDef
+## GetStackPolicyInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import GetStackPolicyOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import GetStackPolicyInputTypeDef
+```
+
+Required fields:
+
+- `StackName`: `str`
+
+## GetStackPolicyOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import GetStackPolicyOutputResponseTypeDef
 ```
 
 Required fields:
@@ -612,10 +1253,22 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTemplateOutputTypeDef
+## GetTemplateInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import GetTemplateOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import GetTemplateInputTypeDef
+```
+
+Optional fields:
+
+- `StackName`: `str`
+- `ChangeSetName`: `str`
+- `TemplateStage`: [TemplateStageType](./literals.md#templatestagetype)
+
+## GetTemplateOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import GetTemplateOutputResponseTypeDef
 ```
 
 Required fields:
@@ -626,10 +1279,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTemplateSummaryOutputTypeDef
+## GetTemplateSummaryInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import GetTemplateSummaryOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import GetTemplateSummaryInputTypeDef
+```
+
+Optional fields:
+
+- `TemplateBody`: `str`
+- `TemplateURL`: `str`
+- `StackName`: `str`
+- `StackSetName`: `str`
+- `CallAs`: [CallAsType](./literals.md#callastype)
+
+## GetTemplateSummaryOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import GetTemplateSummaryOutputResponseTypeDef
 ```
 
 Required fields:
@@ -648,10 +1315,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListChangeSetsOutputTypeDef
+## ListChangeSetsInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import ListChangeSetsOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import ListChangeSetsInputTypeDef
+```
+
+Required fields:
+
+- `StackName`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+
+## ListChangeSetsOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import ListChangeSetsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -662,10 +1343,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListExportsOutputTypeDef
+## ListExportsInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import ListExportsOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import ListExportsInputTypeDef
+```
+
+Optional fields:
+
+- `NextToken`: `str`
+
+## ListExportsOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import ListExportsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -675,10 +1366,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListImportsOutputTypeDef
+## ListImportsInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import ListImportsOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import ListImportsInputTypeDef
+```
+
+Required fields:
+
+- `ExportName`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+
+## ListImportsOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import ListImportsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -688,10 +1393,30 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListStackInstancesOutputTypeDef
+## ListStackInstancesInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import ListStackInstancesOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import ListStackInstancesInputTypeDef
+```
+
+Required fields:
+
+- `StackSetName`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Filters`:
+  `List`\[[StackInstanceFilterTypeDef](./type_defs.md#stackinstancefiltertypedef)\]
+- `StackInstanceAccount`: `str`
+- `StackInstanceRegion`: `str`
+- `CallAs`: [CallAsType](./literals.md#callastype)
+
+## ListStackInstancesOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import ListStackInstancesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -702,10 +1427,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListStackResourcesOutputTypeDef
+## ListStackResourcesInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import ListStackResourcesOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import ListStackResourcesInputTypeDef
+```
+
+Required fields:
+
+- `StackName`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+
+## ListStackResourcesOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import ListStackResourcesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -716,10 +1455,27 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListStackSetOperationResultsOutputTypeDef
+## ListStackSetOperationResultsInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import ListStackSetOperationResultsOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import ListStackSetOperationResultsInputTypeDef
+```
+
+Required fields:
+
+- `StackSetName`: `str`
+- `OperationId`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `CallAs`: [CallAsType](./literals.md#callastype)
+
+## ListStackSetOperationResultsOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import ListStackSetOperationResultsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -730,10 +1486,26 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListStackSetOperationsOutputTypeDef
+## ListStackSetOperationsInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import ListStackSetOperationsOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import ListStackSetOperationsInputTypeDef
+```
+
+Required fields:
+
+- `StackSetName`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `CallAs`: [CallAsType](./literals.md#callastype)
+
+## ListStackSetOperationsOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import ListStackSetOperationsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -744,10 +1516,23 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListStackSetsOutputTypeDef
+## ListStackSetsInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import ListStackSetsOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import ListStackSetsInputTypeDef
+```
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Status`: [StackSetStatusType](./literals.md#stacksetstatustype)
+- `CallAs`: [CallAsType](./literals.md#callastype)
+
+## ListStackSetsOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import ListStackSetsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -758,10 +1543,22 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListStacksOutputTypeDef
+## ListStacksInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import ListStacksOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import ListStacksInputTypeDef
+```
+
+Optional fields:
+
+- `NextToken`: `str`
+- `StackStatusFilter`:
+  `List`\[[StackStatusType](./literals.md#stackstatustype)\]
+
+## ListStacksOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import ListStacksOutputResponseTypeDef
 ```
 
 Required fields:
@@ -772,10 +1569,26 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTypeRegistrationsOutputTypeDef
+## ListTypeRegistrationsInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import ListTypeRegistrationsOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import ListTypeRegistrationsInputTypeDef
+```
+
+Optional fields:
+
+- `Type`: [RegistryTypeType](./literals.md#registrytypetype)
+- `TypeName`: `str`
+- `TypeArn`: `str`
+- `RegistrationStatusFilter`:
+  [RegistrationStatusType](./literals.md#registrationstatustype)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListTypeRegistrationsOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import ListTypeRegistrationsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -785,10 +1598,27 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTypeVersionsOutputTypeDef
+## ListTypeVersionsInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import ListTypeVersionsOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import ListTypeVersionsInputTypeDef
+```
+
+Optional fields:
+
+- `Type`: [RegistryTypeType](./literals.md#registrytypetype)
+- `TypeName`: `str`
+- `Arn`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DeprecatedStatus`:
+  [DeprecatedStatusType](./literals.md#deprecatedstatustype)
+- `PublisherId`: `str`
+
+## ListTypeVersionsOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import ListTypeVersionsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -799,10 +1629,28 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTypesOutputTypeDef
+## ListTypesInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import ListTypesOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import ListTypesInputTypeDef
+```
+
+Optional fields:
+
+- `Visibility`: [VisibilityType](./literals.md#visibilitytype)
+- `ProvisioningType`:
+  [ProvisioningTypeType](./literals.md#provisioningtypetype)
+- `DeprecatedStatus`:
+  [DeprecatedStatusType](./literals.md#deprecatedstatustype)
+- `Type`: [RegistryTypeType](./literals.md#registrytypetype)
+- `Filters`: [TypeFiltersTypeDef](./type_defs.md#typefilterstypedef)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListTypesOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import ListTypesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -841,14 +1689,12 @@ Optional fields:
 from mypy_boto3_cloudformation.type_defs import OutputTypeDef
 ```
 
-Required fields:
+Optional fields:
 
 - `OutputKey`: `str`
 - `OutputValue`: `str`
 - `Description`: `str`
 - `ExportName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -925,10 +1771,23 @@ Required fields:
 - `ActualValue`: `str`
 - `DifferenceType`: [DifferenceTypeType](./literals.md#differencetypetype)
 
-## PublishTypeOutputTypeDef
+## PublishTypeInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import PublishTypeOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import PublishTypeInputTypeDef
+```
+
+Optional fields:
+
+- `Type`: [ThirdPartyTypeType](./literals.md#thirdpartytypetype)
+- `Arn`: `str`
+- `TypeName`: `str`
+- `PublicVersionNumber`: `str`
+
+## PublishTypeOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import PublishTypeOutputResponseTypeDef
 ```
 
 Required fields:
@@ -937,10 +1796,41 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RegisterPublisherOutputTypeDef
+## RecordHandlerProgressInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import RegisterPublisherOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import RecordHandlerProgressInputTypeDef
+```
+
+Required fields:
+
+- `BearerToken`: `str`
+- `OperationStatus`: [OperationStatusType](./literals.md#operationstatustype)
+
+Optional fields:
+
+- `CurrentOperationStatus`:
+  [OperationStatusType](./literals.md#operationstatustype)
+- `StatusMessage`: `str`
+- `ErrorCode`: [HandlerErrorCodeType](./literals.md#handlererrorcodetype)
+- `ResourceModel`: `str`
+- `ClientRequestToken`: `str`
+
+## RegisterPublisherInputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import RegisterPublisherInputTypeDef
+```
+
+Optional fields:
+
+- `AcceptTermsAndConditions`: `bool`
+- `ConnectionArn`: `str`
+
+## RegisterPublisherOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import RegisterPublisherOutputResponseTypeDef
 ```
 
 Required fields:
@@ -949,10 +1839,28 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RegisterTypeOutputTypeDef
+## RegisterTypeInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import RegisterTypeOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import RegisterTypeInputTypeDef
+```
+
+Required fields:
+
+- `TypeName`: `str`
+- `SchemaHandlerPackage`: `str`
+
+Optional fields:
+
+- `Type`: [RegistryTypeType](./literals.md#registrytypetype)
+- `LoggingConfig`: [LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef)
+- `ExecutionRoleArn`: `str`
+- `ClientRequestToken`: `str`
+
+## RegisterTypeOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import RegisterTypeOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1082,10 +1990,84 @@ Required fields:
 - `Arn`: `str`
 - `Type`: `str`
 
-## SetTypeConfigurationOutputTypeDef
+## ServiceResourceEventRequestTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import SetTypeConfigurationOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import ServiceResourceEventRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
+## ServiceResourceStackRequestTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import ServiceResourceStackRequestTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+
+## ServiceResourceStackResourceRequestTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import ServiceResourceStackResourceRequestTypeDef
+```
+
+Required fields:
+
+- `stack_name`: `str`
+- `logical_id`: `str`
+
+## ServiceResourceStackResourceSummaryRequestTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import ServiceResourceStackResourceSummaryRequestTypeDef
+```
+
+Required fields:
+
+- `stack_name`: `str`
+- `logical_id`: `str`
+
+## SetStackPolicyInputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import SetStackPolicyInputTypeDef
+```
+
+Required fields:
+
+- `StackName`: `str`
+
+Optional fields:
+
+- `StackPolicyBody`: `str`
+- `StackPolicyURL`: `str`
+
+## SetTypeConfigurationInputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import SetTypeConfigurationInputTypeDef
+```
+
+Required fields:
+
+- `Configuration`: `str`
+
+Optional fields:
+
+- `TypeArn`: `str`
+- `ConfigurationAlias`: `str`
+- `TypeName`: `str`
+- `Type`: [ThirdPartyTypeType](./literals.md#thirdpartytypetype)
+
+## SetTypeConfigurationOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import SetTypeConfigurationOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1093,6 +2075,32 @@ Required fields:
 - `ConfigurationArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## SetTypeDefaultVersionInputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import SetTypeDefaultVersionInputTypeDef
+```
+
+Optional fields:
+
+- `Arn`: `str`
+- `Type`: [RegistryTypeType](./literals.md#registrytypetype)
+- `TypeName`: `str`
+- `VersionId`: `str`
+
+## SignalResourceInputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import SignalResourceInputTypeDef
+```
+
+Required fields:
+
+- `StackName`: `str`
+- `LogicalResourceId`: `str`
+- `UniqueId`: `str`
+- `Status`: [ResourceSignalStatusType](./literals.md#resourcesignalstatustype)
 
 ## StackDriftInformationSummaryTypeDef
 
@@ -1292,6 +2300,16 @@ Optional fields:
 - `PropertyDifferences`:
   `List`\[[PropertyDifferenceTypeDef](./type_defs.md#propertydifferencetypedef)\]
 - `ModuleInfo`: [ModuleInfoTypeDef](./type_defs.md#moduleinfotypedef)
+
+## StackResourceRequestTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import StackResourceRequestTypeDef
+```
+
+Required fields:
+
+- `logical_id`: `str`
 
 ## StackResourceSummaryTypeDef
 
@@ -1536,6 +2554,21 @@ Optional fields:
 - `DriftInformation`:
   [StackDriftInformationTypeDef](./type_defs.md#stackdriftinformationtypedef)
 
+## StopStackSetOperationInputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import StopStackSetOperationInputTypeDef
+```
+
+Required fields:
+
+- `StackSetName`: `str`
+- `OperationId`: `str`
+
+Optional fields:
+
+- `CallAs`: [CallAsType](./literals.md#callastype)
+
 ## TagTypeDef
 
 ```python
@@ -1560,10 +2593,24 @@ Optional fields:
 - `NoEcho`: `bool`
 - `Description`: `str`
 
-## TestTypeOutputTypeDef
+## TestTypeInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import TestTypeOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import TestTypeInputTypeDef
+```
+
+Optional fields:
+
+- `Arn`: `str`
+- `Type`: [ThirdPartyTypeType](./literals.md#thirdpartytypetype)
+- `TypeName`: `str`
+- `VersionId`: `str`
+- `LogDeliveryBucket`: `str`
+
+## TestTypeOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import TestTypeOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1654,10 +2701,87 @@ Optional fields:
 - `Description`: `str`
 - `PublicVersionNumber`: `str`
 
-## UpdateStackInstancesOutputTypeDef
+## UpdateStackInputStackTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import UpdateStackInstancesOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import UpdateStackInputStackTypeDef
+```
+
+Optional fields:
+
+- `TemplateBody`: `str`
+- `TemplateURL`: `str`
+- `UsePreviousTemplate`: `bool`
+- `StackPolicyDuringUpdateBody`: `str`
+- `StackPolicyDuringUpdateURL`: `str`
+- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
+- `ResourceTypes`: `List`\[`str`\]
+- `RoleARN`: `str`
+- `RollbackConfiguration`:
+  [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
+- `StackPolicyBody`: `str`
+- `StackPolicyURL`: `str`
+- `NotificationARNs`: `List`\[`str`\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ClientRequestToken`: `str`
+
+## UpdateStackInputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import UpdateStackInputTypeDef
+```
+
+Required fields:
+
+- `StackName`: `str`
+
+Optional fields:
+
+- `TemplateBody`: `str`
+- `TemplateURL`: `str`
+- `UsePreviousTemplate`: `bool`
+- `StackPolicyDuringUpdateBody`: `str`
+- `StackPolicyDuringUpdateURL`: `str`
+- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
+- `ResourceTypes`: `List`\[`str`\]
+- `RoleARN`: `str`
+- `RollbackConfiguration`:
+  [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
+- `StackPolicyBody`: `str`
+- `StackPolicyURL`: `str`
+- `NotificationARNs`: `List`\[`str`\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ClientRequestToken`: `str`
+
+## UpdateStackInstancesInputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import UpdateStackInstancesInputTypeDef
+```
+
+Required fields:
+
+- `StackSetName`: `str`
+- `Regions`: `List`\[`str`\]
+
+Optional fields:
+
+- `Accounts`: `List`\[`str`\]
+- `DeploymentTargets`:
+  [DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef)
+- `ParameterOverrides`:
+  `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `OperationPreferences`:
+  [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
+- `OperationId`: `str`
+- `CallAs`: [CallAsType](./literals.md#callastype)
+
+## UpdateStackInstancesOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import UpdateStackInstancesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1666,10 +2790,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateStackOutputTypeDef
+## UpdateStackOutputResponseTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import UpdateStackOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import UpdateStackOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1678,10 +2802,43 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateStackSetOutputTypeDef
+## UpdateStackSetInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import UpdateStackSetOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import UpdateStackSetInputTypeDef
+```
+
+Required fields:
+
+- `StackSetName`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+- `TemplateBody`: `str`
+- `TemplateURL`: `str`
+- `UsePreviousTemplate`: `bool`
+- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `OperationPreferences`:
+  [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
+- `AdministrationRoleARN`: `str`
+- `ExecutionRoleName`: `str`
+- `DeploymentTargets`:
+  [DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef)
+- `PermissionModel`: [PermissionModelsType](./literals.md#permissionmodelstype)
+- `AutoDeployment`:
+  [AutoDeploymentTypeDef](./type_defs.md#autodeploymenttypedef)
+- `OperationId`: `str`
+- `Accounts`: `List`\[`str`\]
+- `Regions`: `List`\[`str`\]
+- `CallAs`: [CallAsType](./literals.md#callastype)
+
+## UpdateStackSetOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import UpdateStackSetOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1690,10 +2847,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateTerminationProtectionOutputTypeDef
+## UpdateTerminationProtectionInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import UpdateTerminationProtectionOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import UpdateTerminationProtectionInputTypeDef
+```
+
+Required fields:
+
+- `EnableTerminationProtection`: `bool`
+- `StackName`: `str`
+
+## UpdateTerminationProtectionOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import UpdateTerminationProtectionOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1702,10 +2870,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ValidateTemplateOutputTypeDef
+## ValidateTemplateInputTypeDef
 
 ```python
-from mypy_boto3_cloudformation.type_defs import ValidateTemplateOutputTypeDef
+from mypy_boto3_cloudformation.type_defs import ValidateTemplateInputTypeDef
+```
+
+Optional fields:
+
+- `TemplateBody`: `str`
+- `TemplateURL`: `str`
+
+## ValidateTemplateOutputResponseTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import ValidateTemplateOutputResponseTypeDef
 ```
 
 Required fields:

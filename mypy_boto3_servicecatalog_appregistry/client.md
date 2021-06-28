@@ -76,11 +76,17 @@ Exceptions:
 
 ### associate_attribute_group
 
+Associates an attribute group with an application to augment the application's
+metadata with the group's attributes.
+
 Type annotations for
 `boto3.client("servicecatalog-appregistry").associate_attribute_group` method.
 
 Boto3 documentation:
 [AppRegistry.Client.associate_attribute_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.associate_attribute_group)
+
+Arguments mapping described in
+[AssociateAttributeGroupRequestTypeDef](./type_defs.md#associateattributegrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -88,15 +94,20 @@ Keyword-only arguments:
 - `attributeGroup`: `str` *(required)*
 
 Returns
-[AssociateAttributeGroupResponseTypeDef](./type_defs.md#associateattributegroupresponsetypedef).
+[AssociateAttributeGroupResponseResponseTypeDef](./type_defs.md#associateattributegroupresponseresponsetypedef).
 
 ### associate_resource
+
+Associates a resource with an application.
 
 Type annotations for
 `boto3.client("servicecatalog-appregistry").associate_resource` method.
 
 Boto3 documentation:
 [AppRegistry.Client.associate_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.associate_resource)
+
+Arguments mapping described in
+[AssociateResourceRequestTypeDef](./type_defs.md#associateresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -106,9 +117,11 @@ Keyword-only arguments:
 - `resource`: `str` *(required)*
 
 Returns
-[AssociateResourceResponseTypeDef](./type_defs.md#associateresourceresponsetypedef).
+[AssociateResourceResponseResponseTypeDef](./type_defs.md#associateresourceresponseresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("servicecatalog-appregistry").can_paginate`
 method.
@@ -124,11 +137,17 @@ Returns `bool`.
 
 ### create_application
 
+Creates a new application that is the top-level node in a hierarchy of related
+cloud resource abstractions.
+
 Type annotations for
 `boto3.client("servicecatalog-appregistry").create_application` method.
 
 Boto3 documentation:
 [AppRegistry.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.create_application)
+
+Arguments mapping described in
+[CreateApplicationRequestTypeDef](./type_defs.md#createapplicationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -138,15 +157,20 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
+[CreateApplicationResponseResponseTypeDef](./type_defs.md#createapplicationresponseresponsetypedef).
 
 ### create_attribute_group
+
+Creates a new attribute group as a container for user-defined attributes.
 
 Type annotations for
 `boto3.client("servicecatalog-appregistry").create_attribute_group` method.
 
 Boto3 documentation:
 [AppRegistry.Client.create_attribute_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.create_attribute_group)
+
+Arguments mapping described in
+[CreateAttributeGroupRequestTypeDef](./type_defs.md#createattributegrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -157,9 +181,11 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateAttributeGroupResponseTypeDef](./type_defs.md#createattributegroupresponsetypedef).
+[CreateAttributeGroupResponseResponseTypeDef](./type_defs.md#createattributegroupresponseresponsetypedef).
 
 ### delete_application
+
+Deletes an application that is specified either by its application ID or name.
 
 Type annotations for
 `boto3.client("servicecatalog-appregistry").delete_application` method.
@@ -167,14 +193,19 @@ Type annotations for
 Boto3 documentation:
 [AppRegistry.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.delete_application)
 
+Arguments mapping described in
+[DeleteApplicationRequestTypeDef](./type_defs.md#deleteapplicationrequesttypedef).
+
 Keyword-only arguments:
 
 - `application`: `str` *(required)*
 
 Returns
-[DeleteApplicationResponseTypeDef](./type_defs.md#deleteapplicationresponsetypedef).
+[DeleteApplicationResponseResponseTypeDef](./type_defs.md#deleteapplicationresponseresponsetypedef).
 
 ### delete_attribute_group
+
+Deletes an attribute group, specified either by its attribute group ID or name.
 
 Type annotations for
 `boto3.client("servicecatalog-appregistry").delete_attribute_group` method.
@@ -182,14 +213,20 @@ Type annotations for
 Boto3 documentation:
 [AppRegistry.Client.delete_attribute_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.delete_attribute_group)
 
+Arguments mapping described in
+[DeleteAttributeGroupRequestTypeDef](./type_defs.md#deleteattributegrouprequesttypedef).
+
 Keyword-only arguments:
 
 - `attributeGroup`: `str` *(required)*
 
 Returns
-[DeleteAttributeGroupResponseTypeDef](./type_defs.md#deleteattributegroupresponsetypedef).
+[DeleteAttributeGroupResponseResponseTypeDef](./type_defs.md#deleteattributegroupresponseresponsetypedef).
 
 ### disassociate_attribute_group
+
+Disassociates an attribute group from an application to remove the extra
+attributes contained in the attribute group from the application's metadata.
 
 Type annotations for
 `boto3.client("servicecatalog-appregistry").disassociate_attribute_group`
@@ -198,21 +235,29 @@ method.
 Boto3 documentation:
 [AppRegistry.Client.disassociate_attribute_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.disassociate_attribute_group)
 
+Arguments mapping described in
+[DisassociateAttributeGroupRequestTypeDef](./type_defs.md#disassociateattributegrouprequesttypedef).
+
 Keyword-only arguments:
 
 - `application`: `str` *(required)*
 - `attributeGroup`: `str` *(required)*
 
 Returns
-[DisassociateAttributeGroupResponseTypeDef](./type_defs.md#disassociateattributegroupresponsetypedef).
+[DisassociateAttributeGroupResponseResponseTypeDef](./type_defs.md#disassociateattributegroupresponseresponsetypedef).
 
 ### disassociate_resource
+
+Disassociates a resource from application.
 
 Type annotations for
 `boto3.client("servicecatalog-appregistry").disassociate_resource` method.
 
 Boto3 documentation:
 [AppRegistry.Client.disassociate_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.disassociate_resource)
+
+Arguments mapping described in
+[DisassociateResourceRequestTypeDef](./type_defs.md#disassociateresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -222,9 +267,11 @@ Keyword-only arguments:
 - `resource`: `str` *(required)*
 
 Returns
-[DisassociateResourceResponseTypeDef](./type_defs.md#disassociateresourceresponsetypedef).
+[DisassociateResourceResponseResponseTypeDef](./type_defs.md#disassociateresourceresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for
 `boto3.client("servicecatalog-appregistry").generate_presigned_url` method.
@@ -243,20 +290,27 @@ Returns `str`.
 
 ### get_application
 
+Retrieves metadata information about one of your applications.
+
 Type annotations for
 `boto3.client("servicecatalog-appregistry").get_application` method.
 
 Boto3 documentation:
 [AppRegistry.Client.get_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.get_application)
 
+Arguments mapping described in
+[GetApplicationRequestTypeDef](./type_defs.md#getapplicationrequesttypedef).
+
 Keyword-only arguments:
 
 - `application`: `str` *(required)*
 
 Returns
-[GetApplicationResponseTypeDef](./type_defs.md#getapplicationresponsetypedef).
+[GetApplicationResponseResponseTypeDef](./type_defs.md#getapplicationresponseresponsetypedef).
 
 ### get_attribute_group
+
+Retrieves an attribute group, either by its name or its ID.
 
 Type annotations for
 `boto3.client("servicecatalog-appregistry").get_attribute_group` method.
@@ -264,14 +318,19 @@ Type annotations for
 Boto3 documentation:
 [AppRegistry.Client.get_attribute_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.get_attribute_group)
 
+Arguments mapping described in
+[GetAttributeGroupRequestTypeDef](./type_defs.md#getattributegrouprequesttypedef).
+
 Keyword-only arguments:
 
 - `attributeGroup`: `str` *(required)*
 
 Returns
-[GetAttributeGroupResponseTypeDef](./type_defs.md#getattributegroupresponsetypedef).
+[GetAttributeGroupResponseResponseTypeDef](./type_defs.md#getattributegroupresponseresponsetypedef).
 
 ### list_applications
+
+Retrieves a list of all of your applications.
 
 Type annotations for
 `boto3.client("servicecatalog-appregistry").list_applications` method.
@@ -279,15 +338,20 @@ Type annotations for
 Boto3 documentation:
 [AppRegistry.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.list_applications)
 
+Arguments mapping described in
+[ListApplicationsRequestTypeDef](./type_defs.md#listapplicationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef).
+[ListApplicationsResponseResponseTypeDef](./type_defs.md#listapplicationsresponseresponsetypedef).
 
 ### list_associated_attribute_groups
+
+Lists all attribute groups that are associated with specified application.
 
 Type annotations for
 `boto3.client("servicecatalog-appregistry").list_associated_attribute_groups`
@@ -296,6 +360,9 @@ method.
 Boto3 documentation:
 [AppRegistry.Client.list_associated_attribute_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.list_associated_attribute_groups)
 
+Arguments mapping described in
+[ListAssociatedAttributeGroupsRequestTypeDef](./type_defs.md#listassociatedattributegroupsrequesttypedef).
+
 Keyword-only arguments:
 
 - `application`: `str` *(required)*
@@ -303,9 +370,11 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAssociatedAttributeGroupsResponseTypeDef](./type_defs.md#listassociatedattributegroupsresponsetypedef).
+[ListAssociatedAttributeGroupsResponseResponseTypeDef](./type_defs.md#listassociatedattributegroupsresponseresponsetypedef).
 
 ### list_associated_resources
+
+Lists all resources that are associated with specified application.
 
 Type annotations for
 `boto3.client("servicecatalog-appregistry").list_associated_resources` method.
@@ -313,6 +382,9 @@ Type annotations for
 Boto3 documentation:
 [AppRegistry.Client.list_associated_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.list_associated_resources)
 
+Arguments mapping described in
+[ListAssociatedResourcesRequestTypeDef](./type_defs.md#listassociatedresourcesrequesttypedef).
+
 Keyword-only arguments:
 
 - `application`: `str` *(required)*
@@ -320,9 +392,11 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAssociatedResourcesResponseTypeDef](./type_defs.md#listassociatedresourcesresponsetypedef).
+[ListAssociatedResourcesResponseResponseTypeDef](./type_defs.md#listassociatedresourcesresponseresponsetypedef).
 
 ### list_attribute_groups
+
+Lists all attribute groups which you have access to.
 
 Type annotations for
 `boto3.client("servicecatalog-appregistry").list_attribute_groups` method.
@@ -330,15 +404,20 @@ Type annotations for
 Boto3 documentation:
 [AppRegistry.Client.list_attribute_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.list_attribute_groups)
 
+Arguments mapping described in
+[ListAttributeGroupsRequestTypeDef](./type_defs.md#listattributegroupsrequesttypedef).
+
 Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[ListAttributeGroupsResponseTypeDef](./type_defs.md#listattributegroupsresponsetypedef).
+[ListAttributeGroupsResponseResponseTypeDef](./type_defs.md#listattributegroupsresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Lists all of the tags on the resource.
 
 Type annotations for
 `boto3.client("servicecatalog-appregistry").list_tags_for_resource` method.
@@ -346,20 +425,28 @@ Type annotations for
 Boto3 documentation:
 [AppRegistry.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### sync_resource
+
+Syncs the resource with what is currently recorded in App registry.
 
 Type annotations for `boto3.client("servicecatalog-appregistry").sync_resource`
 method.
 
 Boto3 documentation:
 [AppRegistry.Client.sync_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.sync_resource)
+
+Arguments mapping described in
+[SyncResourceRequestTypeDef](./type_defs.md#syncresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -368,15 +455,20 @@ Keyword-only arguments:
 - `resource`: `str` *(required)*
 
 Returns
-[SyncResourceResponseTypeDef](./type_defs.md#syncresourceresponsetypedef).
+[SyncResourceResponseResponseTypeDef](./type_defs.md#syncresourceresponseresponsetypedef).
 
 ### tag_resource
+
+Assigns one or more tags (key-value pairs) to the specified resource.
 
 Type annotations for `boto3.client("servicecatalog-appregistry").tag_resource`
 method.
 
 Boto3 documentation:
 [AppRegistry.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -387,11 +479,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Removes tags from a resource.
+
 Type annotations for
 `boto3.client("servicecatalog-appregistry").untag_resource` method.
 
 Boto3 documentation:
 [AppRegistry.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -402,11 +499,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_application
 
+Updates an existing application with new attributes.
+
 Type annotations for
 `boto3.client("servicecatalog-appregistry").update_application` method.
 
 Boto3 documentation:
 [AppRegistry.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.update_application)
+
+Arguments mapping described in
+[UpdateApplicationRequestTypeDef](./type_defs.md#updateapplicationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -415,15 +517,20 @@ Keyword-only arguments:
 - `description`: `str`
 
 Returns
-[UpdateApplicationResponseTypeDef](./type_defs.md#updateapplicationresponsetypedef).
+[UpdateApplicationResponseResponseTypeDef](./type_defs.md#updateapplicationresponseresponsetypedef).
 
 ### update_attribute_group
+
+Updates an existing attribute group with new details.
 
 Type annotations for
 `boto3.client("servicecatalog-appregistry").update_attribute_group` method.
 
 Boto3 documentation:
 [AppRegistry.Client.update_attribute_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.update_attribute_group)
+
+Arguments mapping described in
+[UpdateAttributeGroupRequestTypeDef](./type_defs.md#updateattributegrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -433,7 +540,7 @@ Keyword-only arguments:
 - `attributes`: `str`
 
 Returns
-[UpdateAttributeGroupResponseTypeDef](./type_defs.md#updateattributegroupresponsetypedef).
+[UpdateAttributeGroupResponseResponseTypeDef](./type_defs.md#updateattributegroupresponseresponsetypedef).
 
 ### get_paginator
 

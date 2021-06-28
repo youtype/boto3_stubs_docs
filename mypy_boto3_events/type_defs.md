@@ -8,13 +8,15 @@ type annotations stubs module
 [mypy_boto3_events](https://pypi.org/project/mypy-boto3-events/).
 
 - [Typed dictionaries for boto3 EventBridge module](#typed-dictionaries-for-boto3-eventbridge-module)
+  - [ActivateEventSourceRequestTypeDef](#activateeventsourcerequesttypedef)
   - [ApiDestinationTypeDef](#apidestinationtypedef)
   - [ArchiveTypeDef](#archivetypedef)
   - [AwsVpcConfigurationTypeDef](#awsvpcconfigurationtypedef)
   - [BatchArrayPropertiesTypeDef](#batcharraypropertiestypedef)
   - [BatchParametersTypeDef](#batchparameterstypedef)
   - [BatchRetryStrategyTypeDef](#batchretrystrategytypedef)
-  - [CancelReplayResponseTypeDef](#cancelreplayresponsetypedef)
+  - [CancelReplayRequestTypeDef](#cancelreplayrequesttypedef)
+  - [CancelReplayResponseResponseTypeDef](#cancelreplayresponseresponsetypedef)
   - [CapacityProviderStrategyItemTypeDef](#capacityproviderstrategyitemtypedef)
   - [ConditionTypeDef](#conditiontypedef)
   - [ConnectionApiKeyAuthResponseParametersTypeDef](#connectionapikeyauthresponseparameterstypedef)
@@ -27,45 +29,80 @@ type annotations stubs module
   - [ConnectionOAuthResponseParametersTypeDef](#connectionoauthresponseparameterstypedef)
   - [ConnectionQueryStringParameterTypeDef](#connectionquerystringparametertypedef)
   - [ConnectionTypeDef](#connectiontypedef)
-  - [CreateApiDestinationResponseTypeDef](#createapidestinationresponsetypedef)
-  - [CreateArchiveResponseTypeDef](#createarchiveresponsetypedef)
+  - [CreateApiDestinationRequestTypeDef](#createapidestinationrequesttypedef)
+  - [CreateApiDestinationResponseResponseTypeDef](#createapidestinationresponseresponsetypedef)
+  - [CreateArchiveRequestTypeDef](#createarchiverequesttypedef)
+  - [CreateArchiveResponseResponseTypeDef](#createarchiveresponseresponsetypedef)
   - [CreateConnectionApiKeyAuthRequestParametersTypeDef](#createconnectionapikeyauthrequestparameterstypedef)
   - [CreateConnectionAuthRequestParametersTypeDef](#createconnectionauthrequestparameterstypedef)
   - [CreateConnectionBasicAuthRequestParametersTypeDef](#createconnectionbasicauthrequestparameterstypedef)
   - [CreateConnectionOAuthClientRequestParametersTypeDef](#createconnectionoauthclientrequestparameterstypedef)
   - [CreateConnectionOAuthRequestParametersTypeDef](#createconnectionoauthrequestparameterstypedef)
-  - [CreateConnectionResponseTypeDef](#createconnectionresponsetypedef)
-  - [CreateEventBusResponseTypeDef](#createeventbusresponsetypedef)
-  - [CreatePartnerEventSourceResponseTypeDef](#createpartnereventsourceresponsetypedef)
+  - [CreateConnectionRequestTypeDef](#createconnectionrequesttypedef)
+  - [CreateConnectionResponseResponseTypeDef](#createconnectionresponseresponsetypedef)
+  - [CreateEventBusRequestTypeDef](#createeventbusrequesttypedef)
+  - [CreateEventBusResponseResponseTypeDef](#createeventbusresponseresponsetypedef)
+  - [CreatePartnerEventSourceRequestTypeDef](#createpartnereventsourcerequesttypedef)
+  - [CreatePartnerEventSourceResponseResponseTypeDef](#createpartnereventsourceresponseresponsetypedef)
+  - [DeactivateEventSourceRequestTypeDef](#deactivateeventsourcerequesttypedef)
   - [DeadLetterConfigTypeDef](#deadletterconfigtypedef)
-  - [DeauthorizeConnectionResponseTypeDef](#deauthorizeconnectionresponsetypedef)
-  - [DeleteConnectionResponseTypeDef](#deleteconnectionresponsetypedef)
-  - [DescribeApiDestinationResponseTypeDef](#describeapidestinationresponsetypedef)
-  - [DescribeArchiveResponseTypeDef](#describearchiveresponsetypedef)
-  - [DescribeConnectionResponseTypeDef](#describeconnectionresponsetypedef)
-  - [DescribeEventBusResponseTypeDef](#describeeventbusresponsetypedef)
-  - [DescribeEventSourceResponseTypeDef](#describeeventsourceresponsetypedef)
-  - [DescribePartnerEventSourceResponseTypeDef](#describepartnereventsourceresponsetypedef)
-  - [DescribeReplayResponseTypeDef](#describereplayresponsetypedef)
-  - [DescribeRuleResponseTypeDef](#describeruleresponsetypedef)
+  - [DeauthorizeConnectionRequestTypeDef](#deauthorizeconnectionrequesttypedef)
+  - [DeauthorizeConnectionResponseResponseTypeDef](#deauthorizeconnectionresponseresponsetypedef)
+  - [DeleteApiDestinationRequestTypeDef](#deleteapidestinationrequesttypedef)
+  - [DeleteArchiveRequestTypeDef](#deletearchiverequesttypedef)
+  - [DeleteConnectionRequestTypeDef](#deleteconnectionrequesttypedef)
+  - [DeleteConnectionResponseResponseTypeDef](#deleteconnectionresponseresponsetypedef)
+  - [DeleteEventBusRequestTypeDef](#deleteeventbusrequesttypedef)
+  - [DeletePartnerEventSourceRequestTypeDef](#deletepartnereventsourcerequesttypedef)
+  - [DeleteRuleRequestTypeDef](#deleterulerequesttypedef)
+  - [DescribeApiDestinationRequestTypeDef](#describeapidestinationrequesttypedef)
+  - [DescribeApiDestinationResponseResponseTypeDef](#describeapidestinationresponseresponsetypedef)
+  - [DescribeArchiveRequestTypeDef](#describearchiverequesttypedef)
+  - [DescribeArchiveResponseResponseTypeDef](#describearchiveresponseresponsetypedef)
+  - [DescribeConnectionRequestTypeDef](#describeconnectionrequesttypedef)
+  - [DescribeConnectionResponseResponseTypeDef](#describeconnectionresponseresponsetypedef)
+  - [DescribeEventBusRequestTypeDef](#describeeventbusrequesttypedef)
+  - [DescribeEventBusResponseResponseTypeDef](#describeeventbusresponseresponsetypedef)
+  - [DescribeEventSourceRequestTypeDef](#describeeventsourcerequesttypedef)
+  - [DescribeEventSourceResponseResponseTypeDef](#describeeventsourceresponseresponsetypedef)
+  - [DescribePartnerEventSourceRequestTypeDef](#describepartnereventsourcerequesttypedef)
+  - [DescribePartnerEventSourceResponseResponseTypeDef](#describepartnereventsourceresponseresponsetypedef)
+  - [DescribeReplayRequestTypeDef](#describereplayrequesttypedef)
+  - [DescribeReplayResponseResponseTypeDef](#describereplayresponseresponsetypedef)
+  - [DescribeRuleRequestTypeDef](#describerulerequesttypedef)
+  - [DescribeRuleResponseResponseTypeDef](#describeruleresponseresponsetypedef)
+  - [DisableRuleRequestTypeDef](#disablerulerequesttypedef)
   - [EcsParametersTypeDef](#ecsparameterstypedef)
+  - [EnableRuleRequestTypeDef](#enablerulerequesttypedef)
   - [EventBusTypeDef](#eventbustypedef)
   - [EventSourceTypeDef](#eventsourcetypedef)
   - [HttpParametersTypeDef](#httpparameterstypedef)
   - [InputTransformerTypeDef](#inputtransformertypedef)
   - [KinesisParametersTypeDef](#kinesisparameterstypedef)
-  - [ListApiDestinationsResponseTypeDef](#listapidestinationsresponsetypedef)
-  - [ListArchivesResponseTypeDef](#listarchivesresponsetypedef)
-  - [ListConnectionsResponseTypeDef](#listconnectionsresponsetypedef)
-  - [ListEventBusesResponseTypeDef](#listeventbusesresponsetypedef)
-  - [ListEventSourcesResponseTypeDef](#listeventsourcesresponsetypedef)
-  - [ListPartnerEventSourceAccountsResponseTypeDef](#listpartnereventsourceaccountsresponsetypedef)
-  - [ListPartnerEventSourcesResponseTypeDef](#listpartnereventsourcesresponsetypedef)
-  - [ListReplaysResponseTypeDef](#listreplaysresponsetypedef)
-  - [ListRuleNamesByTargetResponseTypeDef](#listrulenamesbytargetresponsetypedef)
-  - [ListRulesResponseTypeDef](#listrulesresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListTargetsByRuleResponseTypeDef](#listtargetsbyruleresponsetypedef)
+  - [ListApiDestinationsRequestTypeDef](#listapidestinationsrequesttypedef)
+  - [ListApiDestinationsResponseResponseTypeDef](#listapidestinationsresponseresponsetypedef)
+  - [ListArchivesRequestTypeDef](#listarchivesrequesttypedef)
+  - [ListArchivesResponseResponseTypeDef](#listarchivesresponseresponsetypedef)
+  - [ListConnectionsRequestTypeDef](#listconnectionsrequesttypedef)
+  - [ListConnectionsResponseResponseTypeDef](#listconnectionsresponseresponsetypedef)
+  - [ListEventBusesRequestTypeDef](#listeventbusesrequesttypedef)
+  - [ListEventBusesResponseResponseTypeDef](#listeventbusesresponseresponsetypedef)
+  - [ListEventSourcesRequestTypeDef](#listeventsourcesrequesttypedef)
+  - [ListEventSourcesResponseResponseTypeDef](#listeventsourcesresponseresponsetypedef)
+  - [ListPartnerEventSourceAccountsRequestTypeDef](#listpartnereventsourceaccountsrequesttypedef)
+  - [ListPartnerEventSourceAccountsResponseResponseTypeDef](#listpartnereventsourceaccountsresponseresponsetypedef)
+  - [ListPartnerEventSourcesRequestTypeDef](#listpartnereventsourcesrequesttypedef)
+  - [ListPartnerEventSourcesResponseResponseTypeDef](#listpartnereventsourcesresponseresponsetypedef)
+  - [ListReplaysRequestTypeDef](#listreplaysrequesttypedef)
+  - [ListReplaysResponseResponseTypeDef](#listreplaysresponseresponsetypedef)
+  - [ListRuleNamesByTargetRequestTypeDef](#listrulenamesbytargetrequesttypedef)
+  - [ListRuleNamesByTargetResponseResponseTypeDef](#listrulenamesbytargetresponseresponsetypedef)
+  - [ListRulesRequestTypeDef](#listrulesrequesttypedef)
+  - [ListRulesResponseResponseTypeDef](#listrulesresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListTargetsByRuleRequestTypeDef](#listtargetsbyrulerequesttypedef)
+  - [ListTargetsByRuleResponseResponseTypeDef](#listtargetsbyruleresponseresponsetypedef)
   - [NetworkConfigurationTypeDef](#networkconfigurationtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PartnerEventSourceAccountTypeDef](#partnereventsourceaccounttypedef)
@@ -73,19 +110,27 @@ type annotations stubs module
   - [PlacementConstraintTypeDef](#placementconstrainttypedef)
   - [PlacementStrategyTypeDef](#placementstrategytypedef)
   - [PutEventsRequestEntryTypeDef](#puteventsrequestentrytypedef)
-  - [PutEventsResponseTypeDef](#puteventsresponsetypedef)
+  - [PutEventsRequestTypeDef](#puteventsrequesttypedef)
+  - [PutEventsResponseResponseTypeDef](#puteventsresponseresponsetypedef)
   - [PutEventsResultEntryTypeDef](#puteventsresultentrytypedef)
   - [PutPartnerEventsRequestEntryTypeDef](#putpartnereventsrequestentrytypedef)
-  - [PutPartnerEventsResponseTypeDef](#putpartnereventsresponsetypedef)
+  - [PutPartnerEventsRequestTypeDef](#putpartnereventsrequesttypedef)
+  - [PutPartnerEventsResponseResponseTypeDef](#putpartnereventsresponseresponsetypedef)
   - [PutPartnerEventsResultEntryTypeDef](#putpartnereventsresultentrytypedef)
-  - [PutRuleResponseTypeDef](#putruleresponsetypedef)
-  - [PutTargetsResponseTypeDef](#puttargetsresponsetypedef)
+  - [PutPermissionRequestTypeDef](#putpermissionrequesttypedef)
+  - [PutRuleRequestTypeDef](#putrulerequesttypedef)
+  - [PutRuleResponseResponseTypeDef](#putruleresponseresponsetypedef)
+  - [PutTargetsRequestTypeDef](#puttargetsrequesttypedef)
+  - [PutTargetsResponseResponseTypeDef](#puttargetsresponseresponsetypedef)
   - [PutTargetsResultEntryTypeDef](#puttargetsresultentrytypedef)
   - [RedshiftDataParametersTypeDef](#redshiftdataparameterstypedef)
-  - [RemoveTargetsResponseTypeDef](#removetargetsresponsetypedef)
+  - [RemovePermissionRequestTypeDef](#removepermissionrequesttypedef)
+  - [RemoveTargetsRequestTypeDef](#removetargetsrequesttypedef)
+  - [RemoveTargetsResponseResponseTypeDef](#removetargetsresponseresponsetypedef)
   - [RemoveTargetsResultEntryTypeDef](#removetargetsresultentrytypedef)
   - [ReplayDestinationTypeDef](#replaydestinationtypedef)
   - [ReplayTypeDef](#replaytypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RetryPolicyTypeDef](#retrypolicytypedef)
   - [RuleTypeDef](#ruletypedef)
   - [RunCommandParametersTypeDef](#runcommandparameterstypedef)
@@ -93,18 +138,35 @@ type annotations stubs module
   - [SageMakerPipelineParameterTypeDef](#sagemakerpipelineparametertypedef)
   - [SageMakerPipelineParametersTypeDef](#sagemakerpipelineparameterstypedef)
   - [SqsParametersTypeDef](#sqsparameterstypedef)
-  - [StartReplayResponseTypeDef](#startreplayresponsetypedef)
+  - [StartReplayRequestTypeDef](#startreplayrequesttypedef)
+  - [StartReplayResponseResponseTypeDef](#startreplayresponseresponsetypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TargetTypeDef](#targettypedef)
-  - [TestEventPatternResponseTypeDef](#testeventpatternresponsetypedef)
-  - [UpdateApiDestinationResponseTypeDef](#updateapidestinationresponsetypedef)
-  - [UpdateArchiveResponseTypeDef](#updatearchiveresponsetypedef)
+  - [TestEventPatternRequestTypeDef](#testeventpatternrequesttypedef)
+  - [TestEventPatternResponseResponseTypeDef](#testeventpatternresponseresponsetypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateApiDestinationRequestTypeDef](#updateapidestinationrequesttypedef)
+  - [UpdateApiDestinationResponseResponseTypeDef](#updateapidestinationresponseresponsetypedef)
+  - [UpdateArchiveRequestTypeDef](#updatearchiverequesttypedef)
+  - [UpdateArchiveResponseResponseTypeDef](#updatearchiveresponseresponsetypedef)
   - [UpdateConnectionApiKeyAuthRequestParametersTypeDef](#updateconnectionapikeyauthrequestparameterstypedef)
   - [UpdateConnectionAuthRequestParametersTypeDef](#updateconnectionauthrequestparameterstypedef)
   - [UpdateConnectionBasicAuthRequestParametersTypeDef](#updateconnectionbasicauthrequestparameterstypedef)
   - [UpdateConnectionOAuthClientRequestParametersTypeDef](#updateconnectionoauthclientrequestparameterstypedef)
   - [UpdateConnectionOAuthRequestParametersTypeDef](#updateconnectionoauthrequestparameterstypedef)
-  - [UpdateConnectionResponseTypeDef](#updateconnectionresponsetypedef)
+  - [UpdateConnectionRequestTypeDef](#updateconnectionrequesttypedef)
+  - [UpdateConnectionResponseResponseTypeDef](#updateconnectionresponseresponsetypedef)
+
+## ActivateEventSourceRequestTypeDef
+
+```python
+from mypy_boto3_events.type_defs import ActivateEventSourceRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
 
 ## ApiDestinationTypeDef
 
@@ -196,17 +258,29 @@ Optional fields:
 
 - `Attempts`: `int`
 
-## CancelReplayResponseTypeDef
+## CancelReplayRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import CancelReplayResponseTypeDef
+from mypy_boto3_events.type_defs import CancelReplayRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ReplayName`: `str`
+
+## CancelReplayResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import CancelReplayResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ReplayArn`: `str`
 - `State`: [ReplayStateType](./literals.md#replaystatetype)
 - `StateReason`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CapacityProviderStrategyItemTypeDef
 
@@ -367,32 +441,72 @@ Optional fields:
 - `LastModifiedTime`: `datetime`
 - `LastAuthorizedTime`: `datetime`
 
-## CreateApiDestinationResponseTypeDef
+## CreateApiDestinationRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import CreateApiDestinationResponseTypeDef
+from mypy_boto3_events.type_defs import CreateApiDestinationRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+- `ConnectionArn`: `str`
+- `InvocationEndpoint`: `str`
+- `HttpMethod`:
+  [ApiDestinationHttpMethodType](./literals.md#apidestinationhttpmethodtype)
+
 Optional fields:
+
+- `Description`: `str`
+- `InvocationRateLimitPerSecond`: `int`
+
+## CreateApiDestinationResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import CreateApiDestinationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ApiDestinationArn`: `str`
 - `ApiDestinationState`:
   [ApiDestinationStateType](./literals.md#apidestinationstatetype)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateArchiveResponseTypeDef
+## CreateArchiveRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import CreateArchiveResponseTypeDef
+from mypy_boto3_events.type_defs import CreateArchiveRequestTypeDef
 ```
 
+Required fields:
+
+- `ArchiveName`: `str`
+- `EventSourceArn`: `str`
+
 Optional fields:
+
+- `Description`: `str`
+- `EventPattern`: `str`
+- `RetentionDays`: `int`
+
+## CreateArchiveResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import CreateArchiveResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ArchiveArn`: `str`
 - `State`: [ArchiveStateType](./literals.md#archivestatetype)
 - `StateReason`: `str`
 - `CreationTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateConnectionApiKeyAuthRequestParametersTypeDef
 
@@ -463,38 +577,98 @@ Optional fields:
 - `OAuthHttpParameters`:
   [ConnectionHttpParametersTypeDef](./type_defs.md#connectionhttpparameterstypedef)
 
-## CreateConnectionResponseTypeDef
+## CreateConnectionRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import CreateConnectionResponseTypeDef
+from mypy_boto3_events.type_defs import CreateConnectionRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+- `AuthorizationType`:
+  [ConnectionAuthorizationTypeType](./literals.md#connectionauthorizationtypetype)
+- `AuthParameters`:
+  [CreateConnectionAuthRequestParametersTypeDef](./type_defs.md#createconnectionauthrequestparameterstypedef)
+
 Optional fields:
+
+- `Description`: `str`
+
+## CreateConnectionResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import CreateConnectionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ConnectionArn`: `str`
 - `ConnectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateEventBusResponseTypeDef
+## CreateEventBusRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import CreateEventBusResponseTypeDef
+from mypy_boto3_events.type_defs import CreateEventBusRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+
 Optional fields:
+
+- `EventSourceName`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateEventBusResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import CreateEventBusResponseResponseTypeDef
+```
+
+Required fields:
 
 - `EventBusArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePartnerEventSourceResponseTypeDef
+## CreatePartnerEventSourceRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import CreatePartnerEventSourceResponseTypeDef
+from mypy_boto3_events.type_defs import CreatePartnerEventSourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Name`: `str`
+- `Account`: `str`
+
+## CreatePartnerEventSourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import CreatePartnerEventSourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `EventSourceArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeactivateEventSourceRequestTypeDef
+
+```python
+from mypy_boto3_events.type_defs import DeactivateEventSourceRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
 
 ## DeadLetterConfigTypeDef
 
@@ -506,41 +680,131 @@ Optional fields:
 
 - `Arn`: `str`
 
-## DeauthorizeConnectionResponseTypeDef
+## DeauthorizeConnectionRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import DeauthorizeConnectionResponseTypeDef
+from mypy_boto3_events.type_defs import DeauthorizeConnectionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Name`: `str`
+
+## DeauthorizeConnectionResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import DeauthorizeConnectionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ConnectionArn`: `str`
 - `ConnectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `LastAuthorizedTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteConnectionResponseTypeDef
+## DeleteApiDestinationRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import DeleteConnectionResponseTypeDef
+from mypy_boto3_events.type_defs import DeleteApiDestinationRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Name`: `str`
+
+## DeleteArchiveRequestTypeDef
+
+```python
+from mypy_boto3_events.type_defs import DeleteArchiveRequestTypeDef
+```
+
+Required fields:
+
+- `ArchiveName`: `str`
+
+## DeleteConnectionRequestTypeDef
+
+```python
+from mypy_boto3_events.type_defs import DeleteConnectionRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+## DeleteConnectionResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import DeleteConnectionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ConnectionArn`: `str`
 - `ConnectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `LastAuthorizedTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeApiDestinationResponseTypeDef
+## DeleteEventBusRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import DescribeApiDestinationResponseTypeDef
+from mypy_boto3_events.type_defs import DeleteEventBusRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+
+## DeletePartnerEventSourceRequestTypeDef
+
+```python
+from mypy_boto3_events.type_defs import DeletePartnerEventSourceRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Account`: `str`
+
+## DeleteRuleRequestTypeDef
+
+```python
+from mypy_boto3_events.type_defs import DeleteRuleRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
 Optional fields:
+
+- `EventBusName`: `str`
+- `Force`: `bool`
+
+## DescribeApiDestinationRequestTypeDef
+
+```python
+from mypy_boto3_events.type_defs import DescribeApiDestinationRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+## DescribeApiDestinationResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import DescribeApiDestinationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ApiDestinationArn`: `str`
 - `Name`: `str`
@@ -554,14 +818,26 @@ Optional fields:
 - `InvocationRateLimitPerSecond`: `int`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeArchiveResponseTypeDef
+## DescribeArchiveRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import DescribeArchiveResponseTypeDef
+from mypy_boto3_events.type_defs import DescribeArchiveRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ArchiveName`: `str`
+
+## DescribeArchiveResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import DescribeArchiveResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ArchiveArn`: `str`
 - `ArchiveName`: `str`
@@ -574,14 +850,26 @@ Optional fields:
 - `SizeBytes`: `int`
 - `EventCount`: `int`
 - `CreationTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeConnectionResponseTypeDef
+## DescribeConnectionRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import DescribeConnectionResponseTypeDef
+from mypy_boto3_events.type_defs import DescribeConnectionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Name`: `str`
+
+## DescribeConnectionResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import DescribeConnectionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ConnectionArn`: `str`
 - `Name`: `str`
@@ -596,26 +884,50 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `LastAuthorizedTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEventBusResponseTypeDef
+## DescribeEventBusRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import DescribeEventBusResponseTypeDef
+from mypy_boto3_events.type_defs import DescribeEventBusRequestTypeDef
 ```
 
 Optional fields:
 
 - `Name`: `str`
-- `Arn`: `str`
-- `Policy`: `str`
 
-## DescribeEventSourceResponseTypeDef
+## DescribeEventBusResponseResponseTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import DescribeEventSourceResponseTypeDef
+from mypy_boto3_events.type_defs import DescribeEventBusResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Name`: `str`
+- `Arn`: `str`
+- `Policy`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeEventSourceRequestTypeDef
+
+```python
+from mypy_boto3_events.type_defs import DescribeEventSourceRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+## DescribeEventSourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import DescribeEventSourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreatedBy`: `str`
@@ -623,25 +935,49 @@ Optional fields:
 - `ExpirationTime`: `datetime`
 - `Name`: `str`
 - `State`: [EventSourceStateType](./literals.md#eventsourcestatetype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePartnerEventSourceResponseTypeDef
+## DescribePartnerEventSourceRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import DescribePartnerEventSourceResponseTypeDef
+from mypy_boto3_events.type_defs import DescribePartnerEventSourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Name`: `str`
+
+## DescribePartnerEventSourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import DescribePartnerEventSourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `Name`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeReplayResponseTypeDef
+## DescribeReplayRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import DescribeReplayResponseTypeDef
+from mypy_boto3_events.type_defs import DescribeReplayRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ReplayName`: `str`
+
+## DescribeReplayResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import DescribeReplayResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ReplayName`: `str`
 - `ReplayArn`: `str`
@@ -656,14 +992,30 @@ Optional fields:
 - `EventLastReplayedTime`: `datetime`
 - `ReplayStartTime`: `datetime`
 - `ReplayEndTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeRuleResponseTypeDef
+## DescribeRuleRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import DescribeRuleResponseTypeDef
+from mypy_boto3_events.type_defs import DescribeRuleRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+
 Optional fields:
+
+- `EventBusName`: `str`
+
+## DescribeRuleResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import DescribeRuleResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Name`: `str`
 - `Arn`: `str`
@@ -675,6 +1027,22 @@ Optional fields:
 - `ManagedBy`: `str`
 - `EventBusName`: `str`
 - `CreatedBy`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DisableRuleRequestTypeDef
+
+```python
+from mypy_boto3_events.type_defs import DisableRuleRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+Optional fields:
+
+- `EventBusName`: `str`
 
 ## EcsParametersTypeDef
 
@@ -706,6 +1074,20 @@ Optional fields:
   [PropagateTagsType](./literals.md#propagatetagstype))
 - `ReferenceId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## EnableRuleRequestTypeDef
+
+```python
+from mypy_boto3_events.type_defs import EnableRuleRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+Optional fields:
+
+- `EventBusName`: `str`
 
 ## EventBusTypeDef
 
@@ -770,141 +1152,328 @@ Required fields:
 
 - `PartitionKeyPath`: `str`
 
-## ListApiDestinationsResponseTypeDef
+## ListApiDestinationsRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import ListApiDestinationsResponseTypeDef
+from mypy_boto3_events.type_defs import ListApiDestinationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `NamePrefix`: `str`
+- `ConnectionArn`: `str`
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## ListApiDestinationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import ListApiDestinationsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ApiDestinations`:
   `List`\[[ApiDestinationTypeDef](./type_defs.md#apidestinationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListArchivesResponseTypeDef
+## ListArchivesRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import ListArchivesResponseTypeDef
+from mypy_boto3_events.type_defs import ListArchivesRequestTypeDef
 ```
 
 Optional fields:
+
+- `NamePrefix`: `str`
+- `EventSourceArn`: `str`
+- `State`: [ArchiveStateType](./literals.md#archivestatetype)
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## ListArchivesResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import ListArchivesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Archives`: `List`\[[ArchiveTypeDef](./type_defs.md#archivetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListConnectionsResponseTypeDef
+## ListConnectionsRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import ListConnectionsResponseTypeDef
+from mypy_boto3_events.type_defs import ListConnectionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `NamePrefix`: `str`
+- `ConnectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## ListConnectionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import ListConnectionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Connections`:
   `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListEventBusesResponseTypeDef
+## ListEventBusesRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import ListEventBusesResponseTypeDef
+from mypy_boto3_events.type_defs import ListEventBusesRequestTypeDef
 ```
 
 Optional fields:
+
+- `NamePrefix`: `str`
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## ListEventBusesResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import ListEventBusesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `EventBuses`: `List`\[[EventBusTypeDef](./type_defs.md#eventbustypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListEventSourcesResponseTypeDef
+## ListEventSourcesRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import ListEventSourcesResponseTypeDef
+from mypy_boto3_events.type_defs import ListEventSourcesRequestTypeDef
 ```
 
 Optional fields:
+
+- `NamePrefix`: `str`
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## ListEventSourcesResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import ListEventSourcesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `EventSources`:
   `List`\[[EventSourceTypeDef](./type_defs.md#eventsourcetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPartnerEventSourceAccountsResponseTypeDef
+## ListPartnerEventSourceAccountsRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import ListPartnerEventSourceAccountsResponseTypeDef
+from mypy_boto3_events.type_defs import ListPartnerEventSourceAccountsRequestTypeDef
 ```
 
+Required fields:
+
+- `EventSourceName`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## ListPartnerEventSourceAccountsResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import ListPartnerEventSourceAccountsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `PartnerEventSourceAccounts`:
   `List`\[[PartnerEventSourceAccountTypeDef](./type_defs.md#partnereventsourceaccounttypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPartnerEventSourcesResponseTypeDef
+## ListPartnerEventSourcesRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import ListPartnerEventSourcesResponseTypeDef
+from mypy_boto3_events.type_defs import ListPartnerEventSourcesRequestTypeDef
 ```
 
+Required fields:
+
+- `NamePrefix`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## ListPartnerEventSourcesResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import ListPartnerEventSourcesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `PartnerEventSources`:
   `List`\[[PartnerEventSourceTypeDef](./type_defs.md#partnereventsourcetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListReplaysResponseTypeDef
+## ListReplaysRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import ListReplaysResponseTypeDef
+from mypy_boto3_events.type_defs import ListReplaysRequestTypeDef
 ```
 
 Optional fields:
+
+- `NamePrefix`: `str`
+- `State`: [ReplayStateType](./literals.md#replaystatetype)
+- `EventSourceArn`: `str`
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## ListReplaysResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import ListReplaysResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Replays`: `List`\[[ReplayTypeDef](./type_defs.md#replaytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRuleNamesByTargetResponseTypeDef
+## ListRuleNamesByTargetRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import ListRuleNamesByTargetResponseTypeDef
+from mypy_boto3_events.type_defs import ListRuleNamesByTargetRequestTypeDef
 ```
 
+Required fields:
+
+- `TargetArn`: `str`
+
 Optional fields:
+
+- `EventBusName`: `str`
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## ListRuleNamesByTargetResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import ListRuleNamesByTargetResponseResponseTypeDef
+```
+
+Required fields:
 
 - `RuleNames`: `List`\[`str`\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRulesResponseTypeDef
+## ListRulesRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import ListRulesResponseTypeDef
+from mypy_boto3_events.type_defs import ListRulesRequestTypeDef
 ```
 
 Optional fields:
+
+- `NamePrefix`: `str`
+- `EventBusName`: `str`
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## ListRulesResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import ListRulesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_events.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceARN`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTargetsByRuleResponseTypeDef
+## ListTargetsByRuleRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import ListTargetsByRuleResponseTypeDef
+from mypy_boto3_events.type_defs import ListTargetsByRuleRequestTypeDef
 ```
 
+Required fields:
+
+- `Rule`: `str`
+
 Optional fields:
+
+- `EventBusName`: `str`
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## ListTargetsByRuleResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import ListTargetsByRuleResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## NetworkConfigurationTypeDef
 
@@ -984,7 +1553,7 @@ from mypy_boto3_events.type_defs import PutEventsRequestEntryTypeDef
 
 Optional fields:
 
-- `Time`: `datetime`
+- `Time`: `Union`\[`datetime`, `str`\]
 - `Source`: `str`
 - `Resources`: `List`\[`str`\]
 - `DetailType`: `str`
@@ -992,17 +1561,30 @@ Optional fields:
 - `EventBusName`: `str`
 - `TraceHeader`: `str`
 
-## PutEventsResponseTypeDef
+## PutEventsRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import PutEventsResponseTypeDef
+from mypy_boto3_events.type_defs import PutEventsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Entries`:
+  `List`\[[PutEventsRequestEntryTypeDef](./type_defs.md#puteventsrequestentrytypedef)\]
+
+## PutEventsResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import PutEventsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FailedEntryCount`: `int`
 - `Entries`:
   `List`\[[PutEventsResultEntryTypeDef](./type_defs.md#puteventsresultentrytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PutEventsResultEntryTypeDef
 
@@ -1024,23 +1606,36 @@ from mypy_boto3_events.type_defs import PutPartnerEventsRequestEntryTypeDef
 
 Optional fields:
 
-- `Time`: `datetime`
+- `Time`: `Union`\[`datetime`, `str`\]
 - `Source`: `str`
 - `Resources`: `List`\[`str`\]
 - `DetailType`: `str`
 - `Detail`: `str`
 
-## PutPartnerEventsResponseTypeDef
+## PutPartnerEventsRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import PutPartnerEventsResponseTypeDef
+from mypy_boto3_events.type_defs import PutPartnerEventsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Entries`:
+  `List`\[[PutPartnerEventsRequestEntryTypeDef](./type_defs.md#putpartnereventsrequestentrytypedef)\]
+
+## PutPartnerEventsResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import PutPartnerEventsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FailedEntryCount`: `int`
 - `Entries`:
   `List`\[[PutPartnerEventsResultEntryTypeDef](./type_defs.md#putpartnereventsresultentrytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PutPartnerEventsResultEntryTypeDef
 
@@ -1054,27 +1649,81 @@ Optional fields:
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
 
-## PutRuleResponseTypeDef
+## PutPermissionRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import PutRuleResponseTypeDef
+from mypy_boto3_events.type_defs import PutPermissionRequestTypeDef
 ```
 
 Optional fields:
+
+- `EventBusName`: `str`
+- `Action`: `str`
+- `Principal`: `str`
+- `StatementId`: `str`
+- `Condition`: [ConditionTypeDef](./type_defs.md#conditiontypedef)
+- `Policy`: `str`
+
+## PutRuleRequestTypeDef
+
+```python
+from mypy_boto3_events.type_defs import PutRuleRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+Optional fields:
+
+- `ScheduleExpression`: `str`
+- `EventPattern`: `str`
+- `State`: [RuleStateType](./literals.md#rulestatetype)
+- `Description`: `str`
+- `RoleArn`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `EventBusName`: `str`
+
+## PutRuleResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import PutRuleResponseResponseTypeDef
+```
+
+Required fields:
 
 - `RuleArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutTargetsResponseTypeDef
+## PutTargetsRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import PutTargetsResponseTypeDef
+from mypy_boto3_events.type_defs import PutTargetsRequestTypeDef
 ```
 
+Required fields:
+
+- `Rule`: `str`
+- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+
 Optional fields:
+
+- `EventBusName`: `str`
+
+## PutTargetsResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import PutTargetsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FailedEntryCount`: `int`
 - `FailedEntries`:
   `List`\[[PutTargetsResultEntryTypeDef](./type_defs.md#puttargetsresultentrytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PutTargetsResultEntryTypeDef
 
@@ -1106,17 +1755,47 @@ Optional fields:
 - `StatementName`: `str`
 - `WithEvent`: `bool`
 
-## RemoveTargetsResponseTypeDef
+## RemovePermissionRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import RemoveTargetsResponseTypeDef
+from mypy_boto3_events.type_defs import RemovePermissionRequestTypeDef
 ```
 
 Optional fields:
 
+- `StatementId`: `str`
+- `RemoveAllPermissions`: `bool`
+- `EventBusName`: `str`
+
+## RemoveTargetsRequestTypeDef
+
+```python
+from mypy_boto3_events.type_defs import RemoveTargetsRequestTypeDef
+```
+
+Required fields:
+
+- `Rule`: `str`
+- `Ids`: `List`\[`str`\]
+
+Optional fields:
+
+- `EventBusName`: `str`
+- `Force`: `bool`
+
+## RemoveTargetsResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import RemoveTargetsResponseResponseTypeDef
+```
+
+Required fields:
+
 - `FailedEntryCount`: `int`
 - `FailedEntries`:
   `List`\[[RemoveTargetsResultEntryTypeDef](./type_defs.md#removetargetsresultentrytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## RemoveTargetsResultEntryTypeDef
 
@@ -1161,6 +1840,20 @@ Optional fields:
 - `EventLastReplayedTime`: `datetime`
 - `ReplayStartTime`: `datetime`
 - `ReplayEndTime`: `datetime`
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_events.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## RetryPolicyTypeDef
 
@@ -1245,18 +1938,50 @@ Optional fields:
 
 - `MessageGroupId`: `str`
 
-## StartReplayResponseTypeDef
+## StartReplayRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import StartReplayResponseTypeDef
+from mypy_boto3_events.type_defs import StartReplayRequestTypeDef
 ```
 
+Required fields:
+
+- `ReplayName`: `str`
+- `EventSourceArn`: `str`
+- `EventStartTime`: `Union`\[`datetime`, `str`\]
+- `EventEndTime`: `Union`\[`datetime`, `str`\]
+- `Destination`:
+  [ReplayDestinationTypeDef](./type_defs.md#replaydestinationtypedef)
+
 Optional fields:
+
+- `Description`: `str`
+
+## StartReplayResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import StartReplayResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ReplayArn`: `str`
 - `State`: [ReplayStateType](./literals.md#replaystatetype)
 - `StateReason`: `str`
 - `ReplayStartTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_events.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1305,42 +2030,105 @@ Optional fields:
   [DeadLetterConfigTypeDef](./type_defs.md#deadletterconfigtypedef)
 - `RetryPolicy`: [RetryPolicyTypeDef](./type_defs.md#retrypolicytypedef)
 
-## TestEventPatternResponseTypeDef
+## TestEventPatternRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import TestEventPatternResponseTypeDef
+from mypy_boto3_events.type_defs import TestEventPatternRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `EventPattern`: `str`
+- `Event`: `str`
+
+## TestEventPatternResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import TestEventPatternResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Result`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateApiDestinationResponseTypeDef
+## UntagResourceRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import UpdateApiDestinationResponseTypeDef
+from mypy_boto3_events.type_defs import UntagResourceRequestTypeDef
 ```
 
+Required fields:
+
+- `ResourceARN`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## UpdateApiDestinationRequestTypeDef
+
+```python
+from mypy_boto3_events.type_defs import UpdateApiDestinationRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
 Optional fields:
+
+- `Description`: `str`
+- `ConnectionArn`: `str`
+- `InvocationEndpoint`: `str`
+- `HttpMethod`:
+  [ApiDestinationHttpMethodType](./literals.md#apidestinationhttpmethodtype)
+- `InvocationRateLimitPerSecond`: `int`
+
+## UpdateApiDestinationResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import UpdateApiDestinationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ApiDestinationArn`: `str`
 - `ApiDestinationState`:
   [ApiDestinationStateType](./literals.md#apidestinationstatetype)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateArchiveResponseTypeDef
+## UpdateArchiveRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import UpdateArchiveResponseTypeDef
+from mypy_boto3_events.type_defs import UpdateArchiveRequestTypeDef
 ```
 
+Required fields:
+
+- `ArchiveName`: `str`
+
 Optional fields:
+
+- `Description`: `str`
+- `EventPattern`: `str`
+- `RetentionDays`: `int`
+
+## UpdateArchiveResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import UpdateArchiveResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ArchiveArn`: `str`
 - `State`: [ArchiveStateType](./literals.md#archivestatetype)
 - `StateReason`: `str`
 - `CreationTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UpdateConnectionApiKeyAuthRequestParametersTypeDef
 
@@ -1408,16 +2196,36 @@ Optional fields:
 - `OAuthHttpParameters`:
   [ConnectionHttpParametersTypeDef](./type_defs.md#connectionhttpparameterstypedef)
 
-## UpdateConnectionResponseTypeDef
+## UpdateConnectionRequestTypeDef
 
 ```python
-from mypy_boto3_events.type_defs import UpdateConnectionResponseTypeDef
+from mypy_boto3_events.type_defs import UpdateConnectionRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+
 Optional fields:
+
+- `Description`: `str`
+- `AuthorizationType`:
+  [ConnectionAuthorizationTypeType](./literals.md#connectionauthorizationtypetype)
+- `AuthParameters`:
+  [UpdateConnectionAuthRequestParametersTypeDef](./type_defs.md#updateconnectionauthrequestparameterstypedef)
+
+## UpdateConnectionResponseResponseTypeDef
+
+```python
+from mypy_boto3_events.type_defs import UpdateConnectionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ConnectionArn`: `str`
 - `ConnectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `LastAuthorizedTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

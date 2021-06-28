@@ -37,7 +37,7 @@ Arguments for `ListRuleNamesByTargetPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRuleNamesByTargetPaginator.paginate` returns
-`Iterator`\[[ListRuleNamesByTargetResponseTypeDef](./type_defs.md#listrulenamesbytargetresponsetypedef)\].
+`Iterator`\[[ListRuleNamesByTargetResponseResponseTypeDef](./type_defs.md#listrulenamesbytargetresponseresponsetypedef)\].
 
 ## ListRulesPaginator
 
@@ -63,7 +63,7 @@ Arguments for `ListRulesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRulesPaginator.paginate` returns
-`Iterator`\[[ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef)\].
+`Iterator`\[[ListRulesResponseResponseTypeDef](./type_defs.md#listrulesresponseresponsetypedef)\].
 
 ## ListTargetsByRulePaginator
 
@@ -90,4 +90,4 @@ Arguments for `ListTargetsByRulePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTargetsByRulePaginator.paginate` returns
-`Iterator`\[[ListTargetsByRuleResponseTypeDef](./type_defs.md#listtargetsbyruleresponsetypedef)\].
+`Iterator`\[[ListTargetsByRuleResponseResponseTypeDef](./type_defs.md#listtargetsbyruleresponseresponsetypedef)\].

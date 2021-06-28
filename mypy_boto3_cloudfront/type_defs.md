@@ -32,27 +32,55 @@ type annotations stubs module
   - [ContentTypeProfilesTypeDef](#contenttypeprofilestypedef)
   - [CookieNamesTypeDef](#cookienamestypedef)
   - [CookiePreferenceTypeDef](#cookiepreferencetypedef)
-  - [CreateCachePolicyResultTypeDef](#createcachepolicyresulttypedef)
-  - [CreateCloudFrontOriginAccessIdentityResultTypeDef](#createcloudfrontoriginaccessidentityresulttypedef)
-  - [CreateDistributionResultTypeDef](#createdistributionresulttypedef)
-  - [CreateDistributionWithTagsResultTypeDef](#createdistributionwithtagsresulttypedef)
-  - [CreateFieldLevelEncryptionConfigResultTypeDef](#createfieldlevelencryptionconfigresulttypedef)
-  - [CreateFieldLevelEncryptionProfileResultTypeDef](#createfieldlevelencryptionprofileresulttypedef)
-  - [CreateFunctionResultTypeDef](#createfunctionresulttypedef)
-  - [CreateInvalidationResultTypeDef](#createinvalidationresulttypedef)
-  - [CreateKeyGroupResultTypeDef](#createkeygroupresulttypedef)
-  - [CreateMonitoringSubscriptionResultTypeDef](#createmonitoringsubscriptionresulttypedef)
-  - [CreateOriginRequestPolicyResultTypeDef](#createoriginrequestpolicyresulttypedef)
-  - [CreatePublicKeyResultTypeDef](#createpublickeyresulttypedef)
-  - [CreateRealtimeLogConfigResultTypeDef](#createrealtimelogconfigresulttypedef)
-  - [CreateStreamingDistributionResultTypeDef](#createstreamingdistributionresulttypedef)
-  - [CreateStreamingDistributionWithTagsResultTypeDef](#createstreamingdistributionwithtagsresulttypedef)
+  - [CreateCachePolicyRequestTypeDef](#createcachepolicyrequesttypedef)
+  - [CreateCachePolicyResultResponseTypeDef](#createcachepolicyresultresponsetypedef)
+  - [CreateCloudFrontOriginAccessIdentityRequestTypeDef](#createcloudfrontoriginaccessidentityrequesttypedef)
+  - [CreateCloudFrontOriginAccessIdentityResultResponseTypeDef](#createcloudfrontoriginaccessidentityresultresponsetypedef)
+  - [CreateDistributionRequestTypeDef](#createdistributionrequesttypedef)
+  - [CreateDistributionResultResponseTypeDef](#createdistributionresultresponsetypedef)
+  - [CreateDistributionWithTagsRequestTypeDef](#createdistributionwithtagsrequesttypedef)
+  - [CreateDistributionWithTagsResultResponseTypeDef](#createdistributionwithtagsresultresponsetypedef)
+  - [CreateFieldLevelEncryptionConfigRequestTypeDef](#createfieldlevelencryptionconfigrequesttypedef)
+  - [CreateFieldLevelEncryptionConfigResultResponseTypeDef](#createfieldlevelencryptionconfigresultresponsetypedef)
+  - [CreateFieldLevelEncryptionProfileRequestTypeDef](#createfieldlevelencryptionprofilerequesttypedef)
+  - [CreateFieldLevelEncryptionProfileResultResponseTypeDef](#createfieldlevelencryptionprofileresultresponsetypedef)
+  - [CreateFunctionRequestTypeDef](#createfunctionrequesttypedef)
+  - [CreateFunctionResultResponseTypeDef](#createfunctionresultresponsetypedef)
+  - [CreateInvalidationRequestTypeDef](#createinvalidationrequesttypedef)
+  - [CreateInvalidationResultResponseTypeDef](#createinvalidationresultresponsetypedef)
+  - [CreateKeyGroupRequestTypeDef](#createkeygrouprequesttypedef)
+  - [CreateKeyGroupResultResponseTypeDef](#createkeygroupresultresponsetypedef)
+  - [CreateMonitoringSubscriptionRequestTypeDef](#createmonitoringsubscriptionrequesttypedef)
+  - [CreateMonitoringSubscriptionResultResponseTypeDef](#createmonitoringsubscriptionresultresponsetypedef)
+  - [CreateOriginRequestPolicyRequestTypeDef](#createoriginrequestpolicyrequesttypedef)
+  - [CreateOriginRequestPolicyResultResponseTypeDef](#createoriginrequestpolicyresultresponsetypedef)
+  - [CreatePublicKeyRequestTypeDef](#createpublickeyrequesttypedef)
+  - [CreatePublicKeyResultResponseTypeDef](#createpublickeyresultresponsetypedef)
+  - [CreateRealtimeLogConfigRequestTypeDef](#createrealtimelogconfigrequesttypedef)
+  - [CreateRealtimeLogConfigResultResponseTypeDef](#createrealtimelogconfigresultresponsetypedef)
+  - [CreateStreamingDistributionRequestTypeDef](#createstreamingdistributionrequesttypedef)
+  - [CreateStreamingDistributionResultResponseTypeDef](#createstreamingdistributionresultresponsetypedef)
+  - [CreateStreamingDistributionWithTagsRequestTypeDef](#createstreamingdistributionwithtagsrequesttypedef)
+  - [CreateStreamingDistributionWithTagsResultResponseTypeDef](#createstreamingdistributionwithtagsresultresponsetypedef)
   - [CustomErrorResponseTypeDef](#customerrorresponsetypedef)
   - [CustomErrorResponsesTypeDef](#customerrorresponsestypedef)
   - [CustomHeadersTypeDef](#customheaderstypedef)
   - [CustomOriginConfigTypeDef](#customoriginconfigtypedef)
   - [DefaultCacheBehaviorTypeDef](#defaultcachebehaviortypedef)
-  - [DescribeFunctionResultTypeDef](#describefunctionresulttypedef)
+  - [DeleteCachePolicyRequestTypeDef](#deletecachepolicyrequesttypedef)
+  - [DeleteCloudFrontOriginAccessIdentityRequestTypeDef](#deletecloudfrontoriginaccessidentityrequesttypedef)
+  - [DeleteDistributionRequestTypeDef](#deletedistributionrequesttypedef)
+  - [DeleteFieldLevelEncryptionConfigRequestTypeDef](#deletefieldlevelencryptionconfigrequesttypedef)
+  - [DeleteFieldLevelEncryptionProfileRequestTypeDef](#deletefieldlevelencryptionprofilerequesttypedef)
+  - [DeleteFunctionRequestTypeDef](#deletefunctionrequesttypedef)
+  - [DeleteKeyGroupRequestTypeDef](#deletekeygrouprequesttypedef)
+  - [DeleteMonitoringSubscriptionRequestTypeDef](#deletemonitoringsubscriptionrequesttypedef)
+  - [DeleteOriginRequestPolicyRequestTypeDef](#deleteoriginrequestpolicyrequesttypedef)
+  - [DeletePublicKeyRequestTypeDef](#deletepublickeyrequesttypedef)
+  - [DeleteRealtimeLogConfigRequestTypeDef](#deleterealtimelogconfigrequesttypedef)
+  - [DeleteStreamingDistributionRequestTypeDef](#deletestreamingdistributionrequesttypedef)
+  - [DescribeFunctionRequestTypeDef](#describefunctionrequesttypedef)
+  - [DescribeFunctionResultResponseTypeDef](#describefunctionresultresponsetypedef)
   - [DistributionConfigTypeDef](#distributionconfigtypedef)
   - [DistributionConfigWithTagsTypeDef](#distributionconfigwithtagstypedef)
   - [DistributionIdListTypeDef](#distributionidlisttypedef)
@@ -79,28 +107,50 @@ type annotations stubs module
   - [FunctionMetadataTypeDef](#functionmetadatatypedef)
   - [FunctionSummaryTypeDef](#functionsummarytypedef)
   - [GeoRestrictionTypeDef](#georestrictiontypedef)
-  - [GetCachePolicyConfigResultTypeDef](#getcachepolicyconfigresulttypedef)
-  - [GetCachePolicyResultTypeDef](#getcachepolicyresulttypedef)
-  - [GetCloudFrontOriginAccessIdentityConfigResultTypeDef](#getcloudfrontoriginaccessidentityconfigresulttypedef)
-  - [GetCloudFrontOriginAccessIdentityResultTypeDef](#getcloudfrontoriginaccessidentityresulttypedef)
-  - [GetDistributionConfigResultTypeDef](#getdistributionconfigresulttypedef)
-  - [GetDistributionResultTypeDef](#getdistributionresulttypedef)
-  - [GetFieldLevelEncryptionConfigResultTypeDef](#getfieldlevelencryptionconfigresulttypedef)
-  - [GetFieldLevelEncryptionProfileConfigResultTypeDef](#getfieldlevelencryptionprofileconfigresulttypedef)
-  - [GetFieldLevelEncryptionProfileResultTypeDef](#getfieldlevelencryptionprofileresulttypedef)
-  - [GetFieldLevelEncryptionResultTypeDef](#getfieldlevelencryptionresulttypedef)
-  - [GetFunctionResultTypeDef](#getfunctionresulttypedef)
-  - [GetInvalidationResultTypeDef](#getinvalidationresulttypedef)
-  - [GetKeyGroupConfigResultTypeDef](#getkeygroupconfigresulttypedef)
-  - [GetKeyGroupResultTypeDef](#getkeygroupresulttypedef)
-  - [GetMonitoringSubscriptionResultTypeDef](#getmonitoringsubscriptionresulttypedef)
-  - [GetOriginRequestPolicyConfigResultTypeDef](#getoriginrequestpolicyconfigresulttypedef)
-  - [GetOriginRequestPolicyResultTypeDef](#getoriginrequestpolicyresulttypedef)
-  - [GetPublicKeyConfigResultTypeDef](#getpublickeyconfigresulttypedef)
-  - [GetPublicKeyResultTypeDef](#getpublickeyresulttypedef)
-  - [GetRealtimeLogConfigResultTypeDef](#getrealtimelogconfigresulttypedef)
-  - [GetStreamingDistributionConfigResultTypeDef](#getstreamingdistributionconfigresulttypedef)
-  - [GetStreamingDistributionResultTypeDef](#getstreamingdistributionresulttypedef)
+  - [GetCachePolicyConfigRequestTypeDef](#getcachepolicyconfigrequesttypedef)
+  - [GetCachePolicyConfigResultResponseTypeDef](#getcachepolicyconfigresultresponsetypedef)
+  - [GetCachePolicyRequestTypeDef](#getcachepolicyrequesttypedef)
+  - [GetCachePolicyResultResponseTypeDef](#getcachepolicyresultresponsetypedef)
+  - [GetCloudFrontOriginAccessIdentityConfigRequestTypeDef](#getcloudfrontoriginaccessidentityconfigrequesttypedef)
+  - [GetCloudFrontOriginAccessIdentityConfigResultResponseTypeDef](#getcloudfrontoriginaccessidentityconfigresultresponsetypedef)
+  - [GetCloudFrontOriginAccessIdentityRequestTypeDef](#getcloudfrontoriginaccessidentityrequesttypedef)
+  - [GetCloudFrontOriginAccessIdentityResultResponseTypeDef](#getcloudfrontoriginaccessidentityresultresponsetypedef)
+  - [GetDistributionConfigRequestTypeDef](#getdistributionconfigrequesttypedef)
+  - [GetDistributionConfigResultResponseTypeDef](#getdistributionconfigresultresponsetypedef)
+  - [GetDistributionRequestTypeDef](#getdistributionrequesttypedef)
+  - [GetDistributionResultResponseTypeDef](#getdistributionresultresponsetypedef)
+  - [GetFieldLevelEncryptionConfigRequestTypeDef](#getfieldlevelencryptionconfigrequesttypedef)
+  - [GetFieldLevelEncryptionConfigResultResponseTypeDef](#getfieldlevelencryptionconfigresultresponsetypedef)
+  - [GetFieldLevelEncryptionProfileConfigRequestTypeDef](#getfieldlevelencryptionprofileconfigrequesttypedef)
+  - [GetFieldLevelEncryptionProfileConfigResultResponseTypeDef](#getfieldlevelencryptionprofileconfigresultresponsetypedef)
+  - [GetFieldLevelEncryptionProfileRequestTypeDef](#getfieldlevelencryptionprofilerequesttypedef)
+  - [GetFieldLevelEncryptionProfileResultResponseTypeDef](#getfieldlevelencryptionprofileresultresponsetypedef)
+  - [GetFieldLevelEncryptionRequestTypeDef](#getfieldlevelencryptionrequesttypedef)
+  - [GetFieldLevelEncryptionResultResponseTypeDef](#getfieldlevelencryptionresultresponsetypedef)
+  - [GetFunctionRequestTypeDef](#getfunctionrequesttypedef)
+  - [GetFunctionResultResponseTypeDef](#getfunctionresultresponsetypedef)
+  - [GetInvalidationRequestTypeDef](#getinvalidationrequesttypedef)
+  - [GetInvalidationResultResponseTypeDef](#getinvalidationresultresponsetypedef)
+  - [GetKeyGroupConfigRequestTypeDef](#getkeygroupconfigrequesttypedef)
+  - [GetKeyGroupConfigResultResponseTypeDef](#getkeygroupconfigresultresponsetypedef)
+  - [GetKeyGroupRequestTypeDef](#getkeygrouprequesttypedef)
+  - [GetKeyGroupResultResponseTypeDef](#getkeygroupresultresponsetypedef)
+  - [GetMonitoringSubscriptionRequestTypeDef](#getmonitoringsubscriptionrequesttypedef)
+  - [GetMonitoringSubscriptionResultResponseTypeDef](#getmonitoringsubscriptionresultresponsetypedef)
+  - [GetOriginRequestPolicyConfigRequestTypeDef](#getoriginrequestpolicyconfigrequesttypedef)
+  - [GetOriginRequestPolicyConfigResultResponseTypeDef](#getoriginrequestpolicyconfigresultresponsetypedef)
+  - [GetOriginRequestPolicyRequestTypeDef](#getoriginrequestpolicyrequesttypedef)
+  - [GetOriginRequestPolicyResultResponseTypeDef](#getoriginrequestpolicyresultresponsetypedef)
+  - [GetPublicKeyConfigRequestTypeDef](#getpublickeyconfigrequesttypedef)
+  - [GetPublicKeyConfigResultResponseTypeDef](#getpublickeyconfigresultresponsetypedef)
+  - [GetPublicKeyRequestTypeDef](#getpublickeyrequesttypedef)
+  - [GetPublicKeyResultResponseTypeDef](#getpublickeyresultresponsetypedef)
+  - [GetRealtimeLogConfigRequestTypeDef](#getrealtimelogconfigrequesttypedef)
+  - [GetRealtimeLogConfigResultResponseTypeDef](#getrealtimelogconfigresultresponsetypedef)
+  - [GetStreamingDistributionConfigRequestTypeDef](#getstreamingdistributionconfigrequesttypedef)
+  - [GetStreamingDistributionConfigResultResponseTypeDef](#getstreamingdistributionconfigresultresponsetypedef)
+  - [GetStreamingDistributionRequestTypeDef](#getstreamingdistributionrequesttypedef)
+  - [GetStreamingDistributionResultResponseTypeDef](#getstreamingdistributionresultresponsetypedef)
   - [HeadersTypeDef](#headerstypedef)
   - [InvalidationBatchTypeDef](#invalidationbatchtypedef)
   - [InvalidationListTypeDef](#invalidationlisttypedef)
@@ -115,24 +165,42 @@ type annotations stubs module
   - [KinesisStreamConfigTypeDef](#kinesisstreamconfigtypedef)
   - [LambdaFunctionAssociationTypeDef](#lambdafunctionassociationtypedef)
   - [LambdaFunctionAssociationsTypeDef](#lambdafunctionassociationstypedef)
-  - [ListCachePoliciesResultTypeDef](#listcachepoliciesresulttypedef)
-  - [ListCloudFrontOriginAccessIdentitiesResultTypeDef](#listcloudfrontoriginaccessidentitiesresulttypedef)
-  - [ListDistributionsByCachePolicyIdResultTypeDef](#listdistributionsbycachepolicyidresulttypedef)
-  - [ListDistributionsByKeyGroupResultTypeDef](#listdistributionsbykeygroupresulttypedef)
-  - [ListDistributionsByOriginRequestPolicyIdResultTypeDef](#listdistributionsbyoriginrequestpolicyidresulttypedef)
-  - [ListDistributionsByRealtimeLogConfigResultTypeDef](#listdistributionsbyrealtimelogconfigresulttypedef)
-  - [ListDistributionsByWebACLIdResultTypeDef](#listdistributionsbywebaclidresulttypedef)
-  - [ListDistributionsResultTypeDef](#listdistributionsresulttypedef)
-  - [ListFieldLevelEncryptionConfigsResultTypeDef](#listfieldlevelencryptionconfigsresulttypedef)
-  - [ListFieldLevelEncryptionProfilesResultTypeDef](#listfieldlevelencryptionprofilesresulttypedef)
-  - [ListFunctionsResultTypeDef](#listfunctionsresulttypedef)
-  - [ListInvalidationsResultTypeDef](#listinvalidationsresulttypedef)
-  - [ListKeyGroupsResultTypeDef](#listkeygroupsresulttypedef)
-  - [ListOriginRequestPoliciesResultTypeDef](#listoriginrequestpoliciesresulttypedef)
-  - [ListPublicKeysResultTypeDef](#listpublickeysresulttypedef)
-  - [ListRealtimeLogConfigsResultTypeDef](#listrealtimelogconfigsresulttypedef)
-  - [ListStreamingDistributionsResultTypeDef](#liststreamingdistributionsresulttypedef)
-  - [ListTagsForResourceResultTypeDef](#listtagsforresourceresulttypedef)
+  - [ListCachePoliciesRequestTypeDef](#listcachepoliciesrequesttypedef)
+  - [ListCachePoliciesResultResponseTypeDef](#listcachepoliciesresultresponsetypedef)
+  - [ListCloudFrontOriginAccessIdentitiesRequestTypeDef](#listcloudfrontoriginaccessidentitiesrequesttypedef)
+  - [ListCloudFrontOriginAccessIdentitiesResultResponseTypeDef](#listcloudfrontoriginaccessidentitiesresultresponsetypedef)
+  - [ListDistributionsByCachePolicyIdRequestTypeDef](#listdistributionsbycachepolicyidrequesttypedef)
+  - [ListDistributionsByCachePolicyIdResultResponseTypeDef](#listdistributionsbycachepolicyidresultresponsetypedef)
+  - [ListDistributionsByKeyGroupRequestTypeDef](#listdistributionsbykeygrouprequesttypedef)
+  - [ListDistributionsByKeyGroupResultResponseTypeDef](#listdistributionsbykeygroupresultresponsetypedef)
+  - [ListDistributionsByOriginRequestPolicyIdRequestTypeDef](#listdistributionsbyoriginrequestpolicyidrequesttypedef)
+  - [ListDistributionsByOriginRequestPolicyIdResultResponseTypeDef](#listdistributionsbyoriginrequestpolicyidresultresponsetypedef)
+  - [ListDistributionsByRealtimeLogConfigRequestTypeDef](#listdistributionsbyrealtimelogconfigrequesttypedef)
+  - [ListDistributionsByRealtimeLogConfigResultResponseTypeDef](#listdistributionsbyrealtimelogconfigresultresponsetypedef)
+  - [ListDistributionsByWebACLIdRequestTypeDef](#listdistributionsbywebaclidrequesttypedef)
+  - [ListDistributionsByWebACLIdResultResponseTypeDef](#listdistributionsbywebaclidresultresponsetypedef)
+  - [ListDistributionsRequestTypeDef](#listdistributionsrequesttypedef)
+  - [ListDistributionsResultResponseTypeDef](#listdistributionsresultresponsetypedef)
+  - [ListFieldLevelEncryptionConfigsRequestTypeDef](#listfieldlevelencryptionconfigsrequesttypedef)
+  - [ListFieldLevelEncryptionConfigsResultResponseTypeDef](#listfieldlevelencryptionconfigsresultresponsetypedef)
+  - [ListFieldLevelEncryptionProfilesRequestTypeDef](#listfieldlevelencryptionprofilesrequesttypedef)
+  - [ListFieldLevelEncryptionProfilesResultResponseTypeDef](#listfieldlevelencryptionprofilesresultresponsetypedef)
+  - [ListFunctionsRequestTypeDef](#listfunctionsrequesttypedef)
+  - [ListFunctionsResultResponseTypeDef](#listfunctionsresultresponsetypedef)
+  - [ListInvalidationsRequestTypeDef](#listinvalidationsrequesttypedef)
+  - [ListInvalidationsResultResponseTypeDef](#listinvalidationsresultresponsetypedef)
+  - [ListKeyGroupsRequestTypeDef](#listkeygroupsrequesttypedef)
+  - [ListKeyGroupsResultResponseTypeDef](#listkeygroupsresultresponsetypedef)
+  - [ListOriginRequestPoliciesRequestTypeDef](#listoriginrequestpoliciesrequesttypedef)
+  - [ListOriginRequestPoliciesResultResponseTypeDef](#listoriginrequestpoliciesresultresponsetypedef)
+  - [ListPublicKeysRequestTypeDef](#listpublickeysrequesttypedef)
+  - [ListPublicKeysResultResponseTypeDef](#listpublickeysresultresponsetypedef)
+  - [ListRealtimeLogConfigsRequestTypeDef](#listrealtimelogconfigsrequesttypedef)
+  - [ListRealtimeLogConfigsResultResponseTypeDef](#listrealtimelogconfigsresultresponsetypedef)
+  - [ListStreamingDistributionsRequestTypeDef](#liststreamingdistributionsrequesttypedef)
+  - [ListStreamingDistributionsResultResponseTypeDef](#liststreamingdistributionsresultresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResultResponseTypeDef](#listtagsforresourceresultresponsetypedef)
   - [LoggingConfigTypeDef](#loggingconfigtypedef)
   - [MonitoringSubscriptionTypeDef](#monitoringsubscriptiontypedef)
   - [OriginCustomHeaderTypeDef](#origincustomheadertypedef)
@@ -159,7 +227,8 @@ type annotations stubs module
   - [PublicKeyListTypeDef](#publickeylisttypedef)
   - [PublicKeySummaryTypeDef](#publickeysummarytypedef)
   - [PublicKeyTypeDef](#publickeytypedef)
-  - [PublishFunctionResultTypeDef](#publishfunctionresulttypedef)
+  - [PublishFunctionRequestTypeDef](#publishfunctionrequesttypedef)
+  - [PublishFunctionResultResponseTypeDef](#publishfunctionresultresponsetypedef)
   - [QueryArgProfileConfigTypeDef](#queryargprofileconfigtypedef)
   - [QueryArgProfileTypeDef](#queryargprofiletypedef)
   - [QueryArgProfilesTypeDef](#queryargprofilestypedef)
@@ -168,6 +237,7 @@ type annotations stubs module
   - [RealtimeLogConfigTypeDef](#realtimelogconfigtypedef)
   - [RealtimeLogConfigsTypeDef](#realtimelogconfigstypedef)
   - [RealtimeMetricsSubscriptionConfigTypeDef](#realtimemetricssubscriptionconfigtypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RestrictionsTypeDef](#restrictionstypedef)
   - [S3OriginConfigTypeDef](#s3originconfigtypedef)
   - [S3OriginTypeDef](#s3origintypedef)
@@ -180,23 +250,37 @@ type annotations stubs module
   - [StreamingDistributionTypeDef](#streamingdistributiontypedef)
   - [StreamingLoggingConfigTypeDef](#streamingloggingconfigtypedef)
   - [TagKeysTypeDef](#tagkeystypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TagsTypeDef](#tagstypedef)
-  - [TestFunctionResultTypeDef](#testfunctionresulttypedef)
+  - [TestFunctionRequestTypeDef](#testfunctionrequesttypedef)
+  - [TestFunctionResultResponseTypeDef](#testfunctionresultresponsetypedef)
   - [TestResultTypeDef](#testresulttypedef)
   - [TrustedKeyGroupsTypeDef](#trustedkeygroupstypedef)
   - [TrustedSignersTypeDef](#trustedsignerstypedef)
-  - [UpdateCachePolicyResultTypeDef](#updatecachepolicyresulttypedef)
-  - [UpdateCloudFrontOriginAccessIdentityResultTypeDef](#updatecloudfrontoriginaccessidentityresulttypedef)
-  - [UpdateDistributionResultTypeDef](#updatedistributionresulttypedef)
-  - [UpdateFieldLevelEncryptionConfigResultTypeDef](#updatefieldlevelencryptionconfigresulttypedef)
-  - [UpdateFieldLevelEncryptionProfileResultTypeDef](#updatefieldlevelencryptionprofileresulttypedef)
-  - [UpdateFunctionResultTypeDef](#updatefunctionresulttypedef)
-  - [UpdateKeyGroupResultTypeDef](#updatekeygroupresulttypedef)
-  - [UpdateOriginRequestPolicyResultTypeDef](#updateoriginrequestpolicyresulttypedef)
-  - [UpdatePublicKeyResultTypeDef](#updatepublickeyresulttypedef)
-  - [UpdateRealtimeLogConfigResultTypeDef](#updaterealtimelogconfigresulttypedef)
-  - [UpdateStreamingDistributionResultTypeDef](#updatestreamingdistributionresulttypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateCachePolicyRequestTypeDef](#updatecachepolicyrequesttypedef)
+  - [UpdateCachePolicyResultResponseTypeDef](#updatecachepolicyresultresponsetypedef)
+  - [UpdateCloudFrontOriginAccessIdentityRequestTypeDef](#updatecloudfrontoriginaccessidentityrequesttypedef)
+  - [UpdateCloudFrontOriginAccessIdentityResultResponseTypeDef](#updatecloudfrontoriginaccessidentityresultresponsetypedef)
+  - [UpdateDistributionRequestTypeDef](#updatedistributionrequesttypedef)
+  - [UpdateDistributionResultResponseTypeDef](#updatedistributionresultresponsetypedef)
+  - [UpdateFieldLevelEncryptionConfigRequestTypeDef](#updatefieldlevelencryptionconfigrequesttypedef)
+  - [UpdateFieldLevelEncryptionConfigResultResponseTypeDef](#updatefieldlevelencryptionconfigresultresponsetypedef)
+  - [UpdateFieldLevelEncryptionProfileRequestTypeDef](#updatefieldlevelencryptionprofilerequesttypedef)
+  - [UpdateFieldLevelEncryptionProfileResultResponseTypeDef](#updatefieldlevelencryptionprofileresultresponsetypedef)
+  - [UpdateFunctionRequestTypeDef](#updatefunctionrequesttypedef)
+  - [UpdateFunctionResultResponseTypeDef](#updatefunctionresultresponsetypedef)
+  - [UpdateKeyGroupRequestTypeDef](#updatekeygrouprequesttypedef)
+  - [UpdateKeyGroupResultResponseTypeDef](#updatekeygroupresultresponsetypedef)
+  - [UpdateOriginRequestPolicyRequestTypeDef](#updateoriginrequestpolicyrequesttypedef)
+  - [UpdateOriginRequestPolicyResultResponseTypeDef](#updateoriginrequestpolicyresultresponsetypedef)
+  - [UpdatePublicKeyRequestTypeDef](#updatepublickeyrequesttypedef)
+  - [UpdatePublicKeyResultResponseTypeDef](#updatepublickeyresultresponsetypedef)
+  - [UpdateRealtimeLogConfigRequestTypeDef](#updaterealtimelogconfigrequesttypedef)
+  - [UpdateRealtimeLogConfigResultResponseTypeDef](#updaterealtimelogconfigresultresponsetypedef)
+  - [UpdateStreamingDistributionRequestTypeDef](#updatestreamingdistributionrequesttypedef)
+  - [UpdateStreamingDistributionResultResponseTypeDef](#updatestreamingdistributionresultresponsetypedef)
   - [ViewerCertificateTypeDef](#viewercertificatetypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
@@ -572,189 +656,390 @@ Optional fields:
 
 - `WhitelistedNames`: [CookieNamesTypeDef](./type_defs.md#cookienamestypedef)
 
-## CreateCachePolicyResultTypeDef
+## CreateCachePolicyRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import CreateCachePolicyResultTypeDef
+from mypy_boto3_cloudfront.type_defs import CreateCachePolicyRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `CachePolicyConfig`:
+  [CachePolicyConfigTypeDef](./type_defs.md#cachepolicyconfigtypedef)
+
+## CreateCachePolicyResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import CreateCachePolicyResultResponseTypeDef
+```
+
+Required fields:
 
 - `CachePolicy`: [CachePolicyTypeDef](./type_defs.md#cachepolicytypedef)
 - `Location`: `str`
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateCloudFrontOriginAccessIdentityResultTypeDef
+## CreateCloudFrontOriginAccessIdentityRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import CreateCloudFrontOriginAccessIdentityResultTypeDef
+from mypy_boto3_cloudfront.type_defs import CreateCloudFrontOriginAccessIdentityRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `CloudFrontOriginAccessIdentityConfig`:
+  [CloudFrontOriginAccessIdentityConfigTypeDef](./type_defs.md#cloudfrontoriginaccessidentityconfigtypedef)
+
+## CreateCloudFrontOriginAccessIdentityResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import CreateCloudFrontOriginAccessIdentityResultResponseTypeDef
+```
+
+Required fields:
 
 - `CloudFrontOriginAccessIdentity`:
   [CloudFrontOriginAccessIdentityTypeDef](./type_defs.md#cloudfrontoriginaccessidentitytypedef)
 - `Location`: `str`
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDistributionResultTypeDef
+## CreateDistributionRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import CreateDistributionResultTypeDef
+from mypy_boto3_cloudfront.type_defs import CreateDistributionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DistributionConfig`:
+  [DistributionConfigTypeDef](./type_defs.md#distributionconfigtypedef)
+
+## CreateDistributionResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import CreateDistributionResultResponseTypeDef
+```
+
+Required fields:
 
 - `Distribution`: [DistributionTypeDef](./type_defs.md#distributiontypedef)
 - `Location`: `str`
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDistributionWithTagsResultTypeDef
+## CreateDistributionWithTagsRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import CreateDistributionWithTagsResultTypeDef
+from mypy_boto3_cloudfront.type_defs import CreateDistributionWithTagsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DistributionConfigWithTags`:
+  [DistributionConfigWithTagsTypeDef](./type_defs.md#distributionconfigwithtagstypedef)
+
+## CreateDistributionWithTagsResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import CreateDistributionWithTagsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Distribution`: [DistributionTypeDef](./type_defs.md#distributiontypedef)
 - `Location`: `str`
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateFieldLevelEncryptionConfigResultTypeDef
+## CreateFieldLevelEncryptionConfigRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import CreateFieldLevelEncryptionConfigResultTypeDef
+from mypy_boto3_cloudfront.type_defs import CreateFieldLevelEncryptionConfigRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `FieldLevelEncryptionConfig`:
+  [FieldLevelEncryptionConfigTypeDef](./type_defs.md#fieldlevelencryptionconfigtypedef)
+
+## CreateFieldLevelEncryptionConfigResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import CreateFieldLevelEncryptionConfigResultResponseTypeDef
+```
+
+Required fields:
 
 - `FieldLevelEncryption`:
   [FieldLevelEncryptionTypeDef](./type_defs.md#fieldlevelencryptiontypedef)
 - `Location`: `str`
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateFieldLevelEncryptionProfileResultTypeDef
+## CreateFieldLevelEncryptionProfileRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import CreateFieldLevelEncryptionProfileResultTypeDef
+from mypy_boto3_cloudfront.type_defs import CreateFieldLevelEncryptionProfileRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `FieldLevelEncryptionProfileConfig`:
+  [FieldLevelEncryptionProfileConfigTypeDef](./type_defs.md#fieldlevelencryptionprofileconfigtypedef)
+
+## CreateFieldLevelEncryptionProfileResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import CreateFieldLevelEncryptionProfileResultResponseTypeDef
+```
+
+Required fields:
 
 - `FieldLevelEncryptionProfile`:
   [FieldLevelEncryptionProfileTypeDef](./type_defs.md#fieldlevelencryptionprofiletypedef)
 - `Location`: `str`
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateFunctionResultTypeDef
+## CreateFunctionRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import CreateFunctionResultTypeDef
+from mypy_boto3_cloudfront.type_defs import CreateFunctionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Name`: `str`
+- `FunctionConfig`:
+  [FunctionConfigTypeDef](./type_defs.md#functionconfigtypedef)
+- `FunctionCode`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+
+## CreateFunctionResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import CreateFunctionResultResponseTypeDef
+```
+
+Required fields:
 
 - `FunctionSummary`:
   [FunctionSummaryTypeDef](./type_defs.md#functionsummarytypedef)
 - `Location`: `str`
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateInvalidationResultTypeDef
+## CreateInvalidationRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import CreateInvalidationResultTypeDef
+from mypy_boto3_cloudfront.type_defs import CreateInvalidationRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DistributionId`: `str`
+- `InvalidationBatch`:
+  [InvalidationBatchTypeDef](./type_defs.md#invalidationbatchtypedef)
+
+## CreateInvalidationResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import CreateInvalidationResultResponseTypeDef
+```
+
+Required fields:
 
 - `Location`: `str`
 - `Invalidation`: [InvalidationTypeDef](./type_defs.md#invalidationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateKeyGroupResultTypeDef
+## CreateKeyGroupRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import CreateKeyGroupResultTypeDef
+from mypy_boto3_cloudfront.type_defs import CreateKeyGroupRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `KeyGroupConfig`:
+  [KeyGroupConfigTypeDef](./type_defs.md#keygroupconfigtypedef)
+
+## CreateKeyGroupResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import CreateKeyGroupResultResponseTypeDef
+```
+
+Required fields:
 
 - `KeyGroup`: [KeyGroupTypeDef](./type_defs.md#keygrouptypedef)
 - `Location`: `str`
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateMonitoringSubscriptionResultTypeDef
+## CreateMonitoringSubscriptionRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import CreateMonitoringSubscriptionResultTypeDef
+from mypy_boto3_cloudfront.type_defs import CreateMonitoringSubscriptionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
+- `DistributionId`: `str`
 - `MonitoringSubscription`:
   [MonitoringSubscriptionTypeDef](./type_defs.md#monitoringsubscriptiontypedef)
 
-## CreateOriginRequestPolicyResultTypeDef
+## CreateMonitoringSubscriptionResultResponseTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import CreateOriginRequestPolicyResultTypeDef
+from mypy_boto3_cloudfront.type_defs import CreateMonitoringSubscriptionResultResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `MonitoringSubscription`:
+  [MonitoringSubscriptionTypeDef](./type_defs.md#monitoringsubscriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateOriginRequestPolicyRequestTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import CreateOriginRequestPolicyRequestTypeDef
+```
+
+Required fields:
+
+- `OriginRequestPolicyConfig`:
+  [OriginRequestPolicyConfigTypeDef](./type_defs.md#originrequestpolicyconfigtypedef)
+
+## CreateOriginRequestPolicyResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import CreateOriginRequestPolicyResultResponseTypeDef
+```
+
+Required fields:
 
 - `OriginRequestPolicy`:
   [OriginRequestPolicyTypeDef](./type_defs.md#originrequestpolicytypedef)
 - `Location`: `str`
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePublicKeyResultTypeDef
+## CreatePublicKeyRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import CreatePublicKeyResultTypeDef
+from mypy_boto3_cloudfront.type_defs import CreatePublicKeyRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `PublicKeyConfig`:
+  [PublicKeyConfigTypeDef](./type_defs.md#publickeyconfigtypedef)
+
+## CreatePublicKeyResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import CreatePublicKeyResultResponseTypeDef
+```
+
+Required fields:
 
 - `PublicKey`: [PublicKeyTypeDef](./type_defs.md#publickeytypedef)
 - `Location`: `str`
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRealtimeLogConfigResultTypeDef
+## CreateRealtimeLogConfigRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import CreateRealtimeLogConfigResultTypeDef
+from mypy_boto3_cloudfront.type_defs import CreateRealtimeLogConfigRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `EndPoints`: `List`\[[EndPointTypeDef](./type_defs.md#endpointtypedef)\]
+- `Fields`: `List`\[`str`\]
+- `Name`: `str`
+- `SamplingRate`: `int`
+
+## CreateRealtimeLogConfigResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import CreateRealtimeLogConfigResultResponseTypeDef
+```
+
+Required fields:
 
 - `RealtimeLogConfig`:
   [RealtimeLogConfigTypeDef](./type_defs.md#realtimelogconfigtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateStreamingDistributionResultTypeDef
+## CreateStreamingDistributionRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import CreateStreamingDistributionResultTypeDef
+from mypy_boto3_cloudfront.type_defs import CreateStreamingDistributionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `StreamingDistributionConfig`:
+  [StreamingDistributionConfigTypeDef](./type_defs.md#streamingdistributionconfigtypedef)
+
+## CreateStreamingDistributionResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import CreateStreamingDistributionResultResponseTypeDef
+```
+
+Required fields:
 
 - `StreamingDistribution`:
   [StreamingDistributionTypeDef](./type_defs.md#streamingdistributiontypedef)
 - `Location`: `str`
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateStreamingDistributionWithTagsResultTypeDef
+## CreateStreamingDistributionWithTagsRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import CreateStreamingDistributionWithTagsResultTypeDef
+from mypy_boto3_cloudfront.type_defs import CreateStreamingDistributionWithTagsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `StreamingDistributionConfigWithTags`:
+  [StreamingDistributionConfigWithTagsTypeDef](./type_defs.md#streamingdistributionconfigwithtagstypedef)
+
+## CreateStreamingDistributionWithTagsResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import CreateStreamingDistributionWithTagsResultResponseTypeDef
+```
+
+Required fields:
 
 - `StreamingDistribution`:
   [StreamingDistributionTypeDef](./type_defs.md#streamingdistributiontypedef)
 - `Location`: `str`
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CustomErrorResponseTypeDef
 
@@ -858,17 +1143,191 @@ Optional fields:
 - `DefaultTTL`: `int`
 - `MaxTTL`: `int`
 
-## DescribeFunctionResultTypeDef
+## DeleteCachePolicyRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import DescribeFunctionResultTypeDef
+from mypy_boto3_cloudfront.type_defs import DeleteCachePolicyRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+Optional fields:
+
+- `IfMatch`: `str`
+
+## DeleteCloudFrontOriginAccessIdentityRequestTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import DeleteCloudFrontOriginAccessIdentityRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+Optional fields:
+
+- `IfMatch`: `str`
+
+## DeleteDistributionRequestTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import DeleteDistributionRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+Optional fields:
+
+- `IfMatch`: `str`
+
+## DeleteFieldLevelEncryptionConfigRequestTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import DeleteFieldLevelEncryptionConfigRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+Optional fields:
+
+- `IfMatch`: `str`
+
+## DeleteFieldLevelEncryptionProfileRequestTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import DeleteFieldLevelEncryptionProfileRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+Optional fields:
+
+- `IfMatch`: `str`
+
+## DeleteFunctionRequestTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import DeleteFunctionRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `IfMatch`: `str`
+
+## DeleteKeyGroupRequestTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import DeleteKeyGroupRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+Optional fields:
+
+- `IfMatch`: `str`
+
+## DeleteMonitoringSubscriptionRequestTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import DeleteMonitoringSubscriptionRequestTypeDef
+```
+
+Required fields:
+
+- `DistributionId`: `str`
+
+## DeleteOriginRequestPolicyRequestTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import DeleteOriginRequestPolicyRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+Optional fields:
+
+- `IfMatch`: `str`
+
+## DeletePublicKeyRequestTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import DeletePublicKeyRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+Optional fields:
+
+- `IfMatch`: `str`
+
+## DeleteRealtimeLogConfigRequestTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import DeleteRealtimeLogConfigRequestTypeDef
 ```
 
 Optional fields:
 
+- `Name`: `str`
+- `ARN`: `str`
+
+## DeleteStreamingDistributionRequestTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import DeleteStreamingDistributionRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+Optional fields:
+
+- `IfMatch`: `str`
+
+## DescribeFunctionRequestTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import DescribeFunctionRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+Optional fields:
+
+- `Stage`: [FunctionStageType](./literals.md#functionstagetype)
+
+## DescribeFunctionResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import DescribeFunctionResultResponseTypeDef
+```
+
+Required fields:
+
 - `FunctionSummary`:
   [FunctionSummaryTypeDef](./type_defs.md#functionsummarytypedef)
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DistributionConfigTypeDef
 
@@ -1325,261 +1784,531 @@ Optional fields:
 
 - `Items`: `List`\[`str`\]
 
-## GetCachePolicyConfigResultTypeDef
+## GetCachePolicyConfigRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import GetCachePolicyConfigResultTypeDef
+from mypy_boto3_cloudfront.type_defs import GetCachePolicyConfigRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## GetCachePolicyConfigResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import GetCachePolicyConfigResultResponseTypeDef
+```
+
+Required fields:
 
 - `CachePolicyConfig`:
   [CachePolicyConfigTypeDef](./type_defs.md#cachepolicyconfigtypedef)
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCachePolicyResultTypeDef
+## GetCachePolicyRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import GetCachePolicyResultTypeDef
+from mypy_boto3_cloudfront.type_defs import GetCachePolicyRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## GetCachePolicyResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import GetCachePolicyResultResponseTypeDef
+```
+
+Required fields:
 
 - `CachePolicy`: [CachePolicyTypeDef](./type_defs.md#cachepolicytypedef)
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCloudFrontOriginAccessIdentityConfigResultTypeDef
+## GetCloudFrontOriginAccessIdentityConfigRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import GetCloudFrontOriginAccessIdentityConfigResultTypeDef
+from mypy_boto3_cloudfront.type_defs import GetCloudFrontOriginAccessIdentityConfigRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## GetCloudFrontOriginAccessIdentityConfigResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import GetCloudFrontOriginAccessIdentityConfigResultResponseTypeDef
+```
+
+Required fields:
 
 - `CloudFrontOriginAccessIdentityConfig`:
   [CloudFrontOriginAccessIdentityConfigTypeDef](./type_defs.md#cloudfrontoriginaccessidentityconfigtypedef)
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCloudFrontOriginAccessIdentityResultTypeDef
+## GetCloudFrontOriginAccessIdentityRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import GetCloudFrontOriginAccessIdentityResultTypeDef
+from mypy_boto3_cloudfront.type_defs import GetCloudFrontOriginAccessIdentityRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## GetCloudFrontOriginAccessIdentityResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import GetCloudFrontOriginAccessIdentityResultResponseTypeDef
+```
+
+Required fields:
 
 - `CloudFrontOriginAccessIdentity`:
   [CloudFrontOriginAccessIdentityTypeDef](./type_defs.md#cloudfrontoriginaccessidentitytypedef)
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDistributionConfigResultTypeDef
+## GetDistributionConfigRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import GetDistributionConfigResultTypeDef
+from mypy_boto3_cloudfront.type_defs import GetDistributionConfigRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## GetDistributionConfigResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import GetDistributionConfigResultResponseTypeDef
+```
+
+Required fields:
 
 - `DistributionConfig`:
   [DistributionConfigTypeDef](./type_defs.md#distributionconfigtypedef)
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDistributionResultTypeDef
+## GetDistributionRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import GetDistributionResultTypeDef
+from mypy_boto3_cloudfront.type_defs import GetDistributionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## GetDistributionResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import GetDistributionResultResponseTypeDef
+```
+
+Required fields:
 
 - `Distribution`: [DistributionTypeDef](./type_defs.md#distributiontypedef)
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFieldLevelEncryptionConfigResultTypeDef
+## GetFieldLevelEncryptionConfigRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import GetFieldLevelEncryptionConfigResultTypeDef
+from mypy_boto3_cloudfront.type_defs import GetFieldLevelEncryptionConfigRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## GetFieldLevelEncryptionConfigResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import GetFieldLevelEncryptionConfigResultResponseTypeDef
+```
+
+Required fields:
 
 - `FieldLevelEncryptionConfig`:
   [FieldLevelEncryptionConfigTypeDef](./type_defs.md#fieldlevelencryptionconfigtypedef)
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFieldLevelEncryptionProfileConfigResultTypeDef
+## GetFieldLevelEncryptionProfileConfigRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import GetFieldLevelEncryptionProfileConfigResultTypeDef
+from mypy_boto3_cloudfront.type_defs import GetFieldLevelEncryptionProfileConfigRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## GetFieldLevelEncryptionProfileConfigResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import GetFieldLevelEncryptionProfileConfigResultResponseTypeDef
+```
+
+Required fields:
 
 - `FieldLevelEncryptionProfileConfig`:
   [FieldLevelEncryptionProfileConfigTypeDef](./type_defs.md#fieldlevelencryptionprofileconfigtypedef)
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFieldLevelEncryptionProfileResultTypeDef
+## GetFieldLevelEncryptionProfileRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import GetFieldLevelEncryptionProfileResultTypeDef
+from mypy_boto3_cloudfront.type_defs import GetFieldLevelEncryptionProfileRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## GetFieldLevelEncryptionProfileResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import GetFieldLevelEncryptionProfileResultResponseTypeDef
+```
+
+Required fields:
 
 - `FieldLevelEncryptionProfile`:
   [FieldLevelEncryptionProfileTypeDef](./type_defs.md#fieldlevelencryptionprofiletypedef)
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFieldLevelEncryptionResultTypeDef
+## GetFieldLevelEncryptionRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import GetFieldLevelEncryptionResultTypeDef
+from mypy_boto3_cloudfront.type_defs import GetFieldLevelEncryptionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## GetFieldLevelEncryptionResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import GetFieldLevelEncryptionResultResponseTypeDef
+```
+
+Required fields:
 
 - `FieldLevelEncryption`:
   [FieldLevelEncryptionTypeDef](./type_defs.md#fieldlevelencryptiontypedef)
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFunctionResultTypeDef
+## GetFunctionRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import GetFunctionResultTypeDef
+from mypy_boto3_cloudfront.type_defs import GetFunctionRequestTypeDef
 ```
+
+Required fields:
+
+- `Name`: `str`
 
 Optional fields:
 
-- `FunctionCode`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `Stage`: [FunctionStageType](./literals.md#functionstagetype)
+
+## GetFunctionResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import GetFunctionResultResponseTypeDef
+```
+
+Required fields:
+
+- `FunctionCode`: `bytes`
 - `ETag`: `str`
 - `ContentType`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetInvalidationResultTypeDef
+## GetInvalidationRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import GetInvalidationResultTypeDef
+from mypy_boto3_cloudfront.type_defs import GetInvalidationRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DistributionId`: `str`
+- `Id`: `str`
+
+## GetInvalidationResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import GetInvalidationResultResponseTypeDef
+```
+
+Required fields:
 
 - `Invalidation`: [InvalidationTypeDef](./type_defs.md#invalidationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetKeyGroupConfigResultTypeDef
+## GetKeyGroupConfigRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import GetKeyGroupConfigResultTypeDef
+from mypy_boto3_cloudfront.type_defs import GetKeyGroupConfigRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## GetKeyGroupConfigResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import GetKeyGroupConfigResultResponseTypeDef
+```
+
+Required fields:
 
 - `KeyGroupConfig`:
   [KeyGroupConfigTypeDef](./type_defs.md#keygroupconfigtypedef)
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetKeyGroupResultTypeDef
+## GetKeyGroupRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import GetKeyGroupResultTypeDef
+from mypy_boto3_cloudfront.type_defs import GetKeyGroupRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## GetKeyGroupResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import GetKeyGroupResultResponseTypeDef
+```
+
+Required fields:
 
 - `KeyGroup`: [KeyGroupTypeDef](./type_defs.md#keygrouptypedef)
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMonitoringSubscriptionResultTypeDef
+## GetMonitoringSubscriptionRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import GetMonitoringSubscriptionResultTypeDef
+from mypy_boto3_cloudfront.type_defs import GetMonitoringSubscriptionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DistributionId`: `str`
+
+## GetMonitoringSubscriptionResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import GetMonitoringSubscriptionResultResponseTypeDef
+```
+
+Required fields:
 
 - `MonitoringSubscription`:
   [MonitoringSubscriptionTypeDef](./type_defs.md#monitoringsubscriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetOriginRequestPolicyConfigResultTypeDef
+## GetOriginRequestPolicyConfigRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import GetOriginRequestPolicyConfigResultTypeDef
+from mypy_boto3_cloudfront.type_defs import GetOriginRequestPolicyConfigRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## GetOriginRequestPolicyConfigResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import GetOriginRequestPolicyConfigResultResponseTypeDef
+```
+
+Required fields:
 
 - `OriginRequestPolicyConfig`:
   [OriginRequestPolicyConfigTypeDef](./type_defs.md#originrequestpolicyconfigtypedef)
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetOriginRequestPolicyResultTypeDef
+## GetOriginRequestPolicyRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import GetOriginRequestPolicyResultTypeDef
+from mypy_boto3_cloudfront.type_defs import GetOriginRequestPolicyRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## GetOriginRequestPolicyResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import GetOriginRequestPolicyResultResponseTypeDef
+```
+
+Required fields:
 
 - `OriginRequestPolicy`:
   [OriginRequestPolicyTypeDef](./type_defs.md#originrequestpolicytypedef)
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPublicKeyConfigResultTypeDef
+## GetPublicKeyConfigRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import GetPublicKeyConfigResultTypeDef
+from mypy_boto3_cloudfront.type_defs import GetPublicKeyConfigRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## GetPublicKeyConfigResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import GetPublicKeyConfigResultResponseTypeDef
+```
+
+Required fields:
 
 - `PublicKeyConfig`:
   [PublicKeyConfigTypeDef](./type_defs.md#publickeyconfigtypedef)
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPublicKeyResultTypeDef
+## GetPublicKeyRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import GetPublicKeyResultTypeDef
+from mypy_boto3_cloudfront.type_defs import GetPublicKeyRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## GetPublicKeyResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import GetPublicKeyResultResponseTypeDef
+```
+
+Required fields:
 
 - `PublicKey`: [PublicKeyTypeDef](./type_defs.md#publickeytypedef)
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRealtimeLogConfigResultTypeDef
+## GetRealtimeLogConfigRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import GetRealtimeLogConfigResultTypeDef
+from mypy_boto3_cloudfront.type_defs import GetRealtimeLogConfigRequestTypeDef
 ```
 
 Optional fields:
+
+- `Name`: `str`
+- `ARN`: `str`
+
+## GetRealtimeLogConfigResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import GetRealtimeLogConfigResultResponseTypeDef
+```
+
+Required fields:
 
 - `RealtimeLogConfig`:
   [RealtimeLogConfigTypeDef](./type_defs.md#realtimelogconfigtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetStreamingDistributionConfigResultTypeDef
+## GetStreamingDistributionConfigRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import GetStreamingDistributionConfigResultTypeDef
+from mypy_boto3_cloudfront.type_defs import GetStreamingDistributionConfigRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## GetStreamingDistributionConfigResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import GetStreamingDistributionConfigResultResponseTypeDef
+```
+
+Required fields:
 
 - `StreamingDistributionConfig`:
   [StreamingDistributionConfigTypeDef](./type_defs.md#streamingdistributionconfigtypedef)
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetStreamingDistributionResultTypeDef
+## GetStreamingDistributionRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import GetStreamingDistributionResultTypeDef
+from mypy_boto3_cloudfront.type_defs import GetStreamingDistributionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## GetStreamingDistributionResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import GetStreamingDistributionResultResponseTypeDef
+```
+
+Required fields:
 
 - `StreamingDistribution`:
   [StreamingDistributionTypeDef](./type_defs.md#streamingdistributiontypedef)
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## HeadersTypeDef
 
@@ -1772,199 +2501,458 @@ Optional fields:
 - `Items`:
   `List`\[[LambdaFunctionAssociationTypeDef](./type_defs.md#lambdafunctionassociationtypedef)\]
 
-## ListCachePoliciesResultTypeDef
+## ListCachePoliciesRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import ListCachePoliciesResultTypeDef
+from mypy_boto3_cloudfront.type_defs import ListCachePoliciesRequestTypeDef
 ```
 
 Optional fields:
+
+- `Type`: [CachePolicyTypeType](./literals.md#cachepolicytypetype)
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+## ListCachePoliciesResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ListCachePoliciesResultResponseTypeDef
+```
+
+Required fields:
 
 - `CachePolicyList`:
   [CachePolicyListTypeDef](./type_defs.md#cachepolicylisttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListCloudFrontOriginAccessIdentitiesResultTypeDef
+## ListCloudFrontOriginAccessIdentitiesRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import ListCloudFrontOriginAccessIdentitiesResultTypeDef
+from mypy_boto3_cloudfront.type_defs import ListCloudFrontOriginAccessIdentitiesRequestTypeDef
 ```
 
 Optional fields:
+
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+## ListCloudFrontOriginAccessIdentitiesResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ListCloudFrontOriginAccessIdentitiesResultResponseTypeDef
+```
+
+Required fields:
 
 - `CloudFrontOriginAccessIdentityList`:
   [CloudFrontOriginAccessIdentityListTypeDef](./type_defs.md#cloudfrontoriginaccessidentitylisttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDistributionsByCachePolicyIdResultTypeDef
+## ListDistributionsByCachePolicyIdRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import ListDistributionsByCachePolicyIdResultTypeDef
+from mypy_boto3_cloudfront.type_defs import ListDistributionsByCachePolicyIdRequestTypeDef
 ```
 
+Required fields:
+
+- `CachePolicyId`: `str`
+
 Optional fields:
+
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+## ListDistributionsByCachePolicyIdResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ListDistributionsByCachePolicyIdResultResponseTypeDef
+```
+
+Required fields:
 
 - `DistributionIdList`:
   [DistributionIdListTypeDef](./type_defs.md#distributionidlisttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDistributionsByKeyGroupResultTypeDef
+## ListDistributionsByKeyGroupRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import ListDistributionsByKeyGroupResultTypeDef
+from mypy_boto3_cloudfront.type_defs import ListDistributionsByKeyGroupRequestTypeDef
 ```
 
+Required fields:
+
+- `KeyGroupId`: `str`
+
 Optional fields:
+
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+## ListDistributionsByKeyGroupResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ListDistributionsByKeyGroupResultResponseTypeDef
+```
+
+Required fields:
 
 - `DistributionIdList`:
   [DistributionIdListTypeDef](./type_defs.md#distributionidlisttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDistributionsByOriginRequestPolicyIdResultTypeDef
+## ListDistributionsByOriginRequestPolicyIdRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import ListDistributionsByOriginRequestPolicyIdResultTypeDef
+from mypy_boto3_cloudfront.type_defs import ListDistributionsByOriginRequestPolicyIdRequestTypeDef
 ```
 
+Required fields:
+
+- `OriginRequestPolicyId`: `str`
+
 Optional fields:
+
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+## ListDistributionsByOriginRequestPolicyIdResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ListDistributionsByOriginRequestPolicyIdResultResponseTypeDef
+```
+
+Required fields:
 
 - `DistributionIdList`:
   [DistributionIdListTypeDef](./type_defs.md#distributionidlisttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDistributionsByRealtimeLogConfigResultTypeDef
+## ListDistributionsByRealtimeLogConfigRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import ListDistributionsByRealtimeLogConfigResultTypeDef
+from mypy_boto3_cloudfront.type_defs import ListDistributionsByRealtimeLogConfigRequestTypeDef
 ```
 
 Optional fields:
+
+- `Marker`: `str`
+- `MaxItems`: `str`
+- `RealtimeLogConfigName`: `str`
+- `RealtimeLogConfigArn`: `str`
+
+## ListDistributionsByRealtimeLogConfigResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ListDistributionsByRealtimeLogConfigResultResponseTypeDef
+```
+
+Required fields:
 
 - `DistributionList`:
   [DistributionListTypeDef](./type_defs.md#distributionlisttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDistributionsByWebACLIdResultTypeDef
+## ListDistributionsByWebACLIdRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import ListDistributionsByWebACLIdResultTypeDef
+from mypy_boto3_cloudfront.type_defs import ListDistributionsByWebACLIdRequestTypeDef
 ```
 
+Required fields:
+
+- `WebACLId`: `str`
+
 Optional fields:
+
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+## ListDistributionsByWebACLIdResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ListDistributionsByWebACLIdResultResponseTypeDef
+```
+
+Required fields:
 
 - `DistributionList`:
   [DistributionListTypeDef](./type_defs.md#distributionlisttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDistributionsResultTypeDef
+## ListDistributionsRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import ListDistributionsResultTypeDef
+from mypy_boto3_cloudfront.type_defs import ListDistributionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+## ListDistributionsResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ListDistributionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `DistributionList`:
   [DistributionListTypeDef](./type_defs.md#distributionlisttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFieldLevelEncryptionConfigsResultTypeDef
+## ListFieldLevelEncryptionConfigsRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import ListFieldLevelEncryptionConfigsResultTypeDef
+from mypy_boto3_cloudfront.type_defs import ListFieldLevelEncryptionConfigsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+## ListFieldLevelEncryptionConfigsResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ListFieldLevelEncryptionConfigsResultResponseTypeDef
+```
+
+Required fields:
 
 - `FieldLevelEncryptionList`:
   [FieldLevelEncryptionListTypeDef](./type_defs.md#fieldlevelencryptionlisttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFieldLevelEncryptionProfilesResultTypeDef
+## ListFieldLevelEncryptionProfilesRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import ListFieldLevelEncryptionProfilesResultTypeDef
+from mypy_boto3_cloudfront.type_defs import ListFieldLevelEncryptionProfilesRequestTypeDef
 ```
 
 Optional fields:
+
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+## ListFieldLevelEncryptionProfilesResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ListFieldLevelEncryptionProfilesResultResponseTypeDef
+```
+
+Required fields:
 
 - `FieldLevelEncryptionProfileList`:
   [FieldLevelEncryptionProfileListTypeDef](./type_defs.md#fieldlevelencryptionprofilelisttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFunctionsResultTypeDef
+## ListFunctionsRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import ListFunctionsResultTypeDef
+from mypy_boto3_cloudfront.type_defs import ListFunctionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Marker`: `str`
+- `MaxItems`: `str`
+- `Stage`: [FunctionStageType](./literals.md#functionstagetype)
+
+## ListFunctionsResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ListFunctionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `FunctionList`: [FunctionListTypeDef](./type_defs.md#functionlisttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListInvalidationsResultTypeDef
+## ListInvalidationsRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import ListInvalidationsResultTypeDef
+from mypy_boto3_cloudfront.type_defs import ListInvalidationsRequestTypeDef
 ```
 
+Required fields:
+
+- `DistributionId`: `str`
+
 Optional fields:
+
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+## ListInvalidationsResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ListInvalidationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `InvalidationList`:
   [InvalidationListTypeDef](./type_defs.md#invalidationlisttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListKeyGroupsResultTypeDef
+## ListKeyGroupsRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import ListKeyGroupsResultTypeDef
+from mypy_boto3_cloudfront.type_defs import ListKeyGroupsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+## ListKeyGroupsResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ListKeyGroupsResultResponseTypeDef
+```
+
+Required fields:
 
 - `KeyGroupList`: [KeyGroupListTypeDef](./type_defs.md#keygrouplisttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListOriginRequestPoliciesResultTypeDef
+## ListOriginRequestPoliciesRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import ListOriginRequestPoliciesResultTypeDef
+from mypy_boto3_cloudfront.type_defs import ListOriginRequestPoliciesRequestTypeDef
 ```
 
 Optional fields:
+
+- `Type`:
+  [OriginRequestPolicyTypeType](./literals.md#originrequestpolicytypetype)
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+## ListOriginRequestPoliciesResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ListOriginRequestPoliciesResultResponseTypeDef
+```
+
+Required fields:
 
 - `OriginRequestPolicyList`:
   [OriginRequestPolicyListTypeDef](./type_defs.md#originrequestpolicylisttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPublicKeysResultTypeDef
+## ListPublicKeysRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import ListPublicKeysResultTypeDef
+from mypy_boto3_cloudfront.type_defs import ListPublicKeysRequestTypeDef
 ```
 
 Optional fields:
+
+- `Marker`: `str`
+- `MaxItems`: `str`
+
+## ListPublicKeysResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ListPublicKeysResultResponseTypeDef
+```
+
+Required fields:
 
 - `PublicKeyList`: [PublicKeyListTypeDef](./type_defs.md#publickeylisttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRealtimeLogConfigsResultTypeDef
+## ListRealtimeLogConfigsRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import ListRealtimeLogConfigsResultTypeDef
+from mypy_boto3_cloudfront.type_defs import ListRealtimeLogConfigsRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxItems`: `str`
+- `Marker`: `str`
+
+## ListRealtimeLogConfigsResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ListRealtimeLogConfigsResultResponseTypeDef
+```
+
+Required fields:
 
 - `RealtimeLogConfigs`:
   [RealtimeLogConfigsTypeDef](./type_defs.md#realtimelogconfigstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListStreamingDistributionsResultTypeDef
+## ListStreamingDistributionsRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import ListStreamingDistributionsResultTypeDef
+from mypy_boto3_cloudfront.type_defs import ListStreamingDistributionsRequestTypeDef
 ```
 
 Optional fields:
 
-- `StreamingDistributionList`:
-  [StreamingDistributionListTypeDef](./type_defs.md#streamingdistributionlisttypedef)
+- `Marker`: `str`
+- `MaxItems`: `str`
 
-## ListTagsForResourceResultTypeDef
+## ListStreamingDistributionsResultResponseTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import ListTagsForResourceResultTypeDef
+from mypy_boto3_cloudfront.type_defs import ListStreamingDistributionsResultResponseTypeDef
+```
+
+Required fields:
+
+- `StreamingDistributionList`:
+  [StreamingDistributionListTypeDef](./type_defs.md#streamingdistributionlisttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListTagsForResourceRequestTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ListTagsForResourceRequestTypeDef
+```
+
+Required fields:
+
+- `Resource`: `str`
+
+## ListTagsForResourceResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ListTagsForResourceResultResponseTypeDef
 ```
 
 Required fields:
 
 - `Tags`: [TagsTypeDef](./type_defs.md#tagstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LoggingConfigTypeDef
 
@@ -2338,16 +3326,29 @@ Required fields:
 - `PublicKeyConfig`:
   [PublicKeyConfigTypeDef](./type_defs.md#publickeyconfigtypedef)
 
-## PublishFunctionResultTypeDef
+## PublishFunctionRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import PublishFunctionResultTypeDef
+from mypy_boto3_cloudfront.type_defs import PublishFunctionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Name`: `str`
+- `IfMatch`: `str`
+
+## PublishFunctionResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import PublishFunctionResultResponseTypeDef
+```
+
+Required fields:
 
 - `FunctionSummary`:
   [FunctionSummaryTypeDef](./type_defs.md#functionsummarytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## QueryArgProfileConfigTypeDef
 
@@ -2460,6 +3461,20 @@ Required fields:
 
 - `RealtimeMetricsSubscriptionStatus`:
   [RealtimeMetricsSubscriptionStatusType](./literals.md#realtimemetricssubscriptionstatustype)
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## RestrictionsTypeDef
 
@@ -2632,6 +3647,17 @@ Optional fields:
 
 - `Items`: `List`\[`str`\]
 
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `Resource`: `str`
+- `Tags`: [TagsTypeDef](./type_defs.md#tagstypedef)
+
 ## TagTypeDef
 
 ```python
@@ -2656,15 +3682,33 @@ Optional fields:
 
 - `Items`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## TestFunctionResultTypeDef
+## TestFunctionRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import TestFunctionResultTypeDef
+from mypy_boto3_cloudfront.type_defs import TestFunctionRequestTypeDef
 ```
+
+Required fields:
+
+- `Name`: `str`
+- `IfMatch`: `str`
+- `EventObject`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 Optional fields:
 
+- `Stage`: [FunctionStageType](./literals.md#functionstagetype)
+
+## TestFunctionResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import TestFunctionResultResponseTypeDef
+```
+
+Required fields:
+
 - `TestResult`: [TestResultTypeDef](./type_defs.md#testresulttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## TestResultTypeDef
 
@@ -2711,132 +3755,337 @@ Optional fields:
 
 - `Items`: `List`\[`str`\]
 
-## UpdateCachePolicyResultTypeDef
+## UntagResourceRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import UpdateCachePolicyResultTypeDef
+from mypy_boto3_cloudfront.type_defs import UntagResourceRequestTypeDef
 ```
 
+Required fields:
+
+- `Resource`: `str`
+- `TagKeys`: [TagKeysTypeDef](./type_defs.md#tagkeystypedef)
+
+## UpdateCachePolicyRequestTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import UpdateCachePolicyRequestTypeDef
+```
+
+Required fields:
+
+- `CachePolicyConfig`:
+  [CachePolicyConfigTypeDef](./type_defs.md#cachepolicyconfigtypedef)
+- `Id`: `str`
+
 Optional fields:
+
+- `IfMatch`: `str`
+
+## UpdateCachePolicyResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import UpdateCachePolicyResultResponseTypeDef
+```
+
+Required fields:
 
 - `CachePolicy`: [CachePolicyTypeDef](./type_defs.md#cachepolicytypedef)
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateCloudFrontOriginAccessIdentityResultTypeDef
+## UpdateCloudFrontOriginAccessIdentityRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import UpdateCloudFrontOriginAccessIdentityResultTypeDef
+from mypy_boto3_cloudfront.type_defs import UpdateCloudFrontOriginAccessIdentityRequestTypeDef
 ```
 
+Required fields:
+
+- `CloudFrontOriginAccessIdentityConfig`:
+  [CloudFrontOriginAccessIdentityConfigTypeDef](./type_defs.md#cloudfrontoriginaccessidentityconfigtypedef)
+- `Id`: `str`
+
 Optional fields:
+
+- `IfMatch`: `str`
+
+## UpdateCloudFrontOriginAccessIdentityResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import UpdateCloudFrontOriginAccessIdentityResultResponseTypeDef
+```
+
+Required fields:
 
 - `CloudFrontOriginAccessIdentity`:
   [CloudFrontOriginAccessIdentityTypeDef](./type_defs.md#cloudfrontoriginaccessidentitytypedef)
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateDistributionResultTypeDef
+## UpdateDistributionRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import UpdateDistributionResultTypeDef
+from mypy_boto3_cloudfront.type_defs import UpdateDistributionRequestTypeDef
 ```
 
+Required fields:
+
+- `DistributionConfig`:
+  [DistributionConfigTypeDef](./type_defs.md#distributionconfigtypedef)
+- `Id`: `str`
+
 Optional fields:
+
+- `IfMatch`: `str`
+
+## UpdateDistributionResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import UpdateDistributionResultResponseTypeDef
+```
+
+Required fields:
 
 - `Distribution`: [DistributionTypeDef](./type_defs.md#distributiontypedef)
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateFieldLevelEncryptionConfigResultTypeDef
+## UpdateFieldLevelEncryptionConfigRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import UpdateFieldLevelEncryptionConfigResultTypeDef
+from mypy_boto3_cloudfront.type_defs import UpdateFieldLevelEncryptionConfigRequestTypeDef
 ```
 
+Required fields:
+
+- `FieldLevelEncryptionConfig`:
+  [FieldLevelEncryptionConfigTypeDef](./type_defs.md#fieldlevelencryptionconfigtypedef)
+- `Id`: `str`
+
 Optional fields:
+
+- `IfMatch`: `str`
+
+## UpdateFieldLevelEncryptionConfigResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import UpdateFieldLevelEncryptionConfigResultResponseTypeDef
+```
+
+Required fields:
 
 - `FieldLevelEncryption`:
   [FieldLevelEncryptionTypeDef](./type_defs.md#fieldlevelencryptiontypedef)
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateFieldLevelEncryptionProfileResultTypeDef
+## UpdateFieldLevelEncryptionProfileRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import UpdateFieldLevelEncryptionProfileResultTypeDef
+from mypy_boto3_cloudfront.type_defs import UpdateFieldLevelEncryptionProfileRequestTypeDef
 ```
 
+Required fields:
+
+- `FieldLevelEncryptionProfileConfig`:
+  [FieldLevelEncryptionProfileConfigTypeDef](./type_defs.md#fieldlevelencryptionprofileconfigtypedef)
+- `Id`: `str`
+
 Optional fields:
+
+- `IfMatch`: `str`
+
+## UpdateFieldLevelEncryptionProfileResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import UpdateFieldLevelEncryptionProfileResultResponseTypeDef
+```
+
+Required fields:
 
 - `FieldLevelEncryptionProfile`:
   [FieldLevelEncryptionProfileTypeDef](./type_defs.md#fieldlevelencryptionprofiletypedef)
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateFunctionResultTypeDef
+## UpdateFunctionRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import UpdateFunctionResultTypeDef
+from mypy_boto3_cloudfront.type_defs import UpdateFunctionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Name`: `str`
+- `IfMatch`: `str`
+- `FunctionConfig`:
+  [FunctionConfigTypeDef](./type_defs.md#functionconfigtypedef)
+- `FunctionCode`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+
+## UpdateFunctionResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import UpdateFunctionResultResponseTypeDef
+```
+
+Required fields:
 
 - `FunctionSummary`:
   [FunctionSummaryTypeDef](./type_defs.md#functionsummarytypedef)
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateKeyGroupResultTypeDef
+## UpdateKeyGroupRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import UpdateKeyGroupResultTypeDef
+from mypy_boto3_cloudfront.type_defs import UpdateKeyGroupRequestTypeDef
 ```
 
+Required fields:
+
+- `KeyGroupConfig`:
+  [KeyGroupConfigTypeDef](./type_defs.md#keygroupconfigtypedef)
+- `Id`: `str`
+
 Optional fields:
+
+- `IfMatch`: `str`
+
+## UpdateKeyGroupResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import UpdateKeyGroupResultResponseTypeDef
+```
+
+Required fields:
 
 - `KeyGroup`: [KeyGroupTypeDef](./type_defs.md#keygrouptypedef)
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateOriginRequestPolicyResultTypeDef
+## UpdateOriginRequestPolicyRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import UpdateOriginRequestPolicyResultTypeDef
+from mypy_boto3_cloudfront.type_defs import UpdateOriginRequestPolicyRequestTypeDef
 ```
 
+Required fields:
+
+- `OriginRequestPolicyConfig`:
+  [OriginRequestPolicyConfigTypeDef](./type_defs.md#originrequestpolicyconfigtypedef)
+- `Id`: `str`
+
 Optional fields:
+
+- `IfMatch`: `str`
+
+## UpdateOriginRequestPolicyResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import UpdateOriginRequestPolicyResultResponseTypeDef
+```
+
+Required fields:
 
 - `OriginRequestPolicy`:
   [OriginRequestPolicyTypeDef](./type_defs.md#originrequestpolicytypedef)
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdatePublicKeyResultTypeDef
+## UpdatePublicKeyRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import UpdatePublicKeyResultTypeDef
+from mypy_boto3_cloudfront.type_defs import UpdatePublicKeyRequestTypeDef
 ```
 
+Required fields:
+
+- `PublicKeyConfig`:
+  [PublicKeyConfigTypeDef](./type_defs.md#publickeyconfigtypedef)
+- `Id`: `str`
+
 Optional fields:
+
+- `IfMatch`: `str`
+
+## UpdatePublicKeyResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import UpdatePublicKeyResultResponseTypeDef
+```
+
+Required fields:
 
 - `PublicKey`: [PublicKeyTypeDef](./type_defs.md#publickeytypedef)
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateRealtimeLogConfigResultTypeDef
+## UpdateRealtimeLogConfigRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import UpdateRealtimeLogConfigResultTypeDef
+from mypy_boto3_cloudfront.type_defs import UpdateRealtimeLogConfigRequestTypeDef
 ```
 
 Optional fields:
+
+- `EndPoints`: `List`\[[EndPointTypeDef](./type_defs.md#endpointtypedef)\]
+- `Fields`: `List`\[`str`\]
+- `Name`: `str`
+- `ARN`: `str`
+- `SamplingRate`: `int`
+
+## UpdateRealtimeLogConfigResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import UpdateRealtimeLogConfigResultResponseTypeDef
+```
+
+Required fields:
 
 - `RealtimeLogConfig`:
   [RealtimeLogConfigTypeDef](./type_defs.md#realtimelogconfigtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateStreamingDistributionResultTypeDef
+## UpdateStreamingDistributionRequestTypeDef
 
 ```python
-from mypy_boto3_cloudfront.type_defs import UpdateStreamingDistributionResultTypeDef
+from mypy_boto3_cloudfront.type_defs import UpdateStreamingDistributionRequestTypeDef
 ```
 
+Required fields:
+
+- `StreamingDistributionConfig`:
+  [StreamingDistributionConfigTypeDef](./type_defs.md#streamingdistributionconfigtypedef)
+- `Id`: `str`
+
 Optional fields:
+
+- `IfMatch`: `str`
+
+## UpdateStreamingDistributionResultResponseTypeDef
+
+```python
+from mypy_boto3_cloudfront.type_defs import UpdateStreamingDistributionResultResponseTypeDef
+```
+
+Required fields:
 
 - `StreamingDistribution`:
   [StreamingDistributionTypeDef](./type_defs.md#streamingdistributiontypedef)
 - `ETag`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ViewerCertificateTypeDef
 

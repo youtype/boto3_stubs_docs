@@ -52,7 +52,7 @@ Arguments for `DescribeCacheClustersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCacheClustersPaginator.paginate` returns
-`Iterator`\[[CacheClusterMessageTypeDef](./type_defs.md#cacheclustermessagetypedef)\].
+`Iterator`\[[CacheClusterMessageResponseTypeDef](./type_defs.md#cacheclustermessageresponsetypedef)\].
 
 ## DescribeCacheEngineVersionsPaginator
 
@@ -81,7 +81,7 @@ Arguments for `DescribeCacheEngineVersionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCacheEngineVersionsPaginator.paginate` returns
-`Iterator`\[[CacheEngineVersionMessageTypeDef](./type_defs.md#cacheengineversionmessagetypedef)\].
+`Iterator`\[[CacheEngineVersionMessageResponseTypeDef](./type_defs.md#cacheengineversionmessageresponsetypedef)\].
 
 ## DescribeCacheParameterGroupsPaginator
 
@@ -107,7 +107,7 @@ Arguments for `DescribeCacheParameterGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCacheParameterGroupsPaginator.paginate` returns
-`Iterator`\[[CacheParameterGroupsMessageTypeDef](./type_defs.md#cacheparametergroupsmessagetypedef)\].
+`Iterator`\[[CacheParameterGroupsMessageResponseTypeDef](./type_defs.md#cacheparametergroupsmessageresponsetypedef)\].
 
 ## DescribeCacheParametersPaginator
 
@@ -134,7 +134,7 @@ Arguments for `DescribeCacheParametersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCacheParametersPaginator.paginate` returns
-`Iterator`\[[CacheParameterGroupDetailsTypeDef](./type_defs.md#cacheparametergroupdetailstypedef)\].
+`Iterator`\[[CacheParameterGroupDetailsResponseTypeDef](./type_defs.md#cacheparametergroupdetailsresponsetypedef)\].
 
 ## DescribeCacheSecurityGroupsPaginator
 
@@ -160,7 +160,7 @@ Arguments for `DescribeCacheSecurityGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCacheSecurityGroupsPaginator.paginate` returns
-`Iterator`\[[CacheSecurityGroupMessageTypeDef](./type_defs.md#cachesecuritygroupmessagetypedef)\].
+`Iterator`\[[CacheSecurityGroupMessageResponseTypeDef](./type_defs.md#cachesecuritygroupmessageresponsetypedef)\].
 
 ## DescribeCacheSubnetGroupsPaginator
 
@@ -186,7 +186,7 @@ Arguments for `DescribeCacheSubnetGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCacheSubnetGroupsPaginator.paginate` returns
-`Iterator`\[[CacheSubnetGroupMessageTypeDef](./type_defs.md#cachesubnetgroupmessagetypedef)\].
+`Iterator`\[[CacheSubnetGroupMessageResponseTypeDef](./type_defs.md#cachesubnetgroupmessageresponsetypedef)\].
 
 ## DescribeEngineDefaultParametersPaginator
 
@@ -212,7 +212,7 @@ Arguments for `DescribeEngineDefaultParametersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEngineDefaultParametersPaginator.paginate` returns
-`Iterator`\[[DescribeEngineDefaultParametersResultTypeDef](./type_defs.md#describeenginedefaultparametersresulttypedef)\].
+`Iterator`\[[DescribeEngineDefaultParametersResultResponseTypeDef](./type_defs.md#describeenginedefaultparametersresultresponsetypedef)\].
 
 ## DescribeEventsPaginator
 
@@ -235,14 +235,14 @@ Arguments for `DescribeEventsPaginator.paginate` method:
 
 - `SourceIdentifier`: `str`
 - `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
 - `Duration`: `int`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEventsPaginator.paginate` returns
-`Iterator`\[[EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef)\].
+`Iterator`\[[EventsMessageResponseTypeDef](./type_defs.md#eventsmessageresponsetypedef)\].
 
 ## DescribeGlobalReplicationGroupsPaginator
 
@@ -269,7 +269,7 @@ Arguments for `DescribeGlobalReplicationGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeGlobalReplicationGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeGlobalReplicationGroupsResultTypeDef](./type_defs.md#describeglobalreplicationgroupsresulttypedef)\].
+`Iterator`\[[DescribeGlobalReplicationGroupsResultResponseTypeDef](./type_defs.md#describeglobalreplicationgroupsresultresponsetypedef)\].
 
 ## DescribeReplicationGroupsPaginator
 
@@ -295,7 +295,7 @@ Arguments for `DescribeReplicationGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReplicationGroupsPaginator.paginate` returns
-`Iterator`\[[ReplicationGroupMessageTypeDef](./type_defs.md#replicationgroupmessagetypedef)\].
+`Iterator`\[[ReplicationGroupMessageResponseTypeDef](./type_defs.md#replicationgroupmessageresponsetypedef)\].
 
 ## DescribeReservedCacheNodesPaginator
 
@@ -326,7 +326,7 @@ Arguments for `DescribeReservedCacheNodesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReservedCacheNodesPaginator.paginate` returns
-`Iterator`\[[ReservedCacheNodeMessageTypeDef](./type_defs.md#reservedcachenodemessagetypedef)\].
+`Iterator`\[[ReservedCacheNodeMessageResponseTypeDef](./type_defs.md#reservedcachenodemessageresponsetypedef)\].
 
 ## DescribeReservedCacheNodesOfferingsPaginator
 
@@ -356,7 +356,7 @@ Arguments for `DescribeReservedCacheNodesOfferingsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReservedCacheNodesOfferingsPaginator.paginate` returns
-`Iterator`\[[ReservedCacheNodesOfferingMessageTypeDef](./type_defs.md#reservedcachenodesofferingmessagetypedef)\].
+`Iterator`\[[ReservedCacheNodesOfferingMessageResponseTypeDef](./type_defs.md#reservedcachenodesofferingmessageresponsetypedef)\].
 
 ## DescribeServiceUpdatesPaginator
 
@@ -384,7 +384,7 @@ Arguments for `DescribeServiceUpdatesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeServiceUpdatesPaginator.paginate` returns
-`Iterator`\[[ServiceUpdatesMessageTypeDef](./type_defs.md#serviceupdatesmessagetypedef)\].
+`Iterator`\[[ServiceUpdatesMessageResponseTypeDef](./type_defs.md#serviceupdatesmessageresponsetypedef)\].
 
 ## DescribeSnapshotsPaginator
 
@@ -414,7 +414,7 @@ Arguments for `DescribeSnapshotsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSnapshotsPaginator.paginate` returns
-`Iterator`\[[DescribeSnapshotsListMessageTypeDef](./type_defs.md#describesnapshotslistmessagetypedef)\].
+`Iterator`\[[DescribeSnapshotsListMessageResponseTypeDef](./type_defs.md#describesnapshotslistmessageresponsetypedef)\].
 
 ## DescribeUpdateActionsPaginator
 
@@ -450,7 +450,7 @@ Arguments for `DescribeUpdateActionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeUpdateActionsPaginator.paginate` returns
-`Iterator`\[[UpdateActionsMessageTypeDef](./type_defs.md#updateactionsmessagetypedef)\].
+`Iterator`\[[UpdateActionsMessageResponseTypeDef](./type_defs.md#updateactionsmessageresponsetypedef)\].
 
 ## DescribeUserGroupsPaginator
 
@@ -476,7 +476,7 @@ Arguments for `DescribeUserGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeUserGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeUserGroupsResultTypeDef](./type_defs.md#describeusergroupsresulttypedef)\].
+`Iterator`\[[DescribeUserGroupsResultResponseTypeDef](./type_defs.md#describeusergroupsresultresponsetypedef)\].
 
 ## DescribeUsersPaginator
 
@@ -504,4 +504,4 @@ Arguments for `DescribeUsersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeUsersPaginator.paginate` returns
-`Iterator`\[[DescribeUsersResultTypeDef](./type_defs.md#describeusersresulttypedef)\].
+`Iterator`\[[DescribeUsersResultResponseTypeDef](./type_defs.md#describeusersresultresponsetypedef)\].

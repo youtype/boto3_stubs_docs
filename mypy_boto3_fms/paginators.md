@@ -36,7 +36,7 @@ Arguments for `ListComplianceStatusPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListComplianceStatusPaginator.paginate` returns
-`Iterator`\[[ListComplianceStatusResponseTypeDef](./type_defs.md#listcompliancestatusresponsetypedef)\].
+`Iterator`\[[ListComplianceStatusResponseResponseTypeDef](./type_defs.md#listcompliancestatusresponseresponsetypedef)\].
 
 ## ListMemberAccountsPaginator
 
@@ -61,7 +61,7 @@ Arguments for `ListMemberAccountsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMemberAccountsPaginator.paginate` returns
-`Iterator`\[[ListMemberAccountsResponseTypeDef](./type_defs.md#listmemberaccountsresponsetypedef)\].
+`Iterator`\[[ListMemberAccountsResponseResponseTypeDef](./type_defs.md#listmemberaccountsresponseresponsetypedef)\].
 
 ## ListPoliciesPaginator
 
@@ -85,4 +85,4 @@ Arguments for `ListPoliciesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPoliciesPaginator.paginate` returns
-`Iterator`\[[ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef)\].
+`Iterator`\[[ListPoliciesResponseResponseTypeDef](./type_defs.md#listpoliciesresponseresponsetypedef)\].

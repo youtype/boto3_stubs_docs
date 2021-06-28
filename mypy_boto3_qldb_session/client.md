@@ -57,6 +57,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("qldb-session").can_paginate` method.
 
 Boto3 documentation:
@@ -69,6 +71,8 @@ Arguments:
 Returns `bool`.
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("qldb-session").generate_presigned_url`
 method.
@@ -87,10 +91,15 @@ Returns `str`.
 
 ### send_command
 
+Sends a command to an Amazon QLDB ledger.
+
 Type annotations for `boto3.client("qldb-session").send_command` method.
 
 Boto3 documentation:
 [QLDBSession.Client.send_command](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession.Client.send_command)
+
+Arguments mapping described in
+[SendCommandRequestTypeDef](./type_defs.md#sendcommandrequesttypedef).
 
 Keyword-only arguments:
 
@@ -107,4 +116,5 @@ Keyword-only arguments:
 - `FetchPage`:
   [FetchPageRequestTypeDef](./type_defs.md#fetchpagerequesttypedef)
 
-Returns [SendCommandResultTypeDef](./type_defs.md#sendcommandresulttypedef).
+Returns
+[SendCommandResultResponseTypeDef](./type_defs.md#sendcommandresultresponsetypedef).

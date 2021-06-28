@@ -151,10 +151,15 @@ Exceptions:
 
 ### associate_web_acl
 
+.
+
 Type annotations for `boto3.client("waf-regional").associate_web_acl` method.
 
 Boto3 documentation:
 [WAFRegional.Client.associate_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.associate_web_acl)
+
+Arguments mapping described in
+[AssociateWebACLRequestTypeDef](./type_defs.md#associatewebaclrequesttypedef).
 
 Keyword-only arguments:
 
@@ -164,6 +169,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("waf-regional").can_paginate` method.
 
@@ -178,11 +185,16 @@ Returns `bool`.
 
 ### create_byte_match_set
 
+.
+
 Type annotations for `boto3.client("waf-regional").create_byte_match_set`
 method.
 
 Boto3 documentation:
 [WAFRegional.Client.create_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_byte_match_set)
+
+Arguments mapping described in
+[CreateByteMatchSetRequestTypeDef](./type_defs.md#createbytematchsetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -190,9 +202,11 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[CreateByteMatchSetResponseTypeDef](./type_defs.md#createbytematchsetresponsetypedef).
+[CreateByteMatchSetResponseResponseTypeDef](./type_defs.md#createbytematchsetresponseresponsetypedef).
 
 ### create_geo_match_set
+
+.
 
 Type annotations for `boto3.client("waf-regional").create_geo_match_set`
 method.
@@ -200,36 +214,49 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.create_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_geo_match_set)
 
+Arguments mapping described in
+[CreateGeoMatchSetRequestTypeDef](./type_defs.md#creategeomatchsetrequesttypedef).
+
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[CreateGeoMatchSetResponseTypeDef](./type_defs.md#creategeomatchsetresponsetypedef).
+[CreateGeoMatchSetResponseResponseTypeDef](./type_defs.md#creategeomatchsetresponseresponsetypedef).
 
 ### create_ip_set
+
+.
 
 Type annotations for `boto3.client("waf-regional").create_ip_set` method.
 
 Boto3 documentation:
 [WAFRegional.Client.create_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_ip_set)
 
+Arguments mapping described in
+[CreateIPSetRequestTypeDef](./type_defs.md#createipsetrequesttypedef).
+
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[CreateIPSetResponseTypeDef](./type_defs.md#createipsetresponsetypedef).
+[CreateIPSetResponseResponseTypeDef](./type_defs.md#createipsetresponseresponsetypedef).
 
 ### create_rate_based_rule
+
+.
 
 Type annotations for `boto3.client("waf-regional").create_rate_based_rule`
 method.
 
 Boto3 documentation:
 [WAFRegional.Client.create_rate_based_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_rate_based_rule)
+
+Arguments mapping described in
+[CreateRateBasedRuleRequestTypeDef](./type_defs.md#createratebasedrulerequesttypedef).
 
 Keyword-only arguments:
 
@@ -242,9 +269,11 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateRateBasedRuleResponseTypeDef](./type_defs.md#createratebasedruleresponsetypedef).
+[CreateRateBasedRuleResponseResponseTypeDef](./type_defs.md#createratebasedruleresponseresponsetypedef).
 
 ### create_regex_match_set
+
+.
 
 Type annotations for `boto3.client("waf-regional").create_regex_match_set`
 method.
@@ -252,15 +281,20 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.create_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_regex_match_set)
 
+Arguments mapping described in
+[CreateRegexMatchSetRequestTypeDef](./type_defs.md#createregexmatchsetrequesttypedef).
+
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[CreateRegexMatchSetResponseTypeDef](./type_defs.md#createregexmatchsetresponsetypedef).
+[CreateRegexMatchSetResponseResponseTypeDef](./type_defs.md#createregexmatchsetresponseresponsetypedef).
 
 ### create_regex_pattern_set
+
+.
 
 Type annotations for `boto3.client("waf-regional").create_regex_pattern_set`
 method.
@@ -268,36 +302,28 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.create_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_regex_pattern_set)
 
+Arguments mapping described in
+[CreateRegexPatternSetRequestTypeDef](./type_defs.md#createregexpatternsetrequesttypedef).
+
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[CreateRegexPatternSetResponseTypeDef](./type_defs.md#createregexpatternsetresponsetypedef).
+[CreateRegexPatternSetResponseResponseTypeDef](./type_defs.md#createregexpatternsetresponseresponsetypedef).
 
 ### create_rule
+
+.
 
 Type annotations for `boto3.client("waf-regional").create_rule` method.
 
 Boto3 documentation:
 [WAFRegional.Client.create_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_rule)
 
-Keyword-only arguments:
-
-- `Name`: `str` *(required)*
-- `MetricName`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-Returns [CreateRuleResponseTypeDef](./type_defs.md#createruleresponsetypedef).
-
-### create_rule_group
-
-Type annotations for `boto3.client("waf-regional").create_rule_group` method.
-
-Boto3 documentation:
-[WAFRegional.Client.create_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_rule_group)
+Arguments mapping described in
+[CreateRuleRequestTypeDef](./type_defs.md#createrulerequesttypedef).
 
 Keyword-only arguments:
 
@@ -307,9 +333,33 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateRuleGroupResponseTypeDef](./type_defs.md#createrulegroupresponsetypedef).
+[CreateRuleResponseResponseTypeDef](./type_defs.md#createruleresponseresponsetypedef).
+
+### create_rule_group
+
+.
+
+Type annotations for `boto3.client("waf-regional").create_rule_group` method.
+
+Boto3 documentation:
+[WAFRegional.Client.create_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_rule_group)
+
+Arguments mapping described in
+[CreateRuleGroupRequestTypeDef](./type_defs.md#createrulegrouprequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+- `MetricName`: `str` *(required)*
+- `ChangeToken`: `str` *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns
+[CreateRuleGroupResponseResponseTypeDef](./type_defs.md#createrulegroupresponseresponsetypedef).
 
 ### create_size_constraint_set
+
+.
 
 Type annotations for `boto3.client("waf-regional").create_size_constraint_set`
 method.
@@ -317,15 +367,20 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.create_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_size_constraint_set)
 
+Arguments mapping described in
+[CreateSizeConstraintSetRequestTypeDef](./type_defs.md#createsizeconstraintsetrequesttypedef).
+
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[CreateSizeConstraintSetResponseTypeDef](./type_defs.md#createsizeconstraintsetresponsetypedef).
+[CreateSizeConstraintSetResponseResponseTypeDef](./type_defs.md#createsizeconstraintsetresponseresponsetypedef).
 
 ### create_sql_injection_match_set
+
+.
 
 Type annotations for
 `boto3.client("waf-regional").create_sql_injection_match_set` method.
@@ -333,20 +388,28 @@ Type annotations for
 Boto3 documentation:
 [WAFRegional.Client.create_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_sql_injection_match_set)
 
+Arguments mapping described in
+[CreateSqlInjectionMatchSetRequestTypeDef](./type_defs.md#createsqlinjectionmatchsetrequesttypedef).
+
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[CreateSqlInjectionMatchSetResponseTypeDef](./type_defs.md#createsqlinjectionmatchsetresponsetypedef).
+[CreateSqlInjectionMatchSetResponseResponseTypeDef](./type_defs.md#createsqlinjectionmatchsetresponseresponsetypedef).
 
 ### create_web_acl
+
+.
 
 Type annotations for `boto3.client("waf-regional").create_web_acl` method.
 
 Boto3 documentation:
 [WAFRegional.Client.create_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_web_acl)
+
+Arguments mapping described in
+[CreateWebACLRequestTypeDef](./type_defs.md#createwebaclrequesttypedef).
 
 Keyword-only arguments:
 
@@ -358,15 +421,21 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateWebACLResponseTypeDef](./type_defs.md#createwebaclresponsetypedef).
+[CreateWebACLResponseResponseTypeDef](./type_defs.md#createwebaclresponseresponsetypedef).
 
 ### create_web_acl_migration_stack
+
+Creates an AWS CloudFormation WAFV2 template for the specified web ACL in the
+specified Amazon S3 bucket.
 
 Type annotations for
 `boto3.client("waf-regional").create_web_acl_migration_stack` method.
 
 Boto3 documentation:
 [WAFRegional.Client.create_web_acl_migration_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_web_acl_migration_stack)
+
+Arguments mapping described in
+[CreateWebACLMigrationStackRequestTypeDef](./type_defs.md#createwebaclmigrationstackrequesttypedef).
 
 Keyword-only arguments:
 
@@ -375,9 +444,11 @@ Keyword-only arguments:
 - `IgnoreUnsupportedType`: `bool` *(required)*
 
 Returns
-[CreateWebACLMigrationStackResponseTypeDef](./type_defs.md#createwebaclmigrationstackresponsetypedef).
+[CreateWebACLMigrationStackResponseResponseTypeDef](./type_defs.md#createwebaclmigrationstackresponseresponsetypedef).
 
 ### create_xss_match_set
+
+.
 
 Type annotations for `boto3.client("waf-regional").create_xss_match_set`
 method.
@@ -385,15 +456,20 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.create_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.create_xss_match_set)
 
+Arguments mapping described in
+[CreateXssMatchSetRequestTypeDef](./type_defs.md#createxssmatchsetrequesttypedef).
+
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[CreateXssMatchSetResponseTypeDef](./type_defs.md#createxssmatchsetresponsetypedef).
+[CreateXssMatchSetResponseResponseTypeDef](./type_defs.md#createxssmatchsetresponseresponsetypedef).
 
 ### delete_byte_match_set
+
+.
 
 Type annotations for `boto3.client("waf-regional").delete_byte_match_set`
 method.
@@ -401,15 +477,20 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.delete_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_byte_match_set)
 
+Arguments mapping described in
+[DeleteByteMatchSetRequestTypeDef](./type_defs.md#deletebytematchsetrequesttypedef).
+
 Keyword-only arguments:
 
 - `ByteMatchSetId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[DeleteByteMatchSetResponseTypeDef](./type_defs.md#deletebytematchsetresponsetypedef).
+[DeleteByteMatchSetResponseResponseTypeDef](./type_defs.md#deletebytematchsetresponseresponsetypedef).
 
 ### delete_geo_match_set
+
+.
 
 Type annotations for `boto3.client("waf-regional").delete_geo_match_set`
 method.
@@ -417,20 +498,28 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.delete_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_geo_match_set)
 
+Arguments mapping described in
+[DeleteGeoMatchSetRequestTypeDef](./type_defs.md#deletegeomatchsetrequesttypedef).
+
 Keyword-only arguments:
 
 - `GeoMatchSetId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[DeleteGeoMatchSetResponseTypeDef](./type_defs.md#deletegeomatchsetresponsetypedef).
+[DeleteGeoMatchSetResponseResponseTypeDef](./type_defs.md#deletegeomatchsetresponseresponsetypedef).
 
 ### delete_ip_set
+
+.
 
 Type annotations for `boto3.client("waf-regional").delete_ip_set` method.
 
 Boto3 documentation:
 [WAFRegional.Client.delete_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_ip_set)
+
+Arguments mapping described in
+[DeleteIPSetRequestTypeDef](./type_defs.md#deleteipsetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -438,15 +527,20 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[DeleteIPSetResponseTypeDef](./type_defs.md#deleteipsetresponsetypedef).
+[DeleteIPSetResponseResponseTypeDef](./type_defs.md#deleteipsetresponseresponsetypedef).
 
 ### delete_logging_configuration
+
+.
 
 Type annotations for
 `boto3.client("waf-regional").delete_logging_configuration` method.
 
 Boto3 documentation:
 [WAFRegional.Client.delete_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_logging_configuration)
+
+Arguments mapping described in
+[DeleteLoggingConfigurationRequestTypeDef](./type_defs.md#deleteloggingconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -456,11 +550,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_permission_policy
 
+.
+
 Type annotations for `boto3.client("waf-regional").delete_permission_policy`
 method.
 
 Boto3 documentation:
 [WAFRegional.Client.delete_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_permission_policy)
+
+Arguments mapping described in
+[DeletePermissionPolicyRequestTypeDef](./type_defs.md#deletepermissionpolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -470,11 +569,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_rate_based_rule
 
+.
+
 Type annotations for `boto3.client("waf-regional").delete_rate_based_rule`
 method.
 
 Boto3 documentation:
 [WAFRegional.Client.delete_rate_based_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_rate_based_rule)
+
+Arguments mapping described in
+[DeleteRateBasedRuleRequestTypeDef](./type_defs.md#deleteratebasedrulerequesttypedef).
 
 Keyword-only arguments:
 
@@ -482,9 +586,11 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[DeleteRateBasedRuleResponseTypeDef](./type_defs.md#deleteratebasedruleresponsetypedef).
+[DeleteRateBasedRuleResponseResponseTypeDef](./type_defs.md#deleteratebasedruleresponseresponsetypedef).
 
 ### delete_regex_match_set
+
+.
 
 Type annotations for `boto3.client("waf-regional").delete_regex_match_set`
 method.
@@ -492,15 +598,20 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.delete_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_regex_match_set)
 
+Arguments mapping described in
+[DeleteRegexMatchSetRequestTypeDef](./type_defs.md#deleteregexmatchsetrequesttypedef).
+
 Keyword-only arguments:
 
 - `RegexMatchSetId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[DeleteRegexMatchSetResponseTypeDef](./type_defs.md#deleteregexmatchsetresponsetypedef).
+[DeleteRegexMatchSetResponseResponseTypeDef](./type_defs.md#deleteregexmatchsetresponseresponsetypedef).
 
 ### delete_regex_pattern_set
+
+.
 
 Type annotations for `boto3.client("waf-regional").delete_regex_pattern_set`
 method.
@@ -508,34 +619,48 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.delete_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_regex_pattern_set)
 
+Arguments mapping described in
+[DeleteRegexPatternSetRequestTypeDef](./type_defs.md#deleteregexpatternsetrequesttypedef).
+
 Keyword-only arguments:
 
 - `RegexPatternSetId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[DeleteRegexPatternSetResponseTypeDef](./type_defs.md#deleteregexpatternsetresponsetypedef).
+[DeleteRegexPatternSetResponseResponseTypeDef](./type_defs.md#deleteregexpatternsetresponseresponsetypedef).
 
 ### delete_rule
+
+.
 
 Type annotations for `boto3.client("waf-regional").delete_rule` method.
 
 Boto3 documentation:
 [WAFRegional.Client.delete_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_rule)
 
+Arguments mapping described in
+[DeleteRuleRequestTypeDef](./type_defs.md#deleterulerequesttypedef).
+
 Keyword-only arguments:
 
 - `RuleId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
 
-Returns [DeleteRuleResponseTypeDef](./type_defs.md#deleteruleresponsetypedef).
+Returns
+[DeleteRuleResponseResponseTypeDef](./type_defs.md#deleteruleresponseresponsetypedef).
 
 ### delete_rule_group
+
+.
 
 Type annotations for `boto3.client("waf-regional").delete_rule_group` method.
 
 Boto3 documentation:
 [WAFRegional.Client.delete_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_rule_group)
+
+Arguments mapping described in
+[DeleteRuleGroupRequestTypeDef](./type_defs.md#deleterulegrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -543,9 +668,11 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[DeleteRuleGroupResponseTypeDef](./type_defs.md#deleterulegroupresponsetypedef).
+[DeleteRuleGroupResponseResponseTypeDef](./type_defs.md#deleterulegroupresponseresponsetypedef).
 
 ### delete_size_constraint_set
+
+.
 
 Type annotations for `boto3.client("waf-regional").delete_size_constraint_set`
 method.
@@ -553,15 +680,20 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.delete_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_size_constraint_set)
 
+Arguments mapping described in
+[DeleteSizeConstraintSetRequestTypeDef](./type_defs.md#deletesizeconstraintsetrequesttypedef).
+
 Keyword-only arguments:
 
 - `SizeConstraintSetId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[DeleteSizeConstraintSetResponseTypeDef](./type_defs.md#deletesizeconstraintsetresponsetypedef).
+[DeleteSizeConstraintSetResponseResponseTypeDef](./type_defs.md#deletesizeconstraintsetresponseresponsetypedef).
 
 ### delete_sql_injection_match_set
+
+.
 
 Type annotations for
 `boto3.client("waf-regional").delete_sql_injection_match_set` method.
@@ -569,20 +701,28 @@ Type annotations for
 Boto3 documentation:
 [WAFRegional.Client.delete_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_sql_injection_match_set)
 
+Arguments mapping described in
+[DeleteSqlInjectionMatchSetRequestTypeDef](./type_defs.md#deletesqlinjectionmatchsetrequesttypedef).
+
 Keyword-only arguments:
 
 - `SqlInjectionMatchSetId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[DeleteSqlInjectionMatchSetResponseTypeDef](./type_defs.md#deletesqlinjectionmatchsetresponsetypedef).
+[DeleteSqlInjectionMatchSetResponseResponseTypeDef](./type_defs.md#deletesqlinjectionmatchsetresponseresponsetypedef).
 
 ### delete_web_acl
+
+.
 
 Type annotations for `boto3.client("waf-regional").delete_web_acl` method.
 
 Boto3 documentation:
 [WAFRegional.Client.delete_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_web_acl)
+
+Arguments mapping described in
+[DeleteWebACLRequestTypeDef](./type_defs.md#deletewebaclrequesttypedef).
 
 Keyword-only arguments:
 
@@ -590,9 +730,11 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[DeleteWebACLResponseTypeDef](./type_defs.md#deletewebaclresponsetypedef).
+[DeleteWebACLResponseResponseTypeDef](./type_defs.md#deletewebaclresponseresponsetypedef).
 
 ### delete_xss_match_set
+
+.
 
 Type annotations for `boto3.client("waf-regional").delete_xss_match_set`
 method.
@@ -600,21 +742,29 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.delete_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.delete_xss_match_set)
 
+Arguments mapping described in
+[DeleteXssMatchSetRequestTypeDef](./type_defs.md#deletexssmatchsetrequesttypedef).
+
 Keyword-only arguments:
 
 - `XssMatchSetId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[DeleteXssMatchSetResponseTypeDef](./type_defs.md#deletexssmatchsetresponsetypedef).
+[DeleteXssMatchSetResponseResponseTypeDef](./type_defs.md#deletexssmatchsetresponseresponsetypedef).
 
 ### disassociate_web_acl
+
+.
 
 Type annotations for `boto3.client("waf-regional").disassociate_web_acl`
 method.
 
 Boto3 documentation:
 [WAFRegional.Client.disassociate_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.disassociate_web_acl)
+
+Arguments mapping described in
+[DisassociateWebACLRequestTypeDef](./type_defs.md#disassociatewebaclrequesttypedef).
 
 Keyword-only arguments:
 
@@ -623,6 +773,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("waf-regional").generate_presigned_url`
 method.
@@ -641,19 +793,26 @@ Returns `str`.
 
 ### get_byte_match_set
 
+.
+
 Type annotations for `boto3.client("waf-regional").get_byte_match_set` method.
 
 Boto3 documentation:
 [WAFRegional.Client.get_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_byte_match_set)
+
+Arguments mapping described in
+[GetByteMatchSetRequestTypeDef](./type_defs.md#getbytematchsetrequesttypedef).
 
 Keyword-only arguments:
 
 - `ByteMatchSetId`: `str` *(required)*
 
 Returns
-[GetByteMatchSetResponseTypeDef](./type_defs.md#getbytematchsetresponsetypedef).
+[GetByteMatchSetResponseResponseTypeDef](./type_defs.md#getbytematchsetresponseresponsetypedef).
 
 ### get_change_token
+
+.
 
 Type annotations for `boto3.client("waf-regional").get_change_token` method.
 
@@ -661,9 +820,11 @@ Boto3 documentation:
 [WAFRegional.Client.get_change_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_change_token)
 
 Returns
-[GetChangeTokenResponseTypeDef](./type_defs.md#getchangetokenresponsetypedef).
+[GetChangeTokenResponseResponseTypeDef](./type_defs.md#getchangetokenresponseresponsetypedef).
 
 ### get_change_token_status
+
+.
 
 Type annotations for `boto3.client("waf-regional").get_change_token_status`
 method.
@@ -671,41 +832,57 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.get_change_token_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_change_token_status)
 
+Arguments mapping described in
+[GetChangeTokenStatusRequestTypeDef](./type_defs.md#getchangetokenstatusrequesttypedef).
+
 Keyword-only arguments:
 
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[GetChangeTokenStatusResponseTypeDef](./type_defs.md#getchangetokenstatusresponsetypedef).
+[GetChangeTokenStatusResponseResponseTypeDef](./type_defs.md#getchangetokenstatusresponseresponsetypedef).
 
 ### get_geo_match_set
+
+.
 
 Type annotations for `boto3.client("waf-regional").get_geo_match_set` method.
 
 Boto3 documentation:
 [WAFRegional.Client.get_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_geo_match_set)
 
+Arguments mapping described in
+[GetGeoMatchSetRequestTypeDef](./type_defs.md#getgeomatchsetrequesttypedef).
+
 Keyword-only arguments:
 
 - `GeoMatchSetId`: `str` *(required)*
 
 Returns
-[GetGeoMatchSetResponseTypeDef](./type_defs.md#getgeomatchsetresponsetypedef).
+[GetGeoMatchSetResponseResponseTypeDef](./type_defs.md#getgeomatchsetresponseresponsetypedef).
 
 ### get_ip_set
+
+.
 
 Type annotations for `boto3.client("waf-regional").get_ip_set` method.
 
 Boto3 documentation:
 [WAFRegional.Client.get_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_ip_set)
 
+Arguments mapping described in
+[GetIPSetRequestTypeDef](./type_defs.md#getipsetrequesttypedef).
+
 Keyword-only arguments:
 
 - `IPSetId`: `str` *(required)*
 
-Returns [GetIPSetResponseTypeDef](./type_defs.md#getipsetresponsetypedef).
+Returns
+[GetIPSetResponseResponseTypeDef](./type_defs.md#getipsetresponseresponsetypedef).
 
 ### get_logging_configuration
+
+.
 
 Type annotations for `boto3.client("waf-regional").get_logging_configuration`
 method.
@@ -713,14 +890,19 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.get_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_logging_configuration)
 
+Arguments mapping described in
+[GetLoggingConfigurationRequestTypeDef](./type_defs.md#getloggingconfigurationrequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[GetLoggingConfigurationResponseTypeDef](./type_defs.md#getloggingconfigurationresponsetypedef).
+[GetLoggingConfigurationResponseResponseTypeDef](./type_defs.md#getloggingconfigurationresponseresponsetypedef).
 
 ### get_permission_policy
+
+.
 
 Type annotations for `boto3.client("waf-regional").get_permission_policy`
 method.
@@ -728,28 +910,38 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.get_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_permission_policy)
 
+Arguments mapping described in
+[GetPermissionPolicyRequestTypeDef](./type_defs.md#getpermissionpolicyrequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[GetPermissionPolicyResponseTypeDef](./type_defs.md#getpermissionpolicyresponsetypedef).
+[GetPermissionPolicyResponseResponseTypeDef](./type_defs.md#getpermissionpolicyresponseresponsetypedef).
 
 ### get_rate_based_rule
+
+.
 
 Type annotations for `boto3.client("waf-regional").get_rate_based_rule` method.
 
 Boto3 documentation:
 [WAFRegional.Client.get_rate_based_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_rate_based_rule)
 
+Arguments mapping described in
+[GetRateBasedRuleRequestTypeDef](./type_defs.md#getratebasedrulerequesttypedef).
+
 Keyword-only arguments:
 
 - `RuleId`: `str` *(required)*
 
 Returns
-[GetRateBasedRuleResponseTypeDef](./type_defs.md#getratebasedruleresponsetypedef).
+[GetRateBasedRuleResponseResponseTypeDef](./type_defs.md#getratebasedruleresponseresponsetypedef).
 
 ### get_rate_based_rule_managed_keys
+
+.
 
 Type annotations for
 `boto3.client("waf-regional").get_rate_based_rule_managed_keys` method.
@@ -757,29 +949,39 @@ Type annotations for
 Boto3 documentation:
 [WAFRegional.Client.get_rate_based_rule_managed_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_rate_based_rule_managed_keys)
 
+Arguments mapping described in
+[GetRateBasedRuleManagedKeysRequestTypeDef](./type_defs.md#getratebasedrulemanagedkeysrequesttypedef).
+
 Keyword-only arguments:
 
 - `RuleId`: `str` *(required)*
 - `NextMarker`: `str`
 
 Returns
-[GetRateBasedRuleManagedKeysResponseTypeDef](./type_defs.md#getratebasedrulemanagedkeysresponsetypedef).
+[GetRateBasedRuleManagedKeysResponseResponseTypeDef](./type_defs.md#getratebasedrulemanagedkeysresponseresponsetypedef).
 
 ### get_regex_match_set
+
+.
 
 Type annotations for `boto3.client("waf-regional").get_regex_match_set` method.
 
 Boto3 documentation:
 [WAFRegional.Client.get_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_regex_match_set)
 
+Arguments mapping described in
+[GetRegexMatchSetRequestTypeDef](./type_defs.md#getregexmatchsetrequesttypedef).
+
 Keyword-only arguments:
 
 - `RegexMatchSetId`: `str` *(required)*
 
 Returns
-[GetRegexMatchSetResponseTypeDef](./type_defs.md#getregexmatchsetresponsetypedef).
+[GetRegexMatchSetResponseResponseTypeDef](./type_defs.md#getregexmatchsetresponseresponsetypedef).
 
 ### get_regex_pattern_set
+
+.
 
 Type annotations for `boto3.client("waf-regional").get_regex_pattern_set`
 method.
@@ -787,47 +989,66 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.get_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_regex_pattern_set)
 
+Arguments mapping described in
+[GetRegexPatternSetRequestTypeDef](./type_defs.md#getregexpatternsetrequesttypedef).
+
 Keyword-only arguments:
 
 - `RegexPatternSetId`: `str` *(required)*
 
 Returns
-[GetRegexPatternSetResponseTypeDef](./type_defs.md#getregexpatternsetresponsetypedef).
+[GetRegexPatternSetResponseResponseTypeDef](./type_defs.md#getregexpatternsetresponseresponsetypedef).
 
 ### get_rule
+
+.
 
 Type annotations for `boto3.client("waf-regional").get_rule` method.
 
 Boto3 documentation:
 [WAFRegional.Client.get_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_rule)
 
+Arguments mapping described in
+[GetRuleRequestTypeDef](./type_defs.md#getrulerequesttypedef).
+
 Keyword-only arguments:
 
 - `RuleId`: `str` *(required)*
 
-Returns [GetRuleResponseTypeDef](./type_defs.md#getruleresponsetypedef).
+Returns
+[GetRuleResponseResponseTypeDef](./type_defs.md#getruleresponseresponsetypedef).
 
 ### get_rule_group
+
+.
 
 Type annotations for `boto3.client("waf-regional").get_rule_group` method.
 
 Boto3 documentation:
 [WAFRegional.Client.get_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_rule_group)
 
+Arguments mapping described in
+[GetRuleGroupRequestTypeDef](./type_defs.md#getrulegrouprequesttypedef).
+
 Keyword-only arguments:
 
 - `RuleGroupId`: `str` *(required)*
 
 Returns
-[GetRuleGroupResponseTypeDef](./type_defs.md#getrulegroupresponsetypedef).
+[GetRuleGroupResponseResponseTypeDef](./type_defs.md#getrulegroupresponseresponsetypedef).
 
 ### get_sampled_requests
+
+.
 
 Type annotations for `boto3.client("waf-regional").get_sampled_requests`
 method.
 
 Boto3 documentation:
 [WAFRegional.Client.get_sampled_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_sampled_requests)
+
+Arguments mapping described in
+[GetSampledRequestsRequestTypeDef](./type_defs.md#getsampledrequestsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -838,9 +1059,11 @@ Keyword-only arguments:
 - `MaxItems`: `int` *(required)*
 
 Returns
-[GetSampledRequestsResponseTypeDef](./type_defs.md#getsampledrequestsresponsetypedef).
+[GetSampledRequestsResponseResponseTypeDef](./type_defs.md#getsampledrequestsresponseresponsetypedef).
 
 ### get_size_constraint_set
+
+.
 
 Type annotations for `boto3.client("waf-regional").get_size_constraint_set`
 method.
@@ -848,14 +1071,19 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.get_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_size_constraint_set)
 
+Arguments mapping described in
+[GetSizeConstraintSetRequestTypeDef](./type_defs.md#getsizeconstraintsetrequesttypedef).
+
 Keyword-only arguments:
 
 - `SizeConstraintSetId`: `str` *(required)*
 
 Returns
-[GetSizeConstraintSetResponseTypeDef](./type_defs.md#getsizeconstraintsetresponsetypedef).
+[GetSizeConstraintSetResponseResponseTypeDef](./type_defs.md#getsizeconstraintsetresponseresponsetypedef).
 
 ### get_sql_injection_match_set
+
+.
 
 Type annotations for `boto3.client("waf-regional").get_sql_injection_match_set`
 method.
@@ -863,27 +1091,38 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.get_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_sql_injection_match_set)
 
+Arguments mapping described in
+[GetSqlInjectionMatchSetRequestTypeDef](./type_defs.md#getsqlinjectionmatchsetrequesttypedef).
+
 Keyword-only arguments:
 
 - `SqlInjectionMatchSetId`: `str` *(required)*
 
 Returns
-[GetSqlInjectionMatchSetResponseTypeDef](./type_defs.md#getsqlinjectionmatchsetresponsetypedef).
+[GetSqlInjectionMatchSetResponseResponseTypeDef](./type_defs.md#getsqlinjectionmatchsetresponseresponsetypedef).
 
 ### get_web_acl
+
+.
 
 Type annotations for `boto3.client("waf-regional").get_web_acl` method.
 
 Boto3 documentation:
 [WAFRegional.Client.get_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_web_acl)
 
+Arguments mapping described in
+[GetWebACLRequestTypeDef](./type_defs.md#getwebaclrequesttypedef).
+
 Keyword-only arguments:
 
 - `WebACLId`: `str` *(required)*
 
-Returns [GetWebACLResponseTypeDef](./type_defs.md#getwebaclresponsetypedef).
+Returns
+[GetWebACLResponseResponseTypeDef](./type_defs.md#getwebaclresponseresponsetypedef).
 
 ### get_web_acl_for_resource
+
+.
 
 Type annotations for `boto3.client("waf-regional").get_web_acl_for_resource`
 method.
@@ -891,34 +1130,47 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.get_web_acl_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_web_acl_for_resource)
 
+Arguments mapping described in
+[GetWebACLForResourceRequestTypeDef](./type_defs.md#getwebaclforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[GetWebACLForResourceResponseTypeDef](./type_defs.md#getwebaclforresourceresponsetypedef).
+[GetWebACLForResourceResponseResponseTypeDef](./type_defs.md#getwebaclforresourceresponseresponsetypedef).
 
 ### get_xss_match_set
+
+.
 
 Type annotations for `boto3.client("waf-regional").get_xss_match_set` method.
 
 Boto3 documentation:
 [WAFRegional.Client.get_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.get_xss_match_set)
 
+Arguments mapping described in
+[GetXssMatchSetRequestTypeDef](./type_defs.md#getxssmatchsetrequesttypedef).
+
 Keyword-only arguments:
 
 - `XssMatchSetId`: `str` *(required)*
 
 Returns
-[GetXssMatchSetResponseTypeDef](./type_defs.md#getxssmatchsetresponsetypedef).
+[GetXssMatchSetResponseResponseTypeDef](./type_defs.md#getxssmatchsetresponseresponsetypedef).
 
 ### list_activated_rules_in_rule_group
+
+.
 
 Type annotations for
 `boto3.client("waf-regional").list_activated_rules_in_rule_group` method.
 
 Boto3 documentation:
 [WAFRegional.Client.list_activated_rules_in_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_activated_rules_in_rule_group)
+
+Arguments mapping described in
+[ListActivatedRulesInRuleGroupRequestTypeDef](./type_defs.md#listactivatedrulesinrulegrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -927,9 +1179,11 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListActivatedRulesInRuleGroupResponseTypeDef](./type_defs.md#listactivatedrulesinrulegroupresponsetypedef).
+[ListActivatedRulesInRuleGroupResponseResponseTypeDef](./type_defs.md#listactivatedrulesinrulegroupresponseresponsetypedef).
 
 ### list_byte_match_sets
+
+.
 
 Type annotations for `boto3.client("waf-regional").list_byte_match_sets`
 method.
@@ -937,44 +1191,60 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.list_byte_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_byte_match_sets)
 
+Arguments mapping described in
+[ListByteMatchSetsRequestTypeDef](./type_defs.md#listbytematchsetsrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
 
 Returns
-[ListByteMatchSetsResponseTypeDef](./type_defs.md#listbytematchsetsresponsetypedef).
+[ListByteMatchSetsResponseResponseTypeDef](./type_defs.md#listbytematchsetsresponseresponsetypedef).
 
 ### list_geo_match_sets
+
+.
 
 Type annotations for `boto3.client("waf-regional").list_geo_match_sets` method.
 
 Boto3 documentation:
 [WAFRegional.Client.list_geo_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_geo_match_sets)
 
+Arguments mapping described in
+[ListGeoMatchSetsRequestTypeDef](./type_defs.md#listgeomatchsetsrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
 
 Returns
-[ListGeoMatchSetsResponseTypeDef](./type_defs.md#listgeomatchsetsresponsetypedef).
+[ListGeoMatchSetsResponseResponseTypeDef](./type_defs.md#listgeomatchsetsresponseresponsetypedef).
 
 ### list_ip_sets
+
+.
 
 Type annotations for `boto3.client("waf-regional").list_ip_sets` method.
 
 Boto3 documentation:
 [WAFRegional.Client.list_ip_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_ip_sets)
 
+Arguments mapping described in
+[ListIPSetsRequestTypeDef](./type_defs.md#listipsetsrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
 
-Returns [ListIPSetsResponseTypeDef](./type_defs.md#listipsetsresponsetypedef).
+Returns
+[ListIPSetsResponseResponseTypeDef](./type_defs.md#listipsetsresponseresponsetypedef).
 
 ### list_logging_configurations
+
+.
 
 Type annotations for `boto3.client("waf-regional").list_logging_configurations`
 method.
@@ -982,15 +1252,20 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.list_logging_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_logging_configurations)
 
+Arguments mapping described in
+[ListLoggingConfigurationsRequestTypeDef](./type_defs.md#listloggingconfigurationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
 
 Returns
-[ListLoggingConfigurationsResponseTypeDef](./type_defs.md#listloggingconfigurationsresponsetypedef).
+[ListLoggingConfigurationsResponseResponseTypeDef](./type_defs.md#listloggingconfigurationsresponseresponsetypedef).
 
 ### list_rate_based_rules
+
+.
 
 Type annotations for `boto3.client("waf-regional").list_rate_based_rules`
 method.
@@ -998,15 +1273,20 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.list_rate_based_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_rate_based_rules)
 
+Arguments mapping described in
+[ListRateBasedRulesRequestTypeDef](./type_defs.md#listratebasedrulesrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
 
 Returns
-[ListRateBasedRulesResponseTypeDef](./type_defs.md#listratebasedrulesresponsetypedef).
+[ListRateBasedRulesResponseResponseTypeDef](./type_defs.md#listratebasedrulesresponseresponsetypedef).
 
 ### list_regex_match_sets
+
+.
 
 Type annotations for `boto3.client("waf-regional").list_regex_match_sets`
 method.
@@ -1014,15 +1294,20 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.list_regex_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_regex_match_sets)
 
+Arguments mapping described in
+[ListRegexMatchSetsRequestTypeDef](./type_defs.md#listregexmatchsetsrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
 
 Returns
-[ListRegexMatchSetsResponseTypeDef](./type_defs.md#listregexmatchsetsresponsetypedef).
+[ListRegexMatchSetsResponseResponseTypeDef](./type_defs.md#listregexmatchsetsresponseresponsetypedef).
 
 ### list_regex_pattern_sets
+
+.
 
 Type annotations for `boto3.client("waf-regional").list_regex_pattern_sets`
 method.
@@ -1030,15 +1315,20 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.list_regex_pattern_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_regex_pattern_sets)
 
+Arguments mapping described in
+[ListRegexPatternSetsRequestTypeDef](./type_defs.md#listregexpatternsetsrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
 
 Returns
-[ListRegexPatternSetsResponseTypeDef](./type_defs.md#listregexpatternsetsresponsetypedef).
+[ListRegexPatternSetsResponseResponseTypeDef](./type_defs.md#listregexpatternsetsresponseresponsetypedef).
 
 ### list_resources_for_web_acl
+
+.
 
 Type annotations for `boto3.client("waf-regional").list_resources_for_web_acl`
 method.
@@ -1046,20 +1336,28 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.list_resources_for_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_resources_for_web_acl)
 
+Arguments mapping described in
+[ListResourcesForWebACLRequestTypeDef](./type_defs.md#listresourcesforwebaclrequesttypedef).
+
 Keyword-only arguments:
 
 - `WebACLId`: `str` *(required)*
 - `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 
 Returns
-[ListResourcesForWebACLResponseTypeDef](./type_defs.md#listresourcesforwebaclresponsetypedef).
+[ListResourcesForWebACLResponseResponseTypeDef](./type_defs.md#listresourcesforwebaclresponseresponsetypedef).
 
 ### list_rule_groups
+
+.
 
 Type annotations for `boto3.client("waf-regional").list_rule_groups` method.
 
 Boto3 documentation:
 [WAFRegional.Client.list_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_rule_groups)
+
+Arguments mapping described in
+[ListRuleGroupsRequestTypeDef](./type_defs.md#listrulegroupsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1067,23 +1365,31 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef).
+[ListRuleGroupsResponseResponseTypeDef](./type_defs.md#listrulegroupsresponseresponsetypedef).
 
 ### list_rules
+
+.
 
 Type annotations for `boto3.client("waf-regional").list_rules` method.
 
 Boto3 documentation:
 [WAFRegional.Client.list_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_rules)
 
+Arguments mapping described in
+[ListRulesRequestTypeDef](./type_defs.md#listrulesrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
 
-Returns [ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef).
+Returns
+[ListRulesResponseResponseTypeDef](./type_defs.md#listrulesresponseresponsetypedef).
 
 ### list_size_constraint_sets
+
+.
 
 Type annotations for `boto3.client("waf-regional").list_size_constraint_sets`
 method.
@@ -1091,15 +1397,20 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.list_size_constraint_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_size_constraint_sets)
 
+Arguments mapping described in
+[ListSizeConstraintSetsRequestTypeDef](./type_defs.md#listsizeconstraintsetsrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
 
 Returns
-[ListSizeConstraintSetsResponseTypeDef](./type_defs.md#listsizeconstraintsetsresponsetypedef).
+[ListSizeConstraintSetsResponseResponseTypeDef](./type_defs.md#listsizeconstraintsetsresponseresponsetypedef).
 
 ### list_sql_injection_match_sets
+
+.
 
 Type annotations for
 `boto3.client("waf-regional").list_sql_injection_match_sets` method.
@@ -1107,15 +1418,20 @@ Type annotations for
 Boto3 documentation:
 [WAFRegional.Client.list_sql_injection_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_sql_injection_match_sets)
 
+Arguments mapping described in
+[ListSqlInjectionMatchSetsRequestTypeDef](./type_defs.md#listsqlinjectionmatchsetsrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
 
 Returns
-[ListSqlInjectionMatchSetsResponseTypeDef](./type_defs.md#listsqlinjectionmatchsetsresponsetypedef).
+[ListSqlInjectionMatchSetsResponseResponseTypeDef](./type_defs.md#listsqlinjectionmatchsetsresponseresponsetypedef).
 
 ### list_subscribed_rule_groups
+
+.
 
 Type annotations for `boto3.client("waf-regional").list_subscribed_rule_groups`
 method.
@@ -1123,21 +1439,29 @@ method.
 Boto3 documentation:
 [WAFRegional.Client.list_subscribed_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_subscribed_rule_groups)
 
+Arguments mapping described in
+[ListSubscribedRuleGroupsRequestTypeDef](./type_defs.md#listsubscribedrulegroupsrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
 
 Returns
-[ListSubscribedRuleGroupsResponseTypeDef](./type_defs.md#listsubscribedrulegroupsresponsetypedef).
+[ListSubscribedRuleGroupsResponseResponseTypeDef](./type_defs.md#listsubscribedrulegroupsresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+.
 
 Type annotations for `boto3.client("waf-regional").list_tags_for_resource`
 method.
 
 Boto3 documentation:
 [WAFRegional.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_tags_for_resource)
+
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1146,45 +1470,60 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### list_web_acls
+
+.
 
 Type annotations for `boto3.client("waf-regional").list_web_acls` method.
 
 Boto3 documentation:
 [WAFRegional.Client.list_web_acls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_web_acls)
 
+Arguments mapping described in
+[ListWebACLsRequestTypeDef](./type_defs.md#listwebaclsrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
 
 Returns
-[ListWebACLsResponseTypeDef](./type_defs.md#listwebaclsresponsetypedef).
+[ListWebACLsResponseResponseTypeDef](./type_defs.md#listwebaclsresponseresponsetypedef).
 
 ### list_xss_match_sets
+
+.
 
 Type annotations for `boto3.client("waf-regional").list_xss_match_sets` method.
 
 Boto3 documentation:
 [WAFRegional.Client.list_xss_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.list_xss_match_sets)
 
+Arguments mapping described in
+[ListXssMatchSetsRequestTypeDef](./type_defs.md#listxssmatchsetsrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
 
 Returns
-[ListXssMatchSetsResponseTypeDef](./type_defs.md#listxssmatchsetsresponsetypedef).
+[ListXssMatchSetsResponseResponseTypeDef](./type_defs.md#listxssmatchsetsresponseresponsetypedef).
 
 ### put_logging_configuration
+
+.
 
 Type annotations for `boto3.client("waf-regional").put_logging_configuration`
 method.
 
 Boto3 documentation:
 [WAFRegional.Client.put_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.put_logging_configuration)
+
+Arguments mapping described in
+[PutLoggingConfigurationRequestTypeDef](./type_defs.md#putloggingconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1193,15 +1532,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutLoggingConfigurationResponseTypeDef](./type_defs.md#putloggingconfigurationresponsetypedef).
+[PutLoggingConfigurationResponseResponseTypeDef](./type_defs.md#putloggingconfigurationresponseresponsetypedef).
 
 ### put_permission_policy
+
+.
 
 Type annotations for `boto3.client("waf-regional").put_permission_policy`
 method.
 
 Boto3 documentation:
 [WAFRegional.Client.put_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.put_permission_policy)
+
+Arguments mapping described in
+[PutPermissionPolicyRequestTypeDef](./type_defs.md#putpermissionpolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1212,10 +1556,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### tag_resource
 
+.
+
 Type annotations for `boto3.client("waf-regional").tag_resource` method.
 
 Boto3 documentation:
 [WAFRegional.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1226,10 +1575,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+.
+
 Type annotations for `boto3.client("waf-regional").untag_resource` method.
 
 Boto3 documentation:
 [WAFRegional.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1240,11 +1594,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_byte_match_set
 
+.
+
 Type annotations for `boto3.client("waf-regional").update_byte_match_set`
 method.
 
 Boto3 documentation:
 [WAFRegional.Client.update_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_byte_match_set)
+
+Arguments mapping described in
+[UpdateByteMatchSetRequestTypeDef](./type_defs.md#updatebytematchsetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1255,15 +1614,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateByteMatchSetResponseTypeDef](./type_defs.md#updatebytematchsetresponsetypedef).
+[UpdateByteMatchSetResponseResponseTypeDef](./type_defs.md#updatebytematchsetresponseresponsetypedef).
 
 ### update_geo_match_set
+
+.
 
 Type annotations for `boto3.client("waf-regional").update_geo_match_set`
 method.
 
 Boto3 documentation:
 [WAFRegional.Client.update_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_geo_match_set)
+
+Arguments mapping described in
+[UpdateGeoMatchSetRequestTypeDef](./type_defs.md#updategeomatchsetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1274,14 +1638,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateGeoMatchSetResponseTypeDef](./type_defs.md#updategeomatchsetresponsetypedef).
+[UpdateGeoMatchSetResponseResponseTypeDef](./type_defs.md#updategeomatchsetresponseresponsetypedef).
 
 ### update_ip_set
+
+.
 
 Type annotations for `boto3.client("waf-regional").update_ip_set` method.
 
 Boto3 documentation:
 [WAFRegional.Client.update_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_ip_set)
+
+Arguments mapping described in
+[UpdateIPSetRequestTypeDef](./type_defs.md#updateipsetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1291,15 +1660,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateIPSetResponseTypeDef](./type_defs.md#updateipsetresponsetypedef).
+[UpdateIPSetResponseResponseTypeDef](./type_defs.md#updateipsetresponseresponsetypedef).
 
 ### update_rate_based_rule
+
+.
 
 Type annotations for `boto3.client("waf-regional").update_rate_based_rule`
 method.
 
 Boto3 documentation:
 [WAFRegional.Client.update_rate_based_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_rate_based_rule)
+
+Arguments mapping described in
+[UpdateRateBasedRuleRequestTypeDef](./type_defs.md#updateratebasedrulerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1310,15 +1684,20 @@ Keyword-only arguments:
 - `RateLimit`: `int` *(required)*
 
 Returns
-[UpdateRateBasedRuleResponseTypeDef](./type_defs.md#updateratebasedruleresponsetypedef).
+[UpdateRateBasedRuleResponseResponseTypeDef](./type_defs.md#updateratebasedruleresponseresponsetypedef).
 
 ### update_regex_match_set
+
+.
 
 Type annotations for `boto3.client("waf-regional").update_regex_match_set`
 method.
 
 Boto3 documentation:
 [WAFRegional.Client.update_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_regex_match_set)
+
+Arguments mapping described in
+[UpdateRegexMatchSetRequestTypeDef](./type_defs.md#updateregexmatchsetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1329,15 +1708,20 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[UpdateRegexMatchSetResponseTypeDef](./type_defs.md#updateregexmatchsetresponsetypedef).
+[UpdateRegexMatchSetResponseResponseTypeDef](./type_defs.md#updateregexmatchsetresponseresponsetypedef).
 
 ### update_regex_pattern_set
+
+.
 
 Type annotations for `boto3.client("waf-regional").update_regex_pattern_set`
 method.
 
 Boto3 documentation:
 [WAFRegional.Client.update_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_regex_pattern_set)
+
+Arguments mapping described in
+[UpdateRegexPatternSetRequestTypeDef](./type_defs.md#updateregexpatternsetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1348,14 +1732,19 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[UpdateRegexPatternSetResponseTypeDef](./type_defs.md#updateregexpatternsetresponsetypedef).
+[UpdateRegexPatternSetResponseResponseTypeDef](./type_defs.md#updateregexpatternsetresponseresponsetypedef).
 
 ### update_rule
+
+.
 
 Type annotations for `boto3.client("waf-regional").update_rule` method.
 
 Boto3 documentation:
 [WAFRegional.Client.update_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_rule)
+
+Arguments mapping described in
+[UpdateRuleRequestTypeDef](./type_defs.md#updaterulerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1364,14 +1753,20 @@ Keyword-only arguments:
 - `Updates`: `List`\[[RuleUpdateTypeDef](./type_defs.md#ruleupdatetypedef)\]
   *(required)*
 
-Returns [UpdateRuleResponseTypeDef](./type_defs.md#updateruleresponsetypedef).
+Returns
+[UpdateRuleResponseResponseTypeDef](./type_defs.md#updateruleresponseresponsetypedef).
 
 ### update_rule_group
+
+.
 
 Type annotations for `boto3.client("waf-regional").update_rule_group` method.
 
 Boto3 documentation:
 [WAFRegional.Client.update_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_rule_group)
+
+Arguments mapping described in
+[UpdateRuleGroupRequestTypeDef](./type_defs.md#updaterulegrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -1382,15 +1777,20 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[UpdateRuleGroupResponseTypeDef](./type_defs.md#updaterulegroupresponsetypedef).
+[UpdateRuleGroupResponseResponseTypeDef](./type_defs.md#updaterulegroupresponseresponsetypedef).
 
 ### update_size_constraint_set
+
+.
 
 Type annotations for `boto3.client("waf-regional").update_size_constraint_set`
 method.
 
 Boto3 documentation:
 [WAFRegional.Client.update_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_size_constraint_set)
+
+Arguments mapping described in
+[UpdateSizeConstraintSetRequestTypeDef](./type_defs.md#updatesizeconstraintsetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1401,15 +1801,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateSizeConstraintSetResponseTypeDef](./type_defs.md#updatesizeconstraintsetresponsetypedef).
+[UpdateSizeConstraintSetResponseResponseTypeDef](./type_defs.md#updatesizeconstraintsetresponseresponsetypedef).
 
 ### update_sql_injection_match_set
+
+.
 
 Type annotations for
 `boto3.client("waf-regional").update_sql_injection_match_set` method.
 
 Boto3 documentation:
 [WAFRegional.Client.update_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_sql_injection_match_set)
+
+Arguments mapping described in
+[UpdateSqlInjectionMatchSetRequestTypeDef](./type_defs.md#updatesqlinjectionmatchsetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1420,14 +1825,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateSqlInjectionMatchSetResponseTypeDef](./type_defs.md#updatesqlinjectionmatchsetresponsetypedef).
+[UpdateSqlInjectionMatchSetResponseResponseTypeDef](./type_defs.md#updatesqlinjectionmatchsetresponseresponsetypedef).
 
 ### update_web_acl
+
+.
 
 Type annotations for `boto3.client("waf-regional").update_web_acl` method.
 
 Boto3 documentation:
 [WAFRegional.Client.update_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_web_acl)
+
+Arguments mapping described in
+[UpdateWebACLRequestTypeDef](./type_defs.md#updatewebaclrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1438,15 +1848,20 @@ Keyword-only arguments:
 - `DefaultAction`: [WafActionTypeDef](./type_defs.md#wafactiontypedef)
 
 Returns
-[UpdateWebACLResponseTypeDef](./type_defs.md#updatewebaclresponsetypedef).
+[UpdateWebACLResponseResponseTypeDef](./type_defs.md#updatewebaclresponseresponsetypedef).
 
 ### update_xss_match_set
+
+.
 
 Type annotations for `boto3.client("waf-regional").update_xss_match_set`
 method.
 
 Boto3 documentation:
 [WAFRegional.Client.update_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.update_xss_match_set)
+
+Arguments mapping described in
+[UpdateXssMatchSetRequestTypeDef](./type_defs.md#updatexssmatchsetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1457,4 +1872,4 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateXssMatchSetResponseTypeDef](./type_defs.md#updatexssmatchsetresponsetypedef).
+[UpdateXssMatchSetResponseResponseTypeDef](./type_defs.md#updatexssmatchsetresponseresponsetypedef).

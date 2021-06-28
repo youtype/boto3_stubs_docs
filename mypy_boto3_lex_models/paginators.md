@@ -44,7 +44,7 @@ Arguments for `GetBotAliasesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetBotAliasesPaginator.paginate` returns
-`Iterator`\[[GetBotAliasesResponseTypeDef](./type_defs.md#getbotaliasesresponsetypedef)\].
+`Iterator`\[[GetBotAliasesResponseResponseTypeDef](./type_defs.md#getbotaliasesresponseresponsetypedef)\].
 
 ## GetBotChannelAssociationsPaginator
 
@@ -72,7 +72,7 @@ Arguments for `GetBotChannelAssociationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetBotChannelAssociationsPaginator.paginate` returns
-`Iterator`\[[GetBotChannelAssociationsResponseTypeDef](./type_defs.md#getbotchannelassociationsresponsetypedef)\].
+`Iterator`\[[GetBotChannelAssociationsResponseResponseTypeDef](./type_defs.md#getbotchannelassociationsresponseresponsetypedef)\].
 
 ## GetBotVersionsPaginator
 
@@ -98,7 +98,7 @@ Arguments for `GetBotVersionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetBotVersionsPaginator.paginate` returns
-`Iterator`\[[GetBotVersionsResponseTypeDef](./type_defs.md#getbotversionsresponsetypedef)\].
+`Iterator`\[[GetBotVersionsResponseResponseTypeDef](./type_defs.md#getbotversionsresponseresponsetypedef)\].
 
 ## GetBotsPaginator
 
@@ -123,7 +123,7 @@ Arguments for `GetBotsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetBotsPaginator.paginate` returns
-`Iterator`\[[GetBotsResponseTypeDef](./type_defs.md#getbotsresponsetypedef)\].
+`Iterator`\[[GetBotsResponseResponseTypeDef](./type_defs.md#getbotsresponseresponsetypedef)\].
 
 ## GetBuiltinIntentsPaginator
 
@@ -150,7 +150,7 @@ Arguments for `GetBuiltinIntentsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetBuiltinIntentsPaginator.paginate` returns
-`Iterator`\[[GetBuiltinIntentsResponseTypeDef](./type_defs.md#getbuiltinintentsresponsetypedef)\].
+`Iterator`\[[GetBuiltinIntentsResponseResponseTypeDef](./type_defs.md#getbuiltinintentsresponseresponsetypedef)\].
 
 ## GetBuiltinSlotTypesPaginator
 
@@ -177,7 +177,7 @@ Arguments for `GetBuiltinSlotTypesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetBuiltinSlotTypesPaginator.paginate` returns
-`Iterator`\[[GetBuiltinSlotTypesResponseTypeDef](./type_defs.md#getbuiltinslottypesresponsetypedef)\].
+`Iterator`\[[GetBuiltinSlotTypesResponseResponseTypeDef](./type_defs.md#getbuiltinslottypesresponseresponsetypedef)\].
 
 ## GetIntentVersionsPaginator
 
@@ -203,7 +203,7 @@ Arguments for `GetIntentVersionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetIntentVersionsPaginator.paginate` returns
-`Iterator`\[[GetIntentVersionsResponseTypeDef](./type_defs.md#getintentversionsresponsetypedef)\].
+`Iterator`\[[GetIntentVersionsResponseResponseTypeDef](./type_defs.md#getintentversionsresponseresponsetypedef)\].
 
 ## GetIntentsPaginator
 
@@ -228,7 +228,7 @@ Arguments for `GetIntentsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetIntentsPaginator.paginate` returns
-`Iterator`\[[GetIntentsResponseTypeDef](./type_defs.md#getintentsresponsetypedef)\].
+`Iterator`\[[GetIntentsResponseResponseTypeDef](./type_defs.md#getintentsresponseresponsetypedef)\].
 
 ## GetSlotTypeVersionsPaginator
 
@@ -254,7 +254,7 @@ Arguments for `GetSlotTypeVersionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetSlotTypeVersionsPaginator.paginate` returns
-`Iterator`\[[GetSlotTypeVersionsResponseTypeDef](./type_defs.md#getslottypeversionsresponsetypedef)\].
+`Iterator`\[[GetSlotTypeVersionsResponseResponseTypeDef](./type_defs.md#getslottypeversionsresponseresponsetypedef)\].
 
 ## GetSlotTypesPaginator
 
@@ -280,4 +280,4 @@ Arguments for `GetSlotTypesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetSlotTypesPaginator.paginate` returns
-`Iterator`\[[GetSlotTypesResponseTypeDef](./type_defs.md#getslottypesresponsetypedef)\].
+`Iterator`\[[GetSlotTypesResponseResponseTypeDef](./type_defs.md#getslottypesresponseresponsetypedef)\].

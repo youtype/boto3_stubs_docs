@@ -71,13 +71,18 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_iot_jobs_data.type_defs import DescribeJobExecutionResponseTypeDef, ...
+from mypy_boto3_iot_jobs_data.type_defs import DescribeJobExecutionRequestTypeDef, ...
 ```
 
-- [DescribeJobExecutionResponseTypeDef](./type_defs.md#describejobexecutionresponsetypedef)
-- [GetPendingJobExecutionsResponseTypeDef](./type_defs.md#getpendingjobexecutionsresponsetypedef)
+- [DescribeJobExecutionRequestTypeDef](./type_defs.md#describejobexecutionrequesttypedef)
+- [DescribeJobExecutionResponseResponseTypeDef](./type_defs.md#describejobexecutionresponseresponsetypedef)
+- [GetPendingJobExecutionsRequestTypeDef](./type_defs.md#getpendingjobexecutionsrequesttypedef)
+- [GetPendingJobExecutionsResponseResponseTypeDef](./type_defs.md#getpendingjobexecutionsresponseresponsetypedef)
 - [JobExecutionStateTypeDef](./type_defs.md#jobexecutionstatetypedef)
 - [JobExecutionSummaryTypeDef](./type_defs.md#jobexecutionsummarytypedef)
 - [JobExecutionTypeDef](./type_defs.md#jobexecutiontypedef)
-- [StartNextPendingJobExecutionResponseTypeDef](./type_defs.md#startnextpendingjobexecutionresponsetypedef)
-- [UpdateJobExecutionResponseTypeDef](./type_defs.md#updatejobexecutionresponsetypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [StartNextPendingJobExecutionRequestTypeDef](./type_defs.md#startnextpendingjobexecutionrequesttypedef)
+- [StartNextPendingJobExecutionResponseResponseTypeDef](./type_defs.md#startnextpendingjobexecutionresponseresponsetypedef)
+- [UpdateJobExecutionRequestTypeDef](./type_defs.md#updatejobexecutionrequesttypedef)
+- [UpdateJobExecutionResponseResponseTypeDef](./type_defs.md#updatejobexecutionresponseresponsetypedef)

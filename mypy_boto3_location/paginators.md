@@ -39,13 +39,13 @@ Arguments for `GetDevicePositionHistoryPaginator.paginate` method:
 
 - `DeviceId`: `str` *(required)*
 - `TrackerName`: `str` *(required)*
-- `EndTimeExclusive`: `datetime`
-- `StartTimeInclusive`: `datetime`
+- `EndTimeExclusive`: `Union`\[`datetime`, `str`\]
+- `StartTimeInclusive`: `Union`\[`datetime`, `str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetDevicePositionHistoryPaginator.paginate` returns
-`Iterator`\[[GetDevicePositionHistoryResponseTypeDef](./type_defs.md#getdevicepositionhistoryresponsetypedef)\].
+`Iterator`\[[GetDevicePositionHistoryResponseResponseTypeDef](./type_defs.md#getdevicepositionhistoryresponseresponsetypedef)\].
 
 ## ListDevicePositionsPaginator
 
@@ -71,7 +71,7 @@ Arguments for `ListDevicePositionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDevicePositionsPaginator.paginate` returns
-`Iterator`\[[ListDevicePositionsResponseTypeDef](./type_defs.md#listdevicepositionsresponsetypedef)\].
+`Iterator`\[[ListDevicePositionsResponseResponseTypeDef](./type_defs.md#listdevicepositionsresponseresponsetypedef)\].
 
 ## ListGeofenceCollectionsPaginator
 
@@ -96,7 +96,7 @@ Arguments for `ListGeofenceCollectionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGeofenceCollectionsPaginator.paginate` returns
-`Iterator`\[[ListGeofenceCollectionsResponseTypeDef](./type_defs.md#listgeofencecollectionsresponsetypedef)\].
+`Iterator`\[[ListGeofenceCollectionsResponseResponseTypeDef](./type_defs.md#listgeofencecollectionsresponseresponsetypedef)\].
 
 ## ListGeofencesPaginator
 
@@ -122,7 +122,7 @@ Arguments for `ListGeofencesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGeofencesPaginator.paginate` returns
-`Iterator`\[[ListGeofencesResponseTypeDef](./type_defs.md#listgeofencesresponsetypedef)\].
+`Iterator`\[[ListGeofencesResponseResponseTypeDef](./type_defs.md#listgeofencesresponseresponsetypedef)\].
 
 ## ListMapsPaginator
 
@@ -146,7 +146,7 @@ Arguments for `ListMapsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMapsPaginator.paginate` returns
-`Iterator`\[[ListMapsResponseTypeDef](./type_defs.md#listmapsresponsetypedef)\].
+`Iterator`\[[ListMapsResponseResponseTypeDef](./type_defs.md#listmapsresponseresponsetypedef)\].
 
 ## ListPlaceIndexesPaginator
 
@@ -171,7 +171,7 @@ Arguments for `ListPlaceIndexesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPlaceIndexesPaginator.paginate` returns
-`Iterator`\[[ListPlaceIndexesResponseTypeDef](./type_defs.md#listplaceindexesresponsetypedef)\].
+`Iterator`\[[ListPlaceIndexesResponseResponseTypeDef](./type_defs.md#listplaceindexesresponseresponsetypedef)\].
 
 ## ListRouteCalculatorsPaginator
 
@@ -196,7 +196,7 @@ Arguments for `ListRouteCalculatorsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRouteCalculatorsPaginator.paginate` returns
-`Iterator`\[[ListRouteCalculatorsResponseTypeDef](./type_defs.md#listroutecalculatorsresponsetypedef)\].
+`Iterator`\[[ListRouteCalculatorsResponseResponseTypeDef](./type_defs.md#listroutecalculatorsresponseresponsetypedef)\].
 
 ## ListTrackerConsumersPaginator
 
@@ -222,7 +222,7 @@ Arguments for `ListTrackerConsumersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTrackerConsumersPaginator.paginate` returns
-`Iterator`\[[ListTrackerConsumersResponseTypeDef](./type_defs.md#listtrackerconsumersresponsetypedef)\].
+`Iterator`\[[ListTrackerConsumersResponseResponseTypeDef](./type_defs.md#listtrackerconsumersresponseresponsetypedef)\].
 
 ## ListTrackersPaginator
 
@@ -246,4 +246,4 @@ Arguments for `ListTrackersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTrackersPaginator.paginate` returns
-`Iterator`\[[ListTrackersResponseTypeDef](./type_defs.md#listtrackersresponsetypedef)\].
+`Iterator`\[[ListTrackersResponseResponseTypeDef](./type_defs.md#listtrackersresponseresponsetypedef)\].

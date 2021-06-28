@@ -72,6 +72,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("cloudhsmv2").can_paginate` method.
 
 Boto3 documentation:
@@ -85,10 +87,15 @@ Returns `bool`.
 
 ### copy_backup_to_region
 
+Copy an AWS CloudHSM cluster backup to a different region.
+
 Type annotations for `boto3.client("cloudhsmv2").copy_backup_to_region` method.
 
 Boto3 documentation:
 [CloudHSMV2.Client.copy_backup_to_region](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.copy_backup_to_region)
+
+Arguments mapping described in
+[CopyBackupToRegionRequestTypeDef](./type_defs.md#copybackuptoregionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -97,14 +104,19 @@ Keyword-only arguments:
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CopyBackupToRegionResponseTypeDef](./type_defs.md#copybackuptoregionresponsetypedef).
+[CopyBackupToRegionResponseResponseTypeDef](./type_defs.md#copybackuptoregionresponseresponsetypedef).
 
 ### create_cluster
+
+Creates a new AWS CloudHSM cluster.
 
 Type annotations for `boto3.client("cloudhsmv2").create_cluster` method.
 
 Boto3 documentation:
 [CloudHSMV2.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.create_cluster)
+
+Arguments mapping described in
+[CreateClusterRequestTypeDef](./type_defs.md#createclusterrequesttypedef).
 
 Keyword-only arguments:
 
@@ -116,14 +128,20 @@ Keyword-only arguments:
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
+[CreateClusterResponseResponseTypeDef](./type_defs.md#createclusterresponseresponsetypedef).
 
 ### create_hsm
+
+Creates a new hardware security module (HSM) in the specified AWS CloudHSM
+cluster.
 
 Type annotations for `boto3.client("cloudhsmv2").create_hsm` method.
 
 Boto3 documentation:
 [CloudHSMV2.Client.create_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.create_hsm)
+
+Arguments mapping described in
+[CreateHsmRequestTypeDef](./type_defs.md#createhsmrequesttypedef).
 
 Keyword-only arguments:
 
@@ -131,42 +149,58 @@ Keyword-only arguments:
 - `AvailabilityZone`: `str` *(required)*
 - `IpAddress`: `str`
 
-Returns [CreateHsmResponseTypeDef](./type_defs.md#createhsmresponsetypedef).
+Returns
+[CreateHsmResponseResponseTypeDef](./type_defs.md#createhsmresponseresponsetypedef).
 
 ### delete_backup
+
+Deletes a specified AWS CloudHSM backup.
 
 Type annotations for `boto3.client("cloudhsmv2").delete_backup` method.
 
 Boto3 documentation:
 [CloudHSMV2.Client.delete_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.delete_backup)
 
+Arguments mapping described in
+[DeleteBackupRequestTypeDef](./type_defs.md#deletebackuprequesttypedef).
+
 Keyword-only arguments:
 
 - `BackupId`: `str` *(required)*
 
 Returns
-[DeleteBackupResponseTypeDef](./type_defs.md#deletebackupresponsetypedef).
+[DeleteBackupResponseResponseTypeDef](./type_defs.md#deletebackupresponseresponsetypedef).
 
 ### delete_cluster
+
+Deletes the specified AWS CloudHSM cluster.
 
 Type annotations for `boto3.client("cloudhsmv2").delete_cluster` method.
 
 Boto3 documentation:
 [CloudHSMV2.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.delete_cluster)
 
+Arguments mapping described in
+[DeleteClusterRequestTypeDef](./type_defs.md#deleteclusterrequesttypedef).
+
 Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 
 Returns
-[DeleteClusterResponseTypeDef](./type_defs.md#deleteclusterresponsetypedef).
+[DeleteClusterResponseResponseTypeDef](./type_defs.md#deleteclusterresponseresponsetypedef).
 
 ### delete_hsm
+
+Deletes the specified HSM.
 
 Type annotations for `boto3.client("cloudhsmv2").delete_hsm` method.
 
 Boto3 documentation:
 [CloudHSMV2.Client.delete_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.delete_hsm)
+
+Arguments mapping described in
+[DeleteHsmRequestTypeDef](./type_defs.md#deletehsmrequesttypedef).
 
 Keyword-only arguments:
 
@@ -175,14 +209,20 @@ Keyword-only arguments:
 - `EniId`: `str`
 - `EniIp`: `str`
 
-Returns [DeleteHsmResponseTypeDef](./type_defs.md#deletehsmresponsetypedef).
+Returns
+[DeleteHsmResponseResponseTypeDef](./type_defs.md#deletehsmresponseresponsetypedef).
 
 ### describe_backups
+
+Gets information about backups of AWS CloudHSM clusters.
 
 Type annotations for `boto3.client("cloudhsmv2").describe_backups` method.
 
 Boto3 documentation:
 [CloudHSMV2.Client.describe_backups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.describe_backups)
+
+Arguments mapping described in
+[DescribeBackupsRequestTypeDef](./type_defs.md#describebackupsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -192,14 +232,19 @@ Keyword-only arguments:
 - `SortAscending`: `bool`
 
 Returns
-[DescribeBackupsResponseTypeDef](./type_defs.md#describebackupsresponsetypedef).
+[DescribeBackupsResponseResponseTypeDef](./type_defs.md#describebackupsresponseresponsetypedef).
 
 ### describe_clusters
+
+Gets information about AWS CloudHSM clusters.
 
 Type annotations for `boto3.client("cloudhsmv2").describe_clusters` method.
 
 Boto3 documentation:
 [CloudHSMV2.Client.describe_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.describe_clusters)
+
+Arguments mapping described in
+[DescribeClustersRequestTypeDef](./type_defs.md#describeclustersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -208,9 +253,11 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeClustersResponseTypeDef](./type_defs.md#describeclustersresponsetypedef).
+[DescribeClustersResponseResponseTypeDef](./type_defs.md#describeclustersresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("cloudhsmv2").generate_presigned_url`
 method.
@@ -229,10 +276,16 @@ Returns `str`.
 
 ### initialize_cluster
 
+Claims an AWS CloudHSM cluster by submitting the cluster certificate issued by
+your issuing certificate authority (CA) and the CA's root certificate.
+
 Type annotations for `boto3.client("cloudhsmv2").initialize_cluster` method.
 
 Boto3 documentation:
 [CloudHSMV2.Client.initialize_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.initialize_cluster)
+
+Arguments mapping described in
+[InitializeClusterRequestTypeDef](./type_defs.md#initializeclusterrequesttypedef).
 
 Keyword-only arguments:
 
@@ -241,14 +294,19 @@ Keyword-only arguments:
 - `TrustAnchor`: `str` *(required)*
 
 Returns
-[InitializeClusterResponseTypeDef](./type_defs.md#initializeclusterresponsetypedef).
+[InitializeClusterResponseResponseTypeDef](./type_defs.md#initializeclusterresponseresponsetypedef).
 
 ### list_tags
+
+Gets a list of tags for the specified AWS CloudHSM cluster.
 
 Type annotations for `boto3.client("cloudhsmv2").list_tags` method.
 
 Boto3 documentation:
 [CloudHSMV2.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.list_tags)
+
+Arguments mapping described in
+[ListTagsRequestTypeDef](./type_defs.md#listtagsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -256,9 +314,12 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
+Returns
+[ListTagsResponseResponseTypeDef](./type_defs.md#listtagsresponseresponsetypedef).
 
 ### modify_backup_attributes
+
+Modifies attributes for AWS CloudHSM backup.
 
 Type annotations for `boto3.client("cloudhsmv2").modify_backup_attributes`
 method.
@@ -266,20 +327,28 @@ method.
 Boto3 documentation:
 [CloudHSMV2.Client.modify_backup_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.modify_backup_attributes)
 
+Arguments mapping described in
+[ModifyBackupAttributesRequestTypeDef](./type_defs.md#modifybackupattributesrequesttypedef).
+
 Keyword-only arguments:
 
 - `BackupId`: `str` *(required)*
 - `NeverExpires`: `bool` *(required)*
 
 Returns
-[ModifyBackupAttributesResponseTypeDef](./type_defs.md#modifybackupattributesresponsetypedef).
+[ModifyBackupAttributesResponseResponseTypeDef](./type_defs.md#modifybackupattributesresponseresponsetypedef).
 
 ### modify_cluster
+
+Modifies AWS CloudHSM cluster.
 
 Type annotations for `boto3.client("cloudhsmv2").modify_cluster` method.
 
 Boto3 documentation:
 [CloudHSMV2.Client.modify_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.modify_cluster)
+
+Arguments mapping described in
+[ModifyClusterRequestTypeDef](./type_defs.md#modifyclusterrequesttypedef).
 
 Keyword-only arguments:
 
@@ -289,28 +358,39 @@ Keyword-only arguments:
 - `ClusterId`: `str` *(required)*
 
 Returns
-[ModifyClusterResponseTypeDef](./type_defs.md#modifyclusterresponsetypedef).
+[ModifyClusterResponseResponseTypeDef](./type_defs.md#modifyclusterresponseresponsetypedef).
 
 ### restore_backup
+
+Restores a specified AWS CloudHSM backup that is in the `PENDING_DELETION`
+state.
 
 Type annotations for `boto3.client("cloudhsmv2").restore_backup` method.
 
 Boto3 documentation:
 [CloudHSMV2.Client.restore_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.restore_backup)
 
+Arguments mapping described in
+[RestoreBackupRequestTypeDef](./type_defs.md#restorebackuprequesttypedef).
+
 Keyword-only arguments:
 
 - `BackupId`: `str` *(required)*
 
 Returns
-[RestoreBackupResponseTypeDef](./type_defs.md#restorebackupresponsetypedef).
+[RestoreBackupResponseResponseTypeDef](./type_defs.md#restorebackupresponseresponsetypedef).
 
 ### tag_resource
+
+Adds or overwrites one or more tags for the specified AWS CloudHSM cluster.
 
 Type annotations for `boto3.client("cloudhsmv2").tag_resource` method.
 
 Boto3 documentation:
 [CloudHSMV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -321,10 +401,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Removes the specified tag or tags from the specified AWS CloudHSM cluster.
+
 Type annotations for `boto3.client("cloudhsmv2").untag_resource` method.
 
 Boto3 documentation:
 [CloudHSMV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 

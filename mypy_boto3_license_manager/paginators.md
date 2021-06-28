@@ -39,7 +39,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssociationsForLicenseConfigurationPaginator.paginate` returns
-`Iterator`\[[ListAssociationsForLicenseConfigurationResponseTypeDef](./type_defs.md#listassociationsforlicenseconfigurationresponsetypedef)\].
+`Iterator`\[[ListAssociationsForLicenseConfigurationResponseResponseTypeDef](./type_defs.md#listassociationsforlicenseconfigurationresponseresponsetypedef)\].
 
 ## ListLicenseConfigurationsPaginator
 
@@ -66,7 +66,7 @@ Arguments for `ListLicenseConfigurationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListLicenseConfigurationsPaginator.paginate` returns
-`Iterator`\[[ListLicenseConfigurationsResponseTypeDef](./type_defs.md#listlicenseconfigurationsresponsetypedef)\].
+`Iterator`\[[ListLicenseConfigurationsResponseResponseTypeDef](./type_defs.md#listlicenseconfigurationsresponseresponsetypedef)\].
 
 ## ListLicenseSpecificationsForResourcePaginator
 
@@ -92,7 +92,7 @@ Arguments for `ListLicenseSpecificationsForResourcePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListLicenseSpecificationsForResourcePaginator.paginate` returns
-`Iterator`\[[ListLicenseSpecificationsForResourceResponseTypeDef](./type_defs.md#listlicensespecificationsforresourceresponsetypedef)\].
+`Iterator`\[[ListLicenseSpecificationsForResourceResponseResponseTypeDef](./type_defs.md#listlicensespecificationsforresourceresponseresponsetypedef)\].
 
 ## ListResourceInventoryPaginator
 
@@ -119,7 +119,7 @@ Arguments for `ListResourceInventoryPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResourceInventoryPaginator.paginate` returns
-`Iterator`\[[ListResourceInventoryResponseTypeDef](./type_defs.md#listresourceinventoryresponsetypedef)\].
+`Iterator`\[[ListResourceInventoryResponseResponseTypeDef](./type_defs.md#listresourceinventoryresponseresponsetypedef)\].
 
 ## ListUsageForLicenseConfigurationPaginator
 
@@ -146,4 +146,4 @@ Arguments for `ListUsageForLicenseConfigurationPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListUsageForLicenseConfigurationPaginator.paginate` returns
-`Iterator`\[[ListUsageForLicenseConfigurationResponseTypeDef](./type_defs.md#listusageforlicenseconfigurationresponsetypedef)\].
+`Iterator`\[[ListUsageForLicenseConfigurationResponseResponseTypeDef](./type_defs.md#listusageforlicenseconfigurationresponseresponsetypedef)\].

@@ -8,29 +8,58 @@ type annotations stubs module
 [mypy_boto3_service_quotas](https://pypi.org/project/mypy-boto3-service-quotas/).
 
 - [Typed dictionaries for boto3 ServiceQuotas module](#typed-dictionaries-for-boto3-servicequotas-module)
+  - [DeleteServiceQuotaIncreaseRequestFromTemplateRequestTypeDef](#deleteservicequotaincreaserequestfromtemplaterequesttypedef)
   - [ErrorReasonTypeDef](#errorreasontypedef)
-  - [GetAWSDefaultServiceQuotaResponseTypeDef](#getawsdefaultservicequotaresponsetypedef)
-  - [GetAssociationForServiceQuotaTemplateResponseTypeDef](#getassociationforservicequotatemplateresponsetypedef)
-  - [GetRequestedServiceQuotaChangeResponseTypeDef](#getrequestedservicequotachangeresponsetypedef)
-  - [GetServiceQuotaIncreaseRequestFromTemplateResponseTypeDef](#getservicequotaincreaserequestfromtemplateresponsetypedef)
-  - [GetServiceQuotaResponseTypeDef](#getservicequotaresponsetypedef)
-  - [ListAWSDefaultServiceQuotasResponseTypeDef](#listawsdefaultservicequotasresponsetypedef)
-  - [ListRequestedServiceQuotaChangeHistoryByQuotaResponseTypeDef](#listrequestedservicequotachangehistorybyquotaresponsetypedef)
-  - [ListRequestedServiceQuotaChangeHistoryResponseTypeDef](#listrequestedservicequotachangehistoryresponsetypedef)
-  - [ListServiceQuotaIncreaseRequestsInTemplateResponseTypeDef](#listservicequotaincreaserequestsintemplateresponsetypedef)
-  - [ListServiceQuotasResponseTypeDef](#listservicequotasresponsetypedef)
-  - [ListServicesResponseTypeDef](#listservicesresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [GetAWSDefaultServiceQuotaRequestTypeDef](#getawsdefaultservicequotarequesttypedef)
+  - [GetAWSDefaultServiceQuotaResponseResponseTypeDef](#getawsdefaultservicequotaresponseresponsetypedef)
+  - [GetAssociationForServiceQuotaTemplateResponseResponseTypeDef](#getassociationforservicequotatemplateresponseresponsetypedef)
+  - [GetRequestedServiceQuotaChangeRequestTypeDef](#getrequestedservicequotachangerequesttypedef)
+  - [GetRequestedServiceQuotaChangeResponseResponseTypeDef](#getrequestedservicequotachangeresponseresponsetypedef)
+  - [GetServiceQuotaIncreaseRequestFromTemplateRequestTypeDef](#getservicequotaincreaserequestfromtemplaterequesttypedef)
+  - [GetServiceQuotaIncreaseRequestFromTemplateResponseResponseTypeDef](#getservicequotaincreaserequestfromtemplateresponseresponsetypedef)
+  - [GetServiceQuotaRequestTypeDef](#getservicequotarequesttypedef)
+  - [GetServiceQuotaResponseResponseTypeDef](#getservicequotaresponseresponsetypedef)
+  - [ListAWSDefaultServiceQuotasRequestTypeDef](#listawsdefaultservicequotasrequesttypedef)
+  - [ListAWSDefaultServiceQuotasResponseResponseTypeDef](#listawsdefaultservicequotasresponseresponsetypedef)
+  - [ListRequestedServiceQuotaChangeHistoryByQuotaRequestTypeDef](#listrequestedservicequotachangehistorybyquotarequesttypedef)
+  - [ListRequestedServiceQuotaChangeHistoryByQuotaResponseResponseTypeDef](#listrequestedservicequotachangehistorybyquotaresponseresponsetypedef)
+  - [ListRequestedServiceQuotaChangeHistoryRequestTypeDef](#listrequestedservicequotachangehistoryrequesttypedef)
+  - [ListRequestedServiceQuotaChangeHistoryResponseResponseTypeDef](#listrequestedservicequotachangehistoryresponseresponsetypedef)
+  - [ListServiceQuotaIncreaseRequestsInTemplateRequestTypeDef](#listservicequotaincreaserequestsintemplaterequesttypedef)
+  - [ListServiceQuotaIncreaseRequestsInTemplateResponseResponseTypeDef](#listservicequotaincreaserequestsintemplateresponseresponsetypedef)
+  - [ListServiceQuotasRequestTypeDef](#listservicequotasrequesttypedef)
+  - [ListServiceQuotasResponseResponseTypeDef](#listservicequotasresponseresponsetypedef)
+  - [ListServicesRequestTypeDef](#listservicesrequesttypedef)
+  - [ListServicesResponseResponseTypeDef](#listservicesresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [MetricInfoTypeDef](#metricinfotypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutServiceQuotaIncreaseRequestIntoTemplateResponseTypeDef](#putservicequotaincreaserequestintotemplateresponsetypedef)
+  - [PutServiceQuotaIncreaseRequestIntoTemplateRequestTypeDef](#putservicequotaincreaserequestintotemplaterequesttypedef)
+  - [PutServiceQuotaIncreaseRequestIntoTemplateResponseResponseTypeDef](#putservicequotaincreaserequestintotemplateresponseresponsetypedef)
   - [QuotaPeriodTypeDef](#quotaperiodtypedef)
-  - [RequestServiceQuotaIncreaseResponseTypeDef](#requestservicequotaincreaseresponsetypedef)
+  - [RequestServiceQuotaIncreaseRequestTypeDef](#requestservicequotaincreaserequesttypedef)
+  - [RequestServiceQuotaIncreaseResponseResponseTypeDef](#requestservicequotaincreaseresponseresponsetypedef)
   - [RequestedServiceQuotaChangeTypeDef](#requestedservicequotachangetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [ServiceInfoTypeDef](#serviceinfotypedef)
   - [ServiceQuotaIncreaseRequestInTemplateTypeDef](#servicequotaincreaserequestintemplatetypedef)
   - [ServiceQuotaTypeDef](#servicequotatypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TagTypeDef](#tagtypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+
+## DeleteServiceQuotaIncreaseRequestFromTemplateRequestTypeDef
+
+```python
+from mypy_boto3_service_quotas.type_defs import DeleteServiceQuotaIncreaseRequestFromTemplateRequestTypeDef
+```
+
+Required fields:
+
+- `ServiceCode`: `str`
+- `QuotaCode`: `str`
+- `AwsRegion`: `str`
 
 ## ErrorReasonTypeDef
 
@@ -43,137 +72,299 @@ Optional fields:
 - `ErrorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `ErrorMessage`: `str`
 
-## GetAWSDefaultServiceQuotaResponseTypeDef
+## GetAWSDefaultServiceQuotaRequestTypeDef
 
 ```python
-from mypy_boto3_service_quotas.type_defs import GetAWSDefaultServiceQuotaResponseTypeDef
+from mypy_boto3_service_quotas.type_defs import GetAWSDefaultServiceQuotaRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ServiceCode`: `str`
+- `QuotaCode`: `str`
+
+## GetAWSDefaultServiceQuotaResponseResponseTypeDef
+
+```python
+from mypy_boto3_service_quotas.type_defs import GetAWSDefaultServiceQuotaResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Quota`: [ServiceQuotaTypeDef](./type_defs.md#servicequotatypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAssociationForServiceQuotaTemplateResponseTypeDef
+## GetAssociationForServiceQuotaTemplateResponseResponseTypeDef
 
 ```python
-from mypy_boto3_service_quotas.type_defs import GetAssociationForServiceQuotaTemplateResponseTypeDef
+from mypy_boto3_service_quotas.type_defs import GetAssociationForServiceQuotaTemplateResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `ServiceQuotaTemplateAssociationStatus`:
   [ServiceQuotaTemplateAssociationStatusType](./literals.md#servicequotatemplateassociationstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRequestedServiceQuotaChangeResponseTypeDef
+## GetRequestedServiceQuotaChangeRequestTypeDef
 
 ```python
-from mypy_boto3_service_quotas.type_defs import GetRequestedServiceQuotaChangeResponseTypeDef
+from mypy_boto3_service_quotas.type_defs import GetRequestedServiceQuotaChangeRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `RequestId`: `str`
+
+## GetRequestedServiceQuotaChangeResponseResponseTypeDef
+
+```python
+from mypy_boto3_service_quotas.type_defs import GetRequestedServiceQuotaChangeResponseResponseTypeDef
+```
+
+Required fields:
 
 - `RequestedQuota`:
   [RequestedServiceQuotaChangeTypeDef](./type_defs.md#requestedservicequotachangetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetServiceQuotaIncreaseRequestFromTemplateResponseTypeDef
+## GetServiceQuotaIncreaseRequestFromTemplateRequestTypeDef
 
 ```python
-from mypy_boto3_service_quotas.type_defs import GetServiceQuotaIncreaseRequestFromTemplateResponseTypeDef
+from mypy_boto3_service_quotas.type_defs import GetServiceQuotaIncreaseRequestFromTemplateRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ServiceCode`: `str`
+- `QuotaCode`: `str`
+- `AwsRegion`: `str`
+
+## GetServiceQuotaIncreaseRequestFromTemplateResponseResponseTypeDef
+
+```python
+from mypy_boto3_service_quotas.type_defs import GetServiceQuotaIncreaseRequestFromTemplateResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ServiceQuotaIncreaseRequestInTemplate`:
   [ServiceQuotaIncreaseRequestInTemplateTypeDef](./type_defs.md#servicequotaincreaserequestintemplatetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetServiceQuotaResponseTypeDef
+## GetServiceQuotaRequestTypeDef
 
 ```python
-from mypy_boto3_service_quotas.type_defs import GetServiceQuotaResponseTypeDef
+from mypy_boto3_service_quotas.type_defs import GetServiceQuotaRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ServiceCode`: `str`
+- `QuotaCode`: `str`
+
+## GetServiceQuotaResponseResponseTypeDef
+
+```python
+from mypy_boto3_service_quotas.type_defs import GetServiceQuotaResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Quota`: [ServiceQuotaTypeDef](./type_defs.md#servicequotatypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAWSDefaultServiceQuotasResponseTypeDef
+## ListAWSDefaultServiceQuotasRequestTypeDef
 
 ```python
-from mypy_boto3_service_quotas.type_defs import ListAWSDefaultServiceQuotasResponseTypeDef
+from mypy_boto3_service_quotas.type_defs import ListAWSDefaultServiceQuotasRequestTypeDef
 ```
 
+Required fields:
+
+- `ServiceCode`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListAWSDefaultServiceQuotasResponseResponseTypeDef
+
+```python
+from mypy_boto3_service_quotas.type_defs import ListAWSDefaultServiceQuotasResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `Quotas`: `List`\[[ServiceQuotaTypeDef](./type_defs.md#servicequotatypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRequestedServiceQuotaChangeHistoryByQuotaResponseTypeDef
+## ListRequestedServiceQuotaChangeHistoryByQuotaRequestTypeDef
 
 ```python
-from mypy_boto3_service_quotas.type_defs import ListRequestedServiceQuotaChangeHistoryByQuotaResponseTypeDef
+from mypy_boto3_service_quotas.type_defs import ListRequestedServiceQuotaChangeHistoryByQuotaRequestTypeDef
 ```
 
+Required fields:
+
+- `ServiceCode`: `str`
+- `QuotaCode`: `str`
+
 Optional fields:
+
+- `Status`: [RequestStatusType](./literals.md#requeststatustype)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListRequestedServiceQuotaChangeHistoryByQuotaResponseResponseTypeDef
+
+```python
+from mypy_boto3_service_quotas.type_defs import ListRequestedServiceQuotaChangeHistoryByQuotaResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `RequestedQuotas`:
   `List`\[[RequestedServiceQuotaChangeTypeDef](./type_defs.md#requestedservicequotachangetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRequestedServiceQuotaChangeHistoryResponseTypeDef
+## ListRequestedServiceQuotaChangeHistoryRequestTypeDef
 
 ```python
-from mypy_boto3_service_quotas.type_defs import ListRequestedServiceQuotaChangeHistoryResponseTypeDef
+from mypy_boto3_service_quotas.type_defs import ListRequestedServiceQuotaChangeHistoryRequestTypeDef
 ```
 
 Optional fields:
+
+- `ServiceCode`: `str`
+- `Status`: [RequestStatusType](./literals.md#requeststatustype)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListRequestedServiceQuotaChangeHistoryResponseResponseTypeDef
+
+```python
+from mypy_boto3_service_quotas.type_defs import ListRequestedServiceQuotaChangeHistoryResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `RequestedQuotas`:
   `List`\[[RequestedServiceQuotaChangeTypeDef](./type_defs.md#requestedservicequotachangetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListServiceQuotaIncreaseRequestsInTemplateResponseTypeDef
+## ListServiceQuotaIncreaseRequestsInTemplateRequestTypeDef
 
 ```python
-from mypy_boto3_service_quotas.type_defs import ListServiceQuotaIncreaseRequestsInTemplateResponseTypeDef
+from mypy_boto3_service_quotas.type_defs import ListServiceQuotaIncreaseRequestsInTemplateRequestTypeDef
 ```
 
 Optional fields:
+
+- `ServiceCode`: `str`
+- `AwsRegion`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListServiceQuotaIncreaseRequestsInTemplateResponseResponseTypeDef
+
+```python
+from mypy_boto3_service_quotas.type_defs import ListServiceQuotaIncreaseRequestsInTemplateResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ServiceQuotaIncreaseRequestInTemplateList`:
   `List`\[[ServiceQuotaIncreaseRequestInTemplateTypeDef](./type_defs.md#servicequotaincreaserequestintemplatetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListServiceQuotasResponseTypeDef
+## ListServiceQuotasRequestTypeDef
 
 ```python
-from mypy_boto3_service_quotas.type_defs import ListServiceQuotasResponseTypeDef
+from mypy_boto3_service_quotas.type_defs import ListServiceQuotasRequestTypeDef
 ```
 
+Required fields:
+
+- `ServiceCode`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListServiceQuotasResponseResponseTypeDef
+
+```python
+from mypy_boto3_service_quotas.type_defs import ListServiceQuotasResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `Quotas`: `List`\[[ServiceQuotaTypeDef](./type_defs.md#servicequotatypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListServicesResponseTypeDef
+## ListServicesRequestTypeDef
 
 ```python
-from mypy_boto3_service_quotas.type_defs import ListServicesResponseTypeDef
+from mypy_boto3_service_quotas.type_defs import ListServicesRequestTypeDef
 ```
 
 Optional fields:
 
 - `NextToken`: `str`
-- `Services`: `List`\[[ServiceInfoTypeDef](./type_defs.md#serviceinfotypedef)\]
+- `MaxResults`: `int`
 
-## ListTagsForResourceResponseTypeDef
+## ListServicesResponseResponseTypeDef
 
 ```python
-from mypy_boto3_service_quotas.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_service_quotas.type_defs import ListServicesResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `NextToken`: `str`
+- `Services`: `List`\[[ServiceInfoTypeDef](./type_defs.md#serviceinfotypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListTagsForResourceRequestTypeDef
+
+```python
+from mypy_boto3_service_quotas.type_defs import ListTagsForResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_service_quotas.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## MetricInfoTypeDef
 
@@ -200,16 +391,31 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## PutServiceQuotaIncreaseRequestIntoTemplateResponseTypeDef
+## PutServiceQuotaIncreaseRequestIntoTemplateRequestTypeDef
 
 ```python
-from mypy_boto3_service_quotas.type_defs import PutServiceQuotaIncreaseRequestIntoTemplateResponseTypeDef
+from mypy_boto3_service_quotas.type_defs import PutServiceQuotaIncreaseRequestIntoTemplateRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `QuotaCode`: `str`
+- `ServiceCode`: `str`
+- `AwsRegion`: `str`
+- `DesiredValue`: `float`
+
+## PutServiceQuotaIncreaseRequestIntoTemplateResponseResponseTypeDef
+
+```python
+from mypy_boto3_service_quotas.type_defs import PutServiceQuotaIncreaseRequestIntoTemplateResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ServiceQuotaIncreaseRequestInTemplate`:
   [ServiceQuotaIncreaseRequestInTemplateTypeDef](./type_defs.md#servicequotaincreaserequestintemplatetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## QuotaPeriodTypeDef
 
@@ -222,16 +428,30 @@ Optional fields:
 - `PeriodValue`: `int`
 - `PeriodUnit`: [PeriodUnitType](./literals.md#periodunittype)
 
-## RequestServiceQuotaIncreaseResponseTypeDef
+## RequestServiceQuotaIncreaseRequestTypeDef
 
 ```python
-from mypy_boto3_service_quotas.type_defs import RequestServiceQuotaIncreaseResponseTypeDef
+from mypy_boto3_service_quotas.type_defs import RequestServiceQuotaIncreaseRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ServiceCode`: `str`
+- `QuotaCode`: `str`
+- `DesiredValue`: `float`
+
+## RequestServiceQuotaIncreaseResponseResponseTypeDef
+
+```python
+from mypy_boto3_service_quotas.type_defs import RequestServiceQuotaIncreaseResponseResponseTypeDef
+```
+
+Required fields:
 
 - `RequestedQuota`:
   [RequestedServiceQuotaChangeTypeDef](./type_defs.md#requestedservicequotachangetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## RequestedServiceQuotaChangeTypeDef
 
@@ -255,6 +475,20 @@ Optional fields:
 - `QuotaArn`: `str`
 - `GlobalQuota`: `bool`
 - `Unit`: `str`
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_service_quotas.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## ServiceInfoTypeDef
 
@@ -305,6 +539,17 @@ Optional fields:
 - `Period`: [QuotaPeriodTypeDef](./type_defs.md#quotaperiodtypedef)
 - `ErrorReason`: [ErrorReasonTypeDef](./type_defs.md#errorreasontypedef)
 
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_service_quotas.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
 ## TagTypeDef
 
 ```python
@@ -315,3 +560,14 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+## UntagResourceRequestTypeDef
+
+```python
+from mypy_boto3_service_quotas.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+- `TagKeys`: `List`\[`str`\]

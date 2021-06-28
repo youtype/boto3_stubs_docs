@@ -54,6 +54,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for
 `boto3.client("marketplacecommerceanalytics").can_paginate` method.
 
@@ -68,16 +70,23 @@ Returns `bool`.
 
 ### generate_data_set
 
+Given a data set type and data set publication date, asynchronously publishes
+the requested data set to the specified S3 bucket and notifies the specified
+SNS topic once the data is available.
+
 Type annotations for
 `boto3.client("marketplacecommerceanalytics").generate_data_set` method.
 
 Boto3 documentation:
 [MarketplaceCommerceAnalytics.Client.generate_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.generate_data_set)
 
+Arguments mapping described in
+[GenerateDataSetRequestTypeDef](./type_defs.md#generatedatasetrequesttypedef).
+
 Keyword-only arguments:
 
 - `dataSetType`: [DataSetTypeType](./literals.md#datasettypetype) *(required)*
-- `dataSetPublicationDate`: `datetime` *(required)*
+- `dataSetPublicationDate`: `Union`\[`datetime`, `str`\] *(required)*
 - `roleNameArn`: `str` *(required)*
 - `destinationS3BucketName`: `str` *(required)*
 - `snsTopicArn`: `str` *(required)*
@@ -85,9 +94,11 @@ Keyword-only arguments:
 - `customerDefinedValues`: `Dict`\[`str`, `str`\]
 
 Returns
-[GenerateDataSetResultTypeDef](./type_defs.md#generatedatasetresulttypedef).
+[GenerateDataSetResultResponseTypeDef](./type_defs.md#generatedatasetresultresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for
 `boto3.client("marketplacecommerceanalytics").generate_presigned_url` method.
@@ -106,6 +117,10 @@ Returns `str`.
 
 ### start_support_data_export
 
+Given a data set type and a from date, asynchronously publishes the requested
+customer support data to the specified S3 bucket and notifies the specified SNS
+topic once the data is available.
+
 Type annotations for
 `boto3.client("marketplacecommerceanalytics").start_support_data_export`
 method.
@@ -113,11 +128,14 @@ method.
 Boto3 documentation:
 [MarketplaceCommerceAnalytics.Client.start_support_data_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.start_support_data_export)
 
+Arguments mapping described in
+[StartSupportDataExportRequestTypeDef](./type_defs.md#startsupportdataexportrequesttypedef).
+
 Keyword-only arguments:
 
 - `dataSetType`: [SupportDataSetTypeType](./literals.md#supportdatasettypetype)
   *(required)*
-- `fromDate`: `datetime` *(required)*
+- `fromDate`: `Union`\[`datetime`, `str`\] *(required)*
 - `roleNameArn`: `str` *(required)*
 - `destinationS3BucketName`: `str` *(required)*
 - `snsTopicArn`: `str` *(required)*
@@ -125,4 +143,4 @@ Keyword-only arguments:
 - `customerDefinedValues`: `Dict`\[`str`, `str`\]
 
 Returns
-[StartSupportDataExportResultTypeDef](./type_defs.md#startsupportdataexportresulttypedef).
+[StartSupportDataExportResultResponseTypeDef](./type_defs.md#startsupportdataexportresultresponsetypedef).

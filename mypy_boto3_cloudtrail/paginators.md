@@ -32,13 +32,13 @@ Boto3 documentation:
 
 Arguments for `ListPublicKeysPaginator.paginate` method:
 
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPublicKeysPaginator.paginate` returns
-`Iterator`\[[ListPublicKeysResponseTypeDef](./type_defs.md#listpublickeysresponsetypedef)\].
+`Iterator`\[[ListPublicKeysResponseResponseTypeDef](./type_defs.md#listpublickeysresponseresponsetypedef)\].
 
 ## ListTagsPaginator
 
@@ -63,7 +63,7 @@ Arguments for `ListTagsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsPaginator.paginate` returns
-`Iterator`\[[ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef)\].
+`Iterator`\[[ListTagsResponseResponseTypeDef](./type_defs.md#listtagsresponseresponsetypedef)\].
 
 ## ListTrailsPaginator
 
@@ -87,7 +87,7 @@ Arguments for `ListTrailsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTrailsPaginator.paginate` returns
-`Iterator`\[[ListTrailsResponseTypeDef](./type_defs.md#listtrailsresponsetypedef)\].
+`Iterator`\[[ListTrailsResponseResponseTypeDef](./type_defs.md#listtrailsresponseresponsetypedef)\].
 
 ## LookupEventsPaginator
 
@@ -110,12 +110,12 @@ Arguments for `LookupEventsPaginator.paginate` method:
 
 - `LookupAttributes`:
   `List`\[[LookupAttributeTypeDef](./type_defs.md#lookupattributetypedef)\]
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
 - `EventCategory`: `Literal['insight']` (see
   [EventCategoryType](./literals.md#eventcategorytype))
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `LookupEventsPaginator.paginate` returns
-`Iterator`\[[LookupEventsResponseTypeDef](./type_defs.md#lookupeventsresponsetypedef)\].
+`Iterator`\[[LookupEventsResponseResponseTypeDef](./type_defs.md#lookupeventsresponseresponsetypedef)\].

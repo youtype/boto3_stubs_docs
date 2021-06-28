@@ -65,6 +65,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("iot-data").can_paginate` method.
 
 Boto3 documentation:
@@ -78,10 +80,15 @@ Returns `bool`.
 
 ### delete_thing_shadow
 
+Deletes the shadow for the specified thing.
+
 Type annotations for `boto3.client("iot-data").delete_thing_shadow` method.
 
 Boto3 documentation:
 [IoTDataPlane.Client.delete_thing_shadow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.delete_thing_shadow)
+
+Arguments mapping described in
+[DeleteThingShadowRequestTypeDef](./type_defs.md#deletethingshadowrequesttypedef).
 
 Keyword-only arguments:
 
@@ -89,9 +96,11 @@ Keyword-only arguments:
 - `shadowName`: `str`
 
 Returns
-[DeleteThingShadowResponseTypeDef](./type_defs.md#deletethingshadowresponsetypedef).
+[DeleteThingShadowResponseResponseTypeDef](./type_defs.md#deletethingshadowresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("iot-data").generate_presigned_url` method.
 
@@ -109,10 +118,15 @@ Returns `str`.
 
 ### get_thing_shadow
 
+Gets the shadow for the specified thing.
+
 Type annotations for `boto3.client("iot-data").get_thing_shadow` method.
 
 Boto3 documentation:
 [IoTDataPlane.Client.get_thing_shadow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.get_thing_shadow)
+
+Arguments mapping described in
+[GetThingShadowRequestTypeDef](./type_defs.md#getthingshadowrequesttypedef).
 
 Keyword-only arguments:
 
@@ -120,15 +134,20 @@ Keyword-only arguments:
 - `shadowName`: `str`
 
 Returns
-[GetThingShadowResponseTypeDef](./type_defs.md#getthingshadowresponsetypedef).
+[GetThingShadowResponseResponseTypeDef](./type_defs.md#getthingshadowresponseresponsetypedef).
 
 ### list_named_shadows_for_thing
+
+Lists the shadows for the specified thing.
 
 Type annotations for `boto3.client("iot-data").list_named_shadows_for_thing`
 method.
 
 Boto3 documentation:
 [IoTDataPlane.Client.list_named_shadows_for_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.list_named_shadows_for_thing)
+
+Arguments mapping described in
+[ListNamedShadowsForThingRequestTypeDef](./type_defs.md#listnamedshadowsforthingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -137,14 +156,19 @@ Keyword-only arguments:
 - `pageSize`: `int`
 
 Returns
-[ListNamedShadowsForThingResponseTypeDef](./type_defs.md#listnamedshadowsforthingresponsetypedef).
+[ListNamedShadowsForThingResponseResponseTypeDef](./type_defs.md#listnamedshadowsforthingresponseresponsetypedef).
 
 ### publish
+
+Publishes state information.
 
 Type annotations for `boto3.client("iot-data").publish` method.
 
 Boto3 documentation:
 [IoTDataPlane.Client.publish](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.publish)
+
+Arguments mapping described in
+[PublishRequestTypeDef](./type_defs.md#publishrequesttypedef).
 
 Keyword-only arguments:
 
@@ -154,10 +178,15 @@ Keyword-only arguments:
 
 ### update_thing_shadow
 
+Updates the shadow for the specified thing.
+
 Type annotations for `boto3.client("iot-data").update_thing_shadow` method.
 
 Boto3 documentation:
 [IoTDataPlane.Client.update_thing_shadow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.update_thing_shadow)
+
+Arguments mapping described in
+[UpdateThingShadowRequestTypeDef](./type_defs.md#updatethingshadowrequesttypedef).
 
 Keyword-only arguments:
 
@@ -166,4 +195,4 @@ Keyword-only arguments:
 - `shadowName`: `str`
 
 Returns
-[UpdateThingShadowResponseTypeDef](./type_defs.md#updatethingshadowresponsetypedef).
+[UpdateThingShadowResponseResponseTypeDef](./type_defs.md#updatethingshadowresponseresponsetypedef).

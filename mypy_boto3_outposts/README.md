@@ -63,16 +63,26 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_outposts.type_defs import CreateOutpostOutputTypeDef, ...
+from mypy_boto3_outposts.type_defs import CreateOutpostInputTypeDef, ...
 ```
 
-- [CreateOutpostOutputTypeDef](./type_defs.md#createoutpostoutputtypedef)
-- [GetOutpostInstanceTypesOutputTypeDef](./type_defs.md#getoutpostinstancetypesoutputtypedef)
-- [GetOutpostOutputTypeDef](./type_defs.md#getoutpostoutputtypedef)
+- [CreateOutpostInputTypeDef](./type_defs.md#createoutpostinputtypedef)
+- [CreateOutpostOutputResponseTypeDef](./type_defs.md#createoutpostoutputresponsetypedef)
+- [DeleteOutpostInputTypeDef](./type_defs.md#deleteoutpostinputtypedef)
+- [DeleteSiteInputTypeDef](./type_defs.md#deletesiteinputtypedef)
+- [GetOutpostInputTypeDef](./type_defs.md#getoutpostinputtypedef)
+- [GetOutpostInstanceTypesInputTypeDef](./type_defs.md#getoutpostinstancetypesinputtypedef)
+- [GetOutpostInstanceTypesOutputResponseTypeDef](./type_defs.md#getoutpostinstancetypesoutputresponsetypedef)
+- [GetOutpostOutputResponseTypeDef](./type_defs.md#getoutpostoutputresponsetypedef)
 - [InstanceTypeItemTypeDef](./type_defs.md#instancetypeitemtypedef)
-- [ListOutpostsOutputTypeDef](./type_defs.md#listoutpostsoutputtypedef)
-- [ListSitesOutputTypeDef](./type_defs.md#listsitesoutputtypedef)
-- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [ListOutpostsInputTypeDef](./type_defs.md#listoutpostsinputtypedef)
+- [ListOutpostsOutputResponseTypeDef](./type_defs.md#listoutpostsoutputresponsetypedef)
+- [ListSitesInputTypeDef](./type_defs.md#listsitesinputtypedef)
+- [ListSitesOutputResponseTypeDef](./type_defs.md#listsitesoutputresponsetypedef)
+- [ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef)
+- [ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef)
 - [OutpostTypeDef](./type_defs.md#outposttypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [SiteTypeDef](./type_defs.md#sitetypedef)
+- [TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef)
+- [UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef)

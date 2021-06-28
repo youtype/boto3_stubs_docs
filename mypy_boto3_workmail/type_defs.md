@@ -9,38 +9,80 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 WorkMail module](#typed-dictionaries-for-boto3-workmail-module)
   - [AccessControlRuleTypeDef](#accesscontrolruletypedef)
+  - [AssociateDelegateToResourceRequestTypeDef](#associatedelegatetoresourcerequesttypedef)
+  - [AssociateMemberToGroupRequestTypeDef](#associatemembertogrouprequesttypedef)
   - [BookingOptionsTypeDef](#bookingoptionstypedef)
-  - [CreateGroupResponseTypeDef](#creategroupresponsetypedef)
-  - [CreateMobileDeviceAccessRuleResponseTypeDef](#createmobiledeviceaccessruleresponsetypedef)
-  - [CreateOrganizationResponseTypeDef](#createorganizationresponsetypedef)
-  - [CreateResourceResponseTypeDef](#createresourceresponsetypedef)
-  - [CreateUserResponseTypeDef](#createuserresponsetypedef)
+  - [CancelMailboxExportJobRequestTypeDef](#cancelmailboxexportjobrequesttypedef)
+  - [CreateAliasRequestTypeDef](#createaliasrequesttypedef)
+  - [CreateGroupRequestTypeDef](#creategrouprequesttypedef)
+  - [CreateGroupResponseResponseTypeDef](#creategroupresponseresponsetypedef)
+  - [CreateMobileDeviceAccessRuleRequestTypeDef](#createmobiledeviceaccessrulerequesttypedef)
+  - [CreateMobileDeviceAccessRuleResponseResponseTypeDef](#createmobiledeviceaccessruleresponseresponsetypedef)
+  - [CreateOrganizationRequestTypeDef](#createorganizationrequesttypedef)
+  - [CreateOrganizationResponseResponseTypeDef](#createorganizationresponseresponsetypedef)
+  - [CreateResourceRequestTypeDef](#createresourcerequesttypedef)
+  - [CreateResourceResponseResponseTypeDef](#createresourceresponseresponsetypedef)
+  - [CreateUserRequestTypeDef](#createuserrequesttypedef)
+  - [CreateUserResponseResponseTypeDef](#createuserresponseresponsetypedef)
   - [DelegateTypeDef](#delegatetypedef)
-  - [DeleteOrganizationResponseTypeDef](#deleteorganizationresponsetypedef)
-  - [DescribeGroupResponseTypeDef](#describegroupresponsetypedef)
-  - [DescribeMailboxExportJobResponseTypeDef](#describemailboxexportjobresponsetypedef)
-  - [DescribeOrganizationResponseTypeDef](#describeorganizationresponsetypedef)
-  - [DescribeResourceResponseTypeDef](#describeresourceresponsetypedef)
-  - [DescribeUserResponseTypeDef](#describeuserresponsetypedef)
+  - [DeleteAccessControlRuleRequestTypeDef](#deleteaccesscontrolrulerequesttypedef)
+  - [DeleteAliasRequestTypeDef](#deletealiasrequesttypedef)
+  - [DeleteGroupRequestTypeDef](#deletegrouprequesttypedef)
+  - [DeleteMailboxPermissionsRequestTypeDef](#deletemailboxpermissionsrequesttypedef)
+  - [DeleteMobileDeviceAccessRuleRequestTypeDef](#deletemobiledeviceaccessrulerequesttypedef)
+  - [DeleteOrganizationRequestTypeDef](#deleteorganizationrequesttypedef)
+  - [DeleteOrganizationResponseResponseTypeDef](#deleteorganizationresponseresponsetypedef)
+  - [DeleteResourceRequestTypeDef](#deleteresourcerequesttypedef)
+  - [DeleteRetentionPolicyRequestTypeDef](#deleteretentionpolicyrequesttypedef)
+  - [DeleteUserRequestTypeDef](#deleteuserrequesttypedef)
+  - [DeregisterFromWorkMailRequestTypeDef](#deregisterfromworkmailrequesttypedef)
+  - [DescribeGroupRequestTypeDef](#describegrouprequesttypedef)
+  - [DescribeGroupResponseResponseTypeDef](#describegroupresponseresponsetypedef)
+  - [DescribeMailboxExportJobRequestTypeDef](#describemailboxexportjobrequesttypedef)
+  - [DescribeMailboxExportJobResponseResponseTypeDef](#describemailboxexportjobresponseresponsetypedef)
+  - [DescribeOrganizationRequestTypeDef](#describeorganizationrequesttypedef)
+  - [DescribeOrganizationResponseResponseTypeDef](#describeorganizationresponseresponsetypedef)
+  - [DescribeResourceRequestTypeDef](#describeresourcerequesttypedef)
+  - [DescribeResourceResponseResponseTypeDef](#describeresourceresponseresponsetypedef)
+  - [DescribeUserRequestTypeDef](#describeuserrequesttypedef)
+  - [DescribeUserResponseResponseTypeDef](#describeuserresponseresponsetypedef)
+  - [DisassociateDelegateFromResourceRequestTypeDef](#disassociatedelegatefromresourcerequesttypedef)
+  - [DisassociateMemberFromGroupRequestTypeDef](#disassociatememberfromgrouprequesttypedef)
   - [DomainTypeDef](#domaintypedef)
   - [FolderConfigurationTypeDef](#folderconfigurationtypedef)
-  - [GetAccessControlEffectResponseTypeDef](#getaccesscontroleffectresponsetypedef)
-  - [GetDefaultRetentionPolicyResponseTypeDef](#getdefaultretentionpolicyresponsetypedef)
-  - [GetMailboxDetailsResponseTypeDef](#getmailboxdetailsresponsetypedef)
-  - [GetMobileDeviceAccessEffectResponseTypeDef](#getmobiledeviceaccesseffectresponsetypedef)
+  - [GetAccessControlEffectRequestTypeDef](#getaccesscontroleffectrequesttypedef)
+  - [GetAccessControlEffectResponseResponseTypeDef](#getaccesscontroleffectresponseresponsetypedef)
+  - [GetDefaultRetentionPolicyRequestTypeDef](#getdefaultretentionpolicyrequesttypedef)
+  - [GetDefaultRetentionPolicyResponseResponseTypeDef](#getdefaultretentionpolicyresponseresponsetypedef)
+  - [GetMailboxDetailsRequestTypeDef](#getmailboxdetailsrequesttypedef)
+  - [GetMailboxDetailsResponseResponseTypeDef](#getmailboxdetailsresponseresponsetypedef)
+  - [GetMobileDeviceAccessEffectRequestTypeDef](#getmobiledeviceaccesseffectrequesttypedef)
+  - [GetMobileDeviceAccessEffectResponseResponseTypeDef](#getmobiledeviceaccesseffectresponseresponsetypedef)
   - [GroupTypeDef](#grouptypedef)
-  - [ListAccessControlRulesResponseTypeDef](#listaccesscontrolrulesresponsetypedef)
-  - [ListAliasesResponseTypeDef](#listaliasesresponsetypedef)
-  - [ListGroupMembersResponseTypeDef](#listgroupmembersresponsetypedef)
-  - [ListGroupsResponseTypeDef](#listgroupsresponsetypedef)
-  - [ListMailboxExportJobsResponseTypeDef](#listmailboxexportjobsresponsetypedef)
-  - [ListMailboxPermissionsResponseTypeDef](#listmailboxpermissionsresponsetypedef)
-  - [ListMobileDeviceAccessRulesResponseTypeDef](#listmobiledeviceaccessrulesresponsetypedef)
-  - [ListOrganizationsResponseTypeDef](#listorganizationsresponsetypedef)
-  - [ListResourceDelegatesResponseTypeDef](#listresourcedelegatesresponsetypedef)
-  - [ListResourcesResponseTypeDef](#listresourcesresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListUsersResponseTypeDef](#listusersresponsetypedef)
+  - [ListAccessControlRulesRequestTypeDef](#listaccesscontrolrulesrequesttypedef)
+  - [ListAccessControlRulesResponseResponseTypeDef](#listaccesscontrolrulesresponseresponsetypedef)
+  - [ListAliasesRequestTypeDef](#listaliasesrequesttypedef)
+  - [ListAliasesResponseResponseTypeDef](#listaliasesresponseresponsetypedef)
+  - [ListGroupMembersRequestTypeDef](#listgroupmembersrequesttypedef)
+  - [ListGroupMembersResponseResponseTypeDef](#listgroupmembersresponseresponsetypedef)
+  - [ListGroupsRequestTypeDef](#listgroupsrequesttypedef)
+  - [ListGroupsResponseResponseTypeDef](#listgroupsresponseresponsetypedef)
+  - [ListMailboxExportJobsRequestTypeDef](#listmailboxexportjobsrequesttypedef)
+  - [ListMailboxExportJobsResponseResponseTypeDef](#listmailboxexportjobsresponseresponsetypedef)
+  - [ListMailboxPermissionsRequestTypeDef](#listmailboxpermissionsrequesttypedef)
+  - [ListMailboxPermissionsResponseResponseTypeDef](#listmailboxpermissionsresponseresponsetypedef)
+  - [ListMobileDeviceAccessRulesRequestTypeDef](#listmobiledeviceaccessrulesrequesttypedef)
+  - [ListMobileDeviceAccessRulesResponseResponseTypeDef](#listmobiledeviceaccessrulesresponseresponsetypedef)
+  - [ListOrganizationsRequestTypeDef](#listorganizationsrequesttypedef)
+  - [ListOrganizationsResponseResponseTypeDef](#listorganizationsresponseresponsetypedef)
+  - [ListResourceDelegatesRequestTypeDef](#listresourcedelegatesrequesttypedef)
+  - [ListResourceDelegatesResponseResponseTypeDef](#listresourcedelegatesresponseresponsetypedef)
+  - [ListResourcesRequestTypeDef](#listresourcesrequesttypedef)
+  - [ListResourcesResponseResponseTypeDef](#listresourcesresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListUsersRequestTypeDef](#listusersrequesttypedef)
+  - [ListUsersResponseResponseTypeDef](#listusersresponseresponsetypedef)
   - [MailboxExportJobTypeDef](#mailboxexportjobtypedef)
   - [MemberTypeDef](#membertypedef)
   - [MobileDeviceAccessMatchedRuleTypeDef](#mobiledeviceaccessmatchedruletypedef)
@@ -48,9 +90,22 @@ type annotations stubs module
   - [OrganizationSummaryTypeDef](#organizationsummarytypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PermissionTypeDef](#permissiontypedef)
+  - [PutAccessControlRuleRequestTypeDef](#putaccesscontrolrulerequesttypedef)
+  - [PutMailboxPermissionsRequestTypeDef](#putmailboxpermissionsrequesttypedef)
+  - [PutRetentionPolicyRequestTypeDef](#putretentionpolicyrequesttypedef)
+  - [RegisterToWorkMailRequestTypeDef](#registertoworkmailrequesttypedef)
+  - [ResetPasswordRequestTypeDef](#resetpasswordrequesttypedef)
   - [ResourceTypeDef](#resourcetypedef)
-  - [StartMailboxExportJobResponseTypeDef](#startmailboxexportjobresponsetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [StartMailboxExportJobRequestTypeDef](#startmailboxexportjobrequesttypedef)
+  - [StartMailboxExportJobResponseResponseTypeDef](#startmailboxexportjobresponseresponsetypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TagTypeDef](#tagtypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateMailboxQuotaRequestTypeDef](#updatemailboxquotarequesttypedef)
+  - [UpdateMobileDeviceAccessRuleRequestTypeDef](#updatemobiledeviceaccessrulerequesttypedef)
+  - [UpdatePrimaryEmailAddressRequestTypeDef](#updateprimaryemailaddressrequesttypedef)
+  - [UpdateResourceRequestTypeDef](#updateresourcerequesttypedef)
   - [UserTypeDef](#usertypedef)
 
 ## AccessControlRuleTypeDef
@@ -74,6 +129,30 @@ Optional fields:
 - `DateCreated`: `datetime`
 - `DateModified`: `datetime`
 
+## AssociateDelegateToResourceRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import AssociateDelegateToResourceRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `ResourceId`: `str`
+- `EntityId`: `str`
+
+## AssociateMemberToGroupRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import AssociateMemberToGroupRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `GroupId`: `str`
+- `MemberId`: `str`
+
 ## BookingOptionsTypeDef
 
 ```python
@@ -86,55 +165,169 @@ Optional fields:
 - `AutoDeclineRecurringRequests`: `bool`
 - `AutoDeclineConflictingRequests`: `bool`
 
-## CreateGroupResponseTypeDef
+## CancelMailboxExportJobRequestTypeDef
 
 ```python
-from mypy_boto3_workmail.type_defs import CreateGroupResponseTypeDef
+from mypy_boto3_workmail.type_defs import CancelMailboxExportJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
-- `GroupId`: `str`
-
-## CreateMobileDeviceAccessRuleResponseTypeDef
-
-```python
-from mypy_boto3_workmail.type_defs import CreateMobileDeviceAccessRuleResponseTypeDef
-```
-
-Optional fields:
-
-- `MobileDeviceAccessRuleId`: `str`
-
-## CreateOrganizationResponseTypeDef
-
-```python
-from mypy_boto3_workmail.type_defs import CreateOrganizationResponseTypeDef
-```
-
-Optional fields:
-
+- `ClientToken`: `str`
+- `JobId`: `str`
 - `OrganizationId`: `str`
 
-## CreateResourceResponseTypeDef
+## CreateAliasRequestTypeDef
 
 ```python
-from mypy_boto3_workmail.type_defs import CreateResourceResponseTypeDef
+from mypy_boto3_workmail.type_defs import CreateAliasRequestTypeDef
 ```
 
+Required fields:
+
+- `OrganizationId`: `str`
+- `EntityId`: `str`
+- `Alias`: `str`
+
+## CreateGroupRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import CreateGroupRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `Name`: `str`
+
+## CreateGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import CreateGroupResponseResponseTypeDef
+```
+
+Required fields:
+
+- `GroupId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateMobileDeviceAccessRuleRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import CreateMobileDeviceAccessRuleRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `Name`: `str`
+- `Effect`:
+  [MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype)
+
 Optional fields:
+
+- `ClientToken`: `str`
+- `Description`: `str`
+- `DeviceTypes`: `List`\[`str`\]
+- `NotDeviceTypes`: `List`\[`str`\]
+- `DeviceModels`: `List`\[`str`\]
+- `NotDeviceModels`: `List`\[`str`\]
+- `DeviceOperatingSystems`: `List`\[`str`\]
+- `NotDeviceOperatingSystems`: `List`\[`str`\]
+- `DeviceUserAgents`: `List`\[`str`\]
+- `NotDeviceUserAgents`: `List`\[`str`\]
+
+## CreateMobileDeviceAccessRuleResponseResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import CreateMobileDeviceAccessRuleResponseResponseTypeDef
+```
+
+Required fields:
+
+- `MobileDeviceAccessRuleId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateOrganizationRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import CreateOrganizationRequestTypeDef
+```
+
+Required fields:
+
+- `Alias`: `str`
+
+Optional fields:
+
+- `DirectoryId`: `str`
+- `ClientToken`: `str`
+- `Domains`: `List`\[[DomainTypeDef](./type_defs.md#domaintypedef)\]
+- `KmsKeyArn`: `str`
+- `EnableInteroperability`: `bool`
+
+## CreateOrganizationResponseResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import CreateOrganizationResponseResponseTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateResourceRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import CreateResourceRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `Name`: `str`
+- `Type`: [ResourceTypeType](./literals.md#resourcetypetype)
+
+## CreateResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import CreateResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResourceId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateUserResponseTypeDef
+## CreateUserRequestTypeDef
 
 ```python
-from mypy_boto3_workmail.type_defs import CreateUserResponseTypeDef
+from mypy_boto3_workmail.type_defs import CreateUserRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `OrganizationId`: `str`
+- `Name`: `str`
+- `DisplayName`: `str`
+- `Password`: `str`
+
+## CreateUserResponseResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import CreateUserResponseResponseTypeDef
+```
+
+Required fields:
 
 - `UserId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DelegateTypeDef
 
@@ -147,24 +340,153 @@ Required fields:
 - `Id`: `str`
 - `Type`: [MemberTypeType](./literals.md#membertypetype)
 
-## DeleteOrganizationResponseTypeDef
+## DeleteAccessControlRuleRequestTypeDef
 
 ```python
-from mypy_boto3_workmail.type_defs import DeleteOrganizationResponseTypeDef
+from mypy_boto3_workmail.type_defs import DeleteAccessControlRuleRequestTypeDef
 ```
 
+Required fields:
+
+- `OrganizationId`: `str`
+- `Name`: `str`
+
+## DeleteAliasRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DeleteAliasRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `EntityId`: `str`
+- `Alias`: `str`
+
+## DeleteGroupRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DeleteGroupRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `GroupId`: `str`
+
+## DeleteMailboxPermissionsRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DeleteMailboxPermissionsRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `EntityId`: `str`
+- `GranteeId`: `str`
+
+## DeleteMobileDeviceAccessRuleRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DeleteMobileDeviceAccessRuleRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `MobileDeviceAccessRuleId`: `str`
+
+## DeleteOrganizationRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DeleteOrganizationRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `DeleteDirectory`: `bool`
+
 Optional fields:
+
+- `ClientToken`: `str`
+
+## DeleteOrganizationResponseResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DeleteOrganizationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `OrganizationId`: `str`
 - `State`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeGroupResponseTypeDef
+## DeleteResourceRequestTypeDef
 
 ```python
-from mypy_boto3_workmail.type_defs import DescribeGroupResponseTypeDef
+from mypy_boto3_workmail.type_defs import DeleteResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `OrganizationId`: `str`
+- `ResourceId`: `str`
+
+## DeleteRetentionPolicyRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DeleteRetentionPolicyRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `Id`: `str`
+
+## DeleteUserRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DeleteUserRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `UserId`: `str`
+
+## DeregisterFromWorkMailRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DeregisterFromWorkMailRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `EntityId`: `str`
+
+## DescribeGroupRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DescribeGroupRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `GroupId`: `str`
+
+## DescribeGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DescribeGroupResponseResponseTypeDef
+```
+
+Required fields:
 
 - `GroupId`: `str`
 - `Name`: `str`
@@ -172,14 +494,27 @@ Optional fields:
 - `State`: [EntityStateType](./literals.md#entitystatetype)
 - `EnabledDate`: `datetime`
 - `DisabledDate`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeMailboxExportJobResponseTypeDef
+## DescribeMailboxExportJobRequestTypeDef
 
 ```python
-from mypy_boto3_workmail.type_defs import DescribeMailboxExportJobResponseTypeDef
+from mypy_boto3_workmail.type_defs import DescribeMailboxExportJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `JobId`: `str`
+- `OrganizationId`: `str`
+
+## DescribeMailboxExportJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DescribeMailboxExportJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `EntityId`: `str`
 - `Description`: `str`
@@ -193,14 +528,26 @@ Optional fields:
 - `ErrorInfo`: `str`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeOrganizationResponseTypeDef
+## DescribeOrganizationRequestTypeDef
 
 ```python
-from mypy_boto3_workmail.type_defs import DescribeOrganizationResponseTypeDef
+from mypy_boto3_workmail.type_defs import DescribeOrganizationRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `OrganizationId`: `str`
+
+## DescribeOrganizationResponseResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DescribeOrganizationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `OrganizationId`: `str`
 - `Alias`: `str`
@@ -211,14 +558,27 @@ Optional fields:
 - `CompletedDate`: `datetime`
 - `ErrorMessage`: `str`
 - `ARN`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeResourceResponseTypeDef
+## DescribeResourceRequestTypeDef
 
 ```python
-from mypy_boto3_workmail.type_defs import DescribeResourceResponseTypeDef
+from mypy_boto3_workmail.type_defs import DescribeResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `OrganizationId`: `str`
+- `ResourceId`: `str`
+
+## DescribeResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DescribeResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResourceId`: `str`
 - `Email`: `str`
@@ -229,14 +589,27 @@ Optional fields:
 - `State`: [EntityStateType](./literals.md#entitystatetype)
 - `EnabledDate`: `datetime`
 - `DisabledDate`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeUserResponseTypeDef
+## DescribeUserRequestTypeDef
 
 ```python
-from mypy_boto3_workmail.type_defs import DescribeUserResponseTypeDef
+from mypy_boto3_workmail.type_defs import DescribeUserRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `OrganizationId`: `str`
+- `UserId`: `str`
+
+## DescribeUserResponseResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DescribeUserResponseResponseTypeDef
+```
+
+Required fields:
 
 - `UserId`: `str`
 - `Name`: `str`
@@ -246,6 +619,32 @@ Optional fields:
 - `UserRole`: [UserRoleType](./literals.md#userroletype)
 - `EnabledDate`: `datetime`
 - `DisabledDate`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DisassociateDelegateFromResourceRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DisassociateDelegateFromResourceRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `ResourceId`: `str`
+- `EntityId`: `str`
+
+## DisassociateMemberFromGroupRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DisassociateMemberFromGroupRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `GroupId`: `str`
+- `MemberId`: `str`
 
 ## DomainTypeDef
 
@@ -273,55 +672,114 @@ Optional fields:
 
 - `Period`: `int`
 
-## GetAccessControlEffectResponseTypeDef
+## GetAccessControlEffectRequestTypeDef
 
 ```python
-from mypy_boto3_workmail.type_defs import GetAccessControlEffectResponseTypeDef
+from mypy_boto3_workmail.type_defs import GetAccessControlEffectRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `OrganizationId`: `str`
+- `IpAddress`: `str`
+- `Action`: `str`
+- `UserId`: `str`
+
+## GetAccessControlEffectResponseResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import GetAccessControlEffectResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Effect`:
   [AccessControlRuleEffectType](./literals.md#accesscontrolruleeffecttype)
 - `MatchedRules`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDefaultRetentionPolicyResponseTypeDef
+## GetDefaultRetentionPolicyRequestTypeDef
 
 ```python
-from mypy_boto3_workmail.type_defs import GetDefaultRetentionPolicyResponseTypeDef
+from mypy_boto3_workmail.type_defs import GetDefaultRetentionPolicyRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `OrganizationId`: `str`
+
+## GetDefaultRetentionPolicyResponseResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import GetDefaultRetentionPolicyResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Id`: `str`
 - `Name`: `str`
 - `Description`: `str`
 - `FolderConfigurations`:
   `List`\[[FolderConfigurationTypeDef](./type_defs.md#folderconfigurationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMailboxDetailsResponseTypeDef
+## GetMailboxDetailsRequestTypeDef
 
 ```python
-from mypy_boto3_workmail.type_defs import GetMailboxDetailsResponseTypeDef
+from mypy_boto3_workmail.type_defs import GetMailboxDetailsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `OrganizationId`: `str`
+- `UserId`: `str`
+
+## GetMailboxDetailsResponseResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import GetMailboxDetailsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `MailboxQuota`: `int`
 - `MailboxSize`: `float`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMobileDeviceAccessEffectResponseTypeDef
+## GetMobileDeviceAccessEffectRequestTypeDef
 
 ```python
-from mypy_boto3_workmail.type_defs import GetMobileDeviceAccessEffectResponseTypeDef
+from mypy_boto3_workmail.type_defs import GetMobileDeviceAccessEffectRequestTypeDef
 ```
 
+Required fields:
+
+- `OrganizationId`: `str`
+
 Optional fields:
+
+- `DeviceType`: `str`
+- `DeviceModel`: `str`
+- `DeviceOperatingSystem`: `str`
+- `DeviceUserAgent`: `str`
+
+## GetMobileDeviceAccessEffectResponseResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import GetMobileDeviceAccessEffectResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Effect`:
   [MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype)
 - `MatchedRules`:
   `List`\[[MobileDeviceAccessMatchedRuleTypeDef](./type_defs.md#mobiledeviceaccessmatchedruletypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GroupTypeDef
 
@@ -338,139 +796,328 @@ Optional fields:
 - `EnabledDate`: `datetime`
 - `DisabledDate`: `datetime`
 
-## ListAccessControlRulesResponseTypeDef
+## ListAccessControlRulesRequestTypeDef
 
 ```python
-from mypy_boto3_workmail.type_defs import ListAccessControlRulesResponseTypeDef
+from mypy_boto3_workmail.type_defs import ListAccessControlRulesRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `OrganizationId`: `str`
+
+## ListAccessControlRulesResponseResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import ListAccessControlRulesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Rules`:
   `List`\[[AccessControlRuleTypeDef](./type_defs.md#accesscontrolruletypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAliasesResponseTypeDef
+## ListAliasesRequestTypeDef
 
 ```python
-from mypy_boto3_workmail.type_defs import ListAliasesResponseTypeDef
+from mypy_boto3_workmail.type_defs import ListAliasesRequestTypeDef
 ```
 
+Required fields:
+
+- `OrganizationId`: `str`
+- `EntityId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListAliasesResponseResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import ListAliasesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Aliases`: `List`\[`str`\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListGroupMembersResponseTypeDef
+## ListGroupMembersRequestTypeDef
 
 ```python
-from mypy_boto3_workmail.type_defs import ListGroupMembersResponseTypeDef
+from mypy_boto3_workmail.type_defs import ListGroupMembersRequestTypeDef
 ```
 
+Required fields:
+
+- `OrganizationId`: `str`
+- `GroupId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListGroupMembersResponseResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import ListGroupMembersResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Members`: `List`\[[MemberTypeDef](./type_defs.md#membertypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListGroupsResponseTypeDef
+## ListGroupsRequestTypeDef
 
 ```python
-from mypy_boto3_workmail.type_defs import ListGroupsResponseTypeDef
+from mypy_boto3_workmail.type_defs import ListGroupsRequestTypeDef
 ```
 
+Required fields:
+
+- `OrganizationId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListGroupsResponseResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import ListGroupsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Groups`: `List`\[[GroupTypeDef](./type_defs.md#grouptypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListMailboxExportJobsResponseTypeDef
+## ListMailboxExportJobsRequestTypeDef
 
 ```python
-from mypy_boto3_workmail.type_defs import ListMailboxExportJobsResponseTypeDef
+from mypy_boto3_workmail.type_defs import ListMailboxExportJobsRequestTypeDef
 ```
 
+Required fields:
+
+- `OrganizationId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListMailboxExportJobsResponseResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import ListMailboxExportJobsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Jobs`:
   `List`\[[MailboxExportJobTypeDef](./type_defs.md#mailboxexportjobtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListMailboxPermissionsResponseTypeDef
+## ListMailboxPermissionsRequestTypeDef
 
 ```python
-from mypy_boto3_workmail.type_defs import ListMailboxPermissionsResponseTypeDef
+from mypy_boto3_workmail.type_defs import ListMailboxPermissionsRequestTypeDef
 ```
 
+Required fields:
+
+- `OrganizationId`: `str`
+- `EntityId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListMailboxPermissionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import ListMailboxPermissionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Permissions`:
   `List`\[[PermissionTypeDef](./type_defs.md#permissiontypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListMobileDeviceAccessRulesResponseTypeDef
+## ListMobileDeviceAccessRulesRequestTypeDef
 
 ```python
-from mypy_boto3_workmail.type_defs import ListMobileDeviceAccessRulesResponseTypeDef
+from mypy_boto3_workmail.type_defs import ListMobileDeviceAccessRulesRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `OrganizationId`: `str`
+
+## ListMobileDeviceAccessRulesResponseResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import ListMobileDeviceAccessRulesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Rules`:
   `List`\[[MobileDeviceAccessRuleTypeDef](./type_defs.md#mobiledeviceaccessruletypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListOrganizationsResponseTypeDef
+## ListOrganizationsRequestTypeDef
 
 ```python
-from mypy_boto3_workmail.type_defs import ListOrganizationsResponseTypeDef
+from mypy_boto3_workmail.type_defs import ListOrganizationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListOrganizationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import ListOrganizationsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `OrganizationSummaries`:
   `List`\[[OrganizationSummaryTypeDef](./type_defs.md#organizationsummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListResourceDelegatesResponseTypeDef
+## ListResourceDelegatesRequestTypeDef
 
 ```python
-from mypy_boto3_workmail.type_defs import ListResourceDelegatesResponseTypeDef
+from mypy_boto3_workmail.type_defs import ListResourceDelegatesRequestTypeDef
 ```
 
+Required fields:
+
+- `OrganizationId`: `str`
+- `ResourceId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListResourceDelegatesResponseResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import ListResourceDelegatesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Delegates`: `List`\[[DelegateTypeDef](./type_defs.md#delegatetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListResourcesResponseTypeDef
+## ListResourcesRequestTypeDef
 
 ```python
-from mypy_boto3_workmail.type_defs import ListResourcesResponseTypeDef
+from mypy_boto3_workmail.type_defs import ListResourcesRequestTypeDef
 ```
 
+Required fields:
+
+- `OrganizationId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListResourcesResponseResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import ListResourcesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_workmail.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_workmail.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceARN`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListUsersResponseTypeDef
+## ListUsersRequestTypeDef
 
 ```python
-from mypy_boto3_workmail.type_defs import ListUsersResponseTypeDef
+from mypy_boto3_workmail.type_defs import ListUsersRequestTypeDef
 ```
 
+Required fields:
+
+- `OrganizationId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListUsersResponseResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import ListUsersResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Users`: `List`\[[UserTypeDef](./type_defs.md#usertypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## MailboxExportJobTypeDef
 
@@ -579,6 +1226,85 @@ Required fields:
 - `PermissionValues`:
   `List`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
 
+## PutAccessControlRuleRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import PutAccessControlRuleRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Effect`:
+  [AccessControlRuleEffectType](./literals.md#accesscontrolruleeffecttype)
+- `Description`: `str`
+- `OrganizationId`: `str`
+
+Optional fields:
+
+- `IpRanges`: `List`\[`str`\]
+- `NotIpRanges`: `List`\[`str`\]
+- `Actions`: `List`\[`str`\]
+- `NotActions`: `List`\[`str`\]
+- `UserIds`: `List`\[`str`\]
+- `NotUserIds`: `List`\[`str`\]
+
+## PutMailboxPermissionsRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import PutMailboxPermissionsRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `EntityId`: `str`
+- `GranteeId`: `str`
+- `PermissionValues`:
+  `List`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
+
+## PutRetentionPolicyRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import PutRetentionPolicyRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `Name`: `str`
+- `FolderConfigurations`:
+  `List`\[[FolderConfigurationTypeDef](./type_defs.md#folderconfigurationtypedef)\]
+
+Optional fields:
+
+- `Id`: `str`
+- `Description`: `str`
+
+## RegisterToWorkMailRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import RegisterToWorkMailRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `EntityId`: `str`
+- `Email`: `str`
+
+## ResetPasswordRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import ResetPasswordRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `UserId`: `str`
+- `Password`: `str`
+
 ## ResourceTypeDef
 
 ```python
@@ -595,15 +1321,62 @@ Optional fields:
 - `EnabledDate`: `datetime`
 - `DisabledDate`: `datetime`
 
-## StartMailboxExportJobResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_workmail.type_defs import StartMailboxExportJobResponseTypeDef
+from mypy_boto3_workmail.type_defs import ResponseMetadataTypeDef
 ```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## StartMailboxExportJobRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import StartMailboxExportJobRequestTypeDef
+```
+
+Required fields:
+
+- `ClientToken`: `str`
+- `OrganizationId`: `str`
+- `EntityId`: `str`
+- `RoleArn`: `str`
+- `KmsKeyArn`: `str`
+- `S3BucketName`: `str`
+- `S3Prefix`: `str`
 
 Optional fields:
 
+- `Description`: `str`
+
+## StartMailboxExportJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import StartMailboxExportJobResponseResponseTypeDef
+```
+
+Required fields:
+
 - `JobId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -615,6 +1388,84 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+## UntagResourceRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## UpdateMailboxQuotaRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import UpdateMailboxQuotaRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `UserId`: `str`
+- `MailboxQuota`: `int`
+
+## UpdateMobileDeviceAccessRuleRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import UpdateMobileDeviceAccessRuleRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `MobileDeviceAccessRuleId`: `str`
+- `Name`: `str`
+- `Effect`:
+  [MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype)
+
+Optional fields:
+
+- `Description`: `str`
+- `DeviceTypes`: `List`\[`str`\]
+- `NotDeviceTypes`: `List`\[`str`\]
+- `DeviceModels`: `List`\[`str`\]
+- `NotDeviceModels`: `List`\[`str`\]
+- `DeviceOperatingSystems`: `List`\[`str`\]
+- `NotDeviceOperatingSystems`: `List`\[`str`\]
+- `DeviceUserAgents`: `List`\[`str`\]
+- `NotDeviceUserAgents`: `List`\[`str`\]
+
+## UpdatePrimaryEmailAddressRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import UpdatePrimaryEmailAddressRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `EntityId`: `str`
+- `Email`: `str`
+
+## UpdateResourceRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import UpdateResourceRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `ResourceId`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+- `BookingOptions`:
+  [BookingOptionsTypeDef](./type_defs.md#bookingoptionstypedef)
 
 ## UserTypeDef
 

@@ -56,6 +56,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("connect-contact-lens").can_paginate`
 method.
 
@@ -69,6 +71,8 @@ Arguments:
 Returns `bool`.
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for
 `boto3.client("connect-contact-lens").generate_presigned_url` method.
@@ -87,12 +91,17 @@ Returns `str`.
 
 ### list_realtime_contact_analysis_segments
 
+Provides a list of analysis segments for a real-time analysis session.
+
 Type annotations for
 `boto3.client("connect-contact-lens").list_realtime_contact_analysis_segments`
 method.
 
 Boto3 documentation:
 [ConnectContactLens.Client.list_realtime_contact_analysis_segments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens.Client.list_realtime_contact_analysis_segments)
+
+Arguments mapping described in
+[ListRealtimeContactAnalysisSegmentsRequestTypeDef](./type_defs.md#listrealtimecontactanalysissegmentsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -102,4 +111,4 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListRealtimeContactAnalysisSegmentsResponseTypeDef](./type_defs.md#listrealtimecontactanalysissegmentsresponsetypedef).
+[ListRealtimeContactAnalysisSegmentsResponseResponseTypeDef](./type_defs.md#listrealtimecontactanalysissegmentsresponseresponsetypedef).

@@ -72,6 +72,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("compute-optimizer").can_paginate` method.
 
 Boto3 documentation:
@@ -85,11 +87,16 @@ Returns `bool`.
 
 ### describe_recommendation_export_jobs
 
+Describes recommendation export jobs created in the last seven days.
+
 Type annotations for
 `boto3.client("compute-optimizer").describe_recommendation_export_jobs` method.
 
 Boto3 documentation:
 [ComputeOptimizer.Client.describe_recommendation_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.describe_recommendation_export_jobs)
+
+Arguments mapping described in
+[DescribeRecommendationExportJobsRequestTypeDef](./type_defs.md#describerecommendationexportjobsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -99,9 +106,11 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[DescribeRecommendationExportJobsResponseTypeDef](./type_defs.md#describerecommendationexportjobsresponsetypedef).
+[DescribeRecommendationExportJobsResponseResponseTypeDef](./type_defs.md#describerecommendationexportjobsresponseresponsetypedef).
 
 ### export_auto_scaling_group_recommendations
+
+Exports optimization recommendations for Auto Scaling groups.
 
 Type annotations for
 `boto3.client("compute-optimizer").export_auto_scaling_group_recommendations`
@@ -109,6 +118,9 @@ method.
 
 Boto3 documentation:
 [ComputeOptimizer.Client.export_auto_scaling_group_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.export_auto_scaling_group_recommendations)
+
+Arguments mapping described in
+[ExportAutoScalingGroupRecommendationsRequestTypeDef](./type_defs.md#exportautoscalinggrouprecommendationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -124,15 +136,20 @@ Keyword-only arguments:
 - `includeMemberAccounts`: `bool`
 
 Returns
-[ExportAutoScalingGroupRecommendationsResponseTypeDef](./type_defs.md#exportautoscalinggrouprecommendationsresponsetypedef).
+[ExportAutoScalingGroupRecommendationsResponseResponseTypeDef](./type_defs.md#exportautoscalinggrouprecommendationsresponseresponsetypedef).
 
 ### export_ebs_volume_recommendations
+
+Exports optimization recommendations for Amazon EBS volumes.
 
 Type annotations for
 `boto3.client("compute-optimizer").export_ebs_volume_recommendations` method.
 
 Boto3 documentation:
 [ComputeOptimizer.Client.export_ebs_volume_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.export_ebs_volume_recommendations)
+
+Arguments mapping described in
+[ExportEBSVolumeRecommendationsRequestTypeDef](./type_defs.md#exportebsvolumerecommendationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -148,15 +165,20 @@ Keyword-only arguments:
 - `includeMemberAccounts`: `bool`
 
 Returns
-[ExportEBSVolumeRecommendationsResponseTypeDef](./type_defs.md#exportebsvolumerecommendationsresponsetypedef).
+[ExportEBSVolumeRecommendationsResponseResponseTypeDef](./type_defs.md#exportebsvolumerecommendationsresponseresponsetypedef).
 
 ### export_ec2_instance_recommendations
+
+Exports optimization recommendations for Amazon EC2 instances.
 
 Type annotations for
 `boto3.client("compute-optimizer").export_ec2_instance_recommendations` method.
 
 Boto3 documentation:
 [ComputeOptimizer.Client.export_ec2_instance_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.export_ec2_instance_recommendations)
+
+Arguments mapping described in
+[ExportEC2InstanceRecommendationsRequestTypeDef](./type_defs.md#exportec2instancerecommendationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -172,9 +194,11 @@ Keyword-only arguments:
 - `includeMemberAccounts`: `bool`
 
 Returns
-[ExportEC2InstanceRecommendationsResponseTypeDef](./type_defs.md#exportec2instancerecommendationsresponsetypedef).
+[ExportEC2InstanceRecommendationsResponseResponseTypeDef](./type_defs.md#exportec2instancerecommendationsresponseresponsetypedef).
 
 ### export_lambda_function_recommendations
+
+Exports optimization recommendations for AWS Lambda functions.
 
 Type annotations for
 `boto3.client("compute-optimizer").export_lambda_function_recommendations`
@@ -182,6 +206,9 @@ method.
 
 Boto3 documentation:
 [ComputeOptimizer.Client.export_lambda_function_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.export_lambda_function_recommendations)
+
+Arguments mapping described in
+[ExportLambdaFunctionRecommendationsRequestTypeDef](./type_defs.md#exportlambdafunctionrecommendationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -198,9 +225,11 @@ Keyword-only arguments:
 - `includeMemberAccounts`: `bool`
 
 Returns
-[ExportLambdaFunctionRecommendationsResponseTypeDef](./type_defs.md#exportlambdafunctionrecommendationsresponsetypedef).
+[ExportLambdaFunctionRecommendationsResponseResponseTypeDef](./type_defs.md#exportlambdafunctionrecommendationsresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("compute-optimizer").generate_presigned_url`
 method.
@@ -219,12 +248,17 @@ Returns `str`.
 
 ### get_auto_scaling_group_recommendations
 
+Returns Auto Scaling group recommendations.
+
 Type annotations for
 `boto3.client("compute-optimizer").get_auto_scaling_group_recommendations`
 method.
 
 Boto3 documentation:
 [ComputeOptimizer.Client.get_auto_scaling_group_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_auto_scaling_group_recommendations)
+
+Arguments mapping described in
+[GetAutoScalingGroupRecommendationsRequestTypeDef](./type_defs.md#getautoscalinggrouprecommendationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -235,15 +269,20 @@ Keyword-only arguments:
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[GetAutoScalingGroupRecommendationsResponseTypeDef](./type_defs.md#getautoscalinggrouprecommendationsresponsetypedef).
+[GetAutoScalingGroupRecommendationsResponseResponseTypeDef](./type_defs.md#getautoscalinggrouprecommendationsresponseresponsetypedef).
 
 ### get_ebs_volume_recommendations
+
+Returns Amazon Elastic Block Store (Amazon EBS) volume recommendations.
 
 Type annotations for
 `boto3.client("compute-optimizer").get_ebs_volume_recommendations` method.
 
 Boto3 documentation:
 [ComputeOptimizer.Client.get_ebs_volume_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_ebs_volume_recommendations)
+
+Arguments mapping described in
+[GetEBSVolumeRecommendationsRequestTypeDef](./type_defs.md#getebsvolumerecommendationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -254,15 +293,20 @@ Keyword-only arguments:
 - `accountIds`: `List`\[`str`\]
 
 Returns
-[GetEBSVolumeRecommendationsResponseTypeDef](./type_defs.md#getebsvolumerecommendationsresponsetypedef).
+[GetEBSVolumeRecommendationsResponseResponseTypeDef](./type_defs.md#getebsvolumerecommendationsresponseresponsetypedef).
 
 ### get_ec2_instance_recommendations
+
+Returns Amazon EC2 instance recommendations.
 
 Type annotations for
 `boto3.client("compute-optimizer").get_ec2_instance_recommendations` method.
 
 Boto3 documentation:
 [ComputeOptimizer.Client.get_ec2_instance_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_ec2_instance_recommendations)
+
+Arguments mapping described in
+[GetEC2InstanceRecommendationsRequestTypeDef](./type_defs.md#getec2instancerecommendationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -273,9 +317,12 @@ Keyword-only arguments:
 - `accountIds`: `List`\[`str`\]
 
 Returns
-[GetEC2InstanceRecommendationsResponseTypeDef](./type_defs.md#getec2instancerecommendationsresponsetypedef).
+[GetEC2InstanceRecommendationsResponseResponseTypeDef](./type_defs.md#getec2instancerecommendationsresponseresponsetypedef).
 
 ### get_ec2_recommendation_projected_metrics
+
+Returns the projected utilization metrics of Amazon EC2 instance
+recommendations.
 
 Type annotations for
 `boto3.client("compute-optimizer").get_ec2_recommendation_projected_metrics`
@@ -284,18 +331,24 @@ method.
 Boto3 documentation:
 [ComputeOptimizer.Client.get_ec2_recommendation_projected_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_ec2_recommendation_projected_metrics)
 
+Arguments mapping described in
+[GetEC2RecommendationProjectedMetricsRequestTypeDef](./type_defs.md#getec2recommendationprojectedmetricsrequesttypedef).
+
 Keyword-only arguments:
 
 - `instanceArn`: `str` *(required)*
 - `stat`: [MetricStatisticType](./literals.md#metricstatistictype) *(required)*
 - `period`: `int` *(required)*
-- `startTime`: `datetime` *(required)*
-- `endTime`: `datetime` *(required)*
+- `startTime`: `Union`\[`datetime`, `str`\] *(required)*
+- `endTime`: `Union`\[`datetime`, `str`\] *(required)*
 
 Returns
-[GetEC2RecommendationProjectedMetricsResponseTypeDef](./type_defs.md#getec2recommendationprojectedmetricsresponsetypedef).
+[GetEC2RecommendationProjectedMetricsResponseResponseTypeDef](./type_defs.md#getec2recommendationprojectedmetricsresponseresponsetypedef).
 
 ### get_enrollment_status
+
+Returns the enrollment (opt in) status of an account to the AWS Compute
+Optimizer service.
 
 Type annotations for `boto3.client("compute-optimizer").get_enrollment_status`
 method.
@@ -304,15 +357,20 @@ Boto3 documentation:
 [ComputeOptimizer.Client.get_enrollment_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_enrollment_status)
 
 Returns
-[GetEnrollmentStatusResponseTypeDef](./type_defs.md#getenrollmentstatusresponsetypedef).
+[GetEnrollmentStatusResponseResponseTypeDef](./type_defs.md#getenrollmentstatusresponseresponsetypedef).
 
 ### get_lambda_function_recommendations
+
+Returns AWS Lambda function recommendations.
 
 Type annotations for
 `boto3.client("compute-optimizer").get_lambda_function_recommendations` method.
 
 Boto3 documentation:
 [ComputeOptimizer.Client.get_lambda_function_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_lambda_function_recommendations)
+
+Arguments mapping described in
+[GetLambdaFunctionRecommendationsRequestTypeDef](./type_defs.md#getlambdafunctionrecommendationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -324,15 +382,20 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetLambdaFunctionRecommendationsResponseTypeDef](./type_defs.md#getlambdafunctionrecommendationsresponsetypedef).
+[GetLambdaFunctionRecommendationsResponseResponseTypeDef](./type_defs.md#getlambdafunctionrecommendationsresponseresponsetypedef).
 
 ### get_recommendation_summaries
+
+Returns the optimization findings for an account.
 
 Type annotations for
 `boto3.client("compute-optimizer").get_recommendation_summaries` method.
 
 Boto3 documentation:
 [ComputeOptimizer.Client.get_recommendation_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_recommendation_summaries)
+
+Arguments mapping described in
+[GetRecommendationSummariesRequestTypeDef](./type_defs.md#getrecommendationsummariesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -341,9 +404,12 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetRecommendationSummariesResponseTypeDef](./type_defs.md#getrecommendationsummariesresponsetypedef).
+[GetRecommendationSummariesResponseResponseTypeDef](./type_defs.md#getrecommendationsummariesresponseresponsetypedef).
 
 ### update_enrollment_status
+
+Updates the enrollment (opt in and opt out) status of an account to the AWS
+Compute Optimizer service.
 
 Type annotations for
 `boto3.client("compute-optimizer").update_enrollment_status` method.
@@ -351,10 +417,13 @@ Type annotations for
 Boto3 documentation:
 [ComputeOptimizer.Client.update_enrollment_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.update_enrollment_status)
 
+Arguments mapping described in
+[UpdateEnrollmentStatusRequestTypeDef](./type_defs.md#updateenrollmentstatusrequesttypedef).
+
 Keyword-only arguments:
 
 - `status`: [StatusType](./literals.md#statustype) *(required)*
 - `includeMemberAccounts`: `bool`
 
 Returns
-[UpdateEnrollmentStatusResponseTypeDef](./type_defs.md#updateenrollmentstatusresponsetypedef).
+[UpdateEnrollmentStatusResponseResponseTypeDef](./type_defs.md#updateenrollmentstatusresponseresponsetypedef).

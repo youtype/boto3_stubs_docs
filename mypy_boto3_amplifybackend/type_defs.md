@@ -14,51 +14,77 @@ type annotations stubs module
   - [BackendAPIResourceConfigTypeDef](#backendapiresourceconfigtypedef)
   - [BackendAuthSocialProviderConfigTypeDef](#backendauthsocialproviderconfigtypedef)
   - [BackendJobRespObjTypeDef](#backendjobrespobjtypedef)
-  - [CloneBackendResponseTypeDef](#clonebackendresponsetypedef)
-  - [CreateBackendAPIResponseTypeDef](#createbackendapiresponsetypedef)
+  - [CloneBackendRequestTypeDef](#clonebackendrequesttypedef)
+  - [CloneBackendResponseResponseTypeDef](#clonebackendresponseresponsetypedef)
+  - [CreateBackendAPIRequestTypeDef](#createbackendapirequesttypedef)
+  - [CreateBackendAPIResponseResponseTypeDef](#createbackendapiresponseresponsetypedef)
   - [CreateBackendAuthForgotPasswordConfigTypeDef](#createbackendauthforgotpasswordconfigtypedef)
   - [CreateBackendAuthIdentityPoolConfigTypeDef](#createbackendauthidentitypoolconfigtypedef)
   - [CreateBackendAuthMFAConfigTypeDef](#createbackendauthmfaconfigtypedef)
   - [CreateBackendAuthOAuthConfigTypeDef](#createbackendauthoauthconfigtypedef)
   - [CreateBackendAuthPasswordPolicyConfigTypeDef](#createbackendauthpasswordpolicyconfigtypedef)
+  - [CreateBackendAuthRequestTypeDef](#createbackendauthrequesttypedef)
   - [CreateBackendAuthResourceConfigTypeDef](#createbackendauthresourceconfigtypedef)
-  - [CreateBackendAuthResponseTypeDef](#createbackendauthresponsetypedef)
+  - [CreateBackendAuthResponseResponseTypeDef](#createbackendauthresponseresponsetypedef)
   - [CreateBackendAuthUserPoolConfigTypeDef](#createbackendauthuserpoolconfigtypedef)
-  - [CreateBackendConfigResponseTypeDef](#createbackendconfigresponsetypedef)
-  - [CreateBackendResponseTypeDef](#createbackendresponsetypedef)
-  - [CreateTokenResponseTypeDef](#createtokenresponsetypedef)
-  - [DeleteBackendAPIResponseTypeDef](#deletebackendapiresponsetypedef)
-  - [DeleteBackendAuthResponseTypeDef](#deletebackendauthresponsetypedef)
-  - [DeleteBackendResponseTypeDef](#deletebackendresponsetypedef)
-  - [DeleteTokenResponseTypeDef](#deletetokenresponsetypedef)
+  - [CreateBackendConfigRequestTypeDef](#createbackendconfigrequesttypedef)
+  - [CreateBackendConfigResponseResponseTypeDef](#createbackendconfigresponseresponsetypedef)
+  - [CreateBackendRequestTypeDef](#createbackendrequesttypedef)
+  - [CreateBackendResponseResponseTypeDef](#createbackendresponseresponsetypedef)
+  - [CreateTokenRequestTypeDef](#createtokenrequesttypedef)
+  - [CreateTokenResponseResponseTypeDef](#createtokenresponseresponsetypedef)
+  - [DeleteBackendAPIRequestTypeDef](#deletebackendapirequesttypedef)
+  - [DeleteBackendAPIResponseResponseTypeDef](#deletebackendapiresponseresponsetypedef)
+  - [DeleteBackendAuthRequestTypeDef](#deletebackendauthrequesttypedef)
+  - [DeleteBackendAuthResponseResponseTypeDef](#deletebackendauthresponseresponsetypedef)
+  - [DeleteBackendRequestTypeDef](#deletebackendrequesttypedef)
+  - [DeleteBackendResponseResponseTypeDef](#deletebackendresponseresponsetypedef)
+  - [DeleteTokenRequestTypeDef](#deletetokenrequesttypedef)
+  - [DeleteTokenResponseResponseTypeDef](#deletetokenresponseresponsetypedef)
   - [EmailSettingsTypeDef](#emailsettingstypedef)
-  - [GenerateBackendAPIModelsResponseTypeDef](#generatebackendapimodelsresponsetypedef)
-  - [GetBackendAPIModelsResponseTypeDef](#getbackendapimodelsresponsetypedef)
-  - [GetBackendAPIResponseTypeDef](#getbackendapiresponsetypedef)
-  - [GetBackendAuthResponseTypeDef](#getbackendauthresponsetypedef)
-  - [GetBackendJobResponseTypeDef](#getbackendjobresponsetypedef)
-  - [GetBackendResponseTypeDef](#getbackendresponsetypedef)
-  - [GetTokenResponseTypeDef](#gettokenresponsetypedef)
-  - [ImportBackendAuthResponseTypeDef](#importbackendauthresponsetypedef)
-  - [ListBackendJobsResponseTypeDef](#listbackendjobsresponsetypedef)
+  - [GenerateBackendAPIModelsRequestTypeDef](#generatebackendapimodelsrequesttypedef)
+  - [GenerateBackendAPIModelsResponseResponseTypeDef](#generatebackendapimodelsresponseresponsetypedef)
+  - [GetBackendAPIModelsRequestTypeDef](#getbackendapimodelsrequesttypedef)
+  - [GetBackendAPIModelsResponseResponseTypeDef](#getbackendapimodelsresponseresponsetypedef)
+  - [GetBackendAPIRequestTypeDef](#getbackendapirequesttypedef)
+  - [GetBackendAPIResponseResponseTypeDef](#getbackendapiresponseresponsetypedef)
+  - [GetBackendAuthRequestTypeDef](#getbackendauthrequesttypedef)
+  - [GetBackendAuthResponseResponseTypeDef](#getbackendauthresponseresponsetypedef)
+  - [GetBackendJobRequestTypeDef](#getbackendjobrequesttypedef)
+  - [GetBackendJobResponseResponseTypeDef](#getbackendjobresponseresponsetypedef)
+  - [GetBackendRequestTypeDef](#getbackendrequesttypedef)
+  - [GetBackendResponseResponseTypeDef](#getbackendresponseresponsetypedef)
+  - [GetTokenRequestTypeDef](#gettokenrequesttypedef)
+  - [GetTokenResponseResponseTypeDef](#gettokenresponseresponsetypedef)
+  - [ImportBackendAuthRequestTypeDef](#importbackendauthrequesttypedef)
+  - [ImportBackendAuthResponseResponseTypeDef](#importbackendauthresponseresponsetypedef)
+  - [ListBackendJobsRequestTypeDef](#listbackendjobsrequesttypedef)
+  - [ListBackendJobsResponseResponseTypeDef](#listbackendjobsresponseresponsetypedef)
   - [LoginAuthConfigReqObjTypeDef](#loginauthconfigreqobjtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [RemoveAllBackendsResponseTypeDef](#removeallbackendsresponsetypedef)
-  - [RemoveBackendConfigResponseTypeDef](#removebackendconfigresponsetypedef)
+  - [RemoveAllBackendsRequestTypeDef](#removeallbackendsrequesttypedef)
+  - [RemoveAllBackendsResponseResponseTypeDef](#removeallbackendsresponseresponsetypedef)
+  - [RemoveBackendConfigRequestTypeDef](#removebackendconfigrequesttypedef)
+  - [RemoveBackendConfigResponseResponseTypeDef](#removebackendconfigresponseresponsetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SettingsTypeDef](#settingstypedef)
   - [SmsSettingsTypeDef](#smssettingstypedef)
   - [SocialProviderSettingsTypeDef](#socialprovidersettingstypedef)
-  - [UpdateBackendAPIResponseTypeDef](#updatebackendapiresponsetypedef)
+  - [UpdateBackendAPIRequestTypeDef](#updatebackendapirequesttypedef)
+  - [UpdateBackendAPIResponseResponseTypeDef](#updatebackendapiresponseresponsetypedef)
   - [UpdateBackendAuthForgotPasswordConfigTypeDef](#updatebackendauthforgotpasswordconfigtypedef)
   - [UpdateBackendAuthIdentityPoolConfigTypeDef](#updatebackendauthidentitypoolconfigtypedef)
   - [UpdateBackendAuthMFAConfigTypeDef](#updatebackendauthmfaconfigtypedef)
   - [UpdateBackendAuthOAuthConfigTypeDef](#updatebackendauthoauthconfigtypedef)
   - [UpdateBackendAuthPasswordPolicyConfigTypeDef](#updatebackendauthpasswordpolicyconfigtypedef)
+  - [UpdateBackendAuthRequestTypeDef](#updatebackendauthrequesttypedef)
   - [UpdateBackendAuthResourceConfigTypeDef](#updatebackendauthresourceconfigtypedef)
-  - [UpdateBackendAuthResponseTypeDef](#updatebackendauthresponsetypedef)
+  - [UpdateBackendAuthResponseResponseTypeDef](#updatebackendauthresponseresponsetypedef)
   - [UpdateBackendAuthUserPoolConfigTypeDef](#updatebackendauthuserpoolconfigtypedef)
-  - [UpdateBackendConfigResponseTypeDef](#updatebackendconfigresponsetypedef)
-  - [UpdateBackendJobResponseTypeDef](#updatebackendjobresponsetypedef)
+  - [UpdateBackendConfigRequestTypeDef](#updatebackendconfigrequesttypedef)
+  - [UpdateBackendConfigResponseResponseTypeDef](#updatebackendconfigresponseresponsetypedef)
+  - [UpdateBackendJobRequestTypeDef](#updatebackendjobrequesttypedef)
+  - [UpdateBackendJobResponseResponseTypeDef](#updatebackendjobresponseresponsetypedef)
 
 ## BackendAPIAppSyncAuthSettingsTypeDef
 
@@ -149,13 +175,25 @@ Optional fields:
 - `Status`: `str`
 - `UpdateTime`: `str`
 
-## CloneBackendResponseTypeDef
+## CloneBackendRequestTypeDef
 
 ```python
-from mypy_boto3_amplifybackend.type_defs import CloneBackendResponseTypeDef
+from mypy_boto3_amplifybackend.type_defs import CloneBackendRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AppId`: `str`
+- `BackendEnvironmentName`: `str`
+- `TargetEnvironmentName`: `str`
+
+## CloneBackendResponseResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import CloneBackendResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
@@ -163,14 +201,30 @@ Optional fields:
 - `JobId`: `str`
 - `Operation`: `str`
 - `Status`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateBackendAPIResponseTypeDef
+## CreateBackendAPIRequestTypeDef
 
 ```python
-from mypy_boto3_amplifybackend.type_defs import CreateBackendAPIResponseTypeDef
+from mypy_boto3_amplifybackend.type_defs import CreateBackendAPIRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AppId`: `str`
+- `BackendEnvironmentName`: `str`
+- `ResourceConfig`:
+  [BackendAPIResourceConfigTypeDef](./type_defs.md#backendapiresourceconfigtypedef)
+- `ResourceName`: `str`
+
+## CreateBackendAPIResponseResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import CreateBackendAPIResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
@@ -178,6 +232,8 @@ Optional fields:
 - `JobId`: `str`
 - `Operation`: `str`
 - `Status`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateBackendAuthForgotPasswordConfigTypeDef
 
@@ -254,6 +310,20 @@ Optional fields:
 - `AdditionalConstraints`:
   `List`\[[AdditionalConstraintsElementType](./literals.md#additionalconstraintselementtype)\]
 
+## CreateBackendAuthRequestTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import CreateBackendAuthRequestTypeDef
+```
+
+Required fields:
+
+- `AppId`: `str`
+- `BackendEnvironmentName`: `str`
+- `ResourceConfig`:
+  [CreateBackendAuthResourceConfigTypeDef](./type_defs.md#createbackendauthresourceconfigtypedef)
+- `ResourceName`: `str`
+
 ## CreateBackendAuthResourceConfigTypeDef
 
 ```python
@@ -273,13 +343,13 @@ Optional fields:
 - `IdentityPoolConfigs`:
   [CreateBackendAuthIdentityPoolConfigTypeDef](./type_defs.md#createbackendauthidentitypoolconfigtypedef)
 
-## CreateBackendAuthResponseTypeDef
+## CreateBackendAuthResponseResponseTypeDef
 
 ```python
-from mypy_boto3_amplifybackend.type_defs import CreateBackendAuthResponseTypeDef
+from mypy_boto3_amplifybackend.type_defs import CreateBackendAuthResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
@@ -287,6 +357,8 @@ Optional fields:
 - `JobId`: `str`
 - `Operation`: `str`
 - `Status`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateBackendAuthUserPoolConfigTypeDef
 
@@ -312,26 +384,59 @@ Optional fields:
 - `PasswordPolicy`:
   [CreateBackendAuthPasswordPolicyConfigTypeDef](./type_defs.md#createbackendauthpasswordpolicyconfigtypedef)
 
-## CreateBackendConfigResponseTypeDef
+## CreateBackendConfigRequestTypeDef
 
 ```python
-from mypy_boto3_amplifybackend.type_defs import CreateBackendConfigResponseTypeDef
+from mypy_boto3_amplifybackend.type_defs import CreateBackendConfigRequestTypeDef
 ```
 
+Required fields:
+
+- `AppId`: `str`
+
 Optional fields:
+
+- `BackendManagerAppId`: `str`
+
+## CreateBackendConfigResponseResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import CreateBackendConfigResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
 - `JobId`: `str`
 - `Status`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateBackendResponseTypeDef
+## CreateBackendRequestTypeDef
 
 ```python
-from mypy_boto3_amplifybackend.type_defs import CreateBackendResponseTypeDef
+from mypy_boto3_amplifybackend.type_defs import CreateBackendRequestTypeDef
 ```
 
+Required fields:
+
+- `AppId`: `str`
+- `AppName`: `str`
+- `BackendEnvironmentName`: `str`
+
 Optional fields:
+
+- `ResourceConfig`: `Dict`\[`str`, `Any`\]
+- `ResourceName`: `str`
+
+## CreateBackendResponseResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import CreateBackendResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
@@ -339,27 +444,58 @@ Optional fields:
 - `JobId`: `str`
 - `Operation`: `str`
 - `Status`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTokenResponseTypeDef
+## CreateTokenRequestTypeDef
 
 ```python
-from mypy_boto3_amplifybackend.type_defs import CreateTokenResponseTypeDef
+from mypy_boto3_amplifybackend.type_defs import CreateTokenRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AppId`: `str`
+
+## CreateTokenResponseResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import CreateTokenResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AppId`: `str`
 - `ChallengeCode`: `str`
 - `SessionId`: `str`
 - `Ttl`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteBackendAPIResponseTypeDef
+## DeleteBackendAPIRequestTypeDef
 
 ```python
-from mypy_boto3_amplifybackend.type_defs import DeleteBackendAPIResponseTypeDef
+from mypy_boto3_amplifybackend.type_defs import DeleteBackendAPIRequestTypeDef
 ```
 
+Required fields:
+
+- `AppId`: `str`
+- `BackendEnvironmentName`: `str`
+- `ResourceName`: `str`
+
 Optional fields:
+
+- `ResourceConfig`:
+  [BackendAPIResourceConfigTypeDef](./type_defs.md#backendapiresourceconfigtypedef)
+
+## DeleteBackendAPIResponseResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import DeleteBackendAPIResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
@@ -367,14 +503,28 @@ Optional fields:
 - `JobId`: `str`
 - `Operation`: `str`
 - `Status`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteBackendAuthResponseTypeDef
+## DeleteBackendAuthRequestTypeDef
 
 ```python
-from mypy_boto3_amplifybackend.type_defs import DeleteBackendAuthResponseTypeDef
+from mypy_boto3_amplifybackend.type_defs import DeleteBackendAuthRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AppId`: `str`
+- `BackendEnvironmentName`: `str`
+- `ResourceName`: `str`
+
+## DeleteBackendAuthResponseResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import DeleteBackendAuthResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
@@ -382,14 +532,27 @@ Optional fields:
 - `JobId`: `str`
 - `Operation`: `str`
 - `Status`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteBackendResponseTypeDef
+## DeleteBackendRequestTypeDef
 
 ```python
-from mypy_boto3_amplifybackend.type_defs import DeleteBackendResponseTypeDef
+from mypy_boto3_amplifybackend.type_defs import DeleteBackendRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AppId`: `str`
+- `BackendEnvironmentName`: `str`
+
+## DeleteBackendResponseResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import DeleteBackendResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
@@ -397,16 +560,31 @@ Optional fields:
 - `JobId`: `str`
 - `Operation`: `str`
 - `Status`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteTokenResponseTypeDef
+## DeleteTokenRequestTypeDef
 
 ```python
-from mypy_boto3_amplifybackend.type_defs import DeleteTokenResponseTypeDef
+from mypy_boto3_amplifybackend.type_defs import DeleteTokenRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AppId`: `str`
+- `SessionId`: `str`
+
+## DeleteTokenResponseResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import DeleteTokenResponseResponseTypeDef
+```
+
+Required fields:
 
 - `IsSuccess`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## EmailSettingsTypeDef
 
@@ -419,13 +597,25 @@ Optional fields:
 - `EmailMessage`: `str`
 - `EmailSubject`: `str`
 
-## GenerateBackendAPIModelsResponseTypeDef
+## GenerateBackendAPIModelsRequestTypeDef
 
 ```python
-from mypy_boto3_amplifybackend.type_defs import GenerateBackendAPIModelsResponseTypeDef
+from mypy_boto3_amplifybackend.type_defs import GenerateBackendAPIModelsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AppId`: `str`
+- `BackendEnvironmentName`: `str`
+- `ResourceName`: `str`
+
+## GenerateBackendAPIModelsResponseResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import GenerateBackendAPIModelsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
@@ -433,25 +623,58 @@ Optional fields:
 - `JobId`: `str`
 - `Operation`: `str`
 - `Status`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBackendAPIModelsResponseTypeDef
+## GetBackendAPIModelsRequestTypeDef
 
 ```python
-from mypy_boto3_amplifybackend.type_defs import GetBackendAPIModelsResponseTypeDef
+from mypy_boto3_amplifybackend.type_defs import GetBackendAPIModelsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AppId`: `str`
+- `BackendEnvironmentName`: `str`
+- `ResourceName`: `str`
+
+## GetBackendAPIModelsResponseResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import GetBackendAPIModelsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Models`: `str`
 - `Status`: [StatusType](./literals.md#statustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBackendAPIResponseTypeDef
+## GetBackendAPIRequestTypeDef
 
 ```python
-from mypy_boto3_amplifybackend.type_defs import GetBackendAPIResponseTypeDef
+from mypy_boto3_amplifybackend.type_defs import GetBackendAPIRequestTypeDef
 ```
 
+Required fields:
+
+- `AppId`: `str`
+- `BackendEnvironmentName`: `str`
+- `ResourceName`: `str`
+
 Optional fields:
+
+- `ResourceConfig`:
+  [BackendAPIResourceConfigTypeDef](./type_defs.md#backendapiresourceconfigtypedef)
+
+## GetBackendAPIResponseResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import GetBackendAPIResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
@@ -459,14 +682,28 @@ Optional fields:
 - `ResourceConfig`:
   [BackendAPIResourceConfigTypeDef](./type_defs.md#backendapiresourceconfigtypedef)
 - `ResourceName`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBackendAuthResponseTypeDef
+## GetBackendAuthRequestTypeDef
 
 ```python
-from mypy_boto3_amplifybackend.type_defs import GetBackendAuthResponseTypeDef
+from mypy_boto3_amplifybackend.type_defs import GetBackendAuthRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AppId`: `str`
+- `BackendEnvironmentName`: `str`
+- `ResourceName`: `str`
+
+## GetBackendAuthResponseResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import GetBackendAuthResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
@@ -474,14 +711,28 @@ Optional fields:
 - `ResourceConfig`:
   [CreateBackendAuthResourceConfigTypeDef](./type_defs.md#createbackendauthresourceconfigtypedef)
 - `ResourceName`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBackendJobResponseTypeDef
+## GetBackendJobRequestTypeDef
 
 ```python
-from mypy_boto3_amplifybackend.type_defs import GetBackendJobResponseTypeDef
+from mypy_boto3_amplifybackend.type_defs import GetBackendJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AppId`: `str`
+- `BackendEnvironmentName`: `str`
+- `JobId`: `str`
+
+## GetBackendJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import GetBackendJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
@@ -491,14 +742,30 @@ Optional fields:
 - `Operation`: `str`
 - `Status`: `str`
 - `UpdateTime`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBackendResponseTypeDef
+## GetBackendRequestTypeDef
 
 ```python
-from mypy_boto3_amplifybackend.type_defs import GetBackendResponseTypeDef
+from mypy_boto3_amplifybackend.type_defs import GetBackendRequestTypeDef
 ```
 
+Required fields:
+
+- `AppId`: `str`
+
 Optional fields:
+
+- `BackendEnvironmentName`: `str`
+
+## GetBackendResponseResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import GetBackendResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AmplifyMetaConfig`: `str`
 - `AppId`: `str`
@@ -506,27 +773,60 @@ Optional fields:
 - `BackendEnvironmentList`: `List`\[`str`\]
 - `BackendEnvironmentName`: `str`
 - `Error`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTokenResponseTypeDef
+## GetTokenRequestTypeDef
 
 ```python
-from mypy_boto3_amplifybackend.type_defs import GetTokenResponseTypeDef
+from mypy_boto3_amplifybackend.type_defs import GetTokenRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AppId`: `str`
+- `SessionId`: `str`
+
+## GetTokenResponseResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import GetTokenResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AppId`: `str`
 - `ChallengeCode`: `str`
 - `SessionId`: `str`
 - `Ttl`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ImportBackendAuthResponseTypeDef
+## ImportBackendAuthRequestTypeDef
 
 ```python
-from mypy_boto3_amplifybackend.type_defs import ImportBackendAuthResponseTypeDef
+from mypy_boto3_amplifybackend.type_defs import ImportBackendAuthRequestTypeDef
 ```
 
+Required fields:
+
+- `AppId`: `str`
+- `BackendEnvironmentName`: `str`
+- `NativeClientId`: `str`
+- `UserPoolId`: `str`
+- `WebClientId`: `str`
+
 Optional fields:
+
+- `IdentityPoolId`: `str`
+
+## ImportBackendAuthResponseResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import ImportBackendAuthResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
@@ -534,18 +834,41 @@ Optional fields:
 - `JobId`: `str`
 - `Operation`: `str`
 - `Status`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListBackendJobsResponseTypeDef
+## ListBackendJobsRequestTypeDef
 
 ```python
-from mypy_boto3_amplifybackend.type_defs import ListBackendJobsResponseTypeDef
+from mypy_boto3_amplifybackend.type_defs import ListBackendJobsRequestTypeDef
 ```
 
+Required fields:
+
+- `AppId`: `str`
+- `BackendEnvironmentName`: `str`
+
 Optional fields:
+
+- `JobId`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Operation`: `str`
+- `Status`: `str`
+
+## ListBackendJobsResponseResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import ListBackendJobsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Jobs`:
   `List`\[[BackendJobRespObjTypeDef](./type_defs.md#backendjobrespobjtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LoginAuthConfigReqObjTypeDef
 
@@ -572,29 +895,71 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## RemoveAllBackendsResponseTypeDef
+## RemoveAllBackendsRequestTypeDef
 
 ```python
-from mypy_boto3_amplifybackend.type_defs import RemoveAllBackendsResponseTypeDef
+from mypy_boto3_amplifybackend.type_defs import RemoveAllBackendsRequestTypeDef
 ```
 
+Required fields:
+
+- `AppId`: `str`
+
 Optional fields:
+
+- `CleanAmplifyApp`: `bool`
+
+## RemoveAllBackendsResponseResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import RemoveAllBackendsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AppId`: `str`
 - `Error`: `str`
 - `JobId`: `str`
 - `Operation`: `str`
 - `Status`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RemoveBackendConfigResponseTypeDef
+## RemoveBackendConfigRequestTypeDef
 
 ```python
-from mypy_boto3_amplifybackend.type_defs import RemoveBackendConfigResponseTypeDef
+from mypy_boto3_amplifybackend.type_defs import RemoveBackendConfigRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AppId`: `str`
+
+## RemoveBackendConfigResponseResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import RemoveBackendConfigResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Error`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## SettingsTypeDef
 
@@ -633,13 +998,30 @@ Optional fields:
 - `LoginWithAmazon`:
   [BackendAuthSocialProviderConfigTypeDef](./type_defs.md#backendauthsocialproviderconfigtypedef)
 
-## UpdateBackendAPIResponseTypeDef
+## UpdateBackendAPIRequestTypeDef
 
 ```python
-from mypy_boto3_amplifybackend.type_defs import UpdateBackendAPIResponseTypeDef
+from mypy_boto3_amplifybackend.type_defs import UpdateBackendAPIRequestTypeDef
 ```
 
+Required fields:
+
+- `AppId`: `str`
+- `BackendEnvironmentName`: `str`
+- `ResourceName`: `str`
+
 Optional fields:
+
+- `ResourceConfig`:
+  [BackendAPIResourceConfigTypeDef](./type_defs.md#backendapiresourceconfigtypedef)
+
+## UpdateBackendAPIResponseResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import UpdateBackendAPIResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
@@ -647,6 +1029,8 @@ Optional fields:
 - `JobId`: `str`
 - `Operation`: `str`
 - `Status`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UpdateBackendAuthForgotPasswordConfigTypeDef
 
@@ -710,6 +1094,20 @@ Optional fields:
   `List`\[[AdditionalConstraintsElementType](./literals.md#additionalconstraintselementtype)\]
 - `MinimumLength`: `float`
 
+## UpdateBackendAuthRequestTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import UpdateBackendAuthRequestTypeDef
+```
+
+Required fields:
+
+- `AppId`: `str`
+- `BackendEnvironmentName`: `str`
+- `ResourceConfig`:
+  [UpdateBackendAuthResourceConfigTypeDef](./type_defs.md#updatebackendauthresourceconfigtypedef)
+- `ResourceName`: `str`
+
 ## UpdateBackendAuthResourceConfigTypeDef
 
 ```python
@@ -729,13 +1127,13 @@ Optional fields:
 - `IdentityPoolConfigs`:
   [UpdateBackendAuthIdentityPoolConfigTypeDef](./type_defs.md#updatebackendauthidentitypoolconfigtypedef)
 
-## UpdateBackendAuthResponseTypeDef
+## UpdateBackendAuthResponseResponseTypeDef
 
 ```python
-from mypy_boto3_amplifybackend.type_defs import UpdateBackendAuthResponseTypeDef
+from mypy_boto3_amplifybackend.type_defs import UpdateBackendAuthResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
@@ -743,6 +1141,8 @@ Optional fields:
 - `JobId`: `str`
 - `Operation`: `str`
 - `Status`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UpdateBackendAuthUserPoolConfigTypeDef
 
@@ -761,27 +1161,61 @@ Optional fields:
 - `PasswordPolicy`:
   [UpdateBackendAuthPasswordPolicyConfigTypeDef](./type_defs.md#updatebackendauthpasswordpolicyconfigtypedef)
 
-## UpdateBackendConfigResponseTypeDef
+## UpdateBackendConfigRequestTypeDef
 
 ```python
-from mypy_boto3_amplifybackend.type_defs import UpdateBackendConfigResponseTypeDef
+from mypy_boto3_amplifybackend.type_defs import UpdateBackendConfigRequestTypeDef
 ```
 
+Required fields:
+
+- `AppId`: `str`
+
 Optional fields:
+
+- `LoginAuthConfig`:
+  [LoginAuthConfigReqObjTypeDef](./type_defs.md#loginauthconfigreqobjtypedef)
+
+## UpdateBackendConfigResponseResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import UpdateBackendConfigResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AppId`: `str`
 - `BackendManagerAppId`: `str`
 - `Error`: `str`
 - `LoginAuthConfig`:
   [LoginAuthConfigReqObjTypeDef](./type_defs.md#loginauthconfigreqobjtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateBackendJobResponseTypeDef
+## UpdateBackendJobRequestTypeDef
 
 ```python
-from mypy_boto3_amplifybackend.type_defs import UpdateBackendJobResponseTypeDef
+from mypy_boto3_amplifybackend.type_defs import UpdateBackendJobRequestTypeDef
 ```
 
+Required fields:
+
+- `AppId`: `str`
+- `BackendEnvironmentName`: `str`
+- `JobId`: `str`
+
 Optional fields:
+
+- `Operation`: `str`
+- `Status`: `str`
+
+## UpdateBackendJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import UpdateBackendJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AppId`: `str`
 - `BackendEnvironmentName`: `str`
@@ -791,3 +1225,5 @@ Optional fields:
 - `Operation`: `str`
 - `Status`: `str`
 - `UpdateTime`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

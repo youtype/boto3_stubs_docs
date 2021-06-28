@@ -27,7 +27,7 @@ def get_distribution_deployed_waiter() -> DistributionDeployedWaiter:
 ```
 
 Boto3 documentation:
-[CloudFront.Waiter.distribution_deployed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Waiter.distribution_deployed)
+[CloudFront.Waiter.distribution_deployed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Waiter.DistributionDeployed)
 
 Arguments for `DistributionDeployedWaiter.wait` method:
 
@@ -49,7 +49,7 @@ def get_invalidation_completed_waiter() -> InvalidationCompletedWaiter:
 ```
 
 Boto3 documentation:
-[CloudFront.Waiter.invalidation_completed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Waiter.invalidation_completed)
+[CloudFront.Waiter.invalidation_completed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Waiter.InvalidationCompleted)
 
 Arguments for `InvalidationCompletedWaiter.wait` method:
 
@@ -72,7 +72,7 @@ def get_streaming_distribution_deployed_waiter() -> StreamingDistributionDeploye
 ```
 
 Boto3 documentation:
-[CloudFront.Waiter.streaming_distribution_deployed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Waiter.streaming_distribution_deployed)
+[CloudFront.Waiter.streaming_distribution_deployed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Waiter.StreamingDistributionDeployed)
 
 Arguments for `StreamingDistributionDeployedWaiter.wait` method:
 

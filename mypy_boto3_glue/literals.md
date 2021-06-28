@@ -273,6 +273,7 @@ from mypy_boto3_glue.literals import DataFormatType
 Values:
 
 - `AVRO`
+- `JSON`
 
 ## DeleteBehaviorType
 

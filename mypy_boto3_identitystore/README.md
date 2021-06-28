@@ -56,13 +56,18 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_identitystore.type_defs import DescribeGroupResponseTypeDef, ...
+from mypy_boto3_identitystore.type_defs import DescribeGroupRequestTypeDef, ...
 ```
 
-- [DescribeGroupResponseTypeDef](./type_defs.md#describegroupresponsetypedef)
-- [DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef)
+- [DescribeGroupRequestTypeDef](./type_defs.md#describegrouprequesttypedef)
+- [DescribeGroupResponseResponseTypeDef](./type_defs.md#describegroupresponseresponsetypedef)
+- [DescribeUserRequestTypeDef](./type_defs.md#describeuserrequesttypedef)
+- [DescribeUserResponseResponseTypeDef](./type_defs.md#describeuserresponseresponsetypedef)
 - [FilterTypeDef](./type_defs.md#filtertypedef)
 - [GroupTypeDef](./type_defs.md#grouptypedef)
-- [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef)
-- [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef)
+- [ListGroupsRequestTypeDef](./type_defs.md#listgroupsrequesttypedef)
+- [ListGroupsResponseResponseTypeDef](./type_defs.md#listgroupsresponseresponsetypedef)
+- [ListUsersRequestTypeDef](./type_defs.md#listusersrequesttypedef)
+- [ListUsersResponseResponseTypeDef](./type_defs.md#listusersresponseresponsetypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [UserTypeDef](./type_defs.md#usertypedef)

@@ -33,4 +33,4 @@ Arguments for `ListApplicationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListApplicationsPaginator.paginate` returns
-`Iterator`\[[ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef)\].
+`Iterator`\[[ListApplicationsResponseResponseTypeDef](./type_defs.md#listapplicationsresponseresponsetypedef)\].

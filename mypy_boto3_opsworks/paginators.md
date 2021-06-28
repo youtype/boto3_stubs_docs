@@ -35,4 +35,4 @@ Arguments for `DescribeEcsClustersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEcsClustersPaginator.paginate` returns
-`Iterator`\[[DescribeEcsClustersResultTypeDef](./type_defs.md#describeecsclustersresulttypedef)\].
+`Iterator`\[[DescribeEcsClustersResultResponseTypeDef](./type_defs.md#describeecsclustersresultresponsetypedef)\].

@@ -37,7 +37,7 @@ Arguments for `DescribeEnvironmentMembershipsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEnvironmentMembershipsPaginator.paginate` returns
-`Iterator`\[[DescribeEnvironmentMembershipsResultTypeDef](./type_defs.md#describeenvironmentmembershipsresulttypedef)\].
+`Iterator`\[[DescribeEnvironmentMembershipsResultResponseTypeDef](./type_defs.md#describeenvironmentmembershipsresultresponsetypedef)\].
 
 ## ListEnvironmentsPaginator
 
@@ -62,4 +62,4 @@ Arguments for `ListEnvironmentsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEnvironmentsPaginator.paginate` returns
-`Iterator`\[[ListEnvironmentsResultTypeDef](./type_defs.md#listenvironmentsresulttypedef)\].
+`Iterator`\[[ListEnvironmentsResultResponseTypeDef](./type_defs.md#listenvironmentsresultresponsetypedef)\].

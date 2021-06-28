@@ -12,9 +12,11 @@ type annotations stubs module
   - [CategoryDetailsTypeDef](#categorydetailstypedef)
   - [CharacterOffsetsTypeDef](#characteroffsetstypedef)
   - [IssueDetectedTypeDef](#issuedetectedtypedef)
-  - [ListRealtimeContactAnalysisSegmentsResponseTypeDef](#listrealtimecontactanalysissegmentsresponsetypedef)
+  - [ListRealtimeContactAnalysisSegmentsRequestTypeDef](#listrealtimecontactanalysissegmentsrequesttypedef)
+  - [ListRealtimeContactAnalysisSegmentsResponseResponseTypeDef](#listrealtimecontactanalysissegmentsresponseresponsetypedef)
   - [PointOfInterestTypeDef](#pointofinteresttypedef)
   - [RealtimeContactAnalysisSegmentTypeDef](#realtimecontactanalysissegmenttypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [TranscriptTypeDef](#transcripttypedef)
 
 ## CategoriesTypeDef
@@ -62,20 +64,35 @@ Required fields:
 - `CharacterOffsets`:
   [CharacterOffsetsTypeDef](./type_defs.md#characteroffsetstypedef)
 
-## ListRealtimeContactAnalysisSegmentsResponseTypeDef
+## ListRealtimeContactAnalysisSegmentsRequestTypeDef
 
 ```python
-from mypy_boto3_connect_contact_lens.type_defs import ListRealtimeContactAnalysisSegmentsResponseTypeDef
+from mypy_boto3_connect_contact_lens.type_defs import ListRealtimeContactAnalysisSegmentsRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `ContactId`: `str`
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListRealtimeContactAnalysisSegmentsResponseResponseTypeDef
+
+```python
+from mypy_boto3_connect_contact_lens.type_defs import ListRealtimeContactAnalysisSegmentsResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `Segments`:
   `List`\[[RealtimeContactAnalysisSegmentTypeDef](./type_defs.md#realtimecontactanalysissegmenttypedef)\]
-
-Optional fields:
-
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PointOfInterestTypeDef
 
@@ -98,6 +115,20 @@ Optional fields:
 
 - `Transcript`: [TranscriptTypeDef](./type_defs.md#transcripttypedef)
 - `Categories`: [CategoriesTypeDef](./type_defs.md#categoriestypedef)
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_connect_contact_lens.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## TranscriptTypeDef
 

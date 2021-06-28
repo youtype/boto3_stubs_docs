@@ -103,6 +103,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("pinpoint-email").can_paginate` method.
 
 Boto3 documentation:
@@ -116,11 +118,16 @@ Returns `bool`.
 
 ### create_configuration_set
 
+Create a configuration set.
+
 Type annotations for `boto3.client("pinpoint-email").create_configuration_set`
 method.
 
 Boto3 documentation:
 [PinpointEmail.Client.create_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.create_configuration_set)
+
+Arguments mapping described in
+[CreateConfigurationSetRequestTypeDef](./type_defs.md#createconfigurationsetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -139,12 +146,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### create_configuration_set_event_destination
 
+Create an event destination.
+
 Type annotations for
 `boto3.client("pinpoint-email").create_configuration_set_event_destination`
 method.
 
 Boto3 documentation:
 [PinpointEmail.Client.create_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.create_configuration_set_event_destination)
+
+Arguments mapping described in
+[CreateConfigurationSetEventDestinationRequestTypeDef](./type_defs.md#createconfigurationseteventdestinationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -158,11 +170,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### create_dedicated_ip_pool
 
+Create a new pool of dedicated IP addresses.
+
 Type annotations for `boto3.client("pinpoint-email").create_dedicated_ip_pool`
 method.
 
 Boto3 documentation:
 [PinpointEmail.Client.create_dedicated_ip_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.create_dedicated_ip_pool)
+
+Arguments mapping described in
+[CreateDedicatedIpPoolRequestTypeDef](./type_defs.md#creatededicatedippoolrequesttypedef).
 
 Keyword-only arguments:
 
@@ -173,11 +190,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### create_deliverability_test_report
 
+Create a new predictive inbox placement test.
+
 Type annotations for
 `boto3.client("pinpoint-email").create_deliverability_test_report` method.
 
 Boto3 documentation:
 [PinpointEmail.Client.create_deliverability_test_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.create_deliverability_test_report)
+
+Arguments mapping described in
+[CreateDeliverabilityTestReportRequestTypeDef](./type_defs.md#createdeliverabilitytestreportrequesttypedef).
 
 Keyword-only arguments:
 
@@ -188,9 +210,11 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDeliverabilityTestReportResponseTypeDef](./type_defs.md#createdeliverabilitytestreportresponsetypedef).
+[CreateDeliverabilityTestReportResponseResponseTypeDef](./type_defs.md#createdeliverabilitytestreportresponseresponsetypedef).
 
 ### create_email_identity
+
+Verifies an email identity for use with Amazon Pinpoint.
 
 Type annotations for `boto3.client("pinpoint-email").create_email_identity`
 method.
@@ -198,21 +222,29 @@ method.
 Boto3 documentation:
 [PinpointEmail.Client.create_email_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.create_email_identity)
 
+Arguments mapping described in
+[CreateEmailIdentityRequestTypeDef](./type_defs.md#createemailidentityrequesttypedef).
+
 Keyword-only arguments:
 
 - `EmailIdentity`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateEmailIdentityResponseTypeDef](./type_defs.md#createemailidentityresponsetypedef).
+[CreateEmailIdentityResponseResponseTypeDef](./type_defs.md#createemailidentityresponseresponsetypedef).
 
 ### delete_configuration_set
+
+Delete an existing configuration set.
 
 Type annotations for `boto3.client("pinpoint-email").delete_configuration_set`
 method.
 
 Boto3 documentation:
 [PinpointEmail.Client.delete_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.delete_configuration_set)
+
+Arguments mapping described in
+[DeleteConfigurationSetRequestTypeDef](./type_defs.md#deleteconfigurationsetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -222,12 +254,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_configuration_set_event_destination
 
+Delete an event destination.
+
 Type annotations for
 `boto3.client("pinpoint-email").delete_configuration_set_event_destination`
 method.
 
 Boto3 documentation:
 [PinpointEmail.Client.delete_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.delete_configuration_set_event_destination)
+
+Arguments mapping described in
+[DeleteConfigurationSetEventDestinationRequestTypeDef](./type_defs.md#deleteconfigurationseteventdestinationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -238,11 +275,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_dedicated_ip_pool
 
+Delete a dedicated IP pool.
+
 Type annotations for `boto3.client("pinpoint-email").delete_dedicated_ip_pool`
 method.
 
 Boto3 documentation:
 [PinpointEmail.Client.delete_dedicated_ip_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.delete_dedicated_ip_pool)
+
+Arguments mapping described in
+[DeleteDedicatedIpPoolRequestTypeDef](./type_defs.md#deletededicatedippoolrequesttypedef).
 
 Keyword-only arguments:
 
@@ -252,11 +294,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_email_identity
 
+Deletes an email identity that you previously verified for use with Amazon
+Pinpoint.
+
 Type annotations for `boto3.client("pinpoint-email").delete_email_identity`
 method.
 
 Boto3 documentation:
 [PinpointEmail.Client.delete_email_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.delete_email_identity)
+
+Arguments mapping described in
+[DeleteEmailIdentityRequestTypeDef](./type_defs.md#deleteemailidentityrequesttypedef).
 
 Keyword-only arguments:
 
@@ -265,6 +313,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("pinpoint-email").generate_presigned_url`
 method.
@@ -283,14 +333,20 @@ Returns `str`.
 
 ### get_account
 
+Obtain information about the email-sending status and capabilities of your
+Amazon Pinpoint account in the current AWS Region.
+
 Type annotations for `boto3.client("pinpoint-email").get_account` method.
 
 Boto3 documentation:
 [PinpointEmail.Client.get_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_account)
 
-Returns [GetAccountResponseTypeDef](./type_defs.md#getaccountresponsetypedef).
+Returns
+[GetAccountResponseResponseTypeDef](./type_defs.md#getaccountresponseresponsetypedef).
 
 ### get_blacklist_reports
+
+Retrieve a list of the blacklists that your dedicated IP addresses appear on.
 
 Type annotations for `boto3.client("pinpoint-email").get_blacklist_reports`
 method.
@@ -298,14 +354,21 @@ method.
 Boto3 documentation:
 [PinpointEmail.Client.get_blacklist_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_blacklist_reports)
 
+Arguments mapping described in
+[GetBlacklistReportsRequestTypeDef](./type_defs.md#getblacklistreportsrequesttypedef).
+
 Keyword-only arguments:
 
 - `BlacklistItemNames`: `List`\[`str`\] *(required)*
 
 Returns
-[GetBlacklistReportsResponseTypeDef](./type_defs.md#getblacklistreportsresponsetypedef).
+[GetBlacklistReportsResponseResponseTypeDef](./type_defs.md#getblacklistreportsresponseresponsetypedef).
 
 ### get_configuration_set
+
+Get information about an existing configuration set, including the dedicated IP
+pool that it's associated with, whether or not it's enabled for sending email,
+and more.
 
 Type annotations for `boto3.client("pinpoint-email").get_configuration_set`
 method.
@@ -313,14 +376,20 @@ method.
 Boto3 documentation:
 [PinpointEmail.Client.get_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_configuration_set)
 
+Arguments mapping described in
+[GetConfigurationSetRequestTypeDef](./type_defs.md#getconfigurationsetrequesttypedef).
+
 Keyword-only arguments:
 
 - `ConfigurationSetName`: `str` *(required)*
 
 Returns
-[GetConfigurationSetResponseTypeDef](./type_defs.md#getconfigurationsetresponsetypedef).
+[GetConfigurationSetResponseResponseTypeDef](./type_defs.md#getconfigurationsetresponseresponsetypedef).
 
 ### get_configuration_set_event_destinations
+
+Retrieve a list of event destinations that are associated with a configuration
+set.
 
 Type annotations for
 `boto3.client("pinpoint-email").get_configuration_set_event_destinations`
@@ -329,33 +398,49 @@ method.
 Boto3 documentation:
 [PinpointEmail.Client.get_configuration_set_event_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_configuration_set_event_destinations)
 
+Arguments mapping described in
+[GetConfigurationSetEventDestinationsRequestTypeDef](./type_defs.md#getconfigurationseteventdestinationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `ConfigurationSetName`: `str` *(required)*
 
 Returns
-[GetConfigurationSetEventDestinationsResponseTypeDef](./type_defs.md#getconfigurationseteventdestinationsresponsetypedef).
+[GetConfigurationSetEventDestinationsResponseResponseTypeDef](./type_defs.md#getconfigurationseteventdestinationsresponseresponsetypedef).
 
 ### get_dedicated_ip
+
+Get information about a dedicated IP address, including the name of the
+dedicated IP pool that it's associated with, as well information about the
+automatic warm-up process for the address.
 
 Type annotations for `boto3.client("pinpoint-email").get_dedicated_ip` method.
 
 Boto3 documentation:
 [PinpointEmail.Client.get_dedicated_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_dedicated_ip)
 
+Arguments mapping described in
+[GetDedicatedIpRequestTypeDef](./type_defs.md#getdedicatediprequesttypedef).
+
 Keyword-only arguments:
 
 - `Ip`: `str` *(required)*
 
 Returns
-[GetDedicatedIpResponseTypeDef](./type_defs.md#getdedicatedipresponsetypedef).
+[GetDedicatedIpResponseResponseTypeDef](./type_defs.md#getdedicatedipresponseresponsetypedef).
 
 ### get_dedicated_ips
+
+List the dedicated IP addresses that are associated with your Amazon Pinpoint
+account.
 
 Type annotations for `boto3.client("pinpoint-email").get_dedicated_ips` method.
 
 Boto3 documentation:
 [PinpointEmail.Client.get_dedicated_ips](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_dedicated_ips)
+
+Arguments mapping described in
+[GetDedicatedIpsRequestTypeDef](./type_defs.md#getdedicatedipsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -364,9 +449,12 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[GetDedicatedIpsResponseTypeDef](./type_defs.md#getdedicatedipsresponsetypedef).
+[GetDedicatedIpsResponseResponseTypeDef](./type_defs.md#getdedicatedipsresponseresponsetypedef).
 
 ### get_deliverability_dashboard_options
+
+Retrieve information about the status of the Deliverability dashboard for your
+Amazon Pinpoint account.
 
 Type annotations for
 `boto3.client("pinpoint-email").get_deliverability_dashboard_options` method.
@@ -375,9 +463,11 @@ Boto3 documentation:
 [PinpointEmail.Client.get_deliverability_dashboard_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_deliverability_dashboard_options)
 
 Returns
-[GetDeliverabilityDashboardOptionsResponseTypeDef](./type_defs.md#getdeliverabilitydashboardoptionsresponsetypedef).
+[GetDeliverabilityDashboardOptionsResponseResponseTypeDef](./type_defs.md#getdeliverabilitydashboardoptionsresponseresponsetypedef).
 
 ### get_deliverability_test_report
+
+Retrieve the results of a predictive inbox placement test.
 
 Type annotations for
 `boto3.client("pinpoint-email").get_deliverability_test_report` method.
@@ -385,14 +475,19 @@ Type annotations for
 Boto3 documentation:
 [PinpointEmail.Client.get_deliverability_test_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_deliverability_test_report)
 
+Arguments mapping described in
+[GetDeliverabilityTestReportRequestTypeDef](./type_defs.md#getdeliverabilitytestreportrequesttypedef).
+
 Keyword-only arguments:
 
 - `ReportId`: `str` *(required)*
 
 Returns
-[GetDeliverabilityTestReportResponseTypeDef](./type_defs.md#getdeliverabilitytestreportresponsetypedef).
+[GetDeliverabilityTestReportResponseResponseTypeDef](./type_defs.md#getdeliverabilitytestreportresponseresponsetypedef).
 
 ### get_domain_deliverability_campaign
+
+Retrieve all the deliverability data for a specific campaign.
 
 Type annotations for
 `boto3.client("pinpoint-email").get_domain_deliverability_campaign` method.
@@ -400,14 +495,20 @@ Type annotations for
 Boto3 documentation:
 [PinpointEmail.Client.get_domain_deliverability_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_domain_deliverability_campaign)
 
+Arguments mapping described in
+[GetDomainDeliverabilityCampaignRequestTypeDef](./type_defs.md#getdomaindeliverabilitycampaignrequesttypedef).
+
 Keyword-only arguments:
 
 - `CampaignId`: `str` *(required)*
 
 Returns
-[GetDomainDeliverabilityCampaignResponseTypeDef](./type_defs.md#getdomaindeliverabilitycampaignresponsetypedef).
+[GetDomainDeliverabilityCampaignResponseResponseTypeDef](./type_defs.md#getdomaindeliverabilitycampaignresponseresponsetypedef).
 
 ### get_domain_statistics_report
+
+Retrieve inbox placement and engagement rates for the domains that you use to
+send email.
 
 Type annotations for
 `boto3.client("pinpoint-email").get_domain_statistics_report` method.
@@ -415,16 +516,23 @@ Type annotations for
 Boto3 documentation:
 [PinpointEmail.Client.get_domain_statistics_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_domain_statistics_report)
 
+Arguments mapping described in
+[GetDomainStatisticsReportRequestTypeDef](./type_defs.md#getdomainstatisticsreportrequesttypedef).
+
 Keyword-only arguments:
 
 - `Domain`: `str` *(required)*
-- `StartDate`: `datetime` *(required)*
-- `EndDate`: `datetime` *(required)*
+- `StartDate`: `Union`\[`datetime`, `str`\] *(required)*
+- `EndDate`: `Union`\[`datetime`, `str`\] *(required)*
 
 Returns
-[GetDomainStatisticsReportResponseTypeDef](./type_defs.md#getdomainstatisticsreportresponsetypedef).
+[GetDomainStatisticsReportResponseResponseTypeDef](./type_defs.md#getdomainstatisticsreportresponseresponsetypedef).
 
 ### get_email_identity
+
+Provides information about a specific identity associated with your Amazon
+Pinpoint account, including the identity's verification status, its DKIM
+authentication status, and its custom Mail-From settings.
 
 Type annotations for `boto3.client("pinpoint-email").get_email_identity`
 method.
@@ -432,14 +540,20 @@ method.
 Boto3 documentation:
 [PinpointEmail.Client.get_email_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.get_email_identity)
 
+Arguments mapping described in
+[GetEmailIdentityRequestTypeDef](./type_defs.md#getemailidentityrequesttypedef).
+
 Keyword-only arguments:
 
 - `EmailIdentity`: `str` *(required)*
 
 Returns
-[GetEmailIdentityResponseTypeDef](./type_defs.md#getemailidentityresponsetypedef).
+[GetEmailIdentityResponseResponseTypeDef](./type_defs.md#getemailidentityresponseresponsetypedef).
 
 ### list_configuration_sets
+
+List all of the configuration sets associated with your Amazon Pinpoint account
+in the current region.
 
 Type annotations for `boto3.client("pinpoint-email").list_configuration_sets`
 method.
@@ -447,15 +561,21 @@ method.
 Boto3 documentation:
 [PinpointEmail.Client.list_configuration_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_configuration_sets)
 
+Arguments mapping described in
+[ListConfigurationSetsRequestTypeDef](./type_defs.md#listconfigurationsetsrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `PageSize`: `int`
 
 Returns
-[ListConfigurationSetsResponseTypeDef](./type_defs.md#listconfigurationsetsresponsetypedef).
+[ListConfigurationSetsResponseResponseTypeDef](./type_defs.md#listconfigurationsetsresponseresponsetypedef).
 
 ### list_dedicated_ip_pools
+
+List all of the dedicated IP pools that exist in your Amazon Pinpoint account
+in the current AWS Region.
 
 Type annotations for `boto3.client("pinpoint-email").list_dedicated_ip_pools`
 method.
@@ -463,15 +583,21 @@ method.
 Boto3 documentation:
 [PinpointEmail.Client.list_dedicated_ip_pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_dedicated_ip_pools)
 
+Arguments mapping described in
+[ListDedicatedIpPoolsRequestTypeDef](./type_defs.md#listdedicatedippoolsrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `PageSize`: `int`
 
 Returns
-[ListDedicatedIpPoolsResponseTypeDef](./type_defs.md#listdedicatedippoolsresponsetypedef).
+[ListDedicatedIpPoolsResponseResponseTypeDef](./type_defs.md#listdedicatedippoolsresponseresponsetypedef).
 
 ### list_deliverability_test_reports
+
+Show a list of the predictive inbox placement tests that you've performed,
+regardless of their statuses.
 
 Type annotations for
 `boto3.client("pinpoint-email").list_deliverability_test_reports` method.
@@ -479,15 +605,21 @@ Type annotations for
 Boto3 documentation:
 [PinpointEmail.Client.list_deliverability_test_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_deliverability_test_reports)
 
+Arguments mapping described in
+[ListDeliverabilityTestReportsRequestTypeDef](./type_defs.md#listdeliverabilitytestreportsrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `PageSize`: `int`
 
 Returns
-[ListDeliverabilityTestReportsResponseTypeDef](./type_defs.md#listdeliverabilitytestreportsresponsetypedef).
+[ListDeliverabilityTestReportsResponseResponseTypeDef](./type_defs.md#listdeliverabilitytestreportsresponseresponsetypedef).
 
 ### list_domain_deliverability_campaigns
+
+Retrieve deliverability data for all the campaigns that used a specific domain
+to send email during a specified time range.
 
 Type annotations for
 `boto3.client("pinpoint-email").list_domain_deliverability_campaigns` method.
@@ -495,18 +627,24 @@ Type annotations for
 Boto3 documentation:
 [PinpointEmail.Client.list_domain_deliverability_campaigns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_domain_deliverability_campaigns)
 
+Arguments mapping described in
+[ListDomainDeliverabilityCampaignsRequestTypeDef](./type_defs.md#listdomaindeliverabilitycampaignsrequesttypedef).
+
 Keyword-only arguments:
 
-- `StartDate`: `datetime` *(required)*
-- `EndDate`: `datetime` *(required)*
+- `StartDate`: `Union`\[`datetime`, `str`\] *(required)*
+- `EndDate`: `Union`\[`datetime`, `str`\] *(required)*
 - `SubscribedDomain`: `str` *(required)*
 - `NextToken`: `str`
 - `PageSize`: `int`
 
 Returns
-[ListDomainDeliverabilityCampaignsResponseTypeDef](./type_defs.md#listdomaindeliverabilitycampaignsresponsetypedef).
+[ListDomainDeliverabilityCampaignsResponseResponseTypeDef](./type_defs.md#listdomaindeliverabilitycampaignsresponseresponsetypedef).
 
 ### list_email_identities
+
+Returns a list of all of the email identities that are associated with your
+Amazon Pinpoint account.
 
 Type annotations for `boto3.client("pinpoint-email").list_email_identities`
 method.
@@ -514,15 +652,21 @@ method.
 Boto3 documentation:
 [PinpointEmail.Client.list_email_identities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_email_identities)
 
+Arguments mapping described in
+[ListEmailIdentitiesRequestTypeDef](./type_defs.md#listemailidentitiesrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `PageSize`: `int`
 
 Returns
-[ListEmailIdentitiesResponseTypeDef](./type_defs.md#listemailidentitiesresponsetypedef).
+[ListEmailIdentitiesResponseResponseTypeDef](./type_defs.md#listemailidentitiesresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Retrieve a list of the tags (keys and values) that are associated with a
+specified resource.
 
 Type annotations for `boto3.client("pinpoint-email").list_tags_for_resource`
 method.
@@ -530,14 +674,19 @@ method.
 Boto3 documentation:
 [PinpointEmail.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### put_account_dedicated_ip_warmup_attributes
+
+Enable or disable the automatic warm-up feature for dedicated IP addresses.
 
 Type annotations for
 `boto3.client("pinpoint-email").put_account_dedicated_ip_warmup_attributes`
@@ -545,6 +694,9 @@ method.
 
 Boto3 documentation:
 [PinpointEmail.Client.put_account_dedicated_ip_warmup_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_account_dedicated_ip_warmup_attributes)
+
+Arguments mapping described in
+[PutAccountDedicatedIpWarmupAttributesRequestTypeDef](./type_defs.md#putaccountdedicatedipwarmupattributesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -554,11 +706,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_account_sending_attributes
 
+Enable or disable the ability of your account to send email.
+
 Type annotations for
 `boto3.client("pinpoint-email").put_account_sending_attributes` method.
 
 Boto3 documentation:
 [PinpointEmail.Client.put_account_sending_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_account_sending_attributes)
+
+Arguments mapping described in
+[PutAccountSendingAttributesRequestTypeDef](./type_defs.md#putaccountsendingattributesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -568,11 +725,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_configuration_set_delivery_options
 
+Associate a configuration set with a dedicated IP pool.
+
 Type annotations for
 `boto3.client("pinpoint-email").put_configuration_set_delivery_options` method.
 
 Boto3 documentation:
 [PinpointEmail.Client.put_configuration_set_delivery_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_configuration_set_delivery_options)
+
+Arguments mapping described in
+[PutConfigurationSetDeliveryOptionsRequestTypeDef](./type_defs.md#putconfigurationsetdeliveryoptionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -584,12 +746,18 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_configuration_set_reputation_options
 
+Enable or disable collection of reputation metrics for emails that you send
+using a particular configuration set in a specific AWS Region.
+
 Type annotations for
 `boto3.client("pinpoint-email").put_configuration_set_reputation_options`
 method.
 
 Boto3 documentation:
 [PinpointEmail.Client.put_configuration_set_reputation_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_configuration_set_reputation_options)
+
+Arguments mapping described in
+[PutConfigurationSetReputationOptionsRequestTypeDef](./type_defs.md#putconfigurationsetreputationoptionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -600,11 +768,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_configuration_set_sending_options
 
+Enable or disable email sending for messages that use a particular
+configuration set in a specific AWS Region.
+
 Type annotations for
 `boto3.client("pinpoint-email").put_configuration_set_sending_options` method.
 
 Boto3 documentation:
 [PinpointEmail.Client.put_configuration_set_sending_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_configuration_set_sending_options)
+
+Arguments mapping described in
+[PutConfigurationSetSendingOptionsRequestTypeDef](./type_defs.md#putconfigurationsetsendingoptionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -615,11 +789,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_configuration_set_tracking_options
 
+Specify a custom domain to use for open and click tracking elements in email
+that you send using Amazon Pinpoint.
+
 Type annotations for
 `boto3.client("pinpoint-email").put_configuration_set_tracking_options` method.
 
 Boto3 documentation:
 [PinpointEmail.Client.put_configuration_set_tracking_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_configuration_set_tracking_options)
+
+Arguments mapping described in
+[PutConfigurationSetTrackingOptionsRequestTypeDef](./type_defs.md#putconfigurationsettrackingoptionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -630,11 +810,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_dedicated_ip_in_pool
 
+Move a dedicated IP address to an existing dedicated IP pool.
+
 Type annotations for `boto3.client("pinpoint-email").put_dedicated_ip_in_pool`
 method.
 
 Boto3 documentation:
 [PinpointEmail.Client.put_dedicated_ip_in_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_dedicated_ip_in_pool)
+
+Arguments mapping described in
+[PutDedicatedIpInPoolRequestTypeDef](./type_defs.md#putdedicatedipinpoolrequesttypedef).
 
 Keyword-only arguments:
 
@@ -645,11 +830,19 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_dedicated_ip_warmup_attributes
 
+See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/pinpoint- email-2018-07-26/PutDedicatedIpWarmupAttributes>`\_
+**Request Syntax** response = client.put_dedicated_ip_warmup_attributes(
+Ip='string', WarmupPercentage=123 ).
+
 Type annotations for
 `boto3.client("pinpoint-email").put_dedicated_ip_warmup_attributes` method.
 
 Boto3 documentation:
 [PinpointEmail.Client.put_dedicated_ip_warmup_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_dedicated_ip_warmup_attributes)
+
+Arguments mapping described in
+[PutDedicatedIpWarmupAttributesRequestTypeDef](./type_defs.md#putdedicatedipwarmupattributesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -660,11 +853,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_deliverability_dashboard_option
 
+Enable or disable the Deliverability dashboard for your Amazon Pinpoint
+account.
+
 Type annotations for
 `boto3.client("pinpoint-email").put_deliverability_dashboard_option` method.
 
 Boto3 documentation:
 [PinpointEmail.Client.put_deliverability_dashboard_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_deliverability_dashboard_option)
+
+Arguments mapping described in
+[PutDeliverabilityDashboardOptionRequestTypeDef](./type_defs.md#putdeliverabilitydashboardoptionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -676,11 +875,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_email_identity_dkim_attributes
 
+Used to enable or disable DKIM authentication for an email identity.
+
 Type annotations for
 `boto3.client("pinpoint-email").put_email_identity_dkim_attributes` method.
 
 Boto3 documentation:
 [PinpointEmail.Client.put_email_identity_dkim_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_email_identity_dkim_attributes)
+
+Arguments mapping described in
+[PutEmailIdentityDkimAttributesRequestTypeDef](./type_defs.md#putemailidentitydkimattributesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -691,11 +895,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_email_identity_feedback_attributes
 
+Used to enable or disable feedback forwarding for an identity.
+
 Type annotations for
 `boto3.client("pinpoint-email").put_email_identity_feedback_attributes` method.
 
 Boto3 documentation:
 [PinpointEmail.Client.put_email_identity_feedback_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_email_identity_feedback_attributes)
+
+Arguments mapping described in
+[PutEmailIdentityFeedbackAttributesRequestTypeDef](./type_defs.md#putemailidentityfeedbackattributesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -706,12 +915,18 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_email_identity_mail_from_attributes
 
+Used to enable or disable the custom Mail-From domain configuration for an
+email identity.
+
 Type annotations for
 `boto3.client("pinpoint-email").put_email_identity_mail_from_attributes`
 method.
 
 Boto3 documentation:
 [PinpointEmail.Client.put_email_identity_mail_from_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.put_email_identity_mail_from_attributes)
+
+Arguments mapping described in
+[PutEmailIdentityMailFromAttributesRequestTypeDef](./type_defs.md#putemailidentitymailfromattributesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -724,10 +939,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### send_email
 
+Sends an email message.
+
 Type annotations for `boto3.client("pinpoint-email").send_email` method.
 
 Boto3 documentation:
 [PinpointEmail.Client.send_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.send_email)
+
+Arguments mapping described in
+[SendEmailRequestTypeDef](./type_defs.md#sendemailrequesttypedef).
 
 Keyword-only arguments:
 
@@ -741,14 +961,20 @@ Keyword-only arguments:
 - `EmailTags`: `List`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
 - `ConfigurationSetName`: `str`
 
-Returns [SendEmailResponseTypeDef](./type_defs.md#sendemailresponsetypedef).
+Returns
+[SendEmailResponseResponseTypeDef](./type_defs.md#sendemailresponseresponsetypedef).
 
 ### tag_resource
+
+Add one or more tags (keys and values) to a specified resource.
 
 Type annotations for `boto3.client("pinpoint-email").tag_resource` method.
 
 Boto3 documentation:
 [PinpointEmail.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -759,10 +985,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Remove one or more tags (keys and values) from a specified resource.
+
 Type annotations for `boto3.client("pinpoint-email").untag_resource` method.
 
 Boto3 documentation:
 [PinpointEmail.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -773,12 +1004,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_configuration_set_event_destination
 
+Update the configuration of an event destination for a configuration set.
+
 Type annotations for
 `boto3.client("pinpoint-email").update_configuration_set_event_destination`
 method.
 
 Boto3 documentation:
 [PinpointEmail.Client.update_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client.update_configuration_set_event_destination)
+
+Arguments mapping described in
+[UpdateConfigurationSetEventDestinationRequestTypeDef](./type_defs.md#updateconfigurationseteventdestinationrequesttypedef).
 
 Keyword-only arguments:
 

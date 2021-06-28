@@ -10,16 +10,22 @@ type annotations stubs module
 - [Typed dictionaries for boto3 ElasticInference module](#typed-dictionaries-for-boto3-elasticinference-module)
   - [AcceleratorTypeOfferingTypeDef](#acceleratortypeofferingtypedef)
   - [AcceleratorTypeTypeDef](#acceleratortypetypedef)
-  - [DescribeAcceleratorOfferingsResponseTypeDef](#describeacceleratorofferingsresponsetypedef)
-  - [DescribeAcceleratorTypesResponseTypeDef](#describeacceleratortypesresponsetypedef)
-  - [DescribeAcceleratorsResponseTypeDef](#describeacceleratorsresponsetypedef)
+  - [DescribeAcceleratorOfferingsRequestTypeDef](#describeacceleratorofferingsrequesttypedef)
+  - [DescribeAcceleratorOfferingsResponseResponseTypeDef](#describeacceleratorofferingsresponseresponsetypedef)
+  - [DescribeAcceleratorTypesResponseResponseTypeDef](#describeacceleratortypesresponseresponsetypedef)
+  - [DescribeAcceleratorsRequestTypeDef](#describeacceleratorsrequesttypedef)
+  - [DescribeAcceleratorsResponseResponseTypeDef](#describeacceleratorsresponseresponsetypedef)
   - [ElasticInferenceAcceleratorHealthTypeDef](#elasticinferenceacceleratorhealthtypedef)
   - [ElasticInferenceAcceleratorTypeDef](#elasticinferenceacceleratortypedef)
   - [FilterTypeDef](#filtertypedef)
   - [KeyValuePairTypeDef](#keyvaluepairtypedef)
-  - [ListTagsForResourceResultTypeDef](#listtagsforresourceresulttypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResultResponseTypeDef](#listtagsforresourceresultresponsetypedef)
   - [MemoryInfoTypeDef](#memoryinfotypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
 
 ## AcceleratorTypeOfferingTypeDef
 
@@ -46,39 +52,72 @@ Optional fields:
 - `throughputInfo`:
   `List`\[[KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)\]
 
-## DescribeAcceleratorOfferingsResponseTypeDef
+## DescribeAcceleratorOfferingsRequestTypeDef
 
 ```python
-from mypy_boto3_elastic_inference.type_defs import DescribeAcceleratorOfferingsResponseTypeDef
+from mypy_boto3_elastic_inference.type_defs import DescribeAcceleratorOfferingsRequestTypeDef
 ```
 
+Required fields:
+
+- `locationType`: [LocationTypeType](./literals.md#locationtypetype)
+
 Optional fields:
+
+- `acceleratorTypes`: `List`\[`str`\]
+
+## DescribeAcceleratorOfferingsResponseResponseTypeDef
+
+```python
+from mypy_boto3_elastic_inference.type_defs import DescribeAcceleratorOfferingsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `acceleratorTypeOfferings`:
   `List`\[[AcceleratorTypeOfferingTypeDef](./type_defs.md#acceleratortypeofferingtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAcceleratorTypesResponseTypeDef
+## DescribeAcceleratorTypesResponseResponseTypeDef
 
 ```python
-from mypy_boto3_elastic_inference.type_defs import DescribeAcceleratorTypesResponseTypeDef
+from mypy_boto3_elastic_inference.type_defs import DescribeAcceleratorTypesResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `acceleratorTypes`:
   `List`\[[AcceleratorTypeTypeDef](./type_defs.md#acceleratortypetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAcceleratorsResponseTypeDef
+## DescribeAcceleratorsRequestTypeDef
 
 ```python
-from mypy_boto3_elastic_inference.type_defs import DescribeAcceleratorsResponseTypeDef
+from mypy_boto3_elastic_inference.type_defs import DescribeAcceleratorsRequestTypeDef
 ```
 
 Optional fields:
+
+- `acceleratorIds`: `List`\[`str`\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## DescribeAcceleratorsResponseResponseTypeDef
+
+```python
+from mypy_boto3_elastic_inference.type_defs import DescribeAcceleratorsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `acceleratorSet`:
   `List`\[[ElasticInferenceAcceleratorTypeDef](./type_defs.md#elasticinferenceacceleratortypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ElasticInferenceAcceleratorHealthTypeDef
 
@@ -127,15 +166,27 @@ Optional fields:
 - `key`: `str`
 - `value`: `int`
 
-## ListTagsForResourceResultTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_elastic_inference.type_defs import ListTagsForResourceResultTypeDef
+from mypy_boto3_elastic_inference.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `resourceArn`: `str`
+
+## ListTagsForResourceResultResponseTypeDef
+
+```python
+from mypy_boto3_elastic_inference.type_defs import ListTagsForResourceResultResponseTypeDef
+```
+
+Required fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## MemoryInfoTypeDef
 
@@ -158,3 +209,39 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_elastic_inference.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_elastic_inference.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## UntagResourceRequestTypeDef
+
+```python
+from mypy_boto3_elastic_inference.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tagKeys`: `List`\[`str`\]

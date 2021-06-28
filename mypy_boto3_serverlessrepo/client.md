@@ -72,6 +72,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("serverlessrepo").can_paginate` method.
 
 Boto3 documentation:
@@ -85,11 +87,17 @@ Returns `bool`.
 
 ### create_application
 
+Creates an application, optionally including an AWS SAM file to create the
+first application version in the same call.
+
 Type annotations for `boto3.client("serverlessrepo").create_application`
 method.
 
 Boto3 documentation:
 [ServerlessApplicationRepository.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_application)
+
+Arguments mapping described in
+[CreateApplicationRequestTypeDef](./type_defs.md#createapplicationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -110,15 +118,20 @@ Keyword-only arguments:
 - `TemplateUrl`: `str`
 
 Returns
-[CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
+[CreateApplicationResponseResponseTypeDef](./type_defs.md#createapplicationresponseresponsetypedef).
 
 ### create_application_version
+
+Creates an application version.
 
 Type annotations for
 `boto3.client("serverlessrepo").create_application_version` method.
 
 Boto3 documentation:
 [ServerlessApplicationRepository.Client.create_application_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_application_version)
+
+Arguments mapping described in
+[CreateApplicationVersionRequestTypeDef](./type_defs.md#createapplicationversionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -130,15 +143,20 @@ Keyword-only arguments:
 - `TemplateUrl`: `str`
 
 Returns
-[CreateApplicationVersionResponseTypeDef](./type_defs.md#createapplicationversionresponsetypedef).
+[CreateApplicationVersionResponseResponseTypeDef](./type_defs.md#createapplicationversionresponseresponsetypedef).
 
 ### create_cloud_formation_change_set
+
+Creates an AWS CloudFormation change set for the given application.
 
 Type annotations for
 `boto3.client("serverlessrepo").create_cloud_formation_change_set` method.
 
 Boto3 documentation:
 [ServerlessApplicationRepository.Client.create_cloud_formation_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_cloud_formation_change_set)
+
+Arguments mapping described in
+[CreateCloudFormationChangeSetRequestTypeDef](./type_defs.md#createcloudformationchangesetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -159,9 +177,11 @@ Keyword-only arguments:
 - `TemplateId`: `str`
 
 Returns
-[CreateCloudFormationChangeSetResponseTypeDef](./type_defs.md#createcloudformationchangesetresponsetypedef).
+[CreateCloudFormationChangeSetResponseResponseTypeDef](./type_defs.md#createcloudformationchangesetresponseresponsetypedef).
 
 ### create_cloud_formation_template
+
+Creates an AWS CloudFormation template.
 
 Type annotations for
 `boto3.client("serverlessrepo").create_cloud_formation_template` method.
@@ -169,15 +189,20 @@ Type annotations for
 Boto3 documentation:
 [ServerlessApplicationRepository.Client.create_cloud_formation_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.create_cloud_formation_template)
 
+Arguments mapping described in
+[CreateCloudFormationTemplateRequestTypeDef](./type_defs.md#createcloudformationtemplaterequesttypedef).
+
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `SemanticVersion`: `str`
 
 Returns
-[CreateCloudFormationTemplateResponseTypeDef](./type_defs.md#createcloudformationtemplateresponsetypedef).
+[CreateCloudFormationTemplateResponseResponseTypeDef](./type_defs.md#createcloudformationtemplateresponseresponsetypedef).
 
 ### delete_application
+
+Deletes the specified application.
 
 Type annotations for `boto3.client("serverlessrepo").delete_application`
 method.
@@ -185,11 +210,16 @@ method.
 Boto3 documentation:
 [ServerlessApplicationRepository.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.delete_application)
 
+Arguments mapping described in
+[DeleteApplicationRequestTypeDef](./type_defs.md#deleteapplicationrequesttypedef).
+
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("serverlessrepo").generate_presigned_url`
 method.
@@ -208,10 +238,15 @@ Returns `str`.
 
 ### get_application
 
+Gets the specified application.
+
 Type annotations for `boto3.client("serverlessrepo").get_application` method.
 
 Boto3 documentation:
 [ServerlessApplicationRepository.Client.get_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.get_application)
+
+Arguments mapping described in
+[GetApplicationRequestTypeDef](./type_defs.md#getapplicationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -219,9 +254,11 @@ Keyword-only arguments:
 - `SemanticVersion`: `str`
 
 Returns
-[GetApplicationResponseTypeDef](./type_defs.md#getapplicationresponsetypedef).
+[GetApplicationResponseResponseTypeDef](./type_defs.md#getapplicationresponseresponsetypedef).
 
 ### get_application_policy
+
+Retrieves the policy for the application.
 
 Type annotations for `boto3.client("serverlessrepo").get_application_policy`
 method.
@@ -229,14 +266,19 @@ method.
 Boto3 documentation:
 [ServerlessApplicationRepository.Client.get_application_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.get_application_policy)
 
+Arguments mapping described in
+[GetApplicationPolicyRequestTypeDef](./type_defs.md#getapplicationpolicyrequesttypedef).
+
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[GetApplicationPolicyResponseTypeDef](./type_defs.md#getapplicationpolicyresponsetypedef).
+[GetApplicationPolicyResponseResponseTypeDef](./type_defs.md#getapplicationpolicyresponseresponsetypedef).
 
 ### get_cloud_formation_template
+
+Gets the specified AWS CloudFormation template.
 
 Type annotations for
 `boto3.client("serverlessrepo").get_cloud_formation_template` method.
@@ -244,21 +286,29 @@ Type annotations for
 Boto3 documentation:
 [ServerlessApplicationRepository.Client.get_cloud_formation_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.get_cloud_formation_template)
 
+Arguments mapping described in
+[GetCloudFormationTemplateRequestTypeDef](./type_defs.md#getcloudformationtemplaterequesttypedef).
+
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `TemplateId`: `str` *(required)*
 
 Returns
-[GetCloudFormationTemplateResponseTypeDef](./type_defs.md#getcloudformationtemplateresponsetypedef).
+[GetCloudFormationTemplateResponseResponseTypeDef](./type_defs.md#getcloudformationtemplateresponseresponsetypedef).
 
 ### list_application_dependencies
+
+Retrieves the list of applications nested in the containing application.
 
 Type annotations for
 `boto3.client("serverlessrepo").list_application_dependencies` method.
 
 Boto3 documentation:
 [ServerlessApplicationRepository.Client.list_application_dependencies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.list_application_dependencies)
+
+Arguments mapping described in
+[ListApplicationDependenciesRequestTypeDef](./type_defs.md#listapplicationdependenciesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -268,15 +318,20 @@ Keyword-only arguments:
 - `SemanticVersion`: `str`
 
 Returns
-[ListApplicationDependenciesResponseTypeDef](./type_defs.md#listapplicationdependenciesresponsetypedef).
+[ListApplicationDependenciesResponseResponseTypeDef](./type_defs.md#listapplicationdependenciesresponseresponsetypedef).
 
 ### list_application_versions
+
+Lists versions for the specified application.
 
 Type annotations for `boto3.client("serverlessrepo").list_application_versions`
 method.
 
 Boto3 documentation:
 [ServerlessApplicationRepository.Client.list_application_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.list_application_versions)
+
+Arguments mapping described in
+[ListApplicationVersionsRequestTypeDef](./type_defs.md#listapplicationversionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -285,14 +340,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListApplicationVersionsResponseTypeDef](./type_defs.md#listapplicationversionsresponsetypedef).
+[ListApplicationVersionsResponseResponseTypeDef](./type_defs.md#listapplicationversionsresponseresponsetypedef).
 
 ### list_applications
+
+Lists applications owned by the requester.
 
 Type annotations for `boto3.client("serverlessrepo").list_applications` method.
 
 Boto3 documentation:
 [ServerlessApplicationRepository.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.list_applications)
+
+Arguments mapping described in
+[ListApplicationsRequestTypeDef](./type_defs.md#listapplicationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -300,15 +360,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef).
+[ListApplicationsResponseResponseTypeDef](./type_defs.md#listapplicationsresponseresponsetypedef).
 
 ### put_application_policy
+
+Sets the permission policy for an application.
 
 Type annotations for `boto3.client("serverlessrepo").put_application_policy`
 method.
 
 Boto3 documentation:
 [ServerlessApplicationRepository.Client.put_application_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.put_application_policy)
+
+Arguments mapping described in
+[PutApplicationPolicyRequestTypeDef](./type_defs.md#putapplicationpolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -318,15 +383,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutApplicationPolicyResponseTypeDef](./type_defs.md#putapplicationpolicyresponsetypedef).
+[PutApplicationPolicyResponseResponseTypeDef](./type_defs.md#putapplicationpolicyresponseresponsetypedef).
 
 ### unshare_application
+
+Unshares an application from an AWS Organization.
 
 Type annotations for `boto3.client("serverlessrepo").unshare_application`
 method.
 
 Boto3 documentation:
 [ServerlessApplicationRepository.Client.unshare_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.unshare_application)
+
+Arguments mapping described in
+[UnshareApplicationRequestTypeDef](./type_defs.md#unshareapplicationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -335,11 +405,16 @@ Keyword-only arguments:
 
 ### update_application
 
+Updates the specified application.
+
 Type annotations for `boto3.client("serverlessrepo").update_application`
 method.
 
 Boto3 documentation:
 [ServerlessApplicationRepository.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.update_application)
+
+Arguments mapping described in
+[UpdateApplicationRequestTypeDef](./type_defs.md#updateapplicationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -352,7 +427,7 @@ Keyword-only arguments:
 - `ReadmeUrl`: `str`
 
 Returns
-[UpdateApplicationResponseTypeDef](./type_defs.md#updateapplicationresponsetypedef).
+[UpdateApplicationResponseResponseTypeDef](./type_defs.md#updateapplicationresponseresponsetypedef).
 
 ### get_paginator
 

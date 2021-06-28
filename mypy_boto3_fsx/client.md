@@ -96,11 +96,17 @@ Exceptions:
 
 ### associate_file_system_aliases
 
+Use this action to associate one or more Domain Name Server (DNS) aliases with
+an existing Amazon FSx for Windows File Server file system.
+
 Type annotations for `boto3.client("fsx").associate_file_system_aliases`
 method.
 
 Boto3 documentation:
 [FSx.Client.associate_file_system_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.associate_file_system_aliases)
+
+Arguments mapping described in
+[AssociateFileSystemAliasesRequestTypeDef](./type_defs.md#associatefilesystemaliasesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -109,9 +115,11 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 
 Returns
-[AssociateFileSystemAliasesResponseTypeDef](./type_defs.md#associatefilesystemaliasesresponsetypedef).
+[AssociateFileSystemAliasesResponseResponseTypeDef](./type_defs.md#associatefilesystemaliasesresponseresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("fsx").can_paginate` method.
 
@@ -126,24 +134,36 @@ Returns `bool`.
 
 ### cancel_data_repository_task
 
+Cancels an existing Amazon FSx for Lustre data repository task if that task is
+in either the `PENDING` or `EXECUTING` state.
+
 Type annotations for `boto3.client("fsx").cancel_data_repository_task` method.
 
 Boto3 documentation:
 [FSx.Client.cancel_data_repository_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.cancel_data_repository_task)
+
+Arguments mapping described in
+[CancelDataRepositoryTaskRequestTypeDef](./type_defs.md#canceldatarepositorytaskrequesttypedef).
 
 Keyword-only arguments:
 
 - `TaskId`: `str` *(required)*
 
 Returns
-[CancelDataRepositoryTaskResponseTypeDef](./type_defs.md#canceldatarepositorytaskresponsetypedef).
+[CancelDataRepositoryTaskResponseResponseTypeDef](./type_defs.md#canceldatarepositorytaskresponseresponsetypedef).
 
 ### copy_backup
+
+Copies an existing backup within the same AWS account to another Region (cross-
+Region copy) or within the same Region (in-Region copy).
 
 Type annotations for `boto3.client("fsx").copy_backup` method.
 
 Boto3 documentation:
 [FSx.Client.copy_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.copy_backup)
+
+Arguments mapping described in
+[CopyBackupRequestTypeDef](./type_defs.md#copybackuprequesttypedef).
 
 Keyword-only arguments:
 
@@ -154,14 +174,20 @@ Keyword-only arguments:
 - `CopyTags`: `bool`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns [CopyBackupResponseTypeDef](./type_defs.md#copybackupresponsetypedef).
+Returns
+[CopyBackupResponseResponseTypeDef](./type_defs.md#copybackupresponseresponsetypedef).
 
 ### create_backup
+
+Creates a backup of an existing Amazon FSx file system.
 
 Type annotations for `boto3.client("fsx").create_backup` method.
 
 Boto3 documentation:
 [FSx.Client.create_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_backup)
+
+Arguments mapping described in
+[CreateBackupRequestTypeDef](./type_defs.md#createbackuprequesttypedef).
 
 Keyword-only arguments:
 
@@ -170,14 +196,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateBackupResponseTypeDef](./type_defs.md#createbackupresponsetypedef).
+[CreateBackupResponseResponseTypeDef](./type_defs.md#createbackupresponseresponsetypedef).
 
 ### create_data_repository_task
+
+Creates an Amazon FSx for Lustre data repository task.
 
 Type annotations for `boto3.client("fsx").create_data_repository_task` method.
 
 Boto3 documentation:
 [FSx.Client.create_data_repository_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_data_repository_task)
+
+Arguments mapping described in
+[CreateDataRepositoryTaskRequestTypeDef](./type_defs.md#createdatarepositorytaskrequesttypedef).
 
 Keyword-only arguments:
 
@@ -192,14 +223,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDataRepositoryTaskResponseTypeDef](./type_defs.md#createdatarepositorytaskresponsetypedef).
+[CreateDataRepositoryTaskResponseResponseTypeDef](./type_defs.md#createdatarepositorytaskresponseresponsetypedef).
 
 ### create_file_system
+
+Creates a new, empty Amazon FSx file system.
 
 Type annotations for `boto3.client("fsx").create_file_system` method.
 
 Boto3 documentation:
 [FSx.Client.create_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_file_system)
+
+Arguments mapping described in
+[CreateFileSystemRequestTypeDef](./type_defs.md#createfilesystemrequesttypedef).
 
 Keyword-only arguments:
 
@@ -218,15 +254,20 @@ Keyword-only arguments:
   [CreateFileSystemLustreConfigurationTypeDef](./type_defs.md#createfilesystemlustreconfigurationtypedef)
 
 Returns
-[CreateFileSystemResponseTypeDef](./type_defs.md#createfilesystemresponsetypedef).
+[CreateFileSystemResponseResponseTypeDef](./type_defs.md#createfilesystemresponseresponsetypedef).
 
 ### create_file_system_from_backup
+
+Creates a new Amazon FSx file system from an existing Amazon FSx backup.
 
 Type annotations for `boto3.client("fsx").create_file_system_from_backup`
 method.
 
 Boto3 documentation:
 [FSx.Client.create_file_system_from_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_file_system_from_backup)
+
+Arguments mapping described in
+[CreateFileSystemFromBackupRequestTypeDef](./type_defs.md#createfilesystemfrombackuprequesttypedef).
 
 Keyword-only arguments:
 
@@ -243,14 +284,19 @@ Keyword-only arguments:
 - `KmsKeyId`: `str`
 
 Returns
-[CreateFileSystemFromBackupResponseTypeDef](./type_defs.md#createfilesystemfrombackupresponsetypedef).
+[CreateFileSystemFromBackupResponseResponseTypeDef](./type_defs.md#createfilesystemfrombackupresponseresponsetypedef).
 
 ### delete_backup
+
+Deletes an Amazon FSx backup, deleting its contents.
 
 Type annotations for `boto3.client("fsx").delete_backup` method.
 
 Boto3 documentation:
 [FSx.Client.delete_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.delete_backup)
+
+Arguments mapping described in
+[DeleteBackupRequestTypeDef](./type_defs.md#deletebackuprequesttypedef).
 
 Keyword-only arguments:
 
@@ -258,14 +304,19 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 
 Returns
-[DeleteBackupResponseTypeDef](./type_defs.md#deletebackupresponsetypedef).
+[DeleteBackupResponseResponseTypeDef](./type_defs.md#deletebackupresponseresponsetypedef).
 
 ### delete_file_system
+
+Deletes a file system, deleting its contents.
 
 Type annotations for `boto3.client("fsx").delete_file_system` method.
 
 Boto3 documentation:
 [FSx.Client.delete_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.delete_file_system)
+
+Arguments mapping described in
+[DeleteFileSystemRequestTypeDef](./type_defs.md#deletefilesystemrequesttypedef).
 
 Keyword-only arguments:
 
@@ -277,14 +328,20 @@ Keyword-only arguments:
   [DeleteFileSystemLustreConfigurationTypeDef](./type_defs.md#deletefilesystemlustreconfigurationtypedef)
 
 Returns
-[DeleteFileSystemResponseTypeDef](./type_defs.md#deletefilesystemresponsetypedef).
+[DeleteFileSystemResponseResponseTypeDef](./type_defs.md#deletefilesystemresponseresponsetypedef).
 
 ### describe_backups
+
+Returns the description of specific Amazon FSx backups, if a `BackupIds` value
+is provided for that backup.
 
 Type annotations for `boto3.client("fsx").describe_backups` method.
 
 Boto3 documentation:
 [FSx.Client.describe_backups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_backups)
+
+Arguments mapping described in
+[DescribeBackupsRequestTypeDef](./type_defs.md#describebackupsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -294,15 +351,22 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeBackupsResponseTypeDef](./type_defs.md#describebackupsresponsetypedef).
+[DescribeBackupsResponseResponseTypeDef](./type_defs.md#describebackupsresponseresponsetypedef).
 
 ### describe_data_repository_tasks
+
+Returns the description of specific Amazon FSx for Lustre data repository
+tasks, if one or more `TaskIds` values are provided in the request, or if
+filters are used in the request.
 
 Type annotations for `boto3.client("fsx").describe_data_repository_tasks`
 method.
 
 Boto3 documentation:
 [FSx.Client.describe_data_repository_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_data_repository_tasks)
+
+Arguments mapping described in
+[DescribeDataRepositoryTasksRequestTypeDef](./type_defs.md#describedatarepositorytasksrequesttypedef).
 
 Keyword-only arguments:
 
@@ -313,14 +377,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeDataRepositoryTasksResponseTypeDef](./type_defs.md#describedatarepositorytasksresponsetypedef).
+[DescribeDataRepositoryTasksResponseResponseTypeDef](./type_defs.md#describedatarepositorytasksresponseresponsetypedef).
 
 ### describe_file_system_aliases
+
+Returns the DNS aliases that are associated with the specified Amazon FSx for
+Windows File Server file system.
 
 Type annotations for `boto3.client("fsx").describe_file_system_aliases` method.
 
 Boto3 documentation:
 [FSx.Client.describe_file_system_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_file_system_aliases)
+
+Arguments mapping described in
+[DescribeFileSystemAliasesRequestTypeDef](./type_defs.md#describefilesystemaliasesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -330,14 +400,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeFileSystemAliasesResponseTypeDef](./type_defs.md#describefilesystemaliasesresponsetypedef).
+[DescribeFileSystemAliasesResponseResponseTypeDef](./type_defs.md#describefilesystemaliasesresponseresponsetypedef).
 
 ### describe_file_systems
+
+Returns the description of specific Amazon FSx file systems, if a
+`FileSystemIds` value is provided for that file system.
 
 Type annotations for `boto3.client("fsx").describe_file_systems` method.
 
 Boto3 documentation:
 [FSx.Client.describe_file_systems](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_file_systems)
+
+Arguments mapping described in
+[DescribeFileSystemsRequestTypeDef](./type_defs.md#describefilesystemsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -346,15 +422,21 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeFileSystemsResponseTypeDef](./type_defs.md#describefilesystemsresponsetypedef).
+[DescribeFileSystemsResponseResponseTypeDef](./type_defs.md#describefilesystemsresponseresponsetypedef).
 
 ### disassociate_file_system_aliases
+
+Use this action to disassociate, or remove, one or more Domain Name Service
+(DNS) aliases from an Amazon FSx for Windows File Server file system.
 
 Type annotations for `boto3.client("fsx").disassociate_file_system_aliases`
 method.
 
 Boto3 documentation:
 [FSx.Client.disassociate_file_system_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.disassociate_file_system_aliases)
+
+Arguments mapping described in
+[DisassociateFileSystemAliasesRequestTypeDef](./type_defs.md#disassociatefilesystemaliasesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -363,9 +445,11 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 
 Returns
-[DisassociateFileSystemAliasesResponseTypeDef](./type_defs.md#disassociatefilesystemaliasesresponsetypedef).
+[DisassociateFileSystemAliasesResponseResponseTypeDef](./type_defs.md#disassociatefilesystemaliasesresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("fsx").generate_presigned_url` method.
 
@@ -383,10 +467,16 @@ Returns `str`.
 
 ### list_tags_for_resource
 
+Lists tags for an Amazon FSx file systems and backups in the case of Amazon FSx
+for Windows File Server.
+
 Type annotations for `boto3.client("fsx").list_tags_for_resource` method.
 
 Boto3 documentation:
 [FSx.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.list_tags_for_resource)
+
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -395,14 +485,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### tag_resource
+
+Tags an Amazon FSx resource.
 
 Type annotations for `boto3.client("fsx").tag_resource` method.
 
 Boto3 documentation:
 [FSx.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -413,10 +508,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+This action removes a tag from an Amazon FSx resource.
+
 Type annotations for `boto3.client("fsx").untag_resource` method.
 
 Boto3 documentation:
 [FSx.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -427,10 +527,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_file_system
 
+Use this operation to update the configuration of an existing Amazon FSx file
+system.
+
 Type annotations for `boto3.client("fsx").update_file_system` method.
 
 Boto3 documentation:
 [FSx.Client.update_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.update_file_system)
+
+Arguments mapping described in
+[UpdateFileSystemRequestTypeDef](./type_defs.md#updatefilesystemrequesttypedef).
 
 Keyword-only arguments:
 
@@ -443,7 +549,7 @@ Keyword-only arguments:
   [UpdateFileSystemLustreConfigurationTypeDef](./type_defs.md#updatefilesystemlustreconfigurationtypedef)
 
 Returns
-[UpdateFileSystemResponseTypeDef](./type_defs.md#updatefilesystemresponsetypedef).
+[UpdateFileSystemResponseResponseTypeDef](./type_defs.md#updatefilesystemresponseresponsetypedef).
 
 ### get_paginator
 

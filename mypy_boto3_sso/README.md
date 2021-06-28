@@ -88,9 +88,14 @@ from mypy_boto3_sso.type_defs import AccountInfoTypeDef, ...
 ```
 
 - [AccountInfoTypeDef](./type_defs.md#accountinfotypedef)
-- [GetRoleCredentialsResponseTypeDef](./type_defs.md#getrolecredentialsresponsetypedef)
-- [ListAccountRolesResponseTypeDef](./type_defs.md#listaccountrolesresponsetypedef)
-- [ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef)
+- [GetRoleCredentialsRequestTypeDef](./type_defs.md#getrolecredentialsrequesttypedef)
+- [GetRoleCredentialsResponseResponseTypeDef](./type_defs.md#getrolecredentialsresponseresponsetypedef)
+- [ListAccountRolesRequestTypeDef](./type_defs.md#listaccountrolesrequesttypedef)
+- [ListAccountRolesResponseResponseTypeDef](./type_defs.md#listaccountrolesresponseresponsetypedef)
+- [ListAccountsRequestTypeDef](./type_defs.md#listaccountsrequesttypedef)
+- [ListAccountsResponseResponseTypeDef](./type_defs.md#listaccountsresponseresponsetypedef)
+- [LogoutRequestTypeDef](./type_defs.md#logoutrequesttypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RoleCredentialsTypeDef](./type_defs.md#rolecredentialstypedef)
 - [RoleInfoTypeDef](./type_defs.md#roleinfotypedef)

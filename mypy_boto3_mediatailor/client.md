@@ -83,6 +83,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("mediatailor").can_paginate` method.
 
 Boto3 documentation:
@@ -96,10 +98,15 @@ Returns `bool`.
 
 ### create_channel
 
+Creates a channel.
+
 Type annotations for `boto3.client("mediatailor").create_channel` method.
 
 Boto3 documentation:
 [MediaTailor.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_channel)
+
+Arguments mapping described in
+[CreateChannelRequestTypeDef](./type_defs.md#createchannelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -112,14 +119,19 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
+[CreateChannelResponseResponseTypeDef](./type_defs.md#createchannelresponseresponsetypedef).
 
 ### create_program
+
+Creates a program.
 
 Type annotations for `boto3.client("mediatailor").create_program` method.
 
 Boto3 documentation:
 [MediaTailor.Client.create_program](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_program)
+
+Arguments mapping described in
+[CreateProgramRequestTypeDef](./type_defs.md#createprogramrequesttypedef).
 
 Keyword-only arguments:
 
@@ -133,15 +145,20 @@ Keyword-only arguments:
 - `AdBreaks`: `List`\[[AdBreakTypeDef](./type_defs.md#adbreaktypedef)\]
 
 Returns
-[CreateProgramResponseTypeDef](./type_defs.md#createprogramresponsetypedef).
+[CreateProgramResponseResponseTypeDef](./type_defs.md#createprogramresponseresponsetypedef).
 
 ### create_source_location
+
+Creates a source location on a specific channel.
 
 Type annotations for `boto3.client("mediatailor").create_source_location`
 method.
 
 Boto3 documentation:
 [MediaTailor.Client.create_source_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_source_location)
+
+Arguments mapping described in
+[CreateSourceLocationRequestTypeDef](./type_defs.md#createsourcelocationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -156,14 +173,19 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateSourceLocationResponseTypeDef](./type_defs.md#createsourcelocationresponsetypedef).
+[CreateSourceLocationResponseResponseTypeDef](./type_defs.md#createsourcelocationresponseresponsetypedef).
 
 ### create_vod_source
+
+Creates name for a specific VOD source in a source location.
 
 Type annotations for `boto3.client("mediatailor").create_vod_source` method.
 
 Boto3 documentation:
 [MediaTailor.Client.create_vod_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_vod_source)
+
+Arguments mapping described in
+[CreateVodSourceRequestTypeDef](./type_defs.md#createvodsourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -175,14 +197,19 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateVodSourceResponseTypeDef](./type_defs.md#createvodsourceresponsetypedef).
+[CreateVodSourceResponseResponseTypeDef](./type_defs.md#createvodsourceresponseresponsetypedef).
 
 ### delete_channel
+
+Deletes a channel.
 
 Type annotations for `boto3.client("mediatailor").delete_channel` method.
 
 Boto3 documentation:
 [MediaTailor.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_channel)
+
+Arguments mapping described in
+[DeleteChannelRequestTypeDef](./type_defs.md#deletechannelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -192,11 +219,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_channel_policy
 
+Deletes a channel's IAM policy.
+
 Type annotations for `boto3.client("mediatailor").delete_channel_policy`
 method.
 
 Boto3 documentation:
 [MediaTailor.Client.delete_channel_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_channel_policy)
+
+Arguments mapping described in
+[DeleteChannelPolicyRequestTypeDef](./type_defs.md#deletechannelpolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -206,11 +238,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_playback_configuration
 
+Deletes the playback configuration for the specified name.
+
 Type annotations for
 `boto3.client("mediatailor").delete_playback_configuration` method.
 
 Boto3 documentation:
 [MediaTailor.Client.delete_playback_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_playback_configuration)
+
+Arguments mapping described in
+[DeletePlaybackConfigurationRequestTypeDef](./type_defs.md#deleteplaybackconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -220,10 +257,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_program
 
+Deletes a specific program on a specific channel.
+
 Type annotations for `boto3.client("mediatailor").delete_program` method.
 
 Boto3 documentation:
 [MediaTailor.Client.delete_program](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_program)
+
+Arguments mapping described in
+[DeleteProgramRequestTypeDef](./type_defs.md#deleteprogramrequesttypedef).
 
 Keyword-only arguments:
 
@@ -234,11 +276,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_source_location
 
+Deletes a source location on a specific channel.
+
 Type annotations for `boto3.client("mediatailor").delete_source_location`
 method.
 
 Boto3 documentation:
 [MediaTailor.Client.delete_source_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_source_location)
+
+Arguments mapping described in
+[DeleteSourceLocationRequestTypeDef](./type_defs.md#deletesourcelocationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -248,10 +295,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_vod_source
 
+Deletes a specific VOD source in a specific source location.
+
 Type annotations for `boto3.client("mediatailor").delete_vod_source` method.
 
 Boto3 documentation:
 [MediaTailor.Client.delete_vod_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_vod_source)
+
+Arguments mapping described in
+[DeleteVodSourceRequestTypeDef](./type_defs.md#deletevodsourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -262,24 +314,34 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_channel
 
+Describes the properties of a specific channel.
+
 Type annotations for `boto3.client("mediatailor").describe_channel` method.
 
 Boto3 documentation:
 [MediaTailor.Client.describe_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_channel)
+
+Arguments mapping described in
+[DescribeChannelRequestTypeDef](./type_defs.md#describechannelrequesttypedef).
 
 Keyword-only arguments:
 
 - `ChannelName`: `str` *(required)*
 
 Returns
-[DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef).
+[DescribeChannelResponseResponseTypeDef](./type_defs.md#describechannelresponseresponsetypedef).
 
 ### describe_program
+
+Retrieves the properties of the requested program.
 
 Type annotations for `boto3.client("mediatailor").describe_program` method.
 
 Boto3 documentation:
 [MediaTailor.Client.describe_program](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_program)
+
+Arguments mapping described in
+[DescribeProgramRequestTypeDef](./type_defs.md#describeprogramrequesttypedef).
 
 Keyword-only arguments:
 
@@ -287,9 +349,11 @@ Keyword-only arguments:
 - `ProgramName`: `str` *(required)*
 
 Returns
-[DescribeProgramResponseTypeDef](./type_defs.md#describeprogramresponsetypedef).
+[DescribeProgramResponseResponseTypeDef](./type_defs.md#describeprogramresponseresponsetypedef).
 
 ### describe_source_location
+
+Retrieves the properties of the requested source location.
 
 Type annotations for `boto3.client("mediatailor").describe_source_location`
 method.
@@ -297,19 +361,27 @@ method.
 Boto3 documentation:
 [MediaTailor.Client.describe_source_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_source_location)
 
+Arguments mapping described in
+[DescribeSourceLocationRequestTypeDef](./type_defs.md#describesourcelocationrequesttypedef).
+
 Keyword-only arguments:
 
 - `SourceLocationName`: `str` *(required)*
 
 Returns
-[DescribeSourceLocationResponseTypeDef](./type_defs.md#describesourcelocationresponsetypedef).
+[DescribeSourceLocationResponseResponseTypeDef](./type_defs.md#describesourcelocationresponseresponsetypedef).
 
 ### describe_vod_source
+
+Provides details about a specific VOD source in a specific source location.
 
 Type annotations for `boto3.client("mediatailor").describe_vod_source` method.
 
 Boto3 documentation:
 [MediaTailor.Client.describe_vod_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_vod_source)
+
+Arguments mapping described in
+[DescribeVodSourceRequestTypeDef](./type_defs.md#describevodsourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -317,9 +389,11 @@ Keyword-only arguments:
 - `VodSourceName`: `str` *(required)*
 
 Returns
-[DescribeVodSourceResponseTypeDef](./type_defs.md#describevodsourceresponsetypedef).
+[DescribeVodSourceResponseResponseTypeDef](./type_defs.md#describevodsourceresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("mediatailor").generate_presigned_url`
 method.
@@ -338,24 +412,34 @@ Returns `str`.
 
 ### get_channel_policy
 
+Retrieves information about a channel's IAM policy.
+
 Type annotations for `boto3.client("mediatailor").get_channel_policy` method.
 
 Boto3 documentation:
 [MediaTailor.Client.get_channel_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_channel_policy)
+
+Arguments mapping described in
+[GetChannelPolicyRequestTypeDef](./type_defs.md#getchannelpolicyrequesttypedef).
 
 Keyword-only arguments:
 
 - `ChannelName`: `str` *(required)*
 
 Returns
-[GetChannelPolicyResponseTypeDef](./type_defs.md#getchannelpolicyresponsetypedef).
+[GetChannelPolicyResponseResponseTypeDef](./type_defs.md#getchannelpolicyresponseresponsetypedef).
 
 ### get_channel_schedule
+
+Retrieves information about your channel's schedule.
 
 Type annotations for `boto3.client("mediatailor").get_channel_schedule` method.
 
 Boto3 documentation:
 [MediaTailor.Client.get_channel_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_channel_schedule)
+
+Arguments mapping described in
+[GetChannelScheduleRequestTypeDef](./type_defs.md#getchannelschedulerequesttypedef).
 
 Keyword-only arguments:
 
@@ -365,9 +449,11 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetChannelScheduleResponseTypeDef](./type_defs.md#getchannelscheduleresponsetypedef).
+[GetChannelScheduleResponseResponseTypeDef](./type_defs.md#getchannelscheduleresponseresponsetypedef).
 
 ### get_playback_configuration
+
+Returns the playback configuration for the specified name.
 
 Type annotations for `boto3.client("mediatailor").get_playback_configuration`
 method.
@@ -375,19 +461,27 @@ method.
 Boto3 documentation:
 [MediaTailor.Client.get_playback_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_playback_configuration)
 
+Arguments mapping described in
+[GetPlaybackConfigurationRequestTypeDef](./type_defs.md#getplaybackconfigurationrequesttypedef).
+
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[GetPlaybackConfigurationResponseTypeDef](./type_defs.md#getplaybackconfigurationresponsetypedef).
+[GetPlaybackConfigurationResponseResponseTypeDef](./type_defs.md#getplaybackconfigurationresponseresponsetypedef).
 
 ### list_channels
+
+Retrieves a list of channels that are associated with this account.
 
 Type annotations for `boto3.client("mediatailor").list_channels` method.
 
 Boto3 documentation:
 [MediaTailor.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_channels)
+
+Arguments mapping described in
+[ListChannelsRequestTypeDef](./type_defs.md#listchannelsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -395,9 +489,12 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
+[ListChannelsResponseResponseTypeDef](./type_defs.md#listchannelsresponseresponsetypedef).
 
 ### list_playback_configurations
+
+Returns a list of the playback configurations defined in AWS Elemental
+MediaTailor.
 
 Type annotations for `boto3.client("mediatailor").list_playback_configurations`
 method.
@@ -405,15 +502,20 @@ method.
 Boto3 documentation:
 [MediaTailor.Client.list_playback_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_playback_configurations)
 
+Arguments mapping described in
+[ListPlaybackConfigurationsRequestTypeDef](./type_defs.md#listplaybackconfigurationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListPlaybackConfigurationsResponseTypeDef](./type_defs.md#listplaybackconfigurationsresponsetypedef).
+[ListPlaybackConfigurationsResponseResponseTypeDef](./type_defs.md#listplaybackconfigurationsresponseresponsetypedef).
 
 ### list_source_locations
+
+Retrieves a list of source locations.
 
 Type annotations for `boto3.client("mediatailor").list_source_locations`
 method.
@@ -421,15 +523,21 @@ method.
 Boto3 documentation:
 [MediaTailor.Client.list_source_locations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_source_locations)
 
+Arguments mapping described in
+[ListSourceLocationsRequestTypeDef](./type_defs.md#listsourcelocationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListSourceLocationsResponseTypeDef](./type_defs.md#listsourcelocationsresponsetypedef).
+[ListSourceLocationsResponseResponseTypeDef](./type_defs.md#listsourcelocationsresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Returns a list of the tags assigned to the specified playback configuration
+resource.
 
 Type annotations for `boto3.client("mediatailor").list_tags_for_resource`
 method.
@@ -437,19 +545,27 @@ method.
 Boto3 documentation:
 [MediaTailor.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### list_vod_sources
+
+Lists all the VOD sources in a source location.
 
 Type annotations for `boto3.client("mediatailor").list_vod_sources` method.
 
 Boto3 documentation:
 [MediaTailor.Client.list_vod_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_vod_sources)
+
+Arguments mapping described in
+[ListVodSourcesRequestTypeDef](./type_defs.md#listvodsourcesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -458,14 +574,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListVodSourcesResponseTypeDef](./type_defs.md#listvodsourcesresponsetypedef).
+[ListVodSourcesResponseResponseTypeDef](./type_defs.md#listvodsourcesresponseresponsetypedef).
 
 ### put_channel_policy
+
+Creates an IAM policy for the channel.
 
 Type annotations for `boto3.client("mediatailor").put_channel_policy` method.
 
 Boto3 documentation:
 [MediaTailor.Client.put_channel_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.put_channel_policy)
+
+Arguments mapping described in
+[PutChannelPolicyRequestTypeDef](./type_defs.md#putchannelpolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -476,11 +597,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_playback_configuration
 
+Adds a new playback configuration to AWS Elemental MediaTailor.
+
 Type annotations for `boto3.client("mediatailor").put_playback_configuration`
 method.
 
 Boto3 documentation:
 [MediaTailor.Client.put_playback_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.put_playback_configuration)
+
+Arguments mapping described in
+[PutPlaybackConfigurationRequestTypeDef](./type_defs.md#putplaybackconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -505,14 +631,19 @@ Keyword-only arguments:
 - `VideoContentSourceUrl`: `str`
 
 Returns
-[PutPlaybackConfigurationResponseTypeDef](./type_defs.md#putplaybackconfigurationresponsetypedef).
+[PutPlaybackConfigurationResponseResponseTypeDef](./type_defs.md#putplaybackconfigurationresponseresponsetypedef).
 
 ### start_channel
+
+Starts a specific channel.
 
 Type annotations for `boto3.client("mediatailor").start_channel` method.
 
 Boto3 documentation:
 [MediaTailor.Client.start_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.start_channel)
+
+Arguments mapping described in
+[StartChannelRequestTypeDef](./type_defs.md#startchannelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -522,10 +653,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### stop_channel
 
+Stops a specific channel.
+
 Type annotations for `boto3.client("mediatailor").stop_channel` method.
 
 Boto3 documentation:
 [MediaTailor.Client.stop_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.stop_channel)
+
+Arguments mapping described in
+[StopChannelRequestTypeDef](./type_defs.md#stopchannelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -535,10 +671,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### tag_resource
 
+Adds tags to the specified playback configuration resource.
+
 Type annotations for `boto3.client("mediatailor").tag_resource` method.
 
 Boto3 documentation:
 [MediaTailor.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -547,10 +688,15 @@ Keyword-only arguments:
 
 ### untag_resource
 
+Removes tags from the specified playback configuration resource.
+
 Type annotations for `boto3.client("mediatailor").untag_resource` method.
 
 Boto3 documentation:
 [MediaTailor.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -559,10 +705,15 @@ Keyword-only arguments:
 
 ### update_channel
 
+Updates an existing channel.
+
 Type annotations for `boto3.client("mediatailor").update_channel` method.
 
 Boto3 documentation:
 [MediaTailor.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_channel)
+
+Arguments mapping described in
+[UpdateChannelRequestTypeDef](./type_defs.md#updatechannelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -572,15 +723,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).
+[UpdateChannelResponseResponseTypeDef](./type_defs.md#updatechannelresponseresponsetypedef).
 
 ### update_source_location
+
+Updates a source location on a specific channel.
 
 Type annotations for `boto3.client("mediatailor").update_source_location`
 method.
 
 Boto3 documentation:
 [MediaTailor.Client.update_source_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_source_location)
+
+Arguments mapping described in
+[UpdateSourceLocationRequestTypeDef](./type_defs.md#updatesourcelocationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -594,14 +750,19 @@ Keyword-only arguments:
   [DefaultSegmentDeliveryConfigurationTypeDef](./type_defs.md#defaultsegmentdeliveryconfigurationtypedef)
 
 Returns
-[UpdateSourceLocationResponseTypeDef](./type_defs.md#updatesourcelocationresponsetypedef).
+[UpdateSourceLocationResponseResponseTypeDef](./type_defs.md#updatesourcelocationresponseresponsetypedef).
 
 ### update_vod_source
+
+Updates a specific VOD source in a specific source location.
 
 Type annotations for `boto3.client("mediatailor").update_vod_source` method.
 
 Boto3 documentation:
 [MediaTailor.Client.update_vod_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_vod_source)
+
+Arguments mapping described in
+[UpdateVodSourceRequestTypeDef](./type_defs.md#updatevodsourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -612,7 +773,7 @@ Keyword-only arguments:
 - `VodSourceName`: `str` *(required)*
 
 Returns
-[UpdateVodSourceResponseTypeDef](./type_defs.md#updatevodsourceresponsetypedef).
+[UpdateVodSourceResponseResponseTypeDef](./type_defs.md#updatevodsourceresponseresponsetypedef).
 
 ### get_paginator
 

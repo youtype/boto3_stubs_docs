@@ -25,7 +25,7 @@ def get_successful_signing_job_waiter() -> SuccessfulSigningJobWaiter:
 ```
 
 Boto3 documentation:
-[signer.Waiter.successful_signing_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Waiter.successful_signing_job)
+[signer.Waiter.successful_signing_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Waiter.SuccessfulSigningJob)
 
 Arguments for `SuccessfulSigningJobWaiter.wait` method:
 

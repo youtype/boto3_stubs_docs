@@ -39,7 +39,7 @@ Arguments for `ListAWSDefaultServiceQuotasPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAWSDefaultServiceQuotasPaginator.paginate` returns
-`Iterator`\[[ListAWSDefaultServiceQuotasResponseTypeDef](./type_defs.md#listawsdefaultservicequotasresponsetypedef)\].
+`Iterator`\[[ListAWSDefaultServiceQuotasResponseResponseTypeDef](./type_defs.md#listawsdefaultservicequotasresponseresponsetypedef)\].
 
 ## ListRequestedServiceQuotaChangeHistoryPaginator
 
@@ -67,7 +67,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRequestedServiceQuotaChangeHistoryPaginator.paginate` returns
-`Iterator`\[[ListRequestedServiceQuotaChangeHistoryResponseTypeDef](./type_defs.md#listrequestedservicequotachangehistoryresponsetypedef)\].
+`Iterator`\[[ListRequestedServiceQuotaChangeHistoryResponseResponseTypeDef](./type_defs.md#listrequestedservicequotachangehistoryresponseresponsetypedef)\].
 
 ## ListRequestedServiceQuotaChangeHistoryByQuotaPaginator
 
@@ -96,7 +96,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRequestedServiceQuotaChangeHistoryByQuotaPaginator.paginate` returns
-`Iterator`\[[ListRequestedServiceQuotaChangeHistoryByQuotaResponseTypeDef](./type_defs.md#listrequestedservicequotachangehistorybyquotaresponsetypedef)\].
+`Iterator`\[[ListRequestedServiceQuotaChangeHistoryByQuotaResponseResponseTypeDef](./type_defs.md#listrequestedservicequotachangehistorybyquotaresponseresponsetypedef)\].
 
 ## ListServiceQuotaIncreaseRequestsInTemplatePaginator
 
@@ -124,7 +124,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListServiceQuotaIncreaseRequestsInTemplatePaginator.paginate` returns
-`Iterator`\[[ListServiceQuotaIncreaseRequestsInTemplateResponseTypeDef](./type_defs.md#listservicequotaincreaserequestsintemplateresponsetypedef)\].
+`Iterator`\[[ListServiceQuotaIncreaseRequestsInTemplateResponseResponseTypeDef](./type_defs.md#listservicequotaincreaserequestsintemplateresponseresponsetypedef)\].
 
 ## ListServiceQuotasPaginator
 
@@ -150,7 +150,7 @@ Arguments for `ListServiceQuotasPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListServiceQuotasPaginator.paginate` returns
-`Iterator`\[[ListServiceQuotasResponseTypeDef](./type_defs.md#listservicequotasresponsetypedef)\].
+`Iterator`\[[ListServiceQuotasResponseResponseTypeDef](./type_defs.md#listservicequotasresponseresponsetypedef)\].
 
 ## ListServicesPaginator
 
@@ -175,4 +175,4 @@ Arguments for `ListServicesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListServicesPaginator.paginate` returns
-`Iterator`\[[ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef)\].
+`Iterator`\[[ListServicesResponseResponseTypeDef](./type_defs.md#listservicesresponseresponsetypedef)\].

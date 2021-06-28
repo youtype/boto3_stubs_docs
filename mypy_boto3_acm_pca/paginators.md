@@ -36,7 +36,7 @@ Arguments for `ListCertificateAuthoritiesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCertificateAuthoritiesPaginator.paginate` returns
-`Iterator`\[[ListCertificateAuthoritiesResponseTypeDef](./type_defs.md#listcertificateauthoritiesresponsetypedef)\].
+`Iterator`\[[ListCertificateAuthoritiesResponseResponseTypeDef](./type_defs.md#listcertificateauthoritiesresponseresponsetypedef)\].
 
 ## ListPermissionsPaginator
 
@@ -62,7 +62,7 @@ Arguments for `ListPermissionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPermissionsPaginator.paginate` returns
-`Iterator`\[[ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef)\].
+`Iterator`\[[ListPermissionsResponseResponseTypeDef](./type_defs.md#listpermissionsresponseresponsetypedef)\].
 
 ## ListTagsPaginator
 
@@ -87,4 +87,4 @@ Arguments for `ListTagsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsPaginator.paginate` returns
-`Iterator`\[[ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef)\].
+`Iterator`\[[ListTagsResponseResponseTypeDef](./type_defs.md#listtagsresponseresponsetypedef)\].

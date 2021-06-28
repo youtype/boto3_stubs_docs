@@ -36,14 +36,14 @@ Arguments for `DescribeAlarmHistoryPaginator.paginate` method:
 - `AlarmName`: `str`
 - `AlarmTypes`: `List`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
 - `HistoryItemType`: [HistoryItemTypeType](./literals.md#historyitemtypetype)
-- `StartDate`: `datetime`
-- `EndDate`: `datetime`
+- `StartDate`: `Union`\[`datetime`, `str`\]
+- `EndDate`: `Union`\[`datetime`, `str`\]
 - `ScanBy`: [ScanByType](./literals.md#scanbytype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAlarmHistoryPaginator.paginate` returns
-`Iterator`\[[DescribeAlarmHistoryOutputTypeDef](./type_defs.md#describealarmhistoryoutputtypedef)\].
+`Iterator`\[[DescribeAlarmHistoryOutputResponseTypeDef](./type_defs.md#describealarmhistoryoutputresponsetypedef)\].
 
 ## DescribeAlarmsPaginator
 
@@ -75,7 +75,7 @@ Arguments for `DescribeAlarmsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAlarmsPaginator.paginate` returns
-`Iterator`\[[DescribeAlarmsOutputTypeDef](./type_defs.md#describealarmsoutputtypedef)\].
+`Iterator`\[[DescribeAlarmsOutputResponseTypeDef](./type_defs.md#describealarmsoutputresponsetypedef)\].
 
 ## GetMetricDataPaginator
 
@@ -99,15 +99,15 @@ Arguments for `GetMetricDataPaginator.paginate` method:
 - `MetricDataQueries`:
   `List`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
   *(required)*
-- `StartTime`: `datetime` *(required)*
-- `EndTime`: `datetime` *(required)*
+- `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
+- `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `ScanBy`: [ScanByType](./literals.md#scanbytype)
 - `LabelOptions`: [LabelOptionsTypeDef](./type_defs.md#labeloptionstypedef)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetMetricDataPaginator.paginate` returns
-`Iterator`\[[GetMetricDataOutputTypeDef](./type_defs.md#getmetricdataoutputtypedef)\].
+`Iterator`\[[GetMetricDataOutputResponseTypeDef](./type_defs.md#getmetricdataoutputresponsetypedef)\].
 
 ## ListDashboardsPaginator
 
@@ -133,7 +133,7 @@ Arguments for `ListDashboardsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDashboardsPaginator.paginate` returns
-`Iterator`\[[ListDashboardsOutputTypeDef](./type_defs.md#listdashboardsoutputtypedef)\].
+`Iterator`\[[ListDashboardsOutputResponseTypeDef](./type_defs.md#listdashboardsoutputresponsetypedef)\].
 
 ## ListMetricsPaginator
 
@@ -164,4 +164,4 @@ Arguments for `ListMetricsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMetricsPaginator.paginate` returns
-`Iterator`\[[ListMetricsOutputTypeDef](./type_defs.md#listmetricsoutputtypedef)\].
+`Iterator`\[[ListMetricsOutputResponseTypeDef](./type_defs.md#listmetricsoutputresponsetypedef)\].

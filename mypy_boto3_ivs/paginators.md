@@ -38,7 +38,7 @@ Arguments for `ListChannelsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListChannelsPaginator.paginate` returns
-`Iterator`\[[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef)\].
+`Iterator`\[[ListChannelsResponseResponseTypeDef](./type_defs.md#listchannelsresponseresponsetypedef)\].
 
 ## ListPlaybackKeyPairsPaginator
 
@@ -63,7 +63,7 @@ Arguments for `ListPlaybackKeyPairsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPlaybackKeyPairsPaginator.paginate` returns
-`Iterator`\[[ListPlaybackKeyPairsResponseTypeDef](./type_defs.md#listplaybackkeypairsresponsetypedef)\].
+`Iterator`\[[ListPlaybackKeyPairsResponseResponseTypeDef](./type_defs.md#listplaybackkeypairsresponseresponsetypedef)\].
 
 ## ListRecordingConfigurationsPaginator
 
@@ -88,7 +88,7 @@ Arguments for `ListRecordingConfigurationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRecordingConfigurationsPaginator.paginate` returns
-`Iterator`\[[ListRecordingConfigurationsResponseTypeDef](./type_defs.md#listrecordingconfigurationsresponsetypedef)\].
+`Iterator`\[[ListRecordingConfigurationsResponseResponseTypeDef](./type_defs.md#listrecordingconfigurationsresponseresponsetypedef)\].
 
 ## ListStreamKeysPaginator
 
@@ -113,7 +113,7 @@ Arguments for `ListStreamKeysPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStreamKeysPaginator.paginate` returns
-`Iterator`\[[ListStreamKeysResponseTypeDef](./type_defs.md#liststreamkeysresponsetypedef)\].
+`Iterator`\[[ListStreamKeysResponseResponseTypeDef](./type_defs.md#liststreamkeysresponseresponsetypedef)\].
 
 ## ListStreamsPaginator
 
@@ -137,4 +137,4 @@ Arguments for `ListStreamsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStreamsPaginator.paginate` returns
-`Iterator`\[[ListStreamsResponseTypeDef](./type_defs.md#liststreamsresponsetypedef)\].
+`Iterator`\[[ListStreamsResponseResponseTypeDef](./type_defs.md#liststreamsresponseresponsetypedef)\].

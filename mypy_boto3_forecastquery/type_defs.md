@@ -10,7 +10,9 @@ type annotations stubs module
 - [Typed dictionaries for boto3 ForecastQueryService module](#typed-dictionaries-for-boto3-forecastqueryservice-module)
   - [DataPointTypeDef](#datapointtypedef)
   - [ForecastTypeDef](#forecasttypedef)
-  - [QueryForecastResponseTypeDef](#queryforecastresponsetypedef)
+  - [QueryForecastRequestTypeDef](#queryforecastrequesttypedef)
+  - [QueryForecastResponseResponseTypeDef](#queryforecastresponseresponsetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
 
 ## DataPointTypeDef
 
@@ -34,12 +36,45 @@ Optional fields:
 - `Predictions`: `Dict`\[`str`,
   `List`\[[DataPointTypeDef](./type_defs.md#datapointtypedef)\]\]
 
-## QueryForecastResponseTypeDef
+## QueryForecastRequestTypeDef
 
 ```python
-from mypy_boto3_forecastquery.type_defs import QueryForecastResponseTypeDef
+from mypy_boto3_forecastquery.type_defs import QueryForecastRequestTypeDef
 ```
+
+Required fields:
+
+- `ForecastArn`: `str`
+- `Filters`: `Dict`\[`str`, `str`\]
 
 Optional fields:
 
+- `StartDate`: `str`
+- `EndDate`: `str`
+- `NextToken`: `str`
+
+## QueryForecastResponseResponseTypeDef
+
+```python
+from mypy_boto3_forecastquery.type_defs import QueryForecastResponseResponseTypeDef
+```
+
+Required fields:
+
 - `Forecast`: [ForecastTypeDef](./type_defs.md#forecasttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_forecastquery.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`

@@ -44,7 +44,7 @@ Arguments for `DescribeTapeArchivesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTapeArchivesPaginator.paginate` returns
-`Iterator`\[[DescribeTapeArchivesOutputTypeDef](./type_defs.md#describetapearchivesoutputtypedef)\].
+`Iterator`\[[DescribeTapeArchivesOutputResponseTypeDef](./type_defs.md#describetapearchivesoutputresponsetypedef)\].
 
 ## DescribeTapeRecoveryPointsPaginator
 
@@ -70,7 +70,7 @@ Arguments for `DescribeTapeRecoveryPointsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTapeRecoveryPointsPaginator.paginate` returns
-`Iterator`\[[DescribeTapeRecoveryPointsOutputTypeDef](./type_defs.md#describetaperecoverypointsoutputtypedef)\].
+`Iterator`\[[DescribeTapeRecoveryPointsOutputResponseTypeDef](./type_defs.md#describetaperecoverypointsoutputresponsetypedef)\].
 
 ## DescribeTapesPaginator
 
@@ -97,7 +97,7 @@ Arguments for `DescribeTapesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTapesPaginator.paginate` returns
-`Iterator`\[[DescribeTapesOutputTypeDef](./type_defs.md#describetapesoutputtypedef)\].
+`Iterator`\[[DescribeTapesOutputResponseTypeDef](./type_defs.md#describetapesoutputresponsetypedef)\].
 
 ## DescribeVTLDevicesPaginator
 
@@ -124,7 +124,7 @@ Arguments for `DescribeVTLDevicesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVTLDevicesPaginator.paginate` returns
-`Iterator`\[[DescribeVTLDevicesOutputTypeDef](./type_defs.md#describevtldevicesoutputtypedef)\].
+`Iterator`\[[DescribeVTLDevicesOutputResponseTypeDef](./type_defs.md#describevtldevicesoutputresponsetypedef)\].
 
 ## ListFileSharesPaginator
 
@@ -150,7 +150,7 @@ Arguments for `ListFileSharesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFileSharesPaginator.paginate` returns
-`Iterator`\[[ListFileSharesOutputTypeDef](./type_defs.md#listfilesharesoutputtypedef)\].
+`Iterator`\[[ListFileSharesOutputResponseTypeDef](./type_defs.md#listfilesharesoutputresponsetypedef)\].
 
 ## ListFileSystemAssociationsPaginator
 
@@ -176,7 +176,7 @@ Arguments for `ListFileSystemAssociationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFileSystemAssociationsPaginator.paginate` returns
-`Iterator`\[[ListFileSystemAssociationsOutputTypeDef](./type_defs.md#listfilesystemassociationsoutputtypedef)\].
+`Iterator`\[[ListFileSystemAssociationsOutputResponseTypeDef](./type_defs.md#listfilesystemassociationsoutputresponsetypedef)\].
 
 ## ListGatewaysPaginator
 
@@ -201,7 +201,7 @@ Arguments for `ListGatewaysPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGatewaysPaginator.paginate` returns
-`Iterator`\[[ListGatewaysOutputTypeDef](./type_defs.md#listgatewaysoutputtypedef)\].
+`Iterator`\[[ListGatewaysOutputResponseTypeDef](./type_defs.md#listgatewaysoutputresponsetypedef)\].
 
 ## ListTagsForResourcePaginator
 
@@ -227,7 +227,7 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsForResourcePaginator.paginate` returns
-`Iterator`\[[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef)\].
+`Iterator`\[[ListTagsForResourceOutputResponseTypeDef](./type_defs.md#listtagsforresourceoutputresponsetypedef)\].
 
 ## ListTapePoolsPaginator
 
@@ -253,7 +253,7 @@ Arguments for `ListTapePoolsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTapePoolsPaginator.paginate` returns
-`Iterator`\[[ListTapePoolsOutputTypeDef](./type_defs.md#listtapepoolsoutputtypedef)\].
+`Iterator`\[[ListTapePoolsOutputResponseTypeDef](./type_defs.md#listtapepoolsoutputresponsetypedef)\].
 
 ## ListTapesPaginator
 
@@ -279,7 +279,7 @@ Arguments for `ListTapesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTapesPaginator.paginate` returns
-`Iterator`\[[ListTapesOutputTypeDef](./type_defs.md#listtapesoutputtypedef)\].
+`Iterator`\[[ListTapesOutputResponseTypeDef](./type_defs.md#listtapesoutputresponsetypedef)\].
 
 ## ListVolumesPaginator
 
@@ -305,4 +305,4 @@ Arguments for `ListVolumesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListVolumesPaginator.paginate` returns
-`Iterator`\[[ListVolumesOutputTypeDef](./type_defs.md#listvolumesoutputtypedef)\].
+`Iterator`\[[ListVolumesOutputResponseTypeDef](./type_defs.md#listvolumesoutputresponsetypedef)\].

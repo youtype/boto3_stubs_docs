@@ -117,11 +117,17 @@ Exceptions:
 
 ### abort_document_version_upload
 
+Aborts the upload of the specified document version that was previously
+initiated by InitiateDocumentVersionUpload.
+
 Type annotations for `boto3.client("workdocs").abort_document_version_upload`
 method.
 
 Boto3 documentation:
 [WorkDocs.Client.abort_document_version_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.abort_document_version_upload)
+
+Arguments mapping described in
+[AbortDocumentVersionUploadRequestTypeDef](./type_defs.md#abortdocumentversionuploadrequesttypedef).
 
 Keyword-only arguments:
 
@@ -131,10 +137,15 @@ Keyword-only arguments:
 
 ### activate_user
 
+Activates the specified user.
+
 Type annotations for `boto3.client("workdocs").activate_user` method.
 
 Boto3 documentation:
 [WorkDocs.Client.activate_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.activate_user)
+
+Arguments mapping described in
+[ActivateUserRequestTypeDef](./type_defs.md#activateuserrequesttypedef).
 
 Keyword-only arguments:
 
@@ -142,15 +153,20 @@ Keyword-only arguments:
 - `AuthenticationToken`: `str`
 
 Returns
-[ActivateUserResponseTypeDef](./type_defs.md#activateuserresponsetypedef).
+[ActivateUserResponseResponseTypeDef](./type_defs.md#activateuserresponseresponsetypedef).
 
 ### add_resource_permissions
+
+Creates a set of permissions for the specified folder or document.
 
 Type annotations for `boto3.client("workdocs").add_resource_permissions`
 method.
 
 Boto3 documentation:
 [WorkDocs.Client.add_resource_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.add_resource_permissions)
+
+Arguments mapping described in
+[AddResourcePermissionsRequestTypeDef](./type_defs.md#addresourcepermissionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -163,9 +179,11 @@ Keyword-only arguments:
   [NotificationOptionsTypeDef](./type_defs.md#notificationoptionstypedef)
 
 Returns
-[AddResourcePermissionsResponseTypeDef](./type_defs.md#addresourcepermissionsresponsetypedef).
+[AddResourcePermissionsResponseResponseTypeDef](./type_defs.md#addresourcepermissionsresponseresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("workdocs").can_paginate` method.
 
@@ -180,10 +198,15 @@ Returns `bool`.
 
 ### create_comment
 
+Adds a new comment to the specified document version.
+
 Type annotations for `boto3.client("workdocs").create_comment` method.
 
 Boto3 documentation:
 [WorkDocs.Client.create_comment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_comment)
+
+Arguments mapping described in
+[CreateCommentRequestTypeDef](./type_defs.md#createcommentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -198,14 +221,20 @@ Keyword-only arguments:
 - `NotifyCollaborators`: `bool`
 
 Returns
-[CreateCommentResponseTypeDef](./type_defs.md#createcommentresponsetypedef).
+[CreateCommentResponseResponseTypeDef](./type_defs.md#createcommentresponseresponsetypedef).
 
 ### create_custom_metadata
+
+Adds one or more custom properties to the specified resource (a folder,
+document, or version).
 
 Type annotations for `boto3.client("workdocs").create_custom_metadata` method.
 
 Boto3 documentation:
 [WorkDocs.Client.create_custom_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_custom_metadata)
+
+Arguments mapping described in
+[CreateCustomMetadataRequestTypeDef](./type_defs.md#createcustommetadatarequesttypedef).
 
 Keyword-only arguments:
 
@@ -218,10 +247,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### create_folder
 
+Creates a folder with the specified name and parent folder.
+
 Type annotations for `boto3.client("workdocs").create_folder` method.
 
 Boto3 documentation:
 [WorkDocs.Client.create_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_folder)
+
+Arguments mapping described in
+[CreateFolderRequestTypeDef](./type_defs.md#createfolderrequesttypedef).
 
 Keyword-only arguments:
 
@@ -230,14 +264,23 @@ Keyword-only arguments:
 - `Name`: `str`
 
 Returns
-[CreateFolderResponseTypeDef](./type_defs.md#createfolderresponsetypedef).
+[CreateFolderResponseResponseTypeDef](./type_defs.md#createfolderresponseresponsetypedef).
 
 ### create_labels
+
+Adds the specified list of labels to the given resource (a document or folder)
+See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/workdocs-2016-05-01/CreateLabels>`\_
+**Request Syntax** response = client.create_labels( ResourceId='string',
+Labels=\[ ...
 
 Type annotations for `boto3.client("workdocs").create_labels` method.
 
 Boto3 documentation:
 [WorkDocs.Client.create_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_labels)
+
+Arguments mapping described in
+[CreateLabelsRequestTypeDef](./type_defs.md#createlabelsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -249,11 +292,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### create_notification_subscription
 
+Configure Amazon WorkDocs to use Amazon SNS notifications.
+
 Type annotations for
 `boto3.client("workdocs").create_notification_subscription` method.
 
 Boto3 documentation:
 [WorkDocs.Client.create_notification_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_notification_subscription)
+
+Arguments mapping described in
+[CreateNotificationSubscriptionRequestTypeDef](./type_defs.md#createnotificationsubscriptionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -266,14 +314,19 @@ Keyword-only arguments:
   [SubscriptionTypeType](./literals.md#subscriptiontypetype)) *(required)*
 
 Returns
-[CreateNotificationSubscriptionResponseTypeDef](./type_defs.md#createnotificationsubscriptionresponsetypedef).
+[CreateNotificationSubscriptionResponseResponseTypeDef](./type_defs.md#createnotificationsubscriptionresponseresponsetypedef).
 
 ### create_user
+
+Creates a user in a Simple AD or Microsoft AD directory.
 
 Type annotations for `boto3.client("workdocs").create_user` method.
 
 Boto3 documentation:
 [WorkDocs.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_user)
+
+Arguments mapping described in
+[CreateUserRequestTypeDef](./type_defs.md#createuserrequesttypedef).
 
 Keyword-only arguments:
 
@@ -288,14 +341,21 @@ Keyword-only arguments:
   [StorageRuleTypeTypeDef](./type_defs.md#storageruletypetypedef)
 - `AuthenticationToken`: `str`
 
-Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
+Returns
+[CreateUserResponseResponseTypeDef](./type_defs.md#createuserresponseresponsetypedef).
 
 ### deactivate_user
+
+Deactivates the specified user, which revokes the user's access to Amazon
+WorkDocs.
 
 Type annotations for `boto3.client("workdocs").deactivate_user` method.
 
 Boto3 documentation:
 [WorkDocs.Client.deactivate_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.deactivate_user)
+
+Arguments mapping described in
+[DeactivateUserRequestTypeDef](./type_defs.md#deactivateuserrequesttypedef).
 
 Keyword-only arguments:
 
@@ -304,10 +364,15 @@ Keyword-only arguments:
 
 ### delete_comment
 
+Deletes the specified comment from the document version.
+
 Type annotations for `boto3.client("workdocs").delete_comment` method.
 
 Boto3 documentation:
 [WorkDocs.Client.delete_comment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_comment)
+
+Arguments mapping described in
+[DeleteCommentRequestTypeDef](./type_defs.md#deletecommentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -318,10 +383,15 @@ Keyword-only arguments:
 
 ### delete_custom_metadata
 
+Deletes custom metadata from the specified resource.
+
 Type annotations for `boto3.client("workdocs").delete_custom_metadata` method.
 
 Boto3 documentation:
 [WorkDocs.Client.delete_custom_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_custom_metadata)
+
+Arguments mapping described in
+[DeleteCustomMetadataRequestTypeDef](./type_defs.md#deletecustommetadatarequesttypedef).
 
 Keyword-only arguments:
 
@@ -335,10 +405,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_document
 
+Permanently deletes the specified document and its associated metadata.
+
 Type annotations for `boto3.client("workdocs").delete_document` method.
 
 Boto3 documentation:
 [WorkDocs.Client.delete_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_document)
+
+Arguments mapping described in
+[DeleteDocumentRequestTypeDef](./type_defs.md#deletedocumentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -347,10 +422,15 @@ Keyword-only arguments:
 
 ### delete_folder
 
+Permanently deletes the specified folder and its contents.
+
 Type annotations for `boto3.client("workdocs").delete_folder` method.
 
 Boto3 documentation:
 [WorkDocs.Client.delete_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_folder)
+
+Arguments mapping described in
+[DeleteFolderRequestTypeDef](./type_defs.md#deletefolderrequesttypedef).
 
 Keyword-only arguments:
 
@@ -359,10 +439,15 @@ Keyword-only arguments:
 
 ### delete_folder_contents
 
+Deletes the contents of the specified folder.
+
 Type annotations for `boto3.client("workdocs").delete_folder_contents` method.
 
 Boto3 documentation:
 [WorkDocs.Client.delete_folder_contents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_folder_contents)
+
+Arguments mapping described in
+[DeleteFolderContentsRequestTypeDef](./type_defs.md#deletefoldercontentsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -371,10 +456,15 @@ Keyword-only arguments:
 
 ### delete_labels
 
+Deletes the specified list of labels from a resource.
+
 Type annotations for `boto3.client("workdocs").delete_labels` method.
 
 Boto3 documentation:
 [WorkDocs.Client.delete_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_labels)
+
+Arguments mapping described in
+[DeleteLabelsRequestTypeDef](./type_defs.md#deletelabelsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -387,11 +477,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_notification_subscription
 
+Deletes the specified subscription from the specified organization.
+
 Type annotations for
 `boto3.client("workdocs").delete_notification_subscription` method.
 
 Boto3 documentation:
 [WorkDocs.Client.delete_notification_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_notification_subscription)
+
+Arguments mapping described in
+[DeleteNotificationSubscriptionRequestTypeDef](./type_defs.md#deletenotificationsubscriptionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -400,10 +495,15 @@ Keyword-only arguments:
 
 ### delete_user
 
+Deletes the specified user from a Simple AD or Microsoft AD directory.
+
 Type annotations for `boto3.client("workdocs").delete_user` method.
 
 Boto3 documentation:
 [WorkDocs.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_user)
+
+Arguments mapping described in
+[DeleteUserRequestTypeDef](./type_defs.md#deleteuserrequesttypedef).
 
 Keyword-only arguments:
 
@@ -412,16 +512,21 @@ Keyword-only arguments:
 
 ### describe_activities
 
+Describes the user activities in a specified time period.
+
 Type annotations for `boto3.client("workdocs").describe_activities` method.
 
 Boto3 documentation:
 [WorkDocs.Client.describe_activities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_activities)
 
+Arguments mapping described in
+[DescribeActivitiesRequestTypeDef](./type_defs.md#describeactivitiesrequesttypedef).
+
 Keyword-only arguments:
 
 - `AuthenticationToken`: `str`
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
 - `OrganizationId`: `str`
 - `ActivityTypes`: `str`
 - `ResourceId`: `str`
@@ -431,14 +536,19 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeActivitiesResponseTypeDef](./type_defs.md#describeactivitiesresponsetypedef).
+[DescribeActivitiesResponseResponseTypeDef](./type_defs.md#describeactivitiesresponseresponsetypedef).
 
 ### describe_comments
+
+List all the comments for the specified document version.
 
 Type annotations for `boto3.client("workdocs").describe_comments` method.
 
 Boto3 documentation:
 [WorkDocs.Client.describe_comments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_comments)
+
+Arguments mapping described in
+[DescribeCommentsRequestTypeDef](./type_defs.md#describecommentsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -449,15 +559,20 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeCommentsResponseTypeDef](./type_defs.md#describecommentsresponsetypedef).
+[DescribeCommentsResponseResponseTypeDef](./type_defs.md#describecommentsresponseresponsetypedef).
 
 ### describe_document_versions
+
+Retrieves the document versions for the specified document.
 
 Type annotations for `boto3.client("workdocs").describe_document_versions`
 method.
 
 Boto3 documentation:
 [WorkDocs.Client.describe_document_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_document_versions)
+
+Arguments mapping described in
+[DescribeDocumentVersionsRequestTypeDef](./type_defs.md#describedocumentversionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -469,15 +584,21 @@ Keyword-only arguments:
 - `Fields`: `str`
 
 Returns
-[DescribeDocumentVersionsResponseTypeDef](./type_defs.md#describedocumentversionsresponsetypedef).
+[DescribeDocumentVersionsResponseResponseTypeDef](./type_defs.md#describedocumentversionsresponseresponsetypedef).
 
 ### describe_folder_contents
+
+Describes the contents of the specified folder, including its documents and
+subfolders.
 
 Type annotations for `boto3.client("workdocs").describe_folder_contents`
 method.
 
 Boto3 documentation:
 [WorkDocs.Client.describe_folder_contents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_folder_contents)
+
+Arguments mapping described in
+[DescribeFolderContentsRequestTypeDef](./type_defs.md#describefoldercontentsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -491,14 +612,19 @@ Keyword-only arguments:
 - `Include`: `str`
 
 Returns
-[DescribeFolderContentsResponseTypeDef](./type_defs.md#describefoldercontentsresponsetypedef).
+[DescribeFolderContentsResponseResponseTypeDef](./type_defs.md#describefoldercontentsresponseresponsetypedef).
 
 ### describe_groups
+
+Describes the groups specified by the query.
 
 Type annotations for `boto3.client("workdocs").describe_groups` method.
 
 Boto3 documentation:
 [WorkDocs.Client.describe_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_groups)
+
+Arguments mapping described in
+[DescribeGroupsRequestTypeDef](./type_defs.md#describegroupsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -509,15 +635,20 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeGroupsResponseTypeDef](./type_defs.md#describegroupsresponsetypedef).
+[DescribeGroupsResponseResponseTypeDef](./type_defs.md#describegroupsresponseresponsetypedef).
 
 ### describe_notification_subscriptions
+
+Lists the specified notification subscriptions.
 
 Type annotations for
 `boto3.client("workdocs").describe_notification_subscriptions` method.
 
 Boto3 documentation:
 [WorkDocs.Client.describe_notification_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_notification_subscriptions)
+
+Arguments mapping described in
+[DescribeNotificationSubscriptionsRequestTypeDef](./type_defs.md#describenotificationsubscriptionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -526,15 +657,20 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeNotificationSubscriptionsResponseTypeDef](./type_defs.md#describenotificationsubscriptionsresponsetypedef).
+[DescribeNotificationSubscriptionsResponseResponseTypeDef](./type_defs.md#describenotificationsubscriptionsresponseresponsetypedef).
 
 ### describe_resource_permissions
+
+Describes the permissions of a specified resource.
 
 Type annotations for `boto3.client("workdocs").describe_resource_permissions`
 method.
 
 Boto3 documentation:
 [WorkDocs.Client.describe_resource_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_resource_permissions)
+
+Arguments mapping described in
+[DescribeResourcePermissionsRequestTypeDef](./type_defs.md#describeresourcepermissionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -545,14 +681,20 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeResourcePermissionsResponseTypeDef](./type_defs.md#describeresourcepermissionsresponsetypedef).
+[DescribeResourcePermissionsResponseResponseTypeDef](./type_defs.md#describeresourcepermissionsresponseresponsetypedef).
 
 ### describe_root_folders
+
+Describes the current user's special folders; the `RootFolder` and the
+`RecycleBin`.
 
 Type annotations for `boto3.client("workdocs").describe_root_folders` method.
 
 Boto3 documentation:
 [WorkDocs.Client.describe_root_folders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_root_folders)
+
+Arguments mapping described in
+[DescribeRootFoldersRequestTypeDef](./type_defs.md#describerootfoldersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -561,14 +703,19 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeRootFoldersResponseTypeDef](./type_defs.md#describerootfoldersresponsetypedef).
+[DescribeRootFoldersResponseResponseTypeDef](./type_defs.md#describerootfoldersresponseresponsetypedef).
 
 ### describe_users
+
+Describes the specified users.
 
 Type annotations for `boto3.client("workdocs").describe_users` method.
 
 Boto3 documentation:
 [WorkDocs.Client.describe_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_users)
+
+Arguments mapping described in
+[DescribeUsersRequestTypeDef](./type_defs.md#describeusersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -584,9 +731,11 @@ Keyword-only arguments:
 - `Fields`: `str`
 
 Returns
-[DescribeUsersResponseTypeDef](./type_defs.md#describeusersresponsetypedef).
+[DescribeUsersResponseResponseTypeDef](./type_defs.md#describeusersresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("workdocs").generate_presigned_url` method.
 
@@ -604,24 +753,35 @@ Returns `str`.
 
 ### get_current_user
 
+Retrieves details of the current user for whom the authentication token was
+generated.
+
 Type annotations for `boto3.client("workdocs").get_current_user` method.
 
 Boto3 documentation:
 [WorkDocs.Client.get_current_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_current_user)
+
+Arguments mapping described in
+[GetCurrentUserRequestTypeDef](./type_defs.md#getcurrentuserrequesttypedef).
 
 Keyword-only arguments:
 
 - `AuthenticationToken`: `str` *(required)*
 
 Returns
-[GetCurrentUserResponseTypeDef](./type_defs.md#getcurrentuserresponsetypedef).
+[GetCurrentUserResponseResponseTypeDef](./type_defs.md#getcurrentuserresponseresponsetypedef).
 
 ### get_document
+
+Retrieves details of a document.
 
 Type annotations for `boto3.client("workdocs").get_document` method.
 
 Boto3 documentation:
 [WorkDocs.Client.get_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_document)
+
+Arguments mapping described in
+[GetDocumentRequestTypeDef](./type_defs.md#getdocumentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -630,14 +790,20 @@ Keyword-only arguments:
 - `IncludeCustomMetadata`: `bool`
 
 Returns
-[GetDocumentResponseTypeDef](./type_defs.md#getdocumentresponsetypedef).
+[GetDocumentResponseResponseTypeDef](./type_defs.md#getdocumentresponseresponsetypedef).
 
 ### get_document_path
+
+Retrieves the path information (the hierarchy from the root folder) for the
+requested document.
 
 Type annotations for `boto3.client("workdocs").get_document_path` method.
 
 Boto3 documentation:
 [WorkDocs.Client.get_document_path](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_document_path)
+
+Arguments mapping described in
+[GetDocumentPathRequestTypeDef](./type_defs.md#getdocumentpathrequesttypedef).
 
 Keyword-only arguments:
 
@@ -648,14 +814,19 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[GetDocumentPathResponseTypeDef](./type_defs.md#getdocumentpathresponsetypedef).
+[GetDocumentPathResponseResponseTypeDef](./type_defs.md#getdocumentpathresponseresponsetypedef).
 
 ### get_document_version
+
+Retrieves version metadata for the specified document.
 
 Type annotations for `boto3.client("workdocs").get_document_version` method.
 
 Boto3 documentation:
 [WorkDocs.Client.get_document_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_document_version)
+
+Arguments mapping described in
+[GetDocumentVersionRequestTypeDef](./type_defs.md#getdocumentversionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -666,14 +837,19 @@ Keyword-only arguments:
 - `IncludeCustomMetadata`: `bool`
 
 Returns
-[GetDocumentVersionResponseTypeDef](./type_defs.md#getdocumentversionresponsetypedef).
+[GetDocumentVersionResponseResponseTypeDef](./type_defs.md#getdocumentversionresponseresponsetypedef).
 
 ### get_folder
+
+Retrieves the metadata of the specified folder.
 
 Type annotations for `boto3.client("workdocs").get_folder` method.
 
 Boto3 documentation:
 [WorkDocs.Client.get_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_folder)
+
+Arguments mapping described in
+[GetFolderRequestTypeDef](./type_defs.md#getfolderrequesttypedef).
 
 Keyword-only arguments:
 
@@ -681,14 +857,21 @@ Keyword-only arguments:
 - `AuthenticationToken`: `str`
 - `IncludeCustomMetadata`: `bool`
 
-Returns [GetFolderResponseTypeDef](./type_defs.md#getfolderresponsetypedef).
+Returns
+[GetFolderResponseResponseTypeDef](./type_defs.md#getfolderresponseresponsetypedef).
 
 ### get_folder_path
+
+Retrieves the path information (the hierarchy from the root folder) for the
+specified folder.
 
 Type annotations for `boto3.client("workdocs").get_folder_path` method.
 
 Boto3 documentation:
 [WorkDocs.Client.get_folder_path](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_folder_path)
+
+Arguments mapping described in
+[GetFolderPathRequestTypeDef](./type_defs.md#getfolderpathrequesttypedef).
 
 Keyword-only arguments:
 
@@ -699,14 +882,19 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[GetFolderPathResponseTypeDef](./type_defs.md#getfolderpathresponsetypedef).
+[GetFolderPathResponseResponseTypeDef](./type_defs.md#getfolderpathresponseresponsetypedef).
 
 ### get_resources
+
+Retrieves a collection of resources, including folders and documents.
 
 Type annotations for `boto3.client("workdocs").get_resources` method.
 
 Boto3 documentation:
 [WorkDocs.Client.get_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_resources)
+
+Arguments mapping described in
+[GetResourcesRequestTypeDef](./type_defs.md#getresourcesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -718,9 +906,11 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[GetResourcesResponseTypeDef](./type_defs.md#getresourcesresponsetypedef).
+[GetResourcesResponseResponseTypeDef](./type_defs.md#getresourcesresponseresponsetypedef).
 
 ### initiate_document_version_upload
+
+Creates a new document object and version object.
 
 Type annotations for
 `boto3.client("workdocs").initiate_document_version_upload` method.
@@ -728,27 +918,35 @@ Type annotations for
 Boto3 documentation:
 [WorkDocs.Client.initiate_document_version_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.initiate_document_version_upload)
 
+Arguments mapping described in
+[InitiateDocumentVersionUploadRequestTypeDef](./type_defs.md#initiatedocumentversionuploadrequesttypedef).
+
 Keyword-only arguments:
 
 - `ParentFolderId`: `str` *(required)*
 - `AuthenticationToken`: `str`
 - `Id`: `str`
 - `Name`: `str`
-- `ContentCreatedTimestamp`: `datetime`
-- `ContentModifiedTimestamp`: `datetime`
+- `ContentCreatedTimestamp`: `Union`\[`datetime`, `str`\]
+- `ContentModifiedTimestamp`: `Union`\[`datetime`, `str`\]
 - `ContentType`: `str`
 - `DocumentSizeInBytes`: `int`
 
 Returns
-[InitiateDocumentVersionUploadResponseTypeDef](./type_defs.md#initiatedocumentversionuploadresponsetypedef).
+[InitiateDocumentVersionUploadResponseResponseTypeDef](./type_defs.md#initiatedocumentversionuploadresponseresponsetypedef).
 
 ### remove_all_resource_permissions
+
+Removes all the permissions from the specified resource.
 
 Type annotations for `boto3.client("workdocs").remove_all_resource_permissions`
 method.
 
 Boto3 documentation:
 [WorkDocs.Client.remove_all_resource_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.remove_all_resource_permissions)
+
+Arguments mapping described in
+[RemoveAllResourcePermissionsRequestTypeDef](./type_defs.md#removeallresourcepermissionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -757,11 +955,16 @@ Keyword-only arguments:
 
 ### remove_resource_permission
 
+Removes the permission for the specified principal from the specified resource.
+
 Type annotations for `boto3.client("workdocs").remove_resource_permission`
 method.
 
 Boto3 documentation:
 [WorkDocs.Client.remove_resource_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.remove_resource_permission)
+
+Arguments mapping described in
+[RemoveResourcePermissionRequestTypeDef](./type_defs.md#removeresourcepermissionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -772,10 +975,15 @@ Keyword-only arguments:
 
 ### update_document
 
+Updates the specified attributes of a document.
+
 Type annotations for `boto3.client("workdocs").update_document` method.
 
 Boto3 documentation:
 [WorkDocs.Client.update_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_document)
+
+Arguments mapping described in
+[UpdateDocumentRequestTypeDef](./type_defs.md#updatedocumentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -787,10 +995,15 @@ Keyword-only arguments:
 
 ### update_document_version
 
+Changes the status of the document version to ACTIVE.
+
 Type annotations for `boto3.client("workdocs").update_document_version` method.
 
 Boto3 documentation:
 [WorkDocs.Client.update_document_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_document_version)
+
+Arguments mapping described in
+[UpdateDocumentVersionRequestTypeDef](./type_defs.md#updatedocumentversionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -802,10 +1015,15 @@ Keyword-only arguments:
 
 ### update_folder
 
+Updates the specified attributes of the specified folder.
+
 Type annotations for `boto3.client("workdocs").update_folder` method.
 
 Boto3 documentation:
 [WorkDocs.Client.update_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_folder)
+
+Arguments mapping described in
+[UpdateFolderRequestTypeDef](./type_defs.md#updatefolderrequesttypedef).
 
 Keyword-only arguments:
 
@@ -817,10 +1035,16 @@ Keyword-only arguments:
 
 ### update_user
 
+Updates the specified attributes of the specified user, and grants or revokes
+administrative privileges to the Amazon WorkDocs site.
+
 Type annotations for `boto3.client("workdocs").update_user` method.
 
 Boto3 documentation:
 [WorkDocs.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_user)
+
+Arguments mapping described in
+[UpdateUserRequestTypeDef](./type_defs.md#updateuserrequesttypedef).
 
 Keyword-only arguments:
 
@@ -836,7 +1060,8 @@ Keyword-only arguments:
 - `GrantPoweruserPrivileges`:
   [BooleanEnumTypeType](./literals.md#booleanenumtypetype)
 
-Returns [UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef).
+Returns
+[UpdateUserResponseResponseTypeDef](./type_defs.md#updateuserresponseresponsetypedef).
 
 ### get_paginator
 

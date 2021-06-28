@@ -64,6 +64,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("healthlake").can_paginate` method.
 
 Boto3 documentation:
@@ -77,10 +79,15 @@ Returns `bool`.
 
 ### create_fhir_datastore
 
+Creates a Data Store that can ingest and export FHIR formatted data.
+
 Type annotations for `boto3.client("healthlake").create_fhir_datastore` method.
 
 Boto3 documentation:
 [HealthLake.Client.create_fhir_datastore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.create_fhir_datastore)
+
+Arguments mapping described in
+[CreateFHIRDatastoreRequestTypeDef](./type_defs.md#createfhirdatastorerequesttypedef).
 
 Keyword-only arguments:
 
@@ -92,23 +99,32 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns
-[CreateFHIRDatastoreResponseTypeDef](./type_defs.md#createfhirdatastoreresponsetypedef).
+[CreateFHIRDatastoreResponseResponseTypeDef](./type_defs.md#createfhirdatastoreresponseresponsetypedef).
 
 ### delete_fhir_datastore
+
+Deletes a Data Store.
 
 Type annotations for `boto3.client("healthlake").delete_fhir_datastore` method.
 
 Boto3 documentation:
 [HealthLake.Client.delete_fhir_datastore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.delete_fhir_datastore)
 
+Arguments mapping described in
+[DeleteFHIRDatastoreRequestTypeDef](./type_defs.md#deletefhirdatastorerequesttypedef).
+
 Keyword-only arguments:
 
 - `DatastoreId`: `str`
 
 Returns
-[DeleteFHIRDatastoreResponseTypeDef](./type_defs.md#deletefhirdatastoreresponsetypedef).
+[DeleteFHIRDatastoreResponseResponseTypeDef](./type_defs.md#deletefhirdatastoreresponseresponsetypedef).
 
 ### describe_fhir_datastore
+
+Gets the properties associated with the FHIR Data Store, including the Data
+Store ID, Data Store ARN, Data Store name, Data Store status, created at, Data
+Store type version, and Data Store endpoint.
 
 Type annotations for `boto3.client("healthlake").describe_fhir_datastore`
 method.
@@ -116,14 +132,20 @@ method.
 Boto3 documentation:
 [HealthLake.Client.describe_fhir_datastore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.describe_fhir_datastore)
 
+Arguments mapping described in
+[DescribeFHIRDatastoreRequestTypeDef](./type_defs.md#describefhirdatastorerequesttypedef).
+
 Keyword-only arguments:
 
 - `DatastoreId`: `str`
 
 Returns
-[DescribeFHIRDatastoreResponseTypeDef](./type_defs.md#describefhirdatastoreresponsetypedef).
+[DescribeFHIRDatastoreResponseResponseTypeDef](./type_defs.md#describefhirdatastoreresponseresponsetypedef).
 
 ### describe_fhir_export_job
+
+Displays the properties of a FHIR export job, including the ID, ARN, name, and
+the status of the job.
 
 Type annotations for `boto3.client("healthlake").describe_fhir_export_job`
 method.
@@ -131,15 +153,21 @@ method.
 Boto3 documentation:
 [HealthLake.Client.describe_fhir_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.describe_fhir_export_job)
 
+Arguments mapping described in
+[DescribeFHIRExportJobRequestTypeDef](./type_defs.md#describefhirexportjobrequesttypedef).
+
 Keyword-only arguments:
 
 - `DatastoreId`: `str` *(required)*
 - `JobId`: `str` *(required)*
 
 Returns
-[DescribeFHIRExportJobResponseTypeDef](./type_defs.md#describefhirexportjobresponsetypedef).
+[DescribeFHIRExportJobResponseResponseTypeDef](./type_defs.md#describefhirexportjobresponseresponsetypedef).
 
 ### describe_fhir_import_job
+
+Displays the properties of a FHIR import job, including the ID, ARN, name, and
+the status of the job.
 
 Type annotations for `boto3.client("healthlake").describe_fhir_import_job`
 method.
@@ -147,15 +175,20 @@ method.
 Boto3 documentation:
 [HealthLake.Client.describe_fhir_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.describe_fhir_import_job)
 
+Arguments mapping described in
+[DescribeFHIRImportJobRequestTypeDef](./type_defs.md#describefhirimportjobrequesttypedef).
+
 Keyword-only arguments:
 
 - `DatastoreId`: `str` *(required)*
 - `JobId`: `str` *(required)*
 
 Returns
-[DescribeFHIRImportJobResponseTypeDef](./type_defs.md#describefhirimportjobresponsetypedef).
+[DescribeFHIRImportJobResponseResponseTypeDef](./type_defs.md#describefhirimportjobresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("healthlake").generate_presigned_url`
 method.
@@ -174,10 +207,16 @@ Returns `str`.
 
 ### list_fhir_datastores
 
+Lists all FHIR Data Stores that are in the user’s account, regardless of Data
+Store status.
+
 Type annotations for `boto3.client("healthlake").list_fhir_datastores` method.
 
 Boto3 documentation:
 [HealthLake.Client.list_fhir_datastores](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.list_fhir_datastores)
+
+Arguments mapping described in
+[ListFHIRDatastoresRequestTypeDef](./type_defs.md#listfhirdatastoresrequesttypedef).
 
 Keyword-only arguments:
 
@@ -186,14 +225,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListFHIRDatastoresResponseTypeDef](./type_defs.md#listfhirdatastoresresponsetypedef).
+[ListFHIRDatastoresResponseResponseTypeDef](./type_defs.md#listfhirdatastoresresponseresponsetypedef).
 
 ### start_fhir_export_job
+
+Begins a FHIR export job.
 
 Type annotations for `boto3.client("healthlake").start_fhir_export_job` method.
 
 Boto3 documentation:
 [HealthLake.Client.start_fhir_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.start_fhir_export_job)
+
+Arguments mapping described in
+[StartFHIRExportJobRequestTypeDef](./type_defs.md#startfhirexportjobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -206,14 +250,19 @@ Keyword-only arguments:
 - `JobName`: `str`
 
 Returns
-[StartFHIRExportJobResponseTypeDef](./type_defs.md#startfhirexportjobresponsetypedef).
+[StartFHIRExportJobResponseResponseTypeDef](./type_defs.md#startfhirexportjobresponseresponsetypedef).
 
 ### start_fhir_import_job
+
+Begins a FHIR Import job.
 
 Type annotations for `boto3.client("healthlake").start_fhir_import_job` method.
 
 Boto3 documentation:
 [HealthLake.Client.start_fhir_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.start_fhir_import_job)
+
+Arguments mapping described in
+[StartFHIRImportJobRequestTypeDef](./type_defs.md#startfhirimportjobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -225,4 +274,4 @@ Keyword-only arguments:
 - `JobName`: `str`
 
 Returns
-[StartFHIRImportJobResponseTypeDef](./type_defs.md#startfhirimportjobresponsetypedef).
+[StartFHIRImportJobResponseResponseTypeDef](./type_defs.md#startfhirimportjobresponseresponsetypedef).

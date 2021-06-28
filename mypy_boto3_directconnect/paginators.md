@@ -40,7 +40,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDirectConnectGatewayAssociationsPaginator.paginate` returns
-`Iterator`\[[DescribeDirectConnectGatewayAssociationsResultTypeDef](./type_defs.md#describedirectconnectgatewayassociationsresulttypedef)\].
+`Iterator`\[[DescribeDirectConnectGatewayAssociationsResultResponseTypeDef](./type_defs.md#describedirectconnectgatewayassociationsresultresponsetypedef)\].
 
 ## DescribeDirectConnectGatewayAttachmentsPaginator
 
@@ -68,7 +68,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDirectConnectGatewayAttachmentsPaginator.paginate` returns
-`Iterator`\[[DescribeDirectConnectGatewayAttachmentsResultTypeDef](./type_defs.md#describedirectconnectgatewayattachmentsresulttypedef)\].
+`Iterator`\[[DescribeDirectConnectGatewayAttachmentsResultResponseTypeDef](./type_defs.md#describedirectconnectgatewayattachmentsresultresponsetypedef)\].
 
 ## DescribeDirectConnectGatewaysPaginator
 
@@ -94,4 +94,4 @@ Arguments for `DescribeDirectConnectGatewaysPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDirectConnectGatewaysPaginator.paginate` returns
-`Iterator`\[[DescribeDirectConnectGatewaysResultTypeDef](./type_defs.md#describedirectconnectgatewaysresulttypedef)\].
+`Iterator`\[[DescribeDirectConnectGatewaysResultResponseTypeDef](./type_defs.md#describedirectconnectgatewaysresultresponsetypedef)\].

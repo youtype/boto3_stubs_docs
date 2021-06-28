@@ -8,31 +8,51 @@ type annotations stubs module
 [mypy_boto3_marketplace_catalog](https://pypi.org/project/mypy-boto3-marketplace-catalog/).
 
 - [Typed dictionaries for boto3 MarketplaceCatalog module](#typed-dictionaries-for-boto3-marketplacecatalog-module)
-  - [CancelChangeSetResponseTypeDef](#cancelchangesetresponsetypedef)
+  - [CancelChangeSetRequestTypeDef](#cancelchangesetrequesttypedef)
+  - [CancelChangeSetResponseResponseTypeDef](#cancelchangesetresponseresponsetypedef)
   - [ChangeSetSummaryListItemTypeDef](#changesetsummarylistitemtypedef)
   - [ChangeSummaryTypeDef](#changesummarytypedef)
   - [ChangeTypeDef](#changetypedef)
-  - [DescribeChangeSetResponseTypeDef](#describechangesetresponsetypedef)
-  - [DescribeEntityResponseTypeDef](#describeentityresponsetypedef)
+  - [DescribeChangeSetRequestTypeDef](#describechangesetrequesttypedef)
+  - [DescribeChangeSetResponseResponseTypeDef](#describechangesetresponseresponsetypedef)
+  - [DescribeEntityRequestTypeDef](#describeentityrequesttypedef)
+  - [DescribeEntityResponseResponseTypeDef](#describeentityresponseresponsetypedef)
   - [EntitySummaryTypeDef](#entitysummarytypedef)
   - [EntityTypeDef](#entitytypedef)
   - [ErrorDetailTypeDef](#errordetailtypedef)
   - [FilterTypeDef](#filtertypedef)
-  - [ListChangeSetsResponseTypeDef](#listchangesetsresponsetypedef)
-  - [ListEntitiesResponseTypeDef](#listentitiesresponsetypedef)
+  - [ListChangeSetsRequestTypeDef](#listchangesetsrequesttypedef)
+  - [ListChangeSetsResponseResponseTypeDef](#listchangesetsresponseresponsetypedef)
+  - [ListEntitiesRequestTypeDef](#listentitiesrequesttypedef)
+  - [ListEntitiesResponseResponseTypeDef](#listentitiesresponseresponsetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SortTypeDef](#sorttypedef)
-  - [StartChangeSetResponseTypeDef](#startchangesetresponsetypedef)
+  - [StartChangeSetRequestTypeDef](#startchangesetrequesttypedef)
+  - [StartChangeSetResponseResponseTypeDef](#startchangesetresponseresponsetypedef)
 
-## CancelChangeSetResponseTypeDef
+## CancelChangeSetRequestTypeDef
 
 ```python
-from mypy_boto3_marketplace_catalog.type_defs import CancelChangeSetResponseTypeDef
+from mypy_boto3_marketplace_catalog.type_defs import CancelChangeSetRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Catalog`: `str`
+- `ChangeSetId`: `str`
+
+## CancelChangeSetResponseResponseTypeDef
+
+```python
+from mypy_boto3_marketplace_catalog.type_defs import CancelChangeSetResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ChangeSetId`: `str`
 - `ChangeSetArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ChangeSetSummaryListItemTypeDef
 
@@ -82,13 +102,24 @@ Optional fields:
 
 - `ChangeName`: `str`
 
-## DescribeChangeSetResponseTypeDef
+## DescribeChangeSetRequestTypeDef
 
 ```python
-from mypy_boto3_marketplace_catalog.type_defs import DescribeChangeSetResponseTypeDef
+from mypy_boto3_marketplace_catalog.type_defs import DescribeChangeSetRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Catalog`: `str`
+- `ChangeSetId`: `str`
+
+## DescribeChangeSetResponseResponseTypeDef
+
+```python
+from mypy_boto3_marketplace_catalog.type_defs import DescribeChangeSetResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ChangeSetId`: `str`
 - `ChangeSetArn`: `str`
@@ -100,20 +131,35 @@ Optional fields:
 - `FailureDescription`: `str`
 - `ChangeSet`:
   `List`\[[ChangeSummaryTypeDef](./type_defs.md#changesummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEntityResponseTypeDef
+## DescribeEntityRequestTypeDef
 
 ```python
-from mypy_boto3_marketplace_catalog.type_defs import DescribeEntityResponseTypeDef
+from mypy_boto3_marketplace_catalog.type_defs import DescribeEntityRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Catalog`: `str`
+- `EntityId`: `str`
+
+## DescribeEntityResponseResponseTypeDef
+
+```python
+from mypy_boto3_marketplace_catalog.type_defs import DescribeEntityResponseResponseTypeDef
+```
+
+Required fields:
 
 - `EntityType`: `str`
 - `EntityIdentifier`: `str`
 - `EntityArn`: `str`
 - `LastModifiedDate`: `str`
 - `Details`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## EntitySummaryTypeDef
 
@@ -166,29 +212,82 @@ Optional fields:
 - `Name`: `str`
 - `ValueList`: `List`\[`str`\]
 
-## ListChangeSetsResponseTypeDef
+## ListChangeSetsRequestTypeDef
 
 ```python
-from mypy_boto3_marketplace_catalog.type_defs import ListChangeSetsResponseTypeDef
+from mypy_boto3_marketplace_catalog.type_defs import ListChangeSetsRequestTypeDef
 ```
 
+Required fields:
+
+- `Catalog`: `str`
+
 Optional fields:
+
+- `FilterList`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Sort`: [SortTypeDef](./type_defs.md#sorttypedef)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListChangeSetsResponseResponseTypeDef
+
+```python
+from mypy_boto3_marketplace_catalog.type_defs import ListChangeSetsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ChangeSetSummaryList`:
   `List`\[[ChangeSetSummaryListItemTypeDef](./type_defs.md#changesetsummarylistitemtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListEntitiesResponseTypeDef
+## ListEntitiesRequestTypeDef
 
 ```python
-from mypy_boto3_marketplace_catalog.type_defs import ListEntitiesResponseTypeDef
+from mypy_boto3_marketplace_catalog.type_defs import ListEntitiesRequestTypeDef
 ```
 
+Required fields:
+
+- `Catalog`: `str`
+- `EntityType`: `str`
+
 Optional fields:
+
+- `FilterList`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Sort`: [SortTypeDef](./type_defs.md#sorttypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListEntitiesResponseResponseTypeDef
+
+```python
+from mypy_boto3_marketplace_catalog.type_defs import ListEntitiesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `EntitySummaryList`:
   `List`\[[EntitySummaryTypeDef](./type_defs.md#entitysummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_marketplace_catalog.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## SortTypeDef
 
@@ -201,13 +300,31 @@ Optional fields:
 - `SortBy`: `str`
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
-## StartChangeSetResponseTypeDef
+## StartChangeSetRequestTypeDef
 
 ```python
-from mypy_boto3_marketplace_catalog.type_defs import StartChangeSetResponseTypeDef
+from mypy_boto3_marketplace_catalog.type_defs import StartChangeSetRequestTypeDef
 ```
+
+Required fields:
+
+- `Catalog`: `str`
+- `ChangeSet`: `List`\[[ChangeTypeDef](./type_defs.md#changetypedef)\]
 
 Optional fields:
 
+- `ChangeSetName`: `str`
+- `ClientRequestToken`: `str`
+
+## StartChangeSetResponseResponseTypeDef
+
+```python
+from mypy_boto3_marketplace_catalog.type_defs import StartChangeSetResponseResponseTypeDef
+```
+
+Required fields:
+
 - `ChangeSetId`: `str`
 - `ChangeSetArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

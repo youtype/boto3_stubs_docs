@@ -26,7 +26,7 @@ def get_cluster_running_waiter() -> ClusterRunningWaiter:
 ```
 
 Boto3 documentation:
-[EMR.Waiter.cluster_running](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Waiter.cluster_running)
+[EMR.Waiter.cluster_running](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Waiter.ClusterRunning)
 
 Arguments for `ClusterRunningWaiter.wait` method:
 
@@ -47,7 +47,7 @@ def get_cluster_terminated_waiter() -> ClusterTerminatedWaiter:
 ```
 
 Boto3 documentation:
-[EMR.Waiter.cluster_terminated](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Waiter.cluster_terminated)
+[EMR.Waiter.cluster_terminated](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Waiter.ClusterTerminated)
 
 Arguments for `ClusterTerminatedWaiter.wait` method:
 
@@ -68,7 +68,7 @@ def get_step_complete_waiter() -> StepCompleteWaiter:
 ```
 
 Boto3 documentation:
-[EMR.Waiter.step_complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Waiter.step_complete)
+[EMR.Waiter.step_complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Waiter.StepComplete)
 
 Arguments for `StepCompleteWaiter.wait` method:
 

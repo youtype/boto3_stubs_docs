@@ -37,7 +37,7 @@ Arguments for `DescribeAddressesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAddressesPaginator.paginate` returns
-`Iterator`\[[DescribeAddressesResultTypeDef](./type_defs.md#describeaddressesresulttypedef)\].
+`Iterator`\[[DescribeAddressesResultResponseTypeDef](./type_defs.md#describeaddressesresultresponsetypedef)\].
 
 ## ListClusterJobsPaginator
 
@@ -63,7 +63,7 @@ Arguments for `ListClusterJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListClusterJobsPaginator.paginate` returns
-`Iterator`\[[ListClusterJobsResultTypeDef](./type_defs.md#listclusterjobsresulttypedef)\].
+`Iterator`\[[ListClusterJobsResultResponseTypeDef](./type_defs.md#listclusterjobsresultresponsetypedef)\].
 
 ## ListClustersPaginator
 
@@ -87,7 +87,7 @@ Arguments for `ListClustersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListClustersPaginator.paginate` returns
-`Iterator`\[[ListClustersResultTypeDef](./type_defs.md#listclustersresulttypedef)\].
+`Iterator`\[[ListClustersResultResponseTypeDef](./type_defs.md#listclustersresultresponsetypedef)\].
 
 ## ListCompatibleImagesPaginator
 
@@ -112,7 +112,7 @@ Arguments for `ListCompatibleImagesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCompatibleImagesPaginator.paginate` returns
-`Iterator`\[[ListCompatibleImagesResultTypeDef](./type_defs.md#listcompatibleimagesresulttypedef)\].
+`Iterator`\[[ListCompatibleImagesResultResponseTypeDef](./type_defs.md#listcompatibleimagesresultresponsetypedef)\].
 
 ## ListJobsPaginator
 
@@ -136,4 +136,4 @@ Arguments for `ListJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobsPaginator.paginate` returns
-`Iterator`\[[ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef)\].
+`Iterator`\[[ListJobsResultResponseTypeDef](./type_defs.md#listjobsresultresponsetypedef)\].

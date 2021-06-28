@@ -8,32 +8,74 @@ type annotations stubs module
 [mypy_boto3_cur](https://pypi.org/project/mypy-boto3-cur/).
 
 - [Typed dictionaries for boto3 CostandUsageReportService module](#typed-dictionaries-for-boto3-costandusagereportservice-module)
-  - [DeleteReportDefinitionResponseTypeDef](#deletereportdefinitionresponsetypedef)
-  - [DescribeReportDefinitionsResponseTypeDef](#describereportdefinitionsresponsetypedef)
+  - [DeleteReportDefinitionRequestTypeDef](#deletereportdefinitionrequesttypedef)
+  - [DeleteReportDefinitionResponseResponseTypeDef](#deletereportdefinitionresponseresponsetypedef)
+  - [DescribeReportDefinitionsRequestTypeDef](#describereportdefinitionsrequesttypedef)
+  - [DescribeReportDefinitionsResponseResponseTypeDef](#describereportdefinitionsresponseresponsetypedef)
+  - [ModifyReportDefinitionRequestTypeDef](#modifyreportdefinitionrequesttypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
+  - [PutReportDefinitionRequestTypeDef](#putreportdefinitionrequesttypedef)
   - [ReportDefinitionTypeDef](#reportdefinitiontypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
 
-## DeleteReportDefinitionResponseTypeDef
+## DeleteReportDefinitionRequestTypeDef
 
 ```python
-from mypy_boto3_cur.type_defs import DeleteReportDefinitionResponseTypeDef
+from mypy_boto3_cur.type_defs import DeleteReportDefinitionRequestTypeDef
 ```
 
 Optional fields:
+
+- `ReportName`: `str`
+
+## DeleteReportDefinitionResponseResponseTypeDef
+
+```python
+from mypy_boto3_cur.type_defs import DeleteReportDefinitionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResponseMessage`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeReportDefinitionsResponseTypeDef
+## DescribeReportDefinitionsRequestTypeDef
 
 ```python
-from mypy_boto3_cur.type_defs import DescribeReportDefinitionsResponseTypeDef
+from mypy_boto3_cur.type_defs import DescribeReportDefinitionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeReportDefinitionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_cur.type_defs import DescribeReportDefinitionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ReportDefinitions`:
   `List`\[[ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ModifyReportDefinitionRequestTypeDef
+
+```python
+from mypy_boto3_cur.type_defs import ModifyReportDefinitionRequestTypeDef
+```
+
+Required fields:
+
+- `ReportName`: `str`
+- `ReportDefinition`:
+  [ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -46,6 +88,17 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+## PutReportDefinitionRequestTypeDef
+
+```python
+from mypy_boto3_cur.type_defs import PutReportDefinitionRequestTypeDef
+```
+
+Required fields:
+
+- `ReportDefinition`:
+  [ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef)
 
 ## ReportDefinitionTypeDef
 
@@ -73,3 +126,17 @@ Optional fields:
 - `ReportVersioning`:
   [ReportVersioningType](./literals.md#reportversioningtype)
 - `BillingViewArn`: `str`
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_cur.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`

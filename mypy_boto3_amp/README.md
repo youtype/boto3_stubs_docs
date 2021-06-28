@@ -88,13 +88,19 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_amp.type_defs import CreateWorkspaceResponseTypeDef, ...
+from mypy_boto3_amp.type_defs import CreateWorkspaceRequestTypeDef, ...
 ```
 
-- [CreateWorkspaceResponseTypeDef](./type_defs.md#createworkspaceresponsetypedef)
-- [DescribeWorkspaceResponseTypeDef](./type_defs.md#describeworkspaceresponsetypedef)
-- [ListWorkspacesResponseTypeDef](./type_defs.md#listworkspacesresponsetypedef)
+- [CreateWorkspaceRequestTypeDef](./type_defs.md#createworkspacerequesttypedef)
+- [CreateWorkspaceResponseResponseTypeDef](./type_defs.md#createworkspaceresponseresponsetypedef)
+- [DeleteWorkspaceRequestTypeDef](./type_defs.md#deleteworkspacerequesttypedef)
+- [DescribeWorkspaceRequestTypeDef](./type_defs.md#describeworkspacerequesttypedef)
+- [DescribeWorkspaceResponseResponseTypeDef](./type_defs.md#describeworkspaceresponseresponsetypedef)
+- [ListWorkspacesRequestTypeDef](./type_defs.md#listworkspacesrequesttypedef)
+- [ListWorkspacesResponseResponseTypeDef](./type_defs.md#listworkspacesresponseresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [UpdateWorkspaceAliasRequestTypeDef](./type_defs.md#updateworkspacealiasrequesttypedef)
 - [WorkspaceDescriptionTypeDef](./type_defs.md#workspacedescriptiontypedef)
 - [WorkspaceStatusTypeDef](./type_defs.md#workspacestatustypedef)
 - [WorkspaceSummaryTypeDef](./type_defs.md#workspacesummarytypedef)

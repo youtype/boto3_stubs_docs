@@ -36,7 +36,7 @@ Arguments for `GetConnectorsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetConnectorsPaginator.paginate` returns
-`Iterator`\[[GetConnectorsResponseTypeDef](./type_defs.md#getconnectorsresponsetypedef)\].
+`Iterator`\[[GetConnectorsResponseResponseTypeDef](./type_defs.md#getconnectorsresponseresponsetypedef)\].
 
 ## GetReplicationJobsPaginator
 
@@ -62,7 +62,7 @@ Arguments for `GetReplicationJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetReplicationJobsPaginator.paginate` returns
-`Iterator`\[[GetReplicationJobsResponseTypeDef](./type_defs.md#getreplicationjobsresponsetypedef)\].
+`Iterator`\[[GetReplicationJobsResponseResponseTypeDef](./type_defs.md#getreplicationjobsresponseresponsetypedef)\].
 
 ## GetReplicationRunsPaginator
 
@@ -88,7 +88,7 @@ Arguments for `GetReplicationRunsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetReplicationRunsPaginator.paginate` returns
-`Iterator`\[[GetReplicationRunsResponseTypeDef](./type_defs.md#getreplicationrunsresponsetypedef)\].
+`Iterator`\[[GetReplicationRunsResponseResponseTypeDef](./type_defs.md#getreplicationrunsresponseresponsetypedef)\].
 
 ## GetServersPaginator
 
@@ -114,7 +114,7 @@ Arguments for `GetServersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetServersPaginator.paginate` returns
-`Iterator`\[[GetServersResponseTypeDef](./type_defs.md#getserversresponsetypedef)\].
+`Iterator`\[[GetServersResponseResponseTypeDef](./type_defs.md#getserversresponseresponsetypedef)\].
 
 ## ListAppsPaginator
 
@@ -139,4 +139,4 @@ Arguments for `ListAppsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAppsPaginator.paginate` returns
-`Iterator`\[[ListAppsResponseTypeDef](./type_defs.md#listappsresponsetypedef)\].
+`Iterator`\[[ListAppsResponseResponseTypeDef](./type_defs.md#listappsresponseresponsetypedef)\].

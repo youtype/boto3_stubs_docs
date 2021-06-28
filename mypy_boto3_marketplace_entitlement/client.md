@@ -56,6 +56,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("marketplace-entitlement").can_paginate`
 method.
 
@@ -69,6 +71,8 @@ Arguments:
 Returns `bool`.
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for
 `boto3.client("marketplace-entitlement").generate_presigned_url` method.
@@ -87,11 +91,16 @@ Returns `str`.
 
 ### get_entitlements
 
+GetEntitlements retrieves entitlement values for a given product.
+
 Type annotations for `boto3.client("marketplace-entitlement").get_entitlements`
 method.
 
 Boto3 documentation:
 [MarketplaceEntitlementService.Client.get_entitlements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService.Client.get_entitlements)
+
+Arguments mapping described in
+[GetEntitlementsRequestTypeDef](./type_defs.md#getentitlementsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -103,7 +112,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetEntitlementsResultTypeDef](./type_defs.md#getentitlementsresulttypedef).
+[GetEntitlementsResultResponseTypeDef](./type_defs.md#getentitlementsresultresponsetypedef).
 
 ### get_paginator
 

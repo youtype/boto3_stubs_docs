@@ -16,13 +16,20 @@ type annotations stubs module
   - [AnalyzedResourceSummaryTypeDef](#analyzedresourcesummarytypedef)
   - [AnalyzedResourceTypeDef](#analyzedresourcetypedef)
   - [AnalyzerSummaryTypeDef](#analyzersummarytypedef)
+  - [ApplyArchiveRuleRequestTypeDef](#applyarchiverulerequesttypedef)
   - [ArchiveRuleSummaryTypeDef](#archiverulesummarytypedef)
+  - [CancelPolicyGenerationRequestTypeDef](#cancelpolicygenerationrequesttypedef)
   - [CloudTrailDetailsTypeDef](#cloudtraildetailstypedef)
   - [CloudTrailPropertiesTypeDef](#cloudtrailpropertiestypedef)
   - [ConfigurationTypeDef](#configurationtypedef)
-  - [CreateAccessPreviewResponseTypeDef](#createaccesspreviewresponsetypedef)
-  - [CreateAnalyzerResponseTypeDef](#createanalyzerresponsetypedef)
+  - [CreateAccessPreviewRequestTypeDef](#createaccesspreviewrequesttypedef)
+  - [CreateAccessPreviewResponseResponseTypeDef](#createaccesspreviewresponseresponsetypedef)
+  - [CreateAnalyzerRequestTypeDef](#createanalyzerrequesttypedef)
+  - [CreateAnalyzerResponseResponseTypeDef](#createanalyzerresponseresponsetypedef)
+  - [CreateArchiveRuleRequestTypeDef](#createarchiverulerequesttypedef)
   - [CriterionTypeDef](#criteriontypedef)
+  - [DeleteAnalyzerRequestTypeDef](#deleteanalyzerrequesttypedef)
+  - [DeleteArchiveRuleRequestTypeDef](#deletearchiverulerequesttypedef)
   - [FindingSourceDetailTypeDef](#findingsourcedetailtypedef)
   - [FindingSourceTypeDef](#findingsourcetypedef)
   - [FindingSummaryTypeDef](#findingsummarytypedef)
@@ -30,12 +37,18 @@ type annotations stubs module
   - [GeneratedPolicyPropertiesTypeDef](#generatedpolicypropertiestypedef)
   - [GeneratedPolicyResultTypeDef](#generatedpolicyresulttypedef)
   - [GeneratedPolicyTypeDef](#generatedpolicytypedef)
-  - [GetAccessPreviewResponseTypeDef](#getaccesspreviewresponsetypedef)
-  - [GetAnalyzedResourceResponseTypeDef](#getanalyzedresourceresponsetypedef)
-  - [GetAnalyzerResponseTypeDef](#getanalyzerresponsetypedef)
-  - [GetArchiveRuleResponseTypeDef](#getarchiveruleresponsetypedef)
-  - [GetFindingResponseTypeDef](#getfindingresponsetypedef)
-  - [GetGeneratedPolicyResponseTypeDef](#getgeneratedpolicyresponsetypedef)
+  - [GetAccessPreviewRequestTypeDef](#getaccesspreviewrequesttypedef)
+  - [GetAccessPreviewResponseResponseTypeDef](#getaccesspreviewresponseresponsetypedef)
+  - [GetAnalyzedResourceRequestTypeDef](#getanalyzedresourcerequesttypedef)
+  - [GetAnalyzedResourceResponseResponseTypeDef](#getanalyzedresourceresponseresponsetypedef)
+  - [GetAnalyzerRequestTypeDef](#getanalyzerrequesttypedef)
+  - [GetAnalyzerResponseResponseTypeDef](#getanalyzerresponseresponsetypedef)
+  - [GetArchiveRuleRequestTypeDef](#getarchiverulerequesttypedef)
+  - [GetArchiveRuleResponseResponseTypeDef](#getarchiveruleresponseresponsetypedef)
+  - [GetFindingRequestTypeDef](#getfindingrequesttypedef)
+  - [GetFindingResponseResponseTypeDef](#getfindingresponseresponsetypedef)
+  - [GetGeneratedPolicyRequestTypeDef](#getgeneratedpolicyrequesttypedef)
+  - [GetGeneratedPolicyResponseResponseTypeDef](#getgeneratedpolicyresponseresponsetypedef)
   - [IamRoleConfigurationTypeDef](#iamroleconfigurationtypedef)
   - [InlineArchiveRuleTypeDef](#inlinearchiveruletypedef)
   - [JobDetailsTypeDef](#jobdetailstypedef)
@@ -43,14 +56,22 @@ type annotations stubs module
   - [KmsGrantConfigurationTypeDef](#kmsgrantconfigurationtypedef)
   - [KmsGrantConstraintsTypeDef](#kmsgrantconstraintstypedef)
   - [KmsKeyConfigurationTypeDef](#kmskeyconfigurationtypedef)
-  - [ListAccessPreviewFindingsResponseTypeDef](#listaccesspreviewfindingsresponsetypedef)
-  - [ListAccessPreviewsResponseTypeDef](#listaccesspreviewsresponsetypedef)
-  - [ListAnalyzedResourcesResponseTypeDef](#listanalyzedresourcesresponsetypedef)
-  - [ListAnalyzersResponseTypeDef](#listanalyzersresponsetypedef)
-  - [ListArchiveRulesResponseTypeDef](#listarchiverulesresponsetypedef)
-  - [ListFindingsResponseTypeDef](#listfindingsresponsetypedef)
-  - [ListPolicyGenerationsResponseTypeDef](#listpolicygenerationsresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListAccessPreviewFindingsRequestTypeDef](#listaccesspreviewfindingsrequesttypedef)
+  - [ListAccessPreviewFindingsResponseResponseTypeDef](#listaccesspreviewfindingsresponseresponsetypedef)
+  - [ListAccessPreviewsRequestTypeDef](#listaccesspreviewsrequesttypedef)
+  - [ListAccessPreviewsResponseResponseTypeDef](#listaccesspreviewsresponseresponsetypedef)
+  - [ListAnalyzedResourcesRequestTypeDef](#listanalyzedresourcesrequesttypedef)
+  - [ListAnalyzedResourcesResponseResponseTypeDef](#listanalyzedresourcesresponseresponsetypedef)
+  - [ListAnalyzersRequestTypeDef](#listanalyzersrequesttypedef)
+  - [ListAnalyzersResponseResponseTypeDef](#listanalyzersresponseresponsetypedef)
+  - [ListArchiveRulesRequestTypeDef](#listarchiverulesrequesttypedef)
+  - [ListArchiveRulesResponseResponseTypeDef](#listarchiverulesresponseresponsetypedef)
+  - [ListFindingsRequestTypeDef](#listfindingsrequesttypedef)
+  - [ListFindingsResponseResponseTypeDef](#listfindingsresponseresponsetypedef)
+  - [ListPolicyGenerationsRequestTypeDef](#listpolicygenerationsrequesttypedef)
+  - [ListPolicyGenerationsResponseResponseTypeDef](#listpolicygenerationsresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [LocationTypeDef](#locationtypedef)
   - [NetworkOriginConfigurationTypeDef](#networkoriginconfigurationtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
@@ -58,6 +79,7 @@ type annotations stubs module
   - [PolicyGenerationDetailsTypeDef](#policygenerationdetailstypedef)
   - [PolicyGenerationTypeDef](#policygenerationtypedef)
   - [PositionTypeDef](#positiontypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3AccessPointConfigurationTypeDef](#s3accesspointconfigurationtypedef)
   - [S3BucketAclGrantConfigurationTypeDef](#s3bucketaclgrantconfigurationtypedef)
   - [S3BucketConfigurationTypeDef](#s3bucketconfigurationtypedef)
@@ -66,13 +88,20 @@ type annotations stubs module
   - [SortCriteriaTypeDef](#sortcriteriatypedef)
   - [SpanTypeDef](#spantypedef)
   - [SqsQueueConfigurationTypeDef](#sqsqueueconfigurationtypedef)
-  - [StartPolicyGenerationResponseTypeDef](#startpolicygenerationresponsetypedef)
+  - [StartPolicyGenerationRequestTypeDef](#startpolicygenerationrequesttypedef)
+  - [StartPolicyGenerationResponseResponseTypeDef](#startpolicygenerationresponseresponsetypedef)
+  - [StartResourceScanRequestTypeDef](#startresourcescanrequesttypedef)
   - [StatusReasonTypeDef](#statusreasontypedef)
   - [SubstringTypeDef](#substringtypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TrailPropertiesTypeDef](#trailpropertiestypedef)
   - [TrailTypeDef](#trailtypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateArchiveRuleRequestTypeDef](#updatearchiverulerequesttypedef)
+  - [UpdateFindingsRequestTypeDef](#updatefindingsrequesttypedef)
   - [ValidatePolicyFindingTypeDef](#validatepolicyfindingtypedef)
-  - [ValidatePolicyResponseTypeDef](#validatepolicyresponsetypedef)
+  - [ValidatePolicyRequestTypeDef](#validatepolicyrequesttypedef)
+  - [ValidatePolicyResponseResponseTypeDef](#validatepolicyresponseresponsetypedef)
   - [VpcConfigurationTypeDef](#vpcconfigurationtypedef)
 
 ## AccessPreviewFindingTypeDef
@@ -219,6 +248,21 @@ Optional fields:
 - `statusReason`: [StatusReasonTypeDef](./type_defs.md#statusreasontypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
+## ApplyArchiveRuleRequestTypeDef
+
+```python
+from mypy_boto3_accessanalyzer.type_defs import ApplyArchiveRuleRequestTypeDef
+```
+
+Required fields:
+
+- `analyzerArn`: `str`
+- `ruleName`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
+
 ## ArchiveRuleSummaryTypeDef
 
 ```python
@@ -233,6 +277,16 @@ Required fields:
 - `ruleName`: `str`
 - `updatedAt`: `datetime`
 
+## CancelPolicyGenerationRequestTypeDef
+
+```python
+from mypy_boto3_accessanalyzer.type_defs import CancelPolicyGenerationRequestTypeDef
+```
+
+Required fields:
+
+- `jobId`: `str`
+
 ## CloudTrailDetailsTypeDef
 
 ```python
@@ -242,12 +296,12 @@ from mypy_boto3_accessanalyzer.type_defs import CloudTrailDetailsTypeDef
 Required fields:
 
 - `accessRole`: `str`
-- `startTime`: `datetime`
+- `startTime`: `Union`\[`datetime`, `str`\]
 - `trails`: `List`\[[TrailTypeDef](./type_defs.md#trailtypedef)\]
 
 Optional fields:
 
-- `endTime`: `datetime`
+- `endTime`: `Union`\[`datetime`, `str`\]
 
 ## CloudTrailPropertiesTypeDef
 
@@ -281,25 +335,80 @@ Optional fields:
 - `sqsQueue`:
   [SqsQueueConfigurationTypeDef](./type_defs.md#sqsqueueconfigurationtypedef)
 
-## CreateAccessPreviewResponseTypeDef
+## CreateAccessPreviewRequestTypeDef
 
 ```python
-from mypy_boto3_accessanalyzer.type_defs import CreateAccessPreviewResponseTypeDef
+from mypy_boto3_accessanalyzer.type_defs import CreateAccessPreviewRequestTypeDef
+```
+
+Required fields:
+
+- `analyzerArn`: `str`
+- `configurations`: `Dict`\[`str`,
+  [ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
+
+Optional fields:
+
+- `clientToken`: `str`
+
+## CreateAccessPreviewResponseResponseTypeDef
+
+```python
+from mypy_boto3_accessanalyzer.type_defs import CreateAccessPreviewResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `id`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateAnalyzerResponseTypeDef
+## CreateAnalyzerRequestTypeDef
 
 ```python
-from mypy_boto3_accessanalyzer.type_defs import CreateAnalyzerResponseTypeDef
+from mypy_boto3_accessanalyzer.type_defs import CreateAnalyzerRequestTypeDef
 ```
+
+Required fields:
+
+- `analyzerName`: `str`
+- `type`: [TypeType](./literals.md#typetype)
 
 Optional fields:
 
+- `archiveRules`:
+  `List`\[[InlineArchiveRuleTypeDef](./type_defs.md#inlinearchiveruletypedef)\]
+- `clientToken`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateAnalyzerResponseResponseTypeDef
+
+```python
+from mypy_boto3_accessanalyzer.type_defs import CreateAnalyzerResponseResponseTypeDef
+```
+
+Required fields:
+
 - `arn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateArchiveRuleRequestTypeDef
+
+```python
+from mypy_boto3_accessanalyzer.type_defs import CreateArchiveRuleRequestTypeDef
+```
+
+Required fields:
+
+- `analyzerName`: `str`
+- `filter`: `Dict`\[`str`,
+  [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
+- `ruleName`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
 
 ## CriterionTypeDef
 
@@ -313,6 +422,35 @@ Optional fields:
 - `eq`: `List`\[`str`\]
 - `exists`: `bool`
 - `neq`: `List`\[`str`\]
+
+## DeleteAnalyzerRequestTypeDef
+
+```python
+from mypy_boto3_accessanalyzer.type_defs import DeleteAnalyzerRequestTypeDef
+```
+
+Required fields:
+
+- `analyzerName`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
+
+## DeleteArchiveRuleRequestTypeDef
+
+```python
+from mypy_boto3_accessanalyzer.type_defs import DeleteArchiveRuleRequestTypeDef
+```
+
+Required fields:
+
+- `analyzerName`: `str`
+- `ruleName`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
 
 ## FindingSourceDetailTypeDef
 
@@ -435,61 +573,140 @@ Required fields:
 
 - `policy`: `str`
 
-## GetAccessPreviewResponseTypeDef
+## GetAccessPreviewRequestTypeDef
 
 ```python
-from mypy_boto3_accessanalyzer.type_defs import GetAccessPreviewResponseTypeDef
+from mypy_boto3_accessanalyzer.type_defs import GetAccessPreviewRequestTypeDef
+```
+
+Required fields:
+
+- `accessPreviewId`: `str`
+- `analyzerArn`: `str`
+
+## GetAccessPreviewResponseResponseTypeDef
+
+```python
+from mypy_boto3_accessanalyzer.type_defs import GetAccessPreviewResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `accessPreview`: [AccessPreviewTypeDef](./type_defs.md#accesspreviewtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAnalyzedResourceResponseTypeDef
+## GetAnalyzedResourceRequestTypeDef
 
 ```python
-from mypy_boto3_accessanalyzer.type_defs import GetAnalyzedResourceResponseTypeDef
+from mypy_boto3_accessanalyzer.type_defs import GetAnalyzedResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
-- `resource`: [AnalyzedResourceTypeDef](./type_defs.md#analyzedresourcetypedef)
+- `analyzerArn`: `str`
+- `resourceArn`: `str`
 
-## GetAnalyzerResponseTypeDef
+## GetAnalyzedResourceResponseResponseTypeDef
 
 ```python
-from mypy_boto3_accessanalyzer.type_defs import GetAnalyzerResponseTypeDef
+from mypy_boto3_accessanalyzer.type_defs import GetAnalyzedResourceResponseResponseTypeDef
+```
+
+Required fields:
+
+- `resource`: [AnalyzedResourceTypeDef](./type_defs.md#analyzedresourcetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetAnalyzerRequestTypeDef
+
+```python
+from mypy_boto3_accessanalyzer.type_defs import GetAnalyzerRequestTypeDef
+```
+
+Required fields:
+
+- `analyzerName`: `str`
+
+## GetAnalyzerResponseResponseTypeDef
+
+```python
+from mypy_boto3_accessanalyzer.type_defs import GetAnalyzerResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `analyzer`: [AnalyzerSummaryTypeDef](./type_defs.md#analyzersummarytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetArchiveRuleResponseTypeDef
+## GetArchiveRuleRequestTypeDef
 
 ```python
-from mypy_boto3_accessanalyzer.type_defs import GetArchiveRuleResponseTypeDef
+from mypy_boto3_accessanalyzer.type_defs import GetArchiveRuleRequestTypeDef
+```
+
+Required fields:
+
+- `analyzerName`: `str`
+- `ruleName`: `str`
+
+## GetArchiveRuleResponseResponseTypeDef
+
+```python
+from mypy_boto3_accessanalyzer.type_defs import GetArchiveRuleResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `archiveRule`:
   [ArchiveRuleSummaryTypeDef](./type_defs.md#archiverulesummarytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFindingResponseTypeDef
+## GetFindingRequestTypeDef
 
 ```python
-from mypy_boto3_accessanalyzer.type_defs import GetFindingResponseTypeDef
+from mypy_boto3_accessanalyzer.type_defs import GetFindingRequestTypeDef
 ```
+
+Required fields:
+
+- `analyzerArn`: `str`
+- `id`: `str`
+
+## GetFindingResponseResponseTypeDef
+
+```python
+from mypy_boto3_accessanalyzer.type_defs import GetFindingResponseResponseTypeDef
+```
+
+Required fields:
+
+- `finding`: [FindingTypeDef](./type_defs.md#findingtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetGeneratedPolicyRequestTypeDef
+
+```python
+from mypy_boto3_accessanalyzer.type_defs import GetGeneratedPolicyRequestTypeDef
+```
+
+Required fields:
+
+- `jobId`: `str`
 
 Optional fields:
 
-- `finding`: [FindingTypeDef](./type_defs.md#findingtypedef)
+- `includeResourcePlaceholders`: `bool`
+- `includeServiceLevelTemplate`: `bool`
 
-## GetGeneratedPolicyResponseTypeDef
+## GetGeneratedPolicyResponseResponseTypeDef
 
 ```python
-from mypy_boto3_accessanalyzer.type_defs import GetGeneratedPolicyResponseTypeDef
+from mypy_boto3_accessanalyzer.type_defs import GetGeneratedPolicyResponseResponseTypeDef
 ```
 
 Required fields:
@@ -497,6 +714,8 @@ Required fields:
 - `generatedPolicyResult`:
   [GeneratedPolicyResultTypeDef](./type_defs.md#generatedpolicyresulttypedef)
 - `jobDetails`: [JobDetailsTypeDef](./type_defs.md#jobdetailstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## IamRoleConfigurationTypeDef
 
@@ -590,120 +809,231 @@ Optional fields:
   `List`\[[KmsGrantConfigurationTypeDef](./type_defs.md#kmsgrantconfigurationtypedef)\]
 - `keyPolicies`: `Dict`\[`str`, `str`\]
 
-## ListAccessPreviewFindingsResponseTypeDef
+## ListAccessPreviewFindingsRequestTypeDef
 
 ```python
-from mypy_boto3_accessanalyzer.type_defs import ListAccessPreviewFindingsResponseTypeDef
+from mypy_boto3_accessanalyzer.type_defs import ListAccessPreviewFindingsRequestTypeDef
+```
+
+Required fields:
+
+- `accessPreviewId`: `str`
+- `analyzerArn`: `str`
+
+Optional fields:
+
+- `filter`: `Dict`\[`str`,
+  [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListAccessPreviewFindingsResponseResponseTypeDef
+
+```python
+from mypy_boto3_accessanalyzer.type_defs import ListAccessPreviewFindingsResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `findings`:
   `List`\[[AccessPreviewFindingTypeDef](./type_defs.md#accesspreviewfindingtypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListAccessPreviewsRequestTypeDef
+
+```python
+from mypy_boto3_accessanalyzer.type_defs import ListAccessPreviewsRequestTypeDef
+```
+
+Required fields:
+
+- `analyzerArn`: `str`
 
 Optional fields:
 
+- `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListAccessPreviewsResponseTypeDef
+## ListAccessPreviewsResponseResponseTypeDef
 
 ```python
-from mypy_boto3_accessanalyzer.type_defs import ListAccessPreviewsResponseTypeDef
+from mypy_boto3_accessanalyzer.type_defs import ListAccessPreviewsResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `accessPreviews`:
   `List`\[[AccessPreviewSummaryTypeDef](./type_defs.md#accesspreviewsummarytypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListAnalyzedResourcesRequestTypeDef
+
+```python
+from mypy_boto3_accessanalyzer.type_defs import ListAnalyzedResourcesRequestTypeDef
+```
+
+Required fields:
+
+- `analyzerArn`: `str`
 
 Optional fields:
 
+- `maxResults`: `int`
 - `nextToken`: `str`
+- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 
-## ListAnalyzedResourcesResponseTypeDef
+## ListAnalyzedResourcesResponseResponseTypeDef
 
 ```python
-from mypy_boto3_accessanalyzer.type_defs import ListAnalyzedResourcesResponseTypeDef
+from mypy_boto3_accessanalyzer.type_defs import ListAnalyzedResourcesResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `analyzedResources`:
   `List`\[[AnalyzedResourceSummaryTypeDef](./type_defs.md#analyzedresourcesummarytypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListAnalyzersRequestTypeDef
+
+```python
+from mypy_boto3_accessanalyzer.type_defs import ListAnalyzersRequestTypeDef
+```
 
 Optional fields:
 
+- `maxResults`: `int`
 - `nextToken`: `str`
+- `type`: [TypeType](./literals.md#typetype)
 
-## ListAnalyzersResponseTypeDef
+## ListAnalyzersResponseResponseTypeDef
 
 ```python
-from mypy_boto3_accessanalyzer.type_defs import ListAnalyzersResponseTypeDef
+from mypy_boto3_accessanalyzer.type_defs import ListAnalyzersResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `analyzers`:
   `List`\[[AnalyzerSummaryTypeDef](./type_defs.md#analyzersummarytypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListArchiveRulesRequestTypeDef
+
+```python
+from mypy_boto3_accessanalyzer.type_defs import ListArchiveRulesRequestTypeDef
+```
+
+Required fields:
+
+- `analyzerName`: `str`
 
 Optional fields:
 
+- `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListArchiveRulesResponseTypeDef
+## ListArchiveRulesResponseResponseTypeDef
 
 ```python
-from mypy_boto3_accessanalyzer.type_defs import ListArchiveRulesResponseTypeDef
+from mypy_boto3_accessanalyzer.type_defs import ListArchiveRulesResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `archiveRules`:
   `List`\[[ArchiveRuleSummaryTypeDef](./type_defs.md#archiverulesummarytypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListFindingsRequestTypeDef
+
+```python
+from mypy_boto3_accessanalyzer.type_defs import ListFindingsRequestTypeDef
+```
+
+Required fields:
+
+- `analyzerArn`: `str`
 
 Optional fields:
 
+- `filter`: `Dict`\[`str`,
+  [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
+- `maxResults`: `int`
 - `nextToken`: `str`
+- `sort`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
 
-## ListFindingsResponseTypeDef
+## ListFindingsResponseResponseTypeDef
 
 ```python
-from mypy_boto3_accessanalyzer.type_defs import ListFindingsResponseTypeDef
+from mypy_boto3_accessanalyzer.type_defs import ListFindingsResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `findings`:
   `List`\[[FindingSummaryTypeDef](./type_defs.md#findingsummarytypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListPolicyGenerationsRequestTypeDef
+
+```python
+from mypy_boto3_accessanalyzer.type_defs import ListPolicyGenerationsRequestTypeDef
+```
 
 Optional fields:
 
+- `maxResults`: `int`
 - `nextToken`: `str`
+- `principalArn`: `str`
 
-## ListPolicyGenerationsResponseTypeDef
+## ListPolicyGenerationsResponseResponseTypeDef
 
 ```python
-from mypy_boto3_accessanalyzer.type_defs import ListPolicyGenerationsResponseTypeDef
+from mypy_boto3_accessanalyzer.type_defs import ListPolicyGenerationsResponseResponseTypeDef
 ```
 
 Required fields:
 
+- `nextToken`: `str`
 - `policyGenerations`:
   `List`\[[PolicyGenerationTypeDef](./type_defs.md#policygenerationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-Optional fields:
-
-- `nextToken`: `str`
-
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_accessanalyzer.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_accessanalyzer.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `resourceArn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_accessanalyzer.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LocationTypeDef
 
@@ -791,6 +1121,20 @@ Required fields:
 - `column`: `int`
 - `line`: `int`
 - `offset`: `int`
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_accessanalyzer.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## S3AccessPointConfigurationTypeDef
 
@@ -887,15 +1231,45 @@ Optional fields:
 
 - `queuePolicy`: `str`
 
-## StartPolicyGenerationResponseTypeDef
+## StartPolicyGenerationRequestTypeDef
 
 ```python
-from mypy_boto3_accessanalyzer.type_defs import StartPolicyGenerationResponseTypeDef
+from mypy_boto3_accessanalyzer.type_defs import StartPolicyGenerationRequestTypeDef
+```
+
+Required fields:
+
+- `policyGenerationDetails`:
+  [PolicyGenerationDetailsTypeDef](./type_defs.md#policygenerationdetailstypedef)
+
+Optional fields:
+
+- `clientToken`: `str`
+- `cloudTrailDetails`:
+  [CloudTrailDetailsTypeDef](./type_defs.md#cloudtraildetailstypedef)
+
+## StartPolicyGenerationResponseResponseTypeDef
+
+```python
+from mypy_boto3_accessanalyzer.type_defs import StartPolicyGenerationResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `jobId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StartResourceScanRequestTypeDef
+
+```python
+from mypy_boto3_accessanalyzer.type_defs import StartResourceScanRequestTypeDef
+```
+
+Required fields:
+
+- `analyzerArn`: `str`
+- `resourceArn`: `str`
 
 ## StatusReasonTypeDef
 
@@ -917,6 +1291,17 @@ Required fields:
 
 - `length`: `int`
 - `start`: `int`
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_accessanalyzer.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## TrailPropertiesTypeDef
 
@@ -948,6 +1333,51 @@ Optional fields:
 - `allRegions`: `bool`
 - `regions`: `List`\[`str`\]
 
+## UntagResourceRequestTypeDef
+
+```python
+from mypy_boto3_accessanalyzer.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tagKeys`: `List`\[`str`\]
+
+## UpdateArchiveRuleRequestTypeDef
+
+```python
+from mypy_boto3_accessanalyzer.type_defs import UpdateArchiveRuleRequestTypeDef
+```
+
+Required fields:
+
+- `analyzerName`: `str`
+- `filter`: `Dict`\[`str`,
+  [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
+- `ruleName`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
+
+## UpdateFindingsRequestTypeDef
+
+```python
+from mypy_boto3_accessanalyzer.type_defs import UpdateFindingsRequestTypeDef
+```
+
+Required fields:
+
+- `analyzerArn`: `str`
+- `status`: [FindingStatusUpdateType](./literals.md#findingstatusupdatetype)
+
+Optional fields:
+
+- `clientToken`: `str`
+- `ids`: `List`\[`str`\]
+- `resourceArn`: `str`
+
 ## ValidatePolicyFindingTypeDef
 
 ```python
@@ -963,20 +1393,36 @@ Required fields:
 - `learnMoreLink`: `str`
 - `locations`: `List`\[[LocationTypeDef](./type_defs.md#locationtypedef)\]
 
-## ValidatePolicyResponseTypeDef
+## ValidatePolicyRequestTypeDef
 
 ```python
-from mypy_boto3_accessanalyzer.type_defs import ValidatePolicyResponseTypeDef
+from mypy_boto3_accessanalyzer.type_defs import ValidatePolicyRequestTypeDef
+```
+
+Required fields:
+
+- `policyDocument`: `str`
+- `policyType`: [PolicyTypeType](./literals.md#policytypetype)
+
+Optional fields:
+
+- `locale`: [LocaleType](./literals.md#localetype)
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ValidatePolicyResponseResponseTypeDef
+
+```python
+from mypy_boto3_accessanalyzer.type_defs import ValidatePolicyResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `findings`:
   `List`\[[ValidatePolicyFindingTypeDef](./type_defs.md#validatepolicyfindingtypedef)\]
-
-Optional fields:
-
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## VpcConfigurationTypeDef
 

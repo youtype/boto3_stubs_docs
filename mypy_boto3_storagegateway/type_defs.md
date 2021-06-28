@@ -8,129 +8,238 @@ type annotations stubs module
 [mypy_boto3_storagegateway](https://pypi.org/project/mypy-boto3-storagegateway/).
 
 - [Typed dictionaries for boto3 StorageGateway module](#typed-dictionaries-for-boto3-storagegateway-module)
-  - [ActivateGatewayOutputTypeDef](#activategatewayoutputtypedef)
-  - [AddCacheOutputTypeDef](#addcacheoutputtypedef)
-  - [AddTagsToResourceOutputTypeDef](#addtagstoresourceoutputtypedef)
-  - [AddUploadBufferOutputTypeDef](#adduploadbufferoutputtypedef)
-  - [AddWorkingStorageOutputTypeDef](#addworkingstorageoutputtypedef)
-  - [AssignTapePoolOutputTypeDef](#assigntapepooloutputtypedef)
-  - [AssociateFileSystemOutputTypeDef](#associatefilesystemoutputtypedef)
-  - [AttachVolumeOutputTypeDef](#attachvolumeoutputtypedef)
+  - [ActivateGatewayInputTypeDef](#activategatewayinputtypedef)
+  - [ActivateGatewayOutputResponseTypeDef](#activategatewayoutputresponsetypedef)
+  - [AddCacheInputTypeDef](#addcacheinputtypedef)
+  - [AddCacheOutputResponseTypeDef](#addcacheoutputresponsetypedef)
+  - [AddTagsToResourceInputTypeDef](#addtagstoresourceinputtypedef)
+  - [AddTagsToResourceOutputResponseTypeDef](#addtagstoresourceoutputresponsetypedef)
+  - [AddUploadBufferInputTypeDef](#adduploadbufferinputtypedef)
+  - [AddUploadBufferOutputResponseTypeDef](#adduploadbufferoutputresponsetypedef)
+  - [AddWorkingStorageInputTypeDef](#addworkingstorageinputtypedef)
+  - [AddWorkingStorageOutputResponseTypeDef](#addworkingstorageoutputresponsetypedef)
+  - [AssignTapePoolInputTypeDef](#assigntapepoolinputtypedef)
+  - [AssignTapePoolOutputResponseTypeDef](#assigntapepooloutputresponsetypedef)
+  - [AssociateFileSystemInputTypeDef](#associatefilesysteminputtypedef)
+  - [AssociateFileSystemOutputResponseTypeDef](#associatefilesystemoutputresponsetypedef)
+  - [AttachVolumeInputTypeDef](#attachvolumeinputtypedef)
+  - [AttachVolumeOutputResponseTypeDef](#attachvolumeoutputresponsetypedef)
   - [AutomaticTapeCreationPolicyInfoTypeDef](#automatictapecreationpolicyinfotypedef)
   - [AutomaticTapeCreationRuleTypeDef](#automatictapecreationruletypedef)
   - [BandwidthRateLimitIntervalTypeDef](#bandwidthratelimitintervaltypedef)
   - [CacheAttributesTypeDef](#cacheattributestypedef)
   - [CachediSCSIVolumeTypeDef](#cachediscsivolumetypedef)
-  - [CancelArchivalOutputTypeDef](#cancelarchivaloutputtypedef)
-  - [CancelRetrievalOutputTypeDef](#cancelretrievaloutputtypedef)
+  - [CancelArchivalInputTypeDef](#cancelarchivalinputtypedef)
+  - [CancelArchivalOutputResponseTypeDef](#cancelarchivaloutputresponsetypedef)
+  - [CancelRetrievalInputTypeDef](#cancelretrievalinputtypedef)
+  - [CancelRetrievalOutputResponseTypeDef](#cancelretrievaloutputresponsetypedef)
   - [ChapInfoTypeDef](#chapinfotypedef)
-  - [CreateCachediSCSIVolumeOutputTypeDef](#createcachediscsivolumeoutputtypedef)
-  - [CreateNFSFileShareOutputTypeDef](#createnfsfileshareoutputtypedef)
-  - [CreateSMBFileShareOutputTypeDef](#createsmbfileshareoutputtypedef)
-  - [CreateSnapshotFromVolumeRecoveryPointOutputTypeDef](#createsnapshotfromvolumerecoverypointoutputtypedef)
-  - [CreateSnapshotOutputTypeDef](#createsnapshotoutputtypedef)
-  - [CreateStorediSCSIVolumeOutputTypeDef](#createstorediscsivolumeoutputtypedef)
-  - [CreateTapePoolOutputTypeDef](#createtapepooloutputtypedef)
-  - [CreateTapeWithBarcodeOutputTypeDef](#createtapewithbarcodeoutputtypedef)
-  - [CreateTapesOutputTypeDef](#createtapesoutputtypedef)
-  - [DeleteAutomaticTapeCreationPolicyOutputTypeDef](#deleteautomatictapecreationpolicyoutputtypedef)
-  - [DeleteBandwidthRateLimitOutputTypeDef](#deletebandwidthratelimitoutputtypedef)
-  - [DeleteChapCredentialsOutputTypeDef](#deletechapcredentialsoutputtypedef)
-  - [DeleteFileShareOutputTypeDef](#deletefileshareoutputtypedef)
-  - [DeleteGatewayOutputTypeDef](#deletegatewayoutputtypedef)
-  - [DeleteSnapshotScheduleOutputTypeDef](#deletesnapshotscheduleoutputtypedef)
-  - [DeleteTapeArchiveOutputTypeDef](#deletetapearchiveoutputtypedef)
-  - [DeleteTapeOutputTypeDef](#deletetapeoutputtypedef)
-  - [DeleteTapePoolOutputTypeDef](#deletetapepooloutputtypedef)
-  - [DeleteVolumeOutputTypeDef](#deletevolumeoutputtypedef)
-  - [DescribeAvailabilityMonitorTestOutputTypeDef](#describeavailabilitymonitortestoutputtypedef)
-  - [DescribeBandwidthRateLimitOutputTypeDef](#describebandwidthratelimitoutputtypedef)
-  - [DescribeBandwidthRateLimitScheduleOutputTypeDef](#describebandwidthratelimitscheduleoutputtypedef)
-  - [DescribeCacheOutputTypeDef](#describecacheoutputtypedef)
-  - [DescribeCachediSCSIVolumesOutputTypeDef](#describecachediscsivolumesoutputtypedef)
-  - [DescribeChapCredentialsOutputTypeDef](#describechapcredentialsoutputtypedef)
-  - [DescribeFileSystemAssociationsOutputTypeDef](#describefilesystemassociationsoutputtypedef)
-  - [DescribeGatewayInformationOutputTypeDef](#describegatewayinformationoutputtypedef)
-  - [DescribeMaintenanceStartTimeOutputTypeDef](#describemaintenancestarttimeoutputtypedef)
-  - [DescribeNFSFileSharesOutputTypeDef](#describenfsfilesharesoutputtypedef)
-  - [DescribeSMBFileSharesOutputTypeDef](#describesmbfilesharesoutputtypedef)
-  - [DescribeSMBSettingsOutputTypeDef](#describesmbsettingsoutputtypedef)
-  - [DescribeSnapshotScheduleOutputTypeDef](#describesnapshotscheduleoutputtypedef)
-  - [DescribeStorediSCSIVolumesOutputTypeDef](#describestorediscsivolumesoutputtypedef)
-  - [DescribeTapeArchivesOutputTypeDef](#describetapearchivesoutputtypedef)
-  - [DescribeTapeRecoveryPointsOutputTypeDef](#describetaperecoverypointsoutputtypedef)
-  - [DescribeTapesOutputTypeDef](#describetapesoutputtypedef)
-  - [DescribeUploadBufferOutputTypeDef](#describeuploadbufferoutputtypedef)
-  - [DescribeVTLDevicesOutputTypeDef](#describevtldevicesoutputtypedef)
-  - [DescribeWorkingStorageOutputTypeDef](#describeworkingstorageoutputtypedef)
-  - [DetachVolumeOutputTypeDef](#detachvolumeoutputtypedef)
+  - [CreateCachediSCSIVolumeInputTypeDef](#createcachediscsivolumeinputtypedef)
+  - [CreateCachediSCSIVolumeOutputResponseTypeDef](#createcachediscsivolumeoutputresponsetypedef)
+  - [CreateNFSFileShareInputTypeDef](#createnfsfileshareinputtypedef)
+  - [CreateNFSFileShareOutputResponseTypeDef](#createnfsfileshareoutputresponsetypedef)
+  - [CreateSMBFileShareInputTypeDef](#createsmbfileshareinputtypedef)
+  - [CreateSMBFileShareOutputResponseTypeDef](#createsmbfileshareoutputresponsetypedef)
+  - [CreateSnapshotFromVolumeRecoveryPointInputTypeDef](#createsnapshotfromvolumerecoverypointinputtypedef)
+  - [CreateSnapshotFromVolumeRecoveryPointOutputResponseTypeDef](#createsnapshotfromvolumerecoverypointoutputresponsetypedef)
+  - [CreateSnapshotInputTypeDef](#createsnapshotinputtypedef)
+  - [CreateSnapshotOutputResponseTypeDef](#createsnapshotoutputresponsetypedef)
+  - [CreateStorediSCSIVolumeInputTypeDef](#createstorediscsivolumeinputtypedef)
+  - [CreateStorediSCSIVolumeOutputResponseTypeDef](#createstorediscsivolumeoutputresponsetypedef)
+  - [CreateTapePoolInputTypeDef](#createtapepoolinputtypedef)
+  - [CreateTapePoolOutputResponseTypeDef](#createtapepooloutputresponsetypedef)
+  - [CreateTapeWithBarcodeInputTypeDef](#createtapewithbarcodeinputtypedef)
+  - [CreateTapeWithBarcodeOutputResponseTypeDef](#createtapewithbarcodeoutputresponsetypedef)
+  - [CreateTapesInputTypeDef](#createtapesinputtypedef)
+  - [CreateTapesOutputResponseTypeDef](#createtapesoutputresponsetypedef)
+  - [DeleteAutomaticTapeCreationPolicyInputTypeDef](#deleteautomatictapecreationpolicyinputtypedef)
+  - [DeleteAutomaticTapeCreationPolicyOutputResponseTypeDef](#deleteautomatictapecreationpolicyoutputresponsetypedef)
+  - [DeleteBandwidthRateLimitInputTypeDef](#deletebandwidthratelimitinputtypedef)
+  - [DeleteBandwidthRateLimitOutputResponseTypeDef](#deletebandwidthratelimitoutputresponsetypedef)
+  - [DeleteChapCredentialsInputTypeDef](#deletechapcredentialsinputtypedef)
+  - [DeleteChapCredentialsOutputResponseTypeDef](#deletechapcredentialsoutputresponsetypedef)
+  - [DeleteFileShareInputTypeDef](#deletefileshareinputtypedef)
+  - [DeleteFileShareOutputResponseTypeDef](#deletefileshareoutputresponsetypedef)
+  - [DeleteGatewayInputTypeDef](#deletegatewayinputtypedef)
+  - [DeleteGatewayOutputResponseTypeDef](#deletegatewayoutputresponsetypedef)
+  - [DeleteSnapshotScheduleInputTypeDef](#deletesnapshotscheduleinputtypedef)
+  - [DeleteSnapshotScheduleOutputResponseTypeDef](#deletesnapshotscheduleoutputresponsetypedef)
+  - [DeleteTapeArchiveInputTypeDef](#deletetapearchiveinputtypedef)
+  - [DeleteTapeArchiveOutputResponseTypeDef](#deletetapearchiveoutputresponsetypedef)
+  - [DeleteTapeInputTypeDef](#deletetapeinputtypedef)
+  - [DeleteTapeOutputResponseTypeDef](#deletetapeoutputresponsetypedef)
+  - [DeleteTapePoolInputTypeDef](#deletetapepoolinputtypedef)
+  - [DeleteTapePoolOutputResponseTypeDef](#deletetapepooloutputresponsetypedef)
+  - [DeleteVolumeInputTypeDef](#deletevolumeinputtypedef)
+  - [DeleteVolumeOutputResponseTypeDef](#deletevolumeoutputresponsetypedef)
+  - [DescribeAvailabilityMonitorTestInputTypeDef](#describeavailabilitymonitortestinputtypedef)
+  - [DescribeAvailabilityMonitorTestOutputResponseTypeDef](#describeavailabilitymonitortestoutputresponsetypedef)
+  - [DescribeBandwidthRateLimitInputTypeDef](#describebandwidthratelimitinputtypedef)
+  - [DescribeBandwidthRateLimitOutputResponseTypeDef](#describebandwidthratelimitoutputresponsetypedef)
+  - [DescribeBandwidthRateLimitScheduleInputTypeDef](#describebandwidthratelimitscheduleinputtypedef)
+  - [DescribeBandwidthRateLimitScheduleOutputResponseTypeDef](#describebandwidthratelimitscheduleoutputresponsetypedef)
+  - [DescribeCacheInputTypeDef](#describecacheinputtypedef)
+  - [DescribeCacheOutputResponseTypeDef](#describecacheoutputresponsetypedef)
+  - [DescribeCachediSCSIVolumesInputTypeDef](#describecachediscsivolumesinputtypedef)
+  - [DescribeCachediSCSIVolumesOutputResponseTypeDef](#describecachediscsivolumesoutputresponsetypedef)
+  - [DescribeChapCredentialsInputTypeDef](#describechapcredentialsinputtypedef)
+  - [DescribeChapCredentialsOutputResponseTypeDef](#describechapcredentialsoutputresponsetypedef)
+  - [DescribeFileSystemAssociationsInputTypeDef](#describefilesystemassociationsinputtypedef)
+  - [DescribeFileSystemAssociationsOutputResponseTypeDef](#describefilesystemassociationsoutputresponsetypedef)
+  - [DescribeGatewayInformationInputTypeDef](#describegatewayinformationinputtypedef)
+  - [DescribeGatewayInformationOutputResponseTypeDef](#describegatewayinformationoutputresponsetypedef)
+  - [DescribeMaintenanceStartTimeInputTypeDef](#describemaintenancestarttimeinputtypedef)
+  - [DescribeMaintenanceStartTimeOutputResponseTypeDef](#describemaintenancestarttimeoutputresponsetypedef)
+  - [DescribeNFSFileSharesInputTypeDef](#describenfsfilesharesinputtypedef)
+  - [DescribeNFSFileSharesOutputResponseTypeDef](#describenfsfilesharesoutputresponsetypedef)
+  - [DescribeSMBFileSharesInputTypeDef](#describesmbfilesharesinputtypedef)
+  - [DescribeSMBFileSharesOutputResponseTypeDef](#describesmbfilesharesoutputresponsetypedef)
+  - [DescribeSMBSettingsInputTypeDef](#describesmbsettingsinputtypedef)
+  - [DescribeSMBSettingsOutputResponseTypeDef](#describesmbsettingsoutputresponsetypedef)
+  - [DescribeSnapshotScheduleInputTypeDef](#describesnapshotscheduleinputtypedef)
+  - [DescribeSnapshotScheduleOutputResponseTypeDef](#describesnapshotscheduleoutputresponsetypedef)
+  - [DescribeStorediSCSIVolumesInputTypeDef](#describestorediscsivolumesinputtypedef)
+  - [DescribeStorediSCSIVolumesOutputResponseTypeDef](#describestorediscsivolumesoutputresponsetypedef)
+  - [DescribeTapeArchivesInputTypeDef](#describetapearchivesinputtypedef)
+  - [DescribeTapeArchivesOutputResponseTypeDef](#describetapearchivesoutputresponsetypedef)
+  - [DescribeTapeRecoveryPointsInputTypeDef](#describetaperecoverypointsinputtypedef)
+  - [DescribeTapeRecoveryPointsOutputResponseTypeDef](#describetaperecoverypointsoutputresponsetypedef)
+  - [DescribeTapesInputTypeDef](#describetapesinputtypedef)
+  - [DescribeTapesOutputResponseTypeDef](#describetapesoutputresponsetypedef)
+  - [DescribeUploadBufferInputTypeDef](#describeuploadbufferinputtypedef)
+  - [DescribeUploadBufferOutputResponseTypeDef](#describeuploadbufferoutputresponsetypedef)
+  - [DescribeVTLDevicesInputTypeDef](#describevtldevicesinputtypedef)
+  - [DescribeVTLDevicesOutputResponseTypeDef](#describevtldevicesoutputresponsetypedef)
+  - [DescribeWorkingStorageInputTypeDef](#describeworkingstorageinputtypedef)
+  - [DescribeWorkingStorageOutputResponseTypeDef](#describeworkingstorageoutputresponsetypedef)
+  - [DetachVolumeInputTypeDef](#detachvolumeinputtypedef)
+  - [DetachVolumeOutputResponseTypeDef](#detachvolumeoutputresponsetypedef)
   - [DeviceiSCSIAttributesTypeDef](#deviceiscsiattributestypedef)
-  - [DisableGatewayOutputTypeDef](#disablegatewayoutputtypedef)
-  - [DisassociateFileSystemOutputTypeDef](#disassociatefilesystemoutputtypedef)
+  - [DisableGatewayInputTypeDef](#disablegatewayinputtypedef)
+  - [DisableGatewayOutputResponseTypeDef](#disablegatewayoutputresponsetypedef)
+  - [DisassociateFileSystemInputTypeDef](#disassociatefilesysteminputtypedef)
+  - [DisassociateFileSystemOutputResponseTypeDef](#disassociatefilesystemoutputresponsetypedef)
   - [DiskTypeDef](#disktypedef)
   - [FileShareInfoTypeDef](#fileshareinfotypedef)
   - [FileSystemAssociationInfoTypeDef](#filesystemassociationinfotypedef)
   - [FileSystemAssociationSummaryTypeDef](#filesystemassociationsummarytypedef)
   - [GatewayInfoTypeDef](#gatewayinfotypedef)
-  - [JoinDomainOutputTypeDef](#joindomainoutputtypedef)
-  - [ListAutomaticTapeCreationPoliciesOutputTypeDef](#listautomatictapecreationpoliciesoutputtypedef)
-  - [ListFileSharesOutputTypeDef](#listfilesharesoutputtypedef)
-  - [ListFileSystemAssociationsOutputTypeDef](#listfilesystemassociationsoutputtypedef)
-  - [ListGatewaysOutputTypeDef](#listgatewaysoutputtypedef)
-  - [ListLocalDisksOutputTypeDef](#listlocaldisksoutputtypedef)
-  - [ListTagsForResourceOutputTypeDef](#listtagsforresourceoutputtypedef)
-  - [ListTapePoolsOutputTypeDef](#listtapepoolsoutputtypedef)
-  - [ListTapesOutputTypeDef](#listtapesoutputtypedef)
-  - [ListVolumeInitiatorsOutputTypeDef](#listvolumeinitiatorsoutputtypedef)
-  - [ListVolumeRecoveryPointsOutputTypeDef](#listvolumerecoverypointsoutputtypedef)
-  - [ListVolumesOutputTypeDef](#listvolumesoutputtypedef)
+  - [JoinDomainInputTypeDef](#joindomaininputtypedef)
+  - [JoinDomainOutputResponseTypeDef](#joindomainoutputresponsetypedef)
+  - [ListAutomaticTapeCreationPoliciesInputTypeDef](#listautomatictapecreationpoliciesinputtypedef)
+  - [ListAutomaticTapeCreationPoliciesOutputResponseTypeDef](#listautomatictapecreationpoliciesoutputresponsetypedef)
+  - [ListFileSharesInputTypeDef](#listfilesharesinputtypedef)
+  - [ListFileSharesOutputResponseTypeDef](#listfilesharesoutputresponsetypedef)
+  - [ListFileSystemAssociationsInputTypeDef](#listfilesystemassociationsinputtypedef)
+  - [ListFileSystemAssociationsOutputResponseTypeDef](#listfilesystemassociationsoutputresponsetypedef)
+  - [ListGatewaysInputTypeDef](#listgatewaysinputtypedef)
+  - [ListGatewaysOutputResponseTypeDef](#listgatewaysoutputresponsetypedef)
+  - [ListLocalDisksInputTypeDef](#listlocaldisksinputtypedef)
+  - [ListLocalDisksOutputResponseTypeDef](#listlocaldisksoutputresponsetypedef)
+  - [ListTagsForResourceInputTypeDef](#listtagsforresourceinputtypedef)
+  - [ListTagsForResourceOutputResponseTypeDef](#listtagsforresourceoutputresponsetypedef)
+  - [ListTapePoolsInputTypeDef](#listtapepoolsinputtypedef)
+  - [ListTapePoolsOutputResponseTypeDef](#listtapepoolsoutputresponsetypedef)
+  - [ListTapesInputTypeDef](#listtapesinputtypedef)
+  - [ListTapesOutputResponseTypeDef](#listtapesoutputresponsetypedef)
+  - [ListVolumeInitiatorsInputTypeDef](#listvolumeinitiatorsinputtypedef)
+  - [ListVolumeInitiatorsOutputResponseTypeDef](#listvolumeinitiatorsoutputresponsetypedef)
+  - [ListVolumeRecoveryPointsInputTypeDef](#listvolumerecoverypointsinputtypedef)
+  - [ListVolumeRecoveryPointsOutputResponseTypeDef](#listvolumerecoverypointsoutputresponsetypedef)
+  - [ListVolumesInputTypeDef](#listvolumesinputtypedef)
+  - [ListVolumesOutputResponseTypeDef](#listvolumesoutputresponsetypedef)
   - [NFSFileShareDefaultsTypeDef](#nfsfilesharedefaultstypedef)
   - [NFSFileShareInfoTypeDef](#nfsfileshareinfotypedef)
   - [NetworkInterfaceTypeDef](#networkinterfacetypedef)
-  - [NotifyWhenUploadedOutputTypeDef](#notifywhenuploadedoutputtypedef)
+  - [NotifyWhenUploadedInputTypeDef](#notifywhenuploadedinputtypedef)
+  - [NotifyWhenUploadedOutputResponseTypeDef](#notifywhenuploadedoutputresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PoolInfoTypeDef](#poolinfotypedef)
-  - [RefreshCacheOutputTypeDef](#refreshcacheoutputtypedef)
-  - [RemoveTagsFromResourceOutputTypeDef](#removetagsfromresourceoutputtypedef)
-  - [ResetCacheOutputTypeDef](#resetcacheoutputtypedef)
+  - [RefreshCacheInputTypeDef](#refreshcacheinputtypedef)
+  - [RefreshCacheOutputResponseTypeDef](#refreshcacheoutputresponsetypedef)
+  - [RemoveTagsFromResourceInputTypeDef](#removetagsfromresourceinputtypedef)
+  - [RemoveTagsFromResourceOutputResponseTypeDef](#removetagsfromresourceoutputresponsetypedef)
+  - [ResetCacheInputTypeDef](#resetcacheinputtypedef)
+  - [ResetCacheOutputResponseTypeDef](#resetcacheoutputresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RetrieveTapeArchiveOutputTypeDef](#retrievetapearchiveoutputtypedef)
-  - [RetrieveTapeRecoveryPointOutputTypeDef](#retrievetaperecoverypointoutputtypedef)
+  - [RetrieveTapeArchiveInputTypeDef](#retrievetapearchiveinputtypedef)
+  - [RetrieveTapeArchiveOutputResponseTypeDef](#retrievetapearchiveoutputresponsetypedef)
+  - [RetrieveTapeRecoveryPointInputTypeDef](#retrievetaperecoverypointinputtypedef)
+  - [RetrieveTapeRecoveryPointOutputResponseTypeDef](#retrievetaperecoverypointoutputresponsetypedef)
   - [SMBFileShareInfoTypeDef](#smbfileshareinfotypedef)
-  - [SetLocalConsolePasswordOutputTypeDef](#setlocalconsolepasswordoutputtypedef)
-  - [SetSMBGuestPasswordOutputTypeDef](#setsmbguestpasswordoutputtypedef)
-  - [ShutdownGatewayOutputTypeDef](#shutdowngatewayoutputtypedef)
-  - [StartAvailabilityMonitorTestOutputTypeDef](#startavailabilitymonitortestoutputtypedef)
-  - [StartGatewayOutputTypeDef](#startgatewayoutputtypedef)
+  - [SetLocalConsolePasswordInputTypeDef](#setlocalconsolepasswordinputtypedef)
+  - [SetLocalConsolePasswordOutputResponseTypeDef](#setlocalconsolepasswordoutputresponsetypedef)
+  - [SetSMBGuestPasswordInputTypeDef](#setsmbguestpasswordinputtypedef)
+  - [SetSMBGuestPasswordOutputResponseTypeDef](#setsmbguestpasswordoutputresponsetypedef)
+  - [ShutdownGatewayInputTypeDef](#shutdowngatewayinputtypedef)
+  - [ShutdownGatewayOutputResponseTypeDef](#shutdowngatewayoutputresponsetypedef)
+  - [StartAvailabilityMonitorTestInputTypeDef](#startavailabilitymonitortestinputtypedef)
+  - [StartAvailabilityMonitorTestOutputResponseTypeDef](#startavailabilitymonitortestoutputresponsetypedef)
+  - [StartGatewayInputTypeDef](#startgatewayinputtypedef)
+  - [StartGatewayOutputResponseTypeDef](#startgatewayoutputresponsetypedef)
   - [StorediSCSIVolumeTypeDef](#storediscsivolumetypedef)
   - [TagTypeDef](#tagtypedef)
   - [TapeArchiveTypeDef](#tapearchivetypedef)
   - [TapeInfoTypeDef](#tapeinfotypedef)
   - [TapeRecoveryPointInfoTypeDef](#taperecoverypointinfotypedef)
   - [TapeTypeDef](#tapetypedef)
-  - [UpdateAutomaticTapeCreationPolicyOutputTypeDef](#updateautomatictapecreationpolicyoutputtypedef)
-  - [UpdateBandwidthRateLimitOutputTypeDef](#updatebandwidthratelimitoutputtypedef)
-  - [UpdateBandwidthRateLimitScheduleOutputTypeDef](#updatebandwidthratelimitscheduleoutputtypedef)
-  - [UpdateChapCredentialsOutputTypeDef](#updatechapcredentialsoutputtypedef)
-  - [UpdateFileSystemAssociationOutputTypeDef](#updatefilesystemassociationoutputtypedef)
-  - [UpdateGatewayInformationOutputTypeDef](#updategatewayinformationoutputtypedef)
-  - [UpdateGatewaySoftwareNowOutputTypeDef](#updategatewaysoftwarenowoutputtypedef)
-  - [UpdateMaintenanceStartTimeOutputTypeDef](#updatemaintenancestarttimeoutputtypedef)
-  - [UpdateNFSFileShareOutputTypeDef](#updatenfsfileshareoutputtypedef)
-  - [UpdateSMBFileShareOutputTypeDef](#updatesmbfileshareoutputtypedef)
-  - [UpdateSMBFileShareVisibilityOutputTypeDef](#updatesmbfilesharevisibilityoutputtypedef)
-  - [UpdateSMBSecurityStrategyOutputTypeDef](#updatesmbsecuritystrategyoutputtypedef)
-  - [UpdateSnapshotScheduleOutputTypeDef](#updatesnapshotscheduleoutputtypedef)
-  - [UpdateVTLDeviceTypeOutputTypeDef](#updatevtldevicetypeoutputtypedef)
+  - [UpdateAutomaticTapeCreationPolicyInputTypeDef](#updateautomatictapecreationpolicyinputtypedef)
+  - [UpdateAutomaticTapeCreationPolicyOutputResponseTypeDef](#updateautomatictapecreationpolicyoutputresponsetypedef)
+  - [UpdateBandwidthRateLimitInputTypeDef](#updatebandwidthratelimitinputtypedef)
+  - [UpdateBandwidthRateLimitOutputResponseTypeDef](#updatebandwidthratelimitoutputresponsetypedef)
+  - [UpdateBandwidthRateLimitScheduleInputTypeDef](#updatebandwidthratelimitscheduleinputtypedef)
+  - [UpdateBandwidthRateLimitScheduleOutputResponseTypeDef](#updatebandwidthratelimitscheduleoutputresponsetypedef)
+  - [UpdateChapCredentialsInputTypeDef](#updatechapcredentialsinputtypedef)
+  - [UpdateChapCredentialsOutputResponseTypeDef](#updatechapcredentialsoutputresponsetypedef)
+  - [UpdateFileSystemAssociationInputTypeDef](#updatefilesystemassociationinputtypedef)
+  - [UpdateFileSystemAssociationOutputResponseTypeDef](#updatefilesystemassociationoutputresponsetypedef)
+  - [UpdateGatewayInformationInputTypeDef](#updategatewayinformationinputtypedef)
+  - [UpdateGatewayInformationOutputResponseTypeDef](#updategatewayinformationoutputresponsetypedef)
+  - [UpdateGatewaySoftwareNowInputTypeDef](#updategatewaysoftwarenowinputtypedef)
+  - [UpdateGatewaySoftwareNowOutputResponseTypeDef](#updategatewaysoftwarenowoutputresponsetypedef)
+  - [UpdateMaintenanceStartTimeInputTypeDef](#updatemaintenancestarttimeinputtypedef)
+  - [UpdateMaintenanceStartTimeOutputResponseTypeDef](#updatemaintenancestarttimeoutputresponsetypedef)
+  - [UpdateNFSFileShareInputTypeDef](#updatenfsfileshareinputtypedef)
+  - [UpdateNFSFileShareOutputResponseTypeDef](#updatenfsfileshareoutputresponsetypedef)
+  - [UpdateSMBFileShareInputTypeDef](#updatesmbfileshareinputtypedef)
+  - [UpdateSMBFileShareOutputResponseTypeDef](#updatesmbfileshareoutputresponsetypedef)
+  - [UpdateSMBFileShareVisibilityInputTypeDef](#updatesmbfilesharevisibilityinputtypedef)
+  - [UpdateSMBFileShareVisibilityOutputResponseTypeDef](#updatesmbfilesharevisibilityoutputresponsetypedef)
+  - [UpdateSMBSecurityStrategyInputTypeDef](#updatesmbsecuritystrategyinputtypedef)
+  - [UpdateSMBSecurityStrategyOutputResponseTypeDef](#updatesmbsecuritystrategyoutputresponsetypedef)
+  - [UpdateSnapshotScheduleInputTypeDef](#updatesnapshotscheduleinputtypedef)
+  - [UpdateSnapshotScheduleOutputResponseTypeDef](#updatesnapshotscheduleoutputresponsetypedef)
+  - [UpdateVTLDeviceTypeInputTypeDef](#updatevtldevicetypeinputtypedef)
+  - [UpdateVTLDeviceTypeOutputResponseTypeDef](#updatevtldevicetypeoutputresponsetypedef)
   - [VTLDeviceTypeDef](#vtldevicetypedef)
   - [VolumeInfoTypeDef](#volumeinfotypedef)
   - [VolumeRecoveryPointInfoTypeDef](#volumerecoverypointinfotypedef)
   - [VolumeiSCSIAttributesTypeDef](#volumeiscsiattributestypedef)
 
-## ActivateGatewayOutputTypeDef
+## ActivateGatewayInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import ActivateGatewayOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import ActivateGatewayInputTypeDef
+```
+
+Required fields:
+
+- `ActivationKey`: `str`
+- `GatewayName`: `str`
+- `GatewayTimezone`: `str`
+- `GatewayRegion`: `str`
+
+Optional fields:
+
+- `GatewayType`: `str`
+- `TapeDriveType`: `str`
+- `MediumChangerType`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## ActivateGatewayOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import ActivateGatewayOutputResponseTypeDef
 ```
 
 Required fields:
@@ -139,10 +248,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AddCacheOutputTypeDef
+## AddCacheInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import AddCacheOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import AddCacheInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+- `DiskIds`: `List`\[`str`\]
+
+## AddCacheOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import AddCacheOutputResponseTypeDef
 ```
 
 Required fields:
@@ -151,10 +271,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AddTagsToResourceOutputTypeDef
+## AddTagsToResourceInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import AddTagsToResourceOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import AddTagsToResourceInputTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## AddTagsToResourceOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import AddTagsToResourceOutputResponseTypeDef
 ```
 
 Required fields:
@@ -163,10 +294,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AddUploadBufferOutputTypeDef
+## AddUploadBufferInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import AddUploadBufferOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import AddUploadBufferInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+- `DiskIds`: `List`\[`str`\]
+
+## AddUploadBufferOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import AddUploadBufferOutputResponseTypeDef
 ```
 
 Required fields:
@@ -175,10 +317,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AddWorkingStorageOutputTypeDef
+## AddWorkingStorageInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import AddWorkingStorageOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import AddWorkingStorageInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+- `DiskIds`: `List`\[`str`\]
+
+## AddWorkingStorageOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import AddWorkingStorageOutputResponseTypeDef
 ```
 
 Required fields:
@@ -187,10 +340,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssignTapePoolOutputTypeDef
+## AssignTapePoolInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import AssignTapePoolOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import AssignTapePoolInputTypeDef
+```
+
+Required fields:
+
+- `TapeARN`: `str`
+- `PoolId`: `str`
+
+Optional fields:
+
+- `BypassGovernanceRetention`: `bool`
+
+## AssignTapePoolOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import AssignTapePoolOutputResponseTypeDef
 ```
 
 Required fields:
@@ -199,10 +367,31 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssociateFileSystemOutputTypeDef
+## AssociateFileSystemInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import AssociateFileSystemOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import AssociateFileSystemInputTypeDef
+```
+
+Required fields:
+
+- `UserName`: `str`
+- `Password`: `str`
+- `ClientToken`: `str`
+- `GatewayARN`: `str`
+- `LocationARN`: `str`
+
+Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `AuditDestinationARN`: `str`
+- `CacheAttributes`:
+  [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
+
+## AssociateFileSystemOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import AssociateFileSystemOutputResponseTypeDef
 ```
 
 Required fields:
@@ -211,10 +400,27 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AttachVolumeOutputTypeDef
+## AttachVolumeInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import AttachVolumeOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import AttachVolumeInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+- `VolumeARN`: `str`
+- `NetworkInterfaceId`: `str`
+
+Optional fields:
+
+- `TargetName`: `str`
+- `DiskId`: `str`
+
+## AttachVolumeOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import AttachVolumeOutputResponseTypeDef
 ```
 
 Required fields:
@@ -305,10 +511,21 @@ Optional fields:
 - `KMSKey`: `str`
 - `TargetName`: `str`
 
-## CancelArchivalOutputTypeDef
+## CancelArchivalInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import CancelArchivalOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import CancelArchivalInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+- `TapeARN`: `str`
+
+## CancelArchivalOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import CancelArchivalOutputResponseTypeDef
 ```
 
 Required fields:
@@ -317,10 +534,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CancelRetrievalOutputTypeDef
+## CancelRetrievalInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import CancelRetrievalOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import CancelRetrievalInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+- `TapeARN`: `str`
+
+## CancelRetrievalOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import CancelRetrievalOutputResponseTypeDef
 ```
 
 Required fields:
@@ -342,10 +570,32 @@ Optional fields:
 - `InitiatorName`: `str`
 - `SecretToAuthenticateTarget`: `str`
 
-## CreateCachediSCSIVolumeOutputTypeDef
+## CreateCachediSCSIVolumeInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import CreateCachediSCSIVolumeOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import CreateCachediSCSIVolumeInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+- `VolumeSizeInBytes`: `int`
+- `TargetName`: `str`
+- `NetworkInterfaceId`: `str`
+- `ClientToken`: `str`
+
+Optional fields:
+
+- `SnapshotId`: `str`
+- `SourceVolumeARN`: `str`
+- `KMSEncrypted`: `bool`
+- `KMSKey`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateCachediSCSIVolumeOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import CreateCachediSCSIVolumeOutputResponseTypeDef
 ```
 
 Required fields:
@@ -355,10 +605,42 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateNFSFileShareOutputTypeDef
+## CreateNFSFileShareInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import CreateNFSFileShareOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import CreateNFSFileShareInputTypeDef
+```
+
+Required fields:
+
+- `ClientToken`: `str`
+- `GatewayARN`: `str`
+- `Role`: `str`
+- `LocationARN`: `str`
+
+Optional fields:
+
+- `NFSFileShareDefaults`:
+  [NFSFileShareDefaultsTypeDef](./type_defs.md#nfsfilesharedefaultstypedef)
+- `KMSEncrypted`: `bool`
+- `KMSKey`: `str`
+- `DefaultStorageClass`: `str`
+- `ObjectACL`: [ObjectACLType](./literals.md#objectacltype)
+- `ClientList`: `List`\[`str`\]
+- `Squash`: `str`
+- `ReadOnly`: `bool`
+- `GuessMIMETypeEnabled`: `bool`
+- `RequesterPays`: `bool`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `FileShareName`: `str`
+- `CacheAttributes`:
+  [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
+- `NotificationPolicy`: `str`
+
+## CreateNFSFileShareOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import CreateNFSFileShareOutputResponseTypeDef
 ```
 
 Required fields:
@@ -367,10 +649,46 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateSMBFileShareOutputTypeDef
+## CreateSMBFileShareInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import CreateSMBFileShareOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import CreateSMBFileShareInputTypeDef
+```
+
+Required fields:
+
+- `ClientToken`: `str`
+- `GatewayARN`: `str`
+- `Role`: `str`
+- `LocationARN`: `str`
+
+Optional fields:
+
+- `KMSEncrypted`: `bool`
+- `KMSKey`: `str`
+- `DefaultStorageClass`: `str`
+- `ObjectACL`: [ObjectACLType](./literals.md#objectacltype)
+- `ReadOnly`: `bool`
+- `GuessMIMETypeEnabled`: `bool`
+- `RequesterPays`: `bool`
+- `SMBACLEnabled`: `bool`
+- `AccessBasedEnumeration`: `bool`
+- `AdminUserList`: `List`\[`str`\]
+- `ValidUserList`: `List`\[`str`\]
+- `InvalidUserList`: `List`\[`str`\]
+- `AuditDestinationARN`: `str`
+- `Authentication`: `str`
+- `CaseSensitivity`: [CaseSensitivityType](./literals.md#casesensitivitytype)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `FileShareName`: `str`
+- `CacheAttributes`:
+  [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
+- `NotificationPolicy`: `str`
+
+## CreateSMBFileShareOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import CreateSMBFileShareOutputResponseTypeDef
 ```
 
 Required fields:
@@ -379,10 +697,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateSnapshotFromVolumeRecoveryPointOutputTypeDef
+## CreateSnapshotFromVolumeRecoveryPointInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import CreateSnapshotFromVolumeRecoveryPointOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import CreateSnapshotFromVolumeRecoveryPointInputTypeDef
+```
+
+Required fields:
+
+- `VolumeARN`: `str`
+- `SnapshotDescription`: `str`
+
+Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateSnapshotFromVolumeRecoveryPointOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import CreateSnapshotFromVolumeRecoveryPointOutputResponseTypeDef
 ```
 
 Required fields:
@@ -393,10 +726,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateSnapshotOutputTypeDef
+## CreateSnapshotInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import CreateSnapshotOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import CreateSnapshotInputTypeDef
+```
+
+Required fields:
+
+- `VolumeARN`: `str`
+- `SnapshotDescription`: `str`
+
+Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateSnapshotOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import CreateSnapshotOutputResponseTypeDef
 ```
 
 Required fields:
@@ -406,10 +754,31 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateStorediSCSIVolumeOutputTypeDef
+## CreateStorediSCSIVolumeInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import CreateStorediSCSIVolumeOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import CreateStorediSCSIVolumeInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+- `DiskId`: `str`
+- `PreserveExistingData`: `bool`
+- `TargetName`: `str`
+- `NetworkInterfaceId`: `str`
+
+Optional fields:
+
+- `SnapshotId`: `str`
+- `KMSEncrypted`: `bool`
+- `KMSKey`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateStorediSCSIVolumeOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import CreateStorediSCSIVolumeOutputResponseTypeDef
 ```
 
 Required fields:
@@ -420,10 +789,28 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTapePoolOutputTypeDef
+## CreateTapePoolInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import CreateTapePoolOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import CreateTapePoolInputTypeDef
+```
+
+Required fields:
+
+- `PoolName`: `str`
+- `StorageClass`: [TapeStorageClassType](./literals.md#tapestorageclasstype)
+
+Optional fields:
+
+- `RetentionLockType`:
+  [RetentionLockTypeType](./literals.md#retentionlocktypetype)
+- `RetentionLockTimeInDays`: `int`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateTapePoolOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import CreateTapePoolOutputResponseTypeDef
 ```
 
 Required fields:
@@ -432,10 +819,30 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTapeWithBarcodeOutputTypeDef
+## CreateTapeWithBarcodeInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import CreateTapeWithBarcodeOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import CreateTapeWithBarcodeInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+- `TapeSizeInBytes`: `int`
+- `TapeBarcode`: `str`
+
+Optional fields:
+
+- `KMSEncrypted`: `bool`
+- `KMSKey`: `str`
+- `PoolId`: `str`
+- `Worm`: `bool`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateTapeWithBarcodeOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import CreateTapeWithBarcodeOutputResponseTypeDef
 ```
 
 Required fields:
@@ -444,10 +851,32 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTapesOutputTypeDef
+## CreateTapesInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import CreateTapesOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import CreateTapesInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+- `TapeSizeInBytes`: `int`
+- `ClientToken`: `str`
+- `NumTapesToCreate`: `int`
+- `TapeBarcodePrefix`: `str`
+
+Optional fields:
+
+- `KMSEncrypted`: `bool`
+- `KMSKey`: `str`
+- `PoolId`: `str`
+- `Worm`: `bool`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateTapesOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import CreateTapesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -456,10 +885,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteAutomaticTapeCreationPolicyOutputTypeDef
+## DeleteAutomaticTapeCreationPolicyInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DeleteAutomaticTapeCreationPolicyOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DeleteAutomaticTapeCreationPolicyInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+
+## DeleteAutomaticTapeCreationPolicyOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DeleteAutomaticTapeCreationPolicyOutputResponseTypeDef
 ```
 
 Required fields:
@@ -468,10 +907,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteBandwidthRateLimitOutputTypeDef
+## DeleteBandwidthRateLimitInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DeleteBandwidthRateLimitOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DeleteBandwidthRateLimitInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+- `BandwidthType`: `str`
+
+## DeleteBandwidthRateLimitOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DeleteBandwidthRateLimitOutputResponseTypeDef
 ```
 
 Required fields:
@@ -480,10 +930,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteChapCredentialsOutputTypeDef
+## DeleteChapCredentialsInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DeleteChapCredentialsOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DeleteChapCredentialsInputTypeDef
+```
+
+Required fields:
+
+- `TargetARN`: `str`
+- `InitiatorName`: `str`
+
+## DeleteChapCredentialsOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DeleteChapCredentialsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -493,10 +954,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteFileShareOutputTypeDef
+## DeleteFileShareInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DeleteFileShareOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DeleteFileShareInputTypeDef
+```
+
+Required fields:
+
+- `FileShareARN`: `str`
+
+Optional fields:
+
+- `ForceDelete`: `bool`
+
+## DeleteFileShareOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DeleteFileShareOutputResponseTypeDef
 ```
 
 Required fields:
@@ -505,10 +980,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteGatewayOutputTypeDef
+## DeleteGatewayInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DeleteGatewayOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DeleteGatewayInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+
+## DeleteGatewayOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DeleteGatewayOutputResponseTypeDef
 ```
 
 Required fields:
@@ -517,10 +1002,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteSnapshotScheduleOutputTypeDef
+## DeleteSnapshotScheduleInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DeleteSnapshotScheduleOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DeleteSnapshotScheduleInputTypeDef
+```
+
+Required fields:
+
+- `VolumeARN`: `str`
+
+## DeleteSnapshotScheduleOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DeleteSnapshotScheduleOutputResponseTypeDef
 ```
 
 Required fields:
@@ -529,10 +1024,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteTapeArchiveOutputTypeDef
+## DeleteTapeArchiveInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DeleteTapeArchiveOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DeleteTapeArchiveInputTypeDef
+```
+
+Required fields:
+
+- `TapeARN`: `str`
+
+Optional fields:
+
+- `BypassGovernanceRetention`: `bool`
+
+## DeleteTapeArchiveOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DeleteTapeArchiveOutputResponseTypeDef
 ```
 
 Required fields:
@@ -541,10 +1050,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteTapeOutputTypeDef
+## DeleteTapeInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DeleteTapeOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DeleteTapeInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+- `TapeARN`: `str`
+
+Optional fields:
+
+- `BypassGovernanceRetention`: `bool`
+
+## DeleteTapeOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DeleteTapeOutputResponseTypeDef
 ```
 
 Required fields:
@@ -553,10 +1077,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteTapePoolOutputTypeDef
+## DeleteTapePoolInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DeleteTapePoolOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DeleteTapePoolInputTypeDef
+```
+
+Required fields:
+
+- `PoolARN`: `str`
+
+## DeleteTapePoolOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DeleteTapePoolOutputResponseTypeDef
 ```
 
 Required fields:
@@ -565,10 +1099,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteVolumeOutputTypeDef
+## DeleteVolumeInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DeleteVolumeOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DeleteVolumeInputTypeDef
+```
+
+Required fields:
+
+- `VolumeARN`: `str`
+
+## DeleteVolumeOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DeleteVolumeOutputResponseTypeDef
 ```
 
 Required fields:
@@ -577,10 +1121,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAvailabilityMonitorTestOutputTypeDef
+## DescribeAvailabilityMonitorTestInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DescribeAvailabilityMonitorTestOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DescribeAvailabilityMonitorTestInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+
+## DescribeAvailabilityMonitorTestOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DescribeAvailabilityMonitorTestOutputResponseTypeDef
 ```
 
 Required fields:
@@ -592,10 +1146,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeBandwidthRateLimitOutputTypeDef
+## DescribeBandwidthRateLimitInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DescribeBandwidthRateLimitOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DescribeBandwidthRateLimitInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+
+## DescribeBandwidthRateLimitOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DescribeBandwidthRateLimitOutputResponseTypeDef
 ```
 
 Required fields:
@@ -606,10 +1170,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeBandwidthRateLimitScheduleOutputTypeDef
+## DescribeBandwidthRateLimitScheduleInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DescribeBandwidthRateLimitScheduleOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DescribeBandwidthRateLimitScheduleInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+
+## DescribeBandwidthRateLimitScheduleOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DescribeBandwidthRateLimitScheduleOutputResponseTypeDef
 ```
 
 Required fields:
@@ -620,10 +1194,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeCacheOutputTypeDef
+## DescribeCacheInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DescribeCacheOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DescribeCacheInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+
+## DescribeCacheOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DescribeCacheOutputResponseTypeDef
 ```
 
 Required fields:
@@ -638,10 +1222,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeCachediSCSIVolumesOutputTypeDef
+## DescribeCachediSCSIVolumesInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DescribeCachediSCSIVolumesOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DescribeCachediSCSIVolumesInputTypeDef
+```
+
+Required fields:
+
+- `VolumeARNs`: `List`\[`str`\]
+
+## DescribeCachediSCSIVolumesOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DescribeCachediSCSIVolumesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -651,10 +1245,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeChapCredentialsOutputTypeDef
+## DescribeChapCredentialsInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DescribeChapCredentialsOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DescribeChapCredentialsInputTypeDef
+```
+
+Required fields:
+
+- `TargetARN`: `str`
+
+## DescribeChapCredentialsOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DescribeChapCredentialsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -664,10 +1268,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFileSystemAssociationsOutputTypeDef
+## DescribeFileSystemAssociationsInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DescribeFileSystemAssociationsOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DescribeFileSystemAssociationsInputTypeDef
+```
+
+Required fields:
+
+- `FileSystemAssociationARNList`: `List`\[`str`\]
+
+## DescribeFileSystemAssociationsOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DescribeFileSystemAssociationsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -677,10 +1291,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeGatewayInformationOutputTypeDef
+## DescribeGatewayInformationInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DescribeGatewayInformationOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DescribeGatewayInformationInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+
+## DescribeGatewayInformationOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DescribeGatewayInformationOutputResponseTypeDef
 ```
 
 Required fields:
@@ -707,10 +1331,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeMaintenanceStartTimeOutputTypeDef
+## DescribeMaintenanceStartTimeInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DescribeMaintenanceStartTimeOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DescribeMaintenanceStartTimeInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+
+## DescribeMaintenanceStartTimeOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DescribeMaintenanceStartTimeOutputResponseTypeDef
 ```
 
 Required fields:
@@ -724,10 +1358,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeNFSFileSharesOutputTypeDef
+## DescribeNFSFileSharesInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DescribeNFSFileSharesOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DescribeNFSFileSharesInputTypeDef
+```
+
+Required fields:
+
+- `FileShareARNList`: `List`\[`str`\]
+
+## DescribeNFSFileSharesOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DescribeNFSFileSharesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -737,10 +1381,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSMBFileSharesOutputTypeDef
+## DescribeSMBFileSharesInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DescribeSMBFileSharesOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DescribeSMBFileSharesInputTypeDef
+```
+
+Required fields:
+
+- `FileShareARNList`: `List`\[`str`\]
+
+## DescribeSMBFileSharesOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DescribeSMBFileSharesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -750,10 +1404,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSMBSettingsOutputTypeDef
+## DescribeSMBSettingsInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DescribeSMBSettingsOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DescribeSMBSettingsInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+
+## DescribeSMBSettingsOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DescribeSMBSettingsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -769,10 +1433,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSnapshotScheduleOutputTypeDef
+## DescribeSnapshotScheduleInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DescribeSnapshotScheduleOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DescribeSnapshotScheduleInputTypeDef
+```
+
+Required fields:
+
+- `VolumeARN`: `str`
+
+## DescribeSnapshotScheduleOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DescribeSnapshotScheduleOutputResponseTypeDef
 ```
 
 Required fields:
@@ -786,10 +1460,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeStorediSCSIVolumesOutputTypeDef
+## DescribeStorediSCSIVolumesInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DescribeStorediSCSIVolumesOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DescribeStorediSCSIVolumesInputTypeDef
+```
+
+Required fields:
+
+- `VolumeARNs`: `List`\[`str`\]
+
+## DescribeStorediSCSIVolumesOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DescribeStorediSCSIVolumesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -799,10 +1483,22 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTapeArchivesOutputTypeDef
+## DescribeTapeArchivesInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DescribeTapeArchivesOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DescribeTapeArchivesInputTypeDef
+```
+
+Optional fields:
+
+- `TapeARNs`: `List`\[`str`\]
+- `Marker`: `str`
+- `Limit`: `int`
+
+## DescribeTapeArchivesOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DescribeTapeArchivesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -813,10 +1509,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTapeRecoveryPointsOutputTypeDef
+## DescribeTapeRecoveryPointsInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DescribeTapeRecoveryPointsOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DescribeTapeRecoveryPointsInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+
+Optional fields:
+
+- `Marker`: `str`
+- `Limit`: `int`
+
+## DescribeTapeRecoveryPointsOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DescribeTapeRecoveryPointsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -828,10 +1539,26 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTapesOutputTypeDef
+## DescribeTapesInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DescribeTapesOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DescribeTapesInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+
+Optional fields:
+
+- `TapeARNs`: `List`\[`str`\]
+- `Marker`: `str`
+- `Limit`: `int`
+
+## DescribeTapesOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DescribeTapesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -841,10 +1568,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeUploadBufferOutputTypeDef
+## DescribeUploadBufferInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DescribeUploadBufferOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DescribeUploadBufferInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+
+## DescribeUploadBufferOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DescribeUploadBufferOutputResponseTypeDef
 ```
 
 Required fields:
@@ -856,10 +1593,26 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeVTLDevicesOutputTypeDef
+## DescribeVTLDevicesInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DescribeVTLDevicesOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DescribeVTLDevicesInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+
+Optional fields:
+
+- `VTLDeviceARNs`: `List`\[`str`\]
+- `Marker`: `str`
+- `Limit`: `int`
+
+## DescribeVTLDevicesOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DescribeVTLDevicesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -870,10 +1623,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeWorkingStorageOutputTypeDef
+## DescribeWorkingStorageInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DescribeWorkingStorageOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DescribeWorkingStorageInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+
+## DescribeWorkingStorageOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DescribeWorkingStorageOutputResponseTypeDef
 ```
 
 Required fields:
@@ -885,10 +1648,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DetachVolumeOutputTypeDef
+## DetachVolumeInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DetachVolumeOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DetachVolumeInputTypeDef
+```
+
+Required fields:
+
+- `VolumeARN`: `str`
+
+Optional fields:
+
+- `ForceDetach`: `bool`
+
+## DetachVolumeOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DetachVolumeOutputResponseTypeDef
 ```
 
 Required fields:
@@ -910,10 +1687,20 @@ Optional fields:
 - `NetworkInterfacePort`: `int`
 - `ChapEnabled`: `bool`
 
-## DisableGatewayOutputTypeDef
+## DisableGatewayInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DisableGatewayOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DisableGatewayInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+
+## DisableGatewayOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DisableGatewayOutputResponseTypeDef
 ```
 
 Required fields:
@@ -922,10 +1709,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociateFileSystemOutputTypeDef
+## DisassociateFileSystemInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import DisassociateFileSystemOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import DisassociateFileSystemInputTypeDef
+```
+
+Required fields:
+
+- `FileSystemAssociationARN`: `str`
+
+Optional fields:
+
+- `ForceDelete`: `bool`
+
+## DisassociateFileSystemOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import DisassociateFileSystemOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1011,10 +1812,29 @@ Optional fields:
 - `Ec2InstanceId`: `str`
 - `Ec2InstanceRegion`: `str`
 
-## JoinDomainOutputTypeDef
+## JoinDomainInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import JoinDomainOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import JoinDomainInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+- `DomainName`: `str`
+- `UserName`: `str`
+- `Password`: `str`
+
+Optional fields:
+
+- `OrganizationalUnit`: `str`
+- `DomainControllers`: `List`\[`str`\]
+- `TimeoutInSeconds`: `int`
+
+## JoinDomainOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import JoinDomainOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1025,10 +1845,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAutomaticTapeCreationPoliciesOutputTypeDef
+## ListAutomaticTapeCreationPoliciesInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import ListAutomaticTapeCreationPoliciesOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import ListAutomaticTapeCreationPoliciesInputTypeDef
+```
+
+Optional fields:
+
+- `GatewayARN`: `str`
+
+## ListAutomaticTapeCreationPoliciesOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import ListAutomaticTapeCreationPoliciesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1038,10 +1868,22 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFileSharesOutputTypeDef
+## ListFileSharesInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import ListFileSharesOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import ListFileSharesInputTypeDef
+```
+
+Optional fields:
+
+- `GatewayARN`: `str`
+- `Limit`: `int`
+- `Marker`: `str`
+
+## ListFileSharesOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import ListFileSharesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1053,10 +1895,22 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFileSystemAssociationsOutputTypeDef
+## ListFileSystemAssociationsInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import ListFileSystemAssociationsOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import ListFileSystemAssociationsInputTypeDef
+```
+
+Optional fields:
+
+- `GatewayARN`: `str`
+- `Limit`: `int`
+- `Marker`: `str`
+
+## ListFileSystemAssociationsOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import ListFileSystemAssociationsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1068,10 +1922,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListGatewaysOutputTypeDef
+## ListGatewaysInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import ListGatewaysOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import ListGatewaysInputTypeDef
+```
+
+Optional fields:
+
+- `Marker`: `str`
+- `Limit`: `int`
+
+## ListGatewaysOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import ListGatewaysOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1081,10 +1946,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListLocalDisksOutputTypeDef
+## ListLocalDisksInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import ListLocalDisksOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import ListLocalDisksInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+
+## ListLocalDisksOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import ListLocalDisksOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1094,10 +1969,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceOutputTypeDef
+## ListTagsForResourceInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import ListTagsForResourceOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import ListTagsForResourceInputTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+
+Optional fields:
+
+- `Marker`: `str`
+- `Limit`: `int`
+
+## ListTagsForResourceOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import ListTagsForResourceOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1108,10 +1998,22 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTapePoolsOutputTypeDef
+## ListTapePoolsInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import ListTapePoolsOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import ListTapePoolsInputTypeDef
+```
+
+Optional fields:
+
+- `PoolARNs`: `List`\[`str`\]
+- `Marker`: `str`
+- `Limit`: `int`
+
+## ListTapePoolsOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import ListTapePoolsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1121,10 +2023,22 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTapesOutputTypeDef
+## ListTapesInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import ListTapesOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import ListTapesInputTypeDef
+```
+
+Optional fields:
+
+- `TapeARNs`: `List`\[`str`\]
+- `Marker`: `str`
+- `Limit`: `int`
+
+## ListTapesOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import ListTapesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1134,10 +2048,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListVolumeInitiatorsOutputTypeDef
+## ListVolumeInitiatorsInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import ListVolumeInitiatorsOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import ListVolumeInitiatorsInputTypeDef
+```
+
+Required fields:
+
+- `VolumeARN`: `str`
+
+## ListVolumeInitiatorsOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import ListVolumeInitiatorsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1146,10 +2070,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListVolumeRecoveryPointsOutputTypeDef
+## ListVolumeRecoveryPointsInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import ListVolumeRecoveryPointsOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import ListVolumeRecoveryPointsInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+
+## ListVolumeRecoveryPointsOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import ListVolumeRecoveryPointsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1160,10 +2094,22 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListVolumesOutputTypeDef
+## ListVolumesInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import ListVolumesOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import ListVolumesInputTypeDef
+```
+
+Optional fields:
+
+- `GatewayARN`: `str`
+- `Marker`: `str`
+- `Limit`: `int`
+
+## ListVolumesOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import ListVolumesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1232,10 +2178,20 @@ Optional fields:
 - `MacAddress`: `str`
 - `Ipv6Address`: `str`
 
-## NotifyWhenUploadedOutputTypeDef
+## NotifyWhenUploadedInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import NotifyWhenUploadedOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import NotifyWhenUploadedInputTypeDef
+```
+
+Required fields:
+
+- `FileShareARN`: `str`
+
+## NotifyWhenUploadedOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import NotifyWhenUploadedOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1273,10 +2229,25 @@ Optional fields:
 - `RetentionLockTimeInDays`: `int`
 - `PoolStatus`: [PoolStatusType](./literals.md#poolstatustype)
 
-## RefreshCacheOutputTypeDef
+## RefreshCacheInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import RefreshCacheOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import RefreshCacheInputTypeDef
+```
+
+Required fields:
+
+- `FileShareARN`: `str`
+
+Optional fields:
+
+- `FolderList`: `List`\[`str`\]
+- `Recursive`: `bool`
+
+## RefreshCacheOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import RefreshCacheOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1286,10 +2257,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RemoveTagsFromResourceOutputTypeDef
+## RemoveTagsFromResourceInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import RemoveTagsFromResourceOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import RemoveTagsFromResourceInputTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## RemoveTagsFromResourceOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import RemoveTagsFromResourceOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1298,10 +2280,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ResetCacheOutputTypeDef
+## ResetCacheInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import ResetCacheOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import ResetCacheInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+
+## ResetCacheOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import ResetCacheOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1324,10 +2316,21 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## RetrieveTapeArchiveOutputTypeDef
+## RetrieveTapeArchiveInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import RetrieveTapeArchiveOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import RetrieveTapeArchiveInputTypeDef
+```
+
+Required fields:
+
+- `TapeARN`: `str`
+- `GatewayARN`: `str`
+
+## RetrieveTapeArchiveOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import RetrieveTapeArchiveOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1336,10 +2339,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RetrieveTapeRecoveryPointOutputTypeDef
+## RetrieveTapeRecoveryPointInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import RetrieveTapeRecoveryPointOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import RetrieveTapeRecoveryPointInputTypeDef
+```
+
+Required fields:
+
+- `TapeARN`: `str`
+- `GatewayARN`: `str`
+
+## RetrieveTapeRecoveryPointOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import RetrieveTapeRecoveryPointOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1384,10 +2398,21 @@ Optional fields:
   [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
 - `NotificationPolicy`: `str`
 
-## SetLocalConsolePasswordOutputTypeDef
+## SetLocalConsolePasswordInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import SetLocalConsolePasswordOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import SetLocalConsolePasswordInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+- `LocalConsolePassword`: `str`
+
+## SetLocalConsolePasswordOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import SetLocalConsolePasswordOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1396,10 +2421,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SetSMBGuestPasswordOutputTypeDef
+## SetSMBGuestPasswordInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import SetSMBGuestPasswordOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import SetSMBGuestPasswordInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+- `Password`: `str`
+
+## SetSMBGuestPasswordOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import SetSMBGuestPasswordOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1408,10 +2444,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ShutdownGatewayOutputTypeDef
+## ShutdownGatewayInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import ShutdownGatewayOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import ShutdownGatewayInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+
+## ShutdownGatewayOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import ShutdownGatewayOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1420,10 +2466,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartAvailabilityMonitorTestOutputTypeDef
+## StartAvailabilityMonitorTestInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import StartAvailabilityMonitorTestOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import StartAvailabilityMonitorTestInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+
+## StartAvailabilityMonitorTestOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import StartAvailabilityMonitorTestOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1432,10 +2488,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartGatewayOutputTypeDef
+## StartGatewayInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import StartGatewayOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import StartGatewayInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+
+## StartGatewayOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import StartGatewayOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1554,10 +2620,22 @@ Optional fields:
 - `RetentionStartDate`: `datetime`
 - `PoolEntryDate`: `datetime`
 
-## UpdateAutomaticTapeCreationPolicyOutputTypeDef
+## UpdateAutomaticTapeCreationPolicyInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import UpdateAutomaticTapeCreationPolicyOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import UpdateAutomaticTapeCreationPolicyInputTypeDef
+```
+
+Required fields:
+
+- `AutomaticTapeCreationRules`:
+  `List`\[[AutomaticTapeCreationRuleTypeDef](./type_defs.md#automatictapecreationruletypedef)\]
+- `GatewayARN`: `str`
+
+## UpdateAutomaticTapeCreationPolicyOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import UpdateAutomaticTapeCreationPolicyOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1566,10 +2644,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateBandwidthRateLimitOutputTypeDef
+## UpdateBandwidthRateLimitInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import UpdateBandwidthRateLimitOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import UpdateBandwidthRateLimitInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+
+Optional fields:
+
+- `AverageUploadRateLimitInBitsPerSec`: `int`
+- `AverageDownloadRateLimitInBitsPerSec`: `int`
+
+## UpdateBandwidthRateLimitOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import UpdateBandwidthRateLimitOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1578,10 +2671,22 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateBandwidthRateLimitScheduleOutputTypeDef
+## UpdateBandwidthRateLimitScheduleInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import UpdateBandwidthRateLimitScheduleOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import UpdateBandwidthRateLimitScheduleInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+- `BandwidthRateLimitIntervals`:
+  `List`\[[BandwidthRateLimitIntervalTypeDef](./type_defs.md#bandwidthratelimitintervaltypedef)\]
+
+## UpdateBandwidthRateLimitScheduleOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import UpdateBandwidthRateLimitScheduleOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1590,10 +2695,26 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateChapCredentialsOutputTypeDef
+## UpdateChapCredentialsInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import UpdateChapCredentialsOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import UpdateChapCredentialsInputTypeDef
+```
+
+Required fields:
+
+- `TargetARN`: `str`
+- `SecretToAuthenticateInitiator`: `str`
+- `InitiatorName`: `str`
+
+Optional fields:
+
+- `SecretToAuthenticateTarget`: `str`
+
+## UpdateChapCredentialsOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import UpdateChapCredentialsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1603,10 +2724,28 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateFileSystemAssociationOutputTypeDef
+## UpdateFileSystemAssociationInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import UpdateFileSystemAssociationOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import UpdateFileSystemAssociationInputTypeDef
+```
+
+Required fields:
+
+- `FileSystemAssociationARN`: `str`
+
+Optional fields:
+
+- `UserName`: `str`
+- `Password`: `str`
+- `AuditDestinationARN`: `str`
+- `CacheAttributes`:
+  [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
+
+## UpdateFileSystemAssociationOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import UpdateFileSystemAssociationOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1615,10 +2754,26 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateGatewayInformationOutputTypeDef
+## UpdateGatewayInformationInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import UpdateGatewayInformationOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import UpdateGatewayInformationInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+
+Optional fields:
+
+- `GatewayName`: `str`
+- `GatewayTimezone`: `str`
+- `CloudWatchLogGroupARN`: `str`
+
+## UpdateGatewayInformationOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import UpdateGatewayInformationOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1628,10 +2783,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateGatewaySoftwareNowOutputTypeDef
+## UpdateGatewaySoftwareNowInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import UpdateGatewaySoftwareNowOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import UpdateGatewaySoftwareNowInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+
+## UpdateGatewaySoftwareNowOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import UpdateGatewaySoftwareNowOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1640,10 +2805,27 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateMaintenanceStartTimeOutputTypeDef
+## UpdateMaintenanceStartTimeInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import UpdateMaintenanceStartTimeOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import UpdateMaintenanceStartTimeInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+- `HourOfDay`: `int`
+- `MinuteOfHour`: `int`
+
+Optional fields:
+
+- `DayOfWeek`: `int`
+- `DayOfMonth`: `int`
+
+## UpdateMaintenanceStartTimeOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import UpdateMaintenanceStartTimeOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1652,10 +2834,38 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateNFSFileShareOutputTypeDef
+## UpdateNFSFileShareInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import UpdateNFSFileShareOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import UpdateNFSFileShareInputTypeDef
+```
+
+Required fields:
+
+- `FileShareARN`: `str`
+
+Optional fields:
+
+- `KMSEncrypted`: `bool`
+- `KMSKey`: `str`
+- `NFSFileShareDefaults`:
+  [NFSFileShareDefaultsTypeDef](./type_defs.md#nfsfilesharedefaultstypedef)
+- `DefaultStorageClass`: `str`
+- `ObjectACL`: [ObjectACLType](./literals.md#objectacltype)
+- `ClientList`: `List`\[`str`\]
+- `Squash`: `str`
+- `ReadOnly`: `bool`
+- `GuessMIMETypeEnabled`: `bool`
+- `RequesterPays`: `bool`
+- `FileShareName`: `str`
+- `CacheAttributes`:
+  [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
+- `NotificationPolicy`: `str`
+
+## UpdateNFSFileShareOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import UpdateNFSFileShareOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1664,10 +2874,41 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateSMBFileShareOutputTypeDef
+## UpdateSMBFileShareInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import UpdateSMBFileShareOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import UpdateSMBFileShareInputTypeDef
+```
+
+Required fields:
+
+- `FileShareARN`: `str`
+
+Optional fields:
+
+- `KMSEncrypted`: `bool`
+- `KMSKey`: `str`
+- `DefaultStorageClass`: `str`
+- `ObjectACL`: [ObjectACLType](./literals.md#objectacltype)
+- `ReadOnly`: `bool`
+- `GuessMIMETypeEnabled`: `bool`
+- `RequesterPays`: `bool`
+- `SMBACLEnabled`: `bool`
+- `AccessBasedEnumeration`: `bool`
+- `AdminUserList`: `List`\[`str`\]
+- `ValidUserList`: `List`\[`str`\]
+- `InvalidUserList`: `List`\[`str`\]
+- `AuditDestinationARN`: `str`
+- `CaseSensitivity`: [CaseSensitivityType](./literals.md#casesensitivitytype)
+- `FileShareName`: `str`
+- `CacheAttributes`:
+  [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
+- `NotificationPolicy`: `str`
+
+## UpdateSMBFileShareOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import UpdateSMBFileShareOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1676,10 +2917,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateSMBFileShareVisibilityOutputTypeDef
+## UpdateSMBFileShareVisibilityInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import UpdateSMBFileShareVisibilityOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import UpdateSMBFileShareVisibilityInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+- `FileSharesVisible`: `bool`
+
+## UpdateSMBFileShareVisibilityOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import UpdateSMBFileShareVisibilityOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1688,10 +2940,22 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateSMBSecurityStrategyOutputTypeDef
+## UpdateSMBSecurityStrategyInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import UpdateSMBSecurityStrategyOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import UpdateSMBSecurityStrategyInputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+- `SMBSecurityStrategy`:
+  [SMBSecurityStrategyType](./literals.md#smbsecuritystrategytype)
+
+## UpdateSMBSecurityStrategyOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import UpdateSMBSecurityStrategyOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1700,10 +2964,27 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateSnapshotScheduleOutputTypeDef
+## UpdateSnapshotScheduleInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import UpdateSnapshotScheduleOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import UpdateSnapshotScheduleInputTypeDef
+```
+
+Required fields:
+
+- `VolumeARN`: `str`
+- `StartAt`: `int`
+- `RecurrenceInHours`: `int`
+
+Optional fields:
+
+- `Description`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## UpdateSnapshotScheduleOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import UpdateSnapshotScheduleOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1712,10 +2993,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateVTLDeviceTypeOutputTypeDef
+## UpdateVTLDeviceTypeInputTypeDef
 
 ```python
-from mypy_boto3_storagegateway.type_defs import UpdateVTLDeviceTypeOutputTypeDef
+from mypy_boto3_storagegateway.type_defs import UpdateVTLDeviceTypeInputTypeDef
+```
+
+Required fields:
+
+- `VTLDeviceARN`: `str`
+- `DeviceType`: `str`
+
+## UpdateVTLDeviceTypeOutputResponseTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import UpdateVTLDeviceTypeOutputResponseTypeDef
 ```
 
 Required fields:

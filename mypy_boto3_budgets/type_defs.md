@@ -17,29 +17,52 @@ type annotations stubs module
   - [BudgetedAndActualAmountsTypeDef](#budgetedandactualamountstypedef)
   - [CalculatedSpendTypeDef](#calculatedspendtypedef)
   - [CostTypesTypeDef](#costtypestypedef)
-  - [CreateBudgetActionResponseTypeDef](#createbudgetactionresponsetypedef)
+  - [CreateBudgetActionRequestTypeDef](#createbudgetactionrequesttypedef)
+  - [CreateBudgetActionResponseResponseTypeDef](#createbudgetactionresponseresponsetypedef)
+  - [CreateBudgetRequestTypeDef](#createbudgetrequesttypedef)
+  - [CreateNotificationRequestTypeDef](#createnotificationrequesttypedef)
+  - [CreateSubscriberRequestTypeDef](#createsubscriberrequesttypedef)
   - [DefinitionTypeDef](#definitiontypedef)
-  - [DeleteBudgetActionResponseTypeDef](#deletebudgetactionresponsetypedef)
-  - [DescribeBudgetActionHistoriesResponseTypeDef](#describebudgetactionhistoriesresponsetypedef)
-  - [DescribeBudgetActionResponseTypeDef](#describebudgetactionresponsetypedef)
-  - [DescribeBudgetActionsForAccountResponseTypeDef](#describebudgetactionsforaccountresponsetypedef)
-  - [DescribeBudgetActionsForBudgetResponseTypeDef](#describebudgetactionsforbudgetresponsetypedef)
-  - [DescribeBudgetPerformanceHistoryResponseTypeDef](#describebudgetperformancehistoryresponsetypedef)
-  - [DescribeBudgetResponseTypeDef](#describebudgetresponsetypedef)
-  - [DescribeBudgetsResponseTypeDef](#describebudgetsresponsetypedef)
-  - [DescribeNotificationsForBudgetResponseTypeDef](#describenotificationsforbudgetresponsetypedef)
-  - [DescribeSubscribersForNotificationResponseTypeDef](#describesubscribersfornotificationresponsetypedef)
-  - [ExecuteBudgetActionResponseTypeDef](#executebudgetactionresponsetypedef)
+  - [DeleteBudgetActionRequestTypeDef](#deletebudgetactionrequesttypedef)
+  - [DeleteBudgetActionResponseResponseTypeDef](#deletebudgetactionresponseresponsetypedef)
+  - [DeleteBudgetRequestTypeDef](#deletebudgetrequesttypedef)
+  - [DeleteNotificationRequestTypeDef](#deletenotificationrequesttypedef)
+  - [DeleteSubscriberRequestTypeDef](#deletesubscriberrequesttypedef)
+  - [DescribeBudgetActionHistoriesRequestTypeDef](#describebudgetactionhistoriesrequesttypedef)
+  - [DescribeBudgetActionHistoriesResponseResponseTypeDef](#describebudgetactionhistoriesresponseresponsetypedef)
+  - [DescribeBudgetActionRequestTypeDef](#describebudgetactionrequesttypedef)
+  - [DescribeBudgetActionResponseResponseTypeDef](#describebudgetactionresponseresponsetypedef)
+  - [DescribeBudgetActionsForAccountRequestTypeDef](#describebudgetactionsforaccountrequesttypedef)
+  - [DescribeBudgetActionsForAccountResponseResponseTypeDef](#describebudgetactionsforaccountresponseresponsetypedef)
+  - [DescribeBudgetActionsForBudgetRequestTypeDef](#describebudgetactionsforbudgetrequesttypedef)
+  - [DescribeBudgetActionsForBudgetResponseResponseTypeDef](#describebudgetactionsforbudgetresponseresponsetypedef)
+  - [DescribeBudgetPerformanceHistoryRequestTypeDef](#describebudgetperformancehistoryrequesttypedef)
+  - [DescribeBudgetPerformanceHistoryResponseResponseTypeDef](#describebudgetperformancehistoryresponseresponsetypedef)
+  - [DescribeBudgetRequestTypeDef](#describebudgetrequesttypedef)
+  - [DescribeBudgetResponseResponseTypeDef](#describebudgetresponseresponsetypedef)
+  - [DescribeBudgetsRequestTypeDef](#describebudgetsrequesttypedef)
+  - [DescribeBudgetsResponseResponseTypeDef](#describebudgetsresponseresponsetypedef)
+  - [DescribeNotificationsForBudgetRequestTypeDef](#describenotificationsforbudgetrequesttypedef)
+  - [DescribeNotificationsForBudgetResponseResponseTypeDef](#describenotificationsforbudgetresponseresponsetypedef)
+  - [DescribeSubscribersForNotificationRequestTypeDef](#describesubscribersfornotificationrequesttypedef)
+  - [DescribeSubscribersForNotificationResponseResponseTypeDef](#describesubscribersfornotificationresponseresponsetypedef)
+  - [ExecuteBudgetActionRequestTypeDef](#executebudgetactionrequesttypedef)
+  - [ExecuteBudgetActionResponseResponseTypeDef](#executebudgetactionresponseresponsetypedef)
   - [IamActionDefinitionTypeDef](#iamactiondefinitiontypedef)
   - [NotificationTypeDef](#notificationtypedef)
   - [NotificationWithSubscribersTypeDef](#notificationwithsubscriberstypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [ScpActionDefinitionTypeDef](#scpactiondefinitiontypedef)
   - [SpendTypeDef](#spendtypedef)
   - [SsmActionDefinitionTypeDef](#ssmactiondefinitiontypedef)
   - [SubscriberTypeDef](#subscribertypedef)
   - [TimePeriodTypeDef](#timeperiodtypedef)
-  - [UpdateBudgetActionResponseTypeDef](#updatebudgetactionresponsetypedef)
+  - [UpdateBudgetActionRequestTypeDef](#updatebudgetactionrequesttypedef)
+  - [UpdateBudgetActionResponseResponseTypeDef](#updatebudgetactionresponseresponsetypedef)
+  - [UpdateBudgetRequestTypeDef](#updatebudgetrequesttypedef)
+  - [UpdateNotificationRequestTypeDef](#updatenotificationrequesttypedef)
+  - [UpdateSubscriberRequestTypeDef](#updatesubscriberrequesttypedef)
 
 ## ActionHistoryDetailsTypeDef
 
@@ -137,7 +160,7 @@ Optional fields:
 - `TimePeriod`: [TimePeriodTypeDef](./type_defs.md#timeperiodtypedef)
 - `CalculatedSpend`:
   [CalculatedSpendTypeDef](./type_defs.md#calculatedspendtypedef)
-- `LastUpdatedTime`: `datetime`
+- `LastUpdatedTime`: `Union`\[`datetime`, `str`\]
 
 ## BudgetedAndActualAmountsTypeDef
 
@@ -185,10 +208,31 @@ Optional fields:
 - `IncludeDiscount`: `bool`
 - `UseAmortized`: `bool`
 
-## CreateBudgetActionResponseTypeDef
+## CreateBudgetActionRequestTypeDef
 
 ```python
-from mypy_boto3_budgets.type_defs import CreateBudgetActionResponseTypeDef
+from mypy_boto3_budgets.type_defs import CreateBudgetActionRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `BudgetName`: `str`
+- `NotificationType`:
+  [NotificationTypeType](./literals.md#notificationtypetype)
+- `ActionType`: [ActionTypeType](./literals.md#actiontypetype)
+- `ActionThreshold`:
+  [ActionThresholdTypeDef](./type_defs.md#actionthresholdtypedef)
+- `Definition`: [DefinitionTypeDef](./type_defs.md#definitiontypedef)
+- `ExecutionRoleArn`: `str`
+- `ApprovalModel`: [ApprovalModelType](./literals.md#approvalmodeltype)
+- `Subscribers`:
+  `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
+
+## CreateBudgetActionResponseResponseTypeDef
+
+```python
+from mypy_boto3_budgets.type_defs import CreateBudgetActionResponseResponseTypeDef
 ```
 
 Required fields:
@@ -196,6 +240,51 @@ Required fields:
 - `AccountId`: `str`
 - `BudgetName`: `str`
 - `ActionId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateBudgetRequestTypeDef
+
+```python
+from mypy_boto3_budgets.type_defs import CreateBudgetRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `Budget`: [BudgetTypeDef](./type_defs.md#budgettypedef)
+
+Optional fields:
+
+- `NotificationsWithSubscribers`:
+  `List`\[[NotificationWithSubscribersTypeDef](./type_defs.md#notificationwithsubscriberstypedef)\]
+
+## CreateNotificationRequestTypeDef
+
+```python
+from mypy_boto3_budgets.type_defs import CreateNotificationRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `BudgetName`: `str`
+- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
+- `Subscribers`:
+  `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
+
+## CreateSubscriberRequestTypeDef
+
+```python
+from mypy_boto3_budgets.type_defs import CreateSubscriberRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `BudgetName`: `str`
+- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
+- `Subscriber`: [SubscriberTypeDef](./type_defs.md#subscribertypedef)
 
 ## DefinitionTypeDef
 
@@ -212,10 +301,22 @@ Optional fields:
 - `SsmActionDefinition`:
   [SsmActionDefinitionTypeDef](./type_defs.md#ssmactiondefinitiontypedef)
 
-## DeleteBudgetActionResponseTypeDef
+## DeleteBudgetActionRequestTypeDef
 
 ```python
-from mypy_boto3_budgets.type_defs import DeleteBudgetActionResponseTypeDef
+from mypy_boto3_budgets.type_defs import DeleteBudgetActionRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `BudgetName`: `str`
+- `ActionId`: `str`
+
+## DeleteBudgetActionResponseResponseTypeDef
+
+```python
+from mypy_boto3_budgets.type_defs import DeleteBudgetActionResponseResponseTypeDef
 ```
 
 Required fields:
@@ -223,26 +324,93 @@ Required fields:
 - `AccountId`: `str`
 - `BudgetName`: `str`
 - `Action`: [ActionTypeDef](./type_defs.md#actiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeBudgetActionHistoriesResponseTypeDef
+## DeleteBudgetRequestTypeDef
 
 ```python
-from mypy_boto3_budgets.type_defs import DescribeBudgetActionHistoriesResponseTypeDef
+from mypy_boto3_budgets.type_defs import DeleteBudgetRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `BudgetName`: `str`
+
+## DeleteNotificationRequestTypeDef
+
+```python
+from mypy_boto3_budgets.type_defs import DeleteNotificationRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `BudgetName`: `str`
+- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
+
+## DeleteSubscriberRequestTypeDef
+
+```python
+from mypy_boto3_budgets.type_defs import DeleteSubscriberRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `BudgetName`: `str`
+- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
+- `Subscriber`: [SubscriberTypeDef](./type_defs.md#subscribertypedef)
+
+## DescribeBudgetActionHistoriesRequestTypeDef
+
+```python
+from mypy_boto3_budgets.type_defs import DescribeBudgetActionHistoriesRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `BudgetName`: `str`
+- `ActionId`: `str`
+
+Optional fields:
+
+- `TimePeriod`: [TimePeriodTypeDef](./type_defs.md#timeperiodtypedef)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeBudgetActionHistoriesResponseResponseTypeDef
+
+```python
+from mypy_boto3_budgets.type_defs import DescribeBudgetActionHistoriesResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `ActionHistories`:
   `List`\[[ActionHistoryTypeDef](./type_defs.md#actionhistorytypedef)\]
-
-Optional fields:
-
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeBudgetActionResponseTypeDef
+## DescribeBudgetActionRequestTypeDef
 
 ```python
-from mypy_boto3_budgets.type_defs import DescribeBudgetActionResponseTypeDef
+from mypy_boto3_budgets.type_defs import DescribeBudgetActionRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `BudgetName`: `str`
+- `ActionId`: `str`
+
+## DescribeBudgetActionResponseResponseTypeDef
+
+```python
+from mypy_boto3_budgets.type_defs import DescribeBudgetActionResponseResponseTypeDef
 ```
 
 Required fields:
@@ -250,96 +418,213 @@ Required fields:
 - `AccountId`: `str`
 - `BudgetName`: `str`
 - `Action`: [ActionTypeDef](./type_defs.md#actiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeBudgetActionsForAccountResponseTypeDef
+## DescribeBudgetActionsForAccountRequestTypeDef
 
 ```python
-from mypy_boto3_budgets.type_defs import DescribeBudgetActionsForAccountResponseTypeDef
+from mypy_boto3_budgets.type_defs import DescribeBudgetActionsForAccountRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeBudgetActionsForAccountResponseResponseTypeDef
+
+```python
+from mypy_boto3_budgets.type_defs import DescribeBudgetActionsForAccountResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `Actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeBudgetActionsForBudgetRequestTypeDef
+
+```python
+from mypy_boto3_budgets.type_defs import DescribeBudgetActionsForBudgetRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `BudgetName`: `str`
 
 Optional fields:
 
+- `MaxResults`: `int`
 - `NextToken`: `str`
 
-## DescribeBudgetActionsForBudgetResponseTypeDef
+## DescribeBudgetActionsForBudgetResponseResponseTypeDef
 
 ```python
-from mypy_boto3_budgets.type_defs import DescribeBudgetActionsForBudgetResponseTypeDef
+from mypy_boto3_budgets.type_defs import DescribeBudgetActionsForBudgetResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `Actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
-
-Optional fields:
-
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeBudgetPerformanceHistoryResponseTypeDef
+## DescribeBudgetPerformanceHistoryRequestTypeDef
 
 ```python
-from mypy_boto3_budgets.type_defs import DescribeBudgetPerformanceHistoryResponseTypeDef
+from mypy_boto3_budgets.type_defs import DescribeBudgetPerformanceHistoryRequestTypeDef
 ```
 
+Required fields:
+
+- `AccountId`: `str`
+- `BudgetName`: `str`
+
 Optional fields:
+
+- `TimePeriod`: [TimePeriodTypeDef](./type_defs.md#timeperiodtypedef)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeBudgetPerformanceHistoryResponseResponseTypeDef
+
+```python
+from mypy_boto3_budgets.type_defs import DescribeBudgetPerformanceHistoryResponseResponseTypeDef
+```
+
+Required fields:
 
 - `BudgetPerformanceHistory`:
   [BudgetPerformanceHistoryTypeDef](./type_defs.md#budgetperformancehistorytypedef)
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeBudgetResponseTypeDef
+## DescribeBudgetRequestTypeDef
 
 ```python
-from mypy_boto3_budgets.type_defs import DescribeBudgetResponseTypeDef
+from mypy_boto3_budgets.type_defs import DescribeBudgetRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AccountId`: `str`
+- `BudgetName`: `str`
+
+## DescribeBudgetResponseResponseTypeDef
+
+```python
+from mypy_boto3_budgets.type_defs import DescribeBudgetResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Budget`: [BudgetTypeDef](./type_defs.md#budgettypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeBudgetsResponseTypeDef
+## DescribeBudgetsRequestTypeDef
 
 ```python
-from mypy_boto3_budgets.type_defs import DescribeBudgetsResponseTypeDef
+from mypy_boto3_budgets.type_defs import DescribeBudgetsRequestTypeDef
 ```
 
+Required fields:
+
+- `AccountId`: `str`
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeBudgetsResponseResponseTypeDef
+
+```python
+from mypy_boto3_budgets.type_defs import DescribeBudgetsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Budgets`: `List`\[[BudgetTypeDef](./type_defs.md#budgettypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeNotificationsForBudgetResponseTypeDef
+## DescribeNotificationsForBudgetRequestTypeDef
 
 ```python
-from mypy_boto3_budgets.type_defs import DescribeNotificationsForBudgetResponseTypeDef
+from mypy_boto3_budgets.type_defs import DescribeNotificationsForBudgetRequestTypeDef
 ```
 
+Required fields:
+
+- `AccountId`: `str`
+- `BudgetName`: `str`
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeNotificationsForBudgetResponseResponseTypeDef
+
+```python
+from mypy_boto3_budgets.type_defs import DescribeNotificationsForBudgetResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Notifications`:
   `List`\[[NotificationTypeDef](./type_defs.md#notificationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSubscribersForNotificationResponseTypeDef
+## DescribeSubscribersForNotificationRequestTypeDef
 
 ```python
-from mypy_boto3_budgets.type_defs import DescribeSubscribersForNotificationResponseTypeDef
+from mypy_boto3_budgets.type_defs import DescribeSubscribersForNotificationRequestTypeDef
 ```
 
+Required fields:
+
+- `AccountId`: `str`
+- `BudgetName`: `str`
+- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeSubscribersForNotificationResponseResponseTypeDef
+
+```python
+from mypy_boto3_budgets.type_defs import DescribeSubscribersForNotificationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Subscribers`:
   `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ExecuteBudgetActionResponseTypeDef
+## ExecuteBudgetActionRequestTypeDef
 
 ```python
-from mypy_boto3_budgets.type_defs import ExecuteBudgetActionResponseTypeDef
+from mypy_boto3_budgets.type_defs import ExecuteBudgetActionRequestTypeDef
 ```
 
 Required fields:
@@ -348,6 +633,21 @@ Required fields:
 - `BudgetName`: `str`
 - `ActionId`: `str`
 - `ExecutionType`: [ExecutionTypeType](./literals.md#executiontypetype)
+
+## ExecuteBudgetActionResponseResponseTypeDef
+
+```python
+from mypy_boto3_budgets.type_defs import ExecuteBudgetActionResponseResponseTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `BudgetName`: `str`
+- `ActionId`: `str`
+- `ExecutionType`: [ExecutionTypeType](./literals.md#executiontypetype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## IamActionDefinitionTypeDef
 
@@ -409,6 +709,20 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_budgets.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
 ## ScpActionDefinitionTypeDef
 
 ```python
@@ -463,13 +777,37 @@ from mypy_boto3_budgets.type_defs import TimePeriodTypeDef
 
 Optional fields:
 
-- `Start`: `datetime`
-- `End`: `datetime`
+- `Start`: `Union`\[`datetime`, `str`\]
+- `End`: `Union`\[`datetime`, `str`\]
 
-## UpdateBudgetActionResponseTypeDef
+## UpdateBudgetActionRequestTypeDef
 
 ```python
-from mypy_boto3_budgets.type_defs import UpdateBudgetActionResponseTypeDef
+from mypy_boto3_budgets.type_defs import UpdateBudgetActionRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `BudgetName`: `str`
+- `ActionId`: `str`
+
+Optional fields:
+
+- `NotificationType`:
+  [NotificationTypeType](./literals.md#notificationtypetype)
+- `ActionThreshold`:
+  [ActionThresholdTypeDef](./type_defs.md#actionthresholdtypedef)
+- `Definition`: [DefinitionTypeDef](./type_defs.md#definitiontypedef)
+- `ExecutionRoleArn`: `str`
+- `ApprovalModel`: [ApprovalModelType](./literals.md#approvalmodeltype)
+- `Subscribers`:
+  `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
+
+## UpdateBudgetActionResponseResponseTypeDef
+
+```python
+from mypy_boto3_budgets.type_defs import UpdateBudgetActionResponseResponseTypeDef
 ```
 
 Required fields:
@@ -478,3 +816,43 @@ Required fields:
 - `BudgetName`: `str`
 - `OldAction`: [ActionTypeDef](./type_defs.md#actiontypedef)
 - `NewAction`: [ActionTypeDef](./type_defs.md#actiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateBudgetRequestTypeDef
+
+```python
+from mypy_boto3_budgets.type_defs import UpdateBudgetRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `NewBudget`: [BudgetTypeDef](./type_defs.md#budgettypedef)
+
+## UpdateNotificationRequestTypeDef
+
+```python
+from mypy_boto3_budgets.type_defs import UpdateNotificationRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `BudgetName`: `str`
+- `OldNotification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
+- `NewNotification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
+
+## UpdateSubscriberRequestTypeDef
+
+```python
+from mypy_boto3_budgets.type_defs import UpdateSubscriberRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+- `BudgetName`: `str`
+- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
+- `OldSubscriber`: [SubscriberTypeDef](./type_defs.md#subscribertypedef)
+- `NewSubscriber`: [SubscriberTypeDef](./type_defs.md#subscribertypedef)

@@ -8,21 +8,50 @@ type annotations stubs module
 [mypy_boto3_s3outposts](https://pypi.org/project/mypy-boto3-s3outposts/).
 
 - [Typed dictionaries for boto3 S3Outposts module](#typed-dictionaries-for-boto3-s3outposts-module)
-  - [CreateEndpointResultTypeDef](#createendpointresulttypedef)
+  - [CreateEndpointRequestTypeDef](#createendpointrequesttypedef)
+  - [CreateEndpointResultResponseTypeDef](#createendpointresultresponsetypedef)
+  - [DeleteEndpointRequestTypeDef](#deleteendpointrequesttypedef)
   - [EndpointTypeDef](#endpointtypedef)
-  - [ListEndpointsResultTypeDef](#listendpointsresulttypedef)
+  - [ListEndpointsRequestTypeDef](#listendpointsrequesttypedef)
+  - [ListEndpointsResultResponseTypeDef](#listendpointsresultresponsetypedef)
   - [NetworkInterfaceTypeDef](#networkinterfacetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
 
-## CreateEndpointResultTypeDef
+## CreateEndpointRequestTypeDef
 
 ```python
-from mypy_boto3_s3outposts.type_defs import CreateEndpointResultTypeDef
+from mypy_boto3_s3outposts.type_defs import CreateEndpointRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `OutpostId`: `str`
+- `SubnetId`: `str`
+- `SecurityGroupId`: `str`
+
+## CreateEndpointResultResponseTypeDef
+
+```python
+from mypy_boto3_s3outposts.type_defs import CreateEndpointResultResponseTypeDef
+```
+
+Required fields:
 
 - `EndpointArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteEndpointRequestTypeDef
+
+```python
+from mypy_boto3_s3outposts.type_defs import DeleteEndpointRequestTypeDef
+```
+
+Required fields:
+
+- `EndpointId`: `str`
+- `OutpostId`: `str`
 
 ## EndpointTypeDef
 
@@ -40,16 +69,29 @@ Optional fields:
 - `NetworkInterfaces`:
   `List`\[[NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)\]
 
-## ListEndpointsResultTypeDef
+## ListEndpointsRequestTypeDef
 
 ```python
-from mypy_boto3_s3outposts.type_defs import ListEndpointsResultTypeDef
+from mypy_boto3_s3outposts.type_defs import ListEndpointsRequestTypeDef
 ```
 
 Optional fields:
 
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListEndpointsResultResponseTypeDef
+
+```python
+from mypy_boto3_s3outposts.type_defs import ListEndpointsResultResponseTypeDef
+```
+
+Required fields:
+
 - `Endpoints`: `List`\[[EndpointTypeDef](./type_defs.md#endpointtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## NetworkInterfaceTypeDef
 
@@ -72,3 +114,17 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_s3outposts.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`

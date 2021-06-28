@@ -11,40 +11,63 @@ type annotations stubs module
   - [AgentConfigurationStatusTypeDef](#agentconfigurationstatustypedef)
   - [AgentInfoTypeDef](#agentinfotypedef)
   - [AgentNetworkInfoTypeDef](#agentnetworkinfotypedef)
+  - [AssociateConfigurationItemsToApplicationRequestTypeDef](#associateconfigurationitemstoapplicationrequesttypedef)
   - [BatchDeleteImportDataErrorTypeDef](#batchdeleteimportdataerrortypedef)
-  - [BatchDeleteImportDataResponseTypeDef](#batchdeleteimportdataresponsetypedef)
+  - [BatchDeleteImportDataRequestTypeDef](#batchdeleteimportdatarequesttypedef)
+  - [BatchDeleteImportDataResponseResponseTypeDef](#batchdeleteimportdataresponseresponsetypedef)
   - [ConfigurationTagTypeDef](#configurationtagtypedef)
   - [ContinuousExportDescriptionTypeDef](#continuousexportdescriptiontypedef)
-  - [CreateApplicationResponseTypeDef](#createapplicationresponsetypedef)
+  - [CreateApplicationRequestTypeDef](#createapplicationrequesttypedef)
+  - [CreateApplicationResponseResponseTypeDef](#createapplicationresponseresponsetypedef)
+  - [CreateTagsRequestTypeDef](#createtagsrequesttypedef)
   - [CustomerAgentInfoTypeDef](#customeragentinfotypedef)
   - [CustomerConnectorInfoTypeDef](#customerconnectorinfotypedef)
-  - [DescribeAgentsResponseTypeDef](#describeagentsresponsetypedef)
-  - [DescribeConfigurationsResponseTypeDef](#describeconfigurationsresponsetypedef)
-  - [DescribeContinuousExportsResponseTypeDef](#describecontinuousexportsresponsetypedef)
-  - [DescribeExportConfigurationsResponseTypeDef](#describeexportconfigurationsresponsetypedef)
-  - [DescribeExportTasksResponseTypeDef](#describeexporttasksresponsetypedef)
-  - [DescribeImportTasksResponseTypeDef](#describeimporttasksresponsetypedef)
-  - [DescribeTagsResponseTypeDef](#describetagsresponsetypedef)
-  - [ExportConfigurationsResponseTypeDef](#exportconfigurationsresponsetypedef)
+  - [DeleteApplicationsRequestTypeDef](#deleteapplicationsrequesttypedef)
+  - [DeleteTagsRequestTypeDef](#deletetagsrequesttypedef)
+  - [DescribeAgentsRequestTypeDef](#describeagentsrequesttypedef)
+  - [DescribeAgentsResponseResponseTypeDef](#describeagentsresponseresponsetypedef)
+  - [DescribeConfigurationsRequestTypeDef](#describeconfigurationsrequesttypedef)
+  - [DescribeConfigurationsResponseResponseTypeDef](#describeconfigurationsresponseresponsetypedef)
+  - [DescribeContinuousExportsRequestTypeDef](#describecontinuousexportsrequesttypedef)
+  - [DescribeContinuousExportsResponseResponseTypeDef](#describecontinuousexportsresponseresponsetypedef)
+  - [DescribeExportConfigurationsRequestTypeDef](#describeexportconfigurationsrequesttypedef)
+  - [DescribeExportConfigurationsResponseResponseTypeDef](#describeexportconfigurationsresponseresponsetypedef)
+  - [DescribeExportTasksRequestTypeDef](#describeexporttasksrequesttypedef)
+  - [DescribeExportTasksResponseResponseTypeDef](#describeexporttasksresponseresponsetypedef)
+  - [DescribeImportTasksRequestTypeDef](#describeimporttasksrequesttypedef)
+  - [DescribeImportTasksResponseResponseTypeDef](#describeimporttasksresponseresponsetypedef)
+  - [DescribeTagsRequestTypeDef](#describetagsrequesttypedef)
+  - [DescribeTagsResponseResponseTypeDef](#describetagsresponseresponsetypedef)
+  - [DisassociateConfigurationItemsFromApplicationRequestTypeDef](#disassociateconfigurationitemsfromapplicationrequesttypedef)
+  - [ExportConfigurationsResponseResponseTypeDef](#exportconfigurationsresponseresponsetypedef)
   - [ExportFilterTypeDef](#exportfiltertypedef)
   - [ExportInfoTypeDef](#exportinfotypedef)
   - [FilterTypeDef](#filtertypedef)
-  - [GetDiscoverySummaryResponseTypeDef](#getdiscoverysummaryresponsetypedef)
+  - [GetDiscoverySummaryResponseResponseTypeDef](#getdiscoverysummaryresponseresponsetypedef)
   - [ImportTaskFilterTypeDef](#importtaskfiltertypedef)
   - [ImportTaskTypeDef](#importtasktypedef)
-  - [ListConfigurationsResponseTypeDef](#listconfigurationsresponsetypedef)
-  - [ListServerNeighborsResponseTypeDef](#listserverneighborsresponsetypedef)
+  - [ListConfigurationsRequestTypeDef](#listconfigurationsrequesttypedef)
+  - [ListConfigurationsResponseResponseTypeDef](#listconfigurationsresponseresponsetypedef)
+  - [ListServerNeighborsRequestTypeDef](#listserverneighborsrequesttypedef)
+  - [ListServerNeighborsResponseResponseTypeDef](#listserverneighborsresponseresponsetypedef)
   - [NeighborConnectionDetailTypeDef](#neighborconnectiondetailtypedef)
   - [OrderByElementTypeDef](#orderbyelementtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [StartContinuousExportResponseTypeDef](#startcontinuousexportresponsetypedef)
-  - [StartDataCollectionByAgentIdsResponseTypeDef](#startdatacollectionbyagentidsresponsetypedef)
-  - [StartExportTaskResponseTypeDef](#startexporttaskresponsetypedef)
-  - [StartImportTaskResponseTypeDef](#startimporttaskresponsetypedef)
-  - [StopContinuousExportResponseTypeDef](#stopcontinuousexportresponsetypedef)
-  - [StopDataCollectionByAgentIdsResponseTypeDef](#stopdatacollectionbyagentidsresponsetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [StartContinuousExportResponseResponseTypeDef](#startcontinuousexportresponseresponsetypedef)
+  - [StartDataCollectionByAgentIdsRequestTypeDef](#startdatacollectionbyagentidsrequesttypedef)
+  - [StartDataCollectionByAgentIdsResponseResponseTypeDef](#startdatacollectionbyagentidsresponseresponsetypedef)
+  - [StartExportTaskRequestTypeDef](#startexporttaskrequesttypedef)
+  - [StartExportTaskResponseResponseTypeDef](#startexporttaskresponseresponsetypedef)
+  - [StartImportTaskRequestTypeDef](#startimporttaskrequesttypedef)
+  - [StartImportTaskResponseResponseTypeDef](#startimporttaskresponseresponsetypedef)
+  - [StopContinuousExportRequestTypeDef](#stopcontinuousexportrequesttypedef)
+  - [StopContinuousExportResponseResponseTypeDef](#stopcontinuousexportresponseresponsetypedef)
+  - [StopDataCollectionByAgentIdsRequestTypeDef](#stopdatacollectionbyagentidsrequesttypedef)
+  - [StopDataCollectionByAgentIdsResponseResponseTypeDef](#stopdatacollectionbyagentidsresponseresponsetypedef)
   - [TagFilterTypeDef](#tagfiltertypedef)
   - [TagTypeDef](#tagtypedef)
+  - [UpdateApplicationRequestTypeDef](#updateapplicationrequesttypedef)
 
 ## AgentConfigurationStatusTypeDef
 
@@ -89,6 +112,17 @@ Optional fields:
 - `ipAddress`: `str`
 - `macAddress`: `str`
 
+## AssociateConfigurationItemsToApplicationRequestTypeDef
+
+```python
+from mypy_boto3_discovery.type_defs import AssociateConfigurationItemsToApplicationRequestTypeDef
+```
+
+Required fields:
+
+- `applicationConfigurationId`: `str`
+- `configurationIds`: `List`\[`str`\]
+
 ## BatchDeleteImportDataErrorTypeDef
 
 ```python
@@ -102,16 +136,28 @@ Optional fields:
   [BatchDeleteImportDataErrorCodeType](./literals.md#batchdeleteimportdataerrorcodetype)
 - `errorDescription`: `str`
 
-## BatchDeleteImportDataResponseTypeDef
+## BatchDeleteImportDataRequestTypeDef
 
 ```python
-from mypy_boto3_discovery.type_defs import BatchDeleteImportDataResponseTypeDef
+from mypy_boto3_discovery.type_defs import BatchDeleteImportDataRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `importTaskIds`: `List`\[`str`\]
+
+## BatchDeleteImportDataResponseResponseTypeDef
+
+```python
+from mypy_boto3_discovery.type_defs import BatchDeleteImportDataResponseResponseTypeDef
+```
+
+Required fields:
 
 - `errors`:
   `List`\[[BatchDeleteImportDataErrorTypeDef](./type_defs.md#batchdeleteimportdataerrortypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ConfigurationTagTypeDef
 
@@ -147,15 +193,42 @@ Optional fields:
   [DataSourceType](./literals.md#datasourcetype))
 - `schemaStorageConfig`: `Dict`\[`str`, `str`\]
 
-## CreateApplicationResponseTypeDef
+## CreateApplicationRequestTypeDef
 
 ```python
-from mypy_boto3_discovery.type_defs import CreateApplicationResponseTypeDef
+from mypy_boto3_discovery.type_defs import CreateApplicationRequestTypeDef
 ```
+
+Required fields:
+
+- `name`: `str`
 
 Optional fields:
 
+- `description`: `str`
+
+## CreateApplicationResponseResponseTypeDef
+
+```python
+from mypy_boto3_discovery.type_defs import CreateApplicationResponseResponseTypeDef
+```
+
+Required fields:
+
 - `configurationId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateTagsRequestTypeDef
+
+```python
+from mypy_boto3_discovery.type_defs import CreateTagsRequestTypeDef
+```
+
+Required fields:
+
+- `configurationIds`: `List`\[`str`\]
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CustomerAgentInfoTypeDef
 
@@ -189,95 +262,232 @@ Required fields:
 - `totalConnectors`: `int`
 - `unknownConnectors`: `int`
 
-## DescribeAgentsResponseTypeDef
+## DeleteApplicationsRequestTypeDef
 
 ```python
-from mypy_boto3_discovery.type_defs import DescribeAgentsResponseTypeDef
+from mypy_boto3_discovery.type_defs import DeleteApplicationsRequestTypeDef
+```
+
+Required fields:
+
+- `configurationIds`: `List`\[`str`\]
+
+## DeleteTagsRequestTypeDef
+
+```python
+from mypy_boto3_discovery.type_defs import DeleteTagsRequestTypeDef
+```
+
+Required fields:
+
+- `configurationIds`: `List`\[`str`\]
+
+Optional fields:
+
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## DescribeAgentsRequestTypeDef
+
+```python
+from mypy_boto3_discovery.type_defs import DescribeAgentsRequestTypeDef
 ```
 
 Optional fields:
+
+- `agentIds`: `List`\[`str`\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## DescribeAgentsResponseResponseTypeDef
+
+```python
+from mypy_boto3_discovery.type_defs import DescribeAgentsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `agentsInfo`: `List`\[[AgentInfoTypeDef](./type_defs.md#agentinfotypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeConfigurationsResponseTypeDef
+## DescribeConfigurationsRequestTypeDef
 
 ```python
-from mypy_boto3_discovery.type_defs import DescribeConfigurationsResponseTypeDef
+from mypy_boto3_discovery.type_defs import DescribeConfigurationsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `configurationIds`: `List`\[`str`\]
+
+## DescribeConfigurationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_discovery.type_defs import DescribeConfigurationsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `configurations`: `List`\[`Dict`\[`str`, `str`\]\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeContinuousExportsResponseTypeDef
+## DescribeContinuousExportsRequestTypeDef
 
 ```python
-from mypy_boto3_discovery.type_defs import DescribeContinuousExportsResponseTypeDef
+from mypy_boto3_discovery.type_defs import DescribeContinuousExportsRequestTypeDef
 ```
 
 Optional fields:
+
+- `exportIds`: `List`\[`str`\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## DescribeContinuousExportsResponseResponseTypeDef
+
+```python
+from mypy_boto3_discovery.type_defs import DescribeContinuousExportsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `descriptions`:
   `List`\[[ContinuousExportDescriptionTypeDef](./type_defs.md#continuousexportdescriptiontypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeExportConfigurationsResponseTypeDef
+## DescribeExportConfigurationsRequestTypeDef
 
 ```python
-from mypy_boto3_discovery.type_defs import DescribeExportConfigurationsResponseTypeDef
+from mypy_boto3_discovery.type_defs import DescribeExportConfigurationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `exportIds`: `List`\[`str`\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## DescribeExportConfigurationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_discovery.type_defs import DescribeExportConfigurationsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `exportsInfo`:
   `List`\[[ExportInfoTypeDef](./type_defs.md#exportinfotypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeExportTasksResponseTypeDef
+## DescribeExportTasksRequestTypeDef
 
 ```python
-from mypy_boto3_discovery.type_defs import DescribeExportTasksResponseTypeDef
+from mypy_boto3_discovery.type_defs import DescribeExportTasksRequestTypeDef
 ```
 
 Optional fields:
+
+- `exportIds`: `List`\[`str`\]
+- `filters`:
+  `List`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## DescribeExportTasksResponseResponseTypeDef
+
+```python
+from mypy_boto3_discovery.type_defs import DescribeExportTasksResponseResponseTypeDef
+```
+
+Required fields:
 
 - `exportsInfo`:
   `List`\[[ExportInfoTypeDef](./type_defs.md#exportinfotypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeImportTasksResponseTypeDef
+## DescribeImportTasksRequestTypeDef
 
 ```python
-from mypy_boto3_discovery.type_defs import DescribeImportTasksResponseTypeDef
+from mypy_boto3_discovery.type_defs import DescribeImportTasksRequestTypeDef
 ```
 
 Optional fields:
+
+- `filters`:
+  `List`\[[ImportTaskFilterTypeDef](./type_defs.md#importtaskfiltertypedef)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## DescribeImportTasksResponseResponseTypeDef
+
+```python
+from mypy_boto3_discovery.type_defs import DescribeImportTasksResponseResponseTypeDef
+```
+
+Required fields:
 
 - `nextToken`: `str`
 - `tasks`: `List`\[[ImportTaskTypeDef](./type_defs.md#importtasktypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTagsResponseTypeDef
+## DescribeTagsRequestTypeDef
 
 ```python
-from mypy_boto3_discovery.type_defs import DescribeTagsResponseTypeDef
+from mypy_boto3_discovery.type_defs import DescribeTagsRequestTypeDef
 ```
 
 Optional fields:
+
+- `filters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## DescribeTagsResponseResponseTypeDef
+
+```python
+from mypy_boto3_discovery.type_defs import DescribeTagsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `tags`:
   `List`\[[ConfigurationTagTypeDef](./type_defs.md#configurationtagtypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ExportConfigurationsResponseTypeDef
+## DisassociateConfigurationItemsFromApplicationRequestTypeDef
 
 ```python
-from mypy_boto3_discovery.type_defs import ExportConfigurationsResponseTypeDef
+from mypy_boto3_discovery.type_defs import DisassociateConfigurationItemsFromApplicationRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `applicationConfigurationId`: `str`
+- `configurationIds`: `List`\[`str`\]
+
+## ExportConfigurationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_discovery.type_defs import ExportConfigurationsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `exportId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ExportFilterTypeDef
 
@@ -323,13 +533,13 @@ Required fields:
 - `values`: `List`\[`str`\]
 - `condition`: `str`
 
-## GetDiscoverySummaryResponseTypeDef
+## GetDiscoverySummaryResponseResponseTypeDef
 
 ```python
-from mypy_boto3_discovery.type_defs import GetDiscoverySummaryResponseTypeDef
+from mypy_boto3_discovery.type_defs import GetDiscoverySummaryResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `servers`: `int`
 - `applications`: `int`
@@ -339,6 +549,8 @@ Optional fields:
   [CustomerAgentInfoTypeDef](./type_defs.md#customeragentinfotypedef)
 - `connectorSummary`:
   [CustomerConnectorInfoTypeDef](./type_defs.md#customerconnectorinfotypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ImportTaskFilterTypeDef
 
@@ -373,32 +585,69 @@ Optional fields:
 - `applicationImportFailure`: `int`
 - `errorsAndFailedEntriesZip`: `str`
 
-## ListConfigurationsResponseTypeDef
+## ListConfigurationsRequestTypeDef
 
 ```python
-from mypy_boto3_discovery.type_defs import ListConfigurationsResponseTypeDef
+from mypy_boto3_discovery.type_defs import ListConfigurationsRequestTypeDef
 ```
+
+Required fields:
+
+- `configurationType`:
+  [ConfigurationItemTypeType](./literals.md#configurationitemtypetype)
 
 Optional fields:
 
-- `configurations`: `List`\[`Dict`\[`str`, `str`\]\]
+- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `maxResults`: `int`
 - `nextToken`: `str`
+- `orderBy`:
+  `List`\[[OrderByElementTypeDef](./type_defs.md#orderbyelementtypedef)\]
 
-## ListServerNeighborsResponseTypeDef
+## ListConfigurationsResponseResponseTypeDef
 
 ```python
-from mypy_boto3_discovery.type_defs import ListServerNeighborsResponseTypeDef
+from mypy_boto3_discovery.type_defs import ListConfigurationsResponseResponseTypeDef
+```
+
+Required fields:
+
+- `configurations`: `List`\[`Dict`\[`str`, `str`\]\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListServerNeighborsRequestTypeDef
+
+```python
+from mypy_boto3_discovery.type_defs import ListServerNeighborsRequestTypeDef
+```
+
+Required fields:
+
+- `configurationId`: `str`
+
+Optional fields:
+
+- `portInformationNeeded`: `bool`
+- `neighborConfigurationIds`: `List`\[`str`\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListServerNeighborsResponseResponseTypeDef
+
+```python
+from mypy_boto3_discovery.type_defs import ListServerNeighborsResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `neighbors`:
   `List`\[[NeighborConnectionDetailTypeDef](./type_defs.md#neighborconnectiondetailtypedef)\]
-
-Optional fields:
-
 - `nextToken`: `str`
 - `knownDependencyCount`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## NeighborConnectionDetailTypeDef
 
@@ -443,13 +692,27 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## StartContinuousExportResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_discovery.type_defs import StartContinuousExportResponseTypeDef
+from mypy_boto3_discovery.type_defs import ResponseMetadataTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## StartContinuousExportResponseResponseTypeDef
+
+```python
+from mypy_boto3_discovery.type_defs import StartContinuousExportResponseResponseTypeDef
+```
+
+Required fields:
 
 - `exportId`: `str`
 - `s3Bucket`: `str`
@@ -457,59 +720,131 @@ Optional fields:
 - `dataSource`: `Literal['AGENT']` (see
   [DataSourceType](./literals.md#datasourcetype))
 - `schemaStorageConfig`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartDataCollectionByAgentIdsResponseTypeDef
+## StartDataCollectionByAgentIdsRequestTypeDef
 
 ```python
-from mypy_boto3_discovery.type_defs import StartDataCollectionByAgentIdsResponseTypeDef
+from mypy_boto3_discovery.type_defs import StartDataCollectionByAgentIdsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `agentIds`: `List`\[`str`\]
+
+## StartDataCollectionByAgentIdsResponseResponseTypeDef
+
+```python
+from mypy_boto3_discovery.type_defs import StartDataCollectionByAgentIdsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `agentsConfigurationStatus`:
   `List`\[[AgentConfigurationStatusTypeDef](./type_defs.md#agentconfigurationstatustypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartExportTaskResponseTypeDef
+## StartExportTaskRequestTypeDef
 
 ```python
-from mypy_boto3_discovery.type_defs import StartExportTaskResponseTypeDef
+from mypy_boto3_discovery.type_defs import StartExportTaskRequestTypeDef
 ```
 
 Optional fields:
+
+- `exportDataFormat`:
+  `List`\[[ExportDataFormatType](./literals.md#exportdataformattype)\]
+- `filters`:
+  `List`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
+- `startTime`: `Union`\[`datetime`, `str`\]
+- `endTime`: `Union`\[`datetime`, `str`\]
+
+## StartExportTaskResponseResponseTypeDef
+
+```python
+from mypy_boto3_discovery.type_defs import StartExportTaskResponseResponseTypeDef
+```
+
+Required fields:
+
+- `exportId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StartImportTaskRequestTypeDef
+
+```python
+from mypy_boto3_discovery.type_defs import StartImportTaskRequestTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+- `importUrl`: `str`
+
+Optional fields:
+
+- `clientRequestToken`: `str`
+
+## StartImportTaskResponseResponseTypeDef
+
+```python
+from mypy_boto3_discovery.type_defs import StartImportTaskResponseResponseTypeDef
+```
+
+Required fields:
+
+- `task`: [ImportTaskTypeDef](./type_defs.md#importtasktypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StopContinuousExportRequestTypeDef
+
+```python
+from mypy_boto3_discovery.type_defs import StopContinuousExportRequestTypeDef
+```
+
+Required fields:
 
 - `exportId`: `str`
 
-## StartImportTaskResponseTypeDef
+## StopContinuousExportResponseResponseTypeDef
 
 ```python
-from mypy_boto3_discovery.type_defs import StartImportTaskResponseTypeDef
+from mypy_boto3_discovery.type_defs import StopContinuousExportResponseResponseTypeDef
 ```
 
-Optional fields:
-
-- `task`: [ImportTaskTypeDef](./type_defs.md#importtasktypedef)
-
-## StopContinuousExportResponseTypeDef
-
-```python
-from mypy_boto3_discovery.type_defs import StopContinuousExportResponseTypeDef
-```
-
-Optional fields:
+Required fields:
 
 - `startTime`: `datetime`
 - `stopTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopDataCollectionByAgentIdsResponseTypeDef
+## StopDataCollectionByAgentIdsRequestTypeDef
 
 ```python
-from mypy_boto3_discovery.type_defs import StopDataCollectionByAgentIdsResponseTypeDef
+from mypy_boto3_discovery.type_defs import StopDataCollectionByAgentIdsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `agentIds`: `List`\[`str`\]
+
+## StopDataCollectionByAgentIdsResponseResponseTypeDef
+
+```python
+from mypy_boto3_discovery.type_defs import StopDataCollectionByAgentIdsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `agentsConfigurationStatus`:
   `List`\[[AgentConfigurationStatusTypeDef](./type_defs.md#agentconfigurationstatustypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## TagFilterTypeDef
 
@@ -532,3 +867,18 @@ Required fields:
 
 - `key`: `str`
 - `value`: `str`
+
+## UpdateApplicationRequestTypeDef
+
+```python
+from mypy_boto3_discovery.type_defs import UpdateApplicationRequestTypeDef
+```
+
+Required fields:
+
+- `configurationId`: `str`
+
+Optional fields:
+
+- `name`: `str`
+- `description`: `str`

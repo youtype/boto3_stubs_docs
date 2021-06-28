@@ -54,8 +54,12 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_apigatewaymanagementapi.type_defs import GetConnectionResponseTypeDef, ...
+from mypy_boto3_apigatewaymanagementapi.type_defs import DeleteConnectionRequestTypeDef, ...
 ```
 
-- [GetConnectionResponseTypeDef](./type_defs.md#getconnectionresponsetypedef)
+- [DeleteConnectionRequestTypeDef](./type_defs.md#deleteconnectionrequesttypedef)
+- [GetConnectionRequestTypeDef](./type_defs.md#getconnectionrequesttypedef)
+- [GetConnectionResponseResponseTypeDef](./type_defs.md#getconnectionresponseresponsetypedef)
 - [IdentityTypeDef](./type_defs.md#identitytypedef)
+- [PostToConnectionRequestTypeDef](./type_defs.md#posttoconnectionrequesttypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

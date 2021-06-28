@@ -64,6 +64,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("ebs").can_paginate` method.
 
 Boto3 documentation:
@@ -77,10 +79,16 @@ Returns `bool`.
 
 ### complete_snapshot
 
+Seals and completes the snapshot after all of the required blocks of data have
+been written to it.
+
 Type annotations for `boto3.client("ebs").complete_snapshot` method.
 
 Boto3 documentation:
 [EBS.Client.complete_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.complete_snapshot)
+
+Arguments mapping described in
+[CompleteSnapshotRequestTypeDef](./type_defs.md#completesnapshotrequesttypedef).
 
 Keyword-only arguments:
 
@@ -93,9 +101,11 @@ Keyword-only arguments:
   [ChecksumAggregationMethodType](./literals.md#checksumaggregationmethodtype))
 
 Returns
-[CompleteSnapshotResponseTypeDef](./type_defs.md#completesnapshotresponsetypedef).
+[CompleteSnapshotResponseResponseTypeDef](./type_defs.md#completesnapshotresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("ebs").generate_presigned_url` method.
 
@@ -113,10 +123,15 @@ Returns `str`.
 
 ### get_snapshot_block
 
+Returns the data in a block in an Amazon Elastic Block Store snapshot.
+
 Type annotations for `boto3.client("ebs").get_snapshot_block` method.
 
 Boto3 documentation:
 [EBS.Client.get_snapshot_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.get_snapshot_block)
+
+Arguments mapping described in
+[GetSnapshotBlockRequestTypeDef](./type_defs.md#getsnapshotblockrequesttypedef).
 
 Keyword-only arguments:
 
@@ -125,14 +140,20 @@ Keyword-only arguments:
 - `BlockToken`: `str` *(required)*
 
 Returns
-[GetSnapshotBlockResponseTypeDef](./type_defs.md#getsnapshotblockresponsetypedef).
+[GetSnapshotBlockResponseResponseTypeDef](./type_defs.md#getsnapshotblockresponseresponsetypedef).
 
 ### list_changed_blocks
+
+Returns information about the blocks that are different between two Amazon
+Elastic Block Store snapshots of the same volume/snapshot lineage.
 
 Type annotations for `boto3.client("ebs").list_changed_blocks` method.
 
 Boto3 documentation:
 [EBS.Client.list_changed_blocks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.list_changed_blocks)
+
+Arguments mapping described in
+[ListChangedBlocksRequestTypeDef](./type_defs.md#listchangedblocksrequesttypedef).
 
 Keyword-only arguments:
 
@@ -143,14 +164,19 @@ Keyword-only arguments:
 - `StartingBlockIndex`: `int`
 
 Returns
-[ListChangedBlocksResponseTypeDef](./type_defs.md#listchangedblocksresponsetypedef).
+[ListChangedBlocksResponseResponseTypeDef](./type_defs.md#listchangedblocksresponseresponsetypedef).
 
 ### list_snapshot_blocks
+
+Returns information about the blocks in an Amazon Elastic Block Store snapshot.
 
 Type annotations for `boto3.client("ebs").list_snapshot_blocks` method.
 
 Boto3 documentation:
 [EBS.Client.list_snapshot_blocks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.list_snapshot_blocks)
+
+Arguments mapping described in
+[ListSnapshotBlocksRequestTypeDef](./type_defs.md#listsnapshotblocksrequesttypedef).
 
 Keyword-only arguments:
 
@@ -160,14 +186,19 @@ Keyword-only arguments:
 - `StartingBlockIndex`: `int`
 
 Returns
-[ListSnapshotBlocksResponseTypeDef](./type_defs.md#listsnapshotblocksresponsetypedef).
+[ListSnapshotBlocksResponseResponseTypeDef](./type_defs.md#listsnapshotblocksresponseresponsetypedef).
 
 ### put_snapshot_block
+
+Writes a block of data to a snapshot.
 
 Type annotations for `boto3.client("ebs").put_snapshot_block` method.
 
 Boto3 documentation:
 [EBS.Client.put_snapshot_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.put_snapshot_block)
+
+Arguments mapping described in
+[PutSnapshotBlockRequestTypeDef](./type_defs.md#putsnapshotblockrequesttypedef).
 
 Keyword-only arguments:
 
@@ -182,14 +213,19 @@ Keyword-only arguments:
 - `Progress`: `int`
 
 Returns
-[PutSnapshotBlockResponseTypeDef](./type_defs.md#putsnapshotblockresponsetypedef).
+[PutSnapshotBlockResponseResponseTypeDef](./type_defs.md#putsnapshotblockresponseresponsetypedef).
 
 ### start_snapshot
+
+Creates a new Amazon EBS snapshot.
 
 Type annotations for `boto3.client("ebs").start_snapshot` method.
 
 Boto3 documentation:
 [EBS.Client.start_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client.start_snapshot)
+
+Arguments mapping described in
+[StartSnapshotRequestTypeDef](./type_defs.md#startsnapshotrequesttypedef).
 
 Keyword-only arguments:
 
@@ -203,4 +239,4 @@ Keyword-only arguments:
 - `Timeout`: `int`
 
 Returns
-[StartSnapshotResponseTypeDef](./type_defs.md#startsnapshotresponsetypedef).
+[StartSnapshotResponseResponseTypeDef](./type_defs.md#startsnapshotresponseresponsetypedef).

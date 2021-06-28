@@ -9,26 +9,35 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 DLM module](#typed-dictionaries-for-boto3-dlm-module)
   - [ActionTypeDef](#actiontypedef)
-  - [CreateLifecyclePolicyResponseTypeDef](#createlifecyclepolicyresponsetypedef)
+  - [CreateLifecyclePolicyRequestTypeDef](#createlifecyclepolicyrequesttypedef)
+  - [CreateLifecyclePolicyResponseResponseTypeDef](#createlifecyclepolicyresponseresponsetypedef)
   - [CreateRuleTypeDef](#createruletypedef)
   - [CrossRegionCopyActionTypeDef](#crossregioncopyactiontypedef)
   - [CrossRegionCopyRetainRuleTypeDef](#crossregioncopyretainruletypedef)
   - [CrossRegionCopyRuleTypeDef](#crossregioncopyruletypedef)
+  - [DeleteLifecyclePolicyRequestTypeDef](#deletelifecyclepolicyrequesttypedef)
   - [EncryptionConfigurationTypeDef](#encryptionconfigurationtypedef)
   - [EventParametersTypeDef](#eventparameterstypedef)
   - [EventSourceTypeDef](#eventsourcetypedef)
   - [FastRestoreRuleTypeDef](#fastrestoreruletypedef)
-  - [GetLifecyclePoliciesResponseTypeDef](#getlifecyclepoliciesresponsetypedef)
-  - [GetLifecyclePolicyResponseTypeDef](#getlifecyclepolicyresponsetypedef)
+  - [GetLifecyclePoliciesRequestTypeDef](#getlifecyclepoliciesrequesttypedef)
+  - [GetLifecyclePoliciesResponseResponseTypeDef](#getlifecyclepoliciesresponseresponsetypedef)
+  - [GetLifecyclePolicyRequestTypeDef](#getlifecyclepolicyrequesttypedef)
+  - [GetLifecyclePolicyResponseResponseTypeDef](#getlifecyclepolicyresponseresponsetypedef)
   - [LifecyclePolicySummaryTypeDef](#lifecyclepolicysummarytypedef)
   - [LifecyclePolicyTypeDef](#lifecyclepolicytypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [ParametersTypeDef](#parameterstypedef)
   - [PolicyDetailsTypeDef](#policydetailstypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RetainRuleTypeDef](#retainruletypedef)
   - [ScheduleTypeDef](#scheduletypedef)
   - [ShareRuleTypeDef](#shareruletypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TagTypeDef](#tagtypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateLifecyclePolicyRequestTypeDef](#updatelifecyclepolicyrequesttypedef)
 
 ## ActionTypeDef
 
@@ -42,15 +51,35 @@ Required fields:
 - `CrossRegionCopy`:
   `List`\[[CrossRegionCopyActionTypeDef](./type_defs.md#crossregioncopyactiontypedef)\]
 
-## CreateLifecyclePolicyResponseTypeDef
+## CreateLifecyclePolicyRequestTypeDef
 
 ```python
-from mypy_boto3_dlm.type_defs import CreateLifecyclePolicyResponseTypeDef
+from mypy_boto3_dlm.type_defs import CreateLifecyclePolicyRequestTypeDef
 ```
+
+Required fields:
+
+- `ExecutionRoleArn`: `str`
+- `Description`: `str`
+- `State`:
+  [SettablePolicyStateValuesType](./literals.md#settablepolicystatevaluestype)
+- `PolicyDetails`: [PolicyDetailsTypeDef](./type_defs.md#policydetailstypedef)
 
 Optional fields:
 
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## CreateLifecyclePolicyResponseResponseTypeDef
+
+```python
+from mypy_boto3_dlm.type_defs import CreateLifecyclePolicyResponseResponseTypeDef
+```
+
+Required fields:
+
 - `PolicyId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateRuleTypeDef
 
@@ -115,6 +144,16 @@ Optional fields:
 - `RetainRule`:
   [CrossRegionCopyRetainRuleTypeDef](./type_defs.md#crossregioncopyretainruletypedef)
 
+## DeleteLifecyclePolicyRequestTypeDef
+
+```python
+from mypy_boto3_dlm.type_defs import DeleteLifecyclePolicyRequestTypeDef
+```
+
+Required fields:
+
+- `PolicyId`: `str`
+
 ## EncryptionConfigurationTypeDef
 
 ```python
@@ -174,26 +213,56 @@ Optional fields:
 - `IntervalUnit`:
   [RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype)
 
-## GetLifecyclePoliciesResponseTypeDef
+## GetLifecyclePoliciesRequestTypeDef
 
 ```python
-from mypy_boto3_dlm.type_defs import GetLifecyclePoliciesResponseTypeDef
+from mypy_boto3_dlm.type_defs import GetLifecyclePoliciesRequestTypeDef
 ```
 
 Optional fields:
+
+- `PolicyIds`: `List`\[`str`\]
+- `State`:
+  [GettablePolicyStateValuesType](./literals.md#gettablepolicystatevaluestype)
+- `ResourceTypes`:
+  `List`\[[ResourceTypeValuesType](./literals.md#resourcetypevaluestype)\]
+- `TargetTags`: `List`\[`str`\]
+- `TagsToAdd`: `List`\[`str`\]
+
+## GetLifecyclePoliciesResponseResponseTypeDef
+
+```python
+from mypy_boto3_dlm.type_defs import GetLifecyclePoliciesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Policies`:
   `List`\[[LifecyclePolicySummaryTypeDef](./type_defs.md#lifecyclepolicysummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLifecyclePolicyResponseTypeDef
+## GetLifecyclePolicyRequestTypeDef
 
 ```python
-from mypy_boto3_dlm.type_defs import GetLifecyclePolicyResponseTypeDef
+from mypy_boto3_dlm.type_defs import GetLifecyclePolicyRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `PolicyId`: `str`
+
+## GetLifecyclePolicyResponseResponseTypeDef
+
+```python
+from mypy_boto3_dlm.type_defs import GetLifecyclePolicyResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Policy`: [LifecyclePolicyTypeDef](./type_defs.md#lifecyclepolicytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LifecyclePolicySummaryTypeDef
 
@@ -230,15 +299,27 @@ Optional fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `PolicyArn`: `str`
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_dlm.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_dlm.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceArn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_dlm.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ParametersTypeDef
 
@@ -269,6 +350,20 @@ Optional fields:
 - `Parameters`: [ParametersTypeDef](./type_defs.md#parameterstypedef)
 - `EventSource`: [EventSourceTypeDef](./type_defs.md#eventsourcetypedef)
 - `Actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_dlm.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## RetainRuleTypeDef
 
@@ -319,6 +414,17 @@ Optional fields:
 - `UnshareIntervalUnit`:
   [RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype)
 
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_dlm.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
 ## TagTypeDef
 
 ```python
@@ -329,3 +435,32 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+## UntagResourceRequestTypeDef
+
+```python
+from mypy_boto3_dlm.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## UpdateLifecyclePolicyRequestTypeDef
+
+```python
+from mypy_boto3_dlm.type_defs import UpdateLifecyclePolicyRequestTypeDef
+```
+
+Required fields:
+
+- `PolicyId`: `str`
+
+Optional fields:
+
+- `ExecutionRoleArn`: `str`
+- `State`:
+  [SettablePolicyStateValuesType](./literals.md#settablepolicystatevaluestype)
+- `Description`: `str`
+- `PolicyDetails`: [PolicyDetailsTypeDef](./type_defs.md#policydetailstypedef)

@@ -76,20 +76,27 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_marketplace_catalog.type_defs import CancelChangeSetResponseTypeDef, ...
+from mypy_boto3_marketplace_catalog.type_defs import CancelChangeSetRequestTypeDef, ...
 ```
 
-- [CancelChangeSetResponseTypeDef](./type_defs.md#cancelchangesetresponsetypedef)
+- [CancelChangeSetRequestTypeDef](./type_defs.md#cancelchangesetrequesttypedef)
+- [CancelChangeSetResponseResponseTypeDef](./type_defs.md#cancelchangesetresponseresponsetypedef)
 - [ChangeSetSummaryListItemTypeDef](./type_defs.md#changesetsummarylistitemtypedef)
 - [ChangeSummaryTypeDef](./type_defs.md#changesummarytypedef)
 - [ChangeTypeDef](./type_defs.md#changetypedef)
-- [DescribeChangeSetResponseTypeDef](./type_defs.md#describechangesetresponsetypedef)
-- [DescribeEntityResponseTypeDef](./type_defs.md#describeentityresponsetypedef)
+- [DescribeChangeSetRequestTypeDef](./type_defs.md#describechangesetrequesttypedef)
+- [DescribeChangeSetResponseResponseTypeDef](./type_defs.md#describechangesetresponseresponsetypedef)
+- [DescribeEntityRequestTypeDef](./type_defs.md#describeentityrequesttypedef)
+- [DescribeEntityResponseResponseTypeDef](./type_defs.md#describeentityresponseresponsetypedef)
 - [EntitySummaryTypeDef](./type_defs.md#entitysummarytypedef)
 - [EntityTypeDef](./type_defs.md#entitytypedef)
 - [ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)
 - [FilterTypeDef](./type_defs.md#filtertypedef)
-- [ListChangeSetsResponseTypeDef](./type_defs.md#listchangesetsresponsetypedef)
-- [ListEntitiesResponseTypeDef](./type_defs.md#listentitiesresponsetypedef)
+- [ListChangeSetsRequestTypeDef](./type_defs.md#listchangesetsrequesttypedef)
+- [ListChangeSetsResponseResponseTypeDef](./type_defs.md#listchangesetsresponseresponsetypedef)
+- [ListEntitiesRequestTypeDef](./type_defs.md#listentitiesrequesttypedef)
+- [ListEntitiesResponseResponseTypeDef](./type_defs.md#listentitiesresponseresponsetypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [SortTypeDef](./type_defs.md#sorttypedef)
-- [StartChangeSetResponseTypeDef](./type_defs.md#startchangesetresponsetypedef)
+- [StartChangeSetRequestTypeDef](./type_defs.md#startchangesetrequesttypedef)
+- [StartChangeSetResponseResponseTypeDef](./type_defs.md#startchangesetresponseresponsetypedef)

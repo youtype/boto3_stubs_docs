@@ -102,10 +102,15 @@ Exceptions:
 
 ### add_instance_fleet
 
+Adds an instance fleet to a running cluster.
+
 Type annotations for `boto3.client("emr").add_instance_fleet` method.
 
 Boto3 documentation:
 [EMR.Client.add_instance_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_instance_fleet)
+
+Arguments mapping described in
+[AddInstanceFleetInputTypeDef](./type_defs.md#addinstancefleetinputtypedef).
 
 Keyword-only arguments:
 
@@ -115,14 +120,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[AddInstanceFleetOutputTypeDef](./type_defs.md#addinstancefleetoutputtypedef).
+[AddInstanceFleetOutputResponseTypeDef](./type_defs.md#addinstancefleetoutputresponsetypedef).
 
 ### add_instance_groups
+
+Adds one or more instance groups to a running cluster.
 
 Type annotations for `boto3.client("emr").add_instance_groups` method.
 
 Boto3 documentation:
 [EMR.Client.add_instance_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_instance_groups)
+
+Arguments mapping described in
+[AddInstanceGroupsInputTypeDef](./type_defs.md#addinstancegroupsinputtypedef).
 
 Keyword-only arguments:
 
@@ -132,14 +142,19 @@ Keyword-only arguments:
 - `JobFlowId`: `str` *(required)*
 
 Returns
-[AddInstanceGroupsOutputTypeDef](./type_defs.md#addinstancegroupsoutputtypedef).
+[AddInstanceGroupsOutputResponseTypeDef](./type_defs.md#addinstancegroupsoutputresponsetypedef).
 
 ### add_job_flow_steps
+
+AddJobFlowSteps adds new steps to a running cluster.
 
 Type annotations for `boto3.client("emr").add_job_flow_steps` method.
 
 Boto3 documentation:
 [EMR.Client.add_job_flow_steps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_job_flow_steps)
+
+Arguments mapping described in
+[AddJobFlowStepsInputTypeDef](./type_defs.md#addjobflowstepsinputtypedef).
 
 Keyword-only arguments:
 
@@ -148,14 +163,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[AddJobFlowStepsOutputTypeDef](./type_defs.md#addjobflowstepsoutputtypedef).
+[AddJobFlowStepsOutputResponseTypeDef](./type_defs.md#addjobflowstepsoutputresponsetypedef).
 
 ### add_tags
+
+Adds tags to an Amazon EMR resource.
 
 Type annotations for `boto3.client("emr").add_tags` method.
 
 Boto3 documentation:
 [EMR.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_tags)
+
+Arguments mapping described in
+[AddTagsInputTypeDef](./type_defs.md#addtagsinputtypedef).
 
 Keyword-only arguments:
 
@@ -165,6 +185,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("emr").can_paginate` method.
 
@@ -179,10 +201,15 @@ Returns `bool`.
 
 ### cancel_steps
 
+Cancels a pending step or steps in a running cluster.
+
 Type annotations for `boto3.client("emr").cancel_steps` method.
 
 Boto3 documentation:
 [EMR.Client.cancel_steps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.cancel_steps)
+
+Arguments mapping described in
+[CancelStepsInputTypeDef](./type_defs.md#cancelstepsinputtypedef).
 
 Keyword-only arguments:
 
@@ -191,9 +218,13 @@ Keyword-only arguments:
 - `StepCancellationOption`:
   [StepCancellationOptionType](./literals.md#stepcancellationoptiontype)
 
-Returns [CancelStepsOutputTypeDef](./type_defs.md#cancelstepsoutputtypedef).
+Returns
+[CancelStepsOutputResponseTypeDef](./type_defs.md#cancelstepsoutputresponsetypedef).
 
 ### create_security_configuration
+
+Creates a security configuration, which is stored in the service and can be
+specified when a cluster is created.
 
 Type annotations for `boto3.client("emr").create_security_configuration`
 method.
@@ -201,20 +232,28 @@ method.
 Boto3 documentation:
 [EMR.Client.create_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_security_configuration)
 
+Arguments mapping described in
+[CreateSecurityConfigurationInputTypeDef](./type_defs.md#createsecurityconfigurationinputtypedef).
+
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `SecurityConfiguration`: `str` *(required)*
 
 Returns
-[CreateSecurityConfigurationOutputTypeDef](./type_defs.md#createsecurityconfigurationoutputtypedef).
+[CreateSecurityConfigurationOutputResponseTypeDef](./type_defs.md#createsecurityconfigurationoutputresponsetypedef).
 
 ### create_studio
+
+Creates a new Amazon EMR Studio.
 
 Type annotations for `boto3.client("emr").create_studio` method.
 
 Boto3 documentation:
 [EMR.Client.create_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_studio)
+
+Arguments mapping described in
+[CreateStudioInputTypeDef](./type_defs.md#createstudioinputtypedef).
 
 Keyword-only arguments:
 
@@ -230,15 +269,22 @@ Keyword-only arguments:
 - `Description`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns [CreateStudioOutputTypeDef](./type_defs.md#createstudiooutputtypedef).
+Returns
+[CreateStudioOutputResponseTypeDef](./type_defs.md#createstudiooutputresponsetypedef).
 
 ### create_studio_session_mapping
+
+Maps a user or group to the Amazon EMR Studio specified by `StudioId` , and
+applies a session policy to refine Studio permissions for that user or group.
 
 Type annotations for `boto3.client("emr").create_studio_session_mapping`
 method.
 
 Boto3 documentation:
 [EMR.Client.create_studio_session_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_studio_session_mapping)
+
+Arguments mapping described in
+[CreateStudioSessionMappingInputTypeDef](./type_defs.md#createstudiosessionmappinginputtypedef).
 
 Keyword-only arguments:
 
@@ -251,11 +297,16 @@ Keyword-only arguments:
 
 ### delete_security_configuration
 
+Deletes a security configuration.
+
 Type annotations for `boto3.client("emr").delete_security_configuration`
 method.
 
 Boto3 documentation:
 [EMR.Client.delete_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_security_configuration)
+
+Arguments mapping described in
+[DeleteSecurityConfigurationInputTypeDef](./type_defs.md#deletesecurityconfigurationinputtypedef).
 
 Keyword-only arguments:
 
@@ -265,10 +316,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_studio
 
+Removes an Amazon EMR Studio from the Studio metadata store.
+
 Type annotations for `boto3.client("emr").delete_studio` method.
 
 Boto3 documentation:
 [EMR.Client.delete_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_studio)
+
+Arguments mapping described in
+[DeleteStudioInputTypeDef](./type_defs.md#deletestudioinputtypedef).
 
 Keyword-only arguments:
 
@@ -276,11 +332,16 @@ Keyword-only arguments:
 
 ### delete_studio_session_mapping
 
+Removes a user or group from an Amazon EMR Studio.
+
 Type annotations for `boto3.client("emr").delete_studio_session_mapping`
 method.
 
 Boto3 documentation:
 [EMR.Client.delete_studio_session_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_studio_session_mapping)
+
+Arguments mapping described in
+[DeleteStudioSessionMappingInputTypeDef](./type_defs.md#deletestudiosessionmappinginputtypedef).
 
 Keyword-only arguments:
 
@@ -292,51 +353,70 @@ Keyword-only arguments:
 
 ### describe_cluster
 
+Provides cluster-level details including status, hardware and software
+configuration, VPC settings, and so on.
+
 Type annotations for `boto3.client("emr").describe_cluster` method.
 
 Boto3 documentation:
 [EMR.Client.describe_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_cluster)
+
+Arguments mapping described in
+[DescribeClusterInputTypeDef](./type_defs.md#describeclusterinputtypedef).
 
 Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 
 Returns
-[DescribeClusterOutputTypeDef](./type_defs.md#describeclusteroutputtypedef).
+[DescribeClusterOutputResponseTypeDef](./type_defs.md#describeclusteroutputresponsetypedef).
 
 ### describe_job_flows
+
+This API is no longer supported and will eventually be removed.
 
 Type annotations for `boto3.client("emr").describe_job_flows` method.
 
 Boto3 documentation:
 [EMR.Client.describe_job_flows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_job_flows)
 
+Arguments mapping described in
+[DescribeJobFlowsInputTypeDef](./type_defs.md#describejobflowsinputtypedef).
+
 Keyword-only arguments:
 
-- `CreatedAfter`: `datetime`
-- `CreatedBefore`: `datetime`
+- `CreatedAfter`: `Union`\[`datetime`, `str`\]
+- `CreatedBefore`: `Union`\[`datetime`, `str`\]
 - `JobFlowIds`: `List`\[`str`\]
 - `JobFlowStates`:
   `List`\[[JobFlowExecutionStateType](./literals.md#jobflowexecutionstatetype)\]
 
 Returns
-[DescribeJobFlowsOutputTypeDef](./type_defs.md#describejobflowsoutputtypedef).
+[DescribeJobFlowsOutputResponseTypeDef](./type_defs.md#describejobflowsoutputresponsetypedef).
 
 ### describe_notebook_execution
+
+Provides details of a notebook execution.
 
 Type annotations for `boto3.client("emr").describe_notebook_execution` method.
 
 Boto3 documentation:
 [EMR.Client.describe_notebook_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_notebook_execution)
 
+Arguments mapping described in
+[DescribeNotebookExecutionInputTypeDef](./type_defs.md#describenotebookexecutioninputtypedef).
+
 Keyword-only arguments:
 
 - `NotebookExecutionId`: `str` *(required)*
 
 Returns
-[DescribeNotebookExecutionOutputTypeDef](./type_defs.md#describenotebookexecutionoutputtypedef).
+[DescribeNotebookExecutionOutputResponseTypeDef](./type_defs.md#describenotebookexecutionoutputresponsetypedef).
 
 ### describe_security_configuration
+
+Provides the details of a security configuration by returning the configuration
+JSON.
 
 Type annotations for `boto3.client("emr").describe_security_configuration`
 method.
@@ -344,42 +424,59 @@ method.
 Boto3 documentation:
 [EMR.Client.describe_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_security_configuration)
 
+Arguments mapping described in
+[DescribeSecurityConfigurationInputTypeDef](./type_defs.md#describesecurityconfigurationinputtypedef).
+
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[DescribeSecurityConfigurationOutputTypeDef](./type_defs.md#describesecurityconfigurationoutputtypedef).
+[DescribeSecurityConfigurationOutputResponseTypeDef](./type_defs.md#describesecurityconfigurationoutputresponsetypedef).
 
 ### describe_step
+
+Provides more detail about the cluster step.
 
 Type annotations for `boto3.client("emr").describe_step` method.
 
 Boto3 documentation:
 [EMR.Client.describe_step](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_step)
 
+Arguments mapping described in
+[DescribeStepInputTypeDef](./type_defs.md#describestepinputtypedef).
+
 Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 - `StepId`: `str` *(required)*
 
-Returns [DescribeStepOutputTypeDef](./type_defs.md#describestepoutputtypedef).
+Returns
+[DescribeStepOutputResponseTypeDef](./type_defs.md#describestepoutputresponsetypedef).
 
 ### describe_studio
+
+Returns details for the specified Amazon EMR Studio including ID, Name, VPC,
+Studio access URL, and so on.
 
 Type annotations for `boto3.client("emr").describe_studio` method.
 
 Boto3 documentation:
 [EMR.Client.describe_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_studio)
 
+Arguments mapping described in
+[DescribeStudioInputTypeDef](./type_defs.md#describestudioinputtypedef).
+
 Keyword-only arguments:
 
 - `StudioId`: `str` *(required)*
 
 Returns
-[DescribeStudioOutputTypeDef](./type_defs.md#describestudiooutputtypedef).
+[DescribeStudioOutputResponseTypeDef](./type_defs.md#describestudiooutputresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("emr").generate_presigned_url` method.
 
@@ -397,6 +494,9 @@ Returns `str`.
 
 ### get_block_public_access_configuration
 
+Returns the Amazon EMR block public access configuration for your AWS account
+in the current Region.
+
 Type annotations for
 `boto3.client("emr").get_block_public_access_configuration` method.
 
@@ -404,28 +504,39 @@ Boto3 documentation:
 [EMR.Client.get_block_public_access_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_block_public_access_configuration)
 
 Returns
-[GetBlockPublicAccessConfigurationOutputTypeDef](./type_defs.md#getblockpublicaccessconfigurationoutputtypedef).
+[GetBlockPublicAccessConfigurationOutputResponseTypeDef](./type_defs.md#getblockpublicaccessconfigurationoutputresponsetypedef).
 
 ### get_managed_scaling_policy
+
+Fetches the attached managed scaling policy for an Amazon EMR cluster.
 
 Type annotations for `boto3.client("emr").get_managed_scaling_policy` method.
 
 Boto3 documentation:
 [EMR.Client.get_managed_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_managed_scaling_policy)
 
+Arguments mapping described in
+[GetManagedScalingPolicyInputTypeDef](./type_defs.md#getmanagedscalingpolicyinputtypedef).
+
 Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 
 Returns
-[GetManagedScalingPolicyOutputTypeDef](./type_defs.md#getmanagedscalingpolicyoutputtypedef).
+[GetManagedScalingPolicyOutputResponseTypeDef](./type_defs.md#getmanagedscalingpolicyoutputresponsetypedef).
 
 ### get_studio_session_mapping
+
+Fetches mapping details for the specified Amazon EMR Studio and identity (user
+or group).
 
 Type annotations for `boto3.client("emr").get_studio_session_mapping` method.
 
 Boto3 documentation:
 [EMR.Client.get_studio_session_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_studio_session_mapping)
+
+Arguments mapping described in
+[GetStudioSessionMappingInputTypeDef](./type_defs.md#getstudiosessionmappinginputtypedef).
 
 Keyword-only arguments:
 
@@ -436,75 +547,102 @@ Keyword-only arguments:
 - `IdentityName`: `str`
 
 Returns
-[GetStudioSessionMappingOutputTypeDef](./type_defs.md#getstudiosessionmappingoutputtypedef).
+[GetStudioSessionMappingOutputResponseTypeDef](./type_defs.md#getstudiosessionmappingoutputresponsetypedef).
 
 ### list_bootstrap_actions
+
+Provides information about the bootstrap actions associated with a cluster.
 
 Type annotations for `boto3.client("emr").list_bootstrap_actions` method.
 
 Boto3 documentation:
 [EMR.Client.list_bootstrap_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_bootstrap_actions)
 
+Arguments mapping described in
+[ListBootstrapActionsInputTypeDef](./type_defs.md#listbootstrapactionsinputtypedef).
+
 Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 - `Marker`: `str`
 
 Returns
-[ListBootstrapActionsOutputTypeDef](./type_defs.md#listbootstrapactionsoutputtypedef).
+[ListBootstrapActionsOutputResponseTypeDef](./type_defs.md#listbootstrapactionsoutputresponsetypedef).
 
 ### list_clusters
+
+Provides the status of all clusters visible to this AWS account.
 
 Type annotations for `boto3.client("emr").list_clusters` method.
 
 Boto3 documentation:
 [EMR.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_clusters)
 
+Arguments mapping described in
+[ListClustersInputTypeDef](./type_defs.md#listclustersinputtypedef).
+
 Keyword-only arguments:
 
-- `CreatedAfter`: `datetime`
-- `CreatedBefore`: `datetime`
+- `CreatedAfter`: `Union`\[`datetime`, `str`\]
+- `CreatedBefore`: `Union`\[`datetime`, `str`\]
 - `ClusterStates`: `List`\[[ClusterStateType](./literals.md#clusterstatetype)\]
 - `Marker`: `str`
 
-Returns [ListClustersOutputTypeDef](./type_defs.md#listclustersoutputtypedef).
+Returns
+[ListClustersOutputResponseTypeDef](./type_defs.md#listclustersoutputresponsetypedef).
 
 ### list_instance_fleets
+
+Lists all available details about the instance fleets in a cluster.
 
 Type annotations for `boto3.client("emr").list_instance_fleets` method.
 
 Boto3 documentation:
 [EMR.Client.list_instance_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instance_fleets)
 
+Arguments mapping described in
+[ListInstanceFleetsInputTypeDef](./type_defs.md#listinstancefleetsinputtypedef).
+
 Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 - `Marker`: `str`
 
 Returns
-[ListInstanceFleetsOutputTypeDef](./type_defs.md#listinstancefleetsoutputtypedef).
+[ListInstanceFleetsOutputResponseTypeDef](./type_defs.md#listinstancefleetsoutputresponsetypedef).
 
 ### list_instance_groups
+
+Provides all available details about the instance groups in a cluster.
 
 Type annotations for `boto3.client("emr").list_instance_groups` method.
 
 Boto3 documentation:
 [EMR.Client.list_instance_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instance_groups)
 
+Arguments mapping described in
+[ListInstanceGroupsInputTypeDef](./type_defs.md#listinstancegroupsinputtypedef).
+
 Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 - `Marker`: `str`
 
 Returns
-[ListInstanceGroupsOutputTypeDef](./type_defs.md#listinstancegroupsoutputtypedef).
+[ListInstanceGroupsOutputResponseTypeDef](./type_defs.md#listinstancegroupsoutputresponsetypedef).
 
 ### list_instances
+
+Provides information for all active EC2 instances and EC2 instances terminated
+in the last 30 days, up to a maximum of 2,000.
 
 Type annotations for `boto3.client("emr").list_instances` method.
 
 Boto3 documentation:
 [EMR.Client.list_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instances)
+
+Arguments mapping described in
+[ListInstancesInputTypeDef](./type_defs.md#listinstancesinputtypedef).
 
 Keyword-only arguments:
 
@@ -520,47 +658,64 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[ListInstancesOutputTypeDef](./type_defs.md#listinstancesoutputtypedef).
+[ListInstancesOutputResponseTypeDef](./type_defs.md#listinstancesoutputresponsetypedef).
 
 ### list_notebook_executions
+
+Provides summaries of all notebook executions.
 
 Type annotations for `boto3.client("emr").list_notebook_executions` method.
 
 Boto3 documentation:
 [EMR.Client.list_notebook_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_notebook_executions)
 
+Arguments mapping described in
+[ListNotebookExecutionsInputTypeDef](./type_defs.md#listnotebookexecutionsinputtypedef).
+
 Keyword-only arguments:
 
 - `EditorId`: `str`
 - `Status`:
   [NotebookExecutionStatusType](./literals.md#notebookexecutionstatustype)
-- `From`: `datetime`
-- `To`: `datetime`
+- `From`: `Union`\[`datetime`, `str`\]
+- `To`: `Union`\[`datetime`, `str`\]
 - `Marker`: `str`
 
 Returns
-[ListNotebookExecutionsOutputTypeDef](./type_defs.md#listnotebookexecutionsoutputtypedef).
+[ListNotebookExecutionsOutputResponseTypeDef](./type_defs.md#listnotebookexecutionsoutputresponsetypedef).
 
 ### list_security_configurations
+
+Lists all the security configurations visible to this account, providing their
+creation dates and times, and their names.
 
 Type annotations for `boto3.client("emr").list_security_configurations` method.
 
 Boto3 documentation:
 [EMR.Client.list_security_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_security_configurations)
 
+Arguments mapping described in
+[ListSecurityConfigurationsInputTypeDef](./type_defs.md#listsecurityconfigurationsinputtypedef).
+
 Keyword-only arguments:
 
 - `Marker`: `str`
 
 Returns
-[ListSecurityConfigurationsOutputTypeDef](./type_defs.md#listsecurityconfigurationsoutputtypedef).
+[ListSecurityConfigurationsOutputResponseTypeDef](./type_defs.md#listsecurityconfigurationsoutputresponsetypedef).
 
 ### list_steps
+
+Provides a list of steps for the cluster in reverse order unless you specify
+`stepIds` with the request of filter by `StepStates`.
 
 Type annotations for `boto3.client("emr").list_steps` method.
 
 Boto3 documentation:
 [EMR.Client.list_steps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_steps)
+
+Arguments mapping described in
+[ListStepsInputTypeDef](./type_defs.md#liststepsinputtypedef).
 
 Keyword-only arguments:
 
@@ -569,14 +724,21 @@ Keyword-only arguments:
 - `StepIds`: `List`\[`str`\]
 - `Marker`: `str`
 
-Returns [ListStepsOutputTypeDef](./type_defs.md#liststepsoutputtypedef).
+Returns
+[ListStepsOutputResponseTypeDef](./type_defs.md#liststepsoutputresponsetypedef).
 
 ### list_studio_session_mappings
+
+Returns a list of all user or group session mappings for the Amazon EMR Studio
+specified by `StudioId` .
 
 Type annotations for `boto3.client("emr").list_studio_session_mappings` method.
 
 Boto3 documentation:
 [EMR.Client.list_studio_session_mappings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_studio_session_mappings)
+
+Arguments mapping described in
+[ListStudioSessionMappingsInputTypeDef](./type_defs.md#liststudiosessionmappingsinputtypedef).
 
 Keyword-only arguments:
 
@@ -585,27 +747,39 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[ListStudioSessionMappingsOutputTypeDef](./type_defs.md#liststudiosessionmappingsoutputtypedef).
+[ListStudioSessionMappingsOutputResponseTypeDef](./type_defs.md#liststudiosessionmappingsoutputresponsetypedef).
 
 ### list_studios
+
+Returns a list of all Amazon EMR Studios associated with the AWS account.
 
 Type annotations for `boto3.client("emr").list_studios` method.
 
 Boto3 documentation:
 [EMR.Client.list_studios](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_studios)
 
+Arguments mapping described in
+[ListStudiosInputTypeDef](./type_defs.md#liststudiosinputtypedef).
+
 Keyword-only arguments:
 
 - `Marker`: `str`
 
-Returns [ListStudiosOutputTypeDef](./type_defs.md#liststudiosoutputtypedef).
+Returns
+[ListStudiosOutputResponseTypeDef](./type_defs.md#liststudiosoutputresponsetypedef).
 
 ### modify_cluster
+
+Modifies the number of steps that can be executed concurrently for the cluster
+specified using ClusterID.
 
 Type annotations for `boto3.client("emr").modify_cluster` method.
 
 Boto3 documentation:
 [EMR.Client.modify_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_cluster)
+
+Arguments mapping described in
+[ModifyClusterInputTypeDef](./type_defs.md#modifyclusterinputtypedef).
 
 Keyword-only arguments:
 
@@ -613,14 +787,21 @@ Keyword-only arguments:
 - `StepConcurrencyLevel`: `int`
 
 Returns
-[ModifyClusterOutputTypeDef](./type_defs.md#modifyclusteroutputtypedef).
+[ModifyClusterOutputResponseTypeDef](./type_defs.md#modifyclusteroutputresponsetypedef).
 
 ### modify_instance_fleet
+
+Modifies the target On-Demand and target Spot capacities for the instance fleet
+with the specified InstanceFleetID within the cluster specified using
+ClusterID.
 
 Type annotations for `boto3.client("emr").modify_instance_fleet` method.
 
 Boto3 documentation:
 [EMR.Client.modify_instance_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_instance_fleet)
+
+Arguments mapping described in
+[ModifyInstanceFleetInputTypeDef](./type_defs.md#modifyinstancefleetinputtypedef).
 
 Keyword-only arguments:
 
@@ -631,10 +812,16 @@ Keyword-only arguments:
 
 ### modify_instance_groups
 
+ModifyInstanceGroups modifies the number of nodes and configuration settings of
+an instance group.
+
 Type annotations for `boto3.client("emr").modify_instance_groups` method.
 
 Boto3 documentation:
 [EMR.Client.modify_instance_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_instance_groups)
+
+Arguments mapping described in
+[ModifyInstanceGroupsInputTypeDef](./type_defs.md#modifyinstancegroupsinputtypedef).
 
 Keyword-only arguments:
 
@@ -644,10 +831,16 @@ Keyword-only arguments:
 
 ### put_auto_scaling_policy
 
+Creates or updates an automatic scaling policy for a core instance group or
+task instance group in an Amazon EMR cluster.
+
 Type annotations for `boto3.client("emr").put_auto_scaling_policy` method.
 
 Boto3 documentation:
 [EMR.Client.put_auto_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_auto_scaling_policy)
+
+Arguments mapping described in
+[PutAutoScalingPolicyInputTypeDef](./type_defs.md#putautoscalingpolicyinputtypedef).
 
 Keyword-only arguments:
 
@@ -658,15 +851,21 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutAutoScalingPolicyOutputTypeDef](./type_defs.md#putautoscalingpolicyoutputtypedef).
+[PutAutoScalingPolicyOutputResponseTypeDef](./type_defs.md#putautoscalingpolicyoutputresponsetypedef).
 
 ### put_block_public_access_configuration
+
+Creates or updates an Amazon EMR block public access configuration for your AWS
+account in the current Region.
 
 Type annotations for
 `boto3.client("emr").put_block_public_access_configuration` method.
 
 Boto3 documentation:
 [EMR.Client.put_block_public_access_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_block_public_access_configuration)
+
+Arguments mapping described in
+[PutBlockPublicAccessConfigurationInputTypeDef](./type_defs.md#putblockpublicaccessconfigurationinputtypedef).
 
 Keyword-only arguments:
 
@@ -678,10 +877,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_managed_scaling_policy
 
+Creates or updates a managed scaling policy for an Amazon EMR cluster.
+
 Type annotations for `boto3.client("emr").put_managed_scaling_policy` method.
 
 Boto3 documentation:
 [EMR.Client.put_managed_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_managed_scaling_policy)
+
+Arguments mapping described in
+[PutManagedScalingPolicyInputTypeDef](./type_defs.md#putmanagedscalingpolicyinputtypedef).
 
 Keyword-only arguments:
 
@@ -694,10 +898,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### remove_auto_scaling_policy
 
+Removes an automatic scaling policy from a specified instance group within an
+EMR cluster.
+
 Type annotations for `boto3.client("emr").remove_auto_scaling_policy` method.
 
 Boto3 documentation:
 [EMR.Client.remove_auto_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_auto_scaling_policy)
+
+Arguments mapping described in
+[RemoveAutoScalingPolicyInputTypeDef](./type_defs.md#removeautoscalingpolicyinputtypedef).
 
 Keyword-only arguments:
 
@@ -708,11 +918,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### remove_managed_scaling_policy
 
+Removes a managed scaling policy from a specified EMR cluster.
+
 Type annotations for `boto3.client("emr").remove_managed_scaling_policy`
 method.
 
 Boto3 documentation:
 [EMR.Client.remove_managed_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_managed_scaling_policy)
+
+Arguments mapping described in
+[RemoveManagedScalingPolicyInputTypeDef](./type_defs.md#removemanagedscalingpolicyinputtypedef).
 
 Keyword-only arguments:
 
@@ -722,10 +937,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### remove_tags
 
+Removes tags from an Amazon EMR resource.
+
 Type annotations for `boto3.client("emr").remove_tags` method.
 
 Boto3 documentation:
 [EMR.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_tags)
+
+Arguments mapping described in
+[RemoveTagsInputTypeDef](./type_defs.md#removetagsinputtypedef).
 
 Keyword-only arguments:
 
@@ -736,10 +956,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### run_job_flow
 
+RunJobFlow creates and starts running a new cluster (job flow).
+
 Type annotations for `boto3.client("emr").run_job_flow` method.
 
 Boto3 documentation:
 [EMR.Client.run_job_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.run_job_flow)
+
+Arguments mapping described in
+[RunJobFlowInputTypeDef](./type_defs.md#runjobflowinputtypedef).
 
 Keyword-only arguments:
 
@@ -782,14 +1007,22 @@ Keyword-only arguments:
 - `PlacementGroupConfigs`:
   `List`\[[PlacementGroupConfigTypeDef](./type_defs.md#placementgroupconfigtypedef)\]
 
-Returns [RunJobFlowOutputTypeDef](./type_defs.md#runjobflowoutputtypedef).
+Returns
+[RunJobFlowOutputResponseTypeDef](./type_defs.md#runjobflowoutputresponsetypedef).
 
 ### set_termination_protection
+
+SetTerminationProtection locks a cluster (job flow) so the EC2 instances in the
+cluster cannot be terminated by user intervention, an API call, or in the event
+of a job-flow error.
 
 Type annotations for `boto3.client("emr").set_termination_protection` method.
 
 Boto3 documentation:
 [EMR.Client.set_termination_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.set_termination_protection)
+
+Arguments mapping described in
+[SetTerminationProtectionInputTypeDef](./type_defs.md#setterminationprotectioninputtypedef).
 
 Keyword-only arguments:
 
@@ -798,10 +1031,16 @@ Keyword-only arguments:
 
 ### set_visible_to_all_users
 
+Sets the Cluster$VisibleToAllUsers value, which determines whether the cluster
+is visible to all IAM users of the AWS account associated with the cluster.
+
 Type annotations for `boto3.client("emr").set_visible_to_all_users` method.
 
 Boto3 documentation:
 [EMR.Client.set_visible_to_all_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.set_visible_to_all_users)
+
+Arguments mapping described in
+[SetVisibleToAllUsersInputTypeDef](./type_defs.md#setvisibletoallusersinputtypedef).
 
 Keyword-only arguments:
 
@@ -810,10 +1049,15 @@ Keyword-only arguments:
 
 ### start_notebook_execution
 
+Starts a notebook execution.
+
 Type annotations for `boto3.client("emr").start_notebook_execution` method.
 
 Boto3 documentation:
 [EMR.Client.start_notebook_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.start_notebook_execution)
+
+Arguments mapping described in
+[StartNotebookExecutionInputTypeDef](./type_defs.md#startnotebookexecutioninputtypedef).
 
 Keyword-only arguments:
 
@@ -829,14 +1073,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[StartNotebookExecutionOutputTypeDef](./type_defs.md#startnotebookexecutionoutputtypedef).
+[StartNotebookExecutionOutputResponseTypeDef](./type_defs.md#startnotebookexecutionoutputresponsetypedef).
 
 ### stop_notebook_execution
+
+Stops a notebook execution.
 
 Type annotations for `boto3.client("emr").stop_notebook_execution` method.
 
 Boto3 documentation:
 [EMR.Client.stop_notebook_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.stop_notebook_execution)
+
+Arguments mapping described in
+[StopNotebookExecutionInputTypeDef](./type_defs.md#stopnotebookexecutioninputtypedef).
 
 Keyword-only arguments:
 
@@ -844,10 +1093,15 @@ Keyword-only arguments:
 
 ### terminate_job_flows
 
+TerminateJobFlows shuts a list of clusters (job flows) down.
+
 Type annotations for `boto3.client("emr").terminate_job_flows` method.
 
 Boto3 documentation:
 [EMR.Client.terminate_job_flows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.terminate_job_flows)
+
+Arguments mapping described in
+[TerminateJobFlowsInputTypeDef](./type_defs.md#terminatejobflowsinputtypedef).
 
 Keyword-only arguments:
 
@@ -855,10 +1109,16 @@ Keyword-only arguments:
 
 ### update_studio
 
+Updates an Amazon EMR Studio configuration, including attributes such as name,
+description, and subnets.
+
 Type annotations for `boto3.client("emr").update_studio` method.
 
 Boto3 documentation:
 [EMR.Client.update_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.update_studio)
+
+Arguments mapping described in
+[UpdateStudioInputTypeDef](./type_defs.md#updatestudioinputtypedef).
 
 Keyword-only arguments:
 
@@ -870,11 +1130,17 @@ Keyword-only arguments:
 
 ### update_studio_session_mapping
 
+Updates the session policy attached to the user or group for the specified
+Amazon EMR Studio.
+
 Type annotations for `boto3.client("emr").update_studio_session_mapping`
 method.
 
 Boto3 documentation:
 [EMR.Client.update_studio_session_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.update_studio_session_mapping)
+
+Arguments mapping described in
+[UpdateStudioSessionMappingInputTypeDef](./type_defs.md#updatestudiosessionmappinginputtypedef).
 
 Keyword-only arguments:
 

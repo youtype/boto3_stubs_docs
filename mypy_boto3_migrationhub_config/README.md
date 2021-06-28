@@ -69,11 +69,14 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_migrationhub_config.type_defs import CreateHomeRegionControlResultTypeDef, ...
+from mypy_boto3_migrationhub_config.type_defs import CreateHomeRegionControlRequestTypeDef, ...
 ```
 
-- [CreateHomeRegionControlResultTypeDef](./type_defs.md#createhomeregioncontrolresulttypedef)
-- [DescribeHomeRegionControlsResultTypeDef](./type_defs.md#describehomeregioncontrolsresulttypedef)
-- [GetHomeRegionResultTypeDef](./type_defs.md#gethomeregionresulttypedef)
+- [CreateHomeRegionControlRequestTypeDef](./type_defs.md#createhomeregioncontrolrequesttypedef)
+- [CreateHomeRegionControlResultResponseTypeDef](./type_defs.md#createhomeregioncontrolresultresponsetypedef)
+- [DescribeHomeRegionControlsRequestTypeDef](./type_defs.md#describehomeregioncontrolsrequesttypedef)
+- [DescribeHomeRegionControlsResultResponseTypeDef](./type_defs.md#describehomeregioncontrolsresultresponsetypedef)
+- [GetHomeRegionResultResponseTypeDef](./type_defs.md#gethomeregionresultresponsetypedef)
 - [HomeRegionControlTypeDef](./type_defs.md#homeregioncontroltypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [TargetTypeDef](./type_defs.md#targettypedef)

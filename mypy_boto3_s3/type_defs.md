@@ -9,7 +9,9 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 S3 module](#typed-dictionaries-for-boto3-s3-module)
   - [AbortIncompleteMultipartUploadTypeDef](#abortincompletemultipartuploadtypedef)
-  - [AbortMultipartUploadOutputTypeDef](#abortmultipartuploadoutputtypedef)
+  - [AbortMultipartUploadOutputResponseTypeDef](#abortmultipartuploadoutputresponsetypedef)
+  - [AbortMultipartUploadRequestMultipartUploadTypeDef](#abortmultipartuploadrequestmultipartuploadtypedef)
+  - [AbortMultipartUploadRequestTypeDef](#abortmultipartuploadrequesttypedef)
   - [AccelerateConfigurationTypeDef](#accelerateconfigurationtypedef)
   - [AccessControlPolicyTypeDef](#accesscontrolpolicytypedef)
   - [AccessControlTranslationTypeDef](#accesscontroltranslationtypedef)
@@ -18,32 +20,83 @@ type annotations stubs module
   - [AnalyticsExportDestinationTypeDef](#analyticsexportdestinationtypedef)
   - [AnalyticsFilterTypeDef](#analyticsfiltertypedef)
   - [AnalyticsS3BucketDestinationTypeDef](#analyticss3bucketdestinationtypedef)
+  - [BucketCopyRequestTypeDef](#bucketcopyrequesttypedef)
+  - [BucketDownloadFileRequestTypeDef](#bucketdownloadfilerequesttypedef)
+  - [BucketDownloadFileobjRequestTypeDef](#bucketdownloadfileobjrequesttypedef)
   - [BucketLifecycleConfigurationTypeDef](#bucketlifecycleconfigurationtypedef)
   - [BucketLoggingStatusTypeDef](#bucketloggingstatustypedef)
+  - [BucketObjectRequestTypeDef](#bucketobjectrequesttypedef)
   - [BucketTypeDef](#buckettypedef)
+  - [BucketUploadFileRequestTypeDef](#bucketuploadfilerequesttypedef)
+  - [BucketUploadFileobjRequestTypeDef](#bucketuploadfileobjrequesttypedef)
   - [CORSConfigurationTypeDef](#corsconfigurationtypedef)
   - [CORSRuleTypeDef](#corsruletypedef)
   - [CSVInputTypeDef](#csvinputtypedef)
   - [CSVOutputTypeDef](#csvoutputtypedef)
+  - [ClientCopyRequestTypeDef](#clientcopyrequesttypedef)
+  - [ClientDownloadFileRequestTypeDef](#clientdownloadfilerequesttypedef)
+  - [ClientDownloadFileobjRequestTypeDef](#clientdownloadfileobjrequesttypedef)
+  - [ClientGeneratePresignedPostRequestTypeDef](#clientgeneratepresignedpostrequesttypedef)
+  - [ClientUploadFileRequestTypeDef](#clientuploadfilerequesttypedef)
+  - [ClientUploadFileobjRequestTypeDef](#clientuploadfileobjrequesttypedef)
   - [CloudFunctionConfigurationTypeDef](#cloudfunctionconfigurationtypedef)
   - [CommonPrefixTypeDef](#commonprefixtypedef)
-  - [CompleteMultipartUploadOutputTypeDef](#completemultipartuploadoutputtypedef)
+  - [CompleteMultipartUploadOutputResponseTypeDef](#completemultipartuploadoutputresponsetypedef)
+  - [CompleteMultipartUploadRequestMultipartUploadTypeDef](#completemultipartuploadrequestmultipartuploadtypedef)
+  - [CompleteMultipartUploadRequestTypeDef](#completemultipartuploadrequesttypedef)
   - [CompletedMultipartUploadTypeDef](#completedmultipartuploadtypedef)
   - [CompletedPartTypeDef](#completedparttypedef)
   - [ConditionTypeDef](#conditiontypedef)
-  - [CopyObjectOutputTypeDef](#copyobjectoutputtypedef)
+  - [CopyObjectOutputResponseTypeDef](#copyobjectoutputresponsetypedef)
+  - [CopyObjectRequestObjectSummaryTypeDef](#copyobjectrequestobjectsummarytypedef)
+  - [CopyObjectRequestObjectTypeDef](#copyobjectrequestobjecttypedef)
+  - [CopyObjectRequestTypeDef](#copyobjectrequesttypedef)
   - [CopyObjectResultTypeDef](#copyobjectresulttypedef)
   - [CopyPartResultTypeDef](#copypartresulttypedef)
   - [CopySourceTypeDef](#copysourcetypedef)
   - [CreateBucketConfigurationTypeDef](#createbucketconfigurationtypedef)
-  - [CreateBucketOutputTypeDef](#createbucketoutputtypedef)
-  - [CreateMultipartUploadOutputTypeDef](#createmultipartuploadoutputtypedef)
+  - [CreateBucketOutputResponseTypeDef](#createbucketoutputresponsetypedef)
+  - [CreateBucketRequestBucketTypeDef](#createbucketrequestbuckettypedef)
+  - [CreateBucketRequestServiceResourceTypeDef](#createbucketrequestserviceresourcetypedef)
+  - [CreateBucketRequestTypeDef](#createbucketrequesttypedef)
+  - [CreateMultipartUploadOutputResponseTypeDef](#createmultipartuploadoutputresponsetypedef)
+  - [CreateMultipartUploadRequestObjectSummaryTypeDef](#createmultipartuploadrequestobjectsummarytypedef)
+  - [CreateMultipartUploadRequestObjectTypeDef](#createmultipartuploadrequestobjecttypedef)
+  - [CreateMultipartUploadRequestTypeDef](#createmultipartuploadrequesttypedef)
   - [DefaultRetentionTypeDef](#defaultretentiontypedef)
+  - [DeleteBucketAnalyticsConfigurationRequestTypeDef](#deletebucketanalyticsconfigurationrequesttypedef)
+  - [DeleteBucketCorsRequestBucketCorsTypeDef](#deletebucketcorsrequestbucketcorstypedef)
+  - [DeleteBucketCorsRequestTypeDef](#deletebucketcorsrequesttypedef)
+  - [DeleteBucketEncryptionRequestTypeDef](#deletebucketencryptionrequesttypedef)
+  - [DeleteBucketIntelligentTieringConfigurationRequestTypeDef](#deletebucketintelligenttieringconfigurationrequesttypedef)
+  - [DeleteBucketInventoryConfigurationRequestTypeDef](#deletebucketinventoryconfigurationrequesttypedef)
+  - [DeleteBucketLifecycleRequestBucketLifecycleConfigurationTypeDef](#deletebucketlifecyclerequestbucketlifecycleconfigurationtypedef)
+  - [DeleteBucketLifecycleRequestBucketLifecycleTypeDef](#deletebucketlifecyclerequestbucketlifecycletypedef)
+  - [DeleteBucketLifecycleRequestTypeDef](#deletebucketlifecyclerequesttypedef)
+  - [DeleteBucketMetricsConfigurationRequestTypeDef](#deletebucketmetricsconfigurationrequesttypedef)
+  - [DeleteBucketOwnershipControlsRequestTypeDef](#deletebucketownershipcontrolsrequesttypedef)
+  - [DeleteBucketPolicyRequestBucketPolicyTypeDef](#deletebucketpolicyrequestbucketpolicytypedef)
+  - [DeleteBucketPolicyRequestTypeDef](#deletebucketpolicyrequesttypedef)
+  - [DeleteBucketReplicationRequestTypeDef](#deletebucketreplicationrequesttypedef)
+  - [DeleteBucketRequestBucketTypeDef](#deletebucketrequestbuckettypedef)
+  - [DeleteBucketRequestTypeDef](#deletebucketrequesttypedef)
+  - [DeleteBucketTaggingRequestBucketTaggingTypeDef](#deletebuckettaggingrequestbuckettaggingtypedef)
+  - [DeleteBucketTaggingRequestTypeDef](#deletebuckettaggingrequesttypedef)
+  - [DeleteBucketWebsiteRequestBucketWebsiteTypeDef](#deletebucketwebsiterequestbucketwebsitetypedef)
+  - [DeleteBucketWebsiteRequestTypeDef](#deletebucketwebsiterequesttypedef)
   - [DeleteMarkerEntryTypeDef](#deletemarkerentrytypedef)
   - [DeleteMarkerReplicationTypeDef](#deletemarkerreplicationtypedef)
-  - [DeleteObjectOutputTypeDef](#deleteobjectoutputtypedef)
-  - [DeleteObjectTaggingOutputTypeDef](#deleteobjecttaggingoutputtypedef)
-  - [DeleteObjectsOutputTypeDef](#deleteobjectsoutputtypedef)
+  - [DeleteObjectOutputResponseTypeDef](#deleteobjectoutputresponsetypedef)
+  - [DeleteObjectRequestObjectSummaryTypeDef](#deleteobjectrequestobjectsummarytypedef)
+  - [DeleteObjectRequestObjectTypeDef](#deleteobjectrequestobjecttypedef)
+  - [DeleteObjectRequestObjectVersionTypeDef](#deleteobjectrequestobjectversiontypedef)
+  - [DeleteObjectRequestTypeDef](#deleteobjectrequesttypedef)
+  - [DeleteObjectTaggingOutputResponseTypeDef](#deleteobjecttaggingoutputresponsetypedef)
+  - [DeleteObjectTaggingRequestTypeDef](#deleteobjecttaggingrequesttypedef)
+  - [DeleteObjectsOutputResponseTypeDef](#deleteobjectsoutputresponsetypedef)
+  - [DeleteObjectsRequestBucketTypeDef](#deleteobjectsrequestbuckettypedef)
+  - [DeleteObjectsRequestTypeDef](#deleteobjectsrequesttypedef)
+  - [DeletePublicAccessBlockRequestTypeDef](#deletepublicaccessblockrequesttypedef)
   - [DeleteTypeDef](#deletetypedef)
   - [DeletedObjectTypeDef](#deletedobjecttypedef)
   - [DestinationTypeDef](#destinationtypedef)
@@ -53,38 +106,73 @@ type annotations stubs module
   - [ErrorTypeDef](#errortypedef)
   - [ExistingObjectReplicationTypeDef](#existingobjectreplicationtypedef)
   - [FilterRuleTypeDef](#filterruletypedef)
-  - [GetBucketAccelerateConfigurationOutputTypeDef](#getbucketaccelerateconfigurationoutputtypedef)
-  - [GetBucketAclOutputTypeDef](#getbucketacloutputtypedef)
-  - [GetBucketAnalyticsConfigurationOutputTypeDef](#getbucketanalyticsconfigurationoutputtypedef)
-  - [GetBucketCorsOutputTypeDef](#getbucketcorsoutputtypedef)
-  - [GetBucketEncryptionOutputTypeDef](#getbucketencryptionoutputtypedef)
-  - [GetBucketIntelligentTieringConfigurationOutputTypeDef](#getbucketintelligenttieringconfigurationoutputtypedef)
-  - [GetBucketInventoryConfigurationOutputTypeDef](#getbucketinventoryconfigurationoutputtypedef)
-  - [GetBucketLifecycleConfigurationOutputTypeDef](#getbucketlifecycleconfigurationoutputtypedef)
-  - [GetBucketLifecycleOutputTypeDef](#getbucketlifecycleoutputtypedef)
-  - [GetBucketLocationOutputTypeDef](#getbucketlocationoutputtypedef)
-  - [GetBucketLoggingOutputTypeDef](#getbucketloggingoutputtypedef)
-  - [GetBucketMetricsConfigurationOutputTypeDef](#getbucketmetricsconfigurationoutputtypedef)
-  - [GetBucketOwnershipControlsOutputTypeDef](#getbucketownershipcontrolsoutputtypedef)
-  - [GetBucketPolicyOutputTypeDef](#getbucketpolicyoutputtypedef)
-  - [GetBucketPolicyStatusOutputTypeDef](#getbucketpolicystatusoutputtypedef)
-  - [GetBucketReplicationOutputTypeDef](#getbucketreplicationoutputtypedef)
-  - [GetBucketRequestPaymentOutputTypeDef](#getbucketrequestpaymentoutputtypedef)
-  - [GetBucketTaggingOutputTypeDef](#getbuckettaggingoutputtypedef)
-  - [GetBucketVersioningOutputTypeDef](#getbucketversioningoutputtypedef)
-  - [GetBucketWebsiteOutputTypeDef](#getbucketwebsiteoutputtypedef)
-  - [GetObjectAclOutputTypeDef](#getobjectacloutputtypedef)
-  - [GetObjectLegalHoldOutputTypeDef](#getobjectlegalholdoutputtypedef)
-  - [GetObjectLockConfigurationOutputTypeDef](#getobjectlockconfigurationoutputtypedef)
-  - [GetObjectOutputTypeDef](#getobjectoutputtypedef)
-  - [GetObjectRetentionOutputTypeDef](#getobjectretentionoutputtypedef)
-  - [GetObjectTaggingOutputTypeDef](#getobjecttaggingoutputtypedef)
-  - [GetObjectTorrentOutputTypeDef](#getobjecttorrentoutputtypedef)
-  - [GetPublicAccessBlockOutputTypeDef](#getpublicaccessblockoutputtypedef)
+  - [GetBucketAccelerateConfigurationOutputResponseTypeDef](#getbucketaccelerateconfigurationoutputresponsetypedef)
+  - [GetBucketAccelerateConfigurationRequestTypeDef](#getbucketaccelerateconfigurationrequesttypedef)
+  - [GetBucketAclOutputResponseTypeDef](#getbucketacloutputresponsetypedef)
+  - [GetBucketAclRequestTypeDef](#getbucketaclrequesttypedef)
+  - [GetBucketAnalyticsConfigurationOutputResponseTypeDef](#getbucketanalyticsconfigurationoutputresponsetypedef)
+  - [GetBucketAnalyticsConfigurationRequestTypeDef](#getbucketanalyticsconfigurationrequesttypedef)
+  - [GetBucketCorsOutputResponseTypeDef](#getbucketcorsoutputresponsetypedef)
+  - [GetBucketCorsRequestTypeDef](#getbucketcorsrequesttypedef)
+  - [GetBucketEncryptionOutputResponseTypeDef](#getbucketencryptionoutputresponsetypedef)
+  - [GetBucketEncryptionRequestTypeDef](#getbucketencryptionrequesttypedef)
+  - [GetBucketIntelligentTieringConfigurationOutputResponseTypeDef](#getbucketintelligenttieringconfigurationoutputresponsetypedef)
+  - [GetBucketIntelligentTieringConfigurationRequestTypeDef](#getbucketintelligenttieringconfigurationrequesttypedef)
+  - [GetBucketInventoryConfigurationOutputResponseTypeDef](#getbucketinventoryconfigurationoutputresponsetypedef)
+  - [GetBucketInventoryConfigurationRequestTypeDef](#getbucketinventoryconfigurationrequesttypedef)
+  - [GetBucketLifecycleConfigurationOutputResponseTypeDef](#getbucketlifecycleconfigurationoutputresponsetypedef)
+  - [GetBucketLifecycleConfigurationRequestTypeDef](#getbucketlifecycleconfigurationrequesttypedef)
+  - [GetBucketLifecycleOutputResponseTypeDef](#getbucketlifecycleoutputresponsetypedef)
+  - [GetBucketLifecycleRequestTypeDef](#getbucketlifecyclerequesttypedef)
+  - [GetBucketLocationOutputResponseTypeDef](#getbucketlocationoutputresponsetypedef)
+  - [GetBucketLocationRequestTypeDef](#getbucketlocationrequesttypedef)
+  - [GetBucketLoggingOutputResponseTypeDef](#getbucketloggingoutputresponsetypedef)
+  - [GetBucketLoggingRequestTypeDef](#getbucketloggingrequesttypedef)
+  - [GetBucketMetricsConfigurationOutputResponseTypeDef](#getbucketmetricsconfigurationoutputresponsetypedef)
+  - [GetBucketMetricsConfigurationRequestTypeDef](#getbucketmetricsconfigurationrequesttypedef)
+  - [GetBucketNotificationConfigurationRequestTypeDef](#getbucketnotificationconfigurationrequesttypedef)
+  - [GetBucketOwnershipControlsOutputResponseTypeDef](#getbucketownershipcontrolsoutputresponsetypedef)
+  - [GetBucketOwnershipControlsRequestTypeDef](#getbucketownershipcontrolsrequesttypedef)
+  - [GetBucketPolicyOutputResponseTypeDef](#getbucketpolicyoutputresponsetypedef)
+  - [GetBucketPolicyRequestTypeDef](#getbucketpolicyrequesttypedef)
+  - [GetBucketPolicyStatusOutputResponseTypeDef](#getbucketpolicystatusoutputresponsetypedef)
+  - [GetBucketPolicyStatusRequestTypeDef](#getbucketpolicystatusrequesttypedef)
+  - [GetBucketReplicationOutputResponseTypeDef](#getbucketreplicationoutputresponsetypedef)
+  - [GetBucketReplicationRequestTypeDef](#getbucketreplicationrequesttypedef)
+  - [GetBucketRequestPaymentOutputResponseTypeDef](#getbucketrequestpaymentoutputresponsetypedef)
+  - [GetBucketRequestPaymentRequestTypeDef](#getbucketrequestpaymentrequesttypedef)
+  - [GetBucketTaggingOutputResponseTypeDef](#getbuckettaggingoutputresponsetypedef)
+  - [GetBucketTaggingRequestTypeDef](#getbuckettaggingrequesttypedef)
+  - [GetBucketVersioningOutputResponseTypeDef](#getbucketversioningoutputresponsetypedef)
+  - [GetBucketVersioningRequestTypeDef](#getbucketversioningrequesttypedef)
+  - [GetBucketWebsiteOutputResponseTypeDef](#getbucketwebsiteoutputresponsetypedef)
+  - [GetBucketWebsiteRequestTypeDef](#getbucketwebsiterequesttypedef)
+  - [GetObjectAclOutputResponseTypeDef](#getobjectacloutputresponsetypedef)
+  - [GetObjectAclRequestTypeDef](#getobjectaclrequesttypedef)
+  - [GetObjectLegalHoldOutputResponseTypeDef](#getobjectlegalholdoutputresponsetypedef)
+  - [GetObjectLegalHoldRequestTypeDef](#getobjectlegalholdrequesttypedef)
+  - [GetObjectLockConfigurationOutputResponseTypeDef](#getobjectlockconfigurationoutputresponsetypedef)
+  - [GetObjectLockConfigurationRequestTypeDef](#getobjectlockconfigurationrequesttypedef)
+  - [GetObjectOutputResponseTypeDef](#getobjectoutputresponsetypedef)
+  - [GetObjectRequestObjectSummaryTypeDef](#getobjectrequestobjectsummarytypedef)
+  - [GetObjectRequestObjectTypeDef](#getobjectrequestobjecttypedef)
+  - [GetObjectRequestObjectVersionTypeDef](#getobjectrequestobjectversiontypedef)
+  - [GetObjectRequestTypeDef](#getobjectrequesttypedef)
+  - [GetObjectRetentionOutputResponseTypeDef](#getobjectretentionoutputresponsetypedef)
+  - [GetObjectRetentionRequestTypeDef](#getobjectretentionrequesttypedef)
+  - [GetObjectTaggingOutputResponseTypeDef](#getobjecttaggingoutputresponsetypedef)
+  - [GetObjectTaggingRequestTypeDef](#getobjecttaggingrequesttypedef)
+  - [GetObjectTorrentOutputResponseTypeDef](#getobjecttorrentoutputresponsetypedef)
+  - [GetObjectTorrentRequestTypeDef](#getobjecttorrentrequesttypedef)
+  - [GetPublicAccessBlockOutputResponseTypeDef](#getpublicaccessblockoutputresponsetypedef)
+  - [GetPublicAccessBlockRequestTypeDef](#getpublicaccessblockrequesttypedef)
   - [GlacierJobParametersTypeDef](#glacierjobparameterstypedef)
   - [GrantTypeDef](#granttypedef)
   - [GranteeTypeDef](#granteetypedef)
-  - [HeadObjectOutputTypeDef](#headobjectoutputtypedef)
+  - [HeadBucketRequestTypeDef](#headbucketrequesttypedef)
+  - [HeadObjectOutputResponseTypeDef](#headobjectoutputresponsetypedef)
+  - [HeadObjectRequestObjectVersionTypeDef](#headobjectrequestobjectversiontypedef)
+  - [HeadObjectRequestTypeDef](#headobjectrequesttypedef)
   - [IndexDocumentTypeDef](#indexdocumenttypedef)
   - [InitiatorTypeDef](#initiatortypedef)
   - [InputSerializationTypeDef](#inputserializationtypedef)
@@ -105,34 +193,53 @@ type annotations stubs module
   - [LifecycleRuleAndOperatorTypeDef](#lifecycleruleandoperatortypedef)
   - [LifecycleRuleFilterTypeDef](#lifecyclerulefiltertypedef)
   - [LifecycleRuleTypeDef](#lifecycleruletypedef)
-  - [ListBucketAnalyticsConfigurationsOutputTypeDef](#listbucketanalyticsconfigurationsoutputtypedef)
-  - [ListBucketIntelligentTieringConfigurationsOutputTypeDef](#listbucketintelligenttieringconfigurationsoutputtypedef)
-  - [ListBucketInventoryConfigurationsOutputTypeDef](#listbucketinventoryconfigurationsoutputtypedef)
-  - [ListBucketMetricsConfigurationsOutputTypeDef](#listbucketmetricsconfigurationsoutputtypedef)
-  - [ListBucketsOutputTypeDef](#listbucketsoutputtypedef)
-  - [ListMultipartUploadsOutputTypeDef](#listmultipartuploadsoutputtypedef)
-  - [ListObjectVersionsOutputTypeDef](#listobjectversionsoutputtypedef)
-  - [ListObjectsOutputTypeDef](#listobjectsoutputtypedef)
-  - [ListObjectsV2OutputTypeDef](#listobjectsv2outputtypedef)
-  - [ListPartsOutputTypeDef](#listpartsoutputtypedef)
+  - [ListBucketAnalyticsConfigurationsOutputResponseTypeDef](#listbucketanalyticsconfigurationsoutputresponsetypedef)
+  - [ListBucketAnalyticsConfigurationsRequestTypeDef](#listbucketanalyticsconfigurationsrequesttypedef)
+  - [ListBucketIntelligentTieringConfigurationsOutputResponseTypeDef](#listbucketintelligenttieringconfigurationsoutputresponsetypedef)
+  - [ListBucketIntelligentTieringConfigurationsRequestTypeDef](#listbucketintelligenttieringconfigurationsrequesttypedef)
+  - [ListBucketInventoryConfigurationsOutputResponseTypeDef](#listbucketinventoryconfigurationsoutputresponsetypedef)
+  - [ListBucketInventoryConfigurationsRequestTypeDef](#listbucketinventoryconfigurationsrequesttypedef)
+  - [ListBucketMetricsConfigurationsOutputResponseTypeDef](#listbucketmetricsconfigurationsoutputresponsetypedef)
+  - [ListBucketMetricsConfigurationsRequestTypeDef](#listbucketmetricsconfigurationsrequesttypedef)
+  - [ListBucketsOutputResponseTypeDef](#listbucketsoutputresponsetypedef)
+  - [ListMultipartUploadsOutputResponseTypeDef](#listmultipartuploadsoutputresponsetypedef)
+  - [ListMultipartUploadsRequestTypeDef](#listmultipartuploadsrequesttypedef)
+  - [ListObjectVersionsOutputResponseTypeDef](#listobjectversionsoutputresponsetypedef)
+  - [ListObjectVersionsRequestTypeDef](#listobjectversionsrequesttypedef)
+  - [ListObjectsOutputResponseTypeDef](#listobjectsoutputresponsetypedef)
+  - [ListObjectsRequestTypeDef](#listobjectsrequesttypedef)
+  - [ListObjectsV2OutputResponseTypeDef](#listobjectsv2outputresponsetypedef)
+  - [ListObjectsV2RequestTypeDef](#listobjectsv2requesttypedef)
+  - [ListPartsOutputResponseTypeDef](#listpartsoutputresponsetypedef)
+  - [ListPartsRequestTypeDef](#listpartsrequesttypedef)
   - [LoggingEnabledTypeDef](#loggingenabledtypedef)
   - [MetadataEntryTypeDef](#metadataentrytypedef)
   - [MetricsAndOperatorTypeDef](#metricsandoperatortypedef)
   - [MetricsConfigurationTypeDef](#metricsconfigurationtypedef)
   - [MetricsFilterTypeDef](#metricsfiltertypedef)
   - [MetricsTypeDef](#metricstypedef)
+  - [MultipartUploadPartRequestTypeDef](#multipartuploadpartrequesttypedef)
   - [MultipartUploadTypeDef](#multipartuploadtypedef)
   - [NoncurrentVersionExpirationTypeDef](#noncurrentversionexpirationtypedef)
   - [NoncurrentVersionTransitionTypeDef](#noncurrentversiontransitiontypedef)
-  - [NotificationConfigurationDeprecatedTypeDef](#notificationconfigurationdeprecatedtypedef)
+  - [NotificationConfigurationDeprecatedResponseTypeDef](#notificationconfigurationdeprecatedresponsetypedef)
   - [NotificationConfigurationFilterTypeDef](#notificationconfigurationfiltertypedef)
-  - [NotificationConfigurationTypeDef](#notificationconfigurationtypedef)
+  - [NotificationConfigurationResponseTypeDef](#notificationconfigurationresponsetypedef)
+  - [ObjectCopyRequestTypeDef](#objectcopyrequesttypedef)
+  - [ObjectDownloadFileRequestTypeDef](#objectdownloadfilerequesttypedef)
+  - [ObjectDownloadFileobjRequestTypeDef](#objectdownloadfileobjrequesttypedef)
   - [ObjectIdentifierTypeDef](#objectidentifiertypedef)
   - [ObjectLockConfigurationTypeDef](#objectlockconfigurationtypedef)
   - [ObjectLockLegalHoldTypeDef](#objectlocklegalholdtypedef)
   - [ObjectLockRetentionTypeDef](#objectlockretentiontypedef)
   - [ObjectLockRuleTypeDef](#objectlockruletypedef)
+  - [ObjectMultipartUploadRequestTypeDef](#objectmultipartuploadrequesttypedef)
+  - [ObjectSummaryMultipartUploadRequestTypeDef](#objectsummarymultipartuploadrequesttypedef)
+  - [ObjectSummaryVersionRequestTypeDef](#objectsummaryversionrequesttypedef)
   - [ObjectTypeDef](#objecttypedef)
+  - [ObjectUploadFileRequestTypeDef](#objectuploadfilerequesttypedef)
+  - [ObjectUploadFileobjRequestTypeDef](#objectuploadfileobjrequesttypedef)
+  - [ObjectVersionRequestTypeDef](#objectversionrequesttypedef)
   - [ObjectVersionTypeDef](#objectversiontypedef)
   - [OutputLocationTypeDef](#outputlocationtypedef)
   - [OutputSerializationTypeDef](#outputserializationtypedef)
@@ -145,12 +252,54 @@ type annotations stubs module
   - [ProgressEventTypeDef](#progresseventtypedef)
   - [ProgressTypeDef](#progresstypedef)
   - [PublicAccessBlockConfigurationTypeDef](#publicaccessblockconfigurationtypedef)
-  - [PutObjectAclOutputTypeDef](#putobjectacloutputtypedef)
-  - [PutObjectLegalHoldOutputTypeDef](#putobjectlegalholdoutputtypedef)
-  - [PutObjectLockConfigurationOutputTypeDef](#putobjectlockconfigurationoutputtypedef)
-  - [PutObjectOutputTypeDef](#putobjectoutputtypedef)
-  - [PutObjectRetentionOutputTypeDef](#putobjectretentionoutputtypedef)
-  - [PutObjectTaggingOutputTypeDef](#putobjecttaggingoutputtypedef)
+  - [PutBucketAccelerateConfigurationRequestTypeDef](#putbucketaccelerateconfigurationrequesttypedef)
+  - [PutBucketAclRequestBucketAclTypeDef](#putbucketaclrequestbucketacltypedef)
+  - [PutBucketAclRequestTypeDef](#putbucketaclrequesttypedef)
+  - [PutBucketAnalyticsConfigurationRequestTypeDef](#putbucketanalyticsconfigurationrequesttypedef)
+  - [PutBucketCorsRequestBucketCorsTypeDef](#putbucketcorsrequestbucketcorstypedef)
+  - [PutBucketCorsRequestTypeDef](#putbucketcorsrequesttypedef)
+  - [PutBucketEncryptionRequestTypeDef](#putbucketencryptionrequesttypedef)
+  - [PutBucketIntelligentTieringConfigurationRequestTypeDef](#putbucketintelligenttieringconfigurationrequesttypedef)
+  - [PutBucketInventoryConfigurationRequestTypeDef](#putbucketinventoryconfigurationrequesttypedef)
+  - [PutBucketLifecycleConfigurationRequestBucketLifecycleConfigurationTypeDef](#putbucketlifecycleconfigurationrequestbucketlifecycleconfigurationtypedef)
+  - [PutBucketLifecycleConfigurationRequestTypeDef](#putbucketlifecycleconfigurationrequesttypedef)
+  - [PutBucketLifecycleRequestBucketLifecycleTypeDef](#putbucketlifecyclerequestbucketlifecycletypedef)
+  - [PutBucketLifecycleRequestTypeDef](#putbucketlifecyclerequesttypedef)
+  - [PutBucketLoggingRequestBucketLoggingTypeDef](#putbucketloggingrequestbucketloggingtypedef)
+  - [PutBucketLoggingRequestTypeDef](#putbucketloggingrequesttypedef)
+  - [PutBucketMetricsConfigurationRequestTypeDef](#putbucketmetricsconfigurationrequesttypedef)
+  - [PutBucketNotificationConfigurationRequestBucketNotificationTypeDef](#putbucketnotificationconfigurationrequestbucketnotificationtypedef)
+  - [PutBucketNotificationConfigurationRequestTypeDef](#putbucketnotificationconfigurationrequesttypedef)
+  - [PutBucketNotificationRequestTypeDef](#putbucketnotificationrequesttypedef)
+  - [PutBucketOwnershipControlsRequestTypeDef](#putbucketownershipcontrolsrequesttypedef)
+  - [PutBucketPolicyRequestBucketPolicyTypeDef](#putbucketpolicyrequestbucketpolicytypedef)
+  - [PutBucketPolicyRequestTypeDef](#putbucketpolicyrequesttypedef)
+  - [PutBucketReplicationRequestTypeDef](#putbucketreplicationrequesttypedef)
+  - [PutBucketRequestPaymentRequestBucketRequestPaymentTypeDef](#putbucketrequestpaymentrequestbucketrequestpaymenttypedef)
+  - [PutBucketRequestPaymentRequestTypeDef](#putbucketrequestpaymentrequesttypedef)
+  - [PutBucketTaggingRequestBucketTaggingTypeDef](#putbuckettaggingrequestbuckettaggingtypedef)
+  - [PutBucketTaggingRequestTypeDef](#putbuckettaggingrequesttypedef)
+  - [PutBucketVersioningRequestBucketVersioningTypeDef](#putbucketversioningrequestbucketversioningtypedef)
+  - [PutBucketVersioningRequestTypeDef](#putbucketversioningrequesttypedef)
+  - [PutBucketWebsiteRequestBucketWebsiteTypeDef](#putbucketwebsiterequestbucketwebsitetypedef)
+  - [PutBucketWebsiteRequestTypeDef](#putbucketwebsiterequesttypedef)
+  - [PutObjectAclOutputResponseTypeDef](#putobjectacloutputresponsetypedef)
+  - [PutObjectAclRequestObjectAclTypeDef](#putobjectaclrequestobjectacltypedef)
+  - [PutObjectAclRequestTypeDef](#putobjectaclrequesttypedef)
+  - [PutObjectLegalHoldOutputResponseTypeDef](#putobjectlegalholdoutputresponsetypedef)
+  - [PutObjectLegalHoldRequestTypeDef](#putobjectlegalholdrequesttypedef)
+  - [PutObjectLockConfigurationOutputResponseTypeDef](#putobjectlockconfigurationoutputresponsetypedef)
+  - [PutObjectLockConfigurationRequestTypeDef](#putobjectlockconfigurationrequesttypedef)
+  - [PutObjectOutputResponseTypeDef](#putobjectoutputresponsetypedef)
+  - [PutObjectRequestBucketTypeDef](#putobjectrequestbuckettypedef)
+  - [PutObjectRequestObjectSummaryTypeDef](#putobjectrequestobjectsummarytypedef)
+  - [PutObjectRequestObjectTypeDef](#putobjectrequestobjecttypedef)
+  - [PutObjectRequestTypeDef](#putobjectrequesttypedef)
+  - [PutObjectRetentionOutputResponseTypeDef](#putobjectretentionoutputresponsetypedef)
+  - [PutObjectRetentionRequestTypeDef](#putobjectretentionrequesttypedef)
+  - [PutObjectTaggingOutputResponseTypeDef](#putobjecttaggingoutputresponsetypedef)
+  - [PutObjectTaggingRequestTypeDef](#putobjecttaggingrequesttypedef)
+  - [PutPublicAccessBlockRequestTypeDef](#putpublicaccessblockrequesttypedef)
   - [QueueConfigurationDeprecatedTypeDef](#queueconfigurationdeprecatedtypedef)
   - [QueueConfigurationTypeDef](#queueconfigurationtypedef)
   - [RecordsEventTypeDef](#recordseventtypedef)
@@ -166,7 +315,10 @@ type annotations stubs module
   - [RequestPaymentConfigurationTypeDef](#requestpaymentconfigurationtypedef)
   - [RequestProgressTypeDef](#requestprogresstypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RestoreObjectOutputTypeDef](#restoreobjectoutputtypedef)
+  - [RestoreObjectOutputResponseTypeDef](#restoreobjectoutputresponsetypedef)
+  - [RestoreObjectRequestObjectSummaryTypeDef](#restoreobjectrequestobjectsummarytypedef)
+  - [RestoreObjectRequestObjectTypeDef](#restoreobjectrequestobjecttypedef)
+  - [RestoreObjectRequestTypeDef](#restoreobjectrequesttypedef)
   - [RestoreRequestTypeDef](#restorerequesttypedef)
   - [RoutingRuleTypeDef](#routingruletypedef)
   - [RuleTypeDef](#ruletypedef)
@@ -175,11 +327,30 @@ type annotations stubs module
   - [SSEKMSTypeDef](#ssekmstypedef)
   - [ScanRangeTypeDef](#scanrangetypedef)
   - [SelectObjectContentEventStreamTypeDef](#selectobjectcontenteventstreamtypedef)
-  - [SelectObjectContentOutputTypeDef](#selectobjectcontentoutputtypedef)
+  - [SelectObjectContentOutputResponseTypeDef](#selectobjectcontentoutputresponsetypedef)
+  - [SelectObjectContentRequestTypeDef](#selectobjectcontentrequesttypedef)
   - [SelectParametersTypeDef](#selectparameterstypedef)
   - [ServerSideEncryptionByDefaultTypeDef](#serversideencryptionbydefaulttypedef)
   - [ServerSideEncryptionConfigurationTypeDef](#serversideencryptionconfigurationtypedef)
   - [ServerSideEncryptionRuleTypeDef](#serversideencryptionruletypedef)
+  - [ServiceResourceBucketAclRequestTypeDef](#serviceresourcebucketaclrequesttypedef)
+  - [ServiceResourceBucketCorsRequestTypeDef](#serviceresourcebucketcorsrequesttypedef)
+  - [ServiceResourceBucketLifecycleConfigurationRequestTypeDef](#serviceresourcebucketlifecycleconfigurationrequesttypedef)
+  - [ServiceResourceBucketLifecycleRequestTypeDef](#serviceresourcebucketlifecyclerequesttypedef)
+  - [ServiceResourceBucketLoggingRequestTypeDef](#serviceresourcebucketloggingrequesttypedef)
+  - [ServiceResourceBucketNotificationRequestTypeDef](#serviceresourcebucketnotificationrequesttypedef)
+  - [ServiceResourceBucketPolicyRequestTypeDef](#serviceresourcebucketpolicyrequesttypedef)
+  - [ServiceResourceBucketRequestPaymentRequestTypeDef](#serviceresourcebucketrequestpaymentrequesttypedef)
+  - [ServiceResourceBucketRequestTypeDef](#serviceresourcebucketrequesttypedef)
+  - [ServiceResourceBucketTaggingRequestTypeDef](#serviceresourcebuckettaggingrequesttypedef)
+  - [ServiceResourceBucketVersioningRequestTypeDef](#serviceresourcebucketversioningrequesttypedef)
+  - [ServiceResourceBucketWebsiteRequestTypeDef](#serviceresourcebucketwebsiterequesttypedef)
+  - [ServiceResourceMultipartUploadPartRequestTypeDef](#serviceresourcemultipartuploadpartrequesttypedef)
+  - [ServiceResourceMultipartUploadRequestTypeDef](#serviceresourcemultipartuploadrequesttypedef)
+  - [ServiceResourceObjectAclRequestTypeDef](#serviceresourceobjectaclrequesttypedef)
+  - [ServiceResourceObjectRequestTypeDef](#serviceresourceobjectrequesttypedef)
+  - [ServiceResourceObjectSummaryRequestTypeDef](#serviceresourceobjectsummaryrequesttypedef)
+  - [ServiceResourceObjectVersionRequestTypeDef](#serviceresourceobjectversionrequesttypedef)
   - [SourceSelectionCriteriaTypeDef](#sourceselectioncriteriatypedef)
   - [SseKmsEncryptedObjectsTypeDef](#ssekmsencryptedobjectstypedef)
   - [StatsEventTypeDef](#statseventtypedef)
@@ -193,11 +364,16 @@ type annotations stubs module
   - [TopicConfigurationDeprecatedTypeDef](#topicconfigurationdeprecatedtypedef)
   - [TopicConfigurationTypeDef](#topicconfigurationtypedef)
   - [TransitionTypeDef](#transitiontypedef)
-  - [UploadPartCopyOutputTypeDef](#uploadpartcopyoutputtypedef)
-  - [UploadPartOutputTypeDef](#uploadpartoutputtypedef)
+  - [UploadPartCopyOutputResponseTypeDef](#uploadpartcopyoutputresponsetypedef)
+  - [UploadPartCopyRequestMultipartUploadPartTypeDef](#uploadpartcopyrequestmultipartuploadparttypedef)
+  - [UploadPartCopyRequestTypeDef](#uploadpartcopyrequesttypedef)
+  - [UploadPartOutputResponseTypeDef](#uploadpartoutputresponsetypedef)
+  - [UploadPartRequestMultipartUploadPartTypeDef](#uploadpartrequestmultipartuploadparttypedef)
+  - [UploadPartRequestTypeDef](#uploadpartrequesttypedef)
   - [VersioningConfigurationTypeDef](#versioningconfigurationtypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
   - [WebsiteConfigurationTypeDef](#websiteconfigurationtypedef)
+  - [WriteGetObjectResponseRequestTypeDef](#writegetobjectresponserequesttypedef)
 
 ## AbortIncompleteMultipartUploadTypeDef
 
@@ -209,10 +385,10 @@ Optional fields:
 
 - `DaysAfterInitiation`: `int`
 
-## AbortMultipartUploadOutputTypeDef
+## AbortMultipartUploadOutputResponseTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import AbortMultipartUploadOutputTypeDef
+from mypy_boto3_s3.type_defs import AbortMultipartUploadOutputResponseTypeDef
 ```
 
 Required fields:
@@ -221,6 +397,36 @@ Required fields:
   [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## AbortMultipartUploadRequestMultipartUploadTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import AbortMultipartUploadRequestMultipartUploadTypeDef
+```
+
+Optional fields:
+
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `ExpectedBucketOwner`: `str`
+
+## AbortMultipartUploadRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import AbortMultipartUploadRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Key`: `str`
+- `UploadId`: `str`
+
+Optional fields:
+
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `ExpectedBucketOwner`: `str`
 
 ## AccelerateConfigurationTypeDef
 
@@ -323,6 +529,58 @@ Optional fields:
 - `BucketAccountId`: `str`
 - `Prefix`: `str`
 
+## BucketCopyRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import BucketCopyRequestTypeDef
+```
+
+Required fields:
+
+- `CopySource`: [CopySourceTypeDef](./type_defs.md#copysourcetypedef)
+- `Key`: `str`
+
+Optional fields:
+
+- `ExtraArgs`: `Dict`\[`str`, `Any`\]
+- `Callback`: `Callable`\[`...`, `Any`\]
+- `SourceClient`: `BaseClient`
+- `Config`: `TransferConfig`
+
+## BucketDownloadFileRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import BucketDownloadFileRequestTypeDef
+```
+
+Required fields:
+
+- `Key`: `str`
+- `Filename`: `str`
+
+Optional fields:
+
+- `ExtraArgs`: `Dict`\[`str`, `Any`\]
+- `Callback`: `Callable`\[`...`, `Any`\]
+- `Config`: `TransferConfig`
+
+## BucketDownloadFileobjRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import BucketDownloadFileobjRequestTypeDef
+```
+
+Required fields:
+
+- `Key`: `str`
+- `Fileobj`: `IO`\[`Any`\]
+
+Optional fields:
+
+- `ExtraArgs`: `Dict`\[`str`, `Any`\]
+- `Callback`: `Callable`\[`...`, `Any`\]
+- `Config`: `TransferConfig`
+
 ## BucketLifecycleConfigurationTypeDef
 
 ```python
@@ -345,6 +603,16 @@ Optional fields:
 - `LoggingEnabled`:
   [LoggingEnabledTypeDef](./type_defs.md#loggingenabledtypedef)
 
+## BucketObjectRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import BucketObjectRequestTypeDef
+```
+
+Required fields:
+
+- `key`: `str`
+
 ## BucketTypeDef
 
 ```python
@@ -355,6 +623,40 @@ Optional fields:
 
 - `Name`: `str`
 - `CreationDate`: `datetime`
+
+## BucketUploadFileRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import BucketUploadFileRequestTypeDef
+```
+
+Required fields:
+
+- `Filename`: `str`
+- `Key`: `str`
+
+Optional fields:
+
+- `ExtraArgs`: `Dict`\[`str`, `Any`\]
+- `Callback`: `Callable`\[`...`, `Any`\]
+- `Config`: `TransferConfig`
+
+## BucketUploadFileobjRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import BucketUploadFileobjRequestTypeDef
+```
+
+Required fields:
+
+- `Fileobj`: `IO`\[`Any`\]
+- `Key`: `str`
+
+Optional fields:
+
+- `ExtraArgs`: `Dict`\[`str`, `Any`\]
+- `Callback`: `Callable`\[`...`, `Any`\]
+- `Config`: `TransferConfig`
 
 ## CORSConfigurationTypeDef
 
@@ -406,15 +708,121 @@ Optional fields:
 from mypy_boto3_s3.type_defs import CSVOutputTypeDef
 ```
 
-Required fields:
+Optional fields:
 
 - `QuoteFields`: [QuoteFieldsType](./literals.md#quotefieldstype)
 - `QuoteEscapeCharacter`: `str`
 - `RecordDelimiter`: `str`
 - `FieldDelimiter`: `str`
 - `QuoteCharacter`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ClientCopyRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ClientCopyRequestTypeDef
+```
+
+Required fields:
+
+- `CopySource`: [CopySourceTypeDef](./type_defs.md#copysourcetypedef)
+- `Bucket`: `str`
+- `Key`: `str`
+
+Optional fields:
+
+- `ExtraArgs`: `Dict`\[`str`, `Any`\]
+- `Callback`: `Callable`\[`...`, `Any`\]
+- `SourceClient`: `BaseClient`
+- `Config`: `TransferConfig`
+
+## ClientDownloadFileRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ClientDownloadFileRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Key`: `str`
+- `Filename`: `str`
+
+Optional fields:
+
+- `ExtraArgs`: `Dict`\[`str`, `Any`\]
+- `Callback`: `Callable`\[`...`, `Any`\]
+- `Config`: `TransferConfig`
+
+## ClientDownloadFileobjRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ClientDownloadFileobjRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Key`: `str`
+- `Fileobj`: `IO`\[`Any`\]
+
+Optional fields:
+
+- `ExtraArgs`: `Dict`\[`str`, `Any`\]
+- `Callback`: `Callable`\[`...`, `Any`\]
+- `Config`: `TransferConfig`
+
+## ClientGeneratePresignedPostRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ClientGeneratePresignedPostRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Key`: `str`
+
+Optional fields:
+
+- `Fields`: `Dict`\[`str`, `Any`\]
+- `Conditions`: `List`\[`Any`\]
+- `ExpiresIn`: `int`
+
+## ClientUploadFileRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ClientUploadFileRequestTypeDef
+```
+
+Required fields:
+
+- `Filename`: `str`
+- `Bucket`: `str`
+- `Key`: `str`
+
+Optional fields:
+
+- `ExtraArgs`: `Dict`\[`str`, `Any`\]
+- `Callback`: `Callable`\[`...`, `Any`\]
+- `Config`: `TransferConfig`
+
+## ClientUploadFileobjRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ClientUploadFileobjRequestTypeDef
+```
+
+Required fields:
+
+- `Fileobj`: `IO`\[`Any`\]
+- `Bucket`: `str`
+- `Key`: `str`
+
+Optional fields:
+
+- `ExtraArgs`: `Dict`\[`str`, `Any`\]
+- `Callback`: `Callable`\[`...`, `Any`\]
+- `Config`: `TransferConfig`
 
 ## CloudFunctionConfigurationTypeDef
 
@@ -440,10 +848,10 @@ Optional fields:
 
 - `Prefix`: `str`
 
-## CompleteMultipartUploadOutputTypeDef
+## CompleteMultipartUploadOutputResponseTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import CompleteMultipartUploadOutputTypeDef
+from mypy_boto3_s3.type_defs import CompleteMultipartUploadOutputResponseTypeDef
 ```
 
 Required fields:
@@ -462,6 +870,40 @@ Required fields:
   [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CompleteMultipartUploadRequestMultipartUploadTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import CompleteMultipartUploadRequestMultipartUploadTypeDef
+```
+
+Optional fields:
+
+- `MultipartUpload`:
+  [CompletedMultipartUploadTypeDef](./type_defs.md#completedmultipartuploadtypedef)
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `ExpectedBucketOwner`: `str`
+
+## CompleteMultipartUploadRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import CompleteMultipartUploadRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Key`: `str`
+- `UploadId`: `str`
+
+Optional fields:
+
+- `MultipartUpload`:
+  [CompletedMultipartUploadTypeDef](./type_defs.md#completedmultipartuploadtypedef)
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `ExpectedBucketOwner`: `str`
 
 ## CompletedMultipartUploadTypeDef
 
@@ -496,10 +938,10 @@ Optional fields:
 - `HttpErrorCodeReturnedEquals`: `str`
 - `KeyPrefixEquals`: `str`
 
-## CopyObjectOutputTypeDef
+## CopyObjectOutputResponseTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import CopyObjectOutputTypeDef
+from mypy_boto3_s3.type_defs import CopyObjectOutputResponseTypeDef
 ```
 
 Required fields:
@@ -520,6 +962,174 @@ Required fields:
   [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CopyObjectRequestObjectSummaryTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import CopyObjectRequestObjectSummaryTypeDef
+```
+
+Required fields:
+
+- `CopySource`: `str`
+
+Optional fields:
+
+- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
+- `CacheControl`: `str`
+- `ContentDisposition`: `str`
+- `ContentEncoding`: `str`
+- `ContentLanguage`: `str`
+- `ContentType`: `str`
+- `CopySourceIfMatch`: `str`
+- `CopySourceIfModifiedSince`: `Union`\[`datetime`, `str`\]
+- `CopySourceIfNoneMatch`: `str`
+- `CopySourceIfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
+- `Expires`: `Union`\[`datetime`, `str`\]
+- `GrantFullControl`: `str`
+- `GrantRead`: `str`
+- `GrantReadACP`: `str`
+- `GrantWriteACP`: `str`
+- `Metadata`: `Dict`\[`str`, `str`\]
+- `MetadataDirective`:
+  [MetadataDirectiveType](./literals.md#metadatadirectivetype)
+- `TaggingDirective`:
+  [TaggingDirectiveType](./literals.md#taggingdirectivetype)
+- `ServerSideEncryption`:
+  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
+- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
+- `WebsiteRedirectLocation`: `str`
+- `SSECustomerAlgorithm`: `str`
+- `SSECustomerKey`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `SSEKMSKeyId`: `str`
+- `SSEKMSEncryptionContext`: `str`
+- `BucketKeyEnabled`: `bool`
+- `CopySourceSSECustomerAlgorithm`: `str`
+- `CopySourceSSECustomerKey`: `str`
+- `CopySourceSSECustomerKeyMD5`: `str`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `Tagging`: `str`
+- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
+- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
+- `ObjectLockLegalHoldStatus`:
+  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
+- `ExpectedBucketOwner`: `str`
+- `ExpectedSourceBucketOwner`: `str`
+
+## CopyObjectRequestObjectTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import CopyObjectRequestObjectTypeDef
+```
+
+Required fields:
+
+- `CopySource`: `str`
+
+Optional fields:
+
+- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
+- `CacheControl`: `str`
+- `ContentDisposition`: `str`
+- `ContentEncoding`: `str`
+- `ContentLanguage`: `str`
+- `ContentType`: `str`
+- `CopySourceIfMatch`: `str`
+- `CopySourceIfModifiedSince`: `Union`\[`datetime`, `str`\]
+- `CopySourceIfNoneMatch`: `str`
+- `CopySourceIfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
+- `Expires`: `Union`\[`datetime`, `str`\]
+- `GrantFullControl`: `str`
+- `GrantRead`: `str`
+- `GrantReadACP`: `str`
+- `GrantWriteACP`: `str`
+- `Metadata`: `Dict`\[`str`, `str`\]
+- `MetadataDirective`:
+  [MetadataDirectiveType](./literals.md#metadatadirectivetype)
+- `TaggingDirective`:
+  [TaggingDirectiveType](./literals.md#taggingdirectivetype)
+- `ServerSideEncryption`:
+  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
+- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
+- `WebsiteRedirectLocation`: `str`
+- `SSECustomerAlgorithm`: `str`
+- `SSECustomerKey`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `SSEKMSKeyId`: `str`
+- `SSEKMSEncryptionContext`: `str`
+- `BucketKeyEnabled`: `bool`
+- `CopySourceSSECustomerAlgorithm`: `str`
+- `CopySourceSSECustomerKey`: `str`
+- `CopySourceSSECustomerKeyMD5`: `str`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `Tagging`: `str`
+- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
+- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
+- `ObjectLockLegalHoldStatus`:
+  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
+- `ExpectedBucketOwner`: `str`
+- `ExpectedSourceBucketOwner`: `str`
+
+## CopyObjectRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import CopyObjectRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `CopySource`: `Union`\[`str`,
+  [CopySourceTypeDef](./type_defs.md#copysourcetypedef)\]
+- `Key`: `str`
+
+Optional fields:
+
+- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
+- `CacheControl`: `str`
+- `ContentDisposition`: `str`
+- `ContentEncoding`: `str`
+- `ContentLanguage`: `str`
+- `ContentType`: `str`
+- `CopySourceIfMatch`: `str`
+- `CopySourceIfModifiedSince`: `Union`\[`datetime`, `str`\]
+- `CopySourceIfNoneMatch`: `str`
+- `CopySourceIfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
+- `Expires`: `Union`\[`datetime`, `str`\]
+- `GrantFullControl`: `str`
+- `GrantRead`: `str`
+- `GrantReadACP`: `str`
+- `GrantWriteACP`: `str`
+- `Metadata`: `Dict`\[`str`, `str`\]
+- `MetadataDirective`:
+  [MetadataDirectiveType](./literals.md#metadatadirectivetype)
+- `TaggingDirective`:
+  [TaggingDirectiveType](./literals.md#taggingdirectivetype)
+- `ServerSideEncryption`:
+  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
+- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
+- `WebsiteRedirectLocation`: `str`
+- `SSECustomerAlgorithm`: `str`
+- `SSECustomerKey`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `SSEKMSKeyId`: `str`
+- `SSEKMSEncryptionContext`: `str`
+- `BucketKeyEnabled`: `bool`
+- `CopySourceSSECustomerAlgorithm`: `str`
+- `CopySourceSSECustomerKey`: `str`
+- `CopySourceSSECustomerKeyMD5`: `str`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `Tagging`: `str`
+- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
+- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
+- `ObjectLockLegalHoldStatus`:
+  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
+- `ExpectedBucketOwner`: `str`
+- `ExpectedSourceBucketOwner`: `str`
 
 ## CopyObjectResultTypeDef
 
@@ -569,10 +1179,10 @@ Optional fields:
 - `LocationConstraint`:
   [BucketLocationConstraintType](./literals.md#bucketlocationconstrainttype)
 
-## CreateBucketOutputTypeDef
+## CreateBucketOutputResponseTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import CreateBucketOutputTypeDef
+from mypy_boto3_s3.type_defs import CreateBucketOutputResponseTypeDef
 ```
 
 Required fields:
@@ -581,10 +1191,72 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateMultipartUploadOutputTypeDef
+## CreateBucketRequestBucketTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import CreateMultipartUploadOutputTypeDef
+from mypy_boto3_s3.type_defs import CreateBucketRequestBucketTypeDef
+```
+
+Optional fields:
+
+- `ACL`: [BucketCannedACLType](./literals.md#bucketcannedacltype)
+- `CreateBucketConfiguration`:
+  [CreateBucketConfigurationTypeDef](./type_defs.md#createbucketconfigurationtypedef)
+- `GrantFullControl`: `str`
+- `GrantRead`: `str`
+- `GrantReadACP`: `str`
+- `GrantWrite`: `str`
+- `GrantWriteACP`: `str`
+- `ObjectLockEnabledForBucket`: `bool`
+
+## CreateBucketRequestServiceResourceTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import CreateBucketRequestServiceResourceTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ACL`: [BucketCannedACLType](./literals.md#bucketcannedacltype)
+- `CreateBucketConfiguration`:
+  [CreateBucketConfigurationTypeDef](./type_defs.md#createbucketconfigurationtypedef)
+- `GrantFullControl`: `str`
+- `GrantRead`: `str`
+- `GrantReadACP`: `str`
+- `GrantWrite`: `str`
+- `GrantWriteACP`: `str`
+- `ObjectLockEnabledForBucket`: `bool`
+
+## CreateBucketRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import CreateBucketRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ACL`: [BucketCannedACLType](./literals.md#bucketcannedacltype)
+- `CreateBucketConfiguration`:
+  [CreateBucketConfigurationTypeDef](./type_defs.md#createbucketconfigurationtypedef)
+- `GrantFullControl`: `str`
+- `GrantRead`: `str`
+- `GrantReadACP`: `str`
+- `GrantWrite`: `str`
+- `GrantWriteACP`: `str`
+- `ObjectLockEnabledForBucket`: `bool`
+
+## CreateMultipartUploadOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import CreateMultipartUploadOutputResponseTypeDef
 ```
 
 Required fields:
@@ -606,6 +1278,128 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CreateMultipartUploadRequestObjectSummaryTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import CreateMultipartUploadRequestObjectSummaryTypeDef
+```
+
+Optional fields:
+
+- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
+- `CacheControl`: `str`
+- `ContentDisposition`: `str`
+- `ContentEncoding`: `str`
+- `ContentLanguage`: `str`
+- `ContentType`: `str`
+- `Expires`: `Union`\[`datetime`, `str`\]
+- `GrantFullControl`: `str`
+- `GrantRead`: `str`
+- `GrantReadACP`: `str`
+- `GrantWriteACP`: `str`
+- `Metadata`: `Dict`\[`str`, `str`\]
+- `ServerSideEncryption`:
+  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
+- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
+- `WebsiteRedirectLocation`: `str`
+- `SSECustomerAlgorithm`: `str`
+- `SSECustomerKey`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `SSEKMSKeyId`: `str`
+- `SSEKMSEncryptionContext`: `str`
+- `BucketKeyEnabled`: `bool`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `Tagging`: `str`
+- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
+- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
+- `ObjectLockLegalHoldStatus`:
+  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
+- `ExpectedBucketOwner`: `str`
+
+## CreateMultipartUploadRequestObjectTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import CreateMultipartUploadRequestObjectTypeDef
+```
+
+Optional fields:
+
+- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
+- `CacheControl`: `str`
+- `ContentDisposition`: `str`
+- `ContentEncoding`: `str`
+- `ContentLanguage`: `str`
+- `ContentType`: `str`
+- `Expires`: `Union`\[`datetime`, `str`\]
+- `GrantFullControl`: `str`
+- `GrantRead`: `str`
+- `GrantReadACP`: `str`
+- `GrantWriteACP`: `str`
+- `Metadata`: `Dict`\[`str`, `str`\]
+- `ServerSideEncryption`:
+  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
+- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
+- `WebsiteRedirectLocation`: `str`
+- `SSECustomerAlgorithm`: `str`
+- `SSECustomerKey`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `SSEKMSKeyId`: `str`
+- `SSEKMSEncryptionContext`: `str`
+- `BucketKeyEnabled`: `bool`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `Tagging`: `str`
+- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
+- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
+- `ObjectLockLegalHoldStatus`:
+  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
+- `ExpectedBucketOwner`: `str`
+
+## CreateMultipartUploadRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import CreateMultipartUploadRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Key`: `str`
+
+Optional fields:
+
+- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
+- `CacheControl`: `str`
+- `ContentDisposition`: `str`
+- `ContentEncoding`: `str`
+- `ContentLanguage`: `str`
+- `ContentType`: `str`
+- `Expires`: `Union`\[`datetime`, `str`\]
+- `GrantFullControl`: `str`
+- `GrantRead`: `str`
+- `GrantReadACP`: `str`
+- `GrantWriteACP`: `str`
+- `Metadata`: `Dict`\[`str`, `str`\]
+- `ServerSideEncryption`:
+  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
+- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
+- `WebsiteRedirectLocation`: `str`
+- `SSECustomerAlgorithm`: `str`
+- `SSECustomerKey`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `SSEKMSKeyId`: `str`
+- `SSEKMSEncryptionContext`: `str`
+- `BucketKeyEnabled`: `bool`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `Tagging`: `str`
+- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
+- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
+- `ObjectLockLegalHoldStatus`:
+  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
+- `ExpectedBucketOwner`: `str`
+
 ## DefaultRetentionTypeDef
 
 ```python
@@ -618,6 +1412,258 @@ Optional fields:
   [ObjectLockRetentionModeType](./literals.md#objectlockretentionmodetype)
 - `Days`: `int`
 - `Years`: `int`
+
+## DeleteBucketAnalyticsConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import DeleteBucketAnalyticsConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Id`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## DeleteBucketCorsRequestBucketCorsTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import DeleteBucketCorsRequestBucketCorsTypeDef
+```
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## DeleteBucketCorsRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import DeleteBucketCorsRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## DeleteBucketEncryptionRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import DeleteBucketEncryptionRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## DeleteBucketIntelligentTieringConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import DeleteBucketIntelligentTieringConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Id`: `str`
+
+## DeleteBucketInventoryConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import DeleteBucketInventoryConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Id`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## DeleteBucketLifecycleRequestBucketLifecycleConfigurationTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import DeleteBucketLifecycleRequestBucketLifecycleConfigurationTypeDef
+```
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## DeleteBucketLifecycleRequestBucketLifecycleTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import DeleteBucketLifecycleRequestBucketLifecycleTypeDef
+```
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## DeleteBucketLifecycleRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import DeleteBucketLifecycleRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## DeleteBucketMetricsConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import DeleteBucketMetricsConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Id`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## DeleteBucketOwnershipControlsRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import DeleteBucketOwnershipControlsRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## DeleteBucketPolicyRequestBucketPolicyTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import DeleteBucketPolicyRequestBucketPolicyTypeDef
+```
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## DeleteBucketPolicyRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import DeleteBucketPolicyRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## DeleteBucketReplicationRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import DeleteBucketReplicationRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## DeleteBucketRequestBucketTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import DeleteBucketRequestBucketTypeDef
+```
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## DeleteBucketRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import DeleteBucketRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## DeleteBucketTaggingRequestBucketTaggingTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import DeleteBucketTaggingRequestBucketTaggingTypeDef
+```
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## DeleteBucketTaggingRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import DeleteBucketTaggingRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## DeleteBucketWebsiteRequestBucketWebsiteTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import DeleteBucketWebsiteRequestBucketWebsiteTypeDef
+```
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## DeleteBucketWebsiteRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import DeleteBucketWebsiteRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
 
 ## DeleteMarkerEntryTypeDef
 
@@ -644,10 +1690,10 @@ Optional fields:
 - `Status`:
   [DeleteMarkerReplicationStatusType](./literals.md#deletemarkerreplicationstatustype)
 
-## DeleteObjectOutputTypeDef
+## DeleteObjectOutputResponseTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import DeleteObjectOutputTypeDef
+from mypy_boto3_s3.type_defs import DeleteObjectOutputResponseTypeDef
 ```
 
 Required fields:
@@ -659,10 +1705,74 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteObjectTaggingOutputTypeDef
+## DeleteObjectRequestObjectSummaryTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import DeleteObjectTaggingOutputTypeDef
+from mypy_boto3_s3.type_defs import DeleteObjectRequestObjectSummaryTypeDef
+```
+
+Optional fields:
+
+- `MFA`: `str`
+- `VersionId`: `str`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `BypassGovernanceRetention`: `bool`
+- `ExpectedBucketOwner`: `str`
+
+## DeleteObjectRequestObjectTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import DeleteObjectRequestObjectTypeDef
+```
+
+Optional fields:
+
+- `MFA`: `str`
+- `VersionId`: `str`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `BypassGovernanceRetention`: `bool`
+- `ExpectedBucketOwner`: `str`
+
+## DeleteObjectRequestObjectVersionTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import DeleteObjectRequestObjectVersionTypeDef
+```
+
+Optional fields:
+
+- `MFA`: `str`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `BypassGovernanceRetention`: `bool`
+- `ExpectedBucketOwner`: `str`
+
+## DeleteObjectRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import DeleteObjectRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Key`: `str`
+
+Optional fields:
+
+- `MFA`: `str`
+- `VersionId`: `str`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `BypassGovernanceRetention`: `bool`
+- `ExpectedBucketOwner`: `str`
+
+## DeleteObjectTaggingOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import DeleteObjectTaggingOutputResponseTypeDef
 ```
 
 Required fields:
@@ -671,10 +1781,26 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteObjectsOutputTypeDef
+## DeleteObjectTaggingRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import DeleteObjectsOutputTypeDef
+from mypy_boto3_s3.type_defs import DeleteObjectTaggingRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Key`: `str`
+
+Optional fields:
+
+- `VersionId`: `str`
+- `ExpectedBucketOwner`: `str`
+
+## DeleteObjectsOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import DeleteObjectsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -686,6 +1812,57 @@ Required fields:
 - `Errors`: `List`\[[ErrorTypeDef](./type_defs.md#errortypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteObjectsRequestBucketTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import DeleteObjectsRequestBucketTypeDef
+```
+
+Required fields:
+
+- `Delete`: [DeleteTypeDef](./type_defs.md#deletetypedef)
+
+Optional fields:
+
+- `MFA`: `str`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `BypassGovernanceRetention`: `bool`
+- `ExpectedBucketOwner`: `str`
+
+## DeleteObjectsRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import DeleteObjectsRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Delete`: [DeleteTypeDef](./type_defs.md#deletetypedef)
+
+Optional fields:
+
+- `MFA`: `str`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `BypassGovernanceRetention`: `bool`
+- `ExpectedBucketOwner`: `str`
+
+## DeletePublicAccessBlockRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import DeletePublicAccessBlockRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
 
 ## DeleteTypeDef
 
@@ -808,10 +1985,10 @@ Optional fields:
 - `Name`: [FilterRuleNameType](./literals.md#filterrulenametype)
 - `Value`: `str`
 
-## GetBucketAccelerateConfigurationOutputTypeDef
+## GetBucketAccelerateConfigurationOutputResponseTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketAccelerateConfigurationOutputTypeDef
+from mypy_boto3_s3.type_defs import GetBucketAccelerateConfigurationOutputResponseTypeDef
 ```
 
 Required fields:
@@ -821,10 +1998,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketAclOutputTypeDef
+## GetBucketAccelerateConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketAclOutputTypeDef
+from mypy_boto3_s3.type_defs import GetBucketAccelerateConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## GetBucketAclOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetBucketAclOutputResponseTypeDef
 ```
 
 Required fields:
@@ -834,10 +2025,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketAnalyticsConfigurationOutputTypeDef
+## GetBucketAclRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketAnalyticsConfigurationOutputTypeDef
+from mypy_boto3_s3.type_defs import GetBucketAclRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## GetBucketAnalyticsConfigurationOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetBucketAnalyticsConfigurationOutputResponseTypeDef
 ```
 
 Required fields:
@@ -847,10 +2052,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketCorsOutputTypeDef
+## GetBucketAnalyticsConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketCorsOutputTypeDef
+from mypy_boto3_s3.type_defs import GetBucketAnalyticsConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Id`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## GetBucketCorsOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetBucketCorsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -859,10 +2079,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketEncryptionOutputTypeDef
+## GetBucketCorsRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketEncryptionOutputTypeDef
+from mypy_boto3_s3.type_defs import GetBucketCorsRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## GetBucketEncryptionOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetBucketEncryptionOutputResponseTypeDef
 ```
 
 Required fields:
@@ -872,10 +2106,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketIntelligentTieringConfigurationOutputTypeDef
+## GetBucketEncryptionRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketIntelligentTieringConfigurationOutputTypeDef
+from mypy_boto3_s3.type_defs import GetBucketEncryptionRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## GetBucketIntelligentTieringConfigurationOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetBucketIntelligentTieringConfigurationOutputResponseTypeDef
 ```
 
 Required fields:
@@ -885,10 +2133,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketInventoryConfigurationOutputTypeDef
+## GetBucketIntelligentTieringConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketInventoryConfigurationOutputTypeDef
+from mypy_boto3_s3.type_defs import GetBucketIntelligentTieringConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Id`: `str`
+
+## GetBucketInventoryConfigurationOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetBucketInventoryConfigurationOutputResponseTypeDef
 ```
 
 Required fields:
@@ -898,10 +2157,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketLifecycleConfigurationOutputTypeDef
+## GetBucketInventoryConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketLifecycleConfigurationOutputTypeDef
+from mypy_boto3_s3.type_defs import GetBucketInventoryConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Id`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## GetBucketLifecycleConfigurationOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetBucketLifecycleConfigurationOutputResponseTypeDef
 ```
 
 Required fields:
@@ -911,10 +2185,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketLifecycleOutputTypeDef
+## GetBucketLifecycleConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketLifecycleOutputTypeDef
+from mypy_boto3_s3.type_defs import GetBucketLifecycleConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## GetBucketLifecycleOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetBucketLifecycleOutputResponseTypeDef
 ```
 
 Required fields:
@@ -923,10 +2211,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketLocationOutputTypeDef
+## GetBucketLifecycleRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketLocationOutputTypeDef
+from mypy_boto3_s3.type_defs import GetBucketLifecycleRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## GetBucketLocationOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetBucketLocationOutputResponseTypeDef
 ```
 
 Required fields:
@@ -936,10 +2238,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketLoggingOutputTypeDef
+## GetBucketLocationRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketLoggingOutputTypeDef
+from mypy_boto3_s3.type_defs import GetBucketLocationRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## GetBucketLoggingOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetBucketLoggingOutputResponseTypeDef
 ```
 
 Required fields:
@@ -949,10 +2265,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketMetricsConfigurationOutputTypeDef
+## GetBucketLoggingRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketMetricsConfigurationOutputTypeDef
+from mypy_boto3_s3.type_defs import GetBucketLoggingRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## GetBucketMetricsConfigurationOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetBucketMetricsConfigurationOutputResponseTypeDef
 ```
 
 Required fields:
@@ -962,10 +2292,39 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketOwnershipControlsOutputTypeDef
+## GetBucketMetricsConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketOwnershipControlsOutputTypeDef
+from mypy_boto3_s3.type_defs import GetBucketMetricsConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Id`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## GetBucketNotificationConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetBucketNotificationConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## GetBucketOwnershipControlsOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetBucketOwnershipControlsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -975,10 +2334,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketPolicyOutputTypeDef
+## GetBucketOwnershipControlsRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketPolicyOutputTypeDef
+from mypy_boto3_s3.type_defs import GetBucketOwnershipControlsRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## GetBucketPolicyOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetBucketPolicyOutputResponseTypeDef
 ```
 
 Required fields:
@@ -987,10 +2360,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketPolicyStatusOutputTypeDef
+## GetBucketPolicyRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketPolicyStatusOutputTypeDef
+from mypy_boto3_s3.type_defs import GetBucketPolicyRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## GetBucketPolicyStatusOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetBucketPolicyStatusOutputResponseTypeDef
 ```
 
 Required fields:
@@ -999,10 +2386,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketReplicationOutputTypeDef
+## GetBucketPolicyStatusRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketReplicationOutputTypeDef
+from mypy_boto3_s3.type_defs import GetBucketPolicyStatusRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## GetBucketReplicationOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetBucketReplicationOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1012,10 +2413,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketRequestPaymentOutputTypeDef
+## GetBucketReplicationRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketRequestPaymentOutputTypeDef
+from mypy_boto3_s3.type_defs import GetBucketReplicationRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## GetBucketRequestPaymentOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetBucketRequestPaymentOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1024,10 +2439,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketTaggingOutputTypeDef
+## GetBucketRequestPaymentRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketTaggingOutputTypeDef
+from mypy_boto3_s3.type_defs import GetBucketRequestPaymentRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## GetBucketTaggingOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetBucketTaggingOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1036,10 +2465,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketVersioningOutputTypeDef
+## GetBucketTaggingRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketVersioningOutputTypeDef
+from mypy_boto3_s3.type_defs import GetBucketTaggingRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## GetBucketVersioningOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetBucketVersioningOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1050,10 +2493,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketWebsiteOutputTypeDef
+## GetBucketVersioningRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetBucketWebsiteOutputTypeDef
+from mypy_boto3_s3.type_defs import GetBucketVersioningRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## GetBucketWebsiteOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetBucketWebsiteOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1067,10 +2524,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetObjectAclOutputTypeDef
+## GetBucketWebsiteRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetObjectAclOutputTypeDef
+from mypy_boto3_s3.type_defs import GetBucketWebsiteRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## GetObjectAclOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetObjectAclOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1082,10 +2553,28 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetObjectLegalHoldOutputTypeDef
+## GetObjectAclRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetObjectLegalHoldOutputTypeDef
+from mypy_boto3_s3.type_defs import GetObjectAclRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Key`: `str`
+
+Optional fields:
+
+- `VersionId`: `str`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `ExpectedBucketOwner`: `str`
+
+## GetObjectLegalHoldOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetObjectLegalHoldOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1095,10 +2584,28 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetObjectLockConfigurationOutputTypeDef
+## GetObjectLegalHoldRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetObjectLockConfigurationOutputTypeDef
+from mypy_boto3_s3.type_defs import GetObjectLegalHoldRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Key`: `str`
+
+Optional fields:
+
+- `VersionId`: `str`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `ExpectedBucketOwner`: `str`
+
+## GetObjectLockConfigurationOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetObjectLockConfigurationOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1108,10 +2615,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetObjectOutputTypeDef
+## GetObjectLockConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetObjectOutputTypeDef
+from mypy_boto3_s3.type_defs import GetObjectLockConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## GetObjectOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetObjectOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1155,10 +2676,126 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetObjectRetentionOutputTypeDef
+## GetObjectRequestObjectSummaryTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetObjectRetentionOutputTypeDef
+from mypy_boto3_s3.type_defs import GetObjectRequestObjectSummaryTypeDef
+```
+
+Optional fields:
+
+- `IfMatch`: `str`
+- `IfModifiedSince`: `Union`\[`datetime`, `str`\]
+- `IfNoneMatch`: `str`
+- `IfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
+- `Range`: `str`
+- `ResponseCacheControl`: `str`
+- `ResponseContentDisposition`: `str`
+- `ResponseContentEncoding`: `str`
+- `ResponseContentLanguage`: `str`
+- `ResponseContentType`: `str`
+- `ResponseExpires`: `Union`\[`datetime`, `str`\]
+- `VersionId`: `str`
+- `SSECustomerAlgorithm`: `str`
+- `SSECustomerKey`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `PartNumber`: `int`
+- `ExpectedBucketOwner`: `str`
+
+## GetObjectRequestObjectTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetObjectRequestObjectTypeDef
+```
+
+Optional fields:
+
+- `IfMatch`: `str`
+- `IfModifiedSince`: `Union`\[`datetime`, `str`\]
+- `IfNoneMatch`: `str`
+- `IfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
+- `Range`: `str`
+- `ResponseCacheControl`: `str`
+- `ResponseContentDisposition`: `str`
+- `ResponseContentEncoding`: `str`
+- `ResponseContentLanguage`: `str`
+- `ResponseContentType`: `str`
+- `ResponseExpires`: `Union`\[`datetime`, `str`\]
+- `VersionId`: `str`
+- `SSECustomerAlgorithm`: `str`
+- `SSECustomerKey`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `PartNumber`: `int`
+- `ExpectedBucketOwner`: `str`
+
+## GetObjectRequestObjectVersionTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetObjectRequestObjectVersionTypeDef
+```
+
+Optional fields:
+
+- `IfMatch`: `str`
+- `IfModifiedSince`: `Union`\[`datetime`, `str`\]
+- `IfNoneMatch`: `str`
+- `IfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
+- `Range`: `str`
+- `ResponseCacheControl`: `str`
+- `ResponseContentDisposition`: `str`
+- `ResponseContentEncoding`: `str`
+- `ResponseContentLanguage`: `str`
+- `ResponseContentType`: `str`
+- `ResponseExpires`: `Union`\[`datetime`, `str`\]
+- `SSECustomerAlgorithm`: `str`
+- `SSECustomerKey`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `PartNumber`: `int`
+- `ExpectedBucketOwner`: `str`
+
+## GetObjectRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetObjectRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Key`: `str`
+
+Optional fields:
+
+- `IfMatch`: `str`
+- `IfModifiedSince`: `Union`\[`datetime`, `str`\]
+- `IfNoneMatch`: `str`
+- `IfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
+- `Range`: `str`
+- `ResponseCacheControl`: `str`
+- `ResponseContentDisposition`: `str`
+- `ResponseContentEncoding`: `str`
+- `ResponseContentLanguage`: `str`
+- `ResponseContentType`: `str`
+- `ResponseExpires`: `Union`\[`datetime`, `str`\]
+- `VersionId`: `str`
+- `SSECustomerAlgorithm`: `str`
+- `SSECustomerKey`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `PartNumber`: `int`
+- `ExpectedBucketOwner`: `str`
+
+## GetObjectRetentionOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetObjectRetentionOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1168,10 +2805,28 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetObjectTaggingOutputTypeDef
+## GetObjectRetentionRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetObjectTaggingOutputTypeDef
+from mypy_boto3_s3.type_defs import GetObjectRetentionRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Key`: `str`
+
+Optional fields:
+
+- `VersionId`: `str`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `ExpectedBucketOwner`: `str`
+
+## GetObjectTaggingOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetObjectTaggingOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1181,10 +2836,28 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetObjectTorrentOutputTypeDef
+## GetObjectTaggingRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetObjectTorrentOutputTypeDef
+from mypy_boto3_s3.type_defs import GetObjectTaggingRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Key`: `str`
+
+Optional fields:
+
+- `VersionId`: `str`
+- `ExpectedBucketOwner`: `str`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+
+## GetObjectTorrentOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetObjectTorrentOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1195,10 +2868,27 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPublicAccessBlockOutputTypeDef
+## GetObjectTorrentRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import GetPublicAccessBlockOutputTypeDef
+from mypy_boto3_s3.type_defs import GetObjectTorrentRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Key`: `str`
+
+Optional fields:
+
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `ExpectedBucketOwner`: `str`
+
+## GetPublicAccessBlockOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetPublicAccessBlockOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1207,6 +2897,20 @@ Required fields:
   [PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetPublicAccessBlockRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import GetPublicAccessBlockRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
 
 ## GlacierJobParametersTypeDef
 
@@ -1246,10 +2950,24 @@ Optional fields:
 - `ID`: `str`
 - `URI`: `str`
 
-## HeadObjectOutputTypeDef
+## HeadBucketRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import HeadObjectOutputTypeDef
+from mypy_boto3_s3.type_defs import HeadBucketRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## HeadObjectOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import HeadObjectOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1290,6 +3008,54 @@ Required fields:
   [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## HeadObjectRequestObjectVersionTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import HeadObjectRequestObjectVersionTypeDef
+```
+
+Optional fields:
+
+- `IfMatch`: `str`
+- `IfModifiedSince`: `Union`\[`datetime`, `str`\]
+- `IfNoneMatch`: `str`
+- `IfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
+- `Range`: `str`
+- `SSECustomerAlgorithm`: `str`
+- `SSECustomerKey`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `PartNumber`: `int`
+- `ExpectedBucketOwner`: `str`
+
+## HeadObjectRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import HeadObjectRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Key`: `str`
+
+Optional fields:
+
+- `IfMatch`: `str`
+- `IfModifiedSince`: `Union`\[`datetime`, `str`\]
+- `IfNoneMatch`: `str`
+- `IfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
+- `Range`: `str`
+- `VersionId`: `str`
+- `SSECustomerAlgorithm`: `str`
+- `SSECustomerKey`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `PartNumber`: `int`
+- `ExpectedBucketOwner`: `str`
 
 ## IndexDocumentTypeDef
 
@@ -1466,11 +3232,9 @@ Optional fields:
 from mypy_boto3_s3.type_defs import JSONOutputTypeDef
 ```
 
-Required fields:
+Optional fields:
 
 - `RecordDelimiter`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LambdaFunctionConfigurationTypeDef
 
@@ -1562,10 +3326,10 @@ Optional fields:
 - `AbortIncompleteMultipartUpload`:
   [AbortIncompleteMultipartUploadTypeDef](./type_defs.md#abortincompletemultipartuploadtypedef)
 
-## ListBucketAnalyticsConfigurationsOutputTypeDef
+## ListBucketAnalyticsConfigurationsOutputResponseTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ListBucketAnalyticsConfigurationsOutputTypeDef
+from mypy_boto3_s3.type_defs import ListBucketAnalyticsConfigurationsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1578,10 +3342,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListBucketIntelligentTieringConfigurationsOutputTypeDef
+## ListBucketAnalyticsConfigurationsRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ListBucketIntelligentTieringConfigurationsOutputTypeDef
+from mypy_boto3_s3.type_defs import ListBucketAnalyticsConfigurationsRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ContinuationToken`: `str`
+- `ExpectedBucketOwner`: `str`
+
+## ListBucketIntelligentTieringConfigurationsOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ListBucketIntelligentTieringConfigurationsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1594,10 +3373,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListBucketInventoryConfigurationsOutputTypeDef
+## ListBucketIntelligentTieringConfigurationsRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ListBucketInventoryConfigurationsOutputTypeDef
+from mypy_boto3_s3.type_defs import ListBucketIntelligentTieringConfigurationsRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ContinuationToken`: `str`
+
+## ListBucketInventoryConfigurationsOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ListBucketInventoryConfigurationsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1610,10 +3403,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListBucketMetricsConfigurationsOutputTypeDef
+## ListBucketInventoryConfigurationsRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ListBucketMetricsConfigurationsOutputTypeDef
+from mypy_boto3_s3.type_defs import ListBucketInventoryConfigurationsRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ContinuationToken`: `str`
+- `ExpectedBucketOwner`: `str`
+
+## ListBucketMetricsConfigurationsOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ListBucketMetricsConfigurationsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1626,10 +3434,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListBucketsOutputTypeDef
+## ListBucketMetricsConfigurationsRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ListBucketsOutputTypeDef
+from mypy_boto3_s3.type_defs import ListBucketMetricsConfigurationsRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ContinuationToken`: `str`
+- `ExpectedBucketOwner`: `str`
+
+## ListBucketsOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ListBucketsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1639,10 +3462,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListMultipartUploadsOutputTypeDef
+## ListMultipartUploadsOutputResponseTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ListMultipartUploadsOutputTypeDef
+from mypy_boto3_s3.type_defs import ListMultipartUploadsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1665,10 +3488,31 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListObjectVersionsOutputTypeDef
+## ListMultipartUploadsRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ListObjectVersionsOutputTypeDef
+from mypy_boto3_s3.type_defs import ListMultipartUploadsRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `Delimiter`: `str`
+- `EncodingType`: `Literal['url']` (see
+  [EncodingTypeType](./literals.md#encodingtypetype))
+- `KeyMarker`: `str`
+- `MaxUploads`: `int`
+- `Prefix`: `str`
+- `UploadIdMarker`: `str`
+- `ExpectedBucketOwner`: `str`
+
+## ListObjectVersionsOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ListObjectVersionsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1693,10 +3537,31 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListObjectsOutputTypeDef
+## ListObjectVersionsRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ListObjectsOutputTypeDef
+from mypy_boto3_s3.type_defs import ListObjectVersionsRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `Delimiter`: `str`
+- `EncodingType`: `Literal['url']` (see
+  [EncodingTypeType](./literals.md#encodingtypetype))
+- `KeyMarker`: `str`
+- `MaxKeys`: `int`
+- `Prefix`: `str`
+- `VersionIdMarker`: `str`
+- `ExpectedBucketOwner`: `str`
+
+## ListObjectsOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ListObjectsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1716,10 +3581,32 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListObjectsV2OutputTypeDef
+## ListObjectsRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ListObjectsV2OutputTypeDef
+from mypy_boto3_s3.type_defs import ListObjectsRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `Delimiter`: `str`
+- `EncodingType`: `Literal['url']` (see
+  [EncodingTypeType](./literals.md#encodingtypetype))
+- `Marker`: `str`
+- `MaxKeys`: `int`
+- `Prefix`: `str`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `ExpectedBucketOwner`: `str`
+
+## ListObjectsV2OutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ListObjectsV2OutputResponseTypeDef
 ```
 
 Required fields:
@@ -1741,10 +3628,34 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPartsOutputTypeDef
+## ListObjectsV2RequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import ListPartsOutputTypeDef
+from mypy_boto3_s3.type_defs import ListObjectsV2RequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `Delimiter`: `str`
+- `EncodingType`: `Literal['url']` (see
+  [EncodingTypeType](./literals.md#encodingtypetype))
+- `MaxKeys`: `int`
+- `Prefix`: `str`
+- `ContinuationToken`: `str`
+- `FetchOwner`: `bool`
+- `StartAfter`: `str`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `ExpectedBucketOwner`: `str`
+
+## ListPartsOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ListPartsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1766,6 +3677,26 @@ Required fields:
   [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListPartsRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ListPartsRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Key`: `str`
+- `UploadId`: `str`
+
+Optional fields:
+
+- `MaxParts`: `int`
+- `PartNumberMarker`: `int`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `ExpectedBucketOwner`: `str`
 
 ## LoggingEnabledTypeDef
 
@@ -1846,6 +3777,16 @@ Optional fields:
 - `EventThreshold`:
   [ReplicationTimeValueTypeDef](./type_defs.md#replicationtimevaluetypedef)
 
+## MultipartUploadPartRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import MultipartUploadPartRequestTypeDef
+```
+
+Required fields:
+
+- `part_number`: `str`
+
 ## MultipartUploadTypeDef
 
 ```python
@@ -1883,13 +3824,13 @@ Optional fields:
 - `StorageClass`:
   [TransitionStorageClassType](./literals.md#transitionstorageclasstype)
 
-## NotificationConfigurationDeprecatedTypeDef
+## NotificationConfigurationDeprecatedResponseTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import NotificationConfigurationDeprecatedTypeDef
+from mypy_boto3_s3.type_defs import NotificationConfigurationDeprecatedResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `TopicConfiguration`:
   [TopicConfigurationDeprecatedTypeDef](./type_defs.md#topicconfigurationdeprecatedtypedef)
@@ -1897,6 +3838,8 @@ Optional fields:
   [QueueConfigurationDeprecatedTypeDef](./type_defs.md#queueconfigurationdeprecatedtypedef)
 - `CloudFunctionConfiguration`:
   [CloudFunctionConfigurationTypeDef](./type_defs.md#cloudfunctionconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## NotificationConfigurationFilterTypeDef
 
@@ -1908,13 +3851,13 @@ Optional fields:
 
 - `Key`: [S3KeyFilterTypeDef](./type_defs.md#s3keyfiltertypedef)
 
-## NotificationConfigurationTypeDef
+## NotificationConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import NotificationConfigurationTypeDef
+from mypy_boto3_s3.type_defs import NotificationConfigurationResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `TopicConfigurations`:
   `List`\[[TopicConfigurationTypeDef](./type_defs.md#topicconfigurationtypedef)\]
@@ -1922,6 +3865,57 @@ Optional fields:
   `List`\[[QueueConfigurationTypeDef](./type_defs.md#queueconfigurationtypedef)\]
 - `LambdaFunctionConfigurations`:
   `List`\[[LambdaFunctionConfigurationTypeDef](./type_defs.md#lambdafunctionconfigurationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ObjectCopyRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ObjectCopyRequestTypeDef
+```
+
+Required fields:
+
+- `CopySource`: [CopySourceTypeDef](./type_defs.md#copysourcetypedef)
+
+Optional fields:
+
+- `ExtraArgs`: `Dict`\[`str`, `Any`\]
+- `Callback`: `Callable`\[`...`, `Any`\]
+- `SourceClient`: `BaseClient`
+- `Config`: `TransferConfig`
+
+## ObjectDownloadFileRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ObjectDownloadFileRequestTypeDef
+```
+
+Required fields:
+
+- `Filename`: `str`
+
+Optional fields:
+
+- `ExtraArgs`: `Dict`\[`str`, `Any`\]
+- `Callback`: `Callable`\[`...`, `Any`\]
+- `Config`: `TransferConfig`
+
+## ObjectDownloadFileobjRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ObjectDownloadFileobjRequestTypeDef
+```
+
+Required fields:
+
+- `Fileobj`: `IO`\[`Any`\]
+
+Optional fields:
+
+- `ExtraArgs`: `Dict`\[`str`, `Any`\]
+- `Callback`: `Callable`\[`...`, `Any`\]
+- `Config`: `TransferConfig`
 
 ## ObjectIdentifierTypeDef
 
@@ -1983,6 +3977,36 @@ Optional fields:
 - `DefaultRetention`:
   [DefaultRetentionTypeDef](./type_defs.md#defaultretentiontypedef)
 
+## ObjectMultipartUploadRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ObjectMultipartUploadRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
+## ObjectSummaryMultipartUploadRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ObjectSummaryMultipartUploadRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
+## ObjectSummaryVersionRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ObjectSummaryVersionRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
 ## ObjectTypeDef
 
 ```python
@@ -1998,6 +4022,48 @@ Optional fields:
 - `StorageClass`:
   [ObjectStorageClassType](./literals.md#objectstorageclasstype)
 - `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
+
+## ObjectUploadFileRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ObjectUploadFileRequestTypeDef
+```
+
+Required fields:
+
+- `Filename`: `str`
+
+Optional fields:
+
+- `ExtraArgs`: `Dict`\[`str`, `Any`\]
+- `Callback`: `Callable`\[`...`, `Any`\]
+- `Config`: `TransferConfig`
+
+## ObjectUploadFileobjRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ObjectUploadFileobjRequestTypeDef
+```
+
+Required fields:
+
+- `Fileobj`: `IO`\[`Any`\]
+
+Optional fields:
+
+- `ExtraArgs`: `Dict`\[`str`, `Any`\]
+- `Callback`: `Callable`\[`...`, `Any`\]
+- `Config`: `TransferConfig`
+
+## ObjectVersionRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ObjectVersionRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
 
 ## ObjectVersionTypeDef
 
@@ -2140,10 +4206,501 @@ Optional fields:
 - `BlockPublicPolicy`: `bool`
 - `RestrictPublicBuckets`: `bool`
 
-## PutObjectAclOutputTypeDef
+## PutBucketAccelerateConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutObjectAclOutputTypeDef
+from mypy_boto3_s3.type_defs import PutBucketAccelerateConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `AccelerateConfiguration`:
+  [AccelerateConfigurationTypeDef](./type_defs.md#accelerateconfigurationtypedef)
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## PutBucketAclRequestBucketAclTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketAclRequestBucketAclTypeDef
+```
+
+Optional fields:
+
+- `ACL`: [BucketCannedACLType](./literals.md#bucketcannedacltype)
+- `AccessControlPolicy`:
+  [AccessControlPolicyTypeDef](./type_defs.md#accesscontrolpolicytypedef)
+- `GrantFullControl`: `str`
+- `GrantRead`: `str`
+- `GrantReadACP`: `str`
+- `GrantWrite`: `str`
+- `GrantWriteACP`: `str`
+- `ExpectedBucketOwner`: `str`
+
+## PutBucketAclRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketAclRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ACL`: [BucketCannedACLType](./literals.md#bucketcannedacltype)
+- `AccessControlPolicy`:
+  [AccessControlPolicyTypeDef](./type_defs.md#accesscontrolpolicytypedef)
+- `GrantFullControl`: `str`
+- `GrantRead`: `str`
+- `GrantReadACP`: `str`
+- `GrantWrite`: `str`
+- `GrantWriteACP`: `str`
+- `ExpectedBucketOwner`: `str`
+
+## PutBucketAnalyticsConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketAnalyticsConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Id`: `str`
+- `AnalyticsConfiguration`:
+  [AnalyticsConfigurationTypeDef](./type_defs.md#analyticsconfigurationtypedef)
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## PutBucketCorsRequestBucketCorsTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketCorsRequestBucketCorsTypeDef
+```
+
+Required fields:
+
+- `CORSConfiguration`:
+  [CORSConfigurationTypeDef](./type_defs.md#corsconfigurationtypedef)
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## PutBucketCorsRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketCorsRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `CORSConfiguration`:
+  [CORSConfigurationTypeDef](./type_defs.md#corsconfigurationtypedef)
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## PutBucketEncryptionRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketEncryptionRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `ServerSideEncryptionConfiguration`:
+  [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
+
+Optional fields:
+
+- `ContentMD5`: `str`
+- `ExpectedBucketOwner`: `str`
+
+## PutBucketIntelligentTieringConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketIntelligentTieringConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Id`: `str`
+- `IntelligentTieringConfiguration`:
+  [IntelligentTieringConfigurationTypeDef](./type_defs.md#intelligenttieringconfigurationtypedef)
+
+## PutBucketInventoryConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketInventoryConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Id`: `str`
+- `InventoryConfiguration`:
+  [InventoryConfigurationTypeDef](./type_defs.md#inventoryconfigurationtypedef)
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## PutBucketLifecycleConfigurationRequestBucketLifecycleConfigurationTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketLifecycleConfigurationRequestBucketLifecycleConfigurationTypeDef
+```
+
+Optional fields:
+
+- `LifecycleConfiguration`:
+  [BucketLifecycleConfigurationTypeDef](./type_defs.md#bucketlifecycleconfigurationtypedef)
+- `ExpectedBucketOwner`: `str`
+
+## PutBucketLifecycleConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketLifecycleConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `LifecycleConfiguration`:
+  [BucketLifecycleConfigurationTypeDef](./type_defs.md#bucketlifecycleconfigurationtypedef)
+- `ExpectedBucketOwner`: `str`
+
+## PutBucketLifecycleRequestBucketLifecycleTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketLifecycleRequestBucketLifecycleTypeDef
+```
+
+Optional fields:
+
+- `LifecycleConfiguration`:
+  [LifecycleConfigurationTypeDef](./type_defs.md#lifecycleconfigurationtypedef)
+- `ExpectedBucketOwner`: `str`
+
+## PutBucketLifecycleRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketLifecycleRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `LifecycleConfiguration`:
+  [LifecycleConfigurationTypeDef](./type_defs.md#lifecycleconfigurationtypedef)
+- `ExpectedBucketOwner`: `str`
+
+## PutBucketLoggingRequestBucketLoggingTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketLoggingRequestBucketLoggingTypeDef
+```
+
+Required fields:
+
+- `BucketLoggingStatus`:
+  [BucketLoggingStatusTypeDef](./type_defs.md#bucketloggingstatustypedef)
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## PutBucketLoggingRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketLoggingRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `BucketLoggingStatus`:
+  [BucketLoggingStatusTypeDef](./type_defs.md#bucketloggingstatustypedef)
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## PutBucketMetricsConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketMetricsConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Id`: `str`
+- `MetricsConfiguration`:
+  [MetricsConfigurationTypeDef](./type_defs.md#metricsconfigurationtypedef)
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## PutBucketNotificationConfigurationRequestBucketNotificationTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketNotificationConfigurationRequestBucketNotificationTypeDef
+```
+
+Required fields:
+
+- `NotificationConfiguration`:
+  [NotificationConfigurationResponseTypeDef](./type_defs.md#notificationconfigurationresponsetypedef)
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## PutBucketNotificationConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketNotificationConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `NotificationConfiguration`:
+  [NotificationConfigurationResponseTypeDef](./type_defs.md#notificationconfigurationresponsetypedef)
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## PutBucketNotificationRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketNotificationRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `NotificationConfiguration`:
+  [NotificationConfigurationDeprecatedResponseTypeDef](./type_defs.md#notificationconfigurationdeprecatedresponsetypedef)
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## PutBucketOwnershipControlsRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketOwnershipControlsRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `OwnershipControls`:
+  [OwnershipControlsTypeDef](./type_defs.md#ownershipcontrolstypedef)
+
+Optional fields:
+
+- `ContentMD5`: `str`
+- `ExpectedBucketOwner`: `str`
+
+## PutBucketPolicyRequestBucketPolicyTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketPolicyRequestBucketPolicyTypeDef
+```
+
+Required fields:
+
+- `Policy`: `str`
+
+Optional fields:
+
+- `ConfirmRemoveSelfBucketAccess`: `bool`
+- `ExpectedBucketOwner`: `str`
+
+## PutBucketPolicyRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketPolicyRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Policy`: `str`
+
+Optional fields:
+
+- `ConfirmRemoveSelfBucketAccess`: `bool`
+- `ExpectedBucketOwner`: `str`
+
+## PutBucketReplicationRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketReplicationRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `ReplicationConfiguration`:
+  [ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef)
+
+Optional fields:
+
+- `Token`: `str`
+- `ExpectedBucketOwner`: `str`
+
+## PutBucketRequestPaymentRequestBucketRequestPaymentTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketRequestPaymentRequestBucketRequestPaymentTypeDef
+```
+
+Required fields:
+
+- `RequestPaymentConfiguration`:
+  [RequestPaymentConfigurationTypeDef](./type_defs.md#requestpaymentconfigurationtypedef)
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## PutBucketRequestPaymentRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketRequestPaymentRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `RequestPaymentConfiguration`:
+  [RequestPaymentConfigurationTypeDef](./type_defs.md#requestpaymentconfigurationtypedef)
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## PutBucketTaggingRequestBucketTaggingTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketTaggingRequestBucketTaggingTypeDef
+```
+
+Required fields:
+
+- `Tagging`: [TaggingTypeDef](./type_defs.md#taggingtypedef)
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## PutBucketTaggingRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketTaggingRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Tagging`: [TaggingTypeDef](./type_defs.md#taggingtypedef)
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## PutBucketVersioningRequestBucketVersioningTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketVersioningRequestBucketVersioningTypeDef
+```
+
+Required fields:
+
+- `VersioningConfiguration`:
+  [VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef)
+
+Optional fields:
+
+- `MFA`: `str`
+- `ExpectedBucketOwner`: `str`
+
+## PutBucketVersioningRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketVersioningRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `VersioningConfiguration`:
+  [VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef)
+
+Optional fields:
+
+- `MFA`: `str`
+- `ExpectedBucketOwner`: `str`
+
+## PutBucketWebsiteRequestBucketWebsiteTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketWebsiteRequestBucketWebsiteTypeDef
+```
+
+Required fields:
+
+- `WebsiteConfiguration`:
+  [WebsiteConfigurationTypeDef](./type_defs.md#websiteconfigurationtypedef)
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## PutBucketWebsiteRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutBucketWebsiteRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `WebsiteConfiguration`:
+  [WebsiteConfigurationTypeDef](./type_defs.md#websiteconfigurationtypedef)
+
+Optional fields:
+
+- `ExpectedBucketOwner`: `str`
+
+## PutObjectAclOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutObjectAclOutputResponseTypeDef
 ```
 
 Required fields:
@@ -2153,10 +4710,57 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutObjectLegalHoldOutputTypeDef
+## PutObjectAclRequestObjectAclTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutObjectLegalHoldOutputTypeDef
+from mypy_boto3_s3.type_defs import PutObjectAclRequestObjectAclTypeDef
+```
+
+Optional fields:
+
+- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
+- `AccessControlPolicy`:
+  [AccessControlPolicyTypeDef](./type_defs.md#accesscontrolpolicytypedef)
+- `GrantFullControl`: `str`
+- `GrantRead`: `str`
+- `GrantReadACP`: `str`
+- `GrantWrite`: `str`
+- `GrantWriteACP`: `str`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `VersionId`: `str`
+- `ExpectedBucketOwner`: `str`
+
+## PutObjectAclRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutObjectAclRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Key`: `str`
+
+Optional fields:
+
+- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
+- `AccessControlPolicy`:
+  [AccessControlPolicyTypeDef](./type_defs.md#accesscontrolpolicytypedef)
+- `GrantFullControl`: `str`
+- `GrantRead`: `str`
+- `GrantReadACP`: `str`
+- `GrantWrite`: `str`
+- `GrantWriteACP`: `str`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `VersionId`: `str`
+- `ExpectedBucketOwner`: `str`
+
+## PutObjectLegalHoldOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutObjectLegalHoldOutputResponseTypeDef
 ```
 
 Required fields:
@@ -2166,10 +4770,31 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutObjectLockConfigurationOutputTypeDef
+## PutObjectLegalHoldRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutObjectLockConfigurationOutputTypeDef
+from mypy_boto3_s3.type_defs import PutObjectLegalHoldRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Key`: `str`
+
+Optional fields:
+
+- `LegalHold`:
+  [ObjectLockLegalHoldTypeDef](./type_defs.md#objectlocklegalholdtypedef)
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `VersionId`: `str`
+- `ContentMD5`: `str`
+- `ExpectedBucketOwner`: `str`
+
+## PutObjectLockConfigurationOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutObjectLockConfigurationOutputResponseTypeDef
 ```
 
 Required fields:
@@ -2179,10 +4804,30 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutObjectOutputTypeDef
+## PutObjectLockConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutObjectOutputTypeDef
+from mypy_boto3_s3.type_defs import PutObjectLockConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+
+Optional fields:
+
+- `ObjectLockConfiguration`:
+  [ObjectLockConfigurationTypeDef](./type_defs.md#objectlockconfigurationtypedef)
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `Token`: `str`
+- `ContentMD5`: `str`
+- `ExpectedBucketOwner`: `str`
+
+## PutObjectOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutObjectOutputResponseTypeDef
 ```
 
 Required fields:
@@ -2202,10 +4847,187 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutObjectRetentionOutputTypeDef
+## PutObjectRequestBucketTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutObjectRetentionOutputTypeDef
+from mypy_boto3_s3.type_defs import PutObjectRequestBucketTypeDef
+```
+
+Required fields:
+
+- `Key`: `str`
+
+Optional fields:
+
+- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
+- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `CacheControl`: `str`
+- `ContentDisposition`: `str`
+- `ContentEncoding`: `str`
+- `ContentLanguage`: `str`
+- `ContentLength`: `int`
+- `ContentMD5`: `str`
+- `ContentType`: `str`
+- `Expires`: `Union`\[`datetime`, `str`\]
+- `GrantFullControl`: `str`
+- `GrantRead`: `str`
+- `GrantReadACP`: `str`
+- `GrantWriteACP`: `str`
+- `Metadata`: `Dict`\[`str`, `str`\]
+- `ServerSideEncryption`:
+  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
+- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
+- `WebsiteRedirectLocation`: `str`
+- `SSECustomerAlgorithm`: `str`
+- `SSECustomerKey`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `SSEKMSKeyId`: `str`
+- `SSEKMSEncryptionContext`: `str`
+- `BucketKeyEnabled`: `bool`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `Tagging`: `str`
+- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
+- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
+- `ObjectLockLegalHoldStatus`:
+  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
+- `ExpectedBucketOwner`: `str`
+
+## PutObjectRequestObjectSummaryTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutObjectRequestObjectSummaryTypeDef
+```
+
+Optional fields:
+
+- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
+- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `CacheControl`: `str`
+- `ContentDisposition`: `str`
+- `ContentEncoding`: `str`
+- `ContentLanguage`: `str`
+- `ContentLength`: `int`
+- `ContentMD5`: `str`
+- `ContentType`: `str`
+- `Expires`: `Union`\[`datetime`, `str`\]
+- `GrantFullControl`: `str`
+- `GrantRead`: `str`
+- `GrantReadACP`: `str`
+- `GrantWriteACP`: `str`
+- `Metadata`: `Dict`\[`str`, `str`\]
+- `ServerSideEncryption`:
+  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
+- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
+- `WebsiteRedirectLocation`: `str`
+- `SSECustomerAlgorithm`: `str`
+- `SSECustomerKey`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `SSEKMSKeyId`: `str`
+- `SSEKMSEncryptionContext`: `str`
+- `BucketKeyEnabled`: `bool`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `Tagging`: `str`
+- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
+- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
+- `ObjectLockLegalHoldStatus`:
+  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
+- `ExpectedBucketOwner`: `str`
+
+## PutObjectRequestObjectTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutObjectRequestObjectTypeDef
+```
+
+Optional fields:
+
+- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
+- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `CacheControl`: `str`
+- `ContentDisposition`: `str`
+- `ContentEncoding`: `str`
+- `ContentLanguage`: `str`
+- `ContentLength`: `int`
+- `ContentMD5`: `str`
+- `ContentType`: `str`
+- `Expires`: `Union`\[`datetime`, `str`\]
+- `GrantFullControl`: `str`
+- `GrantRead`: `str`
+- `GrantReadACP`: `str`
+- `GrantWriteACP`: `str`
+- `Metadata`: `Dict`\[`str`, `str`\]
+- `ServerSideEncryption`:
+  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
+- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
+- `WebsiteRedirectLocation`: `str`
+- `SSECustomerAlgorithm`: `str`
+- `SSECustomerKey`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `SSEKMSKeyId`: `str`
+- `SSEKMSEncryptionContext`: `str`
+- `BucketKeyEnabled`: `bool`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `Tagging`: `str`
+- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
+- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
+- `ObjectLockLegalHoldStatus`:
+  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
+- `ExpectedBucketOwner`: `str`
+
+## PutObjectRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutObjectRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Key`: `str`
+
+Optional fields:
+
+- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
+- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `CacheControl`: `str`
+- `ContentDisposition`: `str`
+- `ContentEncoding`: `str`
+- `ContentLanguage`: `str`
+- `ContentLength`: `int`
+- `ContentMD5`: `str`
+- `ContentType`: `str`
+- `Expires`: `Union`\[`datetime`, `str`\]
+- `GrantFullControl`: `str`
+- `GrantRead`: `str`
+- `GrantReadACP`: `str`
+- `GrantWriteACP`: `str`
+- `Metadata`: `Dict`\[`str`, `str`\]
+- `ServerSideEncryption`:
+  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
+- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
+- `WebsiteRedirectLocation`: `str`
+- `SSECustomerAlgorithm`: `str`
+- `SSECustomerKey`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `SSEKMSKeyId`: `str`
+- `SSEKMSEncryptionContext`: `str`
+- `BucketKeyEnabled`: `bool`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `Tagging`: `str`
+- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
+- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
+- `ObjectLockLegalHoldStatus`:
+  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
+- `ExpectedBucketOwner`: `str`
+
+## PutObjectRetentionOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutObjectRetentionOutputResponseTypeDef
 ```
 
 Required fields:
@@ -2215,10 +5037,32 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutObjectTaggingOutputTypeDef
+## PutObjectRetentionRequestTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import PutObjectTaggingOutputTypeDef
+from mypy_boto3_s3.type_defs import PutObjectRetentionRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Key`: `str`
+
+Optional fields:
+
+- `Retention`:
+  [ObjectLockRetentionTypeDef](./type_defs.md#objectlockretentiontypedef)
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `VersionId`: `str`
+- `BypassGovernanceRetention`: `bool`
+- `ContentMD5`: `str`
+- `ExpectedBucketOwner`: `str`
+
+## PutObjectTaggingOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutObjectTaggingOutputResponseTypeDef
 ```
 
 Required fields:
@@ -2226,6 +5070,43 @@ Required fields:
 - `VersionId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## PutObjectTaggingRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutObjectTaggingRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Key`: `str`
+- `Tagging`: [TaggingTypeDef](./type_defs.md#taggingtypedef)
+
+Optional fields:
+
+- `VersionId`: `str`
+- `ContentMD5`: `str`
+- `ExpectedBucketOwner`: `str`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+
+## PutPublicAccessBlockRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import PutPublicAccessBlockRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `PublicAccessBlockConfiguration`:
+  [PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef)
+
+Optional fields:
+
+- `ContentMD5`: `str`
+- `ExpectedBucketOwner`: `str`
 
 ## QueueConfigurationDeprecatedTypeDef
 
@@ -2265,7 +5146,7 @@ from mypy_boto3_s3.type_defs import RecordsEventTypeDef
 
 Optional fields:
 
-- `Payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `Payload`: `bytes`
 
 ## RedirectAllRequestsToTypeDef
 
@@ -2425,10 +5306,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## RestoreObjectOutputTypeDef
+## RestoreObjectOutputResponseTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import RestoreObjectOutputTypeDef
+from mypy_boto3_s3.type_defs import RestoreObjectOutputResponseTypeDef
 ```
 
 Required fields:
@@ -2438,6 +5319,56 @@ Required fields:
 - `RestoreOutputPath`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## RestoreObjectRequestObjectSummaryTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import RestoreObjectRequestObjectSummaryTypeDef
+```
+
+Optional fields:
+
+- `VersionId`: `str`
+- `RestoreRequest`:
+  [RestoreRequestTypeDef](./type_defs.md#restorerequesttypedef)
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `ExpectedBucketOwner`: `str`
+
+## RestoreObjectRequestObjectTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import RestoreObjectRequestObjectTypeDef
+```
+
+Optional fields:
+
+- `VersionId`: `str`
+- `RestoreRequest`:
+  [RestoreRequestTypeDef](./type_defs.md#restorerequesttypedef)
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `ExpectedBucketOwner`: `str`
+
+## RestoreObjectRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import RestoreObjectRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Key`: `str`
+
+Optional fields:
+
+- `VersionId`: `str`
+- `RestoreRequest`:
+  [RestoreRequestTypeDef](./type_defs.md#restorerequesttypedef)
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `ExpectedBucketOwner`: `str`
 
 ## RestoreRequestTypeDef
 
@@ -2564,10 +5495,10 @@ Optional fields:
 - `Cont`: `Dict`\[`str`, `Any`\]
 - `End`: `Dict`\[`str`, `Any`\]
 
-## SelectObjectContentOutputTypeDef
+## SelectObjectContentOutputResponseTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import SelectObjectContentOutputTypeDef
+from mypy_boto3_s3.type_defs import SelectObjectContentOutputResponseTypeDef
 ```
 
 Required fields:
@@ -2576,6 +5507,34 @@ Required fields:
   [SelectObjectContentEventStreamTypeDef](./type_defs.md#selectobjectcontenteventstreamtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## SelectObjectContentRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import SelectObjectContentRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Key`: `str`
+- `Expression`: `str`
+- `ExpressionType`: `Literal['SQL']` (see
+  [ExpressionTypeType](./literals.md#expressiontypetype))
+- `InputSerialization`:
+  [InputSerializationTypeDef](./type_defs.md#inputserializationtypedef)
+- `OutputSerialization`:
+  [OutputSerializationTypeDef](./type_defs.md#outputserializationtypedef)
+
+Optional fields:
+
+- `SSECustomerAlgorithm`: `str`
+- `SSECustomerKey`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `RequestProgress`:
+  [RequestProgressTypeDef](./type_defs.md#requestprogresstypedef)
+- `ScanRange`: [ScanRangeTypeDef](./type_defs.md#scanrangetypedef)
+- `ExpectedBucketOwner`: `str`
 
 ## SelectParametersTypeDef
 
@@ -2630,6 +5589,196 @@ Optional fields:
 - `ApplyServerSideEncryptionByDefault`:
   [ServerSideEncryptionByDefaultTypeDef](./type_defs.md#serversideencryptionbydefaulttypedef)
 - `BucketKeyEnabled`: `bool`
+
+## ServiceResourceBucketAclRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ServiceResourceBucketAclRequestTypeDef
+```
+
+Required fields:
+
+- `bucket_name`: `str`
+
+## ServiceResourceBucketCorsRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ServiceResourceBucketCorsRequestTypeDef
+```
+
+Required fields:
+
+- `bucket_name`: `str`
+
+## ServiceResourceBucketLifecycleConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ServiceResourceBucketLifecycleConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `bucket_name`: `str`
+
+## ServiceResourceBucketLifecycleRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ServiceResourceBucketLifecycleRequestTypeDef
+```
+
+Required fields:
+
+- `bucket_name`: `str`
+
+## ServiceResourceBucketLoggingRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ServiceResourceBucketLoggingRequestTypeDef
+```
+
+Required fields:
+
+- `bucket_name`: `str`
+
+## ServiceResourceBucketNotificationRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ServiceResourceBucketNotificationRequestTypeDef
+```
+
+Required fields:
+
+- `bucket_name`: `str`
+
+## ServiceResourceBucketPolicyRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ServiceResourceBucketPolicyRequestTypeDef
+```
+
+Required fields:
+
+- `bucket_name`: `str`
+
+## ServiceResourceBucketRequestPaymentRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ServiceResourceBucketRequestPaymentRequestTypeDef
+```
+
+Required fields:
+
+- `bucket_name`: `str`
+
+## ServiceResourceBucketRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ServiceResourceBucketRequestTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+
+## ServiceResourceBucketTaggingRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ServiceResourceBucketTaggingRequestTypeDef
+```
+
+Required fields:
+
+- `bucket_name`: `str`
+
+## ServiceResourceBucketVersioningRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ServiceResourceBucketVersioningRequestTypeDef
+```
+
+Required fields:
+
+- `bucket_name`: `str`
+
+## ServiceResourceBucketWebsiteRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ServiceResourceBucketWebsiteRequestTypeDef
+```
+
+Required fields:
+
+- `bucket_name`: `str`
+
+## ServiceResourceMultipartUploadPartRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ServiceResourceMultipartUploadPartRequestTypeDef
+```
+
+Required fields:
+
+- `bucket_name`: `str`
+- `object_key`: `str`
+- `multipart_upload_id`: `str`
+- `part_number`: `str`
+
+## ServiceResourceMultipartUploadRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ServiceResourceMultipartUploadRequestTypeDef
+```
+
+Required fields:
+
+- `bucket_name`: `str`
+- `object_key`: `str`
+- `id`: `str`
+
+## ServiceResourceObjectAclRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ServiceResourceObjectAclRequestTypeDef
+```
+
+Required fields:
+
+- `bucket_name`: `str`
+- `object_key`: `str`
+
+## ServiceResourceObjectRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ServiceResourceObjectRequestTypeDef
+```
+
+Required fields:
+
+- `bucket_name`: `str`
+- `key`: `str`
+
+## ServiceResourceObjectSummaryRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ServiceResourceObjectSummaryRequestTypeDef
+```
+
+Required fields:
+
+- `bucket_name`: `str`
+- `key`: `str`
+
+## ServiceResourceObjectVersionRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import ServiceResourceObjectVersionRequestTypeDef
+```
+
+Required fields:
+
+- `bucket_name`: `str`
+- `object_key`: `str`
+- `id`: `str`
 
 ## SourceSelectionCriteriaTypeDef
 
@@ -2789,10 +5938,10 @@ Optional fields:
 - `StorageClass`:
   [TransitionStorageClassType](./literals.md#transitionstorageclasstype)
 
-## UploadPartCopyOutputTypeDef
+## UploadPartCopyOutputResponseTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import UploadPartCopyOutputTypeDef
+from mypy_boto3_s3.type_defs import UploadPartCopyOutputResponseTypeDef
 ```
 
 Required fields:
@@ -2811,10 +5960,71 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UploadPartOutputTypeDef
+## UploadPartCopyRequestMultipartUploadPartTypeDef
 
 ```python
-from mypy_boto3_s3.type_defs import UploadPartOutputTypeDef
+from mypy_boto3_s3.type_defs import UploadPartCopyRequestMultipartUploadPartTypeDef
+```
+
+Required fields:
+
+- `CopySource`: `str`
+
+Optional fields:
+
+- `CopySourceIfMatch`: `str`
+- `CopySourceIfModifiedSince`: `Union`\[`datetime`, `str`\]
+- `CopySourceIfNoneMatch`: `str`
+- `CopySourceIfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
+- `CopySourceRange`: `str`
+- `SSECustomerAlgorithm`: `str`
+- `SSECustomerKey`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `CopySourceSSECustomerAlgorithm`: `str`
+- `CopySourceSSECustomerKey`: `str`
+- `CopySourceSSECustomerKeyMD5`: `str`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `ExpectedBucketOwner`: `str`
+- `ExpectedSourceBucketOwner`: `str`
+
+## UploadPartCopyRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import UploadPartCopyRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `CopySource`: `Union`\[`str`,
+  [CopySourceTypeDef](./type_defs.md#copysourcetypedef)\]
+- `Key`: `str`
+- `PartNumber`: `int`
+- `UploadId`: `str`
+
+Optional fields:
+
+- `CopySourceIfMatch`: `str`
+- `CopySourceIfModifiedSince`: `Union`\[`datetime`, `str`\]
+- `CopySourceIfNoneMatch`: `str`
+- `CopySourceIfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
+- `CopySourceRange`: `str`
+- `SSECustomerAlgorithm`: `str`
+- `SSECustomerKey`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `CopySourceSSECustomerAlgorithm`: `str`
+- `CopySourceSSECustomerKey`: `str`
+- `CopySourceSSECustomerKeyMD5`: `str`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `ExpectedBucketOwner`: `str`
+- `ExpectedSourceBucketOwner`: `str`
+
+## UploadPartOutputResponseTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import UploadPartOutputResponseTypeDef
 ```
 
 Required fields:
@@ -2830,6 +6040,49 @@ Required fields:
   [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UploadPartRequestMultipartUploadPartTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import UploadPartRequestMultipartUploadPartTypeDef
+```
+
+Optional fields:
+
+- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `ContentLength`: `int`
+- `ContentMD5`: `str`
+- `SSECustomerAlgorithm`: `str`
+- `SSECustomerKey`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `ExpectedBucketOwner`: `str`
+
+## UploadPartRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import UploadPartRequestTypeDef
+```
+
+Required fields:
+
+- `Bucket`: `str`
+- `Key`: `str`
+- `PartNumber`: `int`
+- `UploadId`: `str`
+
+Optional fields:
+
+- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `ContentLength`: `int`
+- `ContentMD5`: `str`
+- `SSECustomerAlgorithm`: `str`
+- `SSECustomerKey`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `RequestPayer`: `Literal['requester']` (see
+  [RequestPayerType](./literals.md#requestpayertype))
+- `ExpectedBucketOwner`: `str`
 
 ## VersioningConfigurationTypeDef
 
@@ -2868,3 +6121,55 @@ Optional fields:
   [RedirectAllRequestsToTypeDef](./type_defs.md#redirectallrequeststotypedef)
 - `RoutingRules`:
   `List`\[[RoutingRuleTypeDef](./type_defs.md#routingruletypedef)\]
+
+## WriteGetObjectResponseRequestTypeDef
+
+```python
+from mypy_boto3_s3.type_defs import WriteGetObjectResponseRequestTypeDef
+```
+
+Required fields:
+
+- `RequestRoute`: `str`
+- `RequestToken`: `str`
+
+Optional fields:
+
+- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `StatusCode`: `int`
+- `ErrorCode`: `str`
+- `ErrorMessage`: `str`
+- `AcceptRanges`: `str`
+- `CacheControl`: `str`
+- `ContentDisposition`: `str`
+- `ContentEncoding`: `str`
+- `ContentLanguage`: `str`
+- `ContentLength`: `int`
+- `ContentRange`: `str`
+- `ContentType`: `str`
+- `DeleteMarker`: `bool`
+- `ETag`: `str`
+- `Expires`: `Union`\[`datetime`, `str`\]
+- `Expiration`: `str`
+- `LastModified`: `Union`\[`datetime`, `str`\]
+- `MissingMeta`: `int`
+- `Metadata`: `Dict`\[`str`, `str`\]
+- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
+- `ObjectLockLegalHoldStatus`:
+  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
+- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
+- `PartsCount`: `int`
+- `ReplicationStatus`:
+  [ReplicationStatusType](./literals.md#replicationstatustype)
+- `RequestCharged`: `Literal['requester']` (see
+  [RequestChargedType](./literals.md#requestchargedtype))
+- `Restore`: `str`
+- `ServerSideEncryption`:
+  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
+- `SSECustomerAlgorithm`: `str`
+- `SSEKMSKeyId`: `str`
+- `SSECustomerKeyMD5`: `str`
+- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
+- `TagCount`: `int`
+- `VersionId`: `str`
+- `BucketKeyEnabled`: `bool`

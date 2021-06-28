@@ -8,57 +8,127 @@ type annotations stubs module
 [mypy_boto3_codestar_notifications](https://pypi.org/project/mypy-boto3-codestar-notifications/).
 
 - [Typed dictionaries for boto3 CodeStarNotifications module](#typed-dictionaries-for-boto3-codestarnotifications-module)
-  - [CreateNotificationRuleResultTypeDef](#createnotificationruleresulttypedef)
-  - [DeleteNotificationRuleResultTypeDef](#deletenotificationruleresulttypedef)
-  - [DescribeNotificationRuleResultTypeDef](#describenotificationruleresulttypedef)
+  - [CreateNotificationRuleRequestTypeDef](#createnotificationrulerequesttypedef)
+  - [CreateNotificationRuleResultResponseTypeDef](#createnotificationruleresultresponsetypedef)
+  - [DeleteNotificationRuleRequestTypeDef](#deletenotificationrulerequesttypedef)
+  - [DeleteNotificationRuleResultResponseTypeDef](#deletenotificationruleresultresponsetypedef)
+  - [DeleteTargetRequestTypeDef](#deletetargetrequesttypedef)
+  - [DescribeNotificationRuleRequestTypeDef](#describenotificationrulerequesttypedef)
+  - [DescribeNotificationRuleResultResponseTypeDef](#describenotificationruleresultresponsetypedef)
   - [EventTypeSummaryTypeDef](#eventtypesummarytypedef)
   - [ListEventTypesFilterTypeDef](#listeventtypesfiltertypedef)
-  - [ListEventTypesResultTypeDef](#listeventtypesresulttypedef)
+  - [ListEventTypesRequestTypeDef](#listeventtypesrequesttypedef)
+  - [ListEventTypesResultResponseTypeDef](#listeventtypesresultresponsetypedef)
   - [ListNotificationRulesFilterTypeDef](#listnotificationrulesfiltertypedef)
-  - [ListNotificationRulesResultTypeDef](#listnotificationrulesresulttypedef)
-  - [ListTagsForResourceResultTypeDef](#listtagsforresourceresulttypedef)
+  - [ListNotificationRulesRequestTypeDef](#listnotificationrulesrequesttypedef)
+  - [ListNotificationRulesResultResponseTypeDef](#listnotificationrulesresultresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResultResponseTypeDef](#listtagsforresourceresultresponsetypedef)
   - [ListTargetsFilterTypeDef](#listtargetsfiltertypedef)
-  - [ListTargetsResultTypeDef](#listtargetsresulttypedef)
+  - [ListTargetsRequestTypeDef](#listtargetsrequesttypedef)
+  - [ListTargetsResultResponseTypeDef](#listtargetsresultresponsetypedef)
   - [NotificationRuleSummaryTypeDef](#notificationrulesummarytypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [SubscribeResultTypeDef](#subscriberesulttypedef)
-  - [TagResourceResultTypeDef](#tagresourceresulttypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [SubscribeRequestTypeDef](#subscriberequesttypedef)
+  - [SubscribeResultResponseTypeDef](#subscriberesultresponsetypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [TagResourceResultResponseTypeDef](#tagresourceresultresponsetypedef)
   - [TargetSummaryTypeDef](#targetsummarytypedef)
   - [TargetTypeDef](#targettypedef)
-  - [UnsubscribeResultTypeDef](#unsubscriberesulttypedef)
+  - [UnsubscribeRequestTypeDef](#unsubscriberequesttypedef)
+  - [UnsubscribeResultResponseTypeDef](#unsubscriberesultresponsetypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateNotificationRuleRequestTypeDef](#updatenotificationrulerequesttypedef)
 
-## CreateNotificationRuleResultTypeDef
+## CreateNotificationRuleRequestTypeDef
 
 ```python
-from mypy_boto3_codestar_notifications.type_defs import CreateNotificationRuleResultTypeDef
+from mypy_boto3_codestar_notifications.type_defs import CreateNotificationRuleRequestTypeDef
 ```
+
+Required fields:
+
+- `Name`: `str`
+- `EventTypeIds`: `List`\[`str`\]
+- `Resource`: `str`
+- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `DetailType`: [DetailTypeType](./literals.md#detailtypetype)
 
 Optional fields:
 
-- `Arn`: `str`
+- `ClientRequestToken`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+- `Status`:
+  [NotificationRuleStatusType](./literals.md#notificationrulestatustype)
 
-## DeleteNotificationRuleResultTypeDef
+## CreateNotificationRuleResultResponseTypeDef
 
 ```python
-from mypy_boto3_codestar_notifications.type_defs import DeleteNotificationRuleResultTypeDef
+from mypy_boto3_codestar_notifications.type_defs import CreateNotificationRuleResultResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Arn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeNotificationRuleResultTypeDef
+## DeleteNotificationRuleRequestTypeDef
 
 ```python
-from mypy_boto3_codestar_notifications.type_defs import DescribeNotificationRuleResultTypeDef
+from mypy_boto3_codestar_notifications.type_defs import DeleteNotificationRuleRequestTypeDef
 ```
 
 Required fields:
 
 - `Arn`: `str`
 
+## DeleteNotificationRuleResultResponseTypeDef
+
+```python
+from mypy_boto3_codestar_notifications.type_defs import DeleteNotificationRuleResultResponseTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteTargetRequestTypeDef
+
+```python
+from mypy_boto3_codestar_notifications.type_defs import DeleteTargetRequestTypeDef
+```
+
+Required fields:
+
+- `TargetAddress`: `str`
+
 Optional fields:
 
+- `ForceUnsubscribeAll`: `bool`
+
+## DescribeNotificationRuleRequestTypeDef
+
+```python
+from mypy_boto3_codestar_notifications.type_defs import DescribeNotificationRuleRequestTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
+
+## DescribeNotificationRuleResultResponseTypeDef
+
+```python
+from mypy_boto3_codestar_notifications.type_defs import DescribeNotificationRuleResultResponseTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
 - `Name`: `str`
 - `EventTypes`:
   `List`\[[EventTypeSummaryTypeDef](./type_defs.md#eventtypesummarytypedef)\]
@@ -72,6 +142,8 @@ Optional fields:
 - `CreatedTimestamp`: `datetime`
 - `LastModifiedTimestamp`: `datetime`
 - `Tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## EventTypeSummaryTypeDef
 
@@ -98,17 +170,32 @@ Required fields:
   [ListEventTypesFilterNameType](./literals.md#listeventtypesfilternametype)
 - `Value`: `str`
 
-## ListEventTypesResultTypeDef
+## ListEventTypesRequestTypeDef
 
 ```python
-from mypy_boto3_codestar_notifications.type_defs import ListEventTypesResultTypeDef
+from mypy_boto3_codestar_notifications.type_defs import ListEventTypesRequestTypeDef
 ```
 
 Optional fields:
 
+- `Filters`:
+  `List`\[[ListEventTypesFilterTypeDef](./type_defs.md#listeventtypesfiltertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListEventTypesResultResponseTypeDef
+
+```python
+from mypy_boto3_codestar_notifications.type_defs import ListEventTypesResultResponseTypeDef
+```
+
+Required fields:
+
 - `EventTypes`:
   `List`\[[EventTypeSummaryTypeDef](./type_defs.md#eventtypesummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListNotificationRulesFilterTypeDef
 
@@ -122,27 +209,54 @@ Required fields:
   [ListNotificationRulesFilterNameType](./literals.md#listnotificationrulesfilternametype)
 - `Value`: `str`
 
-## ListNotificationRulesResultTypeDef
+## ListNotificationRulesRequestTypeDef
 
 ```python
-from mypy_boto3_codestar_notifications.type_defs import ListNotificationRulesResultTypeDef
+from mypy_boto3_codestar_notifications.type_defs import ListNotificationRulesRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`:
+  `List`\[[ListNotificationRulesFilterTypeDef](./type_defs.md#listnotificationrulesfiltertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListNotificationRulesResultResponseTypeDef
+
+```python
+from mypy_boto3_codestar_notifications.type_defs import ListNotificationRulesResultResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `NotificationRules`:
   `List`\[[NotificationRuleSummaryTypeDef](./type_defs.md#notificationrulesummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResultTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_codestar_notifications.type_defs import ListTagsForResourceResultTypeDef
+from mypy_boto3_codestar_notifications.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Arn`: `str`
+
+## ListTagsForResourceResultResponseTypeDef
+
+```python
+from mypy_boto3_codestar_notifications.type_defs import ListTagsForResourceResultResponseTypeDef
+```
+
+Required fields:
 
 - `Tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListTargetsFilterTypeDef
 
@@ -155,17 +269,32 @@ Required fields:
 - `Name`: [ListTargetsFilterNameType](./literals.md#listtargetsfilternametype)
 - `Value`: `str`
 
-## ListTargetsResultTypeDef
+## ListTargetsRequestTypeDef
 
 ```python
-from mypy_boto3_codestar_notifications.type_defs import ListTargetsResultTypeDef
+from mypy_boto3_codestar_notifications.type_defs import ListTargetsRequestTypeDef
 ```
 
 Optional fields:
 
+- `Filters`:
+  `List`\[[ListTargetsFilterTypeDef](./type_defs.md#listtargetsfiltertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListTargetsResultResponseTypeDef
+
+```python
+from mypy_boto3_codestar_notifications.type_defs import ListTargetsResultResponseTypeDef
+```
+
+Required fields:
+
 - `Targets`:
   `List`\[[TargetSummaryTypeDef](./type_defs.md#targetsummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## NotificationRuleSummaryTypeDef
 
@@ -190,25 +319,69 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## SubscribeResultTypeDef
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_codestar_notifications.type_defs import SubscribeResultTypeDef
+from mypy_boto3_codestar_notifications.type_defs import ResponseMetadataTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## SubscribeRequestTypeDef
+
+```python
+from mypy_boto3_codestar_notifications.type_defs import SubscribeRequestTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
-
-## TagResourceResultTypeDef
-
-```python
-from mypy_boto3_codestar_notifications.type_defs import TagResourceResultTypeDef
-```
+- `Target`: [TargetTypeDef](./type_defs.md#targettypedef)
 
 Optional fields:
 
+- `ClientRequestToken`: `str`
+
+## SubscribeResultResponseTypeDef
+
+```python
+from mypy_boto3_codestar_notifications.type_defs import SubscribeResultResponseTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_codestar_notifications.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
+
+## TagResourceResultResponseTypeDef
+
+```python
+from mypy_boto3_codestar_notifications.type_defs import TagResourceResultResponseTypeDef
+```
+
+Required fields:
+
+- `Tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## TargetSummaryTypeDef
 
@@ -233,12 +406,55 @@ Optional fields:
 - `TargetType`: `str`
 - `TargetAddress`: `str`
 
-## UnsubscribeResultTypeDef
+## UnsubscribeRequestTypeDef
 
 ```python
-from mypy_boto3_codestar_notifications.type_defs import UnsubscribeResultTypeDef
+from mypy_boto3_codestar_notifications.type_defs import UnsubscribeRequestTypeDef
 ```
 
 Required fields:
 
 - `Arn`: `str`
+- `TargetAddress`: `str`
+
+## UnsubscribeResultResponseTypeDef
+
+```python
+from mypy_boto3_codestar_notifications.type_defs import UnsubscribeResultResponseTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UntagResourceRequestTypeDef
+
+```python
+from mypy_boto3_codestar_notifications.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## UpdateNotificationRuleRequestTypeDef
+
+```python
+from mypy_boto3_codestar_notifications.type_defs import UpdateNotificationRuleRequestTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+- `Status`:
+  [NotificationRuleStatusType](./literals.md#notificationrulestatustype)
+- `EventTypeIds`: `List`\[`str`\]
+- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `DetailType`: [DetailTypeType](./literals.md#detailtypetype)

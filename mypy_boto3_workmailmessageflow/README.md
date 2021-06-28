@@ -53,9 +53,12 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_workmailmessageflow.type_defs import GetRawMessageContentResponseTypeDef, ...
+from mypy_boto3_workmailmessageflow.type_defs import GetRawMessageContentRequestTypeDef, ...
 ```
 
-- [GetRawMessageContentResponseTypeDef](./type_defs.md#getrawmessagecontentresponsetypedef)
+- [GetRawMessageContentRequestTypeDef](./type_defs.md#getrawmessagecontentrequesttypedef)
+- [GetRawMessageContentResponseResponseTypeDef](./type_defs.md#getrawmessagecontentresponseresponsetypedef)
+- [PutRawMessageContentRequestTypeDef](./type_defs.md#putrawmessagecontentrequesttypedef)
 - [RawMessageContentTypeDef](./type_defs.md#rawmessagecontenttypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [S3ReferenceTypeDef](./type_defs.md#s3referencetypedef)

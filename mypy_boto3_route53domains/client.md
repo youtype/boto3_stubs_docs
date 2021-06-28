@@ -85,6 +85,9 @@ Exceptions:
 
 ### accept_domain_transfer_from_another_aws_account
 
+Accepts the transfer of a domain from another AWS account to the current AWS
+account.
+
 Type annotations for
 `boto3.client("route53domains").accept_domain_transfer_from_another_aws_account`
 method.
@@ -92,15 +95,20 @@ method.
 Boto3 documentation:
 [Route53Domains.Client.accept_domain_transfer_from_another_aws_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.accept_domain_transfer_from_another_aws_account)
 
+Arguments mapping described in
+[AcceptDomainTransferFromAnotherAwsAccountRequestTypeDef](./type_defs.md#acceptdomaintransferfromanotherawsaccountrequesttypedef).
+
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `Password`: `str` *(required)*
 
 Returns
-[AcceptDomainTransferFromAnotherAwsAccountResponseTypeDef](./type_defs.md#acceptdomaintransferfromanotherawsaccountresponsetypedef).
+[AcceptDomainTransferFromAnotherAwsAccountResponseResponseTypeDef](./type_defs.md#acceptdomaintransferfromanotherawsaccountresponseresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("route53domains").can_paginate` method.
 
@@ -115,6 +123,9 @@ Returns `bool`.
 
 ### cancel_domain_transfer_to_another_aws_account
 
+Cancels the transfer of a domain from the current AWS account to another AWS
+account.
+
 Type annotations for
 `boto3.client("route53domains").cancel_domain_transfer_to_another_aws_account`
 method.
@@ -122,14 +133,19 @@ method.
 Boto3 documentation:
 [Route53Domains.Client.cancel_domain_transfer_to_another_aws_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.cancel_domain_transfer_to_another_aws_account)
 
+Arguments mapping described in
+[CancelDomainTransferToAnotherAwsAccountRequestTypeDef](./type_defs.md#canceldomaintransfertoanotherawsaccountrequesttypedef).
+
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
 Returns
-[CancelDomainTransferToAnotherAwsAccountResponseTypeDef](./type_defs.md#canceldomaintransfertoanotherawsaccountresponsetypedef).
+[CancelDomainTransferToAnotherAwsAccountResponseResponseTypeDef](./type_defs.md#canceldomaintransfertoanotherawsaccountresponseresponsetypedef).
 
 ### check_domain_availability
+
+This operation checks the availability of one domain name.
 
 Type annotations for `boto3.client("route53domains").check_domain_availability`
 method.
@@ -137,15 +153,20 @@ method.
 Boto3 documentation:
 [Route53Domains.Client.check_domain_availability](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.check_domain_availability)
 
+Arguments mapping described in
+[CheckDomainAvailabilityRequestTypeDef](./type_defs.md#checkdomainavailabilityrequesttypedef).
+
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `IdnLangCode`: `str`
 
 Returns
-[CheckDomainAvailabilityResponseTypeDef](./type_defs.md#checkdomainavailabilityresponsetypedef).
+[CheckDomainAvailabilityResponseResponseTypeDef](./type_defs.md#checkdomainavailabilityresponseresponsetypedef).
 
 ### check_domain_transferability
+
+Checks whether a domain name can be transferred to Amazon Route 53.
 
 Type annotations for
 `boto3.client("route53domains").check_domain_transferability` method.
@@ -153,21 +174,29 @@ Type annotations for
 Boto3 documentation:
 [Route53Domains.Client.check_domain_transferability](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.check_domain_transferability)
 
+Arguments mapping described in
+[CheckDomainTransferabilityRequestTypeDef](./type_defs.md#checkdomaintransferabilityrequesttypedef).
+
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `AuthCode`: `str`
 
 Returns
-[CheckDomainTransferabilityResponseTypeDef](./type_defs.md#checkdomaintransferabilityresponsetypedef).
+[CheckDomainTransferabilityResponseResponseTypeDef](./type_defs.md#checkdomaintransferabilityresponseresponsetypedef).
 
 ### delete_tags_for_domain
+
+This operation deletes the specified tags for a domain.
 
 Type annotations for `boto3.client("route53domains").delete_tags_for_domain`
 method.
 
 Boto3 documentation:
 [Route53Domains.Client.delete_tags_for_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.delete_tags_for_domain)
+
+Arguments mapping described in
+[DeleteTagsForDomainRequestTypeDef](./type_defs.md#deletetagsfordomainrequesttypedef).
 
 Keyword-only arguments:
 
@@ -178,11 +207,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### disable_domain_auto_renew
 
+This operation disables automatic renewal of domain registration for the
+specified domain.
+
 Type annotations for `boto3.client("route53domains").disable_domain_auto_renew`
 method.
 
 Boto3 documentation:
 [Route53Domains.Client.disable_domain_auto_renew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.disable_domain_auto_renew)
+
+Arguments mapping described in
+[DisableDomainAutoRenewRequestTypeDef](./type_defs.md#disabledomainautorenewrequesttypedef).
 
 Keyword-only arguments:
 
@@ -192,26 +227,38 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### disable_domain_transfer_lock
 
+This operation removes the transfer lock on the domain (specifically the
+`clientTransferProhibited` status) to allow domain transfers.
+
 Type annotations for
 `boto3.client("route53domains").disable_domain_transfer_lock` method.
 
 Boto3 documentation:
 [Route53Domains.Client.disable_domain_transfer_lock](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.disable_domain_transfer_lock)
 
+Arguments mapping described in
+[DisableDomainTransferLockRequestTypeDef](./type_defs.md#disabledomaintransferlockrequesttypedef).
+
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
 Returns
-[DisableDomainTransferLockResponseTypeDef](./type_defs.md#disabledomaintransferlockresponsetypedef).
+[DisableDomainTransferLockResponseResponseTypeDef](./type_defs.md#disabledomaintransferlockresponseresponsetypedef).
 
 ### enable_domain_auto_renew
+
+This operation configures Amazon Route 53 to automatically renew the specified
+domain before the domain registration expires.
 
 Type annotations for `boto3.client("route53domains").enable_domain_auto_renew`
 method.
 
 Boto3 documentation:
 [Route53Domains.Client.enable_domain_auto_renew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.enable_domain_auto_renew)
+
+Arguments mapping described in
+[EnableDomainAutoRenewRequestTypeDef](./type_defs.md#enabledomainautorenewrequesttypedef).
 
 Keyword-only arguments:
 
@@ -221,20 +268,28 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### enable_domain_transfer_lock
 
+This operation sets the transfer lock on the domain (specifically the
+`clientTransferProhibited` status) to prevent domain transfers.
+
 Type annotations for
 `boto3.client("route53domains").enable_domain_transfer_lock` method.
 
 Boto3 documentation:
 [Route53Domains.Client.enable_domain_transfer_lock](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.enable_domain_transfer_lock)
 
+Arguments mapping described in
+[EnableDomainTransferLockRequestTypeDef](./type_defs.md#enabledomaintransferlockrequesttypedef).
+
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
 Returns
-[EnableDomainTransferLockResponseTypeDef](./type_defs.md#enabledomaintransferlockresponsetypedef).
+[EnableDomainTransferLockResponseResponseTypeDef](./type_defs.md#enabledomaintransferlockresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("route53domains").generate_presigned_url`
 method.
@@ -253,40 +308,58 @@ Returns `str`.
 
 ### get_contact_reachability_status
 
+For operations that require confirmation that the email address for the
+registrant contact is valid, such as registering a new domain, this operation
+returns information about whether the registrant contact has responded.
+
 Type annotations for
 `boto3.client("route53domains").get_contact_reachability_status` method.
 
 Boto3 documentation:
 [Route53Domains.Client.get_contact_reachability_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.get_contact_reachability_status)
 
+Arguments mapping described in
+[GetContactReachabilityStatusRequestTypeDef](./type_defs.md#getcontactreachabilitystatusrequesttypedef).
+
 Keyword-only arguments:
 
 - `domainName`: `str`
 
 Returns
-[GetContactReachabilityStatusResponseTypeDef](./type_defs.md#getcontactreachabilitystatusresponsetypedef).
+[GetContactReachabilityStatusResponseResponseTypeDef](./type_defs.md#getcontactreachabilitystatusresponseresponsetypedef).
 
 ### get_domain_detail
+
+This operation returns detailed information about a specified domain that is
+associated with the current AWS account.
 
 Type annotations for `boto3.client("route53domains").get_domain_detail` method.
 
 Boto3 documentation:
 [Route53Domains.Client.get_domain_detail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.get_domain_detail)
 
+Arguments mapping described in
+[GetDomainDetailRequestTypeDef](./type_defs.md#getdomaindetailrequesttypedef).
+
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
 Returns
-[GetDomainDetailResponseTypeDef](./type_defs.md#getdomaindetailresponsetypedef).
+[GetDomainDetailResponseResponseTypeDef](./type_defs.md#getdomaindetailresponseresponsetypedef).
 
 ### get_domain_suggestions
+
+The GetDomainSuggestions operation returns a list of suggested domain names.
 
 Type annotations for `boto3.client("route53domains").get_domain_suggestions`
 method.
 
 Boto3 documentation:
 [Route53Domains.Client.get_domain_suggestions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.get_domain_suggestions)
+
+Arguments mapping described in
+[GetDomainSuggestionsRequestTypeDef](./type_defs.md#getdomainsuggestionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -295,9 +368,12 @@ Keyword-only arguments:
 - `OnlyAvailable`: `bool` *(required)*
 
 Returns
-[GetDomainSuggestionsResponseTypeDef](./type_defs.md#getdomainsuggestionsresponsetypedef).
+[GetDomainSuggestionsResponseResponseTypeDef](./type_defs.md#getdomainsuggestionsresponseresponsetypedef).
 
 ### get_operation_detail
+
+This operation returns the current status of an operation that is not
+completed.
 
 Type annotations for `boto3.client("route53domains").get_operation_detail`
 method.
@@ -305,45 +381,64 @@ method.
 Boto3 documentation:
 [Route53Domains.Client.get_operation_detail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.get_operation_detail)
 
+Arguments mapping described in
+[GetOperationDetailRequestTypeDef](./type_defs.md#getoperationdetailrequesttypedef).
+
 Keyword-only arguments:
 
 - `OperationId`: `str` *(required)*
 
 Returns
-[GetOperationDetailResponseTypeDef](./type_defs.md#getoperationdetailresponsetypedef).
+[GetOperationDetailResponseResponseTypeDef](./type_defs.md#getoperationdetailresponseresponsetypedef).
 
 ### list_domains
+
+This operation returns all the domain names registered with Amazon Route 53 for
+the current AWS account.
 
 Type annotations for `boto3.client("route53domains").list_domains` method.
 
 Boto3 documentation:
 [Route53Domains.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.list_domains)
 
+Arguments mapping described in
+[ListDomainsRequestTypeDef](./type_defs.md#listdomainsrequesttypedef).
+
 Keyword-only arguments:
 
 - `Marker`: `str`
 - `MaxItems`: `int`
 
 Returns
-[ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef).
+[ListDomainsResponseResponseTypeDef](./type_defs.md#listdomainsresponseresponsetypedef).
 
 ### list_operations
+
+Returns information about all of the operations that return an operation ID and
+that have ever been performed on domains that were registered by the current
+account.
 
 Type annotations for `boto3.client("route53domains").list_operations` method.
 
 Boto3 documentation:
 [Route53Domains.Client.list_operations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.list_operations)
 
+Arguments mapping described in
+[ListOperationsRequestTypeDef](./type_defs.md#listoperationsrequesttypedef).
+
 Keyword-only arguments:
 
-- `SubmittedSince`: `datetime`
+- `SubmittedSince`: `Union`\[`datetime`, `str`\]
 - `Marker`: `str`
 - `MaxItems`: `int`
 
 Returns
-[ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef).
+[ListOperationsResponseResponseTypeDef](./type_defs.md#listoperationsresponseresponsetypedef).
 
 ### list_tags_for_domain
+
+This operation returns all of the tags that are associated with the specified
+domain.
 
 Type annotations for `boto3.client("route53domains").list_tags_for_domain`
 method.
@@ -351,19 +446,27 @@ method.
 Boto3 documentation:
 [Route53Domains.Client.list_tags_for_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.list_tags_for_domain)
 
+Arguments mapping described in
+[ListTagsForDomainRequestTypeDef](./type_defs.md#listtagsfordomainrequesttypedef).
+
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
 Returns
-[ListTagsForDomainResponseTypeDef](./type_defs.md#listtagsfordomainresponsetypedef).
+[ListTagsForDomainResponseResponseTypeDef](./type_defs.md#listtagsfordomainresponseresponsetypedef).
 
 ### register_domain
+
+This operation registers a domain.
 
 Type annotations for `boto3.client("route53domains").register_domain` method.
 
 Boto3 documentation:
 [Route53Domains.Client.register_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.register_domain)
+
+Arguments mapping described in
+[RegisterDomainRequestTypeDef](./type_defs.md#registerdomainrequesttypedef).
 
 Keyword-only arguments:
 
@@ -382,9 +485,12 @@ Keyword-only arguments:
 - `PrivacyProtectTechContact`: `bool`
 
 Returns
-[RegisterDomainResponseTypeDef](./type_defs.md#registerdomainresponsetypedef).
+[RegisterDomainResponseResponseTypeDef](./type_defs.md#registerdomainresponseresponsetypedef).
 
 ### reject_domain_transfer_from_another_aws_account
+
+Rejects the transfer of a domain from another AWS account to the current AWS
+account.
 
 Type annotations for
 `boto3.client("route53domains").reject_domain_transfer_from_another_aws_account`
@@ -393,19 +499,27 @@ method.
 Boto3 documentation:
 [Route53Domains.Client.reject_domain_transfer_from_another_aws_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.reject_domain_transfer_from_another_aws_account)
 
+Arguments mapping described in
+[RejectDomainTransferFromAnotherAwsAccountRequestTypeDef](./type_defs.md#rejectdomaintransferfromanotherawsaccountrequesttypedef).
+
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
 Returns
-[RejectDomainTransferFromAnotherAwsAccountResponseTypeDef](./type_defs.md#rejectdomaintransferfromanotherawsaccountresponsetypedef).
+[RejectDomainTransferFromAnotherAwsAccountResponseResponseTypeDef](./type_defs.md#rejectdomaintransferfromanotherawsaccountresponseresponsetypedef).
 
 ### renew_domain
+
+This operation renews a domain for the specified number of years.
 
 Type annotations for `boto3.client("route53domains").renew_domain` method.
 
 Boto3 documentation:
 [Route53Domains.Client.renew_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.renew_domain)
+
+Arguments mapping described in
+[RenewDomainRequestTypeDef](./type_defs.md#renewdomainrequesttypedef).
 
 Keyword-only arguments:
 
@@ -414,9 +528,14 @@ Keyword-only arguments:
 - `DurationInYears`: `int`
 
 Returns
-[RenewDomainResponseTypeDef](./type_defs.md#renewdomainresponsetypedef).
+[RenewDomainResponseResponseTypeDef](./type_defs.md#renewdomainresponseresponsetypedef).
 
 ### resend_contact_reachability_email
+
+For operations that require confirmation that the email address for the
+registrant contact is valid, such as registering a new domain, this operation
+resends the confirmation email to the current email address for the registrant
+contact.
 
 Type annotations for
 `boto3.client("route53domains").resend_contact_reachability_email` method.
@@ -424,14 +543,19 @@ Type annotations for
 Boto3 documentation:
 [Route53Domains.Client.resend_contact_reachability_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.resend_contact_reachability_email)
 
+Arguments mapping described in
+[ResendContactReachabilityEmailRequestTypeDef](./type_defs.md#resendcontactreachabilityemailrequesttypedef).
+
 Keyword-only arguments:
 
 - `domainName`: `str`
 
 Returns
-[ResendContactReachabilityEmailResponseTypeDef](./type_defs.md#resendcontactreachabilityemailresponsetypedef).
+[ResendContactReachabilityEmailResponseResponseTypeDef](./type_defs.md#resendcontactreachabilityemailresponseresponsetypedef).
 
 ### retrieve_domain_auth_code
+
+This operation returns the AuthCode for the domain.
 
 Type annotations for `boto3.client("route53domains").retrieve_domain_auth_code`
 method.
@@ -439,19 +563,27 @@ method.
 Boto3 documentation:
 [Route53Domains.Client.retrieve_domain_auth_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.retrieve_domain_auth_code)
 
+Arguments mapping described in
+[RetrieveDomainAuthCodeRequestTypeDef](./type_defs.md#retrievedomainauthcoderequesttypedef).
+
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
 Returns
-[RetrieveDomainAuthCodeResponseTypeDef](./type_defs.md#retrievedomainauthcoderesponsetypedef).
+[RetrieveDomainAuthCodeResponseResponseTypeDef](./type_defs.md#retrievedomainauthcoderesponseresponsetypedef).
 
 ### transfer_domain
+
+Transfers a domain from another registrar to Amazon Route 53.
 
 Type annotations for `boto3.client("route53domains").transfer_domain` method.
 
 Boto3 documentation:
 [Route53Domains.Client.transfer_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.transfer_domain)
+
+Arguments mapping described in
+[TransferDomainRequestTypeDef](./type_defs.md#transferdomainrequesttypedef).
 
 Keyword-only arguments:
 
@@ -473,9 +605,11 @@ Keyword-only arguments:
 - `PrivacyProtectTechContact`: `bool`
 
 Returns
-[TransferDomainResponseTypeDef](./type_defs.md#transferdomainresponsetypedef).
+[TransferDomainResponseResponseTypeDef](./type_defs.md#transferdomainresponseresponsetypedef).
 
 ### transfer_domain_to_another_aws_account
+
+Transfers a domain from the current AWS account to another AWS account.
 
 Type annotations for
 `boto3.client("route53domains").transfer_domain_to_another_aws_account` method.
@@ -483,21 +617,29 @@ Type annotations for
 Boto3 documentation:
 [Route53Domains.Client.transfer_domain_to_another_aws_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.transfer_domain_to_another_aws_account)
 
+Arguments mapping described in
+[TransferDomainToAnotherAwsAccountRequestTypeDef](./type_defs.md#transferdomaintoanotherawsaccountrequesttypedef).
+
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `AccountId`: `str` *(required)*
 
 Returns
-[TransferDomainToAnotherAwsAccountResponseTypeDef](./type_defs.md#transferdomaintoanotherawsaccountresponsetypedef).
+[TransferDomainToAnotherAwsAccountResponseResponseTypeDef](./type_defs.md#transferdomaintoanotherawsaccountresponseresponsetypedef).
 
 ### update_domain_contact
+
+This operation updates the contact information for a particular domain.
 
 Type annotations for `boto3.client("route53domains").update_domain_contact`
 method.
 
 Boto3 documentation:
 [Route53Domains.Client.update_domain_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.update_domain_contact)
+
+Arguments mapping described in
+[UpdateDomainContactRequestTypeDef](./type_defs.md#updatedomaincontactrequesttypedef).
 
 Keyword-only arguments:
 
@@ -508,15 +650,20 @@ Keyword-only arguments:
 - `TechContact`: [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
 
 Returns
-[UpdateDomainContactResponseTypeDef](./type_defs.md#updatedomaincontactresponsetypedef).
+[UpdateDomainContactResponseResponseTypeDef](./type_defs.md#updatedomaincontactresponseresponsetypedef).
 
 ### update_domain_contact_privacy
+
+This operation updates the specified domain contact's privacy setting.
 
 Type annotations for
 `boto3.client("route53domains").update_domain_contact_privacy` method.
 
 Boto3 documentation:
 [Route53Domains.Client.update_domain_contact_privacy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.update_domain_contact_privacy)
+
+Arguments mapping described in
+[UpdateDomainContactPrivacyRequestTypeDef](./type_defs.md#updatedomaincontactprivacyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -526,15 +673,21 @@ Keyword-only arguments:
 - `TechPrivacy`: `bool`
 
 Returns
-[UpdateDomainContactPrivacyResponseTypeDef](./type_defs.md#updatedomaincontactprivacyresponsetypedef).
+[UpdateDomainContactPrivacyResponseResponseTypeDef](./type_defs.md#updatedomaincontactprivacyresponseresponsetypedef).
 
 ### update_domain_nameservers
+
+This operation replaces the current set of name servers for the domain with the
+specified set of name servers.
 
 Type annotations for `boto3.client("route53domains").update_domain_nameservers`
 method.
 
 Boto3 documentation:
 [Route53Domains.Client.update_domain_nameservers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.update_domain_nameservers)
+
+Arguments mapping described in
+[UpdateDomainNameserversRequestTypeDef](./type_defs.md#updatedomainnameserversrequesttypedef).
 
 Keyword-only arguments:
 
@@ -544,15 +697,20 @@ Keyword-only arguments:
 - `FIAuthKey`: `str`
 
 Returns
-[UpdateDomainNameserversResponseTypeDef](./type_defs.md#updatedomainnameserversresponsetypedef).
+[UpdateDomainNameserversResponseResponseTypeDef](./type_defs.md#updatedomainnameserversresponseresponsetypedef).
 
 ### update_tags_for_domain
+
+This operation adds or updates tags for a specified domain.
 
 Type annotations for `boto3.client("route53domains").update_tags_for_domain`
 method.
 
 Boto3 documentation:
 [Route53Domains.Client.update_tags_for_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.update_tags_for_domain)
+
+Arguments mapping described in
+[UpdateTagsForDomainRequestTypeDef](./type_defs.md#updatetagsfordomainrequesttypedef).
 
 Keyword-only arguments:
 
@@ -563,20 +721,28 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### view_billing
 
+Returns all the domain-related billing records for the current AWS account for
+a specified period See also:
+`AWS API Documentation <https://docs.aws.amazon.com/g oto/WebAPI/route53domains-2014-05-15/ViewBilling>`\_
+**Request Syntax** response = client.view_billing( Start=datetime(...
+
 Type annotations for `boto3.client("route53domains").view_billing` method.
 
 Boto3 documentation:
 [Route53Domains.Client.view_billing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.view_billing)
 
+Arguments mapping described in
+[ViewBillingRequestTypeDef](./type_defs.md#viewbillingrequesttypedef).
+
 Keyword-only arguments:
 
-- `Start`: `datetime`
-- `End`: `datetime`
+- `Start`: `Union`\[`datetime`, `str`\]
+- `End`: `Union`\[`datetime`, `str`\]
 - `Marker`: `str`
 - `MaxItems`: `int`
 
 Returns
-[ViewBillingResponseTypeDef](./type_defs.md#viewbillingresponsetypedef).
+[ViewBillingResponseResponseTypeDef](./type_defs.md#viewbillingresponseresponsetypedef).
 
 ### get_paginator
 

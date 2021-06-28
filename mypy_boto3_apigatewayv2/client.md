@@ -128,6 +128,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("apigatewayv2").can_paginate` method.
 
 Boto3 documentation:
@@ -141,10 +143,15 @@ Returns `bool`.
 
 ### create_api
 
+Creates an Api resource.
+
 Type annotations for `boto3.client("apigatewayv2").create_api` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.create_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_api)
+
+Arguments mapping described in
+[CreateApiRequestTypeDef](./type_defs.md#createapirequesttypedef).
 
 Keyword-only arguments:
 
@@ -163,14 +170,20 @@ Keyword-only arguments:
 - `Target`: `str`
 - `Version`: `str`
 
-Returns [CreateApiResponseTypeDef](./type_defs.md#createapiresponsetypedef).
+Returns
+[CreateApiResponseResponseTypeDef](./type_defs.md#createapiresponseresponsetypedef).
 
 ### create_api_mapping
+
+Creates an API mapping.
 
 Type annotations for `boto3.client("apigatewayv2").create_api_mapping` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.create_api_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_api_mapping)
+
+Arguments mapping described in
+[CreateApiMappingRequestTypeDef](./type_defs.md#createapimappingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -180,14 +193,19 @@ Keyword-only arguments:
 - `ApiMappingKey`: `str`
 
 Returns
-[CreateApiMappingResponseTypeDef](./type_defs.md#createapimappingresponsetypedef).
+[CreateApiMappingResponseResponseTypeDef](./type_defs.md#createapimappingresponseresponsetypedef).
 
 ### create_authorizer
+
+Creates an Authorizer for an API.
 
 Type annotations for `boto3.client("apigatewayv2").create_authorizer` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.create_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_authorizer)
+
+Arguments mapping described in
+[CreateAuthorizerRequestTypeDef](./type_defs.md#createauthorizerrequesttypedef).
 
 Keyword-only arguments:
 
@@ -206,14 +224,19 @@ Keyword-only arguments:
   [JWTConfigurationTypeDef](./type_defs.md#jwtconfigurationtypedef)
 
 Returns
-[CreateAuthorizerResponseTypeDef](./type_defs.md#createauthorizerresponsetypedef).
+[CreateAuthorizerResponseResponseTypeDef](./type_defs.md#createauthorizerresponseresponsetypedef).
 
 ### create_deployment
+
+Creates a Deployment for an API.
 
 Type annotations for `boto3.client("apigatewayv2").create_deployment` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_deployment)
+
+Arguments mapping described in
+[CreateDeploymentRequestTypeDef](./type_defs.md#createdeploymentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -222,14 +245,19 @@ Keyword-only arguments:
 - `StageName`: `str`
 
 Returns
-[CreateDeploymentResponseTypeDef](./type_defs.md#createdeploymentresponsetypedef).
+[CreateDeploymentResponseResponseTypeDef](./type_defs.md#createdeploymentresponseresponsetypedef).
 
 ### create_domain_name
+
+Creates a domain name.
 
 Type annotations for `boto3.client("apigatewayv2").create_domain_name` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.create_domain_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_domain_name)
+
+Arguments mapping described in
+[CreateDomainNameRequestTypeDef](./type_defs.md#createdomainnamerequesttypedef).
 
 Keyword-only arguments:
 
@@ -241,14 +269,19 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateDomainNameResponseTypeDef](./type_defs.md#createdomainnameresponsetypedef).
+[CreateDomainNameResponseResponseTypeDef](./type_defs.md#createdomainnameresponseresponsetypedef).
 
 ### create_integration
+
+Creates an Integration.
 
 Type annotations for `boto3.client("apigatewayv2").create_integration` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.create_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_integration)
+
+Arguments mapping described in
+[CreateIntegrationRequestTypeDef](./type_defs.md#createintegrationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -275,15 +308,20 @@ Keyword-only arguments:
 - `TlsConfig`: [TlsConfigInputTypeDef](./type_defs.md#tlsconfiginputtypedef)
 
 Returns
-[CreateIntegrationResultTypeDef](./type_defs.md#createintegrationresulttypedef).
+[CreateIntegrationResultResponseTypeDef](./type_defs.md#createintegrationresultresponsetypedef).
 
 ### create_integration_response
+
+Creates an IntegrationResponses.
 
 Type annotations for `boto3.client("apigatewayv2").create_integration_response`
 method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.create_integration_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_integration_response)
+
+Arguments mapping described in
+[CreateIntegrationResponseRequestTypeDef](./type_defs.md#createintegrationresponserequesttypedef).
 
 Keyword-only arguments:
 
@@ -297,14 +335,19 @@ Keyword-only arguments:
 - `TemplateSelectionExpression`: `str`
 
 Returns
-[CreateIntegrationResponseResponseTypeDef](./type_defs.md#createintegrationresponseresponsetypedef).
+[CreateIntegrationResponseResponseResponseTypeDef](./type_defs.md#createintegrationresponseresponseresponsetypedef).
 
 ### create_model
+
+Creates a Model for an API.
 
 Type annotations for `boto3.client("apigatewayv2").create_model` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.create_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_model)
+
+Arguments mapping described in
+[CreateModelRequestTypeDef](./type_defs.md#createmodelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -315,14 +358,19 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[CreateModelResponseTypeDef](./type_defs.md#createmodelresponsetypedef).
+[CreateModelResponseResponseTypeDef](./type_defs.md#createmodelresponseresponsetypedef).
 
 ### create_route
+
+Creates a Route for an API.
 
 Type annotations for `boto3.client("apigatewayv2").create_route` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.create_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_route)
+
+Arguments mapping described in
+[CreateRouteRequestTypeDef](./type_defs.md#createrouterequesttypedef).
 
 Keyword-only arguments:
 
@@ -341,15 +389,21 @@ Keyword-only arguments:
 - `RouteResponseSelectionExpression`: `str`
 - `Target`: `str`
 
-Returns [CreateRouteResultTypeDef](./type_defs.md#createrouteresulttypedef).
+Returns
+[CreateRouteResultResponseTypeDef](./type_defs.md#createrouteresultresponsetypedef).
 
 ### create_route_response
+
+Creates a RouteResponse for a Route.
 
 Type annotations for `boto3.client("apigatewayv2").create_route_response`
 method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.create_route_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_route_response)
+
+Arguments mapping described in
+[CreateRouteResponseRequestTypeDef](./type_defs.md#createrouteresponserequesttypedef).
 
 Keyword-only arguments:
 
@@ -362,14 +416,19 @@ Keyword-only arguments:
   [ParameterConstraintsTypeDef](./type_defs.md#parameterconstraintstypedef)\]
 
 Returns
-[CreateRouteResponseResponseTypeDef](./type_defs.md#createrouteresponseresponsetypedef).
+[CreateRouteResponseResponseResponseTypeDef](./type_defs.md#createrouteresponseresponseresponsetypedef).
 
 ### create_stage
+
+Creates a Stage for an API.
 
 Type annotations for `boto3.client("apigatewayv2").create_stage` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.create_stage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_stage)
+
+Arguments mapping described in
+[CreateStageRequestTypeDef](./type_defs.md#createstagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -389,14 +448,19 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateStageResponseTypeDef](./type_defs.md#createstageresponsetypedef).
+[CreateStageResponseResponseTypeDef](./type_defs.md#createstageresponseresponsetypedef).
 
 ### create_vpc_link
+
+Creates a VPC link.
 
 Type annotations for `boto3.client("apigatewayv2").create_vpc_link` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.create_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.create_vpc_link)
+
+Arguments mapping described in
+[CreateVpcLinkRequestTypeDef](./type_defs.md#createvpclinkrequesttypedef).
 
 Keyword-only arguments:
 
@@ -406,15 +470,20 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateVpcLinkResponseTypeDef](./type_defs.md#createvpclinkresponsetypedef).
+[CreateVpcLinkResponseResponseTypeDef](./type_defs.md#createvpclinkresponseresponsetypedef).
 
 ### delete_access_log_settings
+
+Deletes the AccessLogSettings for a Stage.
 
 Type annotations for `boto3.client("apigatewayv2").delete_access_log_settings`
 method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.delete_access_log_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_access_log_settings)
+
+Arguments mapping described in
+[DeleteAccessLogSettingsRequestTypeDef](./type_defs.md#deleteaccesslogsettingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -423,10 +492,15 @@ Keyword-only arguments:
 
 ### delete_api
 
+Deletes an Api resource.
+
 Type annotations for `boto3.client("apigatewayv2").delete_api` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.delete_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_api)
+
+Arguments mapping described in
+[DeleteApiRequestTypeDef](./type_defs.md#deleteapirequesttypedef).
 
 Keyword-only arguments:
 
@@ -434,10 +508,15 @@ Keyword-only arguments:
 
 ### delete_api_mapping
 
+Deletes an API mapping.
+
 Type annotations for `boto3.client("apigatewayv2").delete_api_mapping` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.delete_api_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_api_mapping)
+
+Arguments mapping described in
+[DeleteApiMappingRequestTypeDef](./type_defs.md#deleteapimappingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -446,10 +525,15 @@ Keyword-only arguments:
 
 ### delete_authorizer
 
+Deletes an Authorizer.
+
 Type annotations for `boto3.client("apigatewayv2").delete_authorizer` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.delete_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_authorizer)
+
+Arguments mapping described in
+[DeleteAuthorizerRequestTypeDef](./type_defs.md#deleteauthorizerrequesttypedef).
 
 Keyword-only arguments:
 
@@ -458,11 +542,16 @@ Keyword-only arguments:
 
 ### delete_cors_configuration
 
+Deletes a CORS configuration.
+
 Type annotations for `boto3.client("apigatewayv2").delete_cors_configuration`
 method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.delete_cors_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_cors_configuration)
+
+Arguments mapping described in
+[DeleteCorsConfigurationRequestTypeDef](./type_defs.md#deletecorsconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -470,10 +559,15 @@ Keyword-only arguments:
 
 ### delete_deployment
 
+Deletes a Deployment.
+
 Type annotations for `boto3.client("apigatewayv2").delete_deployment` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.delete_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_deployment)
+
+Arguments mapping described in
+[DeleteDeploymentRequestTypeDef](./type_defs.md#deletedeploymentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -482,10 +576,15 @@ Keyword-only arguments:
 
 ### delete_domain_name
 
+Deletes a domain name.
+
 Type annotations for `boto3.client("apigatewayv2").delete_domain_name` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.delete_domain_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_domain_name)
+
+Arguments mapping described in
+[DeleteDomainNameRequestTypeDef](./type_defs.md#deletedomainnamerequesttypedef).
 
 Keyword-only arguments:
 
@@ -493,10 +592,15 @@ Keyword-only arguments:
 
 ### delete_integration
 
+Deletes an Integration.
+
 Type annotations for `boto3.client("apigatewayv2").delete_integration` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.delete_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_integration)
+
+Arguments mapping described in
+[DeleteIntegrationRequestTypeDef](./type_defs.md#deleteintegrationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -505,11 +609,16 @@ Keyword-only arguments:
 
 ### delete_integration_response
 
+Deletes an IntegrationResponses.
+
 Type annotations for `boto3.client("apigatewayv2").delete_integration_response`
 method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.delete_integration_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_integration_response)
+
+Arguments mapping described in
+[DeleteIntegrationResponseRequestTypeDef](./type_defs.md#deleteintegrationresponserequesttypedef).
 
 Keyword-only arguments:
 
@@ -519,10 +628,15 @@ Keyword-only arguments:
 
 ### delete_model
 
+Deletes a Model.
+
 Type annotations for `boto3.client("apigatewayv2").delete_model` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.delete_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_model)
+
+Arguments mapping described in
+[DeleteModelRequestTypeDef](./type_defs.md#deletemodelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -531,10 +645,15 @@ Keyword-only arguments:
 
 ### delete_route
 
+Deletes a Route.
+
 Type annotations for `boto3.client("apigatewayv2").delete_route` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.delete_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_route)
+
+Arguments mapping described in
+[DeleteRouteRequestTypeDef](./type_defs.md#deleterouterequesttypedef).
 
 Keyword-only arguments:
 
@@ -543,11 +662,16 @@ Keyword-only arguments:
 
 ### delete_route_request_parameter
 
+Deletes a route request parameter.
+
 Type annotations for
 `boto3.client("apigatewayv2").delete_route_request_parameter` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.delete_route_request_parameter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_route_request_parameter)
+
+Arguments mapping described in
+[DeleteRouteRequestParameterRequestTypeDef](./type_defs.md#deleterouterequestparameterrequesttypedef).
 
 Keyword-only arguments:
 
@@ -557,11 +681,16 @@ Keyword-only arguments:
 
 ### delete_route_response
 
+Deletes a RouteResponse.
+
 Type annotations for `boto3.client("apigatewayv2").delete_route_response`
 method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.delete_route_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_route_response)
+
+Arguments mapping described in
+[DeleteRouteResponseRequestTypeDef](./type_defs.md#deleterouteresponserequesttypedef).
 
 Keyword-only arguments:
 
@@ -571,11 +700,16 @@ Keyword-only arguments:
 
 ### delete_route_settings
 
+Deletes the RouteSettings for a stage.
+
 Type annotations for `boto3.client("apigatewayv2").delete_route_settings`
 method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.delete_route_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_route_settings)
+
+Arguments mapping described in
+[DeleteRouteSettingsRequestTypeDef](./type_defs.md#deleteroutesettingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -585,10 +719,15 @@ Keyword-only arguments:
 
 ### delete_stage
 
+Deletes a Stage.
+
 Type annotations for `boto3.client("apigatewayv2").delete_stage` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.delete_stage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_stage)
+
+Arguments mapping described in
+[DeleteStageRequestTypeDef](./type_defs.md#deletestagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -597,10 +736,15 @@ Keyword-only arguments:
 
 ### delete_vpc_link
 
+Deletes a VPC link.
+
 Type annotations for `boto3.client("apigatewayv2").delete_vpc_link` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.delete_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.delete_vpc_link)
+
+Arguments mapping described in
+[DeleteVpcLinkRequestTypeDef](./type_defs.md#deletevpclinkrequesttypedef).
 
 Keyword-only arguments:
 
@@ -610,10 +754,19 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### export_api
 
+See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/apigatewayv2-2018-11-29/ExportApi>`\_
+**Request Syntax** response = client.export_api( ApiId='string',
+ExportVersion='string', IncludeExtensions=True|False, OutputType='YAML'|'JSON',
+Sp...
+
 Type annotations for `boto3.client("apigatewayv2").export_api` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.export_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.export_api)
+
+Arguments mapping described in
+[ExportApiRequestTypeDef](./type_defs.md#exportapirequesttypedef).
 
 Keyword-only arguments:
 
@@ -625,9 +778,12 @@ Keyword-only arguments:
 - `IncludeExtensions`: `bool`
 - `StageName`: `str`
 
-Returns [ExportApiResponseTypeDef](./type_defs.md#exportapiresponsetypedef).
+Returns
+[ExportApiResponseResponseTypeDef](./type_defs.md#exportapiresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("apigatewayv2").generate_presigned_url`
 method.
@@ -646,23 +802,34 @@ Returns `str`.
 
 ### get_api
 
+Gets an Api resource.
+
 Type annotations for `boto3.client("apigatewayv2").get_api` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.get_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_api)
 
+Arguments mapping described in
+[GetApiRequestTypeDef](./type_defs.md#getapirequesttypedef).
+
 Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 
-Returns [GetApiResponseTypeDef](./type_defs.md#getapiresponsetypedef).
+Returns
+[GetApiResponseResponseTypeDef](./type_defs.md#getapiresponseresponsetypedef).
 
 ### get_api_mapping
+
+Gets an API mapping.
 
 Type annotations for `boto3.client("apigatewayv2").get_api_mapping` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.get_api_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_api_mapping)
+
+Arguments mapping described in
+[GetApiMappingRequestTypeDef](./type_defs.md#getapimappingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -670,14 +837,19 @@ Keyword-only arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[GetApiMappingResponseTypeDef](./type_defs.md#getapimappingresponsetypedef).
+[GetApiMappingResponseResponseTypeDef](./type_defs.md#getapimappingresponseresponsetypedef).
 
 ### get_api_mappings
+
+Gets API mappings.
 
 Type annotations for `boto3.client("apigatewayv2").get_api_mappings` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.get_api_mappings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_api_mappings)
+
+Arguments mapping described in
+[GetApiMappingsRequestTypeDef](./type_defs.md#getapimappingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -686,28 +858,39 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetApiMappingsResponseTypeDef](./type_defs.md#getapimappingsresponsetypedef).
+[GetApiMappingsResponseResponseTypeDef](./type_defs.md#getapimappingsresponseresponsetypedef).
 
 ### get_apis
+
+Gets a collection of Api resources.
 
 Type annotations for `boto3.client("apigatewayv2").get_apis` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.get_apis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_apis)
 
+Arguments mapping described in
+[GetApisRequestTypeDef](./type_defs.md#getapisrequesttypedef).
+
 Keyword-only arguments:
 
 - `MaxResults`: `str`
 - `NextToken`: `str`
 
-Returns [GetApisResponseTypeDef](./type_defs.md#getapisresponsetypedef).
+Returns
+[GetApisResponseResponseTypeDef](./type_defs.md#getapisresponseresponsetypedef).
 
 ### get_authorizer
+
+Gets an Authorizer.
 
 Type annotations for `boto3.client("apigatewayv2").get_authorizer` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.get_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_authorizer)
+
+Arguments mapping described in
+[GetAuthorizerRequestTypeDef](./type_defs.md#getauthorizerrequesttypedef).
 
 Keyword-only arguments:
 
@@ -715,14 +898,19 @@ Keyword-only arguments:
 - `AuthorizerId`: `str` *(required)*
 
 Returns
-[GetAuthorizerResponseTypeDef](./type_defs.md#getauthorizerresponsetypedef).
+[GetAuthorizerResponseResponseTypeDef](./type_defs.md#getauthorizerresponseresponsetypedef).
 
 ### get_authorizers
+
+Gets the Authorizers for an API.
 
 Type annotations for `boto3.client("apigatewayv2").get_authorizers` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.get_authorizers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_authorizers)
+
+Arguments mapping described in
+[GetAuthorizersRequestTypeDef](./type_defs.md#getauthorizersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -731,14 +919,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetAuthorizersResponseTypeDef](./type_defs.md#getauthorizersresponsetypedef).
+[GetAuthorizersResponseResponseTypeDef](./type_defs.md#getauthorizersresponseresponsetypedef).
 
 ### get_deployment
+
+Gets a Deployment.
 
 Type annotations for `boto3.client("apigatewayv2").get_deployment` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.get_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_deployment)
+
+Arguments mapping described in
+[GetDeploymentRequestTypeDef](./type_defs.md#getdeploymentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -746,14 +939,19 @@ Keyword-only arguments:
 - `DeploymentId`: `str` *(required)*
 
 Returns
-[GetDeploymentResponseTypeDef](./type_defs.md#getdeploymentresponsetypedef).
+[GetDeploymentResponseResponseTypeDef](./type_defs.md#getdeploymentresponseresponsetypedef).
 
 ### get_deployments
+
+Gets the Deployments for an API.
 
 Type annotations for `boto3.client("apigatewayv2").get_deployments` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.get_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_deployments)
+
+Arguments mapping described in
+[GetDeploymentsRequestTypeDef](./type_defs.md#getdeploymentsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -762,28 +960,38 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetDeploymentsResponseTypeDef](./type_defs.md#getdeploymentsresponsetypedef).
+[GetDeploymentsResponseResponseTypeDef](./type_defs.md#getdeploymentsresponseresponsetypedef).
 
 ### get_domain_name
+
+Gets a domain name.
 
 Type annotations for `boto3.client("apigatewayv2").get_domain_name` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.get_domain_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_domain_name)
 
+Arguments mapping described in
+[GetDomainNameRequestTypeDef](./type_defs.md#getdomainnamerequesttypedef).
+
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
 Returns
-[GetDomainNameResponseTypeDef](./type_defs.md#getdomainnameresponsetypedef).
+[GetDomainNameResponseResponseTypeDef](./type_defs.md#getdomainnameresponseresponsetypedef).
 
 ### get_domain_names
+
+Gets the domain names for an AWS account.
 
 Type annotations for `boto3.client("apigatewayv2").get_domain_names` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.get_domain_names](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_domain_names)
+
+Arguments mapping described in
+[GetDomainNamesRequestTypeDef](./type_defs.md#getdomainnamesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -791,14 +999,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetDomainNamesResponseTypeDef](./type_defs.md#getdomainnamesresponsetypedef).
+[GetDomainNamesResponseResponseTypeDef](./type_defs.md#getdomainnamesresponseresponsetypedef).
 
 ### get_integration
+
+Gets an Integration.
 
 Type annotations for `boto3.client("apigatewayv2").get_integration` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.get_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_integration)
+
+Arguments mapping described in
+[GetIntegrationRequestTypeDef](./type_defs.md#getintegrationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -806,15 +1019,20 @@ Keyword-only arguments:
 - `IntegrationId`: `str` *(required)*
 
 Returns
-[GetIntegrationResultTypeDef](./type_defs.md#getintegrationresulttypedef).
+[GetIntegrationResultResponseTypeDef](./type_defs.md#getintegrationresultresponsetypedef).
 
 ### get_integration_response
+
+Gets an IntegrationResponses.
 
 Type annotations for `boto3.client("apigatewayv2").get_integration_response`
 method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.get_integration_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_integration_response)
+
+Arguments mapping described in
+[GetIntegrationResponseRequestTypeDef](./type_defs.md#getintegrationresponserequesttypedef).
 
 Keyword-only arguments:
 
@@ -823,15 +1041,20 @@ Keyword-only arguments:
 - `IntegrationResponseId`: `str` *(required)*
 
 Returns
-[GetIntegrationResponseResponseTypeDef](./type_defs.md#getintegrationresponseresponsetypedef).
+[GetIntegrationResponseResponseResponseTypeDef](./type_defs.md#getintegrationresponseresponseresponsetypedef).
 
 ### get_integration_responses
+
+Gets the IntegrationResponses for an Integration.
 
 Type annotations for `boto3.client("apigatewayv2").get_integration_responses`
 method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.get_integration_responses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_integration_responses)
+
+Arguments mapping described in
+[GetIntegrationResponsesRequestTypeDef](./type_defs.md#getintegrationresponsesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -841,15 +1064,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetIntegrationResponsesResponseTypeDef](./type_defs.md#getintegrationresponsesresponsetypedef).
+[GetIntegrationResponsesResponseResponseTypeDef](./type_defs.md#getintegrationresponsesresponseresponsetypedef).
 
 ### get_integrations
+
+Gets the Integrations for an API.
 
 Type annotations for `boto3.client("apigatewayv2").get_integrations` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.get_integrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_integrations)
 
+Arguments mapping described in
+[GetIntegrationsRequestTypeDef](./type_defs.md#getintegrationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
@@ -857,28 +1085,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetIntegrationsResponseTypeDef](./type_defs.md#getintegrationsresponsetypedef).
+[GetIntegrationsResponseResponseTypeDef](./type_defs.md#getintegrationsresponseresponsetypedef).
 
 ### get_model
+
+Gets a Model.
 
 Type annotations for `boto3.client("apigatewayv2").get_model` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.get_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_model)
 
-Keyword-only arguments:
-
-- `ApiId`: `str` *(required)*
-- `ModelId`: `str` *(required)*
-
-Returns [GetModelResponseTypeDef](./type_defs.md#getmodelresponsetypedef).
-
-### get_model_template
-
-Type annotations for `boto3.client("apigatewayv2").get_model_template` method.
-
-Boto3 documentation:
-[ApiGatewayV2.Client.get_model_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_model_template)
+Arguments mapping described in
+[GetModelRequestTypeDef](./type_defs.md#getmodelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -886,14 +1105,39 @@ Keyword-only arguments:
 - `ModelId`: `str` *(required)*
 
 Returns
-[GetModelTemplateResponseTypeDef](./type_defs.md#getmodeltemplateresponsetypedef).
+[GetModelResponseResponseTypeDef](./type_defs.md#getmodelresponseresponsetypedef).
+
+### get_model_template
+
+Gets a model template.
+
+Type annotations for `boto3.client("apigatewayv2").get_model_template` method.
+
+Boto3 documentation:
+[ApiGatewayV2.Client.get_model_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_model_template)
+
+Arguments mapping described in
+[GetModelTemplateRequestTypeDef](./type_defs.md#getmodeltemplaterequesttypedef).
+
+Keyword-only arguments:
+
+- `ApiId`: `str` *(required)*
+- `ModelId`: `str` *(required)*
+
+Returns
+[GetModelTemplateResponseResponseTypeDef](./type_defs.md#getmodeltemplateresponseresponsetypedef).
 
 ### get_models
+
+Gets the Models for an API.
 
 Type annotations for `boto3.client("apigatewayv2").get_models` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.get_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_models)
+
+Arguments mapping described in
+[GetModelsRequestTypeDef](./type_defs.md#getmodelsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -901,28 +1145,40 @@ Keyword-only arguments:
 - `MaxResults`: `str`
 - `NextToken`: `str`
 
-Returns [GetModelsResponseTypeDef](./type_defs.md#getmodelsresponsetypedef).
+Returns
+[GetModelsResponseResponseTypeDef](./type_defs.md#getmodelsresponseresponsetypedef).
 
 ### get_route
+
+Gets a Route.
 
 Type annotations for `boto3.client("apigatewayv2").get_route` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.get_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_route)
 
+Arguments mapping described in
+[GetRouteRequestTypeDef](./type_defs.md#getrouterequesttypedef).
+
 Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `RouteId`: `str` *(required)*
 
-Returns [GetRouteResultTypeDef](./type_defs.md#getrouteresulttypedef).
+Returns
+[GetRouteResultResponseTypeDef](./type_defs.md#getrouteresultresponsetypedef).
 
 ### get_route_response
+
+Gets a RouteResponse.
 
 Type annotations for `boto3.client("apigatewayv2").get_route_response` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.get_route_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_route_response)
+
+Arguments mapping described in
+[GetRouteResponseRequestTypeDef](./type_defs.md#getrouteresponserequesttypedef).
 
 Keyword-only arguments:
 
@@ -931,14 +1187,19 @@ Keyword-only arguments:
 - `RouteResponseId`: `str` *(required)*
 
 Returns
-[GetRouteResponseResponseTypeDef](./type_defs.md#getrouteresponseresponsetypedef).
+[GetRouteResponseResponseResponseTypeDef](./type_defs.md#getrouteresponseresponseresponsetypedef).
 
 ### get_route_responses
+
+Gets the RouteResponses for a Route.
 
 Type annotations for `boto3.client("apigatewayv2").get_route_responses` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.get_route_responses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_route_responses)
+
+Arguments mapping described in
+[GetRouteResponsesRequestTypeDef](./type_defs.md#getrouteresponsesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -948,84 +1209,119 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetRouteResponsesResponseTypeDef](./type_defs.md#getrouteresponsesresponsetypedef).
+[GetRouteResponsesResponseResponseTypeDef](./type_defs.md#getrouteresponsesresponseresponsetypedef).
 
 ### get_routes
+
+Gets the Routes for an API.
 
 Type annotations for `boto3.client("apigatewayv2").get_routes` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.get_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_routes)
 
+Arguments mapping described in
+[GetRoutesRequestTypeDef](./type_defs.md#getroutesrequesttypedef).
+
 Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `MaxResults`: `str`
 - `NextToken`: `str`
 
-Returns [GetRoutesResponseTypeDef](./type_defs.md#getroutesresponsetypedef).
+Returns
+[GetRoutesResponseResponseTypeDef](./type_defs.md#getroutesresponseresponsetypedef).
 
 ### get_stage
+
+Gets a Stage.
 
 Type annotations for `boto3.client("apigatewayv2").get_stage` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.get_stage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_stage)
 
+Arguments mapping described in
+[GetStageRequestTypeDef](./type_defs.md#getstagerequesttypedef).
+
 Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `StageName`: `str` *(required)*
 
-Returns [GetStageResponseTypeDef](./type_defs.md#getstageresponsetypedef).
+Returns
+[GetStageResponseResponseTypeDef](./type_defs.md#getstageresponseresponsetypedef).
 
 ### get_stages
+
+Gets the Stages for an API.
 
 Type annotations for `boto3.client("apigatewayv2").get_stages` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.get_stages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_stages)
 
+Arguments mapping described in
+[GetStagesRequestTypeDef](./type_defs.md#getstagesrequesttypedef).
+
 Keyword-only arguments:
 
 - `ApiId`: `str` *(required)*
 - `MaxResults`: `str`
 - `NextToken`: `str`
 
-Returns [GetStagesResponseTypeDef](./type_defs.md#getstagesresponsetypedef).
+Returns
+[GetStagesResponseResponseTypeDef](./type_defs.md#getstagesresponseresponsetypedef).
 
 ### get_tags
+
+Gets a collection of Tag resources.
 
 Type annotations for `boto3.client("apigatewayv2").get_tags` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.get_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_tags)
 
+Arguments mapping described in
+[GetTagsRequestTypeDef](./type_defs.md#gettagsrequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
-Returns [GetTagsResponseTypeDef](./type_defs.md#gettagsresponsetypedef).
+Returns
+[GetTagsResponseResponseTypeDef](./type_defs.md#gettagsresponseresponsetypedef).
 
 ### get_vpc_link
+
+Gets a VPC link.
 
 Type annotations for `boto3.client("apigatewayv2").get_vpc_link` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.get_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_vpc_link)
 
+Arguments mapping described in
+[GetVpcLinkRequestTypeDef](./type_defs.md#getvpclinkrequesttypedef).
+
 Keyword-only arguments:
 
 - `VpcLinkId`: `str` *(required)*
 
-Returns [GetVpcLinkResponseTypeDef](./type_defs.md#getvpclinkresponsetypedef).
+Returns
+[GetVpcLinkResponseResponseTypeDef](./type_defs.md#getvpclinkresponseresponsetypedef).
 
 ### get_vpc_links
+
+Gets a collection of VPC links.
 
 Type annotations for `boto3.client("apigatewayv2").get_vpc_links` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.get_vpc_links](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.get_vpc_links)
+
+Arguments mapping described in
+[GetVpcLinksRequestTypeDef](./type_defs.md#getvpclinksrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1033,14 +1329,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetVpcLinksResponseTypeDef](./type_defs.md#getvpclinksresponsetypedef).
+[GetVpcLinksResponseResponseTypeDef](./type_defs.md#getvpclinksresponseresponsetypedef).
 
 ### import_api
+
+Imports an API.
 
 Type annotations for `boto3.client("apigatewayv2").import_api` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.import_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.import_api)
+
+Arguments mapping described in
+[ImportApiRequestTypeDef](./type_defs.md#importapirequesttypedef).
 
 Keyword-only arguments:
 
@@ -1048,14 +1349,20 @@ Keyword-only arguments:
 - `Basepath`: `str`
 - `FailOnWarnings`: `bool`
 
-Returns [ImportApiResponseTypeDef](./type_defs.md#importapiresponsetypedef).
+Returns
+[ImportApiResponseResponseTypeDef](./type_defs.md#importapiresponseresponsetypedef).
 
 ### reimport_api
+
+Puts an Api resource.
 
 Type annotations for `boto3.client("apigatewayv2").reimport_api` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.reimport_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.reimport_api)
+
+Arguments mapping described in
+[ReimportApiRequestTypeDef](./type_defs.md#reimportapirequesttypedef).
 
 Keyword-only arguments:
 
@@ -1065,15 +1372,20 @@ Keyword-only arguments:
 - `FailOnWarnings`: `bool`
 
 Returns
-[ReimportApiResponseTypeDef](./type_defs.md#reimportapiresponsetypedef).
+[ReimportApiResponseResponseTypeDef](./type_defs.md#reimportapiresponseresponsetypedef).
 
 ### reset_authorizers_cache
+
+Resets all authorizer cache entries on a stage.
 
 Type annotations for `boto3.client("apigatewayv2").reset_authorizers_cache`
 method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.reset_authorizers_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.reset_authorizers_cache)
+
+Arguments mapping described in
+[ResetAuthorizersCacheRequestTypeDef](./type_defs.md#resetauthorizerscacherequesttypedef).
 
 Keyword-only arguments:
 
@@ -1082,10 +1394,15 @@ Keyword-only arguments:
 
 ### tag_resource
 
+Creates a new Tag resource to represent a tag.
+
 Type annotations for `boto3.client("apigatewayv2").tag_resource` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1096,10 +1413,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Deletes a Tag.
+
 Type annotations for `boto3.client("apigatewayv2").untag_resource` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1108,10 +1430,15 @@ Keyword-only arguments:
 
 ### update_api
 
+Updates an Api resource.
+
 Type annotations for `boto3.client("apigatewayv2").update_api` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.update_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_api)
+
+Arguments mapping described in
+[UpdateApiRequestTypeDef](./type_defs.md#updateapirequesttypedef).
 
 Keyword-only arguments:
 
@@ -1128,14 +1455,20 @@ Keyword-only arguments:
 - `Target`: `str`
 - `Version`: `str`
 
-Returns [UpdateApiResponseTypeDef](./type_defs.md#updateapiresponsetypedef).
+Returns
+[UpdateApiResponseResponseTypeDef](./type_defs.md#updateapiresponseresponsetypedef).
 
 ### update_api_mapping
+
+The API mapping.
 
 Type annotations for `boto3.client("apigatewayv2").update_api_mapping` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.update_api_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_api_mapping)
+
+Arguments mapping described in
+[UpdateApiMappingRequestTypeDef](./type_defs.md#updateapimappingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1146,14 +1479,19 @@ Keyword-only arguments:
 - `Stage`: `str`
 
 Returns
-[UpdateApiMappingResponseTypeDef](./type_defs.md#updateapimappingresponsetypedef).
+[UpdateApiMappingResponseResponseTypeDef](./type_defs.md#updateapimappingresponseresponsetypedef).
 
 ### update_authorizer
+
+Updates an Authorizer.
 
 Type annotations for `boto3.client("apigatewayv2").update_authorizer` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.update_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_authorizer)
+
+Arguments mapping described in
+[UpdateAuthorizerRequestTypeDef](./type_defs.md#updateauthorizerrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1172,14 +1510,19 @@ Keyword-only arguments:
 - `Name`: `str`
 
 Returns
-[UpdateAuthorizerResponseTypeDef](./type_defs.md#updateauthorizerresponsetypedef).
+[UpdateAuthorizerResponseResponseTypeDef](./type_defs.md#updateauthorizerresponseresponsetypedef).
 
 ### update_deployment
+
+Updates a Deployment.
 
 Type annotations for `boto3.client("apigatewayv2").update_deployment` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.update_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_deployment)
+
+Arguments mapping described in
+[UpdateDeploymentRequestTypeDef](./type_defs.md#updatedeploymentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1188,14 +1531,19 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[UpdateDeploymentResponseTypeDef](./type_defs.md#updatedeploymentresponsetypedef).
+[UpdateDeploymentResponseResponseTypeDef](./type_defs.md#updatedeploymentresponseresponsetypedef).
 
 ### update_domain_name
+
+Updates a domain name.
 
 Type annotations for `boto3.client("apigatewayv2").update_domain_name` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.update_domain_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_domain_name)
+
+Arguments mapping described in
+[UpdateDomainNameRequestTypeDef](./type_defs.md#updatedomainnamerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1206,14 +1554,19 @@ Keyword-only arguments:
   [MutualTlsAuthenticationInputTypeDef](./type_defs.md#mutualtlsauthenticationinputtypedef)
 
 Returns
-[UpdateDomainNameResponseTypeDef](./type_defs.md#updatedomainnameresponsetypedef).
+[UpdateDomainNameResponseResponseTypeDef](./type_defs.md#updatedomainnameresponseresponsetypedef).
 
 ### update_integration
+
+Updates an Integration.
 
 Type annotations for `boto3.client("apigatewayv2").update_integration` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.update_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_integration)
+
+Arguments mapping described in
+[UpdateIntegrationRequestTypeDef](./type_defs.md#updateintegrationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1240,15 +1593,20 @@ Keyword-only arguments:
 - `TlsConfig`: [TlsConfigInputTypeDef](./type_defs.md#tlsconfiginputtypedef)
 
 Returns
-[UpdateIntegrationResultTypeDef](./type_defs.md#updateintegrationresulttypedef).
+[UpdateIntegrationResultResponseTypeDef](./type_defs.md#updateintegrationresultresponsetypedef).
 
 ### update_integration_response
+
+Updates an IntegrationResponses.
 
 Type annotations for `boto3.client("apigatewayv2").update_integration_response`
 method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.update_integration_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_integration_response)
+
+Arguments mapping described in
+[UpdateIntegrationResponseRequestTypeDef](./type_defs.md#updateintegrationresponserequesttypedef).
 
 Keyword-only arguments:
 
@@ -1263,14 +1621,19 @@ Keyword-only arguments:
 - `TemplateSelectionExpression`: `str`
 
 Returns
-[UpdateIntegrationResponseResponseTypeDef](./type_defs.md#updateintegrationresponseresponsetypedef).
+[UpdateIntegrationResponseResponseResponseTypeDef](./type_defs.md#updateintegrationresponseresponseresponsetypedef).
 
 ### update_model
+
+Updates a Model.
 
 Type annotations for `boto3.client("apigatewayv2").update_model` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.update_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_model)
+
+Arguments mapping described in
+[UpdateModelRequestTypeDef](./type_defs.md#updatemodelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1282,14 +1645,19 @@ Keyword-only arguments:
 - `Schema`: `str`
 
 Returns
-[UpdateModelResponseTypeDef](./type_defs.md#updatemodelresponsetypedef).
+[UpdateModelResponseResponseTypeDef](./type_defs.md#updatemodelresponseresponsetypedef).
 
 ### update_route
+
+Updates a Route.
 
 Type annotations for `boto3.client("apigatewayv2").update_route` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.update_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_route)
+
+Arguments mapping described in
+[UpdateRouteRequestTypeDef](./type_defs.md#updaterouterequesttypedef).
 
 Keyword-only arguments:
 
@@ -1309,15 +1677,21 @@ Keyword-only arguments:
 - `RouteResponseSelectionExpression`: `str`
 - `Target`: `str`
 
-Returns [UpdateRouteResultTypeDef](./type_defs.md#updaterouteresulttypedef).
+Returns
+[UpdateRouteResultResponseTypeDef](./type_defs.md#updaterouteresultresponsetypedef).
 
 ### update_route_response
+
+Updates a RouteResponse.
 
 Type annotations for `boto3.client("apigatewayv2").update_route_response`
 method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.update_route_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_route_response)
+
+Arguments mapping described in
+[UpdateRouteResponseRequestTypeDef](./type_defs.md#updaterouteresponserequesttypedef).
 
 Keyword-only arguments:
 
@@ -1331,14 +1705,19 @@ Keyword-only arguments:
 - `RouteResponseKey`: `str`
 
 Returns
-[UpdateRouteResponseResponseTypeDef](./type_defs.md#updaterouteresponseresponsetypedef).
+[UpdateRouteResponseResponseResponseTypeDef](./type_defs.md#updaterouteresponseresponseresponsetypedef).
 
 ### update_stage
+
+Updates a Stage.
 
 Type annotations for `boto3.client("apigatewayv2").update_stage` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.update_stage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_stage)
+
+Arguments mapping described in
+[UpdateStageRequestTypeDef](./type_defs.md#updatestagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1357,14 +1736,19 @@ Keyword-only arguments:
 - `StageVariables`: `Dict`\[`str`, `str`\]
 
 Returns
-[UpdateStageResponseTypeDef](./type_defs.md#updatestageresponsetypedef).
+[UpdateStageResponseResponseTypeDef](./type_defs.md#updatestageresponseresponsetypedef).
 
 ### update_vpc_link
+
+Updates a VPC link.
 
 Type annotations for `boto3.client("apigatewayv2").update_vpc_link` method.
 
 Boto3 documentation:
 [ApiGatewayV2.Client.update_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Client.update_vpc_link)
+
+Arguments mapping described in
+[UpdateVpcLinkRequestTypeDef](./type_defs.md#updatevpclinkrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1372,7 +1756,7 @@ Keyword-only arguments:
 - `Name`: `str`
 
 Returns
-[UpdateVpcLinkResponseTypeDef](./type_defs.md#updatevpclinkresponsetypedef).
+[UpdateVpcLinkResponseResponseTypeDef](./type_defs.md#updatevpclinkresponseresponsetypedef).
 
 ### get_paginator
 

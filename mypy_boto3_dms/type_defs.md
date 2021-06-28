@@ -9,45 +9,82 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 DatabaseMigrationService module](#typed-dictionaries-for-boto3-databasemigrationservice-module)
   - [AccountQuotaTypeDef](#accountquotatypedef)
-  - [ApplyPendingMaintenanceActionResponseTypeDef](#applypendingmaintenanceactionresponsetypedef)
+  - [AddTagsToResourceMessageTypeDef](#addtagstoresourcemessagetypedef)
+  - [ApplyPendingMaintenanceActionMessageTypeDef](#applypendingmaintenanceactionmessagetypedef)
+  - [ApplyPendingMaintenanceActionResponseResponseTypeDef](#applypendingmaintenanceactionresponseresponsetypedef)
   - [AvailabilityZoneTypeDef](#availabilityzonetypedef)
-  - [CancelReplicationTaskAssessmentRunResponseTypeDef](#cancelreplicationtaskassessmentrunresponsetypedef)
+  - [CancelReplicationTaskAssessmentRunMessageTypeDef](#cancelreplicationtaskassessmentrunmessagetypedef)
+  - [CancelReplicationTaskAssessmentRunResponseResponseTypeDef](#cancelreplicationtaskassessmentrunresponseresponsetypedef)
   - [CertificateTypeDef](#certificatetypedef)
   - [ConnectionTypeDef](#connectiontypedef)
-  - [CreateEndpointResponseTypeDef](#createendpointresponsetypedef)
-  - [CreateEventSubscriptionResponseTypeDef](#createeventsubscriptionresponsetypedef)
-  - [CreateReplicationInstanceResponseTypeDef](#createreplicationinstanceresponsetypedef)
-  - [CreateReplicationSubnetGroupResponseTypeDef](#createreplicationsubnetgroupresponsetypedef)
-  - [CreateReplicationTaskResponseTypeDef](#createreplicationtaskresponsetypedef)
-  - [DeleteCertificateResponseTypeDef](#deletecertificateresponsetypedef)
-  - [DeleteConnectionResponseTypeDef](#deleteconnectionresponsetypedef)
-  - [DeleteEndpointResponseTypeDef](#deleteendpointresponsetypedef)
-  - [DeleteEventSubscriptionResponseTypeDef](#deleteeventsubscriptionresponsetypedef)
-  - [DeleteReplicationInstanceResponseTypeDef](#deletereplicationinstanceresponsetypedef)
-  - [DeleteReplicationTaskAssessmentRunResponseTypeDef](#deletereplicationtaskassessmentrunresponsetypedef)
-  - [DeleteReplicationTaskResponseTypeDef](#deletereplicationtaskresponsetypedef)
-  - [DescribeAccountAttributesResponseTypeDef](#describeaccountattributesresponsetypedef)
-  - [DescribeApplicableIndividualAssessmentsResponseTypeDef](#describeapplicableindividualassessmentsresponsetypedef)
-  - [DescribeCertificatesResponseTypeDef](#describecertificatesresponsetypedef)
-  - [DescribeConnectionsResponseTypeDef](#describeconnectionsresponsetypedef)
-  - [DescribeEndpointSettingsResponseTypeDef](#describeendpointsettingsresponsetypedef)
-  - [DescribeEndpointTypesResponseTypeDef](#describeendpointtypesresponsetypedef)
-  - [DescribeEndpointsResponseTypeDef](#describeendpointsresponsetypedef)
-  - [DescribeEventCategoriesResponseTypeDef](#describeeventcategoriesresponsetypedef)
-  - [DescribeEventSubscriptionsResponseTypeDef](#describeeventsubscriptionsresponsetypedef)
-  - [DescribeEventsResponseTypeDef](#describeeventsresponsetypedef)
-  - [DescribeOrderableReplicationInstancesResponseTypeDef](#describeorderablereplicationinstancesresponsetypedef)
-  - [DescribePendingMaintenanceActionsResponseTypeDef](#describependingmaintenanceactionsresponsetypedef)
-  - [DescribeRefreshSchemasStatusResponseTypeDef](#describerefreshschemasstatusresponsetypedef)
-  - [DescribeReplicationInstanceTaskLogsResponseTypeDef](#describereplicationinstancetasklogsresponsetypedef)
-  - [DescribeReplicationInstancesResponseTypeDef](#describereplicationinstancesresponsetypedef)
-  - [DescribeReplicationSubnetGroupsResponseTypeDef](#describereplicationsubnetgroupsresponsetypedef)
-  - [DescribeReplicationTaskAssessmentResultsResponseTypeDef](#describereplicationtaskassessmentresultsresponsetypedef)
-  - [DescribeReplicationTaskAssessmentRunsResponseTypeDef](#describereplicationtaskassessmentrunsresponsetypedef)
-  - [DescribeReplicationTaskIndividualAssessmentsResponseTypeDef](#describereplicationtaskindividualassessmentsresponsetypedef)
-  - [DescribeReplicationTasksResponseTypeDef](#describereplicationtasksresponsetypedef)
-  - [DescribeSchemasResponseTypeDef](#describeschemasresponsetypedef)
-  - [DescribeTableStatisticsResponseTypeDef](#describetablestatisticsresponsetypedef)
+  - [CreateEndpointMessageTypeDef](#createendpointmessagetypedef)
+  - [CreateEndpointResponseResponseTypeDef](#createendpointresponseresponsetypedef)
+  - [CreateEventSubscriptionMessageTypeDef](#createeventsubscriptionmessagetypedef)
+  - [CreateEventSubscriptionResponseResponseTypeDef](#createeventsubscriptionresponseresponsetypedef)
+  - [CreateReplicationInstanceMessageTypeDef](#createreplicationinstancemessagetypedef)
+  - [CreateReplicationInstanceResponseResponseTypeDef](#createreplicationinstanceresponseresponsetypedef)
+  - [CreateReplicationSubnetGroupMessageTypeDef](#createreplicationsubnetgroupmessagetypedef)
+  - [CreateReplicationSubnetGroupResponseResponseTypeDef](#createreplicationsubnetgroupresponseresponsetypedef)
+  - [CreateReplicationTaskMessageTypeDef](#createreplicationtaskmessagetypedef)
+  - [CreateReplicationTaskResponseResponseTypeDef](#createreplicationtaskresponseresponsetypedef)
+  - [DeleteCertificateMessageTypeDef](#deletecertificatemessagetypedef)
+  - [DeleteCertificateResponseResponseTypeDef](#deletecertificateresponseresponsetypedef)
+  - [DeleteConnectionMessageTypeDef](#deleteconnectionmessagetypedef)
+  - [DeleteConnectionResponseResponseTypeDef](#deleteconnectionresponseresponsetypedef)
+  - [DeleteEndpointMessageTypeDef](#deleteendpointmessagetypedef)
+  - [DeleteEndpointResponseResponseTypeDef](#deleteendpointresponseresponsetypedef)
+  - [DeleteEventSubscriptionMessageTypeDef](#deleteeventsubscriptionmessagetypedef)
+  - [DeleteEventSubscriptionResponseResponseTypeDef](#deleteeventsubscriptionresponseresponsetypedef)
+  - [DeleteReplicationInstanceMessageTypeDef](#deletereplicationinstancemessagetypedef)
+  - [DeleteReplicationInstanceResponseResponseTypeDef](#deletereplicationinstanceresponseresponsetypedef)
+  - [DeleteReplicationSubnetGroupMessageTypeDef](#deletereplicationsubnetgroupmessagetypedef)
+  - [DeleteReplicationTaskAssessmentRunMessageTypeDef](#deletereplicationtaskassessmentrunmessagetypedef)
+  - [DeleteReplicationTaskAssessmentRunResponseResponseTypeDef](#deletereplicationtaskassessmentrunresponseresponsetypedef)
+  - [DeleteReplicationTaskMessageTypeDef](#deletereplicationtaskmessagetypedef)
+  - [DeleteReplicationTaskResponseResponseTypeDef](#deletereplicationtaskresponseresponsetypedef)
+  - [DescribeAccountAttributesResponseResponseTypeDef](#describeaccountattributesresponseresponsetypedef)
+  - [DescribeApplicableIndividualAssessmentsMessageTypeDef](#describeapplicableindividualassessmentsmessagetypedef)
+  - [DescribeApplicableIndividualAssessmentsResponseResponseTypeDef](#describeapplicableindividualassessmentsresponseresponsetypedef)
+  - [DescribeCertificatesMessageTypeDef](#describecertificatesmessagetypedef)
+  - [DescribeCertificatesResponseResponseTypeDef](#describecertificatesresponseresponsetypedef)
+  - [DescribeConnectionsMessageTypeDef](#describeconnectionsmessagetypedef)
+  - [DescribeConnectionsResponseResponseTypeDef](#describeconnectionsresponseresponsetypedef)
+  - [DescribeEndpointSettingsMessageTypeDef](#describeendpointsettingsmessagetypedef)
+  - [DescribeEndpointSettingsResponseResponseTypeDef](#describeendpointsettingsresponseresponsetypedef)
+  - [DescribeEndpointTypesMessageTypeDef](#describeendpointtypesmessagetypedef)
+  - [DescribeEndpointTypesResponseResponseTypeDef](#describeendpointtypesresponseresponsetypedef)
+  - [DescribeEndpointsMessageTypeDef](#describeendpointsmessagetypedef)
+  - [DescribeEndpointsResponseResponseTypeDef](#describeendpointsresponseresponsetypedef)
+  - [DescribeEventCategoriesMessageTypeDef](#describeeventcategoriesmessagetypedef)
+  - [DescribeEventCategoriesResponseResponseTypeDef](#describeeventcategoriesresponseresponsetypedef)
+  - [DescribeEventSubscriptionsMessageTypeDef](#describeeventsubscriptionsmessagetypedef)
+  - [DescribeEventSubscriptionsResponseResponseTypeDef](#describeeventsubscriptionsresponseresponsetypedef)
+  - [DescribeEventsMessageTypeDef](#describeeventsmessagetypedef)
+  - [DescribeEventsResponseResponseTypeDef](#describeeventsresponseresponsetypedef)
+  - [DescribeOrderableReplicationInstancesMessageTypeDef](#describeorderablereplicationinstancesmessagetypedef)
+  - [DescribeOrderableReplicationInstancesResponseResponseTypeDef](#describeorderablereplicationinstancesresponseresponsetypedef)
+  - [DescribePendingMaintenanceActionsMessageTypeDef](#describependingmaintenanceactionsmessagetypedef)
+  - [DescribePendingMaintenanceActionsResponseResponseTypeDef](#describependingmaintenanceactionsresponseresponsetypedef)
+  - [DescribeRefreshSchemasStatusMessageTypeDef](#describerefreshschemasstatusmessagetypedef)
+  - [DescribeRefreshSchemasStatusResponseResponseTypeDef](#describerefreshschemasstatusresponseresponsetypedef)
+  - [DescribeReplicationInstanceTaskLogsMessageTypeDef](#describereplicationinstancetasklogsmessagetypedef)
+  - [DescribeReplicationInstanceTaskLogsResponseResponseTypeDef](#describereplicationinstancetasklogsresponseresponsetypedef)
+  - [DescribeReplicationInstancesMessageTypeDef](#describereplicationinstancesmessagetypedef)
+  - [DescribeReplicationInstancesResponseResponseTypeDef](#describereplicationinstancesresponseresponsetypedef)
+  - [DescribeReplicationSubnetGroupsMessageTypeDef](#describereplicationsubnetgroupsmessagetypedef)
+  - [DescribeReplicationSubnetGroupsResponseResponseTypeDef](#describereplicationsubnetgroupsresponseresponsetypedef)
+  - [DescribeReplicationTaskAssessmentResultsMessageTypeDef](#describereplicationtaskassessmentresultsmessagetypedef)
+  - [DescribeReplicationTaskAssessmentResultsResponseResponseTypeDef](#describereplicationtaskassessmentresultsresponseresponsetypedef)
+  - [DescribeReplicationTaskAssessmentRunsMessageTypeDef](#describereplicationtaskassessmentrunsmessagetypedef)
+  - [DescribeReplicationTaskAssessmentRunsResponseResponseTypeDef](#describereplicationtaskassessmentrunsresponseresponsetypedef)
+  - [DescribeReplicationTaskIndividualAssessmentsMessageTypeDef](#describereplicationtaskindividualassessmentsmessagetypedef)
+  - [DescribeReplicationTaskIndividualAssessmentsResponseResponseTypeDef](#describereplicationtaskindividualassessmentsresponseresponsetypedef)
+  - [DescribeReplicationTasksMessageTypeDef](#describereplicationtasksmessagetypedef)
+  - [DescribeReplicationTasksResponseResponseTypeDef](#describereplicationtasksresponseresponsetypedef)
+  - [DescribeSchemasMessageTypeDef](#describeschemasmessagetypedef)
+  - [DescribeSchemasResponseResponseTypeDef](#describeschemasresponseresponsetypedef)
+  - [DescribeTableStatisticsMessageTypeDef](#describetablestatisticsmessagetypedef)
+  - [DescribeTableStatisticsResponseResponseTypeDef](#describetablestatisticsresponseresponsetypedef)
   - [DmsTransferSettingsTypeDef](#dmstransfersettingstypedef)
   - [DocDbSettingsTypeDef](#docdbsettingstypedef)
   - [DynamoDbSettingsTypeDef](#dynamodbsettingstypedef)
@@ -59,18 +96,26 @@ type annotations stubs module
   - [EventTypeDef](#eventtypedef)
   - [FilterTypeDef](#filtertypedef)
   - [IBMDb2SettingsTypeDef](#ibmdb2settingstypedef)
-  - [ImportCertificateResponseTypeDef](#importcertificateresponsetypedef)
+  - [ImportCertificateMessageTypeDef](#importcertificatemessagetypedef)
+  - [ImportCertificateResponseResponseTypeDef](#importcertificateresponseresponsetypedef)
   - [KafkaSettingsTypeDef](#kafkasettingstypedef)
   - [KinesisSettingsTypeDef](#kinesissettingstypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListTagsForResourceMessageTypeDef](#listtagsforresourcemessagetypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [MicrosoftSQLServerSettingsTypeDef](#microsoftsqlserversettingstypedef)
-  - [ModifyEndpointResponseTypeDef](#modifyendpointresponsetypedef)
-  - [ModifyEventSubscriptionResponseTypeDef](#modifyeventsubscriptionresponsetypedef)
-  - [ModifyReplicationInstanceResponseTypeDef](#modifyreplicationinstanceresponsetypedef)
-  - [ModifyReplicationSubnetGroupResponseTypeDef](#modifyreplicationsubnetgroupresponsetypedef)
-  - [ModifyReplicationTaskResponseTypeDef](#modifyreplicationtaskresponsetypedef)
+  - [ModifyEndpointMessageTypeDef](#modifyendpointmessagetypedef)
+  - [ModifyEndpointResponseResponseTypeDef](#modifyendpointresponseresponsetypedef)
+  - [ModifyEventSubscriptionMessageTypeDef](#modifyeventsubscriptionmessagetypedef)
+  - [ModifyEventSubscriptionResponseResponseTypeDef](#modifyeventsubscriptionresponseresponsetypedef)
+  - [ModifyReplicationInstanceMessageTypeDef](#modifyreplicationinstancemessagetypedef)
+  - [ModifyReplicationInstanceResponseResponseTypeDef](#modifyreplicationinstanceresponseresponsetypedef)
+  - [ModifyReplicationSubnetGroupMessageTypeDef](#modifyreplicationsubnetgroupmessagetypedef)
+  - [ModifyReplicationSubnetGroupResponseResponseTypeDef](#modifyreplicationsubnetgroupresponseresponsetypedef)
+  - [ModifyReplicationTaskMessageTypeDef](#modifyreplicationtaskmessagetypedef)
+  - [ModifyReplicationTaskResponseResponseTypeDef](#modifyreplicationtaskresponseresponsetypedef)
   - [MongoDbSettingsTypeDef](#mongodbsettingstypedef)
-  - [MoveReplicationTaskResponseTypeDef](#movereplicationtaskresponsetypedef)
+  - [MoveReplicationTaskMessageTypeDef](#movereplicationtaskmessagetypedef)
+  - [MoveReplicationTaskResponseResponseTypeDef](#movereplicationtaskresponseresponsetypedef)
   - [MySQLSettingsTypeDef](#mysqlsettingstypedef)
   - [NeptuneSettingsTypeDef](#neptunesettingstypedef)
   - [OracleSettingsTypeDef](#oraclesettingstypedef)
@@ -78,11 +123,15 @@ type annotations stubs module
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PendingMaintenanceActionTypeDef](#pendingmaintenanceactiontypedef)
   - [PostgreSQLSettingsTypeDef](#postgresqlsettingstypedef)
-  - [RebootReplicationInstanceResponseTypeDef](#rebootreplicationinstanceresponsetypedef)
+  - [RebootReplicationInstanceMessageTypeDef](#rebootreplicationinstancemessagetypedef)
+  - [RebootReplicationInstanceResponseResponseTypeDef](#rebootreplicationinstanceresponseresponsetypedef)
   - [RedshiftSettingsTypeDef](#redshiftsettingstypedef)
-  - [RefreshSchemasResponseTypeDef](#refreshschemasresponsetypedef)
+  - [RefreshSchemasMessageTypeDef](#refreshschemasmessagetypedef)
+  - [RefreshSchemasResponseResponseTypeDef](#refreshschemasresponseresponsetypedef)
   - [RefreshSchemasStatusTypeDef](#refreshschemasstatustypedef)
-  - [ReloadTablesResponseTypeDef](#reloadtablesresponsetypedef)
+  - [ReloadTablesMessageTypeDef](#reloadtablesmessagetypedef)
+  - [ReloadTablesResponseResponseTypeDef](#reloadtablesresponseresponsetypedef)
+  - [RemoveTagsFromResourceMessageTypeDef](#removetagsfromresourcemessagetypedef)
   - [ReplicationInstanceTaskLogTypeDef](#replicationinstancetasklogtypedef)
   - [ReplicationInstanceTypeDef](#replicationinstancetypedef)
   - [ReplicationPendingModifiedValuesTypeDef](#replicationpendingmodifiedvaluestypedef)
@@ -94,18 +143,24 @@ type annotations stubs module
   - [ReplicationTaskStatsTypeDef](#replicationtaskstatstypedef)
   - [ReplicationTaskTypeDef](#replicationtasktypedef)
   - [ResourcePendingMaintenanceActionsTypeDef](#resourcependingmaintenanceactionstypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3SettingsTypeDef](#s3settingstypedef)
-  - [StartReplicationTaskAssessmentResponseTypeDef](#startreplicationtaskassessmentresponsetypedef)
-  - [StartReplicationTaskAssessmentRunResponseTypeDef](#startreplicationtaskassessmentrunresponsetypedef)
-  - [StartReplicationTaskResponseTypeDef](#startreplicationtaskresponsetypedef)
-  - [StopReplicationTaskResponseTypeDef](#stopreplicationtaskresponsetypedef)
+  - [StartReplicationTaskAssessmentMessageTypeDef](#startreplicationtaskassessmentmessagetypedef)
+  - [StartReplicationTaskAssessmentResponseResponseTypeDef](#startreplicationtaskassessmentresponseresponsetypedef)
+  - [StartReplicationTaskAssessmentRunMessageTypeDef](#startreplicationtaskassessmentrunmessagetypedef)
+  - [StartReplicationTaskAssessmentRunResponseResponseTypeDef](#startreplicationtaskassessmentrunresponseresponsetypedef)
+  - [StartReplicationTaskMessageTypeDef](#startreplicationtaskmessagetypedef)
+  - [StartReplicationTaskResponseResponseTypeDef](#startreplicationtaskresponseresponsetypedef)
+  - [StopReplicationTaskMessageTypeDef](#stopreplicationtaskmessagetypedef)
+  - [StopReplicationTaskResponseResponseTypeDef](#stopreplicationtaskresponseresponsetypedef)
   - [SubnetTypeDef](#subnettypedef)
   - [SupportedEndpointTypeTypeDef](#supportedendpointtypetypedef)
   - [SybaseSettingsTypeDef](#sybasesettingstypedef)
   - [TableStatisticsTypeDef](#tablestatisticstypedef)
   - [TableToReloadTypeDef](#tabletoreloadtypedef)
   - [TagTypeDef](#tagtypedef)
-  - [TestConnectionResponseTypeDef](#testconnectionresponsetypedef)
+  - [TestConnectionMessageTypeDef](#testconnectionmessagetypedef)
+  - [TestConnectionResponseResponseTypeDef](#testconnectionresponseresponsetypedef)
   - [VpcSecurityGroupMembershipTypeDef](#vpcsecuritygroupmembershiptypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
@@ -121,16 +176,41 @@ Optional fields:
 - `Used`: `int`
 - `Max`: `int`
 
-## ApplyPendingMaintenanceActionResponseTypeDef
+## AddTagsToResourceMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import ApplyPendingMaintenanceActionResponseTypeDef
+from mypy_boto3_dms.type_defs import AddTagsToResourceMessageTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceArn`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## ApplyPendingMaintenanceActionMessageTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import ApplyPendingMaintenanceActionMessageTypeDef
+```
+
+Required fields:
+
+- `ReplicationInstanceArn`: `str`
+- `ApplyAction`: `str`
+- `OptInType`: `str`
+
+## ApplyPendingMaintenanceActionResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import ApplyPendingMaintenanceActionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResourcePendingMaintenanceActions`:
   [ResourcePendingMaintenanceActionsTypeDef](./type_defs.md#resourcependingmaintenanceactionstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## AvailabilityZoneTypeDef
 
@@ -142,16 +222,28 @@ Optional fields:
 
 - `Name`: `str`
 
-## CancelReplicationTaskAssessmentRunResponseTypeDef
+## CancelReplicationTaskAssessmentRunMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import CancelReplicationTaskAssessmentRunResponseTypeDef
+from mypy_boto3_dms.type_defs import CancelReplicationTaskAssessmentRunMessageTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ReplicationTaskAssessmentRunArn`: `str`
+
+## CancelReplicationTaskAssessmentRunResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import CancelReplicationTaskAssessmentRunResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ReplicationTaskAssessmentRun`:
   [ReplicationTaskAssessmentRunTypeDef](./type_defs.md#replicationtaskassessmentruntypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CertificateTypeDef
 
@@ -164,7 +256,7 @@ Optional fields:
 - `CertificateIdentifier`: `str`
 - `CertificateCreationDate`: `datetime`
 - `CertificatePem`: `str`
-- `CertificateWallet`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `CertificateWallet`: `bytes`
 - `CertificateArn`: `str`
 - `CertificateOwner`: `str`
 - `ValidFromDate`: `datetime`
@@ -187,394 +279,964 @@ Optional fields:
 - `EndpointIdentifier`: `str`
 - `ReplicationInstanceIdentifier`: `str`
 
-## CreateEndpointResponseTypeDef
+## CreateEndpointMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import CreateEndpointResponseTypeDef
+from mypy_boto3_dms.type_defs import CreateEndpointMessageTypeDef
 ```
 
+Required fields:
+
+- `EndpointIdentifier`: `str`
+- `EndpointType`:
+  [ReplicationEndpointTypeValueType](./literals.md#replicationendpointtypevaluetype)
+- `EngineName`: `str`
+
 Optional fields:
+
+- `Username`: `str`
+- `Password`: `str`
+- `ServerName`: `str`
+- `Port`: `int`
+- `DatabaseName`: `str`
+- `ExtraConnectionAttributes`: `str`
+- `KmsKeyId`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `CertificateArn`: `str`
+- `SslMode`: [DmsSslModeValueType](./literals.md#dmssslmodevaluetype)
+- `ServiceAccessRoleArn`: `str`
+- `ExternalTableDefinition`: `str`
+- `DynamoDbSettings`:
+  [DynamoDbSettingsTypeDef](./type_defs.md#dynamodbsettingstypedef)
+- `S3Settings`: [S3SettingsTypeDef](./type_defs.md#s3settingstypedef)
+- `DmsTransferSettings`:
+  [DmsTransferSettingsTypeDef](./type_defs.md#dmstransfersettingstypedef)
+- `MongoDbSettings`:
+  [MongoDbSettingsTypeDef](./type_defs.md#mongodbsettingstypedef)
+- `KinesisSettings`:
+  [KinesisSettingsTypeDef](./type_defs.md#kinesissettingstypedef)
+- `KafkaSettings`: [KafkaSettingsTypeDef](./type_defs.md#kafkasettingstypedef)
+- `ElasticsearchSettings`:
+  [ElasticsearchSettingsTypeDef](./type_defs.md#elasticsearchsettingstypedef)
+- `NeptuneSettings`:
+  [NeptuneSettingsTypeDef](./type_defs.md#neptunesettingstypedef)
+- `RedshiftSettings`:
+  [RedshiftSettingsTypeDef](./type_defs.md#redshiftsettingstypedef)
+- `PostgreSQLSettings`:
+  [PostgreSQLSettingsTypeDef](./type_defs.md#postgresqlsettingstypedef)
+- `MySQLSettings`: [MySQLSettingsTypeDef](./type_defs.md#mysqlsettingstypedef)
+- `OracleSettings`:
+  [OracleSettingsTypeDef](./type_defs.md#oraclesettingstypedef)
+- `SybaseSettings`:
+  [SybaseSettingsTypeDef](./type_defs.md#sybasesettingstypedef)
+- `MicrosoftSQLServerSettings`:
+  [MicrosoftSQLServerSettingsTypeDef](./type_defs.md#microsoftsqlserversettingstypedef)
+- `IBMDb2Settings`:
+  [IBMDb2SettingsTypeDef](./type_defs.md#ibmdb2settingstypedef)
+- `ResourceIdentifier`: `str`
+- `DocDbSettings`: [DocDbSettingsTypeDef](./type_defs.md#docdbsettingstypedef)
+
+## CreateEndpointResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import CreateEndpointResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Endpoint`: [EndpointTypeDef](./type_defs.md#endpointtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateEventSubscriptionResponseTypeDef
+## CreateEventSubscriptionMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import CreateEventSubscriptionResponseTypeDef
+from mypy_boto3_dms.type_defs import CreateEventSubscriptionMessageTypeDef
 ```
 
+Required fields:
+
+- `SubscriptionName`: `str`
+- `SnsTopicArn`: `str`
+
 Optional fields:
+
+- `SourceType`: `str`
+- `EventCategories`: `List`\[`str`\]
+- `SourceIds`: `List`\[`str`\]
+- `Enabled`: `bool`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateEventSubscriptionResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import CreateEventSubscriptionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `EventSubscription`:
   [EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateReplicationInstanceResponseTypeDef
+## CreateReplicationInstanceMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import CreateReplicationInstanceResponseTypeDef
+from mypy_boto3_dms.type_defs import CreateReplicationInstanceMessageTypeDef
 ```
 
+Required fields:
+
+- `ReplicationInstanceIdentifier`: `str`
+- `ReplicationInstanceClass`: `str`
+
 Optional fields:
+
+- `AllocatedStorage`: `int`
+- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `AvailabilityZone`: `str`
+- `ReplicationSubnetGroupIdentifier`: `str`
+- `PreferredMaintenanceWindow`: `str`
+- `MultiAZ`: `bool`
+- `EngineVersion`: `str`
+- `AutoMinorVersionUpgrade`: `bool`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `KmsKeyId`: `str`
+- `PubliclyAccessible`: `bool`
+- `DnsNameServers`: `str`
+- `ResourceIdentifier`: `str`
+
+## CreateReplicationInstanceResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import CreateReplicationInstanceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ReplicationInstance`:
   [ReplicationInstanceTypeDef](./type_defs.md#replicationinstancetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateReplicationSubnetGroupResponseTypeDef
+## CreateReplicationSubnetGroupMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import CreateReplicationSubnetGroupResponseTypeDef
+from mypy_boto3_dms.type_defs import CreateReplicationSubnetGroupMessageTypeDef
 ```
 
+Required fields:
+
+- `ReplicationSubnetGroupIdentifier`: `str`
+- `ReplicationSubnetGroupDescription`: `str`
+- `SubnetIds`: `List`\[`str`\]
+
 Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateReplicationSubnetGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import CreateReplicationSubnetGroupResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ReplicationSubnetGroup`:
   [ReplicationSubnetGroupTypeDef](./type_defs.md#replicationsubnetgrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateReplicationTaskResponseTypeDef
+## CreateReplicationTaskMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import CreateReplicationTaskResponseTypeDef
+from mypy_boto3_dms.type_defs import CreateReplicationTaskMessageTypeDef
 ```
 
+Required fields:
+
+- `ReplicationTaskIdentifier`: `str`
+- `SourceEndpointArn`: `str`
+- `TargetEndpointArn`: `str`
+- `ReplicationInstanceArn`: `str`
+- `MigrationType`:
+  [MigrationTypeValueType](./literals.md#migrationtypevaluetype)
+- `TableMappings`: `str`
+
 Optional fields:
+
+- `ReplicationTaskSettings`: `str`
+- `CdcStartTime`: `Union`\[`datetime`, `str`\]
+- `CdcStartPosition`: `str`
+- `CdcStopPosition`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TaskData`: `str`
+- `ResourceIdentifier`: `str`
+
+## CreateReplicationTaskResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import CreateReplicationTaskResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ReplicationTask`:
   [ReplicationTaskTypeDef](./type_defs.md#replicationtasktypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteCertificateResponseTypeDef
+## DeleteCertificateMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import DeleteCertificateResponseTypeDef
+from mypy_boto3_dms.type_defs import DeleteCertificateMessageTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `CertificateArn`: `str`
+
+## DeleteCertificateResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DeleteCertificateResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Certificate`: [CertificateTypeDef](./type_defs.md#certificatetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteConnectionResponseTypeDef
+## DeleteConnectionMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import DeleteConnectionResponseTypeDef
+from mypy_boto3_dms.type_defs import DeleteConnectionMessageTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `EndpointArn`: `str`
+- `ReplicationInstanceArn`: `str`
+
+## DeleteConnectionResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DeleteConnectionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Connection`: [ConnectionTypeDef](./type_defs.md#connectiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteEndpointResponseTypeDef
+## DeleteEndpointMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import DeleteEndpointResponseTypeDef
+from mypy_boto3_dms.type_defs import DeleteEndpointMessageTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `EndpointArn`: `str`
+
+## DeleteEndpointResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DeleteEndpointResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Endpoint`: [EndpointTypeDef](./type_defs.md#endpointtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteEventSubscriptionResponseTypeDef
+## DeleteEventSubscriptionMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import DeleteEventSubscriptionResponseTypeDef
+from mypy_boto3_dms.type_defs import DeleteEventSubscriptionMessageTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `SubscriptionName`: `str`
+
+## DeleteEventSubscriptionResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DeleteEventSubscriptionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `EventSubscription`:
   [EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteReplicationInstanceResponseTypeDef
+## DeleteReplicationInstanceMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import DeleteReplicationInstanceResponseTypeDef
+from mypy_boto3_dms.type_defs import DeleteReplicationInstanceMessageTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ReplicationInstanceArn`: `str`
+
+## DeleteReplicationInstanceResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DeleteReplicationInstanceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ReplicationInstance`:
   [ReplicationInstanceTypeDef](./type_defs.md#replicationinstancetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteReplicationTaskAssessmentRunResponseTypeDef
+## DeleteReplicationSubnetGroupMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import DeleteReplicationTaskAssessmentRunResponseTypeDef
+from mypy_boto3_dms.type_defs import DeleteReplicationSubnetGroupMessageTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ReplicationSubnetGroupIdentifier`: `str`
+
+## DeleteReplicationTaskAssessmentRunMessageTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DeleteReplicationTaskAssessmentRunMessageTypeDef
+```
+
+Required fields:
+
+- `ReplicationTaskAssessmentRunArn`: `str`
+
+## DeleteReplicationTaskAssessmentRunResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DeleteReplicationTaskAssessmentRunResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ReplicationTaskAssessmentRun`:
   [ReplicationTaskAssessmentRunTypeDef](./type_defs.md#replicationtaskassessmentruntypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteReplicationTaskResponseTypeDef
+## DeleteReplicationTaskMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import DeleteReplicationTaskResponseTypeDef
+from mypy_boto3_dms.type_defs import DeleteReplicationTaskMessageTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ReplicationTaskArn`: `str`
+
+## DeleteReplicationTaskResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DeleteReplicationTaskResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ReplicationTask`:
   [ReplicationTaskTypeDef](./type_defs.md#replicationtasktypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAccountAttributesResponseTypeDef
+## DescribeAccountAttributesResponseResponseTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import DescribeAccountAttributesResponseTypeDef
+from mypy_boto3_dms.type_defs import DescribeAccountAttributesResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `AccountQuotas`:
   `List`\[[AccountQuotaTypeDef](./type_defs.md#accountquotatypedef)\]
 - `UniqueAccountIdentifier`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeApplicableIndividualAssessmentsResponseTypeDef
-
-```python
-from mypy_boto3_dms.type_defs import DescribeApplicableIndividualAssessmentsResponseTypeDef
-```
-
-Optional fields:
-
-- `IndividualAssessmentNames`: `List`\[`str`\]
-- `Marker`: `str`
-
-## DescribeCertificatesResponseTypeDef
+## DescribeApplicableIndividualAssessmentsMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import DescribeCertificatesResponseTypeDef
-```
-
-Optional fields:
-
-- `Marker`: `str`
-- `Certificates`:
-  `List`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
-
-## DescribeConnectionsResponseTypeDef
-
-```python
-from mypy_boto3_dms.type_defs import DescribeConnectionsResponseTypeDef
-```
-
-Optional fields:
-
-- `Marker`: `str`
-- `Connections`:
-  `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
-
-## DescribeEndpointSettingsResponseTypeDef
-
-```python
-from mypy_boto3_dms.type_defs import DescribeEndpointSettingsResponseTypeDef
-```
-
-Optional fields:
-
-- `Marker`: `str`
-- `EndpointSettings`:
-  `List`\[[EndpointSettingTypeDef](./type_defs.md#endpointsettingtypedef)\]
-
-## DescribeEndpointTypesResponseTypeDef
-
-```python
-from mypy_boto3_dms.type_defs import DescribeEndpointTypesResponseTypeDef
-```
-
-Optional fields:
-
-- `Marker`: `str`
-- `SupportedEndpointTypes`:
-  `List`\[[SupportedEndpointTypeTypeDef](./type_defs.md#supportedendpointtypetypedef)\]
-
-## DescribeEndpointsResponseTypeDef
-
-```python
-from mypy_boto3_dms.type_defs import DescribeEndpointsResponseTypeDef
-```
-
-Optional fields:
-
-- `Marker`: `str`
-- `Endpoints`: `List`\[[EndpointTypeDef](./type_defs.md#endpointtypedef)\]
-
-## DescribeEventCategoriesResponseTypeDef
-
-```python
-from mypy_boto3_dms.type_defs import DescribeEventCategoriesResponseTypeDef
-```
-
-Optional fields:
-
-- `EventCategoryGroupList`:
-  `List`\[[EventCategoryGroupTypeDef](./type_defs.md#eventcategorygrouptypedef)\]
-
-## DescribeEventSubscriptionsResponseTypeDef
-
-```python
-from mypy_boto3_dms.type_defs import DescribeEventSubscriptionsResponseTypeDef
-```
-
-Optional fields:
-
-- `Marker`: `str`
-- `EventSubscriptionsList`:
-  `List`\[[EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)\]
-
-## DescribeEventsResponseTypeDef
-
-```python
-from mypy_boto3_dms.type_defs import DescribeEventsResponseTypeDef
-```
-
-Optional fields:
-
-- `Marker`: `str`
-- `Events`: `List`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
-
-## DescribeOrderableReplicationInstancesResponseTypeDef
-
-```python
-from mypy_boto3_dms.type_defs import DescribeOrderableReplicationInstancesResponseTypeDef
-```
-
-Optional fields:
-
-- `OrderableReplicationInstances`:
-  `List`\[[OrderableReplicationInstanceTypeDef](./type_defs.md#orderablereplicationinstancetypedef)\]
-- `Marker`: `str`
-
-## DescribePendingMaintenanceActionsResponseTypeDef
-
-```python
-from mypy_boto3_dms.type_defs import DescribePendingMaintenanceActionsResponseTypeDef
-```
-
-Optional fields:
-
-- `PendingMaintenanceActions`:
-  `List`\[[ResourcePendingMaintenanceActionsTypeDef](./type_defs.md#resourcependingmaintenanceactionstypedef)\]
-- `Marker`: `str`
-
-## DescribeRefreshSchemasStatusResponseTypeDef
-
-```python
-from mypy_boto3_dms.type_defs import DescribeRefreshSchemasStatusResponseTypeDef
-```
-
-Optional fields:
-
-- `RefreshSchemasStatus`:
-  [RefreshSchemasStatusTypeDef](./type_defs.md#refreshschemasstatustypedef)
-
-## DescribeReplicationInstanceTaskLogsResponseTypeDef
-
-```python
-from mypy_boto3_dms.type_defs import DescribeReplicationInstanceTaskLogsResponseTypeDef
-```
-
-Optional fields:
-
-- `ReplicationInstanceArn`: `str`
-- `ReplicationInstanceTaskLogs`:
-  `List`\[[ReplicationInstanceTaskLogTypeDef](./type_defs.md#replicationinstancetasklogtypedef)\]
-- `Marker`: `str`
-
-## DescribeReplicationInstancesResponseTypeDef
-
-```python
-from mypy_boto3_dms.type_defs import DescribeReplicationInstancesResponseTypeDef
-```
-
-Optional fields:
-
-- `Marker`: `str`
-- `ReplicationInstances`:
-  `List`\[[ReplicationInstanceTypeDef](./type_defs.md#replicationinstancetypedef)\]
-
-## DescribeReplicationSubnetGroupsResponseTypeDef
-
-```python
-from mypy_boto3_dms.type_defs import DescribeReplicationSubnetGroupsResponseTypeDef
-```
-
-Optional fields:
-
-- `Marker`: `str`
-- `ReplicationSubnetGroups`:
-  `List`\[[ReplicationSubnetGroupTypeDef](./type_defs.md#replicationsubnetgrouptypedef)\]
-
-## DescribeReplicationTaskAssessmentResultsResponseTypeDef
-
-```python
-from mypy_boto3_dms.type_defs import DescribeReplicationTaskAssessmentResultsResponseTypeDef
-```
-
-Optional fields:
-
-- `Marker`: `str`
-- `BucketName`: `str`
-- `ReplicationTaskAssessmentResults`:
-  `List`\[[ReplicationTaskAssessmentResultTypeDef](./type_defs.md#replicationtaskassessmentresulttypedef)\]
-
-## DescribeReplicationTaskAssessmentRunsResponseTypeDef
-
-```python
-from mypy_boto3_dms.type_defs import DescribeReplicationTaskAssessmentRunsResponseTypeDef
-```
-
-Optional fields:
-
-- `Marker`: `str`
-- `ReplicationTaskAssessmentRuns`:
-  `List`\[[ReplicationTaskAssessmentRunTypeDef](./type_defs.md#replicationtaskassessmentruntypedef)\]
-
-## DescribeReplicationTaskIndividualAssessmentsResponseTypeDef
-
-```python
-from mypy_boto3_dms.type_defs import DescribeReplicationTaskIndividualAssessmentsResponseTypeDef
-```
-
-Optional fields:
-
-- `Marker`: `str`
-- `ReplicationTaskIndividualAssessments`:
-  `List`\[[ReplicationTaskIndividualAssessmentTypeDef](./type_defs.md#replicationtaskindividualassessmenttypedef)\]
-
-## DescribeReplicationTasksResponseTypeDef
-
-```python
-from mypy_boto3_dms.type_defs import DescribeReplicationTasksResponseTypeDef
-```
-
-Optional fields:
-
-- `Marker`: `str`
-- `ReplicationTasks`:
-  `List`\[[ReplicationTaskTypeDef](./type_defs.md#replicationtasktypedef)\]
-
-## DescribeSchemasResponseTypeDef
-
-```python
-from mypy_boto3_dms.type_defs import DescribeSchemasResponseTypeDef
-```
-
-Optional fields:
-
-- `Marker`: `str`
-- `Schemas`: `List`\[`str`\]
-
-## DescribeTableStatisticsResponseTypeDef
-
-```python
-from mypy_boto3_dms.type_defs import DescribeTableStatisticsResponseTypeDef
+from mypy_boto3_dms.type_defs import DescribeApplicableIndividualAssessmentsMessageTypeDef
 ```
 
 Optional fields:
 
 - `ReplicationTaskArn`: `str`
+- `ReplicationInstanceArn`: `str`
+- `SourceEngineName`: `str`
+- `TargetEngineName`: `str`
+- `MigrationType`:
+  [MigrationTypeValueType](./literals.md#migrationtypevaluetype)
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeApplicableIndividualAssessmentsResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeApplicableIndividualAssessmentsResponseResponseTypeDef
+```
+
+Required fields:
+
+- `IndividualAssessmentNames`: `List`\[`str`\]
+- `Marker`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeCertificatesMessageTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeCertificatesMessageTypeDef
+```
+
+Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeCertificatesResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeCertificatesResponseResponseTypeDef
+```
+
+Required fields:
+
+- `Marker`: `str`
+- `Certificates`:
+  `List`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeConnectionsMessageTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeConnectionsMessageTypeDef
+```
+
+Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeConnectionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeConnectionsResponseResponseTypeDef
+```
+
+Required fields:
+
+- `Marker`: `str`
+- `Connections`:
+  `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeEndpointSettingsMessageTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeEndpointSettingsMessageTypeDef
+```
+
+Required fields:
+
+- `EngineName`: `str`
+
+Optional fields:
+
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeEndpointSettingsResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeEndpointSettingsResponseResponseTypeDef
+```
+
+Required fields:
+
+- `Marker`: `str`
+- `EndpointSettings`:
+  `List`\[[EndpointSettingTypeDef](./type_defs.md#endpointsettingtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeEndpointTypesMessageTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeEndpointTypesMessageTypeDef
+```
+
+Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeEndpointTypesResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeEndpointTypesResponseResponseTypeDef
+```
+
+Required fields:
+
+- `Marker`: `str`
+- `SupportedEndpointTypes`:
+  `List`\[[SupportedEndpointTypeTypeDef](./type_defs.md#supportedendpointtypetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeEndpointsMessageTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeEndpointsMessageTypeDef
+```
+
+Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeEndpointsResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeEndpointsResponseResponseTypeDef
+```
+
+Required fields:
+
+- `Marker`: `str`
+- `Endpoints`: `List`\[[EndpointTypeDef](./type_defs.md#endpointtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeEventCategoriesMessageTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeEventCategoriesMessageTypeDef
+```
+
+Optional fields:
+
+- `SourceType`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+## DescribeEventCategoriesResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeEventCategoriesResponseResponseTypeDef
+```
+
+Required fields:
+
+- `EventCategoryGroupList`:
+  `List`\[[EventCategoryGroupTypeDef](./type_defs.md#eventcategorygrouptypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeEventSubscriptionsMessageTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeEventSubscriptionsMessageTypeDef
+```
+
+Optional fields:
+
+- `SubscriptionName`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeEventSubscriptionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeEventSubscriptionsResponseResponseTypeDef
+```
+
+Required fields:
+
+- `Marker`: `str`
+- `EventSubscriptionsList`:
+  `List`\[[EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeEventsMessageTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeEventsMessageTypeDef
+```
+
+Optional fields:
+
+- `SourceIdentifier`: `str`
+- `SourceType`: `Literal['replication-instance']` (see
+  [SourceTypeType](./literals.md#sourcetypetype))
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
+- `Duration`: `int`
+- `EventCategories`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeEventsResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeEventsResponseResponseTypeDef
+```
+
+Required fields:
+
+- `Marker`: `str`
+- `Events`: `List`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeOrderableReplicationInstancesMessageTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeOrderableReplicationInstancesMessageTypeDef
+```
+
+Optional fields:
+
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeOrderableReplicationInstancesResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeOrderableReplicationInstancesResponseResponseTypeDef
+```
+
+Required fields:
+
+- `OrderableReplicationInstances`:
+  `List`\[[OrderableReplicationInstanceTypeDef](./type_defs.md#orderablereplicationinstancetypedef)\]
+- `Marker`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribePendingMaintenanceActionsMessageTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribePendingMaintenanceActionsMessageTypeDef
+```
+
+Optional fields:
+
+- `ReplicationInstanceArn`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Marker`: `str`
+- `MaxRecords`: `int`
+
+## DescribePendingMaintenanceActionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribePendingMaintenanceActionsResponseResponseTypeDef
+```
+
+Required fields:
+
+- `PendingMaintenanceActions`:
+  `List`\[[ResourcePendingMaintenanceActionsTypeDef](./type_defs.md#resourcependingmaintenanceactionstypedef)\]
+- `Marker`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeRefreshSchemasStatusMessageTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeRefreshSchemasStatusMessageTypeDef
+```
+
+Required fields:
+
+- `EndpointArn`: `str`
+
+## DescribeRefreshSchemasStatusResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeRefreshSchemasStatusResponseResponseTypeDef
+```
+
+Required fields:
+
+- `RefreshSchemasStatus`:
+  [RefreshSchemasStatusTypeDef](./type_defs.md#refreshschemasstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeReplicationInstanceTaskLogsMessageTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeReplicationInstanceTaskLogsMessageTypeDef
+```
+
+Required fields:
+
+- `ReplicationInstanceArn`: `str`
+
+Optional fields:
+
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeReplicationInstanceTaskLogsResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeReplicationInstanceTaskLogsResponseResponseTypeDef
+```
+
+Required fields:
+
+- `ReplicationInstanceArn`: `str`
+- `ReplicationInstanceTaskLogs`:
+  `List`\[[ReplicationInstanceTaskLogTypeDef](./type_defs.md#replicationinstancetasklogtypedef)\]
+- `Marker`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeReplicationInstancesMessageTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeReplicationInstancesMessageTypeDef
+```
+
+Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeReplicationInstancesResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeReplicationInstancesResponseResponseTypeDef
+```
+
+Required fields:
+
+- `Marker`: `str`
+- `ReplicationInstances`:
+  `List`\[[ReplicationInstanceTypeDef](./type_defs.md#replicationinstancetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeReplicationSubnetGroupsMessageTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeReplicationSubnetGroupsMessageTypeDef
+```
+
+Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeReplicationSubnetGroupsResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeReplicationSubnetGroupsResponseResponseTypeDef
+```
+
+Required fields:
+
+- `Marker`: `str`
+- `ReplicationSubnetGroups`:
+  `List`\[[ReplicationSubnetGroupTypeDef](./type_defs.md#replicationsubnetgrouptypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeReplicationTaskAssessmentResultsMessageTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeReplicationTaskAssessmentResultsMessageTypeDef
+```
+
+Optional fields:
+
+- `ReplicationTaskArn`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeReplicationTaskAssessmentResultsResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeReplicationTaskAssessmentResultsResponseResponseTypeDef
+```
+
+Required fields:
+
+- `Marker`: `str`
+- `BucketName`: `str`
+- `ReplicationTaskAssessmentResults`:
+  `List`\[[ReplicationTaskAssessmentResultTypeDef](./type_defs.md#replicationtaskassessmentresulttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeReplicationTaskAssessmentRunsMessageTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeReplicationTaskAssessmentRunsMessageTypeDef
+```
+
+Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeReplicationTaskAssessmentRunsResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeReplicationTaskAssessmentRunsResponseResponseTypeDef
+```
+
+Required fields:
+
+- `Marker`: `str`
+- `ReplicationTaskAssessmentRuns`:
+  `List`\[[ReplicationTaskAssessmentRunTypeDef](./type_defs.md#replicationtaskassessmentruntypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeReplicationTaskIndividualAssessmentsMessageTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeReplicationTaskIndividualAssessmentsMessageTypeDef
+```
+
+Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeReplicationTaskIndividualAssessmentsResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeReplicationTaskIndividualAssessmentsResponseResponseTypeDef
+```
+
+Required fields:
+
+- `Marker`: `str`
+- `ReplicationTaskIndividualAssessments`:
+  `List`\[[ReplicationTaskIndividualAssessmentTypeDef](./type_defs.md#replicationtaskindividualassessmenttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeReplicationTasksMessageTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeReplicationTasksMessageTypeDef
+```
+
+Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `WithoutSettings`: `bool`
+
+## DescribeReplicationTasksResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeReplicationTasksResponseResponseTypeDef
+```
+
+Required fields:
+
+- `Marker`: `str`
+- `ReplicationTasks`:
+  `List`\[[ReplicationTaskTypeDef](./type_defs.md#replicationtasktypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeSchemasMessageTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeSchemasMessageTypeDef
+```
+
+Required fields:
+
+- `EndpointArn`: `str`
+
+Optional fields:
+
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeSchemasResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeSchemasResponseResponseTypeDef
+```
+
+Required fields:
+
+- `Marker`: `str`
+- `Schemas`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeTableStatisticsMessageTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeTableStatisticsMessageTypeDef
+```
+
+Required fields:
+
+- `ReplicationTaskArn`: `str`
+
+Optional fields:
+
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+## DescribeTableStatisticsResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import DescribeTableStatisticsResponseResponseTypeDef
+```
+
+Required fields:
+
+- `ReplicationTaskArn`: `str`
 - `TableStatistics`:
   `List`\[[TableStatisticsTypeDef](./type_defs.md#tablestatisticstypedef)\]
 - `Marker`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DmsTransferSettingsTypeDef
 
@@ -780,15 +1442,33 @@ Optional fields:
 - `SecretsManagerAccessRoleArn`: `str`
 - `SecretsManagerSecretId`: `str`
 
-## ImportCertificateResponseTypeDef
+## ImportCertificateMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import ImportCertificateResponseTypeDef
+from mypy_boto3_dms.type_defs import ImportCertificateMessageTypeDef
 ```
+
+Required fields:
+
+- `CertificateIdentifier`: `str`
 
 Optional fields:
 
+- `CertificatePem`: `str`
+- `CertificateWallet`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## ImportCertificateResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import ImportCertificateResponseResponseTypeDef
+```
+
+Required fields:
+
 - `Certificate`: [CertificateTypeDef](./type_defs.md#certificatetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## KafkaSettingsTypeDef
 
@@ -837,15 +1517,27 @@ Optional fields:
 - `IncludeControlDetails`: `bool`
 - `IncludeNullAndEmpty`: `bool`
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_dms.type_defs import ListTagsForResourceMessageTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceArn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## MicrosoftSQLServerSettingsTypeDef
 
@@ -870,59 +1562,201 @@ Optional fields:
 - `SecretsManagerAccessRoleArn`: `str`
 - `SecretsManagerSecretId`: `str`
 
-## ModifyEndpointResponseTypeDef
+## ModifyEndpointMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import ModifyEndpointResponseTypeDef
+from mypy_boto3_dms.type_defs import ModifyEndpointMessageTypeDef
 ```
 
+Required fields:
+
+- `EndpointArn`: `str`
+
 Optional fields:
+
+- `EndpointIdentifier`: `str`
+- `EndpointType`:
+  [ReplicationEndpointTypeValueType](./literals.md#replicationendpointtypevaluetype)
+- `EngineName`: `str`
+- `Username`: `str`
+- `Password`: `str`
+- `ServerName`: `str`
+- `Port`: `int`
+- `DatabaseName`: `str`
+- `ExtraConnectionAttributes`: `str`
+- `CertificateArn`: `str`
+- `SslMode`: [DmsSslModeValueType](./literals.md#dmssslmodevaluetype)
+- `ServiceAccessRoleArn`: `str`
+- `ExternalTableDefinition`: `str`
+- `DynamoDbSettings`:
+  [DynamoDbSettingsTypeDef](./type_defs.md#dynamodbsettingstypedef)
+- `S3Settings`: [S3SettingsTypeDef](./type_defs.md#s3settingstypedef)
+- `DmsTransferSettings`:
+  [DmsTransferSettingsTypeDef](./type_defs.md#dmstransfersettingstypedef)
+- `MongoDbSettings`:
+  [MongoDbSettingsTypeDef](./type_defs.md#mongodbsettingstypedef)
+- `KinesisSettings`:
+  [KinesisSettingsTypeDef](./type_defs.md#kinesissettingstypedef)
+- `KafkaSettings`: [KafkaSettingsTypeDef](./type_defs.md#kafkasettingstypedef)
+- `ElasticsearchSettings`:
+  [ElasticsearchSettingsTypeDef](./type_defs.md#elasticsearchsettingstypedef)
+- `NeptuneSettings`:
+  [NeptuneSettingsTypeDef](./type_defs.md#neptunesettingstypedef)
+- `RedshiftSettings`:
+  [RedshiftSettingsTypeDef](./type_defs.md#redshiftsettingstypedef)
+- `PostgreSQLSettings`:
+  [PostgreSQLSettingsTypeDef](./type_defs.md#postgresqlsettingstypedef)
+- `MySQLSettings`: [MySQLSettingsTypeDef](./type_defs.md#mysqlsettingstypedef)
+- `OracleSettings`:
+  [OracleSettingsTypeDef](./type_defs.md#oraclesettingstypedef)
+- `SybaseSettings`:
+  [SybaseSettingsTypeDef](./type_defs.md#sybasesettingstypedef)
+- `MicrosoftSQLServerSettings`:
+  [MicrosoftSQLServerSettingsTypeDef](./type_defs.md#microsoftsqlserversettingstypedef)
+- `IBMDb2Settings`:
+  [IBMDb2SettingsTypeDef](./type_defs.md#ibmdb2settingstypedef)
+- `DocDbSettings`: [DocDbSettingsTypeDef](./type_defs.md#docdbsettingstypedef)
+
+## ModifyEndpointResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import ModifyEndpointResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Endpoint`: [EndpointTypeDef](./type_defs.md#endpointtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyEventSubscriptionResponseTypeDef
+## ModifyEventSubscriptionMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import ModifyEventSubscriptionResponseTypeDef
+from mypy_boto3_dms.type_defs import ModifyEventSubscriptionMessageTypeDef
 ```
 
+Required fields:
+
+- `SubscriptionName`: `str`
+
 Optional fields:
+
+- `SnsTopicArn`: `str`
+- `SourceType`: `str`
+- `EventCategories`: `List`\[`str`\]
+- `Enabled`: `bool`
+
+## ModifyEventSubscriptionResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import ModifyEventSubscriptionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `EventSubscription`:
   [EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyReplicationInstanceResponseTypeDef
+## ModifyReplicationInstanceMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import ModifyReplicationInstanceResponseTypeDef
+from mypy_boto3_dms.type_defs import ModifyReplicationInstanceMessageTypeDef
 ```
 
+Required fields:
+
+- `ReplicationInstanceArn`: `str`
+
 Optional fields:
+
+- `AllocatedStorage`: `int`
+- `ApplyImmediately`: `bool`
+- `ReplicationInstanceClass`: `str`
+- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `PreferredMaintenanceWindow`: `str`
+- `MultiAZ`: `bool`
+- `EngineVersion`: `str`
+- `AllowMajorVersionUpgrade`: `bool`
+- `AutoMinorVersionUpgrade`: `bool`
+- `ReplicationInstanceIdentifier`: `str`
+
+## ModifyReplicationInstanceResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import ModifyReplicationInstanceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ReplicationInstance`:
   [ReplicationInstanceTypeDef](./type_defs.md#replicationinstancetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyReplicationSubnetGroupResponseTypeDef
+## ModifyReplicationSubnetGroupMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import ModifyReplicationSubnetGroupResponseTypeDef
+from mypy_boto3_dms.type_defs import ModifyReplicationSubnetGroupMessageTypeDef
 ```
 
+Required fields:
+
+- `ReplicationSubnetGroupIdentifier`: `str`
+- `SubnetIds`: `List`\[`str`\]
+
 Optional fields:
+
+- `ReplicationSubnetGroupDescription`: `str`
+
+## ModifyReplicationSubnetGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import ModifyReplicationSubnetGroupResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ReplicationSubnetGroup`:
   [ReplicationSubnetGroupTypeDef](./type_defs.md#replicationsubnetgrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyReplicationTaskResponseTypeDef
+## ModifyReplicationTaskMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import ModifyReplicationTaskResponseTypeDef
+from mypy_boto3_dms.type_defs import ModifyReplicationTaskMessageTypeDef
 ```
+
+Required fields:
+
+- `ReplicationTaskArn`: `str`
 
 Optional fields:
 
+- `ReplicationTaskIdentifier`: `str`
+- `MigrationType`:
+  [MigrationTypeValueType](./literals.md#migrationtypevaluetype)
+- `TableMappings`: `str`
+- `ReplicationTaskSettings`: `str`
+- `CdcStartTime`: `Union`\[`datetime`, `str`\]
+- `CdcStartPosition`: `str`
+- `CdcStopPosition`: `str`
+- `TaskData`: `str`
+
+## ModifyReplicationTaskResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import ModifyReplicationTaskResponseResponseTypeDef
+```
+
+Required fields:
+
 - `ReplicationTask`:
   [ReplicationTaskTypeDef](./type_defs.md#replicationtasktypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## MongoDbSettingsTypeDef
 
@@ -948,16 +1782,29 @@ Optional fields:
 - `SecretsManagerAccessRoleArn`: `str`
 - `SecretsManagerSecretId`: `str`
 
-## MoveReplicationTaskResponseTypeDef
+## MoveReplicationTaskMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import MoveReplicationTaskResponseTypeDef
+from mypy_boto3_dms.type_defs import MoveReplicationTaskMessageTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ReplicationTaskArn`: `str`
+- `TargetReplicationInstanceArn`: `str`
+
+## MoveReplicationTaskResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import MoveReplicationTaskResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ReplicationTask`:
   [ReplicationTaskTypeDef](./type_defs.md#replicationtasktypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## MySQLSettingsTypeDef
 
@@ -1115,16 +1962,32 @@ Optional fields:
 - `SecretsManagerAccessRoleArn`: `str`
 - `SecretsManagerSecretId`: `str`
 
-## RebootReplicationInstanceResponseTypeDef
+## RebootReplicationInstanceMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import RebootReplicationInstanceResponseTypeDef
+from mypy_boto3_dms.type_defs import RebootReplicationInstanceMessageTypeDef
 ```
+
+Required fields:
+
+- `ReplicationInstanceArn`: `str`
 
 Optional fields:
 
+- `ForceFailover`: `bool`
+
+## RebootReplicationInstanceResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import RebootReplicationInstanceResponseResponseTypeDef
+```
+
+Required fields:
+
 - `ReplicationInstance`:
   [ReplicationInstanceTypeDef](./type_defs.md#replicationinstancetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## RedshiftSettingsTypeDef
 
@@ -1166,16 +2029,29 @@ Optional fields:
 - `SecretsManagerAccessRoleArn`: `str`
 - `SecretsManagerSecretId`: `str`
 
-## RefreshSchemasResponseTypeDef
+## RefreshSchemasMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import RefreshSchemasResponseTypeDef
+from mypy_boto3_dms.type_defs import RefreshSchemasMessageTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `EndpointArn`: `str`
+- `ReplicationInstanceArn`: `str`
+
+## RefreshSchemasResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import RefreshSchemasResponseResponseTypeDef
+```
+
+Required fields:
 
 - `RefreshSchemasStatus`:
   [RefreshSchemasStatusTypeDef](./type_defs.md#refreshschemasstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## RefreshSchemasStatusTypeDef
 
@@ -1192,15 +2068,44 @@ Optional fields:
 - `LastRefreshDate`: `datetime`
 - `LastFailureMessage`: `str`
 
-## ReloadTablesResponseTypeDef
+## ReloadTablesMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import ReloadTablesResponseTypeDef
+from mypy_boto3_dms.type_defs import ReloadTablesMessageTypeDef
 ```
+
+Required fields:
+
+- `ReplicationTaskArn`: `str`
+- `TablesToReload`:
+  `List`\[[TableToReloadTypeDef](./type_defs.md#tabletoreloadtypedef)\]
 
 Optional fields:
 
+- `ReloadOption`: [ReloadOptionValueType](./literals.md#reloadoptionvaluetype)
+
+## ReloadTablesResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import ReloadTablesResponseResponseTypeDef
+```
+
+Required fields:
+
 - `ReplicationTaskArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## RemoveTagsFromResourceMessageTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import RemoveTagsFromResourceMessageTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `TagKeys`: `List`\[`str`\]
 
 ## ReplicationInstanceTaskLogTypeDef
 
@@ -1401,6 +2306,20 @@ Optional fields:
 - `PendingMaintenanceActionDetails`:
   `List`\[[PendingMaintenanceActionTypeDef](./type_defs.md#pendingmaintenanceactiontypedef)\]
 
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
 ## S3SettingsTypeDef
 
 ```python
@@ -1443,49 +2362,116 @@ Optional fields:
 - `PreserveTransactions`: `bool`
 - `CdcPath`: `str`
 
-## StartReplicationTaskAssessmentResponseTypeDef
+## StartReplicationTaskAssessmentMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import StartReplicationTaskAssessmentResponseTypeDef
+from mypy_boto3_dms.type_defs import StartReplicationTaskAssessmentMessageTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ReplicationTaskArn`: `str`
+
+## StartReplicationTaskAssessmentResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import StartReplicationTaskAssessmentResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ReplicationTask`:
   [ReplicationTaskTypeDef](./type_defs.md#replicationtasktypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartReplicationTaskAssessmentRunResponseTypeDef
+## StartReplicationTaskAssessmentRunMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import StartReplicationTaskAssessmentRunResponseTypeDef
+from mypy_boto3_dms.type_defs import StartReplicationTaskAssessmentRunMessageTypeDef
 ```
 
+Required fields:
+
+- `ReplicationTaskArn`: `str`
+- `ServiceAccessRoleArn`: `str`
+- `ResultLocationBucket`: `str`
+- `AssessmentRunName`: `str`
+
 Optional fields:
+
+- `ResultLocationFolder`: `str`
+- `ResultEncryptionMode`: `str`
+- `ResultKmsKeyArn`: `str`
+- `IncludeOnly`: `List`\[`str`\]
+- `Exclude`: `List`\[`str`\]
+
+## StartReplicationTaskAssessmentRunResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import StartReplicationTaskAssessmentRunResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ReplicationTaskAssessmentRun`:
   [ReplicationTaskAssessmentRunTypeDef](./type_defs.md#replicationtaskassessmentruntypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartReplicationTaskResponseTypeDef
+## StartReplicationTaskMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import StartReplicationTaskResponseTypeDef
+from mypy_boto3_dms.type_defs import StartReplicationTaskMessageTypeDef
 ```
+
+Required fields:
+
+- `ReplicationTaskArn`: `str`
+- `StartReplicationTaskType`:
+  [StartReplicationTaskTypeValueType](./literals.md#startreplicationtasktypevaluetype)
 
 Optional fields:
 
-- `ReplicationTask`:
-  [ReplicationTaskTypeDef](./type_defs.md#replicationtasktypedef)
+- `CdcStartTime`: `Union`\[`datetime`, `str`\]
+- `CdcStartPosition`: `str`
+- `CdcStopPosition`: `str`
 
-## StopReplicationTaskResponseTypeDef
+## StartReplicationTaskResponseResponseTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import StopReplicationTaskResponseTypeDef
+from mypy_boto3_dms.type_defs import StartReplicationTaskResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `ReplicationTask`:
   [ReplicationTaskTypeDef](./type_defs.md#replicationtasktypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StopReplicationTaskMessageTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import StopReplicationTaskMessageTypeDef
+```
+
+Required fields:
+
+- `ReplicationTaskArn`: `str`
+
+## StopReplicationTaskResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import StopReplicationTaskResponseResponseTypeDef
+```
+
+Required fields:
+
+- `ReplicationTask`:
+  [ReplicationTaskTypeDef](./type_defs.md#replicationtasktypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## SubnetTypeDef
 
@@ -1581,15 +2567,28 @@ Optional fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## TestConnectionResponseTypeDef
+## TestConnectionMessageTypeDef
 
 ```python
-from mypy_boto3_dms.type_defs import TestConnectionResponseTypeDef
+from mypy_boto3_dms.type_defs import TestConnectionMessageTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ReplicationInstanceArn`: `str`
+- `EndpointArn`: `str`
+
+## TestConnectionResponseResponseTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import TestConnectionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Connection`: [ConnectionTypeDef](./type_defs.md#connectiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## VpcSecurityGroupMembershipTypeDef
 

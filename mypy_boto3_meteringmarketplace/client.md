@@ -71,11 +71,17 @@ Exceptions:
 
 ### batch_meter_usage
 
+BatchMeterUsage is called from a SaaS application listed on the AWS Marketplace
+to post metering records for a set of customers.
+
 Type annotations for `boto3.client("meteringmarketplace").batch_meter_usage`
 method.
 
 Boto3 documentation:
 [MarketplaceMetering.Client.batch_meter_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.batch_meter_usage)
+
+Arguments mapping described in
+[BatchMeterUsageRequestTypeDef](./type_defs.md#batchmeterusagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -85,9 +91,11 @@ Keyword-only arguments:
 - `ProductCode`: `str` *(required)*
 
 Returns
-[BatchMeterUsageResultTypeDef](./type_defs.md#batchmeterusageresulttypedef).
+[BatchMeterUsageResultResponseTypeDef](./type_defs.md#batchmeterusageresultresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("meteringmarketplace").can_paginate` method.
 
@@ -101,6 +109,8 @@ Arguments:
 Returns `bool`.
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for
 `boto3.client("meteringmarketplace").generate_presigned_url` method.
@@ -119,30 +129,43 @@ Returns `str`.
 
 ### meter_usage
 
+API to emit metering records.
+
 Type annotations for `boto3.client("meteringmarketplace").meter_usage` method.
 
 Boto3 documentation:
 [MarketplaceMetering.Client.meter_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.meter_usage)
 
+Arguments mapping described in
+[MeterUsageRequestTypeDef](./type_defs.md#meterusagerequesttypedef).
+
 Keyword-only arguments:
 
 - `ProductCode`: `str` *(required)*
-- `Timestamp`: `datetime` *(required)*
+- `Timestamp`: `Union`\[`datetime`, `str`\] *(required)*
 - `UsageDimension`: `str` *(required)*
 - `UsageQuantity`: `int`
 - `DryRun`: `bool`
 - `UsageAllocations`:
   `List`\[[UsageAllocationTypeDef](./type_defs.md#usageallocationtypedef)\]
 
-Returns [MeterUsageResultTypeDef](./type_defs.md#meterusageresulttypedef).
+Returns
+[MeterUsageResultResponseTypeDef](./type_defs.md#meterusageresultresponsetypedef).
 
 ### register_usage
+
+Paid container software products sold through AWS Marketplace must integrate
+with the AWS Marketplace Metering Service and call the RegisterUsage operation
+for software entitlement and metering.
 
 Type annotations for `boto3.client("meteringmarketplace").register_usage`
 method.
 
 Boto3 documentation:
 [MarketplaceMetering.Client.register_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.register_usage)
+
+Arguments mapping described in
+[RegisterUsageRequestTypeDef](./type_defs.md#registerusagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -151,9 +174,12 @@ Keyword-only arguments:
 - `Nonce`: `str`
 
 Returns
-[RegisterUsageResultTypeDef](./type_defs.md#registerusageresulttypedef).
+[RegisterUsageResultResponseTypeDef](./type_defs.md#registerusageresultresponsetypedef).
 
 ### resolve_customer
+
+ResolveCustomer is called by a SaaS application during the registration
+process.
 
 Type annotations for `boto3.client("meteringmarketplace").resolve_customer`
 method.
@@ -161,9 +187,12 @@ method.
 Boto3 documentation:
 [MarketplaceMetering.Client.resolve_customer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.resolve_customer)
 
+Arguments mapping described in
+[ResolveCustomerRequestTypeDef](./type_defs.md#resolvecustomerrequesttypedef).
+
 Keyword-only arguments:
 
 - `RegistrationToken`: `str` *(required)*
 
 Returns
-[ResolveCustomerResultTypeDef](./type_defs.md#resolvecustomerresulttypedef).
+[ResolveCustomerResultResponseTypeDef](./type_defs.md#resolvecustomerresultresponsetypedef).

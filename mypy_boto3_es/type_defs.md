@@ -8,14 +8,17 @@ type annotations stubs module
 [mypy_boto3_es](https://pypi.org/project/mypy-boto3-es/).
 
 - [Typed dictionaries for boto3 ElasticsearchService module](#typed-dictionaries-for-boto3-elasticsearchservice-module)
-  - [AcceptInboundCrossClusterSearchConnectionResponseTypeDef](#acceptinboundcrossclustersearchconnectionresponsetypedef)
+  - [AcceptInboundCrossClusterSearchConnectionRequestTypeDef](#acceptinboundcrossclustersearchconnectionrequesttypedef)
+  - [AcceptInboundCrossClusterSearchConnectionResponseResponseTypeDef](#acceptinboundcrossclustersearchconnectionresponseresponsetypedef)
   - [AccessPoliciesStatusTypeDef](#accesspoliciesstatustypedef)
+  - [AddTagsRequestTypeDef](#addtagsrequesttypedef)
   - [AdditionalLimitTypeDef](#additionallimittypedef)
   - [AdvancedOptionsStatusTypeDef](#advancedoptionsstatustypedef)
   - [AdvancedSecurityOptionsInputTypeDef](#advancedsecurityoptionsinputtypedef)
   - [AdvancedSecurityOptionsStatusTypeDef](#advancedsecurityoptionsstatustypedef)
   - [AdvancedSecurityOptionsTypeDef](#advancedsecurityoptionstypedef)
-  - [AssociatePackageResponseTypeDef](#associatepackageresponsetypedef)
+  - [AssociatePackageRequestTypeDef](#associatepackagerequesttypedef)
+  - [AssociatePackageResponseResponseTypeDef](#associatepackageresponseresponsetypedef)
   - [AutoTuneDetailsTypeDef](#autotunedetailstypedef)
   - [AutoTuneMaintenanceScheduleTypeDef](#autotunemaintenancescheduletypedef)
   - [AutoTuneOptionsInputTypeDef](#autotuneoptionsinputtypedef)
@@ -24,30 +27,49 @@ type annotations stubs module
   - [AutoTuneOptionsTypeDef](#autotuneoptionstypedef)
   - [AutoTuneStatusTypeDef](#autotunestatustypedef)
   - [AutoTuneTypeDef](#autotunetypedef)
-  - [CancelElasticsearchServiceSoftwareUpdateResponseTypeDef](#cancelelasticsearchservicesoftwareupdateresponsetypedef)
+  - [CancelElasticsearchServiceSoftwareUpdateRequestTypeDef](#cancelelasticsearchservicesoftwareupdaterequesttypedef)
+  - [CancelElasticsearchServiceSoftwareUpdateResponseResponseTypeDef](#cancelelasticsearchservicesoftwareupdateresponseresponsetypedef)
   - [CognitoOptionsStatusTypeDef](#cognitooptionsstatustypedef)
   - [CognitoOptionsTypeDef](#cognitooptionstypedef)
   - [ColdStorageOptionsTypeDef](#coldstorageoptionstypedef)
   - [CompatibleVersionsMapTypeDef](#compatibleversionsmaptypedef)
-  - [CreateElasticsearchDomainResponseTypeDef](#createelasticsearchdomainresponsetypedef)
-  - [CreateOutboundCrossClusterSearchConnectionResponseTypeDef](#createoutboundcrossclustersearchconnectionresponsetypedef)
-  - [CreatePackageResponseTypeDef](#createpackageresponsetypedef)
-  - [DeleteElasticsearchDomainResponseTypeDef](#deleteelasticsearchdomainresponsetypedef)
-  - [DeleteInboundCrossClusterSearchConnectionResponseTypeDef](#deleteinboundcrossclustersearchconnectionresponsetypedef)
-  - [DeleteOutboundCrossClusterSearchConnectionResponseTypeDef](#deleteoutboundcrossclustersearchconnectionresponsetypedef)
-  - [DeletePackageResponseTypeDef](#deletepackageresponsetypedef)
-  - [DescribeDomainAutoTunesResponseTypeDef](#describedomainautotunesresponsetypedef)
-  - [DescribeElasticsearchDomainConfigResponseTypeDef](#describeelasticsearchdomainconfigresponsetypedef)
-  - [DescribeElasticsearchDomainResponseTypeDef](#describeelasticsearchdomainresponsetypedef)
-  - [DescribeElasticsearchDomainsResponseTypeDef](#describeelasticsearchdomainsresponsetypedef)
-  - [DescribeElasticsearchInstanceTypeLimitsResponseTypeDef](#describeelasticsearchinstancetypelimitsresponsetypedef)
-  - [DescribeInboundCrossClusterSearchConnectionsResponseTypeDef](#describeinboundcrossclustersearchconnectionsresponsetypedef)
-  - [DescribeOutboundCrossClusterSearchConnectionsResponseTypeDef](#describeoutboundcrossclustersearchconnectionsresponsetypedef)
+  - [CreateElasticsearchDomainRequestTypeDef](#createelasticsearchdomainrequesttypedef)
+  - [CreateElasticsearchDomainResponseResponseTypeDef](#createelasticsearchdomainresponseresponsetypedef)
+  - [CreateOutboundCrossClusterSearchConnectionRequestTypeDef](#createoutboundcrossclustersearchconnectionrequesttypedef)
+  - [CreateOutboundCrossClusterSearchConnectionResponseResponseTypeDef](#createoutboundcrossclustersearchconnectionresponseresponsetypedef)
+  - [CreatePackageRequestTypeDef](#createpackagerequesttypedef)
+  - [CreatePackageResponseResponseTypeDef](#createpackageresponseresponsetypedef)
+  - [DeleteElasticsearchDomainRequestTypeDef](#deleteelasticsearchdomainrequesttypedef)
+  - [DeleteElasticsearchDomainResponseResponseTypeDef](#deleteelasticsearchdomainresponseresponsetypedef)
+  - [DeleteInboundCrossClusterSearchConnectionRequestTypeDef](#deleteinboundcrossclustersearchconnectionrequesttypedef)
+  - [DeleteInboundCrossClusterSearchConnectionResponseResponseTypeDef](#deleteinboundcrossclustersearchconnectionresponseresponsetypedef)
+  - [DeleteOutboundCrossClusterSearchConnectionRequestTypeDef](#deleteoutboundcrossclustersearchconnectionrequesttypedef)
+  - [DeleteOutboundCrossClusterSearchConnectionResponseResponseTypeDef](#deleteoutboundcrossclustersearchconnectionresponseresponsetypedef)
+  - [DeletePackageRequestTypeDef](#deletepackagerequesttypedef)
+  - [DeletePackageResponseResponseTypeDef](#deletepackageresponseresponsetypedef)
+  - [DescribeDomainAutoTunesRequestTypeDef](#describedomainautotunesrequesttypedef)
+  - [DescribeDomainAutoTunesResponseResponseTypeDef](#describedomainautotunesresponseresponsetypedef)
+  - [DescribeElasticsearchDomainConfigRequestTypeDef](#describeelasticsearchdomainconfigrequesttypedef)
+  - [DescribeElasticsearchDomainConfigResponseResponseTypeDef](#describeelasticsearchdomainconfigresponseresponsetypedef)
+  - [DescribeElasticsearchDomainRequestTypeDef](#describeelasticsearchdomainrequesttypedef)
+  - [DescribeElasticsearchDomainResponseResponseTypeDef](#describeelasticsearchdomainresponseresponsetypedef)
+  - [DescribeElasticsearchDomainsRequestTypeDef](#describeelasticsearchdomainsrequesttypedef)
+  - [DescribeElasticsearchDomainsResponseResponseTypeDef](#describeelasticsearchdomainsresponseresponsetypedef)
+  - [DescribeElasticsearchInstanceTypeLimitsRequestTypeDef](#describeelasticsearchinstancetypelimitsrequesttypedef)
+  - [DescribeElasticsearchInstanceTypeLimitsResponseResponseTypeDef](#describeelasticsearchinstancetypelimitsresponseresponsetypedef)
+  - [DescribeInboundCrossClusterSearchConnectionsRequestTypeDef](#describeinboundcrossclustersearchconnectionsrequesttypedef)
+  - [DescribeInboundCrossClusterSearchConnectionsResponseResponseTypeDef](#describeinboundcrossclustersearchconnectionsresponseresponsetypedef)
+  - [DescribeOutboundCrossClusterSearchConnectionsRequestTypeDef](#describeoutboundcrossclustersearchconnectionsrequesttypedef)
+  - [DescribeOutboundCrossClusterSearchConnectionsResponseResponseTypeDef](#describeoutboundcrossclustersearchconnectionsresponseresponsetypedef)
   - [DescribePackagesFilterTypeDef](#describepackagesfiltertypedef)
-  - [DescribePackagesResponseTypeDef](#describepackagesresponsetypedef)
-  - [DescribeReservedElasticsearchInstanceOfferingsResponseTypeDef](#describereservedelasticsearchinstanceofferingsresponsetypedef)
-  - [DescribeReservedElasticsearchInstancesResponseTypeDef](#describereservedelasticsearchinstancesresponsetypedef)
-  - [DissociatePackageResponseTypeDef](#dissociatepackageresponsetypedef)
+  - [DescribePackagesRequestTypeDef](#describepackagesrequesttypedef)
+  - [DescribePackagesResponseResponseTypeDef](#describepackagesresponseresponsetypedef)
+  - [DescribeReservedElasticsearchInstanceOfferingsRequestTypeDef](#describereservedelasticsearchinstanceofferingsrequesttypedef)
+  - [DescribeReservedElasticsearchInstanceOfferingsResponseResponseTypeDef](#describereservedelasticsearchinstanceofferingsresponseresponsetypedef)
+  - [DescribeReservedElasticsearchInstancesRequestTypeDef](#describereservedelasticsearchinstancesrequesttypedef)
+  - [DescribeReservedElasticsearchInstancesResponseResponseTypeDef](#describereservedelasticsearchinstancesresponseresponsetypedef)
+  - [DissociatePackageRequestTypeDef](#dissociatepackagerequesttypedef)
+  - [DissociatePackageResponseResponseTypeDef](#dissociatepackageresponseresponsetypedef)
   - [DomainEndpointOptionsStatusTypeDef](#domainendpointoptionsstatustypedef)
   - [DomainEndpointOptionsTypeDef](#domainendpointoptionstypedef)
   - [DomainInfoTypeDef](#domaininfotypedef)
@@ -65,21 +87,30 @@ type annotations stubs module
   - [EncryptionAtRestOptionsTypeDef](#encryptionatrestoptionstypedef)
   - [ErrorDetailsTypeDef](#errordetailstypedef)
   - [FilterTypeDef](#filtertypedef)
-  - [GetCompatibleElasticsearchVersionsResponseTypeDef](#getcompatibleelasticsearchversionsresponsetypedef)
-  - [GetPackageVersionHistoryResponseTypeDef](#getpackageversionhistoryresponsetypedef)
-  - [GetUpgradeHistoryResponseTypeDef](#getupgradehistoryresponsetypedef)
-  - [GetUpgradeStatusResponseTypeDef](#getupgradestatusresponsetypedef)
+  - [GetCompatibleElasticsearchVersionsRequestTypeDef](#getcompatibleelasticsearchversionsrequesttypedef)
+  - [GetCompatibleElasticsearchVersionsResponseResponseTypeDef](#getcompatibleelasticsearchversionsresponseresponsetypedef)
+  - [GetPackageVersionHistoryRequestTypeDef](#getpackageversionhistoryrequesttypedef)
+  - [GetPackageVersionHistoryResponseResponseTypeDef](#getpackageversionhistoryresponseresponsetypedef)
+  - [GetUpgradeHistoryRequestTypeDef](#getupgradehistoryrequesttypedef)
+  - [GetUpgradeHistoryResponseResponseTypeDef](#getupgradehistoryresponseresponsetypedef)
+  - [GetUpgradeStatusRequestTypeDef](#getupgradestatusrequesttypedef)
+  - [GetUpgradeStatusResponseResponseTypeDef](#getupgradestatusresponseresponsetypedef)
   - [InboundCrossClusterSearchConnectionStatusTypeDef](#inboundcrossclustersearchconnectionstatustypedef)
   - [InboundCrossClusterSearchConnectionTypeDef](#inboundcrossclustersearchconnectiontypedef)
   - [InstanceCountLimitsTypeDef](#instancecountlimitstypedef)
   - [InstanceLimitsTypeDef](#instancelimitstypedef)
   - [LimitsTypeDef](#limitstypedef)
-  - [ListDomainNamesResponseTypeDef](#listdomainnamesresponsetypedef)
-  - [ListDomainsForPackageResponseTypeDef](#listdomainsforpackageresponsetypedef)
-  - [ListElasticsearchInstanceTypesResponseTypeDef](#listelasticsearchinstancetypesresponsetypedef)
-  - [ListElasticsearchVersionsResponseTypeDef](#listelasticsearchversionsresponsetypedef)
-  - [ListPackagesForDomainResponseTypeDef](#listpackagesfordomainresponsetypedef)
-  - [ListTagsResponseTypeDef](#listtagsresponsetypedef)
+  - [ListDomainNamesResponseResponseTypeDef](#listdomainnamesresponseresponsetypedef)
+  - [ListDomainsForPackageRequestTypeDef](#listdomainsforpackagerequesttypedef)
+  - [ListDomainsForPackageResponseResponseTypeDef](#listdomainsforpackageresponseresponsetypedef)
+  - [ListElasticsearchInstanceTypesRequestTypeDef](#listelasticsearchinstancetypesrequesttypedef)
+  - [ListElasticsearchInstanceTypesResponseResponseTypeDef](#listelasticsearchinstancetypesresponseresponsetypedef)
+  - [ListElasticsearchVersionsRequestTypeDef](#listelasticsearchversionsrequesttypedef)
+  - [ListElasticsearchVersionsResponseResponseTypeDef](#listelasticsearchversionsresponseresponsetypedef)
+  - [ListPackagesForDomainRequestTypeDef](#listpackagesfordomainrequesttypedef)
+  - [ListPackagesForDomainResponseResponseTypeDef](#listpackagesfordomainresponseresponsetypedef)
+  - [ListTagsRequestTypeDef](#listtagsrequesttypedef)
+  - [ListTagsResponseResponseTypeDef](#listtagsresponseresponsetypedef)
   - [LogPublishingOptionTypeDef](#logpublishingoptiontypedef)
   - [LogPublishingOptionsStatusTypeDef](#logpublishingoptionsstatustypedef)
   - [MasterUserOptionsTypeDef](#masteruseroptionstypedef)
@@ -92,9 +123,12 @@ type annotations stubs module
   - [PackageSourceTypeDef](#packagesourcetypedef)
   - [PackageVersionHistoryTypeDef](#packageversionhistorytypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PurchaseReservedElasticsearchInstanceOfferingResponseTypeDef](#purchasereservedelasticsearchinstanceofferingresponsetypedef)
+  - [PurchaseReservedElasticsearchInstanceOfferingRequestTypeDef](#purchasereservedelasticsearchinstanceofferingrequesttypedef)
+  - [PurchaseReservedElasticsearchInstanceOfferingResponseResponseTypeDef](#purchasereservedelasticsearchinstanceofferingresponseresponsetypedef)
   - [RecurringChargeTypeDef](#recurringchargetypedef)
-  - [RejectInboundCrossClusterSearchConnectionResponseTypeDef](#rejectinboundcrossclustersearchconnectionresponsetypedef)
+  - [RejectInboundCrossClusterSearchConnectionRequestTypeDef](#rejectinboundcrossclustersearchconnectionrequesttypedef)
+  - [RejectInboundCrossClusterSearchConnectionResponseResponseTypeDef](#rejectinboundcrossclustersearchconnectionresponseresponsetypedef)
+  - [RemoveTagsRequestTypeDef](#removetagsrequesttypedef)
   - [ReservedElasticsearchInstanceOfferingTypeDef](#reservedelasticsearchinstanceofferingtypedef)
   - [ReservedElasticsearchInstanceTypeDef](#reservedelasticsearchinstancetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
@@ -105,13 +139,17 @@ type annotations stubs module
   - [ServiceSoftwareOptionsTypeDef](#servicesoftwareoptionstypedef)
   - [SnapshotOptionsStatusTypeDef](#snapshotoptionsstatustypedef)
   - [SnapshotOptionsTypeDef](#snapshotoptionstypedef)
-  - [StartElasticsearchServiceSoftwareUpdateResponseTypeDef](#startelasticsearchservicesoftwareupdateresponsetypedef)
+  - [StartElasticsearchServiceSoftwareUpdateRequestTypeDef](#startelasticsearchservicesoftwareupdaterequesttypedef)
+  - [StartElasticsearchServiceSoftwareUpdateResponseResponseTypeDef](#startelasticsearchservicesoftwareupdateresponseresponsetypedef)
   - [StorageTypeLimitTypeDef](#storagetypelimittypedef)
   - [StorageTypeTypeDef](#storagetypetypedef)
   - [TagTypeDef](#tagtypedef)
-  - [UpdateElasticsearchDomainConfigResponseTypeDef](#updateelasticsearchdomainconfigresponsetypedef)
-  - [UpdatePackageResponseTypeDef](#updatepackageresponsetypedef)
-  - [UpgradeElasticsearchDomainResponseTypeDef](#upgradeelasticsearchdomainresponsetypedef)
+  - [UpdateElasticsearchDomainConfigRequestTypeDef](#updateelasticsearchdomainconfigrequesttypedef)
+  - [UpdateElasticsearchDomainConfigResponseResponseTypeDef](#updateelasticsearchdomainconfigresponseresponsetypedef)
+  - [UpdatePackageRequestTypeDef](#updatepackagerequesttypedef)
+  - [UpdatePackageResponseResponseTypeDef](#updatepackageresponseresponsetypedef)
+  - [UpgradeElasticsearchDomainRequestTypeDef](#upgradeelasticsearchdomainrequesttypedef)
+  - [UpgradeElasticsearchDomainResponseResponseTypeDef](#upgradeelasticsearchdomainresponseresponsetypedef)
   - [UpgradeHistoryTypeDef](#upgradehistorytypedef)
   - [UpgradeStepItemTypeDef](#upgradestepitemtypedef)
   - [VPCDerivedInfoStatusTypeDef](#vpcderivedinfostatustypedef)
@@ -119,16 +157,28 @@ type annotations stubs module
   - [VPCOptionsTypeDef](#vpcoptionstypedef)
   - [ZoneAwarenessConfigTypeDef](#zoneawarenessconfigtypedef)
 
-## AcceptInboundCrossClusterSearchConnectionResponseTypeDef
+## AcceptInboundCrossClusterSearchConnectionRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import AcceptInboundCrossClusterSearchConnectionResponseTypeDef
+from mypy_boto3_es.type_defs import AcceptInboundCrossClusterSearchConnectionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `CrossClusterSearchConnectionId`: `str`
+
+## AcceptInboundCrossClusterSearchConnectionResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import AcceptInboundCrossClusterSearchConnectionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `CrossClusterSearchConnection`:
   [InboundCrossClusterSearchConnectionTypeDef](./type_defs.md#inboundcrossclustersearchconnectiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## AccessPoliciesStatusTypeDef
 
@@ -140,6 +190,17 @@ Required fields:
 
 - `Options`: `str`
 - `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
+
+## AddTagsRequestTypeDef
+
+```python
+from mypy_boto3_es.type_defs import AddTagsRequestTypeDef
+```
+
+Required fields:
+
+- `ARN`: `str`
+- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## AdditionalLimitTypeDef
 
@@ -203,16 +264,29 @@ Optional fields:
 - `SAMLOptions`:
   [SAMLOptionsOutputTypeDef](./type_defs.md#samloptionsoutputtypedef)
 
-## AssociatePackageResponseTypeDef
+## AssociatePackageRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import AssociatePackageResponseTypeDef
+from mypy_boto3_es.type_defs import AssociatePackageRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `PackageID`: `str`
+- `DomainName`: `str`
+
+## AssociatePackageResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import AssociatePackageResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DomainPackageDetails`:
   [DomainPackageDetailsTypeDef](./type_defs.md#domainpackagedetailstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## AutoTuneDetailsTypeDef
 
@@ -233,7 +307,7 @@ from mypy_boto3_es.type_defs import AutoTuneMaintenanceScheduleTypeDef
 
 Optional fields:
 
-- `StartAt`: `datetime`
+- `StartAt`: `Union`\[`datetime`, `str`\]
 - `Duration`: [DurationTypeDef](./type_defs.md#durationtypedef)
 - `CronExpressionForRecurrence`: `str`
 
@@ -256,12 +330,10 @@ Optional fields:
 from mypy_boto3_es.type_defs import AutoTuneOptionsOutputTypeDef
 ```
 
-Required fields:
+Optional fields:
 
 - `State`: [AutoTuneStateType](./literals.md#autotunestatetype)
 - `ErrorMessage`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## AutoTuneOptionsStatusTypeDef
 
@@ -320,16 +392,28 @@ Optional fields:
 - `AutoTuneDetails`:
   [AutoTuneDetailsTypeDef](./type_defs.md#autotunedetailstypedef)
 
-## CancelElasticsearchServiceSoftwareUpdateResponseTypeDef
+## CancelElasticsearchServiceSoftwareUpdateRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import CancelElasticsearchServiceSoftwareUpdateResponseTypeDef
+from mypy_boto3_es.type_defs import CancelElasticsearchServiceSoftwareUpdateRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DomainName`: `str`
+
+## CancelElasticsearchServiceSoftwareUpdateResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import CancelElasticsearchServiceSoftwareUpdateResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ServiceSoftwareOptions`:
   [ServiceSoftwareOptionsTypeDef](./type_defs.md#servicesoftwareoptionstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CognitoOptionsStatusTypeDef
 
@@ -376,24 +460,77 @@ Optional fields:
 - `SourceVersion`: `str`
 - `TargetVersions`: `List`\[`str`\]
 
-## CreateElasticsearchDomainResponseTypeDef
+## CreateElasticsearchDomainRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import CreateElasticsearchDomainResponseTypeDef
+from mypy_boto3_es.type_defs import CreateElasticsearchDomainRequestTypeDef
 ```
 
+Required fields:
+
+- `DomainName`: `str`
+
 Optional fields:
+
+- `ElasticsearchVersion`: `str`
+- `ElasticsearchClusterConfig`:
+  [ElasticsearchClusterConfigTypeDef](./type_defs.md#elasticsearchclusterconfigtypedef)
+- `EBSOptions`: [EBSOptionsTypeDef](./type_defs.md#ebsoptionstypedef)
+- `AccessPolicies`: `str`
+- `SnapshotOptions`:
+  [SnapshotOptionsTypeDef](./type_defs.md#snapshotoptionstypedef)
+- `VPCOptions`: [VPCOptionsTypeDef](./type_defs.md#vpcoptionstypedef)
+- `CognitoOptions`:
+  [CognitoOptionsTypeDef](./type_defs.md#cognitooptionstypedef)
+- `EncryptionAtRestOptions`:
+  [EncryptionAtRestOptionsTypeDef](./type_defs.md#encryptionatrestoptionstypedef)
+- `NodeToNodeEncryptionOptions`:
+  [NodeToNodeEncryptionOptionsTypeDef](./type_defs.md#nodetonodeencryptionoptionstypedef)
+- `AdvancedOptions`: `Dict`\[`str`, `str`\]
+- `LogPublishingOptions`: `Dict`\[[LogTypeType](./literals.md#logtypetype),
+  [LogPublishingOptionTypeDef](./type_defs.md#logpublishingoptiontypedef)\]
+- `DomainEndpointOptions`:
+  [DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef)
+- `AdvancedSecurityOptions`:
+  [AdvancedSecurityOptionsInputTypeDef](./type_defs.md#advancedsecurityoptionsinputtypedef)
+- `AutoTuneOptions`:
+  [AutoTuneOptionsInputTypeDef](./type_defs.md#autotuneoptionsinputtypedef)
+- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateElasticsearchDomainResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import CreateElasticsearchDomainResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DomainStatus`:
   [ElasticsearchDomainStatusTypeDef](./type_defs.md#elasticsearchdomainstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateOutboundCrossClusterSearchConnectionResponseTypeDef
+## CreateOutboundCrossClusterSearchConnectionRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import CreateOutboundCrossClusterSearchConnectionResponseTypeDef
+from mypy_boto3_es.type_defs import CreateOutboundCrossClusterSearchConnectionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `SourceDomainInfo`:
+  [DomainInformationTypeDef](./type_defs.md#domaininformationtypedef)
+- `DestinationDomainInfo`:
+  [DomainInformationTypeDef](./type_defs.md#domaininformationtypedef)
+- `ConnectionAlias`: `str`
+
+## CreateOutboundCrossClusterSearchConnectionResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import CreateOutboundCrossClusterSearchConnectionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `SourceDomainInfo`:
   [DomainInformationTypeDef](./type_defs.md#domaininformationtypedef)
@@ -403,140 +540,308 @@ Optional fields:
 - `ConnectionStatus`:
   [OutboundCrossClusterSearchConnectionStatusTypeDef](./type_defs.md#outboundcrossclustersearchconnectionstatustypedef)
 - `CrossClusterSearchConnectionId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePackageResponseTypeDef
+## CreatePackageRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import CreatePackageResponseTypeDef
+from mypy_boto3_es.type_defs import CreatePackageRequestTypeDef
 ```
 
+Required fields:
+
+- `PackageName`: `str`
+- `PackageType`: `Literal['TXT-DICTIONARY']` (see
+  [PackageTypeType](./literals.md#packagetypetype))
+- `PackageSource`: [PackageSourceTypeDef](./type_defs.md#packagesourcetypedef)
+
 Optional fields:
+
+- `PackageDescription`: `str`
+
+## CreatePackageResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import CreatePackageResponseResponseTypeDef
+```
+
+Required fields:
 
 - `PackageDetails`:
   [PackageDetailsTypeDef](./type_defs.md#packagedetailstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteElasticsearchDomainResponseTypeDef
+## DeleteElasticsearchDomainRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import DeleteElasticsearchDomainResponseTypeDef
+from mypy_boto3_es.type_defs import DeleteElasticsearchDomainRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DomainName`: `str`
+
+## DeleteElasticsearchDomainResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import DeleteElasticsearchDomainResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DomainStatus`:
   [ElasticsearchDomainStatusTypeDef](./type_defs.md#elasticsearchdomainstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteInboundCrossClusterSearchConnectionResponseTypeDef
+## DeleteInboundCrossClusterSearchConnectionRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import DeleteInboundCrossClusterSearchConnectionResponseTypeDef
+from mypy_boto3_es.type_defs import DeleteInboundCrossClusterSearchConnectionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `CrossClusterSearchConnectionId`: `str`
+
+## DeleteInboundCrossClusterSearchConnectionResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import DeleteInboundCrossClusterSearchConnectionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `CrossClusterSearchConnection`:
   [InboundCrossClusterSearchConnectionTypeDef](./type_defs.md#inboundcrossclustersearchconnectiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteOutboundCrossClusterSearchConnectionResponseTypeDef
+## DeleteOutboundCrossClusterSearchConnectionRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import DeleteOutboundCrossClusterSearchConnectionResponseTypeDef
+from mypy_boto3_es.type_defs import DeleteOutboundCrossClusterSearchConnectionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `CrossClusterSearchConnectionId`: `str`
+
+## DeleteOutboundCrossClusterSearchConnectionResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import DeleteOutboundCrossClusterSearchConnectionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `CrossClusterSearchConnection`:
   [OutboundCrossClusterSearchConnectionTypeDef](./type_defs.md#outboundcrossclustersearchconnectiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeletePackageResponseTypeDef
+## DeletePackageRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import DeletePackageResponseTypeDef
+from mypy_boto3_es.type_defs import DeletePackageRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `PackageID`: `str`
+
+## DeletePackageResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import DeletePackageResponseResponseTypeDef
+```
+
+Required fields:
 
 - `PackageDetails`:
   [PackageDetailsTypeDef](./type_defs.md#packagedetailstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDomainAutoTunesResponseTypeDef
+## DescribeDomainAutoTunesRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import DescribeDomainAutoTunesResponseTypeDef
+from mypy_boto3_es.type_defs import DescribeDomainAutoTunesRequestTypeDef
 ```
+
+Required fields:
+
+- `DomainName`: `str`
 
 Optional fields:
 
-- `AutoTunes`: `List`\[[AutoTuneTypeDef](./type_defs.md#autotunetypedef)\]
+- `MaxResults`: `int`
 - `NextToken`: `str`
 
-## DescribeElasticsearchDomainConfigResponseTypeDef
+## DescribeDomainAutoTunesResponseResponseTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import DescribeElasticsearchDomainConfigResponseTypeDef
+from mypy_boto3_es.type_defs import DescribeDomainAutoTunesResponseResponseTypeDef
+```
+
+Required fields:
+
+- `AutoTunes`: `List`\[[AutoTuneTypeDef](./type_defs.md#autotunetypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeElasticsearchDomainConfigRequestTypeDef
+
+```python
+from mypy_boto3_es.type_defs import DescribeElasticsearchDomainConfigRequestTypeDef
+```
+
+Required fields:
+
+- `DomainName`: `str`
+
+## DescribeElasticsearchDomainConfigResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import DescribeElasticsearchDomainConfigResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `DomainConfig`:
   [ElasticsearchDomainConfigTypeDef](./type_defs.md#elasticsearchdomainconfigtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeElasticsearchDomainResponseTypeDef
+## DescribeElasticsearchDomainRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import DescribeElasticsearchDomainResponseTypeDef
+from mypy_boto3_es.type_defs import DescribeElasticsearchDomainRequestTypeDef
+```
+
+Required fields:
+
+- `DomainName`: `str`
+
+## DescribeElasticsearchDomainResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import DescribeElasticsearchDomainResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `DomainStatus`:
   [ElasticsearchDomainStatusTypeDef](./type_defs.md#elasticsearchdomainstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeElasticsearchDomainsResponseTypeDef
+## DescribeElasticsearchDomainsRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import DescribeElasticsearchDomainsResponseTypeDef
+from mypy_boto3_es.type_defs import DescribeElasticsearchDomainsRequestTypeDef
+```
+
+Required fields:
+
+- `DomainNames`: `List`\[`str`\]
+
+## DescribeElasticsearchDomainsResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import DescribeElasticsearchDomainsResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `DomainStatusList`:
   `List`\[[ElasticsearchDomainStatusTypeDef](./type_defs.md#elasticsearchdomainstatustypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeElasticsearchInstanceTypeLimitsResponseTypeDef
+## DescribeElasticsearchInstanceTypeLimitsRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import DescribeElasticsearchInstanceTypeLimitsResponseTypeDef
+from mypy_boto3_es.type_defs import DescribeElasticsearchInstanceTypeLimitsRequestTypeDef
 ```
 
+Required fields:
+
+- `InstanceType`:
+  [ESPartitionInstanceTypeType](./literals.md#espartitioninstancetypetype)
+- `ElasticsearchVersion`: `str`
+
 Optional fields:
+
+- `DomainName`: `str`
+
+## DescribeElasticsearchInstanceTypeLimitsResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import DescribeElasticsearchInstanceTypeLimitsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `LimitsByRole`: `Dict`\[`str`,
   [LimitsTypeDef](./type_defs.md#limitstypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInboundCrossClusterSearchConnectionsResponseTypeDef
+## DescribeInboundCrossClusterSearchConnectionsRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import DescribeInboundCrossClusterSearchConnectionsResponseTypeDef
+from mypy_boto3_es.type_defs import DescribeInboundCrossClusterSearchConnectionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeInboundCrossClusterSearchConnectionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import DescribeInboundCrossClusterSearchConnectionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `CrossClusterSearchConnections`:
   `List`\[[InboundCrossClusterSearchConnectionTypeDef](./type_defs.md#inboundcrossclustersearchconnectiontypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeOutboundCrossClusterSearchConnectionsResponseTypeDef
+## DescribeOutboundCrossClusterSearchConnectionsRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import DescribeOutboundCrossClusterSearchConnectionsResponseTypeDef
+from mypy_boto3_es.type_defs import DescribeOutboundCrossClusterSearchConnectionsRequestTypeDef
 ```
 
 Optional fields:
 
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeOutboundCrossClusterSearchConnectionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import DescribeOutboundCrossClusterSearchConnectionsResponseResponseTypeDef
+```
+
+Required fields:
+
 - `CrossClusterSearchConnections`:
   `List`\[[OutboundCrossClusterSearchConnectionTypeDef](./type_defs.md#outboundcrossclustersearchconnectiontypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribePackagesFilterTypeDef
 
@@ -550,52 +855,108 @@ Optional fields:
   [DescribePackagesFilterNameType](./literals.md#describepackagesfilternametype)
 - `Value`: `List`\[`str`\]
 
-## DescribePackagesResponseTypeDef
+## DescribePackagesRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import DescribePackagesResponseTypeDef
+from mypy_boto3_es.type_defs import DescribePackagesRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`:
+  `List`\[[DescribePackagesFilterTypeDef](./type_defs.md#describepackagesfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribePackagesResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import DescribePackagesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `PackageDetailsList`:
   `List`\[[PackageDetailsTypeDef](./type_defs.md#packagedetailstypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeReservedElasticsearchInstanceOfferingsResponseTypeDef
+## DescribeReservedElasticsearchInstanceOfferingsRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import DescribeReservedElasticsearchInstanceOfferingsResponseTypeDef
+from mypy_boto3_es.type_defs import DescribeReservedElasticsearchInstanceOfferingsRequestTypeDef
 ```
 
 Optional fields:
+
+- `ReservedElasticsearchInstanceOfferingId`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeReservedElasticsearchInstanceOfferingsResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import DescribeReservedElasticsearchInstanceOfferingsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `ReservedElasticsearchInstanceOfferings`:
   `List`\[[ReservedElasticsearchInstanceOfferingTypeDef](./type_defs.md#reservedelasticsearchinstanceofferingtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeReservedElasticsearchInstancesResponseTypeDef
+## DescribeReservedElasticsearchInstancesRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import DescribeReservedElasticsearchInstancesResponseTypeDef
+from mypy_boto3_es.type_defs import DescribeReservedElasticsearchInstancesRequestTypeDef
 ```
 
 Optional fields:
+
+- `ReservedElasticsearchInstanceId`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeReservedElasticsearchInstancesResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import DescribeReservedElasticsearchInstancesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `ReservedElasticsearchInstances`:
   `List`\[[ReservedElasticsearchInstanceTypeDef](./type_defs.md#reservedelasticsearchinstancetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DissociatePackageResponseTypeDef
+## DissociatePackageRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import DissociatePackageResponseTypeDef
+from mypy_boto3_es.type_defs import DissociatePackageRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `PackageID`: `str`
+- `DomainName`: `str`
+
+## DissociatePackageResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import DissociatePackageResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DomainPackageDetails`:
   [DomainPackageDetailsTypeDef](./type_defs.md#domainpackagedetailstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DomainEndpointOptionsStatusTypeDef
 
@@ -880,53 +1241,111 @@ Optional fields:
 - `Name`: `str`
 - `Values`: `List`\[`str`\]
 
-## GetCompatibleElasticsearchVersionsResponseTypeDef
+## GetCompatibleElasticsearchVersionsRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import GetCompatibleElasticsearchVersionsResponseTypeDef
+from mypy_boto3_es.type_defs import GetCompatibleElasticsearchVersionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `DomainName`: `str`
+
+## GetCompatibleElasticsearchVersionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import GetCompatibleElasticsearchVersionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `CompatibleElasticsearchVersions`:
   `List`\[[CompatibleVersionsMapTypeDef](./type_defs.md#compatibleversionsmaptypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPackageVersionHistoryResponseTypeDef
+## GetPackageVersionHistoryRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import GetPackageVersionHistoryResponseTypeDef
+from mypy_boto3_es.type_defs import GetPackageVersionHistoryRequestTypeDef
 ```
 
+Required fields:
+
+- `PackageID`: `str`
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## GetPackageVersionHistoryResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import GetPackageVersionHistoryResponseResponseTypeDef
+```
+
+Required fields:
 
 - `PackageID`: `str`
 - `PackageVersionHistoryList`:
   `List`\[[PackageVersionHistoryTypeDef](./type_defs.md#packageversionhistorytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetUpgradeHistoryResponseTypeDef
+## GetUpgradeHistoryRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import GetUpgradeHistoryResponseTypeDef
+from mypy_boto3_es.type_defs import GetUpgradeHistoryRequestTypeDef
 ```
 
+Required fields:
+
+- `DomainName`: `str`
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## GetUpgradeHistoryResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import GetUpgradeHistoryResponseResponseTypeDef
+```
+
+Required fields:
 
 - `UpgradeHistories`:
   `List`\[[UpgradeHistoryTypeDef](./type_defs.md#upgradehistorytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetUpgradeStatusResponseTypeDef
+## GetUpgradeStatusRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import GetUpgradeStatusResponseTypeDef
+from mypy_boto3_es.type_defs import GetUpgradeStatusRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DomainName`: `str`
+
+## GetUpgradeStatusResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import GetUpgradeStatusResponseResponseTypeDef
+```
+
+Required fields:
 
 - `UpgradeStep`: [UpgradeStepType](./literals.md#upgradesteptype)
 - `StepStatus`: [UpgradeStatusType](./literals.md#upgradestatustype)
 - `UpgradeName`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## InboundCrossClusterSearchConnectionStatusTypeDef
 
@@ -993,73 +1412,152 @@ Optional fields:
 - `AdditionalLimits`:
   `List`\[[AdditionalLimitTypeDef](./type_defs.md#additionallimittypedef)\]
 
-## ListDomainNamesResponseTypeDef
+## ListDomainNamesResponseResponseTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import ListDomainNamesResponseTypeDef
+from mypy_boto3_es.type_defs import ListDomainNamesResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `DomainNames`:
   `List`\[[DomainInfoTypeDef](./type_defs.md#domaininfotypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDomainsForPackageResponseTypeDef
+## ListDomainsForPackageRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import ListDomainsForPackageResponseTypeDef
+from mypy_boto3_es.type_defs import ListDomainsForPackageRequestTypeDef
 ```
 
+Required fields:
+
+- `PackageID`: `str`
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListDomainsForPackageResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import ListDomainsForPackageResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DomainPackageDetailsList`:
   `List`\[[DomainPackageDetailsTypeDef](./type_defs.md#domainpackagedetailstypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListElasticsearchInstanceTypesResponseTypeDef
+## ListElasticsearchInstanceTypesRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import ListElasticsearchInstanceTypesResponseTypeDef
+from mypy_boto3_es.type_defs import ListElasticsearchInstanceTypesRequestTypeDef
 ```
 
+Required fields:
+
+- `ElasticsearchVersion`: `str`
+
 Optional fields:
+
+- `DomainName`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListElasticsearchInstanceTypesResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import ListElasticsearchInstanceTypesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ElasticsearchInstanceTypes`:
   `List`\[[ESPartitionInstanceTypeType](./literals.md#espartitioninstancetypetype)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListElasticsearchVersionsResponseTypeDef
+## ListElasticsearchVersionsRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import ListElasticsearchVersionsResponseTypeDef
+from mypy_boto3_es.type_defs import ListElasticsearchVersionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListElasticsearchVersionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import ListElasticsearchVersionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ElasticsearchVersions`: `List`\[`str`\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPackagesForDomainResponseTypeDef
+## ListPackagesForDomainRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import ListPackagesForDomainResponseTypeDef
+from mypy_boto3_es.type_defs import ListPackagesForDomainRequestTypeDef
 ```
 
+Required fields:
+
+- `DomainName`: `str`
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListPackagesForDomainResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import ListPackagesForDomainResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DomainPackageDetailsList`:
   `List`\[[DomainPackageDetailsTypeDef](./type_defs.md#domainpackagedetailstypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsResponseTypeDef
+## ListTagsRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import ListTagsResponseTypeDef
+from mypy_boto3_es.type_defs import ListTagsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ARN`: `str`
+
+## ListTagsResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import ListTagsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LogPublishingOptionTypeDef
 
@@ -1218,16 +1716,33 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## PurchaseReservedElasticsearchInstanceOfferingResponseTypeDef
+## PurchaseReservedElasticsearchInstanceOfferingRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import PurchaseReservedElasticsearchInstanceOfferingResponseTypeDef
+from mypy_boto3_es.type_defs import PurchaseReservedElasticsearchInstanceOfferingRequestTypeDef
 ```
+
+Required fields:
+
+- `ReservedElasticsearchInstanceOfferingId`: `str`
+- `ReservationName`: `str`
 
 Optional fields:
 
+- `InstanceCount`: `int`
+
+## PurchaseReservedElasticsearchInstanceOfferingResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import PurchaseReservedElasticsearchInstanceOfferingResponseResponseTypeDef
+```
+
+Required fields:
+
 - `ReservedElasticsearchInstanceId`: `str`
 - `ReservationName`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## RecurringChargeTypeDef
 
@@ -1240,16 +1755,39 @@ Optional fields:
 - `RecurringChargeAmount`: `float`
 - `RecurringChargeFrequency`: `str`
 
-## RejectInboundCrossClusterSearchConnectionResponseTypeDef
+## RejectInboundCrossClusterSearchConnectionRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import RejectInboundCrossClusterSearchConnectionResponseTypeDef
+from mypy_boto3_es.type_defs import RejectInboundCrossClusterSearchConnectionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `CrossClusterSearchConnectionId`: `str`
+
+## RejectInboundCrossClusterSearchConnectionResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import RejectInboundCrossClusterSearchConnectionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `CrossClusterSearchConnection`:
   [InboundCrossClusterSearchConnectionTypeDef](./type_defs.md#inboundcrossclustersearchconnectiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## RemoveTagsRequestTypeDef
+
+```python
+from mypy_boto3_es.type_defs import RemoveTagsRequestTypeDef
+```
+
+Required fields:
+
+- `ARN`: `str`
+- `TagKeys`: `List`\[`str`\]
 
 ## ReservedElasticsearchInstanceOfferingTypeDef
 
@@ -1343,15 +1881,13 @@ Optional fields:
 from mypy_boto3_es.type_defs import SAMLOptionsOutputTypeDef
 ```
 
-Required fields:
+Optional fields:
 
 - `Enabled`: `bool`
 - `Idp`: [SAMLIdpTypeDef](./type_defs.md#samlidptypedef)
 - `SubjectKey`: `str`
 - `RolesKey`: `str`
 - `SessionTimeoutMinutes`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ScheduledAutoTuneDetailsTypeDef
 
@@ -1406,16 +1942,28 @@ Optional fields:
 
 - `AutomatedSnapshotStartHour`: `int`
 
-## StartElasticsearchServiceSoftwareUpdateResponseTypeDef
+## StartElasticsearchServiceSoftwareUpdateRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import StartElasticsearchServiceSoftwareUpdateResponseTypeDef
+from mypy_boto3_es.type_defs import StartElasticsearchServiceSoftwareUpdateRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DomainName`: `str`
+
+## StartElasticsearchServiceSoftwareUpdateResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import StartElasticsearchServiceSoftwareUpdateResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ServiceSoftwareOptions`:
   [ServiceSoftwareOptionsTypeDef](./type_defs.md#servicesoftwareoptionstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## StorageTypeLimitTypeDef
 
@@ -1452,39 +2000,111 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## UpdateElasticsearchDomainConfigResponseTypeDef
+## UpdateElasticsearchDomainConfigRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import UpdateElasticsearchDomainConfigResponseTypeDef
+from mypy_boto3_es.type_defs import UpdateElasticsearchDomainConfigRequestTypeDef
+```
+
+Required fields:
+
+- `DomainName`: `str`
+
+Optional fields:
+
+- `ElasticsearchClusterConfig`:
+  [ElasticsearchClusterConfigTypeDef](./type_defs.md#elasticsearchclusterconfigtypedef)
+- `EBSOptions`: [EBSOptionsTypeDef](./type_defs.md#ebsoptionstypedef)
+- `SnapshotOptions`:
+  [SnapshotOptionsTypeDef](./type_defs.md#snapshotoptionstypedef)
+- `VPCOptions`: [VPCOptionsTypeDef](./type_defs.md#vpcoptionstypedef)
+- `CognitoOptions`:
+  [CognitoOptionsTypeDef](./type_defs.md#cognitooptionstypedef)
+- `AdvancedOptions`: `Dict`\[`str`, `str`\]
+- `AccessPolicies`: `str`
+- `LogPublishingOptions`: `Dict`\[[LogTypeType](./literals.md#logtypetype),
+  [LogPublishingOptionTypeDef](./type_defs.md#logpublishingoptiontypedef)\]
+- `DomainEndpointOptions`:
+  [DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef)
+- `AdvancedSecurityOptions`:
+  [AdvancedSecurityOptionsInputTypeDef](./type_defs.md#advancedsecurityoptionsinputtypedef)
+- `NodeToNodeEncryptionOptions`:
+  [NodeToNodeEncryptionOptionsTypeDef](./type_defs.md#nodetonodeencryptionoptionstypedef)
+- `EncryptionAtRestOptions`:
+  [EncryptionAtRestOptionsTypeDef](./type_defs.md#encryptionatrestoptionstypedef)
+- `AutoTuneOptions`:
+  [AutoTuneOptionsTypeDef](./type_defs.md#autotuneoptionstypedef)
+
+## UpdateElasticsearchDomainConfigResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import UpdateElasticsearchDomainConfigResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `DomainConfig`:
   [ElasticsearchDomainConfigTypeDef](./type_defs.md#elasticsearchdomainconfigtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdatePackageResponseTypeDef
+## UpdatePackageRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import UpdatePackageResponseTypeDef
+from mypy_boto3_es.type_defs import UpdatePackageRequestTypeDef
 ```
 
+Required fields:
+
+- `PackageID`: `str`
+- `PackageSource`: [PackageSourceTypeDef](./type_defs.md#packagesourcetypedef)
+
 Optional fields:
+
+- `PackageDescription`: `str`
+- `CommitMessage`: `str`
+
+## UpdatePackageResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import UpdatePackageResponseResponseTypeDef
+```
+
+Required fields:
 
 - `PackageDetails`:
   [PackageDetailsTypeDef](./type_defs.md#packagedetailstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpgradeElasticsearchDomainResponseTypeDef
+## UpgradeElasticsearchDomainRequestTypeDef
 
 ```python
-from mypy_boto3_es.type_defs import UpgradeElasticsearchDomainResponseTypeDef
+from mypy_boto3_es.type_defs import UpgradeElasticsearchDomainRequestTypeDef
 ```
 
+Required fields:
+
+- `DomainName`: `str`
+- `TargetVersion`: `str`
+
 Optional fields:
+
+- `PerformCheckOnly`: `bool`
+
+## UpgradeElasticsearchDomainResponseResponseTypeDef
+
+```python
+from mypy_boto3_es.type_defs import UpgradeElasticsearchDomainResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DomainName`: `str`
 - `TargetVersion`: `str`
 - `PerformCheckOnly`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UpgradeHistoryTypeDef
 

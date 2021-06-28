@@ -14,15 +14,21 @@ type annotations stubs module
   - [ApprovalRuleTypeDef](#approvalruletypedef)
   - [ApprovalStateChangedEventMetadataTypeDef](#approvalstatechangedeventmetadatatypedef)
   - [ApprovalTypeDef](#approvaltypedef)
+  - [AssociateApprovalRuleTemplateWithRepositoryInputTypeDef](#associateapprovalruletemplatewithrepositoryinputtypedef)
   - [BatchAssociateApprovalRuleTemplateWithRepositoriesErrorTypeDef](#batchassociateapprovalruletemplatewithrepositorieserrortypedef)
-  - [BatchAssociateApprovalRuleTemplateWithRepositoriesOutputTypeDef](#batchassociateapprovalruletemplatewithrepositoriesoutputtypedef)
+  - [BatchAssociateApprovalRuleTemplateWithRepositoriesInputTypeDef](#batchassociateapprovalruletemplatewithrepositoriesinputtypedef)
+  - [BatchAssociateApprovalRuleTemplateWithRepositoriesOutputResponseTypeDef](#batchassociateapprovalruletemplatewithrepositoriesoutputresponsetypedef)
   - [BatchDescribeMergeConflictsErrorTypeDef](#batchdescribemergeconflictserrortypedef)
-  - [BatchDescribeMergeConflictsOutputTypeDef](#batchdescribemergeconflictsoutputtypedef)
+  - [BatchDescribeMergeConflictsInputTypeDef](#batchdescribemergeconflictsinputtypedef)
+  - [BatchDescribeMergeConflictsOutputResponseTypeDef](#batchdescribemergeconflictsoutputresponsetypedef)
   - [BatchDisassociateApprovalRuleTemplateFromRepositoriesErrorTypeDef](#batchdisassociateapprovalruletemplatefromrepositorieserrortypedef)
-  - [BatchDisassociateApprovalRuleTemplateFromRepositoriesOutputTypeDef](#batchdisassociateapprovalruletemplatefromrepositoriesoutputtypedef)
+  - [BatchDisassociateApprovalRuleTemplateFromRepositoriesInputTypeDef](#batchdisassociateapprovalruletemplatefromrepositoriesinputtypedef)
+  - [BatchDisassociateApprovalRuleTemplateFromRepositoriesOutputResponseTypeDef](#batchdisassociateapprovalruletemplatefromrepositoriesoutputresponsetypedef)
   - [BatchGetCommitsErrorTypeDef](#batchgetcommitserrortypedef)
-  - [BatchGetCommitsOutputTypeDef](#batchgetcommitsoutputtypedef)
-  - [BatchGetRepositoriesOutputTypeDef](#batchgetrepositoriesoutputtypedef)
+  - [BatchGetCommitsInputTypeDef](#batchgetcommitsinputtypedef)
+  - [BatchGetCommitsOutputResponseTypeDef](#batchgetcommitsoutputresponsetypedef)
+  - [BatchGetRepositoriesInputTypeDef](#batchgetrepositoriesinputtypedef)
+  - [BatchGetRepositoriesOutputResponseTypeDef](#batchgetrepositoriesoutputresponsetypedef)
   - [BlobMetadataTypeDef](#blobmetadatatypedef)
   - [BranchInfoTypeDef](#branchinfotypedef)
   - [CommentTypeDef](#commenttypedef)
@@ -32,73 +38,126 @@ type annotations stubs module
   - [ConflictMetadataTypeDef](#conflictmetadatatypedef)
   - [ConflictResolutionTypeDef](#conflictresolutiontypedef)
   - [ConflictTypeDef](#conflicttypedef)
-  - [CreateApprovalRuleTemplateOutputTypeDef](#createapprovalruletemplateoutputtypedef)
-  - [CreateCommitOutputTypeDef](#createcommitoutputtypedef)
-  - [CreatePullRequestApprovalRuleOutputTypeDef](#createpullrequestapprovalruleoutputtypedef)
-  - [CreatePullRequestOutputTypeDef](#createpullrequestoutputtypedef)
-  - [CreateRepositoryOutputTypeDef](#createrepositoryoutputtypedef)
-  - [CreateUnreferencedMergeCommitOutputTypeDef](#createunreferencedmergecommitoutputtypedef)
-  - [DeleteApprovalRuleTemplateOutputTypeDef](#deleteapprovalruletemplateoutputtypedef)
-  - [DeleteBranchOutputTypeDef](#deletebranchoutputtypedef)
-  - [DeleteCommentContentOutputTypeDef](#deletecommentcontentoutputtypedef)
+  - [CreateApprovalRuleTemplateInputTypeDef](#createapprovalruletemplateinputtypedef)
+  - [CreateApprovalRuleTemplateOutputResponseTypeDef](#createapprovalruletemplateoutputresponsetypedef)
+  - [CreateBranchInputTypeDef](#createbranchinputtypedef)
+  - [CreateCommitInputTypeDef](#createcommitinputtypedef)
+  - [CreateCommitOutputResponseTypeDef](#createcommitoutputresponsetypedef)
+  - [CreatePullRequestApprovalRuleInputTypeDef](#createpullrequestapprovalruleinputtypedef)
+  - [CreatePullRequestApprovalRuleOutputResponseTypeDef](#createpullrequestapprovalruleoutputresponsetypedef)
+  - [CreatePullRequestInputTypeDef](#createpullrequestinputtypedef)
+  - [CreatePullRequestOutputResponseTypeDef](#createpullrequestoutputresponsetypedef)
+  - [CreateRepositoryInputTypeDef](#createrepositoryinputtypedef)
+  - [CreateRepositoryOutputResponseTypeDef](#createrepositoryoutputresponsetypedef)
+  - [CreateUnreferencedMergeCommitInputTypeDef](#createunreferencedmergecommitinputtypedef)
+  - [CreateUnreferencedMergeCommitOutputResponseTypeDef](#createunreferencedmergecommitoutputresponsetypedef)
+  - [DeleteApprovalRuleTemplateInputTypeDef](#deleteapprovalruletemplateinputtypedef)
+  - [DeleteApprovalRuleTemplateOutputResponseTypeDef](#deleteapprovalruletemplateoutputresponsetypedef)
+  - [DeleteBranchInputTypeDef](#deletebranchinputtypedef)
+  - [DeleteBranchOutputResponseTypeDef](#deletebranchoutputresponsetypedef)
+  - [DeleteCommentContentInputTypeDef](#deletecommentcontentinputtypedef)
+  - [DeleteCommentContentOutputResponseTypeDef](#deletecommentcontentoutputresponsetypedef)
   - [DeleteFileEntryTypeDef](#deletefileentrytypedef)
-  - [DeleteFileOutputTypeDef](#deletefileoutputtypedef)
-  - [DeletePullRequestApprovalRuleOutputTypeDef](#deletepullrequestapprovalruleoutputtypedef)
-  - [DeleteRepositoryOutputTypeDef](#deleterepositoryoutputtypedef)
-  - [DescribeMergeConflictsOutputTypeDef](#describemergeconflictsoutputtypedef)
-  - [DescribePullRequestEventsOutputTypeDef](#describepullrequesteventsoutputtypedef)
+  - [DeleteFileInputTypeDef](#deletefileinputtypedef)
+  - [DeleteFileOutputResponseTypeDef](#deletefileoutputresponsetypedef)
+  - [DeletePullRequestApprovalRuleInputTypeDef](#deletepullrequestapprovalruleinputtypedef)
+  - [DeletePullRequestApprovalRuleOutputResponseTypeDef](#deletepullrequestapprovalruleoutputresponsetypedef)
+  - [DeleteRepositoryInputTypeDef](#deleterepositoryinputtypedef)
+  - [DeleteRepositoryOutputResponseTypeDef](#deleterepositoryoutputresponsetypedef)
+  - [DescribeMergeConflictsInputTypeDef](#describemergeconflictsinputtypedef)
+  - [DescribeMergeConflictsOutputResponseTypeDef](#describemergeconflictsoutputresponsetypedef)
+  - [DescribePullRequestEventsInputTypeDef](#describepullrequesteventsinputtypedef)
+  - [DescribePullRequestEventsOutputResponseTypeDef](#describepullrequesteventsoutputresponsetypedef)
   - [DifferenceTypeDef](#differencetypedef)
-  - [EvaluatePullRequestApprovalRulesOutputTypeDef](#evaluatepullrequestapprovalrulesoutputtypedef)
+  - [DisassociateApprovalRuleTemplateFromRepositoryInputTypeDef](#disassociateapprovalruletemplatefromrepositoryinputtypedef)
+  - [EvaluatePullRequestApprovalRulesInputTypeDef](#evaluatepullrequestapprovalrulesinputtypedef)
+  - [EvaluatePullRequestApprovalRulesOutputResponseTypeDef](#evaluatepullrequestapprovalrulesoutputresponsetypedef)
   - [EvaluationTypeDef](#evaluationtypedef)
   - [FileMetadataTypeDef](#filemetadatatypedef)
   - [FileModesTypeDef](#filemodestypedef)
   - [FileSizesTypeDef](#filesizestypedef)
   - [FileTypeDef](#filetypedef)
   - [FolderTypeDef](#foldertypedef)
-  - [GetApprovalRuleTemplateOutputTypeDef](#getapprovalruletemplateoutputtypedef)
-  - [GetBlobOutputTypeDef](#getbloboutputtypedef)
-  - [GetBranchOutputTypeDef](#getbranchoutputtypedef)
-  - [GetCommentOutputTypeDef](#getcommentoutputtypedef)
-  - [GetCommentReactionsOutputTypeDef](#getcommentreactionsoutputtypedef)
-  - [GetCommentsForComparedCommitOutputTypeDef](#getcommentsforcomparedcommitoutputtypedef)
-  - [GetCommentsForPullRequestOutputTypeDef](#getcommentsforpullrequestoutputtypedef)
-  - [GetCommitOutputTypeDef](#getcommitoutputtypedef)
-  - [GetDifferencesOutputTypeDef](#getdifferencesoutputtypedef)
-  - [GetFileOutputTypeDef](#getfileoutputtypedef)
-  - [GetFolderOutputTypeDef](#getfolderoutputtypedef)
-  - [GetMergeCommitOutputTypeDef](#getmergecommitoutputtypedef)
-  - [GetMergeConflictsOutputTypeDef](#getmergeconflictsoutputtypedef)
-  - [GetMergeOptionsOutputTypeDef](#getmergeoptionsoutputtypedef)
-  - [GetPullRequestApprovalStatesOutputTypeDef](#getpullrequestapprovalstatesoutputtypedef)
-  - [GetPullRequestOutputTypeDef](#getpullrequestoutputtypedef)
-  - [GetPullRequestOverrideStateOutputTypeDef](#getpullrequestoverridestateoutputtypedef)
-  - [GetRepositoryOutputTypeDef](#getrepositoryoutputtypedef)
-  - [GetRepositoryTriggersOutputTypeDef](#getrepositorytriggersoutputtypedef)
+  - [GetApprovalRuleTemplateInputTypeDef](#getapprovalruletemplateinputtypedef)
+  - [GetApprovalRuleTemplateOutputResponseTypeDef](#getapprovalruletemplateoutputresponsetypedef)
+  - [GetBlobInputTypeDef](#getblobinputtypedef)
+  - [GetBlobOutputResponseTypeDef](#getbloboutputresponsetypedef)
+  - [GetBranchInputTypeDef](#getbranchinputtypedef)
+  - [GetBranchOutputResponseTypeDef](#getbranchoutputresponsetypedef)
+  - [GetCommentInputTypeDef](#getcommentinputtypedef)
+  - [GetCommentOutputResponseTypeDef](#getcommentoutputresponsetypedef)
+  - [GetCommentReactionsInputTypeDef](#getcommentreactionsinputtypedef)
+  - [GetCommentReactionsOutputResponseTypeDef](#getcommentreactionsoutputresponsetypedef)
+  - [GetCommentsForComparedCommitInputTypeDef](#getcommentsforcomparedcommitinputtypedef)
+  - [GetCommentsForComparedCommitOutputResponseTypeDef](#getcommentsforcomparedcommitoutputresponsetypedef)
+  - [GetCommentsForPullRequestInputTypeDef](#getcommentsforpullrequestinputtypedef)
+  - [GetCommentsForPullRequestOutputResponseTypeDef](#getcommentsforpullrequestoutputresponsetypedef)
+  - [GetCommitInputTypeDef](#getcommitinputtypedef)
+  - [GetCommitOutputResponseTypeDef](#getcommitoutputresponsetypedef)
+  - [GetDifferencesInputTypeDef](#getdifferencesinputtypedef)
+  - [GetDifferencesOutputResponseTypeDef](#getdifferencesoutputresponsetypedef)
+  - [GetFileInputTypeDef](#getfileinputtypedef)
+  - [GetFileOutputResponseTypeDef](#getfileoutputresponsetypedef)
+  - [GetFolderInputTypeDef](#getfolderinputtypedef)
+  - [GetFolderOutputResponseTypeDef](#getfolderoutputresponsetypedef)
+  - [GetMergeCommitInputTypeDef](#getmergecommitinputtypedef)
+  - [GetMergeCommitOutputResponseTypeDef](#getmergecommitoutputresponsetypedef)
+  - [GetMergeConflictsInputTypeDef](#getmergeconflictsinputtypedef)
+  - [GetMergeConflictsOutputResponseTypeDef](#getmergeconflictsoutputresponsetypedef)
+  - [GetMergeOptionsInputTypeDef](#getmergeoptionsinputtypedef)
+  - [GetMergeOptionsOutputResponseTypeDef](#getmergeoptionsoutputresponsetypedef)
+  - [GetPullRequestApprovalStatesInputTypeDef](#getpullrequestapprovalstatesinputtypedef)
+  - [GetPullRequestApprovalStatesOutputResponseTypeDef](#getpullrequestapprovalstatesoutputresponsetypedef)
+  - [GetPullRequestInputTypeDef](#getpullrequestinputtypedef)
+  - [GetPullRequestOutputResponseTypeDef](#getpullrequestoutputresponsetypedef)
+  - [GetPullRequestOverrideStateInputTypeDef](#getpullrequestoverridestateinputtypedef)
+  - [GetPullRequestOverrideStateOutputResponseTypeDef](#getpullrequestoverridestateoutputresponsetypedef)
+  - [GetRepositoryInputTypeDef](#getrepositoryinputtypedef)
+  - [GetRepositoryOutputResponseTypeDef](#getrepositoryoutputresponsetypedef)
+  - [GetRepositoryTriggersInputTypeDef](#getrepositorytriggersinputtypedef)
+  - [GetRepositoryTriggersOutputResponseTypeDef](#getrepositorytriggersoutputresponsetypedef)
   - [IsBinaryFileTypeDef](#isbinaryfiletypedef)
-  - [ListApprovalRuleTemplatesOutputTypeDef](#listapprovalruletemplatesoutputtypedef)
-  - [ListAssociatedApprovalRuleTemplatesForRepositoryOutputTypeDef](#listassociatedapprovalruletemplatesforrepositoryoutputtypedef)
-  - [ListBranchesOutputTypeDef](#listbranchesoutputtypedef)
-  - [ListPullRequestsOutputTypeDef](#listpullrequestsoutputtypedef)
-  - [ListRepositoriesForApprovalRuleTemplateOutputTypeDef](#listrepositoriesforapprovalruletemplateoutputtypedef)
-  - [ListRepositoriesOutputTypeDef](#listrepositoriesoutputtypedef)
-  - [ListTagsForResourceOutputTypeDef](#listtagsforresourceoutputtypedef)
+  - [ListApprovalRuleTemplatesInputTypeDef](#listapprovalruletemplatesinputtypedef)
+  - [ListApprovalRuleTemplatesOutputResponseTypeDef](#listapprovalruletemplatesoutputresponsetypedef)
+  - [ListAssociatedApprovalRuleTemplatesForRepositoryInputTypeDef](#listassociatedapprovalruletemplatesforrepositoryinputtypedef)
+  - [ListAssociatedApprovalRuleTemplatesForRepositoryOutputResponseTypeDef](#listassociatedapprovalruletemplatesforrepositoryoutputresponsetypedef)
+  - [ListBranchesInputTypeDef](#listbranchesinputtypedef)
+  - [ListBranchesOutputResponseTypeDef](#listbranchesoutputresponsetypedef)
+  - [ListPullRequestsInputTypeDef](#listpullrequestsinputtypedef)
+  - [ListPullRequestsOutputResponseTypeDef](#listpullrequestsoutputresponsetypedef)
+  - [ListRepositoriesForApprovalRuleTemplateInputTypeDef](#listrepositoriesforapprovalruletemplateinputtypedef)
+  - [ListRepositoriesForApprovalRuleTemplateOutputResponseTypeDef](#listrepositoriesforapprovalruletemplateoutputresponsetypedef)
+  - [ListRepositoriesInputTypeDef](#listrepositoriesinputtypedef)
+  - [ListRepositoriesOutputResponseTypeDef](#listrepositoriesoutputresponsetypedef)
+  - [ListTagsForResourceInputTypeDef](#listtagsforresourceinputtypedef)
+  - [ListTagsForResourceOutputResponseTypeDef](#listtagsforresourceoutputresponsetypedef)
   - [LocationTypeDef](#locationtypedef)
-  - [MergeBranchesByFastForwardOutputTypeDef](#mergebranchesbyfastforwardoutputtypedef)
-  - [MergeBranchesBySquashOutputTypeDef](#mergebranchesbysquashoutputtypedef)
-  - [MergeBranchesByThreeWayOutputTypeDef](#mergebranchesbythreewayoutputtypedef)
+  - [MergeBranchesByFastForwardInputTypeDef](#mergebranchesbyfastforwardinputtypedef)
+  - [MergeBranchesByFastForwardOutputResponseTypeDef](#mergebranchesbyfastforwardoutputresponsetypedef)
+  - [MergeBranchesBySquashInputTypeDef](#mergebranchesbysquashinputtypedef)
+  - [MergeBranchesBySquashOutputResponseTypeDef](#mergebranchesbysquashoutputresponsetypedef)
+  - [MergeBranchesByThreeWayInputTypeDef](#mergebranchesbythreewayinputtypedef)
+  - [MergeBranchesByThreeWayOutputResponseTypeDef](#mergebranchesbythreewayoutputresponsetypedef)
   - [MergeHunkDetailTypeDef](#mergehunkdetailtypedef)
   - [MergeHunkTypeDef](#mergehunktypedef)
   - [MergeMetadataTypeDef](#mergemetadatatypedef)
   - [MergeOperationsTypeDef](#mergeoperationstypedef)
-  - [MergePullRequestByFastForwardOutputTypeDef](#mergepullrequestbyfastforwardoutputtypedef)
-  - [MergePullRequestBySquashOutputTypeDef](#mergepullrequestbysquashoutputtypedef)
-  - [MergePullRequestByThreeWayOutputTypeDef](#mergepullrequestbythreewayoutputtypedef)
+  - [MergePullRequestByFastForwardInputTypeDef](#mergepullrequestbyfastforwardinputtypedef)
+  - [MergePullRequestByFastForwardOutputResponseTypeDef](#mergepullrequestbyfastforwardoutputresponsetypedef)
+  - [MergePullRequestBySquashInputTypeDef](#mergepullrequestbysquashinputtypedef)
+  - [MergePullRequestBySquashOutputResponseTypeDef](#mergepullrequestbysquashoutputresponsetypedef)
+  - [MergePullRequestByThreeWayInputTypeDef](#mergepullrequestbythreewayinputtypedef)
+  - [MergePullRequestByThreeWayOutputResponseTypeDef](#mergepullrequestbythreewayoutputresponsetypedef)
   - [ObjectTypesTypeDef](#objecttypestypedef)
   - [OriginApprovalRuleTemplateTypeDef](#originapprovalruletemplatetypedef)
+  - [OverridePullRequestApprovalRulesInputTypeDef](#overridepullrequestapprovalrulesinputtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PostCommentForComparedCommitOutputTypeDef](#postcommentforcomparedcommitoutputtypedef)
-  - [PostCommentForPullRequestOutputTypeDef](#postcommentforpullrequestoutputtypedef)
-  - [PostCommentReplyOutputTypeDef](#postcommentreplyoutputtypedef)
+  - [PostCommentForComparedCommitInputTypeDef](#postcommentforcomparedcommitinputtypedef)
+  - [PostCommentForComparedCommitOutputResponseTypeDef](#postcommentforcomparedcommitoutputresponsetypedef)
+  - [PostCommentForPullRequestInputTypeDef](#postcommentforpullrequestinputtypedef)
+  - [PostCommentForPullRequestOutputResponseTypeDef](#postcommentforpullrequestoutputresponsetypedef)
+  - [PostCommentReplyInputTypeDef](#postcommentreplyinputtypedef)
+  - [PostCommentReplyOutputResponseTypeDef](#postcommentreplyoutputresponsetypedef)
   - [PullRequestCreatedEventMetadataTypeDef](#pullrequestcreatedeventmetadatatypedef)
   - [PullRequestEventTypeDef](#pullrequesteventtypedef)
   - [PullRequestMergedStateChangedEventMetadataTypeDef](#pullrequestmergedstatechangedeventmetadatatypedef)
@@ -106,9 +165,12 @@ type annotations stubs module
   - [PullRequestStatusChangedEventMetadataTypeDef](#pullrequeststatuschangedeventmetadatatypedef)
   - [PullRequestTargetTypeDef](#pullrequesttargettypedef)
   - [PullRequestTypeDef](#pullrequesttypedef)
+  - [PutCommentReactionInputTypeDef](#putcommentreactioninputtypedef)
   - [PutFileEntryTypeDef](#putfileentrytypedef)
-  - [PutFileOutputTypeDef](#putfileoutputtypedef)
-  - [PutRepositoryTriggersOutputTypeDef](#putrepositorytriggersoutputtypedef)
+  - [PutFileInputTypeDef](#putfileinputtypedef)
+  - [PutFileOutputResponseTypeDef](#putfileoutputresponsetypedef)
+  - [PutRepositoryTriggersInputTypeDef](#putrepositorytriggersinputtypedef)
+  - [PutRepositoryTriggersOutputResponseTypeDef](#putrepositorytriggersoutputresponsetypedef)
   - [ReactionForCommentTypeDef](#reactionforcommenttypedef)
   - [ReactionValueFormatsTypeDef](#reactionvalueformatstypedef)
   - [ReplaceContentEntryTypeDef](#replacecontententrytypedef)
@@ -121,16 +183,31 @@ type annotations stubs module
   - [SourceFileSpecifierTypeDef](#sourcefilespecifiertypedef)
   - [SubModuleTypeDef](#submoduletypedef)
   - [SymbolicLinkTypeDef](#symboliclinktypedef)
+  - [TagResourceInputTypeDef](#tagresourceinputtypedef)
   - [TargetTypeDef](#targettypedef)
-  - [TestRepositoryTriggersOutputTypeDef](#testrepositorytriggersoutputtypedef)
-  - [UpdateApprovalRuleTemplateContentOutputTypeDef](#updateapprovalruletemplatecontentoutputtypedef)
-  - [UpdateApprovalRuleTemplateDescriptionOutputTypeDef](#updateapprovalruletemplatedescriptionoutputtypedef)
-  - [UpdateApprovalRuleTemplateNameOutputTypeDef](#updateapprovalruletemplatenameoutputtypedef)
-  - [UpdateCommentOutputTypeDef](#updatecommentoutputtypedef)
-  - [UpdatePullRequestApprovalRuleContentOutputTypeDef](#updatepullrequestapprovalrulecontentoutputtypedef)
-  - [UpdatePullRequestDescriptionOutputTypeDef](#updatepullrequestdescriptionoutputtypedef)
-  - [UpdatePullRequestStatusOutputTypeDef](#updatepullrequeststatusoutputtypedef)
-  - [UpdatePullRequestTitleOutputTypeDef](#updatepullrequesttitleoutputtypedef)
+  - [TestRepositoryTriggersInputTypeDef](#testrepositorytriggersinputtypedef)
+  - [TestRepositoryTriggersOutputResponseTypeDef](#testrepositorytriggersoutputresponsetypedef)
+  - [UntagResourceInputTypeDef](#untagresourceinputtypedef)
+  - [UpdateApprovalRuleTemplateContentInputTypeDef](#updateapprovalruletemplatecontentinputtypedef)
+  - [UpdateApprovalRuleTemplateContentOutputResponseTypeDef](#updateapprovalruletemplatecontentoutputresponsetypedef)
+  - [UpdateApprovalRuleTemplateDescriptionInputTypeDef](#updateapprovalruletemplatedescriptioninputtypedef)
+  - [UpdateApprovalRuleTemplateDescriptionOutputResponseTypeDef](#updateapprovalruletemplatedescriptionoutputresponsetypedef)
+  - [UpdateApprovalRuleTemplateNameInputTypeDef](#updateapprovalruletemplatenameinputtypedef)
+  - [UpdateApprovalRuleTemplateNameOutputResponseTypeDef](#updateapprovalruletemplatenameoutputresponsetypedef)
+  - [UpdateCommentInputTypeDef](#updatecommentinputtypedef)
+  - [UpdateCommentOutputResponseTypeDef](#updatecommentoutputresponsetypedef)
+  - [UpdateDefaultBranchInputTypeDef](#updatedefaultbranchinputtypedef)
+  - [UpdatePullRequestApprovalRuleContentInputTypeDef](#updatepullrequestapprovalrulecontentinputtypedef)
+  - [UpdatePullRequestApprovalRuleContentOutputResponseTypeDef](#updatepullrequestapprovalrulecontentoutputresponsetypedef)
+  - [UpdatePullRequestApprovalStateInputTypeDef](#updatepullrequestapprovalstateinputtypedef)
+  - [UpdatePullRequestDescriptionInputTypeDef](#updatepullrequestdescriptioninputtypedef)
+  - [UpdatePullRequestDescriptionOutputResponseTypeDef](#updatepullrequestdescriptionoutputresponsetypedef)
+  - [UpdatePullRequestStatusInputTypeDef](#updatepullrequeststatusinputtypedef)
+  - [UpdatePullRequestStatusOutputResponseTypeDef](#updatepullrequeststatusoutputresponsetypedef)
+  - [UpdatePullRequestTitleInputTypeDef](#updatepullrequesttitleinputtypedef)
+  - [UpdatePullRequestTitleOutputResponseTypeDef](#updatepullrequesttitleoutputresponsetypedef)
+  - [UpdateRepositoryDescriptionInputTypeDef](#updaterepositorydescriptioninputtypedef)
+  - [UpdateRepositoryNameInputTypeDef](#updaterepositorynameinputtypedef)
   - [UserInfoTypeDef](#userinfotypedef)
 
 ## ApprovalRuleEventMetadataTypeDef
@@ -213,6 +290,17 @@ Optional fields:
 - `userArn`: `str`
 - `approvalState`: [ApprovalStateType](./literals.md#approvalstatetype)
 
+## AssociateApprovalRuleTemplateWithRepositoryInputTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import AssociateApprovalRuleTemplateWithRepositoryInputTypeDef
+```
+
+Required fields:
+
+- `approvalRuleTemplateName`: `str`
+- `repositoryName`: `str`
+
 ## BatchAssociateApprovalRuleTemplateWithRepositoriesErrorTypeDef
 
 ```python
@@ -225,10 +313,21 @@ Optional fields:
 - `errorCode`: `str`
 - `errorMessage`: `str`
 
-## BatchAssociateApprovalRuleTemplateWithRepositoriesOutputTypeDef
+## BatchAssociateApprovalRuleTemplateWithRepositoriesInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import BatchAssociateApprovalRuleTemplateWithRepositoriesOutputTypeDef
+from mypy_boto3_codecommit.type_defs import BatchAssociateApprovalRuleTemplateWithRepositoriesInputTypeDef
+```
+
+Required fields:
+
+- `approvalRuleTemplateName`: `str`
+- `repositoryNames`: `List`\[`str`\]
+
+## BatchAssociateApprovalRuleTemplateWithRepositoriesOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import BatchAssociateApprovalRuleTemplateWithRepositoriesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -251,10 +350,35 @@ Required fields:
 - `exceptionName`: `str`
 - `message`: `str`
 
-## BatchDescribeMergeConflictsOutputTypeDef
+## BatchDescribeMergeConflictsInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import BatchDescribeMergeConflictsOutputTypeDef
+from mypy_boto3_codecommit.type_defs import BatchDescribeMergeConflictsInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `destinationCommitSpecifier`: `str`
+- `sourceCommitSpecifier`: `str`
+- `mergeOption`:
+  [MergeOptionTypeEnumType](./literals.md#mergeoptiontypeenumtype)
+
+Optional fields:
+
+- `maxMergeHunks`: `int`
+- `maxConflictFiles`: `int`
+- `filePaths`: `List`\[`str`\]
+- `conflictDetailLevel`:
+  [ConflictDetailLevelTypeEnumType](./literals.md#conflictdetailleveltypeenumtype)
+- `conflictResolutionStrategy`:
+  [ConflictResolutionStrategyTypeEnumType](./literals.md#conflictresolutionstrategytypeenumtype)
+- `nextToken`: `str`
+
+## BatchDescribeMergeConflictsOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import BatchDescribeMergeConflictsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -281,10 +405,21 @@ Optional fields:
 - `errorCode`: `str`
 - `errorMessage`: `str`
 
-## BatchDisassociateApprovalRuleTemplateFromRepositoriesOutputTypeDef
+## BatchDisassociateApprovalRuleTemplateFromRepositoriesInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import BatchDisassociateApprovalRuleTemplateFromRepositoriesOutputTypeDef
+from mypy_boto3_codecommit.type_defs import BatchDisassociateApprovalRuleTemplateFromRepositoriesInputTypeDef
+```
+
+Required fields:
+
+- `approvalRuleTemplateName`: `str`
+- `repositoryNames`: `List`\[`str`\]
+
+## BatchDisassociateApprovalRuleTemplateFromRepositoriesOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import BatchDisassociateApprovalRuleTemplateFromRepositoriesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -307,10 +442,21 @@ Optional fields:
 - `errorCode`: `str`
 - `errorMessage`: `str`
 
-## BatchGetCommitsOutputTypeDef
+## BatchGetCommitsInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import BatchGetCommitsOutputTypeDef
+from mypy_boto3_codecommit.type_defs import BatchGetCommitsInputTypeDef
+```
+
+Required fields:
+
+- `commitIds`: `List`\[`str`\]
+- `repositoryName`: `str`
+
+## BatchGetCommitsOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import BatchGetCommitsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -321,10 +467,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchGetRepositoriesOutputTypeDef
+## BatchGetRepositoriesInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import BatchGetRepositoriesOutputTypeDef
+from mypy_boto3_codecommit.type_defs import BatchGetRepositoriesInputTypeDef
+```
+
+Required fields:
+
+- `repositoryNames`: `List`\[`str`\]
+
+## BatchGetRepositoriesOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import BatchGetRepositoriesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -473,10 +629,25 @@ Optional fields:
   [ConflictMetadataTypeDef](./type_defs.md#conflictmetadatatypedef)
 - `mergeHunks`: `List`\[[MergeHunkTypeDef](./type_defs.md#mergehunktypedef)\]
 
-## CreateApprovalRuleTemplateOutputTypeDef
+## CreateApprovalRuleTemplateInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import CreateApprovalRuleTemplateOutputTypeDef
+from mypy_boto3_codecommit.type_defs import CreateApprovalRuleTemplateInputTypeDef
+```
+
+Required fields:
+
+- `approvalRuleTemplateName`: `str`
+- `approvalRuleTemplateContent`: `str`
+
+Optional fields:
+
+- `approvalRuleTemplateDescription`: `str`
+
+## CreateApprovalRuleTemplateOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import CreateApprovalRuleTemplateOutputResponseTypeDef
 ```
 
 Required fields:
@@ -486,10 +657,47 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateCommitOutputTypeDef
+## CreateBranchInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import CreateCommitOutputTypeDef
+from mypy_boto3_codecommit.type_defs import CreateBranchInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `branchName`: `str`
+- `commitId`: `str`
+
+## CreateCommitInputTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import CreateCommitInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `branchName`: `str`
+
+Optional fields:
+
+- `parentCommitId`: `str`
+- `authorName`: `str`
+- `email`: `str`
+- `commitMessage`: `str`
+- `keepEmptyFolders`: `bool`
+- `putFiles`:
+  `List`\[[PutFileEntryTypeDef](./type_defs.md#putfileentrytypedef)\]
+- `deleteFiles`:
+  `List`\[[DeleteFileEntryTypeDef](./type_defs.md#deletefileentrytypedef)\]
+- `setFileModes`:
+  `List`\[[SetFileModeEntryTypeDef](./type_defs.md#setfilemodeentrytypedef)\]
+
+## CreateCommitOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import CreateCommitOutputResponseTypeDef
 ```
 
 Required fields:
@@ -505,10 +713,22 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePullRequestApprovalRuleOutputTypeDef
+## CreatePullRequestApprovalRuleInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import CreatePullRequestApprovalRuleOutputTypeDef
+from mypy_boto3_codecommit.type_defs import CreatePullRequestApprovalRuleInputTypeDef
+```
+
+Required fields:
+
+- `pullRequestId`: `str`
+- `approvalRuleName`: `str`
+- `approvalRuleContent`: `str`
+
+## CreatePullRequestApprovalRuleOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import CreatePullRequestApprovalRuleOutputResponseTypeDef
 ```
 
 Required fields:
@@ -517,10 +737,26 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePullRequestOutputTypeDef
+## CreatePullRequestInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import CreatePullRequestOutputTypeDef
+from mypy_boto3_codecommit.type_defs import CreatePullRequestInputTypeDef
+```
+
+Required fields:
+
+- `title`: `str`
+- `targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+
+Optional fields:
+
+- `description`: `str`
+- `clientRequestToken`: `str`
+
+## CreatePullRequestOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import CreatePullRequestOutputResponseTypeDef
 ```
 
 Required fields:
@@ -529,10 +765,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRepositoryOutputTypeDef
+## CreateRepositoryInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import CreateRepositoryOutputTypeDef
+from mypy_boto3_codecommit.type_defs import CreateRepositoryInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+
+Optional fields:
+
+- `repositoryDescription`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateRepositoryOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import CreateRepositoryOutputResponseTypeDef
 ```
 
 Required fields:
@@ -542,10 +793,37 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateUnreferencedMergeCommitOutputTypeDef
+## CreateUnreferencedMergeCommitInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import CreateUnreferencedMergeCommitOutputTypeDef
+from mypy_boto3_codecommit.type_defs import CreateUnreferencedMergeCommitInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `sourceCommitSpecifier`: `str`
+- `destinationCommitSpecifier`: `str`
+- `mergeOption`:
+  [MergeOptionTypeEnumType](./literals.md#mergeoptiontypeenumtype)
+
+Optional fields:
+
+- `conflictDetailLevel`:
+  [ConflictDetailLevelTypeEnumType](./literals.md#conflictdetailleveltypeenumtype)
+- `conflictResolutionStrategy`:
+  [ConflictResolutionStrategyTypeEnumType](./literals.md#conflictresolutionstrategytypeenumtype)
+- `authorName`: `str`
+- `email`: `str`
+- `commitMessage`: `str`
+- `keepEmptyFolders`: `bool`
+- `conflictResolution`:
+  [ConflictResolutionTypeDef](./type_defs.md#conflictresolutiontypedef)
+
+## CreateUnreferencedMergeCommitOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import CreateUnreferencedMergeCommitOutputResponseTypeDef
 ```
 
 Required fields:
@@ -555,10 +833,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteApprovalRuleTemplateOutputTypeDef
+## DeleteApprovalRuleTemplateInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import DeleteApprovalRuleTemplateOutputTypeDef
+from mypy_boto3_codecommit.type_defs import DeleteApprovalRuleTemplateInputTypeDef
+```
+
+Required fields:
+
+- `approvalRuleTemplateName`: `str`
+
+## DeleteApprovalRuleTemplateOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import DeleteApprovalRuleTemplateOutputResponseTypeDef
 ```
 
 Required fields:
@@ -567,10 +855,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteBranchOutputTypeDef
+## DeleteBranchInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import DeleteBranchOutputTypeDef
+from mypy_boto3_codecommit.type_defs import DeleteBranchInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `branchName`: `str`
+
+## DeleteBranchOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import DeleteBranchOutputResponseTypeDef
 ```
 
 Required fields:
@@ -579,10 +878,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteCommentContentOutputTypeDef
+## DeleteCommentContentInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import DeleteCommentContentOutputTypeDef
+from mypy_boto3_codecommit.type_defs import DeleteCommentContentInputTypeDef
+```
+
+Required fields:
+
+- `commentId`: `str`
+
+## DeleteCommentContentOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import DeleteCommentContentOutputResponseTypeDef
 ```
 
 Required fields:
@@ -601,10 +910,30 @@ Required fields:
 
 - `filePath`: `str`
 
-## DeleteFileOutputTypeDef
+## DeleteFileInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import DeleteFileOutputTypeDef
+from mypy_boto3_codecommit.type_defs import DeleteFileInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `branchName`: `str`
+- `filePath`: `str`
+- `parentCommitId`: `str`
+
+Optional fields:
+
+- `keepEmptyFolders`: `bool`
+- `commitMessage`: `str`
+- `name`: `str`
+- `email`: `str`
+
+## DeleteFileOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import DeleteFileOutputResponseTypeDef
 ```
 
 Required fields:
@@ -616,10 +945,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeletePullRequestApprovalRuleOutputTypeDef
+## DeletePullRequestApprovalRuleInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import DeletePullRequestApprovalRuleOutputTypeDef
+from mypy_boto3_codecommit.type_defs import DeletePullRequestApprovalRuleInputTypeDef
+```
+
+Required fields:
+
+- `pullRequestId`: `str`
+- `approvalRuleName`: `str`
+
+## DeletePullRequestApprovalRuleOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import DeletePullRequestApprovalRuleOutputResponseTypeDef
 ```
 
 Required fields:
@@ -628,10 +968,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteRepositoryOutputTypeDef
+## DeleteRepositoryInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import DeleteRepositoryOutputTypeDef
+from mypy_boto3_codecommit.type_defs import DeleteRepositoryInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+
+## DeleteRepositoryOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import DeleteRepositoryOutputResponseTypeDef
 ```
 
 Required fields:
@@ -640,10 +990,34 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeMergeConflictsOutputTypeDef
+## DescribeMergeConflictsInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import DescribeMergeConflictsOutputTypeDef
+from mypy_boto3_codecommit.type_defs import DescribeMergeConflictsInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `destinationCommitSpecifier`: `str`
+- `sourceCommitSpecifier`: `str`
+- `mergeOption`:
+  [MergeOptionTypeEnumType](./literals.md#mergeoptiontypeenumtype)
+- `filePath`: `str`
+
+Optional fields:
+
+- `maxMergeHunks`: `int`
+- `conflictDetailLevel`:
+  [ConflictDetailLevelTypeEnumType](./literals.md#conflictdetailleveltypeenumtype)
+- `conflictResolutionStrategy`:
+  [ConflictResolutionStrategyTypeEnumType](./literals.md#conflictresolutionstrategytypeenumtype)
+- `nextToken`: `str`
+
+## DescribeMergeConflictsOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import DescribeMergeConflictsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -658,10 +1032,28 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePullRequestEventsOutputTypeDef
+## DescribePullRequestEventsInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import DescribePullRequestEventsOutputTypeDef
+from mypy_boto3_codecommit.type_defs import DescribePullRequestEventsInputTypeDef
+```
+
+Required fields:
+
+- `pullRequestId`: `str`
+
+Optional fields:
+
+- `pullRequestEventType`:
+  [PullRequestEventTypeType](./literals.md#pullrequesteventtypetype)
+- `actorArn`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## DescribePullRequestEventsOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import DescribePullRequestEventsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -684,10 +1076,32 @@ Optional fields:
 - `afterBlob`: [BlobMetadataTypeDef](./type_defs.md#blobmetadatatypedef)
 - `changeType`: [ChangeTypeEnumType](./literals.md#changetypeenumtype)
 
-## EvaluatePullRequestApprovalRulesOutputTypeDef
+## DisassociateApprovalRuleTemplateFromRepositoryInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import EvaluatePullRequestApprovalRulesOutputTypeDef
+from mypy_boto3_codecommit.type_defs import DisassociateApprovalRuleTemplateFromRepositoryInputTypeDef
+```
+
+Required fields:
+
+- `approvalRuleTemplateName`: `str`
+- `repositoryName`: `str`
+
+## EvaluatePullRequestApprovalRulesInputTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import EvaluatePullRequestApprovalRulesInputTypeDef
+```
+
+Required fields:
+
+- `pullRequestId`: `str`
+- `revisionId`: `str`
+
+## EvaluatePullRequestApprovalRulesOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import EvaluatePullRequestApprovalRulesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -770,10 +1184,20 @@ Optional fields:
 - `absolutePath`: `str`
 - `relativePath`: `str`
 
-## GetApprovalRuleTemplateOutputTypeDef
+## GetApprovalRuleTemplateInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import GetApprovalRuleTemplateOutputTypeDef
+from mypy_boto3_codecommit.type_defs import GetApprovalRuleTemplateInputTypeDef
+```
+
+Required fields:
+
+- `approvalRuleTemplateName`: `str`
+
+## GetApprovalRuleTemplateOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import GetApprovalRuleTemplateOutputResponseTypeDef
 ```
 
 Required fields:
@@ -783,22 +1207,44 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBlobOutputTypeDef
+## GetBlobInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import GetBlobOutputTypeDef
+from mypy_boto3_codecommit.type_defs import GetBlobInputTypeDef
 ```
 
 Required fields:
 
-- `content`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `repositoryName`: `str`
+- `blobId`: `str`
+
+## GetBlobOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import GetBlobOutputResponseTypeDef
+```
+
+Required fields:
+
+- `content`: `bytes`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBranchOutputTypeDef
+## GetBranchInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import GetBranchOutputTypeDef
+from mypy_boto3_codecommit.type_defs import GetBranchInputTypeDef
+```
+
+Optional fields:
+
+- `repositoryName`: `str`
+- `branchName`: `str`
+
+## GetBranchOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import GetBranchOutputResponseTypeDef
 ```
 
 Required fields:
@@ -807,10 +1253,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCommentOutputTypeDef
+## GetCommentInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import GetCommentOutputTypeDef
+from mypy_boto3_codecommit.type_defs import GetCommentInputTypeDef
+```
+
+Required fields:
+
+- `commentId`: `str`
+
+## GetCommentOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import GetCommentOutputResponseTypeDef
 ```
 
 Required fields:
@@ -819,10 +1275,26 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCommentReactionsOutputTypeDef
+## GetCommentReactionsInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import GetCommentReactionsOutputTypeDef
+from mypy_boto3_codecommit.type_defs import GetCommentReactionsInputTypeDef
+```
+
+Required fields:
+
+- `commentId`: `str`
+
+Optional fields:
+
+- `reactionUserArn`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## GetCommentReactionsOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import GetCommentReactionsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -833,10 +1305,27 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCommentsForComparedCommitOutputTypeDef
+## GetCommentsForComparedCommitInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import GetCommentsForComparedCommitOutputTypeDef
+from mypy_boto3_codecommit.type_defs import GetCommentsForComparedCommitInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `afterCommitId`: `str`
+
+Optional fields:
+
+- `beforeCommitId`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## GetCommentsForComparedCommitOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import GetCommentsForComparedCommitOutputResponseTypeDef
 ```
 
 Required fields:
@@ -847,10 +1336,28 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCommentsForPullRequestOutputTypeDef
+## GetCommentsForPullRequestInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import GetCommentsForPullRequestOutputTypeDef
+from mypy_boto3_codecommit.type_defs import GetCommentsForPullRequestInputTypeDef
+```
+
+Required fields:
+
+- `pullRequestId`: `str`
+
+Optional fields:
+
+- `repositoryName`: `str`
+- `beforeCommitId`: `str`
+- `afterCommitId`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## GetCommentsForPullRequestOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import GetCommentsForPullRequestOutputResponseTypeDef
 ```
 
 Required fields:
@@ -861,10 +1368,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCommitOutputTypeDef
+## GetCommitInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import GetCommitOutputTypeDef
+from mypy_boto3_codecommit.type_defs import GetCommitInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `commitId`: `str`
+
+## GetCommitOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import GetCommitOutputResponseTypeDef
 ```
 
 Required fields:
@@ -873,10 +1391,29 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDifferencesOutputTypeDef
+## GetDifferencesInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import GetDifferencesOutputTypeDef
+from mypy_boto3_codecommit.type_defs import GetDifferencesInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `afterCommitSpecifier`: `str`
+
+Optional fields:
+
+- `beforeCommitSpecifier`: `str`
+- `beforePath`: `str`
+- `afterPath`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## GetDifferencesOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import GetDifferencesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -887,10 +1424,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFileOutputTypeDef
+## GetFileInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import GetFileOutputTypeDef
+from mypy_boto3_codecommit.type_defs import GetFileInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `filePath`: `str`
+
+Optional fields:
+
+- `commitSpecifier`: `str`
+
+## GetFileOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import GetFileOutputResponseTypeDef
 ```
 
 Required fields:
@@ -900,14 +1452,29 @@ Required fields:
 - `filePath`: `str`
 - `fileMode`: [FileModeTypeEnumType](./literals.md#filemodetypeenumtype)
 - `fileSize`: `int`
-- `fileContent`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `fileContent`: `bytes`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFolderOutputTypeDef
+## GetFolderInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import GetFolderOutputTypeDef
+from mypy_boto3_codecommit.type_defs import GetFolderInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `folderPath`: `str`
+
+Optional fields:
+
+- `commitSpecifier`: `str`
+
+## GetFolderOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import GetFolderOutputResponseTypeDef
 ```
 
 Required fields:
@@ -923,10 +1490,29 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMergeCommitOutputTypeDef
+## GetMergeCommitInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import GetMergeCommitOutputTypeDef
+from mypy_boto3_codecommit.type_defs import GetMergeCommitInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `sourceCommitSpecifier`: `str`
+- `destinationCommitSpecifier`: `str`
+
+Optional fields:
+
+- `conflictDetailLevel`:
+  [ConflictDetailLevelTypeEnumType](./literals.md#conflictdetailleveltypeenumtype)
+- `conflictResolutionStrategy`:
+  [ConflictResolutionStrategyTypeEnumType](./literals.md#conflictresolutionstrategytypeenumtype)
+
+## GetMergeCommitOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import GetMergeCommitOutputResponseTypeDef
 ```
 
 Required fields:
@@ -938,10 +1524,33 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMergeConflictsOutputTypeDef
+## GetMergeConflictsInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import GetMergeConflictsOutputTypeDef
+from mypy_boto3_codecommit.type_defs import GetMergeConflictsInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `destinationCommitSpecifier`: `str`
+- `sourceCommitSpecifier`: `str`
+- `mergeOption`:
+  [MergeOptionTypeEnumType](./literals.md#mergeoptiontypeenumtype)
+
+Optional fields:
+
+- `conflictDetailLevel`:
+  [ConflictDetailLevelTypeEnumType](./literals.md#conflictdetailleveltypeenumtype)
+- `maxConflictFiles`: `int`
+- `conflictResolutionStrategy`:
+  [ConflictResolutionStrategyTypeEnumType](./literals.md#conflictresolutionstrategytypeenumtype)
+- `nextToken`: `str`
+
+## GetMergeConflictsOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import GetMergeConflictsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -956,10 +1565,29 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMergeOptionsOutputTypeDef
+## GetMergeOptionsInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import GetMergeOptionsOutputTypeDef
+from mypy_boto3_codecommit.type_defs import GetMergeOptionsInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `sourceCommitSpecifier`: `str`
+- `destinationCommitSpecifier`: `str`
+
+Optional fields:
+
+- `conflictDetailLevel`:
+  [ConflictDetailLevelTypeEnumType](./literals.md#conflictdetailleveltypeenumtype)
+- `conflictResolutionStrategy`:
+  [ConflictResolutionStrategyTypeEnumType](./literals.md#conflictresolutionstrategytypeenumtype)
+
+## GetMergeOptionsOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import GetMergeOptionsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -972,10 +1600,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPullRequestApprovalStatesOutputTypeDef
+## GetPullRequestApprovalStatesInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import GetPullRequestApprovalStatesOutputTypeDef
+from mypy_boto3_codecommit.type_defs import GetPullRequestApprovalStatesInputTypeDef
+```
+
+Required fields:
+
+- `pullRequestId`: `str`
+- `revisionId`: `str`
+
+## GetPullRequestApprovalStatesOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import GetPullRequestApprovalStatesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -984,10 +1623,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPullRequestOutputTypeDef
+## GetPullRequestInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import GetPullRequestOutputTypeDef
+from mypy_boto3_codecommit.type_defs import GetPullRequestInputTypeDef
+```
+
+Required fields:
+
+- `pullRequestId`: `str`
+
+## GetPullRequestOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import GetPullRequestOutputResponseTypeDef
 ```
 
 Required fields:
@@ -996,10 +1645,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPullRequestOverrideStateOutputTypeDef
+## GetPullRequestOverrideStateInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import GetPullRequestOverrideStateOutputTypeDef
+from mypy_boto3_codecommit.type_defs import GetPullRequestOverrideStateInputTypeDef
+```
+
+Required fields:
+
+- `pullRequestId`: `str`
+- `revisionId`: `str`
+
+## GetPullRequestOverrideStateOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import GetPullRequestOverrideStateOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1009,10 +1669,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRepositoryOutputTypeDef
+## GetRepositoryInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import GetRepositoryOutputTypeDef
+from mypy_boto3_codecommit.type_defs import GetRepositoryInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+
+## GetRepositoryOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import GetRepositoryOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1022,10 +1692,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRepositoryTriggersOutputTypeDef
+## GetRepositoryTriggersInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import GetRepositoryTriggersOutputTypeDef
+from mypy_boto3_codecommit.type_defs import GetRepositoryTriggersInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+
+## GetRepositoryTriggersOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import GetRepositoryTriggersOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1048,10 +1728,21 @@ Optional fields:
 - `destination`: `bool`
 - `base`: `bool`
 
-## ListApprovalRuleTemplatesOutputTypeDef
+## ListApprovalRuleTemplatesInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import ListApprovalRuleTemplatesOutputTypeDef
+from mypy_boto3_codecommit.type_defs import ListApprovalRuleTemplatesInputTypeDef
+```
+
+Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListApprovalRuleTemplatesOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import ListApprovalRuleTemplatesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1061,10 +1752,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAssociatedApprovalRuleTemplatesForRepositoryOutputTypeDef
+## ListAssociatedApprovalRuleTemplatesForRepositoryInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import ListAssociatedApprovalRuleTemplatesForRepositoryOutputTypeDef
+from mypy_boto3_codecommit.type_defs import ListAssociatedApprovalRuleTemplatesForRepositoryInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+
+Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListAssociatedApprovalRuleTemplatesForRepositoryOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import ListAssociatedApprovalRuleTemplatesForRepositoryOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1074,10 +1780,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListBranchesOutputTypeDef
+## ListBranchesInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import ListBranchesOutputTypeDef
+from mypy_boto3_codecommit.type_defs import ListBranchesInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+
+Optional fields:
+
+- `nextToken`: `str`
+
+## ListBranchesOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import ListBranchesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1087,10 +1807,28 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPullRequestsOutputTypeDef
+## ListPullRequestsInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import ListPullRequestsOutputTypeDef
+from mypy_boto3_codecommit.type_defs import ListPullRequestsInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+
+Optional fields:
+
+- `authorArn`: `str`
+- `pullRequestStatus`:
+  [PullRequestStatusEnumType](./literals.md#pullrequeststatusenumtype)
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListPullRequestsOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import ListPullRequestsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1100,10 +1838,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRepositoriesForApprovalRuleTemplateOutputTypeDef
+## ListRepositoriesForApprovalRuleTemplateInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import ListRepositoriesForApprovalRuleTemplateOutputTypeDef
+from mypy_boto3_codecommit.type_defs import ListRepositoriesForApprovalRuleTemplateInputTypeDef
+```
+
+Required fields:
+
+- `approvalRuleTemplateName`: `str`
+
+Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListRepositoriesForApprovalRuleTemplateOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import ListRepositoriesForApprovalRuleTemplateOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1113,10 +1866,22 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRepositoriesOutputTypeDef
+## ListRepositoriesInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import ListRepositoriesOutputTypeDef
+from mypy_boto3_codecommit.type_defs import ListRepositoriesInputTypeDef
+```
+
+Optional fields:
+
+- `nextToken`: `str`
+- `sortBy`: [SortByEnumType](./literals.md#sortbyenumtype)
+- `order`: [OrderEnumType](./literals.md#orderenumtype)
+
+## ListRepositoriesOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import ListRepositoriesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1127,10 +1892,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceOutputTypeDef
+## ListTagsForResourceInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import ListTagsForResourceOutputTypeDef
+from mypy_boto3_codecommit.type_defs import ListTagsForResourceInputTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+
+Optional fields:
+
+- `nextToken`: `str`
+
+## ListTagsForResourceOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import ListTagsForResourceOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1153,10 +1932,26 @@ Optional fields:
 - `relativeFileVersion`:
   [RelativeFileVersionEnumType](./literals.md#relativefileversionenumtype)
 
-## MergeBranchesByFastForwardOutputTypeDef
+## MergeBranchesByFastForwardInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import MergeBranchesByFastForwardOutputTypeDef
+from mypy_boto3_codecommit.type_defs import MergeBranchesByFastForwardInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `sourceCommitSpecifier`: `str`
+- `destinationCommitSpecifier`: `str`
+
+Optional fields:
+
+- `targetBranch`: `str`
+
+## MergeBranchesByFastForwardOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import MergeBranchesByFastForwardOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1166,10 +1961,36 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## MergeBranchesBySquashOutputTypeDef
+## MergeBranchesBySquashInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import MergeBranchesBySquashOutputTypeDef
+from mypy_boto3_codecommit.type_defs import MergeBranchesBySquashInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `sourceCommitSpecifier`: `str`
+- `destinationCommitSpecifier`: `str`
+
+Optional fields:
+
+- `targetBranch`: `str`
+- `conflictDetailLevel`:
+  [ConflictDetailLevelTypeEnumType](./literals.md#conflictdetailleveltypeenumtype)
+- `conflictResolutionStrategy`:
+  [ConflictResolutionStrategyTypeEnumType](./literals.md#conflictresolutionstrategytypeenumtype)
+- `authorName`: `str`
+- `email`: `str`
+- `commitMessage`: `str`
+- `keepEmptyFolders`: `bool`
+- `conflictResolution`:
+  [ConflictResolutionTypeDef](./type_defs.md#conflictresolutiontypedef)
+
+## MergeBranchesBySquashOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import MergeBranchesBySquashOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1179,10 +2000,36 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## MergeBranchesByThreeWayOutputTypeDef
+## MergeBranchesByThreeWayInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import MergeBranchesByThreeWayOutputTypeDef
+from mypy_boto3_codecommit.type_defs import MergeBranchesByThreeWayInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `sourceCommitSpecifier`: `str`
+- `destinationCommitSpecifier`: `str`
+
+Optional fields:
+
+- `targetBranch`: `str`
+- `conflictDetailLevel`:
+  [ConflictDetailLevelTypeEnumType](./literals.md#conflictdetailleveltypeenumtype)
+- `conflictResolutionStrategy`:
+  [ConflictResolutionStrategyTypeEnumType](./literals.md#conflictresolutionstrategytypeenumtype)
+- `authorName`: `str`
+- `email`: `str`
+- `commitMessage`: `str`
+- `keepEmptyFolders`: `bool`
+- `conflictResolution`:
+  [ConflictResolutionTypeDef](./type_defs.md#conflictresolutiontypedef)
+
+## MergeBranchesByThreeWayOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import MergeBranchesByThreeWayOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1243,10 +2090,25 @@ Optional fields:
 - `source`: [ChangeTypeEnumType](./literals.md#changetypeenumtype)
 - `destination`: [ChangeTypeEnumType](./literals.md#changetypeenumtype)
 
-## MergePullRequestByFastForwardOutputTypeDef
+## MergePullRequestByFastForwardInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import MergePullRequestByFastForwardOutputTypeDef
+from mypy_boto3_codecommit.type_defs import MergePullRequestByFastForwardInputTypeDef
+```
+
+Required fields:
+
+- `pullRequestId`: `str`
+- `repositoryName`: `str`
+
+Optional fields:
+
+- `sourceCommitId`: `str`
+
+## MergePullRequestByFastForwardOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import MergePullRequestByFastForwardOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1255,10 +2117,35 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## MergePullRequestBySquashOutputTypeDef
+## MergePullRequestBySquashInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import MergePullRequestBySquashOutputTypeDef
+from mypy_boto3_codecommit.type_defs import MergePullRequestBySquashInputTypeDef
+```
+
+Required fields:
+
+- `pullRequestId`: `str`
+- `repositoryName`: `str`
+
+Optional fields:
+
+- `sourceCommitId`: `str`
+- `conflictDetailLevel`:
+  [ConflictDetailLevelTypeEnumType](./literals.md#conflictdetailleveltypeenumtype)
+- `conflictResolutionStrategy`:
+  [ConflictResolutionStrategyTypeEnumType](./literals.md#conflictresolutionstrategytypeenumtype)
+- `commitMessage`: `str`
+- `authorName`: `str`
+- `email`: `str`
+- `keepEmptyFolders`: `bool`
+- `conflictResolution`:
+  [ConflictResolutionTypeDef](./type_defs.md#conflictresolutiontypedef)
+
+## MergePullRequestBySquashOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import MergePullRequestBySquashOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1267,10 +2154,35 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## MergePullRequestByThreeWayOutputTypeDef
+## MergePullRequestByThreeWayInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import MergePullRequestByThreeWayOutputTypeDef
+from mypy_boto3_codecommit.type_defs import MergePullRequestByThreeWayInputTypeDef
+```
+
+Required fields:
+
+- `pullRequestId`: `str`
+- `repositoryName`: `str`
+
+Optional fields:
+
+- `sourceCommitId`: `str`
+- `conflictDetailLevel`:
+  [ConflictDetailLevelTypeEnumType](./literals.md#conflictdetailleveltypeenumtype)
+- `conflictResolutionStrategy`:
+  [ConflictResolutionStrategyTypeEnumType](./literals.md#conflictresolutionstrategytypeenumtype)
+- `commitMessage`: `str`
+- `authorName`: `str`
+- `email`: `str`
+- `keepEmptyFolders`: `bool`
+- `conflictResolution`:
+  [ConflictResolutionTypeDef](./type_defs.md#conflictresolutiontypedef)
+
+## MergePullRequestByThreeWayOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import MergePullRequestByThreeWayOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1302,6 +2214,18 @@ Optional fields:
 - `approvalRuleTemplateId`: `str`
 - `approvalRuleTemplateName`: `str`
 
+## OverridePullRequestApprovalRulesInputTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import OverridePullRequestApprovalRulesInputTypeDef
+```
+
+Required fields:
+
+- `pullRequestId`: `str`
+- `revisionId`: `str`
+- `overrideStatus`: [OverrideStatusType](./literals.md#overridestatustype)
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1314,10 +2238,28 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## PostCommentForComparedCommitOutputTypeDef
+## PostCommentForComparedCommitInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import PostCommentForComparedCommitOutputTypeDef
+from mypy_boto3_codecommit.type_defs import PostCommentForComparedCommitInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `afterCommitId`: `str`
+- `content`: `str`
+
+Optional fields:
+
+- `beforeCommitId`: `str`
+- `location`: [LocationTypeDef](./type_defs.md#locationtypedef)
+- `clientRequestToken`: `str`
+
+## PostCommentForComparedCommitOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import PostCommentForComparedCommitOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1332,10 +2274,29 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PostCommentForPullRequestOutputTypeDef
+## PostCommentForPullRequestInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import PostCommentForPullRequestOutputTypeDef
+from mypy_boto3_codecommit.type_defs import PostCommentForPullRequestInputTypeDef
+```
+
+Required fields:
+
+- `pullRequestId`: `str`
+- `repositoryName`: `str`
+- `beforeCommitId`: `str`
+- `afterCommitId`: `str`
+- `content`: `str`
+
+Optional fields:
+
+- `location`: [LocationTypeDef](./type_defs.md#locationtypedef)
+- `clientRequestToken`: `str`
+
+## PostCommentForPullRequestOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import PostCommentForPullRequestOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1351,10 +2312,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PostCommentReplyOutputTypeDef
+## PostCommentReplyInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import PostCommentReplyOutputTypeDef
+from mypy_boto3_codecommit.type_defs import PostCommentReplyInputTypeDef
+```
+
+Required fields:
+
+- `inReplyTo`: `str`
+- `content`: `str`
+
+Optional fields:
+
+- `clientRequestToken`: `str`
+
+## PostCommentReplyOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import PostCommentReplyOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1479,6 +2455,17 @@ Optional fields:
 - `approvalRules`:
   `List`\[[ApprovalRuleTypeDef](./type_defs.md#approvalruletypedef)\]
 
+## PutCommentReactionInputTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import PutCommentReactionInputTypeDef
+```
+
+Required fields:
+
+- `commentId`: `str`
+- `reactionValue`: `str`
+
 ## PutFileEntryTypeDef
 
 ```python
@@ -1496,10 +2483,31 @@ Optional fields:
 - `sourceFile`:
   [SourceFileSpecifierTypeDef](./type_defs.md#sourcefilespecifiertypedef)
 
-## PutFileOutputTypeDef
+## PutFileInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import PutFileOutputTypeDef
+from mypy_boto3_codecommit.type_defs import PutFileInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `branchName`: `str`
+- `fileContent`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `filePath`: `str`
+
+Optional fields:
+
+- `fileMode`: [FileModeTypeEnumType](./literals.md#filemodetypeenumtype)
+- `parentCommitId`: `str`
+- `commitMessage`: `str`
+- `name`: `str`
+- `email`: `str`
+
+## PutFileOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import PutFileOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1510,10 +2518,22 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutRepositoryTriggersOutputTypeDef
+## PutRepositoryTriggersInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import PutRepositoryTriggersOutputTypeDef
+from mypy_boto3_codecommit.type_defs import PutRepositoryTriggersInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `triggers`:
+  `List`\[[RepositoryTriggerTypeDef](./type_defs.md#repositorytriggertypedef)\]
+
+## PutRepositoryTriggersOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import PutRepositoryTriggersOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1687,6 +2707,17 @@ Optional fields:
 - `relativePath`: `str`
 - `fileMode`: [FileModeTypeEnumType](./literals.md#filemodetypeenumtype)
 
+## TagResourceInputTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import TagResourceInputTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
 ## TargetTypeDef
 
 ```python
@@ -1702,10 +2733,22 @@ Optional fields:
 
 - `destinationReference`: `str`
 
-## TestRepositoryTriggersOutputTypeDef
+## TestRepositoryTriggersInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import TestRepositoryTriggersOutputTypeDef
+from mypy_boto3_codecommit.type_defs import TestRepositoryTriggersInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `triggers`:
+  `List`\[[RepositoryTriggerTypeDef](./type_defs.md#repositorytriggertypedef)\]
+
+## TestRepositoryTriggersOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import TestRepositoryTriggersOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1716,10 +2759,36 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateApprovalRuleTemplateContentOutputTypeDef
+## UntagResourceInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import UpdateApprovalRuleTemplateContentOutputTypeDef
+from mypy_boto3_codecommit.type_defs import UntagResourceInputTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tagKeys`: `List`\[`str`\]
+
+## UpdateApprovalRuleTemplateContentInputTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import UpdateApprovalRuleTemplateContentInputTypeDef
+```
+
+Required fields:
+
+- `approvalRuleTemplateName`: `str`
+- `newRuleContent`: `str`
+
+Optional fields:
+
+- `existingRuleContentSha256`: `str`
+
+## UpdateApprovalRuleTemplateContentOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import UpdateApprovalRuleTemplateContentOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1729,10 +2798,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateApprovalRuleTemplateDescriptionOutputTypeDef
+## UpdateApprovalRuleTemplateDescriptionInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import UpdateApprovalRuleTemplateDescriptionOutputTypeDef
+from mypy_boto3_codecommit.type_defs import UpdateApprovalRuleTemplateDescriptionInputTypeDef
+```
+
+Required fields:
+
+- `approvalRuleTemplateName`: `str`
+- `approvalRuleTemplateDescription`: `str`
+
+## UpdateApprovalRuleTemplateDescriptionOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import UpdateApprovalRuleTemplateDescriptionOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1742,10 +2822,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateApprovalRuleTemplateNameOutputTypeDef
+## UpdateApprovalRuleTemplateNameInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import UpdateApprovalRuleTemplateNameOutputTypeDef
+from mypy_boto3_codecommit.type_defs import UpdateApprovalRuleTemplateNameInputTypeDef
+```
+
+Required fields:
+
+- `oldApprovalRuleTemplateName`: `str`
+- `newApprovalRuleTemplateName`: `str`
+
+## UpdateApprovalRuleTemplateNameOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import UpdateApprovalRuleTemplateNameOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1755,10 +2846,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateCommentOutputTypeDef
+## UpdateCommentInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import UpdateCommentOutputTypeDef
+from mypy_boto3_codecommit.type_defs import UpdateCommentInputTypeDef
+```
+
+Required fields:
+
+- `commentId`: `str`
+- `content`: `str`
+
+## UpdateCommentOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import UpdateCommentOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1767,10 +2869,37 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdatePullRequestApprovalRuleContentOutputTypeDef
+## UpdateDefaultBranchInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import UpdatePullRequestApprovalRuleContentOutputTypeDef
+from mypy_boto3_codecommit.type_defs import UpdateDefaultBranchInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+- `defaultBranchName`: `str`
+
+## UpdatePullRequestApprovalRuleContentInputTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import UpdatePullRequestApprovalRuleContentInputTypeDef
+```
+
+Required fields:
+
+- `pullRequestId`: `str`
+- `approvalRuleName`: `str`
+- `newRuleContent`: `str`
+
+Optional fields:
+
+- `existingRuleContentSha256`: `str`
+
+## UpdatePullRequestApprovalRuleContentOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import UpdatePullRequestApprovalRuleContentOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1779,10 +2908,33 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdatePullRequestDescriptionOutputTypeDef
+## UpdatePullRequestApprovalStateInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import UpdatePullRequestDescriptionOutputTypeDef
+from mypy_boto3_codecommit.type_defs import UpdatePullRequestApprovalStateInputTypeDef
+```
+
+Required fields:
+
+- `pullRequestId`: `str`
+- `revisionId`: `str`
+- `approvalState`: [ApprovalStateType](./literals.md#approvalstatetype)
+
+## UpdatePullRequestDescriptionInputTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import UpdatePullRequestDescriptionInputTypeDef
+```
+
+Required fields:
+
+- `pullRequestId`: `str`
+- `description`: `str`
+
+## UpdatePullRequestDescriptionOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import UpdatePullRequestDescriptionOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1791,10 +2943,22 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdatePullRequestStatusOutputTypeDef
+## UpdatePullRequestStatusInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import UpdatePullRequestStatusOutputTypeDef
+from mypy_boto3_codecommit.type_defs import UpdatePullRequestStatusInputTypeDef
+```
+
+Required fields:
+
+- `pullRequestId`: `str`
+- `pullRequestStatus`:
+  [PullRequestStatusEnumType](./literals.md#pullrequeststatusenumtype)
+
+## UpdatePullRequestStatusOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import UpdatePullRequestStatusOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1803,10 +2967,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdatePullRequestTitleOutputTypeDef
+## UpdatePullRequestTitleInputTypeDef
 
 ```python
-from mypy_boto3_codecommit.type_defs import UpdatePullRequestTitleOutputTypeDef
+from mypy_boto3_codecommit.type_defs import UpdatePullRequestTitleInputTypeDef
+```
+
+Required fields:
+
+- `pullRequestId`: `str`
+- `title`: `str`
+
+## UpdatePullRequestTitleOutputResponseTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import UpdatePullRequestTitleOutputResponseTypeDef
 ```
 
 Required fields:
@@ -1814,6 +2989,31 @@ Required fields:
 - `pullRequest`: [PullRequestTypeDef](./type_defs.md#pullrequesttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateRepositoryDescriptionInputTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import UpdateRepositoryDescriptionInputTypeDef
+```
+
+Required fields:
+
+- `repositoryName`: `str`
+
+Optional fields:
+
+- `repositoryDescription`: `str`
+
+## UpdateRepositoryNameInputTypeDef
+
+```python
+from mypy_boto3_codecommit.type_defs import UpdateRepositoryNameInputTypeDef
+```
+
+Required fields:
+
+- `oldName`: `str`
+- `newName`: `str`
 
 ## UserInfoTypeDef
 

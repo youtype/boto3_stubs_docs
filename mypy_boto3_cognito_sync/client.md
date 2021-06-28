@@ -80,19 +80,27 @@ Exceptions:
 
 ### bulk_publish
 
+Initiates a bulk publish of all existing datasets for an Identity Pool to the
+configured stream.
+
 Type annotations for `boto3.client("cognito-sync").bulk_publish` method.
 
 Boto3 documentation:
 [CognitoSync.Client.bulk_publish](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.bulk_publish)
+
+Arguments mapping described in
+[BulkPublishRequestTypeDef](./type_defs.md#bulkpublishrequesttypedef).
 
 Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 
 Returns
-[BulkPublishResponseTypeDef](./type_defs.md#bulkpublishresponsetypedef).
+[BulkPublishResponseResponseTypeDef](./type_defs.md#bulkpublishresponseresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("cognito-sync").can_paginate` method.
 
@@ -107,10 +115,15 @@ Returns `bool`.
 
 ### delete_dataset
 
+Deletes the specific dataset.
+
 Type annotations for `boto3.client("cognito-sync").delete_dataset` method.
 
 Boto3 documentation:
 [CognitoSync.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.delete_dataset)
+
+Arguments mapping described in
+[DeleteDatasetRequestTypeDef](./type_defs.md#deletedatasetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -119,15 +132,20 @@ Keyword-only arguments:
 - `DatasetName`: `str` *(required)*
 
 Returns
-[DeleteDatasetResponseTypeDef](./type_defs.md#deletedatasetresponsetypedef).
+[DeleteDatasetResponseResponseTypeDef](./type_defs.md#deletedatasetresponseresponsetypedef).
 
 ### describe_dataset
+
+Gets meta data about a dataset by identity and dataset name.
 
 Type annotations for `boto3.client("cognito-sync").describe_dataset` method.
 
 Boto3 documentation:
 [CognitoSync.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.describe_dataset)
 
+Arguments mapping described in
+[DescribeDatasetRequestTypeDef](./type_defs.md#describedatasetrequesttypedef).
+
 Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
@@ -135,9 +153,12 @@ Keyword-only arguments:
 - `DatasetName`: `str` *(required)*
 
 Returns
-[DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
+[DescribeDatasetResponseResponseTypeDef](./type_defs.md#describedatasetresponseresponsetypedef).
 
 ### describe_identity_pool_usage
+
+Gets usage details (for example, data storage) about a particular identity
+pool.
 
 Type annotations for
 `boto3.client("cognito-sync").describe_identity_pool_usage` method.
@@ -145,14 +166,20 @@ Type annotations for
 Boto3 documentation:
 [CognitoSync.Client.describe_identity_pool_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.describe_identity_pool_usage)
 
+Arguments mapping described in
+[DescribeIdentityPoolUsageRequestTypeDef](./type_defs.md#describeidentitypoolusagerequesttypedef).
+
 Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 
 Returns
-[DescribeIdentityPoolUsageResponseTypeDef](./type_defs.md#describeidentitypoolusageresponsetypedef).
+[DescribeIdentityPoolUsageResponseResponseTypeDef](./type_defs.md#describeidentitypoolusageresponseresponsetypedef).
 
 ### describe_identity_usage
+
+Gets usage information for an identity, including number of datasets and data
+usage.
 
 Type annotations for `boto3.client("cognito-sync").describe_identity_usage`
 method.
@@ -160,15 +187,20 @@ method.
 Boto3 documentation:
 [CognitoSync.Client.describe_identity_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.describe_identity_usage)
 
+Arguments mapping described in
+[DescribeIdentityUsageRequestTypeDef](./type_defs.md#describeidentityusagerequesttypedef).
+
 Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 - `IdentityId`: `str` *(required)*
 
 Returns
-[DescribeIdentityUsageResponseTypeDef](./type_defs.md#describeidentityusageresponsetypedef).
+[DescribeIdentityUsageResponseResponseTypeDef](./type_defs.md#describeidentityusageresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("cognito-sync").generate_presigned_url`
 method.
@@ -187,34 +219,47 @@ Returns `str`.
 
 ### get_bulk_publish_details
 
+Get the status of the last BulkPublish operation for an identity pool.
+
 Type annotations for `boto3.client("cognito-sync").get_bulk_publish_details`
 method.
 
 Boto3 documentation:
 [CognitoSync.Client.get_bulk_publish_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.get_bulk_publish_details)
 
+Arguments mapping described in
+[GetBulkPublishDetailsRequestTypeDef](./type_defs.md#getbulkpublishdetailsrequesttypedef).
+
 Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 
 Returns
-[GetBulkPublishDetailsResponseTypeDef](./type_defs.md#getbulkpublishdetailsresponsetypedef).
+[GetBulkPublishDetailsResponseResponseTypeDef](./type_defs.md#getbulkpublishdetailsresponseresponsetypedef).
 
 ### get_cognito_events
+
+Gets the events and the corresponding Lambda functions associated with an
+identity pool.
 
 Type annotations for `boto3.client("cognito-sync").get_cognito_events` method.
 
 Boto3 documentation:
 [CognitoSync.Client.get_cognito_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.get_cognito_events)
 
+Arguments mapping described in
+[GetCognitoEventsRequestTypeDef](./type_defs.md#getcognitoeventsrequesttypedef).
+
 Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 
 Returns
-[GetCognitoEventsResponseTypeDef](./type_defs.md#getcognitoeventsresponsetypedef).
+[GetCognitoEventsResponseResponseTypeDef](./type_defs.md#getcognitoeventsresponseresponsetypedef).
 
 ### get_identity_pool_configuration
+
+Gets the configuration settings of an identity pool.
 
 Type annotations for
 `boto3.client("cognito-sync").get_identity_pool_configuration` method.
@@ -222,19 +267,27 @@ Type annotations for
 Boto3 documentation:
 [CognitoSync.Client.get_identity_pool_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.get_identity_pool_configuration)
 
+Arguments mapping described in
+[GetIdentityPoolConfigurationRequestTypeDef](./type_defs.md#getidentitypoolconfigurationrequesttypedef).
+
 Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 
 Returns
-[GetIdentityPoolConfigurationResponseTypeDef](./type_defs.md#getidentitypoolconfigurationresponsetypedef).
+[GetIdentityPoolConfigurationResponseResponseTypeDef](./type_defs.md#getidentitypoolconfigurationresponseresponsetypedef).
 
 ### list_datasets
+
+Lists datasets for an identity.
 
 Type annotations for `boto3.client("cognito-sync").list_datasets` method.
 
 Boto3 documentation:
 [CognitoSync.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.list_datasets)
+
+Arguments mapping described in
+[ListDatasetsRequestTypeDef](./type_defs.md#listdatasetsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -244,9 +297,11 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
+[ListDatasetsResponseResponseTypeDef](./type_defs.md#listdatasetsresponseresponsetypedef).
 
 ### list_identity_pool_usage
+
+Gets a list of identity pools registered with Cognito.
 
 Type annotations for `boto3.client("cognito-sync").list_identity_pool_usage`
 method.
@@ -254,20 +309,29 @@ method.
 Boto3 documentation:
 [CognitoSync.Client.list_identity_pool_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.list_identity_pool_usage)
 
+Arguments mapping described in
+[ListIdentityPoolUsageRequestTypeDef](./type_defs.md#listidentitypoolusagerequesttypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListIdentityPoolUsageResponseTypeDef](./type_defs.md#listidentitypoolusageresponsetypedef).
+[ListIdentityPoolUsageResponseResponseTypeDef](./type_defs.md#listidentitypoolusageresponseresponsetypedef).
 
 ### list_records
+
+Gets paginated records, optionally changed after a particular sync count for a
+dataset and identity.
 
 Type annotations for `boto3.client("cognito-sync").list_records` method.
 
 Boto3 documentation:
 [CognitoSync.Client.list_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.list_records)
+
+Arguments mapping described in
+[ListRecordsRequestTypeDef](./type_defs.md#listrecordsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -280,14 +344,19 @@ Keyword-only arguments:
 - `SyncSessionToken`: `str`
 
 Returns
-[ListRecordsResponseTypeDef](./type_defs.md#listrecordsresponsetypedef).
+[ListRecordsResponseResponseTypeDef](./type_defs.md#listrecordsresponseresponsetypedef).
 
 ### register_device
+
+Registers a device to receive push sync notifications.
 
 Type annotations for `boto3.client("cognito-sync").register_device` method.
 
 Boto3 documentation:
 [CognitoSync.Client.register_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.register_device)
+
+Arguments mapping described in
+[RegisterDeviceRequestTypeDef](./type_defs.md#registerdevicerequesttypedef).
 
 Keyword-only arguments:
 
@@ -297,14 +366,19 @@ Keyword-only arguments:
 - `Token`: `str` *(required)*
 
 Returns
-[RegisterDeviceResponseTypeDef](./type_defs.md#registerdeviceresponsetypedef).
+[RegisterDeviceResponseResponseTypeDef](./type_defs.md#registerdeviceresponseresponsetypedef).
 
 ### set_cognito_events
+
+Sets the AWS Lambda function for a given event type for an identity pool.
 
 Type annotations for `boto3.client("cognito-sync").set_cognito_events` method.
 
 Boto3 documentation:
 [CognitoSync.Client.set_cognito_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.set_cognito_events)
+
+Arguments mapping described in
+[SetCognitoEventsRequestTypeDef](./type_defs.md#setcognitoeventsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -313,11 +387,16 @@ Keyword-only arguments:
 
 ### set_identity_pool_configuration
 
+Sets the necessary configuration for push sync.
+
 Type annotations for
 `boto3.client("cognito-sync").set_identity_pool_configuration` method.
 
 Boto3 documentation:
 [CognitoSync.Client.set_identity_pool_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.set_identity_pool_configuration)
+
+Arguments mapping described in
+[SetIdentityPoolConfigurationRequestTypeDef](./type_defs.md#setidentitypoolconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -327,15 +406,21 @@ Keyword-only arguments:
   [CognitoStreamsTypeDef](./type_defs.md#cognitostreamstypedef)
 
 Returns
-[SetIdentityPoolConfigurationResponseTypeDef](./type_defs.md#setidentitypoolconfigurationresponsetypedef).
+[SetIdentityPoolConfigurationResponseResponseTypeDef](./type_defs.md#setidentitypoolconfigurationresponseresponsetypedef).
 
 ### subscribe_to_dataset
+
+Subscribes to receive notifications when a dataset is modified by another
+device.
 
 Type annotations for `boto3.client("cognito-sync").subscribe_to_dataset`
 method.
 
 Boto3 documentation:
 [CognitoSync.Client.subscribe_to_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.subscribe_to_dataset)
+
+Arguments mapping described in
+[SubscribeToDatasetRequestTypeDef](./type_defs.md#subscribetodatasetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -348,11 +433,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### unsubscribe_from_dataset
 
+Unsubscribes from receiving notifications when a dataset is modified by another
+device.
+
 Type annotations for `boto3.client("cognito-sync").unsubscribe_from_dataset`
 method.
 
 Boto3 documentation:
 [CognitoSync.Client.unsubscribe_from_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.unsubscribe_from_dataset)
+
+Arguments mapping described in
+[UnsubscribeFromDatasetRequestTypeDef](./type_defs.md#unsubscribefromdatasetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -365,10 +456,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_records
 
+Posts updates to records and adds and deletes records for a dataset and user.
+
 Type annotations for `boto3.client("cognito-sync").update_records` method.
 
 Boto3 documentation:
 [CognitoSync.Client.update_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.update_records)
+
+Arguments mapping described in
+[UpdateRecordsRequestTypeDef](./type_defs.md#updaterecordsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -382,4 +478,4 @@ Keyword-only arguments:
 - `ClientContext`: `str`
 
 Returns
-[UpdateRecordsResponseTypeDef](./type_defs.md#updaterecordsresponsetypedef).
+[UpdateRecordsResponseResponseTypeDef](./type_defs.md#updaterecordsresponseresponsetypedef).

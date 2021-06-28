@@ -88,10 +88,15 @@ Exceptions:
 
 ### associate_lenses
 
+Associate a lens to a workload.
+
 Type annotations for `boto3.client("wellarchitected").associate_lenses` method.
 
 Boto3 documentation:
 [WellArchitected.Client.associate_lenses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.associate_lenses)
+
+Arguments mapping described in
+[AssociateLensesInputTypeDef](./type_defs.md#associatelensesinputtypedef).
 
 Keyword-only arguments:
 
@@ -99,6 +104,8 @@ Keyword-only arguments:
 - `LensAliases`: `List`\[`str`\] *(required)*
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("wellarchitected").can_paginate` method.
 
@@ -113,10 +120,15 @@ Returns `bool`.
 
 ### create_milestone
 
+Create a milestone for an existing workload.
+
 Type annotations for `boto3.client("wellarchitected").create_milestone` method.
 
 Boto3 documentation:
 [WellArchitected.Client.create_milestone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_milestone)
+
+Arguments mapping described in
+[CreateMilestoneInputTypeDef](./type_defs.md#createmilestoneinputtypedef).
 
 Keyword-only arguments:
 
@@ -125,14 +137,19 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str` *(required)*
 
 Returns
-[CreateMilestoneOutputTypeDef](./type_defs.md#createmilestoneoutputtypedef).
+[CreateMilestoneOutputResponseTypeDef](./type_defs.md#createmilestoneoutputresponsetypedef).
 
 ### create_workload
+
+Create a new workload.
 
 Type annotations for `boto3.client("wellarchitected").create_workload` method.
 
 Boto3 documentation:
 [WellArchitected.Client.create_workload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_workload)
+
+Arguments mapping described in
+[CreateWorkloadInputTypeDef](./type_defs.md#createworkloadinputtypedef).
 
 Keyword-only arguments:
 
@@ -154,15 +171,20 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateWorkloadOutputTypeDef](./type_defs.md#createworkloadoutputtypedef).
+[CreateWorkloadOutputResponseTypeDef](./type_defs.md#createworkloadoutputresponsetypedef).
 
 ### create_workload_share
+
+Create a workload share.
 
 Type annotations for `boto3.client("wellarchitected").create_workload_share`
 method.
 
 Boto3 documentation:
 [WellArchitected.Client.create_workload_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_workload_share)
+
+Arguments mapping described in
+[CreateWorkloadShareInputTypeDef](./type_defs.md#createworkloadshareinputtypedef).
 
 Keyword-only arguments:
 
@@ -173,14 +195,19 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str` *(required)*
 
 Returns
-[CreateWorkloadShareOutputTypeDef](./type_defs.md#createworkloadshareoutputtypedef).
+[CreateWorkloadShareOutputResponseTypeDef](./type_defs.md#createworkloadshareoutputresponsetypedef).
 
 ### delete_workload
+
+Delete an existing workload.
 
 Type annotations for `boto3.client("wellarchitected").delete_workload` method.
 
 Boto3 documentation:
 [WellArchitected.Client.delete_workload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.delete_workload)
+
+Arguments mapping described in
+[DeleteWorkloadInputTypeDef](./type_defs.md#deleteworkloadinputtypedef).
 
 Keyword-only arguments:
 
@@ -189,11 +216,16 @@ Keyword-only arguments:
 
 ### delete_workload_share
 
+Delete a workload share.
+
 Type annotations for `boto3.client("wellarchitected").delete_workload_share`
 method.
 
 Boto3 documentation:
 [WellArchitected.Client.delete_workload_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.delete_workload_share)
+
+Arguments mapping described in
+[DeleteWorkloadShareInputTypeDef](./type_defs.md#deleteworkloadshareinputtypedef).
 
 Keyword-only arguments:
 
@@ -203,11 +235,16 @@ Keyword-only arguments:
 
 ### disassociate_lenses
 
+Disassociate a lens from a workload.
+
 Type annotations for `boto3.client("wellarchitected").disassociate_lenses`
 method.
 
 Boto3 documentation:
 [WellArchitected.Client.disassociate_lenses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.disassociate_lenses)
+
+Arguments mapping described in
+[DisassociateLensesInputTypeDef](./type_defs.md#disassociatelensesinputtypedef).
 
 Keyword-only arguments:
 
@@ -215,6 +252,8 @@ Keyword-only arguments:
 - `LensAliases`: `List`\[`str`\] *(required)*
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("wellarchitected").generate_presigned_url`
 method.
@@ -233,10 +272,15 @@ Returns `str`.
 
 ### get_answer
 
+Get lens review.
+
 Type annotations for `boto3.client("wellarchitected").get_answer` method.
 
 Boto3 documentation:
 [WellArchitected.Client.get_answer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_answer)
+
+Arguments mapping described in
+[GetAnswerInputTypeDef](./type_defs.md#getanswerinputtypedef).
 
 Keyword-only arguments:
 
@@ -245,14 +289,20 @@ Keyword-only arguments:
 - `QuestionId`: `str` *(required)*
 - `MilestoneNumber`: `int`
 
-Returns [GetAnswerOutputTypeDef](./type_defs.md#getansweroutputtypedef).
+Returns
+[GetAnswerOutputResponseTypeDef](./type_defs.md#getansweroutputresponsetypedef).
 
 ### get_lens_review
+
+Get lens review.
 
 Type annotations for `boto3.client("wellarchitected").get_lens_review` method.
 
 Boto3 documentation:
 [WellArchitected.Client.get_lens_review](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_review)
+
+Arguments mapping described in
+[GetLensReviewInputTypeDef](./type_defs.md#getlensreviewinputtypedef).
 
 Keyword-only arguments:
 
@@ -261,9 +311,11 @@ Keyword-only arguments:
 - `MilestoneNumber`: `int`
 
 Returns
-[GetLensReviewOutputTypeDef](./type_defs.md#getlensreviewoutputtypedef).
+[GetLensReviewOutputResponseTypeDef](./type_defs.md#getlensreviewoutputresponsetypedef).
 
 ### get_lens_review_report
+
+Get lens review report.
 
 Type annotations for `boto3.client("wellarchitected").get_lens_review_report`
 method.
@@ -271,6 +323,9 @@ method.
 Boto3 documentation:
 [WellArchitected.Client.get_lens_review_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_review_report)
 
+Arguments mapping described in
+[GetLensReviewReportInputTypeDef](./type_defs.md#getlensreviewreportinputtypedef).
+
 Keyword-only arguments:
 
 - `WorkloadId`: `str` *(required)*
@@ -278,9 +333,11 @@ Keyword-only arguments:
 - `MilestoneNumber`: `int`
 
 Returns
-[GetLensReviewReportOutputTypeDef](./type_defs.md#getlensreviewreportoutputtypedef).
+[GetLensReviewReportOutputResponseTypeDef](./type_defs.md#getlensreviewreportoutputresponsetypedef).
 
 ### get_lens_version_difference
+
+Get lens version differences.
 
 Type annotations for
 `boto3.client("wellarchitected").get_lens_version_difference` method.
@@ -288,47 +345,67 @@ Type annotations for
 Boto3 documentation:
 [WellArchitected.Client.get_lens_version_difference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_version_difference)
 
+Arguments mapping described in
+[GetLensVersionDifferenceInputTypeDef](./type_defs.md#getlensversiondifferenceinputtypedef).
+
 Keyword-only arguments:
 
 - `LensAlias`: `str` *(required)*
 - `BaseLensVersion`: `str` *(required)*
 
 Returns
-[GetLensVersionDifferenceOutputTypeDef](./type_defs.md#getlensversiondifferenceoutputtypedef).
+[GetLensVersionDifferenceOutputResponseTypeDef](./type_defs.md#getlensversiondifferenceoutputresponsetypedef).
 
 ### get_milestone
+
+Get a milestone for an existing workload.
 
 Type annotations for `boto3.client("wellarchitected").get_milestone` method.
 
 Boto3 documentation:
 [WellArchitected.Client.get_milestone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_milestone)
 
+Arguments mapping described in
+[GetMilestoneInputTypeDef](./type_defs.md#getmilestoneinputtypedef).
+
 Keyword-only arguments:
 
 - `WorkloadId`: `str` *(required)*
 - `MilestoneNumber`: `int` *(required)*
 
-Returns [GetMilestoneOutputTypeDef](./type_defs.md#getmilestoneoutputtypedef).
+Returns
+[GetMilestoneOutputResponseTypeDef](./type_defs.md#getmilestoneoutputresponsetypedef).
 
 ### get_workload
+
+Get an existing workload.
 
 Type annotations for `boto3.client("wellarchitected").get_workload` method.
 
 Boto3 documentation:
 [WellArchitected.Client.get_workload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_workload)
 
+Arguments mapping described in
+[GetWorkloadInputTypeDef](./type_defs.md#getworkloadinputtypedef).
+
 Keyword-only arguments:
 
 - `WorkloadId`: `str` *(required)*
 
-Returns [GetWorkloadOutputTypeDef](./type_defs.md#getworkloadoutputtypedef).
+Returns
+[GetWorkloadOutputResponseTypeDef](./type_defs.md#getworkloadoutputresponsetypedef).
 
 ### list_answers
+
+List of answers.
 
 Type annotations for `boto3.client("wellarchitected").list_answers` method.
 
 Boto3 documentation:
 [WellArchitected.Client.list_answers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_answers)
+
+Arguments mapping described in
+[ListAnswersInputTypeDef](./type_defs.md#listanswersinputtypedef).
 
 Keyword-only arguments:
 
@@ -339,9 +416,12 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns [ListAnswersOutputTypeDef](./type_defs.md#listanswersoutputtypedef).
+Returns
+[ListAnswersOutputResponseTypeDef](./type_defs.md#listanswersoutputresponsetypedef).
 
 ### list_lens_review_improvements
+
+List lens review improvements.
 
 Type annotations for
 `boto3.client("wellarchitected").list_lens_review_improvements` method.
@@ -349,6 +429,9 @@ Type annotations for
 Boto3 documentation:
 [WellArchitected.Client.list_lens_review_improvements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_lens_review_improvements)
 
+Arguments mapping described in
+[ListLensReviewImprovementsInputTypeDef](./type_defs.md#listlensreviewimprovementsinputtypedef).
+
 Keyword-only arguments:
 
 - `WorkloadId`: `str` *(required)*
@@ -359,15 +442,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListLensReviewImprovementsOutputTypeDef](./type_defs.md#listlensreviewimprovementsoutputtypedef).
+[ListLensReviewImprovementsOutputResponseTypeDef](./type_defs.md#listlensreviewimprovementsoutputresponsetypedef).
 
 ### list_lens_reviews
+
+List lens reviews.
 
 Type annotations for `boto3.client("wellarchitected").list_lens_reviews`
 method.
 
 Boto3 documentation:
 [WellArchitected.Client.list_lens_reviews](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_lens_reviews)
+
+Arguments mapping described in
+[ListLensReviewsInputTypeDef](./type_defs.md#listlensreviewsinputtypedef).
 
 Keyword-only arguments:
 
@@ -377,28 +465,39 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListLensReviewsOutputTypeDef](./type_defs.md#listlensreviewsoutputtypedef).
+[ListLensReviewsOutputResponseTypeDef](./type_defs.md#listlensreviewsoutputresponsetypedef).
 
 ### list_lenses
+
+List the available lenses.
 
 Type annotations for `boto3.client("wellarchitected").list_lenses` method.
 
 Boto3 documentation:
 [WellArchitected.Client.list_lenses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_lenses)
 
+Arguments mapping described in
+[ListLensesInputTypeDef](./type_defs.md#listlensesinputtypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns [ListLensesOutputTypeDef](./type_defs.md#listlensesoutputtypedef).
+Returns
+[ListLensesOutputResponseTypeDef](./type_defs.md#listlensesoutputresponsetypedef).
 
 ### list_milestones
+
+List all milestones for an existing workload.
 
 Type annotations for `boto3.client("wellarchitected").list_milestones` method.
 
 Boto3 documentation:
 [WellArchitected.Client.list_milestones](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_milestones)
+
+Arguments mapping described in
+[ListMilestonesInputTypeDef](./type_defs.md#listmilestonesinputtypedef).
 
 Keyword-only arguments:
 
@@ -407,15 +506,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListMilestonesOutputTypeDef](./type_defs.md#listmilestonesoutputtypedef).
+[ListMilestonesOutputResponseTypeDef](./type_defs.md#listmilestonesoutputresponsetypedef).
 
 ### list_notifications
+
+List lens notifications.
 
 Type annotations for `boto3.client("wellarchitected").list_notifications`
 method.
 
 Boto3 documentation:
 [WellArchitected.Client.list_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_notifications)
+
+Arguments mapping described in
+[ListNotificationsInputTypeDef](./type_defs.md#listnotificationsinputtypedef).
 
 Keyword-only arguments:
 
@@ -424,15 +528,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListNotificationsOutputTypeDef](./type_defs.md#listnotificationsoutputtypedef).
+[ListNotificationsOutputResponseTypeDef](./type_defs.md#listnotificationsoutputresponsetypedef).
 
 ### list_share_invitations
+
+List the workload invitations.
 
 Type annotations for `boto3.client("wellarchitected").list_share_invitations`
 method.
 
 Boto3 documentation:
 [WellArchitected.Client.list_share_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_share_invitations)
+
+Arguments mapping described in
+[ListShareInvitationsInputTypeDef](./type_defs.md#listshareinvitationsinputtypedef).
 
 Keyword-only arguments:
 
@@ -441,9 +550,11 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListShareInvitationsOutputTypeDef](./type_defs.md#listshareinvitationsoutputtypedef).
+[ListShareInvitationsOutputResponseTypeDef](./type_defs.md#listshareinvitationsoutputresponsetypedef).
 
 ### list_tags_for_resource
+
+List the tags for a resource.
 
 Type annotations for `boto3.client("wellarchitected").list_tags_for_resource`
 method.
@@ -451,20 +562,28 @@ method.
 Boto3 documentation:
 [WellArchitected.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceInputTypeDef](./type_defs.md#listtagsforresourceinputtypedef).
+
 Keyword-only arguments:
 
 - `WorkloadArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+[ListTagsForResourceOutputResponseTypeDef](./type_defs.md#listtagsforresourceoutputresponsetypedef).
 
 ### list_workload_shares
+
+List the workload shares associated with the workload.
 
 Type annotations for `boto3.client("wellarchitected").list_workload_shares`
 method.
 
 Boto3 documentation:
 [WellArchitected.Client.list_workload_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_workload_shares)
+
+Arguments mapping described in
+[ListWorkloadSharesInputTypeDef](./type_defs.md#listworkloadsharesinputtypedef).
 
 Keyword-only arguments:
 
@@ -474,14 +593,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListWorkloadSharesOutputTypeDef](./type_defs.md#listworkloadsharesoutputtypedef).
+[ListWorkloadSharesOutputResponseTypeDef](./type_defs.md#listworkloadsharesoutputresponsetypedef).
 
 ### list_workloads
+
+List workloads.
 
 Type annotations for `boto3.client("wellarchitected").list_workloads` method.
 
 Boto3 documentation:
 [WellArchitected.Client.list_workloads](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_workloads)
+
+Arguments mapping described in
+[ListWorkloadsInputTypeDef](./type_defs.md#listworkloadsinputtypedef).
 
 Keyword-only arguments:
 
@@ -490,14 +614,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListWorkloadsOutputTypeDef](./type_defs.md#listworkloadsoutputtypedef).
+[ListWorkloadsOutputResponseTypeDef](./type_defs.md#listworkloadsoutputresponsetypedef).
 
 ### tag_resource
+
+Adds one or more tags to the specified resource.
 
 Type annotations for `boto3.client("wellarchitected").tag_resource` method.
 
 Boto3 documentation:
 [WellArchitected.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceInputTypeDef](./type_defs.md#tagresourceinputtypedef).
 
 Keyword-only arguments:
 
@@ -508,10 +637,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Deletes specified tags from a resource.
+
 Type annotations for `boto3.client("wellarchitected").untag_resource` method.
 
 Boto3 documentation:
 [WellArchitected.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceInputTypeDef](./type_defs.md#untagresourceinputtypedef).
 
 Keyword-only arguments:
 
@@ -522,10 +656,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_answer
 
+Update the answer to a specific question in a workload review.
+
 Type annotations for `boto3.client("wellarchitected").update_answer` method.
 
 Boto3 documentation:
 [WellArchitected.Client.update_answer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_answer)
+
+Arguments mapping described in
+[UpdateAnswerInputTypeDef](./type_defs.md#updateanswerinputtypedef).
 
 Keyword-only arguments:
 
@@ -536,15 +675,21 @@ Keyword-only arguments:
 - `Notes`: `str`
 - `IsApplicable`: `bool`
 
-Returns [UpdateAnswerOutputTypeDef](./type_defs.md#updateansweroutputtypedef).
+Returns
+[UpdateAnswerOutputResponseTypeDef](./type_defs.md#updateansweroutputresponsetypedef).
 
 ### update_lens_review
+
+Update lens review.
 
 Type annotations for `boto3.client("wellarchitected").update_lens_review`
 method.
 
 Boto3 documentation:
 [WellArchitected.Client.update_lens_review](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_lens_review)
+
+Arguments mapping described in
+[UpdateLensReviewInputTypeDef](./type_defs.md#updatelensreviewinputtypedef).
 
 Keyword-only arguments:
 
@@ -554,15 +699,20 @@ Keyword-only arguments:
 - `PillarNotes`: `Dict`\[`str`, `str`\]
 
 Returns
-[UpdateLensReviewOutputTypeDef](./type_defs.md#updatelensreviewoutputtypedef).
+[UpdateLensReviewOutputResponseTypeDef](./type_defs.md#updatelensreviewoutputresponsetypedef).
 
 ### update_share_invitation
+
+Update a workload invitation.
 
 Type annotations for `boto3.client("wellarchitected").update_share_invitation`
 method.
 
 Boto3 documentation:
 [WellArchitected.Client.update_share_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_share_invitation)
+
+Arguments mapping described in
+[UpdateShareInvitationInputTypeDef](./type_defs.md#updateshareinvitationinputtypedef).
 
 Keyword-only arguments:
 
@@ -572,14 +722,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateShareInvitationOutputTypeDef](./type_defs.md#updateshareinvitationoutputtypedef).
+[UpdateShareInvitationOutputResponseTypeDef](./type_defs.md#updateshareinvitationoutputresponsetypedef).
 
 ### update_workload
+
+Update an existing workload.
 
 Type annotations for `boto3.client("wellarchitected").update_workload` method.
 
 Boto3 documentation:
 [WellArchitected.Client.update_workload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_workload)
+
+Arguments mapping described in
+[UpdateWorkloadInputTypeDef](./type_defs.md#updateworkloadinputtypedef).
 
 Keyword-only arguments:
 
@@ -602,15 +757,20 @@ Keyword-only arguments:
   [WorkloadImprovementStatusType](./literals.md#workloadimprovementstatustype)
 
 Returns
-[UpdateWorkloadOutputTypeDef](./type_defs.md#updateworkloadoutputtypedef).
+[UpdateWorkloadOutputResponseTypeDef](./type_defs.md#updateworkloadoutputresponsetypedef).
 
 ### update_workload_share
+
+Update a workload share.
 
 Type annotations for `boto3.client("wellarchitected").update_workload_share`
 method.
 
 Boto3 documentation:
 [WellArchitected.Client.update_workload_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_workload_share)
+
+Arguments mapping described in
+[UpdateWorkloadShareInputTypeDef](./type_defs.md#updateworkloadshareinputtypedef).
 
 Keyword-only arguments:
 
@@ -620,15 +780,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateWorkloadShareOutputTypeDef](./type_defs.md#updateworkloadshareoutputtypedef).
+[UpdateWorkloadShareOutputResponseTypeDef](./type_defs.md#updateworkloadshareoutputresponsetypedef).
 
 ### upgrade_lens_review
+
+Upgrade lens review.
 
 Type annotations for `boto3.client("wellarchitected").upgrade_lens_review`
 method.
 
 Boto3 documentation:
 [WellArchitected.Client.upgrade_lens_review](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.upgrade_lens_review)
+
+Arguments mapping described in
+[UpgradeLensReviewInputTypeDef](./type_defs.md#upgradelensreviewinputtypedef).
 
 Keyword-only arguments:
 

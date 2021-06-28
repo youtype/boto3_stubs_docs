@@ -56,6 +56,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("pi").can_paginate` method.
 
 Boto3 documentation:
@@ -69,18 +71,23 @@ Returns `bool`.
 
 ### describe_dimension_keys
 
+For a specific time period, retrieve the top `N` dimension keys for a metric.
+
 Type annotations for `boto3.client("pi").describe_dimension_keys` method.
 
 Boto3 documentation:
 [PI.Client.describe_dimension_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.describe_dimension_keys)
+
+Arguments mapping described in
+[DescribeDimensionKeysRequestTypeDef](./type_defs.md#describedimensionkeysrequesttypedef).
 
 Keyword-only arguments:
 
 - `ServiceType`: `Literal['RDS']` (see
   [ServiceTypeType](./literals.md#servicetypetype)) *(required)*
 - `Identifier`: `str` *(required)*
-- `StartTime`: `datetime` *(required)*
-- `EndTime`: `datetime` *(required)*
+- `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
+- `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `Metric`: `str` *(required)*
 - `GroupBy`: [DimensionGroupTypeDef](./type_defs.md#dimensiongrouptypedef)
   *(required)*
@@ -91,9 +98,11 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeDimensionKeysResponseTypeDef](./type_defs.md#describedimensionkeysresponsetypedef).
+[DescribeDimensionKeysResponseResponseTypeDef](./type_defs.md#describedimensionkeysresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("pi").generate_presigned_url` method.
 
@@ -111,10 +120,16 @@ Returns `str`.
 
 ### get_dimension_key_details
 
+Get the attributes of the specified dimension group for a DB instance or data
+source.
+
 Type annotations for `boto3.client("pi").get_dimension_key_details` method.
 
 Boto3 documentation:
 [PI.Client.get_dimension_key_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.get_dimension_key_details)
+
+Arguments mapping described in
+[GetDimensionKeyDetailsRequestTypeDef](./type_defs.md#getdimensionkeydetailsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -126,14 +141,20 @@ Keyword-only arguments:
 - `RequestedDimensions`: `List`\[`str`\]
 
 Returns
-[GetDimensionKeyDetailsResponseTypeDef](./type_defs.md#getdimensionkeydetailsresponsetypedef).
+[GetDimensionKeyDetailsResponseResponseTypeDef](./type_defs.md#getdimensionkeydetailsresponseresponsetypedef).
 
 ### get_resource_metrics
+
+Retrieve Performance Insights metrics for a set of data sources, over a time
+period.
 
 Type annotations for `boto3.client("pi").get_resource_metrics` method.
 
 Boto3 documentation:
 [PI.Client.get_resource_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.get_resource_metrics)
+
+Arguments mapping described in
+[GetResourceMetricsRequestTypeDef](./type_defs.md#getresourcemetricsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -143,11 +164,11 @@ Keyword-only arguments:
 - `MetricQueries`:
   `List`\[[MetricQueryTypeDef](./type_defs.md#metricquerytypedef)\]
   *(required)*
-- `StartTime`: `datetime` *(required)*
-- `EndTime`: `datetime` *(required)*
+- `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
+- `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `PeriodInSeconds`: `int`
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[GetResourceMetricsResponseTypeDef](./type_defs.md#getresourcemetricsresponsetypedef).
+[GetResourceMetricsResponseResponseTypeDef](./type_defs.md#getresourcemetricsresponseresponsetypedef).

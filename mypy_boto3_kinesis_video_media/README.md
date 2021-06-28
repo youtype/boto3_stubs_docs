@@ -67,9 +67,10 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_kinesis_video_media.type_defs import GetMediaOutputTypeDef, ...
+from mypy_boto3_kinesis_video_media.type_defs import GetMediaInputTypeDef, ...
 ```
 
-- [GetMediaOutputTypeDef](./type_defs.md#getmediaoutputtypedef)
+- [GetMediaInputTypeDef](./type_defs.md#getmediainputtypedef)
+- [GetMediaOutputResponseTypeDef](./type_defs.md#getmediaoutputresponsetypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [StartSelectorTypeDef](./type_defs.md#startselectortypedef)

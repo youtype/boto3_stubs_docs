@@ -24,7 +24,7 @@ def get_command_executed_waiter() -> CommandExecutedWaiter:
 ```
 
 Boto3 documentation:
-[SSM.Waiter.command_executed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Waiter.command_executed)
+[SSM.Waiter.command_executed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Waiter.CommandExecuted)
 
 Arguments for `CommandExecutedWaiter.wait` method:
 

@@ -31,13 +31,13 @@ Boto3 documentation:
 Arguments for `ListDeviceEventsPaginator.paginate` method:
 
 - `DeviceId`: `str` *(required)*
-- `FromTimeStamp`: `datetime` *(required)*
-- `ToTimeStamp`: `datetime` *(required)*
+- `FromTimeStamp`: `Union`\[`datetime`, `str`\] *(required)*
+- `ToTimeStamp`: `Union`\[`datetime`, `str`\] *(required)*
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDeviceEventsPaginator.paginate` returns
-`Iterator`\[[ListDeviceEventsResponseTypeDef](./type_defs.md#listdeviceeventsresponsetypedef)\].
+`Iterator`\[[ListDeviceEventsResponseResponseTypeDef](./type_defs.md#listdeviceeventsresponseresponsetypedef)\].
 
 ## ListDevicesPaginator
 
@@ -63,4 +63,4 @@ Arguments for `ListDevicesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDevicesPaginator.paginate` returns
-`Iterator`\[[ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef)\].
+`Iterator`\[[ListDevicesResponseResponseTypeDef](./type_defs.md#listdevicesresponseresponsetypedef)\].

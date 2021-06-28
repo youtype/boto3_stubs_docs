@@ -2863,6 +2863,7 @@ Values:
 
 - `aisage`
 - `amba_cv22`
+- `amba_cv25`
 - `coreml`
 - `deeplens`
 - `imx8qm`

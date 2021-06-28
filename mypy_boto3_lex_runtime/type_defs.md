@@ -11,17 +11,23 @@ type annotations stubs module
   - [ActiveContextTimeToLiveTypeDef](#activecontexttimetolivetypedef)
   - [ActiveContextTypeDef](#activecontexttypedef)
   - [ButtonTypeDef](#buttontypedef)
-  - [DeleteSessionResponseTypeDef](#deletesessionresponsetypedef)
+  - [DeleteSessionRequestTypeDef](#deletesessionrequesttypedef)
+  - [DeleteSessionResponseResponseTypeDef](#deletesessionresponseresponsetypedef)
   - [DialogActionTypeDef](#dialogactiontypedef)
   - [GenericAttachmentTypeDef](#genericattachmenttypedef)
-  - [GetSessionResponseTypeDef](#getsessionresponsetypedef)
+  - [GetSessionRequestTypeDef](#getsessionrequesttypedef)
+  - [GetSessionResponseResponseTypeDef](#getsessionresponseresponsetypedef)
   - [IntentConfidenceTypeDef](#intentconfidencetypedef)
   - [IntentSummaryTypeDef](#intentsummarytypedef)
-  - [PostContentResponseTypeDef](#postcontentresponsetypedef)
-  - [PostTextResponseTypeDef](#posttextresponsetypedef)
+  - [PostContentRequestTypeDef](#postcontentrequesttypedef)
+  - [PostContentResponseResponseTypeDef](#postcontentresponseresponsetypedef)
+  - [PostTextRequestTypeDef](#posttextrequesttypedef)
+  - [PostTextResponseResponseTypeDef](#posttextresponseresponsetypedef)
   - [PredictedIntentTypeDef](#predictedintenttypedef)
-  - [PutSessionResponseTypeDef](#putsessionresponsetypedef)
+  - [PutSessionRequestTypeDef](#putsessionrequesttypedef)
+  - [PutSessionResponseResponseTypeDef](#putsessionresponseresponsetypedef)
   - [ResponseCardTypeDef](#responsecardtypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SentimentResponseTypeDef](#sentimentresponsetypedef)
 
 ## ActiveContextTimeToLiveTypeDef
@@ -59,18 +65,32 @@ Required fields:
 - `text`: `str`
 - `value`: `str`
 
-## DeleteSessionResponseTypeDef
+## DeleteSessionRequestTypeDef
 
 ```python
-from mypy_boto3_lex_runtime.type_defs import DeleteSessionResponseTypeDef
+from mypy_boto3_lex_runtime.type_defs import DeleteSessionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `botName`: `str`
+- `botAlias`: `str`
+- `userId`: `str`
+
+## DeleteSessionResponseResponseTypeDef
+
+```python
+from mypy_boto3_lex_runtime.type_defs import DeleteSessionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `botName`: `str`
 - `botAlias`: `str`
 - `userId`: `str`
 - `sessionId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DialogActionTypeDef
 
@@ -106,13 +126,29 @@ Optional fields:
 - `imageUrl`: `str`
 - `buttons`: `List`\[[ButtonTypeDef](./type_defs.md#buttontypedef)\]
 
-## GetSessionResponseTypeDef
+## GetSessionRequestTypeDef
 
 ```python
-from mypy_boto3_lex_runtime.type_defs import GetSessionResponseTypeDef
+from mypy_boto3_lex_runtime.type_defs import GetSessionRequestTypeDef
 ```
 
+Required fields:
+
+- `botName`: `str`
+- `botAlias`: `str`
+- `userId`: `str`
+
 Optional fields:
+
+- `checkpointLabelFilter`: `str`
+
+## GetSessionResponseResponseTypeDef
+
+```python
+from mypy_boto3_lex_runtime.type_defs import GetSessionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `recentIntentSummaryView`:
   `List`\[[IntentSummaryTypeDef](./type_defs.md#intentsummarytypedef)\]
@@ -121,6 +157,8 @@ Optional fields:
 - `dialogAction`: [DialogActionTypeDef](./type_defs.md#dialogactiontypedef)
 - `activeContexts`:
   `List`\[[ActiveContextTypeDef](./type_defs.md#activecontexttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## IntentConfidenceTypeDef
 
@@ -154,13 +192,34 @@ Optional fields:
   [FulfillmentStateType](./literals.md#fulfillmentstatetype)
 - `slotToElicit`: `str`
 
-## PostContentResponseTypeDef
+## PostContentRequestTypeDef
 
 ```python
-from mypy_boto3_lex_runtime.type_defs import PostContentResponseTypeDef
+from mypy_boto3_lex_runtime.type_defs import PostContentRequestTypeDef
 ```
 
+Required fields:
+
+- `botName`: `str`
+- `botAlias`: `str`
+- `userId`: `str`
+- `contentType`: `str`
+- `inputStream`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+
 Optional fields:
+
+- `sessionAttributes`: `str`
+- `requestAttributes`: `str`
+- `accept`: `str`
+- `activeContexts`: `str`
+
+## PostContentResponseResponseTypeDef
+
+```python
+from mypy_boto3_lex_runtime.type_defs import PostContentResponseResponseTypeDef
+```
+
+Required fields:
 
 - `contentType`: `str`
 - `intentName`: `str`
@@ -180,14 +239,36 @@ Optional fields:
 - `botVersion`: `str`
 - `sessionId`: `str`
 - `activeContexts`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PostTextResponseTypeDef
+## PostTextRequestTypeDef
 
 ```python
-from mypy_boto3_lex_runtime.type_defs import PostTextResponseTypeDef
+from mypy_boto3_lex_runtime.type_defs import PostTextRequestTypeDef
 ```
 
+Required fields:
+
+- `botName`: `str`
+- `botAlias`: `str`
+- `userId`: `str`
+- `inputText`: `str`
+
 Optional fields:
+
+- `sessionAttributes`: `Dict`\[`str`, `str`\]
+- `requestAttributes`: `Dict`\[`str`, `str`\]
+- `activeContexts`:
+  `List`\[[ActiveContextTypeDef](./type_defs.md#activecontexttypedef)\]
+
+## PostTextResponseResponseTypeDef
+
+```python
+from mypy_boto3_lex_runtime.type_defs import PostTextResponseResponseTypeDef
+```
+
+Required fields:
 
 - `intentName`: `str`
 - `nluIntentConfidence`:
@@ -207,6 +288,8 @@ Optional fields:
 - `botVersion`: `str`
 - `activeContexts`:
   `List`\[[ActiveContextTypeDef](./type_defs.md#activecontexttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PredictedIntentTypeDef
 
@@ -221,13 +304,35 @@ Optional fields:
   [IntentConfidenceTypeDef](./type_defs.md#intentconfidencetypedef)
 - `slots`: `Dict`\[`str`, `str`\]
 
-## PutSessionResponseTypeDef
+## PutSessionRequestTypeDef
 
 ```python
-from mypy_boto3_lex_runtime.type_defs import PutSessionResponseTypeDef
+from mypy_boto3_lex_runtime.type_defs import PutSessionRequestTypeDef
 ```
 
+Required fields:
+
+- `botName`: `str`
+- `botAlias`: `str`
+- `userId`: `str`
+
 Optional fields:
+
+- `sessionAttributes`: `Dict`\[`str`, `str`\]
+- `dialogAction`: [DialogActionTypeDef](./type_defs.md#dialogactiontypedef)
+- `recentIntentSummaryView`:
+  `List`\[[IntentSummaryTypeDef](./type_defs.md#intentsummarytypedef)\]
+- `accept`: `str`
+- `activeContexts`:
+  `List`\[[ActiveContextTypeDef](./type_defs.md#activecontexttypedef)\]
+
+## PutSessionResponseResponseTypeDef
+
+```python
+from mypy_boto3_lex_runtime.type_defs import PutSessionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `contentType`: `str`
 - `intentName`: `str`
@@ -241,6 +346,8 @@ Optional fields:
 - `audioStream`: `StreamingBody`
 - `sessionId`: `str`
 - `activeContexts`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ResponseCardTypeDef
 
@@ -255,6 +362,20 @@ Optional fields:
   [ContentTypeType](./literals.md#contenttypetype))
 - `genericAttachments`:
   `List`\[[GenericAttachmentTypeDef](./type_defs.md#genericattachmenttypedef)\]
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_lex_runtime.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## SentimentResponseTypeDef
 

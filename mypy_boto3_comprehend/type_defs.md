@@ -10,40 +10,70 @@ type annotations stubs module
 - [Typed dictionaries for boto3 Comprehend module](#typed-dictionaries-for-boto3-comprehend-module)
   - [AugmentedManifestsListItemTypeDef](#augmentedmanifestslistitemtypedef)
   - [BatchDetectDominantLanguageItemResultTypeDef](#batchdetectdominantlanguageitemresulttypedef)
-  - [BatchDetectDominantLanguageResponseTypeDef](#batchdetectdominantlanguageresponsetypedef)
+  - [BatchDetectDominantLanguageRequestTypeDef](#batchdetectdominantlanguagerequesttypedef)
+  - [BatchDetectDominantLanguageResponseResponseTypeDef](#batchdetectdominantlanguageresponseresponsetypedef)
   - [BatchDetectEntitiesItemResultTypeDef](#batchdetectentitiesitemresulttypedef)
-  - [BatchDetectEntitiesResponseTypeDef](#batchdetectentitiesresponsetypedef)
+  - [BatchDetectEntitiesRequestTypeDef](#batchdetectentitiesrequesttypedef)
+  - [BatchDetectEntitiesResponseResponseTypeDef](#batchdetectentitiesresponseresponsetypedef)
   - [BatchDetectKeyPhrasesItemResultTypeDef](#batchdetectkeyphrasesitemresulttypedef)
-  - [BatchDetectKeyPhrasesResponseTypeDef](#batchdetectkeyphrasesresponsetypedef)
+  - [BatchDetectKeyPhrasesRequestTypeDef](#batchdetectkeyphrasesrequesttypedef)
+  - [BatchDetectKeyPhrasesResponseResponseTypeDef](#batchdetectkeyphrasesresponseresponsetypedef)
   - [BatchDetectSentimentItemResultTypeDef](#batchdetectsentimentitemresulttypedef)
-  - [BatchDetectSentimentResponseTypeDef](#batchdetectsentimentresponsetypedef)
+  - [BatchDetectSentimentRequestTypeDef](#batchdetectsentimentrequesttypedef)
+  - [BatchDetectSentimentResponseResponseTypeDef](#batchdetectsentimentresponseresponsetypedef)
   - [BatchDetectSyntaxItemResultTypeDef](#batchdetectsyntaxitemresulttypedef)
-  - [BatchDetectSyntaxResponseTypeDef](#batchdetectsyntaxresponsetypedef)
+  - [BatchDetectSyntaxRequestTypeDef](#batchdetectsyntaxrequesttypedef)
+  - [BatchDetectSyntaxResponseResponseTypeDef](#batchdetectsyntaxresponseresponsetypedef)
   - [BatchItemErrorTypeDef](#batchitemerrortypedef)
   - [ClassifierEvaluationMetricsTypeDef](#classifierevaluationmetricstypedef)
   - [ClassifierMetadataTypeDef](#classifiermetadatatypedef)
-  - [ClassifyDocumentResponseTypeDef](#classifydocumentresponsetypedef)
-  - [ContainsPiiEntitiesResponseTypeDef](#containspiientitiesresponsetypedef)
-  - [CreateDocumentClassifierResponseTypeDef](#createdocumentclassifierresponsetypedef)
-  - [CreateEndpointResponseTypeDef](#createendpointresponsetypedef)
-  - [CreateEntityRecognizerResponseTypeDef](#createentityrecognizerresponsetypedef)
-  - [DescribeDocumentClassificationJobResponseTypeDef](#describedocumentclassificationjobresponsetypedef)
-  - [DescribeDocumentClassifierResponseTypeDef](#describedocumentclassifierresponsetypedef)
-  - [DescribeDominantLanguageDetectionJobResponseTypeDef](#describedominantlanguagedetectionjobresponsetypedef)
-  - [DescribeEndpointResponseTypeDef](#describeendpointresponsetypedef)
-  - [DescribeEntitiesDetectionJobResponseTypeDef](#describeentitiesdetectionjobresponsetypedef)
-  - [DescribeEntityRecognizerResponseTypeDef](#describeentityrecognizerresponsetypedef)
-  - [DescribeEventsDetectionJobResponseTypeDef](#describeeventsdetectionjobresponsetypedef)
-  - [DescribeKeyPhrasesDetectionJobResponseTypeDef](#describekeyphrasesdetectionjobresponsetypedef)
-  - [DescribePiiEntitiesDetectionJobResponseTypeDef](#describepiientitiesdetectionjobresponsetypedef)
-  - [DescribeSentimentDetectionJobResponseTypeDef](#describesentimentdetectionjobresponsetypedef)
-  - [DescribeTopicsDetectionJobResponseTypeDef](#describetopicsdetectionjobresponsetypedef)
-  - [DetectDominantLanguageResponseTypeDef](#detectdominantlanguageresponsetypedef)
-  - [DetectEntitiesResponseTypeDef](#detectentitiesresponsetypedef)
-  - [DetectKeyPhrasesResponseTypeDef](#detectkeyphrasesresponsetypedef)
-  - [DetectPiiEntitiesResponseTypeDef](#detectpiientitiesresponsetypedef)
-  - [DetectSentimentResponseTypeDef](#detectsentimentresponsetypedef)
-  - [DetectSyntaxResponseTypeDef](#detectsyntaxresponsetypedef)
+  - [ClassifyDocumentRequestTypeDef](#classifydocumentrequesttypedef)
+  - [ClassifyDocumentResponseResponseTypeDef](#classifydocumentresponseresponsetypedef)
+  - [ContainsPiiEntitiesRequestTypeDef](#containspiientitiesrequesttypedef)
+  - [ContainsPiiEntitiesResponseResponseTypeDef](#containspiientitiesresponseresponsetypedef)
+  - [CreateDocumentClassifierRequestTypeDef](#createdocumentclassifierrequesttypedef)
+  - [CreateDocumentClassifierResponseResponseTypeDef](#createdocumentclassifierresponseresponsetypedef)
+  - [CreateEndpointRequestTypeDef](#createendpointrequesttypedef)
+  - [CreateEndpointResponseResponseTypeDef](#createendpointresponseresponsetypedef)
+  - [CreateEntityRecognizerRequestTypeDef](#createentityrecognizerrequesttypedef)
+  - [CreateEntityRecognizerResponseResponseTypeDef](#createentityrecognizerresponseresponsetypedef)
+  - [DeleteDocumentClassifierRequestTypeDef](#deletedocumentclassifierrequesttypedef)
+  - [DeleteEndpointRequestTypeDef](#deleteendpointrequesttypedef)
+  - [DeleteEntityRecognizerRequestTypeDef](#deleteentityrecognizerrequesttypedef)
+  - [DescribeDocumentClassificationJobRequestTypeDef](#describedocumentclassificationjobrequesttypedef)
+  - [DescribeDocumentClassificationJobResponseResponseTypeDef](#describedocumentclassificationjobresponseresponsetypedef)
+  - [DescribeDocumentClassifierRequestTypeDef](#describedocumentclassifierrequesttypedef)
+  - [DescribeDocumentClassifierResponseResponseTypeDef](#describedocumentclassifierresponseresponsetypedef)
+  - [DescribeDominantLanguageDetectionJobRequestTypeDef](#describedominantlanguagedetectionjobrequesttypedef)
+  - [DescribeDominantLanguageDetectionJobResponseResponseTypeDef](#describedominantlanguagedetectionjobresponseresponsetypedef)
+  - [DescribeEndpointRequestTypeDef](#describeendpointrequesttypedef)
+  - [DescribeEndpointResponseResponseTypeDef](#describeendpointresponseresponsetypedef)
+  - [DescribeEntitiesDetectionJobRequestTypeDef](#describeentitiesdetectionjobrequesttypedef)
+  - [DescribeEntitiesDetectionJobResponseResponseTypeDef](#describeentitiesdetectionjobresponseresponsetypedef)
+  - [DescribeEntityRecognizerRequestTypeDef](#describeentityrecognizerrequesttypedef)
+  - [DescribeEntityRecognizerResponseResponseTypeDef](#describeentityrecognizerresponseresponsetypedef)
+  - [DescribeEventsDetectionJobRequestTypeDef](#describeeventsdetectionjobrequesttypedef)
+  - [DescribeEventsDetectionJobResponseResponseTypeDef](#describeeventsdetectionjobresponseresponsetypedef)
+  - [DescribeKeyPhrasesDetectionJobRequestTypeDef](#describekeyphrasesdetectionjobrequesttypedef)
+  - [DescribeKeyPhrasesDetectionJobResponseResponseTypeDef](#describekeyphrasesdetectionjobresponseresponsetypedef)
+  - [DescribePiiEntitiesDetectionJobRequestTypeDef](#describepiientitiesdetectionjobrequesttypedef)
+  - [DescribePiiEntitiesDetectionJobResponseResponseTypeDef](#describepiientitiesdetectionjobresponseresponsetypedef)
+  - [DescribeSentimentDetectionJobRequestTypeDef](#describesentimentdetectionjobrequesttypedef)
+  - [DescribeSentimentDetectionJobResponseResponseTypeDef](#describesentimentdetectionjobresponseresponsetypedef)
+  - [DescribeTopicsDetectionJobRequestTypeDef](#describetopicsdetectionjobrequesttypedef)
+  - [DescribeTopicsDetectionJobResponseResponseTypeDef](#describetopicsdetectionjobresponseresponsetypedef)
+  - [DetectDominantLanguageRequestTypeDef](#detectdominantlanguagerequesttypedef)
+  - [DetectDominantLanguageResponseResponseTypeDef](#detectdominantlanguageresponseresponsetypedef)
+  - [DetectEntitiesRequestTypeDef](#detectentitiesrequesttypedef)
+  - [DetectEntitiesResponseResponseTypeDef](#detectentitiesresponseresponsetypedef)
+  - [DetectKeyPhrasesRequestTypeDef](#detectkeyphrasesrequesttypedef)
+  - [DetectKeyPhrasesResponseResponseTypeDef](#detectkeyphrasesresponseresponsetypedef)
+  - [DetectPiiEntitiesRequestTypeDef](#detectpiientitiesrequesttypedef)
+  - [DetectPiiEntitiesResponseResponseTypeDef](#detectpiientitiesresponseresponsetypedef)
+  - [DetectSentimentRequestTypeDef](#detectsentimentrequesttypedef)
+  - [DetectSentimentResponseResponseTypeDef](#detectsentimentresponseresponsetypedef)
+  - [DetectSyntaxRequestTypeDef](#detectsyntaxrequesttypedef)
+  - [DetectSyntaxResponseResponseTypeDef](#detectsyntaxresponseresponsetypedef)
   - [DocumentClassTypeDef](#documentclasstypedef)
   - [DocumentClassificationJobFilterTypeDef](#documentclassificationjobfiltertypedef)
   - [DocumentClassificationJobPropertiesTypeDef](#documentclassificationjobpropertiestypedef)
@@ -78,18 +108,30 @@ type annotations stubs module
   - [KeyPhraseTypeDef](#keyphrasetypedef)
   - [KeyPhrasesDetectionJobFilterTypeDef](#keyphrasesdetectionjobfiltertypedef)
   - [KeyPhrasesDetectionJobPropertiesTypeDef](#keyphrasesdetectionjobpropertiestypedef)
-  - [ListDocumentClassificationJobsResponseTypeDef](#listdocumentclassificationjobsresponsetypedef)
-  - [ListDocumentClassifiersResponseTypeDef](#listdocumentclassifiersresponsetypedef)
-  - [ListDominantLanguageDetectionJobsResponseTypeDef](#listdominantlanguagedetectionjobsresponsetypedef)
-  - [ListEndpointsResponseTypeDef](#listendpointsresponsetypedef)
-  - [ListEntitiesDetectionJobsResponseTypeDef](#listentitiesdetectionjobsresponsetypedef)
-  - [ListEntityRecognizersResponseTypeDef](#listentityrecognizersresponsetypedef)
-  - [ListEventsDetectionJobsResponseTypeDef](#listeventsdetectionjobsresponsetypedef)
-  - [ListKeyPhrasesDetectionJobsResponseTypeDef](#listkeyphrasesdetectionjobsresponsetypedef)
-  - [ListPiiEntitiesDetectionJobsResponseTypeDef](#listpiientitiesdetectionjobsresponsetypedef)
-  - [ListSentimentDetectionJobsResponseTypeDef](#listsentimentdetectionjobsresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListTopicsDetectionJobsResponseTypeDef](#listtopicsdetectionjobsresponsetypedef)
+  - [ListDocumentClassificationJobsRequestTypeDef](#listdocumentclassificationjobsrequesttypedef)
+  - [ListDocumentClassificationJobsResponseResponseTypeDef](#listdocumentclassificationjobsresponseresponsetypedef)
+  - [ListDocumentClassifiersRequestTypeDef](#listdocumentclassifiersrequesttypedef)
+  - [ListDocumentClassifiersResponseResponseTypeDef](#listdocumentclassifiersresponseresponsetypedef)
+  - [ListDominantLanguageDetectionJobsRequestTypeDef](#listdominantlanguagedetectionjobsrequesttypedef)
+  - [ListDominantLanguageDetectionJobsResponseResponseTypeDef](#listdominantlanguagedetectionjobsresponseresponsetypedef)
+  - [ListEndpointsRequestTypeDef](#listendpointsrequesttypedef)
+  - [ListEndpointsResponseResponseTypeDef](#listendpointsresponseresponsetypedef)
+  - [ListEntitiesDetectionJobsRequestTypeDef](#listentitiesdetectionjobsrequesttypedef)
+  - [ListEntitiesDetectionJobsResponseResponseTypeDef](#listentitiesdetectionjobsresponseresponsetypedef)
+  - [ListEntityRecognizersRequestTypeDef](#listentityrecognizersrequesttypedef)
+  - [ListEntityRecognizersResponseResponseTypeDef](#listentityrecognizersresponseresponsetypedef)
+  - [ListEventsDetectionJobsRequestTypeDef](#listeventsdetectionjobsrequesttypedef)
+  - [ListEventsDetectionJobsResponseResponseTypeDef](#listeventsdetectionjobsresponseresponsetypedef)
+  - [ListKeyPhrasesDetectionJobsRequestTypeDef](#listkeyphrasesdetectionjobsrequesttypedef)
+  - [ListKeyPhrasesDetectionJobsResponseResponseTypeDef](#listkeyphrasesdetectionjobsresponseresponsetypedef)
+  - [ListPiiEntitiesDetectionJobsRequestTypeDef](#listpiientitiesdetectionjobsrequesttypedef)
+  - [ListPiiEntitiesDetectionJobsResponseResponseTypeDef](#listpiientitiesdetectionjobsresponseresponsetypedef)
+  - [ListSentimentDetectionJobsRequestTypeDef](#listsentimentdetectionjobsrequesttypedef)
+  - [ListSentimentDetectionJobsResponseResponseTypeDef](#listsentimentdetectionjobsresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListTopicsDetectionJobsRequestTypeDef](#listtopicsdetectionjobsrequesttypedef)
+  - [ListTopicsDetectionJobsResponseResponseTypeDef](#listtopicsdetectionjobsresponseresponsetypedef)
   - [OutputDataConfigTypeDef](#outputdataconfigtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PartOfSpeechTagTypeDef](#partofspeechtagtypedef)
@@ -98,27 +140,47 @@ type annotations stubs module
   - [PiiEntityTypeDef](#piientitytypedef)
   - [PiiOutputDataConfigTypeDef](#piioutputdataconfigtypedef)
   - [RedactionConfigTypeDef](#redactionconfigtypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SentimentDetectionJobFilterTypeDef](#sentimentdetectionjobfiltertypedef)
   - [SentimentDetectionJobPropertiesTypeDef](#sentimentdetectionjobpropertiestypedef)
   - [SentimentScoreTypeDef](#sentimentscoretypedef)
-  - [StartDocumentClassificationJobResponseTypeDef](#startdocumentclassificationjobresponsetypedef)
-  - [StartDominantLanguageDetectionJobResponseTypeDef](#startdominantlanguagedetectionjobresponsetypedef)
-  - [StartEntitiesDetectionJobResponseTypeDef](#startentitiesdetectionjobresponsetypedef)
-  - [StartEventsDetectionJobResponseTypeDef](#starteventsdetectionjobresponsetypedef)
-  - [StartKeyPhrasesDetectionJobResponseTypeDef](#startkeyphrasesdetectionjobresponsetypedef)
-  - [StartPiiEntitiesDetectionJobResponseTypeDef](#startpiientitiesdetectionjobresponsetypedef)
-  - [StartSentimentDetectionJobResponseTypeDef](#startsentimentdetectionjobresponsetypedef)
-  - [StartTopicsDetectionJobResponseTypeDef](#starttopicsdetectionjobresponsetypedef)
-  - [StopDominantLanguageDetectionJobResponseTypeDef](#stopdominantlanguagedetectionjobresponsetypedef)
-  - [StopEntitiesDetectionJobResponseTypeDef](#stopentitiesdetectionjobresponsetypedef)
-  - [StopEventsDetectionJobResponseTypeDef](#stopeventsdetectionjobresponsetypedef)
-  - [StopKeyPhrasesDetectionJobResponseTypeDef](#stopkeyphrasesdetectionjobresponsetypedef)
-  - [StopPiiEntitiesDetectionJobResponseTypeDef](#stoppiientitiesdetectionjobresponsetypedef)
-  - [StopSentimentDetectionJobResponseTypeDef](#stopsentimentdetectionjobresponsetypedef)
+  - [StartDocumentClassificationJobRequestTypeDef](#startdocumentclassificationjobrequesttypedef)
+  - [StartDocumentClassificationJobResponseResponseTypeDef](#startdocumentclassificationjobresponseresponsetypedef)
+  - [StartDominantLanguageDetectionJobRequestTypeDef](#startdominantlanguagedetectionjobrequesttypedef)
+  - [StartDominantLanguageDetectionJobResponseResponseTypeDef](#startdominantlanguagedetectionjobresponseresponsetypedef)
+  - [StartEntitiesDetectionJobRequestTypeDef](#startentitiesdetectionjobrequesttypedef)
+  - [StartEntitiesDetectionJobResponseResponseTypeDef](#startentitiesdetectionjobresponseresponsetypedef)
+  - [StartEventsDetectionJobRequestTypeDef](#starteventsdetectionjobrequesttypedef)
+  - [StartEventsDetectionJobResponseResponseTypeDef](#starteventsdetectionjobresponseresponsetypedef)
+  - [StartKeyPhrasesDetectionJobRequestTypeDef](#startkeyphrasesdetectionjobrequesttypedef)
+  - [StartKeyPhrasesDetectionJobResponseResponseTypeDef](#startkeyphrasesdetectionjobresponseresponsetypedef)
+  - [StartPiiEntitiesDetectionJobRequestTypeDef](#startpiientitiesdetectionjobrequesttypedef)
+  - [StartPiiEntitiesDetectionJobResponseResponseTypeDef](#startpiientitiesdetectionjobresponseresponsetypedef)
+  - [StartSentimentDetectionJobRequestTypeDef](#startsentimentdetectionjobrequesttypedef)
+  - [StartSentimentDetectionJobResponseResponseTypeDef](#startsentimentdetectionjobresponseresponsetypedef)
+  - [StartTopicsDetectionJobRequestTypeDef](#starttopicsdetectionjobrequesttypedef)
+  - [StartTopicsDetectionJobResponseResponseTypeDef](#starttopicsdetectionjobresponseresponsetypedef)
+  - [StopDominantLanguageDetectionJobRequestTypeDef](#stopdominantlanguagedetectionjobrequesttypedef)
+  - [StopDominantLanguageDetectionJobResponseResponseTypeDef](#stopdominantlanguagedetectionjobresponseresponsetypedef)
+  - [StopEntitiesDetectionJobRequestTypeDef](#stopentitiesdetectionjobrequesttypedef)
+  - [StopEntitiesDetectionJobResponseResponseTypeDef](#stopentitiesdetectionjobresponseresponsetypedef)
+  - [StopEventsDetectionJobRequestTypeDef](#stopeventsdetectionjobrequesttypedef)
+  - [StopEventsDetectionJobResponseResponseTypeDef](#stopeventsdetectionjobresponseresponsetypedef)
+  - [StopKeyPhrasesDetectionJobRequestTypeDef](#stopkeyphrasesdetectionjobrequesttypedef)
+  - [StopKeyPhrasesDetectionJobResponseResponseTypeDef](#stopkeyphrasesdetectionjobresponseresponsetypedef)
+  - [StopPiiEntitiesDetectionJobRequestTypeDef](#stoppiientitiesdetectionjobrequesttypedef)
+  - [StopPiiEntitiesDetectionJobResponseResponseTypeDef](#stoppiientitiesdetectionjobresponseresponsetypedef)
+  - [StopSentimentDetectionJobRequestTypeDef](#stopsentimentdetectionjobrequesttypedef)
+  - [StopSentimentDetectionJobResponseResponseTypeDef](#stopsentimentdetectionjobresponseresponsetypedef)
+  - [StopTrainingDocumentClassifierRequestTypeDef](#stoptrainingdocumentclassifierrequesttypedef)
+  - [StopTrainingEntityRecognizerRequestTypeDef](#stoptrainingentityrecognizerrequesttypedef)
   - [SyntaxTokenTypeDef](#syntaxtokentypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TopicsDetectionJobFilterTypeDef](#topicsdetectionjobfiltertypedef)
   - [TopicsDetectionJobPropertiesTypeDef](#topicsdetectionjobpropertiestypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateEndpointRequestTypeDef](#updateendpointrequesttypedef)
   - [VpcConfigTypeDef](#vpcconfigtypedef)
 
 ## AugmentedManifestsListItemTypeDef
@@ -144,10 +206,20 @@ Optional fields:
 - `Languages`:
   `List`\[[DominantLanguageTypeDef](./type_defs.md#dominantlanguagetypedef)\]
 
-## BatchDetectDominantLanguageResponseTypeDef
+## BatchDetectDominantLanguageRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import BatchDetectDominantLanguageResponseTypeDef
+from mypy_boto3_comprehend.type_defs import BatchDetectDominantLanguageRequestTypeDef
+```
+
+Required fields:
+
+- `TextList`: `List`\[`str`\]
+
+## BatchDetectDominantLanguageResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import BatchDetectDominantLanguageResponseResponseTypeDef
 ```
 
 Required fields:
@@ -156,6 +228,8 @@ Required fields:
   `List`\[[BatchDetectDominantLanguageItemResultTypeDef](./type_defs.md#batchdetectdominantlanguageitemresulttypedef)\]
 - `ErrorList`:
   `List`\[[BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## BatchDetectEntitiesItemResultTypeDef
 
@@ -168,10 +242,21 @@ Optional fields:
 - `Index`: `int`
 - `Entities`: `List`\[[EntityTypeDef](./type_defs.md#entitytypedef)\]
 
-## BatchDetectEntitiesResponseTypeDef
+## BatchDetectEntitiesRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import BatchDetectEntitiesResponseTypeDef
+from mypy_boto3_comprehend.type_defs import BatchDetectEntitiesRequestTypeDef
+```
+
+Required fields:
+
+- `TextList`: `List`\[`str`\]
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+
+## BatchDetectEntitiesResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import BatchDetectEntitiesResponseResponseTypeDef
 ```
 
 Required fields:
@@ -180,6 +265,8 @@ Required fields:
   `List`\[[BatchDetectEntitiesItemResultTypeDef](./type_defs.md#batchdetectentitiesitemresulttypedef)\]
 - `ErrorList`:
   `List`\[[BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## BatchDetectKeyPhrasesItemResultTypeDef
 
@@ -192,10 +279,21 @@ Optional fields:
 - `Index`: `int`
 - `KeyPhrases`: `List`\[[KeyPhraseTypeDef](./type_defs.md#keyphrasetypedef)\]
 
-## BatchDetectKeyPhrasesResponseTypeDef
+## BatchDetectKeyPhrasesRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import BatchDetectKeyPhrasesResponseTypeDef
+from mypy_boto3_comprehend.type_defs import BatchDetectKeyPhrasesRequestTypeDef
+```
+
+Required fields:
+
+- `TextList`: `List`\[`str`\]
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+
+## BatchDetectKeyPhrasesResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import BatchDetectKeyPhrasesResponseResponseTypeDef
 ```
 
 Required fields:
@@ -204,6 +302,8 @@ Required fields:
   `List`\[[BatchDetectKeyPhrasesItemResultTypeDef](./type_defs.md#batchdetectkeyphrasesitemresulttypedef)\]
 - `ErrorList`:
   `List`\[[BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## BatchDetectSentimentItemResultTypeDef
 
@@ -218,10 +318,21 @@ Optional fields:
 - `SentimentScore`:
   [SentimentScoreTypeDef](./type_defs.md#sentimentscoretypedef)
 
-## BatchDetectSentimentResponseTypeDef
+## BatchDetectSentimentRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import BatchDetectSentimentResponseTypeDef
+from mypy_boto3_comprehend.type_defs import BatchDetectSentimentRequestTypeDef
+```
+
+Required fields:
+
+- `TextList`: `List`\[`str`\]
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+
+## BatchDetectSentimentResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import BatchDetectSentimentResponseResponseTypeDef
 ```
 
 Required fields:
@@ -230,6 +341,8 @@ Required fields:
   `List`\[[BatchDetectSentimentItemResultTypeDef](./type_defs.md#batchdetectsentimentitemresulttypedef)\]
 - `ErrorList`:
   `List`\[[BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## BatchDetectSyntaxItemResultTypeDef
 
@@ -243,10 +356,22 @@ Optional fields:
 - `SyntaxTokens`:
   `List`\[[SyntaxTokenTypeDef](./type_defs.md#syntaxtokentypedef)\]
 
-## BatchDetectSyntaxResponseTypeDef
+## BatchDetectSyntaxRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import BatchDetectSyntaxResponseTypeDef
+from mypy_boto3_comprehend.type_defs import BatchDetectSyntaxRequestTypeDef
+```
+
+Required fields:
+
+- `TextList`: `List`\[`str`\]
+- `LanguageCode`:
+  [SyntaxLanguageCodeType](./literals.md#syntaxlanguagecodetype)
+
+## BatchDetectSyntaxResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import BatchDetectSyntaxResponseResponseTypeDef
 ```
 
 Required fields:
@@ -255,6 +380,8 @@ Required fields:
   `List`\[[BatchDetectSyntaxItemResultTypeDef](./type_defs.md#batchdetectsyntaxitemresulttypedef)\]
 - `ErrorList`:
   `List`\[[BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## BatchItemErrorTypeDef
 
@@ -299,243 +426,585 @@ Optional fields:
 - `EvaluationMetrics`:
   [ClassifierEvaluationMetricsTypeDef](./type_defs.md#classifierevaluationmetricstypedef)
 
-## ClassifyDocumentResponseTypeDef
+## ClassifyDocumentRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import ClassifyDocumentResponseTypeDef
+from mypy_boto3_comprehend.type_defs import ClassifyDocumentRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Text`: `str`
+- `EndpointArn`: `str`
+
+## ClassifyDocumentResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import ClassifyDocumentResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Classes`:
   `List`\[[DocumentClassTypeDef](./type_defs.md#documentclasstypedef)\]
 - `Labels`:
   `List`\[[DocumentLabelTypeDef](./type_defs.md#documentlabeltypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ContainsPiiEntitiesResponseTypeDef
+## ContainsPiiEntitiesRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import ContainsPiiEntitiesResponseTypeDef
+from mypy_boto3_comprehend.type_defs import ContainsPiiEntitiesRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Text`: `str`
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+
+## ContainsPiiEntitiesResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import ContainsPiiEntitiesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Labels`: `List`\[[EntityLabelTypeDef](./type_defs.md#entitylabeltypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDocumentClassifierResponseTypeDef
+## CreateDocumentClassifierRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import CreateDocumentClassifierResponseTypeDef
+from mypy_boto3_comprehend.type_defs import CreateDocumentClassifierRequestTypeDef
 ```
 
+Required fields:
+
+- `DocumentClassifierName`: `str`
+- `DataAccessRoleArn`: `str`
+- `InputDataConfig`:
+  [DocumentClassifierInputDataConfigTypeDef](./type_defs.md#documentclassifierinputdataconfigtypedef)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+
 Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `OutputDataConfig`:
+  [DocumentClassifierOutputDataConfigTypeDef](./type_defs.md#documentclassifieroutputdataconfigtypedef)
+- `ClientRequestToken`: `str`
+- `VolumeKmsKeyId`: `str`
+- `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
+- `Mode`:
+  [DocumentClassifierModeType](./literals.md#documentclassifiermodetype)
+- `ModelKmsKeyId`: `str`
+
+## CreateDocumentClassifierResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import CreateDocumentClassifierResponseResponseTypeDef
+```
+
+Required fields:
+
+- `DocumentClassifierArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateEndpointRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import CreateEndpointRequestTypeDef
+```
+
+Required fields:
+
+- `EndpointName`: `str`
+- `ModelArn`: `str`
+- `DesiredInferenceUnits`: `int`
+
+Optional fields:
+
+- `ClientRequestToken`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `DataAccessRoleArn`: `str`
+
+## CreateEndpointResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import CreateEndpointResponseResponseTypeDef
+```
+
+Required fields:
+
+- `EndpointArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateEntityRecognizerRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import CreateEntityRecognizerRequestTypeDef
+```
+
+Required fields:
+
+- `RecognizerName`: `str`
+- `DataAccessRoleArn`: `str`
+- `InputDataConfig`:
+  [EntityRecognizerInputDataConfigTypeDef](./type_defs.md#entityrecognizerinputdataconfigtypedef)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+
+Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ClientRequestToken`: `str`
+- `VolumeKmsKeyId`: `str`
+- `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
+- `ModelKmsKeyId`: `str`
+
+## CreateEntityRecognizerResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import CreateEntityRecognizerResponseResponseTypeDef
+```
+
+Required fields:
+
+- `EntityRecognizerArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteDocumentClassifierRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import DeleteDocumentClassifierRequestTypeDef
+```
+
+Required fields:
 
 - `DocumentClassifierArn`: `str`
 
-## CreateEndpointResponseTypeDef
+## DeleteEndpointRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import CreateEndpointResponseTypeDef
+from mypy_boto3_comprehend.type_defs import DeleteEndpointRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `EndpointArn`: `str`
 
-## CreateEntityRecognizerResponseTypeDef
+## DeleteEntityRecognizerRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import CreateEntityRecognizerResponseTypeDef
+from mypy_boto3_comprehend.type_defs import DeleteEntityRecognizerRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `EntityRecognizerArn`: `str`
 
-## DescribeDocumentClassificationJobResponseTypeDef
+## DescribeDocumentClassificationJobRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import DescribeDocumentClassificationJobResponseTypeDef
+from mypy_boto3_comprehend.type_defs import DescribeDocumentClassificationJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `JobId`: `str`
+
+## DescribeDocumentClassificationJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import DescribeDocumentClassificationJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DocumentClassificationJobProperties`:
   [DocumentClassificationJobPropertiesTypeDef](./type_defs.md#documentclassificationjobpropertiestypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDocumentClassifierResponseTypeDef
+## DescribeDocumentClassifierRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import DescribeDocumentClassifierResponseTypeDef
+from mypy_boto3_comprehend.type_defs import DescribeDocumentClassifierRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DocumentClassifierArn`: `str`
+
+## DescribeDocumentClassifierResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import DescribeDocumentClassifierResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DocumentClassifierProperties`:
   [DocumentClassifierPropertiesTypeDef](./type_defs.md#documentclassifierpropertiestypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDominantLanguageDetectionJobResponseTypeDef
+## DescribeDominantLanguageDetectionJobRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import DescribeDominantLanguageDetectionJobResponseTypeDef
+from mypy_boto3_comprehend.type_defs import DescribeDominantLanguageDetectionJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `JobId`: `str`
+
+## DescribeDominantLanguageDetectionJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import DescribeDominantLanguageDetectionJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DominantLanguageDetectionJobProperties`:
   [DominantLanguageDetectionJobPropertiesTypeDef](./type_defs.md#dominantlanguagedetectionjobpropertiestypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEndpointResponseTypeDef
+## DescribeEndpointRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import DescribeEndpointResponseTypeDef
+from mypy_boto3_comprehend.type_defs import DescribeEndpointRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `EndpointArn`: `str`
+
+## DescribeEndpointResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import DescribeEndpointResponseResponseTypeDef
+```
+
+Required fields:
 
 - `EndpointProperties`:
   [EndpointPropertiesTypeDef](./type_defs.md#endpointpropertiestypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEntitiesDetectionJobResponseTypeDef
+## DescribeEntitiesDetectionJobRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import DescribeEntitiesDetectionJobResponseTypeDef
+from mypy_boto3_comprehend.type_defs import DescribeEntitiesDetectionJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `JobId`: `str`
+
+## DescribeEntitiesDetectionJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import DescribeEntitiesDetectionJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `EntitiesDetectionJobProperties`:
   [EntitiesDetectionJobPropertiesTypeDef](./type_defs.md#entitiesdetectionjobpropertiestypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEntityRecognizerResponseTypeDef
+## DescribeEntityRecognizerRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import DescribeEntityRecognizerResponseTypeDef
+from mypy_boto3_comprehend.type_defs import DescribeEntityRecognizerRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `EntityRecognizerArn`: `str`
+
+## DescribeEntityRecognizerResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import DescribeEntityRecognizerResponseResponseTypeDef
+```
+
+Required fields:
 
 - `EntityRecognizerProperties`:
   [EntityRecognizerPropertiesTypeDef](./type_defs.md#entityrecognizerpropertiestypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEventsDetectionJobResponseTypeDef
+## DescribeEventsDetectionJobRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import DescribeEventsDetectionJobResponseTypeDef
+from mypy_boto3_comprehend.type_defs import DescribeEventsDetectionJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `JobId`: `str`
+
+## DescribeEventsDetectionJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import DescribeEventsDetectionJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `EventsDetectionJobProperties`:
   [EventsDetectionJobPropertiesTypeDef](./type_defs.md#eventsdetectionjobpropertiestypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeKeyPhrasesDetectionJobResponseTypeDef
+## DescribeKeyPhrasesDetectionJobRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import DescribeKeyPhrasesDetectionJobResponseTypeDef
+from mypy_boto3_comprehend.type_defs import DescribeKeyPhrasesDetectionJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `JobId`: `str`
+
+## DescribeKeyPhrasesDetectionJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import DescribeKeyPhrasesDetectionJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `KeyPhrasesDetectionJobProperties`:
   [KeyPhrasesDetectionJobPropertiesTypeDef](./type_defs.md#keyphrasesdetectionjobpropertiestypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePiiEntitiesDetectionJobResponseTypeDef
+## DescribePiiEntitiesDetectionJobRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import DescribePiiEntitiesDetectionJobResponseTypeDef
+from mypy_boto3_comprehend.type_defs import DescribePiiEntitiesDetectionJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `JobId`: `str`
+
+## DescribePiiEntitiesDetectionJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import DescribePiiEntitiesDetectionJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `PiiEntitiesDetectionJobProperties`:
   [PiiEntitiesDetectionJobPropertiesTypeDef](./type_defs.md#piientitiesdetectionjobpropertiestypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSentimentDetectionJobResponseTypeDef
+## DescribeSentimentDetectionJobRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import DescribeSentimentDetectionJobResponseTypeDef
+from mypy_boto3_comprehend.type_defs import DescribeSentimentDetectionJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `JobId`: `str`
+
+## DescribeSentimentDetectionJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import DescribeSentimentDetectionJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `SentimentDetectionJobProperties`:
   [SentimentDetectionJobPropertiesTypeDef](./type_defs.md#sentimentdetectionjobpropertiestypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTopicsDetectionJobResponseTypeDef
+## DescribeTopicsDetectionJobRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import DescribeTopicsDetectionJobResponseTypeDef
+from mypy_boto3_comprehend.type_defs import DescribeTopicsDetectionJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `JobId`: `str`
+
+## DescribeTopicsDetectionJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import DescribeTopicsDetectionJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `TopicsDetectionJobProperties`:
   [TopicsDetectionJobPropertiesTypeDef](./type_defs.md#topicsdetectionjobpropertiestypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DetectDominantLanguageResponseTypeDef
+## DetectDominantLanguageRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import DetectDominantLanguageResponseTypeDef
+from mypy_boto3_comprehend.type_defs import DetectDominantLanguageRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Text`: `str`
+
+## DetectDominantLanguageResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import DetectDominantLanguageResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Languages`:
   `List`\[[DominantLanguageTypeDef](./type_defs.md#dominantlanguagetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DetectEntitiesResponseTypeDef
+## DetectEntitiesRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import DetectEntitiesResponseTypeDef
+from mypy_boto3_comprehend.type_defs import DetectEntitiesRequestTypeDef
 ```
 
+Required fields:
+
+- `Text`: `str`
+
 Optional fields:
+
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+- `EndpointArn`: `str`
+
+## DetectEntitiesResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import DetectEntitiesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Entities`: `List`\[[EntityTypeDef](./type_defs.md#entitytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DetectKeyPhrasesResponseTypeDef
+## DetectKeyPhrasesRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import DetectKeyPhrasesResponseTypeDef
+from mypy_boto3_comprehend.type_defs import DetectKeyPhrasesRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Text`: `str`
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+
+## DetectKeyPhrasesResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import DetectKeyPhrasesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `KeyPhrases`: `List`\[[KeyPhraseTypeDef](./type_defs.md#keyphrasetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DetectPiiEntitiesResponseTypeDef
+## DetectPiiEntitiesRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import DetectPiiEntitiesResponseTypeDef
+from mypy_boto3_comprehend.type_defs import DetectPiiEntitiesRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Text`: `str`
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+
+## DetectPiiEntitiesResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import DetectPiiEntitiesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Entities`: `List`\[[PiiEntityTypeDef](./type_defs.md#piientitytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DetectSentimentResponseTypeDef
+## DetectSentimentRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import DetectSentimentResponseTypeDef
+from mypy_boto3_comprehend.type_defs import DetectSentimentRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Text`: `str`
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+
+## DetectSentimentResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import DetectSentimentResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Sentiment`: [SentimentTypeType](./literals.md#sentimenttypetype)
 - `SentimentScore`:
   [SentimentScoreTypeDef](./type_defs.md#sentimentscoretypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DetectSyntaxResponseTypeDef
+## DetectSyntaxRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import DetectSyntaxResponseTypeDef
+from mypy_boto3_comprehend.type_defs import DetectSyntaxRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Text`: `str`
+- `LanguageCode`:
+  [SyntaxLanguageCodeType](./literals.md#syntaxlanguagecodetype)
+
+## DetectSyntaxResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import DetectSyntaxResponseResponseTypeDef
+```
+
+Required fields:
 
 - `SyntaxTokens`:
   `List`\[[SyntaxTokenTypeDef](./type_defs.md#syntaxtokentypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DocumentClassTypeDef
 
@@ -558,8 +1027,8 @@ Optional fields:
 
 - `JobName`: `str`
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
-- `SubmitTimeBefore`: `datetime`
-- `SubmitTimeAfter`: `datetime`
+- `SubmitTimeBefore`: `Union`\[`datetime`, `str`\]
+- `SubmitTimeAfter`: `Union`\[`datetime`, `str`\]
 
 ## DocumentClassificationJobPropertiesTypeDef
 
@@ -593,8 +1062,8 @@ from mypy_boto3_comprehend.type_defs import DocumentClassifierFilterTypeDef
 Optional fields:
 
 - `Status`: [ModelStatusType](./literals.md#modelstatustype)
-- `SubmitTimeBefore`: `datetime`
-- `SubmitTimeAfter`: `datetime`
+- `SubmitTimeBefore`: `Union`\[`datetime`, `str`\]
+- `SubmitTimeAfter`: `Union`\[`datetime`, `str`\]
 
 ## DocumentClassifierInputDataConfigTypeDef
 
@@ -672,8 +1141,8 @@ Optional fields:
 
 - `JobName`: `str`
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
-- `SubmitTimeBefore`: `datetime`
-- `SubmitTimeAfter`: `datetime`
+- `SubmitTimeBefore`: `Union`\[`datetime`, `str`\]
+- `SubmitTimeAfter`: `Union`\[`datetime`, `str`\]
 
 ## DominantLanguageDetectionJobPropertiesTypeDef
 
@@ -718,8 +1187,8 @@ Optional fields:
 
 - `ModelArn`: `str`
 - `Status`: [EndpointStatusType](./literals.md#endpointstatustype)
-- `CreationTimeBefore`: `datetime`
-- `CreationTimeAfter`: `datetime`
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
 
 ## EndpointPropertiesTypeDef
 
@@ -749,8 +1218,8 @@ Optional fields:
 
 - `JobName`: `str`
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
-- `SubmitTimeBefore`: `datetime`
-- `SubmitTimeAfter`: `datetime`
+- `SubmitTimeBefore`: `Union`\[`datetime`, `str`\]
+- `SubmitTimeAfter`: `Union`\[`datetime`, `str`\]
 
 ## EntitiesDetectionJobPropertiesTypeDef
 
@@ -838,8 +1307,8 @@ from mypy_boto3_comprehend.type_defs import EntityRecognizerFilterTypeDef
 Optional fields:
 
 - `Status`: [ModelStatusType](./literals.md#modelstatustype)
-- `SubmitTimeBefore`: `datetime`
-- `SubmitTimeAfter`: `datetime`
+- `SubmitTimeBefore`: `Union`\[`datetime`, `str`\]
+- `SubmitTimeAfter`: `Union`\[`datetime`, `str`\]
 
 ## EntityRecognizerInputDataConfigTypeDef
 
@@ -964,8 +1433,8 @@ Optional fields:
 
 - `JobName`: `str`
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
-- `SubmitTimeBefore`: `datetime`
-- `SubmitTimeAfter`: `datetime`
+- `SubmitTimeBefore`: `Union`\[`datetime`, `str`\]
+- `SubmitTimeAfter`: `Union`\[`datetime`, `str`\]
 
 ## EventsDetectionJobPropertiesTypeDef
 
@@ -1026,8 +1495,8 @@ Optional fields:
 
 - `JobName`: `str`
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
-- `SubmitTimeBefore`: `datetime`
-- `SubmitTimeAfter`: `datetime`
+- `SubmitTimeBefore`: `Union`\[`datetime`, `str`\]
+- `SubmitTimeAfter`: `Union`\[`datetime`, `str`\]
 
 ## KeyPhrasesDetectionJobPropertiesTypeDef
 
@@ -1052,148 +1521,324 @@ Optional fields:
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 
-## ListDocumentClassificationJobsResponseTypeDef
+## ListDocumentClassificationJobsRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import ListDocumentClassificationJobsResponseTypeDef
+from mypy_boto3_comprehend.type_defs import ListDocumentClassificationJobsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filter`:
+  [DocumentClassificationJobFilterTypeDef](./type_defs.md#documentclassificationjobfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListDocumentClassificationJobsResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import ListDocumentClassificationJobsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DocumentClassificationJobPropertiesList`:
   `List`\[[DocumentClassificationJobPropertiesTypeDef](./type_defs.md#documentclassificationjobpropertiestypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDocumentClassifiersResponseTypeDef
+## ListDocumentClassifiersRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import ListDocumentClassifiersResponseTypeDef
+from mypy_boto3_comprehend.type_defs import ListDocumentClassifiersRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filter`:
+  [DocumentClassifierFilterTypeDef](./type_defs.md#documentclassifierfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListDocumentClassifiersResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import ListDocumentClassifiersResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DocumentClassifierPropertiesList`:
   `List`\[[DocumentClassifierPropertiesTypeDef](./type_defs.md#documentclassifierpropertiestypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDominantLanguageDetectionJobsResponseTypeDef
+## ListDominantLanguageDetectionJobsRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import ListDominantLanguageDetectionJobsResponseTypeDef
+from mypy_boto3_comprehend.type_defs import ListDominantLanguageDetectionJobsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filter`:
+  [DominantLanguageDetectionJobFilterTypeDef](./type_defs.md#dominantlanguagedetectionjobfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListDominantLanguageDetectionJobsResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import ListDominantLanguageDetectionJobsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DominantLanguageDetectionJobPropertiesList`:
   `List`\[[DominantLanguageDetectionJobPropertiesTypeDef](./type_defs.md#dominantlanguagedetectionjobpropertiestypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListEndpointsResponseTypeDef
+## ListEndpointsRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import ListEndpointsResponseTypeDef
+from mypy_boto3_comprehend.type_defs import ListEndpointsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filter`: [EndpointFilterTypeDef](./type_defs.md#endpointfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListEndpointsResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import ListEndpointsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `EndpointPropertiesList`:
   `List`\[[EndpointPropertiesTypeDef](./type_defs.md#endpointpropertiestypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListEntitiesDetectionJobsResponseTypeDef
+## ListEntitiesDetectionJobsRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import ListEntitiesDetectionJobsResponseTypeDef
+from mypy_boto3_comprehend.type_defs import ListEntitiesDetectionJobsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filter`:
+  [EntitiesDetectionJobFilterTypeDef](./type_defs.md#entitiesdetectionjobfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListEntitiesDetectionJobsResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import ListEntitiesDetectionJobsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `EntitiesDetectionJobPropertiesList`:
   `List`\[[EntitiesDetectionJobPropertiesTypeDef](./type_defs.md#entitiesdetectionjobpropertiestypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListEntityRecognizersResponseTypeDef
+## ListEntityRecognizersRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import ListEntityRecognizersResponseTypeDef
+from mypy_boto3_comprehend.type_defs import ListEntityRecognizersRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filter`:
+  [EntityRecognizerFilterTypeDef](./type_defs.md#entityrecognizerfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListEntityRecognizersResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import ListEntityRecognizersResponseResponseTypeDef
+```
+
+Required fields:
 
 - `EntityRecognizerPropertiesList`:
   `List`\[[EntityRecognizerPropertiesTypeDef](./type_defs.md#entityrecognizerpropertiestypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListEventsDetectionJobsResponseTypeDef
+## ListEventsDetectionJobsRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import ListEventsDetectionJobsResponseTypeDef
+from mypy_boto3_comprehend.type_defs import ListEventsDetectionJobsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filter`:
+  [EventsDetectionJobFilterTypeDef](./type_defs.md#eventsdetectionjobfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListEventsDetectionJobsResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import ListEventsDetectionJobsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `EventsDetectionJobPropertiesList`:
   `List`\[[EventsDetectionJobPropertiesTypeDef](./type_defs.md#eventsdetectionjobpropertiestypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListKeyPhrasesDetectionJobsResponseTypeDef
+## ListKeyPhrasesDetectionJobsRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import ListKeyPhrasesDetectionJobsResponseTypeDef
+from mypy_boto3_comprehend.type_defs import ListKeyPhrasesDetectionJobsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filter`:
+  [KeyPhrasesDetectionJobFilterTypeDef](./type_defs.md#keyphrasesdetectionjobfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListKeyPhrasesDetectionJobsResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import ListKeyPhrasesDetectionJobsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `KeyPhrasesDetectionJobPropertiesList`:
   `List`\[[KeyPhrasesDetectionJobPropertiesTypeDef](./type_defs.md#keyphrasesdetectionjobpropertiestypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPiiEntitiesDetectionJobsResponseTypeDef
+## ListPiiEntitiesDetectionJobsRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import ListPiiEntitiesDetectionJobsResponseTypeDef
+from mypy_boto3_comprehend.type_defs import ListPiiEntitiesDetectionJobsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filter`:
+  [PiiEntitiesDetectionJobFilterTypeDef](./type_defs.md#piientitiesdetectionjobfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListPiiEntitiesDetectionJobsResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import ListPiiEntitiesDetectionJobsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `PiiEntitiesDetectionJobPropertiesList`:
   `List`\[[PiiEntitiesDetectionJobPropertiesTypeDef](./type_defs.md#piientitiesdetectionjobpropertiestypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSentimentDetectionJobsResponseTypeDef
+## ListSentimentDetectionJobsRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import ListSentimentDetectionJobsResponseTypeDef
+from mypy_boto3_comprehend.type_defs import ListSentimentDetectionJobsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filter`:
+  [SentimentDetectionJobFilterTypeDef](./type_defs.md#sentimentdetectionjobfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListSentimentDetectionJobsResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import ListSentimentDetectionJobsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `SentimentDetectionJobPropertiesList`:
   `List`\[[SentimentDetectionJobPropertiesTypeDef](./type_defs.md#sentimentdetectionjobpropertiestypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_comprehend.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceArn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResourceArn`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTopicsDetectionJobsResponseTypeDef
+## ListTopicsDetectionJobsRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import ListTopicsDetectionJobsResponseTypeDef
+from mypy_boto3_comprehend.type_defs import ListTopicsDetectionJobsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filter`:
+  [TopicsDetectionJobFilterTypeDef](./type_defs.md#topicsdetectionjobfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListTopicsDetectionJobsResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import ListTopicsDetectionJobsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `TopicsDetectionJobPropertiesList`:
   `List`\[[TopicsDetectionJobPropertiesTypeDef](./type_defs.md#topicsdetectionjobpropertiestypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## OutputDataConfigTypeDef
 
@@ -1242,8 +1887,8 @@ Optional fields:
 
 - `JobName`: `str`
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
-- `SubmitTimeBefore`: `datetime`
-- `SubmitTimeAfter`: `datetime`
+- `SubmitTimeBefore`: `Union`\[`datetime`, `str`\]
+- `SubmitTimeAfter`: `Union`\[`datetime`, `str`\]
 
 ## PiiEntitiesDetectionJobPropertiesTypeDef
 
@@ -1311,6 +1956,20 @@ Optional fields:
   [PiiEntitiesDetectionMaskModeType](./literals.md#piientitiesdetectionmaskmodetype)
 - `MaskCharacter`: `str`
 
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
 ## SentimentDetectionJobFilterTypeDef
 
 ```python
@@ -1321,8 +1980,8 @@ Optional fields:
 
 - `JobName`: `str`
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
-- `SubmitTimeBefore`: `datetime`
-- `SubmitTimeAfter`: `datetime`
+- `SubmitTimeBefore`: `Union`\[`datetime`, `str`\]
+- `SubmitTimeAfter`: `Union`\[`datetime`, `str`\]
 
 ## SentimentDetectionJobPropertiesTypeDef
 
@@ -1360,159 +2019,444 @@ Optional fields:
 - `Neutral`: `float`
 - `Mixed`: `float`
 
-## StartDocumentClassificationJobResponseTypeDef
+## StartDocumentClassificationJobRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import StartDocumentClassificationJobResponseTypeDef
+from mypy_boto3_comprehend.type_defs import StartDocumentClassificationJobRequestTypeDef
 ```
+
+Required fields:
+
+- `DocumentClassifierArn`: `str`
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
+- `DataAccessRoleArn`: `str`
 
 Optional fields:
 
-- `JobId`: `str`
-- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `JobName`: `str`
+- `ClientRequestToken`: `str`
+- `VolumeKmsKeyId`: `str`
+- `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 
-## StartDominantLanguageDetectionJobResponseTypeDef
+## StartDocumentClassificationJobResponseResponseTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import StartDominantLanguageDetectionJobResponseTypeDef
+from mypy_boto3_comprehend.type_defs import StartDocumentClassificationJobResponseResponseTypeDef
 ```
+
+Required fields:
+
+- `JobId`: `str`
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StartDominantLanguageDetectionJobRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import StartDominantLanguageDetectionJobRequestTypeDef
+```
+
+Required fields:
+
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
+- `DataAccessRoleArn`: `str`
 
 Optional fields:
 
-- `JobId`: `str`
-- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `JobName`: `str`
+- `ClientRequestToken`: `str`
+- `VolumeKmsKeyId`: `str`
+- `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 
-## StartEntitiesDetectionJobResponseTypeDef
+## StartDominantLanguageDetectionJobResponseResponseTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import StartEntitiesDetectionJobResponseTypeDef
+from mypy_boto3_comprehend.type_defs import StartDominantLanguageDetectionJobResponseResponseTypeDef
 ```
+
+Required fields:
+
+- `JobId`: `str`
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StartEntitiesDetectionJobRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import StartEntitiesDetectionJobRequestTypeDef
+```
+
+Required fields:
+
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
+- `DataAccessRoleArn`: `str`
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 
 Optional fields:
 
-- `JobId`: `str`
-- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `JobName`: `str`
+- `EntityRecognizerArn`: `str`
+- `ClientRequestToken`: `str`
+- `VolumeKmsKeyId`: `str`
+- `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 
-## StartEventsDetectionJobResponseTypeDef
+## StartEntitiesDetectionJobResponseResponseTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import StartEventsDetectionJobResponseTypeDef
+from mypy_boto3_comprehend.type_defs import StartEntitiesDetectionJobResponseResponseTypeDef
 ```
+
+Required fields:
+
+- `JobId`: `str`
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StartEventsDetectionJobRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import StartEventsDetectionJobRequestTypeDef
+```
+
+Required fields:
+
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
+- `DataAccessRoleArn`: `str`
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+- `TargetEventTypes`: `List`\[`str`\]
 
 Optional fields:
 
-- `JobId`: `str`
-- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `JobName`: `str`
+- `ClientRequestToken`: `str`
 
-## StartKeyPhrasesDetectionJobResponseTypeDef
+## StartEventsDetectionJobResponseResponseTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import StartKeyPhrasesDetectionJobResponseTypeDef
+from mypy_boto3_comprehend.type_defs import StartEventsDetectionJobResponseResponseTypeDef
 ```
+
+Required fields:
+
+- `JobId`: `str`
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StartKeyPhrasesDetectionJobRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import StartKeyPhrasesDetectionJobRequestTypeDef
+```
+
+Required fields:
+
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
+- `DataAccessRoleArn`: `str`
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 
 Optional fields:
 
-- `JobId`: `str`
-- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `JobName`: `str`
+- `ClientRequestToken`: `str`
+- `VolumeKmsKeyId`: `str`
+- `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 
-## StartPiiEntitiesDetectionJobResponseTypeDef
+## StartKeyPhrasesDetectionJobResponseResponseTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import StartPiiEntitiesDetectionJobResponseTypeDef
+from mypy_boto3_comprehend.type_defs import StartKeyPhrasesDetectionJobResponseResponseTypeDef
 ```
+
+Required fields:
+
+- `JobId`: `str`
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StartPiiEntitiesDetectionJobRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import StartPiiEntitiesDetectionJobRequestTypeDef
+```
+
+Required fields:
+
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
+- `Mode`:
+  [PiiEntitiesDetectionModeType](./literals.md#piientitiesdetectionmodetype)
+- `DataAccessRoleArn`: `str`
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 
 Optional fields:
 
-- `JobId`: `str`
-- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `RedactionConfig`:
+  [RedactionConfigTypeDef](./type_defs.md#redactionconfigtypedef)
+- `JobName`: `str`
+- `ClientRequestToken`: `str`
 
-## StartSentimentDetectionJobResponseTypeDef
+## StartPiiEntitiesDetectionJobResponseResponseTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import StartSentimentDetectionJobResponseTypeDef
+from mypy_boto3_comprehend.type_defs import StartPiiEntitiesDetectionJobResponseResponseTypeDef
 ```
+
+Required fields:
+
+- `JobId`: `str`
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StartSentimentDetectionJobRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import StartSentimentDetectionJobRequestTypeDef
+```
+
+Required fields:
+
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
+- `DataAccessRoleArn`: `str`
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 
 Optional fields:
 
-- `JobId`: `str`
-- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `JobName`: `str`
+- `ClientRequestToken`: `str`
+- `VolumeKmsKeyId`: `str`
+- `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 
-## StartTopicsDetectionJobResponseTypeDef
+## StartSentimentDetectionJobResponseResponseTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import StartTopicsDetectionJobResponseTypeDef
+from mypy_boto3_comprehend.type_defs import StartSentimentDetectionJobResponseResponseTypeDef
 ```
+
+Required fields:
+
+- `JobId`: `str`
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StartTopicsDetectionJobRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import StartTopicsDetectionJobRequestTypeDef
+```
+
+Required fields:
+
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
+- `DataAccessRoleArn`: `str`
 
 Optional fields:
 
-- `JobId`: `str`
-- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `JobName`: `str`
+- `NumberOfTopics`: `int`
+- `ClientRequestToken`: `str`
+- `VolumeKmsKeyId`: `str`
+- `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 
-## StopDominantLanguageDetectionJobResponseTypeDef
-
-```python
-from mypy_boto3_comprehend.type_defs import StopDominantLanguageDetectionJobResponseTypeDef
-```
-
-Optional fields:
-
-- `JobId`: `str`
-- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
-
-## StopEntitiesDetectionJobResponseTypeDef
+## StartTopicsDetectionJobResponseResponseTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import StopEntitiesDetectionJobResponseTypeDef
+from mypy_boto3_comprehend.type_defs import StartTopicsDetectionJobResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `JobId`: `str`
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopEventsDetectionJobResponseTypeDef
+## StopDominantLanguageDetectionJobRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import StopEventsDetectionJobResponseTypeDef
+from mypy_boto3_comprehend.type_defs import StopDominantLanguageDetectionJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `JobId`: `str`
-- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 
-## StopKeyPhrasesDetectionJobResponseTypeDef
+## StopDominantLanguageDetectionJobResponseResponseTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import StopKeyPhrasesDetectionJobResponseTypeDef
+from mypy_boto3_comprehend.type_defs import StopDominantLanguageDetectionJobResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `JobId`: `str`
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopPiiEntitiesDetectionJobResponseTypeDef
+## StopEntitiesDetectionJobRequestTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import StopPiiEntitiesDetectionJobResponseTypeDef
+from mypy_boto3_comprehend.type_defs import StopEntitiesDetectionJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `JobId`: `str`
-- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 
-## StopSentimentDetectionJobResponseTypeDef
+## StopEntitiesDetectionJobResponseResponseTypeDef
 
 ```python
-from mypy_boto3_comprehend.type_defs import StopSentimentDetectionJobResponseTypeDef
+from mypy_boto3_comprehend.type_defs import StopEntitiesDetectionJobResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `JobId`: `str`
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StopEventsDetectionJobRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import StopEventsDetectionJobRequestTypeDef
+```
+
+Required fields:
+
+- `JobId`: `str`
+
+## StopEventsDetectionJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import StopEventsDetectionJobResponseResponseTypeDef
+```
+
+Required fields:
+
+- `JobId`: `str`
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StopKeyPhrasesDetectionJobRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import StopKeyPhrasesDetectionJobRequestTypeDef
+```
+
+Required fields:
+
+- `JobId`: `str`
+
+## StopKeyPhrasesDetectionJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import StopKeyPhrasesDetectionJobResponseResponseTypeDef
+```
+
+Required fields:
+
+- `JobId`: `str`
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StopPiiEntitiesDetectionJobRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import StopPiiEntitiesDetectionJobRequestTypeDef
+```
+
+Required fields:
+
+- `JobId`: `str`
+
+## StopPiiEntitiesDetectionJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import StopPiiEntitiesDetectionJobResponseResponseTypeDef
+```
+
+Required fields:
+
+- `JobId`: `str`
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StopSentimentDetectionJobRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import StopSentimentDetectionJobRequestTypeDef
+```
+
+Required fields:
+
+- `JobId`: `str`
+
+## StopSentimentDetectionJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import StopSentimentDetectionJobResponseResponseTypeDef
+```
+
+Required fields:
+
+- `JobId`: `str`
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StopTrainingDocumentClassifierRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import StopTrainingDocumentClassifierRequestTypeDef
+```
+
+Required fields:
+
+- `DocumentClassifierArn`: `str`
+
+## StopTrainingEntityRecognizerRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import StopTrainingEntityRecognizerRequestTypeDef
+```
+
+Required fields:
+
+- `EntityRecognizerArn`: `str`
 
 ## SyntaxTokenTypeDef
 
@@ -1528,6 +2472,17 @@ Optional fields:
 - `EndOffset`: `int`
 - `PartOfSpeech`:
   [PartOfSpeechTagTypeDef](./type_defs.md#partofspeechtagtypedef)
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1553,8 +2508,8 @@ Optional fields:
 
 - `JobName`: `str`
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
-- `SubmitTimeBefore`: `datetime`
-- `SubmitTimeAfter`: `datetime`
+- `SubmitTimeBefore`: `Union`\[`datetime`, `str`\]
+- `SubmitTimeAfter`: `Union`\[`datetime`, `str`\]
 
 ## TopicsDetectionJobPropertiesTypeDef
 
@@ -1578,6 +2533,28 @@ Optional fields:
 - `DataAccessRoleArn`: `str`
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
+
+## UntagResourceRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## UpdateEndpointRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import UpdateEndpointRequestTypeDef
+```
+
+Required fields:
+
+- `EndpointArn`: `str`
+- `DesiredInferenceUnits`: `int`
 
 ## VpcConfigTypeDef
 

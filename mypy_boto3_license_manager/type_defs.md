@@ -8,35 +8,58 @@ type annotations stubs module
 [mypy_boto3_license_manager](https://pypi.org/project/mypy-boto3-license-manager/).
 
 - [Typed dictionaries for boto3 LicenseManager module](#typed-dictionaries-for-boto3-licensemanager-module)
-  - [AcceptGrantResponseTypeDef](#acceptgrantresponsetypedef)
+  - [AcceptGrantRequestTypeDef](#acceptgrantrequesttypedef)
+  - [AcceptGrantResponseResponseTypeDef](#acceptgrantresponseresponsetypedef)
   - [AutomatedDiscoveryInformationTypeDef](#automateddiscoveryinformationtypedef)
   - [BorrowConfigurationTypeDef](#borrowconfigurationtypedef)
-  - [CheckoutBorrowLicenseResponseTypeDef](#checkoutborrowlicenseresponsetypedef)
-  - [CheckoutLicenseResponseTypeDef](#checkoutlicenseresponsetypedef)
+  - [CheckInLicenseRequestTypeDef](#checkinlicenserequesttypedef)
+  - [CheckoutBorrowLicenseRequestTypeDef](#checkoutborrowlicenserequesttypedef)
+  - [CheckoutBorrowLicenseResponseResponseTypeDef](#checkoutborrowlicenseresponseresponsetypedef)
+  - [CheckoutLicenseRequestTypeDef](#checkoutlicenserequesttypedef)
+  - [CheckoutLicenseResponseResponseTypeDef](#checkoutlicenseresponseresponsetypedef)
   - [ConsumedLicenseSummaryTypeDef](#consumedlicensesummarytypedef)
   - [ConsumptionConfigurationTypeDef](#consumptionconfigurationtypedef)
-  - [CreateGrantResponseTypeDef](#creategrantresponsetypedef)
-  - [CreateGrantVersionResponseTypeDef](#creategrantversionresponsetypedef)
-  - [CreateLicenseConfigurationResponseTypeDef](#createlicenseconfigurationresponsetypedef)
-  - [CreateLicenseManagerReportGeneratorResponseTypeDef](#createlicensemanagerreportgeneratorresponsetypedef)
-  - [CreateLicenseResponseTypeDef](#createlicenseresponsetypedef)
-  - [CreateLicenseVersionResponseTypeDef](#createlicenseversionresponsetypedef)
-  - [CreateTokenResponseTypeDef](#createtokenresponsetypedef)
+  - [CreateGrantRequestTypeDef](#creategrantrequesttypedef)
+  - [CreateGrantResponseResponseTypeDef](#creategrantresponseresponsetypedef)
+  - [CreateGrantVersionRequestTypeDef](#creategrantversionrequesttypedef)
+  - [CreateGrantVersionResponseResponseTypeDef](#creategrantversionresponseresponsetypedef)
+  - [CreateLicenseConfigurationRequestTypeDef](#createlicenseconfigurationrequesttypedef)
+  - [CreateLicenseConfigurationResponseResponseTypeDef](#createlicenseconfigurationresponseresponsetypedef)
+  - [CreateLicenseManagerReportGeneratorRequestTypeDef](#createlicensemanagerreportgeneratorrequesttypedef)
+  - [CreateLicenseManagerReportGeneratorResponseResponseTypeDef](#createlicensemanagerreportgeneratorresponseresponsetypedef)
+  - [CreateLicenseRequestTypeDef](#createlicenserequesttypedef)
+  - [CreateLicenseResponseResponseTypeDef](#createlicenseresponseresponsetypedef)
+  - [CreateLicenseVersionRequestTypeDef](#createlicenseversionrequesttypedef)
+  - [CreateLicenseVersionResponseResponseTypeDef](#createlicenseversionresponseresponsetypedef)
+  - [CreateTokenRequestTypeDef](#createtokenrequesttypedef)
+  - [CreateTokenResponseResponseTypeDef](#createtokenresponseresponsetypedef)
   - [DatetimeRangeTypeDef](#datetimerangetypedef)
-  - [DeleteGrantResponseTypeDef](#deletegrantresponsetypedef)
-  - [DeleteLicenseResponseTypeDef](#deletelicenseresponsetypedef)
+  - [DeleteGrantRequestTypeDef](#deletegrantrequesttypedef)
+  - [DeleteGrantResponseResponseTypeDef](#deletegrantresponseresponsetypedef)
+  - [DeleteLicenseConfigurationRequestTypeDef](#deletelicenseconfigurationrequesttypedef)
+  - [DeleteLicenseManagerReportGeneratorRequestTypeDef](#deletelicensemanagerreportgeneratorrequesttypedef)
+  - [DeleteLicenseRequestTypeDef](#deletelicenserequesttypedef)
+  - [DeleteLicenseResponseResponseTypeDef](#deletelicenseresponseresponsetypedef)
+  - [DeleteTokenRequestTypeDef](#deletetokenrequesttypedef)
   - [EntitlementDataTypeDef](#entitlementdatatypedef)
   - [EntitlementTypeDef](#entitlementtypedef)
   - [EntitlementUsageTypeDef](#entitlementusagetypedef)
-  - [ExtendLicenseConsumptionResponseTypeDef](#extendlicenseconsumptionresponsetypedef)
+  - [ExtendLicenseConsumptionRequestTypeDef](#extendlicenseconsumptionrequesttypedef)
+  - [ExtendLicenseConsumptionResponseResponseTypeDef](#extendlicenseconsumptionresponseresponsetypedef)
   - [FilterTypeDef](#filtertypedef)
-  - [GetAccessTokenResponseTypeDef](#getaccesstokenresponsetypedef)
-  - [GetGrantResponseTypeDef](#getgrantresponsetypedef)
-  - [GetLicenseConfigurationResponseTypeDef](#getlicenseconfigurationresponsetypedef)
-  - [GetLicenseManagerReportGeneratorResponseTypeDef](#getlicensemanagerreportgeneratorresponsetypedef)
-  - [GetLicenseResponseTypeDef](#getlicenseresponsetypedef)
-  - [GetLicenseUsageResponseTypeDef](#getlicenseusageresponsetypedef)
-  - [GetServiceSettingsResponseTypeDef](#getservicesettingsresponsetypedef)
+  - [GetAccessTokenRequestTypeDef](#getaccesstokenrequesttypedef)
+  - [GetAccessTokenResponseResponseTypeDef](#getaccesstokenresponseresponsetypedef)
+  - [GetGrantRequestTypeDef](#getgrantrequesttypedef)
+  - [GetGrantResponseResponseTypeDef](#getgrantresponseresponsetypedef)
+  - [GetLicenseConfigurationRequestTypeDef](#getlicenseconfigurationrequesttypedef)
+  - [GetLicenseConfigurationResponseResponseTypeDef](#getlicenseconfigurationresponseresponsetypedef)
+  - [GetLicenseManagerReportGeneratorRequestTypeDef](#getlicensemanagerreportgeneratorrequesttypedef)
+  - [GetLicenseManagerReportGeneratorResponseResponseTypeDef](#getlicensemanagerreportgeneratorresponseresponsetypedef)
+  - [GetLicenseRequestTypeDef](#getlicenserequesttypedef)
+  - [GetLicenseResponseResponseTypeDef](#getlicenseresponseresponsetypedef)
+  - [GetLicenseUsageRequestTypeDef](#getlicenseusagerequesttypedef)
+  - [GetLicenseUsageResponseResponseTypeDef](#getlicenseusageresponseresponsetypedef)
+  - [GetServiceSettingsResponseResponseTypeDef](#getservicesettingsresponseresponsetypedef)
   - [GrantTypeDef](#granttypedef)
   - [GrantedLicenseTypeDef](#grantedlicensetypedef)
   - [InventoryFilterTypeDef](#inventoryfiltertypedef)
@@ -49,20 +72,34 @@ type annotations stubs module
   - [LicenseSpecificationTypeDef](#licensespecificationtypedef)
   - [LicenseTypeDef](#licensetypedef)
   - [LicenseUsageTypeDef](#licenseusagetypedef)
-  - [ListAssociationsForLicenseConfigurationResponseTypeDef](#listassociationsforlicenseconfigurationresponsetypedef)
-  - [ListDistributedGrantsResponseTypeDef](#listdistributedgrantsresponsetypedef)
-  - [ListFailuresForLicenseConfigurationOperationsResponseTypeDef](#listfailuresforlicenseconfigurationoperationsresponsetypedef)
-  - [ListLicenseConfigurationsResponseTypeDef](#listlicenseconfigurationsresponsetypedef)
-  - [ListLicenseManagerReportGeneratorsResponseTypeDef](#listlicensemanagerreportgeneratorsresponsetypedef)
-  - [ListLicenseSpecificationsForResourceResponseTypeDef](#listlicensespecificationsforresourceresponsetypedef)
-  - [ListLicenseVersionsResponseTypeDef](#listlicenseversionsresponsetypedef)
-  - [ListLicensesResponseTypeDef](#listlicensesresponsetypedef)
-  - [ListReceivedGrantsResponseTypeDef](#listreceivedgrantsresponsetypedef)
-  - [ListReceivedLicensesResponseTypeDef](#listreceivedlicensesresponsetypedef)
-  - [ListResourceInventoryResponseTypeDef](#listresourceinventoryresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListTokensResponseTypeDef](#listtokensresponsetypedef)
-  - [ListUsageForLicenseConfigurationResponseTypeDef](#listusageforlicenseconfigurationresponsetypedef)
+  - [ListAssociationsForLicenseConfigurationRequestTypeDef](#listassociationsforlicenseconfigurationrequesttypedef)
+  - [ListAssociationsForLicenseConfigurationResponseResponseTypeDef](#listassociationsforlicenseconfigurationresponseresponsetypedef)
+  - [ListDistributedGrantsRequestTypeDef](#listdistributedgrantsrequesttypedef)
+  - [ListDistributedGrantsResponseResponseTypeDef](#listdistributedgrantsresponseresponsetypedef)
+  - [ListFailuresForLicenseConfigurationOperationsRequestTypeDef](#listfailuresforlicenseconfigurationoperationsrequesttypedef)
+  - [ListFailuresForLicenseConfigurationOperationsResponseResponseTypeDef](#listfailuresforlicenseconfigurationoperationsresponseresponsetypedef)
+  - [ListLicenseConfigurationsRequestTypeDef](#listlicenseconfigurationsrequesttypedef)
+  - [ListLicenseConfigurationsResponseResponseTypeDef](#listlicenseconfigurationsresponseresponsetypedef)
+  - [ListLicenseManagerReportGeneratorsRequestTypeDef](#listlicensemanagerreportgeneratorsrequesttypedef)
+  - [ListLicenseManagerReportGeneratorsResponseResponseTypeDef](#listlicensemanagerreportgeneratorsresponseresponsetypedef)
+  - [ListLicenseSpecificationsForResourceRequestTypeDef](#listlicensespecificationsforresourcerequesttypedef)
+  - [ListLicenseSpecificationsForResourceResponseResponseTypeDef](#listlicensespecificationsforresourceresponseresponsetypedef)
+  - [ListLicenseVersionsRequestTypeDef](#listlicenseversionsrequesttypedef)
+  - [ListLicenseVersionsResponseResponseTypeDef](#listlicenseversionsresponseresponsetypedef)
+  - [ListLicensesRequestTypeDef](#listlicensesrequesttypedef)
+  - [ListLicensesResponseResponseTypeDef](#listlicensesresponseresponsetypedef)
+  - [ListReceivedGrantsRequestTypeDef](#listreceivedgrantsrequesttypedef)
+  - [ListReceivedGrantsResponseResponseTypeDef](#listreceivedgrantsresponseresponsetypedef)
+  - [ListReceivedLicensesRequestTypeDef](#listreceivedlicensesrequesttypedef)
+  - [ListReceivedLicensesResponseResponseTypeDef](#listreceivedlicensesresponseresponsetypedef)
+  - [ListResourceInventoryRequestTypeDef](#listresourceinventoryrequesttypedef)
+  - [ListResourceInventoryResponseResponseTypeDef](#listresourceinventoryresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListTokensRequestTypeDef](#listtokensrequesttypedef)
+  - [ListTokensResponseResponseTypeDef](#listtokensresponseresponsetypedef)
+  - [ListUsageForLicenseConfigurationRequestTypeDef](#listusageforlicenseconfigurationrequesttypedef)
+  - [ListUsageForLicenseConfigurationResponseResponseTypeDef](#listusageforlicenseconfigurationresponseresponsetypedef)
   - [ManagedResourceSummaryTypeDef](#managedresourcesummarytypedef)
   - [MetadataTypeDef](#metadatatypedef)
   - [OrganizationConfigurationTypeDef](#organizationconfigurationtypedef)
@@ -71,26 +108,46 @@ type annotations stubs module
   - [ProductInformationTypeDef](#productinformationtypedef)
   - [ProvisionalConfigurationTypeDef](#provisionalconfigurationtypedef)
   - [ReceivedMetadataTypeDef](#receivedmetadatatypedef)
-  - [RejectGrantResponseTypeDef](#rejectgrantresponsetypedef)
+  - [RejectGrantRequestTypeDef](#rejectgrantrequesttypedef)
+  - [RejectGrantResponseResponseTypeDef](#rejectgrantresponseresponsetypedef)
   - [ReportContextTypeDef](#reportcontexttypedef)
   - [ReportFrequencyTypeDef](#reportfrequencytypedef)
   - [ReportGeneratorTypeDef](#reportgeneratortypedef)
   - [ResourceInventoryTypeDef](#resourceinventorytypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3LocationTypeDef](#s3locationtypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TokenDataTypeDef](#tokendatatypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateLicenseConfigurationRequestTypeDef](#updatelicenseconfigurationrequesttypedef)
+  - [UpdateLicenseManagerReportGeneratorRequestTypeDef](#updatelicensemanagerreportgeneratorrequesttypedef)
+  - [UpdateLicenseSpecificationsForResourceRequestTypeDef](#updatelicensespecificationsforresourcerequesttypedef)
+  - [UpdateServiceSettingsRequestTypeDef](#updateservicesettingsrequesttypedef)
 
-## AcceptGrantResponseTypeDef
+## AcceptGrantRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import AcceptGrantResponseTypeDef
+from mypy_boto3_license_manager.type_defs import AcceptGrantRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `GrantArn`: `str`
+
+## AcceptGrantResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import AcceptGrantResponseResponseTypeDef
+```
+
+Required fields:
 
 - `GrantArn`: `str`
 - `Status`: [GrantStatusType](./literals.md#grantstatustype)
 - `Version`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## AutomatedDiscoveryInformationTypeDef
 
@@ -113,13 +170,48 @@ Required fields:
 - `AllowEarlyCheckIn`: `bool`
 - `MaxTimeToLiveInMinutes`: `int`
 
-## CheckoutBorrowLicenseResponseTypeDef
+## CheckInLicenseRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import CheckoutBorrowLicenseResponseTypeDef
+from mypy_boto3_license_manager.type_defs import CheckInLicenseRequestTypeDef
 ```
 
+Required fields:
+
+- `LicenseConsumptionToken`: `str`
+
 Optional fields:
+
+- `Beneficiary`: `str`
+
+## CheckoutBorrowLicenseRequestTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import CheckoutBorrowLicenseRequestTypeDef
+```
+
+Required fields:
+
+- `LicenseArn`: `str`
+- `Entitlements`:
+  `List`\[[EntitlementDataTypeDef](./type_defs.md#entitlementdatatypedef)\]
+- `DigitalSignatureMethod`: `Literal['JWT_PS384']` (see
+  [DigitalSignatureMethodType](./literals.md#digitalsignaturemethodtype))
+- `ClientToken`: `str`
+
+Optional fields:
+
+- `NodeId`: `str`
+- `CheckoutMetadata`:
+  `List`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
+
+## CheckoutBorrowLicenseResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import CheckoutBorrowLicenseResponseResponseTypeDef
+```
+
+Required fields:
 
 - `LicenseArn`: `str`
 - `LicenseConsumptionToken`: `str`
@@ -131,14 +223,37 @@ Optional fields:
 - `Expiration`: `str`
 - `CheckoutMetadata`:
   `List`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CheckoutLicenseResponseTypeDef
+## CheckoutLicenseRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import CheckoutLicenseResponseTypeDef
+from mypy_boto3_license_manager.type_defs import CheckoutLicenseRequestTypeDef
 ```
 
+Required fields:
+
+- `ProductSKU`: `str`
+- `CheckoutType`: `Literal['PROVISIONAL']` (see
+  [CheckoutTypeType](./literals.md#checkouttypetype))
+- `KeyFingerprint`: `str`
+- `Entitlements`:
+  `List`\[[EntitlementDataTypeDef](./type_defs.md#entitlementdatatypedef)\]
+- `ClientToken`: `str`
+
 Optional fields:
+
+- `Beneficiary`: `str`
+- `NodeId`: `str`
+
+## CheckoutLicenseResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import CheckoutLicenseResponseResponseTypeDef
+```
+
+Required fields:
 
 - `CheckoutType`: `Literal['PROVISIONAL']` (see
   [CheckoutTypeType](./literals.md#checkouttypetype))
@@ -149,6 +264,8 @@ Optional fields:
 - `NodeId`: `str`
 - `IssuedAt`: `str`
 - `Expiration`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ConsumedLicenseSummaryTypeDef
 
@@ -175,86 +292,249 @@ Optional fields:
 - `BorrowConfiguration`:
   [BorrowConfigurationTypeDef](./type_defs.md#borrowconfigurationtypedef)
 
-## CreateGrantResponseTypeDef
+## CreateGrantRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import CreateGrantResponseTypeDef
+from mypy_boto3_license_manager.type_defs import CreateGrantRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ClientToken`: `str`
+- `GrantName`: `str`
+- `LicenseArn`: `str`
+- `Principals`: `List`\[`str`\]
+- `HomeRegion`: `str`
+- `AllowedOperations`:
+  `List`\[[AllowedOperationType](./literals.md#allowedoperationtype)\]
+
+## CreateGrantResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import CreateGrantResponseResponseTypeDef
+```
+
+Required fields:
 
 - `GrantArn`: `str`
 - `Status`: [GrantStatusType](./literals.md#grantstatustype)
 - `Version`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateGrantVersionResponseTypeDef
+## CreateGrantVersionRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import CreateGrantVersionResponseTypeDef
+from mypy_boto3_license_manager.type_defs import CreateGrantVersionRequestTypeDef
 ```
 
+Required fields:
+
+- `ClientToken`: `str`
+- `GrantArn`: `str`
+
 Optional fields:
+
+- `GrantName`: `str`
+- `AllowedOperations`:
+  `List`\[[AllowedOperationType](./literals.md#allowedoperationtype)\]
+- `Status`: [GrantStatusType](./literals.md#grantstatustype)
+- `StatusReason`: `str`
+- `SourceVersion`: `str`
+
+## CreateGrantVersionResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import CreateGrantVersionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `GrantArn`: `str`
 - `Status`: [GrantStatusType](./literals.md#grantstatustype)
 - `Version`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateLicenseConfigurationResponseTypeDef
+## CreateLicenseConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import CreateLicenseConfigurationResponseTypeDef
+from mypy_boto3_license_manager.type_defs import CreateLicenseConfigurationRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+- `LicenseCountingType`:
+  [LicenseCountingTypeType](./literals.md#licensecountingtypetype)
+
 Optional fields:
+
+- `Description`: `str`
+- `LicenseCount`: `int`
+- `LicenseCountHardLimit`: `bool`
+- `LicenseRules`: `List`\[`str`\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `DisassociateWhenNotFound`: `bool`
+- `ProductInformationList`:
+  `List`\[[ProductInformationTypeDef](./type_defs.md#productinformationtypedef)\]
+
+## CreateLicenseConfigurationResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import CreateLicenseConfigurationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `LicenseConfigurationArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateLicenseManagerReportGeneratorResponseTypeDef
+## CreateLicenseManagerReportGeneratorRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import CreateLicenseManagerReportGeneratorResponseTypeDef
+from mypy_boto3_license_manager.type_defs import CreateLicenseManagerReportGeneratorRequestTypeDef
 ```
 
+Required fields:
+
+- `ReportGeneratorName`: `str`
+- `Type`: `List`\[[ReportTypeType](./literals.md#reporttypetype)\]
+- `ReportContext`: [ReportContextTypeDef](./type_defs.md#reportcontexttypedef)
+- `ReportFrequency`:
+  [ReportFrequencyTypeDef](./type_defs.md#reportfrequencytypedef)
+- `ClientToken`: `str`
+
 Optional fields:
+
+- `Description`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateLicenseManagerReportGeneratorResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import CreateLicenseManagerReportGeneratorResponseResponseTypeDef
+```
+
+Required fields:
 
 - `LicenseManagerReportGeneratorArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateLicenseResponseTypeDef
+## CreateLicenseRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import CreateLicenseResponseTypeDef
+from mypy_boto3_license_manager.type_defs import CreateLicenseRequestTypeDef
 ```
 
+Required fields:
+
+- `LicenseName`: `str`
+- `ProductName`: `str`
+- `ProductSKU`: `str`
+- `Issuer`: [IssuerTypeDef](./type_defs.md#issuertypedef)
+- `HomeRegion`: `str`
+- `Validity`: [DatetimeRangeTypeDef](./type_defs.md#datetimerangetypedef)
+- `Entitlements`:
+  `List`\[[EntitlementTypeDef](./type_defs.md#entitlementtypedef)\]
+- `Beneficiary`: `str`
+- `ConsumptionConfiguration`:
+  [ConsumptionConfigurationTypeDef](./type_defs.md#consumptionconfigurationtypedef)
+- `ClientToken`: `str`
+
 Optional fields:
+
+- `LicenseMetadata`:
+  `List`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
+
+## CreateLicenseResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import CreateLicenseResponseResponseTypeDef
+```
+
+Required fields:
 
 - `LicenseArn`: `str`
 - `Status`: [LicenseStatusType](./literals.md#licensestatustype)
 - `Version`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateLicenseVersionResponseTypeDef
+## CreateLicenseVersionRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import CreateLicenseVersionResponseTypeDef
+from mypy_boto3_license_manager.type_defs import CreateLicenseVersionRequestTypeDef
 ```
 
+Required fields:
+
+- `LicenseArn`: `str`
+- `LicenseName`: `str`
+- `ProductName`: `str`
+- `Issuer`: [IssuerTypeDef](./type_defs.md#issuertypedef)
+- `HomeRegion`: `str`
+- `Validity`: [DatetimeRangeTypeDef](./type_defs.md#datetimerangetypedef)
+- `Entitlements`:
+  `List`\[[EntitlementTypeDef](./type_defs.md#entitlementtypedef)\]
+- `ConsumptionConfiguration`:
+  [ConsumptionConfigurationTypeDef](./type_defs.md#consumptionconfigurationtypedef)
+- `Status`: [LicenseStatusType](./literals.md#licensestatustype)
+- `ClientToken`: `str`
+
 Optional fields:
+
+- `LicenseMetadata`:
+  `List`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
+- `SourceVersion`: `str`
+
+## CreateLicenseVersionResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import CreateLicenseVersionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `LicenseArn`: `str`
 - `Version`: `str`
 - `Status`: [LicenseStatusType](./literals.md#licensestatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTokenResponseTypeDef
+## CreateTokenRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import CreateTokenResponseTypeDef
+from mypy_boto3_license_manager.type_defs import CreateTokenRequestTypeDef
 ```
 
+Required fields:
+
+- `LicenseArn`: `str`
+- `ClientToken`: `str`
+
 Optional fields:
+
+- `RoleArns`: `List`\[`str`\]
+- `ExpirationInDays`: `int`
+- `TokenProperties`: `List`\[`str`\]
+
+## CreateTokenResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import CreateTokenResponseResponseTypeDef
+```
+
+Required fields:
 
 - `TokenId`: `str`
 - `TokenType`: `Literal['REFRESH_TOKEN']` (see
   [TokenTypeType](./literals.md#tokentypetype))
 - `Token`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DatetimeRangeTypeDef
 
@@ -270,29 +550,89 @@ Optional fields:
 
 - `End`: `str`
 
-## DeleteGrantResponseTypeDef
+## DeleteGrantRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import DeleteGrantResponseTypeDef
+from mypy_boto3_license_manager.type_defs import DeleteGrantRequestTypeDef
 ```
 
+Required fields:
+
+- `GrantArn`: `str`
+- `Version`: `str`
+
 Optional fields:
+
+- `StatusReason`: `str`
+
+## DeleteGrantResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import DeleteGrantResponseResponseTypeDef
+```
+
+Required fields:
 
 - `GrantArn`: `str`
 - `Status`: [GrantStatusType](./literals.md#grantstatustype)
 - `Version`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteLicenseResponseTypeDef
+## DeleteLicenseConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import DeleteLicenseResponseTypeDef
+from mypy_boto3_license_manager.type_defs import DeleteLicenseConfigurationRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `LicenseConfigurationArn`: `str`
+
+## DeleteLicenseManagerReportGeneratorRequestTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import DeleteLicenseManagerReportGeneratorRequestTypeDef
+```
+
+Required fields:
+
+- `LicenseManagerReportGeneratorArn`: `str`
+
+## DeleteLicenseRequestTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import DeleteLicenseRequestTypeDef
+```
+
+Required fields:
+
+- `LicenseArn`: `str`
+- `SourceVersion`: `str`
+
+## DeleteLicenseResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import DeleteLicenseResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Status`:
   [LicenseDeletionStatusType](./literals.md#licensedeletionstatustype)
 - `DeletionDate`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteTokenRequestTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import DeleteTokenRequestTypeDef
+```
+
+Required fields:
+
+- `TokenId`: `str`
 
 ## EntitlementDataTypeDef
 
@@ -343,16 +683,32 @@ Optional fields:
 
 - `MaxCount`: `str`
 
-## ExtendLicenseConsumptionResponseTypeDef
+## ExtendLicenseConsumptionRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import ExtendLicenseConsumptionResponseTypeDef
+from mypy_boto3_license_manager.type_defs import ExtendLicenseConsumptionRequestTypeDef
 ```
+
+Required fields:
+
+- `LicenseConsumptionToken`: `str`
 
 Optional fields:
 
+- `DryRun`: `bool`
+
+## ExtendLicenseConsumptionResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import ExtendLicenseConsumptionResponseResponseTypeDef
+```
+
+Required fields:
+
 - `LicenseConsumptionToken`: `str`
 - `Expiration`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## FilterTypeDef
 
@@ -365,33 +721,75 @@ Optional fields:
 - `Name`: `str`
 - `Values`: `List`\[`str`\]
 
-## GetAccessTokenResponseTypeDef
+## GetAccessTokenRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import GetAccessTokenResponseTypeDef
+from mypy_boto3_license_manager.type_defs import GetAccessTokenRequestTypeDef
 ```
 
+Required fields:
+
+- `Token`: `str`
+
 Optional fields:
+
+- `TokenProperties`: `List`\[`str`\]
+
+## GetAccessTokenResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import GetAccessTokenResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AccessToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetGrantResponseTypeDef
+## GetGrantRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import GetGrantResponseTypeDef
+from mypy_boto3_license_manager.type_defs import GetGrantRequestTypeDef
 ```
 
+Required fields:
+
+- `GrantArn`: `str`
+
 Optional fields:
+
+- `Version`: `str`
+
+## GetGrantResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import GetGrantResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Grant`: [GrantTypeDef](./type_defs.md#granttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLicenseConfigurationResponseTypeDef
+## GetLicenseConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import GetLicenseConfigurationResponseTypeDef
+from mypy_boto3_license_manager.type_defs import GetLicenseConfigurationRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `LicenseConfigurationArn`: `str`
+
+## GetLicenseConfigurationResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import GetLicenseConfigurationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `LicenseConfigurationId`: `str`
 - `LicenseConfigurationArn`: `str`
@@ -415,45 +813,87 @@ Optional fields:
 - `AutomatedDiscoveryInformation`:
   [AutomatedDiscoveryInformationTypeDef](./type_defs.md#automateddiscoveryinformationtypedef)
 - `DisassociateWhenNotFound`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLicenseManagerReportGeneratorResponseTypeDef
+## GetLicenseManagerReportGeneratorRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import GetLicenseManagerReportGeneratorResponseTypeDef
+from mypy_boto3_license_manager.type_defs import GetLicenseManagerReportGeneratorRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `LicenseManagerReportGeneratorArn`: `str`
+
+## GetLicenseManagerReportGeneratorResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import GetLicenseManagerReportGeneratorResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ReportGenerator`:
   [ReportGeneratorTypeDef](./type_defs.md#reportgeneratortypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLicenseResponseTypeDef
+## GetLicenseRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import GetLicenseResponseTypeDef
+from mypy_boto3_license_manager.type_defs import GetLicenseRequestTypeDef
 ```
 
+Required fields:
+
+- `LicenseArn`: `str`
+
 Optional fields:
+
+- `Version`: `str`
+
+## GetLicenseResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import GetLicenseResponseResponseTypeDef
+```
+
+Required fields:
 
 - `License`: [LicenseTypeDef](./type_defs.md#licensetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLicenseUsageResponseTypeDef
+## GetLicenseUsageRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import GetLicenseUsageResponseTypeDef
+from mypy_boto3_license_manager.type_defs import GetLicenseUsageRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `LicenseArn`: `str`
+
+## GetLicenseUsageResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import GetLicenseUsageResponseResponseTypeDef
+```
+
+Required fields:
 
 - `LicenseUsage`: [LicenseUsageTypeDef](./type_defs.md#licenseusagetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetServiceSettingsResponseTypeDef
+## GetServiceSettingsResponseResponseTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import GetServiceSettingsResponseTypeDef
+from mypy_boto3_license_manager.type_defs import GetServiceSettingsResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `S3BucketArn`: `str`
 - `SnsTopicArn`: `str`
@@ -461,6 +901,8 @@ Optional fields:
   [OrganizationConfigurationTypeDef](./type_defs.md#organizationconfigurationtypedef)
 - `EnableCrossAccountsDiscovery`: `bool`
 - `LicenseManagerResourceShareArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GrantTypeDef
 
@@ -682,166 +1124,383 @@ Optional fields:
 - `EntitlementUsages`:
   `List`\[[EntitlementUsageTypeDef](./type_defs.md#entitlementusagetypedef)\]
 
-## ListAssociationsForLicenseConfigurationResponseTypeDef
+## ListAssociationsForLicenseConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import ListAssociationsForLicenseConfigurationResponseTypeDef
+from mypy_boto3_license_manager.type_defs import ListAssociationsForLicenseConfigurationRequestTypeDef
 ```
 
+Required fields:
+
+- `LicenseConfigurationArn`: `str`
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListAssociationsForLicenseConfigurationResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import ListAssociationsForLicenseConfigurationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `LicenseConfigurationAssociations`:
   `List`\[[LicenseConfigurationAssociationTypeDef](./type_defs.md#licenseconfigurationassociationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDistributedGrantsResponseTypeDef
+## ListDistributedGrantsRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import ListDistributedGrantsResponseTypeDef
+from mypy_boto3_license_manager.type_defs import ListDistributedGrantsRequestTypeDef
 ```
 
 Optional fields:
+
+- `GrantArns`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListDistributedGrantsResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import ListDistributedGrantsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Grants`: `List`\[[GrantTypeDef](./type_defs.md#granttypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFailuresForLicenseConfigurationOperationsResponseTypeDef
+## ListFailuresForLicenseConfigurationOperationsRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import ListFailuresForLicenseConfigurationOperationsResponseTypeDef
+from mypy_boto3_license_manager.type_defs import ListFailuresForLicenseConfigurationOperationsRequestTypeDef
 ```
 
+Required fields:
+
+- `LicenseConfigurationArn`: `str`
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListFailuresForLicenseConfigurationOperationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import ListFailuresForLicenseConfigurationOperationsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `LicenseOperationFailureList`:
   `List`\[[LicenseOperationFailureTypeDef](./type_defs.md#licenseoperationfailuretypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListLicenseConfigurationsResponseTypeDef
+## ListLicenseConfigurationsRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import ListLicenseConfigurationsResponseTypeDef
+from mypy_boto3_license_manager.type_defs import ListLicenseConfigurationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `LicenseConfigurationArns`: `List`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+## ListLicenseConfigurationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import ListLicenseConfigurationsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `LicenseConfigurations`:
   `List`\[[LicenseConfigurationTypeDef](./type_defs.md#licenseconfigurationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListLicenseManagerReportGeneratorsResponseTypeDef
+## ListLicenseManagerReportGeneratorsRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import ListLicenseManagerReportGeneratorsResponseTypeDef
+from mypy_boto3_license_manager.type_defs import ListLicenseManagerReportGeneratorsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListLicenseManagerReportGeneratorsResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import ListLicenseManagerReportGeneratorsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ReportGenerators`:
   `List`\[[ReportGeneratorTypeDef](./type_defs.md#reportgeneratortypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListLicenseSpecificationsForResourceResponseTypeDef
+## ListLicenseSpecificationsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import ListLicenseSpecificationsForResourceResponseTypeDef
+from mypy_boto3_license_manager.type_defs import ListLicenseSpecificationsForResourceRequestTypeDef
 ```
 
+Required fields:
+
+- `ResourceArn`: `str`
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListLicenseSpecificationsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import ListLicenseSpecificationsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `LicenseSpecifications`:
   `List`\[[LicenseSpecificationTypeDef](./type_defs.md#licensespecificationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListLicenseVersionsResponseTypeDef
+## ListLicenseVersionsRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import ListLicenseVersionsResponseTypeDef
+from mypy_boto3_license_manager.type_defs import ListLicenseVersionsRequestTypeDef
 ```
 
+Required fields:
+
+- `LicenseArn`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListLicenseVersionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import ListLicenseVersionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Licenses`: `List`\[[LicenseTypeDef](./type_defs.md#licensetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListLicensesResponseTypeDef
+## ListLicensesRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import ListLicensesResponseTypeDef
+from mypy_boto3_license_manager.type_defs import ListLicensesRequestTypeDef
 ```
 
 Optional fields:
+
+- `LicenseArns`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListLicensesResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import ListLicensesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Licenses`: `List`\[[LicenseTypeDef](./type_defs.md#licensetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListReceivedGrantsResponseTypeDef
+## ListReceivedGrantsRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import ListReceivedGrantsResponseTypeDef
+from mypy_boto3_license_manager.type_defs import ListReceivedGrantsRequestTypeDef
 ```
 
 Optional fields:
+
+- `GrantArns`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListReceivedGrantsResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import ListReceivedGrantsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Grants`: `List`\[[GrantTypeDef](./type_defs.md#granttypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListReceivedLicensesResponseTypeDef
+## ListReceivedLicensesRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import ListReceivedLicensesResponseTypeDef
+from mypy_boto3_license_manager.type_defs import ListReceivedLicensesRequestTypeDef
 ```
 
 Optional fields:
+
+- `LicenseArns`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListReceivedLicensesResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import ListReceivedLicensesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Licenses`:
   `List`\[[GrantedLicenseTypeDef](./type_defs.md#grantedlicensetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListResourceInventoryResponseTypeDef
+## ListResourceInventoryRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import ListResourceInventoryResponseTypeDef
+from mypy_boto3_license_manager.type_defs import ListResourceInventoryRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`:
+  `List`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
+
+## ListResourceInventoryResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import ListResourceInventoryResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResourceInventoryList`:
   `List`\[[ResourceInventoryTypeDef](./type_defs.md#resourceinventorytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_license_manager.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceArn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTokensResponseTypeDef
+## ListTokensRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import ListTokensResponseTypeDef
+from mypy_boto3_license_manager.type_defs import ListTokensRequestTypeDef
 ```
 
 Optional fields:
+
+- `TokenIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListTokensResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import ListTokensResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Tokens`: `List`\[[TokenDataTypeDef](./type_defs.md#tokendatatypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListUsageForLicenseConfigurationResponseTypeDef
+## ListUsageForLicenseConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import ListUsageForLicenseConfigurationResponseTypeDef
+from mypy_boto3_license_manager.type_defs import ListUsageForLicenseConfigurationRequestTypeDef
 ```
 
+Required fields:
+
+- `LicenseConfigurationArn`: `str`
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+## ListUsageForLicenseConfigurationResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import ListUsageForLicenseConfigurationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `LicenseConfigurationUsageList`:
   `List`\[[LicenseConfigurationUsageTypeDef](./type_defs.md#licenseconfigurationusagetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ManagedResourceSummaryTypeDef
 
@@ -937,17 +1596,29 @@ Optional fields:
 - `AllowedOperations`:
   `List`\[[AllowedOperationType](./literals.md#allowedoperationtype)\]
 
-## RejectGrantResponseTypeDef
+## RejectGrantRequestTypeDef
 
 ```python
-from mypy_boto3_license_manager.type_defs import RejectGrantResponseTypeDef
+from mypy_boto3_license_manager.type_defs import RejectGrantRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `GrantArn`: `str`
+
+## RejectGrantResponseResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import RejectGrantResponseResponseTypeDef
+```
+
+Required fields:
 
 - `GrantArn`: `str`
 - `Status`: [GrantStatusType](./literals.md#grantstatustype)
 - `Version`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ReportContextTypeDef
 
@@ -1008,6 +1679,20 @@ Optional fields:
 - `PlatformVersion`: `str`
 - `ResourceOwningAccountId`: `str`
 
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
 ## S3LocationTypeDef
 
 ```python
@@ -1018,6 +1703,17 @@ Optional fields:
 
 - `bucket`: `str`
 - `keyPrefix`: `str`
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1045,3 +1741,88 @@ Optional fields:
 - `TokenProperties`: `List`\[`str`\]
 - `RoleArns`: `List`\[`str`\]
 - `Status`: `str`
+
+## UntagResourceRequestTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## UpdateLicenseConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import UpdateLicenseConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `LicenseConfigurationArn`: `str`
+
+Optional fields:
+
+- `LicenseConfigurationStatus`:
+  [LicenseConfigurationStatusType](./literals.md#licenseconfigurationstatustype)
+- `LicenseRules`: `List`\[`str`\]
+- `LicenseCount`: `int`
+- `LicenseCountHardLimit`: `bool`
+- `Name`: `str`
+- `Description`: `str`
+- `ProductInformationList`:
+  `List`\[[ProductInformationTypeDef](./type_defs.md#productinformationtypedef)\]
+- `DisassociateWhenNotFound`: `bool`
+
+## UpdateLicenseManagerReportGeneratorRequestTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import UpdateLicenseManagerReportGeneratorRequestTypeDef
+```
+
+Required fields:
+
+- `LicenseManagerReportGeneratorArn`: `str`
+- `ReportGeneratorName`: `str`
+- `Type`: `List`\[[ReportTypeType](./literals.md#reporttypetype)\]
+- `ReportContext`: [ReportContextTypeDef](./type_defs.md#reportcontexttypedef)
+- `ReportFrequency`:
+  [ReportFrequencyTypeDef](./type_defs.md#reportfrequencytypedef)
+- `ClientToken`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+
+## UpdateLicenseSpecificationsForResourceRequestTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import UpdateLicenseSpecificationsForResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+
+Optional fields:
+
+- `AddLicenseSpecifications`:
+  `List`\[[LicenseSpecificationTypeDef](./type_defs.md#licensespecificationtypedef)\]
+- `RemoveLicenseSpecifications`:
+  `List`\[[LicenseSpecificationTypeDef](./type_defs.md#licensespecificationtypedef)\]
+
+## UpdateServiceSettingsRequestTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import UpdateServiceSettingsRequestTypeDef
+```
+
+Optional fields:
+
+- `S3BucketArn`: `str`
+- `SnsTopicArn`: `str`
+- `OrganizationConfiguration`:
+  [OrganizationConfigurationTypeDef](./type_defs.md#organizationconfigurationtypedef)
+- `EnableCrossAccountsDiscovery`: `bool`

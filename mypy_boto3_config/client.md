@@ -190,11 +190,17 @@ Exceptions:
 
 ### batch_get_aggregate_resource_config
 
+Returns the current configuration items for resources that are present in your
+AWS Config aggregator.
+
 Type annotations for
 `boto3.client("config").batch_get_aggregate_resource_config` method.
 
 Boto3 documentation:
 [ConfigService.Client.batch_get_aggregate_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.batch_get_aggregate_resource_config)
+
+Arguments mapping described in
+[BatchGetAggregateResourceConfigRequestTypeDef](./type_defs.md#batchgetaggregateresourceconfigrequesttypedef).
 
 Keyword-only arguments:
 
@@ -204,14 +210,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchGetAggregateResourceConfigResponseTypeDef](./type_defs.md#batchgetaggregateresourceconfigresponsetypedef).
+[BatchGetAggregateResourceConfigResponseResponseTypeDef](./type_defs.md#batchgetaggregateresourceconfigresponseresponsetypedef).
 
 ### batch_get_resource_config
+
+Returns the current configuration for one or more requested resources.
 
 Type annotations for `boto3.client("config").batch_get_resource_config` method.
 
 Boto3 documentation:
 [ConfigService.Client.batch_get_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.batch_get_resource_config)
+
+Arguments mapping described in
+[BatchGetResourceConfigRequestTypeDef](./type_defs.md#batchgetresourceconfigrequesttypedef).
 
 Keyword-only arguments:
 
@@ -220,9 +231,11 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchGetResourceConfigResponseTypeDef](./type_defs.md#batchgetresourceconfigresponsetypedef).
+[BatchGetResourceConfigResponseResponseTypeDef](./type_defs.md#batchgetresourceconfigresponseresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("config").can_paginate` method.
 
@@ -237,11 +250,17 @@ Returns `bool`.
 
 ### delete_aggregation_authorization
 
+Deletes the authorization granted to the specified configuration aggregator
+account in a specified region.
+
 Type annotations for `boto3.client("config").delete_aggregation_authorization`
 method.
 
 Boto3 documentation:
 [ConfigService.Client.delete_aggregation_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_aggregation_authorization)
+
+Arguments mapping described in
+[DeleteAggregationAuthorizationRequestTypeDef](./type_defs.md#deleteaggregationauthorizationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -250,10 +269,15 @@ Keyword-only arguments:
 
 ### delete_config_rule
 
+Deletes the specified AWS Config rule and all of its evaluation results.
+
 Type annotations for `boto3.client("config").delete_config_rule` method.
 
 Boto3 documentation:
 [ConfigService.Client.delete_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_config_rule)
+
+Arguments mapping described in
+[DeleteConfigRuleRequestTypeDef](./type_defs.md#deleteconfigrulerequesttypedef).
 
 Keyword-only arguments:
 
@@ -261,11 +285,17 @@ Keyword-only arguments:
 
 ### delete_configuration_aggregator
 
+Deletes the specified configuration aggregator and the aggregated data
+associated with the aggregator.
+
 Type annotations for `boto3.client("config").delete_configuration_aggregator`
 method.
 
 Boto3 documentation:
 [ConfigService.Client.delete_configuration_aggregator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_configuration_aggregator)
+
+Arguments mapping described in
+[DeleteConfigurationAggregatorRequestTypeDef](./type_defs.md#deleteconfigurationaggregatorrequesttypedef).
 
 Keyword-only arguments:
 
@@ -273,11 +303,16 @@ Keyword-only arguments:
 
 ### delete_configuration_recorder
 
+Deletes the configuration recorder.
+
 Type annotations for `boto3.client("config").delete_configuration_recorder`
 method.
 
 Boto3 documentation:
 [ConfigService.Client.delete_configuration_recorder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_configuration_recorder)
+
+Arguments mapping described in
+[DeleteConfigurationRecorderRequestTypeDef](./type_defs.md#deleteconfigurationrecorderrequesttypedef).
 
 Keyword-only arguments:
 
@@ -285,10 +320,16 @@ Keyword-only arguments:
 
 ### delete_conformance_pack
 
+Deletes the specified conformance pack and all the AWS Config rules,
+remediation actions, and all evaluation results within that conformance pack.
+
 Type annotations for `boto3.client("config").delete_conformance_pack` method.
 
 Boto3 documentation:
 [ConfigService.Client.delete_conformance_pack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_conformance_pack)
+
+Arguments mapping described in
+[DeleteConformancePackRequestTypeDef](./type_defs.md#deleteconformancepackrequesttypedef).
 
 Keyword-only arguments:
 
@@ -296,10 +337,15 @@ Keyword-only arguments:
 
 ### delete_delivery_channel
 
+Deletes the delivery channel.
+
 Type annotations for `boto3.client("config").delete_delivery_channel` method.
 
 Boto3 documentation:
 [ConfigService.Client.delete_delivery_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_delivery_channel)
+
+Arguments mapping described in
+[DeleteDeliveryChannelRequestTypeDef](./type_defs.md#deletedeliverychannelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -307,10 +353,15 @@ Keyword-only arguments:
 
 ### delete_evaluation_results
 
+Deletes the evaluation results for the specified AWS Config rule.
+
 Type annotations for `boto3.client("config").delete_evaluation_results` method.
 
 Boto3 documentation:
 [ConfigService.Client.delete_evaluation_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_evaluation_results)
+
+Arguments mapping described in
+[DeleteEvaluationResultsRequestTypeDef](./type_defs.md#deleteevaluationresultsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -320,11 +371,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_organization_config_rule
 
+Deletes the specified organization config rule and all of its evaluation
+results from all member accounts in that organization.
+
 Type annotations for `boto3.client("config").delete_organization_config_rule`
 method.
 
 Boto3 documentation:
 [ConfigService.Client.delete_organization_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_organization_config_rule)
+
+Arguments mapping described in
+[DeleteOrganizationConfigRuleRequestTypeDef](./type_defs.md#deleteorganizationconfigrulerequesttypedef).
 
 Keyword-only arguments:
 
@@ -332,11 +389,17 @@ Keyword-only arguments:
 
 ### delete_organization_conformance_pack
 
+Deletes the specified organization conformance pack and all of the config rules
+and remediation actions from all member accounts in that organization.
+
 Type annotations for
 `boto3.client("config").delete_organization_conformance_pack` method.
 
 Boto3 documentation:
 [ConfigService.Client.delete_organization_conformance_pack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_organization_conformance_pack)
+
+Arguments mapping described in
+[DeleteOrganizationConformancePackRequestTypeDef](./type_defs.md#deleteorganizationconformancepackrequesttypedef).
 
 Keyword-only arguments:
 
@@ -344,11 +407,17 @@ Keyword-only arguments:
 
 ### delete_pending_aggregation_request
 
+Deletes pending authorization requests for a specified aggregator account in a
+specified region.
+
 Type annotations for
 `boto3.client("config").delete_pending_aggregation_request` method.
 
 Boto3 documentation:
 [ConfigService.Client.delete_pending_aggregation_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_pending_aggregation_request)
+
+Arguments mapping described in
+[DeletePendingAggregationRequestRequestTypeDef](./type_defs.md#deletependingaggregationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -357,11 +426,16 @@ Keyword-only arguments:
 
 ### delete_remediation_configuration
 
+Deletes the remediation configuration.
+
 Type annotations for `boto3.client("config").delete_remediation_configuration`
 method.
 
 Boto3 documentation:
 [ConfigService.Client.delete_remediation_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_remediation_configuration)
+
+Arguments mapping described in
+[DeleteRemediationConfigurationRequestTypeDef](./type_defs.md#deleteremediationconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -372,11 +446,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_remediation_exceptions
 
+Deletes one or more remediation exceptions mentioned in the resource keys.
+
 Type annotations for `boto3.client("config").delete_remediation_exceptions`
 method.
 
 Boto3 documentation:
 [ConfigService.Client.delete_remediation_exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_remediation_exceptions)
+
+Arguments mapping described in
+[DeleteRemediationExceptionsRequestTypeDef](./type_defs.md#deleteremediationexceptionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -386,14 +465,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[DeleteRemediationExceptionsResponseTypeDef](./type_defs.md#deleteremediationexceptionsresponsetypedef).
+[DeleteRemediationExceptionsResponseResponseTypeDef](./type_defs.md#deleteremediationexceptionsresponseresponsetypedef).
 
 ### delete_resource_config
+
+Records the configuration state for a custom resource that has been deleted.
 
 Type annotations for `boto3.client("config").delete_resource_config` method.
 
 Boto3 documentation:
 [ConfigService.Client.delete_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_resource_config)
+
+Arguments mapping described in
+[DeleteResourceConfigRequestTypeDef](./type_defs.md#deleteresourceconfigrequesttypedef).
 
 Keyword-only arguments:
 
@@ -402,11 +486,16 @@ Keyword-only arguments:
 
 ### delete_retention_configuration
 
+Deletes the retention configuration.
+
 Type annotations for `boto3.client("config").delete_retention_configuration`
 method.
 
 Boto3 documentation:
 [ConfigService.Client.delete_retention_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_retention_configuration)
+
+Arguments mapping described in
+[DeleteRetentionConfigurationRequestTypeDef](./type_defs.md#deleteretentionconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -414,10 +503,15 @@ Keyword-only arguments:
 
 ### delete_stored_query
 
+Deletes the stored query for a single AWS account and a single AWS Region.
+
 Type annotations for `boto3.client("config").delete_stored_query` method.
 
 Boto3 documentation:
 [ConfigService.Client.delete_stored_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.delete_stored_query)
+
+Arguments mapping described in
+[DeleteStoredQueryRequestTypeDef](./type_defs.md#deletestoredqueryrequesttypedef).
 
 Keyword-only arguments:
 
@@ -427,25 +521,37 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### deliver_config_snapshot
 
+Schedules delivery of a configuration snapshot to the Amazon S3 bucket in the
+specified delivery channel.
+
 Type annotations for `boto3.client("config").deliver_config_snapshot` method.
 
 Boto3 documentation:
 [ConfigService.Client.deliver_config_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.deliver_config_snapshot)
+
+Arguments mapping described in
+[DeliverConfigSnapshotRequestTypeDef](./type_defs.md#deliverconfigsnapshotrequesttypedef).
 
 Keyword-only arguments:
 
 - `deliveryChannelName`: `str` *(required)*
 
 Returns
-[DeliverConfigSnapshotResponseTypeDef](./type_defs.md#deliverconfigsnapshotresponsetypedef).
+[DeliverConfigSnapshotResponseResponseTypeDef](./type_defs.md#deliverconfigsnapshotresponseresponsetypedef).
 
 ### describe_aggregate_compliance_by_config_rules
+
+Returns a list of compliant and noncompliant rules with the number of resources
+for compliant and noncompliant rules.
 
 Type annotations for
 `boto3.client("config").describe_aggregate_compliance_by_config_rules` method.
 
 Boto3 documentation:
 [ConfigService.Client.describe_aggregate_compliance_by_config_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_aggregate_compliance_by_config_rules)
+
+Arguments mapping described in
+[DescribeAggregateComplianceByConfigRulesRequestTypeDef](./type_defs.md#describeaggregatecompliancebyconfigrulesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -456,9 +562,13 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeAggregateComplianceByConfigRulesResponseTypeDef](./type_defs.md#describeaggregatecompliancebyconfigrulesresponsetypedef).
+[DescribeAggregateComplianceByConfigRulesResponseResponseTypeDef](./type_defs.md#describeaggregatecompliancebyconfigrulesresponseresponsetypedef).
 
 ### describe_aggregate_compliance_by_conformance_packs
+
+Returns a list of the conformance packs and their associated compliance status
+with the count of compliant and noncompliant AWS Config rules within each
+conformance pack.
 
 Type annotations for
 `boto3.client("config").describe_aggregate_compliance_by_conformance_packs`
@@ -466,6 +576,9 @@ method.
 
 Boto3 documentation:
 [ConfigService.Client.describe_aggregate_compliance_by_conformance_packs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_aggregate_compliance_by_conformance_packs)
+
+Arguments mapping described in
+[DescribeAggregateComplianceByConformancePacksRequestTypeDef](./type_defs.md#describeaggregatecompliancebyconformancepacksrequesttypedef).
 
 Keyword-only arguments:
 
@@ -476,9 +589,12 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeAggregateComplianceByConformancePacksResponseTypeDef](./type_defs.md#describeaggregatecompliancebyconformancepacksresponsetypedef).
+[DescribeAggregateComplianceByConformancePacksResponseResponseTypeDef](./type_defs.md#describeaggregatecompliancebyconformancepacksresponseresponsetypedef).
 
 ### describe_aggregation_authorizations
+
+Returns a list of authorizations granted to various aggregator accounts and
+regions.
 
 Type annotations for
 `boto3.client("config").describe_aggregation_authorizations` method.
@@ -486,21 +602,29 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.describe_aggregation_authorizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_aggregation_authorizations)
 
+Arguments mapping described in
+[DescribeAggregationAuthorizationsRequestTypeDef](./type_defs.md#describeaggregationauthorizationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `Limit`: `int`
 - `NextToken`: `str`
 
 Returns
-[DescribeAggregationAuthorizationsResponseTypeDef](./type_defs.md#describeaggregationauthorizationsresponsetypedef).
+[DescribeAggregationAuthorizationsResponseResponseTypeDef](./type_defs.md#describeaggregationauthorizationsresponseresponsetypedef).
 
 ### describe_compliance_by_config_rule
+
+Indicates whether the specified AWS Config rules are compliant.
 
 Type annotations for
 `boto3.client("config").describe_compliance_by_config_rule` method.
 
 Boto3 documentation:
 [ConfigService.Client.describe_compliance_by_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_compliance_by_config_rule)
+
+Arguments mapping described in
+[DescribeComplianceByConfigRuleRequestTypeDef](./type_defs.md#describecompliancebyconfigrulerequesttypedef).
 
 Keyword-only arguments:
 
@@ -510,15 +634,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeComplianceByConfigRuleResponseTypeDef](./type_defs.md#describecompliancebyconfigruleresponsetypedef).
+[DescribeComplianceByConfigRuleResponseResponseTypeDef](./type_defs.md#describecompliancebyconfigruleresponseresponsetypedef).
 
 ### describe_compliance_by_resource
+
+Indicates whether the specified AWS resources are compliant.
 
 Type annotations for `boto3.client("config").describe_compliance_by_resource`
 method.
 
 Boto3 documentation:
 [ConfigService.Client.describe_compliance_by_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_compliance_by_resource)
+
+Arguments mapping described in
+[DescribeComplianceByResourceRequestTypeDef](./type_defs.md#describecompliancebyresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -530,15 +659,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeComplianceByResourceResponseTypeDef](./type_defs.md#describecompliancebyresourceresponsetypedef).
+[DescribeComplianceByResourceResponseResponseTypeDef](./type_defs.md#describecompliancebyresourceresponseresponsetypedef).
 
 ### describe_config_rule_evaluation_status
+
+Returns status information for each of your AWS managed Config rules.
 
 Type annotations for
 `boto3.client("config").describe_config_rule_evaluation_status` method.
 
 Boto3 documentation:
 [ConfigService.Client.describe_config_rule_evaluation_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_config_rule_evaluation_status)
+
+Arguments mapping described in
+[DescribeConfigRuleEvaluationStatusRequestTypeDef](./type_defs.md#describeconfigruleevaluationstatusrequesttypedef).
 
 Keyword-only arguments:
 
@@ -547,14 +681,19 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeConfigRuleEvaluationStatusResponseTypeDef](./type_defs.md#describeconfigruleevaluationstatusresponsetypedef).
+[DescribeConfigRuleEvaluationStatusResponseResponseTypeDef](./type_defs.md#describeconfigruleevaluationstatusresponseresponsetypedef).
 
 ### describe_config_rules
+
+Returns details about your AWS Config rules.
 
 Type annotations for `boto3.client("config").describe_config_rules` method.
 
 Boto3 documentation:
 [ConfigService.Client.describe_config_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_config_rules)
+
+Arguments mapping described in
+[DescribeConfigRulesRequestTypeDef](./type_defs.md#describeconfigrulesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -562,9 +701,11 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeConfigRulesResponseTypeDef](./type_defs.md#describeconfigrulesresponsetypedef).
+[DescribeConfigRulesResponseResponseTypeDef](./type_defs.md#describeconfigrulesresponseresponsetypedef).
 
 ### describe_configuration_aggregator_sources_status
+
+Returns status information for sources within an aggregator.
 
 Type annotations for
 `boto3.client("config").describe_configuration_aggregator_sources_status`
@@ -572,6 +713,9 @@ method.
 
 Boto3 documentation:
 [ConfigService.Client.describe_configuration_aggregator_sources_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_aggregator_sources_status)
+
+Arguments mapping described in
+[DescribeConfigurationAggregatorSourcesStatusRequestTypeDef](./type_defs.md#describeconfigurationaggregatorsourcesstatusrequesttypedef).
 
 Keyword-only arguments:
 
@@ -582,15 +726,20 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeConfigurationAggregatorSourcesStatusResponseTypeDef](./type_defs.md#describeconfigurationaggregatorsourcesstatusresponsetypedef).
+[DescribeConfigurationAggregatorSourcesStatusResponseResponseTypeDef](./type_defs.md#describeconfigurationaggregatorsourcesstatusresponseresponsetypedef).
 
 ### describe_configuration_aggregators
+
+Returns the details of one or more configuration aggregators.
 
 Type annotations for
 `boto3.client("config").describe_configuration_aggregators` method.
 
 Boto3 documentation:
 [ConfigService.Client.describe_configuration_aggregators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_aggregators)
+
+Arguments mapping described in
+[DescribeConfigurationAggregatorsRequestTypeDef](./type_defs.md#describeconfigurationaggregatorsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -599,9 +748,11 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[DescribeConfigurationAggregatorsResponseTypeDef](./type_defs.md#describeconfigurationaggregatorsresponsetypedef).
+[DescribeConfigurationAggregatorsResponseResponseTypeDef](./type_defs.md#describeconfigurationaggregatorsresponseresponsetypedef).
 
 ### describe_configuration_recorder_status
+
+Returns the current status of the specified configuration recorder.
 
 Type annotations for
 `boto3.client("config").describe_configuration_recorder_status` method.
@@ -609,14 +760,19 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.describe_configuration_recorder_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_recorder_status)
 
+Arguments mapping described in
+[DescribeConfigurationRecorderStatusRequestTypeDef](./type_defs.md#describeconfigurationrecorderstatusrequesttypedef).
+
 Keyword-only arguments:
 
 - `ConfigurationRecorderNames`: `List`\[`str`\]
 
 Returns
-[DescribeConfigurationRecorderStatusResponseTypeDef](./type_defs.md#describeconfigurationrecorderstatusresponsetypedef).
+[DescribeConfigurationRecorderStatusResponseResponseTypeDef](./type_defs.md#describeconfigurationrecorderstatusresponseresponsetypedef).
 
 ### describe_configuration_recorders
+
+Returns the details for the specified configuration recorders.
 
 Type annotations for `boto3.client("config").describe_configuration_recorders`
 method.
@@ -624,20 +780,28 @@ method.
 Boto3 documentation:
 [ConfigService.Client.describe_configuration_recorders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_configuration_recorders)
 
+Arguments mapping described in
+[DescribeConfigurationRecordersRequestTypeDef](./type_defs.md#describeconfigurationrecordersrequesttypedef).
+
 Keyword-only arguments:
 
 - `ConfigurationRecorderNames`: `List`\[`str`\]
 
 Returns
-[DescribeConfigurationRecordersResponseTypeDef](./type_defs.md#describeconfigurationrecordersresponsetypedef).
+[DescribeConfigurationRecordersResponseResponseTypeDef](./type_defs.md#describeconfigurationrecordersresponseresponsetypedef).
 
 ### describe_conformance_pack_compliance
+
+Returns compliance details for each rule in that conformance pack.
 
 Type annotations for
 `boto3.client("config").describe_conformance_pack_compliance` method.
 
 Boto3 documentation:
 [ConfigService.Client.describe_conformance_pack_compliance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_conformance_pack_compliance)
+
+Arguments mapping described in
+[DescribeConformancePackComplianceRequestTypeDef](./type_defs.md#describeconformancepackcompliancerequesttypedef).
 
 Keyword-only arguments:
 
@@ -648,9 +812,11 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeConformancePackComplianceResponseTypeDef](./type_defs.md#describeconformancepackcomplianceresponsetypedef).
+[DescribeConformancePackComplianceResponseResponseTypeDef](./type_defs.md#describeconformancepackcomplianceresponseresponsetypedef).
 
 ### describe_conformance_pack_status
+
+Provides one or more conformance packs deployment status.
 
 Type annotations for `boto3.client("config").describe_conformance_pack_status`
 method.
@@ -658,6 +824,9 @@ method.
 Boto3 documentation:
 [ConfigService.Client.describe_conformance_pack_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_conformance_pack_status)
 
+Arguments mapping described in
+[DescribeConformancePackStatusRequestTypeDef](./type_defs.md#describeconformancepackstatusrequesttypedef).
+
 Keyword-only arguments:
 
 - `ConformancePackNames`: `List`\[`str`\]
@@ -665,9 +834,11 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeConformancePackStatusResponseTypeDef](./type_defs.md#describeconformancepackstatusresponsetypedef).
+[DescribeConformancePackStatusResponseResponseTypeDef](./type_defs.md#describeconformancepackstatusresponseresponsetypedef).
 
 ### describe_conformance_packs
+
+Returns a list of one or more conformance packs.
 
 Type annotations for `boto3.client("config").describe_conformance_packs`
 method.
@@ -675,6 +846,9 @@ method.
 Boto3 documentation:
 [ConfigService.Client.describe_conformance_packs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_conformance_packs)
 
+Arguments mapping described in
+[DescribeConformancePacksRequestTypeDef](./type_defs.md#describeconformancepacksrequesttypedef).
+
 Keyword-only arguments:
 
 - `ConformancePackNames`: `List`\[`str`\]
@@ -682,9 +856,11 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeConformancePacksResponseTypeDef](./type_defs.md#describeconformancepacksresponsetypedef).
+[DescribeConformancePacksResponseResponseTypeDef](./type_defs.md#describeconformancepacksresponseresponsetypedef).
 
 ### describe_delivery_channel_status
+
+Returns the current status of the specified delivery channel.
 
 Type annotations for `boto3.client("config").describe_delivery_channel_status`
 method.
@@ -692,14 +868,19 @@ method.
 Boto3 documentation:
 [ConfigService.Client.describe_delivery_channel_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_delivery_channel_status)
 
+Arguments mapping described in
+[DescribeDeliveryChannelStatusRequestTypeDef](./type_defs.md#describedeliverychannelstatusrequesttypedef).
+
 Keyword-only arguments:
 
 - `DeliveryChannelNames`: `List`\[`str`\]
 
 Returns
-[DescribeDeliveryChannelStatusResponseTypeDef](./type_defs.md#describedeliverychannelstatusresponsetypedef).
+[DescribeDeliveryChannelStatusResponseResponseTypeDef](./type_defs.md#describedeliverychannelstatusresponseresponsetypedef).
 
 ### describe_delivery_channels
+
+Returns details about the specified delivery channel.
 
 Type annotations for `boto3.client("config").describe_delivery_channels`
 method.
@@ -707,14 +888,19 @@ method.
 Boto3 documentation:
 [ConfigService.Client.describe_delivery_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_delivery_channels)
 
+Arguments mapping described in
+[DescribeDeliveryChannelsRequestTypeDef](./type_defs.md#describedeliverychannelsrequesttypedef).
+
 Keyword-only arguments:
 
 - `DeliveryChannelNames`: `List`\[`str`\]
 
 Returns
-[DescribeDeliveryChannelsResponseTypeDef](./type_defs.md#describedeliverychannelsresponsetypedef).
+[DescribeDeliveryChannelsResponseResponseTypeDef](./type_defs.md#describedeliverychannelsresponseresponsetypedef).
 
 ### describe_organization_config_rule_statuses
+
+Provides organization config rule deployment status for an organization.
 
 Type annotations for
 `boto3.client("config").describe_organization_config_rule_statuses` method.
@@ -722,6 +908,9 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.describe_organization_config_rule_statuses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_config_rule_statuses)
 
+Arguments mapping described in
+[DescribeOrganizationConfigRuleStatusesRequestTypeDef](./type_defs.md#describeorganizationconfigrulestatusesrequesttypedef).
+
 Keyword-only arguments:
 
 - `OrganizationConfigRuleNames`: `List`\[`str`\]
@@ -729,9 +918,11 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeOrganizationConfigRuleStatusesResponseTypeDef](./type_defs.md#describeorganizationconfigrulestatusesresponsetypedef).
+[DescribeOrganizationConfigRuleStatusesResponseResponseTypeDef](./type_defs.md#describeorganizationconfigrulestatusesresponseresponsetypedef).
 
 ### describe_organization_config_rules
+
+Returns a list of organization config rules.
 
 Type annotations for
 `boto3.client("config").describe_organization_config_rules` method.
@@ -739,6 +930,9 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.describe_organization_config_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_config_rules)
 
+Arguments mapping described in
+[DescribeOrganizationConfigRulesRequestTypeDef](./type_defs.md#describeorganizationconfigrulesrequesttypedef).
+
 Keyword-only arguments:
 
 - `OrganizationConfigRuleNames`: `List`\[`str`\]
@@ -746,9 +940,11 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeOrganizationConfigRulesResponseTypeDef](./type_defs.md#describeorganizationconfigrulesresponsetypedef).
+[DescribeOrganizationConfigRulesResponseResponseTypeDef](./type_defs.md#describeorganizationconfigrulesresponseresponsetypedef).
 
 ### describe_organization_conformance_pack_statuses
+
+Provides organization conformance pack deployment status for an organization.
 
 Type annotations for
 `boto3.client("config").describe_organization_conformance_pack_statuses`
@@ -757,6 +953,9 @@ method.
 Boto3 documentation:
 [ConfigService.Client.describe_organization_conformance_pack_statuses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_conformance_pack_statuses)
 
+Arguments mapping described in
+[DescribeOrganizationConformancePackStatusesRequestTypeDef](./type_defs.md#describeorganizationconformancepackstatusesrequesttypedef).
+
 Keyword-only arguments:
 
 - `OrganizationConformancePackNames`: `List`\[`str`\]
@@ -764,9 +963,11 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeOrganizationConformancePackStatusesResponseTypeDef](./type_defs.md#describeorganizationconformancepackstatusesresponsetypedef).
+[DescribeOrganizationConformancePackStatusesResponseResponseTypeDef](./type_defs.md#describeorganizationconformancepackstatusesresponseresponsetypedef).
 
 ### describe_organization_conformance_packs
+
+Returns a list of organization conformance packs.
 
 Type annotations for
 `boto3.client("config").describe_organization_conformance_packs` method.
@@ -774,6 +975,9 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.describe_organization_conformance_packs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_organization_conformance_packs)
 
+Arguments mapping described in
+[DescribeOrganizationConformancePacksRequestTypeDef](./type_defs.md#describeorganizationconformancepacksrequesttypedef).
+
 Keyword-only arguments:
 
 - `OrganizationConformancePackNames`: `List`\[`str`\]
@@ -781,9 +985,11 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeOrganizationConformancePacksResponseTypeDef](./type_defs.md#describeorganizationconformancepacksresponsetypedef).
+[DescribeOrganizationConformancePacksResponseResponseTypeDef](./type_defs.md#describeorganizationconformancepacksresponseresponsetypedef).
 
 ### describe_pending_aggregation_requests
+
+Returns a list of all pending aggregation requests.
 
 Type annotations for
 `boto3.client("config").describe_pending_aggregation_requests` method.
@@ -791,15 +997,20 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.describe_pending_aggregation_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_pending_aggregation_requests)
 
+Arguments mapping described in
+[DescribePendingAggregationRequestsRequestTypeDef](./type_defs.md#describependingaggregationrequestsrequesttypedef).
+
 Keyword-only arguments:
 
 - `Limit`: `int`
 - `NextToken`: `str`
 
 Returns
-[DescribePendingAggregationRequestsResponseTypeDef](./type_defs.md#describependingaggregationrequestsresponsetypedef).
+[DescribePendingAggregationRequestsResponseResponseTypeDef](./type_defs.md#describependingaggregationrequestsresponseresponsetypedef).
 
 ### describe_remediation_configurations
+
+Returns the details of one or more remediation configurations.
 
 Type annotations for
 `boto3.client("config").describe_remediation_configurations` method.
@@ -807,20 +1018,28 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.describe_remediation_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_remediation_configurations)
 
+Arguments mapping described in
+[DescribeRemediationConfigurationsRequestTypeDef](./type_defs.md#describeremediationconfigurationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `ConfigRuleNames`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeRemediationConfigurationsResponseTypeDef](./type_defs.md#describeremediationconfigurationsresponsetypedef).
+[DescribeRemediationConfigurationsResponseResponseTypeDef](./type_defs.md#describeremediationconfigurationsresponseresponsetypedef).
 
 ### describe_remediation_exceptions
+
+Returns the details of one or more remediation exceptions.
 
 Type annotations for `boto3.client("config").describe_remediation_exceptions`
 method.
 
 Boto3 documentation:
 [ConfigService.Client.describe_remediation_exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_remediation_exceptions)
+
+Arguments mapping described in
+[DescribeRemediationExceptionsRequestTypeDef](./type_defs.md#describeremediationexceptionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -831,15 +1050,22 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeRemediationExceptionsResponseTypeDef](./type_defs.md#describeremediationexceptionsresponsetypedef).
+[DescribeRemediationExceptionsResponseResponseTypeDef](./type_defs.md#describeremediationexceptionsresponseresponsetypedef).
 
 ### describe_remediation_execution_status
+
+Provides a detailed view of a Remediation Execution for a set of resources
+including state, timestamps for when steps for the remediation execution occur,
+and any error messages for steps that have failed.
 
 Type annotations for
 `boto3.client("config").describe_remediation_execution_status` method.
 
 Boto3 documentation:
 [ConfigService.Client.describe_remediation_execution_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_remediation_execution_status)
+
+Arguments mapping described in
+[DescribeRemediationExecutionStatusRequestTypeDef](./type_defs.md#describeremediationexecutionstatusrequesttypedef).
 
 Keyword-only arguments:
 
@@ -850,9 +1076,11 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeRemediationExecutionStatusResponseTypeDef](./type_defs.md#describeremediationexecutionstatusresponsetypedef).
+[DescribeRemediationExecutionStatusResponseResponseTypeDef](./type_defs.md#describeremediationexecutionstatusresponseresponsetypedef).
 
 ### describe_retention_configurations
+
+Returns the details of one or more retention configurations.
 
 Type annotations for `boto3.client("config").describe_retention_configurations`
 method.
@@ -860,15 +1088,20 @@ method.
 Boto3 documentation:
 [ConfigService.Client.describe_retention_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.describe_retention_configurations)
 
+Arguments mapping described in
+[DescribeRetentionConfigurationsRequestTypeDef](./type_defs.md#describeretentionconfigurationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `RetentionConfigurationNames`: `List`\[`str`\]
 - `NextToken`: `str`
 
 Returns
-[DescribeRetentionConfigurationsResponseTypeDef](./type_defs.md#describeretentionconfigurationsresponsetypedef).
+[DescribeRetentionConfigurationsResponseResponseTypeDef](./type_defs.md#describeretentionconfigurationsresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("config").generate_presigned_url` method.
 
@@ -886,12 +1119,18 @@ Returns `str`.
 
 ### get_aggregate_compliance_details_by_config_rule
 
+Returns the evaluation results for the specified AWS Config rule for a specific
+resource in a rule.
+
 Type annotations for
 `boto3.client("config").get_aggregate_compliance_details_by_config_rule`
 method.
 
 Boto3 documentation:
 [ConfigService.Client.get_aggregate_compliance_details_by_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_compliance_details_by_config_rule)
+
+Arguments mapping described in
+[GetAggregateComplianceDetailsByConfigRuleRequestTypeDef](./type_defs.md#getaggregatecompliancedetailsbyconfigrulerequesttypedef).
 
 Keyword-only arguments:
 
@@ -904,15 +1143,21 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetAggregateComplianceDetailsByConfigRuleResponseTypeDef](./type_defs.md#getaggregatecompliancedetailsbyconfigruleresponsetypedef).
+[GetAggregateComplianceDetailsByConfigRuleResponseResponseTypeDef](./type_defs.md#getaggregatecompliancedetailsbyconfigruleresponseresponsetypedef).
 
 ### get_aggregate_config_rule_compliance_summary
+
+Returns the number of compliant and noncompliant rules for one or more accounts
+and regions in an aggregator.
 
 Type annotations for
 `boto3.client("config").get_aggregate_config_rule_compliance_summary` method.
 
 Boto3 documentation:
 [ConfigService.Client.get_aggregate_config_rule_compliance_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_config_rule_compliance_summary)
+
+Arguments mapping described in
+[GetAggregateConfigRuleComplianceSummaryRequestTypeDef](./type_defs.md#getaggregateconfigrulecompliancesummaryrequesttypedef).
 
 Keyword-only arguments:
 
@@ -925,9 +1170,12 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetAggregateConfigRuleComplianceSummaryResponseTypeDef](./type_defs.md#getaggregateconfigrulecompliancesummaryresponsetypedef).
+[GetAggregateConfigRuleComplianceSummaryResponseResponseTypeDef](./type_defs.md#getaggregateconfigrulecompliancesummaryresponseresponsetypedef).
 
 ### get_aggregate_conformance_pack_compliance_summary
+
+Returns the count of compliant and noncompliant conformance packs across all
+AWS Accounts and AWS Regions in an aggregator.
 
 Type annotations for
 `boto3.client("config").get_aggregate_conformance_pack_compliance_summary`
@@ -935,6 +1183,9 @@ method.
 
 Boto3 documentation:
 [ConfigService.Client.get_aggregate_conformance_pack_compliance_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_conformance_pack_compliance_summary)
+
+Arguments mapping described in
+[GetAggregateConformancePackComplianceSummaryRequestTypeDef](./type_defs.md#getaggregateconformancepackcompliancesummaryrequesttypedef).
 
 Keyword-only arguments:
 
@@ -947,15 +1198,21 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetAggregateConformancePackComplianceSummaryResponseTypeDef](./type_defs.md#getaggregateconformancepackcompliancesummaryresponsetypedef).
+[GetAggregateConformancePackComplianceSummaryResponseResponseTypeDef](./type_defs.md#getaggregateconformancepackcompliancesummaryresponseresponsetypedef).
 
 ### get_aggregate_discovered_resource_counts
+
+Returns the resource counts across accounts and regions that are present in
+your AWS Config aggregator.
 
 Type annotations for
 `boto3.client("config").get_aggregate_discovered_resource_counts` method.
 
 Boto3 documentation:
 [ConfigService.Client.get_aggregate_discovered_resource_counts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_discovered_resource_counts)
+
+Arguments mapping described in
+[GetAggregateDiscoveredResourceCountsRequestTypeDef](./type_defs.md#getaggregatediscoveredresourcecountsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -968,15 +1225,21 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetAggregateDiscoveredResourceCountsResponseTypeDef](./type_defs.md#getaggregatediscoveredresourcecountsresponsetypedef).
+[GetAggregateDiscoveredResourceCountsResponseResponseTypeDef](./type_defs.md#getaggregatediscoveredresourcecountsresponseresponsetypedef).
 
 ### get_aggregate_resource_config
+
+Returns configuration item that is aggregated for your specific resource in a
+specific source account and region.
 
 Type annotations for `boto3.client("config").get_aggregate_resource_config`
 method.
 
 Boto3 documentation:
 [ConfigService.Client.get_aggregate_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_aggregate_resource_config)
+
+Arguments mapping described in
+[GetAggregateResourceConfigRequestTypeDef](./type_defs.md#getaggregateresourceconfigrequesttypedef).
 
 Keyword-only arguments:
 
@@ -986,15 +1249,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[GetAggregateResourceConfigResponseTypeDef](./type_defs.md#getaggregateresourceconfigresponsetypedef).
+[GetAggregateResourceConfigResponseResponseTypeDef](./type_defs.md#getaggregateresourceconfigresponseresponsetypedef).
 
 ### get_compliance_details_by_config_rule
+
+Returns the evaluation results for the specified AWS Config rule.
 
 Type annotations for
 `boto3.client("config").get_compliance_details_by_config_rule` method.
 
 Boto3 documentation:
 [ConfigService.Client.get_compliance_details_by_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_details_by_config_rule)
+
+Arguments mapping described in
+[GetComplianceDetailsByConfigRuleRequestTypeDef](./type_defs.md#getcompliancedetailsbyconfigrulerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1005,15 +1273,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetComplianceDetailsByConfigRuleResponseTypeDef](./type_defs.md#getcompliancedetailsbyconfigruleresponsetypedef).
+[GetComplianceDetailsByConfigRuleResponseResponseTypeDef](./type_defs.md#getcompliancedetailsbyconfigruleresponseresponsetypedef).
 
 ### get_compliance_details_by_resource
+
+Returns the evaluation results for the specified AWS resource.
 
 Type annotations for
 `boto3.client("config").get_compliance_details_by_resource` method.
 
 Boto3 documentation:
 [ConfigService.Client.get_compliance_details_by_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_details_by_resource)
+
+Arguments mapping described in
+[GetComplianceDetailsByResourceRequestTypeDef](./type_defs.md#getcompliancedetailsbyresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1024,9 +1297,12 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetComplianceDetailsByResourceResponseTypeDef](./type_defs.md#getcompliancedetailsbyresourceresponsetypedef).
+[GetComplianceDetailsByResourceResponseResponseTypeDef](./type_defs.md#getcompliancedetailsbyresourceresponseresponsetypedef).
 
 ### get_compliance_summary_by_config_rule
+
+Returns the number of AWS Config rules that are compliant and noncompliant, up
+to a maximum of 25 for each.
 
 Type annotations for
 `boto3.client("config").get_compliance_summary_by_config_rule` method.
@@ -1035,9 +1311,12 @@ Boto3 documentation:
 [ConfigService.Client.get_compliance_summary_by_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_summary_by_config_rule)
 
 Returns
-[GetComplianceSummaryByConfigRuleResponseTypeDef](./type_defs.md#getcompliancesummarybyconfigruleresponsetypedef).
+[GetComplianceSummaryByConfigRuleResponseResponseTypeDef](./type_defs.md#getcompliancesummarybyconfigruleresponseresponsetypedef).
 
 ### get_compliance_summary_by_resource_type
+
+Returns the number of resources that are compliant and the number that are
+noncompliant.
 
 Type annotations for
 `boto3.client("config").get_compliance_summary_by_resource_type` method.
@@ -1045,20 +1324,29 @@ Type annotations for
 Boto3 documentation:
 [ConfigService.Client.get_compliance_summary_by_resource_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_compliance_summary_by_resource_type)
 
+Arguments mapping described in
+[GetComplianceSummaryByResourceTypeRequestTypeDef](./type_defs.md#getcompliancesummarybyresourcetyperequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceTypes`: `List`\[`str`\]
 
 Returns
-[GetComplianceSummaryByResourceTypeResponseTypeDef](./type_defs.md#getcompliancesummarybyresourcetyperesponsetypedef).
+[GetComplianceSummaryByResourceTypeResponseResponseTypeDef](./type_defs.md#getcompliancesummarybyresourcetyperesponseresponsetypedef).
 
 ### get_conformance_pack_compliance_details
+
+Returns compliance details of a conformance pack for all AWS resources that are
+monitered by conformance pack.
 
 Type annotations for
 `boto3.client("config").get_conformance_pack_compliance_details` method.
 
 Boto3 documentation:
 [ConfigService.Client.get_conformance_pack_compliance_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_conformance_pack_compliance_details)
+
+Arguments mapping described in
+[GetConformancePackComplianceDetailsRequestTypeDef](./type_defs.md#getconformancepackcompliancedetailsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1069,15 +1357,21 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetConformancePackComplianceDetailsResponseTypeDef](./type_defs.md#getconformancepackcompliancedetailsresponsetypedef).
+[GetConformancePackComplianceDetailsResponseResponseTypeDef](./type_defs.md#getconformancepackcompliancedetailsresponseresponsetypedef).
 
 ### get_conformance_pack_compliance_summary
+
+Returns compliance details for the conformance pack based on the cumulative
+compliance results of all the rules in that conformance pack.
 
 Type annotations for
 `boto3.client("config").get_conformance_pack_compliance_summary` method.
 
 Boto3 documentation:
 [ConfigService.Client.get_conformance_pack_compliance_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_conformance_pack_compliance_summary)
+
+Arguments mapping described in
+[GetConformancePackComplianceSummaryRequestTypeDef](./type_defs.md#getconformancepackcompliancesummaryrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1086,15 +1380,22 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetConformancePackComplianceSummaryResponseTypeDef](./type_defs.md#getconformancepackcompliancesummaryresponsetypedef).
+[GetConformancePackComplianceSummaryResponseResponseTypeDef](./type_defs.md#getconformancepackcompliancesummaryresponseresponsetypedef).
 
 ### get_discovered_resource_counts
+
+Returns the resource types, the number of each resource type, and the total
+number of resources that AWS Config is recording in this region for your AWS
+account.
 
 Type annotations for `boto3.client("config").get_discovered_resource_counts`
 method.
 
 Boto3 documentation:
 [ConfigService.Client.get_discovered_resource_counts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_discovered_resource_counts)
+
+Arguments mapping described in
+[GetDiscoveredResourceCountsRequestTypeDef](./type_defs.md#getdiscoveredresourcecountsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1103,15 +1404,21 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[GetDiscoveredResourceCountsResponseTypeDef](./type_defs.md#getdiscoveredresourcecountsresponsetypedef).
+[GetDiscoveredResourceCountsResponseResponseTypeDef](./type_defs.md#getdiscoveredresourcecountsresponseresponsetypedef).
 
 ### get_organization_config_rule_detailed_status
+
+Returns detailed status for each member account within an organization for a
+given organization config rule.
 
 Type annotations for
 `boto3.client("config").get_organization_config_rule_detailed_status` method.
 
 Boto3 documentation:
 [ConfigService.Client.get_organization_config_rule_detailed_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_organization_config_rule_detailed_status)
+
+Arguments mapping described in
+[GetOrganizationConfigRuleDetailedStatusRequestTypeDef](./type_defs.md#getorganizationconfigruledetailedstatusrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1122,9 +1429,12 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetOrganizationConfigRuleDetailedStatusResponseTypeDef](./type_defs.md#getorganizationconfigruledetailedstatusresponsetypedef).
+[GetOrganizationConfigRuleDetailedStatusResponseResponseTypeDef](./type_defs.md#getorganizationconfigruledetailedstatusresponseresponsetypedef).
 
 ### get_organization_conformance_pack_detailed_status
+
+Returns detailed status for each member account within an organization for a
+given organization conformance pack.
 
 Type annotations for
 `boto3.client("config").get_organization_conformance_pack_detailed_status`
@@ -1132,6 +1442,9 @@ method.
 
 Boto3 documentation:
 [ConfigService.Client.get_organization_conformance_pack_detailed_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_organization_conformance_pack_detailed_status)
+
+Arguments mapping described in
+[GetOrganizationConformancePackDetailedStatusRequestTypeDef](./type_defs.md#getorganizationconformancepackdetailedstatusrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1142,9 +1455,11 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetOrganizationConformancePackDetailedStatusResponseTypeDef](./type_defs.md#getorganizationconformancepackdetailedstatusresponsetypedef).
+[GetOrganizationConformancePackDetailedStatusResponseResponseTypeDef](./type_defs.md#getorganizationconformancepackdetailedstatusresponseresponsetypedef).
 
 ### get_resource_config_history
+
+Returns a list of configuration items for the specified resource.
 
 Type annotations for `boto3.client("config").get_resource_config_history`
 method.
@@ -1152,42 +1467,56 @@ method.
 Boto3 documentation:
 [ConfigService.Client.get_resource_config_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_resource_config_history)
 
+Arguments mapping described in
+[GetResourceConfigHistoryRequestTypeDef](./type_defs.md#getresourceconfighistoryrequesttypedef).
+
 Keyword-only arguments:
 
 - `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
   *(required)*
 - `resourceId`: `str` *(required)*
-- `laterTime`: `datetime`
-- `earlierTime`: `datetime`
+- `laterTime`: `Union`\[`datetime`, `str`\]
+- `earlierTime`: `Union`\[`datetime`, `str`\]
 - `chronologicalOrder`:
   [ChronologicalOrderType](./literals.md#chronologicalordertype)
 - `limit`: `int`
 - `nextToken`: `str`
 
 Returns
-[GetResourceConfigHistoryResponseTypeDef](./type_defs.md#getresourceconfighistoryresponsetypedef).
+[GetResourceConfigHistoryResponseResponseTypeDef](./type_defs.md#getresourceconfighistoryresponseresponsetypedef).
 
 ### get_stored_query
+
+Returns the details of a specific stored query.
 
 Type annotations for `boto3.client("config").get_stored_query` method.
 
 Boto3 documentation:
 [ConfigService.Client.get_stored_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_stored_query)
 
+Arguments mapping described in
+[GetStoredQueryRequestTypeDef](./type_defs.md#getstoredqueryrequesttypedef).
+
 Keyword-only arguments:
 
 - `QueryName`: `str` *(required)*
 
 Returns
-[GetStoredQueryResponseTypeDef](./type_defs.md#getstoredqueryresponsetypedef).
+[GetStoredQueryResponseResponseTypeDef](./type_defs.md#getstoredqueryresponseresponsetypedef).
 
 ### list_aggregate_discovered_resources
+
+Accepts a resource type and returns a list of resource identifiers that are
+aggregated for a specific resource type across accounts and regions.
 
 Type annotations for
 `boto3.client("config").list_aggregate_discovered_resources` method.
 
 Boto3 documentation:
 [ConfigService.Client.list_aggregate_discovered_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_aggregate_discovered_resources)
+
+Arguments mapping described in
+[ListAggregateDiscoveredResourcesRequestTypeDef](./type_defs.md#listaggregatediscoveredresourcesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1199,14 +1528,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAggregateDiscoveredResourcesResponseTypeDef](./type_defs.md#listaggregatediscoveredresourcesresponsetypedef).
+[ListAggregateDiscoveredResourcesResponseResponseTypeDef](./type_defs.md#listaggregatediscoveredresourcesresponseresponsetypedef).
 
 ### list_discovered_resources
+
+Accepts a resource type and returns a list of resource identifiers for the
+resources of that type.
 
 Type annotations for `boto3.client("config").list_discovered_resources` method.
 
 Boto3 documentation:
 [ConfigService.Client.list_discovered_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_discovered_resources)
+
+Arguments mapping described in
+[ListDiscoveredResourcesRequestTypeDef](./type_defs.md#listdiscoveredresourcesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1219,14 +1554,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListDiscoveredResourcesResponseTypeDef](./type_defs.md#listdiscoveredresourcesresponsetypedef).
+[ListDiscoveredResourcesResponseResponseTypeDef](./type_defs.md#listdiscoveredresourcesresponseresponsetypedef).
 
 ### list_stored_queries
+
+Lists the stored queries for a single AWS account and a single AWS Region.
 
 Type annotations for `boto3.client("config").list_stored_queries` method.
 
 Boto3 documentation:
 [ConfigService.Client.list_stored_queries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_stored_queries)
+
+Arguments mapping described in
+[ListStoredQueriesRequestTypeDef](./type_defs.md#liststoredqueriesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1234,14 +1574,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListStoredQueriesResponseTypeDef](./type_defs.md#liststoredqueriesresponsetypedef).
+[ListStoredQueriesResponseResponseTypeDef](./type_defs.md#liststoredqueriesresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+List the tags for AWS Config resource.
 
 Type annotations for `boto3.client("config").list_tags_for_resource` method.
 
 Boto3 documentation:
 [ConfigService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.list_tags_for_resource)
+
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1250,15 +1595,21 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### put_aggregation_authorization
+
+Authorizes the aggregator account and region to collect data from the source
+account and region.
 
 Type annotations for `boto3.client("config").put_aggregation_authorization`
 method.
 
 Boto3 documentation:
 [ConfigService.Client.put_aggregation_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_aggregation_authorization)
+
+Arguments mapping described in
+[PutAggregationAuthorizationRequestTypeDef](./type_defs.md#putaggregationauthorizationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1267,14 +1618,20 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[PutAggregationAuthorizationResponseTypeDef](./type_defs.md#putaggregationauthorizationresponsetypedef).
+[PutAggregationAuthorizationResponseResponseTypeDef](./type_defs.md#putaggregationauthorizationresponseresponsetypedef).
 
 ### put_config_rule
+
+Adds or updates an AWS Config rule for evaluating whether your AWS resources
+comply with your desired configurations.
 
 Type annotations for `boto3.client("config").put_config_rule` method.
 
 Boto3 documentation:
 [ConfigService.Client.put_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_config_rule)
+
+Arguments mapping described in
+[PutConfigRuleRequestTypeDef](./type_defs.md#putconfigrulerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1284,11 +1641,17 @@ Keyword-only arguments:
 
 ### put_configuration_aggregator
 
+Creates and updates the configuration aggregator with the selected source
+accounts and regions.
+
 Type annotations for `boto3.client("config").put_configuration_aggregator`
 method.
 
 Boto3 documentation:
 [ConfigService.Client.put_configuration_aggregator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_configuration_aggregator)
+
+Arguments mapping described in
+[PutConfigurationAggregatorRequestTypeDef](./type_defs.md#putconfigurationaggregatorrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1300,15 +1663,21 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[PutConfigurationAggregatorResponseTypeDef](./type_defs.md#putconfigurationaggregatorresponsetypedef).
+[PutConfigurationAggregatorResponseResponseTypeDef](./type_defs.md#putconfigurationaggregatorresponseresponsetypedef).
 
 ### put_configuration_recorder
+
+Creates a new configuration recorder to record the selected resource
+configurations.
 
 Type annotations for `boto3.client("config").put_configuration_recorder`
 method.
 
 Boto3 documentation:
 [ConfigService.Client.put_configuration_recorder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_configuration_recorder)
+
+Arguments mapping described in
+[PutConfigurationRecorderRequestTypeDef](./type_defs.md#putconfigurationrecorderrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1318,10 +1687,15 @@ Keyword-only arguments:
 
 ### put_conformance_pack
 
+Creates or updates a conformance pack.
+
 Type annotations for `boto3.client("config").put_conformance_pack` method.
 
 Boto3 documentation:
 [ConfigService.Client.put_conformance_pack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_conformance_pack)
+
+Arguments mapping described in
+[PutConformancePackRequestTypeDef](./type_defs.md#putconformancepackrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1334,14 +1708,20 @@ Keyword-only arguments:
   `List`\[[ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef)\]
 
 Returns
-[PutConformancePackResponseTypeDef](./type_defs.md#putconformancepackresponsetypedef).
+[PutConformancePackResponseResponseTypeDef](./type_defs.md#putconformancepackresponseresponsetypedef).
 
 ### put_delivery_channel
+
+Creates a delivery channel object to deliver configuration information to an
+Amazon S3 bucket and Amazon SNS topic.
 
 Type annotations for `boto3.client("config").put_delivery_channel` method.
 
 Boto3 documentation:
 [ConfigService.Client.put_delivery_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_delivery_channel)
+
+Arguments mapping described in
+[PutDeliveryChannelRequestTypeDef](./type_defs.md#putdeliverychannelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1350,10 +1730,15 @@ Keyword-only arguments:
 
 ### put_evaluations
 
+Used by an AWS Lambda function to deliver evaluation results to AWS Config.
+
 Type annotations for `boto3.client("config").put_evaluations` method.
 
 Boto3 documentation:
 [ConfigService.Client.put_evaluations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_evaluations)
+
+Arguments mapping described in
+[PutEvaluationsRequestTypeDef](./type_defs.md#putevaluationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1363,14 +1748,19 @@ Keyword-only arguments:
 - `TestMode`: `bool`
 
 Returns
-[PutEvaluationsResponseTypeDef](./type_defs.md#putevaluationsresponsetypedef).
+[PutEvaluationsResponseResponseTypeDef](./type_defs.md#putevaluationsresponseresponsetypedef).
 
 ### put_external_evaluation
+
+Add or updates the evaluations for process checks.
 
 Type annotations for `boto3.client("config").put_external_evaluation` method.
 
 Boto3 documentation:
 [ConfigService.Client.put_external_evaluation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_external_evaluation)
+
+Arguments mapping described in
+[PutExternalEvaluationRequestTypeDef](./type_defs.md#putexternalevaluationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1383,11 +1773,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_organization_config_rule
 
+Adds or updates organization config rule for your entire organization
+evaluating whether your AWS resources comply with your desired configurations.
+
 Type annotations for `boto3.client("config").put_organization_config_rule`
 method.
 
 Boto3 documentation:
 [ConfigService.Client.put_organization_config_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_organization_config_rule)
+
+Arguments mapping described in
+[PutOrganizationConfigRuleRequestTypeDef](./type_defs.md#putorganizationconfigrulerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1399,15 +1795,20 @@ Keyword-only arguments:
 - `ExcludedAccounts`: `List`\[`str`\]
 
 Returns
-[PutOrganizationConfigRuleResponseTypeDef](./type_defs.md#putorganizationconfigruleresponsetypedef).
+[PutOrganizationConfigRuleResponseResponseTypeDef](./type_defs.md#putorganizationconfigruleresponseresponsetypedef).
 
 ### put_organization_conformance_pack
+
+Deploys conformance packs across member accounts in an AWS Organization.
 
 Type annotations for `boto3.client("config").put_organization_conformance_pack`
 method.
 
 Boto3 documentation:
 [ConfigService.Client.put_organization_conformance_pack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_organization_conformance_pack)
+
+Arguments mapping described in
+[PutOrganizationConformancePackRequestTypeDef](./type_defs.md#putorganizationconformancepackrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1421,15 +1822,21 @@ Keyword-only arguments:
 - `ExcludedAccounts`: `List`\[`str`\]
 
 Returns
-[PutOrganizationConformancePackResponseTypeDef](./type_defs.md#putorganizationconformancepackresponsetypedef).
+[PutOrganizationConformancePackResponseResponseTypeDef](./type_defs.md#putorganizationconformancepackresponseresponsetypedef).
 
 ### put_remediation_configurations
+
+Adds or updates the remediation configuration with a specific AWS Config rule
+with the selected target or action.
 
 Type annotations for `boto3.client("config").put_remediation_configurations`
 method.
 
 Boto3 documentation:
 [ConfigService.Client.put_remediation_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_remediation_configurations)
+
+Arguments mapping described in
+[PutRemediationConfigurationsRequestTypeDef](./type_defs.md#putremediationconfigurationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1438,15 +1845,21 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutRemediationConfigurationsResponseTypeDef](./type_defs.md#putremediationconfigurationsresponsetypedef).
+[PutRemediationConfigurationsResponseResponseTypeDef](./type_defs.md#putremediationconfigurationsresponseresponsetypedef).
 
 ### put_remediation_exceptions
+
+A remediation exception is when a specific resource is no longer considered for
+auto-remediation.
 
 Type annotations for `boto3.client("config").put_remediation_exceptions`
 method.
 
 Boto3 documentation:
 [ConfigService.Client.put_remediation_exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_remediation_exceptions)
+
+Arguments mapping described in
+[PutRemediationExceptionsRequestTypeDef](./type_defs.md#putremediationexceptionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1455,17 +1868,22 @@ Keyword-only arguments:
   `List`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
   *(required)*
 - `Message`: `str`
-- `ExpirationTime`: `datetime`
+- `ExpirationTime`: `Union`\[`datetime`, `str`\]
 
 Returns
-[PutRemediationExceptionsResponseTypeDef](./type_defs.md#putremediationexceptionsresponsetypedef).
+[PutRemediationExceptionsResponseResponseTypeDef](./type_defs.md#putremediationexceptionsresponseresponsetypedef).
 
 ### put_resource_config
+
+Records the configuration state for the resource provided in the request.
 
 Type annotations for `boto3.client("config").put_resource_config` method.
 
 Boto3 documentation:
 [ConfigService.Client.put_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_resource_config)
+
+Arguments mapping described in
+[PutResourceConfigRequestTypeDef](./type_defs.md#putresourceconfigrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1478,25 +1896,36 @@ Keyword-only arguments:
 
 ### put_retention_configuration
 
+Creates and updates the retention configuration with details about retention
+period (number of days) that AWS Config stores your historical information.
+
 Type annotations for `boto3.client("config").put_retention_configuration`
 method.
 
 Boto3 documentation:
 [ConfigService.Client.put_retention_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_retention_configuration)
 
+Arguments mapping described in
+[PutRetentionConfigurationRequestTypeDef](./type_defs.md#putretentionconfigurationrequesttypedef).
+
 Keyword-only arguments:
 
 - `RetentionPeriodInDays`: `int` *(required)*
 
 Returns
-[PutRetentionConfigurationResponseTypeDef](./type_defs.md#putretentionconfigurationresponsetypedef).
+[PutRetentionConfigurationResponseResponseTypeDef](./type_defs.md#putretentionconfigurationresponseresponsetypedef).
 
 ### put_stored_query
+
+Saves a new query or updates an existing saved query.
 
 Type annotations for `boto3.client("config").put_stored_query` method.
 
 Boto3 documentation:
 [ConfigService.Client.put_stored_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.put_stored_query)
+
+Arguments mapping described in
+[PutStoredQueryRequestTypeDef](./type_defs.md#putstoredqueryrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1505,15 +1934,20 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[PutStoredQueryResponseTypeDef](./type_defs.md#putstoredqueryresponsetypedef).
+[PutStoredQueryResponseResponseTypeDef](./type_defs.md#putstoredqueryresponseresponsetypedef).
 
 ### select_aggregate_resource_config
+
+.
 
 Type annotations for `boto3.client("config").select_aggregate_resource_config`
 method.
 
 Boto3 documentation:
 [ConfigService.Client.select_aggregate_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.select_aggregate_resource_config)
+
+Arguments mapping described in
+[SelectAggregateResourceConfigRequestTypeDef](./type_defs.md#selectaggregateresourceconfigrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1524,14 +1958,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[SelectAggregateResourceConfigResponseTypeDef](./type_defs.md#selectaggregateresourceconfigresponsetypedef).
+[SelectAggregateResourceConfigResponseResponseTypeDef](./type_defs.md#selectaggregateresourceconfigresponseresponsetypedef).
 
 ### select_resource_config
+
+.
 
 Type annotations for `boto3.client("config").select_resource_config` method.
 
 Boto3 documentation:
 [ConfigService.Client.select_resource_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.select_resource_config)
+
+Arguments mapping described in
+[SelectResourceConfigRequestTypeDef](./type_defs.md#selectresourceconfigrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1540,15 +1979,21 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[SelectResourceConfigResponseTypeDef](./type_defs.md#selectresourceconfigresponsetypedef).
+[SelectResourceConfigResponseResponseTypeDef](./type_defs.md#selectresourceconfigresponseresponsetypedef).
 
 ### start_config_rules_evaluation
+
+Runs an on-demand evaluation for the specified AWS Config rules against the
+last known configuration state of the resources.
 
 Type annotations for `boto3.client("config").start_config_rules_evaluation`
 method.
 
 Boto3 documentation:
 [ConfigService.Client.start_config_rules_evaluation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.start_config_rules_evaluation)
+
+Arguments mapping described in
+[StartConfigRulesEvaluationRequestTypeDef](./type_defs.md#startconfigrulesevaluationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1558,11 +2003,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### start_configuration_recorder
 
+Starts recording configurations of the AWS resources you have selected to
+record in your AWS account.
+
 Type annotations for `boto3.client("config").start_configuration_recorder`
 method.
 
 Boto3 documentation:
 [ConfigService.Client.start_configuration_recorder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.start_configuration_recorder)
+
+Arguments mapping described in
+[StartConfigurationRecorderRequestTypeDef](./type_defs.md#startconfigurationrecorderrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1570,11 +2021,17 @@ Keyword-only arguments:
 
 ### start_remediation_execution
 
+Runs an on-demand remediation for the specified AWS Config rules against the
+last known remediation configuration.
+
 Type annotations for `boto3.client("config").start_remediation_execution`
 method.
 
 Boto3 documentation:
 [ConfigService.Client.start_remediation_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.start_remediation_execution)
+
+Arguments mapping described in
+[StartRemediationExecutionRequestTypeDef](./type_defs.md#startremediationexecutionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1584,9 +2041,12 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[StartRemediationExecutionResponseTypeDef](./type_defs.md#startremediationexecutionresponsetypedef).
+[StartRemediationExecutionResponseResponseTypeDef](./type_defs.md#startremediationexecutionresponseresponsetypedef).
 
 ### stop_configuration_recorder
+
+Stops recording configurations of the AWS resources you have selected to record
+in your AWS account.
 
 Type annotations for `boto3.client("config").stop_configuration_recorder`
 method.
@@ -1594,16 +2054,24 @@ method.
 Boto3 documentation:
 [ConfigService.Client.stop_configuration_recorder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.stop_configuration_recorder)
 
+Arguments mapping described in
+[StopConfigurationRecorderRequestTypeDef](./type_defs.md#stopconfigurationrecorderrequesttypedef).
+
 Keyword-only arguments:
 
 - `ConfigurationRecorderName`: `str` *(required)*
 
 ### tag_resource
 
+Associates the specified tags to a resource with the specified resourceArn.
+
 Type annotations for `boto3.client("config").tag_resource` method.
 
 Boto3 documentation:
 [ConfigService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1612,10 +2080,15 @@ Keyword-only arguments:
 
 ### untag_resource
 
+Deletes specified tags from a resource.
+
 Type annotations for `boto3.client("config").untag_resource` method.
 
 Boto3 documentation:
 [ConfigService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 

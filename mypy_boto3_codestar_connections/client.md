@@ -67,6 +67,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("codestar-connections").can_paginate`
 method.
 
@@ -81,11 +83,17 @@ Returns `bool`.
 
 ### create_connection
 
+Creates a connection that can then be given to other AWS services like
+CodePipeline so that it can access third-party code repositories.
+
 Type annotations for `boto3.client("codestar-connections").create_connection`
 method.
 
 Boto3 documentation:
 [CodeStarconnections.Client.create_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.create_connection)
+
+Arguments mapping described in
+[CreateConnectionInputTypeDef](./type_defs.md#createconnectioninputtypedef).
 
 Keyword-only arguments:
 
@@ -95,14 +103,20 @@ Keyword-only arguments:
 - `HostArn`: `str`
 
 Returns
-[CreateConnectionOutputTypeDef](./type_defs.md#createconnectionoutputtypedef).
+[CreateConnectionOutputResponseTypeDef](./type_defs.md#createconnectionoutputresponsetypedef).
 
 ### create_host
+
+Creates a resource that represents the infrastructure where a third-party
+provider is installed.
 
 Type annotations for `boto3.client("codestar-connections").create_host` method.
 
 Boto3 documentation:
 [CodeStarconnections.Client.create_host](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.create_host)
+
+Arguments mapping described in
+[CreateHostInputTypeDef](./type_defs.md#createhostinputtypedef).
 
 Keyword-only arguments:
 
@@ -114,15 +128,21 @@ Keyword-only arguments:
   [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns [CreateHostOutputTypeDef](./type_defs.md#createhostoutputtypedef).
+Returns
+[CreateHostOutputResponseTypeDef](./type_defs.md#createhostoutputresponsetypedef).
 
 ### delete_connection
+
+The connection to be deleted.
 
 Type annotations for `boto3.client("codestar-connections").delete_connection`
 method.
 
 Boto3 documentation:
 [CodeStarconnections.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.delete_connection)
+
+Arguments mapping described in
+[DeleteConnectionInputTypeDef](./type_defs.md#deleteconnectioninputtypedef).
 
 Keyword-only arguments:
 
@@ -132,10 +152,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_host
 
+The host to be deleted.
+
 Type annotations for `boto3.client("codestar-connections").delete_host` method.
 
 Boto3 documentation:
 [CodeStarconnections.Client.delete_host](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.delete_host)
+
+Arguments mapping described in
+[DeleteHostInputTypeDef](./type_defs.md#deletehostinputtypedef).
 
 Keyword-only arguments:
 
@@ -144,6 +169,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for
 `boto3.client("codestar-connections").generate_presigned_url` method.
@@ -162,39 +189,57 @@ Returns `str`.
 
 ### get_connection
 
+Returns the connection ARN and details such as status, owner, and provider
+type.
+
 Type annotations for `boto3.client("codestar-connections").get_connection`
 method.
 
 Boto3 documentation:
 [CodeStarconnections.Client.get_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.get_connection)
 
+Arguments mapping described in
+[GetConnectionInputTypeDef](./type_defs.md#getconnectioninputtypedef).
+
 Keyword-only arguments:
 
 - `ConnectionArn`: `str` *(required)*
 
 Returns
-[GetConnectionOutputTypeDef](./type_defs.md#getconnectionoutputtypedef).
+[GetConnectionOutputResponseTypeDef](./type_defs.md#getconnectionoutputresponsetypedef).
 
 ### get_host
+
+Returns the host ARN and details such as status, provider type, endpoint, and,
+if applicable, the VPC configuration.
 
 Type annotations for `boto3.client("codestar-connections").get_host` method.
 
 Boto3 documentation:
 [CodeStarconnections.Client.get_host](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.get_host)
 
+Arguments mapping described in
+[GetHostInputTypeDef](./type_defs.md#gethostinputtypedef).
+
 Keyword-only arguments:
 
 - `HostArn`: `str` *(required)*
 
-Returns [GetHostOutputTypeDef](./type_defs.md#gethostoutputtypedef).
+Returns
+[GetHostOutputResponseTypeDef](./type_defs.md#gethostoutputresponsetypedef).
 
 ### list_connections
+
+Lists the connections associated with your account.
 
 Type annotations for `boto3.client("codestar-connections").list_connections`
 method.
 
 Boto3 documentation:
 [CodeStarconnections.Client.list_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_connections)
+
+Arguments mapping described in
+[ListConnectionsInputTypeDef](./type_defs.md#listconnectionsinputtypedef).
 
 Keyword-only arguments:
 
@@ -204,23 +249,32 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListConnectionsOutputTypeDef](./type_defs.md#listconnectionsoutputtypedef).
+[ListConnectionsOutputResponseTypeDef](./type_defs.md#listconnectionsoutputresponsetypedef).
 
 ### list_hosts
+
+Lists the hosts associated with your account.
 
 Type annotations for `boto3.client("codestar-connections").list_hosts` method.
 
 Boto3 documentation:
 [CodeStarconnections.Client.list_hosts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_hosts)
 
+Arguments mapping described in
+[ListHostsInputTypeDef](./type_defs.md#listhostsinputtypedef).
+
 Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns [ListHostsOutputTypeDef](./type_defs.md#listhostsoutputtypedef).
+Returns
+[ListHostsOutputResponseTypeDef](./type_defs.md#listhostsoutputresponsetypedef).
 
 ### list_tags_for_resource
+
+Gets the set of key-value pairs (metadata) that are used to manage the
+resource.
 
 Type annotations for
 `boto3.client("codestar-connections").list_tags_for_resource` method.
@@ -228,20 +282,28 @@ Type annotations for
 Boto3 documentation:
 [CodeStarconnections.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceInputTypeDef](./type_defs.md#listtagsforresourceinputtypedef).
+
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+[ListTagsForResourceOutputResponseTypeDef](./type_defs.md#listtagsforresourceoutputresponsetypedef).
 
 ### tag_resource
+
+Adds to or modifies the tags of the given resource.
 
 Type annotations for `boto3.client("codestar-connections").tag_resource`
 method.
 
 Boto3 documentation:
 [CodeStarconnections.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceInputTypeDef](./type_defs.md#tagresourceinputtypedef).
 
 Keyword-only arguments:
 
@@ -252,11 +314,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Removes tags from an AWS resource.
+
 Type annotations for `boto3.client("codestar-connections").untag_resource`
 method.
 
 Boto3 documentation:
 [CodeStarconnections.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceInputTypeDef](./type_defs.md#untagresourceinputtypedef).
 
 Keyword-only arguments:
 
@@ -267,10 +334,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_host
 
+Updates a specified host with the provided configurations.
+
 Type annotations for `boto3.client("codestar-connections").update_host` method.
 
 Boto3 documentation:
 [CodeStarconnections.Client.update_host](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.update_host)
+
+Arguments mapping described in
+[UpdateHostInputTypeDef](./type_defs.md#updatehostinputtypedef).
 
 Keyword-only arguments:
 

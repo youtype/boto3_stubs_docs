@@ -38,4 +38,4 @@ Arguments for `ListBackendJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListBackendJobsPaginator.paginate` returns
-`Iterator`\[[ListBackendJobsResponseTypeDef](./type_defs.md#listbackendjobsresponsetypedef)\].
+`Iterator`\[[ListBackendJobsResponseResponseTypeDef](./type_defs.md#listbackendjobsresponseresponsetypedef)\].

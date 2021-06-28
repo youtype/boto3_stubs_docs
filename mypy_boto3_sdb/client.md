@@ -78,10 +78,16 @@ Exceptions:
 
 ### batch_delete_attributes
 
+Performs multiple DeleteAttributes operations in a single call, which reduces
+round trips and latencies.
+
 Type annotations for `boto3.client("sdb").batch_delete_attributes` method.
 
 Boto3 documentation:
 [SimpleDB.Client.batch_delete_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.batch_delete_attributes)
+
+Arguments mapping described in
+[BatchDeleteAttributesRequestTypeDef](./type_defs.md#batchdeleteattributesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -92,10 +98,16 @@ Keyword-only arguments:
 
 ### batch_put_attributes
 
+The `BatchPutAttributes` operation creates or replaces attributes within one or
+more items.
+
 Type annotations for `boto3.client("sdb").batch_put_attributes` method.
 
 Boto3 documentation:
 [SimpleDB.Client.batch_put_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.batch_put_attributes)
+
+Arguments mapping described in
+[BatchPutAttributesRequestTypeDef](./type_defs.md#batchputattributesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -105,6 +117,8 @@ Keyword-only arguments:
   *(required)*
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("sdb").can_paginate` method.
 
@@ -119,10 +133,15 @@ Returns `bool`.
 
 ### create_domain
 
+The `CreateDomain` operation creates a new domain.
+
 Type annotations for `boto3.client("sdb").create_domain` method.
 
 Boto3 documentation:
 [SimpleDB.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.create_domain)
+
+Arguments mapping described in
+[CreateDomainRequestTypeDef](./type_defs.md#createdomainrequesttypedef).
 
 Keyword-only arguments:
 
@@ -130,10 +149,15 @@ Keyword-only arguments:
 
 ### delete_attributes
 
+Deletes one or more attributes associated with an item.
+
 Type annotations for `boto3.client("sdb").delete_attributes` method.
 
 Boto3 documentation:
 [SimpleDB.Client.delete_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.delete_attributes)
+
+Arguments mapping described in
+[DeleteAttributesRequestTypeDef](./type_defs.md#deleteattributesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -144,10 +168,15 @@ Keyword-only arguments:
 
 ### delete_domain
 
+The `DeleteDomain` operation deletes a domain.
+
 Type annotations for `boto3.client("sdb").delete_domain` method.
 
 Boto3 documentation:
 [SimpleDB.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.delete_domain)
+
+Arguments mapping described in
+[DeleteDomainRequestTypeDef](./type_defs.md#deletedomainrequesttypedef).
 
 Keyword-only arguments:
 
@@ -155,19 +184,28 @@ Keyword-only arguments:
 
 ### domain_metadata
 
+Returns information about the domain, including when the domain was created,
+the number of items and attributes in the domain, and the size of the attribute
+names and values.
+
 Type annotations for `boto3.client("sdb").domain_metadata` method.
 
 Boto3 documentation:
 [SimpleDB.Client.domain_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.domain_metadata)
+
+Arguments mapping described in
+[DomainMetadataRequestTypeDef](./type_defs.md#domainmetadatarequesttypedef).
 
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
 Returns
-[DomainMetadataResultTypeDef](./type_defs.md#domainmetadataresulttypedef).
+[DomainMetadataResultResponseTypeDef](./type_defs.md#domainmetadataresultresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("sdb").generate_presigned_url` method.
 
@@ -185,10 +223,15 @@ Returns `str`.
 
 ### get_attributes
 
+Returns all of the attributes associated with the specified item.
+
 Type annotations for `boto3.client("sdb").get_attributes` method.
 
 Boto3 documentation:
 [SimpleDB.Client.get_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.get_attributes)
+
+Arguments mapping described in
+[GetAttributesRequestTypeDef](./type_defs.md#getattributesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -198,28 +241,40 @@ Keyword-only arguments:
 - `ConsistentRead`: `bool`
 
 Returns
-[GetAttributesResultTypeDef](./type_defs.md#getattributesresulttypedef).
+[GetAttributesResultResponseTypeDef](./type_defs.md#getattributesresultresponsetypedef).
 
 ### list_domains
+
+The `ListDomains` operation lists all domains associated with the Access Key
+ID.
 
 Type annotations for `boto3.client("sdb").list_domains` method.
 
 Boto3 documentation:
 [SimpleDB.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.list_domains)
 
+Arguments mapping described in
+[ListDomainsRequestTypeDef](./type_defs.md#listdomainsrequesttypedef).
+
 Keyword-only arguments:
 
 - `MaxNumberOfDomains`: `int`
 - `NextToken`: `str`
 
-Returns [ListDomainsResultTypeDef](./type_defs.md#listdomainsresulttypedef).
+Returns
+[ListDomainsResultResponseTypeDef](./type_defs.md#listdomainsresultresponsetypedef).
 
 ### put_attributes
+
+The PutAttributes operation creates or replaces attributes in an item.
 
 Type annotations for `boto3.client("sdb").put_attributes` method.
 
 Boto3 documentation:
 [SimpleDB.Client.put_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.put_attributes)
+
+Arguments mapping described in
+[PutAttributesRequestTypeDef](./type_defs.md#putattributesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -232,10 +287,16 @@ Keyword-only arguments:
 
 ### select
 
+The `Select` operation returns a set of attributes for `ItemNames` that match
+the select expression.
+
 Type annotations for `boto3.client("sdb").select` method.
 
 Boto3 documentation:
 [SimpleDB.Client.select](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.select)
+
+Arguments mapping described in
+[SelectRequestTypeDef](./type_defs.md#selectrequesttypedef).
 
 Keyword-only arguments:
 
@@ -243,7 +304,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `ConsistentRead`: `bool`
 
-Returns [SelectResultTypeDef](./type_defs.md#selectresulttypedef).
+Returns
+[SelectResultResponseTypeDef](./type_defs.md#selectresultresponsetypedef).
 
 ### get_paginator
 

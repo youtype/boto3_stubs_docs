@@ -25,7 +25,7 @@ def get_image_scan_complete_waiter() -> ImageScanCompleteWaiter:
 ```
 
 Boto3 documentation:
-[ECR.Waiter.image_scan_complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Waiter.image_scan_complete)
+[ECR.Waiter.image_scan_complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Waiter.ImageScanComplete)
 
 Arguments for `ImageScanCompleteWaiter.wait` method:
 
@@ -52,7 +52,7 @@ def get_lifecycle_policy_preview_complete_waiter() -> LifecyclePolicyPreviewComp
 ```
 
 Boto3 documentation:
-[ECR.Waiter.lifecycle_policy_preview_complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Waiter.lifecycle_policy_preview_complete)
+[ECR.Waiter.lifecycle_policy_preview_complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Waiter.LifecyclePolicyPreviewComplete)
 
 Arguments for `LifecyclePolicyPreviewCompleteWaiter.wait` method:
 

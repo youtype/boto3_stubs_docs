@@ -8,6 +8,10 @@ type annotations stubs module
 [mypy_boto3_shield](https://pypi.org/project/mypy-boto3-shield/).
 
 - [Typed dictionaries for boto3 Shield module](#typed-dictionaries-for-boto3-shield-module)
+  - [AssociateDRTLogBucketRequestTypeDef](#associatedrtlogbucketrequesttypedef)
+  - [AssociateDRTRoleRequestTypeDef](#associatedrtrolerequesttypedef)
+  - [AssociateHealthCheckRequestTypeDef](#associatehealthcheckrequesttypedef)
+  - [AssociateProactiveEngagementDetailsRequestTypeDef](#associateproactiveengagementdetailsrequesttypedef)
   - [AttackDetailTypeDef](#attackdetailtypedef)
   - [AttackPropertyTypeDef](#attackpropertytypedef)
   - [AttackStatisticsDataItemTypeDef](#attackstatisticsdataitemtypedef)
@@ -16,22 +20,36 @@ type annotations stubs module
   - [AttackVolumeStatisticsTypeDef](#attackvolumestatisticstypedef)
   - [AttackVolumeTypeDef](#attackvolumetypedef)
   - [ContributorTypeDef](#contributortypedef)
-  - [CreateProtectionResponseTypeDef](#createprotectionresponsetypedef)
-  - [DescribeAttackResponseTypeDef](#describeattackresponsetypedef)
-  - [DescribeAttackStatisticsResponseTypeDef](#describeattackstatisticsresponsetypedef)
-  - [DescribeDRTAccessResponseTypeDef](#describedrtaccessresponsetypedef)
-  - [DescribeEmergencyContactSettingsResponseTypeDef](#describeemergencycontactsettingsresponsetypedef)
-  - [DescribeProtectionGroupResponseTypeDef](#describeprotectiongroupresponsetypedef)
-  - [DescribeProtectionResponseTypeDef](#describeprotectionresponsetypedef)
-  - [DescribeSubscriptionResponseTypeDef](#describesubscriptionresponsetypedef)
+  - [CreateProtectionGroupRequestTypeDef](#createprotectiongrouprequesttypedef)
+  - [CreateProtectionRequestTypeDef](#createprotectionrequesttypedef)
+  - [CreateProtectionResponseResponseTypeDef](#createprotectionresponseresponsetypedef)
+  - [DeleteProtectionGroupRequestTypeDef](#deleteprotectiongrouprequesttypedef)
+  - [DeleteProtectionRequestTypeDef](#deleteprotectionrequesttypedef)
+  - [DescribeAttackRequestTypeDef](#describeattackrequesttypedef)
+  - [DescribeAttackResponseResponseTypeDef](#describeattackresponseresponsetypedef)
+  - [DescribeAttackStatisticsResponseResponseTypeDef](#describeattackstatisticsresponseresponsetypedef)
+  - [DescribeDRTAccessResponseResponseTypeDef](#describedrtaccessresponseresponsetypedef)
+  - [DescribeEmergencyContactSettingsResponseResponseTypeDef](#describeemergencycontactsettingsresponseresponsetypedef)
+  - [DescribeProtectionGroupRequestTypeDef](#describeprotectiongrouprequesttypedef)
+  - [DescribeProtectionGroupResponseResponseTypeDef](#describeprotectiongroupresponseresponsetypedef)
+  - [DescribeProtectionRequestTypeDef](#describeprotectionrequesttypedef)
+  - [DescribeProtectionResponseResponseTypeDef](#describeprotectionresponseresponsetypedef)
+  - [DescribeSubscriptionResponseResponseTypeDef](#describesubscriptionresponseresponsetypedef)
+  - [DisassociateDRTLogBucketRequestTypeDef](#disassociatedrtlogbucketrequesttypedef)
+  - [DisassociateHealthCheckRequestTypeDef](#disassociatehealthcheckrequesttypedef)
   - [EmergencyContactTypeDef](#emergencycontacttypedef)
-  - [GetSubscriptionStateResponseTypeDef](#getsubscriptionstateresponsetypedef)
+  - [GetSubscriptionStateResponseResponseTypeDef](#getsubscriptionstateresponseresponsetypedef)
   - [LimitTypeDef](#limittypedef)
-  - [ListAttacksResponseTypeDef](#listattacksresponsetypedef)
-  - [ListProtectionGroupsResponseTypeDef](#listprotectiongroupsresponsetypedef)
-  - [ListProtectionsResponseTypeDef](#listprotectionsresponsetypedef)
-  - [ListResourcesInProtectionGroupResponseTypeDef](#listresourcesinprotectiongroupresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListAttacksRequestTypeDef](#listattacksrequesttypedef)
+  - [ListAttacksResponseResponseTypeDef](#listattacksresponseresponsetypedef)
+  - [ListProtectionGroupsRequestTypeDef](#listprotectiongroupsrequesttypedef)
+  - [ListProtectionGroupsResponseResponseTypeDef](#listprotectiongroupsresponseresponsetypedef)
+  - [ListProtectionsRequestTypeDef](#listprotectionsrequesttypedef)
+  - [ListProtectionsResponseResponseTypeDef](#listprotectionsresponseresponsetypedef)
+  - [ListResourcesInProtectionGroupRequestTypeDef](#listresourcesinprotectiongrouprequesttypedef)
+  - [ListResourcesInProtectionGroupResponseResponseTypeDef](#listresourcesinprotectiongroupresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [MitigationTypeDef](#mitigationtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ProtectionGroupArbitraryPatternLimitsTypeDef](#protectiongrouparbitrarypatternlimitstypedef)
@@ -40,13 +58,61 @@ type annotations stubs module
   - [ProtectionGroupTypeDef](#protectiongrouptypedef)
   - [ProtectionLimitsTypeDef](#protectionlimitstypedef)
   - [ProtectionTypeDef](#protectiontypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SubResourceSummaryTypeDef](#subresourcesummarytypedef)
   - [SubscriptionLimitsTypeDef](#subscriptionlimitstypedef)
   - [SubscriptionTypeDef](#subscriptiontypedef)
   - [SummarizedAttackVectorTypeDef](#summarizedattackvectortypedef)
   - [SummarizedCounterTypeDef](#summarizedcountertypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TimeRangeTypeDef](#timerangetypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateEmergencyContactSettingsRequestTypeDef](#updateemergencycontactsettingsrequesttypedef)
+  - [UpdateProtectionGroupRequestTypeDef](#updateprotectiongrouprequesttypedef)
+  - [UpdateSubscriptionRequestTypeDef](#updatesubscriptionrequesttypedef)
+
+## AssociateDRTLogBucketRequestTypeDef
+
+```python
+from mypy_boto3_shield.type_defs import AssociateDRTLogBucketRequestTypeDef
+```
+
+Required fields:
+
+- `LogBucket`: `str`
+
+## AssociateDRTRoleRequestTypeDef
+
+```python
+from mypy_boto3_shield.type_defs import AssociateDRTRoleRequestTypeDef
+```
+
+Required fields:
+
+- `RoleArn`: `str`
+
+## AssociateHealthCheckRequestTypeDef
+
+```python
+from mypy_boto3_shield.type_defs import AssociateHealthCheckRequestTypeDef
+```
+
+Required fields:
+
+- `ProtectionId`: `str`
+- `HealthCheckArn`: `str`
+
+## AssociateProactiveEngagementDetailsRequestTypeDef
+
+```python
+from mypy_boto3_shield.type_defs import AssociateProactiveEngagementDetailsRequestTypeDef
+```
+
+Required fields:
+
+- `EmergencyContactList`:
+  `List`\[[EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef)\]
 
 ## AttackDetailTypeDef
 
@@ -160,30 +226,100 @@ Optional fields:
 - `Name`: `str`
 - `Value`: `int`
 
-## CreateProtectionResponseTypeDef
+## CreateProtectionGroupRequestTypeDef
 
 ```python
-from mypy_boto3_shield.type_defs import CreateProtectionResponseTypeDef
+from mypy_boto3_shield.type_defs import CreateProtectionGroupRequestTypeDef
 ```
 
+Required fields:
+
+- `ProtectionGroupId`: `str`
+- `Aggregation`:
+  [ProtectionGroupAggregationType](./literals.md#protectiongroupaggregationtype)
+- `Pattern`:
+  [ProtectionGroupPatternType](./literals.md#protectiongrouppatterntype)
+
 Optional fields:
+
+- `ResourceType`:
+  [ProtectedResourceTypeType](./literals.md#protectedresourcetypetype)
+- `Members`: `List`\[`str`\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateProtectionRequestTypeDef
+
+```python
+from mypy_boto3_shield.type_defs import CreateProtectionRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `ResourceArn`: `str`
+
+Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateProtectionResponseResponseTypeDef
+
+```python
+from mypy_boto3_shield.type_defs import CreateProtectionResponseResponseTypeDef
+```
+
+Required fields:
+
+- `ProtectionId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteProtectionGroupRequestTypeDef
+
+```python
+from mypy_boto3_shield.type_defs import DeleteProtectionGroupRequestTypeDef
+```
+
+Required fields:
+
+- `ProtectionGroupId`: `str`
+
+## DeleteProtectionRequestTypeDef
+
+```python
+from mypy_boto3_shield.type_defs import DeleteProtectionRequestTypeDef
+```
+
+Required fields:
 
 - `ProtectionId`: `str`
 
-## DescribeAttackResponseTypeDef
+## DescribeAttackRequestTypeDef
 
 ```python
-from mypy_boto3_shield.type_defs import DescribeAttackResponseTypeDef
+from mypy_boto3_shield.type_defs import DescribeAttackRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
-- `Attack`: [AttackDetailTypeDef](./type_defs.md#attackdetailtypedef)
+- `AttackId`: `str`
 
-## DescribeAttackStatisticsResponseTypeDef
+## DescribeAttackResponseResponseTypeDef
 
 ```python
-from mypy_boto3_shield.type_defs import DescribeAttackStatisticsResponseTypeDef
+from mypy_boto3_shield.type_defs import DescribeAttackResponseResponseTypeDef
+```
+
+Required fields:
+
+- `Attack`: [AttackDetailTypeDef](./type_defs.md#attackdetailtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeAttackStatisticsResponseResponseTypeDef
+
+```python
+from mypy_boto3_shield.type_defs import DescribeAttackStatisticsResponseResponseTypeDef
 ```
 
 Required fields:
@@ -191,59 +327,113 @@ Required fields:
 - `TimeRange`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
 - `DataItems`:
   `List`\[[AttackStatisticsDataItemTypeDef](./type_defs.md#attackstatisticsdataitemtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDRTAccessResponseTypeDef
+## DescribeDRTAccessResponseResponseTypeDef
 
 ```python
-from mypy_boto3_shield.type_defs import DescribeDRTAccessResponseTypeDef
+from mypy_boto3_shield.type_defs import DescribeDRTAccessResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `RoleArn`: `str`
 - `LogBucketList`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEmergencyContactSettingsResponseTypeDef
+## DescribeEmergencyContactSettingsResponseResponseTypeDef
 
 ```python
-from mypy_boto3_shield.type_defs import DescribeEmergencyContactSettingsResponseTypeDef
+from mypy_boto3_shield.type_defs import DescribeEmergencyContactSettingsResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `EmergencyContactList`:
   `List`\[[EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeProtectionGroupResponseTypeDef
+## DescribeProtectionGroupRequestTypeDef
 
 ```python
-from mypy_boto3_shield.type_defs import DescribeProtectionGroupResponseTypeDef
+from mypy_boto3_shield.type_defs import DescribeProtectionGroupRequestTypeDef
+```
+
+Required fields:
+
+- `ProtectionGroupId`: `str`
+
+## DescribeProtectionGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_shield.type_defs import DescribeProtectionGroupResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `ProtectionGroup`:
   [ProtectionGroupTypeDef](./type_defs.md#protectiongrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeProtectionResponseTypeDef
+## DescribeProtectionRequestTypeDef
 
 ```python
-from mypy_boto3_shield.type_defs import DescribeProtectionResponseTypeDef
+from mypy_boto3_shield.type_defs import DescribeProtectionRequestTypeDef
 ```
 
 Optional fields:
+
+- `ProtectionId`: `str`
+- `ResourceArn`: `str`
+
+## DescribeProtectionResponseResponseTypeDef
+
+```python
+from mypy_boto3_shield.type_defs import DescribeProtectionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Protection`: [ProtectionTypeDef](./type_defs.md#protectiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSubscriptionResponseTypeDef
+## DescribeSubscriptionResponseResponseTypeDef
 
 ```python
-from mypy_boto3_shield.type_defs import DescribeSubscriptionResponseTypeDef
+from mypy_boto3_shield.type_defs import DescribeSubscriptionResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Subscription`: [SubscriptionTypeDef](./type_defs.md#subscriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DisassociateDRTLogBucketRequestTypeDef
+
+```python
+from mypy_boto3_shield.type_defs import DisassociateDRTLogBucketRequestTypeDef
+```
+
+Required fields:
+
+- `LogBucket`: `str`
+
+## DisassociateHealthCheckRequestTypeDef
+
+```python
+from mypy_boto3_shield.type_defs import DisassociateHealthCheckRequestTypeDef
+```
+
+Required fields:
+
+- `ProtectionId`: `str`
+- `HealthCheckArn`: `str`
 
 ## EmergencyContactTypeDef
 
@@ -260,16 +450,18 @@ Optional fields:
 - `PhoneNumber`: `str`
 - `ContactNotes`: `str`
 
-## GetSubscriptionStateResponseTypeDef
+## GetSubscriptionStateResponseResponseTypeDef
 
 ```python
-from mypy_boto3_shield.type_defs import GetSubscriptionStateResponseTypeDef
+from mypy_boto3_shield.type_defs import GetSubscriptionStateResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `SubscriptionState`:
   [SubscriptionStateType](./literals.md#subscriptionstatetype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LimitTypeDef
 
@@ -282,68 +474,133 @@ Optional fields:
 - `Type`: `str`
 - `Max`: `int`
 
-## ListAttacksResponseTypeDef
+## ListAttacksRequestTypeDef
 
 ```python
-from mypy_boto3_shield.type_defs import ListAttacksResponseTypeDef
+from mypy_boto3_shield.type_defs import ListAttacksRequestTypeDef
 ```
 
 Optional fields:
 
+- `ResourceArns`: `List`\[`str`\]
+- `StartTime`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
+- `EndTime`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListAttacksResponseResponseTypeDef
+
+```python
+from mypy_boto3_shield.type_defs import ListAttacksResponseResponseTypeDef
+```
+
+Required fields:
+
 - `AttackSummaries`:
   `List`\[[AttackSummaryTypeDef](./type_defs.md#attacksummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListProtectionGroupsResponseTypeDef
+## ListProtectionGroupsRequestTypeDef
 
 ```python
-from mypy_boto3_shield.type_defs import ListProtectionGroupsResponseTypeDef
+from mypy_boto3_shield.type_defs import ListProtectionGroupsRequestTypeDef
+```
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListProtectionGroupsResponseResponseTypeDef
+
+```python
+from mypy_boto3_shield.type_defs import ListProtectionGroupsResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `ProtectionGroups`:
   `List`\[[ProtectionGroupTypeDef](./type_defs.md#protectiongrouptypedef)\]
-
-Optional fields:
-
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListProtectionsResponseTypeDef
+## ListProtectionsRequestTypeDef
 
 ```python
-from mypy_boto3_shield.type_defs import ListProtectionsResponseTypeDef
+from mypy_boto3_shield.type_defs import ListProtectionsRequestTypeDef
 ```
 
 Optional fields:
 
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListProtectionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_shield.type_defs import ListProtectionsResponseResponseTypeDef
+```
+
+Required fields:
+
 - `Protections`:
   `List`\[[ProtectionTypeDef](./type_defs.md#protectiontypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListResourcesInProtectionGroupResponseTypeDef
+## ListResourcesInProtectionGroupRequestTypeDef
 
 ```python
-from mypy_boto3_shield.type_defs import ListResourcesInProtectionGroupResponseTypeDef
+from mypy_boto3_shield.type_defs import ListResourcesInProtectionGroupRequestTypeDef
+```
+
+Required fields:
+
+- `ProtectionGroupId`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListResourcesInProtectionGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_shield.type_defs import ListResourcesInProtectionGroupResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `ResourceArns`: `List`\[`str`\]
-
-Optional fields:
-
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_shield.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_shield.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceARN`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_shield.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## MitigationTypeDef
 
@@ -446,6 +703,20 @@ Optional fields:
 - `HealthCheckIds`: `List`\[`str`\]
 - `ProtectionArn`: `str`
 
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_shield.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
 ## SubResourceSummaryTypeDef
 
 ```python
@@ -526,6 +797,17 @@ Optional fields:
 - `N`: `int`
 - `Unit`: `str`
 
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_shield.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
 ## TagTypeDef
 
 ```python
@@ -547,3 +829,55 @@ Optional fields:
 
 - `FromInclusive`: `datetime`
 - `ToExclusive`: `datetime`
+
+## UntagResourceRequestTypeDef
+
+```python
+from mypy_boto3_shield.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## UpdateEmergencyContactSettingsRequestTypeDef
+
+```python
+from mypy_boto3_shield.type_defs import UpdateEmergencyContactSettingsRequestTypeDef
+```
+
+Optional fields:
+
+- `EmergencyContactList`:
+  `List`\[[EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef)\]
+
+## UpdateProtectionGroupRequestTypeDef
+
+```python
+from mypy_boto3_shield.type_defs import UpdateProtectionGroupRequestTypeDef
+```
+
+Required fields:
+
+- `ProtectionGroupId`: `str`
+- `Aggregation`:
+  [ProtectionGroupAggregationType](./literals.md#protectiongroupaggregationtype)
+- `Pattern`:
+  [ProtectionGroupPatternType](./literals.md#protectiongrouppatterntype)
+
+Optional fields:
+
+- `ResourceType`:
+  [ProtectedResourceTypeType](./literals.md#protectedresourcetypetype)
+- `Members`: `List`\[`str`\]
+
+## UpdateSubscriptionRequestTypeDef
+
+```python
+from mypy_boto3_shield.type_defs import UpdateSubscriptionRequestTypeDef
+```
+
+Optional fields:
+
+- `AutoRenew`: [AutoRenewType](./literals.md#autorenewtype)

@@ -56,6 +56,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("personalize-events").can_paginate` method.
 
 Boto3 documentation:
@@ -68,6 +70,8 @@ Arguments:
 Returns `bool`.
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for
 `boto3.client("personalize-events").generate_presigned_url` method.
@@ -86,10 +90,15 @@ Returns `str`.
 
 ### put_events
 
+Records user interaction event data.
+
 Type annotations for `boto3.client("personalize-events").put_events` method.
 
 Boto3 documentation:
 [PersonalizeEvents.Client.put_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents.Client.put_events)
+
+Arguments mapping described in
+[PutEventsRequestTypeDef](./type_defs.md#puteventsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -101,10 +110,15 @@ Keyword-only arguments:
 
 ### put_items
 
+Adds one or more items to an Items dataset.
+
 Type annotations for `boto3.client("personalize-events").put_items` method.
 
 Boto3 documentation:
 [PersonalizeEvents.Client.put_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents.Client.put_items)
+
+Arguments mapping described in
+[PutItemsRequestTypeDef](./type_defs.md#putitemsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -113,10 +127,15 @@ Keyword-only arguments:
 
 ### put_users
 
+Adds one or more users to a Users dataset.
+
 Type annotations for `boto3.client("personalize-events").put_users` method.
 
 Boto3 documentation:
 [PersonalizeEvents.Client.put_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents.Client.put_users)
+
+Arguments mapping described in
+[PutUsersRequestTypeDef](./type_defs.md#putusersrequesttypedef).
 
 Keyword-only arguments:
 

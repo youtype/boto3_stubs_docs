@@ -10,17 +10,27 @@ type annotations stubs module
 - [Typed dictionaries for boto3 Health module](#typed-dictionaries-for-boto3-health-module)
   - [AffectedEntityTypeDef](#affectedentitytypedef)
   - [DateTimeRangeTypeDef](#datetimerangetypedef)
-  - [DescribeAffectedAccountsForOrganizationResponseTypeDef](#describeaffectedaccountsfororganizationresponsetypedef)
-  - [DescribeAffectedEntitiesForOrganizationResponseTypeDef](#describeaffectedentitiesfororganizationresponsetypedef)
-  - [DescribeAffectedEntitiesResponseTypeDef](#describeaffectedentitiesresponsetypedef)
-  - [DescribeEntityAggregatesResponseTypeDef](#describeentityaggregatesresponsetypedef)
-  - [DescribeEventAggregatesResponseTypeDef](#describeeventaggregatesresponsetypedef)
-  - [DescribeEventDetailsForOrganizationResponseTypeDef](#describeeventdetailsfororganizationresponsetypedef)
-  - [DescribeEventDetailsResponseTypeDef](#describeeventdetailsresponsetypedef)
-  - [DescribeEventTypesResponseTypeDef](#describeeventtypesresponsetypedef)
-  - [DescribeEventsForOrganizationResponseTypeDef](#describeeventsfororganizationresponsetypedef)
-  - [DescribeEventsResponseTypeDef](#describeeventsresponsetypedef)
-  - [DescribeHealthServiceStatusForOrganizationResponseTypeDef](#describehealthservicestatusfororganizationresponsetypedef)
+  - [DescribeAffectedAccountsForOrganizationRequestTypeDef](#describeaffectedaccountsfororganizationrequesttypedef)
+  - [DescribeAffectedAccountsForOrganizationResponseResponseTypeDef](#describeaffectedaccountsfororganizationresponseresponsetypedef)
+  - [DescribeAffectedEntitiesForOrganizationRequestTypeDef](#describeaffectedentitiesfororganizationrequesttypedef)
+  - [DescribeAffectedEntitiesForOrganizationResponseResponseTypeDef](#describeaffectedentitiesfororganizationresponseresponsetypedef)
+  - [DescribeAffectedEntitiesRequestTypeDef](#describeaffectedentitiesrequesttypedef)
+  - [DescribeAffectedEntitiesResponseResponseTypeDef](#describeaffectedentitiesresponseresponsetypedef)
+  - [DescribeEntityAggregatesRequestTypeDef](#describeentityaggregatesrequesttypedef)
+  - [DescribeEntityAggregatesResponseResponseTypeDef](#describeentityaggregatesresponseresponsetypedef)
+  - [DescribeEventAggregatesRequestTypeDef](#describeeventaggregatesrequesttypedef)
+  - [DescribeEventAggregatesResponseResponseTypeDef](#describeeventaggregatesresponseresponsetypedef)
+  - [DescribeEventDetailsForOrganizationRequestTypeDef](#describeeventdetailsfororganizationrequesttypedef)
+  - [DescribeEventDetailsForOrganizationResponseResponseTypeDef](#describeeventdetailsfororganizationresponseresponsetypedef)
+  - [DescribeEventDetailsRequestTypeDef](#describeeventdetailsrequesttypedef)
+  - [DescribeEventDetailsResponseResponseTypeDef](#describeeventdetailsresponseresponsetypedef)
+  - [DescribeEventTypesRequestTypeDef](#describeeventtypesrequesttypedef)
+  - [DescribeEventTypesResponseResponseTypeDef](#describeeventtypesresponseresponsetypedef)
+  - [DescribeEventsForOrganizationRequestTypeDef](#describeeventsfororganizationrequesttypedef)
+  - [DescribeEventsForOrganizationResponseResponseTypeDef](#describeeventsfororganizationresponseresponsetypedef)
+  - [DescribeEventsRequestTypeDef](#describeeventsrequesttypedef)
+  - [DescribeEventsResponseResponseTypeDef](#describeeventsresponseresponsetypedef)
+  - [DescribeHealthServiceStatusForOrganizationResponseResponseTypeDef](#describehealthservicestatusfororganizationresponseresponsetypedef)
   - [EntityAggregateTypeDef](#entityaggregatetypedef)
   - [EntityFilterTypeDef](#entityfiltertypedef)
   - [EventAccountFilterTypeDef](#eventaccountfiltertypedef)
@@ -38,6 +48,7 @@ type annotations stubs module
   - [OrganizationEventFilterTypeDef](#organizationeventfiltertypedef)
   - [OrganizationEventTypeDef](#organizationeventtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
 
 ## AffectedEntityTypeDef
 
@@ -64,139 +75,305 @@ from mypy_boto3_health.type_defs import DateTimeRangeTypeDef
 
 Optional fields:
 
-- `from`: `datetime`
-- `to`: `datetime`
+- `from`: `Union`\[`datetime`, `str`\]
+- `to`: `Union`\[`datetime`, `str`\]
 
-## DescribeAffectedAccountsForOrganizationResponseTypeDef
+## DescribeAffectedAccountsForOrganizationRequestTypeDef
 
 ```python
-from mypy_boto3_health.type_defs import DescribeAffectedAccountsForOrganizationResponseTypeDef
+from mypy_boto3_health.type_defs import DescribeAffectedAccountsForOrganizationRequestTypeDef
 ```
 
+Required fields:
+
+- `eventArn`: `str`
+
 Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## DescribeAffectedAccountsForOrganizationResponseResponseTypeDef
+
+```python
+from mypy_boto3_health.type_defs import DescribeAffectedAccountsForOrganizationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `affectedAccounts`: `List`\[`str`\]
 - `eventScopeCode`: [eventScopeCodeType](./literals.md#eventscopecodetype)
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAffectedEntitiesForOrganizationResponseTypeDef
+## DescribeAffectedEntitiesForOrganizationRequestTypeDef
 
 ```python
-from mypy_boto3_health.type_defs import DescribeAffectedEntitiesForOrganizationResponseTypeDef
+from mypy_boto3_health.type_defs import DescribeAffectedEntitiesForOrganizationRequestTypeDef
 ```
 
+Required fields:
+
+- `organizationEntityFilters`:
+  `List`\[[EventAccountFilterTypeDef](./type_defs.md#eventaccountfiltertypedef)\]
+
 Optional fields:
+
+- `locale`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## DescribeAffectedEntitiesForOrganizationResponseResponseTypeDef
+
+```python
+from mypy_boto3_health.type_defs import DescribeAffectedEntitiesForOrganizationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `entities`:
   `List`\[[AffectedEntityTypeDef](./type_defs.md#affectedentitytypedef)\]
 - `failedSet`:
   `List`\[[OrganizationAffectedEntitiesErrorItemTypeDef](./type_defs.md#organizationaffectedentitieserroritemtypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAffectedEntitiesResponseTypeDef
+## DescribeAffectedEntitiesRequestTypeDef
 
 ```python
-from mypy_boto3_health.type_defs import DescribeAffectedEntitiesResponseTypeDef
+from mypy_boto3_health.type_defs import DescribeAffectedEntitiesRequestTypeDef
 ```
 
+Required fields:
+
+- `filter`: [EntityFilterTypeDef](./type_defs.md#entityfiltertypedef)
+
 Optional fields:
+
+- `locale`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## DescribeAffectedEntitiesResponseResponseTypeDef
+
+```python
+from mypy_boto3_health.type_defs import DescribeAffectedEntitiesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `entities`:
   `List`\[[AffectedEntityTypeDef](./type_defs.md#affectedentitytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEntityAggregatesResponseTypeDef
+## DescribeEntityAggregatesRequestTypeDef
 
 ```python
-from mypy_boto3_health.type_defs import DescribeEntityAggregatesResponseTypeDef
+from mypy_boto3_health.type_defs import DescribeEntityAggregatesRequestTypeDef
 ```
 
 Optional fields:
+
+- `eventArns`: `List`\[`str`\]
+
+## DescribeEntityAggregatesResponseResponseTypeDef
+
+```python
+from mypy_boto3_health.type_defs import DescribeEntityAggregatesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `entityAggregates`:
   `List`\[[EntityAggregateTypeDef](./type_defs.md#entityaggregatetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEventAggregatesResponseTypeDef
+## DescribeEventAggregatesRequestTypeDef
 
 ```python
-from mypy_boto3_health.type_defs import DescribeEventAggregatesResponseTypeDef
+from mypy_boto3_health.type_defs import DescribeEventAggregatesRequestTypeDef
 ```
 
+Required fields:
+
+- `aggregateField`: `Literal['eventTypeCategory']` (see
+  [eventAggregateFieldType](./literals.md#eventaggregatefieldtype))
+
 Optional fields:
+
+- `filter`: [EventFilterTypeDef](./type_defs.md#eventfiltertypedef)
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## DescribeEventAggregatesResponseResponseTypeDef
+
+```python
+from mypy_boto3_health.type_defs import DescribeEventAggregatesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `eventAggregates`:
   `List`\[[EventAggregateTypeDef](./type_defs.md#eventaggregatetypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEventDetailsForOrganizationResponseTypeDef
+## DescribeEventDetailsForOrganizationRequestTypeDef
 
 ```python
-from mypy_boto3_health.type_defs import DescribeEventDetailsForOrganizationResponseTypeDef
+from mypy_boto3_health.type_defs import DescribeEventDetailsForOrganizationRequestTypeDef
 ```
 
+Required fields:
+
+- `organizationEventDetailFilters`:
+  `List`\[[EventAccountFilterTypeDef](./type_defs.md#eventaccountfiltertypedef)\]
+
 Optional fields:
+
+- `locale`: `str`
+
+## DescribeEventDetailsForOrganizationResponseResponseTypeDef
+
+```python
+from mypy_boto3_health.type_defs import DescribeEventDetailsForOrganizationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `successfulSet`:
   `List`\[[OrganizationEventDetailsTypeDef](./type_defs.md#organizationeventdetailstypedef)\]
 - `failedSet`:
   `List`\[[OrganizationEventDetailsErrorItemTypeDef](./type_defs.md#organizationeventdetailserroritemtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEventDetailsResponseTypeDef
+## DescribeEventDetailsRequestTypeDef
 
 ```python
-from mypy_boto3_health.type_defs import DescribeEventDetailsResponseTypeDef
+from mypy_boto3_health.type_defs import DescribeEventDetailsRequestTypeDef
 ```
 
+Required fields:
+
+- `eventArns`: `List`\[`str`\]
+
 Optional fields:
+
+- `locale`: `str`
+
+## DescribeEventDetailsResponseResponseTypeDef
+
+```python
+from mypy_boto3_health.type_defs import DescribeEventDetailsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `successfulSet`:
   `List`\[[EventDetailsTypeDef](./type_defs.md#eventdetailstypedef)\]
 - `failedSet`:
   `List`\[[EventDetailsErrorItemTypeDef](./type_defs.md#eventdetailserroritemtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEventTypesResponseTypeDef
+## DescribeEventTypesRequestTypeDef
 
 ```python
-from mypy_boto3_health.type_defs import DescribeEventTypesResponseTypeDef
+from mypy_boto3_health.type_defs import DescribeEventTypesRequestTypeDef
 ```
 
 Optional fields:
+
+- `filter`: [EventTypeFilterTypeDef](./type_defs.md#eventtypefiltertypedef)
+- `locale`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## DescribeEventTypesResponseResponseTypeDef
+
+```python
+from mypy_boto3_health.type_defs import DescribeEventTypesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `eventTypes`: `List`\[[EventTypeTypeDef](./type_defs.md#eventtypetypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEventsForOrganizationResponseTypeDef
+## DescribeEventsForOrganizationRequestTypeDef
 
 ```python
-from mypy_boto3_health.type_defs import DescribeEventsForOrganizationResponseTypeDef
+from mypy_boto3_health.type_defs import DescribeEventsForOrganizationRequestTypeDef
 ```
 
 Optional fields:
+
+- `filter`:
+  [OrganizationEventFilterTypeDef](./type_defs.md#organizationeventfiltertypedef)
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `locale`: `str`
+
+## DescribeEventsForOrganizationResponseResponseTypeDef
+
+```python
+from mypy_boto3_health.type_defs import DescribeEventsForOrganizationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `events`:
   `List`\[[OrganizationEventTypeDef](./type_defs.md#organizationeventtypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEventsResponseTypeDef
+## DescribeEventsRequestTypeDef
 
 ```python
-from mypy_boto3_health.type_defs import DescribeEventsResponseTypeDef
+from mypy_boto3_health.type_defs import DescribeEventsRequestTypeDef
 ```
 
 Optional fields:
+
+- `filter`: [EventFilterTypeDef](./type_defs.md#eventfiltertypedef)
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `locale`: `str`
+
+## DescribeEventsResponseResponseTypeDef
+
+```python
+from mypy_boto3_health.type_defs import DescribeEventsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `events`: `List`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeHealthServiceStatusForOrganizationResponseTypeDef
+## DescribeHealthServiceStatusForOrganizationResponseResponseTypeDef
 
 ```python
-from mypy_boto3_health.type_defs import DescribeHealthServiceStatusForOrganizationResponseTypeDef
+from mypy_boto3_health.type_defs import DescribeHealthServiceStatusForOrganizationResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `healthServiceAccessStatusForOrganization`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## EntityAggregateTypeDef
 
@@ -456,3 +633,17 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_health.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`

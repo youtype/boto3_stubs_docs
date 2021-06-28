@@ -15,13 +15,17 @@ type annotations stubs module
   - [AttributeFilterTypeDef](#attributefiltertypedef)
   - [AuthenticationConfigurationTypeDef](#authenticationconfigurationtypedef)
   - [BasicAuthenticationConfigurationTypeDef](#basicauthenticationconfigurationtypedef)
+  - [BatchDeleteDocumentRequestTypeDef](#batchdeletedocumentrequesttypedef)
   - [BatchDeleteDocumentResponseFailedDocumentTypeDef](#batchdeletedocumentresponsefaileddocumenttypedef)
-  - [BatchDeleteDocumentResponseTypeDef](#batchdeletedocumentresponsetypedef)
+  - [BatchDeleteDocumentResponseResponseTypeDef](#batchdeletedocumentresponseresponsetypedef)
+  - [BatchGetDocumentStatusRequestTypeDef](#batchgetdocumentstatusrequesttypedef)
   - [BatchGetDocumentStatusResponseErrorTypeDef](#batchgetdocumentstatusresponseerrortypedef)
-  - [BatchGetDocumentStatusResponseTypeDef](#batchgetdocumentstatusresponsetypedef)
+  - [BatchGetDocumentStatusResponseResponseTypeDef](#batchgetdocumentstatusresponseresponsetypedef)
+  - [BatchPutDocumentRequestTypeDef](#batchputdocumentrequesttypedef)
   - [BatchPutDocumentResponseFailedDocumentTypeDef](#batchputdocumentresponsefaileddocumenttypedef)
-  - [BatchPutDocumentResponseTypeDef](#batchputdocumentresponsetypedef)
+  - [BatchPutDocumentResponseResponseTypeDef](#batchputdocumentresponseresponsetypedef)
   - [CapacityUnitsConfigurationTypeDef](#capacityunitsconfigurationtypedef)
+  - [ClearQuerySuggestionsRequestTypeDef](#clearquerysuggestionsrequesttypedef)
   - [ClickFeedbackTypeDef](#clickfeedbacktypedef)
   - [ColumnConfigurationTypeDef](#columnconfigurationtypedef)
   - [ConfluenceAttachmentConfigurationTypeDef](#confluenceattachmentconfigurationtypedef)
@@ -34,11 +38,16 @@ type annotations stubs module
   - [ConfluenceSpaceConfigurationTypeDef](#confluencespaceconfigurationtypedef)
   - [ConfluenceSpaceToIndexFieldMappingTypeDef](#confluencespacetoindexfieldmappingtypedef)
   - [ConnectionConfigurationTypeDef](#connectionconfigurationtypedef)
-  - [CreateDataSourceResponseTypeDef](#createdatasourceresponsetypedef)
-  - [CreateFaqResponseTypeDef](#createfaqresponsetypedef)
-  - [CreateIndexResponseTypeDef](#createindexresponsetypedef)
-  - [CreateQuerySuggestionsBlockListResponseTypeDef](#createquerysuggestionsblocklistresponsetypedef)
-  - [CreateThesaurusResponseTypeDef](#createthesaurusresponsetypedef)
+  - [CreateDataSourceRequestTypeDef](#createdatasourcerequesttypedef)
+  - [CreateDataSourceResponseResponseTypeDef](#createdatasourceresponseresponsetypedef)
+  - [CreateFaqRequestTypeDef](#createfaqrequesttypedef)
+  - [CreateFaqResponseResponseTypeDef](#createfaqresponseresponsetypedef)
+  - [CreateIndexRequestTypeDef](#createindexrequesttypedef)
+  - [CreateIndexResponseResponseTypeDef](#createindexresponseresponsetypedef)
+  - [CreateQuerySuggestionsBlockListRequestTypeDef](#createquerysuggestionsblocklistrequesttypedef)
+  - [CreateQuerySuggestionsBlockListResponseResponseTypeDef](#createquerysuggestionsblocklistresponseresponsetypedef)
+  - [CreateThesaurusRequestTypeDef](#createthesaurusrequesttypedef)
+  - [CreateThesaurusResponseResponseTypeDef](#createthesaurusresponseresponsetypedef)
   - [DataSourceConfigurationTypeDef](#datasourceconfigurationtypedef)
   - [DataSourceSummaryTypeDef](#datasourcesummarytypedef)
   - [DataSourceSyncJobMetricTargetTypeDef](#datasourcesyncjobmetrictargettypedef)
@@ -47,12 +56,23 @@ type annotations stubs module
   - [DataSourceToIndexFieldMappingTypeDef](#datasourcetoindexfieldmappingtypedef)
   - [DataSourceVpcConfigurationTypeDef](#datasourcevpcconfigurationtypedef)
   - [DatabaseConfigurationTypeDef](#databaseconfigurationtypedef)
-  - [DescribeDataSourceResponseTypeDef](#describedatasourceresponsetypedef)
-  - [DescribeFaqResponseTypeDef](#describefaqresponsetypedef)
-  - [DescribeIndexResponseTypeDef](#describeindexresponsetypedef)
-  - [DescribeQuerySuggestionsBlockListResponseTypeDef](#describequerysuggestionsblocklistresponsetypedef)
-  - [DescribeQuerySuggestionsConfigResponseTypeDef](#describequerysuggestionsconfigresponsetypedef)
-  - [DescribeThesaurusResponseTypeDef](#describethesaurusresponsetypedef)
+  - [DeleteDataSourceRequestTypeDef](#deletedatasourcerequesttypedef)
+  - [DeleteFaqRequestTypeDef](#deletefaqrequesttypedef)
+  - [DeleteIndexRequestTypeDef](#deleteindexrequesttypedef)
+  - [DeleteQuerySuggestionsBlockListRequestTypeDef](#deletequerysuggestionsblocklistrequesttypedef)
+  - [DeleteThesaurusRequestTypeDef](#deletethesaurusrequesttypedef)
+  - [DescribeDataSourceRequestTypeDef](#describedatasourcerequesttypedef)
+  - [DescribeDataSourceResponseResponseTypeDef](#describedatasourceresponseresponsetypedef)
+  - [DescribeFaqRequestTypeDef](#describefaqrequesttypedef)
+  - [DescribeFaqResponseResponseTypeDef](#describefaqresponseresponsetypedef)
+  - [DescribeIndexRequestTypeDef](#describeindexrequesttypedef)
+  - [DescribeIndexResponseResponseTypeDef](#describeindexresponseresponsetypedef)
+  - [DescribeQuerySuggestionsBlockListRequestTypeDef](#describequerysuggestionsblocklistrequesttypedef)
+  - [DescribeQuerySuggestionsBlockListResponseResponseTypeDef](#describequerysuggestionsblocklistresponseresponsetypedef)
+  - [DescribeQuerySuggestionsConfigRequestTypeDef](#describequerysuggestionsconfigrequesttypedef)
+  - [DescribeQuerySuggestionsConfigResponseResponseTypeDef](#describequerysuggestionsconfigresponseresponsetypedef)
+  - [DescribeThesaurusRequestTypeDef](#describethesaurusrequesttypedef)
+  - [DescribeThesaurusResponseResponseTypeDef](#describethesaurusresponseresponsetypedef)
   - [DocumentAttributeTypeDef](#documentattributetypedef)
   - [DocumentAttributeValueCountPairTypeDef](#documentattributevaluecountpairtypedef)
   - [DocumentAttributeValueTypeDef](#documentattributevaluetypedef)
@@ -65,29 +85,39 @@ type annotations stubs module
   - [FacetTypeDef](#facettypedef)
   - [FaqStatisticsTypeDef](#faqstatisticstypedef)
   - [FaqSummaryTypeDef](#faqsummarytypedef)
-  - [GetQuerySuggestionsResponseTypeDef](#getquerysuggestionsresponsetypedef)
+  - [GetQuerySuggestionsRequestTypeDef](#getquerysuggestionsrequesttypedef)
+  - [GetQuerySuggestionsResponseResponseTypeDef](#getquerysuggestionsresponseresponsetypedef)
   - [GoogleDriveConfigurationTypeDef](#googledriveconfigurationtypedef)
   - [HighlightTypeDef](#highlighttypedef)
   - [IndexConfigurationSummaryTypeDef](#indexconfigurationsummarytypedef)
   - [IndexStatisticsTypeDef](#indexstatisticstypedef)
   - [JsonTokenTypeConfigurationTypeDef](#jsontokentypeconfigurationtypedef)
   - [JwtTokenTypeConfigurationTypeDef](#jwttokentypeconfigurationtypedef)
-  - [ListDataSourceSyncJobsResponseTypeDef](#listdatasourcesyncjobsresponsetypedef)
-  - [ListDataSourcesResponseTypeDef](#listdatasourcesresponsetypedef)
-  - [ListFaqsResponseTypeDef](#listfaqsresponsetypedef)
-  - [ListIndicesResponseTypeDef](#listindicesresponsetypedef)
-  - [ListQuerySuggestionsBlockListsResponseTypeDef](#listquerysuggestionsblocklistsresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListThesauriResponseTypeDef](#listthesauriresponsetypedef)
+  - [ListDataSourceSyncJobsRequestTypeDef](#listdatasourcesyncjobsrequesttypedef)
+  - [ListDataSourceSyncJobsResponseResponseTypeDef](#listdatasourcesyncjobsresponseresponsetypedef)
+  - [ListDataSourcesRequestTypeDef](#listdatasourcesrequesttypedef)
+  - [ListDataSourcesResponseResponseTypeDef](#listdatasourcesresponseresponsetypedef)
+  - [ListFaqsRequestTypeDef](#listfaqsrequesttypedef)
+  - [ListFaqsResponseResponseTypeDef](#listfaqsresponseresponsetypedef)
+  - [ListIndicesRequestTypeDef](#listindicesrequesttypedef)
+  - [ListIndicesResponseResponseTypeDef](#listindicesresponseresponsetypedef)
+  - [ListQuerySuggestionsBlockListsRequestTypeDef](#listquerysuggestionsblocklistsrequesttypedef)
+  - [ListQuerySuggestionsBlockListsResponseResponseTypeDef](#listquerysuggestionsblocklistsresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListThesauriRequestTypeDef](#listthesaurirequesttypedef)
+  - [ListThesauriResponseResponseTypeDef](#listthesauriresponseresponsetypedef)
   - [OneDriveConfigurationTypeDef](#onedriveconfigurationtypedef)
   - [OneDriveUsersTypeDef](#onedriveuserstypedef)
   - [PrincipalTypeDef](#principaltypedef)
   - [ProxyConfigurationTypeDef](#proxyconfigurationtypedef)
+  - [QueryRequestTypeDef](#queryrequesttypedef)
   - [QueryResultItemTypeDef](#queryresultitemtypedef)
-  - [QueryResultTypeDef](#queryresulttypedef)
+  - [QueryResultResponseTypeDef](#queryresultresponsetypedef)
   - [QuerySuggestionsBlockListSummaryTypeDef](#querysuggestionsblocklistsummarytypedef)
   - [RelevanceFeedbackTypeDef](#relevancefeedbacktypedef)
   - [RelevanceTypeDef](#relevancetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3DataSourceConfigurationTypeDef](#s3datasourceconfigurationtypedef)
   - [S3PathTypeDef](#s3pathtypedef)
   - [SalesforceChatterFeedConfigurationTypeDef](#salesforcechatterfeedconfigurationtypedef)
@@ -108,17 +138,27 @@ type annotations stubs module
   - [SiteMapsConfigurationTypeDef](#sitemapsconfigurationtypedef)
   - [SortingConfigurationTypeDef](#sortingconfigurationtypedef)
   - [SqlConfigurationTypeDef](#sqlconfigurationtypedef)
-  - [StartDataSourceSyncJobResponseTypeDef](#startdatasourcesyncjobresponsetypedef)
+  - [StartDataSourceSyncJobRequestTypeDef](#startdatasourcesyncjobrequesttypedef)
+  - [StartDataSourceSyncJobResponseResponseTypeDef](#startdatasourcesyncjobresponseresponsetypedef)
   - [StatusTypeDef](#statustypedef)
+  - [StopDataSourceSyncJobRequestTypeDef](#stopdatasourcesyncjobrequesttypedef)
+  - [SubmitFeedbackRequestTypeDef](#submitfeedbackrequesttypedef)
   - [SuggestionHighlightTypeDef](#suggestionhighlighttypedef)
   - [SuggestionTextWithHighlightsTypeDef](#suggestiontextwithhighlightstypedef)
   - [SuggestionTypeDef](#suggestiontypedef)
   - [SuggestionValueTypeDef](#suggestionvaluetypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TextDocumentStatisticsTypeDef](#textdocumentstatisticstypedef)
   - [TextWithHighlightsTypeDef](#textwithhighlightstypedef)
   - [ThesaurusSummaryTypeDef](#thesaurussummarytypedef)
   - [TimeRangeTypeDef](#timerangetypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateDataSourceRequestTypeDef](#updatedatasourcerequesttypedef)
+  - [UpdateIndexRequestTypeDef](#updateindexrequesttypedef)
+  - [UpdateQuerySuggestionsBlockListRequestTypeDef](#updatequerysuggestionsblocklistrequesttypedef)
+  - [UpdateQuerySuggestionsConfigRequestTypeDef](#updatequerysuggestionsconfigrequesttypedef)
+  - [UpdateThesaurusRequestTypeDef](#updatethesaurusrequesttypedef)
   - [UrlsTypeDef](#urlstypedef)
   - [UserContextTypeDef](#usercontexttypedef)
   - [UserTokenConfigurationTypeDef](#usertokenconfigurationtypedef)
@@ -220,6 +260,22 @@ Required fields:
 - `Port`: `int`
 - `Credentials`: `str`
 
+## BatchDeleteDocumentRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import BatchDeleteDocumentRequestTypeDef
+```
+
+Required fields:
+
+- `IndexId`: `str`
+- `DocumentIdList`: `List`\[`str`\]
+
+Optional fields:
+
+- `DataSourceSyncJobMetricTarget`:
+  [DataSourceSyncJobMetricTargetTypeDef](./type_defs.md#datasourcesyncjobmetrictargettypedef)
+
 ## BatchDeleteDocumentResponseFailedDocumentTypeDef
 
 ```python
@@ -232,16 +288,30 @@ Optional fields:
 - `ErrorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `ErrorMessage`: `str`
 
-## BatchDeleteDocumentResponseTypeDef
+## BatchDeleteDocumentResponseResponseTypeDef
 
 ```python
-from mypy_boto3_kendra.type_defs import BatchDeleteDocumentResponseTypeDef
+from mypy_boto3_kendra.type_defs import BatchDeleteDocumentResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `FailedDocuments`:
   `List`\[[BatchDeleteDocumentResponseFailedDocumentTypeDef](./type_defs.md#batchdeletedocumentresponsefaileddocumenttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## BatchGetDocumentStatusRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import BatchGetDocumentStatusRequestTypeDef
+```
+
+Required fields:
+
+- `IndexId`: `str`
+- `DocumentInfoList`:
+  `List`\[[DocumentInfoTypeDef](./type_defs.md#documentinfotypedef)\]
 
 ## BatchGetDocumentStatusResponseErrorTypeDef
 
@@ -255,17 +325,34 @@ Optional fields:
 - `ErrorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `ErrorMessage`: `str`
 
-## BatchGetDocumentStatusResponseTypeDef
+## BatchGetDocumentStatusResponseResponseTypeDef
 
 ```python
-from mypy_boto3_kendra.type_defs import BatchGetDocumentStatusResponseTypeDef
+from mypy_boto3_kendra.type_defs import BatchGetDocumentStatusResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Errors`:
   `List`\[[BatchGetDocumentStatusResponseErrorTypeDef](./type_defs.md#batchgetdocumentstatusresponseerrortypedef)\]
 - `DocumentStatusList`: `List`\[[StatusTypeDef](./type_defs.md#statustypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## BatchPutDocumentRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import BatchPutDocumentRequestTypeDef
+```
+
+Required fields:
+
+- `IndexId`: `str`
+- `Documents`: `List`\[[DocumentTypeDef](./type_defs.md#documenttypedef)\]
+
+Optional fields:
+
+- `RoleArn`: `str`
 
 ## BatchPutDocumentResponseFailedDocumentTypeDef
 
@@ -279,16 +366,18 @@ Optional fields:
 - `ErrorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `ErrorMessage`: `str`
 
-## BatchPutDocumentResponseTypeDef
+## BatchPutDocumentResponseResponseTypeDef
 
 ```python
-from mypy_boto3_kendra.type_defs import BatchPutDocumentResponseTypeDef
+from mypy_boto3_kendra.type_defs import BatchPutDocumentResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `FailedDocuments`:
   `List`\[[BatchPutDocumentResponseFailedDocumentTypeDef](./type_defs.md#batchputdocumentresponsefaileddocumenttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CapacityUnitsConfigurationTypeDef
 
@@ -301,6 +390,16 @@ Required fields:
 - `StorageCapacityUnits`: `int`
 - `QueryCapacityUnits`: `int`
 
+## ClearQuerySuggestionsRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import ClearQuerySuggestionsRequestTypeDef
+```
+
+Required fields:
+
+- `IndexId`: `str`
+
 ## ClickFeedbackTypeDef
 
 ```python
@@ -310,7 +409,7 @@ from mypy_boto3_kendra.type_defs import ClickFeedbackTypeDef
 Required fields:
 
 - `ResultId`: `str`
-- `ClickTime`: `datetime`
+- `ClickTime`: `Union`\[`datetime`, `str`\]
 
 ## ColumnConfigurationTypeDef
 
@@ -472,55 +571,169 @@ Required fields:
 - `TableName`: `str`
 - `SecretArn`: `str`
 
-## CreateDataSourceResponseTypeDef
+## CreateDataSourceRequestTypeDef
 
 ```python
-from mypy_boto3_kendra.type_defs import CreateDataSourceResponseTypeDef
+from mypy_boto3_kendra.type_defs import CreateDataSourceRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `IndexId`: `str`
+- `Type`: [DataSourceTypeType](./literals.md#datasourcetypetype)
+
+Optional fields:
+
+- `Configuration`:
+  [DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef)
+- `Description`: `str`
+- `Schedule`: `str`
+- `RoleArn`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ClientToken`: `str`
+
+## CreateDataSourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import CreateDataSourceResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `Id`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateFaqResponseTypeDef
+## CreateFaqRequestTypeDef
 
 ```python
-from mypy_boto3_kendra.type_defs import CreateFaqResponseTypeDef
+from mypy_boto3_kendra.type_defs import CreateFaqRequestTypeDef
 ```
+
+Required fields:
+
+- `IndexId`: `str`
+- `Name`: `str`
+- `S3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)
+- `RoleArn`: `str`
 
 Optional fields:
 
-- `Id`: `str`
+- `Description`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `FileFormat`: [FaqFileFormatType](./literals.md#faqfileformattype)
+- `ClientToken`: `str`
 
-## CreateIndexResponseTypeDef
+## CreateFaqResponseResponseTypeDef
 
 ```python
-from mypy_boto3_kendra.type_defs import CreateIndexResponseTypeDef
+from mypy_boto3_kendra.type_defs import CreateFaqResponseResponseTypeDef
 ```
+
+Required fields:
+
+- `Id`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateIndexRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import CreateIndexRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `RoleArn`: `str`
 
 Optional fields:
 
-- `Id`: `str`
+- `Edition`: [IndexEditionType](./literals.md#indexeditiontype)
+- `ServerSideEncryptionConfiguration`:
+  [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
+- `Description`: `str`
+- `ClientToken`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `UserTokenConfigurations`:
+  `List`\[[UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)\]
+- `UserContextPolicy`:
+  [UserContextPolicyType](./literals.md#usercontextpolicytype)
 
-## CreateQuerySuggestionsBlockListResponseTypeDef
+## CreateIndexResponseResponseTypeDef
 
 ```python
-from mypy_boto3_kendra.type_defs import CreateQuerySuggestionsBlockListResponseTypeDef
+from mypy_boto3_kendra.type_defs import CreateIndexResponseResponseTypeDef
 ```
+
+Required fields:
+
+- `Id`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateQuerySuggestionsBlockListRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import CreateQuerySuggestionsBlockListRequestTypeDef
+```
+
+Required fields:
+
+- `IndexId`: `str`
+- `Name`: `str`
+- `SourceS3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)
+- `RoleArn`: `str`
 
 Optional fields:
 
-- `Id`: `str`
+- `Description`: `str`
+- `ClientToken`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateThesaurusResponseTypeDef
+## CreateQuerySuggestionsBlockListResponseResponseTypeDef
 
 ```python
-from mypy_boto3_kendra.type_defs import CreateThesaurusResponseTypeDef
+from mypy_boto3_kendra.type_defs import CreateQuerySuggestionsBlockListResponseResponseTypeDef
 ```
+
+Required fields:
+
+- `Id`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateThesaurusRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import CreateThesaurusRequestTypeDef
+```
+
+Required fields:
+
+- `IndexId`: `str`
+- `Name`: `str`
+- `RoleArn`: `str`
+- `SourceS3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)
 
 Optional fields:
 
+- `Description`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ClientToken`: `str`
+
+## CreateThesaurusResponseResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import CreateThesaurusResponseResponseTypeDef
+```
+
+Required fields:
+
 - `Id`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DataSourceConfigurationTypeDef
 
@@ -661,13 +874,78 @@ Optional fields:
 - `SqlConfiguration`:
   [SqlConfigurationTypeDef](./type_defs.md#sqlconfigurationtypedef)
 
-## DescribeDataSourceResponseTypeDef
+## DeleteDataSourceRequestTypeDef
 
 ```python
-from mypy_boto3_kendra.type_defs import DescribeDataSourceResponseTypeDef
+from mypy_boto3_kendra.type_defs import DeleteDataSourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+- `IndexId`: `str`
+
+## DeleteFaqRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import DeleteFaqRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `IndexId`: `str`
+
+## DeleteIndexRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import DeleteIndexRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## DeleteQuerySuggestionsBlockListRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import DeleteQuerySuggestionsBlockListRequestTypeDef
+```
+
+Required fields:
+
+- `IndexId`: `str`
+- `Id`: `str`
+
+## DeleteThesaurusRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import DeleteThesaurusRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `IndexId`: `str`
+
+## DescribeDataSourceRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import DescribeDataSourceRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `IndexId`: `str`
+
+## DescribeDataSourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import DescribeDataSourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Id`: `str`
 - `IndexId`: `str`
@@ -682,14 +960,27 @@ Optional fields:
 - `Schedule`: `str`
 - `RoleArn`: `str`
 - `ErrorMessage`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFaqResponseTypeDef
+## DescribeFaqRequestTypeDef
 
 ```python
-from mypy_boto3_kendra.type_defs import DescribeFaqResponseTypeDef
+from mypy_boto3_kendra.type_defs import DescribeFaqRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+- `IndexId`: `str`
+
+## DescribeFaqResponseResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import DescribeFaqResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Id`: `str`
 - `IndexId`: `str`
@@ -702,14 +993,26 @@ Optional fields:
 - `RoleArn`: `str`
 - `ErrorMessage`: `str`
 - `FileFormat`: [FaqFileFormatType](./literals.md#faqfileformattype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeIndexResponseTypeDef
+## DescribeIndexRequestTypeDef
 
 ```python
-from mypy_boto3_kendra.type_defs import DescribeIndexResponseTypeDef
+from mypy_boto3_kendra.type_defs import DescribeIndexRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## DescribeIndexResponseResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import DescribeIndexResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Name`: `str`
 - `Id`: `str`
@@ -732,14 +1035,27 @@ Optional fields:
   `List`\[[UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)\]
 - `UserContextPolicy`:
   [UserContextPolicyType](./literals.md#usercontextpolicytype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeQuerySuggestionsBlockListResponseTypeDef
+## DescribeQuerySuggestionsBlockListRequestTypeDef
 
 ```python
-from mypy_boto3_kendra.type_defs import DescribeQuerySuggestionsBlockListResponseTypeDef
+from mypy_boto3_kendra.type_defs import DescribeQuerySuggestionsBlockListRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `IndexId`: `str`
+- `Id`: `str`
+
+## DescribeQuerySuggestionsBlockListResponseResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import DescribeQuerySuggestionsBlockListResponseResponseTypeDef
+```
+
+Required fields:
 
 - `IndexId`: `str`
 - `Id`: `str`
@@ -754,14 +1070,26 @@ Optional fields:
 - `ItemCount`: `int`
 - `FileSizeBytes`: `int`
 - `RoleArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeQuerySuggestionsConfigResponseTypeDef
+## DescribeQuerySuggestionsConfigRequestTypeDef
 
 ```python
-from mypy_boto3_kendra.type_defs import DescribeQuerySuggestionsConfigResponseTypeDef
+from mypy_boto3_kendra.type_defs import DescribeQuerySuggestionsConfigRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `IndexId`: `str`
+
+## DescribeQuerySuggestionsConfigResponseResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import DescribeQuerySuggestionsConfigResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Mode`: [ModeType](./literals.md#modetype)
 - `Status`:
@@ -773,14 +1101,27 @@ Optional fields:
 - `LastSuggestionsBuildTime`: `datetime`
 - `LastClearTime`: `datetime`
 - `TotalSuggestionsCount`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeThesaurusResponseTypeDef
+## DescribeThesaurusRequestTypeDef
 
 ```python
-from mypy_boto3_kendra.type_defs import DescribeThesaurusResponseTypeDef
+from mypy_boto3_kendra.type_defs import DescribeThesaurusRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+- `IndexId`: `str`
+
+## DescribeThesaurusResponseResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import DescribeThesaurusResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Id`: `str`
 - `IndexId`: `str`
@@ -795,6 +1136,8 @@ Optional fields:
 - `FileSizeBytes`: `int`
 - `TermCount`: `int`
 - `SynonymRuleCount`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DocumentAttributeTypeDef
 
@@ -831,7 +1174,7 @@ Optional fields:
 - `StringValue`: `str`
 - `StringListValue`: `List`\[`str`\]
 - `LongValue`: `int`
-- `DateValue`: `datetime`
+- `DateValue`: `Union`\[`datetime`, `str`\]
 
 ## DocumentInfoTypeDef
 
@@ -956,17 +1299,34 @@ Optional fields:
 - `UpdatedAt`: `datetime`
 - `FileFormat`: [FaqFileFormatType](./literals.md#faqfileformattype)
 
-## GetQuerySuggestionsResponseTypeDef
+## GetQuerySuggestionsRequestTypeDef
 
 ```python
-from mypy_boto3_kendra.type_defs import GetQuerySuggestionsResponseTypeDef
+from mypy_boto3_kendra.type_defs import GetQuerySuggestionsRequestTypeDef
 ```
 
+Required fields:
+
+- `IndexId`: `str`
+- `QueryText`: `str`
+
 Optional fields:
+
+- `MaxSuggestionsCount`: `int`
+
+## GetQuerySuggestionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import GetQuerySuggestionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `QuerySuggestionsId`: `str`
 - `Suggestions`:
   `List`\[[SuggestionTypeDef](./type_defs.md#suggestiontypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GoogleDriveConfigurationTypeDef
 
@@ -1064,87 +1424,201 @@ Optional fields:
 - `Issuer`: `str`
 - `ClaimRegex`: `str`
 
-## ListDataSourceSyncJobsResponseTypeDef
+## ListDataSourceSyncJobsRequestTypeDef
 
 ```python
-from mypy_boto3_kendra.type_defs import ListDataSourceSyncJobsResponseTypeDef
+from mypy_boto3_kendra.type_defs import ListDataSourceSyncJobsRequestTypeDef
 ```
 
+Required fields:
+
+- `Id`: `str`
+- `IndexId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `StartTimeFilter`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
+- `StatusFilter`:
+  [DataSourceSyncJobStatusType](./literals.md#datasourcesyncjobstatustype)
+
+## ListDataSourceSyncJobsResponseResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import ListDataSourceSyncJobsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `History`:
   `List`\[[DataSourceSyncJobTypeDef](./type_defs.md#datasourcesyncjobtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDataSourcesResponseTypeDef
+## ListDataSourcesRequestTypeDef
 
 ```python
-from mypy_boto3_kendra.type_defs import ListDataSourcesResponseTypeDef
+from mypy_boto3_kendra.type_defs import ListDataSourcesRequestTypeDef
 ```
 
+Required fields:
+
+- `IndexId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListDataSourcesResponseResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import ListDataSourcesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `SummaryItems`:
   `List`\[[DataSourceSummaryTypeDef](./type_defs.md#datasourcesummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFaqsResponseTypeDef
+## ListFaqsRequestTypeDef
 
 ```python
-from mypy_boto3_kendra.type_defs import ListFaqsResponseTypeDef
+from mypy_boto3_kendra.type_defs import ListFaqsRequestTypeDef
 ```
 
+Required fields:
+
+- `IndexId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListFaqsResponseResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import ListFaqsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `FaqSummaryItems`:
   `List`\[[FaqSummaryTypeDef](./type_defs.md#faqsummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListIndicesResponseTypeDef
+## ListIndicesRequestTypeDef
 
 ```python
-from mypy_boto3_kendra.type_defs import ListIndicesResponseTypeDef
+from mypy_boto3_kendra.type_defs import ListIndicesRequestTypeDef
 ```
 
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListIndicesResponseResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import ListIndicesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `IndexConfigurationSummaryItems`:
   `List`\[[IndexConfigurationSummaryTypeDef](./type_defs.md#indexconfigurationsummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListQuerySuggestionsBlockListsResponseTypeDef
+## ListQuerySuggestionsBlockListsRequestTypeDef
 
 ```python
-from mypy_boto3_kendra.type_defs import ListQuerySuggestionsBlockListsResponseTypeDef
+from mypy_boto3_kendra.type_defs import ListQuerySuggestionsBlockListsRequestTypeDef
 ```
 
+Required fields:
+
+- `IndexId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListQuerySuggestionsBlockListsResponseResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import ListQuerySuggestionsBlockListsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `BlockListSummaryItems`:
   `List`\[[QuerySuggestionsBlockListSummaryTypeDef](./type_defs.md#querysuggestionsblocklistsummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_kendra.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_kendra.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceARN`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListThesauriResponseTypeDef
+## ListThesauriRequestTypeDef
 
 ```python
-from mypy_boto3_kendra.type_defs import ListThesauriResponseTypeDef
+from mypy_boto3_kendra.type_defs import ListThesauriRequestTypeDef
 ```
+
+Required fields:
+
+- `IndexId`: `str`
 
 Optional fields:
 
 - `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListThesauriResponseResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import ListThesauriResponseResponseTypeDef
+```
+
+Required fields:
+
+- `NextToken`: `str`
 - `ThesaurusSummaryItems`:
   `List`\[[ThesaurusSummaryTypeDef](./type_defs.md#thesaurussummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## OneDriveConfigurationTypeDef
 
@@ -1204,6 +1678,34 @@ Optional fields:
 
 - `Credentials`: `str`
 
+## QueryRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import QueryRequestTypeDef
+```
+
+Required fields:
+
+- `IndexId`: `str`
+- `QueryText`: `str`
+
+Optional fields:
+
+- `AttributeFilter`:
+  [AttributeFilterTypeDef](./type_defs.md#attributefiltertypedef)
+- `Facets`: `List`\[[FacetTypeDef](./type_defs.md#facettypedef)\]
+- `RequestedDocumentAttributes`: `List`\[`str`\]
+- `QueryResultTypeFilter`:
+  [QueryResultTypeType](./literals.md#queryresulttypetype)
+- `DocumentRelevanceOverrideConfigurations`:
+  `List`\[[DocumentRelevanceConfigurationTypeDef](./type_defs.md#documentrelevanceconfigurationtypedef)\]
+- `PageNumber`: `int`
+- `PageSize`: `int`
+- `SortingConfiguration`:
+  [SortingConfigurationTypeDef](./type_defs.md#sortingconfigurationtypedef)
+- `UserContext`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
+- `VisitorId`: `str`
+
 ## QueryResultItemTypeDef
 
 ```python
@@ -1228,13 +1730,13 @@ Optional fields:
   [ScoreAttributesTypeDef](./type_defs.md#scoreattributestypedef)
 - `FeedbackToken`: `str`
 
-## QueryResultTypeDef
+## QueryResultResponseTypeDef
 
 ```python
-from mypy_boto3_kendra.type_defs import QueryResultTypeDef
+from mypy_boto3_kendra.type_defs import QueryResultResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `QueryId`: `str`
 - `ResultItems`:
@@ -1242,6 +1744,8 @@ Optional fields:
 - `FacetResults`:
   `List`\[[FacetResultTypeDef](./type_defs.md#facetresulttypedef)\]
 - `TotalNumberOfResults`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## QuerySuggestionsBlockListSummaryTypeDef
 
@@ -1283,6 +1787,20 @@ Optional fields:
 - `Duration`: `str`
 - `RankOrder`: [OrderType](./literals.md#ordertype)
 - `ValueImportanceMap`: `Dict`\[`str`, `int`\]
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## S3DataSourceConfigurationTypeDef
 
@@ -1606,15 +2124,28 @@ Optional fields:
 - `QueryIdentifiersEnclosingOption`:
   [QueryIdentifiersEnclosingOptionType](./literals.md#queryidentifiersenclosingoptiontype)
 
-## StartDataSourceSyncJobResponseTypeDef
+## StartDataSourceSyncJobRequestTypeDef
 
 ```python
-from mypy_boto3_kendra.type_defs import StartDataSourceSyncJobResponseTypeDef
+from mypy_boto3_kendra.type_defs import StartDataSourceSyncJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+- `IndexId`: `str`
+
+## StartDataSourceSyncJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import StartDataSourceSyncJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ExecutionId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## StatusTypeDef
 
@@ -1628,6 +2159,35 @@ Optional fields:
 - `DocumentStatus`: [DocumentStatusType](./literals.md#documentstatustype)
 - `FailureCode`: `str`
 - `FailureReason`: `str`
+
+## StopDataSourceSyncJobRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import StopDataSourceSyncJobRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `IndexId`: `str`
+
+## SubmitFeedbackRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import SubmitFeedbackRequestTypeDef
+```
+
+Required fields:
+
+- `IndexId`: `str`
+- `QueryId`: `str`
+
+Optional fields:
+
+- `ClickFeedbackItems`:
+  `List`\[[ClickFeedbackTypeDef](./type_defs.md#clickfeedbacktypedef)\]
+- `RelevanceFeedbackItems`:
+  `List`\[[RelevanceFeedbackTypeDef](./type_defs.md#relevancefeedbacktypedef)\]
 
 ## SuggestionHighlightTypeDef
 
@@ -1673,6 +2233,17 @@ Optional fields:
 
 - `Text`:
   [SuggestionTextWithHighlightsTypeDef](./type_defs.md#suggestiontextwithhighlightstypedef)
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1729,8 +2300,117 @@ from mypy_boto3_kendra.type_defs import TimeRangeTypeDef
 
 Optional fields:
 
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
+
+## UntagResourceRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## UpdateDataSourceRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import UpdateDataSourceRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `IndexId`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+- `Configuration`:
+  [DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef)
+- `Description`: `str`
+- `Schedule`: `str`
+- `RoleArn`: `str`
+
+## UpdateIndexRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import UpdateIndexRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+- `RoleArn`: `str`
+- `Description`: `str`
+- `DocumentMetadataConfigurationUpdates`:
+  `List`\[[DocumentMetadataConfigurationTypeDef](./type_defs.md#documentmetadataconfigurationtypedef)\]
+- `CapacityUnits`:
+  [CapacityUnitsConfigurationTypeDef](./type_defs.md#capacityunitsconfigurationtypedef)
+- `UserTokenConfigurations`:
+  `List`\[[UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)\]
+- `UserContextPolicy`:
+  [UserContextPolicyType](./literals.md#usercontextpolicytype)
+
+## UpdateQuerySuggestionsBlockListRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import UpdateQuerySuggestionsBlockListRequestTypeDef
+```
+
+Required fields:
+
+- `IndexId`: `str`
+- `Id`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+- `Description`: `str`
+- `SourceS3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)
+- `RoleArn`: `str`
+
+## UpdateQuerySuggestionsConfigRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import UpdateQuerySuggestionsConfigRequestTypeDef
+```
+
+Required fields:
+
+- `IndexId`: `str`
+
+Optional fields:
+
+- `Mode`: [ModeType](./literals.md#modetype)
+- `QueryLogLookBackWindowInDays`: `int`
+- `IncludeQueriesWithoutUserInformation`: `bool`
+- `MinimumNumberOfQueryingUsers`: `int`
+- `MinimumQueryCount`: `int`
+
+## UpdateThesaurusRequestTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import UpdateThesaurusRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `IndexId`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+- `Description`: `str`
+- `RoleArn`: `str`
+- `SourceS3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)
 
 ## UrlsTypeDef
 

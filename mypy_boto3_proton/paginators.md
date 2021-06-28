@@ -47,7 +47,7 @@ Arguments for `ListEnvironmentAccountConnectionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEnvironmentAccountConnectionsPaginator.paginate` returns
-`Iterator`\[[ListEnvironmentAccountConnectionsOutputTypeDef](./type_defs.md#listenvironmentaccountconnectionsoutputtypedef)\].
+`Iterator`\[[ListEnvironmentAccountConnectionsOutputResponseTypeDef](./type_defs.md#listenvironmentaccountconnectionsoutputresponsetypedef)\].
 
 ## ListEnvironmentTemplateVersionsPaginator
 
@@ -74,7 +74,7 @@ Arguments for `ListEnvironmentTemplateVersionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEnvironmentTemplateVersionsPaginator.paginate` returns
-`Iterator`\[[ListEnvironmentTemplateVersionsOutputTypeDef](./type_defs.md#listenvironmenttemplateversionsoutputtypedef)\].
+`Iterator`\[[ListEnvironmentTemplateVersionsOutputResponseTypeDef](./type_defs.md#listenvironmenttemplateversionsoutputresponsetypedef)\].
 
 ## ListEnvironmentTemplatesPaginator
 
@@ -99,7 +99,7 @@ Arguments for `ListEnvironmentTemplatesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEnvironmentTemplatesPaginator.paginate` returns
-`Iterator`\[[ListEnvironmentTemplatesOutputTypeDef](./type_defs.md#listenvironmenttemplatesoutputtypedef)\].
+`Iterator`\[[ListEnvironmentTemplatesOutputResponseTypeDef](./type_defs.md#listenvironmenttemplatesoutputresponsetypedef)\].
 
 ## ListEnvironmentsPaginator
 
@@ -126,7 +126,7 @@ Arguments for `ListEnvironmentsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEnvironmentsPaginator.paginate` returns
-`Iterator`\[[ListEnvironmentsOutputTypeDef](./type_defs.md#listenvironmentsoutputtypedef)\].
+`Iterator`\[[ListEnvironmentsOutputResponseTypeDef](./type_defs.md#listenvironmentsoutputresponsetypedef)\].
 
 ## ListServiceInstancesPaginator
 
@@ -152,7 +152,7 @@ Arguments for `ListServiceInstancesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListServiceInstancesPaginator.paginate` returns
-`Iterator`\[[ListServiceInstancesOutputTypeDef](./type_defs.md#listserviceinstancesoutputtypedef)\].
+`Iterator`\[[ListServiceInstancesOutputResponseTypeDef](./type_defs.md#listserviceinstancesoutputresponsetypedef)\].
 
 ## ListServiceTemplateVersionsPaginator
 
@@ -179,7 +179,7 @@ Arguments for `ListServiceTemplateVersionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListServiceTemplateVersionsPaginator.paginate` returns
-`Iterator`\[[ListServiceTemplateVersionsOutputTypeDef](./type_defs.md#listservicetemplateversionsoutputtypedef)\].
+`Iterator`\[[ListServiceTemplateVersionsOutputResponseTypeDef](./type_defs.md#listservicetemplateversionsoutputresponsetypedef)\].
 
 ## ListServiceTemplatesPaginator
 
@@ -204,7 +204,7 @@ Arguments for `ListServiceTemplatesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListServiceTemplatesPaginator.paginate` returns
-`Iterator`\[[ListServiceTemplatesOutputTypeDef](./type_defs.md#listservicetemplatesoutputtypedef)\].
+`Iterator`\[[ListServiceTemplatesOutputResponseTypeDef](./type_defs.md#listservicetemplatesoutputresponsetypedef)\].
 
 ## ListServicesPaginator
 
@@ -228,7 +228,7 @@ Arguments for `ListServicesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListServicesPaginator.paginate` returns
-`Iterator`\[[ListServicesOutputTypeDef](./type_defs.md#listservicesoutputtypedef)\].
+`Iterator`\[[ListServicesOutputResponseTypeDef](./type_defs.md#listservicesoutputresponsetypedef)\].
 
 ## ListTagsForResourcePaginator
 
@@ -254,4 +254,4 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsForResourcePaginator.paginate` returns
-`Iterator`\[[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef)\].
+`Iterator`\[[ListTagsForResourceOutputResponseTypeDef](./type_defs.md#listtagsforresourceoutputresponsetypedef)\].

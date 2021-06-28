@@ -84,11 +84,15 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_s3outposts.type_defs import CreateEndpointResultTypeDef, ...
+from mypy_boto3_s3outposts.type_defs import CreateEndpointRequestTypeDef, ...
 ```
 
-- [CreateEndpointResultTypeDef](./type_defs.md#createendpointresulttypedef)
+- [CreateEndpointRequestTypeDef](./type_defs.md#createendpointrequesttypedef)
+- [CreateEndpointResultResponseTypeDef](./type_defs.md#createendpointresultresponsetypedef)
+- [DeleteEndpointRequestTypeDef](./type_defs.md#deleteendpointrequesttypedef)
 - [EndpointTypeDef](./type_defs.md#endpointtypedef)
-- [ListEndpointsResultTypeDef](./type_defs.md#listendpointsresulttypedef)
+- [ListEndpointsRequestTypeDef](./type_defs.md#listendpointsrequesttypedef)
+- [ListEndpointsResultResponseTypeDef](./type_defs.md#listendpointsresultresponsetypedef)
 - [NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

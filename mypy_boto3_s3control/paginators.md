@@ -34,4 +34,4 @@ Arguments for `ListAccessPointsForObjectLambdaPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAccessPointsForObjectLambdaPaginator.paginate` returns
-`Iterator`\[[ListAccessPointsForObjectLambdaResultTypeDef](./type_defs.md#listaccesspointsforobjectlambdaresulttypedef)\].
+`Iterator`\[[ListAccessPointsForObjectLambdaResultResponseTypeDef](./type_defs.md#listaccesspointsforobjectlambdaresultresponsetypedef)\].

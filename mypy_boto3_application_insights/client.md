@@ -85,6 +85,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("application-insights").can_paginate`
 method.
 
@@ -99,11 +101,16 @@ Returns `bool`.
 
 ### create_application
 
+Adds an application that is created from a resource group.
+
 Type annotations for `boto3.client("application-insights").create_application`
 method.
 
 Boto3 documentation:
 [ApplicationInsights.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.create_application)
+
+Arguments mapping described in
+[CreateApplicationRequestTypeDef](./type_defs.md#createapplicationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -114,15 +121,20 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
+[CreateApplicationResponseResponseTypeDef](./type_defs.md#createapplicationresponseresponsetypedef).
 
 ### create_component
+
+Creates a custom component by grouping similar standalone instances to monitor.
 
 Type annotations for `boto3.client("application-insights").create_component`
 method.
 
 Boto3 documentation:
 [ApplicationInsights.Client.create_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.create_component)
+
+Arguments mapping described in
+[CreateComponentRequestTypeDef](./type_defs.md#createcomponentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -134,11 +146,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### create_log_pattern
 
+Adds an log pattern to a `LogPatternSet` .
+
 Type annotations for `boto3.client("application-insights").create_log_pattern`
 method.
 
 Boto3 documentation:
 [ApplicationInsights.Client.create_log_pattern](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.create_log_pattern)
+
+Arguments mapping described in
+[CreateLogPatternRequestTypeDef](./type_defs.md#createlogpatternrequesttypedef).
 
 Keyword-only arguments:
 
@@ -149,15 +166,20 @@ Keyword-only arguments:
 - `Rank`: `int` *(required)*
 
 Returns
-[CreateLogPatternResponseTypeDef](./type_defs.md#createlogpatternresponsetypedef).
+[CreateLogPatternResponseResponseTypeDef](./type_defs.md#createlogpatternresponseresponsetypedef).
 
 ### delete_application
+
+Removes the specified application from monitoring.
 
 Type annotations for `boto3.client("application-insights").delete_application`
 method.
 
 Boto3 documentation:
 [ApplicationInsights.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.delete_application)
+
+Arguments mapping described in
+[DeleteApplicationRequestTypeDef](./type_defs.md#deleteapplicationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -167,11 +189,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_component
 
+Ungroups a custom component.
+
 Type annotations for `boto3.client("application-insights").delete_component`
 method.
 
 Boto3 documentation:
 [ApplicationInsights.Client.delete_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.delete_component)
+
+Arguments mapping described in
+[DeleteComponentRequestTypeDef](./type_defs.md#deletecomponentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -182,11 +209,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_log_pattern
 
+Removes the specified log pattern from a `LogPatternSet` .
+
 Type annotations for `boto3.client("application-insights").delete_log_pattern`
 method.
 
 Boto3 documentation:
 [ApplicationInsights.Client.delete_log_pattern](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.delete_log_pattern)
+
+Arguments mapping described in
+[DeleteLogPatternRequestTypeDef](./type_defs.md#deletelogpatternrequesttypedef).
 
 Keyword-only arguments:
 
@@ -198,20 +230,28 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_application
 
+Describes the application.
+
 Type annotations for
 `boto3.client("application-insights").describe_application` method.
 
 Boto3 documentation:
 [ApplicationInsights.Client.describe_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_application)
 
+Arguments mapping described in
+[DescribeApplicationRequestTypeDef](./type_defs.md#describeapplicationrequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceGroupName`: `str` *(required)*
 
 Returns
-[DescribeApplicationResponseTypeDef](./type_defs.md#describeapplicationresponsetypedef).
+[DescribeApplicationResponseResponseTypeDef](./type_defs.md#describeapplicationresponseresponsetypedef).
 
 ### describe_component
+
+Describes a component and lists the resources that are grouped together in a
+component.
 
 Type annotations for `boto3.client("application-insights").describe_component`
 method.
@@ -219,15 +259,20 @@ method.
 Boto3 documentation:
 [ApplicationInsights.Client.describe_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_component)
 
+Arguments mapping described in
+[DescribeComponentRequestTypeDef](./type_defs.md#describecomponentrequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceGroupName`: `str` *(required)*
 - `ComponentName`: `str` *(required)*
 
 Returns
-[DescribeComponentResponseTypeDef](./type_defs.md#describecomponentresponsetypedef).
+[DescribeComponentResponseResponseTypeDef](./type_defs.md#describecomponentresponseresponsetypedef).
 
 ### describe_component_configuration
+
+Describes the monitoring configuration of the component.
 
 Type annotations for
 `boto3.client("application-insights").describe_component_configuration` method.
@@ -235,15 +280,20 @@ Type annotations for
 Boto3 documentation:
 [ApplicationInsights.Client.describe_component_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_component_configuration)
 
+Arguments mapping described in
+[DescribeComponentConfigurationRequestTypeDef](./type_defs.md#describecomponentconfigurationrequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceGroupName`: `str` *(required)*
 - `ComponentName`: `str` *(required)*
 
 Returns
-[DescribeComponentConfigurationResponseTypeDef](./type_defs.md#describecomponentconfigurationresponsetypedef).
+[DescribeComponentConfigurationResponseResponseTypeDef](./type_defs.md#describecomponentconfigurationresponseresponsetypedef).
 
 ### describe_component_configuration_recommendation
+
+Describes the recommended monitoring configuration of the component.
 
 Type annotations for
 `boto3.client("application-insights").describe_component_configuration_recommendation`
@@ -252,6 +302,9 @@ method.
 Boto3 documentation:
 [ApplicationInsights.Client.describe_component_configuration_recommendation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_component_configuration_recommendation)
 
+Arguments mapping described in
+[DescribeComponentConfigurationRecommendationRequestTypeDef](./type_defs.md#describecomponentconfigurationrecommendationrequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceGroupName`: `str` *(required)*
@@ -259,15 +312,20 @@ Keyword-only arguments:
 - `Tier`: [TierType](./literals.md#tiertype) *(required)*
 
 Returns
-[DescribeComponentConfigurationRecommendationResponseTypeDef](./type_defs.md#describecomponentconfigurationrecommendationresponsetypedef).
+[DescribeComponentConfigurationRecommendationResponseResponseTypeDef](./type_defs.md#describecomponentconfigurationrecommendationresponseresponsetypedef).
 
 ### describe_log_pattern
+
+Describe a specific log pattern from a `LogPatternSet` .
 
 Type annotations for
 `boto3.client("application-insights").describe_log_pattern` method.
 
 Boto3 documentation:
 [ApplicationInsights.Client.describe_log_pattern](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_log_pattern)
+
+Arguments mapping described in
+[DescribeLogPatternRequestTypeDef](./type_defs.md#describelogpatternrequesttypedef).
 
 Keyword-only arguments:
 
@@ -276,9 +334,11 @@ Keyword-only arguments:
 - `PatternName`: `str` *(required)*
 
 Returns
-[DescribeLogPatternResponseTypeDef](./type_defs.md#describelogpatternresponsetypedef).
+[DescribeLogPatternResponseResponseTypeDef](./type_defs.md#describelogpatternresponseresponsetypedef).
 
 ### describe_observation
+
+Describes an anomaly or error with the application.
 
 Type annotations for
 `boto3.client("application-insights").describe_observation` method.
@@ -286,14 +346,19 @@ Type annotations for
 Boto3 documentation:
 [ApplicationInsights.Client.describe_observation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_observation)
 
+Arguments mapping described in
+[DescribeObservationRequestTypeDef](./type_defs.md#describeobservationrequesttypedef).
+
 Keyword-only arguments:
 
 - `ObservationId`: `str` *(required)*
 
 Returns
-[DescribeObservationResponseTypeDef](./type_defs.md#describeobservationresponsetypedef).
+[DescribeObservationResponseResponseTypeDef](./type_defs.md#describeobservationresponseresponsetypedef).
 
 ### describe_problem
+
+Describes an application problem.
 
 Type annotations for `boto3.client("application-insights").describe_problem`
 method.
@@ -301,14 +366,19 @@ method.
 Boto3 documentation:
 [ApplicationInsights.Client.describe_problem](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_problem)
 
+Arguments mapping described in
+[DescribeProblemRequestTypeDef](./type_defs.md#describeproblemrequesttypedef).
+
 Keyword-only arguments:
 
 - `ProblemId`: `str` *(required)*
 
 Returns
-[DescribeProblemResponseTypeDef](./type_defs.md#describeproblemresponsetypedef).
+[DescribeProblemResponseResponseTypeDef](./type_defs.md#describeproblemresponseresponsetypedef).
 
 ### describe_problem_observations
+
+Describes the anomalies or errors associated with the problem.
 
 Type annotations for
 `boto3.client("application-insights").describe_problem_observations` method.
@@ -316,14 +386,19 @@ Type annotations for
 Boto3 documentation:
 [ApplicationInsights.Client.describe_problem_observations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_problem_observations)
 
+Arguments mapping described in
+[DescribeProblemObservationsRequestTypeDef](./type_defs.md#describeproblemobservationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `ProblemId`: `str` *(required)*
 
 Returns
-[DescribeProblemObservationsResponseTypeDef](./type_defs.md#describeproblemobservationsresponsetypedef).
+[DescribeProblemObservationsResponseResponseTypeDef](./type_defs.md#describeproblemobservationsresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for
 `boto3.client("application-insights").generate_presigned_url` method.
@@ -342,11 +417,16 @@ Returns `str`.
 
 ### list_applications
 
+Lists the IDs of the applications that you are monitoring.
+
 Type annotations for `boto3.client("application-insights").list_applications`
 method.
 
 Boto3 documentation:
 [ApplicationInsights.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_applications)
+
+Arguments mapping described in
+[ListApplicationsRequestTypeDef](./type_defs.md#listapplicationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -354,9 +434,11 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef).
+[ListApplicationsResponseResponseTypeDef](./type_defs.md#listapplicationsresponseresponsetypedef).
 
 ### list_components
+
+Lists the auto-grouped, standalone, and custom components of the application.
 
 Type annotations for `boto3.client("application-insights").list_components`
 method.
@@ -364,6 +446,9 @@ method.
 Boto3 documentation:
 [ApplicationInsights.Client.list_components](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_components)
 
+Arguments mapping described in
+[ListComponentsRequestTypeDef](./type_defs.md#listcomponentsrequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceGroupName`: `str` *(required)*
@@ -371,9 +456,12 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListComponentsResponseTypeDef](./type_defs.md#listcomponentsresponsetypedef).
+[ListComponentsResponseResponseTypeDef](./type_defs.md#listcomponentsresponseresponsetypedef).
 
 ### list_configuration_history
+
+Lists the INFO, WARN, and ERROR events for periodic configuration updates
+performed by Application Insights.
 
 Type annotations for
 `boto3.client("application-insights").list_configuration_history` method.
@@ -381,26 +469,34 @@ Type annotations for
 Boto3 documentation:
 [ApplicationInsights.Client.list_configuration_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_configuration_history)
 
+Arguments mapping described in
+[ListConfigurationHistoryRequestTypeDef](./type_defs.md#listconfigurationhistoryrequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceGroupName`: `str`
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
 - `EventStatus`:
   [ConfigurationEventStatusType](./literals.md#configurationeventstatustype)
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListConfigurationHistoryResponseTypeDef](./type_defs.md#listconfigurationhistoryresponsetypedef).
+[ListConfigurationHistoryResponseResponseTypeDef](./type_defs.md#listconfigurationhistoryresponseresponsetypedef).
 
 ### list_log_pattern_sets
+
+Lists the log pattern sets in the specific application.
 
 Type annotations for
 `boto3.client("application-insights").list_log_pattern_sets` method.
 
 Boto3 documentation:
 [ApplicationInsights.Client.list_log_pattern_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_log_pattern_sets)
+
+Arguments mapping described in
+[ListLogPatternSetsRequestTypeDef](./type_defs.md#listlogpatternsetsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -409,15 +505,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListLogPatternSetsResponseTypeDef](./type_defs.md#listlogpatternsetsresponsetypedef).
+[ListLogPatternSetsResponseResponseTypeDef](./type_defs.md#listlogpatternsetsresponseresponsetypedef).
 
 ### list_log_patterns
+
+Lists the log patterns in the specific log `LogPatternSet` .
 
 Type annotations for `boto3.client("application-insights").list_log_patterns`
 method.
 
 Boto3 documentation:
 [ApplicationInsights.Client.list_log_patterns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_log_patterns)
+
+Arguments mapping described in
+[ListLogPatternsRequestTypeDef](./type_defs.md#listlogpatternsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -427,9 +528,11 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListLogPatternsResponseTypeDef](./type_defs.md#listlogpatternsresponsetypedef).
+[ListLogPatternsResponseResponseTypeDef](./type_defs.md#listlogpatternsresponseresponsetypedef).
 
 ### list_problems
+
+Lists the problems with your application.
 
 Type annotations for `boto3.client("application-insights").list_problems`
 method.
@@ -437,18 +540,24 @@ method.
 Boto3 documentation:
 [ApplicationInsights.Client.list_problems](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_problems)
 
+Arguments mapping described in
+[ListProblemsRequestTypeDef](./type_defs.md#listproblemsrequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceGroupName`: `str`
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListProblemsResponseTypeDef](./type_defs.md#listproblemsresponsetypedef).
+[ListProblemsResponseResponseTypeDef](./type_defs.md#listproblemsresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Retrieve a list of the tags (keys and values) that are associated with a
+specified application.
 
 Type annotations for
 `boto3.client("application-insights").list_tags_for_resource` method.
@@ -456,20 +565,28 @@ Type annotations for
 Boto3 documentation:
 [ApplicationInsights.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### tag_resource
+
+Add one or more tags (keys and values) to a specified application.
 
 Type annotations for `boto3.client("application-insights").tag_resource`
 method.
 
 Boto3 documentation:
 [ApplicationInsights.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -480,11 +597,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Remove one or more tags (keys and values) from a specified application.
+
 Type annotations for `boto3.client("application-insights").untag_resource`
 method.
 
 Boto3 documentation:
 [ApplicationInsights.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -495,11 +617,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_application
 
+Updates the application.
+
 Type annotations for `boto3.client("application-insights").update_application`
 method.
 
 Boto3 documentation:
 [ApplicationInsights.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_application)
+
+Arguments mapping described in
+[UpdateApplicationRequestTypeDef](./type_defs.md#updateapplicationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -510,15 +637,21 @@ Keyword-only arguments:
 - `RemoveSNSTopic`: `bool`
 
 Returns
-[UpdateApplicationResponseTypeDef](./type_defs.md#updateapplicationresponsetypedef).
+[UpdateApplicationResponseResponseTypeDef](./type_defs.md#updateapplicationresponseresponsetypedef).
 
 ### update_component
+
+Updates the custom component name and/or the list of resources that make up the
+component.
 
 Type annotations for `boto3.client("application-insights").update_component`
 method.
 
 Boto3 documentation:
 [ApplicationInsights.Client.update_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_component)
+
+Arguments mapping described in
+[UpdateComponentRequestTypeDef](./type_defs.md#updatecomponentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -531,11 +664,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_component_configuration
 
+Updates the monitoring configurations for the component.
+
 Type annotations for
 `boto3.client("application-insights").update_component_configuration` method.
 
 Boto3 documentation:
 [ApplicationInsights.Client.update_component_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_component_configuration)
+
+Arguments mapping described in
+[UpdateComponentConfigurationRequestTypeDef](./type_defs.md#updatecomponentconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -549,11 +687,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_log_pattern
 
+Adds a log pattern to a `LogPatternSet` .
+
 Type annotations for `boto3.client("application-insights").update_log_pattern`
 method.
 
 Boto3 documentation:
 [ApplicationInsights.Client.update_log_pattern](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_log_pattern)
+
+Arguments mapping described in
+[UpdateLogPatternRequestTypeDef](./type_defs.md#updatelogpatternrequesttypedef).
 
 Keyword-only arguments:
 
@@ -564,4 +707,4 @@ Keyword-only arguments:
 - `Rank`: `int`
 
 Returns
-[UpdateLogPatternResponseTypeDef](./type_defs.md#updatelogpatternresponsetypedef).
+[UpdateLogPatternResponseResponseTypeDef](./type_defs.md#updatelogpatternresponseresponsetypedef).

@@ -25,7 +25,7 @@ def get_fleet_started_waiter() -> FleetStartedWaiter:
 ```
 
 Boto3 documentation:
-[AppStream.Waiter.fleet_started](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Waiter.fleet_started)
+[AppStream.Waiter.fleet_started](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Waiter.FleetStarted)
 
 Arguments for `FleetStartedWaiter.wait` method:
 
@@ -47,7 +47,7 @@ def get_fleet_stopped_waiter() -> FleetStoppedWaiter:
 ```
 
 Boto3 documentation:
-[AppStream.Waiter.fleet_stopped](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Waiter.fleet_stopped)
+[AppStream.Waiter.fleet_stopped](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Waiter.FleetStopped)
 
 Arguments for `FleetStoppedWaiter.wait` method:
 

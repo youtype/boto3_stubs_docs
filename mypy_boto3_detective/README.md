@@ -81,18 +81,34 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_detective.type_defs import AccountTypeDef, ...
+from mypy_boto3_detective.type_defs import AcceptInvitationRequestTypeDef, ...
 ```
 
+- [AcceptInvitationRequestTypeDef](./type_defs.md#acceptinvitationrequesttypedef)
 - [AccountTypeDef](./type_defs.md#accounttypedef)
-- [CreateGraphResponseTypeDef](./type_defs.md#creategraphresponsetypedef)
-- [CreateMembersResponseTypeDef](./type_defs.md#createmembersresponsetypedef)
-- [DeleteMembersResponseTypeDef](./type_defs.md#deletemembersresponsetypedef)
-- [GetMembersResponseTypeDef](./type_defs.md#getmembersresponsetypedef)
+- [CreateGraphRequestTypeDef](./type_defs.md#creategraphrequesttypedef)
+- [CreateGraphResponseResponseTypeDef](./type_defs.md#creategraphresponseresponsetypedef)
+- [CreateMembersRequestTypeDef](./type_defs.md#createmembersrequesttypedef)
+- [CreateMembersResponseResponseTypeDef](./type_defs.md#createmembersresponseresponsetypedef)
+- [DeleteGraphRequestTypeDef](./type_defs.md#deletegraphrequesttypedef)
+- [DeleteMembersRequestTypeDef](./type_defs.md#deletemembersrequesttypedef)
+- [DeleteMembersResponseResponseTypeDef](./type_defs.md#deletemembersresponseresponsetypedef)
+- [DisassociateMembershipRequestTypeDef](./type_defs.md#disassociatemembershiprequesttypedef)
+- [GetMembersRequestTypeDef](./type_defs.md#getmembersrequesttypedef)
+- [GetMembersResponseResponseTypeDef](./type_defs.md#getmembersresponseresponsetypedef)
 - [GraphTypeDef](./type_defs.md#graphtypedef)
-- [ListGraphsResponseTypeDef](./type_defs.md#listgraphsresponsetypedef)
-- [ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef)
-- [ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef)
-- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [ListGraphsRequestTypeDef](./type_defs.md#listgraphsrequesttypedef)
+- [ListGraphsResponseResponseTypeDef](./type_defs.md#listgraphsresponseresponsetypedef)
+- [ListInvitationsRequestTypeDef](./type_defs.md#listinvitationsrequesttypedef)
+- [ListInvitationsResponseResponseTypeDef](./type_defs.md#listinvitationsresponseresponsetypedef)
+- [ListMembersRequestTypeDef](./type_defs.md#listmembersrequesttypedef)
+- [ListMembersResponseResponseTypeDef](./type_defs.md#listmembersresponseresponsetypedef)
+- [ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef)
+- [ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef)
 - [MemberDetailTypeDef](./type_defs.md#memberdetailtypedef)
+- [RejectInvitationRequestTypeDef](./type_defs.md#rejectinvitationrequesttypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [StartMonitoringMemberRequestTypeDef](./type_defs.md#startmonitoringmemberrequesttypedef)
+- [TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef)
 - [UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)
+- [UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef)

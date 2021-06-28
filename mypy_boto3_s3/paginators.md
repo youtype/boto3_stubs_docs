@@ -43,7 +43,7 @@ Arguments for `ListMultipartUploadsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMultipartUploadsPaginator.paginate` returns
-`Iterator`\[[ListMultipartUploadsOutputTypeDef](./type_defs.md#listmultipartuploadsoutputtypedef)\].
+`Iterator`\[[ListMultipartUploadsOutputResponseTypeDef](./type_defs.md#listmultipartuploadsoutputresponsetypedef)\].
 
 ## ListObjectVersionsPaginator
 
@@ -74,7 +74,7 @@ Arguments for `ListObjectVersionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListObjectVersionsPaginator.paginate` returns
-`Iterator`\[[ListObjectVersionsOutputTypeDef](./type_defs.md#listobjectversionsoutputtypedef)\].
+`Iterator`\[[ListObjectVersionsOutputResponseTypeDef](./type_defs.md#listobjectversionsoutputresponsetypedef)\].
 
 ## ListObjectsPaginator
 
@@ -106,7 +106,7 @@ Arguments for `ListObjectsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListObjectsPaginator.paginate` returns
-`Iterator`\[[ListObjectsOutputTypeDef](./type_defs.md#listobjectsoutputtypedef)\].
+`Iterator`\[[ListObjectsOutputResponseTypeDef](./type_defs.md#listobjectsoutputresponsetypedef)\].
 
 ## ListObjectsV2Paginator
 
@@ -140,7 +140,7 @@ Arguments for `ListObjectsV2Paginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListObjectsV2Paginator.paginate` returns
-`Iterator`\[[ListObjectsV2OutputTypeDef](./type_defs.md#listobjectsv2outputtypedef)\].
+`Iterator`\[[ListObjectsV2OutputResponseTypeDef](./type_defs.md#listobjectsv2outputresponsetypedef)\].
 
 ## ListPartsPaginator
 
@@ -170,4 +170,4 @@ Arguments for `ListPartsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPartsPaginator.paginate` returns
-`Iterator`\[[ListPartsOutputTypeDef](./type_defs.md#listpartsoutputtypedef)\].
+`Iterator`\[[ListPartsOutputResponseTypeDef](./type_defs.md#listpartsoutputresponsetypedef)\].

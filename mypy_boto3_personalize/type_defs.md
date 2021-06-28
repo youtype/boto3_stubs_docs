@@ -23,17 +23,28 @@ type annotations stubs module
   - [CampaignUpdateSummaryTypeDef](#campaignupdatesummarytypedef)
   - [CategoricalHyperParameterRangeTypeDef](#categoricalhyperparameterrangetypedef)
   - [ContinuousHyperParameterRangeTypeDef](#continuoushyperparameterrangetypedef)
-  - [CreateBatchInferenceJobResponseTypeDef](#createbatchinferencejobresponsetypedef)
-  - [CreateCampaignResponseTypeDef](#createcampaignresponsetypedef)
-  - [CreateDatasetExportJobResponseTypeDef](#createdatasetexportjobresponsetypedef)
-  - [CreateDatasetGroupResponseTypeDef](#createdatasetgroupresponsetypedef)
-  - [CreateDatasetImportJobResponseTypeDef](#createdatasetimportjobresponsetypedef)
-  - [CreateDatasetResponseTypeDef](#createdatasetresponsetypedef)
-  - [CreateEventTrackerResponseTypeDef](#createeventtrackerresponsetypedef)
-  - [CreateFilterResponseTypeDef](#createfilterresponsetypedef)
-  - [CreateSchemaResponseTypeDef](#createschemaresponsetypedef)
-  - [CreateSolutionResponseTypeDef](#createsolutionresponsetypedef)
-  - [CreateSolutionVersionResponseTypeDef](#createsolutionversionresponsetypedef)
+  - [CreateBatchInferenceJobRequestTypeDef](#createbatchinferencejobrequesttypedef)
+  - [CreateBatchInferenceJobResponseResponseTypeDef](#createbatchinferencejobresponseresponsetypedef)
+  - [CreateCampaignRequestTypeDef](#createcampaignrequesttypedef)
+  - [CreateCampaignResponseResponseTypeDef](#createcampaignresponseresponsetypedef)
+  - [CreateDatasetExportJobRequestTypeDef](#createdatasetexportjobrequesttypedef)
+  - [CreateDatasetExportJobResponseResponseTypeDef](#createdatasetexportjobresponseresponsetypedef)
+  - [CreateDatasetGroupRequestTypeDef](#createdatasetgrouprequesttypedef)
+  - [CreateDatasetGroupResponseResponseTypeDef](#createdatasetgroupresponseresponsetypedef)
+  - [CreateDatasetImportJobRequestTypeDef](#createdatasetimportjobrequesttypedef)
+  - [CreateDatasetImportJobResponseResponseTypeDef](#createdatasetimportjobresponseresponsetypedef)
+  - [CreateDatasetRequestTypeDef](#createdatasetrequesttypedef)
+  - [CreateDatasetResponseResponseTypeDef](#createdatasetresponseresponsetypedef)
+  - [CreateEventTrackerRequestTypeDef](#createeventtrackerrequesttypedef)
+  - [CreateEventTrackerResponseResponseTypeDef](#createeventtrackerresponseresponsetypedef)
+  - [CreateFilterRequestTypeDef](#createfilterrequesttypedef)
+  - [CreateFilterResponseResponseTypeDef](#createfilterresponseresponsetypedef)
+  - [CreateSchemaRequestTypeDef](#createschemarequesttypedef)
+  - [CreateSchemaResponseResponseTypeDef](#createschemaresponseresponsetypedef)
+  - [CreateSolutionRequestTypeDef](#createsolutionrequesttypedef)
+  - [CreateSolutionResponseResponseTypeDef](#createsolutionresponseresponsetypedef)
+  - [CreateSolutionVersionRequestTypeDef](#createsolutionversionrequesttypedef)
+  - [CreateSolutionVersionResponseResponseTypeDef](#createsolutionversionresponseresponsetypedef)
   - [DataSourceTypeDef](#datasourcetypedef)
   - [DatasetExportJobOutputTypeDef](#datasetexportjoboutputtypedef)
   - [DatasetExportJobSummaryTypeDef](#datasetexportjobsummarytypedef)
@@ -50,43 +61,77 @@ type annotations stubs module
   - [DefaultContinuousHyperParameterRangeTypeDef](#defaultcontinuoushyperparameterrangetypedef)
   - [DefaultHyperParameterRangesTypeDef](#defaulthyperparameterrangestypedef)
   - [DefaultIntegerHyperParameterRangeTypeDef](#defaultintegerhyperparameterrangetypedef)
-  - [DescribeAlgorithmResponseTypeDef](#describealgorithmresponsetypedef)
-  - [DescribeBatchInferenceJobResponseTypeDef](#describebatchinferencejobresponsetypedef)
-  - [DescribeCampaignResponseTypeDef](#describecampaignresponsetypedef)
-  - [DescribeDatasetExportJobResponseTypeDef](#describedatasetexportjobresponsetypedef)
-  - [DescribeDatasetGroupResponseTypeDef](#describedatasetgroupresponsetypedef)
-  - [DescribeDatasetImportJobResponseTypeDef](#describedatasetimportjobresponsetypedef)
-  - [DescribeDatasetResponseTypeDef](#describedatasetresponsetypedef)
-  - [DescribeEventTrackerResponseTypeDef](#describeeventtrackerresponsetypedef)
-  - [DescribeFeatureTransformationResponseTypeDef](#describefeaturetransformationresponsetypedef)
-  - [DescribeFilterResponseTypeDef](#describefilterresponsetypedef)
-  - [DescribeRecipeResponseTypeDef](#describereciperesponsetypedef)
-  - [DescribeSchemaResponseTypeDef](#describeschemaresponsetypedef)
-  - [DescribeSolutionResponseTypeDef](#describesolutionresponsetypedef)
-  - [DescribeSolutionVersionResponseTypeDef](#describesolutionversionresponsetypedef)
+  - [DeleteCampaignRequestTypeDef](#deletecampaignrequesttypedef)
+  - [DeleteDatasetGroupRequestTypeDef](#deletedatasetgrouprequesttypedef)
+  - [DeleteDatasetRequestTypeDef](#deletedatasetrequesttypedef)
+  - [DeleteEventTrackerRequestTypeDef](#deleteeventtrackerrequesttypedef)
+  - [DeleteFilterRequestTypeDef](#deletefilterrequesttypedef)
+  - [DeleteSchemaRequestTypeDef](#deleteschemarequesttypedef)
+  - [DeleteSolutionRequestTypeDef](#deletesolutionrequesttypedef)
+  - [DescribeAlgorithmRequestTypeDef](#describealgorithmrequesttypedef)
+  - [DescribeAlgorithmResponseResponseTypeDef](#describealgorithmresponseresponsetypedef)
+  - [DescribeBatchInferenceJobRequestTypeDef](#describebatchinferencejobrequesttypedef)
+  - [DescribeBatchInferenceJobResponseResponseTypeDef](#describebatchinferencejobresponseresponsetypedef)
+  - [DescribeCampaignRequestTypeDef](#describecampaignrequesttypedef)
+  - [DescribeCampaignResponseResponseTypeDef](#describecampaignresponseresponsetypedef)
+  - [DescribeDatasetExportJobRequestTypeDef](#describedatasetexportjobrequesttypedef)
+  - [DescribeDatasetExportJobResponseResponseTypeDef](#describedatasetexportjobresponseresponsetypedef)
+  - [DescribeDatasetGroupRequestTypeDef](#describedatasetgrouprequesttypedef)
+  - [DescribeDatasetGroupResponseResponseTypeDef](#describedatasetgroupresponseresponsetypedef)
+  - [DescribeDatasetImportJobRequestTypeDef](#describedatasetimportjobrequesttypedef)
+  - [DescribeDatasetImportJobResponseResponseTypeDef](#describedatasetimportjobresponseresponsetypedef)
+  - [DescribeDatasetRequestTypeDef](#describedatasetrequesttypedef)
+  - [DescribeDatasetResponseResponseTypeDef](#describedatasetresponseresponsetypedef)
+  - [DescribeEventTrackerRequestTypeDef](#describeeventtrackerrequesttypedef)
+  - [DescribeEventTrackerResponseResponseTypeDef](#describeeventtrackerresponseresponsetypedef)
+  - [DescribeFeatureTransformationRequestTypeDef](#describefeaturetransformationrequesttypedef)
+  - [DescribeFeatureTransformationResponseResponseTypeDef](#describefeaturetransformationresponseresponsetypedef)
+  - [DescribeFilterRequestTypeDef](#describefilterrequesttypedef)
+  - [DescribeFilterResponseResponseTypeDef](#describefilterresponseresponsetypedef)
+  - [DescribeRecipeRequestTypeDef](#describereciperequesttypedef)
+  - [DescribeRecipeResponseResponseTypeDef](#describereciperesponseresponsetypedef)
+  - [DescribeSchemaRequestTypeDef](#describeschemarequesttypedef)
+  - [DescribeSchemaResponseResponseTypeDef](#describeschemaresponseresponsetypedef)
+  - [DescribeSolutionRequestTypeDef](#describesolutionrequesttypedef)
+  - [DescribeSolutionResponseResponseTypeDef](#describesolutionresponseresponsetypedef)
+  - [DescribeSolutionVersionRequestTypeDef](#describesolutionversionrequesttypedef)
+  - [DescribeSolutionVersionResponseResponseTypeDef](#describesolutionversionresponseresponsetypedef)
   - [EventTrackerSummaryTypeDef](#eventtrackersummarytypedef)
   - [EventTrackerTypeDef](#eventtrackertypedef)
   - [FeatureTransformationTypeDef](#featuretransformationtypedef)
   - [FilterSummaryTypeDef](#filtersummarytypedef)
   - [FilterTypeDef](#filtertypedef)
-  - [GetSolutionMetricsResponseTypeDef](#getsolutionmetricsresponsetypedef)
+  - [GetSolutionMetricsRequestTypeDef](#getsolutionmetricsrequesttypedef)
+  - [GetSolutionMetricsResponseResponseTypeDef](#getsolutionmetricsresponseresponsetypedef)
   - [HPOConfigTypeDef](#hpoconfigtypedef)
   - [HPOObjectiveTypeDef](#hpoobjectivetypedef)
   - [HPOResourceConfigTypeDef](#hporesourceconfigtypedef)
   - [HyperParameterRangesTypeDef](#hyperparameterrangestypedef)
   - [IntegerHyperParameterRangeTypeDef](#integerhyperparameterrangetypedef)
-  - [ListBatchInferenceJobsResponseTypeDef](#listbatchinferencejobsresponsetypedef)
-  - [ListCampaignsResponseTypeDef](#listcampaignsresponsetypedef)
-  - [ListDatasetExportJobsResponseTypeDef](#listdatasetexportjobsresponsetypedef)
-  - [ListDatasetGroupsResponseTypeDef](#listdatasetgroupsresponsetypedef)
-  - [ListDatasetImportJobsResponseTypeDef](#listdatasetimportjobsresponsetypedef)
-  - [ListDatasetsResponseTypeDef](#listdatasetsresponsetypedef)
-  - [ListEventTrackersResponseTypeDef](#listeventtrackersresponsetypedef)
-  - [ListFiltersResponseTypeDef](#listfiltersresponsetypedef)
-  - [ListRecipesResponseTypeDef](#listrecipesresponsetypedef)
-  - [ListSchemasResponseTypeDef](#listschemasresponsetypedef)
-  - [ListSolutionVersionsResponseTypeDef](#listsolutionversionsresponsetypedef)
-  - [ListSolutionsResponseTypeDef](#listsolutionsresponsetypedef)
+  - [ListBatchInferenceJobsRequestTypeDef](#listbatchinferencejobsrequesttypedef)
+  - [ListBatchInferenceJobsResponseResponseTypeDef](#listbatchinferencejobsresponseresponsetypedef)
+  - [ListCampaignsRequestTypeDef](#listcampaignsrequesttypedef)
+  - [ListCampaignsResponseResponseTypeDef](#listcampaignsresponseresponsetypedef)
+  - [ListDatasetExportJobsRequestTypeDef](#listdatasetexportjobsrequesttypedef)
+  - [ListDatasetExportJobsResponseResponseTypeDef](#listdatasetexportjobsresponseresponsetypedef)
+  - [ListDatasetGroupsRequestTypeDef](#listdatasetgroupsrequesttypedef)
+  - [ListDatasetGroupsResponseResponseTypeDef](#listdatasetgroupsresponseresponsetypedef)
+  - [ListDatasetImportJobsRequestTypeDef](#listdatasetimportjobsrequesttypedef)
+  - [ListDatasetImportJobsResponseResponseTypeDef](#listdatasetimportjobsresponseresponsetypedef)
+  - [ListDatasetsRequestTypeDef](#listdatasetsrequesttypedef)
+  - [ListDatasetsResponseResponseTypeDef](#listdatasetsresponseresponsetypedef)
+  - [ListEventTrackersRequestTypeDef](#listeventtrackersrequesttypedef)
+  - [ListEventTrackersResponseResponseTypeDef](#listeventtrackersresponseresponsetypedef)
+  - [ListFiltersRequestTypeDef](#listfiltersrequesttypedef)
+  - [ListFiltersResponseResponseTypeDef](#listfiltersresponseresponsetypedef)
+  - [ListRecipesRequestTypeDef](#listrecipesrequesttypedef)
+  - [ListRecipesResponseResponseTypeDef](#listrecipesresponseresponsetypedef)
+  - [ListSchemasRequestTypeDef](#listschemasrequesttypedef)
+  - [ListSchemasResponseResponseTypeDef](#listschemasresponseresponsetypedef)
+  - [ListSolutionVersionsRequestTypeDef](#listsolutionversionsrequesttypedef)
+  - [ListSolutionVersionsResponseResponseTypeDef](#listsolutionversionsresponseresponsetypedef)
+  - [ListSolutionsRequestTypeDef](#listsolutionsrequesttypedef)
+  - [ListSolutionsResponseResponseTypeDef](#listsolutionsresponseresponsetypedef)
   - [OptimizationObjectiveTypeDef](#optimizationobjectivetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [RecipeSummaryTypeDef](#recipesummarytypedef)
@@ -98,8 +143,10 @@ type annotations stubs module
   - [SolutionTypeDef](#solutiontypedef)
   - [SolutionVersionSummaryTypeDef](#solutionversionsummarytypedef)
   - [SolutionVersionTypeDef](#solutionversiontypedef)
+  - [StopSolutionVersionCreationRequestTypeDef](#stopsolutionversioncreationrequesttypedef)
   - [TunedHPOParamsTypeDef](#tunedhpoparamstypedef)
-  - [UpdateCampaignResponseTypeDef](#updatecampaignresponsetypedef)
+  - [UpdateCampaignRequestTypeDef](#updatecampaignrequesttypedef)
+  - [UpdateCampaignResponseResponseTypeDef](#updatecampaignresponseresponsetypedef)
 
 ## AlgorithmImageTypeDef
 
@@ -187,8 +234,6 @@ Required fields:
 
 - `s3DataDestination`:
   [S3DataConfigTypeDef](./type_defs.md#s3dataconfigtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## BatchInferenceJobSummaryTypeDef
 
@@ -317,116 +362,305 @@ Optional fields:
 - `minValue`: `float`
 - `maxValue`: `float`
 
-## CreateBatchInferenceJobResponseTypeDef
+## CreateBatchInferenceJobRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import CreateBatchInferenceJobResponseTypeDef
+from mypy_boto3_personalize.type_defs import CreateBatchInferenceJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
-- `batchInferenceJobArn`: `str`
-
-## CreateCampaignResponseTypeDef
-
-```python
-from mypy_boto3_personalize.type_defs import CreateCampaignResponseTypeDef
-```
-
-Optional fields:
-
-- `campaignArn`: `str`
-
-## CreateDatasetExportJobResponseTypeDef
-
-```python
-from mypy_boto3_personalize.type_defs import CreateDatasetExportJobResponseTypeDef
-```
-
-Optional fields:
-
-- `datasetExportJobArn`: `str`
-
-## CreateDatasetGroupResponseTypeDef
-
-```python
-from mypy_boto3_personalize.type_defs import CreateDatasetGroupResponseTypeDef
-```
-
-Optional fields:
-
-- `datasetGroupArn`: `str`
-
-## CreateDatasetImportJobResponseTypeDef
-
-```python
-from mypy_boto3_personalize.type_defs import CreateDatasetImportJobResponseTypeDef
-```
-
-Optional fields:
-
-- `datasetImportJobArn`: `str`
-
-## CreateDatasetResponseTypeDef
-
-```python
-from mypy_boto3_personalize.type_defs import CreateDatasetResponseTypeDef
-```
-
-Optional fields:
-
-- `datasetArn`: `str`
-
-## CreateEventTrackerResponseTypeDef
-
-```python
-from mypy_boto3_personalize.type_defs import CreateEventTrackerResponseTypeDef
-```
-
-Optional fields:
-
-- `eventTrackerArn`: `str`
-- `trackingId`: `str`
-
-## CreateFilterResponseTypeDef
-
-```python
-from mypy_boto3_personalize.type_defs import CreateFilterResponseTypeDef
-```
+- `jobName`: `str`
+- `solutionVersionArn`: `str`
+- `jobInput`:
+  [BatchInferenceJobInputTypeDef](./type_defs.md#batchinferencejobinputtypedef)
+- `jobOutput`:
+  [BatchInferenceJobOutputTypeDef](./type_defs.md#batchinferencejoboutputtypedef)
+- `roleArn`: `str`
 
 Optional fields:
 
 - `filterArn`: `str`
+- `numResults`: `int`
+- `batchInferenceJobConfig`:
+  [BatchInferenceJobConfigTypeDef](./type_defs.md#batchinferencejobconfigtypedef)
 
-## CreateSchemaResponseTypeDef
+## CreateBatchInferenceJobResponseResponseTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import CreateSchemaResponseTypeDef
+from mypy_boto3_personalize.type_defs import CreateBatchInferenceJobResponseResponseTypeDef
 ```
 
+Required fields:
+
+- `batchInferenceJobArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateCampaignRequestTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import CreateCampaignRequestTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+- `solutionVersionArn`: `str`
+- `minProvisionedTPS`: `int`
+
 Optional fields:
+
+- `campaignConfig`:
+  [CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef)
+
+## CreateCampaignResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import CreateCampaignResponseResponseTypeDef
+```
+
+Required fields:
+
+- `campaignArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateDatasetExportJobRequestTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import CreateDatasetExportJobRequestTypeDef
+```
+
+Required fields:
+
+- `jobName`: `str`
+- `datasetArn`: `str`
+- `roleArn`: `str`
+- `jobOutput`:
+  [DatasetExportJobOutputTypeDef](./type_defs.md#datasetexportjoboutputtypedef)
+
+Optional fields:
+
+- `ingestionMode`: [IngestionModeType](./literals.md#ingestionmodetype)
+
+## CreateDatasetExportJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import CreateDatasetExportJobResponseResponseTypeDef
+```
+
+Required fields:
+
+- `datasetExportJobArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateDatasetGroupRequestTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import CreateDatasetGroupRequestTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+
+Optional fields:
+
+- `roleArn`: `str`
+- `kmsKeyArn`: `str`
+
+## CreateDatasetGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import CreateDatasetGroupResponseResponseTypeDef
+```
+
+Required fields:
+
+- `datasetGroupArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateDatasetImportJobRequestTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import CreateDatasetImportJobRequestTypeDef
+```
+
+Required fields:
+
+- `jobName`: `str`
+- `datasetArn`: `str`
+- `dataSource`: [DataSourceTypeDef](./type_defs.md#datasourcetypedef)
+- `roleArn`: `str`
+
+## CreateDatasetImportJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import CreateDatasetImportJobResponseResponseTypeDef
+```
+
+Required fields:
+
+- `datasetImportJobArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateDatasetRequestTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import CreateDatasetRequestTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+- `schemaArn`: `str`
+- `datasetGroupArn`: `str`
+- `datasetType`: `str`
+
+## CreateDatasetResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import CreateDatasetResponseResponseTypeDef
+```
+
+Required fields:
+
+- `datasetArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateEventTrackerRequestTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import CreateEventTrackerRequestTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+- `datasetGroupArn`: `str`
+
+## CreateEventTrackerResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import CreateEventTrackerResponseResponseTypeDef
+```
+
+Required fields:
+
+- `eventTrackerArn`: `str`
+- `trackingId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateFilterRequestTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import CreateFilterRequestTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+- `datasetGroupArn`: `str`
+- `filterExpression`: `str`
+
+## CreateFilterResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import CreateFilterResponseResponseTypeDef
+```
+
+Required fields:
+
+- `filterArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateSchemaRequestTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import CreateSchemaRequestTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+- `schema`: `str`
+
+## CreateSchemaResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import CreateSchemaResponseResponseTypeDef
+```
+
+Required fields:
 
 - `schemaArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateSolutionResponseTypeDef
+## CreateSolutionRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import CreateSolutionResponseTypeDef
+from mypy_boto3_personalize.type_defs import CreateSolutionRequestTypeDef
 ```
 
+Required fields:
+
+- `name`: `str`
+- `datasetGroupArn`: `str`
+
 Optional fields:
+
+- `performHPO`: `bool`
+- `performAutoML`: `bool`
+- `recipeArn`: `str`
+- `eventType`: `str`
+- `solutionConfig`:
+  [SolutionConfigTypeDef](./type_defs.md#solutionconfigtypedef)
+
+## CreateSolutionResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import CreateSolutionResponseResponseTypeDef
+```
+
+Required fields:
+
+- `solutionArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateSolutionVersionRequestTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import CreateSolutionVersionRequestTypeDef
+```
+
+Required fields:
 
 - `solutionArn`: `str`
 
-## CreateSolutionVersionResponseTypeDef
-
-```python
-from mypy_boto3_personalize.type_defs import CreateSolutionVersionResponseTypeDef
-```
-
 Optional fields:
 
+- `trainingMode`: [TrainingModeType](./literals.md#trainingmodetype)
+
+## CreateSolutionVersionResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import CreateSolutionVersionResponseResponseTypeDef
+```
+
+Required fields:
+
 - `solutionVersionArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DataSourceTypeDef
 
@@ -448,8 +682,6 @@ Required fields:
 
 - `s3DataDestination`:
   [S3DataConfigTypeDef](./type_defs.md#s3dataconfigtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DatasetExportJobSummaryTypeDef
 
@@ -663,150 +895,388 @@ Optional fields:
 - `maxValue`: `int`
 - `isTunable`: `bool`
 
-## DescribeAlgorithmResponseTypeDef
+## DeleteCampaignRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import DescribeAlgorithmResponseTypeDef
+from mypy_boto3_personalize.type_defs import DeleteCampaignRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `campaignArn`: `str`
+
+## DeleteDatasetGroupRequestTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import DeleteDatasetGroupRequestTypeDef
+```
+
+Required fields:
+
+- `datasetGroupArn`: `str`
+
+## DeleteDatasetRequestTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import DeleteDatasetRequestTypeDef
+```
+
+Required fields:
+
+- `datasetArn`: `str`
+
+## DeleteEventTrackerRequestTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import DeleteEventTrackerRequestTypeDef
+```
+
+Required fields:
+
+- `eventTrackerArn`: `str`
+
+## DeleteFilterRequestTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import DeleteFilterRequestTypeDef
+```
+
+Required fields:
+
+- `filterArn`: `str`
+
+## DeleteSchemaRequestTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import DeleteSchemaRequestTypeDef
+```
+
+Required fields:
+
+- `schemaArn`: `str`
+
+## DeleteSolutionRequestTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import DeleteSolutionRequestTypeDef
+```
+
+Required fields:
+
+- `solutionArn`: `str`
+
+## DescribeAlgorithmRequestTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import DescribeAlgorithmRequestTypeDef
+```
+
+Required fields:
+
+- `algorithmArn`: `str`
+
+## DescribeAlgorithmResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import DescribeAlgorithmResponseResponseTypeDef
+```
+
+Required fields:
 
 - `algorithm`: [AlgorithmTypeDef](./type_defs.md#algorithmtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeBatchInferenceJobResponseTypeDef
+## DescribeBatchInferenceJobRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import DescribeBatchInferenceJobResponseTypeDef
+from mypy_boto3_personalize.type_defs import DescribeBatchInferenceJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `batchInferenceJobArn`: `str`
+
+## DescribeBatchInferenceJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import DescribeBatchInferenceJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `batchInferenceJob`:
   [BatchInferenceJobTypeDef](./type_defs.md#batchinferencejobtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeCampaignResponseTypeDef
+## DescribeCampaignRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import DescribeCampaignResponseTypeDef
+from mypy_boto3_personalize.type_defs import DescribeCampaignRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `campaignArn`: `str`
+
+## DescribeCampaignResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import DescribeCampaignResponseResponseTypeDef
+```
+
+Required fields:
 
 - `campaign`: [CampaignTypeDef](./type_defs.md#campaigntypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDatasetExportJobResponseTypeDef
+## DescribeDatasetExportJobRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import DescribeDatasetExportJobResponseTypeDef
+from mypy_boto3_personalize.type_defs import DescribeDatasetExportJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `datasetExportJobArn`: `str`
+
+## DescribeDatasetExportJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import DescribeDatasetExportJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `datasetExportJob`:
   [DatasetExportJobTypeDef](./type_defs.md#datasetexportjobtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDatasetGroupResponseTypeDef
+## DescribeDatasetGroupRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import DescribeDatasetGroupResponseTypeDef
+from mypy_boto3_personalize.type_defs import DescribeDatasetGroupRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `datasetGroupArn`: `str`
+
+## DescribeDatasetGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import DescribeDatasetGroupResponseResponseTypeDef
+```
+
+Required fields:
 
 - `datasetGroup`: [DatasetGroupTypeDef](./type_defs.md#datasetgrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDatasetImportJobResponseTypeDef
+## DescribeDatasetImportJobRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import DescribeDatasetImportJobResponseTypeDef
+from mypy_boto3_personalize.type_defs import DescribeDatasetImportJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `datasetImportJobArn`: `str`
+
+## DescribeDatasetImportJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import DescribeDatasetImportJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `datasetImportJob`:
   [DatasetImportJobTypeDef](./type_defs.md#datasetimportjobtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDatasetResponseTypeDef
+## DescribeDatasetRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import DescribeDatasetResponseTypeDef
+from mypy_boto3_personalize.type_defs import DescribeDatasetRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `datasetArn`: `str`
+
+## DescribeDatasetResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import DescribeDatasetResponseResponseTypeDef
+```
+
+Required fields:
 
 - `dataset`: [DatasetTypeDef](./type_defs.md#datasettypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEventTrackerResponseTypeDef
+## DescribeEventTrackerRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import DescribeEventTrackerResponseTypeDef
+from mypy_boto3_personalize.type_defs import DescribeEventTrackerRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `eventTrackerArn`: `str`
+
+## DescribeEventTrackerResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import DescribeEventTrackerResponseResponseTypeDef
+```
+
+Required fields:
 
 - `eventTracker`: [EventTrackerTypeDef](./type_defs.md#eventtrackertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFeatureTransformationResponseTypeDef
+## DescribeFeatureTransformationRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import DescribeFeatureTransformationResponseTypeDef
+from mypy_boto3_personalize.type_defs import DescribeFeatureTransformationRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `featureTransformationArn`: `str`
+
+## DescribeFeatureTransformationResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import DescribeFeatureTransformationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `featureTransformation`:
   [FeatureTransformationTypeDef](./type_defs.md#featuretransformationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFilterResponseTypeDef
+## DescribeFilterRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import DescribeFilterResponseTypeDef
+from mypy_boto3_personalize.type_defs import DescribeFilterRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `filterArn`: `str`
+
+## DescribeFilterResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import DescribeFilterResponseResponseTypeDef
+```
+
+Required fields:
 
 - `filter`: [FilterTypeDef](./type_defs.md#filtertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeRecipeResponseTypeDef
+## DescribeRecipeRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import DescribeRecipeResponseTypeDef
+from mypy_boto3_personalize.type_defs import DescribeRecipeRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `recipeArn`: `str`
+
+## DescribeRecipeResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import DescribeRecipeResponseResponseTypeDef
+```
+
+Required fields:
 
 - `recipe`: [RecipeTypeDef](./type_defs.md#recipetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSchemaResponseTypeDef
+## DescribeSchemaRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import DescribeSchemaResponseTypeDef
+from mypy_boto3_personalize.type_defs import DescribeSchemaRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `schemaArn`: `str`
+
+## DescribeSchemaResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import DescribeSchemaResponseResponseTypeDef
+```
+
+Required fields:
 
 - `schema`: [DatasetSchemaTypeDef](./type_defs.md#datasetschematypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSolutionResponseTypeDef
+## DescribeSolutionRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import DescribeSolutionResponseTypeDef
+from mypy_boto3_personalize.type_defs import DescribeSolutionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `solutionArn`: `str`
+
+## DescribeSolutionResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import DescribeSolutionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `solution`: [SolutionTypeDef](./type_defs.md#solutiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSolutionVersionResponseTypeDef
+## DescribeSolutionVersionRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import DescribeSolutionVersionResponseTypeDef
+from mypy_boto3_personalize.type_defs import DescribeSolutionVersionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `solutionVersionArn`: `str`
+
+## DescribeSolutionVersionResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import DescribeSolutionVersionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `solutionVersion`:
   [SolutionVersionTypeDef](./type_defs.md#solutionversiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## EventTrackerSummaryTypeDef
 
@@ -887,16 +1357,28 @@ Optional fields:
 - `filterExpression`: `str`
 - `status`: `str`
 
-## GetSolutionMetricsResponseTypeDef
+## GetSolutionMetricsRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import GetSolutionMetricsResponseTypeDef
+from mypy_boto3_personalize.type_defs import GetSolutionMetricsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `solutionVersionArn`: `str`
+
+## GetSolutionMetricsResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import GetSolutionMetricsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `solutionVersionArn`: `str`
 - `metrics`: `Dict`\[`str`, `float`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## HPOConfigTypeDef
 
@@ -962,149 +1444,316 @@ Optional fields:
 - `minValue`: `int`
 - `maxValue`: `int`
 
-## ListBatchInferenceJobsResponseTypeDef
+## ListBatchInferenceJobsRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import ListBatchInferenceJobsResponseTypeDef
+from mypy_boto3_personalize.type_defs import ListBatchInferenceJobsRequestTypeDef
 ```
 
 Optional fields:
+
+- `solutionVersionArn`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListBatchInferenceJobsResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import ListBatchInferenceJobsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `batchInferenceJobs`:
   `List`\[[BatchInferenceJobSummaryTypeDef](./type_defs.md#batchinferencejobsummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListCampaignsResponseTypeDef
+## ListCampaignsRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import ListCampaignsResponseTypeDef
+from mypy_boto3_personalize.type_defs import ListCampaignsRequestTypeDef
 ```
 
 Optional fields:
+
+- `solutionArn`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListCampaignsResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import ListCampaignsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `campaigns`:
   `List`\[[CampaignSummaryTypeDef](./type_defs.md#campaignsummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDatasetExportJobsResponseTypeDef
+## ListDatasetExportJobsRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import ListDatasetExportJobsResponseTypeDef
+from mypy_boto3_personalize.type_defs import ListDatasetExportJobsRequestTypeDef
 ```
 
 Optional fields:
+
+- `datasetArn`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListDatasetExportJobsResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import ListDatasetExportJobsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `datasetExportJobs`:
   `List`\[[DatasetExportJobSummaryTypeDef](./type_defs.md#datasetexportjobsummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDatasetGroupsResponseTypeDef
+## ListDatasetGroupsRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import ListDatasetGroupsResponseTypeDef
+from mypy_boto3_personalize.type_defs import ListDatasetGroupsRequestTypeDef
 ```
 
 Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListDatasetGroupsResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import ListDatasetGroupsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `datasetGroups`:
   `List`\[[DatasetGroupSummaryTypeDef](./type_defs.md#datasetgroupsummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDatasetImportJobsResponseTypeDef
+## ListDatasetImportJobsRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import ListDatasetImportJobsResponseTypeDef
+from mypy_boto3_personalize.type_defs import ListDatasetImportJobsRequestTypeDef
 ```
 
 Optional fields:
+
+- `datasetArn`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListDatasetImportJobsResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import ListDatasetImportJobsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `datasetImportJobs`:
   `List`\[[DatasetImportJobSummaryTypeDef](./type_defs.md#datasetimportjobsummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDatasetsResponseTypeDef
+## ListDatasetsRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import ListDatasetsResponseTypeDef
+from mypy_boto3_personalize.type_defs import ListDatasetsRequestTypeDef
 ```
 
 Optional fields:
+
+- `datasetGroupArn`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListDatasetsResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import ListDatasetsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `datasets`:
   `List`\[[DatasetSummaryTypeDef](./type_defs.md#datasetsummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListEventTrackersResponseTypeDef
+## ListEventTrackersRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import ListEventTrackersResponseTypeDef
+from mypy_boto3_personalize.type_defs import ListEventTrackersRequestTypeDef
 ```
 
 Optional fields:
+
+- `datasetGroupArn`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListEventTrackersResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import ListEventTrackersResponseResponseTypeDef
+```
+
+Required fields:
 
 - `eventTrackers`:
   `List`\[[EventTrackerSummaryTypeDef](./type_defs.md#eventtrackersummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFiltersResponseTypeDef
+## ListFiltersRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import ListFiltersResponseTypeDef
+from mypy_boto3_personalize.type_defs import ListFiltersRequestTypeDef
 ```
 
 Optional fields:
+
+- `datasetGroupArn`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListFiltersResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import ListFiltersResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Filters`:
   `List`\[[FilterSummaryTypeDef](./type_defs.md#filtersummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRecipesResponseTypeDef
+## ListRecipesRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import ListRecipesResponseTypeDef
+from mypy_boto3_personalize.type_defs import ListRecipesRequestTypeDef
 ```
 
 Optional fields:
+
+- `recipeProvider`: `Literal['SERVICE']` (see
+  [RecipeProviderType](./literals.md#recipeprovidertype))
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListRecipesResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import ListRecipesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `recipes`:
   `List`\[[RecipeSummaryTypeDef](./type_defs.md#recipesummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSchemasResponseTypeDef
+## ListSchemasRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import ListSchemasResponseTypeDef
+from mypy_boto3_personalize.type_defs import ListSchemasRequestTypeDef
 ```
 
 Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListSchemasResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import ListSchemasResponseResponseTypeDef
+```
+
+Required fields:
 
 - `schemas`:
   `List`\[[DatasetSchemaSummaryTypeDef](./type_defs.md#datasetschemasummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSolutionVersionsResponseTypeDef
+## ListSolutionVersionsRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import ListSolutionVersionsResponseTypeDef
+from mypy_boto3_personalize.type_defs import ListSolutionVersionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `solutionArn`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListSolutionVersionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import ListSolutionVersionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `solutionVersions`:
   `List`\[[SolutionVersionSummaryTypeDef](./type_defs.md#solutionversionsummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSolutionsResponseTypeDef
+## ListSolutionsRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import ListSolutionsResponseTypeDef
+from mypy_boto3_personalize.type_defs import ListSolutionsRequestTypeDef
 ```
 
 Optional fields:
 
+- `datasetGroupArn`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListSolutionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import ListSolutionsResponseResponseTypeDef
+```
+
+Required fields:
+
 - `solutions`:
   `List`\[[SolutionSummaryTypeDef](./type_defs.md#solutionsummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## OptimizationObjectiveTypeDef
 
@@ -1284,6 +1933,16 @@ Optional fields:
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
 
+## StopSolutionVersionCreationRequestTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import StopSolutionVersionCreationRequestTypeDef
+```
+
+Required fields:
+
+- `solutionVersionArn`: `str`
+
 ## TunedHPOParamsTypeDef
 
 ```python
@@ -1294,12 +1953,31 @@ Optional fields:
 
 - `algorithmHyperParameters`: `Dict`\[`str`, `str`\]
 
-## UpdateCampaignResponseTypeDef
+## UpdateCampaignRequestTypeDef
 
 ```python
-from mypy_boto3_personalize.type_defs import UpdateCampaignResponseTypeDef
+from mypy_boto3_personalize.type_defs import UpdateCampaignRequestTypeDef
 ```
+
+Required fields:
+
+- `campaignArn`: `str`
 
 Optional fields:
 
+- `solutionVersionArn`: `str`
+- `minProvisionedTPS`: `int`
+- `campaignConfig`:
+  [CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef)
+
+## UpdateCampaignResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize.type_defs import UpdateCampaignResponseResponseTypeDef
+```
+
+Required fields:
+
 - `campaignArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

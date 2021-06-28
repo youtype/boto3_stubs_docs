@@ -12,17 +12,35 @@ type annotations stubs module
   - [ArtifactTypeDef](#artifacttypedef)
   - [CPUTypeDef](#cputypedef)
   - [CountersTypeDef](#counterstypedef)
-  - [CreateDevicePoolResultTypeDef](#createdevicepoolresulttypedef)
-  - [CreateInstanceProfileResultTypeDef](#createinstanceprofileresulttypedef)
-  - [CreateNetworkProfileResultTypeDef](#createnetworkprofileresulttypedef)
-  - [CreateProjectResultTypeDef](#createprojectresulttypedef)
+  - [CreateDevicePoolRequestTypeDef](#createdevicepoolrequesttypedef)
+  - [CreateDevicePoolResultResponseTypeDef](#createdevicepoolresultresponsetypedef)
+  - [CreateInstanceProfileRequestTypeDef](#createinstanceprofilerequesttypedef)
+  - [CreateInstanceProfileResultResponseTypeDef](#createinstanceprofileresultresponsetypedef)
+  - [CreateNetworkProfileRequestTypeDef](#createnetworkprofilerequesttypedef)
+  - [CreateNetworkProfileResultResponseTypeDef](#createnetworkprofileresultresponsetypedef)
+  - [CreateProjectRequestTypeDef](#createprojectrequesttypedef)
+  - [CreateProjectResultResponseTypeDef](#createprojectresultresponsetypedef)
   - [CreateRemoteAccessSessionConfigurationTypeDef](#createremoteaccesssessionconfigurationtypedef)
-  - [CreateRemoteAccessSessionResultTypeDef](#createremoteaccesssessionresulttypedef)
-  - [CreateTestGridProjectResultTypeDef](#createtestgridprojectresulttypedef)
-  - [CreateTestGridUrlResultTypeDef](#createtestgridurlresulttypedef)
-  - [CreateUploadResultTypeDef](#createuploadresulttypedef)
-  - [CreateVPCEConfigurationResultTypeDef](#createvpceconfigurationresulttypedef)
+  - [CreateRemoteAccessSessionRequestTypeDef](#createremoteaccesssessionrequesttypedef)
+  - [CreateRemoteAccessSessionResultResponseTypeDef](#createremoteaccesssessionresultresponsetypedef)
+  - [CreateTestGridProjectRequestTypeDef](#createtestgridprojectrequesttypedef)
+  - [CreateTestGridProjectResultResponseTypeDef](#createtestgridprojectresultresponsetypedef)
+  - [CreateTestGridUrlRequestTypeDef](#createtestgridurlrequesttypedef)
+  - [CreateTestGridUrlResultResponseTypeDef](#createtestgridurlresultresponsetypedef)
+  - [CreateUploadRequestTypeDef](#createuploadrequesttypedef)
+  - [CreateUploadResultResponseTypeDef](#createuploadresultresponsetypedef)
+  - [CreateVPCEConfigurationRequestTypeDef](#createvpceconfigurationrequesttypedef)
+  - [CreateVPCEConfigurationResultResponseTypeDef](#createvpceconfigurationresultresponsetypedef)
   - [CustomerArtifactPathsTypeDef](#customerartifactpathstypedef)
+  - [DeleteDevicePoolRequestTypeDef](#deletedevicepoolrequesttypedef)
+  - [DeleteInstanceProfileRequestTypeDef](#deleteinstanceprofilerequesttypedef)
+  - [DeleteNetworkProfileRequestTypeDef](#deletenetworkprofilerequesttypedef)
+  - [DeleteProjectRequestTypeDef](#deleteprojectrequesttypedef)
+  - [DeleteRemoteAccessSessionRequestTypeDef](#deleteremoteaccesssessionrequesttypedef)
+  - [DeleteRunRequestTypeDef](#deleterunrequesttypedef)
+  - [DeleteTestGridProjectRequestTypeDef](#deletetestgridprojectrequesttypedef)
+  - [DeleteUploadRequestTypeDef](#deleteuploadrequesttypedef)
+  - [DeleteVPCEConfigurationRequestTypeDef](#deletevpceconfigurationrequesttypedef)
   - [DeviceFilterTypeDef](#devicefiltertypedef)
   - [DeviceInstanceTypeDef](#deviceinstancetypedef)
   - [DeviceMinutesTypeDef](#deviceminutestypedef)
@@ -32,52 +50,94 @@ type annotations stubs module
   - [DeviceSelectionResultTypeDef](#deviceselectionresulttypedef)
   - [DeviceTypeDef](#devicetypedef)
   - [ExecutionConfigurationTypeDef](#executionconfigurationtypedef)
-  - [GetAccountSettingsResultTypeDef](#getaccountsettingsresulttypedef)
-  - [GetDeviceInstanceResultTypeDef](#getdeviceinstanceresulttypedef)
-  - [GetDevicePoolCompatibilityResultTypeDef](#getdevicepoolcompatibilityresulttypedef)
-  - [GetDevicePoolResultTypeDef](#getdevicepoolresulttypedef)
-  - [GetDeviceResultTypeDef](#getdeviceresulttypedef)
-  - [GetInstanceProfileResultTypeDef](#getinstanceprofileresulttypedef)
-  - [GetJobResultTypeDef](#getjobresulttypedef)
-  - [GetNetworkProfileResultTypeDef](#getnetworkprofileresulttypedef)
-  - [GetOfferingStatusResultTypeDef](#getofferingstatusresulttypedef)
-  - [GetProjectResultTypeDef](#getprojectresulttypedef)
-  - [GetRemoteAccessSessionResultTypeDef](#getremoteaccesssessionresulttypedef)
-  - [GetRunResultTypeDef](#getrunresulttypedef)
-  - [GetSuiteResultTypeDef](#getsuiteresulttypedef)
-  - [GetTestGridProjectResultTypeDef](#gettestgridprojectresulttypedef)
-  - [GetTestGridSessionResultTypeDef](#gettestgridsessionresulttypedef)
-  - [GetTestResultTypeDef](#gettestresulttypedef)
-  - [GetUploadResultTypeDef](#getuploadresulttypedef)
-  - [GetVPCEConfigurationResultTypeDef](#getvpceconfigurationresulttypedef)
+  - [GetAccountSettingsResultResponseTypeDef](#getaccountsettingsresultresponsetypedef)
+  - [GetDeviceInstanceRequestTypeDef](#getdeviceinstancerequesttypedef)
+  - [GetDeviceInstanceResultResponseTypeDef](#getdeviceinstanceresultresponsetypedef)
+  - [GetDevicePoolCompatibilityRequestTypeDef](#getdevicepoolcompatibilityrequesttypedef)
+  - [GetDevicePoolCompatibilityResultResponseTypeDef](#getdevicepoolcompatibilityresultresponsetypedef)
+  - [GetDevicePoolRequestTypeDef](#getdevicepoolrequesttypedef)
+  - [GetDevicePoolResultResponseTypeDef](#getdevicepoolresultresponsetypedef)
+  - [GetDeviceRequestTypeDef](#getdevicerequesttypedef)
+  - [GetDeviceResultResponseTypeDef](#getdeviceresultresponsetypedef)
+  - [GetInstanceProfileRequestTypeDef](#getinstanceprofilerequesttypedef)
+  - [GetInstanceProfileResultResponseTypeDef](#getinstanceprofileresultresponsetypedef)
+  - [GetJobRequestTypeDef](#getjobrequesttypedef)
+  - [GetJobResultResponseTypeDef](#getjobresultresponsetypedef)
+  - [GetNetworkProfileRequestTypeDef](#getnetworkprofilerequesttypedef)
+  - [GetNetworkProfileResultResponseTypeDef](#getnetworkprofileresultresponsetypedef)
+  - [GetOfferingStatusRequestTypeDef](#getofferingstatusrequesttypedef)
+  - [GetOfferingStatusResultResponseTypeDef](#getofferingstatusresultresponsetypedef)
+  - [GetProjectRequestTypeDef](#getprojectrequesttypedef)
+  - [GetProjectResultResponseTypeDef](#getprojectresultresponsetypedef)
+  - [GetRemoteAccessSessionRequestTypeDef](#getremoteaccesssessionrequesttypedef)
+  - [GetRemoteAccessSessionResultResponseTypeDef](#getremoteaccesssessionresultresponsetypedef)
+  - [GetRunRequestTypeDef](#getrunrequesttypedef)
+  - [GetRunResultResponseTypeDef](#getrunresultresponsetypedef)
+  - [GetSuiteRequestTypeDef](#getsuiterequesttypedef)
+  - [GetSuiteResultResponseTypeDef](#getsuiteresultresponsetypedef)
+  - [GetTestGridProjectRequestTypeDef](#gettestgridprojectrequesttypedef)
+  - [GetTestGridProjectResultResponseTypeDef](#gettestgridprojectresultresponsetypedef)
+  - [GetTestGridSessionRequestTypeDef](#gettestgridsessionrequesttypedef)
+  - [GetTestGridSessionResultResponseTypeDef](#gettestgridsessionresultresponsetypedef)
+  - [GetTestRequestTypeDef](#gettestrequesttypedef)
+  - [GetTestResultResponseTypeDef](#gettestresultresponsetypedef)
+  - [GetUploadRequestTypeDef](#getuploadrequesttypedef)
+  - [GetUploadResultResponseTypeDef](#getuploadresultresponsetypedef)
+  - [GetVPCEConfigurationRequestTypeDef](#getvpceconfigurationrequesttypedef)
+  - [GetVPCEConfigurationResultResponseTypeDef](#getvpceconfigurationresultresponsetypedef)
   - [IncompatibilityMessageTypeDef](#incompatibilitymessagetypedef)
-  - [InstallToRemoteAccessSessionResultTypeDef](#installtoremoteaccesssessionresulttypedef)
+  - [InstallToRemoteAccessSessionRequestTypeDef](#installtoremoteaccesssessionrequesttypedef)
+  - [InstallToRemoteAccessSessionResultResponseTypeDef](#installtoremoteaccesssessionresultresponsetypedef)
   - [InstanceProfileTypeDef](#instanceprofiletypedef)
   - [JobTypeDef](#jobtypedef)
-  - [ListArtifactsResultTypeDef](#listartifactsresulttypedef)
-  - [ListDeviceInstancesResultTypeDef](#listdeviceinstancesresulttypedef)
-  - [ListDevicePoolsResultTypeDef](#listdevicepoolsresulttypedef)
-  - [ListDevicesResultTypeDef](#listdevicesresulttypedef)
-  - [ListInstanceProfilesResultTypeDef](#listinstanceprofilesresulttypedef)
-  - [ListJobsResultTypeDef](#listjobsresulttypedef)
-  - [ListNetworkProfilesResultTypeDef](#listnetworkprofilesresulttypedef)
-  - [ListOfferingPromotionsResultTypeDef](#listofferingpromotionsresulttypedef)
-  - [ListOfferingTransactionsResultTypeDef](#listofferingtransactionsresulttypedef)
-  - [ListOfferingsResultTypeDef](#listofferingsresulttypedef)
-  - [ListProjectsResultTypeDef](#listprojectsresulttypedef)
-  - [ListRemoteAccessSessionsResultTypeDef](#listremoteaccesssessionsresulttypedef)
-  - [ListRunsResultTypeDef](#listrunsresulttypedef)
-  - [ListSamplesResultTypeDef](#listsamplesresulttypedef)
-  - [ListSuitesResultTypeDef](#listsuitesresulttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListTestGridProjectsResultTypeDef](#listtestgridprojectsresulttypedef)
-  - [ListTestGridSessionActionsResultTypeDef](#listtestgridsessionactionsresulttypedef)
-  - [ListTestGridSessionArtifactsResultTypeDef](#listtestgridsessionartifactsresulttypedef)
-  - [ListTestGridSessionsResultTypeDef](#listtestgridsessionsresulttypedef)
-  - [ListTestsResultTypeDef](#listtestsresulttypedef)
-  - [ListUniqueProblemsResultTypeDef](#listuniqueproblemsresulttypedef)
-  - [ListUploadsResultTypeDef](#listuploadsresulttypedef)
-  - [ListVPCEConfigurationsResultTypeDef](#listvpceconfigurationsresulttypedef)
+  - [ListArtifactsRequestTypeDef](#listartifactsrequesttypedef)
+  - [ListArtifactsResultResponseTypeDef](#listartifactsresultresponsetypedef)
+  - [ListDeviceInstancesRequestTypeDef](#listdeviceinstancesrequesttypedef)
+  - [ListDeviceInstancesResultResponseTypeDef](#listdeviceinstancesresultresponsetypedef)
+  - [ListDevicePoolsRequestTypeDef](#listdevicepoolsrequesttypedef)
+  - [ListDevicePoolsResultResponseTypeDef](#listdevicepoolsresultresponsetypedef)
+  - [ListDevicesRequestTypeDef](#listdevicesrequesttypedef)
+  - [ListDevicesResultResponseTypeDef](#listdevicesresultresponsetypedef)
+  - [ListInstanceProfilesRequestTypeDef](#listinstanceprofilesrequesttypedef)
+  - [ListInstanceProfilesResultResponseTypeDef](#listinstanceprofilesresultresponsetypedef)
+  - [ListJobsRequestTypeDef](#listjobsrequesttypedef)
+  - [ListJobsResultResponseTypeDef](#listjobsresultresponsetypedef)
+  - [ListNetworkProfilesRequestTypeDef](#listnetworkprofilesrequesttypedef)
+  - [ListNetworkProfilesResultResponseTypeDef](#listnetworkprofilesresultresponsetypedef)
+  - [ListOfferingPromotionsRequestTypeDef](#listofferingpromotionsrequesttypedef)
+  - [ListOfferingPromotionsResultResponseTypeDef](#listofferingpromotionsresultresponsetypedef)
+  - [ListOfferingTransactionsRequestTypeDef](#listofferingtransactionsrequesttypedef)
+  - [ListOfferingTransactionsResultResponseTypeDef](#listofferingtransactionsresultresponsetypedef)
+  - [ListOfferingsRequestTypeDef](#listofferingsrequesttypedef)
+  - [ListOfferingsResultResponseTypeDef](#listofferingsresultresponsetypedef)
+  - [ListProjectsRequestTypeDef](#listprojectsrequesttypedef)
+  - [ListProjectsResultResponseTypeDef](#listprojectsresultresponsetypedef)
+  - [ListRemoteAccessSessionsRequestTypeDef](#listremoteaccesssessionsrequesttypedef)
+  - [ListRemoteAccessSessionsResultResponseTypeDef](#listremoteaccesssessionsresultresponsetypedef)
+  - [ListRunsRequestTypeDef](#listrunsrequesttypedef)
+  - [ListRunsResultResponseTypeDef](#listrunsresultresponsetypedef)
+  - [ListSamplesRequestTypeDef](#listsamplesrequesttypedef)
+  - [ListSamplesResultResponseTypeDef](#listsamplesresultresponsetypedef)
+  - [ListSuitesRequestTypeDef](#listsuitesrequesttypedef)
+  - [ListSuitesResultResponseTypeDef](#listsuitesresultresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListTestGridProjectsRequestTypeDef](#listtestgridprojectsrequesttypedef)
+  - [ListTestGridProjectsResultResponseTypeDef](#listtestgridprojectsresultresponsetypedef)
+  - [ListTestGridSessionActionsRequestTypeDef](#listtestgridsessionactionsrequesttypedef)
+  - [ListTestGridSessionActionsResultResponseTypeDef](#listtestgridsessionactionsresultresponsetypedef)
+  - [ListTestGridSessionArtifactsRequestTypeDef](#listtestgridsessionartifactsrequesttypedef)
+  - [ListTestGridSessionArtifactsResultResponseTypeDef](#listtestgridsessionartifactsresultresponsetypedef)
+  - [ListTestGridSessionsRequestTypeDef](#listtestgridsessionsrequesttypedef)
+  - [ListTestGridSessionsResultResponseTypeDef](#listtestgridsessionsresultresponsetypedef)
+  - [ListTestsRequestTypeDef](#listtestsrequesttypedef)
+  - [ListTestsResultResponseTypeDef](#listtestsresultresponsetypedef)
+  - [ListUniqueProblemsRequestTypeDef](#listuniqueproblemsrequesttypedef)
+  - [ListUniqueProblemsResultResponseTypeDef](#listuniqueproblemsresultresponsetypedef)
+  - [ListUploadsRequestTypeDef](#listuploadsrequesttypedef)
+  - [ListUploadsResultResponseTypeDef](#listuploadsresultresponsetypedef)
+  - [ListVPCEConfigurationsRequestTypeDef](#listvpceconfigurationsrequesttypedef)
+  - [ListVPCEConfigurationsResultResponseTypeDef](#listvpceconfigurationsresultresponsetypedef)
   - [LocationTypeDef](#locationtypedef)
   - [MonetaryAmountTypeDef](#monetaryamounttypedef)
   - [NetworkProfileTypeDef](#networkprofiletypedef)
@@ -89,22 +149,30 @@ type annotations stubs module
   - [ProblemDetailTypeDef](#problemdetailtypedef)
   - [ProblemTypeDef](#problemtypedef)
   - [ProjectTypeDef](#projecttypedef)
-  - [PurchaseOfferingResultTypeDef](#purchaseofferingresulttypedef)
+  - [PurchaseOfferingRequestTypeDef](#purchaseofferingrequesttypedef)
+  - [PurchaseOfferingResultResponseTypeDef](#purchaseofferingresultresponsetypedef)
   - [RadiosTypeDef](#radiostypedef)
   - [RecurringChargeTypeDef](#recurringchargetypedef)
   - [RemoteAccessSessionTypeDef](#remoteaccesssessiontypedef)
-  - [RenewOfferingResultTypeDef](#renewofferingresulttypedef)
+  - [RenewOfferingRequestTypeDef](#renewofferingrequesttypedef)
+  - [RenewOfferingResultResponseTypeDef](#renewofferingresultresponsetypedef)
   - [ResolutionTypeDef](#resolutiontypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RuleTypeDef](#ruletypedef)
   - [RunTypeDef](#runtypedef)
   - [SampleTypeDef](#sampletypedef)
   - [ScheduleRunConfigurationTypeDef](#schedulerunconfigurationtypedef)
-  - [ScheduleRunResultTypeDef](#schedulerunresulttypedef)
+  - [ScheduleRunRequestTypeDef](#schedulerunrequesttypedef)
+  - [ScheduleRunResultResponseTypeDef](#schedulerunresultresponsetypedef)
   - [ScheduleRunTestTypeDef](#scheduleruntesttypedef)
-  - [StopJobResultTypeDef](#stopjobresulttypedef)
-  - [StopRemoteAccessSessionResultTypeDef](#stopremoteaccesssessionresulttypedef)
-  - [StopRunResultTypeDef](#stoprunresulttypedef)
+  - [StopJobRequestTypeDef](#stopjobrequesttypedef)
+  - [StopJobResultResponseTypeDef](#stopjobresultresponsetypedef)
+  - [StopRemoteAccessSessionRequestTypeDef](#stopremoteaccesssessionrequesttypedef)
+  - [StopRemoteAccessSessionResultResponseTypeDef](#stopremoteaccesssessionresultresponsetypedef)
+  - [StopRunRequestTypeDef](#stoprunrequesttypedef)
+  - [StopRunResultResponseTypeDef](#stoprunresultresponsetypedef)
   - [SuiteTypeDef](#suitetypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TestGridProjectTypeDef](#testgridprojecttypedef)
   - [TestGridSessionActionTypeDef](#testgridsessionactiontypedef)
@@ -114,14 +182,23 @@ type annotations stubs module
   - [TestTypeDef](#testtypedef)
   - [TrialMinutesTypeDef](#trialminutestypedef)
   - [UniqueProblemTypeDef](#uniqueproblemtypedef)
-  - [UpdateDeviceInstanceResultTypeDef](#updatedeviceinstanceresulttypedef)
-  - [UpdateDevicePoolResultTypeDef](#updatedevicepoolresulttypedef)
-  - [UpdateInstanceProfileResultTypeDef](#updateinstanceprofileresulttypedef)
-  - [UpdateNetworkProfileResultTypeDef](#updatenetworkprofileresulttypedef)
-  - [UpdateProjectResultTypeDef](#updateprojectresulttypedef)
-  - [UpdateTestGridProjectResultTypeDef](#updatetestgridprojectresulttypedef)
-  - [UpdateUploadResultTypeDef](#updateuploadresulttypedef)
-  - [UpdateVPCEConfigurationResultTypeDef](#updatevpceconfigurationresulttypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateDeviceInstanceRequestTypeDef](#updatedeviceinstancerequesttypedef)
+  - [UpdateDeviceInstanceResultResponseTypeDef](#updatedeviceinstanceresultresponsetypedef)
+  - [UpdateDevicePoolRequestTypeDef](#updatedevicepoolrequesttypedef)
+  - [UpdateDevicePoolResultResponseTypeDef](#updatedevicepoolresultresponsetypedef)
+  - [UpdateInstanceProfileRequestTypeDef](#updateinstanceprofilerequesttypedef)
+  - [UpdateInstanceProfileResultResponseTypeDef](#updateinstanceprofileresultresponsetypedef)
+  - [UpdateNetworkProfileRequestTypeDef](#updatenetworkprofilerequesttypedef)
+  - [UpdateNetworkProfileResultResponseTypeDef](#updatenetworkprofileresultresponsetypedef)
+  - [UpdateProjectRequestTypeDef](#updateprojectrequesttypedef)
+  - [UpdateProjectResultResponseTypeDef](#updateprojectresultresponsetypedef)
+  - [UpdateTestGridProjectRequestTypeDef](#updatetestgridprojectrequesttypedef)
+  - [UpdateTestGridProjectResultResponseTypeDef](#updatetestgridprojectresultresponsetypedef)
+  - [UpdateUploadRequestTypeDef](#updateuploadrequesttypedef)
+  - [UpdateUploadResultResponseTypeDef](#updateuploadresultresponsetypedef)
+  - [UpdateVPCEConfigurationRequestTypeDef](#updatevpceconfigurationrequesttypedef)
+  - [UpdateVPCEConfigurationResultResponseTypeDef](#updatevpceconfigurationresultresponsetypedef)
   - [UploadTypeDef](#uploadtypedef)
   - [VPCEConfigurationTypeDef](#vpceconfigurationtypedef)
 
@@ -186,47 +263,127 @@ Optional fields:
 - `stopped`: `int`
 - `skipped`: `int`
 
-## CreateDevicePoolResultTypeDef
+## CreateDevicePoolRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import CreateDevicePoolResultTypeDef
+from mypy_boto3_devicefarm.type_defs import CreateDevicePoolRequestTypeDef
 ```
 
+Required fields:
+
+- `projectArn`: `str`
+- `name`: `str`
+- `rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+
 Optional fields:
+
+- `description`: `str`
+- `maxDevices`: `int`
+
+## CreateDevicePoolResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import CreateDevicePoolResultResponseTypeDef
+```
+
+Required fields:
 
 - `devicePool`: [DevicePoolTypeDef](./type_defs.md#devicepooltypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateInstanceProfileResultTypeDef
+## CreateInstanceProfileRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import CreateInstanceProfileResultTypeDef
+from mypy_boto3_devicefarm.type_defs import CreateInstanceProfileRequestTypeDef
 ```
 
+Required fields:
+
+- `name`: `str`
+
 Optional fields:
+
+- `description`: `str`
+- `packageCleanup`: `bool`
+- `excludeAppPackagesFromCleanup`: `List`\[`str`\]
+- `rebootAfterUse`: `bool`
+
+## CreateInstanceProfileResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import CreateInstanceProfileResultResponseTypeDef
+```
+
+Required fields:
 
 - `instanceProfile`:
   [InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateNetworkProfileResultTypeDef
+## CreateNetworkProfileRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import CreateNetworkProfileResultTypeDef
+from mypy_boto3_devicefarm.type_defs import CreateNetworkProfileRequestTypeDef
 ```
 
+Required fields:
+
+- `projectArn`: `str`
+- `name`: `str`
+
 Optional fields:
+
+- `description`: `str`
+- `type`: [NetworkProfileTypeType](./literals.md#networkprofiletypetype)
+- `uplinkBandwidthBits`: `int`
+- `downlinkBandwidthBits`: `int`
+- `uplinkDelayMs`: `int`
+- `downlinkDelayMs`: `int`
+- `uplinkJitterMs`: `int`
+- `downlinkJitterMs`: `int`
+- `uplinkLossPercent`: `int`
+- `downlinkLossPercent`: `int`
+
+## CreateNetworkProfileResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import CreateNetworkProfileResultResponseTypeDef
+```
+
+Required fields:
 
 - `networkProfile`:
   [NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateProjectResultTypeDef
+## CreateProjectRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import CreateProjectResultTypeDef
+from mypy_boto3_devicefarm.type_defs import CreateProjectRequestTypeDef
 ```
+
+Required fields:
+
+- `name`: `str`
 
 Optional fields:
 
+- `defaultJobTimeoutMinutes`: `int`
+
+## CreateProjectResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import CreateProjectResultResponseTypeDef
+```
+
+Required fields:
+
 - `project`: [ProjectTypeDef](./type_defs.md#projecttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateRemoteAccessSessionConfigurationTypeDef
 
@@ -239,59 +396,153 @@ Optional fields:
 - `billingMethod`: [BillingMethodType](./literals.md#billingmethodtype)
 - `vpceConfigurationArns`: `List`\[`str`\]
 
-## CreateRemoteAccessSessionResultTypeDef
+## CreateRemoteAccessSessionRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import CreateRemoteAccessSessionResultTypeDef
+from mypy_boto3_devicefarm.type_defs import CreateRemoteAccessSessionRequestTypeDef
 ```
 
+Required fields:
+
+- `projectArn`: `str`
+- `deviceArn`: `str`
+
 Optional fields:
+
+- `instanceArn`: `str`
+- `sshPublicKey`: `str`
+- `remoteDebugEnabled`: `bool`
+- `remoteRecordEnabled`: `bool`
+- `remoteRecordAppArn`: `str`
+- `name`: `str`
+- `clientId`: `str`
+- `configuration`:
+  [CreateRemoteAccessSessionConfigurationTypeDef](./type_defs.md#createremoteaccesssessionconfigurationtypedef)
+- `interactionMode`: [InteractionModeType](./literals.md#interactionmodetype)
+- `skipAppResign`: `bool`
+
+## CreateRemoteAccessSessionResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import CreateRemoteAccessSessionResultResponseTypeDef
+```
+
+Required fields:
 
 - `remoteAccessSession`:
   [RemoteAccessSessionTypeDef](./type_defs.md#remoteaccesssessiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTestGridProjectResultTypeDef
+## CreateTestGridProjectRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import CreateTestGridProjectResultTypeDef
+from mypy_boto3_devicefarm.type_defs import CreateTestGridProjectRequestTypeDef
 ```
 
+Required fields:
+
+- `name`: `str`
+
 Optional fields:
+
+- `description`: `str`
+- `vpcConfig`:
+  [TestGridVpcConfigTypeDef](./type_defs.md#testgridvpcconfigtypedef)
+
+## CreateTestGridProjectResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import CreateTestGridProjectResultResponseTypeDef
+```
+
+Required fields:
 
 - `testGridProject`:
   [TestGridProjectTypeDef](./type_defs.md#testgridprojecttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTestGridUrlResultTypeDef
+## CreateTestGridUrlRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import CreateTestGridUrlResultTypeDef
+from mypy_boto3_devicefarm.type_defs import CreateTestGridUrlRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `projectArn`: `str`
+- `expiresInSeconds`: `int`
+
+## CreateTestGridUrlResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import CreateTestGridUrlResultResponseTypeDef
+```
+
+Required fields:
 
 - `url`: `str`
 - `expires`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateUploadResultTypeDef
+## CreateUploadRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import CreateUploadResultTypeDef
+from mypy_boto3_devicefarm.type_defs import CreateUploadRequestTypeDef
 ```
 
+Required fields:
+
+- `projectArn`: `str`
+- `name`: `str`
+- `type`: [UploadTypeType](./literals.md#uploadtypetype)
+
 Optional fields:
+
+- `contentType`: `str`
+
+## CreateUploadResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import CreateUploadResultResponseTypeDef
+```
+
+Required fields:
 
 - `upload`: [UploadTypeDef](./type_defs.md#uploadtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateVPCEConfigurationResultTypeDef
+## CreateVPCEConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import CreateVPCEConfigurationResultTypeDef
+from mypy_boto3_devicefarm.type_defs import CreateVPCEConfigurationRequestTypeDef
 ```
 
+Required fields:
+
+- `vpceConfigurationName`: `str`
+- `vpceServiceName`: `str`
+- `serviceDnsName`: `str`
+
 Optional fields:
+
+- `vpceConfigurationDescription`: `str`
+
+## CreateVPCEConfigurationResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import CreateVPCEConfigurationResultResponseTypeDef
+```
+
+Required fields:
 
 - `vpceConfiguration`:
   [VPCEConfigurationTypeDef](./type_defs.md#vpceconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CustomerArtifactPathsTypeDef
 
@@ -304,6 +555,96 @@ Optional fields:
 - `iosPaths`: `List`\[`str`\]
 - `androidPaths`: `List`\[`str`\]
 - `deviceHostPaths`: `List`\[`str`\]
+
+## DeleteDevicePoolRequestTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import DeleteDevicePoolRequestTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+
+## DeleteInstanceProfileRequestTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import DeleteInstanceProfileRequestTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+
+## DeleteNetworkProfileRequestTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import DeleteNetworkProfileRequestTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+
+## DeleteProjectRequestTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import DeleteProjectRequestTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+
+## DeleteRemoteAccessSessionRequestTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import DeleteRemoteAccessSessionRequestTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+
+## DeleteRunRequestTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import DeleteRunRequestTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+
+## DeleteTestGridProjectRequestTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import DeleteTestGridProjectRequestTypeDef
+```
+
+Required fields:
+
+- `projectArn`: `str`
+
+## DeleteUploadRequestTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import DeleteUploadRequestTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+
+## DeleteVPCEConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import DeleteVPCEConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
 
 ## DeviceFilterTypeDef
 
@@ -445,200 +786,416 @@ Optional fields:
 - `videoCapture`: `bool`
 - `skipAppResign`: `bool`
 
-## GetAccountSettingsResultTypeDef
+## GetAccountSettingsResultResponseTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import GetAccountSettingsResultTypeDef
+from mypy_boto3_devicefarm.type_defs import GetAccountSettingsResultResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `accountSettings`:
   [AccountSettingsTypeDef](./type_defs.md#accountsettingstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDeviceInstanceResultTypeDef
+## GetDeviceInstanceRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import GetDeviceInstanceResultTypeDef
+from mypy_boto3_devicefarm.type_defs import GetDeviceInstanceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `arn`: `str`
+
+## GetDeviceInstanceResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import GetDeviceInstanceResultResponseTypeDef
+```
+
+Required fields:
 
 - `deviceInstance`:
   [DeviceInstanceTypeDef](./type_defs.md#deviceinstancetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDevicePoolCompatibilityResultTypeDef
+## GetDevicePoolCompatibilityRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import GetDevicePoolCompatibilityResultTypeDef
+from mypy_boto3_devicefarm.type_defs import GetDevicePoolCompatibilityRequestTypeDef
 ```
 
+Required fields:
+
+- `devicePoolArn`: `str`
+
 Optional fields:
+
+- `appArn`: `str`
+- `testType`: [TestTypeType](./literals.md#testtypetype)
+- `test`: [ScheduleRunTestTypeDef](./type_defs.md#scheduleruntesttypedef)
+- `configuration`:
+  [ScheduleRunConfigurationTypeDef](./type_defs.md#schedulerunconfigurationtypedef)
+
+## GetDevicePoolCompatibilityResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import GetDevicePoolCompatibilityResultResponseTypeDef
+```
+
+Required fields:
 
 - `compatibleDevices`:
   `List`\[[DevicePoolCompatibilityResultTypeDef](./type_defs.md#devicepoolcompatibilityresulttypedef)\]
 - `incompatibleDevices`:
   `List`\[[DevicePoolCompatibilityResultTypeDef](./type_defs.md#devicepoolcompatibilityresulttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDevicePoolResultTypeDef
+## GetDevicePoolRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import GetDevicePoolResultTypeDef
+from mypy_boto3_devicefarm.type_defs import GetDevicePoolRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `arn`: `str`
+
+## GetDevicePoolResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import GetDevicePoolResultResponseTypeDef
+```
+
+Required fields:
 
 - `devicePool`: [DevicePoolTypeDef](./type_defs.md#devicepooltypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDeviceResultTypeDef
+## GetDeviceRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import GetDeviceResultTypeDef
+from mypy_boto3_devicefarm.type_defs import GetDeviceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `arn`: `str`
+
+## GetDeviceResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import GetDeviceResultResponseTypeDef
+```
+
+Required fields:
 
 - `device`: [DeviceTypeDef](./type_defs.md#devicetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetInstanceProfileResultTypeDef
+## GetInstanceProfileRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import GetInstanceProfileResultTypeDef
+from mypy_boto3_devicefarm.type_defs import GetInstanceProfileRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `arn`: `str`
+
+## GetInstanceProfileResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import GetInstanceProfileResultResponseTypeDef
+```
+
+Required fields:
 
 - `instanceProfile`:
   [InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetJobResultTypeDef
+## GetJobRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import GetJobResultTypeDef
+from mypy_boto3_devicefarm.type_defs import GetJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `arn`: `str`
+
+## GetJobResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import GetJobResultResponseTypeDef
+```
+
+Required fields:
 
 - `job`: [JobTypeDef](./type_defs.md#jobtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetNetworkProfileResultTypeDef
+## GetNetworkProfileRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import GetNetworkProfileResultTypeDef
+from mypy_boto3_devicefarm.type_defs import GetNetworkProfileRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `arn`: `str`
+
+## GetNetworkProfileResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import GetNetworkProfileResultResponseTypeDef
+```
+
+Required fields:
 
 - `networkProfile`:
   [NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetOfferingStatusResultTypeDef
+## GetOfferingStatusRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import GetOfferingStatusResultTypeDef
+from mypy_boto3_devicefarm.type_defs import GetOfferingStatusRequestTypeDef
 ```
 
 Optional fields:
+
+- `nextToken`: `str`
+
+## GetOfferingStatusResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import GetOfferingStatusResultResponseTypeDef
+```
+
+Required fields:
 
 - `current`: `Dict`\[`str`,
   [OfferingStatusTypeDef](./type_defs.md#offeringstatustypedef)\]
 - `nextPeriod`: `Dict`\[`str`,
   [OfferingStatusTypeDef](./type_defs.md#offeringstatustypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetProjectResultTypeDef
+## GetProjectRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import GetProjectResultTypeDef
+from mypy_boto3_devicefarm.type_defs import GetProjectRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `arn`: `str`
+
+## GetProjectResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import GetProjectResultResponseTypeDef
+```
+
+Required fields:
 
 - `project`: [ProjectTypeDef](./type_defs.md#projecttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRemoteAccessSessionResultTypeDef
+## GetRemoteAccessSessionRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import GetRemoteAccessSessionResultTypeDef
+from mypy_boto3_devicefarm.type_defs import GetRemoteAccessSessionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `arn`: `str`
+
+## GetRemoteAccessSessionResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import GetRemoteAccessSessionResultResponseTypeDef
+```
+
+Required fields:
 
 - `remoteAccessSession`:
   [RemoteAccessSessionTypeDef](./type_defs.md#remoteaccesssessiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRunResultTypeDef
+## GetRunRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import GetRunResultTypeDef
+from mypy_boto3_devicefarm.type_defs import GetRunRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `arn`: `str`
+
+## GetRunResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import GetRunResultResponseTypeDef
+```
+
+Required fields:
 
 - `run`: [RunTypeDef](./type_defs.md#runtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSuiteResultTypeDef
+## GetSuiteRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import GetSuiteResultTypeDef
+from mypy_boto3_devicefarm.type_defs import GetSuiteRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `arn`: `str`
+
+## GetSuiteResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import GetSuiteResultResponseTypeDef
+```
+
+Required fields:
 
 - `suite`: [SuiteTypeDef](./type_defs.md#suitetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTestGridProjectResultTypeDef
+## GetTestGridProjectRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import GetTestGridProjectResultTypeDef
+from mypy_boto3_devicefarm.type_defs import GetTestGridProjectRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `projectArn`: `str`
+
+## GetTestGridProjectResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import GetTestGridProjectResultResponseTypeDef
+```
+
+Required fields:
 
 - `testGridProject`:
   [TestGridProjectTypeDef](./type_defs.md#testgridprojecttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTestGridSessionResultTypeDef
+## GetTestGridSessionRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import GetTestGridSessionResultTypeDef
+from mypy_boto3_devicefarm.type_defs import GetTestGridSessionRequestTypeDef
 ```
 
 Optional fields:
+
+- `projectArn`: `str`
+- `sessionId`: `str`
+- `sessionArn`: `str`
+
+## GetTestGridSessionResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import GetTestGridSessionResultResponseTypeDef
+```
+
+Required fields:
 
 - `testGridSession`:
   [TestGridSessionTypeDef](./type_defs.md#testgridsessiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTestResultTypeDef
+## GetTestRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import GetTestResultTypeDef
+from mypy_boto3_devicefarm.type_defs import GetTestRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `arn`: `str`
+
+## GetTestResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import GetTestResultResponseTypeDef
+```
+
+Required fields:
 
 - `test`: [TestTypeDef](./type_defs.md#testtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetUploadResultTypeDef
+## GetUploadRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import GetUploadResultTypeDef
+from mypy_boto3_devicefarm.type_defs import GetUploadRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `arn`: `str`
+
+## GetUploadResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import GetUploadResultResponseTypeDef
+```
+
+Required fields:
 
 - `upload`: [UploadTypeDef](./type_defs.md#uploadtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetVPCEConfigurationResultTypeDef
+## GetVPCEConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import GetVPCEConfigurationResultTypeDef
+from mypy_boto3_devicefarm.type_defs import GetVPCEConfigurationRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `arn`: `str`
+
+## GetVPCEConfigurationResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import GetVPCEConfigurationResultResponseTypeDef
+```
+
+Required fields:
 
 - `vpceConfiguration`:
   [VPCEConfigurationTypeDef](./type_defs.md#vpceconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## IncompatibilityMessageTypeDef
 
@@ -651,15 +1208,28 @@ Optional fields:
 - `message`: `str`
 - `type`: [DeviceAttributeType](./literals.md#deviceattributetype)
 
-## InstallToRemoteAccessSessionResultTypeDef
+## InstallToRemoteAccessSessionRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import InstallToRemoteAccessSessionResultTypeDef
+from mypy_boto3_devicefarm.type_defs import InstallToRemoteAccessSessionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `remoteAccessSessionArn`: `str`
+- `appArn`: `str`
+
+## InstallToRemoteAccessSessionResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import InstallToRemoteAccessSessionResultResponseTypeDef
+```
+
+Required fields:
 
 - `appUpload`: [UploadTypeDef](./type_defs.md#uploadtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## InstanceProfileTypeDef
 
@@ -700,282 +1270,649 @@ Optional fields:
 - `videoEndpoint`: `str`
 - `videoCapture`: `bool`
 
-## ListArtifactsResultTypeDef
+## ListArtifactsRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import ListArtifactsResultTypeDef
+from mypy_boto3_devicefarm.type_defs import ListArtifactsRequestTypeDef
 ```
 
+Required fields:
+
+- `arn`: `str`
+- `type`: [ArtifactCategoryType](./literals.md#artifactcategorytype)
+
 Optional fields:
+
+- `nextToken`: `str`
+
+## ListArtifactsResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import ListArtifactsResultResponseTypeDef
+```
+
+Required fields:
 
 - `artifacts`: `List`\[[ArtifactTypeDef](./type_defs.md#artifacttypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDeviceInstancesResultTypeDef
+## ListDeviceInstancesRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import ListDeviceInstancesResultTypeDef
+from mypy_boto3_devicefarm.type_defs import ListDeviceInstancesRequestTypeDef
 ```
 
 Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListDeviceInstancesResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import ListDeviceInstancesResultResponseTypeDef
+```
+
+Required fields:
 
 - `deviceInstances`:
   `List`\[[DeviceInstanceTypeDef](./type_defs.md#deviceinstancetypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDevicePoolsResultTypeDef
+## ListDevicePoolsRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import ListDevicePoolsResultTypeDef
+from mypy_boto3_devicefarm.type_defs import ListDevicePoolsRequestTypeDef
 ```
 
+Required fields:
+
+- `arn`: `str`
+
 Optional fields:
+
+- `type`: [DevicePoolTypeType](./literals.md#devicepooltypetype)
+- `nextToken`: `str`
+
+## ListDevicePoolsResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import ListDevicePoolsResultResponseTypeDef
+```
+
+Required fields:
 
 - `devicePools`:
   `List`\[[DevicePoolTypeDef](./type_defs.md#devicepooltypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDevicesResultTypeDef
+## ListDevicesRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import ListDevicesResultTypeDef
+from mypy_boto3_devicefarm.type_defs import ListDevicesRequestTypeDef
 ```
 
 Optional fields:
+
+- `arn`: `str`
+- `nextToken`: `str`
+- `filters`:
+  `List`\[[DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef)\]
+
+## ListDevicesResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import ListDevicesResultResponseTypeDef
+```
+
+Required fields:
 
 - `devices`: `List`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListInstanceProfilesResultTypeDef
+## ListInstanceProfilesRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import ListInstanceProfilesResultTypeDef
+from mypy_boto3_devicefarm.type_defs import ListInstanceProfilesRequestTypeDef
 ```
 
 Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListInstanceProfilesResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import ListInstanceProfilesResultResponseTypeDef
+```
+
+Required fields:
 
 - `instanceProfiles`:
   `List`\[[InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListJobsResultTypeDef
+## ListJobsRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import ListJobsResultTypeDef
+from mypy_boto3_devicefarm.type_defs import ListJobsRequestTypeDef
 ```
 
+Required fields:
+
+- `arn`: `str`
+
 Optional fields:
+
+- `nextToken`: `str`
+
+## ListJobsResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import ListJobsResultResponseTypeDef
+```
+
+Required fields:
 
 - `jobs`: `List`\[[JobTypeDef](./type_defs.md#jobtypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListNetworkProfilesResultTypeDef
+## ListNetworkProfilesRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import ListNetworkProfilesResultTypeDef
+from mypy_boto3_devicefarm.type_defs import ListNetworkProfilesRequestTypeDef
 ```
 
+Required fields:
+
+- `arn`: `str`
+
 Optional fields:
+
+- `type`: [NetworkProfileTypeType](./literals.md#networkprofiletypetype)
+- `nextToken`: `str`
+
+## ListNetworkProfilesResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import ListNetworkProfilesResultResponseTypeDef
+```
+
+Required fields:
 
 - `networkProfiles`:
   `List`\[[NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListOfferingPromotionsResultTypeDef
+## ListOfferingPromotionsRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import ListOfferingPromotionsResultTypeDef
+from mypy_boto3_devicefarm.type_defs import ListOfferingPromotionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `nextToken`: `str`
+
+## ListOfferingPromotionsResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import ListOfferingPromotionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `offeringPromotions`:
   `List`\[[OfferingPromotionTypeDef](./type_defs.md#offeringpromotiontypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListOfferingTransactionsResultTypeDef
+## ListOfferingTransactionsRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import ListOfferingTransactionsResultTypeDef
+from mypy_boto3_devicefarm.type_defs import ListOfferingTransactionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `nextToken`: `str`
+
+## ListOfferingTransactionsResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import ListOfferingTransactionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `offeringTransactions`:
   `List`\[[OfferingTransactionTypeDef](./type_defs.md#offeringtransactiontypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListOfferingsResultTypeDef
+## ListOfferingsRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import ListOfferingsResultTypeDef
+from mypy_boto3_devicefarm.type_defs import ListOfferingsRequestTypeDef
 ```
 
 Optional fields:
+
+- `nextToken`: `str`
+
+## ListOfferingsResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import ListOfferingsResultResponseTypeDef
+```
+
+Required fields:
 
 - `offerings`: `List`\[[OfferingTypeDef](./type_defs.md#offeringtypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListProjectsResultTypeDef
+## ListProjectsRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import ListProjectsResultTypeDef
+from mypy_boto3_devicefarm.type_defs import ListProjectsRequestTypeDef
 ```
 
 Optional fields:
+
+- `arn`: `str`
+- `nextToken`: `str`
+
+## ListProjectsResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import ListProjectsResultResponseTypeDef
+```
+
+Required fields:
 
 - `projects`: `List`\[[ProjectTypeDef](./type_defs.md#projecttypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRemoteAccessSessionsResultTypeDef
+## ListRemoteAccessSessionsRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import ListRemoteAccessSessionsResultTypeDef
+from mypy_boto3_devicefarm.type_defs import ListRemoteAccessSessionsRequestTypeDef
 ```
 
+Required fields:
+
+- `arn`: `str`
+
 Optional fields:
+
+- `nextToken`: `str`
+
+## ListRemoteAccessSessionsResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import ListRemoteAccessSessionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `remoteAccessSessions`:
   `List`\[[RemoteAccessSessionTypeDef](./type_defs.md#remoteaccesssessiontypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRunsResultTypeDef
+## ListRunsRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import ListRunsResultTypeDef
+from mypy_boto3_devicefarm.type_defs import ListRunsRequestTypeDef
 ```
 
+Required fields:
+
+- `arn`: `str`
+
 Optional fields:
+
+- `nextToken`: `str`
+
+## ListRunsResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import ListRunsResultResponseTypeDef
+```
+
+Required fields:
 
 - `runs`: `List`\[[RunTypeDef](./type_defs.md#runtypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSamplesResultTypeDef
+## ListSamplesRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import ListSamplesResultTypeDef
+from mypy_boto3_devicefarm.type_defs import ListSamplesRequestTypeDef
 ```
 
+Required fields:
+
+- `arn`: `str`
+
 Optional fields:
+
+- `nextToken`: `str`
+
+## ListSamplesResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import ListSamplesResultResponseTypeDef
+```
+
+Required fields:
 
 - `samples`: `List`\[[SampleTypeDef](./type_defs.md#sampletypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSuitesResultTypeDef
+## ListSuitesRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import ListSuitesResultTypeDef
+from mypy_boto3_devicefarm.type_defs import ListSuitesRequestTypeDef
 ```
 
+Required fields:
+
+- `arn`: `str`
+
 Optional fields:
+
+- `nextToken`: `str`
+
+## ListSuitesResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import ListSuitesResultResponseTypeDef
+```
+
+Required fields:
 
 - `suites`: `List`\[[SuiteTypeDef](./type_defs.md#suitetypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_devicefarm.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceARN`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTestGridProjectsResultTypeDef
+## ListTestGridProjectsRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import ListTestGridProjectsResultTypeDef
+from mypy_boto3_devicefarm.type_defs import ListTestGridProjectsRequestTypeDef
 ```
 
 Optional fields:
+
+- `maxResult`: `int`
+- `nextToken`: `str`
+
+## ListTestGridProjectsResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import ListTestGridProjectsResultResponseTypeDef
+```
+
+Required fields:
 
 - `testGridProjects`:
   `List`\[[TestGridProjectTypeDef](./type_defs.md#testgridprojecttypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTestGridSessionActionsResultTypeDef
+## ListTestGridSessionActionsRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import ListTestGridSessionActionsResultTypeDef
+from mypy_boto3_devicefarm.type_defs import ListTestGridSessionActionsRequestTypeDef
 ```
 
+Required fields:
+
+- `sessionArn`: `str`
+
 Optional fields:
+
+- `maxResult`: `int`
+- `nextToken`: `str`
+
+## ListTestGridSessionActionsResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import ListTestGridSessionActionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `actions`:
   `List`\[[TestGridSessionActionTypeDef](./type_defs.md#testgridsessionactiontypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTestGridSessionArtifactsResultTypeDef
+## ListTestGridSessionArtifactsRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import ListTestGridSessionArtifactsResultTypeDef
+from mypy_boto3_devicefarm.type_defs import ListTestGridSessionArtifactsRequestTypeDef
 ```
 
+Required fields:
+
+- `sessionArn`: `str`
+
 Optional fields:
+
+- `type`:
+  [TestGridSessionArtifactCategoryType](./literals.md#testgridsessionartifactcategorytype)
+- `maxResult`: `int`
+- `nextToken`: `str`
+
+## ListTestGridSessionArtifactsResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import ListTestGridSessionArtifactsResultResponseTypeDef
+```
+
+Required fields:
 
 - `artifacts`:
   `List`\[[TestGridSessionArtifactTypeDef](./type_defs.md#testgridsessionartifacttypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTestGridSessionsResultTypeDef
+## ListTestGridSessionsRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import ListTestGridSessionsResultTypeDef
+from mypy_boto3_devicefarm.type_defs import ListTestGridSessionsRequestTypeDef
 ```
 
+Required fields:
+
+- `projectArn`: `str`
+
 Optional fields:
+
+- `status`:
+  [TestGridSessionStatusType](./literals.md#testgridsessionstatustype)
+- `creationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `creationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `endTimeAfter`: `Union`\[`datetime`, `str`\]
+- `endTimeBefore`: `Union`\[`datetime`, `str`\]
+- `maxResult`: `int`
+- `nextToken`: `str`
+
+## ListTestGridSessionsResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import ListTestGridSessionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `testGridSessions`:
   `List`\[[TestGridSessionTypeDef](./type_defs.md#testgridsessiontypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTestsResultTypeDef
+## ListTestsRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import ListTestsResultTypeDef
+from mypy_boto3_devicefarm.type_defs import ListTestsRequestTypeDef
 ```
 
+Required fields:
+
+- `arn`: `str`
+
 Optional fields:
+
+- `nextToken`: `str`
+
+## ListTestsResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import ListTestsResultResponseTypeDef
+```
+
+Required fields:
 
 - `tests`: `List`\[[TestTypeDef](./type_defs.md#testtypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListUniqueProblemsResultTypeDef
+## ListUniqueProblemsRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import ListUniqueProblemsResultTypeDef
+from mypy_boto3_devicefarm.type_defs import ListUniqueProblemsRequestTypeDef
 ```
 
+Required fields:
+
+- `arn`: `str`
+
 Optional fields:
+
+- `nextToken`: `str`
+
+## ListUniqueProblemsResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import ListUniqueProblemsResultResponseTypeDef
+```
+
+Required fields:
 
 - `uniqueProblems`:
   `Dict`\[[ExecutionResultType](./literals.md#executionresulttype),
   `List`\[[UniqueProblemTypeDef](./type_defs.md#uniqueproblemtypedef)\]\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListUploadsResultTypeDef
+## ListUploadsRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import ListUploadsResultTypeDef
+from mypy_boto3_devicefarm.type_defs import ListUploadsRequestTypeDef
 ```
 
+Required fields:
+
+- `arn`: `str`
+
 Optional fields:
+
+- `type`: [UploadTypeType](./literals.md#uploadtypetype)
+- `nextToken`: `str`
+
+## ListUploadsResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import ListUploadsResultResponseTypeDef
+```
+
+Required fields:
 
 - `uploads`: `List`\[[UploadTypeDef](./type_defs.md#uploadtypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListVPCEConfigurationsResultTypeDef
+## ListVPCEConfigurationsRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import ListVPCEConfigurationsResultTypeDef
+from mypy_boto3_devicefarm.type_defs import ListVPCEConfigurationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListVPCEConfigurationsResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import ListVPCEConfigurationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `vpceConfigurations`:
   `List`\[[VPCEConfigurationTypeDef](./type_defs.md#vpceconfigurationtypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LocationTypeDef
 
@@ -1129,16 +2066,33 @@ Optional fields:
 - `defaultJobTimeoutMinutes`: `int`
 - `created`: `datetime`
 
-## PurchaseOfferingResultTypeDef
+## PurchaseOfferingRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import PurchaseOfferingResultTypeDef
+from mypy_boto3_devicefarm.type_defs import PurchaseOfferingRequestTypeDef
 ```
+
+Required fields:
+
+- `offeringId`: `str`
+- `quantity`: `int`
 
 Optional fields:
 
+- `offeringPromotionId`: `str`
+
+## PurchaseOfferingResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import PurchaseOfferingResultResponseTypeDef
+```
+
+Required fields:
+
 - `offeringTransaction`:
   [OfferingTransactionTypeDef](./type_defs.md#offeringtransactiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## RadiosTypeDef
 
@@ -1195,16 +2149,29 @@ Optional fields:
 - `interactionMode`: [InteractionModeType](./literals.md#interactionmodetype)
 - `skipAppResign`: `bool`
 
-## RenewOfferingResultTypeDef
+## RenewOfferingRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import RenewOfferingResultTypeDef
+from mypy_boto3_devicefarm.type_defs import RenewOfferingRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `offeringId`: `str`
+- `quantity`: `int`
+
+## RenewOfferingResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import RenewOfferingResultResponseTypeDef
+```
+
+Required fields:
 
 - `offeringTransaction`:
   [OfferingTransactionTypeDef](./type_defs.md#offeringtransactiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ResolutionTypeDef
 
@@ -1216,6 +2183,20 @@ Optional fields:
 
 - `width`: `int`
 - `height`: `int`
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## RuleTypeDef
 
@@ -1304,15 +2285,40 @@ Optional fields:
 - `auxiliaryApps`: `List`\[`str`\]
 - `billingMethod`: [BillingMethodType](./literals.md#billingmethodtype)
 
-## ScheduleRunResultTypeDef
+## ScheduleRunRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import ScheduleRunResultTypeDef
+from mypy_boto3_devicefarm.type_defs import ScheduleRunRequestTypeDef
 ```
+
+Required fields:
+
+- `projectArn`: `str`
+- `test`: [ScheduleRunTestTypeDef](./type_defs.md#scheduleruntesttypedef)
 
 Optional fields:
 
+- `appArn`: `str`
+- `devicePoolArn`: `str`
+- `deviceSelectionConfiguration`:
+  [DeviceSelectionConfigurationTypeDef](./type_defs.md#deviceselectionconfigurationtypedef)
+- `name`: `str`
+- `configuration`:
+  [ScheduleRunConfigurationTypeDef](./type_defs.md#schedulerunconfigurationtypedef)
+- `executionConfiguration`:
+  [ExecutionConfigurationTypeDef](./type_defs.md#executionconfigurationtypedef)
+
+## ScheduleRunResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import ScheduleRunResultResponseTypeDef
+```
+
+Required fields:
+
 - `run`: [RunTypeDef](./type_defs.md#runtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ScheduleRunTestTypeDef
 
@@ -1331,36 +2337,72 @@ Optional fields:
 - `filter`: `str`
 - `parameters`: `Dict`\[`str`, `str`\]
 
-## StopJobResultTypeDef
+## StopJobRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import StopJobResultTypeDef
+from mypy_boto3_devicefarm.type_defs import StopJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `arn`: `str`
+
+## StopJobResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import StopJobResultResponseTypeDef
+```
+
+Required fields:
 
 - `job`: [JobTypeDef](./type_defs.md#jobtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopRemoteAccessSessionResultTypeDef
+## StopRemoteAccessSessionRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import StopRemoteAccessSessionResultTypeDef
+from mypy_boto3_devicefarm.type_defs import StopRemoteAccessSessionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `arn`: `str`
+
+## StopRemoteAccessSessionResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import StopRemoteAccessSessionResultResponseTypeDef
+```
+
+Required fields:
 
 - `remoteAccessSession`:
   [RemoteAccessSessionTypeDef](./type_defs.md#remoteaccesssessiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopRunResultTypeDef
+## StopRunRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import StopRunResultTypeDef
+from mypy_boto3_devicefarm.type_defs import StopRunRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `arn`: `str`
+
+## StopRunResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import StopRunResultResponseTypeDef
+```
+
+Required fields:
 
 - `run`: [RunTypeDef](./type_defs.md#runtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## SuiteTypeDef
 
@@ -1381,6 +2423,17 @@ Optional fields:
 - `counters`: [CountersTypeDef](./type_defs.md#counterstypedef)
 - `message`: `str`
 - `deviceMinutes`: [DeviceMinutesTypeDef](./type_defs.md#deviceminutestypedef)
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1505,90 +2558,257 @@ Optional fields:
 - `message`: `str`
 - `problems`: `List`\[[ProblemTypeDef](./type_defs.md#problemtypedef)\]
 
-## UpdateDeviceInstanceResultTypeDef
+## UntagResourceRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import UpdateDeviceInstanceResultTypeDef
+from mypy_boto3_devicefarm.type_defs import UntagResourceRequestTypeDef
 ```
 
+Required fields:
+
+- `ResourceARN`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## UpdateDeviceInstanceRequestTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import UpdateDeviceInstanceRequestTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+
 Optional fields:
+
+- `profileArn`: `str`
+- `labels`: `List`\[`str`\]
+
+## UpdateDeviceInstanceResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import UpdateDeviceInstanceResultResponseTypeDef
+```
+
+Required fields:
 
 - `deviceInstance`:
   [DeviceInstanceTypeDef](./type_defs.md#deviceinstancetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateDevicePoolResultTypeDef
+## UpdateDevicePoolRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import UpdateDevicePoolResultTypeDef
+from mypy_boto3_devicefarm.type_defs import UpdateDevicePoolRequestTypeDef
 ```
 
+Required fields:
+
+- `arn`: `str`
+
 Optional fields:
+
+- `name`: `str`
+- `description`: `str`
+- `rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `maxDevices`: `int`
+- `clearMaxDevices`: `bool`
+
+## UpdateDevicePoolResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import UpdateDevicePoolResultResponseTypeDef
+```
+
+Required fields:
 
 - `devicePool`: [DevicePoolTypeDef](./type_defs.md#devicepooltypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateInstanceProfileResultTypeDef
+## UpdateInstanceProfileRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import UpdateInstanceProfileResultTypeDef
+from mypy_boto3_devicefarm.type_defs import UpdateInstanceProfileRequestTypeDef
 ```
 
+Required fields:
+
+- `arn`: `str`
+
 Optional fields:
+
+- `name`: `str`
+- `description`: `str`
+- `packageCleanup`: `bool`
+- `excludeAppPackagesFromCleanup`: `List`\[`str`\]
+- `rebootAfterUse`: `bool`
+
+## UpdateInstanceProfileResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import UpdateInstanceProfileResultResponseTypeDef
+```
+
+Required fields:
 
 - `instanceProfile`:
   [InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateNetworkProfileResultTypeDef
+## UpdateNetworkProfileRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import UpdateNetworkProfileResultTypeDef
+from mypy_boto3_devicefarm.type_defs import UpdateNetworkProfileRequestTypeDef
 ```
 
+Required fields:
+
+- `arn`: `str`
+
 Optional fields:
+
+- `name`: `str`
+- `description`: `str`
+- `type`: [NetworkProfileTypeType](./literals.md#networkprofiletypetype)
+- `uplinkBandwidthBits`: `int`
+- `downlinkBandwidthBits`: `int`
+- `uplinkDelayMs`: `int`
+- `downlinkDelayMs`: `int`
+- `uplinkJitterMs`: `int`
+- `downlinkJitterMs`: `int`
+- `uplinkLossPercent`: `int`
+- `downlinkLossPercent`: `int`
+
+## UpdateNetworkProfileResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import UpdateNetworkProfileResultResponseTypeDef
+```
+
+Required fields:
 
 - `networkProfile`:
   [NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateProjectResultTypeDef
+## UpdateProjectRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import UpdateProjectResultTypeDef
+from mypy_boto3_devicefarm.type_defs import UpdateProjectRequestTypeDef
 ```
 
+Required fields:
+
+- `arn`: `str`
+
 Optional fields:
+
+- `name`: `str`
+- `defaultJobTimeoutMinutes`: `int`
+
+## UpdateProjectResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import UpdateProjectResultResponseTypeDef
+```
+
+Required fields:
 
 - `project`: [ProjectTypeDef](./type_defs.md#projecttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateTestGridProjectResultTypeDef
+## UpdateTestGridProjectRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import UpdateTestGridProjectResultTypeDef
+from mypy_boto3_devicefarm.type_defs import UpdateTestGridProjectRequestTypeDef
 ```
 
+Required fields:
+
+- `projectArn`: `str`
+
 Optional fields:
+
+- `name`: `str`
+- `description`: `str`
+- `vpcConfig`:
+  [TestGridVpcConfigTypeDef](./type_defs.md#testgridvpcconfigtypedef)
+
+## UpdateTestGridProjectResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import UpdateTestGridProjectResultResponseTypeDef
+```
+
+Required fields:
 
 - `testGridProject`:
   [TestGridProjectTypeDef](./type_defs.md#testgridprojecttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateUploadResultTypeDef
+## UpdateUploadRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import UpdateUploadResultTypeDef
+from mypy_boto3_devicefarm.type_defs import UpdateUploadRequestTypeDef
 ```
 
+Required fields:
+
+- `arn`: `str`
+
 Optional fields:
+
+- `name`: `str`
+- `contentType`: `str`
+- `editContent`: `bool`
+
+## UpdateUploadResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import UpdateUploadResultResponseTypeDef
+```
+
+Required fields:
 
 - `upload`: [UploadTypeDef](./type_defs.md#uploadtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateVPCEConfigurationResultTypeDef
+## UpdateVPCEConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_devicefarm.type_defs import UpdateVPCEConfigurationResultTypeDef
+from mypy_boto3_devicefarm.type_defs import UpdateVPCEConfigurationRequestTypeDef
 ```
 
+Required fields:
+
+- `arn`: `str`
+
 Optional fields:
+
+- `vpceConfigurationName`: `str`
+- `vpceServiceName`: `str`
+- `serviceDnsName`: `str`
+- `vpceConfigurationDescription`: `str`
+
+## UpdateVPCEConfigurationResultResponseTypeDef
+
+```python
+from mypy_boto3_devicefarm.type_defs import UpdateVPCEConfigurationResultResponseTypeDef
+```
+
+Required fields:
 
 - `vpceConfiguration`:
   [VPCEConfigurationTypeDef](./type_defs.md#vpceconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UploadTypeDef
 

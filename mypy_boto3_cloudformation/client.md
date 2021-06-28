@@ -136,10 +136,16 @@ Exceptions:
 
 ### activate_type
 
+Activates a public third-party extension, making it available for use in stack
+templates.
+
 Type annotations for `boto3.client("cloudformation").activate_type` method.
 
 Boto3 documentation:
 [CloudFormation.Client.activate_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.activate_type)
+
+Arguments mapping described in
+[ActivateTypeInputTypeDef](./type_defs.md#activatetypeinputtypedef).
 
 Keyword-only arguments:
 
@@ -154,15 +160,22 @@ Keyword-only arguments:
 - `VersionBump`: [VersionBumpType](./literals.md#versionbumptype)
 - `MajorVersion`: `int`
 
-Returns [ActivateTypeOutputTypeDef](./type_defs.md#activatetypeoutputtypedef).
+Returns
+[ActivateTypeOutputResponseTypeDef](./type_defs.md#activatetypeoutputresponsetypedef).
 
 ### batch_describe_type_configurations
+
+Returns configuration data for the specified CloudFormation extensions, from
+the CloudFormation registry for the account and region.
 
 Type annotations for
 `boto3.client("cloudformation").batch_describe_type_configurations` method.
 
 Boto3 documentation:
 [CloudFormation.Client.batch_describe_type_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.batch_describe_type_configurations)
+
+Arguments mapping described in
+[BatchDescribeTypeConfigurationsInputTypeDef](./type_defs.md#batchdescribetypeconfigurationsinputtypedef).
 
 Keyword-only arguments:
 
@@ -171,9 +184,11 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchDescribeTypeConfigurationsOutputTypeDef](./type_defs.md#batchdescribetypeconfigurationsoutputtypedef).
+[BatchDescribeTypeConfigurationsOutputResponseTypeDef](./type_defs.md#batchdescribetypeconfigurationsoutputresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("cloudformation").can_paginate` method.
 
@@ -188,11 +203,16 @@ Returns `bool`.
 
 ### cancel_update_stack
 
+Cancels an update on the specified stack.
+
 Type annotations for `boto3.client("cloudformation").cancel_update_stack`
 method.
 
 Boto3 documentation:
 [CloudFormation.Client.cancel_update_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.cancel_update_stack)
+
+Arguments mapping described in
+[CancelUpdateStackInputTypeDef](./type_defs.md#cancelupdatestackinputtypedef).
 
 Keyword-only arguments:
 
@@ -201,11 +221,17 @@ Keyword-only arguments:
 
 ### continue_update_rollback
 
+For a specified stack that is in the `UPDATE_ROLLBACK_FAILED` state, continues
+rolling it back to the `UPDATE_ROLLBACK_COMPLETE` state.
+
 Type annotations for `boto3.client("cloudformation").continue_update_rollback`
 method.
 
 Boto3 documentation:
 [CloudFormation.Client.continue_update_rollback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.continue_update_rollback)
+
+Arguments mapping described in
+[ContinueUpdateRollbackInputTypeDef](./type_defs.md#continueupdaterollbackinputtypedef).
 
 Keyword-only arguments:
 
@@ -218,10 +244,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### create_change_set
 
+.
+
 Type annotations for `boto3.client("cloudformation").create_change_set` method.
 
 Boto3 documentation:
 [CloudFormation.Client.create_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_change_set)
+
+Arguments mapping described in
+[CreateChangeSetInputTypeDef](./type_defs.md#createchangesetinputtypedef).
 
 Keyword-only arguments:
 
@@ -246,14 +277,19 @@ Keyword-only arguments:
 - `IncludeNestedStacks`: `bool`
 
 Returns
-[CreateChangeSetOutputTypeDef](./type_defs.md#createchangesetoutputtypedef).
+[CreateChangeSetOutputResponseTypeDef](./type_defs.md#createchangesetoutputresponsetypedef).
 
 ### create_stack
+
+Creates a stack as specified in the template.
 
 Type annotations for `boto3.client("cloudformation").create_stack` method.
 
 Boto3 documentation:
 [CloudFormation.Client.create_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack)
+
+Arguments mapping described in
+[CreateStackInputTypeDef](./type_defs.md#createstackinputtypedef).
 
 Keyword-only arguments:
 
@@ -276,15 +312,22 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 - `EnableTerminationProtection`: `bool`
 
-Returns [CreateStackOutputTypeDef](./type_defs.md#createstackoutputtypedef).
+Returns
+[CreateStackOutputResponseTypeDef](./type_defs.md#createstackoutputresponsetypedef).
 
 ### create_stack_instances
+
+Creates stack instances for the specified accounts, within the specified
+Regions.
 
 Type annotations for `boto3.client("cloudformation").create_stack_instances`
 method.
 
 Boto3 documentation:
 [CloudFormation.Client.create_stack_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack_instances)
+
+Arguments mapping described in
+[CreateStackInstancesInputTypeDef](./type_defs.md#createstackinstancesinputtypedef).
 
 Keyword-only arguments:
 
@@ -301,14 +344,19 @@ Keyword-only arguments:
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 Returns
-[CreateStackInstancesOutputTypeDef](./type_defs.md#createstackinstancesoutputtypedef).
+[CreateStackInstancesOutputResponseTypeDef](./type_defs.md#createstackinstancesoutputresponsetypedef).
 
 ### create_stack_set
+
+Creates a stack set.
 
 Type annotations for `boto3.client("cloudformation").create_stack_set` method.
 
 Boto3 documentation:
 [CloudFormation.Client.create_stack_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack_set)
+
+Arguments mapping described in
+[CreateStackSetInputTypeDef](./type_defs.md#createstacksetinputtypedef).
 
 Keyword-only arguments:
 
@@ -328,14 +376,20 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 
 Returns
-[CreateStackSetOutputTypeDef](./type_defs.md#createstacksetoutputtypedef).
+[CreateStackSetOutputResponseTypeDef](./type_defs.md#createstacksetoutputresponsetypedef).
 
 ### deactivate_type
+
+Deactivates a public extension that was previously activated in this account
+and region.
 
 Type annotations for `boto3.client("cloudformation").deactivate_type` method.
 
 Boto3 documentation:
 [CloudFormation.Client.deactivate_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.deactivate_type)
+
+Arguments mapping described in
+[DeactivateTypeInputTypeDef](./type_defs.md#deactivatetypeinputtypedef).
 
 Keyword-only arguments:
 
@@ -347,10 +401,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_change_set
 
+Deletes the specified change set.
+
 Type annotations for `boto3.client("cloudformation").delete_change_set` method.
 
 Boto3 documentation:
 [CloudFormation.Client.delete_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_change_set)
+
+Arguments mapping described in
+[DeleteChangeSetInputTypeDef](./type_defs.md#deletechangesetinputtypedef).
 
 Keyword-only arguments:
 
@@ -361,10 +420,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_stack
 
+Deletes a specified stack.
+
 Type annotations for `boto3.client("cloudformation").delete_stack` method.
 
 Boto3 documentation:
 [CloudFormation.Client.delete_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_stack)
+
+Arguments mapping described in
+[DeleteStackInputTypeDef](./type_defs.md#deletestackinputtypedef).
 
 Keyword-only arguments:
 
@@ -375,11 +439,16 @@ Keyword-only arguments:
 
 ### delete_stack_instances
 
+Deletes stack instances for the specified accounts, in the specified Regions.
+
 Type annotations for `boto3.client("cloudformation").delete_stack_instances`
 method.
 
 Boto3 documentation:
 [CloudFormation.Client.delete_stack_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_stack_instances)
+
+Arguments mapping described in
+[DeleteStackInstancesInputTypeDef](./type_defs.md#deletestackinstancesinputtypedef).
 
 Keyword-only arguments:
 
@@ -395,14 +464,19 @@ Keyword-only arguments:
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 Returns
-[DeleteStackInstancesOutputTypeDef](./type_defs.md#deletestackinstancesoutputtypedef).
+[DeleteStackInstancesOutputResponseTypeDef](./type_defs.md#deletestackinstancesoutputresponsetypedef).
 
 ### delete_stack_set
+
+Deletes a stack set.
 
 Type annotations for `boto3.client("cloudformation").delete_stack_set` method.
 
 Boto3 documentation:
 [CloudFormation.Client.delete_stack_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_stack_set)
+
+Arguments mapping described in
+[DeleteStackSetInputTypeDef](./type_defs.md#deletestacksetinputtypedef).
 
 Keyword-only arguments:
 
@@ -413,10 +487,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### deregister_type
 
+Marks an extension or extension version as `DEPRECATED` in the CloudFormation
+registry, removing it from active use.
+
 Type annotations for `boto3.client("cloudformation").deregister_type` method.
 
 Boto3 documentation:
 [CloudFormation.Client.deregister_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.deregister_type)
+
+Arguments mapping described in
+[DeregisterTypeInputTypeDef](./type_defs.md#deregistertypeinputtypedef).
 
 Keyword-only arguments:
 
@@ -429,26 +509,38 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_account_limits
 
+Retrieves your account's AWS CloudFormation limits, such as the maximum number
+of stacks that you can create in your account.
+
 Type annotations for `boto3.client("cloudformation").describe_account_limits`
 method.
 
 Boto3 documentation:
 [CloudFormation.Client.describe_account_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_account_limits)
 
+Arguments mapping described in
+[DescribeAccountLimitsInputTypeDef](./type_defs.md#describeaccountlimitsinputtypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 
 Returns
-[DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef).
+[DescribeAccountLimitsOutputResponseTypeDef](./type_defs.md#describeaccountlimitsoutputresponsetypedef).
 
 ### describe_change_set
+
+Returns the inputs for the change set and a list of changes that AWS
+CloudFormation will make if you execute the change set.
 
 Type annotations for `boto3.client("cloudformation").describe_change_set`
 method.
 
 Boto3 documentation:
 [CloudFormation.Client.describe_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_change_set)
+
+Arguments mapping described in
+[DescribeChangeSetInputTypeDef](./type_defs.md#describechangesetinputtypedef).
 
 Keyword-only arguments:
 
@@ -457,9 +549,11 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeChangeSetOutputTypeDef](./type_defs.md#describechangesetoutputtypedef).
+[DescribeChangeSetOutputResponseTypeDef](./type_defs.md#describechangesetoutputresponsetypedef).
 
 ### describe_publisher
+
+Returns information about a CloudFormation extension publisher.
 
 Type annotations for `boto3.client("cloudformation").describe_publisher`
 method.
@@ -467,14 +561,19 @@ method.
 Boto3 documentation:
 [CloudFormation.Client.describe_publisher](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_publisher)
 
+Arguments mapping described in
+[DescribePublisherInputTypeDef](./type_defs.md#describepublisherinputtypedef).
+
 Keyword-only arguments:
 
 - `PublisherId`: `str`
 
 Returns
-[DescribePublisherOutputTypeDef](./type_defs.md#describepublisheroutputtypedef).
+[DescribePublisherOutputResponseTypeDef](./type_defs.md#describepublisheroutputresponsetypedef).
 
 ### describe_stack_drift_detection_status
+
+Returns information about a stack drift detection operation.
 
 Type annotations for
 `boto3.client("cloudformation").describe_stack_drift_detection_status` method.
@@ -482,14 +581,20 @@ Type annotations for
 Boto3 documentation:
 [CloudFormation.Client.describe_stack_drift_detection_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_drift_detection_status)
 
+Arguments mapping described in
+[DescribeStackDriftDetectionStatusInputTypeDef](./type_defs.md#describestackdriftdetectionstatusinputtypedef).
+
 Keyword-only arguments:
 
 - `StackDriftDetectionId`: `str` *(required)*
 
 Returns
-[DescribeStackDriftDetectionStatusOutputTypeDef](./type_defs.md#describestackdriftdetectionstatusoutputtypedef).
+[DescribeStackDriftDetectionStatusOutputResponseTypeDef](./type_defs.md#describestackdriftdetectionstatusoutputresponsetypedef).
 
 ### describe_stack_events
+
+Returns all stack related events for a specified stack in reverse chronological
+order.
 
 Type annotations for `boto3.client("cloudformation").describe_stack_events`
 method.
@@ -497,21 +602,30 @@ method.
 Boto3 documentation:
 [CloudFormation.Client.describe_stack_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_events)
 
+Arguments mapping described in
+[DescribeStackEventsInputTypeDef](./type_defs.md#describestackeventsinputtypedef).
+
 Keyword-only arguments:
 
 - `StackName`: `str`
 - `NextToken`: `str`
 
 Returns
-[DescribeStackEventsOutputTypeDef](./type_defs.md#describestackeventsoutputtypedef).
+[DescribeStackEventsOutputResponseTypeDef](./type_defs.md#describestackeventsoutputresponsetypedef).
 
 ### describe_stack_instance
+
+Returns the stack instance that's associated with the specified stack set, AWS
+account, and Region.
 
 Type annotations for `boto3.client("cloudformation").describe_stack_instance`
 method.
 
 Boto3 documentation:
 [CloudFormation.Client.describe_stack_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_instance)
+
+Arguments mapping described in
+[DescribeStackInstanceInputTypeDef](./type_defs.md#describestackinstanceinputtypedef).
 
 Keyword-only arguments:
 
@@ -521,9 +635,11 @@ Keyword-only arguments:
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 Returns
-[DescribeStackInstanceOutputTypeDef](./type_defs.md#describestackinstanceoutputtypedef).
+[DescribeStackInstanceOutputResponseTypeDef](./type_defs.md#describestackinstanceoutputresponsetypedef).
 
 ### describe_stack_resource
+
+Returns a description of the specified resource in the specified stack.
 
 Type annotations for `boto3.client("cloudformation").describe_stack_resource`
 method.
@@ -531,21 +647,30 @@ method.
 Boto3 documentation:
 [CloudFormation.Client.describe_stack_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resource)
 
+Arguments mapping described in
+[DescribeStackResourceInputTypeDef](./type_defs.md#describestackresourceinputtypedef).
+
 Keyword-only arguments:
 
 - `StackName`: `str` *(required)*
 - `LogicalResourceId`: `str` *(required)*
 
 Returns
-[DescribeStackResourceOutputTypeDef](./type_defs.md#describestackresourceoutputtypedef).
+[DescribeStackResourceOutputResponseTypeDef](./type_defs.md#describestackresourceoutputresponsetypedef).
 
 ### describe_stack_resource_drifts
+
+Returns drift information for the resources that have been checked for drift in
+the specified stack.
 
 Type annotations for
 `boto3.client("cloudformation").describe_stack_resource_drifts` method.
 
 Boto3 documentation:
 [CloudFormation.Client.describe_stack_resource_drifts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resource_drifts)
+
+Arguments mapping described in
+[DescribeStackResourceDriftsInputTypeDef](./type_defs.md#describestackresourcedriftsinputtypedef).
 
 Keyword-only arguments:
 
@@ -556,15 +681,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeStackResourceDriftsOutputTypeDef](./type_defs.md#describestackresourcedriftsoutputtypedef).
+[DescribeStackResourceDriftsOutputResponseTypeDef](./type_defs.md#describestackresourcedriftsoutputresponsetypedef).
 
 ### describe_stack_resources
+
+Returns AWS resource descriptions for running and deleted stacks.
 
 Type annotations for `boto3.client("cloudformation").describe_stack_resources`
 method.
 
 Boto3 documentation:
 [CloudFormation.Client.describe_stack_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resources)
+
+Arguments mapping described in
+[DescribeStackResourcesInputTypeDef](./type_defs.md#describestackresourcesinputtypedef).
 
 Keyword-only arguments:
 
@@ -573,9 +703,11 @@ Keyword-only arguments:
 - `PhysicalResourceId`: `str`
 
 Returns
-[DescribeStackResourcesOutputTypeDef](./type_defs.md#describestackresourcesoutputtypedef).
+[DescribeStackResourcesOutputResponseTypeDef](./type_defs.md#describestackresourcesoutputresponsetypedef).
 
 ### describe_stack_set
+
+Returns the description of the specified stack set.
 
 Type annotations for `boto3.client("cloudformation").describe_stack_set`
 method.
@@ -583,21 +715,29 @@ method.
 Boto3 documentation:
 [CloudFormation.Client.describe_stack_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_set)
 
+Arguments mapping described in
+[DescribeStackSetInputTypeDef](./type_defs.md#describestacksetinputtypedef).
+
 Keyword-only arguments:
 
 - `StackSetName`: `str` *(required)*
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 Returns
-[DescribeStackSetOutputTypeDef](./type_defs.md#describestacksetoutputtypedef).
+[DescribeStackSetOutputResponseTypeDef](./type_defs.md#describestacksetoutputresponsetypedef).
 
 ### describe_stack_set_operation
+
+Returns the description of the specified stack set operation.
 
 Type annotations for
 `boto3.client("cloudformation").describe_stack_set_operation` method.
 
 Boto3 documentation:
 [CloudFormation.Client.describe_stack_set_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_set_operation)
+
+Arguments mapping described in
+[DescribeStackSetOperationInputTypeDef](./type_defs.md#describestacksetoperationinputtypedef).
 
 Keyword-only arguments:
 
@@ -606,14 +746,20 @@ Keyword-only arguments:
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 Returns
-[DescribeStackSetOperationOutputTypeDef](./type_defs.md#describestacksetoperationoutputtypedef).
+[DescribeStackSetOperationOutputResponseTypeDef](./type_defs.md#describestacksetoperationoutputresponsetypedef).
 
 ### describe_stacks
+
+Returns the description for the specified stack; if no stack name was
+specified, then it returns the description for all the stacks created.
 
 Type annotations for `boto3.client("cloudformation").describe_stacks` method.
 
 Boto3 documentation:
 [CloudFormation.Client.describe_stacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stacks)
+
+Arguments mapping described in
+[DescribeStacksInputTypeDef](./type_defs.md#describestacksinputtypedef).
 
 Keyword-only arguments:
 
@@ -621,14 +767,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeStacksOutputTypeDef](./type_defs.md#describestacksoutputtypedef).
+[DescribeStacksOutputResponseTypeDef](./type_defs.md#describestacksoutputresponsetypedef).
 
 ### describe_type
+
+Returns detailed information about an extension that has been registered.
 
 Type annotations for `boto3.client("cloudformation").describe_type` method.
 
 Boto3 documentation:
 [CloudFormation.Client.describe_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_type)
+
+Arguments mapping described in
+[DescribeTypeInputTypeDef](./type_defs.md#describetypeinputtypedef).
 
 Keyword-only arguments:
 
@@ -639,9 +790,13 @@ Keyword-only arguments:
 - `PublisherId`: `str`
 - `PublicVersionNumber`: `str`
 
-Returns [DescribeTypeOutputTypeDef](./type_defs.md#describetypeoutputtypedef).
+Returns
+[DescribeTypeOutputResponseTypeDef](./type_defs.md#describetypeoutputresponsetypedef).
 
 ### describe_type_registration
+
+Returns information about an extension's registration, including its current
+status and type and version identifiers.
 
 Type annotations for
 `boto3.client("cloudformation").describe_type_registration` method.
@@ -649,14 +804,21 @@ Type annotations for
 Boto3 documentation:
 [CloudFormation.Client.describe_type_registration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_type_registration)
 
+Arguments mapping described in
+[DescribeTypeRegistrationInputTypeDef](./type_defs.md#describetyperegistrationinputtypedef).
+
 Keyword-only arguments:
 
 - `RegistrationToken`: `str` *(required)*
 
 Returns
-[DescribeTypeRegistrationOutputTypeDef](./type_defs.md#describetyperegistrationoutputtypedef).
+[DescribeTypeRegistrationOutputResponseTypeDef](./type_defs.md#describetyperegistrationoutputresponsetypedef).
 
 ### detect_stack_drift
+
+Detects whether a stack's actual configuration differs, or has *drifted* , from
+it's expected configuration, as defined in the stack template and any values
+specified as template parameters.
 
 Type annotations for `boto3.client("cloudformation").detect_stack_drift`
 method.
@@ -664,15 +826,22 @@ method.
 Boto3 documentation:
 [CloudFormation.Client.detect_stack_drift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_drift)
 
+Arguments mapping described in
+[DetectStackDriftInputTypeDef](./type_defs.md#detectstackdriftinputtypedef).
+
 Keyword-only arguments:
 
 - `StackName`: `str` *(required)*
 - `LogicalResourceIds`: `List`\[`str`\]
 
 Returns
-[DetectStackDriftOutputTypeDef](./type_defs.md#detectstackdriftoutputtypedef).
+[DetectStackDriftOutputResponseTypeDef](./type_defs.md#detectstackdriftoutputresponsetypedef).
 
 ### detect_stack_resource_drift
+
+Returns information about whether a resource's actual configuration differs, or
+has *drifted* , from it's expected configuration, as defined in the stack
+template and any values specified as template parameters.
 
 Type annotations for
 `boto3.client("cloudformation").detect_stack_resource_drift` method.
@@ -680,21 +849,29 @@ Type annotations for
 Boto3 documentation:
 [CloudFormation.Client.detect_stack_resource_drift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_resource_drift)
 
+Arguments mapping described in
+[DetectStackResourceDriftInputTypeDef](./type_defs.md#detectstackresourcedriftinputtypedef).
+
 Keyword-only arguments:
 
 - `StackName`: `str` *(required)*
 - `LogicalResourceId`: `str` *(required)*
 
 Returns
-[DetectStackResourceDriftOutputTypeDef](./type_defs.md#detectstackresourcedriftoutputtypedef).
+[DetectStackResourceDriftOutputResponseTypeDef](./type_defs.md#detectstackresourcedriftoutputresponsetypedef).
 
 ### detect_stack_set_drift
+
+Detect drift on a stack set.
 
 Type annotations for `boto3.client("cloudformation").detect_stack_set_drift`
 method.
 
 Boto3 documentation:
 [CloudFormation.Client.detect_stack_set_drift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_set_drift)
+
+Arguments mapping described in
+[DetectStackSetDriftInputTypeDef](./type_defs.md#detectstacksetdriftinputtypedef).
 
 Keyword-only arguments:
 
@@ -705,15 +882,20 @@ Keyword-only arguments:
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 Returns
-[DetectStackSetDriftOutputTypeDef](./type_defs.md#detectstacksetdriftoutputtypedef).
+[DetectStackSetDriftOutputResponseTypeDef](./type_defs.md#detectstacksetdriftoutputresponsetypedef).
 
 ### estimate_template_cost
+
+Returns the estimated monthly cost of a template.
 
 Type annotations for `boto3.client("cloudformation").estimate_template_cost`
 method.
 
 Boto3 documentation:
 [CloudFormation.Client.estimate_template_cost](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.estimate_template_cost)
+
+Arguments mapping described in
+[EstimateTemplateCostInputTypeDef](./type_defs.md#estimatetemplatecostinputtypedef).
 
 Keyword-only arguments:
 
@@ -722,15 +904,21 @@ Keyword-only arguments:
 - `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 Returns
-[EstimateTemplateCostOutputTypeDef](./type_defs.md#estimatetemplatecostoutputtypedef).
+[EstimateTemplateCostOutputResponseTypeDef](./type_defs.md#estimatetemplatecostoutputresponsetypedef).
 
 ### execute_change_set
+
+Updates a stack using the input information that was provided when the
+specified change set was created.
 
 Type annotations for `boto3.client("cloudformation").execute_change_set`
 method.
 
 Boto3 documentation:
 [CloudFormation.Client.execute_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.execute_change_set)
+
+Arguments mapping described in
+[ExecuteChangeSetInputTypeDef](./type_defs.md#executechangesetinputtypedef).
 
 Keyword-only arguments:
 
@@ -741,6 +929,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("cloudformation").generate_presigned_url`
 method.
@@ -759,24 +949,34 @@ Returns `str`.
 
 ### get_stack_policy
 
+Returns the stack policy for a specified stack.
+
 Type annotations for `boto3.client("cloudformation").get_stack_policy` method.
 
 Boto3 documentation:
 [CloudFormation.Client.get_stack_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.get_stack_policy)
+
+Arguments mapping described in
+[GetStackPolicyInputTypeDef](./type_defs.md#getstackpolicyinputtypedef).
 
 Keyword-only arguments:
 
 - `StackName`: `str` *(required)*
 
 Returns
-[GetStackPolicyOutputTypeDef](./type_defs.md#getstackpolicyoutputtypedef).
+[GetStackPolicyOutputResponseTypeDef](./type_defs.md#getstackpolicyoutputresponsetypedef).
 
 ### get_template
+
+Returns the template body for a specified stack.
 
 Type annotations for `boto3.client("cloudformation").get_template` method.
 
 Boto3 documentation:
 [CloudFormation.Client.get_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.get_template)
+
+Arguments mapping described in
+[GetTemplateInputTypeDef](./type_defs.md#gettemplateinputtypedef).
 
 Keyword-only arguments:
 
@@ -784,15 +984,21 @@ Keyword-only arguments:
 - `ChangeSetName`: `str`
 - `TemplateStage`: [TemplateStageType](./literals.md#templatestagetype)
 
-Returns [GetTemplateOutputTypeDef](./type_defs.md#gettemplateoutputtypedef).
+Returns
+[GetTemplateOutputResponseTypeDef](./type_defs.md#gettemplateoutputresponsetypedef).
 
 ### get_template_summary
+
+Returns information about a new or existing template.
 
 Type annotations for `boto3.client("cloudformation").get_template_summary`
 method.
 
 Boto3 documentation:
 [CloudFormation.Client.get_template_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.get_template_summary)
+
+Arguments mapping described in
+[GetTemplateSummaryInputTypeDef](./type_defs.md#gettemplatesummaryinputtypedef).
 
 Keyword-only arguments:
 
@@ -803,14 +1009,19 @@ Keyword-only arguments:
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 Returns
-[GetTemplateSummaryOutputTypeDef](./type_defs.md#gettemplatesummaryoutputtypedef).
+[GetTemplateSummaryOutputResponseTypeDef](./type_defs.md#gettemplatesummaryoutputresponsetypedef).
 
 ### list_change_sets
+
+Returns the ID and status of each active change set for a stack.
 
 Type annotations for `boto3.client("cloudformation").list_change_sets` method.
 
 Boto3 documentation:
 [CloudFormation.Client.list_change_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_change_sets)
+
+Arguments mapping described in
+[ListChangeSetsInputTypeDef](./type_defs.md#listchangesetsinputtypedef).
 
 Keyword-only arguments:
 
@@ -818,42 +1029,60 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListChangeSetsOutputTypeDef](./type_defs.md#listchangesetsoutputtypedef).
+[ListChangeSetsOutputResponseTypeDef](./type_defs.md#listchangesetsoutputresponsetypedef).
 
 ### list_exports
+
+.
 
 Type annotations for `boto3.client("cloudformation").list_exports` method.
 
 Boto3 documentation:
 [CloudFormation.Client.list_exports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_exports)
 
+Arguments mapping described in
+[ListExportsInputTypeDef](./type_defs.md#listexportsinputtypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 
-Returns [ListExportsOutputTypeDef](./type_defs.md#listexportsoutputtypedef).
+Returns
+[ListExportsOutputResponseTypeDef](./type_defs.md#listexportsoutputresponsetypedef).
 
 ### list_imports
+
+.
 
 Type annotations for `boto3.client("cloudformation").list_imports` method.
 
 Boto3 documentation:
 [CloudFormation.Client.list_imports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_imports)
 
+Arguments mapping described in
+[ListImportsInputTypeDef](./type_defs.md#listimportsinputtypedef).
+
 Keyword-only arguments:
 
 - `ExportName`: `str` *(required)*
 - `NextToken`: `str`
 
-Returns [ListImportsOutputTypeDef](./type_defs.md#listimportsoutputtypedef).
+Returns
+[ListImportsOutputResponseTypeDef](./type_defs.md#listimportsoutputresponsetypedef).
 
 ### list_stack_instances
+
+Returns summary information about stack instances that are associated with the
+specified stack set.
 
 Type annotations for `boto3.client("cloudformation").list_stack_instances`
 method.
 
 Boto3 documentation:
 [CloudFormation.Client.list_stack_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_instances)
+
+Arguments mapping described in
+[ListStackInstancesInputTypeDef](./type_defs.md#liststackinstancesinputtypedef).
 
 Keyword-only arguments:
 
@@ -867,9 +1096,11 @@ Keyword-only arguments:
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 Returns
-[ListStackInstancesOutputTypeDef](./type_defs.md#liststackinstancesoutputtypedef).
+[ListStackInstancesOutputResponseTypeDef](./type_defs.md#liststackinstancesoutputresponsetypedef).
 
 ### list_stack_resources
+
+Returns descriptions of all resources of the specified stack.
 
 Type annotations for `boto3.client("cloudformation").list_stack_resources`
 method.
@@ -877,21 +1108,29 @@ method.
 Boto3 documentation:
 [CloudFormation.Client.list_stack_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_resources)
 
+Arguments mapping described in
+[ListStackResourcesInputTypeDef](./type_defs.md#liststackresourcesinputtypedef).
+
 Keyword-only arguments:
 
 - `StackName`: `str` *(required)*
 - `NextToken`: `str`
 
 Returns
-[ListStackResourcesOutputTypeDef](./type_defs.md#liststackresourcesoutputtypedef).
+[ListStackResourcesOutputResponseTypeDef](./type_defs.md#liststackresourcesoutputresponsetypedef).
 
 ### list_stack_set_operation_results
+
+Returns summary information about the results of a stack set operation.
 
 Type annotations for
 `boto3.client("cloudformation").list_stack_set_operation_results` method.
 
 Boto3 documentation:
 [CloudFormation.Client.list_stack_set_operation_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_set_operation_results)
+
+Arguments mapping described in
+[ListStackSetOperationResultsInputTypeDef](./type_defs.md#liststacksetoperationresultsinputtypedef).
 
 Keyword-only arguments:
 
@@ -902,15 +1141,20 @@ Keyword-only arguments:
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 Returns
-[ListStackSetOperationResultsOutputTypeDef](./type_defs.md#liststacksetoperationresultsoutputtypedef).
+[ListStackSetOperationResultsOutputResponseTypeDef](./type_defs.md#liststacksetoperationresultsoutputresponsetypedef).
 
 ### list_stack_set_operations
+
+Returns summary information about operations performed on a stack set.
 
 Type annotations for `boto3.client("cloudformation").list_stack_set_operations`
 method.
 
 Boto3 documentation:
 [CloudFormation.Client.list_stack_set_operations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_set_operations)
+
+Arguments mapping described in
+[ListStackSetOperationsInputTypeDef](./type_defs.md#liststacksetoperationsinputtypedef).
 
 Keyword-only arguments:
 
@@ -920,14 +1164,19 @@ Keyword-only arguments:
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 Returns
-[ListStackSetOperationsOutputTypeDef](./type_defs.md#liststacksetoperationsoutputtypedef).
+[ListStackSetOperationsOutputResponseTypeDef](./type_defs.md#liststacksetoperationsoutputresponsetypedef).
 
 ### list_stack_sets
+
+Returns summary information about stack sets that are associated with the user.
 
 Type annotations for `boto3.client("cloudformation").list_stack_sets` method.
 
 Boto3 documentation:
 [CloudFormation.Client.list_stack_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_sets)
+
+Arguments mapping described in
+[ListStackSetsInputTypeDef](./type_defs.md#liststacksetsinputtypedef).
 
 Keyword-only arguments:
 
@@ -937,14 +1186,20 @@ Keyword-only arguments:
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 Returns
-[ListStackSetsOutputTypeDef](./type_defs.md#liststacksetsoutputtypedef).
+[ListStackSetsOutputResponseTypeDef](./type_defs.md#liststacksetsoutputresponsetypedef).
 
 ### list_stacks
+
+Returns the summary information for stacks whose status matches the specified
+StackStatusFilter.
 
 Type annotations for `boto3.client("cloudformation").list_stacks` method.
 
 Boto3 documentation:
 [CloudFormation.Client.list_stacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stacks)
+
+Arguments mapping described in
+[ListStacksInputTypeDef](./type_defs.md#liststacksinputtypedef).
 
 Keyword-only arguments:
 
@@ -952,15 +1207,21 @@ Keyword-only arguments:
 - `StackStatusFilter`:
   `List`\[[StackStatusType](./literals.md#stackstatustype)\]
 
-Returns [ListStacksOutputTypeDef](./type_defs.md#liststacksoutputtypedef).
+Returns
+[ListStacksOutputResponseTypeDef](./type_defs.md#liststacksoutputresponsetypedef).
 
 ### list_type_registrations
+
+Returns a list of registration tokens for the specified extension(s).
 
 Type annotations for `boto3.client("cloudformation").list_type_registrations`
 method.
 
 Boto3 documentation:
 [CloudFormation.Client.list_type_registrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_type_registrations)
+
+Arguments mapping described in
+[ListTypeRegistrationsInputTypeDef](./type_defs.md#listtyperegistrationsinputtypedef).
 
 Keyword-only arguments:
 
@@ -973,15 +1234,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTypeRegistrationsOutputTypeDef](./type_defs.md#listtyperegistrationsoutputtypedef).
+[ListTypeRegistrationsOutputResponseTypeDef](./type_defs.md#listtyperegistrationsoutputresponsetypedef).
 
 ### list_type_versions
+
+Returns summary information about the versions of an extension.
 
 Type annotations for `boto3.client("cloudformation").list_type_versions`
 method.
 
 Boto3 documentation:
 [CloudFormation.Client.list_type_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_type_versions)
+
+Arguments mapping described in
+[ListTypeVersionsInputTypeDef](./type_defs.md#listtypeversionsinputtypedef).
 
 Keyword-only arguments:
 
@@ -995,14 +1261,20 @@ Keyword-only arguments:
 - `PublisherId`: `str`
 
 Returns
-[ListTypeVersionsOutputTypeDef](./type_defs.md#listtypeversionsoutputtypedef).
+[ListTypeVersionsOutputResponseTypeDef](./type_defs.md#listtypeversionsoutputresponsetypedef).
 
 ### list_types
+
+Returns summary information about extension that have been registered with
+CloudFormation.
 
 Type annotations for `boto3.client("cloudformation").list_types` method.
 
 Boto3 documentation:
 [CloudFormation.Client.list_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_types)
+
+Arguments mapping described in
+[ListTypesInputTypeDef](./type_defs.md#listtypesinputtypedef).
 
 Keyword-only arguments:
 
@@ -1016,14 +1288,21 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns [ListTypesOutputTypeDef](./type_defs.md#listtypesoutputtypedef).
+Returns
+[ListTypesOutputResponseTypeDef](./type_defs.md#listtypesoutputresponsetypedef).
 
 ### publish_type
+
+Publishes the specified extension to the CloudFormation registry as a public
+extension in this region.
 
 Type annotations for `boto3.client("cloudformation").publish_type` method.
 
 Boto3 documentation:
 [CloudFormation.Client.publish_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.publish_type)
+
+Arguments mapping described in
+[PublishTypeInputTypeDef](./type_defs.md#publishtypeinputtypedef).
 
 Keyword-only arguments:
 
@@ -1032,15 +1311,21 @@ Keyword-only arguments:
 - `TypeName`: `str`
 - `PublicVersionNumber`: `str`
 
-Returns [PublishTypeOutputTypeDef](./type_defs.md#publishtypeoutputtypedef).
+Returns
+[PublishTypeOutputResponseTypeDef](./type_defs.md#publishtypeoutputresponsetypedef).
 
 ### record_handler_progress
+
+Reports progress of a resource handler to CloudFormation.
 
 Type annotations for `boto3.client("cloudformation").record_handler_progress`
 method.
 
 Boto3 documentation:
 [CloudFormation.Client.record_handler_progress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.record_handler_progress)
+
+Arguments mapping described in
+[RecordHandlerProgressInputTypeDef](./type_defs.md#recordhandlerprogressinputtypedef).
 
 Keyword-only arguments:
 
@@ -1058,11 +1343,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### register_publisher
 
+Registers your account as a publisher of public extensions in the
+CloudFormation registry.
+
 Type annotations for `boto3.client("cloudformation").register_publisher`
 method.
 
 Boto3 documentation:
 [CloudFormation.Client.register_publisher](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.register_publisher)
+
+Arguments mapping described in
+[RegisterPublisherInputTypeDef](./type_defs.md#registerpublisherinputtypedef).
 
 Keyword-only arguments:
 
@@ -1070,14 +1361,19 @@ Keyword-only arguments:
 - `ConnectionArn`: `str`
 
 Returns
-[RegisterPublisherOutputTypeDef](./type_defs.md#registerpublisheroutputtypedef).
+[RegisterPublisherOutputResponseTypeDef](./type_defs.md#registerpublisheroutputresponsetypedef).
 
 ### register_type
+
+Registers an extension with the CloudFormation service.
 
 Type annotations for `boto3.client("cloudformation").register_type` method.
 
 Boto3 documentation:
 [CloudFormation.Client.register_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.register_type)
+
+Arguments mapping described in
+[RegisterTypeInputTypeDef](./type_defs.md#registertypeinputtypedef).
 
 Keyword-only arguments:
 
@@ -1088,14 +1384,20 @@ Keyword-only arguments:
 - `ExecutionRoleArn`: `str`
 - `ClientRequestToken`: `str`
 
-Returns [RegisterTypeOutputTypeDef](./type_defs.md#registertypeoutputtypedef).
+Returns
+[RegisterTypeOutputResponseTypeDef](./type_defs.md#registertypeoutputresponsetypedef).
 
 ### set_stack_policy
+
+Sets a stack policy for a specified stack.
 
 Type annotations for `boto3.client("cloudformation").set_stack_policy` method.
 
 Boto3 documentation:
 [CloudFormation.Client.set_stack_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.set_stack_policy)
+
+Arguments mapping described in
+[SetStackPolicyInputTypeDef](./type_defs.md#setstackpolicyinputtypedef).
 
 Keyword-only arguments:
 
@@ -1105,11 +1407,17 @@ Keyword-only arguments:
 
 ### set_type_configuration
 
+Specifies the configuration data for a registered CloudFormation extension, in
+the given account and region.
+
 Type annotations for `boto3.client("cloudformation").set_type_configuration`
 method.
 
 Boto3 documentation:
 [CloudFormation.Client.set_type_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.set_type_configuration)
+
+Arguments mapping described in
+[SetTypeConfigurationInputTypeDef](./type_defs.md#settypeconfigurationinputtypedef).
 
 Keyword-only arguments:
 
@@ -1120,15 +1428,20 @@ Keyword-only arguments:
 - `Type`: [ThirdPartyTypeType](./literals.md#thirdpartytypetype)
 
 Returns
-[SetTypeConfigurationOutputTypeDef](./type_defs.md#settypeconfigurationoutputtypedef).
+[SetTypeConfigurationOutputResponseTypeDef](./type_defs.md#settypeconfigurationoutputresponsetypedef).
 
 ### set_type_default_version
+
+Specify the default version of an extension.
 
 Type annotations for `boto3.client("cloudformation").set_type_default_version`
 method.
 
 Boto3 documentation:
 [CloudFormation.Client.set_type_default_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.set_type_default_version)
+
+Arguments mapping described in
+[SetTypeDefaultVersionInputTypeDef](./type_defs.md#settypedefaultversioninputtypedef).
 
 Keyword-only arguments:
 
@@ -1141,10 +1454,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### signal_resource
 
+Sends a signal to the specified resource with a success or failure status.
+
 Type annotations for `boto3.client("cloudformation").signal_resource` method.
 
 Boto3 documentation:
 [CloudFormation.Client.signal_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.signal_resource)
+
+Arguments mapping described in
+[SignalResourceInputTypeDef](./type_defs.md#signalresourceinputtypedef).
 
 Keyword-only arguments:
 
@@ -1156,11 +1474,17 @@ Keyword-only arguments:
 
 ### stop_stack_set_operation
 
+Stops an in-progress operation on a stack set and its associated stack
+instances.
+
 Type annotations for `boto3.client("cloudformation").stop_stack_set_operation`
 method.
 
 Boto3 documentation:
 [CloudFormation.Client.stop_stack_set_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.stop_stack_set_operation)
+
+Arguments mapping described in
+[StopStackSetOperationInputTypeDef](./type_defs.md#stopstacksetoperationinputtypedef).
 
 Keyword-only arguments:
 
@@ -1172,10 +1496,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### test_type
 
+Tests a registered extension to make sure it meets all necessary requirements
+for being published in the CloudFormation registry.
+
 Type annotations for `boto3.client("cloudformation").test_type` method.
 
 Boto3 documentation:
 [CloudFormation.Client.test_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.test_type)
+
+Arguments mapping described in
+[TestTypeInputTypeDef](./type_defs.md#testtypeinputtypedef).
 
 Keyword-only arguments:
 
@@ -1185,14 +1515,20 @@ Keyword-only arguments:
 - `VersionId`: `str`
 - `LogDeliveryBucket`: `str`
 
-Returns [TestTypeOutputTypeDef](./type_defs.md#testtypeoutputtypedef).
+Returns
+[TestTypeOutputResponseTypeDef](./type_defs.md#testtypeoutputresponsetypedef).
 
 ### update_stack
+
+Updates a stack as specified in the template.
 
 Type annotations for `boto3.client("cloudformation").update_stack` method.
 
 Boto3 documentation:
 [CloudFormation.Client.update_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack)
+
+Arguments mapping described in
+[UpdateStackInputTypeDef](./type_defs.md#updatestackinputtypedef).
 
 Keyword-only arguments:
 
@@ -1214,15 +1550,22 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 
-Returns [UpdateStackOutputTypeDef](./type_defs.md#updatestackoutputtypedef).
+Returns
+[UpdateStackOutputResponseTypeDef](./type_defs.md#updatestackoutputresponsetypedef).
 
 ### update_stack_instances
+
+Updates the parameter values for stack instances for the specified accounts,
+within the specified Regions.
 
 Type annotations for `boto3.client("cloudformation").update_stack_instances`
 method.
 
 Boto3 documentation:
 [CloudFormation.Client.update_stack_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack_instances)
+
+Arguments mapping described in
+[UpdateStackInstancesInputTypeDef](./type_defs.md#updatestackinstancesinputtypedef).
 
 Keyword-only arguments:
 
@@ -1239,14 +1582,20 @@ Keyword-only arguments:
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 Returns
-[UpdateStackInstancesOutputTypeDef](./type_defs.md#updatestackinstancesoutputtypedef).
+[UpdateStackInstancesOutputResponseTypeDef](./type_defs.md#updatestackinstancesoutputresponsetypedef).
 
 ### update_stack_set
+
+Updates the stack set, and associated stack instances in the specified accounts
+and Regions.
 
 Type annotations for `boto3.client("cloudformation").update_stack_set` method.
 
 Boto3 documentation:
 [CloudFormation.Client.update_stack_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack_set)
+
+Arguments mapping described in
+[UpdateStackSetInputTypeDef](./type_defs.md#updatestacksetinputtypedef).
 
 Keyword-only arguments:
 
@@ -1273,9 +1622,11 @@ Keyword-only arguments:
 - `CallAs`: [CallAsType](./literals.md#callastype)
 
 Returns
-[UpdateStackSetOutputTypeDef](./type_defs.md#updatestacksetoutputtypedef).
+[UpdateStackSetOutputResponseTypeDef](./type_defs.md#updatestacksetoutputresponsetypedef).
 
 ### update_termination_protection
+
+Updates termination protection for the specified stack.
 
 Type annotations for
 `boto3.client("cloudformation").update_termination_protection` method.
@@ -1283,20 +1634,28 @@ Type annotations for
 Boto3 documentation:
 [CloudFormation.Client.update_termination_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_termination_protection)
 
+Arguments mapping described in
+[UpdateTerminationProtectionInputTypeDef](./type_defs.md#updateterminationprotectioninputtypedef).
+
 Keyword-only arguments:
 
 - `EnableTerminationProtection`: `bool` *(required)*
 - `StackName`: `str` *(required)*
 
 Returns
-[UpdateTerminationProtectionOutputTypeDef](./type_defs.md#updateterminationprotectionoutputtypedef).
+[UpdateTerminationProtectionOutputResponseTypeDef](./type_defs.md#updateterminationprotectionoutputresponsetypedef).
 
 ### validate_template
+
+Validates a specified template.
 
 Type annotations for `boto3.client("cloudformation").validate_template` method.
 
 Boto3 documentation:
 [CloudFormation.Client.validate_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.validate_template)
+
+Arguments mapping described in
+[ValidateTemplateInputTypeDef](./type_defs.md#validatetemplateinputtypedef).
 
 Keyword-only arguments:
 
@@ -1304,7 +1663,7 @@ Keyword-only arguments:
 - `TemplateURL`: `str`
 
 Returns
-[ValidateTemplateOutputTypeDef](./type_defs.md#validatetemplateoutputtypedef).
+[ValidateTemplateOutputResponseTypeDef](./type_defs.md#validatetemplateoutputresponsetypedef).
 
 ### get_paginator
 

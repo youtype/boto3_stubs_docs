@@ -26,7 +26,7 @@ def get_project_version_running_waiter() -> ProjectVersionRunningWaiter:
 ```
 
 Boto3 documentation:
-[Rekognition.Waiter.project_version_running](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Waiter.project_version_running)
+[Rekognition.Waiter.project_version_running](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Waiter.ProjectVersionRunning)
 
 Arguments for `ProjectVersionRunningWaiter.wait` method:
 
@@ -51,7 +51,7 @@ def get_project_version_training_completed_waiter() -> ProjectVersionTrainingCom
 ```
 
 Boto3 documentation:
-[Rekognition.Waiter.project_version_training_completed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Waiter.project_version_training_completed)
+[Rekognition.Waiter.project_version_training_completed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Waiter.ProjectVersionTrainingCompleted)
 
 Arguments for `ProjectVersionTrainingCompletedWaiter.wait` method:
 

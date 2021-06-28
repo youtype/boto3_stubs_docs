@@ -10,8 +10,10 @@ type annotations stubs module
 - [Typed dictionaries for boto3 MarketplaceEntitlementService module](#typed-dictionaries-for-boto3-marketplaceentitlementservice-module)
   - [EntitlementTypeDef](#entitlementtypedef)
   - [EntitlementValueTypeDef](#entitlementvaluetypedef)
-  - [GetEntitlementsResultTypeDef](#getentitlementsresulttypedef)
+  - [GetEntitlementsRequestTypeDef](#getentitlementsrequesttypedef)
+  - [GetEntitlementsResultResponseTypeDef](#getentitlementsresultresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
 
 ## EntitlementTypeDef
 
@@ -40,17 +42,37 @@ Optional fields:
 - `BooleanValue`: `bool`
 - `StringValue`: `str`
 
-## GetEntitlementsResultTypeDef
+## GetEntitlementsRequestTypeDef
 
 ```python
-from mypy_boto3_marketplace_entitlement.type_defs import GetEntitlementsResultTypeDef
+from mypy_boto3_marketplace_entitlement.type_defs import GetEntitlementsRequestTypeDef
 ```
 
+Required fields:
+
+- `ProductCode`: `str`
+
 Optional fields:
+
+- `Filter`:
+  `Dict`\[[GetEntitlementFilterNameType](./literals.md#getentitlementfilternametype),
+  `List`\[`str`\]\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## GetEntitlementsResultResponseTypeDef
+
+```python
+from mypy_boto3_marketplace_entitlement.type_defs import GetEntitlementsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Entitlements`:
   `List`\[[EntitlementTypeDef](./type_defs.md#entitlementtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -63,3 +85,17 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_marketplace_entitlement.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`

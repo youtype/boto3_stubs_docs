@@ -116,6 +116,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("imagebuilder").can_paginate` method.
 
 Boto3 documentation:
@@ -129,11 +131,16 @@ Returns `bool`.
 
 ### cancel_image_creation
 
+CancelImageCreation cancels the creation of Image.
+
 Type annotations for `boto3.client("imagebuilder").cancel_image_creation`
 method.
 
 Boto3 documentation:
 [imagebuilder.Client.cancel_image_creation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.cancel_image_creation)
+
+Arguments mapping described in
+[CancelImageCreationRequestTypeDef](./type_defs.md#cancelimagecreationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -141,14 +148,20 @@ Keyword-only arguments:
 - `clientToken`: `str` *(required)*
 
 Returns
-[CancelImageCreationResponseTypeDef](./type_defs.md#cancelimagecreationresponsetypedef).
+[CancelImageCreationResponseResponseTypeDef](./type_defs.md#cancelimagecreationresponseresponsetypedef).
 
 ### create_component
+
+Creates a new component that can be used to build, validate, test, and assess
+your image.
 
 Type annotations for `boto3.client("imagebuilder").create_component` method.
 
 Boto3 documentation:
 [imagebuilder.Client.create_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_component)
+
+Arguments mapping described in
+[CreateComponentRequestTypeDef](./type_defs.md#createcomponentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -165,15 +178,20 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateComponentResponseTypeDef](./type_defs.md#createcomponentresponsetypedef).
+[CreateComponentResponseResponseTypeDef](./type_defs.md#createcomponentresponseresponsetypedef).
 
 ### create_container_recipe
+
+Creates a new container recipe.
 
 Type annotations for `boto3.client("imagebuilder").create_container_recipe`
 method.
 
 Boto3 documentation:
 [imagebuilder.Client.create_container_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_container_recipe)
+
+Arguments mapping described in
+[CreateContainerRecipeRequestTypeDef](./type_defs.md#createcontainerreciperequesttypedef).
 
 Keyword-only arguments:
 
@@ -201,15 +219,20 @@ Keyword-only arguments:
 - `kmsKeyId`: `str`
 
 Returns
-[CreateContainerRecipeResponseTypeDef](./type_defs.md#createcontainerreciperesponsetypedef).
+[CreateContainerRecipeResponseResponseTypeDef](./type_defs.md#createcontainerreciperesponseresponsetypedef).
 
 ### create_distribution_configuration
+
+Creates a new distribution configuration.
 
 Type annotations for
 `boto3.client("imagebuilder").create_distribution_configuration` method.
 
 Boto3 documentation:
 [imagebuilder.Client.create_distribution_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_distribution_configuration)
+
+Arguments mapping described in
+[CreateDistributionConfigurationRequestTypeDef](./type_defs.md#createdistributionconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -222,14 +245,19 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateDistributionConfigurationResponseTypeDef](./type_defs.md#createdistributionconfigurationresponsetypedef).
+[CreateDistributionConfigurationResponseResponseTypeDef](./type_defs.md#createdistributionconfigurationresponseresponsetypedef).
 
 ### create_image
+
+Creates a new image.
 
 Type annotations for `boto3.client("imagebuilder").create_image` method.
 
 Boto3 documentation:
 [imagebuilder.Client.create_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_image)
+
+Arguments mapping described in
+[CreateImageRequestTypeDef](./type_defs.md#createimagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -244,15 +272,20 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateImageResponseTypeDef](./type_defs.md#createimageresponsetypedef).
+[CreateImageResponseResponseTypeDef](./type_defs.md#createimageresponseresponsetypedef).
 
 ### create_image_pipeline
+
+Creates a new image pipeline.
 
 Type annotations for `boto3.client("imagebuilder").create_image_pipeline`
 method.
 
 Boto3 documentation:
 [imagebuilder.Client.create_image_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_image_pipeline)
+
+Arguments mapping described in
+[CreateImagePipelineRequestTypeDef](./type_defs.md#createimagepipelinerequesttypedef).
 
 Keyword-only arguments:
 
@@ -271,14 +304,19 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateImagePipelineResponseTypeDef](./type_defs.md#createimagepipelineresponsetypedef).
+[CreateImagePipelineResponseResponseTypeDef](./type_defs.md#createimagepipelineresponseresponsetypedef).
 
 ### create_image_recipe
+
+Creates a new image recipe.
 
 Type annotations for `boto3.client("imagebuilder").create_image_recipe` method.
 
 Boto3 documentation:
 [imagebuilder.Client.create_image_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_image_recipe)
+
+Arguments mapping described in
+[CreateImageRecipeRequestTypeDef](./type_defs.md#createimagereciperequesttypedef).
 
 Keyword-only arguments:
 
@@ -296,15 +334,20 @@ Keyword-only arguments:
 - `workingDirectory`: `str`
 
 Returns
-[CreateImageRecipeResponseTypeDef](./type_defs.md#createimagereciperesponsetypedef).
+[CreateImageRecipeResponseResponseTypeDef](./type_defs.md#createimagereciperesponseresponsetypedef).
 
 ### create_infrastructure_configuration
+
+Creates a new infrastructure configuration.
 
 Type annotations for
 `boto3.client("imagebuilder").create_infrastructure_configuration` method.
 
 Boto3 documentation:
 [imagebuilder.Client.create_infrastructure_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_infrastructure_configuration)
+
+Arguments mapping described in
+[CreateInfrastructureConfigurationRequestTypeDef](./type_defs.md#createinfrastructureconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -323,23 +366,30 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateInfrastructureConfigurationResponseTypeDef](./type_defs.md#createinfrastructureconfigurationresponsetypedef).
+[CreateInfrastructureConfigurationResponseResponseTypeDef](./type_defs.md#createinfrastructureconfigurationresponseresponsetypedef).
 
 ### delete_component
+
+Deletes a component build version.
 
 Type annotations for `boto3.client("imagebuilder").delete_component` method.
 
 Boto3 documentation:
 [imagebuilder.Client.delete_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_component)
 
+Arguments mapping described in
+[DeleteComponentRequestTypeDef](./type_defs.md#deletecomponentrequesttypedef).
+
 Keyword-only arguments:
 
 - `componentBuildVersionArn`: `str` *(required)*
 
 Returns
-[DeleteComponentResponseTypeDef](./type_defs.md#deletecomponentresponsetypedef).
+[DeleteComponentResponseResponseTypeDef](./type_defs.md#deletecomponentresponseresponsetypedef).
 
 ### delete_container_recipe
+
+Deletes a container recipe.
 
 Type annotations for `boto3.client("imagebuilder").delete_container_recipe`
 method.
@@ -347,14 +397,19 @@ method.
 Boto3 documentation:
 [imagebuilder.Client.delete_container_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_container_recipe)
 
+Arguments mapping described in
+[DeleteContainerRecipeRequestTypeDef](./type_defs.md#deletecontainerreciperequesttypedef).
+
 Keyword-only arguments:
 
 - `containerRecipeArn`: `str` *(required)*
 
 Returns
-[DeleteContainerRecipeResponseTypeDef](./type_defs.md#deletecontainerreciperesponsetypedef).
+[DeleteContainerRecipeResponseResponseTypeDef](./type_defs.md#deletecontainerreciperesponseresponsetypedef).
 
 ### delete_distribution_configuration
+
+Deletes a distribution configuration.
 
 Type annotations for
 `boto3.client("imagebuilder").delete_distribution_configuration` method.
@@ -362,28 +417,38 @@ Type annotations for
 Boto3 documentation:
 [imagebuilder.Client.delete_distribution_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_distribution_configuration)
 
+Arguments mapping described in
+[DeleteDistributionConfigurationRequestTypeDef](./type_defs.md#deletedistributionconfigurationrequesttypedef).
+
 Keyword-only arguments:
 
 - `distributionConfigurationArn`: `str` *(required)*
 
 Returns
-[DeleteDistributionConfigurationResponseTypeDef](./type_defs.md#deletedistributionconfigurationresponsetypedef).
+[DeleteDistributionConfigurationResponseResponseTypeDef](./type_defs.md#deletedistributionconfigurationresponseresponsetypedef).
 
 ### delete_image
+
+Deletes an image.
 
 Type annotations for `boto3.client("imagebuilder").delete_image` method.
 
 Boto3 documentation:
 [imagebuilder.Client.delete_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_image)
 
+Arguments mapping described in
+[DeleteImageRequestTypeDef](./type_defs.md#deleteimagerequesttypedef).
+
 Keyword-only arguments:
 
 - `imageBuildVersionArn`: `str` *(required)*
 
 Returns
-[DeleteImageResponseTypeDef](./type_defs.md#deleteimageresponsetypedef).
+[DeleteImageResponseResponseTypeDef](./type_defs.md#deleteimageresponseresponsetypedef).
 
 ### delete_image_pipeline
+
+Deletes an image pipeline.
 
 Type annotations for `boto3.client("imagebuilder").delete_image_pipeline`
 method.
@@ -391,28 +456,38 @@ method.
 Boto3 documentation:
 [imagebuilder.Client.delete_image_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_image_pipeline)
 
+Arguments mapping described in
+[DeleteImagePipelineRequestTypeDef](./type_defs.md#deleteimagepipelinerequesttypedef).
+
 Keyword-only arguments:
 
 - `imagePipelineArn`: `str` *(required)*
 
 Returns
-[DeleteImagePipelineResponseTypeDef](./type_defs.md#deleteimagepipelineresponsetypedef).
+[DeleteImagePipelineResponseResponseTypeDef](./type_defs.md#deleteimagepipelineresponseresponsetypedef).
 
 ### delete_image_recipe
+
+Deletes an image recipe.
 
 Type annotations for `boto3.client("imagebuilder").delete_image_recipe` method.
 
 Boto3 documentation:
 [imagebuilder.Client.delete_image_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_image_recipe)
 
+Arguments mapping described in
+[DeleteImageRecipeRequestTypeDef](./type_defs.md#deleteimagereciperequesttypedef).
+
 Keyword-only arguments:
 
 - `imageRecipeArn`: `str` *(required)*
 
 Returns
-[DeleteImageRecipeResponseTypeDef](./type_defs.md#deleteimagereciperesponsetypedef).
+[DeleteImageRecipeResponseResponseTypeDef](./type_defs.md#deleteimagereciperesponseresponsetypedef).
 
 ### delete_infrastructure_configuration
+
+Deletes an infrastructure configuration.
 
 Type annotations for
 `boto3.client("imagebuilder").delete_infrastructure_configuration` method.
@@ -420,14 +495,19 @@ Type annotations for
 Boto3 documentation:
 [imagebuilder.Client.delete_infrastructure_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_infrastructure_configuration)
 
+Arguments mapping described in
+[DeleteInfrastructureConfigurationRequestTypeDef](./type_defs.md#deleteinfrastructureconfigurationrequesttypedef).
+
 Keyword-only arguments:
 
 - `infrastructureConfigurationArn`: `str` *(required)*
 
 Returns
-[DeleteInfrastructureConfigurationResponseTypeDef](./type_defs.md#deleteinfrastructureconfigurationresponsetypedef).
+[DeleteInfrastructureConfigurationResponseResponseTypeDef](./type_defs.md#deleteinfrastructureconfigurationresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("imagebuilder").generate_presigned_url`
 method.
@@ -446,19 +526,26 @@ Returns `str`.
 
 ### get_component
 
+Gets a component object.
+
 Type annotations for `boto3.client("imagebuilder").get_component` method.
 
 Boto3 documentation:
 [imagebuilder.Client.get_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_component)
+
+Arguments mapping described in
+[GetComponentRequestTypeDef](./type_defs.md#getcomponentrequesttypedef).
 
 Keyword-only arguments:
 
 - `componentBuildVersionArn`: `str` *(required)*
 
 Returns
-[GetComponentResponseTypeDef](./type_defs.md#getcomponentresponsetypedef).
+[GetComponentResponseResponseTypeDef](./type_defs.md#getcomponentresponseresponsetypedef).
 
 ### get_component_policy
+
+Gets a component policy.
 
 Type annotations for `boto3.client("imagebuilder").get_component_policy`
 method.
@@ -466,14 +553,19 @@ method.
 Boto3 documentation:
 [imagebuilder.Client.get_component_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_component_policy)
 
+Arguments mapping described in
+[GetComponentPolicyRequestTypeDef](./type_defs.md#getcomponentpolicyrequesttypedef).
+
 Keyword-only arguments:
 
 - `componentArn`: `str` *(required)*
 
 Returns
-[GetComponentPolicyResponseTypeDef](./type_defs.md#getcomponentpolicyresponsetypedef).
+[GetComponentPolicyResponseResponseTypeDef](./type_defs.md#getcomponentpolicyresponseresponsetypedef).
 
 ### get_container_recipe
+
+Retrieves a container recipe.
 
 Type annotations for `boto3.client("imagebuilder").get_container_recipe`
 method.
@@ -481,14 +573,19 @@ method.
 Boto3 documentation:
 [imagebuilder.Client.get_container_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_container_recipe)
 
+Arguments mapping described in
+[GetContainerRecipeRequestTypeDef](./type_defs.md#getcontainerreciperequesttypedef).
+
 Keyword-only arguments:
 
 - `containerRecipeArn`: `str` *(required)*
 
 Returns
-[GetContainerRecipeResponseTypeDef](./type_defs.md#getcontainerreciperesponsetypedef).
+[GetContainerRecipeResponseResponseTypeDef](./type_defs.md#getcontainerreciperesponseresponsetypedef).
 
 ### get_container_recipe_policy
+
+Retrieves the policy for a container recipe.
 
 Type annotations for `boto3.client("imagebuilder").get_container_recipe_policy`
 method.
@@ -496,14 +593,19 @@ method.
 Boto3 documentation:
 [imagebuilder.Client.get_container_recipe_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_container_recipe_policy)
 
+Arguments mapping described in
+[GetContainerRecipePolicyRequestTypeDef](./type_defs.md#getcontainerrecipepolicyrequesttypedef).
+
 Keyword-only arguments:
 
 - `containerRecipeArn`: `str` *(required)*
 
 Returns
-[GetContainerRecipePolicyResponseTypeDef](./type_defs.md#getcontainerrecipepolicyresponsetypedef).
+[GetContainerRecipePolicyResponseResponseTypeDef](./type_defs.md#getcontainerrecipepolicyresponseresponsetypedef).
 
 ### get_distribution_configuration
+
+Gets a distribution configuration.
 
 Type annotations for
 `boto3.client("imagebuilder").get_distribution_configuration` method.
@@ -511,69 +613,95 @@ Type annotations for
 Boto3 documentation:
 [imagebuilder.Client.get_distribution_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_distribution_configuration)
 
+Arguments mapping described in
+[GetDistributionConfigurationRequestTypeDef](./type_defs.md#getdistributionconfigurationrequesttypedef).
+
 Keyword-only arguments:
 
 - `distributionConfigurationArn`: `str` *(required)*
 
 Returns
-[GetDistributionConfigurationResponseTypeDef](./type_defs.md#getdistributionconfigurationresponsetypedef).
+[GetDistributionConfigurationResponseResponseTypeDef](./type_defs.md#getdistributionconfigurationresponseresponsetypedef).
 
 ### get_image
+
+Gets an image.
 
 Type annotations for `boto3.client("imagebuilder").get_image` method.
 
 Boto3 documentation:
 [imagebuilder.Client.get_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_image)
 
+Arguments mapping described in
+[GetImageRequestTypeDef](./type_defs.md#getimagerequesttypedef).
+
 Keyword-only arguments:
 
 - `imageBuildVersionArn`: `str` *(required)*
 
-Returns [GetImageResponseTypeDef](./type_defs.md#getimageresponsetypedef).
+Returns
+[GetImageResponseResponseTypeDef](./type_defs.md#getimageresponseresponsetypedef).
 
 ### get_image_pipeline
+
+Gets an image pipeline.
 
 Type annotations for `boto3.client("imagebuilder").get_image_pipeline` method.
 
 Boto3 documentation:
 [imagebuilder.Client.get_image_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_image_pipeline)
 
+Arguments mapping described in
+[GetImagePipelineRequestTypeDef](./type_defs.md#getimagepipelinerequesttypedef).
+
 Keyword-only arguments:
 
 - `imagePipelineArn`: `str` *(required)*
 
 Returns
-[GetImagePipelineResponseTypeDef](./type_defs.md#getimagepipelineresponsetypedef).
+[GetImagePipelineResponseResponseTypeDef](./type_defs.md#getimagepipelineresponseresponsetypedef).
 
 ### get_image_policy
+
+Gets an image policy.
 
 Type annotations for `boto3.client("imagebuilder").get_image_policy` method.
 
 Boto3 documentation:
 [imagebuilder.Client.get_image_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_image_policy)
 
+Arguments mapping described in
+[GetImagePolicyRequestTypeDef](./type_defs.md#getimagepolicyrequesttypedef).
+
 Keyword-only arguments:
 
 - `imageArn`: `str` *(required)*
 
 Returns
-[GetImagePolicyResponseTypeDef](./type_defs.md#getimagepolicyresponsetypedef).
+[GetImagePolicyResponseResponseTypeDef](./type_defs.md#getimagepolicyresponseresponsetypedef).
 
 ### get_image_recipe
+
+Gets an image recipe.
 
 Type annotations for `boto3.client("imagebuilder").get_image_recipe` method.
 
 Boto3 documentation:
 [imagebuilder.Client.get_image_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_image_recipe)
 
+Arguments mapping described in
+[GetImageRecipeRequestTypeDef](./type_defs.md#getimagereciperequesttypedef).
+
 Keyword-only arguments:
 
 - `imageRecipeArn`: `str` *(required)*
 
 Returns
-[GetImageRecipeResponseTypeDef](./type_defs.md#getimagereciperesponsetypedef).
+[GetImageRecipeResponseResponseTypeDef](./type_defs.md#getimagereciperesponseresponsetypedef).
 
 ### get_image_recipe_policy
+
+Gets an image recipe policy.
 
 Type annotations for `boto3.client("imagebuilder").get_image_recipe_policy`
 method.
@@ -581,14 +709,19 @@ method.
 Boto3 documentation:
 [imagebuilder.Client.get_image_recipe_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_image_recipe_policy)
 
+Arguments mapping described in
+[GetImageRecipePolicyRequestTypeDef](./type_defs.md#getimagerecipepolicyrequesttypedef).
+
 Keyword-only arguments:
 
 - `imageRecipeArn`: `str` *(required)*
 
 Returns
-[GetImageRecipePolicyResponseTypeDef](./type_defs.md#getimagerecipepolicyresponsetypedef).
+[GetImageRecipePolicyResponseResponseTypeDef](./type_defs.md#getimagerecipepolicyresponseresponsetypedef).
 
 ### get_infrastructure_configuration
+
+Gets an infrastructure configuration.
 
 Type annotations for
 `boto3.client("imagebuilder").get_infrastructure_configuration` method.
@@ -596,19 +729,27 @@ Type annotations for
 Boto3 documentation:
 [imagebuilder.Client.get_infrastructure_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_infrastructure_configuration)
 
+Arguments mapping described in
+[GetInfrastructureConfigurationRequestTypeDef](./type_defs.md#getinfrastructureconfigurationrequesttypedef).
+
 Keyword-only arguments:
 
 - `infrastructureConfigurationArn`: `str` *(required)*
 
 Returns
-[GetInfrastructureConfigurationResponseTypeDef](./type_defs.md#getinfrastructureconfigurationresponsetypedef).
+[GetInfrastructureConfigurationResponseResponseTypeDef](./type_defs.md#getinfrastructureconfigurationresponseresponsetypedef).
 
 ### import_component
+
+Imports a component and transforms its data into a component document.
 
 Type annotations for `boto3.client("imagebuilder").import_component` method.
 
 Boto3 documentation:
 [imagebuilder.Client.import_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.import_component)
+
+Arguments mapping described in
+[ImportComponentRequestTypeDef](./type_defs.md#importcomponentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -627,15 +768,21 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[ImportComponentResponseTypeDef](./type_defs.md#importcomponentresponsetypedef).
+[ImportComponentResponseResponseTypeDef](./type_defs.md#importcomponentresponseresponsetypedef).
 
 ### list_component_build_versions
+
+Returns the list of component build versions for the specified semantic
+version.
 
 Type annotations for
 `boto3.client("imagebuilder").list_component_build_versions` method.
 
 Boto3 documentation:
 [imagebuilder.Client.list_component_build_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_component_build_versions)
+
+Arguments mapping described in
+[ListComponentBuildVersionsRequestTypeDef](./type_defs.md#listcomponentbuildversionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -644,14 +791,20 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListComponentBuildVersionsResponseTypeDef](./type_defs.md#listcomponentbuildversionsresponsetypedef).
+[ListComponentBuildVersionsResponseResponseTypeDef](./type_defs.md#listcomponentbuildversionsresponseresponsetypedef).
 
 ### list_components
+
+Returns the list of component build versions for the specified semantic
+version.
 
 Type annotations for `boto3.client("imagebuilder").list_components` method.
 
 Boto3 documentation:
 [imagebuilder.Client.list_components](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_components)
+
+Arguments mapping described in
+[ListComponentsRequestTypeDef](./type_defs.md#listcomponentsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -662,15 +815,20 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListComponentsResponseTypeDef](./type_defs.md#listcomponentsresponsetypedef).
+[ListComponentsResponseResponseTypeDef](./type_defs.md#listcomponentsresponseresponsetypedef).
 
 ### list_container_recipes
+
+Returns a list of container recipes.
 
 Type annotations for `boto3.client("imagebuilder").list_container_recipes`
 method.
 
 Boto3 documentation:
 [imagebuilder.Client.list_container_recipes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_container_recipes)
+
+Arguments mapping described in
+[ListContainerRecipesRequestTypeDef](./type_defs.md#listcontainerrecipesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -680,15 +838,20 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListContainerRecipesResponseTypeDef](./type_defs.md#listcontainerrecipesresponsetypedef).
+[ListContainerRecipesResponseResponseTypeDef](./type_defs.md#listcontainerrecipesresponseresponsetypedef).
 
 ### list_distribution_configurations
+
+Returns a list of distribution configurations.
 
 Type annotations for
 `boto3.client("imagebuilder").list_distribution_configurations` method.
 
 Boto3 documentation:
 [imagebuilder.Client.list_distribution_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_distribution_configurations)
+
+Arguments mapping described in
+[ListDistributionConfigurationsRequestTypeDef](./type_defs.md#listdistributionconfigurationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -697,15 +860,20 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListDistributionConfigurationsResponseTypeDef](./type_defs.md#listdistributionconfigurationsresponsetypedef).
+[ListDistributionConfigurationsResponseResponseTypeDef](./type_defs.md#listdistributionconfigurationsresponseresponsetypedef).
 
 ### list_image_build_versions
+
+Returns a list of image build versions.
 
 Type annotations for `boto3.client("imagebuilder").list_image_build_versions`
 method.
 
 Boto3 documentation:
 [imagebuilder.Client.list_image_build_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_image_build_versions)
+
+Arguments mapping described in
+[ListImageBuildVersionsRequestTypeDef](./type_defs.md#listimagebuildversionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -715,14 +883,20 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListImageBuildVersionsResponseTypeDef](./type_defs.md#listimagebuildversionsresponsetypedef).
+[ListImageBuildVersionsResponseResponseTypeDef](./type_defs.md#listimagebuildversionsresponseresponsetypedef).
 
 ### list_image_packages
+
+List the Packages that are associated with an Image Build Version, as
+determined by AWS Systems Manager Inventory at build time.
 
 Type annotations for `boto3.client("imagebuilder").list_image_packages` method.
 
 Boto3 documentation:
 [imagebuilder.Client.list_image_packages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_image_packages)
+
+Arguments mapping described in
+[ListImagePackagesRequestTypeDef](./type_defs.md#listimagepackagesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -731,15 +905,20 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListImagePackagesResponseTypeDef](./type_defs.md#listimagepackagesresponsetypedef).
+[ListImagePackagesResponseResponseTypeDef](./type_defs.md#listimagepackagesresponseresponsetypedef).
 
 ### list_image_pipeline_images
+
+Returns a list of images created by the specified pipeline.
 
 Type annotations for `boto3.client("imagebuilder").list_image_pipeline_images`
 method.
 
 Boto3 documentation:
 [imagebuilder.Client.list_image_pipeline_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_image_pipeline_images)
+
+Arguments mapping described in
+[ListImagePipelineImagesRequestTypeDef](./type_defs.md#listimagepipelineimagesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -749,15 +928,20 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListImagePipelineImagesResponseTypeDef](./type_defs.md#listimagepipelineimagesresponsetypedef).
+[ListImagePipelineImagesResponseResponseTypeDef](./type_defs.md#listimagepipelineimagesresponseresponsetypedef).
 
 ### list_image_pipelines
+
+Returns a list of image pipelines.
 
 Type annotations for `boto3.client("imagebuilder").list_image_pipelines`
 method.
 
 Boto3 documentation:
 [imagebuilder.Client.list_image_pipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_image_pipelines)
+
+Arguments mapping described in
+[ListImagePipelinesRequestTypeDef](./type_defs.md#listimagepipelinesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -766,14 +950,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListImagePipelinesResponseTypeDef](./type_defs.md#listimagepipelinesresponsetypedef).
+[ListImagePipelinesResponseResponseTypeDef](./type_defs.md#listimagepipelinesresponseresponsetypedef).
 
 ### list_image_recipes
+
+Returns a list of image recipes.
 
 Type annotations for `boto3.client("imagebuilder").list_image_recipes` method.
 
 Boto3 documentation:
 [imagebuilder.Client.list_image_recipes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_image_recipes)
+
+Arguments mapping described in
+[ListImageRecipesRequestTypeDef](./type_defs.md#listimagerecipesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -783,14 +972,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListImageRecipesResponseTypeDef](./type_defs.md#listimagerecipesresponsetypedef).
+[ListImageRecipesResponseResponseTypeDef](./type_defs.md#listimagerecipesresponseresponsetypedef).
 
 ### list_images
+
+Returns the list of images that you have access to.
 
 Type annotations for `boto3.client("imagebuilder").list_images` method.
 
 Boto3 documentation:
 [imagebuilder.Client.list_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_images)
+
+Arguments mapping described in
+[ListImagesRequestTypeDef](./type_defs.md#listimagesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -801,15 +995,21 @@ Keyword-only arguments:
 - `nextToken`: `str`
 - `includeDeprecated`: `bool`
 
-Returns [ListImagesResponseTypeDef](./type_defs.md#listimagesresponsetypedef).
+Returns
+[ListImagesResponseResponseTypeDef](./type_defs.md#listimagesresponseresponsetypedef).
 
 ### list_infrastructure_configurations
+
+Returns a list of infrastructure configurations.
 
 Type annotations for
 `boto3.client("imagebuilder").list_infrastructure_configurations` method.
 
 Boto3 documentation:
 [imagebuilder.Client.list_infrastructure_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_infrastructure_configurations)
+
+Arguments mapping described in
+[ListInfrastructureConfigurationsRequestTypeDef](./type_defs.md#listinfrastructureconfigurationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -818,9 +1018,11 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListInfrastructureConfigurationsResponseTypeDef](./type_defs.md#listinfrastructureconfigurationsresponsetypedef).
+[ListInfrastructureConfigurationsResponseResponseTypeDef](./type_defs.md#listinfrastructureconfigurationsresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Returns the list of tags for the specified resource.
 
 Type annotations for `boto3.client("imagebuilder").list_tags_for_resource`
 method.
@@ -828,14 +1030,19 @@ method.
 Boto3 documentation:
 [imagebuilder.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### put_component_policy
+
+Applies a policy to a component.
 
 Type annotations for `boto3.client("imagebuilder").put_component_policy`
 method.
@@ -843,15 +1050,20 @@ method.
 Boto3 documentation:
 [imagebuilder.Client.put_component_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.put_component_policy)
 
+Arguments mapping described in
+[PutComponentPolicyRequestTypeDef](./type_defs.md#putcomponentpolicyrequesttypedef).
+
 Keyword-only arguments:
 
 - `componentArn`: `str` *(required)*
 - `policy`: `str` *(required)*
 
 Returns
-[PutComponentPolicyResponseTypeDef](./type_defs.md#putcomponentpolicyresponsetypedef).
+[PutComponentPolicyResponseResponseTypeDef](./type_defs.md#putcomponentpolicyresponseresponsetypedef).
 
 ### put_container_recipe_policy
+
+Applies a policy to a container image.
 
 Type annotations for `boto3.client("imagebuilder").put_container_recipe_policy`
 method.
@@ -859,20 +1071,28 @@ method.
 Boto3 documentation:
 [imagebuilder.Client.put_container_recipe_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.put_container_recipe_policy)
 
+Arguments mapping described in
+[PutContainerRecipePolicyRequestTypeDef](./type_defs.md#putcontainerrecipepolicyrequesttypedef).
+
 Keyword-only arguments:
 
 - `containerRecipeArn`: `str` *(required)*
 - `policy`: `str` *(required)*
 
 Returns
-[PutContainerRecipePolicyResponseTypeDef](./type_defs.md#putcontainerrecipepolicyresponsetypedef).
+[PutContainerRecipePolicyResponseResponseTypeDef](./type_defs.md#putcontainerrecipepolicyresponseresponsetypedef).
 
 ### put_image_policy
+
+Applies a policy to an image.
 
 Type annotations for `boto3.client("imagebuilder").put_image_policy` method.
 
 Boto3 documentation:
 [imagebuilder.Client.put_image_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.put_image_policy)
+
+Arguments mapping described in
+[PutImagePolicyRequestTypeDef](./type_defs.md#putimagepolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -880,9 +1100,11 @@ Keyword-only arguments:
 - `policy`: `str` *(required)*
 
 Returns
-[PutImagePolicyResponseTypeDef](./type_defs.md#putimagepolicyresponsetypedef).
+[PutImagePolicyResponseResponseTypeDef](./type_defs.md#putimagepolicyresponseresponsetypedef).
 
 ### put_image_recipe_policy
+
+Applies a policy to an image recipe.
 
 Type annotations for `boto3.client("imagebuilder").put_image_recipe_policy`
 method.
@@ -890,15 +1112,20 @@ method.
 Boto3 documentation:
 [imagebuilder.Client.put_image_recipe_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.put_image_recipe_policy)
 
+Arguments mapping described in
+[PutImageRecipePolicyRequestTypeDef](./type_defs.md#putimagerecipepolicyrequesttypedef).
+
 Keyword-only arguments:
 
 - `imageRecipeArn`: `str` *(required)*
 - `policy`: `str` *(required)*
 
 Returns
-[PutImageRecipePolicyResponseTypeDef](./type_defs.md#putimagerecipepolicyresponsetypedef).
+[PutImageRecipePolicyResponseResponseTypeDef](./type_defs.md#putimagerecipepolicyresponseresponsetypedef).
 
 ### start_image_pipeline_execution
+
+Manually triggers a pipeline to create an image.
 
 Type annotations for
 `boto3.client("imagebuilder").start_image_pipeline_execution` method.
@@ -906,20 +1133,28 @@ Type annotations for
 Boto3 documentation:
 [imagebuilder.Client.start_image_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.start_image_pipeline_execution)
 
+Arguments mapping described in
+[StartImagePipelineExecutionRequestTypeDef](./type_defs.md#startimagepipelineexecutionrequesttypedef).
+
 Keyword-only arguments:
 
 - `imagePipelineArn`: `str` *(required)*
 - `clientToken`: `str` *(required)*
 
 Returns
-[StartImagePipelineExecutionResponseTypeDef](./type_defs.md#startimagepipelineexecutionresponsetypedef).
+[StartImagePipelineExecutionResponseResponseTypeDef](./type_defs.md#startimagepipelineexecutionresponseresponsetypedef).
 
 ### tag_resource
+
+Adds a tag to a resource.
 
 Type annotations for `boto3.client("imagebuilder").tag_resource` method.
 
 Boto3 documentation:
 [imagebuilder.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -930,10 +1165,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Removes a tag from a resource.
+
 Type annotations for `boto3.client("imagebuilder").untag_resource` method.
 
 Boto3 documentation:
 [imagebuilder.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -944,11 +1184,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_distribution_configuration
 
+Updates a new distribution configuration.
+
 Type annotations for
 `boto3.client("imagebuilder").update_distribution_configuration` method.
 
 Boto3 documentation:
 [imagebuilder.Client.update_distribution_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.update_distribution_configuration)
+
+Arguments mapping described in
+[UpdateDistributionConfigurationRequestTypeDef](./type_defs.md#updatedistributionconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -960,15 +1205,20 @@ Keyword-only arguments:
 - `description`: `str`
 
 Returns
-[UpdateDistributionConfigurationResponseTypeDef](./type_defs.md#updatedistributionconfigurationresponsetypedef).
+[UpdateDistributionConfigurationResponseResponseTypeDef](./type_defs.md#updatedistributionconfigurationresponseresponsetypedef).
 
 ### update_image_pipeline
+
+Updates an image pipeline.
 
 Type annotations for `boto3.client("imagebuilder").update_image_pipeline`
 method.
 
 Boto3 documentation:
 [imagebuilder.Client.update_image_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.update_image_pipeline)
+
+Arguments mapping described in
+[UpdateImagePipelineRequestTypeDef](./type_defs.md#updateimagepipelinerequesttypedef).
 
 Keyword-only arguments:
 
@@ -986,15 +1236,20 @@ Keyword-only arguments:
 - `status`: [PipelineStatusType](./literals.md#pipelinestatustype)
 
 Returns
-[UpdateImagePipelineResponseTypeDef](./type_defs.md#updateimagepipelineresponsetypedef).
+[UpdateImagePipelineResponseResponseTypeDef](./type_defs.md#updateimagepipelineresponseresponsetypedef).
 
 ### update_infrastructure_configuration
+
+Updates a new infrastructure configuration.
 
 Type annotations for
 `boto3.client("imagebuilder").update_infrastructure_configuration` method.
 
 Boto3 documentation:
 [imagebuilder.Client.update_infrastructure_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.update_infrastructure_configuration)
+
+Arguments mapping described in
+[UpdateInfrastructureConfigurationRequestTypeDef](./type_defs.md#updateinfrastructureconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1012,4 +1267,4 @@ Keyword-only arguments:
 - `resourceTags`: `Dict`\[`str`, `str`\]
 
 Returns
-[UpdateInfrastructureConfigurationResponseTypeDef](./type_defs.md#updateinfrastructureconfigurationresponsetypedef).
+[UpdateInfrastructureConfigurationResponseResponseTypeDef](./type_defs.md#updateinfrastructureconfigurationresponseresponsetypedef).

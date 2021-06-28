@@ -70,16 +70,24 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_iotsecuretunneling.type_defs import ConnectionStateTypeDef, ...
+from mypy_boto3_iotsecuretunneling.type_defs import CloseTunnelRequestTypeDef, ...
 ```
 
+- [CloseTunnelRequestTypeDef](./type_defs.md#closetunnelrequesttypedef)
 - [ConnectionStateTypeDef](./type_defs.md#connectionstatetypedef)
-- [DescribeTunnelResponseTypeDef](./type_defs.md#describetunnelresponsetypedef)
+- [DescribeTunnelRequestTypeDef](./type_defs.md#describetunnelrequesttypedef)
+- [DescribeTunnelResponseResponseTypeDef](./type_defs.md#describetunnelresponseresponsetypedef)
 - [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
-- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
-- [ListTunnelsResponseTypeDef](./type_defs.md#listtunnelsresponsetypedef)
-- [OpenTunnelResponseTypeDef](./type_defs.md#opentunnelresponsetypedef)
+- [ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef)
+- [ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef)
+- [ListTunnelsRequestTypeDef](./type_defs.md#listtunnelsrequesttypedef)
+- [ListTunnelsResponseResponseTypeDef](./type_defs.md#listtunnelsresponseresponsetypedef)
+- [OpenTunnelRequestTypeDef](./type_defs.md#opentunnelrequesttypedef)
+- [OpenTunnelResponseResponseTypeDef](./type_defs.md#opentunnelresponseresponsetypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)
 - [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
 - [TunnelSummaryTypeDef](./type_defs.md#tunnelsummarytypedef)
 - [TunnelTypeDef](./type_defs.md#tunneltypedef)
+- [UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef)

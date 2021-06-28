@@ -36,7 +36,7 @@ Arguments for `ListSignalingChannelsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSignalingChannelsPaginator.paginate` returns
-`Iterator`\[[ListSignalingChannelsOutputTypeDef](./type_defs.md#listsignalingchannelsoutputtypedef)\].
+`Iterator`\[[ListSignalingChannelsOutputResponseTypeDef](./type_defs.md#listsignalingchannelsoutputresponsetypedef)\].
 
 ## ListStreamsPaginator
 
@@ -63,4 +63,4 @@ Arguments for `ListStreamsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStreamsPaginator.paginate` returns
-`Iterator`\[[ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef)\].
+`Iterator`\[[ListStreamsOutputResponseTypeDef](./type_defs.md#liststreamsoutputresponsetypedef)\].

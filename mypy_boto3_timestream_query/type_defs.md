@@ -8,27 +8,42 @@ type annotations stubs module
 [mypy_boto3_timestream_query](https://pypi.org/project/mypy-boto3-timestream-query/).
 
 - [Typed dictionaries for boto3 TimestreamQuery module](#typed-dictionaries-for-boto3-timestreamquery-module)
-  - [CancelQueryResponseTypeDef](#cancelqueryresponsetypedef)
+  - [CancelQueryRequestTypeDef](#cancelqueryrequesttypedef)
+  - [CancelQueryResponseResponseTypeDef](#cancelqueryresponseresponsetypedef)
   - [ColumnInfoTypeDef](#columninfotypedef)
   - [DatumTypeDef](#datumtypedef)
-  - [DescribeEndpointsResponseTypeDef](#describeendpointsresponsetypedef)
+  - [DescribeEndpointsResponseResponseTypeDef](#describeendpointsresponseresponsetypedef)
   - [EndpointTypeDef](#endpointtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [QueryResponseTypeDef](#queryresponsetypedef)
+  - [QueryRequestTypeDef](#queryrequesttypedef)
+  - [QueryResponseResponseTypeDef](#queryresponseresponsetypedef)
   - [QueryStatusTypeDef](#querystatustypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RowTypeDef](#rowtypedef)
   - [TimeSeriesDataPointTypeDef](#timeseriesdatapointtypedef)
   - [TypeTypeDef](#typetypedef)
 
-## CancelQueryResponseTypeDef
+## CancelQueryRequestTypeDef
 
 ```python
-from mypy_boto3_timestream_query.type_defs import CancelQueryResponseTypeDef
+from mypy_boto3_timestream_query.type_defs import CancelQueryRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `QueryId`: `str`
+
+## CancelQueryResponseResponseTypeDef
+
+```python
+from mypy_boto3_timestream_query.type_defs import CancelQueryResponseResponseTypeDef
+```
+
+Required fields:
 
 - `CancellationMessage`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ColumnInfoTypeDef
 
@@ -59,15 +74,17 @@ Optional fields:
 - `RowValue`: [RowTypeDef](./type_defs.md#rowtypedef)
 - `NullValue`: `bool`
 
-## DescribeEndpointsResponseTypeDef
+## DescribeEndpointsResponseResponseTypeDef
 
 ```python
-from mypy_boto3_timestream_query.type_defs import DescribeEndpointsResponseTypeDef
+from mypy_boto3_timestream_query.type_defs import DescribeEndpointsResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `Endpoints`: `List`\[[EndpointTypeDef](./type_defs.md#endpointtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## EndpointTypeDef
 
@@ -92,22 +109,37 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## QueryResponseTypeDef
+## QueryRequestTypeDef
 
 ```python
-from mypy_boto3_timestream_query.type_defs import QueryResponseTypeDef
+from mypy_boto3_timestream_query.type_defs import QueryRequestTypeDef
+```
+
+Required fields:
+
+- `QueryString`: `str`
+
+Optional fields:
+
+- `ClientToken`: `str`
+- `NextToken`: `str`
+- `MaxRows`: `int`
+
+## QueryResponseResponseTypeDef
+
+```python
+from mypy_boto3_timestream_query.type_defs import QueryResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `QueryId`: `str`
+- `NextToken`: `str`
 - `Rows`: `List`\[[RowTypeDef](./type_defs.md#rowtypedef)\]
 - `ColumnInfo`: `List`\[[ColumnInfoTypeDef](./type_defs.md#columninfotypedef)\]
-
-Optional fields:
-
-- `NextToken`: `str`
 - `QueryStatus`: [QueryStatusTypeDef](./type_defs.md#querystatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## QueryStatusTypeDef
 
@@ -120,6 +152,20 @@ Optional fields:
 - `ProgressPercentage`: `float`
 - `CumulativeBytesScanned`: `int`
 - `CumulativeBytesMetered`: `int`
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_timestream_query.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## RowTypeDef
 

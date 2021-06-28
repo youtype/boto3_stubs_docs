@@ -13,10 +13,15 @@ type annotations stubs module
   - [AnomalousServiceTypeDef](#anomalousservicetypedef)
   - [AvailabilityZoneDetailTypeDef](#availabilityzonedetailtypedef)
   - [BackendConnectionErrorsTypeDef](#backendconnectionerrorstypedef)
-  - [BatchGetTracesResultTypeDef](#batchgettracesresulttypedef)
-  - [CreateGroupResultTypeDef](#creategroupresulttypedef)
-  - [CreateSamplingRuleResultTypeDef](#createsamplingruleresulttypedef)
-  - [DeleteSamplingRuleResultTypeDef](#deletesamplingruleresulttypedef)
+  - [BatchGetTracesRequestTypeDef](#batchgettracesrequesttypedef)
+  - [BatchGetTracesResultResponseTypeDef](#batchgettracesresultresponsetypedef)
+  - [CreateGroupRequestTypeDef](#creategrouprequesttypedef)
+  - [CreateGroupResultResponseTypeDef](#creategroupresultresponsetypedef)
+  - [CreateSamplingRuleRequestTypeDef](#createsamplingrulerequesttypedef)
+  - [CreateSamplingRuleResultResponseTypeDef](#createsamplingruleresultresponsetypedef)
+  - [DeleteGroupRequestTypeDef](#deletegrouprequesttypedef)
+  - [DeleteSamplingRuleRequestTypeDef](#deletesamplingrulerequesttypedef)
+  - [DeleteSamplingRuleResultResponseTypeDef](#deletesamplingruleresultresponsetypedef)
   - [EdgeStatisticsTypeDef](#edgestatisticstypedef)
   - [EdgeTypeDef](#edgetypedef)
   - [EncryptionConfigTypeDef](#encryptionconfigtypedef)
@@ -29,20 +34,33 @@ type annotations stubs module
   - [FaultRootCauseTypeDef](#faultrootcausetypedef)
   - [FaultStatisticsTypeDef](#faultstatisticstypedef)
   - [ForecastStatisticsTypeDef](#forecaststatisticstypedef)
-  - [GetEncryptionConfigResultTypeDef](#getencryptionconfigresulttypedef)
-  - [GetGroupResultTypeDef](#getgroupresulttypedef)
-  - [GetGroupsResultTypeDef](#getgroupsresulttypedef)
-  - [GetInsightEventsResultTypeDef](#getinsighteventsresulttypedef)
-  - [GetInsightImpactGraphResultTypeDef](#getinsightimpactgraphresulttypedef)
-  - [GetInsightResultTypeDef](#getinsightresulttypedef)
-  - [GetInsightSummariesResultTypeDef](#getinsightsummariesresulttypedef)
-  - [GetSamplingRulesResultTypeDef](#getsamplingrulesresulttypedef)
-  - [GetSamplingStatisticSummariesResultTypeDef](#getsamplingstatisticsummariesresulttypedef)
-  - [GetSamplingTargetsResultTypeDef](#getsamplingtargetsresulttypedef)
-  - [GetServiceGraphResultTypeDef](#getservicegraphresulttypedef)
-  - [GetTimeSeriesServiceStatisticsResultTypeDef](#gettimeseriesservicestatisticsresulttypedef)
-  - [GetTraceGraphResultTypeDef](#gettracegraphresulttypedef)
-  - [GetTraceSummariesResultTypeDef](#gettracesummariesresulttypedef)
+  - [GetEncryptionConfigResultResponseTypeDef](#getencryptionconfigresultresponsetypedef)
+  - [GetGroupRequestTypeDef](#getgrouprequesttypedef)
+  - [GetGroupResultResponseTypeDef](#getgroupresultresponsetypedef)
+  - [GetGroupsRequestTypeDef](#getgroupsrequesttypedef)
+  - [GetGroupsResultResponseTypeDef](#getgroupsresultresponsetypedef)
+  - [GetInsightEventsRequestTypeDef](#getinsighteventsrequesttypedef)
+  - [GetInsightEventsResultResponseTypeDef](#getinsighteventsresultresponsetypedef)
+  - [GetInsightImpactGraphRequestTypeDef](#getinsightimpactgraphrequesttypedef)
+  - [GetInsightImpactGraphResultResponseTypeDef](#getinsightimpactgraphresultresponsetypedef)
+  - [GetInsightRequestTypeDef](#getinsightrequesttypedef)
+  - [GetInsightResultResponseTypeDef](#getinsightresultresponsetypedef)
+  - [GetInsightSummariesRequestTypeDef](#getinsightsummariesrequesttypedef)
+  - [GetInsightSummariesResultResponseTypeDef](#getinsightsummariesresultresponsetypedef)
+  - [GetSamplingRulesRequestTypeDef](#getsamplingrulesrequesttypedef)
+  - [GetSamplingRulesResultResponseTypeDef](#getsamplingrulesresultresponsetypedef)
+  - [GetSamplingStatisticSummariesRequestTypeDef](#getsamplingstatisticsummariesrequesttypedef)
+  - [GetSamplingStatisticSummariesResultResponseTypeDef](#getsamplingstatisticsummariesresultresponsetypedef)
+  - [GetSamplingTargetsRequestTypeDef](#getsamplingtargetsrequesttypedef)
+  - [GetSamplingTargetsResultResponseTypeDef](#getsamplingtargetsresultresponsetypedef)
+  - [GetServiceGraphRequestTypeDef](#getservicegraphrequesttypedef)
+  - [GetServiceGraphResultResponseTypeDef](#getservicegraphresultresponsetypedef)
+  - [GetTimeSeriesServiceStatisticsRequestTypeDef](#gettimeseriesservicestatisticsrequesttypedef)
+  - [GetTimeSeriesServiceStatisticsResultResponseTypeDef](#gettimeseriesservicestatisticsresultresponsetypedef)
+  - [GetTraceGraphRequestTypeDef](#gettracegraphrequesttypedef)
+  - [GetTraceGraphResultResponseTypeDef](#gettracegraphresultresponsetypedef)
+  - [GetTraceSummariesRequestTypeDef](#gettracesummariesrequesttypedef)
+  - [GetTraceSummariesResultResponseTypeDef](#gettracesummariesresultresponsetypedef)
   - [GroupSummaryTypeDef](#groupsummarytypedef)
   - [GroupTypeDef](#grouptypedef)
   - [HistogramEntryTypeDef](#histogramentrytypedef)
@@ -54,12 +72,17 @@ type annotations stubs module
   - [InsightTypeDef](#insighttypedef)
   - [InsightsConfigurationTypeDef](#insightsconfigurationtypedef)
   - [InstanceIdDetailTypeDef](#instanceiddetailtypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutEncryptionConfigResultTypeDef](#putencryptionconfigresulttypedef)
-  - [PutTraceSegmentsResultTypeDef](#puttracesegmentsresulttypedef)
+  - [PutEncryptionConfigRequestTypeDef](#putencryptionconfigrequesttypedef)
+  - [PutEncryptionConfigResultResponseTypeDef](#putencryptionconfigresultresponsetypedef)
+  - [PutTelemetryRecordsRequestTypeDef](#puttelemetryrecordsrequesttypedef)
+  - [PutTraceSegmentsRequestTypeDef](#puttracesegmentsrequesttypedef)
+  - [PutTraceSegmentsResultResponseTypeDef](#puttracesegmentsresultresponsetypedef)
   - [RequestImpactStatisticsTypeDef](#requestimpactstatisticstypedef)
   - [ResourceARNDetailTypeDef](#resourcearndetailtypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [ResponseTimeRootCauseEntityTypeDef](#responsetimerootcauseentitytypedef)
   - [ResponseTimeRootCauseServiceTypeDef](#responsetimerootcauseservicetypedef)
   - [ResponseTimeRootCauseTypeDef](#responsetimerootcausetypedef)
@@ -75,6 +98,7 @@ type annotations stubs module
   - [ServiceIdTypeDef](#serviceidtypedef)
   - [ServiceStatisticsTypeDef](#servicestatisticstypedef)
   - [ServiceTypeDef](#servicetypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TelemetryRecordTypeDef](#telemetryrecordtypedef)
   - [TimeSeriesServiceStatisticsTypeDef](#timeseriesservicestatisticstypedef)
@@ -83,8 +107,11 @@ type annotations stubs module
   - [TraceUserTypeDef](#traceusertypedef)
   - [UnprocessedStatisticsTypeDef](#unprocessedstatisticstypedef)
   - [UnprocessedTraceSegmentTypeDef](#unprocessedtracesegmenttypedef)
-  - [UpdateGroupResultTypeDef](#updategroupresulttypedef)
-  - [UpdateSamplingRuleResultTypeDef](#updatesamplingruleresulttypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateGroupRequestTypeDef](#updategrouprequesttypedef)
+  - [UpdateGroupResultResponseTypeDef](#updategroupresultresponsetypedef)
+  - [UpdateSamplingRuleRequestTypeDef](#updatesamplingrulerequesttypedef)
+  - [UpdateSamplingRuleResultResponseTypeDef](#updatesamplingruleresultresponsetypedef)
   - [ValueWithServiceIdsTypeDef](#valuewithserviceidstypedef)
 
 ## AliasTypeDef
@@ -146,49 +173,124 @@ Optional fields:
 - `UnknownHostCount`: `int`
 - `OtherCount`: `int`
 
-## BatchGetTracesResultTypeDef
+## BatchGetTracesRequestTypeDef
 
 ```python
-from mypy_boto3_xray.type_defs import BatchGetTracesResultTypeDef
+from mypy_boto3_xray.type_defs import BatchGetTracesRequestTypeDef
 ```
 
+Required fields:
+
+- `TraceIds`: `List`\[`str`\]
+
 Optional fields:
+
+- `NextToken`: `str`
+
+## BatchGetTracesResultResponseTypeDef
+
+```python
+from mypy_boto3_xray.type_defs import BatchGetTracesResultResponseTypeDef
+```
+
+Required fields:
 
 - `Traces`: `List`\[[TraceTypeDef](./type_defs.md#tracetypedef)\]
 - `UnprocessedTraceIds`: `List`\[`str`\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateGroupResultTypeDef
+## CreateGroupRequestTypeDef
 
 ```python
-from mypy_boto3_xray.type_defs import CreateGroupResultTypeDef
+from mypy_boto3_xray.type_defs import CreateGroupRequestTypeDef
 ```
 
+Required fields:
+
+- `GroupName`: `str`
+
 Optional fields:
+
+- `FilterExpression`: `str`
+- `InsightsConfiguration`:
+  [InsightsConfigurationTypeDef](./type_defs.md#insightsconfigurationtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateGroupResultResponseTypeDef
+
+```python
+from mypy_boto3_xray.type_defs import CreateGroupResultResponseTypeDef
+```
+
+Required fields:
 
 - `Group`: [GroupTypeDef](./type_defs.md#grouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateSamplingRuleResultTypeDef
+## CreateSamplingRuleRequestTypeDef
 
 ```python
-from mypy_boto3_xray.type_defs import CreateSamplingRuleResultTypeDef
+from mypy_boto3_xray.type_defs import CreateSamplingRuleRequestTypeDef
+```
+
+Required fields:
+
+- `SamplingRule`: [SamplingRuleTypeDef](./type_defs.md#samplingruletypedef)
+
+Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateSamplingRuleResultResponseTypeDef
+
+```python
+from mypy_boto3_xray.type_defs import CreateSamplingRuleResultResponseTypeDef
+```
+
+Required fields:
+
+- `SamplingRuleRecord`:
+  [SamplingRuleRecordTypeDef](./type_defs.md#samplingrulerecordtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteGroupRequestTypeDef
+
+```python
+from mypy_boto3_xray.type_defs import DeleteGroupRequestTypeDef
 ```
 
 Optional fields:
 
-- `SamplingRuleRecord`:
-  [SamplingRuleRecordTypeDef](./type_defs.md#samplingrulerecordtypedef)
+- `GroupName`: `str`
+- `GroupARN`: `str`
 
-## DeleteSamplingRuleResultTypeDef
+## DeleteSamplingRuleRequestTypeDef
 
 ```python
-from mypy_boto3_xray.type_defs import DeleteSamplingRuleResultTypeDef
+from mypy_boto3_xray.type_defs import DeleteSamplingRuleRequestTypeDef
 ```
 
 Optional fields:
 
+- `RuleName`: `str`
+- `RuleARN`: `str`
+
+## DeleteSamplingRuleResultResponseTypeDef
+
+```python
+from mypy_boto3_xray.type_defs import DeleteSamplingRuleResultResponseTypeDef
+```
+
+Required fields:
+
 - `SamplingRuleRecord`:
   [SamplingRuleRecordTypeDef](./type_defs.md#samplingrulerecordtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## EdgeStatisticsTypeDef
 
@@ -351,57 +453,117 @@ Optional fields:
 - `FaultCountHigh`: `int`
 - `FaultCountLow`: `int`
 
-## GetEncryptionConfigResultTypeDef
+## GetEncryptionConfigResultResponseTypeDef
 
 ```python
-from mypy_boto3_xray.type_defs import GetEncryptionConfigResultTypeDef
+from mypy_boto3_xray.type_defs import GetEncryptionConfigResultResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `EncryptionConfig`:
   [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetGroupResultTypeDef
+## GetGroupRequestTypeDef
 
 ```python
-from mypy_boto3_xray.type_defs import GetGroupResultTypeDef
+from mypy_boto3_xray.type_defs import GetGroupRequestTypeDef
 ```
 
 Optional fields:
+
+- `GroupName`: `str`
+- `GroupARN`: `str`
+
+## GetGroupResultResponseTypeDef
+
+```python
+from mypy_boto3_xray.type_defs import GetGroupResultResponseTypeDef
+```
+
+Required fields:
 
 - `Group`: [GroupTypeDef](./type_defs.md#grouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetGroupsResultTypeDef
+## GetGroupsRequestTypeDef
 
 ```python
-from mypy_boto3_xray.type_defs import GetGroupsResultTypeDef
+from mypy_boto3_xray.type_defs import GetGroupsRequestTypeDef
 ```
 
 Optional fields:
+
+- `NextToken`: `str`
+
+## GetGroupsResultResponseTypeDef
+
+```python
+from mypy_boto3_xray.type_defs import GetGroupsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Groups`: `List`\[[GroupSummaryTypeDef](./type_defs.md#groupsummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetInsightEventsResultTypeDef
+## GetInsightEventsRequestTypeDef
 
 ```python
-from mypy_boto3_xray.type_defs import GetInsightEventsResultTypeDef
+from mypy_boto3_xray.type_defs import GetInsightEventsRequestTypeDef
 ```
 
+Required fields:
+
+- `InsightId`: `str`
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## GetInsightEventsResultResponseTypeDef
+
+```python
+from mypy_boto3_xray.type_defs import GetInsightEventsResultResponseTypeDef
+```
+
+Required fields:
 
 - `InsightEvents`:
   `List`\[[InsightEventTypeDef](./type_defs.md#insighteventtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetInsightImpactGraphResultTypeDef
+## GetInsightImpactGraphRequestTypeDef
 
 ```python
-from mypy_boto3_xray.type_defs import GetInsightImpactGraphResultTypeDef
+from mypy_boto3_xray.type_defs import GetInsightImpactGraphRequestTypeDef
 ```
 
+Required fields:
+
+- `InsightId`: `str`
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
+
 Optional fields:
+
+- `NextToken`: `str`
+
+## GetInsightImpactGraphResultResponseTypeDef
+
+```python
+from mypy_boto3_xray.type_defs import GetInsightImpactGraphResultResponseTypeDef
+```
+
+Required fields:
 
 - `InsightId`: `str`
 - `StartTime`: `datetime`
@@ -411,118 +573,269 @@ Optional fields:
 - `Services`:
   `List`\[[InsightImpactGraphServiceTypeDef](./type_defs.md#insightimpactgraphservicetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetInsightResultTypeDef
+## GetInsightRequestTypeDef
 
 ```python
-from mypy_boto3_xray.type_defs import GetInsightResultTypeDef
+from mypy_boto3_xray.type_defs import GetInsightRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `InsightId`: `str`
+
+## GetInsightResultResponseTypeDef
+
+```python
+from mypy_boto3_xray.type_defs import GetInsightResultResponseTypeDef
+```
+
+Required fields:
 
 - `Insight`: [InsightTypeDef](./type_defs.md#insighttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetInsightSummariesResultTypeDef
+## GetInsightSummariesRequestTypeDef
 
 ```python
-from mypy_boto3_xray.type_defs import GetInsightSummariesResultTypeDef
+from mypy_boto3_xray.type_defs import GetInsightSummariesRequestTypeDef
 ```
 
+Required fields:
+
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
+
 Optional fields:
+
+- `States`: `List`\[[InsightStateType](./literals.md#insightstatetype)\]
+- `GroupARN`: `str`
+- `GroupName`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## GetInsightSummariesResultResponseTypeDef
+
+```python
+from mypy_boto3_xray.type_defs import GetInsightSummariesResultResponseTypeDef
+```
+
+Required fields:
 
 - `InsightSummaries`:
   `List`\[[InsightSummaryTypeDef](./type_defs.md#insightsummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSamplingRulesResultTypeDef
+## GetSamplingRulesRequestTypeDef
 
 ```python
-from mypy_boto3_xray.type_defs import GetSamplingRulesResultTypeDef
+from mypy_boto3_xray.type_defs import GetSamplingRulesRequestTypeDef
 ```
 
 Optional fields:
+
+- `NextToken`: `str`
+
+## GetSamplingRulesResultResponseTypeDef
+
+```python
+from mypy_boto3_xray.type_defs import GetSamplingRulesResultResponseTypeDef
+```
+
+Required fields:
 
 - `SamplingRuleRecords`:
   `List`\[[SamplingRuleRecordTypeDef](./type_defs.md#samplingrulerecordtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSamplingStatisticSummariesResultTypeDef
+## GetSamplingStatisticSummariesRequestTypeDef
 
 ```python
-from mypy_boto3_xray.type_defs import GetSamplingStatisticSummariesResultTypeDef
+from mypy_boto3_xray.type_defs import GetSamplingStatisticSummariesRequestTypeDef
 ```
 
 Optional fields:
+
+- `NextToken`: `str`
+
+## GetSamplingStatisticSummariesResultResponseTypeDef
+
+```python
+from mypy_boto3_xray.type_defs import GetSamplingStatisticSummariesResultResponseTypeDef
+```
+
+Required fields:
 
 - `SamplingStatisticSummaries`:
   `List`\[[SamplingStatisticSummaryTypeDef](./type_defs.md#samplingstatisticsummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSamplingTargetsResultTypeDef
+## GetSamplingTargetsRequestTypeDef
 
 ```python
-from mypy_boto3_xray.type_defs import GetSamplingTargetsResultTypeDef
+from mypy_boto3_xray.type_defs import GetSamplingTargetsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `SamplingStatisticsDocuments`:
+  `List`\[[SamplingStatisticsDocumentTypeDef](./type_defs.md#samplingstatisticsdocumenttypedef)\]
+
+## GetSamplingTargetsResultResponseTypeDef
+
+```python
+from mypy_boto3_xray.type_defs import GetSamplingTargetsResultResponseTypeDef
+```
+
+Required fields:
 
 - `SamplingTargetDocuments`:
   `List`\[[SamplingTargetDocumentTypeDef](./type_defs.md#samplingtargetdocumenttypedef)\]
 - `LastRuleModification`: `datetime`
 - `UnprocessedStatistics`:
   `List`\[[UnprocessedStatisticsTypeDef](./type_defs.md#unprocessedstatisticstypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetServiceGraphResultTypeDef
+## GetServiceGraphRequestTypeDef
 
 ```python
-from mypy_boto3_xray.type_defs import GetServiceGraphResultTypeDef
+from mypy_boto3_xray.type_defs import GetServiceGraphRequestTypeDef
 ```
 
+Required fields:
+
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
+
 Optional fields:
+
+- `GroupName`: `str`
+- `GroupARN`: `str`
+- `NextToken`: `str`
+
+## GetServiceGraphResultResponseTypeDef
+
+```python
+from mypy_boto3_xray.type_defs import GetServiceGraphResultResponseTypeDef
+```
+
+Required fields:
 
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 - `Services`: `List`\[[ServiceTypeDef](./type_defs.md#servicetypedef)\]
 - `ContainsOldGroupVersions`: `bool`
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTimeSeriesServiceStatisticsResultTypeDef
+## GetTimeSeriesServiceStatisticsRequestTypeDef
 
 ```python
-from mypy_boto3_xray.type_defs import GetTimeSeriesServiceStatisticsResultTypeDef
+from mypy_boto3_xray.type_defs import GetTimeSeriesServiceStatisticsRequestTypeDef
 ```
 
+Required fields:
+
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
+
 Optional fields:
+
+- `GroupName`: `str`
+- `GroupARN`: `str`
+- `EntitySelectorExpression`: `str`
+- `Period`: `int`
+- `ForecastStatistics`: `bool`
+- `NextToken`: `str`
+
+## GetTimeSeriesServiceStatisticsResultResponseTypeDef
+
+```python
+from mypy_boto3_xray.type_defs import GetTimeSeriesServiceStatisticsResultResponseTypeDef
+```
+
+Required fields:
 
 - `TimeSeriesServiceStatistics`:
   `List`\[[TimeSeriesServiceStatisticsTypeDef](./type_defs.md#timeseriesservicestatisticstypedef)\]
 - `ContainsOldGroupVersions`: `bool`
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTraceGraphResultTypeDef
+## GetTraceGraphRequestTypeDef
 
 ```python
-from mypy_boto3_xray.type_defs import GetTraceGraphResultTypeDef
+from mypy_boto3_xray.type_defs import GetTraceGraphRequestTypeDef
 ```
 
+Required fields:
+
+- `TraceIds`: `List`\[`str`\]
+
 Optional fields:
+
+- `NextToken`: `str`
+
+## GetTraceGraphResultResponseTypeDef
+
+```python
+from mypy_boto3_xray.type_defs import GetTraceGraphResultResponseTypeDef
+```
+
+Required fields:
 
 - `Services`: `List`\[[ServiceTypeDef](./type_defs.md#servicetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTraceSummariesResultTypeDef
+## GetTraceSummariesRequestTypeDef
 
 ```python
-from mypy_boto3_xray.type_defs import GetTraceSummariesResultTypeDef
+from mypy_boto3_xray.type_defs import GetTraceSummariesRequestTypeDef
 ```
 
+Required fields:
+
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
+
 Optional fields:
+
+- `TimeRangeType`: [TimeRangeTypeType](./literals.md#timerangetypetype)
+- `Sampling`: `bool`
+- `SamplingStrategy`:
+  [SamplingStrategyTypeDef](./type_defs.md#samplingstrategytypedef)
+- `FilterExpression`: `str`
+- `NextToken`: `str`
+
+## GetTraceSummariesResultResponseTypeDef
+
+```python
+from mypy_boto3_xray.type_defs import GetTraceSummariesResultResponseTypeDef
+```
+
+Required fields:
 
 - `TraceSummaries`:
   `List`\[[TraceSummaryTypeDef](./type_defs.md#tracesummarytypedef)\]
 - `ApproximateTime`: `datetime`
 - `TracesProcessedCount`: `int`
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GroupSummaryTypeDef
 
@@ -692,16 +1005,32 @@ Optional fields:
 
 - `Id`: `str`
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_xray.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_xray.type_defs import ListTagsForResourceRequestTypeDef
 ```
+
+Required fields:
+
+- `ResourceARN`: `str`
 
 Optional fields:
 
+- `NextToken`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_xray.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
+
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -715,27 +1044,72 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## PutEncryptionConfigResultTypeDef
+## PutEncryptionConfigRequestTypeDef
 
 ```python
-from mypy_boto3_xray.type_defs import PutEncryptionConfigResultTypeDef
+from mypy_boto3_xray.type_defs import PutEncryptionConfigRequestTypeDef
 ```
 
+Required fields:
+
+- `Type`: [EncryptionTypeType](./literals.md#encryptiontypetype)
+
 Optional fields:
+
+- `KeyId`: `str`
+
+## PutEncryptionConfigResultResponseTypeDef
+
+```python
+from mypy_boto3_xray.type_defs import PutEncryptionConfigResultResponseTypeDef
+```
+
+Required fields:
 
 - `EncryptionConfig`:
   [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutTraceSegmentsResultTypeDef
+## PutTelemetryRecordsRequestTypeDef
 
 ```python
-from mypy_boto3_xray.type_defs import PutTraceSegmentsResultTypeDef
+from mypy_boto3_xray.type_defs import PutTelemetryRecordsRequestTypeDef
 ```
+
+Required fields:
+
+- `TelemetryRecords`:
+  `List`\[[TelemetryRecordTypeDef](./type_defs.md#telemetryrecordtypedef)\]
 
 Optional fields:
 
+- `EC2InstanceId`: `str`
+- `Hostname`: `str`
+- `ResourceARN`: `str`
+
+## PutTraceSegmentsRequestTypeDef
+
+```python
+from mypy_boto3_xray.type_defs import PutTraceSegmentsRequestTypeDef
+```
+
+Required fields:
+
+- `TraceSegmentDocuments`: `List`\[`str`\]
+
+## PutTraceSegmentsResultResponseTypeDef
+
+```python
+from mypy_boto3_xray.type_defs import PutTraceSegmentsResultResponseTypeDef
+```
+
+Required fields:
+
 - `UnprocessedTraceSegments`:
   `List`\[[UnprocessedTraceSegmentTypeDef](./type_defs.md#unprocessedtracesegmenttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## RequestImpactStatisticsTypeDef
 
@@ -758,6 +1132,20 @@ from mypy_boto3_xray.type_defs import ResourceARNDetailTypeDef
 Optional fields:
 
 - `ARN`: `str`
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_xray.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## ResponseTimeRootCauseEntityTypeDef
 
@@ -892,7 +1280,7 @@ Required fields:
 
 - `RuleName`: `str`
 - `ClientID`: `str`
-- `Timestamp`: `datetime`
+- `Timestamp`: `Union`\[`datetime`, `str`\]
 - `RequestCount`: `int`
 - `SampledCount`: `int`
 
@@ -990,6 +1378,17 @@ Optional fields:
 - `ResponseTimeHistogram`:
   `List`\[[HistogramEntryTypeDef](./type_defs.md#histogramentrytypedef)\]
 
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_xray.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
 ## TagTypeDef
 
 ```python
@@ -1009,7 +1408,7 @@ from mypy_boto3_xray.type_defs import TelemetryRecordTypeDef
 
 Required fields:
 
-- `Timestamp`: `datetime`
+- `Timestamp`: `Union`\[`datetime`, `str`\]
 
 Optional fields:
 
@@ -1122,26 +1521,66 @@ Optional fields:
 - `ErrorCode`: `str`
 - `Message`: `str`
 
-## UpdateGroupResultTypeDef
+## UntagResourceRequestTypeDef
 
 ```python
-from mypy_boto3_xray.type_defs import UpdateGroupResultTypeDef
+from mypy_boto3_xray.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## UpdateGroupRequestTypeDef
+
+```python
+from mypy_boto3_xray.type_defs import UpdateGroupRequestTypeDef
 ```
 
 Optional fields:
+
+- `GroupName`: `str`
+- `GroupARN`: `str`
+- `FilterExpression`: `str`
+- `InsightsConfiguration`:
+  [InsightsConfigurationTypeDef](./type_defs.md#insightsconfigurationtypedef)
+
+## UpdateGroupResultResponseTypeDef
+
+```python
+from mypy_boto3_xray.type_defs import UpdateGroupResultResponseTypeDef
+```
+
+Required fields:
 
 - `Group`: [GroupTypeDef](./type_defs.md#grouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateSamplingRuleResultTypeDef
+## UpdateSamplingRuleRequestTypeDef
 
 ```python
-from mypy_boto3_xray.type_defs import UpdateSamplingRuleResultTypeDef
+from mypy_boto3_xray.type_defs import UpdateSamplingRuleRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `SamplingRuleUpdate`:
+  [SamplingRuleUpdateTypeDef](./type_defs.md#samplingruleupdatetypedef)
+
+## UpdateSamplingRuleResultResponseTypeDef
+
+```python
+from mypy_boto3_xray.type_defs import UpdateSamplingRuleResultResponseTypeDef
+```
+
+Required fields:
 
 - `SamplingRuleRecord`:
   [SamplingRuleRecordTypeDef](./type_defs.md#samplingrulerecordtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ValueWithServiceIdsTypeDef
 

@@ -28,7 +28,7 @@ def get_cluster_available_waiter() -> ClusterAvailableWaiter:
 ```
 
 Boto3 documentation:
-[Redshift.Waiter.cluster_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Waiter.cluster_available)
+[Redshift.Waiter.cluster_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Waiter.ClusterAvailable)
 
 Arguments for `ClusterAvailableWaiter.wait` method:
 
@@ -53,7 +53,7 @@ def get_cluster_deleted_waiter() -> ClusterDeletedWaiter:
 ```
 
 Boto3 documentation:
-[Redshift.Waiter.cluster_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Waiter.cluster_deleted)
+[Redshift.Waiter.cluster_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Waiter.ClusterDeleted)
 
 Arguments for `ClusterDeletedWaiter.wait` method:
 
@@ -78,7 +78,7 @@ def get_cluster_restored_waiter() -> ClusterRestoredWaiter:
 ```
 
 Boto3 documentation:
-[Redshift.Waiter.cluster_restored](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Waiter.cluster_restored)
+[Redshift.Waiter.cluster_restored](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Waiter.ClusterRestored)
 
 Arguments for `ClusterRestoredWaiter.wait` method:
 
@@ -104,15 +104,15 @@ def get_snapshot_available_waiter() -> SnapshotAvailableWaiter:
 ```
 
 Boto3 documentation:
-[Redshift.Waiter.snapshot_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Waiter.snapshot_available)
+[Redshift.Waiter.snapshot_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Waiter.SnapshotAvailable)
 
 Arguments for `SnapshotAvailableWaiter.wait` method:
 
 - `ClusterIdentifier`: `str`
 - `SnapshotIdentifier`: `str`
 - `SnapshotType`: `str`
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `OwnerAccount`: `str`

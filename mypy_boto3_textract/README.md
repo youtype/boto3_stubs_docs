@@ -87,19 +87,23 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_textract.type_defs import AnalyzeDocumentResponseTypeDef, ...
+from mypy_boto3_textract.type_defs import AnalyzeDocumentRequestTypeDef, ...
 ```
 
-- [AnalyzeDocumentResponseTypeDef](./type_defs.md#analyzedocumentresponsetypedef)
+- [AnalyzeDocumentRequestTypeDef](./type_defs.md#analyzedocumentrequesttypedef)
+- [AnalyzeDocumentResponseResponseTypeDef](./type_defs.md#analyzedocumentresponseresponsetypedef)
 - [BlockTypeDef](./type_defs.md#blocktypedef)
 - [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
-- [DetectDocumentTextResponseTypeDef](./type_defs.md#detectdocumenttextresponsetypedef)
+- [DetectDocumentTextRequestTypeDef](./type_defs.md#detectdocumenttextrequesttypedef)
+- [DetectDocumentTextResponseResponseTypeDef](./type_defs.md#detectdocumenttextresponseresponsetypedef)
 - [DocumentLocationTypeDef](./type_defs.md#documentlocationtypedef)
 - [DocumentMetadataTypeDef](./type_defs.md#documentmetadatatypedef)
 - [DocumentTypeDef](./type_defs.md#documenttypedef)
 - [GeometryTypeDef](./type_defs.md#geometrytypedef)
-- [GetDocumentAnalysisResponseTypeDef](./type_defs.md#getdocumentanalysisresponsetypedef)
-- [GetDocumentTextDetectionResponseTypeDef](./type_defs.md#getdocumenttextdetectionresponsetypedef)
+- [GetDocumentAnalysisRequestTypeDef](./type_defs.md#getdocumentanalysisrequesttypedef)
+- [GetDocumentAnalysisResponseResponseTypeDef](./type_defs.md#getdocumentanalysisresponseresponsetypedef)
+- [GetDocumentTextDetectionRequestTypeDef](./type_defs.md#getdocumenttextdetectionrequesttypedef)
+- [GetDocumentTextDetectionResponseResponseTypeDef](./type_defs.md#getdocumenttextdetectionresponseresponsetypedef)
 - [HumanLoopActivationOutputTypeDef](./type_defs.md#humanloopactivationoutputtypedef)
 - [HumanLoopConfigTypeDef](./type_defs.md#humanloopconfigtypedef)
 - [HumanLoopDataAttributesTypeDef](./type_defs.md#humanloopdataattributestypedef)
@@ -109,6 +113,8 @@ from mypy_boto3_textract.type_defs import AnalyzeDocumentResponseTypeDef, ...
 - [RelationshipTypeDef](./type_defs.md#relationshiptypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
-- [StartDocumentAnalysisResponseTypeDef](./type_defs.md#startdocumentanalysisresponsetypedef)
-- [StartDocumentTextDetectionResponseTypeDef](./type_defs.md#startdocumenttextdetectionresponsetypedef)
+- [StartDocumentAnalysisRequestTypeDef](./type_defs.md#startdocumentanalysisrequesttypedef)
+- [StartDocumentAnalysisResponseResponseTypeDef](./type_defs.md#startdocumentanalysisresponseresponsetypedef)
+- [StartDocumentTextDetectionRequestTypeDef](./type_defs.md#startdocumenttextdetectionrequesttypedef)
+- [StartDocumentTextDetectionResponseResponseTypeDef](./type_defs.md#startdocumenttextdetectionresponseresponsetypedef)
 - [WarningTypeDef](./type_defs.md#warningtypedef)

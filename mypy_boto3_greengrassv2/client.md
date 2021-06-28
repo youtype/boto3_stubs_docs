@@ -81,12 +81,17 @@ Exceptions:
 
 ### batch_associate_client_device_with_core_device
 
+Associate a list of client devices with a core device.
+
 Type annotations for
 `boto3.client("greengrassv2").batch_associate_client_device_with_core_device`
 method.
 
 Boto3 documentation:
 [GreengrassV2.Client.batch_associate_client_device_with_core_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.batch_associate_client_device_with_core_device)
+
+Arguments mapping described in
+[BatchAssociateClientDeviceWithCoreDeviceRequestTypeDef](./type_defs.md#batchassociateclientdevicewithcoredevicerequesttypedef).
 
 Keyword-only arguments:
 
@@ -95,9 +100,11 @@ Keyword-only arguments:
   `List`\[[AssociateClientDeviceWithCoreDeviceEntryTypeDef](./type_defs.md#associateclientdevicewithcoredeviceentrytypedef)\]
 
 Returns
-[BatchAssociateClientDeviceWithCoreDeviceResponseTypeDef](./type_defs.md#batchassociateclientdevicewithcoredeviceresponsetypedef).
+[BatchAssociateClientDeviceWithCoreDeviceResponseResponseTypeDef](./type_defs.md#batchassociateclientdevicewithcoredeviceresponseresponsetypedef).
 
 ### batch_disassociate_client_device_from_core_device
+
+Disassociate a list of client devices from a core device.
 
 Type annotations for
 `boto3.client("greengrassv2").batch_disassociate_client_device_from_core_device`
@@ -106,6 +113,9 @@ method.
 Boto3 documentation:
 [GreengrassV2.Client.batch_disassociate_client_device_from_core_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.batch_disassociate_client_device_from_core_device)
 
+Arguments mapping described in
+[BatchDisassociateClientDeviceFromCoreDeviceRequestTypeDef](./type_defs.md#batchdisassociateclientdevicefromcoredevicerequesttypedef).
+
 Keyword-only arguments:
 
 - `coreDeviceThingName`: `str` *(required)*
@@ -113,9 +123,11 @@ Keyword-only arguments:
   `List`\[[DisassociateClientDeviceFromCoreDeviceEntryTypeDef](./type_defs.md#disassociateclientdevicefromcoredeviceentrytypedef)\]
 
 Returns
-[BatchDisassociateClientDeviceFromCoreDeviceResponseTypeDef](./type_defs.md#batchdisassociateclientdevicefromcoredeviceresponsetypedef).
+[BatchDisassociateClientDeviceFromCoreDeviceResponseResponseTypeDef](./type_defs.md#batchdisassociateclientdevicefromcoredeviceresponseresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("greengrassv2").can_paginate` method.
 
@@ -130,25 +142,35 @@ Returns `bool`.
 
 ### cancel_deployment
 
+Cancels a deployment.
+
 Type annotations for `boto3.client("greengrassv2").cancel_deployment` method.
 
 Boto3 documentation:
 [GreengrassV2.Client.cancel_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.cancel_deployment)
+
+Arguments mapping described in
+[CancelDeploymentRequestTypeDef](./type_defs.md#canceldeploymentrequesttypedef).
 
 Keyword-only arguments:
 
 - `deploymentId`: `str` *(required)*
 
 Returns
-[CancelDeploymentResponseTypeDef](./type_defs.md#canceldeploymentresponsetypedef).
+[CancelDeploymentResponseResponseTypeDef](./type_defs.md#canceldeploymentresponseresponsetypedef).
 
 ### create_component_version
+
+Creates a component.
 
 Type annotations for `boto3.client("greengrassv2").create_component_version`
 method.
 
 Boto3 documentation:
 [GreengrassV2.Client.create_component_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.create_component_version)
+
+Arguments mapping described in
+[CreateComponentVersionRequestTypeDef](./type_defs.md#createcomponentversionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -158,14 +180,20 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateComponentVersionResponseTypeDef](./type_defs.md#createcomponentversionresponsetypedef).
+[CreateComponentVersionResponseResponseTypeDef](./type_defs.md#createcomponentversionresponseresponsetypedef).
 
 ### create_deployment
+
+Creates a continuous deployment for a target, which is a AWS IoT Greengrass
+core device or group of core devices.
 
 Type annotations for `boto3.client("greengrassv2").create_deployment` method.
 
 Boto3 documentation:
 [GreengrassV2.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.create_deployment)
+
+Arguments mapping described in
+[CreateDeploymentRequestTypeDef](./type_defs.md#createdeploymentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -180,14 +208,19 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateDeploymentResponseTypeDef](./type_defs.md#createdeploymentresponsetypedef).
+[CreateDeploymentResponseResponseTypeDef](./type_defs.md#createdeploymentresponseresponsetypedef).
 
 ### delete_component
+
+Deletes a version of a component from AWS IoT Greengrass.
 
 Type annotations for `boto3.client("greengrassv2").delete_component` method.
 
 Boto3 documentation:
 [GreengrassV2.Client.delete_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.delete_component)
+
+Arguments mapping described in
+[DeleteComponentRequestTypeDef](./type_defs.md#deletecomponentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -195,10 +228,15 @@ Keyword-only arguments:
 
 ### delete_core_device
 
+Deletes a AWS IoT Greengrass core device, which is an AWS IoT thing.
+
 Type annotations for `boto3.client("greengrassv2").delete_core_device` method.
 
 Boto3 documentation:
 [GreengrassV2.Client.delete_core_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.delete_core_device)
+
+Arguments mapping described in
+[DeleteCoreDeviceRequestTypeDef](./type_defs.md#deletecoredevicerequesttypedef).
 
 Keyword-only arguments:
 
@@ -206,19 +244,26 @@ Keyword-only arguments:
 
 ### describe_component
 
+Retrieves metadata for a version of a component.
+
 Type annotations for `boto3.client("greengrassv2").describe_component` method.
 
 Boto3 documentation:
 [GreengrassV2.Client.describe_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.describe_component)
+
+Arguments mapping described in
+[DescribeComponentRequestTypeDef](./type_defs.md#describecomponentrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
 Returns
-[DescribeComponentResponseTypeDef](./type_defs.md#describecomponentresponsetypedef).
+[DescribeComponentResponseResponseTypeDef](./type_defs.md#describecomponentresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("greengrassv2").generate_presigned_url`
 method.
@@ -237,10 +282,15 @@ Returns `str`.
 
 ### get_component
 
+Gets the recipe for a version of a component.
+
 Type annotations for `boto3.client("greengrassv2").get_component` method.
 
 Boto3 documentation:
 [GreengrassV2.Client.get_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.get_component)
+
+Arguments mapping described in
+[GetComponentRequestTypeDef](./type_defs.md#getcomponentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -249,9 +299,11 @@ Keyword-only arguments:
   [RecipeOutputFormatType](./literals.md#recipeoutputformattype)
 
 Returns
-[GetComponentResponseTypeDef](./type_defs.md#getcomponentresponsetypedef).
+[GetComponentResponseResponseTypeDef](./type_defs.md#getcomponentresponseresponsetypedef).
 
 ### get_component_version_artifact
+
+Gets the pre-signed URL to download a public component artifact.
 
 Type annotations for
 `boto3.client("greengrassv2").get_component_version_artifact` method.
@@ -259,43 +311,59 @@ Type annotations for
 Boto3 documentation:
 [GreengrassV2.Client.get_component_version_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.get_component_version_artifact)
 
+Arguments mapping described in
+[GetComponentVersionArtifactRequestTypeDef](./type_defs.md#getcomponentversionartifactrequesttypedef).
+
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 - `artifactName`: `str` *(required)*
 
 Returns
-[GetComponentVersionArtifactResponseTypeDef](./type_defs.md#getcomponentversionartifactresponsetypedef).
+[GetComponentVersionArtifactResponseResponseTypeDef](./type_defs.md#getcomponentversionartifactresponseresponsetypedef).
 
 ### get_core_device
+
+Retrieves metadata for a AWS IoT Greengrass core device.
 
 Type annotations for `boto3.client("greengrassv2").get_core_device` method.
 
 Boto3 documentation:
 [GreengrassV2.Client.get_core_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.get_core_device)
 
+Arguments mapping described in
+[GetCoreDeviceRequestTypeDef](./type_defs.md#getcoredevicerequesttypedef).
+
 Keyword-only arguments:
 
 - `coreDeviceThingName`: `str` *(required)*
 
 Returns
-[GetCoreDeviceResponseTypeDef](./type_defs.md#getcoredeviceresponsetypedef).
+[GetCoreDeviceResponseResponseTypeDef](./type_defs.md#getcoredeviceresponseresponsetypedef).
 
 ### get_deployment
+
+Gets a deployment.
 
 Type annotations for `boto3.client("greengrassv2").get_deployment` method.
 
 Boto3 documentation:
 [GreengrassV2.Client.get_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.get_deployment)
 
+Arguments mapping described in
+[GetDeploymentRequestTypeDef](./type_defs.md#getdeploymentrequesttypedef).
+
 Keyword-only arguments:
 
 - `deploymentId`: `str` *(required)*
 
 Returns
-[GetDeploymentResponseTypeDef](./type_defs.md#getdeploymentresponsetypedef).
+[GetDeploymentResponseResponseTypeDef](./type_defs.md#getdeploymentresponseresponsetypedef).
 
 ### list_client_devices_associated_with_core_device
+
+Retrieves a paginated list of client devices that are associated with a core
+device.
 
 Type annotations for
 `boto3.client("greengrassv2").list_client_devices_associated_with_core_device`
@@ -304,6 +372,9 @@ method.
 Boto3 documentation:
 [GreengrassV2.Client.list_client_devices_associated_with_core_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_client_devices_associated_with_core_device)
 
+Arguments mapping described in
+[ListClientDevicesAssociatedWithCoreDeviceRequestTypeDef](./type_defs.md#listclientdevicesassociatedwithcoredevicerequesttypedef).
+
 Keyword-only arguments:
 
 - `coreDeviceThingName`: `str` *(required)*
@@ -311,15 +382,20 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef](./type_defs.md#listclientdevicesassociatedwithcoredeviceresponsetypedef).
+[ListClientDevicesAssociatedWithCoreDeviceResponseResponseTypeDef](./type_defs.md#listclientdevicesassociatedwithcoredeviceresponseresponsetypedef).
 
 ### list_component_versions
+
+Retrieves a paginated list of all versions for a component.
 
 Type annotations for `boto3.client("greengrassv2").list_component_versions`
 method.
 
 Boto3 documentation:
 [GreengrassV2.Client.list_component_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_component_versions)
+
+Arguments mapping described in
+[ListComponentVersionsRequestTypeDef](./type_defs.md#listcomponentversionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -328,14 +404,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListComponentVersionsResponseTypeDef](./type_defs.md#listcomponentversionsresponsetypedef).
+[ListComponentVersionsResponseResponseTypeDef](./type_defs.md#listcomponentversionsresponseresponsetypedef).
 
 ### list_components
+
+Retrieves a paginated list of component summaries.
 
 Type annotations for `boto3.client("greengrassv2").list_components` method.
 
 Boto3 documentation:
 [GreengrassV2.Client.list_components](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_components)
+
+Arguments mapping described in
+[ListComponentsRequestTypeDef](./type_defs.md#listcomponentsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -345,14 +426,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListComponentsResponseTypeDef](./type_defs.md#listcomponentsresponsetypedef).
+[ListComponentsResponseResponseTypeDef](./type_defs.md#listcomponentsresponseresponsetypedef).
 
 ### list_core_devices
+
+Retrieves a paginated list of AWS IoT Greengrass core devices.
 
 Type annotations for `boto3.client("greengrassv2").list_core_devices` method.
 
 Boto3 documentation:
 [GreengrassV2.Client.list_core_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_core_devices)
+
+Arguments mapping described in
+[ListCoreDevicesRequestTypeDef](./type_defs.md#listcoredevicesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -362,14 +448,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListCoreDevicesResponseTypeDef](./type_defs.md#listcoredevicesresponsetypedef).
+[ListCoreDevicesResponseResponseTypeDef](./type_defs.md#listcoredevicesresponseresponsetypedef).
 
 ### list_deployments
+
+Retrieves a paginated list of deployments.
 
 Type annotations for `boto3.client("greengrassv2").list_deployments` method.
 
 Boto3 documentation:
 [GreengrassV2.Client.list_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_deployments)
+
+Arguments mapping described in
+[ListDeploymentsRequestTypeDef](./type_defs.md#listdeploymentsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -380,9 +471,12 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListDeploymentsResponseTypeDef](./type_defs.md#listdeploymentsresponsetypedef).
+[ListDeploymentsResponseResponseTypeDef](./type_defs.md#listdeploymentsresponseresponsetypedef).
 
 ### list_effective_deployments
+
+Retrieves a paginated list of deployment jobs that AWS IoT Greengrass sends to
+AWS IoT Greengrass core devices.
 
 Type annotations for `boto3.client("greengrassv2").list_effective_deployments`
 method.
@@ -390,6 +484,9 @@ method.
 Boto3 documentation:
 [GreengrassV2.Client.list_effective_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_effective_deployments)
 
+Arguments mapping described in
+[ListEffectiveDeploymentsRequestTypeDef](./type_defs.md#listeffectivedeploymentsrequesttypedef).
+
 Keyword-only arguments:
 
 - `coreDeviceThingName`: `str` *(required)*
@@ -397,9 +494,12 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListEffectiveDeploymentsResponseTypeDef](./type_defs.md#listeffectivedeploymentsresponsetypedef).
+[ListEffectiveDeploymentsResponseResponseTypeDef](./type_defs.md#listeffectivedeploymentsresponseresponsetypedef).
 
 ### list_installed_components
+
+Retrieves a paginated list of the components that a AWS IoT Greengrass core
+device runs.
 
 Type annotations for `boto3.client("greengrassv2").list_installed_components`
 method.
@@ -407,6 +507,9 @@ method.
 Boto3 documentation:
 [GreengrassV2.Client.list_installed_components](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_installed_components)
 
+Arguments mapping described in
+[ListInstalledComponentsRequestTypeDef](./type_defs.md#listinstalledcomponentsrequesttypedef).
+
 Keyword-only arguments:
 
 - `coreDeviceThingName`: `str` *(required)*
@@ -414,9 +517,11 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListInstalledComponentsResponseTypeDef](./type_defs.md#listinstalledcomponentsresponsetypedef).
+[ListInstalledComponentsResponseResponseTypeDef](./type_defs.md#listinstalledcomponentsresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Retrieves the list of tags for an AWS IoT Greengrass resource.
 
 Type annotations for `boto3.client("greengrassv2").list_tags_for_resource`
 method.
@@ -424,20 +529,29 @@ method.
 Boto3 documentation:
 [GreengrassV2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### resolve_component_candidates
+
+Retrieves a list of components that meet the component, version, and platform
+requirements of a deployment.
 
 Type annotations for
 `boto3.client("greengrassv2").resolve_component_candidates` method.
 
 Boto3 documentation:
 [GreengrassV2.Client.resolve_component_candidates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.resolve_component_candidates)
+
+Arguments mapping described in
+[ResolveComponentCandidatesRequestTypeDef](./type_defs.md#resolvecomponentcandidatesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -449,14 +563,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[ResolveComponentCandidatesResponseTypeDef](./type_defs.md#resolvecomponentcandidatesresponsetypedef).
+[ResolveComponentCandidatesResponseResponseTypeDef](./type_defs.md#resolvecomponentcandidatesresponseresponsetypedef).
 
 ### tag_resource
+
+Adds tags to an AWS IoT Greengrass resource.
 
 Type annotations for `boto3.client("greengrassv2").tag_resource` method.
 
 Boto3 documentation:
 [GreengrassV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -467,10 +586,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Removes a tag from an AWS IoT Greengrass resource.
+
 Type annotations for `boto3.client("greengrassv2").untag_resource` method.
 
 Boto3 documentation:
 [GreengrassV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 

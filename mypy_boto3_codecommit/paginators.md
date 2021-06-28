@@ -43,7 +43,7 @@ Arguments for `DescribePullRequestEventsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribePullRequestEventsPaginator.paginate` returns
-`Iterator`\[[DescribePullRequestEventsOutputTypeDef](./type_defs.md#describepullrequesteventsoutputtypedef)\].
+`Iterator`\[[DescribePullRequestEventsOutputResponseTypeDef](./type_defs.md#describepullrequesteventsoutputresponsetypedef)\].
 
 ## GetCommentsForComparedCommitPaginator
 
@@ -71,7 +71,7 @@ Arguments for `GetCommentsForComparedCommitPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetCommentsForComparedCommitPaginator.paginate` returns
-`Iterator`\[[GetCommentsForComparedCommitOutputTypeDef](./type_defs.md#getcommentsforcomparedcommitoutputtypedef)\].
+`Iterator`\[[GetCommentsForComparedCommitOutputResponseTypeDef](./type_defs.md#getcommentsforcomparedcommitoutputresponsetypedef)\].
 
 ## GetCommentsForPullRequestPaginator
 
@@ -100,7 +100,7 @@ Arguments for `GetCommentsForPullRequestPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetCommentsForPullRequestPaginator.paginate` returns
-`Iterator`\[[GetCommentsForPullRequestOutputTypeDef](./type_defs.md#getcommentsforpullrequestoutputtypedef)\].
+`Iterator`\[[GetCommentsForPullRequestOutputResponseTypeDef](./type_defs.md#getcommentsforpullrequestoutputresponsetypedef)\].
 
 ## GetDifferencesPaginator
 
@@ -130,7 +130,7 @@ Arguments for `GetDifferencesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetDifferencesPaginator.paginate` returns
-`Iterator`\[[GetDifferencesOutputTypeDef](./type_defs.md#getdifferencesoutputtypedef)\].
+`Iterator`\[[GetDifferencesOutputResponseTypeDef](./type_defs.md#getdifferencesoutputresponsetypedef)\].
 
 ## ListBranchesPaginator
 
@@ -156,7 +156,7 @@ Arguments for `ListBranchesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListBranchesPaginator.paginate` returns
-`Iterator`\[[ListBranchesOutputTypeDef](./type_defs.md#listbranchesoutputtypedef)\].
+`Iterator`\[[ListBranchesOutputResponseTypeDef](./type_defs.md#listbranchesoutputresponsetypedef)\].
 
 ## ListPullRequestsPaginator
 
@@ -185,7 +185,7 @@ Arguments for `ListPullRequestsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPullRequestsPaginator.paginate` returns
-`Iterator`\[[ListPullRequestsOutputTypeDef](./type_defs.md#listpullrequestsoutputtypedef)\].
+`Iterator`\[[ListPullRequestsOutputResponseTypeDef](./type_defs.md#listpullrequestsoutputresponsetypedef)\].
 
 ## ListRepositoriesPaginator
 
@@ -212,4 +212,4 @@ Arguments for `ListRepositoriesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRepositoriesPaginator.paginate` returns
-`Iterator`\[[ListRepositoriesOutputTypeDef](./type_defs.md#listrepositoriesoutputtypedef)\].
+`Iterator`\[[ListRepositoriesOutputResponseTypeDef](./type_defs.md#listrepositoriesoutputresponsetypedef)\].

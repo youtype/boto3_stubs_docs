@@ -246,11 +246,16 @@ Exceptions:
 
 ### associate_phone_number_with_user
 
+Associates a phone number with the specified Amazon Chime user.
+
 Type annotations for `boto3.client("chime").associate_phone_number_with_user`
 method.
 
 Boto3 documentation:
 [Chime.Client.associate_phone_number_with_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_phone_number_with_user)
+
+Arguments mapping described in
+[AssociatePhoneNumberWithUserRequestTypeDef](./type_defs.md#associatephonenumberwithuserrequesttypedef).
 
 Keyword-only arguments:
 
@@ -262,11 +267,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### associate_phone_numbers_with_voice_connector
 
+Associates phone numbers with the specified Amazon Chime Voice Connector.
+
 Type annotations for
 `boto3.client("chime").associate_phone_numbers_with_voice_connector` method.
 
 Boto3 documentation:
 [Chime.Client.associate_phone_numbers_with_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_phone_numbers_with_voice_connector)
+
+Arguments mapping described in
+[AssociatePhoneNumbersWithVoiceConnectorRequestTypeDef](./type_defs.md#associatephonenumberswithvoiceconnectorrequesttypedef).
 
 Keyword-only arguments:
 
@@ -275,9 +285,11 @@ Keyword-only arguments:
 - `ForceAssociate`: `bool`
 
 Returns
-[AssociatePhoneNumbersWithVoiceConnectorResponseTypeDef](./type_defs.md#associatephonenumberswithvoiceconnectorresponsetypedef).
+[AssociatePhoneNumbersWithVoiceConnectorResponseResponseTypeDef](./type_defs.md#associatephonenumberswithvoiceconnectorresponseresponsetypedef).
 
 ### associate_phone_numbers_with_voice_connector_group
+
+Associates phone numbers with the specified Amazon Chime Voice Connector group.
 
 Type annotations for
 `boto3.client("chime").associate_phone_numbers_with_voice_connector_group`
@@ -286,6 +298,9 @@ method.
 Boto3 documentation:
 [Chime.Client.associate_phone_numbers_with_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_phone_numbers_with_voice_connector_group)
 
+Arguments mapping described in
+[AssociatePhoneNumbersWithVoiceConnectorGroupRequestTypeDef](./type_defs.md#associatephonenumberswithvoiceconnectorgrouprequesttypedef).
+
 Keyword-only arguments:
 
 - `VoiceConnectorGroupId`: `str` *(required)*
@@ -293,15 +308,21 @@ Keyword-only arguments:
 - `ForceAssociate`: `bool`
 
 Returns
-[AssociatePhoneNumbersWithVoiceConnectorGroupResponseTypeDef](./type_defs.md#associatephonenumberswithvoiceconnectorgroupresponsetypedef).
+[AssociatePhoneNumbersWithVoiceConnectorGroupResponseResponseTypeDef](./type_defs.md#associatephonenumberswithvoiceconnectorgroupresponseresponsetypedef).
 
 ### associate_signin_delegate_groups_with_account
+
+Associates the specified sign-in delegate groups with the specified Amazon
+Chime account.
 
 Type annotations for
 `boto3.client("chime").associate_signin_delegate_groups_with_account` method.
 
 Boto3 documentation:
 [Chime.Client.associate_signin_delegate_groups_with_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_signin_delegate_groups_with_account)
+
+Arguments mapping described in
+[AssociateSigninDelegateGroupsWithAccountRequestTypeDef](./type_defs.md#associatesignindelegategroupswithaccountrequesttypedef).
 
 Keyword-only arguments:
 
@@ -314,10 +335,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### batch_create_attendee
 
+Creates up to 100 new attendees for an active Amazon Chime SDK meeting.
+
 Type annotations for `boto3.client("chime").batch_create_attendee` method.
 
 Boto3 documentation:
 [Chime.Client.batch_create_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_create_attendee)
+
+Arguments mapping described in
+[BatchCreateAttendeeRequestTypeDef](./type_defs.md#batchcreateattendeerequesttypedef).
 
 Keyword-only arguments:
 
@@ -327,15 +353,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchCreateAttendeeResponseTypeDef](./type_defs.md#batchcreateattendeeresponsetypedef).
+[BatchCreateAttendeeResponseResponseTypeDef](./type_defs.md#batchcreateattendeeresponseresponsetypedef).
 
 ### batch_create_channel_membership
+
+Adds a specified number of users to a channel.
 
 Type annotations for `boto3.client("chime").batch_create_channel_membership`
 method.
 
 Boto3 documentation:
 [Chime.Client.batch_create_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_create_channel_membership)
+
+Arguments mapping described in
+[BatchCreateChannelMembershipRequestTypeDef](./type_defs.md#batchcreatechannelmembershiprequesttypedef).
 
 Keyword-only arguments:
 
@@ -345,15 +376,20 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[BatchCreateChannelMembershipResponseTypeDef](./type_defs.md#batchcreatechannelmembershipresponsetypedef).
+[BatchCreateChannelMembershipResponseResponseTypeDef](./type_defs.md#batchcreatechannelmembershipresponseresponsetypedef).
 
 ### batch_create_room_membership
+
+Adds up to 50 members to a chat room in an Amazon Chime Enterprise account.
 
 Type annotations for `boto3.client("chime").batch_create_room_membership`
 method.
 
 Boto3 documentation:
 [Chime.Client.batch_create_room_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_create_room_membership)
+
+Arguments mapping described in
+[BatchCreateRoomMembershipRequestTypeDef](./type_defs.md#batchcreateroommembershiprequesttypedef).
 
 Keyword-only arguments:
 
@@ -364,58 +400,79 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchCreateRoomMembershipResponseTypeDef](./type_defs.md#batchcreateroommembershipresponsetypedef).
+[BatchCreateRoomMembershipResponseResponseTypeDef](./type_defs.md#batchcreateroommembershipresponseresponsetypedef).
 
 ### batch_delete_phone_number
+
+Moves phone numbers into the **Deletion queue**.
 
 Type annotations for `boto3.client("chime").batch_delete_phone_number` method.
 
 Boto3 documentation:
 [Chime.Client.batch_delete_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_delete_phone_number)
 
+Arguments mapping described in
+[BatchDeletePhoneNumberRequestTypeDef](./type_defs.md#batchdeletephonenumberrequesttypedef).
+
 Keyword-only arguments:
 
 - `PhoneNumberIds`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchDeletePhoneNumberResponseTypeDef](./type_defs.md#batchdeletephonenumberresponsetypedef).
+[BatchDeletePhoneNumberResponseResponseTypeDef](./type_defs.md#batchdeletephonenumberresponseresponsetypedef).
 
 ### batch_suspend_user
+
+Suspends up to 50 users from a `Team` or `EnterpriseLWA` Amazon Chime account.
 
 Type annotations for `boto3.client("chime").batch_suspend_user` method.
 
 Boto3 documentation:
 [Chime.Client.batch_suspend_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_suspend_user)
 
+Arguments mapping described in
+[BatchSuspendUserRequestTypeDef](./type_defs.md#batchsuspenduserrequesttypedef).
+
 Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `UserIdList`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchSuspendUserResponseTypeDef](./type_defs.md#batchsuspenduserresponsetypedef).
+[BatchSuspendUserResponseResponseTypeDef](./type_defs.md#batchsuspenduserresponseresponsetypedef).
 
 ### batch_unsuspend_user
+
+Removes the suspension from up to 50 previously suspended users for the
+specified Amazon Chime `EnterpriseLWA` account.
 
 Type annotations for `boto3.client("chime").batch_unsuspend_user` method.
 
 Boto3 documentation:
 [Chime.Client.batch_unsuspend_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_unsuspend_user)
 
+Arguments mapping described in
+[BatchUnsuspendUserRequestTypeDef](./type_defs.md#batchunsuspenduserrequesttypedef).
+
 Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `UserIdList`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchUnsuspendUserResponseTypeDef](./type_defs.md#batchunsuspenduserresponsetypedef).
+[BatchUnsuspendUserResponseResponseTypeDef](./type_defs.md#batchunsuspenduserresponseresponsetypedef).
 
 ### batch_update_phone_number
+
+Updates phone number product types or calling names.
 
 Type annotations for `boto3.client("chime").batch_update_phone_number` method.
 
 Boto3 documentation:
 [Chime.Client.batch_update_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_update_phone_number)
+
+Arguments mapping described in
+[BatchUpdatePhoneNumberRequestTypeDef](./type_defs.md#batchupdatephonenumberrequesttypedef).
 
 Keyword-only arguments:
 
@@ -424,14 +481,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchUpdatePhoneNumberResponseTypeDef](./type_defs.md#batchupdatephonenumberresponsetypedef).
+[BatchUpdatePhoneNumberResponseResponseTypeDef](./type_defs.md#batchupdatephonenumberresponseresponsetypedef).
 
 ### batch_update_user
+
+Updates user details within the UpdateUserRequestItem object for up to 20 users
+for the specified Amazon Chime account.
 
 Type annotations for `boto3.client("chime").batch_update_user` method.
 
 Boto3 documentation:
 [Chime.Client.batch_update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_update_user)
+
+Arguments mapping described in
+[BatchUpdateUserRequestTypeDef](./type_defs.md#batchupdateuserrequesttypedef).
 
 Keyword-only arguments:
 
@@ -441,9 +504,11 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchUpdateUserResponseTypeDef](./type_defs.md#batchupdateuserresponsetypedef).
+[BatchUpdateUserResponseResponseTypeDef](./type_defs.md#batchupdateuserresponseresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("chime").can_paginate` method.
 
@@ -458,24 +523,34 @@ Returns `bool`.
 
 ### create_account
 
+Creates an Amazon Chime account under the administrator's AWS account.
+
 Type annotations for `boto3.client("chime").create_account` method.
 
 Boto3 documentation:
 [Chime.Client.create_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_account)
+
+Arguments mapping described in
+[CreateAccountRequestTypeDef](./type_defs.md#createaccountrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[CreateAccountResponseTypeDef](./type_defs.md#createaccountresponsetypedef).
+[CreateAccountResponseResponseTypeDef](./type_defs.md#createaccountresponseresponsetypedef).
 
 ### create_app_instance
+
+Creates an Amazon Chime SDK messaging `AppInstance` under an AWS account.
 
 Type annotations for `boto3.client("chime").create_app_instance` method.
 
 Boto3 documentation:
 [Chime.Client.create_app_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_app_instance)
+
+Arguments mapping described in
+[CreateAppInstanceRequestTypeDef](./type_defs.md#createappinstancerequesttypedef).
 
 Keyword-only arguments:
 
@@ -485,14 +560,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateAppInstanceResponseTypeDef](./type_defs.md#createappinstanceresponsetypedef).
+[CreateAppInstanceResponseResponseTypeDef](./type_defs.md#createappinstanceresponseresponsetypedef).
 
 ### create_app_instance_admin
+
+Promotes an `AppInstanceUser` to an `AppInstanceAdmin`.
 
 Type annotations for `boto3.client("chime").create_app_instance_admin` method.
 
 Boto3 documentation:
 [Chime.Client.create_app_instance_admin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_app_instance_admin)
+
+Arguments mapping described in
+[CreateAppInstanceAdminRequestTypeDef](./type_defs.md#createappinstanceadminrequesttypedef).
 
 Keyword-only arguments:
 
@@ -500,14 +580,19 @@ Keyword-only arguments:
 - `AppInstanceArn`: `str` *(required)*
 
 Returns
-[CreateAppInstanceAdminResponseTypeDef](./type_defs.md#createappinstanceadminresponsetypedef).
+[CreateAppInstanceAdminResponseResponseTypeDef](./type_defs.md#createappinstanceadminresponseresponsetypedef).
 
 ### create_app_instance_user
+
+Creates a user under an Amazon Chime `AppInstance`.
 
 Type annotations for `boto3.client("chime").create_app_instance_user` method.
 
 Boto3 documentation:
 [Chime.Client.create_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_app_instance_user)
+
+Arguments mapping described in
+[CreateAppInstanceUserRequestTypeDef](./type_defs.md#createappinstanceuserrequesttypedef).
 
 Keyword-only arguments:
 
@@ -519,14 +604,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateAppInstanceUserResponseTypeDef](./type_defs.md#createappinstanceuserresponsetypedef).
+[CreateAppInstanceUserResponseResponseTypeDef](./type_defs.md#createappinstanceuserresponseresponsetypedef).
 
 ### create_attendee
+
+Creates a new attendee for an active Amazon Chime SDK meeting.
 
 Type annotations for `boto3.client("chime").create_attendee` method.
 
 Boto3 documentation:
 [Chime.Client.create_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_attendee)
+
+Arguments mapping described in
+[CreateAttendeeRequestTypeDef](./type_defs.md#createattendeerequesttypedef).
 
 Keyword-only arguments:
 
@@ -535,14 +625,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateAttendeeResponseTypeDef](./type_defs.md#createattendeeresponsetypedef).
+[CreateAttendeeResponseResponseTypeDef](./type_defs.md#createattendeeresponseresponsetypedef).
 
 ### create_bot
+
+Creates a bot for an Amazon Chime Enterprise account.
 
 Type annotations for `boto3.client("chime").create_bot` method.
 
 Boto3 documentation:
 [Chime.Client.create_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_bot)
+
+Arguments mapping described in
+[CreateBotRequestTypeDef](./type_defs.md#createbotrequesttypedef).
 
 Keyword-only arguments:
 
@@ -550,14 +645,20 @@ Keyword-only arguments:
 - `DisplayName`: `str` *(required)*
 - `Domain`: `str`
 
-Returns [CreateBotResponseTypeDef](./type_defs.md#createbotresponsetypedef).
+Returns
+[CreateBotResponseResponseTypeDef](./type_defs.md#createbotresponseresponsetypedef).
 
 ### create_channel
+
+Creates a channel to which you can add users and send messages.
 
 Type annotations for `boto3.client("chime").create_channel` method.
 
 Boto3 documentation:
 [Chime.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel)
+
+Arguments mapping described in
+[CreateChannelRequestTypeDef](./type_defs.md#createchannelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -571,14 +672,19 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
+[CreateChannelResponseResponseTypeDef](./type_defs.md#createchannelresponseresponsetypedef).
 
 ### create_channel_ban
+
+Permanently bans a member from a channel.
 
 Type annotations for `boto3.client("chime").create_channel_ban` method.
 
 Boto3 documentation:
 [Chime.Client.create_channel_ban](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel_ban)
+
+Arguments mapping described in
+[CreateChannelBanRequestTypeDef](./type_defs.md#createchannelbanrequesttypedef).
 
 Keyword-only arguments:
 
@@ -587,14 +693,19 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[CreateChannelBanResponseTypeDef](./type_defs.md#createchannelbanresponsetypedef).
+[CreateChannelBanResponseResponseTypeDef](./type_defs.md#createchannelbanresponseresponsetypedef).
 
 ### create_channel_membership
+
+Adds a user to a channel.
 
 Type annotations for `boto3.client("chime").create_channel_membership` method.
 
 Boto3 documentation:
 [Chime.Client.create_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel_membership)
+
+Arguments mapping described in
+[CreateChannelMembershipRequestTypeDef](./type_defs.md#createchannelmembershiprequesttypedef).
 
 Keyword-only arguments:
 
@@ -605,14 +716,19 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[CreateChannelMembershipResponseTypeDef](./type_defs.md#createchannelmembershipresponsetypedef).
+[CreateChannelMembershipResponseResponseTypeDef](./type_defs.md#createchannelmembershipresponseresponsetypedef).
 
 ### create_channel_moderator
+
+Creates a new `ChannelModerator`.
 
 Type annotations for `boto3.client("chime").create_channel_moderator` method.
 
 Boto3 documentation:
 [Chime.Client.create_channel_moderator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel_moderator)
+
+Arguments mapping described in
+[CreateChannelModeratorRequestTypeDef](./type_defs.md#createchannelmoderatorrequesttypedef).
 
 Keyword-only arguments:
 
@@ -621,14 +737,20 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[CreateChannelModeratorResponseTypeDef](./type_defs.md#createchannelmoderatorresponsetypedef).
+[CreateChannelModeratorResponseResponseTypeDef](./type_defs.md#createchannelmoderatorresponseresponsetypedef).
 
 ### create_meeting
+
+Creates a new Amazon Chime SDK meeting in the specified media Region with no
+initial attendees.
 
 Type annotations for `boto3.client("chime").create_meeting` method.
 
 Boto3 documentation:
 [Chime.Client.create_meeting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_meeting)
+
+Arguments mapping described in
+[CreateMeetingRequestTypeDef](./type_defs.md#createmeetingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -641,14 +763,21 @@ Keyword-only arguments:
   [MeetingNotificationConfigurationTypeDef](./type_defs.md#meetingnotificationconfigurationtypedef)
 
 Returns
-[CreateMeetingResponseTypeDef](./type_defs.md#createmeetingresponsetypedef).
+[CreateMeetingResponseResponseTypeDef](./type_defs.md#createmeetingresponseresponsetypedef).
 
 ### create_meeting_dial_out
+
+Uses the join token and call metadata in a meeting request (From number, To
+number, and so forth) to initiate an outbound call to a public switched
+telephone network (PSTN) and join them into a Chime meeting.
 
 Type annotations for `boto3.client("chime").create_meeting_dial_out` method.
 
 Boto3 documentation:
 [Chime.Client.create_meeting_dial_out](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_meeting_dial_out)
+
+Arguments mapping described in
+[CreateMeetingDialOutRequestTypeDef](./type_defs.md#createmeetingdialoutrequesttypedef).
 
 Keyword-only arguments:
 
@@ -658,15 +787,21 @@ Keyword-only arguments:
 - `JoinToken`: `str` *(required)*
 
 Returns
-[CreateMeetingDialOutResponseTypeDef](./type_defs.md#createmeetingdialoutresponsetypedef).
+[CreateMeetingDialOutResponseResponseTypeDef](./type_defs.md#createmeetingdialoutresponseresponsetypedef).
 
 ### create_meeting_with_attendees
+
+Creates a new Amazon Chime SDK meeting in the specified media Region, with
+attendees.
 
 Type annotations for `boto3.client("chime").create_meeting_with_attendees`
 method.
 
 Boto3 documentation:
 [Chime.Client.create_meeting_with_attendees](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_meeting_with_attendees)
+
+Arguments mapping described in
+[CreateMeetingWithAttendeesRequestTypeDef](./type_defs.md#createmeetingwithattendeesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -681,14 +816,19 @@ Keyword-only arguments:
   `List`\[[CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef)\]
 
 Returns
-[CreateMeetingWithAttendeesResponseTypeDef](./type_defs.md#createmeetingwithattendeesresponsetypedef).
+[CreateMeetingWithAttendeesResponseResponseTypeDef](./type_defs.md#createmeetingwithattendeesresponseresponsetypedef).
 
 ### create_phone_number_order
+
+Creates an order for phone numbers to be provisioned.
 
 Type annotations for `boto3.client("chime").create_phone_number_order` method.
 
 Boto3 documentation:
 [Chime.Client.create_phone_number_order](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_phone_number_order)
+
+Arguments mapping described in
+[CreatePhoneNumberOrderRequestTypeDef](./type_defs.md#createphonenumberorderrequesttypedef).
 
 Keyword-only arguments:
 
@@ -698,14 +838,20 @@ Keyword-only arguments:
 - `E164PhoneNumbers`: `List`\[`str`\] *(required)*
 
 Returns
-[CreatePhoneNumberOrderResponseTypeDef](./type_defs.md#createphonenumberorderresponsetypedef).
+[CreatePhoneNumberOrderResponseResponseTypeDef](./type_defs.md#createphonenumberorderresponseresponsetypedef).
 
 ### create_proxy_session
+
+Creates a proxy session on the specified Amazon Chime Voice Connector for the
+specified participant phone numbers.
 
 Type annotations for `boto3.client("chime").create_proxy_session` method.
 
 Boto3 documentation:
 [Chime.Client.create_proxy_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_proxy_session)
+
+Arguments mapping described in
+[CreateProxySessionRequestTypeDef](./type_defs.md#createproxysessionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -722,14 +868,19 @@ Keyword-only arguments:
   [GeoMatchParamsTypeDef](./type_defs.md#geomatchparamstypedef)
 
 Returns
-[CreateProxySessionResponseTypeDef](./type_defs.md#createproxysessionresponsetypedef).
+[CreateProxySessionResponseResponseTypeDef](./type_defs.md#createproxysessionresponseresponsetypedef).
 
 ### create_room
+
+Creates a chat room for the specified Amazon Chime Enterprise account.
 
 Type annotations for `boto3.client("chime").create_room` method.
 
 Boto3 documentation:
 [Chime.Client.create_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_room)
+
+Arguments mapping described in
+[CreateRoomRequestTypeDef](./type_defs.md#createroomrequesttypedef).
 
 Keyword-only arguments:
 
@@ -737,14 +888,20 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `ClientRequestToken`: `str`
 
-Returns [CreateRoomResponseTypeDef](./type_defs.md#createroomresponsetypedef).
+Returns
+[CreateRoomResponseResponseTypeDef](./type_defs.md#createroomresponseresponsetypedef).
 
 ### create_room_membership
+
+Adds a member to a chat room in an Amazon Chime Enterprise account.
 
 Type annotations for `boto3.client("chime").create_room_membership` method.
 
 Boto3 documentation:
 [Chime.Client.create_room_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_room_membership)
+
+Arguments mapping described in
+[CreateRoomMembershipRequestTypeDef](./type_defs.md#createroommembershiprequesttypedef).
 
 Keyword-only arguments:
 
@@ -754,15 +911,20 @@ Keyword-only arguments:
 - `Role`: [RoomMembershipRoleType](./literals.md#roommembershiproletype)
 
 Returns
-[CreateRoomMembershipResponseTypeDef](./type_defs.md#createroommembershipresponsetypedef).
+[CreateRoomMembershipResponseResponseTypeDef](./type_defs.md#createroommembershipresponseresponsetypedef).
 
 ### create_sip_media_application
+
+Creates a SIP media application.
 
 Type annotations for `boto3.client("chime").create_sip_media_application`
 method.
 
 Boto3 documentation:
 [Chime.Client.create_sip_media_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_sip_media_application)
+
+Arguments mapping described in
+[CreateSipMediaApplicationRequestTypeDef](./type_defs.md#createsipmediaapplicationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -773,15 +935,22 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateSipMediaApplicationResponseTypeDef](./type_defs.md#createsipmediaapplicationresponsetypedef).
+[CreateSipMediaApplicationResponseResponseTypeDef](./type_defs.md#createsipmediaapplicationresponseresponsetypedef).
 
 ### create_sip_media_application_call
+
+Creates an outbound call to a phone number from the phone number specified in
+the request, and it invokes the endpoint of the specified
+`sipMediaApplicationId` .
 
 Type annotations for `boto3.client("chime").create_sip_media_application_call`
 method.
 
 Boto3 documentation:
 [Chime.Client.create_sip_media_application_call](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_sip_media_application_call)
+
+Arguments mapping described in
+[CreateSipMediaApplicationCallRequestTypeDef](./type_defs.md#createsipmediaapplicationcallrequesttypedef).
 
 Keyword-only arguments:
 
@@ -790,14 +959,20 @@ Keyword-only arguments:
 - `SipMediaApplicationId`: `str` *(required)*
 
 Returns
-[CreateSipMediaApplicationCallResponseTypeDef](./type_defs.md#createsipmediaapplicationcallresponsetypedef).
+[CreateSipMediaApplicationCallResponseResponseTypeDef](./type_defs.md#createsipmediaapplicationcallresponseresponsetypedef).
 
 ### create_sip_rule
+
+Creates a SIP rule which can be used to run a SIP media application as a target
+for a specific trigger type.
 
 Type annotations for `boto3.client("chime").create_sip_rule` method.
 
 Boto3 documentation:
 [Chime.Client.create_sip_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_sip_rule)
+
+Arguments mapping described in
+[CreateSipRuleRequestTypeDef](./type_defs.md#createsiprulerequesttypedef).
 
 Keyword-only arguments:
 
@@ -811,14 +986,19 @@ Keyword-only arguments:
 - `Disabled`: `bool`
 
 Returns
-[CreateSipRuleResponseTypeDef](./type_defs.md#createsipruleresponsetypedef).
+[CreateSipRuleResponseResponseTypeDef](./type_defs.md#createsipruleresponseresponsetypedef).
 
 ### create_user
+
+Creates a user under the specified Amazon Chime account.
 
 Type annotations for `boto3.client("chime").create_user` method.
 
 Boto3 documentation:
 [Chime.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_user)
+
+Arguments mapping described in
+[CreateUserRequestTypeDef](./type_defs.md#createuserrequesttypedef).
 
 Keyword-only arguments:
 
@@ -827,14 +1007,20 @@ Keyword-only arguments:
 - `Email`: `str`
 - `UserType`: [UserTypeType](./literals.md#usertypetype)
 
-Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
+Returns
+[CreateUserResponseResponseTypeDef](./type_defs.md#createuserresponseresponsetypedef).
 
 ### create_voice_connector
+
+Creates an Amazon Chime Voice Connector under the administrator's AWS account.
 
 Type annotations for `boto3.client("chime").create_voice_connector` method.
 
 Boto3 documentation:
 [Chime.Client.create_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_voice_connector)
+
+Arguments mapping described in
+[CreateVoiceConnectorRequestTypeDef](./type_defs.md#createvoiceconnectorrequesttypedef).
 
 Keyword-only arguments:
 
@@ -844,15 +1030,21 @@ Keyword-only arguments:
   [VoiceConnectorAwsRegionType](./literals.md#voiceconnectorawsregiontype)
 
 Returns
-[CreateVoiceConnectorResponseTypeDef](./type_defs.md#createvoiceconnectorresponsetypedef).
+[CreateVoiceConnectorResponseResponseTypeDef](./type_defs.md#createvoiceconnectorresponseresponsetypedef).
 
 ### create_voice_connector_group
+
+Creates an Amazon Chime Voice Connector group under the administrator's AWS
+account.
 
 Type annotations for `boto3.client("chime").create_voice_connector_group`
 method.
 
 Boto3 documentation:
 [Chime.Client.create_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_voice_connector_group)
+
+Arguments mapping described in
+[CreateVoiceConnectorGroupRequestTypeDef](./type_defs.md#createvoiceconnectorgrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -861,14 +1053,19 @@ Keyword-only arguments:
   `List`\[[VoiceConnectorItemTypeDef](./type_defs.md#voiceconnectoritemtypedef)\]
 
 Returns
-[CreateVoiceConnectorGroupResponseTypeDef](./type_defs.md#createvoiceconnectorgroupresponsetypedef).
+[CreateVoiceConnectorGroupResponseResponseTypeDef](./type_defs.md#createvoiceconnectorgroupresponseresponsetypedef).
 
 ### delete_account
+
+Deletes the specified Amazon Chime account.
 
 Type annotations for `boto3.client("chime").delete_account` method.
 
 Boto3 documentation:
 [Chime.Client.delete_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_account)
+
+Arguments mapping described in
+[DeleteAccountRequestTypeDef](./type_defs.md#deleteaccountrequesttypedef).
 
 Keyword-only arguments:
 
@@ -878,10 +1075,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_app_instance
 
+Deletes an `AppInstance` and all associated data asynchronously.
+
 Type annotations for `boto3.client("chime").delete_app_instance` method.
 
 Boto3 documentation:
 [Chime.Client.delete_app_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance)
+
+Arguments mapping described in
+[DeleteAppInstanceRequestTypeDef](./type_defs.md#deleteappinstancerequesttypedef).
 
 Keyword-only arguments:
 
@@ -889,10 +1091,15 @@ Keyword-only arguments:
 
 ### delete_app_instance_admin
 
+Demotes an `AppInstanceAdmin` to an `AppInstanceUser`.
+
 Type annotations for `boto3.client("chime").delete_app_instance_admin` method.
 
 Boto3 documentation:
 [Chime.Client.delete_app_instance_admin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance_admin)
+
+Arguments mapping described in
+[DeleteAppInstanceAdminRequestTypeDef](./type_defs.md#deleteappinstanceadminrequesttypedef).
 
 Keyword-only arguments:
 
@@ -901,11 +1108,16 @@ Keyword-only arguments:
 
 ### delete_app_instance_streaming_configurations
 
+Deletes the streaming configurations of an `AppInstance` .
+
 Type annotations for
 `boto3.client("chime").delete_app_instance_streaming_configurations` method.
 
 Boto3 documentation:
 [Chime.Client.delete_app_instance_streaming_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance_streaming_configurations)
+
+Arguments mapping described in
+[DeleteAppInstanceStreamingConfigurationsRequestTypeDef](./type_defs.md#deleteappinstancestreamingconfigurationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -913,10 +1125,15 @@ Keyword-only arguments:
 
 ### delete_app_instance_user
 
+Deletes an `AppInstanceUser` .
+
 Type annotations for `boto3.client("chime").delete_app_instance_user` method.
 
 Boto3 documentation:
 [Chime.Client.delete_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance_user)
+
+Arguments mapping described in
+[DeleteAppInstanceUserRequestTypeDef](./type_defs.md#deleteappinstanceuserrequesttypedef).
 
 Keyword-only arguments:
 
@@ -924,10 +1141,16 @@ Keyword-only arguments:
 
 ### delete_attendee
 
+Deletes an attendee from the specified Amazon Chime SDK meeting and deletes
+their `JoinToken`.
+
 Type annotations for `boto3.client("chime").delete_attendee` method.
 
 Boto3 documentation:
 [Chime.Client.delete_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_attendee)
+
+Arguments mapping described in
+[DeleteAttendeeRequestTypeDef](./type_defs.md#deleteattendeerequesttypedef).
 
 Keyword-only arguments:
 
@@ -936,10 +1159,16 @@ Keyword-only arguments:
 
 ### delete_channel
 
+Immediately makes a channel and its memberships inaccessible and marks them for
+deletion.
+
 Type annotations for `boto3.client("chime").delete_channel` method.
 
 Boto3 documentation:
 [Chime.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel)
+
+Arguments mapping described in
+[DeleteChannelRequestTypeDef](./type_defs.md#deletechannelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -948,10 +1177,15 @@ Keyword-only arguments:
 
 ### delete_channel_ban
 
+Removes a user from a channel's ban list.
+
 Type annotations for `boto3.client("chime").delete_channel_ban` method.
 
 Boto3 documentation:
 [Chime.Client.delete_channel_ban](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_ban)
+
+Arguments mapping described in
+[DeleteChannelBanRequestTypeDef](./type_defs.md#deletechannelbanrequesttypedef).
 
 Keyword-only arguments:
 
@@ -961,10 +1195,15 @@ Keyword-only arguments:
 
 ### delete_channel_membership
 
+Removes a member from a channel.
+
 Type annotations for `boto3.client("chime").delete_channel_membership` method.
 
 Boto3 documentation:
 [Chime.Client.delete_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_membership)
+
+Arguments mapping described in
+[DeleteChannelMembershipRequestTypeDef](./type_defs.md#deletechannelmembershiprequesttypedef).
 
 Keyword-only arguments:
 
@@ -974,10 +1213,15 @@ Keyword-only arguments:
 
 ### delete_channel_message
 
+Deletes a channel message.
+
 Type annotations for `boto3.client("chime").delete_channel_message` method.
 
 Boto3 documentation:
 [Chime.Client.delete_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_message)
+
+Arguments mapping described in
+[DeleteChannelMessageRequestTypeDef](./type_defs.md#deletechannelmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -987,10 +1231,15 @@ Keyword-only arguments:
 
 ### delete_channel_moderator
 
+Deletes a channel moderator.
+
 Type annotations for `boto3.client("chime").delete_channel_moderator` method.
 
 Boto3 documentation:
 [Chime.Client.delete_channel_moderator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_moderator)
+
+Arguments mapping described in
+[DeleteChannelModeratorRequestTypeDef](./type_defs.md#deletechannelmoderatorrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1000,11 +1249,16 @@ Keyword-only arguments:
 
 ### delete_events_configuration
 
+Deletes the events configuration that allows a bot to receive outgoing events.
+
 Type annotations for `boto3.client("chime").delete_events_configuration`
 method.
 
 Boto3 documentation:
 [Chime.Client.delete_events_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_events_configuration)
+
+Arguments mapping described in
+[DeleteEventsConfigurationRequestTypeDef](./type_defs.md#deleteeventsconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1013,10 +1267,15 @@ Keyword-only arguments:
 
 ### delete_meeting
 
+Deletes the specified Amazon Chime SDK meeting.
+
 Type annotations for `boto3.client("chime").delete_meeting` method.
 
 Boto3 documentation:
 [Chime.Client.delete_meeting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_meeting)
+
+Arguments mapping described in
+[DeleteMeetingRequestTypeDef](./type_defs.md#deletemeetingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1024,10 +1283,15 @@ Keyword-only arguments:
 
 ### delete_phone_number
 
+Moves the specified phone number into the **Deletion queue**.
+
 Type annotations for `boto3.client("chime").delete_phone_number` method.
 
 Boto3 documentation:
 [Chime.Client.delete_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_phone_number)
+
+Arguments mapping described in
+[DeletePhoneNumberRequestTypeDef](./type_defs.md#deletephonenumberrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1035,10 +1299,16 @@ Keyword-only arguments:
 
 ### delete_proxy_session
 
+Deletes the specified proxy session from the specified Amazon Chime Voice
+Connector.
+
 Type annotations for `boto3.client("chime").delete_proxy_session` method.
 
 Boto3 documentation:
 [Chime.Client.delete_proxy_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_proxy_session)
+
+Arguments mapping described in
+[DeleteProxySessionRequestTypeDef](./type_defs.md#deleteproxysessionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1047,10 +1317,15 @@ Keyword-only arguments:
 
 ### delete_room
 
+Deletes a chat room in an Amazon Chime Enterprise account.
+
 Type annotations for `boto3.client("chime").delete_room` method.
 
 Boto3 documentation:
 [Chime.Client.delete_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_room)
+
+Arguments mapping described in
+[DeleteRoomRequestTypeDef](./type_defs.md#deleteroomrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1059,10 +1334,15 @@ Keyword-only arguments:
 
 ### delete_room_membership
 
+Removes a member from a chat room in an Amazon Chime Enterprise account.
+
 Type annotations for `boto3.client("chime").delete_room_membership` method.
 
 Boto3 documentation:
 [Chime.Client.delete_room_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_room_membership)
+
+Arguments mapping described in
+[DeleteRoomMembershipRequestTypeDef](./type_defs.md#deleteroommembershiprequesttypedef).
 
 Keyword-only arguments:
 
@@ -1072,11 +1352,16 @@ Keyword-only arguments:
 
 ### delete_sip_media_application
 
+Deletes a SIP media application.
+
 Type annotations for `boto3.client("chime").delete_sip_media_application`
 method.
 
 Boto3 documentation:
 [Chime.Client.delete_sip_media_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_sip_media_application)
+
+Arguments mapping described in
+[DeleteSipMediaApplicationRequestTypeDef](./type_defs.md#deletesipmediaapplicationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1084,10 +1369,15 @@ Keyword-only arguments:
 
 ### delete_sip_rule
 
+Deletes a SIP rule.
+
 Type annotations for `boto3.client("chime").delete_sip_rule` method.
 
 Boto3 documentation:
 [Chime.Client.delete_sip_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_sip_rule)
+
+Arguments mapping described in
+[DeleteSipRuleRequestTypeDef](./type_defs.md#deletesiprulerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1095,16 +1385,24 @@ Keyword-only arguments:
 
 ### delete_voice_connector
 
+Deletes the specified Amazon Chime Voice Connector.
+
 Type annotations for `boto3.client("chime").delete_voice_connector` method.
 
 Boto3 documentation:
 [Chime.Client.delete_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector)
+
+Arguments mapping described in
+[DeleteVoiceConnectorRequestTypeDef](./type_defs.md#deletevoiceconnectorrequesttypedef).
 
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 
 ### delete_voice_connector_emergency_calling_configuration
+
+Deletes the emergency calling configuration details from the specified Amazon
+Chime Voice Connector.
 
 Type annotations for
 `boto3.client("chime").delete_voice_connector_emergency_calling_configuration`
@@ -1113,11 +1411,16 @@ method.
 Boto3 documentation:
 [Chime.Client.delete_voice_connector_emergency_calling_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_emergency_calling_configuration)
 
+Arguments mapping described in
+[DeleteVoiceConnectorEmergencyCallingConfigurationRequestTypeDef](./type_defs.md#deletevoiceconnectoremergencycallingconfigurationrequesttypedef).
+
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 
 ### delete_voice_connector_group
+
+Deletes the specified Amazon Chime Voice Connector group.
 
 Type annotations for `boto3.client("chime").delete_voice_connector_group`
 method.
@@ -1125,11 +1428,17 @@ method.
 Boto3 documentation:
 [Chime.Client.delete_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_group)
 
+Arguments mapping described in
+[DeleteVoiceConnectorGroupRequestTypeDef](./type_defs.md#deletevoiceconnectorgrouprequesttypedef).
+
 Keyword-only arguments:
 
 - `VoiceConnectorGroupId`: `str` *(required)*
 
 ### delete_voice_connector_origination
+
+Deletes the origination settings for the specified Amazon Chime Voice
+Connector.
 
 Type annotations for `boto3.client("chime").delete_voice_connector_origination`
 method.
@@ -1137,11 +1446,17 @@ method.
 Boto3 documentation:
 [Chime.Client.delete_voice_connector_origination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_origination)
 
+Arguments mapping described in
+[DeleteVoiceConnectorOriginationRequestTypeDef](./type_defs.md#deletevoiceconnectororiginationrequesttypedef).
+
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 
 ### delete_voice_connector_proxy
+
+Deletes the proxy configuration from the specified Amazon Chime Voice
+Connector.
 
 Type annotations for `boto3.client("chime").delete_voice_connector_proxy`
 method.
@@ -1149,11 +1464,17 @@ method.
 Boto3 documentation:
 [Chime.Client.delete_voice_connector_proxy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_proxy)
 
+Arguments mapping described in
+[DeleteVoiceConnectorProxyRequestTypeDef](./type_defs.md#deletevoiceconnectorproxyrequesttypedef).
+
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 
 ### delete_voice_connector_streaming_configuration
+
+Deletes the streaming configuration for the specified Amazon Chime Voice
+Connector.
 
 Type annotations for
 `boto3.client("chime").delete_voice_connector_streaming_configuration` method.
@@ -1161,11 +1482,17 @@ Type annotations for
 Boto3 documentation:
 [Chime.Client.delete_voice_connector_streaming_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_streaming_configuration)
 
+Arguments mapping described in
+[DeleteVoiceConnectorStreamingConfigurationRequestTypeDef](./type_defs.md#deletevoiceconnectorstreamingconfigurationrequesttypedef).
+
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 
 ### delete_voice_connector_termination
+
+Deletes the termination settings for the specified Amazon Chime Voice
+Connector.
 
 Type annotations for `boto3.client("chime").delete_voice_connector_termination`
 method.
@@ -1173,17 +1500,26 @@ method.
 Boto3 documentation:
 [Chime.Client.delete_voice_connector_termination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_termination)
 
+Arguments mapping described in
+[DeleteVoiceConnectorTerminationRequestTypeDef](./type_defs.md#deletevoiceconnectorterminationrequesttypedef).
+
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 
 ### delete_voice_connector_termination_credentials
 
+Deletes the specified SIP credentials used by your equipment to authenticate
+during call termination.
+
 Type annotations for
 `boto3.client("chime").delete_voice_connector_termination_credentials` method.
 
 Boto3 documentation:
 [Chime.Client.delete_voice_connector_termination_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_termination_credentials)
+
+Arguments mapping described in
+[DeleteVoiceConnectorTerminationCredentialsRequestTypeDef](./type_defs.md#deletevoiceconnectorterminationcredentialsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1192,19 +1528,26 @@ Keyword-only arguments:
 
 ### describe_app_instance
 
+Returns the full details of an `AppInstance` .
+
 Type annotations for `boto3.client("chime").describe_app_instance` method.
 
 Boto3 documentation:
 [Chime.Client.describe_app_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_app_instance)
+
+Arguments mapping described in
+[DescribeAppInstanceRequestTypeDef](./type_defs.md#describeappinstancerequesttypedef).
 
 Keyword-only arguments:
 
 - `AppInstanceArn`: `str` *(required)*
 
 Returns
-[DescribeAppInstanceResponseTypeDef](./type_defs.md#describeappinstanceresponsetypedef).
+[DescribeAppInstanceResponseResponseTypeDef](./type_defs.md#describeappinstanceresponseresponsetypedef).
 
 ### describe_app_instance_admin
+
+Returns the full details of an `AppInstanceAdmin` .
 
 Type annotations for `boto3.client("chime").describe_app_instance_admin`
 method.
@@ -1212,34 +1555,47 @@ method.
 Boto3 documentation:
 [Chime.Client.describe_app_instance_admin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_app_instance_admin)
 
+Arguments mapping described in
+[DescribeAppInstanceAdminRequestTypeDef](./type_defs.md#describeappinstanceadminrequesttypedef).
+
 Keyword-only arguments:
 
 - `AppInstanceAdminArn`: `str` *(required)*
 - `AppInstanceArn`: `str` *(required)*
 
 Returns
-[DescribeAppInstanceAdminResponseTypeDef](./type_defs.md#describeappinstanceadminresponsetypedef).
+[DescribeAppInstanceAdminResponseResponseTypeDef](./type_defs.md#describeappinstanceadminresponseresponsetypedef).
 
 ### describe_app_instance_user
+
+Returns the full details of an `AppInstanceUser` .
 
 Type annotations for `boto3.client("chime").describe_app_instance_user` method.
 
 Boto3 documentation:
 [Chime.Client.describe_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_app_instance_user)
 
+Arguments mapping described in
+[DescribeAppInstanceUserRequestTypeDef](./type_defs.md#describeappinstanceuserrequesttypedef).
+
 Keyword-only arguments:
 
 - `AppInstanceUserArn`: `str` *(required)*
 
 Returns
-[DescribeAppInstanceUserResponseTypeDef](./type_defs.md#describeappinstanceuserresponsetypedef).
+[DescribeAppInstanceUserResponseResponseTypeDef](./type_defs.md#describeappinstanceuserresponseresponsetypedef).
 
 ### describe_channel
+
+Returns the full details of a channel in an Amazon Chime `AppInstance` .
 
 Type annotations for `boto3.client("chime").describe_channel` method.
 
 Boto3 documentation:
 [Chime.Client.describe_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel)
+
+Arguments mapping described in
+[DescribeChannelRequestTypeDef](./type_defs.md#describechannelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1247,14 +1603,19 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef).
+[DescribeChannelResponseResponseTypeDef](./type_defs.md#describechannelresponseresponsetypedef).
 
 ### describe_channel_ban
+
+Returns the full details of a channel ban.
 
 Type annotations for `boto3.client("chime").describe_channel_ban` method.
 
 Boto3 documentation:
 [Chime.Client.describe_channel_ban](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_ban)
+
+Arguments mapping described in
+[DescribeChannelBanRequestTypeDef](./type_defs.md#describechannelbanrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1263,9 +1624,11 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[DescribeChannelBanResponseTypeDef](./type_defs.md#describechannelbanresponsetypedef).
+[DescribeChannelBanResponseResponseTypeDef](./type_defs.md#describechannelbanresponseresponsetypedef).
 
 ### describe_channel_membership
+
+Returns the full details of a user's channel membership.
 
 Type annotations for `boto3.client("chime").describe_channel_membership`
 method.
@@ -1273,6 +1636,9 @@ method.
 Boto3 documentation:
 [Chime.Client.describe_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_membership)
 
+Arguments mapping described in
+[DescribeChannelMembershipRequestTypeDef](./type_defs.md#describechannelmembershiprequesttypedef).
+
 Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
@@ -1280,9 +1646,12 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[DescribeChannelMembershipResponseTypeDef](./type_defs.md#describechannelmembershipresponsetypedef).
+[DescribeChannelMembershipResponseResponseTypeDef](./type_defs.md#describechannelmembershipresponseresponsetypedef).
 
 ### describe_channel_membership_for_app_instance_user
+
+Returns the details of a channel based on the membership of the specified
+`AppInstanceUser` .
 
 Type annotations for
 `boto3.client("chime").describe_channel_membership_for_app_instance_user`
@@ -1291,6 +1660,9 @@ method.
 Boto3 documentation:
 [Chime.Client.describe_channel_membership_for_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_membership_for_app_instance_user)
 
+Arguments mapping described in
+[DescribeChannelMembershipForAppInstanceUserRequestTypeDef](./type_defs.md#describechannelmembershipforappinstanceuserrequesttypedef).
+
 Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
@@ -1298,9 +1670,12 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[DescribeChannelMembershipForAppInstanceUserResponseTypeDef](./type_defs.md#describechannelmembershipforappinstanceuserresponsetypedef).
+[DescribeChannelMembershipForAppInstanceUserResponseResponseTypeDef](./type_defs.md#describechannelmembershipforappinstanceuserresponseresponsetypedef).
 
 ### describe_channel_moderated_by_app_instance_user
+
+Returns the full details of a channel moderated by the specified
+`AppInstanceUser` .
 
 Type annotations for
 `boto3.client("chime").describe_channel_moderated_by_app_instance_user` method.
@@ -1308,6 +1683,9 @@ Type annotations for
 Boto3 documentation:
 [Chime.Client.describe_channel_moderated_by_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_moderated_by_app_instance_user)
 
+Arguments mapping described in
+[DescribeChannelModeratedByAppInstanceUserRequestTypeDef](./type_defs.md#describechannelmoderatedbyappinstanceuserrequesttypedef).
+
 Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
@@ -1315,14 +1693,19 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[DescribeChannelModeratedByAppInstanceUserResponseTypeDef](./type_defs.md#describechannelmoderatedbyappinstanceuserresponsetypedef).
+[DescribeChannelModeratedByAppInstanceUserResponseResponseTypeDef](./type_defs.md#describechannelmoderatedbyappinstanceuserresponseresponsetypedef).
 
 ### describe_channel_moderator
+
+Returns the full details of a single ChannelModerator.
 
 Type annotations for `boto3.client("chime").describe_channel_moderator` method.
 
 Boto3 documentation:
 [Chime.Client.describe_channel_moderator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_moderator)
+
+Arguments mapping described in
+[DescribeChannelModeratorRequestTypeDef](./type_defs.md#describechannelmoderatorrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1331,15 +1714,21 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[DescribeChannelModeratorResponseTypeDef](./type_defs.md#describechannelmoderatorresponsetypedef).
+[DescribeChannelModeratorResponseResponseTypeDef](./type_defs.md#describechannelmoderatorresponseresponsetypedef).
 
 ### disassociate_phone_number_from_user
+
+Disassociates the primary provisioned phone number from the specified Amazon
+Chime user.
 
 Type annotations for
 `boto3.client("chime").disassociate_phone_number_from_user` method.
 
 Boto3 documentation:
 [Chime.Client.disassociate_phone_number_from_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_phone_number_from_user)
+
+Arguments mapping described in
+[DisassociatePhoneNumberFromUserRequestTypeDef](./type_defs.md#disassociatephonenumberfromuserrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1350,11 +1739,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_phone_numbers_from_voice_connector
 
+Disassociates the specified phone numbers from the specified Amazon Chime Voice
+Connector.
+
 Type annotations for
 `boto3.client("chime").disassociate_phone_numbers_from_voice_connector` method.
 
 Boto3 documentation:
 [Chime.Client.disassociate_phone_numbers_from_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_phone_numbers_from_voice_connector)
+
+Arguments mapping described in
+[DisassociatePhoneNumbersFromVoiceConnectorRequestTypeDef](./type_defs.md#disassociatephonenumbersfromvoiceconnectorrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1362,9 +1757,12 @@ Keyword-only arguments:
 - `E164PhoneNumbers`: `List`\[`str`\] *(required)*
 
 Returns
-[DisassociatePhoneNumbersFromVoiceConnectorResponseTypeDef](./type_defs.md#disassociatephonenumbersfromvoiceconnectorresponsetypedef).
+[DisassociatePhoneNumbersFromVoiceConnectorResponseResponseTypeDef](./type_defs.md#disassociatephonenumbersfromvoiceconnectorresponseresponsetypedef).
 
 ### disassociate_phone_numbers_from_voice_connector_group
+
+Disassociates the specified phone numbers from the specified Amazon Chime Voice
+Connector group.
 
 Type annotations for
 `boto3.client("chime").disassociate_phone_numbers_from_voice_connector_group`
@@ -1373,15 +1771,21 @@ method.
 Boto3 documentation:
 [Chime.Client.disassociate_phone_numbers_from_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_phone_numbers_from_voice_connector_group)
 
+Arguments mapping described in
+[DisassociatePhoneNumbersFromVoiceConnectorGroupRequestTypeDef](./type_defs.md#disassociatephonenumbersfromvoiceconnectorgrouprequesttypedef).
+
 Keyword-only arguments:
 
 - `VoiceConnectorGroupId`: `str` *(required)*
 - `E164PhoneNumbers`: `List`\[`str`\] *(required)*
 
 Returns
-[DisassociatePhoneNumbersFromVoiceConnectorGroupResponseTypeDef](./type_defs.md#disassociatephonenumbersfromvoiceconnectorgroupresponsetypedef).
+[DisassociatePhoneNumbersFromVoiceConnectorGroupResponseResponseTypeDef](./type_defs.md#disassociatephonenumbersfromvoiceconnectorgroupresponseresponsetypedef).
 
 ### disassociate_signin_delegate_groups_from_account
+
+Disassociates the specified sign-in delegate groups from the specified Amazon
+Chime account.
 
 Type annotations for
 `boto3.client("chime").disassociate_signin_delegate_groups_from_account`
@@ -1389,6 +1793,9 @@ method.
 
 Boto3 documentation:
 [Chime.Client.disassociate_signin_delegate_groups_from_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_signin_delegate_groups_from_account)
+
+Arguments mapping described in
+[DisassociateSigninDelegateGroupsFromAccountRequestTypeDef](./type_defs.md#disassociatesignindelegategroupsfromaccountrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1398,6 +1805,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("chime").generate_presigned_url` method.
 
@@ -1415,32 +1824,47 @@ Returns `str`.
 
 ### get_account
 
+Retrieves details for the specified Amazon Chime account, such as account type
+and supported licenses.
+
 Type annotations for `boto3.client("chime").get_account` method.
 
 Boto3 documentation:
 [Chime.Client.get_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_account)
 
-Keyword-only arguments:
-
-- `AccountId`: `str` *(required)*
-
-Returns [GetAccountResponseTypeDef](./type_defs.md#getaccountresponsetypedef).
-
-### get_account_settings
-
-Type annotations for `boto3.client("chime").get_account_settings` method.
-
-Boto3 documentation:
-[Chime.Client.get_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_account_settings)
+Arguments mapping described in
+[GetAccountRequestTypeDef](./type_defs.md#getaccountrequesttypedef).
 
 Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 
 Returns
-[GetAccountSettingsResponseTypeDef](./type_defs.md#getaccountsettingsresponsetypedef).
+[GetAccountResponseResponseTypeDef](./type_defs.md#getaccountresponseresponsetypedef).
+
+### get_account_settings
+
+Retrieves account settings for the specified Amazon Chime account ID, such as
+remote control and dialout settings.
+
+Type annotations for `boto3.client("chime").get_account_settings` method.
+
+Boto3 documentation:
+[Chime.Client.get_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_account_settings)
+
+Arguments mapping described in
+[GetAccountSettingsRequestTypeDef](./type_defs.md#getaccountsettingsrequesttypedef).
+
+Keyword-only arguments:
+
+- `AccountId`: `str` *(required)*
+
+Returns
+[GetAccountSettingsResponseResponseTypeDef](./type_defs.md#getaccountsettingsresponseresponsetypedef).
 
 ### get_app_instance_retention_settings
+
+Gets the retention settings for an `AppInstance` .
 
 Type annotations for
 `boto3.client("chime").get_app_instance_retention_settings` method.
@@ -1448,14 +1872,19 @@ Type annotations for
 Boto3 documentation:
 [Chime.Client.get_app_instance_retention_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_app_instance_retention_settings)
 
+Arguments mapping described in
+[GetAppInstanceRetentionSettingsRequestTypeDef](./type_defs.md#getappinstanceretentionsettingsrequesttypedef).
+
 Keyword-only arguments:
 
 - `AppInstanceArn`: `str` *(required)*
 
 Returns
-[GetAppInstanceRetentionSettingsResponseTypeDef](./type_defs.md#getappinstanceretentionsettingsresponsetypedef).
+[GetAppInstanceRetentionSettingsResponseResponseTypeDef](./type_defs.md#getappinstanceretentionsettingsresponseresponsetypedef).
 
 ### get_app_instance_streaming_configurations
+
+Gets the streaming settings for an `AppInstance` .
 
 Type annotations for
 `boto3.client("chime").get_app_instance_streaming_configurations` method.
@@ -1463,19 +1892,28 @@ Type annotations for
 Boto3 documentation:
 [Chime.Client.get_app_instance_streaming_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_app_instance_streaming_configurations)
 
+Arguments mapping described in
+[GetAppInstanceStreamingConfigurationsRequestTypeDef](./type_defs.md#getappinstancestreamingconfigurationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `AppInstanceArn`: `str` *(required)*
 
 Returns
-[GetAppInstanceStreamingConfigurationsResponseTypeDef](./type_defs.md#getappinstancestreamingconfigurationsresponsetypedef).
+[GetAppInstanceStreamingConfigurationsResponseResponseTypeDef](./type_defs.md#getappinstancestreamingconfigurationsresponseresponsetypedef).
 
 ### get_attendee
+
+Gets the Amazon Chime SDK attendee details for a specified meeting ID and
+attendee ID.
 
 Type annotations for `boto3.client("chime").get_attendee` method.
 
 Boto3 documentation:
 [Chime.Client.get_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_attendee)
+
+Arguments mapping described in
+[GetAttendeeRequestTypeDef](./type_defs.md#getattendeerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1483,28 +1921,40 @@ Keyword-only arguments:
 - `AttendeeId`: `str` *(required)*
 
 Returns
-[GetAttendeeResponseTypeDef](./type_defs.md#getattendeeresponsetypedef).
+[GetAttendeeResponseResponseTypeDef](./type_defs.md#getattendeeresponseresponsetypedef).
 
 ### get_bot
+
+Retrieves details for the specified bot, such as bot email address, bot type,
+status, and display name.
 
 Type annotations for `boto3.client("chime").get_bot` method.
 
 Boto3 documentation:
 [Chime.Client.get_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_bot)
 
+Arguments mapping described in
+[GetBotRequestTypeDef](./type_defs.md#getbotrequesttypedef).
+
 Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `BotId`: `str` *(required)*
 
-Returns [GetBotResponseTypeDef](./type_defs.md#getbotresponsetypedef).
+Returns
+[GetBotResponseResponseTypeDef](./type_defs.md#getbotresponseresponsetypedef).
 
 ### get_channel_message
+
+Gets the full details of a channel message.
 
 Type annotations for `boto3.client("chime").get_channel_message` method.
 
 Boto3 documentation:
 [Chime.Client.get_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_channel_message)
+
+Arguments mapping described in
+[GetChannelMessageRequestTypeDef](./type_defs.md#getchannelmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1513,14 +1963,20 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[GetChannelMessageResponseTypeDef](./type_defs.md#getchannelmessageresponsetypedef).
+[GetChannelMessageResponseResponseTypeDef](./type_defs.md#getchannelmessageresponseresponsetypedef).
 
 ### get_events_configuration
+
+Gets details for an events configuration that allows a bot to receive outgoing
+events, such as an HTTPS endpoint or Lambda function ARN.
 
 Type annotations for `boto3.client("chime").get_events_configuration` method.
 
 Boto3 documentation:
 [Chime.Client.get_events_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_events_configuration)
+
+Arguments mapping described in
+[GetEventsConfigurationRequestTypeDef](./type_defs.md#geteventsconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1528,9 +1984,12 @@ Keyword-only arguments:
 - `BotId`: `str` *(required)*
 
 Returns
-[GetEventsConfigurationResponseTypeDef](./type_defs.md#geteventsconfigurationresponsetypedef).
+[GetEventsConfigurationResponseResponseTypeDef](./type_defs.md#geteventsconfigurationresponseresponsetypedef).
 
 ### get_global_settings
+
+Retrieves global settings for the administrator's AWS account, such as Amazon
+Chime Business Calling and Amazon Chime Voice Connector settings.
 
 Type annotations for `boto3.client("chime").get_global_settings` method.
 
@@ -1538,22 +1997,30 @@ Boto3 documentation:
 [Chime.Client.get_global_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_global_settings)
 
 Returns
-[GetGlobalSettingsResponseTypeDef](./type_defs.md#getglobalsettingsresponsetypedef).
+[GetGlobalSettingsResponseResponseTypeDef](./type_defs.md#getglobalsettingsresponseresponsetypedef).
 
 ### get_meeting
+
+Gets the Amazon Chime SDK meeting details for the specified meeting ID.
 
 Type annotations for `boto3.client("chime").get_meeting` method.
 
 Boto3 documentation:
 [Chime.Client.get_meeting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_meeting)
 
+Arguments mapping described in
+[GetMeetingRequestTypeDef](./type_defs.md#getmeetingrequesttypedef).
+
 Keyword-only arguments:
 
 - `MeetingId`: `str` *(required)*
 
-Returns [GetMeetingResponseTypeDef](./type_defs.md#getmeetingresponsetypedef).
+Returns
+[GetMeetingResponseResponseTypeDef](./type_defs.md#getmeetingresponseresponsetypedef).
 
 ### get_messaging_session_endpoint
+
+The details of the endpoint for the messaging session.
 
 Type annotations for `boto3.client("chime").get_messaging_session_endpoint`
 method.
@@ -1562,37 +2029,53 @@ Boto3 documentation:
 [Chime.Client.get_messaging_session_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_messaging_session_endpoint)
 
 Returns
-[GetMessagingSessionEndpointResponseTypeDef](./type_defs.md#getmessagingsessionendpointresponsetypedef).
+[GetMessagingSessionEndpointResponseResponseTypeDef](./type_defs.md#getmessagingsessionendpointresponseresponsetypedef).
 
 ### get_phone_number
+
+Retrieves details for the specified phone number ID, such as associations,
+capabilities, and product type.
 
 Type annotations for `boto3.client("chime").get_phone_number` method.
 
 Boto3 documentation:
 [Chime.Client.get_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_phone_number)
 
+Arguments mapping described in
+[GetPhoneNumberRequestTypeDef](./type_defs.md#getphonenumberrequesttypedef).
+
 Keyword-only arguments:
 
 - `PhoneNumberId`: `str` *(required)*
 
 Returns
-[GetPhoneNumberResponseTypeDef](./type_defs.md#getphonenumberresponsetypedef).
+[GetPhoneNumberResponseResponseTypeDef](./type_defs.md#getphonenumberresponseresponsetypedef).
 
 ### get_phone_number_order
+
+Retrieves details for the specified phone number order, such as the order
+creation timestamp, phone numbers in E.164 format, product type, and order
+status.
 
 Type annotations for `boto3.client("chime").get_phone_number_order` method.
 
 Boto3 documentation:
 [Chime.Client.get_phone_number_order](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_phone_number_order)
 
+Arguments mapping described in
+[GetPhoneNumberOrderRequestTypeDef](./type_defs.md#getphonenumberorderrequesttypedef).
+
 Keyword-only arguments:
 
 - `PhoneNumberOrderId`: `str` *(required)*
 
 Returns
-[GetPhoneNumberOrderResponseTypeDef](./type_defs.md#getphonenumberorderresponsetypedef).
+[GetPhoneNumberOrderResponseResponseTypeDef](./type_defs.md#getphonenumberorderresponseresponsetypedef).
 
 ### get_phone_number_settings
+
+Retrieves the phone number settings for the administrator's AWS account, such
+as the default outbound calling name.
 
 Type annotations for `boto3.client("chime").get_phone_number_settings` method.
 
@@ -1600,14 +2083,20 @@ Boto3 documentation:
 [Chime.Client.get_phone_number_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_phone_number_settings)
 
 Returns
-[GetPhoneNumberSettingsResponseTypeDef](./type_defs.md#getphonenumbersettingsresponsetypedef).
+[GetPhoneNumberSettingsResponseResponseTypeDef](./type_defs.md#getphonenumbersettingsresponseresponsetypedef).
 
 ### get_proxy_session
+
+Gets the specified proxy session details for the specified Amazon Chime Voice
+Connector.
 
 Type annotations for `boto3.client("chime").get_proxy_session` method.
 
 Boto3 documentation:
 [Chime.Client.get_proxy_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_proxy_session)
+
+Arguments mapping described in
+[GetProxySessionRequestTypeDef](./type_defs.md#getproxysessionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1615,51 +2104,71 @@ Keyword-only arguments:
 - `ProxySessionId`: `str` *(required)*
 
 Returns
-[GetProxySessionResponseTypeDef](./type_defs.md#getproxysessionresponsetypedef).
+[GetProxySessionResponseResponseTypeDef](./type_defs.md#getproxysessionresponseresponsetypedef).
 
 ### get_retention_settings
+
+Gets the retention settings for the specified Amazon Chime Enterprise account.
 
 Type annotations for `boto3.client("chime").get_retention_settings` method.
 
 Boto3 documentation:
 [Chime.Client.get_retention_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_retention_settings)
 
+Arguments mapping described in
+[GetRetentionSettingsRequestTypeDef](./type_defs.md#getretentionsettingsrequesttypedef).
+
 Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 
 Returns
-[GetRetentionSettingsResponseTypeDef](./type_defs.md#getretentionsettingsresponsetypedef).
+[GetRetentionSettingsResponseResponseTypeDef](./type_defs.md#getretentionsettingsresponseresponsetypedef).
 
 ### get_room
+
+Retrieves room details, such as the room name, for a room in an Amazon Chime
+Enterprise account.
 
 Type annotations for `boto3.client("chime").get_room` method.
 
 Boto3 documentation:
 [Chime.Client.get_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_room)
 
+Arguments mapping described in
+[GetRoomRequestTypeDef](./type_defs.md#getroomrequesttypedef).
+
 Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `RoomId`: `str` *(required)*
 
-Returns [GetRoomResponseTypeDef](./type_defs.md#getroomresponsetypedef).
+Returns
+[GetRoomResponseResponseTypeDef](./type_defs.md#getroomresponseresponsetypedef).
 
 ### get_sip_media_application
+
+Retrieves the information for a SIP media application, including name, AWS
+Region, and endpoints.
 
 Type annotations for `boto3.client("chime").get_sip_media_application` method.
 
 Boto3 documentation:
 [Chime.Client.get_sip_media_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_sip_media_application)
 
+Arguments mapping described in
+[GetSipMediaApplicationRequestTypeDef](./type_defs.md#getsipmediaapplicationrequesttypedef).
+
 Keyword-only arguments:
 
 - `SipMediaApplicationId`: `str` *(required)*
 
 Returns
-[GetSipMediaApplicationResponseTypeDef](./type_defs.md#getsipmediaapplicationresponsetypedef).
+[GetSipMediaApplicationResponseResponseTypeDef](./type_defs.md#getsipmediaapplicationresponseresponsetypedef).
 
 ### get_sip_media_application_logging_configuration
+
+Returns the logging configuration for the specified SIP media application.
 
 Type annotations for
 `boto3.client("chime").get_sip_media_application_logging_configuration` method.
@@ -1667,70 +2176,102 @@ Type annotations for
 Boto3 documentation:
 [Chime.Client.get_sip_media_application_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_sip_media_application_logging_configuration)
 
+Arguments mapping described in
+[GetSipMediaApplicationLoggingConfigurationRequestTypeDef](./type_defs.md#getsipmediaapplicationloggingconfigurationrequesttypedef).
+
 Keyword-only arguments:
 
 - `SipMediaApplicationId`: `str` *(required)*
 
 Returns
-[GetSipMediaApplicationLoggingConfigurationResponseTypeDef](./type_defs.md#getsipmediaapplicationloggingconfigurationresponsetypedef).
+[GetSipMediaApplicationLoggingConfigurationResponseResponseTypeDef](./type_defs.md#getsipmediaapplicationloggingconfigurationresponseresponsetypedef).
 
 ### get_sip_rule
+
+Retrieves the details of a SIP rule, such as the rule ID, name, triggers, and
+target endpoints.
 
 Type annotations for `boto3.client("chime").get_sip_rule` method.
 
 Boto3 documentation:
 [Chime.Client.get_sip_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_sip_rule)
 
+Arguments mapping described in
+[GetSipRuleRequestTypeDef](./type_defs.md#getsiprulerequesttypedef).
+
 Keyword-only arguments:
 
 - `SipRuleId`: `str` *(required)*
 
-Returns [GetSipRuleResponseTypeDef](./type_defs.md#getsipruleresponsetypedef).
+Returns
+[GetSipRuleResponseResponseTypeDef](./type_defs.md#getsipruleresponseresponsetypedef).
 
 ### get_user
+
+Retrieves details for the specified user ID, such as primary email address,
+license type,and personal meeting PIN.
 
 Type annotations for `boto3.client("chime").get_user` method.
 
 Boto3 documentation:
 [Chime.Client.get_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_user)
 
+Arguments mapping described in
+[GetUserRequestTypeDef](./type_defs.md#getuserrequesttypedef).
+
 Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `UserId`: `str` *(required)*
 
-Returns [GetUserResponseTypeDef](./type_defs.md#getuserresponsetypedef).
+Returns
+[GetUserResponseResponseTypeDef](./type_defs.md#getuserresponseresponsetypedef).
 
 ### get_user_settings
+
+Retrieves settings for the specified user ID, such as any associated phone
+number settings.
 
 Type annotations for `boto3.client("chime").get_user_settings` method.
 
 Boto3 documentation:
 [Chime.Client.get_user_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_user_settings)
 
+Arguments mapping described in
+[GetUserSettingsRequestTypeDef](./type_defs.md#getusersettingsrequesttypedef).
+
 Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `UserId`: `str` *(required)*
 
 Returns
-[GetUserSettingsResponseTypeDef](./type_defs.md#getusersettingsresponsetypedef).
+[GetUserSettingsResponseResponseTypeDef](./type_defs.md#getusersettingsresponseresponsetypedef).
 
 ### get_voice_connector
+
+Retrieves details for the specified Amazon Chime Voice Connector, such as
+timestamps,name, outbound host, and encryption requirements.
 
 Type annotations for `boto3.client("chime").get_voice_connector` method.
 
 Boto3 documentation:
 [Chime.Client.get_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector)
 
+Arguments mapping described in
+[GetVoiceConnectorRequestTypeDef](./type_defs.md#getvoiceconnectorrequesttypedef).
+
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 
 Returns
-[GetVoiceConnectorResponseTypeDef](./type_defs.md#getvoiceconnectorresponsetypedef).
+[GetVoiceConnectorResponseResponseTypeDef](./type_defs.md#getvoiceconnectorresponseresponsetypedef).
 
 ### get_voice_connector_emergency_calling_configuration
+
+Gets the emergency calling configuration details for the specified Amazon Chime
+Voice Connector.
 
 Type annotations for
 `boto3.client("chime").get_voice_connector_emergency_calling_configuration`
@@ -1739,28 +2280,40 @@ method.
 Boto3 documentation:
 [Chime.Client.get_voice_connector_emergency_calling_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_emergency_calling_configuration)
 
+Arguments mapping described in
+[GetVoiceConnectorEmergencyCallingConfigurationRequestTypeDef](./type_defs.md#getvoiceconnectoremergencycallingconfigurationrequesttypedef).
+
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 
 Returns
-[GetVoiceConnectorEmergencyCallingConfigurationResponseTypeDef](./type_defs.md#getvoiceconnectoremergencycallingconfigurationresponsetypedef).
+[GetVoiceConnectorEmergencyCallingConfigurationResponseResponseTypeDef](./type_defs.md#getvoiceconnectoremergencycallingconfigurationresponseresponsetypedef).
 
 ### get_voice_connector_group
+
+Retrieves details for the specified Amazon Chime Voice Connector group, such as
+timestamps,name, and associated `VoiceConnectorItems` .
 
 Type annotations for `boto3.client("chime").get_voice_connector_group` method.
 
 Boto3 documentation:
 [Chime.Client.get_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_group)
 
+Arguments mapping described in
+[GetVoiceConnectorGroupRequestTypeDef](./type_defs.md#getvoiceconnectorgrouprequesttypedef).
+
 Keyword-only arguments:
 
 - `VoiceConnectorGroupId`: `str` *(required)*
 
 Returns
-[GetVoiceConnectorGroupResponseTypeDef](./type_defs.md#getvoiceconnectorgroupresponsetypedef).
+[GetVoiceConnectorGroupResponseResponseTypeDef](./type_defs.md#getvoiceconnectorgroupresponseresponsetypedef).
 
 ### get_voice_connector_logging_configuration
+
+Retrieves the logging configuration details for the specified Amazon Chime
+Voice Connector.
 
 Type annotations for
 `boto3.client("chime").get_voice_connector_logging_configuration` method.
@@ -1768,14 +2321,20 @@ Type annotations for
 Boto3 documentation:
 [Chime.Client.get_voice_connector_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_logging_configuration)
 
+Arguments mapping described in
+[GetVoiceConnectorLoggingConfigurationRequestTypeDef](./type_defs.md#getvoiceconnectorloggingconfigurationrequesttypedef).
+
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 
 Returns
-[GetVoiceConnectorLoggingConfigurationResponseTypeDef](./type_defs.md#getvoiceconnectorloggingconfigurationresponsetypedef).
+[GetVoiceConnectorLoggingConfigurationResponseResponseTypeDef](./type_defs.md#getvoiceconnectorloggingconfigurationresponseresponsetypedef).
 
 ### get_voice_connector_origination
+
+Retrieves origination setting details for the specified Amazon Chime Voice
+Connector.
 
 Type annotations for `boto3.client("chime").get_voice_connector_origination`
 method.
@@ -1783,28 +2342,40 @@ method.
 Boto3 documentation:
 [Chime.Client.get_voice_connector_origination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_origination)
 
+Arguments mapping described in
+[GetVoiceConnectorOriginationRequestTypeDef](./type_defs.md#getvoiceconnectororiginationrequesttypedef).
+
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 
 Returns
-[GetVoiceConnectorOriginationResponseTypeDef](./type_defs.md#getvoiceconnectororiginationresponsetypedef).
+[GetVoiceConnectorOriginationResponseResponseTypeDef](./type_defs.md#getvoiceconnectororiginationresponseresponsetypedef).
 
 ### get_voice_connector_proxy
+
+Gets the proxy configuration details for the specified Amazon Chime Voice
+Connector.
 
 Type annotations for `boto3.client("chime").get_voice_connector_proxy` method.
 
 Boto3 documentation:
 [Chime.Client.get_voice_connector_proxy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_proxy)
 
+Arguments mapping described in
+[GetVoiceConnectorProxyRequestTypeDef](./type_defs.md#getvoiceconnectorproxyrequesttypedef).
+
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 
 Returns
-[GetVoiceConnectorProxyResponseTypeDef](./type_defs.md#getvoiceconnectorproxyresponsetypedef).
+[GetVoiceConnectorProxyResponseResponseTypeDef](./type_defs.md#getvoiceconnectorproxyresponseresponsetypedef).
 
 ### get_voice_connector_streaming_configuration
+
+Retrieves the streaming configuration details for the specified Amazon Chime
+Voice Connector.
 
 Type annotations for
 `boto3.client("chime").get_voice_connector_streaming_configuration` method.
@@ -1812,14 +2383,20 @@ Type annotations for
 Boto3 documentation:
 [Chime.Client.get_voice_connector_streaming_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_streaming_configuration)
 
+Arguments mapping described in
+[GetVoiceConnectorStreamingConfigurationRequestTypeDef](./type_defs.md#getvoiceconnectorstreamingconfigurationrequesttypedef).
+
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 
 Returns
-[GetVoiceConnectorStreamingConfigurationResponseTypeDef](./type_defs.md#getvoiceconnectorstreamingconfigurationresponsetypedef).
+[GetVoiceConnectorStreamingConfigurationResponseResponseTypeDef](./type_defs.md#getvoiceconnectorstreamingconfigurationresponseresponsetypedef).
 
 ### get_voice_connector_termination
+
+Retrieves termination setting details for the specified Amazon Chime Voice
+Connector.
 
 Type annotations for `boto3.client("chime").get_voice_connector_termination`
 method.
@@ -1827,14 +2404,20 @@ method.
 Boto3 documentation:
 [Chime.Client.get_voice_connector_termination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_termination)
 
+Arguments mapping described in
+[GetVoiceConnectorTerminationRequestTypeDef](./type_defs.md#getvoiceconnectorterminationrequesttypedef).
+
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 
 Returns
-[GetVoiceConnectorTerminationResponseTypeDef](./type_defs.md#getvoiceconnectorterminationresponsetypedef).
+[GetVoiceConnectorTerminationResponseResponseTypeDef](./type_defs.md#getvoiceconnectorterminationresponseresponsetypedef).
 
 ### get_voice_connector_termination_health
+
+Retrieves information about the last time a SIP `OPTIONS` ping was received
+from your SIP infrastructure for the specified Amazon Chime Voice Connector.
 
 Type annotations for
 `boto3.client("chime").get_voice_connector_termination_health` method.
@@ -1842,19 +2425,28 @@ Type annotations for
 Boto3 documentation:
 [Chime.Client.get_voice_connector_termination_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_termination_health)
 
+Arguments mapping described in
+[GetVoiceConnectorTerminationHealthRequestTypeDef](./type_defs.md#getvoiceconnectorterminationhealthrequesttypedef).
+
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 
 Returns
-[GetVoiceConnectorTerminationHealthResponseTypeDef](./type_defs.md#getvoiceconnectorterminationhealthresponsetypedef).
+[GetVoiceConnectorTerminationHealthResponseResponseTypeDef](./type_defs.md#getvoiceconnectorterminationhealthresponseresponsetypedef).
 
 ### invite_users
+
+Sends email to a maximum of 50 users, inviting them to the specified Amazon
+Chime `Team` account.
 
 Type annotations for `boto3.client("chime").invite_users` method.
 
 Boto3 documentation:
 [Chime.Client.invite_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.invite_users)
+
+Arguments mapping described in
+[InviteUsersRequestTypeDef](./type_defs.md#inviteusersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1863,14 +2455,19 @@ Keyword-only arguments:
 - `UserType`: [UserTypeType](./literals.md#usertypetype)
 
 Returns
-[InviteUsersResponseTypeDef](./type_defs.md#inviteusersresponsetypedef).
+[InviteUsersResponseResponseTypeDef](./type_defs.md#inviteusersresponseresponsetypedef).
 
 ### list_accounts
+
+Lists the Amazon Chime accounts under the administrator's AWS account.
 
 Type annotations for `boto3.client("chime").list_accounts` method.
 
 Boto3 documentation:
 [Chime.Client.list_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_accounts)
+
+Arguments mapping described in
+[ListAccountsRequestTypeDef](./type_defs.md#listaccountsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1880,15 +2477,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef).
+[ListAccountsResponseResponseTypeDef](./type_defs.md#listaccountsresponseresponsetypedef).
 
 ### list_app_instance_admins
+
+Returns a list of the administrators in the `AppInstance` .
 
 Type annotations for `boto3.client("chime").list_app_instance_admins` method.
 
 Boto3 documentation:
 [Chime.Client.list_app_instance_admins](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_app_instance_admins)
 
+Arguments mapping described in
+[ListAppInstanceAdminsRequestTypeDef](./type_defs.md#listappinstanceadminsrequesttypedef).
+
 Keyword-only arguments:
 
 - `AppInstanceArn`: `str` *(required)*
@@ -1896,15 +2498,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAppInstanceAdminsResponseTypeDef](./type_defs.md#listappinstanceadminsresponsetypedef).
+[ListAppInstanceAdminsResponseResponseTypeDef](./type_defs.md#listappinstanceadminsresponseresponsetypedef).
 
 ### list_app_instance_users
+
+List all `AppInstanceUsers` created under a single `AppInstance` .
 
 Type annotations for `boto3.client("chime").list_app_instance_users` method.
 
 Boto3 documentation:
 [Chime.Client.list_app_instance_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_app_instance_users)
 
+Arguments mapping described in
+[ListAppInstanceUsersRequestTypeDef](./type_defs.md#listappinstanceusersrequesttypedef).
+
 Keyword-only arguments:
 
 - `AppInstanceArn`: `str` *(required)*
@@ -1912,14 +2519,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAppInstanceUsersResponseTypeDef](./type_defs.md#listappinstanceusersresponsetypedef).
+[ListAppInstanceUsersResponseResponseTypeDef](./type_defs.md#listappinstanceusersresponseresponsetypedef).
 
 ### list_app_instances
+
+Lists all Amazon Chime `AppInstance` s created under a single AWS account.
 
 Type annotations for `boto3.client("chime").list_app_instances` method.
 
 Boto3 documentation:
 [Chime.Client.list_app_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_app_instances)
+
+Arguments mapping described in
+[ListAppInstancesRequestTypeDef](./type_defs.md#listappinstancesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1927,14 +2539,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAppInstancesResponseTypeDef](./type_defs.md#listappinstancesresponsetypedef).
+[ListAppInstancesResponseResponseTypeDef](./type_defs.md#listappinstancesresponseresponsetypedef).
 
 ### list_attendee_tags
+
+Lists the tags applied to an Amazon Chime SDK attendee resource.
 
 Type annotations for `boto3.client("chime").list_attendee_tags` method.
 
 Boto3 documentation:
 [Chime.Client.list_attendee_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_attendee_tags)
+
+Arguments mapping described in
+[ListAttendeeTagsRequestTypeDef](./type_defs.md#listattendeetagsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1942,14 +2559,19 @@ Keyword-only arguments:
 - `AttendeeId`: `str` *(required)*
 
 Returns
-[ListAttendeeTagsResponseTypeDef](./type_defs.md#listattendeetagsresponsetypedef).
+[ListAttendeeTagsResponseResponseTypeDef](./type_defs.md#listattendeetagsresponseresponsetypedef).
 
 ### list_attendees
+
+Lists the attendees for the specified Amazon Chime SDK meeting.
 
 Type annotations for `boto3.client("chime").list_attendees` method.
 
 Boto3 documentation:
 [Chime.Client.list_attendees](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_attendees)
+
+Arguments mapping described in
+[ListAttendeesRequestTypeDef](./type_defs.md#listattendeesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1958,14 +2580,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListAttendeesResponseTypeDef](./type_defs.md#listattendeesresponsetypedef).
+[ListAttendeesResponseResponseTypeDef](./type_defs.md#listattendeesresponseresponsetypedef).
 
 ### list_bots
+
+Lists the bots associated with the administrator's Amazon Chime Enterprise
+account ID.
 
 Type annotations for `boto3.client("chime").list_bots` method.
 
 Boto3 documentation:
 [Chime.Client.list_bots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_bots)
+
+Arguments mapping described in
+[ListBotsRequestTypeDef](./type_defs.md#listbotsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1973,14 +2601,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns [ListBotsResponseTypeDef](./type_defs.md#listbotsresponsetypedef).
+Returns
+[ListBotsResponseResponseTypeDef](./type_defs.md#listbotsresponseresponsetypedef).
 
 ### list_channel_bans
+
+Lists all the users banned from a particular channel.
 
 Type annotations for `boto3.client("chime").list_channel_bans` method.
 
 Boto3 documentation:
 [Chime.Client.list_channel_bans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_bans)
+
+Arguments mapping described in
+[ListChannelBansRequestTypeDef](./type_defs.md#listchannelbansrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1990,14 +2624,19 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[ListChannelBansResponseTypeDef](./type_defs.md#listchannelbansresponsetypedef).
+[ListChannelBansResponseResponseTypeDef](./type_defs.md#listchannelbansresponseresponsetypedef).
 
 ### list_channel_memberships
+
+Lists all channel memberships in a channel.
 
 Type annotations for `boto3.client("chime").list_channel_memberships` method.
 
 Boto3 documentation:
 [Chime.Client.list_channel_memberships](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_memberships)
+
+Arguments mapping described in
+[ListChannelMembershipsRequestTypeDef](./type_defs.md#listchannelmembershipsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2008,15 +2647,20 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[ListChannelMembershipsResponseTypeDef](./type_defs.md#listchannelmembershipsresponsetypedef).
+[ListChannelMembershipsResponseResponseTypeDef](./type_defs.md#listchannelmembershipsresponseresponsetypedef).
 
 ### list_channel_memberships_for_app_instance_user
+
+Lists all channels that a particular `AppInstanceUser` is a part of.
 
 Type annotations for
 `boto3.client("chime").list_channel_memberships_for_app_instance_user` method.
 
 Boto3 documentation:
 [Chime.Client.list_channel_memberships_for_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_memberships_for_app_instance_user)
+
+Arguments mapping described in
+[ListChannelMembershipsForAppInstanceUserRequestTypeDef](./type_defs.md#listchannelmembershipsforappinstanceuserrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2026,35 +2670,45 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[ListChannelMembershipsForAppInstanceUserResponseTypeDef](./type_defs.md#listchannelmembershipsforappinstanceuserresponsetypedef).
+[ListChannelMembershipsForAppInstanceUserResponseResponseTypeDef](./type_defs.md#listchannelmembershipsforappinstanceuserresponseresponsetypedef).
 
 ### list_channel_messages
+
+List all the messages in a channel.
 
 Type annotations for `boto3.client("chime").list_channel_messages` method.
 
 Boto3 documentation:
 [Chime.Client.list_channel_messages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_messages)
 
+Arguments mapping described in
+[ListChannelMessagesRequestTypeDef](./type_defs.md#listchannelmessagesrequesttypedef).
+
 Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `NotBefore`: `datetime`
-- `NotAfter`: `datetime`
+- `NotBefore`: `Union`\[`datetime`, `str`\]
+- `NotAfter`: `Union`\[`datetime`, `str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `ChimeBearer`: `str`
 
 Returns
-[ListChannelMessagesResponseTypeDef](./type_defs.md#listchannelmessagesresponsetypedef).
+[ListChannelMessagesResponseResponseTypeDef](./type_defs.md#listchannelmessagesresponseresponsetypedef).
 
 ### list_channel_moderators
+
+Lists all the moderators for a channel.
 
 Type annotations for `boto3.client("chime").list_channel_moderators` method.
 
 Boto3 documentation:
 [Chime.Client.list_channel_moderators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_moderators)
 
+Arguments mapping described in
+[ListChannelModeratorsRequestTypeDef](./type_defs.md#listchannelmoderatorsrequesttypedef).
+
 Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
@@ -2063,14 +2717,19 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[ListChannelModeratorsResponseTypeDef](./type_defs.md#listchannelmoderatorsresponsetypedef).
+[ListChannelModeratorsResponseResponseTypeDef](./type_defs.md#listchannelmoderatorsresponseresponsetypedef).
 
 ### list_channels
+
+Lists all Channels created under a single Chime App as a paginated list.
 
 Type annotations for `boto3.client("chime").list_channels` method.
 
 Boto3 documentation:
 [Chime.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channels)
+
+Arguments mapping described in
+[ListChannelsRequestTypeDef](./type_defs.md#listchannelsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2081,15 +2740,20 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
+[ListChannelsResponseResponseTypeDef](./type_defs.md#listchannelsresponseresponsetypedef).
 
 ### list_channels_moderated_by_app_instance_user
+
+A list of the channels moderated by an `AppInstanceUser` .
 
 Type annotations for
 `boto3.client("chime").list_channels_moderated_by_app_instance_user` method.
 
 Boto3 documentation:
 [Chime.Client.list_channels_moderated_by_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channels_moderated_by_app_instance_user)
+
+Arguments mapping described in
+[ListChannelsModeratedByAppInstanceUserRequestTypeDef](./type_defs.md#listchannelsmoderatedbyappinstanceuserrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2099,58 +2763,79 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[ListChannelsModeratedByAppInstanceUserResponseTypeDef](./type_defs.md#listchannelsmoderatedbyappinstanceuserresponsetypedef).
+[ListChannelsModeratedByAppInstanceUserResponseResponseTypeDef](./type_defs.md#listchannelsmoderatedbyappinstanceuserresponseresponsetypedef).
 
 ### list_meeting_tags
+
+Lists the tags applied to an Amazon Chime SDK meeting resource.
 
 Type annotations for `boto3.client("chime").list_meeting_tags` method.
 
 Boto3 documentation:
 [Chime.Client.list_meeting_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_meeting_tags)
 
+Arguments mapping described in
+[ListMeetingTagsRequestTypeDef](./type_defs.md#listmeetingtagsrequesttypedef).
+
 Keyword-only arguments:
 
 - `MeetingId`: `str` *(required)*
 
 Returns
-[ListMeetingTagsResponseTypeDef](./type_defs.md#listmeetingtagsresponsetypedef).
+[ListMeetingTagsResponseResponseTypeDef](./type_defs.md#listmeetingtagsresponseresponsetypedef).
 
 ### list_meetings
+
+Lists up to 100 active Amazon Chime SDK meetings.
 
 Type annotations for `boto3.client("chime").list_meetings` method.
 
 Boto3 documentation:
 [Chime.Client.list_meetings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_meetings)
 
+Arguments mapping described in
+[ListMeetingsRequestTypeDef](./type_defs.md#listmeetingsrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListMeetingsResponseTypeDef](./type_defs.md#listmeetingsresponsetypedef).
+[ListMeetingsResponseResponseTypeDef](./type_defs.md#listmeetingsresponseresponsetypedef).
 
 ### list_phone_number_orders
+
+Lists the phone number orders for the administrator's Amazon Chime account.
 
 Type annotations for `boto3.client("chime").list_phone_number_orders` method.
 
 Boto3 documentation:
 [Chime.Client.list_phone_number_orders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_phone_number_orders)
 
+Arguments mapping described in
+[ListPhoneNumberOrdersRequestTypeDef](./type_defs.md#listphonenumberordersrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListPhoneNumberOrdersResponseTypeDef](./type_defs.md#listphonenumberordersresponsetypedef).
+[ListPhoneNumberOrdersResponseResponseTypeDef](./type_defs.md#listphonenumberordersresponseresponsetypedef).
 
 ### list_phone_numbers
+
+Lists the phone numbers for the specified Amazon Chime account, Amazon Chime
+user, Amazon Chime Voice Connector, or Amazon Chime Voice Connector group.
 
 Type annotations for `boto3.client("chime").list_phone_numbers` method.
 
 Boto3 documentation:
 [Chime.Client.list_phone_numbers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_phone_numbers)
+
+Arguments mapping described in
+[ListPhoneNumbersRequestTypeDef](./type_defs.md#listphonenumbersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2164,14 +2849,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListPhoneNumbersResponseTypeDef](./type_defs.md#listphonenumbersresponsetypedef).
+[ListPhoneNumbersResponseResponseTypeDef](./type_defs.md#listphonenumbersresponseresponsetypedef).
 
 ### list_proxy_sessions
+
+Lists the proxy sessions for the specified Amazon Chime Voice Connector.
 
 Type annotations for `boto3.client("chime").list_proxy_sessions` method.
 
 Boto3 documentation:
 [Chime.Client.list_proxy_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_proxy_sessions)
+
+Arguments mapping described in
+[ListProxySessionsRequestTypeDef](./type_defs.md#listproxysessionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2181,14 +2871,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListProxySessionsResponseTypeDef](./type_defs.md#listproxysessionsresponsetypedef).
+[ListProxySessionsResponseResponseTypeDef](./type_defs.md#listproxysessionsresponseresponsetypedef).
 
 ### list_room_memberships
+
+Lists the membership details for the specified room in an Amazon Chime
+Enterprise account, such as the members' IDs, email addresses, and names.
 
 Type annotations for `boto3.client("chime").list_room_memberships` method.
 
 Boto3 documentation:
 [Chime.Client.list_room_memberships](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_room_memberships)
+
+Arguments mapping described in
+[ListRoomMembershipsRequestTypeDef](./type_defs.md#listroommembershipsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2198,14 +2894,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListRoomMembershipsResponseTypeDef](./type_defs.md#listroommembershipsresponsetypedef).
+[ListRoomMembershipsResponseResponseTypeDef](./type_defs.md#listroommembershipsresponseresponsetypedef).
 
 ### list_rooms
+
+Lists the room details for the specified Amazon Chime Enterprise account.
 
 Type annotations for `boto3.client("chime").list_rooms` method.
 
 Boto3 documentation:
 [Chime.Client.list_rooms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_rooms)
+
+Arguments mapping described in
+[ListRoomsRequestTypeDef](./type_defs.md#listroomsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2214,9 +2915,12 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns [ListRoomsResponseTypeDef](./type_defs.md#listroomsresponsetypedef).
+Returns
+[ListRoomsResponseResponseTypeDef](./type_defs.md#listroomsresponseresponsetypedef).
 
 ### list_sip_media_applications
+
+Lists the SIP media applications under the administrator's AWS account.
 
 Type annotations for `boto3.client("chime").list_sip_media_applications`
 method.
@@ -2224,20 +2928,28 @@ method.
 Boto3 documentation:
 [Chime.Client.list_sip_media_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_sip_media_applications)
 
+Arguments mapping described in
+[ListSipMediaApplicationsRequestTypeDef](./type_defs.md#listsipmediaapplicationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListSipMediaApplicationsResponseTypeDef](./type_defs.md#listsipmediaapplicationsresponsetypedef).
+[ListSipMediaApplicationsResponseResponseTypeDef](./type_defs.md#listsipmediaapplicationsresponseresponsetypedef).
 
 ### list_sip_rules
+
+Lists the SIP rules under the administrator's AWS account.
 
 Type annotations for `boto3.client("chime").list_sip_rules` method.
 
 Boto3 documentation:
 [Chime.Client.list_sip_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_sip_rules)
+
+Arguments mapping described in
+[ListSipRulesRequestTypeDef](./type_defs.md#listsiprulesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2246,15 +2958,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListSipRulesResponseTypeDef](./type_defs.md#listsiprulesresponsetypedef).
+[ListSipRulesResponseResponseTypeDef](./type_defs.md#listsiprulesresponseresponsetypedef).
 
 ### list_supported_phone_number_countries
+
+Lists supported phone number countries.
 
 Type annotations for
 `boto3.client("chime").list_supported_phone_number_countries` method.
 
 Boto3 documentation:
 [Chime.Client.list_supported_phone_number_countries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_supported_phone_number_countries)
+
+Arguments mapping described in
+[ListSupportedPhoneNumberCountriesRequestTypeDef](./type_defs.md#listsupportedphonenumbercountriesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2263,28 +2980,38 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[ListSupportedPhoneNumberCountriesResponseTypeDef](./type_defs.md#listsupportedphonenumbercountriesresponsetypedef).
+[ListSupportedPhoneNumberCountriesResponseResponseTypeDef](./type_defs.md#listsupportedphonenumbercountriesresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Lists the tags applied to an Amazon Chime SDK meeting resource.
 
 Type annotations for `boto3.client("chime").list_tags_for_resource` method.
 
 Boto3 documentation:
 [Chime.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### list_users
+
+Lists the users that belong to the specified Amazon Chime account.
 
 Type annotations for `boto3.client("chime").list_users` method.
 
 Boto3 documentation:
 [Chime.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_users)
+
+Arguments mapping described in
+[ListUsersRequestTypeDef](./type_defs.md#listusersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2294,9 +3021,13 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
+Returns
+[ListUsersResponseResponseTypeDef](./type_defs.md#listusersresponseresponsetypedef).
 
 ### list_voice_connector_groups
+
+Lists the Amazon Chime Voice Connector groups for the administrator's AWS
+account.
 
 Type annotations for `boto3.client("chime").list_voice_connector_groups`
 method.
@@ -2304,15 +3035,20 @@ method.
 Boto3 documentation:
 [Chime.Client.list_voice_connector_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_voice_connector_groups)
 
+Arguments mapping described in
+[ListVoiceConnectorGroupsRequestTypeDef](./type_defs.md#listvoiceconnectorgroupsrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListVoiceConnectorGroupsResponseTypeDef](./type_defs.md#listvoiceconnectorgroupsresponsetypedef).
+[ListVoiceConnectorGroupsResponseResponseTypeDef](./type_defs.md#listvoiceconnectorgroupsresponseresponsetypedef).
 
 ### list_voice_connector_termination_credentials
+
+Lists the SIP credentials for the specified Amazon Chime Voice Connector.
 
 Type annotations for
 `boto3.client("chime").list_voice_connector_termination_credentials` method.
@@ -2320,19 +3056,27 @@ Type annotations for
 Boto3 documentation:
 [Chime.Client.list_voice_connector_termination_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_voice_connector_termination_credentials)
 
+Arguments mapping described in
+[ListVoiceConnectorTerminationCredentialsRequestTypeDef](./type_defs.md#listvoiceconnectorterminationcredentialsrequesttypedef).
+
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 
 Returns
-[ListVoiceConnectorTerminationCredentialsResponseTypeDef](./type_defs.md#listvoiceconnectorterminationcredentialsresponsetypedef).
+[ListVoiceConnectorTerminationCredentialsResponseResponseTypeDef](./type_defs.md#listvoiceconnectorterminationcredentialsresponseresponsetypedef).
 
 ### list_voice_connectors
+
+Lists the Amazon Chime Voice Connectors for the administrator's AWS account.
 
 Type annotations for `boto3.client("chime").list_voice_connectors` method.
 
 Boto3 documentation:
 [Chime.Client.list_voice_connectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_voice_connectors)
+
+Arguments mapping described in
+[ListVoiceConnectorsRequestTypeDef](./type_defs.md#listvoiceconnectorsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2340,14 +3084,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListVoiceConnectorsResponseTypeDef](./type_defs.md#listvoiceconnectorsresponsetypedef).
+[ListVoiceConnectorsResponseResponseTypeDef](./type_defs.md#listvoiceconnectorsresponseresponsetypedef).
 
 ### logout_user
+
+Logs out the specified user from all of the devices they are currently logged
+into.
 
 Type annotations for `boto3.client("chime").logout_user` method.
 
 Boto3 documentation:
 [Chime.Client.logout_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.logout_user)
+
+Arguments mapping described in
+[LogoutUserRequestTypeDef](./type_defs.md#logoutuserrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2358,11 +3108,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_app_instance_retention_settings
 
+Sets the amount of time in days that a given `AppInstance` retains data.
+
 Type annotations for
 `boto3.client("chime").put_app_instance_retention_settings` method.
 
 Boto3 documentation:
 [Chime.Client.put_app_instance_retention_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_app_instance_retention_settings)
+
+Arguments mapping described in
+[PutAppInstanceRetentionSettingsRequestTypeDef](./type_defs.md#putappinstanceretentionsettingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2372,15 +3127,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutAppInstanceRetentionSettingsResponseTypeDef](./type_defs.md#putappinstanceretentionsettingsresponsetypedef).
+[PutAppInstanceRetentionSettingsResponseResponseTypeDef](./type_defs.md#putappinstanceretentionsettingsresponseresponsetypedef).
 
 ### put_app_instance_streaming_configurations
+
+The data streaming configurations of an `AppInstance` .
 
 Type annotations for
 `boto3.client("chime").put_app_instance_streaming_configurations` method.
 
 Boto3 documentation:
 [Chime.Client.put_app_instance_streaming_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_app_instance_streaming_configurations)
+
+Arguments mapping described in
+[PutAppInstanceStreamingConfigurationsRequestTypeDef](./type_defs.md#putappinstancestreamingconfigurationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2390,14 +3150,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutAppInstanceStreamingConfigurationsResponseTypeDef](./type_defs.md#putappinstancestreamingconfigurationsresponsetypedef).
+[PutAppInstanceStreamingConfigurationsResponseResponseTypeDef](./type_defs.md#putappinstancestreamingconfigurationsresponseresponsetypedef).
 
 ### put_events_configuration
+
+Creates an events configuration that allows a bot to receive outgoing events
+sent by Amazon Chime.
 
 Type annotations for `boto3.client("chime").put_events_configuration` method.
 
 Boto3 documentation:
 [Chime.Client.put_events_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_events_configuration)
+
+Arguments mapping described in
+[PutEventsConfigurationRequestTypeDef](./type_defs.md#puteventsconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2407,14 +3173,19 @@ Keyword-only arguments:
 - `LambdaFunctionArn`: `str`
 
 Returns
-[PutEventsConfigurationResponseTypeDef](./type_defs.md#puteventsconfigurationresponsetypedef).
+[PutEventsConfigurationResponseResponseTypeDef](./type_defs.md#puteventsconfigurationresponseresponsetypedef).
 
 ### put_retention_settings
+
+Puts retention settings for the specified Amazon Chime Enterprise account.
 
 Type annotations for `boto3.client("chime").put_retention_settings` method.
 
 Boto3 documentation:
 [Chime.Client.put_retention_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_retention_settings)
+
+Arguments mapping described in
+[PutRetentionSettingsRequestTypeDef](./type_defs.md#putretentionsettingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2424,15 +3195,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutRetentionSettingsResponseTypeDef](./type_defs.md#putretentionsettingsresponsetypedef).
+[PutRetentionSettingsResponseResponseTypeDef](./type_defs.md#putretentionsettingsresponseresponsetypedef).
 
 ### put_sip_media_application_logging_configuration
+
+Updates the logging configuration for the specified SIP media application.
 
 Type annotations for
 `boto3.client("chime").put_sip_media_application_logging_configuration` method.
 
 Boto3 documentation:
 [Chime.Client.put_sip_media_application_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_sip_media_application_logging_configuration)
+
+Arguments mapping described in
+[PutSipMediaApplicationLoggingConfigurationRequestTypeDef](./type_defs.md#putsipmediaapplicationloggingconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2441,9 +3217,12 @@ Keyword-only arguments:
   [SipMediaApplicationLoggingConfigurationTypeDef](./type_defs.md#sipmediaapplicationloggingconfigurationtypedef)
 
 Returns
-[PutSipMediaApplicationLoggingConfigurationResponseTypeDef](./type_defs.md#putsipmediaapplicationloggingconfigurationresponsetypedef).
+[PutSipMediaApplicationLoggingConfigurationResponseResponseTypeDef](./type_defs.md#putsipmediaapplicationloggingconfigurationresponseresponsetypedef).
 
 ### put_voice_connector_emergency_calling_configuration
+
+Puts emergency calling configuration details to the specified Amazon Chime
+Voice Connector, such as emergency phone numbers and calling countries.
 
 Type annotations for
 `boto3.client("chime").put_voice_connector_emergency_calling_configuration`
@@ -2451,6 +3230,9 @@ method.
 
 Boto3 documentation:
 [Chime.Client.put_voice_connector_emergency_calling_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_emergency_calling_configuration)
+
+Arguments mapping described in
+[PutVoiceConnectorEmergencyCallingConfigurationRequestTypeDef](./type_defs.md#putvoiceconnectoremergencycallingconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2460,15 +3242,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutVoiceConnectorEmergencyCallingConfigurationResponseTypeDef](./type_defs.md#putvoiceconnectoremergencycallingconfigurationresponsetypedef).
+[PutVoiceConnectorEmergencyCallingConfigurationResponseResponseTypeDef](./type_defs.md#putvoiceconnectoremergencycallingconfigurationresponseresponsetypedef).
 
 ### put_voice_connector_logging_configuration
+
+Adds a logging configuration for the specified Amazon Chime Voice Connector.
 
 Type annotations for
 `boto3.client("chime").put_voice_connector_logging_configuration` method.
 
 Boto3 documentation:
 [Chime.Client.put_voice_connector_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_logging_configuration)
+
+Arguments mapping described in
+[PutVoiceConnectorLoggingConfigurationRequestTypeDef](./type_defs.md#putvoiceconnectorloggingconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2478,15 +3265,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutVoiceConnectorLoggingConfigurationResponseTypeDef](./type_defs.md#putvoiceconnectorloggingconfigurationresponsetypedef).
+[PutVoiceConnectorLoggingConfigurationResponseResponseTypeDef](./type_defs.md#putvoiceconnectorloggingconfigurationresponseresponsetypedef).
 
 ### put_voice_connector_origination
+
+Adds origination settings for the specified Amazon Chime Voice Connector.
 
 Type annotations for `boto3.client("chime").put_voice_connector_origination`
 method.
 
 Boto3 documentation:
 [Chime.Client.put_voice_connector_origination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_origination)
+
+Arguments mapping described in
+[PutVoiceConnectorOriginationRequestTypeDef](./type_defs.md#putvoiceconnectororiginationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2495,14 +3287,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutVoiceConnectorOriginationResponseTypeDef](./type_defs.md#putvoiceconnectororiginationresponsetypedef).
+[PutVoiceConnectorOriginationResponseResponseTypeDef](./type_defs.md#putvoiceconnectororiginationresponseresponsetypedef).
 
 ### put_voice_connector_proxy
+
+Puts the specified proxy configuration to the specified Amazon Chime Voice
+Connector.
 
 Type annotations for `boto3.client("chime").put_voice_connector_proxy` method.
 
 Boto3 documentation:
 [Chime.Client.put_voice_connector_proxy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_proxy)
+
+Arguments mapping described in
+[PutVoiceConnectorProxyRequestTypeDef](./type_defs.md#putvoiceconnectorproxyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2513,15 +3311,20 @@ Keyword-only arguments:
 - `Disabled`: `bool`
 
 Returns
-[PutVoiceConnectorProxyResponseTypeDef](./type_defs.md#putvoiceconnectorproxyresponsetypedef).
+[PutVoiceConnectorProxyResponseResponseTypeDef](./type_defs.md#putvoiceconnectorproxyresponseresponsetypedef).
 
 ### put_voice_connector_streaming_configuration
+
+Adds a streaming configuration for the specified Amazon Chime Voice Connector.
 
 Type annotations for
 `boto3.client("chime").put_voice_connector_streaming_configuration` method.
 
 Boto3 documentation:
 [Chime.Client.put_voice_connector_streaming_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_streaming_configuration)
+
+Arguments mapping described in
+[PutVoiceConnectorStreamingConfigurationRequestTypeDef](./type_defs.md#putvoiceconnectorstreamingconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2531,15 +3334,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutVoiceConnectorStreamingConfigurationResponseTypeDef](./type_defs.md#putvoiceconnectorstreamingconfigurationresponsetypedef).
+[PutVoiceConnectorStreamingConfigurationResponseResponseTypeDef](./type_defs.md#putvoiceconnectorstreamingconfigurationresponseresponsetypedef).
 
 ### put_voice_connector_termination
+
+Adds termination settings for the specified Amazon Chime Voice Connector.
 
 Type annotations for `boto3.client("chime").put_voice_connector_termination`
 method.
 
 Boto3 documentation:
 [Chime.Client.put_voice_connector_termination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_termination)
+
+Arguments mapping described in
+[PutVoiceConnectorTerminationRequestTypeDef](./type_defs.md#putvoiceconnectorterminationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2548,15 +3356,21 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutVoiceConnectorTerminationResponseTypeDef](./type_defs.md#putvoiceconnectorterminationresponsetypedef).
+[PutVoiceConnectorTerminationResponseResponseTypeDef](./type_defs.md#putvoiceconnectorterminationresponseresponsetypedef).
 
 ### put_voice_connector_termination_credentials
+
+Adds termination SIP credentials for the specified Amazon Chime Voice
+Connector.
 
 Type annotations for
 `boto3.client("chime").put_voice_connector_termination_credentials` method.
 
 Boto3 documentation:
 [Chime.Client.put_voice_connector_termination_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_termination_credentials)
+
+Arguments mapping described in
+[PutVoiceConnectorTerminationCredentialsRequestTypeDef](./type_defs.md#putvoiceconnectorterminationcredentialsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2566,10 +3380,15 @@ Keyword-only arguments:
 
 ### redact_channel_message
 
+Redacts message content, but not metadata.
+
 Type annotations for `boto3.client("chime").redact_channel_message` method.
 
 Boto3 documentation:
 [Chime.Client.redact_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.redact_channel_message)
+
+Arguments mapping described in
+[RedactChannelMessageRequestTypeDef](./type_defs.md#redactchannelmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2578,15 +3397,20 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[RedactChannelMessageResponseTypeDef](./type_defs.md#redactchannelmessageresponsetypedef).
+[RedactChannelMessageResponseResponseTypeDef](./type_defs.md#redactchannelmessageresponseresponsetypedef).
 
 ### redact_conversation_message
+
+Redacts the specified message from the specified Amazon Chime conversation.
 
 Type annotations for `boto3.client("chime").redact_conversation_message`
 method.
 
 Boto3 documentation:
 [Chime.Client.redact_conversation_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.redact_conversation_message)
+
+Arguments mapping described in
+[RedactConversationMessageRequestTypeDef](./type_defs.md#redactconversationmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2598,10 +3422,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### redact_room_message
 
+Redacts the specified message from the specified Amazon Chime channel.
+
 Type annotations for `boto3.client("chime").redact_room_message` method.
 
 Boto3 documentation:
 [Chime.Client.redact_room_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.redact_room_message)
+
+Arguments mapping described in
+[RedactRoomMessageRequestTypeDef](./type_defs.md#redactroommessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2613,10 +3442,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### regenerate_security_token
 
+Regenerates the security token for a bot.
+
 Type annotations for `boto3.client("chime").regenerate_security_token` method.
 
 Boto3 documentation:
 [Chime.Client.regenerate_security_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.regenerate_security_token)
+
+Arguments mapping described in
+[RegenerateSecurityTokenRequestTypeDef](./type_defs.md#regeneratesecuritytokenrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2624,14 +3458,20 @@ Keyword-only arguments:
 - `BotId`: `str` *(required)*
 
 Returns
-[RegenerateSecurityTokenResponseTypeDef](./type_defs.md#regeneratesecuritytokenresponsetypedef).
+[RegenerateSecurityTokenResponseResponseTypeDef](./type_defs.md#regeneratesecuritytokenresponseresponsetypedef).
 
 ### reset_personal_pin
+
+Resets the personal meeting PIN for the specified user on an Amazon Chime
+account.
 
 Type annotations for `boto3.client("chime").reset_personal_pin` method.
 
 Boto3 documentation:
 [Chime.Client.reset_personal_pin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.reset_personal_pin)
+
+Arguments mapping described in
+[ResetPersonalPINRequestTypeDef](./type_defs.md#resetpersonalpinrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2639,29 +3479,40 @@ Keyword-only arguments:
 - `UserId`: `str` *(required)*
 
 Returns
-[ResetPersonalPINResponseTypeDef](./type_defs.md#resetpersonalpinresponsetypedef).
+[ResetPersonalPINResponseResponseTypeDef](./type_defs.md#resetpersonalpinresponseresponsetypedef).
 
 ### restore_phone_number
+
+Moves a phone number from the **Deletion queue** back into the phone number
+**Inventory** .
 
 Type annotations for `boto3.client("chime").restore_phone_number` method.
 
 Boto3 documentation:
 [Chime.Client.restore_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.restore_phone_number)
 
+Arguments mapping described in
+[RestorePhoneNumberRequestTypeDef](./type_defs.md#restorephonenumberrequesttypedef).
+
 Keyword-only arguments:
 
 - `PhoneNumberId`: `str` *(required)*
 
 Returns
-[RestorePhoneNumberResponseTypeDef](./type_defs.md#restorephonenumberresponsetypedef).
+[RestorePhoneNumberResponseResponseTypeDef](./type_defs.md#restorephonenumberresponseresponsetypedef).
 
 ### search_available_phone_numbers
+
+Searches for phone numbers that can be ordered.
 
 Type annotations for `boto3.client("chime").search_available_phone_numbers`
 method.
 
 Boto3 documentation:
 [Chime.Client.search_available_phone_numbers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.search_available_phone_numbers)
+
+Arguments mapping described in
+[SearchAvailablePhoneNumbersRequestTypeDef](./type_defs.md#searchavailablephonenumbersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2675,14 +3526,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[SearchAvailablePhoneNumbersResponseTypeDef](./type_defs.md#searchavailablephonenumbersresponsetypedef).
+[SearchAvailablePhoneNumbersResponseResponseTypeDef](./type_defs.md#searchavailablephonenumbersresponseresponsetypedef).
 
 ### send_channel_message
+
+Sends a message to a particular channel that the member is a part of.
 
 Type annotations for `boto3.client("chime").send_channel_message` method.
 
 Boto3 documentation:
 [Chime.Client.send_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.send_channel_message)
+
+Arguments mapping described in
+[SendChannelMessageRequestTypeDef](./type_defs.md#sendchannelmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2698,14 +3554,19 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[SendChannelMessageResponseTypeDef](./type_defs.md#sendchannelmessageresponsetypedef).
+[SendChannelMessageResponseResponseTypeDef](./type_defs.md#sendchannelmessageresponseresponsetypedef).
 
 ### tag_attendee
+
+Applies the specified tags to the specified Amazon Chime SDK attendee.
 
 Type annotations for `boto3.client("chime").tag_attendee` method.
 
 Boto3 documentation:
 [Chime.Client.tag_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.tag_attendee)
+
+Arguments mapping described in
+[TagAttendeeRequestTypeDef](./type_defs.md#tagattendeerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2715,10 +3576,15 @@ Keyword-only arguments:
 
 ### tag_meeting
 
+Applies the specified tags to the specified Amazon Chime SDK meeting.
+
 Type annotations for `boto3.client("chime").tag_meeting` method.
 
 Boto3 documentation:
 [Chime.Client.tag_meeting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.tag_meeting)
+
+Arguments mapping described in
+[TagMeetingRequestTypeDef](./type_defs.md#tagmeetingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2727,10 +3593,15 @@ Keyword-only arguments:
 
 ### tag_resource
 
+Applies the specified tags to the specified Amazon Chime SDK meeting resource.
+
 Type annotations for `boto3.client("chime").tag_resource` method.
 
 Boto3 documentation:
 [Chime.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2739,10 +3610,15 @@ Keyword-only arguments:
 
 ### untag_attendee
 
+Untags the specified tags from the specified Amazon Chime SDK attendee.
+
 Type annotations for `boto3.client("chime").untag_attendee` method.
 
 Boto3 documentation:
 [Chime.Client.untag_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.untag_attendee)
+
+Arguments mapping described in
+[UntagAttendeeRequestTypeDef](./type_defs.md#untagattendeerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2752,10 +3628,15 @@ Keyword-only arguments:
 
 ### untag_meeting
 
+Untags the specified tags from the specified Amazon Chime SDK meeting.
+
 Type annotations for `boto3.client("chime").untag_meeting` method.
 
 Boto3 documentation:
 [Chime.Client.untag_meeting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.untag_meeting)
+
+Arguments mapping described in
+[UntagMeetingRequestTypeDef](./type_defs.md#untagmeetingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2764,10 +3645,15 @@ Keyword-only arguments:
 
 ### untag_resource
 
+Untags the specified tags from the specified Amazon Chime SDK meeting resource.
+
 Type annotations for `boto3.client("chime").untag_resource` method.
 
 Boto3 documentation:
 [Chime.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2776,10 +3662,15 @@ Keyword-only arguments:
 
 ### update_account
 
+Updates account details for the specified Amazon Chime account.
+
 Type annotations for `boto3.client("chime").update_account` method.
 
 Boto3 documentation:
 [Chime.Client.update_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_account)
+
+Arguments mapping described in
+[UpdateAccountRequestTypeDef](./type_defs.md#updateaccountrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2788,14 +3679,19 @@ Keyword-only arguments:
 - `DefaultLicense`: [LicenseType](./literals.md#licensetype)
 
 Returns
-[UpdateAccountResponseTypeDef](./type_defs.md#updateaccountresponsetypedef).
+[UpdateAccountResponseResponseTypeDef](./type_defs.md#updateaccountresponseresponsetypedef).
 
 ### update_account_settings
+
+Updates the settings for the specified Amazon Chime account.
 
 Type annotations for `boto3.client("chime").update_account_settings` method.
 
 Boto3 documentation:
 [Chime.Client.update_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_account_settings)
+
+Arguments mapping described in
+[UpdateAccountSettingsRequestTypeDef](./type_defs.md#updateaccountsettingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2807,10 +3703,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_app_instance
 
+Updates `AppInstance` metadata.
+
 Type annotations for `boto3.client("chime").update_app_instance` method.
 
 Boto3 documentation:
 [Chime.Client.update_app_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_app_instance)
+
+Arguments mapping described in
+[UpdateAppInstanceRequestTypeDef](./type_defs.md#updateappinstancerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2819,14 +3720,19 @@ Keyword-only arguments:
 - `Metadata`: `str`
 
 Returns
-[UpdateAppInstanceResponseTypeDef](./type_defs.md#updateappinstanceresponsetypedef).
+[UpdateAppInstanceResponseResponseTypeDef](./type_defs.md#updateappinstanceresponseresponsetypedef).
 
 ### update_app_instance_user
+
+Updates the details of an `AppInstanceUser`.
 
 Type annotations for `boto3.client("chime").update_app_instance_user` method.
 
 Boto3 documentation:
 [Chime.Client.update_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_app_instance_user)
+
+Arguments mapping described in
+[UpdateAppInstanceUserRequestTypeDef](./type_defs.md#updateappinstanceuserrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2835,14 +3741,20 @@ Keyword-only arguments:
 - `Metadata`: `str`
 
 Returns
-[UpdateAppInstanceUserResponseTypeDef](./type_defs.md#updateappinstanceuserresponsetypedef).
+[UpdateAppInstanceUserResponseResponseTypeDef](./type_defs.md#updateappinstanceuserresponseresponsetypedef).
 
 ### update_bot
+
+Updates the status of the specified bot, such as starting or stopping the bot
+from running in your Amazon Chime Enterprise account.
 
 Type annotations for `boto3.client("chime").update_bot` method.
 
 Boto3 documentation:
 [Chime.Client.update_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_bot)
+
+Arguments mapping described in
+[UpdateBotRequestTypeDef](./type_defs.md#updatebotrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2850,14 +3762,20 @@ Keyword-only arguments:
 - `BotId`: `str` *(required)*
 - `Disabled`: `bool`
 
-Returns [UpdateBotResponseTypeDef](./type_defs.md#updatebotresponsetypedef).
+Returns
+[UpdateBotResponseResponseTypeDef](./type_defs.md#updatebotresponseresponsetypedef).
 
 ### update_channel
+
+Update a channel's attributes.
 
 Type annotations for `boto3.client("chime").update_channel` method.
 
 Boto3 documentation:
 [Chime.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_channel)
+
+Arguments mapping described in
+[UpdateChannelRequestTypeDef](./type_defs.md#updatechannelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2868,14 +3786,19 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).
+[UpdateChannelResponseResponseTypeDef](./type_defs.md#updatechannelresponseresponsetypedef).
 
 ### update_channel_message
+
+Updates the content of a message.
 
 Type annotations for `boto3.client("chime").update_channel_message` method.
 
 Boto3 documentation:
 [Chime.Client.update_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_channel_message)
+
+Arguments mapping described in
+[UpdateChannelMessageRequestTypeDef](./type_defs.md#updatechannelmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2886,14 +3809,19 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[UpdateChannelMessageResponseTypeDef](./type_defs.md#updatechannelmessageresponsetypedef).
+[UpdateChannelMessageResponseResponseTypeDef](./type_defs.md#updatechannelmessageresponseresponsetypedef).
 
 ### update_channel_read_marker
+
+The details of the time when a user last read messages in a channel.
 
 Type annotations for `boto3.client("chime").update_channel_read_marker` method.
 
 Boto3 documentation:
 [Chime.Client.update_channel_read_marker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_channel_read_marker)
+
+Arguments mapping described in
+[UpdateChannelReadMarkerRequestTypeDef](./type_defs.md#updatechannelreadmarkerrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2901,14 +3829,20 @@ Keyword-only arguments:
 - `ChimeBearer`: `str`
 
 Returns
-[UpdateChannelReadMarkerResponseTypeDef](./type_defs.md#updatechannelreadmarkerresponsetypedef).
+[UpdateChannelReadMarkerResponseResponseTypeDef](./type_defs.md#updatechannelreadmarkerresponseresponsetypedef).
 
 ### update_global_settings
+
+Updates global settings for the administrator's AWS account, such as Amazon
+Chime Business Calling and Amazon Chime Voice Connector settings.
 
 Type annotations for `boto3.client("chime").update_global_settings` method.
 
 Boto3 documentation:
 [Chime.Client.update_global_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_global_settings)
+
+Arguments mapping described in
+[UpdateGlobalSettingsRequestTypeDef](./type_defs.md#updateglobalsettingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2921,10 +3855,16 @@ Keyword-only arguments:
 
 ### update_phone_number
 
+Updates phone number details, such as product type or calling name, for the
+specified phone number ID.
+
 Type annotations for `boto3.client("chime").update_phone_number` method.
 
 Boto3 documentation:
 [Chime.Client.update_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_phone_number)
+
+Arguments mapping described in
+[UpdatePhoneNumberRequestTypeDef](./type_defs.md#updatephonenumberrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2934,9 +3874,12 @@ Keyword-only arguments:
 - `CallingName`: `str`
 
 Returns
-[UpdatePhoneNumberResponseTypeDef](./type_defs.md#updatephonenumberresponsetypedef).
+[UpdatePhoneNumberResponseResponseTypeDef](./type_defs.md#updatephonenumberresponseresponsetypedef).
 
 ### update_phone_number_settings
+
+Updates the phone number settings for the administrator's AWS account, such as
+the default outbound calling name.
 
 Type annotations for `boto3.client("chime").update_phone_number_settings`
 method.
@@ -2944,16 +3887,24 @@ method.
 Boto3 documentation:
 [Chime.Client.update_phone_number_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_phone_number_settings)
 
+Arguments mapping described in
+[UpdatePhoneNumberSettingsRequestTypeDef](./type_defs.md#updatephonenumbersettingsrequesttypedef).
+
 Keyword-only arguments:
 
 - `CallingName`: `str` *(required)*
 
 ### update_proxy_session
 
+Updates the specified proxy session details, such as voice or SMS capabilities.
+
 Type annotations for `boto3.client("chime").update_proxy_session` method.
 
 Boto3 documentation:
 [Chime.Client.update_proxy_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_proxy_session)
+
+Arguments mapping described in
+[UpdateProxySessionRequestTypeDef](./type_defs.md#updateproxysessionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2964,14 +3915,20 @@ Keyword-only arguments:
 - `ExpiryMinutes`: `int`
 
 Returns
-[UpdateProxySessionResponseTypeDef](./type_defs.md#updateproxysessionresponsetypedef).
+[UpdateProxySessionResponseResponseTypeDef](./type_defs.md#updateproxysessionresponseresponsetypedef).
 
 ### update_room
+
+Updates room details, such as the room name, for a room in an Amazon Chime
+Enterprise account.
 
 Type annotations for `boto3.client("chime").update_room` method.
 
 Boto3 documentation:
 [Chime.Client.update_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_room)
+
+Arguments mapping described in
+[UpdateRoomRequestTypeDef](./type_defs.md#updateroomrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2979,14 +3936,21 @@ Keyword-only arguments:
 - `RoomId`: `str` *(required)*
 - `Name`: `str`
 
-Returns [UpdateRoomResponseTypeDef](./type_defs.md#updateroomresponsetypedef).
+Returns
+[UpdateRoomResponseResponseTypeDef](./type_defs.md#updateroomresponseresponsetypedef).
 
 ### update_room_membership
+
+Updates room membership details, such as the member role, for a room in an
+Amazon Chime Enterprise account.
 
 Type annotations for `boto3.client("chime").update_room_membership` method.
 
 Boto3 documentation:
 [Chime.Client.update_room_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_room_membership)
+
+Arguments mapping described in
+[UpdateRoomMembershipRequestTypeDef](./type_defs.md#updateroommembershiprequesttypedef).
 
 Keyword-only arguments:
 
@@ -2996,15 +3960,20 @@ Keyword-only arguments:
 - `Role`: [RoomMembershipRoleType](./literals.md#roommembershiproletype)
 
 Returns
-[UpdateRoomMembershipResponseTypeDef](./type_defs.md#updateroommembershipresponsetypedef).
+[UpdateRoomMembershipResponseResponseTypeDef](./type_defs.md#updateroommembershipresponseresponsetypedef).
 
 ### update_sip_media_application
+
+Updates the details of the specified SIP media application.
 
 Type annotations for `boto3.client("chime").update_sip_media_application`
 method.
 
 Boto3 documentation:
 [Chime.Client.update_sip_media_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_sip_media_application)
+
+Arguments mapping described in
+[UpdateSipMediaApplicationRequestTypeDef](./type_defs.md#updatesipmediaapplicationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3014,15 +3983,21 @@ Keyword-only arguments:
   `List`\[[SipMediaApplicationEndpointTypeDef](./type_defs.md#sipmediaapplicationendpointtypedef)\]
 
 Returns
-[UpdateSipMediaApplicationResponseTypeDef](./type_defs.md#updatesipmediaapplicationresponsetypedef).
+[UpdateSipMediaApplicationResponseResponseTypeDef](./type_defs.md#updatesipmediaapplicationresponseresponsetypedef).
 
 ### update_sip_media_application_call
+
+Allows you to trigger a Lambda function at any time while a call is active, and
+replace the current actions with new actions returned by the invocation.
 
 Type annotations for `boto3.client("chime").update_sip_media_application_call`
 method.
 
 Boto3 documentation:
 [Chime.Client.update_sip_media_application_call](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_sip_media_application_call)
+
+Arguments mapping described in
+[UpdateSipMediaApplicationCallRequestTypeDef](./type_defs.md#updatesipmediaapplicationcallrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3031,14 +4006,19 @@ Keyword-only arguments:
 - `Arguments`: `Dict`\[`str`, `str`\] *(required)*
 
 Returns
-[UpdateSipMediaApplicationCallResponseTypeDef](./type_defs.md#updatesipmediaapplicationcallresponsetypedef).
+[UpdateSipMediaApplicationCallResponseResponseTypeDef](./type_defs.md#updatesipmediaapplicationcallresponseresponsetypedef).
 
 ### update_sip_rule
+
+Updates the details of the specified SIP rule.
 
 Type annotations for `boto3.client("chime").update_sip_rule` method.
 
 Boto3 documentation:
 [Chime.Client.update_sip_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_sip_rule)
+
+Arguments mapping described in
+[UpdateSipRuleRequestTypeDef](./type_defs.md#updatesiprulerequesttypedef).
 
 Keyword-only arguments:
 
@@ -3049,14 +4029,19 @@ Keyword-only arguments:
   `List`\[[SipRuleTargetApplicationTypeDef](./type_defs.md#sipruletargetapplicationtypedef)\]
 
 Returns
-[UpdateSipRuleResponseTypeDef](./type_defs.md#updatesipruleresponsetypedef).
+[UpdateSipRuleResponseResponseTypeDef](./type_defs.md#updatesipruleresponseresponsetypedef).
 
 ### update_user
+
+Updates user details for a specified user ID.
 
 Type annotations for `boto3.client("chime").update_user` method.
 
 Boto3 documentation:
 [Chime.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_user)
+
+Arguments mapping described in
+[UpdateUserRequestTypeDef](./type_defs.md#updateuserrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3067,14 +4052,20 @@ Keyword-only arguments:
 - `AlexaForBusinessMetadata`:
   [AlexaForBusinessMetadataTypeDef](./type_defs.md#alexaforbusinessmetadatatypedef)
 
-Returns [UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef).
+Returns
+[UpdateUserResponseResponseTypeDef](./type_defs.md#updateuserresponseresponsetypedef).
 
 ### update_user_settings
+
+Updates the settings for the specified user, such as phone number settings.
 
 Type annotations for `boto3.client("chime").update_user_settings` method.
 
 Boto3 documentation:
 [Chime.Client.update_user_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_user_settings)
+
+Arguments mapping described in
+[UpdateUserSettingsRequestTypeDef](./type_defs.md#updateusersettingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3085,10 +4076,15 @@ Keyword-only arguments:
 
 ### update_voice_connector
 
+Updates details for the specified Amazon Chime Voice Connector.
+
 Type annotations for `boto3.client("chime").update_voice_connector` method.
 
 Boto3 documentation:
 [Chime.Client.update_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_voice_connector)
+
+Arguments mapping described in
+[UpdateVoiceConnectorRequestTypeDef](./type_defs.md#updatevoiceconnectorrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3097,15 +4093,21 @@ Keyword-only arguments:
 - `RequireEncryption`: `bool` *(required)*
 
 Returns
-[UpdateVoiceConnectorResponseTypeDef](./type_defs.md#updatevoiceconnectorresponsetypedef).
+[UpdateVoiceConnectorResponseResponseTypeDef](./type_defs.md#updatevoiceconnectorresponseresponsetypedef).
 
 ### update_voice_connector_group
+
+Updates details of the specified Amazon Chime Voice Connector group, such as
+the name and Amazon Chime Voice Connector priority ranking.
 
 Type annotations for `boto3.client("chime").update_voice_connector_group`
 method.
 
 Boto3 documentation:
 [Chime.Client.update_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_voice_connector_group)
+
+Arguments mapping described in
+[UpdateVoiceConnectorGroupRequestTypeDef](./type_defs.md#updatevoiceconnectorgrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -3116,7 +4118,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateVoiceConnectorGroupResponseTypeDef](./type_defs.md#updatevoiceconnectorgroupresponsetypedef).
+[UpdateVoiceConnectorGroupResponseResponseTypeDef](./type_defs.md#updatevoiceconnectorgroupresponseresponsetypedef).
 
 ### get_paginator
 

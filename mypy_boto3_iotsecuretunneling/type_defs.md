@@ -8,16 +8,38 @@ type annotations stubs module
 [mypy_boto3_iotsecuretunneling](https://pypi.org/project/mypy-boto3-iotsecuretunneling/).
 
 - [Typed dictionaries for boto3 IoTSecureTunneling module](#typed-dictionaries-for-boto3-iotsecuretunneling-module)
+  - [CloseTunnelRequestTypeDef](#closetunnelrequesttypedef)
   - [ConnectionStateTypeDef](#connectionstatetypedef)
-  - [DescribeTunnelResponseTypeDef](#describetunnelresponsetypedef)
+  - [DescribeTunnelRequestTypeDef](#describetunnelrequesttypedef)
+  - [DescribeTunnelResponseResponseTypeDef](#describetunnelresponseresponsetypedef)
   - [DestinationConfigTypeDef](#destinationconfigtypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListTunnelsResponseTypeDef](#listtunnelsresponsetypedef)
-  - [OpenTunnelResponseTypeDef](#opentunnelresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListTunnelsRequestTypeDef](#listtunnelsrequesttypedef)
+  - [ListTunnelsResponseResponseTypeDef](#listtunnelsresponseresponsetypedef)
+  - [OpenTunnelRequestTypeDef](#opentunnelrequesttypedef)
+  - [OpenTunnelResponseResponseTypeDef](#opentunnelresponseresponsetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TimeoutConfigTypeDef](#timeoutconfigtypedef)
   - [TunnelSummaryTypeDef](#tunnelsummarytypedef)
   - [TunnelTypeDef](#tunneltypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+
+## CloseTunnelRequestTypeDef
+
+```python
+from mypy_boto3_iotsecuretunneling.type_defs import CloseTunnelRequestTypeDef
+```
+
+Required fields:
+
+- `tunnelId`: `str`
+
+Optional fields:
+
+- `delete`: `bool`
 
 ## ConnectionStateTypeDef
 
@@ -30,15 +52,27 @@ Optional fields:
 - `status`: [ConnectionStatusType](./literals.md#connectionstatustype)
 - `lastUpdatedAt`: `datetime`
 
-## DescribeTunnelResponseTypeDef
+## DescribeTunnelRequestTypeDef
 
 ```python
-from mypy_boto3_iotsecuretunneling.type_defs import DescribeTunnelResponseTypeDef
+from mypy_boto3_iotsecuretunneling.type_defs import DescribeTunnelRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `tunnelId`: `str`
+
+## DescribeTunnelResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsecuretunneling.type_defs import DescribeTunnelResponseResponseTypeDef
+```
+
+Required fields:
 
 - `tunnel`: [TunnelTypeDef](./type_defs.md#tunneltypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DestinationConfigTypeDef
 
@@ -54,40 +88,107 @@ Optional fields:
 
 - `thingName`: `str`
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_iotsecuretunneling.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_iotsecuretunneling.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `resourceArn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsecuretunneling.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTunnelsResponseTypeDef
+## ListTunnelsRequestTypeDef
 
 ```python
-from mypy_boto3_iotsecuretunneling.type_defs import ListTunnelsResponseTypeDef
+from mypy_boto3_iotsecuretunneling.type_defs import ListTunnelsRequestTypeDef
 ```
 
 Optional fields:
+
+- `thingName`: `str`
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListTunnelsResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsecuretunneling.type_defs import ListTunnelsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `tunnelSummaries`:
   `List`\[[TunnelSummaryTypeDef](./type_defs.md#tunnelsummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## OpenTunnelResponseTypeDef
+## OpenTunnelRequestTypeDef
 
 ```python
-from mypy_boto3_iotsecuretunneling.type_defs import OpenTunnelResponseTypeDef
+from mypy_boto3_iotsecuretunneling.type_defs import OpenTunnelRequestTypeDef
 ```
 
 Optional fields:
+
+- `description`: `str`
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `destinationConfig`:
+  [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
+- `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
+
+## OpenTunnelResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotsecuretunneling.type_defs import OpenTunnelResponseResponseTypeDef
+```
+
+Required fields:
 
 - `tunnelId`: `str`
 - `tunnelArn`: `str`
 - `sourceAccessToken`: `str`
 - `destinationAccessToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_iotsecuretunneling.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_iotsecuretunneling.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -147,3 +248,14 @@ Optional fields:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
+
+## UntagResourceRequestTypeDef
+
+```python
+from mypy_boto3_iotsecuretunneling.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tagKeys`: `List`\[`str`\]

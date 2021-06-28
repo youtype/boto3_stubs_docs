@@ -62,19 +62,27 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_sts.type_defs import AssumeRoleResponseTypeDef, ...
+from mypy_boto3_sts.type_defs import AssumeRoleRequestTypeDef, ...
 ```
 
-- [AssumeRoleResponseTypeDef](./type_defs.md#assumeroleresponsetypedef)
-- [AssumeRoleWithSAMLResponseTypeDef](./type_defs.md#assumerolewithsamlresponsetypedef)
-- [AssumeRoleWithWebIdentityResponseTypeDef](./type_defs.md#assumerolewithwebidentityresponsetypedef)
+- [AssumeRoleRequestTypeDef](./type_defs.md#assumerolerequesttypedef)
+- [AssumeRoleResponseResponseTypeDef](./type_defs.md#assumeroleresponseresponsetypedef)
+- [AssumeRoleWithSAMLRequestTypeDef](./type_defs.md#assumerolewithsamlrequesttypedef)
+- [AssumeRoleWithSAMLResponseResponseTypeDef](./type_defs.md#assumerolewithsamlresponseresponsetypedef)
+- [AssumeRoleWithWebIdentityRequestTypeDef](./type_defs.md#assumerolewithwebidentityrequesttypedef)
+- [AssumeRoleWithWebIdentityResponseResponseTypeDef](./type_defs.md#assumerolewithwebidentityresponseresponsetypedef)
 - [AssumedRoleUserTypeDef](./type_defs.md#assumedroleusertypedef)
 - [CredentialsTypeDef](./type_defs.md#credentialstypedef)
-- [DecodeAuthorizationMessageResponseTypeDef](./type_defs.md#decodeauthorizationmessageresponsetypedef)
+- [DecodeAuthorizationMessageRequestTypeDef](./type_defs.md#decodeauthorizationmessagerequesttypedef)
+- [DecodeAuthorizationMessageResponseResponseTypeDef](./type_defs.md#decodeauthorizationmessageresponseresponsetypedef)
 - [FederatedUserTypeDef](./type_defs.md#federatedusertypedef)
-- [GetAccessKeyInfoResponseTypeDef](./type_defs.md#getaccesskeyinforesponsetypedef)
-- [GetCallerIdentityResponseTypeDef](./type_defs.md#getcalleridentityresponsetypedef)
-- [GetFederationTokenResponseTypeDef](./type_defs.md#getfederationtokenresponsetypedef)
-- [GetSessionTokenResponseTypeDef](./type_defs.md#getsessiontokenresponsetypedef)
+- [GetAccessKeyInfoRequestTypeDef](./type_defs.md#getaccesskeyinforequesttypedef)
+- [GetAccessKeyInfoResponseResponseTypeDef](./type_defs.md#getaccesskeyinforesponseresponsetypedef)
+- [GetCallerIdentityResponseResponseTypeDef](./type_defs.md#getcalleridentityresponseresponsetypedef)
+- [GetFederationTokenRequestTypeDef](./type_defs.md#getfederationtokenrequesttypedef)
+- [GetFederationTokenResponseResponseTypeDef](./type_defs.md#getfederationtokenresponseresponsetypedef)
+- [GetSessionTokenRequestTypeDef](./type_defs.md#getsessiontokenrequesttypedef)
+- [GetSessionTokenResponseResponseTypeDef](./type_defs.md#getsessiontokenresponseresponsetypedef)
 - [PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)

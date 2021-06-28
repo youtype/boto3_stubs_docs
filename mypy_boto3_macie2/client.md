@@ -114,10 +114,16 @@ Exceptions:
 
 ### accept_invitation
 
+Accepts an Amazon Macie membership invitation that was received from a specific
+account.
+
 Type annotations for `boto3.client("macie2").accept_invitation` method.
 
 Boto3 documentation:
 [Macie2.Client.accept_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.accept_invitation)
+
+Arguments mapping described in
+[AcceptInvitationRequestTypeDef](./type_defs.md#acceptinvitationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -129,20 +135,27 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### batch_get_custom_data_identifiers
 
+Retrieves information about one or more custom data identifiers.
+
 Type annotations for `boto3.client("macie2").batch_get_custom_data_identifiers`
 method.
 
 Boto3 documentation:
 [Macie2.Client.batch_get_custom_data_identifiers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.batch_get_custom_data_identifiers)
 
+Arguments mapping described in
+[BatchGetCustomDataIdentifiersRequestTypeDef](./type_defs.md#batchgetcustomdataidentifiersrequesttypedef).
+
 Keyword-only arguments:
 
 - `ids`: `List`\[`str`\]
 
 Returns
-[BatchGetCustomDataIdentifiersResponseTypeDef](./type_defs.md#batchgetcustomdataidentifiersresponsetypedef).
+[BatchGetCustomDataIdentifiersResponseResponseTypeDef](./type_defs.md#batchgetcustomdataidentifiersresponseresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("macie2").can_paginate` method.
 
@@ -157,10 +170,15 @@ Returns `bool`.
 
 ### create_classification_job
 
+Creates and defines the settings for a classification job.
+
 Type annotations for `boto3.client("macie2").create_classification_job` method.
 
 Boto3 documentation:
 [Macie2.Client.create_classification_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_classification_job)
+
+Arguments mapping described in
+[CreateClassificationJobRequestTypeDef](./type_defs.md#createclassificationjobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -178,15 +196,21 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateClassificationJobResponseTypeDef](./type_defs.md#createclassificationjobresponsetypedef).
+[CreateClassificationJobResponseResponseTypeDef](./type_defs.md#createclassificationjobresponseresponsetypedef).
 
 ### create_custom_data_identifier
+
+Creates and defines the criteria and other settings for a custom data
+identifier.
 
 Type annotations for `boto3.client("macie2").create_custom_data_identifier`
 method.
 
 Boto3 documentation:
 [Macie2.Client.create_custom_data_identifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_custom_data_identifier)
+
+Arguments mapping described in
+[CreateCustomDataIdentifierRequestTypeDef](./type_defs.md#createcustomdataidentifierrequesttypedef).
 
 Keyword-only arguments:
 
@@ -200,14 +224,19 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateCustomDataIdentifierResponseTypeDef](./type_defs.md#createcustomdataidentifierresponsetypedef).
+[CreateCustomDataIdentifierResponseResponseTypeDef](./type_defs.md#createcustomdataidentifierresponseresponsetypedef).
 
 ### create_findings_filter
+
+Creates and defines the criteria and other settings for a findings filter.
 
 Type annotations for `boto3.client("macie2").create_findings_filter` method.
 
 Boto3 documentation:
 [Macie2.Client.create_findings_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_findings_filter)
+
+Arguments mapping described in
+[CreateFindingsFilterRequestTypeDef](./type_defs.md#createfindingsfilterrequesttypedef).
 
 Keyword-only arguments:
 
@@ -222,14 +251,19 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateFindingsFilterResponseTypeDef](./type_defs.md#createfindingsfilterresponsetypedef).
+[CreateFindingsFilterResponseResponseTypeDef](./type_defs.md#createfindingsfilterresponseresponsetypedef).
 
 ### create_invitations
+
+Sends an Amazon Macie membership invitation to one or more accounts.
 
 Type annotations for `boto3.client("macie2").create_invitations` method.
 
 Boto3 documentation:
 [Macie2.Client.create_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_invitations)
+
+Arguments mapping described in
+[CreateInvitationsRequestTypeDef](./type_defs.md#createinvitationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -238,14 +272,19 @@ Keyword-only arguments:
 - `message`: `str`
 
 Returns
-[CreateInvitationsResponseTypeDef](./type_defs.md#createinvitationsresponsetypedef).
+[CreateInvitationsResponseResponseTypeDef](./type_defs.md#createinvitationsresponseresponsetypedef).
 
 ### create_member
+
+Associates an account with an Amazon Macie administrator account.
 
 Type annotations for `boto3.client("macie2").create_member` method.
 
 Boto3 documentation:
 [Macie2.Client.create_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_member)
+
+Arguments mapping described in
+[CreateMemberRequestTypeDef](./type_defs.md#creatememberrequesttypedef).
 
 Keyword-only arguments:
 
@@ -254,14 +293,19 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateMemberResponseTypeDef](./type_defs.md#creatememberresponsetypedef).
+[CreateMemberResponseResponseTypeDef](./type_defs.md#creatememberresponseresponsetypedef).
 
 ### create_sample_findings
+
+Creates sample findings.
 
 Type annotations for `boto3.client("macie2").create_sample_findings` method.
 
 Boto3 documentation:
 [Macie2.Client.create_sample_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_sample_findings)
+
+Arguments mapping described in
+[CreateSampleFindingsRequestTypeDef](./type_defs.md#createsamplefindingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -271,25 +315,36 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### decline_invitations
 
+Declines Amazon Macie membership invitations that were received from specific
+accounts.
+
 Type annotations for `boto3.client("macie2").decline_invitations` method.
 
 Boto3 documentation:
 [Macie2.Client.decline_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.decline_invitations)
+
+Arguments mapping described in
+[DeclineInvitationsRequestTypeDef](./type_defs.md#declineinvitationsrequesttypedef).
 
 Keyword-only arguments:
 
 - `accountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DeclineInvitationsResponseTypeDef](./type_defs.md#declineinvitationsresponsetypedef).
+[DeclineInvitationsResponseResponseTypeDef](./type_defs.md#declineinvitationsresponseresponsetypedef).
 
 ### delete_custom_data_identifier
+
+Soft deletes a custom data identifier.
 
 Type annotations for `boto3.client("macie2").delete_custom_data_identifier`
 method.
 
 Boto3 documentation:
 [Macie2.Client.delete_custom_data_identifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.delete_custom_data_identifier)
+
+Arguments mapping described in
+[DeleteCustomDataIdentifierRequestTypeDef](./type_defs.md#deletecustomdataidentifierrequesttypedef).
 
 Keyword-only arguments:
 
@@ -299,10 +354,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_findings_filter
 
+Deletes a findings filter.
+
 Type annotations for `boto3.client("macie2").delete_findings_filter` method.
 
 Boto3 documentation:
 [Macie2.Client.delete_findings_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.delete_findings_filter)
+
+Arguments mapping described in
+[DeleteFindingsFilterRequestTypeDef](./type_defs.md#deletefindingsfilterrequesttypedef).
 
 Keyword-only arguments:
 
@@ -312,24 +372,36 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_invitations
 
+Deletes Amazon Macie membership invitations that were received from specific
+accounts.
+
 Type annotations for `boto3.client("macie2").delete_invitations` method.
 
 Boto3 documentation:
 [Macie2.Client.delete_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.delete_invitations)
+
+Arguments mapping described in
+[DeleteInvitationsRequestTypeDef](./type_defs.md#deleteinvitationsrequesttypedef).
 
 Keyword-only arguments:
 
 - `accountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DeleteInvitationsResponseTypeDef](./type_defs.md#deleteinvitationsresponsetypedef).
+[DeleteInvitationsResponseResponseTypeDef](./type_defs.md#deleteinvitationsresponseresponsetypedef).
 
 ### delete_member
+
+Deletes the association between an Amazon Macie administrator account and an
+account.
 
 Type annotations for `boto3.client("macie2").delete_member` method.
 
 Boto3 documentation:
 [Macie2.Client.delete_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.delete_member)
+
+Arguments mapping described in
+[DeleteMemberRequestTypeDef](./type_defs.md#deletememberrequesttypedef).
 
 Keyword-only arguments:
 
@@ -339,10 +411,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_buckets
 
+Retrieves (queries) statistical data and other information about one or more S3
+buckets that Amazon Macie monitors and analyzes.
+
 Type annotations for `boto3.client("macie2").describe_buckets` method.
 
 Boto3 documentation:
 [Macie2.Client.describe_buckets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.describe_buckets)
+
+Arguments mapping described in
+[DescribeBucketsRequestTypeDef](./type_defs.md#describebucketsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -354,9 +432,11 @@ Keyword-only arguments:
   [BucketSortCriteriaTypeDef](./type_defs.md#bucketsortcriteriatypedef)
 
 Returns
-[DescribeBucketsResponseTypeDef](./type_defs.md#describebucketsresponsetypedef).
+[DescribeBucketsResponseResponseTypeDef](./type_defs.md#describebucketsresponseresponsetypedef).
 
 ### describe_classification_job
+
+Retrieves the status and settings for a classification job.
 
 Type annotations for `boto3.client("macie2").describe_classification_job`
 method.
@@ -364,14 +444,19 @@ method.
 Boto3 documentation:
 [Macie2.Client.describe_classification_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.describe_classification_job)
 
+Arguments mapping described in
+[DescribeClassificationJobRequestTypeDef](./type_defs.md#describeclassificationjobrequesttypedef).
+
 Keyword-only arguments:
 
 - `jobId`: `str` *(required)*
 
 Returns
-[DescribeClassificationJobResponseTypeDef](./type_defs.md#describeclassificationjobresponsetypedef).
+[DescribeClassificationJobResponseResponseTypeDef](./type_defs.md#describeclassificationjobresponseresponsetypedef).
 
 ### describe_organization_configuration
+
+Retrieves the Amazon Macie configuration settings for an AWS organization.
 
 Type annotations for
 `boto3.client("macie2").describe_organization_configuration` method.
@@ -380,9 +465,11 @@ Boto3 documentation:
 [Macie2.Client.describe_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.describe_organization_configuration)
 
 Returns
-[DescribeOrganizationConfigurationResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponsetypedef).
+[DescribeOrganizationConfigurationResponseResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponseresponsetypedef).
 
 ### disable_macie
+
+Disables an Amazon Macie account and deletes Macie resources for the account.
 
 Type annotations for `boto3.client("macie2").disable_macie` method.
 
@@ -393,11 +480,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### disable_organization_admin_account
 
+Disables an account as the delegated Amazon Macie administrator account for an
+AWS organization.
+
 Type annotations for
 `boto3.client("macie2").disable_organization_admin_account` method.
 
 Boto3 documentation:
 [Macie2.Client.disable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.disable_organization_admin_account)
+
+Arguments mapping described in
+[DisableOrganizationAdminAccountRequestTypeDef](./type_defs.md#disableorganizationadminaccountrequesttypedef).
 
 Keyword-only arguments:
 
@@ -406,6 +499,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_from_administrator_account
+
+Disassociates a member account from its Amazon Macie administrator account.
 
 Type annotations for
 `boto3.client("macie2").disassociate_from_administrator_account` method.
@@ -417,6 +512,9 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_from_master_account
 
+(Deprecated) Disassociates a member account from its Amazon Macie administrator
+account.
+
 Type annotations for `boto3.client("macie2").disassociate_from_master_account`
 method.
 
@@ -427,10 +525,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_member
 
+Disassociates an Amazon Macie administrator account from a member account.
+
 Type annotations for `boto3.client("macie2").disassociate_member` method.
 
 Boto3 documentation:
 [Macie2.Client.disassociate_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.disassociate_member)
+
+Arguments mapping described in
+[DisassociateMemberRequestTypeDef](./type_defs.md#disassociatememberrequesttypedef).
 
 Keyword-only arguments:
 
@@ -440,10 +543,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### enable_macie
 
+Enables Amazon Macie and specifies the configuration settings for a Macie
+account.
+
 Type annotations for `boto3.client("macie2").enable_macie` method.
 
 Boto3 documentation:
 [Macie2.Client.enable_macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.enable_macie)
+
+Arguments mapping described in
+[EnableMacieRequestTypeDef](./type_defs.md#enablemacierequesttypedef).
 
 Keyword-only arguments:
 
@@ -456,11 +565,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### enable_organization_admin_account
 
+Designates an account as the delegated Amazon Macie administrator account for
+an AWS organization.
+
 Type annotations for `boto3.client("macie2").enable_organization_admin_account`
 method.
 
 Boto3 documentation:
 [Macie2.Client.enable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.enable_organization_admin_account)
+
+Arguments mapping described in
+[EnableOrganizationAdminAccountRequestTypeDef](./type_defs.md#enableorganizationadminaccountrequesttypedef).
 
 Keyword-only arguments:
 
@@ -470,6 +585,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("macie2").generate_presigned_url` method.
 
@@ -487,29 +604,40 @@ Returns `str`.
 
 ### get_administrator_account
 
+Retrieves information about the Amazon Macie administrator account for an
+account.
+
 Type annotations for `boto3.client("macie2").get_administrator_account` method.
 
 Boto3 documentation:
 [Macie2.Client.get_administrator_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_administrator_account)
 
 Returns
-[GetAdministratorAccountResponseTypeDef](./type_defs.md#getadministratoraccountresponsetypedef).
+[GetAdministratorAccountResponseResponseTypeDef](./type_defs.md#getadministratoraccountresponseresponsetypedef).
 
 ### get_bucket_statistics
+
+Retrieves (queries) aggregated statistical data for all the S3 buckets that
+Amazon Macie monitors and analyzes.
 
 Type annotations for `boto3.client("macie2").get_bucket_statistics` method.
 
 Boto3 documentation:
 [Macie2.Client.get_bucket_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_bucket_statistics)
 
+Arguments mapping described in
+[GetBucketStatisticsRequestTypeDef](./type_defs.md#getbucketstatisticsrequesttypedef).
+
 Keyword-only arguments:
 
 - `accountId`: `str`
 
 Returns
-[GetBucketStatisticsResponseTypeDef](./type_defs.md#getbucketstatisticsresponsetypedef).
+[GetBucketStatisticsResponseResponseTypeDef](./type_defs.md#getbucketstatisticsresponseresponsetypedef).
 
 ### get_classification_export_configuration
+
+Retrieves the configuration settings for storing data classification results.
 
 Type annotations for
 `boto3.client("macie2").get_classification_export_configuration` method.
@@ -518,9 +646,11 @@ Boto3 documentation:
 [Macie2.Client.get_classification_export_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_classification_export_configuration)
 
 Returns
-[GetClassificationExportConfigurationResponseTypeDef](./type_defs.md#getclassificationexportconfigurationresponsetypedef).
+[GetClassificationExportConfigurationResponseResponseTypeDef](./type_defs.md#getclassificationexportconfigurationresponseresponsetypedef).
 
 ### get_custom_data_identifier
+
+Retrieves the criteria and other settings for a custom data identifier.
 
 Type annotations for `boto3.client("macie2").get_custom_data_identifier`
 method.
@@ -528,19 +658,27 @@ method.
 Boto3 documentation:
 [Macie2.Client.get_custom_data_identifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_custom_data_identifier)
 
+Arguments mapping described in
+[GetCustomDataIdentifierRequestTypeDef](./type_defs.md#getcustomdataidentifierrequesttypedef).
+
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
 Returns
-[GetCustomDataIdentifierResponseTypeDef](./type_defs.md#getcustomdataidentifierresponsetypedef).
+[GetCustomDataIdentifierResponseResponseTypeDef](./type_defs.md#getcustomdataidentifierresponseresponsetypedef).
 
 ### get_finding_statistics
+
+Retrieves (queries) aggregated statistical data about findings.
 
 Type annotations for `boto3.client("macie2").get_finding_statistics` method.
 
 Boto3 documentation:
 [Macie2.Client.get_finding_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_finding_statistics)
+
+Arguments mapping described in
+[GetFindingStatisticsRequestTypeDef](./type_defs.md#getfindingstatisticsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -552,14 +690,19 @@ Keyword-only arguments:
   [FindingStatisticsSortCriteriaTypeDef](./type_defs.md#findingstatisticssortcriteriatypedef)
 
 Returns
-[GetFindingStatisticsResponseTypeDef](./type_defs.md#getfindingstatisticsresponsetypedef).
+[GetFindingStatisticsResponseResponseTypeDef](./type_defs.md#getfindingstatisticsresponseresponsetypedef).
 
 ### get_findings
+
+Retrieves the details of one or more findings.
 
 Type annotations for `boto3.client("macie2").get_findings` method.
 
 Boto3 documentation:
 [Macie2.Client.get_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_findings)
+
+Arguments mapping described in
+[GetFindingsRequestTypeDef](./type_defs.md#getfindingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -567,23 +710,31 @@ Keyword-only arguments:
 - `sortCriteria`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
 
 Returns
-[GetFindingsResponseTypeDef](./type_defs.md#getfindingsresponsetypedef).
+[GetFindingsResponseResponseTypeDef](./type_defs.md#getfindingsresponseresponsetypedef).
 
 ### get_findings_filter
+
+Retrieves the criteria and other settings for a findings filter.
 
 Type annotations for `boto3.client("macie2").get_findings_filter` method.
 
 Boto3 documentation:
 [Macie2.Client.get_findings_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_findings_filter)
 
+Arguments mapping described in
+[GetFindingsFilterRequestTypeDef](./type_defs.md#getfindingsfilterrequesttypedef).
+
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
 Returns
-[GetFindingsFilterResponseTypeDef](./type_defs.md#getfindingsfilterresponsetypedef).
+[GetFindingsFilterResponseResponseTypeDef](./type_defs.md#getfindingsfilterresponseresponsetypedef).
 
 ### get_findings_publication_configuration
+
+Retrieves the configuration settings for publishing findings to AWS Security
+Hub.
 
 Type annotations for
 `boto3.client("macie2").get_findings_publication_configuration` method.
@@ -592,9 +743,12 @@ Boto3 documentation:
 [Macie2.Client.get_findings_publication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_findings_publication_configuration)
 
 Returns
-[GetFindingsPublicationConfigurationResponseTypeDef](./type_defs.md#getfindingspublicationconfigurationresponsetypedef).
+[GetFindingsPublicationConfigurationResponseResponseTypeDef](./type_defs.md#getfindingspublicationconfigurationresponseresponsetypedef).
 
 ### get_invitations_count
+
+Retrieves the count of Amazon Macie membership invitations that were received
+by an account.
 
 Type annotations for `boto3.client("macie2").get_invitations_count` method.
 
@@ -602,9 +756,12 @@ Boto3 documentation:
 [Macie2.Client.get_invitations_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_invitations_count)
 
 Returns
-[GetInvitationsCountResponseTypeDef](./type_defs.md#getinvitationscountresponsetypedef).
+[GetInvitationsCountResponseResponseTypeDef](./type_defs.md#getinvitationscountresponseresponsetypedef).
 
 ### get_macie_session
+
+Retrieves the current status and configuration settings for an Amazon Macie
+account.
 
 Type annotations for `boto3.client("macie2").get_macie_session` method.
 
@@ -612,9 +769,12 @@ Boto3 documentation:
 [Macie2.Client.get_macie_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_macie_session)
 
 Returns
-[GetMacieSessionResponseTypeDef](./type_defs.md#getmaciesessionresponsetypedef).
+[GetMacieSessionResponseResponseTypeDef](./type_defs.md#getmaciesessionresponseresponsetypedef).
 
 ### get_master_account
+
+(Deprecated) Retrieves information about the Amazon Macie administrator account
+for an account.
 
 Type annotations for `boto3.client("macie2").get_master_account` method.
 
@@ -622,27 +782,39 @@ Boto3 documentation:
 [Macie2.Client.get_master_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_master_account)
 
 Returns
-[GetMasterAccountResponseTypeDef](./type_defs.md#getmasteraccountresponsetypedef).
+[GetMasterAccountResponseResponseTypeDef](./type_defs.md#getmasteraccountresponseresponsetypedef).
 
 ### get_member
+
+Retrieves information about an account that's associated with an Amazon Macie
+administrator account.
 
 Type annotations for `boto3.client("macie2").get_member` method.
 
 Boto3 documentation:
 [Macie2.Client.get_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_member)
 
+Arguments mapping described in
+[GetMemberRequestTypeDef](./type_defs.md#getmemberrequesttypedef).
+
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
-Returns [GetMemberResponseTypeDef](./type_defs.md#getmemberresponsetypedef).
+Returns
+[GetMemberResponseResponseTypeDef](./type_defs.md#getmemberresponseresponsetypedef).
 
 ### get_usage_statistics
+
+Retrieves (queries) quotas and aggregated usage data for one or more accounts.
 
 Type annotations for `boto3.client("macie2").get_usage_statistics` method.
 
 Boto3 documentation:
 [Macie2.Client.get_usage_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_usage_statistics)
+
+Arguments mapping described in
+[GetUsageStatisticsRequestTypeDef](./type_defs.md#getusagestatisticsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -655,28 +827,38 @@ Keyword-only arguments:
 - `timeRange`: [TimeRangeType](./literals.md#timerangetype)
 
 Returns
-[GetUsageStatisticsResponseTypeDef](./type_defs.md#getusagestatisticsresponsetypedef).
+[GetUsageStatisticsResponseResponseTypeDef](./type_defs.md#getusagestatisticsresponseresponsetypedef).
 
 ### get_usage_totals
+
+Retrieves (queries) aggregated usage data for an account.
 
 Type annotations for `boto3.client("macie2").get_usage_totals` method.
 
 Boto3 documentation:
 [Macie2.Client.get_usage_totals](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_usage_totals)
 
+Arguments mapping described in
+[GetUsageTotalsRequestTypeDef](./type_defs.md#getusagetotalsrequesttypedef).
+
 Keyword-only arguments:
 
 - `timeRange`: `str`
 
 Returns
-[GetUsageTotalsResponseTypeDef](./type_defs.md#getusagetotalsresponsetypedef).
+[GetUsageTotalsResponseResponseTypeDef](./type_defs.md#getusagetotalsresponseresponsetypedef).
 
 ### list_classification_jobs
+
+Retrieves a subset of information about one or more classification jobs.
 
 Type annotations for `boto3.client("macie2").list_classification_jobs` method.
 
 Boto3 documentation:
 [Macie2.Client.list_classification_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_classification_jobs)
+
+Arguments mapping described in
+[ListClassificationJobsRequestTypeDef](./type_defs.md#listclassificationjobsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -688,9 +870,12 @@ Keyword-only arguments:
   [ListJobsSortCriteriaTypeDef](./type_defs.md#listjobssortcriteriatypedef)
 
 Returns
-[ListClassificationJobsResponseTypeDef](./type_defs.md#listclassificationjobsresponsetypedef).
+[ListClassificationJobsResponseResponseTypeDef](./type_defs.md#listclassificationjobsresponseresponsetypedef).
 
 ### list_custom_data_identifiers
+
+Retrieves a subset of information about all the custom data identifiers for an
+account.
 
 Type annotations for `boto3.client("macie2").list_custom_data_identifiers`
 method.
@@ -698,20 +883,28 @@ method.
 Boto3 documentation:
 [Macie2.Client.list_custom_data_identifiers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_custom_data_identifiers)
 
+Arguments mapping described in
+[ListCustomDataIdentifiersRequestTypeDef](./type_defs.md#listcustomdataidentifiersrequesttypedef).
+
 Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListCustomDataIdentifiersResponseTypeDef](./type_defs.md#listcustomdataidentifiersresponsetypedef).
+[ListCustomDataIdentifiersResponseResponseTypeDef](./type_defs.md#listcustomdataidentifiersresponseresponsetypedef).
 
 ### list_findings
+
+Retrieves a subset of information about one or more findings.
 
 Type annotations for `boto3.client("macie2").list_findings` method.
 
 Boto3 documentation:
 [Macie2.Client.list_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_findings)
+
+Arguments mapping described in
+[ListFindingsRequestTypeDef](./type_defs.md#listfindingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -722,44 +915,62 @@ Keyword-only arguments:
 - `sortCriteria`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
 
 Returns
-[ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef).
+[ListFindingsResponseResponseTypeDef](./type_defs.md#listfindingsresponseresponsetypedef).
 
 ### list_findings_filters
+
+Retrieves a subset of information about all the findings filters for an
+account.
 
 Type annotations for `boto3.client("macie2").list_findings_filters` method.
 
 Boto3 documentation:
 [Macie2.Client.list_findings_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_findings_filters)
 
+Arguments mapping described in
+[ListFindingsFiltersRequestTypeDef](./type_defs.md#listfindingsfiltersrequesttypedef).
+
 Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListFindingsFiltersResponseTypeDef](./type_defs.md#listfindingsfiltersresponsetypedef).
+[ListFindingsFiltersResponseResponseTypeDef](./type_defs.md#listfindingsfiltersresponseresponsetypedef).
 
 ### list_invitations
+
+Retrieves information about all the Amazon Macie membership invitations that
+were received by an account.
 
 Type annotations for `boto3.client("macie2").list_invitations` method.
 
 Boto3 documentation:
 [Macie2.Client.list_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_invitations)
 
+Arguments mapping described in
+[ListInvitationsRequestTypeDef](./type_defs.md#listinvitationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef).
+[ListInvitationsResponseResponseTypeDef](./type_defs.md#listinvitationsresponseresponsetypedef).
 
 ### list_members
+
+Retrieves information about the accounts that are associated with an Amazon
+Macie administrator account.
 
 Type annotations for `boto3.client("macie2").list_members` method.
 
 Boto3 documentation:
 [Macie2.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_members)
+
+Arguments mapping described in
+[ListMembersRequestTypeDef](./type_defs.md#listmembersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -768,9 +979,12 @@ Keyword-only arguments:
 - `onlyAssociated`: `str`
 
 Returns
-[ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef).
+[ListMembersResponseResponseTypeDef](./type_defs.md#listmembersresponseresponsetypedef).
 
 ### list_organization_admin_accounts
+
+Retrieves information about the delegated Amazon Macie administrator account
+for an AWS organization.
 
 Type annotations for `boto3.client("macie2").list_organization_admin_accounts`
 method.
@@ -778,35 +992,50 @@ method.
 Boto3 documentation:
 [Macie2.Client.list_organization_admin_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_organization_admin_accounts)
 
+Arguments mapping described in
+[ListOrganizationAdminAccountsRequestTypeDef](./type_defs.md#listorganizationadminaccountsrequesttypedef).
+
 Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef).
+[ListOrganizationAdminAccountsResponseResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Retrieves the tags (keys and values) that are associated with a classification
+job, custom data identifier, findings filter, or member account.
 
 Type annotations for `boto3.client("macie2").list_tags_for_resource` method.
 
 Boto3 documentation:
 [Macie2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### put_classification_export_configuration
+
+Creates or updates the configuration settings for storing data classification
+results.
 
 Type annotations for
 `boto3.client("macie2").put_classification_export_configuration` method.
 
 Boto3 documentation:
 [Macie2.Client.put_classification_export_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.put_classification_export_configuration)
+
+Arguments mapping described in
+[PutClassificationExportConfigurationRequestTypeDef](./type_defs.md#putclassificationexportconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -815,15 +1044,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutClassificationExportConfigurationResponseTypeDef](./type_defs.md#putclassificationexportconfigurationresponsetypedef).
+[PutClassificationExportConfigurationResponseResponseTypeDef](./type_defs.md#putclassificationexportconfigurationresponseresponsetypedef).
 
 ### put_findings_publication_configuration
+
+Updates the configuration settings for publishing findings to AWS Security Hub.
 
 Type annotations for
 `boto3.client("macie2").put_findings_publication_configuration` method.
 
 Boto3 documentation:
 [Macie2.Client.put_findings_publication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.put_findings_publication_configuration)
+
+Arguments mapping described in
+[PutFindingsPublicationConfigurationRequestTypeDef](./type_defs.md#putfindingspublicationconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -835,10 +1069,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### search_resources
 
+Retrieves (queries) statistical data and other information about AWS resources
+that Amazon Macie monitors and analyzes.
+
 Type annotations for `boto3.client("macie2").search_resources` method.
 
 Boto3 documentation:
 [Macie2.Client.search_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.search_resources)
+
+Arguments mapping described in
+[SearchResourcesRequestTypeDef](./type_defs.md#searchresourcesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -850,14 +1090,20 @@ Keyword-only arguments:
   [SearchResourcesSortCriteriaTypeDef](./type_defs.md#searchresourcessortcriteriatypedef)
 
 Returns
-[SearchResourcesResponseTypeDef](./type_defs.md#searchresourcesresponsetypedef).
+[SearchResourcesResponseResponseTypeDef](./type_defs.md#searchresourcesresponseresponsetypedef).
 
 ### tag_resource
+
+Adds or updates one or more tags (keys and values) that are associated with a
+classification job, custom data identifier, findings filter, or member account.
 
 Type annotations for `boto3.client("macie2").tag_resource` method.
 
 Boto3 documentation:
 [Macie2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -868,11 +1114,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### test_custom_data_identifier
 
+Tests a custom data identifier.
+
 Type annotations for `boto3.client("macie2").test_custom_data_identifier`
 method.
 
 Boto3 documentation:
 [Macie2.Client.test_custom_data_identifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.test_custom_data_identifier)
+
+Arguments mapping described in
+[TestCustomDataIdentifierRequestTypeDef](./type_defs.md#testcustomdataidentifierrequesttypedef).
 
 Keyword-only arguments:
 
@@ -883,14 +1134,20 @@ Keyword-only arguments:
 - `maximumMatchDistance`: `int`
 
 Returns
-[TestCustomDataIdentifierResponseTypeDef](./type_defs.md#testcustomdataidentifierresponsetypedef).
+[TestCustomDataIdentifierResponseResponseTypeDef](./type_defs.md#testcustomdataidentifierresponseresponsetypedef).
 
 ### untag_resource
+
+Removes one or more tags (keys and values) from a classification job, custom
+data identifier, findings filter, or member account.
 
 Type annotations for `boto3.client("macie2").untag_resource` method.
 
 Boto3 documentation:
 [Macie2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -901,10 +1158,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_classification_job
 
+Changes the status of a classification job.
+
 Type annotations for `boto3.client("macie2").update_classification_job` method.
 
 Boto3 documentation:
 [Macie2.Client.update_classification_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_classification_job)
+
+Arguments mapping described in
+[UpdateClassificationJobRequestTypeDef](./type_defs.md#updateclassificationjobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -915,10 +1177,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_findings_filter
 
+Updates the criteria and other settings for a findings filter.
+
 Type annotations for `boto3.client("macie2").update_findings_filter` method.
 
 Boto3 documentation:
 [Macie2.Client.update_findings_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_findings_filter)
+
+Arguments mapping described in
+[UpdateFindingsFilterRequestTypeDef](./type_defs.md#updatefindingsfilterrequesttypedef).
 
 Keyword-only arguments:
 
@@ -932,14 +1199,20 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[UpdateFindingsFilterResponseTypeDef](./type_defs.md#updatefindingsfilterresponsetypedef).
+[UpdateFindingsFilterResponseResponseTypeDef](./type_defs.md#updatefindingsfilterresponseresponsetypedef).
 
 ### update_macie_session
+
+Suspends or re-enables an Amazon Macie account, or updates the configuration
+settings for a Macie account.
 
 Type annotations for `boto3.client("macie2").update_macie_session` method.
 
 Boto3 documentation:
 [Macie2.Client.update_macie_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_macie_session)
+
+Arguments mapping described in
+[UpdateMacieSessionRequestTypeDef](./type_defs.md#updatemaciesessionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -951,10 +1224,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_member_session
 
+Enables an Amazon Macie administrator to suspend or re-enable a member account.
+
 Type annotations for `boto3.client("macie2").update_member_session` method.
 
 Boto3 documentation:
 [Macie2.Client.update_member_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_member_session)
+
+Arguments mapping described in
+[UpdateMemberSessionRequestTypeDef](./type_defs.md#updatemembersessionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -965,11 +1243,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_organization_configuration
 
+Updates the Amazon Macie configuration settings for an AWS organization.
+
 Type annotations for `boto3.client("macie2").update_organization_configuration`
 method.
 
 Boto3 documentation:
 [Macie2.Client.update_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_organization_configuration)
+
+Arguments mapping described in
+[UpdateOrganizationConfigurationRequestTypeDef](./type_defs.md#updateorganizationconfigurationrequesttypedef).
 
 Keyword-only arguments:
 

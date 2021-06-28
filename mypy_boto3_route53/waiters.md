@@ -25,7 +25,7 @@ def get_resource_record_sets_changed_waiter() -> ResourceRecordSetsChangedWaiter
 ```
 
 Boto3 documentation:
-[Route53.Waiter.resource_record_sets_changed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Waiter.resource_record_sets_changed)
+[Route53.Waiter.resource_record_sets_changed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Waiter.ResourceRecordSetsChanged)
 
 Arguments for `ResourceRecordSetsChangedWaiter.wait` method:
 

@@ -51,9 +51,12 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_personalize_runtime.type_defs import GetPersonalizedRankingResponseTypeDef, ...
+from mypy_boto3_personalize_runtime.type_defs import GetPersonalizedRankingRequestTypeDef, ...
 ```
 
-- [GetPersonalizedRankingResponseTypeDef](./type_defs.md#getpersonalizedrankingresponsetypedef)
-- [GetRecommendationsResponseTypeDef](./type_defs.md#getrecommendationsresponsetypedef)
+- [GetPersonalizedRankingRequestTypeDef](./type_defs.md#getpersonalizedrankingrequesttypedef)
+- [GetPersonalizedRankingResponseResponseTypeDef](./type_defs.md#getpersonalizedrankingresponseresponsetypedef)
+- [GetRecommendationsRequestTypeDef](./type_defs.md#getrecommendationsrequesttypedef)
+- [GetRecommendationsResponseResponseTypeDef](./type_defs.md#getrecommendationsresponseresponsetypedef)
 - [PredictedItemTypeDef](./type_defs.md#predicteditemtypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

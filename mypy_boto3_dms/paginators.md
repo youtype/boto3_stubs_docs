@@ -46,7 +46,7 @@ Arguments for `DescribeCertificatesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCertificatesPaginator.paginate` returns
-`Iterator`\[[DescribeCertificatesResponseTypeDef](./type_defs.md#describecertificatesresponsetypedef)\].
+`Iterator`\[[DescribeCertificatesResponseResponseTypeDef](./type_defs.md#describecertificatesresponseresponsetypedef)\].
 
 ## DescribeConnectionsPaginator
 
@@ -72,7 +72,7 @@ Arguments for `DescribeConnectionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeConnectionsPaginator.paginate` returns
-`Iterator`\[[DescribeConnectionsResponseTypeDef](./type_defs.md#describeconnectionsresponsetypedef)\].
+`Iterator`\[[DescribeConnectionsResponseResponseTypeDef](./type_defs.md#describeconnectionsresponseresponsetypedef)\].
 
 ## DescribeEndpointTypesPaginator
 
@@ -98,7 +98,7 @@ Arguments for `DescribeEndpointTypesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEndpointTypesPaginator.paginate` returns
-`Iterator`\[[DescribeEndpointTypesResponseTypeDef](./type_defs.md#describeendpointtypesresponsetypedef)\].
+`Iterator`\[[DescribeEndpointTypesResponseResponseTypeDef](./type_defs.md#describeendpointtypesresponseresponsetypedef)\].
 
 ## DescribeEndpointsPaginator
 
@@ -123,7 +123,7 @@ Arguments for `DescribeEndpointsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEndpointsPaginator.paginate` returns
-`Iterator`\[[DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef)\].
+`Iterator`\[[DescribeEndpointsResponseResponseTypeDef](./type_defs.md#describeendpointsresponseresponsetypedef)\].
 
 ## DescribeEventSubscriptionsPaginator
 
@@ -150,7 +150,7 @@ Arguments for `DescribeEventSubscriptionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEventSubscriptionsPaginator.paginate` returns
-`Iterator`\[[DescribeEventSubscriptionsResponseTypeDef](./type_defs.md#describeeventsubscriptionsresponsetypedef)\].
+`Iterator`\[[DescribeEventSubscriptionsResponseResponseTypeDef](./type_defs.md#describeeventsubscriptionsresponseresponsetypedef)\].
 
 ## DescribeEventsPaginator
 
@@ -173,8 +173,8 @@ Arguments for `DescribeEventsPaginator.paginate` method:
 - `SourceIdentifier`: `str`
 - `SourceType`: `Literal['replication-instance']` (see
   [SourceTypeType](./literals.md#sourcetypetype))
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
 - `Duration`: `int`
 - `EventCategories`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -182,7 +182,7 @@ Arguments for `DescribeEventsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEventsPaginator.paginate` returns
-`Iterator`\[[DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef)\].
+`Iterator`\[[DescribeEventsResponseResponseTypeDef](./type_defs.md#describeeventsresponseresponsetypedef)\].
 
 ## DescribeOrderableReplicationInstancesPaginator
 
@@ -207,7 +207,7 @@ Arguments for `DescribeOrderableReplicationInstancesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeOrderableReplicationInstancesPaginator.paginate` returns
-`Iterator`\[[DescribeOrderableReplicationInstancesResponseTypeDef](./type_defs.md#describeorderablereplicationinstancesresponsetypedef)\].
+`Iterator`\[[DescribeOrderableReplicationInstancesResponseResponseTypeDef](./type_defs.md#describeorderablereplicationinstancesresponseresponsetypedef)\].
 
 ## DescribeReplicationInstancesPaginator
 
@@ -233,7 +233,7 @@ Arguments for `DescribeReplicationInstancesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReplicationInstancesPaginator.paginate` returns
-`Iterator`\[[DescribeReplicationInstancesResponseTypeDef](./type_defs.md#describereplicationinstancesresponsetypedef)\].
+`Iterator`\[[DescribeReplicationInstancesResponseResponseTypeDef](./type_defs.md#describereplicationinstancesresponseresponsetypedef)\].
 
 ## DescribeReplicationSubnetGroupsPaginator
 
@@ -259,7 +259,7 @@ Arguments for `DescribeReplicationSubnetGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReplicationSubnetGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeReplicationSubnetGroupsResponseTypeDef](./type_defs.md#describereplicationsubnetgroupsresponsetypedef)\].
+`Iterator`\[[DescribeReplicationSubnetGroupsResponseResponseTypeDef](./type_defs.md#describereplicationsubnetgroupsresponseresponsetypedef)\].
 
 ## DescribeReplicationTaskAssessmentResultsPaginator
 
@@ -286,7 +286,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReplicationTaskAssessmentResultsPaginator.paginate` returns
-`Iterator`\[[DescribeReplicationTaskAssessmentResultsResponseTypeDef](./type_defs.md#describereplicationtaskassessmentresultsresponsetypedef)\].
+`Iterator`\[[DescribeReplicationTaskAssessmentResultsResponseResponseTypeDef](./type_defs.md#describereplicationtaskassessmentresultsresponseresponsetypedef)\].
 
 ## DescribeReplicationTasksPaginator
 
@@ -313,7 +313,7 @@ Arguments for `DescribeReplicationTasksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReplicationTasksPaginator.paginate` returns
-`Iterator`\[[DescribeReplicationTasksResponseTypeDef](./type_defs.md#describereplicationtasksresponsetypedef)\].
+`Iterator`\[[DescribeReplicationTasksResponseResponseTypeDef](./type_defs.md#describereplicationtasksresponseresponsetypedef)\].
 
 ## DescribeSchemasPaginator
 
@@ -338,7 +338,7 @@ Arguments for `DescribeSchemasPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSchemasPaginator.paginate` returns
-`Iterator`\[[DescribeSchemasResponseTypeDef](./type_defs.md#describeschemasresponsetypedef)\].
+`Iterator`\[[DescribeSchemasResponseResponseTypeDef](./type_defs.md#describeschemasresponseresponsetypedef)\].
 
 ## DescribeTableStatisticsPaginator
 
@@ -365,4 +365,4 @@ Arguments for `DescribeTableStatisticsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTableStatisticsPaginator.paginate` returns
-`Iterator`\[[DescribeTableStatisticsResponseTypeDef](./type_defs.md#describetablestatisticsresponsetypedef)\].
+`Iterator`\[[DescribeTableStatisticsResponseResponseTypeDef](./type_defs.md#describetablestatisticsresponseresponsetypedef)\].

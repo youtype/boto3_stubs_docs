@@ -60,11 +60,16 @@ Exceptions:
 
 ### batch_get_record
 
+Retrieves a batch of `Records` from a `FeatureGroup` .
+
 Type annotations for
 `boto3.client("sagemaker-featurestore-runtime").batch_get_record` method.
 
 Boto3 documentation:
 [SageMakerFeatureStoreRuntime.Client.batch_get_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SageMakerFeatureStoreRuntime.Client.batch_get_record)
+
+Arguments mapping described in
+[BatchGetRecordRequestTypeDef](./type_defs.md#batchgetrecordrequesttypedef).
 
 Keyword-only arguments:
 
@@ -73,9 +78,11 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchGetRecordResponseTypeDef](./type_defs.md#batchgetrecordresponsetypedef).
+[BatchGetRecordResponseResponseTypeDef](./type_defs.md#batchgetrecordresponseresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for
 `boto3.client("sagemaker-featurestore-runtime").can_paginate` method.
@@ -91,11 +98,16 @@ Returns `bool`.
 
 ### delete_record
 
+Deletes a `Record` from a `FeatureGroup`.
+
 Type annotations for
 `boto3.client("sagemaker-featurestore-runtime").delete_record` method.
 
 Boto3 documentation:
 [SageMakerFeatureStoreRuntime.Client.delete_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SageMakerFeatureStoreRuntime.Client.delete_record)
+
+Arguments mapping described in
+[DeleteRecordRequestTypeDef](./type_defs.md#deleterecordrequesttypedef).
 
 Keyword-only arguments:
 
@@ -104,6 +116,8 @@ Keyword-only arguments:
 - `EventTime`: `str` *(required)*
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for
 `boto3.client("sagemaker-featurestore-runtime").generate_presigned_url` method.
@@ -122,11 +136,16 @@ Returns `str`.
 
 ### get_record
 
+Use for `OnlineStore` serving from a `FeatureStore`.
+
 Type annotations for
 `boto3.client("sagemaker-featurestore-runtime").get_record` method.
 
 Boto3 documentation:
 [SageMakerFeatureStoreRuntime.Client.get_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SageMakerFeatureStoreRuntime.Client.get_record)
+
+Arguments mapping described in
+[GetRecordRequestTypeDef](./type_defs.md#getrecordrequesttypedef).
 
 Keyword-only arguments:
 
@@ -134,15 +153,21 @@ Keyword-only arguments:
 - `RecordIdentifierValueAsString`: `str` *(required)*
 - `FeatureNames`: `List`\[`str`\]
 
-Returns [GetRecordResponseTypeDef](./type_defs.md#getrecordresponsetypedef).
+Returns
+[GetRecordResponseResponseTypeDef](./type_defs.md#getrecordresponseresponsetypedef).
 
 ### put_record
+
+Used for data ingestion into the `FeatureStore`.
 
 Type annotations for
 `boto3.client("sagemaker-featurestore-runtime").put_record` method.
 
 Boto3 documentation:
 [SageMakerFeatureStoreRuntime.Client.put_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SageMakerFeatureStoreRuntime.Client.put_record)
+
+Arguments mapping described in
+[PutRecordRequestTypeDef](./type_defs.md#putrecordrequesttypedef).
 
 Keyword-only arguments:
 

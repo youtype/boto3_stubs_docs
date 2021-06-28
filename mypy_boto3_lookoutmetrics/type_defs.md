@@ -9,6 +9,7 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 LookoutMetrics module](#typed-dictionaries-for-boto3-lookoutmetrics-module)
   - [ActionTypeDef](#actiontypedef)
+  - [ActivateAnomalyDetectorRequestTypeDef](#activateanomalydetectorrequesttypedef)
   - [AlertSummaryTypeDef](#alertsummarytypedef)
   - [AlertTypeDef](#alerttypedef)
   - [AnomalyDetectorConfigSummaryTypeDef](#anomalydetectorconfigsummarytypedef)
@@ -20,47 +21,72 @@ type annotations stubs module
   - [AnomalyGroupTimeSeriesTypeDef](#anomalygrouptimeseriestypedef)
   - [AnomalyGroupTypeDef](#anomalygrouptypedef)
   - [AppFlowConfigTypeDef](#appflowconfigtypedef)
+  - [BackTestAnomalyDetectorRequestTypeDef](#backtestanomalydetectorrequesttypedef)
   - [CloudWatchConfigTypeDef](#cloudwatchconfigtypedef)
   - [ContributionMatrixTypeDef](#contributionmatrixtypedef)
-  - [CreateAlertResponseTypeDef](#createalertresponsetypedef)
-  - [CreateAnomalyDetectorResponseTypeDef](#createanomalydetectorresponsetypedef)
-  - [CreateMetricSetResponseTypeDef](#createmetricsetresponsetypedef)
+  - [CreateAlertRequestTypeDef](#createalertrequesttypedef)
+  - [CreateAlertResponseResponseTypeDef](#createalertresponseresponsetypedef)
+  - [CreateAnomalyDetectorRequestTypeDef](#createanomalydetectorrequesttypedef)
+  - [CreateAnomalyDetectorResponseResponseTypeDef](#createanomalydetectorresponseresponsetypedef)
+  - [CreateMetricSetRequestTypeDef](#createmetricsetrequesttypedef)
+  - [CreateMetricSetResponseResponseTypeDef](#createmetricsetresponseresponsetypedef)
   - [CsvFormatDescriptorTypeDef](#csvformatdescriptortypedef)
-  - [DescribeAlertResponseTypeDef](#describealertresponsetypedef)
-  - [DescribeAnomalyDetectionExecutionsResponseTypeDef](#describeanomalydetectionexecutionsresponsetypedef)
-  - [DescribeAnomalyDetectorResponseTypeDef](#describeanomalydetectorresponsetypedef)
-  - [DescribeMetricSetResponseTypeDef](#describemetricsetresponsetypedef)
+  - [DeleteAlertRequestTypeDef](#deletealertrequesttypedef)
+  - [DeleteAnomalyDetectorRequestTypeDef](#deleteanomalydetectorrequesttypedef)
+  - [DescribeAlertRequestTypeDef](#describealertrequesttypedef)
+  - [DescribeAlertResponseResponseTypeDef](#describealertresponseresponsetypedef)
+  - [DescribeAnomalyDetectionExecutionsRequestTypeDef](#describeanomalydetectionexecutionsrequesttypedef)
+  - [DescribeAnomalyDetectionExecutionsResponseResponseTypeDef](#describeanomalydetectionexecutionsresponseresponsetypedef)
+  - [DescribeAnomalyDetectorRequestTypeDef](#describeanomalydetectorrequesttypedef)
+  - [DescribeAnomalyDetectorResponseResponseTypeDef](#describeanomalydetectorresponseresponsetypedef)
+  - [DescribeMetricSetRequestTypeDef](#describemetricsetrequesttypedef)
+  - [DescribeMetricSetResponseResponseTypeDef](#describemetricsetresponseresponsetypedef)
   - [DimensionContributionTypeDef](#dimensioncontributiontypedef)
   - [DimensionNameValueTypeDef](#dimensionnamevaluetypedef)
   - [DimensionValueContributionTypeDef](#dimensionvaluecontributiontypedef)
   - [ExecutionStatusTypeDef](#executionstatustypedef)
   - [FileFormatDescriptorTypeDef](#fileformatdescriptortypedef)
-  - [GetAnomalyGroupResponseTypeDef](#getanomalygroupresponsetypedef)
-  - [GetFeedbackResponseTypeDef](#getfeedbackresponsetypedef)
-  - [GetSampleDataResponseTypeDef](#getsampledataresponsetypedef)
+  - [GetAnomalyGroupRequestTypeDef](#getanomalygrouprequesttypedef)
+  - [GetAnomalyGroupResponseResponseTypeDef](#getanomalygroupresponseresponsetypedef)
+  - [GetFeedbackRequestTypeDef](#getfeedbackrequesttypedef)
+  - [GetFeedbackResponseResponseTypeDef](#getfeedbackresponseresponsetypedef)
+  - [GetSampleDataRequestTypeDef](#getsampledatarequesttypedef)
+  - [GetSampleDataResponseResponseTypeDef](#getsampledataresponseresponsetypedef)
   - [ItemizedMetricStatsTypeDef](#itemizedmetricstatstypedef)
   - [JsonFormatDescriptorTypeDef](#jsonformatdescriptortypedef)
   - [LambdaConfigurationTypeDef](#lambdaconfigurationtypedef)
-  - [ListAlertsResponseTypeDef](#listalertsresponsetypedef)
-  - [ListAnomalyDetectorsResponseTypeDef](#listanomalydetectorsresponsetypedef)
-  - [ListAnomalyGroupSummariesResponseTypeDef](#listanomalygroupsummariesresponsetypedef)
-  - [ListAnomalyGroupTimeSeriesResponseTypeDef](#listanomalygrouptimeseriesresponsetypedef)
-  - [ListMetricSetsResponseTypeDef](#listmetricsetsresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListAlertsRequestTypeDef](#listalertsrequesttypedef)
+  - [ListAlertsResponseResponseTypeDef](#listalertsresponseresponsetypedef)
+  - [ListAnomalyDetectorsRequestTypeDef](#listanomalydetectorsrequesttypedef)
+  - [ListAnomalyDetectorsResponseResponseTypeDef](#listanomalydetectorsresponseresponsetypedef)
+  - [ListAnomalyGroupSummariesRequestTypeDef](#listanomalygroupsummariesrequesttypedef)
+  - [ListAnomalyGroupSummariesResponseResponseTypeDef](#listanomalygroupsummariesresponseresponsetypedef)
+  - [ListAnomalyGroupTimeSeriesRequestTypeDef](#listanomalygrouptimeseriesrequesttypedef)
+  - [ListAnomalyGroupTimeSeriesResponseResponseTypeDef](#listanomalygrouptimeseriesresponseresponsetypedef)
+  - [ListMetricSetsRequestTypeDef](#listmetricsetsrequesttypedef)
+  - [ListMetricSetsResponseResponseTypeDef](#listmetricsetsresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [MetricLevelImpactTypeDef](#metriclevelimpacttypedef)
   - [MetricSetSummaryTypeDef](#metricsetsummarytypedef)
   - [MetricSourceTypeDef](#metricsourcetypedef)
   - [MetricTypeDef](#metrictypedef)
+  - [PutFeedbackRequestTypeDef](#putfeedbackrequesttypedef)
   - [RDSSourceConfigTypeDef](#rdssourceconfigtypedef)
   - [RedshiftSourceConfigTypeDef](#redshiftsourceconfigtypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3SourceConfigTypeDef](#s3sourceconfigtypedef)
   - [SNSConfigurationTypeDef](#snsconfigurationtypedef)
   - [SampleDataS3SourceConfigTypeDef](#sampledatas3sourceconfigtypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TimeSeriesFeedbackTypeDef](#timeseriesfeedbacktypedef)
   - [TimeSeriesTypeDef](#timeseriestypedef)
   - [TimestampColumnTypeDef](#timestampcolumntypedef)
-  - [UpdateAnomalyDetectorResponseTypeDef](#updateanomalydetectorresponsetypedef)
-  - [UpdateMetricSetResponseTypeDef](#updatemetricsetresponsetypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateAnomalyDetectorRequestTypeDef](#updateanomalydetectorrequesttypedef)
+  - [UpdateAnomalyDetectorResponseResponseTypeDef](#updateanomalydetectorresponseresponsetypedef)
+  - [UpdateMetricSetRequestTypeDef](#updatemetricsetrequesttypedef)
+  - [UpdateMetricSetResponseResponseTypeDef](#updatemetricsetresponseresponsetypedef)
   - [VpcConfigurationTypeDef](#vpcconfigurationtypedef)
 
 ## ActionTypeDef
@@ -75,6 +101,16 @@ Optional fields:
   [SNSConfigurationTypeDef](./type_defs.md#snsconfigurationtypedef)
 - `LambdaConfiguration`:
   [LambdaConfigurationTypeDef](./type_defs.md#lambdaconfigurationtypedef)
+
+## ActivateAnomalyDetectorRequestTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import ActivateAnomalyDetectorRequestTypeDef
+```
+
+Required fields:
+
+- `AnomalyDetectorArn`: `str`
 
 ## AlertSummaryTypeDef
 
@@ -230,6 +266,16 @@ Required fields:
 - `RoleArn`: `str`
 - `FlowName`: `str`
 
+## BackTestAnomalyDetectorRequestTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import BackTestAnomalyDetectorRequestTypeDef
+```
+
+Required fields:
+
+- `AnomalyDetectorArn`: `str`
+
 ## CloudWatchConfigTypeDef
 
 ```python
@@ -251,35 +297,101 @@ Optional fields:
 - `DimensionContributionList`:
   `List`\[[DimensionContributionTypeDef](./type_defs.md#dimensioncontributiontypedef)\]
 
-## CreateAlertResponseTypeDef
+## CreateAlertRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutmetrics.type_defs import CreateAlertResponseTypeDef
+from mypy_boto3_lookoutmetrics.type_defs import CreateAlertRequestTypeDef
 ```
 
+Required fields:
+
+- `AlertName`: `str`
+- `AlertSensitivityThreshold`: `int`
+- `AnomalyDetectorArn`: `str`
+- `Action`: [ActionTypeDef](./type_defs.md#actiontypedef)
+
 Optional fields:
+
+- `AlertDescription`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## CreateAlertResponseResponseTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import CreateAlertResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AlertArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateAnomalyDetectorResponseTypeDef
+## CreateAnomalyDetectorRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutmetrics.type_defs import CreateAnomalyDetectorResponseTypeDef
+from mypy_boto3_lookoutmetrics.type_defs import CreateAnomalyDetectorRequestTypeDef
 ```
 
+Required fields:
+
+- `AnomalyDetectorName`: `str`
+- `AnomalyDetectorConfig`:
+  [AnomalyDetectorConfigTypeDef](./type_defs.md#anomalydetectorconfigtypedef)
+
 Optional fields:
+
+- `AnomalyDetectorDescription`: `str`
+- `KmsKeyArn`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## CreateAnomalyDetectorResponseResponseTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import CreateAnomalyDetectorResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AnomalyDetectorArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateMetricSetResponseTypeDef
+## CreateMetricSetRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutmetrics.type_defs import CreateMetricSetResponseTypeDef
+from mypy_boto3_lookoutmetrics.type_defs import CreateMetricSetRequestTypeDef
 ```
+
+Required fields:
+
+- `AnomalyDetectorArn`: `str`
+- `MetricSetName`: `str`
+- `MetricList`: `List`\[[MetricTypeDef](./type_defs.md#metrictypedef)\]
+- `MetricSource`: [MetricSourceTypeDef](./type_defs.md#metricsourcetypedef)
 
 Optional fields:
 
+- `MetricSetDescription`: `str`
+- `Offset`: `int`
+- `TimestampColumn`:
+  [TimestampColumnTypeDef](./type_defs.md#timestampcolumntypedef)
+- `DimensionList`: `List`\[`str`\]
+- `MetricSetFrequency`: [FrequencyType](./literals.md#frequencytype)
+- `Timezone`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## CreateMetricSetResponseResponseTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import CreateMetricSetResponseResponseTypeDef
+```
+
+Required fields:
+
 - `MetricSetArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CsvFormatDescriptorTypeDef
 
@@ -297,35 +409,95 @@ Optional fields:
 - `HeaderList`: `List`\[`str`\]
 - `QuoteSymbol`: `str`
 
-## DescribeAlertResponseTypeDef
+## DeleteAlertRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutmetrics.type_defs import DescribeAlertResponseTypeDef
+from mypy_boto3_lookoutmetrics.type_defs import DeleteAlertRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AlertArn`: `str`
+
+## DeleteAnomalyDetectorRequestTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import DeleteAnomalyDetectorRequestTypeDef
+```
+
+Required fields:
+
+- `AnomalyDetectorArn`: `str`
+
+## DescribeAlertRequestTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import DescribeAlertRequestTypeDef
+```
+
+Required fields:
+
+- `AlertArn`: `str`
+
+## DescribeAlertResponseResponseTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import DescribeAlertResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Alert`: [AlertTypeDef](./type_defs.md#alerttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAnomalyDetectionExecutionsResponseTypeDef
+## DescribeAnomalyDetectionExecutionsRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutmetrics.type_defs import DescribeAnomalyDetectionExecutionsResponseTypeDef
+from mypy_boto3_lookoutmetrics.type_defs import DescribeAnomalyDetectionExecutionsRequestTypeDef
 ```
 
+Required fields:
+
+- `AnomalyDetectorArn`: `str`
+
 Optional fields:
+
+- `Timestamp`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeAnomalyDetectionExecutionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import DescribeAnomalyDetectionExecutionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ExecutionList`:
   `List`\[[ExecutionStatusTypeDef](./type_defs.md#executionstatustypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAnomalyDetectorResponseTypeDef
+## DescribeAnomalyDetectorRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutmetrics.type_defs import DescribeAnomalyDetectorResponseTypeDef
+from mypy_boto3_lookoutmetrics.type_defs import DescribeAnomalyDetectorRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AnomalyDetectorArn`: `str`
+
+## DescribeAnomalyDetectorResponseResponseTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import DescribeAnomalyDetectorResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AnomalyDetectorArn`: `str`
 - `AnomalyDetectorName`: `str`
@@ -338,14 +510,26 @@ Optional fields:
   [AnomalyDetectorStatusType](./literals.md#anomalydetectorstatustype)
 - `FailureReason`: `str`
 - `KmsKeyArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeMetricSetResponseTypeDef
+## DescribeMetricSetRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutmetrics.type_defs import DescribeMetricSetResponseTypeDef
+from mypy_boto3_lookoutmetrics.type_defs import DescribeMetricSetRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `MetricSetArn`: `str`
+
+## DescribeMetricSetResponseResponseTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import DescribeMetricSetResponseResponseTypeDef
+```
+
+Required fields:
 
 - `MetricSetArn`: `str`
 - `AnomalyDetectorArn`: `str`
@@ -361,6 +545,8 @@ Optional fields:
 - `MetricSetFrequency`: [FrequencyType](./literals.md#frequencytype)
 - `Timezone`: `str`
 - `MetricSource`: [MetricSourceTypeDef](./type_defs.md#metricsourcetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DimensionContributionTypeDef
 
@@ -422,38 +608,83 @@ Optional fields:
 - `JsonFormatDescriptor`:
   [JsonFormatDescriptorTypeDef](./type_defs.md#jsonformatdescriptortypedef)
 
-## GetAnomalyGroupResponseTypeDef
+## GetAnomalyGroupRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutmetrics.type_defs import GetAnomalyGroupResponseTypeDef
+from mypy_boto3_lookoutmetrics.type_defs import GetAnomalyGroupRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AnomalyGroupId`: `str`
+- `AnomalyDetectorArn`: `str`
+
+## GetAnomalyGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import GetAnomalyGroupResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AnomalyGroup`: [AnomalyGroupTypeDef](./type_defs.md#anomalygrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFeedbackResponseTypeDef
+## GetFeedbackRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutmetrics.type_defs import GetFeedbackResponseTypeDef
+from mypy_boto3_lookoutmetrics.type_defs import GetFeedbackRequestTypeDef
 ```
 
+Required fields:
+
+- `AnomalyDetectorArn`: `str`
+- `AnomalyGroupTimeSeriesFeedback`:
+  [AnomalyGroupTimeSeriesTypeDef](./type_defs.md#anomalygrouptimeseriestypedef)
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## GetFeedbackResponseResponseTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import GetFeedbackResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AnomalyGroupTimeSeriesFeedback`:
   `List`\[[TimeSeriesFeedbackTypeDef](./type_defs.md#timeseriesfeedbacktypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSampleDataResponseTypeDef
+## GetSampleDataRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutmetrics.type_defs import GetSampleDataResponseTypeDef
+from mypy_boto3_lookoutmetrics.type_defs import GetSampleDataRequestTypeDef
 ```
 
 Optional fields:
 
+- `S3SourceConfig`:
+  [SampleDataS3SourceConfigTypeDef](./type_defs.md#sampledatas3sourceconfigtypedef)
+
+## GetSampleDataResponseResponseTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import GetSampleDataResponseResponseTypeDef
+```
+
+Required fields:
+
 - `HeaderValues`: `List`\[`str`\]
 - `SampleRows`: `List`\[`List`\[`str`\]\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ItemizedMetricStatsTypeDef
 
@@ -489,51 +720,113 @@ Required fields:
 - `RoleArn`: `str`
 - `LambdaArn`: `str`
 
-## ListAlertsResponseTypeDef
+## ListAlertsRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutmetrics.type_defs import ListAlertsResponseTypeDef
+from mypy_boto3_lookoutmetrics.type_defs import ListAlertsRequestTypeDef
 ```
 
 Optional fields:
+
+- `AnomalyDetectorArn`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListAlertsResponseResponseTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import ListAlertsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AlertSummaryList`:
   `List`\[[AlertSummaryTypeDef](./type_defs.md#alertsummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAnomalyDetectorsResponseTypeDef
+## ListAnomalyDetectorsRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutmetrics.type_defs import ListAnomalyDetectorsResponseTypeDef
+from mypy_boto3_lookoutmetrics.type_defs import ListAnomalyDetectorsRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListAnomalyDetectorsResponseResponseTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import ListAnomalyDetectorsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AnomalyDetectorSummaryList`:
   `List`\[[AnomalyDetectorSummaryTypeDef](./type_defs.md#anomalydetectorsummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAnomalyGroupSummariesResponseTypeDef
+## ListAnomalyGroupSummariesRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutmetrics.type_defs import ListAnomalyGroupSummariesResponseTypeDef
+from mypy_boto3_lookoutmetrics.type_defs import ListAnomalyGroupSummariesRequestTypeDef
 ```
 
+Required fields:
+
+- `AnomalyDetectorArn`: `str`
+- `SensitivityThreshold`: `int`
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListAnomalyGroupSummariesResponseResponseTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import ListAnomalyGroupSummariesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AnomalyGroupSummaryList`:
   `List`\[[AnomalyGroupSummaryTypeDef](./type_defs.md#anomalygroupsummarytypedef)\]
 - `AnomalyGroupStatistics`:
   [AnomalyGroupStatisticsTypeDef](./type_defs.md#anomalygroupstatisticstypedef)
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAnomalyGroupTimeSeriesResponseTypeDef
+## ListAnomalyGroupTimeSeriesRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutmetrics.type_defs import ListAnomalyGroupTimeSeriesResponseTypeDef
+from mypy_boto3_lookoutmetrics.type_defs import ListAnomalyGroupTimeSeriesRequestTypeDef
 ```
 
+Required fields:
+
+- `AnomalyDetectorArn`: `str`
+- `AnomalyGroupId`: `str`
+- `MetricName`: `str`
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListAnomalyGroupTimeSeriesResponseResponseTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import ListAnomalyGroupTimeSeriesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AnomalyGroupId`: `str`
 - `MetricName`: `str`
@@ -541,28 +834,56 @@ Optional fields:
 - `NextToken`: `str`
 - `TimeSeriesList`:
   `List`\[[TimeSeriesTypeDef](./type_defs.md#timeseriestypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListMetricSetsResponseTypeDef
+## ListMetricSetsRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutmetrics.type_defs import ListMetricSetsResponseTypeDef
+from mypy_boto3_lookoutmetrics.type_defs import ListMetricSetsRequestTypeDef
 ```
 
 Optional fields:
+
+- `AnomalyDetectorArn`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListMetricSetsResponseResponseTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import ListMetricSetsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `MetricSetSummaryList`:
   `List`\[[MetricSetSummaryTypeDef](./type_defs.md#metricsetsummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutmetrics.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_lookoutmetrics.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceArn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## MetricLevelImpactTypeDef
 
@@ -627,6 +948,18 @@ Optional fields:
 
 - `Namespace`: `str`
 
+## PutFeedbackRequestTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import PutFeedbackRequestTypeDef
+```
+
+Required fields:
+
+- `AnomalyDetectorArn`: `str`
+- `AnomalyGroupTimeSeriesFeedback`:
+  [AnomalyGroupTimeSeriesFeedbackTypeDef](./type_defs.md#anomalygrouptimeseriesfeedbacktypedef)
+
 ## RDSSourceConfigTypeDef
 
 ```python
@@ -662,6 +995,20 @@ Required fields:
 - `RoleArn`: `str`
 - `VpcConfiguration`:
   [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## S3SourceConfigTypeDef
 
@@ -708,6 +1055,17 @@ Optional fields:
 - `TemplatedPathList`: `List`\[`str`\]
 - `HistoricalDataPathList`: `List`\[`str`\]
 
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
 ## TimeSeriesFeedbackTypeDef
 
 ```python
@@ -743,25 +1101,78 @@ Optional fields:
 - `ColumnName`: `str`
 - `ColumnFormat`: `str`
 
-## UpdateAnomalyDetectorResponseTypeDef
+## UntagResourceRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutmetrics.type_defs import UpdateAnomalyDetectorResponseTypeDef
+from mypy_boto3_lookoutmetrics.type_defs import UntagResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceArn`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## UpdateAnomalyDetectorRequestTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import UpdateAnomalyDetectorRequestTypeDef
+```
+
+Required fields:
 
 - `AnomalyDetectorArn`: `str`
 
-## UpdateMetricSetResponseTypeDef
+Optional fields:
+
+- `KmsKeyArn`: `str`
+- `AnomalyDetectorDescription`: `str`
+- `AnomalyDetectorConfig`:
+  [AnomalyDetectorConfigTypeDef](./type_defs.md#anomalydetectorconfigtypedef)
+
+## UpdateAnomalyDetectorResponseResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutmetrics.type_defs import UpdateMetricSetResponseTypeDef
+from mypy_boto3_lookoutmetrics.type_defs import UpdateAnomalyDetectorResponseResponseTypeDef
 ```
+
+Required fields:
+
+- `AnomalyDetectorArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateMetricSetRequestTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import UpdateMetricSetRequestTypeDef
+```
+
+Required fields:
+
+- `MetricSetArn`: `str`
 
 Optional fields:
 
+- `MetricSetDescription`: `str`
+- `MetricList`: `List`\[[MetricTypeDef](./type_defs.md#metrictypedef)\]
+- `Offset`: `int`
+- `TimestampColumn`:
+  [TimestampColumnTypeDef](./type_defs.md#timestampcolumntypedef)
+- `DimensionList`: `List`\[`str`\]
+- `MetricSetFrequency`: [FrequencyType](./literals.md#frequencytype)
+- `MetricSource`: [MetricSourceTypeDef](./type_defs.md#metricsourcetypedef)
+
+## UpdateMetricSetResponseResponseTypeDef
+
+```python
+from mypy_boto3_lookoutmetrics.type_defs import UpdateMetricSetResponseResponseTypeDef
+```
+
+Required fields:
+
 - `MetricSetArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## VpcConfigurationTypeDef
 

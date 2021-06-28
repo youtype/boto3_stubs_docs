@@ -59,6 +59,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("iotsecuretunneling").can_paginate` method.
 
 Boto3 documentation:
@@ -72,10 +74,15 @@ Returns `bool`.
 
 ### close_tunnel
 
+Closes a tunnel identified by the unique tunnel id.
+
 Type annotations for `boto3.client("iotsecuretunneling").close_tunnel` method.
 
 Boto3 documentation:
 [IoTSecureTunneling.Client.close_tunnel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.close_tunnel)
+
+Arguments mapping described in
+[CloseTunnelRequestTypeDef](./type_defs.md#closetunnelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -86,20 +93,27 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_tunnel
 
+Gets information about a tunnel identified by the unique tunnel id.
+
 Type annotations for `boto3.client("iotsecuretunneling").describe_tunnel`
 method.
 
 Boto3 documentation:
 [IoTSecureTunneling.Client.describe_tunnel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.describe_tunnel)
 
+Arguments mapping described in
+[DescribeTunnelRequestTypeDef](./type_defs.md#describetunnelrequesttypedef).
+
 Keyword-only arguments:
 
 - `tunnelId`: `str` *(required)*
 
 Returns
-[DescribeTunnelResponseTypeDef](./type_defs.md#describetunnelresponsetypedef).
+[DescribeTunnelResponseResponseTypeDef](./type_defs.md#describetunnelresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for
 `boto3.client("iotsecuretunneling").generate_presigned_url` method.
@@ -118,25 +132,35 @@ Returns `str`.
 
 ### list_tags_for_resource
 
+Lists the tags for the specified resource.
+
 Type annotations for
 `boto3.client("iotsecuretunneling").list_tags_for_resource` method.
 
 Boto3 documentation:
 [IoTSecureTunneling.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### list_tunnels
+
+List all tunnels for an AWS account.
 
 Type annotations for `boto3.client("iotsecuretunneling").list_tunnels` method.
 
 Boto3 documentation:
 [IoTSecureTunneling.Client.list_tunnels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.list_tunnels)
+
+Arguments mapping described in
+[ListTunnelsRequestTypeDef](./type_defs.md#listtunnelsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -145,14 +169,20 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListTunnelsResponseTypeDef](./type_defs.md#listtunnelsresponsetypedef).
+[ListTunnelsResponseResponseTypeDef](./type_defs.md#listtunnelsresponseresponsetypedef).
 
 ### open_tunnel
+
+Creates a new tunnel, and returns two client access tokens for clients to use
+to connect to the AWS IoT Secure Tunneling proxy server.
 
 Type annotations for `boto3.client("iotsecuretunneling").open_tunnel` method.
 
 Boto3 documentation:
 [IoTSecureTunneling.Client.open_tunnel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.open_tunnel)
+
+Arguments mapping described in
+[OpenTunnelRequestTypeDef](./type_defs.md#opentunnelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -162,14 +192,20 @@ Keyword-only arguments:
   [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
 - `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
 
-Returns [OpenTunnelResponseTypeDef](./type_defs.md#opentunnelresponsetypedef).
+Returns
+[OpenTunnelResponseResponseTypeDef](./type_defs.md#opentunnelresponseresponsetypedef).
 
 ### tag_resource
+
+A resource tag.
 
 Type annotations for `boto3.client("iotsecuretunneling").tag_resource` method.
 
 Boto3 documentation:
 [IoTSecureTunneling.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -180,11 +216,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Removes a tag from a resource.
+
 Type annotations for `boto3.client("iotsecuretunneling").untag_resource`
 method.
 
 Boto3 documentation:
 [IoTSecureTunneling.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 

@@ -94,18 +94,25 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_mwaa.type_defs import CreateCliTokenResponseTypeDef, ...
+from mypy_boto3_mwaa.type_defs import CreateCliTokenRequestTypeDef, ...
 ```
 
-- [CreateCliTokenResponseTypeDef](./type_defs.md#createclitokenresponsetypedef)
-- [CreateEnvironmentOutputTypeDef](./type_defs.md#createenvironmentoutputtypedef)
-- [CreateWebLoginTokenResponseTypeDef](./type_defs.md#createweblogintokenresponsetypedef)
+- [CreateCliTokenRequestTypeDef](./type_defs.md#createclitokenrequesttypedef)
+- [CreateCliTokenResponseResponseTypeDef](./type_defs.md#createclitokenresponseresponsetypedef)
+- [CreateEnvironmentInputTypeDef](./type_defs.md#createenvironmentinputtypedef)
+- [CreateEnvironmentOutputResponseTypeDef](./type_defs.md#createenvironmentoutputresponsetypedef)
+- [CreateWebLoginTokenRequestTypeDef](./type_defs.md#createweblogintokenrequesttypedef)
+- [CreateWebLoginTokenResponseResponseTypeDef](./type_defs.md#createweblogintokenresponseresponsetypedef)
+- [DeleteEnvironmentInputTypeDef](./type_defs.md#deleteenvironmentinputtypedef)
 - [DimensionTypeDef](./type_defs.md#dimensiontypedef)
 - [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
-- [GetEnvironmentOutputTypeDef](./type_defs.md#getenvironmentoutputtypedef)
+- [GetEnvironmentInputTypeDef](./type_defs.md#getenvironmentinputtypedef)
+- [GetEnvironmentOutputResponseTypeDef](./type_defs.md#getenvironmentoutputresponsetypedef)
 - [LastUpdateTypeDef](./type_defs.md#lastupdatetypedef)
-- [ListEnvironmentsOutputTypeDef](./type_defs.md#listenvironmentsoutputtypedef)
-- [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef)
+- [ListEnvironmentsInputTypeDef](./type_defs.md#listenvironmentsinputtypedef)
+- [ListEnvironmentsOutputResponseTypeDef](./type_defs.md#listenvironmentsoutputresponsetypedef)
+- [ListTagsForResourceInputTypeDef](./type_defs.md#listtagsforresourceinputtypedef)
+- [ListTagsForResourceOutputResponseTypeDef](./type_defs.md#listtagsforresourceoutputresponsetypedef)
 - [LoggingConfigurationInputTypeDef](./type_defs.md#loggingconfigurationinputtypedef)
 - [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
 - [MetricDatumTypeDef](./type_defs.md#metricdatumtypedef)
@@ -113,8 +120,12 @@ from mypy_boto3_mwaa.type_defs import CreateCliTokenResponseTypeDef, ...
 - [ModuleLoggingConfigurationTypeDef](./type_defs.md#moduleloggingconfigurationtypedef)
 - [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+- [PublishMetricsInputTypeDef](./type_defs.md#publishmetricsinputtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [StatisticSetTypeDef](./type_defs.md#statisticsettypedef)
-- [UpdateEnvironmentOutputTypeDef](./type_defs.md#updateenvironmentoutputtypedef)
+- [TagResourceInputTypeDef](./type_defs.md#tagresourceinputtypedef)
+- [UntagResourceInputTypeDef](./type_defs.md#untagresourceinputtypedef)
+- [UpdateEnvironmentInputTypeDef](./type_defs.md#updateenvironmentinputtypedef)
+- [UpdateEnvironmentOutputResponseTypeDef](./type_defs.md#updateenvironmentoutputresponsetypedef)
 - [UpdateErrorTypeDef](./type_defs.md#updateerrortypedef)
 - [UpdateNetworkConfigurationInputTypeDef](./type_defs.md#updatenetworkconfigurationinputtypedef)

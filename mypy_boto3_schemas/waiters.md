@@ -25,7 +25,7 @@ def get_code_binding_exists_waiter() -> CodeBindingExistsWaiter:
 ```
 
 Boto3 documentation:
-[Schemas.Waiter.code_binding_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Waiter.code_binding_exists)
+[Schemas.Waiter.code_binding_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Waiter.CodeBindingExists)
 
 Arguments for `CodeBindingExistsWaiter.wait` method:
 

@@ -21,17 +21,26 @@ type annotations stubs module
   - [ConnectorProfileCredentialsTypeDef](#connectorprofilecredentialstypedef)
   - [ConnectorProfilePropertiesTypeDef](#connectorprofilepropertiestypedef)
   - [ConnectorProfileTypeDef](#connectorprofiletypedef)
-  - [CreateConnectorProfileResponseTypeDef](#createconnectorprofileresponsetypedef)
-  - [CreateFlowResponseTypeDef](#createflowresponsetypedef)
+  - [CreateConnectorProfileRequestTypeDef](#createconnectorprofilerequesttypedef)
+  - [CreateConnectorProfileResponseResponseTypeDef](#createconnectorprofileresponseresponsetypedef)
+  - [CreateFlowRequestTypeDef](#createflowrequesttypedef)
+  - [CreateFlowResponseResponseTypeDef](#createflowresponseresponsetypedef)
   - [CustomerProfilesDestinationPropertiesTypeDef](#customerprofilesdestinationpropertiestypedef)
   - [DatadogConnectorProfileCredentialsTypeDef](#datadogconnectorprofilecredentialstypedef)
   - [DatadogConnectorProfilePropertiesTypeDef](#datadogconnectorprofilepropertiestypedef)
   - [DatadogSourcePropertiesTypeDef](#datadogsourcepropertiestypedef)
-  - [DescribeConnectorEntityResponseTypeDef](#describeconnectorentityresponsetypedef)
-  - [DescribeConnectorProfilesResponseTypeDef](#describeconnectorprofilesresponsetypedef)
-  - [DescribeConnectorsResponseTypeDef](#describeconnectorsresponsetypedef)
-  - [DescribeFlowExecutionRecordsResponseTypeDef](#describeflowexecutionrecordsresponsetypedef)
-  - [DescribeFlowResponseTypeDef](#describeflowresponsetypedef)
+  - [DeleteConnectorProfileRequestTypeDef](#deleteconnectorprofilerequesttypedef)
+  - [DeleteFlowRequestTypeDef](#deleteflowrequesttypedef)
+  - [DescribeConnectorEntityRequestTypeDef](#describeconnectorentityrequesttypedef)
+  - [DescribeConnectorEntityResponseResponseTypeDef](#describeconnectorentityresponseresponsetypedef)
+  - [DescribeConnectorProfilesRequestTypeDef](#describeconnectorprofilesrequesttypedef)
+  - [DescribeConnectorProfilesResponseResponseTypeDef](#describeconnectorprofilesresponseresponsetypedef)
+  - [DescribeConnectorsRequestTypeDef](#describeconnectorsrequesttypedef)
+  - [DescribeConnectorsResponseResponseTypeDef](#describeconnectorsresponseresponsetypedef)
+  - [DescribeFlowExecutionRecordsRequestTypeDef](#describeflowexecutionrecordsrequesttypedef)
+  - [DescribeFlowExecutionRecordsResponseResponseTypeDef](#describeflowexecutionrecordsresponseresponsetypedef)
+  - [DescribeFlowRequestTypeDef](#describeflowrequesttypedef)
+  - [DescribeFlowResponseResponseTypeDef](#describeflowresponseresponsetypedef)
   - [DestinationConnectorPropertiesTypeDef](#destinationconnectorpropertiestypedef)
   - [DestinationFieldPropertiesTypeDef](#destinationfieldpropertiestypedef)
   - [DestinationFlowConfigTypeDef](#destinationflowconfigtypedef)
@@ -56,9 +65,12 @@ type annotations stubs module
   - [InforNexusConnectorProfileCredentialsTypeDef](#infornexusconnectorprofilecredentialstypedef)
   - [InforNexusConnectorProfilePropertiesTypeDef](#infornexusconnectorprofilepropertiestypedef)
   - [InforNexusSourcePropertiesTypeDef](#infornexussourcepropertiestypedef)
-  - [ListConnectorEntitiesResponseTypeDef](#listconnectorentitiesresponsetypedef)
-  - [ListFlowsResponseTypeDef](#listflowsresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListConnectorEntitiesRequestTypeDef](#listconnectorentitiesrequesttypedef)
+  - [ListConnectorEntitiesResponseResponseTypeDef](#listconnectorentitiesresponseresponsetypedef)
+  - [ListFlowsRequestTypeDef](#listflowsrequesttypedef)
+  - [ListFlowsResponseResponseTypeDef](#listflowsresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [MarketoConnectorProfileCredentialsTypeDef](#marketoconnectorprofilecredentialstypedef)
   - [MarketoConnectorProfilePropertiesTypeDef](#marketoconnectorprofilepropertiestypedef)
   - [MarketoSourcePropertiesTypeDef](#marketosourcepropertiestypedef)
@@ -66,6 +78,7 @@ type annotations stubs module
   - [RedshiftConnectorProfileCredentialsTypeDef](#redshiftconnectorprofilecredentialstypedef)
   - [RedshiftConnectorProfilePropertiesTypeDef](#redshiftconnectorprofilepropertiestypedef)
   - [RedshiftDestinationPropertiesTypeDef](#redshiftdestinationpropertiestypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3DestinationPropertiesTypeDef](#s3destinationpropertiestypedef)
   - [S3OutputFormatConfigTypeDef](#s3outputformatconfigtypedef)
   - [S3SourcePropertiesTypeDef](#s3sourcepropertiestypedef)
@@ -91,16 +104,22 @@ type annotations stubs module
   - [SourceConnectorPropertiesTypeDef](#sourceconnectorpropertiestypedef)
   - [SourceFieldPropertiesTypeDef](#sourcefieldpropertiestypedef)
   - [SourceFlowConfigTypeDef](#sourceflowconfigtypedef)
-  - [StartFlowResponseTypeDef](#startflowresponsetypedef)
-  - [StopFlowResponseTypeDef](#stopflowresponsetypedef)
+  - [StartFlowRequestTypeDef](#startflowrequesttypedef)
+  - [StartFlowResponseResponseTypeDef](#startflowresponseresponsetypedef)
+  - [StopFlowRequestTypeDef](#stopflowrequesttypedef)
+  - [StopFlowResponseResponseTypeDef](#stopflowresponseresponsetypedef)
   - [SupportedFieldTypeDetailsTypeDef](#supportedfieldtypedetailstypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TaskTypeDef](#tasktypedef)
   - [TrendmicroConnectorProfileCredentialsTypeDef](#trendmicroconnectorprofilecredentialstypedef)
   - [TrendmicroSourcePropertiesTypeDef](#trendmicrosourcepropertiestypedef)
   - [TriggerConfigTypeDef](#triggerconfigtypedef)
   - [TriggerPropertiesTypeDef](#triggerpropertiestypedef)
-  - [UpdateConnectorProfileResponseTypeDef](#updateconnectorprofileresponsetypedef)
-  - [UpdateFlowResponseTypeDef](#updateflowresponsetypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateConnectorProfileRequestTypeDef](#updateconnectorprofilerequesttypedef)
+  - [UpdateConnectorProfileResponseResponseTypeDef](#updateconnectorprofileresponseresponsetypedef)
+  - [UpdateFlowRequestTypeDef](#updateflowrequesttypedef)
+  - [UpdateFlowResponseResponseTypeDef](#updateflowresponseresponsetypedef)
   - [UpsolverDestinationPropertiesTypeDef](#upsolverdestinationpropertiestypedef)
   - [UpsolverS3OutputFormatConfigTypeDef](#upsolvers3outputformatconfigtypedef)
   - [VeevaConnectorProfileCredentialsTypeDef](#veevaconnectorprofilecredentialstypedef)
@@ -388,26 +407,70 @@ Optional fields:
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
 
-## CreateConnectorProfileResponseTypeDef
+## CreateConnectorProfileRequestTypeDef
 
 ```python
-from mypy_boto3_appflow.type_defs import CreateConnectorProfileResponseTypeDef
+from mypy_boto3_appflow.type_defs import CreateConnectorProfileRequestTypeDef
 ```
 
+Required fields:
+
+- `connectorProfileName`: `str`
+- `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
+- `connectionMode`: [ConnectionModeType](./literals.md#connectionmodetype)
+- `connectorProfileConfig`:
+  [ConnectorProfileConfigTypeDef](./type_defs.md#connectorprofileconfigtypedef)
+
 Optional fields:
+
+- `kmsArn`: `str`
+
+## CreateConnectorProfileResponseResponseTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import CreateConnectorProfileResponseResponseTypeDef
+```
+
+Required fields:
 
 - `connectorProfileArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateFlowResponseTypeDef
+## CreateFlowRequestTypeDef
 
 ```python
-from mypy_boto3_appflow.type_defs import CreateFlowResponseTypeDef
+from mypy_boto3_appflow.type_defs import CreateFlowRequestTypeDef
 ```
 
+Required fields:
+
+- `flowName`: `str`
+- `triggerConfig`: [TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef)
+- `sourceFlowConfig`:
+  [SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef)
+- `destinationFlowConfigList`:
+  `List`\[[DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef)\]
+- `tasks`: `List`\[[TaskTypeDef](./type_defs.md#tasktypedef)\]
+
 Optional fields:
+
+- `description`: `str`
+- `kmsArn`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateFlowResponseResponseTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import CreateFlowResponseResponseTypeDef
+```
+
+Required fields:
 
 - `flowArn`: `str`
 - `flowStatus`: [FlowStatusType](./literals.md#flowstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CustomerProfilesDestinationPropertiesTypeDef
 
@@ -454,61 +517,162 @@ Required fields:
 
 - `object`: `str`
 
-## DescribeConnectorEntityResponseTypeDef
+## DeleteConnectorProfileRequestTypeDef
 
 ```python
-from mypy_boto3_appflow.type_defs import DescribeConnectorEntityResponseTypeDef
+from mypy_boto3_appflow.type_defs import DeleteConnectorProfileRequestTypeDef
+```
+
+Required fields:
+
+- `connectorProfileName`: `str`
+
+Optional fields:
+
+- `forceDelete`: `bool`
+
+## DeleteFlowRequestTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import DeleteFlowRequestTypeDef
+```
+
+Required fields:
+
+- `flowName`: `str`
+
+Optional fields:
+
+- `forceDelete`: `bool`
+
+## DescribeConnectorEntityRequestTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import DescribeConnectorEntityRequestTypeDef
+```
+
+Required fields:
+
+- `connectorEntityName`: `str`
+
+Optional fields:
+
+- `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
+- `connectorProfileName`: `str`
+
+## DescribeConnectorEntityResponseResponseTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import DescribeConnectorEntityResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `connectorEntityFields`:
   `List`\[[ConnectorEntityFieldTypeDef](./type_defs.md#connectorentityfieldtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeConnectorProfilesResponseTypeDef
+## DescribeConnectorProfilesRequestTypeDef
 
 ```python
-from mypy_boto3_appflow.type_defs import DescribeConnectorProfilesResponseTypeDef
+from mypy_boto3_appflow.type_defs import DescribeConnectorProfilesRequestTypeDef
 ```
 
 Optional fields:
+
+- `connectorProfileNames`: `List`\[`str`\]
+- `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## DescribeConnectorProfilesResponseResponseTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import DescribeConnectorProfilesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `connectorProfileDetails`:
   `List`\[[ConnectorProfileTypeDef](./type_defs.md#connectorprofiletypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeConnectorsResponseTypeDef
+## DescribeConnectorsRequestTypeDef
 
 ```python
-from mypy_boto3_appflow.type_defs import DescribeConnectorsResponseTypeDef
+from mypy_boto3_appflow.type_defs import DescribeConnectorsRequestTypeDef
 ```
 
 Optional fields:
+
+- `connectorTypes`:
+  `List`\[[ConnectorTypeType](./literals.md#connectortypetype)\]
+- `nextToken`: `str`
+
+## DescribeConnectorsResponseResponseTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import DescribeConnectorsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `connectorConfigurations`:
   `Dict`\[[ConnectorTypeType](./literals.md#connectortypetype),
   [ConnectorConfigurationTypeDef](./type_defs.md#connectorconfigurationtypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFlowExecutionRecordsResponseTypeDef
+## DescribeFlowExecutionRecordsRequestTypeDef
 
 ```python
-from mypy_boto3_appflow.type_defs import DescribeFlowExecutionRecordsResponseTypeDef
+from mypy_boto3_appflow.type_defs import DescribeFlowExecutionRecordsRequestTypeDef
 ```
 
+Required fields:
+
+- `flowName`: `str`
+
 Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## DescribeFlowExecutionRecordsResponseResponseTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import DescribeFlowExecutionRecordsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `flowExecutions`:
   `List`\[[ExecutionRecordTypeDef](./type_defs.md#executionrecordtypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFlowResponseTypeDef
+## DescribeFlowRequestTypeDef
 
 ```python
-from mypy_boto3_appflow.type_defs import DescribeFlowResponseTypeDef
+from mypy_boto3_appflow.type_defs import DescribeFlowRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `flowName`: `str`
+
+## DescribeFlowResponseResponseTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import DescribeFlowResponseResponseTypeDef
+```
+
+Required fields:
 
 - `flowArn`: `str`
 - `description`: `str`
@@ -529,6 +693,8 @@ Optional fields:
 - `createdBy`: `str`
 - `lastUpdatedBy`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DestinationConnectorPropertiesTypeDef
 
@@ -858,38 +1024,77 @@ Required fields:
 
 - `object`: `str`
 
-## ListConnectorEntitiesResponseTypeDef
+## ListConnectorEntitiesRequestTypeDef
 
 ```python
-from mypy_boto3_appflow.type_defs import ListConnectorEntitiesResponseTypeDef
+from mypy_boto3_appflow.type_defs import ListConnectorEntitiesRequestTypeDef
+```
+
+Optional fields:
+
+- `connectorProfileName`: `str`
+- `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
+- `entitiesPath`: `str`
+
+## ListConnectorEntitiesResponseResponseTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import ListConnectorEntitiesResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `connectorEntityMap`: `Dict`\[`str`,
   `List`\[[ConnectorEntityTypeDef](./type_defs.md#connectorentitytypedef)\]\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFlowsResponseTypeDef
+## ListFlowsRequestTypeDef
 
 ```python
-from mypy_boto3_appflow.type_defs import ListFlowsResponseTypeDef
+from mypy_boto3_appflow.type_defs import ListFlowsRequestTypeDef
 ```
 
 Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListFlowsResponseResponseTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import ListFlowsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `flows`:
   `List`\[[FlowDefinitionTypeDef](./type_defs.md#flowdefinitiontypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_appflow.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_appflow.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `resourceArn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## MarketoConnectorProfileCredentialsTypeDef
 
@@ -982,6 +1187,20 @@ Optional fields:
 - `bucketPrefix`: `str`
 - `errorHandlingConfig`:
   [ErrorHandlingConfigTypeDef](./type_defs.md#errorhandlingconfigtypedef)
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## S3DestinationPropertiesTypeDef
 
@@ -1107,11 +1326,11 @@ Required fields:
 Optional fields:
 
 - `dataPullMode`: [DataPullModeType](./literals.md#datapullmodetype)
-- `scheduleStartTime`: `datetime`
-- `scheduleEndTime`: `datetime`
+- `scheduleStartTime`: `Union`\[`datetime`, `str`\]
+- `scheduleEndTime`: `Union`\[`datetime`, `str`\]
 - `timezone`: `str`
 - `scheduleOffset`: `int`
-- `firstExecutionFrom`: `datetime`
+- `firstExecutionFrom`: `Union`\[`datetime`, `str`\]
 
 ## ServiceNowConnectorProfileCredentialsTypeDef
 
@@ -1333,28 +1552,52 @@ Optional fields:
 - `incrementalPullConfig`:
   [IncrementalPullConfigTypeDef](./type_defs.md#incrementalpullconfigtypedef)
 
-## StartFlowResponseTypeDef
+## StartFlowRequestTypeDef
 
 ```python
-from mypy_boto3_appflow.type_defs import StartFlowResponseTypeDef
+from mypy_boto3_appflow.type_defs import StartFlowRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `flowName`: `str`
+
+## StartFlowResponseResponseTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import StartFlowResponseResponseTypeDef
+```
+
+Required fields:
 
 - `flowArn`: `str`
 - `flowStatus`: [FlowStatusType](./literals.md#flowstatustype)
 - `executionId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopFlowResponseTypeDef
+## StopFlowRequestTypeDef
 
 ```python
-from mypy_boto3_appflow.type_defs import StopFlowResponseTypeDef
+from mypy_boto3_appflow.type_defs import StopFlowRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `flowName`: `str`
+
+## StopFlowResponseResponseTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import StopFlowResponseResponseTypeDef
+```
+
+Required fields:
 
 - `flowArn`: `str`
 - `flowStatus`: [FlowStatusType](./literals.md#flowstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## SupportedFieldTypeDetailsTypeDef
 
@@ -1365,6 +1608,17 @@ from mypy_boto3_appflow.type_defs import SupportedFieldTypeDetailsTypeDef
 Required fields:
 
 - `v1`: [FieldTypeDetailsTypeDef](./type_defs.md#fieldtypedetailstypedef)
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## TaskTypeDef
 
@@ -1432,25 +1686,73 @@ Optional fields:
 - `Scheduled`:
   [ScheduledTriggerPropertiesTypeDef](./type_defs.md#scheduledtriggerpropertiestypedef)
 
-## UpdateConnectorProfileResponseTypeDef
+## UntagResourceRequestTypeDef
 
 ```python
-from mypy_boto3_appflow.type_defs import UpdateConnectorProfileResponseTypeDef
+from mypy_boto3_appflow.type_defs import UntagResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `resourceArn`: `str`
+- `tagKeys`: `List`\[`str`\]
+
+## UpdateConnectorProfileRequestTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import UpdateConnectorProfileRequestTypeDef
+```
+
+Required fields:
+
+- `connectorProfileName`: `str`
+- `connectionMode`: [ConnectionModeType](./literals.md#connectionmodetype)
+- `connectorProfileConfig`:
+  [ConnectorProfileConfigTypeDef](./type_defs.md#connectorprofileconfigtypedef)
+
+## UpdateConnectorProfileResponseResponseTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import UpdateConnectorProfileResponseResponseTypeDef
+```
+
+Required fields:
 
 - `connectorProfileArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateFlowResponseTypeDef
+## UpdateFlowRequestTypeDef
 
 ```python
-from mypy_boto3_appflow.type_defs import UpdateFlowResponseTypeDef
+from mypy_boto3_appflow.type_defs import UpdateFlowRequestTypeDef
 ```
+
+Required fields:
+
+- `flowName`: `str`
+- `triggerConfig`: [TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef)
+- `destinationFlowConfigList`:
+  `List`\[[DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef)\]
+- `tasks`: `List`\[[TaskTypeDef](./type_defs.md#tasktypedef)\]
 
 Optional fields:
 
+- `description`: `str`
+- `sourceFlowConfig`:
+  [SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef)
+
+## UpdateFlowResponseResponseTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import UpdateFlowResponseResponseTypeDef
+```
+
+Required fields:
+
 - `flowStatus`: [FlowStatusType](./literals.md#flowstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UpsolverDestinationPropertiesTypeDef
 

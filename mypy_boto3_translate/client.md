@@ -78,6 +78,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("translate").can_paginate` method.
 
 Boto3 documentation:
@@ -91,10 +93,16 @@ Returns `bool`.
 
 ### create_parallel_data
 
+Creates a parallel data resource in Amazon Translate by importing an input file
+from Amazon S3.
+
 Type annotations for `boto3.client("translate").create_parallel_data` method.
 
 Boto3 documentation:
 [Translate.Client.create_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.create_parallel_data)
+
+Arguments mapping described in
+[CreateParallelDataRequestTypeDef](./type_defs.md#createparalleldatarequesttypedef).
 
 Keyword-only arguments:
 
@@ -107,28 +115,38 @@ Keyword-only arguments:
 - `EncryptionKey`: [EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef)
 
 Returns
-[CreateParallelDataResponseTypeDef](./type_defs.md#createparalleldataresponsetypedef).
+[CreateParallelDataResponseResponseTypeDef](./type_defs.md#createparalleldataresponseresponsetypedef).
 
 ### delete_parallel_data
+
+Deletes a parallel data resource in Amazon Translate.
 
 Type annotations for `boto3.client("translate").delete_parallel_data` method.
 
 Boto3 documentation:
 [Translate.Client.delete_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.delete_parallel_data)
 
+Arguments mapping described in
+[DeleteParallelDataRequestTypeDef](./type_defs.md#deleteparalleldatarequesttypedef).
+
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[DeleteParallelDataResponseTypeDef](./type_defs.md#deleteparalleldataresponsetypedef).
+[DeleteParallelDataResponseResponseTypeDef](./type_defs.md#deleteparalleldataresponseresponsetypedef).
 
 ### delete_terminology
+
+A synchronous action that deletes a custom terminology.
 
 Type annotations for `boto3.client("translate").delete_terminology` method.
 
 Boto3 documentation:
 [Translate.Client.delete_terminology](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.delete_terminology)
+
+Arguments mapping described in
+[DeleteTerminologyRequestTypeDef](./type_defs.md#deleteterminologyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -136,20 +154,29 @@ Keyword-only arguments:
 
 ### describe_text_translation_job
 
+Gets the properties associated with an asycnhronous batch translation job
+including name, ID, status, source and target languages, input/output S3
+buckets, and so on.
+
 Type annotations for `boto3.client("translate").describe_text_translation_job`
 method.
 
 Boto3 documentation:
 [Translate.Client.describe_text_translation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.describe_text_translation_job)
 
+Arguments mapping described in
+[DescribeTextTranslationJobRequestTypeDef](./type_defs.md#describetexttranslationjobrequesttypedef).
+
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[DescribeTextTranslationJobResponseTypeDef](./type_defs.md#describetexttranslationjobresponsetypedef).
+[DescribeTextTranslationJobResponseResponseTypeDef](./type_defs.md#describetexttranslationjobresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("translate").generate_presigned_url` method.
 
@@ -167,24 +194,34 @@ Returns `str`.
 
 ### get_parallel_data
 
+Provides information about a parallel data resource.
+
 Type annotations for `boto3.client("translate").get_parallel_data` method.
 
 Boto3 documentation:
 [Translate.Client.get_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.get_parallel_data)
+
+Arguments mapping described in
+[GetParallelDataRequestTypeDef](./type_defs.md#getparalleldatarequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[GetParallelDataResponseTypeDef](./type_defs.md#getparalleldataresponsetypedef).
+[GetParallelDataResponseResponseTypeDef](./type_defs.md#getparalleldataresponseresponsetypedef).
 
 ### get_terminology
+
+Retrieves a custom terminology.
 
 Type annotations for `boto3.client("translate").get_terminology` method.
 
 Boto3 documentation:
 [Translate.Client.get_terminology](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.get_terminology)
+
+Arguments mapping described in
+[GetTerminologyRequestTypeDef](./type_defs.md#getterminologyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -194,14 +231,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[GetTerminologyResponseTypeDef](./type_defs.md#getterminologyresponsetypedef).
+[GetTerminologyResponseResponseTypeDef](./type_defs.md#getterminologyresponseresponsetypedef).
 
 ### import_terminology
+
+Creates or updates a custom terminology, depending on whether or not one
+already exists for the given terminology name.
 
 Type annotations for `boto3.client("translate").import_terminology` method.
 
 Boto3 documentation:
 [Translate.Client.import_terminology](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.import_terminology)
+
+Arguments mapping described in
+[ImportTerminologyRequestTypeDef](./type_defs.md#importterminologyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -214,45 +257,60 @@ Keyword-only arguments:
 - `EncryptionKey`: [EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef)
 
 Returns
-[ImportTerminologyResponseTypeDef](./type_defs.md#importterminologyresponsetypedef).
+[ImportTerminologyResponseResponseTypeDef](./type_defs.md#importterminologyresponseresponsetypedef).
 
 ### list_parallel_data
+
+Provides a list of your parallel data resources in Amazon Translate.
 
 Type annotations for `boto3.client("translate").list_parallel_data` method.
 
 Boto3 documentation:
 [Translate.Client.list_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.list_parallel_data)
 
+Arguments mapping described in
+[ListParallelDataRequestTypeDef](./type_defs.md#listparalleldatarequesttypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListParallelDataResponseTypeDef](./type_defs.md#listparalleldataresponsetypedef).
+[ListParallelDataResponseResponseTypeDef](./type_defs.md#listparalleldataresponseresponsetypedef).
 
 ### list_terminologies
+
+Provides a list of custom terminologies associated with your account.
 
 Type annotations for `boto3.client("translate").list_terminologies` method.
 
 Boto3 documentation:
 [Translate.Client.list_terminologies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.list_terminologies)
 
+Arguments mapping described in
+[ListTerminologiesRequestTypeDef](./type_defs.md#listterminologiesrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListTerminologiesResponseTypeDef](./type_defs.md#listterminologiesresponsetypedef).
+[ListTerminologiesResponseResponseTypeDef](./type_defs.md#listterminologiesresponseresponsetypedef).
 
 ### list_text_translation_jobs
+
+Gets a list of the batch translation jobs that you have submitted.
 
 Type annotations for `boto3.client("translate").list_text_translation_jobs`
 method.
 
 Boto3 documentation:
 [Translate.Client.list_text_translation_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.list_text_translation_jobs)
+
+Arguments mapping described in
+[ListTextTranslationJobsRequestTypeDef](./type_defs.md#listtexttranslationjobsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -262,15 +320,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListTextTranslationJobsResponseTypeDef](./type_defs.md#listtexttranslationjobsresponsetypedef).
+[ListTextTranslationJobsResponseResponseTypeDef](./type_defs.md#listtexttranslationjobsresponseresponsetypedef).
 
 ### start_text_translation_job
+
+Starts an asynchronous batch translation job.
 
 Type annotations for `boto3.client("translate").start_text_translation_job`
 method.
 
 Boto3 documentation:
 [Translate.Client.start_text_translation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.start_text_translation_job)
+
+Arguments mapping described in
+[StartTextTranslationJobRequestTypeDef](./type_defs.md#starttexttranslationjobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -288,9 +351,11 @@ Keyword-only arguments:
 - `ParallelDataNames`: `List`\[`str`\]
 
 Returns
-[StartTextTranslationJobResponseTypeDef](./type_defs.md#starttexttranslationjobresponsetypedef).
+[StartTextTranslationJobResponseResponseTypeDef](./type_defs.md#starttexttranslationjobresponseresponsetypedef).
 
 ### stop_text_translation_job
+
+Stops an asynchronous batch translation job that is in progress.
 
 Type annotations for `boto3.client("translate").stop_text_translation_job`
 method.
@@ -298,19 +363,27 @@ method.
 Boto3 documentation:
 [Translate.Client.stop_text_translation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.stop_text_translation_job)
 
+Arguments mapping described in
+[StopTextTranslationJobRequestTypeDef](./type_defs.md#stoptexttranslationjobrequesttypedef).
+
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[StopTextTranslationJobResponseTypeDef](./type_defs.md#stoptexttranslationjobresponsetypedef).
+[StopTextTranslationJobResponseResponseTypeDef](./type_defs.md#stoptexttranslationjobresponseresponsetypedef).
 
 ### translate_text
+
+Translates input text from the source language to the target language.
 
 Type annotations for `boto3.client("translate").translate_text` method.
 
 Boto3 documentation:
 [Translate.Client.translate_text](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.translate_text)
+
+Arguments mapping described in
+[TranslateTextRequestTypeDef](./type_defs.md#translatetextrequesttypedef).
 
 Keyword-only arguments:
 
@@ -320,14 +393,20 @@ Keyword-only arguments:
 - `TerminologyNames`: `List`\[`str`\]
 
 Returns
-[TranslateTextResponseTypeDef](./type_defs.md#translatetextresponsetypedef).
+[TranslateTextResponseResponseTypeDef](./type_defs.md#translatetextresponseresponsetypedef).
 
 ### update_parallel_data
+
+Updates a previously created parallel data resource by importing a new input
+file from Amazon S3.
 
 Type annotations for `boto3.client("translate").update_parallel_data` method.
 
 Boto3 documentation:
 [Translate.Client.update_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.update_parallel_data)
+
+Arguments mapping described in
+[UpdateParallelDataRequestTypeDef](./type_defs.md#updateparalleldatarequesttypedef).
 
 Keyword-only arguments:
 
@@ -339,7 +418,7 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[UpdateParallelDataResponseTypeDef](./type_defs.md#updateparalleldataresponsetypedef).
+[UpdateParallelDataResponseResponseTypeDef](./type_defs.md#updateparalleldataresponseresponsetypedef).
 
 ### get_paginator
 

@@ -8,203 +8,341 @@ type annotations stubs module
 [mypy_boto3_rds](https://pypi.org/project/mypy-boto3-rds/).
 
 - [Typed dictionaries for boto3 RDS module](#typed-dictionaries-for-boto3-rds-module)
-  - [AccountAttributesMessageTypeDef](#accountattributesmessagetypedef)
+  - [AccountAttributesMessageResponseTypeDef](#accountattributesmessageresponsetypedef)
   - [AccountQuotaTypeDef](#accountquotatypedef)
-  - [AddSourceIdentifierToSubscriptionResultTypeDef](#addsourceidentifiertosubscriptionresulttypedef)
-  - [ApplyPendingMaintenanceActionResultTypeDef](#applypendingmaintenanceactionresulttypedef)
-  - [AuthorizeDBSecurityGroupIngressResultTypeDef](#authorizedbsecuritygroupingressresulttypedef)
+  - [AddRoleToDBClusterMessageTypeDef](#addroletodbclustermessagetypedef)
+  - [AddRoleToDBInstanceMessageTypeDef](#addroletodbinstancemessagetypedef)
+  - [AddSourceIdentifierToSubscriptionMessageTypeDef](#addsourceidentifiertosubscriptionmessagetypedef)
+  - [AddSourceIdentifierToSubscriptionResultResponseTypeDef](#addsourceidentifiertosubscriptionresultresponsetypedef)
+  - [AddTagsToResourceMessageTypeDef](#addtagstoresourcemessagetypedef)
+  - [ApplyPendingMaintenanceActionMessageTypeDef](#applypendingmaintenanceactionmessagetypedef)
+  - [ApplyPendingMaintenanceActionResultResponseTypeDef](#applypendingmaintenanceactionresultresponsetypedef)
+  - [AuthorizeDBSecurityGroupIngressMessageTypeDef](#authorizedbsecuritygroupingressmessagetypedef)
+  - [AuthorizeDBSecurityGroupIngressResultResponseTypeDef](#authorizedbsecuritygroupingressresultresponsetypedef)
   - [AvailabilityZoneTypeDef](#availabilityzonetypedef)
   - [AvailableProcessorFeatureTypeDef](#availableprocessorfeaturetypedef)
-  - [CertificateMessageTypeDef](#certificatemessagetypedef)
+  - [BacktrackDBClusterMessageTypeDef](#backtrackdbclustermessagetypedef)
+  - [CancelExportTaskMessageTypeDef](#cancelexporttaskmessagetypedef)
+  - [CertificateMessageResponseTypeDef](#certificatemessageresponsetypedef)
   - [CertificateTypeDef](#certificatetypedef)
   - [CharacterSetTypeDef](#charactersettypedef)
+  - [ClientGenerateDbAuthTokenRequestTypeDef](#clientgeneratedbauthtokenrequesttypedef)
   - [CloudwatchLogsExportConfigurationTypeDef](#cloudwatchlogsexportconfigurationtypedef)
   - [ClusterPendingModifiedValuesTypeDef](#clusterpendingmodifiedvaluestypedef)
   - [ConnectionPoolConfigurationInfoTypeDef](#connectionpoolconfigurationinfotypedef)
   - [ConnectionPoolConfigurationTypeDef](#connectionpoolconfigurationtypedef)
-  - [CopyDBClusterParameterGroupResultTypeDef](#copydbclusterparametergroupresulttypedef)
-  - [CopyDBClusterSnapshotResultTypeDef](#copydbclustersnapshotresulttypedef)
-  - [CopyDBParameterGroupResultTypeDef](#copydbparametergroupresulttypedef)
-  - [CopyDBSnapshotResultTypeDef](#copydbsnapshotresulttypedef)
-  - [CopyOptionGroupResultTypeDef](#copyoptiongroupresulttypedef)
-  - [CreateCustomAvailabilityZoneResultTypeDef](#createcustomavailabilityzoneresulttypedef)
-  - [CreateDBClusterParameterGroupResultTypeDef](#createdbclusterparametergroupresulttypedef)
-  - [CreateDBClusterResultTypeDef](#createdbclusterresulttypedef)
-  - [CreateDBClusterSnapshotResultTypeDef](#createdbclustersnapshotresulttypedef)
-  - [CreateDBInstanceReadReplicaResultTypeDef](#createdbinstancereadreplicaresulttypedef)
-  - [CreateDBInstanceResultTypeDef](#createdbinstanceresulttypedef)
-  - [CreateDBParameterGroupResultTypeDef](#createdbparametergroupresulttypedef)
-  - [CreateDBProxyEndpointResponseTypeDef](#createdbproxyendpointresponsetypedef)
-  - [CreateDBProxyResponseTypeDef](#createdbproxyresponsetypedef)
-  - [CreateDBSecurityGroupResultTypeDef](#createdbsecuritygroupresulttypedef)
-  - [CreateDBSnapshotResultTypeDef](#createdbsnapshotresulttypedef)
-  - [CreateDBSubnetGroupResultTypeDef](#createdbsubnetgroupresulttypedef)
-  - [CreateEventSubscriptionResultTypeDef](#createeventsubscriptionresulttypedef)
-  - [CreateGlobalClusterResultTypeDef](#createglobalclusterresulttypedef)
-  - [CreateOptionGroupResultTypeDef](#createoptiongroupresulttypedef)
-  - [CustomAvailabilityZoneMessageTypeDef](#customavailabilityzonemessagetypedef)
+  - [CopyDBClusterParameterGroupMessageTypeDef](#copydbclusterparametergroupmessagetypedef)
+  - [CopyDBClusterParameterGroupResultResponseTypeDef](#copydbclusterparametergroupresultresponsetypedef)
+  - [CopyDBClusterSnapshotMessageTypeDef](#copydbclustersnapshotmessagetypedef)
+  - [CopyDBClusterSnapshotResultResponseTypeDef](#copydbclustersnapshotresultresponsetypedef)
+  - [CopyDBParameterGroupMessageTypeDef](#copydbparametergroupmessagetypedef)
+  - [CopyDBParameterGroupResultResponseTypeDef](#copydbparametergroupresultresponsetypedef)
+  - [CopyDBSnapshotMessageTypeDef](#copydbsnapshotmessagetypedef)
+  - [CopyDBSnapshotResultResponseTypeDef](#copydbsnapshotresultresponsetypedef)
+  - [CopyOptionGroupMessageTypeDef](#copyoptiongroupmessagetypedef)
+  - [CopyOptionGroupResultResponseTypeDef](#copyoptiongroupresultresponsetypedef)
+  - [CreateCustomAvailabilityZoneMessageTypeDef](#createcustomavailabilityzonemessagetypedef)
+  - [CreateCustomAvailabilityZoneResultResponseTypeDef](#createcustomavailabilityzoneresultresponsetypedef)
+  - [CreateDBClusterEndpointMessageTypeDef](#createdbclusterendpointmessagetypedef)
+  - [CreateDBClusterMessageTypeDef](#createdbclustermessagetypedef)
+  - [CreateDBClusterParameterGroupMessageTypeDef](#createdbclusterparametergroupmessagetypedef)
+  - [CreateDBClusterParameterGroupResultResponseTypeDef](#createdbclusterparametergroupresultresponsetypedef)
+  - [CreateDBClusterResultResponseTypeDef](#createdbclusterresultresponsetypedef)
+  - [CreateDBClusterSnapshotMessageTypeDef](#createdbclustersnapshotmessagetypedef)
+  - [CreateDBClusterSnapshotResultResponseTypeDef](#createdbclustersnapshotresultresponsetypedef)
+  - [CreateDBInstanceMessageTypeDef](#createdbinstancemessagetypedef)
+  - [CreateDBInstanceReadReplicaMessageTypeDef](#createdbinstancereadreplicamessagetypedef)
+  - [CreateDBInstanceReadReplicaResultResponseTypeDef](#createdbinstancereadreplicaresultresponsetypedef)
+  - [CreateDBInstanceResultResponseTypeDef](#createdbinstanceresultresponsetypedef)
+  - [CreateDBParameterGroupMessageTypeDef](#createdbparametergroupmessagetypedef)
+  - [CreateDBParameterGroupResultResponseTypeDef](#createdbparametergroupresultresponsetypedef)
+  - [CreateDBProxyEndpointRequestTypeDef](#createdbproxyendpointrequesttypedef)
+  - [CreateDBProxyEndpointResponseResponseTypeDef](#createdbproxyendpointresponseresponsetypedef)
+  - [CreateDBProxyRequestTypeDef](#createdbproxyrequesttypedef)
+  - [CreateDBProxyResponseResponseTypeDef](#createdbproxyresponseresponsetypedef)
+  - [CreateDBSecurityGroupMessageTypeDef](#createdbsecuritygroupmessagetypedef)
+  - [CreateDBSecurityGroupResultResponseTypeDef](#createdbsecuritygroupresultresponsetypedef)
+  - [CreateDBSnapshotMessageTypeDef](#createdbsnapshotmessagetypedef)
+  - [CreateDBSnapshotResultResponseTypeDef](#createdbsnapshotresultresponsetypedef)
+  - [CreateDBSubnetGroupMessageTypeDef](#createdbsubnetgroupmessagetypedef)
+  - [CreateDBSubnetGroupResultResponseTypeDef](#createdbsubnetgroupresultresponsetypedef)
+  - [CreateEventSubscriptionMessageTypeDef](#createeventsubscriptionmessagetypedef)
+  - [CreateEventSubscriptionResultResponseTypeDef](#createeventsubscriptionresultresponsetypedef)
+  - [CreateGlobalClusterMessageTypeDef](#createglobalclustermessagetypedef)
+  - [CreateGlobalClusterResultResponseTypeDef](#createglobalclusterresultresponsetypedef)
+  - [CreateOptionGroupMessageTypeDef](#createoptiongroupmessagetypedef)
+  - [CreateOptionGroupResultResponseTypeDef](#createoptiongroupresultresponsetypedef)
+  - [CustomAvailabilityZoneMessageResponseTypeDef](#customavailabilityzonemessageresponsetypedef)
   - [CustomAvailabilityZoneTypeDef](#customavailabilityzonetypedef)
-  - [DBClusterBacktrackMessageTypeDef](#dbclusterbacktrackmessagetypedef)
-  - [DBClusterBacktrackTypeDef](#dbclusterbacktracktypedef)
-  - [DBClusterCapacityInfoTypeDef](#dbclustercapacityinfotypedef)
-  - [DBClusterEndpointMessageTypeDef](#dbclusterendpointmessagetypedef)
-  - [DBClusterEndpointTypeDef](#dbclusterendpointtypedef)
+  - [DBClusterBacktrackMessageResponseTypeDef](#dbclusterbacktrackmessageresponsetypedef)
+  - [DBClusterBacktrackResponseTypeDef](#dbclusterbacktrackresponsetypedef)
+  - [DBClusterCapacityInfoResponseTypeDef](#dbclustercapacityinforesponsetypedef)
+  - [DBClusterEndpointMessageResponseTypeDef](#dbclusterendpointmessageresponsetypedef)
+  - [DBClusterEndpointResponseTypeDef](#dbclusterendpointresponsetypedef)
   - [DBClusterMemberTypeDef](#dbclustermembertypedef)
-  - [DBClusterMessageTypeDef](#dbclustermessagetypedef)
+  - [DBClusterMessageResponseTypeDef](#dbclustermessageresponsetypedef)
   - [DBClusterOptionGroupStatusTypeDef](#dbclusteroptiongroupstatustypedef)
-  - [DBClusterParameterGroupDetailsTypeDef](#dbclusterparametergroupdetailstypedef)
-  - [DBClusterParameterGroupNameMessageTypeDef](#dbclusterparametergroupnamemessagetypedef)
+  - [DBClusterParameterGroupDetailsResponseTypeDef](#dbclusterparametergroupdetailsresponsetypedef)
+  - [DBClusterParameterGroupNameMessageResponseTypeDef](#dbclusterparametergroupnamemessageresponsetypedef)
   - [DBClusterParameterGroupTypeDef](#dbclusterparametergrouptypedef)
-  - [DBClusterParameterGroupsMessageTypeDef](#dbclusterparametergroupsmessagetypedef)
+  - [DBClusterParameterGroupsMessageResponseTypeDef](#dbclusterparametergroupsmessageresponsetypedef)
   - [DBClusterRoleTypeDef](#dbclusterroletypedef)
   - [DBClusterSnapshotAttributeTypeDef](#dbclustersnapshotattributetypedef)
   - [DBClusterSnapshotAttributesResultTypeDef](#dbclustersnapshotattributesresulttypedef)
-  - [DBClusterSnapshotMessageTypeDef](#dbclustersnapshotmessagetypedef)
+  - [DBClusterSnapshotMessageResponseTypeDef](#dbclustersnapshotmessageresponsetypedef)
   - [DBClusterSnapshotTypeDef](#dbclustersnapshottypedef)
   - [DBClusterTypeDef](#dbclustertypedef)
-  - [DBEngineVersionMessageTypeDef](#dbengineversionmessagetypedef)
+  - [DBEngineVersionMessageResponseTypeDef](#dbengineversionmessageresponsetypedef)
   - [DBEngineVersionTypeDef](#dbengineversiontypedef)
-  - [DBInstanceAutomatedBackupMessageTypeDef](#dbinstanceautomatedbackupmessagetypedef)
+  - [DBInstanceAutomatedBackupMessageResponseTypeDef](#dbinstanceautomatedbackupmessageresponsetypedef)
   - [DBInstanceAutomatedBackupTypeDef](#dbinstanceautomatedbackuptypedef)
   - [DBInstanceAutomatedBackupsReplicationTypeDef](#dbinstanceautomatedbackupsreplicationtypedef)
-  - [DBInstanceMessageTypeDef](#dbinstancemessagetypedef)
+  - [DBInstanceMessageResponseTypeDef](#dbinstancemessageresponsetypedef)
   - [DBInstanceRoleTypeDef](#dbinstanceroletypedef)
   - [DBInstanceStatusInfoTypeDef](#dbinstancestatusinfotypedef)
   - [DBInstanceTypeDef](#dbinstancetypedef)
-  - [DBParameterGroupDetailsTypeDef](#dbparametergroupdetailstypedef)
-  - [DBParameterGroupNameMessageTypeDef](#dbparametergroupnamemessagetypedef)
+  - [DBParameterGroupDetailsResponseTypeDef](#dbparametergroupdetailsresponsetypedef)
+  - [DBParameterGroupNameMessageResponseTypeDef](#dbparametergroupnamemessageresponsetypedef)
   - [DBParameterGroupStatusTypeDef](#dbparametergroupstatustypedef)
   - [DBParameterGroupTypeDef](#dbparametergrouptypedef)
-  - [DBParameterGroupsMessageTypeDef](#dbparametergroupsmessagetypedef)
+  - [DBParameterGroupsMessageResponseTypeDef](#dbparametergroupsmessageresponsetypedef)
   - [DBProxyEndpointTypeDef](#dbproxyendpointtypedef)
   - [DBProxyTargetGroupTypeDef](#dbproxytargetgrouptypedef)
   - [DBProxyTargetTypeDef](#dbproxytargettypedef)
   - [DBProxyTypeDef](#dbproxytypedef)
   - [DBSecurityGroupMembershipTypeDef](#dbsecuritygroupmembershiptypedef)
-  - [DBSecurityGroupMessageTypeDef](#dbsecuritygroupmessagetypedef)
+  - [DBSecurityGroupMessageResponseTypeDef](#dbsecuritygroupmessageresponsetypedef)
   - [DBSecurityGroupTypeDef](#dbsecuritygrouptypedef)
   - [DBSnapshotAttributeTypeDef](#dbsnapshotattributetypedef)
   - [DBSnapshotAttributesResultTypeDef](#dbsnapshotattributesresulttypedef)
-  - [DBSnapshotMessageTypeDef](#dbsnapshotmessagetypedef)
+  - [DBSnapshotMessageResponseTypeDef](#dbsnapshotmessageresponsetypedef)
   - [DBSnapshotTypeDef](#dbsnapshottypedef)
-  - [DBSubnetGroupMessageTypeDef](#dbsubnetgroupmessagetypedef)
+  - [DBSubnetGroupMessageResponseTypeDef](#dbsubnetgroupmessageresponsetypedef)
   - [DBSubnetGroupTypeDef](#dbsubnetgrouptypedef)
-  - [DeleteCustomAvailabilityZoneResultTypeDef](#deletecustomavailabilityzoneresulttypedef)
-  - [DeleteDBClusterResultTypeDef](#deletedbclusterresulttypedef)
-  - [DeleteDBClusterSnapshotResultTypeDef](#deletedbclustersnapshotresulttypedef)
-  - [DeleteDBInstanceAutomatedBackupResultTypeDef](#deletedbinstanceautomatedbackupresulttypedef)
-  - [DeleteDBInstanceResultTypeDef](#deletedbinstanceresulttypedef)
-  - [DeleteDBProxyEndpointResponseTypeDef](#deletedbproxyendpointresponsetypedef)
-  - [DeleteDBProxyResponseTypeDef](#deletedbproxyresponsetypedef)
-  - [DeleteDBSnapshotResultTypeDef](#deletedbsnapshotresulttypedef)
-  - [DeleteEventSubscriptionResultTypeDef](#deleteeventsubscriptionresulttypedef)
-  - [DeleteGlobalClusterResultTypeDef](#deleteglobalclusterresulttypedef)
-  - [DescribeDBClusterSnapshotAttributesResultTypeDef](#describedbclustersnapshotattributesresulttypedef)
+  - [DeleteCustomAvailabilityZoneMessageTypeDef](#deletecustomavailabilityzonemessagetypedef)
+  - [DeleteCustomAvailabilityZoneResultResponseTypeDef](#deletecustomavailabilityzoneresultresponsetypedef)
+  - [DeleteDBClusterEndpointMessageTypeDef](#deletedbclusterendpointmessagetypedef)
+  - [DeleteDBClusterMessageTypeDef](#deletedbclustermessagetypedef)
+  - [DeleteDBClusterParameterGroupMessageTypeDef](#deletedbclusterparametergroupmessagetypedef)
+  - [DeleteDBClusterResultResponseTypeDef](#deletedbclusterresultresponsetypedef)
+  - [DeleteDBClusterSnapshotMessageTypeDef](#deletedbclustersnapshotmessagetypedef)
+  - [DeleteDBClusterSnapshotResultResponseTypeDef](#deletedbclustersnapshotresultresponsetypedef)
+  - [DeleteDBInstanceAutomatedBackupMessageTypeDef](#deletedbinstanceautomatedbackupmessagetypedef)
+  - [DeleteDBInstanceAutomatedBackupResultResponseTypeDef](#deletedbinstanceautomatedbackupresultresponsetypedef)
+  - [DeleteDBInstanceMessageTypeDef](#deletedbinstancemessagetypedef)
+  - [DeleteDBInstanceResultResponseTypeDef](#deletedbinstanceresultresponsetypedef)
+  - [DeleteDBParameterGroupMessageTypeDef](#deletedbparametergroupmessagetypedef)
+  - [DeleteDBProxyEndpointRequestTypeDef](#deletedbproxyendpointrequesttypedef)
+  - [DeleteDBProxyEndpointResponseResponseTypeDef](#deletedbproxyendpointresponseresponsetypedef)
+  - [DeleteDBProxyRequestTypeDef](#deletedbproxyrequesttypedef)
+  - [DeleteDBProxyResponseResponseTypeDef](#deletedbproxyresponseresponsetypedef)
+  - [DeleteDBSecurityGroupMessageTypeDef](#deletedbsecuritygroupmessagetypedef)
+  - [DeleteDBSnapshotMessageTypeDef](#deletedbsnapshotmessagetypedef)
+  - [DeleteDBSnapshotResultResponseTypeDef](#deletedbsnapshotresultresponsetypedef)
+  - [DeleteDBSubnetGroupMessageTypeDef](#deletedbsubnetgroupmessagetypedef)
+  - [DeleteEventSubscriptionMessageTypeDef](#deleteeventsubscriptionmessagetypedef)
+  - [DeleteEventSubscriptionResultResponseTypeDef](#deleteeventsubscriptionresultresponsetypedef)
+  - [DeleteGlobalClusterMessageTypeDef](#deleteglobalclustermessagetypedef)
+  - [DeleteGlobalClusterResultResponseTypeDef](#deleteglobalclusterresultresponsetypedef)
+  - [DeleteInstallationMediaMessageTypeDef](#deleteinstallationmediamessagetypedef)
+  - [DeleteOptionGroupMessageTypeDef](#deleteoptiongroupmessagetypedef)
+  - [DeregisterDBProxyTargetsRequestTypeDef](#deregisterdbproxytargetsrequesttypedef)
+  - [DescribeCertificatesMessageTypeDef](#describecertificatesmessagetypedef)
+  - [DescribeCustomAvailabilityZonesMessageTypeDef](#describecustomavailabilityzonesmessagetypedef)
+  - [DescribeDBClusterBacktracksMessageTypeDef](#describedbclusterbacktracksmessagetypedef)
+  - [DescribeDBClusterEndpointsMessageTypeDef](#describedbclusterendpointsmessagetypedef)
+  - [DescribeDBClusterParameterGroupsMessageTypeDef](#describedbclusterparametergroupsmessagetypedef)
+  - [DescribeDBClusterParametersMessageTypeDef](#describedbclusterparametersmessagetypedef)
+  - [DescribeDBClusterSnapshotAttributesMessageTypeDef](#describedbclustersnapshotattributesmessagetypedef)
+  - [DescribeDBClusterSnapshotAttributesResultResponseTypeDef](#describedbclustersnapshotattributesresultresponsetypedef)
+  - [DescribeDBClusterSnapshotsMessageTypeDef](#describedbclustersnapshotsmessagetypedef)
+  - [DescribeDBClustersMessageTypeDef](#describedbclustersmessagetypedef)
+  - [DescribeDBEngineVersionsMessageTypeDef](#describedbengineversionsmessagetypedef)
+  - [DescribeDBInstanceAutomatedBackupsMessageTypeDef](#describedbinstanceautomatedbackupsmessagetypedef)
+  - [DescribeDBInstancesMessageTypeDef](#describedbinstancesmessagetypedef)
   - [DescribeDBLogFilesDetailsTypeDef](#describedblogfilesdetailstypedef)
-  - [DescribeDBLogFilesResponseTypeDef](#describedblogfilesresponsetypedef)
-  - [DescribeDBProxiesResponseTypeDef](#describedbproxiesresponsetypedef)
-  - [DescribeDBProxyEndpointsResponseTypeDef](#describedbproxyendpointsresponsetypedef)
-  - [DescribeDBProxyTargetGroupsResponseTypeDef](#describedbproxytargetgroupsresponsetypedef)
-  - [DescribeDBProxyTargetsResponseTypeDef](#describedbproxytargetsresponsetypedef)
-  - [DescribeDBSnapshotAttributesResultTypeDef](#describedbsnapshotattributesresulttypedef)
-  - [DescribeEngineDefaultClusterParametersResultTypeDef](#describeenginedefaultclusterparametersresulttypedef)
-  - [DescribeEngineDefaultParametersResultTypeDef](#describeenginedefaultparametersresulttypedef)
-  - [DescribeValidDBInstanceModificationsResultTypeDef](#describevaliddbinstancemodificationsresulttypedef)
+  - [DescribeDBLogFilesMessageTypeDef](#describedblogfilesmessagetypedef)
+  - [DescribeDBLogFilesResponseResponseTypeDef](#describedblogfilesresponseresponsetypedef)
+  - [DescribeDBParameterGroupsMessageTypeDef](#describedbparametergroupsmessagetypedef)
+  - [DescribeDBParametersMessageTypeDef](#describedbparametersmessagetypedef)
+  - [DescribeDBProxiesRequestTypeDef](#describedbproxiesrequesttypedef)
+  - [DescribeDBProxiesResponseResponseTypeDef](#describedbproxiesresponseresponsetypedef)
+  - [DescribeDBProxyEndpointsRequestTypeDef](#describedbproxyendpointsrequesttypedef)
+  - [DescribeDBProxyEndpointsResponseResponseTypeDef](#describedbproxyendpointsresponseresponsetypedef)
+  - [DescribeDBProxyTargetGroupsRequestTypeDef](#describedbproxytargetgroupsrequesttypedef)
+  - [DescribeDBProxyTargetGroupsResponseResponseTypeDef](#describedbproxytargetgroupsresponseresponsetypedef)
+  - [DescribeDBProxyTargetsRequestTypeDef](#describedbproxytargetsrequesttypedef)
+  - [DescribeDBProxyTargetsResponseResponseTypeDef](#describedbproxytargetsresponseresponsetypedef)
+  - [DescribeDBSecurityGroupsMessageTypeDef](#describedbsecuritygroupsmessagetypedef)
+  - [DescribeDBSnapshotAttributesMessageTypeDef](#describedbsnapshotattributesmessagetypedef)
+  - [DescribeDBSnapshotAttributesResultResponseTypeDef](#describedbsnapshotattributesresultresponsetypedef)
+  - [DescribeDBSnapshotsMessageTypeDef](#describedbsnapshotsmessagetypedef)
+  - [DescribeDBSubnetGroupsMessageTypeDef](#describedbsubnetgroupsmessagetypedef)
+  - [DescribeEngineDefaultClusterParametersMessageTypeDef](#describeenginedefaultclusterparametersmessagetypedef)
+  - [DescribeEngineDefaultClusterParametersResultResponseTypeDef](#describeenginedefaultclusterparametersresultresponsetypedef)
+  - [DescribeEngineDefaultParametersMessageTypeDef](#describeenginedefaultparametersmessagetypedef)
+  - [DescribeEngineDefaultParametersResultResponseTypeDef](#describeenginedefaultparametersresultresponsetypedef)
+  - [DescribeEventCategoriesMessageTypeDef](#describeeventcategoriesmessagetypedef)
+  - [DescribeEventSubscriptionsMessageTypeDef](#describeeventsubscriptionsmessagetypedef)
+  - [DescribeEventsMessageTypeDef](#describeeventsmessagetypedef)
+  - [DescribeExportTasksMessageTypeDef](#describeexporttasksmessagetypedef)
+  - [DescribeGlobalClustersMessageTypeDef](#describeglobalclustersmessagetypedef)
+  - [DescribeInstallationMediaMessageTypeDef](#describeinstallationmediamessagetypedef)
+  - [DescribeOptionGroupOptionsMessageTypeDef](#describeoptiongroupoptionsmessagetypedef)
+  - [DescribeOptionGroupsMessageTypeDef](#describeoptiongroupsmessagetypedef)
+  - [DescribeOrderableDBInstanceOptionsMessageTypeDef](#describeorderabledbinstanceoptionsmessagetypedef)
+  - [DescribePendingMaintenanceActionsMessageTypeDef](#describependingmaintenanceactionsmessagetypedef)
+  - [DescribeReservedDBInstancesMessageTypeDef](#describereserveddbinstancesmessagetypedef)
+  - [DescribeReservedDBInstancesOfferingsMessageTypeDef](#describereserveddbinstancesofferingsmessagetypedef)
+  - [DescribeSourceRegionsMessageTypeDef](#describesourceregionsmessagetypedef)
+  - [DescribeValidDBInstanceModificationsMessageTypeDef](#describevaliddbinstancemodificationsmessagetypedef)
+  - [DescribeValidDBInstanceModificationsResultResponseTypeDef](#describevaliddbinstancemodificationsresultresponsetypedef)
   - [DomainMembershipTypeDef](#domainmembershiptypedef)
   - [DoubleRangeTypeDef](#doublerangetypedef)
-  - [DownloadDBLogFilePortionDetailsTypeDef](#downloaddblogfileportiondetailstypedef)
+  - [DownloadDBLogFilePortionDetailsResponseTypeDef](#downloaddblogfileportiondetailsresponsetypedef)
+  - [DownloadDBLogFilePortionMessageTypeDef](#downloaddblogfileportionmessagetypedef)
   - [EC2SecurityGroupTypeDef](#ec2securitygrouptypedef)
   - [EndpointTypeDef](#endpointtypedef)
   - [EngineDefaultsTypeDef](#enginedefaultstypedef)
   - [EventCategoriesMapTypeDef](#eventcategoriesmaptypedef)
-  - [EventCategoriesMessageTypeDef](#eventcategoriesmessagetypedef)
+  - [EventCategoriesMessageResponseTypeDef](#eventcategoriesmessageresponsetypedef)
   - [EventSubscriptionTypeDef](#eventsubscriptiontypedef)
-  - [EventSubscriptionsMessageTypeDef](#eventsubscriptionsmessagetypedef)
+  - [EventSubscriptionsMessageResponseTypeDef](#eventsubscriptionsmessageresponsetypedef)
   - [EventTypeDef](#eventtypedef)
-  - [EventsMessageTypeDef](#eventsmessagetypedef)
-  - [ExportTaskTypeDef](#exporttasktypedef)
-  - [ExportTasksMessageTypeDef](#exporttasksmessagetypedef)
-  - [FailoverDBClusterResultTypeDef](#failoverdbclusterresulttypedef)
-  - [FailoverGlobalClusterResultTypeDef](#failoverglobalclusterresulttypedef)
+  - [EventsMessageResponseTypeDef](#eventsmessageresponsetypedef)
+  - [ExportTaskResponseTypeDef](#exporttaskresponsetypedef)
+  - [ExportTasksMessageResponseTypeDef](#exporttasksmessageresponsetypedef)
+  - [FailoverDBClusterMessageTypeDef](#failoverdbclustermessagetypedef)
+  - [FailoverDBClusterResultResponseTypeDef](#failoverdbclusterresultresponsetypedef)
+  - [FailoverGlobalClusterMessageTypeDef](#failoverglobalclustermessagetypedef)
+  - [FailoverGlobalClusterResultResponseTypeDef](#failoverglobalclusterresultresponsetypedef)
   - [FailoverStateTypeDef](#failoverstatetypedef)
   - [FilterTypeDef](#filtertypedef)
   - [GlobalClusterMemberTypeDef](#globalclustermembertypedef)
   - [GlobalClusterTypeDef](#globalclustertypedef)
-  - [GlobalClustersMessageTypeDef](#globalclustersmessagetypedef)
+  - [GlobalClustersMessageResponseTypeDef](#globalclustersmessageresponsetypedef)
   - [IPRangeTypeDef](#iprangetypedef)
+  - [ImportInstallationMediaMessageTypeDef](#importinstallationmediamessagetypedef)
   - [InstallationMediaFailureCauseTypeDef](#installationmediafailurecausetypedef)
-  - [InstallationMediaMessageTypeDef](#installationmediamessagetypedef)
-  - [InstallationMediaTypeDef](#installationmediatypedef)
+  - [InstallationMediaMessageResponseTypeDef](#installationmediamessageresponsetypedef)
+  - [InstallationMediaResponseTypeDef](#installationmediaresponsetypedef)
+  - [ListTagsForResourceMessageTypeDef](#listtagsforresourcemessagetypedef)
   - [MinimumEngineVersionPerAllowedValueTypeDef](#minimumengineversionperallowedvaluetypedef)
-  - [ModifyCertificatesResultTypeDef](#modifycertificatesresulttypedef)
-  - [ModifyDBClusterResultTypeDef](#modifydbclusterresulttypedef)
-  - [ModifyDBClusterSnapshotAttributeResultTypeDef](#modifydbclustersnapshotattributeresulttypedef)
-  - [ModifyDBInstanceResultTypeDef](#modifydbinstanceresulttypedef)
-  - [ModifyDBProxyEndpointResponseTypeDef](#modifydbproxyendpointresponsetypedef)
-  - [ModifyDBProxyResponseTypeDef](#modifydbproxyresponsetypedef)
-  - [ModifyDBProxyTargetGroupResponseTypeDef](#modifydbproxytargetgroupresponsetypedef)
-  - [ModifyDBSnapshotAttributeResultTypeDef](#modifydbsnapshotattributeresulttypedef)
-  - [ModifyDBSnapshotResultTypeDef](#modifydbsnapshotresulttypedef)
-  - [ModifyDBSubnetGroupResultTypeDef](#modifydbsubnetgroupresulttypedef)
-  - [ModifyEventSubscriptionResultTypeDef](#modifyeventsubscriptionresulttypedef)
-  - [ModifyGlobalClusterResultTypeDef](#modifyglobalclusterresulttypedef)
-  - [ModifyOptionGroupResultTypeDef](#modifyoptiongroupresulttypedef)
+  - [ModifyCertificatesMessageTypeDef](#modifycertificatesmessagetypedef)
+  - [ModifyCertificatesResultResponseTypeDef](#modifycertificatesresultresponsetypedef)
+  - [ModifyCurrentDBClusterCapacityMessageTypeDef](#modifycurrentdbclustercapacitymessagetypedef)
+  - [ModifyDBClusterEndpointMessageTypeDef](#modifydbclusterendpointmessagetypedef)
+  - [ModifyDBClusterMessageTypeDef](#modifydbclustermessagetypedef)
+  - [ModifyDBClusterParameterGroupMessageTypeDef](#modifydbclusterparametergroupmessagetypedef)
+  - [ModifyDBClusterResultResponseTypeDef](#modifydbclusterresultresponsetypedef)
+  - [ModifyDBClusterSnapshotAttributeMessageTypeDef](#modifydbclustersnapshotattributemessagetypedef)
+  - [ModifyDBClusterSnapshotAttributeResultResponseTypeDef](#modifydbclustersnapshotattributeresultresponsetypedef)
+  - [ModifyDBInstanceMessageTypeDef](#modifydbinstancemessagetypedef)
+  - [ModifyDBInstanceResultResponseTypeDef](#modifydbinstanceresultresponsetypedef)
+  - [ModifyDBParameterGroupMessageTypeDef](#modifydbparametergroupmessagetypedef)
+  - [ModifyDBProxyEndpointRequestTypeDef](#modifydbproxyendpointrequesttypedef)
+  - [ModifyDBProxyEndpointResponseResponseTypeDef](#modifydbproxyendpointresponseresponsetypedef)
+  - [ModifyDBProxyRequestTypeDef](#modifydbproxyrequesttypedef)
+  - [ModifyDBProxyResponseResponseTypeDef](#modifydbproxyresponseresponsetypedef)
+  - [ModifyDBProxyTargetGroupRequestTypeDef](#modifydbproxytargetgrouprequesttypedef)
+  - [ModifyDBProxyTargetGroupResponseResponseTypeDef](#modifydbproxytargetgroupresponseresponsetypedef)
+  - [ModifyDBSnapshotAttributeMessageTypeDef](#modifydbsnapshotattributemessagetypedef)
+  - [ModifyDBSnapshotAttributeResultResponseTypeDef](#modifydbsnapshotattributeresultresponsetypedef)
+  - [ModifyDBSnapshotMessageTypeDef](#modifydbsnapshotmessagetypedef)
+  - [ModifyDBSnapshotResultResponseTypeDef](#modifydbsnapshotresultresponsetypedef)
+  - [ModifyDBSubnetGroupMessageTypeDef](#modifydbsubnetgroupmessagetypedef)
+  - [ModifyDBSubnetGroupResultResponseTypeDef](#modifydbsubnetgroupresultresponsetypedef)
+  - [ModifyEventSubscriptionMessageTypeDef](#modifyeventsubscriptionmessagetypedef)
+  - [ModifyEventSubscriptionResultResponseTypeDef](#modifyeventsubscriptionresultresponsetypedef)
+  - [ModifyGlobalClusterMessageTypeDef](#modifyglobalclustermessagetypedef)
+  - [ModifyGlobalClusterResultResponseTypeDef](#modifyglobalclusterresultresponsetypedef)
+  - [ModifyOptionGroupMessageTypeDef](#modifyoptiongroupmessagetypedef)
+  - [ModifyOptionGroupResultResponseTypeDef](#modifyoptiongroupresultresponsetypedef)
   - [OptionConfigurationTypeDef](#optionconfigurationtypedef)
   - [OptionGroupMembershipTypeDef](#optiongroupmembershiptypedef)
   - [OptionGroupOptionSettingTypeDef](#optiongroupoptionsettingtypedef)
   - [OptionGroupOptionTypeDef](#optiongroupoptiontypedef)
-  - [OptionGroupOptionsMessageTypeDef](#optiongroupoptionsmessagetypedef)
+  - [OptionGroupOptionsMessageResponseTypeDef](#optiongroupoptionsmessageresponsetypedef)
   - [OptionGroupTypeDef](#optiongrouptypedef)
-  - [OptionGroupsTypeDef](#optiongroupstypedef)
+  - [OptionGroupsResponseTypeDef](#optiongroupsresponsetypedef)
   - [OptionSettingTypeDef](#optionsettingtypedef)
   - [OptionTypeDef](#optiontypedef)
   - [OptionVersionTypeDef](#optionversiontypedef)
   - [OrderableDBInstanceOptionTypeDef](#orderabledbinstanceoptiontypedef)
-  - [OrderableDBInstanceOptionsMessageTypeDef](#orderabledbinstanceoptionsmessagetypedef)
+  - [OrderableDBInstanceOptionsMessageResponseTypeDef](#orderabledbinstanceoptionsmessageresponsetypedef)
   - [OutpostTypeDef](#outposttypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ParameterTypeDef](#parametertypedef)
   - [PendingCloudwatchLogsExportsTypeDef](#pendingcloudwatchlogsexportstypedef)
   - [PendingMaintenanceActionTypeDef](#pendingmaintenanceactiontypedef)
-  - [PendingMaintenanceActionsMessageTypeDef](#pendingmaintenanceactionsmessagetypedef)
+  - [PendingMaintenanceActionsMessageResponseTypeDef](#pendingmaintenanceactionsmessageresponsetypedef)
   - [PendingModifiedValuesTypeDef](#pendingmodifiedvaluestypedef)
   - [ProcessorFeatureTypeDef](#processorfeaturetypedef)
-  - [PromoteReadReplicaDBClusterResultTypeDef](#promotereadreplicadbclusterresulttypedef)
-  - [PromoteReadReplicaResultTypeDef](#promotereadreplicaresulttypedef)
-  - [PurchaseReservedDBInstancesOfferingResultTypeDef](#purchasereserveddbinstancesofferingresulttypedef)
+  - [PromoteReadReplicaDBClusterMessageTypeDef](#promotereadreplicadbclustermessagetypedef)
+  - [PromoteReadReplicaDBClusterResultResponseTypeDef](#promotereadreplicadbclusterresultresponsetypedef)
+  - [PromoteReadReplicaMessageTypeDef](#promotereadreplicamessagetypedef)
+  - [PromoteReadReplicaResultResponseTypeDef](#promotereadreplicaresultresponsetypedef)
+  - [PurchaseReservedDBInstancesOfferingMessageTypeDef](#purchasereserveddbinstancesofferingmessagetypedef)
+  - [PurchaseReservedDBInstancesOfferingResultResponseTypeDef](#purchasereserveddbinstancesofferingresultresponsetypedef)
   - [RangeTypeDef](#rangetypedef)
-  - [RebootDBInstanceResultTypeDef](#rebootdbinstanceresulttypedef)
+  - [RebootDBInstanceMessageTypeDef](#rebootdbinstancemessagetypedef)
+  - [RebootDBInstanceResultResponseTypeDef](#rebootdbinstanceresultresponsetypedef)
   - [RecurringChargeTypeDef](#recurringchargetypedef)
-  - [RegisterDBProxyTargetsResponseTypeDef](#registerdbproxytargetsresponsetypedef)
-  - [RemoveFromGlobalClusterResultTypeDef](#removefromglobalclusterresulttypedef)
-  - [RemoveSourceIdentifierFromSubscriptionResultTypeDef](#removesourceidentifierfromsubscriptionresulttypedef)
-  - [ReservedDBInstanceMessageTypeDef](#reserveddbinstancemessagetypedef)
+  - [RegisterDBProxyTargetsRequestTypeDef](#registerdbproxytargetsrequesttypedef)
+  - [RegisterDBProxyTargetsResponseResponseTypeDef](#registerdbproxytargetsresponseresponsetypedef)
+  - [RemoveFromGlobalClusterMessageTypeDef](#removefromglobalclustermessagetypedef)
+  - [RemoveFromGlobalClusterResultResponseTypeDef](#removefromglobalclusterresultresponsetypedef)
+  - [RemoveRoleFromDBClusterMessageTypeDef](#removerolefromdbclustermessagetypedef)
+  - [RemoveRoleFromDBInstanceMessageTypeDef](#removerolefromdbinstancemessagetypedef)
+  - [RemoveSourceIdentifierFromSubscriptionMessageTypeDef](#removesourceidentifierfromsubscriptionmessagetypedef)
+  - [RemoveSourceIdentifierFromSubscriptionResultResponseTypeDef](#removesourceidentifierfromsubscriptionresultresponsetypedef)
+  - [RemoveTagsFromResourceMessageTypeDef](#removetagsfromresourcemessagetypedef)
+  - [ReservedDBInstanceMessageResponseTypeDef](#reserveddbinstancemessageresponsetypedef)
   - [ReservedDBInstanceTypeDef](#reserveddbinstancetypedef)
-  - [ReservedDBInstancesOfferingMessageTypeDef](#reserveddbinstancesofferingmessagetypedef)
+  - [ReservedDBInstancesOfferingMessageResponseTypeDef](#reserveddbinstancesofferingmessageresponsetypedef)
   - [ReservedDBInstancesOfferingTypeDef](#reserveddbinstancesofferingtypedef)
+  - [ResetDBClusterParameterGroupMessageTypeDef](#resetdbclusterparametergroupmessagetypedef)
+  - [ResetDBParameterGroupMessageTypeDef](#resetdbparametergroupmessagetypedef)
   - [ResourcePendingMaintenanceActionsTypeDef](#resourcependingmaintenanceactionstypedef)
-  - [RestoreDBClusterFromS3ResultTypeDef](#restoredbclusterfroms3resulttypedef)
-  - [RestoreDBClusterFromSnapshotResultTypeDef](#restoredbclusterfromsnapshotresulttypedef)
-  - [RestoreDBClusterToPointInTimeResultTypeDef](#restoredbclustertopointintimeresulttypedef)
-  - [RestoreDBInstanceFromDBSnapshotResultTypeDef](#restoredbinstancefromdbsnapshotresulttypedef)
-  - [RestoreDBInstanceFromS3ResultTypeDef](#restoredbinstancefroms3resulttypedef)
-  - [RestoreDBInstanceToPointInTimeResultTypeDef](#restoredbinstancetopointintimeresulttypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [RestoreDBClusterFromS3MessageTypeDef](#restoredbclusterfroms3messagetypedef)
+  - [RestoreDBClusterFromS3ResultResponseTypeDef](#restoredbclusterfroms3resultresponsetypedef)
+  - [RestoreDBClusterFromSnapshotMessageTypeDef](#restoredbclusterfromsnapshotmessagetypedef)
+  - [RestoreDBClusterFromSnapshotResultResponseTypeDef](#restoredbclusterfromsnapshotresultresponsetypedef)
+  - [RestoreDBClusterToPointInTimeMessageTypeDef](#restoredbclustertopointintimemessagetypedef)
+  - [RestoreDBClusterToPointInTimeResultResponseTypeDef](#restoredbclustertopointintimeresultresponsetypedef)
+  - [RestoreDBInstanceFromDBSnapshotMessageTypeDef](#restoredbinstancefromdbsnapshotmessagetypedef)
+  - [RestoreDBInstanceFromDBSnapshotResultResponseTypeDef](#restoredbinstancefromdbsnapshotresultresponsetypedef)
+  - [RestoreDBInstanceFromS3MessageTypeDef](#restoredbinstancefroms3messagetypedef)
+  - [RestoreDBInstanceFromS3ResultResponseTypeDef](#restoredbinstancefroms3resultresponsetypedef)
+  - [RestoreDBInstanceToPointInTimeMessageTypeDef](#restoredbinstancetopointintimemessagetypedef)
+  - [RestoreDBInstanceToPointInTimeResultResponseTypeDef](#restoredbinstancetopointintimeresultresponsetypedef)
   - [RestoreWindowTypeDef](#restorewindowtypedef)
-  - [RevokeDBSecurityGroupIngressResultTypeDef](#revokedbsecuritygroupingressresulttypedef)
+  - [RevokeDBSecurityGroupIngressMessageTypeDef](#revokedbsecuritygroupingressmessagetypedef)
+  - [RevokeDBSecurityGroupIngressResultResponseTypeDef](#revokedbsecuritygroupingressresultresponsetypedef)
   - [ScalingConfigurationInfoTypeDef](#scalingconfigurationinfotypedef)
   - [ScalingConfigurationTypeDef](#scalingconfigurationtypedef)
-  - [SourceRegionMessageTypeDef](#sourceregionmessagetypedef)
+  - [SourceRegionMessageResponseTypeDef](#sourceregionmessageresponsetypedef)
   - [SourceRegionTypeDef](#sourceregiontypedef)
-  - [StartActivityStreamResponseTypeDef](#startactivitystreamresponsetypedef)
-  - [StartDBClusterResultTypeDef](#startdbclusterresulttypedef)
-  - [StartDBInstanceAutomatedBackupsReplicationResultTypeDef](#startdbinstanceautomatedbackupsreplicationresulttypedef)
-  - [StartDBInstanceResultTypeDef](#startdbinstanceresulttypedef)
-  - [StopActivityStreamResponseTypeDef](#stopactivitystreamresponsetypedef)
-  - [StopDBClusterResultTypeDef](#stopdbclusterresulttypedef)
-  - [StopDBInstanceAutomatedBackupsReplicationResultTypeDef](#stopdbinstanceautomatedbackupsreplicationresulttypedef)
-  - [StopDBInstanceResultTypeDef](#stopdbinstanceresulttypedef)
+  - [StartActivityStreamRequestTypeDef](#startactivitystreamrequesttypedef)
+  - [StartActivityStreamResponseResponseTypeDef](#startactivitystreamresponseresponsetypedef)
+  - [StartDBClusterMessageTypeDef](#startdbclustermessagetypedef)
+  - [StartDBClusterResultResponseTypeDef](#startdbclusterresultresponsetypedef)
+  - [StartDBInstanceAutomatedBackupsReplicationMessageTypeDef](#startdbinstanceautomatedbackupsreplicationmessagetypedef)
+  - [StartDBInstanceAutomatedBackupsReplicationResultResponseTypeDef](#startdbinstanceautomatedbackupsreplicationresultresponsetypedef)
+  - [StartDBInstanceMessageTypeDef](#startdbinstancemessagetypedef)
+  - [StartDBInstanceResultResponseTypeDef](#startdbinstanceresultresponsetypedef)
+  - [StartExportTaskMessageTypeDef](#startexporttaskmessagetypedef)
+  - [StopActivityStreamRequestTypeDef](#stopactivitystreamrequesttypedef)
+  - [StopActivityStreamResponseResponseTypeDef](#stopactivitystreamresponseresponsetypedef)
+  - [StopDBClusterMessageTypeDef](#stopdbclustermessagetypedef)
+  - [StopDBClusterResultResponseTypeDef](#stopdbclusterresultresponsetypedef)
+  - [StopDBInstanceAutomatedBackupsReplicationMessageTypeDef](#stopdbinstanceautomatedbackupsreplicationmessagetypedef)
+  - [StopDBInstanceAutomatedBackupsReplicationResultResponseTypeDef](#stopdbinstanceautomatedbackupsreplicationresultresponsetypedef)
+  - [StopDBInstanceMessageTypeDef](#stopdbinstancemessagetypedef)
+  - [StopDBInstanceResultResponseTypeDef](#stopdbinstanceresultresponsetypedef)
   - [SubnetTypeDef](#subnettypedef)
-  - [TagListMessageTypeDef](#taglistmessagetypedef)
+  - [TagListMessageResponseTypeDef](#taglistmessageresponsetypedef)
   - [TagTypeDef](#tagtypedef)
   - [TargetHealthTypeDef](#targethealthtypedef)
   - [TimezoneTypeDef](#timezonetypedef)
@@ -217,16 +355,18 @@ type annotations stubs module
   - [VpnDetailsTypeDef](#vpndetailstypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
-## AccountAttributesMessageTypeDef
+## AccountAttributesMessageResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import AccountAttributesMessageTypeDef
+from mypy_boto3_rds.type_defs import AccountAttributesMessageResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `AccountQuotas`:
   `List`\[[AccountQuotaTypeDef](./type_defs.md#accountquotatypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## AccountQuotaTypeDef
 
@@ -240,38 +380,122 @@ Optional fields:
 - `Used`: `int`
 - `Max`: `int`
 
-## AddSourceIdentifierToSubscriptionResultTypeDef
+## AddRoleToDBClusterMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import AddSourceIdentifierToSubscriptionResultTypeDef
+from mypy_boto3_rds.type_defs import AddRoleToDBClusterMessageTypeDef
 ```
 
+Required fields:
+
+- `DBClusterIdentifier`: `str`
+- `RoleArn`: `str`
+
 Optional fields:
+
+- `FeatureName`: `str`
+
+## AddRoleToDBInstanceMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import AddRoleToDBInstanceMessageTypeDef
+```
+
+Required fields:
+
+- `DBInstanceIdentifier`: `str`
+- `RoleArn`: `str`
+- `FeatureName`: `str`
+
+## AddSourceIdentifierToSubscriptionMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import AddSourceIdentifierToSubscriptionMessageTypeDef
+```
+
+Required fields:
+
+- `SubscriptionName`: `str`
+- `SourceIdentifier`: `str`
+
+## AddSourceIdentifierToSubscriptionResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import AddSourceIdentifierToSubscriptionResultResponseTypeDef
+```
+
+Required fields:
 
 - `EventSubscription`:
   [EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ApplyPendingMaintenanceActionResultTypeDef
+## AddTagsToResourceMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import ApplyPendingMaintenanceActionResultTypeDef
+from mypy_boto3_rds.type_defs import AddTagsToResourceMessageTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceName`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## ApplyPendingMaintenanceActionMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import ApplyPendingMaintenanceActionMessageTypeDef
+```
+
+Required fields:
+
+- `ResourceIdentifier`: `str`
+- `ApplyAction`: `str`
+- `OptInType`: `str`
+
+## ApplyPendingMaintenanceActionResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import ApplyPendingMaintenanceActionResultResponseTypeDef
+```
+
+Required fields:
 
 - `ResourcePendingMaintenanceActions`:
   [ResourcePendingMaintenanceActionsTypeDef](./type_defs.md#resourcependingmaintenanceactionstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AuthorizeDBSecurityGroupIngressResultTypeDef
+## AuthorizeDBSecurityGroupIngressMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import AuthorizeDBSecurityGroupIngressResultTypeDef
+from mypy_boto3_rds.type_defs import AuthorizeDBSecurityGroupIngressMessageTypeDef
 ```
+
+Required fields:
+
+- `DBSecurityGroupName`: `str`
 
 Optional fields:
 
+- `CIDRIP`: `str`
+- `EC2SecurityGroupName`: `str`
+- `EC2SecurityGroupId`: `str`
+- `EC2SecurityGroupOwnerId`: `str`
+
+## AuthorizeDBSecurityGroupIngressResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import AuthorizeDBSecurityGroupIngressResultResponseTypeDef
+```
+
+Required fields:
+
 - `DBSecurityGroup`:
   [DBSecurityGroupTypeDef](./type_defs.md#dbsecuritygrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## AvailabilityZoneTypeDef
 
@@ -295,17 +519,45 @@ Optional fields:
 - `DefaultValue`: `str`
 - `AllowedValues`: `str`
 
-## CertificateMessageTypeDef
+## BacktrackDBClusterMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import CertificateMessageTypeDef
+from mypy_boto3_rds.type_defs import BacktrackDBClusterMessageTypeDef
 ```
 
+Required fields:
+
+- `DBClusterIdentifier`: `str`
+- `BacktrackTo`: `Union`\[`datetime`, `str`\]
+
 Optional fields:
+
+- `Force`: `bool`
+- `UseEarliestTimeOnPointInTimeUnavailable`: `bool`
+
+## CancelExportTaskMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import CancelExportTaskMessageTypeDef
+```
+
+Required fields:
+
+- `ExportTaskIdentifier`: `str`
+
+## CertificateMessageResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import CertificateMessageResponseTypeDef
+```
+
+Required fields:
 
 - `Certificates`:
   `List`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
 - `Marker`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CertificateTypeDef
 
@@ -334,6 +586,22 @@ Optional fields:
 
 - `CharacterSetName`: `str`
 - `CharacterSetDescription`: `str`
+
+## ClientGenerateDbAuthTokenRequestTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import ClientGenerateDbAuthTokenRequestTypeDef
+```
+
+Required fields:
+
+- `DBHostname`: `str`
+- `Port`: `int`
+- `DBUsername`: `str`
+
+Optional fields:
+
+- `Region`: `str`
 
 ## CloudwatchLogsExportConfigurationTypeDef
 
@@ -389,227 +657,732 @@ Optional fields:
 - `SessionPinningFilters`: `List`\[`str`\]
 - `InitQuery`: `str`
 
-## CopyDBClusterParameterGroupResultTypeDef
+## CopyDBClusterParameterGroupMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import CopyDBClusterParameterGroupResultTypeDef
+from mypy_boto3_rds.type_defs import CopyDBClusterParameterGroupMessageTypeDef
 ```
 
+Required fields:
+
+- `SourceDBClusterParameterGroupIdentifier`: `str`
+- `TargetDBClusterParameterGroupIdentifier`: `str`
+- `TargetDBClusterParameterGroupDescription`: `str`
+
 Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CopyDBClusterParameterGroupResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import CopyDBClusterParameterGroupResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBClusterParameterGroup`:
   [DBClusterParameterGroupTypeDef](./type_defs.md#dbclusterparametergrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CopyDBClusterSnapshotResultTypeDef
+## CopyDBClusterSnapshotMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import CopyDBClusterSnapshotResultTypeDef
+from mypy_boto3_rds.type_defs import CopyDBClusterSnapshotMessageTypeDef
 ```
 
+Required fields:
+
+- `SourceDBClusterSnapshotIdentifier`: `str`
+- `TargetDBClusterSnapshotIdentifier`: `str`
+
 Optional fields:
+
+- `KmsKeyId`: `str`
+- `PreSignedUrl`: `str`
+- `CopyTags`: `bool`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `SourceRegion`: `str`
+
+## CopyDBClusterSnapshotResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import CopyDBClusterSnapshotResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBClusterSnapshot`:
   [DBClusterSnapshotTypeDef](./type_defs.md#dbclustersnapshottypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CopyDBParameterGroupResultTypeDef
+## CopyDBParameterGroupMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import CopyDBParameterGroupResultTypeDef
+from mypy_boto3_rds.type_defs import CopyDBParameterGroupMessageTypeDef
 ```
 
+Required fields:
+
+- `SourceDBParameterGroupIdentifier`: `str`
+- `TargetDBParameterGroupIdentifier`: `str`
+- `TargetDBParameterGroupDescription`: `str`
+
 Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CopyDBParameterGroupResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import CopyDBParameterGroupResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBParameterGroup`:
   [DBParameterGroupTypeDef](./type_defs.md#dbparametergrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CopyDBSnapshotResultTypeDef
+## CopyDBSnapshotMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import CopyDBSnapshotResultTypeDef
+from mypy_boto3_rds.type_defs import CopyDBSnapshotMessageTypeDef
 ```
 
+Required fields:
+
+- `SourceDBSnapshotIdentifier`: `str`
+- `TargetDBSnapshotIdentifier`: `str`
+
 Optional fields:
+
+- `KmsKeyId`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `CopyTags`: `bool`
+- `PreSignedUrl`: `str`
+- `OptionGroupName`: `str`
+- `TargetCustomAvailabilityZone`: `str`
+- `SourceRegion`: `str`
+
+## CopyDBSnapshotResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import CopyDBSnapshotResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBSnapshot`: [DBSnapshotTypeDef](./type_defs.md#dbsnapshottypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CopyOptionGroupResultTypeDef
+## CopyOptionGroupMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import CopyOptionGroupResultTypeDef
+from mypy_boto3_rds.type_defs import CopyOptionGroupMessageTypeDef
 ```
 
+Required fields:
+
+- `SourceOptionGroupIdentifier`: `str`
+- `TargetOptionGroupIdentifier`: `str`
+- `TargetOptionGroupDescription`: `str`
+
 Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CopyOptionGroupResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import CopyOptionGroupResultResponseTypeDef
+```
+
+Required fields:
 
 - `OptionGroup`: [OptionGroupTypeDef](./type_defs.md#optiongrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateCustomAvailabilityZoneResultTypeDef
+## CreateCustomAvailabilityZoneMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import CreateCustomAvailabilityZoneResultTypeDef
+from mypy_boto3_rds.type_defs import CreateCustomAvailabilityZoneMessageTypeDef
 ```
 
+Required fields:
+
+- `CustomAvailabilityZoneName`: `str`
+
 Optional fields:
+
+- `ExistingVpnId`: `str`
+- `NewVpnTunnelName`: `str`
+- `VpnTunnelOriginatorIP`: `str`
+
+## CreateCustomAvailabilityZoneResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import CreateCustomAvailabilityZoneResultResponseTypeDef
+```
+
+Required fields:
 
 - `CustomAvailabilityZone`:
   [CustomAvailabilityZoneTypeDef](./type_defs.md#customavailabilityzonetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDBClusterParameterGroupResultTypeDef
+## CreateDBClusterEndpointMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import CreateDBClusterParameterGroupResultTypeDef
+from mypy_boto3_rds.type_defs import CreateDBClusterEndpointMessageTypeDef
 ```
 
+Required fields:
+
+- `DBClusterIdentifier`: `str`
+- `DBClusterEndpointIdentifier`: `str`
+- `EndpointType`: `str`
+
 Optional fields:
+
+- `StaticMembers`: `List`\[`str`\]
+- `ExcludedMembers`: `List`\[`str`\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateDBClusterMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import CreateDBClusterMessageTypeDef
+```
+
+Required fields:
+
+- `DBClusterIdentifier`: `str`
+- `Engine`: `str`
+
+Optional fields:
+
+- `AvailabilityZones`: `List`\[`str`\]
+- `BackupRetentionPeriod`: `int`
+- `CharacterSetName`: `str`
+- `DatabaseName`: `str`
+- `DBClusterParameterGroupName`: `str`
+- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `DBSubnetGroupName`: `str`
+- `EngineVersion`: `str`
+- `Port`: `int`
+- `MasterUsername`: `str`
+- `MasterUserPassword`: `str`
+- `OptionGroupName`: `str`
+- `PreferredBackupWindow`: `str`
+- `PreferredMaintenanceWindow`: `str`
+- `ReplicationSourceIdentifier`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `StorageEncrypted`: `bool`
+- `KmsKeyId`: `str`
+- `PreSignedUrl`: `str`
+- `EnableIAMDatabaseAuthentication`: `bool`
+- `BacktrackWindow`: `int`
+- `EnableCloudwatchLogsExports`: `List`\[`str`\]
+- `EngineMode`: `str`
+- `ScalingConfiguration`:
+  [ScalingConfigurationTypeDef](./type_defs.md#scalingconfigurationtypedef)
+- `DeletionProtection`: `bool`
+- `GlobalClusterIdentifier`: `str`
+- `EnableHttpEndpoint`: `bool`
+- `CopyTagsToSnapshot`: `bool`
+- `Domain`: `str`
+- `DomainIAMRoleName`: `str`
+- `EnableGlobalWriteForwarding`: `bool`
+- `SourceRegion`: `str`
+
+## CreateDBClusterParameterGroupMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import CreateDBClusterParameterGroupMessageTypeDef
+```
+
+Required fields:
+
+- `DBClusterParameterGroupName`: `str`
+- `DBParameterGroupFamily`: `str`
+- `Description`: `str`
+
+Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateDBClusterParameterGroupResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import CreateDBClusterParameterGroupResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBClusterParameterGroup`:
   [DBClusterParameterGroupTypeDef](./type_defs.md#dbclusterparametergrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDBClusterResultTypeDef
+## CreateDBClusterResultResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import CreateDBClusterResultTypeDef
+from mypy_boto3_rds.type_defs import CreateDBClusterResultResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `DBCluster`: [DBClusterTypeDef](./type_defs.md#dbclustertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDBClusterSnapshotResultTypeDef
+## CreateDBClusterSnapshotMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import CreateDBClusterSnapshotResultTypeDef
+from mypy_boto3_rds.type_defs import CreateDBClusterSnapshotMessageTypeDef
 ```
 
+Required fields:
+
+- `DBClusterSnapshotIdentifier`: `str`
+- `DBClusterIdentifier`: `str`
+
 Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateDBClusterSnapshotResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import CreateDBClusterSnapshotResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBClusterSnapshot`:
   [DBClusterSnapshotTypeDef](./type_defs.md#dbclustersnapshottypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDBInstanceReadReplicaResultTypeDef
+## CreateDBInstanceMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import CreateDBInstanceReadReplicaResultTypeDef
+from mypy_boto3_rds.type_defs import CreateDBInstanceMessageTypeDef
 ```
 
+Required fields:
+
+- `DBInstanceIdentifier`: `str`
+- `DBInstanceClass`: `str`
+- `Engine`: `str`
+
 Optional fields:
+
+- `DBName`: `str`
+- `AllocatedStorage`: `int`
+- `MasterUsername`: `str`
+- `MasterUserPassword`: `str`
+- `DBSecurityGroups`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `AvailabilityZone`: `str`
+- `DBSubnetGroupName`: `str`
+- `PreferredMaintenanceWindow`: `str`
+- `DBParameterGroupName`: `str`
+- `BackupRetentionPeriod`: `int`
+- `PreferredBackupWindow`: `str`
+- `Port`: `int`
+- `MultiAZ`: `bool`
+- `EngineVersion`: `str`
+- `AutoMinorVersionUpgrade`: `bool`
+- `LicenseModel`: `str`
+- `Iops`: `int`
+- `OptionGroupName`: `str`
+- `CharacterSetName`: `str`
+- `NcharCharacterSetName`: `str`
+- `PubliclyAccessible`: `bool`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `DBClusterIdentifier`: `str`
+- `StorageType`: `str`
+- `TdeCredentialArn`: `str`
+- `TdeCredentialPassword`: `str`
+- `StorageEncrypted`: `bool`
+- `KmsKeyId`: `str`
+- `Domain`: `str`
+- `CopyTagsToSnapshot`: `bool`
+- `MonitoringInterval`: `int`
+- `MonitoringRoleArn`: `str`
+- `DomainIAMRoleName`: `str`
+- `PromotionTier`: `int`
+- `Timezone`: `str`
+- `EnableIAMDatabaseAuthentication`: `bool`
+- `EnablePerformanceInsights`: `bool`
+- `PerformanceInsightsKMSKeyId`: `str`
+- `PerformanceInsightsRetentionPeriod`: `int`
+- `EnableCloudwatchLogsExports`: `List`\[`str`\]
+- `ProcessorFeatures`:
+  `List`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
+- `DeletionProtection`: `bool`
+- `MaxAllocatedStorage`: `int`
+- `EnableCustomerOwnedIp`: `bool`
+
+## CreateDBInstanceReadReplicaMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import CreateDBInstanceReadReplicaMessageTypeDef
+```
+
+Required fields:
+
+- `DBInstanceIdentifier`: `str`
+- `SourceDBInstanceIdentifier`: `str`
+
+Optional fields:
+
+- `DBInstanceClass`: `str`
+- `AvailabilityZone`: `str`
+- `Port`: `int`
+- `MultiAZ`: `bool`
+- `AutoMinorVersionUpgrade`: `bool`
+- `Iops`: `int`
+- `OptionGroupName`: `str`
+- `DBParameterGroupName`: `str`
+- `PubliclyAccessible`: `bool`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `DBSubnetGroupName`: `str`
+- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `StorageType`: `str`
+- `CopyTagsToSnapshot`: `bool`
+- `MonitoringInterval`: `int`
+- `MonitoringRoleArn`: `str`
+- `KmsKeyId`: `str`
+- `PreSignedUrl`: `str`
+- `EnableIAMDatabaseAuthentication`: `bool`
+- `EnablePerformanceInsights`: `bool`
+- `PerformanceInsightsKMSKeyId`: `str`
+- `PerformanceInsightsRetentionPeriod`: `int`
+- `EnableCloudwatchLogsExports`: `List`\[`str`\]
+- `ProcessorFeatures`:
+  `List`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
+- `UseDefaultProcessorFeatures`: `bool`
+- `DeletionProtection`: `bool`
+- `Domain`: `str`
+- `DomainIAMRoleName`: `str`
+- `ReplicaMode`: [ReplicaModeType](./literals.md#replicamodetype)
+- `MaxAllocatedStorage`: `int`
+- `SourceRegion`: `str`
+
+## CreateDBInstanceReadReplicaResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import CreateDBInstanceReadReplicaResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBInstance`: [DBInstanceTypeDef](./type_defs.md#dbinstancetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDBInstanceResultTypeDef
+## CreateDBInstanceResultResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import CreateDBInstanceResultTypeDef
+from mypy_boto3_rds.type_defs import CreateDBInstanceResultResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `DBInstance`: [DBInstanceTypeDef](./type_defs.md#dbinstancetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDBParameterGroupResultTypeDef
+## CreateDBParameterGroupMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import CreateDBParameterGroupResultTypeDef
+from mypy_boto3_rds.type_defs import CreateDBParameterGroupMessageTypeDef
 ```
 
+Required fields:
+
+- `DBParameterGroupName`: `str`
+- `DBParameterGroupFamily`: `str`
+- `Description`: `str`
+
 Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateDBParameterGroupResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import CreateDBParameterGroupResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBParameterGroup`:
   [DBParameterGroupTypeDef](./type_defs.md#dbparametergrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDBProxyEndpointResponseTypeDef
+## CreateDBProxyEndpointRequestTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import CreateDBProxyEndpointResponseTypeDef
+from mypy_boto3_rds.type_defs import CreateDBProxyEndpointRequestTypeDef
 ```
 
+Required fields:
+
+- `DBProxyName`: `str`
+- `DBProxyEndpointName`: `str`
+- `VpcSubnetIds`: `List`\[`str`\]
+
 Optional fields:
+
+- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `TargetRole`:
+  [DBProxyEndpointTargetRoleType](./literals.md#dbproxyendpointtargetroletype)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateDBProxyEndpointResponseResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import CreateDBProxyEndpointResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DBProxyEndpoint`:
   [DBProxyEndpointTypeDef](./type_defs.md#dbproxyendpointtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDBProxyResponseTypeDef
+## CreateDBProxyRequestTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import CreateDBProxyResponseTypeDef
+from mypy_boto3_rds.type_defs import CreateDBProxyRequestTypeDef
 ```
 
+Required fields:
+
+- `DBProxyName`: `str`
+- `EngineFamily`: [EngineFamilyType](./literals.md#enginefamilytype)
+- `Auth`:
+  `List`\[[UserAuthConfigTypeDef](./type_defs.md#userauthconfigtypedef)\]
+- `RoleArn`: `str`
+- `VpcSubnetIds`: `List`\[`str`\]
+
 Optional fields:
+
+- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `RequireTLS`: `bool`
+- `IdleClientTimeout`: `int`
+- `DebugLogging`: `bool`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateDBProxyResponseResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import CreateDBProxyResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DBProxy`: [DBProxyTypeDef](./type_defs.md#dbproxytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDBSecurityGroupResultTypeDef
+## CreateDBSecurityGroupMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import CreateDBSecurityGroupResultTypeDef
+from mypy_boto3_rds.type_defs import CreateDBSecurityGroupMessageTypeDef
 ```
 
+Required fields:
+
+- `DBSecurityGroupName`: `str`
+- `DBSecurityGroupDescription`: `str`
+
 Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateDBSecurityGroupResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import CreateDBSecurityGroupResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBSecurityGroup`:
   [DBSecurityGroupTypeDef](./type_defs.md#dbsecuritygrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDBSnapshotResultTypeDef
+## CreateDBSnapshotMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import CreateDBSnapshotResultTypeDef
+from mypy_boto3_rds.type_defs import CreateDBSnapshotMessageTypeDef
 ```
 
+Required fields:
+
+- `DBSnapshotIdentifier`: `str`
+- `DBInstanceIdentifier`: `str`
+
 Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateDBSnapshotResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import CreateDBSnapshotResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBSnapshot`: [DBSnapshotTypeDef](./type_defs.md#dbsnapshottypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDBSubnetGroupResultTypeDef
+## CreateDBSubnetGroupMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import CreateDBSubnetGroupResultTypeDef
+from mypy_boto3_rds.type_defs import CreateDBSubnetGroupMessageTypeDef
 ```
 
+Required fields:
+
+- `DBSubnetGroupName`: `str`
+- `DBSubnetGroupDescription`: `str`
+- `SubnetIds`: `List`\[`str`\]
+
 Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateDBSubnetGroupResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import CreateDBSubnetGroupResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBSubnetGroup`: [DBSubnetGroupTypeDef](./type_defs.md#dbsubnetgrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateEventSubscriptionResultTypeDef
+## CreateEventSubscriptionMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import CreateEventSubscriptionResultTypeDef
+from mypy_boto3_rds.type_defs import CreateEventSubscriptionMessageTypeDef
 ```
 
+Required fields:
+
+- `SubscriptionName`: `str`
+- `SnsTopicArn`: `str`
+
 Optional fields:
+
+- `SourceType`: `str`
+- `EventCategories`: `List`\[`str`\]
+- `SourceIds`: `List`\[`str`\]
+- `Enabled`: `bool`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateEventSubscriptionResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import CreateEventSubscriptionResultResponseTypeDef
+```
+
+Required fields:
 
 - `EventSubscription`:
   [EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateGlobalClusterResultTypeDef
+## CreateGlobalClusterMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import CreateGlobalClusterResultTypeDef
+from mypy_boto3_rds.type_defs import CreateGlobalClusterMessageTypeDef
 ```
 
 Optional fields:
+
+- `GlobalClusterIdentifier`: `str`
+- `SourceDBClusterIdentifier`: `str`
+- `Engine`: `str`
+- `EngineVersion`: `str`
+- `DeletionProtection`: `bool`
+- `DatabaseName`: `str`
+- `StorageEncrypted`: `bool`
+
+## CreateGlobalClusterResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import CreateGlobalClusterResultResponseTypeDef
+```
+
+Required fields:
 
 - `GlobalCluster`: [GlobalClusterTypeDef](./type_defs.md#globalclustertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateOptionGroupResultTypeDef
+## CreateOptionGroupMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import CreateOptionGroupResultTypeDef
+from mypy_boto3_rds.type_defs import CreateOptionGroupMessageTypeDef
 ```
 
+Required fields:
+
+- `OptionGroupName`: `str`
+- `EngineName`: `str`
+- `MajorEngineVersion`: `str`
+- `OptionGroupDescription`: `str`
+
 Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateOptionGroupResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import CreateOptionGroupResultResponseTypeDef
+```
+
+Required fields:
 
 - `OptionGroup`: [OptionGroupTypeDef](./type_defs.md#optiongrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CustomAvailabilityZoneMessageTypeDef
+## CustomAvailabilityZoneMessageResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import CustomAvailabilityZoneMessageTypeDef
+from mypy_boto3_rds.type_defs import CustomAvailabilityZoneMessageResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Marker`: `str`
 - `CustomAvailabilityZones`:
   `List`\[[CustomAvailabilityZoneTypeDef](./type_defs.md#customavailabilityzonetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CustomAvailabilityZoneTypeDef
 
@@ -624,25 +1397,27 @@ Optional fields:
 - `CustomAvailabilityZoneStatus`: `str`
 - `VpnDetails`: [VpnDetailsTypeDef](./type_defs.md#vpndetailstypedef)
 
-## DBClusterBacktrackMessageTypeDef
+## DBClusterBacktrackMessageResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DBClusterBacktrackMessageTypeDef
+from mypy_boto3_rds.type_defs import DBClusterBacktrackMessageResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Marker`: `str`
 - `DBClusterBacktracks`:
-  `List`\[[DBClusterBacktrackTypeDef](./type_defs.md#dbclusterbacktracktypedef)\]
+  `List`\[[DBClusterBacktrackResponseTypeDef](./type_defs.md#dbclusterbacktrackresponsetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DBClusterBacktrackTypeDef
+## DBClusterBacktrackResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DBClusterBacktrackTypeDef
+from mypy_boto3_rds.type_defs import DBClusterBacktrackResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `DBClusterIdentifier`: `str`
 - `BacktrackIdentifier`: `str`
@@ -650,40 +1425,46 @@ Optional fields:
 - `BacktrackedFrom`: `datetime`
 - `BacktrackRequestCreationTime`: `datetime`
 - `Status`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DBClusterCapacityInfoTypeDef
+## DBClusterCapacityInfoResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DBClusterCapacityInfoTypeDef
+from mypy_boto3_rds.type_defs import DBClusterCapacityInfoResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `DBClusterIdentifier`: `str`
 - `PendingCapacity`: `int`
 - `CurrentCapacity`: `int`
 - `SecondsBeforeTimeout`: `int`
 - `TimeoutAction`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DBClusterEndpointMessageTypeDef
+## DBClusterEndpointMessageResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DBClusterEndpointMessageTypeDef
+from mypy_boto3_rds.type_defs import DBClusterEndpointMessageResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Marker`: `str`
 - `DBClusterEndpoints`:
-  `List`\[[DBClusterEndpointTypeDef](./type_defs.md#dbclusterendpointtypedef)\]
+  `List`\[[DBClusterEndpointResponseTypeDef](./type_defs.md#dbclusterendpointresponsetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DBClusterEndpointTypeDef
+## DBClusterEndpointResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DBClusterEndpointTypeDef
+from mypy_boto3_rds.type_defs import DBClusterEndpointResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `DBClusterEndpointIdentifier`: `str`
 - `DBClusterIdentifier`: `str`
@@ -695,6 +1476,8 @@ Optional fields:
 - `StaticMembers`: `List`\[`str`\]
 - `ExcludedMembers`: `List`\[`str`\]
 - `DBClusterEndpointArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DBClusterMemberTypeDef
 
@@ -709,16 +1492,18 @@ Optional fields:
 - `DBClusterParameterGroupStatus`: `str`
 - `PromotionTier`: `int`
 
-## DBClusterMessageTypeDef
+## DBClusterMessageResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DBClusterMessageTypeDef
+from mypy_boto3_rds.type_defs import DBClusterMessageResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Marker`: `str`
 - `DBClusters`: `List`\[[DBClusterTypeDef](./type_defs.md#dbclustertypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DBClusterOptionGroupStatusTypeDef
 
@@ -731,26 +1516,30 @@ Optional fields:
 - `DBClusterOptionGroupName`: `str`
 - `Status`: `str`
 
-## DBClusterParameterGroupDetailsTypeDef
+## DBClusterParameterGroupDetailsResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DBClusterParameterGroupDetailsTypeDef
+from mypy_boto3_rds.type_defs import DBClusterParameterGroupDetailsResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 - `Marker`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DBClusterParameterGroupNameMessageTypeDef
+## DBClusterParameterGroupNameMessageResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DBClusterParameterGroupNameMessageTypeDef
+from mypy_boto3_rds.type_defs import DBClusterParameterGroupNameMessageResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `DBClusterParameterGroupName`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DBClusterParameterGroupTypeDef
 
@@ -765,17 +1554,19 @@ Optional fields:
 - `Description`: `str`
 - `DBClusterParameterGroupArn`: `str`
 
-## DBClusterParameterGroupsMessageTypeDef
+## DBClusterParameterGroupsMessageResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DBClusterParameterGroupsMessageTypeDef
+from mypy_boto3_rds.type_defs import DBClusterParameterGroupsMessageResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Marker`: `str`
 - `DBClusterParameterGroups`:
   `List`\[[DBClusterParameterGroupTypeDef](./type_defs.md#dbclusterparametergrouptypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DBClusterRoleTypeDef
 
@@ -812,17 +1603,19 @@ Optional fields:
 - `DBClusterSnapshotAttributes`:
   `List`\[[DBClusterSnapshotAttributeTypeDef](./type_defs.md#dbclustersnapshotattributetypedef)\]
 
-## DBClusterSnapshotMessageTypeDef
+## DBClusterSnapshotMessageResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DBClusterSnapshotMessageTypeDef
+from mypy_boto3_rds.type_defs import DBClusterSnapshotMessageResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Marker`: `str`
 - `DBClusterSnapshots`:
   `List`\[[DBClusterSnapshotTypeDef](./type_defs.md#dbclustersnapshottypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DBClusterSnapshotTypeDef
 
@@ -930,17 +1723,19 @@ Optional fields:
 - `PendingModifiedValues`:
   [ClusterPendingModifiedValuesTypeDef](./type_defs.md#clusterpendingmodifiedvaluestypedef)
 
-## DBEngineVersionMessageTypeDef
+## DBEngineVersionMessageResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DBEngineVersionMessageTypeDef
+from mypy_boto3_rds.type_defs import DBEngineVersionMessageResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Marker`: `str`
 - `DBEngineVersions`:
   `List`\[[DBEngineVersionTypeDef](./type_defs.md#dbengineversiontypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DBEngineVersionTypeDef
 
@@ -974,17 +1769,19 @@ Optional fields:
 - `SupportsParallelQuery`: `bool`
 - `SupportsGlobalDatabases`: `bool`
 
-## DBInstanceAutomatedBackupMessageTypeDef
+## DBInstanceAutomatedBackupMessageResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DBInstanceAutomatedBackupMessageTypeDef
+from mypy_boto3_rds.type_defs import DBInstanceAutomatedBackupMessageResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Marker`: `str`
 - `DBInstanceAutomatedBackups`:
   `List`\[[DBInstanceAutomatedBackupTypeDef](./type_defs.md#dbinstanceautomatedbackuptypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DBInstanceAutomatedBackupTypeDef
 
@@ -1032,17 +1829,19 @@ Optional fields:
 
 - `DBInstanceAutomatedBackupsArn`: `str`
 
-## DBInstanceMessageTypeDef
+## DBInstanceMessageResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DBInstanceMessageTypeDef
+from mypy_boto3_rds.type_defs import DBInstanceMessageResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Marker`: `str`
 - `DBInstances`:
   `List`\[[DBInstanceTypeDef](./type_defs.md#dbinstancetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DBInstanceRoleTypeDef
 
@@ -1159,26 +1958,30 @@ Optional fields:
   [ActivityStreamModeType](./literals.md#activitystreammodetype)
 - `ActivityStreamEngineNativeAuditFieldsIncluded`: `bool`
 
-## DBParameterGroupDetailsTypeDef
+## DBParameterGroupDetailsResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DBParameterGroupDetailsTypeDef
+from mypy_boto3_rds.type_defs import DBParameterGroupDetailsResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 - `Marker`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DBParameterGroupNameMessageTypeDef
+## DBParameterGroupNameMessageResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DBParameterGroupNameMessageTypeDef
+from mypy_boto3_rds.type_defs import DBParameterGroupNameMessageResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `DBParameterGroupName`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DBParameterGroupStatusTypeDef
 
@@ -1204,17 +2007,19 @@ Optional fields:
 - `Description`: `str`
 - `DBParameterGroupArn`: `str`
 
-## DBParameterGroupsMessageTypeDef
+## DBParameterGroupsMessageResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DBParameterGroupsMessageTypeDef
+from mypy_boto3_rds.type_defs import DBParameterGroupsMessageResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Marker`: `str`
 - `DBParameterGroups`:
   `List`\[[DBParameterGroupTypeDef](./type_defs.md#dbparametergrouptypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DBProxyEndpointTypeDef
 
@@ -1309,17 +2114,19 @@ Optional fields:
 - `DBSecurityGroupName`: `str`
 - `Status`: `str`
 
-## DBSecurityGroupMessageTypeDef
+## DBSecurityGroupMessageResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DBSecurityGroupMessageTypeDef
+from mypy_boto3_rds.type_defs import DBSecurityGroupMessageResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Marker`: `str`
 - `DBSecurityGroups`:
   `List`\[[DBSecurityGroupTypeDef](./type_defs.md#dbsecuritygrouptypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DBSecurityGroupTypeDef
 
@@ -1361,17 +2168,19 @@ Optional fields:
 - `DBSnapshotAttributes`:
   `List`\[[DBSnapshotAttributeTypeDef](./type_defs.md#dbsnapshotattributetypedef)\]
 
-## DBSnapshotMessageTypeDef
+## DBSnapshotMessageResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DBSnapshotMessageTypeDef
+from mypy_boto3_rds.type_defs import DBSnapshotMessageResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Marker`: `str`
 - `DBSnapshots`:
   `List`\[[DBSnapshotTypeDef](./type_defs.md#dbsnapshottypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DBSnapshotTypeDef
 
@@ -1412,17 +2221,19 @@ Optional fields:
 - `DbiResourceId`: `str`
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## DBSubnetGroupMessageTypeDef
+## DBSubnetGroupMessageResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DBSubnetGroupMessageTypeDef
+from mypy_boto3_rds.type_defs import DBSubnetGroupMessageResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Marker`: `str`
 - `DBSubnetGroups`:
   `List`\[[DBSubnetGroupTypeDef](./type_defs.md#dbsubnetgrouptypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DBSubnetGroupTypeDef
 
@@ -1439,121 +2250,516 @@ Optional fields:
 - `Subnets`: `List`\[[SubnetTypeDef](./type_defs.md#subnettypedef)\]
 - `DBSubnetGroupArn`: `str`
 
-## DeleteCustomAvailabilityZoneResultTypeDef
+## DeleteCustomAvailabilityZoneMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DeleteCustomAvailabilityZoneResultTypeDef
+from mypy_boto3_rds.type_defs import DeleteCustomAvailabilityZoneMessageTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `CustomAvailabilityZoneId`: `str`
+
+## DeleteCustomAvailabilityZoneResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DeleteCustomAvailabilityZoneResultResponseTypeDef
+```
+
+Required fields:
 
 - `CustomAvailabilityZone`:
   [CustomAvailabilityZoneTypeDef](./type_defs.md#customavailabilityzonetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteDBClusterResultTypeDef
+## DeleteDBClusterEndpointMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DeleteDBClusterResultTypeDef
+from mypy_boto3_rds.type_defs import DeleteDBClusterEndpointMessageTypeDef
 ```
 
+Required fields:
+
+- `DBClusterEndpointIdentifier`: `str`
+
+## DeleteDBClusterMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DeleteDBClusterMessageTypeDef
+```
+
+Required fields:
+
+- `DBClusterIdentifier`: `str`
+
 Optional fields:
+
+- `SkipFinalSnapshot`: `bool`
+- `FinalDBSnapshotIdentifier`: `str`
+
+## DeleteDBClusterParameterGroupMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DeleteDBClusterParameterGroupMessageTypeDef
+```
+
+Required fields:
+
+- `DBClusterParameterGroupName`: `str`
+
+## DeleteDBClusterResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DeleteDBClusterResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBCluster`: [DBClusterTypeDef](./type_defs.md#dbclustertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteDBClusterSnapshotResultTypeDef
+## DeleteDBClusterSnapshotMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DeleteDBClusterSnapshotResultTypeDef
+from mypy_boto3_rds.type_defs import DeleteDBClusterSnapshotMessageTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DBClusterSnapshotIdentifier`: `str`
+
+## DeleteDBClusterSnapshotResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DeleteDBClusterSnapshotResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBClusterSnapshot`:
   [DBClusterSnapshotTypeDef](./type_defs.md#dbclustersnapshottypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteDBInstanceAutomatedBackupResultTypeDef
+## DeleteDBInstanceAutomatedBackupMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DeleteDBInstanceAutomatedBackupResultTypeDef
+from mypy_boto3_rds.type_defs import DeleteDBInstanceAutomatedBackupMessageTypeDef
 ```
 
 Optional fields:
+
+- `DbiResourceId`: `str`
+- `DBInstanceAutomatedBackupsArn`: `str`
+
+## DeleteDBInstanceAutomatedBackupResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DeleteDBInstanceAutomatedBackupResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBInstanceAutomatedBackup`:
   [DBInstanceAutomatedBackupTypeDef](./type_defs.md#dbinstanceautomatedbackuptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteDBInstanceResultTypeDef
+## DeleteDBInstanceMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DeleteDBInstanceResultTypeDef
+from mypy_boto3_rds.type_defs import DeleteDBInstanceMessageTypeDef
 ```
 
+Required fields:
+
+- `DBInstanceIdentifier`: `str`
+
 Optional fields:
+
+- `SkipFinalSnapshot`: `bool`
+- `FinalDBSnapshotIdentifier`: `str`
+- `DeleteAutomatedBackups`: `bool`
+
+## DeleteDBInstanceResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DeleteDBInstanceResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBInstance`: [DBInstanceTypeDef](./type_defs.md#dbinstancetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteDBProxyEndpointResponseTypeDef
+## DeleteDBParameterGroupMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DeleteDBProxyEndpointResponseTypeDef
+from mypy_boto3_rds.type_defs import DeleteDBParameterGroupMessageTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DBParameterGroupName`: `str`
+
+## DeleteDBProxyEndpointRequestTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DeleteDBProxyEndpointRequestTypeDef
+```
+
+Required fields:
+
+- `DBProxyEndpointName`: `str`
+
+## DeleteDBProxyEndpointResponseResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DeleteDBProxyEndpointResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DBProxyEndpoint`:
   [DBProxyEndpointTypeDef](./type_defs.md#dbproxyendpointtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteDBProxyResponseTypeDef
+## DeleteDBProxyRequestTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DeleteDBProxyResponseTypeDef
+from mypy_boto3_rds.type_defs import DeleteDBProxyRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DBProxyName`: `str`
+
+## DeleteDBProxyResponseResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DeleteDBProxyResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DBProxy`: [DBProxyTypeDef](./type_defs.md#dbproxytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteDBSnapshotResultTypeDef
+## DeleteDBSecurityGroupMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DeleteDBSnapshotResultTypeDef
+from mypy_boto3_rds.type_defs import DeleteDBSecurityGroupMessageTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DBSecurityGroupName`: `str`
+
+## DeleteDBSnapshotMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DeleteDBSnapshotMessageTypeDef
+```
+
+Required fields:
+
+- `DBSnapshotIdentifier`: `str`
+
+## DeleteDBSnapshotResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DeleteDBSnapshotResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBSnapshot`: [DBSnapshotTypeDef](./type_defs.md#dbsnapshottypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteEventSubscriptionResultTypeDef
+## DeleteDBSubnetGroupMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DeleteEventSubscriptionResultTypeDef
+from mypy_boto3_rds.type_defs import DeleteDBSubnetGroupMessageTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DBSubnetGroupName`: `str`
+
+## DeleteEventSubscriptionMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DeleteEventSubscriptionMessageTypeDef
+```
+
+Required fields:
+
+- `SubscriptionName`: `str`
+
+## DeleteEventSubscriptionResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DeleteEventSubscriptionResultResponseTypeDef
+```
+
+Required fields:
 
 - `EventSubscription`:
   [EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteGlobalClusterResultTypeDef
+## DeleteGlobalClusterMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DeleteGlobalClusterResultTypeDef
+from mypy_boto3_rds.type_defs import DeleteGlobalClusterMessageTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `GlobalClusterIdentifier`: `str`
+
+## DeleteGlobalClusterResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DeleteGlobalClusterResultResponseTypeDef
+```
+
+Required fields:
 
 - `GlobalCluster`: [GlobalClusterTypeDef](./type_defs.md#globalclustertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDBClusterSnapshotAttributesResultTypeDef
+## DeleteInstallationMediaMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DescribeDBClusterSnapshotAttributesResultTypeDef
+from mypy_boto3_rds.type_defs import DeleteInstallationMediaMessageTypeDef
+```
+
+Required fields:
+
+- `InstallationMediaId`: `str`
+
+## DeleteOptionGroupMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DeleteOptionGroupMessageTypeDef
+```
+
+Required fields:
+
+- `OptionGroupName`: `str`
+
+## DeregisterDBProxyTargetsRequestTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DeregisterDBProxyTargetsRequestTypeDef
+```
+
+Required fields:
+
+- `DBProxyName`: `str`
+
+Optional fields:
+
+- `TargetGroupName`: `str`
+- `DBInstanceIdentifiers`: `List`\[`str`\]
+- `DBClusterIdentifiers`: `List`\[`str`\]
+
+## DescribeCertificatesMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeCertificatesMessageTypeDef
 ```
 
 Optional fields:
+
+- `CertificateIdentifier`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeCustomAvailabilityZonesMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeCustomAvailabilityZonesMessageTypeDef
+```
+
+Optional fields:
+
+- `CustomAvailabilityZoneId`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeDBClusterBacktracksMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeDBClusterBacktracksMessageTypeDef
+```
+
+Required fields:
+
+- `DBClusterIdentifier`: `str`
+
+Optional fields:
+
+- `BacktrackIdentifier`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeDBClusterEndpointsMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeDBClusterEndpointsMessageTypeDef
+```
+
+Optional fields:
+
+- `DBClusterIdentifier`: `str`
+- `DBClusterEndpointIdentifier`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeDBClusterParameterGroupsMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeDBClusterParameterGroupsMessageTypeDef
+```
+
+Optional fields:
+
+- `DBClusterParameterGroupName`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeDBClusterParametersMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeDBClusterParametersMessageTypeDef
+```
+
+Required fields:
+
+- `DBClusterParameterGroupName`: `str`
+
+Optional fields:
+
+- `Source`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeDBClusterSnapshotAttributesMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeDBClusterSnapshotAttributesMessageTypeDef
+```
+
+Required fields:
+
+- `DBClusterSnapshotIdentifier`: `str`
+
+## DescribeDBClusterSnapshotAttributesResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeDBClusterSnapshotAttributesResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBClusterSnapshotAttributesResult`:
   [DBClusterSnapshotAttributesResultTypeDef](./type_defs.md#dbclustersnapshotattributesresulttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeDBClusterSnapshotsMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeDBClusterSnapshotsMessageTypeDef
+```
+
+Optional fields:
+
+- `DBClusterIdentifier`: `str`
+- `DBClusterSnapshotIdentifier`: `str`
+- `SnapshotType`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `IncludeShared`: `bool`
+- `IncludePublic`: `bool`
+
+## DescribeDBClustersMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeDBClustersMessageTypeDef
+```
+
+Optional fields:
+
+- `DBClusterIdentifier`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `IncludeShared`: `bool`
+
+## DescribeDBEngineVersionsMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeDBEngineVersionsMessageTypeDef
+```
+
+Optional fields:
+
+- `Engine`: `str`
+- `EngineVersion`: `str`
+- `DBParameterGroupFamily`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `DefaultOnly`: `bool`
+- `ListSupportedCharacterSets`: `bool`
+- `ListSupportedTimezones`: `bool`
+- `IncludeAll`: `bool`
+
+## DescribeDBInstanceAutomatedBackupsMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeDBInstanceAutomatedBackupsMessageTypeDef
+```
+
+Optional fields:
+
+- `DbiResourceId`: `str`
+- `DBInstanceIdentifier`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `DBInstanceAutomatedBackupsArn`: `str`
+
+## DescribeDBInstancesMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeDBInstancesMessageTypeDef
+```
+
+Optional fields:
+
+- `DBInstanceIdentifier`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
 
 ## DescribeDBLogFilesDetailsTypeDef
 
@@ -1567,108 +2773,531 @@ Optional fields:
 - `LastWritten`: `int`
 - `Size`: `int`
 
-## DescribeDBLogFilesResponseTypeDef
+## DescribeDBLogFilesMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DescribeDBLogFilesResponseTypeDef
+from mypy_boto3_rds.type_defs import DescribeDBLogFilesMessageTypeDef
 ```
 
+Required fields:
+
+- `DBInstanceIdentifier`: `str`
+
 Optional fields:
+
+- `FilenameContains`: `str`
+- `FileLastWritten`: `int`
+- `FileSize`: `int`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeDBLogFilesResponseResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeDBLogFilesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DescribeDBLogFiles`:
   `List`\[[DescribeDBLogFilesDetailsTypeDef](./type_defs.md#describedblogfilesdetailstypedef)\]
 - `Marker`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDBProxiesResponseTypeDef
+## DescribeDBParameterGroupsMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DescribeDBProxiesResponseTypeDef
+from mypy_boto3_rds.type_defs import DescribeDBParameterGroupsMessageTypeDef
 ```
 
 Optional fields:
+
+- `DBParameterGroupName`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeDBParametersMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeDBParametersMessageTypeDef
+```
+
+Required fields:
+
+- `DBParameterGroupName`: `str`
+
+Optional fields:
+
+- `Source`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeDBProxiesRequestTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeDBProxiesRequestTypeDef
+```
+
+Optional fields:
+
+- `DBProxyName`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Marker`: `str`
+- `MaxRecords`: `int`
+
+## DescribeDBProxiesResponseResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeDBProxiesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DBProxies`: `List`\[[DBProxyTypeDef](./type_defs.md#dbproxytypedef)\]
 - `Marker`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDBProxyEndpointsResponseTypeDef
+## DescribeDBProxyEndpointsRequestTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DescribeDBProxyEndpointsResponseTypeDef
+from mypy_boto3_rds.type_defs import DescribeDBProxyEndpointsRequestTypeDef
 ```
 
 Optional fields:
+
+- `DBProxyName`: `str`
+- `DBProxyEndpointName`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Marker`: `str`
+- `MaxRecords`: `int`
+
+## DescribeDBProxyEndpointsResponseResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeDBProxyEndpointsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DBProxyEndpoints`:
   `List`\[[DBProxyEndpointTypeDef](./type_defs.md#dbproxyendpointtypedef)\]
 - `Marker`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDBProxyTargetGroupsResponseTypeDef
+## DescribeDBProxyTargetGroupsRequestTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DescribeDBProxyTargetGroupsResponseTypeDef
+from mypy_boto3_rds.type_defs import DescribeDBProxyTargetGroupsRequestTypeDef
 ```
 
+Required fields:
+
+- `DBProxyName`: `str`
+
 Optional fields:
+
+- `TargetGroupName`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Marker`: `str`
+- `MaxRecords`: `int`
+
+## DescribeDBProxyTargetGroupsResponseResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeDBProxyTargetGroupsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `TargetGroups`:
   `List`\[[DBProxyTargetGroupTypeDef](./type_defs.md#dbproxytargetgrouptypedef)\]
 - `Marker`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDBProxyTargetsResponseTypeDef
+## DescribeDBProxyTargetsRequestTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DescribeDBProxyTargetsResponseTypeDef
+from mypy_boto3_rds.type_defs import DescribeDBProxyTargetsRequestTypeDef
 ```
 
+Required fields:
+
+- `DBProxyName`: `str`
+
 Optional fields:
+
+- `TargetGroupName`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Marker`: `str`
+- `MaxRecords`: `int`
+
+## DescribeDBProxyTargetsResponseResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeDBProxyTargetsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Targets`:
   `List`\[[DBProxyTargetTypeDef](./type_defs.md#dbproxytargettypedef)\]
 - `Marker`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDBSnapshotAttributesResultTypeDef
+## DescribeDBSecurityGroupsMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DescribeDBSnapshotAttributesResultTypeDef
+from mypy_boto3_rds.type_defs import DescribeDBSecurityGroupsMessageTypeDef
 ```
 
 Optional fields:
+
+- `DBSecurityGroupName`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeDBSnapshotAttributesMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeDBSnapshotAttributesMessageTypeDef
+```
+
+Required fields:
+
+- `DBSnapshotIdentifier`: `str`
+
+## DescribeDBSnapshotAttributesResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeDBSnapshotAttributesResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBSnapshotAttributesResult`:
   [DBSnapshotAttributesResultTypeDef](./type_defs.md#dbsnapshotattributesresulttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEngineDefaultClusterParametersResultTypeDef
+## DescribeDBSnapshotsMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DescribeEngineDefaultClusterParametersResultTypeDef
+from mypy_boto3_rds.type_defs import DescribeDBSnapshotsMessageTypeDef
 ```
 
 Optional fields:
+
+- `DBInstanceIdentifier`: `str`
+- `DBSnapshotIdentifier`: `str`
+- `SnapshotType`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `IncludeShared`: `bool`
+- `IncludePublic`: `bool`
+- `DbiResourceId`: `str`
+
+## DescribeDBSubnetGroupsMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeDBSubnetGroupsMessageTypeDef
+```
+
+Optional fields:
+
+- `DBSubnetGroupName`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeEngineDefaultClusterParametersMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeEngineDefaultClusterParametersMessageTypeDef
+```
+
+Required fields:
+
+- `DBParameterGroupFamily`: `str`
+
+Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeEngineDefaultClusterParametersResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeEngineDefaultClusterParametersResultResponseTypeDef
+```
+
+Required fields:
 
 - `EngineDefaults`:
   [EngineDefaultsTypeDef](./type_defs.md#enginedefaultstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEngineDefaultParametersResultTypeDef
+## DescribeEngineDefaultParametersMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DescribeEngineDefaultParametersResultTypeDef
+from mypy_boto3_rds.type_defs import DescribeEngineDefaultParametersMessageTypeDef
 ```
 
+Required fields:
+
+- `DBParameterGroupFamily`: `str`
+
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeEngineDefaultParametersResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeEngineDefaultParametersResultResponseTypeDef
+```
+
+Required fields:
 
 - `EngineDefaults`:
   [EngineDefaultsTypeDef](./type_defs.md#enginedefaultstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeValidDBInstanceModificationsResultTypeDef
+## DescribeEventCategoriesMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DescribeValidDBInstanceModificationsResultTypeDef
+from mypy_boto3_rds.type_defs import DescribeEventCategoriesMessageTypeDef
 ```
 
 Optional fields:
+
+- `SourceType`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+## DescribeEventSubscriptionsMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeEventSubscriptionsMessageTypeDef
+```
+
+Optional fields:
+
+- `SubscriptionName`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeEventsMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeEventsMessageTypeDef
+```
+
+Optional fields:
+
+- `SourceIdentifier`: `str`
+- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
+- `Duration`: `int`
+- `EventCategories`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeExportTasksMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeExportTasksMessageTypeDef
+```
+
+Optional fields:
+
+- `ExportTaskIdentifier`: `str`
+- `SourceArn`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Marker`: `str`
+- `MaxRecords`: `int`
+
+## DescribeGlobalClustersMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeGlobalClustersMessageTypeDef
+```
+
+Optional fields:
+
+- `GlobalClusterIdentifier`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeInstallationMediaMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeInstallationMediaMessageTypeDef
+```
+
+Optional fields:
+
+- `InstallationMediaId`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeOptionGroupOptionsMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeOptionGroupOptionsMessageTypeDef
+```
+
+Required fields:
+
+- `EngineName`: `str`
+
+Optional fields:
+
+- `MajorEngineVersion`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeOptionGroupsMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeOptionGroupsMessageTypeDef
+```
+
+Optional fields:
+
+- `OptionGroupName`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Marker`: `str`
+- `MaxRecords`: `int`
+- `EngineName`: `str`
+- `MajorEngineVersion`: `str`
+
+## DescribeOrderableDBInstanceOptionsMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeOrderableDBInstanceOptionsMessageTypeDef
+```
+
+Required fields:
+
+- `Engine`: `str`
+
+Optional fields:
+
+- `EngineVersion`: `str`
+- `DBInstanceClass`: `str`
+- `LicenseModel`: `str`
+- `AvailabilityZoneGroup`: `str`
+- `Vpc`: `bool`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribePendingMaintenanceActionsMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribePendingMaintenanceActionsMessageTypeDef
+```
+
+Optional fields:
+
+- `ResourceIdentifier`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Marker`: `str`
+- `MaxRecords`: `int`
+
+## DescribeReservedDBInstancesMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeReservedDBInstancesMessageTypeDef
+```
+
+Optional fields:
+
+- `ReservedDBInstanceId`: `str`
+- `ReservedDBInstancesOfferingId`: `str`
+- `DBInstanceClass`: `str`
+- `Duration`: `str`
+- `ProductDescription`: `str`
+- `OfferingType`: `str`
+- `MultiAZ`: `bool`
+- `LeaseId`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeReservedDBInstancesOfferingsMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeReservedDBInstancesOfferingsMessageTypeDef
+```
+
+Optional fields:
+
+- `ReservedDBInstancesOfferingId`: `str`
+- `DBInstanceClass`: `str`
+- `Duration`: `str`
+- `ProductDescription`: `str`
+- `OfferingType`: `str`
+- `MultiAZ`: `bool`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeSourceRegionsMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeSourceRegionsMessageTypeDef
+```
+
+Optional fields:
+
+- `RegionName`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+## DescribeValidDBInstanceModificationsMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeValidDBInstanceModificationsMessageTypeDef
+```
+
+Required fields:
+
+- `DBInstanceIdentifier`: `str`
+
+## DescribeValidDBInstanceModificationsResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DescribeValidDBInstanceModificationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `ValidDBInstanceModificationsMessage`:
   [ValidDBInstanceModificationsMessageTypeDef](./type_defs.md#validdbinstancemodificationsmessagetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DomainMembershipTypeDef
 
@@ -1694,17 +3323,35 @@ Optional fields:
 - `From`: `float`
 - `To`: `float`
 
-## DownloadDBLogFilePortionDetailsTypeDef
+## DownloadDBLogFilePortionDetailsResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import DownloadDBLogFilePortionDetailsTypeDef
+from mypy_boto3_rds.type_defs import DownloadDBLogFilePortionDetailsResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `LogFileData`: `str`
 - `Marker`: `str`
 - `AdditionalDataPending`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DownloadDBLogFilePortionMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import DownloadDBLogFilePortionMessageTypeDef
+```
+
+Required fields:
+
+- `DBInstanceIdentifier`: `str`
+- `LogFileName`: `str`
+
+Optional fields:
+
+- `Marker`: `str`
+- `NumberOfLines`: `int`
 
 ## EC2SecurityGroupTypeDef
 
@@ -1754,16 +3401,18 @@ Optional fields:
 - `SourceType`: `str`
 - `EventCategories`: `List`\[`str`\]
 
-## EventCategoriesMessageTypeDef
+## EventCategoriesMessageResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import EventCategoriesMessageTypeDef
+from mypy_boto3_rds.type_defs import EventCategoriesMessageResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `EventCategoriesMapList`:
   `List`\[[EventCategoriesMapTypeDef](./type_defs.md#eventcategoriesmaptypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## EventSubscriptionTypeDef
 
@@ -1784,17 +3433,19 @@ Optional fields:
 - `Enabled`: `bool`
 - `EventSubscriptionArn`: `str`
 
-## EventSubscriptionsMessageTypeDef
+## EventSubscriptionsMessageResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import EventSubscriptionsMessageTypeDef
+from mypy_boto3_rds.type_defs import EventSubscriptionsMessageResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Marker`: `str`
 - `EventSubscriptionsList`:
   `List`\[[EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## EventTypeDef
 
@@ -1811,24 +3462,26 @@ Optional fields:
 - `Date`: `datetime`
 - `SourceArn`: `str`
 
-## EventsMessageTypeDef
+## EventsMessageResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import EventsMessageTypeDef
+from mypy_boto3_rds.type_defs import EventsMessageResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Marker`: `str`
 - `Events`: `List`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ExportTaskTypeDef
+## ExportTaskResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import ExportTaskTypeDef
+from mypy_boto3_rds.type_defs import ExportTaskResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `ExportTaskIdentifier`: `str`
 - `SourceArn`: `str`
@@ -1845,38 +3498,71 @@ Optional fields:
 - `TotalExtractedDataInGB`: `int`
 - `FailureCause`: `str`
 - `WarningMessage`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ExportTasksMessageTypeDef
+## ExportTasksMessageResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import ExportTasksMessageTypeDef
+from mypy_boto3_rds.type_defs import ExportTasksMessageResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Marker`: `str`
 - `ExportTasks`:
-  `List`\[[ExportTaskTypeDef](./type_defs.md#exporttasktypedef)\]
+  `List`\[[ExportTaskResponseTypeDef](./type_defs.md#exporttaskresponsetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## FailoverDBClusterResultTypeDef
+## FailoverDBClusterMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import FailoverDBClusterResultTypeDef
+from mypy_boto3_rds.type_defs import FailoverDBClusterMessageTypeDef
 ```
 
+Required fields:
+
+- `DBClusterIdentifier`: `str`
+
 Optional fields:
+
+- `TargetDBInstanceIdentifier`: `str`
+
+## FailoverDBClusterResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import FailoverDBClusterResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBCluster`: [DBClusterTypeDef](./type_defs.md#dbclustertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## FailoverGlobalClusterResultTypeDef
+## FailoverGlobalClusterMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import FailoverGlobalClusterResultTypeDef
+from mypy_boto3_rds.type_defs import FailoverGlobalClusterMessageTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `GlobalClusterIdentifier`: `str`
+- `TargetDbClusterIdentifier`: `str`
+
+## FailoverGlobalClusterResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import FailoverGlobalClusterResultResponseTypeDef
+```
+
+Required fields:
 
 - `GlobalCluster`: [GlobalClusterTypeDef](./type_defs.md#globalclustertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## FailoverStateTypeDef
 
@@ -1936,17 +3622,19 @@ Optional fields:
   `List`\[[GlobalClusterMemberTypeDef](./type_defs.md#globalclustermembertypedef)\]
 - `FailoverState`: [FailoverStateTypeDef](./type_defs.md#failoverstatetypedef)
 
-## GlobalClustersMessageTypeDef
+## GlobalClustersMessageResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import GlobalClustersMessageTypeDef
+from mypy_boto3_rds.type_defs import GlobalClustersMessageResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Marker`: `str`
 - `GlobalClusters`:
   `List`\[[GlobalClusterTypeDef](./type_defs.md#globalclustertypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## IPRangeTypeDef
 
@@ -1959,6 +3647,20 @@ Optional fields:
 - `Status`: `str`
 - `CIDRIP`: `str`
 
+## ImportInstallationMediaMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import ImportInstallationMediaMessageTypeDef
+```
+
+Required fields:
+
+- `CustomAvailabilityZoneId`: `str`
+- `Engine`: `str`
+- `EngineVersion`: `str`
+- `EngineInstallationMediaPath`: `str`
+- `OSInstallationMediaPath`: `str`
+
 ## InstallationMediaFailureCauseTypeDef
 
 ```python
@@ -1969,25 +3671,27 @@ Optional fields:
 
 - `Message`: `str`
 
-## InstallationMediaMessageTypeDef
+## InstallationMediaMessageResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import InstallationMediaMessageTypeDef
+from mypy_boto3_rds.type_defs import InstallationMediaMessageResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Marker`: `str`
 - `InstallationMedia`:
-  `List`\[[InstallationMediaTypeDef](./type_defs.md#installationmediatypedef)\]
+  `List`\[[InstallationMediaResponseTypeDef](./type_defs.md#installationmediaresponsetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## InstallationMediaTypeDef
+## InstallationMediaResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import InstallationMediaTypeDef
+from mypy_boto3_rds.type_defs import InstallationMediaResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `InstallationMediaId`: `str`
 - `CustomAvailabilityZoneId`: `str`
@@ -1998,6 +3702,22 @@ Optional fields:
 - `Status`: `str`
 - `FailureCause`:
   [InstallationMediaFailureCauseTypeDef](./type_defs.md#installationmediafailurecausetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListTagsForResourceMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import ListTagsForResourceMessageTypeDef
+```
+
+Required fields:
+
+- `ResourceName`: `str`
+
+Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## MinimumEngineVersionPerAllowedValueTypeDef
 
@@ -2010,140 +3730,491 @@ Optional fields:
 - `AllowedValue`: `str`
 - `MinimumEngineVersion`: `str`
 
-## ModifyCertificatesResultTypeDef
+## ModifyCertificatesMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import ModifyCertificatesResultTypeDef
+from mypy_boto3_rds.type_defs import ModifyCertificatesMessageTypeDef
 ```
 
 Optional fields:
+
+- `CertificateIdentifier`: `str`
+- `RemoveCustomerOverride`: `bool`
+
+## ModifyCertificatesResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import ModifyCertificatesResultResponseTypeDef
+```
+
+Required fields:
 
 - `Certificate`: [CertificateTypeDef](./type_defs.md#certificatetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyDBClusterResultTypeDef
+## ModifyCurrentDBClusterCapacityMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import ModifyDBClusterResultTypeDef
+from mypy_boto3_rds.type_defs import ModifyCurrentDBClusterCapacityMessageTypeDef
 ```
 
+Required fields:
+
+- `DBClusterIdentifier`: `str`
+
 Optional fields:
+
+- `Capacity`: `int`
+- `SecondsBeforeTimeout`: `int`
+- `TimeoutAction`: `str`
+
+## ModifyDBClusterEndpointMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import ModifyDBClusterEndpointMessageTypeDef
+```
+
+Required fields:
+
+- `DBClusterEndpointIdentifier`: `str`
+
+Optional fields:
+
+- `EndpointType`: `str`
+- `StaticMembers`: `List`\[`str`\]
+- `ExcludedMembers`: `List`\[`str`\]
+
+## ModifyDBClusterMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import ModifyDBClusterMessageTypeDef
+```
+
+Required fields:
+
+- `DBClusterIdentifier`: `str`
+
+Optional fields:
+
+- `NewDBClusterIdentifier`: `str`
+- `ApplyImmediately`: `bool`
+- `BackupRetentionPeriod`: `int`
+- `DBClusterParameterGroupName`: `str`
+- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `Port`: `int`
+- `MasterUserPassword`: `str`
+- `OptionGroupName`: `str`
+- `PreferredBackupWindow`: `str`
+- `PreferredMaintenanceWindow`: `str`
+- `EnableIAMDatabaseAuthentication`: `bool`
+- `BacktrackWindow`: `int`
+- `CloudwatchLogsExportConfiguration`:
+  [CloudwatchLogsExportConfigurationTypeDef](./type_defs.md#cloudwatchlogsexportconfigurationtypedef)
+- `EngineVersion`: `str`
+- `AllowMajorVersionUpgrade`: `bool`
+- `DBInstanceParameterGroupName`: `str`
+- `Domain`: `str`
+- `DomainIAMRoleName`: `str`
+- `ScalingConfiguration`:
+  [ScalingConfigurationTypeDef](./type_defs.md#scalingconfigurationtypedef)
+- `DeletionProtection`: `bool`
+- `EnableHttpEndpoint`: `bool`
+- `CopyTagsToSnapshot`: `bool`
+- `EnableGlobalWriteForwarding`: `bool`
+
+## ModifyDBClusterParameterGroupMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import ModifyDBClusterParameterGroupMessageTypeDef
+```
+
+Required fields:
+
+- `DBClusterParameterGroupName`: `str`
+- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+
+## ModifyDBClusterResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import ModifyDBClusterResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBCluster`: [DBClusterTypeDef](./type_defs.md#dbclustertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyDBClusterSnapshotAttributeResultTypeDef
+## ModifyDBClusterSnapshotAttributeMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import ModifyDBClusterSnapshotAttributeResultTypeDef
+from mypy_boto3_rds.type_defs import ModifyDBClusterSnapshotAttributeMessageTypeDef
 ```
 
+Required fields:
+
+- `DBClusterSnapshotIdentifier`: `str`
+- `AttributeName`: `str`
+
 Optional fields:
+
+- `ValuesToAdd`: `List`\[`str`\]
+- `ValuesToRemove`: `List`\[`str`\]
+
+## ModifyDBClusterSnapshotAttributeResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import ModifyDBClusterSnapshotAttributeResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBClusterSnapshotAttributesResult`:
   [DBClusterSnapshotAttributesResultTypeDef](./type_defs.md#dbclustersnapshotattributesresulttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyDBInstanceResultTypeDef
+## ModifyDBInstanceMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import ModifyDBInstanceResultTypeDef
+from mypy_boto3_rds.type_defs import ModifyDBInstanceMessageTypeDef
 ```
 
+Required fields:
+
+- `DBInstanceIdentifier`: `str`
+
 Optional fields:
+
+- `AllocatedStorage`: `int`
+- `DBInstanceClass`: `str`
+- `DBSubnetGroupName`: `str`
+- `DBSecurityGroups`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `ApplyImmediately`: `bool`
+- `MasterUserPassword`: `str`
+- `DBParameterGroupName`: `str`
+- `BackupRetentionPeriod`: `int`
+- `PreferredBackupWindow`: `str`
+- `PreferredMaintenanceWindow`: `str`
+- `MultiAZ`: `bool`
+- `EngineVersion`: `str`
+- `AllowMajorVersionUpgrade`: `bool`
+- `AutoMinorVersionUpgrade`: `bool`
+- `LicenseModel`: `str`
+- `Iops`: `int`
+- `OptionGroupName`: `str`
+- `NewDBInstanceIdentifier`: `str`
+- `StorageType`: `str`
+- `TdeCredentialArn`: `str`
+- `TdeCredentialPassword`: `str`
+- `CACertificateIdentifier`: `str`
+- `Domain`: `str`
+- `CopyTagsToSnapshot`: `bool`
+- `MonitoringInterval`: `int`
+- `DBPortNumber`: `int`
+- `PubliclyAccessible`: `bool`
+- `MonitoringRoleArn`: `str`
+- `DomainIAMRoleName`: `str`
+- `PromotionTier`: `int`
+- `EnableIAMDatabaseAuthentication`: `bool`
+- `EnablePerformanceInsights`: `bool`
+- `PerformanceInsightsKMSKeyId`: `str`
+- `PerformanceInsightsRetentionPeriod`: `int`
+- `CloudwatchLogsExportConfiguration`:
+  [CloudwatchLogsExportConfigurationTypeDef](./type_defs.md#cloudwatchlogsexportconfigurationtypedef)
+- `ProcessorFeatures`:
+  `List`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
+- `UseDefaultProcessorFeatures`: `bool`
+- `DeletionProtection`: `bool`
+- `MaxAllocatedStorage`: `int`
+- `CertificateRotationRestart`: `bool`
+- `ReplicaMode`: [ReplicaModeType](./literals.md#replicamodetype)
+- `EnableCustomerOwnedIp`: `bool`
+- `AwsBackupRecoveryPointArn`: `str`
+
+## ModifyDBInstanceResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import ModifyDBInstanceResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBInstance`: [DBInstanceTypeDef](./type_defs.md#dbinstancetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyDBProxyEndpointResponseTypeDef
+## ModifyDBParameterGroupMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import ModifyDBProxyEndpointResponseTypeDef
+from mypy_boto3_rds.type_defs import ModifyDBParameterGroupMessageTypeDef
 ```
 
+Required fields:
+
+- `DBParameterGroupName`: `str`
+- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+
+## ModifyDBProxyEndpointRequestTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import ModifyDBProxyEndpointRequestTypeDef
+```
+
+Required fields:
+
+- `DBProxyEndpointName`: `str`
+
 Optional fields:
+
+- `NewDBProxyEndpointName`: `str`
+- `VpcSecurityGroupIds`: `List`\[`str`\]
+
+## ModifyDBProxyEndpointResponseResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import ModifyDBProxyEndpointResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DBProxyEndpoint`:
   [DBProxyEndpointTypeDef](./type_defs.md#dbproxyendpointtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyDBProxyResponseTypeDef
+## ModifyDBProxyRequestTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import ModifyDBProxyResponseTypeDef
+from mypy_boto3_rds.type_defs import ModifyDBProxyRequestTypeDef
 ```
 
+Required fields:
+
+- `DBProxyName`: `str`
+
 Optional fields:
+
+- `NewDBProxyName`: `str`
+- `Auth`:
+  `List`\[[UserAuthConfigTypeDef](./type_defs.md#userauthconfigtypedef)\]
+- `RequireTLS`: `bool`
+- `IdleClientTimeout`: `int`
+- `DebugLogging`: `bool`
+- `RoleArn`: `str`
+- `SecurityGroups`: `List`\[`str`\]
+
+## ModifyDBProxyResponseResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import ModifyDBProxyResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DBProxy`: [DBProxyTypeDef](./type_defs.md#dbproxytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyDBProxyTargetGroupResponseTypeDef
+## ModifyDBProxyTargetGroupRequestTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import ModifyDBProxyTargetGroupResponseTypeDef
+from mypy_boto3_rds.type_defs import ModifyDBProxyTargetGroupRequestTypeDef
 ```
 
+Required fields:
+
+- `TargetGroupName`: `str`
+- `DBProxyName`: `str`
+
 Optional fields:
+
+- `ConnectionPoolConfig`:
+  [ConnectionPoolConfigurationTypeDef](./type_defs.md#connectionpoolconfigurationtypedef)
+- `NewName`: `str`
+
+## ModifyDBProxyTargetGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import ModifyDBProxyTargetGroupResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DBProxyTargetGroup`:
   [DBProxyTargetGroupTypeDef](./type_defs.md#dbproxytargetgrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyDBSnapshotAttributeResultTypeDef
+## ModifyDBSnapshotAttributeMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import ModifyDBSnapshotAttributeResultTypeDef
+from mypy_boto3_rds.type_defs import ModifyDBSnapshotAttributeMessageTypeDef
 ```
 
+Required fields:
+
+- `DBSnapshotIdentifier`: `str`
+- `AttributeName`: `str`
+
 Optional fields:
+
+- `ValuesToAdd`: `List`\[`str`\]
+- `ValuesToRemove`: `List`\[`str`\]
+
+## ModifyDBSnapshotAttributeResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import ModifyDBSnapshotAttributeResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBSnapshotAttributesResult`:
   [DBSnapshotAttributesResultTypeDef](./type_defs.md#dbsnapshotattributesresulttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyDBSnapshotResultTypeDef
+## ModifyDBSnapshotMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import ModifyDBSnapshotResultTypeDef
+from mypy_boto3_rds.type_defs import ModifyDBSnapshotMessageTypeDef
 ```
 
+Required fields:
+
+- `DBSnapshotIdentifier`: `str`
+
 Optional fields:
+
+- `EngineVersion`: `str`
+- `OptionGroupName`: `str`
+
+## ModifyDBSnapshotResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import ModifyDBSnapshotResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBSnapshot`: [DBSnapshotTypeDef](./type_defs.md#dbsnapshottypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyDBSubnetGroupResultTypeDef
+## ModifyDBSubnetGroupMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import ModifyDBSubnetGroupResultTypeDef
+from mypy_boto3_rds.type_defs import ModifyDBSubnetGroupMessageTypeDef
 ```
 
+Required fields:
+
+- `DBSubnetGroupName`: `str`
+- `SubnetIds`: `List`\[`str`\]
+
 Optional fields:
+
+- `DBSubnetGroupDescription`: `str`
+
+## ModifyDBSubnetGroupResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import ModifyDBSubnetGroupResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBSubnetGroup`: [DBSubnetGroupTypeDef](./type_defs.md#dbsubnetgrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyEventSubscriptionResultTypeDef
+## ModifyEventSubscriptionMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import ModifyEventSubscriptionResultTypeDef
+from mypy_boto3_rds.type_defs import ModifyEventSubscriptionMessageTypeDef
 ```
 
+Required fields:
+
+- `SubscriptionName`: `str`
+
 Optional fields:
+
+- `SnsTopicArn`: `str`
+- `SourceType`: `str`
+- `EventCategories`: `List`\[`str`\]
+- `Enabled`: `bool`
+
+## ModifyEventSubscriptionResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import ModifyEventSubscriptionResultResponseTypeDef
+```
+
+Required fields:
 
 - `EventSubscription`:
   [EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyGlobalClusterResultTypeDef
+## ModifyGlobalClusterMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import ModifyGlobalClusterResultTypeDef
+from mypy_boto3_rds.type_defs import ModifyGlobalClusterMessageTypeDef
 ```
 
 Optional fields:
+
+- `GlobalClusterIdentifier`: `str`
+- `NewGlobalClusterIdentifier`: `str`
+- `DeletionProtection`: `bool`
+- `EngineVersion`: `str`
+- `AllowMajorVersionUpgrade`: `bool`
+
+## ModifyGlobalClusterResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import ModifyGlobalClusterResultResponseTypeDef
+```
+
+Required fields:
 
 - `GlobalCluster`: [GlobalClusterTypeDef](./type_defs.md#globalclustertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyOptionGroupResultTypeDef
+## ModifyOptionGroupMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import ModifyOptionGroupResultTypeDef
+from mypy_boto3_rds.type_defs import ModifyOptionGroupMessageTypeDef
 ```
+
+Required fields:
+
+- `OptionGroupName`: `str`
 
 Optional fields:
 
+- `OptionsToInclude`:
+  `List`\[[OptionConfigurationTypeDef](./type_defs.md#optionconfigurationtypedef)\]
+- `OptionsToRemove`: `List`\[`str`\]
+- `ApplyImmediately`: `bool`
+
+## ModifyOptionGroupResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import ModifyOptionGroupResultResponseTypeDef
+```
+
+Required fields:
+
 - `OptionGroup`: [OptionGroupTypeDef](./type_defs.md#optiongrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## OptionConfigurationTypeDef
 
@@ -2220,17 +4291,19 @@ Optional fields:
 - `OptionGroupOptionVersions`:
   `List`\[[OptionVersionTypeDef](./type_defs.md#optionversiontypedef)\]
 
-## OptionGroupOptionsMessageTypeDef
+## OptionGroupOptionsMessageResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import OptionGroupOptionsMessageTypeDef
+from mypy_boto3_rds.type_defs import OptionGroupOptionsMessageResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `OptionGroupOptions`:
   `List`\[[OptionGroupOptionTypeDef](./type_defs.md#optiongroupoptiontypedef)\]
 - `Marker`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## OptionGroupTypeDef
 
@@ -2249,17 +4322,19 @@ Optional fields:
 - `VpcId`: `str`
 - `OptionGroupArn`: `str`
 
-## OptionGroupsTypeDef
+## OptionGroupsResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import OptionGroupsTypeDef
+from mypy_boto3_rds.type_defs import OptionGroupsResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `OptionGroupsList`:
   `List`\[[OptionGroupTypeDef](./type_defs.md#optiongrouptypedef)\]
 - `Marker`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## OptionSettingTypeDef
 
@@ -2350,17 +4425,19 @@ Optional fields:
 - `SupportedActivityStreamModes`: `List`\[`str`\]
 - `SupportsGlobalDatabases`: `bool`
 
-## OrderableDBInstanceOptionsMessageTypeDef
+## OrderableDBInstanceOptionsMessageResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import OrderableDBInstanceOptionsMessageTypeDef
+from mypy_boto3_rds.type_defs import OrderableDBInstanceOptionsMessageResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `OrderableDBInstanceOptions`:
   `List`\[[OrderableDBInstanceOptionTypeDef](./type_defs.md#orderabledbinstanceoptiontypedef)\]
 - `Marker`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## OutpostTypeDef
 
@@ -2430,17 +4507,19 @@ Optional fields:
 - `CurrentApplyDate`: `datetime`
 - `Description`: `str`
 
-## PendingMaintenanceActionsMessageTypeDef
+## PendingMaintenanceActionsMessageResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import PendingMaintenanceActionsMessageTypeDef
+from mypy_boto3_rds.type_defs import PendingMaintenanceActionsMessageResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `PendingMaintenanceActions`:
   `List`\[[ResourcePendingMaintenanceActionsTypeDef](./type_defs.md#resourcependingmaintenanceactionstypedef)\]
 - `Marker`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PendingModifiedValuesTypeDef
 
@@ -2480,36 +4559,83 @@ Optional fields:
 - `Name`: `str`
 - `Value`: `str`
 
-## PromoteReadReplicaDBClusterResultTypeDef
+## PromoteReadReplicaDBClusterMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import PromoteReadReplicaDBClusterResultTypeDef
+from mypy_boto3_rds.type_defs import PromoteReadReplicaDBClusterMessageTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DBClusterIdentifier`: `str`
+
+## PromoteReadReplicaDBClusterResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import PromoteReadReplicaDBClusterResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBCluster`: [DBClusterTypeDef](./type_defs.md#dbclustertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PromoteReadReplicaResultTypeDef
+## PromoteReadReplicaMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import PromoteReadReplicaResultTypeDef
+from mypy_boto3_rds.type_defs import PromoteReadReplicaMessageTypeDef
 ```
 
+Required fields:
+
+- `DBInstanceIdentifier`: `str`
+
 Optional fields:
+
+- `BackupRetentionPeriod`: `int`
+- `PreferredBackupWindow`: `str`
+
+## PromoteReadReplicaResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import PromoteReadReplicaResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBInstance`: [DBInstanceTypeDef](./type_defs.md#dbinstancetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PurchaseReservedDBInstancesOfferingResultTypeDef
+## PurchaseReservedDBInstancesOfferingMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import PurchaseReservedDBInstancesOfferingResultTypeDef
+from mypy_boto3_rds.type_defs import PurchaseReservedDBInstancesOfferingMessageTypeDef
 ```
 
+Required fields:
+
+- `ReservedDBInstancesOfferingId`: `str`
+
 Optional fields:
+
+- `ReservedDBInstanceId`: `str`
+- `DBInstanceCount`: `int`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## PurchaseReservedDBInstancesOfferingResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import PurchaseReservedDBInstancesOfferingResultResponseTypeDef
+```
+
+Required fields:
 
 - `ReservedDBInstance`:
   [ReservedDBInstanceTypeDef](./type_defs.md#reserveddbinstancetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## RangeTypeDef
 
@@ -2523,15 +4649,31 @@ Optional fields:
 - `To`: `int`
 - `Step`: `int`
 
-## RebootDBInstanceResultTypeDef
+## RebootDBInstanceMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import RebootDBInstanceResultTypeDef
+from mypy_boto3_rds.type_defs import RebootDBInstanceMessageTypeDef
 ```
+
+Required fields:
+
+- `DBInstanceIdentifier`: `str`
 
 Optional fields:
 
+- `ForceFailover`: `bool`
+
+## RebootDBInstanceResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import RebootDBInstanceResultResponseTypeDef
+```
+
+Required fields:
+
 - `DBInstance`: [DBInstanceTypeDef](./type_defs.md#dbinstancetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## RecurringChargeTypeDef
 
@@ -2544,49 +4686,133 @@ Optional fields:
 - `RecurringChargeAmount`: `float`
 - `RecurringChargeFrequency`: `str`
 
-## RegisterDBProxyTargetsResponseTypeDef
+## RegisterDBProxyTargetsRequestTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import RegisterDBProxyTargetsResponseTypeDef
+from mypy_boto3_rds.type_defs import RegisterDBProxyTargetsRequestTypeDef
 ```
 
+Required fields:
+
+- `DBProxyName`: `str`
+
 Optional fields:
+
+- `TargetGroupName`: `str`
+- `DBInstanceIdentifiers`: `List`\[`str`\]
+- `DBClusterIdentifiers`: `List`\[`str`\]
+
+## RegisterDBProxyTargetsResponseResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import RegisterDBProxyTargetsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DBProxyTargets`:
   `List`\[[DBProxyTargetTypeDef](./type_defs.md#dbproxytargettypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RemoveFromGlobalClusterResultTypeDef
+## RemoveFromGlobalClusterMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import RemoveFromGlobalClusterResultTypeDef
+from mypy_boto3_rds.type_defs import RemoveFromGlobalClusterMessageTypeDef
 ```
 
 Optional fields:
+
+- `GlobalClusterIdentifier`: `str`
+- `DbClusterIdentifier`: `str`
+
+## RemoveFromGlobalClusterResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import RemoveFromGlobalClusterResultResponseTypeDef
+```
+
+Required fields:
 
 - `GlobalCluster`: [GlobalClusterTypeDef](./type_defs.md#globalclustertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RemoveSourceIdentifierFromSubscriptionResultTypeDef
+## RemoveRoleFromDBClusterMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import RemoveSourceIdentifierFromSubscriptionResultTypeDef
+from mypy_boto3_rds.type_defs import RemoveRoleFromDBClusterMessageTypeDef
 ```
 
+Required fields:
+
+- `DBClusterIdentifier`: `str`
+- `RoleArn`: `str`
+
 Optional fields:
+
+- `FeatureName`: `str`
+
+## RemoveRoleFromDBInstanceMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import RemoveRoleFromDBInstanceMessageTypeDef
+```
+
+Required fields:
+
+- `DBInstanceIdentifier`: `str`
+- `RoleArn`: `str`
+- `FeatureName`: `str`
+
+## RemoveSourceIdentifierFromSubscriptionMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import RemoveSourceIdentifierFromSubscriptionMessageTypeDef
+```
+
+Required fields:
+
+- `SubscriptionName`: `str`
+- `SourceIdentifier`: `str`
+
+## RemoveSourceIdentifierFromSubscriptionResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import RemoveSourceIdentifierFromSubscriptionResultResponseTypeDef
+```
+
+Required fields:
 
 - `EventSubscription`:
   [EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ReservedDBInstanceMessageTypeDef
+## RemoveTagsFromResourceMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import ReservedDBInstanceMessageTypeDef
+from mypy_boto3_rds.type_defs import RemoveTagsFromResourceMessageTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceName`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## ReservedDBInstanceMessageResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import ReservedDBInstanceMessageResponseTypeDef
+```
+
+Required fields:
 
 - `Marker`: `str`
 - `ReservedDBInstances`:
   `List`\[[ReservedDBInstanceTypeDef](./type_defs.md#reserveddbinstancetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ReservedDBInstanceTypeDef
 
@@ -2614,17 +4840,19 @@ Optional fields:
 - `ReservedDBInstanceArn`: `str`
 - `LeaseId`: `str`
 
-## ReservedDBInstancesOfferingMessageTypeDef
+## ReservedDBInstancesOfferingMessageResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import ReservedDBInstancesOfferingMessageTypeDef
+from mypy_boto3_rds.type_defs import ReservedDBInstancesOfferingMessageResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Marker`: `str`
 - `ReservedDBInstancesOfferings`:
   `List`\[[ReservedDBInstancesOfferingTypeDef](./type_defs.md#reserveddbinstancesofferingtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ReservedDBInstancesOfferingTypeDef
 
@@ -2646,6 +4874,36 @@ Optional fields:
 - `RecurringCharges`:
   `List`\[[RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef)\]
 
+## ResetDBClusterParameterGroupMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import ResetDBClusterParameterGroupMessageTypeDef
+```
+
+Required fields:
+
+- `DBClusterParameterGroupName`: `str`
+
+Optional fields:
+
+- `ResetAllParameters`: `bool`
+- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+
+## ResetDBParameterGroupMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import ResetDBParameterGroupMessageTypeDef
+```
+
+Required fields:
+
+- `DBParameterGroupName`: `str`
+
+Optional fields:
+
+- `ResetAllParameters`: `bool`
+- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+
 ## ResourcePendingMaintenanceActionsTypeDef
 
 ```python
@@ -2658,65 +4916,349 @@ Optional fields:
 - `PendingMaintenanceActionDetails`:
   `List`\[[PendingMaintenanceActionTypeDef](./type_defs.md#pendingmaintenanceactiontypedef)\]
 
-## RestoreDBClusterFromS3ResultTypeDef
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import RestoreDBClusterFromS3ResultTypeDef
+from mypy_boto3_rds.type_defs import ResponseMetadataTypeDef
 ```
 
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## RestoreDBClusterFromS3MessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import RestoreDBClusterFromS3MessageTypeDef
+```
+
+Required fields:
+
+- `DBClusterIdentifier`: `str`
+- `Engine`: `str`
+- `MasterUsername`: `str`
+- `MasterUserPassword`: `str`
+- `SourceEngine`: `str`
+- `SourceEngineVersion`: `str`
+- `S3BucketName`: `str`
+- `S3IngestionRoleArn`: `str`
+
 Optional fields:
+
+- `AvailabilityZones`: `List`\[`str`\]
+- `BackupRetentionPeriod`: `int`
+- `CharacterSetName`: `str`
+- `DatabaseName`: `str`
+- `DBClusterParameterGroupName`: `str`
+- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `DBSubnetGroupName`: `str`
+- `EngineVersion`: `str`
+- `Port`: `int`
+- `OptionGroupName`: `str`
+- `PreferredBackupWindow`: `str`
+- `PreferredMaintenanceWindow`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `StorageEncrypted`: `bool`
+- `KmsKeyId`: `str`
+- `EnableIAMDatabaseAuthentication`: `bool`
+- `S3Prefix`: `str`
+- `BacktrackWindow`: `int`
+- `EnableCloudwatchLogsExports`: `List`\[`str`\]
+- `DeletionProtection`: `bool`
+- `CopyTagsToSnapshot`: `bool`
+- `Domain`: `str`
+- `DomainIAMRoleName`: `str`
+
+## RestoreDBClusterFromS3ResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import RestoreDBClusterFromS3ResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBCluster`: [DBClusterTypeDef](./type_defs.md#dbclustertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RestoreDBClusterFromSnapshotResultTypeDef
+## RestoreDBClusterFromSnapshotMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import RestoreDBClusterFromSnapshotResultTypeDef
+from mypy_boto3_rds.type_defs import RestoreDBClusterFromSnapshotMessageTypeDef
 ```
 
+Required fields:
+
+- `DBClusterIdentifier`: `str`
+- `SnapshotIdentifier`: `str`
+- `Engine`: `str`
+
 Optional fields:
+
+- `AvailabilityZones`: `List`\[`str`\]
+- `EngineVersion`: `str`
+- `Port`: `int`
+- `DBSubnetGroupName`: `str`
+- `DatabaseName`: `str`
+- `OptionGroupName`: `str`
+- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `KmsKeyId`: `str`
+- `EnableIAMDatabaseAuthentication`: `bool`
+- `BacktrackWindow`: `int`
+- `EnableCloudwatchLogsExports`: `List`\[`str`\]
+- `EngineMode`: `str`
+- `ScalingConfiguration`:
+  [ScalingConfigurationTypeDef](./type_defs.md#scalingconfigurationtypedef)
+- `DBClusterParameterGroupName`: `str`
+- `DeletionProtection`: `bool`
+- `CopyTagsToSnapshot`: `bool`
+- `Domain`: `str`
+- `DomainIAMRoleName`: `str`
+
+## RestoreDBClusterFromSnapshotResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import RestoreDBClusterFromSnapshotResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBCluster`: [DBClusterTypeDef](./type_defs.md#dbclustertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RestoreDBClusterToPointInTimeResultTypeDef
+## RestoreDBClusterToPointInTimeMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import RestoreDBClusterToPointInTimeResultTypeDef
+from mypy_boto3_rds.type_defs import RestoreDBClusterToPointInTimeMessageTypeDef
 ```
 
+Required fields:
+
+- `DBClusterIdentifier`: `str`
+- `SourceDBClusterIdentifier`: `str`
+
 Optional fields:
+
+- `RestoreType`: `str`
+- `RestoreToTime`: `Union`\[`datetime`, `str`\]
+- `UseLatestRestorableTime`: `bool`
+- `Port`: `int`
+- `DBSubnetGroupName`: `str`
+- `OptionGroupName`: `str`
+- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `KmsKeyId`: `str`
+- `EnableIAMDatabaseAuthentication`: `bool`
+- `BacktrackWindow`: `int`
+- `EnableCloudwatchLogsExports`: `List`\[`str`\]
+- `DBClusterParameterGroupName`: `str`
+- `DeletionProtection`: `bool`
+- `CopyTagsToSnapshot`: `bool`
+- `Domain`: `str`
+- `DomainIAMRoleName`: `str`
+- `ScalingConfiguration`:
+  [ScalingConfigurationTypeDef](./type_defs.md#scalingconfigurationtypedef)
+- `EngineMode`: `str`
+
+## RestoreDBClusterToPointInTimeResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import RestoreDBClusterToPointInTimeResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBCluster`: [DBClusterTypeDef](./type_defs.md#dbclustertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RestoreDBInstanceFromDBSnapshotResultTypeDef
+## RestoreDBInstanceFromDBSnapshotMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import RestoreDBInstanceFromDBSnapshotResultTypeDef
+from mypy_boto3_rds.type_defs import RestoreDBInstanceFromDBSnapshotMessageTypeDef
 ```
+
+Required fields:
+
+- `DBInstanceIdentifier`: `str`
+- `DBSnapshotIdentifier`: `str`
 
 Optional fields:
 
-- `DBInstance`: [DBInstanceTypeDef](./type_defs.md#dbinstancetypedef)
+- `DBInstanceClass`: `str`
+- `Port`: `int`
+- `AvailabilityZone`: `str`
+- `DBSubnetGroupName`: `str`
+- `MultiAZ`: `bool`
+- `PubliclyAccessible`: `bool`
+- `AutoMinorVersionUpgrade`: `bool`
+- `LicenseModel`: `str`
+- `DBName`: `str`
+- `Engine`: `str`
+- `Iops`: `int`
+- `OptionGroupName`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `StorageType`: `str`
+- `TdeCredentialArn`: `str`
+- `TdeCredentialPassword`: `str`
+- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `Domain`: `str`
+- `CopyTagsToSnapshot`: `bool`
+- `DomainIAMRoleName`: `str`
+- `EnableIAMDatabaseAuthentication`: `bool`
+- `EnableCloudwatchLogsExports`: `List`\[`str`\]
+- `ProcessorFeatures`:
+  `List`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
+- `UseDefaultProcessorFeatures`: `bool`
+- `DBParameterGroupName`: `str`
+- `DeletionProtection`: `bool`
+- `EnableCustomerOwnedIp`: `bool`
 
-## RestoreDBInstanceFromS3ResultTypeDef
+## RestoreDBInstanceFromDBSnapshotResultResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import RestoreDBInstanceFromS3ResultTypeDef
+from mypy_boto3_rds.type_defs import RestoreDBInstanceFromDBSnapshotResultResponseTypeDef
 ```
+
+Required fields:
+
+- `DBInstance`: [DBInstanceTypeDef](./type_defs.md#dbinstancetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## RestoreDBInstanceFromS3MessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import RestoreDBInstanceFromS3MessageTypeDef
+```
+
+Required fields:
+
+- `DBInstanceIdentifier`: `str`
+- `DBInstanceClass`: `str`
+- `Engine`: `str`
+- `SourceEngine`: `str`
+- `SourceEngineVersion`: `str`
+- `S3BucketName`: `str`
+- `S3IngestionRoleArn`: `str`
 
 Optional fields:
 
-- `DBInstance`: [DBInstanceTypeDef](./type_defs.md#dbinstancetypedef)
+- `DBName`: `str`
+- `AllocatedStorage`: `int`
+- `MasterUsername`: `str`
+- `MasterUserPassword`: `str`
+- `DBSecurityGroups`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `AvailabilityZone`: `str`
+- `DBSubnetGroupName`: `str`
+- `PreferredMaintenanceWindow`: `str`
+- `DBParameterGroupName`: `str`
+- `BackupRetentionPeriod`: `int`
+- `PreferredBackupWindow`: `str`
+- `Port`: `int`
+- `MultiAZ`: `bool`
+- `EngineVersion`: `str`
+- `AutoMinorVersionUpgrade`: `bool`
+- `LicenseModel`: `str`
+- `Iops`: `int`
+- `OptionGroupName`: `str`
+- `PubliclyAccessible`: `bool`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `StorageType`: `str`
+- `StorageEncrypted`: `bool`
+- `KmsKeyId`: `str`
+- `CopyTagsToSnapshot`: `bool`
+- `MonitoringInterval`: `int`
+- `MonitoringRoleArn`: `str`
+- `EnableIAMDatabaseAuthentication`: `bool`
+- `S3Prefix`: `str`
+- `EnablePerformanceInsights`: `bool`
+- `PerformanceInsightsKMSKeyId`: `str`
+- `PerformanceInsightsRetentionPeriod`: `int`
+- `EnableCloudwatchLogsExports`: `List`\[`str`\]
+- `ProcessorFeatures`:
+  `List`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
+- `UseDefaultProcessorFeatures`: `bool`
+- `DeletionProtection`: `bool`
+- `MaxAllocatedStorage`: `int`
 
-## RestoreDBInstanceToPointInTimeResultTypeDef
+## RestoreDBInstanceFromS3ResultResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import RestoreDBInstanceToPointInTimeResultTypeDef
+from mypy_boto3_rds.type_defs import RestoreDBInstanceFromS3ResultResponseTypeDef
 ```
+
+Required fields:
+
+- `DBInstance`: [DBInstanceTypeDef](./type_defs.md#dbinstancetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## RestoreDBInstanceToPointInTimeMessageTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import RestoreDBInstanceToPointInTimeMessageTypeDef
+```
+
+Required fields:
+
+- `TargetDBInstanceIdentifier`: `str`
 
 Optional fields:
 
+- `SourceDBInstanceIdentifier`: `str`
+- `RestoreTime`: `Union`\[`datetime`, `str`\]
+- `UseLatestRestorableTime`: `bool`
+- `DBInstanceClass`: `str`
+- `Port`: `int`
+- `AvailabilityZone`: `str`
+- `DBSubnetGroupName`: `str`
+- `MultiAZ`: `bool`
+- `PubliclyAccessible`: `bool`
+- `AutoMinorVersionUpgrade`: `bool`
+- `LicenseModel`: `str`
+- `DBName`: `str`
+- `Engine`: `str`
+- `Iops`: `int`
+- `OptionGroupName`: `str`
+- `CopyTagsToSnapshot`: `bool`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `StorageType`: `str`
+- `TdeCredentialArn`: `str`
+- `TdeCredentialPassword`: `str`
+- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `Domain`: `str`
+- `DomainIAMRoleName`: `str`
+- `EnableIAMDatabaseAuthentication`: `bool`
+- `EnableCloudwatchLogsExports`: `List`\[`str`\]
+- `ProcessorFeatures`:
+  `List`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
+- `UseDefaultProcessorFeatures`: `bool`
+- `DBParameterGroupName`: `str`
+- `DeletionProtection`: `bool`
+- `SourceDbiResourceId`: `str`
+- `MaxAllocatedStorage`: `int`
+- `SourceDBInstanceAutomatedBackupsArn`: `str`
+- `EnableCustomerOwnedIp`: `bool`
+
+## RestoreDBInstanceToPointInTimeResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import RestoreDBInstanceToPointInTimeResultResponseTypeDef
+```
+
+Required fields:
+
 - `DBInstance`: [DBInstanceTypeDef](./type_defs.md#dbinstancetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## RestoreWindowTypeDef
 
@@ -2729,16 +5271,35 @@ Optional fields:
 - `EarliestTime`: `datetime`
 - `LatestTime`: `datetime`
 
-## RevokeDBSecurityGroupIngressResultTypeDef
+## RevokeDBSecurityGroupIngressMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import RevokeDBSecurityGroupIngressResultTypeDef
+from mypy_boto3_rds.type_defs import RevokeDBSecurityGroupIngressMessageTypeDef
 ```
+
+Required fields:
+
+- `DBSecurityGroupName`: `str`
 
 Optional fields:
 
+- `CIDRIP`: `str`
+- `EC2SecurityGroupName`: `str`
+- `EC2SecurityGroupId`: `str`
+- `EC2SecurityGroupOwnerId`: `str`
+
+## RevokeDBSecurityGroupIngressResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import RevokeDBSecurityGroupIngressResultResponseTypeDef
+```
+
+Required fields:
+
 - `DBSecurityGroup`:
   [DBSecurityGroupTypeDef](./type_defs.md#dbsecuritygrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ScalingConfigurationInfoTypeDef
 
@@ -2768,17 +5329,19 @@ Optional fields:
 - `SecondsUntilAutoPause`: `int`
 - `TimeoutAction`: `str`
 
-## SourceRegionMessageTypeDef
+## SourceRegionMessageResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import SourceRegionMessageTypeDef
+from mypy_boto3_rds.type_defs import SourceRegionMessageResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Marker`: `str`
 - `SourceRegions`:
   `List`\[[SourceRegionTypeDef](./type_defs.md#sourceregiontypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## SourceRegionTypeDef
 
@@ -2793,13 +5356,30 @@ Optional fields:
 - `Status`: `str`
 - `SupportsDBInstanceAutomatedBackupsReplication`: `bool`
 
-## StartActivityStreamResponseTypeDef
+## StartActivityStreamRequestTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import StartActivityStreamResponseTypeDef
+from mypy_boto3_rds.type_defs import StartActivityStreamRequestTypeDef
 ```
 
+Required fields:
+
+- `ResourceArn`: `str`
+- `Mode`: [ActivityStreamModeType](./literals.md#activitystreammodetype)
+- `KmsKeyId`: `str`
+
 Optional fields:
+
+- `ApplyImmediately`: `bool`
+- `EngineNativeAuditFieldsIncluded`: `bool`
+
+## StartActivityStreamResponseResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import StartActivityStreamResponseResponseTypeDef
+```
+
+Required fields:
 
 - `KmsKeyId`: `str`
 - `KinesisStreamName`: `str`
@@ -2807,80 +5387,200 @@ Optional fields:
 - `Mode`: [ActivityStreamModeType](./literals.md#activitystreammodetype)
 - `ApplyImmediately`: `bool`
 - `EngineNativeAuditFieldsIncluded`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartDBClusterResultTypeDef
+## StartDBClusterMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import StartDBClusterResultTypeDef
+from mypy_boto3_rds.type_defs import StartDBClusterMessageTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DBClusterIdentifier`: `str`
+
+## StartDBClusterResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import StartDBClusterResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBCluster`: [DBClusterTypeDef](./type_defs.md#dbclustertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartDBInstanceAutomatedBackupsReplicationResultTypeDef
+## StartDBInstanceAutomatedBackupsReplicationMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import StartDBInstanceAutomatedBackupsReplicationResultTypeDef
+from mypy_boto3_rds.type_defs import StartDBInstanceAutomatedBackupsReplicationMessageTypeDef
 ```
 
+Required fields:
+
+- `SourceDBInstanceArn`: `str`
+
 Optional fields:
+
+- `BackupRetentionPeriod`: `int`
+- `KmsKeyId`: `str`
+- `PreSignedUrl`: `str`
+- `SourceRegion`: `str`
+
+## StartDBInstanceAutomatedBackupsReplicationResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import StartDBInstanceAutomatedBackupsReplicationResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBInstanceAutomatedBackup`:
   [DBInstanceAutomatedBackupTypeDef](./type_defs.md#dbinstanceautomatedbackuptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartDBInstanceResultTypeDef
+## StartDBInstanceMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import StartDBInstanceResultTypeDef
+from mypy_boto3_rds.type_defs import StartDBInstanceMessageTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DBInstanceIdentifier`: `str`
+
+## StartDBInstanceResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import StartDBInstanceResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBInstance`: [DBInstanceTypeDef](./type_defs.md#dbinstancetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopActivityStreamResponseTypeDef
+## StartExportTaskMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import StopActivityStreamResponseTypeDef
+from mypy_boto3_rds.type_defs import StartExportTaskMessageTypeDef
 ```
 
+Required fields:
+
+- `ExportTaskIdentifier`: `str`
+- `SourceArn`: `str`
+- `S3BucketName`: `str`
+- `IamRoleArn`: `str`
+- `KmsKeyId`: `str`
+
 Optional fields:
+
+- `S3Prefix`: `str`
+- `ExportOnly`: `List`\[`str`\]
+
+## StopActivityStreamRequestTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import StopActivityStreamRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+
+Optional fields:
+
+- `ApplyImmediately`: `bool`
+
+## StopActivityStreamResponseResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import StopActivityStreamResponseResponseTypeDef
+```
+
+Required fields:
 
 - `KmsKeyId`: `str`
 - `KinesisStreamName`: `str`
 - `Status`: [ActivityStreamStatusType](./literals.md#activitystreamstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopDBClusterResultTypeDef
+## StopDBClusterMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import StopDBClusterResultTypeDef
+from mypy_boto3_rds.type_defs import StopDBClusterMessageTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DBClusterIdentifier`: `str`
+
+## StopDBClusterResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import StopDBClusterResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBCluster`: [DBClusterTypeDef](./type_defs.md#dbclustertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopDBInstanceAutomatedBackupsReplicationResultTypeDef
+## StopDBInstanceAutomatedBackupsReplicationMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import StopDBInstanceAutomatedBackupsReplicationResultTypeDef
+from mypy_boto3_rds.type_defs import StopDBInstanceAutomatedBackupsReplicationMessageTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `SourceDBInstanceArn`: `str`
+
+## StopDBInstanceAutomatedBackupsReplicationResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import StopDBInstanceAutomatedBackupsReplicationResultResponseTypeDef
+```
+
+Required fields:
 
 - `DBInstanceAutomatedBackup`:
   [DBInstanceAutomatedBackupTypeDef](./type_defs.md#dbinstanceautomatedbackuptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopDBInstanceResultTypeDef
+## StopDBInstanceMessageTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import StopDBInstanceResultTypeDef
+from mypy_boto3_rds.type_defs import StopDBInstanceMessageTypeDef
 ```
+
+Required fields:
+
+- `DBInstanceIdentifier`: `str`
 
 Optional fields:
 
+- `DBSnapshotIdentifier`: `str`
+
+## StopDBInstanceResultResponseTypeDef
+
+```python
+from mypy_boto3_rds.type_defs import StopDBInstanceResultResponseTypeDef
+```
+
+Required fields:
+
 - `DBInstance`: [DBInstanceTypeDef](./type_defs.md#dbinstancetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## SubnetTypeDef
 
@@ -2896,15 +5596,17 @@ Optional fields:
 - `SubnetOutpost`: [OutpostTypeDef](./type_defs.md#outposttypedef)
 - `SubnetStatus`: `str`
 
-## TagListMessageTypeDef
+## TagListMessageResponseTypeDef
 
 ```python
-from mypy_boto3_rds.type_defs import TagListMessageTypeDef
+from mypy_boto3_rds.type_defs import TagListMessageResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## TagTypeDef
 

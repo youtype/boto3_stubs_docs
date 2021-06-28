@@ -36,7 +36,7 @@ Arguments for `SearchDevicesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchDevicesPaginator.paginate` returns
-`Iterator`\[[SearchDevicesResponseTypeDef](./type_defs.md#searchdevicesresponsetypedef)\].
+`Iterator`\[[SearchDevicesResponseResponseTypeDef](./type_defs.md#searchdevicesresponseresponsetypedef)\].
 
 ## SearchQuantumTasksPaginator
 
@@ -64,4 +64,4 @@ Arguments for `SearchQuantumTasksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchQuantumTasksPaginator.paginate` returns
-`Iterator`\[[SearchQuantumTasksResponseTypeDef](./type_defs.md#searchquantumtasksresponsetypedef)\].
+`Iterator`\[[SearchQuantumTasksResponseResponseTypeDef](./type_defs.md#searchquantumtasksresponseresponsetypedef)\].

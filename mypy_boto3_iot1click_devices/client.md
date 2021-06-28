@@ -71,6 +71,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("iot1click-devices").can_paginate` method.
 
 Boto3 documentation:
@@ -84,20 +86,29 @@ Returns `bool`.
 
 ### claim_devices_by_claim_code
 
+Adds device(s) to your account (i.e., claim one or more devices) if and only if
+you received a claim code with the device(s).
+
 Type annotations for
 `boto3.client("iot1click-devices").claim_devices_by_claim_code` method.
 
 Boto3 documentation:
 [IoT1ClickDevicesService.Client.claim_devices_by_claim_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.claim_devices_by_claim_code)
 
+Arguments mapping described in
+[ClaimDevicesByClaimCodeRequestTypeDef](./type_defs.md#claimdevicesbyclaimcoderequesttypedef).
+
 Keyword-only arguments:
 
 - `ClaimCode`: `str` *(required)*
 
 Returns
-[ClaimDevicesByClaimCodeResponseTypeDef](./type_defs.md#claimdevicesbyclaimcoderesponsetypedef).
+[ClaimDevicesByClaimCodeResponseResponseTypeDef](./type_defs.md#claimdevicesbyclaimcoderesponseresponsetypedef).
 
 ### describe_device
+
+Given a device ID, returns a DescribeDeviceResponse object describing the
+details of the device.
 
 Type annotations for `boto3.client("iot1click-devices").describe_device`
 method.
@@ -105,14 +116,19 @@ method.
 Boto3 documentation:
 [IoT1ClickDevicesService.Client.describe_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.describe_device)
 
+Arguments mapping described in
+[DescribeDeviceRequestTypeDef](./type_defs.md#describedevicerequesttypedef).
+
 Keyword-only arguments:
 
 - `DeviceId`: `str` *(required)*
 
 Returns
-[DescribeDeviceResponseTypeDef](./type_defs.md#describedeviceresponsetypedef).
+[DescribeDeviceResponseResponseTypeDef](./type_defs.md#describedeviceresponseresponsetypedef).
 
 ### finalize_device_claim
+
+Given a device ID, finalizes the claim request for the associated device.
 
 Type annotations for `boto3.client("iot1click-devices").finalize_device_claim`
 method.
@@ -120,15 +136,20 @@ method.
 Boto3 documentation:
 [IoT1ClickDevicesService.Client.finalize_device_claim](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.finalize_device_claim)
 
+Arguments mapping described in
+[FinalizeDeviceClaimRequestTypeDef](./type_defs.md#finalizedeviceclaimrequesttypedef).
+
 Keyword-only arguments:
 
 - `DeviceId`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[FinalizeDeviceClaimResponseTypeDef](./type_defs.md#finalizedeviceclaimresponsetypedef).
+[FinalizeDeviceClaimResponseResponseTypeDef](./type_defs.md#finalizedeviceclaimresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("iot1click-devices").generate_presigned_url`
 method.
@@ -147,20 +168,27 @@ Returns `str`.
 
 ### get_device_methods
 
+Given a device ID, returns the invokable methods associated with the device.
+
 Type annotations for `boto3.client("iot1click-devices").get_device_methods`
 method.
 
 Boto3 documentation:
 [IoT1ClickDevicesService.Client.get_device_methods](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.get_device_methods)
 
+Arguments mapping described in
+[GetDeviceMethodsRequestTypeDef](./type_defs.md#getdevicemethodsrequesttypedef).
+
 Keyword-only arguments:
 
 - `DeviceId`: `str` *(required)*
 
 Returns
-[GetDeviceMethodsResponseTypeDef](./type_defs.md#getdevicemethodsresponsetypedef).
+[GetDeviceMethodsResponseResponseTypeDef](./type_defs.md#getdevicemethodsresponseresponsetypedef).
 
 ### initiate_device_claim
+
+Given a device ID, initiates a claim request for the associated device.
 
 Type annotations for `boto3.client("iot1click-devices").initiate_device_claim`
 method.
@@ -168,20 +196,29 @@ method.
 Boto3 documentation:
 [IoT1ClickDevicesService.Client.initiate_device_claim](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.initiate_device_claim)
 
+Arguments mapping described in
+[InitiateDeviceClaimRequestTypeDef](./type_defs.md#initiatedeviceclaimrequesttypedef).
+
 Keyword-only arguments:
 
 - `DeviceId`: `str` *(required)*
 
 Returns
-[InitiateDeviceClaimResponseTypeDef](./type_defs.md#initiatedeviceclaimresponsetypedef).
+[InitiateDeviceClaimResponseResponseTypeDef](./type_defs.md#initiatedeviceclaimresponseresponsetypedef).
 
 ### invoke_device_method
+
+Given a device ID, issues a request to invoke a named device method (with
+possible parameters).
 
 Type annotations for `boto3.client("iot1click-devices").invoke_device_method`
 method.
 
 Boto3 documentation:
 [IoT1ClickDevicesService.Client.invoke_device_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.invoke_device_method)
+
+Arguments mapping described in
+[InvokeDeviceMethodRequestTypeDef](./type_defs.md#invokedevicemethodrequesttypedef).
 
 Keyword-only arguments:
 
@@ -190,9 +227,12 @@ Keyword-only arguments:
 - `DeviceMethodParameters`: `str`
 
 Returns
-[InvokeDeviceMethodResponseTypeDef](./type_defs.md#invokedevicemethodresponsetypedef).
+[InvokeDeviceMethodResponseResponseTypeDef](./type_defs.md#invokedevicemethodresponseresponsetypedef).
 
 ### list_device_events
+
+Using a device ID, returns a DeviceEventsResponse object containing an array of
+events for the device.
 
 Type annotations for `boto3.client("iot1click-devices").list_device_events`
 method.
@@ -200,23 +240,31 @@ method.
 Boto3 documentation:
 [IoT1ClickDevicesService.Client.list_device_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_device_events)
 
+Arguments mapping described in
+[ListDeviceEventsRequestTypeDef](./type_defs.md#listdeviceeventsrequesttypedef).
+
 Keyword-only arguments:
 
 - `DeviceId`: `str` *(required)*
-- `FromTimeStamp`: `datetime` *(required)*
-- `ToTimeStamp`: `datetime` *(required)*
+- `FromTimeStamp`: `Union`\[`datetime`, `str`\] *(required)*
+- `ToTimeStamp`: `Union`\[`datetime`, `str`\] *(required)*
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListDeviceEventsResponseTypeDef](./type_defs.md#listdeviceeventsresponsetypedef).
+[ListDeviceEventsResponseResponseTypeDef](./type_defs.md#listdeviceeventsresponseresponsetypedef).
 
 ### list_devices
+
+Lists the 1-Click compatible devices associated with your AWS account.
 
 Type annotations for `boto3.client("iot1click-devices").list_devices` method.
 
 Boto3 documentation:
 [IoT1ClickDevicesService.Client.list_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_devices)
+
+Arguments mapping described in
+[ListDevicesRequestTypeDef](./type_defs.md#listdevicesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -225,9 +273,11 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef).
+[ListDevicesResponseResponseTypeDef](./type_defs.md#listdevicesresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Lists the tags associated with the specified resource ARN.
 
 Type annotations for `boto3.client("iot1click-devices").list_tags_for_resource`
 method.
@@ -235,19 +285,27 @@ method.
 Boto3 documentation:
 [IoT1ClickDevicesService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### tag_resource
+
+Adds or updates the tags associated with the resource ARN.
 
 Type annotations for `boto3.client("iot1click-devices").tag_resource` method.
 
 Boto3 documentation:
 [IoT1ClickDevicesService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -256,24 +314,35 @@ Keyword-only arguments:
 
 ### unclaim_device
 
+Disassociates a device from your AWS account using its device ID.
+
 Type annotations for `boto3.client("iot1click-devices").unclaim_device` method.
 
 Boto3 documentation:
 [IoT1ClickDevicesService.Client.unclaim_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.unclaim_device)
+
+Arguments mapping described in
+[UnclaimDeviceRequestTypeDef](./type_defs.md#unclaimdevicerequesttypedef).
 
 Keyword-only arguments:
 
 - `DeviceId`: `str` *(required)*
 
 Returns
-[UnclaimDeviceResponseTypeDef](./type_defs.md#unclaimdeviceresponsetypedef).
+[UnclaimDeviceResponseResponseTypeDef](./type_defs.md#unclaimdeviceresponseresponsetypedef).
 
 ### untag_resource
+
+Using tag keys, deletes the tags (key/value pairs) associated with the
+specified resource ARN.
 
 Type annotations for `boto3.client("iot1click-devices").untag_resource` method.
 
 Boto3 documentation:
 [IoT1ClickDevicesService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -282,11 +351,17 @@ Keyword-only arguments:
 
 ### update_device_state
 
+Using a Boolean value (true or false), this operation enables or disables the
+device given a device ID.
+
 Type annotations for `boto3.client("iot1click-devices").update_device_state`
 method.
 
 Boto3 documentation:
 [IoT1ClickDevicesService.Client.update_device_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.update_device_state)
+
+Arguments mapping described in
+[UpdateDeviceStateRequestTypeDef](./type_defs.md#updatedevicestaterequesttypedef).
 
 Keyword-only arguments:
 

@@ -67,10 +67,15 @@ Boto3 documentation:
 
 ### DynamoDBServiceResource.Table method
 
+Creates a Table resource.
+
 Type annotations for `boto3.resource("dynamodb").Table` method.
 
 Boto3 documentation:
 [DynamoDB.ServiceResource.Table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource.Table)
+
+Arguments mapping described in
+[ServiceResourceTableRequestTypeDef](./type_defs.md#serviceresourcetablerequesttypedef).
 
 Arguments:
 
@@ -80,10 +85,16 @@ Returns [Table](#table).
 
 ### DynamoDBServiceResource.batch_get_item method
 
+The `BatchGetItem` operation returns the attributes of one or more items from
+one or more tables.
+
 Type annotations for `boto3.resource("dynamodb").batch_get_item` method.
 
 Boto3 documentation:
 [DynamoDB.ServiceResource.batch_get_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource.batch_get_item)
+
+Arguments mapping described in
+[BatchGetItemInputServiceResourceTypeDef](./type_defs.md#batchgetiteminputserviceresourcetypedef).
 
 Keyword-only arguments:
 
@@ -93,14 +104,21 @@ Keyword-only arguments:
 - `ReturnConsumedCapacity`:
   [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 
-Returns [BatchGetItemOutputTypeDef](./type_defs.md#batchgetitemoutputtypedef).
+Returns
+[BatchGetItemOutputResponseTypeDef](./type_defs.md#batchgetitemoutputresponsetypedef).
 
 ### DynamoDBServiceResource.batch_write_item method
+
+The `BatchWriteItem` operation puts or deletes multiple items in one or more
+tables.
 
 Type annotations for `boto3.resource("dynamodb").batch_write_item` method.
 
 Boto3 documentation:
 [DynamoDB.ServiceResource.batch_write_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource.batch_write_item)
+
+Arguments mapping described in
+[BatchWriteItemInputServiceResourceTypeDef](./type_defs.md#batchwriteiteminputserviceresourcetypedef).
 
 Keyword-only arguments:
 
@@ -113,14 +131,19 @@ Keyword-only arguments:
   [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
 
 Returns
-[BatchWriteItemOutputTypeDef](./type_defs.md#batchwriteitemoutputtypedef).
+[BatchWriteItemOutputResponseTypeDef](./type_defs.md#batchwriteitemoutputresponsetypedef).
 
 ### DynamoDBServiceResource.create_table method
+
+The `CreateTable` operation adds a new table to your account.
 
 Type annotations for `boto3.resource("dynamodb").create_table` method.
 
 Boto3 documentation:
 [DynamoDB.ServiceResource.create_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource.create_table)
+
+Arguments mapping described in
+[CreateTableInputServiceResourceTypeDef](./type_defs.md#createtableinputserviceresourcetypedef).
 
 Keyword-only arguments:
 
@@ -147,6 +170,8 @@ Keyword-only arguments:
 Returns [Table](#table).
 
 ### DynamoDBServiceResource.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("dynamodb").get_available_subresources`
 method.
@@ -201,12 +226,17 @@ Boto3 documentation:
 
 #### Table.batch_writer method
 
+Create a batch writer object.
+
 Type annotations for `boto3.resource("dynamodb").batch_writer` method.
 
 Boto3 documentation:
 [DynamoDB.Table.batch_writer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.batch_writer)
 
-Arguments:
+Arguments mapping described in
+[TableBatchWriterRequestTypeDef](./type_defs.md#tablebatchwriterrequesttypedef).
+
+Keyword-only arguments:
 
 - `overwrite_by_pkeys`: `List`\[`str`\]
 
@@ -214,19 +244,27 @@ Returns `BatchWriter`.
 
 #### Table.delete method
 
+The `DeleteTable` operation deletes a table and all of its items.
+
 Type annotations for `boto3.resource("dynamodb").delete` method.
 
 Boto3 documentation:
 [DynamoDB.Table.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.delete)
 
-Returns [DeleteTableOutputTypeDef](./type_defs.md#deletetableoutputtypedef).
+Returns
+[DeleteTableOutputResponseTypeDef](./type_defs.md#deletetableoutputresponsetypedef).
 
 #### Table.delete_item method
+
+Deletes a single item in a table by primary key.
 
 Type annotations for `boto3.resource("dynamodb").delete_item` method.
 
 Boto3 documentation:
 [DynamoDB.Table.delete_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.delete_item)
+
+Arguments mapping described in
+[DeleteItemInputTableTypeDef](./type_defs.md#deleteiteminputtabletypedef).
 
 Keyword-only arguments:
 
@@ -250,9 +288,12 @@ Keyword-only arguments:
   `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
   `Dict`\[`str`, `Any`\], `None`\]\]
 
-Returns [DeleteItemOutputTypeDef](./type_defs.md#deleteitemoutputtypedef).
+Returns
+[DeleteItemOutputResponseTypeDef](./type_defs.md#deleteitemoutputresponsetypedef).
 
 #### Table.get_available_subresources method
+
+Returns a list of all the available sub-resources for this Resource.
 
 Type annotations for `boto3.resource("dynamodb").get_available_subresources`
 method.
@@ -264,10 +305,16 @@ Returns `List`\[`str`\].
 
 #### Table.get_item method
 
+The `GetItem` operation returns a set of attributes for the item with the given
+primary key.
+
 Type annotations for `boto3.resource("dynamodb").get_item` method.
 
 Boto3 documentation:
 [DynamoDB.Table.get_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.get_item)
+
+Arguments mapping described in
+[GetItemInputTableTypeDef](./type_defs.md#getiteminputtabletypedef).
 
 Keyword-only arguments:
 
@@ -282,9 +329,13 @@ Keyword-only arguments:
 - `ProjectionExpression`: `str`
 - `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
 
-Returns [GetItemOutputTypeDef](./type_defs.md#getitemoutputtypedef).
+Returns
+[GetItemOutputResponseTypeDef](./type_defs.md#getitemoutputresponsetypedef).
 
 #### Table.load method
+
+Calls :py:meth:`DynamoDB.Client.describe_table` to update the attributes of the
+Table resource.
 
 Type annotations for `boto3.resource("dynamodb").load` method.
 
@@ -293,10 +344,15 @@ Boto3 documentation:
 
 #### Table.put_item method
 
+Creates a new item, or replaces an old item with a new item.
+
 Type annotations for `boto3.resource("dynamodb").put_item` method.
 
 Boto3 documentation:
 [DynamoDB.Table.put_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.put_item)
+
+Arguments mapping described in
+[PutItemInputTableTypeDef](./type_defs.md#putiteminputtabletypedef).
 
 Keyword-only arguments:
 
@@ -320,14 +376,20 @@ Keyword-only arguments:
   `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
   `Dict`\[`str`, `Any`\], `None`\]\]
 
-Returns [PutItemOutputTypeDef](./type_defs.md#putitemoutputtypedef).
+Returns
+[PutItemOutputResponseTypeDef](./type_defs.md#putitemoutputresponsetypedef).
 
 #### Table.query method
+
+The `Query` operation finds items based on primary key values.
 
 Type annotations for `boto3.resource("dynamodb").query` method.
 
 Boto3 documentation:
 [DynamoDB.Table.query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.query)
+
+Arguments mapping described in
+[QueryInputTableTypeDef](./type_defs.md#queryinputtabletypedef).
 
 Keyword-only arguments:
 
@@ -358,9 +420,13 @@ Keyword-only arguments:
   `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
   `Dict`\[`str`, `Any`\], `None`\]\]
 
-Returns [QueryOutputTypeDef](./type_defs.md#queryoutputtypedef).
+Returns
+[QueryOutputResponseTypeDef](./type_defs.md#queryoutputresponsetypedef).
 
 #### Table.reload method
+
+Calls :py:meth:`DynamoDB.Client.describe_table` to update the attributes of the
+Table resource.
 
 Type annotations for `boto3.resource("dynamodb").reload` method.
 
@@ -369,10 +435,16 @@ Boto3 documentation:
 
 #### Table.scan method
 
+The `Scan` operation returns one or more items and item attributes by accessing
+every item in a table or a secondary index.
+
 Type annotations for `boto3.resource("dynamodb").scan` method.
 
 Boto3 documentation:
 [DynamoDB.Table.scan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.scan)
+
+Arguments mapping described in
+[ScanInputTableTypeDef](./type_defs.md#scaninputtabletypedef).
 
 Keyword-only arguments:
 
@@ -401,14 +473,20 @@ Keyword-only arguments:
   `Dict`\[`str`, `Any`\], `None`\]\]
 - `ConsistentRead`: `bool`
 
-Returns [ScanOutputTypeDef](./type_defs.md#scanoutputtypedef).
+Returns [ScanOutputResponseTypeDef](./type_defs.md#scanoutputresponsetypedef).
 
 #### Table.update method
+
+Modifies the provisioned throughput settings, global secondary indexes, or
+DynamoDB Streams settings for a given table.
 
 Type annotations for `boto3.resource("dynamodb").update` method.
 
 Boto3 documentation:
 [DynamoDB.Table.update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.update)
+
+Arguments mapping described in
+[UpdateTableInputTableTypeDef](./type_defs.md#updatetableinputtabletypedef).
 
 Keyword-only arguments:
 
@@ -430,10 +508,16 @@ Returns [Table](#table).
 
 #### Table.update_item method
 
+Edits an existing item's attributes, or adds a new item to the table if it does
+not already exist.
+
 Type annotations for `boto3.resource("dynamodb").update_item` method.
 
 Boto3 documentation:
 [DynamoDB.Table.update_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.update_item)
+
+Arguments mapping described in
+[UpdateItemInputTableTypeDef](./type_defs.md#updateiteminputtabletypedef).
 
 Keyword-only arguments:
 
@@ -460,9 +544,12 @@ Keyword-only arguments:
   `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
   `Dict`\[`str`, `Any`\], `None`\]\]
 
-Returns [UpdateItemOutputTypeDef](./type_defs.md#updateitemoutputtypedef).
+Returns
+[UpdateItemOutputResponseTypeDef](./type_defs.md#updateitemoutputresponsetypedef).
 
 #### Table.wait_until_exists method
+
+Waits until this Table is exists.
 
 Type annotations for `boto3.resource("dynamodb").wait_until_exists` method.
 
@@ -470,6 +557,8 @@ Boto3 documentation:
 [DynamoDB.Table.wait_until_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.wait_until_exists)
 
 #### Table.wait_until_not_exists method
+
+Waits until this Table is not exists.
 
 Type annotations for `boto3.resource("dynamodb").wait_until_not_exists` method.
 

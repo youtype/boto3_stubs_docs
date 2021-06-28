@@ -8,36 +8,60 @@ type annotations stubs module
 [mypy_boto3_sagemaker_a2i_runtime](https://pypi.org/project/mypy-boto3-sagemaker-a2i-runtime/).
 
 - [Typed dictionaries for boto3 AugmentedAIRuntime module](#typed-dictionaries-for-boto3-augmentedairuntime-module)
-  - [DescribeHumanLoopResponseTypeDef](#describehumanloopresponsetypedef)
+  - [DeleteHumanLoopRequestTypeDef](#deletehumanlooprequesttypedef)
+  - [DescribeHumanLoopRequestTypeDef](#describehumanlooprequesttypedef)
+  - [DescribeHumanLoopResponseResponseTypeDef](#describehumanloopresponseresponsetypedef)
   - [HumanLoopDataAttributesTypeDef](#humanloopdataattributestypedef)
   - [HumanLoopInputTypeDef](#humanloopinputtypedef)
   - [HumanLoopOutputTypeDef](#humanloopoutputtypedef)
   - [HumanLoopSummaryTypeDef](#humanloopsummarytypedef)
-  - [ListHumanLoopsResponseTypeDef](#listhumanloopsresponsetypedef)
+  - [ListHumanLoopsRequestTypeDef](#listhumanloopsrequesttypedef)
+  - [ListHumanLoopsResponseResponseTypeDef](#listhumanloopsresponseresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [StartHumanLoopResponseTypeDef](#starthumanloopresponsetypedef)
+  - [StartHumanLoopRequestTypeDef](#starthumanlooprequesttypedef)
+  - [StartHumanLoopResponseResponseTypeDef](#starthumanloopresponseresponsetypedef)
+  - [StopHumanLoopRequestTypeDef](#stophumanlooprequesttypedef)
 
-## DescribeHumanLoopResponseTypeDef
+## DeleteHumanLoopRequestTypeDef
 
 ```python
-from mypy_boto3_sagemaker_a2i_runtime.type_defs import DescribeHumanLoopResponseTypeDef
+from mypy_boto3_sagemaker_a2i_runtime.type_defs import DeleteHumanLoopRequestTypeDef
+```
+
+Required fields:
+
+- `HumanLoopName`: `str`
+
+## DescribeHumanLoopRequestTypeDef
+
+```python
+from mypy_boto3_sagemaker_a2i_runtime.type_defs import DescribeHumanLoopRequestTypeDef
+```
+
+Required fields:
+
+- `HumanLoopName`: `str`
+
+## DescribeHumanLoopResponseResponseTypeDef
+
+```python
+from mypy_boto3_sagemaker_a2i_runtime.type_defs import DescribeHumanLoopResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `CreationTime`: `datetime`
+- `FailureReason`: `str`
+- `FailureCode`: `str`
 - `HumanLoopStatus`: [HumanLoopStatusType](./literals.md#humanloopstatustype)
 - `HumanLoopName`: `str`
 - `HumanLoopArn`: `str`
 - `FlowDefinitionArn`: `str`
-
-Optional fields:
-
-- `FailureReason`: `str`
-- `FailureCode`: `str`
 - `HumanLoopOutput`:
   [HumanLoopOutputTypeDef](./type_defs.md#humanloopoutputtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## HumanLoopDataAttributesTypeDef
 
@@ -69,8 +93,6 @@ from mypy_boto3_sagemaker_a2i_runtime.type_defs import HumanLoopOutputTypeDef
 Required fields:
 
 - `OutputS3Uri`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## HumanLoopSummaryTypeDef
 
@@ -86,20 +108,37 @@ Optional fields:
 - `FailureReason`: `str`
 - `FlowDefinitionArn`: `str`
 
-## ListHumanLoopsResponseTypeDef
+## ListHumanLoopsRequestTypeDef
 
 ```python
-from mypy_boto3_sagemaker_a2i_runtime.type_defs import ListHumanLoopsResponseTypeDef
+from mypy_boto3_sagemaker_a2i_runtime.type_defs import ListHumanLoopsRequestTypeDef
+```
+
+Required fields:
+
+- `FlowDefinitionArn`: `str`
+
+Optional fields:
+
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListHumanLoopsResponseResponseTypeDef
+
+```python
+from mypy_boto3_sagemaker_a2i_runtime.type_defs import ListHumanLoopsResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `HumanLoopSummaries`:
   `List`\[[HumanLoopSummaryTypeDef](./type_defs.md#humanloopsummarytypedef)\]
-
-Optional fields:
-
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -127,12 +166,42 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## StartHumanLoopResponseTypeDef
+## StartHumanLoopRequestTypeDef
 
 ```python
-from mypy_boto3_sagemaker_a2i_runtime.type_defs import StartHumanLoopResponseTypeDef
+from mypy_boto3_sagemaker_a2i_runtime.type_defs import StartHumanLoopRequestTypeDef
 ```
+
+Required fields:
+
+- `HumanLoopName`: `str`
+- `FlowDefinitionArn`: `str`
+- `HumanLoopInput`:
+  [HumanLoopInputTypeDef](./type_defs.md#humanloopinputtypedef)
 
 Optional fields:
 
+- `DataAttributes`:
+  [HumanLoopDataAttributesTypeDef](./type_defs.md#humanloopdataattributestypedef)
+
+## StartHumanLoopResponseResponseTypeDef
+
+```python
+from mypy_boto3_sagemaker_a2i_runtime.type_defs import StartHumanLoopResponseResponseTypeDef
+```
+
+Required fields:
+
 - `HumanLoopArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StopHumanLoopRequestTypeDef
+
+```python
+from mypy_boto3_sagemaker_a2i_runtime.type_defs import StopHumanLoopRequestTypeDef
+```
+
+Required fields:
+
+- `HumanLoopName`: `str`

@@ -82,6 +82,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("budgets").can_paginate` method.
 
 Boto3 documentation:
@@ -95,10 +97,15 @@ Returns `bool`.
 
 ### create_budget
 
+Creates a budget and, if included, notifications and subscribers.
+
 Type annotations for `boto3.client("budgets").create_budget` method.
 
 Boto3 documentation:
 [Budgets.Client.create_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_budget)
+
+Arguments mapping described in
+[CreateBudgetRequestTypeDef](./type_defs.md#createbudgetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -111,10 +118,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### create_budget_action
 
+Creates a budget action.
+
 Type annotations for `boto3.client("budgets").create_budget_action` method.
 
 Boto3 documentation:
 [Budgets.Client.create_budget_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_budget_action)
+
+Arguments mapping described in
+[CreateBudgetActionRequestTypeDef](./type_defs.md#createbudgetactionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -134,14 +146,19 @@ Keyword-only arguments:
   `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\] *(required)*
 
 Returns
-[CreateBudgetActionResponseTypeDef](./type_defs.md#createbudgetactionresponsetypedef).
+[CreateBudgetActionResponseResponseTypeDef](./type_defs.md#createbudgetactionresponseresponsetypedef).
 
 ### create_notification
+
+Creates a notification.
 
 Type annotations for `boto3.client("budgets").create_notification` method.
 
 Boto3 documentation:
 [Budgets.Client.create_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_notification)
+
+Arguments mapping described in
+[CreateNotificationRequestTypeDef](./type_defs.md#createnotificationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -156,10 +173,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### create_subscriber
 
+Creates a subscriber.
+
 Type annotations for `boto3.client("budgets").create_subscriber` method.
 
 Boto3 documentation:
 [Budgets.Client.create_subscriber](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_subscriber)
+
+Arguments mapping described in
+[CreateSubscriberRequestTypeDef](./type_defs.md#createsubscriberrequesttypedef).
 
 Keyword-only arguments:
 
@@ -174,10 +196,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_budget
 
+Deletes a budget.
+
 Type annotations for `boto3.client("budgets").delete_budget` method.
 
 Boto3 documentation:
 [Budgets.Client.delete_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_budget)
+
+Arguments mapping described in
+[DeleteBudgetRequestTypeDef](./type_defs.md#deletebudgetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -188,10 +215,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_budget_action
 
+Deletes a budget action.
+
 Type annotations for `boto3.client("budgets").delete_budget_action` method.
 
 Boto3 documentation:
 [Budgets.Client.delete_budget_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_budget_action)
+
+Arguments mapping described in
+[DeleteBudgetActionRequestTypeDef](./type_defs.md#deletebudgetactionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -200,14 +232,19 @@ Keyword-only arguments:
 - `ActionId`: `str` *(required)*
 
 Returns
-[DeleteBudgetActionResponseTypeDef](./type_defs.md#deletebudgetactionresponsetypedef).
+[DeleteBudgetActionResponseResponseTypeDef](./type_defs.md#deletebudgetactionresponseresponsetypedef).
 
 ### delete_notification
+
+Deletes a notification.
 
 Type annotations for `boto3.client("budgets").delete_notification` method.
 
 Boto3 documentation:
 [Budgets.Client.delete_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_notification)
+
+Arguments mapping described in
+[DeleteNotificationRequestTypeDef](./type_defs.md#deletenotificationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -220,10 +257,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_subscriber
 
+Deletes a subscriber.
+
 Type annotations for `boto3.client("budgets").delete_subscriber` method.
 
 Boto3 documentation:
 [Budgets.Client.delete_subscriber](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_subscriber)
+
+Arguments mapping described in
+[DeleteSubscriberRequestTypeDef](./type_defs.md#deletesubscriberrequesttypedef).
 
 Keyword-only arguments:
 
@@ -238,10 +280,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_budget
 
+Describes a budget.
+
 Type annotations for `boto3.client("budgets").describe_budget` method.
 
 Boto3 documentation:
 [Budgets.Client.describe_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget)
+
+Arguments mapping described in
+[DescribeBudgetRequestTypeDef](./type_defs.md#describebudgetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -249,14 +296,19 @@ Keyword-only arguments:
 - `BudgetName`: `str` *(required)*
 
 Returns
-[DescribeBudgetResponseTypeDef](./type_defs.md#describebudgetresponsetypedef).
+[DescribeBudgetResponseResponseTypeDef](./type_defs.md#describebudgetresponseresponsetypedef).
 
 ### describe_budget_action
+
+Describes a budget action detail.
 
 Type annotations for `boto3.client("budgets").describe_budget_action` method.
 
 Boto3 documentation:
 [Budgets.Client.describe_budget_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_action)
+
+Arguments mapping described in
+[DescribeBudgetActionRequestTypeDef](./type_defs.md#describebudgetactionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -265,9 +317,11 @@ Keyword-only arguments:
 - `ActionId`: `str` *(required)*
 
 Returns
-[DescribeBudgetActionResponseTypeDef](./type_defs.md#describebudgetactionresponsetypedef).
+[DescribeBudgetActionResponseResponseTypeDef](./type_defs.md#describebudgetactionresponseresponsetypedef).
 
 ### describe_budget_action_histories
+
+Describes a budget action history detail.
 
 Type annotations for `boto3.client("budgets").describe_budget_action_histories`
 method.
@@ -275,6 +329,9 @@ method.
 Boto3 documentation:
 [Budgets.Client.describe_budget_action_histories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_action_histories)
 
+Arguments mapping described in
+[DescribeBudgetActionHistoriesRequestTypeDef](./type_defs.md#describebudgetactionhistoriesrequesttypedef).
+
 Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
@@ -285,15 +342,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeBudgetActionHistoriesResponseTypeDef](./type_defs.md#describebudgetactionhistoriesresponsetypedef).
+[DescribeBudgetActionHistoriesResponseResponseTypeDef](./type_defs.md#describebudgetactionhistoriesresponseresponsetypedef).
 
 ### describe_budget_actions_for_account
+
+Describes all of the budget actions for an account.
 
 Type annotations for
 `boto3.client("budgets").describe_budget_actions_for_account` method.
 
 Boto3 documentation:
 [Budgets.Client.describe_budget_actions_for_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_actions_for_account)
+
+Arguments mapping described in
+[DescribeBudgetActionsForAccountRequestTypeDef](./type_defs.md#describebudgetactionsforaccountrequesttypedef).
 
 Keyword-only arguments:
 
@@ -302,15 +364,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeBudgetActionsForAccountResponseTypeDef](./type_defs.md#describebudgetactionsforaccountresponsetypedef).
+[DescribeBudgetActionsForAccountResponseResponseTypeDef](./type_defs.md#describebudgetactionsforaccountresponseresponsetypedef).
 
 ### describe_budget_actions_for_budget
+
+Describes all of the budget actions for a budget.
 
 Type annotations for
 `boto3.client("budgets").describe_budget_actions_for_budget` method.
 
 Boto3 documentation:
 [Budgets.Client.describe_budget_actions_for_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_actions_for_budget)
+
+Arguments mapping described in
+[DescribeBudgetActionsForBudgetRequestTypeDef](./type_defs.md#describebudgetactionsforbudgetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -320,15 +387,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeBudgetActionsForBudgetResponseTypeDef](./type_defs.md#describebudgetactionsforbudgetresponsetypedef).
+[DescribeBudgetActionsForBudgetResponseResponseTypeDef](./type_defs.md#describebudgetactionsforbudgetresponseresponsetypedef).
 
 ### describe_budget_performance_history
+
+Describes the history for `DAILY` , `MONTHLY` , and `QUARTERLY` budgets.
 
 Type annotations for
 `boto3.client("budgets").describe_budget_performance_history` method.
 
 Boto3 documentation:
 [Budgets.Client.describe_budget_performance_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_performance_history)
+
+Arguments mapping described in
+[DescribeBudgetPerformanceHistoryRequestTypeDef](./type_defs.md#describebudgetperformancehistoryrequesttypedef).
 
 Keyword-only arguments:
 
@@ -339,14 +411,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeBudgetPerformanceHistoryResponseTypeDef](./type_defs.md#describebudgetperformancehistoryresponsetypedef).
+[DescribeBudgetPerformanceHistoryResponseResponseTypeDef](./type_defs.md#describebudgetperformancehistoryresponseresponsetypedef).
 
 ### describe_budgets
+
+Lists the budgets that are associated with an account.
 
 Type annotations for `boto3.client("budgets").describe_budgets` method.
 
 Boto3 documentation:
 [Budgets.Client.describe_budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budgets)
+
+Arguments mapping described in
+[DescribeBudgetsRequestTypeDef](./type_defs.md#describebudgetsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -355,15 +432,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeBudgetsResponseTypeDef](./type_defs.md#describebudgetsresponsetypedef).
+[DescribeBudgetsResponseResponseTypeDef](./type_defs.md#describebudgetsresponseresponsetypedef).
 
 ### describe_notifications_for_budget
+
+Lists the notifications that are associated with a budget.
 
 Type annotations for
 `boto3.client("budgets").describe_notifications_for_budget` method.
 
 Boto3 documentation:
 [Budgets.Client.describe_notifications_for_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_notifications_for_budget)
+
+Arguments mapping described in
+[DescribeNotificationsForBudgetRequestTypeDef](./type_defs.md#describenotificationsforbudgetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -373,15 +455,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeNotificationsForBudgetResponseTypeDef](./type_defs.md#describenotificationsforbudgetresponsetypedef).
+[DescribeNotificationsForBudgetResponseResponseTypeDef](./type_defs.md#describenotificationsforbudgetresponseresponsetypedef).
 
 ### describe_subscribers_for_notification
+
+Lists the subscribers that are associated with a notification.
 
 Type annotations for
 `boto3.client("budgets").describe_subscribers_for_notification` method.
 
 Boto3 documentation:
 [Budgets.Client.describe_subscribers_for_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_subscribers_for_notification)
+
+Arguments mapping described in
+[DescribeSubscribersForNotificationRequestTypeDef](./type_defs.md#describesubscribersfornotificationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -393,14 +480,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeSubscribersForNotificationResponseTypeDef](./type_defs.md#describesubscribersfornotificationresponsetypedef).
+[DescribeSubscribersForNotificationResponseResponseTypeDef](./type_defs.md#describesubscribersfornotificationresponseresponsetypedef).
 
 ### execute_budget_action
+
+Executes a budget action.
 
 Type annotations for `boto3.client("budgets").execute_budget_action` method.
 
 Boto3 documentation:
 [Budgets.Client.execute_budget_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.execute_budget_action)
+
+Arguments mapping described in
+[ExecuteBudgetActionRequestTypeDef](./type_defs.md#executebudgetactionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -411,9 +503,11 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[ExecuteBudgetActionResponseTypeDef](./type_defs.md#executebudgetactionresponsetypedef).
+[ExecuteBudgetActionResponseResponseTypeDef](./type_defs.md#executebudgetactionresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("budgets").generate_presigned_url` method.
 
@@ -431,10 +525,15 @@ Returns `str`.
 
 ### update_budget
 
+Updates a budget.
+
 Type annotations for `boto3.client("budgets").update_budget` method.
 
 Boto3 documentation:
 [Budgets.Client.update_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_budget)
+
+Arguments mapping described in
+[UpdateBudgetRequestTypeDef](./type_defs.md#updatebudgetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -445,10 +544,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_budget_action
 
+Updates a budget action.
+
 Type annotations for `boto3.client("budgets").update_budget_action` method.
 
 Boto3 documentation:
 [Budgets.Client.update_budget_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_budget_action)
+
+Arguments mapping described in
+[UpdateBudgetActionRequestTypeDef](./type_defs.md#updatebudgetactionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -466,14 +570,19 @@ Keyword-only arguments:
   `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
 
 Returns
-[UpdateBudgetActionResponseTypeDef](./type_defs.md#updatebudgetactionresponsetypedef).
+[UpdateBudgetActionResponseResponseTypeDef](./type_defs.md#updatebudgetactionresponseresponsetypedef).
 
 ### update_notification
+
+Updates a notification.
 
 Type annotations for `boto3.client("budgets").update_notification` method.
 
 Boto3 documentation:
 [Budgets.Client.update_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_notification)
+
+Arguments mapping described in
+[UpdateNotificationRequestTypeDef](./type_defs.md#updatenotificationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -488,10 +597,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_subscriber
 
+Updates a subscriber.
+
 Type annotations for `boto3.client("budgets").update_subscriber` method.
 
 Boto3 documentation:
 [Budgets.Client.update_subscriber](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_subscriber)
+
+Arguments mapping described in
+[UpdateSubscriberRequestTypeDef](./type_defs.md#updatesubscriberrequesttypedef).
 
 Keyword-only arguments:
 

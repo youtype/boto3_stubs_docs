@@ -28,7 +28,7 @@ def get_batch_prediction_available_waiter() -> BatchPredictionAvailableWaiter:
 ```
 
 Boto3 documentation:
-[MachineLearning.Waiter.batch_prediction_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Waiter.batch_prediction_available)
+[MachineLearning.Waiter.batch_prediction_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Waiter.BatchPredictionAvailable)
 
 Arguments for `BatchPredictionAvailableWaiter.wait` method:
 
@@ -61,7 +61,7 @@ def get_data_source_available_waiter() -> DataSourceAvailableWaiter:
 ```
 
 Boto3 documentation:
-[MachineLearning.Waiter.data_source_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Waiter.data_source_available)
+[MachineLearning.Waiter.data_source_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Waiter.DataSourceAvailable)
 
 Arguments for `DataSourceAvailableWaiter.wait` method:
 
@@ -94,7 +94,7 @@ def get_evaluation_available_waiter() -> EvaluationAvailableWaiter:
 ```
 
 Boto3 documentation:
-[MachineLearning.Waiter.evaluation_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Waiter.evaluation_available)
+[MachineLearning.Waiter.evaluation_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Waiter.EvaluationAvailable)
 
 Arguments for `EvaluationAvailableWaiter.wait` method:
 
@@ -127,7 +127,7 @@ def get_ml_model_available_waiter() -> MLModelAvailableWaiter:
 ```
 
 Boto3 documentation:
-[MachineLearning.Waiter.ml_model_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Waiter.ml_model_available)
+[MachineLearning.Waiter.ml_model_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Waiter.MLModelAvailable)
 
 Arguments for `MLModelAvailableWaiter.wait` method:
 

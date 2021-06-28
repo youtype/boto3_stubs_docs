@@ -11,28 +11,44 @@ type annotations stubs module
   - [AppTypeDef](#apptypedef)
   - [AppsListDataSummaryTypeDef](#appslistdatasummarytypedef)
   - [AppsListDataTypeDef](#appslistdatatypedef)
+  - [AssociateAdminAccountRequestTypeDef](#associateadminaccountrequesttypedef)
   - [AwsEc2InstanceViolationTypeDef](#awsec2instanceviolationtypedef)
   - [AwsEc2NetworkInterfaceViolationTypeDef](#awsec2networkinterfaceviolationtypedef)
   - [AwsVPCSecurityGroupViolationTypeDef](#awsvpcsecuritygroupviolationtypedef)
   - [ComplianceViolatorTypeDef](#complianceviolatortypedef)
+  - [DeleteAppsListRequestTypeDef](#deleteappslistrequesttypedef)
+  - [DeletePolicyRequestTypeDef](#deletepolicyrequesttypedef)
+  - [DeleteProtocolsListRequestTypeDef](#deleteprotocolslistrequesttypedef)
   - [DnsDuplicateRuleGroupViolationTypeDef](#dnsduplicaterulegroupviolationtypedef)
   - [DnsRuleGroupLimitExceededViolationTypeDef](#dnsrulegrouplimitexceededviolationtypedef)
   - [DnsRuleGroupPriorityConflictViolationTypeDef](#dnsrulegrouppriorityconflictviolationtypedef)
   - [EvaluationResultTypeDef](#evaluationresulttypedef)
-  - [GetAdminAccountResponseTypeDef](#getadminaccountresponsetypedef)
-  - [GetAppsListResponseTypeDef](#getappslistresponsetypedef)
-  - [GetComplianceDetailResponseTypeDef](#getcompliancedetailresponsetypedef)
-  - [GetNotificationChannelResponseTypeDef](#getnotificationchannelresponsetypedef)
-  - [GetPolicyResponseTypeDef](#getpolicyresponsetypedef)
-  - [GetProtectionStatusResponseTypeDef](#getprotectionstatusresponsetypedef)
-  - [GetProtocolsListResponseTypeDef](#getprotocolslistresponsetypedef)
-  - [GetViolationDetailsResponseTypeDef](#getviolationdetailsresponsetypedef)
-  - [ListAppsListsResponseTypeDef](#listappslistsresponsetypedef)
-  - [ListComplianceStatusResponseTypeDef](#listcompliancestatusresponsetypedef)
-  - [ListMemberAccountsResponseTypeDef](#listmemberaccountsresponsetypedef)
-  - [ListPoliciesResponseTypeDef](#listpoliciesresponsetypedef)
-  - [ListProtocolsListsResponseTypeDef](#listprotocolslistsresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [GetAdminAccountResponseResponseTypeDef](#getadminaccountresponseresponsetypedef)
+  - [GetAppsListRequestTypeDef](#getappslistrequesttypedef)
+  - [GetAppsListResponseResponseTypeDef](#getappslistresponseresponsetypedef)
+  - [GetComplianceDetailRequestTypeDef](#getcompliancedetailrequesttypedef)
+  - [GetComplianceDetailResponseResponseTypeDef](#getcompliancedetailresponseresponsetypedef)
+  - [GetNotificationChannelResponseResponseTypeDef](#getnotificationchannelresponseresponsetypedef)
+  - [GetPolicyRequestTypeDef](#getpolicyrequesttypedef)
+  - [GetPolicyResponseResponseTypeDef](#getpolicyresponseresponsetypedef)
+  - [GetProtectionStatusRequestTypeDef](#getprotectionstatusrequesttypedef)
+  - [GetProtectionStatusResponseResponseTypeDef](#getprotectionstatusresponseresponsetypedef)
+  - [GetProtocolsListRequestTypeDef](#getprotocolslistrequesttypedef)
+  - [GetProtocolsListResponseResponseTypeDef](#getprotocolslistresponseresponsetypedef)
+  - [GetViolationDetailsRequestTypeDef](#getviolationdetailsrequesttypedef)
+  - [GetViolationDetailsResponseResponseTypeDef](#getviolationdetailsresponseresponsetypedef)
+  - [ListAppsListsRequestTypeDef](#listappslistsrequesttypedef)
+  - [ListAppsListsResponseResponseTypeDef](#listappslistsresponseresponsetypedef)
+  - [ListComplianceStatusRequestTypeDef](#listcompliancestatusrequesttypedef)
+  - [ListComplianceStatusResponseResponseTypeDef](#listcompliancestatusresponseresponsetypedef)
+  - [ListMemberAccountsRequestTypeDef](#listmemberaccountsrequesttypedef)
+  - [ListMemberAccountsResponseResponseTypeDef](#listmemberaccountsresponseresponsetypedef)
+  - [ListPoliciesRequestTypeDef](#listpoliciesrequesttypedef)
+  - [ListPoliciesResponseResponseTypeDef](#listpoliciesresponseresponsetypedef)
+  - [ListProtocolsListsRequestTypeDef](#listprotocolslistsrequesttypedef)
+  - [ListProtocolsListsResponseResponseTypeDef](#listprotocolslistsresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [NetworkFirewallMissingExpectedRTViolationTypeDef](#networkfirewallmissingexpectedrtviolationtypedef)
   - [NetworkFirewallMissingFirewallViolationTypeDef](#networkfirewallmissingfirewallviolationtypedef)
   - [NetworkFirewallMissingSubnetViolationTypeDef](#networkfirewallmissingsubnetviolationtypedef)
@@ -46,17 +62,24 @@ type annotations stubs module
   - [PolicyTypeDef](#policytypedef)
   - [ProtocolsListDataSummaryTypeDef](#protocolslistdatasummarytypedef)
   - [ProtocolsListDataTypeDef](#protocolslistdatatypedef)
-  - [PutAppsListResponseTypeDef](#putappslistresponsetypedef)
-  - [PutPolicyResponseTypeDef](#putpolicyresponsetypedef)
-  - [PutProtocolsListResponseTypeDef](#putprotocolslistresponsetypedef)
+  - [PutAppsListRequestTypeDef](#putappslistrequesttypedef)
+  - [PutAppsListResponseResponseTypeDef](#putappslistresponseresponsetypedef)
+  - [PutNotificationChannelRequestTypeDef](#putnotificationchannelrequesttypedef)
+  - [PutPolicyRequestTypeDef](#putpolicyrequesttypedef)
+  - [PutPolicyResponseResponseTypeDef](#putpolicyresponseresponsetypedef)
+  - [PutProtocolsListRequestTypeDef](#putprotocolslistrequesttypedef)
+  - [PutProtocolsListResponseResponseTypeDef](#putprotocolslistresponseresponsetypedef)
   - [ResourceTagTypeDef](#resourcetagtypedef)
   - [ResourceViolationTypeDef](#resourceviolationtypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SecurityGroupRemediationActionTypeDef](#securitygroupremediationactiontypedef)
   - [SecurityGroupRuleDescriptionTypeDef](#securitygroupruledescriptiontypedef)
   - [SecurityServicePolicyDataTypeDef](#securityservicepolicydatatypedef)
   - [StatefulRuleGroupTypeDef](#statefulrulegrouptypedef)
   - [StatelessRuleGroupTypeDef](#statelessrulegrouptypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TagTypeDef](#tagtypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
   - [ViolationDetailTypeDef](#violationdetailtypedef)
 
 ## AppTypeDef
@@ -103,6 +126,16 @@ Optional fields:
 - `LastUpdateTime`: `datetime`
 - `PreviousAppsList`: `Dict`\[`str`,
   `List`\[[AppTypeDef](./type_defs.md#apptypedef)\]\]
+
+## AssociateAdminAccountRequestTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import AssociateAdminAccountRequestTypeDef
+```
+
+Required fields:
+
+- `AdminAccount`: `str`
 
 ## AwsEc2InstanceViolationTypeDef
 
@@ -154,6 +187,40 @@ Optional fields:
 - `ViolationReason`: [ViolationReasonType](./literals.md#violationreasontype)
 - `ResourceType`: `str`
 
+## DeleteAppsListRequestTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import DeleteAppsListRequestTypeDef
+```
+
+Required fields:
+
+- `ListId`: `str`
+
+## DeletePolicyRequestTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import DeletePolicyRequestTypeDef
+```
+
+Required fields:
+
+- `PolicyId`: `str`
+
+Optional fields:
+
+- `DeleteAllPolicyResources`: `bool`
+
+## DeleteProtocolsListRequestTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import DeleteProtocolsListRequestTypeDef
+```
+
+Required fields:
+
+- `ListId`: `str`
+
 ## DnsDuplicateRuleGroupViolationTypeDef
 
 ```python
@@ -204,166 +271,351 @@ Optional fields:
 - `ViolatorCount`: `int`
 - `EvaluationLimitExceeded`: `bool`
 
-## GetAdminAccountResponseTypeDef
+## GetAdminAccountResponseResponseTypeDef
 
 ```python
-from mypy_boto3_fms.type_defs import GetAdminAccountResponseTypeDef
+from mypy_boto3_fms.type_defs import GetAdminAccountResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `AdminAccount`: `str`
 - `RoleStatus`: [AccountRoleStatusType](./literals.md#accountrolestatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAppsListResponseTypeDef
+## GetAppsListRequestTypeDef
 
 ```python
-from mypy_boto3_fms.type_defs import GetAppsListResponseTypeDef
+from mypy_boto3_fms.type_defs import GetAppsListRequestTypeDef
 ```
 
+Required fields:
+
+- `ListId`: `str`
+
 Optional fields:
+
+- `DefaultList`: `bool`
+
+## GetAppsListResponseResponseTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import GetAppsListResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AppsList`: [AppsListDataTypeDef](./type_defs.md#appslistdatatypedef)
 - `AppsListArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetComplianceDetailResponseTypeDef
+## GetComplianceDetailRequestTypeDef
 
 ```python
-from mypy_boto3_fms.type_defs import GetComplianceDetailResponseTypeDef
+from mypy_boto3_fms.type_defs import GetComplianceDetailRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `PolicyId`: `str`
+- `MemberAccount`: `str`
+
+## GetComplianceDetailResponseResponseTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import GetComplianceDetailResponseResponseTypeDef
+```
+
+Required fields:
 
 - `PolicyComplianceDetail`:
   [PolicyComplianceDetailTypeDef](./type_defs.md#policycompliancedetailtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetNotificationChannelResponseTypeDef
+## GetNotificationChannelResponseResponseTypeDef
 
 ```python
-from mypy_boto3_fms.type_defs import GetNotificationChannelResponseTypeDef
+from mypy_boto3_fms.type_defs import GetNotificationChannelResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `SnsTopicArn`: `str`
 - `SnsRoleName`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPolicyResponseTypeDef
+## GetPolicyRequestTypeDef
 
 ```python
-from mypy_boto3_fms.type_defs import GetPolicyResponseTypeDef
+from mypy_boto3_fms.type_defs import GetPolicyRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `PolicyId`: `str`
+
+## GetPolicyResponseResponseTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import GetPolicyResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef)
 - `PolicyArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetProtectionStatusResponseTypeDef
+## GetProtectionStatusRequestTypeDef
 
 ```python
-from mypy_boto3_fms.type_defs import GetProtectionStatusResponseTypeDef
+from mypy_boto3_fms.type_defs import GetProtectionStatusRequestTypeDef
 ```
 
+Required fields:
+
+- `PolicyId`: `str`
+
 Optional fields:
+
+- `MemberAccountId`: `str`
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## GetProtectionStatusResponseResponseTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import GetProtectionStatusResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AdminAccountId`: `str`
 - `ServiceType`:
   [SecurityServiceTypeType](./literals.md#securityservicetypetype)
 - `Data`: `str`
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetProtocolsListResponseTypeDef
+## GetProtocolsListRequestTypeDef
 
 ```python
-from mypy_boto3_fms.type_defs import GetProtocolsListResponseTypeDef
+from mypy_boto3_fms.type_defs import GetProtocolsListRequestTypeDef
 ```
 
+Required fields:
+
+- `ListId`: `str`
+
 Optional fields:
+
+- `DefaultList`: `bool`
+
+## GetProtocolsListResponseResponseTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import GetProtocolsListResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ProtocolsList`:
   [ProtocolsListDataTypeDef](./type_defs.md#protocolslistdatatypedef)
 - `ProtocolsListArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetViolationDetailsResponseTypeDef
+## GetViolationDetailsRequestTypeDef
 
 ```python
-from mypy_boto3_fms.type_defs import GetViolationDetailsResponseTypeDef
+from mypy_boto3_fms.type_defs import GetViolationDetailsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `PolicyId`: `str`
+- `MemberAccount`: `str`
+- `ResourceId`: `str`
+- `ResourceType`: `str`
+
+## GetViolationDetailsResponseResponseTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import GetViolationDetailsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ViolationDetail`:
   [ViolationDetailTypeDef](./type_defs.md#violationdetailtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAppsListsResponseTypeDef
+## ListAppsListsRequestTypeDef
 
 ```python
-from mypy_boto3_fms.type_defs import ListAppsListsResponseTypeDef
+from mypy_boto3_fms.type_defs import ListAppsListsRequestTypeDef
 ```
 
+Required fields:
+
+- `MaxResults`: `int`
+
 Optional fields:
+
+- `DefaultLists`: `bool`
+- `NextToken`: `str`
+
+## ListAppsListsResponseResponseTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import ListAppsListsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AppsLists`:
   `List`\[[AppsListDataSummaryTypeDef](./type_defs.md#appslistdatasummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListComplianceStatusResponseTypeDef
+## ListComplianceStatusRequestTypeDef
 
 ```python
-from mypy_boto3_fms.type_defs import ListComplianceStatusResponseTypeDef
+from mypy_boto3_fms.type_defs import ListComplianceStatusRequestTypeDef
 ```
 
+Required fields:
+
+- `PolicyId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListComplianceStatusResponseResponseTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import ListComplianceStatusResponseResponseTypeDef
+```
+
+Required fields:
 
 - `PolicyComplianceStatusList`:
   `List`\[[PolicyComplianceStatusTypeDef](./type_defs.md#policycompliancestatustypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListMemberAccountsResponseTypeDef
+## ListMemberAccountsRequestTypeDef
 
 ```python
-from mypy_boto3_fms.type_defs import ListMemberAccountsResponseTypeDef
+from mypy_boto3_fms.type_defs import ListMemberAccountsRequestTypeDef
 ```
 
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListMemberAccountsResponseResponseTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import ListMemberAccountsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `MemberAccounts`: `List`\[`str`\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPoliciesResponseTypeDef
+## ListPoliciesRequestTypeDef
 
 ```python
-from mypy_boto3_fms.type_defs import ListPoliciesResponseTypeDef
+from mypy_boto3_fms.type_defs import ListPoliciesRequestTypeDef
 ```
 
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListPoliciesResponseResponseTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import ListPoliciesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `PolicyList`:
   `List`\[[PolicySummaryTypeDef](./type_defs.md#policysummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListProtocolsListsResponseTypeDef
+## ListProtocolsListsRequestTypeDef
 
 ```python
-from mypy_boto3_fms.type_defs import ListProtocolsListsResponseTypeDef
+from mypy_boto3_fms.type_defs import ListProtocolsListsRequestTypeDef
 ```
 
+Required fields:
+
+- `MaxResults`: `int`
+
 Optional fields:
+
+- `DefaultLists`: `bool`
+- `NextToken`: `str`
+
+## ListProtocolsListsResponseResponseTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import ListProtocolsListsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ProtocolsLists`:
   `List`\[[ProtocolsListDataSummaryTypeDef](./type_defs.md#protocolslistdatasummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_fms.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_fms.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceArn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## NetworkFirewallMissingExpectedRTViolationTypeDef
 
@@ -573,39 +825,99 @@ Optional fields:
 - `LastUpdateTime`: `datetime`
 - `PreviousProtocolsList`: `Dict`\[`str`, `List`\[`str`\]\]
 
-## PutAppsListResponseTypeDef
+## PutAppsListRequestTypeDef
 
 ```python
-from mypy_boto3_fms.type_defs import PutAppsListResponseTypeDef
+from mypy_boto3_fms.type_defs import PutAppsListRequestTypeDef
 ```
 
+Required fields:
+
+- `AppsList`: [AppsListDataTypeDef](./type_defs.md#appslistdatatypedef)
+
 Optional fields:
+
+- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## PutAppsListResponseResponseTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import PutAppsListResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AppsList`: [AppsListDataTypeDef](./type_defs.md#appslistdatatypedef)
 - `AppsListArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutPolicyResponseTypeDef
+## PutNotificationChannelRequestTypeDef
 
 ```python
-from mypy_boto3_fms.type_defs import PutPolicyResponseTypeDef
+from mypy_boto3_fms.type_defs import PutNotificationChannelRequestTypeDef
 ```
 
+Required fields:
+
+- `SnsTopicArn`: `str`
+- `SnsRoleName`: `str`
+
+## PutPolicyRequestTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import PutPolicyRequestTypeDef
+```
+
+Required fields:
+
+- `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef)
+
 Optional fields:
+
+- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## PutPolicyResponseResponseTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import PutPolicyResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef)
 - `PolicyArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutProtocolsListResponseTypeDef
+## PutProtocolsListRequestTypeDef
 
 ```python
-from mypy_boto3_fms.type_defs import PutProtocolsListResponseTypeDef
+from mypy_boto3_fms.type_defs import PutProtocolsListRequestTypeDef
 ```
 
+Required fields:
+
+- `ProtocolsList`:
+  [ProtocolsListDataTypeDef](./type_defs.md#protocolslistdatatypedef)
+
 Optional fields:
+
+- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## PutProtocolsListResponseResponseTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import PutProtocolsListResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ProtocolsList`:
   [ProtocolsListDataTypeDef](./type_defs.md#protocolslistdatatypedef)
 - `ProtocolsListArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ResourceTagTypeDef
 
@@ -649,6 +961,20 @@ Optional fields:
   [DnsDuplicateRuleGroupViolationTypeDef](./type_defs.md#dnsduplicaterulegroupviolationtypedef)
 - `DnsRuleGroupLimitExceededViolation`:
   [DnsRuleGroupLimitExceededViolationTypeDef](./type_defs.md#dnsrulegrouplimitexceededviolationtypedef)
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## SecurityGroupRemediationActionTypeDef
 
@@ -717,6 +1043,17 @@ Optional fields:
 - `ResourceId`: `str`
 - `Priority`: `int`
 
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
 ## TagTypeDef
 
 ```python
@@ -727,6 +1064,17 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+## UntagResourceRequestTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `TagKeys`: `List`\[`str`\]
 
 ## ViolationDetailTypeDef
 

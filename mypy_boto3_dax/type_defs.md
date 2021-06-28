@@ -9,23 +9,38 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 DAX module](#typed-dictionaries-for-boto3-dax-module)
   - [ClusterTypeDef](#clustertypedef)
-  - [CreateClusterResponseTypeDef](#createclusterresponsetypedef)
-  - [CreateParameterGroupResponseTypeDef](#createparametergroupresponsetypedef)
-  - [CreateSubnetGroupResponseTypeDef](#createsubnetgroupresponsetypedef)
-  - [DecreaseReplicationFactorResponseTypeDef](#decreasereplicationfactorresponsetypedef)
-  - [DeleteClusterResponseTypeDef](#deleteclusterresponsetypedef)
-  - [DeleteParameterGroupResponseTypeDef](#deleteparametergroupresponsetypedef)
-  - [DeleteSubnetGroupResponseTypeDef](#deletesubnetgroupresponsetypedef)
-  - [DescribeClustersResponseTypeDef](#describeclustersresponsetypedef)
-  - [DescribeDefaultParametersResponseTypeDef](#describedefaultparametersresponsetypedef)
-  - [DescribeEventsResponseTypeDef](#describeeventsresponsetypedef)
-  - [DescribeParameterGroupsResponseTypeDef](#describeparametergroupsresponsetypedef)
-  - [DescribeParametersResponseTypeDef](#describeparametersresponsetypedef)
-  - [DescribeSubnetGroupsResponseTypeDef](#describesubnetgroupsresponsetypedef)
+  - [CreateClusterRequestTypeDef](#createclusterrequesttypedef)
+  - [CreateClusterResponseResponseTypeDef](#createclusterresponseresponsetypedef)
+  - [CreateParameterGroupRequestTypeDef](#createparametergrouprequesttypedef)
+  - [CreateParameterGroupResponseResponseTypeDef](#createparametergroupresponseresponsetypedef)
+  - [CreateSubnetGroupRequestTypeDef](#createsubnetgrouprequesttypedef)
+  - [CreateSubnetGroupResponseResponseTypeDef](#createsubnetgroupresponseresponsetypedef)
+  - [DecreaseReplicationFactorRequestTypeDef](#decreasereplicationfactorrequesttypedef)
+  - [DecreaseReplicationFactorResponseResponseTypeDef](#decreasereplicationfactorresponseresponsetypedef)
+  - [DeleteClusterRequestTypeDef](#deleteclusterrequesttypedef)
+  - [DeleteClusterResponseResponseTypeDef](#deleteclusterresponseresponsetypedef)
+  - [DeleteParameterGroupRequestTypeDef](#deleteparametergrouprequesttypedef)
+  - [DeleteParameterGroupResponseResponseTypeDef](#deleteparametergroupresponseresponsetypedef)
+  - [DeleteSubnetGroupRequestTypeDef](#deletesubnetgrouprequesttypedef)
+  - [DeleteSubnetGroupResponseResponseTypeDef](#deletesubnetgroupresponseresponsetypedef)
+  - [DescribeClustersRequestTypeDef](#describeclustersrequesttypedef)
+  - [DescribeClustersResponseResponseTypeDef](#describeclustersresponseresponsetypedef)
+  - [DescribeDefaultParametersRequestTypeDef](#describedefaultparametersrequesttypedef)
+  - [DescribeDefaultParametersResponseResponseTypeDef](#describedefaultparametersresponseresponsetypedef)
+  - [DescribeEventsRequestTypeDef](#describeeventsrequesttypedef)
+  - [DescribeEventsResponseResponseTypeDef](#describeeventsresponseresponsetypedef)
+  - [DescribeParameterGroupsRequestTypeDef](#describeparametergroupsrequesttypedef)
+  - [DescribeParameterGroupsResponseResponseTypeDef](#describeparametergroupsresponseresponsetypedef)
+  - [DescribeParametersRequestTypeDef](#describeparametersrequesttypedef)
+  - [DescribeParametersResponseResponseTypeDef](#describeparametersresponseresponsetypedef)
+  - [DescribeSubnetGroupsRequestTypeDef](#describesubnetgroupsrequesttypedef)
+  - [DescribeSubnetGroupsResponseResponseTypeDef](#describesubnetgroupsresponseresponsetypedef)
   - [EndpointTypeDef](#endpointtypedef)
   - [EventTypeDef](#eventtypedef)
-  - [IncreaseReplicationFactorResponseTypeDef](#increasereplicationfactorresponsetypedef)
-  - [ListTagsResponseTypeDef](#listtagsresponsetypedef)
+  - [IncreaseReplicationFactorRequestTypeDef](#increasereplicationfactorrequesttypedef)
+  - [IncreaseReplicationFactorResponseResponseTypeDef](#increasereplicationfactorresponseresponsetypedef)
+  - [ListTagsRequestTypeDef](#listtagsrequesttypedef)
+  - [ListTagsResponseResponseTypeDef](#listtagsresponseresponsetypedef)
   - [NodeTypeDef](#nodetypedef)
   - [NodeTypeSpecificValueTypeDef](#nodetypespecificvaluetypedef)
   - [NotificationConfigurationTypeDef](#notificationconfigurationtypedef)
@@ -34,18 +49,25 @@ type annotations stubs module
   - [ParameterGroupTypeDef](#parametergrouptypedef)
   - [ParameterNameValueTypeDef](#parameternamevaluetypedef)
   - [ParameterTypeDef](#parametertypedef)
-  - [RebootNodeResponseTypeDef](#rebootnoderesponsetypedef)
+  - [RebootNodeRequestTypeDef](#rebootnoderequesttypedef)
+  - [RebootNodeResponseResponseTypeDef](#rebootnoderesponseresponsetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SSEDescriptionTypeDef](#ssedescriptiontypedef)
   - [SSESpecificationTypeDef](#ssespecificationtypedef)
   - [SecurityGroupMembershipTypeDef](#securitygroupmembershiptypedef)
   - [SubnetGroupTypeDef](#subnetgrouptypedef)
   - [SubnetTypeDef](#subnettypedef)
-  - [TagResourceResponseTypeDef](#tagresourceresponsetypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [TagResourceResponseResponseTypeDef](#tagresourceresponseresponsetypedef)
   - [TagTypeDef](#tagtypedef)
-  - [UntagResourceResponseTypeDef](#untagresourceresponsetypedef)
-  - [UpdateClusterResponseTypeDef](#updateclusterresponsetypedef)
-  - [UpdateParameterGroupResponseTypeDef](#updateparametergroupresponsetypedef)
-  - [UpdateSubnetGroupResponseTypeDef](#updatesubnetgroupresponsetypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UntagResourceResponseResponseTypeDef](#untagresourceresponseresponsetypedef)
+  - [UpdateClusterRequestTypeDef](#updateclusterrequesttypedef)
+  - [UpdateClusterResponseResponseTypeDef](#updateclusterresponseresponsetypedef)
+  - [UpdateParameterGroupRequestTypeDef](#updateparametergrouprequesttypedef)
+  - [UpdateParameterGroupResponseResponseTypeDef](#updateparametergroupresponseresponsetypedef)
+  - [UpdateSubnetGroupRequestTypeDef](#updatesubnetgrouprequesttypedef)
+  - [UpdateSubnetGroupResponseResponseTypeDef](#updatesubnetgroupresponseresponsetypedef)
 
 ## ClusterTypeDef
 
@@ -79,144 +101,352 @@ Optional fields:
 - `ClusterEndpointEncryptionType`:
   [ClusterEndpointEncryptionTypeType](./literals.md#clusterendpointencryptiontypetype)
 
-## CreateClusterResponseTypeDef
+## CreateClusterRequestTypeDef
 
 ```python
-from mypy_boto3_dax.type_defs import CreateClusterResponseTypeDef
+from mypy_boto3_dax.type_defs import CreateClusterRequestTypeDef
 ```
 
+Required fields:
+
+- `ClusterName`: `str`
+- `NodeType`: `str`
+- `ReplicationFactor`: `int`
+- `IamRoleArn`: `str`
+
 Optional fields:
+
+- `Description`: `str`
+- `AvailabilityZones`: `List`\[`str`\]
+- `SubnetGroupName`: `str`
+- `SecurityGroupIds`: `List`\[`str`\]
+- `PreferredMaintenanceWindow`: `str`
+- `NotificationTopicArn`: `str`
+- `ParameterGroupName`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `SSESpecification`:
+  [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
+- `ClusterEndpointEncryptionType`:
+  [ClusterEndpointEncryptionTypeType](./literals.md#clusterendpointencryptiontypetype)
+
+## CreateClusterResponseResponseTypeDef
+
+```python
+from mypy_boto3_dax.type_defs import CreateClusterResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateParameterGroupResponseTypeDef
+## CreateParameterGroupRequestTypeDef
 
 ```python
-from mypy_boto3_dax.type_defs import CreateParameterGroupResponseTypeDef
+from mypy_boto3_dax.type_defs import CreateParameterGroupRequestTypeDef
 ```
 
+Required fields:
+
+- `ParameterGroupName`: `str`
+
 Optional fields:
+
+- `Description`: `str`
+
+## CreateParameterGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_dax.type_defs import CreateParameterGroupResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ParameterGroup`:
   [ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateSubnetGroupResponseTypeDef
+## CreateSubnetGroupRequestTypeDef
 
 ```python
-from mypy_boto3_dax.type_defs import CreateSubnetGroupResponseTypeDef
+from mypy_boto3_dax.type_defs import CreateSubnetGroupRequestTypeDef
 ```
 
+Required fields:
+
+- `SubnetGroupName`: `str`
+- `SubnetIds`: `List`\[`str`\]
+
 Optional fields:
+
+- `Description`: `str`
+
+## CreateSubnetGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_dax.type_defs import CreateSubnetGroupResponseResponseTypeDef
+```
+
+Required fields:
 
 - `SubnetGroup`: [SubnetGroupTypeDef](./type_defs.md#subnetgrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DecreaseReplicationFactorResponseTypeDef
+## DecreaseReplicationFactorRequestTypeDef
 
 ```python
-from mypy_boto3_dax.type_defs import DecreaseReplicationFactorResponseTypeDef
+from mypy_boto3_dax.type_defs import DecreaseReplicationFactorRequestTypeDef
 ```
 
+Required fields:
+
+- `ClusterName`: `str`
+- `NewReplicationFactor`: `int`
+
 Optional fields:
+
+- `AvailabilityZones`: `List`\[`str`\]
+- `NodeIdsToRemove`: `List`\[`str`\]
+
+## DecreaseReplicationFactorResponseResponseTypeDef
+
+```python
+from mypy_boto3_dax.type_defs import DecreaseReplicationFactorResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteClusterResponseTypeDef
+## DeleteClusterRequestTypeDef
 
 ```python
-from mypy_boto3_dax.type_defs import DeleteClusterResponseTypeDef
+from mypy_boto3_dax.type_defs import DeleteClusterRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ClusterName`: `str`
+
+## DeleteClusterResponseResponseTypeDef
+
+```python
+from mypy_boto3_dax.type_defs import DeleteClusterResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteParameterGroupResponseTypeDef
+## DeleteParameterGroupRequestTypeDef
 
 ```python
-from mypy_boto3_dax.type_defs import DeleteParameterGroupResponseTypeDef
+from mypy_boto3_dax.type_defs import DeleteParameterGroupRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ParameterGroupName`: `str`
+
+## DeleteParameterGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_dax.type_defs import DeleteParameterGroupResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DeletionMessage`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteSubnetGroupResponseTypeDef
+## DeleteSubnetGroupRequestTypeDef
 
 ```python
-from mypy_boto3_dax.type_defs import DeleteSubnetGroupResponseTypeDef
+from mypy_boto3_dax.type_defs import DeleteSubnetGroupRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `SubnetGroupName`: `str`
+
+## DeleteSubnetGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_dax.type_defs import DeleteSubnetGroupResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DeletionMessage`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeClustersResponseTypeDef
+## DescribeClustersRequestTypeDef
 
 ```python
-from mypy_boto3_dax.type_defs import DescribeClustersResponseTypeDef
+from mypy_boto3_dax.type_defs import DescribeClustersRequestTypeDef
 ```
 
 Optional fields:
+
+- `ClusterNames`: `List`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeClustersResponseResponseTypeDef
+
+```python
+from mypy_boto3_dax.type_defs import DescribeClustersResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `Clusters`: `List`\[[ClusterTypeDef](./type_defs.md#clustertypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDefaultParametersResponseTypeDef
+## DescribeDefaultParametersRequestTypeDef
 
 ```python
-from mypy_boto3_dax.type_defs import DescribeDefaultParametersResponseTypeDef
+from mypy_boto3_dax.type_defs import DescribeDefaultParametersRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeDefaultParametersResponseResponseTypeDef
+
+```python
+from mypy_boto3_dax.type_defs import DescribeDefaultParametersResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEventsResponseTypeDef
+## DescribeEventsRequestTypeDef
 
 ```python
-from mypy_boto3_dax.type_defs import DescribeEventsResponseTypeDef
+from mypy_boto3_dax.type_defs import DescribeEventsRequestTypeDef
 ```
 
 Optional fields:
+
+- `SourceName`: `str`
+- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
+- `Duration`: `int`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeEventsResponseResponseTypeDef
+
+```python
+from mypy_boto3_dax.type_defs import DescribeEventsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `Events`: `List`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeParameterGroupsResponseTypeDef
+## DescribeParameterGroupsRequestTypeDef
 
 ```python
-from mypy_boto3_dax.type_defs import DescribeParameterGroupsResponseTypeDef
+from mypy_boto3_dax.type_defs import DescribeParameterGroupsRequestTypeDef
 ```
 
 Optional fields:
+
+- `ParameterGroupNames`: `List`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeParameterGroupsResponseResponseTypeDef
+
+```python
+from mypy_boto3_dax.type_defs import DescribeParameterGroupsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `ParameterGroups`:
   `List`\[[ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeParametersResponseTypeDef
+## DescribeParametersRequestTypeDef
 
 ```python
-from mypy_boto3_dax.type_defs import DescribeParametersResponseTypeDef
+from mypy_boto3_dax.type_defs import DescribeParametersRequestTypeDef
 ```
 
+Required fields:
+
+- `ParameterGroupName`: `str`
+
 Optional fields:
+
+- `Source`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeParametersResponseResponseTypeDef
+
+```python
+from mypy_boto3_dax.type_defs import DescribeParametersResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSubnetGroupsResponseTypeDef
+## DescribeSubnetGroupsRequestTypeDef
 
 ```python
-from mypy_boto3_dax.type_defs import DescribeSubnetGroupsResponseTypeDef
+from mypy_boto3_dax.type_defs import DescribeSubnetGroupsRequestTypeDef
 ```
 
 Optional fields:
+
+- `SubnetGroupNames`: `List`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeSubnetGroupsResponseResponseTypeDef
+
+```python
+from mypy_boto3_dax.type_defs import DescribeSubnetGroupsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `SubnetGroups`:
   `List`\[[SubnetGroupTypeDef](./type_defs.md#subnetgrouptypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## EndpointTypeDef
 
@@ -243,26 +473,59 @@ Optional fields:
 - `Message`: `str`
 - `Date`: `datetime`
 
-## IncreaseReplicationFactorResponseTypeDef
+## IncreaseReplicationFactorRequestTypeDef
 
 ```python
-from mypy_boto3_dax.type_defs import IncreaseReplicationFactorResponseTypeDef
+from mypy_boto3_dax.type_defs import IncreaseReplicationFactorRequestTypeDef
 ```
 
+Required fields:
+
+- `ClusterName`: `str`
+- `NewReplicationFactor`: `int`
+
 Optional fields:
+
+- `AvailabilityZones`: `List`\[`str`\]
+
+## IncreaseReplicationFactorResponseResponseTypeDef
+
+```python
+from mypy_boto3_dax.type_defs import IncreaseReplicationFactorResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsResponseTypeDef
+## ListTagsRequestTypeDef
 
 ```python
-from mypy_boto3_dax.type_defs import ListTagsResponseTypeDef
+from mypy_boto3_dax.type_defs import ListTagsRequestTypeDef
 ```
 
+Required fields:
+
+- `ResourceName`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+
+## ListTagsResponseResponseTypeDef
+
+```python
+from mypy_boto3_dax.type_defs import ListTagsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## NodeTypeDef
 
@@ -367,15 +630,42 @@ Optional fields:
 - `IsModifiable`: [IsModifiableType](./literals.md#ismodifiabletype)
 - `ChangeType`: [ChangeTypeType](./literals.md#changetypetype)
 
-## RebootNodeResponseTypeDef
+## RebootNodeRequestTypeDef
 
 ```python
-from mypy_boto3_dax.type_defs import RebootNodeResponseTypeDef
+from mypy_boto3_dax.type_defs import RebootNodeRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ClusterName`: `str`
+- `NodeId`: `str`
+
+## RebootNodeResponseResponseTypeDef
+
+```python
+from mypy_boto3_dax.type_defs import RebootNodeResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_dax.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## SSEDescriptionTypeDef
 
@@ -432,15 +722,28 @@ Optional fields:
 - `SubnetIdentifier`: `str`
 - `SubnetAvailabilityZone`: `str`
 
-## TagResourceResponseTypeDef
+## TagResourceRequestTypeDef
 
 ```python
-from mypy_boto3_dax.type_defs import TagResourceResponseTypeDef
+from mypy_boto3_dax.type_defs import TagResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceName`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## TagResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_dax.type_defs import TagResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## TagTypeDef
 
@@ -453,43 +756,108 @@ Optional fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## UntagResourceResponseTypeDef
+## UntagResourceRequestTypeDef
 
 ```python
-from mypy_boto3_dax.type_defs import UntagResourceResponseTypeDef
+from mypy_boto3_dax.type_defs import UntagResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceName`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## UntagResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_dax.type_defs import UntagResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateClusterResponseTypeDef
+## UpdateClusterRequestTypeDef
 
 ```python
-from mypy_boto3_dax.type_defs import UpdateClusterResponseTypeDef
+from mypy_boto3_dax.type_defs import UpdateClusterRequestTypeDef
 ```
 
+Required fields:
+
+- `ClusterName`: `str`
+
 Optional fields:
+
+- `Description`: `str`
+- `PreferredMaintenanceWindow`: `str`
+- `NotificationTopicArn`: `str`
+- `NotificationTopicStatus`: `str`
+- `ParameterGroupName`: `str`
+- `SecurityGroupIds`: `List`\[`str`\]
+
+## UpdateClusterResponseResponseTypeDef
+
+```python
+from mypy_boto3_dax.type_defs import UpdateClusterResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateParameterGroupResponseTypeDef
+## UpdateParameterGroupRequestTypeDef
 
 ```python
-from mypy_boto3_dax.type_defs import UpdateParameterGroupResponseTypeDef
+from mypy_boto3_dax.type_defs import UpdateParameterGroupRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ParameterGroupName`: `str`
+- `ParameterNameValues`:
+  `List`\[[ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef)\]
+
+## UpdateParameterGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_dax.type_defs import UpdateParameterGroupResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ParameterGroup`:
   [ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateSubnetGroupResponseTypeDef
+## UpdateSubnetGroupRequestTypeDef
 
 ```python
-from mypy_boto3_dax.type_defs import UpdateSubnetGroupResponseTypeDef
+from mypy_boto3_dax.type_defs import UpdateSubnetGroupRequestTypeDef
 ```
+
+Required fields:
+
+- `SubnetGroupName`: `str`
 
 Optional fields:
 
+- `Description`: `str`
+- `SubnetIds`: `List`\[`str`\]
+
+## UpdateSubnetGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_dax.type_defs import UpdateSubnetGroupResponseResponseTypeDef
+```
+
+Required fields:
+
 - `SubnetGroup`: [SubnetGroupTypeDef](./type_defs.md#subnetgrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

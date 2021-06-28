@@ -82,11 +82,17 @@ Exceptions:
 
 ### associate_certificate
 
+Associates an AWS Certificate Manager (ACM) Amazon Resource Name (ARN) with AWS
+Elemental MediaConvert.
+
 Type annotations for `boto3.client("mediaconvert").associate_certificate`
 method.
 
 Boto3 documentation:
 [MediaConvert.Client.associate_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.associate_certificate)
+
+Arguments mapping described in
+[AssociateCertificateRequestTypeDef](./type_defs.md#associatecertificaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -95,6 +101,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("mediaconvert").can_paginate` method.
 
@@ -109,10 +117,15 @@ Returns `bool`.
 
 ### cancel_job
 
+Permanently cancel a job.
+
 Type annotations for `boto3.client("mediaconvert").cancel_job` method.
 
 Boto3 documentation:
 [MediaConvert.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.cancel_job)
+
+Arguments mapping described in
+[CancelJobRequestTypeDef](./type_defs.md#canceljobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -122,10 +135,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### create_job
 
+Create a new transcoding job.
+
 Type annotations for `boto3.client("mediaconvert").create_job` method.
 
 Boto3 documentation:
 [MediaConvert.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_job)
+
+Arguments mapping described in
+[CreateJobRequestTypeDef](./type_defs.md#createjobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -149,14 +167,20 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `UserMetadata`: `Dict`\[`str`, `str`\]
 
-Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
+Returns
+[CreateJobResponseResponseTypeDef](./type_defs.md#createjobresponseresponsetypedef).
 
 ### create_job_template
+
+Create a new job template.
 
 Type annotations for `boto3.client("mediaconvert").create_job_template` method.
 
 Boto3 documentation:
 [MediaConvert.Client.create_job_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_job_template)
+
+Arguments mapping described in
+[CreateJobTemplateRequestTypeDef](./type_defs.md#createjobtemplaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -177,14 +201,19 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateJobTemplateResponseTypeDef](./type_defs.md#createjobtemplateresponsetypedef).
+[CreateJobTemplateResponseResponseTypeDef](./type_defs.md#createjobtemplateresponseresponsetypedef).
 
 ### create_preset
+
+Create a new preset.
 
 Type annotations for `boto3.client("mediaconvert").create_preset` method.
 
 Boto3 documentation:
 [MediaConvert.Client.create_preset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_preset)
+
+Arguments mapping described in
+[CreatePresetRequestTypeDef](./type_defs.md#createpresetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -196,14 +225,19 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreatePresetResponseTypeDef](./type_defs.md#createpresetresponsetypedef).
+[CreatePresetResponseResponseTypeDef](./type_defs.md#createpresetresponseresponsetypedef).
 
 ### create_queue
+
+Create a new transcoding queue.
 
 Type annotations for `boto3.client("mediaconvert").create_queue` method.
 
 Boto3 documentation:
 [MediaConvert.Client.create_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_queue)
+
+Arguments mapping described in
+[CreateQueueRequestTypeDef](./type_defs.md#createqueuerequesttypedef).
 
 Keyword-only arguments:
 
@@ -216,14 +250,19 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateQueueResponseTypeDef](./type_defs.md#createqueueresponsetypedef).
+[CreateQueueResponseResponseTypeDef](./type_defs.md#createqueueresponseresponsetypedef).
 
 ### delete_job_template
+
+Permanently delete a job template you have created.
 
 Type annotations for `boto3.client("mediaconvert").delete_job_template` method.
 
 Boto3 documentation:
 [MediaConvert.Client.delete_job_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.delete_job_template)
+
+Arguments mapping described in
+[DeleteJobTemplateRequestTypeDef](./type_defs.md#deletejobtemplaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -233,10 +272,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_preset
 
+Permanently delete a preset you have created.
+
 Type annotations for `boto3.client("mediaconvert").delete_preset` method.
 
 Boto3 documentation:
 [MediaConvert.Client.delete_preset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.delete_preset)
+
+Arguments mapping described in
+[DeletePresetRequestTypeDef](./type_defs.md#deletepresetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -246,10 +290,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_queue
 
+Permanently delete a queue you have created.
+
 Type annotations for `boto3.client("mediaconvert").delete_queue` method.
 
 Boto3 documentation:
 [MediaConvert.Client.delete_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.delete_queue)
+
+Arguments mapping described in
+[DeleteQueueRequestTypeDef](./type_defs.md#deletequeuerequesttypedef).
 
 Keyword-only arguments:
 
@@ -259,10 +308,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_endpoints
 
+Send an request with an empty body to the regional API endpoint to get your
+account API endpoint.
+
 Type annotations for `boto3.client("mediaconvert").describe_endpoints` method.
 
 Boto3 documentation:
 [MediaConvert.Client.describe_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.describe_endpoints)
+
+Arguments mapping described in
+[DescribeEndpointsRequestTypeDef](./type_defs.md#describeendpointsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -271,15 +326,22 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef).
+[DescribeEndpointsResponseResponseTypeDef](./type_defs.md#describeendpointsresponseresponsetypedef).
 
 ### disassociate_certificate
+
+Removes an association between the Amazon Resource Name (ARN) of an AWS
+Certificate Manager (ACM) certificate and an AWS Elemental MediaConvert
+resource.
 
 Type annotations for `boto3.client("mediaconvert").disassociate_certificate`
 method.
 
 Boto3 documentation:
 [MediaConvert.Client.disassociate_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.disassociate_certificate)
+
+Arguments mapping described in
+[DisassociateCertificateRequestTypeDef](./type_defs.md#disassociatecertificaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -288,6 +350,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("mediaconvert").generate_presigned_url`
 method.
@@ -306,63 +370,91 @@ Returns `str`.
 
 ### get_job
 
+Retrieve the JSON for a specific completed transcoding job.
+
 Type annotations for `boto3.client("mediaconvert").get_job` method.
 
 Boto3 documentation:
 [MediaConvert.Client.get_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_job)
 
+Arguments mapping described in
+[GetJobRequestTypeDef](./type_defs.md#getjobrequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
-Returns [GetJobResponseTypeDef](./type_defs.md#getjobresponsetypedef).
+Returns
+[GetJobResponseResponseTypeDef](./type_defs.md#getjobresponseresponsetypedef).
 
 ### get_job_template
+
+Retrieve the JSON for a specific job template.
 
 Type annotations for `boto3.client("mediaconvert").get_job_template` method.
 
 Boto3 documentation:
 [MediaConvert.Client.get_job_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_job_template)
 
+Arguments mapping described in
+[GetJobTemplateRequestTypeDef](./type_defs.md#getjobtemplaterequesttypedef).
+
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[GetJobTemplateResponseTypeDef](./type_defs.md#getjobtemplateresponsetypedef).
+[GetJobTemplateResponseResponseTypeDef](./type_defs.md#getjobtemplateresponseresponsetypedef).
 
 ### get_preset
+
+Retrieve the JSON for a specific preset.
 
 Type annotations for `boto3.client("mediaconvert").get_preset` method.
 
 Boto3 documentation:
 [MediaConvert.Client.get_preset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_preset)
 
+Arguments mapping described in
+[GetPresetRequestTypeDef](./type_defs.md#getpresetrequesttypedef).
+
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
-Returns [GetPresetResponseTypeDef](./type_defs.md#getpresetresponsetypedef).
+Returns
+[GetPresetResponseResponseTypeDef](./type_defs.md#getpresetresponseresponsetypedef).
 
 ### get_queue
+
+Retrieve the JSON for a specific queue.
 
 Type annotations for `boto3.client("mediaconvert").get_queue` method.
 
 Boto3 documentation:
 [MediaConvert.Client.get_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_queue)
 
+Arguments mapping described in
+[GetQueueRequestTypeDef](./type_defs.md#getqueuerequesttypedef).
+
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
-Returns [GetQueueResponseTypeDef](./type_defs.md#getqueueresponsetypedef).
+Returns
+[GetQueueResponseResponseTypeDef](./type_defs.md#getqueueresponseresponsetypedef).
 
 ### list_job_templates
+
+Retrieve a JSON array of up to twenty of your job templates.
 
 Type annotations for `boto3.client("mediaconvert").list_job_templates` method.
 
 Boto3 documentation:
 [MediaConvert.Client.list_job_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_job_templates)
+
+Arguments mapping described in
+[ListJobTemplatesRequestTypeDef](./type_defs.md#listjobtemplatesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -373,14 +465,19 @@ Keyword-only arguments:
 - `Order`: [OrderType](./literals.md#ordertype)
 
 Returns
-[ListJobTemplatesResponseTypeDef](./type_defs.md#listjobtemplatesresponsetypedef).
+[ListJobTemplatesResponseResponseTypeDef](./type_defs.md#listjobtemplatesresponseresponsetypedef).
 
 ### list_jobs
+
+Retrieve a JSON array of up to twenty of your most recently created jobs.
 
 Type annotations for `boto3.client("mediaconvert").list_jobs` method.
 
 Boto3 documentation:
 [MediaConvert.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_jobs)
+
+Arguments mapping described in
+[ListJobsRequestTypeDef](./type_defs.md#listjobsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -390,14 +487,20 @@ Keyword-only arguments:
 - `Queue`: `str`
 - `Status`: [JobStatusType](./literals.md#jobstatustype)
 
-Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
+Returns
+[ListJobsResponseResponseTypeDef](./type_defs.md#listjobsresponseresponsetypedef).
 
 ### list_presets
+
+Retrieve a JSON array of up to twenty of your presets.
 
 Type annotations for `boto3.client("mediaconvert").list_presets` method.
 
 Boto3 documentation:
 [MediaConvert.Client.list_presets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_presets)
+
+Arguments mapping described in
+[ListPresetsRequestTypeDef](./type_defs.md#listpresetsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -408,14 +511,19 @@ Keyword-only arguments:
 - `Order`: [OrderType](./literals.md#ordertype)
 
 Returns
-[ListPresetsResponseTypeDef](./type_defs.md#listpresetsresponsetypedef).
+[ListPresetsResponseResponseTypeDef](./type_defs.md#listpresetsresponseresponsetypedef).
 
 ### list_queues
+
+Retrieve a JSON array of up to twenty of your queues.
 
 Type annotations for `boto3.client("mediaconvert").list_queues` method.
 
 Boto3 documentation:
 [MediaConvert.Client.list_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_queues)
+
+Arguments mapping described in
+[ListQueuesRequestTypeDef](./type_defs.md#listqueuesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -424,9 +532,12 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `Order`: [OrderType](./literals.md#ordertype)
 
-Returns [ListQueuesResponseTypeDef](./type_defs.md#listqueuesresponsetypedef).
+Returns
+[ListQueuesResponseResponseTypeDef](./type_defs.md#listqueuesresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Retrieve the tags for a MediaConvert resource.
 
 Type annotations for `boto3.client("mediaconvert").list_tags_for_resource`
 method.
@@ -434,19 +545,27 @@ method.
 Boto3 documentation:
 [MediaConvert.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### tag_resource
+
+Add tags to a MediaConvert queue, preset, or job template.
 
 Type annotations for `boto3.client("mediaconvert").tag_resource` method.
 
 Boto3 documentation:
 [MediaConvert.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -457,10 +576,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Remove tags from a MediaConvert queue, preset, or job template.
+
 Type annotations for `boto3.client("mediaconvert").untag_resource` method.
 
 Boto3 documentation:
 [MediaConvert.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -471,10 +595,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_job_template
 
+Modify one of your existing job templates.
+
 Type annotations for `boto3.client("mediaconvert").update_job_template` method.
 
 Boto3 documentation:
 [MediaConvert.Client.update_job_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.update_job_template)
+
+Arguments mapping described in
+[UpdateJobTemplateRequestTypeDef](./type_defs.md#updatejobtemplaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -493,14 +622,19 @@ Keyword-only arguments:
   [StatusUpdateIntervalType](./literals.md#statusupdateintervaltype)
 
 Returns
-[UpdateJobTemplateResponseTypeDef](./type_defs.md#updatejobtemplateresponsetypedef).
+[UpdateJobTemplateResponseResponseTypeDef](./type_defs.md#updatejobtemplateresponseresponsetypedef).
 
 ### update_preset
+
+Modify one of your existing presets.
 
 Type annotations for `boto3.client("mediaconvert").update_preset` method.
 
 Boto3 documentation:
 [MediaConvert.Client.update_preset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.update_preset)
+
+Arguments mapping described in
+[UpdatePresetRequestTypeDef](./type_defs.md#updatepresetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -510,14 +644,19 @@ Keyword-only arguments:
 - `Settings`: [PresetSettingsTypeDef](./type_defs.md#presetsettingstypedef)
 
 Returns
-[UpdatePresetResponseTypeDef](./type_defs.md#updatepresetresponsetypedef).
+[UpdatePresetResponseResponseTypeDef](./type_defs.md#updatepresetresponseresponsetypedef).
 
 ### update_queue
+
+Modify one of your existing queues.
 
 Type annotations for `boto3.client("mediaconvert").update_queue` method.
 
 Boto3 documentation:
 [MediaConvert.Client.update_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.update_queue)
+
+Arguments mapping described in
+[UpdateQueueRequestTypeDef](./type_defs.md#updatequeuerequesttypedef).
 
 Keyword-only arguments:
 
@@ -528,7 +667,7 @@ Keyword-only arguments:
 - `Status`: [QueueStatusType](./literals.md#queuestatustype)
 
 Returns
-[UpdateQueueResponseTypeDef](./type_defs.md#updatequeueresponsetypedef).
+[UpdateQueueResponseResponseTypeDef](./type_defs.md#updatequeueresponseresponsetypedef).
 
 ### get_paginator
 

@@ -26,7 +26,7 @@ def get_db_instance_available_waiter() -> DBInstanceAvailableWaiter:
 ```
 
 Boto3 documentation:
-[DocDB.Waiter.db_instance_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Waiter.db_instance_available)
+[DocDB.Waiter.db_instance_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Waiter.DBInstanceAvailable)
 
 Arguments for `DBInstanceAvailableWaiter.wait` method:
 
@@ -50,7 +50,7 @@ def get_db_instance_deleted_waiter() -> DBInstanceDeletedWaiter:
 ```
 
 Boto3 documentation:
-[DocDB.Waiter.db_instance_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Waiter.db_instance_deleted)
+[DocDB.Waiter.db_instance_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Waiter.DBInstanceDeleted)
 
 Arguments for `DBInstanceDeletedWaiter.wait` method:
 

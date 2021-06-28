@@ -108,20 +108,27 @@ Exceptions:
 
 ### accept_environment_account_connection
 
+In a management account, an environment account connection request is accepted.
+
 Type annotations for
 `boto3.client("proton").accept_environment_account_connection` method.
 
 Boto3 documentation:
 [Proton.Client.accept_environment_account_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.accept_environment_account_connection)
 
+Arguments mapping described in
+[AcceptEnvironmentAccountConnectionInputTypeDef](./type_defs.md#acceptenvironmentaccountconnectioninputtypedef).
+
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
 Returns
-[AcceptEnvironmentAccountConnectionOutputTypeDef](./type_defs.md#acceptenvironmentaccountconnectionoutputtypedef).
+[AcceptEnvironmentAccountConnectionOutputResponseTypeDef](./type_defs.md#acceptenvironmentaccountconnectionoutputresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("proton").can_paginate` method.
 
@@ -136,20 +143,29 @@ Returns `bool`.
 
 ### cancel_environment_deployment
 
+Attempts to cancel an environment deployment on an UpdateEnvironment action, if
+the deployment is `IN_PROGRESS`.
+
 Type annotations for `boto3.client("proton").cancel_environment_deployment`
 method.
 
 Boto3 documentation:
 [Proton.Client.cancel_environment_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.cancel_environment_deployment)
 
+Arguments mapping described in
+[CancelEnvironmentDeploymentInputTypeDef](./type_defs.md#cancelenvironmentdeploymentinputtypedef).
+
 Keyword-only arguments:
 
 - `environmentName`: `str` *(required)*
 
 Returns
-[CancelEnvironmentDeploymentOutputTypeDef](./type_defs.md#cancelenvironmentdeploymentoutputtypedef).
+[CancelEnvironmentDeploymentOutputResponseTypeDef](./type_defs.md#cancelenvironmentdeploymentoutputresponsetypedef).
 
 ### cancel_service_instance_deployment
+
+Attempts to cancel a service instance deployment on an UpdateServiceInstance
+action, if the deployment is `IN_PROGRESS`.
 
 Type annotations for
 `boto3.client("proton").cancel_service_instance_deployment` method.
@@ -157,15 +173,21 @@ Type annotations for
 Boto3 documentation:
 [Proton.Client.cancel_service_instance_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.cancel_service_instance_deployment)
 
+Arguments mapping described in
+[CancelServiceInstanceDeploymentInputTypeDef](./type_defs.md#cancelserviceinstancedeploymentinputtypedef).
+
 Keyword-only arguments:
 
 - `serviceInstanceName`: `str` *(required)*
 - `serviceName`: `str` *(required)*
 
 Returns
-[CancelServiceInstanceDeploymentOutputTypeDef](./type_defs.md#cancelserviceinstancedeploymentoutputtypedef).
+[CancelServiceInstanceDeploymentOutputResponseTypeDef](./type_defs.md#cancelserviceinstancedeploymentoutputresponsetypedef).
 
 ### cancel_service_pipeline_deployment
+
+Attempts to cancel a service pipeline deployment on an UpdateServicePipeline
+action, if the deployment is `IN_PROGRESS`.
 
 Type annotations for
 `boto3.client("proton").cancel_service_pipeline_deployment` method.
@@ -173,19 +195,27 @@ Type annotations for
 Boto3 documentation:
 [Proton.Client.cancel_service_pipeline_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.cancel_service_pipeline_deployment)
 
+Arguments mapping described in
+[CancelServicePipelineDeploymentInputTypeDef](./type_defs.md#cancelservicepipelinedeploymentinputtypedef).
+
 Keyword-only arguments:
 
 - `serviceName`: `str` *(required)*
 
 Returns
-[CancelServicePipelineDeploymentOutputTypeDef](./type_defs.md#cancelservicepipelinedeploymentoutputtypedef).
+[CancelServicePipelineDeploymentOutputResponseTypeDef](./type_defs.md#cancelservicepipelinedeploymentoutputresponsetypedef).
 
 ### create_environment
+
+Deploy a new environment.
 
 Type annotations for `boto3.client("proton").create_environment` method.
 
 Boto3 documentation:
 [Proton.Client.create_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_environment)
+
+Arguments mapping described in
+[CreateEnvironmentInputTypeDef](./type_defs.md#createenvironmentinputtypedef).
 
 Keyword-only arguments:
 
@@ -200,15 +230,22 @@ Keyword-only arguments:
 - `templateMinorVersion`: `str`
 
 Returns
-[CreateEnvironmentOutputTypeDef](./type_defs.md#createenvironmentoutputtypedef).
+[CreateEnvironmentOutputResponseTypeDef](./type_defs.md#createenvironmentoutputresponsetypedef).
 
 ### create_environment_account_connection
+
+Create an environment account connection in an environment account so that
+environment infrastructure resources can be provisioned in the environment
+account from the management account.
 
 Type annotations for
 `boto3.client("proton").create_environment_account_connection` method.
 
 Boto3 documentation:
 [Proton.Client.create_environment_account_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_environment_account_connection)
+
+Arguments mapping described in
+[CreateEnvironmentAccountConnectionInputTypeDef](./type_defs.md#createenvironmentaccountconnectioninputtypedef).
 
 Keyword-only arguments:
 
@@ -218,15 +255,20 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[CreateEnvironmentAccountConnectionOutputTypeDef](./type_defs.md#createenvironmentaccountconnectionoutputtypedef).
+[CreateEnvironmentAccountConnectionOutputResponseTypeDef](./type_defs.md#createenvironmentaccountconnectionoutputresponsetypedef).
 
 ### create_environment_template
+
+Create an environment template for AWS Proton.
 
 Type annotations for `boto3.client("proton").create_environment_template`
 method.
 
 Boto3 documentation:
 [Proton.Client.create_environment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_environment_template)
+
+Arguments mapping described in
+[CreateEnvironmentTemplateInputTypeDef](./type_defs.md#createenvironmenttemplateinputtypedef).
 
 Keyword-only arguments:
 
@@ -239,15 +281,20 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateEnvironmentTemplateOutputTypeDef](./type_defs.md#createenvironmenttemplateoutputtypedef).
+[CreateEnvironmentTemplateOutputResponseTypeDef](./type_defs.md#createenvironmenttemplateoutputresponsetypedef).
 
 ### create_environment_template_version
+
+Create a new major or minor version of an environment template.
 
 Type annotations for
 `boto3.client("proton").create_environment_template_version` method.
 
 Boto3 documentation:
 [Proton.Client.create_environment_template_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_environment_template_version)
+
+Arguments mapping described in
+[CreateEnvironmentTemplateVersionInputTypeDef](./type_defs.md#createenvironmenttemplateversioninputtypedef).
 
 Keyword-only arguments:
 
@@ -261,14 +308,19 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateEnvironmentTemplateVersionOutputTypeDef](./type_defs.md#createenvironmenttemplateversionoutputtypedef).
+[CreateEnvironmentTemplateVersionOutputResponseTypeDef](./type_defs.md#createenvironmenttemplateversionoutputresponsetypedef).
 
 ### create_service
+
+Create an AWS Proton service.
 
 Type annotations for `boto3.client("proton").create_service` method.
 
 Boto3 documentation:
 [Proton.Client.create_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_service)
+
+Arguments mapping described in
+[CreateServiceInputTypeDef](./type_defs.md#createserviceinputtypedef).
 
 Keyword-only arguments:
 
@@ -284,14 +336,19 @@ Keyword-only arguments:
 - `templateMinorVersion`: `str`
 
 Returns
-[CreateServiceOutputTypeDef](./type_defs.md#createserviceoutputtypedef).
+[CreateServiceOutputResponseTypeDef](./type_defs.md#createserviceoutputresponsetypedef).
 
 ### create_service_template
+
+Create a service template.
 
 Type annotations for `boto3.client("proton").create_service_template` method.
 
 Boto3 documentation:
 [Proton.Client.create_service_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_service_template)
+
+Arguments mapping described in
+[CreateServiceTemplateInputTypeDef](./type_defs.md#createservicetemplateinputtypedef).
 
 Keyword-only arguments:
 
@@ -304,15 +361,20 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateServiceTemplateOutputTypeDef](./type_defs.md#createservicetemplateoutputtypedef).
+[CreateServiceTemplateOutputResponseTypeDef](./type_defs.md#createservicetemplateoutputresponsetypedef).
 
 ### create_service_template_version
+
+Create a new major or minor version of a service template.
 
 Type annotations for `boto3.client("proton").create_service_template_version`
 method.
 
 Boto3 documentation:
 [Proton.Client.create_service_template_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_service_template_version)
+
+Arguments mapping described in
+[CreateServiceTemplateVersionInputTypeDef](./type_defs.md#createservicetemplateversioninputtypedef).
 
 Keyword-only arguments:
 
@@ -329,23 +391,30 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateServiceTemplateVersionOutputTypeDef](./type_defs.md#createservicetemplateversionoutputtypedef).
+[CreateServiceTemplateVersionOutputResponseTypeDef](./type_defs.md#createservicetemplateversionoutputresponsetypedef).
 
 ### delete_environment
+
+Delete an environment.
 
 Type annotations for `boto3.client("proton").delete_environment` method.
 
 Boto3 documentation:
 [Proton.Client.delete_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_environment)
 
+Arguments mapping described in
+[DeleteEnvironmentInputTypeDef](./type_defs.md#deleteenvironmentinputtypedef).
+
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
 Returns
-[DeleteEnvironmentOutputTypeDef](./type_defs.md#deleteenvironmentoutputtypedef).
+[DeleteEnvironmentOutputResponseTypeDef](./type_defs.md#deleteenvironmentoutputresponsetypedef).
 
 ### delete_environment_account_connection
+
+In an environment account, delete an environment account connection.
 
 Type annotations for
 `boto3.client("proton").delete_environment_account_connection` method.
@@ -353,14 +422,20 @@ Type annotations for
 Boto3 documentation:
 [Proton.Client.delete_environment_account_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_environment_account_connection)
 
+Arguments mapping described in
+[DeleteEnvironmentAccountConnectionInputTypeDef](./type_defs.md#deleteenvironmentaccountconnectioninputtypedef).
+
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
 Returns
-[DeleteEnvironmentAccountConnectionOutputTypeDef](./type_defs.md#deleteenvironmentaccountconnectionoutputtypedef).
+[DeleteEnvironmentAccountConnectionOutputResponseTypeDef](./type_defs.md#deleteenvironmentaccountconnectionoutputresponsetypedef).
 
 ### delete_environment_template
+
+If no other major or minor versions of an environment template exist, delete
+the environment template.
 
 Type annotations for `boto3.client("proton").delete_environment_template`
 method.
@@ -368,14 +443,20 @@ method.
 Boto3 documentation:
 [Proton.Client.delete_environment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_environment_template)
 
+Arguments mapping described in
+[DeleteEnvironmentTemplateInputTypeDef](./type_defs.md#deleteenvironmenttemplateinputtypedef).
+
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
 Returns
-[DeleteEnvironmentTemplateOutputTypeDef](./type_defs.md#deleteenvironmenttemplateoutputtypedef).
+[DeleteEnvironmentTemplateOutputResponseTypeDef](./type_defs.md#deleteenvironmenttemplateoutputresponsetypedef).
 
 ### delete_environment_template_version
+
+If no other minor versions of an environment template exist, delete a major
+version of the environment template if it's not the `Recommended` version.
 
 Type annotations for
 `boto3.client("proton").delete_environment_template_version` method.
@@ -383,6 +464,9 @@ Type annotations for
 Boto3 documentation:
 [Proton.Client.delete_environment_template_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_environment_template_version)
 
+Arguments mapping described in
+[DeleteEnvironmentTemplateVersionInputTypeDef](./type_defs.md#deleteenvironmenttemplateversioninputtypedef).
+
 Keyword-only arguments:
 
 - `majorVersion`: `str` *(required)*
@@ -390,37 +474,51 @@ Keyword-only arguments:
 - `templateName`: `str` *(required)*
 
 Returns
-[DeleteEnvironmentTemplateVersionOutputTypeDef](./type_defs.md#deleteenvironmenttemplateversionoutputtypedef).
+[DeleteEnvironmentTemplateVersionOutputResponseTypeDef](./type_defs.md#deleteenvironmenttemplateversionoutputresponsetypedef).
 
 ### delete_service
+
+Delete a service.
 
 Type annotations for `boto3.client("proton").delete_service` method.
 
 Boto3 documentation:
 [Proton.Client.delete_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_service)
 
+Arguments mapping described in
+[DeleteServiceInputTypeDef](./type_defs.md#deleteserviceinputtypedef).
+
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
 Returns
-[DeleteServiceOutputTypeDef](./type_defs.md#deleteserviceoutputtypedef).
+[DeleteServiceOutputResponseTypeDef](./type_defs.md#deleteserviceoutputresponsetypedef).
 
 ### delete_service_template
+
+If no other major or minor versions of the service template exist, delete the
+service template.
 
 Type annotations for `boto3.client("proton").delete_service_template` method.
 
 Boto3 documentation:
 [Proton.Client.delete_service_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_service_template)
 
+Arguments mapping described in
+[DeleteServiceTemplateInputTypeDef](./type_defs.md#deleteservicetemplateinputtypedef).
+
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
 Returns
-[DeleteServiceTemplateOutputTypeDef](./type_defs.md#deleteservicetemplateoutputtypedef).
+[DeleteServiceTemplateOutputResponseTypeDef](./type_defs.md#deleteservicetemplateoutputresponsetypedef).
 
 ### delete_service_template_version
+
+If no other minor versions of a service template exist, delete a major version
+of the service template if it's not the `Recommended` version.
 
 Type annotations for `boto3.client("proton").delete_service_template_version`
 method.
@@ -428,6 +526,9 @@ method.
 Boto3 documentation:
 [Proton.Client.delete_service_template_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_service_template_version)
 
+Arguments mapping described in
+[DeleteServiceTemplateVersionInputTypeDef](./type_defs.md#deleteservicetemplateversioninputtypedef).
+
 Keyword-only arguments:
 
 - `majorVersion`: `str` *(required)*
@@ -435,9 +536,11 @@ Keyword-only arguments:
 - `templateName`: `str` *(required)*
 
 Returns
-[DeleteServiceTemplateVersionOutputTypeDef](./type_defs.md#deleteservicetemplateversionoutputtypedef).
+[DeleteServiceTemplateVersionOutputResponseTypeDef](./type_defs.md#deleteservicetemplateversionoutputresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("proton").generate_presigned_url` method.
 
@@ -455,29 +558,39 @@ Returns `str`.
 
 ### get_account_settings
 
+Get detail data for the AWS Proton pipeline service role.
+
 Type annotations for `boto3.client("proton").get_account_settings` method.
 
 Boto3 documentation:
 [Proton.Client.get_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_account_settings)
 
 Returns
-[GetAccountSettingsOutputTypeDef](./type_defs.md#getaccountsettingsoutputtypedef).
+[GetAccountSettingsOutputResponseTypeDef](./type_defs.md#getaccountsettingsoutputresponsetypedef).
 
 ### get_environment
+
+Get detail data for an environment.
 
 Type annotations for `boto3.client("proton").get_environment` method.
 
 Boto3 documentation:
 [Proton.Client.get_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_environment)
 
+Arguments mapping described in
+[GetEnvironmentInputTypeDef](./type_defs.md#getenvironmentinputtypedef).
+
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
 Returns
-[GetEnvironmentOutputTypeDef](./type_defs.md#getenvironmentoutputtypedef).
+[GetEnvironmentOutputResponseTypeDef](./type_defs.md#getenvironmentoutputresponsetypedef).
 
 ### get_environment_account_connection
+
+In an environment account, view the detail data for an environment account
+connection.
 
 Type annotations for
 `boto3.client("proton").get_environment_account_connection` method.
@@ -485,28 +598,38 @@ Type annotations for
 Boto3 documentation:
 [Proton.Client.get_environment_account_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_environment_account_connection)
 
+Arguments mapping described in
+[GetEnvironmentAccountConnectionInputTypeDef](./type_defs.md#getenvironmentaccountconnectioninputtypedef).
+
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
 Returns
-[GetEnvironmentAccountConnectionOutputTypeDef](./type_defs.md#getenvironmentaccountconnectionoutputtypedef).
+[GetEnvironmentAccountConnectionOutputResponseTypeDef](./type_defs.md#getenvironmentaccountconnectionoutputresponsetypedef).
 
 ### get_environment_template
+
+Get detail data for an environment template.
 
 Type annotations for `boto3.client("proton").get_environment_template` method.
 
 Boto3 documentation:
 [Proton.Client.get_environment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_environment_template)
 
+Arguments mapping described in
+[GetEnvironmentTemplateInputTypeDef](./type_defs.md#getenvironmenttemplateinputtypedef).
+
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
 Returns
-[GetEnvironmentTemplateOutputTypeDef](./type_defs.md#getenvironmenttemplateoutputtypedef).
+[GetEnvironmentTemplateOutputResponseTypeDef](./type_defs.md#getenvironmenttemplateoutputresponsetypedef).
 
 ### get_environment_template_version
+
+View detail data for a major or minor version of an environment template.
 
 Type annotations for `boto3.client("proton").get_environment_template_version`
 method.
@@ -514,6 +637,9 @@ method.
 Boto3 documentation:
 [Proton.Client.get_environment_template_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_environment_template_version)
 
+Arguments mapping described in
+[GetEnvironmentTemplateVersionInputTypeDef](./type_defs.md#getenvironmenttemplateversioninputtypedef).
+
 Keyword-only arguments:
 
 - `majorVersion`: `str` *(required)*
@@ -521,27 +647,38 @@ Keyword-only arguments:
 - `templateName`: `str` *(required)*
 
 Returns
-[GetEnvironmentTemplateVersionOutputTypeDef](./type_defs.md#getenvironmenttemplateversionoutputtypedef).
+[GetEnvironmentTemplateVersionOutputResponseTypeDef](./type_defs.md#getenvironmenttemplateversionoutputresponsetypedef).
 
 ### get_service
+
+Get detail data for a service.
 
 Type annotations for `boto3.client("proton").get_service` method.
 
 Boto3 documentation:
 [Proton.Client.get_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_service)
 
+Arguments mapping described in
+[GetServiceInputTypeDef](./type_defs.md#getserviceinputtypedef).
+
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
-Returns [GetServiceOutputTypeDef](./type_defs.md#getserviceoutputtypedef).
+Returns
+[GetServiceOutputResponseTypeDef](./type_defs.md#getserviceoutputresponsetypedef).
 
 ### get_service_instance
+
+Get detail data for a service instance.
 
 Type annotations for `boto3.client("proton").get_service_instance` method.
 
 Boto3 documentation:
 [Proton.Client.get_service_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_service_instance)
+
+Arguments mapping described in
+[GetServiceInstanceInputTypeDef](./type_defs.md#getserviceinstanceinputtypedef).
 
 Keyword-only arguments:
 
@@ -549,29 +686,39 @@ Keyword-only arguments:
 - `serviceName`: `str` *(required)*
 
 Returns
-[GetServiceInstanceOutputTypeDef](./type_defs.md#getserviceinstanceoutputtypedef).
+[GetServiceInstanceOutputResponseTypeDef](./type_defs.md#getserviceinstanceoutputresponsetypedef).
 
 ### get_service_template
+
+Get detail data for a service template.
 
 Type annotations for `boto3.client("proton").get_service_template` method.
 
 Boto3 documentation:
 [Proton.Client.get_service_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_service_template)
 
+Arguments mapping described in
+[GetServiceTemplateInputTypeDef](./type_defs.md#getservicetemplateinputtypedef).
+
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
 Returns
-[GetServiceTemplateOutputTypeDef](./type_defs.md#getservicetemplateoutputtypedef).
+[GetServiceTemplateOutputResponseTypeDef](./type_defs.md#getservicetemplateoutputresponsetypedef).
 
 ### get_service_template_version
+
+View detail data for a major or minor version of a service template.
 
 Type annotations for `boto3.client("proton").get_service_template_version`
 method.
 
 Boto3 documentation:
 [Proton.Client.get_service_template_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_service_template_version)
+
+Arguments mapping described in
+[GetServiceTemplateVersionInputTypeDef](./type_defs.md#getservicetemplateversioninputtypedef).
 
 Keyword-only arguments:
 
@@ -580,15 +727,20 @@ Keyword-only arguments:
 - `templateName`: `str` *(required)*
 
 Returns
-[GetServiceTemplateVersionOutputTypeDef](./type_defs.md#getservicetemplateversionoutputtypedef).
+[GetServiceTemplateVersionOutputResponseTypeDef](./type_defs.md#getservicetemplateversionoutputresponsetypedef).
 
 ### list_environment_account_connections
+
+View a list of environment account connections.
 
 Type annotations for
 `boto3.client("proton").list_environment_account_connections` method.
 
 Boto3 documentation:
 [Proton.Client.list_environment_account_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_environment_account_connections)
+
+Arguments mapping described in
+[ListEnvironmentAccountConnectionsInputTypeDef](./type_defs.md#listenvironmentaccountconnectionsinputtypedef).
 
 Keyword-only arguments:
 
@@ -602,15 +754,20 @@ Keyword-only arguments:
   `List`\[[EnvironmentAccountConnectionStatusType](./literals.md#environmentaccountconnectionstatustype)\]
 
 Returns
-[ListEnvironmentAccountConnectionsOutputTypeDef](./type_defs.md#listenvironmentaccountconnectionsoutputtypedef).
+[ListEnvironmentAccountConnectionsOutputResponseTypeDef](./type_defs.md#listenvironmentaccountconnectionsoutputresponsetypedef).
 
 ### list_environment_template_versions
+
+List major or minor versions of an environment template with detail data.
 
 Type annotations for
 `boto3.client("proton").list_environment_template_versions` method.
 
 Boto3 documentation:
 [Proton.Client.list_environment_template_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_environment_template_versions)
+
+Arguments mapping described in
+[ListEnvironmentTemplateVersionsInputTypeDef](./type_defs.md#listenvironmenttemplateversionsinputtypedef).
 
 Keyword-only arguments:
 
@@ -620,9 +777,11 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListEnvironmentTemplateVersionsOutputTypeDef](./type_defs.md#listenvironmenttemplateversionsoutputtypedef).
+[ListEnvironmentTemplateVersionsOutputResponseTypeDef](./type_defs.md#listenvironmenttemplateversionsoutputresponsetypedef).
 
 ### list_environment_templates
+
+List environment templates.
 
 Type annotations for `boto3.client("proton").list_environment_templates`
 method.
@@ -630,20 +789,28 @@ method.
 Boto3 documentation:
 [Proton.Client.list_environment_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_environment_templates)
 
+Arguments mapping described in
+[ListEnvironmentTemplatesInputTypeDef](./type_defs.md#listenvironmenttemplatesinputtypedef).
+
 Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListEnvironmentTemplatesOutputTypeDef](./type_defs.md#listenvironmenttemplatesoutputtypedef).
+[ListEnvironmentTemplatesOutputResponseTypeDef](./type_defs.md#listenvironmenttemplatesoutputresponsetypedef).
 
 ### list_environments
+
+List environments with detail data summaries.
 
 Type annotations for `boto3.client("proton").list_environments` method.
 
 Boto3 documentation:
 [Proton.Client.list_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_environments)
+
+Arguments mapping described in
+[ListEnvironmentsInputTypeDef](./type_defs.md#listenvironmentsinputtypedef).
 
 Keyword-only arguments:
 
@@ -653,14 +820,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListEnvironmentsOutputTypeDef](./type_defs.md#listenvironmentsoutputtypedef).
+[ListEnvironmentsOutputResponseTypeDef](./type_defs.md#listenvironmentsoutputresponsetypedef).
 
 ### list_service_instances
+
+List service instances with summaries of detail data.
 
 Type annotations for `boto3.client("proton").list_service_instances` method.
 
 Boto3 documentation:
 [Proton.Client.list_service_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_service_instances)
+
+Arguments mapping described in
+[ListServiceInstancesInputTypeDef](./type_defs.md#listserviceinstancesinputtypedef).
 
 Keyword-only arguments:
 
@@ -669,15 +841,20 @@ Keyword-only arguments:
 - `serviceName`: `str`
 
 Returns
-[ListServiceInstancesOutputTypeDef](./type_defs.md#listserviceinstancesoutputtypedef).
+[ListServiceInstancesOutputResponseTypeDef](./type_defs.md#listserviceinstancesoutputresponsetypedef).
 
 ### list_service_template_versions
+
+List major or minor versions of a service template with detail data.
 
 Type annotations for `boto3.client("proton").list_service_template_versions`
 method.
 
 Boto3 documentation:
 [Proton.Client.list_service_template_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_service_template_versions)
+
+Arguments mapping described in
+[ListServiceTemplateVersionsInputTypeDef](./type_defs.md#listservicetemplateversionsinputtypedef).
 
 Keyword-only arguments:
 
@@ -687,14 +864,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListServiceTemplateVersionsOutputTypeDef](./type_defs.md#listservicetemplateversionsoutputtypedef).
+[ListServiceTemplateVersionsOutputResponseTypeDef](./type_defs.md#listservicetemplateversionsoutputresponsetypedef).
 
 ### list_service_templates
+
+List service templates with detail data.
 
 Type annotations for `boto3.client("proton").list_service_templates` method.
 
 Boto3 documentation:
 [Proton.Client.list_service_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_service_templates)
+
+Arguments mapping described in
+[ListServiceTemplatesInputTypeDef](./type_defs.md#listservicetemplatesinputtypedef).
 
 Keyword-only arguments:
 
@@ -702,28 +884,39 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListServiceTemplatesOutputTypeDef](./type_defs.md#listservicetemplatesoutputtypedef).
+[ListServiceTemplatesOutputResponseTypeDef](./type_defs.md#listservicetemplatesoutputresponsetypedef).
 
 ### list_services
+
+List services with summaries of detail data.
 
 Type annotations for `boto3.client("proton").list_services` method.
 
 Boto3 documentation:
 [Proton.Client.list_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_services)
 
+Arguments mapping described in
+[ListServicesInputTypeDef](./type_defs.md#listservicesinputtypedef).
+
 Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-Returns [ListServicesOutputTypeDef](./type_defs.md#listservicesoutputtypedef).
+Returns
+[ListServicesOutputResponseTypeDef](./type_defs.md#listservicesoutputresponsetypedef).
 
 ### list_tags_for_resource
+
+List tags for a resource.
 
 Type annotations for `boto3.client("proton").list_tags_for_resource` method.
 
 Boto3 documentation:
 [Proton.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_tags_for_resource)
+
+Arguments mapping described in
+[ListTagsForResourceInputTypeDef](./type_defs.md#listtagsforresourceinputtypedef).
 
 Keyword-only arguments:
 
@@ -732,9 +925,12 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+[ListTagsForResourceOutputResponseTypeDef](./type_defs.md#listtagsforresourceoutputresponsetypedef).
 
 ### reject_environment_account_connection
+
+In a management account, reject an environment account connection from another
+environment account.
 
 Type annotations for
 `boto3.client("proton").reject_environment_account_connection` method.
@@ -742,19 +938,27 @@ Type annotations for
 Boto3 documentation:
 [Proton.Client.reject_environment_account_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.reject_environment_account_connection)
 
+Arguments mapping described in
+[RejectEnvironmentAccountConnectionInputTypeDef](./type_defs.md#rejectenvironmentaccountconnectioninputtypedef).
+
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
 Returns
-[RejectEnvironmentAccountConnectionOutputTypeDef](./type_defs.md#rejectenvironmentaccountconnectionoutputtypedef).
+[RejectEnvironmentAccountConnectionOutputResponseTypeDef](./type_defs.md#rejectenvironmentaccountconnectionoutputresponsetypedef).
 
 ### tag_resource
+
+Tag a resource.
 
 Type annotations for `boto3.client("proton").tag_resource` method.
 
 Boto3 documentation:
 [Proton.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceInputTypeDef](./type_defs.md#tagresourceinputtypedef).
 
 Keyword-only arguments:
 
@@ -765,10 +969,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Remove a tag from a resource.
+
 Type annotations for `boto3.client("proton").untag_resource` method.
 
 Boto3 documentation:
 [Proton.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceInputTypeDef](./type_defs.md#untagresourceinputtypedef).
 
 Keyword-only arguments:
 
@@ -779,24 +988,34 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_account_settings
 
+Update the AWS Proton pipeline service account settings.
+
 Type annotations for `boto3.client("proton").update_account_settings` method.
 
 Boto3 documentation:
 [Proton.Client.update_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_account_settings)
+
+Arguments mapping described in
+[UpdateAccountSettingsInputTypeDef](./type_defs.md#updateaccountsettingsinputtypedef).
 
 Keyword-only arguments:
 
 - `pipelineServiceRoleArn`: `str`
 
 Returns
-[UpdateAccountSettingsOutputTypeDef](./type_defs.md#updateaccountsettingsoutputtypedef).
+[UpdateAccountSettingsOutputResponseTypeDef](./type_defs.md#updateaccountsettingsoutputresponsetypedef).
 
 ### update_environment
+
+Update an environment.
 
 Type annotations for `boto3.client("proton").update_environment` method.
 
 Boto3 documentation:
 [Proton.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_environment)
+
+Arguments mapping described in
+[UpdateEnvironmentInputTypeDef](./type_defs.md#updateenvironmentinputtypedef).
 
 Keyword-only arguments:
 
@@ -812,9 +1031,12 @@ Keyword-only arguments:
 - `templateMinorVersion`: `str`
 
 Returns
-[UpdateEnvironmentOutputTypeDef](./type_defs.md#updateenvironmentoutputtypedef).
+[UpdateEnvironmentOutputResponseTypeDef](./type_defs.md#updateenvironmentoutputresponsetypedef).
 
 ### update_environment_account_connection
+
+In an environment account, update an environment account connection to use a
+new IAM role.
 
 Type annotations for
 `boto3.client("proton").update_environment_account_connection` method.
@@ -822,21 +1044,29 @@ Type annotations for
 Boto3 documentation:
 [Proton.Client.update_environment_account_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_environment_account_connection)
 
+Arguments mapping described in
+[UpdateEnvironmentAccountConnectionInputTypeDef](./type_defs.md#updateenvironmentaccountconnectioninputtypedef).
+
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 - `roleArn`: `str` *(required)*
 
 Returns
-[UpdateEnvironmentAccountConnectionOutputTypeDef](./type_defs.md#updateenvironmentaccountconnectionoutputtypedef).
+[UpdateEnvironmentAccountConnectionOutputResponseTypeDef](./type_defs.md#updateenvironmentaccountconnectionoutputresponsetypedef).
 
 ### update_environment_template
+
+Update an environment template.
 
 Type annotations for `boto3.client("proton").update_environment_template`
 method.
 
 Boto3 documentation:
 [Proton.Client.update_environment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_environment_template)
+
+Arguments mapping described in
+[UpdateEnvironmentTemplateInputTypeDef](./type_defs.md#updateenvironmenttemplateinputtypedef).
 
 Keyword-only arguments:
 
@@ -845,15 +1075,20 @@ Keyword-only arguments:
 - `displayName`: `str`
 
 Returns
-[UpdateEnvironmentTemplateOutputTypeDef](./type_defs.md#updateenvironmenttemplateoutputtypedef).
+[UpdateEnvironmentTemplateOutputResponseTypeDef](./type_defs.md#updateenvironmenttemplateoutputresponsetypedef).
 
 ### update_environment_template_version
+
+Update a major or minor version of an environment template.
 
 Type annotations for
 `boto3.client("proton").update_environment_template_version` method.
 
 Boto3 documentation:
 [Proton.Client.update_environment_template_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_environment_template_version)
+
+Arguments mapping described in
+[UpdateEnvironmentTemplateVersionInputTypeDef](./type_defs.md#updateenvironmenttemplateversioninputtypedef).
 
 Keyword-only arguments:
 
@@ -865,14 +1100,19 @@ Keyword-only arguments:
   [TemplateVersionStatusType](./literals.md#templateversionstatustype)
 
 Returns
-[UpdateEnvironmentTemplateVersionOutputTypeDef](./type_defs.md#updateenvironmenttemplateversionoutputtypedef).
+[UpdateEnvironmentTemplateVersionOutputResponseTypeDef](./type_defs.md#updateenvironmenttemplateversionoutputresponsetypedef).
 
 ### update_service
+
+Edit a service description or use a spec to add and delete service instances.
 
 Type annotations for `boto3.client("proton").update_service` method.
 
 Boto3 documentation:
 [Proton.Client.update_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_service)
+
+Arguments mapping described in
+[UpdateServiceInputTypeDef](./type_defs.md#updateserviceinputtypedef).
 
 Keyword-only arguments:
 
@@ -881,14 +1121,19 @@ Keyword-only arguments:
 - `spec`: `str`
 
 Returns
-[UpdateServiceOutputTypeDef](./type_defs.md#updateserviceoutputtypedef).
+[UpdateServiceOutputResponseTypeDef](./type_defs.md#updateserviceoutputresponsetypedef).
 
 ### update_service_instance
+
+Update a service instance.
 
 Type annotations for `boto3.client("proton").update_service_instance` method.
 
 Boto3 documentation:
 [Proton.Client.update_service_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_service_instance)
+
+Arguments mapping described in
+[UpdateServiceInstanceInputTypeDef](./type_defs.md#updateserviceinstanceinputtypedef).
 
 Keyword-only arguments:
 
@@ -902,14 +1147,19 @@ Keyword-only arguments:
 - `templateMinorVersion`: `str`
 
 Returns
-[UpdateServiceInstanceOutputTypeDef](./type_defs.md#updateserviceinstanceoutputtypedef).
+[UpdateServiceInstanceOutputResponseTypeDef](./type_defs.md#updateserviceinstanceoutputresponsetypedef).
 
 ### update_service_pipeline
+
+Update the service pipeline.
 
 Type annotations for `boto3.client("proton").update_service_pipeline` method.
 
 Boto3 documentation:
 [Proton.Client.update_service_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_service_pipeline)
+
+Arguments mapping described in
+[UpdateServicePipelineInputTypeDef](./type_defs.md#updateservicepipelineinputtypedef).
 
 Keyword-only arguments:
 
@@ -922,14 +1172,19 @@ Keyword-only arguments:
 - `templateMinorVersion`: `str`
 
 Returns
-[UpdateServicePipelineOutputTypeDef](./type_defs.md#updateservicepipelineoutputtypedef).
+[UpdateServicePipelineOutputResponseTypeDef](./type_defs.md#updateservicepipelineoutputresponsetypedef).
 
 ### update_service_template
+
+Update a service template.
 
 Type annotations for `boto3.client("proton").update_service_template` method.
 
 Boto3 documentation:
 [Proton.Client.update_service_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_service_template)
+
+Arguments mapping described in
+[UpdateServiceTemplateInputTypeDef](./type_defs.md#updateservicetemplateinputtypedef).
 
 Keyword-only arguments:
 
@@ -938,15 +1193,20 @@ Keyword-only arguments:
 - `displayName`: `str`
 
 Returns
-[UpdateServiceTemplateOutputTypeDef](./type_defs.md#updateservicetemplateoutputtypedef).
+[UpdateServiceTemplateOutputResponseTypeDef](./type_defs.md#updateservicetemplateoutputresponsetypedef).
 
 ### update_service_template_version
+
+Update a major or minor version of a service template.
 
 Type annotations for `boto3.client("proton").update_service_template_version`
 method.
 
 Boto3 documentation:
 [Proton.Client.update_service_template_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_service_template_version)
+
+Arguments mapping described in
+[UpdateServiceTemplateVersionInputTypeDef](./type_defs.md#updateservicetemplateversioninputtypedef).
 
 Keyword-only arguments:
 
@@ -960,7 +1220,7 @@ Keyword-only arguments:
   [TemplateVersionStatusType](./literals.md#templateversionstatustype)
 
 Returns
-[UpdateServiceTemplateVersionOutputTypeDef](./type_defs.md#updateservicetemplateversionoutputtypedef).
+[UpdateServiceTemplateVersionOutputResponseTypeDef](./type_defs.md#updateservicetemplateversionoutputresponsetypedef).
 
 ### get_paginator
 

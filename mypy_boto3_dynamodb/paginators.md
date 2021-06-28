@@ -33,14 +33,14 @@ Boto3 documentation:
 Arguments for `ListBackupsPaginator.paginate` method:
 
 - `TableName`: `str`
-- `TimeRangeLowerBound`: `datetime`
-- `TimeRangeUpperBound`: `datetime`
+- `TimeRangeLowerBound`: `Union`\[`datetime`, `str`\]
+- `TimeRangeUpperBound`: `Union`\[`datetime`, `str`\]
 - `BackupType`: [BackupTypeFilterType](./literals.md#backuptypefiltertype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListBackupsPaginator.paginate` returns
-`Iterator`\[[ListBackupsOutputTypeDef](./type_defs.md#listbackupsoutputtypedef)\].
+`Iterator`\[[ListBackupsOutputResponseTypeDef](./type_defs.md#listbackupsoutputresponsetypedef)\].
 
 ## ListTablesPaginator
 
@@ -64,7 +64,7 @@ Arguments for `ListTablesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTablesPaginator.paginate` returns
-`Iterator`\[[ListTablesOutputTypeDef](./type_defs.md#listtablesoutputtypedef)\].
+`Iterator`\[[ListTablesOutputResponseTypeDef](./type_defs.md#listtablesoutputresponsetypedef)\].
 
 ## ListTagsOfResourcePaginator
 
@@ -90,7 +90,7 @@ Arguments for `ListTagsOfResourcePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsOfResourcePaginator.paginate` returns
-`Iterator`\[[ListTagsOfResourceOutputTypeDef](./type_defs.md#listtagsofresourceoutputtypedef)\].
+`Iterator`\[[ListTagsOfResourceOutputResponseTypeDef](./type_defs.md#listtagsofresourceoutputresponsetypedef)\].
 
 ## QueryPaginator
 
@@ -136,7 +136,7 @@ Arguments for `QueryPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `QueryPaginator.paginate` returns
-`Iterator`\[[QueryOutputTypeDef](./type_defs.md#queryoutputtypedef)\].
+`Iterator`\[[QueryOutputResponseTypeDef](./type_defs.md#queryoutputresponsetypedef)\].
 
 ## ScanPaginator
 
@@ -180,4 +180,4 @@ Arguments for `ScanPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ScanPaginator.paginate` returns
-`Iterator`\[[ScanOutputTypeDef](./type_defs.md#scanoutputtypedef)\].
+`Iterator`\[[ScanOutputResponseTypeDef](./type_defs.md#scanoutputresponsetypedef)\].

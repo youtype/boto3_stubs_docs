@@ -14,13 +14,17 @@ type annotations stubs module
   - [FieldStatsTypeDef](#fieldstatstypedef)
   - [HitTypeDef](#hittypedef)
   - [HitsTypeDef](#hitstypedef)
-  - [SearchResponseTypeDef](#searchresponsetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [SearchRequestTypeDef](#searchrequesttypedef)
+  - [SearchResponseResponseTypeDef](#searchresponseresponsetypedef)
   - [SearchStatusTypeDef](#searchstatustypedef)
   - [SuggestModelTypeDef](#suggestmodeltypedef)
-  - [SuggestResponseTypeDef](#suggestresponsetypedef)
+  - [SuggestRequestTypeDef](#suggestrequesttypedef)
+  - [SuggestResponseResponseTypeDef](#suggestresponseresponsetypedef)
   - [SuggestStatusTypeDef](#suggeststatustypedef)
   - [SuggestionMatchTypeDef](#suggestionmatchtypedef)
-  - [UploadDocumentsResponseTypeDef](#uploaddocumentsresponsetypedef)
+  - [UploadDocumentsRequestTypeDef](#uploaddocumentsrequesttypedef)
+  - [UploadDocumentsResponseResponseTypeDef](#uploaddocumentsresponseresponsetypedef)
 
 ## BucketInfoTypeDef
 
@@ -96,13 +100,53 @@ Optional fields:
 - `cursor`: `str`
 - `hit`: `List`\[[HitTypeDef](./type_defs.md#hittypedef)\]
 
-## SearchResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_cloudsearchdomain.type_defs import SearchResponseTypeDef
+from mypy_boto3_cloudsearchdomain.type_defs import ResponseMetadataTypeDef
 ```
 
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## SearchRequestTypeDef
+
+```python
+from mypy_boto3_cloudsearchdomain.type_defs import SearchRequestTypeDef
+```
+
+Required fields:
+
+- `query`: `str`
+
 Optional fields:
+
+- `cursor`: `str`
+- `expr`: `str`
+- `facet`: `str`
+- `filterQuery`: `str`
+- `highlight`: `str`
+- `partial`: `bool`
+- `queryOptions`: `str`
+- `queryParser`: [QueryParserType](./literals.md#queryparsertype)
+- `returnFields`: `str`
+- `size`: `int`
+- `sort`: `str`
+- `start`: `int`
+- `stats`: `str`
+
+## SearchResponseResponseTypeDef
+
+```python
+from mypy_boto3_cloudsearchdomain.type_defs import SearchResponseResponseTypeDef
+```
+
+Required fields:
 
 - `status`: [SearchStatusTypeDef](./type_defs.md#searchstatustypedef)
 - `hits`: [HitsTypeDef](./type_defs.md#hitstypedef)
@@ -110,6 +154,8 @@ Optional fields:
   [BucketInfoTypeDef](./type_defs.md#bucketinfotypedef)\]
 - `stats`: `Dict`\[`str`,
   [FieldStatsTypeDef](./type_defs.md#fieldstatstypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## SearchStatusTypeDef
 
@@ -135,16 +181,33 @@ Optional fields:
 - `suggestions`:
   `List`\[[SuggestionMatchTypeDef](./type_defs.md#suggestionmatchtypedef)\]
 
-## SuggestResponseTypeDef
+## SuggestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearchdomain.type_defs import SuggestResponseTypeDef
+from mypy_boto3_cloudsearchdomain.type_defs import SuggestRequestTypeDef
 ```
+
+Required fields:
+
+- `query`: `str`
+- `suggester`: `str`
 
 Optional fields:
 
+- `size`: `int`
+
+## SuggestResponseResponseTypeDef
+
+```python
+from mypy_boto3_cloudsearchdomain.type_defs import SuggestResponseResponseTypeDef
+```
+
+Required fields:
+
 - `status`: [SuggestStatusTypeDef](./type_defs.md#suggeststatustypedef)
 - `suggest`: [SuggestModelTypeDef](./type_defs.md#suggestmodeltypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## SuggestStatusTypeDef
 
@@ -169,16 +232,29 @@ Optional fields:
 - `score`: `int`
 - `id`: `str`
 
-## UploadDocumentsResponseTypeDef
+## UploadDocumentsRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearchdomain.type_defs import UploadDocumentsResponseTypeDef
+from mypy_boto3_cloudsearchdomain.type_defs import UploadDocumentsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `documents`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `contentType`: [ContentTypeType](./literals.md#contenttypetype)
+
+## UploadDocumentsResponseResponseTypeDef
+
+```python
+from mypy_boto3_cloudsearchdomain.type_defs import UploadDocumentsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `status`: `str`
 - `adds`: `int`
 - `deletes`: `int`
 - `warnings`:
   `List`\[[DocumentServiceWarningTypeDef](./type_defs.md#documentservicewarningtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

@@ -85,16 +85,24 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_savingsplans.type_defs import CreateSavingsPlanResponseTypeDef, ...
+from mypy_boto3_savingsplans.type_defs import CreateSavingsPlanRequestTypeDef, ...
 ```
 
-- [CreateSavingsPlanResponseTypeDef](./type_defs.md#createsavingsplanresponsetypedef)
-- [DescribeSavingsPlanRatesResponseTypeDef](./type_defs.md#describesavingsplanratesresponsetypedef)
-- [DescribeSavingsPlansOfferingRatesResponseTypeDef](./type_defs.md#describesavingsplansofferingratesresponsetypedef)
-- [DescribeSavingsPlansOfferingsResponseTypeDef](./type_defs.md#describesavingsplansofferingsresponsetypedef)
-- [DescribeSavingsPlansResponseTypeDef](./type_defs.md#describesavingsplansresponsetypedef)
-- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [CreateSavingsPlanRequestTypeDef](./type_defs.md#createsavingsplanrequesttypedef)
+- [CreateSavingsPlanResponseResponseTypeDef](./type_defs.md#createsavingsplanresponseresponsetypedef)
+- [DeleteQueuedSavingsPlanRequestTypeDef](./type_defs.md#deletequeuedsavingsplanrequesttypedef)
+- [DescribeSavingsPlanRatesRequestTypeDef](./type_defs.md#describesavingsplanratesrequesttypedef)
+- [DescribeSavingsPlanRatesResponseResponseTypeDef](./type_defs.md#describesavingsplanratesresponseresponsetypedef)
+- [DescribeSavingsPlansOfferingRatesRequestTypeDef](./type_defs.md#describesavingsplansofferingratesrequesttypedef)
+- [DescribeSavingsPlansOfferingRatesResponseResponseTypeDef](./type_defs.md#describesavingsplansofferingratesresponseresponsetypedef)
+- [DescribeSavingsPlansOfferingsRequestTypeDef](./type_defs.md#describesavingsplansofferingsrequesttypedef)
+- [DescribeSavingsPlansOfferingsResponseResponseTypeDef](./type_defs.md#describesavingsplansofferingsresponseresponsetypedef)
+- [DescribeSavingsPlansRequestTypeDef](./type_defs.md#describesavingsplansrequesttypedef)
+- [DescribeSavingsPlansResponseResponseTypeDef](./type_defs.md#describesavingsplansresponseresponsetypedef)
+- [ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef)
+- [ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef)
 - [ParentSavingsPlanOfferingTypeDef](./type_defs.md#parentsavingsplanofferingtypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [SavingsPlanFilterTypeDef](./type_defs.md#savingsplanfiltertypedef)
 - [SavingsPlanOfferingFilterElementTypeDef](./type_defs.md#savingsplanofferingfilterelementtypedef)
 - [SavingsPlanOfferingPropertyTypeDef](./type_defs.md#savingsplanofferingpropertytypedef)
@@ -106,3 +114,5 @@ from mypy_boto3_savingsplans.type_defs import CreateSavingsPlanResponseTypeDef, 
 - [SavingsPlanRatePropertyTypeDef](./type_defs.md#savingsplanratepropertytypedef)
 - [SavingsPlanRateTypeDef](./type_defs.md#savingsplanratetypedef)
 - [SavingsPlanTypeDef](./type_defs.md#savingsplantypedef)
+- [TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef)
+- [UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef)

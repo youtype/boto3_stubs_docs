@@ -11,9 +11,12 @@ type annotations stubs module
   - [AssociateClientDeviceWithCoreDeviceEntryTypeDef](#associateclientdevicewithcoredeviceentrytypedef)
   - [AssociateClientDeviceWithCoreDeviceErrorEntryTypeDef](#associateclientdevicewithcoredeviceerrorentrytypedef)
   - [AssociatedClientDeviceTypeDef](#associatedclientdevicetypedef)
-  - [BatchAssociateClientDeviceWithCoreDeviceResponseTypeDef](#batchassociateclientdevicewithcoredeviceresponsetypedef)
-  - [BatchDisassociateClientDeviceFromCoreDeviceResponseTypeDef](#batchdisassociateclientdevicefromcoredeviceresponsetypedef)
-  - [CancelDeploymentResponseTypeDef](#canceldeploymentresponsetypedef)
+  - [BatchAssociateClientDeviceWithCoreDeviceRequestTypeDef](#batchassociateclientdevicewithcoredevicerequesttypedef)
+  - [BatchAssociateClientDeviceWithCoreDeviceResponseResponseTypeDef](#batchassociateclientdevicewithcoredeviceresponseresponsetypedef)
+  - [BatchDisassociateClientDeviceFromCoreDeviceRequestTypeDef](#batchdisassociateclientdevicefromcoredevicerequesttypedef)
+  - [BatchDisassociateClientDeviceFromCoreDeviceResponseResponseTypeDef](#batchdisassociateclientdevicefromcoredeviceresponseresponsetypedef)
+  - [CancelDeploymentRequestTypeDef](#canceldeploymentrequesttypedef)
+  - [CancelDeploymentResponseResponseTypeDef](#canceldeploymentresponseresponsetypedef)
   - [CloudComponentStatusTypeDef](#cloudcomponentstatustypedef)
   - [ComponentCandidateTypeDef](#componentcandidatetypedef)
   - [ComponentConfigurationUpdateTypeDef](#componentconfigurationupdatetypedef)
@@ -25,21 +28,30 @@ type annotations stubs module
   - [ComponentTypeDef](#componenttypedef)
   - [ComponentVersionListItemTypeDef](#componentversionlistitemtypedef)
   - [CoreDeviceTypeDef](#coredevicetypedef)
-  - [CreateComponentVersionResponseTypeDef](#createcomponentversionresponsetypedef)
-  - [CreateDeploymentResponseTypeDef](#createdeploymentresponsetypedef)
+  - [CreateComponentVersionRequestTypeDef](#createcomponentversionrequesttypedef)
+  - [CreateComponentVersionResponseResponseTypeDef](#createcomponentversionresponseresponsetypedef)
+  - [CreateDeploymentRequestTypeDef](#createdeploymentrequesttypedef)
+  - [CreateDeploymentResponseResponseTypeDef](#createdeploymentresponseresponsetypedef)
+  - [DeleteComponentRequestTypeDef](#deletecomponentrequesttypedef)
+  - [DeleteCoreDeviceRequestTypeDef](#deletecoredevicerequesttypedef)
   - [DeploymentComponentUpdatePolicyTypeDef](#deploymentcomponentupdatepolicytypedef)
   - [DeploymentConfigurationValidationPolicyTypeDef](#deploymentconfigurationvalidationpolicytypedef)
   - [DeploymentIoTJobConfigurationTypeDef](#deploymentiotjobconfigurationtypedef)
   - [DeploymentPoliciesTypeDef](#deploymentpoliciestypedef)
   - [DeploymentTypeDef](#deploymenttypedef)
-  - [DescribeComponentResponseTypeDef](#describecomponentresponsetypedef)
+  - [DescribeComponentRequestTypeDef](#describecomponentrequesttypedef)
+  - [DescribeComponentResponseResponseTypeDef](#describecomponentresponseresponsetypedef)
   - [DisassociateClientDeviceFromCoreDeviceEntryTypeDef](#disassociateclientdevicefromcoredeviceentrytypedef)
   - [DisassociateClientDeviceFromCoreDeviceErrorEntryTypeDef](#disassociateclientdevicefromcoredeviceerrorentrytypedef)
   - [EffectiveDeploymentTypeDef](#effectivedeploymenttypedef)
-  - [GetComponentResponseTypeDef](#getcomponentresponsetypedef)
-  - [GetComponentVersionArtifactResponseTypeDef](#getcomponentversionartifactresponsetypedef)
-  - [GetCoreDeviceResponseTypeDef](#getcoredeviceresponsetypedef)
-  - [GetDeploymentResponseTypeDef](#getdeploymentresponsetypedef)
+  - [GetComponentRequestTypeDef](#getcomponentrequesttypedef)
+  - [GetComponentResponseResponseTypeDef](#getcomponentresponseresponsetypedef)
+  - [GetComponentVersionArtifactRequestTypeDef](#getcomponentversionartifactrequesttypedef)
+  - [GetComponentVersionArtifactResponseResponseTypeDef](#getcomponentversionartifactresponseresponsetypedef)
+  - [GetCoreDeviceRequestTypeDef](#getcoredevicerequesttypedef)
+  - [GetCoreDeviceResponseResponseTypeDef](#getcoredeviceresponseresponsetypedef)
+  - [GetDeploymentRequestTypeDef](#getdeploymentrequesttypedef)
+  - [GetDeploymentResponseResponseTypeDef](#getdeploymentresponseresponsetypedef)
   - [InstalledComponentTypeDef](#installedcomponenttypedef)
   - [IoTJobAbortConfigTypeDef](#iotjobabortconfigtypedef)
   - [IoTJobAbortCriteriaTypeDef](#iotjobabortcriteriatypedef)
@@ -54,17 +66,29 @@ type annotations stubs module
   - [LambdaFunctionRecipeSourceTypeDef](#lambdafunctionrecipesourcetypedef)
   - [LambdaLinuxProcessParamsTypeDef](#lambdalinuxprocessparamstypedef)
   - [LambdaVolumeMountTypeDef](#lambdavolumemounttypedef)
-  - [ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef](#listclientdevicesassociatedwithcoredeviceresponsetypedef)
-  - [ListComponentVersionsResponseTypeDef](#listcomponentversionsresponsetypedef)
-  - [ListComponentsResponseTypeDef](#listcomponentsresponsetypedef)
-  - [ListCoreDevicesResponseTypeDef](#listcoredevicesresponsetypedef)
-  - [ListDeploymentsResponseTypeDef](#listdeploymentsresponsetypedef)
-  - [ListEffectiveDeploymentsResponseTypeDef](#listeffectivedeploymentsresponsetypedef)
-  - [ListInstalledComponentsResponseTypeDef](#listinstalledcomponentsresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListClientDevicesAssociatedWithCoreDeviceRequestTypeDef](#listclientdevicesassociatedwithcoredevicerequesttypedef)
+  - [ListClientDevicesAssociatedWithCoreDeviceResponseResponseTypeDef](#listclientdevicesassociatedwithcoredeviceresponseresponsetypedef)
+  - [ListComponentVersionsRequestTypeDef](#listcomponentversionsrequesttypedef)
+  - [ListComponentVersionsResponseResponseTypeDef](#listcomponentversionsresponseresponsetypedef)
+  - [ListComponentsRequestTypeDef](#listcomponentsrequesttypedef)
+  - [ListComponentsResponseResponseTypeDef](#listcomponentsresponseresponsetypedef)
+  - [ListCoreDevicesRequestTypeDef](#listcoredevicesrequesttypedef)
+  - [ListCoreDevicesResponseResponseTypeDef](#listcoredevicesresponseresponsetypedef)
+  - [ListDeploymentsRequestTypeDef](#listdeploymentsrequesttypedef)
+  - [ListDeploymentsResponseResponseTypeDef](#listdeploymentsresponseresponsetypedef)
+  - [ListEffectiveDeploymentsRequestTypeDef](#listeffectivedeploymentsrequesttypedef)
+  - [ListEffectiveDeploymentsResponseResponseTypeDef](#listeffectivedeploymentsresponseresponsetypedef)
+  - [ListInstalledComponentsRequestTypeDef](#listinstalledcomponentsrequesttypedef)
+  - [ListInstalledComponentsResponseResponseTypeDef](#listinstalledcomponentsresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResolveComponentCandidatesResponseTypeDef](#resolvecomponentcandidatesresponsetypedef)
+  - [ResolveComponentCandidatesRequestTypeDef](#resolvecomponentcandidatesrequesttypedef)
+  - [ResolveComponentCandidatesResponseResponseTypeDef](#resolvecomponentcandidatesresponseresponsetypedef)
   - [ResolvedComponentVersionTypeDef](#resolvedcomponentversiontypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
 
 ## AssociateClientDeviceWithCoreDeviceEntryTypeDef
 
@@ -99,37 +123,83 @@ Optional fields:
 - `thingName`: `str`
 - `associationTimestamp`: `datetime`
 
-## BatchAssociateClientDeviceWithCoreDeviceResponseTypeDef
+## BatchAssociateClientDeviceWithCoreDeviceRequestTypeDef
 
 ```python
-from mypy_boto3_greengrassv2.type_defs import BatchAssociateClientDeviceWithCoreDeviceResponseTypeDef
+from mypy_boto3_greengrassv2.type_defs import BatchAssociateClientDeviceWithCoreDeviceRequestTypeDef
 ```
 
+Required fields:
+
+- `coreDeviceThingName`: `str`
+
 Optional fields:
+
+- `entries`:
+  `List`\[[AssociateClientDeviceWithCoreDeviceEntryTypeDef](./type_defs.md#associateclientdevicewithcoredeviceentrytypedef)\]
+
+## BatchAssociateClientDeviceWithCoreDeviceResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import BatchAssociateClientDeviceWithCoreDeviceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `errorEntries`:
   `List`\[[AssociateClientDeviceWithCoreDeviceErrorEntryTypeDef](./type_defs.md#associateclientdevicewithcoredeviceerrorentrytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchDisassociateClientDeviceFromCoreDeviceResponseTypeDef
+## BatchDisassociateClientDeviceFromCoreDeviceRequestTypeDef
 
 ```python
-from mypy_boto3_greengrassv2.type_defs import BatchDisassociateClientDeviceFromCoreDeviceResponseTypeDef
+from mypy_boto3_greengrassv2.type_defs import BatchDisassociateClientDeviceFromCoreDeviceRequestTypeDef
 ```
 
+Required fields:
+
+- `coreDeviceThingName`: `str`
+
 Optional fields:
+
+- `entries`:
+  `List`\[[DisassociateClientDeviceFromCoreDeviceEntryTypeDef](./type_defs.md#disassociateclientdevicefromcoredeviceentrytypedef)\]
+
+## BatchDisassociateClientDeviceFromCoreDeviceResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import BatchDisassociateClientDeviceFromCoreDeviceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `errorEntries`:
   `List`\[[DisassociateClientDeviceFromCoreDeviceErrorEntryTypeDef](./type_defs.md#disassociateclientdevicefromcoredeviceerrorentrytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CancelDeploymentResponseTypeDef
+## CancelDeploymentRequestTypeDef
 
 ```python
-from mypy_boto3_greengrassv2.type_defs import CancelDeploymentResponseTypeDef
+from mypy_boto3_greengrassv2.type_defs import CancelDeploymentRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `deploymentId`: `str`
+
+## CancelDeploymentResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import CancelDeploymentResponseResponseTypeDef
+```
+
+Required fields:
 
 - `message`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CloudComponentStatusTypeDef
 
@@ -266,35 +336,90 @@ Optional fields:
 - `status`: [CoreDeviceStatusType](./literals.md#coredevicestatustype)
 - `lastStatusUpdateTimestamp`: `datetime`
 
-## CreateComponentVersionResponseTypeDef
+## CreateComponentVersionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrassv2.type_defs import CreateComponentVersionResponseTypeDef
+from mypy_boto3_greengrassv2.type_defs import CreateComponentVersionRequestTypeDef
+```
+
+Optional fields:
+
+- `inlineRecipe`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `lambdaFunction`:
+  [LambdaFunctionRecipeSourceTypeDef](./type_defs.md#lambdafunctionrecipesourcetypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateComponentVersionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import CreateComponentVersionResponseResponseTypeDef
 ```
 
 Required fields:
 
+- `arn`: `str`
 - `componentName`: `str`
 - `componentVersion`: `str`
 - `creationTimestamp`: `datetime`
 - `status`:
   [CloudComponentStatusTypeDef](./type_defs.md#cloudcomponentstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-Optional fields:
-
-- `arn`: `str`
-
-## CreateDeploymentResponseTypeDef
+## CreateDeploymentRequestTypeDef
 
 ```python
-from mypy_boto3_greengrassv2.type_defs import CreateDeploymentResponseTypeDef
+from mypy_boto3_greengrassv2.type_defs import CreateDeploymentRequestTypeDef
 ```
 
+Required fields:
+
+- `targetArn`: `str`
+
 Optional fields:
+
+- `deploymentName`: `str`
+- `components`: `Dict`\[`str`,
+  [ComponentDeploymentSpecificationTypeDef](./type_defs.md#componentdeploymentspecificationtypedef)\]
+- `iotJobConfiguration`:
+  [DeploymentIoTJobConfigurationTypeDef](./type_defs.md#deploymentiotjobconfigurationtypedef)
+- `deploymentPolicies`:
+  [DeploymentPoliciesTypeDef](./type_defs.md#deploymentpoliciestypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateDeploymentResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import CreateDeploymentResponseResponseTypeDef
+```
+
+Required fields:
 
 - `deploymentId`: `str`
 - `iotJobId`: `str`
 - `iotJobArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteComponentRequestTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import DeleteComponentRequestTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+
+## DeleteCoreDeviceRequestTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import DeleteCoreDeviceRequestTypeDef
+```
+
+Required fields:
+
+- `coreDeviceThingName`: `str`
 
 ## DeploymentComponentUpdatePolicyTypeDef
 
@@ -365,13 +490,23 @@ Optional fields:
   [DeploymentStatusType](./literals.md#deploymentstatustype)
 - `isLatestForTarget`: `bool`
 
-## DescribeComponentResponseTypeDef
+## DescribeComponentRequestTypeDef
 
 ```python
-from mypy_boto3_greengrassv2.type_defs import DescribeComponentResponseTypeDef
+from mypy_boto3_greengrassv2.type_defs import DescribeComponentRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `arn`: `str`
+
+## DescribeComponentResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import DescribeComponentResponseResponseTypeDef
+```
+
+Required fields:
 
 - `arn`: `str`
 - `componentName`: `str`
@@ -384,6 +519,8 @@ Optional fields:
 - `platforms`:
   `List`\[[ComponentPlatformTypeDef](./type_defs.md#componentplatformtypedef)\]
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DisassociateClientDeviceFromCoreDeviceEntryTypeDef
 
@@ -430,39 +567,76 @@ Optional fields:
 - `description`: `str`
 - `reason`: `str`
 
-## GetComponentResponseTypeDef
+## GetComponentRequestTypeDef
 
 ```python
-from mypy_boto3_greengrassv2.type_defs import GetComponentResponseTypeDef
+from mypy_boto3_greengrassv2.type_defs import GetComponentRequestTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+
+Optional fields:
+
+- `recipeOutputFormat`:
+  [RecipeOutputFormatType](./literals.md#recipeoutputformattype)
+
+## GetComponentResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import GetComponentResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `recipeOutputFormat`:
   [RecipeOutputFormatType](./literals.md#recipeoutputformattype)
-- `recipe`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-
-Optional fields:
-
+- `recipe`: `bytes`
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetComponentVersionArtifactResponseTypeDef
+## GetComponentVersionArtifactRequestTypeDef
 
 ```python
-from mypy_boto3_greengrassv2.type_defs import GetComponentVersionArtifactResponseTypeDef
+from mypy_boto3_greengrassv2.type_defs import GetComponentVersionArtifactRequestTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+- `artifactName`: `str`
+
+## GetComponentVersionArtifactResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import GetComponentVersionArtifactResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `preSignedUrl`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCoreDeviceResponseTypeDef
+## GetCoreDeviceRequestTypeDef
 
 ```python
-from mypy_boto3_greengrassv2.type_defs import GetCoreDeviceResponseTypeDef
+from mypy_boto3_greengrassv2.type_defs import GetCoreDeviceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `coreDeviceThingName`: `str`
+
+## GetCoreDeviceResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import GetCoreDeviceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `coreDeviceThingName`: `str`
 - `coreVersion`: `str`
@@ -471,14 +645,26 @@ Optional fields:
 - `status`: [CoreDeviceStatusType](./literals.md#coredevicestatustype)
 - `lastStatusUpdateTimestamp`: `datetime`
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDeploymentResponseTypeDef
+## GetDeploymentRequestTypeDef
 
 ```python
-from mypy_boto3_greengrassv2.type_defs import GetDeploymentResponseTypeDef
+from mypy_boto3_greengrassv2.type_defs import GetDeploymentRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `deploymentId`: `str`
+
+## GetDeploymentResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import GetDeploymentResponseResponseTypeDef
+```
+
+Required fields:
 
 - `targetArn`: `str`
 - `revisionId`: `str`
@@ -497,6 +683,8 @@ Optional fields:
 - `creationTimestamp`: `datetime`
 - `isLatestForTarget`: `bool`
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## InstalledComponentTypeDef
 
@@ -701,98 +889,224 @@ Optional fields:
   [LambdaFilesystemPermissionType](./literals.md#lambdafilesystempermissiontype)
 - `addGroupOwner`: `bool`
 
-## ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef
+## ListClientDevicesAssociatedWithCoreDeviceRequestTypeDef
 
 ```python
-from mypy_boto3_greengrassv2.type_defs import ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef
+from mypy_boto3_greengrassv2.type_defs import ListClientDevicesAssociatedWithCoreDeviceRequestTypeDef
 ```
 
+Required fields:
+
+- `coreDeviceThingName`: `str`
+
 Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListClientDevicesAssociatedWithCoreDeviceResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import ListClientDevicesAssociatedWithCoreDeviceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `associatedClientDevices`:
   `List`\[[AssociatedClientDeviceTypeDef](./type_defs.md#associatedclientdevicetypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListComponentVersionsResponseTypeDef
+## ListComponentVersionsRequestTypeDef
 
 ```python
-from mypy_boto3_greengrassv2.type_defs import ListComponentVersionsResponseTypeDef
+from mypy_boto3_greengrassv2.type_defs import ListComponentVersionsRequestTypeDef
 ```
 
+Required fields:
+
+- `arn`: `str`
+
 Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListComponentVersionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import ListComponentVersionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `componentVersions`:
   `List`\[[ComponentVersionListItemTypeDef](./type_defs.md#componentversionlistitemtypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListComponentsResponseTypeDef
+## ListComponentsRequestTypeDef
 
 ```python
-from mypy_boto3_greengrassv2.type_defs import ListComponentsResponseTypeDef
+from mypy_boto3_greengrassv2.type_defs import ListComponentsRequestTypeDef
 ```
 
 Optional fields:
+
+- `scope`:
+  [ComponentVisibilityScopeType](./literals.md#componentvisibilityscopetype)
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListComponentsResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import ListComponentsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `components`: `List`\[[ComponentTypeDef](./type_defs.md#componenttypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListCoreDevicesResponseTypeDef
+## ListCoreDevicesRequestTypeDef
 
 ```python
-from mypy_boto3_greengrassv2.type_defs import ListCoreDevicesResponseTypeDef
+from mypy_boto3_greengrassv2.type_defs import ListCoreDevicesRequestTypeDef
 ```
 
 Optional fields:
+
+- `thingGroupArn`: `str`
+- `status`: [CoreDeviceStatusType](./literals.md#coredevicestatustype)
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListCoreDevicesResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import ListCoreDevicesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `coreDevices`:
   `List`\[[CoreDeviceTypeDef](./type_defs.md#coredevicetypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDeploymentsResponseTypeDef
+## ListDeploymentsRequestTypeDef
 
 ```python
-from mypy_boto3_greengrassv2.type_defs import ListDeploymentsResponseTypeDef
+from mypy_boto3_greengrassv2.type_defs import ListDeploymentsRequestTypeDef
 ```
 
 Optional fields:
+
+- `targetArn`: `str`
+- `historyFilter`:
+  [DeploymentHistoryFilterType](./literals.md#deploymenthistoryfiltertype)
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListDeploymentsResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import ListDeploymentsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `deployments`:
   `List`\[[DeploymentTypeDef](./type_defs.md#deploymenttypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListEffectiveDeploymentsResponseTypeDef
+## ListEffectiveDeploymentsRequestTypeDef
 
 ```python
-from mypy_boto3_greengrassv2.type_defs import ListEffectiveDeploymentsResponseTypeDef
+from mypy_boto3_greengrassv2.type_defs import ListEffectiveDeploymentsRequestTypeDef
 ```
 
+Required fields:
+
+- `coreDeviceThingName`: `str`
+
 Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListEffectiveDeploymentsResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import ListEffectiveDeploymentsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `effectiveDeployments`:
   `List`\[[EffectiveDeploymentTypeDef](./type_defs.md#effectivedeploymenttypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListInstalledComponentsResponseTypeDef
+## ListInstalledComponentsRequestTypeDef
 
 ```python
-from mypy_boto3_greengrassv2.type_defs import ListInstalledComponentsResponseTypeDef
+from mypy_boto3_greengrassv2.type_defs import ListInstalledComponentsRequestTypeDef
 ```
 
+Required fields:
+
+- `coreDeviceThingName`: `str`
+
 Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListInstalledComponentsResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import ListInstalledComponentsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `installedComponents`:
   `List`\[[InstalledComponentTypeDef](./type_defs.md#installedcomponenttypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_greengrassv2.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_greengrassv2.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `resourceArn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -806,16 +1120,31 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## ResolveComponentCandidatesResponseTypeDef
+## ResolveComponentCandidatesRequestTypeDef
 
 ```python
-from mypy_boto3_greengrassv2.type_defs import ResolveComponentCandidatesResponseTypeDef
+from mypy_boto3_greengrassv2.type_defs import ResolveComponentCandidatesRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `platform`:
+  [ComponentPlatformTypeDef](./type_defs.md#componentplatformtypedef)
+- `componentCandidates`:
+  `List`\[[ComponentCandidateTypeDef](./type_defs.md#componentcandidatetypedef)\]
+
+## ResolveComponentCandidatesResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import ResolveComponentCandidatesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `resolvedComponentVersions`:
   `List`\[[ResolvedComponentVersionTypeDef](./type_defs.md#resolvedcomponentversiontypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ResolvedComponentVersionTypeDef
 
@@ -828,4 +1157,40 @@ Optional fields:
 - `arn`: `str`
 - `componentName`: `str`
 - `componentVersion`: `str`
-- `recipe`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `recipe`: `bytes`
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## UntagResourceRequestTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tagKeys`: `List`\[`str`\]

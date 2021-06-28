@@ -105,10 +105,16 @@ Exceptions:
 
 ### associate_web_acl
 
+Associates a web ACL with a regional application resource, to protect the
+resource.
+
 Type annotations for `boto3.client("wafv2").associate_web_acl` method.
 
 Boto3 documentation:
 [WAFV2.Client.associate_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.associate_web_acl)
+
+Arguments mapping described in
+[AssociateWebACLRequestTypeDef](./type_defs.md#associatewebaclrequesttypedef).
 
 Keyword-only arguments:
 
@@ -118,6 +124,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("wafv2").can_paginate` method.
 
@@ -132,10 +140,16 @@ Returns `bool`.
 
 ### check_capacity
 
+Returns the web ACL capacity unit (WCU) requirements for a specified scope and
+set of rules.
+
 Type annotations for `boto3.client("wafv2").check_capacity` method.
 
 Boto3 documentation:
 [WAFV2.Client.check_capacity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.check_capacity)
+
+Arguments mapping described in
+[CheckCapacityRequestTypeDef](./type_defs.md#checkcapacityrequesttypedef).
 
 Keyword-only arguments:
 
@@ -143,14 +157,20 @@ Keyword-only arguments:
 - `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\] *(required)*
 
 Returns
-[CheckCapacityResponseTypeDef](./type_defs.md#checkcapacityresponsetypedef).
+[CheckCapacityResponseResponseTypeDef](./type_defs.md#checkcapacityresponseresponsetypedef).
 
 ### create_ip_set
+
+Creates an IPSet , which you use to identify web requests that originate from
+specific IP addresses or ranges of IP addresses.
 
 Type annotations for `boto3.client("wafv2").create_ip_set` method.
 
 Boto3 documentation:
 [WAFV2.Client.create_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_ip_set)
+
+Arguments mapping described in
+[CreateIPSetRequestTypeDef](./type_defs.md#createipsetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -163,14 +183,21 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateIPSetResponseTypeDef](./type_defs.md#createipsetresponsetypedef).
+[CreateIPSetResponseResponseTypeDef](./type_defs.md#createipsetresponseresponsetypedef).
 
 ### create_regex_pattern_set
+
+Creates a RegexPatternSet , which you reference in a
+RegexPatternSetReferenceStatement , to have WAF inspect a web request component
+for the specified patterns.
 
 Type annotations for `boto3.client("wafv2").create_regex_pattern_set` method.
 
 Boto3 documentation:
 [WAFV2.Client.create_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_regex_pattern_set)
+
+Arguments mapping described in
+[CreateRegexPatternSetRequestTypeDef](./type_defs.md#createregexpatternsetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -182,14 +209,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateRegexPatternSetResponseTypeDef](./type_defs.md#createregexpatternsetresponsetypedef).
+[CreateRegexPatternSetResponseResponseTypeDef](./type_defs.md#createregexpatternsetresponseresponsetypedef).
 
 ### create_rule_group
+
+Creates a RuleGroup per the specifications provided.
 
 Type annotations for `boto3.client("wafv2").create_rule_group` method.
 
 Boto3 documentation:
 [WAFV2.Client.create_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_rule_group)
+
+Arguments mapping described in
+[CreateRuleGroupRequestTypeDef](./type_defs.md#createrulegrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -206,14 +238,19 @@ Keyword-only arguments:
   [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
 
 Returns
-[CreateRuleGroupResponseTypeDef](./type_defs.md#createrulegroupresponsetypedef).
+[CreateRuleGroupResponseResponseTypeDef](./type_defs.md#createrulegroupresponseresponsetypedef).
 
 ### create_web_acl
+
+Creates a WebACL per the specifications provided.
 
 Type annotations for `boto3.client("wafv2").create_web_acl` method.
 
 Boto3 documentation:
 [WAFV2.Client.create_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_web_acl)
+
+Arguments mapping described in
+[CreateWebACLRequestTypeDef](./type_defs.md#createwebaclrequesttypedef).
 
 Keyword-only arguments:
 
@@ -231,9 +268,12 @@ Keyword-only arguments:
   [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
 
 Returns
-[CreateWebACLResponseTypeDef](./type_defs.md#createwebaclresponsetypedef).
+[CreateWebACLResponseResponseTypeDef](./type_defs.md#createwebaclresponseresponsetypedef).
 
 ### delete_firewall_manager_rule_groups
+
+Deletes all rule groups that are managed by Firewall Manager for the specified
+web ACL.
 
 Type annotations for
 `boto3.client("wafv2").delete_firewall_manager_rule_groups` method.
@@ -241,20 +281,28 @@ Type annotations for
 Boto3 documentation:
 [WAFV2.Client.delete_firewall_manager_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_firewall_manager_rule_groups)
 
+Arguments mapping described in
+[DeleteFirewallManagerRuleGroupsRequestTypeDef](./type_defs.md#deletefirewallmanagerrulegroupsrequesttypedef).
+
 Keyword-only arguments:
 
 - `WebACLArn`: `str` *(required)*
 - `WebACLLockToken`: `str` *(required)*
 
 Returns
-[DeleteFirewallManagerRuleGroupsResponseTypeDef](./type_defs.md#deletefirewallmanagerrulegroupsresponsetypedef).
+[DeleteFirewallManagerRuleGroupsResponseResponseTypeDef](./type_defs.md#deletefirewallmanagerrulegroupsresponseresponsetypedef).
 
 ### delete_ip_set
+
+Deletes the specified IPSet .
 
 Type annotations for `boto3.client("wafv2").delete_ip_set` method.
 
 Boto3 documentation:
 [WAFV2.Client.delete_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_ip_set)
+
+Arguments mapping described in
+[DeleteIPSetRequestTypeDef](./type_defs.md#deleteipsetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -267,11 +315,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_logging_configuration
 
+Deletes the LoggingConfiguration from the specified web ACL.
+
 Type annotations for `boto3.client("wafv2").delete_logging_configuration`
 method.
 
 Boto3 documentation:
 [WAFV2.Client.delete_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_logging_configuration)
+
+Arguments mapping described in
+[DeleteLoggingConfigurationRequestTypeDef](./type_defs.md#deleteloggingconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -281,10 +334,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_permission_policy
 
+Permanently deletes an IAM policy from the specified rule group.
+
 Type annotations for `boto3.client("wafv2").delete_permission_policy` method.
 
 Boto3 documentation:
 [WAFV2.Client.delete_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_permission_policy)
+
+Arguments mapping described in
+[DeletePermissionPolicyRequestTypeDef](./type_defs.md#deletepermissionpolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -294,10 +352,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_regex_pattern_set
 
+Deletes the specified RegexPatternSet .
+
 Type annotations for `boto3.client("wafv2").delete_regex_pattern_set` method.
 
 Boto3 documentation:
 [WAFV2.Client.delete_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_regex_pattern_set)
+
+Arguments mapping described in
+[DeleteRegexPatternSetRequestTypeDef](./type_defs.md#deleteregexpatternsetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -310,10 +373,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_rule_group
 
+Deletes the specified RuleGroup .
+
 Type annotations for `boto3.client("wafv2").delete_rule_group` method.
 
 Boto3 documentation:
 [WAFV2.Client.delete_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_rule_group)
+
+Arguments mapping described in
+[DeleteRuleGroupRequestTypeDef](./type_defs.md#deleterulegrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -326,10 +394,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_web_acl
 
+Deletes the specified WebACL .
+
 Type annotations for `boto3.client("wafv2").delete_web_acl` method.
 
 Boto3 documentation:
 [WAFV2.Client.delete_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_web_acl)
+
+Arguments mapping described in
+[DeleteWebACLRequestTypeDef](./type_defs.md#deletewebaclrequesttypedef).
 
 Keyword-only arguments:
 
@@ -342,11 +415,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_managed_rule_group
 
+Provides high-level information for a managed rule group, including
+descriptions of the rules.
+
 Type annotations for `boto3.client("wafv2").describe_managed_rule_group`
 method.
 
 Boto3 documentation:
 [WAFV2.Client.describe_managed_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.describe_managed_rule_group)
+
+Arguments mapping described in
+[DescribeManagedRuleGroupRequestTypeDef](./type_defs.md#describemanagedrulegrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -355,14 +434,19 @@ Keyword-only arguments:
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
 
 Returns
-[DescribeManagedRuleGroupResponseTypeDef](./type_defs.md#describemanagedrulegroupresponsetypedef).
+[DescribeManagedRuleGroupResponseResponseTypeDef](./type_defs.md#describemanagedrulegroupresponseresponsetypedef).
 
 ### disassociate_web_acl
+
+Disassociates a web ACL from a regional application resource.
 
 Type annotations for `boto3.client("wafv2").disassociate_web_acl` method.
 
 Boto3 documentation:
 [WAFV2.Client.disassociate_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.disassociate_web_acl)
+
+Arguments mapping described in
+[DisassociateWebACLRequestTypeDef](./type_defs.md#disassociatewebaclrequesttypedef).
 
 Keyword-only arguments:
 
@@ -371,6 +455,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("wafv2").generate_presigned_url` method.
 
@@ -388,10 +474,15 @@ Returns `str`.
 
 ### get_ip_set
 
+Retrieves the specified IPSet .
+
 Type annotations for `boto3.client("wafv2").get_ip_set` method.
 
 Boto3 documentation:
 [WAFV2.Client.get_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_ip_set)
+
+Arguments mapping described in
+[GetIPSetRequestTypeDef](./type_defs.md#getipsetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -399,43 +490,59 @@ Keyword-only arguments:
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
 - `Id`: `str` *(required)*
 
-Returns [GetIPSetResponseTypeDef](./type_defs.md#getipsetresponsetypedef).
+Returns
+[GetIPSetResponseResponseTypeDef](./type_defs.md#getipsetresponseresponsetypedef).
 
 ### get_logging_configuration
+
+Returns the LoggingConfiguration for the specified web ACL.
 
 Type annotations for `boto3.client("wafv2").get_logging_configuration` method.
 
 Boto3 documentation:
 [WAFV2.Client.get_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_logging_configuration)
 
+Arguments mapping described in
+[GetLoggingConfigurationRequestTypeDef](./type_defs.md#getloggingconfigurationrequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[GetLoggingConfigurationResponseTypeDef](./type_defs.md#getloggingconfigurationresponsetypedef).
+[GetLoggingConfigurationResponseResponseTypeDef](./type_defs.md#getloggingconfigurationresponseresponsetypedef).
 
 ### get_permission_policy
+
+Returns the IAM policy that is attached to the specified rule group.
 
 Type annotations for `boto3.client("wafv2").get_permission_policy` method.
 
 Boto3 documentation:
 [WAFV2.Client.get_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_permission_policy)
 
+Arguments mapping described in
+[GetPermissionPolicyRequestTypeDef](./type_defs.md#getpermissionpolicyrequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[GetPermissionPolicyResponseTypeDef](./type_defs.md#getpermissionpolicyresponsetypedef).
+[GetPermissionPolicyResponseResponseTypeDef](./type_defs.md#getpermissionpolicyresponseresponsetypedef).
 
 ### get_rate_based_statement_managed_keys
+
+Retrieves the keys that are currently blocked by a rate-based rule.
 
 Type annotations for
 `boto3.client("wafv2").get_rate_based_statement_managed_keys` method.
 
 Boto3 documentation:
 [WAFV2.Client.get_rate_based_statement_managed_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_rate_based_statement_managed_keys)
+
+Arguments mapping described in
+[GetRateBasedStatementManagedKeysRequestTypeDef](./type_defs.md#getratebasedstatementmanagedkeysrequesttypedef).
 
 Keyword-only arguments:
 
@@ -445,14 +552,19 @@ Keyword-only arguments:
 - `RuleName`: `str` *(required)*
 
 Returns
-[GetRateBasedStatementManagedKeysResponseTypeDef](./type_defs.md#getratebasedstatementmanagedkeysresponsetypedef).
+[GetRateBasedStatementManagedKeysResponseResponseTypeDef](./type_defs.md#getratebasedstatementmanagedkeysresponseresponsetypedef).
 
 ### get_regex_pattern_set
+
+Retrieves the specified RegexPatternSet .
 
 Type annotations for `boto3.client("wafv2").get_regex_pattern_set` method.
 
 Boto3 documentation:
 [WAFV2.Client.get_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_regex_pattern_set)
+
+Arguments mapping described in
+[GetRegexPatternSetRequestTypeDef](./type_defs.md#getregexpatternsetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -461,14 +573,19 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[GetRegexPatternSetResponseTypeDef](./type_defs.md#getregexpatternsetresponsetypedef).
+[GetRegexPatternSetResponseResponseTypeDef](./type_defs.md#getregexpatternsetresponseresponsetypedef).
 
 ### get_rule_group
+
+Retrieves the specified RuleGroup .
 
 Type annotations for `boto3.client("wafv2").get_rule_group` method.
 
 Boto3 documentation:
 [WAFV2.Client.get_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_rule_group)
+
+Arguments mapping described in
+[GetRuleGroupRequestTypeDef](./type_defs.md#getrulegrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -478,14 +595,21 @@ Keyword-only arguments:
 - `ARN`: `str`
 
 Returns
-[GetRuleGroupResponseTypeDef](./type_defs.md#getrulegroupresponsetypedef).
+[GetRuleGroupResponseResponseTypeDef](./type_defs.md#getrulegroupresponseresponsetypedef).
 
 ### get_sampled_requests
+
+Gets detailed information about a specified number of requests--a sample--that
+WAF randomly selects from among the first 5,000 requests that your Amazon Web
+Services resource received during a time range that you choose.
 
 Type annotations for `boto3.client("wafv2").get_sampled_requests` method.
 
 Boto3 documentation:
 [WAFV2.Client.get_sampled_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_sampled_requests)
+
+Arguments mapping described in
+[GetSampledRequestsRequestTypeDef](./type_defs.md#getsampledrequestsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -497,14 +621,19 @@ Keyword-only arguments:
 - `MaxItems`: `int` *(required)*
 
 Returns
-[GetSampledRequestsResponseTypeDef](./type_defs.md#getsampledrequestsresponsetypedef).
+[GetSampledRequestsResponseResponseTypeDef](./type_defs.md#getsampledrequestsresponseresponsetypedef).
 
 ### get_web_acl
+
+Retrieves the specified WebACL .
 
 Type annotations for `boto3.client("wafv2").get_web_acl` method.
 
 Boto3 documentation:
 [WAFV2.Client.get_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_web_acl)
+
+Arguments mapping described in
+[GetWebACLRequestTypeDef](./type_defs.md#getwebaclrequesttypedef).
 
 Keyword-only arguments:
 
@@ -512,23 +641,31 @@ Keyword-only arguments:
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
 - `Id`: `str` *(required)*
 
-Returns [GetWebACLResponseTypeDef](./type_defs.md#getwebaclresponsetypedef).
+Returns
+[GetWebACLResponseResponseTypeDef](./type_defs.md#getwebaclresponseresponsetypedef).
 
 ### get_web_acl_for_resource
+
+Retrieves the WebACL for the specified resource.
 
 Type annotations for `boto3.client("wafv2").get_web_acl_for_resource` method.
 
 Boto3 documentation:
 [WAFV2.Client.get_web_acl_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_web_acl_for_resource)
 
+Arguments mapping described in
+[GetWebACLForResourceRequestTypeDef](./type_defs.md#getwebaclforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[GetWebACLForResourceResponseTypeDef](./type_defs.md#getwebaclforresourceresponsetypedef).
+[GetWebACLForResourceResponseResponseTypeDef](./type_defs.md#getwebaclforresourceresponseresponsetypedef).
 
 ### list_available_managed_rule_groups
+
+Retrieves an array of managed rule groups that are available for you to use.
 
 Type annotations for `boto3.client("wafv2").list_available_managed_rule_groups`
 method.
@@ -536,6 +673,9 @@ method.
 Boto3 documentation:
 [WAFV2.Client.list_available_managed_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_available_managed_rule_groups)
 
+Arguments mapping described in
+[ListAvailableManagedRuleGroupsRequestTypeDef](./type_defs.md#listavailablemanagedrulegroupsrequesttypedef).
+
 Keyword-only arguments:
 
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
@@ -543,14 +683,19 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListAvailableManagedRuleGroupsResponseTypeDef](./type_defs.md#listavailablemanagedrulegroupsresponsetypedef).
+[ListAvailableManagedRuleGroupsResponseResponseTypeDef](./type_defs.md#listavailablemanagedrulegroupsresponseresponsetypedef).
 
 ### list_ip_sets
+
+Retrieves an array of IPSetSummary objects for the IP sets that you manage.
 
 Type annotations for `boto3.client("wafv2").list_ip_sets` method.
 
 Boto3 documentation:
 [WAFV2.Client.list_ip_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_ip_sets)
+
+Arguments mapping described in
+[ListIPSetsRequestTypeDef](./type_defs.md#listipsetsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -558,15 +703,21 @@ Keyword-only arguments:
 - `NextMarker`: `str`
 - `Limit`: `int`
 
-Returns [ListIPSetsResponseTypeDef](./type_defs.md#listipsetsresponsetypedef).
+Returns
+[ListIPSetsResponseResponseTypeDef](./type_defs.md#listipsetsresponseresponsetypedef).
 
 ### list_logging_configurations
+
+Retrieves an array of your LoggingConfiguration objects.
 
 Type annotations for `boto3.client("wafv2").list_logging_configurations`
 method.
 
 Boto3 documentation:
 [WAFV2.Client.list_logging_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_logging_configurations)
+
+Arguments mapping described in
+[ListLoggingConfigurationsRequestTypeDef](./type_defs.md#listloggingconfigurationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -575,14 +726,20 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListLoggingConfigurationsResponseTypeDef](./type_defs.md#listloggingconfigurationsresponsetypedef).
+[ListLoggingConfigurationsResponseResponseTypeDef](./type_defs.md#listloggingconfigurationsresponseresponsetypedef).
 
 ### list_regex_pattern_sets
+
+Retrieves an array of RegexPatternSetSummary objects for the regex pattern sets
+that you manage.
 
 Type annotations for `boto3.client("wafv2").list_regex_pattern_sets` method.
 
 Boto3 documentation:
 [WAFV2.Client.list_regex_pattern_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_regex_pattern_sets)
+
+Arguments mapping described in
+[ListRegexPatternSetsRequestTypeDef](./type_defs.md#listregexpatternsetsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -591,14 +748,20 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListRegexPatternSetsResponseTypeDef](./type_defs.md#listregexpatternsetsresponsetypedef).
+[ListRegexPatternSetsResponseResponseTypeDef](./type_defs.md#listregexpatternsetsresponseresponsetypedef).
 
 ### list_resources_for_web_acl
+
+Retrieves an array of the Amazon Resource Names (ARNs) for the regional
+resources that are associated with the specified web ACL.
 
 Type annotations for `boto3.client("wafv2").list_resources_for_web_acl` method.
 
 Boto3 documentation:
 [WAFV2.Client.list_resources_for_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_resources_for_web_acl)
+
+Arguments mapping described in
+[ListResourcesForWebACLRequestTypeDef](./type_defs.md#listresourcesforwebaclrequesttypedef).
 
 Keyword-only arguments:
 
@@ -606,14 +769,20 @@ Keyword-only arguments:
 - `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 
 Returns
-[ListResourcesForWebACLResponseTypeDef](./type_defs.md#listresourcesforwebaclresponsetypedef).
+[ListResourcesForWebACLResponseResponseTypeDef](./type_defs.md#listresourcesforwebaclresponseresponsetypedef).
 
 ### list_rule_groups
+
+Retrieves an array of RuleGroupSummary objects for the rule groups that you
+manage.
 
 Type annotations for `boto3.client("wafv2").list_rule_groups` method.
 
 Boto3 documentation:
 [WAFV2.Client.list_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_rule_groups)
+
+Arguments mapping described in
+[ListRuleGroupsRequestTypeDef](./type_defs.md#listrulegroupsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -622,14 +791,19 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef).
+[ListRuleGroupsResponseResponseTypeDef](./type_defs.md#listrulegroupsresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Retrieves the TagInfoForResource for the specified resource.
 
 Type annotations for `boto3.client("wafv2").list_tags_for_resource` method.
 
 Boto3 documentation:
 [WAFV2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_tags_for_resource)
+
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -638,14 +812,19 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### list_web_acls
+
+Retrieves an array of WebACLSummary objects for the web ACLs that you manage.
 
 Type annotations for `boto3.client("wafv2").list_web_acls` method.
 
 Boto3 documentation:
 [WAFV2.Client.list_web_acls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_web_acls)
+
+Arguments mapping described in
+[ListWebACLsRequestTypeDef](./type_defs.md#listwebaclsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -654,14 +833,20 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListWebACLsResponseTypeDef](./type_defs.md#listwebaclsresponsetypedef).
+[ListWebACLsResponseResponseTypeDef](./type_defs.md#listwebaclsresponseresponsetypedef).
 
 ### put_logging_configuration
+
+Enables the specified LoggingConfiguration , to start logging from a web ACL,
+according to the configuration provided.
 
 Type annotations for `boto3.client("wafv2").put_logging_configuration` method.
 
 Boto3 documentation:
 [WAFV2.Client.put_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.put_logging_configuration)
+
+Arguments mapping described in
+[PutLoggingConfigurationRequestTypeDef](./type_defs.md#putloggingconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -670,14 +855,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutLoggingConfigurationResponseTypeDef](./type_defs.md#putloggingconfigurationresponsetypedef).
+[PutLoggingConfigurationResponseResponseTypeDef](./type_defs.md#putloggingconfigurationresponseresponsetypedef).
 
 ### put_permission_policy
+
+Attaches an IAM policy to the specified resource.
 
 Type annotations for `boto3.client("wafv2").put_permission_policy` method.
 
 Boto3 documentation:
 [WAFV2.Client.put_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.put_permission_policy)
+
+Arguments mapping described in
+[PutPermissionPolicyRequestTypeDef](./type_defs.md#putpermissionpolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -688,10 +878,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### tag_resource
 
+Associates tags with the specified Amazon Web Services resource.
+
 Type annotations for `boto3.client("wafv2").tag_resource` method.
 
 Boto3 documentation:
 [WAFV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -702,10 +897,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Disassociates tags from an Amazon Web Services resource.
+
 Type annotations for `boto3.client("wafv2").untag_resource` method.
 
 Boto3 documentation:
 [WAFV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -716,10 +916,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_ip_set
 
+Updates the specified IPSet .
+
 Type annotations for `boto3.client("wafv2").update_ip_set` method.
 
 Boto3 documentation:
 [WAFV2.Client.update_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_ip_set)
+
+Arguments mapping described in
+[UpdateIPSetRequestTypeDef](./type_defs.md#updateipsetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -731,14 +936,19 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[UpdateIPSetResponseTypeDef](./type_defs.md#updateipsetresponsetypedef).
+[UpdateIPSetResponseResponseTypeDef](./type_defs.md#updateipsetresponseresponsetypedef).
 
 ### update_regex_pattern_set
+
+Updates the specified RegexPatternSet .
 
 Type annotations for `boto3.client("wafv2").update_regex_pattern_set` method.
 
 Boto3 documentation:
 [WAFV2.Client.update_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_regex_pattern_set)
+
+Arguments mapping described in
+[UpdateRegexPatternSetRequestTypeDef](./type_defs.md#updateregexpatternsetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -751,14 +961,19 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[UpdateRegexPatternSetResponseTypeDef](./type_defs.md#updateregexpatternsetresponsetypedef).
+[UpdateRegexPatternSetResponseResponseTypeDef](./type_defs.md#updateregexpatternsetresponseresponsetypedef).
 
 ### update_rule_group
+
+Updates the specified RuleGroup .
 
 Type annotations for `boto3.client("wafv2").update_rule_group` method.
 
 Boto3 documentation:
 [WAFV2.Client.update_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_rule_group)
+
+Arguments mapping described in
+[UpdateRuleGroupRequestTypeDef](./type_defs.md#updaterulegrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -775,14 +990,19 @@ Keyword-only arguments:
   [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
 
 Returns
-[UpdateRuleGroupResponseTypeDef](./type_defs.md#updaterulegroupresponsetypedef).
+[UpdateRuleGroupResponseResponseTypeDef](./type_defs.md#updaterulegroupresponseresponsetypedef).
 
 ### update_web_acl
+
+Updates the specified WebACL .
 
 Type annotations for `boto3.client("wafv2").update_web_acl` method.
 
 Boto3 documentation:
 [WAFV2.Client.update_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_web_acl)
+
+Arguments mapping described in
+[UpdateWebACLRequestTypeDef](./type_defs.md#updatewebaclrequesttypedef).
 
 Keyword-only arguments:
 
@@ -801,4 +1021,4 @@ Keyword-only arguments:
   [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
 
 Returns
-[UpdateWebACLResponseTypeDef](./type_defs.md#updatewebaclresponsetypedef).
+[UpdateWebACLResponseResponseTypeDef](./type_defs.md#updatewebaclresponseresponsetypedef).

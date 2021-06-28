@@ -35,14 +35,14 @@ Arguments for `ListDatasetEntriesPaginator.paginate` method:
 - `DatasetType`: `str` *(required)*
 - `Labeled`: `bool`
 - `AnomalyClass`: `str`
-- `BeforeCreationDate`: `datetime`
-- `AfterCreationDate`: `datetime`
+- `BeforeCreationDate`: `Union`\[`datetime`, `str`\]
+- `AfterCreationDate`: `Union`\[`datetime`, `str`\]
 - `SourceRefContains`: `str`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDatasetEntriesPaginator.paginate` returns
-`Iterator`\[[ListDatasetEntriesResponseTypeDef](./type_defs.md#listdatasetentriesresponsetypedef)\].
+`Iterator`\[[ListDatasetEntriesResponseResponseTypeDef](./type_defs.md#listdatasetentriesresponseresponsetypedef)\].
 
 ## ListModelsPaginator
 
@@ -68,7 +68,7 @@ Arguments for `ListModelsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListModelsPaginator.paginate` returns
-`Iterator`\[[ListModelsResponseTypeDef](./type_defs.md#listmodelsresponsetypedef)\].
+`Iterator`\[[ListModelsResponseResponseTypeDef](./type_defs.md#listmodelsresponseresponsetypedef)\].
 
 ## ListProjectsPaginator
 
@@ -93,4 +93,4 @@ Arguments for `ListProjectsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProjectsPaginator.paginate` returns
-`Iterator`\[[ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef)\].
+`Iterator`\[[ListProjectsResponseResponseTypeDef](./type_defs.md#listprojectsresponseresponsetypedef)\].

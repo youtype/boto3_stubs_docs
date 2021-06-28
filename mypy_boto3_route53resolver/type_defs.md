@@ -8,26 +8,46 @@ type annotations stubs module
 [mypy_boto3_route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
 
 - [Typed dictionaries for boto3 Route53Resolver module](#typed-dictionaries-for-boto3-route53resolver-module)
-  - [AssociateFirewallRuleGroupResponseTypeDef](#associatefirewallrulegroupresponsetypedef)
-  - [AssociateResolverEndpointIpAddressResponseTypeDef](#associateresolverendpointipaddressresponsetypedef)
-  - [AssociateResolverQueryLogConfigResponseTypeDef](#associateresolverquerylogconfigresponsetypedef)
-  - [AssociateResolverRuleResponseTypeDef](#associateresolverruleresponsetypedef)
-  - [CreateFirewallDomainListResponseTypeDef](#createfirewalldomainlistresponsetypedef)
-  - [CreateFirewallRuleGroupResponseTypeDef](#createfirewallrulegroupresponsetypedef)
-  - [CreateFirewallRuleResponseTypeDef](#createfirewallruleresponsetypedef)
-  - [CreateResolverEndpointResponseTypeDef](#createresolverendpointresponsetypedef)
-  - [CreateResolverQueryLogConfigResponseTypeDef](#createresolverquerylogconfigresponsetypedef)
-  - [CreateResolverRuleResponseTypeDef](#createresolverruleresponsetypedef)
-  - [DeleteFirewallDomainListResponseTypeDef](#deletefirewalldomainlistresponsetypedef)
-  - [DeleteFirewallRuleGroupResponseTypeDef](#deletefirewallrulegroupresponsetypedef)
-  - [DeleteFirewallRuleResponseTypeDef](#deletefirewallruleresponsetypedef)
-  - [DeleteResolverEndpointResponseTypeDef](#deleteresolverendpointresponsetypedef)
-  - [DeleteResolverQueryLogConfigResponseTypeDef](#deleteresolverquerylogconfigresponsetypedef)
-  - [DeleteResolverRuleResponseTypeDef](#deleteresolverruleresponsetypedef)
-  - [DisassociateFirewallRuleGroupResponseTypeDef](#disassociatefirewallrulegroupresponsetypedef)
-  - [DisassociateResolverEndpointIpAddressResponseTypeDef](#disassociateresolverendpointipaddressresponsetypedef)
-  - [DisassociateResolverQueryLogConfigResponseTypeDef](#disassociateresolverquerylogconfigresponsetypedef)
-  - [DisassociateResolverRuleResponseTypeDef](#disassociateresolverruleresponsetypedef)
+  - [AssociateFirewallRuleGroupRequestTypeDef](#associatefirewallrulegrouprequesttypedef)
+  - [AssociateFirewallRuleGroupResponseResponseTypeDef](#associatefirewallrulegroupresponseresponsetypedef)
+  - [AssociateResolverEndpointIpAddressRequestTypeDef](#associateresolverendpointipaddressrequesttypedef)
+  - [AssociateResolverEndpointIpAddressResponseResponseTypeDef](#associateresolverendpointipaddressresponseresponsetypedef)
+  - [AssociateResolverQueryLogConfigRequestTypeDef](#associateresolverquerylogconfigrequesttypedef)
+  - [AssociateResolverQueryLogConfigResponseResponseTypeDef](#associateresolverquerylogconfigresponseresponsetypedef)
+  - [AssociateResolverRuleRequestTypeDef](#associateresolverrulerequesttypedef)
+  - [AssociateResolverRuleResponseResponseTypeDef](#associateresolverruleresponseresponsetypedef)
+  - [CreateFirewallDomainListRequestTypeDef](#createfirewalldomainlistrequesttypedef)
+  - [CreateFirewallDomainListResponseResponseTypeDef](#createfirewalldomainlistresponseresponsetypedef)
+  - [CreateFirewallRuleGroupRequestTypeDef](#createfirewallrulegrouprequesttypedef)
+  - [CreateFirewallRuleGroupResponseResponseTypeDef](#createfirewallrulegroupresponseresponsetypedef)
+  - [CreateFirewallRuleRequestTypeDef](#createfirewallrulerequesttypedef)
+  - [CreateFirewallRuleResponseResponseTypeDef](#createfirewallruleresponseresponsetypedef)
+  - [CreateResolverEndpointRequestTypeDef](#createresolverendpointrequesttypedef)
+  - [CreateResolverEndpointResponseResponseTypeDef](#createresolverendpointresponseresponsetypedef)
+  - [CreateResolverQueryLogConfigRequestTypeDef](#createresolverquerylogconfigrequesttypedef)
+  - [CreateResolverQueryLogConfigResponseResponseTypeDef](#createresolverquerylogconfigresponseresponsetypedef)
+  - [CreateResolverRuleRequestTypeDef](#createresolverrulerequesttypedef)
+  - [CreateResolverRuleResponseResponseTypeDef](#createresolverruleresponseresponsetypedef)
+  - [DeleteFirewallDomainListRequestTypeDef](#deletefirewalldomainlistrequesttypedef)
+  - [DeleteFirewallDomainListResponseResponseTypeDef](#deletefirewalldomainlistresponseresponsetypedef)
+  - [DeleteFirewallRuleGroupRequestTypeDef](#deletefirewallrulegrouprequesttypedef)
+  - [DeleteFirewallRuleGroupResponseResponseTypeDef](#deletefirewallrulegroupresponseresponsetypedef)
+  - [DeleteFirewallRuleRequestTypeDef](#deletefirewallrulerequesttypedef)
+  - [DeleteFirewallRuleResponseResponseTypeDef](#deletefirewallruleresponseresponsetypedef)
+  - [DeleteResolverEndpointRequestTypeDef](#deleteresolverendpointrequesttypedef)
+  - [DeleteResolverEndpointResponseResponseTypeDef](#deleteresolverendpointresponseresponsetypedef)
+  - [DeleteResolverQueryLogConfigRequestTypeDef](#deleteresolverquerylogconfigrequesttypedef)
+  - [DeleteResolverQueryLogConfigResponseResponseTypeDef](#deleteresolverquerylogconfigresponseresponsetypedef)
+  - [DeleteResolverRuleRequestTypeDef](#deleteresolverrulerequesttypedef)
+  - [DeleteResolverRuleResponseResponseTypeDef](#deleteresolverruleresponseresponsetypedef)
+  - [DisassociateFirewallRuleGroupRequestTypeDef](#disassociatefirewallrulegrouprequesttypedef)
+  - [DisassociateFirewallRuleGroupResponseResponseTypeDef](#disassociatefirewallrulegroupresponseresponsetypedef)
+  - [DisassociateResolverEndpointIpAddressRequestTypeDef](#disassociateresolverendpointipaddressrequesttypedef)
+  - [DisassociateResolverEndpointIpAddressResponseResponseTypeDef](#disassociateresolverendpointipaddressresponseresponsetypedef)
+  - [DisassociateResolverQueryLogConfigRequestTypeDef](#disassociateresolverquerylogconfigrequesttypedef)
+  - [DisassociateResolverQueryLogConfigResponseResponseTypeDef](#disassociateresolverquerylogconfigresponseresponsetypedef)
+  - [DisassociateResolverRuleRequestTypeDef](#disassociateresolverrulerequesttypedef)
+  - [DisassociateResolverRuleResponseResponseTypeDef](#disassociateresolverruleresponseresponsetypedef)
   - [FilterTypeDef](#filtertypedef)
   - [FirewallConfigTypeDef](#firewallconfigtypedef)
   - [FirewallDomainListMetadataTypeDef](#firewalldomainlistmetadatatypedef)
@@ -36,41 +56,72 @@ type annotations stubs module
   - [FirewallRuleGroupMetadataTypeDef](#firewallrulegroupmetadatatypedef)
   - [FirewallRuleGroupTypeDef](#firewallrulegrouptypedef)
   - [FirewallRuleTypeDef](#firewallruletypedef)
-  - [GetFirewallConfigResponseTypeDef](#getfirewallconfigresponsetypedef)
-  - [GetFirewallDomainListResponseTypeDef](#getfirewalldomainlistresponsetypedef)
-  - [GetFirewallRuleGroupAssociationResponseTypeDef](#getfirewallrulegroupassociationresponsetypedef)
-  - [GetFirewallRuleGroupPolicyResponseTypeDef](#getfirewallrulegrouppolicyresponsetypedef)
-  - [GetFirewallRuleGroupResponseTypeDef](#getfirewallrulegroupresponsetypedef)
-  - [GetResolverDnssecConfigResponseTypeDef](#getresolverdnssecconfigresponsetypedef)
-  - [GetResolverEndpointResponseTypeDef](#getresolverendpointresponsetypedef)
-  - [GetResolverQueryLogConfigAssociationResponseTypeDef](#getresolverquerylogconfigassociationresponsetypedef)
-  - [GetResolverQueryLogConfigPolicyResponseTypeDef](#getresolverquerylogconfigpolicyresponsetypedef)
-  - [GetResolverQueryLogConfigResponseTypeDef](#getresolverquerylogconfigresponsetypedef)
-  - [GetResolverRuleAssociationResponseTypeDef](#getresolverruleassociationresponsetypedef)
-  - [GetResolverRulePolicyResponseTypeDef](#getresolverrulepolicyresponsetypedef)
-  - [GetResolverRuleResponseTypeDef](#getresolverruleresponsetypedef)
-  - [ImportFirewallDomainsResponseTypeDef](#importfirewalldomainsresponsetypedef)
+  - [GetFirewallConfigRequestTypeDef](#getfirewallconfigrequesttypedef)
+  - [GetFirewallConfigResponseResponseTypeDef](#getfirewallconfigresponseresponsetypedef)
+  - [GetFirewallDomainListRequestTypeDef](#getfirewalldomainlistrequesttypedef)
+  - [GetFirewallDomainListResponseResponseTypeDef](#getfirewalldomainlistresponseresponsetypedef)
+  - [GetFirewallRuleGroupAssociationRequestTypeDef](#getfirewallrulegroupassociationrequesttypedef)
+  - [GetFirewallRuleGroupAssociationResponseResponseTypeDef](#getfirewallrulegroupassociationresponseresponsetypedef)
+  - [GetFirewallRuleGroupPolicyRequestTypeDef](#getfirewallrulegrouppolicyrequesttypedef)
+  - [GetFirewallRuleGroupPolicyResponseResponseTypeDef](#getfirewallrulegrouppolicyresponseresponsetypedef)
+  - [GetFirewallRuleGroupRequestTypeDef](#getfirewallrulegrouprequesttypedef)
+  - [GetFirewallRuleGroupResponseResponseTypeDef](#getfirewallrulegroupresponseresponsetypedef)
+  - [GetResolverDnssecConfigRequestTypeDef](#getresolverdnssecconfigrequesttypedef)
+  - [GetResolverDnssecConfigResponseResponseTypeDef](#getresolverdnssecconfigresponseresponsetypedef)
+  - [GetResolverEndpointRequestTypeDef](#getresolverendpointrequesttypedef)
+  - [GetResolverEndpointResponseResponseTypeDef](#getresolverendpointresponseresponsetypedef)
+  - [GetResolverQueryLogConfigAssociationRequestTypeDef](#getresolverquerylogconfigassociationrequesttypedef)
+  - [GetResolverQueryLogConfigAssociationResponseResponseTypeDef](#getresolverquerylogconfigassociationresponseresponsetypedef)
+  - [GetResolverQueryLogConfigPolicyRequestTypeDef](#getresolverquerylogconfigpolicyrequesttypedef)
+  - [GetResolverQueryLogConfigPolicyResponseResponseTypeDef](#getresolverquerylogconfigpolicyresponseresponsetypedef)
+  - [GetResolverQueryLogConfigRequestTypeDef](#getresolverquerylogconfigrequesttypedef)
+  - [GetResolverQueryLogConfigResponseResponseTypeDef](#getresolverquerylogconfigresponseresponsetypedef)
+  - [GetResolverRuleAssociationRequestTypeDef](#getresolverruleassociationrequesttypedef)
+  - [GetResolverRuleAssociationResponseResponseTypeDef](#getresolverruleassociationresponseresponsetypedef)
+  - [GetResolverRulePolicyRequestTypeDef](#getresolverrulepolicyrequesttypedef)
+  - [GetResolverRulePolicyResponseResponseTypeDef](#getresolverrulepolicyresponseresponsetypedef)
+  - [GetResolverRuleRequestTypeDef](#getresolverrulerequesttypedef)
+  - [GetResolverRuleResponseResponseTypeDef](#getresolverruleresponseresponsetypedef)
+  - [ImportFirewallDomainsRequestTypeDef](#importfirewalldomainsrequesttypedef)
+  - [ImportFirewallDomainsResponseResponseTypeDef](#importfirewalldomainsresponseresponsetypedef)
   - [IpAddressRequestTypeDef](#ipaddressrequesttypedef)
   - [IpAddressResponseTypeDef](#ipaddressresponsetypedef)
   - [IpAddressUpdateTypeDef](#ipaddressupdatetypedef)
-  - [ListFirewallConfigsResponseTypeDef](#listfirewallconfigsresponsetypedef)
-  - [ListFirewallDomainListsResponseTypeDef](#listfirewalldomainlistsresponsetypedef)
-  - [ListFirewallDomainsResponseTypeDef](#listfirewalldomainsresponsetypedef)
-  - [ListFirewallRuleGroupAssociationsResponseTypeDef](#listfirewallrulegroupassociationsresponsetypedef)
-  - [ListFirewallRuleGroupsResponseTypeDef](#listfirewallrulegroupsresponsetypedef)
-  - [ListFirewallRulesResponseTypeDef](#listfirewallrulesresponsetypedef)
-  - [ListResolverDnssecConfigsResponseTypeDef](#listresolverdnssecconfigsresponsetypedef)
-  - [ListResolverEndpointIpAddressesResponseTypeDef](#listresolverendpointipaddressesresponsetypedef)
-  - [ListResolverEndpointsResponseTypeDef](#listresolverendpointsresponsetypedef)
-  - [ListResolverQueryLogConfigAssociationsResponseTypeDef](#listresolverquerylogconfigassociationsresponsetypedef)
-  - [ListResolverQueryLogConfigsResponseTypeDef](#listresolverquerylogconfigsresponsetypedef)
-  - [ListResolverRuleAssociationsResponseTypeDef](#listresolverruleassociationsresponsetypedef)
-  - [ListResolverRulesResponseTypeDef](#listresolverrulesresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListFirewallConfigsRequestTypeDef](#listfirewallconfigsrequesttypedef)
+  - [ListFirewallConfigsResponseResponseTypeDef](#listfirewallconfigsresponseresponsetypedef)
+  - [ListFirewallDomainListsRequestTypeDef](#listfirewalldomainlistsrequesttypedef)
+  - [ListFirewallDomainListsResponseResponseTypeDef](#listfirewalldomainlistsresponseresponsetypedef)
+  - [ListFirewallDomainsRequestTypeDef](#listfirewalldomainsrequesttypedef)
+  - [ListFirewallDomainsResponseResponseTypeDef](#listfirewalldomainsresponseresponsetypedef)
+  - [ListFirewallRuleGroupAssociationsRequestTypeDef](#listfirewallrulegroupassociationsrequesttypedef)
+  - [ListFirewallRuleGroupAssociationsResponseResponseTypeDef](#listfirewallrulegroupassociationsresponseresponsetypedef)
+  - [ListFirewallRuleGroupsRequestTypeDef](#listfirewallrulegroupsrequesttypedef)
+  - [ListFirewallRuleGroupsResponseResponseTypeDef](#listfirewallrulegroupsresponseresponsetypedef)
+  - [ListFirewallRulesRequestTypeDef](#listfirewallrulesrequesttypedef)
+  - [ListFirewallRulesResponseResponseTypeDef](#listfirewallrulesresponseresponsetypedef)
+  - [ListResolverDnssecConfigsRequestTypeDef](#listresolverdnssecconfigsrequesttypedef)
+  - [ListResolverDnssecConfigsResponseResponseTypeDef](#listresolverdnssecconfigsresponseresponsetypedef)
+  - [ListResolverEndpointIpAddressesRequestTypeDef](#listresolverendpointipaddressesrequesttypedef)
+  - [ListResolverEndpointIpAddressesResponseResponseTypeDef](#listresolverendpointipaddressesresponseresponsetypedef)
+  - [ListResolverEndpointsRequestTypeDef](#listresolverendpointsrequesttypedef)
+  - [ListResolverEndpointsResponseResponseTypeDef](#listresolverendpointsresponseresponsetypedef)
+  - [ListResolverQueryLogConfigAssociationsRequestTypeDef](#listresolverquerylogconfigassociationsrequesttypedef)
+  - [ListResolverQueryLogConfigAssociationsResponseResponseTypeDef](#listresolverquerylogconfigassociationsresponseresponsetypedef)
+  - [ListResolverQueryLogConfigsRequestTypeDef](#listresolverquerylogconfigsrequesttypedef)
+  - [ListResolverQueryLogConfigsResponseResponseTypeDef](#listresolverquerylogconfigsresponseresponsetypedef)
+  - [ListResolverRuleAssociationsRequestTypeDef](#listresolverruleassociationsrequesttypedef)
+  - [ListResolverRuleAssociationsResponseResponseTypeDef](#listresolverruleassociationsresponseresponsetypedef)
+  - [ListResolverRulesRequestTypeDef](#listresolverrulesrequesttypedef)
+  - [ListResolverRulesResponseResponseTypeDef](#listresolverrulesresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutFirewallRuleGroupPolicyResponseTypeDef](#putfirewallrulegrouppolicyresponsetypedef)
-  - [PutResolverQueryLogConfigPolicyResponseTypeDef](#putresolverquerylogconfigpolicyresponsetypedef)
-  - [PutResolverRulePolicyResponseTypeDef](#putresolverrulepolicyresponsetypedef)
+  - [PutFirewallRuleGroupPolicyRequestTypeDef](#putfirewallrulegrouppolicyrequesttypedef)
+  - [PutFirewallRuleGroupPolicyResponseResponseTypeDef](#putfirewallrulegrouppolicyresponseresponsetypedef)
+  - [PutResolverQueryLogConfigPolicyRequestTypeDef](#putresolverquerylogconfigpolicyrequesttypedef)
+  - [PutResolverQueryLogConfigPolicyResponseResponseTypeDef](#putresolverquerylogconfigpolicyresponseresponsetypedef)
+  - [PutResolverRulePolicyRequestTypeDef](#putresolverrulepolicyrequesttypedef)
+  - [PutResolverRulePolicyResponseResponseTypeDef](#putresolverrulepolicyresponseresponsetypedef)
   - [ResolverDnssecConfigTypeDef](#resolverdnssecconfigtypedef)
   - [ResolverEndpointTypeDef](#resolverendpointtypedef)
   - [ResolverQueryLogConfigAssociationTypeDef](#resolverquerylogconfigassociationtypedef)
@@ -78,231 +129,551 @@ type annotations stubs module
   - [ResolverRuleAssociationTypeDef](#resolverruleassociationtypedef)
   - [ResolverRuleConfigTypeDef](#resolverruleconfigtypedef)
   - [ResolverRuleTypeDef](#resolverruletypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TargetAddressTypeDef](#targetaddresstypedef)
-  - [UpdateFirewallConfigResponseTypeDef](#updatefirewallconfigresponsetypedef)
-  - [UpdateFirewallDomainsResponseTypeDef](#updatefirewalldomainsresponsetypedef)
-  - [UpdateFirewallRuleGroupAssociationResponseTypeDef](#updatefirewallrulegroupassociationresponsetypedef)
-  - [UpdateFirewallRuleResponseTypeDef](#updatefirewallruleresponsetypedef)
-  - [UpdateResolverDnssecConfigResponseTypeDef](#updateresolverdnssecconfigresponsetypedef)
-  - [UpdateResolverEndpointResponseTypeDef](#updateresolverendpointresponsetypedef)
-  - [UpdateResolverRuleResponseTypeDef](#updateresolverruleresponsetypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateFirewallConfigRequestTypeDef](#updatefirewallconfigrequesttypedef)
+  - [UpdateFirewallConfigResponseResponseTypeDef](#updatefirewallconfigresponseresponsetypedef)
+  - [UpdateFirewallDomainsRequestTypeDef](#updatefirewalldomainsrequesttypedef)
+  - [UpdateFirewallDomainsResponseResponseTypeDef](#updatefirewalldomainsresponseresponsetypedef)
+  - [UpdateFirewallRuleGroupAssociationRequestTypeDef](#updatefirewallrulegroupassociationrequesttypedef)
+  - [UpdateFirewallRuleGroupAssociationResponseResponseTypeDef](#updatefirewallrulegroupassociationresponseresponsetypedef)
+  - [UpdateFirewallRuleRequestTypeDef](#updatefirewallrulerequesttypedef)
+  - [UpdateFirewallRuleResponseResponseTypeDef](#updatefirewallruleresponseresponsetypedef)
+  - [UpdateResolverDnssecConfigRequestTypeDef](#updateresolverdnssecconfigrequesttypedef)
+  - [UpdateResolverDnssecConfigResponseResponseTypeDef](#updateresolverdnssecconfigresponseresponsetypedef)
+  - [UpdateResolverEndpointRequestTypeDef](#updateresolverendpointrequesttypedef)
+  - [UpdateResolverEndpointResponseResponseTypeDef](#updateresolverendpointresponseresponsetypedef)
+  - [UpdateResolverRuleRequestTypeDef](#updateresolverrulerequesttypedef)
+  - [UpdateResolverRuleResponseResponseTypeDef](#updateresolverruleresponseresponsetypedef)
 
-## AssociateFirewallRuleGroupResponseTypeDef
+## AssociateFirewallRuleGroupRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import AssociateFirewallRuleGroupResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import AssociateFirewallRuleGroupRequestTypeDef
 ```
 
+Required fields:
+
+- `CreatorRequestId`: `str`
+- `FirewallRuleGroupId`: `str`
+- `VpcId`: `str`
+- `Priority`: `int`
+- `Name`: `str`
+
 Optional fields:
+
+- `MutationProtection`:
+  [MutationProtectionStatusType](./literals.md#mutationprotectionstatustype)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## AssociateFirewallRuleGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import AssociateFirewallRuleGroupResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FirewallRuleGroupAssociation`:
   [FirewallRuleGroupAssociationTypeDef](./type_defs.md#firewallrulegroupassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssociateResolverEndpointIpAddressResponseTypeDef
+## AssociateResolverEndpointIpAddressRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import AssociateResolverEndpointIpAddressResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import AssociateResolverEndpointIpAddressRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResolverEndpointId`: `str`
+- `IpAddress`: [IpAddressUpdateTypeDef](./type_defs.md#ipaddressupdatetypedef)
+
+## AssociateResolverEndpointIpAddressResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import AssociateResolverEndpointIpAddressResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResolverEndpoint`:
   [ResolverEndpointTypeDef](./type_defs.md#resolverendpointtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssociateResolverQueryLogConfigResponseTypeDef
+## AssociateResolverQueryLogConfigRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import AssociateResolverQueryLogConfigResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import AssociateResolverQueryLogConfigRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResolverQueryLogConfigId`: `str`
+- `ResourceId`: `str`
+
+## AssociateResolverQueryLogConfigResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import AssociateResolverQueryLogConfigResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResolverQueryLogConfigAssociation`:
   [ResolverQueryLogConfigAssociationTypeDef](./type_defs.md#resolverquerylogconfigassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssociateResolverRuleResponseTypeDef
+## AssociateResolverRuleRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import AssociateResolverRuleResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import AssociateResolverRuleRequestTypeDef
 ```
 
+Required fields:
+
+- `ResolverRuleId`: `str`
+- `VPCId`: `str`
+
 Optional fields:
+
+- `Name`: `str`
+
+## AssociateResolverRuleResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import AssociateResolverRuleResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResolverRuleAssociation`:
   [ResolverRuleAssociationTypeDef](./type_defs.md#resolverruleassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateFirewallDomainListResponseTypeDef
+## CreateFirewallDomainListRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import CreateFirewallDomainListResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import CreateFirewallDomainListRequestTypeDef
 ```
 
+Required fields:
+
+- `CreatorRequestId`: `str`
+- `Name`: `str`
+
 Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateFirewallDomainListResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import CreateFirewallDomainListResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FirewallDomainList`:
   [FirewallDomainListTypeDef](./type_defs.md#firewalldomainlisttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateFirewallRuleGroupResponseTypeDef
+## CreateFirewallRuleGroupRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import CreateFirewallRuleGroupResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import CreateFirewallRuleGroupRequestTypeDef
 ```
 
+Required fields:
+
+- `CreatorRequestId`: `str`
+- `Name`: `str`
+
 Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateFirewallRuleGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import CreateFirewallRuleGroupResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FirewallRuleGroup`:
   [FirewallRuleGroupTypeDef](./type_defs.md#firewallrulegrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateFirewallRuleResponseTypeDef
+## CreateFirewallRuleRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import CreateFirewallRuleResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import CreateFirewallRuleRequestTypeDef
 ```
 
+Required fields:
+
+- `CreatorRequestId`: `str`
+- `FirewallRuleGroupId`: `str`
+- `FirewallDomainListId`: `str`
+- `Priority`: `int`
+- `Action`: [ActionType](./literals.md#actiontype)
+- `Name`: `str`
+
 Optional fields:
+
+- `BlockResponse`: [BlockResponseType](./literals.md#blockresponsetype)
+- `BlockOverrideDomain`: `str`
+- `BlockOverrideDnsType`: `Literal['CNAME']` (see
+  [BlockOverrideDnsTypeType](./literals.md#blockoverridednstypetype))
+- `BlockOverrideTtl`: `int`
+
+## CreateFirewallRuleResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import CreateFirewallRuleResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FirewallRule`: [FirewallRuleTypeDef](./type_defs.md#firewallruletypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateResolverEndpointResponseTypeDef
+## CreateResolverEndpointRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import CreateResolverEndpointResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import CreateResolverEndpointRequestTypeDef
 ```
 
+Required fields:
+
+- `CreatorRequestId`: `str`
+- `SecurityGroupIds`: `List`\[`str`\]
+- `Direction`:
+  [ResolverEndpointDirectionType](./literals.md#resolverendpointdirectiontype)
+- `IpAddresses`:
+  `List`\[[IpAddressRequestTypeDef](./type_defs.md#ipaddressrequesttypedef)\]
+
 Optional fields:
+
+- `Name`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateResolverEndpointResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import CreateResolverEndpointResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResolverEndpoint`:
   [ResolverEndpointTypeDef](./type_defs.md#resolverendpointtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateResolverQueryLogConfigResponseTypeDef
+## CreateResolverQueryLogConfigRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import CreateResolverQueryLogConfigResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import CreateResolverQueryLogConfigRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+- `DestinationArn`: `str`
+- `CreatorRequestId`: `str`
+
 Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateResolverQueryLogConfigResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import CreateResolverQueryLogConfigResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResolverQueryLogConfig`:
   [ResolverQueryLogConfigTypeDef](./type_defs.md#resolverquerylogconfigtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateResolverRuleResponseTypeDef
+## CreateResolverRuleRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import CreateResolverRuleResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import CreateResolverRuleRequestTypeDef
 ```
 
+Required fields:
+
+- `CreatorRequestId`: `str`
+- `RuleType`: [RuleTypeOptionType](./literals.md#ruletypeoptiontype)
+- `DomainName`: `str`
+
 Optional fields:
+
+- `Name`: `str`
+- `TargetIps`:
+  `List`\[[TargetAddressTypeDef](./type_defs.md#targetaddresstypedef)\]
+- `ResolverEndpointId`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateResolverRuleResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import CreateResolverRuleResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResolverRule`: [ResolverRuleTypeDef](./type_defs.md#resolverruletypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteFirewallDomainListResponseTypeDef
+## DeleteFirewallDomainListRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import DeleteFirewallDomainListResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import DeleteFirewallDomainListRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `FirewallDomainListId`: `str`
+
+## DeleteFirewallDomainListResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import DeleteFirewallDomainListResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FirewallDomainList`:
   [FirewallDomainListTypeDef](./type_defs.md#firewalldomainlisttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteFirewallRuleGroupResponseTypeDef
+## DeleteFirewallRuleGroupRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import DeleteFirewallRuleGroupResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import DeleteFirewallRuleGroupRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `FirewallRuleGroupId`: `str`
+
+## DeleteFirewallRuleGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import DeleteFirewallRuleGroupResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FirewallRuleGroup`:
   [FirewallRuleGroupTypeDef](./type_defs.md#firewallrulegrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteFirewallRuleResponseTypeDef
+## DeleteFirewallRuleRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import DeleteFirewallRuleResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import DeleteFirewallRuleRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `FirewallRuleGroupId`: `str`
+- `FirewallDomainListId`: `str`
+
+## DeleteFirewallRuleResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import DeleteFirewallRuleResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FirewallRule`: [FirewallRuleTypeDef](./type_defs.md#firewallruletypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteResolverEndpointResponseTypeDef
+## DeleteResolverEndpointRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import DeleteResolverEndpointResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import DeleteResolverEndpointRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResolverEndpointId`: `str`
+
+## DeleteResolverEndpointResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import DeleteResolverEndpointResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResolverEndpoint`:
   [ResolverEndpointTypeDef](./type_defs.md#resolverendpointtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteResolverQueryLogConfigResponseTypeDef
+## DeleteResolverQueryLogConfigRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import DeleteResolverQueryLogConfigResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import DeleteResolverQueryLogConfigRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResolverQueryLogConfigId`: `str`
+
+## DeleteResolverQueryLogConfigResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import DeleteResolverQueryLogConfigResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResolverQueryLogConfig`:
   [ResolverQueryLogConfigTypeDef](./type_defs.md#resolverquerylogconfigtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteResolverRuleResponseTypeDef
+## DeleteResolverRuleRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import DeleteResolverRuleResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import DeleteResolverRuleRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResolverRuleId`: `str`
+
+## DeleteResolverRuleResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import DeleteResolverRuleResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResolverRule`: [ResolverRuleTypeDef](./type_defs.md#resolverruletypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociateFirewallRuleGroupResponseTypeDef
+## DisassociateFirewallRuleGroupRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import DisassociateFirewallRuleGroupResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import DisassociateFirewallRuleGroupRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `FirewallRuleGroupAssociationId`: `str`
+
+## DisassociateFirewallRuleGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import DisassociateFirewallRuleGroupResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FirewallRuleGroupAssociation`:
   [FirewallRuleGroupAssociationTypeDef](./type_defs.md#firewallrulegroupassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociateResolverEndpointIpAddressResponseTypeDef
+## DisassociateResolverEndpointIpAddressRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import DisassociateResolverEndpointIpAddressResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import DisassociateResolverEndpointIpAddressRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResolverEndpointId`: `str`
+- `IpAddress`: [IpAddressUpdateTypeDef](./type_defs.md#ipaddressupdatetypedef)
+
+## DisassociateResolverEndpointIpAddressResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import DisassociateResolverEndpointIpAddressResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResolverEndpoint`:
   [ResolverEndpointTypeDef](./type_defs.md#resolverendpointtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociateResolverQueryLogConfigResponseTypeDef
+## DisassociateResolverQueryLogConfigRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import DisassociateResolverQueryLogConfigResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import DisassociateResolverQueryLogConfigRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResolverQueryLogConfigId`: `str`
+- `ResourceId`: `str`
+
+## DisassociateResolverQueryLogConfigResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import DisassociateResolverQueryLogConfigResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResolverQueryLogConfigAssociation`:
   [ResolverQueryLogConfigAssociationTypeDef](./type_defs.md#resolverquerylogconfigassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociateResolverRuleResponseTypeDef
+## DisassociateResolverRuleRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import DisassociateResolverRuleResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import DisassociateResolverRuleRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `VPCId`: `str`
+- `ResolverRuleId`: `str`
+
+## DisassociateResolverRuleResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import DisassociateResolverRuleResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResolverRuleAssociation`:
   [ResolverRuleAssociationTypeDef](./type_defs.md#resolverruleassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## FilterTypeDef
 
@@ -445,158 +816,329 @@ Optional fields:
 - `CreationTime`: `str`
 - `ModificationTime`: `str`
 
-## GetFirewallConfigResponseTypeDef
+## GetFirewallConfigRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import GetFirewallConfigResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import GetFirewallConfigRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceId`: `str`
+
+## GetFirewallConfigResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import GetFirewallConfigResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FirewallConfig`:
   [FirewallConfigTypeDef](./type_defs.md#firewallconfigtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFirewallDomainListResponseTypeDef
+## GetFirewallDomainListRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import GetFirewallDomainListResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import GetFirewallDomainListRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `FirewallDomainListId`: `str`
+
+## GetFirewallDomainListResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import GetFirewallDomainListResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FirewallDomainList`:
   [FirewallDomainListTypeDef](./type_defs.md#firewalldomainlisttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFirewallRuleGroupAssociationResponseTypeDef
+## GetFirewallRuleGroupAssociationRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import GetFirewallRuleGroupAssociationResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import GetFirewallRuleGroupAssociationRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `FirewallRuleGroupAssociationId`: `str`
+
+## GetFirewallRuleGroupAssociationResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import GetFirewallRuleGroupAssociationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FirewallRuleGroupAssociation`:
   [FirewallRuleGroupAssociationTypeDef](./type_defs.md#firewallrulegroupassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFirewallRuleGroupPolicyResponseTypeDef
+## GetFirewallRuleGroupPolicyRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import GetFirewallRuleGroupPolicyResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import GetFirewallRuleGroupPolicyRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Arn`: `str`
+
+## GetFirewallRuleGroupPolicyResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import GetFirewallRuleGroupPolicyResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FirewallRuleGroupPolicy`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFirewallRuleGroupResponseTypeDef
+## GetFirewallRuleGroupRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import GetFirewallRuleGroupResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import GetFirewallRuleGroupRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `FirewallRuleGroupId`: `str`
+
+## GetFirewallRuleGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import GetFirewallRuleGroupResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FirewallRuleGroup`:
   [FirewallRuleGroupTypeDef](./type_defs.md#firewallrulegrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResolverDnssecConfigResponseTypeDef
+## GetResolverDnssecConfigRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import GetResolverDnssecConfigResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import GetResolverDnssecConfigRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceId`: `str`
+
+## GetResolverDnssecConfigResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import GetResolverDnssecConfigResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResolverDNSSECConfig`:
   [ResolverDnssecConfigTypeDef](./type_defs.md#resolverdnssecconfigtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResolverEndpointResponseTypeDef
+## GetResolverEndpointRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import GetResolverEndpointResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import GetResolverEndpointRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResolverEndpointId`: `str`
+
+## GetResolverEndpointResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import GetResolverEndpointResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResolverEndpoint`:
   [ResolverEndpointTypeDef](./type_defs.md#resolverendpointtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResolverQueryLogConfigAssociationResponseTypeDef
+## GetResolverQueryLogConfigAssociationRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import GetResolverQueryLogConfigAssociationResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import GetResolverQueryLogConfigAssociationRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResolverQueryLogConfigAssociationId`: `str`
+
+## GetResolverQueryLogConfigAssociationResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import GetResolverQueryLogConfigAssociationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResolverQueryLogConfigAssociation`:
   [ResolverQueryLogConfigAssociationTypeDef](./type_defs.md#resolverquerylogconfigassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResolverQueryLogConfigPolicyResponseTypeDef
+## GetResolverQueryLogConfigPolicyRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import GetResolverQueryLogConfigPolicyResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import GetResolverQueryLogConfigPolicyRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Arn`: `str`
+
+## GetResolverQueryLogConfigPolicyResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import GetResolverQueryLogConfigPolicyResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResolverQueryLogConfigPolicy`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResolverQueryLogConfigResponseTypeDef
+## GetResolverQueryLogConfigRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import GetResolverQueryLogConfigResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import GetResolverQueryLogConfigRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResolverQueryLogConfigId`: `str`
+
+## GetResolverQueryLogConfigResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import GetResolverQueryLogConfigResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResolverQueryLogConfig`:
   [ResolverQueryLogConfigTypeDef](./type_defs.md#resolverquerylogconfigtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResolverRuleAssociationResponseTypeDef
+## GetResolverRuleAssociationRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import GetResolverRuleAssociationResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import GetResolverRuleAssociationRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResolverRuleAssociationId`: `str`
+
+## GetResolverRuleAssociationResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import GetResolverRuleAssociationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResolverRuleAssociation`:
   [ResolverRuleAssociationTypeDef](./type_defs.md#resolverruleassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResolverRulePolicyResponseTypeDef
+## GetResolverRulePolicyRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import GetResolverRulePolicyResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import GetResolverRulePolicyRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Arn`: `str`
+
+## GetResolverRulePolicyResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import GetResolverRulePolicyResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResolverRulePolicy`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResolverRuleResponseTypeDef
+## GetResolverRuleRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import GetResolverRuleResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import GetResolverRuleRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResolverRuleId`: `str`
+
+## GetResolverRuleResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import GetResolverRuleResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResolverRule`: [ResolverRuleTypeDef](./type_defs.md#resolverruletypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ImportFirewallDomainsResponseTypeDef
+## ImportFirewallDomainsRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import ImportFirewallDomainsResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import ImportFirewallDomainsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `FirewallDomainListId`: `str`
+- `Operation`: `Literal['REPLACE']` (see
+  [FirewallDomainImportOperationType](./literals.md#firewalldomainimportoperationtype))
+- `DomainFileUrl`: `str`
+
+## ImportFirewallDomainsResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import ImportFirewallDomainsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Id`: `str`
 - `Name`: `str`
 - `Status`:
   [FirewallDomainListStatusType](./literals.md#firewalldomainliststatustype)
 - `StatusMessage`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## IpAddressRequestTypeDef
 
@@ -640,179 +1182,394 @@ Optional fields:
 - `SubnetId`: `str`
 - `Ip`: `str`
 
-## ListFirewallConfigsResponseTypeDef
+## ListFirewallConfigsRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import ListFirewallConfigsResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import ListFirewallConfigsRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListFirewallConfigsResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import ListFirewallConfigsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `FirewallConfigs`:
   `List`\[[FirewallConfigTypeDef](./type_defs.md#firewallconfigtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFirewallDomainListsResponseTypeDef
+## ListFirewallDomainListsRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import ListFirewallDomainListsResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import ListFirewallDomainListsRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListFirewallDomainListsResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import ListFirewallDomainListsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `FirewallDomainLists`:
   `List`\[[FirewallDomainListMetadataTypeDef](./type_defs.md#firewalldomainlistmetadatatypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFirewallDomainsResponseTypeDef
+## ListFirewallDomainsRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import ListFirewallDomainsResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import ListFirewallDomainsRequestTypeDef
 ```
 
+Required fields:
+
+- `FirewallDomainListId`: `str`
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListFirewallDomainsResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import ListFirewallDomainsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `Domains`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFirewallRuleGroupAssociationsResponseTypeDef
+## ListFirewallRuleGroupAssociationsRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import ListFirewallRuleGroupAssociationsResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import ListFirewallRuleGroupAssociationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `FirewallRuleGroupId`: `str`
+- `VpcId`: `str`
+- `Priority`: `int`
+- `Status`:
+  [FirewallRuleGroupAssociationStatusType](./literals.md#firewallrulegroupassociationstatustype)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListFirewallRuleGroupAssociationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import ListFirewallRuleGroupAssociationsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `FirewallRuleGroupAssociations`:
   `List`\[[FirewallRuleGroupAssociationTypeDef](./type_defs.md#firewallrulegroupassociationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFirewallRuleGroupsResponseTypeDef
+## ListFirewallRuleGroupsRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import ListFirewallRuleGroupsResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import ListFirewallRuleGroupsRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListFirewallRuleGroupsResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import ListFirewallRuleGroupsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `FirewallRuleGroups`:
   `List`\[[FirewallRuleGroupMetadataTypeDef](./type_defs.md#firewallrulegroupmetadatatypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFirewallRulesResponseTypeDef
+## ListFirewallRulesRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import ListFirewallRulesResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import ListFirewallRulesRequestTypeDef
 ```
 
+Required fields:
+
+- `FirewallRuleGroupId`: `str`
+
 Optional fields:
+
+- `Priority`: `int`
+- `Action`: [ActionType](./literals.md#actiontype)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListFirewallRulesResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import ListFirewallRulesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `FirewallRules`:
   `List`\[[FirewallRuleTypeDef](./type_defs.md#firewallruletypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListResolverDnssecConfigsResponseTypeDef
+## ListResolverDnssecConfigsRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import ListResolverDnssecConfigsResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import ListResolverDnssecConfigsRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+## ListResolverDnssecConfigsResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import ListResolverDnssecConfigsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `ResolverDnssecConfigs`:
   `List`\[[ResolverDnssecConfigTypeDef](./type_defs.md#resolverdnssecconfigtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListResolverEndpointIpAddressesResponseTypeDef
+## ListResolverEndpointIpAddressesRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import ListResolverEndpointIpAddressesResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import ListResolverEndpointIpAddressesRequestTypeDef
 ```
 
+Required fields:
+
+- `ResolverEndpointId`: `str`
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListResolverEndpointIpAddressesResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import ListResolverEndpointIpAddressesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `IpAddresses`:
   `List`\[[IpAddressResponseTypeDef](./type_defs.md#ipaddressresponsetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListResolverEndpointsResponseTypeDef
+## ListResolverEndpointsRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import ListResolverEndpointsResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import ListResolverEndpointsRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+## ListResolverEndpointsResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import ListResolverEndpointsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `ResolverEndpoints`:
   `List`\[[ResolverEndpointTypeDef](./type_defs.md#resolverendpointtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListResolverQueryLogConfigAssociationsResponseTypeDef
+## ListResolverQueryLogConfigAssociationsRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import ListResolverQueryLogConfigAssociationsResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import ListResolverQueryLogConfigAssociationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortBy`: `str`
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
+
+## ListResolverQueryLogConfigAssociationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import ListResolverQueryLogConfigAssociationsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `TotalCount`: `int`
 - `TotalFilteredCount`: `int`
 - `ResolverQueryLogConfigAssociations`:
   `List`\[[ResolverQueryLogConfigAssociationTypeDef](./type_defs.md#resolverquerylogconfigassociationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListResolverQueryLogConfigsResponseTypeDef
+## ListResolverQueryLogConfigsRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import ListResolverQueryLogConfigsResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import ListResolverQueryLogConfigsRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortBy`: `str`
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
+
+## ListResolverQueryLogConfigsResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import ListResolverQueryLogConfigsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `TotalCount`: `int`
 - `TotalFilteredCount`: `int`
 - `ResolverQueryLogConfigs`:
   `List`\[[ResolverQueryLogConfigTypeDef](./type_defs.md#resolverquerylogconfigtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListResolverRuleAssociationsResponseTypeDef
+## ListResolverRuleAssociationsRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import ListResolverRuleAssociationsResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import ListResolverRuleAssociationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+## ListResolverRuleAssociationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import ListResolverRuleAssociationsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `ResolverRuleAssociations`:
   `List`\[[ResolverRuleAssociationTypeDef](./type_defs.md#resolverruleassociationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListResolverRulesResponseTypeDef
+## ListResolverRulesRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import ListResolverRulesResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import ListResolverRulesRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+## ListResolverRulesResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import ListResolverRulesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `ResolverRules`:
   `List`\[[ResolverRuleTypeDef](./type_defs.md#resolverruletypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import ListTagsForResourceRequestTypeDef
 ```
+
+Required fields:
+
+- `ResourceArn`: `str`
 
 Optional fields:
 
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
+
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -826,35 +1583,74 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## PutFirewallRuleGroupPolicyResponseTypeDef
+## PutFirewallRuleGroupPolicyRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import PutFirewallRuleGroupPolicyResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import PutFirewallRuleGroupPolicyRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
-- `ReturnValue`: `bool`
+- `Arn`: `str`
+- `FirewallRuleGroupPolicy`: `str`
 
-## PutResolverQueryLogConfigPolicyResponseTypeDef
+## PutFirewallRuleGroupPolicyResponseResponseTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import PutResolverQueryLogConfigPolicyResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import PutFirewallRuleGroupPolicyResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `ReturnValue`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutResolverRulePolicyResponseTypeDef
+## PutResolverQueryLogConfigPolicyRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import PutResolverRulePolicyResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import PutResolverQueryLogConfigPolicyRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Arn`: `str`
+- `ResolverQueryLogConfigPolicy`: `str`
+
+## PutResolverQueryLogConfigPolicyResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import PutResolverQueryLogConfigPolicyResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ReturnValue`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## PutResolverRulePolicyRequestTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import PutResolverRulePolicyRequestTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
+- `ResolverRulePolicy`: `str`
+
+## PutResolverRulePolicyResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import PutResolverRulePolicyResponseResponseTypeDef
+```
+
+Required fields:
+
+- `ReturnValue`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ResolverDnssecConfigTypeDef
 
@@ -984,6 +1780,31 @@ Optional fields:
 - `CreationTime`: `str`
 - `ModificationTime`: `str`
 
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
 ## TagTypeDef
 
 ```python
@@ -1009,80 +1830,206 @@ Optional fields:
 
 - `Port`: `int`
 
-## UpdateFirewallConfigResponseTypeDef
+## UntagResourceRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import UpdateFirewallConfigResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import UntagResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceArn`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## UpdateFirewallConfigRequestTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import UpdateFirewallConfigRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceId`: `str`
+- `FirewallFailOpen`:
+  [FirewallFailOpenStatusType](./literals.md#firewallfailopenstatustype)
+
+## UpdateFirewallConfigResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import UpdateFirewallConfigResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FirewallConfig`:
   [FirewallConfigTypeDef](./type_defs.md#firewallconfigtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateFirewallDomainsResponseTypeDef
+## UpdateFirewallDomainsRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import UpdateFirewallDomainsResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import UpdateFirewallDomainsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `FirewallDomainListId`: `str`
+- `Operation`:
+  [FirewallDomainUpdateOperationType](./literals.md#firewalldomainupdateoperationtype)
+- `Domains`: `List`\[`str`\]
+
+## UpdateFirewallDomainsResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import UpdateFirewallDomainsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Id`: `str`
 - `Name`: `str`
 - `Status`:
   [FirewallDomainListStatusType](./literals.md#firewalldomainliststatustype)
 - `StatusMessage`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateFirewallRuleGroupAssociationResponseTypeDef
+## UpdateFirewallRuleGroupAssociationRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import UpdateFirewallRuleGroupAssociationResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import UpdateFirewallRuleGroupAssociationRequestTypeDef
 ```
 
+Required fields:
+
+- `FirewallRuleGroupAssociationId`: `str`
+
 Optional fields:
+
+- `Priority`: `int`
+- `MutationProtection`:
+  [MutationProtectionStatusType](./literals.md#mutationprotectionstatustype)
+- `Name`: `str`
+
+## UpdateFirewallRuleGroupAssociationResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import UpdateFirewallRuleGroupAssociationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FirewallRuleGroupAssociation`:
   [FirewallRuleGroupAssociationTypeDef](./type_defs.md#firewallrulegroupassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateFirewallRuleResponseTypeDef
+## UpdateFirewallRuleRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import UpdateFirewallRuleResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import UpdateFirewallRuleRequestTypeDef
 ```
 
+Required fields:
+
+- `FirewallRuleGroupId`: `str`
+- `FirewallDomainListId`: `str`
+
 Optional fields:
+
+- `Priority`: `int`
+- `Action`: [ActionType](./literals.md#actiontype)
+- `BlockResponse`: [BlockResponseType](./literals.md#blockresponsetype)
+- `BlockOverrideDomain`: `str`
+- `BlockOverrideDnsType`: `Literal['CNAME']` (see
+  [BlockOverrideDnsTypeType](./literals.md#blockoverridednstypetype))
+- `BlockOverrideTtl`: `int`
+- `Name`: `str`
+
+## UpdateFirewallRuleResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import UpdateFirewallRuleResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FirewallRule`: [FirewallRuleTypeDef](./type_defs.md#firewallruletypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateResolverDnssecConfigResponseTypeDef
+## UpdateResolverDnssecConfigRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import UpdateResolverDnssecConfigResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import UpdateResolverDnssecConfigRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceId`: `str`
+- `Validation`: [ValidationType](./literals.md#validationtype)
+
+## UpdateResolverDnssecConfigResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import UpdateResolverDnssecConfigResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResolverDNSSECConfig`:
   [ResolverDnssecConfigTypeDef](./type_defs.md#resolverdnssecconfigtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateResolverEndpointResponseTypeDef
+## UpdateResolverEndpointRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import UpdateResolverEndpointResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import UpdateResolverEndpointRequestTypeDef
 ```
 
+Required fields:
+
+- `ResolverEndpointId`: `str`
+
 Optional fields:
+
+- `Name`: `str`
+
+## UpdateResolverEndpointResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import UpdateResolverEndpointResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResolverEndpoint`:
   [ResolverEndpointTypeDef](./type_defs.md#resolverendpointtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateResolverRuleResponseTypeDef
+## UpdateResolverRuleRequestTypeDef
 
 ```python
-from mypy_boto3_route53resolver.type_defs import UpdateResolverRuleResponseTypeDef
+from mypy_boto3_route53resolver.type_defs import UpdateResolverRuleRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResolverRuleId`: `str`
+- `Config`:
+  [ResolverRuleConfigTypeDef](./type_defs.md#resolverruleconfigtypedef)
+
+## UpdateResolverRuleResponseResponseTypeDef
+
+```python
+from mypy_boto3_route53resolver.type_defs import UpdateResolverRuleResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResolverRule`: [ResolverRuleTypeDef](./type_defs.md#resolverruletypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

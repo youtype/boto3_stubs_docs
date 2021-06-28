@@ -36,7 +36,7 @@ Arguments for `DescribeScalingPlanResourcesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScalingPlanResourcesPaginator.paginate` returns
-`Iterator`\[[DescribeScalingPlanResourcesResponseTypeDef](./type_defs.md#describescalingplanresourcesresponsetypedef)\].
+`Iterator`\[[DescribeScalingPlanResourcesResponseResponseTypeDef](./type_defs.md#describescalingplanresourcesresponseresponsetypedef)\].
 
 ## DescribeScalingPlansPaginator
 
@@ -65,4 +65,4 @@ Arguments for `DescribeScalingPlansPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScalingPlansPaginator.paginate` returns
-`Iterator`\[[DescribeScalingPlansResponseTypeDef](./type_defs.md#describescalingplansresponsetypedef)\].
+`Iterator`\[[DescribeScalingPlansResponseResponseTypeDef](./type_defs.md#describescalingplansresponseresponsetypedef)\].

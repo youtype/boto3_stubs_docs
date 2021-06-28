@@ -34,4 +34,4 @@ Arguments for `ListItemsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListItemsPaginator.paginate` returns
-`Iterator`\[[ListItemsResponseTypeDef](./type_defs.md#listitemsresponsetypedef)\].
+`Iterator`\[[ListItemsResponseResponseTypeDef](./type_defs.md#listitemsresponseresponsetypedef)\].

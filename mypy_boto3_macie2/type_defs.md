@@ -8,6 +8,7 @@ type annotations stubs module
 [mypy_boto3_macie2](https://pypi.org/project/mypy-boto3-macie2/).
 
 - [Typed dictionaries for boto3 Macie2 module](#typed-dictionaries-for-boto3-macie2-module)
+  - [AcceptInvitationRequestTypeDef](#acceptinvitationrequesttypedef)
   - [AccessControlListTypeDef](#accesscontrollisttypedef)
   - [AccountDetailTypeDef](#accountdetailtypedef)
   - [AccountLevelPermissionsTypeDef](#accountlevelpermissionstypedef)
@@ -17,7 +18,8 @@ type annotations stubs module
   - [AwsAccountTypeDef](#awsaccounttypedef)
   - [AwsServiceTypeDef](#awsservicetypedef)
   - [BatchGetCustomDataIdentifierSummaryTypeDef](#batchgetcustomdataidentifiersummarytypedef)
-  - [BatchGetCustomDataIdentifiersResponseTypeDef](#batchgetcustomdataidentifiersresponsetypedef)
+  - [BatchGetCustomDataIdentifiersRequestTypeDef](#batchgetcustomdataidentifiersrequesttypedef)
+  - [BatchGetCustomDataIdentifiersResponseResponseTypeDef](#batchgetcustomdataidentifiersresponseresponsetypedef)
   - [BlockPublicAccessTypeDef](#blockpublicaccesstypedef)
   - [BucketCountByEffectivePermissionTypeDef](#bucketcountbyeffectivepermissiontypedef)
   - [BucketCountByEncryptionTypeTypeDef](#bucketcountbyencryptiontypetypedef)
@@ -36,24 +38,41 @@ type annotations stubs module
   - [ClassificationExportConfigurationTypeDef](#classificationexportconfigurationtypedef)
   - [ClassificationResultStatusTypeDef](#classificationresultstatustypedef)
   - [ClassificationResultTypeDef](#classificationresulttypedef)
-  - [CreateClassificationJobResponseTypeDef](#createclassificationjobresponsetypedef)
-  - [CreateCustomDataIdentifierResponseTypeDef](#createcustomdataidentifierresponsetypedef)
-  - [CreateFindingsFilterResponseTypeDef](#createfindingsfilterresponsetypedef)
-  - [CreateInvitationsResponseTypeDef](#createinvitationsresponsetypedef)
-  - [CreateMemberResponseTypeDef](#creatememberresponsetypedef)
+  - [CreateClassificationJobRequestTypeDef](#createclassificationjobrequesttypedef)
+  - [CreateClassificationJobResponseResponseTypeDef](#createclassificationjobresponseresponsetypedef)
+  - [CreateCustomDataIdentifierRequestTypeDef](#createcustomdataidentifierrequesttypedef)
+  - [CreateCustomDataIdentifierResponseResponseTypeDef](#createcustomdataidentifierresponseresponsetypedef)
+  - [CreateFindingsFilterRequestTypeDef](#createfindingsfilterrequesttypedef)
+  - [CreateFindingsFilterResponseResponseTypeDef](#createfindingsfilterresponseresponsetypedef)
+  - [CreateInvitationsRequestTypeDef](#createinvitationsrequesttypedef)
+  - [CreateInvitationsResponseResponseTypeDef](#createinvitationsresponseresponsetypedef)
+  - [CreateMemberRequestTypeDef](#creatememberrequesttypedef)
+  - [CreateMemberResponseResponseTypeDef](#creatememberresponseresponsetypedef)
+  - [CreateSampleFindingsRequestTypeDef](#createsamplefindingsrequesttypedef)
   - [CriteriaBlockForJobTypeDef](#criteriablockforjobtypedef)
   - [CriteriaForJobTypeDef](#criteriaforjobtypedef)
   - [CriterionAdditionalPropertiesTypeDef](#criterionadditionalpropertiestypedef)
   - [CustomDataIdentifierSummaryTypeDef](#customdataidentifiersummarytypedef)
   - [CustomDataIdentifiersTypeDef](#customdataidentifierstypedef)
   - [CustomDetectionTypeDef](#customdetectiontypedef)
-  - [DeclineInvitationsResponseTypeDef](#declineinvitationsresponsetypedef)
+  - [DeclineInvitationsRequestTypeDef](#declineinvitationsrequesttypedef)
+  - [DeclineInvitationsResponseResponseTypeDef](#declineinvitationsresponseresponsetypedef)
   - [DefaultDetectionTypeDef](#defaultdetectiontypedef)
-  - [DeleteInvitationsResponseTypeDef](#deleteinvitationsresponsetypedef)
-  - [DescribeBucketsResponseTypeDef](#describebucketsresponsetypedef)
-  - [DescribeClassificationJobResponseTypeDef](#describeclassificationjobresponsetypedef)
-  - [DescribeOrganizationConfigurationResponseTypeDef](#describeorganizationconfigurationresponsetypedef)
+  - [DeleteCustomDataIdentifierRequestTypeDef](#deletecustomdataidentifierrequesttypedef)
+  - [DeleteFindingsFilterRequestTypeDef](#deletefindingsfilterrequesttypedef)
+  - [DeleteInvitationsRequestTypeDef](#deleteinvitationsrequesttypedef)
+  - [DeleteInvitationsResponseResponseTypeDef](#deleteinvitationsresponseresponsetypedef)
+  - [DeleteMemberRequestTypeDef](#deletememberrequesttypedef)
+  - [DescribeBucketsRequestTypeDef](#describebucketsrequesttypedef)
+  - [DescribeBucketsResponseResponseTypeDef](#describebucketsresponseresponsetypedef)
+  - [DescribeClassificationJobRequestTypeDef](#describeclassificationjobrequesttypedef)
+  - [DescribeClassificationJobResponseResponseTypeDef](#describeclassificationjobresponseresponsetypedef)
+  - [DescribeOrganizationConfigurationResponseResponseTypeDef](#describeorganizationconfigurationresponseresponsetypedef)
+  - [DisableOrganizationAdminAccountRequestTypeDef](#disableorganizationadminaccountrequesttypedef)
+  - [DisassociateMemberRequestTypeDef](#disassociatememberrequesttypedef)
   - [DomainDetailsTypeDef](#domaindetailstypedef)
+  - [EnableMacieRequestTypeDef](#enablemacierequesttypedef)
+  - [EnableOrganizationAdminAccountRequestTypeDef](#enableorganizationadminaccountrequesttypedef)
   - [FederatedUserTypeDef](#federatedusertypedef)
   - [FindingActionTypeDef](#findingactiontypedef)
   - [FindingActorTypeDef](#findingactortypedef)
@@ -61,20 +80,28 @@ type annotations stubs module
   - [FindingStatisticsSortCriteriaTypeDef](#findingstatisticssortcriteriatypedef)
   - [FindingTypeDef](#findingtypedef)
   - [FindingsFilterListItemTypeDef](#findingsfilterlistitemtypedef)
-  - [GetAdministratorAccountResponseTypeDef](#getadministratoraccountresponsetypedef)
-  - [GetBucketStatisticsResponseTypeDef](#getbucketstatisticsresponsetypedef)
-  - [GetClassificationExportConfigurationResponseTypeDef](#getclassificationexportconfigurationresponsetypedef)
-  - [GetCustomDataIdentifierResponseTypeDef](#getcustomdataidentifierresponsetypedef)
-  - [GetFindingStatisticsResponseTypeDef](#getfindingstatisticsresponsetypedef)
-  - [GetFindingsFilterResponseTypeDef](#getfindingsfilterresponsetypedef)
-  - [GetFindingsPublicationConfigurationResponseTypeDef](#getfindingspublicationconfigurationresponsetypedef)
-  - [GetFindingsResponseTypeDef](#getfindingsresponsetypedef)
-  - [GetInvitationsCountResponseTypeDef](#getinvitationscountresponsetypedef)
-  - [GetMacieSessionResponseTypeDef](#getmaciesessionresponsetypedef)
-  - [GetMasterAccountResponseTypeDef](#getmasteraccountresponsetypedef)
-  - [GetMemberResponseTypeDef](#getmemberresponsetypedef)
-  - [GetUsageStatisticsResponseTypeDef](#getusagestatisticsresponsetypedef)
-  - [GetUsageTotalsResponseTypeDef](#getusagetotalsresponsetypedef)
+  - [GetAdministratorAccountResponseResponseTypeDef](#getadministratoraccountresponseresponsetypedef)
+  - [GetBucketStatisticsRequestTypeDef](#getbucketstatisticsrequesttypedef)
+  - [GetBucketStatisticsResponseResponseTypeDef](#getbucketstatisticsresponseresponsetypedef)
+  - [GetClassificationExportConfigurationResponseResponseTypeDef](#getclassificationexportconfigurationresponseresponsetypedef)
+  - [GetCustomDataIdentifierRequestTypeDef](#getcustomdataidentifierrequesttypedef)
+  - [GetCustomDataIdentifierResponseResponseTypeDef](#getcustomdataidentifierresponseresponsetypedef)
+  - [GetFindingStatisticsRequestTypeDef](#getfindingstatisticsrequesttypedef)
+  - [GetFindingStatisticsResponseResponseTypeDef](#getfindingstatisticsresponseresponsetypedef)
+  - [GetFindingsFilterRequestTypeDef](#getfindingsfilterrequesttypedef)
+  - [GetFindingsFilterResponseResponseTypeDef](#getfindingsfilterresponseresponsetypedef)
+  - [GetFindingsPublicationConfigurationResponseResponseTypeDef](#getfindingspublicationconfigurationresponseresponsetypedef)
+  - [GetFindingsRequestTypeDef](#getfindingsrequesttypedef)
+  - [GetFindingsResponseResponseTypeDef](#getfindingsresponseresponsetypedef)
+  - [GetInvitationsCountResponseResponseTypeDef](#getinvitationscountresponseresponsetypedef)
+  - [GetMacieSessionResponseResponseTypeDef](#getmaciesessionresponseresponsetypedef)
+  - [GetMasterAccountResponseResponseTypeDef](#getmasteraccountresponseresponsetypedef)
+  - [GetMemberRequestTypeDef](#getmemberrequesttypedef)
+  - [GetMemberResponseResponseTypeDef](#getmemberresponseresponsetypedef)
+  - [GetUsageStatisticsRequestTypeDef](#getusagestatisticsrequesttypedef)
+  - [GetUsageStatisticsResponseResponseTypeDef](#getusagestatisticsresponseresponsetypedef)
+  - [GetUsageTotalsRequestTypeDef](#getusagetotalsrequesttypedef)
+  - [GetUsageTotalsResponseResponseTypeDef](#getusagetotalsresponseresponsetypedef)
   - [GroupCountTypeDef](#groupcounttypedef)
   - [IamUserTypeDef](#iamusertypedef)
   - [InvitationTypeDef](#invitationtypedef)
@@ -90,17 +117,25 @@ type annotations stubs module
   - [JobSummaryTypeDef](#jobsummarytypedef)
   - [KeyValuePairTypeDef](#keyvaluepairtypedef)
   - [LastRunErrorStatusTypeDef](#lastrunerrorstatustypedef)
-  - [ListClassificationJobsResponseTypeDef](#listclassificationjobsresponsetypedef)
-  - [ListCustomDataIdentifiersResponseTypeDef](#listcustomdataidentifiersresponsetypedef)
-  - [ListFindingsFiltersResponseTypeDef](#listfindingsfiltersresponsetypedef)
-  - [ListFindingsResponseTypeDef](#listfindingsresponsetypedef)
-  - [ListInvitationsResponseTypeDef](#listinvitationsresponsetypedef)
+  - [ListClassificationJobsRequestTypeDef](#listclassificationjobsrequesttypedef)
+  - [ListClassificationJobsResponseResponseTypeDef](#listclassificationjobsresponseresponsetypedef)
+  - [ListCustomDataIdentifiersRequestTypeDef](#listcustomdataidentifiersrequesttypedef)
+  - [ListCustomDataIdentifiersResponseResponseTypeDef](#listcustomdataidentifiersresponseresponsetypedef)
+  - [ListFindingsFiltersRequestTypeDef](#listfindingsfiltersrequesttypedef)
+  - [ListFindingsFiltersResponseResponseTypeDef](#listfindingsfiltersresponseresponsetypedef)
+  - [ListFindingsRequestTypeDef](#listfindingsrequesttypedef)
+  - [ListFindingsResponseResponseTypeDef](#listfindingsresponseresponsetypedef)
+  - [ListInvitationsRequestTypeDef](#listinvitationsrequesttypedef)
+  - [ListInvitationsResponseResponseTypeDef](#listinvitationsresponseresponsetypedef)
   - [ListJobsFilterCriteriaTypeDef](#listjobsfiltercriteriatypedef)
   - [ListJobsFilterTermTypeDef](#listjobsfiltertermtypedef)
   - [ListJobsSortCriteriaTypeDef](#listjobssortcriteriatypedef)
-  - [ListMembersResponseTypeDef](#listmembersresponsetypedef)
-  - [ListOrganizationAdminAccountsResponseTypeDef](#listorganizationadminaccountsresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListMembersRequestTypeDef](#listmembersrequesttypedef)
+  - [ListMembersResponseResponseTypeDef](#listmembersresponseresponsetypedef)
+  - [ListOrganizationAdminAccountsRequestTypeDef](#listorganizationadminaccountsrequesttypedef)
+  - [ListOrganizationAdminAccountsResponseResponseTypeDef](#listorganizationadminaccountsresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [MatchingBucketTypeDef](#matchingbuckettypedef)
   - [MatchingResourceTypeDef](#matchingresourcetypedef)
   - [MemberTypeDef](#membertypedef)
@@ -111,11 +146,14 @@ type annotations stubs module
   - [PageTypeDef](#pagetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PolicyDetailsTypeDef](#policydetailstypedef)
-  - [PutClassificationExportConfigurationResponseTypeDef](#putclassificationexportconfigurationresponsetypedef)
+  - [PutClassificationExportConfigurationRequestTypeDef](#putclassificationexportconfigurationrequesttypedef)
+  - [PutClassificationExportConfigurationResponseResponseTypeDef](#putclassificationexportconfigurationresponseresponsetypedef)
+  - [PutFindingsPublicationConfigurationRequestTypeDef](#putfindingspublicationconfigurationrequesttypedef)
   - [RangeTypeDef](#rangetypedef)
   - [RecordTypeDef](#recordtypedef)
   - [ReplicationDetailsTypeDef](#replicationdetailstypedef)
   - [ResourcesAffectedTypeDef](#resourcesaffectedtypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3BucketCriteriaForJobTypeDef](#s3bucketcriteriaforjobtypedef)
   - [S3BucketDefinitionForJobTypeDef](#s3bucketdefinitionforjobtypedef)
   - [S3BucketOwnerTypeDef](#s3bucketownertypedef)
@@ -127,7 +165,8 @@ type annotations stubs module
   - [SearchResourcesBucketCriteriaTypeDef](#searchresourcesbucketcriteriatypedef)
   - [SearchResourcesCriteriaBlockTypeDef](#searchresourcescriteriablocktypedef)
   - [SearchResourcesCriteriaTypeDef](#searchresourcescriteriatypedef)
-  - [SearchResourcesResponseTypeDef](#searchresourcesresponsetypedef)
+  - [SearchResourcesRequestTypeDef](#searchresourcesrequesttypedef)
+  - [SearchResourcesResponseResponseTypeDef](#searchresourcesresponseresponsetypedef)
   - [SearchResourcesSimpleCriterionTypeDef](#searchresourcessimplecriteriontypedef)
   - [SearchResourcesSortCriteriaTypeDef](#searchresourcessortcriteriatypedef)
   - [SearchResourcesTagCriterionPairTypeDef](#searchresourcestagcriterionpairtypedef)
@@ -146,11 +185,19 @@ type annotations stubs module
   - [StatisticsTypeDef](#statisticstypedef)
   - [TagCriterionForJobTypeDef](#tagcriterionforjobtypedef)
   - [TagCriterionPairForJobTypeDef](#tagcriterionpairforjobtypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TagScopeTermTypeDef](#tagscopetermtypedef)
   - [TagValuePairTypeDef](#tagvaluepairtypedef)
-  - [TestCustomDataIdentifierResponseTypeDef](#testcustomdataidentifierresponsetypedef)
+  - [TestCustomDataIdentifierRequestTypeDef](#testcustomdataidentifierrequesttypedef)
+  - [TestCustomDataIdentifierResponseResponseTypeDef](#testcustomdataidentifierresponseresponsetypedef)
   - [UnprocessedAccountTypeDef](#unprocessedaccounttypedef)
-  - [UpdateFindingsFilterResponseTypeDef](#updatefindingsfilterresponsetypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateClassificationJobRequestTypeDef](#updateclassificationjobrequesttypedef)
+  - [UpdateFindingsFilterRequestTypeDef](#updatefindingsfilterrequesttypedef)
+  - [UpdateFindingsFilterResponseResponseTypeDef](#updatefindingsfilterresponseresponsetypedef)
+  - [UpdateMacieSessionRequestTypeDef](#updatemaciesessionrequesttypedef)
+  - [UpdateMemberSessionRequestTypeDef](#updatemembersessionrequesttypedef)
+  - [UpdateOrganizationConfigurationRequestTypeDef](#updateorganizationconfigurationrequesttypedef)
   - [UsageByAccountTypeDef](#usagebyaccounttypedef)
   - [UsageRecordTypeDef](#usagerecordtypedef)
   - [UsageStatisticsFilterTypeDef](#usagestatisticsfiltertypedef)
@@ -160,6 +207,21 @@ type annotations stubs module
   - [UserIdentityTypeDef](#useridentitytypedef)
   - [UserPausedDetailsTypeDef](#userpauseddetailstypedef)
   - [WeeklyScheduleTypeDef](#weeklyscheduletypedef)
+
+## AcceptInvitationRequestTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import AcceptInvitationRequestTypeDef
+```
+
+Required fields:
+
+- `invitationId`: `str`
+
+Optional fields:
+
+- `administratorAccountId`: `str`
+- `masterAccount`: `str`
 
 ## AccessControlListTypeDef
 
@@ -269,17 +331,29 @@ Optional fields:
 - `id`: `str`
 - `name`: `str`
 
-## BatchGetCustomDataIdentifiersResponseTypeDef
+## BatchGetCustomDataIdentifiersRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import BatchGetCustomDataIdentifiersResponseTypeDef
+from mypy_boto3_macie2.type_defs import BatchGetCustomDataIdentifiersRequestTypeDef
 ```
 
 Optional fields:
 
+- `ids`: `List`\[`str`\]
+
+## BatchGetCustomDataIdentifiersResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import BatchGetCustomDataIdentifiersResponseResponseTypeDef
+```
+
+Required fields:
+
 - `customDataIdentifiers`:
   `List`\[[BatchGetCustomDataIdentifierSummaryTypeDef](./type_defs.md#batchgetcustomdataidentifiersummarytypedef)\]
 - `notFoundIdentifierIds`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## BlockPublicAccessTypeDef
 
@@ -538,58 +612,168 @@ Optional fields:
 - `status`:
   [ClassificationResultStatusTypeDef](./type_defs.md#classificationresultstatustypedef)
 
-## CreateClassificationJobResponseTypeDef
+## CreateClassificationJobRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import CreateClassificationJobResponseTypeDef
+from mypy_boto3_macie2.type_defs import CreateClassificationJobRequestTypeDef
 ```
 
+Required fields:
+
+- `clientToken`: `str`
+- `jobType`: [JobTypeType](./literals.md#jobtypetype)
+- `name`: `str`
+- `s3JobDefinition`:
+  [S3JobDefinitionTypeDef](./type_defs.md#s3jobdefinitiontypedef)
+
 Optional fields:
+
+- `customDataIdentifierIds`: `List`\[`str`\]
+- `description`: `str`
+- `initialRun`: `bool`
+- `samplingPercentage`: `int`
+- `scheduleFrequency`:
+  [JobScheduleFrequencyTypeDef](./type_defs.md#jobschedulefrequencytypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateClassificationJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import CreateClassificationJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `jobArn`: `str`
 - `jobId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateCustomDataIdentifierResponseTypeDef
+## CreateCustomDataIdentifierRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import CreateCustomDataIdentifierResponseTypeDef
+from mypy_boto3_macie2.type_defs import CreateCustomDataIdentifierRequestTypeDef
 ```
 
 Optional fields:
+
+- `clientToken`: `str`
+- `description`: `str`
+- `ignoreWords`: `List`\[`str`\]
+- `keywords`: `List`\[`str`\]
+- `maximumMatchDistance`: `int`
+- `name`: `str`
+- `regex`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateCustomDataIdentifierResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import CreateCustomDataIdentifierResponseResponseTypeDef
+```
+
+Required fields:
 
 - `customDataIdentifierId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateFindingsFilterResponseTypeDef
+## CreateFindingsFilterRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import CreateFindingsFilterResponseTypeDef
+from mypy_boto3_macie2.type_defs import CreateFindingsFilterRequestTypeDef
 ```
 
+Required fields:
+
+- `action`: [FindingsFilterActionType](./literals.md#findingsfilteractiontype)
+- `findingCriteria`:
+  [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
+- `name`: `str`
+
 Optional fields:
+
+- `clientToken`: `str`
+- `description`: `str`
+- `position`: `int`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateFindingsFilterResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import CreateFindingsFilterResponseResponseTypeDef
+```
+
+Required fields:
 
 - `arn`: `str`
 - `id`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateInvitationsResponseTypeDef
+## CreateInvitationsRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import CreateInvitationsResponseTypeDef
+from mypy_boto3_macie2.type_defs import CreateInvitationsRequestTypeDef
 ```
 
+Required fields:
+
+- `accountIds`: `List`\[`str`\]
+
 Optional fields:
+
+- `disableEmailNotification`: `bool`
+- `message`: `str`
+
+## CreateInvitationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import CreateInvitationsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `unprocessedAccounts`:
   `List`\[[UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateMemberResponseTypeDef
+## CreateMemberRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import CreateMemberResponseTypeDef
+from mypy_boto3_macie2.type_defs import CreateMemberRequestTypeDef
+```
+
+Required fields:
+
+- `account`: [AccountDetailTypeDef](./type_defs.md#accountdetailtypedef)
+
+Optional fields:
+
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateMemberResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import CreateMemberResponseResponseTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateSampleFindingsRequestTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import CreateSampleFindingsRequestTypeDef
 ```
 
 Optional fields:
 
-- `arn`: `str`
+- `findingTypes`: `List`\[[FindingTypeType](./literals.md#findingtypetype)\]
 
 ## CriteriaBlockForJobTypeDef
 
@@ -670,16 +854,28 @@ Optional fields:
 - `name`: `str`
 - `occurrences`: [OccurrencesTypeDef](./type_defs.md#occurrencestypedef)
 
-## DeclineInvitationsResponseTypeDef
+## DeclineInvitationsRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import DeclineInvitationsResponseTypeDef
+from mypy_boto3_macie2.type_defs import DeclineInvitationsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `accountIds`: `List`\[`str`\]
+
+## DeclineInvitationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import DeclineInvitationsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `unprocessedAccounts`:
   `List`\[[UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DefaultDetectionTypeDef
 
@@ -693,36 +889,105 @@ Optional fields:
 - `occurrences`: [OccurrencesTypeDef](./type_defs.md#occurrencestypedef)
 - `type`: `str`
 
-## DeleteInvitationsResponseTypeDef
+## DeleteCustomDataIdentifierRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import DeleteInvitationsResponseTypeDef
+from mypy_boto3_macie2.type_defs import DeleteCustomDataIdentifierRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `id`: `str`
+
+## DeleteFindingsFilterRequestTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import DeleteFindingsFilterRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
+## DeleteInvitationsRequestTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import DeleteInvitationsRequestTypeDef
+```
+
+Required fields:
+
+- `accountIds`: `List`\[`str`\]
+
+## DeleteInvitationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import DeleteInvitationsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `unprocessedAccounts`:
   `List`\[[UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeBucketsResponseTypeDef
+## DeleteMemberRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import DescribeBucketsResponseTypeDef
+from mypy_boto3_macie2.type_defs import DeleteMemberRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
+## DescribeBucketsRequestTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import DescribeBucketsRequestTypeDef
 ```
 
 Optional fields:
+
+- `criteria`: `Dict`\[`str`,
+  [BucketCriteriaAdditionalPropertiesTypeDef](./type_defs.md#bucketcriteriaadditionalpropertiestypedef)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+- `sortCriteria`:
+  [BucketSortCriteriaTypeDef](./type_defs.md#bucketsortcriteriatypedef)
+
+## DescribeBucketsResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import DescribeBucketsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `buckets`:
   `List`\[[BucketMetadataTypeDef](./type_defs.md#bucketmetadatatypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeClassificationJobResponseTypeDef
+## DescribeClassificationJobRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import DescribeClassificationJobResponseTypeDef
+from mypy_boto3_macie2.type_defs import DescribeClassificationJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `jobId`: `str`
+
+## DescribeClassificationJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import DescribeClassificationJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `clientToken`: `str`
 - `createdAt`: `datetime`
@@ -746,17 +1011,41 @@ Optional fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `userPausedDetails`:
   [UserPausedDetailsTypeDef](./type_defs.md#userpauseddetailstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeOrganizationConfigurationResponseTypeDef
+## DescribeOrganizationConfigurationResponseResponseTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import DescribeOrganizationConfigurationResponseTypeDef
+from mypy_boto3_macie2.type_defs import DescribeOrganizationConfigurationResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `autoEnable`: `bool`
 - `maxAccountLimitReached`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DisableOrganizationAdminAccountRequestTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import DisableOrganizationAdminAccountRequestTypeDef
+```
+
+Required fields:
+
+- `adminAccountId`: `str`
+
+## DisassociateMemberRequestTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import DisassociateMemberRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
 
 ## DomainDetailsTypeDef
 
@@ -767,6 +1056,33 @@ from mypy_boto3_macie2.type_defs import DomainDetailsTypeDef
 Optional fields:
 
 - `domainName`: `str`
+
+## EnableMacieRequestTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import EnableMacieRequestTypeDef
+```
+
+Optional fields:
+
+- `clientToken`: `str`
+- `findingPublishingFrequency`:
+  [FindingPublishingFrequencyType](./literals.md#findingpublishingfrequencytype)
+- `status`: [MacieStatusType](./literals.md#maciestatustype)
+
+## EnableOrganizationAdminAccountRequestTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import EnableOrganizationAdminAccountRequestTypeDef
+```
+
+Required fields:
+
+- `adminAccountId`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
 
 ## FederatedUserTypeDef
 
@@ -875,23 +1191,35 @@ Optional fields:
 - `name`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## GetAdministratorAccountResponseTypeDef
+## GetAdministratorAccountResponseResponseTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import GetAdministratorAccountResponseTypeDef
+from mypy_boto3_macie2.type_defs import GetAdministratorAccountResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `administrator`: [InvitationTypeDef](./type_defs.md#invitationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBucketStatisticsResponseTypeDef
+## GetBucketStatisticsRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import GetBucketStatisticsResponseTypeDef
+from mypy_boto3_macie2.type_defs import GetBucketStatisticsRequestTypeDef
 ```
 
 Optional fields:
+
+- `accountId`: `str`
+
+## GetBucketStatisticsResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import GetBucketStatisticsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `bucketCount`: `int`
 - `bucketCountByEffectivePermission`:
@@ -912,25 +1240,39 @@ Optional fields:
   [ObjectLevelStatisticsTypeDef](./type_defs.md#objectlevelstatisticstypedef)
 - `unclassifiableObjectSizeInBytes`:
   [ObjectLevelStatisticsTypeDef](./type_defs.md#objectlevelstatisticstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetClassificationExportConfigurationResponseTypeDef
+## GetClassificationExportConfigurationResponseResponseTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import GetClassificationExportConfigurationResponseTypeDef
+from mypy_boto3_macie2.type_defs import GetClassificationExportConfigurationResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `configuration`:
   [ClassificationExportConfigurationTypeDef](./type_defs.md#classificationexportconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCustomDataIdentifierResponseTypeDef
+## GetCustomDataIdentifierRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import GetCustomDataIdentifierResponseTypeDef
+from mypy_boto3_macie2.type_defs import GetCustomDataIdentifierRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `id`: `str`
+
+## GetCustomDataIdentifierResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import GetCustomDataIdentifierResponseResponseTypeDef
+```
+
+Required fields:
 
 - `arn`: `str`
 - `createdAt`: `datetime`
@@ -943,25 +1285,57 @@ Optional fields:
 - `name`: `str`
 - `regex`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFindingStatisticsResponseTypeDef
+## GetFindingStatisticsRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import GetFindingStatisticsResponseTypeDef
+from mypy_boto3_macie2.type_defs import GetFindingStatisticsRequestTypeDef
 ```
 
+Required fields:
+
+- `groupBy`: [GroupByType](./literals.md#groupbytype)
+
 Optional fields:
+
+- `findingCriteria`:
+  [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
+- `size`: `int`
+- `sortCriteria`:
+  [FindingStatisticsSortCriteriaTypeDef](./type_defs.md#findingstatisticssortcriteriatypedef)
+
+## GetFindingStatisticsResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import GetFindingStatisticsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `countsByGroup`:
   `List`\[[GroupCountTypeDef](./type_defs.md#groupcounttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFindingsFilterResponseTypeDef
+## GetFindingsFilterRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import GetFindingsFilterResponseTypeDef
+from mypy_boto3_macie2.type_defs import GetFindingsFilterRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `id`: `str`
+
+## GetFindingsFilterResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import GetFindingsFilterResponseResponseTypeDef
+```
+
+Required fields:
 
 - `action`: [FindingsFilterActionType](./literals.md#findingsfilteractiontype)
 - `arn`: `str`
@@ -972,45 +1346,67 @@ Optional fields:
 - `name`: `str`
 - `position`: `int`
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFindingsPublicationConfigurationResponseTypeDef
+## GetFindingsPublicationConfigurationResponseResponseTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import GetFindingsPublicationConfigurationResponseTypeDef
+from mypy_boto3_macie2.type_defs import GetFindingsPublicationConfigurationResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `securityHubConfiguration`:
   [SecurityHubConfigurationTypeDef](./type_defs.md#securityhubconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFindingsResponseTypeDef
+## GetFindingsRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import GetFindingsResponseTypeDef
+from mypy_boto3_macie2.type_defs import GetFindingsRequestTypeDef
 ```
 
+Required fields:
+
+- `findingIds`: `List`\[`str`\]
+
 Optional fields:
+
+- `sortCriteria`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
+
+## GetFindingsResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import GetFindingsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `findings`: `List`\[[FindingTypeDef](./type_defs.md#findingtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetInvitationsCountResponseTypeDef
+## GetInvitationsCountResponseResponseTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import GetInvitationsCountResponseTypeDef
+from mypy_boto3_macie2.type_defs import GetInvitationsCountResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `invitationsCount`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMacieSessionResponseTypeDef
+## GetMacieSessionResponseResponseTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import GetMacieSessionResponseTypeDef
+from mypy_boto3_macie2.type_defs import GetMacieSessionResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `createdAt`: `datetime`
 - `findingPublishingFrequency`:
@@ -1018,24 +1414,38 @@ Optional fields:
 - `serviceRole`: `str`
 - `status`: [MacieStatusType](./literals.md#maciestatustype)
 - `updatedAt`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMasterAccountResponseTypeDef
+## GetMasterAccountResponseResponseTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import GetMasterAccountResponseTypeDef
+from mypy_boto3_macie2.type_defs import GetMasterAccountResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `master`: [InvitationTypeDef](./type_defs.md#invitationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMemberResponseTypeDef
+## GetMemberRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import GetMemberResponseTypeDef
+from mypy_boto3_macie2.type_defs import GetMemberRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `id`: `str`
+
+## GetMemberResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import GetMemberResponseResponseTypeDef
+```
+
+Required fields:
 
 - `accountId`: `str`
 - `administratorAccountId`: `str`
@@ -1047,30 +1457,62 @@ Optional fields:
   [RelationshipStatusType](./literals.md#relationshipstatustype)
 - `tags`: `Dict`\[`str`, `str`\]
 - `updatedAt`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetUsageStatisticsResponseTypeDef
+## GetUsageStatisticsRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import GetUsageStatisticsResponseTypeDef
+from mypy_boto3_macie2.type_defs import GetUsageStatisticsRequestTypeDef
 ```
 
 Optional fields:
+
+- `filterBy`:
+  `List`\[[UsageStatisticsFilterTypeDef](./type_defs.md#usagestatisticsfiltertypedef)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+- `sortBy`:
+  [UsageStatisticsSortByTypeDef](./type_defs.md#usagestatisticssortbytypedef)
+- `timeRange`: [TimeRangeType](./literals.md#timerangetype)
+
+## GetUsageStatisticsResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import GetUsageStatisticsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `nextToken`: `str`
 - `records`: `List`\[[UsageRecordTypeDef](./type_defs.md#usagerecordtypedef)\]
 - `timeRange`: [TimeRangeType](./literals.md#timerangetype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetUsageTotalsResponseTypeDef
+## GetUsageTotalsRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import GetUsageTotalsResponseTypeDef
+from mypy_boto3_macie2.type_defs import GetUsageTotalsRequestTypeDef
 ```
 
 Optional fields:
 
+- `timeRange`: `str`
+
+## GetUsageTotalsResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import GetUsageTotalsResponseResponseTypeDef
+```
+
+Required fields:
+
 - `timeRange`: [TimeRangeType](./literals.md#timerangetype)
 - `usageTotals`:
   `List`\[[UsageTotalTypeDef](./type_defs.md#usagetotaltypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GroupCountTypeDef
 
@@ -1263,63 +1705,135 @@ Optional fields:
 - `code`:
   [LastRunErrorStatusCodeType](./literals.md#lastrunerrorstatuscodetype)
 
-## ListClassificationJobsResponseTypeDef
+## ListClassificationJobsRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import ListClassificationJobsResponseTypeDef
+from mypy_boto3_macie2.type_defs import ListClassificationJobsRequestTypeDef
 ```
 
 Optional fields:
+
+- `filterCriteria`:
+  [ListJobsFilterCriteriaTypeDef](./type_defs.md#listjobsfiltercriteriatypedef)
+- `maxResults`: `int`
+- `nextToken`: `str`
+- `sortCriteria`:
+  [ListJobsSortCriteriaTypeDef](./type_defs.md#listjobssortcriteriatypedef)
+
+## ListClassificationJobsResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import ListClassificationJobsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `items`: `List`\[[JobSummaryTypeDef](./type_defs.md#jobsummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListCustomDataIdentifiersResponseTypeDef
+## ListCustomDataIdentifiersRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import ListCustomDataIdentifiersResponseTypeDef
+from mypy_boto3_macie2.type_defs import ListCustomDataIdentifiersRequestTypeDef
 ```
 
 Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListCustomDataIdentifiersResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import ListCustomDataIdentifiersResponseResponseTypeDef
+```
+
+Required fields:
 
 - `items`:
   `List`\[[CustomDataIdentifierSummaryTypeDef](./type_defs.md#customdataidentifiersummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFindingsFiltersResponseTypeDef
+## ListFindingsFiltersRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import ListFindingsFiltersResponseTypeDef
+from mypy_boto3_macie2.type_defs import ListFindingsFiltersRequestTypeDef
 ```
 
 Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListFindingsFiltersResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import ListFindingsFiltersResponseResponseTypeDef
+```
+
+Required fields:
 
 - `findingsFilterListItems`:
   `List`\[[FindingsFilterListItemTypeDef](./type_defs.md#findingsfilterlistitemtypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFindingsResponseTypeDef
+## ListFindingsRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import ListFindingsResponseTypeDef
+from mypy_boto3_macie2.type_defs import ListFindingsRequestTypeDef
 ```
 
 Optional fields:
+
+- `findingCriteria`:
+  [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
+- `maxResults`: `int`
+- `nextToken`: `str`
+- `sortCriteria`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
+
+## ListFindingsResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import ListFindingsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `findingIds`: `List`\[`str`\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListInvitationsResponseTypeDef
+## ListInvitationsRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import ListInvitationsResponseTypeDef
+from mypy_boto3_macie2.type_defs import ListInvitationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListInvitationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import ListInvitationsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `invitations`:
   `List`\[[InvitationTypeDef](./type_defs.md#invitationtypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListJobsFilterCriteriaTypeDef
 
@@ -1358,38 +1872,77 @@ Optional fields:
   [ListJobsSortAttributeNameType](./literals.md#listjobssortattributenametype)
 - `orderBy`: [OrderByType](./literals.md#orderbytype)
 
-## ListMembersResponseTypeDef
+## ListMembersRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import ListMembersResponseTypeDef
+from mypy_boto3_macie2.type_defs import ListMembersRequestTypeDef
 ```
 
 Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+- `onlyAssociated`: `str`
+
+## ListMembersResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import ListMembersResponseResponseTypeDef
+```
+
+Required fields:
 
 - `members`: `List`\[[MemberTypeDef](./type_defs.md#membertypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListOrganizationAdminAccountsResponseTypeDef
+## ListOrganizationAdminAccountsRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import ListOrganizationAdminAccountsResponseTypeDef
+from mypy_boto3_macie2.type_defs import ListOrganizationAdminAccountsRequestTypeDef
 ```
 
 Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListOrganizationAdminAccountsResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import ListOrganizationAdminAccountsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `adminAccounts`:
   `List`\[[AdminAccountTypeDef](./type_defs.md#adminaccounttypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_macie2.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `resourceArn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## MatchingBucketTypeDef
 
@@ -1529,16 +2082,41 @@ Optional fields:
 - `action`: [FindingActionTypeDef](./type_defs.md#findingactiontypedef)
 - `actor`: [FindingActorTypeDef](./type_defs.md#findingactortypedef)
 
-## PutClassificationExportConfigurationResponseTypeDef
+## PutClassificationExportConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import PutClassificationExportConfigurationResponseTypeDef
+from mypy_boto3_macie2.type_defs import PutClassificationExportConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `configuration`:
+  [ClassificationExportConfigurationTypeDef](./type_defs.md#classificationexportconfigurationtypedef)
+
+## PutClassificationExportConfigurationResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import PutClassificationExportConfigurationResponseResponseTypeDef
+```
+
+Required fields:
+
+- `configuration`:
+  [ClassificationExportConfigurationTypeDef](./type_defs.md#classificationexportconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## PutFindingsPublicationConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import PutFindingsPublicationConfigurationRequestTypeDef
 ```
 
 Optional fields:
 
-- `configuration`:
-  [ClassificationExportConfigurationTypeDef](./type_defs.md#classificationexportconfigurationtypedef)
+- `clientToken`: `str`
+- `securityHubConfiguration`:
+  [SecurityHubConfigurationTypeDef](./type_defs.md#securityhubconfigurationtypedef)
 
 ## RangeTypeDef
 
@@ -1585,6 +2163,20 @@ Optional fields:
 
 - `s3Bucket`: [S3BucketTypeDef](./type_defs.md#s3buckettypedef)
 - `s3Object`: [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## S3BucketCriteriaForJobTypeDef
 
@@ -1740,17 +2332,34 @@ Optional fields:
 - `tagCriterion`:
   [SearchResourcesTagCriterionTypeDef](./type_defs.md#searchresourcestagcriteriontypedef)
 
-## SearchResourcesResponseTypeDef
+## SearchResourcesRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import SearchResourcesResponseTypeDef
+from mypy_boto3_macie2.type_defs import SearchResourcesRequestTypeDef
 ```
 
 Optional fields:
 
+- `bucketCriteria`:
+  [SearchResourcesBucketCriteriaTypeDef](./type_defs.md#searchresourcesbucketcriteriatypedef)
+- `maxResults`: `int`
+- `nextToken`: `str`
+- `sortCriteria`:
+  [SearchResourcesSortCriteriaTypeDef](./type_defs.md#searchresourcessortcriteriatypedef)
+
+## SearchResourcesResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import SearchResourcesResponseResponseTypeDef
+```
+
+Required fields:
+
 - `matchingResources`:
   `List`\[[MatchingResourceTypeDef](./type_defs.md#matchingresourcetypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## SearchResourcesSimpleCriterionTypeDef
 
@@ -1969,6 +2578,17 @@ Optional fields:
 - `key`: `str`
 - `value`: `str`
 
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
 ## TagScopeTermTypeDef
 
 ```python
@@ -1995,15 +2615,34 @@ Optional fields:
 - `key`: `str`
 - `value`: `str`
 
-## TestCustomDataIdentifierResponseTypeDef
+## TestCustomDataIdentifierRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import TestCustomDataIdentifierResponseTypeDef
+from mypy_boto3_macie2.type_defs import TestCustomDataIdentifierRequestTypeDef
 ```
+
+Required fields:
+
+- `regex`: `str`
+- `sampleText`: `str`
 
 Optional fields:
 
+- `ignoreWords`: `List`\[`str`\]
+- `keywords`: `List`\[`str`\]
+- `maximumMatchDistance`: `int`
+
+## TestCustomDataIdentifierResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import TestCustomDataIdentifierResponseResponseTypeDef
+```
+
+Required fields:
+
 - `matchCount`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UnprocessedAccountTypeDef
 
@@ -2017,16 +2656,93 @@ Optional fields:
 - `errorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `errorMessage`: `str`
 
-## UpdateFindingsFilterResponseTypeDef
+## UntagResourceRequestTypeDef
 
 ```python
-from mypy_boto3_macie2.type_defs import UpdateFindingsFilterResponseTypeDef
+from mypy_boto3_macie2.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tagKeys`: `List`\[`str`\]
+
+## UpdateClassificationJobRequestTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import UpdateClassificationJobRequestTypeDef
+```
+
+Required fields:
+
+- `jobId`: `str`
+- `jobStatus`: [JobStatusType](./literals.md#jobstatustype)
+
+## UpdateFindingsFilterRequestTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import UpdateFindingsFilterRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
+Optional fields:
+
+- `action`: [FindingsFilterActionType](./literals.md#findingsfilteractiontype)
+- `description`: `str`
+- `findingCriteria`:
+  [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
+- `name`: `str`
+- `position`: `int`
+- `clientToken`: `str`
+
+## UpdateFindingsFilterResponseResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import UpdateFindingsFilterResponseResponseTypeDef
+```
+
+Required fields:
+
+- `arn`: `str`
+- `id`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateMacieSessionRequestTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import UpdateMacieSessionRequestTypeDef
 ```
 
 Optional fields:
 
-- `arn`: `str`
+- `findingPublishingFrequency`:
+  [FindingPublishingFrequencyType](./literals.md#findingpublishingfrequencytype)
+- `status`: [MacieStatusType](./literals.md#maciestatustype)
+
+## UpdateMemberSessionRequestTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import UpdateMemberSessionRequestTypeDef
+```
+
+Required fields:
+
 - `id`: `str`
+- `status`: [MacieStatusType](./literals.md#maciestatustype)
+
+## UpdateOrganizationConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import UpdateOrganizationConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `autoEnable`: `bool`
 
 ## UsageByAccountTypeDef
 

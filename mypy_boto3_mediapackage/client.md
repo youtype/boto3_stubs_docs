@@ -76,6 +76,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("mediapackage").can_paginate` method.
 
 Boto3 documentation:
@@ -89,10 +91,18 @@ Returns `bool`.
 
 ### configure_logs
 
+Changes the Channel's properities to configure log subscription See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/mediapackage-2017-10- 12/ConfigureLogs>`\_
+**Request Syntax** response = client.configure_logs( EgressAccessLogs={
+'LogGroupName': 'str...
+
 Type annotations for `boto3.client("mediapackage").configure_logs` method.
 
 Boto3 documentation:
 [MediaPackage.Client.configure_logs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.configure_logs)
+
+Arguments mapping described in
+[ConfigureLogsRequestTypeDef](./type_defs.md#configurelogsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -103,14 +113,19 @@ Keyword-only arguments:
   [IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef)
 
 Returns
-[ConfigureLogsResponseTypeDef](./type_defs.md#configurelogsresponsetypedef).
+[ConfigureLogsResponseResponseTypeDef](./type_defs.md#configurelogsresponseresponsetypedef).
 
 ### create_channel
+
+Creates a new Channel.
 
 Type annotations for `boto3.client("mediapackage").create_channel` method.
 
 Boto3 documentation:
 [MediaPackage.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.create_channel)
+
+Arguments mapping described in
+[CreateChannelRequestTypeDef](./type_defs.md#createchannelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -119,14 +134,19 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
+[CreateChannelResponseResponseTypeDef](./type_defs.md#createchannelresponseresponsetypedef).
 
 ### create_harvest_job
+
+Creates a new HarvestJob record.
 
 Type annotations for `boto3.client("mediapackage").create_harvest_job` method.
 
 Boto3 documentation:
 [MediaPackage.Client.create_harvest_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.create_harvest_job)
+
+Arguments mapping described in
+[CreateHarvestJobRequestTypeDef](./type_defs.md#createharvestjobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -138,15 +158,20 @@ Keyword-only arguments:
 - `StartTime`: `str` *(required)*
 
 Returns
-[CreateHarvestJobResponseTypeDef](./type_defs.md#createharvestjobresponsetypedef).
+[CreateHarvestJobResponseResponseTypeDef](./type_defs.md#createharvestjobresponseresponsetypedef).
 
 ### create_origin_endpoint
+
+Creates a new OriginEndpoint record.
 
 Type annotations for `boto3.client("mediapackage").create_origin_endpoint`
 method.
 
 Boto3 documentation:
 [MediaPackage.Client.create_origin_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.create_origin_endpoint)
+
+Arguments mapping described in
+[CreateOriginEndpointRequestTypeDef](./type_defs.md#createoriginendpointrequesttypedef).
 
 Keyword-only arguments:
 
@@ -167,14 +192,19 @@ Keyword-only arguments:
 - `Whitelist`: `List`\[`str`\]
 
 Returns
-[CreateOriginEndpointResponseTypeDef](./type_defs.md#createoriginendpointresponsetypedef).
+[CreateOriginEndpointResponseResponseTypeDef](./type_defs.md#createoriginendpointresponseresponsetypedef).
 
 ### delete_channel
+
+Deletes an existing Channel.
 
 Type annotations for `boto3.client("mediapackage").delete_channel` method.
 
 Boto3 documentation:
 [MediaPackage.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.delete_channel)
+
+Arguments mapping described in
+[DeleteChannelRequestTypeDef](./type_defs.md#deletechannelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -184,11 +214,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_origin_endpoint
 
+Deletes an existing OriginEndpoint.
+
 Type annotations for `boto3.client("mediapackage").delete_origin_endpoint`
 method.
 
 Boto3 documentation:
 [MediaPackage.Client.delete_origin_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.delete_origin_endpoint)
+
+Arguments mapping described in
+[DeleteOriginEndpointRequestTypeDef](./type_defs.md#deleteoriginendpointrequesttypedef).
 
 Keyword-only arguments:
 
@@ -198,19 +233,26 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_channel
 
+Gets details about a Channel.
+
 Type annotations for `boto3.client("mediapackage").describe_channel` method.
 
 Boto3 documentation:
 [MediaPackage.Client.describe_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.describe_channel)
+
+Arguments mapping described in
+[DescribeChannelRequestTypeDef](./type_defs.md#describechannelrequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef).
+[DescribeChannelResponseResponseTypeDef](./type_defs.md#describechannelresponseresponsetypedef).
 
 ### describe_harvest_job
+
+Gets details about an existing HarvestJob.
 
 Type annotations for `boto3.client("mediapackage").describe_harvest_job`
 method.
@@ -218,14 +260,19 @@ method.
 Boto3 documentation:
 [MediaPackage.Client.describe_harvest_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.describe_harvest_job)
 
+Arguments mapping described in
+[DescribeHarvestJobRequestTypeDef](./type_defs.md#describeharvestjobrequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[DescribeHarvestJobResponseTypeDef](./type_defs.md#describeharvestjobresponsetypedef).
+[DescribeHarvestJobResponseResponseTypeDef](./type_defs.md#describeharvestjobresponseresponsetypedef).
 
 ### describe_origin_endpoint
+
+Gets details about an existing OriginEndpoint.
 
 Type annotations for `boto3.client("mediapackage").describe_origin_endpoint`
 method.
@@ -233,14 +280,19 @@ method.
 Boto3 documentation:
 [MediaPackage.Client.describe_origin_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.describe_origin_endpoint)
 
+Arguments mapping described in
+[DescribeOriginEndpointRequestTypeDef](./type_defs.md#describeoriginendpointrequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[DescribeOriginEndpointResponseTypeDef](./type_defs.md#describeoriginendpointresponsetypedef).
+[DescribeOriginEndpointResponseResponseTypeDef](./type_defs.md#describeoriginendpointresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("mediapackage").generate_presigned_url`
 method.
@@ -259,10 +311,15 @@ Returns `str`.
 
 ### list_channels
 
+Returns a collection of Channels.
+
 Type annotations for `boto3.client("mediapackage").list_channels` method.
 
 Boto3 documentation:
 [MediaPackage.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.list_channels)
+
+Arguments mapping described in
+[ListChannelsRequestTypeDef](./type_defs.md#listchannelsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -270,14 +327,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
+[ListChannelsResponseResponseTypeDef](./type_defs.md#listchannelsresponseresponsetypedef).
 
 ### list_harvest_jobs
+
+Returns a collection of HarvestJob records.
 
 Type annotations for `boto3.client("mediapackage").list_harvest_jobs` method.
 
 Boto3 documentation:
 [MediaPackage.Client.list_harvest_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.list_harvest_jobs)
+
+Arguments mapping described in
+[ListHarvestJobsRequestTypeDef](./type_defs.md#listharvestjobsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -287,15 +349,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListHarvestJobsResponseTypeDef](./type_defs.md#listharvestjobsresponsetypedef).
+[ListHarvestJobsResponseResponseTypeDef](./type_defs.md#listharvestjobsresponseresponsetypedef).
 
 ### list_origin_endpoints
+
+Returns a collection of OriginEndpoint records.
 
 Type annotations for `boto3.client("mediapackage").list_origin_endpoints`
 method.
 
 Boto3 documentation:
 [MediaPackage.Client.list_origin_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.list_origin_endpoints)
+
+Arguments mapping described in
+[ListOriginEndpointsRequestTypeDef](./type_defs.md#listoriginendpointsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -304,9 +371,14 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListOriginEndpointsResponseTypeDef](./type_defs.md#listoriginendpointsresponsetypedef).
+[ListOriginEndpointsResponseResponseTypeDef](./type_defs.md#listoriginendpointsresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/mediap ackage-2017-10-12/ListTagsForResource>`\_
+**Request Syntax** response = client.list_tags_for_resource(
+ResourceArn='string' ).
 
 Type annotations for `boto3.client("mediapackage").list_tags_for_resource`
 method.
@@ -314,14 +386,19 @@ method.
 Boto3 documentation:
 [MediaPackage.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### rotate_channel_credentials
+
+Changes the Channel's first IngestEndpoint's username and password.
 
 Type annotations for `boto3.client("mediapackage").rotate_channel_credentials`
 method.
@@ -329,14 +406,20 @@ method.
 Boto3 documentation:
 [MediaPackage.Client.rotate_channel_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.rotate_channel_credentials)
 
+Arguments mapping described in
+[RotateChannelCredentialsRequestTypeDef](./type_defs.md#rotatechannelcredentialsrequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[RotateChannelCredentialsResponseTypeDef](./type_defs.md#rotatechannelcredentialsresponsetypedef).
+[RotateChannelCredentialsResponseResponseTypeDef](./type_defs.md#rotatechannelcredentialsresponseresponsetypedef).
 
 ### rotate_ingest_endpoint_credentials
+
+Rotate the IngestEndpoint's username and password, as specified by the
+IngestEndpoint's id.
 
 Type annotations for
 `boto3.client("mediapackage").rotate_ingest_endpoint_credentials` method.
@@ -344,20 +427,31 @@ Type annotations for
 Boto3 documentation:
 [MediaPackage.Client.rotate_ingest_endpoint_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.rotate_ingest_endpoint_credentials)
 
+Arguments mapping described in
+[RotateIngestEndpointCredentialsRequestTypeDef](./type_defs.md#rotateingestendpointcredentialsrequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `IngestEndpointId`: `str` *(required)*
 
 Returns
-[RotateIngestEndpointCredentialsResponseTypeDef](./type_defs.md#rotateingestendpointcredentialsresponsetypedef).
+[RotateIngestEndpointCredentialsResponseResponseTypeDef](./type_defs.md#rotateingestendpointcredentialsresponseresponsetypedef).
 
 ### tag_resource
+
+See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/mediapackage-2017-10-12/TagResource>`\_
+**Request Syntax** response = client.tag_resource( ResourceArn='string', Tags={
+'string': 'string' } ).
 
 Type annotations for `boto3.client("mediapackage").tag_resource` method.
 
 Boto3 documentation:
 [MediaPackage.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -366,10 +460,18 @@ Keyword-only arguments:
 
 ### untag_resource
 
+See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/mediap ackage-2017-10-12/UntagResource>`\_
+**Request Syntax** response = client.untag_resource( ResourceArn='string',
+TagKeys=\[ 'string', \] ).
+
 Type annotations for `boto3.client("mediapackage").untag_resource` method.
 
 Boto3 documentation:
 [MediaPackage.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -378,10 +480,15 @@ Keyword-only arguments:
 
 ### update_channel
 
+Updates an existing Channel.
+
 Type annotations for `boto3.client("mediapackage").update_channel` method.
 
 Boto3 documentation:
 [MediaPackage.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.update_channel)
+
+Arguments mapping described in
+[UpdateChannelRequestTypeDef](./type_defs.md#updatechannelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -389,15 +496,20 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).
+[UpdateChannelResponseResponseTypeDef](./type_defs.md#updatechannelresponseresponsetypedef).
 
 ### update_origin_endpoint
+
+Updates an existing OriginEndpoint.
 
 Type annotations for `boto3.client("mediapackage").update_origin_endpoint`
 method.
 
 Boto3 documentation:
 [MediaPackage.Client.update_origin_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.update_origin_endpoint)
+
+Arguments mapping described in
+[UpdateOriginEndpointRequestTypeDef](./type_defs.md#updateoriginendpointrequesttypedef).
 
 Keyword-only arguments:
 
@@ -416,7 +528,7 @@ Keyword-only arguments:
 - `Whitelist`: `List`\[`str`\]
 
 Returns
-[UpdateOriginEndpointResponseTypeDef](./type_defs.md#updateoriginendpointresponsetypedef).
+[UpdateOriginEndpointResponseResponseTypeDef](./type_defs.md#updateoriginendpointresponseresponsetypedef).
 
 ### get_paginator
 

@@ -8,49 +8,150 @@ type annotations stubs module
 [mypy_boto3_iot_data](https://pypi.org/project/mypy-boto3-iot-data/).
 
 - [Typed dictionaries for boto3 IoTDataPlane module](#typed-dictionaries-for-boto3-iotdataplane-module)
-  - [DeleteThingShadowResponseTypeDef](#deletethingshadowresponsetypedef)
-  - [GetThingShadowResponseTypeDef](#getthingshadowresponsetypedef)
-  - [ListNamedShadowsForThingResponseTypeDef](#listnamedshadowsforthingresponsetypedef)
-  - [UpdateThingShadowResponseTypeDef](#updatethingshadowresponsetypedef)
+  - [DeleteThingShadowRequestTypeDef](#deletethingshadowrequesttypedef)
+  - [DeleteThingShadowResponseResponseTypeDef](#deletethingshadowresponseresponsetypedef)
+  - [GetThingShadowRequestTypeDef](#getthingshadowrequesttypedef)
+  - [GetThingShadowResponseResponseTypeDef](#getthingshadowresponseresponsetypedef)
+  - [ListNamedShadowsForThingRequestTypeDef](#listnamedshadowsforthingrequesttypedef)
+  - [ListNamedShadowsForThingResponseResponseTypeDef](#listnamedshadowsforthingresponseresponsetypedef)
+  - [PublishRequestTypeDef](#publishrequesttypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [UpdateThingShadowRequestTypeDef](#updatethingshadowrequesttypedef)
+  - [UpdateThingShadowResponseResponseTypeDef](#updatethingshadowresponseresponsetypedef)
 
-## DeleteThingShadowResponseTypeDef
+## DeleteThingShadowRequestTypeDef
 
 ```python
-from mypy_boto3_iot_data.type_defs import DeleteThingShadowResponseTypeDef
+from mypy_boto3_iot_data.type_defs import DeleteThingShadowRequestTypeDef
 ```
 
 Required fields:
 
-- `payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-
-## GetThingShadowResponseTypeDef
-
-```python
-from mypy_boto3_iot_data.type_defs import GetThingShadowResponseTypeDef
-```
+- `thingName`: `str`
 
 Optional fields:
 
-- `payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `shadowName`: `str`
 
-## ListNamedShadowsForThingResponseTypeDef
+## DeleteThingShadowResponseResponseTypeDef
 
 ```python
-from mypy_boto3_iot_data.type_defs import ListNamedShadowsForThingResponseTypeDef
+from mypy_boto3_iot_data.type_defs import DeleteThingShadowResponseResponseTypeDef
 ```
 
+Required fields:
+
+- `payload`: `bytes`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetThingShadowRequestTypeDef
+
+```python
+from mypy_boto3_iot_data.type_defs import GetThingShadowRequestTypeDef
+```
+
+Required fields:
+
+- `thingName`: `str`
+
 Optional fields:
+
+- `shadowName`: `str`
+
+## GetThingShadowResponseResponseTypeDef
+
+```python
+from mypy_boto3_iot_data.type_defs import GetThingShadowResponseResponseTypeDef
+```
+
+Required fields:
+
+- `payload`: `bytes`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListNamedShadowsForThingRequestTypeDef
+
+```python
+from mypy_boto3_iot_data.type_defs import ListNamedShadowsForThingRequestTypeDef
+```
+
+Required fields:
+
+- `thingName`: `str`
+
+Optional fields:
+
+- `nextToken`: `str`
+- `pageSize`: `int`
+
+## ListNamedShadowsForThingResponseResponseTypeDef
+
+```python
+from mypy_boto3_iot_data.type_defs import ListNamedShadowsForThingResponseResponseTypeDef
+```
+
+Required fields:
 
 - `results`: `List`\[`str`\]
 - `nextToken`: `str`
 - `timestamp`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateThingShadowResponseTypeDef
+## PublishRequestTypeDef
 
 ```python
-from mypy_boto3_iot_data.type_defs import UpdateThingShadowResponseTypeDef
+from mypy_boto3_iot_data.type_defs import PublishRequestTypeDef
 ```
+
+Required fields:
+
+- `topic`: `str`
 
 Optional fields:
 
+- `qos`: `int`
 - `payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_iot_data.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## UpdateThingShadowRequestTypeDef
+
+```python
+from mypy_boto3_iot_data.type_defs import UpdateThingShadowRequestTypeDef
+```
+
+Required fields:
+
+- `thingName`: `str`
+- `payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+
+Optional fields:
+
+- `shadowName`: `str`
+
+## UpdateThingShadowResponseResponseTypeDef
+
+```python
+from mypy_boto3_iot_data.type_defs import UpdateThingShadowResponseResponseTypeDef
+```
+
+Required fields:
+
+- `payload`: `bytes`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

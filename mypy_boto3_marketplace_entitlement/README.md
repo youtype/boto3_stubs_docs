@@ -85,5 +85,7 @@ from mypy_boto3_marketplace_entitlement.type_defs import EntitlementTypeDef, ...
 
 - [EntitlementTypeDef](./type_defs.md#entitlementtypedef)
 - [EntitlementValueTypeDef](./type_defs.md#entitlementvaluetypedef)
-- [GetEntitlementsResultTypeDef](./type_defs.md#getentitlementsresulttypedef)
+- [GetEntitlementsRequestTypeDef](./type_defs.md#getentitlementsrequesttypedef)
+- [GetEntitlementsResultResponseTypeDef](./type_defs.md#getentitlementsresultresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

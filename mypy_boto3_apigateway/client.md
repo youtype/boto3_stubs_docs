@@ -178,6 +178,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("apigateway").can_paginate` method.
 
 Boto3 documentation:
@@ -191,10 +193,15 @@ Returns `bool`.
 
 ### create_api_key
 
+Create an ApiKey resource.
+
 Type annotations for `boto3.client("apigateway").create_api_key` method.
 
 Boto3 documentation:
 [APIGateway.Client.create_api_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_api_key)
+
+Arguments mapping described in
+[CreateApiKeyRequestTypeDef](./type_defs.md#createapikeyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -207,14 +214,19 @@ Keyword-only arguments:
 - `customerId`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-Returns [ApiKeyTypeDef](./type_defs.md#apikeytypedef).
+Returns [ApiKeyResponseTypeDef](./type_defs.md#apikeyresponsetypedef).
 
 ### create_authorizer
+
+Adds a new Authorizer resource to an existing RestApi resource.
 
 Type annotations for `boto3.client("apigateway").create_authorizer` method.
 
 Boto3 documentation:
 [APIGateway.Client.create_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_authorizer)
+
+Arguments mapping described in
+[CreateAuthorizerRequestTypeDef](./type_defs.md#createauthorizerrequesttypedef).
 
 Keyword-only arguments:
 
@@ -229,15 +241,20 @@ Keyword-only arguments:
 - `identityValidationExpression`: `str`
 - `authorizerResultTtlInSeconds`: `int`
 
-Returns [AuthorizerTypeDef](./type_defs.md#authorizertypedef).
+Returns [AuthorizerResponseTypeDef](./type_defs.md#authorizerresponsetypedef).
 
 ### create_base_path_mapping
+
+Creates a new BasePathMapping resource.
 
 Type annotations for `boto3.client("apigateway").create_base_path_mapping`
 method.
 
 Boto3 documentation:
 [APIGateway.Client.create_base_path_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_base_path_mapping)
+
+Arguments mapping described in
+[CreateBasePathMappingRequestTypeDef](./type_defs.md#createbasepathmappingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -246,14 +263,21 @@ Keyword-only arguments:
 - `basePath`: `str`
 - `stage`: `str`
 
-Returns [BasePathMappingTypeDef](./type_defs.md#basepathmappingtypedef).
+Returns
+[BasePathMappingResponseTypeDef](./type_defs.md#basepathmappingresponsetypedef).
 
 ### create_deployment
+
+Creates a Deployment resource, which makes a specified RestApi callable over
+the internet.
 
 Type annotations for `boto3.client("apigateway").create_deployment` method.
 
 Boto3 documentation:
 [APIGateway.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_deployment)
+
+Arguments mapping described in
+[CreateDeploymentRequestTypeDef](./type_defs.md#createdeploymentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -269,15 +293,24 @@ Keyword-only arguments:
   [DeploymentCanarySettingsTypeDef](./type_defs.md#deploymentcanarysettingstypedef)
 - `tracingEnabled`: `bool`
 
-Returns [DeploymentTypeDef](./type_defs.md#deploymenttypedef).
+Returns [DeploymentResponseTypeDef](./type_defs.md#deploymentresponsetypedef).
 
 ### create_documentation_part
+
+See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/apigat eway-2015-07-09/CreateDocumentationPart>`\_
+**Request Syntax** response = client.create_documentation_part(
+restApiId='string', location={ 'type':
+'API'|'AUTHORIZER'|'MODEL'|'RESOURCE'|'M...
 
 Type annotations for `boto3.client("apigateway").create_documentation_part`
 method.
 
 Boto3 documentation:
 [APIGateway.Client.create_documentation_part](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_documentation_part)
+
+Arguments mapping described in
+[CreateDocumentationPartRequestTypeDef](./type_defs.md#createdocumentationpartrequesttypedef).
 
 Keyword-only arguments:
 
@@ -287,15 +320,24 @@ Keyword-only arguments:
   *(required)*
 - `properties`: `str` *(required)*
 
-Returns [DocumentationPartTypeDef](./type_defs.md#documentationparttypedef).
+Returns
+[DocumentationPartResponseTypeDef](./type_defs.md#documentationpartresponsetypedef).
 
 ### create_documentation_version
+
+See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/apigat eway-2015-07-09/CreateDocumentationVersion>`\_
+**Request Syntax** response = client.create_documentation_version(
+restApiId='string', documentationVersion='string', stageName='string', ...
 
 Type annotations for `boto3.client("apigateway").create_documentation_version`
 method.
 
 Boto3 documentation:
 [APIGateway.Client.create_documentation_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_documentation_version)
+
+Arguments mapping described in
+[CreateDocumentationVersionRequestTypeDef](./type_defs.md#createdocumentationversionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -305,14 +347,19 @@ Keyword-only arguments:
 - `description`: `str`
 
 Returns
-[DocumentationVersionTypeDef](./type_defs.md#documentationversiontypedef).
+[DocumentationVersionResponseTypeDef](./type_defs.md#documentationversionresponsetypedef).
 
 ### create_domain_name
+
+Creates a new domain name.
 
 Type annotations for `boto3.client("apigateway").create_domain_name` method.
 
 Boto3 documentation:
 [APIGateway.Client.create_domain_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_domain_name)
+
+Arguments mapping described in
+[CreateDomainNameRequestTypeDef](./type_defs.md#createdomainnamerequesttypedef).
 
 Keyword-only arguments:
 
@@ -331,14 +378,19 @@ Keyword-only arguments:
 - `mutualTlsAuthentication`:
   [MutualTlsAuthenticationInputTypeDef](./type_defs.md#mutualtlsauthenticationinputtypedef)
 
-Returns [DomainNameTypeDef](./type_defs.md#domainnametypedef).
+Returns [DomainNameResponseTypeDef](./type_defs.md#domainnameresponsetypedef).
 
 ### create_model
+
+Adds a new Model resource to an existing RestApi resource.
 
 Type annotations for `boto3.client("apigateway").create_model` method.
 
 Boto3 documentation:
 [APIGateway.Client.create_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_model)
+
+Arguments mapping described in
+[CreateModelRequestTypeDef](./type_defs.md#createmodelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -348,15 +400,20 @@ Keyword-only arguments:
 - `description`: `str`
 - `schema`: `str`
 
-Returns [ModelTypeDef](./type_defs.md#modeltypedef).
+Returns [ModelResponseTypeDef](./type_defs.md#modelresponsetypedef).
 
 ### create_request_validator
+
+Creates a ReqeustValidator of a given RestApi .
 
 Type annotations for `boto3.client("apigateway").create_request_validator`
 method.
 
 Boto3 documentation:
 [APIGateway.Client.create_request_validator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_request_validator)
+
+Arguments mapping described in
+[CreateRequestValidatorRequestTypeDef](./type_defs.md#createrequestvalidatorrequesttypedef).
 
 Keyword-only arguments:
 
@@ -365,14 +422,20 @@ Keyword-only arguments:
 - `validateRequestBody`: `bool`
 - `validateRequestParameters`: `bool`
 
-Returns [RequestValidatorTypeDef](./type_defs.md#requestvalidatortypedef).
+Returns
+[RequestValidatorResponseTypeDef](./type_defs.md#requestvalidatorresponsetypedef).
 
 ### create_resource
+
+Creates a Resource resource.
 
 Type annotations for `boto3.client("apigateway").create_resource` method.
 
 Boto3 documentation:
 [APIGateway.Client.create_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_resource)
+
+Arguments mapping described in
+[CreateResourceRequestTypeDef](./type_defs.md#createresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -380,14 +443,19 @@ Keyword-only arguments:
 - `parentId`: `str` *(required)*
 - `pathPart`: `str` *(required)*
 
-Returns [ResourceTypeDef](./type_defs.md#resourcetypedef).
+Returns [ResourceResponseTypeDef](./type_defs.md#resourceresponsetypedef).
 
 ### create_rest_api
+
+Creates a new RestApi resource.
 
 Type annotations for `boto3.client("apigateway").create_rest_api` method.
 
 Boto3 documentation:
 [APIGateway.Client.create_rest_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_rest_api)
+
+Arguments mapping described in
+[CreateRestApiRequestTypeDef](./type_defs.md#createrestapirequesttypedef).
 
 Keyword-only arguments:
 
@@ -404,14 +472,20 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 - `disableExecuteApiEndpoint`: `bool`
 
-Returns [RestApiTypeDef](./type_defs.md#restapitypedef).
+Returns [RestApiResponseTypeDef](./type_defs.md#restapiresponsetypedef).
 
 ### create_stage
+
+Creates a new Stage resource that references a pre-existing Deployment for the
+API.
 
 Type annotations for `boto3.client("apigateway").create_stage` method.
 
 Boto3 documentation:
 [APIGateway.Client.create_stage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_stage)
+
+Arguments mapping described in
+[CreateStageRequestTypeDef](./type_defs.md#createstagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -429,14 +503,20 @@ Keyword-only arguments:
 - `tracingEnabled`: `bool`
 - `tags`: `Dict`\[`str`, `str`\]
 
-Returns [StageTypeDef](./type_defs.md#stagetypedef).
+Returns [StageResponseTypeDef](./type_defs.md#stageresponsetypedef).
 
 ### create_usage_plan
+
+Creates a usage plan with the throttle and quota limits, as well as the
+associated API stages, specified in the payload.
 
 Type annotations for `boto3.client("apigateway").create_usage_plan` method.
 
 Boto3 documentation:
 [APIGateway.Client.create_usage_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_usage_plan)
+
+Arguments mapping described in
+[CreateUsagePlanRequestTypeDef](./type_defs.md#createusageplanrequesttypedef).
 
 Keyword-only arguments:
 
@@ -447,14 +527,19 @@ Keyword-only arguments:
 - `quota`: [QuotaSettingsTypeDef](./type_defs.md#quotasettingstypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
-Returns [UsagePlanTypeDef](./type_defs.md#usageplantypedef).
+Returns [UsagePlanResponseTypeDef](./type_defs.md#usageplanresponsetypedef).
 
 ### create_usage_plan_key
+
+Creates a usage plan key for adding an existing API key to a usage plan.
 
 Type annotations for `boto3.client("apigateway").create_usage_plan_key` method.
 
 Boto3 documentation:
 [APIGateway.Client.create_usage_plan_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_usage_plan_key)
+
+Arguments mapping described in
+[CreateUsagePlanKeyRequestTypeDef](./type_defs.md#createusageplankeyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -462,14 +547,22 @@ Keyword-only arguments:
 - `keyId`: `str` *(required)*
 - `keyType`: `str` *(required)*
 
-Returns [UsagePlanKeyTypeDef](./type_defs.md#usageplankeytypedef).
+Returns
+[UsagePlanKeyResponseTypeDef](./type_defs.md#usageplankeyresponsetypedef).
 
 ### create_vpc_link
+
+Creates a VPC link, under the caller's account in a selected region, in an
+asynchronous operation that typically takes 2-4 minutes to complete and become
+operational.
 
 Type annotations for `boto3.client("apigateway").create_vpc_link` method.
 
 Boto3 documentation:
 [APIGateway.Client.create_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_vpc_link)
+
+Arguments mapping described in
+[CreateVpcLinkRequestTypeDef](./type_defs.md#createvpclinkrequesttypedef).
 
 Keyword-only arguments:
 
@@ -478,14 +571,19 @@ Keyword-only arguments:
 - `description`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-Returns [VpcLinkTypeDef](./type_defs.md#vpclinktypedef).
+Returns [VpcLinkResponseTypeDef](./type_defs.md#vpclinkresponsetypedef).
 
 ### delete_api_key
+
+Deletes the ApiKey resource.
 
 Type annotations for `boto3.client("apigateway").delete_api_key` method.
 
 Boto3 documentation:
 [APIGateway.Client.delete_api_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_api_key)
+
+Arguments mapping described in
+[DeleteApiKeyRequestTypeDef](./type_defs.md#deleteapikeyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -493,10 +591,15 @@ Keyword-only arguments:
 
 ### delete_authorizer
 
+Deletes an existing Authorizer resource.
+
 Type annotations for `boto3.client("apigateway").delete_authorizer` method.
 
 Boto3 documentation:
 [APIGateway.Client.delete_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_authorizer)
+
+Arguments mapping described in
+[DeleteAuthorizerRequestTypeDef](./type_defs.md#deleteauthorizerrequesttypedef).
 
 Keyword-only arguments:
 
@@ -505,11 +608,16 @@ Keyword-only arguments:
 
 ### delete_base_path_mapping
 
+Deletes the BasePathMapping resource.
+
 Type annotations for `boto3.client("apigateway").delete_base_path_mapping`
 method.
 
 Boto3 documentation:
 [APIGateway.Client.delete_base_path_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_base_path_mapping)
+
+Arguments mapping described in
+[DeleteBasePathMappingRequestTypeDef](./type_defs.md#deletebasepathmappingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -518,11 +626,16 @@ Keyword-only arguments:
 
 ### delete_client_certificate
 
+Deletes the ClientCertificate resource.
+
 Type annotations for `boto3.client("apigateway").delete_client_certificate`
 method.
 
 Boto3 documentation:
 [APIGateway.Client.delete_client_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_client_certificate)
+
+Arguments mapping described in
+[DeleteClientCertificateRequestTypeDef](./type_defs.md#deleteclientcertificaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -530,10 +643,15 @@ Keyword-only arguments:
 
 ### delete_deployment
 
+Deletes a Deployment resource.
+
 Type annotations for `boto3.client("apigateway").delete_deployment` method.
 
 Boto3 documentation:
 [APIGateway.Client.delete_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_deployment)
+
+Arguments mapping described in
+[DeleteDeploymentRequestTypeDef](./type_defs.md#deletedeploymentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -542,11 +660,19 @@ Keyword-only arguments:
 
 ### delete_documentation_part
 
+See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/apigat eway-2015-07-09/DeleteDocumentationPart>`\_
+**Request Syntax** response = client.delete_documentation_part(
+restApiId='string', documentationPartId='string' ).
+
 Type annotations for `boto3.client("apigateway").delete_documentation_part`
 method.
 
 Boto3 documentation:
 [APIGateway.Client.delete_documentation_part](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_documentation_part)
+
+Arguments mapping described in
+[DeleteDocumentationPartRequestTypeDef](./type_defs.md#deletedocumentationpartrequesttypedef).
 
 Keyword-only arguments:
 
@@ -555,11 +681,19 @@ Keyword-only arguments:
 
 ### delete_documentation_version
 
+See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/apigat eway-2015-07-09/DeleteDocumentationVersion>`\_
+**Request Syntax** response = client.delete_documentation_version(
+restApiId='string', documentationVersion='string' ).
+
 Type annotations for `boto3.client("apigateway").delete_documentation_version`
 method.
 
 Boto3 documentation:
 [APIGateway.Client.delete_documentation_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_documentation_version)
+
+Arguments mapping described in
+[DeleteDocumentationVersionRequestTypeDef](./type_defs.md#deletedocumentationversionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -568,10 +702,15 @@ Keyword-only arguments:
 
 ### delete_domain_name
 
+Deletes the DomainName resource.
+
 Type annotations for `boto3.client("apigateway").delete_domain_name` method.
 
 Boto3 documentation:
 [APIGateway.Client.delete_domain_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_domain_name)
+
+Arguments mapping described in
+[DeleteDomainNameRequestTypeDef](./type_defs.md#deletedomainnamerequesttypedef).
 
 Keyword-only arguments:
 
@@ -579,11 +718,17 @@ Keyword-only arguments:
 
 ### delete_gateway_response
 
+Clears any customization of a GatewayResponse of a specified response type on
+the given RestApi and resets it with the default settings.
+
 Type annotations for `boto3.client("apigateway").delete_gateway_response`
 method.
 
 Boto3 documentation:
 [APIGateway.Client.delete_gateway_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_gateway_response)
+
+Arguments mapping described in
+[DeleteGatewayResponseRequestTypeDef](./type_defs.md#deletegatewayresponserequesttypedef).
 
 Keyword-only arguments:
 
@@ -593,10 +738,15 @@ Keyword-only arguments:
 
 ### delete_integration
 
+Represents a delete integration.
+
 Type annotations for `boto3.client("apigateway").delete_integration` method.
 
 Boto3 documentation:
 [APIGateway.Client.delete_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_integration)
+
+Arguments mapping described in
+[DeleteIntegrationRequestTypeDef](./type_defs.md#deleteintegrationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -606,11 +756,16 @@ Keyword-only arguments:
 
 ### delete_integration_response
 
+Represents a delete integration response.
+
 Type annotations for `boto3.client("apigateway").delete_integration_response`
 method.
 
 Boto3 documentation:
 [APIGateway.Client.delete_integration_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_integration_response)
+
+Arguments mapping described in
+[DeleteIntegrationResponseRequestTypeDef](./type_defs.md#deleteintegrationresponserequesttypedef).
 
 Keyword-only arguments:
 
@@ -621,10 +776,15 @@ Keyword-only arguments:
 
 ### delete_method
 
+Deletes an existing Method resource.
+
 Type annotations for `boto3.client("apigateway").delete_method` method.
 
 Boto3 documentation:
 [APIGateway.Client.delete_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_method)
+
+Arguments mapping described in
+[DeleteMethodRequestTypeDef](./type_defs.md#deletemethodrequesttypedef).
 
 Keyword-only arguments:
 
@@ -634,11 +794,16 @@ Keyword-only arguments:
 
 ### delete_method_response
 
+Deletes an existing MethodResponse resource.
+
 Type annotations for `boto3.client("apigateway").delete_method_response`
 method.
 
 Boto3 documentation:
 [APIGateway.Client.delete_method_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_method_response)
+
+Arguments mapping described in
+[DeleteMethodResponseRequestTypeDef](./type_defs.md#deletemethodresponserequesttypedef).
 
 Keyword-only arguments:
 
@@ -649,10 +814,15 @@ Keyword-only arguments:
 
 ### delete_model
 
+Deletes a model.
+
 Type annotations for `boto3.client("apigateway").delete_model` method.
 
 Boto3 documentation:
 [APIGateway.Client.delete_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_model)
+
+Arguments mapping described in
+[DeleteModelRequestTypeDef](./type_defs.md#deletemodelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -661,11 +831,16 @@ Keyword-only arguments:
 
 ### delete_request_validator
 
+Deletes a RequestValidator of a given RestApi .
+
 Type annotations for `boto3.client("apigateway").delete_request_validator`
 method.
 
 Boto3 documentation:
 [APIGateway.Client.delete_request_validator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_request_validator)
+
+Arguments mapping described in
+[DeleteRequestValidatorRequestTypeDef](./type_defs.md#deleterequestvalidatorrequesttypedef).
 
 Keyword-only arguments:
 
@@ -674,10 +849,15 @@ Keyword-only arguments:
 
 ### delete_resource
 
+Deletes a Resource resource.
+
 Type annotations for `boto3.client("apigateway").delete_resource` method.
 
 Boto3 documentation:
 [APIGateway.Client.delete_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_resource)
+
+Arguments mapping described in
+[DeleteResourceRequestTypeDef](./type_defs.md#deleteresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -686,10 +866,15 @@ Keyword-only arguments:
 
 ### delete_rest_api
 
+Deletes the specified API.
+
 Type annotations for `boto3.client("apigateway").delete_rest_api` method.
 
 Boto3 documentation:
 [APIGateway.Client.delete_rest_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_rest_api)
+
+Arguments mapping described in
+[DeleteRestApiRequestTypeDef](./type_defs.md#deleterestapirequesttypedef).
 
 Keyword-only arguments:
 
@@ -697,10 +882,15 @@ Keyword-only arguments:
 
 ### delete_stage
 
+Deletes a Stage resource.
+
 Type annotations for `boto3.client("apigateway").delete_stage` method.
 
 Boto3 documentation:
 [APIGateway.Client.delete_stage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_stage)
+
+Arguments mapping described in
+[DeleteStageRequestTypeDef](./type_defs.md#deletestagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -709,10 +899,15 @@ Keyword-only arguments:
 
 ### delete_usage_plan
 
+Deletes a usage plan of a given plan Id.
+
 Type annotations for `boto3.client("apigateway").delete_usage_plan` method.
 
 Boto3 documentation:
 [APIGateway.Client.delete_usage_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_usage_plan)
+
+Arguments mapping described in
+[DeleteUsagePlanRequestTypeDef](./type_defs.md#deleteusageplanrequesttypedef).
 
 Keyword-only arguments:
 
@@ -720,10 +915,16 @@ Keyword-only arguments:
 
 ### delete_usage_plan_key
 
+Deletes a usage plan key and remove the underlying API key from the associated
+usage plan.
+
 Type annotations for `boto3.client("apigateway").delete_usage_plan_key` method.
 
 Boto3 documentation:
 [APIGateway.Client.delete_usage_plan_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_usage_plan_key)
+
+Arguments mapping described in
+[DeleteUsagePlanKeyRequestTypeDef](./type_defs.md#deleteusageplankeyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -732,10 +933,15 @@ Keyword-only arguments:
 
 ### delete_vpc_link
 
+Deletes an existing VpcLink of a specified identifier.
+
 Type annotations for `boto3.client("apigateway").delete_vpc_link` method.
 
 Boto3 documentation:
 [APIGateway.Client.delete_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_vpc_link)
+
+Arguments mapping described in
+[DeleteVpcLinkRequestTypeDef](./type_defs.md#deletevpclinkrequesttypedef).
 
 Keyword-only arguments:
 
@@ -743,11 +949,16 @@ Keyword-only arguments:
 
 ### flush_stage_authorizers_cache
 
+Flushes all authorizer cache entries on a stage.
+
 Type annotations for `boto3.client("apigateway").flush_stage_authorizers_cache`
 method.
 
 Boto3 documentation:
 [APIGateway.Client.flush_stage_authorizers_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.flush_stage_authorizers_cache)
+
+Arguments mapping described in
+[FlushStageAuthorizersCacheRequestTypeDef](./type_defs.md#flushstageauthorizerscacherequesttypedef).
 
 Keyword-only arguments:
 
@@ -756,10 +967,15 @@ Keyword-only arguments:
 
 ### flush_stage_cache
 
+Flushes a stage's cache.
+
 Type annotations for `boto3.client("apigateway").flush_stage_cache` method.
 
 Boto3 documentation:
 [APIGateway.Client.flush_stage_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.flush_stage_cache)
+
+Arguments mapping described in
+[FlushStageCacheRequestTypeDef](./type_defs.md#flushstagecacherequesttypedef).
 
 Keyword-only arguments:
 
@@ -768,20 +984,28 @@ Keyword-only arguments:
 
 ### generate_client_certificate
 
+Generates a ClientCertificate resource.
+
 Type annotations for `boto3.client("apigateway").generate_client_certificate`
 method.
 
 Boto3 documentation:
 [APIGateway.Client.generate_client_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.generate_client_certificate)
 
+Arguments mapping described in
+[GenerateClientCertificateRequestTypeDef](./type_defs.md#generateclientcertificaterequesttypedef).
+
 Keyword-only arguments:
 
 - `description`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-Returns [ClientCertificateTypeDef](./type_defs.md#clientcertificatetypedef).
+Returns
+[ClientCertificateResponseTypeDef](./type_defs.md#clientcertificateresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("apigateway").generate_presigned_url`
 method.
@@ -800,33 +1024,45 @@ Returns `str`.
 
 ### get_account
 
+Gets information about the current Account resource.
+
 Type annotations for `boto3.client("apigateway").get_account` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_account)
 
-Returns [AccountTypeDef](./type_defs.md#accounttypedef).
+Returns [AccountResponseTypeDef](./type_defs.md#accountresponsetypedef).
 
 ### get_api_key
+
+Gets information about the current ApiKey resource.
 
 Type annotations for `boto3.client("apigateway").get_api_key` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_api_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_api_key)
 
+Arguments mapping described in
+[GetApiKeyRequestTypeDef](./type_defs.md#getapikeyrequesttypedef).
+
 Keyword-only arguments:
 
 - `apiKey`: `str` *(required)*
 - `includeValue`: `bool`
 
-Returns [ApiKeyTypeDef](./type_defs.md#apikeytypedef).
+Returns [ApiKeyResponseTypeDef](./type_defs.md#apikeyresponsetypedef).
 
 ### get_api_keys
+
+Gets information about the current ApiKeys resource.
 
 Type annotations for `boto3.client("apigateway").get_api_keys` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_api_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_api_keys)
+
+Arguments mapping described in
+[GetApiKeysRequestTypeDef](./type_defs.md#getapikeysrequesttypedef).
 
 Keyword-only arguments:
 
@@ -836,28 +1072,38 @@ Keyword-only arguments:
 - `customerId`: `str`
 - `includeValues`: `bool`
 
-Returns [ApiKeysTypeDef](./type_defs.md#apikeystypedef).
+Returns [ApiKeysResponseTypeDef](./type_defs.md#apikeysresponsetypedef).
 
 ### get_authorizer
+
+Describe an existing Authorizer resource.
 
 Type annotations for `boto3.client("apigateway").get_authorizer` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_authorizer)
 
+Arguments mapping described in
+[GetAuthorizerRequestTypeDef](./type_defs.md#getauthorizerrequesttypedef).
+
 Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `authorizerId`: `str` *(required)*
 
-Returns [AuthorizerTypeDef](./type_defs.md#authorizertypedef).
+Returns [AuthorizerResponseTypeDef](./type_defs.md#authorizerresponsetypedef).
 
 ### get_authorizers
+
+Describe an existing Authorizers resource.
 
 Type annotations for `boto3.client("apigateway").get_authorizers` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_authorizers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_authorizers)
+
+Arguments mapping described in
+[GetAuthorizersRequestTypeDef](./type_defs.md#getauthorizersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -865,23 +1111,32 @@ Keyword-only arguments:
 - `position`: `str`
 - `limit`: `int`
 
-Returns [AuthorizersTypeDef](./type_defs.md#authorizerstypedef).
+Returns
+[AuthorizersResponseTypeDef](./type_defs.md#authorizersresponsetypedef).
 
 ### get_base_path_mapping
+
+Describe a BasePathMapping resource.
 
 Type annotations for `boto3.client("apigateway").get_base_path_mapping` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_base_path_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_base_path_mapping)
 
+Arguments mapping described in
+[GetBasePathMappingRequestTypeDef](./type_defs.md#getbasepathmappingrequesttypedef).
+
 Keyword-only arguments:
 
 - `domainName`: `str` *(required)*
 - `basePath`: `str` *(required)*
 
-Returns [BasePathMappingTypeDef](./type_defs.md#basepathmappingtypedef).
+Returns
+[BasePathMappingResponseTypeDef](./type_defs.md#basepathmappingresponsetypedef).
 
 ### get_base_path_mappings
+
+Represents a collection of BasePathMapping resources.
 
 Type annotations for `boto3.client("apigateway").get_base_path_mappings`
 method.
@@ -889,15 +1144,21 @@ method.
 Boto3 documentation:
 [APIGateway.Client.get_base_path_mappings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_base_path_mappings)
 
+Arguments mapping described in
+[GetBasePathMappingsRequestTypeDef](./type_defs.md#getbasepathmappingsrequesttypedef).
+
 Keyword-only arguments:
 
 - `domainName`: `str` *(required)*
 - `position`: `str`
 - `limit`: `int`
 
-Returns [BasePathMappingsTypeDef](./type_defs.md#basepathmappingstypedef).
+Returns
+[BasePathMappingsResponseTypeDef](./type_defs.md#basepathmappingsresponsetypedef).
 
 ### get_client_certificate
+
+Gets information about the current ClientCertificate resource.
 
 Type annotations for `boto3.client("apigateway").get_client_certificate`
 method.
@@ -905,13 +1166,19 @@ method.
 Boto3 documentation:
 [APIGateway.Client.get_client_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_client_certificate)
 
+Arguments mapping described in
+[GetClientCertificateRequestTypeDef](./type_defs.md#getclientcertificaterequesttypedef).
+
 Keyword-only arguments:
 
 - `clientCertificateId`: `str` *(required)*
 
-Returns [ClientCertificateTypeDef](./type_defs.md#clientcertificatetypedef).
+Returns
+[ClientCertificateResponseTypeDef](./type_defs.md#clientcertificateresponsetypedef).
 
 ### get_client_certificates
+
+Gets a collection of ClientCertificate resources.
 
 Type annotations for `boto3.client("apigateway").get_client_certificates`
 method.
@@ -919,19 +1186,28 @@ method.
 Boto3 documentation:
 [APIGateway.Client.get_client_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_client_certificates)
 
+Arguments mapping described in
+[GetClientCertificatesRequestTypeDef](./type_defs.md#getclientcertificatesrequesttypedef).
+
 Keyword-only arguments:
 
 - `position`: `str`
 - `limit`: `int`
 
-Returns [ClientCertificatesTypeDef](./type_defs.md#clientcertificatestypedef).
+Returns
+[ClientCertificatesResponseTypeDef](./type_defs.md#clientcertificatesresponsetypedef).
 
 ### get_deployment
+
+Gets information about a Deployment resource.
 
 Type annotations for `boto3.client("apigateway").get_deployment` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_deployment)
+
+Arguments mapping described in
+[GetDeploymentRequestTypeDef](./type_defs.md#getdeploymentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -939,14 +1215,19 @@ Keyword-only arguments:
 - `deploymentId`: `str` *(required)*
 - `embed`: `List`\[`str`\]
 
-Returns [DeploymentTypeDef](./type_defs.md#deploymenttypedef).
+Returns [DeploymentResponseTypeDef](./type_defs.md#deploymentresponsetypedef).
 
 ### get_deployments
+
+Gets information about a Deployments collection.
 
 Type annotations for `boto3.client("apigateway").get_deployments` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_deployments)
+
+Arguments mapping described in
+[GetDeploymentsRequestTypeDef](./type_defs.md#getdeploymentsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -954,9 +1235,15 @@ Keyword-only arguments:
 - `position`: `str`
 - `limit`: `int`
 
-Returns [DeploymentsTypeDef](./type_defs.md#deploymentstypedef).
+Returns
+[DeploymentsResponseTypeDef](./type_defs.md#deploymentsresponsetypedef).
 
 ### get_documentation_part
+
+See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/apigat eway-2015-07-09/GetDocumentationPart>`\_
+**Request Syntax** response = client.get_documentation_part(
+restApiId='string', documentationPartId='string' ).
 
 Type annotations for `boto3.client("apigateway").get_documentation_part`
 method.
@@ -964,20 +1251,33 @@ method.
 Boto3 documentation:
 [APIGateway.Client.get_documentation_part](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_part)
 
+Arguments mapping described in
+[GetDocumentationPartRequestTypeDef](./type_defs.md#getdocumentationpartrequesttypedef).
+
 Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `documentationPartId`: `str` *(required)*
 
-Returns [DocumentationPartTypeDef](./type_defs.md#documentationparttypedef).
+Returns
+[DocumentationPartResponseTypeDef](./type_defs.md#documentationpartresponsetypedef).
 
 ### get_documentation_parts
+
+See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/apigat eway-2015-07-09/GetDocumentationParts>`\_
+**Request Syntax** response = client.get_documentation_parts(
+restApiId='string',
+type='API'|'AUTHORIZER'|'MODEL'|'RESOURCE'|'METHOD'|'PATH_PARAMETER'|'QUE...
 
 Type annotations for `boto3.client("apigateway").get_documentation_parts`
 method.
 
 Boto3 documentation:
 [APIGateway.Client.get_documentation_parts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_parts)
+
+Arguments mapping described in
+[GetDocumentationPartsRequestTypeDef](./type_defs.md#getdocumentationpartsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -990,9 +1290,15 @@ Keyword-only arguments:
 - `locationStatus`:
   [LocationStatusTypeType](./literals.md#locationstatustypetype)
 
-Returns [DocumentationPartsTypeDef](./type_defs.md#documentationpartstypedef).
+Returns
+[DocumentationPartsResponseTypeDef](./type_defs.md#documentationpartsresponsetypedef).
 
 ### get_documentation_version
+
+See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/apigat eway-2015-07-09/GetDocumentationVersion>`\_
+**Request Syntax** response = client.get_documentation_version(
+restApiId='string', documentationVersion='string' ).
 
 Type annotations for `boto3.client("apigateway").get_documentation_version`
 method.
@@ -1000,15 +1306,23 @@ method.
 Boto3 documentation:
 [APIGateway.Client.get_documentation_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_version)
 
+Arguments mapping described in
+[GetDocumentationVersionRequestTypeDef](./type_defs.md#getdocumentationversionrequesttypedef).
+
 Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `documentationVersion`: `str` *(required)*
 
 Returns
-[DocumentationVersionTypeDef](./type_defs.md#documentationversiontypedef).
+[DocumentationVersionResponseTypeDef](./type_defs.md#documentationversionresponsetypedef).
 
 ### get_documentation_versions
+
+See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/apigat eway-2015-07-09/GetDocumentationVersions>`\_
+**Request Syntax** response = client.get_documentation_versions(
+restApiId='string', position='string', limit=123 ).
 
 Type annotations for `boto3.client("apigateway").get_documentation_versions`
 method.
@@ -1016,6 +1330,9 @@ method.
 Boto3 documentation:
 [APIGateway.Client.get_documentation_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_versions)
 
+Arguments mapping described in
+[GetDocumentationVersionsRequestTypeDef](./type_defs.md#getdocumentationversionsrequesttypedef).
+
 Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
@@ -1023,41 +1340,58 @@ Keyword-only arguments:
 - `limit`: `int`
 
 Returns
-[DocumentationVersionsTypeDef](./type_defs.md#documentationversionstypedef).
+[DocumentationVersionsResponseTypeDef](./type_defs.md#documentationversionsresponsetypedef).
 
 ### get_domain_name
+
+Represents a domain name that is contained in a simpler, more intuitive URL
+that can be called.
 
 Type annotations for `boto3.client("apigateway").get_domain_name` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_domain_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_domain_name)
 
+Arguments mapping described in
+[GetDomainNameRequestTypeDef](./type_defs.md#getdomainnamerequesttypedef).
+
 Keyword-only arguments:
 
 - `domainName`: `str` *(required)*
 
-Returns [DomainNameTypeDef](./type_defs.md#domainnametypedef).
+Returns [DomainNameResponseTypeDef](./type_defs.md#domainnameresponsetypedef).
 
 ### get_domain_names
+
+Represents a collection of DomainName resources.
 
 Type annotations for `boto3.client("apigateway").get_domain_names` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_domain_names](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_domain_names)
 
+Arguments mapping described in
+[GetDomainNamesRequestTypeDef](./type_defs.md#getdomainnamesrequesttypedef).
+
 Keyword-only arguments:
 
 - `position`: `str`
 - `limit`: `int`
 
-Returns [DomainNamesTypeDef](./type_defs.md#domainnamestypedef).
+Returns
+[DomainNamesResponseTypeDef](./type_defs.md#domainnamesresponsetypedef).
 
 ### get_export
+
+Exports a deployed version of a RestApi in a specified format.
 
 Type annotations for `boto3.client("apigateway").get_export` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_export)
+
+Arguments mapping described in
+[GetExportRequestTypeDef](./type_defs.md#getexportrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1067,14 +1401,20 @@ Keyword-only arguments:
 - `parameters`: `Dict`\[`str`, `str`\]
 - `accepts`: `str`
 
-Returns [ExportResponseTypeDef](./type_defs.md#exportresponsetypedef).
+Returns
+[ExportResponseResponseTypeDef](./type_defs.md#exportresponseresponsetypedef).
 
 ### get_gateway_response
+
+Gets a GatewayResponse of a specified response type on the given RestApi .
 
 Type annotations for `boto3.client("apigateway").get_gateway_response` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_gateway_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_gateway_response)
+
+Arguments mapping described in
+[GetGatewayResponseRequestTypeDef](./type_defs.md#getgatewayresponserequesttypedef).
 
 Keyword-only arguments:
 
@@ -1082,14 +1422,20 @@ Keyword-only arguments:
 - `responseType`:
   [GatewayResponseTypeType](./literals.md#gatewayresponsetypetype) *(required)*
 
-Returns [GatewayResponseTypeDef](./type_defs.md#gatewayresponsetypedef).
+Returns
+[GatewayResponseResponseTypeDef](./type_defs.md#gatewayresponseresponsetypedef).
 
 ### get_gateway_responses
+
+Gets the GatewayResponses collection on the given RestApi.
 
 Type annotations for `boto3.client("apigateway").get_gateway_responses` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_gateway_responses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_gateway_responses)
+
+Arguments mapping described in
+[GetGatewayResponsesRequestTypeDef](./type_defs.md#getgatewayresponsesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1097,14 +1443,20 @@ Keyword-only arguments:
 - `position`: `str`
 - `limit`: `int`
 
-Returns [GatewayResponsesTypeDef](./type_defs.md#gatewayresponsestypedef).
+Returns
+[GatewayResponsesResponseTypeDef](./type_defs.md#gatewayresponsesresponsetypedef).
 
 ### get_integration
+
+Get the integration settings.
 
 Type annotations for `boto3.client("apigateway").get_integration` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_integration)
+
+Arguments mapping described in
+[GetIntegrationRequestTypeDef](./type_defs.md#getintegrationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1116,11 +1468,16 @@ Returns [IntegrationTypeDef](./type_defs.md#integrationtypedef).
 
 ### get_integration_response
 
+Represents a get integration response.
+
 Type annotations for `boto3.client("apigateway").get_integration_response`
 method.
 
 Boto3 documentation:
 [APIGateway.Client.get_integration_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_integration_response)
+
+Arguments mapping described in
+[GetIntegrationResponseRequestTypeDef](./type_defs.md#getintegrationresponserequesttypedef).
 
 Keyword-only arguments:
 
@@ -1134,10 +1491,15 @@ Returns
 
 ### get_method
 
+Describe an existing Method resource.
+
 Type annotations for `boto3.client("apigateway").get_method` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_method)
+
+Arguments mapping described in
+[GetMethodRequestTypeDef](./type_defs.md#getmethodrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1149,10 +1511,15 @@ Returns [MethodTypeDef](./type_defs.md#methodtypedef).
 
 ### get_method_response
 
+Describes a MethodResponse resource.
+
 Type annotations for `boto3.client("apigateway").get_method_response` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_method_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_method_response)
+
+Arguments mapping described in
+[GetMethodResponseRequestTypeDef](./type_defs.md#getmethodresponserequesttypedef).
 
 Keyword-only arguments:
 
@@ -1165,10 +1532,15 @@ Returns [MethodResponseTypeDef](./type_defs.md#methodresponsetypedef).
 
 ### get_model
 
+Describes an existing model defined for a RestApi resource.
+
 Type annotations for `boto3.client("apigateway").get_model` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_model)
+
+Arguments mapping described in
+[GetModelRequestTypeDef](./type_defs.md#getmodelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1176,28 +1548,39 @@ Keyword-only arguments:
 - `modelName`: `str` *(required)*
 - `flatten`: `bool`
 
-Returns [ModelTypeDef](./type_defs.md#modeltypedef).
+Returns [ModelResponseTypeDef](./type_defs.md#modelresponsetypedef).
 
 ### get_model_template
+
+Generates a sample mapping template that can be used to transform a payload
+into the structure of a model.
 
 Type annotations for `boto3.client("apigateway").get_model_template` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_model_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_model_template)
 
+Arguments mapping described in
+[GetModelTemplateRequestTypeDef](./type_defs.md#getmodeltemplaterequesttypedef).
+
 Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `modelName`: `str` *(required)*
 
-Returns [TemplateTypeDef](./type_defs.md#templatetypedef).
+Returns [TemplateResponseTypeDef](./type_defs.md#templateresponsetypedef).
 
 ### get_models
+
+Describes existing Models defined for a RestApi resource.
 
 Type annotations for `boto3.client("apigateway").get_models` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_models)
+
+Arguments mapping described in
+[GetModelsRequestTypeDef](./type_defs.md#getmodelsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1205,23 +1588,31 @@ Keyword-only arguments:
 - `position`: `str`
 - `limit`: `int`
 
-Returns [ModelsTypeDef](./type_defs.md#modelstypedef).
+Returns [ModelsResponseTypeDef](./type_defs.md#modelsresponsetypedef).
 
 ### get_request_validator
+
+Gets a RequestValidator of a given RestApi .
 
 Type annotations for `boto3.client("apigateway").get_request_validator` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_request_validator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_request_validator)
 
+Arguments mapping described in
+[GetRequestValidatorRequestTypeDef](./type_defs.md#getrequestvalidatorrequesttypedef).
+
 Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `requestValidatorId`: `str` *(required)*
 
-Returns [RequestValidatorTypeDef](./type_defs.md#requestvalidatortypedef).
+Returns
+[RequestValidatorResponseTypeDef](./type_defs.md#requestvalidatorresponsetypedef).
 
 ### get_request_validators
+
+Gets the RequestValidators collection of a given RestApi .
 
 Type annotations for `boto3.client("apigateway").get_request_validators`
 method.
@@ -1229,20 +1620,29 @@ method.
 Boto3 documentation:
 [APIGateway.Client.get_request_validators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_request_validators)
 
+Arguments mapping described in
+[GetRequestValidatorsRequestTypeDef](./type_defs.md#getrequestvalidatorsrequesttypedef).
+
 Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `position`: `str`
 - `limit`: `int`
 
-Returns [RequestValidatorsTypeDef](./type_defs.md#requestvalidatorstypedef).
+Returns
+[RequestValidatorsResponseTypeDef](./type_defs.md#requestvalidatorsresponsetypedef).
 
 ### get_resource
+
+Lists information about a resource.
 
 Type annotations for `boto3.client("apigateway").get_resource` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_resource)
+
+Arguments mapping described in
+[GetResourceRequestTypeDef](./type_defs.md#getresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1250,14 +1650,19 @@ Keyword-only arguments:
 - `resourceId`: `str` *(required)*
 - `embed`: `List`\[`str`\]
 
-Returns [ResourceTypeDef](./type_defs.md#resourcetypedef).
+Returns [ResourceResponseTypeDef](./type_defs.md#resourceresponsetypedef).
 
 ### get_resources
+
+Lists information about a collection of Resource resources.
 
 Type annotations for `boto3.client("apigateway").get_resources` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_resources)
+
+Arguments mapping described in
+[GetResourcesRequestTypeDef](./type_defs.md#getresourcesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1266,41 +1671,56 @@ Keyword-only arguments:
 - `limit`: `int`
 - `embed`: `List`\[`str`\]
 
-Returns [ResourcesTypeDef](./type_defs.md#resourcestypedef).
+Returns [ResourcesResponseTypeDef](./type_defs.md#resourcesresponsetypedef).
 
 ### get_rest_api
+
+Lists the RestApi resource in the collection.
 
 Type annotations for `boto3.client("apigateway").get_rest_api` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_rest_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_rest_api)
 
+Arguments mapping described in
+[GetRestApiRequestTypeDef](./type_defs.md#getrestapirequesttypedef).
+
 Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 
-Returns [RestApiTypeDef](./type_defs.md#restapitypedef).
+Returns [RestApiResponseTypeDef](./type_defs.md#restapiresponsetypedef).
 
 ### get_rest_apis
+
+Lists the RestApis resources for your collection.
 
 Type annotations for `boto3.client("apigateway").get_rest_apis` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_rest_apis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_rest_apis)
 
+Arguments mapping described in
+[GetRestApisRequestTypeDef](./type_defs.md#getrestapisrequesttypedef).
+
 Keyword-only arguments:
 
 - `position`: `str`
 - `limit`: `int`
 
-Returns [RestApisTypeDef](./type_defs.md#restapistypedef).
+Returns [RestApisResponseTypeDef](./type_defs.md#restapisresponsetypedef).
 
 ### get_sdk
+
+Generates a client SDK for a RestApi and Stage .
 
 Type annotations for `boto3.client("apigateway").get_sdk` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_sdk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_sdk)
+
+Arguments mapping described in
+[GetSdkRequestTypeDef](./type_defs.md#getsdkrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1309,69 +1729,100 @@ Keyword-only arguments:
 - `sdkType`: `str` *(required)*
 - `parameters`: `Dict`\[`str`, `str`\]
 
-Returns [SdkResponseTypeDef](./type_defs.md#sdkresponsetypedef).
+Returns
+[SdkResponseResponseTypeDef](./type_defs.md#sdkresponseresponsetypedef).
 
 ### get_sdk_type
+
+See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/GetSdkType>`\_
+**Request Syntax** response = client.get_sdk_type( id='string' ).
 
 Type annotations for `boto3.client("apigateway").get_sdk_type` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_sdk_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_sdk_type)
 
+Arguments mapping described in
+[GetSdkTypeRequestTypeDef](./type_defs.md#getsdktyperequesttypedef).
+
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
-Returns [SdkTypeTypeDef](./type_defs.md#sdktypetypedef).
+Returns [SdkTypeResponseTypeDef](./type_defs.md#sdktyperesponsetypedef).
 
 ### get_sdk_types
+
+See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/GetSdkTypes>`\_
+**Request Syntax** response = client.get_sdk_types( position='string',
+limit=123 ).
 
 Type annotations for `boto3.client("apigateway").get_sdk_types` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_sdk_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_sdk_types)
 
+Arguments mapping described in
+[GetSdkTypesRequestTypeDef](./type_defs.md#getsdktypesrequesttypedef).
+
 Keyword-only arguments:
 
 - `position`: `str`
 - `limit`: `int`
 
-Returns [SdkTypesTypeDef](./type_defs.md#sdktypestypedef).
+Returns [SdkTypesResponseTypeDef](./type_defs.md#sdktypesresponsetypedef).
 
 ### get_stage
+
+Gets information about a Stage resource.
 
 Type annotations for `boto3.client("apigateway").get_stage` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_stage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_stage)
 
+Arguments mapping described in
+[GetStageRequestTypeDef](./type_defs.md#getstagerequesttypedef).
+
 Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `stageName`: `str` *(required)*
 
-Returns [StageTypeDef](./type_defs.md#stagetypedef).
+Returns [StageResponseTypeDef](./type_defs.md#stageresponsetypedef).
 
 ### get_stages
+
+Gets information about one or more Stage resources.
 
 Type annotations for `boto3.client("apigateway").get_stages` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_stages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_stages)
 
+Arguments mapping described in
+[GetStagesRequestTypeDef](./type_defs.md#getstagesrequesttypedef).
+
 Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `deploymentId`: `str`
 
-Returns [StagesTypeDef](./type_defs.md#stagestypedef).
+Returns [StagesResponseTypeDef](./type_defs.md#stagesresponsetypedef).
 
 ### get_tags
+
+Gets the Tags collection for a given resource.
 
 Type annotations for `boto3.client("apigateway").get_tags` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_tags)
+
+Arguments mapping described in
+[GetTagsRequestTypeDef](./type_defs.md#gettagsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1379,14 +1830,19 @@ Keyword-only arguments:
 - `position`: `str`
 - `limit`: `int`
 
-Returns [TagsTypeDef](./type_defs.md#tagstypedef).
+Returns [TagsResponseTypeDef](./type_defs.md#tagsresponsetypedef).
 
 ### get_usage
+
+Gets the usage data of a usage plan in a specified time interval.
 
 Type annotations for `boto3.client("apigateway").get_usage` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage)
+
+Arguments mapping described in
+[GetUsageRequestTypeDef](./type_defs.md#getusagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1397,41 +1853,58 @@ Keyword-only arguments:
 - `position`: `str`
 - `limit`: `int`
 
-Returns [UsageTypeDef](./type_defs.md#usagetypedef).
+Returns [UsageResponseTypeDef](./type_defs.md#usageresponsetypedef).
 
 ### get_usage_plan
+
+Gets a usage plan of a given plan identifier.
 
 Type annotations for `boto3.client("apigateway").get_usage_plan` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_usage_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage_plan)
 
+Arguments mapping described in
+[GetUsagePlanRequestTypeDef](./type_defs.md#getusageplanrequesttypedef).
+
 Keyword-only arguments:
 
 - `usagePlanId`: `str` *(required)*
 
-Returns [UsagePlanTypeDef](./type_defs.md#usageplantypedef).
+Returns [UsagePlanResponseTypeDef](./type_defs.md#usageplanresponsetypedef).
 
 ### get_usage_plan_key
+
+Gets a usage plan key of a given key identifier.
 
 Type annotations for `boto3.client("apigateway").get_usage_plan_key` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_usage_plan_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage_plan_key)
 
+Arguments mapping described in
+[GetUsagePlanKeyRequestTypeDef](./type_defs.md#getusageplankeyrequesttypedef).
+
 Keyword-only arguments:
 
 - `usagePlanId`: `str` *(required)*
 - `keyId`: `str` *(required)*
 
-Returns [UsagePlanKeyTypeDef](./type_defs.md#usageplankeytypedef).
+Returns
+[UsagePlanKeyResponseTypeDef](./type_defs.md#usageplankeyresponsetypedef).
 
 ### get_usage_plan_keys
+
+Gets all the usage plan keys representing the API keys added to a specified
+usage plan.
 
 Type annotations for `boto3.client("apigateway").get_usage_plan_keys` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_usage_plan_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage_plan_keys)
+
+Arguments mapping described in
+[GetUsagePlanKeysRequestTypeDef](./type_defs.md#getusageplankeysrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1440,14 +1913,20 @@ Keyword-only arguments:
 - `limit`: `int`
 - `nameQuery`: `str`
 
-Returns [UsagePlanKeysTypeDef](./type_defs.md#usageplankeystypedef).
+Returns
+[UsagePlanKeysResponseTypeDef](./type_defs.md#usageplankeysresponsetypedef).
 
 ### get_usage_plans
+
+Gets all the usage plans of the caller's account.
 
 Type annotations for `boto3.client("apigateway").get_usage_plans` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_usage_plans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage_plans)
+
+Arguments mapping described in
+[GetUsagePlansRequestTypeDef](./type_defs.md#getusageplansrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1455,41 +1934,56 @@ Keyword-only arguments:
 - `keyId`: `str`
 - `limit`: `int`
 
-Returns [UsagePlansTypeDef](./type_defs.md#usageplanstypedef).
+Returns [UsagePlansResponseTypeDef](./type_defs.md#usageplansresponsetypedef).
 
 ### get_vpc_link
+
+Gets a specified VPC link under the caller's account in a region.
 
 Type annotations for `boto3.client("apigateway").get_vpc_link` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_vpc_link)
 
+Arguments mapping described in
+[GetVpcLinkRequestTypeDef](./type_defs.md#getvpclinkrequesttypedef).
+
 Keyword-only arguments:
 
 - `vpcLinkId`: `str` *(required)*
 
-Returns [VpcLinkTypeDef](./type_defs.md#vpclinktypedef).
+Returns [VpcLinkResponseTypeDef](./type_defs.md#vpclinkresponsetypedef).
 
 ### get_vpc_links
+
+Gets the VpcLinks collection under the caller's account in a selected region.
 
 Type annotations for `boto3.client("apigateway").get_vpc_links` method.
 
 Boto3 documentation:
 [APIGateway.Client.get_vpc_links](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_vpc_links)
 
+Arguments mapping described in
+[GetVpcLinksRequestTypeDef](./type_defs.md#getvpclinksrequesttypedef).
+
 Keyword-only arguments:
 
 - `position`: `str`
 - `limit`: `int`
 
-Returns [VpcLinksTypeDef](./type_defs.md#vpclinkstypedef).
+Returns [VpcLinksResponseTypeDef](./type_defs.md#vpclinksresponsetypedef).
 
 ### import_api_keys
+
+Import API keys from an external source, such as a CSV-formatted file.
 
 Type annotations for `boto3.client("apigateway").import_api_keys` method.
 
 Boto3 documentation:
 [APIGateway.Client.import_api_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.import_api_keys)
+
+Arguments mapping described in
+[ImportApiKeysRequestTypeDef](./type_defs.md#importapikeysrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1498,15 +1992,23 @@ Keyword-only arguments:
   [ApiKeysFormatType](./literals.md#apikeysformattype)) *(required)*
 - `failOnWarnings`: `bool`
 
-Returns [ApiKeyIdsTypeDef](./type_defs.md#apikeyidstypedef).
+Returns [ApiKeyIdsResponseTypeDef](./type_defs.md#apikeyidsresponsetypedef).
 
 ### import_documentation_parts
+
+See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/apigat eway-2015-07-09/ImportDocumentationParts>`\_
+**Request Syntax** response = client.import_documentation_parts(
+restApiId='string', mode='merge'|'overwrite', failOnWarnings=True|False, bo...
 
 Type annotations for `boto3.client("apigateway").import_documentation_parts`
 method.
 
 Boto3 documentation:
 [APIGateway.Client.import_documentation_parts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.import_documentation_parts)
+
+Arguments mapping described in
+[ImportDocumentationPartsRequestTypeDef](./type_defs.md#importdocumentationpartsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1516,14 +2018,20 @@ Keyword-only arguments:
 - `failOnWarnings`: `bool`
 
 Returns
-[DocumentationPartIdsTypeDef](./type_defs.md#documentationpartidstypedef).
+[DocumentationPartIdsResponseTypeDef](./type_defs.md#documentationpartidsresponsetypedef).
 
 ### import_rest_api
+
+A feature of the API Gateway control service for creating a new API from an
+external API definition file.
 
 Type annotations for `boto3.client("apigateway").import_rest_api` method.
 
 Boto3 documentation:
 [APIGateway.Client.import_rest_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.import_rest_api)
+
+Arguments mapping described in
+[ImportRestApiRequestTypeDef](./type_defs.md#importrestapirequesttypedef).
 
 Keyword-only arguments:
 
@@ -1531,14 +2039,20 @@ Keyword-only arguments:
 - `failOnWarnings`: `bool`
 - `parameters`: `Dict`\[`str`, `str`\]
 
-Returns [RestApiTypeDef](./type_defs.md#restapitypedef).
+Returns [RestApiResponseTypeDef](./type_defs.md#restapiresponsetypedef).
 
 ### put_gateway_response
+
+Creates a customization of a GatewayResponse of a specified response type and
+status code on the given RestApi .
 
 Type annotations for `boto3.client("apigateway").put_gateway_response` method.
 
 Boto3 documentation:
 [APIGateway.Client.put_gateway_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_gateway_response)
+
+Arguments mapping described in
+[PutGatewayResponseRequestTypeDef](./type_defs.md#putgatewayresponserequesttypedef).
 
 Keyword-only arguments:
 
@@ -1549,14 +2063,20 @@ Keyword-only arguments:
 - `responseParameters`: `Dict`\[`str`, `str`\]
 - `responseTemplates`: `Dict`\[`str`, `str`\]
 
-Returns [GatewayResponseTypeDef](./type_defs.md#gatewayresponsetypedef).
+Returns
+[GatewayResponseResponseTypeDef](./type_defs.md#gatewayresponseresponsetypedef).
 
 ### put_integration
+
+Sets up a method's integration.
 
 Type annotations for `boto3.client("apigateway").put_integration` method.
 
 Boto3 documentation:
 [APIGateway.Client.put_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_integration)
+
+Arguments mapping described in
+[PutIntegrationRequestTypeDef](./type_defs.md#putintegrationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1583,11 +2103,16 @@ Returns [IntegrationTypeDef](./type_defs.md#integrationtypedef).
 
 ### put_integration_response
 
+Represents a put integration.
+
 Type annotations for `boto3.client("apigateway").put_integration_response`
 method.
 
 Boto3 documentation:
 [APIGateway.Client.put_integration_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_integration_response)
+
+Arguments mapping described in
+[PutIntegrationResponseRequestTypeDef](./type_defs.md#putintegrationresponserequesttypedef).
 
 Keyword-only arguments:
 
@@ -1606,10 +2131,15 @@ Returns
 
 ### put_method
 
+Add a method to an existing Resource resource.
+
 Type annotations for `boto3.client("apigateway").put_method` method.
 
 Boto3 documentation:
 [APIGateway.Client.put_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_method)
+
+Arguments mapping described in
+[PutMethodRequestTypeDef](./type_defs.md#putmethodrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1629,10 +2159,15 @@ Returns [MethodTypeDef](./type_defs.md#methodtypedef).
 
 ### put_method_response
 
+Adds a MethodResponse to an existing Method resource.
+
 Type annotations for `boto3.client("apigateway").put_method_response` method.
 
 Boto3 documentation:
 [APIGateway.Client.put_method_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_method_response)
+
+Arguments mapping described in
+[PutMethodResponseRequestTypeDef](./type_defs.md#putmethodresponserequesttypedef).
 
 Keyword-only arguments:
 
@@ -1647,10 +2182,16 @@ Returns [MethodResponseTypeDef](./type_defs.md#methodresponsetypedef).
 
 ### put_rest_api
 
+A feature of the API Gateway control service for updating an existing API with
+an input of external API definitions.
+
 Type annotations for `boto3.client("apigateway").put_rest_api` method.
 
 Boto3 documentation:
 [APIGateway.Client.put_rest_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_rest_api)
+
+Arguments mapping described in
+[PutRestApiRequestTypeDef](./type_defs.md#putrestapirequesttypedef).
 
 Keyword-only arguments:
 
@@ -1660,14 +2201,19 @@ Keyword-only arguments:
 - `failOnWarnings`: `bool`
 - `parameters`: `Dict`\[`str`, `str`\]
 
-Returns [RestApiTypeDef](./type_defs.md#restapitypedef).
+Returns [RestApiResponseTypeDef](./type_defs.md#restapiresponsetypedef).
 
 ### tag_resource
+
+Adds or updates a tag on a given resource.
 
 Type annotations for `boto3.client("apigateway").tag_resource` method.
 
 Boto3 documentation:
 [APIGateway.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1676,11 +2222,17 @@ Keyword-only arguments:
 
 ### test_invoke_authorizer
 
+Simulate the execution of an Authorizer in your RestApi with headers,
+parameters, and an incoming request body.
+
 Type annotations for `boto3.client("apigateway").test_invoke_authorizer`
 method.
 
 Boto3 documentation:
 [APIGateway.Client.test_invoke_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.test_invoke_authorizer)
+
+Arguments mapping described in
+[TestInvokeAuthorizerRequestTypeDef](./type_defs.md#testinvokeauthorizerrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1694,14 +2246,20 @@ Keyword-only arguments:
 - `additionalContext`: `Dict`\[`str`, `str`\]
 
 Returns
-[TestInvokeAuthorizerResponseTypeDef](./type_defs.md#testinvokeauthorizerresponsetypedef).
+[TestInvokeAuthorizerResponseResponseTypeDef](./type_defs.md#testinvokeauthorizerresponseresponsetypedef).
 
 ### test_invoke_method
+
+Simulate the execution of a Method in your RestApi with headers, parameters,
+and an incoming request body.
 
 Type annotations for `boto3.client("apigateway").test_invoke_method` method.
 
 Boto3 documentation:
 [APIGateway.Client.test_invoke_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.test_invoke_method)
+
+Arguments mapping described in
+[TestInvokeMethodRequestTypeDef](./type_defs.md#testinvokemethodrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1716,14 +2274,19 @@ Keyword-only arguments:
 - `stageVariables`: `Dict`\[`str`, `str`\]
 
 Returns
-[TestInvokeMethodResponseTypeDef](./type_defs.md#testinvokemethodresponsetypedef).
+[TestInvokeMethodResponseResponseTypeDef](./type_defs.md#testinvokemethodresponseresponsetypedef).
 
 ### untag_resource
+
+Removes a tag from a given resource.
 
 Type annotations for `boto3.client("apigateway").untag_resource` method.
 
 Boto3 documentation:
 [APIGateway.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1732,24 +2295,34 @@ Keyword-only arguments:
 
 ### update_account
 
+Changes information about the current Account resource.
+
 Type annotations for `boto3.client("apigateway").update_account` method.
 
 Boto3 documentation:
 [APIGateway.Client.update_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_account)
+
+Arguments mapping described in
+[UpdateAccountRequestTypeDef](./type_defs.md#updateaccountrequesttypedef).
 
 Keyword-only arguments:
 
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-Returns [AccountTypeDef](./type_defs.md#accounttypedef).
+Returns [AccountResponseTypeDef](./type_defs.md#accountresponsetypedef).
 
 ### update_api_key
+
+Changes information about an ApiKey resource.
 
 Type annotations for `boto3.client("apigateway").update_api_key` method.
 
 Boto3 documentation:
 [APIGateway.Client.update_api_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_api_key)
+
+Arguments mapping described in
+[UpdateApiKeyRequestTypeDef](./type_defs.md#updateapikeyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1757,14 +2330,19 @@ Keyword-only arguments:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-Returns [ApiKeyTypeDef](./type_defs.md#apikeytypedef).
+Returns [ApiKeyResponseTypeDef](./type_defs.md#apikeyresponsetypedef).
 
 ### update_authorizer
+
+Updates an existing Authorizer resource.
 
 Type annotations for `boto3.client("apigateway").update_authorizer` method.
 
 Boto3 documentation:
 [APIGateway.Client.update_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_authorizer)
+
+Arguments mapping described in
+[UpdateAuthorizerRequestTypeDef](./type_defs.md#updateauthorizerrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1773,15 +2351,20 @@ Keyword-only arguments:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-Returns [AuthorizerTypeDef](./type_defs.md#authorizertypedef).
+Returns [AuthorizerResponseTypeDef](./type_defs.md#authorizerresponsetypedef).
 
 ### update_base_path_mapping
+
+Changes information about the BasePathMapping resource.
 
 Type annotations for `boto3.client("apigateway").update_base_path_mapping`
 method.
 
 Boto3 documentation:
 [APIGateway.Client.update_base_path_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_base_path_mapping)
+
+Arguments mapping described in
+[UpdateBasePathMappingRequestTypeDef](./type_defs.md#updatebasepathmappingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1790,9 +2373,12 @@ Keyword-only arguments:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-Returns [BasePathMappingTypeDef](./type_defs.md#basepathmappingtypedef).
+Returns
+[BasePathMappingResponseTypeDef](./type_defs.md#basepathmappingresponsetypedef).
 
 ### update_client_certificate
+
+Changes information about an ClientCertificate resource.
 
 Type annotations for `boto3.client("apigateway").update_client_certificate`
 method.
@@ -1800,20 +2386,29 @@ method.
 Boto3 documentation:
 [APIGateway.Client.update_client_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_client_certificate)
 
+Arguments mapping described in
+[UpdateClientCertificateRequestTypeDef](./type_defs.md#updateclientcertificaterequesttypedef).
+
 Keyword-only arguments:
 
 - `clientCertificateId`: `str` *(required)*
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-Returns [ClientCertificateTypeDef](./type_defs.md#clientcertificatetypedef).
+Returns
+[ClientCertificateResponseTypeDef](./type_defs.md#clientcertificateresponsetypedef).
 
 ### update_deployment
+
+Changes information about a Deployment resource.
 
 Type annotations for `boto3.client("apigateway").update_deployment` method.
 
 Boto3 documentation:
 [APIGateway.Client.update_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_deployment)
+
+Arguments mapping described in
+[UpdateDeploymentRequestTypeDef](./type_defs.md#updatedeploymentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1822,15 +2417,23 @@ Keyword-only arguments:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-Returns [DeploymentTypeDef](./type_defs.md#deploymenttypedef).
+Returns [DeploymentResponseTypeDef](./type_defs.md#deploymentresponsetypedef).
 
 ### update_documentation_part
+
+See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/apigat eway-2015-07-09/UpdateDocumentationPart>`\_
+**Request Syntax** response = client.update_documentation_part(
+restApiId='string', documentationPartId='string', patchOperations=\[ { ...
 
 Type annotations for `boto3.client("apigateway").update_documentation_part`
 method.
 
 Boto3 documentation:
 [APIGateway.Client.update_documentation_part](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_documentation_part)
+
+Arguments mapping described in
+[UpdateDocumentationPartRequestTypeDef](./type_defs.md#updatedocumentationpartrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1839,15 +2442,24 @@ Keyword-only arguments:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-Returns [DocumentationPartTypeDef](./type_defs.md#documentationparttypedef).
+Returns
+[DocumentationPartResponseTypeDef](./type_defs.md#documentationpartresponsetypedef).
 
 ### update_documentation_version
+
+See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/apigat eway-2015-07-09/UpdateDocumentationVersion>`\_
+**Request Syntax** response = client.update_documentation_version(
+restApiId='string', documentationVersion='string', patchOperations=\[ ...
 
 Type annotations for `boto3.client("apigateway").update_documentation_version`
 method.
 
 Boto3 documentation:
 [APIGateway.Client.update_documentation_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_documentation_version)
+
+Arguments mapping described in
+[UpdateDocumentationVersionRequestTypeDef](./type_defs.md#updatedocumentationversionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1857,14 +2469,19 @@ Keyword-only arguments:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 Returns
-[DocumentationVersionTypeDef](./type_defs.md#documentationversiontypedef).
+[DocumentationVersionResponseTypeDef](./type_defs.md#documentationversionresponsetypedef).
 
 ### update_domain_name
+
+Changes information about the DomainName resource.
 
 Type annotations for `boto3.client("apigateway").update_domain_name` method.
 
 Boto3 documentation:
 [APIGateway.Client.update_domain_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_domain_name)
+
+Arguments mapping described in
+[UpdateDomainNameRequestTypeDef](./type_defs.md#updatedomainnamerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1872,15 +2489,20 @@ Keyword-only arguments:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-Returns [DomainNameTypeDef](./type_defs.md#domainnametypedef).
+Returns [DomainNameResponseTypeDef](./type_defs.md#domainnameresponsetypedef).
 
 ### update_gateway_response
+
+Updates a GatewayResponse of a specified response type on the given RestApi .
 
 Type annotations for `boto3.client("apigateway").update_gateway_response`
 method.
 
 Boto3 documentation:
 [APIGateway.Client.update_gateway_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_gateway_response)
+
+Arguments mapping described in
+[UpdateGatewayResponseRequestTypeDef](./type_defs.md#updategatewayresponserequesttypedef).
 
 Keyword-only arguments:
 
@@ -1890,14 +2512,20 @@ Keyword-only arguments:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-Returns [GatewayResponseTypeDef](./type_defs.md#gatewayresponsetypedef).
+Returns
+[GatewayResponseResponseTypeDef](./type_defs.md#gatewayresponseresponsetypedef).
 
 ### update_integration
+
+Represents an update integration.
 
 Type annotations for `boto3.client("apigateway").update_integration` method.
 
 Boto3 documentation:
 [APIGateway.Client.update_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_integration)
+
+Arguments mapping described in
+[UpdateIntegrationRequestTypeDef](./type_defs.md#updateintegrationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1911,11 +2539,16 @@ Returns [IntegrationTypeDef](./type_defs.md#integrationtypedef).
 
 ### update_integration_response
 
+Represents an update integration response.
+
 Type annotations for `boto3.client("apigateway").update_integration_response`
 method.
 
 Boto3 documentation:
 [APIGateway.Client.update_integration_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_integration_response)
+
+Arguments mapping described in
+[UpdateIntegrationResponseRequestTypeDef](./type_defs.md#updateintegrationresponserequesttypedef).
 
 Keyword-only arguments:
 
@@ -1931,10 +2564,15 @@ Returns
 
 ### update_method
 
+Updates an existing Method resource.
+
 Type annotations for `boto3.client("apigateway").update_method` method.
 
 Boto3 documentation:
 [APIGateway.Client.update_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_method)
+
+Arguments mapping described in
+[UpdateMethodRequestTypeDef](./type_defs.md#updatemethodrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1948,11 +2586,16 @@ Returns [MethodTypeDef](./type_defs.md#methodtypedef).
 
 ### update_method_response
 
+Updates an existing MethodResponse resource.
+
 Type annotations for `boto3.client("apigateway").update_method_response`
 method.
 
 Boto3 documentation:
 [APIGateway.Client.update_method_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_method_response)
+
+Arguments mapping described in
+[UpdateMethodResponseRequestTypeDef](./type_defs.md#updatemethodresponserequesttypedef).
 
 Keyword-only arguments:
 
@@ -1967,10 +2610,15 @@ Returns [MethodResponseTypeDef](./type_defs.md#methodresponsetypedef).
 
 ### update_model
 
+Changes information about a model.
+
 Type annotations for `boto3.client("apigateway").update_model` method.
 
 Boto3 documentation:
 [APIGateway.Client.update_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_model)
+
+Arguments mapping described in
+[UpdateModelRequestTypeDef](./type_defs.md#updatemodelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1979,15 +2627,20 @@ Keyword-only arguments:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-Returns [ModelTypeDef](./type_defs.md#modeltypedef).
+Returns [ModelResponseTypeDef](./type_defs.md#modelresponsetypedef).
 
 ### update_request_validator
+
+Updates a RequestValidator of a given RestApi .
 
 Type annotations for `boto3.client("apigateway").update_request_validator`
 method.
 
 Boto3 documentation:
 [APIGateway.Client.update_request_validator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_request_validator)
+
+Arguments mapping described in
+[UpdateRequestValidatorRequestTypeDef](./type_defs.md#updaterequestvalidatorrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1996,14 +2649,20 @@ Keyword-only arguments:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-Returns [RequestValidatorTypeDef](./type_defs.md#requestvalidatortypedef).
+Returns
+[RequestValidatorResponseTypeDef](./type_defs.md#requestvalidatorresponsetypedef).
 
 ### update_resource
+
+Changes information about a Resource resource.
 
 Type annotations for `boto3.client("apigateway").update_resource` method.
 
 Boto3 documentation:
 [APIGateway.Client.update_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_resource)
+
+Arguments mapping described in
+[UpdateResourceRequestTypeDef](./type_defs.md#updateresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2012,14 +2671,19 @@ Keyword-only arguments:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-Returns [ResourceTypeDef](./type_defs.md#resourcetypedef).
+Returns [ResourceResponseTypeDef](./type_defs.md#resourceresponsetypedef).
 
 ### update_rest_api
+
+Changes information about the specified API.
 
 Type annotations for `boto3.client("apigateway").update_rest_api` method.
 
 Boto3 documentation:
 [APIGateway.Client.update_rest_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_rest_api)
+
+Arguments mapping described in
+[UpdateRestApiRequestTypeDef](./type_defs.md#updaterestapirequesttypedef).
 
 Keyword-only arguments:
 
@@ -2027,14 +2691,19 @@ Keyword-only arguments:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-Returns [RestApiTypeDef](./type_defs.md#restapitypedef).
+Returns [RestApiResponseTypeDef](./type_defs.md#restapiresponsetypedef).
 
 ### update_stage
+
+Changes information about a Stage resource.
 
 Type annotations for `boto3.client("apigateway").update_stage` method.
 
 Boto3 documentation:
 [APIGateway.Client.update_stage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_stage)
+
+Arguments mapping described in
+[UpdateStageRequestTypeDef](./type_defs.md#updatestagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2043,14 +2712,20 @@ Keyword-only arguments:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-Returns [StageTypeDef](./type_defs.md#stagetypedef).
+Returns [StageResponseTypeDef](./type_defs.md#stageresponsetypedef).
 
 ### update_usage
+
+Grants a temporary extension to the remaining quota of a usage plan associated
+with a specified API key.
 
 Type annotations for `boto3.client("apigateway").update_usage` method.
 
 Boto3 documentation:
 [APIGateway.Client.update_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_usage)
+
+Arguments mapping described in
+[UpdateUsageRequestTypeDef](./type_defs.md#updateusagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2059,14 +2734,19 @@ Keyword-only arguments:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-Returns [UsageTypeDef](./type_defs.md#usagetypedef).
+Returns [UsageResponseTypeDef](./type_defs.md#usageresponsetypedef).
 
 ### update_usage_plan
+
+Updates a usage plan of a given plan Id.
 
 Type annotations for `boto3.client("apigateway").update_usage_plan` method.
 
 Boto3 documentation:
 [APIGateway.Client.update_usage_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_usage_plan)
+
+Arguments mapping described in
+[UpdateUsagePlanRequestTypeDef](./type_defs.md#updateusageplanrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2074,14 +2754,19 @@ Keyword-only arguments:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-Returns [UsagePlanTypeDef](./type_defs.md#usageplantypedef).
+Returns [UsagePlanResponseTypeDef](./type_defs.md#usageplanresponsetypedef).
 
 ### update_vpc_link
+
+Updates an existing VpcLink of a specified identifier.
 
 Type annotations for `boto3.client("apigateway").update_vpc_link` method.
 
 Boto3 documentation:
 [APIGateway.Client.update_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_vpc_link)
+
+Arguments mapping described in
+[UpdateVpcLinkRequestTypeDef](./type_defs.md#updatevpclinkrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2089,7 +2774,7 @@ Keyword-only arguments:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-Returns [VpcLinkTypeDef](./type_defs.md#vpclinktypedef).
+Returns [VpcLinkResponseTypeDef](./type_defs.md#vpclinkresponsetypedef).
 
 ### get_paginator
 

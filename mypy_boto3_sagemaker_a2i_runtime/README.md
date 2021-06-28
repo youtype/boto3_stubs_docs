@@ -89,15 +89,20 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker_a2i_runtime.type_defs import DescribeHumanLoopResponseTypeDef, ...
+from mypy_boto3_sagemaker_a2i_runtime.type_defs import DeleteHumanLoopRequestTypeDef, ...
 ```
 
-- [DescribeHumanLoopResponseTypeDef](./type_defs.md#describehumanloopresponsetypedef)
+- [DeleteHumanLoopRequestTypeDef](./type_defs.md#deletehumanlooprequesttypedef)
+- [DescribeHumanLoopRequestTypeDef](./type_defs.md#describehumanlooprequesttypedef)
+- [DescribeHumanLoopResponseResponseTypeDef](./type_defs.md#describehumanloopresponseresponsetypedef)
 - [HumanLoopDataAttributesTypeDef](./type_defs.md#humanloopdataattributestypedef)
 - [HumanLoopInputTypeDef](./type_defs.md#humanloopinputtypedef)
 - [HumanLoopOutputTypeDef](./type_defs.md#humanloopoutputtypedef)
 - [HumanLoopSummaryTypeDef](./type_defs.md#humanloopsummarytypedef)
-- [ListHumanLoopsResponseTypeDef](./type_defs.md#listhumanloopsresponsetypedef)
+- [ListHumanLoopsRequestTypeDef](./type_defs.md#listhumanloopsrequesttypedef)
+- [ListHumanLoopsResponseResponseTypeDef](./type_defs.md#listhumanloopsresponseresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [StartHumanLoopResponseTypeDef](./type_defs.md#starthumanloopresponsetypedef)
+- [StartHumanLoopRequestTypeDef](./type_defs.md#starthumanlooprequesttypedef)
+- [StartHumanLoopResponseResponseTypeDef](./type_defs.md#starthumanloopresponseresponsetypedef)
+- [StopHumanLoopRequestTypeDef](./type_defs.md#stophumanlooprequesttypedef)

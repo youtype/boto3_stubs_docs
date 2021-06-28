@@ -8,29 +8,58 @@ type annotations stubs module
 [mypy_boto3_logs](https://pypi.org/project/mypy-boto3-logs/).
 
 - [Typed dictionaries for boto3 CloudWatchLogs module](#typed-dictionaries-for-boto3-cloudwatchlogs-module)
-  - [CreateExportTaskResponseTypeDef](#createexporttaskresponsetypedef)
-  - [DeleteQueryDefinitionResponseTypeDef](#deletequerydefinitionresponsetypedef)
-  - [DescribeDestinationsResponseTypeDef](#describedestinationsresponsetypedef)
-  - [DescribeExportTasksResponseTypeDef](#describeexporttasksresponsetypedef)
-  - [DescribeLogGroupsResponseTypeDef](#describeloggroupsresponsetypedef)
-  - [DescribeLogStreamsResponseTypeDef](#describelogstreamsresponsetypedef)
-  - [DescribeMetricFiltersResponseTypeDef](#describemetricfiltersresponsetypedef)
-  - [DescribeQueriesResponseTypeDef](#describequeriesresponsetypedef)
-  - [DescribeQueryDefinitionsResponseTypeDef](#describequerydefinitionsresponsetypedef)
-  - [DescribeResourcePoliciesResponseTypeDef](#describeresourcepoliciesresponsetypedef)
-  - [DescribeSubscriptionFiltersResponseTypeDef](#describesubscriptionfiltersresponsetypedef)
+  - [AssociateKmsKeyRequestTypeDef](#associatekmskeyrequesttypedef)
+  - [CancelExportTaskRequestTypeDef](#cancelexporttaskrequesttypedef)
+  - [CreateExportTaskRequestTypeDef](#createexporttaskrequesttypedef)
+  - [CreateExportTaskResponseResponseTypeDef](#createexporttaskresponseresponsetypedef)
+  - [CreateLogGroupRequestTypeDef](#createloggrouprequesttypedef)
+  - [CreateLogStreamRequestTypeDef](#createlogstreamrequesttypedef)
+  - [DeleteDestinationRequestTypeDef](#deletedestinationrequesttypedef)
+  - [DeleteLogGroupRequestTypeDef](#deleteloggrouprequesttypedef)
+  - [DeleteLogStreamRequestTypeDef](#deletelogstreamrequesttypedef)
+  - [DeleteMetricFilterRequestTypeDef](#deletemetricfilterrequesttypedef)
+  - [DeleteQueryDefinitionRequestTypeDef](#deletequerydefinitionrequesttypedef)
+  - [DeleteQueryDefinitionResponseResponseTypeDef](#deletequerydefinitionresponseresponsetypedef)
+  - [DeleteResourcePolicyRequestTypeDef](#deleteresourcepolicyrequesttypedef)
+  - [DeleteRetentionPolicyRequestTypeDef](#deleteretentionpolicyrequesttypedef)
+  - [DeleteSubscriptionFilterRequestTypeDef](#deletesubscriptionfilterrequesttypedef)
+  - [DescribeDestinationsRequestTypeDef](#describedestinationsrequesttypedef)
+  - [DescribeDestinationsResponseResponseTypeDef](#describedestinationsresponseresponsetypedef)
+  - [DescribeExportTasksRequestTypeDef](#describeexporttasksrequesttypedef)
+  - [DescribeExportTasksResponseResponseTypeDef](#describeexporttasksresponseresponsetypedef)
+  - [DescribeLogGroupsRequestTypeDef](#describeloggroupsrequesttypedef)
+  - [DescribeLogGroupsResponseResponseTypeDef](#describeloggroupsresponseresponsetypedef)
+  - [DescribeLogStreamsRequestTypeDef](#describelogstreamsrequesttypedef)
+  - [DescribeLogStreamsResponseResponseTypeDef](#describelogstreamsresponseresponsetypedef)
+  - [DescribeMetricFiltersRequestTypeDef](#describemetricfiltersrequesttypedef)
+  - [DescribeMetricFiltersResponseResponseTypeDef](#describemetricfiltersresponseresponsetypedef)
+  - [DescribeQueriesRequestTypeDef](#describequeriesrequesttypedef)
+  - [DescribeQueriesResponseResponseTypeDef](#describequeriesresponseresponsetypedef)
+  - [DescribeQueryDefinitionsRequestTypeDef](#describequerydefinitionsrequesttypedef)
+  - [DescribeQueryDefinitionsResponseResponseTypeDef](#describequerydefinitionsresponseresponsetypedef)
+  - [DescribeResourcePoliciesRequestTypeDef](#describeresourcepoliciesrequesttypedef)
+  - [DescribeResourcePoliciesResponseResponseTypeDef](#describeresourcepoliciesresponseresponsetypedef)
+  - [DescribeSubscriptionFiltersRequestTypeDef](#describesubscriptionfiltersrequesttypedef)
+  - [DescribeSubscriptionFiltersResponseResponseTypeDef](#describesubscriptionfiltersresponseresponsetypedef)
   - [DestinationTypeDef](#destinationtypedef)
+  - [DisassociateKmsKeyRequestTypeDef](#disassociatekmskeyrequesttypedef)
   - [ExportTaskExecutionInfoTypeDef](#exporttaskexecutioninfotypedef)
   - [ExportTaskStatusTypeDef](#exporttaskstatustypedef)
   - [ExportTaskTypeDef](#exporttasktypedef)
-  - [FilterLogEventsResponseTypeDef](#filterlogeventsresponsetypedef)
+  - [FilterLogEventsRequestTypeDef](#filterlogeventsrequesttypedef)
+  - [FilterLogEventsResponseResponseTypeDef](#filterlogeventsresponseresponsetypedef)
   - [FilteredLogEventTypeDef](#filteredlogeventtypedef)
-  - [GetLogEventsResponseTypeDef](#getlogeventsresponsetypedef)
-  - [GetLogGroupFieldsResponseTypeDef](#getloggroupfieldsresponsetypedef)
-  - [GetLogRecordResponseTypeDef](#getlogrecordresponsetypedef)
-  - [GetQueryResultsResponseTypeDef](#getqueryresultsresponsetypedef)
+  - [GetLogEventsRequestTypeDef](#getlogeventsrequesttypedef)
+  - [GetLogEventsResponseResponseTypeDef](#getlogeventsresponseresponsetypedef)
+  - [GetLogGroupFieldsRequestTypeDef](#getloggroupfieldsrequesttypedef)
+  - [GetLogGroupFieldsResponseResponseTypeDef](#getloggroupfieldsresponseresponsetypedef)
+  - [GetLogRecordRequestTypeDef](#getlogrecordrequesttypedef)
+  - [GetLogRecordResponseResponseTypeDef](#getlogrecordresponseresponsetypedef)
+  - [GetQueryResultsRequestTypeDef](#getqueryresultsrequesttypedef)
+  - [GetQueryResultsResponseResponseTypeDef](#getqueryresultsresponseresponsetypedef)
   - [InputLogEventTypeDef](#inputlogeventtypedef)
-  - [ListTagsLogGroupResponseTypeDef](#listtagsloggroupresponsetypedef)
+  - [ListTagsLogGroupRequestTypeDef](#listtagsloggrouprequesttypedef)
+  - [ListTagsLogGroupResponseResponseTypeDef](#listtagsloggroupresponseresponsetypedef)
   - [LogGroupFieldTypeDef](#loggroupfieldtypedef)
   - [LogGroupTypeDef](#loggrouptypedef)
   - [LogStreamTypeDef](#logstreamtypedef)
@@ -39,146 +68,454 @@ type annotations stubs module
   - [MetricTransformationTypeDef](#metrictransformationtypedef)
   - [OutputLogEventTypeDef](#outputlogeventtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutDestinationResponseTypeDef](#putdestinationresponsetypedef)
-  - [PutLogEventsResponseTypeDef](#putlogeventsresponsetypedef)
-  - [PutQueryDefinitionResponseTypeDef](#putquerydefinitionresponsetypedef)
-  - [PutResourcePolicyResponseTypeDef](#putresourcepolicyresponsetypedef)
+  - [PutDestinationPolicyRequestTypeDef](#putdestinationpolicyrequesttypedef)
+  - [PutDestinationRequestTypeDef](#putdestinationrequesttypedef)
+  - [PutDestinationResponseResponseTypeDef](#putdestinationresponseresponsetypedef)
+  - [PutLogEventsRequestTypeDef](#putlogeventsrequesttypedef)
+  - [PutLogEventsResponseResponseTypeDef](#putlogeventsresponseresponsetypedef)
+  - [PutMetricFilterRequestTypeDef](#putmetricfilterrequesttypedef)
+  - [PutQueryDefinitionRequestTypeDef](#putquerydefinitionrequesttypedef)
+  - [PutQueryDefinitionResponseResponseTypeDef](#putquerydefinitionresponseresponsetypedef)
+  - [PutResourcePolicyRequestTypeDef](#putresourcepolicyrequesttypedef)
+  - [PutResourcePolicyResponseResponseTypeDef](#putresourcepolicyresponseresponsetypedef)
+  - [PutRetentionPolicyRequestTypeDef](#putretentionpolicyrequesttypedef)
+  - [PutSubscriptionFilterRequestTypeDef](#putsubscriptionfilterrequesttypedef)
   - [QueryDefinitionTypeDef](#querydefinitiontypedef)
   - [QueryInfoTypeDef](#queryinfotypedef)
   - [QueryStatisticsTypeDef](#querystatisticstypedef)
   - [RejectedLogEventsInfoTypeDef](#rejectedlogeventsinfotypedef)
   - [ResourcePolicyTypeDef](#resourcepolicytypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [ResultFieldTypeDef](#resultfieldtypedef)
   - [SearchedLogStreamTypeDef](#searchedlogstreamtypedef)
-  - [StartQueryResponseTypeDef](#startqueryresponsetypedef)
-  - [StopQueryResponseTypeDef](#stopqueryresponsetypedef)
+  - [StartQueryRequestTypeDef](#startqueryrequesttypedef)
+  - [StartQueryResponseResponseTypeDef](#startqueryresponseresponsetypedef)
+  - [StopQueryRequestTypeDef](#stopqueryrequesttypedef)
+  - [StopQueryResponseResponseTypeDef](#stopqueryresponseresponsetypedef)
   - [SubscriptionFilterTypeDef](#subscriptionfiltertypedef)
-  - [TestMetricFilterResponseTypeDef](#testmetricfilterresponsetypedef)
+  - [TagLogGroupRequestTypeDef](#tagloggrouprequesttypedef)
+  - [TestMetricFilterRequestTypeDef](#testmetricfilterrequesttypedef)
+  - [TestMetricFilterResponseResponseTypeDef](#testmetricfilterresponseresponsetypedef)
+  - [UntagLogGroupRequestTypeDef](#untagloggrouprequesttypedef)
 
-## CreateExportTaskResponseTypeDef
+## AssociateKmsKeyRequestTypeDef
 
 ```python
-from mypy_boto3_logs.type_defs import CreateExportTaskResponseTypeDef
+from mypy_boto3_logs.type_defs import AssociateKmsKeyRequestTypeDef
+```
+
+Required fields:
+
+- `logGroupName`: `str`
+- `kmsKeyId`: `str`
+
+## CancelExportTaskRequestTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import CancelExportTaskRequestTypeDef
+```
+
+Required fields:
+
+- `taskId`: `str`
+
+## CreateExportTaskRequestTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import CreateExportTaskRequestTypeDef
+```
+
+Required fields:
+
+- `logGroupName`: `str`
+- `fromTime`: `int`
+- `to`: `int`
+- `destination`: `str`
+
+Optional fields:
+
+- `taskName`: `str`
+- `logStreamNamePrefix`: `str`
+- `destinationPrefix`: `str`
+
+## CreateExportTaskResponseResponseTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import CreateExportTaskResponseResponseTypeDef
+```
+
+Required fields:
+
+- `taskId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateLogGroupRequestTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import CreateLogGroupRequestTypeDef
+```
+
+Required fields:
+
+- `logGroupName`: `str`
+
+Optional fields:
+
+- `kmsKeyId`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateLogStreamRequestTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import CreateLogStreamRequestTypeDef
+```
+
+Required fields:
+
+- `logGroupName`: `str`
+- `logStreamName`: `str`
+
+## DeleteDestinationRequestTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import DeleteDestinationRequestTypeDef
+```
+
+Required fields:
+
+- `destinationName`: `str`
+
+## DeleteLogGroupRequestTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import DeleteLogGroupRequestTypeDef
+```
+
+Required fields:
+
+- `logGroupName`: `str`
+
+## DeleteLogStreamRequestTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import DeleteLogStreamRequestTypeDef
+```
+
+Required fields:
+
+- `logGroupName`: `str`
+- `logStreamName`: `str`
+
+## DeleteMetricFilterRequestTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import DeleteMetricFilterRequestTypeDef
+```
+
+Required fields:
+
+- `logGroupName`: `str`
+- `filterName`: `str`
+
+## DeleteQueryDefinitionRequestTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import DeleteQueryDefinitionRequestTypeDef
+```
+
+Required fields:
+
+- `queryDefinitionId`: `str`
+
+## DeleteQueryDefinitionResponseResponseTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import DeleteQueryDefinitionResponseResponseTypeDef
+```
+
+Required fields:
+
+- `success`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteResourcePolicyRequestTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import DeleteResourcePolicyRequestTypeDef
+```
+
+Optional fields:
+
+- `policyName`: `str`
+
+## DeleteRetentionPolicyRequestTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import DeleteRetentionPolicyRequestTypeDef
+```
+
+Required fields:
+
+- `logGroupName`: `str`
+
+## DeleteSubscriptionFilterRequestTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import DeleteSubscriptionFilterRequestTypeDef
+```
+
+Required fields:
+
+- `logGroupName`: `str`
+- `filterName`: `str`
+
+## DescribeDestinationsRequestTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import DescribeDestinationsRequestTypeDef
+```
+
+Optional fields:
+
+- `DestinationNamePrefix`: `str`
+- `nextToken`: `str`
+- `limit`: `int`
+
+## DescribeDestinationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import DescribeDestinationsResponseResponseTypeDef
+```
+
+Required fields:
+
+- `destinations`:
+  `List`\[[DestinationTypeDef](./type_defs.md#destinationtypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeExportTasksRequestTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import DescribeExportTasksRequestTypeDef
 ```
 
 Optional fields:
 
 - `taskId`: `str`
-
-## DeleteQueryDefinitionResponseTypeDef
-
-```python
-from mypy_boto3_logs.type_defs import DeleteQueryDefinitionResponseTypeDef
-```
-
-Optional fields:
-
-- `success`: `bool`
-
-## DescribeDestinationsResponseTypeDef
-
-```python
-from mypy_boto3_logs.type_defs import DescribeDestinationsResponseTypeDef
-```
-
-Optional fields:
-
-- `destinations`:
-  `List`\[[DestinationTypeDef](./type_defs.md#destinationtypedef)\]
+- `statusCode`:
+  [ExportTaskStatusCodeType](./literals.md#exporttaskstatuscodetype)
 - `nextToken`: `str`
+- `limit`: `int`
 
-## DescribeExportTasksResponseTypeDef
+## DescribeExportTasksResponseResponseTypeDef
 
 ```python
-from mypy_boto3_logs.type_defs import DescribeExportTasksResponseTypeDef
+from mypy_boto3_logs.type_defs import DescribeExportTasksResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `exportTasks`:
   `List`\[[ExportTaskTypeDef](./type_defs.md#exporttasktypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLogGroupsResponseTypeDef
+## DescribeLogGroupsRequestTypeDef
 
 ```python
-from mypy_boto3_logs.type_defs import DescribeLogGroupsResponseTypeDef
+from mypy_boto3_logs.type_defs import DescribeLogGroupsRequestTypeDef
 ```
 
 Optional fields:
+
+- `logGroupNamePrefix`: `str`
+- `nextToken`: `str`
+- `limit`: `int`
+
+## DescribeLogGroupsResponseResponseTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import DescribeLogGroupsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `logGroups`: `List`\[[LogGroupTypeDef](./type_defs.md#loggrouptypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLogStreamsResponseTypeDef
+## DescribeLogStreamsRequestTypeDef
 
 ```python
-from mypy_boto3_logs.type_defs import DescribeLogStreamsResponseTypeDef
+from mypy_boto3_logs.type_defs import DescribeLogStreamsRequestTypeDef
 ```
 
+Required fields:
+
+- `logGroupName`: `str`
+
 Optional fields:
+
+- `logStreamNamePrefix`: `str`
+- `orderBy`: [OrderByType](./literals.md#orderbytype)
+- `descending`: `bool`
+- `nextToken`: `str`
+- `limit`: `int`
+
+## DescribeLogStreamsResponseResponseTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import DescribeLogStreamsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `logStreams`: `List`\[[LogStreamTypeDef](./type_defs.md#logstreamtypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeMetricFiltersResponseTypeDef
+## DescribeMetricFiltersRequestTypeDef
 
 ```python
-from mypy_boto3_logs.type_defs import DescribeMetricFiltersResponseTypeDef
+from mypy_boto3_logs.type_defs import DescribeMetricFiltersRequestTypeDef
 ```
 
 Optional fields:
+
+- `logGroupName`: `str`
+- `filterNamePrefix`: `str`
+- `nextToken`: `str`
+- `limit`: `int`
+- `metricName`: `str`
+- `metricNamespace`: `str`
+
+## DescribeMetricFiltersResponseResponseTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import DescribeMetricFiltersResponseResponseTypeDef
+```
+
+Required fields:
 
 - `metricFilters`:
   `List`\[[MetricFilterTypeDef](./type_defs.md#metricfiltertypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeQueriesResponseTypeDef
+## DescribeQueriesRequestTypeDef
 
 ```python
-from mypy_boto3_logs.type_defs import DescribeQueriesResponseTypeDef
+from mypy_boto3_logs.type_defs import DescribeQueriesRequestTypeDef
 ```
 
 Optional fields:
+
+- `logGroupName`: `str`
+- `status`: [QueryStatusType](./literals.md#querystatustype)
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## DescribeQueriesResponseResponseTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import DescribeQueriesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `queries`: `List`\[[QueryInfoTypeDef](./type_defs.md#queryinfotypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeQueryDefinitionsResponseTypeDef
+## DescribeQueryDefinitionsRequestTypeDef
 
 ```python
-from mypy_boto3_logs.type_defs import DescribeQueryDefinitionsResponseTypeDef
+from mypy_boto3_logs.type_defs import DescribeQueryDefinitionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `queryDefinitionNamePrefix`: `str`
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## DescribeQueryDefinitionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import DescribeQueryDefinitionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `queryDefinitions`:
   `List`\[[QueryDefinitionTypeDef](./type_defs.md#querydefinitiontypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeResourcePoliciesResponseTypeDef
+## DescribeResourcePoliciesRequestTypeDef
 
 ```python
-from mypy_boto3_logs.type_defs import DescribeResourcePoliciesResponseTypeDef
+from mypy_boto3_logs.type_defs import DescribeResourcePoliciesRequestTypeDef
 ```
 
 Optional fields:
+
+- `nextToken`: `str`
+- `limit`: `int`
+
+## DescribeResourcePoliciesResponseResponseTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import DescribeResourcePoliciesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `resourcePolicies`:
   `List`\[[ResourcePolicyTypeDef](./type_defs.md#resourcepolicytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSubscriptionFiltersResponseTypeDef
+## DescribeSubscriptionFiltersRequestTypeDef
 
 ```python
-from mypy_boto3_logs.type_defs import DescribeSubscriptionFiltersResponseTypeDef
+from mypy_boto3_logs.type_defs import DescribeSubscriptionFiltersRequestTypeDef
 ```
 
+Required fields:
+
+- `logGroupName`: `str`
+
 Optional fields:
+
+- `filterNamePrefix`: `str`
+- `nextToken`: `str`
+- `limit`: `int`
+
+## DescribeSubscriptionFiltersResponseResponseTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import DescribeSubscriptionFiltersResponseResponseTypeDef
+```
+
+Required fields:
 
 - `subscriptionFilters`:
   `List`\[[SubscriptionFilterTypeDef](./type_defs.md#subscriptionfiltertypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DestinationTypeDef
 
@@ -194,6 +531,16 @@ Optional fields:
 - `accessPolicy`: `str`
 - `arn`: `str`
 - `creationTime`: `int`
+
+## DisassociateKmsKeyRequestTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import DisassociateKmsKeyRequestTypeDef
+```
+
+Required fields:
+
+- `logGroupName`: `str`
 
 ## ExportTaskExecutionInfoTypeDef
 
@@ -236,19 +583,42 @@ Optional fields:
 - `executionInfo`:
   [ExportTaskExecutionInfoTypeDef](./type_defs.md#exporttaskexecutioninfotypedef)
 
-## FilterLogEventsResponseTypeDef
+## FilterLogEventsRequestTypeDef
 
 ```python
-from mypy_boto3_logs.type_defs import FilterLogEventsResponseTypeDef
+from mypy_boto3_logs.type_defs import FilterLogEventsRequestTypeDef
 ```
 
+Required fields:
+
+- `logGroupName`: `str`
+
 Optional fields:
+
+- `logStreamNames`: `List`\[`str`\]
+- `logStreamNamePrefix`: `str`
+- `startTime`: `int`
+- `endTime`: `int`
+- `filterPattern`: `str`
+- `nextToken`: `str`
+- `limit`: `int`
+- `interleaved`: `bool`
+
+## FilterLogEventsResponseResponseTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import FilterLogEventsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `events`:
   `List`\[[FilteredLogEventTypeDef](./type_defs.md#filteredlogeventtypedef)\]
 - `searchedLogStreams`:
   `List`\[[SearchedLogStreamTypeDef](./type_defs.md#searchedlogstreamtypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## FilteredLogEventTypeDef
 
@@ -264,52 +634,113 @@ Optional fields:
 - `ingestionTime`: `int`
 - `eventId`: `str`
 
-## GetLogEventsResponseTypeDef
+## GetLogEventsRequestTypeDef
 
 ```python
-from mypy_boto3_logs.type_defs import GetLogEventsResponseTypeDef
+from mypy_boto3_logs.type_defs import GetLogEventsRequestTypeDef
 ```
 
+Required fields:
+
+- `logGroupName`: `str`
+- `logStreamName`: `str`
+
 Optional fields:
+
+- `startTime`: `int`
+- `endTime`: `int`
+- `nextToken`: `str`
+- `limit`: `int`
+- `startFromHead`: `bool`
+
+## GetLogEventsResponseResponseTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import GetLogEventsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `events`:
   `List`\[[OutputLogEventTypeDef](./type_defs.md#outputlogeventtypedef)\]
 - `nextForwardToken`: `str`
 - `nextBackwardToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLogGroupFieldsResponseTypeDef
+## GetLogGroupFieldsRequestTypeDef
 
 ```python
-from mypy_boto3_logs.type_defs import GetLogGroupFieldsResponseTypeDef
+from mypy_boto3_logs.type_defs import GetLogGroupFieldsRequestTypeDef
 ```
 
+Required fields:
+
+- `logGroupName`: `str`
+
 Optional fields:
+
+- `time`: `int`
+
+## GetLogGroupFieldsResponseResponseTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import GetLogGroupFieldsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `logGroupFields`:
   `List`\[[LogGroupFieldTypeDef](./type_defs.md#loggroupfieldtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLogRecordResponseTypeDef
+## GetLogRecordRequestTypeDef
 
 ```python
-from mypy_boto3_logs.type_defs import GetLogRecordResponseTypeDef
+from mypy_boto3_logs.type_defs import GetLogRecordRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `logRecordPointer`: `str`
+
+## GetLogRecordResponseResponseTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import GetLogRecordResponseResponseTypeDef
+```
+
+Required fields:
 
 - `logRecord`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetQueryResultsResponseTypeDef
+## GetQueryResultsRequestTypeDef
 
 ```python
-from mypy_boto3_logs.type_defs import GetQueryResultsResponseTypeDef
+from mypy_boto3_logs.type_defs import GetQueryResultsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `queryId`: `str`
+
+## GetQueryResultsResponseResponseTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import GetQueryResultsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `results`:
   `List`\[`List`\[[ResultFieldTypeDef](./type_defs.md#resultfieldtypedef)\]\]
 - `statistics`: [QueryStatisticsTypeDef](./type_defs.md#querystatisticstypedef)
 - `status`: [QueryStatusType](./literals.md#querystatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## InputLogEventTypeDef
 
@@ -322,15 +753,27 @@ Required fields:
 - `timestamp`: `int`
 - `message`: `str`
 
-## ListTagsLogGroupResponseTypeDef
+## ListTagsLogGroupRequestTypeDef
 
 ```python
-from mypy_boto3_logs.type_defs import ListTagsLogGroupResponseTypeDef
+from mypy_boto3_logs.type_defs import ListTagsLogGroupRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `logGroupName`: `str`
+
+## ListTagsLogGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import ListTagsLogGroupResponseResponseTypeDef
+```
+
+Required fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LogGroupFieldTypeDef
 
@@ -445,48 +888,166 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## PutDestinationResponseTypeDef
+## PutDestinationPolicyRequestTypeDef
 
 ```python
-from mypy_boto3_logs.type_defs import PutDestinationResponseTypeDef
+from mypy_boto3_logs.type_defs import PutDestinationPolicyRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `destinationName`: `str`
+- `accessPolicy`: `str`
+
+## PutDestinationRequestTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import PutDestinationRequestTypeDef
+```
+
+Required fields:
+
+- `destinationName`: `str`
+- `targetArn`: `str`
+- `roleArn`: `str`
+
+## PutDestinationResponseResponseTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import PutDestinationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `destination`: [DestinationTypeDef](./type_defs.md#destinationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutLogEventsResponseTypeDef
+## PutLogEventsRequestTypeDef
 
 ```python
-from mypy_boto3_logs.type_defs import PutLogEventsResponseTypeDef
+from mypy_boto3_logs.type_defs import PutLogEventsRequestTypeDef
 ```
 
+Required fields:
+
+- `logGroupName`: `str`
+- `logStreamName`: `str`
+- `logEvents`:
+  `List`\[[InputLogEventTypeDef](./type_defs.md#inputlogeventtypedef)\]
+
 Optional fields:
+
+- `sequenceToken`: `str`
+
+## PutLogEventsResponseResponseTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import PutLogEventsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `nextSequenceToken`: `str`
 - `rejectedLogEventsInfo`:
   [RejectedLogEventsInfoTypeDef](./type_defs.md#rejectedlogeventsinfotypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutQueryDefinitionResponseTypeDef
+## PutMetricFilterRequestTypeDef
 
 ```python
-from mypy_boto3_logs.type_defs import PutQueryDefinitionResponseTypeDef
+from mypy_boto3_logs.type_defs import PutMetricFilterRequestTypeDef
 ```
+
+Required fields:
+
+- `logGroupName`: `str`
+- `filterName`: `str`
+- `filterPattern`: `str`
+- `metricTransformations`:
+  `List`\[[MetricTransformationTypeDef](./type_defs.md#metrictransformationtypedef)\]
+
+## PutQueryDefinitionRequestTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import PutQueryDefinitionRequestTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+- `queryString`: `str`
 
 Optional fields:
 
 - `queryDefinitionId`: `str`
+- `logGroupNames`: `List`\[`str`\]
 
-## PutResourcePolicyResponseTypeDef
+## PutQueryDefinitionResponseResponseTypeDef
 
 ```python
-from mypy_boto3_logs.type_defs import PutResourcePolicyResponseTypeDef
+from mypy_boto3_logs.type_defs import PutQueryDefinitionResponseResponseTypeDef
+```
+
+Required fields:
+
+- `queryDefinitionId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## PutResourcePolicyRequestTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import PutResourcePolicyRequestTypeDef
 ```
 
 Optional fields:
 
+- `policyName`: `str`
+- `policyDocument`: `str`
+
+## PutResourcePolicyResponseResponseTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import PutResourcePolicyResponseResponseTypeDef
+```
+
+Required fields:
+
 - `resourcePolicy`:
   [ResourcePolicyTypeDef](./type_defs.md#resourcepolicytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## PutRetentionPolicyRequestTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import PutRetentionPolicyRequestTypeDef
+```
+
+Required fields:
+
+- `logGroupName`: `str`
+- `retentionInDays`: `int`
+
+## PutSubscriptionFilterRequestTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import PutSubscriptionFilterRequestTypeDef
+```
+
+Required fields:
+
+- `logGroupName`: `str`
+- `filterName`: `str`
+- `filterPattern`: `str`
+- `destinationArn`: `str`
+
+Optional fields:
+
+- `roleArn`: `str`
+- `distribution`: [DistributionType](./literals.md#distributiontype)
 
 ## QueryDefinitionTypeDef
 
@@ -552,6 +1113,20 @@ Optional fields:
 - `policyDocument`: `str`
 - `lastUpdatedTime`: `int`
 
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
 ## ResultFieldTypeDef
 
 ```python
@@ -574,25 +1149,57 @@ Optional fields:
 - `logStreamName`: `str`
 - `searchedCompletely`: `bool`
 
-## StartQueryResponseTypeDef
+## StartQueryRequestTypeDef
 
 ```python
-from mypy_boto3_logs.type_defs import StartQueryResponseTypeDef
+from mypy_boto3_logs.type_defs import StartQueryRequestTypeDef
 ```
 
+Required fields:
+
+- `startTime`: `int`
+- `endTime`: `int`
+- `queryString`: `str`
+
 Optional fields:
+
+- `logGroupName`: `str`
+- `logGroupNames`: `List`\[`str`\]
+- `limit`: `int`
+
+## StartQueryResponseResponseTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import StartQueryResponseResponseTypeDef
+```
+
+Required fields:
+
+- `queryId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StopQueryRequestTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import StopQueryRequestTypeDef
+```
+
+Required fields:
 
 - `queryId`: `str`
 
-## StopQueryResponseTypeDef
+## StopQueryResponseResponseTypeDef
 
 ```python
-from mypy_boto3_logs.type_defs import StopQueryResponseTypeDef
+from mypy_boto3_logs.type_defs import StopQueryResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `success`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## SubscriptionFilterTypeDef
 
@@ -610,13 +1217,48 @@ Optional fields:
 - `distribution`: [DistributionType](./literals.md#distributiontype)
 - `creationTime`: `int`
 
-## TestMetricFilterResponseTypeDef
+## TagLogGroupRequestTypeDef
 
 ```python
-from mypy_boto3_logs.type_defs import TestMetricFilterResponseTypeDef
+from mypy_boto3_logs.type_defs import TagLogGroupRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `logGroupName`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## TestMetricFilterRequestTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import TestMetricFilterRequestTypeDef
+```
+
+Required fields:
+
+- `filterPattern`: `str`
+- `logEventMessages`: `List`\[`str`\]
+
+## TestMetricFilterResponseResponseTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import TestMetricFilterResponseResponseTypeDef
+```
+
+Required fields:
 
 - `matches`:
   `List`\[[MetricFilterMatchRecordTypeDef](./type_defs.md#metricfiltermatchrecordtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UntagLogGroupRequestTypeDef
+
+```python
+from mypy_boto3_logs.type_defs import UntagLogGroupRequestTypeDef
+```
+
+Required fields:
+
+- `logGroupName`: `str`
+- `tags`: `List`\[`str`\]

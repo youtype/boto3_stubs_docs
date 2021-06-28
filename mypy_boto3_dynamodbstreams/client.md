@@ -59,6 +59,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("dynamodbstreams").can_paginate` method.
 
 Boto3 documentation:
@@ -72,10 +74,17 @@ Returns `bool`.
 
 ### describe_stream
 
+Returns information about a stream, including the current status of the stream,
+its Amazon Resource Name (ARN), the composition of its shards, and its
+corresponding DynamoDB table.
+
 Type annotations for `boto3.client("dynamodbstreams").describe_stream` method.
 
 Boto3 documentation:
 [DynamoDBStreams.Client.describe_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.describe_stream)
+
+Arguments mapping described in
+[DescribeStreamInputTypeDef](./type_defs.md#describestreaminputtypedef).
 
 Keyword-only arguments:
 
@@ -84,9 +93,11 @@ Keyword-only arguments:
 - `ExclusiveStartShardId`: `str`
 
 Returns
-[DescribeStreamOutputTypeDef](./type_defs.md#describestreamoutputtypedef).
+[DescribeStreamOutputResponseTypeDef](./type_defs.md#describestreamoutputresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("dynamodbstreams").generate_presigned_url`
 method.
@@ -105,25 +116,36 @@ Returns `str`.
 
 ### get_records
 
+Retrieves the stream records from a given shard.
+
 Type annotations for `boto3.client("dynamodbstreams").get_records` method.
 
 Boto3 documentation:
 [DynamoDBStreams.Client.get_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.get_records)
+
+Arguments mapping described in
+[GetRecordsInputTypeDef](./type_defs.md#getrecordsinputtypedef).
 
 Keyword-only arguments:
 
 - `ShardIterator`: `str` *(required)*
 - `Limit`: `int`
 
-Returns [GetRecordsOutputTypeDef](./type_defs.md#getrecordsoutputtypedef).
+Returns
+[GetRecordsOutputResponseTypeDef](./type_defs.md#getrecordsoutputresponsetypedef).
 
 ### get_shard_iterator
+
+Returns a shard iterator.
 
 Type annotations for `boto3.client("dynamodbstreams").get_shard_iterator`
 method.
 
 Boto3 documentation:
 [DynamoDBStreams.Client.get_shard_iterator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.get_shard_iterator)
+
+Arguments mapping described in
+[GetShardIteratorInputTypeDef](./type_defs.md#getsharditeratorinputtypedef).
 
 Keyword-only arguments:
 
@@ -134,14 +156,20 @@ Keyword-only arguments:
 - `SequenceNumber`: `str`
 
 Returns
-[GetShardIteratorOutputTypeDef](./type_defs.md#getsharditeratoroutputtypedef).
+[GetShardIteratorOutputResponseTypeDef](./type_defs.md#getsharditeratoroutputresponsetypedef).
 
 ### list_streams
+
+Returns an array of stream ARNs associated with the current account and
+endpoint.
 
 Type annotations for `boto3.client("dynamodbstreams").list_streams` method.
 
 Boto3 documentation:
 [DynamoDBStreams.Client.list_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.list_streams)
+
+Arguments mapping described in
+[ListStreamsInputTypeDef](./type_defs.md#liststreamsinputtypedef).
 
 Keyword-only arguments:
 
@@ -149,4 +177,5 @@ Keyword-only arguments:
 - `Limit`: `int`
 - `ExclusiveStartStreamArn`: `str`
 
-Returns [ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef).
+Returns
+[ListStreamsOutputResponseTypeDef](./type_defs.md#liststreamsoutputresponsetypedef).

@@ -25,7 +25,7 @@ def get_deployment_successful_waiter() -> DeploymentSuccessfulWaiter:
 ```
 
 Boto3 documentation:
-[CodeDeploy.Waiter.deployment_successful](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Waiter.deployment_successful)
+[CodeDeploy.Waiter.deployment_successful](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Waiter.DeploymentSuccessful)
 
 Arguments for `DeploymentSuccessfulWaiter.wait` method:
 

@@ -63,6 +63,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("lexv2-runtime").can_paginate` method.
 
 Boto3 documentation:
@@ -76,10 +78,15 @@ Returns `bool`.
 
 ### delete_session
 
+Removes session information for a specified bot, alias, and user ID.
+
 Type annotations for `boto3.client("lexv2-runtime").delete_session` method.
 
 Boto3 documentation:
 [LexRuntimeV2.Client.delete_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.delete_session)
+
+Arguments mapping described in
+[DeleteSessionRequestTypeDef](./type_defs.md#deletesessionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -89,9 +96,11 @@ Keyword-only arguments:
 - `sessionId`: `str` *(required)*
 
 Returns
-[DeleteSessionResponseTypeDef](./type_defs.md#deletesessionresponsetypedef).
+[DeleteSessionResponseResponseTypeDef](./type_defs.md#deletesessionresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("lexv2-runtime").generate_presigned_url`
 method.
@@ -110,10 +119,15 @@ Returns `str`.
 
 ### get_session
 
+Returns session information for a specified bot, alias, and user.
+
 Type annotations for `boto3.client("lexv2-runtime").get_session` method.
 
 Boto3 documentation:
 [LexRuntimeV2.Client.get_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.get_session)
+
+Arguments mapping described in
+[GetSessionRequestTypeDef](./type_defs.md#getsessionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -122,14 +136,21 @@ Keyword-only arguments:
 - `localeId`: `str` *(required)*
 - `sessionId`: `str` *(required)*
 
-Returns [GetSessionResponseTypeDef](./type_defs.md#getsessionresponsetypedef).
+Returns
+[GetSessionResponseResponseTypeDef](./type_defs.md#getsessionresponseresponsetypedef).
 
 ### put_session
+
+Creates a new session or modifies an existing session with an Amazon Lex V2
+bot.
 
 Type annotations for `boto3.client("lexv2-runtime").put_session` method.
 
 Boto3 documentation:
 [LexRuntimeV2.Client.put_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.put_session)
+
+Arguments mapping described in
+[PutSessionRequestTypeDef](./type_defs.md#putsessionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -143,14 +164,20 @@ Keyword-only arguments:
 - `requestAttributes`: `Dict`\[`str`, `str`\]
 - `responseContentType`: `str`
 
-Returns [PutSessionResponseTypeDef](./type_defs.md#putsessionresponsetypedef).
+Returns
+[PutSessionResponseResponseTypeDef](./type_defs.md#putsessionresponseresponsetypedef).
 
 ### recognize_text
+
+Sends user input to Amazon Lex V2.
 
 Type annotations for `boto3.client("lexv2-runtime").recognize_text` method.
 
 Boto3 documentation:
 [LexRuntimeV2.Client.recognize_text](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.recognize_text)
+
+Arguments mapping described in
+[RecognizeTextRequestTypeDef](./type_defs.md#recognizetextrequesttypedef).
 
 Keyword-only arguments:
 
@@ -163,15 +190,20 @@ Keyword-only arguments:
 - `requestAttributes`: `Dict`\[`str`, `str`\]
 
 Returns
-[RecognizeTextResponseTypeDef](./type_defs.md#recognizetextresponsetypedef).
+[RecognizeTextResponseResponseTypeDef](./type_defs.md#recognizetextresponseresponsetypedef).
 
 ### recognize_utterance
+
+Sends user input to Amazon Lex V2.
 
 Type annotations for `boto3.client("lexv2-runtime").recognize_utterance`
 method.
 
 Boto3 documentation:
 [LexRuntimeV2.Client.recognize_utterance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.recognize_utterance)
+
+Arguments mapping described in
+[RecognizeUtteranceRequestTypeDef](./type_defs.md#recognizeutterancerequesttypedef).
 
 Keyword-only arguments:
 
@@ -186,4 +218,4 @@ Keyword-only arguments:
 - `inputStream`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 Returns
-[RecognizeUtteranceResponseTypeDef](./type_defs.md#recognizeutteranceresponsetypedef).
+[RecognizeUtteranceResponseResponseTypeDef](./type_defs.md#recognizeutteranceresponseresponsetypedef).

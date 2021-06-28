@@ -8,14 +8,26 @@ type annotations stubs module
 [mypy_boto3_iotthingsgraph](https://pypi.org/project/mypy-boto3-iotthingsgraph/).
 
 - [Typed dictionaries for boto3 IoTThingsGraph module](#typed-dictionaries-for-boto3-iotthingsgraph-module)
-  - [CreateFlowTemplateResponseTypeDef](#createflowtemplateresponsetypedef)
-  - [CreateSystemInstanceResponseTypeDef](#createsysteminstanceresponsetypedef)
-  - [CreateSystemTemplateResponseTypeDef](#createsystemtemplateresponsetypedef)
+  - [AssociateEntityToThingRequestTypeDef](#associateentitytothingrequesttypedef)
+  - [CreateFlowTemplateRequestTypeDef](#createflowtemplaterequesttypedef)
+  - [CreateFlowTemplateResponseResponseTypeDef](#createflowtemplateresponseresponsetypedef)
+  - [CreateSystemInstanceRequestTypeDef](#createsysteminstancerequesttypedef)
+  - [CreateSystemInstanceResponseResponseTypeDef](#createsysteminstanceresponseresponsetypedef)
+  - [CreateSystemTemplateRequestTypeDef](#createsystemtemplaterequesttypedef)
+  - [CreateSystemTemplateResponseResponseTypeDef](#createsystemtemplateresponseresponsetypedef)
   - [DefinitionDocumentTypeDef](#definitiondocumenttypedef)
-  - [DeleteNamespaceResponseTypeDef](#deletenamespaceresponsetypedef)
+  - [DeleteFlowTemplateRequestTypeDef](#deleteflowtemplaterequesttypedef)
+  - [DeleteNamespaceResponseResponseTypeDef](#deletenamespaceresponseresponsetypedef)
+  - [DeleteSystemInstanceRequestTypeDef](#deletesysteminstancerequesttypedef)
+  - [DeleteSystemTemplateRequestTypeDef](#deletesystemtemplaterequesttypedef)
   - [DependencyRevisionTypeDef](#dependencyrevisiontypedef)
-  - [DeploySystemInstanceResponseTypeDef](#deploysysteminstanceresponsetypedef)
-  - [DescribeNamespaceResponseTypeDef](#describenamespaceresponsetypedef)
+  - [DeploySystemInstanceRequestTypeDef](#deploysysteminstancerequesttypedef)
+  - [DeploySystemInstanceResponseResponseTypeDef](#deploysysteminstanceresponseresponsetypedef)
+  - [DeprecateFlowTemplateRequestTypeDef](#deprecateflowtemplaterequesttypedef)
+  - [DeprecateSystemTemplateRequestTypeDef](#deprecatesystemtemplaterequesttypedef)
+  - [DescribeNamespaceRequestTypeDef](#describenamespacerequesttypedef)
+  - [DescribeNamespaceResponseResponseTypeDef](#describenamespaceresponseresponsetypedef)
+  - [DissociateEntityFromThingRequestTypeDef](#dissociateentityfromthingrequesttypedef)
   - [EntityDescriptionTypeDef](#entitydescriptiontypedef)
   - [EntityFilterTypeDef](#entityfiltertypedef)
   - [FlowExecutionMessageTypeDef](#flowexecutionmessagetypedef)
@@ -23,69 +35,163 @@ type annotations stubs module
   - [FlowTemplateDescriptionTypeDef](#flowtemplatedescriptiontypedef)
   - [FlowTemplateFilterTypeDef](#flowtemplatefiltertypedef)
   - [FlowTemplateSummaryTypeDef](#flowtemplatesummarytypedef)
-  - [GetEntitiesResponseTypeDef](#getentitiesresponsetypedef)
-  - [GetFlowTemplateResponseTypeDef](#getflowtemplateresponsetypedef)
-  - [GetFlowTemplateRevisionsResponseTypeDef](#getflowtemplaterevisionsresponsetypedef)
-  - [GetNamespaceDeletionStatusResponseTypeDef](#getnamespacedeletionstatusresponsetypedef)
-  - [GetSystemInstanceResponseTypeDef](#getsysteminstanceresponsetypedef)
-  - [GetSystemTemplateResponseTypeDef](#getsystemtemplateresponsetypedef)
-  - [GetSystemTemplateRevisionsResponseTypeDef](#getsystemtemplaterevisionsresponsetypedef)
-  - [GetUploadStatusResponseTypeDef](#getuploadstatusresponsetypedef)
-  - [ListFlowExecutionMessagesResponseTypeDef](#listflowexecutionmessagesresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [GetEntitiesRequestTypeDef](#getentitiesrequesttypedef)
+  - [GetEntitiesResponseResponseTypeDef](#getentitiesresponseresponsetypedef)
+  - [GetFlowTemplateRequestTypeDef](#getflowtemplaterequesttypedef)
+  - [GetFlowTemplateResponseResponseTypeDef](#getflowtemplateresponseresponsetypedef)
+  - [GetFlowTemplateRevisionsRequestTypeDef](#getflowtemplaterevisionsrequesttypedef)
+  - [GetFlowTemplateRevisionsResponseResponseTypeDef](#getflowtemplaterevisionsresponseresponsetypedef)
+  - [GetNamespaceDeletionStatusResponseResponseTypeDef](#getnamespacedeletionstatusresponseresponsetypedef)
+  - [GetSystemInstanceRequestTypeDef](#getsysteminstancerequesttypedef)
+  - [GetSystemInstanceResponseResponseTypeDef](#getsysteminstanceresponseresponsetypedef)
+  - [GetSystemTemplateRequestTypeDef](#getsystemtemplaterequesttypedef)
+  - [GetSystemTemplateResponseResponseTypeDef](#getsystemtemplateresponseresponsetypedef)
+  - [GetSystemTemplateRevisionsRequestTypeDef](#getsystemtemplaterevisionsrequesttypedef)
+  - [GetSystemTemplateRevisionsResponseResponseTypeDef](#getsystemtemplaterevisionsresponseresponsetypedef)
+  - [GetUploadStatusRequestTypeDef](#getuploadstatusrequesttypedef)
+  - [GetUploadStatusResponseResponseTypeDef](#getuploadstatusresponseresponsetypedef)
+  - [ListFlowExecutionMessagesRequestTypeDef](#listflowexecutionmessagesrequesttypedef)
+  - [ListFlowExecutionMessagesResponseResponseTypeDef](#listflowexecutionmessagesresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [MetricsConfigurationTypeDef](#metricsconfigurationtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [SearchEntitiesResponseTypeDef](#searchentitiesresponsetypedef)
-  - [SearchFlowExecutionsResponseTypeDef](#searchflowexecutionsresponsetypedef)
-  - [SearchFlowTemplatesResponseTypeDef](#searchflowtemplatesresponsetypedef)
-  - [SearchSystemInstancesResponseTypeDef](#searchsysteminstancesresponsetypedef)
-  - [SearchSystemTemplatesResponseTypeDef](#searchsystemtemplatesresponsetypedef)
-  - [SearchThingsResponseTypeDef](#searchthingsresponsetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [SearchEntitiesRequestTypeDef](#searchentitiesrequesttypedef)
+  - [SearchEntitiesResponseResponseTypeDef](#searchentitiesresponseresponsetypedef)
+  - [SearchFlowExecutionsRequestTypeDef](#searchflowexecutionsrequesttypedef)
+  - [SearchFlowExecutionsResponseResponseTypeDef](#searchflowexecutionsresponseresponsetypedef)
+  - [SearchFlowTemplatesRequestTypeDef](#searchflowtemplatesrequesttypedef)
+  - [SearchFlowTemplatesResponseResponseTypeDef](#searchflowtemplatesresponseresponsetypedef)
+  - [SearchSystemInstancesRequestTypeDef](#searchsysteminstancesrequesttypedef)
+  - [SearchSystemInstancesResponseResponseTypeDef](#searchsysteminstancesresponseresponsetypedef)
+  - [SearchSystemTemplatesRequestTypeDef](#searchsystemtemplatesrequesttypedef)
+  - [SearchSystemTemplatesResponseResponseTypeDef](#searchsystemtemplatesresponseresponsetypedef)
+  - [SearchThingsRequestTypeDef](#searchthingsrequesttypedef)
+  - [SearchThingsResponseResponseTypeDef](#searchthingsresponseresponsetypedef)
   - [SystemInstanceDescriptionTypeDef](#systeminstancedescriptiontypedef)
   - [SystemInstanceFilterTypeDef](#systeminstancefiltertypedef)
   - [SystemInstanceSummaryTypeDef](#systeminstancesummarytypedef)
   - [SystemTemplateDescriptionTypeDef](#systemtemplatedescriptiontypedef)
   - [SystemTemplateFilterTypeDef](#systemtemplatefiltertypedef)
   - [SystemTemplateSummaryTypeDef](#systemtemplatesummarytypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [ThingTypeDef](#thingtypedef)
-  - [UndeploySystemInstanceResponseTypeDef](#undeploysysteminstanceresponsetypedef)
-  - [UpdateFlowTemplateResponseTypeDef](#updateflowtemplateresponsetypedef)
-  - [UpdateSystemTemplateResponseTypeDef](#updatesystemtemplateresponsetypedef)
-  - [UploadEntityDefinitionsResponseTypeDef](#uploadentitydefinitionsresponsetypedef)
+  - [UndeploySystemInstanceRequestTypeDef](#undeploysysteminstancerequesttypedef)
+  - [UndeploySystemInstanceResponseResponseTypeDef](#undeploysysteminstanceresponseresponsetypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateFlowTemplateRequestTypeDef](#updateflowtemplaterequesttypedef)
+  - [UpdateFlowTemplateResponseResponseTypeDef](#updateflowtemplateresponseresponsetypedef)
+  - [UpdateSystemTemplateRequestTypeDef](#updatesystemtemplaterequesttypedef)
+  - [UpdateSystemTemplateResponseResponseTypeDef](#updatesystemtemplateresponseresponsetypedef)
+  - [UploadEntityDefinitionsRequestTypeDef](#uploadentitydefinitionsrequesttypedef)
+  - [UploadEntityDefinitionsResponseResponseTypeDef](#uploadentitydefinitionsresponseresponsetypedef)
 
-## CreateFlowTemplateResponseTypeDef
+## AssociateEntityToThingRequestTypeDef
 
 ```python
-from mypy_boto3_iotthingsgraph.type_defs import CreateFlowTemplateResponseTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import AssociateEntityToThingRequestTypeDef
 ```
 
+Required fields:
+
+- `thingName`: `str`
+- `entityId`: `str`
+
 Optional fields:
+
+- `namespaceVersion`: `int`
+
+## CreateFlowTemplateRequestTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import CreateFlowTemplateRequestTypeDef
+```
+
+Required fields:
+
+- `definition`:
+  [DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef)
+
+Optional fields:
+
+- `compatibleNamespaceVersion`: `int`
+
+## CreateFlowTemplateResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import CreateFlowTemplateResponseResponseTypeDef
+```
+
+Required fields:
 
 - `summary`:
   [FlowTemplateSummaryTypeDef](./type_defs.md#flowtemplatesummarytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateSystemInstanceResponseTypeDef
+## CreateSystemInstanceRequestTypeDef
 
 ```python
-from mypy_boto3_iotthingsgraph.type_defs import CreateSystemInstanceResponseTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import CreateSystemInstanceRequestTypeDef
 ```
 
+Required fields:
+
+- `definition`:
+  [DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef)
+- `target`: [DeploymentTargetType](./literals.md#deploymenttargettype)
+
 Optional fields:
+
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `greengrassGroupName`: `str`
+- `s3BucketName`: `str`
+- `metricsConfiguration`:
+  [MetricsConfigurationTypeDef](./type_defs.md#metricsconfigurationtypedef)
+- `flowActionsRoleArn`: `str`
+
+## CreateSystemInstanceResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import CreateSystemInstanceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `summary`:
   [SystemInstanceSummaryTypeDef](./type_defs.md#systeminstancesummarytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateSystemTemplateResponseTypeDef
+## CreateSystemTemplateRequestTypeDef
 
 ```python
-from mypy_boto3_iotthingsgraph.type_defs import CreateSystemTemplateResponseTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import CreateSystemTemplateRequestTypeDef
 ```
+
+Required fields:
+
+- `definition`:
+  [DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef)
 
 Optional fields:
 
+- `compatibleNamespaceVersion`: `int`
+
+## CreateSystemTemplateResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import CreateSystemTemplateResponseResponseTypeDef
+```
+
+Required fields:
+
 - `summary`:
   [SystemTemplateSummaryTypeDef](./type_defs.md#systemtemplatesummarytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DefinitionDocumentTypeDef
 
@@ -99,16 +205,48 @@ Required fields:
   [DefinitionLanguageType](./literals.md#definitionlanguagetype))
 - `text`: `str`
 
-## DeleteNamespaceResponseTypeDef
+## DeleteFlowTemplateRequestTypeDef
 
 ```python
-from mypy_boto3_iotthingsgraph.type_defs import DeleteNamespaceResponseTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import DeleteFlowTemplateRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
+## DeleteNamespaceResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import DeleteNamespaceResponseResponseTypeDef
+```
+
+Required fields:
+
+- `namespaceArn`: `str`
+- `namespaceName`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteSystemInstanceRequestTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import DeleteSystemInstanceRequestTypeDef
 ```
 
 Optional fields:
 
-- `namespaceArn`: `str`
-- `namespaceName`: `str`
+- `id`: `str`
+
+## DeleteSystemTemplateRequestTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import DeleteSystemTemplateRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
 
 ## DependencyRevisionTypeDef
 
@@ -121,34 +259,86 @@ Optional fields:
 - `id`: `str`
 - `revisionNumber`: `int`
 
-## DeploySystemInstanceResponseTypeDef
+## DeploySystemInstanceRequestTypeDef
 
 ```python
-from mypy_boto3_iotthingsgraph.type_defs import DeploySystemInstanceResponseTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import DeploySystemInstanceRequestTypeDef
+```
+
+Optional fields:
+
+- `id`: `str`
+
+## DeploySystemInstanceResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import DeploySystemInstanceResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `summary`:
   [SystemInstanceSummaryTypeDef](./type_defs.md#systeminstancesummarytypedef)
-
-Optional fields:
-
 - `greengrassDeploymentId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeNamespaceResponseTypeDef
+## DeprecateFlowTemplateRequestTypeDef
 
 ```python
-from mypy_boto3_iotthingsgraph.type_defs import DescribeNamespaceResponseTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import DeprecateFlowTemplateRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
+## DeprecateSystemTemplateRequestTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import DeprecateSystemTemplateRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
+## DescribeNamespaceRequestTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import DescribeNamespaceRequestTypeDef
 ```
 
 Optional fields:
+
+- `namespaceName`: `str`
+
+## DescribeNamespaceResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import DescribeNamespaceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `namespaceArn`: `str`
 - `namespaceName`: `str`
 - `trackingNamespaceName`: `str`
 - `trackingNamespaceVersion`: `int`
 - `namespaceVersion`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DissociateEntityFromThingRequestTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import DissociateEntityFromThingRequestTypeDef
+```
+
+Required fields:
+
+- `thingName`: `str`
+- `entityType`: [EntityTypeType](./literals.md#entitytypetype)
 
 ## EntityDescriptionTypeDef
 
@@ -244,47 +434,96 @@ Optional fields:
 - `revisionNumber`: `int`
 - `createdAt`: `datetime`
 
-## GetEntitiesResponseTypeDef
+## GetEntitiesRequestTypeDef
 
 ```python
-from mypy_boto3_iotthingsgraph.type_defs import GetEntitiesResponseTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import GetEntitiesRequestTypeDef
 ```
 
+Required fields:
+
+- `ids`: `List`\[`str`\]
+
 Optional fields:
+
+- `namespaceVersion`: `int`
+
+## GetEntitiesResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import GetEntitiesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `descriptions`:
   `List`\[[EntityDescriptionTypeDef](./type_defs.md#entitydescriptiontypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFlowTemplateResponseTypeDef
+## GetFlowTemplateRequestTypeDef
 
 ```python
-from mypy_boto3_iotthingsgraph.type_defs import GetFlowTemplateResponseTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import GetFlowTemplateRequestTypeDef
 ```
 
+Required fields:
+
+- `id`: `str`
+
 Optional fields:
+
+- `revisionNumber`: `int`
+
+## GetFlowTemplateResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import GetFlowTemplateResponseResponseTypeDef
+```
+
+Required fields:
 
 - `description`:
   [FlowTemplateDescriptionTypeDef](./type_defs.md#flowtemplatedescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFlowTemplateRevisionsResponseTypeDef
+## GetFlowTemplateRevisionsRequestTypeDef
 
 ```python
-from mypy_boto3_iotthingsgraph.type_defs import GetFlowTemplateRevisionsResponseTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import GetFlowTemplateRevisionsRequestTypeDef
 ```
 
+Required fields:
+
+- `id`: `str`
+
 Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## GetFlowTemplateRevisionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import GetFlowTemplateRevisionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `summaries`:
   `List`\[[FlowTemplateSummaryTypeDef](./type_defs.md#flowtemplatesummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetNamespaceDeletionStatusResponseTypeDef
+## GetNamespaceDeletionStatusResponseResponseTypeDef
 
 ```python
-from mypy_boto3_iotthingsgraph.type_defs import GetNamespaceDeletionStatusResponseTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import GetNamespaceDeletionStatusResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `namespaceArn`: `str`
 - `namespaceName`: `str`
@@ -293,82 +532,172 @@ Optional fields:
 - `errorCode`: `Literal['VALIDATION_FAILED']` (see
   [NamespaceDeletionStatusErrorCodesType](./literals.md#namespacedeletionstatuserrorcodestype))
 - `errorMessage`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSystemInstanceResponseTypeDef
+## GetSystemInstanceRequestTypeDef
 
 ```python
-from mypy_boto3_iotthingsgraph.type_defs import GetSystemInstanceResponseTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import GetSystemInstanceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `id`: `str`
+
+## GetSystemInstanceResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import GetSystemInstanceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `description`:
   [SystemInstanceDescriptionTypeDef](./type_defs.md#systeminstancedescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSystemTemplateResponseTypeDef
+## GetSystemTemplateRequestTypeDef
 
 ```python
-from mypy_boto3_iotthingsgraph.type_defs import GetSystemTemplateResponseTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import GetSystemTemplateRequestTypeDef
 ```
 
+Required fields:
+
+- `id`: `str`
+
 Optional fields:
+
+- `revisionNumber`: `int`
+
+## GetSystemTemplateResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import GetSystemTemplateResponseResponseTypeDef
+```
+
+Required fields:
 
 - `description`:
   [SystemTemplateDescriptionTypeDef](./type_defs.md#systemtemplatedescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSystemTemplateRevisionsResponseTypeDef
+## GetSystemTemplateRevisionsRequestTypeDef
 
 ```python
-from mypy_boto3_iotthingsgraph.type_defs import GetSystemTemplateRevisionsResponseTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import GetSystemTemplateRevisionsRequestTypeDef
 ```
 
+Required fields:
+
+- `id`: `str`
+
 Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## GetSystemTemplateRevisionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import GetSystemTemplateRevisionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `summaries`:
   `List`\[[SystemTemplateSummaryTypeDef](./type_defs.md#systemtemplatesummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetUploadStatusResponseTypeDef
+## GetUploadStatusRequestTypeDef
 
 ```python
-from mypy_boto3_iotthingsgraph.type_defs import GetUploadStatusResponseTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import GetUploadStatusRequestTypeDef
+```
+
+Required fields:
+
+- `uploadId`: `str`
+
+## GetUploadStatusResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import GetUploadStatusResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `uploadId`: `str`
 - `uploadStatus`: [UploadStatusType](./literals.md#uploadstatustype)
-- `createdDate`: `datetime`
-
-Optional fields:
-
 - `namespaceArn`: `str`
 - `namespaceName`: `str`
 - `namespaceVersion`: `int`
 - `failureReason`: `List`\[`str`\]
+- `createdDate`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFlowExecutionMessagesResponseTypeDef
+## ListFlowExecutionMessagesRequestTypeDef
 
 ```python
-from mypy_boto3_iotthingsgraph.type_defs import ListFlowExecutionMessagesResponseTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import ListFlowExecutionMessagesRequestTypeDef
 ```
 
+Required fields:
+
+- `flowExecutionId`: `str`
+
 Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListFlowExecutionMessagesResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import ListFlowExecutionMessagesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `messages`:
   `List`\[[FlowExecutionMessageTypeDef](./type_defs.md#flowexecutionmessagetypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_iotthingsgraph.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import ListTagsForResourceRequestTypeDef
 ```
+
+Required fields:
+
+- `resourceArn`: `str`
 
 Optional fields:
 
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
+
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## MetricsConfigurationTypeDef
 
@@ -393,76 +722,193 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## SearchEntitiesResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_iotthingsgraph.type_defs import SearchEntitiesResponseTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import ResponseMetadataTypeDef
 ```
 
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## SearchEntitiesRequestTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import SearchEntitiesRequestTypeDef
+```
+
+Required fields:
+
+- `entityTypes`: `List`\[[EntityTypeType](./literals.md#entitytypetype)\]
+
 Optional fields:
+
+- `filters`:
+  `List`\[[EntityFilterTypeDef](./type_defs.md#entityfiltertypedef)\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `namespaceVersion`: `int`
+
+## SearchEntitiesResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import SearchEntitiesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `descriptions`:
   `List`\[[EntityDescriptionTypeDef](./type_defs.md#entitydescriptiontypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SearchFlowExecutionsResponseTypeDef
+## SearchFlowExecutionsRequestTypeDef
 
 ```python
-from mypy_boto3_iotthingsgraph.type_defs import SearchFlowExecutionsResponseTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import SearchFlowExecutionsRequestTypeDef
 ```
 
+Required fields:
+
+- `systemInstanceId`: `str`
+
 Optional fields:
+
+- `flowExecutionId`: `str`
+- `startTime`: `Union`\[`datetime`, `str`\]
+- `endTime`: `Union`\[`datetime`, `str`\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## SearchFlowExecutionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import SearchFlowExecutionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `summaries`:
   `List`\[[FlowExecutionSummaryTypeDef](./type_defs.md#flowexecutionsummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SearchFlowTemplatesResponseTypeDef
+## SearchFlowTemplatesRequestTypeDef
 
 ```python
-from mypy_boto3_iotthingsgraph.type_defs import SearchFlowTemplatesResponseTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import SearchFlowTemplatesRequestTypeDef
 ```
 
 Optional fields:
+
+- `filters`:
+  `List`\[[FlowTemplateFilterTypeDef](./type_defs.md#flowtemplatefiltertypedef)\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## SearchFlowTemplatesResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import SearchFlowTemplatesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `summaries`:
   `List`\[[FlowTemplateSummaryTypeDef](./type_defs.md#flowtemplatesummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SearchSystemInstancesResponseTypeDef
+## SearchSystemInstancesRequestTypeDef
 
 ```python
-from mypy_boto3_iotthingsgraph.type_defs import SearchSystemInstancesResponseTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import SearchSystemInstancesRequestTypeDef
 ```
 
 Optional fields:
+
+- `filters`:
+  `List`\[[SystemInstanceFilterTypeDef](./type_defs.md#systeminstancefiltertypedef)\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## SearchSystemInstancesResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import SearchSystemInstancesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `summaries`:
   `List`\[[SystemInstanceSummaryTypeDef](./type_defs.md#systeminstancesummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SearchSystemTemplatesResponseTypeDef
+## SearchSystemTemplatesRequestTypeDef
 
 ```python
-from mypy_boto3_iotthingsgraph.type_defs import SearchSystemTemplatesResponseTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import SearchSystemTemplatesRequestTypeDef
 ```
 
 Optional fields:
+
+- `filters`:
+  `List`\[[SystemTemplateFilterTypeDef](./type_defs.md#systemtemplatefiltertypedef)\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## SearchSystemTemplatesResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import SearchSystemTemplatesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `summaries`:
   `List`\[[SystemTemplateSummaryTypeDef](./type_defs.md#systemtemplatesummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SearchThingsResponseTypeDef
+## SearchThingsRequestTypeDef
 
 ```python
-from mypy_boto3_iotthingsgraph.type_defs import SearchThingsResponseTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import SearchThingsRequestTypeDef
 ```
+
+Required fields:
+
+- `entityId`: `str`
 
 Optional fields:
 
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `namespaceVersion`: `int`
+
+## SearchThingsResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import SearchThingsResponseResponseTypeDef
+```
+
+Required fields:
+
 - `things`: `List`\[[ThingTypeDef](./type_defs.md#thingtypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## SystemInstanceDescriptionTypeDef
 
@@ -554,6 +1000,17 @@ Optional fields:
 - `revisionNumber`: `int`
 - `createdAt`: `datetime`
 
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
 ## TagTypeDef
 
 ```python
@@ -576,45 +1033,119 @@ Optional fields:
 - `thingArn`: `str`
 - `thingName`: `str`
 
-## UndeploySystemInstanceResponseTypeDef
+## UndeploySystemInstanceRequestTypeDef
 
 ```python
-from mypy_boto3_iotthingsgraph.type_defs import UndeploySystemInstanceResponseTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import UndeploySystemInstanceRequestTypeDef
 ```
 
 Optional fields:
+
+- `id`: `str`
+
+## UndeploySystemInstanceResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import UndeploySystemInstanceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `summary`:
   [SystemInstanceSummaryTypeDef](./type_defs.md#systeminstancesummarytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateFlowTemplateResponseTypeDef
+## UntagResourceRequestTypeDef
 
 ```python
-from mypy_boto3_iotthingsgraph.type_defs import UpdateFlowTemplateResponseTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import UntagResourceRequestTypeDef
 ```
 
+Required fields:
+
+- `resourceArn`: `str`
+- `tagKeys`: `List`\[`str`\]
+
+## UpdateFlowTemplateRequestTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import UpdateFlowTemplateRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+- `definition`:
+  [DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef)
+
 Optional fields:
+
+- `compatibleNamespaceVersion`: `int`
+
+## UpdateFlowTemplateResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import UpdateFlowTemplateResponseResponseTypeDef
+```
+
+Required fields:
 
 - `summary`:
   [FlowTemplateSummaryTypeDef](./type_defs.md#flowtemplatesummarytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateSystemTemplateResponseTypeDef
+## UpdateSystemTemplateRequestTypeDef
 
 ```python
-from mypy_boto3_iotthingsgraph.type_defs import UpdateSystemTemplateResponseTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import UpdateSystemTemplateRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+- `definition`:
+  [DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef)
+
+Optional fields:
+
+- `compatibleNamespaceVersion`: `int`
+
+## UpdateSystemTemplateResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import UpdateSystemTemplateResponseResponseTypeDef
+```
+
+Required fields:
+
+- `summary`:
+  [SystemTemplateSummaryTypeDef](./type_defs.md#systemtemplatesummarytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UploadEntityDefinitionsRequestTypeDef
+
+```python
+from mypy_boto3_iotthingsgraph.type_defs import UploadEntityDefinitionsRequestTypeDef
 ```
 
 Optional fields:
 
-- `summary`:
-  [SystemTemplateSummaryTypeDef](./type_defs.md#systemtemplatesummarytypedef)
+- `document`:
+  [DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef)
+- `syncWithPublicNamespace`: `bool`
+- `deprecateExistingEntities`: `bool`
 
-## UploadEntityDefinitionsResponseTypeDef
+## UploadEntityDefinitionsResponseResponseTypeDef
 
 ```python
-from mypy_boto3_iotthingsgraph.type_defs import UploadEntityDefinitionsResponseTypeDef
+from mypy_boto3_iotthingsgraph.type_defs import UploadEntityDefinitionsResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `uploadId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

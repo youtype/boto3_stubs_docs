@@ -10,41 +10,85 @@ type annotations stubs module
 - [Typed dictionaries for boto3 IoTWireless module](#typed-dictionaries-for-boto3-iotwireless-module)
   - [AbpV1_0_xTypeDef](#abpv1_0_xtypedef)
   - [AbpV1_1TypeDef](#abpv1_1typedef)
-  - [AssociateAwsAccountWithPartnerAccountResponseTypeDef](#associateawsaccountwithpartneraccountresponsetypedef)
-  - [AssociateWirelessGatewayWithCertificateResponseTypeDef](#associatewirelessgatewaywithcertificateresponsetypedef)
+  - [AssociateAwsAccountWithPartnerAccountRequestTypeDef](#associateawsaccountwithpartneraccountrequesttypedef)
+  - [AssociateAwsAccountWithPartnerAccountResponseResponseTypeDef](#associateawsaccountwithpartneraccountresponseresponsetypedef)
+  - [AssociateWirelessDeviceWithThingRequestTypeDef](#associatewirelessdevicewiththingrequesttypedef)
+  - [AssociateWirelessGatewayWithCertificateRequestTypeDef](#associatewirelessgatewaywithcertificaterequesttypedef)
+  - [AssociateWirelessGatewayWithCertificateResponseResponseTypeDef](#associatewirelessgatewaywithcertificateresponseresponsetypedef)
+  - [AssociateWirelessGatewayWithThingRequestTypeDef](#associatewirelessgatewaywiththingrequesttypedef)
   - [CertificateListTypeDef](#certificatelisttypedef)
-  - [CreateDestinationResponseTypeDef](#createdestinationresponsetypedef)
-  - [CreateDeviceProfileResponseTypeDef](#createdeviceprofileresponsetypedef)
-  - [CreateServiceProfileResponseTypeDef](#createserviceprofileresponsetypedef)
-  - [CreateWirelessDeviceResponseTypeDef](#createwirelessdeviceresponsetypedef)
-  - [CreateWirelessGatewayResponseTypeDef](#createwirelessgatewayresponsetypedef)
-  - [CreateWirelessGatewayTaskDefinitionResponseTypeDef](#createwirelessgatewaytaskdefinitionresponsetypedef)
-  - [CreateWirelessGatewayTaskResponseTypeDef](#createwirelessgatewaytaskresponsetypedef)
+  - [CreateDestinationRequestTypeDef](#createdestinationrequesttypedef)
+  - [CreateDestinationResponseResponseTypeDef](#createdestinationresponseresponsetypedef)
+  - [CreateDeviceProfileRequestTypeDef](#createdeviceprofilerequesttypedef)
+  - [CreateDeviceProfileResponseResponseTypeDef](#createdeviceprofileresponseresponsetypedef)
+  - [CreateServiceProfileRequestTypeDef](#createserviceprofilerequesttypedef)
+  - [CreateServiceProfileResponseResponseTypeDef](#createserviceprofileresponseresponsetypedef)
+  - [CreateWirelessDeviceRequestTypeDef](#createwirelessdevicerequesttypedef)
+  - [CreateWirelessDeviceResponseResponseTypeDef](#createwirelessdeviceresponseresponsetypedef)
+  - [CreateWirelessGatewayRequestTypeDef](#createwirelessgatewayrequesttypedef)
+  - [CreateWirelessGatewayResponseResponseTypeDef](#createwirelessgatewayresponseresponsetypedef)
+  - [CreateWirelessGatewayTaskDefinitionRequestTypeDef](#createwirelessgatewaytaskdefinitionrequesttypedef)
+  - [CreateWirelessGatewayTaskDefinitionResponseResponseTypeDef](#createwirelessgatewaytaskdefinitionresponseresponsetypedef)
+  - [CreateWirelessGatewayTaskRequestTypeDef](#createwirelessgatewaytaskrequesttypedef)
+  - [CreateWirelessGatewayTaskResponseResponseTypeDef](#createwirelessgatewaytaskresponseresponsetypedef)
+  - [DeleteDestinationRequestTypeDef](#deletedestinationrequesttypedef)
+  - [DeleteDeviceProfileRequestTypeDef](#deletedeviceprofilerequesttypedef)
+  - [DeleteServiceProfileRequestTypeDef](#deleteserviceprofilerequesttypedef)
+  - [DeleteWirelessDeviceRequestTypeDef](#deletewirelessdevicerequesttypedef)
+  - [DeleteWirelessGatewayRequestTypeDef](#deletewirelessgatewayrequesttypedef)
+  - [DeleteWirelessGatewayTaskDefinitionRequestTypeDef](#deletewirelessgatewaytaskdefinitionrequesttypedef)
+  - [DeleteWirelessGatewayTaskRequestTypeDef](#deletewirelessgatewaytaskrequesttypedef)
   - [DestinationsTypeDef](#destinationstypedef)
   - [DeviceProfileTypeDef](#deviceprofiletypedef)
-  - [GetDestinationResponseTypeDef](#getdestinationresponsetypedef)
-  - [GetDeviceProfileResponseTypeDef](#getdeviceprofileresponsetypedef)
-  - [GetLogLevelsByResourceTypesResponseTypeDef](#getloglevelsbyresourcetypesresponsetypedef)
-  - [GetPartnerAccountResponseTypeDef](#getpartneraccountresponsetypedef)
-  - [GetResourceLogLevelResponseTypeDef](#getresourceloglevelresponsetypedef)
-  - [GetServiceEndpointResponseTypeDef](#getserviceendpointresponsetypedef)
-  - [GetServiceProfileResponseTypeDef](#getserviceprofileresponsetypedef)
-  - [GetWirelessDeviceResponseTypeDef](#getwirelessdeviceresponsetypedef)
-  - [GetWirelessDeviceStatisticsResponseTypeDef](#getwirelessdevicestatisticsresponsetypedef)
-  - [GetWirelessGatewayCertificateResponseTypeDef](#getwirelessgatewaycertificateresponsetypedef)
-  - [GetWirelessGatewayFirmwareInformationResponseTypeDef](#getwirelessgatewayfirmwareinformationresponsetypedef)
-  - [GetWirelessGatewayResponseTypeDef](#getwirelessgatewayresponsetypedef)
-  - [GetWirelessGatewayStatisticsResponseTypeDef](#getwirelessgatewaystatisticsresponsetypedef)
-  - [GetWirelessGatewayTaskDefinitionResponseTypeDef](#getwirelessgatewaytaskdefinitionresponsetypedef)
-  - [GetWirelessGatewayTaskResponseTypeDef](#getwirelessgatewaytaskresponsetypedef)
-  - [ListDestinationsResponseTypeDef](#listdestinationsresponsetypedef)
-  - [ListDeviceProfilesResponseTypeDef](#listdeviceprofilesresponsetypedef)
-  - [ListPartnerAccountsResponseTypeDef](#listpartneraccountsresponsetypedef)
-  - [ListServiceProfilesResponseTypeDef](#listserviceprofilesresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListWirelessDevicesResponseTypeDef](#listwirelessdevicesresponsetypedef)
-  - [ListWirelessGatewayTaskDefinitionsResponseTypeDef](#listwirelessgatewaytaskdefinitionsresponsetypedef)
-  - [ListWirelessGatewaysResponseTypeDef](#listwirelessgatewaysresponsetypedef)
+  - [DisassociateAwsAccountFromPartnerAccountRequestTypeDef](#disassociateawsaccountfrompartneraccountrequesttypedef)
+  - [DisassociateWirelessDeviceFromThingRequestTypeDef](#disassociatewirelessdevicefromthingrequesttypedef)
+  - [DisassociateWirelessGatewayFromCertificateRequestTypeDef](#disassociatewirelessgatewayfromcertificaterequesttypedef)
+  - [DisassociateWirelessGatewayFromThingRequestTypeDef](#disassociatewirelessgatewayfromthingrequesttypedef)
+  - [GetDestinationRequestTypeDef](#getdestinationrequesttypedef)
+  - [GetDestinationResponseResponseTypeDef](#getdestinationresponseresponsetypedef)
+  - [GetDeviceProfileRequestTypeDef](#getdeviceprofilerequesttypedef)
+  - [GetDeviceProfileResponseResponseTypeDef](#getdeviceprofileresponseresponsetypedef)
+  - [GetLogLevelsByResourceTypesResponseResponseTypeDef](#getloglevelsbyresourcetypesresponseresponsetypedef)
+  - [GetPartnerAccountRequestTypeDef](#getpartneraccountrequesttypedef)
+  - [GetPartnerAccountResponseResponseTypeDef](#getpartneraccountresponseresponsetypedef)
+  - [GetResourceLogLevelRequestTypeDef](#getresourceloglevelrequesttypedef)
+  - [GetResourceLogLevelResponseResponseTypeDef](#getresourceloglevelresponseresponsetypedef)
+  - [GetServiceEndpointRequestTypeDef](#getserviceendpointrequesttypedef)
+  - [GetServiceEndpointResponseResponseTypeDef](#getserviceendpointresponseresponsetypedef)
+  - [GetServiceProfileRequestTypeDef](#getserviceprofilerequesttypedef)
+  - [GetServiceProfileResponseResponseTypeDef](#getserviceprofileresponseresponsetypedef)
+  - [GetWirelessDeviceRequestTypeDef](#getwirelessdevicerequesttypedef)
+  - [GetWirelessDeviceResponseResponseTypeDef](#getwirelessdeviceresponseresponsetypedef)
+  - [GetWirelessDeviceStatisticsRequestTypeDef](#getwirelessdevicestatisticsrequesttypedef)
+  - [GetWirelessDeviceStatisticsResponseResponseTypeDef](#getwirelessdevicestatisticsresponseresponsetypedef)
+  - [GetWirelessGatewayCertificateRequestTypeDef](#getwirelessgatewaycertificaterequesttypedef)
+  - [GetWirelessGatewayCertificateResponseResponseTypeDef](#getwirelessgatewaycertificateresponseresponsetypedef)
+  - [GetWirelessGatewayFirmwareInformationRequestTypeDef](#getwirelessgatewayfirmwareinformationrequesttypedef)
+  - [GetWirelessGatewayFirmwareInformationResponseResponseTypeDef](#getwirelessgatewayfirmwareinformationresponseresponsetypedef)
+  - [GetWirelessGatewayRequestTypeDef](#getwirelessgatewayrequesttypedef)
+  - [GetWirelessGatewayResponseResponseTypeDef](#getwirelessgatewayresponseresponsetypedef)
+  - [GetWirelessGatewayStatisticsRequestTypeDef](#getwirelessgatewaystatisticsrequesttypedef)
+  - [GetWirelessGatewayStatisticsResponseResponseTypeDef](#getwirelessgatewaystatisticsresponseresponsetypedef)
+  - [GetWirelessGatewayTaskDefinitionRequestTypeDef](#getwirelessgatewaytaskdefinitionrequesttypedef)
+  - [GetWirelessGatewayTaskDefinitionResponseResponseTypeDef](#getwirelessgatewaytaskdefinitionresponseresponsetypedef)
+  - [GetWirelessGatewayTaskRequestTypeDef](#getwirelessgatewaytaskrequesttypedef)
+  - [GetWirelessGatewayTaskResponseResponseTypeDef](#getwirelessgatewaytaskresponseresponsetypedef)
+  - [ListDestinationsRequestTypeDef](#listdestinationsrequesttypedef)
+  - [ListDestinationsResponseResponseTypeDef](#listdestinationsresponseresponsetypedef)
+  - [ListDeviceProfilesRequestTypeDef](#listdeviceprofilesrequesttypedef)
+  - [ListDeviceProfilesResponseResponseTypeDef](#listdeviceprofilesresponseresponsetypedef)
+  - [ListPartnerAccountsRequestTypeDef](#listpartneraccountsrequesttypedef)
+  - [ListPartnerAccountsResponseResponseTypeDef](#listpartneraccountsresponseresponsetypedef)
+  - [ListServiceProfilesRequestTypeDef](#listserviceprofilesrequesttypedef)
+  - [ListServiceProfilesResponseResponseTypeDef](#listserviceprofilesresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListWirelessDevicesRequestTypeDef](#listwirelessdevicesrequesttypedef)
+  - [ListWirelessDevicesResponseResponseTypeDef](#listwirelessdevicesresponseresponsetypedef)
+  - [ListWirelessGatewayTaskDefinitionsRequestTypeDef](#listwirelessgatewaytaskdefinitionsrequesttypedef)
+  - [ListWirelessGatewayTaskDefinitionsResponseResponseTypeDef](#listwirelessgatewaytaskdefinitionsresponseresponsetypedef)
+  - [ListWirelessGatewaysRequestTypeDef](#listwirelessgatewaysrequesttypedef)
+  - [ListWirelessGatewaysResponseResponseTypeDef](#listwirelessgatewaysresponseresponsetypedef)
   - [LoRaWANDeviceMetadataTypeDef](#lorawandevicemetadatatypedef)
   - [LoRaWANDeviceProfileTypeDef](#lorawandeviceprofiletypedef)
   - [LoRaWANDeviceTypeDef](#lorawandevicetypedef)
@@ -61,7 +105,11 @@ type annotations stubs module
   - [LoRaWANUpdateGatewayTaskEntryTypeDef](#lorawanupdategatewaytaskentrytypedef)
   - [OtaaV1_0_xTypeDef](#otaav1_0_xtypedef)
   - [OtaaV1_1TypeDef](#otaav1_1typedef)
-  - [SendDataToWirelessDeviceResponseTypeDef](#senddatatowirelessdeviceresponsetypedef)
+  - [PutResourceLogLevelRequestTypeDef](#putresourceloglevelrequesttypedef)
+  - [ResetResourceLogLevelRequestTypeDef](#resetresourceloglevelrequesttypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [SendDataToWirelessDeviceRequestTypeDef](#senddatatowirelessdevicerequesttypedef)
+  - [SendDataToWirelessDeviceResponseResponseTypeDef](#senddatatowirelessdeviceresponseresponsetypedef)
   - [ServiceProfileTypeDef](#serviceprofiletypedef)
   - [SessionKeysAbpV1_0_xTypeDef](#sessionkeysabpv1_0_xtypedef)
   - [SessionKeysAbpV1_1TypeDef](#sessionkeysabpv1_1typedef)
@@ -72,8 +120,16 @@ type annotations stubs module
   - [SidewalkListDeviceTypeDef](#sidewalklistdevicetypedef)
   - [SidewalkSendDataToDeviceTypeDef](#sidewalksenddatatodevicetypedef)
   - [SidewalkUpdateAccountTypeDef](#sidewalkupdateaccounttypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TagTypeDef](#tagtypedef)
-  - [TestWirelessDeviceResponseTypeDef](#testwirelessdeviceresponsetypedef)
+  - [TestWirelessDeviceRequestTypeDef](#testwirelessdevicerequesttypedef)
+  - [TestWirelessDeviceResponseResponseTypeDef](#testwirelessdeviceresponseresponsetypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateDestinationRequestTypeDef](#updatedestinationrequesttypedef)
+  - [UpdateLogLevelsByResourceTypesRequestTypeDef](#updateloglevelsbyresourcetypesrequesttypedef)
+  - [UpdatePartnerAccountRequestTypeDef](#updatepartneraccountrequesttypedef)
+  - [UpdateWirelessDeviceRequestTypeDef](#updatewirelessdevicerequesttypedef)
+  - [UpdateWirelessGatewayRequestTypeDef](#updatewirelessgatewayrequesttypedef)
   - [UpdateWirelessGatewayTaskCreateTypeDef](#updatewirelessgatewaytaskcreatetypedef)
   - [UpdateWirelessGatewayTaskEntryTypeDef](#updatewirelessgatewaytaskentrytypedef)
   - [WirelessDeviceEventLogOptionTypeDef](#wirelessdeviceeventlogoptiontypedef)
@@ -108,27 +164,80 @@ Optional fields:
 - `SessionKeys`:
   [SessionKeysAbpV1_1TypeDef](./type_defs.md#sessionkeysabpv1_1typedef)
 
-## AssociateAwsAccountWithPartnerAccountResponseTypeDef
+## AssociateAwsAccountWithPartnerAccountRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import AssociateAwsAccountWithPartnerAccountResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import AssociateAwsAccountWithPartnerAccountRequestTypeDef
 ```
 
+Required fields:
+
+- `Sidewalk`:
+  [SidewalkAccountInfoTypeDef](./type_defs.md#sidewalkaccountinfotypedef)
+
 Optional fields:
+
+- `ClientRequestToken`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## AssociateAwsAccountWithPartnerAccountResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import AssociateAwsAccountWithPartnerAccountResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Sidewalk`:
   [SidewalkAccountInfoTypeDef](./type_defs.md#sidewalkaccountinfotypedef)
 - `Arn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssociateWirelessGatewayWithCertificateResponseTypeDef
+## AssociateWirelessDeviceWithThingRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import AssociateWirelessGatewayWithCertificateResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import AssociateWirelessDeviceWithThingRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+- `ThingArn`: `str`
+
+## AssociateWirelessGatewayWithCertificateRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import AssociateWirelessGatewayWithCertificateRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `IotCertificateId`: `str`
+
+## AssociateWirelessGatewayWithCertificateResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import AssociateWirelessGatewayWithCertificateResponseResponseTypeDef
+```
+
+Required fields:
 
 - `IotCertificateId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## AssociateWirelessGatewayWithThingRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import AssociateWirelessGatewayWithThingRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `ThingArn`: `str`
 
 ## CertificateListTypeDef
 
@@ -141,83 +250,279 @@ Required fields:
 - `SigningAlg`: [SigningAlgType](./literals.md#signingalgtype)
 - `Value`: `str`
 
-## CreateDestinationResponseTypeDef
+## CreateDestinationRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import CreateDestinationResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import CreateDestinationRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+- `ExpressionType`: [ExpressionTypeType](./literals.md#expressiontypetype)
+- `Expression`: `str`
+- `RoleArn`: `str`
+
 Optional fields:
+
+- `Description`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ClientRequestToken`: `str`
+
+## CreateDestinationResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import CreateDestinationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `Name`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDeviceProfileResponseTypeDef
+## CreateDeviceProfileRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import CreateDeviceProfileResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import CreateDeviceProfileRequestTypeDef
 ```
 
 Optional fields:
+
+- `Name`: `str`
+- `LoRaWAN`:
+  [LoRaWANDeviceProfileTypeDef](./type_defs.md#lorawandeviceprofiletypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ClientRequestToken`: `str`
+
+## CreateDeviceProfileResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import CreateDeviceProfileResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `Id`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateServiceProfileResponseTypeDef
+## CreateServiceProfileRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import CreateServiceProfileResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import CreateServiceProfileRequestTypeDef
 ```
 
 Optional fields:
+
+- `Name`: `str`
+- `LoRaWAN`:
+  [LoRaWANServiceProfileTypeDef](./type_defs.md#lorawanserviceprofiletypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ClientRequestToken`: `str`
+
+## CreateServiceProfileResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import CreateServiceProfileResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `Id`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateWirelessDeviceResponseTypeDef
+## CreateWirelessDeviceRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import CreateWirelessDeviceResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import CreateWirelessDeviceRequestTypeDef
 ```
 
+Required fields:
+
+- `Type`: [WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype)
+- `DestinationName`: `str`
+
 Optional fields:
+
+- `Name`: `str`
+- `Description`: `str`
+- `ClientRequestToken`: `str`
+- `LoRaWAN`: [LoRaWANDeviceTypeDef](./type_defs.md#lorawandevicetypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateWirelessDeviceResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import CreateWirelessDeviceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `Id`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateWirelessGatewayResponseTypeDef
+## CreateWirelessGatewayRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import CreateWirelessGatewayResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import CreateWirelessGatewayRequestTypeDef
 ```
 
+Required fields:
+
+- `LoRaWAN`: [LoRaWANGatewayTypeDef](./type_defs.md#lorawangatewaytypedef)
+
 Optional fields:
+
+- `Name`: `str`
+- `Description`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ClientRequestToken`: `str`
+
+## CreateWirelessGatewayResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import CreateWirelessGatewayResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `Id`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateWirelessGatewayTaskDefinitionResponseTypeDef
+## CreateWirelessGatewayTaskDefinitionRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import CreateWirelessGatewayTaskDefinitionResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import CreateWirelessGatewayTaskDefinitionRequestTypeDef
 ```
 
+Required fields:
+
+- `AutoCreateTasks`: `bool`
+
 Optional fields:
+
+- `Name`: `str`
+- `Update`:
+  [UpdateWirelessGatewayTaskCreateTypeDef](./type_defs.md#updatewirelessgatewaytaskcreatetypedef)
+- `ClientRequestToken`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateWirelessGatewayTaskDefinitionResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import CreateWirelessGatewayTaskDefinitionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Id`: `str`
 - `Arn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateWirelessGatewayTaskResponseTypeDef
+## CreateWirelessGatewayTaskRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import CreateWirelessGatewayTaskResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import CreateWirelessGatewayTaskRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+- `WirelessGatewayTaskDefinitionId`: `str`
+
+## CreateWirelessGatewayTaskResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import CreateWirelessGatewayTaskResponseResponseTypeDef
+```
+
+Required fields:
 
 - `WirelessGatewayTaskDefinitionId`: `str`
 - `Status`:
   [WirelessGatewayTaskStatusType](./literals.md#wirelessgatewaytaskstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteDestinationRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import DeleteDestinationRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+## DeleteDeviceProfileRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import DeleteDeviceProfileRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## DeleteServiceProfileRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import DeleteServiceProfileRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## DeleteWirelessDeviceRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import DeleteWirelessDeviceRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## DeleteWirelessGatewayRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import DeleteWirelessGatewayRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## DeleteWirelessGatewayTaskDefinitionRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import DeleteWirelessGatewayTaskDefinitionRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## DeleteWirelessGatewayTaskRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import DeleteWirelessGatewayTaskRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
 
 ## DestinationsTypeDef
 
@@ -246,13 +551,65 @@ Optional fields:
 - `Name`: `str`
 - `Id`: `str`
 
-## GetDestinationResponseTypeDef
+## DisassociateAwsAccountFromPartnerAccountRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import GetDestinationResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import DisassociateAwsAccountFromPartnerAccountRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `PartnerAccountId`: `str`
+- `PartnerType`: `Literal['Sidewalk']` (see
+  [PartnerTypeType](./literals.md#partnertypetype))
+
+## DisassociateWirelessDeviceFromThingRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import DisassociateWirelessDeviceFromThingRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## DisassociateWirelessGatewayFromCertificateRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import DisassociateWirelessGatewayFromCertificateRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## DisassociateWirelessGatewayFromThingRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import DisassociateWirelessGatewayFromThingRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## GetDestinationRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import GetDestinationRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+## GetDestinationResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import GetDestinationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `Name`: `str`
@@ -260,91 +617,171 @@ Optional fields:
 - `ExpressionType`: [ExpressionTypeType](./literals.md#expressiontypetype)
 - `Description`: `str`
 - `RoleArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDeviceProfileResponseTypeDef
+## GetDeviceProfileRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import GetDeviceProfileResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import GetDeviceProfileRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## GetDeviceProfileResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import GetDeviceProfileResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `Name`: `str`
 - `Id`: `str`
 - `LoRaWAN`:
   [LoRaWANDeviceProfileTypeDef](./type_defs.md#lorawandeviceprofiletypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLogLevelsByResourceTypesResponseTypeDef
+## GetLogLevelsByResourceTypesResponseResponseTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import GetLogLevelsByResourceTypesResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import GetLogLevelsByResourceTypesResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `DefaultLogLevel`: [LogLevelType](./literals.md#logleveltype)
 - `WirelessGatewayLogOptions`:
   `List`\[[WirelessGatewayLogOptionTypeDef](./type_defs.md#wirelessgatewaylogoptiontypedef)\]
 - `WirelessDeviceLogOptions`:
   `List`\[[WirelessDeviceLogOptionTypeDef](./type_defs.md#wirelessdevicelogoptiontypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPartnerAccountResponseTypeDef
+## GetPartnerAccountRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import GetPartnerAccountResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import GetPartnerAccountRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `PartnerAccountId`: `str`
+- `PartnerType`: `Literal['Sidewalk']` (see
+  [PartnerTypeType](./literals.md#partnertypetype))
+
+## GetPartnerAccountResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import GetPartnerAccountResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Sidewalk`:
   [SidewalkAccountInfoWithFingerprintTypeDef](./type_defs.md#sidewalkaccountinfowithfingerprinttypedef)
 - `AccountLinked`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResourceLogLevelResponseTypeDef
+## GetResourceLogLevelRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import GetResourceLogLevelResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import GetResourceLogLevelRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
-- `LogLevel`: [LogLevelType](./literals.md#logleveltype)
+- `ResourceIdentifier`: `str`
+- `ResourceType`: `str`
 
-## GetServiceEndpointResponseTypeDef
+## GetResourceLogLevelResponseResponseTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import GetServiceEndpointResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import GetResourceLogLevelResponseResponseTypeDef
+```
+
+Required fields:
+
+- `LogLevel`: [LogLevelType](./literals.md#logleveltype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetServiceEndpointRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import GetServiceEndpointRequestTypeDef
 ```
 
 Optional fields:
 
 - `ServiceType`:
   [WirelessGatewayServiceTypeType](./literals.md#wirelessgatewayservicetypetype)
-- `ServiceEndpoint`: `str`
-- `ServerTrust`: `str`
 
-## GetServiceProfileResponseTypeDef
+## GetServiceEndpointResponseResponseTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import GetServiceProfileResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import GetServiceEndpointResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ServiceType`:
+  [WirelessGatewayServiceTypeType](./literals.md#wirelessgatewayservicetypetype)
+- `ServiceEndpoint`: `str`
+- `ServerTrust`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetServiceProfileRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import GetServiceProfileRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## GetServiceProfileResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import GetServiceProfileResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `Name`: `str`
 - `Id`: `str`
 - `LoRaWAN`:
   [LoRaWANGetServiceProfileInfoTypeDef](./type_defs.md#lorawangetserviceprofileinfotypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetWirelessDeviceResponseTypeDef
+## GetWirelessDeviceRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import GetWirelessDeviceResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import GetWirelessDeviceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Identifier`: `str`
+- `IdentifierType`:
+  [WirelessDeviceIdTypeType](./literals.md#wirelessdeviceidtypetype)
+
+## GetWirelessDeviceResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import GetWirelessDeviceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Type`: [WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype)
 - `Name`: `str`
@@ -356,14 +793,26 @@ Optional fields:
 - `ThingArn`: `str`
 - `LoRaWAN`: [LoRaWANDeviceTypeDef](./type_defs.md#lorawandevicetypedef)
 - `Sidewalk`: [SidewalkDeviceTypeDef](./type_defs.md#sidewalkdevicetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetWirelessDeviceStatisticsResponseTypeDef
+## GetWirelessDeviceStatisticsRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import GetWirelessDeviceStatisticsResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import GetWirelessDeviceStatisticsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `WirelessDeviceId`: `str`
+
+## GetWirelessDeviceStatisticsResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import GetWirelessDeviceStatisticsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `WirelessDeviceId`: `str`
 - `LastUplinkReceivedAt`: `str`
@@ -371,36 +820,74 @@ Optional fields:
   [LoRaWANDeviceMetadataTypeDef](./type_defs.md#lorawandevicemetadatatypedef)
 - `Sidewalk`:
   [SidewalkDeviceMetadataTypeDef](./type_defs.md#sidewalkdevicemetadatatypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetWirelessGatewayCertificateResponseTypeDef
+## GetWirelessGatewayCertificateRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayCertificateResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayCertificateRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## GetWirelessGatewayCertificateResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayCertificateResponseResponseTypeDef
+```
+
+Required fields:
 
 - `IotCertificateId`: `str`
 - `LoRaWANNetworkServerCertificateId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetWirelessGatewayFirmwareInformationResponseTypeDef
+## GetWirelessGatewayFirmwareInformationRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayFirmwareInformationResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayFirmwareInformationRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## GetWirelessGatewayFirmwareInformationResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayFirmwareInformationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `LoRaWAN`:
   [LoRaWANGatewayCurrentVersionTypeDef](./type_defs.md#lorawangatewaycurrentversiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetWirelessGatewayResponseTypeDef
+## GetWirelessGatewayRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Identifier`: `str`
+- `IdentifierType`:
+  [WirelessGatewayIdTypeType](./literals.md#wirelessgatewayidtypetype)
+
+## GetWirelessGatewayResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Name`: `str`
 - `Id`: `str`
@@ -409,41 +896,77 @@ Optional fields:
 - `Arn`: `str`
 - `ThingName`: `str`
 - `ThingArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetWirelessGatewayStatisticsResponseTypeDef
+## GetWirelessGatewayStatisticsRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayStatisticsResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayStatisticsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `WirelessGatewayId`: `str`
+
+## GetWirelessGatewayStatisticsResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayStatisticsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `WirelessGatewayId`: `str`
 - `LastUplinkReceivedAt`: `str`
 - `ConnectionStatus`:
   [ConnectionStatusType](./literals.md#connectionstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetWirelessGatewayTaskDefinitionResponseTypeDef
+## GetWirelessGatewayTaskDefinitionRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayTaskDefinitionResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayTaskDefinitionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## GetWirelessGatewayTaskDefinitionResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayTaskDefinitionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AutoCreateTasks`: `bool`
 - `Name`: `str`
 - `Update`:
   [UpdateWirelessGatewayTaskCreateTypeDef](./type_defs.md#updatewirelessgatewaytaskcreatetypedef)
 - `Arn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetWirelessGatewayTaskResponseTypeDef
+## GetWirelessGatewayTaskRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayTaskResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayTaskRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## GetWirelessGatewayTaskResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayTaskResponseResponseTypeDef
+```
+
+Required fields:
 
 - `WirelessGatewayId`: `str`
 - `WirelessGatewayTaskDefinitionId`: `str`
@@ -451,100 +974,212 @@ Optional fields:
 - `TaskCreatedAt`: `str`
 - `Status`:
   [WirelessGatewayTaskStatusType](./literals.md#wirelessgatewaytaskstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDestinationsResponseTypeDef
+## ListDestinationsRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import ListDestinationsResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import ListDestinationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListDestinationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import ListDestinationsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `DestinationList`:
   `List`\[[DestinationsTypeDef](./type_defs.md#destinationstypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDeviceProfilesResponseTypeDef
+## ListDeviceProfilesRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import ListDeviceProfilesResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import ListDeviceProfilesRequestTypeDef
 ```
 
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListDeviceProfilesResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import ListDeviceProfilesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `DeviceProfileList`:
   `List`\[[DeviceProfileTypeDef](./type_defs.md#deviceprofiletypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPartnerAccountsResponseTypeDef
+## ListPartnerAccountsRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import ListPartnerAccountsResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import ListPartnerAccountsRequestTypeDef
 ```
 
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListPartnerAccountsResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import ListPartnerAccountsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `Sidewalk`:
   `List`\[[SidewalkAccountInfoWithFingerprintTypeDef](./type_defs.md#sidewalkaccountinfowithfingerprinttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListServiceProfilesResponseTypeDef
+## ListServiceProfilesRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import ListServiceProfilesResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import ListServiceProfilesRequestTypeDef
 ```
 
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListServiceProfilesResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import ListServiceProfilesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `ServiceProfileList`:
   `List`\[[ServiceProfileTypeDef](./type_defs.md#serviceprofiletypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceArn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListWirelessDevicesResponseTypeDef
+## ListWirelessDevicesRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import ListWirelessDevicesResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import ListWirelessDevicesRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DestinationName`: `str`
+- `DeviceProfileId`: `str`
+- `ServiceProfileId`: `str`
+- `WirelessDeviceType`:
+  [WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype)
+
+## ListWirelessDevicesResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import ListWirelessDevicesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `WirelessDeviceList`:
   `List`\[[WirelessDeviceStatisticsTypeDef](./type_defs.md#wirelessdevicestatisticstypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListWirelessGatewayTaskDefinitionsResponseTypeDef
+## ListWirelessGatewayTaskDefinitionsRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import ListWirelessGatewayTaskDefinitionsResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import ListWirelessGatewayTaskDefinitionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `TaskDefinitionType`: `Literal['UPDATE']` (see
+  [WirelessGatewayTaskDefinitionTypeType](./literals.md#wirelessgatewaytaskdefinitiontypetype))
+
+## ListWirelessGatewayTaskDefinitionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import ListWirelessGatewayTaskDefinitionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `TaskDefinitions`:
   `List`\[[UpdateWirelessGatewayTaskEntryTypeDef](./type_defs.md#updatewirelessgatewaytaskentrytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListWirelessGatewaysResponseTypeDef
+## ListWirelessGatewaysRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import ListWirelessGatewaysResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import ListWirelessGatewaysRequestTypeDef
 ```
 
 Optional fields:
 
 - `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListWirelessGatewaysResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import ListWirelessGatewaysResponseResponseTypeDef
+```
+
+Required fields:
+
+- `NextToken`: `str`
 - `WirelessGatewayList`:
   `List`\[[WirelessGatewayStatisticsTypeDef](./type_defs.md#wirelessgatewaystatisticstypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LoRaWANDeviceMetadataTypeDef
 
@@ -775,15 +1410,71 @@ Optional fields:
 - `NwkKey`: `str`
 - `JoinEui`: `str`
 
-## SendDataToWirelessDeviceResponseTypeDef
+## PutResourceLogLevelRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import SendDataToWirelessDeviceResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import PutResourceLogLevelRequestTypeDef
 ```
+
+Required fields:
+
+- `ResourceIdentifier`: `str`
+- `ResourceType`: `str`
+- `LogLevel`: [LogLevelType](./literals.md#logleveltype)
+
+## ResetResourceLogLevelRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import ResetResourceLogLevelRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceIdentifier`: `str`
+- `ResourceType`: `str`
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## SendDataToWirelessDeviceRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import SendDataToWirelessDeviceRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `TransmitMode`: `int`
+- `PayloadData`: `str`
 
 Optional fields:
 
+- `WirelessMetadata`:
+  [WirelessMetadataTypeDef](./type_defs.md#wirelessmetadatatypedef)
+
+## SendDataToWirelessDeviceResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import SendDataToWirelessDeviceResponseResponseTypeDef
+```
+
+Required fields:
+
 - `MessageId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ServiceProfileTypeDef
 
@@ -905,6 +1596,17 @@ Optional fields:
 
 - `AppServerPrivateKey`: `str`
 
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
 ## TagTypeDef
 
 ```python
@@ -916,15 +1618,118 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## TestWirelessDeviceResponseTypeDef
+## TestWirelessDeviceRequestTypeDef
 
 ```python
-from mypy_boto3_iotwireless.type_defs import TestWirelessDeviceResponseTypeDef
+from mypy_boto3_iotwireless.type_defs import TestWirelessDeviceRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## TestWirelessDeviceResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import TestWirelessDeviceResponseResponseTypeDef
+```
+
+Required fields:
+
+- `Result`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UntagResourceRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## UpdateDestinationRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import UpdateDestinationRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+Optional fields:
+
+- `ExpressionType`: [ExpressionTypeType](./literals.md#expressiontypetype)
+- `Expression`: `str`
+- `Description`: `str`
+- `RoleArn`: `str`
+
+## UpdateLogLevelsByResourceTypesRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import UpdateLogLevelsByResourceTypesRequestTypeDef
 ```
 
 Optional fields:
 
-- `Result`: `str`
+- `DefaultLogLevel`: [LogLevelType](./literals.md#logleveltype)
+- `WirelessDeviceLogOptions`:
+  `List`\[[WirelessDeviceLogOptionTypeDef](./type_defs.md#wirelessdevicelogoptiontypedef)\]
+- `WirelessGatewayLogOptions`:
+  `List`\[[WirelessGatewayLogOptionTypeDef](./type_defs.md#wirelessgatewaylogoptiontypedef)\]
+
+## UpdatePartnerAccountRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import UpdatePartnerAccountRequestTypeDef
+```
+
+Required fields:
+
+- `Sidewalk`:
+  [SidewalkUpdateAccountTypeDef](./type_defs.md#sidewalkupdateaccounttypedef)
+- `PartnerAccountId`: `str`
+- `PartnerType`: `Literal['Sidewalk']` (see
+  [PartnerTypeType](./literals.md#partnertypetype))
+
+## UpdateWirelessDeviceRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import UpdateWirelessDeviceRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+Optional fields:
+
+- `DestinationName`: `str`
+- `Name`: `str`
+- `Description`: `str`
+- `LoRaWAN`:
+  [LoRaWANUpdateDeviceTypeDef](./type_defs.md#lorawanupdatedevicetypedef)
+
+## UpdateWirelessGatewayRequestTypeDef
+
+```python
+from mypy_boto3_iotwireless.type_defs import UpdateWirelessGatewayRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+- `Description`: `str`
+- `JoinEuiFilters`: `List`\[`List`\[`str`\]\]
+- `NetIdFilters`: `List`\[`str`\]
 
 ## UpdateWirelessGatewayTaskCreateTypeDef
 

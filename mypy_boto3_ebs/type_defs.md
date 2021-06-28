@@ -10,12 +10,19 @@ type annotations stubs module
 - [Typed dictionaries for boto3 EBS module](#typed-dictionaries-for-boto3-ebs-module)
   - [BlockTypeDef](#blocktypedef)
   - [ChangedBlockTypeDef](#changedblocktypedef)
-  - [CompleteSnapshotResponseTypeDef](#completesnapshotresponsetypedef)
-  - [GetSnapshotBlockResponseTypeDef](#getsnapshotblockresponsetypedef)
-  - [ListChangedBlocksResponseTypeDef](#listchangedblocksresponsetypedef)
-  - [ListSnapshotBlocksResponseTypeDef](#listsnapshotblocksresponsetypedef)
-  - [PutSnapshotBlockResponseTypeDef](#putsnapshotblockresponsetypedef)
-  - [StartSnapshotResponseTypeDef](#startsnapshotresponsetypedef)
+  - [CompleteSnapshotRequestTypeDef](#completesnapshotrequesttypedef)
+  - [CompleteSnapshotResponseResponseTypeDef](#completesnapshotresponseresponsetypedef)
+  - [GetSnapshotBlockRequestTypeDef](#getsnapshotblockrequesttypedef)
+  - [GetSnapshotBlockResponseResponseTypeDef](#getsnapshotblockresponseresponsetypedef)
+  - [ListChangedBlocksRequestTypeDef](#listchangedblocksrequesttypedef)
+  - [ListChangedBlocksResponseResponseTypeDef](#listchangedblocksresponseresponsetypedef)
+  - [ListSnapshotBlocksRequestTypeDef](#listsnapshotblocksrequesttypedef)
+  - [ListSnapshotBlocksResponseResponseTypeDef](#listsnapshotblocksresponseresponsetypedef)
+  - [PutSnapshotBlockRequestTypeDef](#putsnapshotblockrequesttypedef)
+  - [PutSnapshotBlockResponseResponseTypeDef](#putsnapshotblockresponseresponsetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [StartSnapshotRequestTypeDef](#startsnapshotrequesttypedef)
+  - [StartSnapshotResponseResponseTypeDef](#startsnapshotresponseresponsetypedef)
   - [TagTypeDef](#tagtypedef)
 
 ## BlockTypeDef
@@ -41,37 +48,89 @@ Optional fields:
 - `FirstBlockToken`: `str`
 - `SecondBlockToken`: `str`
 
-## CompleteSnapshotResponseTypeDef
+## CompleteSnapshotRequestTypeDef
 
 ```python
-from mypy_boto3_ebs.type_defs import CompleteSnapshotResponseTypeDef
+from mypy_boto3_ebs.type_defs import CompleteSnapshotRequestTypeDef
 ```
 
+Required fields:
+
+- `SnapshotId`: `str`
+- `ChangedBlocksCount`: `int`
+
 Optional fields:
+
+- `Checksum`: `str`
+- `ChecksumAlgorithm`: `Literal['SHA256']` (see
+  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype))
+- `ChecksumAggregationMethod`: `Literal['LINEAR']` (see
+  [ChecksumAggregationMethodType](./literals.md#checksumaggregationmethodtype))
+
+## CompleteSnapshotResponseResponseTypeDef
+
+```python
+from mypy_boto3_ebs.type_defs import CompleteSnapshotResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Status`: [StatusType](./literals.md#statustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSnapshotBlockResponseTypeDef
+## GetSnapshotBlockRequestTypeDef
 
 ```python
-from mypy_boto3_ebs.type_defs import GetSnapshotBlockResponseTypeDef
+from mypy_boto3_ebs.type_defs import GetSnapshotBlockRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `SnapshotId`: `str`
+- `BlockIndex`: `int`
+- `BlockToken`: `str`
+
+## GetSnapshotBlockResponseResponseTypeDef
+
+```python
+from mypy_boto3_ebs.type_defs import GetSnapshotBlockResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DataLength`: `int`
 - `BlockData`: `StreamingBody`
 - `Checksum`: `str`
 - `ChecksumAlgorithm`: `Literal['SHA256']` (see
   [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype))
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListChangedBlocksResponseTypeDef
+## ListChangedBlocksRequestTypeDef
 
 ```python
-from mypy_boto3_ebs.type_defs import ListChangedBlocksResponseTypeDef
+from mypy_boto3_ebs.type_defs import ListChangedBlocksRequestTypeDef
 ```
 
+Required fields:
+
+- `SecondSnapshotId`: `str`
+
 Optional fields:
+
+- `FirstSnapshotId`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `StartingBlockIndex`: `int`
+
+## ListChangedBlocksResponseResponseTypeDef
+
+```python
+from mypy_boto3_ebs.type_defs import ListChangedBlocksResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ChangedBlocks`:
   `List`\[[ChangedBlockTypeDef](./type_defs.md#changedblocktypedef)\]
@@ -79,40 +138,116 @@ Optional fields:
 - `VolumeSize`: `int`
 - `BlockSize`: `int`
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSnapshotBlocksResponseTypeDef
+## ListSnapshotBlocksRequestTypeDef
 
 ```python
-from mypy_boto3_ebs.type_defs import ListSnapshotBlocksResponseTypeDef
+from mypy_boto3_ebs.type_defs import ListSnapshotBlocksRequestTypeDef
 ```
 
+Required fields:
+
+- `SnapshotId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `StartingBlockIndex`: `int`
+
+## ListSnapshotBlocksResponseResponseTypeDef
+
+```python
+from mypy_boto3_ebs.type_defs import ListSnapshotBlocksResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Blocks`: `List`\[[BlockTypeDef](./type_defs.md#blocktypedef)\]
 - `ExpiryTime`: `datetime`
 - `VolumeSize`: `int`
 - `BlockSize`: `int`
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutSnapshotBlockResponseTypeDef
+## PutSnapshotBlockRequestTypeDef
 
 ```python
-from mypy_boto3_ebs.type_defs import PutSnapshotBlockResponseTypeDef
+from mypy_boto3_ebs.type_defs import PutSnapshotBlockRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
+- `SnapshotId`: `str`
+- `BlockIndex`: `int`
+- `BlockData`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `DataLength`: `int`
 - `Checksum`: `str`
 - `ChecksumAlgorithm`: `Literal['SHA256']` (see
   [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype))
 
-## StartSnapshotResponseTypeDef
+Optional fields:
+
+- `Progress`: `int`
+
+## PutSnapshotBlockResponseResponseTypeDef
 
 ```python
-from mypy_boto3_ebs.type_defs import StartSnapshotResponseTypeDef
+from mypy_boto3_ebs.type_defs import PutSnapshotBlockResponseResponseTypeDef
 ```
 
+Required fields:
+
+- `Checksum`: `str`
+- `ChecksumAlgorithm`: `Literal['SHA256']` (see
+  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype))
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_ebs.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## StartSnapshotRequestTypeDef
+
+```python
+from mypy_boto3_ebs.type_defs import StartSnapshotRequestTypeDef
+```
+
+Required fields:
+
+- `VolumeSize`: `int`
+
 Optional fields:
+
+- `ParentSnapshotId`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Description`: `str`
+- `ClientToken`: `str`
+- `Encrypted`: `bool`
+- `KmsKeyArn`: `str`
+- `Timeout`: `int`
+
+## StartSnapshotResponseResponseTypeDef
+
+```python
+from mypy_boto3_ebs.type_defs import StartSnapshotResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Description`: `str`
 - `SnapshotId`: `str`
@@ -124,6 +259,8 @@ Optional fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ParentSnapshotId`: `str`
 - `KmsKeyArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## TagTypeDef
 

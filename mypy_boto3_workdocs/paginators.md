@@ -38,8 +38,8 @@ Boto3 documentation:
 Arguments for `DescribeActivitiesPaginator.paginate` method:
 
 - `AuthenticationToken`: `str`
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
 - `OrganizationId`: `str`
 - `ActivityTypes`: `str`
 - `ResourceId`: `str`
@@ -49,7 +49,7 @@ Arguments for `DescribeActivitiesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeActivitiesPaginator.paginate` returns
-`Iterator`\[[DescribeActivitiesResponseTypeDef](./type_defs.md#describeactivitiesresponsetypedef)\].
+`Iterator`\[[DescribeActivitiesResponseResponseTypeDef](./type_defs.md#describeactivitiesresponseresponsetypedef)\].
 
 ## DescribeCommentsPaginator
 
@@ -77,7 +77,7 @@ Arguments for `DescribeCommentsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCommentsPaginator.paginate` returns
-`Iterator`\[[DescribeCommentsResponseTypeDef](./type_defs.md#describecommentsresponsetypedef)\].
+`Iterator`\[[DescribeCommentsResponseResponseTypeDef](./type_defs.md#describecommentsresponseresponsetypedef)\].
 
 ## DescribeDocumentVersionsPaginator
 
@@ -106,7 +106,7 @@ Arguments for `DescribeDocumentVersionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDocumentVersionsPaginator.paginate` returns
-`Iterator`\[[DescribeDocumentVersionsResponseTypeDef](./type_defs.md#describedocumentversionsresponsetypedef)\].
+`Iterator`\[[DescribeDocumentVersionsResponseResponseTypeDef](./type_defs.md#describedocumentversionsresponseresponsetypedef)\].
 
 ## DescribeFolderContentsPaginator
 
@@ -137,7 +137,7 @@ Arguments for `DescribeFolderContentsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeFolderContentsPaginator.paginate` returns
-`Iterator`\[[DescribeFolderContentsResponseTypeDef](./type_defs.md#describefoldercontentsresponsetypedef)\].
+`Iterator`\[[DescribeFolderContentsResponseResponseTypeDef](./type_defs.md#describefoldercontentsresponseresponsetypedef)\].
 
 ## DescribeGroupsPaginator
 
@@ -165,7 +165,7 @@ Arguments for `DescribeGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeGroupsResponseTypeDef](./type_defs.md#describegroupsresponsetypedef)\].
+`Iterator`\[[DescribeGroupsResponseResponseTypeDef](./type_defs.md#describegroupsresponseresponsetypedef)\].
 
 ## DescribeNotificationSubscriptionsPaginator
 
@@ -191,7 +191,7 @@ Arguments for `DescribeNotificationSubscriptionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeNotificationSubscriptionsPaginator.paginate` returns
-`Iterator`\[[DescribeNotificationSubscriptionsResponseTypeDef](./type_defs.md#describenotificationsubscriptionsresponsetypedef)\].
+`Iterator`\[[DescribeNotificationSubscriptionsResponseResponseTypeDef](./type_defs.md#describenotificationsubscriptionsresponseresponsetypedef)\].
 
 ## DescribeResourcePermissionsPaginator
 
@@ -219,7 +219,7 @@ Arguments for `DescribeResourcePermissionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeResourcePermissionsPaginator.paginate` returns
-`Iterator`\[[DescribeResourcePermissionsResponseTypeDef](./type_defs.md#describeresourcepermissionsresponsetypedef)\].
+`Iterator`\[[DescribeResourcePermissionsResponseResponseTypeDef](./type_defs.md#describeresourcepermissionsresponseresponsetypedef)\].
 
 ## DescribeRootFoldersPaginator
 
@@ -245,7 +245,7 @@ Arguments for `DescribeRootFoldersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeRootFoldersPaginator.paginate` returns
-`Iterator`\[[DescribeRootFoldersResponseTypeDef](./type_defs.md#describerootfoldersresponsetypedef)\].
+`Iterator`\[[DescribeRootFoldersResponseResponseTypeDef](./type_defs.md#describerootfoldersresponseresponsetypedef)\].
 
 ## DescribeUsersPaginator
 
@@ -278,4 +278,4 @@ Arguments for `DescribeUsersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeUsersPaginator.paginate` returns
-`Iterator`\[[DescribeUsersResponseTypeDef](./type_defs.md#describeusersresponsetypedef)\].
+`Iterator`\[[DescribeUsersResponseResponseTypeDef](./type_defs.md#describeusersresponseresponsetypedef)\].

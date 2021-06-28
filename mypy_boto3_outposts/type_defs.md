@@ -8,21 +8,49 @@ type annotations stubs module
 [mypy_boto3_outposts](https://pypi.org/project/mypy-boto3-outposts/).
 
 - [Typed dictionaries for boto3 Outposts module](#typed-dictionaries-for-boto3-outposts-module)
-  - [CreateOutpostOutputTypeDef](#createoutpostoutputtypedef)
-  - [GetOutpostInstanceTypesOutputTypeDef](#getoutpostinstancetypesoutputtypedef)
-  - [GetOutpostOutputTypeDef](#getoutpostoutputtypedef)
+  - [CreateOutpostInputTypeDef](#createoutpostinputtypedef)
+  - [CreateOutpostOutputResponseTypeDef](#createoutpostoutputresponsetypedef)
+  - [DeleteOutpostInputTypeDef](#deleteoutpostinputtypedef)
+  - [DeleteSiteInputTypeDef](#deletesiteinputtypedef)
+  - [GetOutpostInputTypeDef](#getoutpostinputtypedef)
+  - [GetOutpostInstanceTypesInputTypeDef](#getoutpostinstancetypesinputtypedef)
+  - [GetOutpostInstanceTypesOutputResponseTypeDef](#getoutpostinstancetypesoutputresponsetypedef)
+  - [GetOutpostOutputResponseTypeDef](#getoutpostoutputresponsetypedef)
   - [InstanceTypeItemTypeDef](#instancetypeitemtypedef)
-  - [ListOutpostsOutputTypeDef](#listoutpostsoutputtypedef)
-  - [ListSitesOutputTypeDef](#listsitesoutputtypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListOutpostsInputTypeDef](#listoutpostsinputtypedef)
+  - [ListOutpostsOutputResponseTypeDef](#listoutpostsoutputresponsetypedef)
+  - [ListSitesInputTypeDef](#listsitesinputtypedef)
+  - [ListSitesOutputResponseTypeDef](#listsitesoutputresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [OutpostTypeDef](#outposttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SiteTypeDef](#sitetypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
 
-## CreateOutpostOutputTypeDef
+## CreateOutpostInputTypeDef
 
 ```python
-from mypy_boto3_outposts.type_defs import CreateOutpostOutputTypeDef
+from mypy_boto3_outposts.type_defs import CreateOutpostInputTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `SiteId`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+- `AvailabilityZone`: `str`
+- `AvailabilityZoneId`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## CreateOutpostOutputResponseTypeDef
+
+```python
+from mypy_boto3_outposts.type_defs import CreateOutpostOutputResponseTypeDef
 ```
 
 Required fields:
@@ -31,10 +59,55 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetOutpostInstanceTypesOutputTypeDef
+## DeleteOutpostInputTypeDef
 
 ```python
-from mypy_boto3_outposts.type_defs import GetOutpostInstanceTypesOutputTypeDef
+from mypy_boto3_outposts.type_defs import DeleteOutpostInputTypeDef
+```
+
+Required fields:
+
+- `OutpostId`: `str`
+
+## DeleteSiteInputTypeDef
+
+```python
+from mypy_boto3_outposts.type_defs import DeleteSiteInputTypeDef
+```
+
+Required fields:
+
+- `SiteId`: `str`
+
+## GetOutpostInputTypeDef
+
+```python
+from mypy_boto3_outposts.type_defs import GetOutpostInputTypeDef
+```
+
+Required fields:
+
+- `OutpostId`: `str`
+
+## GetOutpostInstanceTypesInputTypeDef
+
+```python
+from mypy_boto3_outposts.type_defs import GetOutpostInstanceTypesInputTypeDef
+```
+
+Required fields:
+
+- `OutpostId`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## GetOutpostInstanceTypesOutputResponseTypeDef
+
+```python
+from mypy_boto3_outposts.type_defs import GetOutpostInstanceTypesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -47,10 +120,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetOutpostOutputTypeDef
+## GetOutpostOutputResponseTypeDef
 
 ```python
-from mypy_boto3_outposts.type_defs import GetOutpostOutputTypeDef
+from mypy_boto3_outposts.type_defs import GetOutpostOutputResponseTypeDef
 ```
 
 Required fields:
@@ -69,10 +142,21 @@ Optional fields:
 
 - `InstanceType`: `str`
 
-## ListOutpostsOutputTypeDef
+## ListOutpostsInputTypeDef
 
 ```python
-from mypy_boto3_outposts.type_defs import ListOutpostsOutputTypeDef
+from mypy_boto3_outposts.type_defs import ListOutpostsInputTypeDef
+```
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListOutpostsOutputResponseTypeDef
+
+```python
+from mypy_boto3_outposts.type_defs import ListOutpostsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -82,10 +166,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSitesOutputTypeDef
+## ListSitesInputTypeDef
 
 ```python
-from mypy_boto3_outposts.type_defs import ListSitesOutputTypeDef
+from mypy_boto3_outposts.type_defs import ListSitesInputTypeDef
+```
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListSitesOutputResponseTypeDef
+
+```python
+from mypy_boto3_outposts.type_defs import ListSitesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -95,15 +190,27 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_outposts.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_outposts.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceArn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_outposts.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## OutpostTypeDef
 
@@ -153,3 +260,25 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `SiteArn`: `str`
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_outposts.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## UntagResourceRequestTypeDef
+
+```python
+from mypy_boto3_outposts.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `TagKeys`: `List`\[`str`\]

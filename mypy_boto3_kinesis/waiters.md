@@ -25,7 +25,7 @@ def get_stream_exists_waiter() -> StreamExistsWaiter:
 ```
 
 Boto3 documentation:
-[Kinesis.Waiter.stream_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Waiter.stream_exists)
+[Kinesis.Waiter.stream_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Waiter.StreamExists)
 
 Arguments for `StreamExistsWaiter.wait` method:
 
@@ -48,7 +48,7 @@ def get_stream_not_exists_waiter() -> StreamNotExistsWaiter:
 ```
 
 Boto3 documentation:
-[Kinesis.Waiter.stream_not_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Waiter.stream_not_exists)
+[Kinesis.Waiter.stream_not_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Waiter.StreamNotExists)
 
 Arguments for `StreamNotExistsWaiter.wait` method:
 

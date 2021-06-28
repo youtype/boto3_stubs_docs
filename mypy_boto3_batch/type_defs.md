@@ -13,6 +13,7 @@ type annotations stubs module
   - [ArrayPropertiesTypeDef](#arraypropertiestypedef)
   - [AttemptContainerDetailTypeDef](#attemptcontainerdetailtypedef)
   - [AttemptDetailTypeDef](#attemptdetailtypedef)
+  - [CancelJobRequestTypeDef](#canceljobrequesttypedef)
   - [ComputeEnvironmentDetailTypeDef](#computeenvironmentdetailtypedef)
   - [ComputeEnvironmentOrderTypeDef](#computeenvironmentordertypedef)
   - [ComputeResourceTypeDef](#computeresourcetypedef)
@@ -21,12 +22,21 @@ type annotations stubs module
   - [ContainerOverridesTypeDef](#containeroverridestypedef)
   - [ContainerPropertiesTypeDef](#containerpropertiestypedef)
   - [ContainerSummaryTypeDef](#containersummarytypedef)
-  - [CreateComputeEnvironmentResponseTypeDef](#createcomputeenvironmentresponsetypedef)
-  - [CreateJobQueueResponseTypeDef](#createjobqueueresponsetypedef)
-  - [DescribeComputeEnvironmentsResponseTypeDef](#describecomputeenvironmentsresponsetypedef)
-  - [DescribeJobDefinitionsResponseTypeDef](#describejobdefinitionsresponsetypedef)
-  - [DescribeJobQueuesResponseTypeDef](#describejobqueuesresponsetypedef)
-  - [DescribeJobsResponseTypeDef](#describejobsresponsetypedef)
+  - [CreateComputeEnvironmentRequestTypeDef](#createcomputeenvironmentrequesttypedef)
+  - [CreateComputeEnvironmentResponseResponseTypeDef](#createcomputeenvironmentresponseresponsetypedef)
+  - [CreateJobQueueRequestTypeDef](#createjobqueuerequesttypedef)
+  - [CreateJobQueueResponseResponseTypeDef](#createjobqueueresponseresponsetypedef)
+  - [DeleteComputeEnvironmentRequestTypeDef](#deletecomputeenvironmentrequesttypedef)
+  - [DeleteJobQueueRequestTypeDef](#deletejobqueuerequesttypedef)
+  - [DeregisterJobDefinitionRequestTypeDef](#deregisterjobdefinitionrequesttypedef)
+  - [DescribeComputeEnvironmentsRequestTypeDef](#describecomputeenvironmentsrequesttypedef)
+  - [DescribeComputeEnvironmentsResponseResponseTypeDef](#describecomputeenvironmentsresponseresponsetypedef)
+  - [DescribeJobDefinitionsRequestTypeDef](#describejobdefinitionsrequesttypedef)
+  - [DescribeJobDefinitionsResponseResponseTypeDef](#describejobdefinitionsresponseresponsetypedef)
+  - [DescribeJobQueuesRequestTypeDef](#describejobqueuesrequesttypedef)
+  - [DescribeJobQueuesResponseResponseTypeDef](#describejobqueuesresponseresponsetypedef)
+  - [DescribeJobsRequestTypeDef](#describejobsrequesttypedef)
+  - [DescribeJobsResponseResponseTypeDef](#describejobsresponseresponsetypedef)
   - [DeviceTypeDef](#devicetypedef)
   - [EFSAuthorizationConfigTypeDef](#efsauthorizationconfigtypedef)
   - [EFSVolumeConfigurationTypeDef](#efsvolumeconfigurationtypedef)
@@ -43,8 +53,10 @@ type annotations stubs module
   - [KeyValuePairTypeDef](#keyvaluepairtypedef)
   - [LaunchTemplateSpecificationTypeDef](#launchtemplatespecificationtypedef)
   - [LinuxParametersTypeDef](#linuxparameterstypedef)
-  - [ListJobsResponseTypeDef](#listjobsresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListJobsRequestTypeDef](#listjobsrequesttypedef)
+  - [ListJobsResponseResponseTypeDef](#listjobsresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [LogConfigurationTypeDef](#logconfigurationtypedef)
   - [MountPointTypeDef](#mountpointtypedef)
   - [NetworkConfigurationTypeDef](#networkconfigurationtypedef)
@@ -56,15 +68,23 @@ type annotations stubs module
   - [NodePropertyOverrideTypeDef](#nodepropertyoverridetypedef)
   - [NodeRangePropertyTypeDef](#noderangepropertytypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [RegisterJobDefinitionResponseTypeDef](#registerjobdefinitionresponsetypedef)
+  - [RegisterJobDefinitionRequestTypeDef](#registerjobdefinitionrequesttypedef)
+  - [RegisterJobDefinitionResponseResponseTypeDef](#registerjobdefinitionresponseresponsetypedef)
   - [ResourceRequirementTypeDef](#resourcerequirementtypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RetryStrategyTypeDef](#retrystrategytypedef)
   - [SecretTypeDef](#secrettypedef)
-  - [SubmitJobResponseTypeDef](#submitjobresponsetypedef)
+  - [SubmitJobRequestTypeDef](#submitjobrequesttypedef)
+  - [SubmitJobResponseResponseTypeDef](#submitjobresponseresponsetypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [TerminateJobRequestTypeDef](#terminatejobrequesttypedef)
   - [TmpfsTypeDef](#tmpfstypedef)
   - [UlimitTypeDef](#ulimittypedef)
-  - [UpdateComputeEnvironmentResponseTypeDef](#updatecomputeenvironmentresponsetypedef)
-  - [UpdateJobQueueResponseTypeDef](#updatejobqueueresponsetypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateComputeEnvironmentRequestTypeDef](#updatecomputeenvironmentrequesttypedef)
+  - [UpdateComputeEnvironmentResponseResponseTypeDef](#updatecomputeenvironmentresponseresponsetypedef)
+  - [UpdateJobQueueRequestTypeDef](#updatejobqueuerequesttypedef)
+  - [UpdateJobQueueResponseResponseTypeDef](#updatejobqueueresponseresponsetypedef)
   - [VolumeTypeDef](#volumetypedef)
 
 ## ArrayPropertiesDetailTypeDef
@@ -129,6 +149,17 @@ Optional fields:
 - `startedAt`: `int`
 - `stoppedAt`: `int`
 - `statusReason`: `str`
+
+## CancelJobRequestTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import CancelJobRequestTypeDef
+```
+
+Required fields:
+
+- `jobId`: `str`
+- `reason`: `str`
 
 ## ComputeEnvironmentDetailTypeDef
 
@@ -317,73 +348,200 @@ Optional fields:
 - `exitCode`: `int`
 - `reason`: `str`
 
-## CreateComputeEnvironmentResponseTypeDef
+## CreateComputeEnvironmentRequestTypeDef
 
 ```python
-from mypy_boto3_batch.type_defs import CreateComputeEnvironmentResponseTypeDef
+from mypy_boto3_batch.type_defs import CreateComputeEnvironmentRequestTypeDef
 ```
+
+Required fields:
+
+- `computeEnvironmentName`: `str`
+- `type`: [CETypeType](./literals.md#cetypetype)
 
 Optional fields:
 
-- `computeEnvironmentName`: `str`
-- `computeEnvironmentArn`: `str`
+- `state`: [CEStateType](./literals.md#cestatetype)
+- `computeResources`:
+  [ComputeResourceTypeDef](./type_defs.md#computeresourcetypedef)
+- `serviceRole`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
 
-## CreateJobQueueResponseTypeDef
+## CreateComputeEnvironmentResponseResponseTypeDef
 
 ```python
-from mypy_boto3_batch.type_defs import CreateJobQueueResponseTypeDef
+from mypy_boto3_batch.type_defs import CreateComputeEnvironmentResponseResponseTypeDef
+```
+
+Required fields:
+
+- `computeEnvironmentName`: `str`
+- `computeEnvironmentArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateJobQueueRequestTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import CreateJobQueueRequestTypeDef
+```
+
+Required fields:
+
+- `jobQueueName`: `str`
+- `priority`: `int`
+- `computeEnvironmentOrder`:
+  `List`\[[ComputeEnvironmentOrderTypeDef](./type_defs.md#computeenvironmentordertypedef)\]
+
+Optional fields:
+
+- `state`: [JQStateType](./literals.md#jqstatetype)
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateJobQueueResponseResponseTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import CreateJobQueueResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `jobQueueName`: `str`
 - `jobQueueArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeComputeEnvironmentsResponseTypeDef
+## DeleteComputeEnvironmentRequestTypeDef
 
 ```python
-from mypy_boto3_batch.type_defs import DescribeComputeEnvironmentsResponseTypeDef
+from mypy_boto3_batch.type_defs import DeleteComputeEnvironmentRequestTypeDef
+```
+
+Required fields:
+
+- `computeEnvironment`: `str`
+
+## DeleteJobQueueRequestTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import DeleteJobQueueRequestTypeDef
+```
+
+Required fields:
+
+- `jobQueue`: `str`
+
+## DeregisterJobDefinitionRequestTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import DeregisterJobDefinitionRequestTypeDef
+```
+
+Required fields:
+
+- `jobDefinition`: `str`
+
+## DescribeComputeEnvironmentsRequestTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import DescribeComputeEnvironmentsRequestTypeDef
 ```
 
 Optional fields:
+
+- `computeEnvironments`: `List`\[`str`\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## DescribeComputeEnvironmentsResponseResponseTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import DescribeComputeEnvironmentsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `computeEnvironments`:
   `List`\[[ComputeEnvironmentDetailTypeDef](./type_defs.md#computeenvironmentdetailtypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeJobDefinitionsResponseTypeDef
+## DescribeJobDefinitionsRequestTypeDef
 
 ```python
-from mypy_boto3_batch.type_defs import DescribeJobDefinitionsResponseTypeDef
+from mypy_boto3_batch.type_defs import DescribeJobDefinitionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `jobDefinitions`: `List`\[`str`\]
+- `maxResults`: `int`
+- `jobDefinitionName`: `str`
+- `status`: `str`
+- `nextToken`: `str`
+
+## DescribeJobDefinitionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import DescribeJobDefinitionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `jobDefinitions`:
   `List`\[[JobDefinitionTypeDef](./type_defs.md#jobdefinitiontypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeJobQueuesResponseTypeDef
+## DescribeJobQueuesRequestTypeDef
 
 ```python
-from mypy_boto3_batch.type_defs import DescribeJobQueuesResponseTypeDef
+from mypy_boto3_batch.type_defs import DescribeJobQueuesRequestTypeDef
 ```
 
 Optional fields:
+
+- `jobQueues`: `List`\[`str`\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## DescribeJobQueuesResponseResponseTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import DescribeJobQueuesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `jobQueues`:
   `List`\[[JobQueueDetailTypeDef](./type_defs.md#jobqueuedetailtypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeJobsResponseTypeDef
+## DescribeJobsRequestTypeDef
 
 ```python
-from mypy_boto3_batch.type_defs import DescribeJobsResponseTypeDef
+from mypy_boto3_batch.type_defs import DescribeJobsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `jobs`: `List`\[`str`\]
+
+## DescribeJobsResponseResponseTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import DescribeJobsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `jobs`: `List`\[[JobDetailTypeDef](./type_defs.md#jobdetailtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DeviceTypeDef
 
@@ -655,30 +813,56 @@ Optional fields:
 - `maxSwap`: `int`
 - `swappiness`: `int`
 
-## ListJobsResponseTypeDef
+## ListJobsRequestTypeDef
 
 ```python
-from mypy_boto3_batch.type_defs import ListJobsResponseTypeDef
+from mypy_boto3_batch.type_defs import ListJobsRequestTypeDef
+```
+
+Optional fields:
+
+- `jobQueue`: `str`
+- `arrayJobId`: `str`
+- `multiNodeJobId`: `str`
+- `jobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListJobsResponseResponseTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import ListJobsResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `jobSummaryList`:
   `List`\[[JobSummaryTypeDef](./type_defs.md#jobsummarytypedef)\]
-
-Optional fields:
-
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_batch.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_batch.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `resourceArn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LogConfigurationTypeDef
 
@@ -819,10 +1003,35 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## RegisterJobDefinitionResponseTypeDef
+## RegisterJobDefinitionRequestTypeDef
 
 ```python
-from mypy_boto3_batch.type_defs import RegisterJobDefinitionResponseTypeDef
+from mypy_boto3_batch.type_defs import RegisterJobDefinitionRequestTypeDef
+```
+
+Required fields:
+
+- `jobDefinitionName`: `str`
+- `type`: [JobDefinitionTypeType](./literals.md#jobdefinitiontypetype)
+
+Optional fields:
+
+- `parameters`: `Dict`\[`str`, `str`\]
+- `containerProperties`:
+  [ContainerPropertiesTypeDef](./type_defs.md#containerpropertiestypedef)
+- `nodeProperties`:
+  [NodePropertiesTypeDef](./type_defs.md#nodepropertiestypedef)
+- `retryStrategy`: [RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef)
+- `propagateTags`: `bool`
+- `timeout`: [JobTimeoutTypeDef](./type_defs.md#jobtimeouttypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+- `platformCapabilities`:
+  `List`\[[PlatformCapabilityType](./literals.md#platformcapabilitytype)\]
+
+## RegisterJobDefinitionResponseResponseTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import RegisterJobDefinitionResponseResponseTypeDef
 ```
 
 Required fields:
@@ -830,6 +1039,8 @@ Required fields:
 - `jobDefinitionName`: `str`
 - `jobDefinitionArn`: `str`
 - `revision`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ResourceRequirementTypeDef
 
@@ -841,6 +1052,20 @@ Required fields:
 
 - `value`: `str`
 - `type`: [ResourceTypeType](./literals.md#resourcetypetype)
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## RetryStrategyTypeDef
 
@@ -865,20 +1090,68 @@ Required fields:
 - `name`: `str`
 - `valueFrom`: `str`
 
-## SubmitJobResponseTypeDef
+## SubmitJobRequestTypeDef
 
 ```python
-from mypy_boto3_batch.type_defs import SubmitJobResponseTypeDef
+from mypy_boto3_batch.type_defs import SubmitJobRequestTypeDef
 ```
 
 Required fields:
 
 - `jobName`: `str`
-- `jobId`: `str`
+- `jobQueue`: `str`
+- `jobDefinition`: `str`
 
 Optional fields:
 
+- `arrayProperties`:
+  [ArrayPropertiesTypeDef](./type_defs.md#arraypropertiestypedef)
+- `dependsOn`:
+  `List`\[[JobDependencyTypeDef](./type_defs.md#jobdependencytypedef)\]
+- `parameters`: `Dict`\[`str`, `str`\]
+- `containerOverrides`:
+  [ContainerOverridesTypeDef](./type_defs.md#containeroverridestypedef)
+- `nodeOverrides`: [NodeOverridesTypeDef](./type_defs.md#nodeoverridestypedef)
+- `retryStrategy`: [RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef)
+- `propagateTags`: `bool`
+- `timeout`: [JobTimeoutTypeDef](./type_defs.md#jobtimeouttypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+
+## SubmitJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import SubmitJobResponseResponseTypeDef
+```
+
+Required fields:
+
 - `jobArn`: `str`
+- `jobName`: `str`
+- `jobId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## TerminateJobRequestTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import TerminateJobRequestTypeDef
+```
+
+Required fields:
+
+- `jobId`: `str`
+- `reason`: `str`
 
 ## TmpfsTypeDef
 
@@ -907,27 +1180,76 @@ Required fields:
 - `name`: `str`
 - `softLimit`: `int`
 
-## UpdateComputeEnvironmentResponseTypeDef
+## UntagResourceRequestTypeDef
 
 ```python
-from mypy_boto3_batch.type_defs import UpdateComputeEnvironmentResponseTypeDef
+from mypy_boto3_batch.type_defs import UntagResourceRequestTypeDef
 ```
 
+Required fields:
+
+- `resourceArn`: `str`
+- `tagKeys`: `List`\[`str`\]
+
+## UpdateComputeEnvironmentRequestTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import UpdateComputeEnvironmentRequestTypeDef
+```
+
+Required fields:
+
+- `computeEnvironment`: `str`
+
 Optional fields:
+
+- `state`: [CEStateType](./literals.md#cestatetype)
+- `computeResources`:
+  [ComputeResourceUpdateTypeDef](./type_defs.md#computeresourceupdatetypedef)
+- `serviceRole`: `str`
+
+## UpdateComputeEnvironmentResponseResponseTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import UpdateComputeEnvironmentResponseResponseTypeDef
+```
+
+Required fields:
 
 - `computeEnvironmentName`: `str`
 - `computeEnvironmentArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateJobQueueResponseTypeDef
+## UpdateJobQueueRequestTypeDef
 
 ```python
-from mypy_boto3_batch.type_defs import UpdateJobQueueResponseTypeDef
+from mypy_boto3_batch.type_defs import UpdateJobQueueRequestTypeDef
 ```
+
+Required fields:
+
+- `jobQueue`: `str`
 
 Optional fields:
 
+- `state`: [JQStateType](./literals.md#jqstatetype)
+- `priority`: `int`
+- `computeEnvironmentOrder`:
+  `List`\[[ComputeEnvironmentOrderTypeDef](./type_defs.md#computeenvironmentordertypedef)\]
+
+## UpdateJobQueueResponseResponseTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import UpdateJobQueueResponseResponseTypeDef
+```
+
+Required fields:
+
 - `jobQueueName`: `str`
 - `jobQueueArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## VolumeTypeDef
 

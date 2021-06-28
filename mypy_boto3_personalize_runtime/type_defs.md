@@ -8,33 +8,77 @@ type annotations stubs module
 [mypy_boto3_personalize_runtime](https://pypi.org/project/mypy-boto3-personalize-runtime/).
 
 - [Typed dictionaries for boto3 PersonalizeRuntime module](#typed-dictionaries-for-boto3-personalizeruntime-module)
-  - [GetPersonalizedRankingResponseTypeDef](#getpersonalizedrankingresponsetypedef)
-  - [GetRecommendationsResponseTypeDef](#getrecommendationsresponsetypedef)
+  - [GetPersonalizedRankingRequestTypeDef](#getpersonalizedrankingrequesttypedef)
+  - [GetPersonalizedRankingResponseResponseTypeDef](#getpersonalizedrankingresponseresponsetypedef)
+  - [GetRecommendationsRequestTypeDef](#getrecommendationsrequesttypedef)
+  - [GetRecommendationsResponseResponseTypeDef](#getrecommendationsresponseresponsetypedef)
   - [PredictedItemTypeDef](#predicteditemtypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
 
-## GetPersonalizedRankingResponseTypeDef
+## GetPersonalizedRankingRequestTypeDef
 
 ```python
-from mypy_boto3_personalize_runtime.type_defs import GetPersonalizedRankingResponseTypeDef
+from mypy_boto3_personalize_runtime.type_defs import GetPersonalizedRankingRequestTypeDef
 ```
 
+Required fields:
+
+- `campaignArn`: `str`
+- `inputList`: `List`\[`str`\]
+- `userId`: `str`
+
 Optional fields:
+
+- `context`: `Dict`\[`str`, `str`\]
+- `filterArn`: `str`
+- `filterValues`: `Dict`\[`str`, `str`\]
+
+## GetPersonalizedRankingResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize_runtime.type_defs import GetPersonalizedRankingResponseResponseTypeDef
+```
+
+Required fields:
 
 - `personalizedRanking`:
   `List`\[[PredictedItemTypeDef](./type_defs.md#predicteditemtypedef)\]
 - `recommendationId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRecommendationsResponseTypeDef
+## GetRecommendationsRequestTypeDef
 
 ```python
-from mypy_boto3_personalize_runtime.type_defs import GetRecommendationsResponseTypeDef
+from mypy_boto3_personalize_runtime.type_defs import GetRecommendationsRequestTypeDef
 ```
 
+Required fields:
+
+- `campaignArn`: `str`
+
 Optional fields:
+
+- `itemId`: `str`
+- `userId`: `str`
+- `numResults`: `int`
+- `context`: `Dict`\[`str`, `str`\]
+- `filterArn`: `str`
+- `filterValues`: `Dict`\[`str`, `str`\]
+
+## GetRecommendationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_personalize_runtime.type_defs import GetRecommendationsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `itemList`:
   `List`\[[PredictedItemTypeDef](./type_defs.md#predicteditemtypedef)\]
 - `recommendationId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PredictedItemTypeDef
 
@@ -46,3 +90,17 @@ Optional fields:
 
 - `itemId`: `str`
 - `score`: `float`
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_personalize_runtime.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`

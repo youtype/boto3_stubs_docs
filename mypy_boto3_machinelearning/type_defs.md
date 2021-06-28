@@ -8,36 +8,60 @@ type annotations stubs module
 [mypy_boto3_machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
 
 - [Typed dictionaries for boto3 MachineLearning module](#typed-dictionaries-for-boto3-machinelearning-module)
-  - [AddTagsOutputTypeDef](#addtagsoutputtypedef)
+  - [AddTagsInputTypeDef](#addtagsinputtypedef)
+  - [AddTagsOutputResponseTypeDef](#addtagsoutputresponsetypedef)
   - [BatchPredictionTypeDef](#batchpredictiontypedef)
-  - [CreateBatchPredictionOutputTypeDef](#createbatchpredictionoutputtypedef)
-  - [CreateDataSourceFromRDSOutputTypeDef](#createdatasourcefromrdsoutputtypedef)
-  - [CreateDataSourceFromRedshiftOutputTypeDef](#createdatasourcefromredshiftoutputtypedef)
-  - [CreateDataSourceFromS3OutputTypeDef](#createdatasourcefroms3outputtypedef)
-  - [CreateEvaluationOutputTypeDef](#createevaluationoutputtypedef)
-  - [CreateMLModelOutputTypeDef](#createmlmodeloutputtypedef)
-  - [CreateRealtimeEndpointOutputTypeDef](#createrealtimeendpointoutputtypedef)
+  - [CreateBatchPredictionInputTypeDef](#createbatchpredictioninputtypedef)
+  - [CreateBatchPredictionOutputResponseTypeDef](#createbatchpredictionoutputresponsetypedef)
+  - [CreateDataSourceFromRDSInputTypeDef](#createdatasourcefromrdsinputtypedef)
+  - [CreateDataSourceFromRDSOutputResponseTypeDef](#createdatasourcefromrdsoutputresponsetypedef)
+  - [CreateDataSourceFromRedshiftInputTypeDef](#createdatasourcefromredshiftinputtypedef)
+  - [CreateDataSourceFromRedshiftOutputResponseTypeDef](#createdatasourcefromredshiftoutputresponsetypedef)
+  - [CreateDataSourceFromS3InputTypeDef](#createdatasourcefroms3inputtypedef)
+  - [CreateDataSourceFromS3OutputResponseTypeDef](#createdatasourcefroms3outputresponsetypedef)
+  - [CreateEvaluationInputTypeDef](#createevaluationinputtypedef)
+  - [CreateEvaluationOutputResponseTypeDef](#createevaluationoutputresponsetypedef)
+  - [CreateMLModelInputTypeDef](#createmlmodelinputtypedef)
+  - [CreateMLModelOutputResponseTypeDef](#createmlmodeloutputresponsetypedef)
+  - [CreateRealtimeEndpointInputTypeDef](#createrealtimeendpointinputtypedef)
+  - [CreateRealtimeEndpointOutputResponseTypeDef](#createrealtimeendpointoutputresponsetypedef)
   - [DataSourceTypeDef](#datasourcetypedef)
-  - [DeleteBatchPredictionOutputTypeDef](#deletebatchpredictionoutputtypedef)
-  - [DeleteDataSourceOutputTypeDef](#deletedatasourceoutputtypedef)
-  - [DeleteEvaluationOutputTypeDef](#deleteevaluationoutputtypedef)
-  - [DeleteMLModelOutputTypeDef](#deletemlmodeloutputtypedef)
-  - [DeleteRealtimeEndpointOutputTypeDef](#deleterealtimeendpointoutputtypedef)
-  - [DeleteTagsOutputTypeDef](#deletetagsoutputtypedef)
-  - [DescribeBatchPredictionsOutputTypeDef](#describebatchpredictionsoutputtypedef)
-  - [DescribeDataSourcesOutputTypeDef](#describedatasourcesoutputtypedef)
-  - [DescribeEvaluationsOutputTypeDef](#describeevaluationsoutputtypedef)
-  - [DescribeMLModelsOutputTypeDef](#describemlmodelsoutputtypedef)
-  - [DescribeTagsOutputTypeDef](#describetagsoutputtypedef)
+  - [DeleteBatchPredictionInputTypeDef](#deletebatchpredictioninputtypedef)
+  - [DeleteBatchPredictionOutputResponseTypeDef](#deletebatchpredictionoutputresponsetypedef)
+  - [DeleteDataSourceInputTypeDef](#deletedatasourceinputtypedef)
+  - [DeleteDataSourceOutputResponseTypeDef](#deletedatasourceoutputresponsetypedef)
+  - [DeleteEvaluationInputTypeDef](#deleteevaluationinputtypedef)
+  - [DeleteEvaluationOutputResponseTypeDef](#deleteevaluationoutputresponsetypedef)
+  - [DeleteMLModelInputTypeDef](#deletemlmodelinputtypedef)
+  - [DeleteMLModelOutputResponseTypeDef](#deletemlmodeloutputresponsetypedef)
+  - [DeleteRealtimeEndpointInputTypeDef](#deleterealtimeendpointinputtypedef)
+  - [DeleteRealtimeEndpointOutputResponseTypeDef](#deleterealtimeendpointoutputresponsetypedef)
+  - [DeleteTagsInputTypeDef](#deletetagsinputtypedef)
+  - [DeleteTagsOutputResponseTypeDef](#deletetagsoutputresponsetypedef)
+  - [DescribeBatchPredictionsInputTypeDef](#describebatchpredictionsinputtypedef)
+  - [DescribeBatchPredictionsOutputResponseTypeDef](#describebatchpredictionsoutputresponsetypedef)
+  - [DescribeDataSourcesInputTypeDef](#describedatasourcesinputtypedef)
+  - [DescribeDataSourcesOutputResponseTypeDef](#describedatasourcesoutputresponsetypedef)
+  - [DescribeEvaluationsInputTypeDef](#describeevaluationsinputtypedef)
+  - [DescribeEvaluationsOutputResponseTypeDef](#describeevaluationsoutputresponsetypedef)
+  - [DescribeMLModelsInputTypeDef](#describemlmodelsinputtypedef)
+  - [DescribeMLModelsOutputResponseTypeDef](#describemlmodelsoutputresponsetypedef)
+  - [DescribeTagsInputTypeDef](#describetagsinputtypedef)
+  - [DescribeTagsOutputResponseTypeDef](#describetagsoutputresponsetypedef)
   - [EvaluationTypeDef](#evaluationtypedef)
-  - [GetBatchPredictionOutputTypeDef](#getbatchpredictionoutputtypedef)
-  - [GetDataSourceOutputTypeDef](#getdatasourceoutputtypedef)
-  - [GetEvaluationOutputTypeDef](#getevaluationoutputtypedef)
-  - [GetMLModelOutputTypeDef](#getmlmodeloutputtypedef)
+  - [GetBatchPredictionInputTypeDef](#getbatchpredictioninputtypedef)
+  - [GetBatchPredictionOutputResponseTypeDef](#getbatchpredictionoutputresponsetypedef)
+  - [GetDataSourceInputTypeDef](#getdatasourceinputtypedef)
+  - [GetDataSourceOutputResponseTypeDef](#getdatasourceoutputresponsetypedef)
+  - [GetEvaluationInputTypeDef](#getevaluationinputtypedef)
+  - [GetEvaluationOutputResponseTypeDef](#getevaluationoutputresponsetypedef)
+  - [GetMLModelInputTypeDef](#getmlmodelinputtypedef)
+  - [GetMLModelOutputResponseTypeDef](#getmlmodeloutputresponsetypedef)
   - [MLModelTypeDef](#mlmodeltypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PerformanceMetricsTypeDef](#performancemetricstypedef)
-  - [PredictOutputTypeDef](#predictoutputtypedef)
+  - [PredictInputTypeDef](#predictinputtypedef)
+  - [PredictOutputResponseTypeDef](#predictoutputresponsetypedef)
   - [PredictionTypeDef](#predictiontypedef)
   - [RDSDataSpecTypeDef](#rdsdataspectypedef)
   - [RDSDatabaseCredentialsTypeDef](#rdsdatabasecredentialstypedef)
@@ -51,16 +75,33 @@ type annotations stubs module
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3DataSpecTypeDef](#s3dataspectypedef)
   - [TagTypeDef](#tagtypedef)
-  - [UpdateBatchPredictionOutputTypeDef](#updatebatchpredictionoutputtypedef)
-  - [UpdateDataSourceOutputTypeDef](#updatedatasourceoutputtypedef)
-  - [UpdateEvaluationOutputTypeDef](#updateevaluationoutputtypedef)
-  - [UpdateMLModelOutputTypeDef](#updatemlmodeloutputtypedef)
+  - [UpdateBatchPredictionInputTypeDef](#updatebatchpredictioninputtypedef)
+  - [UpdateBatchPredictionOutputResponseTypeDef](#updatebatchpredictionoutputresponsetypedef)
+  - [UpdateDataSourceInputTypeDef](#updatedatasourceinputtypedef)
+  - [UpdateDataSourceOutputResponseTypeDef](#updatedatasourceoutputresponsetypedef)
+  - [UpdateEvaluationInputTypeDef](#updateevaluationinputtypedef)
+  - [UpdateEvaluationOutputResponseTypeDef](#updateevaluationoutputresponsetypedef)
+  - [UpdateMLModelInputTypeDef](#updatemlmodelinputtypedef)
+  - [UpdateMLModelOutputResponseTypeDef](#updatemlmodeloutputresponsetypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
-## AddTagsOutputTypeDef
+## AddTagsInputTypeDef
 
 ```python
-from mypy_boto3_machinelearning.type_defs import AddTagsOutputTypeDef
+from mypy_boto3_machinelearning.type_defs import AddTagsInputTypeDef
+```
+
+Required fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResourceId`: `str`
+- `ResourceType`:
+  [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
+
+## AddTagsOutputResponseTypeDef
+
+```python
+from mypy_boto3_machinelearning.type_defs import AddTagsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -96,10 +137,27 @@ Optional fields:
 - `TotalRecordCount`: `int`
 - `InvalidRecordCount`: `int`
 
-## CreateBatchPredictionOutputTypeDef
+## CreateBatchPredictionInputTypeDef
 
 ```python
-from mypy_boto3_machinelearning.type_defs import CreateBatchPredictionOutputTypeDef
+from mypy_boto3_machinelearning.type_defs import CreateBatchPredictionInputTypeDef
+```
+
+Required fields:
+
+- `BatchPredictionId`: `str`
+- `MLModelId`: `str`
+- `BatchPredictionDataSourceId`: `str`
+- `OutputUri`: `str`
+
+Optional fields:
+
+- `BatchPredictionName`: `str`
+
+## CreateBatchPredictionOutputResponseTypeDef
+
+```python
+from mypy_boto3_machinelearning.type_defs import CreateBatchPredictionOutputResponseTypeDef
 ```
 
 Required fields:
@@ -108,10 +166,27 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDataSourceFromRDSOutputTypeDef
+## CreateDataSourceFromRDSInputTypeDef
 
 ```python
-from mypy_boto3_machinelearning.type_defs import CreateDataSourceFromRDSOutputTypeDef
+from mypy_boto3_machinelearning.type_defs import CreateDataSourceFromRDSInputTypeDef
+```
+
+Required fields:
+
+- `DataSourceId`: `str`
+- `RDSData`: [RDSDataSpecTypeDef](./type_defs.md#rdsdataspectypedef)
+- `RoleARN`: `str`
+
+Optional fields:
+
+- `DataSourceName`: `str`
+- `ComputeStatistics`: `bool`
+
+## CreateDataSourceFromRDSOutputResponseTypeDef
+
+```python
+from mypy_boto3_machinelearning.type_defs import CreateDataSourceFromRDSOutputResponseTypeDef
 ```
 
 Required fields:
@@ -120,10 +195,27 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDataSourceFromRedshiftOutputTypeDef
+## CreateDataSourceFromRedshiftInputTypeDef
 
 ```python
-from mypy_boto3_machinelearning.type_defs import CreateDataSourceFromRedshiftOutputTypeDef
+from mypy_boto3_machinelearning.type_defs import CreateDataSourceFromRedshiftInputTypeDef
+```
+
+Required fields:
+
+- `DataSourceId`: `str`
+- `DataSpec`: [RedshiftDataSpecTypeDef](./type_defs.md#redshiftdataspectypedef)
+- `RoleARN`: `str`
+
+Optional fields:
+
+- `DataSourceName`: `str`
+- `ComputeStatistics`: `bool`
+
+## CreateDataSourceFromRedshiftOutputResponseTypeDef
+
+```python
+from mypy_boto3_machinelearning.type_defs import CreateDataSourceFromRedshiftOutputResponseTypeDef
 ```
 
 Required fields:
@@ -132,10 +224,26 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDataSourceFromS3OutputTypeDef
+## CreateDataSourceFromS3InputTypeDef
 
 ```python
-from mypy_boto3_machinelearning.type_defs import CreateDataSourceFromS3OutputTypeDef
+from mypy_boto3_machinelearning.type_defs import CreateDataSourceFromS3InputTypeDef
+```
+
+Required fields:
+
+- `DataSourceId`: `str`
+- `DataSpec`: [S3DataSpecTypeDef](./type_defs.md#s3dataspectypedef)
+
+Optional fields:
+
+- `DataSourceName`: `str`
+- `ComputeStatistics`: `bool`
+
+## CreateDataSourceFromS3OutputResponseTypeDef
+
+```python
+from mypy_boto3_machinelearning.type_defs import CreateDataSourceFromS3OutputResponseTypeDef
 ```
 
 Required fields:
@@ -144,10 +252,26 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateEvaluationOutputTypeDef
+## CreateEvaluationInputTypeDef
 
 ```python
-from mypy_boto3_machinelearning.type_defs import CreateEvaluationOutputTypeDef
+from mypy_boto3_machinelearning.type_defs import CreateEvaluationInputTypeDef
+```
+
+Required fields:
+
+- `EvaluationId`: `str`
+- `MLModelId`: `str`
+- `EvaluationDataSourceId`: `str`
+
+Optional fields:
+
+- `EvaluationName`: `str`
+
+## CreateEvaluationOutputResponseTypeDef
+
+```python
+from mypy_boto3_machinelearning.type_defs import CreateEvaluationOutputResponseTypeDef
 ```
 
 Required fields:
@@ -156,10 +280,29 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateMLModelOutputTypeDef
+## CreateMLModelInputTypeDef
 
 ```python
-from mypy_boto3_machinelearning.type_defs import CreateMLModelOutputTypeDef
+from mypy_boto3_machinelearning.type_defs import CreateMLModelInputTypeDef
+```
+
+Required fields:
+
+- `MLModelId`: `str`
+- `MLModelType`: [MLModelTypeType](./literals.md#mlmodeltypetype)
+- `TrainingDataSourceId`: `str`
+
+Optional fields:
+
+- `MLModelName`: `str`
+- `Parameters`: `Dict`\[`str`, `str`\]
+- `Recipe`: `str`
+- `RecipeUri`: `str`
+
+## CreateMLModelOutputResponseTypeDef
+
+```python
+from mypy_boto3_machinelearning.type_defs import CreateMLModelOutputResponseTypeDef
 ```
 
 Required fields:
@@ -168,10 +311,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRealtimeEndpointOutputTypeDef
+## CreateRealtimeEndpointInputTypeDef
 
 ```python
-from mypy_boto3_machinelearning.type_defs import CreateRealtimeEndpointOutputTypeDef
+from mypy_boto3_machinelearning.type_defs import CreateRealtimeEndpointInputTypeDef
+```
+
+Required fields:
+
+- `MLModelId`: `str`
+
+## CreateRealtimeEndpointOutputResponseTypeDef
+
+```python
+from mypy_boto3_machinelearning.type_defs import CreateRealtimeEndpointOutputResponseTypeDef
 ```
 
 Required fields:
@@ -210,10 +363,20 @@ Optional fields:
 - `FinishedAt`: `datetime`
 - `StartedAt`: `datetime`
 
-## DeleteBatchPredictionOutputTypeDef
+## DeleteBatchPredictionInputTypeDef
 
 ```python
-from mypy_boto3_machinelearning.type_defs import DeleteBatchPredictionOutputTypeDef
+from mypy_boto3_machinelearning.type_defs import DeleteBatchPredictionInputTypeDef
+```
+
+Required fields:
+
+- `BatchPredictionId`: `str`
+
+## DeleteBatchPredictionOutputResponseTypeDef
+
+```python
+from mypy_boto3_machinelearning.type_defs import DeleteBatchPredictionOutputResponseTypeDef
 ```
 
 Required fields:
@@ -222,10 +385,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteDataSourceOutputTypeDef
+## DeleteDataSourceInputTypeDef
 
 ```python
-from mypy_boto3_machinelearning.type_defs import DeleteDataSourceOutputTypeDef
+from mypy_boto3_machinelearning.type_defs import DeleteDataSourceInputTypeDef
+```
+
+Required fields:
+
+- `DataSourceId`: `str`
+
+## DeleteDataSourceOutputResponseTypeDef
+
+```python
+from mypy_boto3_machinelearning.type_defs import DeleteDataSourceOutputResponseTypeDef
 ```
 
 Required fields:
@@ -234,10 +407,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteEvaluationOutputTypeDef
+## DeleteEvaluationInputTypeDef
 
 ```python
-from mypy_boto3_machinelearning.type_defs import DeleteEvaluationOutputTypeDef
+from mypy_boto3_machinelearning.type_defs import DeleteEvaluationInputTypeDef
+```
+
+Required fields:
+
+- `EvaluationId`: `str`
+
+## DeleteEvaluationOutputResponseTypeDef
+
+```python
+from mypy_boto3_machinelearning.type_defs import DeleteEvaluationOutputResponseTypeDef
 ```
 
 Required fields:
@@ -246,10 +429,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteMLModelOutputTypeDef
+## DeleteMLModelInputTypeDef
 
 ```python
-from mypy_boto3_machinelearning.type_defs import DeleteMLModelOutputTypeDef
+from mypy_boto3_machinelearning.type_defs import DeleteMLModelInputTypeDef
+```
+
+Required fields:
+
+- `MLModelId`: `str`
+
+## DeleteMLModelOutputResponseTypeDef
+
+```python
+from mypy_boto3_machinelearning.type_defs import DeleteMLModelOutputResponseTypeDef
 ```
 
 Required fields:
@@ -258,10 +451,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteRealtimeEndpointOutputTypeDef
+## DeleteRealtimeEndpointInputTypeDef
 
 ```python
-from mypy_boto3_machinelearning.type_defs import DeleteRealtimeEndpointOutputTypeDef
+from mypy_boto3_machinelearning.type_defs import DeleteRealtimeEndpointInputTypeDef
+```
+
+Required fields:
+
+- `MLModelId`: `str`
+
+## DeleteRealtimeEndpointOutputResponseTypeDef
+
+```python
+from mypy_boto3_machinelearning.type_defs import DeleteRealtimeEndpointOutputResponseTypeDef
 ```
 
 Required fields:
@@ -272,10 +475,23 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteTagsOutputTypeDef
+## DeleteTagsInputTypeDef
 
 ```python
-from mypy_boto3_machinelearning.type_defs import DeleteTagsOutputTypeDef
+from mypy_boto3_machinelearning.type_defs import DeleteTagsInputTypeDef
+```
+
+Required fields:
+
+- `TagKeys`: `List`\[`str`\]
+- `ResourceId`: `str`
+- `ResourceType`:
+  [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
+
+## DeleteTagsOutputResponseTypeDef
+
+```python
+from mypy_boto3_machinelearning.type_defs import DeleteTagsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -286,10 +502,31 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeBatchPredictionsOutputTypeDef
+## DescribeBatchPredictionsInputTypeDef
 
 ```python
-from mypy_boto3_machinelearning.type_defs import DescribeBatchPredictionsOutputTypeDef
+from mypy_boto3_machinelearning.type_defs import DescribeBatchPredictionsInputTypeDef
+```
+
+Optional fields:
+
+- `FilterVariable`:
+  [BatchPredictionFilterVariableType](./literals.md#batchpredictionfiltervariabletype)
+- `EQ`: `str`
+- `GT`: `str`
+- `LT`: `str`
+- `GE`: `str`
+- `LE`: `str`
+- `NE`: `str`
+- `Prefix`: `str`
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## DescribeBatchPredictionsOutputResponseTypeDef
+
+```python
+from mypy_boto3_machinelearning.type_defs import DescribeBatchPredictionsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -300,10 +537,31 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDataSourcesOutputTypeDef
+## DescribeDataSourcesInputTypeDef
 
 ```python
-from mypy_boto3_machinelearning.type_defs import DescribeDataSourcesOutputTypeDef
+from mypy_boto3_machinelearning.type_defs import DescribeDataSourcesInputTypeDef
+```
+
+Optional fields:
+
+- `FilterVariable`:
+  [DataSourceFilterVariableType](./literals.md#datasourcefiltervariabletype)
+- `EQ`: `str`
+- `GT`: `str`
+- `LT`: `str`
+- `GE`: `str`
+- `LE`: `str`
+- `NE`: `str`
+- `Prefix`: `str`
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## DescribeDataSourcesOutputResponseTypeDef
+
+```python
+from mypy_boto3_machinelearning.type_defs import DescribeDataSourcesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -313,10 +571,31 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEvaluationsOutputTypeDef
+## DescribeEvaluationsInputTypeDef
 
 ```python
-from mypy_boto3_machinelearning.type_defs import DescribeEvaluationsOutputTypeDef
+from mypy_boto3_machinelearning.type_defs import DescribeEvaluationsInputTypeDef
+```
+
+Optional fields:
+
+- `FilterVariable`:
+  [EvaluationFilterVariableType](./literals.md#evaluationfiltervariabletype)
+- `EQ`: `str`
+- `GT`: `str`
+- `LT`: `str`
+- `GE`: `str`
+- `LE`: `str`
+- `NE`: `str`
+- `Prefix`: `str`
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## DescribeEvaluationsOutputResponseTypeDef
+
+```python
+from mypy_boto3_machinelearning.type_defs import DescribeEvaluationsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -326,10 +605,31 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeMLModelsOutputTypeDef
+## DescribeMLModelsInputTypeDef
 
 ```python
-from mypy_boto3_machinelearning.type_defs import DescribeMLModelsOutputTypeDef
+from mypy_boto3_machinelearning.type_defs import DescribeMLModelsInputTypeDef
+```
+
+Optional fields:
+
+- `FilterVariable`:
+  [MLModelFilterVariableType](./literals.md#mlmodelfiltervariabletype)
+- `EQ`: `str`
+- `GT`: `str`
+- `LT`: `str`
+- `GE`: `str`
+- `LE`: `str`
+- `NE`: `str`
+- `Prefix`: `str`
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## DescribeMLModelsOutputResponseTypeDef
+
+```python
+from mypy_boto3_machinelearning.type_defs import DescribeMLModelsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -339,10 +639,22 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTagsOutputTypeDef
+## DescribeTagsInputTypeDef
 
 ```python
-from mypy_boto3_machinelearning.type_defs import DescribeTagsOutputTypeDef
+from mypy_boto3_machinelearning.type_defs import DescribeTagsInputTypeDef
+```
+
+Required fields:
+
+- `ResourceId`: `str`
+- `ResourceType`:
+  [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
+
+## DescribeTagsOutputResponseTypeDef
+
+```python
+from mypy_boto3_machinelearning.type_defs import DescribeTagsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -378,10 +690,20 @@ Optional fields:
 - `FinishedAt`: `datetime`
 - `StartedAt`: `datetime`
 
-## GetBatchPredictionOutputTypeDef
+## GetBatchPredictionInputTypeDef
 
 ```python
-from mypy_boto3_machinelearning.type_defs import GetBatchPredictionOutputTypeDef
+from mypy_boto3_machinelearning.type_defs import GetBatchPredictionInputTypeDef
+```
+
+Required fields:
+
+- `BatchPredictionId`: `str`
+
+## GetBatchPredictionOutputResponseTypeDef
+
+```python
+from mypy_boto3_machinelearning.type_defs import GetBatchPredictionOutputResponseTypeDef
 ```
 
 Required fields:
@@ -406,10 +728,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDataSourceOutputTypeDef
+## GetDataSourceInputTypeDef
 
 ```python
-from mypy_boto3_machinelearning.type_defs import GetDataSourceOutputTypeDef
+from mypy_boto3_machinelearning.type_defs import GetDataSourceInputTypeDef
+```
+
+Required fields:
+
+- `DataSourceId`: `str`
+
+Optional fields:
+
+- `Verbose`: `bool`
+
+## GetDataSourceOutputResponseTypeDef
+
+```python
+from mypy_boto3_machinelearning.type_defs import GetDataSourceOutputResponseTypeDef
 ```
 
 Required fields:
@@ -438,10 +774,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetEvaluationOutputTypeDef
+## GetEvaluationInputTypeDef
 
 ```python
-from mypy_boto3_machinelearning.type_defs import GetEvaluationOutputTypeDef
+from mypy_boto3_machinelearning.type_defs import GetEvaluationInputTypeDef
+```
+
+Required fields:
+
+- `EvaluationId`: `str`
+
+## GetEvaluationOutputResponseTypeDef
+
+```python
+from mypy_boto3_machinelearning.type_defs import GetEvaluationOutputResponseTypeDef
 ```
 
 Required fields:
@@ -465,10 +811,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMLModelOutputTypeDef
+## GetMLModelInputTypeDef
 
 ```python
-from mypy_boto3_machinelearning.type_defs import GetMLModelOutputTypeDef
+from mypy_boto3_machinelearning.type_defs import GetMLModelInputTypeDef
+```
+
+Required fields:
+
+- `MLModelId`: `str`
+
+Optional fields:
+
+- `Verbose`: `bool`
+
+## GetMLModelOutputResponseTypeDef
+
+```python
+from mypy_boto3_machinelearning.type_defs import GetMLModelOutputResponseTypeDef
 ```
 
 Required fields:
@@ -550,10 +910,22 @@ Optional fields:
 
 - `Properties`: `Dict`\[`str`, `str`\]
 
-## PredictOutputTypeDef
+## PredictInputTypeDef
 
 ```python
-from mypy_boto3_machinelearning.type_defs import PredictOutputTypeDef
+from mypy_boto3_machinelearning.type_defs import PredictInputTypeDef
+```
+
+Required fields:
+
+- `MLModelId`: `str`
+- `Record`: `Dict`\[`str`, `str`\]
+- `PredictEndpoint`: `str`
+
+## PredictOutputResponseTypeDef
+
+```python
+from mypy_boto3_machinelearning.type_defs import PredictOutputResponseTypeDef
 ```
 
 Required fields:
@@ -749,10 +1121,21 @@ Optional fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## UpdateBatchPredictionOutputTypeDef
+## UpdateBatchPredictionInputTypeDef
 
 ```python
-from mypy_boto3_machinelearning.type_defs import UpdateBatchPredictionOutputTypeDef
+from mypy_boto3_machinelearning.type_defs import UpdateBatchPredictionInputTypeDef
+```
+
+Required fields:
+
+- `BatchPredictionId`: `str`
+- `BatchPredictionName`: `str`
+
+## UpdateBatchPredictionOutputResponseTypeDef
+
+```python
+from mypy_boto3_machinelearning.type_defs import UpdateBatchPredictionOutputResponseTypeDef
 ```
 
 Required fields:
@@ -761,10 +1144,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateDataSourceOutputTypeDef
+## UpdateDataSourceInputTypeDef
 
 ```python
-from mypy_boto3_machinelearning.type_defs import UpdateDataSourceOutputTypeDef
+from mypy_boto3_machinelearning.type_defs import UpdateDataSourceInputTypeDef
+```
+
+Required fields:
+
+- `DataSourceId`: `str`
+- `DataSourceName`: `str`
+
+## UpdateDataSourceOutputResponseTypeDef
+
+```python
+from mypy_boto3_machinelearning.type_defs import UpdateDataSourceOutputResponseTypeDef
 ```
 
 Required fields:
@@ -773,10 +1167,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateEvaluationOutputTypeDef
+## UpdateEvaluationInputTypeDef
 
 ```python
-from mypy_boto3_machinelearning.type_defs import UpdateEvaluationOutputTypeDef
+from mypy_boto3_machinelearning.type_defs import UpdateEvaluationInputTypeDef
+```
+
+Required fields:
+
+- `EvaluationId`: `str`
+- `EvaluationName`: `str`
+
+## UpdateEvaluationOutputResponseTypeDef
+
+```python
+from mypy_boto3_machinelearning.type_defs import UpdateEvaluationOutputResponseTypeDef
 ```
 
 Required fields:
@@ -785,10 +1190,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateMLModelOutputTypeDef
+## UpdateMLModelInputTypeDef
 
 ```python
-from mypy_boto3_machinelearning.type_defs import UpdateMLModelOutputTypeDef
+from mypy_boto3_machinelearning.type_defs import UpdateMLModelInputTypeDef
+```
+
+Required fields:
+
+- `MLModelId`: `str`
+
+Optional fields:
+
+- `MLModelName`: `str`
+- `ScoreThreshold`: `float`
+
+## UpdateMLModelOutputResponseTypeDef
+
+```python
+from mypy_boto3_machinelearning.type_defs import UpdateMLModelOutputResponseTypeDef
 ```
 
 Required fields:

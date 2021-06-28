@@ -103,10 +103,15 @@ Exceptions:
 
 ### accept_eulas
 
+Accept EULAs.
+
 Type annotations for `boto3.client("nimble").accept_eulas` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.accept_eulas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.accept_eulas)
+
+Arguments mapping described in
+[AcceptEulasRequestTypeDef](./type_defs.md#accepteulasrequesttypedef).
 
 Keyword-only arguments:
 
@@ -115,9 +120,11 @@ Keyword-only arguments:
 - `eulaIds`: `List`\[`str`\]
 
 Returns
-[AcceptEulasResponseTypeDef](./type_defs.md#accepteulasresponsetypedef).
+[AcceptEulasResponseResponseTypeDef](./type_defs.md#accepteulasresponseresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("nimble").can_paginate` method.
 
@@ -132,10 +139,15 @@ Returns `bool`.
 
 ### create_launch_profile
 
+Create a launch profile.
+
 Type annotations for `boto3.client("nimble").create_launch_profile` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.create_launch_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_launch_profile)
+
+Arguments mapping described in
+[CreateLaunchProfileRequestTypeDef](./type_defs.md#createlaunchprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -152,14 +164,19 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateLaunchProfileResponseTypeDef](./type_defs.md#createlaunchprofileresponsetypedef).
+[CreateLaunchProfileResponseResponseTypeDef](./type_defs.md#createlaunchprofileresponseresponsetypedef).
 
 ### create_streaming_image
+
+Creates a streaming image resource in a studio.
 
 Type annotations for `boto3.client("nimble").create_streaming_image` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.create_streaming_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_image)
+
+Arguments mapping described in
+[CreateStreamingImageRequestTypeDef](./type_defs.md#createstreamingimagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -171,14 +188,19 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateStreamingImageResponseTypeDef](./type_defs.md#createstreamingimageresponsetypedef).
+[CreateStreamingImageResponseResponseTypeDef](./type_defs.md#createstreamingimageresponseresponsetypedef).
 
 ### create_streaming_session
+
+Creates a streaming session in a studio.
 
 Type annotations for `boto3.client("nimble").create_streaming_session` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.create_streaming_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_session)
+
+Arguments mapping described in
+[CreateStreamingSessionRequestTypeDef](./type_defs.md#createstreamingsessionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -191,15 +213,20 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateStreamingSessionResponseTypeDef](./type_defs.md#createstreamingsessionresponsetypedef).
+[CreateStreamingSessionResponseResponseTypeDef](./type_defs.md#createstreamingsessionresponseresponsetypedef).
 
 ### create_streaming_session_stream
+
+Creates a streaming session stream for a streaming session.
 
 Type annotations for `boto3.client("nimble").create_streaming_session_stream`
 method.
 
 Boto3 documentation:
 [NimbleStudio.Client.create_streaming_session_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_session_stream)
+
+Arguments mapping described in
+[CreateStreamingSessionStreamRequestTypeDef](./type_defs.md#createstreamingsessionstreamrequesttypedef).
 
 Keyword-only arguments:
 
@@ -209,14 +236,19 @@ Keyword-only arguments:
 - `expirationInSeconds`: `int`
 
 Returns
-[CreateStreamingSessionStreamResponseTypeDef](./type_defs.md#createstreamingsessionstreamresponsetypedef).
+[CreateStreamingSessionStreamResponseResponseTypeDef](./type_defs.md#createstreamingsessionstreamresponseresponsetypedef).
 
 ### create_studio
+
+Create a new Studio.
 
 Type annotations for `boto3.client("nimble").create_studio` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.create_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_studio)
+
+Arguments mapping described in
+[CreateStudioRequestTypeDef](./type_defs.md#createstudiorequesttypedef).
 
 Keyword-only arguments:
 
@@ -230,14 +262,19 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateStudioResponseTypeDef](./type_defs.md#createstudioresponsetypedef).
+[CreateStudioResponseResponseTypeDef](./type_defs.md#createstudioresponseresponsetypedef).
 
 ### create_studio_component
+
+Creates a studio component resource.
 
 Type annotations for `boto3.client("nimble").create_studio_component` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.create_studio_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_studio_component)
+
+Arguments mapping described in
+[CreateStudioComponentRequestTypeDef](./type_defs.md#createstudiocomponentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -259,14 +296,19 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateStudioComponentResponseTypeDef](./type_defs.md#createstudiocomponentresponsetypedef).
+[CreateStudioComponentResponseResponseTypeDef](./type_defs.md#createstudiocomponentresponseresponsetypedef).
 
 ### delete_launch_profile
+
+Permanently delete a launch profile.
 
 Type annotations for `boto3.client("nimble").delete_launch_profile` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.delete_launch_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_launch_profile)
+
+Arguments mapping described in
+[DeleteLaunchProfileRequestTypeDef](./type_defs.md#deletelaunchprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -275,15 +317,20 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[DeleteLaunchProfileResponseTypeDef](./type_defs.md#deletelaunchprofileresponsetypedef).
+[DeleteLaunchProfileResponseResponseTypeDef](./type_defs.md#deletelaunchprofileresponseresponsetypedef).
 
 ### delete_launch_profile_member
+
+Delete a user from launch profile membership.
 
 Type annotations for `boto3.client("nimble").delete_launch_profile_member`
 method.
 
 Boto3 documentation:
 [NimbleStudio.Client.delete_launch_profile_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_launch_profile_member)
+
+Arguments mapping described in
+[DeleteLaunchProfileMemberRequestTypeDef](./type_defs.md#deletelaunchprofilememberrequesttypedef).
 
 Keyword-only arguments:
 
@@ -296,10 +343,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_streaming_image
 
+Delete streaming image.
+
 Type annotations for `boto3.client("nimble").delete_streaming_image` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.delete_streaming_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_streaming_image)
+
+Arguments mapping described in
+[DeleteStreamingImageRequestTypeDef](./type_defs.md#deletestreamingimagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -308,14 +360,19 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[DeleteStreamingImageResponseTypeDef](./type_defs.md#deletestreamingimageresponsetypedef).
+[DeleteStreamingImageResponseResponseTypeDef](./type_defs.md#deletestreamingimageresponseresponsetypedef).
 
 ### delete_streaming_session
+
+Deletes streaming session resource.
 
 Type annotations for `boto3.client("nimble").delete_streaming_session` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.delete_streaming_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_streaming_session)
+
+Arguments mapping described in
+[DeleteStreamingSessionRequestTypeDef](./type_defs.md#deletestreamingsessionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -324,14 +381,19 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[DeleteStreamingSessionResponseTypeDef](./type_defs.md#deletestreamingsessionresponsetypedef).
+[DeleteStreamingSessionResponseResponseTypeDef](./type_defs.md#deletestreamingsessionresponseresponsetypedef).
 
 ### delete_studio
+
+Delete a studio resource.
 
 Type annotations for `boto3.client("nimble").delete_studio` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.delete_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio)
+
+Arguments mapping described in
+[DeleteStudioRequestTypeDef](./type_defs.md#deletestudiorequesttypedef).
 
 Keyword-only arguments:
 
@@ -339,14 +401,19 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[DeleteStudioResponseTypeDef](./type_defs.md#deletestudioresponsetypedef).
+[DeleteStudioResponseResponseTypeDef](./type_defs.md#deletestudioresponseresponsetypedef).
 
 ### delete_studio_component
+
+Deletes a studio component resource.
 
 Type annotations for `boto3.client("nimble").delete_studio_component` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.delete_studio_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio_component)
+
+Arguments mapping described in
+[DeleteStudioComponentRequestTypeDef](./type_defs.md#deletestudiocomponentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -355,14 +422,19 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[DeleteStudioComponentResponseTypeDef](./type_defs.md#deletestudiocomponentresponsetypedef).
+[DeleteStudioComponentResponseResponseTypeDef](./type_defs.md#deletestudiocomponentresponseresponsetypedef).
 
 ### delete_studio_member
+
+Delete a user from studio membership.
 
 Type annotations for `boto3.client("nimble").delete_studio_member` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.delete_studio_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio_member)
+
+Arguments mapping described in
+[DeleteStudioMemberRequestTypeDef](./type_defs.md#deletestudiomemberrequesttypedef).
 
 Keyword-only arguments:
 
@@ -373,6 +445,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("nimble").generate_presigned_url` method.
 
@@ -390,23 +464,34 @@ Returns `str`.
 
 ### get_eula
 
+Get Eula.
+
 Type annotations for `boto3.client("nimble").get_eula` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.get_eula](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_eula)
 
+Arguments mapping described in
+[GetEulaRequestTypeDef](./type_defs.md#geteularequesttypedef).
+
 Keyword-only arguments:
 
 - `eulaId`: `str` *(required)*
 
-Returns [GetEulaResponseTypeDef](./type_defs.md#geteularesponsetypedef).
+Returns
+[GetEulaResponseResponseTypeDef](./type_defs.md#geteularesponseresponsetypedef).
 
 ### get_launch_profile
+
+Get a launch profile.
 
 Type annotations for `boto3.client("nimble").get_launch_profile` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.get_launch_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile)
+
+Arguments mapping described in
+[GetLaunchProfileRequestTypeDef](./type_defs.md#getlaunchprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -414,9 +499,12 @@ Keyword-only arguments:
 - `studioId`: `str` *(required)*
 
 Returns
-[GetLaunchProfileResponseTypeDef](./type_defs.md#getlaunchprofileresponsetypedef).
+[GetLaunchProfileResponseResponseTypeDef](./type_defs.md#getlaunchprofileresponseresponsetypedef).
 
 ### get_launch_profile_details
+
+Launch profile details include the launch profile resource and summary
+information of resources that are used by, or available to, the launch profile.
 
 Type annotations for `boto3.client("nimble").get_launch_profile_details`
 method.
@@ -424,21 +512,29 @@ method.
 Boto3 documentation:
 [NimbleStudio.Client.get_launch_profile_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_details)
 
+Arguments mapping described in
+[GetLaunchProfileDetailsRequestTypeDef](./type_defs.md#getlaunchprofiledetailsrequesttypedef).
+
 Keyword-only arguments:
 
 - `launchProfileId`: `str` *(required)*
 - `studioId`: `str` *(required)*
 
 Returns
-[GetLaunchProfileDetailsResponseTypeDef](./type_defs.md#getlaunchprofiledetailsresponsetypedef).
+[GetLaunchProfileDetailsResponseResponseTypeDef](./type_defs.md#getlaunchprofiledetailsresponseresponsetypedef).
 
 ### get_launch_profile_initialization
+
+Get a launch profile initialization.
 
 Type annotations for `boto3.client("nimble").get_launch_profile_initialization`
 method.
 
 Boto3 documentation:
 [NimbleStudio.Client.get_launch_profile_initialization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_initialization)
+
+Arguments mapping described in
+[GetLaunchProfileInitializationRequestTypeDef](./type_defs.md#getlaunchprofileinitializationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -449,14 +545,19 @@ Keyword-only arguments:
 - `studioId`: `str` *(required)*
 
 Returns
-[GetLaunchProfileInitializationResponseTypeDef](./type_defs.md#getlaunchprofileinitializationresponsetypedef).
+[GetLaunchProfileInitializationResponseResponseTypeDef](./type_defs.md#getlaunchprofileinitializationresponseresponsetypedef).
 
 ### get_launch_profile_member
+
+Get a user persona in launch profile membership.
 
 Type annotations for `boto3.client("nimble").get_launch_profile_member` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.get_launch_profile_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_member)
+
+Arguments mapping described in
+[GetLaunchProfileMemberRequestTypeDef](./type_defs.md#getlaunchprofilememberrequesttypedef).
 
 Keyword-only arguments:
 
@@ -465,14 +566,19 @@ Keyword-only arguments:
 - `studioId`: `str` *(required)*
 
 Returns
-[GetLaunchProfileMemberResponseTypeDef](./type_defs.md#getlaunchprofilememberresponsetypedef).
+[GetLaunchProfileMemberResponseResponseTypeDef](./type_defs.md#getlaunchprofilememberresponseresponsetypedef).
 
 ### get_streaming_image
+
+Get streaming image.
 
 Type annotations for `boto3.client("nimble").get_streaming_image` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.get_streaming_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_image)
+
+Arguments mapping described in
+[GetStreamingImageRequestTypeDef](./type_defs.md#getstreamingimagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -480,14 +586,19 @@ Keyword-only arguments:
 - `studioId`: `str` *(required)*
 
 Returns
-[GetStreamingImageResponseTypeDef](./type_defs.md#getstreamingimageresponsetypedef).
+[GetStreamingImageResponseResponseTypeDef](./type_defs.md#getstreamingimageresponseresponsetypedef).
 
 ### get_streaming_session
+
+Gets StreamingSession resource.
 
 Type annotations for `boto3.client("nimble").get_streaming_session` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.get_streaming_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_session)
+
+Arguments mapping described in
+[GetStreamingSessionRequestTypeDef](./type_defs.md#getstreamingsessionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -495,15 +606,20 @@ Keyword-only arguments:
 - `studioId`: `str` *(required)*
 
 Returns
-[GetStreamingSessionResponseTypeDef](./type_defs.md#getstreamingsessionresponsetypedef).
+[GetStreamingSessionResponseResponseTypeDef](./type_defs.md#getstreamingsessionresponseresponsetypedef).
 
 ### get_streaming_session_stream
+
+Gets a StreamingSessionStream for a streaming session.
 
 Type annotations for `boto3.client("nimble").get_streaming_session_stream`
 method.
 
 Boto3 documentation:
 [NimbleStudio.Client.get_streaming_session_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_session_stream)
+
+Arguments mapping described in
+[GetStreamingSessionStreamRequestTypeDef](./type_defs.md#getstreamingsessionstreamrequesttypedef).
 
 Keyword-only arguments:
 
@@ -512,27 +628,38 @@ Keyword-only arguments:
 - `studioId`: `str` *(required)*
 
 Returns
-[GetStreamingSessionStreamResponseTypeDef](./type_defs.md#getstreamingsessionstreamresponsetypedef).
+[GetStreamingSessionStreamResponseResponseTypeDef](./type_defs.md#getstreamingsessionstreamresponseresponsetypedef).
 
 ### get_studio
+
+Get a Studio resource.
 
 Type annotations for `boto3.client("nimble").get_studio` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.get_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio)
 
+Arguments mapping described in
+[GetStudioRequestTypeDef](./type_defs.md#getstudiorequesttypedef).
+
 Keyword-only arguments:
 
 - `studioId`: `str` *(required)*
 
-Returns [GetStudioResponseTypeDef](./type_defs.md#getstudioresponsetypedef).
+Returns
+[GetStudioResponseResponseTypeDef](./type_defs.md#getstudioresponseresponsetypedef).
 
 ### get_studio_component
+
+Gets a studio component resource.
 
 Type annotations for `boto3.client("nimble").get_studio_component` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.get_studio_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio_component)
+
+Arguments mapping described in
+[GetStudioComponentRequestTypeDef](./type_defs.md#getstudiocomponentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -540,14 +667,19 @@ Keyword-only arguments:
 - `studioId`: `str` *(required)*
 
 Returns
-[GetStudioComponentResponseTypeDef](./type_defs.md#getstudiocomponentresponsetypedef).
+[GetStudioComponentResponseResponseTypeDef](./type_defs.md#getstudiocomponentresponseresponsetypedef).
 
 ### get_studio_member
+
+Get a user's membership in a studio.
 
 Type annotations for `boto3.client("nimble").get_studio_member` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.get_studio_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio_member)
+
+Arguments mapping described in
+[GetStudioMemberRequestTypeDef](./type_defs.md#getstudiomemberrequesttypedef).
 
 Keyword-only arguments:
 
@@ -555,14 +687,19 @@ Keyword-only arguments:
 - `studioId`: `str` *(required)*
 
 Returns
-[GetStudioMemberResponseTypeDef](./type_defs.md#getstudiomemberresponsetypedef).
+[GetStudioMemberResponseResponseTypeDef](./type_defs.md#getstudiomemberresponseresponsetypedef).
 
 ### list_eula_acceptances
+
+List Eula Acceptances.
 
 Type annotations for `boto3.client("nimble").list_eula_acceptances` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.list_eula_acceptances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_eula_acceptances)
+
+Arguments mapping described in
+[ListEulaAcceptancesRequestTypeDef](./type_defs.md#listeulaacceptancesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -571,29 +708,40 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListEulaAcceptancesResponseTypeDef](./type_defs.md#listeulaacceptancesresponsetypedef).
+[ListEulaAcceptancesResponseResponseTypeDef](./type_defs.md#listeulaacceptancesresponseresponsetypedef).
 
 ### list_eulas
+
+List Eulas.
 
 Type annotations for `boto3.client("nimble").list_eulas` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.list_eulas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_eulas)
 
+Arguments mapping described in
+[ListEulasRequestTypeDef](./type_defs.md#listeulasrequesttypedef).
+
 Keyword-only arguments:
 
 - `eulaIds`: `List`\[`str`\]
 - `nextToken`: `str`
 
-Returns [ListEulasResponseTypeDef](./type_defs.md#listeulasresponsetypedef).
+Returns
+[ListEulasResponseResponseTypeDef](./type_defs.md#listeulasresponseresponsetypedef).
 
 ### list_launch_profile_members
+
+Get all users in a given launch profile membership.
 
 Type annotations for `boto3.client("nimble").list_launch_profile_members`
 method.
 
 Boto3 documentation:
 [NimbleStudio.Client.list_launch_profile_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_launch_profile_members)
+
+Arguments mapping described in
+[ListLaunchProfileMembersRequestTypeDef](./type_defs.md#listlaunchprofilemembersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -603,14 +751,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListLaunchProfileMembersResponseTypeDef](./type_defs.md#listlaunchprofilemembersresponsetypedef).
+[ListLaunchProfileMembersResponseResponseTypeDef](./type_defs.md#listlaunchprofilemembersresponseresponsetypedef).
 
 ### list_launch_profiles
+
+List all the launch profiles a studio.
 
 Type annotations for `boto3.client("nimble").list_launch_profiles` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.list_launch_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_launch_profiles)
+
+Arguments mapping described in
+[ListLaunchProfilesRequestTypeDef](./type_defs.md#listlaunchprofilesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -621,14 +774,19 @@ Keyword-only arguments:
 - `states`: `List`\[`str`\]
 
 Returns
-[ListLaunchProfilesResponseTypeDef](./type_defs.md#listlaunchprofilesresponsetypedef).
+[ListLaunchProfilesResponseResponseTypeDef](./type_defs.md#listlaunchprofilesresponseresponsetypedef).
 
 ### list_streaming_images
+
+List the streaming image resources available to this studio.
 
 Type annotations for `boto3.client("nimble").list_streaming_images` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.list_streaming_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_streaming_images)
+
+Arguments mapping described in
+[ListStreamingImagesRequestTypeDef](./type_defs.md#liststreamingimagesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -637,14 +795,19 @@ Keyword-only arguments:
 - `owner`: `str`
 
 Returns
-[ListStreamingImagesResponseTypeDef](./type_defs.md#liststreamingimagesresponsetypedef).
+[ListStreamingImagesResponseResponseTypeDef](./type_defs.md#liststreamingimagesresponseresponsetypedef).
 
 ### list_streaming_sessions
+
+Lists the streaming image resources in a studio.
 
 Type annotations for `boto3.client("nimble").list_streaming_sessions` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.list_streaming_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_streaming_sessions)
+
+Arguments mapping described in
+[ListStreamingSessionsRequestTypeDef](./type_defs.md#liststreamingsessionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -654,14 +817,19 @@ Keyword-only arguments:
 - `sessionIds`: `str`
 
 Returns
-[ListStreamingSessionsResponseTypeDef](./type_defs.md#liststreamingsessionsresponsetypedef).
+[ListStreamingSessionsResponseResponseTypeDef](./type_defs.md#liststreamingsessionsresponseresponsetypedef).
 
 ### list_studio_components
+
+Lists the StudioComponents in a studio.
 
 Type annotations for `boto3.client("nimble").list_studio_components` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.list_studio_components](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studio_components)
+
+Arguments mapping described in
+[ListStudioComponentsRequestTypeDef](./type_defs.md#liststudiocomponentsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -672,14 +840,19 @@ Keyword-only arguments:
 - `types`: `List`\[`str`\]
 
 Returns
-[ListStudioComponentsResponseTypeDef](./type_defs.md#liststudiocomponentsresponsetypedef).
+[ListStudioComponentsResponseResponseTypeDef](./type_defs.md#liststudiocomponentsresponseresponsetypedef).
 
 ### list_studio_members
+
+Get all users in a given studio membership.
 
 Type annotations for `boto3.client("nimble").list_studio_members` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.list_studio_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studio_members)
+
+Arguments mapping described in
+[ListStudioMembersRequestTypeDef](./type_defs.md#liststudiomembersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -688,43 +861,58 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListStudioMembersResponseTypeDef](./type_defs.md#liststudiomembersresponsetypedef).
+[ListStudioMembersResponseResponseTypeDef](./type_defs.md#liststudiomembersresponseresponsetypedef).
 
 ### list_studios
+
+List studios in your AWS account in the requested AWS Region.
 
 Type annotations for `boto3.client("nimble").list_studios` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.list_studios](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studios)
 
+Arguments mapping described in
+[ListStudiosRequestTypeDef](./type_defs.md#liststudiosrequesttypedef).
+
 Keyword-only arguments:
 
 - `nextToken`: `str`
 
 Returns
-[ListStudiosResponseTypeDef](./type_defs.md#liststudiosresponsetypedef).
+[ListStudiosResponseResponseTypeDef](./type_defs.md#liststudiosresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Gets the tags for a resource, given its Amazon Resource Names (ARN).
 
 Type annotations for `boto3.client("nimble").list_tags_for_resource` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### put_launch_profile_members
+
+Add/update users with given persona to launch profile membership.
 
 Type annotations for `boto3.client("nimble").put_launch_profile_members`
 method.
 
 Boto3 documentation:
 [NimbleStudio.Client.put_launch_profile_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.put_launch_profile_members)
+
+Arguments mapping described in
+[PutLaunchProfileMembersRequestTypeDef](./type_defs.md#putlaunchprofilemembersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -740,10 +928,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_studio_members
 
+Add/update users with given persona to studio membership.
+
 Type annotations for `boto3.client("nimble").put_studio_members` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.put_studio_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.put_studio_members)
+
+Arguments mapping described in
+[PutStudioMembersRequestTypeDef](./type_defs.md#putstudiomembersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -758,11 +951,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### start_studio_sso_configuration_repair
 
+Repairs the SSO configuration for a given studio.
+
 Type annotations for
 `boto3.client("nimble").start_studio_sso_configuration_repair` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.start_studio_sso_configuration_repair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.start_studio_sso_configuration_repair)
+
+Arguments mapping described in
+[StartStudioSSOConfigurationRepairRequestTypeDef](./type_defs.md#startstudiossoconfigurationrepairrequesttypedef).
 
 Keyword-only arguments:
 
@@ -770,14 +968,19 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[StartStudioSSOConfigurationRepairResponseTypeDef](./type_defs.md#startstudiossoconfigurationrepairresponsetypedef).
+[StartStudioSSOConfigurationRepairResponseResponseTypeDef](./type_defs.md#startstudiossoconfigurationrepairresponseresponsetypedef).
 
 ### tag_resource
+
+Creates tags for a resource, given its ARN.
 
 Type annotations for `boto3.client("nimble").tag_resource` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -788,10 +991,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Deletes the tags for a resource.
+
 Type annotations for `boto3.client("nimble").untag_resource` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -802,10 +1010,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_launch_profile
 
+Update a launch profile.
+
 Type annotations for `boto3.client("nimble").update_launch_profile` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.update_launch_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_launch_profile)
+
+Arguments mapping described in
+[UpdateLaunchProfileRequestTypeDef](./type_defs.md#updatelaunchprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -820,15 +1033,20 @@ Keyword-only arguments:
 - `studioComponentIds`: `List`\[`str`\]
 
 Returns
-[UpdateLaunchProfileResponseTypeDef](./type_defs.md#updatelaunchprofileresponsetypedef).
+[UpdateLaunchProfileResponseResponseTypeDef](./type_defs.md#updatelaunchprofileresponseresponsetypedef).
 
 ### update_launch_profile_member
+
+Update a user persona in launch profile membership.
 
 Type annotations for `boto3.client("nimble").update_launch_profile_member`
 method.
 
 Boto3 documentation:
 [NimbleStudio.Client.update_launch_profile_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_launch_profile_member)
+
+Arguments mapping described in
+[UpdateLaunchProfileMemberRequestTypeDef](./type_defs.md#updatelaunchprofilememberrequesttypedef).
 
 Keyword-only arguments:
 
@@ -841,14 +1059,19 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[UpdateLaunchProfileMemberResponseTypeDef](./type_defs.md#updatelaunchprofilememberresponsetypedef).
+[UpdateLaunchProfileMemberResponseResponseTypeDef](./type_defs.md#updatelaunchprofilememberresponseresponsetypedef).
 
 ### update_streaming_image
+
+Update streaming image.
 
 Type annotations for `boto3.client("nimble").update_streaming_image` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.update_streaming_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_streaming_image)
+
+Arguments mapping described in
+[UpdateStreamingImageRequestTypeDef](./type_defs.md#updatestreamingimagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -859,14 +1082,19 @@ Keyword-only arguments:
 - `name`: `str`
 
 Returns
-[UpdateStreamingImageResponseTypeDef](./type_defs.md#updatestreamingimageresponsetypedef).
+[UpdateStreamingImageResponseResponseTypeDef](./type_defs.md#updatestreamingimageresponseresponsetypedef).
 
 ### update_studio
+
+Update a Studio resource.
 
 Type annotations for `boto3.client("nimble").update_studio` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.update_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_studio)
+
+Arguments mapping described in
+[UpdateStudioRequestTypeDef](./type_defs.md#updatestudiorequesttypedef).
 
 Keyword-only arguments:
 
@@ -877,14 +1105,19 @@ Keyword-only arguments:
 - `userRoleArn`: `str`
 
 Returns
-[UpdateStudioResponseTypeDef](./type_defs.md#updatestudioresponsetypedef).
+[UpdateStudioResponseResponseTypeDef](./type_defs.md#updatestudioresponseresponsetypedef).
 
 ### update_studio_component
+
+Updates a studio component resource.
 
 Type annotations for `boto3.client("nimble").update_studio_component` method.
 
 Boto3 documentation:
 [NimbleStudio.Client.update_studio_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_studio_component)
+
+Arguments mapping described in
+[UpdateStudioComponentRequestTypeDef](./type_defs.md#updatestudiocomponentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -905,7 +1138,7 @@ Keyword-only arguments:
 - `type`: [StudioComponentTypeType](./literals.md#studiocomponenttypetype)
 
 Returns
-[UpdateStudioComponentResponseTypeDef](./type_defs.md#updatestudiocomponentresponsetypedef).
+[UpdateStudioComponentResponseResponseTypeDef](./type_defs.md#updatestudiocomponentresponseresponsetypedef).
 
 ### get_paginator
 

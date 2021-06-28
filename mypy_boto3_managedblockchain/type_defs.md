@@ -9,23 +9,40 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 ManagedBlockchain module](#typed-dictionaries-for-boto3-managedblockchain-module)
   - [ApprovalThresholdPolicyTypeDef](#approvalthresholdpolicytypedef)
-  - [CreateMemberOutputTypeDef](#creatememberoutputtypedef)
-  - [CreateNetworkOutputTypeDef](#createnetworkoutputtypedef)
-  - [CreateNodeOutputTypeDef](#createnodeoutputtypedef)
-  - [CreateProposalOutputTypeDef](#createproposaloutputtypedef)
-  - [GetMemberOutputTypeDef](#getmemberoutputtypedef)
-  - [GetNetworkOutputTypeDef](#getnetworkoutputtypedef)
-  - [GetNodeOutputTypeDef](#getnodeoutputtypedef)
-  - [GetProposalOutputTypeDef](#getproposaloutputtypedef)
+  - [CreateMemberInputTypeDef](#creatememberinputtypedef)
+  - [CreateMemberOutputResponseTypeDef](#creatememberoutputresponsetypedef)
+  - [CreateNetworkInputTypeDef](#createnetworkinputtypedef)
+  - [CreateNetworkOutputResponseTypeDef](#createnetworkoutputresponsetypedef)
+  - [CreateNodeInputTypeDef](#createnodeinputtypedef)
+  - [CreateNodeOutputResponseTypeDef](#createnodeoutputresponsetypedef)
+  - [CreateProposalInputTypeDef](#createproposalinputtypedef)
+  - [CreateProposalOutputResponseTypeDef](#createproposaloutputresponsetypedef)
+  - [DeleteMemberInputTypeDef](#deletememberinputtypedef)
+  - [DeleteNodeInputTypeDef](#deletenodeinputtypedef)
+  - [GetMemberInputTypeDef](#getmemberinputtypedef)
+  - [GetMemberOutputResponseTypeDef](#getmemberoutputresponsetypedef)
+  - [GetNetworkInputTypeDef](#getnetworkinputtypedef)
+  - [GetNetworkOutputResponseTypeDef](#getnetworkoutputresponsetypedef)
+  - [GetNodeInputTypeDef](#getnodeinputtypedef)
+  - [GetNodeOutputResponseTypeDef](#getnodeoutputresponsetypedef)
+  - [GetProposalInputTypeDef](#getproposalinputtypedef)
+  - [GetProposalOutputResponseTypeDef](#getproposaloutputresponsetypedef)
   - [InvitationTypeDef](#invitationtypedef)
   - [InviteActionTypeDef](#inviteactiontypedef)
-  - [ListInvitationsOutputTypeDef](#listinvitationsoutputtypedef)
-  - [ListMembersOutputTypeDef](#listmembersoutputtypedef)
-  - [ListNetworksOutputTypeDef](#listnetworksoutputtypedef)
-  - [ListNodesOutputTypeDef](#listnodesoutputtypedef)
-  - [ListProposalVotesOutputTypeDef](#listproposalvotesoutputtypedef)
-  - [ListProposalsOutputTypeDef](#listproposalsoutputtypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListInvitationsInputTypeDef](#listinvitationsinputtypedef)
+  - [ListInvitationsOutputResponseTypeDef](#listinvitationsoutputresponsetypedef)
+  - [ListMembersInputTypeDef](#listmembersinputtypedef)
+  - [ListMembersOutputResponseTypeDef](#listmembersoutputresponsetypedef)
+  - [ListNetworksInputTypeDef](#listnetworksinputtypedef)
+  - [ListNetworksOutputResponseTypeDef](#listnetworksoutputresponsetypedef)
+  - [ListNodesInputTypeDef](#listnodesinputtypedef)
+  - [ListNodesOutputResponseTypeDef](#listnodesoutputresponsetypedef)
+  - [ListProposalVotesInputTypeDef](#listproposalvotesinputtypedef)
+  - [ListProposalVotesOutputResponseTypeDef](#listproposalvotesoutputresponsetypedef)
+  - [ListProposalsInputTypeDef](#listproposalsinputtypedef)
+  - [ListProposalsOutputResponseTypeDef](#listproposalsoutputresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [LogConfigurationTypeDef](#logconfigurationtypedef)
   - [LogConfigurationsTypeDef](#logconfigurationstypedef)
   - [MemberConfigurationTypeDef](#memberconfigurationtypedef)
@@ -55,8 +72,14 @@ type annotations stubs module
   - [ProposalActionsTypeDef](#proposalactionstypedef)
   - [ProposalSummaryTypeDef](#proposalsummarytypedef)
   - [ProposalTypeDef](#proposaltypedef)
+  - [RejectInvitationInputTypeDef](#rejectinvitationinputtypedef)
   - [RemoveActionTypeDef](#removeactiontypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateMemberInputTypeDef](#updatememberinputtypedef)
+  - [UpdateNodeInputTypeDef](#updatenodeinputtypedef)
+  - [VoteOnProposalInputTypeDef](#voteonproposalinputtypedef)
   - [VoteSummaryTypeDef](#votesummarytypedef)
   - [VotingPolicyTypeDef](#votingpolicytypedef)
 
@@ -73,10 +96,24 @@ Optional fields:
 - `ThresholdComparator`:
   [ThresholdComparatorType](./literals.md#thresholdcomparatortype)
 
-## CreateMemberOutputTypeDef
+## CreateMemberInputTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import CreateMemberOutputTypeDef
+from mypy_boto3_managedblockchain.type_defs import CreateMemberInputTypeDef
+```
+
+Required fields:
+
+- `ClientRequestToken`: `str`
+- `InvitationId`: `str`
+- `NetworkId`: `str`
+- `MemberConfiguration`:
+  [MemberConfigurationTypeDef](./type_defs.md#memberconfigurationtypedef)
+
+## CreateMemberOutputResponseTypeDef
+
+```python
+from mypy_boto3_managedblockchain.type_defs import CreateMemberOutputResponseTypeDef
 ```
 
 Required fields:
@@ -85,10 +122,33 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateNetworkOutputTypeDef
+## CreateNetworkInputTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import CreateNetworkOutputTypeDef
+from mypy_boto3_managedblockchain.type_defs import CreateNetworkInputTypeDef
+```
+
+Required fields:
+
+- `ClientRequestToken`: `str`
+- `Name`: `str`
+- `Framework`: [FrameworkType](./literals.md#frameworktype)
+- `FrameworkVersion`: `str`
+- `VotingPolicy`: [VotingPolicyTypeDef](./type_defs.md#votingpolicytypedef)
+- `MemberConfiguration`:
+  [MemberConfigurationTypeDef](./type_defs.md#memberconfigurationtypedef)
+
+Optional fields:
+
+- `Description`: `str`
+- `FrameworkConfiguration`:
+  [NetworkFrameworkConfigurationTypeDef](./type_defs.md#networkframeworkconfigurationtypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## CreateNetworkOutputResponseTypeDef
+
+```python
+from mypy_boto3_managedblockchain.type_defs import CreateNetworkOutputResponseTypeDef
 ```
 
 Required fields:
@@ -98,10 +158,28 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateNodeOutputTypeDef
+## CreateNodeInputTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import CreateNodeOutputTypeDef
+from mypy_boto3_managedblockchain.type_defs import CreateNodeInputTypeDef
+```
+
+Required fields:
+
+- `ClientRequestToken`: `str`
+- `NetworkId`: `str`
+- `NodeConfiguration`:
+  [NodeConfigurationTypeDef](./type_defs.md#nodeconfigurationtypedef)
+
+Optional fields:
+
+- `MemberId`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## CreateNodeOutputResponseTypeDef
+
+```python
+from mypy_boto3_managedblockchain.type_defs import CreateNodeOutputResponseTypeDef
 ```
 
 Required fields:
@@ -110,10 +188,28 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateProposalOutputTypeDef
+## CreateProposalInputTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import CreateProposalOutputTypeDef
+from mypy_boto3_managedblockchain.type_defs import CreateProposalInputTypeDef
+```
+
+Required fields:
+
+- `ClientRequestToken`: `str`
+- `NetworkId`: `str`
+- `MemberId`: `str`
+- `Actions`: [ProposalActionsTypeDef](./type_defs.md#proposalactionstypedef)
+
+Optional fields:
+
+- `Description`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## CreateProposalOutputResponseTypeDef
+
+```python
+from mypy_boto3_managedblockchain.type_defs import CreateProposalOutputResponseTypeDef
 ```
 
 Required fields:
@@ -122,10 +218,47 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMemberOutputTypeDef
+## DeleteMemberInputTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import GetMemberOutputTypeDef
+from mypy_boto3_managedblockchain.type_defs import DeleteMemberInputTypeDef
+```
+
+Required fields:
+
+- `NetworkId`: `str`
+- `MemberId`: `str`
+
+## DeleteNodeInputTypeDef
+
+```python
+from mypy_boto3_managedblockchain.type_defs import DeleteNodeInputTypeDef
+```
+
+Required fields:
+
+- `NetworkId`: `str`
+- `NodeId`: `str`
+
+Optional fields:
+
+- `MemberId`: `str`
+
+## GetMemberInputTypeDef
+
+```python
+from mypy_boto3_managedblockchain.type_defs import GetMemberInputTypeDef
+```
+
+Required fields:
+
+- `NetworkId`: `str`
+- `MemberId`: `str`
+
+## GetMemberOutputResponseTypeDef
+
+```python
+from mypy_boto3_managedblockchain.type_defs import GetMemberOutputResponseTypeDef
 ```
 
 Required fields:
@@ -134,10 +267,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetNetworkOutputTypeDef
+## GetNetworkInputTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import GetNetworkOutputTypeDef
+from mypy_boto3_managedblockchain.type_defs import GetNetworkInputTypeDef
+```
+
+Required fields:
+
+- `NetworkId`: `str`
+
+## GetNetworkOutputResponseTypeDef
+
+```python
+from mypy_boto3_managedblockchain.type_defs import GetNetworkOutputResponseTypeDef
 ```
 
 Required fields:
@@ -146,10 +289,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetNodeOutputTypeDef
+## GetNodeInputTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import GetNodeOutputTypeDef
+from mypy_boto3_managedblockchain.type_defs import GetNodeInputTypeDef
+```
+
+Required fields:
+
+- `NetworkId`: `str`
+- `NodeId`: `str`
+
+Optional fields:
+
+- `MemberId`: `str`
+
+## GetNodeOutputResponseTypeDef
+
+```python
+from mypy_boto3_managedblockchain.type_defs import GetNodeOutputResponseTypeDef
 ```
 
 Required fields:
@@ -158,10 +316,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetProposalOutputTypeDef
+## GetProposalInputTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import GetProposalOutputTypeDef
+from mypy_boto3_managedblockchain.type_defs import GetProposalInputTypeDef
+```
+
+Required fields:
+
+- `NetworkId`: `str`
+- `ProposalId`: `str`
+
+## GetProposalOutputResponseTypeDef
+
+```python
+from mypy_boto3_managedblockchain.type_defs import GetProposalOutputResponseTypeDef
 ```
 
 Required fields:
@@ -196,10 +365,21 @@ Required fields:
 
 - `Principal`: `str`
 
-## ListInvitationsOutputTypeDef
+## ListInvitationsInputTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import ListInvitationsOutputTypeDef
+from mypy_boto3_managedblockchain.type_defs import ListInvitationsInputTypeDef
+```
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListInvitationsOutputResponseTypeDef
+
+```python
+from mypy_boto3_managedblockchain.type_defs import ListInvitationsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -210,10 +390,28 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListMembersOutputTypeDef
+## ListMembersInputTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import ListMembersOutputTypeDef
+from mypy_boto3_managedblockchain.type_defs import ListMembersInputTypeDef
+```
+
+Required fields:
+
+- `NetworkId`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+- `Status`: [MemberStatusType](./literals.md#memberstatustype)
+- `IsOwned`: `bool`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListMembersOutputResponseTypeDef
+
+```python
+from mypy_boto3_managedblockchain.type_defs import ListMembersOutputResponseTypeDef
 ```
 
 Required fields:
@@ -224,10 +422,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListNetworksOutputTypeDef
+## ListNetworksInputTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import ListNetworksOutputTypeDef
+from mypy_boto3_managedblockchain.type_defs import ListNetworksInputTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `Framework`: [FrameworkType](./literals.md#frameworktype)
+- `Status`: [NetworkStatusType](./literals.md#networkstatustype)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListNetworksOutputResponseTypeDef
+
+```python
+from mypy_boto3_managedblockchain.type_defs import ListNetworksOutputResponseTypeDef
 ```
 
 Required fields:
@@ -238,10 +450,27 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListNodesOutputTypeDef
+## ListNodesInputTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import ListNodesOutputTypeDef
+from mypy_boto3_managedblockchain.type_defs import ListNodesInputTypeDef
+```
+
+Required fields:
+
+- `NetworkId`: `str`
+
+Optional fields:
+
+- `MemberId`: `str`
+- `Status`: [NodeStatusType](./literals.md#nodestatustype)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListNodesOutputResponseTypeDef
+
+```python
+from mypy_boto3_managedblockchain.type_defs import ListNodesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -251,10 +480,26 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListProposalVotesOutputTypeDef
+## ListProposalVotesInputTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import ListProposalVotesOutputTypeDef
+from mypy_boto3_managedblockchain.type_defs import ListProposalVotesInputTypeDef
+```
+
+Required fields:
+
+- `NetworkId`: `str`
+- `ProposalId`: `str`
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListProposalVotesOutputResponseTypeDef
+
+```python
+from mypy_boto3_managedblockchain.type_defs import ListProposalVotesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -265,10 +510,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListProposalsOutputTypeDef
+## ListProposalsInputTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import ListProposalsOutputTypeDef
+from mypy_boto3_managedblockchain.type_defs import ListProposalsInputTypeDef
+```
+
+Required fields:
+
+- `NetworkId`: `str`
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListProposalsOutputResponseTypeDef
+
+```python
+from mypy_boto3_managedblockchain.type_defs import ListProposalsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -279,15 +539,27 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_managedblockchain.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_managedblockchain.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceArn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_managedblockchain.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LogConfigurationTypeDef
 
@@ -695,6 +967,16 @@ Optional fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `Arn`: `str`
 
+## RejectInvitationInputTypeDef
+
+```python
+from mypy_boto3_managedblockchain.type_defs import RejectInvitationInputTypeDef
+```
+
+Required fields:
+
+- `InvitationId`: `str`
+
 ## RemoveActionTypeDef
 
 ```python
@@ -718,6 +1000,74 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_managedblockchain.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## UntagResourceRequestTypeDef
+
+```python
+from mypy_boto3_managedblockchain.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## UpdateMemberInputTypeDef
+
+```python
+from mypy_boto3_managedblockchain.type_defs import UpdateMemberInputTypeDef
+```
+
+Required fields:
+
+- `NetworkId`: `str`
+- `MemberId`: `str`
+
+Optional fields:
+
+- `LogPublishingConfiguration`:
+  [MemberLogPublishingConfigurationTypeDef](./type_defs.md#memberlogpublishingconfigurationtypedef)
+
+## UpdateNodeInputTypeDef
+
+```python
+from mypy_boto3_managedblockchain.type_defs import UpdateNodeInputTypeDef
+```
+
+Required fields:
+
+- `NetworkId`: `str`
+- `NodeId`: `str`
+
+Optional fields:
+
+- `MemberId`: `str`
+- `LogPublishingConfiguration`:
+  [NodeLogPublishingConfigurationTypeDef](./type_defs.md#nodelogpublishingconfigurationtypedef)
+
+## VoteOnProposalInputTypeDef
+
+```python
+from mypy_boto3_managedblockchain.type_defs import VoteOnProposalInputTypeDef
+```
+
+Required fields:
+
+- `NetworkId`: `str`
+- `ProposalId`: `str`
+- `VoterMemberId`: `str`
+- `Vote`: [VoteValueType](./literals.md#votevaluetype)
 
 ## VoteSummaryTypeDef
 

@@ -8,34 +8,63 @@ type annotations stubs module
 [mypy_boto3_mturk](https://pypi.org/project/mypy-boto3-mturk/).
 
 - [Typed dictionaries for boto3 MTurk module](#typed-dictionaries-for-boto3-mturk-module)
+  - [AcceptQualificationRequestRequestTypeDef](#acceptqualificationrequestrequesttypedef)
+  - [ApproveAssignmentRequestTypeDef](#approveassignmentrequesttypedef)
   - [AssignmentTypeDef](#assignmenttypedef)
+  - [AssociateQualificationWithWorkerRequestTypeDef](#associatequalificationwithworkerrequesttypedef)
   - [BonusPaymentTypeDef](#bonuspaymenttypedef)
-  - [CreateHITResponseTypeDef](#createhitresponsetypedef)
-  - [CreateHITTypeResponseTypeDef](#createhittyperesponsetypedef)
-  - [CreateHITWithHITTypeResponseTypeDef](#createhitwithhittyperesponsetypedef)
-  - [CreateQualificationTypeResponseTypeDef](#createqualificationtyperesponsetypedef)
-  - [GetAccountBalanceResponseTypeDef](#getaccountbalanceresponsetypedef)
-  - [GetAssignmentResponseTypeDef](#getassignmentresponsetypedef)
-  - [GetFileUploadURLResponseTypeDef](#getfileuploadurlresponsetypedef)
-  - [GetHITResponseTypeDef](#gethitresponsetypedef)
-  - [GetQualificationScoreResponseTypeDef](#getqualificationscoreresponsetypedef)
-  - [GetQualificationTypeResponseTypeDef](#getqualificationtyperesponsetypedef)
+  - [CreateAdditionalAssignmentsForHITRequestTypeDef](#createadditionalassignmentsforhitrequesttypedef)
+  - [CreateHITRequestTypeDef](#createhitrequesttypedef)
+  - [CreateHITResponseResponseTypeDef](#createhitresponseresponsetypedef)
+  - [CreateHITTypeRequestTypeDef](#createhittyperequesttypedef)
+  - [CreateHITTypeResponseResponseTypeDef](#createhittyperesponseresponsetypedef)
+  - [CreateHITWithHITTypeRequestTypeDef](#createhitwithhittyperequesttypedef)
+  - [CreateHITWithHITTypeResponseResponseTypeDef](#createhitwithhittyperesponseresponsetypedef)
+  - [CreateQualificationTypeRequestTypeDef](#createqualificationtyperequesttypedef)
+  - [CreateQualificationTypeResponseResponseTypeDef](#createqualificationtyperesponseresponsetypedef)
+  - [CreateWorkerBlockRequestTypeDef](#createworkerblockrequesttypedef)
+  - [DeleteHITRequestTypeDef](#deletehitrequesttypedef)
+  - [DeleteQualificationTypeRequestTypeDef](#deletequalificationtyperequesttypedef)
+  - [DeleteWorkerBlockRequestTypeDef](#deleteworkerblockrequesttypedef)
+  - [DisassociateQualificationFromWorkerRequestTypeDef](#disassociatequalificationfromworkerrequesttypedef)
+  - [GetAccountBalanceResponseResponseTypeDef](#getaccountbalanceresponseresponsetypedef)
+  - [GetAssignmentRequestTypeDef](#getassignmentrequesttypedef)
+  - [GetAssignmentResponseResponseTypeDef](#getassignmentresponseresponsetypedef)
+  - [GetFileUploadURLRequestTypeDef](#getfileuploadurlrequesttypedef)
+  - [GetFileUploadURLResponseResponseTypeDef](#getfileuploadurlresponseresponsetypedef)
+  - [GetHITRequestTypeDef](#gethitrequesttypedef)
+  - [GetHITResponseResponseTypeDef](#gethitresponseresponsetypedef)
+  - [GetQualificationScoreRequestTypeDef](#getqualificationscorerequesttypedef)
+  - [GetQualificationScoreResponseResponseTypeDef](#getqualificationscoreresponseresponsetypedef)
+  - [GetQualificationTypeRequestTypeDef](#getqualificationtyperequesttypedef)
+  - [GetQualificationTypeResponseResponseTypeDef](#getqualificationtyperesponseresponsetypedef)
   - [HITLayoutParameterTypeDef](#hitlayoutparametertypedef)
   - [HITTypeDef](#hittypedef)
-  - [ListAssignmentsForHITResponseTypeDef](#listassignmentsforhitresponsetypedef)
-  - [ListBonusPaymentsResponseTypeDef](#listbonuspaymentsresponsetypedef)
-  - [ListHITsForQualificationTypeResponseTypeDef](#listhitsforqualificationtyperesponsetypedef)
-  - [ListHITsResponseTypeDef](#listhitsresponsetypedef)
-  - [ListQualificationRequestsResponseTypeDef](#listqualificationrequestsresponsetypedef)
-  - [ListQualificationTypesResponseTypeDef](#listqualificationtypesresponsetypedef)
-  - [ListReviewPolicyResultsForHITResponseTypeDef](#listreviewpolicyresultsforhitresponsetypedef)
-  - [ListReviewableHITsResponseTypeDef](#listreviewablehitsresponsetypedef)
-  - [ListWorkerBlocksResponseTypeDef](#listworkerblocksresponsetypedef)
-  - [ListWorkersWithQualificationTypeResponseTypeDef](#listworkerswithqualificationtyperesponsetypedef)
+  - [ListAssignmentsForHITRequestTypeDef](#listassignmentsforhitrequesttypedef)
+  - [ListAssignmentsForHITResponseResponseTypeDef](#listassignmentsforhitresponseresponsetypedef)
+  - [ListBonusPaymentsRequestTypeDef](#listbonuspaymentsrequesttypedef)
+  - [ListBonusPaymentsResponseResponseTypeDef](#listbonuspaymentsresponseresponsetypedef)
+  - [ListHITsForQualificationTypeRequestTypeDef](#listhitsforqualificationtyperequesttypedef)
+  - [ListHITsForQualificationTypeResponseResponseTypeDef](#listhitsforqualificationtyperesponseresponsetypedef)
+  - [ListHITsRequestTypeDef](#listhitsrequesttypedef)
+  - [ListHITsResponseResponseTypeDef](#listhitsresponseresponsetypedef)
+  - [ListQualificationRequestsRequestTypeDef](#listqualificationrequestsrequesttypedef)
+  - [ListQualificationRequestsResponseResponseTypeDef](#listqualificationrequestsresponseresponsetypedef)
+  - [ListQualificationTypesRequestTypeDef](#listqualificationtypesrequesttypedef)
+  - [ListQualificationTypesResponseResponseTypeDef](#listqualificationtypesresponseresponsetypedef)
+  - [ListReviewPolicyResultsForHITRequestTypeDef](#listreviewpolicyresultsforhitrequesttypedef)
+  - [ListReviewPolicyResultsForHITResponseResponseTypeDef](#listreviewpolicyresultsforhitresponseresponsetypedef)
+  - [ListReviewableHITsRequestTypeDef](#listreviewablehitsrequesttypedef)
+  - [ListReviewableHITsResponseResponseTypeDef](#listreviewablehitsresponseresponsetypedef)
+  - [ListWorkerBlocksRequestTypeDef](#listworkerblocksrequesttypedef)
+  - [ListWorkerBlocksResponseResponseTypeDef](#listworkerblocksresponseresponsetypedef)
+  - [ListWorkersWithQualificationTypeRequestTypeDef](#listworkerswithqualificationtyperequesttypedef)
+  - [ListWorkersWithQualificationTypeResponseResponseTypeDef](#listworkerswithqualificationtyperesponseresponsetypedef)
   - [LocaleTypeDef](#localetypedef)
   - [NotificationSpecificationTypeDef](#notificationspecificationtypedef)
   - [NotifyWorkersFailureStatusTypeDef](#notifyworkersfailurestatustypedef)
-  - [NotifyWorkersResponseTypeDef](#notifyworkersresponsetypedef)
+  - [NotifyWorkersRequestTypeDef](#notifyworkersrequesttypedef)
+  - [NotifyWorkersResponseResponseTypeDef](#notifyworkersresponseresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ParameterMapEntryTypeDef](#parametermapentrytypedef)
   - [PolicyParameterTypeDef](#policyparametertypedef)
@@ -43,12 +72,51 @@ type annotations stubs module
   - [QualificationRequirementTypeDef](#qualificationrequirementtypedef)
   - [QualificationTypeDef](#qualificationtypedef)
   - [QualificationTypeTypeDef](#qualificationtypetypedef)
+  - [RejectAssignmentRequestTypeDef](#rejectassignmentrequesttypedef)
+  - [RejectQualificationRequestRequestTypeDef](#rejectqualificationrequestrequesttypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [ReviewActionDetailTypeDef](#reviewactiondetailtypedef)
   - [ReviewPolicyTypeDef](#reviewpolicytypedef)
   - [ReviewReportTypeDef](#reviewreporttypedef)
   - [ReviewResultDetailTypeDef](#reviewresultdetailtypedef)
-  - [UpdateQualificationTypeResponseTypeDef](#updatequalificationtyperesponsetypedef)
+  - [SendBonusRequestTypeDef](#sendbonusrequesttypedef)
+  - [SendTestEventNotificationRequestTypeDef](#sendtesteventnotificationrequesttypedef)
+  - [UpdateExpirationForHITRequestTypeDef](#updateexpirationforhitrequesttypedef)
+  - [UpdateHITReviewStatusRequestTypeDef](#updatehitreviewstatusrequesttypedef)
+  - [UpdateHITTypeOfHITRequestTypeDef](#updatehittypeofhitrequesttypedef)
+  - [UpdateNotificationSettingsRequestTypeDef](#updatenotificationsettingsrequesttypedef)
+  - [UpdateQualificationTypeRequestTypeDef](#updatequalificationtyperequesttypedef)
+  - [UpdateQualificationTypeResponseResponseTypeDef](#updatequalificationtyperesponseresponsetypedef)
   - [WorkerBlockTypeDef](#workerblocktypedef)
+
+## AcceptQualificationRequestRequestTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import AcceptQualificationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `QualificationRequestId`: `str`
+
+Optional fields:
+
+- `IntegerValue`: `int`
+
+## ApproveAssignmentRequestTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import ApproveAssignmentRequestTypeDef
+```
+
+Required fields:
+
+- `AssignmentId`: `str`
+
+Optional fields:
+
+- `RequesterFeedback`: `str`
+- `OverrideRejection`: `bool`
 
 ## AssignmentTypeDef
 
@@ -72,6 +140,22 @@ Optional fields:
 - `Answer`: `str`
 - `RequesterFeedback`: `str`
 
+## AssociateQualificationWithWorkerRequestTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import AssociateQualificationWithWorkerRequestTypeDef
+```
+
+Required fields:
+
+- `QualificationTypeId`: `str`
+- `WorkerId`: `str`
+
+Optional fields:
+
+- `IntegerValue`: `int`
+- `SendNotification`: `bool`
+
 ## BonusPaymentTypeDef
 
 ```python
@@ -86,109 +170,354 @@ Optional fields:
 - `Reason`: `str`
 - `GrantTime`: `datetime`
 
-## CreateHITResponseTypeDef
+## CreateAdditionalAssignmentsForHITRequestTypeDef
 
 ```python
-from mypy_boto3_mturk.type_defs import CreateHITResponseTypeDef
+from mypy_boto3_mturk.type_defs import CreateAdditionalAssignmentsForHITRequestTypeDef
 ```
 
+Required fields:
+
+- `HITId`: `str`
+- `NumberOfAdditionalAssignments`: `int`
+
 Optional fields:
+
+- `UniqueRequestToken`: `str`
+
+## CreateHITRequestTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import CreateHITRequestTypeDef
+```
+
+Required fields:
+
+- `LifetimeInSeconds`: `int`
+- `AssignmentDurationInSeconds`: `int`
+- `Reward`: `str`
+- `Title`: `str`
+- `Description`: `str`
+
+Optional fields:
+
+- `MaxAssignments`: `int`
+- `AutoApprovalDelayInSeconds`: `int`
+- `Keywords`: `str`
+- `Question`: `str`
+- `RequesterAnnotation`: `str`
+- `QualificationRequirements`:
+  `List`\[[QualificationRequirementTypeDef](./type_defs.md#qualificationrequirementtypedef)\]
+- `UniqueRequestToken`: `str`
+- `AssignmentReviewPolicy`:
+  [ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef)
+- `HITReviewPolicy`: [ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef)
+- `HITLayoutId`: `str`
+- `HITLayoutParameters`:
+  `List`\[[HITLayoutParameterTypeDef](./type_defs.md#hitlayoutparametertypedef)\]
+
+## CreateHITResponseResponseTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import CreateHITResponseResponseTypeDef
+```
+
+Required fields:
 
 - `HIT`: [HITTypeDef](./type_defs.md#hittypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateHITTypeResponseTypeDef
+## CreateHITTypeRequestTypeDef
 
 ```python
-from mypy_boto3_mturk.type_defs import CreateHITTypeResponseTypeDef
+from mypy_boto3_mturk.type_defs import CreateHITTypeRequestTypeDef
 ```
 
+Required fields:
+
+- `AssignmentDurationInSeconds`: `int`
+- `Reward`: `str`
+- `Title`: `str`
+- `Description`: `str`
+
 Optional fields:
+
+- `AutoApprovalDelayInSeconds`: `int`
+- `Keywords`: `str`
+- `QualificationRequirements`:
+  `List`\[[QualificationRequirementTypeDef](./type_defs.md#qualificationrequirementtypedef)\]
+
+## CreateHITTypeResponseResponseTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import CreateHITTypeResponseResponseTypeDef
+```
+
+Required fields:
 
 - `HITTypeId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateHITWithHITTypeResponseTypeDef
+## CreateHITWithHITTypeRequestTypeDef
 
 ```python
-from mypy_boto3_mturk.type_defs import CreateHITWithHITTypeResponseTypeDef
+from mypy_boto3_mturk.type_defs import CreateHITWithHITTypeRequestTypeDef
 ```
 
+Required fields:
+
+- `HITTypeId`: `str`
+- `LifetimeInSeconds`: `int`
+
 Optional fields:
+
+- `MaxAssignments`: `int`
+- `Question`: `str`
+- `RequesterAnnotation`: `str`
+- `UniqueRequestToken`: `str`
+- `AssignmentReviewPolicy`:
+  [ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef)
+- `HITReviewPolicy`: [ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef)
+- `HITLayoutId`: `str`
+- `HITLayoutParameters`:
+  `List`\[[HITLayoutParameterTypeDef](./type_defs.md#hitlayoutparametertypedef)\]
+
+## CreateHITWithHITTypeResponseResponseTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import CreateHITWithHITTypeResponseResponseTypeDef
+```
+
+Required fields:
 
 - `HIT`: [HITTypeDef](./type_defs.md#hittypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateQualificationTypeResponseTypeDef
+## CreateQualificationTypeRequestTypeDef
 
 ```python
-from mypy_boto3_mturk.type_defs import CreateQualificationTypeResponseTypeDef
+from mypy_boto3_mturk.type_defs import CreateQualificationTypeRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+- `Description`: `str`
+- `QualificationTypeStatus`:
+  [QualificationTypeStatusType](./literals.md#qualificationtypestatustype)
+
 Optional fields:
+
+- `Keywords`: `str`
+- `RetryDelayInSeconds`: `int`
+- `Test`: `str`
+- `AnswerKey`: `str`
+- `TestDurationInSeconds`: `int`
+- `AutoGranted`: `bool`
+- `AutoGrantedValue`: `int`
+
+## CreateQualificationTypeResponseResponseTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import CreateQualificationTypeResponseResponseTypeDef
+```
+
+Required fields:
 
 - `QualificationType`:
   [QualificationTypeTypeDef](./type_defs.md#qualificationtypetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAccountBalanceResponseTypeDef
+## CreateWorkerBlockRequestTypeDef
 
 ```python
-from mypy_boto3_mturk.type_defs import GetAccountBalanceResponseTypeDef
+from mypy_boto3_mturk.type_defs import CreateWorkerBlockRequestTypeDef
 ```
 
+Required fields:
+
+- `WorkerId`: `str`
+- `Reason`: `str`
+
+## DeleteHITRequestTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import DeleteHITRequestTypeDef
+```
+
+Required fields:
+
+- `HITId`: `str`
+
+## DeleteQualificationTypeRequestTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import DeleteQualificationTypeRequestTypeDef
+```
+
+Required fields:
+
+- `QualificationTypeId`: `str`
+
+## DeleteWorkerBlockRequestTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import DeleteWorkerBlockRequestTypeDef
+```
+
+Required fields:
+
+- `WorkerId`: `str`
+
 Optional fields:
+
+- `Reason`: `str`
+
+## DisassociateQualificationFromWorkerRequestTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import DisassociateQualificationFromWorkerRequestTypeDef
+```
+
+Required fields:
+
+- `WorkerId`: `str`
+- `QualificationTypeId`: `str`
+
+Optional fields:
+
+- `Reason`: `str`
+
+## GetAccountBalanceResponseResponseTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import GetAccountBalanceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AvailableBalance`: `str`
 - `OnHoldBalance`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAssignmentResponseTypeDef
+## GetAssignmentRequestTypeDef
 
 ```python
-from mypy_boto3_mturk.type_defs import GetAssignmentResponseTypeDef
+from mypy_boto3_mturk.type_defs import GetAssignmentRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AssignmentId`: `str`
+
+## GetAssignmentResponseResponseTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import GetAssignmentResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Assignment`: [AssignmentTypeDef](./type_defs.md#assignmenttypedef)
 - `HIT`: [HITTypeDef](./type_defs.md#hittypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFileUploadURLResponseTypeDef
+## GetFileUploadURLRequestTypeDef
 
 ```python
-from mypy_boto3_mturk.type_defs import GetFileUploadURLResponseTypeDef
+from mypy_boto3_mturk.type_defs import GetFileUploadURLRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AssignmentId`: `str`
+- `QuestionIdentifier`: `str`
+
+## GetFileUploadURLResponseResponseTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import GetFileUploadURLResponseResponseTypeDef
+```
+
+Required fields:
 
 - `FileUploadURL`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetHITResponseTypeDef
+## GetHITRequestTypeDef
 
 ```python
-from mypy_boto3_mturk.type_defs import GetHITResponseTypeDef
+from mypy_boto3_mturk.type_defs import GetHITRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `HITId`: `str`
+
+## GetHITResponseResponseTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import GetHITResponseResponseTypeDef
+```
+
+Required fields:
 
 - `HIT`: [HITTypeDef](./type_defs.md#hittypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetQualificationScoreResponseTypeDef
+## GetQualificationScoreRequestTypeDef
 
 ```python
-from mypy_boto3_mturk.type_defs import GetQualificationScoreResponseTypeDef
+from mypy_boto3_mturk.type_defs import GetQualificationScoreRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `QualificationTypeId`: `str`
+- `WorkerId`: `str`
+
+## GetQualificationScoreResponseResponseTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import GetQualificationScoreResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Qualification`: [QualificationTypeDef](./type_defs.md#qualificationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetQualificationTypeResponseTypeDef
+## GetQualificationTypeRequestTypeDef
 
 ```python
-from mypy_boto3_mturk.type_defs import GetQualificationTypeResponseTypeDef
+from mypy_boto3_mturk.type_defs import GetQualificationTypeRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `QualificationTypeId`: `str`
+
+## GetQualificationTypeResponseResponseTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import GetQualificationTypeResponseResponseTypeDef
+```
+
+Required fields:
 
 - `QualificationType`:
   [QualificationTypeTypeDef](./type_defs.md#qualificationtypetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## HITLayoutParameterTypeDef
 
@@ -232,89 +561,205 @@ Optional fields:
 - `NumberOfAssignmentsAvailable`: `int`
 - `NumberOfAssignmentsCompleted`: `int`
 
-## ListAssignmentsForHITResponseTypeDef
+## ListAssignmentsForHITRequestTypeDef
 
 ```python
-from mypy_boto3_mturk.type_defs import ListAssignmentsForHITResponseTypeDef
+from mypy_boto3_mturk.type_defs import ListAssignmentsForHITRequestTypeDef
 ```
 
+Required fields:
+
+- `HITId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `AssignmentStatuses`:
+  `List`\[[AssignmentStatusType](./literals.md#assignmentstatustype)\]
+
+## ListAssignmentsForHITResponseResponseTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import ListAssignmentsForHITResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `NumResults`: `int`
 - `Assignments`:
   `List`\[[AssignmentTypeDef](./type_defs.md#assignmenttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListBonusPaymentsResponseTypeDef
+## ListBonusPaymentsRequestTypeDef
 
 ```python
-from mypy_boto3_mturk.type_defs import ListBonusPaymentsResponseTypeDef
+from mypy_boto3_mturk.type_defs import ListBonusPaymentsRequestTypeDef
 ```
 
 Optional fields:
+
+- `HITId`: `str`
+- `AssignmentId`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListBonusPaymentsResponseResponseTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import ListBonusPaymentsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NumResults`: `int`
 - `NextToken`: `str`
 - `BonusPayments`:
   `List`\[[BonusPaymentTypeDef](./type_defs.md#bonuspaymenttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListHITsForQualificationTypeResponseTypeDef
+## ListHITsForQualificationTypeRequestTypeDef
 
 ```python
-from mypy_boto3_mturk.type_defs import ListHITsForQualificationTypeResponseTypeDef
+from mypy_boto3_mturk.type_defs import ListHITsForQualificationTypeRequestTypeDef
+```
+
+Required fields:
+
+- `QualificationTypeId`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListHITsForQualificationTypeResponseResponseTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import ListHITsForQualificationTypeResponseResponseTypeDef
+```
+
+Required fields:
+
+- `NextToken`: `str`
+- `NumResults`: `int`
+- `HITs`: `List`\[[HITTypeDef](./type_defs.md#hittypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListHITsRequestTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import ListHITsRequestTypeDef
 ```
 
 Optional fields:
 
 - `NextToken`: `str`
-- `NumResults`: `int`
-- `HITs`: `List`\[[HITTypeDef](./type_defs.md#hittypedef)\]
+- `MaxResults`: `int`
 
-## ListHITsResponseTypeDef
+## ListHITsResponseResponseTypeDef
 
 ```python
-from mypy_boto3_mturk.type_defs import ListHITsResponseTypeDef
+from mypy_boto3_mturk.type_defs import ListHITsResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `NextToken`: `str`
 - `NumResults`: `int`
 - `HITs`: `List`\[[HITTypeDef](./type_defs.md#hittypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListQualificationRequestsResponseTypeDef
+## ListQualificationRequestsRequestTypeDef
 
 ```python
-from mypy_boto3_mturk.type_defs import ListQualificationRequestsResponseTypeDef
+from mypy_boto3_mturk.type_defs import ListQualificationRequestsRequestTypeDef
 ```
 
 Optional fields:
+
+- `QualificationTypeId`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListQualificationRequestsResponseResponseTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import ListQualificationRequestsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NumResults`: `int`
 - `NextToken`: `str`
 - `QualificationRequests`:
   `List`\[[QualificationRequestTypeDef](./type_defs.md#qualificationrequesttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListQualificationTypesResponseTypeDef
+## ListQualificationTypesRequestTypeDef
 
 ```python
-from mypy_boto3_mturk.type_defs import ListQualificationTypesResponseTypeDef
+from mypy_boto3_mturk.type_defs import ListQualificationTypesRequestTypeDef
 ```
 
+Required fields:
+
+- `MustBeRequestable`: `bool`
+
 Optional fields:
+
+- `Query`: `str`
+- `MustBeOwnedByCaller`: `bool`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListQualificationTypesResponseResponseTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import ListQualificationTypesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NumResults`: `int`
 - `NextToken`: `str`
 - `QualificationTypes`:
   `List`\[[QualificationTypeTypeDef](./type_defs.md#qualificationtypetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListReviewPolicyResultsForHITResponseTypeDef
+## ListReviewPolicyResultsForHITRequestTypeDef
 
 ```python
-from mypy_boto3_mturk.type_defs import ListReviewPolicyResultsForHITResponseTypeDef
+from mypy_boto3_mturk.type_defs import ListReviewPolicyResultsForHITRequestTypeDef
 ```
 
+Required fields:
+
+- `HITId`: `str`
+
 Optional fields:
+
+- `PolicyLevels`:
+  `List`\[[ReviewPolicyLevelType](./literals.md#reviewpolicyleveltype)\]
+- `RetrieveActions`: `bool`
+- `RetrieveResults`: `bool`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListReviewPolicyResultsForHITResponseResponseTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import ListReviewPolicyResultsForHITResponseResponseTypeDef
+```
+
+Required fields:
 
 - `HITId`: `str`
 - `AssignmentReviewPolicy`:
@@ -324,44 +769,92 @@ Optional fields:
   [ReviewReportTypeDef](./type_defs.md#reviewreporttypedef)
 - `HITReviewReport`: [ReviewReportTypeDef](./type_defs.md#reviewreporttypedef)
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListReviewableHITsResponseTypeDef
+## ListReviewableHITsRequestTypeDef
 
 ```python
-from mypy_boto3_mturk.type_defs import ListReviewableHITsResponseTypeDef
+from mypy_boto3_mturk.type_defs import ListReviewableHITsRequestTypeDef
+```
+
+Optional fields:
+
+- `HITTypeId`: `str`
+- `Status`: [ReviewableHITStatusType](./literals.md#reviewablehitstatustype)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListReviewableHITsResponseResponseTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import ListReviewableHITsResponseResponseTypeDef
+```
+
+Required fields:
+
+- `NextToken`: `str`
+- `NumResults`: `int`
+- `HITs`: `List`\[[HITTypeDef](./type_defs.md#hittypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListWorkerBlocksRequestTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import ListWorkerBlocksRequestTypeDef
 ```
 
 Optional fields:
 
 - `NextToken`: `str`
-- `NumResults`: `int`
-- `HITs`: `List`\[[HITTypeDef](./type_defs.md#hittypedef)\]
+- `MaxResults`: `int`
 
-## ListWorkerBlocksResponseTypeDef
+## ListWorkerBlocksResponseResponseTypeDef
 
 ```python
-from mypy_boto3_mturk.type_defs import ListWorkerBlocksResponseTypeDef
+from mypy_boto3_mturk.type_defs import ListWorkerBlocksResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `NextToken`: `str`
 - `NumResults`: `int`
 - `WorkerBlocks`:
   `List`\[[WorkerBlockTypeDef](./type_defs.md#workerblocktypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListWorkersWithQualificationTypeResponseTypeDef
+## ListWorkersWithQualificationTypeRequestTypeDef
 
 ```python
-from mypy_boto3_mturk.type_defs import ListWorkersWithQualificationTypeResponseTypeDef
+from mypy_boto3_mturk.type_defs import ListWorkersWithQualificationTypeRequestTypeDef
 ```
 
+Required fields:
+
+- `QualificationTypeId`: `str`
+
 Optional fields:
+
+- `Status`: [QualificationStatusType](./literals.md#qualificationstatustype)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListWorkersWithQualificationTypeResponseResponseTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import ListWorkersWithQualificationTypeResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `NumResults`: `int`
 - `Qualifications`:
   `List`\[[QualificationTypeDef](./type_defs.md#qualificationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LocaleTypeDef
 
@@ -404,16 +897,30 @@ Optional fields:
 - `NotifyWorkersFailureMessage`: `str`
 - `WorkerId`: `str`
 
-## NotifyWorkersResponseTypeDef
+## NotifyWorkersRequestTypeDef
 
 ```python
-from mypy_boto3_mturk.type_defs import NotifyWorkersResponseTypeDef
+from mypy_boto3_mturk.type_defs import NotifyWorkersRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Subject`: `str`
+- `MessageText`: `str`
+- `WorkerIds`: `List`\[`str`\]
+
+## NotifyWorkersResponseResponseTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import NotifyWorkersResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NotifyWorkersFailureStatuses`:
   `List`\[[NotifyWorkersFailureStatusTypeDef](./type_defs.md#notifyworkersfailurestatustypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -522,6 +1029,45 @@ Optional fields:
 - `AutoGranted`: `bool`
 - `AutoGrantedValue`: `int`
 
+## RejectAssignmentRequestTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import RejectAssignmentRequestTypeDef
+```
+
+Required fields:
+
+- `AssignmentId`: `str`
+- `RequesterFeedback`: `str`
+
+## RejectQualificationRequestRequestTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import RejectQualificationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `QualificationRequestId`: `str`
+
+Optional fields:
+
+- `Reason`: `str`
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
 ## ReviewActionDetailTypeDef
 
 ```python
@@ -582,16 +1128,121 @@ Optional fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## UpdateQualificationTypeResponseTypeDef
+## SendBonusRequestTypeDef
 
 ```python
-from mypy_boto3_mturk.type_defs import UpdateQualificationTypeResponseTypeDef
+from mypy_boto3_mturk.type_defs import SendBonusRequestTypeDef
 ```
+
+Required fields:
+
+- `WorkerId`: `str`
+- `BonusAmount`: `str`
+- `AssignmentId`: `str`
+- `Reason`: `str`
 
 Optional fields:
 
+- `UniqueRequestToken`: `str`
+
+## SendTestEventNotificationRequestTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import SendTestEventNotificationRequestTypeDef
+```
+
+Required fields:
+
+- `Notification`:
+  [NotificationSpecificationTypeDef](./type_defs.md#notificationspecificationtypedef)
+- `TestEventType`: [EventTypeType](./literals.md#eventtypetype)
+
+## UpdateExpirationForHITRequestTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import UpdateExpirationForHITRequestTypeDef
+```
+
+Required fields:
+
+- `HITId`: `str`
+- `ExpireAt`: `Union`\[`datetime`, `str`\]
+
+## UpdateHITReviewStatusRequestTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import UpdateHITReviewStatusRequestTypeDef
+```
+
+Required fields:
+
+- `HITId`: `str`
+
+Optional fields:
+
+- `Revert`: `bool`
+
+## UpdateHITTypeOfHITRequestTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import UpdateHITTypeOfHITRequestTypeDef
+```
+
+Required fields:
+
+- `HITId`: `str`
+- `HITTypeId`: `str`
+
+## UpdateNotificationSettingsRequestTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import UpdateNotificationSettingsRequestTypeDef
+```
+
+Required fields:
+
+- `HITTypeId`: `str`
+
+Optional fields:
+
+- `Notification`:
+  [NotificationSpecificationTypeDef](./type_defs.md#notificationspecificationtypedef)
+- `Active`: `bool`
+
+## UpdateQualificationTypeRequestTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import UpdateQualificationTypeRequestTypeDef
+```
+
+Required fields:
+
+- `QualificationTypeId`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+- `QualificationTypeStatus`:
+  [QualificationTypeStatusType](./literals.md#qualificationtypestatustype)
+- `Test`: `str`
+- `AnswerKey`: `str`
+- `TestDurationInSeconds`: `int`
+- `RetryDelayInSeconds`: `int`
+- `AutoGranted`: `bool`
+- `AutoGrantedValue`: `int`
+
+## UpdateQualificationTypeResponseResponseTypeDef
+
+```python
+from mypy_boto3_mturk.type_defs import UpdateQualificationTypeResponseResponseTypeDef
+```
+
+Required fields:
+
 - `QualificationType`:
   [QualificationTypeTypeDef](./type_defs.md#qualificationtypetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## WorkerBlockTypeDef
 

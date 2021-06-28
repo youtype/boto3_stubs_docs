@@ -26,7 +26,7 @@ def get_code_review_completed_waiter() -> CodeReviewCompletedWaiter:
 ```
 
 Boto3 documentation:
-[CodeGuruReviewer.Waiter.code_review_completed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Waiter.code_review_completed)
+[CodeGuruReviewer.Waiter.code_review_completed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Waiter.CodeReviewCompleted)
 
 Arguments for `CodeReviewCompletedWaiter.wait` method:
 
@@ -48,7 +48,7 @@ def get_repository_association_succeeded_waiter() -> RepositoryAssociationSuccee
 ```
 
 Boto3 documentation:
-[CodeGuruReviewer.Waiter.repository_association_succeeded](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Waiter.repository_association_succeeded)
+[CodeGuruReviewer.Waiter.repository_association_succeeded](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Waiter.RepositoryAssociationSucceeded)
 
 Arguments for `RepositoryAssociationSucceededWaiter.wait` method:
 

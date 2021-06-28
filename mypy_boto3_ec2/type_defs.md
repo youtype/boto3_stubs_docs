@@ -8,21 +8,31 @@ type annotations stubs module
 [mypy_boto3_ec2](https://pypi.org/project/mypy-boto3-ec2/).
 
 - [Typed dictionaries for boto3 EC2 module](#typed-dictionaries-for-boto3-ec2-module)
-  - [AcceptReservedInstancesExchangeQuoteResultTypeDef](#acceptreservedinstancesexchangequoteresulttypedef)
-  - [AcceptTransitGatewayMulticastDomainAssociationsResultTypeDef](#accepttransitgatewaymulticastdomainassociationsresulttypedef)
-  - [AcceptTransitGatewayPeeringAttachmentResultTypeDef](#accepttransitgatewaypeeringattachmentresulttypedef)
-  - [AcceptTransitGatewayVpcAttachmentResultTypeDef](#accepttransitgatewayvpcattachmentresulttypedef)
-  - [AcceptVpcEndpointConnectionsResultTypeDef](#acceptvpcendpointconnectionsresulttypedef)
-  - [AcceptVpcPeeringConnectionResultTypeDef](#acceptvpcpeeringconnectionresulttypedef)
+  - [AcceptReservedInstancesExchangeQuoteRequestTypeDef](#acceptreservedinstancesexchangequoterequesttypedef)
+  - [AcceptReservedInstancesExchangeQuoteResultResponseTypeDef](#acceptreservedinstancesexchangequoteresultresponsetypedef)
+  - [AcceptTransitGatewayMulticastDomainAssociationsRequestTypeDef](#accepttransitgatewaymulticastdomainassociationsrequesttypedef)
+  - [AcceptTransitGatewayMulticastDomainAssociationsResultResponseTypeDef](#accepttransitgatewaymulticastdomainassociationsresultresponsetypedef)
+  - [AcceptTransitGatewayPeeringAttachmentRequestTypeDef](#accepttransitgatewaypeeringattachmentrequesttypedef)
+  - [AcceptTransitGatewayPeeringAttachmentResultResponseTypeDef](#accepttransitgatewaypeeringattachmentresultresponsetypedef)
+  - [AcceptTransitGatewayVpcAttachmentRequestTypeDef](#accepttransitgatewayvpcattachmentrequesttypedef)
+  - [AcceptTransitGatewayVpcAttachmentResultResponseTypeDef](#accepttransitgatewayvpcattachmentresultresponsetypedef)
+  - [AcceptVpcEndpointConnectionsRequestTypeDef](#acceptvpcendpointconnectionsrequesttypedef)
+  - [AcceptVpcEndpointConnectionsResultResponseTypeDef](#acceptvpcendpointconnectionsresultresponsetypedef)
+  - [AcceptVpcPeeringConnectionRequestTypeDef](#acceptvpcpeeringconnectionrequesttypedef)
+  - [AcceptVpcPeeringConnectionRequestVpcPeeringConnectionTypeDef](#acceptvpcpeeringconnectionrequestvpcpeeringconnectiontypedef)
+  - [AcceptVpcPeeringConnectionResultResponseTypeDef](#acceptvpcpeeringconnectionresultresponsetypedef)
   - [AccountAttributeTypeDef](#accountattributetypedef)
   - [AccountAttributeValueTypeDef](#accountattributevaluetypedef)
   - [ActiveInstanceTypeDef](#activeinstancetypedef)
   - [AddPrefixListEntryTypeDef](#addprefixlistentrytypedef)
   - [AddressAttributeTypeDef](#addressattributetypedef)
   - [AddressTypeDef](#addresstypedef)
-  - [AdvertiseByoipCidrResultTypeDef](#advertisebyoipcidrresulttypedef)
-  - [AllocateAddressResultTypeDef](#allocateaddressresulttypedef)
-  - [AllocateHostsResultTypeDef](#allocatehostsresulttypedef)
+  - [AdvertiseByoipCidrRequestTypeDef](#advertisebyoipcidrrequesttypedef)
+  - [AdvertiseByoipCidrResultResponseTypeDef](#advertisebyoipcidrresultresponsetypedef)
+  - [AllocateAddressRequestTypeDef](#allocateaddressrequesttypedef)
+  - [AllocateAddressResultResponseTypeDef](#allocateaddressresultresponsetypedef)
+  - [AllocateHostsRequestTypeDef](#allocatehostsrequesttypedef)
+  - [AllocateHostsResultResponseTypeDef](#allocatehostsresultresponsetypedef)
   - [AllowedPrincipalTypeDef](#allowedprincipaltypedef)
   - [AlternatePathHintTypeDef](#alternatepathhinttypedef)
   - [AnalysisAclRuleTypeDef](#analysisaclruletypedef)
@@ -32,49 +42,95 @@ type annotations stubs module
   - [AnalysisPacketHeaderTypeDef](#analysispacketheadertypedef)
   - [AnalysisRouteTableRouteTypeDef](#analysisroutetableroutetypedef)
   - [AnalysisSecurityGroupRuleTypeDef](#analysissecuritygroupruletypedef)
-  - [ApplySecurityGroupsToClientVpnTargetNetworkResultTypeDef](#applysecuritygroupstoclientvpntargetnetworkresulttypedef)
-  - [AssignIpv6AddressesResultTypeDef](#assignipv6addressesresulttypedef)
-  - [AssignPrivateIpAddressesResultTypeDef](#assignprivateipaddressesresulttypedef)
+  - [ApplySecurityGroupsToClientVpnTargetNetworkRequestTypeDef](#applysecuritygroupstoclientvpntargetnetworkrequesttypedef)
+  - [ApplySecurityGroupsToClientVpnTargetNetworkResultResponseTypeDef](#applysecuritygroupstoclientvpntargetnetworkresultresponsetypedef)
+  - [AssignIpv6AddressesRequestTypeDef](#assignipv6addressesrequesttypedef)
+  - [AssignIpv6AddressesResultResponseTypeDef](#assignipv6addressesresultresponsetypedef)
+  - [AssignPrivateIpAddressesRequestNetworkInterfaceTypeDef](#assignprivateipaddressesrequestnetworkinterfacetypedef)
+  - [AssignPrivateIpAddressesRequestTypeDef](#assignprivateipaddressesrequesttypedef)
+  - [AssignPrivateIpAddressesResultResponseTypeDef](#assignprivateipaddressesresultresponsetypedef)
   - [AssignedPrivateIpAddressTypeDef](#assignedprivateipaddresstypedef)
-  - [AssociateAddressResultTypeDef](#associateaddressresulttypedef)
-  - [AssociateClientVpnTargetNetworkResultTypeDef](#associateclientvpntargetnetworkresulttypedef)
-  - [AssociateEnclaveCertificateIamRoleResultTypeDef](#associateenclavecertificateiamroleresulttypedef)
-  - [AssociateIamInstanceProfileResultTypeDef](#associateiaminstanceprofileresulttypedef)
-  - [AssociateRouteTableResultTypeDef](#associateroutetableresulttypedef)
-  - [AssociateSubnetCidrBlockResultTypeDef](#associatesubnetcidrblockresulttypedef)
-  - [AssociateTransitGatewayMulticastDomainResultTypeDef](#associatetransitgatewaymulticastdomainresulttypedef)
-  - [AssociateTransitGatewayRouteTableResultTypeDef](#associatetransitgatewayroutetableresulttypedef)
-  - [AssociateTrunkInterfaceResultTypeDef](#associatetrunkinterfaceresulttypedef)
-  - [AssociateVpcCidrBlockResultTypeDef](#associatevpccidrblockresulttypedef)
+  - [AssociateAddressRequestClassicAddressTypeDef](#associateaddressrequestclassicaddresstypedef)
+  - [AssociateAddressRequestTypeDef](#associateaddressrequesttypedef)
+  - [AssociateAddressRequestVpcAddressTypeDef](#associateaddressrequestvpcaddresstypedef)
+  - [AssociateAddressResultResponseTypeDef](#associateaddressresultresponsetypedef)
+  - [AssociateClientVpnTargetNetworkRequestTypeDef](#associateclientvpntargetnetworkrequesttypedef)
+  - [AssociateClientVpnTargetNetworkResultResponseTypeDef](#associateclientvpntargetnetworkresultresponsetypedef)
+  - [AssociateDhcpOptionsRequestDhcpOptionsTypeDef](#associatedhcpoptionsrequestdhcpoptionstypedef)
+  - [AssociateDhcpOptionsRequestTypeDef](#associatedhcpoptionsrequesttypedef)
+  - [AssociateDhcpOptionsRequestVpcTypeDef](#associatedhcpoptionsrequestvpctypedef)
+  - [AssociateEnclaveCertificateIamRoleRequestTypeDef](#associateenclavecertificateiamrolerequesttypedef)
+  - [AssociateEnclaveCertificateIamRoleResultResponseTypeDef](#associateenclavecertificateiamroleresultresponsetypedef)
+  - [AssociateIamInstanceProfileRequestTypeDef](#associateiaminstanceprofilerequesttypedef)
+  - [AssociateIamInstanceProfileResultResponseTypeDef](#associateiaminstanceprofileresultresponsetypedef)
+  - [AssociateRouteTableRequestRouteTableTypeDef](#associateroutetablerequestroutetabletypedef)
+  - [AssociateRouteTableRequestTypeDef](#associateroutetablerequesttypedef)
+  - [AssociateRouteTableResultResponseTypeDef](#associateroutetableresultresponsetypedef)
+  - [AssociateSubnetCidrBlockRequestTypeDef](#associatesubnetcidrblockrequesttypedef)
+  - [AssociateSubnetCidrBlockResultResponseTypeDef](#associatesubnetcidrblockresultresponsetypedef)
+  - [AssociateTransitGatewayMulticastDomainRequestTypeDef](#associatetransitgatewaymulticastdomainrequesttypedef)
+  - [AssociateTransitGatewayMulticastDomainResultResponseTypeDef](#associatetransitgatewaymulticastdomainresultresponsetypedef)
+  - [AssociateTransitGatewayRouteTableRequestTypeDef](#associatetransitgatewayroutetablerequesttypedef)
+  - [AssociateTransitGatewayRouteTableResultResponseTypeDef](#associatetransitgatewayroutetableresultresponsetypedef)
+  - [AssociateTrunkInterfaceRequestTypeDef](#associatetrunkinterfacerequesttypedef)
+  - [AssociateTrunkInterfaceResultResponseTypeDef](#associatetrunkinterfaceresultresponsetypedef)
+  - [AssociateVpcCidrBlockRequestTypeDef](#associatevpccidrblockrequesttypedef)
+  - [AssociateVpcCidrBlockResultResponseTypeDef](#associatevpccidrblockresultresponsetypedef)
   - [AssociatedRoleTypeDef](#associatedroletypedef)
   - [AssociatedTargetNetworkTypeDef](#associatedtargetnetworktypedef)
   - [AssociationStatusTypeDef](#associationstatustypedef)
   - [AthenaIntegrationTypeDef](#athenaintegrationtypedef)
-  - [AttachClassicLinkVpcResultTypeDef](#attachclassiclinkvpcresulttypedef)
-  - [AttachNetworkInterfaceResultTypeDef](#attachnetworkinterfaceresulttypedef)
-  - [AttachVpnGatewayResultTypeDef](#attachvpngatewayresulttypedef)
+  - [AttachClassicLinkVpcRequestInstanceTypeDef](#attachclassiclinkvpcrequestinstancetypedef)
+  - [AttachClassicLinkVpcRequestTypeDef](#attachclassiclinkvpcrequesttypedef)
+  - [AttachClassicLinkVpcRequestVpcTypeDef](#attachclassiclinkvpcrequestvpctypedef)
+  - [AttachClassicLinkVpcResultResponseTypeDef](#attachclassiclinkvpcresultresponsetypedef)
+  - [AttachInternetGatewayRequestInternetGatewayTypeDef](#attachinternetgatewayrequestinternetgatewaytypedef)
+  - [AttachInternetGatewayRequestTypeDef](#attachinternetgatewayrequesttypedef)
+  - [AttachInternetGatewayRequestVpcTypeDef](#attachinternetgatewayrequestvpctypedef)
+  - [AttachNetworkInterfaceRequestNetworkInterfaceTypeDef](#attachnetworkinterfacerequestnetworkinterfacetypedef)
+  - [AttachNetworkInterfaceRequestTypeDef](#attachnetworkinterfacerequesttypedef)
+  - [AttachNetworkInterfaceResultResponseTypeDef](#attachnetworkinterfaceresultresponsetypedef)
+  - [AttachVolumeRequestInstanceTypeDef](#attachvolumerequestinstancetypedef)
+  - [AttachVolumeRequestTypeDef](#attachvolumerequesttypedef)
+  - [AttachVolumeRequestVolumeTypeDef](#attachvolumerequestvolumetypedef)
+  - [AttachVpnGatewayRequestTypeDef](#attachvpngatewayrequesttypedef)
+  - [AttachVpnGatewayResultResponseTypeDef](#attachvpngatewayresultresponsetypedef)
   - [AttributeBooleanValueTypeDef](#attributebooleanvaluetypedef)
   - [AttributeValueTypeDef](#attributevaluetypedef)
   - [AuthorizationRuleTypeDef](#authorizationruletypedef)
-  - [AuthorizeClientVpnIngressResultTypeDef](#authorizeclientvpningressresulttypedef)
+  - [AuthorizeClientVpnIngressRequestTypeDef](#authorizeclientvpningressrequesttypedef)
+  - [AuthorizeClientVpnIngressResultResponseTypeDef](#authorizeclientvpningressresultresponsetypedef)
+  - [AuthorizeSecurityGroupEgressRequestSecurityGroupTypeDef](#authorizesecuritygroupegressrequestsecuritygrouptypedef)
+  - [AuthorizeSecurityGroupEgressRequestTypeDef](#authorizesecuritygroupegressrequesttypedef)
+  - [AuthorizeSecurityGroupIngressRequestSecurityGroupTypeDef](#authorizesecuritygroupingressrequestsecuritygrouptypedef)
+  - [AuthorizeSecurityGroupIngressRequestTypeDef](#authorizesecuritygroupingressrequesttypedef)
   - [AvailabilityZoneMessageTypeDef](#availabilityzonemessagetypedef)
   - [AvailabilityZoneTypeDef](#availabilityzonetypedef)
   - [AvailableCapacityTypeDef](#availablecapacitytypedef)
   - [BlobAttributeValueTypeDef](#blobattributevaluetypedef)
   - [BlockDeviceMappingTypeDef](#blockdevicemappingtypedef)
-  - [BundleInstanceResultTypeDef](#bundleinstanceresulttypedef)
+  - [BundleInstanceRequestTypeDef](#bundleinstancerequesttypedef)
+  - [BundleInstanceResultResponseTypeDef](#bundleinstanceresultresponsetypedef)
   - [BundleTaskErrorTypeDef](#bundletaskerrortypedef)
   - [BundleTaskTypeDef](#bundletasktypedef)
   - [ByoipCidrTypeDef](#byoipcidrtypedef)
-  - [CancelBundleTaskResultTypeDef](#cancelbundletaskresulttypedef)
-  - [CancelCapacityReservationResultTypeDef](#cancelcapacityreservationresulttypedef)
-  - [CancelImportTaskResultTypeDef](#cancelimporttaskresulttypedef)
-  - [CancelReservedInstancesListingResultTypeDef](#cancelreservedinstanceslistingresulttypedef)
+  - [CancelBundleTaskRequestTypeDef](#cancelbundletaskrequesttypedef)
+  - [CancelBundleTaskResultResponseTypeDef](#cancelbundletaskresultresponsetypedef)
+  - [CancelCapacityReservationRequestTypeDef](#cancelcapacityreservationrequesttypedef)
+  - [CancelCapacityReservationResultResponseTypeDef](#cancelcapacityreservationresultresponsetypedef)
+  - [CancelConversionRequestTypeDef](#cancelconversionrequesttypedef)
+  - [CancelExportTaskRequestTypeDef](#cancelexporttaskrequesttypedef)
+  - [CancelImportTaskRequestTypeDef](#cancelimporttaskrequesttypedef)
+  - [CancelImportTaskResultResponseTypeDef](#cancelimporttaskresultresponsetypedef)
+  - [CancelReservedInstancesListingRequestTypeDef](#cancelreservedinstanceslistingrequesttypedef)
+  - [CancelReservedInstancesListingResultResponseTypeDef](#cancelreservedinstanceslistingresultresponsetypedef)
   - [CancelSpotFleetRequestsErrorItemTypeDef](#cancelspotfleetrequestserroritemtypedef)
   - [CancelSpotFleetRequestsErrorTypeDef](#cancelspotfleetrequestserrortypedef)
-  - [CancelSpotFleetRequestsResponseTypeDef](#cancelspotfleetrequestsresponsetypedef)
+  - [CancelSpotFleetRequestsRequestTypeDef](#cancelspotfleetrequestsrequesttypedef)
+  - [CancelSpotFleetRequestsResponseResponseTypeDef](#cancelspotfleetrequestsresponseresponsetypedef)
   - [CancelSpotFleetRequestsSuccessItemTypeDef](#cancelspotfleetrequestssuccessitemtypedef)
-  - [CancelSpotInstanceRequestsResultTypeDef](#cancelspotinstancerequestsresulttypedef)
+  - [CancelSpotInstanceRequestsRequestTypeDef](#cancelspotinstancerequestsrequesttypedef)
+  - [CancelSpotInstanceRequestsResultResponseTypeDef](#cancelspotinstancerequestsresultresponsetypedef)
   - [CancelledSpotInstanceRequestTypeDef](#cancelledspotinstancerequesttypedef)
   - [CapacityReservationGroupTypeDef](#capacityreservationgrouptypedef)
   - [CapacityReservationOptionsRequestTypeDef](#capacityreservationoptionsrequesttypedef)
@@ -109,275 +165,620 @@ type annotations stubs module
   - [ClientVpnRouteTypeDef](#clientvpnroutetypedef)
   - [CoipAddressUsageTypeDef](#coipaddressusagetypedef)
   - [CoipPoolTypeDef](#coippooltypedef)
-  - [ConfirmProductInstanceResultTypeDef](#confirmproductinstanceresulttypedef)
+  - [ConfirmProductInstanceRequestTypeDef](#confirmproductinstancerequesttypedef)
+  - [ConfirmProductInstanceResultResponseTypeDef](#confirmproductinstanceresultresponsetypedef)
   - [ConnectionLogOptionsTypeDef](#connectionlogoptionstypedef)
   - [ConnectionLogResponseOptionsTypeDef](#connectionlogresponseoptionstypedef)
   - [ConnectionNotificationTypeDef](#connectionnotificationtypedef)
   - [ConversionTaskTypeDef](#conversiontasktypedef)
-  - [CopyFpgaImageResultTypeDef](#copyfpgaimageresulttypedef)
-  - [CopyImageResultTypeDef](#copyimageresulttypedef)
-  - [CopySnapshotResultTypeDef](#copysnapshotresulttypedef)
+  - [CopyFpgaImageRequestTypeDef](#copyfpgaimagerequesttypedef)
+  - [CopyFpgaImageResultResponseTypeDef](#copyfpgaimageresultresponsetypedef)
+  - [CopyImageRequestTypeDef](#copyimagerequesttypedef)
+  - [CopyImageResultResponseTypeDef](#copyimageresultresponsetypedef)
+  - [CopySnapshotRequestSnapshotTypeDef](#copysnapshotrequestsnapshottypedef)
+  - [CopySnapshotRequestTypeDef](#copysnapshotrequesttypedef)
+  - [CopySnapshotResultResponseTypeDef](#copysnapshotresultresponsetypedef)
   - [CpuOptionsRequestTypeDef](#cpuoptionsrequesttypedef)
   - [CpuOptionsTypeDef](#cpuoptionstypedef)
-  - [CreateCapacityReservationResultTypeDef](#createcapacityreservationresulttypedef)
-  - [CreateCarrierGatewayResultTypeDef](#createcarriergatewayresulttypedef)
-  - [CreateClientVpnEndpointResultTypeDef](#createclientvpnendpointresulttypedef)
-  - [CreateClientVpnRouteResultTypeDef](#createclientvpnrouteresulttypedef)
-  - [CreateCustomerGatewayResultTypeDef](#createcustomergatewayresulttypedef)
-  - [CreateDefaultSubnetResultTypeDef](#createdefaultsubnetresulttypedef)
-  - [CreateDefaultVpcResultTypeDef](#createdefaultvpcresulttypedef)
-  - [CreateDhcpOptionsResultTypeDef](#createdhcpoptionsresulttypedef)
-  - [CreateEgressOnlyInternetGatewayResultTypeDef](#createegressonlyinternetgatewayresulttypedef)
+  - [CreateCapacityReservationRequestTypeDef](#createcapacityreservationrequesttypedef)
+  - [CreateCapacityReservationResultResponseTypeDef](#createcapacityreservationresultresponsetypedef)
+  - [CreateCarrierGatewayRequestTypeDef](#createcarriergatewayrequesttypedef)
+  - [CreateCarrierGatewayResultResponseTypeDef](#createcarriergatewayresultresponsetypedef)
+  - [CreateClientVpnEndpointRequestTypeDef](#createclientvpnendpointrequesttypedef)
+  - [CreateClientVpnEndpointResultResponseTypeDef](#createclientvpnendpointresultresponsetypedef)
+  - [CreateClientVpnRouteRequestTypeDef](#createclientvpnrouterequesttypedef)
+  - [CreateClientVpnRouteResultResponseTypeDef](#createclientvpnrouteresultresponsetypedef)
+  - [CreateCustomerGatewayRequestTypeDef](#createcustomergatewayrequesttypedef)
+  - [CreateCustomerGatewayResultResponseTypeDef](#createcustomergatewayresultresponsetypedef)
+  - [CreateDefaultSubnetRequestTypeDef](#createdefaultsubnetrequesttypedef)
+  - [CreateDefaultSubnetResultResponseTypeDef](#createdefaultsubnetresultresponsetypedef)
+  - [CreateDefaultVpcRequestTypeDef](#createdefaultvpcrequesttypedef)
+  - [CreateDefaultVpcResultResponseTypeDef](#createdefaultvpcresultresponsetypedef)
+  - [CreateDhcpOptionsRequestServiceResourceTypeDef](#createdhcpoptionsrequestserviceresourcetypedef)
+  - [CreateDhcpOptionsRequestTypeDef](#createdhcpoptionsrequesttypedef)
+  - [CreateDhcpOptionsResultResponseTypeDef](#createdhcpoptionsresultresponsetypedef)
+  - [CreateEgressOnlyInternetGatewayRequestTypeDef](#createegressonlyinternetgatewayrequesttypedef)
+  - [CreateEgressOnlyInternetGatewayResultResponseTypeDef](#createegressonlyinternetgatewayresultresponsetypedef)
   - [CreateFleetErrorTypeDef](#createfleeterrortypedef)
   - [CreateFleetInstanceTypeDef](#createfleetinstancetypedef)
-  - [CreateFleetResultTypeDef](#createfleetresulttypedef)
-  - [CreateFlowLogsResultTypeDef](#createflowlogsresulttypedef)
-  - [CreateFpgaImageResultTypeDef](#createfpgaimageresulttypedef)
-  - [CreateImageResultTypeDef](#createimageresulttypedef)
-  - [CreateInstanceExportTaskResultTypeDef](#createinstanceexporttaskresulttypedef)
-  - [CreateInternetGatewayResultTypeDef](#createinternetgatewayresulttypedef)
-  - [CreateLaunchTemplateResultTypeDef](#createlaunchtemplateresulttypedef)
-  - [CreateLaunchTemplateVersionResultTypeDef](#createlaunchtemplateversionresulttypedef)
-  - [CreateLocalGatewayRouteResultTypeDef](#createlocalgatewayrouteresulttypedef)
-  - [CreateLocalGatewayRouteTableVpcAssociationResultTypeDef](#createlocalgatewayroutetablevpcassociationresulttypedef)
-  - [CreateManagedPrefixListResultTypeDef](#createmanagedprefixlistresulttypedef)
-  - [CreateNatGatewayResultTypeDef](#createnatgatewayresulttypedef)
-  - [CreateNetworkAclResultTypeDef](#createnetworkaclresulttypedef)
-  - [CreateNetworkInsightsPathResultTypeDef](#createnetworkinsightspathresulttypedef)
-  - [CreateNetworkInterfacePermissionResultTypeDef](#createnetworkinterfacepermissionresulttypedef)
-  - [CreateNetworkInterfaceResultTypeDef](#createnetworkinterfaceresulttypedef)
-  - [CreatePlacementGroupResultTypeDef](#createplacementgroupresulttypedef)
-  - [CreateReplaceRootVolumeTaskResultTypeDef](#createreplacerootvolumetaskresulttypedef)
-  - [CreateReservedInstancesListingResultTypeDef](#createreservedinstanceslistingresulttypedef)
-  - [CreateRestoreImageTaskResultTypeDef](#createrestoreimagetaskresulttypedef)
-  - [CreateRouteResultTypeDef](#createrouteresulttypedef)
-  - [CreateRouteTableResultTypeDef](#createroutetableresulttypedef)
-  - [CreateSecurityGroupResultTypeDef](#createsecuritygroupresulttypedef)
-  - [CreateSnapshotsResultTypeDef](#createsnapshotsresulttypedef)
-  - [CreateSpotDatafeedSubscriptionResultTypeDef](#createspotdatafeedsubscriptionresulttypedef)
-  - [CreateStoreImageTaskResultTypeDef](#createstoreimagetaskresulttypedef)
-  - [CreateSubnetResultTypeDef](#createsubnetresulttypedef)
-  - [CreateTrafficMirrorFilterResultTypeDef](#createtrafficmirrorfilterresulttypedef)
-  - [CreateTrafficMirrorFilterRuleResultTypeDef](#createtrafficmirrorfilterruleresulttypedef)
-  - [CreateTrafficMirrorSessionResultTypeDef](#createtrafficmirrorsessionresulttypedef)
-  - [CreateTrafficMirrorTargetResultTypeDef](#createtrafficmirrortargetresulttypedef)
-  - [CreateTransitGatewayConnectPeerResultTypeDef](#createtransitgatewayconnectpeerresulttypedef)
+  - [CreateFleetRequestTypeDef](#createfleetrequesttypedef)
+  - [CreateFleetResultResponseTypeDef](#createfleetresultresponsetypedef)
+  - [CreateFlowLogsRequestTypeDef](#createflowlogsrequesttypedef)
+  - [CreateFlowLogsResultResponseTypeDef](#createflowlogsresultresponsetypedef)
+  - [CreateFpgaImageRequestTypeDef](#createfpgaimagerequesttypedef)
+  - [CreateFpgaImageResultResponseTypeDef](#createfpgaimageresultresponsetypedef)
+  - [CreateImageRequestInstanceTypeDef](#createimagerequestinstancetypedef)
+  - [CreateImageRequestTypeDef](#createimagerequesttypedef)
+  - [CreateImageResultResponseTypeDef](#createimageresultresponsetypedef)
+  - [CreateInstanceExportTaskRequestTypeDef](#createinstanceexporttaskrequesttypedef)
+  - [CreateInstanceExportTaskResultResponseTypeDef](#createinstanceexporttaskresultresponsetypedef)
+  - [CreateInternetGatewayRequestServiceResourceTypeDef](#createinternetgatewayrequestserviceresourcetypedef)
+  - [CreateInternetGatewayRequestTypeDef](#createinternetgatewayrequesttypedef)
+  - [CreateInternetGatewayResultResponseTypeDef](#createinternetgatewayresultresponsetypedef)
+  - [CreateKeyPairRequestServiceResourceTypeDef](#createkeypairrequestserviceresourcetypedef)
+  - [CreateKeyPairRequestTypeDef](#createkeypairrequesttypedef)
+  - [CreateLaunchTemplateRequestTypeDef](#createlaunchtemplaterequesttypedef)
+  - [CreateLaunchTemplateResultResponseTypeDef](#createlaunchtemplateresultresponsetypedef)
+  - [CreateLaunchTemplateVersionRequestTypeDef](#createlaunchtemplateversionrequesttypedef)
+  - [CreateLaunchTemplateVersionResultResponseTypeDef](#createlaunchtemplateversionresultresponsetypedef)
+  - [CreateLocalGatewayRouteRequestTypeDef](#createlocalgatewayrouterequesttypedef)
+  - [CreateLocalGatewayRouteResultResponseTypeDef](#createlocalgatewayrouteresultresponsetypedef)
+  - [CreateLocalGatewayRouteTableVpcAssociationRequestTypeDef](#createlocalgatewayroutetablevpcassociationrequesttypedef)
+  - [CreateLocalGatewayRouteTableVpcAssociationResultResponseTypeDef](#createlocalgatewayroutetablevpcassociationresultresponsetypedef)
+  - [CreateManagedPrefixListRequestTypeDef](#createmanagedprefixlistrequesttypedef)
+  - [CreateManagedPrefixListResultResponseTypeDef](#createmanagedprefixlistresultresponsetypedef)
+  - [CreateNatGatewayRequestTypeDef](#createnatgatewayrequesttypedef)
+  - [CreateNatGatewayResultResponseTypeDef](#createnatgatewayresultresponsetypedef)
+  - [CreateNetworkAclEntryRequestNetworkAclTypeDef](#createnetworkaclentryrequestnetworkacltypedef)
+  - [CreateNetworkAclEntryRequestTypeDef](#createnetworkaclentryrequesttypedef)
+  - [CreateNetworkAclRequestServiceResourceTypeDef](#createnetworkaclrequestserviceresourcetypedef)
+  - [CreateNetworkAclRequestTypeDef](#createnetworkaclrequesttypedef)
+  - [CreateNetworkAclRequestVpcTypeDef](#createnetworkaclrequestvpctypedef)
+  - [CreateNetworkAclResultResponseTypeDef](#createnetworkaclresultresponsetypedef)
+  - [CreateNetworkInsightsPathRequestTypeDef](#createnetworkinsightspathrequesttypedef)
+  - [CreateNetworkInsightsPathResultResponseTypeDef](#createnetworkinsightspathresultresponsetypedef)
+  - [CreateNetworkInterfacePermissionRequestTypeDef](#createnetworkinterfacepermissionrequesttypedef)
+  - [CreateNetworkInterfacePermissionResultResponseTypeDef](#createnetworkinterfacepermissionresultresponsetypedef)
+  - [CreateNetworkInterfaceRequestServiceResourceTypeDef](#createnetworkinterfacerequestserviceresourcetypedef)
+  - [CreateNetworkInterfaceRequestSubnetTypeDef](#createnetworkinterfacerequestsubnettypedef)
+  - [CreateNetworkInterfaceRequestTypeDef](#createnetworkinterfacerequesttypedef)
+  - [CreateNetworkInterfaceResultResponseTypeDef](#createnetworkinterfaceresultresponsetypedef)
+  - [CreatePlacementGroupRequestServiceResourceTypeDef](#createplacementgrouprequestserviceresourcetypedef)
+  - [CreatePlacementGroupRequestTypeDef](#createplacementgrouprequesttypedef)
+  - [CreatePlacementGroupResultResponseTypeDef](#createplacementgroupresultresponsetypedef)
+  - [CreateReplaceRootVolumeTaskRequestTypeDef](#createreplacerootvolumetaskrequesttypedef)
+  - [CreateReplaceRootVolumeTaskResultResponseTypeDef](#createreplacerootvolumetaskresultresponsetypedef)
+  - [CreateReservedInstancesListingRequestTypeDef](#createreservedinstanceslistingrequesttypedef)
+  - [CreateReservedInstancesListingResultResponseTypeDef](#createreservedinstanceslistingresultresponsetypedef)
+  - [CreateRestoreImageTaskRequestTypeDef](#createrestoreimagetaskrequesttypedef)
+  - [CreateRestoreImageTaskResultResponseTypeDef](#createrestoreimagetaskresultresponsetypedef)
+  - [CreateRouteRequestRouteTableTypeDef](#createrouterequestroutetabletypedef)
+  - [CreateRouteRequestTypeDef](#createrouterequesttypedef)
+  - [CreateRouteResultResponseTypeDef](#createrouteresultresponsetypedef)
+  - [CreateRouteTableRequestServiceResourceTypeDef](#createroutetablerequestserviceresourcetypedef)
+  - [CreateRouteTableRequestTypeDef](#createroutetablerequesttypedef)
+  - [CreateRouteTableRequestVpcTypeDef](#createroutetablerequestvpctypedef)
+  - [CreateRouteTableResultResponseTypeDef](#createroutetableresultresponsetypedef)
+  - [CreateSecurityGroupRequestServiceResourceTypeDef](#createsecuritygrouprequestserviceresourcetypedef)
+  - [CreateSecurityGroupRequestTypeDef](#createsecuritygrouprequesttypedef)
+  - [CreateSecurityGroupRequestVpcTypeDef](#createsecuritygrouprequestvpctypedef)
+  - [CreateSecurityGroupResultResponseTypeDef](#createsecuritygroupresultresponsetypedef)
+  - [CreateSnapshotRequestServiceResourceTypeDef](#createsnapshotrequestserviceresourcetypedef)
+  - [CreateSnapshotRequestTypeDef](#createsnapshotrequesttypedef)
+  - [CreateSnapshotRequestVolumeTypeDef](#createsnapshotrequestvolumetypedef)
+  - [CreateSnapshotsRequestTypeDef](#createsnapshotsrequesttypedef)
+  - [CreateSnapshotsResultResponseTypeDef](#createsnapshotsresultresponsetypedef)
+  - [CreateSpotDatafeedSubscriptionRequestTypeDef](#createspotdatafeedsubscriptionrequesttypedef)
+  - [CreateSpotDatafeedSubscriptionResultResponseTypeDef](#createspotdatafeedsubscriptionresultresponsetypedef)
+  - [CreateStoreImageTaskRequestTypeDef](#createstoreimagetaskrequesttypedef)
+  - [CreateStoreImageTaskResultResponseTypeDef](#createstoreimagetaskresultresponsetypedef)
+  - [CreateSubnetRequestServiceResourceTypeDef](#createsubnetrequestserviceresourcetypedef)
+  - [CreateSubnetRequestTypeDef](#createsubnetrequesttypedef)
+  - [CreateSubnetRequestVpcTypeDef](#createsubnetrequestvpctypedef)
+  - [CreateSubnetResultResponseTypeDef](#createsubnetresultresponsetypedef)
+  - [CreateTagsRequestDhcpOptionsTypeDef](#createtagsrequestdhcpoptionstypedef)
+  - [CreateTagsRequestImageTypeDef](#createtagsrequestimagetypedef)
+  - [CreateTagsRequestInstanceTypeDef](#createtagsrequestinstancetypedef)
+  - [CreateTagsRequestInternetGatewayTypeDef](#createtagsrequestinternetgatewaytypedef)
+  - [CreateTagsRequestNetworkAclTypeDef](#createtagsrequestnetworkacltypedef)
+  - [CreateTagsRequestNetworkInterfaceTypeDef](#createtagsrequestnetworkinterfacetypedef)
+  - [CreateTagsRequestRouteTableTypeDef](#createtagsrequestroutetabletypedef)
+  - [CreateTagsRequestSecurityGroupTypeDef](#createtagsrequestsecuritygrouptypedef)
+  - [CreateTagsRequestServiceResourceTypeDef](#createtagsrequestserviceresourcetypedef)
+  - [CreateTagsRequestSnapshotTypeDef](#createtagsrequestsnapshottypedef)
+  - [CreateTagsRequestSubnetTypeDef](#createtagsrequestsubnettypedef)
+  - [CreateTagsRequestTypeDef](#createtagsrequesttypedef)
+  - [CreateTagsRequestVolumeTypeDef](#createtagsrequestvolumetypedef)
+  - [CreateTagsRequestVpcTypeDef](#createtagsrequestvpctypedef)
+  - [CreateTrafficMirrorFilterRequestTypeDef](#createtrafficmirrorfilterrequesttypedef)
+  - [CreateTrafficMirrorFilterResultResponseTypeDef](#createtrafficmirrorfilterresultresponsetypedef)
+  - [CreateTrafficMirrorFilterRuleRequestTypeDef](#createtrafficmirrorfilterrulerequesttypedef)
+  - [CreateTrafficMirrorFilterRuleResultResponseTypeDef](#createtrafficmirrorfilterruleresultresponsetypedef)
+  - [CreateTrafficMirrorSessionRequestTypeDef](#createtrafficmirrorsessionrequesttypedef)
+  - [CreateTrafficMirrorSessionResultResponseTypeDef](#createtrafficmirrorsessionresultresponsetypedef)
+  - [CreateTrafficMirrorTargetRequestTypeDef](#createtrafficmirrortargetrequesttypedef)
+  - [CreateTrafficMirrorTargetResultResponseTypeDef](#createtrafficmirrortargetresultresponsetypedef)
+  - [CreateTransitGatewayConnectPeerRequestTypeDef](#createtransitgatewayconnectpeerrequesttypedef)
+  - [CreateTransitGatewayConnectPeerResultResponseTypeDef](#createtransitgatewayconnectpeerresultresponsetypedef)
   - [CreateTransitGatewayConnectRequestOptionsTypeDef](#createtransitgatewayconnectrequestoptionstypedef)
-  - [CreateTransitGatewayConnectResultTypeDef](#createtransitgatewayconnectresulttypedef)
+  - [CreateTransitGatewayConnectRequestTypeDef](#createtransitgatewayconnectrequesttypedef)
+  - [CreateTransitGatewayConnectResultResponseTypeDef](#createtransitgatewayconnectresultresponsetypedef)
   - [CreateTransitGatewayMulticastDomainRequestOptionsTypeDef](#createtransitgatewaymulticastdomainrequestoptionstypedef)
-  - [CreateTransitGatewayMulticastDomainResultTypeDef](#createtransitgatewaymulticastdomainresulttypedef)
-  - [CreateTransitGatewayPeeringAttachmentResultTypeDef](#createtransitgatewaypeeringattachmentresulttypedef)
-  - [CreateTransitGatewayPrefixListReferenceResultTypeDef](#createtransitgatewayprefixlistreferenceresulttypedef)
-  - [CreateTransitGatewayResultTypeDef](#createtransitgatewayresulttypedef)
-  - [CreateTransitGatewayRouteResultTypeDef](#createtransitgatewayrouteresulttypedef)
-  - [CreateTransitGatewayRouteTableResultTypeDef](#createtransitgatewayroutetableresulttypedef)
+  - [CreateTransitGatewayMulticastDomainRequestTypeDef](#createtransitgatewaymulticastdomainrequesttypedef)
+  - [CreateTransitGatewayMulticastDomainResultResponseTypeDef](#createtransitgatewaymulticastdomainresultresponsetypedef)
+  - [CreateTransitGatewayPeeringAttachmentRequestTypeDef](#createtransitgatewaypeeringattachmentrequesttypedef)
+  - [CreateTransitGatewayPeeringAttachmentResultResponseTypeDef](#createtransitgatewaypeeringattachmentresultresponsetypedef)
+  - [CreateTransitGatewayPrefixListReferenceRequestTypeDef](#createtransitgatewayprefixlistreferencerequesttypedef)
+  - [CreateTransitGatewayPrefixListReferenceResultResponseTypeDef](#createtransitgatewayprefixlistreferenceresultresponsetypedef)
+  - [CreateTransitGatewayRequestTypeDef](#createtransitgatewayrequesttypedef)
+  - [CreateTransitGatewayResultResponseTypeDef](#createtransitgatewayresultresponsetypedef)
+  - [CreateTransitGatewayRouteRequestTypeDef](#createtransitgatewayrouterequesttypedef)
+  - [CreateTransitGatewayRouteResultResponseTypeDef](#createtransitgatewayrouteresultresponsetypedef)
+  - [CreateTransitGatewayRouteTableRequestTypeDef](#createtransitgatewayroutetablerequesttypedef)
+  - [CreateTransitGatewayRouteTableResultResponseTypeDef](#createtransitgatewayroutetableresultresponsetypedef)
   - [CreateTransitGatewayVpcAttachmentRequestOptionsTypeDef](#createtransitgatewayvpcattachmentrequestoptionstypedef)
-  - [CreateTransitGatewayVpcAttachmentResultTypeDef](#createtransitgatewayvpcattachmentresulttypedef)
+  - [CreateTransitGatewayVpcAttachmentRequestTypeDef](#createtransitgatewayvpcattachmentrequesttypedef)
+  - [CreateTransitGatewayVpcAttachmentResultResponseTypeDef](#createtransitgatewayvpcattachmentresultresponsetypedef)
   - [CreateVolumePermissionModificationsTypeDef](#createvolumepermissionmodificationstypedef)
   - [CreateVolumePermissionTypeDef](#createvolumepermissiontypedef)
-  - [CreateVpcEndpointConnectionNotificationResultTypeDef](#createvpcendpointconnectionnotificationresulttypedef)
-  - [CreateVpcEndpointResultTypeDef](#createvpcendpointresulttypedef)
-  - [CreateVpcEndpointServiceConfigurationResultTypeDef](#createvpcendpointserviceconfigurationresulttypedef)
-  - [CreateVpcPeeringConnectionResultTypeDef](#createvpcpeeringconnectionresulttypedef)
-  - [CreateVpcResultTypeDef](#createvpcresulttypedef)
-  - [CreateVpnConnectionResultTypeDef](#createvpnconnectionresulttypedef)
-  - [CreateVpnGatewayResultTypeDef](#createvpngatewayresulttypedef)
+  - [CreateVolumeRequestServiceResourceTypeDef](#createvolumerequestserviceresourcetypedef)
+  - [CreateVolumeRequestTypeDef](#createvolumerequesttypedef)
+  - [CreateVpcEndpointConnectionNotificationRequestTypeDef](#createvpcendpointconnectionnotificationrequesttypedef)
+  - [CreateVpcEndpointConnectionNotificationResultResponseTypeDef](#createvpcendpointconnectionnotificationresultresponsetypedef)
+  - [CreateVpcEndpointRequestTypeDef](#createvpcendpointrequesttypedef)
+  - [CreateVpcEndpointResultResponseTypeDef](#createvpcendpointresultresponsetypedef)
+  - [CreateVpcEndpointServiceConfigurationRequestTypeDef](#createvpcendpointserviceconfigurationrequesttypedef)
+  - [CreateVpcEndpointServiceConfigurationResultResponseTypeDef](#createvpcendpointserviceconfigurationresultresponsetypedef)
+  - [CreateVpcPeeringConnectionRequestServiceResourceTypeDef](#createvpcpeeringconnectionrequestserviceresourcetypedef)
+  - [CreateVpcPeeringConnectionRequestTypeDef](#createvpcpeeringconnectionrequesttypedef)
+  - [CreateVpcPeeringConnectionRequestVpcTypeDef](#createvpcpeeringconnectionrequestvpctypedef)
+  - [CreateVpcPeeringConnectionResultResponseTypeDef](#createvpcpeeringconnectionresultresponsetypedef)
+  - [CreateVpcRequestServiceResourceTypeDef](#createvpcrequestserviceresourcetypedef)
+  - [CreateVpcRequestTypeDef](#createvpcrequesttypedef)
+  - [CreateVpcResultResponseTypeDef](#createvpcresultresponsetypedef)
+  - [CreateVpnConnectionRequestTypeDef](#createvpnconnectionrequesttypedef)
+  - [CreateVpnConnectionResultResponseTypeDef](#createvpnconnectionresultresponsetypedef)
+  - [CreateVpnConnectionRouteRequestTypeDef](#createvpnconnectionrouterequesttypedef)
+  - [CreateVpnGatewayRequestTypeDef](#createvpngatewayrequesttypedef)
+  - [CreateVpnGatewayResultResponseTypeDef](#createvpngatewayresultresponsetypedef)
   - [CreditSpecificationRequestTypeDef](#creditspecificationrequesttypedef)
   - [CreditSpecificationTypeDef](#creditspecificationtypedef)
   - [CustomerGatewayTypeDef](#customergatewaytypedef)
-  - [DeleteCarrierGatewayResultTypeDef](#deletecarriergatewayresulttypedef)
-  - [DeleteClientVpnEndpointResultTypeDef](#deleteclientvpnendpointresulttypedef)
-  - [DeleteClientVpnRouteResultTypeDef](#deleteclientvpnrouteresulttypedef)
-  - [DeleteEgressOnlyInternetGatewayResultTypeDef](#deleteegressonlyinternetgatewayresulttypedef)
+  - [DeleteCarrierGatewayRequestTypeDef](#deletecarriergatewayrequesttypedef)
+  - [DeleteCarrierGatewayResultResponseTypeDef](#deletecarriergatewayresultresponsetypedef)
+  - [DeleteClientVpnEndpointRequestTypeDef](#deleteclientvpnendpointrequesttypedef)
+  - [DeleteClientVpnEndpointResultResponseTypeDef](#deleteclientvpnendpointresultresponsetypedef)
+  - [DeleteClientVpnRouteRequestTypeDef](#deleteclientvpnrouterequesttypedef)
+  - [DeleteClientVpnRouteResultResponseTypeDef](#deleteclientvpnrouteresultresponsetypedef)
+  - [DeleteCustomerGatewayRequestTypeDef](#deletecustomergatewayrequesttypedef)
+  - [DeleteDhcpOptionsRequestDhcpOptionsTypeDef](#deletedhcpoptionsrequestdhcpoptionstypedef)
+  - [DeleteDhcpOptionsRequestTypeDef](#deletedhcpoptionsrequesttypedef)
+  - [DeleteEgressOnlyInternetGatewayRequestTypeDef](#deleteegressonlyinternetgatewayrequesttypedef)
+  - [DeleteEgressOnlyInternetGatewayResultResponseTypeDef](#deleteegressonlyinternetgatewayresultresponsetypedef)
   - [DeleteFleetErrorItemTypeDef](#deletefleeterroritemtypedef)
   - [DeleteFleetErrorTypeDef](#deletefleeterrortypedef)
   - [DeleteFleetSuccessItemTypeDef](#deletefleetsuccessitemtypedef)
-  - [DeleteFleetsResultTypeDef](#deletefleetsresulttypedef)
-  - [DeleteFlowLogsResultTypeDef](#deleteflowlogsresulttypedef)
-  - [DeleteFpgaImageResultTypeDef](#deletefpgaimageresulttypedef)
-  - [DeleteLaunchTemplateResultTypeDef](#deletelaunchtemplateresulttypedef)
+  - [DeleteFleetsRequestTypeDef](#deletefleetsrequesttypedef)
+  - [DeleteFleetsResultResponseTypeDef](#deletefleetsresultresponsetypedef)
+  - [DeleteFlowLogsRequestTypeDef](#deleteflowlogsrequesttypedef)
+  - [DeleteFlowLogsResultResponseTypeDef](#deleteflowlogsresultresponsetypedef)
+  - [DeleteFpgaImageRequestTypeDef](#deletefpgaimagerequesttypedef)
+  - [DeleteFpgaImageResultResponseTypeDef](#deletefpgaimageresultresponsetypedef)
+  - [DeleteInternetGatewayRequestInternetGatewayTypeDef](#deleteinternetgatewayrequestinternetgatewaytypedef)
+  - [DeleteInternetGatewayRequestTypeDef](#deleteinternetgatewayrequesttypedef)
+  - [DeleteKeyPairRequestKeyPairInfoTypeDef](#deletekeypairrequestkeypairinfotypedef)
+  - [DeleteKeyPairRequestKeyPairTypeDef](#deletekeypairrequestkeypairtypedef)
+  - [DeleteKeyPairRequestTypeDef](#deletekeypairrequesttypedef)
+  - [DeleteLaunchTemplateRequestTypeDef](#deletelaunchtemplaterequesttypedef)
+  - [DeleteLaunchTemplateResultResponseTypeDef](#deletelaunchtemplateresultresponsetypedef)
+  - [DeleteLaunchTemplateVersionsRequestTypeDef](#deletelaunchtemplateversionsrequesttypedef)
   - [DeleteLaunchTemplateVersionsResponseErrorItemTypeDef](#deletelaunchtemplateversionsresponseerroritemtypedef)
   - [DeleteLaunchTemplateVersionsResponseSuccessItemTypeDef](#deletelaunchtemplateversionsresponsesuccessitemtypedef)
-  - [DeleteLaunchTemplateVersionsResultTypeDef](#deletelaunchtemplateversionsresulttypedef)
-  - [DeleteLocalGatewayRouteResultTypeDef](#deletelocalgatewayrouteresulttypedef)
-  - [DeleteLocalGatewayRouteTableVpcAssociationResultTypeDef](#deletelocalgatewayroutetablevpcassociationresulttypedef)
-  - [DeleteManagedPrefixListResultTypeDef](#deletemanagedprefixlistresulttypedef)
-  - [DeleteNatGatewayResultTypeDef](#deletenatgatewayresulttypedef)
-  - [DeleteNetworkInsightsAnalysisResultTypeDef](#deletenetworkinsightsanalysisresulttypedef)
-  - [DeleteNetworkInsightsPathResultTypeDef](#deletenetworkinsightspathresulttypedef)
-  - [DeleteNetworkInterfacePermissionResultTypeDef](#deletenetworkinterfacepermissionresulttypedef)
+  - [DeleteLaunchTemplateVersionsResultResponseTypeDef](#deletelaunchtemplateversionsresultresponsetypedef)
+  - [DeleteLocalGatewayRouteRequestTypeDef](#deletelocalgatewayrouterequesttypedef)
+  - [DeleteLocalGatewayRouteResultResponseTypeDef](#deletelocalgatewayrouteresultresponsetypedef)
+  - [DeleteLocalGatewayRouteTableVpcAssociationRequestTypeDef](#deletelocalgatewayroutetablevpcassociationrequesttypedef)
+  - [DeleteLocalGatewayRouteTableVpcAssociationResultResponseTypeDef](#deletelocalgatewayroutetablevpcassociationresultresponsetypedef)
+  - [DeleteManagedPrefixListRequestTypeDef](#deletemanagedprefixlistrequesttypedef)
+  - [DeleteManagedPrefixListResultResponseTypeDef](#deletemanagedprefixlistresultresponsetypedef)
+  - [DeleteNatGatewayRequestTypeDef](#deletenatgatewayrequesttypedef)
+  - [DeleteNatGatewayResultResponseTypeDef](#deletenatgatewayresultresponsetypedef)
+  - [DeleteNetworkAclEntryRequestNetworkAclTypeDef](#deletenetworkaclentryrequestnetworkacltypedef)
+  - [DeleteNetworkAclEntryRequestTypeDef](#deletenetworkaclentryrequesttypedef)
+  - [DeleteNetworkAclRequestNetworkAclTypeDef](#deletenetworkaclrequestnetworkacltypedef)
+  - [DeleteNetworkAclRequestTypeDef](#deletenetworkaclrequesttypedef)
+  - [DeleteNetworkInsightsAnalysisRequestTypeDef](#deletenetworkinsightsanalysisrequesttypedef)
+  - [DeleteNetworkInsightsAnalysisResultResponseTypeDef](#deletenetworkinsightsanalysisresultresponsetypedef)
+  - [DeleteNetworkInsightsPathRequestTypeDef](#deletenetworkinsightspathrequesttypedef)
+  - [DeleteNetworkInsightsPathResultResponseTypeDef](#deletenetworkinsightspathresultresponsetypedef)
+  - [DeleteNetworkInterfacePermissionRequestTypeDef](#deletenetworkinterfacepermissionrequesttypedef)
+  - [DeleteNetworkInterfacePermissionResultResponseTypeDef](#deletenetworkinterfacepermissionresultresponsetypedef)
+  - [DeleteNetworkInterfaceRequestNetworkInterfaceTypeDef](#deletenetworkinterfacerequestnetworkinterfacetypedef)
+  - [DeleteNetworkInterfaceRequestTypeDef](#deletenetworkinterfacerequesttypedef)
+  - [DeletePlacementGroupRequestPlacementGroupTypeDef](#deleteplacementgrouprequestplacementgrouptypedef)
+  - [DeletePlacementGroupRequestTypeDef](#deleteplacementgrouprequesttypedef)
   - [DeleteQueuedReservedInstancesErrorTypeDef](#deletequeuedreservedinstanceserrortypedef)
-  - [DeleteQueuedReservedInstancesResultTypeDef](#deletequeuedreservedinstancesresulttypedef)
-  - [DeleteTrafficMirrorFilterResultTypeDef](#deletetrafficmirrorfilterresulttypedef)
-  - [DeleteTrafficMirrorFilterRuleResultTypeDef](#deletetrafficmirrorfilterruleresulttypedef)
-  - [DeleteTrafficMirrorSessionResultTypeDef](#deletetrafficmirrorsessionresulttypedef)
-  - [DeleteTrafficMirrorTargetResultTypeDef](#deletetrafficmirrortargetresulttypedef)
-  - [DeleteTransitGatewayConnectPeerResultTypeDef](#deletetransitgatewayconnectpeerresulttypedef)
-  - [DeleteTransitGatewayConnectResultTypeDef](#deletetransitgatewayconnectresulttypedef)
-  - [DeleteTransitGatewayMulticastDomainResultTypeDef](#deletetransitgatewaymulticastdomainresulttypedef)
-  - [DeleteTransitGatewayPeeringAttachmentResultTypeDef](#deletetransitgatewaypeeringattachmentresulttypedef)
-  - [DeleteTransitGatewayPrefixListReferenceResultTypeDef](#deletetransitgatewayprefixlistreferenceresulttypedef)
-  - [DeleteTransitGatewayResultTypeDef](#deletetransitgatewayresulttypedef)
-  - [DeleteTransitGatewayRouteResultTypeDef](#deletetransitgatewayrouteresulttypedef)
-  - [DeleteTransitGatewayRouteTableResultTypeDef](#deletetransitgatewayroutetableresulttypedef)
-  - [DeleteTransitGatewayVpcAttachmentResultTypeDef](#deletetransitgatewayvpcattachmentresulttypedef)
-  - [DeleteVpcEndpointConnectionNotificationsResultTypeDef](#deletevpcendpointconnectionnotificationsresulttypedef)
-  - [DeleteVpcEndpointServiceConfigurationsResultTypeDef](#deletevpcendpointserviceconfigurationsresulttypedef)
-  - [DeleteVpcEndpointsResultTypeDef](#deletevpcendpointsresulttypedef)
-  - [DeleteVpcPeeringConnectionResultTypeDef](#deletevpcpeeringconnectionresulttypedef)
-  - [DeprovisionByoipCidrResultTypeDef](#deprovisionbyoipcidrresulttypedef)
-  - [DeregisterInstanceEventNotificationAttributesResultTypeDef](#deregisterinstanceeventnotificationattributesresulttypedef)
+  - [DeleteQueuedReservedInstancesRequestTypeDef](#deletequeuedreservedinstancesrequesttypedef)
+  - [DeleteQueuedReservedInstancesResultResponseTypeDef](#deletequeuedreservedinstancesresultresponsetypedef)
+  - [DeleteRouteRequestRouteTypeDef](#deleterouterequestroutetypedef)
+  - [DeleteRouteRequestTypeDef](#deleterouterequesttypedef)
+  - [DeleteRouteTableRequestRouteTableTypeDef](#deleteroutetablerequestroutetabletypedef)
+  - [DeleteRouteTableRequestTypeDef](#deleteroutetablerequesttypedef)
+  - [DeleteSecurityGroupRequestSecurityGroupTypeDef](#deletesecuritygrouprequestsecuritygrouptypedef)
+  - [DeleteSecurityGroupRequestTypeDef](#deletesecuritygrouprequesttypedef)
+  - [DeleteSnapshotRequestSnapshotTypeDef](#deletesnapshotrequestsnapshottypedef)
+  - [DeleteSnapshotRequestTypeDef](#deletesnapshotrequesttypedef)
+  - [DeleteSpotDatafeedSubscriptionRequestTypeDef](#deletespotdatafeedsubscriptionrequesttypedef)
+  - [DeleteSubnetRequestSubnetTypeDef](#deletesubnetrequestsubnettypedef)
+  - [DeleteSubnetRequestTypeDef](#deletesubnetrequesttypedef)
+  - [DeleteTagsRequestTagTypeDef](#deletetagsrequesttagtypedef)
+  - [DeleteTagsRequestTypeDef](#deletetagsrequesttypedef)
+  - [DeleteTrafficMirrorFilterRequestTypeDef](#deletetrafficmirrorfilterrequesttypedef)
+  - [DeleteTrafficMirrorFilterResultResponseTypeDef](#deletetrafficmirrorfilterresultresponsetypedef)
+  - [DeleteTrafficMirrorFilterRuleRequestTypeDef](#deletetrafficmirrorfilterrulerequesttypedef)
+  - [DeleteTrafficMirrorFilterRuleResultResponseTypeDef](#deletetrafficmirrorfilterruleresultresponsetypedef)
+  - [DeleteTrafficMirrorSessionRequestTypeDef](#deletetrafficmirrorsessionrequesttypedef)
+  - [DeleteTrafficMirrorSessionResultResponseTypeDef](#deletetrafficmirrorsessionresultresponsetypedef)
+  - [DeleteTrafficMirrorTargetRequestTypeDef](#deletetrafficmirrortargetrequesttypedef)
+  - [DeleteTrafficMirrorTargetResultResponseTypeDef](#deletetrafficmirrortargetresultresponsetypedef)
+  - [DeleteTransitGatewayConnectPeerRequestTypeDef](#deletetransitgatewayconnectpeerrequesttypedef)
+  - [DeleteTransitGatewayConnectPeerResultResponseTypeDef](#deletetransitgatewayconnectpeerresultresponsetypedef)
+  - [DeleteTransitGatewayConnectRequestTypeDef](#deletetransitgatewayconnectrequesttypedef)
+  - [DeleteTransitGatewayConnectResultResponseTypeDef](#deletetransitgatewayconnectresultresponsetypedef)
+  - [DeleteTransitGatewayMulticastDomainRequestTypeDef](#deletetransitgatewaymulticastdomainrequesttypedef)
+  - [DeleteTransitGatewayMulticastDomainResultResponseTypeDef](#deletetransitgatewaymulticastdomainresultresponsetypedef)
+  - [DeleteTransitGatewayPeeringAttachmentRequestTypeDef](#deletetransitgatewaypeeringattachmentrequesttypedef)
+  - [DeleteTransitGatewayPeeringAttachmentResultResponseTypeDef](#deletetransitgatewaypeeringattachmentresultresponsetypedef)
+  - [DeleteTransitGatewayPrefixListReferenceRequestTypeDef](#deletetransitgatewayprefixlistreferencerequesttypedef)
+  - [DeleteTransitGatewayPrefixListReferenceResultResponseTypeDef](#deletetransitgatewayprefixlistreferenceresultresponsetypedef)
+  - [DeleteTransitGatewayRequestTypeDef](#deletetransitgatewayrequesttypedef)
+  - [DeleteTransitGatewayResultResponseTypeDef](#deletetransitgatewayresultresponsetypedef)
+  - [DeleteTransitGatewayRouteRequestTypeDef](#deletetransitgatewayrouterequesttypedef)
+  - [DeleteTransitGatewayRouteResultResponseTypeDef](#deletetransitgatewayrouteresultresponsetypedef)
+  - [DeleteTransitGatewayRouteTableRequestTypeDef](#deletetransitgatewayroutetablerequesttypedef)
+  - [DeleteTransitGatewayRouteTableResultResponseTypeDef](#deletetransitgatewayroutetableresultresponsetypedef)
+  - [DeleteTransitGatewayVpcAttachmentRequestTypeDef](#deletetransitgatewayvpcattachmentrequesttypedef)
+  - [DeleteTransitGatewayVpcAttachmentResultResponseTypeDef](#deletetransitgatewayvpcattachmentresultresponsetypedef)
+  - [DeleteVolumeRequestTypeDef](#deletevolumerequesttypedef)
+  - [DeleteVolumeRequestVolumeTypeDef](#deletevolumerequestvolumetypedef)
+  - [DeleteVpcEndpointConnectionNotificationsRequestTypeDef](#deletevpcendpointconnectionnotificationsrequesttypedef)
+  - [DeleteVpcEndpointConnectionNotificationsResultResponseTypeDef](#deletevpcendpointconnectionnotificationsresultresponsetypedef)
+  - [DeleteVpcEndpointServiceConfigurationsRequestTypeDef](#deletevpcendpointserviceconfigurationsrequesttypedef)
+  - [DeleteVpcEndpointServiceConfigurationsResultResponseTypeDef](#deletevpcendpointserviceconfigurationsresultresponsetypedef)
+  - [DeleteVpcEndpointsRequestTypeDef](#deletevpcendpointsrequesttypedef)
+  - [DeleteVpcEndpointsResultResponseTypeDef](#deletevpcendpointsresultresponsetypedef)
+  - [DeleteVpcPeeringConnectionRequestTypeDef](#deletevpcpeeringconnectionrequesttypedef)
+  - [DeleteVpcPeeringConnectionRequestVpcPeeringConnectionTypeDef](#deletevpcpeeringconnectionrequestvpcpeeringconnectiontypedef)
+  - [DeleteVpcPeeringConnectionResultResponseTypeDef](#deletevpcpeeringconnectionresultresponsetypedef)
+  - [DeleteVpcRequestTypeDef](#deletevpcrequesttypedef)
+  - [DeleteVpcRequestVpcTypeDef](#deletevpcrequestvpctypedef)
+  - [DeleteVpnConnectionRequestTypeDef](#deletevpnconnectionrequesttypedef)
+  - [DeleteVpnConnectionRouteRequestTypeDef](#deletevpnconnectionrouterequesttypedef)
+  - [DeleteVpnGatewayRequestTypeDef](#deletevpngatewayrequesttypedef)
+  - [DeprovisionByoipCidrRequestTypeDef](#deprovisionbyoipcidrrequesttypedef)
+  - [DeprovisionByoipCidrResultResponseTypeDef](#deprovisionbyoipcidrresultresponsetypedef)
+  - [DeregisterImageRequestImageTypeDef](#deregisterimagerequestimagetypedef)
+  - [DeregisterImageRequestTypeDef](#deregisterimagerequesttypedef)
+  - [DeregisterInstanceEventNotificationAttributesRequestTypeDef](#deregisterinstanceeventnotificationattributesrequesttypedef)
+  - [DeregisterInstanceEventNotificationAttributesResultResponseTypeDef](#deregisterinstanceeventnotificationattributesresultresponsetypedef)
   - [DeregisterInstanceTagAttributeRequestTypeDef](#deregisterinstancetagattributerequesttypedef)
-  - [DeregisterTransitGatewayMulticastGroupMembersResultTypeDef](#deregistertransitgatewaymulticastgroupmembersresulttypedef)
-  - [DeregisterTransitGatewayMulticastGroupSourcesResultTypeDef](#deregistertransitgatewaymulticastgroupsourcesresulttypedef)
-  - [DescribeAccountAttributesResultTypeDef](#describeaccountattributesresulttypedef)
-  - [DescribeAddressesAttributeResultTypeDef](#describeaddressesattributeresulttypedef)
-  - [DescribeAddressesResultTypeDef](#describeaddressesresulttypedef)
-  - [DescribeAggregateIdFormatResultTypeDef](#describeaggregateidformatresulttypedef)
-  - [DescribeAvailabilityZonesResultTypeDef](#describeavailabilityzonesresulttypedef)
-  - [DescribeBundleTasksResultTypeDef](#describebundletasksresulttypedef)
-  - [DescribeByoipCidrsResultTypeDef](#describebyoipcidrsresulttypedef)
-  - [DescribeCapacityReservationsResultTypeDef](#describecapacityreservationsresulttypedef)
-  - [DescribeCarrierGatewaysResultTypeDef](#describecarriergatewaysresulttypedef)
-  - [DescribeClassicLinkInstancesResultTypeDef](#describeclassiclinkinstancesresulttypedef)
-  - [DescribeClientVpnAuthorizationRulesResultTypeDef](#describeclientvpnauthorizationrulesresulttypedef)
-  - [DescribeClientVpnConnectionsResultTypeDef](#describeclientvpnconnectionsresulttypedef)
-  - [DescribeClientVpnEndpointsResultTypeDef](#describeclientvpnendpointsresulttypedef)
-  - [DescribeClientVpnRoutesResultTypeDef](#describeclientvpnroutesresulttypedef)
-  - [DescribeClientVpnTargetNetworksResultTypeDef](#describeclientvpntargetnetworksresulttypedef)
-  - [DescribeCoipPoolsResultTypeDef](#describecoippoolsresulttypedef)
-  - [DescribeConversionTasksResultTypeDef](#describeconversiontasksresulttypedef)
-  - [DescribeCustomerGatewaysResultTypeDef](#describecustomergatewaysresulttypedef)
-  - [DescribeDhcpOptionsResultTypeDef](#describedhcpoptionsresulttypedef)
-  - [DescribeEgressOnlyInternetGatewaysResultTypeDef](#describeegressonlyinternetgatewaysresulttypedef)
-  - [DescribeElasticGpusResultTypeDef](#describeelasticgpusresulttypedef)
-  - [DescribeExportImageTasksResultTypeDef](#describeexportimagetasksresulttypedef)
-  - [DescribeExportTasksResultTypeDef](#describeexporttasksresulttypedef)
+  - [DeregisterTransitGatewayMulticastGroupMembersRequestTypeDef](#deregistertransitgatewaymulticastgroupmembersrequesttypedef)
+  - [DeregisterTransitGatewayMulticastGroupMembersResultResponseTypeDef](#deregistertransitgatewaymulticastgroupmembersresultresponsetypedef)
+  - [DeregisterTransitGatewayMulticastGroupSourcesRequestTypeDef](#deregistertransitgatewaymulticastgroupsourcesrequesttypedef)
+  - [DeregisterTransitGatewayMulticastGroupSourcesResultResponseTypeDef](#deregistertransitgatewaymulticastgroupsourcesresultresponsetypedef)
+  - [DescribeAccountAttributesRequestTypeDef](#describeaccountattributesrequesttypedef)
+  - [DescribeAccountAttributesResultResponseTypeDef](#describeaccountattributesresultresponsetypedef)
+  - [DescribeAddressesAttributeRequestTypeDef](#describeaddressesattributerequesttypedef)
+  - [DescribeAddressesAttributeResultResponseTypeDef](#describeaddressesattributeresultresponsetypedef)
+  - [DescribeAddressesRequestTypeDef](#describeaddressesrequesttypedef)
+  - [DescribeAddressesResultResponseTypeDef](#describeaddressesresultresponsetypedef)
+  - [DescribeAggregateIdFormatRequestTypeDef](#describeaggregateidformatrequesttypedef)
+  - [DescribeAggregateIdFormatResultResponseTypeDef](#describeaggregateidformatresultresponsetypedef)
+  - [DescribeAvailabilityZonesRequestTypeDef](#describeavailabilityzonesrequesttypedef)
+  - [DescribeAvailabilityZonesResultResponseTypeDef](#describeavailabilityzonesresultresponsetypedef)
+  - [DescribeBundleTasksRequestTypeDef](#describebundletasksrequesttypedef)
+  - [DescribeBundleTasksResultResponseTypeDef](#describebundletasksresultresponsetypedef)
+  - [DescribeByoipCidrsRequestTypeDef](#describebyoipcidrsrequesttypedef)
+  - [DescribeByoipCidrsResultResponseTypeDef](#describebyoipcidrsresultresponsetypedef)
+  - [DescribeCapacityReservationsRequestTypeDef](#describecapacityreservationsrequesttypedef)
+  - [DescribeCapacityReservationsResultResponseTypeDef](#describecapacityreservationsresultresponsetypedef)
+  - [DescribeCarrierGatewaysRequestTypeDef](#describecarriergatewaysrequesttypedef)
+  - [DescribeCarrierGatewaysResultResponseTypeDef](#describecarriergatewaysresultresponsetypedef)
+  - [DescribeClassicLinkInstancesRequestTypeDef](#describeclassiclinkinstancesrequesttypedef)
+  - [DescribeClassicLinkInstancesResultResponseTypeDef](#describeclassiclinkinstancesresultresponsetypedef)
+  - [DescribeClientVpnAuthorizationRulesRequestTypeDef](#describeclientvpnauthorizationrulesrequesttypedef)
+  - [DescribeClientVpnAuthorizationRulesResultResponseTypeDef](#describeclientvpnauthorizationrulesresultresponsetypedef)
+  - [DescribeClientVpnConnectionsRequestTypeDef](#describeclientvpnconnectionsrequesttypedef)
+  - [DescribeClientVpnConnectionsResultResponseTypeDef](#describeclientvpnconnectionsresultresponsetypedef)
+  - [DescribeClientVpnEndpointsRequestTypeDef](#describeclientvpnendpointsrequesttypedef)
+  - [DescribeClientVpnEndpointsResultResponseTypeDef](#describeclientvpnendpointsresultresponsetypedef)
+  - [DescribeClientVpnRoutesRequestTypeDef](#describeclientvpnroutesrequesttypedef)
+  - [DescribeClientVpnRoutesResultResponseTypeDef](#describeclientvpnroutesresultresponsetypedef)
+  - [DescribeClientVpnTargetNetworksRequestTypeDef](#describeclientvpntargetnetworksrequesttypedef)
+  - [DescribeClientVpnTargetNetworksResultResponseTypeDef](#describeclientvpntargetnetworksresultresponsetypedef)
+  - [DescribeCoipPoolsRequestTypeDef](#describecoippoolsrequesttypedef)
+  - [DescribeCoipPoolsResultResponseTypeDef](#describecoippoolsresultresponsetypedef)
+  - [DescribeConversionTasksRequestTypeDef](#describeconversiontasksrequesttypedef)
+  - [DescribeConversionTasksResultResponseTypeDef](#describeconversiontasksresultresponsetypedef)
+  - [DescribeCustomerGatewaysRequestTypeDef](#describecustomergatewaysrequesttypedef)
+  - [DescribeCustomerGatewaysResultResponseTypeDef](#describecustomergatewaysresultresponsetypedef)
+  - [DescribeDhcpOptionsRequestTypeDef](#describedhcpoptionsrequesttypedef)
+  - [DescribeDhcpOptionsResultResponseTypeDef](#describedhcpoptionsresultresponsetypedef)
+  - [DescribeEgressOnlyInternetGatewaysRequestTypeDef](#describeegressonlyinternetgatewaysrequesttypedef)
+  - [DescribeEgressOnlyInternetGatewaysResultResponseTypeDef](#describeegressonlyinternetgatewaysresultresponsetypedef)
+  - [DescribeElasticGpusRequestTypeDef](#describeelasticgpusrequesttypedef)
+  - [DescribeElasticGpusResultResponseTypeDef](#describeelasticgpusresultresponsetypedef)
+  - [DescribeExportImageTasksRequestTypeDef](#describeexportimagetasksrequesttypedef)
+  - [DescribeExportImageTasksResultResponseTypeDef](#describeexportimagetasksresultresponsetypedef)
+  - [DescribeExportTasksRequestTypeDef](#describeexporttasksrequesttypedef)
+  - [DescribeExportTasksResultResponseTypeDef](#describeexporttasksresultresponsetypedef)
   - [DescribeFastSnapshotRestoreSuccessItemTypeDef](#describefastsnapshotrestoresuccessitemtypedef)
-  - [DescribeFastSnapshotRestoresResultTypeDef](#describefastsnapshotrestoresresulttypedef)
+  - [DescribeFastSnapshotRestoresRequestTypeDef](#describefastsnapshotrestoresrequesttypedef)
+  - [DescribeFastSnapshotRestoresResultResponseTypeDef](#describefastsnapshotrestoresresultresponsetypedef)
   - [DescribeFleetErrorTypeDef](#describefleeterrortypedef)
-  - [DescribeFleetHistoryResultTypeDef](#describefleethistoryresulttypedef)
-  - [DescribeFleetInstancesResultTypeDef](#describefleetinstancesresulttypedef)
+  - [DescribeFleetHistoryRequestTypeDef](#describefleethistoryrequesttypedef)
+  - [DescribeFleetHistoryResultResponseTypeDef](#describefleethistoryresultresponsetypedef)
+  - [DescribeFleetInstancesRequestTypeDef](#describefleetinstancesrequesttypedef)
+  - [DescribeFleetInstancesResultResponseTypeDef](#describefleetinstancesresultresponsetypedef)
   - [DescribeFleetsInstancesTypeDef](#describefleetsinstancestypedef)
-  - [DescribeFleetsResultTypeDef](#describefleetsresulttypedef)
-  - [DescribeFlowLogsResultTypeDef](#describeflowlogsresulttypedef)
-  - [DescribeFpgaImageAttributeResultTypeDef](#describefpgaimageattributeresulttypedef)
-  - [DescribeFpgaImagesResultTypeDef](#describefpgaimagesresulttypedef)
-  - [DescribeHostReservationOfferingsResultTypeDef](#describehostreservationofferingsresulttypedef)
-  - [DescribeHostReservationsResultTypeDef](#describehostreservationsresulttypedef)
-  - [DescribeHostsResultTypeDef](#describehostsresulttypedef)
-  - [DescribeIamInstanceProfileAssociationsResultTypeDef](#describeiaminstanceprofileassociationsresulttypedef)
-  - [DescribeIdFormatResultTypeDef](#describeidformatresulttypedef)
-  - [DescribeIdentityIdFormatResultTypeDef](#describeidentityidformatresulttypedef)
-  - [DescribeImagesResultTypeDef](#describeimagesresulttypedef)
-  - [DescribeImportImageTasksResultTypeDef](#describeimportimagetasksresulttypedef)
-  - [DescribeImportSnapshotTasksResultTypeDef](#describeimportsnapshottasksresulttypedef)
-  - [DescribeInstanceCreditSpecificationsResultTypeDef](#describeinstancecreditspecificationsresulttypedef)
-  - [DescribeInstanceEventNotificationAttributesResultTypeDef](#describeinstanceeventnotificationattributesresulttypedef)
-  - [DescribeInstanceStatusResultTypeDef](#describeinstancestatusresulttypedef)
-  - [DescribeInstanceTypeOfferingsResultTypeDef](#describeinstancetypeofferingsresulttypedef)
-  - [DescribeInstanceTypesResultTypeDef](#describeinstancetypesresulttypedef)
-  - [DescribeInstancesResultTypeDef](#describeinstancesresulttypedef)
-  - [DescribeInternetGatewaysResultTypeDef](#describeinternetgatewaysresulttypedef)
-  - [DescribeIpv6PoolsResultTypeDef](#describeipv6poolsresulttypedef)
-  - [DescribeKeyPairsResultTypeDef](#describekeypairsresulttypedef)
-  - [DescribeLaunchTemplateVersionsResultTypeDef](#describelaunchtemplateversionsresulttypedef)
-  - [DescribeLaunchTemplatesResultTypeDef](#describelaunchtemplatesresulttypedef)
-  - [DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResultTypeDef](#describelocalgatewayroutetablevirtualinterfacegroupassociationsresulttypedef)
-  - [DescribeLocalGatewayRouteTableVpcAssociationsResultTypeDef](#describelocalgatewayroutetablevpcassociationsresulttypedef)
-  - [DescribeLocalGatewayRouteTablesResultTypeDef](#describelocalgatewayroutetablesresulttypedef)
-  - [DescribeLocalGatewayVirtualInterfaceGroupsResultTypeDef](#describelocalgatewayvirtualinterfacegroupsresulttypedef)
-  - [DescribeLocalGatewayVirtualInterfacesResultTypeDef](#describelocalgatewayvirtualinterfacesresulttypedef)
-  - [DescribeLocalGatewaysResultTypeDef](#describelocalgatewaysresulttypedef)
-  - [DescribeManagedPrefixListsResultTypeDef](#describemanagedprefixlistsresulttypedef)
-  - [DescribeMovingAddressesResultTypeDef](#describemovingaddressesresulttypedef)
-  - [DescribeNatGatewaysResultTypeDef](#describenatgatewaysresulttypedef)
-  - [DescribeNetworkAclsResultTypeDef](#describenetworkaclsresulttypedef)
-  - [DescribeNetworkInsightsAnalysesResultTypeDef](#describenetworkinsightsanalysesresulttypedef)
-  - [DescribeNetworkInsightsPathsResultTypeDef](#describenetworkinsightspathsresulttypedef)
-  - [DescribeNetworkInterfaceAttributeResultTypeDef](#describenetworkinterfaceattributeresulttypedef)
-  - [DescribeNetworkInterfacePermissionsResultTypeDef](#describenetworkinterfacepermissionsresulttypedef)
-  - [DescribeNetworkInterfacesResultTypeDef](#describenetworkinterfacesresulttypedef)
-  - [DescribePlacementGroupsResultTypeDef](#describeplacementgroupsresulttypedef)
-  - [DescribePrefixListsResultTypeDef](#describeprefixlistsresulttypedef)
-  - [DescribePrincipalIdFormatResultTypeDef](#describeprincipalidformatresulttypedef)
-  - [DescribePublicIpv4PoolsResultTypeDef](#describepublicipv4poolsresulttypedef)
-  - [DescribeRegionsResultTypeDef](#describeregionsresulttypedef)
-  - [DescribeReplaceRootVolumeTasksResultTypeDef](#describereplacerootvolumetasksresulttypedef)
-  - [DescribeReservedInstancesListingsResultTypeDef](#describereservedinstanceslistingsresulttypedef)
-  - [DescribeReservedInstancesModificationsResultTypeDef](#describereservedinstancesmodificationsresulttypedef)
-  - [DescribeReservedInstancesOfferingsResultTypeDef](#describereservedinstancesofferingsresulttypedef)
-  - [DescribeReservedInstancesResultTypeDef](#describereservedinstancesresulttypedef)
-  - [DescribeRouteTablesResultTypeDef](#describeroutetablesresulttypedef)
-  - [DescribeScheduledInstanceAvailabilityResultTypeDef](#describescheduledinstanceavailabilityresulttypedef)
-  - [DescribeScheduledInstancesResultTypeDef](#describescheduledinstancesresulttypedef)
-  - [DescribeSecurityGroupReferencesResultTypeDef](#describesecuritygroupreferencesresulttypedef)
-  - [DescribeSecurityGroupsResultTypeDef](#describesecuritygroupsresulttypedef)
-  - [DescribeSnapshotAttributeResultTypeDef](#describesnapshotattributeresulttypedef)
-  - [DescribeSnapshotsResultTypeDef](#describesnapshotsresulttypedef)
-  - [DescribeSpotDatafeedSubscriptionResultTypeDef](#describespotdatafeedsubscriptionresulttypedef)
-  - [DescribeSpotFleetInstancesResponseTypeDef](#describespotfleetinstancesresponsetypedef)
-  - [DescribeSpotFleetRequestHistoryResponseTypeDef](#describespotfleetrequesthistoryresponsetypedef)
-  - [DescribeSpotFleetRequestsResponseTypeDef](#describespotfleetrequestsresponsetypedef)
-  - [DescribeSpotInstanceRequestsResultTypeDef](#describespotinstancerequestsresulttypedef)
-  - [DescribeSpotPriceHistoryResultTypeDef](#describespotpricehistoryresulttypedef)
-  - [DescribeStaleSecurityGroupsResultTypeDef](#describestalesecuritygroupsresulttypedef)
-  - [DescribeStoreImageTasksResultTypeDef](#describestoreimagetasksresulttypedef)
-  - [DescribeSubnetsResultTypeDef](#describesubnetsresulttypedef)
-  - [DescribeTagsResultTypeDef](#describetagsresulttypedef)
-  - [DescribeTrafficMirrorFiltersResultTypeDef](#describetrafficmirrorfiltersresulttypedef)
-  - [DescribeTrafficMirrorSessionsResultTypeDef](#describetrafficmirrorsessionsresulttypedef)
-  - [DescribeTrafficMirrorTargetsResultTypeDef](#describetrafficmirrortargetsresulttypedef)
-  - [DescribeTransitGatewayAttachmentsResultTypeDef](#describetransitgatewayattachmentsresulttypedef)
-  - [DescribeTransitGatewayConnectPeersResultTypeDef](#describetransitgatewayconnectpeersresulttypedef)
-  - [DescribeTransitGatewayConnectsResultTypeDef](#describetransitgatewayconnectsresulttypedef)
-  - [DescribeTransitGatewayMulticastDomainsResultTypeDef](#describetransitgatewaymulticastdomainsresulttypedef)
-  - [DescribeTransitGatewayPeeringAttachmentsResultTypeDef](#describetransitgatewaypeeringattachmentsresulttypedef)
-  - [DescribeTransitGatewayRouteTablesResultTypeDef](#describetransitgatewayroutetablesresulttypedef)
-  - [DescribeTransitGatewayVpcAttachmentsResultTypeDef](#describetransitgatewayvpcattachmentsresulttypedef)
-  - [DescribeTransitGatewaysResultTypeDef](#describetransitgatewaysresulttypedef)
-  - [DescribeTrunkInterfaceAssociationsResultTypeDef](#describetrunkinterfaceassociationsresulttypedef)
-  - [DescribeVolumeAttributeResultTypeDef](#describevolumeattributeresulttypedef)
-  - [DescribeVolumeStatusResultTypeDef](#describevolumestatusresulttypedef)
-  - [DescribeVolumesModificationsResultTypeDef](#describevolumesmodificationsresulttypedef)
-  - [DescribeVolumesResultTypeDef](#describevolumesresulttypedef)
-  - [DescribeVpcAttributeResultTypeDef](#describevpcattributeresulttypedef)
-  - [DescribeVpcClassicLinkDnsSupportResultTypeDef](#describevpcclassiclinkdnssupportresulttypedef)
-  - [DescribeVpcClassicLinkResultTypeDef](#describevpcclassiclinkresulttypedef)
-  - [DescribeVpcEndpointConnectionNotificationsResultTypeDef](#describevpcendpointconnectionnotificationsresulttypedef)
-  - [DescribeVpcEndpointConnectionsResultTypeDef](#describevpcendpointconnectionsresulttypedef)
-  - [DescribeVpcEndpointServiceConfigurationsResultTypeDef](#describevpcendpointserviceconfigurationsresulttypedef)
-  - [DescribeVpcEndpointServicePermissionsResultTypeDef](#describevpcendpointservicepermissionsresulttypedef)
-  - [DescribeVpcEndpointServicesResultTypeDef](#describevpcendpointservicesresulttypedef)
-  - [DescribeVpcEndpointsResultTypeDef](#describevpcendpointsresulttypedef)
-  - [DescribeVpcPeeringConnectionsResultTypeDef](#describevpcpeeringconnectionsresulttypedef)
-  - [DescribeVpcsResultTypeDef](#describevpcsresulttypedef)
-  - [DescribeVpnConnectionsResultTypeDef](#describevpnconnectionsresulttypedef)
-  - [DescribeVpnGatewaysResultTypeDef](#describevpngatewaysresulttypedef)
-  - [DetachClassicLinkVpcResultTypeDef](#detachclassiclinkvpcresulttypedef)
+  - [DescribeFleetsRequestTypeDef](#describefleetsrequesttypedef)
+  - [DescribeFleetsResultResponseTypeDef](#describefleetsresultresponsetypedef)
+  - [DescribeFlowLogsRequestTypeDef](#describeflowlogsrequesttypedef)
+  - [DescribeFlowLogsResultResponseTypeDef](#describeflowlogsresultresponsetypedef)
+  - [DescribeFpgaImageAttributeRequestTypeDef](#describefpgaimageattributerequesttypedef)
+  - [DescribeFpgaImageAttributeResultResponseTypeDef](#describefpgaimageattributeresultresponsetypedef)
+  - [DescribeFpgaImagesRequestTypeDef](#describefpgaimagesrequesttypedef)
+  - [DescribeFpgaImagesResultResponseTypeDef](#describefpgaimagesresultresponsetypedef)
+  - [DescribeHostReservationOfferingsRequestTypeDef](#describehostreservationofferingsrequesttypedef)
+  - [DescribeHostReservationOfferingsResultResponseTypeDef](#describehostreservationofferingsresultresponsetypedef)
+  - [DescribeHostReservationsRequestTypeDef](#describehostreservationsrequesttypedef)
+  - [DescribeHostReservationsResultResponseTypeDef](#describehostreservationsresultresponsetypedef)
+  - [DescribeHostsRequestTypeDef](#describehostsrequesttypedef)
+  - [DescribeHostsResultResponseTypeDef](#describehostsresultresponsetypedef)
+  - [DescribeIamInstanceProfileAssociationsRequestTypeDef](#describeiaminstanceprofileassociationsrequesttypedef)
+  - [DescribeIamInstanceProfileAssociationsResultResponseTypeDef](#describeiaminstanceprofileassociationsresultresponsetypedef)
+  - [DescribeIdFormatRequestTypeDef](#describeidformatrequesttypedef)
+  - [DescribeIdFormatResultResponseTypeDef](#describeidformatresultresponsetypedef)
+  - [DescribeIdentityIdFormatRequestTypeDef](#describeidentityidformatrequesttypedef)
+  - [DescribeIdentityIdFormatResultResponseTypeDef](#describeidentityidformatresultresponsetypedef)
+  - [DescribeImageAttributeRequestImageTypeDef](#describeimageattributerequestimagetypedef)
+  - [DescribeImageAttributeRequestTypeDef](#describeimageattributerequesttypedef)
+  - [DescribeImagesRequestTypeDef](#describeimagesrequesttypedef)
+  - [DescribeImagesResultResponseTypeDef](#describeimagesresultresponsetypedef)
+  - [DescribeImportImageTasksRequestTypeDef](#describeimportimagetasksrequesttypedef)
+  - [DescribeImportImageTasksResultResponseTypeDef](#describeimportimagetasksresultresponsetypedef)
+  - [DescribeImportSnapshotTasksRequestTypeDef](#describeimportsnapshottasksrequesttypedef)
+  - [DescribeImportSnapshotTasksResultResponseTypeDef](#describeimportsnapshottasksresultresponsetypedef)
+  - [DescribeInstanceAttributeRequestInstanceTypeDef](#describeinstanceattributerequestinstancetypedef)
+  - [DescribeInstanceAttributeRequestTypeDef](#describeinstanceattributerequesttypedef)
+  - [DescribeInstanceCreditSpecificationsRequestTypeDef](#describeinstancecreditspecificationsrequesttypedef)
+  - [DescribeInstanceCreditSpecificationsResultResponseTypeDef](#describeinstancecreditspecificationsresultresponsetypedef)
+  - [DescribeInstanceEventNotificationAttributesRequestTypeDef](#describeinstanceeventnotificationattributesrequesttypedef)
+  - [DescribeInstanceEventNotificationAttributesResultResponseTypeDef](#describeinstanceeventnotificationattributesresultresponsetypedef)
+  - [DescribeInstanceStatusRequestTypeDef](#describeinstancestatusrequesttypedef)
+  - [DescribeInstanceStatusResultResponseTypeDef](#describeinstancestatusresultresponsetypedef)
+  - [DescribeInstanceTypeOfferingsRequestTypeDef](#describeinstancetypeofferingsrequesttypedef)
+  - [DescribeInstanceTypeOfferingsResultResponseTypeDef](#describeinstancetypeofferingsresultresponsetypedef)
+  - [DescribeInstanceTypesRequestTypeDef](#describeinstancetypesrequesttypedef)
+  - [DescribeInstanceTypesResultResponseTypeDef](#describeinstancetypesresultresponsetypedef)
+  - [DescribeInstancesRequestTypeDef](#describeinstancesrequesttypedef)
+  - [DescribeInstancesResultResponseTypeDef](#describeinstancesresultresponsetypedef)
+  - [DescribeInternetGatewaysRequestTypeDef](#describeinternetgatewaysrequesttypedef)
+  - [DescribeInternetGatewaysResultResponseTypeDef](#describeinternetgatewaysresultresponsetypedef)
+  - [DescribeIpv6PoolsRequestTypeDef](#describeipv6poolsrequesttypedef)
+  - [DescribeIpv6PoolsResultResponseTypeDef](#describeipv6poolsresultresponsetypedef)
+  - [DescribeKeyPairsRequestTypeDef](#describekeypairsrequesttypedef)
+  - [DescribeKeyPairsResultResponseTypeDef](#describekeypairsresultresponsetypedef)
+  - [DescribeLaunchTemplateVersionsRequestTypeDef](#describelaunchtemplateversionsrequesttypedef)
+  - [DescribeLaunchTemplateVersionsResultResponseTypeDef](#describelaunchtemplateversionsresultresponsetypedef)
+  - [DescribeLaunchTemplatesRequestTypeDef](#describelaunchtemplatesrequesttypedef)
+  - [DescribeLaunchTemplatesResultResponseTypeDef](#describelaunchtemplatesresultresponsetypedef)
+  - [DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsRequestTypeDef](#describelocalgatewayroutetablevirtualinterfacegroupassociationsrequesttypedef)
+  - [DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResultResponseTypeDef](#describelocalgatewayroutetablevirtualinterfacegroupassociationsresultresponsetypedef)
+  - [DescribeLocalGatewayRouteTableVpcAssociationsRequestTypeDef](#describelocalgatewayroutetablevpcassociationsrequesttypedef)
+  - [DescribeLocalGatewayRouteTableVpcAssociationsResultResponseTypeDef](#describelocalgatewayroutetablevpcassociationsresultresponsetypedef)
+  - [DescribeLocalGatewayRouteTablesRequestTypeDef](#describelocalgatewayroutetablesrequesttypedef)
+  - [DescribeLocalGatewayRouteTablesResultResponseTypeDef](#describelocalgatewayroutetablesresultresponsetypedef)
+  - [DescribeLocalGatewayVirtualInterfaceGroupsRequestTypeDef](#describelocalgatewayvirtualinterfacegroupsrequesttypedef)
+  - [DescribeLocalGatewayVirtualInterfaceGroupsResultResponseTypeDef](#describelocalgatewayvirtualinterfacegroupsresultresponsetypedef)
+  - [DescribeLocalGatewayVirtualInterfacesRequestTypeDef](#describelocalgatewayvirtualinterfacesrequesttypedef)
+  - [DescribeLocalGatewayVirtualInterfacesResultResponseTypeDef](#describelocalgatewayvirtualinterfacesresultresponsetypedef)
+  - [DescribeLocalGatewaysRequestTypeDef](#describelocalgatewaysrequesttypedef)
+  - [DescribeLocalGatewaysResultResponseTypeDef](#describelocalgatewaysresultresponsetypedef)
+  - [DescribeManagedPrefixListsRequestTypeDef](#describemanagedprefixlistsrequesttypedef)
+  - [DescribeManagedPrefixListsResultResponseTypeDef](#describemanagedprefixlistsresultresponsetypedef)
+  - [DescribeMovingAddressesRequestTypeDef](#describemovingaddressesrequesttypedef)
+  - [DescribeMovingAddressesResultResponseTypeDef](#describemovingaddressesresultresponsetypedef)
+  - [DescribeNatGatewaysRequestTypeDef](#describenatgatewaysrequesttypedef)
+  - [DescribeNatGatewaysResultResponseTypeDef](#describenatgatewaysresultresponsetypedef)
+  - [DescribeNetworkAclsRequestTypeDef](#describenetworkaclsrequesttypedef)
+  - [DescribeNetworkAclsResultResponseTypeDef](#describenetworkaclsresultresponsetypedef)
+  - [DescribeNetworkInsightsAnalysesRequestTypeDef](#describenetworkinsightsanalysesrequesttypedef)
+  - [DescribeNetworkInsightsAnalysesResultResponseTypeDef](#describenetworkinsightsanalysesresultresponsetypedef)
+  - [DescribeNetworkInsightsPathsRequestTypeDef](#describenetworkinsightspathsrequesttypedef)
+  - [DescribeNetworkInsightsPathsResultResponseTypeDef](#describenetworkinsightspathsresultresponsetypedef)
+  - [DescribeNetworkInterfaceAttributeRequestNetworkInterfaceTypeDef](#describenetworkinterfaceattributerequestnetworkinterfacetypedef)
+  - [DescribeNetworkInterfaceAttributeRequestTypeDef](#describenetworkinterfaceattributerequesttypedef)
+  - [DescribeNetworkInterfaceAttributeResultResponseTypeDef](#describenetworkinterfaceattributeresultresponsetypedef)
+  - [DescribeNetworkInterfacePermissionsRequestTypeDef](#describenetworkinterfacepermissionsrequesttypedef)
+  - [DescribeNetworkInterfacePermissionsResultResponseTypeDef](#describenetworkinterfacepermissionsresultresponsetypedef)
+  - [DescribeNetworkInterfacesRequestTypeDef](#describenetworkinterfacesrequesttypedef)
+  - [DescribeNetworkInterfacesResultResponseTypeDef](#describenetworkinterfacesresultresponsetypedef)
+  - [DescribePlacementGroupsRequestTypeDef](#describeplacementgroupsrequesttypedef)
+  - [DescribePlacementGroupsResultResponseTypeDef](#describeplacementgroupsresultresponsetypedef)
+  - [DescribePrefixListsRequestTypeDef](#describeprefixlistsrequesttypedef)
+  - [DescribePrefixListsResultResponseTypeDef](#describeprefixlistsresultresponsetypedef)
+  - [DescribePrincipalIdFormatRequestTypeDef](#describeprincipalidformatrequesttypedef)
+  - [DescribePrincipalIdFormatResultResponseTypeDef](#describeprincipalidformatresultresponsetypedef)
+  - [DescribePublicIpv4PoolsRequestTypeDef](#describepublicipv4poolsrequesttypedef)
+  - [DescribePublicIpv4PoolsResultResponseTypeDef](#describepublicipv4poolsresultresponsetypedef)
+  - [DescribeRegionsRequestTypeDef](#describeregionsrequesttypedef)
+  - [DescribeRegionsResultResponseTypeDef](#describeregionsresultresponsetypedef)
+  - [DescribeReplaceRootVolumeTasksRequestTypeDef](#describereplacerootvolumetasksrequesttypedef)
+  - [DescribeReplaceRootVolumeTasksResultResponseTypeDef](#describereplacerootvolumetasksresultresponsetypedef)
+  - [DescribeReservedInstancesListingsRequestTypeDef](#describereservedinstanceslistingsrequesttypedef)
+  - [DescribeReservedInstancesListingsResultResponseTypeDef](#describereservedinstanceslistingsresultresponsetypedef)
+  - [DescribeReservedInstancesModificationsRequestTypeDef](#describereservedinstancesmodificationsrequesttypedef)
+  - [DescribeReservedInstancesModificationsResultResponseTypeDef](#describereservedinstancesmodificationsresultresponsetypedef)
+  - [DescribeReservedInstancesOfferingsRequestTypeDef](#describereservedinstancesofferingsrequesttypedef)
+  - [DescribeReservedInstancesOfferingsResultResponseTypeDef](#describereservedinstancesofferingsresultresponsetypedef)
+  - [DescribeReservedInstancesRequestTypeDef](#describereservedinstancesrequesttypedef)
+  - [DescribeReservedInstancesResultResponseTypeDef](#describereservedinstancesresultresponsetypedef)
+  - [DescribeRouteTablesRequestTypeDef](#describeroutetablesrequesttypedef)
+  - [DescribeRouteTablesResultResponseTypeDef](#describeroutetablesresultresponsetypedef)
+  - [DescribeScheduledInstanceAvailabilityRequestTypeDef](#describescheduledinstanceavailabilityrequesttypedef)
+  - [DescribeScheduledInstanceAvailabilityResultResponseTypeDef](#describescheduledinstanceavailabilityresultresponsetypedef)
+  - [DescribeScheduledInstancesRequestTypeDef](#describescheduledinstancesrequesttypedef)
+  - [DescribeScheduledInstancesResultResponseTypeDef](#describescheduledinstancesresultresponsetypedef)
+  - [DescribeSecurityGroupReferencesRequestTypeDef](#describesecuritygroupreferencesrequesttypedef)
+  - [DescribeSecurityGroupReferencesResultResponseTypeDef](#describesecuritygroupreferencesresultresponsetypedef)
+  - [DescribeSecurityGroupsRequestTypeDef](#describesecuritygroupsrequesttypedef)
+  - [DescribeSecurityGroupsResultResponseTypeDef](#describesecuritygroupsresultresponsetypedef)
+  - [DescribeSnapshotAttributeRequestSnapshotTypeDef](#describesnapshotattributerequestsnapshottypedef)
+  - [DescribeSnapshotAttributeRequestTypeDef](#describesnapshotattributerequesttypedef)
+  - [DescribeSnapshotAttributeResultResponseTypeDef](#describesnapshotattributeresultresponsetypedef)
+  - [DescribeSnapshotsRequestTypeDef](#describesnapshotsrequesttypedef)
+  - [DescribeSnapshotsResultResponseTypeDef](#describesnapshotsresultresponsetypedef)
+  - [DescribeSpotDatafeedSubscriptionRequestTypeDef](#describespotdatafeedsubscriptionrequesttypedef)
+  - [DescribeSpotDatafeedSubscriptionResultResponseTypeDef](#describespotdatafeedsubscriptionresultresponsetypedef)
+  - [DescribeSpotFleetInstancesRequestTypeDef](#describespotfleetinstancesrequesttypedef)
+  - [DescribeSpotFleetInstancesResponseResponseTypeDef](#describespotfleetinstancesresponseresponsetypedef)
+  - [DescribeSpotFleetRequestHistoryRequestTypeDef](#describespotfleetrequesthistoryrequesttypedef)
+  - [DescribeSpotFleetRequestHistoryResponseResponseTypeDef](#describespotfleetrequesthistoryresponseresponsetypedef)
+  - [DescribeSpotFleetRequestsRequestTypeDef](#describespotfleetrequestsrequesttypedef)
+  - [DescribeSpotFleetRequestsResponseResponseTypeDef](#describespotfleetrequestsresponseresponsetypedef)
+  - [DescribeSpotInstanceRequestsRequestTypeDef](#describespotinstancerequestsrequesttypedef)
+  - [DescribeSpotInstanceRequestsResultResponseTypeDef](#describespotinstancerequestsresultresponsetypedef)
+  - [DescribeSpotPriceHistoryRequestTypeDef](#describespotpricehistoryrequesttypedef)
+  - [DescribeSpotPriceHistoryResultResponseTypeDef](#describespotpricehistoryresultresponsetypedef)
+  - [DescribeStaleSecurityGroupsRequestTypeDef](#describestalesecuritygroupsrequesttypedef)
+  - [DescribeStaleSecurityGroupsResultResponseTypeDef](#describestalesecuritygroupsresultresponsetypedef)
+  - [DescribeStoreImageTasksRequestTypeDef](#describestoreimagetasksrequesttypedef)
+  - [DescribeStoreImageTasksResultResponseTypeDef](#describestoreimagetasksresultresponsetypedef)
+  - [DescribeSubnetsRequestTypeDef](#describesubnetsrequesttypedef)
+  - [DescribeSubnetsResultResponseTypeDef](#describesubnetsresultresponsetypedef)
+  - [DescribeTagsRequestTypeDef](#describetagsrequesttypedef)
+  - [DescribeTagsResultResponseTypeDef](#describetagsresultresponsetypedef)
+  - [DescribeTrafficMirrorFiltersRequestTypeDef](#describetrafficmirrorfiltersrequesttypedef)
+  - [DescribeTrafficMirrorFiltersResultResponseTypeDef](#describetrafficmirrorfiltersresultresponsetypedef)
+  - [DescribeTrafficMirrorSessionsRequestTypeDef](#describetrafficmirrorsessionsrequesttypedef)
+  - [DescribeTrafficMirrorSessionsResultResponseTypeDef](#describetrafficmirrorsessionsresultresponsetypedef)
+  - [DescribeTrafficMirrorTargetsRequestTypeDef](#describetrafficmirrortargetsrequesttypedef)
+  - [DescribeTrafficMirrorTargetsResultResponseTypeDef](#describetrafficmirrortargetsresultresponsetypedef)
+  - [DescribeTransitGatewayAttachmentsRequestTypeDef](#describetransitgatewayattachmentsrequesttypedef)
+  - [DescribeTransitGatewayAttachmentsResultResponseTypeDef](#describetransitgatewayattachmentsresultresponsetypedef)
+  - [DescribeTransitGatewayConnectPeersRequestTypeDef](#describetransitgatewayconnectpeersrequesttypedef)
+  - [DescribeTransitGatewayConnectPeersResultResponseTypeDef](#describetransitgatewayconnectpeersresultresponsetypedef)
+  - [DescribeTransitGatewayConnectsRequestTypeDef](#describetransitgatewayconnectsrequesttypedef)
+  - [DescribeTransitGatewayConnectsResultResponseTypeDef](#describetransitgatewayconnectsresultresponsetypedef)
+  - [DescribeTransitGatewayMulticastDomainsRequestTypeDef](#describetransitgatewaymulticastdomainsrequesttypedef)
+  - [DescribeTransitGatewayMulticastDomainsResultResponseTypeDef](#describetransitgatewaymulticastdomainsresultresponsetypedef)
+  - [DescribeTransitGatewayPeeringAttachmentsRequestTypeDef](#describetransitgatewaypeeringattachmentsrequesttypedef)
+  - [DescribeTransitGatewayPeeringAttachmentsResultResponseTypeDef](#describetransitgatewaypeeringattachmentsresultresponsetypedef)
+  - [DescribeTransitGatewayRouteTablesRequestTypeDef](#describetransitgatewayroutetablesrequesttypedef)
+  - [DescribeTransitGatewayRouteTablesResultResponseTypeDef](#describetransitgatewayroutetablesresultresponsetypedef)
+  - [DescribeTransitGatewayVpcAttachmentsRequestTypeDef](#describetransitgatewayvpcattachmentsrequesttypedef)
+  - [DescribeTransitGatewayVpcAttachmentsResultResponseTypeDef](#describetransitgatewayvpcattachmentsresultresponsetypedef)
+  - [DescribeTransitGatewaysRequestTypeDef](#describetransitgatewaysrequesttypedef)
+  - [DescribeTransitGatewaysResultResponseTypeDef](#describetransitgatewaysresultresponsetypedef)
+  - [DescribeTrunkInterfaceAssociationsRequestTypeDef](#describetrunkinterfaceassociationsrequesttypedef)
+  - [DescribeTrunkInterfaceAssociationsResultResponseTypeDef](#describetrunkinterfaceassociationsresultresponsetypedef)
+  - [DescribeVolumeAttributeRequestTypeDef](#describevolumeattributerequesttypedef)
+  - [DescribeVolumeAttributeRequestVolumeTypeDef](#describevolumeattributerequestvolumetypedef)
+  - [DescribeVolumeAttributeResultResponseTypeDef](#describevolumeattributeresultresponsetypedef)
+  - [DescribeVolumeStatusRequestTypeDef](#describevolumestatusrequesttypedef)
+  - [DescribeVolumeStatusRequestVolumeTypeDef](#describevolumestatusrequestvolumetypedef)
+  - [DescribeVolumeStatusResultResponseTypeDef](#describevolumestatusresultresponsetypedef)
+  - [DescribeVolumesModificationsRequestTypeDef](#describevolumesmodificationsrequesttypedef)
+  - [DescribeVolumesModificationsResultResponseTypeDef](#describevolumesmodificationsresultresponsetypedef)
+  - [DescribeVolumesRequestTypeDef](#describevolumesrequesttypedef)
+  - [DescribeVolumesResultResponseTypeDef](#describevolumesresultresponsetypedef)
+  - [DescribeVpcAttributeRequestTypeDef](#describevpcattributerequesttypedef)
+  - [DescribeVpcAttributeRequestVpcTypeDef](#describevpcattributerequestvpctypedef)
+  - [DescribeVpcAttributeResultResponseTypeDef](#describevpcattributeresultresponsetypedef)
+  - [DescribeVpcClassicLinkDnsSupportRequestTypeDef](#describevpcclassiclinkdnssupportrequesttypedef)
+  - [DescribeVpcClassicLinkDnsSupportResultResponseTypeDef](#describevpcclassiclinkdnssupportresultresponsetypedef)
+  - [DescribeVpcClassicLinkRequestTypeDef](#describevpcclassiclinkrequesttypedef)
+  - [DescribeVpcClassicLinkResultResponseTypeDef](#describevpcclassiclinkresultresponsetypedef)
+  - [DescribeVpcEndpointConnectionNotificationsRequestTypeDef](#describevpcendpointconnectionnotificationsrequesttypedef)
+  - [DescribeVpcEndpointConnectionNotificationsResultResponseTypeDef](#describevpcendpointconnectionnotificationsresultresponsetypedef)
+  - [DescribeVpcEndpointConnectionsRequestTypeDef](#describevpcendpointconnectionsrequesttypedef)
+  - [DescribeVpcEndpointConnectionsResultResponseTypeDef](#describevpcendpointconnectionsresultresponsetypedef)
+  - [DescribeVpcEndpointServiceConfigurationsRequestTypeDef](#describevpcendpointserviceconfigurationsrequesttypedef)
+  - [DescribeVpcEndpointServiceConfigurationsResultResponseTypeDef](#describevpcendpointserviceconfigurationsresultresponsetypedef)
+  - [DescribeVpcEndpointServicePermissionsRequestTypeDef](#describevpcendpointservicepermissionsrequesttypedef)
+  - [DescribeVpcEndpointServicePermissionsResultResponseTypeDef](#describevpcendpointservicepermissionsresultresponsetypedef)
+  - [DescribeVpcEndpointServicesRequestTypeDef](#describevpcendpointservicesrequesttypedef)
+  - [DescribeVpcEndpointServicesResultResponseTypeDef](#describevpcendpointservicesresultresponsetypedef)
+  - [DescribeVpcEndpointsRequestTypeDef](#describevpcendpointsrequesttypedef)
+  - [DescribeVpcEndpointsResultResponseTypeDef](#describevpcendpointsresultresponsetypedef)
+  - [DescribeVpcPeeringConnectionsRequestTypeDef](#describevpcpeeringconnectionsrequesttypedef)
+  - [DescribeVpcPeeringConnectionsResultResponseTypeDef](#describevpcpeeringconnectionsresultresponsetypedef)
+  - [DescribeVpcsRequestTypeDef](#describevpcsrequesttypedef)
+  - [DescribeVpcsResultResponseTypeDef](#describevpcsresultresponsetypedef)
+  - [DescribeVpnConnectionsRequestTypeDef](#describevpnconnectionsrequesttypedef)
+  - [DescribeVpnConnectionsResultResponseTypeDef](#describevpnconnectionsresultresponsetypedef)
+  - [DescribeVpnGatewaysRequestTypeDef](#describevpngatewaysrequesttypedef)
+  - [DescribeVpnGatewaysResultResponseTypeDef](#describevpngatewaysresultresponsetypedef)
+  - [DetachClassicLinkVpcRequestInstanceTypeDef](#detachclassiclinkvpcrequestinstancetypedef)
+  - [DetachClassicLinkVpcRequestTypeDef](#detachclassiclinkvpcrequesttypedef)
+  - [DetachClassicLinkVpcRequestVpcTypeDef](#detachclassiclinkvpcrequestvpctypedef)
+  - [DetachClassicLinkVpcResultResponseTypeDef](#detachclassiclinkvpcresultresponsetypedef)
+  - [DetachInternetGatewayRequestInternetGatewayTypeDef](#detachinternetgatewayrequestinternetgatewaytypedef)
+  - [DetachInternetGatewayRequestTypeDef](#detachinternetgatewayrequesttypedef)
+  - [DetachInternetGatewayRequestVpcTypeDef](#detachinternetgatewayrequestvpctypedef)
+  - [DetachNetworkInterfaceRequestNetworkInterfaceTypeDef](#detachnetworkinterfacerequestnetworkinterfacetypedef)
+  - [DetachNetworkInterfaceRequestTypeDef](#detachnetworkinterfacerequesttypedef)
+  - [DetachVolumeRequestInstanceTypeDef](#detachvolumerequestinstancetypedef)
+  - [DetachVolumeRequestTypeDef](#detachvolumerequesttypedef)
+  - [DetachVolumeRequestVolumeTypeDef](#detachvolumerequestvolumetypedef)
+  - [DetachVpnGatewayRequestTypeDef](#detachvpngatewayrequesttypedef)
   - [DhcpConfigurationTypeDef](#dhcpconfigurationtypedef)
   - [DhcpOptionsTypeDef](#dhcpoptionstypedef)
   - [DirectoryServiceAuthenticationRequestTypeDef](#directoryserviceauthenticationrequesttypedef)
   - [DirectoryServiceAuthenticationTypeDef](#directoryserviceauthenticationtypedef)
-  - [DisableEbsEncryptionByDefaultResultTypeDef](#disableebsencryptionbydefaultresulttypedef)
+  - [DisableEbsEncryptionByDefaultRequestTypeDef](#disableebsencryptionbydefaultrequesttypedef)
+  - [DisableEbsEncryptionByDefaultResultResponseTypeDef](#disableebsencryptionbydefaultresultresponsetypedef)
   - [DisableFastSnapshotRestoreErrorItemTypeDef](#disablefastsnapshotrestoreerroritemtypedef)
   - [DisableFastSnapshotRestoreStateErrorItemTypeDef](#disablefastsnapshotrestorestateerroritemtypedef)
   - [DisableFastSnapshotRestoreStateErrorTypeDef](#disablefastsnapshotrestorestateerrortypedef)
   - [DisableFastSnapshotRestoreSuccessItemTypeDef](#disablefastsnapshotrestoresuccessitemtypedef)
-  - [DisableFastSnapshotRestoresResultTypeDef](#disablefastsnapshotrestoresresulttypedef)
-  - [DisableImageDeprecationResultTypeDef](#disableimagedeprecationresulttypedef)
-  - [DisableSerialConsoleAccessResultTypeDef](#disableserialconsoleaccessresulttypedef)
-  - [DisableTransitGatewayRouteTablePropagationResultTypeDef](#disabletransitgatewayroutetablepropagationresulttypedef)
-  - [DisableVpcClassicLinkDnsSupportResultTypeDef](#disablevpcclassiclinkdnssupportresulttypedef)
-  - [DisableVpcClassicLinkResultTypeDef](#disablevpcclassiclinkresulttypedef)
-  - [DisassociateClientVpnTargetNetworkResultTypeDef](#disassociateclientvpntargetnetworkresulttypedef)
-  - [DisassociateEnclaveCertificateIamRoleResultTypeDef](#disassociateenclavecertificateiamroleresulttypedef)
-  - [DisassociateIamInstanceProfileResultTypeDef](#disassociateiaminstanceprofileresulttypedef)
-  - [DisassociateSubnetCidrBlockResultTypeDef](#disassociatesubnetcidrblockresulttypedef)
-  - [DisassociateTransitGatewayMulticastDomainResultTypeDef](#disassociatetransitgatewaymulticastdomainresulttypedef)
-  - [DisassociateTransitGatewayRouteTableResultTypeDef](#disassociatetransitgatewayroutetableresulttypedef)
-  - [DisassociateTrunkInterfaceResultTypeDef](#disassociatetrunkinterfaceresulttypedef)
-  - [DisassociateVpcCidrBlockResultTypeDef](#disassociatevpccidrblockresulttypedef)
+  - [DisableFastSnapshotRestoresRequestTypeDef](#disablefastsnapshotrestoresrequesttypedef)
+  - [DisableFastSnapshotRestoresResultResponseTypeDef](#disablefastsnapshotrestoresresultresponsetypedef)
+  - [DisableImageDeprecationRequestTypeDef](#disableimagedeprecationrequesttypedef)
+  - [DisableImageDeprecationResultResponseTypeDef](#disableimagedeprecationresultresponsetypedef)
+  - [DisableSerialConsoleAccessRequestTypeDef](#disableserialconsoleaccessrequesttypedef)
+  - [DisableSerialConsoleAccessResultResponseTypeDef](#disableserialconsoleaccessresultresponsetypedef)
+  - [DisableTransitGatewayRouteTablePropagationRequestTypeDef](#disabletransitgatewayroutetablepropagationrequesttypedef)
+  - [DisableTransitGatewayRouteTablePropagationResultResponseTypeDef](#disabletransitgatewayroutetablepropagationresultresponsetypedef)
+  - [DisableVgwRoutePropagationRequestTypeDef](#disablevgwroutepropagationrequesttypedef)
+  - [DisableVpcClassicLinkDnsSupportRequestTypeDef](#disablevpcclassiclinkdnssupportrequesttypedef)
+  - [DisableVpcClassicLinkDnsSupportResultResponseTypeDef](#disablevpcclassiclinkdnssupportresultresponsetypedef)
+  - [DisableVpcClassicLinkRequestTypeDef](#disablevpcclassiclinkrequesttypedef)
+  - [DisableVpcClassicLinkRequestVpcTypeDef](#disablevpcclassiclinkrequestvpctypedef)
+  - [DisableVpcClassicLinkResultResponseTypeDef](#disablevpcclassiclinkresultresponsetypedef)
+  - [DisassociateAddressRequestClassicAddressTypeDef](#disassociateaddressrequestclassicaddresstypedef)
+  - [DisassociateAddressRequestNetworkInterfaceAssociationTypeDef](#disassociateaddressrequestnetworkinterfaceassociationtypedef)
+  - [DisassociateAddressRequestTypeDef](#disassociateaddressrequesttypedef)
+  - [DisassociateClientVpnTargetNetworkRequestTypeDef](#disassociateclientvpntargetnetworkrequesttypedef)
+  - [DisassociateClientVpnTargetNetworkResultResponseTypeDef](#disassociateclientvpntargetnetworkresultresponsetypedef)
+  - [DisassociateEnclaveCertificateIamRoleRequestTypeDef](#disassociateenclavecertificateiamrolerequesttypedef)
+  - [DisassociateEnclaveCertificateIamRoleResultResponseTypeDef](#disassociateenclavecertificateiamroleresultresponsetypedef)
+  - [DisassociateIamInstanceProfileRequestTypeDef](#disassociateiaminstanceprofilerequesttypedef)
+  - [DisassociateIamInstanceProfileResultResponseTypeDef](#disassociateiaminstanceprofileresultresponsetypedef)
+  - [DisassociateRouteTableRequestRouteTableAssociationTypeDef](#disassociateroutetablerequestroutetableassociationtypedef)
+  - [DisassociateRouteTableRequestServiceResourceTypeDef](#disassociateroutetablerequestserviceresourcetypedef)
+  - [DisassociateRouteTableRequestTypeDef](#disassociateroutetablerequesttypedef)
+  - [DisassociateSubnetCidrBlockRequestTypeDef](#disassociatesubnetcidrblockrequesttypedef)
+  - [DisassociateSubnetCidrBlockResultResponseTypeDef](#disassociatesubnetcidrblockresultresponsetypedef)
+  - [DisassociateTransitGatewayMulticastDomainRequestTypeDef](#disassociatetransitgatewaymulticastdomainrequesttypedef)
+  - [DisassociateTransitGatewayMulticastDomainResultResponseTypeDef](#disassociatetransitgatewaymulticastdomainresultresponsetypedef)
+  - [DisassociateTransitGatewayRouteTableRequestTypeDef](#disassociatetransitgatewayroutetablerequesttypedef)
+  - [DisassociateTransitGatewayRouteTableResultResponseTypeDef](#disassociatetransitgatewayroutetableresultresponsetypedef)
+  - [DisassociateTrunkInterfaceRequestTypeDef](#disassociatetrunkinterfacerequesttypedef)
+  - [DisassociateTrunkInterfaceResultResponseTypeDef](#disassociatetrunkinterfaceresultresponsetypedef)
+  - [DisassociateVpcCidrBlockRequestTypeDef](#disassociatevpccidrblockrequesttypedef)
+  - [DisassociateVpcCidrBlockResultResponseTypeDef](#disassociatevpccidrblockresultresponsetypedef)
   - [DiskImageDescriptionTypeDef](#diskimagedescriptiontypedef)
   - [DiskImageDetailTypeDef](#diskimagedetailtypedef)
   - [DiskImageTypeDef](#diskimagetypedef)
@@ -399,31 +800,46 @@ type annotations stubs module
   - [ElasticGpusTypeDef](#elasticgpustypedef)
   - [ElasticInferenceAcceleratorAssociationTypeDef](#elasticinferenceacceleratorassociationtypedef)
   - [ElasticInferenceAcceleratorTypeDef](#elasticinferenceacceleratortypedef)
-  - [EnableEbsEncryptionByDefaultResultTypeDef](#enableebsencryptionbydefaultresulttypedef)
+  - [EnableEbsEncryptionByDefaultRequestTypeDef](#enableebsencryptionbydefaultrequesttypedef)
+  - [EnableEbsEncryptionByDefaultResultResponseTypeDef](#enableebsencryptionbydefaultresultresponsetypedef)
   - [EnableFastSnapshotRestoreErrorItemTypeDef](#enablefastsnapshotrestoreerroritemtypedef)
   - [EnableFastSnapshotRestoreStateErrorItemTypeDef](#enablefastsnapshotrestorestateerroritemtypedef)
   - [EnableFastSnapshotRestoreStateErrorTypeDef](#enablefastsnapshotrestorestateerrortypedef)
   - [EnableFastSnapshotRestoreSuccessItemTypeDef](#enablefastsnapshotrestoresuccessitemtypedef)
-  - [EnableFastSnapshotRestoresResultTypeDef](#enablefastsnapshotrestoresresulttypedef)
-  - [EnableImageDeprecationResultTypeDef](#enableimagedeprecationresulttypedef)
-  - [EnableSerialConsoleAccessResultTypeDef](#enableserialconsoleaccessresulttypedef)
-  - [EnableTransitGatewayRouteTablePropagationResultTypeDef](#enabletransitgatewayroutetablepropagationresulttypedef)
-  - [EnableVpcClassicLinkDnsSupportResultTypeDef](#enablevpcclassiclinkdnssupportresulttypedef)
-  - [EnableVpcClassicLinkResultTypeDef](#enablevpcclassiclinkresulttypedef)
+  - [EnableFastSnapshotRestoresRequestTypeDef](#enablefastsnapshotrestoresrequesttypedef)
+  - [EnableFastSnapshotRestoresResultResponseTypeDef](#enablefastsnapshotrestoresresultresponsetypedef)
+  - [EnableImageDeprecationRequestTypeDef](#enableimagedeprecationrequesttypedef)
+  - [EnableImageDeprecationResultResponseTypeDef](#enableimagedeprecationresultresponsetypedef)
+  - [EnableSerialConsoleAccessRequestTypeDef](#enableserialconsoleaccessrequesttypedef)
+  - [EnableSerialConsoleAccessResultResponseTypeDef](#enableserialconsoleaccessresultresponsetypedef)
+  - [EnableTransitGatewayRouteTablePropagationRequestTypeDef](#enabletransitgatewayroutetablepropagationrequesttypedef)
+  - [EnableTransitGatewayRouteTablePropagationResultResponseTypeDef](#enabletransitgatewayroutetablepropagationresultresponsetypedef)
+  - [EnableVgwRoutePropagationRequestTypeDef](#enablevgwroutepropagationrequesttypedef)
+  - [EnableVolumeIORequestTypeDef](#enablevolumeiorequesttypedef)
+  - [EnableVolumeIORequestVolumeTypeDef](#enablevolumeiorequestvolumetypedef)
+  - [EnableVpcClassicLinkDnsSupportRequestTypeDef](#enablevpcclassiclinkdnssupportrequesttypedef)
+  - [EnableVpcClassicLinkDnsSupportResultResponseTypeDef](#enablevpcclassiclinkdnssupportresultresponsetypedef)
+  - [EnableVpcClassicLinkRequestTypeDef](#enablevpcclassiclinkrequesttypedef)
+  - [EnableVpcClassicLinkRequestVpcTypeDef](#enablevpcclassiclinkrequestvpctypedef)
+  - [EnableVpcClassicLinkResultResponseTypeDef](#enablevpcclassiclinkresultresponsetypedef)
   - [EnclaveOptionsRequestTypeDef](#enclaveoptionsrequesttypedef)
   - [EnclaveOptionsTypeDef](#enclaveoptionstypedef)
   - [EventInformationTypeDef](#eventinformationtypedef)
   - [ExplanationTypeDef](#explanationtypedef)
-  - [ExportClientVpnClientCertificateRevocationListResultTypeDef](#exportclientvpnclientcertificaterevocationlistresulttypedef)
-  - [ExportClientVpnClientConfigurationResultTypeDef](#exportclientvpnclientconfigurationresulttypedef)
-  - [ExportImageResultTypeDef](#exportimageresulttypedef)
+  - [ExportClientVpnClientCertificateRevocationListRequestTypeDef](#exportclientvpnclientcertificaterevocationlistrequesttypedef)
+  - [ExportClientVpnClientCertificateRevocationListResultResponseTypeDef](#exportclientvpnclientcertificaterevocationlistresultresponsetypedef)
+  - [ExportClientVpnClientConfigurationRequestTypeDef](#exportclientvpnclientconfigurationrequesttypedef)
+  - [ExportClientVpnClientConfigurationResultResponseTypeDef](#exportclientvpnclientconfigurationresultresponsetypedef)
+  - [ExportImageRequestTypeDef](#exportimagerequesttypedef)
+  - [ExportImageResultResponseTypeDef](#exportimageresultresponsetypedef)
   - [ExportImageTaskTypeDef](#exportimagetasktypedef)
   - [ExportTaskS3LocationRequestTypeDef](#exporttasks3locationrequesttypedef)
   - [ExportTaskS3LocationTypeDef](#exporttasks3locationtypedef)
   - [ExportTaskTypeDef](#exporttasktypedef)
   - [ExportToS3TaskSpecificationTypeDef](#exporttos3taskspecificationtypedef)
   - [ExportToS3TaskTypeDef](#exporttos3tasktypedef)
-  - [ExportTransitGatewayRoutesResultTypeDef](#exporttransitgatewayroutesresulttypedef)
+  - [ExportTransitGatewayRoutesRequestTypeDef](#exporttransitgatewayroutesrequesttypedef)
+  - [ExportTransitGatewayRoutesResultResponseTypeDef](#exporttransitgatewayroutesresultresponsetypedef)
   - [FailedQueuedPurchaseDeletionTypeDef](#failedqueuedpurchasedeletiontypedef)
   - [FederatedAuthenticationRequestTypeDef](#federatedauthenticationrequesttypedef)
   - [FederatedAuthenticationTypeDef](#federatedauthenticationtypedef)
@@ -446,29 +862,54 @@ type annotations stubs module
   - [FpgaImageStateTypeDef](#fpgaimagestatetypedef)
   - [FpgaImageTypeDef](#fpgaimagetypedef)
   - [FpgaInfoTypeDef](#fpgainfotypedef)
-  - [GetAssociatedEnclaveCertificateIamRolesResultTypeDef](#getassociatedenclavecertificateiamrolesresulttypedef)
-  - [GetAssociatedIpv6PoolCidrsResultTypeDef](#getassociatedipv6poolcidrsresulttypedef)
-  - [GetCapacityReservationUsageResultTypeDef](#getcapacityreservationusageresulttypedef)
-  - [GetCoipPoolUsageResultTypeDef](#getcoippoolusageresulttypedef)
-  - [GetConsoleOutputResultTypeDef](#getconsoleoutputresulttypedef)
-  - [GetConsoleScreenshotResultTypeDef](#getconsolescreenshotresulttypedef)
-  - [GetDefaultCreditSpecificationResultTypeDef](#getdefaultcreditspecificationresulttypedef)
-  - [GetEbsDefaultKmsKeyIdResultTypeDef](#getebsdefaultkmskeyidresulttypedef)
-  - [GetEbsEncryptionByDefaultResultTypeDef](#getebsencryptionbydefaultresulttypedef)
-  - [GetFlowLogsIntegrationTemplateResultTypeDef](#getflowlogsintegrationtemplateresulttypedef)
-  - [GetGroupsForCapacityReservationResultTypeDef](#getgroupsforcapacityreservationresulttypedef)
-  - [GetHostReservationPurchasePreviewResultTypeDef](#gethostreservationpurchasepreviewresulttypedef)
-  - [GetLaunchTemplateDataResultTypeDef](#getlaunchtemplatedataresulttypedef)
-  - [GetManagedPrefixListAssociationsResultTypeDef](#getmanagedprefixlistassociationsresulttypedef)
-  - [GetManagedPrefixListEntriesResultTypeDef](#getmanagedprefixlistentriesresulttypedef)
-  - [GetPasswordDataResultTypeDef](#getpassworddataresulttypedef)
-  - [GetReservedInstancesExchangeQuoteResultTypeDef](#getreservedinstancesexchangequoteresulttypedef)
-  - [GetSerialConsoleAccessStatusResultTypeDef](#getserialconsoleaccessstatusresulttypedef)
-  - [GetTransitGatewayAttachmentPropagationsResultTypeDef](#gettransitgatewayattachmentpropagationsresulttypedef)
-  - [GetTransitGatewayMulticastDomainAssociationsResultTypeDef](#gettransitgatewaymulticastdomainassociationsresulttypedef)
-  - [GetTransitGatewayPrefixListReferencesResultTypeDef](#gettransitgatewayprefixlistreferencesresulttypedef)
-  - [GetTransitGatewayRouteTableAssociationsResultTypeDef](#gettransitgatewayroutetableassociationsresulttypedef)
-  - [GetTransitGatewayRouteTablePropagationsResultTypeDef](#gettransitgatewayroutetablepropagationsresulttypedef)
+  - [GetAssociatedEnclaveCertificateIamRolesRequestTypeDef](#getassociatedenclavecertificateiamrolesrequesttypedef)
+  - [GetAssociatedEnclaveCertificateIamRolesResultResponseTypeDef](#getassociatedenclavecertificateiamrolesresultresponsetypedef)
+  - [GetAssociatedIpv6PoolCidrsRequestTypeDef](#getassociatedipv6poolcidrsrequesttypedef)
+  - [GetAssociatedIpv6PoolCidrsResultResponseTypeDef](#getassociatedipv6poolcidrsresultresponsetypedef)
+  - [GetCapacityReservationUsageRequestTypeDef](#getcapacityreservationusagerequesttypedef)
+  - [GetCapacityReservationUsageResultResponseTypeDef](#getcapacityreservationusageresultresponsetypedef)
+  - [GetCoipPoolUsageRequestTypeDef](#getcoippoolusagerequesttypedef)
+  - [GetCoipPoolUsageResultResponseTypeDef](#getcoippoolusageresultresponsetypedef)
+  - [GetConsoleOutputRequestInstanceTypeDef](#getconsoleoutputrequestinstancetypedef)
+  - [GetConsoleOutputRequestTypeDef](#getconsoleoutputrequesttypedef)
+  - [GetConsoleOutputResultResponseTypeDef](#getconsoleoutputresultresponsetypedef)
+  - [GetConsoleScreenshotRequestTypeDef](#getconsolescreenshotrequesttypedef)
+  - [GetConsoleScreenshotResultResponseTypeDef](#getconsolescreenshotresultresponsetypedef)
+  - [GetDefaultCreditSpecificationRequestTypeDef](#getdefaultcreditspecificationrequesttypedef)
+  - [GetDefaultCreditSpecificationResultResponseTypeDef](#getdefaultcreditspecificationresultresponsetypedef)
+  - [GetEbsDefaultKmsKeyIdRequestTypeDef](#getebsdefaultkmskeyidrequesttypedef)
+  - [GetEbsDefaultKmsKeyIdResultResponseTypeDef](#getebsdefaultkmskeyidresultresponsetypedef)
+  - [GetEbsEncryptionByDefaultRequestTypeDef](#getebsencryptionbydefaultrequesttypedef)
+  - [GetEbsEncryptionByDefaultResultResponseTypeDef](#getebsencryptionbydefaultresultresponsetypedef)
+  - [GetFlowLogsIntegrationTemplateRequestTypeDef](#getflowlogsintegrationtemplaterequesttypedef)
+  - [GetFlowLogsIntegrationTemplateResultResponseTypeDef](#getflowlogsintegrationtemplateresultresponsetypedef)
+  - [GetGroupsForCapacityReservationRequestTypeDef](#getgroupsforcapacityreservationrequesttypedef)
+  - [GetGroupsForCapacityReservationResultResponseTypeDef](#getgroupsforcapacityreservationresultresponsetypedef)
+  - [GetHostReservationPurchasePreviewRequestTypeDef](#gethostreservationpurchasepreviewrequesttypedef)
+  - [GetHostReservationPurchasePreviewResultResponseTypeDef](#gethostreservationpurchasepreviewresultresponsetypedef)
+  - [GetLaunchTemplateDataRequestTypeDef](#getlaunchtemplatedatarequesttypedef)
+  - [GetLaunchTemplateDataResultResponseTypeDef](#getlaunchtemplatedataresultresponsetypedef)
+  - [GetManagedPrefixListAssociationsRequestTypeDef](#getmanagedprefixlistassociationsrequesttypedef)
+  - [GetManagedPrefixListAssociationsResultResponseTypeDef](#getmanagedprefixlistassociationsresultresponsetypedef)
+  - [GetManagedPrefixListEntriesRequestTypeDef](#getmanagedprefixlistentriesrequesttypedef)
+  - [GetManagedPrefixListEntriesResultResponseTypeDef](#getmanagedprefixlistentriesresultresponsetypedef)
+  - [GetPasswordDataRequestInstanceTypeDef](#getpassworddatarequestinstancetypedef)
+  - [GetPasswordDataRequestTypeDef](#getpassworddatarequesttypedef)
+  - [GetPasswordDataResultResponseTypeDef](#getpassworddataresultresponsetypedef)
+  - [GetReservedInstancesExchangeQuoteRequestTypeDef](#getreservedinstancesexchangequoterequesttypedef)
+  - [GetReservedInstancesExchangeQuoteResultResponseTypeDef](#getreservedinstancesexchangequoteresultresponsetypedef)
+  - [GetSerialConsoleAccessStatusRequestTypeDef](#getserialconsoleaccessstatusrequesttypedef)
+  - [GetSerialConsoleAccessStatusResultResponseTypeDef](#getserialconsoleaccessstatusresultresponsetypedef)
+  - [GetTransitGatewayAttachmentPropagationsRequestTypeDef](#gettransitgatewayattachmentpropagationsrequesttypedef)
+  - [GetTransitGatewayAttachmentPropagationsResultResponseTypeDef](#gettransitgatewayattachmentpropagationsresultresponsetypedef)
+  - [GetTransitGatewayMulticastDomainAssociationsRequestTypeDef](#gettransitgatewaymulticastdomainassociationsrequesttypedef)
+  - [GetTransitGatewayMulticastDomainAssociationsResultResponseTypeDef](#gettransitgatewaymulticastdomainassociationsresultresponsetypedef)
+  - [GetTransitGatewayPrefixListReferencesRequestTypeDef](#gettransitgatewayprefixlistreferencesrequesttypedef)
+  - [GetTransitGatewayPrefixListReferencesResultResponseTypeDef](#gettransitgatewayprefixlistreferencesresultresponsetypedef)
+  - [GetTransitGatewayRouteTableAssociationsRequestTypeDef](#gettransitgatewayroutetableassociationsrequesttypedef)
+  - [GetTransitGatewayRouteTableAssociationsResultResponseTypeDef](#gettransitgatewayroutetableassociationsresultresponsetypedef)
+  - [GetTransitGatewayRouteTablePropagationsRequestTypeDef](#gettransitgatewayroutetablepropagationsrequesttypedef)
+  - [GetTransitGatewayRouteTablePropagationsResultResponseTypeDef](#gettransitgatewayroutetablepropagationsresultresponsetypedef)
   - [GpuDeviceInfoTypeDef](#gpudeviceinfotypedef)
   - [GpuDeviceMemoryInfoTypeDef](#gpudevicememoryinfotypedef)
   - [GpuInfoTypeDef](#gpuinfotypedef)
@@ -489,32 +930,40 @@ type annotations stubs module
   - [IamInstanceProfileTypeDef](#iaminstanceprofiletypedef)
   - [IcmpTypeCodeTypeDef](#icmptypecodetypedef)
   - [IdFormatTypeDef](#idformattypedef)
-  - [ImageAttributeTypeDef](#imageattributetypedef)
+  - [ImageAttributeResponseTypeDef](#imageattributeresponsetypedef)
   - [ImageDiskContainerTypeDef](#imagediskcontainertypedef)
   - [ImageTypeDef](#imagetypedef)
-  - [ImportClientVpnClientCertificateRevocationListResultTypeDef](#importclientvpnclientcertificaterevocationlistresulttypedef)
+  - [ImportClientVpnClientCertificateRevocationListRequestTypeDef](#importclientvpnclientcertificaterevocationlistrequesttypedef)
+  - [ImportClientVpnClientCertificateRevocationListResultResponseTypeDef](#importclientvpnclientcertificaterevocationlistresultresponsetypedef)
   - [ImportImageLicenseConfigurationRequestTypeDef](#importimagelicenseconfigurationrequesttypedef)
   - [ImportImageLicenseConfigurationResponseTypeDef](#importimagelicenseconfigurationresponsetypedef)
-  - [ImportImageResultTypeDef](#importimageresulttypedef)
+  - [ImportImageRequestTypeDef](#importimagerequesttypedef)
+  - [ImportImageResultResponseTypeDef](#importimageresultresponsetypedef)
   - [ImportImageTaskTypeDef](#importimagetasktypedef)
   - [ImportInstanceLaunchSpecificationTypeDef](#importinstancelaunchspecificationtypedef)
-  - [ImportInstanceResultTypeDef](#importinstanceresulttypedef)
+  - [ImportInstanceRequestTypeDef](#importinstancerequesttypedef)
+  - [ImportInstanceResultResponseTypeDef](#importinstanceresultresponsetypedef)
   - [ImportInstanceTaskDetailsTypeDef](#importinstancetaskdetailstypedef)
   - [ImportInstanceVolumeDetailItemTypeDef](#importinstancevolumedetailitemtypedef)
-  - [ImportKeyPairResultTypeDef](#importkeypairresulttypedef)
-  - [ImportSnapshotResultTypeDef](#importsnapshotresulttypedef)
+  - [ImportKeyPairRequestServiceResourceTypeDef](#importkeypairrequestserviceresourcetypedef)
+  - [ImportKeyPairRequestTypeDef](#importkeypairrequesttypedef)
+  - [ImportKeyPairResultResponseTypeDef](#importkeypairresultresponsetypedef)
+  - [ImportSnapshotRequestTypeDef](#importsnapshotrequesttypedef)
+  - [ImportSnapshotResultResponseTypeDef](#importsnapshotresultresponsetypedef)
   - [ImportSnapshotTaskTypeDef](#importsnapshottasktypedef)
-  - [ImportVolumeResultTypeDef](#importvolumeresulttypedef)
+  - [ImportVolumeRequestTypeDef](#importvolumerequesttypedef)
+  - [ImportVolumeResultResponseTypeDef](#importvolumeresultresponsetypedef)
   - [ImportVolumeTaskDetailsTypeDef](#importvolumetaskdetailstypedef)
   - [InferenceAcceleratorInfoTypeDef](#inferenceacceleratorinfotypedef)
   - [InferenceDeviceInfoTypeDef](#inferencedeviceinfotypedef)
-  - [InstanceAttributeTypeDef](#instanceattributetypedef)
+  - [InstanceAttributeResponseTypeDef](#instanceattributeresponsetypedef)
   - [InstanceBlockDeviceMappingSpecificationTypeDef](#instanceblockdevicemappingspecificationtypedef)
   - [InstanceBlockDeviceMappingTypeDef](#instanceblockdevicemappingtypedef)
   - [InstanceCapacityTypeDef](#instancecapacitytypedef)
   - [InstanceCountTypeDef](#instancecounttypedef)
   - [InstanceCreditSpecificationRequestTypeDef](#instancecreditspecificationrequesttypedef)
   - [InstanceCreditSpecificationTypeDef](#instancecreditspecificationtypedef)
+  - [InstanceDeleteTagsRequestTypeDef](#instancedeletetagsrequesttypedef)
   - [InstanceExportDetailsTypeDef](#instanceexportdetailstypedef)
   - [InstanceFamilyCreditSpecificationTypeDef](#instancefamilycreditspecificationtypedef)
   - [InstanceIpv6AddressRequestTypeDef](#instanceipv6addressrequesttypedef)
@@ -551,7 +1000,7 @@ type annotations stubs module
   - [Ipv6PoolTypeDef](#ipv6pooltypedef)
   - [Ipv6RangeTypeDef](#ipv6rangetypedef)
   - [KeyPairInfoTypeDef](#keypairinfotypedef)
-  - [KeyPairTypeDef](#keypairtypedef)
+  - [KeyPairResponseTypeDef](#keypairresponsetypedef)
   - [LastErrorTypeDef](#lasterrortypedef)
   - [LaunchPermissionModificationsTypeDef](#launchpermissionmodificationstypedef)
   - [LaunchPermissionTypeDef](#launchpermissiontypedef)
@@ -609,47 +1058,100 @@ type annotations stubs module
   - [LocalGatewayVirtualInterfaceTypeDef](#localgatewayvirtualinterfacetypedef)
   - [ManagedPrefixListTypeDef](#managedprefixlisttypedef)
   - [MemoryInfoTypeDef](#memoryinfotypedef)
-  - [ModifyAddressAttributeResultTypeDef](#modifyaddressattributeresulttypedef)
-  - [ModifyAvailabilityZoneGroupResultTypeDef](#modifyavailabilityzonegroupresulttypedef)
-  - [ModifyCapacityReservationResultTypeDef](#modifycapacityreservationresulttypedef)
-  - [ModifyClientVpnEndpointResultTypeDef](#modifyclientvpnendpointresulttypedef)
-  - [ModifyDefaultCreditSpecificationResultTypeDef](#modifydefaultcreditspecificationresulttypedef)
-  - [ModifyEbsDefaultKmsKeyIdResultTypeDef](#modifyebsdefaultkmskeyidresulttypedef)
-  - [ModifyFleetResultTypeDef](#modifyfleetresulttypedef)
-  - [ModifyFpgaImageAttributeResultTypeDef](#modifyfpgaimageattributeresulttypedef)
-  - [ModifyHostsResultTypeDef](#modifyhostsresulttypedef)
-  - [ModifyInstanceCapacityReservationAttributesResultTypeDef](#modifyinstancecapacityreservationattributesresulttypedef)
-  - [ModifyInstanceCreditSpecificationResultTypeDef](#modifyinstancecreditspecificationresulttypedef)
-  - [ModifyInstanceEventStartTimeResultTypeDef](#modifyinstanceeventstarttimeresulttypedef)
-  - [ModifyInstanceMetadataOptionsResultTypeDef](#modifyinstancemetadataoptionsresulttypedef)
-  - [ModifyInstancePlacementResultTypeDef](#modifyinstanceplacementresulttypedef)
-  - [ModifyLaunchTemplateResultTypeDef](#modifylaunchtemplateresulttypedef)
-  - [ModifyManagedPrefixListResultTypeDef](#modifymanagedprefixlistresulttypedef)
-  - [ModifyReservedInstancesResultTypeDef](#modifyreservedinstancesresulttypedef)
-  - [ModifySpotFleetRequestResponseTypeDef](#modifyspotfleetrequestresponsetypedef)
-  - [ModifyTrafficMirrorFilterNetworkServicesResultTypeDef](#modifytrafficmirrorfilternetworkservicesresulttypedef)
-  - [ModifyTrafficMirrorFilterRuleResultTypeDef](#modifytrafficmirrorfilterruleresulttypedef)
-  - [ModifyTrafficMirrorSessionResultTypeDef](#modifytrafficmirrorsessionresulttypedef)
+  - [ModifyAddressAttributeRequestTypeDef](#modifyaddressattributerequesttypedef)
+  - [ModifyAddressAttributeResultResponseTypeDef](#modifyaddressattributeresultresponsetypedef)
+  - [ModifyAvailabilityZoneGroupRequestTypeDef](#modifyavailabilityzonegrouprequesttypedef)
+  - [ModifyAvailabilityZoneGroupResultResponseTypeDef](#modifyavailabilityzonegroupresultresponsetypedef)
+  - [ModifyCapacityReservationRequestTypeDef](#modifycapacityreservationrequesttypedef)
+  - [ModifyCapacityReservationResultResponseTypeDef](#modifycapacityreservationresultresponsetypedef)
+  - [ModifyClientVpnEndpointRequestTypeDef](#modifyclientvpnendpointrequesttypedef)
+  - [ModifyClientVpnEndpointResultResponseTypeDef](#modifyclientvpnendpointresultresponsetypedef)
+  - [ModifyDefaultCreditSpecificationRequestTypeDef](#modifydefaultcreditspecificationrequesttypedef)
+  - [ModifyDefaultCreditSpecificationResultResponseTypeDef](#modifydefaultcreditspecificationresultresponsetypedef)
+  - [ModifyEbsDefaultKmsKeyIdRequestTypeDef](#modifyebsdefaultkmskeyidrequesttypedef)
+  - [ModifyEbsDefaultKmsKeyIdResultResponseTypeDef](#modifyebsdefaultkmskeyidresultresponsetypedef)
+  - [ModifyFleetRequestTypeDef](#modifyfleetrequesttypedef)
+  - [ModifyFleetResultResponseTypeDef](#modifyfleetresultresponsetypedef)
+  - [ModifyFpgaImageAttributeRequestTypeDef](#modifyfpgaimageattributerequesttypedef)
+  - [ModifyFpgaImageAttributeResultResponseTypeDef](#modifyfpgaimageattributeresultresponsetypedef)
+  - [ModifyHostsRequestTypeDef](#modifyhostsrequesttypedef)
+  - [ModifyHostsResultResponseTypeDef](#modifyhostsresultresponsetypedef)
+  - [ModifyIdFormatRequestTypeDef](#modifyidformatrequesttypedef)
+  - [ModifyIdentityIdFormatRequestTypeDef](#modifyidentityidformatrequesttypedef)
+  - [ModifyImageAttributeRequestImageTypeDef](#modifyimageattributerequestimagetypedef)
+  - [ModifyImageAttributeRequestTypeDef](#modifyimageattributerequesttypedef)
+  - [ModifyInstanceAttributeRequestInstanceTypeDef](#modifyinstanceattributerequestinstancetypedef)
+  - [ModifyInstanceAttributeRequestTypeDef](#modifyinstanceattributerequesttypedef)
+  - [ModifyInstanceCapacityReservationAttributesRequestTypeDef](#modifyinstancecapacityreservationattributesrequesttypedef)
+  - [ModifyInstanceCapacityReservationAttributesResultResponseTypeDef](#modifyinstancecapacityreservationattributesresultresponsetypedef)
+  - [ModifyInstanceCreditSpecificationRequestTypeDef](#modifyinstancecreditspecificationrequesttypedef)
+  - [ModifyInstanceCreditSpecificationResultResponseTypeDef](#modifyinstancecreditspecificationresultresponsetypedef)
+  - [ModifyInstanceEventStartTimeRequestTypeDef](#modifyinstanceeventstarttimerequesttypedef)
+  - [ModifyInstanceEventStartTimeResultResponseTypeDef](#modifyinstanceeventstarttimeresultresponsetypedef)
+  - [ModifyInstanceMetadataOptionsRequestTypeDef](#modifyinstancemetadataoptionsrequesttypedef)
+  - [ModifyInstanceMetadataOptionsResultResponseTypeDef](#modifyinstancemetadataoptionsresultresponsetypedef)
+  - [ModifyInstancePlacementRequestTypeDef](#modifyinstanceplacementrequesttypedef)
+  - [ModifyInstancePlacementResultResponseTypeDef](#modifyinstanceplacementresultresponsetypedef)
+  - [ModifyLaunchTemplateRequestTypeDef](#modifylaunchtemplaterequesttypedef)
+  - [ModifyLaunchTemplateResultResponseTypeDef](#modifylaunchtemplateresultresponsetypedef)
+  - [ModifyManagedPrefixListRequestTypeDef](#modifymanagedprefixlistrequesttypedef)
+  - [ModifyManagedPrefixListResultResponseTypeDef](#modifymanagedprefixlistresultresponsetypedef)
+  - [ModifyNetworkInterfaceAttributeRequestNetworkInterfaceTypeDef](#modifynetworkinterfaceattributerequestnetworkinterfacetypedef)
+  - [ModifyNetworkInterfaceAttributeRequestTypeDef](#modifynetworkinterfaceattributerequesttypedef)
+  - [ModifyReservedInstancesRequestTypeDef](#modifyreservedinstancesrequesttypedef)
+  - [ModifyReservedInstancesResultResponseTypeDef](#modifyreservedinstancesresultresponsetypedef)
+  - [ModifySnapshotAttributeRequestSnapshotTypeDef](#modifysnapshotattributerequestsnapshottypedef)
+  - [ModifySnapshotAttributeRequestTypeDef](#modifysnapshotattributerequesttypedef)
+  - [ModifySpotFleetRequestRequestTypeDef](#modifyspotfleetrequestrequesttypedef)
+  - [ModifySpotFleetRequestResponseResponseTypeDef](#modifyspotfleetrequestresponseresponsetypedef)
+  - [ModifySubnetAttributeRequestTypeDef](#modifysubnetattributerequesttypedef)
+  - [ModifyTrafficMirrorFilterNetworkServicesRequestTypeDef](#modifytrafficmirrorfilternetworkservicesrequesttypedef)
+  - [ModifyTrafficMirrorFilterNetworkServicesResultResponseTypeDef](#modifytrafficmirrorfilternetworkservicesresultresponsetypedef)
+  - [ModifyTrafficMirrorFilterRuleRequestTypeDef](#modifytrafficmirrorfilterrulerequesttypedef)
+  - [ModifyTrafficMirrorFilterRuleResultResponseTypeDef](#modifytrafficmirrorfilterruleresultresponsetypedef)
+  - [ModifyTrafficMirrorSessionRequestTypeDef](#modifytrafficmirrorsessionrequesttypedef)
+  - [ModifyTrafficMirrorSessionResultResponseTypeDef](#modifytrafficmirrorsessionresultresponsetypedef)
   - [ModifyTransitGatewayOptionsTypeDef](#modifytransitgatewayoptionstypedef)
-  - [ModifyTransitGatewayPrefixListReferenceResultTypeDef](#modifytransitgatewayprefixlistreferenceresulttypedef)
-  - [ModifyTransitGatewayResultTypeDef](#modifytransitgatewayresulttypedef)
+  - [ModifyTransitGatewayPrefixListReferenceRequestTypeDef](#modifytransitgatewayprefixlistreferencerequesttypedef)
+  - [ModifyTransitGatewayPrefixListReferenceResultResponseTypeDef](#modifytransitgatewayprefixlistreferenceresultresponsetypedef)
+  - [ModifyTransitGatewayRequestTypeDef](#modifytransitgatewayrequesttypedef)
+  - [ModifyTransitGatewayResultResponseTypeDef](#modifytransitgatewayresultresponsetypedef)
   - [ModifyTransitGatewayVpcAttachmentRequestOptionsTypeDef](#modifytransitgatewayvpcattachmentrequestoptionstypedef)
-  - [ModifyTransitGatewayVpcAttachmentResultTypeDef](#modifytransitgatewayvpcattachmentresulttypedef)
-  - [ModifyVolumeResultTypeDef](#modifyvolumeresulttypedef)
-  - [ModifyVpcEndpointConnectionNotificationResultTypeDef](#modifyvpcendpointconnectionnotificationresulttypedef)
-  - [ModifyVpcEndpointResultTypeDef](#modifyvpcendpointresulttypedef)
-  - [ModifyVpcEndpointServiceConfigurationResultTypeDef](#modifyvpcendpointserviceconfigurationresulttypedef)
-  - [ModifyVpcEndpointServicePermissionsResultTypeDef](#modifyvpcendpointservicepermissionsresulttypedef)
-  - [ModifyVpcPeeringConnectionOptionsResultTypeDef](#modifyvpcpeeringconnectionoptionsresulttypedef)
-  - [ModifyVpcTenancyResultTypeDef](#modifyvpctenancyresulttypedef)
-  - [ModifyVpnConnectionOptionsResultTypeDef](#modifyvpnconnectionoptionsresulttypedef)
-  - [ModifyVpnConnectionResultTypeDef](#modifyvpnconnectionresulttypedef)
-  - [ModifyVpnTunnelCertificateResultTypeDef](#modifyvpntunnelcertificateresulttypedef)
-  - [ModifyVpnTunnelOptionsResultTypeDef](#modifyvpntunneloptionsresulttypedef)
+  - [ModifyTransitGatewayVpcAttachmentRequestTypeDef](#modifytransitgatewayvpcattachmentrequesttypedef)
+  - [ModifyTransitGatewayVpcAttachmentResultResponseTypeDef](#modifytransitgatewayvpcattachmentresultresponsetypedef)
+  - [ModifyVolumeAttributeRequestTypeDef](#modifyvolumeattributerequesttypedef)
+  - [ModifyVolumeAttributeRequestVolumeTypeDef](#modifyvolumeattributerequestvolumetypedef)
+  - [ModifyVolumeRequestTypeDef](#modifyvolumerequesttypedef)
+  - [ModifyVolumeResultResponseTypeDef](#modifyvolumeresultresponsetypedef)
+  - [ModifyVpcAttributeRequestTypeDef](#modifyvpcattributerequesttypedef)
+  - [ModifyVpcAttributeRequestVpcTypeDef](#modifyvpcattributerequestvpctypedef)
+  - [ModifyVpcEndpointConnectionNotificationRequestTypeDef](#modifyvpcendpointconnectionnotificationrequesttypedef)
+  - [ModifyVpcEndpointConnectionNotificationResultResponseTypeDef](#modifyvpcendpointconnectionnotificationresultresponsetypedef)
+  - [ModifyVpcEndpointRequestTypeDef](#modifyvpcendpointrequesttypedef)
+  - [ModifyVpcEndpointResultResponseTypeDef](#modifyvpcendpointresultresponsetypedef)
+  - [ModifyVpcEndpointServiceConfigurationRequestTypeDef](#modifyvpcendpointserviceconfigurationrequesttypedef)
+  - [ModifyVpcEndpointServiceConfigurationResultResponseTypeDef](#modifyvpcendpointserviceconfigurationresultresponsetypedef)
+  - [ModifyVpcEndpointServicePermissionsRequestTypeDef](#modifyvpcendpointservicepermissionsrequesttypedef)
+  - [ModifyVpcEndpointServicePermissionsResultResponseTypeDef](#modifyvpcendpointservicepermissionsresultresponsetypedef)
+  - [ModifyVpcPeeringConnectionOptionsRequestTypeDef](#modifyvpcpeeringconnectionoptionsrequesttypedef)
+  - [ModifyVpcPeeringConnectionOptionsResultResponseTypeDef](#modifyvpcpeeringconnectionoptionsresultresponsetypedef)
+  - [ModifyVpcTenancyRequestTypeDef](#modifyvpctenancyrequesttypedef)
+  - [ModifyVpcTenancyResultResponseTypeDef](#modifyvpctenancyresultresponsetypedef)
+  - [ModifyVpnConnectionOptionsRequestTypeDef](#modifyvpnconnectionoptionsrequesttypedef)
+  - [ModifyVpnConnectionOptionsResultResponseTypeDef](#modifyvpnconnectionoptionsresultresponsetypedef)
+  - [ModifyVpnConnectionRequestTypeDef](#modifyvpnconnectionrequesttypedef)
+  - [ModifyVpnConnectionResultResponseTypeDef](#modifyvpnconnectionresultresponsetypedef)
+  - [ModifyVpnTunnelCertificateRequestTypeDef](#modifyvpntunnelcertificaterequesttypedef)
+  - [ModifyVpnTunnelCertificateResultResponseTypeDef](#modifyvpntunnelcertificateresultresponsetypedef)
+  - [ModifyVpnTunnelOptionsRequestTypeDef](#modifyvpntunneloptionsrequesttypedef)
+  - [ModifyVpnTunnelOptionsResultResponseTypeDef](#modifyvpntunneloptionsresultresponsetypedef)
   - [ModifyVpnTunnelOptionsSpecificationTypeDef](#modifyvpntunneloptionsspecificationtypedef)
-  - [MonitorInstancesResultTypeDef](#monitorinstancesresulttypedef)
+  - [MonitorInstancesRequestInstanceTypeDef](#monitorinstancesrequestinstancetypedef)
+  - [MonitorInstancesRequestTypeDef](#monitorinstancesrequesttypedef)
+  - [MonitorInstancesResultResponseTypeDef](#monitorinstancesresultresponsetypedef)
   - [MonitoringTypeDef](#monitoringtypedef)
-  - [MoveAddressToVpcResultTypeDef](#moveaddresstovpcresulttypedef)
+  - [MoveAddressToVpcRequestTypeDef](#moveaddresstovpcrequesttypedef)
+  - [MoveAddressToVpcResultResponseTypeDef](#moveaddresstovpcresultresponsetypedef)
   - [MovingAddressStatusTypeDef](#movingaddressstatustypedef)
   - [NatGatewayAddressTypeDef](#natgatewayaddresstypedef)
   - [NatGatewayTypeDef](#natgatewaytypedef)
@@ -710,38 +1212,73 @@ type annotations stubs module
   - [ProcessorInfoTypeDef](#processorinfotypedef)
   - [ProductCodeTypeDef](#productcodetypedef)
   - [PropagatingVgwTypeDef](#propagatingvgwtypedef)
-  - [ProvisionByoipCidrResultTypeDef](#provisionbyoipcidrresulttypedef)
+  - [ProvisionByoipCidrRequestTypeDef](#provisionbyoipcidrrequesttypedef)
+  - [ProvisionByoipCidrResultResponseTypeDef](#provisionbyoipcidrresultresponsetypedef)
   - [ProvisionedBandwidthTypeDef](#provisionedbandwidthtypedef)
   - [PtrUpdateStatusTypeDef](#ptrupdatestatustypedef)
   - [PublicIpv4PoolRangeTypeDef](#publicipv4poolrangetypedef)
   - [PublicIpv4PoolTypeDef](#publicipv4pooltypedef)
-  - [PurchaseHostReservationResultTypeDef](#purchasehostreservationresulttypedef)
+  - [PurchaseHostReservationRequestTypeDef](#purchasehostreservationrequesttypedef)
+  - [PurchaseHostReservationResultResponseTypeDef](#purchasehostreservationresultresponsetypedef)
   - [PurchaseRequestTypeDef](#purchaserequesttypedef)
-  - [PurchaseReservedInstancesOfferingResultTypeDef](#purchasereservedinstancesofferingresulttypedef)
-  - [PurchaseScheduledInstancesResultTypeDef](#purchasescheduledinstancesresulttypedef)
+  - [PurchaseReservedInstancesOfferingRequestTypeDef](#purchasereservedinstancesofferingrequesttypedef)
+  - [PurchaseReservedInstancesOfferingResultResponseTypeDef](#purchasereservedinstancesofferingresultresponsetypedef)
+  - [PurchaseScheduledInstancesRequestTypeDef](#purchasescheduledinstancesrequesttypedef)
+  - [PurchaseScheduledInstancesResultResponseTypeDef](#purchasescheduledinstancesresultresponsetypedef)
   - [PurchaseTypeDef](#purchasetypedef)
+  - [RebootInstancesRequestInstanceTypeDef](#rebootinstancesrequestinstancetypedef)
+  - [RebootInstancesRequestTypeDef](#rebootinstancesrequesttypedef)
   - [RecurringChargeTypeDef](#recurringchargetypedef)
   - [RegionTypeDef](#regiontypedef)
-  - [RegisterImageResultTypeDef](#registerimageresulttypedef)
-  - [RegisterInstanceEventNotificationAttributesResultTypeDef](#registerinstanceeventnotificationattributesresulttypedef)
+  - [RegisterImageRequestServiceResourceTypeDef](#registerimagerequestserviceresourcetypedef)
+  - [RegisterImageRequestTypeDef](#registerimagerequesttypedef)
+  - [RegisterImageResultResponseTypeDef](#registerimageresultresponsetypedef)
+  - [RegisterInstanceEventNotificationAttributesRequestTypeDef](#registerinstanceeventnotificationattributesrequesttypedef)
+  - [RegisterInstanceEventNotificationAttributesResultResponseTypeDef](#registerinstanceeventnotificationattributesresultresponsetypedef)
   - [RegisterInstanceTagAttributeRequestTypeDef](#registerinstancetagattributerequesttypedef)
-  - [RegisterTransitGatewayMulticastGroupMembersResultTypeDef](#registertransitgatewaymulticastgroupmembersresulttypedef)
-  - [RegisterTransitGatewayMulticastGroupSourcesResultTypeDef](#registertransitgatewaymulticastgroupsourcesresulttypedef)
-  - [RejectTransitGatewayMulticastDomainAssociationsResultTypeDef](#rejecttransitgatewaymulticastdomainassociationsresulttypedef)
-  - [RejectTransitGatewayPeeringAttachmentResultTypeDef](#rejecttransitgatewaypeeringattachmentresulttypedef)
-  - [RejectTransitGatewayVpcAttachmentResultTypeDef](#rejecttransitgatewayvpcattachmentresulttypedef)
-  - [RejectVpcEndpointConnectionsResultTypeDef](#rejectvpcendpointconnectionsresulttypedef)
-  - [RejectVpcPeeringConnectionResultTypeDef](#rejectvpcpeeringconnectionresulttypedef)
-  - [ReleaseHostsResultTypeDef](#releasehostsresulttypedef)
+  - [RegisterTransitGatewayMulticastGroupMembersRequestTypeDef](#registertransitgatewaymulticastgroupmembersrequesttypedef)
+  - [RegisterTransitGatewayMulticastGroupMembersResultResponseTypeDef](#registertransitgatewaymulticastgroupmembersresultresponsetypedef)
+  - [RegisterTransitGatewayMulticastGroupSourcesRequestTypeDef](#registertransitgatewaymulticastgroupsourcesrequesttypedef)
+  - [RegisterTransitGatewayMulticastGroupSourcesResultResponseTypeDef](#registertransitgatewaymulticastgroupsourcesresultresponsetypedef)
+  - [RejectTransitGatewayMulticastDomainAssociationsRequestTypeDef](#rejecttransitgatewaymulticastdomainassociationsrequesttypedef)
+  - [RejectTransitGatewayMulticastDomainAssociationsResultResponseTypeDef](#rejecttransitgatewaymulticastdomainassociationsresultresponsetypedef)
+  - [RejectTransitGatewayPeeringAttachmentRequestTypeDef](#rejecttransitgatewaypeeringattachmentrequesttypedef)
+  - [RejectTransitGatewayPeeringAttachmentResultResponseTypeDef](#rejecttransitgatewaypeeringattachmentresultresponsetypedef)
+  - [RejectTransitGatewayVpcAttachmentRequestTypeDef](#rejecttransitgatewayvpcattachmentrequesttypedef)
+  - [RejectTransitGatewayVpcAttachmentResultResponseTypeDef](#rejecttransitgatewayvpcattachmentresultresponsetypedef)
+  - [RejectVpcEndpointConnectionsRequestTypeDef](#rejectvpcendpointconnectionsrequesttypedef)
+  - [RejectVpcEndpointConnectionsResultResponseTypeDef](#rejectvpcendpointconnectionsresultresponsetypedef)
+  - [RejectVpcPeeringConnectionRequestTypeDef](#rejectvpcpeeringconnectionrequesttypedef)
+  - [RejectVpcPeeringConnectionRequestVpcPeeringConnectionTypeDef](#rejectvpcpeeringconnectionrequestvpcpeeringconnectiontypedef)
+  - [RejectVpcPeeringConnectionResultResponseTypeDef](#rejectvpcpeeringconnectionresultresponsetypedef)
+  - [ReleaseAddressRequestClassicAddressTypeDef](#releaseaddressrequestclassicaddresstypedef)
+  - [ReleaseAddressRequestTypeDef](#releaseaddressrequesttypedef)
+  - [ReleaseAddressRequestVpcAddressTypeDef](#releaseaddressrequestvpcaddresstypedef)
+  - [ReleaseHostsRequestTypeDef](#releasehostsrequesttypedef)
+  - [ReleaseHostsResultResponseTypeDef](#releasehostsresultresponsetypedef)
   - [RemovePrefixListEntryTypeDef](#removeprefixlistentrytypedef)
-  - [ReplaceIamInstanceProfileAssociationResultTypeDef](#replaceiaminstanceprofileassociationresulttypedef)
-  - [ReplaceNetworkAclAssociationResultTypeDef](#replacenetworkaclassociationresulttypedef)
+  - [ReplaceIamInstanceProfileAssociationRequestTypeDef](#replaceiaminstanceprofileassociationrequesttypedef)
+  - [ReplaceIamInstanceProfileAssociationResultResponseTypeDef](#replaceiaminstanceprofileassociationresultresponsetypedef)
+  - [ReplaceNetworkAclAssociationRequestNetworkAclTypeDef](#replacenetworkaclassociationrequestnetworkacltypedef)
+  - [ReplaceNetworkAclAssociationRequestTypeDef](#replacenetworkaclassociationrequesttypedef)
+  - [ReplaceNetworkAclAssociationResultResponseTypeDef](#replacenetworkaclassociationresultresponsetypedef)
+  - [ReplaceNetworkAclEntryRequestNetworkAclTypeDef](#replacenetworkaclentryrequestnetworkacltypedef)
+  - [ReplaceNetworkAclEntryRequestTypeDef](#replacenetworkaclentryrequesttypedef)
   - [ReplaceRootVolumeTaskTypeDef](#replacerootvolumetasktypedef)
-  - [ReplaceRouteTableAssociationResultTypeDef](#replaceroutetableassociationresulttypedef)
-  - [ReplaceTransitGatewayRouteResultTypeDef](#replacetransitgatewayrouteresulttypedef)
+  - [ReplaceRouteRequestRouteTypeDef](#replacerouterequestroutetypedef)
+  - [ReplaceRouteRequestTypeDef](#replacerouterequesttypedef)
+  - [ReplaceRouteTableAssociationRequestRouteTableAssociationTypeDef](#replaceroutetableassociationrequestroutetableassociationtypedef)
+  - [ReplaceRouteTableAssociationRequestTypeDef](#replaceroutetableassociationrequesttypedef)
+  - [ReplaceRouteTableAssociationResultResponseTypeDef](#replaceroutetableassociationresultresponsetypedef)
+  - [ReplaceTransitGatewayRouteRequestTypeDef](#replacetransitgatewayrouterequesttypedef)
+  - [ReplaceTransitGatewayRouteResultResponseTypeDef](#replacetransitgatewayrouteresultresponsetypedef)
+  - [ReportInstanceStatusRequestInstanceTypeDef](#reportinstancestatusrequestinstancetypedef)
+  - [ReportInstanceStatusRequestTypeDef](#reportinstancestatusrequesttypedef)
   - [RequestLaunchTemplateDataTypeDef](#requestlaunchtemplatedatatypedef)
-  - [RequestSpotFleetResponseTypeDef](#requestspotfleetresponsetypedef)
-  - [RequestSpotInstancesResultTypeDef](#requestspotinstancesresulttypedef)
+  - [RequestSpotFleetRequestTypeDef](#requestspotfleetrequesttypedef)
+  - [RequestSpotFleetResponseResponseTypeDef](#requestspotfleetresponseresponsetypedef)
+  - [RequestSpotInstancesRequestTypeDef](#requestspotinstancesrequesttypedef)
+  - [RequestSpotInstancesResultResponseTypeDef](#requestspotinstancesresultresponsetypedef)
   - [RequestSpotLaunchSpecificationTypeDef](#requestspotlaunchspecificationtypedef)
   - [ReservationTypeDef](#reservationtypedef)
   - [ReservationValueTypeDef](#reservationvaluetypedef)
@@ -754,22 +1291,45 @@ type annotations stubs module
   - [ReservedInstancesModificationTypeDef](#reservedinstancesmodificationtypedef)
   - [ReservedInstancesOfferingTypeDef](#reservedinstancesofferingtypedef)
   - [ReservedInstancesTypeDef](#reservedinstancestypedef)
-  - [ResetAddressAttributeResultTypeDef](#resetaddressattributeresulttypedef)
-  - [ResetEbsDefaultKmsKeyIdResultTypeDef](#resetebsdefaultkmskeyidresulttypedef)
-  - [ResetFpgaImageAttributeResultTypeDef](#resetfpgaimageattributeresulttypedef)
+  - [ResetAddressAttributeRequestTypeDef](#resetaddressattributerequesttypedef)
+  - [ResetAddressAttributeResultResponseTypeDef](#resetaddressattributeresultresponsetypedef)
+  - [ResetEbsDefaultKmsKeyIdRequestTypeDef](#resetebsdefaultkmskeyidrequesttypedef)
+  - [ResetEbsDefaultKmsKeyIdResultResponseTypeDef](#resetebsdefaultkmskeyidresultresponsetypedef)
+  - [ResetFpgaImageAttributeRequestTypeDef](#resetfpgaimageattributerequesttypedef)
+  - [ResetFpgaImageAttributeResultResponseTypeDef](#resetfpgaimageattributeresultresponsetypedef)
+  - [ResetImageAttributeRequestImageTypeDef](#resetimageattributerequestimagetypedef)
+  - [ResetImageAttributeRequestTypeDef](#resetimageattributerequesttypedef)
+  - [ResetInstanceAttributeRequestInstanceTypeDef](#resetinstanceattributerequestinstancetypedef)
+  - [ResetInstanceAttributeRequestTypeDef](#resetinstanceattributerequesttypedef)
+  - [ResetNetworkInterfaceAttributeRequestNetworkInterfaceTypeDef](#resetnetworkinterfaceattributerequestnetworkinterfacetypedef)
+  - [ResetNetworkInterfaceAttributeRequestTypeDef](#resetnetworkinterfaceattributerequesttypedef)
+  - [ResetSnapshotAttributeRequestSnapshotTypeDef](#resetsnapshotattributerequestsnapshottypedef)
+  - [ResetSnapshotAttributeRequestTypeDef](#resetsnapshotattributerequesttypedef)
   - [ResponseErrorTypeDef](#responseerrortypedef)
   - [ResponseLaunchTemplateDataTypeDef](#responselaunchtemplatedatatypedef)
-  - [RestoreAddressToClassicResultTypeDef](#restoreaddresstoclassicresulttypedef)
-  - [RestoreManagedPrefixListVersionResultTypeDef](#restoremanagedprefixlistversionresulttypedef)
-  - [RevokeClientVpnIngressResultTypeDef](#revokeclientvpningressresulttypedef)
-  - [RevokeSecurityGroupEgressResultTypeDef](#revokesecuritygroupegressresulttypedef)
-  - [RevokeSecurityGroupIngressResultTypeDef](#revokesecuritygroupingressresulttypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [RestoreAddressToClassicRequestTypeDef](#restoreaddresstoclassicrequesttypedef)
+  - [RestoreAddressToClassicResultResponseTypeDef](#restoreaddresstoclassicresultresponsetypedef)
+  - [RestoreManagedPrefixListVersionRequestTypeDef](#restoremanagedprefixlistversionrequesttypedef)
+  - [RestoreManagedPrefixListVersionResultResponseTypeDef](#restoremanagedprefixlistversionresultresponsetypedef)
+  - [RevokeClientVpnIngressRequestTypeDef](#revokeclientvpningressrequesttypedef)
+  - [RevokeClientVpnIngressResultResponseTypeDef](#revokeclientvpningressresultresponsetypedef)
+  - [RevokeSecurityGroupEgressRequestSecurityGroupTypeDef](#revokesecuritygroupegressrequestsecuritygrouptypedef)
+  - [RevokeSecurityGroupEgressRequestTypeDef](#revokesecuritygroupegressrequesttypedef)
+  - [RevokeSecurityGroupEgressResultResponseTypeDef](#revokesecuritygroupegressresultresponsetypedef)
+  - [RevokeSecurityGroupIngressRequestSecurityGroupTypeDef](#revokesecuritygroupingressrequestsecuritygrouptypedef)
+  - [RevokeSecurityGroupIngressRequestTypeDef](#revokesecuritygroupingressrequesttypedef)
+  - [RevokeSecurityGroupIngressResultResponseTypeDef](#revokesecuritygroupingressresultresponsetypedef)
   - [RouteTableAssociationStateTypeDef](#routetableassociationstatetypedef)
   - [RouteTableAssociationTypeDef](#routetableassociationtypedef)
   - [RouteTableTypeDef](#routetabletypedef)
   - [RouteTypeDef](#routetypedef)
   - [RunInstancesMonitoringEnabledTypeDef](#runinstancesmonitoringenabledtypedef)
-  - [RunScheduledInstancesResultTypeDef](#runscheduledinstancesresulttypedef)
+  - [RunInstancesRequestServiceResourceTypeDef](#runinstancesrequestserviceresourcetypedef)
+  - [RunInstancesRequestSubnetTypeDef](#runinstancesrequestsubnettypedef)
+  - [RunInstancesRequestTypeDef](#runinstancesrequesttypedef)
+  - [RunScheduledInstancesRequestTypeDef](#runscheduledinstancesrequesttypedef)
+  - [RunScheduledInstancesResultResponseTypeDef](#runscheduledinstancesresultresponsetypedef)
   - [S3ObjectTagTypeDef](#s3objecttagtypedef)
   - [S3StorageTypeDef](#s3storagetypedef)
   - [ScheduledInstanceAvailabilityTypeDef](#scheduledinstanceavailabilitytypedef)
@@ -785,22 +1345,47 @@ type annotations stubs module
   - [ScheduledInstancesNetworkInterfaceTypeDef](#scheduledinstancesnetworkinterfacetypedef)
   - [ScheduledInstancesPlacementTypeDef](#scheduledinstancesplacementtypedef)
   - [ScheduledInstancesPrivateIpAddressConfigTypeDef](#scheduledinstancesprivateipaddressconfigtypedef)
-  - [SearchLocalGatewayRoutesResultTypeDef](#searchlocalgatewayroutesresulttypedef)
-  - [SearchTransitGatewayMulticastGroupsResultTypeDef](#searchtransitgatewaymulticastgroupsresulttypedef)
-  - [SearchTransitGatewayRoutesResultTypeDef](#searchtransitgatewayroutesresulttypedef)
+  - [SearchLocalGatewayRoutesRequestTypeDef](#searchlocalgatewayroutesrequesttypedef)
+  - [SearchLocalGatewayRoutesResultResponseTypeDef](#searchlocalgatewayroutesresultresponsetypedef)
+  - [SearchTransitGatewayMulticastGroupsRequestTypeDef](#searchtransitgatewaymulticastgroupsrequesttypedef)
+  - [SearchTransitGatewayMulticastGroupsResultResponseTypeDef](#searchtransitgatewaymulticastgroupsresultresponsetypedef)
+  - [SearchTransitGatewayRoutesRequestTypeDef](#searchtransitgatewayroutesrequesttypedef)
+  - [SearchTransitGatewayRoutesResultResponseTypeDef](#searchtransitgatewayroutesresultresponsetypedef)
   - [SecurityGroupIdentifierTypeDef](#securitygroupidentifiertypedef)
   - [SecurityGroupReferenceTypeDef](#securitygroupreferencetypedef)
   - [SecurityGroupTypeDef](#securitygrouptypedef)
+  - [SendDiagnosticInterruptRequestTypeDef](#senddiagnosticinterruptrequesttypedef)
   - [ServiceConfigurationTypeDef](#serviceconfigurationtypedef)
   - [ServiceDetailTypeDef](#servicedetailtypedef)
+  - [ServiceResourceClassicAddressRequestTypeDef](#serviceresourceclassicaddressrequesttypedef)
+  - [ServiceResourceDhcpOptionsRequestTypeDef](#serviceresourcedhcpoptionsrequesttypedef)
+  - [ServiceResourceImageRequestTypeDef](#serviceresourceimagerequesttypedef)
+  - [ServiceResourceInstanceRequestTypeDef](#serviceresourceinstancerequesttypedef)
+  - [ServiceResourceInternetGatewayRequestTypeDef](#serviceresourceinternetgatewayrequesttypedef)
+  - [ServiceResourceKeyPairRequestTypeDef](#serviceresourcekeypairrequesttypedef)
+  - [ServiceResourceNetworkAclRequestTypeDef](#serviceresourcenetworkaclrequesttypedef)
+  - [ServiceResourceNetworkInterfaceAssociationRequestTypeDef](#serviceresourcenetworkinterfaceassociationrequesttypedef)
+  - [ServiceResourceNetworkInterfaceRequestTypeDef](#serviceresourcenetworkinterfacerequesttypedef)
+  - [ServiceResourcePlacementGroupRequestTypeDef](#serviceresourceplacementgrouprequesttypedef)
+  - [ServiceResourceRouteRequestTypeDef](#serviceresourcerouterequesttypedef)
+  - [ServiceResourceRouteTableAssociationRequestTypeDef](#serviceresourceroutetableassociationrequesttypedef)
+  - [ServiceResourceRouteTableRequestTypeDef](#serviceresourceroutetablerequesttypedef)
+  - [ServiceResourceSecurityGroupRequestTypeDef](#serviceresourcesecuritygrouprequesttypedef)
+  - [ServiceResourceSnapshotRequestTypeDef](#serviceresourcesnapshotrequesttypedef)
+  - [ServiceResourceSubnetRequestTypeDef](#serviceresourcesubnetrequesttypedef)
+  - [ServiceResourceTagRequestTypeDef](#serviceresourcetagrequesttypedef)
+  - [ServiceResourceVolumeRequestTypeDef](#serviceresourcevolumerequesttypedef)
+  - [ServiceResourceVpcAddressRequestTypeDef](#serviceresourcevpcaddressrequesttypedef)
+  - [ServiceResourceVpcPeeringConnectionRequestTypeDef](#serviceresourcevpcpeeringconnectionrequesttypedef)
+  - [ServiceResourceVpcRequestTypeDef](#serviceresourcevpcrequesttypedef)
   - [ServiceTypeDetailTypeDef](#servicetypedetailtypedef)
   - [SlotDateTimeRangeRequestTypeDef](#slotdatetimerangerequesttypedef)
   - [SlotStartTimeRangeRequestTypeDef](#slotstarttimerangerequesttypedef)
   - [SnapshotDetailTypeDef](#snapshotdetailtypedef)
   - [SnapshotDiskContainerTypeDef](#snapshotdiskcontainertypedef)
   - [SnapshotInfoTypeDef](#snapshotinfotypedef)
+  - [SnapshotResponseTypeDef](#snapshotresponsetypedef)
   - [SnapshotTaskDetailTypeDef](#snapshottaskdetailtypedef)
-  - [SnapshotTypeDef](#snapshottypedef)
   - [SpotCapacityRebalanceTypeDef](#spotcapacityrebalancetypedef)
   - [SpotDatafeedSubscriptionTypeDef](#spotdatafeedsubscriptiontypedef)
   - [SpotFleetLaunchSpecificationTypeDef](#spotfleetlaunchspecificationtypedef)
@@ -819,11 +1404,17 @@ type annotations stubs module
   - [SpotPriceTypeDef](#spotpricetypedef)
   - [StaleIpPermissionTypeDef](#staleippermissiontypedef)
   - [StaleSecurityGroupTypeDef](#stalesecuritygrouptypedef)
-  - [StartInstancesResultTypeDef](#startinstancesresulttypedef)
-  - [StartNetworkInsightsAnalysisResultTypeDef](#startnetworkinsightsanalysisresulttypedef)
-  - [StartVpcEndpointServicePrivateDnsVerificationResultTypeDef](#startvpcendpointserviceprivatednsverificationresulttypedef)
+  - [StartInstancesRequestInstanceTypeDef](#startinstancesrequestinstancetypedef)
+  - [StartInstancesRequestTypeDef](#startinstancesrequesttypedef)
+  - [StartInstancesResultResponseTypeDef](#startinstancesresultresponsetypedef)
+  - [StartNetworkInsightsAnalysisRequestTypeDef](#startnetworkinsightsanalysisrequesttypedef)
+  - [StartNetworkInsightsAnalysisResultResponseTypeDef](#startnetworkinsightsanalysisresultresponsetypedef)
+  - [StartVpcEndpointServicePrivateDnsVerificationRequestTypeDef](#startvpcendpointserviceprivatednsverificationrequesttypedef)
+  - [StartVpcEndpointServicePrivateDnsVerificationResultResponseTypeDef](#startvpcendpointserviceprivatednsverificationresultresponsetypedef)
   - [StateReasonTypeDef](#statereasontypedef)
-  - [StopInstancesResultTypeDef](#stopinstancesresulttypedef)
+  - [StopInstancesRequestInstanceTypeDef](#stopinstancesrequestinstancetypedef)
+  - [StopInstancesRequestTypeDef](#stopinstancesrequesttypedef)
+  - [StopInstancesResultResponseTypeDef](#stopinstancesresultresponsetypedef)
   - [StorageLocationTypeDef](#storagelocationtypedef)
   - [StorageTypeDef](#storagetypedef)
   - [StoreImageTaskResultTypeDef](#storeimagetaskresulttypedef)
@@ -844,9 +1435,12 @@ type annotations stubs module
   - [TargetGroupsConfigTypeDef](#targetgroupsconfigtypedef)
   - [TargetNetworkTypeDef](#targetnetworktypedef)
   - [TargetReservationValueTypeDef](#targetreservationvaluetypedef)
-  - [TerminateClientVpnConnectionsResultTypeDef](#terminateclientvpnconnectionsresulttypedef)
+  - [TerminateClientVpnConnectionsRequestTypeDef](#terminateclientvpnconnectionsrequesttypedef)
+  - [TerminateClientVpnConnectionsResultResponseTypeDef](#terminateclientvpnconnectionsresultresponsetypedef)
   - [TerminateConnectionStatusTypeDef](#terminateconnectionstatustypedef)
-  - [TerminateInstancesResultTypeDef](#terminateinstancesresulttypedef)
+  - [TerminateInstancesRequestInstanceTypeDef](#terminateinstancesrequestinstancetypedef)
+  - [TerminateInstancesRequestTypeDef](#terminateinstancesrequesttypedef)
+  - [TerminateInstancesResultResponseTypeDef](#terminateinstancesresultresponsetypedef)
   - [TrafficMirrorFilterRuleTypeDef](#trafficmirrorfilterruletypedef)
   - [TrafficMirrorFilterTypeDef](#trafficmirrorfiltertypedef)
   - [TrafficMirrorPortRangeRequestTypeDef](#trafficmirrorportrangerequesttypedef)
@@ -888,14 +1482,21 @@ type annotations stubs module
   - [TransitGatewayVpcAttachmentTypeDef](#transitgatewayvpcattachmenttypedef)
   - [TrunkInterfaceAssociationTypeDef](#trunkinterfaceassociationtypedef)
   - [TunnelOptionTypeDef](#tunneloptiontypedef)
-  - [UnassignIpv6AddressesResultTypeDef](#unassignipv6addressesresulttypedef)
-  - [UnmonitorInstancesResultTypeDef](#unmonitorinstancesresulttypedef)
+  - [UnassignIpv6AddressesRequestTypeDef](#unassignipv6addressesrequesttypedef)
+  - [UnassignIpv6AddressesResultResponseTypeDef](#unassignipv6addressesresultresponsetypedef)
+  - [UnassignPrivateIpAddressesRequestNetworkInterfaceTypeDef](#unassignprivateipaddressesrequestnetworkinterfacetypedef)
+  - [UnassignPrivateIpAddressesRequestTypeDef](#unassignprivateipaddressesrequesttypedef)
+  - [UnmonitorInstancesRequestInstanceTypeDef](#unmonitorinstancesrequestinstancetypedef)
+  - [UnmonitorInstancesRequestTypeDef](#unmonitorinstancesrequesttypedef)
+  - [UnmonitorInstancesResultResponseTypeDef](#unmonitorinstancesresultresponsetypedef)
   - [UnsuccessfulInstanceCreditSpecificationItemErrorTypeDef](#unsuccessfulinstancecreditspecificationitemerrortypedef)
   - [UnsuccessfulInstanceCreditSpecificationItemTypeDef](#unsuccessfulinstancecreditspecificationitemtypedef)
   - [UnsuccessfulItemErrorTypeDef](#unsuccessfulitemerrortypedef)
   - [UnsuccessfulItemTypeDef](#unsuccessfulitemtypedef)
-  - [UpdateSecurityGroupRuleDescriptionsEgressResultTypeDef](#updatesecuritygroupruledescriptionsegressresulttypedef)
-  - [UpdateSecurityGroupRuleDescriptionsIngressResultTypeDef](#updatesecuritygroupruledescriptionsingressresulttypedef)
+  - [UpdateSecurityGroupRuleDescriptionsEgressRequestTypeDef](#updatesecuritygroupruledescriptionsegressrequesttypedef)
+  - [UpdateSecurityGroupRuleDescriptionsEgressResultResponseTypeDef](#updatesecuritygroupruledescriptionsegressresultresponsetypedef)
+  - [UpdateSecurityGroupRuleDescriptionsIngressRequestTypeDef](#updatesecuritygroupruledescriptionsingressrequesttypedef)
+  - [UpdateSecurityGroupRuleDescriptionsIngressResultResponseTypeDef](#updatesecuritygroupruledescriptionsingressresultresponsetypedef)
   - [UserBucketDetailsTypeDef](#userbucketdetailstypedef)
   - [UserBucketTypeDef](#userbuckettypedef)
   - [UserDataTypeDef](#userdatatypedef)
@@ -904,16 +1505,16 @@ type annotations stubs module
   - [ValidationErrorTypeDef](#validationerrortypedef)
   - [ValidationWarningTypeDef](#validationwarningtypedef)
   - [VgwTelemetryTypeDef](#vgwtelemetrytypedef)
-  - [VolumeAttachmentTypeDef](#volumeattachmenttypedef)
+  - [VolumeAttachmentResponseTypeDef](#volumeattachmentresponsetypedef)
   - [VolumeDetailTypeDef](#volumedetailtypedef)
   - [VolumeModificationTypeDef](#volumemodificationtypedef)
+  - [VolumeResponseTypeDef](#volumeresponsetypedef)
   - [VolumeStatusActionTypeDef](#volumestatusactiontypedef)
   - [VolumeStatusAttachmentStatusTypeDef](#volumestatusattachmentstatustypedef)
   - [VolumeStatusDetailsTypeDef](#volumestatusdetailstypedef)
   - [VolumeStatusEventTypeDef](#volumestatuseventtypedef)
   - [VolumeStatusInfoTypeDef](#volumestatusinfotypedef)
   - [VolumeStatusItemTypeDef](#volumestatusitemtypedef)
-  - [VolumeTypeDef](#volumetypedef)
   - [VpcAttachmentTypeDef](#vpcattachmenttypedef)
   - [VpcCidrBlockAssociationTypeDef](#vpccidrblockassociationtypedef)
   - [VpcCidrBlockStateTypeDef](#vpccidrblockstatetypedef)
@@ -933,72 +1534,178 @@ type annotations stubs module
   - [VpnStaticRouteTypeDef](#vpnstaticroutetypedef)
   - [VpnTunnelOptionsSpecificationTypeDef](#vpntunneloptionsspecificationtypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
-  - [WithdrawByoipCidrResultTypeDef](#withdrawbyoipcidrresulttypedef)
+  - [WithdrawByoipCidrRequestTypeDef](#withdrawbyoipcidrrequesttypedef)
+  - [WithdrawByoipCidrResultResponseTypeDef](#withdrawbyoipcidrresultresponsetypedef)
 
-## AcceptReservedInstancesExchangeQuoteResultTypeDef
+## AcceptReservedInstancesExchangeQuoteRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import AcceptReservedInstancesExchangeQuoteResultTypeDef
+from mypy_boto3_ec2.type_defs import AcceptReservedInstancesExchangeQuoteRequestTypeDef
 ```
 
+Required fields:
+
+- `ReservedInstanceIds`: `List`\[`str`\]
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `TargetConfigurations`:
+  `List`\[[TargetConfigurationRequestTypeDef](./type_defs.md#targetconfigurationrequesttypedef)\]
+
+## AcceptReservedInstancesExchangeQuoteResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AcceptReservedInstancesExchangeQuoteResultResponseTypeDef
+```
+
+Required fields:
 
 - `ExchangeId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AcceptTransitGatewayMulticastDomainAssociationsResultTypeDef
+## AcceptTransitGatewayMulticastDomainAssociationsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import AcceptTransitGatewayMulticastDomainAssociationsResultTypeDef
+from mypy_boto3_ec2.type_defs import AcceptTransitGatewayMulticastDomainAssociationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `TransitGatewayMulticastDomainId`: `str`
+- `TransitGatewayAttachmentId`: `str`
+- `SubnetIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+
+## AcceptTransitGatewayMulticastDomainAssociationsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AcceptTransitGatewayMulticastDomainAssociationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Associations`:
   [TransitGatewayMulticastDomainAssociationsTypeDef](./type_defs.md#transitgatewaymulticastdomainassociationstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AcceptTransitGatewayPeeringAttachmentResultTypeDef
+## AcceptTransitGatewayPeeringAttachmentRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import AcceptTransitGatewayPeeringAttachmentResultTypeDef
+from mypy_boto3_ec2.type_defs import AcceptTransitGatewayPeeringAttachmentRequestTypeDef
 ```
 
+Required fields:
+
+- `TransitGatewayAttachmentId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## AcceptTransitGatewayPeeringAttachmentResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AcceptTransitGatewayPeeringAttachmentResultResponseTypeDef
+```
+
+Required fields:
 
 - `TransitGatewayPeeringAttachment`:
   [TransitGatewayPeeringAttachmentTypeDef](./type_defs.md#transitgatewaypeeringattachmenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AcceptTransitGatewayVpcAttachmentResultTypeDef
+## AcceptTransitGatewayVpcAttachmentRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import AcceptTransitGatewayVpcAttachmentResultTypeDef
+from mypy_boto3_ec2.type_defs import AcceptTransitGatewayVpcAttachmentRequestTypeDef
 ```
 
+Required fields:
+
+- `TransitGatewayAttachmentId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## AcceptTransitGatewayVpcAttachmentResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AcceptTransitGatewayVpcAttachmentResultResponseTypeDef
+```
+
+Required fields:
 
 - `TransitGatewayVpcAttachment`:
   [TransitGatewayVpcAttachmentTypeDef](./type_defs.md#transitgatewayvpcattachmenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AcceptVpcEndpointConnectionsResultTypeDef
+## AcceptVpcEndpointConnectionsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import AcceptVpcEndpointConnectionsResultTypeDef
+from mypy_boto3_ec2.type_defs import AcceptVpcEndpointConnectionsRequestTypeDef
 ```
 
+Required fields:
+
+- `ServiceId`: `str`
+- `VpcEndpointIds`: `List`\[`str`\]
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## AcceptVpcEndpointConnectionsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AcceptVpcEndpointConnectionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Unsuccessful`:
   `List`\[[UnsuccessfulItemTypeDef](./type_defs.md#unsuccessfulitemtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AcceptVpcPeeringConnectionResultTypeDef
+## AcceptVpcPeeringConnectionRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import AcceptVpcPeeringConnectionResultTypeDef
+from mypy_boto3_ec2.type_defs import AcceptVpcPeeringConnectionRequestTypeDef
 ```
 
 Optional fields:
 
+- `DryRun`: `bool`
+- `VpcPeeringConnectionId`: `str`
+
+## AcceptVpcPeeringConnectionRequestVpcPeeringConnectionTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AcceptVpcPeeringConnectionRequestVpcPeeringConnectionTypeDef
+```
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## AcceptVpcPeeringConnectionResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AcceptVpcPeeringConnectionResultResponseTypeDef
+```
+
+Required fields:
+
 - `VpcPeeringConnection`:
   [VpcPeeringConnectionTypeDef](./type_defs.md#vpcpeeringconnectiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## AccountAttributeTypeDef
 
@@ -1087,23 +1794,56 @@ Optional fields:
 - `CustomerOwnedIpv4Pool`: `str`
 - `CarrierIp`: `str`
 
-## AdvertiseByoipCidrResultTypeDef
+## AdvertiseByoipCidrRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import AdvertiseByoipCidrResultTypeDef
+from mypy_boto3_ec2.type_defs import AdvertiseByoipCidrRequestTypeDef
 ```
 
+Required fields:
+
+- `Cidr`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## AdvertiseByoipCidrResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AdvertiseByoipCidrResultResponseTypeDef
+```
+
+Required fields:
 
 - `ByoipCidr`: [ByoipCidrTypeDef](./type_defs.md#byoipcidrtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AllocateAddressResultTypeDef
+## AllocateAddressRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import AllocateAddressResultTypeDef
+from mypy_boto3_ec2.type_defs import AllocateAddressRequestTypeDef
 ```
 
 Optional fields:
+
+- `Domain`: [DomainTypeType](./literals.md#domaintypetype)
+- `Address`: `str`
+- `PublicIpv4Pool`: `str`
+- `NetworkBorderGroup`: `str`
+- `CustomerOwnedIpv4Pool`: `str`
+- `DryRun`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## AllocateAddressResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AllocateAddressResultResponseTypeDef
+```
+
+Required fields:
 
 - `PublicIp`: `str`
 - `AllocationId`: `str`
@@ -1113,16 +1853,41 @@ Optional fields:
 - `CustomerOwnedIp`: `str`
 - `CustomerOwnedIpv4Pool`: `str`
 - `CarrierIp`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AllocateHostsResultTypeDef
+## AllocateHostsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import AllocateHostsResultTypeDef
+from mypy_boto3_ec2.type_defs import AllocateHostsRequestTypeDef
 ```
+
+Required fields:
+
+- `AvailabilityZone`: `str`
+- `Quantity`: `int`
 
 Optional fields:
 
+- `AutoPlacement`: [AutoPlacementType](./literals.md#autoplacementtype)
+- `ClientToken`: `str`
+- `InstanceType`: `str`
+- `InstanceFamily`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `HostRecovery`: [HostRecoveryType](./literals.md#hostrecoverytype)
+
+## AllocateHostsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AllocateHostsResultResponseTypeDef
+```
+
+Required fields:
+
 - `HostIds`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## AllowedPrincipalTypeDef
 
@@ -1247,38 +2012,103 @@ Optional fields:
 - `PrefixListId`: `str`
 - `Protocol`: `str`
 
-## ApplySecurityGroupsToClientVpnTargetNetworkResultTypeDef
+## ApplySecurityGroupsToClientVpnTargetNetworkRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ApplySecurityGroupsToClientVpnTargetNetworkResultTypeDef
+from mypy_boto3_ec2.type_defs import ApplySecurityGroupsToClientVpnTargetNetworkRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
+- `ClientVpnEndpointId`: `str`
+- `VpcId`: `str`
 - `SecurityGroupIds`: `List`\[`str`\]
 
-## AssignIpv6AddressesResultTypeDef
+Optional fields:
+
+- `DryRun`: `bool`
+
+## ApplySecurityGroupsToClientVpnTargetNetworkResultResponseTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import AssignIpv6AddressesResultTypeDef
+from mypy_boto3_ec2.type_defs import ApplySecurityGroupsToClientVpnTargetNetworkResultResponseTypeDef
 ```
 
+Required fields:
+
+- `SecurityGroupIds`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## AssignIpv6AddressesRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AssignIpv6AddressesRequestTypeDef
+```
+
+Required fields:
+
+- `NetworkInterfaceId`: `str`
+
 Optional fields:
+
+- `Ipv6AddressCount`: `int`
+- `Ipv6Addresses`: `List`\[`str`\]
+
+## AssignIpv6AddressesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AssignIpv6AddressesResultResponseTypeDef
+```
+
+Required fields:
 
 - `AssignedIpv6Addresses`: `List`\[`str`\]
 - `NetworkInterfaceId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssignPrivateIpAddressesResultTypeDef
+## AssignPrivateIpAddressesRequestNetworkInterfaceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import AssignPrivateIpAddressesResultTypeDef
+from mypy_boto3_ec2.type_defs import AssignPrivateIpAddressesRequestNetworkInterfaceTypeDef
 ```
 
 Optional fields:
+
+- `AllowReassignment`: `bool`
+- `PrivateIpAddresses`: `List`\[`str`\]
+- `SecondaryPrivateIpAddressCount`: `int`
+
+## AssignPrivateIpAddressesRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AssignPrivateIpAddressesRequestTypeDef
+```
+
+Required fields:
+
+- `NetworkInterfaceId`: `str`
+
+Optional fields:
+
+- `AllowReassignment`: `bool`
+- `PrivateIpAddresses`: `List`\[`str`\]
+- `SecondaryPrivateIpAddressCount`: `int`
+
+## AssignPrivateIpAddressesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AssignPrivateIpAddressesResultResponseTypeDef
+```
+
+Required fields:
 
 - `NetworkInterfaceId`: `str`
 - `AssignedPrivateIpAddresses`:
   `List`\[[AssignedPrivateIpAddressTypeDef](./type_defs.md#assignedprivateipaddresstypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## AssignedPrivateIpAddressTypeDef
 
@@ -1290,121 +2120,373 @@ Optional fields:
 
 - `PrivateIpAddress`: `str`
 
-## AssociateAddressResultTypeDef
+## AssociateAddressRequestClassicAddressTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import AssociateAddressResultTypeDef
+from mypy_boto3_ec2.type_defs import AssociateAddressRequestClassicAddressTypeDef
 ```
 
 Optional fields:
+
+- `AllocationId`: `str`
+- `InstanceId`: `str`
+- `AllowReassociation`: `bool`
+- `DryRun`: `bool`
+- `NetworkInterfaceId`: `str`
+- `PrivateIpAddress`: `str`
+
+## AssociateAddressRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AssociateAddressRequestTypeDef
+```
+
+Optional fields:
+
+- `AllocationId`: `str`
+- `InstanceId`: `str`
+- `PublicIp`: `str`
+- `AllowReassociation`: `bool`
+- `DryRun`: `bool`
+- `NetworkInterfaceId`: `str`
+- `PrivateIpAddress`: `str`
+
+## AssociateAddressRequestVpcAddressTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AssociateAddressRequestVpcAddressTypeDef
+```
+
+Optional fields:
+
+- `InstanceId`: `str`
+- `PublicIp`: `str`
+- `AllowReassociation`: `bool`
+- `DryRun`: `bool`
+- `NetworkInterfaceId`: `str`
+- `PrivateIpAddress`: `str`
+
+## AssociateAddressResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AssociateAddressResultResponseTypeDef
+```
+
+Required fields:
 
 - `AssociationId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssociateClientVpnTargetNetworkResultTypeDef
+## AssociateClientVpnTargetNetworkRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import AssociateClientVpnTargetNetworkResultTypeDef
+from mypy_boto3_ec2.type_defs import AssociateClientVpnTargetNetworkRequestTypeDef
 ```
 
+Required fields:
+
+- `ClientVpnEndpointId`: `str`
+- `SubnetId`: `str`
+
 Optional fields:
+
+- `ClientToken`: `str`
+- `DryRun`: `bool`
+
+## AssociateClientVpnTargetNetworkResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AssociateClientVpnTargetNetworkResultResponseTypeDef
+```
+
+Required fields:
 
 - `AssociationId`: `str`
 - `Status`: [AssociationStatusTypeDef](./type_defs.md#associationstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssociateEnclaveCertificateIamRoleResultTypeDef
+## AssociateDhcpOptionsRequestDhcpOptionsTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import AssociateEnclaveCertificateIamRoleResultTypeDef
+from mypy_boto3_ec2.type_defs import AssociateDhcpOptionsRequestDhcpOptionsTypeDef
+```
+
+Required fields:
+
+- `VpcId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## AssociateDhcpOptionsRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AssociateDhcpOptionsRequestTypeDef
+```
+
+Required fields:
+
+- `DhcpOptionsId`: `str`
+- `VpcId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## AssociateDhcpOptionsRequestVpcTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AssociateDhcpOptionsRequestVpcTypeDef
+```
+
+Required fields:
+
+- `DhcpOptionsId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## AssociateEnclaveCertificateIamRoleRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AssociateEnclaveCertificateIamRoleRequestTypeDef
 ```
 
 Optional fields:
+
+- `CertificateArn`: `str`
+- `RoleArn`: `str`
+- `DryRun`: `bool`
+
+## AssociateEnclaveCertificateIamRoleResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AssociateEnclaveCertificateIamRoleResultResponseTypeDef
+```
+
+Required fields:
 
 - `CertificateS3BucketName`: `str`
 - `CertificateS3ObjectKey`: `str`
 - `EncryptionKmsKeyId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssociateIamInstanceProfileResultTypeDef
+## AssociateIamInstanceProfileRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import AssociateIamInstanceProfileResultTypeDef
+from mypy_boto3_ec2.type_defs import AssociateIamInstanceProfileRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `IamInstanceProfile`:
+  [IamInstanceProfileSpecificationTypeDef](./type_defs.md#iaminstanceprofilespecificationtypedef)
+- `InstanceId`: `str`
+
+## AssociateIamInstanceProfileResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AssociateIamInstanceProfileResultResponseTypeDef
+```
+
+Required fields:
 
 - `IamInstanceProfileAssociation`:
   [IamInstanceProfileAssociationTypeDef](./type_defs.md#iaminstanceprofileassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssociateRouteTableResultTypeDef
+## AssociateRouteTableRequestRouteTableTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import AssociateRouteTableResultTypeDef
+from mypy_boto3_ec2.type_defs import AssociateRouteTableRequestRouteTableTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `SubnetId`: `str`
+- `GatewayId`: `str`
+
+## AssociateRouteTableRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AssociateRouteTableRequestTypeDef
+```
+
+Required fields:
+
+- `RouteTableId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `SubnetId`: `str`
+- `GatewayId`: `str`
+
+## AssociateRouteTableResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AssociateRouteTableResultResponseTypeDef
+```
+
+Required fields:
 
 - `AssociationId`: `str`
 - `AssociationState`:
   [RouteTableAssociationStateTypeDef](./type_defs.md#routetableassociationstatetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssociateSubnetCidrBlockResultTypeDef
+## AssociateSubnetCidrBlockRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import AssociateSubnetCidrBlockResultTypeDef
+from mypy_boto3_ec2.type_defs import AssociateSubnetCidrBlockRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Ipv6CidrBlock`: `str`
+- `SubnetId`: `str`
+
+## AssociateSubnetCidrBlockResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AssociateSubnetCidrBlockResultResponseTypeDef
+```
+
+Required fields:
 
 - `Ipv6CidrBlockAssociation`:
   [SubnetIpv6CidrBlockAssociationTypeDef](./type_defs.md#subnetipv6cidrblockassociationtypedef)
 - `SubnetId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssociateTransitGatewayMulticastDomainResultTypeDef
+## AssociateTransitGatewayMulticastDomainRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import AssociateTransitGatewayMulticastDomainResultTypeDef
+from mypy_boto3_ec2.type_defs import AssociateTransitGatewayMulticastDomainRequestTypeDef
 ```
 
 Optional fields:
+
+- `TransitGatewayMulticastDomainId`: `str`
+- `TransitGatewayAttachmentId`: `str`
+- `SubnetIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+
+## AssociateTransitGatewayMulticastDomainResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AssociateTransitGatewayMulticastDomainResultResponseTypeDef
+```
+
+Required fields:
 
 - `Associations`:
   [TransitGatewayMulticastDomainAssociationsTypeDef](./type_defs.md#transitgatewaymulticastdomainassociationstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssociateTransitGatewayRouteTableResultTypeDef
+## AssociateTransitGatewayRouteTableRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import AssociateTransitGatewayRouteTableResultTypeDef
+from mypy_boto3_ec2.type_defs import AssociateTransitGatewayRouteTableRequestTypeDef
 ```
 
+Required fields:
+
+- `TransitGatewayRouteTableId`: `str`
+- `TransitGatewayAttachmentId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## AssociateTransitGatewayRouteTableResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AssociateTransitGatewayRouteTableResultResponseTypeDef
+```
+
+Required fields:
 
 - `Association`:
   [TransitGatewayAssociationTypeDef](./type_defs.md#transitgatewayassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssociateTrunkInterfaceResultTypeDef
+## AssociateTrunkInterfaceRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import AssociateTrunkInterfaceResultTypeDef
+from mypy_boto3_ec2.type_defs import AssociateTrunkInterfaceRequestTypeDef
 ```
 
+Required fields:
+
+- `BranchInterfaceId`: `str`
+- `TrunkInterfaceId`: `str`
+
 Optional fields:
+
+- `VlanId`: `int`
+- `GreKey`: `int`
+- `ClientToken`: `str`
+- `DryRun`: `bool`
+
+## AssociateTrunkInterfaceResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AssociateTrunkInterfaceResultResponseTypeDef
+```
+
+Required fields:
 
 - `InterfaceAssociation`:
   [TrunkInterfaceAssociationTypeDef](./type_defs.md#trunkinterfaceassociationtypedef)
 - `ClientToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssociateVpcCidrBlockResultTypeDef
+## AssociateVpcCidrBlockRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import AssociateVpcCidrBlockResultTypeDef
+from mypy_boto3_ec2.type_defs import AssociateVpcCidrBlockRequestTypeDef
 ```
 
+Required fields:
+
+- `VpcId`: `str`
+
 Optional fields:
+
+- `AmazonProvidedIpv6CidrBlock`: `bool`
+- `CidrBlock`: `str`
+- `Ipv6CidrBlockNetworkBorderGroup`: `str`
+- `Ipv6Pool`: `str`
+- `Ipv6CidrBlock`: `str`
+
+## AssociateVpcCidrBlockResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AssociateVpcCidrBlockResultResponseTypeDef
+```
+
+Required fields:
 
 - `Ipv6CidrBlockAssociation`:
   [VpcIpv6CidrBlockAssociationTypeDef](./type_defs.md#vpcipv6cidrblockassociationtypedef)
 - `CidrBlockAssociation`:
   [VpcCidrBlockAssociationTypeDef](./type_defs.md#vpccidrblockassociationtypedef)
 - `VpcId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## AssociatedRoleTypeDef
 
@@ -1456,39 +2538,228 @@ Required fields:
 
 Optional fields:
 
-- `PartitionStartDate`: `datetime`
-- `PartitionEndDate`: `datetime`
+- `PartitionStartDate`: `Union`\[`datetime`, `str`\]
+- `PartitionEndDate`: `Union`\[`datetime`, `str`\]
 
-## AttachClassicLinkVpcResultTypeDef
+## AttachClassicLinkVpcRequestInstanceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import AttachClassicLinkVpcResultTypeDef
+from mypy_boto3_ec2.type_defs import AttachClassicLinkVpcRequestInstanceTypeDef
 ```
 
+Required fields:
+
+- `Groups`: `List`\[`str`\]
+- `VpcId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## AttachClassicLinkVpcRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AttachClassicLinkVpcRequestTypeDef
+```
+
+Required fields:
+
+- `Groups`: `List`\[`str`\]
+- `InstanceId`: `str`
+- `VpcId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## AttachClassicLinkVpcRequestVpcTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AttachClassicLinkVpcRequestVpcTypeDef
+```
+
+Required fields:
+
+- `Groups`: `List`\[`str`\]
+- `InstanceId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## AttachClassicLinkVpcResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AttachClassicLinkVpcResultResponseTypeDef
+```
+
+Required fields:
 
 - `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AttachNetworkInterfaceResultTypeDef
+## AttachInternetGatewayRequestInternetGatewayTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import AttachNetworkInterfaceResultTypeDef
+from mypy_boto3_ec2.type_defs import AttachInternetGatewayRequestInternetGatewayTypeDef
 ```
 
+Required fields:
+
+- `VpcId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## AttachInternetGatewayRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AttachInternetGatewayRequestTypeDef
+```
+
+Required fields:
+
+- `InternetGatewayId`: `str`
+- `VpcId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## AttachInternetGatewayRequestVpcTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AttachInternetGatewayRequestVpcTypeDef
+```
+
+Required fields:
+
+- `InternetGatewayId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## AttachNetworkInterfaceRequestNetworkInterfaceTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AttachNetworkInterfaceRequestNetworkInterfaceTypeDef
+```
+
+Required fields:
+
+- `DeviceIndex`: `int`
+- `InstanceId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `NetworkCardIndex`: `int`
+
+## AttachNetworkInterfaceRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AttachNetworkInterfaceRequestTypeDef
+```
+
+Required fields:
+
+- `DeviceIndex`: `int`
+- `InstanceId`: `str`
+- `NetworkInterfaceId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `NetworkCardIndex`: `int`
+
+## AttachNetworkInterfaceResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AttachNetworkInterfaceResultResponseTypeDef
+```
+
+Required fields:
 
 - `AttachmentId`: `str`
 - `NetworkCardIndex`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AttachVpnGatewayResultTypeDef
+## AttachVolumeRequestInstanceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import AttachVpnGatewayResultTypeDef
+from mypy_boto3_ec2.type_defs import AttachVolumeRequestInstanceTypeDef
 ```
+
+Required fields:
+
+- `Device`: `str`
+- `VolumeId`: `str`
 
 Optional fields:
 
+- `DryRun`: `bool`
+
+## AttachVolumeRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AttachVolumeRequestTypeDef
+```
+
+Required fields:
+
+- `Device`: `str`
+- `InstanceId`: `str`
+- `VolumeId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## AttachVolumeRequestVolumeTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AttachVolumeRequestVolumeTypeDef
+```
+
+Required fields:
+
+- `Device`: `str`
+- `InstanceId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## AttachVpnGatewayRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AttachVpnGatewayRequestTypeDef
+```
+
+Required fields:
+
+- `VpcId`: `str`
+- `VpnGatewayId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## AttachVpnGatewayResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AttachVpnGatewayResultResponseTypeDef
+```
+
+Required fields:
+
 - `VpcAttachment`: [VpcAttachmentTypeDef](./type_defs.md#vpcattachmenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## AttributeBooleanValueTypeDef
 
@@ -1526,16 +2797,116 @@ Optional fields:
 - `Status`:
   [ClientVpnAuthorizationRuleStatusTypeDef](./type_defs.md#clientvpnauthorizationrulestatustypedef)
 
-## AuthorizeClientVpnIngressResultTypeDef
+## AuthorizeClientVpnIngressRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import AuthorizeClientVpnIngressResultTypeDef
+from mypy_boto3_ec2.type_defs import AuthorizeClientVpnIngressRequestTypeDef
+```
+
+Required fields:
+
+- `ClientVpnEndpointId`: `str`
+- `TargetNetworkCidr`: `str`
+
+Optional fields:
+
+- `AccessGroupId`: `str`
+- `AuthorizeAllGroups`: `bool`
+- `Description`: `str`
+- `ClientToken`: `str`
+- `DryRun`: `bool`
+
+## AuthorizeClientVpnIngressResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AuthorizeClientVpnIngressResultResponseTypeDef
+```
+
+Required fields:
+
+- `Status`:
+  [ClientVpnAuthorizationRuleStatusTypeDef](./type_defs.md#clientvpnauthorizationrulestatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## AuthorizeSecurityGroupEgressRequestSecurityGroupTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AuthorizeSecurityGroupEgressRequestSecurityGroupTypeDef
 ```
 
 Optional fields:
 
-- `Status`:
-  [ClientVpnAuthorizationRuleStatusTypeDef](./type_defs.md#clientvpnauthorizationrulestatustypedef)
+- `DryRun`: `bool`
+- `IpPermissions`:
+  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `CidrIp`: `str`
+- `FromPort`: `int`
+- `IpProtocol`: `str`
+- `ToPort`: `int`
+- `SourceSecurityGroupName`: `str`
+- `SourceSecurityGroupOwnerId`: `str`
+
+## AuthorizeSecurityGroupEgressRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AuthorizeSecurityGroupEgressRequestTypeDef
+```
+
+Required fields:
+
+- `GroupId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `IpPermissions`:
+  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `CidrIp`: `str`
+- `FromPort`: `int`
+- `IpProtocol`: `str`
+- `ToPort`: `int`
+- `SourceSecurityGroupName`: `str`
+- `SourceSecurityGroupOwnerId`: `str`
+
+## AuthorizeSecurityGroupIngressRequestSecurityGroupTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AuthorizeSecurityGroupIngressRequestSecurityGroupTypeDef
+```
+
+Optional fields:
+
+- `CidrIp`: `str`
+- `FromPort`: `int`
+- `GroupName`: `str`
+- `IpPermissions`:
+  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `IpProtocol`: `str`
+- `SourceSecurityGroupName`: `str`
+- `SourceSecurityGroupOwnerId`: `str`
+- `ToPort`: `int`
+- `DryRun`: `bool`
+
+## AuthorizeSecurityGroupIngressRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AuthorizeSecurityGroupIngressRequestTypeDef
+```
+
+Optional fields:
+
+- `CidrIp`: `str`
+- `FromPort`: `int`
+- `GroupId`: `str`
+- `GroupName`: `str`
+- `IpPermissions`:
+  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `IpProtocol`: `str`
+- `SourceSecurityGroupName`: `str`
+- `SourceSecurityGroupOwnerId`: `str`
+- `ToPort`: `int`
+- `DryRun`: `bool`
 
 ## AvailabilityZoneMessageTypeDef
 
@@ -1604,15 +2975,32 @@ Optional fields:
 - `Ebs`: [EbsBlockDeviceTypeDef](./type_defs.md#ebsblockdevicetypedef)
 - `NoDevice`: `str`
 
-## BundleInstanceResultTypeDef
+## BundleInstanceRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import BundleInstanceResultTypeDef
+from mypy_boto3_ec2.type_defs import BundleInstanceRequestTypeDef
 ```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `Storage`: [StorageTypeDef](./type_defs.md#storagetypedef)
 
 Optional fields:
 
+- `DryRun`: `bool`
+
+## BundleInstanceResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import BundleInstanceResultResponseTypeDef
+```
+
+Required fields:
+
 - `BundleTask`: [BundleTaskTypeDef](./type_defs.md#bundletasktypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## BundleTaskErrorTypeDef
 
@@ -1656,48 +3044,131 @@ Optional fields:
 - `StatusMessage`: `str`
 - `State`: [ByoipCidrStateType](./literals.md#byoipcidrstatetype)
 
-## CancelBundleTaskResultTypeDef
+## CancelBundleTaskRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CancelBundleTaskResultTypeDef
+from mypy_boto3_ec2.type_defs import CancelBundleTaskRequestTypeDef
 ```
 
+Required fields:
+
+- `BundleId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## CancelBundleTaskResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CancelBundleTaskResultResponseTypeDef
+```
+
+Required fields:
 
 - `BundleTask`: [BundleTaskTypeDef](./type_defs.md#bundletasktypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CancelCapacityReservationResultTypeDef
+## CancelCapacityReservationRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CancelCapacityReservationResultTypeDef
+from mypy_boto3_ec2.type_defs import CancelCapacityReservationRequestTypeDef
 ```
 
+Required fields:
+
+- `CapacityReservationId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## CancelCapacityReservationResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CancelCapacityReservationResultResponseTypeDef
+```
+
+Required fields:
 
 - `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CancelImportTaskResultTypeDef
+## CancelConversionRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CancelImportTaskResultTypeDef
+from mypy_boto3_ec2.type_defs import CancelConversionRequestTypeDef
+```
+
+Required fields:
+
+- `ConversionTaskId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `ReasonMessage`: `str`
+
+## CancelExportTaskRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CancelExportTaskRequestTypeDef
+```
+
+Required fields:
+
+- `ExportTaskId`: `str`
+
+## CancelImportTaskRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CancelImportTaskRequestTypeDef
 ```
 
 Optional fields:
+
+- `CancelReason`: `str`
+- `DryRun`: `bool`
+- `ImportTaskId`: `str`
+
+## CancelImportTaskResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CancelImportTaskResultResponseTypeDef
+```
+
+Required fields:
 
 - `ImportTaskId`: `str`
 - `PreviousState`: `str`
 - `State`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CancelReservedInstancesListingResultTypeDef
+## CancelReservedInstancesListingRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CancelReservedInstancesListingResultTypeDef
+from mypy_boto3_ec2.type_defs import CancelReservedInstancesListingRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ReservedInstancesListingId`: `str`
+
+## CancelReservedInstancesListingResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CancelReservedInstancesListingResultResponseTypeDef
+```
+
+Required fields:
 
 - `ReservedInstancesListings`:
   `List`\[[ReservedInstancesListingTypeDef](./type_defs.md#reservedinstanceslistingtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CancelSpotFleetRequestsErrorItemTypeDef
 
@@ -1722,18 +3193,35 @@ Optional fields:
 - `Code`: [CancelBatchErrorCodeType](./literals.md#cancelbatcherrorcodetype)
 - `Message`: `str`
 
-## CancelSpotFleetRequestsResponseTypeDef
+## CancelSpotFleetRequestsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CancelSpotFleetRequestsResponseTypeDef
+from mypy_boto3_ec2.type_defs import CancelSpotFleetRequestsRequestTypeDef
 ```
 
+Required fields:
+
+- `SpotFleetRequestIds`: `List`\[`str`\]
+- `TerminateInstances`: `bool`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## CancelSpotFleetRequestsResponseResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CancelSpotFleetRequestsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `SuccessfulFleetRequests`:
   `List`\[[CancelSpotFleetRequestsSuccessItemTypeDef](./type_defs.md#cancelspotfleetrequestssuccessitemtypedef)\]
 - `UnsuccessfulFleetRequests`:
   `List`\[[CancelSpotFleetRequestsErrorItemTypeDef](./type_defs.md#cancelspotfleetrequestserroritemtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CancelSpotFleetRequestsSuccessItemTypeDef
 
@@ -1749,16 +3237,32 @@ Optional fields:
   [BatchStateType](./literals.md#batchstatetype)
 - `SpotFleetRequestId`: `str`
 
-## CancelSpotInstanceRequestsResultTypeDef
+## CancelSpotInstanceRequestsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CancelSpotInstanceRequestsResultTypeDef
+from mypy_boto3_ec2.type_defs import CancelSpotInstanceRequestsRequestTypeDef
 ```
+
+Required fields:
+
+- `SpotInstanceRequestIds`: `List`\[`str`\]
 
 Optional fields:
 
+- `DryRun`: `bool`
+
+## CancelSpotInstanceRequestsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CancelSpotInstanceRequestsResultResponseTypeDef
+```
+
+Required fields:
+
 - `CancelledSpotInstanceRequests`:
   `List`\[[CancelledSpotInstanceRequestTypeDef](./type_defs.md#cancelledspotinstancerequesttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CancelledSpotInstanceRequestTypeDef
 
@@ -2032,9 +3536,9 @@ from mypy_boto3_ec2.type_defs import ClientDataTypeDef
 Optional fields:
 
 - `Comment`: `str`
-- `UploadEnd`: `datetime`
+- `UploadEnd`: `Union`\[`datetime`, `str`\]
 - `UploadSize`: `float`
-- `UploadStart`: `datetime`
+- `UploadStart`: `Union`\[`datetime`, `str`\]
 
 ## ClientVpnAuthenticationRequestTypeDef
 
@@ -2235,16 +3739,33 @@ Optional fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `PoolArn`: `str`
 
-## ConfirmProductInstanceResultTypeDef
+## ConfirmProductInstanceRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ConfirmProductInstanceResultTypeDef
+from mypy_boto3_ec2.type_defs import ConfirmProductInstanceRequestTypeDef
 ```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `ProductCode`: `str`
 
 Optional fields:
 
+- `DryRun`: `bool`
+
+## ConfirmProductInstanceResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ConfirmProductInstanceResultResponseTypeDef
+```
+
+Required fields:
+
 - `OwnerId`: `str`
 - `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ConnectionLogOptionsTypeDef
 
@@ -2306,36 +3827,126 @@ Optional fields:
 - `StatusMessage`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CopyFpgaImageResultTypeDef
+## CopyFpgaImageRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CopyFpgaImageResultTypeDef
+from mypy_boto3_ec2.type_defs import CopyFpgaImageRequestTypeDef
 ```
 
+Required fields:
+
+- `SourceFpgaImageId`: `str`
+- `SourceRegion`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `Description`: `str`
+- `Name`: `str`
+- `ClientToken`: `str`
+
+## CopyFpgaImageResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CopyFpgaImageResultResponseTypeDef
+```
+
+Required fields:
 
 - `FpgaImageId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CopyImageResultTypeDef
+## CopyImageRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CopyImageResultTypeDef
+from mypy_boto3_ec2.type_defs import CopyImageRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+- `SourceImageId`: `str`
+- `SourceRegion`: `str`
+
 Optional fields:
+
+- `ClientToken`: `str`
+- `Description`: `str`
+- `Encrypted`: `bool`
+- `KmsKeyId`: `str`
+- `DestinationOutpostArn`: `str`
+- `DryRun`: `bool`
+
+## CopyImageResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CopyImageResultResponseTypeDef
+```
+
+Required fields:
 
 - `ImageId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CopySnapshotResultTypeDef
+## CopySnapshotRequestSnapshotTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CopySnapshotResultTypeDef
+from mypy_boto3_ec2.type_defs import CopySnapshotRequestSnapshotTypeDef
 ```
 
+Required fields:
+
+- `SourceRegion`: `str`
+
 Optional fields:
+
+- `Description`: `str`
+- `DestinationOutpostArn`: `str`
+- `DestinationRegion`: `str`
+- `Encrypted`: `bool`
+- `KmsKeyId`: `str`
+- `PresignedUrl`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+## CopySnapshotRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CopySnapshotRequestTypeDef
+```
+
+Required fields:
+
+- `SourceRegion`: `str`
+- `SourceSnapshotId`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+- `DestinationOutpostArn`: `str`
+- `DestinationRegion`: `str`
+- `Encrypted`: `bool`
+- `KmsKeyId`: `str`
+- `PresignedUrl`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+## CopySnapshotResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CopySnapshotResultResponseTypeDef
+```
+
+Required fields:
 
 - `SnapshotId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CpuOptionsRequestTypeDef
 
@@ -2359,104 +3970,318 @@ Optional fields:
 - `CoreCount`: `int`
 - `ThreadsPerCore`: `int`
 
-## CreateCapacityReservationResultTypeDef
+## CreateCapacityReservationRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateCapacityReservationResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateCapacityReservationRequestTypeDef
 ```
 
+Required fields:
+
+- `InstanceType`: `str`
+- `InstancePlatform`:
+  [CapacityReservationInstancePlatformType](./literals.md#capacityreservationinstanceplatformtype)
+- `InstanceCount`: `int`
+
 Optional fields:
+
+- `ClientToken`: `str`
+- `AvailabilityZone`: `str`
+- `AvailabilityZoneId`: `str`
+- `Tenancy`:
+  [CapacityReservationTenancyType](./literals.md#capacityreservationtenancytype)
+- `EbsOptimized`: `bool`
+- `EphemeralStorage`: `bool`
+- `EndDate`: `Union`\[`datetime`, `str`\]
+- `EndDateType`: [EndDateTypeType](./literals.md#enddatetypetype)
+- `InstanceMatchCriteria`:
+  [InstanceMatchCriteriaType](./literals.md#instancematchcriteriatype)
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+- `OutpostArn`: `str`
+
+## CreateCapacityReservationResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateCapacityReservationResultResponseTypeDef
+```
+
+Required fields:
 
 - `CapacityReservation`:
   [CapacityReservationTypeDef](./type_defs.md#capacityreservationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateCarrierGatewayResultTypeDef
+## CreateCarrierGatewayRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateCarrierGatewayResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateCarrierGatewayRequestTypeDef
 ```
 
+Required fields:
+
+- `VpcId`: `str`
+
 Optional fields:
+
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+- `ClientToken`: `str`
+
+## CreateCarrierGatewayResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateCarrierGatewayResultResponseTypeDef
+```
+
+Required fields:
 
 - `CarrierGateway`:
   [CarrierGatewayTypeDef](./type_defs.md#carriergatewaytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateClientVpnEndpointResultTypeDef
+## CreateClientVpnEndpointRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateClientVpnEndpointResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateClientVpnEndpointRequestTypeDef
 ```
 
+Required fields:
+
+- `ClientCidrBlock`: `str`
+- `ServerCertificateArn`: `str`
+- `AuthenticationOptions`:
+  `List`\[[ClientVpnAuthenticationRequestTypeDef](./type_defs.md#clientvpnauthenticationrequesttypedef)\]
+- `ConnectionLogOptions`:
+  [ConnectionLogOptionsTypeDef](./type_defs.md#connectionlogoptionstypedef)
+
 Optional fields:
+
+- `DnsServers`: `List`\[`str`\]
+- `TransportProtocol`:
+  [TransportProtocolType](./literals.md#transportprotocoltype)
+- `VpnPort`: `int`
+- `Description`: `str`
+- `SplitTunnel`: `bool`
+- `DryRun`: `bool`
+- `ClientToken`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `SecurityGroupIds`: `List`\[`str`\]
+- `VpcId`: `str`
+- `SelfServicePortal`:
+  [SelfServicePortalType](./literals.md#selfserviceportaltype)
+- `ClientConnectOptions`:
+  [ClientConnectOptionsTypeDef](./type_defs.md#clientconnectoptionstypedef)
+
+## CreateClientVpnEndpointResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateClientVpnEndpointResultResponseTypeDef
+```
+
+Required fields:
 
 - `ClientVpnEndpointId`: `str`
 - `Status`:
   [ClientVpnEndpointStatusTypeDef](./type_defs.md#clientvpnendpointstatustypedef)
 - `DnsName`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateClientVpnRouteResultTypeDef
+## CreateClientVpnRouteRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateClientVpnRouteResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateClientVpnRouteRequestTypeDef
 ```
 
+Required fields:
+
+- `ClientVpnEndpointId`: `str`
+- `DestinationCidrBlock`: `str`
+- `TargetVpcSubnetId`: `str`
+
 Optional fields:
+
+- `Description`: `str`
+- `ClientToken`: `str`
+- `DryRun`: `bool`
+
+## CreateClientVpnRouteResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateClientVpnRouteResultResponseTypeDef
+```
+
+Required fields:
 
 - `Status`:
   [ClientVpnRouteStatusTypeDef](./type_defs.md#clientvpnroutestatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateCustomerGatewayResultTypeDef
+## CreateCustomerGatewayRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateCustomerGatewayResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateCustomerGatewayRequestTypeDef
 ```
 
+Required fields:
+
+- `BgpAsn`: `int`
+- `Type`: `Literal['ipsec.1']` (see
+  [GatewayTypeType](./literals.md#gatewaytypetype))
+
 Optional fields:
+
+- `PublicIp`: `str`
+- `CertificateArn`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DeviceName`: `str`
+- `DryRun`: `bool`
+
+## CreateCustomerGatewayResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateCustomerGatewayResultResponseTypeDef
+```
+
+Required fields:
 
 - `CustomerGateway`:
   [CustomerGatewayTypeDef](./type_defs.md#customergatewaytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDefaultSubnetResultTypeDef
+## CreateDefaultSubnetRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateDefaultSubnetResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateDefaultSubnetRequestTypeDef
 ```
 
+Required fields:
+
+- `AvailabilityZone`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## CreateDefaultSubnetResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateDefaultSubnetResultResponseTypeDef
+```
+
+Required fields:
 
 - `Subnet`: [SubnetTypeDef](./type_defs.md#subnettypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDefaultVpcResultTypeDef
+## CreateDefaultVpcRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateDefaultVpcResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateDefaultVpcRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+
+## CreateDefaultVpcResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateDefaultVpcResultResponseTypeDef
+```
+
+Required fields:
 
 - `Vpc`: [VpcTypeDef](./type_defs.md#vpctypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDhcpOptionsResultTypeDef
+## CreateDhcpOptionsRequestServiceResourceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateDhcpOptionsResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateDhcpOptionsRequestServiceResourceTypeDef
 ```
+
+Required fields:
+
+- `DhcpConfigurations`:
+  `List`\[[NewDhcpConfigurationTypeDef](./type_defs.md#newdhcpconfigurationtypedef)\]
 
 Optional fields:
 
-- `DhcpOptions`: [DhcpOptionsTypeDef](./type_defs.md#dhcpoptionstypedef)
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
 
-## CreateEgressOnlyInternetGatewayResultTypeDef
+## CreateDhcpOptionsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateEgressOnlyInternetGatewayResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateDhcpOptionsRequestTypeDef
 ```
+
+Required fields:
+
+- `DhcpConfigurations`:
+  `List`\[[NewDhcpConfigurationTypeDef](./type_defs.md#newdhcpconfigurationtypedef)\]
+
+Optional fields:
+
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+## CreateDhcpOptionsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateDhcpOptionsResultResponseTypeDef
+```
+
+Required fields:
+
+- `DhcpOptions`: [DhcpOptionsTypeDef](./type_defs.md#dhcpoptionstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateEgressOnlyInternetGatewayRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateEgressOnlyInternetGatewayRequestTypeDef
+```
+
+Required fields:
+
+- `VpcId`: `str`
 
 Optional fields:
 
 - `ClientToken`: `str`
+- `DryRun`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## CreateEgressOnlyInternetGatewayResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateEgressOnlyInternetGatewayResultResponseTypeDef
+```
+
+Required fields:
+
+- `ClientToken`: `str`
 - `EgressOnlyInternetGateway`:
   [EgressOnlyInternetGatewayTypeDef](./type_defs.md#egressonlyinternetgatewaytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateFleetErrorTypeDef
 
@@ -2488,362 +4313,1636 @@ Optional fields:
 - `Platform`: `Literal['Windows']` (see
   [PlatformValuesType](./literals.md#platformvaluestype))
 
-## CreateFleetResultTypeDef
+## CreateFleetRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateFleetResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateFleetRequestTypeDef
 ```
 
+Required fields:
+
+- `LaunchTemplateConfigs`:
+  `List`\[[FleetLaunchTemplateConfigRequestTypeDef](./type_defs.md#fleetlaunchtemplateconfigrequesttypedef)\]
+- `TargetCapacitySpecification`:
+  [TargetCapacitySpecificationRequestTypeDef](./type_defs.md#targetcapacityspecificationrequesttypedef)
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `ClientToken`: `str`
+- `SpotOptions`:
+  [SpotOptionsRequestTypeDef](./type_defs.md#spotoptionsrequesttypedef)
+- `OnDemandOptions`:
+  [OnDemandOptionsRequestTypeDef](./type_defs.md#ondemandoptionsrequesttypedef)
+- `ExcessCapacityTerminationPolicy`:
+  [FleetExcessCapacityTerminationPolicyType](./literals.md#fleetexcesscapacityterminationpolicytype)
+- `TerminateInstancesWithExpiration`: `bool`
+- `Type`: [FleetTypeType](./literals.md#fleettypetype)
+- `ValidFrom`: `Union`\[`datetime`, `str`\]
+- `ValidUntil`: `Union`\[`datetime`, `str`\]
+- `ReplaceUnhealthyInstances`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## CreateFleetResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateFleetResultResponseTypeDef
+```
+
+Required fields:
 
 - `FleetId`: `str`
 - `Errors`:
   `List`\[[CreateFleetErrorTypeDef](./type_defs.md#createfleeterrortypedef)\]
 - `Instances`:
   `List`\[[CreateFleetInstanceTypeDef](./type_defs.md#createfleetinstancetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateFlowLogsResultTypeDef
+## CreateFlowLogsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateFlowLogsResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateFlowLogsRequestTypeDef
 ```
 
+Required fields:
+
+- `ResourceIds`: `List`\[`str`\]
+- `ResourceType`:
+  [FlowLogsResourceTypeType](./literals.md#flowlogsresourcetypetype)
+- `TrafficType`: [TrafficTypeType](./literals.md#traffictypetype)
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `ClientToken`: `str`
+- `DeliverLogsPermissionArn`: `str`
+- `LogGroupName`: `str`
+- `LogDestinationType`:
+  [LogDestinationTypeType](./literals.md#logdestinationtypetype)
+- `LogDestination`: `str`
+- `LogFormat`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `MaxAggregationInterval`: `int`
+
+## CreateFlowLogsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateFlowLogsResultResponseTypeDef
+```
+
+Required fields:
 
 - `ClientToken`: `str`
 - `FlowLogIds`: `List`\[`str`\]
 - `Unsuccessful`:
   `List`\[[UnsuccessfulItemTypeDef](./type_defs.md#unsuccessfulitemtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateFpgaImageResultTypeDef
+## CreateFpgaImageRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateFpgaImageResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateFpgaImageRequestTypeDef
 ```
 
+Required fields:
+
+- `InputStorageLocation`:
+  [StorageLocationTypeDef](./type_defs.md#storagelocationtypedef)
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `LogsStorageLocation`:
+  [StorageLocationTypeDef](./type_defs.md#storagelocationtypedef)
+- `Description`: `str`
+- `Name`: `str`
+- `ClientToken`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## CreateFpgaImageResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateFpgaImageResultResponseTypeDef
+```
+
+Required fields:
 
 - `FpgaImageId`: `str`
 - `FpgaImageGlobalId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateImageResultTypeDef
+## CreateImageRequestInstanceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateImageResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateImageRequestInstanceTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+
 Optional fields:
+
+- `BlockDeviceMappings`:
+  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
+- `Description`: `str`
+- `DryRun`: `bool`
+- `NoReboot`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## CreateImageRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateImageRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `Name`: `str`
+
+Optional fields:
+
+- `BlockDeviceMappings`:
+  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
+- `Description`: `str`
+- `DryRun`: `bool`
+- `NoReboot`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## CreateImageResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateImageResultResponseTypeDef
+```
+
+Required fields:
 
 - `ImageId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateInstanceExportTaskResultTypeDef
+## CreateInstanceExportTaskRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateInstanceExportTaskResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateInstanceExportTaskRequestTypeDef
 ```
 
+Required fields:
+
+- `ExportToS3Task`:
+  [ExportToS3TaskSpecificationTypeDef](./type_defs.md#exporttos3taskspecificationtypedef)
+- `InstanceId`: `str`
+- `TargetEnvironment`:
+  [ExportEnvironmentType](./literals.md#exportenvironmenttype)
+
 Optional fields:
+
+- `Description`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## CreateInstanceExportTaskResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateInstanceExportTaskResultResponseTypeDef
+```
+
+Required fields:
 
 - `ExportTask`: [ExportTaskTypeDef](./type_defs.md#exporttasktypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateInternetGatewayResultTypeDef
+## CreateInternetGatewayRequestServiceResourceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateInternetGatewayResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateInternetGatewayRequestServiceResourceTypeDef
 ```
 
 Optional fields:
+
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+## CreateInternetGatewayRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateInternetGatewayRequestTypeDef
+```
+
+Optional fields:
+
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+## CreateInternetGatewayResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateInternetGatewayResultResponseTypeDef
+```
+
+Required fields:
 
 - `InternetGateway`:
   [InternetGatewayTypeDef](./type_defs.md#internetgatewaytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateLaunchTemplateResultTypeDef
+## CreateKeyPairRequestServiceResourceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateLaunchTemplateResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateKeyPairRequestServiceResourceTypeDef
 ```
 
+Required fields:
+
+- `KeyName`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## CreateKeyPairRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateKeyPairRequestTypeDef
+```
+
+Required fields:
+
+- `KeyName`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## CreateLaunchTemplateRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateLaunchTemplateRequestTypeDef
+```
+
+Required fields:
+
+- `LaunchTemplateName`: `str`
+- `LaunchTemplateData`:
+  [RequestLaunchTemplateDataTypeDef](./type_defs.md#requestlaunchtemplatedatatypedef)
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `ClientToken`: `str`
+- `VersionDescription`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## CreateLaunchTemplateResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateLaunchTemplateResultResponseTypeDef
+```
+
+Required fields:
 
 - `LaunchTemplate`:
   [LaunchTemplateTypeDef](./type_defs.md#launchtemplatetypedef)
 - `Warning`:
   [ValidationWarningTypeDef](./type_defs.md#validationwarningtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateLaunchTemplateVersionResultTypeDef
+## CreateLaunchTemplateVersionRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateLaunchTemplateVersionResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateLaunchTemplateVersionRequestTypeDef
 ```
 
+Required fields:
+
+- `LaunchTemplateData`:
+  [RequestLaunchTemplateDataTypeDef](./type_defs.md#requestlaunchtemplatedatatypedef)
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `ClientToken`: `str`
+- `LaunchTemplateId`: `str`
+- `LaunchTemplateName`: `str`
+- `SourceVersion`: `str`
+- `VersionDescription`: `str`
+
+## CreateLaunchTemplateVersionResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateLaunchTemplateVersionResultResponseTypeDef
+```
+
+Required fields:
 
 - `LaunchTemplateVersion`:
   [LaunchTemplateVersionTypeDef](./type_defs.md#launchtemplateversiontypedef)
 - `Warning`:
   [ValidationWarningTypeDef](./type_defs.md#validationwarningtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateLocalGatewayRouteResultTypeDef
+## CreateLocalGatewayRouteRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateLocalGatewayRouteResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateLocalGatewayRouteRequestTypeDef
 ```
 
+Required fields:
+
+- `DestinationCidrBlock`: `str`
+- `LocalGatewayRouteTableId`: `str`
+- `LocalGatewayVirtualInterfaceGroupId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## CreateLocalGatewayRouteResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateLocalGatewayRouteResultResponseTypeDef
+```
+
+Required fields:
 
 - `Route`: [LocalGatewayRouteTypeDef](./type_defs.md#localgatewayroutetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateLocalGatewayRouteTableVpcAssociationResultTypeDef
+## CreateLocalGatewayRouteTableVpcAssociationRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateLocalGatewayRouteTableVpcAssociationResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateLocalGatewayRouteTableVpcAssociationRequestTypeDef
 ```
 
+Required fields:
+
+- `LocalGatewayRouteTableId`: `str`
+- `VpcId`: `str`
+
 Optional fields:
+
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+## CreateLocalGatewayRouteTableVpcAssociationResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateLocalGatewayRouteTableVpcAssociationResultResponseTypeDef
+```
+
+Required fields:
 
 - `LocalGatewayRouteTableVpcAssociation`:
   [LocalGatewayRouteTableVpcAssociationTypeDef](./type_defs.md#localgatewayroutetablevpcassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateManagedPrefixListResultTypeDef
+## CreateManagedPrefixListRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateManagedPrefixListResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateManagedPrefixListRequestTypeDef
 ```
 
+Required fields:
+
+- `PrefixListName`: `str`
+- `MaxEntries`: `int`
+- `AddressFamily`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `Entries`:
+  `List`\[[AddPrefixListEntryTypeDef](./type_defs.md#addprefixlistentrytypedef)\]
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `ClientToken`: `str`
+
+## CreateManagedPrefixListResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateManagedPrefixListResultResponseTypeDef
+```
+
+Required fields:
 
 - `PrefixList`:
   [ManagedPrefixListTypeDef](./type_defs.md#managedprefixlisttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateNatGatewayResultTypeDef
+## CreateNatGatewayRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateNatGatewayResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateNatGatewayRequestTypeDef
 ```
 
+Required fields:
+
+- `SubnetId`: `str`
+
 Optional fields:
+
+- `AllocationId`: `str`
+- `ClientToken`: `str`
+- `DryRun`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `ConnectivityType`:
+  [ConnectivityTypeType](./literals.md#connectivitytypetype)
+
+## CreateNatGatewayResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateNatGatewayResultResponseTypeDef
+```
+
+Required fields:
 
 - `ClientToken`: `str`
 - `NatGateway`: [NatGatewayTypeDef](./type_defs.md#natgatewaytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateNetworkAclResultTypeDef
+## CreateNetworkAclEntryRequestNetworkAclTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateNetworkAclResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateNetworkAclEntryRequestNetworkAclTypeDef
+```
+
+Required fields:
+
+- `Egress`: `bool`
+- `Protocol`: `str`
+- `RuleAction`: [RuleActionType](./literals.md#ruleactiontype)
+- `RuleNumber`: `int`
+
+Optional fields:
+
+- `CidrBlock`: `str`
+- `DryRun`: `bool`
+- `IcmpTypeCode`: [IcmpTypeCodeTypeDef](./type_defs.md#icmptypecodetypedef)
+- `Ipv6CidrBlock`: `str`
+- `PortRange`: [PortRangeTypeDef](./type_defs.md#portrangetypedef)
+
+## CreateNetworkAclEntryRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateNetworkAclEntryRequestTypeDef
+```
+
+Required fields:
+
+- `Egress`: `bool`
+- `NetworkAclId`: `str`
+- `Protocol`: `str`
+- `RuleAction`: [RuleActionType](./literals.md#ruleactiontype)
+- `RuleNumber`: `int`
+
+Optional fields:
+
+- `CidrBlock`: `str`
+- `DryRun`: `bool`
+- `IcmpTypeCode`: [IcmpTypeCodeTypeDef](./type_defs.md#icmptypecodetypedef)
+- `Ipv6CidrBlock`: `str`
+- `PortRange`: [PortRangeTypeDef](./type_defs.md#portrangetypedef)
+
+## CreateNetworkAclRequestServiceResourceTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateNetworkAclRequestServiceResourceTypeDef
+```
+
+Required fields:
+
+- `VpcId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## CreateNetworkAclRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateNetworkAclRequestTypeDef
+```
+
+Required fields:
+
+- `VpcId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## CreateNetworkAclRequestVpcTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateNetworkAclRequestVpcTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## CreateNetworkAclResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateNetworkAclResultResponseTypeDef
+```
+
+Required fields:
 
 - `NetworkAcl`: [NetworkAclTypeDef](./type_defs.md#networkacltypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateNetworkInsightsPathResultTypeDef
+## CreateNetworkInsightsPathRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateNetworkInsightsPathResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateNetworkInsightsPathRequestTypeDef
 ```
 
+Required fields:
+
+- `Source`: `str`
+- `Destination`: `str`
+- `Protocol`: [ProtocolType](./literals.md#protocoltype)
+- `ClientToken`: `str`
+
 Optional fields:
+
+- `SourceIp`: `str`
+- `DestinationIp`: `str`
+- `DestinationPort`: `int`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+## CreateNetworkInsightsPathResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateNetworkInsightsPathResultResponseTypeDef
+```
+
+Required fields:
 
 - `NetworkInsightsPath`:
   [NetworkInsightsPathTypeDef](./type_defs.md#networkinsightspathtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateNetworkInterfacePermissionResultTypeDef
+## CreateNetworkInterfacePermissionRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateNetworkInterfacePermissionResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateNetworkInterfacePermissionRequestTypeDef
 ```
 
+Required fields:
+
+- `NetworkInterfaceId`: `str`
+- `Permission`:
+  [InterfacePermissionTypeType](./literals.md#interfacepermissiontypetype)
+
 Optional fields:
+
+- `AwsAccountId`: `str`
+- `AwsService`: `str`
+- `DryRun`: `bool`
+
+## CreateNetworkInterfacePermissionResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateNetworkInterfacePermissionResultResponseTypeDef
+```
+
+Required fields:
 
 - `InterfacePermission`:
   [NetworkInterfacePermissionTypeDef](./type_defs.md#networkinterfacepermissiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateNetworkInterfaceResultTypeDef
+## CreateNetworkInterfaceRequestServiceResourceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateNetworkInterfaceResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateNetworkInterfaceRequestServiceResourceTypeDef
+```
+
+Required fields:
+
+- `SubnetId`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+- `DryRun`: `bool`
+- `Groups`: `List`\[`str`\]
+- `Ipv6AddressCount`: `int`
+- `Ipv6Addresses`:
+  `List`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
+- `PrivateIpAddress`: `str`
+- `PrivateIpAddresses`:
+  `List`\[[PrivateIpAddressSpecificationTypeDef](./type_defs.md#privateipaddressspecificationtypedef)\]
+- `SecondaryPrivateIpAddressCount`: `int`
+- `InterfaceType`:
+  [NetworkInterfaceCreationTypeType](./literals.md#networkinterfacecreationtypetype)
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `ClientToken`: `str`
+
+## CreateNetworkInterfaceRequestSubnetTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateNetworkInterfaceRequestSubnetTypeDef
 ```
 
 Optional fields:
+
+- `Description`: `str`
+- `DryRun`: `bool`
+- `Groups`: `List`\[`str`\]
+- `Ipv6AddressCount`: `int`
+- `Ipv6Addresses`:
+  `List`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
+- `PrivateIpAddress`: `str`
+- `PrivateIpAddresses`:
+  `List`\[[PrivateIpAddressSpecificationTypeDef](./type_defs.md#privateipaddressspecificationtypedef)\]
+- `SecondaryPrivateIpAddressCount`: `int`
+- `InterfaceType`:
+  [NetworkInterfaceCreationTypeType](./literals.md#networkinterfacecreationtypetype)
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `ClientToken`: `str`
+
+## CreateNetworkInterfaceRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateNetworkInterfaceRequestTypeDef
+```
+
+Required fields:
+
+- `SubnetId`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+- `DryRun`: `bool`
+- `Groups`: `List`\[`str`\]
+- `Ipv6AddressCount`: `int`
+- `Ipv6Addresses`:
+  `List`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
+- `PrivateIpAddress`: `str`
+- `PrivateIpAddresses`:
+  `List`\[[PrivateIpAddressSpecificationTypeDef](./type_defs.md#privateipaddressspecificationtypedef)\]
+- `SecondaryPrivateIpAddressCount`: `int`
+- `InterfaceType`:
+  [NetworkInterfaceCreationTypeType](./literals.md#networkinterfacecreationtypetype)
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `ClientToken`: `str`
+
+## CreateNetworkInterfaceResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateNetworkInterfaceResultResponseTypeDef
+```
+
+Required fields:
 
 - `NetworkInterface`:
   [NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)
 - `ClientToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePlacementGroupResultTypeDef
+## CreatePlacementGroupRequestServiceResourceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreatePlacementGroupResultTypeDef
+from mypy_boto3_ec2.type_defs import CreatePlacementGroupRequestServiceResourceTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `GroupName`: `str`
+- `Strategy`: [PlacementStrategyType](./literals.md#placementstrategytype)
+- `PartitionCount`: `int`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## CreatePlacementGroupRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreatePlacementGroupRequestTypeDef
+```
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `GroupName`: `str`
+- `Strategy`: [PlacementStrategyType](./literals.md#placementstrategytype)
+- `PartitionCount`: `int`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## CreatePlacementGroupResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreatePlacementGroupResultResponseTypeDef
+```
+
+Required fields:
 
 - `PlacementGroup`:
   [PlacementGroupTypeDef](./type_defs.md#placementgrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateReplaceRootVolumeTaskResultTypeDef
+## CreateReplaceRootVolumeTaskRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateReplaceRootVolumeTaskResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateReplaceRootVolumeTaskRequestTypeDef
 ```
 
+Required fields:
+
+- `InstanceId`: `str`
+
 Optional fields:
+
+- `SnapshotId`: `str`
+- `ClientToken`: `str`
+- `DryRun`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## CreateReplaceRootVolumeTaskResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateReplaceRootVolumeTaskResultResponseTypeDef
+```
+
+Required fields:
 
 - `ReplaceRootVolumeTask`:
   [ReplaceRootVolumeTaskTypeDef](./type_defs.md#replacerootvolumetasktypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateReservedInstancesListingResultTypeDef
+## CreateReservedInstancesListingRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateReservedInstancesListingResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateReservedInstancesListingRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ClientToken`: `str`
+- `InstanceCount`: `int`
+- `PriceSchedules`:
+  `List`\[[PriceScheduleSpecificationTypeDef](./type_defs.md#priceschedulespecificationtypedef)\]
+- `ReservedInstancesId`: `str`
+
+## CreateReservedInstancesListingResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateReservedInstancesListingResultResponseTypeDef
+```
+
+Required fields:
 
 - `ReservedInstancesListings`:
   `List`\[[ReservedInstancesListingTypeDef](./type_defs.md#reservedinstanceslistingtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRestoreImageTaskResultTypeDef
+## CreateRestoreImageTaskRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateRestoreImageTaskResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateRestoreImageTaskRequestTypeDef
 ```
 
+Required fields:
+
+- `Bucket`: `str`
+- `ObjectKey`: `str`
+
 Optional fields:
+
+- `Name`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+## CreateRestoreImageTaskResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateRestoreImageTaskResultResponseTypeDef
+```
+
+Required fields:
 
 - `ImageId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRouteResultTypeDef
+## CreateRouteRequestRouteTableTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateRouteResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateRouteRequestRouteTableTypeDef
 ```
 
 Optional fields:
+
+- `DestinationCidrBlock`: `str`
+- `DestinationIpv6CidrBlock`: `str`
+- `DestinationPrefixListId`: `str`
+- `DryRun`: `bool`
+- `VpcEndpointId`: `str`
+- `EgressOnlyInternetGatewayId`: `str`
+- `GatewayId`: `str`
+- `InstanceId`: `str`
+- `NatGatewayId`: `str`
+- `TransitGatewayId`: `str`
+- `LocalGatewayId`: `str`
+- `CarrierGatewayId`: `str`
+- `NetworkInterfaceId`: `str`
+- `VpcPeeringConnectionId`: `str`
+
+## CreateRouteRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateRouteRequestTypeDef
+```
+
+Required fields:
+
+- `RouteTableId`: `str`
+
+Optional fields:
+
+- `DestinationCidrBlock`: `str`
+- `DestinationIpv6CidrBlock`: `str`
+- `DestinationPrefixListId`: `str`
+- `DryRun`: `bool`
+- `VpcEndpointId`: `str`
+- `EgressOnlyInternetGatewayId`: `str`
+- `GatewayId`: `str`
+- `InstanceId`: `str`
+- `NatGatewayId`: `str`
+- `TransitGatewayId`: `str`
+- `LocalGatewayId`: `str`
+- `CarrierGatewayId`: `str`
+- `NetworkInterfaceId`: `str`
+- `VpcPeeringConnectionId`: `str`
+
+## CreateRouteResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateRouteResultResponseTypeDef
+```
+
+Required fields:
 
 - `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRouteTableResultTypeDef
+## CreateRouteTableRequestServiceResourceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateRouteTableResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateRouteTableRequestServiceResourceTypeDef
+```
+
+Required fields:
+
+- `VpcId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## CreateRouteTableRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateRouteTableRequestTypeDef
+```
+
+Required fields:
+
+- `VpcId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## CreateRouteTableRequestVpcTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateRouteTableRequestVpcTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## CreateRouteTableResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateRouteTableResultResponseTypeDef
+```
+
+Required fields:
 
 - `RouteTable`: [RouteTableTypeDef](./type_defs.md#routetabletypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateSecurityGroupResultTypeDef
+## CreateSecurityGroupRequestServiceResourceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateSecurityGroupResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateSecurityGroupRequestServiceResourceTypeDef
 ```
 
+Required fields:
+
+- `Description`: `str`
+- `GroupName`: `str`
+
 Optional fields:
+
+- `VpcId`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+## CreateSecurityGroupRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateSecurityGroupRequestTypeDef
+```
+
+Required fields:
+
+- `Description`: `str`
+- `GroupName`: `str`
+
+Optional fields:
+
+- `VpcId`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+## CreateSecurityGroupRequestVpcTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateSecurityGroupRequestVpcTypeDef
+```
+
+Required fields:
+
+- `Description`: `str`
+- `GroupName`: `str`
+
+Optional fields:
+
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+## CreateSecurityGroupResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateSecurityGroupResultResponseTypeDef
+```
+
+Required fields:
 
 - `GroupId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateSnapshotsResultTypeDef
+## CreateSnapshotRequestServiceResourceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateSnapshotsResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateSnapshotRequestServiceResourceTypeDef
+```
+
+Required fields:
+
+- `VolumeId`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+- `OutpostArn`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+## CreateSnapshotRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateSnapshotRequestTypeDef
+```
+
+Required fields:
+
+- `VolumeId`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+- `OutpostArn`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+## CreateSnapshotRequestVolumeTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateSnapshotRequestVolumeTypeDef
 ```
 
 Optional fields:
+
+- `Description`: `str`
+- `OutpostArn`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+## CreateSnapshotsRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateSnapshotsRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceSpecification`:
+  [InstanceSpecificationTypeDef](./type_defs.md#instancespecificationtypedef)
+
+Optional fields:
+
+- `Description`: `str`
+- `OutpostArn`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+- `CopyTagsFromSource`: `Literal['volume']` (see
+  [CopyTagsFromSourceType](./literals.md#copytagsfromsourcetype))
+
+## CreateSnapshotsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateSnapshotsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Snapshots`:
   `List`\[[SnapshotInfoTypeDef](./type_defs.md#snapshotinfotypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateSpotDatafeedSubscriptionResultTypeDef
+## CreateSpotDatafeedSubscriptionRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateSpotDatafeedSubscriptionResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateSpotDatafeedSubscriptionRequestTypeDef
 ```
 
+Required fields:
+
+- `Bucket`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `Prefix`: `str`
+
+## CreateSpotDatafeedSubscriptionResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateSpotDatafeedSubscriptionResultResponseTypeDef
+```
+
+Required fields:
 
 - `SpotDatafeedSubscription`:
   [SpotDatafeedSubscriptionTypeDef](./type_defs.md#spotdatafeedsubscriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateStoreImageTaskResultTypeDef
+## CreateStoreImageTaskRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateStoreImageTaskResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateStoreImageTaskRequestTypeDef
 ```
 
+Required fields:
+
+- `ImageId`: `str`
+- `Bucket`: `str`
+
 Optional fields:
+
+- `S3ObjectTags`:
+  `List`\[[S3ObjectTagTypeDef](./type_defs.md#s3objecttagtypedef)\]
+- `DryRun`: `bool`
+
+## CreateStoreImageTaskResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateStoreImageTaskResultResponseTypeDef
+```
+
+Required fields:
 
 - `ObjectKey`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateSubnetResultTypeDef
+## CreateSubnetRequestServiceResourceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateSubnetResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateSubnetRequestServiceResourceTypeDef
 ```
 
+Required fields:
+
+- `CidrBlock`: `str`
+- `VpcId`: `str`
+
 Optional fields:
+
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `AvailabilityZone`: `str`
+- `AvailabilityZoneId`: `str`
+- `Ipv6CidrBlock`: `str`
+- `OutpostArn`: `str`
+- `DryRun`: `bool`
+
+## CreateSubnetRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateSubnetRequestTypeDef
+```
+
+Required fields:
+
+- `CidrBlock`: `str`
+- `VpcId`: `str`
+
+Optional fields:
+
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `AvailabilityZone`: `str`
+- `AvailabilityZoneId`: `str`
+- `Ipv6CidrBlock`: `str`
+- `OutpostArn`: `str`
+- `DryRun`: `bool`
+
+## CreateSubnetRequestVpcTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateSubnetRequestVpcTypeDef
+```
+
+Required fields:
+
+- `CidrBlock`: `str`
+
+Optional fields:
+
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `AvailabilityZone`: `str`
+- `AvailabilityZoneId`: `str`
+- `Ipv6CidrBlock`: `str`
+- `OutpostArn`: `str`
+- `DryRun`: `bool`
+
+## CreateSubnetResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateSubnetResultResponseTypeDef
+```
+
+Required fields:
 
 - `Subnet`: [SubnetTypeDef](./type_defs.md#subnettypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTrafficMirrorFilterResultTypeDef
+## CreateTagsRequestDhcpOptionsTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateTrafficMirrorFilterResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateTagsRequestDhcpOptionsTypeDef
+```
+
+Required fields:
+
+- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## CreateTagsRequestImageTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateTagsRequestImageTypeDef
+```
+
+Required fields:
+
+- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## CreateTagsRequestInstanceTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateTagsRequestInstanceTypeDef
+```
+
+Required fields:
+
+- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## CreateTagsRequestInternetGatewayTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateTagsRequestInternetGatewayTypeDef
+```
+
+Required fields:
+
+- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## CreateTagsRequestNetworkAclTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateTagsRequestNetworkAclTypeDef
+```
+
+Required fields:
+
+- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## CreateTagsRequestNetworkInterfaceTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateTagsRequestNetworkInterfaceTypeDef
+```
+
+Required fields:
+
+- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## CreateTagsRequestRouteTableTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateTagsRequestRouteTableTypeDef
+```
+
+Required fields:
+
+- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## CreateTagsRequestSecurityGroupTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateTagsRequestSecurityGroupTypeDef
+```
+
+Required fields:
+
+- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## CreateTagsRequestServiceResourceTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateTagsRequestServiceResourceTypeDef
+```
+
+Required fields:
+
+- `Resources`: `List`\[`str`\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## CreateTagsRequestSnapshotTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateTagsRequestSnapshotTypeDef
+```
+
+Required fields:
+
+- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## CreateTagsRequestSubnetTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateTagsRequestSubnetTypeDef
+```
+
+Required fields:
+
+- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## CreateTagsRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateTagsRequestTypeDef
+```
+
+Required fields:
+
+- `Resources`: `List`\[`Any`\]
+- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## CreateTagsRequestVolumeTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateTagsRequestVolumeTypeDef
+```
+
+Required fields:
+
+- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## CreateTagsRequestVpcTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateTagsRequestVpcTypeDef
+```
+
+Required fields:
+
+- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## CreateTrafficMirrorFilterRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateTrafficMirrorFilterRequestTypeDef
 ```
 
 Optional fields:
+
+- `Description`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+- `ClientToken`: `str`
+
+## CreateTrafficMirrorFilterResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateTrafficMirrorFilterResultResponseTypeDef
+```
+
+Required fields:
 
 - `TrafficMirrorFilter`:
   [TrafficMirrorFilterTypeDef](./type_defs.md#trafficmirrorfiltertypedef)
 - `ClientToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTrafficMirrorFilterRuleResultTypeDef
+## CreateTrafficMirrorFilterRuleRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateTrafficMirrorFilterRuleResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateTrafficMirrorFilterRuleRequestTypeDef
 ```
 
+Required fields:
+
+- `TrafficMirrorFilterId`: `str`
+- `TrafficDirection`:
+  [TrafficDirectionType](./literals.md#trafficdirectiontype)
+- `RuleNumber`: `int`
+- `RuleAction`:
+  [TrafficMirrorRuleActionType](./literals.md#trafficmirrorruleactiontype)
+- `DestinationCidrBlock`: `str`
+- `SourceCidrBlock`: `str`
+
 Optional fields:
+
+- `DestinationPortRange`:
+  [TrafficMirrorPortRangeRequestTypeDef](./type_defs.md#trafficmirrorportrangerequesttypedef)
+- `SourcePortRange`:
+  [TrafficMirrorPortRangeRequestTypeDef](./type_defs.md#trafficmirrorportrangerequesttypedef)
+- `Protocol`: `int`
+- `Description`: `str`
+- `DryRun`: `bool`
+- `ClientToken`: `str`
+
+## CreateTrafficMirrorFilterRuleResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateTrafficMirrorFilterRuleResultResponseTypeDef
+```
+
+Required fields:
 
 - `TrafficMirrorFilterRule`:
   [TrafficMirrorFilterRuleTypeDef](./type_defs.md#trafficmirrorfilterruletypedef)
 - `ClientToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTrafficMirrorSessionResultTypeDef
+## CreateTrafficMirrorSessionRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateTrafficMirrorSessionResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateTrafficMirrorSessionRequestTypeDef
 ```
 
+Required fields:
+
+- `NetworkInterfaceId`: `str`
+- `TrafficMirrorTargetId`: `str`
+- `TrafficMirrorFilterId`: `str`
+- `SessionNumber`: `int`
+
 Optional fields:
+
+- `PacketLength`: `int`
+- `VirtualNetworkId`: `int`
+- `Description`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+- `ClientToken`: `str`
+
+## CreateTrafficMirrorSessionResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateTrafficMirrorSessionResultResponseTypeDef
+```
+
+Required fields:
 
 - `TrafficMirrorSession`:
   [TrafficMirrorSessionTypeDef](./type_defs.md#trafficmirrorsessiontypedef)
 - `ClientToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTrafficMirrorTargetResultTypeDef
+## CreateTrafficMirrorTargetRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateTrafficMirrorTargetResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateTrafficMirrorTargetRequestTypeDef
 ```
 
 Optional fields:
+
+- `NetworkInterfaceId`: `str`
+- `NetworkLoadBalancerArn`: `str`
+- `Description`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+- `ClientToken`: `str`
+
+## CreateTrafficMirrorTargetResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateTrafficMirrorTargetResultResponseTypeDef
+```
+
+Required fields:
 
 - `TrafficMirrorTarget`:
   [TrafficMirrorTargetTypeDef](./type_defs.md#trafficmirrortargettypedef)
 - `ClientToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTransitGatewayConnectPeerResultTypeDef
+## CreateTransitGatewayConnectPeerRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateTransitGatewayConnectPeerResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateTransitGatewayConnectPeerRequestTypeDef
 ```
+
+Required fields:
+
+- `TransitGatewayAttachmentId`: `str`
+- `PeerAddress`: `str`
+- `InsideCidrBlocks`: `List`\[`str`\]
 
 Optional fields:
 
+- `TransitGatewayAddress`: `str`
+- `BgpOptions`:
+  [TransitGatewayConnectRequestBgpOptionsTypeDef](./type_defs.md#transitgatewayconnectrequestbgpoptionstypedef)
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+## CreateTransitGatewayConnectPeerResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateTransitGatewayConnectPeerResultResponseTypeDef
+```
+
+Required fields:
+
 - `TransitGatewayConnectPeer`:
   [TransitGatewayConnectPeerTypeDef](./type_defs.md#transitgatewayconnectpeertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateTransitGatewayConnectRequestOptionsTypeDef
 
@@ -2856,16 +5955,36 @@ Required fields:
 - `Protocol`: `Literal['gre']` (see
   [ProtocolValueType](./literals.md#protocolvaluetype))
 
-## CreateTransitGatewayConnectResultTypeDef
+## CreateTransitGatewayConnectRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateTransitGatewayConnectResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateTransitGatewayConnectRequestTypeDef
 ```
+
+Required fields:
+
+- `TransportTransitGatewayAttachmentId`: `str`
+- `Options`:
+  [CreateTransitGatewayConnectRequestOptionsTypeDef](./type_defs.md#createtransitgatewayconnectrequestoptionstypedef)
 
 Optional fields:
 
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+## CreateTransitGatewayConnectResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateTransitGatewayConnectResultResponseTypeDef
+```
+
+Required fields:
+
 - `TransitGatewayConnect`:
   [TransitGatewayConnectTypeDef](./type_defs.md#transitgatewayconnecttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateTransitGatewayMulticastDomainRequestOptionsTypeDef
 
@@ -2882,71 +6001,185 @@ Optional fields:
 - `AutoAcceptSharedAssociations`:
   [AutoAcceptSharedAssociationsValueType](./literals.md#autoacceptsharedassociationsvaluetype)
 
-## CreateTransitGatewayMulticastDomainResultTypeDef
+## CreateTransitGatewayMulticastDomainRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateTransitGatewayMulticastDomainResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateTransitGatewayMulticastDomainRequestTypeDef
 ```
 
+Required fields:
+
+- `TransitGatewayId`: `str`
+
 Optional fields:
+
+- `Options`:
+  [CreateTransitGatewayMulticastDomainRequestOptionsTypeDef](./type_defs.md#createtransitgatewaymulticastdomainrequestoptionstypedef)
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+## CreateTransitGatewayMulticastDomainResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateTransitGatewayMulticastDomainResultResponseTypeDef
+```
+
+Required fields:
 
 - `TransitGatewayMulticastDomain`:
   [TransitGatewayMulticastDomainTypeDef](./type_defs.md#transitgatewaymulticastdomaintypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTransitGatewayPeeringAttachmentResultTypeDef
+## CreateTransitGatewayPeeringAttachmentRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateTransitGatewayPeeringAttachmentResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateTransitGatewayPeeringAttachmentRequestTypeDef
 ```
 
+Required fields:
+
+- `TransitGatewayId`: `str`
+- `PeerTransitGatewayId`: `str`
+- `PeerAccountId`: `str`
+- `PeerRegion`: `str`
+
 Optional fields:
+
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+## CreateTransitGatewayPeeringAttachmentResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateTransitGatewayPeeringAttachmentResultResponseTypeDef
+```
+
+Required fields:
 
 - `TransitGatewayPeeringAttachment`:
   [TransitGatewayPeeringAttachmentTypeDef](./type_defs.md#transitgatewaypeeringattachmenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTransitGatewayPrefixListReferenceResultTypeDef
+## CreateTransitGatewayPrefixListReferenceRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateTransitGatewayPrefixListReferenceResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateTransitGatewayPrefixListReferenceRequestTypeDef
 ```
 
+Required fields:
+
+- `TransitGatewayRouteTableId`: `str`
+- `PrefixListId`: `str`
+
 Optional fields:
+
+- `TransitGatewayAttachmentId`: `str`
+- `Blackhole`: `bool`
+- `DryRun`: `bool`
+
+## CreateTransitGatewayPrefixListReferenceResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateTransitGatewayPrefixListReferenceResultResponseTypeDef
+```
+
+Required fields:
 
 - `TransitGatewayPrefixListReference`:
   [TransitGatewayPrefixListReferenceTypeDef](./type_defs.md#transitgatewayprefixlistreferencetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTransitGatewayResultTypeDef
+## CreateTransitGatewayRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateTransitGatewayResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateTransitGatewayRequestTypeDef
 ```
 
 Optional fields:
+
+- `Description`: `str`
+- `Options`:
+  [TransitGatewayRequestOptionsTypeDef](./type_defs.md#transitgatewayrequestoptionstypedef)
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+## CreateTransitGatewayResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateTransitGatewayResultResponseTypeDef
+```
+
+Required fields:
 
 - `TransitGateway`:
   [TransitGatewayTypeDef](./type_defs.md#transitgatewaytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTransitGatewayRouteResultTypeDef
+## CreateTransitGatewayRouteRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateTransitGatewayRouteResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateTransitGatewayRouteRequestTypeDef
 ```
 
+Required fields:
+
+- `DestinationCidrBlock`: `str`
+- `TransitGatewayRouteTableId`: `str`
+
 Optional fields:
+
+- `TransitGatewayAttachmentId`: `str`
+- `Blackhole`: `bool`
+- `DryRun`: `bool`
+
+## CreateTransitGatewayRouteResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateTransitGatewayRouteResultResponseTypeDef
+```
+
+Required fields:
 
 - `Route`:
   [TransitGatewayRouteTypeDef](./type_defs.md#transitgatewayroutetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTransitGatewayRouteTableResultTypeDef
+## CreateTransitGatewayRouteTableRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateTransitGatewayRouteTableResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateTransitGatewayRouteTableRequestTypeDef
 ```
+
+Required fields:
+
+- `TransitGatewayId`: `str`
 
 Optional fields:
 
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+## CreateTransitGatewayRouteTableResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateTransitGatewayRouteTableResultResponseTypeDef
+```
+
+Required fields:
+
 - `TransitGatewayRouteTable`:
   [TransitGatewayRouteTableTypeDef](./type_defs.md#transitgatewayroutetabletypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateTransitGatewayVpcAttachmentRequestOptionsTypeDef
 
@@ -2961,16 +6194,38 @@ Optional fields:
 - `ApplianceModeSupport`:
   [ApplianceModeSupportValueType](./literals.md#appliancemodesupportvaluetype)
 
-## CreateTransitGatewayVpcAttachmentResultTypeDef
+## CreateTransitGatewayVpcAttachmentRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateTransitGatewayVpcAttachmentResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateTransitGatewayVpcAttachmentRequestTypeDef
 ```
+
+Required fields:
+
+- `TransitGatewayId`: `str`
+- `VpcId`: `str`
+- `SubnetIds`: `List`\[`str`\]
 
 Optional fields:
 
+- `Options`:
+  [CreateTransitGatewayVpcAttachmentRequestOptionsTypeDef](./type_defs.md#createtransitgatewayvpcattachmentrequestoptionstypedef)
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+## CreateTransitGatewayVpcAttachmentResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateTransitGatewayVpcAttachmentResultResponseTypeDef
+```
+
+Required fields:
+
 - `TransitGatewayVpcAttachment`:
   [TransitGatewayVpcAttachmentTypeDef](./type_defs.md#transitgatewayvpcattachmenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateVolumePermissionModificationsTypeDef
 
@@ -2997,81 +6252,344 @@ Optional fields:
   [PermissionGroupType](./literals.md#permissiongrouptype))
 - `UserId`: `str`
 
-## CreateVpcEndpointConnectionNotificationResultTypeDef
+## CreateVolumeRequestServiceResourceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateVpcEndpointConnectionNotificationResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateVolumeRequestServiceResourceTypeDef
 ```
 
+Required fields:
+
+- `AvailabilityZone`: `str`
+
 Optional fields:
+
+- `Encrypted`: `bool`
+- `Iops`: `int`
+- `KmsKeyId`: `str`
+- `OutpostArn`: `str`
+- `Size`: `int`
+- `SnapshotId`: `str`
+- `VolumeType`: [VolumeTypeType](./literals.md#volumetypetype)
+- `DryRun`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `MultiAttachEnabled`: `bool`
+- `Throughput`: `int`
+
+## CreateVolumeRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateVolumeRequestTypeDef
+```
+
+Required fields:
+
+- `AvailabilityZone`: `str`
+
+Optional fields:
+
+- `Encrypted`: `bool`
+- `Iops`: `int`
+- `KmsKeyId`: `str`
+- `OutpostArn`: `str`
+- `Size`: `int`
+- `SnapshotId`: `str`
+- `VolumeType`: [VolumeTypeType](./literals.md#volumetypetype)
+- `DryRun`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `MultiAttachEnabled`: `bool`
+- `Throughput`: `int`
+
+## CreateVpcEndpointConnectionNotificationRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateVpcEndpointConnectionNotificationRequestTypeDef
+```
+
+Required fields:
+
+- `ConnectionNotificationArn`: `str`
+- `ConnectionEvents`: `List`\[`str`\]
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `ServiceId`: `str`
+- `VpcEndpointId`: `str`
+- `ClientToken`: `str`
+
+## CreateVpcEndpointConnectionNotificationResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateVpcEndpointConnectionNotificationResultResponseTypeDef
+```
+
+Required fields:
 
 - `ConnectionNotification`:
   [ConnectionNotificationTypeDef](./type_defs.md#connectionnotificationtypedef)
 - `ClientToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateVpcEndpointResultTypeDef
+## CreateVpcEndpointRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateVpcEndpointResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateVpcEndpointRequestTypeDef
 ```
 
+Required fields:
+
+- `VpcId`: `str`
+- `ServiceName`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `VpcEndpointType`: [VpcEndpointTypeType](./literals.md#vpcendpointtypetype)
+- `PolicyDocument`: `str`
+- `RouteTableIds`: `List`\[`str`\]
+- `SubnetIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `List`\[`str`\]
+- `ClientToken`: `str`
+- `PrivateDnsEnabled`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## CreateVpcEndpointResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateVpcEndpointResultResponseTypeDef
+```
+
+Required fields:
 
 - `VpcEndpoint`: [VpcEndpointTypeDef](./type_defs.md#vpcendpointtypedef)
 - `ClientToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateVpcEndpointServiceConfigurationResultTypeDef
+## CreateVpcEndpointServiceConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateVpcEndpointServiceConfigurationResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateVpcEndpointServiceConfigurationRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `AcceptanceRequired`: `bool`
+- `PrivateDnsName`: `str`
+- `NetworkLoadBalancerArns`: `List`\[`str`\]
+- `GatewayLoadBalancerArns`: `List`\[`str`\]
+- `ClientToken`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## CreateVpcEndpointServiceConfigurationResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateVpcEndpointServiceConfigurationResultResponseTypeDef
+```
+
+Required fields:
 
 - `ServiceConfiguration`:
   [ServiceConfigurationTypeDef](./type_defs.md#serviceconfigurationtypedef)
 - `ClientToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateVpcPeeringConnectionResultTypeDef
+## CreateVpcPeeringConnectionRequestServiceResourceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateVpcPeeringConnectionResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateVpcPeeringConnectionRequestServiceResourceTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `PeerOwnerId`: `str`
+- `PeerVpcId`: `str`
+- `VpcId`: `str`
+- `PeerRegion`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## CreateVpcPeeringConnectionRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateVpcPeeringConnectionRequestTypeDef
+```
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `PeerOwnerId`: `str`
+- `PeerVpcId`: `str`
+- `VpcId`: `str`
+- `PeerRegion`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## CreateVpcPeeringConnectionRequestVpcTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateVpcPeeringConnectionRequestVpcTypeDef
+```
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `PeerOwnerId`: `str`
+- `PeerVpcId`: `str`
+- `PeerRegion`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## CreateVpcPeeringConnectionResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateVpcPeeringConnectionResultResponseTypeDef
+```
+
+Required fields:
 
 - `VpcPeeringConnection`:
   [VpcPeeringConnectionTypeDef](./type_defs.md#vpcpeeringconnectiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateVpcResultTypeDef
+## CreateVpcRequestServiceResourceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateVpcResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateVpcRequestServiceResourceTypeDef
 ```
 
+Required fields:
+
+- `CidrBlock`: `str`
+
 Optional fields:
+
+- `AmazonProvidedIpv6CidrBlock`: `bool`
+- `Ipv6Pool`: `str`
+- `Ipv6CidrBlock`: `str`
+- `DryRun`: `bool`
+- `InstanceTenancy`: [TenancyType](./literals.md#tenancytype)
+- `Ipv6CidrBlockNetworkBorderGroup`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## CreateVpcRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateVpcRequestTypeDef
+```
+
+Required fields:
+
+- `CidrBlock`: `str`
+
+Optional fields:
+
+- `AmazonProvidedIpv6CidrBlock`: `bool`
+- `Ipv6Pool`: `str`
+- `Ipv6CidrBlock`: `str`
+- `DryRun`: `bool`
+- `InstanceTenancy`: [TenancyType](./literals.md#tenancytype)
+- `Ipv6CidrBlockNetworkBorderGroup`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## CreateVpcResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateVpcResultResponseTypeDef
+```
+
+Required fields:
 
 - `Vpc`: [VpcTypeDef](./type_defs.md#vpctypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateVpnConnectionResultTypeDef
+## CreateVpnConnectionRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateVpnConnectionResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateVpnConnectionRequestTypeDef
 ```
 
+Required fields:
+
+- `CustomerGatewayId`: `str`
+- `Type`: `str`
+
 Optional fields:
+
+- `VpnGatewayId`: `str`
+- `TransitGatewayId`: `str`
+- `DryRun`: `bool`
+- `Options`:
+  [VpnConnectionOptionsSpecificationTypeDef](./type_defs.md#vpnconnectionoptionsspecificationtypedef)
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## CreateVpnConnectionResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateVpnConnectionResultResponseTypeDef
+```
+
+Required fields:
 
 - `VpnConnection`: [VpnConnectionTypeDef](./type_defs.md#vpnconnectiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateVpnGatewayResultTypeDef
+## CreateVpnConnectionRouteRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import CreateVpnGatewayResultTypeDef
+from mypy_boto3_ec2.type_defs import CreateVpnConnectionRouteRequestTypeDef
 ```
+
+Required fields:
+
+- `DestinationCidrBlock`: `str`
+- `VpnConnectionId`: `str`
+
+## CreateVpnGatewayRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateVpnGatewayRequestTypeDef
+```
+
+Required fields:
+
+- `Type`: `Literal['ipsec.1']` (see
+  [GatewayTypeType](./literals.md#gatewaytypetype))
 
 Optional fields:
 
+- `AvailabilityZone`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `AmazonSideAsn`: `int`
+- `DryRun`: `bool`
+
+## CreateVpnGatewayResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateVpnGatewayResultResponseTypeDef
+```
+
+Required fields:
+
 - `VpnGateway`: [VpnGatewayTypeDef](./type_defs.md#vpngatewaytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreditSpecificationRequestTypeDef
 
@@ -3110,48 +6628,152 @@ Optional fields:
 - `DeviceName`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## DeleteCarrierGatewayResultTypeDef
+## DeleteCarrierGatewayRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteCarrierGatewayResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteCarrierGatewayRequestTypeDef
 ```
 
+Required fields:
+
+- `CarrierGatewayId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteCarrierGatewayResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteCarrierGatewayResultResponseTypeDef
+```
+
+Required fields:
 
 - `CarrierGateway`:
   [CarrierGatewayTypeDef](./type_defs.md#carriergatewaytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteClientVpnEndpointResultTypeDef
+## DeleteClientVpnEndpointRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteClientVpnEndpointResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteClientVpnEndpointRequestTypeDef
 ```
 
+Required fields:
+
+- `ClientVpnEndpointId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteClientVpnEndpointResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteClientVpnEndpointResultResponseTypeDef
+```
+
+Required fields:
 
 - `Status`:
   [ClientVpnEndpointStatusTypeDef](./type_defs.md#clientvpnendpointstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteClientVpnRouteResultTypeDef
+## DeleteClientVpnRouteRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteClientVpnRouteResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteClientVpnRouteRequestTypeDef
 ```
 
+Required fields:
+
+- `ClientVpnEndpointId`: `str`
+- `DestinationCidrBlock`: `str`
+
 Optional fields:
+
+- `TargetVpcSubnetId`: `str`
+- `DryRun`: `bool`
+
+## DeleteClientVpnRouteResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteClientVpnRouteResultResponseTypeDef
+```
+
+Required fields:
 
 - `Status`:
   [ClientVpnRouteStatusTypeDef](./type_defs.md#clientvpnroutestatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteEgressOnlyInternetGatewayResultTypeDef
+## DeleteCustomerGatewayRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteEgressOnlyInternetGatewayResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteCustomerGatewayRequestTypeDef
+```
+
+Required fields:
+
+- `CustomerGatewayId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteDhcpOptionsRequestDhcpOptionsTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteDhcpOptionsRequestDhcpOptionsTypeDef
 ```
 
 Optional fields:
 
+- `DryRun`: `bool`
+
+## DeleteDhcpOptionsRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteDhcpOptionsRequestTypeDef
+```
+
+Required fields:
+
+- `DhcpOptionsId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteEgressOnlyInternetGatewayRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteEgressOnlyInternetGatewayRequestTypeDef
+```
+
+Required fields:
+
+- `EgressOnlyInternetGatewayId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteEgressOnlyInternetGatewayResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteEgressOnlyInternetGatewayResultResponseTypeDef
+```
+
+Required fields:
+
 - `ReturnCode`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DeleteFleetErrorItemTypeDef
 
@@ -3187,50 +6809,187 @@ Optional fields:
 - `PreviousFleetState`: [FleetStateCodeType](./literals.md#fleetstatecodetype)
 - `FleetId`: `str`
 
-## DeleteFleetsResultTypeDef
+## DeleteFleetsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteFleetsResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteFleetsRequestTypeDef
 ```
 
+Required fields:
+
+- `FleetIds`: `List`\[`str`\]
+- `TerminateInstances`: `bool`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteFleetsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteFleetsResultResponseTypeDef
+```
+
+Required fields:
 
 - `SuccessfulFleetDeletions`:
   `List`\[[DeleteFleetSuccessItemTypeDef](./type_defs.md#deletefleetsuccessitemtypedef)\]
 - `UnsuccessfulFleetDeletions`:
   `List`\[[DeleteFleetErrorItemTypeDef](./type_defs.md#deletefleeterroritemtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteFlowLogsResultTypeDef
+## DeleteFlowLogsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteFlowLogsResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteFlowLogsRequestTypeDef
 ```
 
+Required fields:
+
+- `FlowLogIds`: `List`\[`str`\]
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteFlowLogsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteFlowLogsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Unsuccessful`:
   `List`\[[UnsuccessfulItemTypeDef](./type_defs.md#unsuccessfulitemtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteFpgaImageResultTypeDef
+## DeleteFpgaImageRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteFpgaImageResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteFpgaImageRequestTypeDef
 ```
 
+Required fields:
+
+- `FpgaImageId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteFpgaImageResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteFpgaImageResultResponseTypeDef
+```
+
+Required fields:
 
 - `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteLaunchTemplateResultTypeDef
+## DeleteInternetGatewayRequestInternetGatewayTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteLaunchTemplateResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteInternetGatewayRequestInternetGatewayTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteInternetGatewayRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteInternetGatewayRequestTypeDef
+```
+
+Required fields:
+
+- `InternetGatewayId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteKeyPairRequestKeyPairInfoTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteKeyPairRequestKeyPairInfoTypeDef
+```
+
+Optional fields:
+
+- `KeyPairId`: `str`
+- `DryRun`: `bool`
+
+## DeleteKeyPairRequestKeyPairTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteKeyPairRequestKeyPairTypeDef
+```
+
+Optional fields:
+
+- `KeyPairId`: `str`
+- `DryRun`: `bool`
+
+## DeleteKeyPairRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteKeyPairRequestTypeDef
+```
+
+Optional fields:
+
+- `KeyName`: `str`
+- `KeyPairId`: `str`
+- `DryRun`: `bool`
+
+## DeleteLaunchTemplateRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteLaunchTemplateRequestTypeDef
+```
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `LaunchTemplateId`: `str`
+- `LaunchTemplateName`: `str`
+
+## DeleteLaunchTemplateResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteLaunchTemplateResultResponseTypeDef
+```
+
+Required fields:
 
 - `LaunchTemplate`:
   [LaunchTemplateTypeDef](./type_defs.md#launchtemplatetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteLaunchTemplateVersionsRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteLaunchTemplateVersionsRequestTypeDef
+```
+
+Required fields:
+
+- `Versions`: `List`\[`str`\]
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `LaunchTemplateId`: `str`
+- `LaunchTemplateName`: `str`
 
 ## DeleteLaunchTemplateVersionsResponseErrorItemTypeDef
 
@@ -3257,90 +7016,309 @@ Optional fields:
 - `LaunchTemplateName`: `str`
 - `VersionNumber`: `int`
 
-## DeleteLaunchTemplateVersionsResultTypeDef
+## DeleteLaunchTemplateVersionsResultResponseTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteLaunchTemplateVersionsResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteLaunchTemplateVersionsResultResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `SuccessfullyDeletedLaunchTemplateVersions`:
   `List`\[[DeleteLaunchTemplateVersionsResponseSuccessItemTypeDef](./type_defs.md#deletelaunchtemplateversionsresponsesuccessitemtypedef)\]
 - `UnsuccessfullyDeletedLaunchTemplateVersions`:
   `List`\[[DeleteLaunchTemplateVersionsResponseErrorItemTypeDef](./type_defs.md#deletelaunchtemplateversionsresponseerroritemtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteLocalGatewayRouteResultTypeDef
+## DeleteLocalGatewayRouteRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteLocalGatewayRouteResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteLocalGatewayRouteRequestTypeDef
 ```
 
+Required fields:
+
+- `DestinationCidrBlock`: `str`
+- `LocalGatewayRouteTableId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteLocalGatewayRouteResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteLocalGatewayRouteResultResponseTypeDef
+```
+
+Required fields:
 
 - `Route`: [LocalGatewayRouteTypeDef](./type_defs.md#localgatewayroutetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteLocalGatewayRouteTableVpcAssociationResultTypeDef
+## DeleteLocalGatewayRouteTableVpcAssociationRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteLocalGatewayRouteTableVpcAssociationResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteLocalGatewayRouteTableVpcAssociationRequestTypeDef
 ```
 
+Required fields:
+
+- `LocalGatewayRouteTableVpcAssociationId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteLocalGatewayRouteTableVpcAssociationResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteLocalGatewayRouteTableVpcAssociationResultResponseTypeDef
+```
+
+Required fields:
 
 - `LocalGatewayRouteTableVpcAssociation`:
   [LocalGatewayRouteTableVpcAssociationTypeDef](./type_defs.md#localgatewayroutetablevpcassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteManagedPrefixListResultTypeDef
+## DeleteManagedPrefixListRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteManagedPrefixListResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteManagedPrefixListRequestTypeDef
 ```
 
+Required fields:
+
+- `PrefixListId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteManagedPrefixListResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteManagedPrefixListResultResponseTypeDef
+```
+
+Required fields:
 
 - `PrefixList`:
   [ManagedPrefixListTypeDef](./type_defs.md#managedprefixlisttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteNatGatewayResultTypeDef
+## DeleteNatGatewayRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteNatGatewayResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteNatGatewayRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `NatGatewayId`: `str`
 
-## DeleteNetworkInsightsAnalysisResultTypeDef
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteNatGatewayResultResponseTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteNetworkInsightsAnalysisResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteNatGatewayResultResponseTypeDef
+```
+
+Required fields:
+
+- `NatGatewayId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteNetworkAclEntryRequestNetworkAclTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteNetworkAclEntryRequestNetworkAclTypeDef
+```
+
+Required fields:
+
+- `Egress`: `bool`
+- `RuleNumber`: `int`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteNetworkAclEntryRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteNetworkAclEntryRequestTypeDef
+```
+
+Required fields:
+
+- `Egress`: `bool`
+- `NetworkAclId`: `str`
+- `RuleNumber`: `int`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteNetworkAclRequestNetworkAclTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteNetworkAclRequestNetworkAclTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteNetworkAclRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteNetworkAclRequestTypeDef
+```
+
+Required fields:
+
+- `NetworkAclId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteNetworkInsightsAnalysisRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteNetworkInsightsAnalysisRequestTypeDef
+```
+
+Required fields:
 
 - `NetworkInsightsAnalysisId`: `str`
 
-## DeleteNetworkInsightsPathResultTypeDef
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteNetworkInsightsAnalysisResultResponseTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteNetworkInsightsPathResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteNetworkInsightsAnalysisResultResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `NetworkInsightsAnalysisId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteNetworkInsightsPathRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteNetworkInsightsPathRequestTypeDef
+```
+
+Required fields:
 
 - `NetworkInsightsPathId`: `str`
 
-## DeleteNetworkInterfacePermissionResultTypeDef
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteNetworkInsightsPathResultResponseTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteNetworkInterfacePermissionResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteNetworkInsightsPathResultResponseTypeDef
+```
+
+Required fields:
+
+- `NetworkInsightsPathId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteNetworkInterfacePermissionRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteNetworkInterfacePermissionRequestTypeDef
+```
+
+Required fields:
+
+- `NetworkInterfacePermissionId`: `str`
+
+Optional fields:
+
+- `Force`: `bool`
+- `DryRun`: `bool`
+
+## DeleteNetworkInterfacePermissionResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteNetworkInterfacePermissionResultResponseTypeDef
+```
+
+Required fields:
+
+- `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteNetworkInterfaceRequestNetworkInterfaceTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteNetworkInterfaceRequestNetworkInterfaceTypeDef
 ```
 
 Optional fields:
 
-- `Return`: `bool`
+- `DryRun`: `bool`
+
+## DeleteNetworkInterfaceRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteNetworkInterfaceRequestTypeDef
+```
+
+Required fields:
+
+- `NetworkInterfaceId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeletePlacementGroupRequestPlacementGroupTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeletePlacementGroupRequestPlacementGroupTypeDef
+```
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeletePlacementGroupRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeletePlacementGroupRequestTypeDef
+```
+
+Required fields:
+
+- `GroupName`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
 
 ## DeleteQueuedReservedInstancesErrorTypeDef
 
@@ -3354,221 +7332,821 @@ Optional fields:
   [DeleteQueuedReservedInstancesErrorCodeType](./literals.md#deletequeuedreservedinstanceserrorcodetype)
 - `Message`: `str`
 
-## DeleteQueuedReservedInstancesResultTypeDef
+## DeleteQueuedReservedInstancesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteQueuedReservedInstancesResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteQueuedReservedInstancesRequestTypeDef
 ```
 
+Required fields:
+
+- `ReservedInstancesIds`: `List`\[`str`\]
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteQueuedReservedInstancesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteQueuedReservedInstancesResultResponseTypeDef
+```
+
+Required fields:
 
 - `SuccessfulQueuedPurchaseDeletions`:
   `List`\[[SuccessfulQueuedPurchaseDeletionTypeDef](./type_defs.md#successfulqueuedpurchasedeletiontypedef)\]
 - `FailedQueuedPurchaseDeletions`:
   `List`\[[FailedQueuedPurchaseDeletionTypeDef](./type_defs.md#failedqueuedpurchasedeletiontypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteTrafficMirrorFilterResultTypeDef
+## DeleteRouteRequestRouteTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteTrafficMirrorFilterResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteRouteRequestRouteTypeDef
 ```
 
 Optional fields:
+
+- `DestinationIpv6CidrBlock`: `str`
+- `DestinationPrefixListId`: `str`
+- `DryRun`: `bool`
+
+## DeleteRouteRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteRouteRequestTypeDef
+```
+
+Required fields:
+
+- `RouteTableId`: `str`
+
+Optional fields:
+
+- `DestinationCidrBlock`: `str`
+- `DestinationIpv6CidrBlock`: `str`
+- `DestinationPrefixListId`: `str`
+- `DryRun`: `bool`
+
+## DeleteRouteTableRequestRouteTableTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteRouteTableRequestRouteTableTypeDef
+```
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteRouteTableRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteRouteTableRequestTypeDef
+```
+
+Required fields:
+
+- `RouteTableId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteSecurityGroupRequestSecurityGroupTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteSecurityGroupRequestSecurityGroupTypeDef
+```
+
+Optional fields:
+
+- `GroupName`: `str`
+- `DryRun`: `bool`
+
+## DeleteSecurityGroupRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteSecurityGroupRequestTypeDef
+```
+
+Optional fields:
+
+- `GroupId`: `str`
+- `GroupName`: `str`
+- `DryRun`: `bool`
+
+## DeleteSnapshotRequestSnapshotTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteSnapshotRequestSnapshotTypeDef
+```
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteSnapshotRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteSnapshotRequestTypeDef
+```
+
+Required fields:
+
+- `SnapshotId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteSpotDatafeedSubscriptionRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteSpotDatafeedSubscriptionRequestTypeDef
+```
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteSubnetRequestSubnetTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteSubnetRequestSubnetTypeDef
+```
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteSubnetRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteSubnetRequestTypeDef
+```
+
+Required fields:
+
+- `SubnetId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteTagsRequestTagTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteTagsRequestTagTypeDef
+```
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteTagsRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteTagsRequestTypeDef
+```
+
+Required fields:
+
+- `Resources`: `List`\[`Any`\]
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+
+## DeleteTrafficMirrorFilterRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteTrafficMirrorFilterRequestTypeDef
+```
+
+Required fields:
 
 - `TrafficMirrorFilterId`: `str`
 
-## DeleteTrafficMirrorFilterRuleResultTypeDef
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteTrafficMirrorFilterResultResponseTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteTrafficMirrorFilterRuleResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteTrafficMirrorFilterResultResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `TrafficMirrorFilterId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteTrafficMirrorFilterRuleRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteTrafficMirrorFilterRuleRequestTypeDef
+```
+
+Required fields:
 
 - `TrafficMirrorFilterRuleId`: `str`
 
-## DeleteTrafficMirrorSessionResultTypeDef
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteTrafficMirrorFilterRuleResultResponseTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteTrafficMirrorSessionResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteTrafficMirrorFilterRuleResultResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `TrafficMirrorFilterRuleId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteTrafficMirrorSessionRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteTrafficMirrorSessionRequestTypeDef
+```
+
+Required fields:
 
 - `TrafficMirrorSessionId`: `str`
 
-## DeleteTrafficMirrorTargetResultTypeDef
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteTrafficMirrorSessionResultResponseTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteTrafficMirrorTargetResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteTrafficMirrorSessionResultResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `TrafficMirrorSessionId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteTrafficMirrorTargetRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteTrafficMirrorTargetRequestTypeDef
+```
+
+Required fields:
 
 - `TrafficMirrorTargetId`: `str`
 
-## DeleteTransitGatewayConnectPeerResultTypeDef
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteTrafficMirrorTargetResultResponseTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteTransitGatewayConnectPeerResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteTrafficMirrorTargetResultResponseTypeDef
 ```
 
+Required fields:
+
+- `TrafficMirrorTargetId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteTransitGatewayConnectPeerRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteTransitGatewayConnectPeerRequestTypeDef
+```
+
+Required fields:
+
+- `TransitGatewayConnectPeerId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteTransitGatewayConnectPeerResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteTransitGatewayConnectPeerResultResponseTypeDef
+```
+
+Required fields:
 
 - `TransitGatewayConnectPeer`:
   [TransitGatewayConnectPeerTypeDef](./type_defs.md#transitgatewayconnectpeertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteTransitGatewayConnectResultTypeDef
+## DeleteTransitGatewayConnectRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteTransitGatewayConnectResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteTransitGatewayConnectRequestTypeDef
 ```
 
+Required fields:
+
+- `TransitGatewayAttachmentId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteTransitGatewayConnectResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteTransitGatewayConnectResultResponseTypeDef
+```
+
+Required fields:
 
 - `TransitGatewayConnect`:
   [TransitGatewayConnectTypeDef](./type_defs.md#transitgatewayconnecttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteTransitGatewayMulticastDomainResultTypeDef
+## DeleteTransitGatewayMulticastDomainRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteTransitGatewayMulticastDomainResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteTransitGatewayMulticastDomainRequestTypeDef
 ```
 
+Required fields:
+
+- `TransitGatewayMulticastDomainId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteTransitGatewayMulticastDomainResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteTransitGatewayMulticastDomainResultResponseTypeDef
+```
+
+Required fields:
 
 - `TransitGatewayMulticastDomain`:
   [TransitGatewayMulticastDomainTypeDef](./type_defs.md#transitgatewaymulticastdomaintypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteTransitGatewayPeeringAttachmentResultTypeDef
+## DeleteTransitGatewayPeeringAttachmentRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteTransitGatewayPeeringAttachmentResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteTransitGatewayPeeringAttachmentRequestTypeDef
 ```
 
+Required fields:
+
+- `TransitGatewayAttachmentId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteTransitGatewayPeeringAttachmentResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteTransitGatewayPeeringAttachmentResultResponseTypeDef
+```
+
+Required fields:
 
 - `TransitGatewayPeeringAttachment`:
   [TransitGatewayPeeringAttachmentTypeDef](./type_defs.md#transitgatewaypeeringattachmenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteTransitGatewayPrefixListReferenceResultTypeDef
+## DeleteTransitGatewayPrefixListReferenceRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteTransitGatewayPrefixListReferenceResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteTransitGatewayPrefixListReferenceRequestTypeDef
 ```
 
+Required fields:
+
+- `TransitGatewayRouteTableId`: `str`
+- `PrefixListId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteTransitGatewayPrefixListReferenceResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteTransitGatewayPrefixListReferenceResultResponseTypeDef
+```
+
+Required fields:
 
 - `TransitGatewayPrefixListReference`:
   [TransitGatewayPrefixListReferenceTypeDef](./type_defs.md#transitgatewayprefixlistreferencetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteTransitGatewayResultTypeDef
+## DeleteTransitGatewayRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteTransitGatewayResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteTransitGatewayRequestTypeDef
 ```
 
+Required fields:
+
+- `TransitGatewayId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteTransitGatewayResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteTransitGatewayResultResponseTypeDef
+```
+
+Required fields:
 
 - `TransitGateway`:
   [TransitGatewayTypeDef](./type_defs.md#transitgatewaytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteTransitGatewayRouteResultTypeDef
+## DeleteTransitGatewayRouteRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteTransitGatewayRouteResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteTransitGatewayRouteRequestTypeDef
 ```
 
+Required fields:
+
+- `TransitGatewayRouteTableId`: `str`
+- `DestinationCidrBlock`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteTransitGatewayRouteResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteTransitGatewayRouteResultResponseTypeDef
+```
+
+Required fields:
 
 - `Route`:
   [TransitGatewayRouteTypeDef](./type_defs.md#transitgatewayroutetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteTransitGatewayRouteTableResultTypeDef
+## DeleteTransitGatewayRouteTableRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteTransitGatewayRouteTableResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteTransitGatewayRouteTableRequestTypeDef
 ```
 
+Required fields:
+
+- `TransitGatewayRouteTableId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteTransitGatewayRouteTableResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteTransitGatewayRouteTableResultResponseTypeDef
+```
+
+Required fields:
 
 - `TransitGatewayRouteTable`:
   [TransitGatewayRouteTableTypeDef](./type_defs.md#transitgatewayroutetabletypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteTransitGatewayVpcAttachmentResultTypeDef
+## DeleteTransitGatewayVpcAttachmentRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteTransitGatewayVpcAttachmentResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteTransitGatewayVpcAttachmentRequestTypeDef
 ```
 
+Required fields:
+
+- `TransitGatewayAttachmentId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteTransitGatewayVpcAttachmentResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteTransitGatewayVpcAttachmentResultResponseTypeDef
+```
+
+Required fields:
 
 - `TransitGatewayVpcAttachment`:
   [TransitGatewayVpcAttachmentTypeDef](./type_defs.md#transitgatewayvpcattachmenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteVpcEndpointConnectionNotificationsResultTypeDef
+## DeleteVolumeRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteVpcEndpointConnectionNotificationsResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteVolumeRequestTypeDef
+```
+
+Required fields:
+
+- `VolumeId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteVolumeRequestVolumeTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteVolumeRequestVolumeTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteVpcEndpointConnectionNotificationsRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteVpcEndpointConnectionNotificationsRequestTypeDef
+```
+
+Required fields:
+
+- `ConnectionNotificationIds`: `List`\[`str`\]
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteVpcEndpointConnectionNotificationsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteVpcEndpointConnectionNotificationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Unsuccessful`:
   `List`\[[UnsuccessfulItemTypeDef](./type_defs.md#unsuccessfulitemtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteVpcEndpointServiceConfigurationsResultTypeDef
+## DeleteVpcEndpointServiceConfigurationsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteVpcEndpointServiceConfigurationsResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteVpcEndpointServiceConfigurationsRequestTypeDef
 ```
 
+Required fields:
+
+- `ServiceIds`: `List`\[`str`\]
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteVpcEndpointServiceConfigurationsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteVpcEndpointServiceConfigurationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Unsuccessful`:
   `List`\[[UnsuccessfulItemTypeDef](./type_defs.md#unsuccessfulitemtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteVpcEndpointsResultTypeDef
+## DeleteVpcEndpointsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteVpcEndpointsResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteVpcEndpointsRequestTypeDef
 ```
 
+Required fields:
+
+- `VpcEndpointIds`: `List`\[`str`\]
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteVpcEndpointsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteVpcEndpointsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Unsuccessful`:
   `List`\[[UnsuccessfulItemTypeDef](./type_defs.md#unsuccessfulitemtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteVpcPeeringConnectionResultTypeDef
+## DeleteVpcPeeringConnectionRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeleteVpcPeeringConnectionResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteVpcPeeringConnectionRequestTypeDef
+```
+
+Required fields:
+
+- `VpcPeeringConnectionId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteVpcPeeringConnectionRequestVpcPeeringConnectionTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteVpcPeeringConnectionRequestVpcPeeringConnectionTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteVpcPeeringConnectionResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteVpcPeeringConnectionResultResponseTypeDef
+```
+
+Required fields:
 
 - `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeprovisionByoipCidrResultTypeDef
+## DeleteVpcRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeprovisionByoipCidrResultTypeDef
+from mypy_boto3_ec2.type_defs import DeleteVpcRequestTypeDef
+```
+
+Required fields:
+
+- `VpcId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteVpcRequestVpcTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteVpcRequestVpcTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteVpnConnectionRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteVpnConnectionRequestTypeDef
+```
+
+Required fields:
+
+- `VpnConnectionId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeleteVpnConnectionRouteRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteVpnConnectionRouteRequestTypeDef
+```
+
+Required fields:
+
+- `DestinationCidrBlock`: `str`
+- `VpnConnectionId`: `str`
+
+## DeleteVpnGatewayRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteVpnGatewayRequestTypeDef
+```
+
+Required fields:
+
+- `VpnGatewayId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeprovisionByoipCidrRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeprovisionByoipCidrRequestTypeDef
+```
+
+Required fields:
+
+- `Cidr`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeprovisionByoipCidrResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeprovisionByoipCidrResultResponseTypeDef
+```
+
+Required fields:
 
 - `ByoipCidr`: [ByoipCidrTypeDef](./type_defs.md#byoipcidrtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeregisterInstanceEventNotificationAttributesResultTypeDef
+## DeregisterImageRequestImageTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeregisterInstanceEventNotificationAttributesResultTypeDef
+from mypy_boto3_ec2.type_defs import DeregisterImageRequestImageTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DeregisterImageRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeregisterImageRequestTypeDef
+```
+
+Required fields:
+
+- `ImageId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DeregisterInstanceEventNotificationAttributesRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeregisterInstanceEventNotificationAttributesRequestTypeDef
+```
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `InstanceTagAttribute`:
+  [DeregisterInstanceTagAttributeRequestTypeDef](./type_defs.md#deregisterinstancetagattributerequesttypedef)
+
+## DeregisterInstanceEventNotificationAttributesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeregisterInstanceEventNotificationAttributesResultResponseTypeDef
+```
+
+Required fields:
 
 - `InstanceTagAttribute`:
   [InstanceTagNotificationAttributeTypeDef](./type_defs.md#instancetagnotificationattributetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DeregisterInstanceTagAttributeRequestTypeDef
 
@@ -3581,293 +8159,689 @@ Optional fields:
 - `IncludeAllTagsOfInstance`: `bool`
 - `InstanceTagKeys`: `List`\[`str`\]
 
-## DeregisterTransitGatewayMulticastGroupMembersResultTypeDef
+## DeregisterTransitGatewayMulticastGroupMembersRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeregisterTransitGatewayMulticastGroupMembersResultTypeDef
+from mypy_boto3_ec2.type_defs import DeregisterTransitGatewayMulticastGroupMembersRequestTypeDef
 ```
 
 Optional fields:
+
+- `TransitGatewayMulticastDomainId`: `str`
+- `GroupIpAddress`: `str`
+- `NetworkInterfaceIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+
+## DeregisterTransitGatewayMulticastGroupMembersResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeregisterTransitGatewayMulticastGroupMembersResultResponseTypeDef
+```
+
+Required fields:
 
 - `DeregisteredMulticastGroupMembers`:
   [TransitGatewayMulticastDeregisteredGroupMembersTypeDef](./type_defs.md#transitgatewaymulticastderegisteredgroupmemberstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeregisterTransitGatewayMulticastGroupSourcesResultTypeDef
+## DeregisterTransitGatewayMulticastGroupSourcesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DeregisterTransitGatewayMulticastGroupSourcesResultTypeDef
+from mypy_boto3_ec2.type_defs import DeregisterTransitGatewayMulticastGroupSourcesRequestTypeDef
 ```
 
 Optional fields:
+
+- `TransitGatewayMulticastDomainId`: `str`
+- `GroupIpAddress`: `str`
+- `NetworkInterfaceIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+
+## DeregisterTransitGatewayMulticastGroupSourcesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeregisterTransitGatewayMulticastGroupSourcesResultResponseTypeDef
+```
+
+Required fields:
 
 - `DeregisteredMulticastGroupSources`:
   [TransitGatewayMulticastDeregisteredGroupSourcesTypeDef](./type_defs.md#transitgatewaymulticastderegisteredgroupsourcestypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAccountAttributesResultTypeDef
+## DescribeAccountAttributesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeAccountAttributesResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeAccountAttributesRequestTypeDef
 ```
 
 Optional fields:
+
+- `AttributeNames`:
+  `List`\[[AccountAttributeNameType](./literals.md#accountattributenametype)\]
+- `DryRun`: `bool`
+
+## DescribeAccountAttributesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeAccountAttributesResultResponseTypeDef
+```
+
+Required fields:
 
 - `AccountAttributes`:
   `List`\[[AccountAttributeTypeDef](./type_defs.md#accountattributetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAddressesAttributeResultTypeDef
+## DescribeAddressesAttributeRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeAddressesAttributeResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeAddressesAttributeRequestTypeDef
 ```
 
 Optional fields:
+
+- `AllocationIds`: `List`\[`str`\]
+- `Attribute`: `Literal['domain-name']` (see
+  [AddressAttributeNameType](./literals.md#addressattributenametype))
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `DryRun`: `bool`
+
+## DescribeAddressesAttributeResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeAddressesAttributeResultResponseTypeDef
+```
+
+Required fields:
 
 - `Addresses`:
   `List`\[[AddressAttributeTypeDef](./type_defs.md#addressattributetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAddressesResultTypeDef
+## DescribeAddressesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeAddressesResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeAddressesRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `PublicIps`: `List`\[`str`\]
+- `AllocationIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+
+## DescribeAddressesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeAddressesResultResponseTypeDef
+```
+
+Required fields:
 
 - `Addresses`: `List`\[[AddressTypeDef](./type_defs.md#addresstypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAggregateIdFormatResultTypeDef
+## DescribeAggregateIdFormatRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeAggregateIdFormatResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeAggregateIdFormatRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DescribeAggregateIdFormatResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeAggregateIdFormatResultResponseTypeDef
+```
+
+Required fields:
 
 - `UseLongIdsAggregated`: `bool`
 - `Statuses`: `List`\[[IdFormatTypeDef](./type_defs.md#idformattypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAvailabilityZonesResultTypeDef
+## DescribeAvailabilityZonesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeAvailabilityZonesResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeAvailabilityZonesRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ZoneNames`: `List`\[`str`\]
+- `ZoneIds`: `List`\[`str`\]
+- `AllAvailabilityZones`: `bool`
+- `DryRun`: `bool`
+
+## DescribeAvailabilityZonesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeAvailabilityZonesResultResponseTypeDef
+```
+
+Required fields:
 
 - `AvailabilityZones`:
   `List`\[[AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeBundleTasksResultTypeDef
+## DescribeBundleTasksRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeBundleTasksResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeBundleTasksRequestTypeDef
 ```
 
 Optional fields:
+
+- `BundleIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+
+## DescribeBundleTasksResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeBundleTasksResultResponseTypeDef
+```
+
+Required fields:
 
 - `BundleTasks`:
   `List`\[[BundleTaskTypeDef](./type_defs.md#bundletasktypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeByoipCidrsResultTypeDef
+## DescribeByoipCidrsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeByoipCidrsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeByoipCidrsRequestTypeDef
 ```
 
+Required fields:
+
+- `MaxResults`: `int`
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `NextToken`: `str`
+
+## DescribeByoipCidrsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeByoipCidrsResultResponseTypeDef
+```
+
+Required fields:
 
 - `ByoipCidrs`: `List`\[[ByoipCidrTypeDef](./type_defs.md#byoipcidrtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeCapacityReservationsResultTypeDef
+## DescribeCapacityReservationsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeCapacityReservationsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeCapacityReservationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `CapacityReservationIds`: `List`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+
+## DescribeCapacityReservationsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeCapacityReservationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `CapacityReservations`:
   `List`\[[CapacityReservationTypeDef](./type_defs.md#capacityreservationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeCarrierGatewaysResultTypeDef
+## DescribeCarrierGatewaysRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeCarrierGatewaysResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeCarrierGatewaysRequestTypeDef
 ```
 
 Optional fields:
+
+- `CarrierGatewayIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## DescribeCarrierGatewaysResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeCarrierGatewaysResultResponseTypeDef
+```
+
+Required fields:
 
 - `CarrierGateways`:
   `List`\[[CarrierGatewayTypeDef](./type_defs.md#carriergatewaytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeClassicLinkInstancesResultTypeDef
+## DescribeClassicLinkInstancesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeClassicLinkInstancesResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeClassicLinkInstancesRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+- `InstanceIds`: `List`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeClassicLinkInstancesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeClassicLinkInstancesResultResponseTypeDef
+```
+
+Required fields:
 
 - `Instances`:
   `List`\[[ClassicLinkInstanceTypeDef](./type_defs.md#classiclinkinstancetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeClientVpnAuthorizationRulesResultTypeDef
+## DescribeClientVpnAuthorizationRulesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeClientVpnAuthorizationRulesResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeClientVpnAuthorizationRulesRequestTypeDef
 ```
 
+Required fields:
+
+- `ClientVpnEndpointId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `NextToken`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+
+## DescribeClientVpnAuthorizationRulesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeClientVpnAuthorizationRulesResultResponseTypeDef
+```
+
+Required fields:
 
 - `AuthorizationRules`:
   `List`\[[AuthorizationRuleTypeDef](./type_defs.md#authorizationruletypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeClientVpnConnectionsResultTypeDef
+## DescribeClientVpnConnectionsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeClientVpnConnectionsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeClientVpnConnectionsRequestTypeDef
 ```
 
+Required fields:
+
+- `ClientVpnEndpointId`: `str`
+
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `DryRun`: `bool`
+
+## DescribeClientVpnConnectionsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeClientVpnConnectionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Connections`:
   `List`\[[ClientVpnConnectionTypeDef](./type_defs.md#clientvpnconnectiontypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeClientVpnEndpointsResultTypeDef
+## DescribeClientVpnEndpointsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeClientVpnEndpointsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeClientVpnEndpointsRequestTypeDef
 ```
 
 Optional fields:
+
+- `ClientVpnEndpointIds`: `List`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+
+## DescribeClientVpnEndpointsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeClientVpnEndpointsResultResponseTypeDef
+```
+
+Required fields:
 
 - `ClientVpnEndpoints`:
   `List`\[[ClientVpnEndpointTypeDef](./type_defs.md#clientvpnendpointtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeClientVpnRoutesResultTypeDef
+## DescribeClientVpnRoutesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeClientVpnRoutesResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeClientVpnRoutesRequestTypeDef
 ```
 
+Required fields:
+
+- `ClientVpnEndpointId`: `str`
+
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## DescribeClientVpnRoutesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeClientVpnRoutesResultResponseTypeDef
+```
+
+Required fields:
 
 - `Routes`:
   `List`\[[ClientVpnRouteTypeDef](./type_defs.md#clientvpnroutetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeClientVpnTargetNetworksResultTypeDef
+## DescribeClientVpnTargetNetworksRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeClientVpnTargetNetworksResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeClientVpnTargetNetworksRequestTypeDef
 ```
 
+Required fields:
+
+- `ClientVpnEndpointId`: `str`
+
 Optional fields:
+
+- `AssociationIds`: `List`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+
+## DescribeClientVpnTargetNetworksResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeClientVpnTargetNetworksResultResponseTypeDef
+```
+
+Required fields:
 
 - `ClientVpnTargetNetworks`:
   `List`\[[TargetNetworkTypeDef](./type_defs.md#targetnetworktypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeCoipPoolsResultTypeDef
+## DescribeCoipPoolsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeCoipPoolsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeCoipPoolsRequestTypeDef
 ```
 
 Optional fields:
+
+- `PoolIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## DescribeCoipPoolsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeCoipPoolsResultResponseTypeDef
+```
+
+Required fields:
 
 - `CoipPools`: `List`\[[CoipPoolTypeDef](./type_defs.md#coippooltypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeConversionTasksResultTypeDef
+## DescribeConversionTasksRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeConversionTasksResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeConversionTasksRequestTypeDef
 ```
 
 Optional fields:
+
+- `ConversionTaskIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+
+## DescribeConversionTasksResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeConversionTasksResultResponseTypeDef
+```
+
+Required fields:
 
 - `ConversionTasks`:
   `List`\[[ConversionTaskTypeDef](./type_defs.md#conversiontasktypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeCustomerGatewaysResultTypeDef
+## DescribeCustomerGatewaysRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeCustomerGatewaysResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeCustomerGatewaysRequestTypeDef
 ```
 
 Optional fields:
+
+- `CustomerGatewayIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+
+## DescribeCustomerGatewaysResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeCustomerGatewaysResultResponseTypeDef
+```
+
+Required fields:
 
 - `CustomerGateways`:
   `List`\[[CustomerGatewayTypeDef](./type_defs.md#customergatewaytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDhcpOptionsResultTypeDef
+## DescribeDhcpOptionsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeDhcpOptionsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeDhcpOptionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `DhcpOptionsIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeDhcpOptionsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeDhcpOptionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `DhcpOptions`:
   `List`\[[DhcpOptionsTypeDef](./type_defs.md#dhcpoptionstypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEgressOnlyInternetGatewaysResultTypeDef
+## DescribeEgressOnlyInternetGatewaysRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeEgressOnlyInternetGatewaysResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeEgressOnlyInternetGatewaysRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `EgressOnlyInternetGatewayIds`: `List`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+## DescribeEgressOnlyInternetGatewaysResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeEgressOnlyInternetGatewaysResultResponseTypeDef
+```
+
+Required fields:
 
 - `EgressOnlyInternetGateways`:
   `List`\[[EgressOnlyInternetGatewayTypeDef](./type_defs.md#egressonlyinternetgatewaytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeElasticGpusResultTypeDef
+## DescribeElasticGpusRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeElasticGpusResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeElasticGpusRequestTypeDef
 ```
 
 Optional fields:
+
+- `ElasticGpuIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeElasticGpusResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeElasticGpusResultResponseTypeDef
+```
+
+Required fields:
 
 - `ElasticGpuSet`:
   `List`\[[ElasticGpusTypeDef](./type_defs.md#elasticgpustypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeExportImageTasksResultTypeDef
+## DescribeExportImageTasksRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeExportImageTasksResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeExportImageTasksRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ExportImageTaskIds`: `List`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeExportImageTasksResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeExportImageTasksResultResponseTypeDef
+```
+
+Required fields:
 
 - `ExportImageTasks`:
   `List`\[[ExportImageTaskTypeDef](./type_defs.md#exportimagetasktypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeExportTasksResultTypeDef
+## DescribeExportTasksRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeExportTasksResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeExportTasksRequestTypeDef
 ```
 
 Optional fields:
 
+- `ExportTaskIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+## DescribeExportTasksResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeExportTasksResultResponseTypeDef
+```
+
+Required fields:
+
 - `ExportTasks`:
   `List`\[[ExportTaskTypeDef](./type_defs.md#exporttasktypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeFastSnapshotRestoreSuccessItemTypeDef
 
@@ -3890,17 +8864,32 @@ Optional fields:
 - `DisablingTime`: `datetime`
 - `DisabledTime`: `datetime`
 
-## DescribeFastSnapshotRestoresResultTypeDef
+## DescribeFastSnapshotRestoresRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeFastSnapshotRestoresResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeFastSnapshotRestoresRequestTypeDef
 ```
 
 Optional fields:
 
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## DescribeFastSnapshotRestoresResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeFastSnapshotRestoresResultResponseTypeDef
+```
+
+Required fields:
+
 - `FastSnapshotRestores`:
   `List`\[[DescribeFastSnapshotRestoreSuccessItemTypeDef](./type_defs.md#describefastsnapshotrestoresuccessitemtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeFleetErrorTypeDef
 
@@ -3916,13 +8905,31 @@ Optional fields:
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
 
-## DescribeFleetHistoryResultTypeDef
+## DescribeFleetHistoryRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeFleetHistoryResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeFleetHistoryRequestTypeDef
 ```
 
+Required fields:
+
+- `FleetId`: `str`
+- `StartTime`: `Union`\[`datetime`, `str`\]
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `EventType`: [FleetEventTypeType](./literals.md#fleeteventtypetype)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeFleetHistoryResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeFleetHistoryResultResponseTypeDef
+```
+
+Required fields:
 
 - `HistoryRecords`:
   `List`\[[HistoryRecordEntryTypeDef](./type_defs.md#historyrecordentrytypedef)\]
@@ -3930,19 +8937,40 @@ Optional fields:
 - `NextToken`: `str`
 - `FleetId`: `str`
 - `StartTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFleetInstancesResultTypeDef
+## DescribeFleetInstancesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeFleetInstancesResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeFleetInstancesRequestTypeDef
 ```
 
+Required fields:
+
+- `FleetId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+## DescribeFleetInstancesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeFleetInstancesResultResponseTypeDef
+```
+
+Required fields:
 
 - `ActiveInstances`:
   `List`\[[ActiveInstanceTypeDef](./type_defs.md#activeinstancetypedef)\]
 - `NextToken`: `str`
 - `FleetId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeFleetsInstancesTypeDef
 
@@ -3960,430 +8988,1096 @@ Optional fields:
 - `Platform`: `Literal['Windows']` (see
   [PlatformValuesType](./literals.md#platformvaluestype))
 
-## DescribeFleetsResultTypeDef
+## DescribeFleetsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeFleetsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeFleetsRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `FleetIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+## DescribeFleetsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeFleetsResultResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `Fleets`: `List`\[[FleetDataTypeDef](./type_defs.md#fleetdatatypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFlowLogsResultTypeDef
+## DescribeFlowLogsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeFlowLogsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeFlowLogsRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `FlowLogIds`: `List`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeFlowLogsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeFlowLogsResultResponseTypeDef
+```
+
+Required fields:
 
 - `FlowLogs`: `List`\[[FlowLogTypeDef](./type_defs.md#flowlogtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFpgaImageAttributeResultTypeDef
+## DescribeFpgaImageAttributeRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeFpgaImageAttributeResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeFpgaImageAttributeRequestTypeDef
 ```
 
+Required fields:
+
+- `FpgaImageId`: `str`
+- `Attribute`:
+  [FpgaImageAttributeNameType](./literals.md#fpgaimageattributenametype)
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DescribeFpgaImageAttributeResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeFpgaImageAttributeResultResponseTypeDef
+```
+
+Required fields:
 
 - `FpgaImageAttribute`:
   [FpgaImageAttributeTypeDef](./type_defs.md#fpgaimageattributetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFpgaImagesResultTypeDef
+## DescribeFpgaImagesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeFpgaImagesResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeFpgaImagesRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `FpgaImageIds`: `List`\[`str`\]
+- `Owners`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeFpgaImagesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeFpgaImagesResultResponseTypeDef
+```
+
+Required fields:
 
 - `FpgaImages`: `List`\[[FpgaImageTypeDef](./type_defs.md#fpgaimagetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeHostReservationOfferingsResultTypeDef
+## DescribeHostReservationOfferingsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeHostReservationOfferingsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeHostReservationOfferingsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxDuration`: `int`
+- `MaxResults`: `int`
+- `MinDuration`: `int`
+- `NextToken`: `str`
+- `OfferingId`: `str`
+
+## DescribeHostReservationOfferingsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeHostReservationOfferingsResultResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `OfferingSet`:
   `List`\[[HostOfferingTypeDef](./type_defs.md#hostofferingtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeHostReservationsResultTypeDef
+## DescribeHostReservationsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeHostReservationsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeHostReservationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `HostReservationIdSet`: `List`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeHostReservationsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeHostReservationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `HostReservationSet`:
   `List`\[[HostReservationTypeDef](./type_defs.md#hostreservationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeHostsResultTypeDef
+## DescribeHostsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeHostsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeHostsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `HostIds`: `List`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeHostsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeHostsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Hosts`: `List`\[[HostTypeDef](./type_defs.md#hosttypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeIamInstanceProfileAssociationsResultTypeDef
+## DescribeIamInstanceProfileAssociationsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeIamInstanceProfileAssociationsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeIamInstanceProfileAssociationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `AssociationIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeIamInstanceProfileAssociationsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeIamInstanceProfileAssociationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `IamInstanceProfileAssociations`:
   `List`\[[IamInstanceProfileAssociationTypeDef](./type_defs.md#iaminstanceprofileassociationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeIdFormatResultTypeDef
+## DescribeIdFormatRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeIdFormatResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeIdFormatRequestTypeDef
 ```
 
 Optional fields:
+
+- `Resource`: `str`
+
+## DescribeIdFormatResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeIdFormatResultResponseTypeDef
+```
+
+Required fields:
 
 - `Statuses`: `List`\[[IdFormatTypeDef](./type_defs.md#idformattypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeIdentityIdFormatResultTypeDef
+## DescribeIdentityIdFormatRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeIdentityIdFormatResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeIdentityIdFormatRequestTypeDef
 ```
 
+Required fields:
+
+- `PrincipalArn`: `str`
+
 Optional fields:
+
+- `Resource`: `str`
+
+## DescribeIdentityIdFormatResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeIdentityIdFormatResultResponseTypeDef
+```
+
+Required fields:
 
 - `Statuses`: `List`\[[IdFormatTypeDef](./type_defs.md#idformattypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeImagesResultTypeDef
+## DescribeImageAttributeRequestImageTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeImagesResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeImageAttributeRequestImageTypeDef
+```
+
+Required fields:
+
+- `Attribute`: [ImageAttributeNameType](./literals.md#imageattributenametype)
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DescribeImageAttributeRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeImageAttributeRequestTypeDef
+```
+
+Required fields:
+
+- `Attribute`: [ImageAttributeNameType](./literals.md#imageattributenametype)
+- `ImageId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DescribeImagesRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeImagesRequestTypeDef
 ```
 
 Optional fields:
+
+- `ExecutableUsers`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ImageIds`: `List`\[`str`\]
+- `Owners`: `List`\[`str`\]
+- `IncludeDeprecated`: `bool`
+- `DryRun`: `bool`
+
+## DescribeImagesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeImagesResultResponseTypeDef
+```
+
+Required fields:
 
 - `Images`: `List`\[[ImageTypeDef](./type_defs.md#imagetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeImportImageTasksResultTypeDef
+## DescribeImportImageTasksRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeImportImageTasksResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeImportImageTasksRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ImportTaskIds`: `List`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeImportImageTasksResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeImportImageTasksResultResponseTypeDef
+```
+
+Required fields:
 
 - `ImportImageTasks`:
   `List`\[[ImportImageTaskTypeDef](./type_defs.md#importimagetasktypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeImportSnapshotTasksResultTypeDef
+## DescribeImportSnapshotTasksRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeImportSnapshotTasksResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeImportSnapshotTasksRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ImportTaskIds`: `List`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeImportSnapshotTasksResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeImportSnapshotTasksResultResponseTypeDef
+```
+
+Required fields:
 
 - `ImportSnapshotTasks`:
   `List`\[[ImportSnapshotTaskTypeDef](./type_defs.md#importsnapshottasktypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInstanceCreditSpecificationsResultTypeDef
+## DescribeInstanceAttributeRequestInstanceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeInstanceCreditSpecificationsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeInstanceAttributeRequestInstanceTypeDef
+```
+
+Required fields:
+
+- `Attribute`:
+  [InstanceAttributeNameType](./literals.md#instanceattributenametype)
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DescribeInstanceAttributeRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeInstanceAttributeRequestTypeDef
+```
+
+Required fields:
+
+- `Attribute`:
+  [InstanceAttributeNameType](./literals.md#instanceattributenametype)
+- `InstanceId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DescribeInstanceCreditSpecificationsRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeInstanceCreditSpecificationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `InstanceIds`: `List`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeInstanceCreditSpecificationsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeInstanceCreditSpecificationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `InstanceCreditSpecifications`:
   `List`\[[InstanceCreditSpecificationTypeDef](./type_defs.md#instancecreditspecificationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInstanceEventNotificationAttributesResultTypeDef
+## DescribeInstanceEventNotificationAttributesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeInstanceEventNotificationAttributesResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeInstanceEventNotificationAttributesRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DescribeInstanceEventNotificationAttributesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeInstanceEventNotificationAttributesResultResponseTypeDef
+```
+
+Required fields:
 
 - `InstanceTagAttribute`:
   [InstanceTagNotificationAttributeTypeDef](./type_defs.md#instancetagnotificationattributetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInstanceStatusResultTypeDef
+## DescribeInstanceStatusRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeInstanceStatusResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeInstanceStatusRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `InstanceIds`: `List`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+- `IncludeAllInstances`: `bool`
+
+## DescribeInstanceStatusResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeInstanceStatusResultResponseTypeDef
+```
+
+Required fields:
 
 - `InstanceStatuses`:
   `List`\[[InstanceStatusTypeDef](./type_defs.md#instancestatustypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInstanceTypeOfferingsResultTypeDef
+## DescribeInstanceTypeOfferingsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeInstanceTypeOfferingsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeInstanceTypeOfferingsRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `LocationType`: [LocationTypeType](./literals.md#locationtypetype)
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeInstanceTypeOfferingsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeInstanceTypeOfferingsResultResponseTypeDef
+```
+
+Required fields:
 
 - `InstanceTypeOfferings`:
   `List`\[[InstanceTypeOfferingTypeDef](./type_defs.md#instancetypeofferingtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInstanceTypesResultTypeDef
+## DescribeInstanceTypesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeInstanceTypesResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeInstanceTypesRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `InstanceTypes`: `List`\[[InstanceTypeType](./literals.md#instancetypetype)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeInstanceTypesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeInstanceTypesResultResponseTypeDef
+```
+
+Required fields:
 
 - `InstanceTypes`:
   `List`\[[InstanceTypeInfoTypeDef](./type_defs.md#instancetypeinfotypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInstancesResultTypeDef
+## DescribeInstancesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeInstancesResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeInstancesRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `InstanceIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeInstancesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeInstancesResultResponseTypeDef
+```
+
+Required fields:
 
 - `Reservations`:
   `List`\[[ReservationTypeDef](./type_defs.md#reservationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInternetGatewaysResultTypeDef
+## DescribeInternetGatewaysRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeInternetGatewaysResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeInternetGatewaysRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+- `InternetGatewayIds`: `List`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeInternetGatewaysResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeInternetGatewaysResultResponseTypeDef
+```
+
+Required fields:
 
 - `InternetGateways`:
   `List`\[[InternetGatewayTypeDef](./type_defs.md#internetgatewaytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeIpv6PoolsResultTypeDef
+## DescribeIpv6PoolsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeIpv6PoolsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeIpv6PoolsRequestTypeDef
 ```
 
 Optional fields:
+
+- `PoolIds`: `List`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `DryRun`: `bool`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+## DescribeIpv6PoolsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeIpv6PoolsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Ipv6Pools`: `List`\[[Ipv6PoolTypeDef](./type_defs.md#ipv6pooltypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeKeyPairsResultTypeDef
+## DescribeKeyPairsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeKeyPairsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeKeyPairsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `KeyNames`: `List`\[`str`\]
+- `KeyPairIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+
+## DescribeKeyPairsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeKeyPairsResultResponseTypeDef
+```
+
+Required fields:
 
 - `KeyPairs`: `List`\[[KeyPairInfoTypeDef](./type_defs.md#keypairinfotypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLaunchTemplateVersionsResultTypeDef
+## DescribeLaunchTemplateVersionsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeLaunchTemplateVersionsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeLaunchTemplateVersionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `LaunchTemplateId`: `str`
+- `LaunchTemplateName`: `str`
+- `Versions`: `List`\[`str`\]
+- `MinVersion`: `str`
+- `MaxVersion`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+## DescribeLaunchTemplateVersionsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeLaunchTemplateVersionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `LaunchTemplateVersions`:
   `List`\[[LaunchTemplateVersionTypeDef](./type_defs.md#launchtemplateversiontypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLaunchTemplatesResultTypeDef
+## DescribeLaunchTemplatesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeLaunchTemplatesResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeLaunchTemplatesRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `LaunchTemplateIds`: `List`\[`str`\]
+- `LaunchTemplateNames`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeLaunchTemplatesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeLaunchTemplatesResultResponseTypeDef
+```
+
+Required fields:
 
 - `LaunchTemplates`:
   `List`\[[LaunchTemplateTypeDef](./type_defs.md#launchtemplatetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResultTypeDef
+## DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `LocalGatewayRouteTableVirtualInterfaceGroupAssociationIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `LocalGatewayRouteTableVirtualInterfaceGroupAssociations`:
   `List`\[[LocalGatewayRouteTableVirtualInterfaceGroupAssociationTypeDef](./type_defs.md#localgatewayroutetablevirtualinterfacegroupassociationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLocalGatewayRouteTableVpcAssociationsResultTypeDef
+## DescribeLocalGatewayRouteTableVpcAssociationsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeLocalGatewayRouteTableVpcAssociationsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeLocalGatewayRouteTableVpcAssociationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `LocalGatewayRouteTableVpcAssociationIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## DescribeLocalGatewayRouteTableVpcAssociationsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeLocalGatewayRouteTableVpcAssociationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `LocalGatewayRouteTableVpcAssociations`:
   `List`\[[LocalGatewayRouteTableVpcAssociationTypeDef](./type_defs.md#localgatewayroutetablevpcassociationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLocalGatewayRouteTablesResultTypeDef
+## DescribeLocalGatewayRouteTablesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeLocalGatewayRouteTablesResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeLocalGatewayRouteTablesRequestTypeDef
 ```
 
 Optional fields:
+
+- `LocalGatewayRouteTableIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## DescribeLocalGatewayRouteTablesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeLocalGatewayRouteTablesResultResponseTypeDef
+```
+
+Required fields:
 
 - `LocalGatewayRouteTables`:
   `List`\[[LocalGatewayRouteTableTypeDef](./type_defs.md#localgatewayroutetabletypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLocalGatewayVirtualInterfaceGroupsResultTypeDef
+## DescribeLocalGatewayVirtualInterfaceGroupsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeLocalGatewayVirtualInterfaceGroupsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeLocalGatewayVirtualInterfaceGroupsRequestTypeDef
 ```
 
 Optional fields:
+
+- `LocalGatewayVirtualInterfaceGroupIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## DescribeLocalGatewayVirtualInterfaceGroupsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeLocalGatewayVirtualInterfaceGroupsResultResponseTypeDef
+```
+
+Required fields:
 
 - `LocalGatewayVirtualInterfaceGroups`:
   `List`\[[LocalGatewayVirtualInterfaceGroupTypeDef](./type_defs.md#localgatewayvirtualinterfacegrouptypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLocalGatewayVirtualInterfacesResultTypeDef
+## DescribeLocalGatewayVirtualInterfacesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeLocalGatewayVirtualInterfacesResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeLocalGatewayVirtualInterfacesRequestTypeDef
 ```
 
 Optional fields:
+
+- `LocalGatewayVirtualInterfaceIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## DescribeLocalGatewayVirtualInterfacesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeLocalGatewayVirtualInterfacesResultResponseTypeDef
+```
+
+Required fields:
 
 - `LocalGatewayVirtualInterfaces`:
   `List`\[[LocalGatewayVirtualInterfaceTypeDef](./type_defs.md#localgatewayvirtualinterfacetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLocalGatewaysResultTypeDef
+## DescribeLocalGatewaysRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeLocalGatewaysResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeLocalGatewaysRequestTypeDef
 ```
 
 Optional fields:
+
+- `LocalGatewayIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## DescribeLocalGatewaysResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeLocalGatewaysResultResponseTypeDef
+```
+
+Required fields:
 
 - `LocalGateways`:
   `List`\[[LocalGatewayTypeDef](./type_defs.md#localgatewaytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeManagedPrefixListsResultTypeDef
+## DescribeManagedPrefixListsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeManagedPrefixListsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeManagedPrefixListsRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `PrefixListIds`: `List`\[`str`\]
+
+## DescribeManagedPrefixListsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeManagedPrefixListsResultResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `PrefixLists`:
   `List`\[[ManagedPrefixListTypeDef](./type_defs.md#managedprefixlisttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeMovingAddressesResultTypeDef
+## DescribeMovingAddressesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeMovingAddressesResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeMovingAddressesRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `PublicIps`: `List`\[`str`\]
+
+## DescribeMovingAddressesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeMovingAddressesResultResponseTypeDef
+```
+
+Required fields:
 
 - `MovingAddressStatuses`:
   `List`\[[MovingAddressStatusTypeDef](./type_defs.md#movingaddressstatustypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeNatGatewaysResultTypeDef
+## DescribeNatGatewaysRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeNatGatewaysResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeNatGatewaysRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NatGatewayIds`: `List`\[`str`\]
+- `NextToken`: `str`
+
+## DescribeNatGatewaysResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeNatGatewaysResultResponseTypeDef
+```
+
+Required fields:
 
 - `NatGateways`:
   `List`\[[NatGatewayTypeDef](./type_defs.md#natgatewaytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeNetworkAclsResultTypeDef
+## DescribeNetworkAclsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeNetworkAclsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeNetworkAclsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+- `NetworkAclIds`: `List`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeNetworkAclsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeNetworkAclsResultResponseTypeDef
+```
+
+Required fields:
 
 - `NetworkAcls`:
   `List`\[[NetworkAclTypeDef](./type_defs.md#networkacltypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeNetworkInsightsAnalysesResultTypeDef
+## DescribeNetworkInsightsAnalysesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeNetworkInsightsAnalysesResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeNetworkInsightsAnalysesRequestTypeDef
 ```
 
 Optional fields:
+
+- `NetworkInsightsAnalysisIds`: `List`\[`str`\]
+- `NetworkInsightsPathId`: `str`
+- `AnalysisStartTime`: `Union`\[`datetime`, `str`\]
+- `AnalysisEndTime`: `Union`\[`datetime`, `str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `DryRun`: `bool`
+- `NextToken`: `str`
+
+## DescribeNetworkInsightsAnalysesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeNetworkInsightsAnalysesResultResponseTypeDef
+```
+
+Required fields:
 
 - `NetworkInsightsAnalyses`:
   `List`\[[NetworkInsightsAnalysisTypeDef](./type_defs.md#networkinsightsanalysistypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeNetworkInsightsPathsResultTypeDef
+## DescribeNetworkInsightsPathsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeNetworkInsightsPathsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeNetworkInsightsPathsRequestTypeDef
 ```
 
 Optional fields:
+
+- `NetworkInsightsPathIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `DryRun`: `bool`
+- `NextToken`: `str`
+
+## DescribeNetworkInsightsPathsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeNetworkInsightsPathsResultResponseTypeDef
+```
+
+Required fields:
 
 - `NetworkInsightsPaths`:
   `List`\[[NetworkInsightsPathTypeDef](./type_defs.md#networkinsightspathtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeNetworkInterfaceAttributeResultTypeDef
+## DescribeNetworkInterfaceAttributeRequestNetworkInterfaceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeNetworkInterfaceAttributeResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeNetworkInterfaceAttributeRequestNetworkInterfaceTypeDef
 ```
 
 Optional fields:
+
+- `Attribute`:
+  [NetworkInterfaceAttributeType](./literals.md#networkinterfaceattributetype)
+- `DryRun`: `bool`
+
+## DescribeNetworkInterfaceAttributeRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeNetworkInterfaceAttributeRequestTypeDef
+```
+
+Required fields:
+
+- `NetworkInterfaceId`: `str`
+
+Optional fields:
+
+- `Attribute`:
+  [NetworkInterfaceAttributeType](./literals.md#networkinterfaceattributetype)
+- `DryRun`: `bool`
+
+## DescribeNetworkInterfaceAttributeResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeNetworkInterfaceAttributeResultResponseTypeDef
+```
+
+Required fields:
 
 - `Attachment`:
   [NetworkInterfaceAttachmentTypeDef](./type_defs.md#networkinterfaceattachmenttypedef)
@@ -4393,261 +10087,650 @@ Optional fields:
 - `NetworkInterfaceId`: `str`
 - `SourceDestCheck`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeNetworkInterfacePermissionsResultTypeDef
+## DescribeNetworkInterfacePermissionsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeNetworkInterfacePermissionsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeNetworkInterfacePermissionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `NetworkInterfacePermissionIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeNetworkInterfacePermissionsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeNetworkInterfacePermissionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `NetworkInterfacePermissions`:
   `List`\[[NetworkInterfacePermissionTypeDef](./type_defs.md#networkinterfacepermissiontypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeNetworkInterfacesResultTypeDef
+## DescribeNetworkInterfacesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeNetworkInterfacesResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeNetworkInterfacesRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+- `NetworkInterfaceIds`: `List`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeNetworkInterfacesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeNetworkInterfacesResultResponseTypeDef
+```
+
+Required fields:
 
 - `NetworkInterfaces`:
   `List`\[[NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePlacementGroupsResultTypeDef
+## DescribePlacementGroupsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribePlacementGroupsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribePlacementGroupsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+- `GroupNames`: `List`\[`str`\]
+- `GroupIds`: `List`\[`str`\]
+
+## DescribePlacementGroupsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribePlacementGroupsResultResponseTypeDef
+```
+
+Required fields:
 
 - `PlacementGroups`:
   `List`\[[PlacementGroupTypeDef](./type_defs.md#placementgrouptypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePrefixListsResultTypeDef
+## DescribePrefixListsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribePrefixListsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribePrefixListsRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `PrefixListIds`: `List`\[`str`\]
+
+## DescribePrefixListsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribePrefixListsResultResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `PrefixLists`:
   `List`\[[PrefixListTypeDef](./type_defs.md#prefixlisttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePrincipalIdFormatResultTypeDef
+## DescribePrincipalIdFormatRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribePrincipalIdFormatResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribePrincipalIdFormatRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `Resources`: `List`\[`str`\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribePrincipalIdFormatResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribePrincipalIdFormatResultResponseTypeDef
+```
+
+Required fields:
 
 - `Principals`:
   `List`\[[PrincipalIdFormatTypeDef](./type_defs.md#principalidformattypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePublicIpv4PoolsResultTypeDef
+## DescribePublicIpv4PoolsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribePublicIpv4PoolsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribePublicIpv4PoolsRequestTypeDef
 ```
 
 Optional fields:
+
+- `PoolIds`: `List`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+## DescribePublicIpv4PoolsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribePublicIpv4PoolsResultResponseTypeDef
+```
+
+Required fields:
 
 - `PublicIpv4Pools`:
   `List`\[[PublicIpv4PoolTypeDef](./type_defs.md#publicipv4pooltypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeRegionsResultTypeDef
+## DescribeRegionsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeRegionsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeRegionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `RegionNames`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `AllRegions`: `bool`
+
+## DescribeRegionsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeRegionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Regions`: `List`\[[RegionTypeDef](./type_defs.md#regiontypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeReplaceRootVolumeTasksResultTypeDef
+## DescribeReplaceRootVolumeTasksRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeReplaceRootVolumeTasksResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeReplaceRootVolumeTasksRequestTypeDef
 ```
 
 Optional fields:
+
+- `ReplaceRootVolumeTaskIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## DescribeReplaceRootVolumeTasksResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeReplaceRootVolumeTasksResultResponseTypeDef
+```
+
+Required fields:
 
 - `ReplaceRootVolumeTasks`:
   `List`\[[ReplaceRootVolumeTaskTypeDef](./type_defs.md#replacerootvolumetasktypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeReservedInstancesListingsResultTypeDef
+## DescribeReservedInstancesListingsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeReservedInstancesListingsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeReservedInstancesListingsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ReservedInstancesId`: `str`
+- `ReservedInstancesListingId`: `str`
+
+## DescribeReservedInstancesListingsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeReservedInstancesListingsResultResponseTypeDef
+```
+
+Required fields:
 
 - `ReservedInstancesListings`:
   `List`\[[ReservedInstancesListingTypeDef](./type_defs.md#reservedinstanceslistingtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeReservedInstancesModificationsResultTypeDef
+## DescribeReservedInstancesModificationsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeReservedInstancesModificationsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeReservedInstancesModificationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ReservedInstancesModificationIds`: `List`\[`str`\]
+- `NextToken`: `str`
+
+## DescribeReservedInstancesModificationsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeReservedInstancesModificationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `ReservedInstancesModifications`:
   `List`\[[ReservedInstancesModificationTypeDef](./type_defs.md#reservedinstancesmodificationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeReservedInstancesOfferingsResultTypeDef
+## DescribeReservedInstancesOfferingsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeReservedInstancesOfferingsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeReservedInstancesOfferingsRequestTypeDef
 ```
 
 Optional fields:
+
+- `AvailabilityZone`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `IncludeMarketplace`: `bool`
+- `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
+- `MaxDuration`: `int`
+- `MaxInstanceCount`: `int`
+- `MinDuration`: `int`
+- `OfferingClass`: [OfferingClassTypeType](./literals.md#offeringclasstypetype)
+- `ProductDescription`:
+  [RIProductDescriptionType](./literals.md#riproductdescriptiontype)
+- `ReservedInstancesOfferingIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `InstanceTenancy`: [TenancyType](./literals.md#tenancytype)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `OfferingType`:
+  [OfferingTypeValuesType](./literals.md#offeringtypevaluestype)
+
+## DescribeReservedInstancesOfferingsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeReservedInstancesOfferingsResultResponseTypeDef
+```
+
+Required fields:
 
 - `ReservedInstancesOfferings`:
   `List`\[[ReservedInstancesOfferingTypeDef](./type_defs.md#reservedinstancesofferingtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeReservedInstancesResultTypeDef
+## DescribeReservedInstancesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeReservedInstancesResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeReservedInstancesRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `OfferingClass`: [OfferingClassTypeType](./literals.md#offeringclasstypetype)
+- `ReservedInstancesIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `OfferingType`:
+  [OfferingTypeValuesType](./literals.md#offeringtypevaluestype)
+
+## DescribeReservedInstancesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeReservedInstancesResultResponseTypeDef
+```
+
+Required fields:
 
 - `ReservedInstances`:
   `List`\[[ReservedInstancesTypeDef](./type_defs.md#reservedinstancestypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeRouteTablesResultTypeDef
+## DescribeRouteTablesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeRouteTablesResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeRouteTablesRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+- `RouteTableIds`: `List`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeRouteTablesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeRouteTablesResultResponseTypeDef
+```
+
+Required fields:
 
 - `RouteTables`:
   `List`\[[RouteTableTypeDef](./type_defs.md#routetabletypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeScheduledInstanceAvailabilityResultTypeDef
+## DescribeScheduledInstanceAvailabilityRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeScheduledInstanceAvailabilityResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeScheduledInstanceAvailabilityRequestTypeDef
 ```
 
+Required fields:
+
+- `FirstSlotStartTimeRange`:
+  [SlotDateTimeRangeRequestTypeDef](./type_defs.md#slotdatetimerangerequesttypedef)
+- `Recurrence`:
+  [ScheduledInstanceRecurrenceRequestTypeDef](./type_defs.md#scheduledinstancerecurrencerequesttypedef)
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `MaxSlotDurationInHours`: `int`
+- `MinSlotDurationInHours`: `int`
+- `NextToken`: `str`
+
+## DescribeScheduledInstanceAvailabilityResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeScheduledInstanceAvailabilityResultResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `ScheduledInstanceAvailabilitySet`:
   `List`\[[ScheduledInstanceAvailabilityTypeDef](./type_defs.md#scheduledinstanceavailabilitytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeScheduledInstancesResultTypeDef
+## DescribeScheduledInstancesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeScheduledInstancesResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeScheduledInstancesRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `ScheduledInstanceIds`: `List`\[`str`\]
+- `SlotStartTimeRange`:
+  [SlotStartTimeRangeRequestTypeDef](./type_defs.md#slotstarttimerangerequesttypedef)
+
+## DescribeScheduledInstancesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeScheduledInstancesResultResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `ScheduledInstanceSet`:
   `List`\[[ScheduledInstanceTypeDef](./type_defs.md#scheduledinstancetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSecurityGroupReferencesResultTypeDef
+## DescribeSecurityGroupReferencesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeSecurityGroupReferencesResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeSecurityGroupReferencesRequestTypeDef
 ```
 
+Required fields:
+
+- `GroupId`: `List`\[`str`\]
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DescribeSecurityGroupReferencesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeSecurityGroupReferencesResultResponseTypeDef
+```
+
+Required fields:
 
 - `SecurityGroupReferenceSet`:
   `List`\[[SecurityGroupReferenceTypeDef](./type_defs.md#securitygroupreferencetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSecurityGroupsResultTypeDef
+## DescribeSecurityGroupsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeSecurityGroupsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeSecurityGroupsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `GroupIds`: `List`\[`str`\]
+- `GroupNames`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeSecurityGroupsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeSecurityGroupsResultResponseTypeDef
+```
+
+Required fields:
 
 - `SecurityGroups`:
   `List`\[[SecurityGroupTypeDef](./type_defs.md#securitygrouptypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSnapshotAttributeResultTypeDef
+## DescribeSnapshotAttributeRequestSnapshotTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeSnapshotAttributeResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeSnapshotAttributeRequestSnapshotTypeDef
 ```
 
+Required fields:
+
+- `Attribute`:
+  [SnapshotAttributeNameType](./literals.md#snapshotattributenametype)
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DescribeSnapshotAttributeRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeSnapshotAttributeRequestTypeDef
+```
+
+Required fields:
+
+- `Attribute`:
+  [SnapshotAttributeNameType](./literals.md#snapshotattributenametype)
+- `SnapshotId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DescribeSnapshotAttributeResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeSnapshotAttributeResultResponseTypeDef
+```
+
+Required fields:
 
 - `CreateVolumePermissions`:
   `List`\[[CreateVolumePermissionTypeDef](./type_defs.md#createvolumepermissiontypedef)\]
 - `ProductCodes`:
   `List`\[[ProductCodeTypeDef](./type_defs.md#productcodetypedef)\]
 - `SnapshotId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSnapshotsResultTypeDef
+## DescribeSnapshotsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeSnapshotsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeSnapshotsRequestTypeDef
 ```
 
 Optional fields:
 
-- `Snapshots`: `List`\[[SnapshotTypeDef](./type_defs.md#snapshottypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
 - `NextToken`: `str`
+- `OwnerIds`: `List`\[`str`\]
+- `RestorableByUserIds`: `List`\[`str`\]
+- `SnapshotIds`: `List`\[`str`\]
+- `DryRun`: `bool`
 
-## DescribeSpotDatafeedSubscriptionResultTypeDef
+## DescribeSnapshotsResultResponseTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeSpotDatafeedSubscriptionResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeSnapshotsResultResponseTypeDef
+```
+
+Required fields:
+
+- `Snapshots`:
+  `List`\[[SnapshotResponseTypeDef](./type_defs.md#snapshotresponsetypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeSpotDatafeedSubscriptionRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeSpotDatafeedSubscriptionRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DescribeSpotDatafeedSubscriptionResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeSpotDatafeedSubscriptionResultResponseTypeDef
+```
+
+Required fields:
 
 - `SpotDatafeedSubscription`:
   [SpotDatafeedSubscriptionTypeDef](./type_defs.md#spotdatafeedsubscriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSpotFleetInstancesResponseTypeDef
+## DescribeSpotFleetInstancesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeSpotFleetInstancesResponseTypeDef
+from mypy_boto3_ec2.type_defs import DescribeSpotFleetInstancesRequestTypeDef
 ```
 
+Required fields:
+
+- `SpotFleetRequestId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeSpotFleetInstancesResponseResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeSpotFleetInstancesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ActiveInstances`:
   `List`\[[ActiveInstanceTypeDef](./type_defs.md#activeinstancetypedef)\]
 - `NextToken`: `str`
 - `SpotFleetRequestId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSpotFleetRequestHistoryResponseTypeDef
+## DescribeSpotFleetRequestHistoryRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeSpotFleetRequestHistoryResponseTypeDef
+from mypy_boto3_ec2.type_defs import DescribeSpotFleetRequestHistoryRequestTypeDef
 ```
 
+Required fields:
+
+- `SpotFleetRequestId`: `str`
+- `StartTime`: `Union`\[`datetime`, `str`\]
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `EventType`: [EventTypeType](./literals.md#eventtypetype)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeSpotFleetRequestHistoryResponseResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeSpotFleetRequestHistoryResponseResponseTypeDef
+```
+
+Required fields:
 
 - `HistoryRecords`:
   `List`\[[HistoryRecordTypeDef](./type_defs.md#historyrecordtypedef)\]
@@ -4655,447 +10738,1246 @@ Optional fields:
 - `NextToken`: `str`
 - `SpotFleetRequestId`: `str`
 - `StartTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSpotFleetRequestsResponseTypeDef
+## DescribeSpotFleetRequestsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeSpotFleetRequestsResponseTypeDef
+from mypy_boto3_ec2.type_defs import DescribeSpotFleetRequestsRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `SpotFleetRequestIds`: `List`\[`str`\]
+
+## DescribeSpotFleetRequestsResponseResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeSpotFleetRequestsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `SpotFleetRequestConfigs`:
   `List`\[[SpotFleetRequestConfigTypeDef](./type_defs.md#spotfleetrequestconfigtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSpotInstanceRequestsResultTypeDef
+## DescribeSpotInstanceRequestsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeSpotInstanceRequestsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeSpotInstanceRequestsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+- `SpotInstanceRequestIds`: `List`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeSpotInstanceRequestsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeSpotInstanceRequestsResultResponseTypeDef
+```
+
+Required fields:
 
 - `SpotInstanceRequests`:
   `List`\[[SpotInstanceRequestTypeDef](./type_defs.md#spotinstancerequesttypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSpotPriceHistoryResultTypeDef
+## DescribeSpotPriceHistoryRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeSpotPriceHistoryResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeSpotPriceHistoryRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `AvailabilityZone`: `str`
+- `DryRun`: `bool`
+- `EndTime`: `Union`\[`datetime`, `str`\]
+- `InstanceTypes`: `List`\[[InstanceTypeType](./literals.md#instancetypetype)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `ProductDescriptions`: `List`\[`str`\]
+- `StartTime`: `Union`\[`datetime`, `str`\]
+
+## DescribeSpotPriceHistoryResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeSpotPriceHistoryResultResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `SpotPriceHistory`:
   `List`\[[SpotPriceTypeDef](./type_defs.md#spotpricetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeStaleSecurityGroupsResultTypeDef
+## DescribeStaleSecurityGroupsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeStaleSecurityGroupsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeStaleSecurityGroupsRequestTypeDef
 ```
 
+Required fields:
+
+- `VpcId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeStaleSecurityGroupsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeStaleSecurityGroupsResultResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `StaleSecurityGroupSet`:
   `List`\[[StaleSecurityGroupTypeDef](./type_defs.md#stalesecuritygrouptypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeStoreImageTasksResultTypeDef
+## DescribeStoreImageTasksRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeStoreImageTasksResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeStoreImageTasksRequestTypeDef
 ```
 
 Optional fields:
+
+- `ImageIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeStoreImageTasksResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeStoreImageTasksResultResponseTypeDef
+```
+
+Required fields:
 
 - `StoreImageTaskResults`:
   `List`\[[StoreImageTaskResultTypeDef](./type_defs.md#storeimagetaskresulttypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSubnetsResultTypeDef
+## DescribeSubnetsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeSubnetsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeSubnetsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SubnetIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeSubnetsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeSubnetsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Subnets`: `List`\[[SubnetTypeDef](./type_defs.md#subnettypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTagsResultTypeDef
+## DescribeTagsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeTagsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeTagsRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeTagsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeTagsResultResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `Tags`:
   `List`\[[TagDescriptionTypeDef](./type_defs.md#tagdescriptiontypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTrafficMirrorFiltersResultTypeDef
+## DescribeTrafficMirrorFiltersRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeTrafficMirrorFiltersResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeTrafficMirrorFiltersRequestTypeDef
 ```
 
 Optional fields:
+
+- `TrafficMirrorFilterIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeTrafficMirrorFiltersResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeTrafficMirrorFiltersResultResponseTypeDef
+```
+
+Required fields:
 
 - `TrafficMirrorFilters`:
   `List`\[[TrafficMirrorFilterTypeDef](./type_defs.md#trafficmirrorfiltertypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTrafficMirrorSessionsResultTypeDef
+## DescribeTrafficMirrorSessionsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeTrafficMirrorSessionsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeTrafficMirrorSessionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `TrafficMirrorSessionIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeTrafficMirrorSessionsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeTrafficMirrorSessionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `TrafficMirrorSessions`:
   `List`\[[TrafficMirrorSessionTypeDef](./type_defs.md#trafficmirrorsessiontypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTrafficMirrorTargetsResultTypeDef
+## DescribeTrafficMirrorTargetsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeTrafficMirrorTargetsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeTrafficMirrorTargetsRequestTypeDef
 ```
 
 Optional fields:
+
+- `TrafficMirrorTargetIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeTrafficMirrorTargetsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeTrafficMirrorTargetsResultResponseTypeDef
+```
+
+Required fields:
 
 - `TrafficMirrorTargets`:
   `List`\[[TrafficMirrorTargetTypeDef](./type_defs.md#trafficmirrortargettypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTransitGatewayAttachmentsResultTypeDef
+## DescribeTransitGatewayAttachmentsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeTransitGatewayAttachmentsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeTransitGatewayAttachmentsRequestTypeDef
 ```
 
 Optional fields:
+
+- `TransitGatewayAttachmentIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## DescribeTransitGatewayAttachmentsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeTransitGatewayAttachmentsResultResponseTypeDef
+```
+
+Required fields:
 
 - `TransitGatewayAttachments`:
   `List`\[[TransitGatewayAttachmentTypeDef](./type_defs.md#transitgatewayattachmenttypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTransitGatewayConnectPeersResultTypeDef
+## DescribeTransitGatewayConnectPeersRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeTransitGatewayConnectPeersResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeTransitGatewayConnectPeersRequestTypeDef
 ```
 
 Optional fields:
+
+- `TransitGatewayConnectPeerIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## DescribeTransitGatewayConnectPeersResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeTransitGatewayConnectPeersResultResponseTypeDef
+```
+
+Required fields:
 
 - `TransitGatewayConnectPeers`:
   `List`\[[TransitGatewayConnectPeerTypeDef](./type_defs.md#transitgatewayconnectpeertypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTransitGatewayConnectsResultTypeDef
+## DescribeTransitGatewayConnectsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeTransitGatewayConnectsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeTransitGatewayConnectsRequestTypeDef
 ```
 
 Optional fields:
+
+- `TransitGatewayAttachmentIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## DescribeTransitGatewayConnectsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeTransitGatewayConnectsResultResponseTypeDef
+```
+
+Required fields:
 
 - `TransitGatewayConnects`:
   `List`\[[TransitGatewayConnectTypeDef](./type_defs.md#transitgatewayconnecttypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTransitGatewayMulticastDomainsResultTypeDef
+## DescribeTransitGatewayMulticastDomainsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeTransitGatewayMulticastDomainsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeTransitGatewayMulticastDomainsRequestTypeDef
 ```
 
 Optional fields:
+
+- `TransitGatewayMulticastDomainIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## DescribeTransitGatewayMulticastDomainsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeTransitGatewayMulticastDomainsResultResponseTypeDef
+```
+
+Required fields:
 
 - `TransitGatewayMulticastDomains`:
   `List`\[[TransitGatewayMulticastDomainTypeDef](./type_defs.md#transitgatewaymulticastdomaintypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTransitGatewayPeeringAttachmentsResultTypeDef
+## DescribeTransitGatewayPeeringAttachmentsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeTransitGatewayPeeringAttachmentsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeTransitGatewayPeeringAttachmentsRequestTypeDef
 ```
 
 Optional fields:
+
+- `TransitGatewayAttachmentIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## DescribeTransitGatewayPeeringAttachmentsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeTransitGatewayPeeringAttachmentsResultResponseTypeDef
+```
+
+Required fields:
 
 - `TransitGatewayPeeringAttachments`:
   `List`\[[TransitGatewayPeeringAttachmentTypeDef](./type_defs.md#transitgatewaypeeringattachmenttypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTransitGatewayRouteTablesResultTypeDef
+## DescribeTransitGatewayRouteTablesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeTransitGatewayRouteTablesResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeTransitGatewayRouteTablesRequestTypeDef
 ```
 
 Optional fields:
+
+- `TransitGatewayRouteTableIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## DescribeTransitGatewayRouteTablesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeTransitGatewayRouteTablesResultResponseTypeDef
+```
+
+Required fields:
 
 - `TransitGatewayRouteTables`:
   `List`\[[TransitGatewayRouteTableTypeDef](./type_defs.md#transitgatewayroutetabletypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTransitGatewayVpcAttachmentsResultTypeDef
+## DescribeTransitGatewayVpcAttachmentsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeTransitGatewayVpcAttachmentsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeTransitGatewayVpcAttachmentsRequestTypeDef
 ```
 
 Optional fields:
+
+- `TransitGatewayAttachmentIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## DescribeTransitGatewayVpcAttachmentsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeTransitGatewayVpcAttachmentsResultResponseTypeDef
+```
+
+Required fields:
 
 - `TransitGatewayVpcAttachments`:
   `List`\[[TransitGatewayVpcAttachmentTypeDef](./type_defs.md#transitgatewayvpcattachmenttypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTransitGatewaysResultTypeDef
+## DescribeTransitGatewaysRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeTransitGatewaysResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeTransitGatewaysRequestTypeDef
 ```
 
 Optional fields:
+
+- `TransitGatewayIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## DescribeTransitGatewaysResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeTransitGatewaysResultResponseTypeDef
+```
+
+Required fields:
 
 - `TransitGateways`:
   `List`\[[TransitGatewayTypeDef](./type_defs.md#transitgatewaytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTrunkInterfaceAssociationsResultTypeDef
+## DescribeTrunkInterfaceAssociationsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeTrunkInterfaceAssociationsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeTrunkInterfaceAssociationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `AssociationIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeTrunkInterfaceAssociationsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeTrunkInterfaceAssociationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `InterfaceAssociations`:
   `List`\[[TrunkInterfaceAssociationTypeDef](./type_defs.md#trunkinterfaceassociationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeVolumeAttributeResultTypeDef
+## DescribeVolumeAttributeRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeVolumeAttributeResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeVolumeAttributeRequestTypeDef
 ```
 
+Required fields:
+
+- `Attribute`: [VolumeAttributeNameType](./literals.md#volumeattributenametype)
+- `VolumeId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DescribeVolumeAttributeRequestVolumeTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeVolumeAttributeRequestVolumeTypeDef
+```
+
+Required fields:
+
+- `Attribute`: [VolumeAttributeNameType](./literals.md#volumeattributenametype)
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DescribeVolumeAttributeResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeVolumeAttributeResultResponseTypeDef
+```
+
+Required fields:
 
 - `AutoEnableIO`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 - `ProductCodes`:
   `List`\[[ProductCodeTypeDef](./type_defs.md#productcodetypedef)\]
 - `VolumeId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeVolumeStatusResultTypeDef
+## DescribeVolumeStatusRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeVolumeStatusResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeVolumeStatusRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `VolumeIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+
+## DescribeVolumeStatusRequestVolumeTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeVolumeStatusRequestVolumeTypeDef
+```
+
+Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## DescribeVolumeStatusResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeVolumeStatusResultResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `VolumeStatuses`:
   `List`\[[VolumeStatusItemTypeDef](./type_defs.md#volumestatusitemtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeVolumesModificationsResultTypeDef
+## DescribeVolumesModificationsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeVolumesModificationsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeVolumesModificationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `VolumeIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeVolumesModificationsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeVolumesModificationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `VolumesModifications`:
   `List`\[[VolumeModificationTypeDef](./type_defs.md#volumemodificationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeVolumesResultTypeDef
+## DescribeVolumesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeVolumesResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeVolumesRequestTypeDef
 ```
 
 Optional fields:
 
-- `Volumes`: `List`\[[VolumeTypeDef](./type_defs.md#volumetypedef)\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `VolumeIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `MaxResults`: `int`
 - `NextToken`: `str`
 
-## DescribeVpcAttributeResultTypeDef
+## DescribeVolumesResultResponseTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeVpcAttributeResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeVolumesResultResponseTypeDef
 ```
 
+Required fields:
+
+- `Volumes`:
+  `List`\[[VolumeResponseTypeDef](./type_defs.md#volumeresponsetypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeVpcAttributeRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeVpcAttributeRequestTypeDef
+```
+
+Required fields:
+
+- `Attribute`: [VpcAttributeNameType](./literals.md#vpcattributenametype)
+- `VpcId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DescribeVpcAttributeRequestVpcTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeVpcAttributeRequestVpcTypeDef
+```
+
+Required fields:
+
+- `Attribute`: [VpcAttributeNameType](./literals.md#vpcattributenametype)
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DescribeVpcAttributeResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeVpcAttributeResultResponseTypeDef
+```
+
+Required fields:
 
 - `VpcId`: `str`
 - `EnableDnsHostnames`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 - `EnableDnsSupport`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeVpcClassicLinkDnsSupportResultTypeDef
+## DescribeVpcClassicLinkDnsSupportRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeVpcClassicLinkDnsSupportResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeVpcClassicLinkDnsSupportRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `VpcIds`: `List`\[`str`\]
+
+## DescribeVpcClassicLinkDnsSupportResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeVpcClassicLinkDnsSupportResultResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `Vpcs`:
   `List`\[[ClassicLinkDnsSupportTypeDef](./type_defs.md#classiclinkdnssupporttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeVpcClassicLinkResultTypeDef
+## DescribeVpcClassicLinkRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeVpcClassicLinkResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeVpcClassicLinkRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+- `VpcIds`: `List`\[`str`\]
+
+## DescribeVpcClassicLinkResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeVpcClassicLinkResultResponseTypeDef
+```
+
+Required fields:
 
 - `Vpcs`:
   `List`\[[VpcClassicLinkTypeDef](./type_defs.md#vpcclassiclinktypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeVpcEndpointConnectionNotificationsResultTypeDef
+## DescribeVpcEndpointConnectionNotificationsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeVpcEndpointConnectionNotificationsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeVpcEndpointConnectionNotificationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `ConnectionNotificationId`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeVpcEndpointConnectionNotificationsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeVpcEndpointConnectionNotificationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `ConnectionNotificationSet`:
   `List`\[[ConnectionNotificationTypeDef](./type_defs.md#connectionnotificationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeVpcEndpointConnectionsResultTypeDef
+## DescribeVpcEndpointConnectionsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeVpcEndpointConnectionsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeVpcEndpointConnectionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeVpcEndpointConnectionsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeVpcEndpointConnectionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `VpcEndpointConnections`:
   `List`\[[VpcEndpointConnectionTypeDef](./type_defs.md#vpcendpointconnectiontypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeVpcEndpointServiceConfigurationsResultTypeDef
+## DescribeVpcEndpointServiceConfigurationsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeVpcEndpointServiceConfigurationsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeVpcEndpointServiceConfigurationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `ServiceIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeVpcEndpointServiceConfigurationsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeVpcEndpointServiceConfigurationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `ServiceConfigurations`:
   `List`\[[ServiceConfigurationTypeDef](./type_defs.md#serviceconfigurationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeVpcEndpointServicePermissionsResultTypeDef
+## DescribeVpcEndpointServicePermissionsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeVpcEndpointServicePermissionsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeVpcEndpointServicePermissionsRequestTypeDef
 ```
 
+Required fields:
+
+- `ServiceId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeVpcEndpointServicePermissionsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeVpcEndpointServicePermissionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `AllowedPrincipals`:
   `List`\[[AllowedPrincipalTypeDef](./type_defs.md#allowedprincipaltypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeVpcEndpointServicesResultTypeDef
+## DescribeVpcEndpointServicesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeVpcEndpointServicesResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeVpcEndpointServicesRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `ServiceNames`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeVpcEndpointServicesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeVpcEndpointServicesResultResponseTypeDef
+```
+
+Required fields:
 
 - `ServiceNames`: `List`\[`str`\]
 - `ServiceDetails`:
   `List`\[[ServiceDetailTypeDef](./type_defs.md#servicedetailtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeVpcEndpointsResultTypeDef
+## DescribeVpcEndpointsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeVpcEndpointsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeVpcEndpointsRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `VpcEndpointIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeVpcEndpointsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeVpcEndpointsResultResponseTypeDef
+```
+
+Required fields:
 
 - `VpcEndpoints`:
   `List`\[[VpcEndpointTypeDef](./type_defs.md#vpcendpointtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeVpcPeeringConnectionsResultTypeDef
+## DescribeVpcPeeringConnectionsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeVpcPeeringConnectionsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeVpcPeeringConnectionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+- `VpcPeeringConnectionIds`: `List`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeVpcPeeringConnectionsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeVpcPeeringConnectionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `VpcPeeringConnections`:
   `List`\[[VpcPeeringConnectionTypeDef](./type_defs.md#vpcpeeringconnectiontypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeVpcsResultTypeDef
+## DescribeVpcsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeVpcsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeVpcsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `VpcIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeVpcsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeVpcsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Vpcs`: `List`\[[VpcTypeDef](./type_defs.md#vpctypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeVpnConnectionsResultTypeDef
+## DescribeVpnConnectionsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeVpnConnectionsResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeVpnConnectionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `VpnConnectionIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+
+## DescribeVpnConnectionsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeVpnConnectionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `VpnConnections`:
   `List`\[[VpnConnectionTypeDef](./type_defs.md#vpnconnectiontypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeVpnGatewaysResultTypeDef
+## DescribeVpnGatewaysRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DescribeVpnGatewaysResultTypeDef
+from mypy_boto3_ec2.type_defs import DescribeVpnGatewaysRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `VpnGatewayIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+
+## DescribeVpnGatewaysResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeVpnGatewaysResultResponseTypeDef
+```
+
+Required fields:
 
 - `VpnGateways`:
   `List`\[[VpnGatewayTypeDef](./type_defs.md#vpngatewaytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DetachClassicLinkVpcResultTypeDef
+## DetachClassicLinkVpcRequestInstanceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DetachClassicLinkVpcResultTypeDef
+from mypy_boto3_ec2.type_defs import DetachClassicLinkVpcRequestInstanceTypeDef
+```
+
+Required fields:
+
+- `VpcId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DetachClassicLinkVpcRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DetachClassicLinkVpcRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `VpcId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DetachClassicLinkVpcRequestVpcTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DetachClassicLinkVpcRequestVpcTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DetachClassicLinkVpcResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DetachClassicLinkVpcResultResponseTypeDef
+```
+
+Required fields:
+
+- `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DetachInternetGatewayRequestInternetGatewayTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DetachInternetGatewayRequestInternetGatewayTypeDef
+```
+
+Required fields:
+
+- `VpcId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DetachInternetGatewayRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DetachInternetGatewayRequestTypeDef
+```
+
+Required fields:
+
+- `InternetGatewayId`: `str`
+- `VpcId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DetachInternetGatewayRequestVpcTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DetachInternetGatewayRequestVpcTypeDef
+```
+
+Required fields:
+
+- `InternetGatewayId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DetachNetworkInterfaceRequestNetworkInterfaceTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DetachNetworkInterfaceRequestNetworkInterfaceTypeDef
+```
+
+Required fields:
+
+- `AttachmentId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `Force`: `bool`
+
+## DetachNetworkInterfaceRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DetachNetworkInterfaceRequestTypeDef
+```
+
+Required fields:
+
+- `AttachmentId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `Force`: `bool`
+
+## DetachVolumeRequestInstanceTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DetachVolumeRequestInstanceTypeDef
+```
+
+Required fields:
+
+- `VolumeId`: `str`
+
+Optional fields:
+
+- `Device`: `str`
+- `Force`: `bool`
+- `DryRun`: `bool`
+
+## DetachVolumeRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DetachVolumeRequestTypeDef
+```
+
+Required fields:
+
+- `VolumeId`: `str`
+
+Optional fields:
+
+- `Device`: `str`
+- `Force`: `bool`
+- `InstanceId`: `str`
+- `DryRun`: `bool`
+
+## DetachVolumeRequestVolumeTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DetachVolumeRequestVolumeTypeDef
 ```
 
 Optional fields:
 
-- `Return`: `bool`
+- `Device`: `str`
+- `Force`: `bool`
+- `InstanceId`: `str`
+- `DryRun`: `bool`
+
+## DetachVpnGatewayRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DetachVpnGatewayRequestTypeDef
+```
+
+Required fields:
+
+- `VpcId`: `str`
+- `VpnGatewayId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
 
 ## DhcpConfigurationTypeDef
 
@@ -5143,15 +12025,27 @@ Optional fields:
 
 - `DirectoryId`: `str`
 
-## DisableEbsEncryptionByDefaultResultTypeDef
+## DisableEbsEncryptionByDefaultRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DisableEbsEncryptionByDefaultResultTypeDef
+from mypy_boto3_ec2.type_defs import DisableEbsEncryptionByDefaultRequestTypeDef
 ```
 
 Optional fields:
 
+- `DryRun`: `bool`
+
+## DisableEbsEncryptionByDefaultResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisableEbsEncryptionByDefaultResultResponseTypeDef
+```
+
+Required fields:
+
 - `EbsEncryptionByDefault`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DisableFastSnapshotRestoreErrorItemTypeDef
 
@@ -5209,160 +12103,464 @@ Optional fields:
 - `DisablingTime`: `datetime`
 - `DisabledTime`: `datetime`
 
-## DisableFastSnapshotRestoresResultTypeDef
+## DisableFastSnapshotRestoresRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DisableFastSnapshotRestoresResultTypeDef
+from mypy_boto3_ec2.type_defs import DisableFastSnapshotRestoresRequestTypeDef
 ```
 
+Required fields:
+
+- `AvailabilityZones`: `List`\[`str`\]
+- `SourceSnapshotIds`: `List`\[`str`\]
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DisableFastSnapshotRestoresResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisableFastSnapshotRestoresResultResponseTypeDef
+```
+
+Required fields:
 
 - `Successful`:
   `List`\[[DisableFastSnapshotRestoreSuccessItemTypeDef](./type_defs.md#disablefastsnapshotrestoresuccessitemtypedef)\]
 - `Unsuccessful`:
   `List`\[[DisableFastSnapshotRestoreErrorItemTypeDef](./type_defs.md#disablefastsnapshotrestoreerroritemtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisableImageDeprecationResultTypeDef
+## DisableImageDeprecationRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DisableImageDeprecationResultTypeDef
+from mypy_boto3_ec2.type_defs import DisableImageDeprecationRequestTypeDef
 ```
 
+Required fields:
+
+- `ImageId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DisableImageDeprecationResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisableImageDeprecationResultResponseTypeDef
+```
+
+Required fields:
 
 - `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisableSerialConsoleAccessResultTypeDef
+## DisableSerialConsoleAccessRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DisableSerialConsoleAccessResultTypeDef
+from mypy_boto3_ec2.type_defs import DisableSerialConsoleAccessRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DisableSerialConsoleAccessResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisableSerialConsoleAccessResultResponseTypeDef
+```
+
+Required fields:
 
 - `SerialConsoleAccessEnabled`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisableTransitGatewayRouteTablePropagationResultTypeDef
+## DisableTransitGatewayRouteTablePropagationRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DisableTransitGatewayRouteTablePropagationResultTypeDef
+from mypy_boto3_ec2.type_defs import DisableTransitGatewayRouteTablePropagationRequestTypeDef
 ```
 
+Required fields:
+
+- `TransitGatewayRouteTableId`: `str`
+- `TransitGatewayAttachmentId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DisableTransitGatewayRouteTablePropagationResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisableTransitGatewayRouteTablePropagationResultResponseTypeDef
+```
+
+Required fields:
 
 - `Propagation`:
   [TransitGatewayPropagationTypeDef](./type_defs.md#transitgatewaypropagationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisableVpcClassicLinkDnsSupportResultTypeDef
+## DisableVgwRoutePropagationRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DisableVpcClassicLinkDnsSupportResultTypeDef
+from mypy_boto3_ec2.type_defs import DisableVgwRoutePropagationRequestTypeDef
+```
+
+Required fields:
+
+- `GatewayId`: `str`
+- `RouteTableId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DisableVpcClassicLinkDnsSupportRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisableVpcClassicLinkDnsSupportRequestTypeDef
 ```
 
 Optional fields:
 
-- `Return`: `bool`
+- `VpcId`: `str`
 
-## DisableVpcClassicLinkResultTypeDef
+## DisableVpcClassicLinkDnsSupportResultResponseTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DisableVpcClassicLinkResultTypeDef
+from mypy_boto3_ec2.type_defs import DisableVpcClassicLinkDnsSupportResultResponseTypeDef
+```
+
+Required fields:
+
+- `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DisableVpcClassicLinkRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisableVpcClassicLinkRequestTypeDef
+```
+
+Required fields:
+
+- `VpcId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DisableVpcClassicLinkRequestVpcTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisableVpcClassicLinkRequestVpcTypeDef
 ```
 
 Optional fields:
 
-- `Return`: `bool`
+- `DryRun`: `bool`
 
-## DisassociateClientVpnTargetNetworkResultTypeDef
+## DisableVpcClassicLinkResultResponseTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DisassociateClientVpnTargetNetworkResultTypeDef
+from mypy_boto3_ec2.type_defs import DisableVpcClassicLinkResultResponseTypeDef
+```
+
+Required fields:
+
+- `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DisassociateAddressRequestClassicAddressTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisassociateAddressRequestClassicAddressTypeDef
 ```
 
 Optional fields:
 
 - `AssociationId`: `str`
-- `Status`: [AssociationStatusTypeDef](./type_defs.md#associationstatustypedef)
+- `PublicIp`: `str`
+- `DryRun`: `bool`
 
-## DisassociateEnclaveCertificateIamRoleResultTypeDef
+## DisassociateAddressRequestNetworkInterfaceAssociationTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DisassociateEnclaveCertificateIamRoleResultTypeDef
+from mypy_boto3_ec2.type_defs import DisassociateAddressRequestNetworkInterfaceAssociationTypeDef
 ```
 
 Optional fields:
+
+- `PublicIp`: `str`
+- `DryRun`: `bool`
+
+## DisassociateAddressRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisassociateAddressRequestTypeDef
+```
+
+Optional fields:
+
+- `AssociationId`: `str`
+- `PublicIp`: `str`
+- `DryRun`: `bool`
+
+## DisassociateClientVpnTargetNetworkRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisassociateClientVpnTargetNetworkRequestTypeDef
+```
+
+Required fields:
+
+- `ClientVpnEndpointId`: `str`
+- `AssociationId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DisassociateClientVpnTargetNetworkResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisassociateClientVpnTargetNetworkResultResponseTypeDef
+```
+
+Required fields:
+
+- `AssociationId`: `str`
+- `Status`: [AssociationStatusTypeDef](./type_defs.md#associationstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DisassociateEnclaveCertificateIamRoleRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisassociateEnclaveCertificateIamRoleRequestTypeDef
+```
+
+Optional fields:
+
+- `CertificateArn`: `str`
+- `RoleArn`: `str`
+- `DryRun`: `bool`
+
+## DisassociateEnclaveCertificateIamRoleResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisassociateEnclaveCertificateIamRoleResultResponseTypeDef
+```
+
+Required fields:
 
 - `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociateIamInstanceProfileResultTypeDef
+## DisassociateIamInstanceProfileRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DisassociateIamInstanceProfileResultTypeDef
+from mypy_boto3_ec2.type_defs import DisassociateIamInstanceProfileRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AssociationId`: `str`
+
+## DisassociateIamInstanceProfileResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisassociateIamInstanceProfileResultResponseTypeDef
+```
+
+Required fields:
 
 - `IamInstanceProfileAssociation`:
   [IamInstanceProfileAssociationTypeDef](./type_defs.md#iaminstanceprofileassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociateSubnetCidrBlockResultTypeDef
+## DisassociateRouteTableRequestRouteTableAssociationTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DisassociateSubnetCidrBlockResultTypeDef
+from mypy_boto3_ec2.type_defs import DisassociateRouteTableRequestRouteTableAssociationTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DisassociateRouteTableRequestServiceResourceTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisassociateRouteTableRequestServiceResourceTypeDef
+```
+
+Required fields:
+
+- `AssociationId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DisassociateRouteTableRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisassociateRouteTableRequestTypeDef
+```
+
+Required fields:
+
+- `AssociationId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DisassociateSubnetCidrBlockRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisassociateSubnetCidrBlockRequestTypeDef
+```
+
+Required fields:
+
+- `AssociationId`: `str`
+
+## DisassociateSubnetCidrBlockResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisassociateSubnetCidrBlockResultResponseTypeDef
+```
+
+Required fields:
 
 - `Ipv6CidrBlockAssociation`:
   [SubnetIpv6CidrBlockAssociationTypeDef](./type_defs.md#subnetipv6cidrblockassociationtypedef)
 - `SubnetId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociateTransitGatewayMulticastDomainResultTypeDef
+## DisassociateTransitGatewayMulticastDomainRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DisassociateTransitGatewayMulticastDomainResultTypeDef
+from mypy_boto3_ec2.type_defs import DisassociateTransitGatewayMulticastDomainRequestTypeDef
 ```
 
 Optional fields:
+
+- `TransitGatewayMulticastDomainId`: `str`
+- `TransitGatewayAttachmentId`: `str`
+- `SubnetIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+
+## DisassociateTransitGatewayMulticastDomainResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisassociateTransitGatewayMulticastDomainResultResponseTypeDef
+```
+
+Required fields:
 
 - `Associations`:
   [TransitGatewayMulticastDomainAssociationsTypeDef](./type_defs.md#transitgatewaymulticastdomainassociationstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociateTransitGatewayRouteTableResultTypeDef
+## DisassociateTransitGatewayRouteTableRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DisassociateTransitGatewayRouteTableResultTypeDef
+from mypy_boto3_ec2.type_defs import DisassociateTransitGatewayRouteTableRequestTypeDef
 ```
 
+Required fields:
+
+- `TransitGatewayRouteTableId`: `str`
+- `TransitGatewayAttachmentId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## DisassociateTransitGatewayRouteTableResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisassociateTransitGatewayRouteTableResultResponseTypeDef
+```
+
+Required fields:
 
 - `Association`:
   [TransitGatewayAssociationTypeDef](./type_defs.md#transitgatewayassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociateTrunkInterfaceResultTypeDef
+## DisassociateTrunkInterfaceRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DisassociateTrunkInterfaceResultTypeDef
+from mypy_boto3_ec2.type_defs import DisassociateTrunkInterfaceRequestTypeDef
 ```
 
+Required fields:
+
+- `AssociationId`: `str`
+
 Optional fields:
+
+- `ClientToken`: `str`
+- `DryRun`: `bool`
+
+## DisassociateTrunkInterfaceResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisassociateTrunkInterfaceResultResponseTypeDef
+```
+
+Required fields:
 
 - `Return`: `bool`
 - `ClientToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociateVpcCidrBlockResultTypeDef
+## DisassociateVpcCidrBlockRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import DisassociateVpcCidrBlockResultTypeDef
+from mypy_boto3_ec2.type_defs import DisassociateVpcCidrBlockRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AssociationId`: `str`
+
+## DisassociateVpcCidrBlockResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisassociateVpcCidrBlockResultResponseTypeDef
+```
+
+Required fields:
 
 - `Ipv6CidrBlockAssociation`:
   [VpcIpv6CidrBlockAssociationTypeDef](./type_defs.md#vpcipv6cidrblockassociationtypedef)
 - `CidrBlockAssociation`:
   [VpcCidrBlockAssociationTypeDef](./type_defs.md#vpccidrblockassociationtypedef)
 - `VpcId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DiskImageDescriptionTypeDef
 
@@ -5630,15 +12828,27 @@ Optional fields:
 
 - `Count`: `int`
 
-## EnableEbsEncryptionByDefaultResultTypeDef
+## EnableEbsEncryptionByDefaultRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import EnableEbsEncryptionByDefaultResultTypeDef
+from mypy_boto3_ec2.type_defs import EnableEbsEncryptionByDefaultRequestTypeDef
 ```
 
 Optional fields:
 
+- `DryRun`: `bool`
+
+## EnableEbsEncryptionByDefaultResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import EnableEbsEncryptionByDefaultResultResponseTypeDef
+```
+
+Required fields:
+
 - `EbsEncryptionByDefault`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## EnableFastSnapshotRestoreErrorItemTypeDef
 
@@ -5696,69 +12906,209 @@ Optional fields:
 - `DisablingTime`: `datetime`
 - `DisabledTime`: `datetime`
 
-## EnableFastSnapshotRestoresResultTypeDef
+## EnableFastSnapshotRestoresRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import EnableFastSnapshotRestoresResultTypeDef
+from mypy_boto3_ec2.type_defs import EnableFastSnapshotRestoresRequestTypeDef
 ```
 
+Required fields:
+
+- `AvailabilityZones`: `List`\[`str`\]
+- `SourceSnapshotIds`: `List`\[`str`\]
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## EnableFastSnapshotRestoresResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import EnableFastSnapshotRestoresResultResponseTypeDef
+```
+
+Required fields:
 
 - `Successful`:
   `List`\[[EnableFastSnapshotRestoreSuccessItemTypeDef](./type_defs.md#enablefastsnapshotrestoresuccessitemtypedef)\]
 - `Unsuccessful`:
   `List`\[[EnableFastSnapshotRestoreErrorItemTypeDef](./type_defs.md#enablefastsnapshotrestoreerroritemtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## EnableImageDeprecationResultTypeDef
+## EnableImageDeprecationRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import EnableImageDeprecationResultTypeDef
+from mypy_boto3_ec2.type_defs import EnableImageDeprecationRequestTypeDef
 ```
 
+Required fields:
+
+- `ImageId`: `str`
+- `DeprecateAt`: `Union`\[`datetime`, `str`\]
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## EnableImageDeprecationResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import EnableImageDeprecationResultResponseTypeDef
+```
+
+Required fields:
 
 - `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## EnableSerialConsoleAccessResultTypeDef
+## EnableSerialConsoleAccessRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import EnableSerialConsoleAccessResultTypeDef
+from mypy_boto3_ec2.type_defs import EnableSerialConsoleAccessRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+
+## EnableSerialConsoleAccessResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import EnableSerialConsoleAccessResultResponseTypeDef
+```
+
+Required fields:
 
 - `SerialConsoleAccessEnabled`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## EnableTransitGatewayRouteTablePropagationResultTypeDef
+## EnableTransitGatewayRouteTablePropagationRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import EnableTransitGatewayRouteTablePropagationResultTypeDef
+from mypy_boto3_ec2.type_defs import EnableTransitGatewayRouteTablePropagationRequestTypeDef
 ```
 
+Required fields:
+
+- `TransitGatewayRouteTableId`: `str`
+- `TransitGatewayAttachmentId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## EnableTransitGatewayRouteTablePropagationResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import EnableTransitGatewayRouteTablePropagationResultResponseTypeDef
+```
+
+Required fields:
 
 - `Propagation`:
   [TransitGatewayPropagationTypeDef](./type_defs.md#transitgatewaypropagationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## EnableVpcClassicLinkDnsSupportResultTypeDef
+## EnableVgwRoutePropagationRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import EnableVpcClassicLinkDnsSupportResultTypeDef
+from mypy_boto3_ec2.type_defs import EnableVgwRoutePropagationRequestTypeDef
+```
+
+Required fields:
+
+- `GatewayId`: `str`
+- `RouteTableId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## EnableVolumeIORequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import EnableVolumeIORequestTypeDef
+```
+
+Required fields:
+
+- `VolumeId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## EnableVolumeIORequestVolumeTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import EnableVolumeIORequestVolumeTypeDef
 ```
 
 Optional fields:
 
-- `Return`: `bool`
+- `DryRun`: `bool`
 
-## EnableVpcClassicLinkResultTypeDef
+## EnableVpcClassicLinkDnsSupportRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import EnableVpcClassicLinkResultTypeDef
+from mypy_boto3_ec2.type_defs import EnableVpcClassicLinkDnsSupportRequestTypeDef
 ```
 
 Optional fields:
 
+- `VpcId`: `str`
+
+## EnableVpcClassicLinkDnsSupportResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import EnableVpcClassicLinkDnsSupportResultResponseTypeDef
+```
+
+Required fields:
+
 - `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## EnableVpcClassicLinkRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import EnableVpcClassicLinkRequestTypeDef
+```
+
+Required fields:
+
+- `VpcId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## EnableVpcClassicLinkRequestVpcTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import EnableVpcClassicLinkRequestVpcTypeDef
+```
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## EnableVpcClassicLinkResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import EnableVpcClassicLinkResultResponseTypeDef
+```
+
+Required fields:
+
+- `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## EnclaveOptionsRequestTypeDef
 
@@ -5872,35 +13222,89 @@ Optional fields:
 - `VpnGateway`:
   [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 
-## ExportClientVpnClientCertificateRevocationListResultTypeDef
+## ExportClientVpnClientCertificateRevocationListRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ExportClientVpnClientCertificateRevocationListResultTypeDef
+from mypy_boto3_ec2.type_defs import ExportClientVpnClientCertificateRevocationListRequestTypeDef
 ```
 
+Required fields:
+
+- `ClientVpnEndpointId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## ExportClientVpnClientCertificateRevocationListResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ExportClientVpnClientCertificateRevocationListResultResponseTypeDef
+```
+
+Required fields:
 
 - `CertificateRevocationList`: `str`
 - `Status`:
   [ClientCertificateRevocationListStatusTypeDef](./type_defs.md#clientcertificaterevocationliststatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ExportClientVpnClientConfigurationResultTypeDef
+## ExportClientVpnClientConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ExportClientVpnClientConfigurationResultTypeDef
+from mypy_boto3_ec2.type_defs import ExportClientVpnClientConfigurationRequestTypeDef
 ```
 
+Required fields:
+
+- `ClientVpnEndpointId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## ExportClientVpnClientConfigurationResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ExportClientVpnClientConfigurationResultResponseTypeDef
+```
+
+Required fields:
 
 - `ClientConfiguration`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ExportImageResultTypeDef
+## ExportImageRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ExportImageResultTypeDef
+from mypy_boto3_ec2.type_defs import ExportImageRequestTypeDef
 ```
 
+Required fields:
+
+- `DiskImageFormat`: [DiskImageFormatType](./literals.md#diskimageformattype)
+- `ImageId`: `str`
+- `S3ExportLocation`:
+  [ExportTaskS3LocationRequestTypeDef](./type_defs.md#exporttasks3locationrequesttypedef)
+
 Optional fields:
+
+- `ClientToken`: `str`
+- `Description`: `str`
+- `DryRun`: `bool`
+- `RoleName`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## ExportImageResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ExportImageResultResponseTypeDef
+```
+
+Required fields:
 
 - `Description`: `str`
 - `DiskImageFormat`: [DiskImageFormatType](./literals.md#diskimageformattype)
@@ -5913,6 +13317,8 @@ Optional fields:
 - `Status`: `str`
 - `StatusMessage`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ExportImageTaskTypeDef
 
@@ -6003,15 +13409,33 @@ Optional fields:
 - `S3Bucket`: `str`
 - `S3Key`: `str`
 
-## ExportTransitGatewayRoutesResultTypeDef
+## ExportTransitGatewayRoutesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ExportTransitGatewayRoutesResultTypeDef
+from mypy_boto3_ec2.type_defs import ExportTransitGatewayRoutesRequestTypeDef
 ```
+
+Required fields:
+
+- `TransitGatewayRouteTableId`: `str`
+- `S3Bucket`: `str`
 
 Optional fields:
 
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+
+## ExportTransitGatewayRoutesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ExportTransitGatewayRoutesResultResponseTypeDef
+```
+
+Required fields:
+
 - `S3Location`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## FailedQueuedPurchaseDeletionTypeDef
 
@@ -6333,36 +13757,83 @@ Optional fields:
   `List`\[[FpgaDeviceInfoTypeDef](./type_defs.md#fpgadeviceinfotypedef)\]
 - `TotalFpgaMemoryInMiB`: `int`
 
-## GetAssociatedEnclaveCertificateIamRolesResultTypeDef
+## GetAssociatedEnclaveCertificateIamRolesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import GetAssociatedEnclaveCertificateIamRolesResultTypeDef
+from mypy_boto3_ec2.type_defs import GetAssociatedEnclaveCertificateIamRolesRequestTypeDef
 ```
 
 Optional fields:
+
+- `CertificateArn`: `str`
+- `DryRun`: `bool`
+
+## GetAssociatedEnclaveCertificateIamRolesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetAssociatedEnclaveCertificateIamRolesResultResponseTypeDef
+```
+
+Required fields:
 
 - `AssociatedRoles`:
   `List`\[[AssociatedRoleTypeDef](./type_defs.md#associatedroletypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAssociatedIpv6PoolCidrsResultTypeDef
+## GetAssociatedIpv6PoolCidrsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import GetAssociatedIpv6PoolCidrsResultTypeDef
+from mypy_boto3_ec2.type_defs import GetAssociatedIpv6PoolCidrsRequestTypeDef
 ```
 
+Required fields:
+
+- `PoolId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `DryRun`: `bool`
+
+## GetAssociatedIpv6PoolCidrsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetAssociatedIpv6PoolCidrsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Ipv6CidrAssociations`:
   `List`\[[Ipv6CidrAssociationTypeDef](./type_defs.md#ipv6cidrassociationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCapacityReservationUsageResultTypeDef
+## GetCapacityReservationUsageRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import GetCapacityReservationUsageResultTypeDef
+from mypy_boto3_ec2.type_defs import GetCapacityReservationUsageRequestTypeDef
 ```
 
+Required fields:
+
+- `CapacityReservationId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `DryRun`: `bool`
+
+## GetCapacityReservationUsageResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetCapacityReservationUsageResultResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `CapacityReservationId`: `str`
@@ -6373,164 +13844,416 @@ Optional fields:
   [CapacityReservationStateType](./literals.md#capacityreservationstatetype)
 - `InstanceUsages`:
   `List`\[[InstanceUsageTypeDef](./type_defs.md#instanceusagetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCoipPoolUsageResultTypeDef
+## GetCoipPoolUsageRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import GetCoipPoolUsageResultTypeDef
+from mypy_boto3_ec2.type_defs import GetCoipPoolUsageRequestTypeDef
 ```
 
+Required fields:
+
+- `PoolId`: `str`
+
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## GetCoipPoolUsageResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetCoipPoolUsageResultResponseTypeDef
+```
+
+Required fields:
 
 - `CoipPoolId`: `str`
 - `CoipAddressUsages`:
   `List`\[[CoipAddressUsageTypeDef](./type_defs.md#coipaddressusagetypedef)\]
 - `LocalGatewayRouteTableId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetConsoleOutputResultTypeDef
+## GetConsoleOutputRequestInstanceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import GetConsoleOutputResultTypeDef
+from mypy_boto3_ec2.type_defs import GetConsoleOutputRequestInstanceTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `Latest`: `bool`
+
+## GetConsoleOutputRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetConsoleOutputRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `Latest`: `bool`
+
+## GetConsoleOutputResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetConsoleOutputResultResponseTypeDef
+```
+
+Required fields:
 
 - `InstanceId`: `str`
 - `Output`: `str`
 - `Timestamp`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetConsoleScreenshotResultTypeDef
+## GetConsoleScreenshotRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import GetConsoleScreenshotResultTypeDef
+from mypy_boto3_ec2.type_defs import GetConsoleScreenshotRequestTypeDef
 ```
 
+Required fields:
+
+- `InstanceId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `WakeUp`: `bool`
+
+## GetConsoleScreenshotResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetConsoleScreenshotResultResponseTypeDef
+```
+
+Required fields:
 
 - `ImageData`: `str`
 - `InstanceId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDefaultCreditSpecificationResultTypeDef
+## GetDefaultCreditSpecificationRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import GetDefaultCreditSpecificationResultTypeDef
+from mypy_boto3_ec2.type_defs import GetDefaultCreditSpecificationRequestTypeDef
 ```
 
+Required fields:
+
+- `InstanceFamily`:
+  [UnlimitedSupportedInstanceFamilyType](./literals.md#unlimitedsupportedinstancefamilytype)
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## GetDefaultCreditSpecificationResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetDefaultCreditSpecificationResultResponseTypeDef
+```
+
+Required fields:
 
 - `InstanceFamilyCreditSpecification`:
   [InstanceFamilyCreditSpecificationTypeDef](./type_defs.md#instancefamilycreditspecificationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetEbsDefaultKmsKeyIdResultTypeDef
+## GetEbsDefaultKmsKeyIdRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import GetEbsDefaultKmsKeyIdResultTypeDef
+from mypy_boto3_ec2.type_defs import GetEbsDefaultKmsKeyIdRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+
+## GetEbsDefaultKmsKeyIdResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetEbsDefaultKmsKeyIdResultResponseTypeDef
+```
+
+Required fields:
 
 - `KmsKeyId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetEbsEncryptionByDefaultResultTypeDef
+## GetEbsEncryptionByDefaultRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import GetEbsEncryptionByDefaultResultTypeDef
+from mypy_boto3_ec2.type_defs import GetEbsEncryptionByDefaultRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+
+## GetEbsEncryptionByDefaultResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetEbsEncryptionByDefaultResultResponseTypeDef
+```
+
+Required fields:
 
 - `EbsEncryptionByDefault`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFlowLogsIntegrationTemplateResultTypeDef
+## GetFlowLogsIntegrationTemplateRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import GetFlowLogsIntegrationTemplateResultTypeDef
+from mypy_boto3_ec2.type_defs import GetFlowLogsIntegrationTemplateRequestTypeDef
 ```
+
+Required fields:
+
+- `FlowLogId`: `str`
+- `ConfigDeliveryS3DestinationArn`: `str`
+- `IntegrateServices`:
+  [IntegrateServicesTypeDef](./type_defs.md#integrateservicestypedef)
 
 Optional fields:
 
-- `Result`: `str`
+- `DryRun`: `bool`
 
-## GetGroupsForCapacityReservationResultTypeDef
+## GetFlowLogsIntegrationTemplateResultResponseTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import GetGroupsForCapacityReservationResultTypeDef
+from mypy_boto3_ec2.type_defs import GetFlowLogsIntegrationTemplateResultResponseTypeDef
 ```
+
+Required fields:
+
+- `Result`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetGroupsForCapacityReservationRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetGroupsForCapacityReservationRequestTypeDef
+```
+
+Required fields:
+
+- `CapacityReservationId`: `str`
 
 Optional fields:
 
 - `NextToken`: `str`
-- `CapacityReservationGroups`:
-  `List`\[[CapacityReservationGroupTypeDef](./type_defs.md#capacityreservationgrouptypedef)\]
+- `MaxResults`: `int`
+- `DryRun`: `bool`
 
-## GetHostReservationPurchasePreviewResultTypeDef
+## GetGroupsForCapacityReservationResultResponseTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import GetHostReservationPurchasePreviewResultTypeDef
+from mypy_boto3_ec2.type_defs import GetGroupsForCapacityReservationResultResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `NextToken`: `str`
+- `CapacityReservationGroups`:
+  `List`\[[CapacityReservationGroupTypeDef](./type_defs.md#capacityreservationgrouptypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetHostReservationPurchasePreviewRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetHostReservationPurchasePreviewRequestTypeDef
+```
+
+Required fields:
+
+- `HostIdSet`: `List`\[`str`\]
+- `OfferingId`: `str`
+
+## GetHostReservationPurchasePreviewResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetHostReservationPurchasePreviewResultResponseTypeDef
+```
+
+Required fields:
 
 - `CurrencyCode`: `Literal['USD']` (see
   [CurrencyCodeValuesType](./literals.md#currencycodevaluestype))
 - `Purchase`: `List`\[[PurchaseTypeDef](./type_defs.md#purchasetypedef)\]
 - `TotalHourlyPrice`: `str`
 - `TotalUpfrontPrice`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLaunchTemplateDataResultTypeDef
+## GetLaunchTemplateDataRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import GetLaunchTemplateDataResultTypeDef
+from mypy_boto3_ec2.type_defs import GetLaunchTemplateDataRequestTypeDef
 ```
 
+Required fields:
+
+- `InstanceId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## GetLaunchTemplateDataResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetLaunchTemplateDataResultResponseTypeDef
+```
+
+Required fields:
 
 - `LaunchTemplateData`:
   [ResponseLaunchTemplateDataTypeDef](./type_defs.md#responselaunchtemplatedatatypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetManagedPrefixListAssociationsResultTypeDef
+## GetManagedPrefixListAssociationsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import GetManagedPrefixListAssociationsResultTypeDef
+from mypy_boto3_ec2.type_defs import GetManagedPrefixListAssociationsRequestTypeDef
 ```
 
+Required fields:
+
+- `PrefixListId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## GetManagedPrefixListAssociationsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetManagedPrefixListAssociationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `PrefixListAssociations`:
   `List`\[[PrefixListAssociationTypeDef](./type_defs.md#prefixlistassociationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetManagedPrefixListEntriesResultTypeDef
+## GetManagedPrefixListEntriesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import GetManagedPrefixListEntriesResultTypeDef
+from mypy_boto3_ec2.type_defs import GetManagedPrefixListEntriesRequestTypeDef
 ```
 
+Required fields:
+
+- `PrefixListId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `TargetVersion`: `int`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## GetManagedPrefixListEntriesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetManagedPrefixListEntriesResultResponseTypeDef
+```
+
+Required fields:
 
 - `Entries`:
   `List`\[[PrefixListEntryTypeDef](./type_defs.md#prefixlistentrytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPasswordDataResultTypeDef
+## GetPasswordDataRequestInstanceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import GetPasswordDataResultTypeDef
+from mypy_boto3_ec2.type_defs import GetPasswordDataRequestInstanceTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+
+## GetPasswordDataRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetPasswordDataRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## GetPasswordDataResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetPasswordDataResultResponseTypeDef
+```
+
+Required fields:
 
 - `InstanceId`: `str`
 - `PasswordData`: `str`
 - `Timestamp`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetReservedInstancesExchangeQuoteResultTypeDef
+## GetReservedInstancesExchangeQuoteRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import GetReservedInstancesExchangeQuoteResultTypeDef
+from mypy_boto3_ec2.type_defs import GetReservedInstancesExchangeQuoteRequestTypeDef
 ```
 
+Required fields:
+
+- `ReservedInstanceIds`: `List`\[`str`\]
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `TargetConfigurations`:
+  `List`\[[TargetConfigurationRequestTypeDef](./type_defs.md#targetconfigurationrequesttypedef)\]
+
+## GetReservedInstancesExchangeQuoteResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetReservedInstancesExchangeQuoteResultResponseTypeDef
+```
+
+Required fields:
 
 - `CurrencyCode`: `str`
 - `IsValidExchange`: `bool`
@@ -6545,76 +14268,182 @@ Optional fields:
 - `TargetConfigurationValueSet`:
   `List`\[[TargetReservationValueTypeDef](./type_defs.md#targetreservationvaluetypedef)\]
 - `ValidationFailureReason`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSerialConsoleAccessStatusResultTypeDef
+## GetSerialConsoleAccessStatusRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import GetSerialConsoleAccessStatusResultTypeDef
+from mypy_boto3_ec2.type_defs import GetSerialConsoleAccessStatusRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+
+## GetSerialConsoleAccessStatusResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetSerialConsoleAccessStatusResultResponseTypeDef
+```
+
+Required fields:
 
 - `SerialConsoleAccessEnabled`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTransitGatewayAttachmentPropagationsResultTypeDef
+## GetTransitGatewayAttachmentPropagationsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import GetTransitGatewayAttachmentPropagationsResultTypeDef
+from mypy_boto3_ec2.type_defs import GetTransitGatewayAttachmentPropagationsRequestTypeDef
 ```
 
+Required fields:
+
+- `TransitGatewayAttachmentId`: `str`
+
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## GetTransitGatewayAttachmentPropagationsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetTransitGatewayAttachmentPropagationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `TransitGatewayAttachmentPropagations`:
   `List`\[[TransitGatewayAttachmentPropagationTypeDef](./type_defs.md#transitgatewayattachmentpropagationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTransitGatewayMulticastDomainAssociationsResultTypeDef
+## GetTransitGatewayMulticastDomainAssociationsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import GetTransitGatewayMulticastDomainAssociationsResultTypeDef
+from mypy_boto3_ec2.type_defs import GetTransitGatewayMulticastDomainAssociationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `TransitGatewayMulticastDomainId`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## GetTransitGatewayMulticastDomainAssociationsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetTransitGatewayMulticastDomainAssociationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `MulticastDomainAssociations`:
   `List`\[[TransitGatewayMulticastDomainAssociationTypeDef](./type_defs.md#transitgatewaymulticastdomainassociationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTransitGatewayPrefixListReferencesResultTypeDef
+## GetTransitGatewayPrefixListReferencesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import GetTransitGatewayPrefixListReferencesResultTypeDef
+from mypy_boto3_ec2.type_defs import GetTransitGatewayPrefixListReferencesRequestTypeDef
 ```
 
+Required fields:
+
+- `TransitGatewayRouteTableId`: `str`
+
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## GetTransitGatewayPrefixListReferencesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetTransitGatewayPrefixListReferencesResultResponseTypeDef
+```
+
+Required fields:
 
 - `TransitGatewayPrefixListReferences`:
   `List`\[[TransitGatewayPrefixListReferenceTypeDef](./type_defs.md#transitgatewayprefixlistreferencetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTransitGatewayRouteTableAssociationsResultTypeDef
+## GetTransitGatewayRouteTableAssociationsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import GetTransitGatewayRouteTableAssociationsResultTypeDef
+from mypy_boto3_ec2.type_defs import GetTransitGatewayRouteTableAssociationsRequestTypeDef
 ```
 
+Required fields:
+
+- `TransitGatewayRouteTableId`: `str`
+
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## GetTransitGatewayRouteTableAssociationsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetTransitGatewayRouteTableAssociationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Associations`:
   `List`\[[TransitGatewayRouteTableAssociationTypeDef](./type_defs.md#transitgatewayroutetableassociationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTransitGatewayRouteTablePropagationsResultTypeDef
+## GetTransitGatewayRouteTablePropagationsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import GetTransitGatewayRouteTablePropagationsResultTypeDef
+from mypy_boto3_ec2.type_defs import GetTransitGatewayRouteTablePropagationsRequestTypeDef
 ```
 
+Required fields:
+
+- `TransitGatewayRouteTableId`: `str`
+
 Optional fields:
+
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## GetTransitGatewayRouteTablePropagationsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetTransitGatewayRouteTablePropagationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `TransitGatewayRouteTablePropagations`:
   `List`\[[TransitGatewayRouteTablePropagationTypeDef](./type_defs.md#transitgatewayroutetablepropagationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GpuDeviceInfoTypeDef
 
@@ -6886,13 +14715,13 @@ Optional fields:
 - `Resource`: `str`
 - `UseLongIds`: `bool`
 
-## ImageAttributeTypeDef
+## ImageAttributeResponseTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ImageAttributeTypeDef
+from mypy_boto3_ec2.type_defs import ImageAttributeResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `BlockDeviceMappings`:
   `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
@@ -6907,6 +14736,8 @@ Optional fields:
 - `SriovNetSupport`:
   [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
 - `BootMode`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ImageDiskContainerTypeDef
 
@@ -6965,15 +14796,32 @@ Optional fields:
 - `BootMode`: [BootModeValuesType](./literals.md#bootmodevaluestype)
 - `DeprecationTime`: `str`
 
-## ImportClientVpnClientCertificateRevocationListResultTypeDef
+## ImportClientVpnClientCertificateRevocationListRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ImportClientVpnClientCertificateRevocationListResultTypeDef
+from mypy_boto3_ec2.type_defs import ImportClientVpnClientCertificateRevocationListRequestTypeDef
 ```
+
+Required fields:
+
+- `ClientVpnEndpointId`: `str`
+- `CertificateRevocationList`: `str`
 
 Optional fields:
 
+- `DryRun`: `bool`
+
+## ImportClientVpnClientCertificateRevocationListResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ImportClientVpnClientCertificateRevocationListResultResponseTypeDef
+```
+
+Required fields:
+
 - `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ImportImageLicenseConfigurationRequestTypeDef
 
@@ -6995,13 +14843,39 @@ Optional fields:
 
 - `LicenseConfigurationArn`: `str`
 
-## ImportImageResultTypeDef
+## ImportImageRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ImportImageResultTypeDef
+from mypy_boto3_ec2.type_defs import ImportImageRequestTypeDef
 ```
 
 Optional fields:
+
+- `Architecture`: `str`
+- `ClientData`: [ClientDataTypeDef](./type_defs.md#clientdatatypedef)
+- `ClientToken`: `str`
+- `Description`: `str`
+- `DiskContainers`:
+  `List`\[[ImageDiskContainerTypeDef](./type_defs.md#imagediskcontainertypedef)\]
+- `DryRun`: `bool`
+- `Encrypted`: `bool`
+- `Hypervisor`: `str`
+- `KmsKeyId`: `str`
+- `LicenseType`: `str`
+- `Platform`: `str`
+- `RoleName`: `str`
+- `LicenseSpecifications`:
+  `List`\[[ImportImageLicenseConfigurationRequestTypeDef](./type_defs.md#importimagelicenseconfigurationrequesttypedef)\]
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## ImportImageResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ImportImageResultResponseTypeDef
+```
+
+Required fields:
 
 - `Architecture`: `str`
 - `Description`: `str`
@@ -7020,6 +14894,8 @@ Optional fields:
 - `LicenseSpecifications`:
   `List`\[[ImportImageLicenseConfigurationResponseTypeDef](./type_defs.md#importimagelicenseconfigurationresponsetypedef)\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ImportImageTaskTypeDef
 
@@ -7069,16 +14945,37 @@ Optional fields:
 - `SubnetId`: `str`
 - `UserData`: [UserDataTypeDef](./type_defs.md#userdatatypedef)
 
-## ImportInstanceResultTypeDef
+## ImportInstanceRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ImportInstanceResultTypeDef
+from mypy_boto3_ec2.type_defs import ImportInstanceRequestTypeDef
 ```
+
+Required fields:
+
+- `Platform`: `Literal['Windows']` (see
+  [PlatformValuesType](./literals.md#platformvaluestype))
 
 Optional fields:
 
+- `Description`: `str`
+- `DiskImages`: `List`\[[DiskImageTypeDef](./type_defs.md#diskimagetypedef)\]
+- `DryRun`: `bool`
+- `LaunchSpecification`:
+  [ImportInstanceLaunchSpecificationTypeDef](./type_defs.md#importinstancelaunchspecificationtypedef)
+
+## ImportInstanceResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ImportInstanceResultResponseTypeDef
+```
+
+Required fields:
+
 - `ConversionTask`:
   [ConversionTaskTypeDef](./type_defs.md#conversiontasktypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ImportInstanceTaskDetailsTypeDef
 
@@ -7113,32 +15010,90 @@ Optional fields:
 - `Volume`:
   [DiskImageVolumeDescriptionTypeDef](./type_defs.md#diskimagevolumedescriptiontypedef)
 
-## ImportKeyPairResultTypeDef
+## ImportKeyPairRequestServiceResourceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ImportKeyPairResultTypeDef
+from mypy_boto3_ec2.type_defs import ImportKeyPairRequestServiceResourceTypeDef
 ```
 
+Required fields:
+
+- `KeyName`: `str`
+- `PublicKeyMaterial`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## ImportKeyPairRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ImportKeyPairRequestTypeDef
+```
+
+Required fields:
+
+- `KeyName`: `str`
+- `PublicKeyMaterial`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## ImportKeyPairResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ImportKeyPairResultResponseTypeDef
+```
+
+Required fields:
 
 - `KeyFingerprint`: `str`
 - `KeyName`: `str`
 - `KeyPairId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ImportSnapshotResultTypeDef
+## ImportSnapshotRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ImportSnapshotResultTypeDef
+from mypy_boto3_ec2.type_defs import ImportSnapshotRequestTypeDef
 ```
 
 Optional fields:
+
+- `ClientData`: [ClientDataTypeDef](./type_defs.md#clientdatatypedef)
+- `ClientToken`: `str`
+- `Description`: `str`
+- `DiskContainer`:
+  [SnapshotDiskContainerTypeDef](./type_defs.md#snapshotdiskcontainertypedef)
+- `DryRun`: `bool`
+- `Encrypted`: `bool`
+- `KmsKeyId`: `str`
+- `RoleName`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## ImportSnapshotResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ImportSnapshotResultResponseTypeDef
+```
+
+Required fields:
 
 - `Description`: `str`
 - `ImportTaskId`: `str`
 - `SnapshotTaskDetail`:
   [SnapshotTaskDetailTypeDef](./type_defs.md#snapshottaskdetailtypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ImportSnapshotTaskTypeDef
 
@@ -7154,16 +15109,35 @@ Optional fields:
   [SnapshotTaskDetailTypeDef](./type_defs.md#snapshottaskdetailtypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## ImportVolumeResultTypeDef
+## ImportVolumeRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ImportVolumeResultTypeDef
+from mypy_boto3_ec2.type_defs import ImportVolumeRequestTypeDef
 ```
+
+Required fields:
+
+- `AvailabilityZone`: `str`
+- `Image`: [DiskImageDetailTypeDef](./type_defs.md#diskimagedetailtypedef)
+- `Volume`: [VolumeDetailTypeDef](./type_defs.md#volumedetailtypedef)
 
 Optional fields:
 
+- `Description`: `str`
+- `DryRun`: `bool`
+
+## ImportVolumeResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ImportVolumeResultResponseTypeDef
+```
+
+Required fields:
+
 - `ConversionTask`:
   [ConversionTaskTypeDef](./type_defs.md#conversiontasktypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ImportVolumeTaskDetailsTypeDef
 
@@ -7204,13 +15178,13 @@ Optional fields:
 - `Name`: `str`
 - `Manufacturer`: `str`
 
-## InstanceAttributeTypeDef
+## InstanceAttributeResponseTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import InstanceAttributeTypeDef
+from mypy_boto3_ec2.type_defs import InstanceAttributeResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Groups`:
   `List`\[[GroupIdentifierTypeDef](./type_defs.md#groupidentifiertypedef)\]
@@ -7239,6 +15213,8 @@ Optional fields:
 - `SriovNetSupport`:
   [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
 - `UserData`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## InstanceBlockDeviceMappingSpecificationTypeDef
 
@@ -7310,6 +15286,17 @@ Optional fields:
 
 - `InstanceId`: `str`
 - `CpuCredits`: `str`
+
+## InstanceDeleteTagsRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import InstanceDeleteTagsRequestTypeDef
+```
+
+Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `DryRun`: `bool`
 
 ## InstanceExportDetailsTypeDef
 
@@ -7885,19 +15872,21 @@ Optional fields:
 - `KeyName`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## KeyPairTypeDef
+## KeyPairResponseTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import KeyPairTypeDef
+from mypy_boto3_ec2.type_defs import KeyPairResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `KeyFingerprint`: `str`
 - `KeyMaterial`: `str`
 - `KeyName`: `str`
 - `KeyPairId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LastErrorTypeDef
 
@@ -8388,7 +16377,7 @@ Optional fields:
 - `SpotInstanceType`:
   [SpotInstanceTypeType](./literals.md#spotinstancetypetype)
 - `BlockDurationMinutes`: `int`
-- `ValidUntil`: `datetime`
+- `ValidUntil`: `Union`\[`datetime`, `str`\]
 - `InstanceInterruptionBehavior`:
   [InstanceInterruptionBehaviorType](./literals.md#instanceinterruptionbehaviortype)
 
@@ -8696,230 +16685,892 @@ Optional fields:
 
 - `SizeInMiB`: `int`
 
-## ModifyAddressAttributeResultTypeDef
+## ModifyAddressAttributeRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyAddressAttributeResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyAddressAttributeRequestTypeDef
 ```
 
+Required fields:
+
+- `AllocationId`: `str`
+
 Optional fields:
+
+- `DomainName`: `str`
+- `DryRun`: `bool`
+
+## ModifyAddressAttributeResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyAddressAttributeResultResponseTypeDef
+```
+
+Required fields:
 
 - `Address`: [AddressAttributeTypeDef](./type_defs.md#addressattributetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyAvailabilityZoneGroupResultTypeDef
+## ModifyAvailabilityZoneGroupRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyAvailabilityZoneGroupResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyAvailabilityZoneGroupRequestTypeDef
 ```
 
+Required fields:
+
+- `GroupName`: `str`
+- `OptInStatus`:
+  [ModifyAvailabilityZoneOptInStatusType](./literals.md#modifyavailabilityzoneoptinstatustype)
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## ModifyAvailabilityZoneGroupResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyAvailabilityZoneGroupResultResponseTypeDef
+```
+
+Required fields:
 
 - `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyCapacityReservationResultTypeDef
+## ModifyCapacityReservationRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyCapacityReservationResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyCapacityReservationRequestTypeDef
 ```
 
+Required fields:
+
+- `CapacityReservationId`: `str`
+
 Optional fields:
+
+- `InstanceCount`: `int`
+- `EndDate`: `Union`\[`datetime`, `str`\]
+- `EndDateType`: [EndDateTypeType](./literals.md#enddatetypetype)
+- `Accept`: `bool`
+- `DryRun`: `bool`
+
+## ModifyCapacityReservationResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyCapacityReservationResultResponseTypeDef
+```
+
+Required fields:
 
 - `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyClientVpnEndpointResultTypeDef
+## ModifyClientVpnEndpointRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyClientVpnEndpointResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyClientVpnEndpointRequestTypeDef
 ```
 
+Required fields:
+
+- `ClientVpnEndpointId`: `str`
+
 Optional fields:
+
+- `ServerCertificateArn`: `str`
+- `ConnectionLogOptions`:
+  [ConnectionLogOptionsTypeDef](./type_defs.md#connectionlogoptionstypedef)
+- `DnsServers`:
+  [DnsServersOptionsModifyStructureTypeDef](./type_defs.md#dnsserversoptionsmodifystructuretypedef)
+- `VpnPort`: `int`
+- `Description`: `str`
+- `SplitTunnel`: `bool`
+- `DryRun`: `bool`
+- `SecurityGroupIds`: `List`\[`str`\]
+- `VpcId`: `str`
+- `SelfServicePortal`:
+  [SelfServicePortalType](./literals.md#selfserviceportaltype)
+- `ClientConnectOptions`:
+  [ClientConnectOptionsTypeDef](./type_defs.md#clientconnectoptionstypedef)
+
+## ModifyClientVpnEndpointResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyClientVpnEndpointResultResponseTypeDef
+```
+
+Required fields:
 
 - `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyDefaultCreditSpecificationResultTypeDef
+## ModifyDefaultCreditSpecificationRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyDefaultCreditSpecificationResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyDefaultCreditSpecificationRequestTypeDef
 ```
 
+Required fields:
+
+- `InstanceFamily`:
+  [UnlimitedSupportedInstanceFamilyType](./literals.md#unlimitedsupportedinstancefamilytype)
+- `CpuCredits`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## ModifyDefaultCreditSpecificationResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyDefaultCreditSpecificationResultResponseTypeDef
+```
+
+Required fields:
 
 - `InstanceFamilyCreditSpecification`:
   [InstanceFamilyCreditSpecificationTypeDef](./type_defs.md#instancefamilycreditspecificationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyEbsDefaultKmsKeyIdResultTypeDef
+## ModifyEbsDefaultKmsKeyIdRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyEbsDefaultKmsKeyIdResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyEbsDefaultKmsKeyIdRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `KmsKeyId`: `str`
 
-## ModifyFleetResultTypeDef
+Optional fields:
+
+- `DryRun`: `bool`
+
+## ModifyEbsDefaultKmsKeyIdResultResponseTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyFleetResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyEbsDefaultKmsKeyIdResultResponseTypeDef
 ```
 
+Required fields:
+
+- `KmsKeyId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ModifyFleetRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyFleetRequestTypeDef
+```
+
+Required fields:
+
+- `FleetId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `ExcessCapacityTerminationPolicy`:
+  [FleetExcessCapacityTerminationPolicyType](./literals.md#fleetexcesscapacityterminationpolicytype)
+- `LaunchTemplateConfigs`:
+  `List`\[[FleetLaunchTemplateConfigRequestTypeDef](./type_defs.md#fleetlaunchtemplateconfigrequesttypedef)\]
+- `TargetCapacitySpecification`:
+  [TargetCapacitySpecificationRequestTypeDef](./type_defs.md#targetcapacityspecificationrequesttypedef)
+
+## ModifyFleetResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyFleetResultResponseTypeDef
+```
+
+Required fields:
 
 - `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyFpgaImageAttributeResultTypeDef
+## ModifyFpgaImageAttributeRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyFpgaImageAttributeResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyFpgaImageAttributeRequestTypeDef
 ```
 
+Required fields:
+
+- `FpgaImageId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `Attribute`:
+  [FpgaImageAttributeNameType](./literals.md#fpgaimageattributenametype)
+- `OperationType`: [OperationTypeType](./literals.md#operationtypetype)
+- `UserIds`: `List`\[`str`\]
+- `UserGroups`: `List`\[`str`\]
+- `ProductCodes`: `List`\[`str`\]
+- `LoadPermission`:
+  [LoadPermissionModificationsTypeDef](./type_defs.md#loadpermissionmodificationstypedef)
+- `Description`: `str`
+- `Name`: `str`
+
+## ModifyFpgaImageAttributeResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyFpgaImageAttributeResultResponseTypeDef
+```
+
+Required fields:
 
 - `FpgaImageAttribute`:
   [FpgaImageAttributeTypeDef](./type_defs.md#fpgaimageattributetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyHostsResultTypeDef
+## ModifyHostsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyHostsResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyHostsRequestTypeDef
 ```
 
+Required fields:
+
+- `HostIds`: `List`\[`str`\]
+
 Optional fields:
+
+- `AutoPlacement`: [AutoPlacementType](./literals.md#autoplacementtype)
+- `HostRecovery`: [HostRecoveryType](./literals.md#hostrecoverytype)
+- `InstanceType`: `str`
+- `InstanceFamily`: `str`
+
+## ModifyHostsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyHostsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Successful`: `List`\[`str`\]
 - `Unsuccessful`:
   `List`\[[UnsuccessfulItemTypeDef](./type_defs.md#unsuccessfulitemtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyInstanceCapacityReservationAttributesResultTypeDef
+## ModifyIdFormatRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyInstanceCapacityReservationAttributesResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyIdFormatRequestTypeDef
+```
+
+Required fields:
+
+- `Resource`: `str`
+- `UseLongIds`: `bool`
+
+## ModifyIdentityIdFormatRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyIdentityIdFormatRequestTypeDef
+```
+
+Required fields:
+
+- `PrincipalArn`: `str`
+- `Resource`: `str`
+- `UseLongIds`: `bool`
+
+## ModifyImageAttributeRequestImageTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyImageAttributeRequestImageTypeDef
 ```
 
 Optional fields:
+
+- `Attribute`: `str`
+- `Description`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
+- `LaunchPermission`:
+  [LaunchPermissionModificationsTypeDef](./type_defs.md#launchpermissionmodificationstypedef)
+- `OperationType`: [OperationTypeType](./literals.md#operationtypetype)
+- `ProductCodes`: `List`\[`str`\]
+- `UserGroups`: `List`\[`str`\]
+- `UserIds`: `List`\[`str`\]
+- `Value`: `str`
+- `DryRun`: `bool`
+
+## ModifyImageAttributeRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyImageAttributeRequestTypeDef
+```
+
+Required fields:
+
+- `ImageId`: `str`
+
+Optional fields:
+
+- `Attribute`: `str`
+- `Description`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
+- `LaunchPermission`:
+  [LaunchPermissionModificationsTypeDef](./type_defs.md#launchpermissionmodificationstypedef)
+- `OperationType`: [OperationTypeType](./literals.md#operationtypetype)
+- `ProductCodes`: `List`\[`str`\]
+- `UserGroups`: `List`\[`str`\]
+- `UserIds`: `List`\[`str`\]
+- `Value`: `str`
+- `DryRun`: `bool`
+
+## ModifyInstanceAttributeRequestInstanceTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyInstanceAttributeRequestInstanceTypeDef
+```
+
+Optional fields:
+
+- `SourceDestCheck`:
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+- `Attribute`:
+  [InstanceAttributeNameType](./literals.md#instanceattributenametype)
+- `BlockDeviceMappings`:
+  `List`\[[InstanceBlockDeviceMappingSpecificationTypeDef](./type_defs.md#instanceblockdevicemappingspecificationtypedef)\]
+- `DisableApiTermination`:
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+- `DryRun`: `bool`
+- `EbsOptimized`:
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+- `EnaSupport`:
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+- `Groups`: `List`\[`str`\]
+- `InstanceInitiatedShutdownBehavior`:
+  [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
+- `InstanceType`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
+- `Kernel`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
+- `Ramdisk`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
+- `SriovNetSupport`:
+  [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
+- `UserData`:
+  [BlobAttributeValueTypeDef](./type_defs.md#blobattributevaluetypedef)
+- `Value`: `str`
+
+## ModifyInstanceAttributeRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyInstanceAttributeRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+
+Optional fields:
+
+- `SourceDestCheck`:
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+- `Attribute`:
+  [InstanceAttributeNameType](./literals.md#instanceattributenametype)
+- `BlockDeviceMappings`:
+  `List`\[[InstanceBlockDeviceMappingSpecificationTypeDef](./type_defs.md#instanceblockdevicemappingspecificationtypedef)\]
+- `DisableApiTermination`:
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+- `DryRun`: `bool`
+- `EbsOptimized`:
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+- `EnaSupport`:
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+- `Groups`: `List`\[`str`\]
+- `InstanceInitiatedShutdownBehavior`:
+  [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
+- `InstanceType`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
+- `Kernel`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
+- `Ramdisk`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
+- `SriovNetSupport`:
+  [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
+- `UserData`:
+  [BlobAttributeValueTypeDef](./type_defs.md#blobattributevaluetypedef)
+- `Value`: `str`
+
+## ModifyInstanceCapacityReservationAttributesRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyInstanceCapacityReservationAttributesRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `CapacityReservationSpecification`:
+  [CapacityReservationSpecificationTypeDef](./type_defs.md#capacityreservationspecificationtypedef)
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## ModifyInstanceCapacityReservationAttributesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyInstanceCapacityReservationAttributesResultResponseTypeDef
+```
+
+Required fields:
 
 - `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyInstanceCreditSpecificationResultTypeDef
+## ModifyInstanceCreditSpecificationRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyInstanceCreditSpecificationResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyInstanceCreditSpecificationRequestTypeDef
 ```
 
+Required fields:
+
+- `InstanceCreditSpecifications`:
+  `List`\[[InstanceCreditSpecificationRequestTypeDef](./type_defs.md#instancecreditspecificationrequesttypedef)\]
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `ClientToken`: `str`
+
+## ModifyInstanceCreditSpecificationResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyInstanceCreditSpecificationResultResponseTypeDef
+```
+
+Required fields:
 
 - `SuccessfulInstanceCreditSpecifications`:
   `List`\[[SuccessfulInstanceCreditSpecificationItemTypeDef](./type_defs.md#successfulinstancecreditspecificationitemtypedef)\]
 - `UnsuccessfulInstanceCreditSpecifications`:
   `List`\[[UnsuccessfulInstanceCreditSpecificationItemTypeDef](./type_defs.md#unsuccessfulinstancecreditspecificationitemtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyInstanceEventStartTimeResultTypeDef
+## ModifyInstanceEventStartTimeRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyInstanceEventStartTimeResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyInstanceEventStartTimeRequestTypeDef
 ```
 
+Required fields:
+
+- `InstanceId`: `str`
+- `InstanceEventId`: `str`
+- `NotBefore`: `Union`\[`datetime`, `str`\]
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## ModifyInstanceEventStartTimeResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyInstanceEventStartTimeResultResponseTypeDef
+```
+
+Required fields:
 
 - `Event`:
   [InstanceStatusEventTypeDef](./type_defs.md#instancestatuseventtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyInstanceMetadataOptionsResultTypeDef
+## ModifyInstanceMetadataOptionsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyInstanceMetadataOptionsResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyInstanceMetadataOptionsRequestTypeDef
 ```
 
+Required fields:
+
+- `InstanceId`: `str`
+
 Optional fields:
+
+- `HttpTokens`: [HttpTokensStateType](./literals.md#httptokensstatetype)
+- `HttpPutResponseHopLimit`: `int`
+- `HttpEndpoint`:
+  [InstanceMetadataEndpointStateType](./literals.md#instancemetadataendpointstatetype)
+- `DryRun`: `bool`
+
+## ModifyInstanceMetadataOptionsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyInstanceMetadataOptionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `InstanceId`: `str`
 - `InstanceMetadataOptions`:
   [InstanceMetadataOptionsResponseTypeDef](./type_defs.md#instancemetadataoptionsresponsetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyInstancePlacementResultTypeDef
+## ModifyInstancePlacementRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyInstancePlacementResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyInstancePlacementRequestTypeDef
 ```
 
+Required fields:
+
+- `InstanceId`: `str`
+
 Optional fields:
+
+- `Affinity`: [AffinityType](./literals.md#affinitytype)
+- `GroupName`: `str`
+- `HostId`: `str`
+- `Tenancy`: [HostTenancyType](./literals.md#hosttenancytype)
+- `PartitionNumber`: `int`
+- `HostResourceGroupArn`: `str`
+
+## ModifyInstancePlacementResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyInstancePlacementResultResponseTypeDef
+```
+
+Required fields:
 
 - `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyLaunchTemplateResultTypeDef
+## ModifyLaunchTemplateRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyLaunchTemplateResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyLaunchTemplateRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `ClientToken`: `str`
+- `LaunchTemplateId`: `str`
+- `LaunchTemplateName`: `str`
+- `DefaultVersion`: `str`
+
+## ModifyLaunchTemplateResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyLaunchTemplateResultResponseTypeDef
+```
+
+Required fields:
 
 - `LaunchTemplate`:
   [LaunchTemplateTypeDef](./type_defs.md#launchtemplatetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyManagedPrefixListResultTypeDef
+## ModifyManagedPrefixListRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyManagedPrefixListResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyManagedPrefixListRequestTypeDef
 ```
 
+Required fields:
+
+- `PrefixListId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `CurrentVersion`: `int`
+- `PrefixListName`: `str`
+- `AddEntries`:
+  `List`\[[AddPrefixListEntryTypeDef](./type_defs.md#addprefixlistentrytypedef)\]
+- `RemoveEntries`:
+  `List`\[[RemovePrefixListEntryTypeDef](./type_defs.md#removeprefixlistentrytypedef)\]
+
+## ModifyManagedPrefixListResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyManagedPrefixListResultResponseTypeDef
+```
+
+Required fields:
 
 - `PrefixList`:
   [ManagedPrefixListTypeDef](./type_defs.md#managedprefixlisttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyReservedInstancesResultTypeDef
+## ModifyNetworkInterfaceAttributeRequestNetworkInterfaceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyReservedInstancesResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyNetworkInterfaceAttributeRequestNetworkInterfaceTypeDef
 ```
 
 Optional fields:
+
+- `Attachment`:
+  [NetworkInterfaceAttachmentChangesTypeDef](./type_defs.md#networkinterfaceattachmentchangestypedef)
+- `Description`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
+- `DryRun`: `bool`
+- `Groups`: `List`\[`str`\]
+- `SourceDestCheck`:
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+
+## ModifyNetworkInterfaceAttributeRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyNetworkInterfaceAttributeRequestTypeDef
+```
+
+Required fields:
+
+- `NetworkInterfaceId`: `str`
+
+Optional fields:
+
+- `Attachment`:
+  [NetworkInterfaceAttachmentChangesTypeDef](./type_defs.md#networkinterfaceattachmentchangestypedef)
+- `Description`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
+- `DryRun`: `bool`
+- `Groups`: `List`\[`str`\]
+- `SourceDestCheck`:
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+
+## ModifyReservedInstancesRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyReservedInstancesRequestTypeDef
+```
+
+Required fields:
+
+- `ReservedInstancesIds`: `List`\[`str`\]
+- `TargetConfigurations`:
+  `List`\[[ReservedInstancesConfigurationTypeDef](./type_defs.md#reservedinstancesconfigurationtypedef)\]
+
+Optional fields:
+
+- `ClientToken`: `str`
+
+## ModifyReservedInstancesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyReservedInstancesResultResponseTypeDef
+```
+
+Required fields:
 
 - `ReservedInstancesModificationId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifySpotFleetRequestResponseTypeDef
+## ModifySnapshotAttributeRequestSnapshotTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifySpotFleetRequestResponseTypeDef
+from mypy_boto3_ec2.type_defs import ModifySnapshotAttributeRequestSnapshotTypeDef
 ```
 
 Optional fields:
+
+- `Attribute`:
+  [SnapshotAttributeNameType](./literals.md#snapshotattributenametype)
+- `CreateVolumePermission`:
+  [CreateVolumePermissionModificationsTypeDef](./type_defs.md#createvolumepermissionmodificationstypedef)
+- `GroupNames`: `List`\[`str`\]
+- `OperationType`: [OperationTypeType](./literals.md#operationtypetype)
+- `UserIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+
+## ModifySnapshotAttributeRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifySnapshotAttributeRequestTypeDef
+```
+
+Required fields:
+
+- `SnapshotId`: `str`
+
+Optional fields:
+
+- `Attribute`:
+  [SnapshotAttributeNameType](./literals.md#snapshotattributenametype)
+- `CreateVolumePermission`:
+  [CreateVolumePermissionModificationsTypeDef](./type_defs.md#createvolumepermissionmodificationstypedef)
+- `GroupNames`: `List`\[`str`\]
+- `OperationType`: [OperationTypeType](./literals.md#operationtypetype)
+- `UserIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+
+## ModifySpotFleetRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifySpotFleetRequestRequestTypeDef
+```
+
+Required fields:
+
+- `SpotFleetRequestId`: `str`
+
+Optional fields:
+
+- `ExcessCapacityTerminationPolicy`:
+  [ExcessCapacityTerminationPolicyType](./literals.md#excesscapacityterminationpolicytype)
+- `LaunchTemplateConfigs`:
+  `List`\[[LaunchTemplateConfigTypeDef](./type_defs.md#launchtemplateconfigtypedef)\]
+- `TargetCapacity`: `int`
+- `OnDemandTargetCapacity`: `int`
+
+## ModifySpotFleetRequestResponseResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifySpotFleetRequestResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyTrafficMirrorFilterNetworkServicesResultTypeDef
+## ModifySubnetAttributeRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyTrafficMirrorFilterNetworkServicesResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifySubnetAttributeRequestTypeDef
 ```
 
+Required fields:
+
+- `SubnetId`: `str`
+
 Optional fields:
+
+- `AssignIpv6AddressOnCreation`:
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+- `MapPublicIpOnLaunch`:
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+- `MapCustomerOwnedIpOnLaunch`:
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+- `CustomerOwnedIpv4Pool`: `str`
+
+## ModifyTrafficMirrorFilterNetworkServicesRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyTrafficMirrorFilterNetworkServicesRequestTypeDef
+```
+
+Required fields:
+
+- `TrafficMirrorFilterId`: `str`
+
+Optional fields:
+
+- `AddNetworkServices`: `List`\[`Literal['amazon-dns']` (see
+  [TrafficMirrorNetworkServiceType](./literals.md#trafficmirrornetworkservicetype))\]
+- `RemoveNetworkServices`: `List`\[`Literal['amazon-dns']` (see
+  [TrafficMirrorNetworkServiceType](./literals.md#trafficmirrornetworkservicetype))\]
+- `DryRun`: `bool`
+
+## ModifyTrafficMirrorFilterNetworkServicesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyTrafficMirrorFilterNetworkServicesResultResponseTypeDef
+```
+
+Required fields:
 
 - `TrafficMirrorFilter`:
   [TrafficMirrorFilterTypeDef](./type_defs.md#trafficmirrorfiltertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyTrafficMirrorFilterRuleResultTypeDef
+## ModifyTrafficMirrorFilterRuleRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyTrafficMirrorFilterRuleResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyTrafficMirrorFilterRuleRequestTypeDef
 ```
 
+Required fields:
+
+- `TrafficMirrorFilterRuleId`: `str`
+
 Optional fields:
+
+- `TrafficDirection`:
+  [TrafficDirectionType](./literals.md#trafficdirectiontype)
+- `RuleNumber`: `int`
+- `RuleAction`:
+  [TrafficMirrorRuleActionType](./literals.md#trafficmirrorruleactiontype)
+- `DestinationPortRange`:
+  [TrafficMirrorPortRangeRequestTypeDef](./type_defs.md#trafficmirrorportrangerequesttypedef)
+- `SourcePortRange`:
+  [TrafficMirrorPortRangeRequestTypeDef](./type_defs.md#trafficmirrorportrangerequesttypedef)
+- `Protocol`: `int`
+- `DestinationCidrBlock`: `str`
+- `SourceCidrBlock`: `str`
+- `Description`: `str`
+- `RemoveFields`:
+  `List`\[[TrafficMirrorFilterRuleFieldType](./literals.md#trafficmirrorfilterrulefieldtype)\]
+- `DryRun`: `bool`
+
+## ModifyTrafficMirrorFilterRuleResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyTrafficMirrorFilterRuleResultResponseTypeDef
+```
+
+Required fields:
 
 - `TrafficMirrorFilterRule`:
   [TrafficMirrorFilterRuleTypeDef](./type_defs.md#trafficmirrorfilterruletypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyTrafficMirrorSessionResultTypeDef
+## ModifyTrafficMirrorSessionRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyTrafficMirrorSessionResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyTrafficMirrorSessionRequestTypeDef
 ```
+
+Required fields:
+
+- `TrafficMirrorSessionId`: `str`
 
 Optional fields:
 
+- `TrafficMirrorTargetId`: `str`
+- `TrafficMirrorFilterId`: `str`
+- `PacketLength`: `int`
+- `SessionNumber`: `int`
+- `VirtualNetworkId`: `int`
+- `Description`: `str`
+- `RemoveFields`:
+  `List`\[[TrafficMirrorSessionFieldType](./literals.md#trafficmirrorsessionfieldtype)\]
+- `DryRun`: `bool`
+
+## ModifyTrafficMirrorSessionResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyTrafficMirrorSessionResultResponseTypeDef
+```
+
+Required fields:
+
 - `TrafficMirrorSession`:
   [TrafficMirrorSessionTypeDef](./type_defs.md#trafficmirrorsessiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ModifyTransitGatewayOptionsTypeDef
 
@@ -8943,27 +17594,65 @@ Optional fields:
   [DefaultRouteTablePropagationValueType](./literals.md#defaultroutetablepropagationvaluetype)
 - `PropagationDefaultRouteTableId`: `str`
 
-## ModifyTransitGatewayPrefixListReferenceResultTypeDef
+## ModifyTransitGatewayPrefixListReferenceRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyTransitGatewayPrefixListReferenceResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyTransitGatewayPrefixListReferenceRequestTypeDef
 ```
 
+Required fields:
+
+- `TransitGatewayRouteTableId`: `str`
+- `PrefixListId`: `str`
+
 Optional fields:
+
+- `TransitGatewayAttachmentId`: `str`
+- `Blackhole`: `bool`
+- `DryRun`: `bool`
+
+## ModifyTransitGatewayPrefixListReferenceResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyTransitGatewayPrefixListReferenceResultResponseTypeDef
+```
+
+Required fields:
 
 - `TransitGatewayPrefixListReference`:
   [TransitGatewayPrefixListReferenceTypeDef](./type_defs.md#transitgatewayprefixlistreferencetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyTransitGatewayResultTypeDef
+## ModifyTransitGatewayRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyTransitGatewayResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyTransitGatewayRequestTypeDef
 ```
+
+Required fields:
+
+- `TransitGatewayId`: `str`
 
 Optional fields:
 
+- `Description`: `str`
+- `Options`:
+  [ModifyTransitGatewayOptionsTypeDef](./type_defs.md#modifytransitgatewayoptionstypedef)
+- `DryRun`: `bool`
+
+## ModifyTransitGatewayResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyTransitGatewayResultResponseTypeDef
+```
+
+Required fields:
+
 - `TransitGateway`:
   [TransitGatewayTypeDef](./type_defs.md#transitgatewaytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ModifyTransitGatewayVpcAttachmentRequestOptionsTypeDef
 
@@ -8978,130 +17667,426 @@ Optional fields:
 - `ApplianceModeSupport`:
   [ApplianceModeSupportValueType](./literals.md#appliancemodesupportvaluetype)
 
-## ModifyTransitGatewayVpcAttachmentResultTypeDef
+## ModifyTransitGatewayVpcAttachmentRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyTransitGatewayVpcAttachmentResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyTransitGatewayVpcAttachmentRequestTypeDef
 ```
 
+Required fields:
+
+- `TransitGatewayAttachmentId`: `str`
+
 Optional fields:
+
+- `AddSubnetIds`: `List`\[`str`\]
+- `RemoveSubnetIds`: `List`\[`str`\]
+- `Options`:
+  [ModifyTransitGatewayVpcAttachmentRequestOptionsTypeDef](./type_defs.md#modifytransitgatewayvpcattachmentrequestoptionstypedef)
+- `DryRun`: `bool`
+
+## ModifyTransitGatewayVpcAttachmentResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyTransitGatewayVpcAttachmentResultResponseTypeDef
+```
+
+Required fields:
 
 - `TransitGatewayVpcAttachment`:
   [TransitGatewayVpcAttachmentTypeDef](./type_defs.md#transitgatewayvpcattachmenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyVolumeResultTypeDef
+## ModifyVolumeAttributeRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyVolumeResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyVolumeAttributeRequestTypeDef
+```
+
+Required fields:
+
+- `VolumeId`: `str`
+
+Optional fields:
+
+- `AutoEnableIO`:
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+- `DryRun`: `bool`
+
+## ModifyVolumeAttributeRequestVolumeTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyVolumeAttributeRequestVolumeTypeDef
 ```
 
 Optional fields:
+
+- `AutoEnableIO`:
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+- `DryRun`: `bool`
+
+## ModifyVolumeRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyVolumeRequestTypeDef
+```
+
+Required fields:
+
+- `VolumeId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `Size`: `int`
+- `VolumeType`: [VolumeTypeType](./literals.md#volumetypetype)
+- `Iops`: `int`
+- `Throughput`: `int`
+- `MultiAttachEnabled`: `bool`
+
+## ModifyVolumeResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyVolumeResultResponseTypeDef
+```
+
+Required fields:
 
 - `VolumeModification`:
   [VolumeModificationTypeDef](./type_defs.md#volumemodificationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyVpcEndpointConnectionNotificationResultTypeDef
+## ModifyVpcAttributeRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyVpcEndpointConnectionNotificationResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyVpcAttributeRequestTypeDef
+```
+
+Required fields:
+
+- `VpcId`: `str`
+
+Optional fields:
+
+- `EnableDnsHostnames`:
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+- `EnableDnsSupport`:
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+
+## ModifyVpcAttributeRequestVpcTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyVpcAttributeRequestVpcTypeDef
 ```
 
 Optional fields:
+
+- `EnableDnsHostnames`:
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+- `EnableDnsSupport`:
+  [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
+
+## ModifyVpcEndpointConnectionNotificationRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyVpcEndpointConnectionNotificationRequestTypeDef
+```
+
+Required fields:
+
+- `ConnectionNotificationId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `ConnectionNotificationArn`: `str`
+- `ConnectionEvents`: `List`\[`str`\]
+
+## ModifyVpcEndpointConnectionNotificationResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyVpcEndpointConnectionNotificationResultResponseTypeDef
+```
+
+Required fields:
 
 - `ReturnValue`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyVpcEndpointResultTypeDef
+## ModifyVpcEndpointRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyVpcEndpointResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyVpcEndpointRequestTypeDef
 ```
 
+Required fields:
+
+- `VpcEndpointId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `ResetPolicy`: `bool`
+- `PolicyDocument`: `str`
+- `AddRouteTableIds`: `List`\[`str`\]
+- `RemoveRouteTableIds`: `List`\[`str`\]
+- `AddSubnetIds`: `List`\[`str`\]
+- `RemoveSubnetIds`: `List`\[`str`\]
+- `AddSecurityGroupIds`: `List`\[`str`\]
+- `RemoveSecurityGroupIds`: `List`\[`str`\]
+- `PrivateDnsEnabled`: `bool`
+
+## ModifyVpcEndpointResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyVpcEndpointResultResponseTypeDef
+```
+
+Required fields:
 
 - `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyVpcEndpointServiceConfigurationResultTypeDef
+## ModifyVpcEndpointServiceConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyVpcEndpointServiceConfigurationResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyVpcEndpointServiceConfigurationRequestTypeDef
 ```
 
+Required fields:
+
+- `ServiceId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `PrivateDnsName`: `str`
+- `RemovePrivateDnsName`: `bool`
+- `AcceptanceRequired`: `bool`
+- `AddNetworkLoadBalancerArns`: `List`\[`str`\]
+- `RemoveNetworkLoadBalancerArns`: `List`\[`str`\]
+- `AddGatewayLoadBalancerArns`: `List`\[`str`\]
+- `RemoveGatewayLoadBalancerArns`: `List`\[`str`\]
+
+## ModifyVpcEndpointServiceConfigurationResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyVpcEndpointServiceConfigurationResultResponseTypeDef
+```
+
+Required fields:
 
 - `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyVpcEndpointServicePermissionsResultTypeDef
+## ModifyVpcEndpointServicePermissionsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyVpcEndpointServicePermissionsResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyVpcEndpointServicePermissionsRequestTypeDef
 ```
 
+Required fields:
+
+- `ServiceId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `AddAllowedPrincipals`: `List`\[`str`\]
+- `RemoveAllowedPrincipals`: `List`\[`str`\]
+
+## ModifyVpcEndpointServicePermissionsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyVpcEndpointServicePermissionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `ReturnValue`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyVpcPeeringConnectionOptionsResultTypeDef
+## ModifyVpcPeeringConnectionOptionsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyVpcPeeringConnectionOptionsResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyVpcPeeringConnectionOptionsRequestTypeDef
 ```
 
+Required fields:
+
+- `VpcPeeringConnectionId`: `str`
+
 Optional fields:
+
+- `AccepterPeeringConnectionOptions`:
+  [PeeringConnectionOptionsRequestTypeDef](./type_defs.md#peeringconnectionoptionsrequesttypedef)
+- `DryRun`: `bool`
+- `RequesterPeeringConnectionOptions`:
+  [PeeringConnectionOptionsRequestTypeDef](./type_defs.md#peeringconnectionoptionsrequesttypedef)
+
+## ModifyVpcPeeringConnectionOptionsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyVpcPeeringConnectionOptionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `AccepterPeeringConnectionOptions`:
   [PeeringConnectionOptionsTypeDef](./type_defs.md#peeringconnectionoptionstypedef)
 - `RequesterPeeringConnectionOptions`:
   [PeeringConnectionOptionsTypeDef](./type_defs.md#peeringconnectionoptionstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyVpcTenancyResultTypeDef
+## ModifyVpcTenancyRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyVpcTenancyResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyVpcTenancyRequestTypeDef
 ```
 
+Required fields:
+
+- `VpcId`: `str`
+- `InstanceTenancy`: `Literal['default']` (see
+  [VpcTenancyType](./literals.md#vpctenancytype))
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## ModifyVpcTenancyResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyVpcTenancyResultResponseTypeDef
+```
+
+Required fields:
 
 - `ReturnValue`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyVpnConnectionOptionsResultTypeDef
+## ModifyVpnConnectionOptionsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyVpnConnectionOptionsResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyVpnConnectionOptionsRequestTypeDef
 ```
+
+Required fields:
+
+- `VpnConnectionId`: `str`
 
 Optional fields:
 
-- `VpnConnection`: [VpnConnectionTypeDef](./type_defs.md#vpnconnectiontypedef)
+- `LocalIpv4NetworkCidr`: `str`
+- `RemoteIpv4NetworkCidr`: `str`
+- `LocalIpv6NetworkCidr`: `str`
+- `RemoteIpv6NetworkCidr`: `str`
+- `DryRun`: `bool`
 
-## ModifyVpnConnectionResultTypeDef
+## ModifyVpnConnectionOptionsResultResponseTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyVpnConnectionResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyVpnConnectionOptionsResultResponseTypeDef
 ```
+
+Required fields:
+
+- `VpnConnection`: [VpnConnectionTypeDef](./type_defs.md#vpnconnectiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ModifyVpnConnectionRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyVpnConnectionRequestTypeDef
+```
+
+Required fields:
+
+- `VpnConnectionId`: `str`
 
 Optional fields:
 
-- `VpnConnection`: [VpnConnectionTypeDef](./type_defs.md#vpnconnectiontypedef)
+- `TransitGatewayId`: `str`
+- `CustomerGatewayId`: `str`
+- `VpnGatewayId`: `str`
+- `DryRun`: `bool`
 
-## ModifyVpnTunnelCertificateResultTypeDef
+## ModifyVpnConnectionResultResponseTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyVpnTunnelCertificateResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyVpnConnectionResultResponseTypeDef
 ```
+
+Required fields:
+
+- `VpnConnection`: [VpnConnectionTypeDef](./type_defs.md#vpnconnectiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ModifyVpnTunnelCertificateRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyVpnTunnelCertificateRequestTypeDef
+```
+
+Required fields:
+
+- `VpnConnectionId`: `str`
+- `VpnTunnelOutsideIpAddress`: `str`
 
 Optional fields:
 
-- `VpnConnection`: [VpnConnectionTypeDef](./type_defs.md#vpnconnectiontypedef)
+- `DryRun`: `bool`
 
-## ModifyVpnTunnelOptionsResultTypeDef
+## ModifyVpnTunnelCertificateResultResponseTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ModifyVpnTunnelOptionsResultTypeDef
+from mypy_boto3_ec2.type_defs import ModifyVpnTunnelCertificateResultResponseTypeDef
 ```
+
+Required fields:
+
+- `VpnConnection`: [VpnConnectionTypeDef](./type_defs.md#vpnconnectiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ModifyVpnTunnelOptionsRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyVpnTunnelOptionsRequestTypeDef
+```
+
+Required fields:
+
+- `VpnConnectionId`: `str`
+- `VpnTunnelOutsideIpAddress`: `str`
+- `TunnelOptions`:
+  [ModifyVpnTunnelOptionsSpecificationTypeDef](./type_defs.md#modifyvpntunneloptionsspecificationtypedef)
 
 Optional fields:
 
+- `DryRun`: `bool`
+
+## ModifyVpnTunnelOptionsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyVpnTunnelOptionsResultResponseTypeDef
+```
+
+Required fields:
+
 - `VpnConnection`: [VpnConnectionTypeDef](./type_defs.md#vpnconnectiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ModifyVpnTunnelOptionsSpecificationTypeDef
 
@@ -9137,16 +18122,42 @@ Optional fields:
   `List`\[[IKEVersionsRequestListValueTypeDef](./type_defs.md#ikeversionsrequestlistvaluetypedef)\]
 - `StartupAction`: `str`
 
-## MonitorInstancesResultTypeDef
+## MonitorInstancesRequestInstanceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import MonitorInstancesResultTypeDef
+from mypy_boto3_ec2.type_defs import MonitorInstancesRequestInstanceTypeDef
 ```
 
 Optional fields:
 
+- `DryRun`: `bool`
+
+## MonitorInstancesRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import MonitorInstancesRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceIds`: `List`\[`str`\]
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## MonitorInstancesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import MonitorInstancesResultResponseTypeDef
+```
+
+Required fields:
+
 - `InstanceMonitorings`:
   `List`\[[InstanceMonitoringTypeDef](./type_defs.md#instancemonitoringtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## MonitoringTypeDef
 
@@ -9158,16 +18169,32 @@ Optional fields:
 
 - `State`: [MonitoringStateType](./literals.md#monitoringstatetype)
 
-## MoveAddressToVpcResultTypeDef
+## MoveAddressToVpcRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import MoveAddressToVpcResultTypeDef
+from mypy_boto3_ec2.type_defs import MoveAddressToVpcRequestTypeDef
 ```
+
+Required fields:
+
+- `PublicIp`: `str`
 
 Optional fields:
 
+- `DryRun`: `bool`
+
+## MoveAddressToVpcResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import MoveAddressToVpcResultResponseTypeDef
+```
+
+Required fields:
+
 - `AllocationId`: `str`
 - `Status`: [StatusType](./literals.md#statustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## MovingAddressStatusTypeDef
 
@@ -9976,15 +19003,38 @@ Optional fields:
 
 - `GatewayId`: `str`
 
-## ProvisionByoipCidrResultTypeDef
+## ProvisionByoipCidrRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ProvisionByoipCidrResultTypeDef
+from mypy_boto3_ec2.type_defs import ProvisionByoipCidrRequestTypeDef
 ```
+
+Required fields:
+
+- `Cidr`: `str`
 
 Optional fields:
 
+- `CidrAuthorizationContext`:
+  [CidrAuthorizationContextTypeDef](./type_defs.md#cidrauthorizationcontexttypedef)
+- `PubliclyAdvertisable`: `bool`
+- `Description`: `str`
+- `DryRun`: `bool`
+- `PoolTagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `MultiRegion`: `bool`
+
+## ProvisionByoipCidrResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ProvisionByoipCidrResultResponseTypeDef
+```
+
+Required fields:
+
 - `ByoipCidr`: [ByoipCidrTypeDef](./type_defs.md#byoipcidrtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ProvisionedBandwidthTypeDef
 
@@ -10042,13 +19092,33 @@ Optional fields:
 - `NetworkBorderGroup`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## PurchaseHostReservationResultTypeDef
+## PurchaseHostReservationRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import PurchaseHostReservationResultTypeDef
+from mypy_boto3_ec2.type_defs import PurchaseHostReservationRequestTypeDef
 ```
 
+Required fields:
+
+- `HostIdSet`: `List`\[`str`\]
+- `OfferingId`: `str`
+
 Optional fields:
+
+- `ClientToken`: `str`
+- `CurrencyCode`: `Literal['USD']` (see
+  [CurrencyCodeValuesType](./literals.md#currencycodevaluestype))
+- `LimitPrice`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## PurchaseHostReservationResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import PurchaseHostReservationResultResponseTypeDef
+```
+
+Required fields:
 
 - `ClientToken`: `str`
 - `CurrencyCode`: `Literal['USD']` (see
@@ -10056,6 +19126,8 @@ Optional fields:
 - `Purchase`: `List`\[[PurchaseTypeDef](./type_defs.md#purchasetypedef)\]
 - `TotalHourlyPrice`: `str`
 - `TotalUpfrontPrice`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PurchaseRequestTypeDef
 
@@ -10068,26 +19140,64 @@ Required fields:
 - `InstanceCount`: `int`
 - `PurchaseToken`: `str`
 
-## PurchaseReservedInstancesOfferingResultTypeDef
+## PurchaseReservedInstancesOfferingRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import PurchaseReservedInstancesOfferingResultTypeDef
+from mypy_boto3_ec2.type_defs import PurchaseReservedInstancesOfferingRequestTypeDef
 ```
 
+Required fields:
+
+- `InstanceCount`: `int`
+- `ReservedInstancesOfferingId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+- `LimitPrice`:
+  [ReservedInstanceLimitPriceTypeDef](./type_defs.md#reservedinstancelimitpricetypedef)
+- `PurchaseTime`: `Union`\[`datetime`, `str`\]
+
+## PurchaseReservedInstancesOfferingResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import PurchaseReservedInstancesOfferingResultResponseTypeDef
+```
+
+Required fields:
 
 - `ReservedInstancesId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PurchaseScheduledInstancesResultTypeDef
+## PurchaseScheduledInstancesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import PurchaseScheduledInstancesResultTypeDef
+from mypy_boto3_ec2.type_defs import PurchaseScheduledInstancesRequestTypeDef
 ```
 
+Required fields:
+
+- `PurchaseRequests`:
+  `List`\[[PurchaseRequestTypeDef](./type_defs.md#purchaserequesttypedef)\]
+
 Optional fields:
+
+- `ClientToken`: `str`
+- `DryRun`: `bool`
+
+## PurchaseScheduledInstancesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import PurchaseScheduledInstancesResultResponseTypeDef
+```
+
+Required fields:
 
 - `ScheduledInstanceSet`:
   `List`\[[ScheduledInstanceTypeDef](./type_defs.md#scheduledinstancetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PurchaseTypeDef
 
@@ -10106,6 +19216,30 @@ Optional fields:
 - `InstanceFamily`: `str`
 - `PaymentOption`: [PaymentOptionType](./literals.md#paymentoptiontype)
 - `UpfrontPrice`: `str`
+
+## RebootInstancesRequestInstanceTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RebootInstancesRequestInstanceTypeDef
+```
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## RebootInstancesRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RebootInstancesRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceIds`: `List`\[`str`\]
+
+Optional fields:
+
+- `DryRun`: `bool`
 
 ## RecurringChargeTypeDef
 
@@ -10131,26 +19265,98 @@ Optional fields:
 - `RegionName`: `str`
 - `OptInStatus`: `str`
 
-## RegisterImageResultTypeDef
+## RegisterImageRequestServiceResourceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import RegisterImageResultTypeDef
+from mypy_boto3_ec2.type_defs import RegisterImageRequestServiceResourceTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+
 Optional fields:
+
+- `ImageLocation`: `str`
+- `Architecture`:
+  [ArchitectureValuesType](./literals.md#architecturevaluestype)
+- `BlockDeviceMappings`:
+  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
+- `Description`: `str`
+- `DryRun`: `bool`
+- `EnaSupport`: `bool`
+- `KernelId`: `str`
+- `BillingProducts`: `List`\[`str`\]
+- `RamdiskId`: `str`
+- `RootDeviceName`: `str`
+- `SriovNetSupport`: `str`
+- `VirtualizationType`: `str`
+- `BootMode`: [BootModeValuesType](./literals.md#bootmodevaluestype)
+
+## RegisterImageRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RegisterImageRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+Optional fields:
+
+- `ImageLocation`: `str`
+- `Architecture`:
+  [ArchitectureValuesType](./literals.md#architecturevaluestype)
+- `BlockDeviceMappings`:
+  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
+- `Description`: `str`
+- `DryRun`: `bool`
+- `EnaSupport`: `bool`
+- `KernelId`: `str`
+- `BillingProducts`: `List`\[`str`\]
+- `RamdiskId`: `str`
+- `RootDeviceName`: `str`
+- `SriovNetSupport`: `str`
+- `VirtualizationType`: `str`
+- `BootMode`: [BootModeValuesType](./literals.md#bootmodevaluestype)
+
+## RegisterImageResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RegisterImageResultResponseTypeDef
+```
+
+Required fields:
 
 - `ImageId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RegisterInstanceEventNotificationAttributesResultTypeDef
+## RegisterInstanceEventNotificationAttributesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import RegisterInstanceEventNotificationAttributesResultTypeDef
+from mypy_boto3_ec2.type_defs import RegisterInstanceEventNotificationAttributesRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+- `InstanceTagAttribute`:
+  [RegisterInstanceTagAttributeRequestTypeDef](./type_defs.md#registerinstancetagattributerequesttypedef)
+
+## RegisterInstanceEventNotificationAttributesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RegisterInstanceEventNotificationAttributesResultResponseTypeDef
+```
+
+Required fields:
 
 - `InstanceTagAttribute`:
   [InstanceTagNotificationAttributeTypeDef](./type_defs.md#instancetagnotificationattributetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## RegisterInstanceTagAttributeRequestTypeDef
 
@@ -10163,93 +19369,264 @@ Optional fields:
 - `IncludeAllTagsOfInstance`: `bool`
 - `InstanceTagKeys`: `List`\[`str`\]
 
-## RegisterTransitGatewayMulticastGroupMembersResultTypeDef
+## RegisterTransitGatewayMulticastGroupMembersRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import RegisterTransitGatewayMulticastGroupMembersResultTypeDef
+from mypy_boto3_ec2.type_defs import RegisterTransitGatewayMulticastGroupMembersRequestTypeDef
 ```
 
 Optional fields:
+
+- `TransitGatewayMulticastDomainId`: `str`
+- `GroupIpAddress`: `str`
+- `NetworkInterfaceIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+
+## RegisterTransitGatewayMulticastGroupMembersResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RegisterTransitGatewayMulticastGroupMembersResultResponseTypeDef
+```
+
+Required fields:
 
 - `RegisteredMulticastGroupMembers`:
   [TransitGatewayMulticastRegisteredGroupMembersTypeDef](./type_defs.md#transitgatewaymulticastregisteredgroupmemberstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RegisterTransitGatewayMulticastGroupSourcesResultTypeDef
+## RegisterTransitGatewayMulticastGroupSourcesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import RegisterTransitGatewayMulticastGroupSourcesResultTypeDef
+from mypy_boto3_ec2.type_defs import RegisterTransitGatewayMulticastGroupSourcesRequestTypeDef
 ```
 
 Optional fields:
+
+- `TransitGatewayMulticastDomainId`: `str`
+- `GroupIpAddress`: `str`
+- `NetworkInterfaceIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+
+## RegisterTransitGatewayMulticastGroupSourcesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RegisterTransitGatewayMulticastGroupSourcesResultResponseTypeDef
+```
+
+Required fields:
 
 - `RegisteredMulticastGroupSources`:
   [TransitGatewayMulticastRegisteredGroupSourcesTypeDef](./type_defs.md#transitgatewaymulticastregisteredgroupsourcestypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RejectTransitGatewayMulticastDomainAssociationsResultTypeDef
+## RejectTransitGatewayMulticastDomainAssociationsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import RejectTransitGatewayMulticastDomainAssociationsResultTypeDef
+from mypy_boto3_ec2.type_defs import RejectTransitGatewayMulticastDomainAssociationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `TransitGatewayMulticastDomainId`: `str`
+- `TransitGatewayAttachmentId`: `str`
+- `SubnetIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+
+## RejectTransitGatewayMulticastDomainAssociationsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RejectTransitGatewayMulticastDomainAssociationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Associations`:
   [TransitGatewayMulticastDomainAssociationsTypeDef](./type_defs.md#transitgatewaymulticastdomainassociationstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RejectTransitGatewayPeeringAttachmentResultTypeDef
+## RejectTransitGatewayPeeringAttachmentRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import RejectTransitGatewayPeeringAttachmentResultTypeDef
+from mypy_boto3_ec2.type_defs import RejectTransitGatewayPeeringAttachmentRequestTypeDef
 ```
 
+Required fields:
+
+- `TransitGatewayAttachmentId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## RejectTransitGatewayPeeringAttachmentResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RejectTransitGatewayPeeringAttachmentResultResponseTypeDef
+```
+
+Required fields:
 
 - `TransitGatewayPeeringAttachment`:
   [TransitGatewayPeeringAttachmentTypeDef](./type_defs.md#transitgatewaypeeringattachmenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RejectTransitGatewayVpcAttachmentResultTypeDef
+## RejectTransitGatewayVpcAttachmentRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import RejectTransitGatewayVpcAttachmentResultTypeDef
+from mypy_boto3_ec2.type_defs import RejectTransitGatewayVpcAttachmentRequestTypeDef
 ```
 
+Required fields:
+
+- `TransitGatewayAttachmentId`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## RejectTransitGatewayVpcAttachmentResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RejectTransitGatewayVpcAttachmentResultResponseTypeDef
+```
+
+Required fields:
 
 - `TransitGatewayVpcAttachment`:
   [TransitGatewayVpcAttachmentTypeDef](./type_defs.md#transitgatewayvpcattachmenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RejectVpcEndpointConnectionsResultTypeDef
+## RejectVpcEndpointConnectionsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import RejectVpcEndpointConnectionsResultTypeDef
+from mypy_boto3_ec2.type_defs import RejectVpcEndpointConnectionsRequestTypeDef
 ```
 
+Required fields:
+
+- `ServiceId`: `str`
+- `VpcEndpointIds`: `List`\[`str`\]
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## RejectVpcEndpointConnectionsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RejectVpcEndpointConnectionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Unsuccessful`:
   `List`\[[UnsuccessfulItemTypeDef](./type_defs.md#unsuccessfulitemtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RejectVpcPeeringConnectionResultTypeDef
+## RejectVpcPeeringConnectionRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import RejectVpcPeeringConnectionResultTypeDef
+from mypy_boto3_ec2.type_defs import RejectVpcPeeringConnectionRequestTypeDef
+```
+
+Required fields:
+
+- `VpcPeeringConnectionId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## RejectVpcPeeringConnectionRequestVpcPeeringConnectionTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RejectVpcPeeringConnectionRequestVpcPeeringConnectionTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+
+## RejectVpcPeeringConnectionResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RejectVpcPeeringConnectionResultResponseTypeDef
+```
+
+Required fields:
 
 - `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ReleaseHostsResultTypeDef
+## ReleaseAddressRequestClassicAddressTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ReleaseHostsResultTypeDef
+from mypy_boto3_ec2.type_defs import ReleaseAddressRequestClassicAddressTypeDef
 ```
 
 Optional fields:
+
+- `AllocationId`: `str`
+- `PublicIp`: `str`
+- `NetworkBorderGroup`: `str`
+- `DryRun`: `bool`
+
+## ReleaseAddressRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ReleaseAddressRequestTypeDef
+```
+
+Optional fields:
+
+- `AllocationId`: `str`
+- `PublicIp`: `str`
+- `NetworkBorderGroup`: `str`
+- `DryRun`: `bool`
+
+## ReleaseAddressRequestVpcAddressTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ReleaseAddressRequestVpcAddressTypeDef
+```
+
+Optional fields:
+
+- `AllocationId`: `str`
+- `PublicIp`: `str`
+- `NetworkBorderGroup`: `str`
+- `DryRun`: `bool`
+
+## ReleaseHostsRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ReleaseHostsRequestTypeDef
+```
+
+Required fields:
+
+- `HostIds`: `List`\[`str`\]
+
+## ReleaseHostsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ReleaseHostsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Successful`: `List`\[`str`\]
 - `Unsuccessful`:
   `List`\[[UnsuccessfulItemTypeDef](./type_defs.md#unsuccessfulitemtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## RemovePrefixListEntryTypeDef
 
@@ -10261,26 +19638,114 @@ Required fields:
 
 - `Cidr`: `str`
 
-## ReplaceIamInstanceProfileAssociationResultTypeDef
+## ReplaceIamInstanceProfileAssociationRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ReplaceIamInstanceProfileAssociationResultTypeDef
+from mypy_boto3_ec2.type_defs import ReplaceIamInstanceProfileAssociationRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `IamInstanceProfile`:
+  [IamInstanceProfileSpecificationTypeDef](./type_defs.md#iaminstanceprofilespecificationtypedef)
+- `AssociationId`: `str`
+
+## ReplaceIamInstanceProfileAssociationResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ReplaceIamInstanceProfileAssociationResultResponseTypeDef
+```
+
+Required fields:
 
 - `IamInstanceProfileAssociation`:
   [IamInstanceProfileAssociationTypeDef](./type_defs.md#iaminstanceprofileassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ReplaceNetworkAclAssociationResultTypeDef
+## ReplaceNetworkAclAssociationRequestNetworkAclTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ReplaceNetworkAclAssociationResultTypeDef
+from mypy_boto3_ec2.type_defs import ReplaceNetworkAclAssociationRequestNetworkAclTypeDef
 ```
+
+Required fields:
+
+- `AssociationId`: `str`
 
 Optional fields:
 
+- `DryRun`: `bool`
+
+## ReplaceNetworkAclAssociationRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ReplaceNetworkAclAssociationRequestTypeDef
+```
+
+Required fields:
+
+- `AssociationId`: `str`
+- `NetworkAclId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## ReplaceNetworkAclAssociationResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ReplaceNetworkAclAssociationResultResponseTypeDef
+```
+
+Required fields:
+
 - `NewAssociationId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ReplaceNetworkAclEntryRequestNetworkAclTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ReplaceNetworkAclEntryRequestNetworkAclTypeDef
+```
+
+Required fields:
+
+- `Egress`: `bool`
+- `Protocol`: `str`
+- `RuleAction`: [RuleActionType](./literals.md#ruleactiontype)
+- `RuleNumber`: `int`
+
+Optional fields:
+
+- `CidrBlock`: `str`
+- `DryRun`: `bool`
+- `IcmpTypeCode`: [IcmpTypeCodeTypeDef](./type_defs.md#icmptypecodetypedef)
+- `Ipv6CidrBlock`: `str`
+- `PortRange`: [PortRangeTypeDef](./type_defs.md#portrangetypedef)
+
+## ReplaceNetworkAclEntryRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ReplaceNetworkAclEntryRequestTypeDef
+```
+
+Required fields:
+
+- `Egress`: `bool`
+- `NetworkAclId`: `str`
+- `Protocol`: `str`
+- `RuleAction`: [RuleActionType](./literals.md#ruleactiontype)
+- `RuleNumber`: `int`
+
+Optional fields:
+
+- `CidrBlock`: `str`
+- `DryRun`: `bool`
+- `IcmpTypeCode`: [IcmpTypeCodeTypeDef](./type_defs.md#icmptypecodetypedef)
+- `Ipv6CidrBlock`: `str`
+- `PortRange`: [PortRangeTypeDef](./type_defs.md#portrangetypedef)
 
 ## ReplaceRootVolumeTaskTypeDef
 
@@ -10298,28 +19763,168 @@ Optional fields:
 - `CompleteTime`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## ReplaceRouteTableAssociationResultTypeDef
+## ReplaceRouteRequestRouteTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ReplaceRouteTableAssociationResultTypeDef
+from mypy_boto3_ec2.type_defs import ReplaceRouteRequestRouteTypeDef
 ```
 
 Optional fields:
+
+- `DestinationIpv6CidrBlock`: `str`
+- `DestinationPrefixListId`: `str`
+- `DryRun`: `bool`
+- `VpcEndpointId`: `str`
+- `EgressOnlyInternetGatewayId`: `str`
+- `GatewayId`: `str`
+- `InstanceId`: `str`
+- `LocalTarget`: `bool`
+- `NatGatewayId`: `str`
+- `TransitGatewayId`: `str`
+- `LocalGatewayId`: `str`
+- `CarrierGatewayId`: `str`
+- `NetworkInterfaceId`: `str`
+- `VpcPeeringConnectionId`: `str`
+
+## ReplaceRouteRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ReplaceRouteRequestTypeDef
+```
+
+Required fields:
+
+- `RouteTableId`: `str`
+
+Optional fields:
+
+- `DestinationCidrBlock`: `str`
+- `DestinationIpv6CidrBlock`: `str`
+- `DestinationPrefixListId`: `str`
+- `DryRun`: `bool`
+- `VpcEndpointId`: `str`
+- `EgressOnlyInternetGatewayId`: `str`
+- `GatewayId`: `str`
+- `InstanceId`: `str`
+- `LocalTarget`: `bool`
+- `NatGatewayId`: `str`
+- `TransitGatewayId`: `str`
+- `LocalGatewayId`: `str`
+- `CarrierGatewayId`: `str`
+- `NetworkInterfaceId`: `str`
+- `VpcPeeringConnectionId`: `str`
+
+## ReplaceRouteTableAssociationRequestRouteTableAssociationTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ReplaceRouteTableAssociationRequestRouteTableAssociationTypeDef
+```
+
+Required fields:
+
+- `RouteTableId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## ReplaceRouteTableAssociationRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ReplaceRouteTableAssociationRequestTypeDef
+```
+
+Required fields:
+
+- `AssociationId`: `str`
+- `RouteTableId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## ReplaceRouteTableAssociationResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ReplaceRouteTableAssociationResultResponseTypeDef
+```
+
+Required fields:
 
 - `NewAssociationId`: `str`
 - `AssociationState`:
   [RouteTableAssociationStateTypeDef](./type_defs.md#routetableassociationstatetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ReplaceTransitGatewayRouteResultTypeDef
+## ReplaceTransitGatewayRouteRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ReplaceTransitGatewayRouteResultTypeDef
+from mypy_boto3_ec2.type_defs import ReplaceTransitGatewayRouteRequestTypeDef
 ```
+
+Required fields:
+
+- `DestinationCidrBlock`: `str`
+- `TransitGatewayRouteTableId`: `str`
 
 Optional fields:
 
+- `TransitGatewayAttachmentId`: `str`
+- `Blackhole`: `bool`
+- `DryRun`: `bool`
+
+## ReplaceTransitGatewayRouteResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ReplaceTransitGatewayRouteResultResponseTypeDef
+```
+
+Required fields:
+
 - `Route`:
   [TransitGatewayRouteTypeDef](./type_defs.md#transitgatewayroutetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ReportInstanceStatusRequestInstanceTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ReportInstanceStatusRequestInstanceTypeDef
+```
+
+Required fields:
+
+- `ReasonCodes`:
+  `List`\[[ReportInstanceReasonCodesType](./literals.md#reportinstancereasoncodestype)\]
+- `Status`: [ReportStatusTypeType](./literals.md#reportstatustypetype)
+
+Optional fields:
+
+- `Description`: `str`
+- `DryRun`: `bool`
+- `EndTime`: `Union`\[`datetime`, `str`\]
+- `StartTime`: `Union`\[`datetime`, `str`\]
+
+## ReportInstanceStatusRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ReportInstanceStatusRequestTypeDef
+```
+
+Required fields:
+
+- `Instances`: `List`\[`str`\]
+- `ReasonCodes`:
+  `List`\[[ReportInstanceReasonCodesType](./literals.md#reportinstancereasoncodestype)\]
+- `Status`: [ReportStatusTypeType](./literals.md#reportstatustypetype)
+
+Optional fields:
+
+- `Description`: `str`
+- `DryRun`: `bool`
+- `EndTime`: `Union`\[`datetime`, `str`\]
+- `StartTime`: `Union`\[`datetime`, `str`\]
 
 ## RequestLaunchTemplateDataTypeDef
 
@@ -10374,26 +19979,70 @@ Optional fields:
 - `EnclaveOptions`:
   [LaunchTemplateEnclaveOptionsRequestTypeDef](./type_defs.md#launchtemplateenclaveoptionsrequesttypedef)
 
-## RequestSpotFleetResponseTypeDef
+## RequestSpotFleetRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import RequestSpotFleetResponseTypeDef
+from mypy_boto3_ec2.type_defs import RequestSpotFleetRequestTypeDef
 ```
 
+Required fields:
+
+- `SpotFleetRequestConfig`:
+  [SpotFleetRequestConfigDataTypeDef](./type_defs.md#spotfleetrequestconfigdatatypedef)
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## RequestSpotFleetResponseResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RequestSpotFleetResponseResponseTypeDef
+```
+
+Required fields:
 
 - `SpotFleetRequestId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RequestSpotInstancesResultTypeDef
+## RequestSpotInstancesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import RequestSpotInstancesResultTypeDef
+from mypy_boto3_ec2.type_defs import RequestSpotInstancesRequestTypeDef
 ```
 
 Optional fields:
+
+- `AvailabilityZoneGroup`: `str`
+- `BlockDurationMinutes`: `int`
+- `ClientToken`: `str`
+- `DryRun`: `bool`
+- `InstanceCount`: `int`
+- `LaunchGroup`: `str`
+- `LaunchSpecification`:
+  [RequestSpotLaunchSpecificationTypeDef](./type_defs.md#requestspotlaunchspecificationtypedef)
+- `SpotPrice`: `str`
+- `Type`: [SpotInstanceTypeType](./literals.md#spotinstancetypetype)
+- `ValidFrom`: `Union`\[`datetime`, `str`\]
+- `ValidUntil`: `Union`\[`datetime`, `str`\]
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `InstanceInterruptionBehavior`:
+  [InstanceInterruptionBehaviorType](./literals.md#instanceinterruptionbehaviortype)
+
+## RequestSpotInstancesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RequestSpotInstancesResultResponseTypeDef
+```
+
+Required fields:
 
 - `SpotInstanceRequests`:
   `List`\[[SpotInstanceRequestTypeDef](./type_defs.md#spotinstancerequesttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## RequestSpotLaunchSpecificationTypeDef
 
@@ -10612,35 +20261,202 @@ Optional fields:
 - `Scope`: [scopeType](./literals.md#scopetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## ResetAddressAttributeResultTypeDef
+## ResetAddressAttributeRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ResetAddressAttributeResultTypeDef
+from mypy_boto3_ec2.type_defs import ResetAddressAttributeRequestTypeDef
 ```
 
+Required fields:
+
+- `AllocationId`: `str`
+- `Attribute`: `Literal['domain-name']` (see
+  [AddressAttributeNameType](./literals.md#addressattributenametype))
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## ResetAddressAttributeResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ResetAddressAttributeResultResponseTypeDef
+```
+
+Required fields:
 
 - `Address`: [AddressAttributeTypeDef](./type_defs.md#addressattributetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ResetEbsDefaultKmsKeyIdResultTypeDef
+## ResetEbsDefaultKmsKeyIdRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ResetEbsDefaultKmsKeyIdResultTypeDef
+from mypy_boto3_ec2.type_defs import ResetEbsDefaultKmsKeyIdRequestTypeDef
 ```
 
 Optional fields:
+
+- `DryRun`: `bool`
+
+## ResetEbsDefaultKmsKeyIdResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ResetEbsDefaultKmsKeyIdResultResponseTypeDef
+```
+
+Required fields:
 
 - `KmsKeyId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ResetFpgaImageAttributeResultTypeDef
+## ResetFpgaImageAttributeRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import ResetFpgaImageAttributeResultTypeDef
+from mypy_boto3_ec2.type_defs import ResetFpgaImageAttributeRequestTypeDef
+```
+
+Required fields:
+
+- `FpgaImageId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `Attribute`: `Literal['loadPermission']` (see
+  [ResetFpgaImageAttributeNameType](./literals.md#resetfpgaimageattributenametype))
+
+## ResetFpgaImageAttributeResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ResetFpgaImageAttributeResultResponseTypeDef
+```
+
+Required fields:
+
+- `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ResetImageAttributeRequestImageTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ResetImageAttributeRequestImageTypeDef
+```
+
+Required fields:
+
+- `Attribute`: `Literal['launchPermission']` (see
+  [ResetImageAttributeNameType](./literals.md#resetimageattributenametype))
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## ResetImageAttributeRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ResetImageAttributeRequestTypeDef
+```
+
+Required fields:
+
+- `Attribute`: `Literal['launchPermission']` (see
+  [ResetImageAttributeNameType](./literals.md#resetimageattributenametype))
+- `ImageId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## ResetInstanceAttributeRequestInstanceTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ResetInstanceAttributeRequestInstanceTypeDef
+```
+
+Required fields:
+
+- `Attribute`:
+  [InstanceAttributeNameType](./literals.md#instanceattributenametype)
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## ResetInstanceAttributeRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ResetInstanceAttributeRequestTypeDef
+```
+
+Required fields:
+
+- `Attribute`:
+  [InstanceAttributeNameType](./literals.md#instanceattributenametype)
+- `InstanceId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## ResetNetworkInterfaceAttributeRequestNetworkInterfaceTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ResetNetworkInterfaceAttributeRequestNetworkInterfaceTypeDef
 ```
 
 Optional fields:
 
-- `Return`: `bool`
+- `DryRun`: `bool`
+- `SourceDestCheck`: `str`
+
+## ResetNetworkInterfaceAttributeRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ResetNetworkInterfaceAttributeRequestTypeDef
+```
+
+Required fields:
+
+- `NetworkInterfaceId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `SourceDestCheck`: `str`
+
+## ResetSnapshotAttributeRequestSnapshotTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ResetSnapshotAttributeRequestSnapshotTypeDef
+```
+
+Required fields:
+
+- `Attribute`:
+  [SnapshotAttributeNameType](./literals.md#snapshotattributenametype)
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## ResetSnapshotAttributeRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ResetSnapshotAttributeRequestTypeDef
+```
+
+Required fields:
+
+- `Attribute`:
+  [SnapshotAttributeNameType](./literals.md#snapshotattributenametype)
+- `SnapshotId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
 
 ## ResponseErrorTypeDef
 
@@ -10707,62 +20523,212 @@ Optional fields:
 - `EnclaveOptions`:
   [LaunchTemplateEnclaveOptionsTypeDef](./type_defs.md#launchtemplateenclaveoptionstypedef)
 
-## RestoreAddressToClassicResultTypeDef
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import RestoreAddressToClassicResultTypeDef
+from mypy_boto3_ec2.type_defs import ResponseMetadataTypeDef
 ```
 
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## RestoreAddressToClassicRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RestoreAddressToClassicRequestTypeDef
+```
+
+Required fields:
+
+- `PublicIp`: `str`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## RestoreAddressToClassicResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RestoreAddressToClassicResultResponseTypeDef
+```
+
+Required fields:
 
 - `PublicIp`: `str`
 - `Status`: [StatusType](./literals.md#statustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RestoreManagedPrefixListVersionResultTypeDef
+## RestoreManagedPrefixListVersionRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import RestoreManagedPrefixListVersionResultTypeDef
+from mypy_boto3_ec2.type_defs import RestoreManagedPrefixListVersionRequestTypeDef
 ```
 
+Required fields:
+
+- `PrefixListId`: `str`
+- `PreviousVersion`: `int`
+- `CurrentVersion`: `int`
+
 Optional fields:
+
+- `DryRun`: `bool`
+
+## RestoreManagedPrefixListVersionResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RestoreManagedPrefixListVersionResultResponseTypeDef
+```
+
+Required fields:
 
 - `PrefixList`:
   [ManagedPrefixListTypeDef](./type_defs.md#managedprefixlisttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RevokeClientVpnIngressResultTypeDef
+## RevokeClientVpnIngressRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import RevokeClientVpnIngressResultTypeDef
+from mypy_boto3_ec2.type_defs import RevokeClientVpnIngressRequestTypeDef
 ```
 
+Required fields:
+
+- `ClientVpnEndpointId`: `str`
+- `TargetNetworkCidr`: `str`
+
 Optional fields:
+
+- `AccessGroupId`: `str`
+- `RevokeAllGroups`: `bool`
+- `DryRun`: `bool`
+
+## RevokeClientVpnIngressResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RevokeClientVpnIngressResultResponseTypeDef
+```
+
+Required fields:
 
 - `Status`:
   [ClientVpnAuthorizationRuleStatusTypeDef](./type_defs.md#clientvpnauthorizationrulestatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RevokeSecurityGroupEgressResultTypeDef
+## RevokeSecurityGroupEgressRequestSecurityGroupTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import RevokeSecurityGroupEgressResultTypeDef
+from mypy_boto3_ec2.type_defs import RevokeSecurityGroupEgressRequestSecurityGroupTypeDef
 ```
 
 Optional fields:
 
+- `DryRun`: `bool`
+- `IpPermissions`:
+  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `CidrIp`: `str`
+- `FromPort`: `int`
+- `IpProtocol`: `str`
+- `ToPort`: `int`
+- `SourceSecurityGroupName`: `str`
+- `SourceSecurityGroupOwnerId`: `str`
+
+## RevokeSecurityGroupEgressRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RevokeSecurityGroupEgressRequestTypeDef
+```
+
+Required fields:
+
+- `GroupId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `IpPermissions`:
+  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `CidrIp`: `str`
+- `FromPort`: `int`
+- `IpProtocol`: `str`
+- `ToPort`: `int`
+- `SourceSecurityGroupName`: `str`
+- `SourceSecurityGroupOwnerId`: `str`
+
+## RevokeSecurityGroupEgressResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RevokeSecurityGroupEgressResultResponseTypeDef
+```
+
+Required fields:
+
 - `Return`: `bool`
 - `UnknownIpPermissions`:
   `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RevokeSecurityGroupIngressResultTypeDef
+## RevokeSecurityGroupIngressRequestSecurityGroupTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import RevokeSecurityGroupIngressResultTypeDef
+from mypy_boto3_ec2.type_defs import RevokeSecurityGroupIngressRequestSecurityGroupTypeDef
 ```
 
 Optional fields:
 
+- `CidrIp`: `str`
+- `FromPort`: `int`
+- `GroupName`: `str`
+- `IpPermissions`:
+  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `IpProtocol`: `str`
+- `SourceSecurityGroupName`: `str`
+- `SourceSecurityGroupOwnerId`: `str`
+- `ToPort`: `int`
+- `DryRun`: `bool`
+
+## RevokeSecurityGroupIngressRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RevokeSecurityGroupIngressRequestTypeDef
+```
+
+Optional fields:
+
+- `CidrIp`: `str`
+- `FromPort`: `int`
+- `GroupId`: `str`
+- `GroupName`: `str`
+- `IpPermissions`:
+  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `IpProtocol`: `str`
+- `SourceSecurityGroupName`: `str`
+- `SourceSecurityGroupOwnerId`: `str`
+- `ToPort`: `int`
+- `DryRun`: `bool`
+
+## RevokeSecurityGroupIngressResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RevokeSecurityGroupIngressResultResponseTypeDef
+```
+
+Required fields:
+
 - `Return`: `bool`
 - `UnknownIpPermissions`:
   `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## RouteTableAssociationStateTypeDef
 
@@ -10844,15 +20810,235 @@ Required fields:
 
 - `Enabled`: `bool`
 
-## RunScheduledInstancesResultTypeDef
+## RunInstancesRequestServiceResourceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import RunScheduledInstancesResultTypeDef
+from mypy_boto3_ec2.type_defs import RunInstancesRequestServiceResourceTypeDef
 ```
+
+Required fields:
+
+- `MaxCount`: `int`
+- `MinCount`: `int`
 
 Optional fields:
 
+- `BlockDeviceMappings`:
+  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
+- `ImageId`: `str`
+- `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
+- `Ipv6AddressCount`: `int`
+- `Ipv6Addresses`:
+  `List`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
+- `KernelId`: `str`
+- `KeyName`: `str`
+- `Monitoring`:
+  [RunInstancesMonitoringEnabledTypeDef](./type_defs.md#runinstancesmonitoringenabledtypedef)
+- `Placement`: [PlacementTypeDef](./type_defs.md#placementtypedef)
+- `RamdiskId`: `str`
+- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroups`: `List`\[`str`\]
+- `SubnetId`: `str`
+- `UserData`: `str`
+- `AdditionalInfo`: `str`
+- `ClientToken`: `str`
+- `DisableApiTermination`: `bool`
+- `DryRun`: `bool`
+- `EbsOptimized`: `bool`
+- `IamInstanceProfile`:
+  [IamInstanceProfileSpecificationTypeDef](./type_defs.md#iaminstanceprofilespecificationtypedef)
+- `InstanceInitiatedShutdownBehavior`:
+  [ShutdownBehaviorType](./literals.md#shutdownbehaviortype)
+- `NetworkInterfaces`:
+  `List`\[[InstanceNetworkInterfaceSpecificationTypeDef](./type_defs.md#instancenetworkinterfacespecificationtypedef)\]
+- `PrivateIpAddress`: `str`
+- `ElasticGpuSpecification`:
+  `List`\[[ElasticGpuSpecificationTypeDef](./type_defs.md#elasticgpuspecificationtypedef)\]
+- `ElasticInferenceAccelerators`:
+  `List`\[[ElasticInferenceAcceleratorTypeDef](./type_defs.md#elasticinferenceacceleratortypedef)\]
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `LaunchTemplate`:
+  [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
+- `InstanceMarketOptions`:
+  [InstanceMarketOptionsRequestTypeDef](./type_defs.md#instancemarketoptionsrequesttypedef)
+- `CreditSpecification`:
+  [CreditSpecificationRequestTypeDef](./type_defs.md#creditspecificationrequesttypedef)
+- `CpuOptions`:
+  [CpuOptionsRequestTypeDef](./type_defs.md#cpuoptionsrequesttypedef)
+- `CapacityReservationSpecification`:
+  [CapacityReservationSpecificationTypeDef](./type_defs.md#capacityreservationspecificationtypedef)
+- `HibernationOptions`:
+  [HibernationOptionsRequestTypeDef](./type_defs.md#hibernationoptionsrequesttypedef)
+- `LicenseSpecifications`:
+  `List`\[[LicenseConfigurationRequestTypeDef](./type_defs.md#licenseconfigurationrequesttypedef)\]
+- `MetadataOptions`:
+  [InstanceMetadataOptionsRequestTypeDef](./type_defs.md#instancemetadataoptionsrequesttypedef)
+- `EnclaveOptions`:
+  [EnclaveOptionsRequestTypeDef](./type_defs.md#enclaveoptionsrequesttypedef)
+
+## RunInstancesRequestSubnetTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RunInstancesRequestSubnetTypeDef
+```
+
+Required fields:
+
+- `MaxCount`: `int`
+- `MinCount`: `int`
+
+Optional fields:
+
+- `BlockDeviceMappings`:
+  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
+- `ImageId`: `str`
+- `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
+- `Ipv6AddressCount`: `int`
+- `Ipv6Addresses`:
+  `List`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
+- `KernelId`: `str`
+- `KeyName`: `str`
+- `Monitoring`:
+  [RunInstancesMonitoringEnabledTypeDef](./type_defs.md#runinstancesmonitoringenabledtypedef)
+- `Placement`: [PlacementTypeDef](./type_defs.md#placementtypedef)
+- `RamdiskId`: `str`
+- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroups`: `List`\[`str`\]
+- `UserData`: `str`
+- `AdditionalInfo`: `str`
+- `ClientToken`: `str`
+- `DisableApiTermination`: `bool`
+- `DryRun`: `bool`
+- `EbsOptimized`: `bool`
+- `IamInstanceProfile`:
+  [IamInstanceProfileSpecificationTypeDef](./type_defs.md#iaminstanceprofilespecificationtypedef)
+- `InstanceInitiatedShutdownBehavior`:
+  [ShutdownBehaviorType](./literals.md#shutdownbehaviortype)
+- `NetworkInterfaces`:
+  `List`\[[InstanceNetworkInterfaceSpecificationTypeDef](./type_defs.md#instancenetworkinterfacespecificationtypedef)\]
+- `PrivateIpAddress`: `str`
+- `ElasticGpuSpecification`:
+  `List`\[[ElasticGpuSpecificationTypeDef](./type_defs.md#elasticgpuspecificationtypedef)\]
+- `ElasticInferenceAccelerators`:
+  `List`\[[ElasticInferenceAcceleratorTypeDef](./type_defs.md#elasticinferenceacceleratortypedef)\]
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `LaunchTemplate`:
+  [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
+- `InstanceMarketOptions`:
+  [InstanceMarketOptionsRequestTypeDef](./type_defs.md#instancemarketoptionsrequesttypedef)
+- `CreditSpecification`:
+  [CreditSpecificationRequestTypeDef](./type_defs.md#creditspecificationrequesttypedef)
+- `CpuOptions`:
+  [CpuOptionsRequestTypeDef](./type_defs.md#cpuoptionsrequesttypedef)
+- `CapacityReservationSpecification`:
+  [CapacityReservationSpecificationTypeDef](./type_defs.md#capacityreservationspecificationtypedef)
+- `HibernationOptions`:
+  [HibernationOptionsRequestTypeDef](./type_defs.md#hibernationoptionsrequesttypedef)
+- `LicenseSpecifications`:
+  `List`\[[LicenseConfigurationRequestTypeDef](./type_defs.md#licenseconfigurationrequesttypedef)\]
+- `MetadataOptions`:
+  [InstanceMetadataOptionsRequestTypeDef](./type_defs.md#instancemetadataoptionsrequesttypedef)
+- `EnclaveOptions`:
+  [EnclaveOptionsRequestTypeDef](./type_defs.md#enclaveoptionsrequesttypedef)
+
+## RunInstancesRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RunInstancesRequestTypeDef
+```
+
+Required fields:
+
+- `MaxCount`: `int`
+- `MinCount`: `int`
+
+Optional fields:
+
+- `BlockDeviceMappings`:
+  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
+- `ImageId`: `str`
+- `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
+- `Ipv6AddressCount`: `int`
+- `Ipv6Addresses`:
+  `List`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
+- `KernelId`: `str`
+- `KeyName`: `str`
+- `Monitoring`:
+  [RunInstancesMonitoringEnabledTypeDef](./type_defs.md#runinstancesmonitoringenabledtypedef)
+- `Placement`: [PlacementTypeDef](./type_defs.md#placementtypedef)
+- `RamdiskId`: `str`
+- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroups`: `List`\[`str`\]
+- `SubnetId`: `str`
+- `UserData`: `str`
+- `AdditionalInfo`: `str`
+- `ClientToken`: `str`
+- `DisableApiTermination`: `bool`
+- `DryRun`: `bool`
+- `EbsOptimized`: `bool`
+- `IamInstanceProfile`:
+  [IamInstanceProfileSpecificationTypeDef](./type_defs.md#iaminstanceprofilespecificationtypedef)
+- `InstanceInitiatedShutdownBehavior`:
+  [ShutdownBehaviorType](./literals.md#shutdownbehaviortype)
+- `NetworkInterfaces`:
+  `List`\[[InstanceNetworkInterfaceSpecificationTypeDef](./type_defs.md#instancenetworkinterfacespecificationtypedef)\]
+- `PrivateIpAddress`: `str`
+- `ElasticGpuSpecification`:
+  `List`\[[ElasticGpuSpecificationTypeDef](./type_defs.md#elasticgpuspecificationtypedef)\]
+- `ElasticInferenceAccelerators`:
+  `List`\[[ElasticInferenceAcceleratorTypeDef](./type_defs.md#elasticinferenceacceleratortypedef)\]
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `LaunchTemplate`:
+  [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
+- `InstanceMarketOptions`:
+  [InstanceMarketOptionsRequestTypeDef](./type_defs.md#instancemarketoptionsrequesttypedef)
+- `CreditSpecification`:
+  [CreditSpecificationRequestTypeDef](./type_defs.md#creditspecificationrequesttypedef)
+- `CpuOptions`:
+  [CpuOptionsRequestTypeDef](./type_defs.md#cpuoptionsrequesttypedef)
+- `CapacityReservationSpecification`:
+  [CapacityReservationSpecificationTypeDef](./type_defs.md#capacityreservationspecificationtypedef)
+- `HibernationOptions`:
+  [HibernationOptionsRequestTypeDef](./type_defs.md#hibernationoptionsrequesttypedef)
+- `LicenseSpecifications`:
+  `List`\[[LicenseConfigurationRequestTypeDef](./type_defs.md#licenseconfigurationrequesttypedef)\]
+- `MetadataOptions`:
+  [InstanceMetadataOptionsRequestTypeDef](./type_defs.md#instancemetadataoptionsrequesttypedef)
+- `EnclaveOptions`:
+  [EnclaveOptionsRequestTypeDef](./type_defs.md#enclaveoptionsrequesttypedef)
+
+## RunScheduledInstancesRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RunScheduledInstancesRequestTypeDef
+```
+
+Required fields:
+
+- `LaunchSpecification`:
+  [ScheduledInstancesLaunchSpecificationTypeDef](./type_defs.md#scheduledinstanceslaunchspecificationtypedef)
+- `ScheduledInstanceId`: `str`
+
+Optional fields:
+
+- `ClientToken`: `str`
+- `DryRun`: `bool`
+- `InstanceCount`: `int`
+
+## RunScheduledInstancesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import RunScheduledInstancesResultResponseTypeDef
+```
+
+Required fields:
+
 - `InstanceIdSet`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## S3ObjectTagTypeDef
 
@@ -11091,41 +21277,94 @@ Optional fields:
 - `Primary`: `bool`
 - `PrivateIpAddress`: `str`
 
-## SearchLocalGatewayRoutesResultTypeDef
+## SearchLocalGatewayRoutesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import SearchLocalGatewayRoutesResultTypeDef
+from mypy_boto3_ec2.type_defs import SearchLocalGatewayRoutesRequestTypeDef
 ```
 
+Required fields:
+
+- `LocalGatewayRouteTableId`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## SearchLocalGatewayRoutesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import SearchLocalGatewayRoutesResultResponseTypeDef
+```
+
+Required fields:
 
 - `Routes`:
   `List`\[[LocalGatewayRouteTypeDef](./type_defs.md#localgatewayroutetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SearchTransitGatewayMulticastGroupsResultTypeDef
+## SearchTransitGatewayMulticastGroupsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import SearchTransitGatewayMulticastGroupsResultTypeDef
+from mypy_boto3_ec2.type_defs import SearchTransitGatewayMulticastGroupsRequestTypeDef
 ```
 
 Optional fields:
+
+- `TransitGatewayMulticastDomainId`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## SearchTransitGatewayMulticastGroupsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import SearchTransitGatewayMulticastGroupsResultResponseTypeDef
+```
+
+Required fields:
 
 - `MulticastGroups`:
   `List`\[[TransitGatewayMulticastGroupTypeDef](./type_defs.md#transitgatewaymulticastgrouptypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SearchTransitGatewayRoutesResultTypeDef
+## SearchTransitGatewayRoutesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import SearchTransitGatewayRoutesResultTypeDef
+from mypy_boto3_ec2.type_defs import SearchTransitGatewayRoutesRequestTypeDef
 ```
 
+Required fields:
+
+- `TransitGatewayRouteTableId`: `str`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `DryRun`: `bool`
+
+## SearchTransitGatewayRoutesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import SearchTransitGatewayRoutesResultResponseTypeDef
+```
+
+Required fields:
 
 - `Routes`:
   `List`\[[TransitGatewayRouteTypeDef](./type_defs.md#transitgatewayroutetypedef)\]
 - `AdditionalRoutesAvailable`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## SecurityGroupIdentifierTypeDef
 
@@ -11168,6 +21407,20 @@ Optional fields:
   `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `VpcId`: `str`
+
+## SendDiagnosticInterruptRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import SendDiagnosticInterruptRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
 
 ## ServiceConfigurationTypeDef
 
@@ -11218,6 +21471,219 @@ Optional fields:
 - `PrivateDnsNameVerificationState`:
   [DnsNameStateType](./literals.md#dnsnamestatetype)
 
+## ServiceResourceClassicAddressRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ServiceResourceClassicAddressRequestTypeDef
+```
+
+Required fields:
+
+- `public_ip`: `str`
+
+## ServiceResourceDhcpOptionsRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ServiceResourceDhcpOptionsRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
+## ServiceResourceImageRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ServiceResourceImageRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
+## ServiceResourceInstanceRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ServiceResourceInstanceRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
+## ServiceResourceInternetGatewayRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ServiceResourceInternetGatewayRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
+## ServiceResourceKeyPairRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ServiceResourceKeyPairRequestTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+
+## ServiceResourceNetworkAclRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ServiceResourceNetworkAclRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
+## ServiceResourceNetworkInterfaceAssociationRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ServiceResourceNetworkInterfaceAssociationRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
+## ServiceResourceNetworkInterfaceRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ServiceResourceNetworkInterfaceRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
+## ServiceResourcePlacementGroupRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ServiceResourcePlacementGroupRequestTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+
+## ServiceResourceRouteRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ServiceResourceRouteRequestTypeDef
+```
+
+Required fields:
+
+- `route_table_id`: `str`
+- `destination_cidr_block`: `str`
+
+## ServiceResourceRouteTableAssociationRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ServiceResourceRouteTableAssociationRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
+## ServiceResourceRouteTableRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ServiceResourceRouteTableRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
+## ServiceResourceSecurityGroupRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ServiceResourceSecurityGroupRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
+## ServiceResourceSnapshotRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ServiceResourceSnapshotRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
+## ServiceResourceSubnetRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ServiceResourceSubnetRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
+## ServiceResourceTagRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ServiceResourceTagRequestTypeDef
+```
+
+Required fields:
+
+- `resource_id`: `str`
+- `key`: `str`
+- `value`: `str`
+
+## ServiceResourceVolumeRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ServiceResourceVolumeRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
+## ServiceResourceVpcAddressRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ServiceResourceVpcAddressRequestTypeDef
+```
+
+Required fields:
+
+- `allocation_id`: `str`
+
+## ServiceResourceVpcPeeringConnectionRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ServiceResourceVpcPeeringConnectionRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
+## ServiceResourceVpcRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ServiceResourceVpcRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
 ## ServiceTypeDetailTypeDef
 
 ```python
@@ -11236,8 +21702,8 @@ from mypy_boto3_ec2.type_defs import SlotDateTimeRangeRequestTypeDef
 
 Required fields:
 
-- `EarliestTime`: `datetime`
-- `LatestTime`: `datetime`
+- `EarliestTime`: `Union`\[`datetime`, `str`\]
+- `LatestTime`: `Union`\[`datetime`, `str`\]
 
 ## SlotStartTimeRangeRequestTypeDef
 
@@ -11247,8 +21713,8 @@ from mypy_boto3_ec2.type_defs import SlotStartTimeRangeRequestTypeDef
 
 Optional fields:
 
-- `EarliestTime`: `datetime`
-- `LatestTime`: `datetime`
+- `EarliestTime`: `Union`\[`datetime`, `str`\]
+- `LatestTime`: `Union`\[`datetime`, `str`\]
 
 ## SnapshotDetailTypeDef
 
@@ -11303,6 +21769,32 @@ Optional fields:
 - `SnapshotId`: `str`
 - `OutpostArn`: `str`
 
+## SnapshotResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import SnapshotResponseTypeDef
+```
+
+Required fields:
+
+- `DataEncryptionKeyId`: `str`
+- `Description`: `str`
+- `Encrypted`: `bool`
+- `KmsKeyId`: `str`
+- `OwnerId`: `str`
+- `Progress`: `str`
+- `SnapshotId`: `str`
+- `StartTime`: `datetime`
+- `State`: [SnapshotStateType](./literals.md#snapshotstatetype)
+- `StateMessage`: `str`
+- `VolumeId`: `str`
+- `VolumeSize`: `int`
+- `OwnerAlias`: `str`
+- `OutpostArn`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## SnapshotTaskDetailTypeDef
 
 ```python
@@ -11323,30 +21815,6 @@ Optional fields:
 - `Url`: `str`
 - `UserBucket`:
   [UserBucketDetailsTypeDef](./type_defs.md#userbucketdetailstypedef)
-
-## SnapshotTypeDef
-
-```python
-from mypy_boto3_ec2.type_defs import SnapshotTypeDef
-```
-
-Optional fields:
-
-- `DataEncryptionKeyId`: `str`
-- `Description`: `str`
-- `Encrypted`: `bool`
-- `KmsKeyId`: `str`
-- `OwnerId`: `str`
-- `Progress`: `str`
-- `SnapshotId`: `str`
-- `StartTime`: `datetime`
-- `State`: [SnapshotStateType](./literals.md#snapshotstatetype)
-- `StateMessage`: `str`
-- `VolumeId`: `str`
-- `VolumeSize`: `int`
-- `OwnerAlias`: `str`
-- `OutpostArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## SpotCapacityRebalanceTypeDef
 
@@ -11569,7 +22037,7 @@ Optional fields:
 - `SpotInstanceType`:
   [SpotInstanceTypeType](./literals.md#spotinstancetypetype)
 - `BlockDurationMinutes`: `int`
-- `ValidUntil`: `datetime`
+- `ValidUntil`: `Union`\[`datetime`, `str`\]
 - `InstanceInterruptionBehavior`:
   [InstanceInterruptionBehaviorType](./literals.md#instanceinterruptionbehaviortype)
 
@@ -11673,37 +22141,101 @@ Optional fields:
   `List`\[[StaleIpPermissionTypeDef](./type_defs.md#staleippermissiontypedef)\]
 - `VpcId`: `str`
 
-## StartInstancesResultTypeDef
+## StartInstancesRequestInstanceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import StartInstancesResultTypeDef
+from mypy_boto3_ec2.type_defs import StartInstancesRequestInstanceTypeDef
 ```
 
 Optional fields:
+
+- `AdditionalInfo`: `str`
+- `DryRun`: `bool`
+
+## StartInstancesRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import StartInstancesRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceIds`: `List`\[`str`\]
+
+Optional fields:
+
+- `AdditionalInfo`: `str`
+- `DryRun`: `bool`
+
+## StartInstancesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import StartInstancesResultResponseTypeDef
+```
+
+Required fields:
 
 - `StartingInstances`:
   `List`\[[InstanceStateChangeTypeDef](./type_defs.md#instancestatechangetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartNetworkInsightsAnalysisResultTypeDef
+## StartNetworkInsightsAnalysisRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import StartNetworkInsightsAnalysisResultTypeDef
+from mypy_boto3_ec2.type_defs import StartNetworkInsightsAnalysisRequestTypeDef
 ```
 
+Required fields:
+
+- `NetworkInsightsPathId`: `str`
+- `ClientToken`: `str`
+
 Optional fields:
+
+- `FilterInArns`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## StartNetworkInsightsAnalysisResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import StartNetworkInsightsAnalysisResultResponseTypeDef
+```
+
+Required fields:
 
 - `NetworkInsightsAnalysis`:
   [NetworkInsightsAnalysisTypeDef](./type_defs.md#networkinsightsanalysistypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartVpcEndpointServicePrivateDnsVerificationResultTypeDef
+## StartVpcEndpointServicePrivateDnsVerificationRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import StartVpcEndpointServicePrivateDnsVerificationResultTypeDef
+from mypy_boto3_ec2.type_defs import StartVpcEndpointServicePrivateDnsVerificationRequestTypeDef
 ```
+
+Required fields:
+
+- `ServiceId`: `str`
 
 Optional fields:
 
+- `DryRun`: `bool`
+
+## StartVpcEndpointServicePrivateDnsVerificationResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import StartVpcEndpointServicePrivateDnsVerificationResultResponseTypeDef
+```
+
+Required fields:
+
 - `ReturnValue`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## StateReasonTypeDef
 
@@ -11716,16 +22248,46 @@ Optional fields:
 - `Code`: `str`
 - `Message`: `str`
 
-## StopInstancesResultTypeDef
+## StopInstancesRequestInstanceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import StopInstancesResultTypeDef
+from mypy_boto3_ec2.type_defs import StopInstancesRequestInstanceTypeDef
 ```
 
 Optional fields:
 
+- `Hibernate`: `bool`
+- `DryRun`: `bool`
+- `Force`: `bool`
+
+## StopInstancesRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import StopInstancesRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceIds`: `List`\[`str`\]
+
+Optional fields:
+
+- `Hibernate`: `bool`
+- `DryRun`: `bool`
+- `Force`: `bool`
+
+## StopInstancesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import StopInstancesResultResponseTypeDef
+```
+
+Required fields:
+
 - `StoppingInstances`:
   `List`\[[InstanceStateChangeTypeDef](./type_defs.md#instancestatechangetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## StorageLocationTypeDef
 
@@ -11991,18 +22553,36 @@ Optional fields:
 - `TargetConfiguration`:
   [TargetConfigurationTypeDef](./type_defs.md#targetconfigurationtypedef)
 
-## TerminateClientVpnConnectionsResultTypeDef
+## TerminateClientVpnConnectionsRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import TerminateClientVpnConnectionsResultTypeDef
+from mypy_boto3_ec2.type_defs import TerminateClientVpnConnectionsRequestTypeDef
 ```
 
+Required fields:
+
+- `ClientVpnEndpointId`: `str`
+
 Optional fields:
+
+- `ConnectionId`: `str`
+- `Username`: `str`
+- `DryRun`: `bool`
+
+## TerminateClientVpnConnectionsResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import TerminateClientVpnConnectionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `ClientVpnEndpointId`: `str`
 - `Username`: `str`
 - `ConnectionStatuses`:
   `List`\[[TerminateConnectionStatusTypeDef](./type_defs.md#terminateconnectionstatustypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## TerminateConnectionStatusTypeDef
 
@@ -12018,16 +22598,42 @@ Optional fields:
 - `CurrentStatus`:
   [ClientVpnConnectionStatusTypeDef](./type_defs.md#clientvpnconnectionstatustypedef)
 
-## TerminateInstancesResultTypeDef
+## TerminateInstancesRequestInstanceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import TerminateInstancesResultTypeDef
+from mypy_boto3_ec2.type_defs import TerminateInstancesRequestInstanceTypeDef
 ```
 
 Optional fields:
 
+- `DryRun`: `bool`
+
+## TerminateInstancesRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import TerminateInstancesRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceIds`: `List`\[`str`\]
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## TerminateInstancesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import TerminateInstancesResultResponseTypeDef
+```
+
+Required fields:
+
 - `TerminatingInstances`:
   `List`\[[InstanceStateChangeTypeDef](./type_defs.md#instancestatechangetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## TrafficMirrorFilterRuleTypeDef
 
@@ -12704,27 +23310,87 @@ Optional fields:
   `List`\[[IKEVersionsListValueTypeDef](./type_defs.md#ikeversionslistvaluetypedef)\]
 - `StartupAction`: `str`
 
-## UnassignIpv6AddressesResultTypeDef
+## UnassignIpv6AddressesRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import UnassignIpv6AddressesResultTypeDef
+from mypy_boto3_ec2.type_defs import UnassignIpv6AddressesRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `NetworkInterfaceId`: `str`
+- `Ipv6Addresses`: `List`\[`str`\]
+
+## UnassignIpv6AddressesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import UnassignIpv6AddressesResultResponseTypeDef
+```
+
+Required fields:
 
 - `NetworkInterfaceId`: `str`
 - `UnassignedIpv6Addresses`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UnmonitorInstancesResultTypeDef
+## UnassignPrivateIpAddressesRequestNetworkInterfaceTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import UnmonitorInstancesResultTypeDef
+from mypy_boto3_ec2.type_defs import UnassignPrivateIpAddressesRequestNetworkInterfaceTypeDef
+```
+
+Required fields:
+
+- `PrivateIpAddresses`: `List`\[`str`\]
+
+## UnassignPrivateIpAddressesRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import UnassignPrivateIpAddressesRequestTypeDef
+```
+
+Required fields:
+
+- `NetworkInterfaceId`: `str`
+- `PrivateIpAddresses`: `List`\[`str`\]
+
+## UnmonitorInstancesRequestInstanceTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import UnmonitorInstancesRequestInstanceTypeDef
 ```
 
 Optional fields:
 
+- `DryRun`: `bool`
+
+## UnmonitorInstancesRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import UnmonitorInstancesRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceIds`: `List`\[`str`\]
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## UnmonitorInstancesResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import UnmonitorInstancesResultResponseTypeDef
+```
+
+Required fields:
+
 - `InstanceMonitorings`:
   `List`\[[InstanceMonitoringTypeDef](./type_defs.md#instancemonitoringtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UnsuccessfulInstanceCreditSpecificationItemErrorTypeDef
 
@@ -12773,25 +23439,63 @@ Optional fields:
   [UnsuccessfulItemErrorTypeDef](./type_defs.md#unsuccessfulitemerrortypedef)
 - `ResourceId`: `str`
 
-## UpdateSecurityGroupRuleDescriptionsEgressResultTypeDef
+## UpdateSecurityGroupRuleDescriptionsEgressRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import UpdateSecurityGroupRuleDescriptionsEgressResultTypeDef
+from mypy_boto3_ec2.type_defs import UpdateSecurityGroupRuleDescriptionsEgressRequestTypeDef
 ```
+
+Required fields:
+
+- `IpPermissions`:
+  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 
 Optional fields:
 
-- `Return`: `bool`
+- `DryRun`: `bool`
+- `GroupId`: `str`
+- `GroupName`: `str`
 
-## UpdateSecurityGroupRuleDescriptionsIngressResultTypeDef
+## UpdateSecurityGroupRuleDescriptionsEgressResultResponseTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import UpdateSecurityGroupRuleDescriptionsIngressResultTypeDef
+from mypy_boto3_ec2.type_defs import UpdateSecurityGroupRuleDescriptionsEgressResultResponseTypeDef
 ```
+
+Required fields:
+
+- `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateSecurityGroupRuleDescriptionsIngressRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import UpdateSecurityGroupRuleDescriptionsIngressRequestTypeDef
+```
+
+Required fields:
+
+- `IpPermissions`:
+  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 
 Optional fields:
 
+- `DryRun`: `bool`
+- `GroupId`: `str`
+- `GroupName`: `str`
+
+## UpdateSecurityGroupRuleDescriptionsIngressResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import UpdateSecurityGroupRuleDescriptionsIngressResultResponseTypeDef
+```
+
+Required fields:
+
 - `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UserBucketDetailsTypeDef
 
@@ -12892,13 +23596,13 @@ Optional fields:
 - `StatusMessage`: `str`
 - `CertificateArn`: `str`
 
-## VolumeAttachmentTypeDef
+## VolumeAttachmentResponseTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import VolumeAttachmentTypeDef
+from mypy_boto3_ec2.type_defs import VolumeAttachmentResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `AttachTime`: `datetime`
 - `Device`: `str`
@@ -12906,6 +23610,8 @@ Optional fields:
 - `State`: [VolumeAttachmentStateType](./literals.md#volumeattachmentstatetype)
 - `VolumeId`: `str`
 - `DeleteOnTermination`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## VolumeDetailTypeDef
 
@@ -12942,6 +23648,34 @@ Optional fields:
 - `Progress`: `int`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
+
+## VolumeResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import VolumeResponseTypeDef
+```
+
+Required fields:
+
+- `Attachments`:
+  `List`\[[VolumeAttachmentResponseTypeDef](./type_defs.md#volumeattachmentresponsetypedef)\]
+- `AvailabilityZone`: `str`
+- `CreateTime`: `datetime`
+- `Encrypted`: `bool`
+- `KmsKeyId`: `str`
+- `OutpostArn`: `str`
+- `Size`: `int`
+- `SnapshotId`: `str`
+- `State`: [VolumeStateType](./literals.md#volumestatetype)
+- `VolumeId`: `str`
+- `Iops`: `int`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `VolumeType`: [VolumeTypeType](./literals.md#volumetypetype)
+- `FastRestored`: `bool`
+- `MultiAttachEnabled`: `bool`
+- `Throughput`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## VolumeStatusActionTypeDef
 
@@ -13025,32 +23759,6 @@ Optional fields:
   [VolumeStatusInfoTypeDef](./type_defs.md#volumestatusinfotypedef)
 - `AttachmentStatuses`:
   `List`\[[VolumeStatusAttachmentStatusTypeDef](./type_defs.md#volumestatusattachmentstatustypedef)\]
-
-## VolumeTypeDef
-
-```python
-from mypy_boto3_ec2.type_defs import VolumeTypeDef
-```
-
-Optional fields:
-
-- `Attachments`:
-  `List`\[[VolumeAttachmentTypeDef](./type_defs.md#volumeattachmenttypedef)\]
-- `AvailabilityZone`: `str`
-- `CreateTime`: `datetime`
-- `Encrypted`: `bool`
-- `KmsKeyId`: `str`
-- `OutpostArn`: `str`
-- `Size`: `int`
-- `SnapshotId`: `str`
-- `State`: [VolumeStateType](./literals.md#volumestatetype)
-- `VolumeId`: `str`
-- `Iops`: `int`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `VolumeType`: [VolumeTypeType](./literals.md#volumetypetype)
-- `FastRestored`: `bool`
-- `MultiAttachEnabled`: `bool`
-- `Throughput`: `int`
 
 ## VpcAttachmentTypeDef
 
@@ -13378,12 +24086,28 @@ Optional fields:
 - `Delay`: `int`
 - `MaxAttempts`: `int`
 
-## WithdrawByoipCidrResultTypeDef
+## WithdrawByoipCidrRequestTypeDef
 
 ```python
-from mypy_boto3_ec2.type_defs import WithdrawByoipCidrResultTypeDef
+from mypy_boto3_ec2.type_defs import WithdrawByoipCidrRequestTypeDef
 ```
+
+Required fields:
+
+- `Cidr`: `str`
 
 Optional fields:
 
+- `DryRun`: `bool`
+
+## WithdrawByoipCidrResultResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import WithdrawByoipCidrResultResponseTypeDef
+```
+
+Required fields:
+
 - `ByoipCidr`: [ByoipCidrTypeDef](./type_defs.md#byoipcidrtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

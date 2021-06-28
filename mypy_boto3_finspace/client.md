@@ -66,6 +66,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("finspace").can_paginate` method.
 
 Boto3 documentation:
@@ -79,10 +81,15 @@ Returns `bool`.
 
 ### create_environment
 
+Create a new FinSpace environment.
+
 Type annotations for `boto3.client("finspace").create_environment` method.
 
 Boto3 documentation:
 [finspace.Client.create_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.create_environment)
+
+Arguments mapping described in
+[CreateEnvironmentRequestTypeDef](./type_defs.md#createenvironmentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -95,14 +102,19 @@ Keyword-only arguments:
   [FederationParametersTypeDef](./type_defs.md#federationparameterstypedef)
 
 Returns
-[CreateEnvironmentResponseTypeDef](./type_defs.md#createenvironmentresponsetypedef).
+[CreateEnvironmentResponseResponseTypeDef](./type_defs.md#createenvironmentresponseresponsetypedef).
 
 ### delete_environment
+
+Delete an FinSpace environment.
 
 Type annotations for `boto3.client("finspace").delete_environment` method.
 
 Boto3 documentation:
 [finspace.Client.delete_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.delete_environment)
+
+Arguments mapping described in
+[DeleteEnvironmentRequestTypeDef](./type_defs.md#deleteenvironmentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -111,6 +123,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("finspace").generate_presigned_url` method.
 
@@ -128,24 +142,34 @@ Returns `str`.
 
 ### get_environment
 
+Returns the FinSpace environment object.
+
 Type annotations for `boto3.client("finspace").get_environment` method.
 
 Boto3 documentation:
 [finspace.Client.get_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.get_environment)
+
+Arguments mapping described in
+[GetEnvironmentRequestTypeDef](./type_defs.md#getenvironmentrequesttypedef).
 
 Keyword-only arguments:
 
 - `environmentId`: `str` *(required)*
 
 Returns
-[GetEnvironmentResponseTypeDef](./type_defs.md#getenvironmentresponsetypedef).
+[GetEnvironmentResponseResponseTypeDef](./type_defs.md#getenvironmentresponseresponsetypedef).
 
 ### list_environments
+
+A list of all of your FinSpace environments.
 
 Type annotations for `boto3.client("finspace").list_environments` method.
 
 Boto3 documentation:
 [finspace.Client.list_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.list_environments)
+
+Arguments mapping described in
+[ListEnvironmentsRequestTypeDef](./type_defs.md#listenvironmentsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -153,28 +177,38 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListEnvironmentsResponseTypeDef](./type_defs.md#listenvironmentsresponsetypedef).
+[ListEnvironmentsResponseResponseTypeDef](./type_defs.md#listenvironmentsresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+A list of all tags for a resource.
 
 Type annotations for `boto3.client("finspace").list_tags_for_resource` method.
 
 Boto3 documentation:
 [finspace.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### tag_resource
+
+Adds metadata tags to a FinSpace resource.
 
 Type annotations for `boto3.client("finspace").tag_resource` method.
 
 Boto3 documentation:
 [finspace.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -185,10 +219,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Removes metadata tags from a FinSpace resource.
+
 Type annotations for `boto3.client("finspace").untag_resource` method.
 
 Boto3 documentation:
 [finspace.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -199,10 +238,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_environment
 
+Update your FinSpace environment.
+
 Type annotations for `boto3.client("finspace").update_environment` method.
 
 Boto3 documentation:
 [finspace.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.update_environment)
+
+Arguments mapping described in
+[UpdateEnvironmentRequestTypeDef](./type_defs.md#updateenvironmentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -214,4 +258,4 @@ Keyword-only arguments:
   [FederationParametersTypeDef](./type_defs.md#federationparameterstypedef)
 
 Returns
-[UpdateEnvironmentResponseTypeDef](./type_defs.md#updateenvironmentresponsetypedef).
+[UpdateEnvironmentResponseResponseTypeDef](./type_defs.md#updateenvironmentresponseresponsetypedef).

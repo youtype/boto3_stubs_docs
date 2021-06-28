@@ -13,19 +13,28 @@ type annotations stubs module
   - [AlarmStateTypeDef](#alarmstatetypedef)
   - [AlarmSummaryTypeDef](#alarmsummarytypedef)
   - [AlarmTypeDef](#alarmtypedef)
-  - [BatchAcknowledgeAlarmResponseTypeDef](#batchacknowledgealarmresponsetypedef)
+  - [BatchAcknowledgeAlarmRequestTypeDef](#batchacknowledgealarmrequesttypedef)
+  - [BatchAcknowledgeAlarmResponseResponseTypeDef](#batchacknowledgealarmresponseresponsetypedef)
   - [BatchAlarmActionErrorEntryTypeDef](#batchalarmactionerrorentrytypedef)
-  - [BatchDisableAlarmResponseTypeDef](#batchdisablealarmresponsetypedef)
-  - [BatchEnableAlarmResponseTypeDef](#batchenablealarmresponsetypedef)
+  - [BatchDisableAlarmRequestTypeDef](#batchdisablealarmrequesttypedef)
+  - [BatchDisableAlarmResponseResponseTypeDef](#batchdisablealarmresponseresponsetypedef)
+  - [BatchEnableAlarmRequestTypeDef](#batchenablealarmrequesttypedef)
+  - [BatchEnableAlarmResponseResponseTypeDef](#batchenablealarmresponseresponsetypedef)
   - [BatchPutMessageErrorEntryTypeDef](#batchputmessageerrorentrytypedef)
-  - [BatchPutMessageResponseTypeDef](#batchputmessageresponsetypedef)
-  - [BatchResetAlarmResponseTypeDef](#batchresetalarmresponsetypedef)
-  - [BatchSnoozeAlarmResponseTypeDef](#batchsnoozealarmresponsetypedef)
+  - [BatchPutMessageRequestTypeDef](#batchputmessagerequesttypedef)
+  - [BatchPutMessageResponseResponseTypeDef](#batchputmessageresponseresponsetypedef)
+  - [BatchResetAlarmRequestTypeDef](#batchresetalarmrequesttypedef)
+  - [BatchResetAlarmResponseResponseTypeDef](#batchresetalarmresponseresponsetypedef)
+  - [BatchSnoozeAlarmRequestTypeDef](#batchsnoozealarmrequesttypedef)
+  - [BatchSnoozeAlarmResponseResponseTypeDef](#batchsnoozealarmresponseresponsetypedef)
   - [BatchUpdateDetectorErrorEntryTypeDef](#batchupdatedetectorerrorentrytypedef)
-  - [BatchUpdateDetectorResponseTypeDef](#batchupdatedetectorresponsetypedef)
+  - [BatchUpdateDetectorRequestTypeDef](#batchupdatedetectorrequesttypedef)
+  - [BatchUpdateDetectorResponseResponseTypeDef](#batchupdatedetectorresponseresponsetypedef)
   - [CustomerActionTypeDef](#customeractiontypedef)
-  - [DescribeAlarmResponseTypeDef](#describealarmresponsetypedef)
-  - [DescribeDetectorResponseTypeDef](#describedetectorresponsetypedef)
+  - [DescribeAlarmRequestTypeDef](#describealarmrequesttypedef)
+  - [DescribeAlarmResponseResponseTypeDef](#describealarmresponseresponsetypedef)
+  - [DescribeDetectorRequestTypeDef](#describedetectorrequesttypedef)
+  - [DescribeDetectorResponseResponseTypeDef](#describedetectorresponseresponsetypedef)
   - [DetectorStateDefinitionTypeDef](#detectorstatedefinitiontypedef)
   - [DetectorStateSummaryTypeDef](#detectorstatesummarytypedef)
   - [DetectorStateTypeDef](#detectorstatetypedef)
@@ -35,11 +44,14 @@ type annotations stubs module
   - [DisableAlarmActionRequestTypeDef](#disablealarmactionrequesttypedef)
   - [EnableActionConfigurationTypeDef](#enableactionconfigurationtypedef)
   - [EnableAlarmActionRequestTypeDef](#enablealarmactionrequesttypedef)
-  - [ListAlarmsResponseTypeDef](#listalarmsresponsetypedef)
-  - [ListDetectorsResponseTypeDef](#listdetectorsresponsetypedef)
+  - [ListAlarmsRequestTypeDef](#listalarmsrequesttypedef)
+  - [ListAlarmsResponseResponseTypeDef](#listalarmsresponseresponsetypedef)
+  - [ListDetectorsRequestTypeDef](#listdetectorsrequesttypedef)
+  - [ListDetectorsResponseResponseTypeDef](#listdetectorsresponseresponsetypedef)
   - [MessageTypeDef](#messagetypedef)
   - [ResetActionConfigurationTypeDef](#resetactionconfigurationtypedef)
   - [ResetAlarmActionRequestTypeDef](#resetalarmactionrequesttypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RuleEvaluationTypeDef](#ruleevaluationtypedef)
   - [SimpleRuleEvaluationTypeDef](#simpleruleevaluationtypedef)
   - [SnoozeActionConfigurationTypeDef](#snoozeactionconfigurationtypedef)
@@ -125,16 +137,29 @@ Optional fields:
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
 
-## BatchAcknowledgeAlarmResponseTypeDef
+## BatchAcknowledgeAlarmRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents_data.type_defs import BatchAcknowledgeAlarmResponseTypeDef
+from mypy_boto3_iotevents_data.type_defs import BatchAcknowledgeAlarmRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `acknowledgeActionRequests`:
+  `List`\[[AcknowledgeAlarmActionRequestTypeDef](./type_defs.md#acknowledgealarmactionrequesttypedef)\]
+
+## BatchAcknowledgeAlarmResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents_data.type_defs import BatchAcknowledgeAlarmResponseResponseTypeDef
+```
+
+Required fields:
 
 - `errorEntries`:
   `List`\[[BatchAlarmActionErrorEntryTypeDef](./type_defs.md#batchalarmactionerrorentrytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## BatchAlarmActionErrorEntryTypeDef
 
@@ -148,27 +173,53 @@ Optional fields:
 - `errorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `errorMessage`: `str`
 
-## BatchDisableAlarmResponseTypeDef
+## BatchDisableAlarmRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents_data.type_defs import BatchDisableAlarmResponseTypeDef
+from mypy_boto3_iotevents_data.type_defs import BatchDisableAlarmRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `disableActionRequests`:
+  `List`\[[DisableAlarmActionRequestTypeDef](./type_defs.md#disablealarmactionrequesttypedef)\]
+
+## BatchDisableAlarmResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents_data.type_defs import BatchDisableAlarmResponseResponseTypeDef
+```
+
+Required fields:
 
 - `errorEntries`:
   `List`\[[BatchAlarmActionErrorEntryTypeDef](./type_defs.md#batchalarmactionerrorentrytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchEnableAlarmResponseTypeDef
+## BatchEnableAlarmRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents_data.type_defs import BatchEnableAlarmResponseTypeDef
+from mypy_boto3_iotevents_data.type_defs import BatchEnableAlarmRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `enableActionRequests`:
+  `List`\[[EnableAlarmActionRequestTypeDef](./type_defs.md#enablealarmactionrequesttypedef)\]
+
+## BatchEnableAlarmResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents_data.type_defs import BatchEnableAlarmResponseResponseTypeDef
+```
+
+Required fields:
 
 - `errorEntries`:
   `List`\[[BatchAlarmActionErrorEntryTypeDef](./type_defs.md#batchalarmactionerrorentrytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## BatchPutMessageErrorEntryTypeDef
 
@@ -182,38 +233,76 @@ Optional fields:
 - `errorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `errorMessage`: `str`
 
-## BatchPutMessageResponseTypeDef
+## BatchPutMessageRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents_data.type_defs import BatchPutMessageResponseTypeDef
+from mypy_boto3_iotevents_data.type_defs import BatchPutMessageRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `messages`: `List`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
+
+## BatchPutMessageResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents_data.type_defs import BatchPutMessageResponseResponseTypeDef
+```
+
+Required fields:
 
 - `BatchPutMessageErrorEntries`:
   `List`\[[BatchPutMessageErrorEntryTypeDef](./type_defs.md#batchputmessageerrorentrytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchResetAlarmResponseTypeDef
+## BatchResetAlarmRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents_data.type_defs import BatchResetAlarmResponseTypeDef
+from mypy_boto3_iotevents_data.type_defs import BatchResetAlarmRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `resetActionRequests`:
+  `List`\[[ResetAlarmActionRequestTypeDef](./type_defs.md#resetalarmactionrequesttypedef)\]
+
+## BatchResetAlarmResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents_data.type_defs import BatchResetAlarmResponseResponseTypeDef
+```
+
+Required fields:
 
 - `errorEntries`:
   `List`\[[BatchAlarmActionErrorEntryTypeDef](./type_defs.md#batchalarmactionerrorentrytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchSnoozeAlarmResponseTypeDef
+## BatchSnoozeAlarmRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents_data.type_defs import BatchSnoozeAlarmResponseTypeDef
+from mypy_boto3_iotevents_data.type_defs import BatchSnoozeAlarmRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `snoozeActionRequests`:
+  `List`\[[SnoozeAlarmActionRequestTypeDef](./type_defs.md#snoozealarmactionrequesttypedef)\]
+
+## BatchSnoozeAlarmResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents_data.type_defs import BatchSnoozeAlarmResponseResponseTypeDef
+```
+
+Required fields:
 
 - `errorEntries`:
   `List`\[[BatchAlarmActionErrorEntryTypeDef](./type_defs.md#batchalarmactionerrorentrytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## BatchUpdateDetectorErrorEntryTypeDef
 
@@ -227,16 +316,29 @@ Optional fields:
 - `errorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `errorMessage`: `str`
 
-## BatchUpdateDetectorResponseTypeDef
+## BatchUpdateDetectorRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents_data.type_defs import BatchUpdateDetectorResponseTypeDef
+from mypy_boto3_iotevents_data.type_defs import BatchUpdateDetectorRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `detectors`:
+  `List`\[[UpdateDetectorRequestTypeDef](./type_defs.md#updatedetectorrequesttypedef)\]
+
+## BatchUpdateDetectorResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents_data.type_defs import BatchUpdateDetectorResponseResponseTypeDef
+```
+
+Required fields:
 
 - `batchUpdateDetectorErrorEntries`:
   `List`\[[BatchUpdateDetectorErrorEntryTypeDef](./type_defs.md#batchupdatedetectorerrorentrytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CustomerActionTypeDef
 
@@ -258,25 +360,57 @@ Optional fields:
 - `resetActionConfiguration`:
   [ResetActionConfigurationTypeDef](./type_defs.md#resetactionconfigurationtypedef)
 
-## DescribeAlarmResponseTypeDef
+## DescribeAlarmRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents_data.type_defs import DescribeAlarmResponseTypeDef
+from mypy_boto3_iotevents_data.type_defs import DescribeAlarmRequestTypeDef
 ```
 
+Required fields:
+
+- `alarmModelName`: `str`
+
 Optional fields:
+
+- `keyValue`: `str`
+
+## DescribeAlarmResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents_data.type_defs import DescribeAlarmResponseResponseTypeDef
+```
+
+Required fields:
 
 - `alarm`: [AlarmTypeDef](./type_defs.md#alarmtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDetectorResponseTypeDef
+## DescribeDetectorRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents_data.type_defs import DescribeDetectorResponseTypeDef
+from mypy_boto3_iotevents_data.type_defs import DescribeDetectorRequestTypeDef
 ```
+
+Required fields:
+
+- `detectorModelName`: `str`
 
 Optional fields:
 
+- `keyValue`: `str`
+
+## DescribeDetectorResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents_data.type_defs import DescribeDetectorResponseResponseTypeDef
+```
+
+Required fields:
+
 - `detector`: [DetectorTypeDef](./type_defs.md#detectortypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DetectorStateDefinitionTypeDef
 
@@ -397,29 +531,64 @@ Optional fields:
 - `keyValue`: `str`
 - `note`: `str`
 
-## ListAlarmsResponseTypeDef
+## ListAlarmsRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents_data.type_defs import ListAlarmsResponseTypeDef
+from mypy_boto3_iotevents_data.type_defs import ListAlarmsRequestTypeDef
 ```
 
+Required fields:
+
+- `alarmModelName`: `str`
+
 Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListAlarmsResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents_data.type_defs import ListAlarmsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `alarmSummaries`:
   `List`\[[AlarmSummaryTypeDef](./type_defs.md#alarmsummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDetectorsResponseTypeDef
+## ListDetectorsRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents_data.type_defs import ListDetectorsResponseTypeDef
+from mypy_boto3_iotevents_data.type_defs import ListDetectorsRequestTypeDef
 ```
 
+Required fields:
+
+- `detectorModelName`: `str`
+
 Optional fields:
+
+- `stateName`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListDetectorsResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents_data.type_defs import ListDetectorsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `detectorSummaries`:
   `List`\[[DetectorSummaryTypeDef](./type_defs.md#detectorsummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## MessageTypeDef
 
@@ -462,6 +631,20 @@ Optional fields:
 
 - `keyValue`: `str`
 - `note`: `str`
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_iotevents_data.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## RuleEvaluationTypeDef
 

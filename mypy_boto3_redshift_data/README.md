@@ -100,20 +100,29 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_redshift_data.type_defs import CancelStatementResponseTypeDef, ...
+from mypy_boto3_redshift_data.type_defs import CancelStatementRequestTypeDef, ...
 ```
 
-- [CancelStatementResponseTypeDef](./type_defs.md#cancelstatementresponsetypedef)
+- [CancelStatementRequestTypeDef](./type_defs.md#cancelstatementrequesttypedef)
+- [CancelStatementResponseResponseTypeDef](./type_defs.md#cancelstatementresponseresponsetypedef)
 - [ColumnMetadataTypeDef](./type_defs.md#columnmetadatatypedef)
-- [DescribeStatementResponseTypeDef](./type_defs.md#describestatementresponsetypedef)
-- [DescribeTableResponseTypeDef](./type_defs.md#describetableresponsetypedef)
-- [ExecuteStatementOutputTypeDef](./type_defs.md#executestatementoutputtypedef)
+- [DescribeStatementRequestTypeDef](./type_defs.md#describestatementrequesttypedef)
+- [DescribeStatementResponseResponseTypeDef](./type_defs.md#describestatementresponseresponsetypedef)
+- [DescribeTableRequestTypeDef](./type_defs.md#describetablerequesttypedef)
+- [DescribeTableResponseResponseTypeDef](./type_defs.md#describetableresponseresponsetypedef)
+- [ExecuteStatementInputTypeDef](./type_defs.md#executestatementinputtypedef)
+- [ExecuteStatementOutputResponseTypeDef](./type_defs.md#executestatementoutputresponsetypedef)
 - [FieldTypeDef](./type_defs.md#fieldtypedef)
-- [GetStatementResultResponseTypeDef](./type_defs.md#getstatementresultresponsetypedef)
-- [ListDatabasesResponseTypeDef](./type_defs.md#listdatabasesresponsetypedef)
-- [ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef)
-- [ListStatementsResponseTypeDef](./type_defs.md#liststatementsresponsetypedef)
-- [ListTablesResponseTypeDef](./type_defs.md#listtablesresponsetypedef)
+- [GetStatementResultRequestTypeDef](./type_defs.md#getstatementresultrequesttypedef)
+- [GetStatementResultResponseResponseTypeDef](./type_defs.md#getstatementresultresponseresponsetypedef)
+- [ListDatabasesRequestTypeDef](./type_defs.md#listdatabasesrequesttypedef)
+- [ListDatabasesResponseResponseTypeDef](./type_defs.md#listdatabasesresponseresponsetypedef)
+- [ListSchemasRequestTypeDef](./type_defs.md#listschemasrequesttypedef)
+- [ListSchemasResponseResponseTypeDef](./type_defs.md#listschemasresponseresponsetypedef)
+- [ListStatementsRequestTypeDef](./type_defs.md#liststatementsrequesttypedef)
+- [ListStatementsResponseResponseTypeDef](./type_defs.md#liststatementsresponseresponsetypedef)
+- [ListTablesRequestTypeDef](./type_defs.md#listtablesrequesttypedef)
+- [ListTablesResponseResponseTypeDef](./type_defs.md#listtablesresponseresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)

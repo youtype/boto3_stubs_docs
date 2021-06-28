@@ -256,6 +256,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("cloudfront").can_paginate` method.
 
 Boto3 documentation:
@@ -269,10 +271,15 @@ Returns `bool`.
 
 ### create_cache_policy
 
+Creates a cache policy.
+
 Type annotations for `boto3.client("cloudfront").create_cache_policy` method.
 
 Boto3 documentation:
 [CloudFront.Client.create_cache_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_cache_policy)
+
+Arguments mapping described in
+[CreateCachePolicyRequestTypeDef](./type_defs.md#createcachepolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -281,15 +288,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateCachePolicyResultTypeDef](./type_defs.md#createcachepolicyresulttypedef).
+[CreateCachePolicyResultResponseTypeDef](./type_defs.md#createcachepolicyresultresponsetypedef).
 
 ### create_cloud_front_origin_access_identity
+
+Creates a new origin access identity.
 
 Type annotations for
 `boto3.client("cloudfront").create_cloud_front_origin_access_identity` method.
 
 Boto3 documentation:
 [CloudFront.Client.create_cloud_front_origin_access_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_cloud_front_origin_access_identity)
+
+Arguments mapping described in
+[CreateCloudFrontOriginAccessIdentityRequestTypeDef](./type_defs.md#createcloudfrontoriginaccessidentityrequesttypedef).
 
 Keyword-only arguments:
 
@@ -298,14 +310,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateCloudFrontOriginAccessIdentityResultTypeDef](./type_defs.md#createcloudfrontoriginaccessidentityresulttypedef).
+[CreateCloudFrontOriginAccessIdentityResultResponseTypeDef](./type_defs.md#createcloudfrontoriginaccessidentityresultresponsetypedef).
 
 ### create_distribution
+
+Creates a new web distribution.
 
 Type annotations for `boto3.client("cloudfront").create_distribution` method.
 
 Boto3 documentation:
 [CloudFront.Client.create_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_distribution)
+
+Arguments mapping described in
+[CreateDistributionRequestTypeDef](./type_defs.md#createdistributionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -314,15 +331,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateDistributionResultTypeDef](./type_defs.md#createdistributionresulttypedef).
+[CreateDistributionResultResponseTypeDef](./type_defs.md#createdistributionresultresponsetypedef).
 
 ### create_distribution_with_tags
+
+Create a new distribution with tags.
 
 Type annotations for `boto3.client("cloudfront").create_distribution_with_tags`
 method.
 
 Boto3 documentation:
 [CloudFront.Client.create_distribution_with_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_distribution_with_tags)
+
+Arguments mapping described in
+[CreateDistributionWithTagsRequestTypeDef](./type_defs.md#createdistributionwithtagsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -331,15 +353,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateDistributionWithTagsResultTypeDef](./type_defs.md#createdistributionwithtagsresulttypedef).
+[CreateDistributionWithTagsResultResponseTypeDef](./type_defs.md#createdistributionwithtagsresultresponsetypedef).
 
 ### create_field_level_encryption_config
+
+Create a new field-level encryption configuration.
 
 Type annotations for
 `boto3.client("cloudfront").create_field_level_encryption_config` method.
 
 Boto3 documentation:
 [CloudFront.Client.create_field_level_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_field_level_encryption_config)
+
+Arguments mapping described in
+[CreateFieldLevelEncryptionConfigRequestTypeDef](./type_defs.md#createfieldlevelencryptionconfigrequesttypedef).
 
 Keyword-only arguments:
 
@@ -348,15 +375,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateFieldLevelEncryptionConfigResultTypeDef](./type_defs.md#createfieldlevelencryptionconfigresulttypedef).
+[CreateFieldLevelEncryptionConfigResultResponseTypeDef](./type_defs.md#createfieldlevelencryptionconfigresultresponsetypedef).
 
 ### create_field_level_encryption_profile
+
+Create a field-level encryption profile.
 
 Type annotations for
 `boto3.client("cloudfront").create_field_level_encryption_profile` method.
 
 Boto3 documentation:
 [CloudFront.Client.create_field_level_encryption_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_field_level_encryption_profile)
+
+Arguments mapping described in
+[CreateFieldLevelEncryptionProfileRequestTypeDef](./type_defs.md#createfieldlevelencryptionprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -365,14 +397,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateFieldLevelEncryptionProfileResultTypeDef](./type_defs.md#createfieldlevelencryptionprofileresulttypedef).
+[CreateFieldLevelEncryptionProfileResultResponseTypeDef](./type_defs.md#createfieldlevelencryptionprofileresultresponsetypedef).
 
 ### create_function
+
+Creates a CloudFront function.
 
 Type annotations for `boto3.client("cloudfront").create_function` method.
 
 Boto3 documentation:
 [CloudFront.Client.create_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_function)
+
+Arguments mapping described in
+[CreateFunctionRequestTypeDef](./type_defs.md#createfunctionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -383,14 +420,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateFunctionResultTypeDef](./type_defs.md#createfunctionresulttypedef).
+[CreateFunctionResultResponseTypeDef](./type_defs.md#createfunctionresultresponsetypedef).
 
 ### create_invalidation
+
+Create a new invalidation.
 
 Type annotations for `boto3.client("cloudfront").create_invalidation` method.
 
 Boto3 documentation:
 [CloudFront.Client.create_invalidation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_invalidation)
+
+Arguments mapping described in
+[CreateInvalidationRequestTypeDef](./type_defs.md#createinvalidationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -400,14 +442,21 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateInvalidationResultTypeDef](./type_defs.md#createinvalidationresulttypedef).
+[CreateInvalidationResultResponseTypeDef](./type_defs.md#createinvalidationresultresponsetypedef).
 
 ### create_key_group
+
+Creates a key group that you can use with
+`CloudFront signed URLs and signed cookies <https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Priv ateContent.html>`\_\_
+.
 
 Type annotations for `boto3.client("cloudfront").create_key_group` method.
 
 Boto3 documentation:
 [CloudFront.Client.create_key_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_key_group)
+
+Arguments mapping described in
+[CreateKeyGroupRequestTypeDef](./type_defs.md#createkeygrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -415,15 +464,21 @@ Keyword-only arguments:
   [KeyGroupConfigTypeDef](./type_defs.md#keygroupconfigtypedef) *(required)*
 
 Returns
-[CreateKeyGroupResultTypeDef](./type_defs.md#createkeygroupresulttypedef).
+[CreateKeyGroupResultResponseTypeDef](./type_defs.md#createkeygroupresultresponsetypedef).
 
 ### create_monitoring_subscription
+
+Enables additional CloudWatch metrics for the specified CloudFront
+distribution.
 
 Type annotations for
 `boto3.client("cloudfront").create_monitoring_subscription` method.
 
 Boto3 documentation:
 [CloudFront.Client.create_monitoring_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_monitoring_subscription)
+
+Arguments mapping described in
+[CreateMonitoringSubscriptionRequestTypeDef](./type_defs.md#createmonitoringsubscriptionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -433,15 +488,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateMonitoringSubscriptionResultTypeDef](./type_defs.md#createmonitoringsubscriptionresulttypedef).
+[CreateMonitoringSubscriptionResultResponseTypeDef](./type_defs.md#createmonitoringsubscriptionresultresponsetypedef).
 
 ### create_origin_request_policy
+
+Creates an origin request policy.
 
 Type annotations for `boto3.client("cloudfront").create_origin_request_policy`
 method.
 
 Boto3 documentation:
 [CloudFront.Client.create_origin_request_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_origin_request_policy)
+
+Arguments mapping described in
+[CreateOriginRequestPolicyRequestTypeDef](./type_defs.md#createoriginrequestpolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -450,14 +510,22 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateOriginRequestPolicyResultTypeDef](./type_defs.md#createoriginrequestpolicyresulttypedef).
+[CreateOriginRequestPolicyResultResponseTypeDef](./type_defs.md#createoriginrequestpolicyresultresponsetypedef).
 
 ### create_public_key
+
+Uploads a public key to CloudFront that you can use with
+`signed URLs and signed cookies <https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Priv ateContent.html>`\_\_
+, or with
+`field-level encryption <https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level- en...`.
 
 Type annotations for `boto3.client("cloudfront").create_public_key` method.
 
 Boto3 documentation:
 [CloudFront.Client.create_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_public_key)
+
+Arguments mapping described in
+[CreatePublicKeyRequestTypeDef](./type_defs.md#createpublickeyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -465,15 +533,20 @@ Keyword-only arguments:
   [PublicKeyConfigTypeDef](./type_defs.md#publickeyconfigtypedef) *(required)*
 
 Returns
-[CreatePublicKeyResultTypeDef](./type_defs.md#createpublickeyresulttypedef).
+[CreatePublicKeyResultResponseTypeDef](./type_defs.md#createpublickeyresultresponsetypedef).
 
 ### create_realtime_log_config
+
+Creates a real-time log configuration.
 
 Type annotations for `boto3.client("cloudfront").create_realtime_log_config`
 method.
 
 Boto3 documentation:
 [CloudFront.Client.create_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_realtime_log_config)
+
+Arguments mapping described in
+[CreateRealtimeLogConfigRequestTypeDef](./type_defs.md#createrealtimelogconfigrequesttypedef).
 
 Keyword-only arguments:
 
@@ -484,15 +557,20 @@ Keyword-only arguments:
 - `SamplingRate`: `int` *(required)*
 
 Returns
-[CreateRealtimeLogConfigResultTypeDef](./type_defs.md#createrealtimelogconfigresulttypedef).
+[CreateRealtimeLogConfigResultResponseTypeDef](./type_defs.md#createrealtimelogconfigresultresponsetypedef).
 
 ### create_streaming_distribution
+
+This API is deprecated.
 
 Type annotations for `boto3.client("cloudfront").create_streaming_distribution`
 method.
 
 Boto3 documentation:
 [CloudFront.Client.create_streaming_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_streaming_distribution)
+
+Arguments mapping described in
+[CreateStreamingDistributionRequestTypeDef](./type_defs.md#createstreamingdistributionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -501,15 +579,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateStreamingDistributionResultTypeDef](./type_defs.md#createstreamingdistributionresulttypedef).
+[CreateStreamingDistributionResultResponseTypeDef](./type_defs.md#createstreamingdistributionresultresponsetypedef).
 
 ### create_streaming_distribution_with_tags
+
+This API is deprecated.
 
 Type annotations for
 `boto3.client("cloudfront").create_streaming_distribution_with_tags` method.
 
 Boto3 documentation:
 [CloudFront.Client.create_streaming_distribution_with_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_streaming_distribution_with_tags)
+
+Arguments mapping described in
+[CreateStreamingDistributionWithTagsRequestTypeDef](./type_defs.md#createstreamingdistributionwithtagsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -518,14 +601,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateStreamingDistributionWithTagsResultTypeDef](./type_defs.md#createstreamingdistributionwithtagsresulttypedef).
+[CreateStreamingDistributionWithTagsResultResponseTypeDef](./type_defs.md#createstreamingdistributionwithtagsresultresponsetypedef).
 
 ### delete_cache_policy
+
+Deletes a cache policy.
 
 Type annotations for `boto3.client("cloudfront").delete_cache_policy` method.
 
 Boto3 documentation:
 [CloudFront.Client.delete_cache_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_cache_policy)
+
+Arguments mapping described in
+[DeleteCachePolicyRequestTypeDef](./type_defs.md#deletecachepolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -534,11 +622,16 @@ Keyword-only arguments:
 
 ### delete_cloud_front_origin_access_identity
 
+Delete an origin access identity.
+
 Type annotations for
 `boto3.client("cloudfront").delete_cloud_front_origin_access_identity` method.
 
 Boto3 documentation:
 [CloudFront.Client.delete_cloud_front_origin_access_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_cloud_front_origin_access_identity)
+
+Arguments mapping described in
+[DeleteCloudFrontOriginAccessIdentityRequestTypeDef](./type_defs.md#deletecloudfrontoriginaccessidentityrequesttypedef).
 
 Keyword-only arguments:
 
@@ -547,10 +640,15 @@ Keyword-only arguments:
 
 ### delete_distribution
 
+Delete a distribution.
+
 Type annotations for `boto3.client("cloudfront").delete_distribution` method.
 
 Boto3 documentation:
 [CloudFront.Client.delete_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_distribution)
+
+Arguments mapping described in
+[DeleteDistributionRequestTypeDef](./type_defs.md#deletedistributionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -559,11 +657,16 @@ Keyword-only arguments:
 
 ### delete_field_level_encryption_config
 
+Remove a field-level encryption configuration.
+
 Type annotations for
 `boto3.client("cloudfront").delete_field_level_encryption_config` method.
 
 Boto3 documentation:
 [CloudFront.Client.delete_field_level_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_field_level_encryption_config)
+
+Arguments mapping described in
+[DeleteFieldLevelEncryptionConfigRequestTypeDef](./type_defs.md#deletefieldlevelencryptionconfigrequesttypedef).
 
 Keyword-only arguments:
 
@@ -572,11 +675,16 @@ Keyword-only arguments:
 
 ### delete_field_level_encryption_profile
 
+Remove a field-level encryption profile.
+
 Type annotations for
 `boto3.client("cloudfront").delete_field_level_encryption_profile` method.
 
 Boto3 documentation:
 [CloudFront.Client.delete_field_level_encryption_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_field_level_encryption_profile)
+
+Arguments mapping described in
+[DeleteFieldLevelEncryptionProfileRequestTypeDef](./type_defs.md#deletefieldlevelencryptionprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -585,10 +693,15 @@ Keyword-only arguments:
 
 ### delete_function
 
+Deletes a CloudFront function.
+
 Type annotations for `boto3.client("cloudfront").delete_function` method.
 
 Boto3 documentation:
 [CloudFront.Client.delete_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_function)
+
+Arguments mapping described in
+[DeleteFunctionRequestTypeDef](./type_defs.md#deletefunctionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -597,10 +710,15 @@ Keyword-only arguments:
 
 ### delete_key_group
 
+Deletes a key group.
+
 Type annotations for `boto3.client("cloudfront").delete_key_group` method.
 
 Boto3 documentation:
 [CloudFront.Client.delete_key_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_key_group)
+
+Arguments mapping described in
+[DeleteKeyGroupRequestTypeDef](./type_defs.md#deletekeygrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -609,11 +727,17 @@ Keyword-only arguments:
 
 ### delete_monitoring_subscription
 
+Disables additional CloudWatch metrics for the specified CloudFront
+distribution.
+
 Type annotations for
 `boto3.client("cloudfront").delete_monitoring_subscription` method.
 
 Boto3 documentation:
 [CloudFront.Client.delete_monitoring_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_monitoring_subscription)
+
+Arguments mapping described in
+[DeleteMonitoringSubscriptionRequestTypeDef](./type_defs.md#deletemonitoringsubscriptionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -623,11 +747,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_origin_request_policy
 
+Deletes an origin request policy.
+
 Type annotations for `boto3.client("cloudfront").delete_origin_request_policy`
 method.
 
 Boto3 documentation:
 [CloudFront.Client.delete_origin_request_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_origin_request_policy)
+
+Arguments mapping described in
+[DeleteOriginRequestPolicyRequestTypeDef](./type_defs.md#deleteoriginrequestpolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -636,10 +765,15 @@ Keyword-only arguments:
 
 ### delete_public_key
 
+Remove a public key you previously added to CloudFront.
+
 Type annotations for `boto3.client("cloudfront").delete_public_key` method.
 
 Boto3 documentation:
 [CloudFront.Client.delete_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_public_key)
+
+Arguments mapping described in
+[DeletePublicKeyRequestTypeDef](./type_defs.md#deletepublickeyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -648,11 +782,16 @@ Keyword-only arguments:
 
 ### delete_realtime_log_config
 
+Deletes a real-time log configuration.
+
 Type annotations for `boto3.client("cloudfront").delete_realtime_log_config`
 method.
 
 Boto3 documentation:
 [CloudFront.Client.delete_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_realtime_log_config)
+
+Arguments mapping described in
+[DeleteRealtimeLogConfigRequestTypeDef](./type_defs.md#deleterealtimelogconfigrequesttypedef).
 
 Keyword-only arguments:
 
@@ -661,11 +800,16 @@ Keyword-only arguments:
 
 ### delete_streaming_distribution
 
+Delete a streaming distribution.
+
 Type annotations for `boto3.client("cloudfront").delete_streaming_distribution`
 method.
 
 Boto3 documentation:
 [CloudFront.Client.delete_streaming_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_streaming_distribution)
+
+Arguments mapping described in
+[DeleteStreamingDistributionRequestTypeDef](./type_defs.md#deletestreamingdistributionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -674,10 +818,16 @@ Keyword-only arguments:
 
 ### describe_function
 
+Gets configuration information and metadata about a CloudFront function, but
+not the function’s code.
+
 Type annotations for `boto3.client("cloudfront").describe_function` method.
 
 Boto3 documentation:
 [CloudFront.Client.describe_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.describe_function)
+
+Arguments mapping described in
+[DescribeFunctionRequestTypeDef](./type_defs.md#describefunctionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -685,9 +835,11 @@ Keyword-only arguments:
 - `Stage`: [FunctionStageType](./literals.md#functionstagetype)
 
 Returns
-[DescribeFunctionResultTypeDef](./type_defs.md#describefunctionresulttypedef).
+[DescribeFunctionResultResponseTypeDef](./type_defs.md#describefunctionresultresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("cloudfront").generate_presigned_url`
 method.
@@ -706,19 +858,27 @@ Returns `str`.
 
 ### get_cache_policy
 
+Gets a cache policy, including the following metadata * The policy’s
+identifier.
+
 Type annotations for `boto3.client("cloudfront").get_cache_policy` method.
 
 Boto3 documentation:
 [CloudFront.Client.get_cache_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cache_policy)
+
+Arguments mapping described in
+[GetCachePolicyRequestTypeDef](./type_defs.md#getcachepolicyrequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[GetCachePolicyResultTypeDef](./type_defs.md#getcachepolicyresulttypedef).
+[GetCachePolicyResultResponseTypeDef](./type_defs.md#getcachepolicyresultresponsetypedef).
 
 ### get_cache_policy_config
+
+Gets a cache policy configuration.
 
 Type annotations for `boto3.client("cloudfront").get_cache_policy_config`
 method.
@@ -726,14 +886,19 @@ method.
 Boto3 documentation:
 [CloudFront.Client.get_cache_policy_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cache_policy_config)
 
+Arguments mapping described in
+[GetCachePolicyConfigRequestTypeDef](./type_defs.md#getcachepolicyconfigrequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[GetCachePolicyConfigResultTypeDef](./type_defs.md#getcachepolicyconfigresulttypedef).
+[GetCachePolicyConfigResultResponseTypeDef](./type_defs.md#getcachepolicyconfigresultresponsetypedef).
 
 ### get_cloud_front_origin_access_identity
+
+Get the information about an origin access identity.
 
 Type annotations for
 `boto3.client("cloudfront").get_cloud_front_origin_access_identity` method.
@@ -741,14 +906,19 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.get_cloud_front_origin_access_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cloud_front_origin_access_identity)
 
+Arguments mapping described in
+[GetCloudFrontOriginAccessIdentityRequestTypeDef](./type_defs.md#getcloudfrontoriginaccessidentityrequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[GetCloudFrontOriginAccessIdentityResultTypeDef](./type_defs.md#getcloudfrontoriginaccessidentityresulttypedef).
+[GetCloudFrontOriginAccessIdentityResultResponseTypeDef](./type_defs.md#getcloudfrontoriginaccessidentityresultresponsetypedef).
 
 ### get_cloud_front_origin_access_identity_config
+
+Get the configuration information about an origin access identity.
 
 Type annotations for
 `boto3.client("cloudfront").get_cloud_front_origin_access_identity_config`
@@ -757,28 +927,38 @@ method.
 Boto3 documentation:
 [CloudFront.Client.get_cloud_front_origin_access_identity_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cloud_front_origin_access_identity_config)
 
+Arguments mapping described in
+[GetCloudFrontOriginAccessIdentityConfigRequestTypeDef](./type_defs.md#getcloudfrontoriginaccessidentityconfigrequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[GetCloudFrontOriginAccessIdentityConfigResultTypeDef](./type_defs.md#getcloudfrontoriginaccessidentityconfigresulttypedef).
+[GetCloudFrontOriginAccessIdentityConfigResultResponseTypeDef](./type_defs.md#getcloudfrontoriginaccessidentityconfigresultresponsetypedef).
 
 ### get_distribution
+
+Get the information about a distribution.
 
 Type annotations for `boto3.client("cloudfront").get_distribution` method.
 
 Boto3 documentation:
 [CloudFront.Client.get_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_distribution)
 
+Arguments mapping described in
+[GetDistributionRequestTypeDef](./type_defs.md#getdistributionrequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[GetDistributionResultTypeDef](./type_defs.md#getdistributionresulttypedef).
+[GetDistributionResultResponseTypeDef](./type_defs.md#getdistributionresultresponsetypedef).
 
 ### get_distribution_config
+
+Get the configuration information about a distribution.
 
 Type annotations for `boto3.client("cloudfront").get_distribution_config`
 method.
@@ -786,14 +966,19 @@ method.
 Boto3 documentation:
 [CloudFront.Client.get_distribution_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_distribution_config)
 
+Arguments mapping described in
+[GetDistributionConfigRequestTypeDef](./type_defs.md#getdistributionconfigrequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[GetDistributionConfigResultTypeDef](./type_defs.md#getdistributionconfigresulttypedef).
+[GetDistributionConfigResultResponseTypeDef](./type_defs.md#getdistributionconfigresultresponsetypedef).
 
 ### get_field_level_encryption
+
+Get the field-level encryption configuration information.
 
 Type annotations for `boto3.client("cloudfront").get_field_level_encryption`
 method.
@@ -801,14 +986,19 @@ method.
 Boto3 documentation:
 [CloudFront.Client.get_field_level_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption)
 
+Arguments mapping described in
+[GetFieldLevelEncryptionRequestTypeDef](./type_defs.md#getfieldlevelencryptionrequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[GetFieldLevelEncryptionResultTypeDef](./type_defs.md#getfieldlevelencryptionresulttypedef).
+[GetFieldLevelEncryptionResultResponseTypeDef](./type_defs.md#getfieldlevelencryptionresultresponsetypedef).
 
 ### get_field_level_encryption_config
+
+Get the field-level encryption configuration information.
 
 Type annotations for
 `boto3.client("cloudfront").get_field_level_encryption_config` method.
@@ -816,14 +1006,19 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.get_field_level_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_config)
 
+Arguments mapping described in
+[GetFieldLevelEncryptionConfigRequestTypeDef](./type_defs.md#getfieldlevelencryptionconfigrequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[GetFieldLevelEncryptionConfigResultTypeDef](./type_defs.md#getfieldlevelencryptionconfigresulttypedef).
+[GetFieldLevelEncryptionConfigResultResponseTypeDef](./type_defs.md#getfieldlevelencryptionconfigresultresponsetypedef).
 
 ### get_field_level_encryption_profile
+
+Get the field-level encryption profile information.
 
 Type annotations for
 `boto3.client("cloudfront").get_field_level_encryption_profile` method.
@@ -831,14 +1026,19 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.get_field_level_encryption_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_profile)
 
+Arguments mapping described in
+[GetFieldLevelEncryptionProfileRequestTypeDef](./type_defs.md#getfieldlevelencryptionprofilerequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[GetFieldLevelEncryptionProfileResultTypeDef](./type_defs.md#getfieldlevelencryptionprofileresulttypedef).
+[GetFieldLevelEncryptionProfileResultResponseTypeDef](./type_defs.md#getfieldlevelencryptionprofileresultresponsetypedef).
 
 ### get_field_level_encryption_profile_config
+
+Get the field-level encryption profile configuration information.
 
 Type annotations for
 `boto3.client("cloudfront").get_field_level_encryption_profile_config` method.
@@ -846,33 +1046,47 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.get_field_level_encryption_profile_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_profile_config)
 
+Arguments mapping described in
+[GetFieldLevelEncryptionProfileConfigRequestTypeDef](./type_defs.md#getfieldlevelencryptionprofileconfigrequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[GetFieldLevelEncryptionProfileConfigResultTypeDef](./type_defs.md#getfieldlevelencryptionprofileconfigresulttypedef).
+[GetFieldLevelEncryptionProfileConfigResultResponseTypeDef](./type_defs.md#getfieldlevelencryptionprofileconfigresultresponsetypedef).
 
 ### get_function
+
+Gets the code of a CloudFront function.
 
 Type annotations for `boto3.client("cloudfront").get_function` method.
 
 Boto3 documentation:
 [CloudFront.Client.get_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_function)
 
+Arguments mapping described in
+[GetFunctionRequestTypeDef](./type_defs.md#getfunctionrequesttypedef).
+
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Stage`: [FunctionStageType](./literals.md#functionstagetype)
 
-Returns [GetFunctionResultTypeDef](./type_defs.md#getfunctionresulttypedef).
+Returns
+[GetFunctionResultResponseTypeDef](./type_defs.md#getfunctionresultresponsetypedef).
 
 ### get_invalidation
+
+Get the information about an invalidation.
 
 Type annotations for `boto3.client("cloudfront").get_invalidation` method.
 
 Boto3 documentation:
 [CloudFront.Client.get_invalidation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_invalidation)
+
+Arguments mapping described in
+[GetInvalidationRequestTypeDef](./type_defs.md#getinvalidationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -880,36 +1094,51 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[GetInvalidationResultTypeDef](./type_defs.md#getinvalidationresulttypedef).
+[GetInvalidationResultResponseTypeDef](./type_defs.md#getinvalidationresultresponsetypedef).
 
 ### get_key_group
+
+Gets a key group, including the date and time when the key group was last
+modified.
 
 Type annotations for `boto3.client("cloudfront").get_key_group` method.
 
 Boto3 documentation:
 [CloudFront.Client.get_key_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_key_group)
 
-Keyword-only arguments:
-
-- `Id`: `str` *(required)*
-
-Returns [GetKeyGroupResultTypeDef](./type_defs.md#getkeygroupresulttypedef).
-
-### get_key_group_config
-
-Type annotations for `boto3.client("cloudfront").get_key_group_config` method.
-
-Boto3 documentation:
-[CloudFront.Client.get_key_group_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_key_group_config)
+Arguments mapping described in
+[GetKeyGroupRequestTypeDef](./type_defs.md#getkeygrouprequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[GetKeyGroupConfigResultTypeDef](./type_defs.md#getkeygroupconfigresulttypedef).
+[GetKeyGroupResultResponseTypeDef](./type_defs.md#getkeygroupresultresponsetypedef).
+
+### get_key_group_config
+
+Gets a key group configuration.
+
+Type annotations for `boto3.client("cloudfront").get_key_group_config` method.
+
+Boto3 documentation:
+[CloudFront.Client.get_key_group_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_key_group_config)
+
+Arguments mapping described in
+[GetKeyGroupConfigRequestTypeDef](./type_defs.md#getkeygroupconfigrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetKeyGroupConfigResultResponseTypeDef](./type_defs.md#getkeygroupconfigresultresponsetypedef).
 
 ### get_monitoring_subscription
+
+Gets information about whether additional CloudWatch metrics are enabled for
+the specified CloudFront distribution.
 
 Type annotations for `boto3.client("cloudfront").get_monitoring_subscription`
 method.
@@ -917,14 +1146,20 @@ method.
 Boto3 documentation:
 [CloudFront.Client.get_monitoring_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_monitoring_subscription)
 
+Arguments mapping described in
+[GetMonitoringSubscriptionRequestTypeDef](./type_defs.md#getmonitoringsubscriptionrequesttypedef).
+
 Keyword-only arguments:
 
 - `DistributionId`: `str` *(required)*
 
 Returns
-[GetMonitoringSubscriptionResultTypeDef](./type_defs.md#getmonitoringsubscriptionresulttypedef).
+[GetMonitoringSubscriptionResultResponseTypeDef](./type_defs.md#getmonitoringsubscriptionresultresponsetypedef).
 
 ### get_origin_request_policy
+
+Gets an origin request policy, including the following metadata * The policy’s
+identifier.
 
 Type annotations for `boto3.client("cloudfront").get_origin_request_policy`
 method.
@@ -932,14 +1167,19 @@ method.
 Boto3 documentation:
 [CloudFront.Client.get_origin_request_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_origin_request_policy)
 
+Arguments mapping described in
+[GetOriginRequestPolicyRequestTypeDef](./type_defs.md#getoriginrequestpolicyrequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[GetOriginRequestPolicyResultTypeDef](./type_defs.md#getoriginrequestpolicyresulttypedef).
+[GetOriginRequestPolicyResultResponseTypeDef](./type_defs.md#getoriginrequestpolicyresultresponsetypedef).
 
 ### get_origin_request_policy_config
+
+Gets an origin request policy configuration.
 
 Type annotations for
 `boto3.client("cloudfront").get_origin_request_policy_config` method.
@@ -947,41 +1187,57 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.get_origin_request_policy_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_origin_request_policy_config)
 
+Arguments mapping described in
+[GetOriginRequestPolicyConfigRequestTypeDef](./type_defs.md#getoriginrequestpolicyconfigrequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[GetOriginRequestPolicyConfigResultTypeDef](./type_defs.md#getoriginrequestpolicyconfigresulttypedef).
+[GetOriginRequestPolicyConfigResultResponseTypeDef](./type_defs.md#getoriginrequestpolicyconfigresultresponsetypedef).
 
 ### get_public_key
+
+Gets a public key.
 
 Type annotations for `boto3.client("cloudfront").get_public_key` method.
 
 Boto3 documentation:
 [CloudFront.Client.get_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_public_key)
 
-Keyword-only arguments:
-
-- `Id`: `str` *(required)*
-
-Returns [GetPublicKeyResultTypeDef](./type_defs.md#getpublickeyresulttypedef).
-
-### get_public_key_config
-
-Type annotations for `boto3.client("cloudfront").get_public_key_config` method.
-
-Boto3 documentation:
-[CloudFront.Client.get_public_key_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_public_key_config)
+Arguments mapping described in
+[GetPublicKeyRequestTypeDef](./type_defs.md#getpublickeyrequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[GetPublicKeyConfigResultTypeDef](./type_defs.md#getpublickeyconfigresulttypedef).
+[GetPublicKeyResultResponseTypeDef](./type_defs.md#getpublickeyresultresponsetypedef).
+
+### get_public_key_config
+
+Gets a public key configuration.
+
+Type annotations for `boto3.client("cloudfront").get_public_key_config` method.
+
+Boto3 documentation:
+[CloudFront.Client.get_public_key_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_public_key_config)
+
+Arguments mapping described in
+[GetPublicKeyConfigRequestTypeDef](./type_defs.md#getpublickeyconfigrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+
+Returns
+[GetPublicKeyConfigResultResponseTypeDef](./type_defs.md#getpublickeyconfigresultresponsetypedef).
 
 ### get_realtime_log_config
+
+Gets a real-time log configuration.
 
 Type annotations for `boto3.client("cloudfront").get_realtime_log_config`
 method.
@@ -989,15 +1245,21 @@ method.
 Boto3 documentation:
 [CloudFront.Client.get_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_realtime_log_config)
 
+Arguments mapping described in
+[GetRealtimeLogConfigRequestTypeDef](./type_defs.md#getrealtimelogconfigrequesttypedef).
+
 Keyword-only arguments:
 
 - `Name`: `str`
 - `ARN`: `str`
 
 Returns
-[GetRealtimeLogConfigResultTypeDef](./type_defs.md#getrealtimelogconfigresulttypedef).
+[GetRealtimeLogConfigResultResponseTypeDef](./type_defs.md#getrealtimelogconfigresultresponsetypedef).
 
 ### get_streaming_distribution
+
+Gets information about a specified RTMP distribution, including the
+distribution configuration.
 
 Type annotations for `boto3.client("cloudfront").get_streaming_distribution`
 method.
@@ -1005,14 +1267,19 @@ method.
 Boto3 documentation:
 [CloudFront.Client.get_streaming_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_streaming_distribution)
 
+Arguments mapping described in
+[GetStreamingDistributionRequestTypeDef](./type_defs.md#getstreamingdistributionrequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[GetStreamingDistributionResultTypeDef](./type_defs.md#getstreamingdistributionresulttypedef).
+[GetStreamingDistributionResultResponseTypeDef](./type_defs.md#getstreamingdistributionresultresponsetypedef).
 
 ### get_streaming_distribution_config
+
+Get the configuration information about a streaming distribution.
 
 Type annotations for
 `boto3.client("cloudfront").get_streaming_distribution_config` method.
@@ -1020,19 +1287,27 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.get_streaming_distribution_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_streaming_distribution_config)
 
+Arguments mapping described in
+[GetStreamingDistributionConfigRequestTypeDef](./type_defs.md#getstreamingdistributionconfigrequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[GetStreamingDistributionConfigResultTypeDef](./type_defs.md#getstreamingdistributionconfigresulttypedef).
+[GetStreamingDistributionConfigResultResponseTypeDef](./type_defs.md#getstreamingdistributionconfigresultresponsetypedef).
 
 ### list_cache_policies
+
+Gets a list of cache policies.
 
 Type annotations for `boto3.client("cloudfront").list_cache_policies` method.
 
 Boto3 documentation:
 [CloudFront.Client.list_cache_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_cache_policies)
+
+Arguments mapping described in
+[ListCachePoliciesRequestTypeDef](./type_defs.md#listcachepoliciesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1041,9 +1316,11 @@ Keyword-only arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListCachePoliciesResultTypeDef](./type_defs.md#listcachepoliciesresulttypedef).
+[ListCachePoliciesResultResponseTypeDef](./type_defs.md#listcachepoliciesresultresponsetypedef).
 
 ### list_cloud_front_origin_access_identities
+
+Lists origin access identities.
 
 Type annotations for
 `boto3.client("cloudfront").list_cloud_front_origin_access_identities` method.
@@ -1051,36 +1328,50 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.list_cloud_front_origin_access_identities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_cloud_front_origin_access_identities)
 
+Arguments mapping described in
+[ListCloudFrontOriginAccessIdentitiesRequestTypeDef](./type_defs.md#listcloudfrontoriginaccessidentitiesrequesttypedef).
+
 Keyword-only arguments:
 
 - `Marker`: `str`
 - `MaxItems`: `str`
 
 Returns
-[ListCloudFrontOriginAccessIdentitiesResultTypeDef](./type_defs.md#listcloudfrontoriginaccessidentitiesresulttypedef).
+[ListCloudFrontOriginAccessIdentitiesResultResponseTypeDef](./type_defs.md#listcloudfrontoriginaccessidentitiesresultresponsetypedef).
 
 ### list_distributions
+
+List CloudFront distributions.
 
 Type annotations for `boto3.client("cloudfront").list_distributions` method.
 
 Boto3 documentation:
 [CloudFront.Client.list_distributions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions)
 
+Arguments mapping described in
+[ListDistributionsRequestTypeDef](./type_defs.md#listdistributionsrequesttypedef).
+
 Keyword-only arguments:
 
 - `Marker`: `str`
 - `MaxItems`: `str`
 
 Returns
-[ListDistributionsResultTypeDef](./type_defs.md#listdistributionsresulttypedef).
+[ListDistributionsResultResponseTypeDef](./type_defs.md#listdistributionsresultresponsetypedef).
 
 ### list_distributions_by_cache_policy_id
+
+Gets a list of distribution IDs for distributions that have a cache behavior
+that’s associated with the specified cache policy.
 
 Type annotations for
 `boto3.client("cloudfront").list_distributions_by_cache_policy_id` method.
 
 Boto3 documentation:
 [CloudFront.Client.list_distributions_by_cache_policy_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_cache_policy_id)
+
+Arguments mapping described in
+[ListDistributionsByCachePolicyIdRequestTypeDef](./type_defs.md#listdistributionsbycachepolicyidrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1089,15 +1380,21 @@ Keyword-only arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListDistributionsByCachePolicyIdResultTypeDef](./type_defs.md#listdistributionsbycachepolicyidresulttypedef).
+[ListDistributionsByCachePolicyIdResultResponseTypeDef](./type_defs.md#listdistributionsbycachepolicyidresultresponsetypedef).
 
 ### list_distributions_by_key_group
+
+Gets a list of distribution IDs for distributions that have a cache behavior
+that references the specified key group.
 
 Type annotations for
 `boto3.client("cloudfront").list_distributions_by_key_group` method.
 
 Boto3 documentation:
 [CloudFront.Client.list_distributions_by_key_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_key_group)
+
+Arguments mapping described in
+[ListDistributionsByKeyGroupRequestTypeDef](./type_defs.md#listdistributionsbykeygrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -1106,9 +1403,12 @@ Keyword-only arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListDistributionsByKeyGroupResultTypeDef](./type_defs.md#listdistributionsbykeygroupresulttypedef).
+[ListDistributionsByKeyGroupResultResponseTypeDef](./type_defs.md#listdistributionsbykeygroupresultresponsetypedef).
 
 ### list_distributions_by_origin_request_policy_id
+
+Gets a list of distribution IDs for distributions that have a cache behavior
+that’s associated with the specified origin request policy.
 
 Type annotations for
 `boto3.client("cloudfront").list_distributions_by_origin_request_policy_id`
@@ -1117,6 +1417,9 @@ method.
 Boto3 documentation:
 [CloudFront.Client.list_distributions_by_origin_request_policy_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_origin_request_policy_id)
 
+Arguments mapping described in
+[ListDistributionsByOriginRequestPolicyIdRequestTypeDef](./type_defs.md#listdistributionsbyoriginrequestpolicyidrequesttypedef).
+
 Keyword-only arguments:
 
 - `OriginRequestPolicyId`: `str` *(required)*
@@ -1124,15 +1427,21 @@ Keyword-only arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListDistributionsByOriginRequestPolicyIdResultTypeDef](./type_defs.md#listdistributionsbyoriginrequestpolicyidresulttypedef).
+[ListDistributionsByOriginRequestPolicyIdResultResponseTypeDef](./type_defs.md#listdistributionsbyoriginrequestpolicyidresultresponsetypedef).
 
 ### list_distributions_by_realtime_log_config
+
+Gets a list of distributions that have a cache behavior that’s associated with
+the specified real-time log configuration.
 
 Type annotations for
 `boto3.client("cloudfront").list_distributions_by_realtime_log_config` method.
 
 Boto3 documentation:
 [CloudFront.Client.list_distributions_by_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_realtime_log_config)
+
+Arguments mapping described in
+[ListDistributionsByRealtimeLogConfigRequestTypeDef](./type_defs.md#listdistributionsbyrealtimelogconfigrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1142,15 +1451,20 @@ Keyword-only arguments:
 - `RealtimeLogConfigArn`: `str`
 
 Returns
-[ListDistributionsByRealtimeLogConfigResultTypeDef](./type_defs.md#listdistributionsbyrealtimelogconfigresulttypedef).
+[ListDistributionsByRealtimeLogConfigResultResponseTypeDef](./type_defs.md#listdistributionsbyrealtimelogconfigresultresponsetypedef).
 
 ### list_distributions_by_web_acl_id
+
+List the distributions that are associated with a specified AWS WAF web ACL.
 
 Type annotations for
 `boto3.client("cloudfront").list_distributions_by_web_acl_id` method.
 
 Boto3 documentation:
 [CloudFront.Client.list_distributions_by_web_acl_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_web_acl_id)
+
+Arguments mapping described in
+[ListDistributionsByWebACLIdRequestTypeDef](./type_defs.md#listdistributionsbywebaclidrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1159,9 +1473,12 @@ Keyword-only arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListDistributionsByWebACLIdResultTypeDef](./type_defs.md#listdistributionsbywebaclidresulttypedef).
+[ListDistributionsByWebACLIdResultResponseTypeDef](./type_defs.md#listdistributionsbywebaclidresultresponsetypedef).
 
 ### list_field_level_encryption_configs
+
+List all field-level encryption configurations that have been created in
+CloudFront for this account.
 
 Type annotations for
 `boto3.client("cloudfront").list_field_level_encryption_configs` method.
@@ -1169,15 +1486,21 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.list_field_level_encryption_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_field_level_encryption_configs)
 
+Arguments mapping described in
+[ListFieldLevelEncryptionConfigsRequestTypeDef](./type_defs.md#listfieldlevelencryptionconfigsrequesttypedef).
+
 Keyword-only arguments:
 
 - `Marker`: `str`
 - `MaxItems`: `str`
 
 Returns
-[ListFieldLevelEncryptionConfigsResultTypeDef](./type_defs.md#listfieldlevelencryptionconfigsresulttypedef).
+[ListFieldLevelEncryptionConfigsResultResponseTypeDef](./type_defs.md#listfieldlevelencryptionconfigsresultresponsetypedef).
 
 ### list_field_level_encryption_profiles
+
+Request a list of field-level encryption profiles that have been created in
+CloudFront for this account.
 
 Type annotations for
 `boto3.client("cloudfront").list_field_level_encryption_profiles` method.
@@ -1185,20 +1508,28 @@ Type annotations for
 Boto3 documentation:
 [CloudFront.Client.list_field_level_encryption_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_field_level_encryption_profiles)
 
+Arguments mapping described in
+[ListFieldLevelEncryptionProfilesRequestTypeDef](./type_defs.md#listfieldlevelencryptionprofilesrequesttypedef).
+
 Keyword-only arguments:
 
 - `Marker`: `str`
 - `MaxItems`: `str`
 
 Returns
-[ListFieldLevelEncryptionProfilesResultTypeDef](./type_defs.md#listfieldlevelencryptionprofilesresulttypedef).
+[ListFieldLevelEncryptionProfilesResultResponseTypeDef](./type_defs.md#listfieldlevelencryptionprofilesresultresponsetypedef).
 
 ### list_functions
+
+Gets a list of all CloudFront functions in your AWS account.
 
 Type annotations for `boto3.client("cloudfront").list_functions` method.
 
 Boto3 documentation:
 [CloudFront.Client.list_functions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_functions)
+
+Arguments mapping described in
+[ListFunctionsRequestTypeDef](./type_defs.md#listfunctionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1207,14 +1538,19 @@ Keyword-only arguments:
 - `Stage`: [FunctionStageType](./literals.md#functionstagetype)
 
 Returns
-[ListFunctionsResultTypeDef](./type_defs.md#listfunctionsresulttypedef).
+[ListFunctionsResultResponseTypeDef](./type_defs.md#listfunctionsresultresponsetypedef).
 
 ### list_invalidations
+
+Lists invalidation batches.
 
 Type annotations for `boto3.client("cloudfront").list_invalidations` method.
 
 Boto3 documentation:
 [CloudFront.Client.list_invalidations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_invalidations)
+
+Arguments mapping described in
+[ListInvalidationsRequestTypeDef](./type_defs.md#listinvalidationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1223,14 +1559,19 @@ Keyword-only arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListInvalidationsResultTypeDef](./type_defs.md#listinvalidationsresulttypedef).
+[ListInvalidationsResultResponseTypeDef](./type_defs.md#listinvalidationsresultresponsetypedef).
 
 ### list_key_groups
+
+Gets a list of key groups.
 
 Type annotations for `boto3.client("cloudfront").list_key_groups` method.
 
 Boto3 documentation:
 [CloudFront.Client.list_key_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_key_groups)
+
+Arguments mapping described in
+[ListKeyGroupsRequestTypeDef](./type_defs.md#listkeygroupsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1238,15 +1579,20 @@ Keyword-only arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListKeyGroupsResultTypeDef](./type_defs.md#listkeygroupsresulttypedef).
+[ListKeyGroupsResultResponseTypeDef](./type_defs.md#listkeygroupsresultresponsetypedef).
 
 ### list_origin_request_policies
+
+Gets a list of origin request policies.
 
 Type annotations for `boto3.client("cloudfront").list_origin_request_policies`
 method.
 
 Boto3 documentation:
 [CloudFront.Client.list_origin_request_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_origin_request_policies)
+
+Arguments mapping described in
+[ListOriginRequestPoliciesRequestTypeDef](./type_defs.md#listoriginrequestpoliciesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1256,14 +1602,19 @@ Keyword-only arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListOriginRequestPoliciesResultTypeDef](./type_defs.md#listoriginrequestpoliciesresulttypedef).
+[ListOriginRequestPoliciesResultResponseTypeDef](./type_defs.md#listoriginrequestpoliciesresultresponsetypedef).
 
 ### list_public_keys
+
+List all public keys that have been added to CloudFront for this account.
 
 Type annotations for `boto3.client("cloudfront").list_public_keys` method.
 
 Boto3 documentation:
 [CloudFront.Client.list_public_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_public_keys)
+
+Arguments mapping described in
+[ListPublicKeysRequestTypeDef](./type_defs.md#listpublickeysrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1271,9 +1622,11 @@ Keyword-only arguments:
 - `MaxItems`: `str`
 
 Returns
-[ListPublicKeysResultTypeDef](./type_defs.md#listpublickeysresulttypedef).
+[ListPublicKeysResultResponseTypeDef](./type_defs.md#listpublickeysresultresponsetypedef).
 
 ### list_realtime_log_configs
+
+Gets a list of real-time log configurations.
 
 Type annotations for `boto3.client("cloudfront").list_realtime_log_configs`
 method.
@@ -1281,15 +1634,20 @@ method.
 Boto3 documentation:
 [CloudFront.Client.list_realtime_log_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_realtime_log_configs)
 
+Arguments mapping described in
+[ListRealtimeLogConfigsRequestTypeDef](./type_defs.md#listrealtimelogconfigsrequesttypedef).
+
 Keyword-only arguments:
 
 - `MaxItems`: `str`
 - `Marker`: `str`
 
 Returns
-[ListRealtimeLogConfigsResultTypeDef](./type_defs.md#listrealtimelogconfigsresulttypedef).
+[ListRealtimeLogConfigsResultResponseTypeDef](./type_defs.md#listrealtimelogconfigsresultresponsetypedef).
 
 ### list_streaming_distributions
+
+List streaming distributions.
 
 Type annotations for `boto3.client("cloudfront").list_streaming_distributions`
 method.
@@ -1297,15 +1655,20 @@ method.
 Boto3 documentation:
 [CloudFront.Client.list_streaming_distributions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_streaming_distributions)
 
+Arguments mapping described in
+[ListStreamingDistributionsRequestTypeDef](./type_defs.md#liststreamingdistributionsrequesttypedef).
+
 Keyword-only arguments:
 
 - `Marker`: `str`
 - `MaxItems`: `str`
 
 Returns
-[ListStreamingDistributionsResultTypeDef](./type_defs.md#liststreamingdistributionsresulttypedef).
+[ListStreamingDistributionsResultResponseTypeDef](./type_defs.md#liststreamingdistributionsresultresponsetypedef).
 
 ### list_tags_for_resource
+
+List tags for a CloudFront resource.
 
 Type annotations for `boto3.client("cloudfront").list_tags_for_resource`
 method.
@@ -1313,19 +1676,28 @@ method.
 Boto3 documentation:
 [CloudFront.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `Resource`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
+[ListTagsForResourceResultResponseTypeDef](./type_defs.md#listtagsforresourceresultresponsetypedef).
 
 ### publish_function
+
+Publishes a CloudFront function by copying the function code from the
+`DEVELOPMENT` stage to `LIVE`.
 
 Type annotations for `boto3.client("cloudfront").publish_function` method.
 
 Boto3 documentation:
 [CloudFront.Client.publish_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.publish_function)
+
+Arguments mapping described in
+[PublishFunctionRequestTypeDef](./type_defs.md#publishfunctionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1333,14 +1705,19 @@ Keyword-only arguments:
 - `IfMatch`: `str` *(required)*
 
 Returns
-[PublishFunctionResultTypeDef](./type_defs.md#publishfunctionresulttypedef).
+[PublishFunctionResultResponseTypeDef](./type_defs.md#publishfunctionresultresponsetypedef).
 
 ### tag_resource
+
+Add tags to a CloudFront resource.
 
 Type annotations for `boto3.client("cloudfront").tag_resource` method.
 
 Boto3 documentation:
 [CloudFront.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1349,10 +1726,15 @@ Keyword-only arguments:
 
 ### test_function
 
+Tests a CloudFront function.
+
 Type annotations for `boto3.client("cloudfront").test_function` method.
 
 Boto3 documentation:
 [CloudFront.Client.test_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.test_function)
+
+Arguments mapping described in
+[TestFunctionRequestTypeDef](./type_defs.md#testfunctionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1362,14 +1744,20 @@ Keyword-only arguments:
   *(required)*
 - `Stage`: [FunctionStageType](./literals.md#functionstagetype)
 
-Returns [TestFunctionResultTypeDef](./type_defs.md#testfunctionresulttypedef).
+Returns
+[TestFunctionResultResponseTypeDef](./type_defs.md#testfunctionresultresponsetypedef).
 
 ### untag_resource
+
+Remove tags from a CloudFront resource.
 
 Type annotations for `boto3.client("cloudfront").untag_resource` method.
 
 Boto3 documentation:
 [CloudFront.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1378,10 +1766,15 @@ Keyword-only arguments:
 
 ### update_cache_policy
 
+Updates a cache policy configuration.
+
 Type annotations for `boto3.client("cloudfront").update_cache_policy` method.
 
 Boto3 documentation:
 [CloudFront.Client.update_cache_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_cache_policy)
+
+Arguments mapping described in
+[UpdateCachePolicyRequestTypeDef](./type_defs.md#updatecachepolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1392,15 +1785,20 @@ Keyword-only arguments:
 - `IfMatch`: `str`
 
 Returns
-[UpdateCachePolicyResultTypeDef](./type_defs.md#updatecachepolicyresulttypedef).
+[UpdateCachePolicyResultResponseTypeDef](./type_defs.md#updatecachepolicyresultresponsetypedef).
 
 ### update_cloud_front_origin_access_identity
+
+Update an origin access identity.
 
 Type annotations for
 `boto3.client("cloudfront").update_cloud_front_origin_access_identity` method.
 
 Boto3 documentation:
 [CloudFront.Client.update_cloud_front_origin_access_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_cloud_front_origin_access_identity)
+
+Arguments mapping described in
+[UpdateCloudFrontOriginAccessIdentityRequestTypeDef](./type_defs.md#updatecloudfrontoriginaccessidentityrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1411,14 +1809,19 @@ Keyword-only arguments:
 - `IfMatch`: `str`
 
 Returns
-[UpdateCloudFrontOriginAccessIdentityResultTypeDef](./type_defs.md#updatecloudfrontoriginaccessidentityresulttypedef).
+[UpdateCloudFrontOriginAccessIdentityResultResponseTypeDef](./type_defs.md#updatecloudfrontoriginaccessidentityresultresponsetypedef).
 
 ### update_distribution
+
+Updates the configuration for a web distribution.
 
 Type annotations for `boto3.client("cloudfront").update_distribution` method.
 
 Boto3 documentation:
 [CloudFront.Client.update_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_distribution)
+
+Arguments mapping described in
+[UpdateDistributionRequestTypeDef](./type_defs.md#updatedistributionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1429,15 +1832,20 @@ Keyword-only arguments:
 - `IfMatch`: `str`
 
 Returns
-[UpdateDistributionResultTypeDef](./type_defs.md#updatedistributionresulttypedef).
+[UpdateDistributionResultResponseTypeDef](./type_defs.md#updatedistributionresultresponsetypedef).
 
 ### update_field_level_encryption_config
+
+Update a field-level encryption configuration.
 
 Type annotations for
 `boto3.client("cloudfront").update_field_level_encryption_config` method.
 
 Boto3 documentation:
 [CloudFront.Client.update_field_level_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_field_level_encryption_config)
+
+Arguments mapping described in
+[UpdateFieldLevelEncryptionConfigRequestTypeDef](./type_defs.md#updatefieldlevelencryptionconfigrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1448,15 +1856,20 @@ Keyword-only arguments:
 - `IfMatch`: `str`
 
 Returns
-[UpdateFieldLevelEncryptionConfigResultTypeDef](./type_defs.md#updatefieldlevelencryptionconfigresulttypedef).
+[UpdateFieldLevelEncryptionConfigResultResponseTypeDef](./type_defs.md#updatefieldlevelencryptionconfigresultresponsetypedef).
 
 ### update_field_level_encryption_profile
+
+Update a field-level encryption profile.
 
 Type annotations for
 `boto3.client("cloudfront").update_field_level_encryption_profile` method.
 
 Boto3 documentation:
 [CloudFront.Client.update_field_level_encryption_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_field_level_encryption_profile)
+
+Arguments mapping described in
+[UpdateFieldLevelEncryptionProfileRequestTypeDef](./type_defs.md#updatefieldlevelencryptionprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1467,14 +1880,19 @@ Keyword-only arguments:
 - `IfMatch`: `str`
 
 Returns
-[UpdateFieldLevelEncryptionProfileResultTypeDef](./type_defs.md#updatefieldlevelencryptionprofileresulttypedef).
+[UpdateFieldLevelEncryptionProfileResultResponseTypeDef](./type_defs.md#updatefieldlevelencryptionprofileresultresponsetypedef).
 
 ### update_function
+
+Updates a CloudFront function.
 
 Type annotations for `boto3.client("cloudfront").update_function` method.
 
 Boto3 documentation:
 [CloudFront.Client.update_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_function)
+
+Arguments mapping described in
+[UpdateFunctionRequestTypeDef](./type_defs.md#updatefunctionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1486,14 +1904,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateFunctionResultTypeDef](./type_defs.md#updatefunctionresulttypedef).
+[UpdateFunctionResultResponseTypeDef](./type_defs.md#updatefunctionresultresponsetypedef).
 
 ### update_key_group
+
+Updates a key group.
 
 Type annotations for `boto3.client("cloudfront").update_key_group` method.
 
 Boto3 documentation:
 [CloudFront.Client.update_key_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_key_group)
+
+Arguments mapping described in
+[UpdateKeyGroupRequestTypeDef](./type_defs.md#updatekeygrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -1503,15 +1926,20 @@ Keyword-only arguments:
 - `IfMatch`: `str`
 
 Returns
-[UpdateKeyGroupResultTypeDef](./type_defs.md#updatekeygroupresulttypedef).
+[UpdateKeyGroupResultResponseTypeDef](./type_defs.md#updatekeygroupresultresponsetypedef).
 
 ### update_origin_request_policy
+
+Updates an origin request policy configuration.
 
 Type annotations for `boto3.client("cloudfront").update_origin_request_policy`
 method.
 
 Boto3 documentation:
 [CloudFront.Client.update_origin_request_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_origin_request_policy)
+
+Arguments mapping described in
+[UpdateOriginRequestPolicyRequestTypeDef](./type_defs.md#updateoriginrequestpolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1522,14 +1950,19 @@ Keyword-only arguments:
 - `IfMatch`: `str`
 
 Returns
-[UpdateOriginRequestPolicyResultTypeDef](./type_defs.md#updateoriginrequestpolicyresulttypedef).
+[UpdateOriginRequestPolicyResultResponseTypeDef](./type_defs.md#updateoriginrequestpolicyresultresponsetypedef).
 
 ### update_public_key
+
+Update public key information.
 
 Type annotations for `boto3.client("cloudfront").update_public_key` method.
 
 Boto3 documentation:
 [CloudFront.Client.update_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_public_key)
+
+Arguments mapping described in
+[UpdatePublicKeyRequestTypeDef](./type_defs.md#updatepublickeyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1539,15 +1972,20 @@ Keyword-only arguments:
 - `IfMatch`: `str`
 
 Returns
-[UpdatePublicKeyResultTypeDef](./type_defs.md#updatepublickeyresulttypedef).
+[UpdatePublicKeyResultResponseTypeDef](./type_defs.md#updatepublickeyresultresponsetypedef).
 
 ### update_realtime_log_config
+
+Updates a real-time log configuration.
 
 Type annotations for `boto3.client("cloudfront").update_realtime_log_config`
 method.
 
 Boto3 documentation:
 [CloudFront.Client.update_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_realtime_log_config)
+
+Arguments mapping described in
+[UpdateRealtimeLogConfigRequestTypeDef](./type_defs.md#updaterealtimelogconfigrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1558,15 +1996,20 @@ Keyword-only arguments:
 - `SamplingRate`: `int`
 
 Returns
-[UpdateRealtimeLogConfigResultTypeDef](./type_defs.md#updaterealtimelogconfigresulttypedef).
+[UpdateRealtimeLogConfigResultResponseTypeDef](./type_defs.md#updaterealtimelogconfigresultresponsetypedef).
 
 ### update_streaming_distribution
+
+Update a streaming distribution.
 
 Type annotations for `boto3.client("cloudfront").update_streaming_distribution`
 method.
 
 Boto3 documentation:
 [CloudFront.Client.update_streaming_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_streaming_distribution)
+
+Arguments mapping described in
+[UpdateStreamingDistributionRequestTypeDef](./type_defs.md#updatestreamingdistributionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1577,7 +2020,7 @@ Keyword-only arguments:
 - `IfMatch`: `str`
 
 Returns
-[UpdateStreamingDistributionResultTypeDef](./type_defs.md#updatestreamingdistributionresulttypedef).
+[UpdateStreamingDistributionResultResponseTypeDef](./type_defs.md#updatestreamingdistributionresultresponsetypedef).
 
 ### get_paginator
 

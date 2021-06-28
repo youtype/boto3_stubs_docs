@@ -59,6 +59,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("s3outposts").can_paginate` method.
 
 Boto3 documentation:
@@ -72,10 +74,16 @@ Returns `bool`.
 
 ### create_endpoint
 
+S3 on Outposts access points simplify managing data access at scale for shared
+datasets in Amazon S3 on Outposts.
+
 Type annotations for `boto3.client("s3outposts").create_endpoint` method.
 
 Boto3 documentation:
 [S3Outposts.Client.create_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.create_endpoint)
+
+Arguments mapping described in
+[CreateEndpointRequestTypeDef](./type_defs.md#createendpointrequesttypedef).
 
 Keyword-only arguments:
 
@@ -84,14 +92,20 @@ Keyword-only arguments:
 - `SecurityGroupId`: `str` *(required)*
 
 Returns
-[CreateEndpointResultTypeDef](./type_defs.md#createendpointresulttypedef).
+[CreateEndpointResultResponseTypeDef](./type_defs.md#createendpointresultresponsetypedef).
 
 ### delete_endpoint
+
+S3 on Outposts access points simplify managing data access at scale for shared
+datasets in Amazon S3 on Outposts.
 
 Type annotations for `boto3.client("s3outposts").delete_endpoint` method.
 
 Boto3 documentation:
 [S3Outposts.Client.delete_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.delete_endpoint)
+
+Arguments mapping described in
+[DeleteEndpointRequestTypeDef](./type_defs.md#deleteendpointrequesttypedef).
 
 Keyword-only arguments:
 
@@ -99,6 +113,8 @@ Keyword-only arguments:
 - `OutpostId`: `str` *(required)*
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("s3outposts").generate_presigned_url`
 method.
@@ -117,10 +133,16 @@ Returns `str`.
 
 ### list_endpoints
 
+S3 on Outposts access points simplify managing data access at scale for shared
+datasets in Amazon S3 on Outposts.
+
 Type annotations for `boto3.client("s3outposts").list_endpoints` method.
 
 Boto3 documentation:
 [S3Outposts.Client.list_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.list_endpoints)
+
+Arguments mapping described in
+[ListEndpointsRequestTypeDef](./type_defs.md#listendpointsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -128,7 +150,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListEndpointsResultTypeDef](./type_defs.md#listendpointsresulttypedef).
+[ListEndpointsResultResponseTypeDef](./type_defs.md#listendpointsresultresponsetypedef).
 
 ### get_paginator
 

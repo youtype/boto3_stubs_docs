@@ -18,20 +18,30 @@ type annotations stubs module
   - [BillingDetailsTypeDef](#billingdetailstypedef)
   - [CloudWatchEventsExecutionDataDetailsTypeDef](#cloudwatcheventsexecutiondatadetailstypedef)
   - [CloudWatchLogsLogGroupTypeDef](#cloudwatchlogsloggrouptypedef)
-  - [CreateActivityOutputTypeDef](#createactivityoutputtypedef)
-  - [CreateStateMachineOutputTypeDef](#createstatemachineoutputtypedef)
-  - [DescribeActivityOutputTypeDef](#describeactivityoutputtypedef)
-  - [DescribeExecutionOutputTypeDef](#describeexecutionoutputtypedef)
-  - [DescribeStateMachineForExecutionOutputTypeDef](#describestatemachineforexecutionoutputtypedef)
-  - [DescribeStateMachineOutputTypeDef](#describestatemachineoutputtypedef)
+  - [CreateActivityInputTypeDef](#createactivityinputtypedef)
+  - [CreateActivityOutputResponseTypeDef](#createactivityoutputresponsetypedef)
+  - [CreateStateMachineInputTypeDef](#createstatemachineinputtypedef)
+  - [CreateStateMachineOutputResponseTypeDef](#createstatemachineoutputresponsetypedef)
+  - [DeleteActivityInputTypeDef](#deleteactivityinputtypedef)
+  - [DeleteStateMachineInputTypeDef](#deletestatemachineinputtypedef)
+  - [DescribeActivityInputTypeDef](#describeactivityinputtypedef)
+  - [DescribeActivityOutputResponseTypeDef](#describeactivityoutputresponsetypedef)
+  - [DescribeExecutionInputTypeDef](#describeexecutioninputtypedef)
+  - [DescribeExecutionOutputResponseTypeDef](#describeexecutionoutputresponsetypedef)
+  - [DescribeStateMachineForExecutionInputTypeDef](#describestatemachineforexecutioninputtypedef)
+  - [DescribeStateMachineForExecutionOutputResponseTypeDef](#describestatemachineforexecutionoutputresponsetypedef)
+  - [DescribeStateMachineInputTypeDef](#describestatemachineinputtypedef)
+  - [DescribeStateMachineOutputResponseTypeDef](#describestatemachineoutputresponsetypedef)
   - [ExecutionAbortedEventDetailsTypeDef](#executionabortedeventdetailstypedef)
   - [ExecutionFailedEventDetailsTypeDef](#executionfailedeventdetailstypedef)
   - [ExecutionListItemTypeDef](#executionlistitemtypedef)
   - [ExecutionStartedEventDetailsTypeDef](#executionstartedeventdetailstypedef)
   - [ExecutionSucceededEventDetailsTypeDef](#executionsucceededeventdetailstypedef)
   - [ExecutionTimedOutEventDetailsTypeDef](#executiontimedouteventdetailstypedef)
-  - [GetActivityTaskOutputTypeDef](#getactivitytaskoutputtypedef)
-  - [GetExecutionHistoryOutputTypeDef](#getexecutionhistoryoutputtypedef)
+  - [GetActivityTaskInputTypeDef](#getactivitytaskinputtypedef)
+  - [GetActivityTaskOutputResponseTypeDef](#getactivitytaskoutputresponsetypedef)
+  - [GetExecutionHistoryInputTypeDef](#getexecutionhistoryinputtypedef)
+  - [GetExecutionHistoryOutputResponseTypeDef](#getexecutionhistoryoutputresponsetypedef)
   - [HistoryEventExecutionDataDetailsTypeDef](#historyeventexecutiondatadetailstypedef)
   - [HistoryEventTypeDef](#historyeventtypedef)
   - [LambdaFunctionFailedEventDetailsTypeDef](#lambdafunctionfailedeventdetailstypedef)
@@ -40,22 +50,33 @@ type annotations stubs module
   - [LambdaFunctionStartFailedEventDetailsTypeDef](#lambdafunctionstartfailedeventdetailstypedef)
   - [LambdaFunctionSucceededEventDetailsTypeDef](#lambdafunctionsucceededeventdetailstypedef)
   - [LambdaFunctionTimedOutEventDetailsTypeDef](#lambdafunctiontimedouteventdetailstypedef)
-  - [ListActivitiesOutputTypeDef](#listactivitiesoutputtypedef)
-  - [ListExecutionsOutputTypeDef](#listexecutionsoutputtypedef)
-  - [ListStateMachinesOutputTypeDef](#liststatemachinesoutputtypedef)
-  - [ListTagsForResourceOutputTypeDef](#listtagsforresourceoutputtypedef)
+  - [ListActivitiesInputTypeDef](#listactivitiesinputtypedef)
+  - [ListActivitiesOutputResponseTypeDef](#listactivitiesoutputresponsetypedef)
+  - [ListExecutionsInputTypeDef](#listexecutionsinputtypedef)
+  - [ListExecutionsOutputResponseTypeDef](#listexecutionsoutputresponsetypedef)
+  - [ListStateMachinesInputTypeDef](#liststatemachinesinputtypedef)
+  - [ListStateMachinesOutputResponseTypeDef](#liststatemachinesoutputresponsetypedef)
+  - [ListTagsForResourceInputTypeDef](#listtagsforresourceinputtypedef)
+  - [ListTagsForResourceOutputResponseTypeDef](#listtagsforresourceoutputresponsetypedef)
   - [LogDestinationTypeDef](#logdestinationtypedef)
   - [LoggingConfigurationTypeDef](#loggingconfigurationtypedef)
   - [MapIterationEventDetailsTypeDef](#mapiterationeventdetailstypedef)
   - [MapStateStartedEventDetailsTypeDef](#mapstatestartedeventdetailstypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [StartExecutionOutputTypeDef](#startexecutionoutputtypedef)
-  - [StartSyncExecutionOutputTypeDef](#startsyncexecutionoutputtypedef)
+  - [SendTaskFailureInputTypeDef](#sendtaskfailureinputtypedef)
+  - [SendTaskHeartbeatInputTypeDef](#sendtaskheartbeatinputtypedef)
+  - [SendTaskSuccessInputTypeDef](#sendtasksuccessinputtypedef)
+  - [StartExecutionInputTypeDef](#startexecutioninputtypedef)
+  - [StartExecutionOutputResponseTypeDef](#startexecutionoutputresponsetypedef)
+  - [StartSyncExecutionInputTypeDef](#startsyncexecutioninputtypedef)
+  - [StartSyncExecutionOutputResponseTypeDef](#startsyncexecutionoutputresponsetypedef)
   - [StateEnteredEventDetailsTypeDef](#stateenteredeventdetailstypedef)
   - [StateExitedEventDetailsTypeDef](#stateexitedeventdetailstypedef)
   - [StateMachineListItemTypeDef](#statemachinelistitemtypedef)
-  - [StopExecutionOutputTypeDef](#stopexecutionoutputtypedef)
+  - [StopExecutionInputTypeDef](#stopexecutioninputtypedef)
+  - [StopExecutionOutputResponseTypeDef](#stopexecutionoutputresponsetypedef)
+  - [TagResourceInputTypeDef](#tagresourceinputtypedef)
   - [TagTypeDef](#tagtypedef)
   - [TaskFailedEventDetailsTypeDef](#taskfailedeventdetailstypedef)
   - [TaskScheduledEventDetailsTypeDef](#taskscheduledeventdetailstypedef)
@@ -66,7 +87,9 @@ type annotations stubs module
   - [TaskSucceededEventDetailsTypeDef](#tasksucceededeventdetailstypedef)
   - [TaskTimedOutEventDetailsTypeDef](#tasktimedouteventdetailstypedef)
   - [TracingConfigurationTypeDef](#tracingconfigurationtypedef)
-  - [UpdateStateMachineOutputTypeDef](#updatestatemachineoutputtypedef)
+  - [UntagResourceInputTypeDef](#untagresourceinputtypedef)
+  - [UpdateStateMachineInputTypeDef](#updatestatemachineinputtypedef)
+  - [UpdateStateMachineOutputResponseTypeDef](#updatestatemachineoutputresponsetypedef)
 
 ## ActivityFailedEventDetailsTypeDef
 
@@ -184,10 +207,24 @@ Optional fields:
 
 - `logGroupArn`: `str`
 
-## CreateActivityOutputTypeDef
+## CreateActivityInputTypeDef
 
 ```python
-from mypy_boto3_stepfunctions.type_defs import CreateActivityOutputTypeDef
+from mypy_boto3_stepfunctions.type_defs import CreateActivityInputTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+
+Optional fields:
+
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateActivityOutputResponseTypeDef
+
+```python
+from mypy_boto3_stepfunctions.type_defs import CreateActivityOutputResponseTypeDef
 ```
 
 Required fields:
@@ -197,10 +234,31 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateStateMachineOutputTypeDef
+## CreateStateMachineInputTypeDef
 
 ```python
-from mypy_boto3_stepfunctions.type_defs import CreateStateMachineOutputTypeDef
+from mypy_boto3_stepfunctions.type_defs import CreateStateMachineInputTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+- `definition`: `str`
+- `roleArn`: `str`
+
+Optional fields:
+
+- `type`: [StateMachineTypeType](./literals.md#statemachinetypetype)
+- `loggingConfiguration`:
+  [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tracingConfiguration`:
+  [TracingConfigurationTypeDef](./type_defs.md#tracingconfigurationtypedef)
+
+## CreateStateMachineOutputResponseTypeDef
+
+```python
+from mypy_boto3_stepfunctions.type_defs import CreateStateMachineOutputResponseTypeDef
 ```
 
 Required fields:
@@ -210,10 +268,40 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeActivityOutputTypeDef
+## DeleteActivityInputTypeDef
 
 ```python
-from mypy_boto3_stepfunctions.type_defs import DescribeActivityOutputTypeDef
+from mypy_boto3_stepfunctions.type_defs import DeleteActivityInputTypeDef
+```
+
+Required fields:
+
+- `activityArn`: `str`
+
+## DeleteStateMachineInputTypeDef
+
+```python
+from mypy_boto3_stepfunctions.type_defs import DeleteStateMachineInputTypeDef
+```
+
+Required fields:
+
+- `stateMachineArn`: `str`
+
+## DescribeActivityInputTypeDef
+
+```python
+from mypy_boto3_stepfunctions.type_defs import DescribeActivityInputTypeDef
+```
+
+Required fields:
+
+- `activityArn`: `str`
+
+## DescribeActivityOutputResponseTypeDef
+
+```python
+from mypy_boto3_stepfunctions.type_defs import DescribeActivityOutputResponseTypeDef
 ```
 
 Required fields:
@@ -224,10 +312,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeExecutionOutputTypeDef
+## DescribeExecutionInputTypeDef
 
 ```python
-from mypy_boto3_stepfunctions.type_defs import DescribeExecutionOutputTypeDef
+from mypy_boto3_stepfunctions.type_defs import DescribeExecutionInputTypeDef
+```
+
+Required fields:
+
+- `executionArn`: `str`
+
+## DescribeExecutionOutputResponseTypeDef
+
+```python
+from mypy_boto3_stepfunctions.type_defs import DescribeExecutionOutputResponseTypeDef
 ```
 
 Required fields:
@@ -248,10 +346,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeStateMachineForExecutionOutputTypeDef
+## DescribeStateMachineForExecutionInputTypeDef
 
 ```python
-from mypy_boto3_stepfunctions.type_defs import DescribeStateMachineForExecutionOutputTypeDef
+from mypy_boto3_stepfunctions.type_defs import DescribeStateMachineForExecutionInputTypeDef
+```
+
+Required fields:
+
+- `executionArn`: `str`
+
+## DescribeStateMachineForExecutionOutputResponseTypeDef
+
+```python
+from mypy_boto3_stepfunctions.type_defs import DescribeStateMachineForExecutionOutputResponseTypeDef
 ```
 
 Required fields:
@@ -268,10 +376,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeStateMachineOutputTypeDef
+## DescribeStateMachineInputTypeDef
 
 ```python
-from mypy_boto3_stepfunctions.type_defs import DescribeStateMachineOutputTypeDef
+from mypy_boto3_stepfunctions.type_defs import DescribeStateMachineInputTypeDef
+```
+
+Required fields:
+
+- `stateMachineArn`: `str`
+
+## DescribeStateMachineOutputResponseTypeDef
+
+```python
+from mypy_boto3_stepfunctions.type_defs import DescribeStateMachineOutputResponseTypeDef
 ```
 
 Required fields:
@@ -366,10 +484,24 @@ Optional fields:
 - `error`: `str`
 - `cause`: `str`
 
-## GetActivityTaskOutputTypeDef
+## GetActivityTaskInputTypeDef
 
 ```python
-from mypy_boto3_stepfunctions.type_defs import GetActivityTaskOutputTypeDef
+from mypy_boto3_stepfunctions.type_defs import GetActivityTaskInputTypeDef
+```
+
+Required fields:
+
+- `activityArn`: `str`
+
+Optional fields:
+
+- `workerName`: `str`
+
+## GetActivityTaskOutputResponseTypeDef
+
+```python
+from mypy_boto3_stepfunctions.type_defs import GetActivityTaskOutputResponseTypeDef
 ```
 
 Required fields:
@@ -379,10 +511,27 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetExecutionHistoryOutputTypeDef
+## GetExecutionHistoryInputTypeDef
 
 ```python
-from mypy_boto3_stepfunctions.type_defs import GetExecutionHistoryOutputTypeDef
+from mypy_boto3_stepfunctions.type_defs import GetExecutionHistoryInputTypeDef
+```
+
+Required fields:
+
+- `executionArn`: `str`
+
+Optional fields:
+
+- `maxResults`: `int`
+- `reverseOrder`: `bool`
+- `nextToken`: `str`
+- `includeExecutionData`: `bool`
+
+## GetExecutionHistoryOutputResponseTypeDef
+
+```python
+from mypy_boto3_stepfunctions.type_defs import GetExecutionHistoryOutputResponseTypeDef
 ```
 
 Required fields:
@@ -555,10 +704,21 @@ Optional fields:
 - `error`: `str`
 - `cause`: `str`
 
-## ListActivitiesOutputTypeDef
+## ListActivitiesInputTypeDef
 
 ```python
-from mypy_boto3_stepfunctions.type_defs import ListActivitiesOutputTypeDef
+from mypy_boto3_stepfunctions.type_defs import ListActivitiesInputTypeDef
+```
+
+Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListActivitiesOutputResponseTypeDef
+
+```python
+from mypy_boto3_stepfunctions.type_defs import ListActivitiesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -569,10 +729,26 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListExecutionsOutputTypeDef
+## ListExecutionsInputTypeDef
 
 ```python
-from mypy_boto3_stepfunctions.type_defs import ListExecutionsOutputTypeDef
+from mypy_boto3_stepfunctions.type_defs import ListExecutionsInputTypeDef
+```
+
+Required fields:
+
+- `stateMachineArn`: `str`
+
+Optional fields:
+
+- `statusFilter`: [ExecutionStatusType](./literals.md#executionstatustype)
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListExecutionsOutputResponseTypeDef
+
+```python
+from mypy_boto3_stepfunctions.type_defs import ListExecutionsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -583,10 +759,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListStateMachinesOutputTypeDef
+## ListStateMachinesInputTypeDef
 
 ```python
-from mypy_boto3_stepfunctions.type_defs import ListStateMachinesOutputTypeDef
+from mypy_boto3_stepfunctions.type_defs import ListStateMachinesInputTypeDef
+```
+
+Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListStateMachinesOutputResponseTypeDef
+
+```python
+from mypy_boto3_stepfunctions.type_defs import ListStateMachinesOutputResponseTypeDef
 ```
 
 Required fields:
@@ -597,10 +784,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceOutputTypeDef
+## ListTagsForResourceInputTypeDef
 
 ```python
-from mypy_boto3_stepfunctions.type_defs import ListTagsForResourceOutputTypeDef
+from mypy_boto3_stepfunctions.type_defs import ListTagsForResourceInputTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+
+## ListTagsForResourceOutputResponseTypeDef
+
+```python
+from mypy_boto3_stepfunctions.type_defs import ListTagsForResourceOutputResponseTypeDef
 ```
 
 Required fields:
@@ -680,10 +877,62 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## StartExecutionOutputTypeDef
+## SendTaskFailureInputTypeDef
 
 ```python
-from mypy_boto3_stepfunctions.type_defs import StartExecutionOutputTypeDef
+from mypy_boto3_stepfunctions.type_defs import SendTaskFailureInputTypeDef
+```
+
+Required fields:
+
+- `taskToken`: `str`
+
+Optional fields:
+
+- `error`: `str`
+- `cause`: `str`
+
+## SendTaskHeartbeatInputTypeDef
+
+```python
+from mypy_boto3_stepfunctions.type_defs import SendTaskHeartbeatInputTypeDef
+```
+
+Required fields:
+
+- `taskToken`: `str`
+
+## SendTaskSuccessInputTypeDef
+
+```python
+from mypy_boto3_stepfunctions.type_defs import SendTaskSuccessInputTypeDef
+```
+
+Required fields:
+
+- `taskToken`: `str`
+- `output`: `str`
+
+## StartExecutionInputTypeDef
+
+```python
+from mypy_boto3_stepfunctions.type_defs import StartExecutionInputTypeDef
+```
+
+Required fields:
+
+- `stateMachineArn`: `str`
+
+Optional fields:
+
+- `name`: `str`
+- `input`: `str`
+- `traceHeader`: `str`
+
+## StartExecutionOutputResponseTypeDef
+
+```python
+from mypy_boto3_stepfunctions.type_defs import StartExecutionOutputResponseTypeDef
 ```
 
 Required fields:
@@ -693,10 +942,26 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartSyncExecutionOutputTypeDef
+## StartSyncExecutionInputTypeDef
 
 ```python
-from mypy_boto3_stepfunctions.type_defs import StartSyncExecutionOutputTypeDef
+from mypy_boto3_stepfunctions.type_defs import StartSyncExecutionInputTypeDef
+```
+
+Required fields:
+
+- `stateMachineArn`: `str`
+
+Optional fields:
+
+- `name`: `str`
+- `input`: `str`
+- `traceHeader`: `str`
+
+## StartSyncExecutionOutputResponseTypeDef
+
+```python
+from mypy_boto3_stepfunctions.type_defs import StartSyncExecutionOutputResponseTypeDef
 ```
 
 Required fields:
@@ -766,10 +1031,25 @@ Required fields:
 - `type`: [StateMachineTypeType](./literals.md#statemachinetypetype)
 - `creationDate`: `datetime`
 
-## StopExecutionOutputTypeDef
+## StopExecutionInputTypeDef
 
 ```python
-from mypy_boto3_stepfunctions.type_defs import StopExecutionOutputTypeDef
+from mypy_boto3_stepfunctions.type_defs import StopExecutionInputTypeDef
+```
+
+Required fields:
+
+- `executionArn`: `str`
+
+Optional fields:
+
+- `error`: `str`
+- `cause`: `str`
+
+## StopExecutionOutputResponseTypeDef
+
+```python
+from mypy_boto3_stepfunctions.type_defs import StopExecutionOutputResponseTypeDef
 ```
 
 Required fields:
@@ -777,6 +1057,17 @@ Required fields:
 - `stopDate`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## TagResourceInputTypeDef
+
+```python
+from mypy_boto3_stepfunctions.type_defs import TagResourceInputTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -926,10 +1217,40 @@ Optional fields:
 
 - `enabled`: `bool`
 
-## UpdateStateMachineOutputTypeDef
+## UntagResourceInputTypeDef
 
 ```python
-from mypy_boto3_stepfunctions.type_defs import UpdateStateMachineOutputTypeDef
+from mypy_boto3_stepfunctions.type_defs import UntagResourceInputTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tagKeys`: `List`\[`str`\]
+
+## UpdateStateMachineInputTypeDef
+
+```python
+from mypy_boto3_stepfunctions.type_defs import UpdateStateMachineInputTypeDef
+```
+
+Required fields:
+
+- `stateMachineArn`: `str`
+
+Optional fields:
+
+- `definition`: `str`
+- `roleArn`: `str`
+- `loggingConfiguration`:
+  [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
+- `tracingConfiguration`:
+  [TracingConfigurationTypeDef](./type_defs.md#tracingconfigurationtypedef)
+
+## UpdateStateMachineOutputResponseTypeDef
+
+```python
+from mypy_boto3_stepfunctions.type_defs import UpdateStateMachineOutputResponseTypeDef
 ```
 
 Required fields:

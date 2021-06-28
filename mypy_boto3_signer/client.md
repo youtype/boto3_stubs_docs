@@ -79,10 +79,15 @@ Exceptions:
 
 ### add_profile_permission
 
+Adds cross-account permissions to a signing profile.
+
 Type annotations for `boto3.client("signer").add_profile_permission` method.
 
 Boto3 documentation:
 [signer.Client.add_profile_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.add_profile_permission)
+
+Arguments mapping described in
+[AddProfilePermissionRequestTypeDef](./type_defs.md#addprofilepermissionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -94,9 +99,11 @@ Keyword-only arguments:
 - `revisionId`: `str`
 
 Returns
-[AddProfilePermissionResponseTypeDef](./type_defs.md#addprofilepermissionresponsetypedef).
+[AddProfilePermissionResponseResponseTypeDef](./type_defs.md#addprofilepermissionresponseresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("signer").can_paginate` method.
 
@@ -111,10 +118,15 @@ Returns `bool`.
 
 ### cancel_signing_profile
 
+Changes the state of an `ACTIVE` signing profile to `CANCELED`.
+
 Type annotations for `boto3.client("signer").cancel_signing_profile` method.
 
 Boto3 documentation:
 [signer.Client.cancel_signing_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.cancel_signing_profile)
+
+Arguments mapping described in
+[CancelSigningProfileRequestTypeDef](./type_defs.md#cancelsigningprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -122,19 +134,26 @@ Keyword-only arguments:
 
 ### describe_signing_job
 
+Returns information about a specific code signing job.
+
 Type annotations for `boto3.client("signer").describe_signing_job` method.
 
 Boto3 documentation:
 [signer.Client.describe_signing_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.describe_signing_job)
+
+Arguments mapping described in
+[DescribeSigningJobRequestTypeDef](./type_defs.md#describesigningjobrequesttypedef).
 
 Keyword-only arguments:
 
 - `jobId`: `str` *(required)*
 
 Returns
-[DescribeSigningJobResponseTypeDef](./type_defs.md#describesigningjobresponsetypedef).
+[DescribeSigningJobResponseResponseTypeDef](./type_defs.md#describesigningjobresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("signer").generate_presigned_url` method.
 
@@ -152,24 +171,34 @@ Returns `str`.
 
 ### get_signing_platform
 
+Returns information on a specific signing platform.
+
 Type annotations for `boto3.client("signer").get_signing_platform` method.
 
 Boto3 documentation:
 [signer.Client.get_signing_platform](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.get_signing_platform)
+
+Arguments mapping described in
+[GetSigningPlatformRequestTypeDef](./type_defs.md#getsigningplatformrequesttypedef).
 
 Keyword-only arguments:
 
 - `platformId`: `str` *(required)*
 
 Returns
-[GetSigningPlatformResponseTypeDef](./type_defs.md#getsigningplatformresponsetypedef).
+[GetSigningPlatformResponseResponseTypeDef](./type_defs.md#getsigningplatformresponseresponsetypedef).
 
 ### get_signing_profile
+
+Returns information on a specific signing profile.
 
 Type annotations for `boto3.client("signer").get_signing_profile` method.
 
 Boto3 documentation:
 [signer.Client.get_signing_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.get_signing_profile)
+
+Arguments mapping described in
+[GetSigningProfileRequestTypeDef](./type_defs.md#getsigningprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -177,14 +206,19 @@ Keyword-only arguments:
 - `profileOwner`: `str`
 
 Returns
-[GetSigningProfileResponseTypeDef](./type_defs.md#getsigningprofileresponsetypedef).
+[GetSigningProfileResponseResponseTypeDef](./type_defs.md#getsigningprofileresponseresponsetypedef).
 
 ### list_profile_permissions
+
+Lists the cross-account permissions associated with a signing profile.
 
 Type annotations for `boto3.client("signer").list_profile_permissions` method.
 
 Boto3 documentation:
 [signer.Client.list_profile_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.list_profile_permissions)
+
+Arguments mapping described in
+[ListProfilePermissionsRequestTypeDef](./type_defs.md#listprofilepermissionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -192,14 +226,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListProfilePermissionsResponseTypeDef](./type_defs.md#listprofilepermissionsresponsetypedef).
+[ListProfilePermissionsResponseResponseTypeDef](./type_defs.md#listprofilepermissionsresponseresponsetypedef).
 
 ### list_signing_jobs
+
+Lists all your signing jobs.
 
 Type annotations for `boto3.client("signer").list_signing_jobs` method.
 
 Boto3 documentation:
 [signer.Client.list_signing_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.list_signing_jobs)
+
+Arguments mapping described in
+[ListSigningJobsRequestTypeDef](./type_defs.md#listsigningjobsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -209,19 +248,25 @@ Keyword-only arguments:
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `isRevoked`: `bool`
-- `signatureExpiresBefore`: `datetime`
-- `signatureExpiresAfter`: `datetime`
+- `signatureExpiresBefore`: `Union`\[`datetime`, `str`\]
+- `signatureExpiresAfter`: `Union`\[`datetime`, `str`\]
 - `jobInvoker`: `str`
 
 Returns
-[ListSigningJobsResponseTypeDef](./type_defs.md#listsigningjobsresponsetypedef).
+[ListSigningJobsResponseResponseTypeDef](./type_defs.md#listsigningjobsresponseresponsetypedef).
 
 ### list_signing_platforms
+
+Lists all signing platforms available in code signing that match the request
+parameters.
 
 Type annotations for `boto3.client("signer").list_signing_platforms` method.
 
 Boto3 documentation:
 [signer.Client.list_signing_platforms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.list_signing_platforms)
+
+Arguments mapping described in
+[ListSigningPlatformsRequestTypeDef](./type_defs.md#listsigningplatformsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -232,14 +277,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListSigningPlatformsResponseTypeDef](./type_defs.md#listsigningplatformsresponsetypedef).
+[ListSigningPlatformsResponseResponseTypeDef](./type_defs.md#listsigningplatformsresponseresponsetypedef).
 
 ### list_signing_profiles
+
+Lists all available signing profiles in your AWS account.
 
 Type annotations for `boto3.client("signer").list_signing_profiles` method.
 
 Boto3 documentation:
 [signer.Client.list_signing_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.list_signing_profiles)
+
+Arguments mapping described in
+[ListSigningProfilesRequestTypeDef](./type_defs.md#listsigningprofilesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -251,28 +301,38 @@ Keyword-only arguments:
   `List`\[[SigningProfileStatusType](./literals.md#signingprofilestatustype)\]
 
 Returns
-[ListSigningProfilesResponseTypeDef](./type_defs.md#listsigningprofilesresponsetypedef).
+[ListSigningProfilesResponseResponseTypeDef](./type_defs.md#listsigningprofilesresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Returns a list of the tags associated with a signing profile resource.
 
 Type annotations for `boto3.client("signer").list_tags_for_resource` method.
 
 Boto3 documentation:
 [signer.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### put_signing_profile
+
+Creates a signing profile.
 
 Type annotations for `boto3.client("signer").put_signing_profile` method.
 
 Boto3 documentation:
 [signer.Client.put_signing_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.put_signing_profile)
+
+Arguments mapping described in
+[PutSigningProfileRequestTypeDef](./type_defs.md#putsigningprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -288,14 +348,19 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[PutSigningProfileResponseTypeDef](./type_defs.md#putsigningprofileresponsetypedef).
+[PutSigningProfileResponseResponseTypeDef](./type_defs.md#putsigningprofileresponseresponsetypedef).
 
 ### remove_profile_permission
+
+Removes cross-account permissions from a signing profile.
 
 Type annotations for `boto3.client("signer").remove_profile_permission` method.
 
 Boto3 documentation:
 [signer.Client.remove_profile_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.remove_profile_permission)
+
+Arguments mapping described in
+[RemoveProfilePermissionRequestTypeDef](./type_defs.md#removeprofilepermissionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -304,14 +369,19 @@ Keyword-only arguments:
 - `statementId`: `str` *(required)*
 
 Returns
-[RemoveProfilePermissionResponseTypeDef](./type_defs.md#removeprofilepermissionresponsetypedef).
+[RemoveProfilePermissionResponseResponseTypeDef](./type_defs.md#removeprofilepermissionresponseresponsetypedef).
 
 ### revoke_signature
+
+Changes the state of a signing job to REVOKED.
 
 Type annotations for `boto3.client("signer").revoke_signature` method.
 
 Boto3 documentation:
 [signer.Client.revoke_signature](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.revoke_signature)
+
+Arguments mapping described in
+[RevokeSignatureRequestTypeDef](./type_defs.md#revokesignaturerequesttypedef).
 
 Keyword-only arguments:
 
@@ -321,24 +391,34 @@ Keyword-only arguments:
 
 ### revoke_signing_profile
 
+Changes the state of a signing profile to REVOKED.
+
 Type annotations for `boto3.client("signer").revoke_signing_profile` method.
 
 Boto3 documentation:
 [signer.Client.revoke_signing_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.revoke_signing_profile)
+
+Arguments mapping described in
+[RevokeSigningProfileRequestTypeDef](./type_defs.md#revokesigningprofilerequesttypedef).
 
 Keyword-only arguments:
 
 - `profileName`: `str` *(required)*
 - `profileVersion`: `str` *(required)*
 - `reason`: `str` *(required)*
-- `effectiveTime`: `datetime` *(required)*
+- `effectiveTime`: `Union`\[`datetime`, `str`\] *(required)*
 
 ### start_signing_job
+
+Initiates a signing job to be performed on the code provided.
 
 Type annotations for `boto3.client("signer").start_signing_job` method.
 
 Boto3 documentation:
 [signer.Client.start_signing_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.start_signing_job)
+
+Arguments mapping described in
+[StartSigningJobRequestTypeDef](./type_defs.md#startsigningjobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -350,14 +430,19 @@ Keyword-only arguments:
 - `profileOwner`: `str`
 
 Returns
-[StartSigningJobResponseTypeDef](./type_defs.md#startsigningjobresponsetypedef).
+[StartSigningJobResponseResponseTypeDef](./type_defs.md#startsigningjobresponseresponsetypedef).
 
 ### tag_resource
+
+Adds one or more tags to a signing profile.
 
 Type annotations for `boto3.client("signer").tag_resource` method.
 
 Boto3 documentation:
 [signer.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -368,10 +453,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Removes one or more tags from a signing profile.
+
 Type annotations for `boto3.client("signer").untag_resource` method.
 
 Boto3 documentation:
 [signer.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 

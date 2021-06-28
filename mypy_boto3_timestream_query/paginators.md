@@ -34,4 +34,4 @@ Arguments for `QueryPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `QueryPaginator.paginate` returns
-`Iterator`\[[QueryResponseTypeDef](./type_defs.md#queryresponsetypedef)\].
+`Iterator`\[[QueryResponseResponseTypeDef](./type_defs.md#queryresponseresponsetypedef)\].

@@ -68,6 +68,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("application-autoscaling").can_paginate`
 method.
 
@@ -82,11 +84,17 @@ Returns `bool`.
 
 ### delete_scaling_policy
 
+Deletes the specified scaling policy for an Application Auto Scaling scalable
+target.
+
 Type annotations for
 `boto3.client("application-autoscaling").delete_scaling_policy` method.
 
 Boto3 documentation:
 [ApplicationAutoScaling.Client.delete_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.delete_scaling_policy)
+
+Arguments mapping described in
+[DeleteScalingPolicyRequestTypeDef](./type_defs.md#deletescalingpolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -101,11 +109,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_scheduled_action
 
+Deletes the specified scheduled action for an Application Auto Scaling scalable
+target.
+
 Type annotations for
 `boto3.client("application-autoscaling").delete_scheduled_action` method.
 
 Boto3 documentation:
 [ApplicationAutoScaling.Client.delete_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.delete_scheduled_action)
+
+Arguments mapping described in
+[DeleteScheduledActionRequestTypeDef](./type_defs.md#deletescheduledactionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -120,11 +134,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### deregister_scalable_target
 
+Deregisters an Application Auto Scaling scalable target when you have finished
+using it.
+
 Type annotations for
 `boto3.client("application-autoscaling").deregister_scalable_target` method.
 
 Boto3 documentation:
 [ApplicationAutoScaling.Client.deregister_scalable_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.deregister_scalable_target)
+
+Arguments mapping described in
+[DeregisterScalableTargetRequestTypeDef](./type_defs.md#deregisterscalabletargetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -138,11 +158,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_scalable_targets
 
+Gets information about the scalable targets in the specified namespace.
+
 Type annotations for
 `boto3.client("application-autoscaling").describe_scalable_targets` method.
 
 Boto3 documentation:
 [ApplicationAutoScaling.Client.describe_scalable_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.describe_scalable_targets)
+
+Arguments mapping described in
+[DescribeScalableTargetsRequestTypeDef](./type_defs.md#describescalabletargetsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -155,15 +180,21 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeScalableTargetsResponseTypeDef](./type_defs.md#describescalabletargetsresponsetypedef).
+[DescribeScalableTargetsResponseResponseTypeDef](./type_defs.md#describescalabletargetsresponseresponsetypedef).
 
 ### describe_scaling_activities
+
+Provides descriptive information about the scaling activities in the specified
+namespace from the previous six weeks.
 
 Type annotations for
 `boto3.client("application-autoscaling").describe_scaling_activities` method.
 
 Boto3 documentation:
 [ApplicationAutoScaling.Client.describe_scaling_activities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.describe_scaling_activities)
+
+Arguments mapping described in
+[DescribeScalingActivitiesRequestTypeDef](./type_defs.md#describescalingactivitiesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -176,15 +207,21 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeScalingActivitiesResponseTypeDef](./type_defs.md#describescalingactivitiesresponsetypedef).
+[DescribeScalingActivitiesResponseResponseTypeDef](./type_defs.md#describescalingactivitiesresponseresponsetypedef).
 
 ### describe_scaling_policies
+
+Describes the Application Auto Scaling scaling policies for the specified
+service namespace.
 
 Type annotations for
 `boto3.client("application-autoscaling").describe_scaling_policies` method.
 
 Boto3 documentation:
 [ApplicationAutoScaling.Client.describe_scaling_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.describe_scaling_policies)
+
+Arguments mapping described in
+[DescribeScalingPoliciesRequestTypeDef](./type_defs.md#describescalingpoliciesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -198,15 +235,21 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeScalingPoliciesResponseTypeDef](./type_defs.md#describescalingpoliciesresponsetypedef).
+[DescribeScalingPoliciesResponseResponseTypeDef](./type_defs.md#describescalingpoliciesresponseresponsetypedef).
 
 ### describe_scheduled_actions
+
+Describes the Application Auto Scaling scheduled actions for the specified
+service namespace.
 
 Type annotations for
 `boto3.client("application-autoscaling").describe_scheduled_actions` method.
 
 Boto3 documentation:
 [ApplicationAutoScaling.Client.describe_scheduled_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.describe_scheduled_actions)
+
+Arguments mapping described in
+[DescribeScheduledActionsRequestTypeDef](./type_defs.md#describescheduledactionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -220,9 +263,11 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeScheduledActionsResponseTypeDef](./type_defs.md#describescheduledactionsresponsetypedef).
+[DescribeScheduledActionsResponseResponseTypeDef](./type_defs.md#describescheduledactionsresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for
 `boto3.client("application-autoscaling").generate_presigned_url` method.
@@ -241,11 +286,17 @@ Returns `str`.
 
 ### put_scaling_policy
 
+Creates or updates a scaling policy for an Application Auto Scaling scalable
+target.
+
 Type annotations for
 `boto3.client("application-autoscaling").put_scaling_policy` method.
 
 Boto3 documentation:
 [ApplicationAutoScaling.Client.put_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.put_scaling_policy)
+
+Arguments mapping described in
+[PutScalingPolicyRequestTypeDef](./type_defs.md#putscalingpolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -262,15 +313,21 @@ Keyword-only arguments:
   [TargetTrackingScalingPolicyConfigurationTypeDef](./type_defs.md#targettrackingscalingpolicyconfigurationtypedef)
 
 Returns
-[PutScalingPolicyResponseTypeDef](./type_defs.md#putscalingpolicyresponsetypedef).
+[PutScalingPolicyResponseResponseTypeDef](./type_defs.md#putscalingpolicyresponseresponsetypedef).
 
 ### put_scheduled_action
+
+Creates or updates a scheduled action for an Application Auto Scaling scalable
+target.
 
 Type annotations for
 `boto3.client("application-autoscaling").put_scheduled_action` method.
 
 Boto3 documentation:
 [ApplicationAutoScaling.Client.put_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.put_scheduled_action)
+
+Arguments mapping described in
+[PutScheduledActionRequestTypeDef](./type_defs.md#putscheduledactionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -282,8 +339,8 @@ Keyword-only arguments:
   [ScalableDimensionType](./literals.md#scalabledimensiontype) *(required)*
 - `Schedule`: `str`
 - `Timezone`: `str`
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
 - `ScalableTargetAction`:
   [ScalableTargetActionTypeDef](./type_defs.md#scalabletargetactiontypedef)
 
@@ -291,11 +348,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### register_scalable_target
 
+Registers or updates a scalable target.
+
 Type annotations for
 `boto3.client("application-autoscaling").register_scalable_target` method.
 
 Boto3 documentation:
 [ApplicationAutoScaling.Client.register_scalable_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.register_scalable_target)
+
+Arguments mapping described in
+[RegisterScalableTargetRequestTypeDef](./type_defs.md#registerscalabletargetrequesttypedef).
 
 Keyword-only arguments:
 

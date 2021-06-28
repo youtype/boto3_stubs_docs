@@ -308,10 +308,15 @@ Exceptions:
 
 ### accept_certificate_transfer
 
+Accepts a pending certificate transfer.
+
 Type annotations for `boto3.client("iot").accept_certificate_transfer` method.
 
 Boto3 documentation:
 [IoT.Client.accept_certificate_transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.accept_certificate_transfer)
+
+Arguments mapping described in
+[AcceptCertificateTransferRequestTypeDef](./type_defs.md#acceptcertificatetransferrequesttypedef).
 
 Keyword-only arguments:
 
@@ -320,10 +325,15 @@ Keyword-only arguments:
 
 ### add_thing_to_billing_group
 
+Adds a thing to a billing group.
+
 Type annotations for `boto3.client("iot").add_thing_to_billing_group` method.
 
 Boto3 documentation:
 [IoT.Client.add_thing_to_billing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.add_thing_to_billing_group)
+
+Arguments mapping described in
+[AddThingToBillingGroupRequestTypeDef](./type_defs.md#addthingtobillinggrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -336,10 +346,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### add_thing_to_thing_group
 
+Adds a thing to a thing group.
+
 Type annotations for `boto3.client("iot").add_thing_to_thing_group` method.
 
 Boto3 documentation:
 [IoT.Client.add_thing_to_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.add_thing_to_thing_group)
+
+Arguments mapping described in
+[AddThingToThingGroupRequestTypeDef](./type_defs.md#addthingtothinggrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -353,10 +368,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### associate_targets_with_job
 
+Associates a group with a continuous job.
+
 Type annotations for `boto3.client("iot").associate_targets_with_job` method.
 
 Boto3 documentation:
 [IoT.Client.associate_targets_with_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.associate_targets_with_job)
+
+Arguments mapping described in
+[AssociateTargetsWithJobRequestTypeDef](./type_defs.md#associatetargetswithjobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -366,14 +386,19 @@ Keyword-only arguments:
 - `namespaceId`: `str`
 
 Returns
-[AssociateTargetsWithJobResponseTypeDef](./type_defs.md#associatetargetswithjobresponsetypedef).
+[AssociateTargetsWithJobResponseResponseTypeDef](./type_defs.md#associatetargetswithjobresponseresponsetypedef).
 
 ### attach_policy
+
+Attaches a policy to the specified target.
 
 Type annotations for `boto3.client("iot").attach_policy` method.
 
 Boto3 documentation:
 [IoT.Client.attach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.attach_policy)
+
+Arguments mapping described in
+[AttachPolicyRequestTypeDef](./type_defs.md#attachpolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -382,10 +407,16 @@ Keyword-only arguments:
 
 ### attach_principal_policy
 
+Attaches the specified policy to the specified principal (certificate or other
+credential).
+
 Type annotations for `boto3.client("iot").attach_principal_policy` method.
 
 Boto3 documentation:
 [IoT.Client.attach_principal_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.attach_principal_policy)
+
+Arguments mapping described in
+[AttachPrincipalPolicyRequestTypeDef](./type_defs.md#attachprincipalpolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -394,10 +425,16 @@ Keyword-only arguments:
 
 ### attach_security_profile
 
+Associates a Device Defender security profile with a thing group or this
+account.
+
 Type annotations for `boto3.client("iot").attach_security_profile` method.
 
 Boto3 documentation:
 [IoT.Client.attach_security_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.attach_security_profile)
+
+Arguments mapping described in
+[AttachSecurityProfileRequestTypeDef](./type_defs.md#attachsecurityprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -408,10 +445,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### attach_thing_principal
 
+Attaches the specified principal to the specified thing.
+
 Type annotations for `boto3.client("iot").attach_thing_principal` method.
 
 Boto3 documentation:
 [IoT.Client.attach_thing_principal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.attach_thing_principal)
+
+Arguments mapping described in
+[AttachThingPrincipalRequestTypeDef](./type_defs.md#attachthingprincipalrequesttypedef).
 
 Keyword-only arguments:
 
@@ -421,6 +463,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("iot").can_paginate` method.
 
@@ -435,11 +479,16 @@ Returns `bool`.
 
 ### cancel_audit_mitigation_actions_task
 
+Cancels a mitigation action task that is in progress.
+
 Type annotations for `boto3.client("iot").cancel_audit_mitigation_actions_task`
 method.
 
 Boto3 documentation:
 [IoT.Client.cancel_audit_mitigation_actions_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_audit_mitigation_actions_task)
+
+Arguments mapping described in
+[CancelAuditMitigationActionsTaskRequestTypeDef](./type_defs.md#cancelauditmitigationactionstaskrequesttypedef).
 
 Keyword-only arguments:
 
@@ -449,10 +498,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### cancel_audit_task
 
+Cancels an audit that is in progress.
+
 Type annotations for `boto3.client("iot").cancel_audit_task` method.
 
 Boto3 documentation:
 [IoT.Client.cancel_audit_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_audit_task)
+
+Arguments mapping described in
+[CancelAuditTaskRequestTypeDef](./type_defs.md#cancelaudittaskrequesttypedef).
 
 Keyword-only arguments:
 
@@ -462,10 +516,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### cancel_certificate_transfer
 
+Cancels a pending transfer for the specified certificate.
+
 Type annotations for `boto3.client("iot").cancel_certificate_transfer` method.
 
 Boto3 documentation:
 [IoT.Client.cancel_certificate_transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_certificate_transfer)
+
+Arguments mapping described in
+[CancelCertificateTransferRequestTypeDef](./type_defs.md#cancelcertificatetransferrequesttypedef).
 
 Keyword-only arguments:
 
@@ -473,11 +532,16 @@ Keyword-only arguments:
 
 ### cancel_detect_mitigation_actions_task
 
+Cancels a Device Defender ML Detect mitigation action.
+
 Type annotations for
 `boto3.client("iot").cancel_detect_mitigation_actions_task` method.
 
 Boto3 documentation:
 [IoT.Client.cancel_detect_mitigation_actions_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_detect_mitigation_actions_task)
+
+Arguments mapping described in
+[CancelDetectMitigationActionsTaskRequestTypeDef](./type_defs.md#canceldetectmitigationactionstaskrequesttypedef).
 
 Keyword-only arguments:
 
@@ -487,10 +551,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### cancel_job
 
+Cancels a job.
+
 Type annotations for `boto3.client("iot").cancel_job` method.
 
 Boto3 documentation:
 [IoT.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_job)
+
+Arguments mapping described in
+[CancelJobRequestTypeDef](./type_defs.md#canceljobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -499,14 +568,20 @@ Keyword-only arguments:
 - `comment`: `str`
 - `force`: `bool`
 
-Returns [CancelJobResponseTypeDef](./type_defs.md#canceljobresponsetypedef).
+Returns
+[CancelJobResponseResponseTypeDef](./type_defs.md#canceljobresponseresponsetypedef).
 
 ### cancel_job_execution
+
+Cancels the execution of a job for a given thing.
 
 Type annotations for `boto3.client("iot").cancel_job_execution` method.
 
 Boto3 documentation:
 [IoT.Client.cancel_job_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_job_execution)
+
+Arguments mapping described in
+[CancelJobExecutionRequestTypeDef](./type_defs.md#canceljobexecutionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -518,6 +593,8 @@ Keyword-only arguments:
 
 ### clear_default_authorizer
 
+Clears the default authorizer.
+
 Type annotations for `boto3.client("iot").clear_default_authorizer` method.
 
 Boto3 documentation:
@@ -527,11 +604,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### confirm_topic_rule_destination
 
+Confirms a topic rule destination.
+
 Type annotations for `boto3.client("iot").confirm_topic_rule_destination`
 method.
 
 Boto3 documentation:
 [IoT.Client.confirm_topic_rule_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.confirm_topic_rule_destination)
+
+Arguments mapping described in
+[ConfirmTopicRuleDestinationRequestTypeDef](./type_defs.md#confirmtopicruledestinationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -541,10 +623,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### create_audit_suppression
 
+Creates a Device Defender audit suppression.
+
 Type annotations for `boto3.client("iot").create_audit_suppression` method.
 
 Boto3 documentation:
 [IoT.Client.create_audit_suppression](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_audit_suppression)
+
+Arguments mapping described in
+[CreateAuditSuppressionRequestTypeDef](./type_defs.md#createauditsuppressionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -553,7 +640,7 @@ Keyword-only arguments:
   [ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)
   *(required)*
 - `clientRequestToken`: `str` *(required)*
-- `expirationDate`: `datetime`
+- `expirationDate`: `Union`\[`datetime`, `str`\]
 - `suppressIndefinitely`: `bool`
 - `description`: `str`
 
@@ -561,10 +648,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### create_authorizer
 
+Creates an authorizer.
+
 Type annotations for `boto3.client("iot").create_authorizer` method.
 
 Boto3 documentation:
 [IoT.Client.create_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_authorizer)
+
+Arguments mapping described in
+[CreateAuthorizerRequestTypeDef](./type_defs.md#createauthorizerrequesttypedef).
 
 Keyword-only arguments:
 
@@ -577,14 +669,19 @@ Keyword-only arguments:
 - `signingDisabled`: `bool`
 
 Returns
-[CreateAuthorizerResponseTypeDef](./type_defs.md#createauthorizerresponsetypedef).
+[CreateAuthorizerResponseResponseTypeDef](./type_defs.md#createauthorizerresponseresponsetypedef).
 
 ### create_billing_group
+
+Creates a billing group.
 
 Type annotations for `boto3.client("iot").create_billing_group` method.
 
 Boto3 documentation:
 [IoT.Client.create_billing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_billing_group)
+
+Arguments mapping described in
+[CreateBillingGroupRequestTypeDef](./type_defs.md#createbillinggrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -594,14 +691,19 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateBillingGroupResponseTypeDef](./type_defs.md#createbillinggroupresponsetypedef).
+[CreateBillingGroupResponseResponseTypeDef](./type_defs.md#createbillinggroupresponseresponsetypedef).
 
 ### create_certificate_from_csr
+
+Creates an X.509 certificate using the specified certificate signing request.
 
 Type annotations for `boto3.client("iot").create_certificate_from_csr` method.
 
 Boto3 documentation:
 [IoT.Client.create_certificate_from_csr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_certificate_from_csr)
+
+Arguments mapping described in
+[CreateCertificateFromCsrRequestTypeDef](./type_defs.md#createcertificatefromcsrrequesttypedef).
 
 Keyword-only arguments:
 
@@ -609,14 +711,20 @@ Keyword-only arguments:
 - `setAsActive`: `bool`
 
 Returns
-[CreateCertificateFromCsrResponseTypeDef](./type_defs.md#createcertificatefromcsrresponsetypedef).
+[CreateCertificateFromCsrResponseResponseTypeDef](./type_defs.md#createcertificatefromcsrresponseresponsetypedef).
 
 ### create_custom_metric
+
+Use this API to define a Custom Metric published by your devices to Device
+Defender.
 
 Type annotations for `boto3.client("iot").create_custom_metric` method.
 
 Boto3 documentation:
 [IoT.Client.create_custom_metric](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_custom_metric)
+
+Arguments mapping described in
+[CreateCustomMetricRequestTypeDef](./type_defs.md#createcustommetricrequesttypedef).
 
 Keyword-only arguments:
 
@@ -628,14 +736,20 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateCustomMetricResponseTypeDef](./type_defs.md#createcustommetricresponsetypedef).
+[CreateCustomMetricResponseResponseTypeDef](./type_defs.md#createcustommetricresponseresponsetypedef).
 
 ### create_dimension
+
+Create a dimension that you can use to limit the scope of a metric used in a
+security profile for AWS IoT Device Defender.
 
 Type annotations for `boto3.client("iot").create_dimension` method.
 
 Boto3 documentation:
 [IoT.Client.create_dimension](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_dimension)
+
+Arguments mapping described in
+[CreateDimensionRequestTypeDef](./type_defs.md#createdimensionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -647,14 +761,19 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDimensionResponseTypeDef](./type_defs.md#createdimensionresponsetypedef).
+[CreateDimensionResponseResponseTypeDef](./type_defs.md#createdimensionresponseresponsetypedef).
 
 ### create_domain_configuration
+
+Creates a domain configuration.
 
 Type annotations for `boto3.client("iot").create_domain_configuration` method.
 
 Boto3 documentation:
 [IoT.Client.create_domain_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_domain_configuration)
+
+Arguments mapping described in
+[CreateDomainConfigurationRequestTypeDef](./type_defs.md#createdomainconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -668,14 +787,19 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDomainConfigurationResponseTypeDef](./type_defs.md#createdomainconfigurationresponsetypedef).
+[CreateDomainConfigurationResponseResponseTypeDef](./type_defs.md#createdomainconfigurationresponseresponsetypedef).
 
 ### create_dynamic_thing_group
+
+Creates a dynamic thing group.
 
 Type annotations for `boto3.client("iot").create_dynamic_thing_group` method.
 
 Boto3 documentation:
 [IoT.Client.create_dynamic_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_dynamic_thing_group)
+
+Arguments mapping described in
+[CreateDynamicThingGroupRequestTypeDef](./type_defs.md#createdynamicthinggrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -688,14 +812,19 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDynamicThingGroupResponseTypeDef](./type_defs.md#createdynamicthinggroupresponsetypedef).
+[CreateDynamicThingGroupResponseResponseTypeDef](./type_defs.md#createdynamicthinggroupresponseresponsetypedef).
 
 ### create_job
+
+Creates a job.
 
 Type annotations for `boto3.client("iot").create_job` method.
 
 Boto3 documentation:
 [IoT.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_job)
+
+Arguments mapping described in
+[CreateJobRequestTypeDef](./type_defs.md#createjobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -715,14 +844,20 @@ Keyword-only arguments:
 - `namespaceId`: `str`
 - `jobTemplateArn`: `str`
 
-Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
+Returns
+[CreateJobResponseResponseTypeDef](./type_defs.md#createjobresponseresponsetypedef).
 
 ### create_job_template
+
+Creates a job template.
 
 Type annotations for `boto3.client("iot").create_job_template` method.
 
 Boto3 documentation:
 [IoT.Client.create_job_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_job_template)
+
+Arguments mapping described in
+[CreateJobTemplateRequestTypeDef](./type_defs.md#createjobtemplaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -740,28 +875,40 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateJobTemplateResponseTypeDef](./type_defs.md#createjobtemplateresponsetypedef).
+[CreateJobTemplateResponseResponseTypeDef](./type_defs.md#createjobtemplateresponseresponsetypedef).
 
 ### create_keys_and_certificate
+
+Creates a 2048-bit RSA key pair and issues an X.509 certificate using the
+issued public key.
 
 Type annotations for `boto3.client("iot").create_keys_and_certificate` method.
 
 Boto3 documentation:
 [IoT.Client.create_keys_and_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_keys_and_certificate)
 
+Arguments mapping described in
+[CreateKeysAndCertificateRequestTypeDef](./type_defs.md#createkeysandcertificaterequesttypedef).
+
 Keyword-only arguments:
 
 - `setAsActive`: `bool`
 
 Returns
-[CreateKeysAndCertificateResponseTypeDef](./type_defs.md#createkeysandcertificateresponsetypedef).
+[CreateKeysAndCertificateResponseResponseTypeDef](./type_defs.md#createkeysandcertificateresponseresponsetypedef).
 
 ### create_mitigation_action
+
+Defines an action that can be applied to audit findings by using
+StartAuditMitigationActionsTask.
 
 Type annotations for `boto3.client("iot").create_mitigation_action` method.
 
 Boto3 documentation:
 [IoT.Client.create_mitigation_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_mitigation_action)
+
+Arguments mapping described in
+[CreateMitigationActionRequestTypeDef](./type_defs.md#createmitigationactionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -773,14 +920,19 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateMitigationActionResponseTypeDef](./type_defs.md#createmitigationactionresponsetypedef).
+[CreateMitigationActionResponseResponseTypeDef](./type_defs.md#createmitigationactionresponseresponsetypedef).
 
 ### create_ota_update
+
+Creates an AWS IoT OTAUpdate on a target group of things or groups.
 
 Type annotations for `boto3.client("iot").create_ota_update` method.
 
 Boto3 documentation:
 [IoT.Client.create_ota_update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_ota_update)
+
+Arguments mapping described in
+[CreateOTAUpdateRequestTypeDef](./type_defs.md#createotaupdaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -805,14 +957,19 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateOTAUpdateResponseTypeDef](./type_defs.md#createotaupdateresponsetypedef).
+[CreateOTAUpdateResponseResponseTypeDef](./type_defs.md#createotaupdateresponseresponsetypedef).
 
 ### create_policy
+
+Creates an AWS IoT policy.
 
 Type annotations for `boto3.client("iot").create_policy` method.
 
 Boto3 documentation:
 [IoT.Client.create_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_policy)
+
+Arguments mapping described in
+[CreatePolicyRequestTypeDef](./type_defs.md#createpolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -821,14 +978,19 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreatePolicyResponseTypeDef](./type_defs.md#createpolicyresponsetypedef).
+[CreatePolicyResponseResponseTypeDef](./type_defs.md#createpolicyresponseresponsetypedef).
 
 ### create_policy_version
+
+Creates a new version of the specified AWS IoT policy.
 
 Type annotations for `boto3.client("iot").create_policy_version` method.
 
 Boto3 documentation:
 [IoT.Client.create_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_policy_version)
+
+Arguments mapping described in
+[CreatePolicyVersionRequestTypeDef](./type_defs.md#createpolicyversionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -837,28 +999,38 @@ Keyword-only arguments:
 - `setAsDefault`: `bool`
 
 Returns
-[CreatePolicyVersionResponseTypeDef](./type_defs.md#createpolicyversionresponsetypedef).
+[CreatePolicyVersionResponseResponseTypeDef](./type_defs.md#createpolicyversionresponseresponsetypedef).
 
 ### create_provisioning_claim
+
+Creates a provisioning claim.
 
 Type annotations for `boto3.client("iot").create_provisioning_claim` method.
 
 Boto3 documentation:
 [IoT.Client.create_provisioning_claim](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_provisioning_claim)
 
+Arguments mapping described in
+[CreateProvisioningClaimRequestTypeDef](./type_defs.md#createprovisioningclaimrequesttypedef).
+
 Keyword-only arguments:
 
 - `templateName`: `str` *(required)*
 
 Returns
-[CreateProvisioningClaimResponseTypeDef](./type_defs.md#createprovisioningclaimresponsetypedef).
+[CreateProvisioningClaimResponseResponseTypeDef](./type_defs.md#createprovisioningclaimresponseresponsetypedef).
 
 ### create_provisioning_template
+
+Creates a fleet provisioning template.
 
 Type annotations for `boto3.client("iot").create_provisioning_template` method.
 
 Boto3 documentation:
 [IoT.Client.create_provisioning_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_provisioning_template)
+
+Arguments mapping described in
+[CreateProvisioningTemplateRequestTypeDef](./type_defs.md#createprovisioningtemplaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -872,15 +1044,20 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateProvisioningTemplateResponseTypeDef](./type_defs.md#createprovisioningtemplateresponsetypedef).
+[CreateProvisioningTemplateResponseResponseTypeDef](./type_defs.md#createprovisioningtemplateresponseresponsetypedef).
 
 ### create_provisioning_template_version
+
+Creates a new version of a fleet provisioning template.
 
 Type annotations for `boto3.client("iot").create_provisioning_template_version`
 method.
 
 Boto3 documentation:
 [IoT.Client.create_provisioning_template_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_provisioning_template_version)
+
+Arguments mapping described in
+[CreateProvisioningTemplateVersionRequestTypeDef](./type_defs.md#createprovisioningtemplateversionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -889,14 +1066,19 @@ Keyword-only arguments:
 - `setAsDefault`: `bool`
 
 Returns
-[CreateProvisioningTemplateVersionResponseTypeDef](./type_defs.md#createprovisioningtemplateversionresponsetypedef).
+[CreateProvisioningTemplateVersionResponseResponseTypeDef](./type_defs.md#createprovisioningtemplateversionresponseresponsetypedef).
 
 ### create_role_alias
+
+Creates a role alias.
 
 Type annotations for `boto3.client("iot").create_role_alias` method.
 
 Boto3 documentation:
 [IoT.Client.create_role_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_role_alias)
+
+Arguments mapping described in
+[CreateRoleAliasRequestTypeDef](./type_defs.md#createrolealiasrequesttypedef).
 
 Keyword-only arguments:
 
@@ -906,14 +1088,19 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateRoleAliasResponseTypeDef](./type_defs.md#createrolealiasresponsetypedef).
+[CreateRoleAliasResponseResponseTypeDef](./type_defs.md#createrolealiasresponseresponsetypedef).
 
 ### create_scheduled_audit
+
+Creates a scheduled audit that is run at a specified time interval.
 
 Type annotations for `boto3.client("iot").create_scheduled_audit` method.
 
 Boto3 documentation:
 [IoT.Client.create_scheduled_audit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_scheduled_audit)
+
+Arguments mapping described in
+[CreateScheduledAuditRequestTypeDef](./type_defs.md#createscheduledauditrequesttypedef).
 
 Keyword-only arguments:
 
@@ -926,14 +1113,19 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateScheduledAuditResponseTypeDef](./type_defs.md#createscheduledauditresponsetypedef).
+[CreateScheduledAuditResponseResponseTypeDef](./type_defs.md#createscheduledauditresponseresponsetypedef).
 
 ### create_security_profile
+
+Creates a Device Defender security profile.
 
 Type annotations for `boto3.client("iot").create_security_profile` method.
 
 Boto3 documentation:
 [IoT.Client.create_security_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_security_profile)
+
+Arguments mapping described in
+[CreateSecurityProfileRequestTypeDef](./type_defs.md#createsecurityprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -949,14 +1141,19 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateSecurityProfileResponseTypeDef](./type_defs.md#createsecurityprofileresponsetypedef).
+[CreateSecurityProfileResponseResponseTypeDef](./type_defs.md#createsecurityprofileresponseresponsetypedef).
 
 ### create_stream
+
+Creates a stream for delivering one or more large files in chunks over MQTT.
 
 Type annotations for `boto3.client("iot").create_stream` method.
 
 Boto3 documentation:
 [IoT.Client.create_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_stream)
+
+Arguments mapping described in
+[CreateStreamRequestTypeDef](./type_defs.md#createstreamrequesttypedef).
 
 Keyword-only arguments:
 
@@ -968,14 +1165,19 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateStreamResponseTypeDef](./type_defs.md#createstreamresponsetypedef).
+[CreateStreamResponseResponseTypeDef](./type_defs.md#createstreamresponseresponsetypedef).
 
 ### create_thing
+
+Creates a thing record in the registry.
 
 Type annotations for `boto3.client("iot").create_thing` method.
 
 Boto3 documentation:
 [IoT.Client.create_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_thing)
+
+Arguments mapping described in
+[CreateThingRequestTypeDef](./type_defs.md#createthingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -986,14 +1188,19 @@ Keyword-only arguments:
 - `billingGroupName`: `str`
 
 Returns
-[CreateThingResponseTypeDef](./type_defs.md#createthingresponsetypedef).
+[CreateThingResponseResponseTypeDef](./type_defs.md#createthingresponseresponsetypedef).
 
 ### create_thing_group
+
+Create a thing group.
 
 Type annotations for `boto3.client("iot").create_thing_group` method.
 
 Boto3 documentation:
 [IoT.Client.create_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_thing_group)
+
+Arguments mapping described in
+[CreateThingGroupRequestTypeDef](./type_defs.md#createthinggrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -1004,14 +1211,19 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateThingGroupResponseTypeDef](./type_defs.md#createthinggroupresponsetypedef).
+[CreateThingGroupResponseResponseTypeDef](./type_defs.md#createthinggroupresponseresponsetypedef).
 
 ### create_thing_type
+
+Creates a new thing type.
 
 Type annotations for `boto3.client("iot").create_thing_type` method.
 
 Boto3 documentation:
 [IoT.Client.create_thing_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_thing_type)
+
+Arguments mapping described in
+[CreateThingTypeRequestTypeDef](./type_defs.md#createthingtyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -1021,14 +1233,19 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateThingTypeResponseTypeDef](./type_defs.md#createthingtyperesponsetypedef).
+[CreateThingTypeResponseResponseTypeDef](./type_defs.md#createthingtyperesponseresponsetypedef).
 
 ### create_topic_rule
+
+.
 
 Type annotations for `boto3.client("iot").create_topic_rule` method.
 
 Boto3 documentation:
 [IoT.Client.create_topic_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_topic_rule)
+
+Arguments mapping described in
+[CreateTopicRuleRequestTypeDef](./type_defs.md#createtopicrulerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1040,11 +1257,16 @@ Keyword-only arguments:
 
 ### create_topic_rule_destination
 
+Creates a topic rule destination.
+
 Type annotations for `boto3.client("iot").create_topic_rule_destination`
 method.
 
 Boto3 documentation:
 [IoT.Client.create_topic_rule_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_topic_rule_destination)
+
+Arguments mapping described in
+[CreateTopicRuleDestinationRequestTypeDef](./type_defs.md#createtopicruledestinationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1053,15 +1275,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateTopicRuleDestinationResponseTypeDef](./type_defs.md#createtopicruledestinationresponsetypedef).
+[CreateTopicRuleDestinationResponseResponseTypeDef](./type_defs.md#createtopicruledestinationresponseresponsetypedef).
 
 ### delete_account_audit_configuration
+
+Restores the default settings for Device Defender audits for this account.
 
 Type annotations for `boto3.client("iot").delete_account_audit_configuration`
 method.
 
 Boto3 documentation:
 [IoT.Client.delete_account_audit_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_account_audit_configuration)
+
+Arguments mapping described in
+[DeleteAccountAuditConfigurationRequestTypeDef](./type_defs.md#deleteaccountauditconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1071,10 +1298,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_audit_suppression
 
+Deletes a Device Defender audit suppression.
+
 Type annotations for `boto3.client("iot").delete_audit_suppression` method.
 
 Boto3 documentation:
 [IoT.Client.delete_audit_suppression](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_audit_suppression)
+
+Arguments mapping described in
+[DeleteAuditSuppressionRequestTypeDef](./type_defs.md#deleteauditsuppressionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1087,10 +1319,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_authorizer
 
+Deletes an authorizer.
+
 Type annotations for `boto3.client("iot").delete_authorizer` method.
 
 Boto3 documentation:
 [IoT.Client.delete_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_authorizer)
+
+Arguments mapping described in
+[DeleteAuthorizerRequestTypeDef](./type_defs.md#deleteauthorizerrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1100,10 +1337,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_billing_group
 
+Deletes the billing group.
+
 Type annotations for `boto3.client("iot").delete_billing_group` method.
 
 Boto3 documentation:
 [IoT.Client.delete_billing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_billing_group)
+
+Arguments mapping described in
+[DeleteBillingGroupRequestTypeDef](./type_defs.md#deletebillinggrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -1114,10 +1356,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_ca_certificate
 
+Deletes a registered CA certificate.
+
 Type annotations for `boto3.client("iot").delete_ca_certificate` method.
 
 Boto3 documentation:
 [IoT.Client.delete_ca_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_ca_certificate)
+
+Arguments mapping described in
+[DeleteCACertificateRequestTypeDef](./type_defs.md#deletecacertificaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -1127,10 +1374,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_certificate
 
+Deletes the specified certificate.
+
 Type annotations for `boto3.client("iot").delete_certificate` method.
 
 Boto3 documentation:
 [IoT.Client.delete_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_certificate)
+
+Arguments mapping described in
+[DeleteCertificateRequestTypeDef](./type_defs.md#deletecertificaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -1139,10 +1391,15 @@ Keyword-only arguments:
 
 ### delete_custom_metric
 
+.
+
 Type annotations for `boto3.client("iot").delete_custom_metric` method.
 
 Boto3 documentation:
 [IoT.Client.delete_custom_metric](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_custom_metric)
+
+Arguments mapping described in
+[DeleteCustomMetricRequestTypeDef](./type_defs.md#deletecustommetricrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1152,10 +1409,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_dimension
 
+Removes the specified dimension from your AWS account.
+
 Type annotations for `boto3.client("iot").delete_dimension` method.
 
 Boto3 documentation:
 [IoT.Client.delete_dimension](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_dimension)
+
+Arguments mapping described in
+[DeleteDimensionRequestTypeDef](./type_defs.md#deletedimensionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1165,10 +1427,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_domain_configuration
 
+Deletes the specified domain configuration.
+
 Type annotations for `boto3.client("iot").delete_domain_configuration` method.
 
 Boto3 documentation:
 [IoT.Client.delete_domain_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_domain_configuration)
+
+Arguments mapping described in
+[DeleteDomainConfigurationRequestTypeDef](./type_defs.md#deletedomainconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1178,10 +1445,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_dynamic_thing_group
 
+Deletes a dynamic thing group.
+
 Type annotations for `boto3.client("iot").delete_dynamic_thing_group` method.
 
 Boto3 documentation:
 [IoT.Client.delete_dynamic_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_dynamic_thing_group)
+
+Arguments mapping described in
+[DeleteDynamicThingGroupRequestTypeDef](./type_defs.md#deletedynamicthinggrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -1192,10 +1464,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_job
 
+Deletes a job and its related job executions.
+
 Type annotations for `boto3.client("iot").delete_job` method.
 
 Boto3 documentation:
 [IoT.Client.delete_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_job)
+
+Arguments mapping described in
+[DeleteJobRequestTypeDef](./type_defs.md#deletejobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1205,10 +1482,15 @@ Keyword-only arguments:
 
 ### delete_job_execution
 
+Deletes a job execution.
+
 Type annotations for `boto3.client("iot").delete_job_execution` method.
 
 Boto3 documentation:
 [IoT.Client.delete_job_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_job_execution)
+
+Arguments mapping described in
+[DeleteJobExecutionRequestTypeDef](./type_defs.md#deletejobexecutionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1220,10 +1502,15 @@ Keyword-only arguments:
 
 ### delete_job_template
 
+Deletes the specified job template.
+
 Type annotations for `boto3.client("iot").delete_job_template` method.
 
 Boto3 documentation:
 [IoT.Client.delete_job_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_job_template)
+
+Arguments mapping described in
+[DeleteJobTemplateRequestTypeDef](./type_defs.md#deletejobtemplaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -1231,10 +1518,15 @@ Keyword-only arguments:
 
 ### delete_mitigation_action
 
+Deletes a defined mitigation action from your AWS account.
+
 Type annotations for `boto3.client("iot").delete_mitigation_action` method.
 
 Boto3 documentation:
 [IoT.Client.delete_mitigation_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_mitigation_action)
+
+Arguments mapping described in
+[DeleteMitigationActionRequestTypeDef](./type_defs.md#deletemitigationactionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1244,10 +1536,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_ota_update
 
+Delete an OTA update.
+
 Type annotations for `boto3.client("iot").delete_ota_update` method.
 
 Boto3 documentation:
 [IoT.Client.delete_ota_update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_ota_update)
+
+Arguments mapping described in
+[DeleteOTAUpdateRequestTypeDef](./type_defs.md#deleteotaupdaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -1259,10 +1556,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_policy
 
+Deletes the specified policy.
+
 Type annotations for `boto3.client("iot").delete_policy` method.
 
 Boto3 documentation:
 [IoT.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_policy)
+
+Arguments mapping described in
+[DeletePolicyRequestTypeDef](./type_defs.md#deletepolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1270,10 +1572,15 @@ Keyword-only arguments:
 
 ### delete_policy_version
 
+Deletes the specified version of the specified policy.
+
 Type annotations for `boto3.client("iot").delete_policy_version` method.
 
 Boto3 documentation:
 [IoT.Client.delete_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_policy_version)
+
+Arguments mapping described in
+[DeletePolicyVersionRequestTypeDef](./type_defs.md#deletepolicyversionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1282,10 +1589,15 @@ Keyword-only arguments:
 
 ### delete_provisioning_template
 
+Deletes a fleet provisioning template.
+
 Type annotations for `boto3.client("iot").delete_provisioning_template` method.
 
 Boto3 documentation:
 [IoT.Client.delete_provisioning_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_provisioning_template)
+
+Arguments mapping described in
+[DeleteProvisioningTemplateRequestTypeDef](./type_defs.md#deleteprovisioningtemplaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -1295,11 +1607,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_provisioning_template_version
 
+Deletes a fleet provisioning template version.
+
 Type annotations for `boto3.client("iot").delete_provisioning_template_version`
 method.
 
 Boto3 documentation:
 [IoT.Client.delete_provisioning_template_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_provisioning_template_version)
+
+Arguments mapping described in
+[DeleteProvisioningTemplateVersionRequestTypeDef](./type_defs.md#deleteprovisioningtemplateversionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1310,6 +1627,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_registration_code
 
+Deletes a CA certificate registration code.
+
 Type annotations for `boto3.client("iot").delete_registration_code` method.
 
 Boto3 documentation:
@@ -1319,10 +1638,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_role_alias
 
+Deletes a role alias See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/iot-2015-05-28/DeleteRoleAlias>`\_
+**Request Syntax** response = client.delete_role_alias( roleAlias='string' ).
+
 Type annotations for `boto3.client("iot").delete_role_alias` method.
 
 Boto3 documentation:
 [IoT.Client.delete_role_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_role_alias)
+
+Arguments mapping described in
+[DeleteRoleAliasRequestTypeDef](./type_defs.md#deleterolealiasrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1332,10 +1658,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_scheduled_audit
 
+Deletes a scheduled audit.
+
 Type annotations for `boto3.client("iot").delete_scheduled_audit` method.
 
 Boto3 documentation:
 [IoT.Client.delete_scheduled_audit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_scheduled_audit)
+
+Arguments mapping described in
+[DeleteScheduledAuditRequestTypeDef](./type_defs.md#deletescheduledauditrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1345,10 +1676,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_security_profile
 
+Deletes a Device Defender security profile.
+
 Type annotations for `boto3.client("iot").delete_security_profile` method.
 
 Boto3 documentation:
 [IoT.Client.delete_security_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_security_profile)
+
+Arguments mapping described in
+[DeleteSecurityProfileRequestTypeDef](./type_defs.md#deletesecurityprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1359,10 +1695,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_stream
 
+Deletes a stream.
+
 Type annotations for `boto3.client("iot").delete_stream` method.
 
 Boto3 documentation:
 [IoT.Client.delete_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_stream)
+
+Arguments mapping described in
+[DeleteStreamRequestTypeDef](./type_defs.md#deletestreamrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1372,10 +1713,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_thing
 
+Deletes the specified thing.
+
 Type annotations for `boto3.client("iot").delete_thing` method.
 
 Boto3 documentation:
 [IoT.Client.delete_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_thing)
+
+Arguments mapping described in
+[DeleteThingRequestTypeDef](./type_defs.md#deletethingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1386,10 +1732,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_thing_group
 
+Deletes a thing group.
+
 Type annotations for `boto3.client("iot").delete_thing_group` method.
 
 Boto3 documentation:
 [IoT.Client.delete_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_thing_group)
+
+Arguments mapping described in
+[DeleteThingGroupRequestTypeDef](./type_defs.md#deletethinggrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -1400,10 +1751,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_thing_type
 
+Deletes the specified thing type.
+
 Type annotations for `boto3.client("iot").delete_thing_type` method.
 
 Boto3 documentation:
 [IoT.Client.delete_thing_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_thing_type)
+
+Arguments mapping described in
+[DeleteThingTypeRequestTypeDef](./type_defs.md#deletethingtyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -1413,10 +1769,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_topic_rule
 
+Deletes the rule.
+
 Type annotations for `boto3.client("iot").delete_topic_rule` method.
 
 Boto3 documentation:
 [IoT.Client.delete_topic_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_topic_rule)
+
+Arguments mapping described in
+[DeleteTopicRuleRequestTypeDef](./type_defs.md#deletetopicrulerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1424,11 +1785,16 @@ Keyword-only arguments:
 
 ### delete_topic_rule_destination
 
+Deletes a topic rule destination.
+
 Type annotations for `boto3.client("iot").delete_topic_rule_destination`
 method.
 
 Boto3 documentation:
 [IoT.Client.delete_topic_rule_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_topic_rule_destination)
+
+Arguments mapping described in
+[DeleteTopicRuleDestinationRequestTypeDef](./type_defs.md#deletetopicruledestinationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1438,10 +1804,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_v2_logging_level
 
+Deletes a logging level.
+
 Type annotations for `boto3.client("iot").delete_v2_logging_level` method.
 
 Boto3 documentation:
 [IoT.Client.delete_v2_logging_level](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_v2_logging_level)
+
+Arguments mapping described in
+[DeleteV2LoggingLevelRequestTypeDef](./type_defs.md#deletev2logginglevelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1451,10 +1822,15 @@ Keyword-only arguments:
 
 ### deprecate_thing_type
 
+Deprecates a thing type.
+
 Type annotations for `boto3.client("iot").deprecate_thing_type` method.
 
 Boto3 documentation:
 [IoT.Client.deprecate_thing_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.deprecate_thing_type)
+
+Arguments mapping described in
+[DeprecateThingTypeRequestTypeDef](./type_defs.md#deprecatethingtyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -1465,6 +1841,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_account_audit_configuration
 
+Gets information about the Device Defender audit settings for this account.
+
 Type annotations for `boto3.client("iot").describe_account_audit_configuration`
 method.
 
@@ -1472,23 +1850,31 @@ Boto3 documentation:
 [IoT.Client.describe_account_audit_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_account_audit_configuration)
 
 Returns
-[DescribeAccountAuditConfigurationResponseTypeDef](./type_defs.md#describeaccountauditconfigurationresponsetypedef).
+[DescribeAccountAuditConfigurationResponseResponseTypeDef](./type_defs.md#describeaccountauditconfigurationresponseresponsetypedef).
 
 ### describe_audit_finding
+
+Gets information about a single audit finding.
 
 Type annotations for `boto3.client("iot").describe_audit_finding` method.
 
 Boto3 documentation:
 [IoT.Client.describe_audit_finding](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_audit_finding)
 
+Arguments mapping described in
+[DescribeAuditFindingRequestTypeDef](./type_defs.md#describeauditfindingrequesttypedef).
+
 Keyword-only arguments:
 
 - `findingId`: `str` *(required)*
 
 Returns
-[DescribeAuditFindingResponseTypeDef](./type_defs.md#describeauditfindingresponsetypedef).
+[DescribeAuditFindingResponseResponseTypeDef](./type_defs.md#describeauditfindingresponseresponsetypedef).
 
 ### describe_audit_mitigation_actions_task
+
+Gets information about an audit mitigation task that is used to apply
+mitigation actions to a set of audit findings.
 
 Type annotations for
 `boto3.client("iot").describe_audit_mitigation_actions_task` method.
@@ -1496,19 +1882,27 @@ Type annotations for
 Boto3 documentation:
 [IoT.Client.describe_audit_mitigation_actions_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_audit_mitigation_actions_task)
 
+Arguments mapping described in
+[DescribeAuditMitigationActionsTaskRequestTypeDef](./type_defs.md#describeauditmitigationactionstaskrequesttypedef).
+
 Keyword-only arguments:
 
 - `taskId`: `str` *(required)*
 
 Returns
-[DescribeAuditMitigationActionsTaskResponseTypeDef](./type_defs.md#describeauditmitigationactionstaskresponsetypedef).
+[DescribeAuditMitigationActionsTaskResponseResponseTypeDef](./type_defs.md#describeauditmitigationactionstaskresponseresponsetypedef).
 
 ### describe_audit_suppression
+
+Gets information about a Device Defender audit suppression.
 
 Type annotations for `boto3.client("iot").describe_audit_suppression` method.
 
 Boto3 documentation:
 [IoT.Client.describe_audit_suppression](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_audit_suppression)
+
+Arguments mapping described in
+[DescribeAuditSuppressionRequestTypeDef](./type_defs.md#describeauditsuppressionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1518,93 +1912,125 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[DescribeAuditSuppressionResponseTypeDef](./type_defs.md#describeauditsuppressionresponsetypedef).
+[DescribeAuditSuppressionResponseResponseTypeDef](./type_defs.md#describeauditsuppressionresponseresponsetypedef).
 
 ### describe_audit_task
+
+Gets information about a Device Defender audit.
 
 Type annotations for `boto3.client("iot").describe_audit_task` method.
 
 Boto3 documentation:
 [IoT.Client.describe_audit_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_audit_task)
 
+Arguments mapping described in
+[DescribeAuditTaskRequestTypeDef](./type_defs.md#describeaudittaskrequesttypedef).
+
 Keyword-only arguments:
 
 - `taskId`: `str` *(required)*
 
 Returns
-[DescribeAuditTaskResponseTypeDef](./type_defs.md#describeaudittaskresponsetypedef).
+[DescribeAuditTaskResponseResponseTypeDef](./type_defs.md#describeaudittaskresponseresponsetypedef).
 
 ### describe_authorizer
+
+Describes an authorizer.
 
 Type annotations for `boto3.client("iot").describe_authorizer` method.
 
 Boto3 documentation:
 [IoT.Client.describe_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_authorizer)
 
+Arguments mapping described in
+[DescribeAuthorizerRequestTypeDef](./type_defs.md#describeauthorizerrequesttypedef).
+
 Keyword-only arguments:
 
 - `authorizerName`: `str` *(required)*
 
 Returns
-[DescribeAuthorizerResponseTypeDef](./type_defs.md#describeauthorizerresponsetypedef).
+[DescribeAuthorizerResponseResponseTypeDef](./type_defs.md#describeauthorizerresponseresponsetypedef).
 
 ### describe_billing_group
+
+Returns information about a billing group.
 
 Type annotations for `boto3.client("iot").describe_billing_group` method.
 
 Boto3 documentation:
 [IoT.Client.describe_billing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_billing_group)
 
+Arguments mapping described in
+[DescribeBillingGroupRequestTypeDef](./type_defs.md#describebillinggrouprequesttypedef).
+
 Keyword-only arguments:
 
 - `billingGroupName`: `str` *(required)*
 
 Returns
-[DescribeBillingGroupResponseTypeDef](./type_defs.md#describebillinggroupresponsetypedef).
+[DescribeBillingGroupResponseResponseTypeDef](./type_defs.md#describebillinggroupresponseresponsetypedef).
 
 ### describe_ca_certificate
+
+Describes a registered CA certificate.
 
 Type annotations for `boto3.client("iot").describe_ca_certificate` method.
 
 Boto3 documentation:
 [IoT.Client.describe_ca_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_ca_certificate)
 
+Arguments mapping described in
+[DescribeCACertificateRequestTypeDef](./type_defs.md#describecacertificaterequesttypedef).
+
 Keyword-only arguments:
 
 - `certificateId`: `str` *(required)*
 
 Returns
-[DescribeCACertificateResponseTypeDef](./type_defs.md#describecacertificateresponsetypedef).
+[DescribeCACertificateResponseResponseTypeDef](./type_defs.md#describecacertificateresponseresponsetypedef).
 
 ### describe_certificate
+
+Gets information about the specified certificate.
 
 Type annotations for `boto3.client("iot").describe_certificate` method.
 
 Boto3 documentation:
 [IoT.Client.describe_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_certificate)
 
+Arguments mapping described in
+[DescribeCertificateRequestTypeDef](./type_defs.md#describecertificaterequesttypedef).
+
 Keyword-only arguments:
 
 - `certificateId`: `str` *(required)*
 
 Returns
-[DescribeCertificateResponseTypeDef](./type_defs.md#describecertificateresponsetypedef).
+[DescribeCertificateResponseResponseTypeDef](./type_defs.md#describecertificateresponseresponsetypedef).
 
 ### describe_custom_metric
+
+Gets information about a Device Defender detect custom metric.
 
 Type annotations for `boto3.client("iot").describe_custom_metric` method.
 
 Boto3 documentation:
 [IoT.Client.describe_custom_metric](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_custom_metric)
 
+Arguments mapping described in
+[DescribeCustomMetricRequestTypeDef](./type_defs.md#describecustommetricrequesttypedef).
+
 Keyword-only arguments:
 
 - `metricName`: `str` *(required)*
 
 Returns
-[DescribeCustomMetricResponseTypeDef](./type_defs.md#describecustommetricresponsetypedef).
+[DescribeCustomMetricResponseResponseTypeDef](./type_defs.md#describecustommetricresponseresponsetypedef).
 
 ### describe_default_authorizer
+
+Describes the default authorizer.
 
 Type annotations for `boto3.client("iot").describe_default_authorizer` method.
 
@@ -1612,9 +2038,11 @@ Boto3 documentation:
 [IoT.Client.describe_default_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_default_authorizer)
 
 Returns
-[DescribeDefaultAuthorizerResponseTypeDef](./type_defs.md#describedefaultauthorizerresponsetypedef).
+[DescribeDefaultAuthorizerResponseResponseTypeDef](./type_defs.md#describedefaultauthorizerresponseresponsetypedef).
 
 ### describe_detect_mitigation_actions_task
+
+Gets information about a Device Defender ML Detect mitigation action.
 
 Type annotations for
 `boto3.client("iot").describe_detect_mitigation_actions_task` method.
@@ -1622,28 +2050,38 @@ Type annotations for
 Boto3 documentation:
 [IoT.Client.describe_detect_mitigation_actions_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_detect_mitigation_actions_task)
 
+Arguments mapping described in
+[DescribeDetectMitigationActionsTaskRequestTypeDef](./type_defs.md#describedetectmitigationactionstaskrequesttypedef).
+
 Keyword-only arguments:
 
 - `taskId`: `str` *(required)*
 
 Returns
-[DescribeDetectMitigationActionsTaskResponseTypeDef](./type_defs.md#describedetectmitigationactionstaskresponsetypedef).
+[DescribeDetectMitigationActionsTaskResponseResponseTypeDef](./type_defs.md#describedetectmitigationactionstaskresponseresponsetypedef).
 
 ### describe_dimension
+
+Provides details about a dimension that is defined in your AWS account.
 
 Type annotations for `boto3.client("iot").describe_dimension` method.
 
 Boto3 documentation:
 [IoT.Client.describe_dimension](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_dimension)
 
+Arguments mapping described in
+[DescribeDimensionRequestTypeDef](./type_defs.md#describedimensionrequesttypedef).
+
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
 Returns
-[DescribeDimensionResponseTypeDef](./type_defs.md#describedimensionresponsetypedef).
+[DescribeDimensionResponseResponseTypeDef](./type_defs.md#describedimensionresponseresponsetypedef).
 
 ### describe_domain_configuration
+
+Gets summary information about a domain configuration.
 
 Type annotations for `boto3.client("iot").describe_domain_configuration`
 method.
@@ -1651,28 +2089,38 @@ method.
 Boto3 documentation:
 [IoT.Client.describe_domain_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_domain_configuration)
 
+Arguments mapping described in
+[DescribeDomainConfigurationRequestTypeDef](./type_defs.md#describedomainconfigurationrequesttypedef).
+
 Keyword-only arguments:
 
 - `domainConfigurationName`: `str` *(required)*
 
 Returns
-[DescribeDomainConfigurationResponseTypeDef](./type_defs.md#describedomainconfigurationresponsetypedef).
+[DescribeDomainConfigurationResponseResponseTypeDef](./type_defs.md#describedomainconfigurationresponseresponsetypedef).
 
 ### describe_endpoint
+
+Returns a unique endpoint specific to the AWS account making the call.
 
 Type annotations for `boto3.client("iot").describe_endpoint` method.
 
 Boto3 documentation:
 [IoT.Client.describe_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_endpoint)
 
+Arguments mapping described in
+[DescribeEndpointRequestTypeDef](./type_defs.md#describeendpointrequesttypedef).
+
 Keyword-only arguments:
 
 - `endpointType`: `str`
 
 Returns
-[DescribeEndpointResponseTypeDef](./type_defs.md#describeendpointresponsetypedef).
+[DescribeEndpointResponseResponseTypeDef](./type_defs.md#describeendpointresponseresponsetypedef).
 
 ### describe_event_configurations
+
+Describes event configurations.
 
 Type annotations for `boto3.client("iot").describe_event_configurations`
 method.
@@ -1681,42 +2129,57 @@ Boto3 documentation:
 [IoT.Client.describe_event_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_event_configurations)
 
 Returns
-[DescribeEventConfigurationsResponseTypeDef](./type_defs.md#describeeventconfigurationsresponsetypedef).
+[DescribeEventConfigurationsResponseResponseTypeDef](./type_defs.md#describeeventconfigurationsresponseresponsetypedef).
 
 ### describe_index
+
+Describes a search index.
 
 Type annotations for `boto3.client("iot").describe_index` method.
 
 Boto3 documentation:
 [IoT.Client.describe_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_index)
 
+Arguments mapping described in
+[DescribeIndexRequestTypeDef](./type_defs.md#describeindexrequesttypedef).
+
 Keyword-only arguments:
 
 - `indexName`: `str` *(required)*
 
 Returns
-[DescribeIndexResponseTypeDef](./type_defs.md#describeindexresponsetypedef).
+[DescribeIndexResponseResponseTypeDef](./type_defs.md#describeindexresponseresponsetypedef).
 
 ### describe_job
+
+Describes a job.
 
 Type annotations for `boto3.client("iot").describe_job` method.
 
 Boto3 documentation:
 [IoT.Client.describe_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_job)
 
+Arguments mapping described in
+[DescribeJobRequestTypeDef](./type_defs.md#describejobrequesttypedef).
+
 Keyword-only arguments:
 
 - `jobId`: `str` *(required)*
 
 Returns
-[DescribeJobResponseTypeDef](./type_defs.md#describejobresponsetypedef).
+[DescribeJobResponseResponseTypeDef](./type_defs.md#describejobresponseresponsetypedef).
 
 ### describe_job_execution
+
+Describes a job execution.
 
 Type annotations for `boto3.client("iot").describe_job_execution` method.
 
 Boto3 documentation:
 [IoT.Client.describe_job_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_job_execution)
+
+Arguments mapping described in
+[DescribeJobExecutionRequestTypeDef](./type_defs.md#describejobexecutionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1725,37 +2188,49 @@ Keyword-only arguments:
 - `executionNumber`: `int`
 
 Returns
-[DescribeJobExecutionResponseTypeDef](./type_defs.md#describejobexecutionresponsetypedef).
+[DescribeJobExecutionResponseResponseTypeDef](./type_defs.md#describejobexecutionresponseresponsetypedef).
 
 ### describe_job_template
+
+Returns information about a job template.
 
 Type annotations for `boto3.client("iot").describe_job_template` method.
 
 Boto3 documentation:
 [IoT.Client.describe_job_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_job_template)
 
+Arguments mapping described in
+[DescribeJobTemplateRequestTypeDef](./type_defs.md#describejobtemplaterequesttypedef).
+
 Keyword-only arguments:
 
 - `jobTemplateId`: `str` *(required)*
 
 Returns
-[DescribeJobTemplateResponseTypeDef](./type_defs.md#describejobtemplateresponsetypedef).
+[DescribeJobTemplateResponseResponseTypeDef](./type_defs.md#describejobtemplateresponseresponsetypedef).
 
 ### describe_mitigation_action
+
+Gets information about a mitigation action.
 
 Type annotations for `boto3.client("iot").describe_mitigation_action` method.
 
 Boto3 documentation:
 [IoT.Client.describe_mitigation_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_mitigation_action)
 
+Arguments mapping described in
+[DescribeMitigationActionRequestTypeDef](./type_defs.md#describemitigationactionrequesttypedef).
+
 Keyword-only arguments:
 
 - `actionName`: `str` *(required)*
 
 Returns
-[DescribeMitigationActionResponseTypeDef](./type_defs.md#describemitigationactionresponsetypedef).
+[DescribeMitigationActionResponseResponseTypeDef](./type_defs.md#describemitigationactionresponseresponsetypedef).
 
 ### describe_provisioning_template
+
+Returns information about a fleet provisioning template.
 
 Type annotations for `boto3.client("iot").describe_provisioning_template`
 method.
@@ -1763,14 +2238,19 @@ method.
 Boto3 documentation:
 [IoT.Client.describe_provisioning_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_provisioning_template)
 
+Arguments mapping described in
+[DescribeProvisioningTemplateRequestTypeDef](./type_defs.md#describeprovisioningtemplaterequesttypedef).
+
 Keyword-only arguments:
 
 - `templateName`: `str` *(required)*
 
 Returns
-[DescribeProvisioningTemplateResponseTypeDef](./type_defs.md#describeprovisioningtemplateresponsetypedef).
+[DescribeProvisioningTemplateResponseResponseTypeDef](./type_defs.md#describeprovisioningtemplateresponseresponsetypedef).
 
 ### describe_provisioning_template_version
+
+Returns information about a fleet provisioning template version.
 
 Type annotations for
 `boto3.client("iot").describe_provisioning_template_version` method.
@@ -1778,99 +2258,134 @@ Type annotations for
 Boto3 documentation:
 [IoT.Client.describe_provisioning_template_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_provisioning_template_version)
 
+Arguments mapping described in
+[DescribeProvisioningTemplateVersionRequestTypeDef](./type_defs.md#describeprovisioningtemplateversionrequesttypedef).
+
 Keyword-only arguments:
 
 - `templateName`: `str` *(required)*
 - `versionId`: `int` *(required)*
 
 Returns
-[DescribeProvisioningTemplateVersionResponseTypeDef](./type_defs.md#describeprovisioningtemplateversionresponsetypedef).
+[DescribeProvisioningTemplateVersionResponseResponseTypeDef](./type_defs.md#describeprovisioningtemplateversionresponseresponsetypedef).
 
 ### describe_role_alias
+
+Describes a role alias.
 
 Type annotations for `boto3.client("iot").describe_role_alias` method.
 
 Boto3 documentation:
 [IoT.Client.describe_role_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_role_alias)
 
+Arguments mapping described in
+[DescribeRoleAliasRequestTypeDef](./type_defs.md#describerolealiasrequesttypedef).
+
 Keyword-only arguments:
 
 - `roleAlias`: `str` *(required)*
 
 Returns
-[DescribeRoleAliasResponseTypeDef](./type_defs.md#describerolealiasresponsetypedef).
+[DescribeRoleAliasResponseResponseTypeDef](./type_defs.md#describerolealiasresponseresponsetypedef).
 
 ### describe_scheduled_audit
+
+Gets information about a scheduled audit.
 
 Type annotations for `boto3.client("iot").describe_scheduled_audit` method.
 
 Boto3 documentation:
 [IoT.Client.describe_scheduled_audit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_scheduled_audit)
 
+Arguments mapping described in
+[DescribeScheduledAuditRequestTypeDef](./type_defs.md#describescheduledauditrequesttypedef).
+
 Keyword-only arguments:
 
 - `scheduledAuditName`: `str` *(required)*
 
 Returns
-[DescribeScheduledAuditResponseTypeDef](./type_defs.md#describescheduledauditresponsetypedef).
+[DescribeScheduledAuditResponseResponseTypeDef](./type_defs.md#describescheduledauditresponseresponsetypedef).
 
 ### describe_security_profile
+
+Gets information about a Device Defender security profile.
 
 Type annotations for `boto3.client("iot").describe_security_profile` method.
 
 Boto3 documentation:
 [IoT.Client.describe_security_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_security_profile)
 
+Arguments mapping described in
+[DescribeSecurityProfileRequestTypeDef](./type_defs.md#describesecurityprofilerequesttypedef).
+
 Keyword-only arguments:
 
 - `securityProfileName`: `str` *(required)*
 
 Returns
-[DescribeSecurityProfileResponseTypeDef](./type_defs.md#describesecurityprofileresponsetypedef).
+[DescribeSecurityProfileResponseResponseTypeDef](./type_defs.md#describesecurityprofileresponseresponsetypedef).
 
 ### describe_stream
+
+Gets information about a stream.
 
 Type annotations for `boto3.client("iot").describe_stream` method.
 
 Boto3 documentation:
 [IoT.Client.describe_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_stream)
 
+Arguments mapping described in
+[DescribeStreamRequestTypeDef](./type_defs.md#describestreamrequesttypedef).
+
 Keyword-only arguments:
 
 - `streamId`: `str` *(required)*
 
 Returns
-[DescribeStreamResponseTypeDef](./type_defs.md#describestreamresponsetypedef).
+[DescribeStreamResponseResponseTypeDef](./type_defs.md#describestreamresponseresponsetypedef).
 
 ### describe_thing
+
+Gets information about the specified thing.
 
 Type annotations for `boto3.client("iot").describe_thing` method.
 
 Boto3 documentation:
 [IoT.Client.describe_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_thing)
 
+Arguments mapping described in
+[DescribeThingRequestTypeDef](./type_defs.md#describethingrequesttypedef).
+
 Keyword-only arguments:
 
 - `thingName`: `str` *(required)*
 
 Returns
-[DescribeThingResponseTypeDef](./type_defs.md#describethingresponsetypedef).
+[DescribeThingResponseResponseTypeDef](./type_defs.md#describethingresponseresponsetypedef).
 
 ### describe_thing_group
+
+Describe a thing group.
 
 Type annotations for `boto3.client("iot").describe_thing_group` method.
 
 Boto3 documentation:
 [IoT.Client.describe_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_thing_group)
 
+Arguments mapping described in
+[DescribeThingGroupRequestTypeDef](./type_defs.md#describethinggrouprequesttypedef).
+
 Keyword-only arguments:
 
 - `thingGroupName`: `str` *(required)*
 
 Returns
-[DescribeThingGroupResponseTypeDef](./type_defs.md#describethinggroupresponsetypedef).
+[DescribeThingGroupResponseResponseTypeDef](./type_defs.md#describethinggroupresponseresponsetypedef).
 
 ### describe_thing_registration_task
+
+Describes a bulk thing provisioning task.
 
 Type annotations for `boto3.client("iot").describe_thing_registration_task`
 method.
@@ -1878,33 +2393,46 @@ method.
 Boto3 documentation:
 [IoT.Client.describe_thing_registration_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_thing_registration_task)
 
+Arguments mapping described in
+[DescribeThingRegistrationTaskRequestTypeDef](./type_defs.md#describethingregistrationtaskrequesttypedef).
+
 Keyword-only arguments:
 
 - `taskId`: `str` *(required)*
 
 Returns
-[DescribeThingRegistrationTaskResponseTypeDef](./type_defs.md#describethingregistrationtaskresponsetypedef).
+[DescribeThingRegistrationTaskResponseResponseTypeDef](./type_defs.md#describethingregistrationtaskresponseresponsetypedef).
 
 ### describe_thing_type
+
+Gets information about the specified thing type.
 
 Type annotations for `boto3.client("iot").describe_thing_type` method.
 
 Boto3 documentation:
 [IoT.Client.describe_thing_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_thing_type)
 
+Arguments mapping described in
+[DescribeThingTypeRequestTypeDef](./type_defs.md#describethingtyperequesttypedef).
+
 Keyword-only arguments:
 
 - `thingTypeName`: `str` *(required)*
 
 Returns
-[DescribeThingTypeResponseTypeDef](./type_defs.md#describethingtyperesponsetypedef).
+[DescribeThingTypeResponseResponseTypeDef](./type_defs.md#describethingtyperesponseresponsetypedef).
 
 ### detach_policy
+
+Detaches a policy from the specified target.
 
 Type annotations for `boto3.client("iot").detach_policy` method.
 
 Boto3 documentation:
 [IoT.Client.detach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.detach_policy)
+
+Arguments mapping described in
+[DetachPolicyRequestTypeDef](./type_defs.md#detachpolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1913,10 +2441,15 @@ Keyword-only arguments:
 
 ### detach_principal_policy
 
+Removes the specified policy from the specified certificate.
+
 Type annotations for `boto3.client("iot").detach_principal_policy` method.
 
 Boto3 documentation:
 [IoT.Client.detach_principal_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.detach_principal_policy)
+
+Arguments mapping described in
+[DetachPrincipalPolicyRequestTypeDef](./type_defs.md#detachprincipalpolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1925,10 +2458,16 @@ Keyword-only arguments:
 
 ### detach_security_profile
 
+Disassociates a Device Defender security profile from a thing group or from
+this account.
+
 Type annotations for `boto3.client("iot").detach_security_profile` method.
 
 Boto3 documentation:
 [IoT.Client.detach_security_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.detach_security_profile)
+
+Arguments mapping described in
+[DetachSecurityProfileRequestTypeDef](./type_defs.md#detachsecurityprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1939,10 +2478,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### detach_thing_principal
 
+Detaches the specified principal from the specified thing.
+
 Type annotations for `boto3.client("iot").detach_thing_principal` method.
 
 Boto3 documentation:
 [IoT.Client.detach_thing_principal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.detach_thing_principal)
+
+Arguments mapping described in
+[DetachThingPrincipalRequestTypeDef](./type_defs.md#detachthingprincipalrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1953,10 +2497,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### disable_topic_rule
 
+Disables the rule.
+
 Type annotations for `boto3.client("iot").disable_topic_rule` method.
 
 Boto3 documentation:
 [IoT.Client.disable_topic_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.disable_topic_rule)
+
+Arguments mapping described in
+[DisableTopicRuleRequestTypeDef](./type_defs.md#disabletopicrulerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1964,16 +2513,23 @@ Keyword-only arguments:
 
 ### enable_topic_rule
 
+Enables the rule.
+
 Type annotations for `boto3.client("iot").enable_topic_rule` method.
 
 Boto3 documentation:
 [IoT.Client.enable_topic_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.enable_topic_rule)
+
+Arguments mapping described in
+[EnableTopicRuleRequestTypeDef](./type_defs.md#enabletopicrulerequesttypedef).
 
 Keyword-only arguments:
 
 - `ruleName`: `str` *(required)*
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("iot").generate_presigned_url` method.
 
@@ -1991,11 +2547,16 @@ Returns `str`.
 
 ### get_behavior_model_training_summaries
 
+Returns a Device Defender's ML Detect Security Profile training model's status.
+
 Type annotations for
 `boto3.client("iot").get_behavior_model_training_summaries` method.
 
 Boto3 documentation:
 [IoT.Client.get_behavior_model_training_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_behavior_model_training_summaries)
+
+Arguments mapping described in
+[GetBehaviorModelTrainingSummariesRequestTypeDef](./type_defs.md#getbehaviormodeltrainingsummariesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2004,14 +2565,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[GetBehaviorModelTrainingSummariesResponseTypeDef](./type_defs.md#getbehaviormodeltrainingsummariesresponsetypedef).
+[GetBehaviorModelTrainingSummariesResponseResponseTypeDef](./type_defs.md#getbehaviormodeltrainingsummariesresponseresponsetypedef).
 
 ### get_cardinality
+
+Returns the approximate count of unique values that match the query.
 
 Type annotations for `boto3.client("iot").get_cardinality` method.
 
 Boto3 documentation:
 [IoT.Client.get_cardinality](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_cardinality)
+
+Arguments mapping described in
+[GetCardinalityRequestTypeDef](./type_defs.md#getcardinalityrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2021,14 +2587,20 @@ Keyword-only arguments:
 - `queryVersion`: `str`
 
 Returns
-[GetCardinalityResponseTypeDef](./type_defs.md#getcardinalityresponsetypedef).
+[GetCardinalityResponseResponseTypeDef](./type_defs.md#getcardinalityresponseresponsetypedef).
 
 ### get_effective_policies
+
+Gets a list of the policies that have an effect on the authorization behavior
+of the specified device when it connects to the AWS IoT device gateway.
 
 Type annotations for `boto3.client("iot").get_effective_policies` method.
 
 Boto3 documentation:
 [IoT.Client.get_effective_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_effective_policies)
+
+Arguments mapping described in
+[GetEffectivePoliciesRequestTypeDef](./type_defs.md#geteffectivepoliciesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2037,9 +2609,11 @@ Keyword-only arguments:
 - `thingName`: `str`
 
 Returns
-[GetEffectivePoliciesResponseTypeDef](./type_defs.md#geteffectivepoliciesresponsetypedef).
+[GetEffectivePoliciesResponseResponseTypeDef](./type_defs.md#geteffectivepoliciesresponseresponsetypedef).
 
 ### get_indexing_configuration
+
+Gets the indexing configuration.
 
 Type annotations for `boto3.client("iot").get_indexing_configuration` method.
 
@@ -2047,23 +2621,30 @@ Boto3 documentation:
 [IoT.Client.get_indexing_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_indexing_configuration)
 
 Returns
-[GetIndexingConfigurationResponseTypeDef](./type_defs.md#getindexingconfigurationresponsetypedef).
+[GetIndexingConfigurationResponseResponseTypeDef](./type_defs.md#getindexingconfigurationresponseresponsetypedef).
 
 ### get_job_document
+
+Gets a job document.
 
 Type annotations for `boto3.client("iot").get_job_document` method.
 
 Boto3 documentation:
 [IoT.Client.get_job_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_job_document)
 
+Arguments mapping described in
+[GetJobDocumentRequestTypeDef](./type_defs.md#getjobdocumentrequesttypedef).
+
 Keyword-only arguments:
 
 - `jobId`: `str` *(required)*
 
 Returns
-[GetJobDocumentResponseTypeDef](./type_defs.md#getjobdocumentresponsetypedef).
+[GetJobDocumentResponseResponseTypeDef](./type_defs.md#getjobdocumentresponseresponsetypedef).
 
 ### get_logging_options
+
+Gets the logging options.
 
 Type annotations for `boto3.client("iot").get_logging_options` method.
 
@@ -2071,28 +2652,38 @@ Boto3 documentation:
 [IoT.Client.get_logging_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_logging_options)
 
 Returns
-[GetLoggingOptionsResponseTypeDef](./type_defs.md#getloggingoptionsresponsetypedef).
+[GetLoggingOptionsResponseResponseTypeDef](./type_defs.md#getloggingoptionsresponseresponsetypedef).
 
 ### get_ota_update
+
+Gets an OTA update.
 
 Type annotations for `boto3.client("iot").get_ota_update` method.
 
 Boto3 documentation:
 [IoT.Client.get_ota_update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_ota_update)
 
+Arguments mapping described in
+[GetOTAUpdateRequestTypeDef](./type_defs.md#getotaupdaterequesttypedef).
+
 Keyword-only arguments:
 
 - `otaUpdateId`: `str` *(required)*
 
 Returns
-[GetOTAUpdateResponseTypeDef](./type_defs.md#getotaupdateresponsetypedef).
+[GetOTAUpdateResponseResponseTypeDef](./type_defs.md#getotaupdateresponseresponsetypedef).
 
 ### get_percentiles
+
+Groups the aggregated values that match the query into percentile groupings.
 
 Type annotations for `boto3.client("iot").get_percentiles` method.
 
 Boto3 documentation:
 [IoT.Client.get_percentiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_percentiles)
+
+Arguments mapping described in
+[GetPercentilesRequestTypeDef](./type_defs.md#getpercentilesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2103,27 +2694,39 @@ Keyword-only arguments:
 - `percents`: `List`\[`float`\]
 
 Returns
-[GetPercentilesResponseTypeDef](./type_defs.md#getpercentilesresponsetypedef).
+[GetPercentilesResponseResponseTypeDef](./type_defs.md#getpercentilesresponseresponsetypedef).
 
 ### get_policy
+
+Gets information about the specified policy with the policy document of the
+default version.
 
 Type annotations for `boto3.client("iot").get_policy` method.
 
 Boto3 documentation:
 [IoT.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_policy)
 
+Arguments mapping described in
+[GetPolicyRequestTypeDef](./type_defs.md#getpolicyrequesttypedef).
+
 Keyword-only arguments:
 
 - `policyName`: `str` *(required)*
 
-Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
+Returns
+[GetPolicyResponseResponseTypeDef](./type_defs.md#getpolicyresponseresponsetypedef).
 
 ### get_policy_version
+
+Gets information about the specified policy version.
 
 Type annotations for `boto3.client("iot").get_policy_version` method.
 
 Boto3 documentation:
 [IoT.Client.get_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_policy_version)
+
+Arguments mapping described in
+[GetPolicyVersionRequestTypeDef](./type_defs.md#getpolicyversionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2131,9 +2734,11 @@ Keyword-only arguments:
 - `policyVersionId`: `str` *(required)*
 
 Returns
-[GetPolicyVersionResponseTypeDef](./type_defs.md#getpolicyversionresponsetypedef).
+[GetPolicyVersionResponseResponseTypeDef](./type_defs.md#getpolicyversionresponseresponsetypedef).
 
 ### get_registration_code
+
+Gets a registration code used to register a CA certificate with AWS IoT.
 
 Type annotations for `boto3.client("iot").get_registration_code` method.
 
@@ -2141,14 +2746,20 @@ Boto3 documentation:
 [IoT.Client.get_registration_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_registration_code)
 
 Returns
-[GetRegistrationCodeResponseTypeDef](./type_defs.md#getregistrationcoderesponsetypedef).
+[GetRegistrationCodeResponseResponseTypeDef](./type_defs.md#getregistrationcoderesponseresponsetypedef).
 
 ### get_statistics
+
+Returns the count, average, sum, minimum, maximum, sum of squares, variance,
+and standard deviation for the specified aggregated field.
 
 Type annotations for `boto3.client("iot").get_statistics` method.
 
 Boto3 documentation:
 [IoT.Client.get_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_statistics)
+
+Arguments mapping described in
+[GetStatisticsRequestTypeDef](./type_defs.md#getstatisticsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2158,37 +2769,49 @@ Keyword-only arguments:
 - `queryVersion`: `str`
 
 Returns
-[GetStatisticsResponseTypeDef](./type_defs.md#getstatisticsresponsetypedef).
+[GetStatisticsResponseResponseTypeDef](./type_defs.md#getstatisticsresponseresponsetypedef).
 
 ### get_topic_rule
+
+.
 
 Type annotations for `boto3.client("iot").get_topic_rule` method.
 
 Boto3 documentation:
 [IoT.Client.get_topic_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_topic_rule)
 
+Arguments mapping described in
+[GetTopicRuleRequestTypeDef](./type_defs.md#gettopicrulerequesttypedef).
+
 Keyword-only arguments:
 
 - `ruleName`: `str` *(required)*
 
 Returns
-[GetTopicRuleResponseTypeDef](./type_defs.md#gettopicruleresponsetypedef).
+[GetTopicRuleResponseResponseTypeDef](./type_defs.md#gettopicruleresponseresponsetypedef).
 
 ### get_topic_rule_destination
+
+Gets information about a topic rule destination.
 
 Type annotations for `boto3.client("iot").get_topic_rule_destination` method.
 
 Boto3 documentation:
 [IoT.Client.get_topic_rule_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_topic_rule_destination)
 
+Arguments mapping described in
+[GetTopicRuleDestinationRequestTypeDef](./type_defs.md#gettopicruledestinationrequesttypedef).
+
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
 Returns
-[GetTopicRuleDestinationResponseTypeDef](./type_defs.md#gettopicruledestinationresponsetypedef).
+[GetTopicRuleDestinationResponseResponseTypeDef](./type_defs.md#gettopicruledestinationresponseresponsetypedef).
 
 ### get_v2_logging_options
+
+Gets the fine grained logging options.
 
 Type annotations for `boto3.client("iot").get_v2_logging_options` method.
 
@@ -2196,14 +2819,19 @@ Boto3 documentation:
 [IoT.Client.get_v2_logging_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_v2_logging_options)
 
 Returns
-[GetV2LoggingOptionsResponseTypeDef](./type_defs.md#getv2loggingoptionsresponsetypedef).
+[GetV2LoggingOptionsResponseResponseTypeDef](./type_defs.md#getv2loggingoptionsresponseresponsetypedef).
 
 ### list_active_violations
+
+Lists the active violations for a given Device Defender security profile.
 
 Type annotations for `boto3.client("iot").list_active_violations` method.
 
 Boto3 documentation:
 [IoT.Client.list_active_violations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_active_violations)
+
+Arguments mapping described in
+[ListActiveViolationsRequestTypeDef](./type_defs.md#listactiveviolationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2216,14 +2844,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListActiveViolationsResponseTypeDef](./type_defs.md#listactiveviolationsresponsetypedef).
+[ListActiveViolationsResponseResponseTypeDef](./type_defs.md#listactiveviolationsresponseresponsetypedef).
 
 ### list_attached_policies
+
+Lists the policies attached to the specified thing group.
 
 Type annotations for `boto3.client("iot").list_attached_policies` method.
 
 Boto3 documentation:
 [IoT.Client.list_attached_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_attached_policies)
+
+Arguments mapping described in
+[ListAttachedPoliciesRequestTypeDef](./type_defs.md#listattachedpoliciesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2233,14 +2866,20 @@ Keyword-only arguments:
 - `pageSize`: `int`
 
 Returns
-[ListAttachedPoliciesResponseTypeDef](./type_defs.md#listattachedpoliciesresponsetypedef).
+[ListAttachedPoliciesResponseResponseTypeDef](./type_defs.md#listattachedpoliciesresponseresponsetypedef).
 
 ### list_audit_findings
+
+Lists the findings (results) of a Device Defender audit or of the audits
+performed during a specified time period.
 
 Type annotations for `boto3.client("iot").list_audit_findings` method.
 
 Boto3 documentation:
 [IoT.Client.list_audit_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_findings)
+
+Arguments mapping described in
+[ListAuditFindingsRequestTypeDef](./type_defs.md#listauditfindingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2250,20 +2889,25 @@ Keyword-only arguments:
   [ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)
 - `maxResults`: `int`
 - `nextToken`: `str`
-- `startTime`: `datetime`
-- `endTime`: `datetime`
+- `startTime`: `Union`\[`datetime`, `str`\]
+- `endTime`: `Union`\[`datetime`, `str`\]
 - `listSuppressedFindings`: `bool`
 
 Returns
-[ListAuditFindingsResponseTypeDef](./type_defs.md#listauditfindingsresponsetypedef).
+[ListAuditFindingsResponseResponseTypeDef](./type_defs.md#listauditfindingsresponseresponsetypedef).
 
 ### list_audit_mitigation_actions_executions
+
+Gets the status of audit mitigation action tasks that were executed.
 
 Type annotations for
 `boto3.client("iot").list_audit_mitigation_actions_executions` method.
 
 Boto3 documentation:
 [IoT.Client.list_audit_mitigation_actions_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_mitigation_actions_executions)
+
+Arguments mapping described in
+[ListAuditMitigationActionsExecutionsRequestTypeDef](./type_defs.md#listauditmitigationactionsexecutionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2275,9 +2919,11 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListAuditMitigationActionsExecutionsResponseTypeDef](./type_defs.md#listauditmitigationactionsexecutionsresponsetypedef).
+[ListAuditMitigationActionsExecutionsResponseResponseTypeDef](./type_defs.md#listauditmitigationactionsexecutionsresponseresponsetypedef).
 
 ### list_audit_mitigation_actions_tasks
+
+Gets a list of audit mitigation action tasks that match the specified filters.
 
 Type annotations for `boto3.client("iot").list_audit_mitigation_actions_tasks`
 method.
@@ -2285,10 +2931,13 @@ method.
 Boto3 documentation:
 [IoT.Client.list_audit_mitigation_actions_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_mitigation_actions_tasks)
 
+Arguments mapping described in
+[ListAuditMitigationActionsTasksRequestTypeDef](./type_defs.md#listauditmitigationactionstasksrequesttypedef).
+
 Keyword-only arguments:
 
-- `startTime`: `datetime` *(required)*
-- `endTime`: `datetime` *(required)*
+- `startTime`: `Union`\[`datetime`, `str`\] *(required)*
+- `endTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `auditTaskId`: `str`
 - `findingId`: `str`
 - `taskStatus`:
@@ -2297,14 +2946,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListAuditMitigationActionsTasksResponseTypeDef](./type_defs.md#listauditmitigationactionstasksresponsetypedef).
+[ListAuditMitigationActionsTasksResponseResponseTypeDef](./type_defs.md#listauditmitigationactionstasksresponseresponsetypedef).
 
 ### list_audit_suppressions
+
+Lists your Device Defender audit listings.
 
 Type annotations for `boto3.client("iot").list_audit_suppressions` method.
 
 Boto3 documentation:
 [IoT.Client.list_audit_suppressions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_suppressions)
+
+Arguments mapping described in
+[ListAuditSuppressionsRequestTypeDef](./type_defs.md#listauditsuppressionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2316,33 +2970,44 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAuditSuppressionsResponseTypeDef](./type_defs.md#listauditsuppressionsresponsetypedef).
+[ListAuditSuppressionsResponseResponseTypeDef](./type_defs.md#listauditsuppressionsresponseresponsetypedef).
 
 ### list_audit_tasks
+
+Lists the Device Defender audits that have been performed during a given time
+period.
 
 Type annotations for `boto3.client("iot").list_audit_tasks` method.
 
 Boto3 documentation:
 [IoT.Client.list_audit_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_tasks)
 
+Arguments mapping described in
+[ListAuditTasksRequestTypeDef](./type_defs.md#listaudittasksrequesttypedef).
+
 Keyword-only arguments:
 
-- `startTime`: `datetime` *(required)*
-- `endTime`: `datetime` *(required)*
+- `startTime`: `Union`\[`datetime`, `str`\] *(required)*
+- `endTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `taskType`: [AuditTaskTypeType](./literals.md#audittasktypetype)
 - `taskStatus`: [AuditTaskStatusType](./literals.md#audittaskstatustype)
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[ListAuditTasksResponseTypeDef](./type_defs.md#listaudittasksresponsetypedef).
+[ListAuditTasksResponseResponseTypeDef](./type_defs.md#listaudittasksresponseresponsetypedef).
 
 ### list_authorizers
+
+Lists the authorizers registered in your account.
 
 Type annotations for `boto3.client("iot").list_authorizers` method.
 
 Boto3 documentation:
 [IoT.Client.list_authorizers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_authorizers)
+
+Arguments mapping described in
+[ListAuthorizersRequestTypeDef](./type_defs.md#listauthorizersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2352,14 +3017,19 @@ Keyword-only arguments:
 - `status`: [AuthorizerStatusType](./literals.md#authorizerstatustype)
 
 Returns
-[ListAuthorizersResponseTypeDef](./type_defs.md#listauthorizersresponsetypedef).
+[ListAuthorizersResponseResponseTypeDef](./type_defs.md#listauthorizersresponseresponsetypedef).
 
 ### list_billing_groups
+
+Lists the billing groups you have created.
 
 Type annotations for `boto3.client("iot").list_billing_groups` method.
 
 Boto3 documentation:
 [IoT.Client.list_billing_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_billing_groups)
+
+Arguments mapping described in
+[ListBillingGroupsRequestTypeDef](./type_defs.md#listbillinggroupsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2368,15 +3038,20 @@ Keyword-only arguments:
 - `namePrefixFilter`: `str`
 
 Returns
-[ListBillingGroupsResponseTypeDef](./type_defs.md#listbillinggroupsresponsetypedef).
+[ListBillingGroupsResponseResponseTypeDef](./type_defs.md#listbillinggroupsresponseresponsetypedef).
 
 ### list_ca_certificates
+
+Lists the CA certificates registered for your AWS account.
 
 Type annotations for `boto3.client("iot").list_ca_certificates` method.
 
 Boto3 documentation:
 [IoT.Client.list_ca_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_ca_certificates)
 
+Arguments mapping described in
+[ListCACertificatesRequestTypeDef](./type_defs.md#listcacertificatesrequesttypedef).
+
 Keyword-only arguments:
 
 - `pageSize`: `int`
@@ -2384,15 +3059,20 @@ Keyword-only arguments:
 - `ascendingOrder`: `bool`
 
 Returns
-[ListCACertificatesResponseTypeDef](./type_defs.md#listcacertificatesresponsetypedef).
+[ListCACertificatesResponseResponseTypeDef](./type_defs.md#listcacertificatesresponseresponsetypedef).
 
 ### list_certificates
+
+Lists the certificates registered in your AWS account.
 
 Type annotations for `boto3.client("iot").list_certificates` method.
 
 Boto3 documentation:
 [IoT.Client.list_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_certificates)
 
+Arguments mapping described in
+[ListCertificatesRequestTypeDef](./type_defs.md#listcertificatesrequesttypedef).
+
 Keyword-only arguments:
 
 - `pageSize`: `int`
@@ -2400,14 +3080,19 @@ Keyword-only arguments:
 - `ascendingOrder`: `bool`
 
 Returns
-[ListCertificatesResponseTypeDef](./type_defs.md#listcertificatesresponsetypedef).
+[ListCertificatesResponseResponseTypeDef](./type_defs.md#listcertificatesresponseresponsetypedef).
 
 ### list_certificates_by_ca
+
+List the device certificates signed by the specified CA certificate.
 
 Type annotations for `boto3.client("iot").list_certificates_by_ca` method.
 
 Boto3 documentation:
 [IoT.Client.list_certificates_by_ca](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_certificates_by_ca)
+
+Arguments mapping described in
+[ListCertificatesByCARequestTypeDef](./type_defs.md#listcertificatesbycarequesttypedef).
 
 Keyword-only arguments:
 
@@ -2417,14 +3102,19 @@ Keyword-only arguments:
 - `ascendingOrder`: `bool`
 
 Returns
-[ListCertificatesByCAResponseTypeDef](./type_defs.md#listcertificatesbycaresponsetypedef).
+[ListCertificatesByCAResponseResponseTypeDef](./type_defs.md#listcertificatesbycaresponseresponsetypedef).
 
 ### list_custom_metrics
+
+Lists your Device Defender detect custom metrics.
 
 Type annotations for `boto3.client("iot").list_custom_metrics` method.
 
 Boto3 documentation:
 [IoT.Client.list_custom_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_custom_metrics)
+
+Arguments mapping described in
+[ListCustomMetricsRequestTypeDef](./type_defs.md#listcustommetricsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2432,9 +3122,12 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListCustomMetricsResponseTypeDef](./type_defs.md#listcustommetricsresponsetypedef).
+[ListCustomMetricsResponseResponseTypeDef](./type_defs.md#listcustommetricsresponseresponsetypedef).
 
 ### list_detect_mitigation_actions_executions
+
+Lists mitigation actions executions for a Device Defender ML Detect Security
+Profile.
 
 Type annotations for
 `boto3.client("iot").list_detect_mitigation_actions_executions` method.
@@ -2442,20 +3135,25 @@ Type annotations for
 Boto3 documentation:
 [IoT.Client.list_detect_mitigation_actions_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_detect_mitigation_actions_executions)
 
+Arguments mapping described in
+[ListDetectMitigationActionsExecutionsRequestTypeDef](./type_defs.md#listdetectmitigationactionsexecutionsrequesttypedef).
+
 Keyword-only arguments:
 
 - `taskId`: `str`
 - `violationId`: `str`
 - `thingName`: `str`
-- `startTime`: `datetime`
-- `endTime`: `datetime`
+- `startTime`: `Union`\[`datetime`, `str`\]
+- `endTime`: `Union`\[`datetime`, `str`\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListDetectMitigationActionsExecutionsResponseTypeDef](./type_defs.md#listdetectmitigationactionsexecutionsresponsetypedef).
+[ListDetectMitigationActionsExecutionsResponseResponseTypeDef](./type_defs.md#listdetectmitigationactionsexecutionsresponseresponsetypedef).
 
 ### list_detect_mitigation_actions_tasks
+
+List of Device Defender ML Detect mitigation actions tasks.
 
 Type annotations for `boto3.client("iot").list_detect_mitigation_actions_tasks`
 method.
@@ -2463,37 +3161,50 @@ method.
 Boto3 documentation:
 [IoT.Client.list_detect_mitigation_actions_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_detect_mitigation_actions_tasks)
 
+Arguments mapping described in
+[ListDetectMitigationActionsTasksRequestTypeDef](./type_defs.md#listdetectmitigationactionstasksrequesttypedef).
+
 Keyword-only arguments:
 
-- `startTime`: `datetime` *(required)*
-- `endTime`: `datetime` *(required)*
+- `startTime`: `Union`\[`datetime`, `str`\] *(required)*
+- `endTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
-[ListDetectMitigationActionsTasksResponseTypeDef](./type_defs.md#listdetectmitigationactionstasksresponsetypedef).
+[ListDetectMitigationActionsTasksResponseResponseTypeDef](./type_defs.md#listdetectmitigationactionstasksresponseresponsetypedef).
 
 ### list_dimensions
+
+List the set of dimensions that are defined for your AWS account.
 
 Type annotations for `boto3.client("iot").list_dimensions` method.
 
 Boto3 documentation:
 [IoT.Client.list_dimensions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_dimensions)
 
+Arguments mapping described in
+[ListDimensionsRequestTypeDef](./type_defs.md#listdimensionsrequesttypedef).
+
 Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
-[ListDimensionsResponseTypeDef](./type_defs.md#listdimensionsresponsetypedef).
+[ListDimensionsResponseResponseTypeDef](./type_defs.md#listdimensionsresponseresponsetypedef).
 
 ### list_domain_configurations
+
+Gets a list of domain configurations for the user.
 
 Type annotations for `boto3.client("iot").list_domain_configurations` method.
 
 Boto3 documentation:
 [IoT.Client.list_domain_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_domain_configurations)
+
+Arguments mapping described in
+[ListDomainConfigurationsRequestTypeDef](./type_defs.md#listdomainconfigurationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2502,14 +3213,19 @@ Keyword-only arguments:
 - `serviceType`: [ServiceTypeType](./literals.md#servicetypetype)
 
 Returns
-[ListDomainConfigurationsResponseTypeDef](./type_defs.md#listdomainconfigurationsresponsetypedef).
+[ListDomainConfigurationsResponseResponseTypeDef](./type_defs.md#listdomainconfigurationsresponseresponsetypedef).
 
 ### list_indices
+
+Lists the search indices.
 
 Type annotations for `boto3.client("iot").list_indices` method.
 
 Boto3 documentation:
 [IoT.Client.list_indices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_indices)
+
+Arguments mapping described in
+[ListIndicesRequestTypeDef](./type_defs.md#listindicesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2517,14 +3233,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListIndicesResponseTypeDef](./type_defs.md#listindicesresponsetypedef).
+[ListIndicesResponseResponseTypeDef](./type_defs.md#listindicesresponseresponsetypedef).
 
 ### list_job_executions_for_job
+
+Lists the job executions for a job.
 
 Type annotations for `boto3.client("iot").list_job_executions_for_job` method.
 
 Boto3 documentation:
 [IoT.Client.list_job_executions_for_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_job_executions_for_job)
+
+Arguments mapping described in
+[ListJobExecutionsForJobRequestTypeDef](./type_defs.md#listjobexecutionsforjobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2534,15 +3255,20 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListJobExecutionsForJobResponseTypeDef](./type_defs.md#listjobexecutionsforjobresponsetypedef).
+[ListJobExecutionsForJobResponseResponseTypeDef](./type_defs.md#listjobexecutionsforjobresponseresponsetypedef).
 
 ### list_job_executions_for_thing
+
+Lists the job executions for the specified thing.
 
 Type annotations for `boto3.client("iot").list_job_executions_for_thing`
 method.
 
 Boto3 documentation:
 [IoT.Client.list_job_executions_for_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_job_executions_for_thing)
+
+Arguments mapping described in
+[ListJobExecutionsForThingRequestTypeDef](./type_defs.md#listjobexecutionsforthingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2553,14 +3279,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListJobExecutionsForThingResponseTypeDef](./type_defs.md#listjobexecutionsforthingresponsetypedef).
+[ListJobExecutionsForThingResponseResponseTypeDef](./type_defs.md#listjobexecutionsforthingresponseresponsetypedef).
 
 ### list_job_templates
+
+Returns a list of job templates.
 
 Type annotations for `boto3.client("iot").list_job_templates` method.
 
 Boto3 documentation:
 [IoT.Client.list_job_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_job_templates)
+
+Arguments mapping described in
+[ListJobTemplatesRequestTypeDef](./type_defs.md#listjobtemplatesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2568,14 +3299,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListJobTemplatesResponseTypeDef](./type_defs.md#listjobtemplatesresponsetypedef).
+[ListJobTemplatesResponseResponseTypeDef](./type_defs.md#listjobtemplatesresponseresponsetypedef).
 
 ### list_jobs
+
+Lists jobs.
 
 Type annotations for `boto3.client("iot").list_jobs` method.
 
 Boto3 documentation:
 [IoT.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_jobs)
+
+Arguments mapping described in
+[ListJobsRequestTypeDef](./type_defs.md#listjobsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2587,14 +3323,20 @@ Keyword-only arguments:
 - `thingGroupId`: `str`
 - `namespaceId`: `str`
 
-Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
+Returns
+[ListJobsResponseResponseTypeDef](./type_defs.md#listjobsresponseresponsetypedef).
 
 ### list_mitigation_actions
+
+Gets a list of all mitigation actions that match the specified filter criteria.
 
 Type annotations for `boto3.client("iot").list_mitigation_actions` method.
 
 Boto3 documentation:
 [IoT.Client.list_mitigation_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_mitigation_actions)
+
+Arguments mapping described in
+[ListMitigationActionsRequestTypeDef](./type_defs.md#listmitigationactionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2604,14 +3346,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListMitigationActionsResponseTypeDef](./type_defs.md#listmitigationactionsresponsetypedef).
+[ListMitigationActionsResponseResponseTypeDef](./type_defs.md#listmitigationactionsresponseresponsetypedef).
 
 ### list_ota_updates
+
+Lists OTA updates.
 
 Type annotations for `boto3.client("iot").list_ota_updates` method.
 
 Boto3 documentation:
 [IoT.Client.list_ota_updates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_ota_updates)
+
+Arguments mapping described in
+[ListOTAUpdatesRequestTypeDef](./type_defs.md#listotaupdatesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2620,15 +3367,20 @@ Keyword-only arguments:
 - `otaUpdateStatus`: [OTAUpdateStatusType](./literals.md#otaupdatestatustype)
 
 Returns
-[ListOTAUpdatesResponseTypeDef](./type_defs.md#listotaupdatesresponsetypedef).
+[ListOTAUpdatesResponseResponseTypeDef](./type_defs.md#listotaupdatesresponseresponsetypedef).
 
 ### list_outgoing_certificates
+
+Lists certificates that are being transferred but not yet accepted.
 
 Type annotations for `boto3.client("iot").list_outgoing_certificates` method.
 
 Boto3 documentation:
 [IoT.Client.list_outgoing_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_outgoing_certificates)
 
+Arguments mapping described in
+[ListOutgoingCertificatesRequestTypeDef](./type_defs.md#listoutgoingcertificatesrequesttypedef).
+
 Keyword-only arguments:
 
 - `pageSize`: `int`
@@ -2636,15 +3388,20 @@ Keyword-only arguments:
 - `ascendingOrder`: `bool`
 
 Returns
-[ListOutgoingCertificatesResponseTypeDef](./type_defs.md#listoutgoingcertificatesresponsetypedef).
+[ListOutgoingCertificatesResponseResponseTypeDef](./type_defs.md#listoutgoingcertificatesresponseresponsetypedef).
 
 ### list_policies
+
+Lists your policies.
 
 Type annotations for `boto3.client("iot").list_policies` method.
 
 Boto3 documentation:
 [IoT.Client.list_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_policies)
 
+Arguments mapping described in
+[ListPoliciesRequestTypeDef](./type_defs.md#listpoliciesrequesttypedef).
+
 Keyword-only arguments:
 
 - `marker`: `str`
@@ -2652,15 +3409,20 @@ Keyword-only arguments:
 - `ascendingOrder`: `bool`
 
 Returns
-[ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef).
+[ListPoliciesResponseResponseTypeDef](./type_defs.md#listpoliciesresponseresponsetypedef).
 
 ### list_policy_principals
+
+Lists the principals associated with the specified policy.
 
 Type annotations for `boto3.client("iot").list_policy_principals` method.
 
 Boto3 documentation:
 [IoT.Client.list_policy_principals](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_policy_principals)
 
+Arguments mapping described in
+[ListPolicyPrincipalsRequestTypeDef](./type_defs.md#listpolicyprincipalsrequesttypedef).
+
 Keyword-only arguments:
 
 - `policyName`: `str` *(required)*
@@ -2669,28 +3431,38 @@ Keyword-only arguments:
 - `ascendingOrder`: `bool`
 
 Returns
-[ListPolicyPrincipalsResponseTypeDef](./type_defs.md#listpolicyprincipalsresponsetypedef).
+[ListPolicyPrincipalsResponseResponseTypeDef](./type_defs.md#listpolicyprincipalsresponseresponsetypedef).
 
 ### list_policy_versions
+
+Lists the versions of the specified policy and identifies the default version.
 
 Type annotations for `boto3.client("iot").list_policy_versions` method.
 
 Boto3 documentation:
 [IoT.Client.list_policy_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_policy_versions)
 
+Arguments mapping described in
+[ListPolicyVersionsRequestTypeDef](./type_defs.md#listpolicyversionsrequesttypedef).
+
 Keyword-only arguments:
 
 - `policyName`: `str` *(required)*
 
 Returns
-[ListPolicyVersionsResponseTypeDef](./type_defs.md#listpolicyversionsresponsetypedef).
+[ListPolicyVersionsResponseResponseTypeDef](./type_defs.md#listpolicyversionsresponseresponsetypedef).
 
 ### list_principal_policies
+
+Lists the policies attached to the specified principal.
 
 Type annotations for `boto3.client("iot").list_principal_policies` method.
 
 Boto3 documentation:
 [IoT.Client.list_principal_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_principal_policies)
+
+Arguments mapping described in
+[ListPrincipalPoliciesRequestTypeDef](./type_defs.md#listprincipalpoliciesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2700,14 +3472,19 @@ Keyword-only arguments:
 - `ascendingOrder`: `bool`
 
 Returns
-[ListPrincipalPoliciesResponseTypeDef](./type_defs.md#listprincipalpoliciesresponsetypedef).
+[ListPrincipalPoliciesResponseResponseTypeDef](./type_defs.md#listprincipalpoliciesresponseresponsetypedef).
 
 ### list_principal_things
+
+Lists the things associated with the specified principal.
 
 Type annotations for `boto3.client("iot").list_principal_things` method.
 
 Boto3 documentation:
 [IoT.Client.list_principal_things](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_principal_things)
+
+Arguments mapping described in
+[ListPrincipalThingsRequestTypeDef](./type_defs.md#listprincipalthingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2716,15 +3493,20 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListPrincipalThingsResponseTypeDef](./type_defs.md#listprincipalthingsresponsetypedef).
+[ListPrincipalThingsResponseResponseTypeDef](./type_defs.md#listprincipalthingsresponseresponsetypedef).
 
 ### list_provisioning_template_versions
+
+A list of fleet provisioning template versions.
 
 Type annotations for `boto3.client("iot").list_provisioning_template_versions`
 method.
 
 Boto3 documentation:
 [IoT.Client.list_provisioning_template_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_provisioning_template_versions)
+
+Arguments mapping described in
+[ListProvisioningTemplateVersionsRequestTypeDef](./type_defs.md#listprovisioningtemplateversionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2733,14 +3515,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListProvisioningTemplateVersionsResponseTypeDef](./type_defs.md#listprovisioningtemplateversionsresponsetypedef).
+[ListProvisioningTemplateVersionsResponseResponseTypeDef](./type_defs.md#listprovisioningtemplateversionsresponseresponsetypedef).
 
 ### list_provisioning_templates
+
+Lists the fleet provisioning templates in your AWS account.
 
 Type annotations for `boto3.client("iot").list_provisioning_templates` method.
 
 Boto3 documentation:
 [IoT.Client.list_provisioning_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_provisioning_templates)
+
+Arguments mapping described in
+[ListProvisioningTemplatesRequestTypeDef](./type_defs.md#listprovisioningtemplatesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2748,14 +3535,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListProvisioningTemplatesResponseTypeDef](./type_defs.md#listprovisioningtemplatesresponsetypedef).
+[ListProvisioningTemplatesResponseResponseTypeDef](./type_defs.md#listprovisioningtemplatesresponseresponsetypedef).
 
 ### list_role_aliases
+
+Lists the role aliases registered in your account.
 
 Type annotations for `boto3.client("iot").list_role_aliases` method.
 
 Boto3 documentation:
 [IoT.Client.list_role_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_role_aliases)
+
+Arguments mapping described in
+[ListRoleAliasesRequestTypeDef](./type_defs.md#listrolealiasesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2764,14 +3556,19 @@ Keyword-only arguments:
 - `ascendingOrder`: `bool`
 
 Returns
-[ListRoleAliasesResponseTypeDef](./type_defs.md#listrolealiasesresponsetypedef).
+[ListRoleAliasesResponseResponseTypeDef](./type_defs.md#listrolealiasesresponseresponsetypedef).
 
 ### list_scheduled_audits
+
+Lists all of your scheduled audits.
 
 Type annotations for `boto3.client("iot").list_scheduled_audits` method.
 
 Boto3 documentation:
 [IoT.Client.list_scheduled_audits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_scheduled_audits)
+
+Arguments mapping described in
+[ListScheduledAuditsRequestTypeDef](./type_defs.md#listscheduledauditsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2779,14 +3576,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListScheduledAuditsResponseTypeDef](./type_defs.md#listscheduledauditsresponsetypedef).
+[ListScheduledAuditsResponseResponseTypeDef](./type_defs.md#listscheduledauditsresponseresponsetypedef).
 
 ### list_security_profiles
+
+Lists the Device Defender security profiles you've created.
 
 Type annotations for `boto3.client("iot").list_security_profiles` method.
 
 Boto3 documentation:
 [IoT.Client.list_security_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_security_profiles)
+
+Arguments mapping described in
+[ListSecurityProfilesRequestTypeDef](./type_defs.md#listsecurityprofilesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2796,15 +3598,20 @@ Keyword-only arguments:
 - `metricName`: `str`
 
 Returns
-[ListSecurityProfilesResponseTypeDef](./type_defs.md#listsecurityprofilesresponsetypedef).
+[ListSecurityProfilesResponseResponseTypeDef](./type_defs.md#listsecurityprofilesresponseresponsetypedef).
 
 ### list_security_profiles_for_target
+
+Lists the Device Defender security profiles attached to a target (thing group).
 
 Type annotations for `boto3.client("iot").list_security_profiles_for_target`
 method.
 
 Boto3 documentation:
 [IoT.Client.list_security_profiles_for_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_security_profiles_for_target)
+
+Arguments mapping described in
+[ListSecurityProfilesForTargetRequestTypeDef](./type_defs.md#listsecurityprofilesfortargetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2814,14 +3621,19 @@ Keyword-only arguments:
 - `recursive`: `bool`
 
 Returns
-[ListSecurityProfilesForTargetResponseTypeDef](./type_defs.md#listsecurityprofilesfortargetresponsetypedef).
+[ListSecurityProfilesForTargetResponseResponseTypeDef](./type_defs.md#listsecurityprofilesfortargetresponseresponsetypedef).
 
 ### list_streams
+
+Lists all of the streams in your AWS account.
 
 Type annotations for `boto3.client("iot").list_streams` method.
 
 Boto3 documentation:
 [IoT.Client.list_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_streams)
+
+Arguments mapping described in
+[ListStreamsRequestTypeDef](./type_defs.md#liststreamsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2830,14 +3642,19 @@ Keyword-only arguments:
 - `ascendingOrder`: `bool`
 
 Returns
-[ListStreamsResponseTypeDef](./type_defs.md#liststreamsresponsetypedef).
+[ListStreamsResponseResponseTypeDef](./type_defs.md#liststreamsresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Lists the tags (metadata) you have assigned to the resource.
 
 Type annotations for `boto3.client("iot").list_tags_for_resource` method.
 
 Boto3 documentation:
 [IoT.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_tags_for_resource)
+
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2845,14 +3662,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### list_targets_for_policy
+
+List targets for the specified policy.
 
 Type annotations for `boto3.client("iot").list_targets_for_policy` method.
 
 Boto3 documentation:
 [IoT.Client.list_targets_for_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_targets_for_policy)
+
+Arguments mapping described in
+[ListTargetsForPolicyRequestTypeDef](./type_defs.md#listtargetsforpolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2861,15 +3683,21 @@ Keyword-only arguments:
 - `pageSize`: `int`
 
 Returns
-[ListTargetsForPolicyResponseTypeDef](./type_defs.md#listtargetsforpolicyresponsetypedef).
+[ListTargetsForPolicyResponseResponseTypeDef](./type_defs.md#listtargetsforpolicyresponseresponsetypedef).
 
 ### list_targets_for_security_profile
+
+Lists the targets (thing groups) associated with a given Device Defender
+security profile.
 
 Type annotations for `boto3.client("iot").list_targets_for_security_profile`
 method.
 
 Boto3 documentation:
 [IoT.Client.list_targets_for_security_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_targets_for_security_profile)
+
+Arguments mapping described in
+[ListTargetsForSecurityProfileRequestTypeDef](./type_defs.md#listtargetsforsecurityprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2878,14 +3706,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListTargetsForSecurityProfileResponseTypeDef](./type_defs.md#listtargetsforsecurityprofileresponsetypedef).
+[ListTargetsForSecurityProfileResponseResponseTypeDef](./type_defs.md#listtargetsforsecurityprofileresponseresponsetypedef).
 
 ### list_thing_groups
+
+List the thing groups in your account.
 
 Type annotations for `boto3.client("iot").list_thing_groups` method.
 
 Boto3 documentation:
 [IoT.Client.list_thing_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_groups)
+
+Arguments mapping described in
+[ListThingGroupsRequestTypeDef](./type_defs.md#listthinggroupsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2896,15 +3729,20 @@ Keyword-only arguments:
 - `recursive`: `bool`
 
 Returns
-[ListThingGroupsResponseTypeDef](./type_defs.md#listthinggroupsresponsetypedef).
+[ListThingGroupsResponseResponseTypeDef](./type_defs.md#listthinggroupsresponseresponsetypedef).
 
 ### list_thing_groups_for_thing
+
+List the thing groups to which the specified thing belongs.
 
 Type annotations for `boto3.client("iot").list_thing_groups_for_thing` method.
 
 Boto3 documentation:
 [IoT.Client.list_thing_groups_for_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_groups_for_thing)
 
+Arguments mapping described in
+[ListThingGroupsForThingRequestTypeDef](./type_defs.md#listthinggroupsforthingrequesttypedef).
+
 Keyword-only arguments:
 
 - `thingName`: `str` *(required)*
@@ -2912,15 +3750,20 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListThingGroupsForThingResponseTypeDef](./type_defs.md#listthinggroupsforthingresponsetypedef).
+[ListThingGroupsForThingResponseResponseTypeDef](./type_defs.md#listthinggroupsforthingresponseresponsetypedef).
 
 ### list_thing_principals
+
+Lists the principals associated with the specified thing.
 
 Type annotations for `boto3.client("iot").list_thing_principals` method.
 
 Boto3 documentation:
 [IoT.Client.list_thing_principals](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_principals)
 
+Arguments mapping described in
+[ListThingPrincipalsRequestTypeDef](./type_defs.md#listthingprincipalsrequesttypedef).
+
 Keyword-only arguments:
 
 - `thingName`: `str` *(required)*
@@ -2928,15 +3771,20 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListThingPrincipalsResponseTypeDef](./type_defs.md#listthingprincipalsresponsetypedef).
+[ListThingPrincipalsResponseResponseTypeDef](./type_defs.md#listthingprincipalsresponseresponsetypedef).
 
 ### list_thing_registration_task_reports
+
+Information about the thing registration tasks.
 
 Type annotations for `boto3.client("iot").list_thing_registration_task_reports`
 method.
 
 Boto3 documentation:
 [IoT.Client.list_thing_registration_task_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_registration_task_reports)
+
+Arguments mapping described in
+[ListThingRegistrationTaskReportsRequestTypeDef](./type_defs.md#listthingregistrationtaskreportsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2946,15 +3794,20 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListThingRegistrationTaskReportsResponseTypeDef](./type_defs.md#listthingregistrationtaskreportsresponsetypedef).
+[ListThingRegistrationTaskReportsResponseResponseTypeDef](./type_defs.md#listthingregistrationtaskreportsresponseresponsetypedef).
 
 ### list_thing_registration_tasks
+
+List bulk thing provisioning tasks.
 
 Type annotations for `boto3.client("iot").list_thing_registration_tasks`
 method.
 
 Boto3 documentation:
 [IoT.Client.list_thing_registration_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_registration_tasks)
+
+Arguments mapping described in
+[ListThingRegistrationTasksRequestTypeDef](./type_defs.md#listthingregistrationtasksrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2963,14 +3816,19 @@ Keyword-only arguments:
 - `status`: [StatusType](./literals.md#statustype)
 
 Returns
-[ListThingRegistrationTasksResponseTypeDef](./type_defs.md#listthingregistrationtasksresponsetypedef).
+[ListThingRegistrationTasksResponseResponseTypeDef](./type_defs.md#listthingregistrationtasksresponseresponsetypedef).
 
 ### list_thing_types
+
+Lists the existing thing types.
 
 Type annotations for `boto3.client("iot").list_thing_types` method.
 
 Boto3 documentation:
 [IoT.Client.list_thing_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_types)
+
+Arguments mapping described in
+[ListThingTypesRequestTypeDef](./type_defs.md#listthingtypesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2979,14 +3837,19 @@ Keyword-only arguments:
 - `thingTypeName`: `str`
 
 Returns
-[ListThingTypesResponseTypeDef](./type_defs.md#listthingtypesresponsetypedef).
+[ListThingTypesResponseResponseTypeDef](./type_defs.md#listthingtypesresponseresponsetypedef).
 
 ### list_things
+
+Lists your things.
 
 Type annotations for `boto3.client("iot").list_things` method.
 
 Boto3 documentation:
 [IoT.Client.list_things](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_things)
+
+Arguments mapping described in
+[ListThingsRequestTypeDef](./type_defs.md#listthingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2997,14 +3860,20 @@ Keyword-only arguments:
 - `thingTypeName`: `str`
 - `usePrefixAttributeValue`: `bool`
 
-Returns [ListThingsResponseTypeDef](./type_defs.md#listthingsresponsetypedef).
+Returns
+[ListThingsResponseResponseTypeDef](./type_defs.md#listthingsresponseresponsetypedef).
 
 ### list_things_in_billing_group
+
+Lists the things you have added to the given billing group.
 
 Type annotations for `boto3.client("iot").list_things_in_billing_group` method.
 
 Boto3 documentation:
 [IoT.Client.list_things_in_billing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_things_in_billing_group)
+
+Arguments mapping described in
+[ListThingsInBillingGroupRequestTypeDef](./type_defs.md#listthingsinbillinggrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -3013,14 +3882,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListThingsInBillingGroupResponseTypeDef](./type_defs.md#listthingsinbillinggroupresponsetypedef).
+[ListThingsInBillingGroupResponseResponseTypeDef](./type_defs.md#listthingsinbillinggroupresponseresponsetypedef).
 
 ### list_things_in_thing_group
+
+Lists the things in the specified group.
 
 Type annotations for `boto3.client("iot").list_things_in_thing_group` method.
 
 Boto3 documentation:
 [IoT.Client.list_things_in_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_things_in_thing_group)
+
+Arguments mapping described in
+[ListThingsInThingGroupRequestTypeDef](./type_defs.md#listthingsinthinggrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -3030,14 +3904,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListThingsInThingGroupResponseTypeDef](./type_defs.md#listthingsinthinggroupresponsetypedef).
+[ListThingsInThingGroupResponseResponseTypeDef](./type_defs.md#listthingsinthinggroupresponseresponsetypedef).
 
 ### list_topic_rule_destinations
+
+Lists all the topic rule destinations in your AWS account.
 
 Type annotations for `boto3.client("iot").list_topic_rule_destinations` method.
 
 Boto3 documentation:
 [IoT.Client.list_topic_rule_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_topic_rule_destinations)
+
+Arguments mapping described in
+[ListTopicRuleDestinationsRequestTypeDef](./type_defs.md#listtopicruledestinationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3045,14 +3924,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListTopicRuleDestinationsResponseTypeDef](./type_defs.md#listtopicruledestinationsresponsetypedef).
+[ListTopicRuleDestinationsResponseResponseTypeDef](./type_defs.md#listtopicruledestinationsresponseresponsetypedef).
 
 ### list_topic_rules
+
+Lists the rules for the specific topic.
 
 Type annotations for `boto3.client("iot").list_topic_rules` method.
 
 Boto3 documentation:
 [IoT.Client.list_topic_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_topic_rules)
+
+Arguments mapping described in
+[ListTopicRulesRequestTypeDef](./type_defs.md#listtopicrulesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3062,14 +3946,19 @@ Keyword-only arguments:
 - `ruleDisabled`: `bool`
 
 Returns
-[ListTopicRulesResponseTypeDef](./type_defs.md#listtopicrulesresponsetypedef).
+[ListTopicRulesResponseResponseTypeDef](./type_defs.md#listtopicrulesresponseresponsetypedef).
 
 ### list_v2_logging_levels
+
+Lists logging levels.
 
 Type annotations for `boto3.client("iot").list_v2_logging_levels` method.
 
 Boto3 documentation:
 [IoT.Client.list_v2_logging_levels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_v2_logging_levels)
+
+Arguments mapping described in
+[ListV2LoggingLevelsRequestTypeDef](./type_defs.md#listv2logginglevelsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3078,19 +3967,25 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListV2LoggingLevelsResponseTypeDef](./type_defs.md#listv2logginglevelsresponsetypedef).
+[ListV2LoggingLevelsResponseResponseTypeDef](./type_defs.md#listv2logginglevelsresponseresponsetypedef).
 
 ### list_violation_events
+
+Lists the Device Defender security profile violations discovered during the
+given time period.
 
 Type annotations for `boto3.client("iot").list_violation_events` method.
 
 Boto3 documentation:
 [IoT.Client.list_violation_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_violation_events)
 
+Arguments mapping described in
+[ListViolationEventsRequestTypeDef](./type_defs.md#listviolationeventsrequesttypedef).
+
 Keyword-only arguments:
 
-- `startTime`: `datetime` *(required)*
-- `endTime`: `datetime` *(required)*
+- `startTime`: `Union`\[`datetime`, `str`\] *(required)*
+- `endTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `thingName`: `str`
 - `securityProfileName`: `str`
 - `behaviorCriteriaType`:
@@ -3100,14 +3995,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListViolationEventsResponseTypeDef](./type_defs.md#listviolationeventsresponsetypedef).
+[ListViolationEventsResponseResponseTypeDef](./type_defs.md#listviolationeventsresponseresponsetypedef).
 
 ### register_ca_certificate
+
+Registers a CA certificate with AWS IoT.
 
 Type annotations for `boto3.client("iot").register_ca_certificate` method.
 
 Boto3 documentation:
 [IoT.Client.register_ca_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.register_ca_certificate)
+
+Arguments mapping described in
+[RegisterCACertificateRequestTypeDef](./type_defs.md#registercacertificaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -3120,14 +4020,19 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[RegisterCACertificateResponseTypeDef](./type_defs.md#registercacertificateresponsetypedef).
+[RegisterCACertificateResponseResponseTypeDef](./type_defs.md#registercacertificateresponseresponsetypedef).
 
 ### register_certificate
+
+Registers a device certificate with AWS IoT.
 
 Type annotations for `boto3.client("iot").register_certificate` method.
 
 Boto3 documentation:
 [IoT.Client.register_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.register_certificate)
+
+Arguments mapping described in
+[RegisterCertificateRequestTypeDef](./type_defs.md#registercertificaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -3137,9 +4042,11 @@ Keyword-only arguments:
 - `status`: [CertificateStatusType](./literals.md#certificatestatustype)
 
 Returns
-[RegisterCertificateResponseTypeDef](./type_defs.md#registercertificateresponsetypedef).
+[RegisterCertificateResponseResponseTypeDef](./type_defs.md#registercertificateresponseresponsetypedef).
 
 ### register_certificate_without_ca
+
+Register a certificate that does not have a certificate authority (CA).
 
 Type annotations for `boto3.client("iot").register_certificate_without_ca`
 method.
@@ -3147,20 +4054,28 @@ method.
 Boto3 documentation:
 [IoT.Client.register_certificate_without_ca](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.register_certificate_without_ca)
 
+Arguments mapping described in
+[RegisterCertificateWithoutCARequestTypeDef](./type_defs.md#registercertificatewithoutcarequesttypedef).
+
 Keyword-only arguments:
 
 - `certificatePem`: `str` *(required)*
 - `status`: [CertificateStatusType](./literals.md#certificatestatustype)
 
 Returns
-[RegisterCertificateWithoutCAResponseTypeDef](./type_defs.md#registercertificatewithoutcaresponsetypedef).
+[RegisterCertificateWithoutCAResponseResponseTypeDef](./type_defs.md#registercertificatewithoutcaresponseresponsetypedef).
 
 ### register_thing
+
+Provisions a thing in the device registry.
 
 Type annotations for `boto3.client("iot").register_thing` method.
 
 Boto3 documentation:
 [IoT.Client.register_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.register_thing)
+
+Arguments mapping described in
+[RegisterThingRequestTypeDef](./type_defs.md#registerthingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3168,14 +4083,19 @@ Keyword-only arguments:
 - `parameters`: `Dict`\[`str`, `str`\]
 
 Returns
-[RegisterThingResponseTypeDef](./type_defs.md#registerthingresponsetypedef).
+[RegisterThingResponseResponseTypeDef](./type_defs.md#registerthingresponseresponsetypedef).
 
 ### reject_certificate_transfer
+
+Rejects a pending certificate transfer.
 
 Type annotations for `boto3.client("iot").reject_certificate_transfer` method.
 
 Boto3 documentation:
 [IoT.Client.reject_certificate_transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.reject_certificate_transfer)
+
+Arguments mapping described in
+[RejectCertificateTransferRequestTypeDef](./type_defs.md#rejectcertificatetransferrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3184,11 +4104,16 @@ Keyword-only arguments:
 
 ### remove_thing_from_billing_group
 
+Removes the given thing from the billing group.
+
 Type annotations for `boto3.client("iot").remove_thing_from_billing_group`
 method.
 
 Boto3 documentation:
 [IoT.Client.remove_thing_from_billing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.remove_thing_from_billing_group)
+
+Arguments mapping described in
+[RemoveThingFromBillingGroupRequestTypeDef](./type_defs.md#removethingfrombillinggrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -3201,11 +4126,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### remove_thing_from_thing_group
 
+Remove the specified thing from the specified group.
+
 Type annotations for `boto3.client("iot").remove_thing_from_thing_group`
 method.
 
 Boto3 documentation:
 [IoT.Client.remove_thing_from_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.remove_thing_from_thing_group)
+
+Arguments mapping described in
+[RemoveThingFromThingGroupRequestTypeDef](./type_defs.md#removethingfromthinggrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -3218,10 +4148,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### replace_topic_rule
 
+.
+
 Type annotations for `boto3.client("iot").replace_topic_rule` method.
 
 Boto3 documentation:
 [IoT.Client.replace_topic_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.replace_topic_rule)
+
+Arguments mapping described in
+[ReplaceTopicRuleRequestTypeDef](./type_defs.md#replacetopicrulerequesttypedef).
 
 Keyword-only arguments:
 
@@ -3232,10 +4167,15 @@ Keyword-only arguments:
 
 ### search_index
 
+The query search index.
+
 Type annotations for `boto3.client("iot").search_index` method.
 
 Boto3 documentation:
 [IoT.Client.search_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.search_index)
+
+Arguments mapping described in
+[SearchIndexRequestTypeDef](./type_defs.md#searchindexrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3246,28 +4186,39 @@ Keyword-only arguments:
 - `queryVersion`: `str`
 
 Returns
-[SearchIndexResponseTypeDef](./type_defs.md#searchindexresponsetypedef).
+[SearchIndexResponseResponseTypeDef](./type_defs.md#searchindexresponseresponsetypedef).
 
 ### set_default_authorizer
+
+Sets the default authorizer.
 
 Type annotations for `boto3.client("iot").set_default_authorizer` method.
 
 Boto3 documentation:
 [IoT.Client.set_default_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_default_authorizer)
 
+Arguments mapping described in
+[SetDefaultAuthorizerRequestTypeDef](./type_defs.md#setdefaultauthorizerrequesttypedef).
+
 Keyword-only arguments:
 
 - `authorizerName`: `str` *(required)*
 
 Returns
-[SetDefaultAuthorizerResponseTypeDef](./type_defs.md#setdefaultauthorizerresponsetypedef).
+[SetDefaultAuthorizerResponseResponseTypeDef](./type_defs.md#setdefaultauthorizerresponseresponsetypedef).
 
 ### set_default_policy_version
+
+Sets the specified version of the specified policy as the policy's default
+(operative) version.
 
 Type annotations for `boto3.client("iot").set_default_policy_version` method.
 
 Boto3 documentation:
 [IoT.Client.set_default_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_default_policy_version)
+
+Arguments mapping described in
+[SetDefaultPolicyVersionRequestTypeDef](./type_defs.md#setdefaultpolicyversionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3276,10 +4227,15 @@ Keyword-only arguments:
 
 ### set_logging_options
 
+Sets the logging options.
+
 Type annotations for `boto3.client("iot").set_logging_options` method.
 
 Boto3 documentation:
 [IoT.Client.set_logging_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_logging_options)
+
+Arguments mapping described in
+[SetLoggingOptionsRequestTypeDef](./type_defs.md#setloggingoptionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3289,10 +4245,15 @@ Keyword-only arguments:
 
 ### set_v2_logging_level
 
+Sets the logging level.
+
 Type annotations for `boto3.client("iot").set_v2_logging_level` method.
 
 Boto3 documentation:
 [IoT.Client.set_v2_logging_level](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_v2_logging_level)
+
+Arguments mapping described in
+[SetV2LoggingLevelRequestTypeDef](./type_defs.md#setv2logginglevelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3301,10 +4262,15 @@ Keyword-only arguments:
 
 ### set_v2_logging_options
 
+Sets the logging options for the V2 logging service.
+
 Type annotations for `boto3.client("iot").set_v2_logging_options` method.
 
 Boto3 documentation:
 [IoT.Client.set_v2_logging_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_v2_logging_options)
+
+Arguments mapping described in
+[SetV2LoggingOptionsRequestTypeDef](./type_defs.md#setv2loggingoptionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3314,11 +4280,16 @@ Keyword-only arguments:
 
 ### start_audit_mitigation_actions_task
 
+Starts a task that applies a set of mitigation actions to the specified target.
+
 Type annotations for `boto3.client("iot").start_audit_mitigation_actions_task`
 method.
 
 Boto3 documentation:
 [IoT.Client.start_audit_mitigation_actions_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.start_audit_mitigation_actions_task)
+
+Arguments mapping described in
+[StartAuditMitigationActionsTaskRequestTypeDef](./type_defs.md#startauditmitigationactionstaskrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3330,15 +4301,20 @@ Keyword-only arguments:
 - `clientRequestToken`: `str` *(required)*
 
 Returns
-[StartAuditMitigationActionsTaskResponseTypeDef](./type_defs.md#startauditmitigationactionstaskresponsetypedef).
+[StartAuditMitigationActionsTaskResponseResponseTypeDef](./type_defs.md#startauditmitigationactionstaskresponseresponsetypedef).
 
 ### start_detect_mitigation_actions_task
+
+Starts a Device Defender ML Detect mitigation actions task.
 
 Type annotations for `boto3.client("iot").start_detect_mitigation_actions_task`
 method.
 
 Boto3 documentation:
 [IoT.Client.start_detect_mitigation_actions_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.start_detect_mitigation_actions_task)
+
+Arguments mapping described in
+[StartDetectMitigationActionsTaskRequestTypeDef](./type_defs.md#startdetectmitigationactionstaskrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3354,29 +4330,39 @@ Keyword-only arguments:
 - `includeSuppressedAlerts`: `bool`
 
 Returns
-[StartDetectMitigationActionsTaskResponseTypeDef](./type_defs.md#startdetectmitigationactionstaskresponsetypedef).
+[StartDetectMitigationActionsTaskResponseResponseTypeDef](./type_defs.md#startdetectmitigationactionstaskresponseresponsetypedef).
 
 ### start_on_demand_audit_task
+
+Starts an on-demand Device Defender audit.
 
 Type annotations for `boto3.client("iot").start_on_demand_audit_task` method.
 
 Boto3 documentation:
 [IoT.Client.start_on_demand_audit_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.start_on_demand_audit_task)
 
+Arguments mapping described in
+[StartOnDemandAuditTaskRequestTypeDef](./type_defs.md#startondemandaudittaskrequesttypedef).
+
 Keyword-only arguments:
 
 - `targetCheckNames`: `List`\[`str`\] *(required)*
 
 Returns
-[StartOnDemandAuditTaskResponseTypeDef](./type_defs.md#startondemandaudittaskresponsetypedef).
+[StartOnDemandAuditTaskResponseResponseTypeDef](./type_defs.md#startondemandaudittaskresponseresponsetypedef).
 
 ### start_thing_registration_task
+
+Creates a bulk thing provisioning task.
 
 Type annotations for `boto3.client("iot").start_thing_registration_task`
 method.
 
 Boto3 documentation:
 [IoT.Client.start_thing_registration_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.start_thing_registration_task)
+
+Arguments mapping described in
+[StartThingRegistrationTaskRequestTypeDef](./type_defs.md#startthingregistrationtaskrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3386,14 +4372,19 @@ Keyword-only arguments:
 - `roleArn`: `str` *(required)*
 
 Returns
-[StartThingRegistrationTaskResponseTypeDef](./type_defs.md#startthingregistrationtaskresponsetypedef).
+[StartThingRegistrationTaskResponseResponseTypeDef](./type_defs.md#startthingregistrationtaskresponseresponsetypedef).
 
 ### stop_thing_registration_task
+
+Cancels a bulk thing provisioning task.
 
 Type annotations for `boto3.client("iot").stop_thing_registration_task` method.
 
 Boto3 documentation:
 [IoT.Client.stop_thing_registration_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.stop_thing_registration_task)
+
+Arguments mapping described in
+[StopThingRegistrationTaskRequestTypeDef](./type_defs.md#stopthingregistrationtaskrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3403,10 +4394,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### tag_resource
 
+Adds to or modifies the tags of the given resource.
+
 Type annotations for `boto3.client("iot").tag_resource` method.
 
 Boto3 documentation:
 [IoT.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -3417,10 +4413,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### test_authorization
 
+Tests if a specified principal is authorized to perform an AWS IoT action on a
+specified resource.
+
 Type annotations for `boto3.client("iot").test_authorization` method.
 
 Boto3 documentation:
 [IoT.Client.test_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.test_authorization)
+
+Arguments mapping described in
+[TestAuthorizationRequestTypeDef](./type_defs.md#testauthorizationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3433,14 +4435,20 @@ Keyword-only arguments:
 - `policyNamesToSkip`: `List`\[`str`\]
 
 Returns
-[TestAuthorizationResponseTypeDef](./type_defs.md#testauthorizationresponsetypedef).
+[TestAuthorizationResponseResponseTypeDef](./type_defs.md#testauthorizationresponseresponsetypedef).
 
 ### test_invoke_authorizer
+
+Tests a custom authorization behavior by invoking a specified custom
+authorizer.
 
 Type annotations for `boto3.client("iot").test_invoke_authorizer` method.
 
 Boto3 documentation:
 [IoT.Client.test_invoke_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.test_invoke_authorizer)
+
+Arguments mapping described in
+[TestInvokeAuthorizerRequestTypeDef](./type_defs.md#testinvokeauthorizerrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3452,14 +4460,19 @@ Keyword-only arguments:
 - `tlsContext`: [TlsContextTypeDef](./type_defs.md#tlscontexttypedef)
 
 Returns
-[TestInvokeAuthorizerResponseTypeDef](./type_defs.md#testinvokeauthorizerresponsetypedef).
+[TestInvokeAuthorizerResponseResponseTypeDef](./type_defs.md#testinvokeauthorizerresponseresponsetypedef).
 
 ### transfer_certificate
+
+Transfers the specified certificate to the specified AWS account.
 
 Type annotations for `boto3.client("iot").transfer_certificate` method.
 
 Boto3 documentation:
 [IoT.Client.transfer_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.transfer_certificate)
+
+Arguments mapping described in
+[TransferCertificateRequestTypeDef](./type_defs.md#transfercertificaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -3468,14 +4481,19 @@ Keyword-only arguments:
 - `transferMessage`: `str`
 
 Returns
-[TransferCertificateResponseTypeDef](./type_defs.md#transfercertificateresponsetypedef).
+[TransferCertificateResponseResponseTypeDef](./type_defs.md#transfercertificateresponseresponsetypedef).
 
 ### untag_resource
+
+Removes the given tags (metadata) from the resource.
 
 Type annotations for `boto3.client("iot").untag_resource` method.
 
 Boto3 documentation:
 [IoT.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -3486,11 +4504,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_account_audit_configuration
 
+Configures or reconfigures the Device Defender audit settings for this account.
+
 Type annotations for `boto3.client("iot").update_account_audit_configuration`
 method.
 
 Boto3 documentation:
 [IoT.Client.update_account_audit_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_account_audit_configuration)
+
+Arguments mapping described in
+[UpdateAccountAuditConfigurationRequestTypeDef](./type_defs.md#updateaccountauditconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3505,10 +4528,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_audit_suppression
 
+Updates a Device Defender audit suppression.
+
 Type annotations for `boto3.client("iot").update_audit_suppression` method.
 
 Boto3 documentation:
 [IoT.Client.update_audit_suppression](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_audit_suppression)
+
+Arguments mapping described in
+[UpdateAuditSuppressionRequestTypeDef](./type_defs.md#updateauditsuppressionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3516,7 +4544,7 @@ Keyword-only arguments:
 - `resourceIdentifier`:
   [ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)
   *(required)*
-- `expirationDate`: `datetime`
+- `expirationDate`: `Union`\[`datetime`, `str`\]
 - `suppressIndefinitely`: `bool`
 - `description`: `str`
 
@@ -3524,10 +4552,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_authorizer
 
+Updates an authorizer.
+
 Type annotations for `boto3.client("iot").update_authorizer` method.
 
 Boto3 documentation:
 [IoT.Client.update_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_authorizer)
+
+Arguments mapping described in
+[UpdateAuthorizerRequestTypeDef](./type_defs.md#updateauthorizerrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3538,14 +4571,19 @@ Keyword-only arguments:
 - `status`: [AuthorizerStatusType](./literals.md#authorizerstatustype)
 
 Returns
-[UpdateAuthorizerResponseTypeDef](./type_defs.md#updateauthorizerresponsetypedef).
+[UpdateAuthorizerResponseResponseTypeDef](./type_defs.md#updateauthorizerresponseresponsetypedef).
 
 ### update_billing_group
+
+Updates information about the billing group.
 
 Type annotations for `boto3.client("iot").update_billing_group` method.
 
 Boto3 documentation:
 [IoT.Client.update_billing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_billing_group)
+
+Arguments mapping described in
+[UpdateBillingGroupRequestTypeDef](./type_defs.md#updatebillinggrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -3556,14 +4594,19 @@ Keyword-only arguments:
 - `expectedVersion`: `int`
 
 Returns
-[UpdateBillingGroupResponseTypeDef](./type_defs.md#updatebillinggroupresponsetypedef).
+[UpdateBillingGroupResponseResponseTypeDef](./type_defs.md#updatebillinggroupresponseresponsetypedef).
 
 ### update_ca_certificate
+
+Updates a registered CA certificate.
 
 Type annotations for `boto3.client("iot").update_ca_certificate` method.
 
 Boto3 documentation:
 [IoT.Client.update_ca_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_ca_certificate)
+
+Arguments mapping described in
+[UpdateCACertificateRequestTypeDef](./type_defs.md#updatecacertificaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -3577,10 +4620,15 @@ Keyword-only arguments:
 
 ### update_certificate
 
+Updates the status of the specified certificate.
+
 Type annotations for `boto3.client("iot").update_certificate` method.
 
 Boto3 documentation:
 [IoT.Client.update_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_certificate)
+
+Arguments mapping described in
+[UpdateCertificateRequestTypeDef](./type_defs.md#updatecertificaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -3590,10 +4638,15 @@ Keyword-only arguments:
 
 ### update_custom_metric
 
+Updates a Device Defender detect custom metric.
+
 Type annotations for `boto3.client("iot").update_custom_metric` method.
 
 Boto3 documentation:
 [IoT.Client.update_custom_metric](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_custom_metric)
+
+Arguments mapping described in
+[UpdateCustomMetricRequestTypeDef](./type_defs.md#updatecustommetricrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3601,14 +4654,19 @@ Keyword-only arguments:
 - `displayName`: `str` *(required)*
 
 Returns
-[UpdateCustomMetricResponseTypeDef](./type_defs.md#updatecustommetricresponsetypedef).
+[UpdateCustomMetricResponseResponseTypeDef](./type_defs.md#updatecustommetricresponseresponsetypedef).
 
 ### update_dimension
+
+Updates the definition for a dimension.
 
 Type annotations for `boto3.client("iot").update_dimension` method.
 
 Boto3 documentation:
 [IoT.Client.update_dimension](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_dimension)
+
+Arguments mapping described in
+[UpdateDimensionRequestTypeDef](./type_defs.md#updatedimensionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3616,14 +4674,19 @@ Keyword-only arguments:
 - `stringValues`: `List`\[`str`\] *(required)*
 
 Returns
-[UpdateDimensionResponseTypeDef](./type_defs.md#updatedimensionresponsetypedef).
+[UpdateDimensionResponseResponseTypeDef](./type_defs.md#updatedimensionresponseresponsetypedef).
 
 ### update_domain_configuration
+
+Updates values stored in the domain configuration.
 
 Type annotations for `boto3.client("iot").update_domain_configuration` method.
 
 Boto3 documentation:
 [IoT.Client.update_domain_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_domain_configuration)
+
+Arguments mapping described in
+[UpdateDomainConfigurationRequestTypeDef](./type_defs.md#updatedomainconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3635,14 +4698,19 @@ Keyword-only arguments:
 - `removeAuthorizerConfig`: `bool`
 
 Returns
-[UpdateDomainConfigurationResponseTypeDef](./type_defs.md#updatedomainconfigurationresponsetypedef).
+[UpdateDomainConfigurationResponseResponseTypeDef](./type_defs.md#updatedomainconfigurationresponseresponsetypedef).
 
 ### update_dynamic_thing_group
+
+Updates a dynamic thing group.
 
 Type annotations for `boto3.client("iot").update_dynamic_thing_group` method.
 
 Boto3 documentation:
 [IoT.Client.update_dynamic_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_dynamic_thing_group)
+
+Arguments mapping described in
+[UpdateDynamicThingGroupRequestTypeDef](./type_defs.md#updatedynamicthinggrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -3656,14 +4724,19 @@ Keyword-only arguments:
 - `queryVersion`: `str`
 
 Returns
-[UpdateDynamicThingGroupResponseTypeDef](./type_defs.md#updatedynamicthinggroupresponsetypedef).
+[UpdateDynamicThingGroupResponseResponseTypeDef](./type_defs.md#updatedynamicthinggroupresponseresponsetypedef).
 
 ### update_event_configurations
+
+Updates the event configurations.
 
 Type annotations for `boto3.client("iot").update_event_configurations` method.
 
 Boto3 documentation:
 [IoT.Client.update_event_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_event_configurations)
+
+Arguments mapping described in
+[UpdateEventConfigurationsRequestTypeDef](./type_defs.md#updateeventconfigurationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3674,11 +4747,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_indexing_configuration
 
+Updates the search configuration.
+
 Type annotations for `boto3.client("iot").update_indexing_configuration`
 method.
 
 Boto3 documentation:
 [IoT.Client.update_indexing_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_indexing_configuration)
+
+Arguments mapping described in
+[UpdateIndexingConfigurationRequestTypeDef](./type_defs.md#updateindexingconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3691,10 +4769,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_job
 
+Updates supported fields of the specified job.
+
 Type annotations for `boto3.client("iot").update_job` method.
 
 Boto3 documentation:
 [IoT.Client.update_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_job)
+
+Arguments mapping described in
+[UpdateJobRequestTypeDef](./type_defs.md#updatejobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3710,10 +4793,15 @@ Keyword-only arguments:
 
 ### update_mitigation_action
 
+Updates the definition for the specified mitigation action.
+
 Type annotations for `boto3.client("iot").update_mitigation_action` method.
 
 Boto3 documentation:
 [IoT.Client.update_mitigation_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_mitigation_action)
+
+Arguments mapping described in
+[UpdateMitigationActionRequestTypeDef](./type_defs.md#updatemitigationactionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3723,14 +4811,19 @@ Keyword-only arguments:
   [MitigationActionParamsTypeDef](./type_defs.md#mitigationactionparamstypedef)
 
 Returns
-[UpdateMitigationActionResponseTypeDef](./type_defs.md#updatemitigationactionresponsetypedef).
+[UpdateMitigationActionResponseResponseTypeDef](./type_defs.md#updatemitigationactionresponseresponsetypedef).
 
 ### update_provisioning_template
+
+Updates a fleet provisioning template.
 
 Type annotations for `boto3.client("iot").update_provisioning_template` method.
 
 Boto3 documentation:
 [IoT.Client.update_provisioning_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_provisioning_template)
+
+Arguments mapping described in
+[UpdateProvisioningTemplateRequestTypeDef](./type_defs.md#updateprovisioningtemplaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -3747,10 +4840,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_role_alias
 
+Updates a role alias.
+
 Type annotations for `boto3.client("iot").update_role_alias` method.
 
 Boto3 documentation:
 [IoT.Client.update_role_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_role_alias)
+
+Arguments mapping described in
+[UpdateRoleAliasRequestTypeDef](./type_defs.md#updaterolealiasrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3759,14 +4857,20 @@ Keyword-only arguments:
 - `credentialDurationSeconds`: `int`
 
 Returns
-[UpdateRoleAliasResponseTypeDef](./type_defs.md#updaterolealiasresponsetypedef).
+[UpdateRoleAliasResponseResponseTypeDef](./type_defs.md#updaterolealiasresponseresponsetypedef).
 
 ### update_scheduled_audit
+
+Updates a scheduled audit, including which checks are performed and how often
+the audit takes place.
 
 Type annotations for `boto3.client("iot").update_scheduled_audit` method.
 
 Boto3 documentation:
 [IoT.Client.update_scheduled_audit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_scheduled_audit)
+
+Arguments mapping described in
+[UpdateScheduledAuditRequestTypeDef](./type_defs.md#updatescheduledauditrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3777,14 +4881,19 @@ Keyword-only arguments:
 - `targetCheckNames`: `List`\[`str`\]
 
 Returns
-[UpdateScheduledAuditResponseTypeDef](./type_defs.md#updatescheduledauditresponsetypedef).
+[UpdateScheduledAuditResponseResponseTypeDef](./type_defs.md#updatescheduledauditresponseresponsetypedef).
 
 ### update_security_profile
+
+Updates a Device Defender security profile.
 
 Type annotations for `boto3.client("iot").update_security_profile` method.
 
 Boto3 documentation:
 [IoT.Client.update_security_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_security_profile)
+
+Arguments mapping described in
+[UpdateSecurityProfileRequestTypeDef](./type_defs.md#updatesecurityprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -3803,14 +4912,19 @@ Keyword-only arguments:
 - `expectedVersion`: `int`
 
 Returns
-[UpdateSecurityProfileResponseTypeDef](./type_defs.md#updatesecurityprofileresponsetypedef).
+[UpdateSecurityProfileResponseResponseTypeDef](./type_defs.md#updatesecurityprofileresponseresponsetypedef).
 
 ### update_stream
+
+Updates an existing stream.
 
 Type annotations for `boto3.client("iot").update_stream` method.
 
 Boto3 documentation:
 [IoT.Client.update_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_stream)
+
+Arguments mapping described in
+[UpdateStreamRequestTypeDef](./type_defs.md#updatestreamrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3820,14 +4934,19 @@ Keyword-only arguments:
 - `roleArn`: `str`
 
 Returns
-[UpdateStreamResponseTypeDef](./type_defs.md#updatestreamresponsetypedef).
+[UpdateStreamResponseResponseTypeDef](./type_defs.md#updatestreamresponseresponsetypedef).
 
 ### update_thing
+
+Updates the data for a thing.
 
 Type annotations for `boto3.client("iot").update_thing` method.
 
 Boto3 documentation:
 [IoT.Client.update_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_thing)
+
+Arguments mapping described in
+[UpdateThingRequestTypeDef](./type_defs.md#updatethingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3842,10 +4961,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_thing_group
 
+Update a thing group.
+
 Type annotations for `boto3.client("iot").update_thing_group` method.
 
 Boto3 documentation:
 [IoT.Client.update_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_thing_group)
+
+Arguments mapping described in
+[UpdateThingGroupRequestTypeDef](./type_defs.md#updatethinggrouprequesttypedef).
 
 Keyword-only arguments:
 
@@ -3856,15 +4980,20 @@ Keyword-only arguments:
 - `expectedVersion`: `int`
 
 Returns
-[UpdateThingGroupResponseTypeDef](./type_defs.md#updatethinggroupresponsetypedef).
+[UpdateThingGroupResponseResponseTypeDef](./type_defs.md#updatethinggroupresponseresponsetypedef).
 
 ### update_thing_groups_for_thing
+
+Updates the groups to which the thing belongs.
 
 Type annotations for `boto3.client("iot").update_thing_groups_for_thing`
 method.
 
 Boto3 documentation:
 [IoT.Client.update_thing_groups_for_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_thing_groups_for_thing)
+
+Arguments mapping described in
+[UpdateThingGroupsForThingRequestTypeDef](./type_defs.md#updatethinggroupsforthingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3877,11 +5006,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_topic_rule_destination
 
+Updates a topic rule destination.
+
 Type annotations for `boto3.client("iot").update_topic_rule_destination`
 method.
 
 Boto3 documentation:
 [IoT.Client.update_topic_rule_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_topic_rule_destination)
+
+Arguments mapping described in
+[UpdateTopicRuleDestinationRequestTypeDef](./type_defs.md#updatetopicruledestinationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3894,11 +5028,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### validate_security_profile_behaviors
 
+Validates a Device Defender security profile behaviors specification.
+
 Type annotations for `boto3.client("iot").validate_security_profile_behaviors`
 method.
 
 Boto3 documentation:
 [IoT.Client.validate_security_profile_behaviors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.validate_security_profile_behaviors)
+
+Arguments mapping described in
+[ValidateSecurityProfileBehaviorsRequestTypeDef](./type_defs.md#validatesecurityprofilebehaviorsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3906,7 +5045,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[ValidateSecurityProfileBehaviorsResponseTypeDef](./type_defs.md#validatesecurityprofilebehaviorsresponsetypedef).
+[ValidateSecurityProfileBehaviorsResponseResponseTypeDef](./type_defs.md#validatesecurityprofilebehaviorsresponseresponsetypedef).
 
 ### get_paginator
 

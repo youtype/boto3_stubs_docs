@@ -59,6 +59,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("pricing").can_paginate` method.
 
 Boto3 documentation:
@@ -72,10 +74,16 @@ Returns `bool`.
 
 ### describe_services
 
+Returns the metadata for one service or a list of the metadata for all
+services.
+
 Type annotations for `boto3.client("pricing").describe_services` method.
 
 Boto3 documentation:
 [Pricing.Client.describe_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.describe_services)
+
+Arguments mapping described in
+[DescribeServicesRequestTypeDef](./type_defs.md#describeservicesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -85,9 +93,11 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeServicesResponseTypeDef](./type_defs.md#describeservicesresponsetypedef).
+[DescribeServicesResponseResponseTypeDef](./type_defs.md#describeservicesresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("pricing").generate_presigned_url` method.
 
@@ -105,10 +115,15 @@ Returns `str`.
 
 ### get_attribute_values
 
+Returns a list of attribute values.
+
 Type annotations for `boto3.client("pricing").get_attribute_values` method.
 
 Boto3 documentation:
 [Pricing.Client.get_attribute_values](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.get_attribute_values)
+
+Arguments mapping described in
+[GetAttributeValuesRequestTypeDef](./type_defs.md#getattributevaluesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -118,14 +133,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetAttributeValuesResponseTypeDef](./type_defs.md#getattributevaluesresponsetypedef).
+[GetAttributeValuesResponseResponseTypeDef](./type_defs.md#getattributevaluesresponseresponsetypedef).
 
 ### get_products
+
+Returns a list of all products that match the filter criteria.
 
 Type annotations for `boto3.client("pricing").get_products` method.
 
 Boto3 documentation:
 [Pricing.Client.get_products](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.get_products)
+
+Arguments mapping described in
+[GetProductsRequestTypeDef](./type_defs.md#getproductsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -136,7 +156,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetProductsResponseTypeDef](./type_defs.md#getproductsresponsetypedef).
+[GetProductsResponseResponseTypeDef](./type_defs.md#getproductsresponseresponsetypedef).
 
 ### get_paginator
 

@@ -72,11 +72,16 @@ Exceptions:
 
 ### associate_device_with_placement
 
+Associates a physical device with a placement.
+
 Type annotations for
 `boto3.client("iot1click-projects").associate_device_with_placement` method.
 
 Boto3 documentation:
 [IoT1ClickProjects.Client.associate_device_with_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.associate_device_with_placement)
+
+Arguments mapping described in
+[AssociateDeviceWithPlacementRequestTypeDef](./type_defs.md#associatedevicewithplacementrequesttypedef).
 
 Keyword-only arguments:
 
@@ -88,6 +93,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("iot1click-projects").can_paginate` method.
 
@@ -102,11 +109,16 @@ Returns `bool`.
 
 ### create_placement
 
+Creates an empty placement.
+
 Type annotations for `boto3.client("iot1click-projects").create_placement`
 method.
 
 Boto3 documentation:
 [IoT1ClickProjects.Client.create_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.create_placement)
+
+Arguments mapping described in
+[CreatePlacementRequestTypeDef](./type_defs.md#createplacementrequesttypedef).
 
 Keyword-only arguments:
 
@@ -118,11 +130,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### create_project
 
+Creates an empty project with a placement template.
+
 Type annotations for `boto3.client("iot1click-projects").create_project`
 method.
 
 Boto3 documentation:
 [IoT1ClickProjects.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.create_project)
+
+Arguments mapping described in
+[CreateProjectRequestTypeDef](./type_defs.md#createprojectrequesttypedef).
 
 Keyword-only arguments:
 
@@ -136,11 +153,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_placement
 
+Deletes a placement.
+
 Type annotations for `boto3.client("iot1click-projects").delete_placement`
 method.
 
 Boto3 documentation:
 [IoT1ClickProjects.Client.delete_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.delete_placement)
+
+Arguments mapping described in
+[DeletePlacementRequestTypeDef](./type_defs.md#deleteplacementrequesttypedef).
 
 Keyword-only arguments:
 
@@ -151,11 +173,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_project
 
+Deletes a project.
+
 Type annotations for `boto3.client("iot1click-projects").delete_project`
 method.
 
 Boto3 documentation:
 [IoT1ClickProjects.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.delete_project)
+
+Arguments mapping described in
+[DeleteProjectRequestTypeDef](./type_defs.md#deleteprojectrequesttypedef).
 
 Keyword-only arguments:
 
@@ -165,11 +192,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_placement
 
+Describes a placement in a project.
+
 Type annotations for `boto3.client("iot1click-projects").describe_placement`
 method.
 
 Boto3 documentation:
 [IoT1ClickProjects.Client.describe_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.describe_placement)
+
+Arguments mapping described in
+[DescribePlacementRequestTypeDef](./type_defs.md#describeplacementrequesttypedef).
 
 Keyword-only arguments:
 
@@ -177,9 +209,11 @@ Keyword-only arguments:
 - `projectName`: `str` *(required)*
 
 Returns
-[DescribePlacementResponseTypeDef](./type_defs.md#describeplacementresponsetypedef).
+[DescribePlacementResponseResponseTypeDef](./type_defs.md#describeplacementresponseresponsetypedef).
 
 ### describe_project
+
+Returns an object describing a project.
 
 Type annotations for `boto3.client("iot1click-projects").describe_project`
 method.
@@ -187,20 +221,28 @@ method.
 Boto3 documentation:
 [IoT1ClickProjects.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.describe_project)
 
+Arguments mapping described in
+[DescribeProjectRequestTypeDef](./type_defs.md#describeprojectrequesttypedef).
+
 Keyword-only arguments:
 
 - `projectName`: `str` *(required)*
 
 Returns
-[DescribeProjectResponseTypeDef](./type_defs.md#describeprojectresponsetypedef).
+[DescribeProjectResponseResponseTypeDef](./type_defs.md#describeprojectresponseresponsetypedef).
 
 ### disassociate_device_from_placement
+
+Removes a physical device from a placement.
 
 Type annotations for
 `boto3.client("iot1click-projects").disassociate_device_from_placement` method.
 
 Boto3 documentation:
 [IoT1ClickProjects.Client.disassociate_device_from_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.disassociate_device_from_placement)
+
+Arguments mapping described in
+[DisassociateDeviceFromPlacementRequestTypeDef](./type_defs.md#disassociatedevicefromplacementrequesttypedef).
 
 Keyword-only arguments:
 
@@ -211,6 +253,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for
 `boto3.client("iot1click-projects").generate_presigned_url` method.
@@ -229,11 +273,16 @@ Returns `str`.
 
 ### get_devices_in_placement
 
+Returns an object enumerating the devices in a placement.
+
 Type annotations for
 `boto3.client("iot1click-projects").get_devices_in_placement` method.
 
 Boto3 documentation:
 [IoT1ClickProjects.Client.get_devices_in_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.get_devices_in_placement)
+
+Arguments mapping described in
+[GetDevicesInPlacementRequestTypeDef](./type_defs.md#getdevicesinplacementrequesttypedef).
 
 Keyword-only arguments:
 
@@ -241,15 +290,20 @@ Keyword-only arguments:
 - `placementName`: `str` *(required)*
 
 Returns
-[GetDevicesInPlacementResponseTypeDef](./type_defs.md#getdevicesinplacementresponsetypedef).
+[GetDevicesInPlacementResponseResponseTypeDef](./type_defs.md#getdevicesinplacementresponseresponsetypedef).
 
 ### list_placements
+
+Lists the placement(s) of a project.
 
 Type annotations for `boto3.client("iot1click-projects").list_placements`
 method.
 
 Boto3 documentation:
 [IoT1ClickProjects.Client.list_placements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.list_placements)
+
+Arguments mapping described in
+[ListPlacementsRequestTypeDef](./type_defs.md#listplacementsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -258,14 +312,20 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListPlacementsResponseTypeDef](./type_defs.md#listplacementsresponsetypedef).
+[ListPlacementsResponseResponseTypeDef](./type_defs.md#listplacementsresponseresponsetypedef).
 
 ### list_projects
+
+Lists the AWS IoT 1-Click project(s) associated with your AWS account and
+region.
 
 Type annotations for `boto3.client("iot1click-projects").list_projects` method.
 
 Boto3 documentation:
 [IoT1ClickProjects.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.list_projects)
+
+Arguments mapping described in
+[ListProjectsRequestTypeDef](./type_defs.md#listprojectsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -273,9 +333,12 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef).
+[ListProjectsResponseResponseTypeDef](./type_defs.md#listprojectsresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Lists the tags (metadata key/value pairs) which you have assigned to the
+resource.
 
 Type annotations for
 `boto3.client("iot1click-projects").list_tags_for_resource` method.
@@ -283,19 +346,27 @@ Type annotations for
 Boto3 documentation:
 [IoT1ClickProjects.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### tag_resource
+
+Creates or modifies tags for a resource.
 
 Type annotations for `boto3.client("iot1click-projects").tag_resource` method.
 
 Boto3 documentation:
 [IoT1ClickProjects.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -306,11 +377,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Removes one or more tags (metadata key/value pairs) from a resource.
+
 Type annotations for `boto3.client("iot1click-projects").untag_resource`
 method.
 
 Boto3 documentation:
 [IoT1ClickProjects.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -321,11 +397,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_placement
 
+Updates a placement with the given attributes.
+
 Type annotations for `boto3.client("iot1click-projects").update_placement`
 method.
 
 Boto3 documentation:
 [IoT1ClickProjects.Client.update_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.update_placement)
+
+Arguments mapping described in
+[UpdatePlacementRequestTypeDef](./type_defs.md#updateplacementrequesttypedef).
 
 Keyword-only arguments:
 
@@ -337,11 +418,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_project
 
+Updates a project associated with your AWS account and region.
+
 Type annotations for `boto3.client("iot1click-projects").update_project`
 method.
 
 Boto3 documentation:
 [IoT1ClickProjects.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.update_project)
+
+Arguments mapping described in
+[UpdateProjectRequestTypeDef](./type_defs.md#updateprojectrequesttypedef).
 
 Keyword-only arguments:
 

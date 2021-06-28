@@ -82,11 +82,16 @@ Exceptions:
 
 ### add_lf_tags_to_resource
 
+Attaches one or more tags to an existing resource.
+
 Type annotations for `boto3.client("lakeformation").add_lf_tags_to_resource`
 method.
 
 Boto3 documentation:
 [LakeFormation.Client.add_lf_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.add_lf_tags_to_resource)
+
+Arguments mapping described in
+[AddLFTagsToResourceRequestTypeDef](./type_defs.md#addlftagstoresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -96,9 +101,11 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns
-[AddLFTagsToResourceResponseTypeDef](./type_defs.md#addlftagstoresourceresponsetypedef).
+[AddLFTagsToResourceResponseResponseTypeDef](./type_defs.md#addlftagstoresourceresponseresponsetypedef).
 
 ### batch_grant_permissions
+
+Batch operation to grant permissions to the principal.
 
 Type annotations for `boto3.client("lakeformation").batch_grant_permissions`
 method.
@@ -106,6 +113,9 @@ method.
 Boto3 documentation:
 [LakeFormation.Client.batch_grant_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.batch_grant_permissions)
 
+Arguments mapping described in
+[BatchGrantPermissionsRequestTypeDef](./type_defs.md#batchgrantpermissionsrequesttypedef).
+
 Keyword-only arguments:
 
 - `Entries`:
@@ -114,9 +124,11 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns
-[BatchGrantPermissionsResponseTypeDef](./type_defs.md#batchgrantpermissionsresponsetypedef).
+[BatchGrantPermissionsResponseResponseTypeDef](./type_defs.md#batchgrantpermissionsresponseresponsetypedef).
 
 ### batch_revoke_permissions
+
+Batch operation to revoke permissions from the principal.
 
 Type annotations for `boto3.client("lakeformation").batch_revoke_permissions`
 method.
@@ -124,6 +136,9 @@ method.
 Boto3 documentation:
 [LakeFormation.Client.batch_revoke_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.batch_revoke_permissions)
 
+Arguments mapping described in
+[BatchRevokePermissionsRequestTypeDef](./type_defs.md#batchrevokepermissionsrequesttypedef).
+
 Keyword-only arguments:
 
 - `Entries`:
@@ -132,9 +147,11 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns
-[BatchRevokePermissionsResponseTypeDef](./type_defs.md#batchrevokepermissionsresponsetypedef).
+[BatchRevokePermissionsResponseResponseTypeDef](./type_defs.md#batchrevokepermissionsresponseresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("lakeformation").can_paginate` method.
 
@@ -149,10 +166,15 @@ Returns `bool`.
 
 ### create_lf_tag
 
+Creates a tag with the specified name and values.
+
 Type annotations for `boto3.client("lakeformation").create_lf_tag` method.
 
 Boto3 documentation:
 [LakeFormation.Client.create_lf_tag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.create_lf_tag)
+
+Arguments mapping described in
+[CreateLFTagRequestTypeDef](./type_defs.md#createlftagrequesttypedef).
 
 Keyword-only arguments:
 
@@ -164,10 +186,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_lf_tag
 
+Deletes the specified tag key name.
+
 Type annotations for `boto3.client("lakeformation").delete_lf_tag` method.
 
 Boto3 documentation:
 [LakeFormation.Client.delete_lf_tag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.delete_lf_tag)
+
+Arguments mapping described in
+[DeleteLFTagRequestTypeDef](./type_defs.md#deletelftagrequesttypedef).
 
 Keyword-only arguments:
 
@@ -178,11 +205,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### deregister_resource
 
+Deregisters the resource as managed by the Data Catalog.
+
 Type annotations for `boto3.client("lakeformation").deregister_resource`
 method.
 
 Boto3 documentation:
 [LakeFormation.Client.deregister_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.deregister_resource)
+
+Arguments mapping described in
+[DeregisterResourceRequestTypeDef](./type_defs.md#deregisterresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -192,19 +224,27 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_resource
 
+Retrieves the current data access role for the given resource registered in AWS
+Lake Formation.
+
 Type annotations for `boto3.client("lakeformation").describe_resource` method.
 
 Boto3 documentation:
 [LakeFormation.Client.describe_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.describe_resource)
+
+Arguments mapping described in
+[DescribeResourceRequestTypeDef](./type_defs.md#describeresourcerequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[DescribeResourceResponseTypeDef](./type_defs.md#describeresourceresponsetypedef).
+[DescribeResourceResponseResponseTypeDef](./type_defs.md#describeresourceresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("lakeformation").generate_presigned_url`
 method.
@@ -223,26 +263,38 @@ Returns `str`.
 
 ### get_data_lake_settings
 
+Retrieves the list of the data lake administrators of a Lake Formation-managed
+data lake.
+
 Type annotations for `boto3.client("lakeformation").get_data_lake_settings`
 method.
 
 Boto3 documentation:
 [LakeFormation.Client.get_data_lake_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_data_lake_settings)
 
+Arguments mapping described in
+[GetDataLakeSettingsRequestTypeDef](./type_defs.md#getdatalakesettingsrequesttypedef).
+
 Keyword-only arguments:
 
 - `CatalogId`: `str`
 
 Returns
-[GetDataLakeSettingsResponseTypeDef](./type_defs.md#getdatalakesettingsresponsetypedef).
+[GetDataLakeSettingsResponseResponseTypeDef](./type_defs.md#getdatalakesettingsresponseresponsetypedef).
 
 ### get_effective_permissions_for_path
+
+Returns the Lake Formation permissions for a specified table or database
+resource located at a path in Amazon S3.
 
 Type annotations for
 `boto3.client("lakeformation").get_effective_permissions_for_path` method.
 
 Boto3 documentation:
 [LakeFormation.Client.get_effective_permissions_for_path](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_effective_permissions_for_path)
+
+Arguments mapping described in
+[GetEffectivePermissionsForPathRequestTypeDef](./type_defs.md#geteffectivepermissionsforpathrequesttypedef).
 
 Keyword-only arguments:
 
@@ -252,29 +304,40 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetEffectivePermissionsForPathResponseTypeDef](./type_defs.md#geteffectivepermissionsforpathresponsetypedef).
+[GetEffectivePermissionsForPathResponseResponseTypeDef](./type_defs.md#geteffectivepermissionsforpathresponseresponsetypedef).
 
 ### get_lf_tag
+
+Returns a tag definition.
 
 Type annotations for `boto3.client("lakeformation").get_lf_tag` method.
 
 Boto3 documentation:
 [LakeFormation.Client.get_lf_tag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_lf_tag)
 
+Arguments mapping described in
+[GetLFTagRequestTypeDef](./type_defs.md#getlftagrequesttypedef).
+
 Keyword-only arguments:
 
 - `TagKey`: `str` *(required)*
 - `CatalogId`: `str`
 
-Returns [GetLFTagResponseTypeDef](./type_defs.md#getlftagresponsetypedef).
+Returns
+[GetLFTagResponseResponseTypeDef](./type_defs.md#getlftagresponseresponsetypedef).
 
 ### get_resource_lf_tags
+
+Returns the tags applied to a resource.
 
 Type annotations for `boto3.client("lakeformation").get_resource_lf_tags`
 method.
 
 Boto3 documentation:
 [LakeFormation.Client.get_resource_lf_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_resource_lf_tags)
+
+Arguments mapping described in
+[GetResourceLFTagsRequestTypeDef](./type_defs.md#getresourcelftagsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -283,14 +346,20 @@ Keyword-only arguments:
 - `ShowAssignedLFTags`: `bool`
 
 Returns
-[GetResourceLFTagsResponseTypeDef](./type_defs.md#getresourcelftagsresponsetypedef).
+[GetResourceLFTagsResponseResponseTypeDef](./type_defs.md#getresourcelftagsresponseresponsetypedef).
 
 ### grant_permissions
+
+Grants permissions to the principal to access metadata in the Data Catalog and
+data organized in underlying data storage such as Amazon S3.
 
 Type annotations for `boto3.client("lakeformation").grant_permissions` method.
 
 Boto3 documentation:
 [LakeFormation.Client.grant_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.grant_permissions)
+
+Arguments mapping described in
+[GrantPermissionsRequestTypeDef](./type_defs.md#grantpermissionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -308,10 +377,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### list_lf_tags
 
+Lists tags that the requester has permission to view.
+
 Type annotations for `boto3.client("lakeformation").list_lf_tags` method.
 
 Boto3 documentation:
 [LakeFormation.Client.list_lf_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_lf_tags)
+
+Arguments mapping described in
+[ListLFTagsRequestTypeDef](./type_defs.md#listlftagsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -321,14 +395,21 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns [ListLFTagsResponseTypeDef](./type_defs.md#listlftagsresponsetypedef).
+Returns
+[ListLFTagsResponseResponseTypeDef](./type_defs.md#listlftagsresponseresponsetypedef).
 
 ### list_permissions
+
+Returns a list of the principal permissions on the resource, filtered by the
+permissions of the caller.
 
 Type annotations for `boto3.client("lakeformation").list_permissions` method.
 
 Boto3 documentation:
 [LakeFormation.Client.list_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_permissions)
+
+Arguments mapping described in
+[ListPermissionsRequestTypeDef](./type_defs.md#listpermissionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -342,14 +423,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef).
+[ListPermissionsResponseResponseTypeDef](./type_defs.md#listpermissionsresponseresponsetypedef).
 
 ### list_resources
+
+Lists the resources registered to be managed by the Data Catalog.
 
 Type annotations for `boto3.client("lakeformation").list_resources` method.
 
 Boto3 documentation:
 [LakeFormation.Client.list_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_resources)
+
+Arguments mapping described in
+[ListResourcesRequestTypeDef](./type_defs.md#listresourcesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -359,15 +445,21 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef).
+[ListResourcesResponseResponseTypeDef](./type_defs.md#listresourcesresponseresponsetypedef).
 
 ### put_data_lake_settings
+
+Sets the list of data lake administrators who have admin privileges on all
+resources managed by Lake Formation.
 
 Type annotations for `boto3.client("lakeformation").put_data_lake_settings`
 method.
 
 Boto3 documentation:
 [LakeFormation.Client.put_data_lake_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.put_data_lake_settings)
+
+Arguments mapping described in
+[PutDataLakeSettingsRequestTypeDef](./type_defs.md#putdatalakesettingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -380,10 +472,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### register_resource
 
+Registers the resource as managed by the Data Catalog.
+
 Type annotations for `boto3.client("lakeformation").register_resource` method.
 
 Boto3 documentation:
 [LakeFormation.Client.register_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.register_resource)
+
+Arguments mapping described in
+[RegisterResourceRequestTypeDef](./type_defs.md#registerresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -395,11 +492,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### remove_lf_tags_from_resource
 
+Removes a tag from the resource.
+
 Type annotations for
 `boto3.client("lakeformation").remove_lf_tags_from_resource` method.
 
 Boto3 documentation:
 [LakeFormation.Client.remove_lf_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.remove_lf_tags_from_resource)
+
+Arguments mapping described in
+[RemoveLFTagsFromResourceRequestTypeDef](./type_defs.md#removelftagsfromresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -409,14 +511,20 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns
-[RemoveLFTagsFromResourceResponseTypeDef](./type_defs.md#removelftagsfromresourceresponsetypedef).
+[RemoveLFTagsFromResourceResponseResponseTypeDef](./type_defs.md#removelftagsfromresourceresponseresponsetypedef).
 
 ### revoke_permissions
+
+Revokes permissions to the principal to access metadata in the Data Catalog and
+data organized in underlying data storage such as Amazon S3.
 
 Type annotations for `boto3.client("lakeformation").revoke_permissions` method.
 
 Boto3 documentation:
 [LakeFormation.Client.revoke_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.revoke_permissions)
+
+Arguments mapping described in
+[RevokePermissionsRequestTypeDef](./type_defs.md#revokepermissionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -434,11 +542,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### search_databases_by_lf_tags
 
+This operation allows a search on `DATABASE` resources by `TagCondition`.
+
 Type annotations for
 `boto3.client("lakeformation").search_databases_by_lf_tags` method.
 
 Boto3 documentation:
 [LakeFormation.Client.search_databases_by_lf_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.search_databases_by_lf_tags)
+
+Arguments mapping described in
+[SearchDatabasesByLFTagsRequestTypeDef](./type_defs.md#searchdatabasesbylftagsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -449,9 +562,11 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns
-[SearchDatabasesByLFTagsResponseTypeDef](./type_defs.md#searchdatabasesbylftagsresponsetypedef).
+[SearchDatabasesByLFTagsResponseResponseTypeDef](./type_defs.md#searchdatabasesbylftagsresponseresponsetypedef).
 
 ### search_tables_by_lf_tags
+
+This operation allows a search on `TABLE` resources by `LFTag` s.
 
 Type annotations for `boto3.client("lakeformation").search_tables_by_lf_tags`
 method.
@@ -459,6 +574,9 @@ method.
 Boto3 documentation:
 [LakeFormation.Client.search_tables_by_lf_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.search_tables_by_lf_tags)
 
+Arguments mapping described in
+[SearchTablesByLFTagsRequestTypeDef](./type_defs.md#searchtablesbylftagsrequesttypedef).
+
 Keyword-only arguments:
 
 - `Expression`: `List`\[[LFTagTypeDef](./type_defs.md#lftagtypedef)\]
@@ -468,14 +586,19 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns
-[SearchTablesByLFTagsResponseTypeDef](./type_defs.md#searchtablesbylftagsresponsetypedef).
+[SearchTablesByLFTagsResponseResponseTypeDef](./type_defs.md#searchtablesbylftagsresponseresponsetypedef).
 
 ### update_lf_tag
+
+Updates the list of possible values for the specified tag key.
 
 Type annotations for `boto3.client("lakeformation").update_lf_tag` method.
 
 Boto3 documentation:
 [LakeFormation.Client.update_lf_tag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.update_lf_tag)
+
+Arguments mapping described in
+[UpdateLFTagRequestTypeDef](./type_defs.md#updatelftagrequesttypedef).
 
 Keyword-only arguments:
 
@@ -488,10 +611,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_resource
 
+Updates the data access role used for vending access to the given (registered)
+resource in AWS Lake Formation.
+
 Type annotations for `boto3.client("lakeformation").update_resource` method.
 
 Boto3 documentation:
 [LakeFormation.Client.update_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.update_resource)
+
+Arguments mapping described in
+[UpdateResourceRequestTypeDef](./type_defs.md#updateresourcerequesttypedef).
 
 Keyword-only arguments:
 

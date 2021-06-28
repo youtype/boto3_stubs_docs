@@ -8,27 +8,42 @@ type annotations stubs module
 [mypy_boto3_support](https://pypi.org/project/mypy-boto3-support/).
 
 - [Typed dictionaries for boto3 Support module](#typed-dictionaries-for-boto3-support-module)
-  - [AddAttachmentsToSetResponseTypeDef](#addattachmentstosetresponsetypedef)
-  - [AddCommunicationToCaseResponseTypeDef](#addcommunicationtocaseresponsetypedef)
+  - [AddAttachmentsToSetRequestTypeDef](#addattachmentstosetrequesttypedef)
+  - [AddAttachmentsToSetResponseResponseTypeDef](#addattachmentstosetresponseresponsetypedef)
+  - [AddCommunicationToCaseRequestTypeDef](#addcommunicationtocaserequesttypedef)
+  - [AddCommunicationToCaseResponseResponseTypeDef](#addcommunicationtocaseresponseresponsetypedef)
   - [AttachmentDetailsTypeDef](#attachmentdetailstypedef)
   - [AttachmentTypeDef](#attachmenttypedef)
   - [CaseDetailsTypeDef](#casedetailstypedef)
   - [CategoryTypeDef](#categorytypedef)
   - [CommunicationTypeDef](#communicationtypedef)
-  - [CreateCaseResponseTypeDef](#createcaseresponsetypedef)
-  - [DescribeAttachmentResponseTypeDef](#describeattachmentresponsetypedef)
-  - [DescribeCasesResponseTypeDef](#describecasesresponsetypedef)
-  - [DescribeCommunicationsResponseTypeDef](#describecommunicationsresponsetypedef)
-  - [DescribeServicesResponseTypeDef](#describeservicesresponsetypedef)
-  - [DescribeSeverityLevelsResponseTypeDef](#describeseveritylevelsresponsetypedef)
-  - [DescribeTrustedAdvisorCheckRefreshStatusesResponseTypeDef](#describetrustedadvisorcheckrefreshstatusesresponsetypedef)
-  - [DescribeTrustedAdvisorCheckResultResponseTypeDef](#describetrustedadvisorcheckresultresponsetypedef)
-  - [DescribeTrustedAdvisorCheckSummariesResponseTypeDef](#describetrustedadvisorchecksummariesresponsetypedef)
-  - [DescribeTrustedAdvisorChecksResponseTypeDef](#describetrustedadvisorchecksresponsetypedef)
+  - [CreateCaseRequestTypeDef](#createcaserequesttypedef)
+  - [CreateCaseResponseResponseTypeDef](#createcaseresponseresponsetypedef)
+  - [DescribeAttachmentRequestTypeDef](#describeattachmentrequesttypedef)
+  - [DescribeAttachmentResponseResponseTypeDef](#describeattachmentresponseresponsetypedef)
+  - [DescribeCasesRequestTypeDef](#describecasesrequesttypedef)
+  - [DescribeCasesResponseResponseTypeDef](#describecasesresponseresponsetypedef)
+  - [DescribeCommunicationsRequestTypeDef](#describecommunicationsrequesttypedef)
+  - [DescribeCommunicationsResponseResponseTypeDef](#describecommunicationsresponseresponsetypedef)
+  - [DescribeServicesRequestTypeDef](#describeservicesrequesttypedef)
+  - [DescribeServicesResponseResponseTypeDef](#describeservicesresponseresponsetypedef)
+  - [DescribeSeverityLevelsRequestTypeDef](#describeseveritylevelsrequesttypedef)
+  - [DescribeSeverityLevelsResponseResponseTypeDef](#describeseveritylevelsresponseresponsetypedef)
+  - [DescribeTrustedAdvisorCheckRefreshStatusesRequestTypeDef](#describetrustedadvisorcheckrefreshstatusesrequesttypedef)
+  - [DescribeTrustedAdvisorCheckRefreshStatusesResponseResponseTypeDef](#describetrustedadvisorcheckrefreshstatusesresponseresponsetypedef)
+  - [DescribeTrustedAdvisorCheckResultRequestTypeDef](#describetrustedadvisorcheckresultrequesttypedef)
+  - [DescribeTrustedAdvisorCheckResultResponseResponseTypeDef](#describetrustedadvisorcheckresultresponseresponsetypedef)
+  - [DescribeTrustedAdvisorCheckSummariesRequestTypeDef](#describetrustedadvisorchecksummariesrequesttypedef)
+  - [DescribeTrustedAdvisorCheckSummariesResponseResponseTypeDef](#describetrustedadvisorchecksummariesresponseresponsetypedef)
+  - [DescribeTrustedAdvisorChecksRequestTypeDef](#describetrustedadvisorchecksrequesttypedef)
+  - [DescribeTrustedAdvisorChecksResponseResponseTypeDef](#describetrustedadvisorchecksresponseresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [RecentCaseCommunicationsTypeDef](#recentcasecommunicationstypedef)
-  - [RefreshTrustedAdvisorCheckResponseTypeDef](#refreshtrustedadvisorcheckresponsetypedef)
-  - [ResolveCaseResponseTypeDef](#resolvecaseresponsetypedef)
+  - [RefreshTrustedAdvisorCheckRequestTypeDef](#refreshtrustedadvisorcheckrequesttypedef)
+  - [RefreshTrustedAdvisorCheckResponseResponseTypeDef](#refreshtrustedadvisorcheckresponseresponsetypedef)
+  - [ResolveCaseRequestTypeDef](#resolvecaserequesttypedef)
+  - [ResolveCaseResponseResponseTypeDef](#resolvecaseresponseresponsetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [ServiceTypeDef](#servicetypedef)
   - [SeverityLevelTypeDef](#severityleveltypedef)
   - [TrustedAdvisorCategorySpecificSummaryTypeDef](#trustedadvisorcategoryspecificsummarytypedef)
@@ -40,26 +55,61 @@ type annotations stubs module
   - [TrustedAdvisorResourceDetailTypeDef](#trustedadvisorresourcedetailtypedef)
   - [TrustedAdvisorResourcesSummaryTypeDef](#trustedadvisorresourcessummarytypedef)
 
-## AddAttachmentsToSetResponseTypeDef
+## AddAttachmentsToSetRequestTypeDef
 
 ```python
-from mypy_boto3_support.type_defs import AddAttachmentsToSetResponseTypeDef
+from mypy_boto3_support.type_defs import AddAttachmentsToSetRequestTypeDef
 ```
+
+Required fields:
+
+- `attachments`:
+  `List`\[[AttachmentTypeDef](./type_defs.md#attachmenttypedef)\]
 
 Optional fields:
 
 - `attachmentSetId`: `str`
-- `expiryTime`: `str`
 
-## AddCommunicationToCaseResponseTypeDef
+## AddAttachmentsToSetResponseResponseTypeDef
 
 ```python
-from mypy_boto3_support.type_defs import AddCommunicationToCaseResponseTypeDef
+from mypy_boto3_support.type_defs import AddAttachmentsToSetResponseResponseTypeDef
 ```
+
+Required fields:
+
+- `attachmentSetId`: `str`
+- `expiryTime`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## AddCommunicationToCaseRequestTypeDef
+
+```python
+from mypy_boto3_support.type_defs import AddCommunicationToCaseRequestTypeDef
+```
+
+Required fields:
+
+- `communicationBody`: `str`
 
 Optional fields:
 
+- `caseId`: `str`
+- `ccEmailAddresses`: `List`\[`str`\]
+- `attachmentSetId`: `str`
+
+## AddCommunicationToCaseResponseResponseTypeDef
+
+```python
+from mypy_boto3_support.type_defs import AddCommunicationToCaseResponseResponseTypeDef
+```
+
+Required fields:
+
 - `result`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## AttachmentDetailsTypeDef
 
@@ -131,113 +181,264 @@ Optional fields:
 - `attachmentSet`:
   `List`\[[AttachmentDetailsTypeDef](./type_defs.md#attachmentdetailstypedef)\]
 
-## CreateCaseResponseTypeDef
+## CreateCaseRequestTypeDef
 
 ```python
-from mypy_boto3_support.type_defs import CreateCaseResponseTypeDef
+from mypy_boto3_support.type_defs import CreateCaseRequestTypeDef
 ```
 
+Required fields:
+
+- `subject`: `str`
+- `communicationBody`: `str`
+
 Optional fields:
+
+- `serviceCode`: `str`
+- `severityCode`: `str`
+- `categoryCode`: `str`
+- `ccEmailAddresses`: `List`\[`str`\]
+- `language`: `str`
+- `issueType`: `str`
+- `attachmentSetId`: `str`
+
+## CreateCaseResponseResponseTypeDef
+
+```python
+from mypy_boto3_support.type_defs import CreateCaseResponseResponseTypeDef
+```
+
+Required fields:
 
 - `caseId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAttachmentResponseTypeDef
+## DescribeAttachmentRequestTypeDef
 
 ```python
-from mypy_boto3_support.type_defs import DescribeAttachmentResponseTypeDef
+from mypy_boto3_support.type_defs import DescribeAttachmentRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `attachmentId`: `str`
+
+## DescribeAttachmentResponseResponseTypeDef
+
+```python
+from mypy_boto3_support.type_defs import DescribeAttachmentResponseResponseTypeDef
+```
+
+Required fields:
 
 - `attachment`: [AttachmentTypeDef](./type_defs.md#attachmenttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeCasesResponseTypeDef
+## DescribeCasesRequestTypeDef
 
 ```python
-from mypy_boto3_support.type_defs import DescribeCasesResponseTypeDef
+from mypy_boto3_support.type_defs import DescribeCasesRequestTypeDef
 ```
 
 Optional fields:
+
+- `caseIdList`: `List`\[`str`\]
+- `displayId`: `str`
+- `afterTime`: `str`
+- `beforeTime`: `str`
+- `includeResolvedCases`: `bool`
+- `nextToken`: `str`
+- `maxResults`: `int`
+- `language`: `str`
+- `includeCommunications`: `bool`
+
+## DescribeCasesResponseResponseTypeDef
+
+```python
+from mypy_boto3_support.type_defs import DescribeCasesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `cases`: `List`\[[CaseDetailsTypeDef](./type_defs.md#casedetailstypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeCommunicationsResponseTypeDef
+## DescribeCommunicationsRequestTypeDef
 
 ```python
-from mypy_boto3_support.type_defs import DescribeCommunicationsResponseTypeDef
+from mypy_boto3_support.type_defs import DescribeCommunicationsRequestTypeDef
 ```
 
+Required fields:
+
+- `caseId`: `str`
+
 Optional fields:
+
+- `beforeTime`: `str`
+- `afterTime`: `str`
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## DescribeCommunicationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_support.type_defs import DescribeCommunicationsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `communications`:
   `List`\[[CommunicationTypeDef](./type_defs.md#communicationtypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeServicesResponseTypeDef
+## DescribeServicesRequestTypeDef
 
 ```python
-from mypy_boto3_support.type_defs import DescribeServicesResponseTypeDef
+from mypy_boto3_support.type_defs import DescribeServicesRequestTypeDef
 ```
 
 Optional fields:
+
+- `serviceCodeList`: `List`\[`str`\]
+- `language`: `str`
+
+## DescribeServicesResponseResponseTypeDef
+
+```python
+from mypy_boto3_support.type_defs import DescribeServicesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `services`: `List`\[[ServiceTypeDef](./type_defs.md#servicetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSeverityLevelsResponseTypeDef
+## DescribeSeverityLevelsRequestTypeDef
 
 ```python
-from mypy_boto3_support.type_defs import DescribeSeverityLevelsResponseTypeDef
+from mypy_boto3_support.type_defs import DescribeSeverityLevelsRequestTypeDef
 ```
 
 Optional fields:
+
+- `language`: `str`
+
+## DescribeSeverityLevelsResponseResponseTypeDef
+
+```python
+from mypy_boto3_support.type_defs import DescribeSeverityLevelsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `severityLevels`:
   `List`\[[SeverityLevelTypeDef](./type_defs.md#severityleveltypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTrustedAdvisorCheckRefreshStatusesResponseTypeDef
+## DescribeTrustedAdvisorCheckRefreshStatusesRequestTypeDef
 
 ```python
-from mypy_boto3_support.type_defs import DescribeTrustedAdvisorCheckRefreshStatusesResponseTypeDef
+from mypy_boto3_support.type_defs import DescribeTrustedAdvisorCheckRefreshStatusesRequestTypeDef
+```
+
+Required fields:
+
+- `checkIds`: `List`\[`str`\]
+
+## DescribeTrustedAdvisorCheckRefreshStatusesResponseResponseTypeDef
+
+```python
+from mypy_boto3_support.type_defs import DescribeTrustedAdvisorCheckRefreshStatusesResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `statuses`:
   `List`\[[TrustedAdvisorCheckRefreshStatusTypeDef](./type_defs.md#trustedadvisorcheckrefreshstatustypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTrustedAdvisorCheckResultResponseTypeDef
+## DescribeTrustedAdvisorCheckResultRequestTypeDef
 
 ```python
-from mypy_boto3_support.type_defs import DescribeTrustedAdvisorCheckResultResponseTypeDef
+from mypy_boto3_support.type_defs import DescribeTrustedAdvisorCheckResultRequestTypeDef
 ```
+
+Required fields:
+
+- `checkId`: `str`
 
 Optional fields:
 
-- `result`:
-  [TrustedAdvisorCheckResultTypeDef](./type_defs.md#trustedadvisorcheckresulttypedef)
+- `language`: `str`
 
-## DescribeTrustedAdvisorCheckSummariesResponseTypeDef
+## DescribeTrustedAdvisorCheckResultResponseResponseTypeDef
 
 ```python
-from mypy_boto3_support.type_defs import DescribeTrustedAdvisorCheckSummariesResponseTypeDef
+from mypy_boto3_support.type_defs import DescribeTrustedAdvisorCheckResultResponseResponseTypeDef
+```
+
+Required fields:
+
+- `result`:
+  [TrustedAdvisorCheckResultTypeDef](./type_defs.md#trustedadvisorcheckresulttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeTrustedAdvisorCheckSummariesRequestTypeDef
+
+```python
+from mypy_boto3_support.type_defs import DescribeTrustedAdvisorCheckSummariesRequestTypeDef
+```
+
+Required fields:
+
+- `checkIds`: `List`\[`str`\]
+
+## DescribeTrustedAdvisorCheckSummariesResponseResponseTypeDef
+
+```python
+from mypy_boto3_support.type_defs import DescribeTrustedAdvisorCheckSummariesResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `summaries`:
   `List`\[[TrustedAdvisorCheckSummaryTypeDef](./type_defs.md#trustedadvisorchecksummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTrustedAdvisorChecksResponseTypeDef
+## DescribeTrustedAdvisorChecksRequestTypeDef
 
 ```python
-from mypy_boto3_support.type_defs import DescribeTrustedAdvisorChecksResponseTypeDef
+from mypy_boto3_support.type_defs import DescribeTrustedAdvisorChecksRequestTypeDef
+```
+
+Required fields:
+
+- `language`: `str`
+
+## DescribeTrustedAdvisorChecksResponseResponseTypeDef
+
+```python
+from mypy_boto3_support.type_defs import DescribeTrustedAdvisorChecksResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `checks`:
   `List`\[[TrustedAdvisorCheckDescriptionTypeDef](./type_defs.md#trustedadvisorcheckdescriptiontypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -263,27 +464,65 @@ Optional fields:
   `List`\[[CommunicationTypeDef](./type_defs.md#communicationtypedef)\]
 - `nextToken`: `str`
 
-## RefreshTrustedAdvisorCheckResponseTypeDef
+## RefreshTrustedAdvisorCheckRequestTypeDef
 
 ```python
-from mypy_boto3_support.type_defs import RefreshTrustedAdvisorCheckResponseTypeDef
+from mypy_boto3_support.type_defs import RefreshTrustedAdvisorCheckRequestTypeDef
+```
+
+Required fields:
+
+- `checkId`: `str`
+
+## RefreshTrustedAdvisorCheckResponseResponseTypeDef
+
+```python
+from mypy_boto3_support.type_defs import RefreshTrustedAdvisorCheckResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `status`:
   [TrustedAdvisorCheckRefreshStatusTypeDef](./type_defs.md#trustedadvisorcheckrefreshstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ResolveCaseResponseTypeDef
+## ResolveCaseRequestTypeDef
 
 ```python
-from mypy_boto3_support.type_defs import ResolveCaseResponseTypeDef
+from mypy_boto3_support.type_defs import ResolveCaseRequestTypeDef
 ```
 
 Optional fields:
 
+- `caseId`: `str`
+
+## ResolveCaseResponseResponseTypeDef
+
+```python
+from mypy_boto3_support.type_defs import ResolveCaseResponseResponseTypeDef
+```
+
+Required fields:
+
 - `initialCaseStatus`: `str`
 - `finalCaseStatus`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_support.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## ServiceTypeDef
 

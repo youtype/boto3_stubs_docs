@@ -8,35 +8,48 @@ type annotations stubs module
 [mypy_boto3_honeycode](https://pypi.org/project/mypy-boto3-honeycode/).
 
 - [Typed dictionaries for boto3 Honeycode module](#typed-dictionaries-for-boto3-honeycode-module)
-  - [BatchCreateTableRowsResultTypeDef](#batchcreatetablerowsresulttypedef)
-  - [BatchDeleteTableRowsResultTypeDef](#batchdeletetablerowsresulttypedef)
-  - [BatchUpdateTableRowsResultTypeDef](#batchupdatetablerowsresulttypedef)
-  - [BatchUpsertTableRowsResultTypeDef](#batchupserttablerowsresulttypedef)
+  - [BatchCreateTableRowsRequestTypeDef](#batchcreatetablerowsrequesttypedef)
+  - [BatchCreateTableRowsResultResponseTypeDef](#batchcreatetablerowsresultresponsetypedef)
+  - [BatchDeleteTableRowsRequestTypeDef](#batchdeletetablerowsrequesttypedef)
+  - [BatchDeleteTableRowsResultResponseTypeDef](#batchdeletetablerowsresultresponsetypedef)
+  - [BatchUpdateTableRowsRequestTypeDef](#batchupdatetablerowsrequesttypedef)
+  - [BatchUpdateTableRowsResultResponseTypeDef](#batchupdatetablerowsresultresponsetypedef)
+  - [BatchUpsertTableRowsRequestTypeDef](#batchupserttablerowsrequesttypedef)
+  - [BatchUpsertTableRowsResultResponseTypeDef](#batchupserttablerowsresultresponsetypedef)
   - [CellInputTypeDef](#cellinputtypedef)
   - [CellTypeDef](#celltypedef)
   - [ColumnMetadataTypeDef](#columnmetadatatypedef)
   - [CreateRowDataTypeDef](#createrowdatatypedef)
   - [DataItemTypeDef](#dataitemtypedef)
   - [DelimitedTextImportOptionsTypeDef](#delimitedtextimportoptionstypedef)
-  - [DescribeTableDataImportJobResultTypeDef](#describetabledataimportjobresulttypedef)
+  - [DescribeTableDataImportJobRequestTypeDef](#describetabledataimportjobrequesttypedef)
+  - [DescribeTableDataImportJobResultResponseTypeDef](#describetabledataimportjobresultresponsetypedef)
   - [DestinationOptionsTypeDef](#destinationoptionstypedef)
   - [FailedBatchItemTypeDef](#failedbatchitemtypedef)
   - [FilterTypeDef](#filtertypedef)
-  - [GetScreenDataResultTypeDef](#getscreendataresulttypedef)
+  - [GetScreenDataRequestTypeDef](#getscreendatarequesttypedef)
+  - [GetScreenDataResultResponseTypeDef](#getscreendataresultresponsetypedef)
   - [ImportDataSourceConfigTypeDef](#importdatasourceconfigtypedef)
   - [ImportDataSourceTypeDef](#importdatasourcetypedef)
   - [ImportJobSubmitterTypeDef](#importjobsubmittertypedef)
   - [ImportOptionsTypeDef](#importoptionstypedef)
-  - [InvokeScreenAutomationResultTypeDef](#invokescreenautomationresulttypedef)
-  - [ListTableColumnsResultTypeDef](#listtablecolumnsresulttypedef)
-  - [ListTableRowsResultTypeDef](#listtablerowsresulttypedef)
-  - [ListTablesResultTypeDef](#listtablesresulttypedef)
+  - [InvokeScreenAutomationRequestTypeDef](#invokescreenautomationrequesttypedef)
+  - [InvokeScreenAutomationResultResponseTypeDef](#invokescreenautomationresultresponsetypedef)
+  - [ListTableColumnsRequestTypeDef](#listtablecolumnsrequesttypedef)
+  - [ListTableColumnsResultResponseTypeDef](#listtablecolumnsresultresponsetypedef)
+  - [ListTableRowsRequestTypeDef](#listtablerowsrequesttypedef)
+  - [ListTableRowsResultResponseTypeDef](#listtablerowsresultresponsetypedef)
+  - [ListTablesRequestTypeDef](#listtablesrequesttypedef)
+  - [ListTablesResultResponseTypeDef](#listtablesresultresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [QueryTableRowsResultTypeDef](#querytablerowsresulttypedef)
+  - [QueryTableRowsRequestTypeDef](#querytablerowsrequesttypedef)
+  - [QueryTableRowsResultResponseTypeDef](#querytablerowsresultresponsetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [ResultRowTypeDef](#resultrowtypedef)
   - [ResultSetTypeDef](#resultsettypedef)
   - [SourceDataColumnPropertiesTypeDef](#sourcedatacolumnpropertiestypedef)
-  - [StartTableDataImportJobResultTypeDef](#starttabledataimportjobresulttypedef)
+  - [StartTableDataImportJobRequestTypeDef](#starttabledataimportjobrequesttypedef)
+  - [StartTableDataImportJobResultResponseTypeDef](#starttabledataimportjobresultresponsetypedef)
   - [TableColumnTypeDef](#tablecolumntypedef)
   - [TableDataImportJobMetadataTypeDef](#tabledataimportjobmetadatatypedef)
   - [TableRowTypeDef](#tablerowtypedef)
@@ -46,56 +59,120 @@ type annotations stubs module
   - [UpsertRowsResultTypeDef](#upsertrowsresulttypedef)
   - [VariableValueTypeDef](#variablevaluetypedef)
 
-## BatchCreateTableRowsResultTypeDef
+## BatchCreateTableRowsRequestTypeDef
 
 ```python
-from mypy_boto3_honeycode.type_defs import BatchCreateTableRowsResultTypeDef
+from mypy_boto3_honeycode.type_defs import BatchCreateTableRowsRequestTypeDef
+```
+
+Required fields:
+
+- `workbookId`: `str`
+- `tableId`: `str`
+- `rowsToCreate`:
+  `List`\[[CreateRowDataTypeDef](./type_defs.md#createrowdatatypedef)\]
+
+Optional fields:
+
+- `clientRequestToken`: `str`
+
+## BatchCreateTableRowsResultResponseTypeDef
+
+```python
+from mypy_boto3_honeycode.type_defs import BatchCreateTableRowsResultResponseTypeDef
 ```
 
 Required fields:
 
 - `workbookCursor`: `int`
 - `createdRows`: `Dict`\[`str`, `str`\]
+- `failedBatchItems`:
+  `List`\[[FailedBatchItemTypeDef](./type_defs.md#failedbatchitemtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## BatchDeleteTableRowsRequestTypeDef
+
+```python
+from mypy_boto3_honeycode.type_defs import BatchDeleteTableRowsRequestTypeDef
+```
+
+Required fields:
+
+- `workbookId`: `str`
+- `tableId`: `str`
+- `rowIds`: `List`\[`str`\]
 
 Optional fields:
 
-- `failedBatchItems`:
-  `List`\[[FailedBatchItemTypeDef](./type_defs.md#failedbatchitemtypedef)\]
+- `clientRequestToken`: `str`
 
-## BatchDeleteTableRowsResultTypeDef
+## BatchDeleteTableRowsResultResponseTypeDef
 
 ```python
-from mypy_boto3_honeycode.type_defs import BatchDeleteTableRowsResultTypeDef
+from mypy_boto3_honeycode.type_defs import BatchDeleteTableRowsResultResponseTypeDef
 ```
 
 Required fields:
 
 - `workbookCursor`: `int`
+- `failedBatchItems`:
+  `List`\[[FailedBatchItemTypeDef](./type_defs.md#failedbatchitemtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## BatchUpdateTableRowsRequestTypeDef
+
+```python
+from mypy_boto3_honeycode.type_defs import BatchUpdateTableRowsRequestTypeDef
+```
+
+Required fields:
+
+- `workbookId`: `str`
+- `tableId`: `str`
+- `rowsToUpdate`:
+  `List`\[[UpdateRowDataTypeDef](./type_defs.md#updaterowdatatypedef)\]
 
 Optional fields:
 
-- `failedBatchItems`:
-  `List`\[[FailedBatchItemTypeDef](./type_defs.md#failedbatchitemtypedef)\]
+- `clientRequestToken`: `str`
 
-## BatchUpdateTableRowsResultTypeDef
+## BatchUpdateTableRowsResultResponseTypeDef
 
 ```python
-from mypy_boto3_honeycode.type_defs import BatchUpdateTableRowsResultTypeDef
+from mypy_boto3_honeycode.type_defs import BatchUpdateTableRowsResultResponseTypeDef
 ```
 
 Required fields:
 
 - `workbookCursor`: `int`
+- `failedBatchItems`:
+  `List`\[[FailedBatchItemTypeDef](./type_defs.md#failedbatchitemtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## BatchUpsertTableRowsRequestTypeDef
+
+```python
+from mypy_boto3_honeycode.type_defs import BatchUpsertTableRowsRequestTypeDef
+```
+
+Required fields:
+
+- `workbookId`: `str`
+- `tableId`: `str`
+- `rowsToUpsert`:
+  `List`\[[UpsertRowDataTypeDef](./type_defs.md#upsertrowdatatypedef)\]
 
 Optional fields:
 
-- `failedBatchItems`:
-  `List`\[[FailedBatchItemTypeDef](./type_defs.md#failedbatchitemtypedef)\]
+- `clientRequestToken`: `str`
 
-## BatchUpsertTableRowsResultTypeDef
+## BatchUpsertTableRowsResultResponseTypeDef
 
 ```python
-from mypy_boto3_honeycode.type_defs import BatchUpsertTableRowsResultTypeDef
+from mypy_boto3_honeycode.type_defs import BatchUpsertTableRowsResultResponseTypeDef
 ```
 
 Required fields:
@@ -103,11 +180,10 @@ Required fields:
 - `rows`: `Dict`\[`str`,
   [UpsertRowsResultTypeDef](./type_defs.md#upsertrowsresulttypedef)\]
 - `workbookCursor`: `int`
-
-Optional fields:
-
 - `failedBatchItems`:
   `List`\[[FailedBatchItemTypeDef](./type_defs.md#failedbatchitemtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CellInputTypeDef
 
@@ -184,10 +260,22 @@ Optional fields:
 - `dataCharacterEncoding`:
   [ImportDataCharacterEncodingType](./literals.md#importdatacharacterencodingtype)
 
-## DescribeTableDataImportJobResultTypeDef
+## DescribeTableDataImportJobRequestTypeDef
 
 ```python
-from mypy_boto3_honeycode.type_defs import DescribeTableDataImportJobResultTypeDef
+from mypy_boto3_honeycode.type_defs import DescribeTableDataImportJobRequestTypeDef
+```
+
+Required fields:
+
+- `workbookId`: `str`
+- `tableId`: `str`
+- `jobId`: `str`
+
+## DescribeTableDataImportJobResultResponseTypeDef
+
+```python
+from mypy_boto3_honeycode.type_defs import DescribeTableDataImportJobResultResponseTypeDef
 ```
 
 Required fields:
@@ -197,6 +285,8 @@ Required fields:
 - `message`: `str`
 - `jobMetadata`:
   [TableDataImportJobMetadataTypeDef](./type_defs.md#tabledataimportjobmetadatatypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DestinationOptionsTypeDef
 
@@ -234,10 +324,29 @@ Optional fields:
 
 - `contextRowId`: `str`
 
-## GetScreenDataResultTypeDef
+## GetScreenDataRequestTypeDef
 
 ```python
-from mypy_boto3_honeycode.type_defs import GetScreenDataResultTypeDef
+from mypy_boto3_honeycode.type_defs import GetScreenDataRequestTypeDef
+```
+
+Required fields:
+
+- `workbookId`: `str`
+- `appId`: `str`
+- `screenId`: `str`
+
+Optional fields:
+
+- `variables`: `Dict`\[`str`,
+  [VariableValueTypeDef](./type_defs.md#variablevaluetypedef)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## GetScreenDataResultResponseTypeDef
+
+```python
+from mypy_boto3_honeycode.type_defs import GetScreenDataResultResponseTypeDef
 ```
 
 Required fields:
@@ -245,10 +354,9 @@ Required fields:
 - `results`: `Dict`\[`str`,
   [ResultSetTypeDef](./type_defs.md#resultsettypedef)\]
 - `workbookCursor`: `int`
-
-Optional fields:
-
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ImportDataSourceConfigTypeDef
 
@@ -295,63 +403,129 @@ Optional fields:
 - `delimitedTextOptions`:
   [DelimitedTextImportOptionsTypeDef](./type_defs.md#delimitedtextimportoptionstypedef)
 
-## InvokeScreenAutomationResultTypeDef
+## InvokeScreenAutomationRequestTypeDef
 
 ```python
-from mypy_boto3_honeycode.type_defs import InvokeScreenAutomationResultTypeDef
+from mypy_boto3_honeycode.type_defs import InvokeScreenAutomationRequestTypeDef
+```
+
+Required fields:
+
+- `workbookId`: `str`
+- `appId`: `str`
+- `screenId`: `str`
+- `screenAutomationId`: `str`
+
+Optional fields:
+
+- `variables`: `Dict`\[`str`,
+  [VariableValueTypeDef](./type_defs.md#variablevaluetypedef)\]
+- `rowId`: `str`
+- `clientRequestToken`: `str`
+
+## InvokeScreenAutomationResultResponseTypeDef
+
+```python
+from mypy_boto3_honeycode.type_defs import InvokeScreenAutomationResultResponseTypeDef
 ```
 
 Required fields:
 
 - `workbookCursor`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTableColumnsResultTypeDef
+## ListTableColumnsRequestTypeDef
 
 ```python
-from mypy_boto3_honeycode.type_defs import ListTableColumnsResultTypeDef
+from mypy_boto3_honeycode.type_defs import ListTableColumnsRequestTypeDef
+```
+
+Required fields:
+
+- `workbookId`: `str`
+- `tableId`: `str`
+
+Optional fields:
+
+- `nextToken`: `str`
+
+## ListTableColumnsResultResponseTypeDef
+
+```python
+from mypy_boto3_honeycode.type_defs import ListTableColumnsResultResponseTypeDef
 ```
 
 Required fields:
 
 - `tableColumns`:
   `List`\[[TableColumnTypeDef](./type_defs.md#tablecolumntypedef)\]
+- `nextToken`: `str`
+- `workbookCursor`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListTableRowsRequestTypeDef
+
+```python
+from mypy_boto3_honeycode.type_defs import ListTableRowsRequestTypeDef
+```
+
+Required fields:
+
+- `workbookId`: `str`
+- `tableId`: `str`
 
 Optional fields:
 
+- `rowIds`: `List`\[`str`\]
+- `maxResults`: `int`
 - `nextToken`: `str`
-- `workbookCursor`: `int`
 
-## ListTableRowsResultTypeDef
+## ListTableRowsResultResponseTypeDef
 
 ```python
-from mypy_boto3_honeycode.type_defs import ListTableRowsResultTypeDef
+from mypy_boto3_honeycode.type_defs import ListTableRowsResultResponseTypeDef
 ```
 
 Required fields:
 
 - `columnIds`: `List`\[`str`\]
 - `rows`: `List`\[[TableRowTypeDef](./type_defs.md#tablerowtypedef)\]
+- `rowIdsNotFound`: `List`\[`str`\]
+- `nextToken`: `str`
 - `workbookCursor`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListTablesRequestTypeDef
+
+```python
+from mypy_boto3_honeycode.type_defs import ListTablesRequestTypeDef
+```
+
+Required fields:
+
+- `workbookId`: `str`
 
 Optional fields:
 
-- `rowIdsNotFound`: `List`\[`str`\]
+- `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListTablesResultTypeDef
+## ListTablesResultResponseTypeDef
 
 ```python
-from mypy_boto3_honeycode.type_defs import ListTablesResultTypeDef
+from mypy_boto3_honeycode.type_defs import ListTablesResultResponseTypeDef
 ```
 
 Required fields:
 
 - `tables`: `List`\[[TableTypeDef](./type_defs.md#tabletypedef)\]
-
-Optional fields:
-
 - `nextToken`: `str`
 - `workbookCursor`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -365,21 +539,51 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## QueryTableRowsResultTypeDef
+## QueryTableRowsRequestTypeDef
 
 ```python
-from mypy_boto3_honeycode.type_defs import QueryTableRowsResultTypeDef
+from mypy_boto3_honeycode.type_defs import QueryTableRowsRequestTypeDef
+```
+
+Required fields:
+
+- `workbookId`: `str`
+- `tableId`: `str`
+- `filterFormula`: [FilterTypeDef](./type_defs.md#filtertypedef)
+
+Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## QueryTableRowsResultResponseTypeDef
+
+```python
+from mypy_boto3_honeycode.type_defs import QueryTableRowsResultResponseTypeDef
 ```
 
 Required fields:
 
 - `columnIds`: `List`\[`str`\]
 - `rows`: `List`\[[TableRowTypeDef](./type_defs.md#tablerowtypedef)\]
-- `workbookCursor`: `int`
-
-Optional fields:
-
 - `nextToken`: `str`
+- `workbookCursor`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_honeycode.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## ResultRowTypeDef
 
@@ -417,10 +621,27 @@ Optional fields:
 
 - `columnIndex`: `int`
 
-## StartTableDataImportJobResultTypeDef
+## StartTableDataImportJobRequestTypeDef
 
 ```python
-from mypy_boto3_honeycode.type_defs import StartTableDataImportJobResultTypeDef
+from mypy_boto3_honeycode.type_defs import StartTableDataImportJobRequestTypeDef
+```
+
+Required fields:
+
+- `workbookId`: `str`
+- `dataSource`:
+  [ImportDataSourceTypeDef](./type_defs.md#importdatasourcetypedef)
+- `dataFormat`: `Literal['DELIMITED_TEXT']` (see
+  [ImportSourceDataFormatType](./literals.md#importsourcedataformattype))
+- `destinationTableId`: `str`
+- `importOptions`: [ImportOptionsTypeDef](./type_defs.md#importoptionstypedef)
+- `clientRequestToken`: `str`
+
+## StartTableDataImportJobResultResponseTypeDef
+
+```python
+from mypy_boto3_honeycode.type_defs import StartTableDataImportJobResultResponseTypeDef
 ```
 
 Required fields:
@@ -428,6 +649,8 @@ Required fields:
 - `jobId`: `str`
 - `jobStatus`:
   [TableDataImportJobStatusType](./literals.md#tabledataimportjobstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## TableColumnTypeDef
 

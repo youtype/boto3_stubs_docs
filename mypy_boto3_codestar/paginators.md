@@ -35,7 +35,7 @@ Arguments for `ListProjectsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProjectsPaginator.paginate` returns
-`Iterator`\[[ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef)\].
+`Iterator`\[[ListProjectsResultResponseTypeDef](./type_defs.md#listprojectsresultresponsetypedef)\].
 
 ## ListResourcesPaginator
 
@@ -61,7 +61,7 @@ Arguments for `ListResourcesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResourcesPaginator.paginate` returns
-`Iterator`\[[ListResourcesResultTypeDef](./type_defs.md#listresourcesresulttypedef)\].
+`Iterator`\[[ListResourcesResultResponseTypeDef](./type_defs.md#listresourcesresultresponsetypedef)\].
 
 ## ListTeamMembersPaginator
 
@@ -87,7 +87,7 @@ Arguments for `ListTeamMembersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTeamMembersPaginator.paginate` returns
-`Iterator`\[[ListTeamMembersResultTypeDef](./type_defs.md#listteammembersresulttypedef)\].
+`Iterator`\[[ListTeamMembersResultResponseTypeDef](./type_defs.md#listteammembersresultresponsetypedef)\].
 
 ## ListUserProfilesPaginator
 
@@ -112,4 +112,4 @@ Arguments for `ListUserProfilesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListUserProfilesPaginator.paginate` returns
-`Iterator`\[[ListUserProfilesResultTypeDef](./type_defs.md#listuserprofilesresulttypedef)\].
+`Iterator`\[[ListUserProfilesResultResponseTypeDef](./type_defs.md#listuserprofilesresultresponsetypedef)\].

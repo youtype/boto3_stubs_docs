@@ -24,14 +24,24 @@ type annotations stubs module
   - [AssetPropertyVariantTypeDef](#assetpropertyvarianttypedef)
   - [AttributeTypeDef](#attributetypedef)
   - [ClearTimerActionTypeDef](#cleartimeractiontypedef)
-  - [CreateAlarmModelResponseTypeDef](#createalarmmodelresponsetypedef)
-  - [CreateDetectorModelResponseTypeDef](#createdetectormodelresponsetypedef)
-  - [CreateInputResponseTypeDef](#createinputresponsetypedef)
-  - [DescribeAlarmModelResponseTypeDef](#describealarmmodelresponsetypedef)
-  - [DescribeDetectorModelAnalysisResponseTypeDef](#describedetectormodelanalysisresponsetypedef)
-  - [DescribeDetectorModelResponseTypeDef](#describedetectormodelresponsetypedef)
-  - [DescribeInputResponseTypeDef](#describeinputresponsetypedef)
-  - [DescribeLoggingOptionsResponseTypeDef](#describeloggingoptionsresponsetypedef)
+  - [CreateAlarmModelRequestTypeDef](#createalarmmodelrequesttypedef)
+  - [CreateAlarmModelResponseResponseTypeDef](#createalarmmodelresponseresponsetypedef)
+  - [CreateDetectorModelRequestTypeDef](#createdetectormodelrequesttypedef)
+  - [CreateDetectorModelResponseResponseTypeDef](#createdetectormodelresponseresponsetypedef)
+  - [CreateInputRequestTypeDef](#createinputrequesttypedef)
+  - [CreateInputResponseResponseTypeDef](#createinputresponseresponsetypedef)
+  - [DeleteAlarmModelRequestTypeDef](#deletealarmmodelrequesttypedef)
+  - [DeleteDetectorModelRequestTypeDef](#deletedetectormodelrequesttypedef)
+  - [DeleteInputRequestTypeDef](#deleteinputrequesttypedef)
+  - [DescribeAlarmModelRequestTypeDef](#describealarmmodelrequesttypedef)
+  - [DescribeAlarmModelResponseResponseTypeDef](#describealarmmodelresponseresponsetypedef)
+  - [DescribeDetectorModelAnalysisRequestTypeDef](#describedetectormodelanalysisrequesttypedef)
+  - [DescribeDetectorModelAnalysisResponseResponseTypeDef](#describedetectormodelanalysisresponseresponsetypedef)
+  - [DescribeDetectorModelRequestTypeDef](#describedetectormodelrequesttypedef)
+  - [DescribeDetectorModelResponseResponseTypeDef](#describedetectormodelresponseresponsetypedef)
+  - [DescribeInputRequestTypeDef](#describeinputrequesttypedef)
+  - [DescribeInputResponseResponseTypeDef](#describeinputresponseresponsetypedef)
+  - [DescribeLoggingOptionsResponseResponseTypeDef](#describeloggingoptionsresponseresponsetypedef)
   - [DetectorDebugOptionTypeDef](#detectordebugoptiontypedef)
   - [DetectorModelConfigurationTypeDef](#detectormodelconfigurationtypedef)
   - [DetectorModelDefinitionTypeDef](#detectormodeldefinitiontypedef)
@@ -45,7 +55,8 @@ type annotations stubs module
   - [EmailRecipientsTypeDef](#emailrecipientstypedef)
   - [EventTypeDef](#eventtypedef)
   - [FirehoseActionTypeDef](#firehoseactiontypedef)
-  - [GetDetectorModelAnalysisResultsResponseTypeDef](#getdetectormodelanalysisresultsresponsetypedef)
+  - [GetDetectorModelAnalysisResultsRequestTypeDef](#getdetectormodelanalysisresultsrequesttypedef)
+  - [GetDetectorModelAnalysisResultsResponseResponseTypeDef](#getdetectormodelanalysisresultsresponseresponsetypedef)
   - [InitializationConfigurationTypeDef](#initializationconfigurationtypedef)
   - [InputConfigurationTypeDef](#inputconfigurationtypedef)
   - [InputDefinitionTypeDef](#inputdefinitiontypedef)
@@ -59,13 +70,20 @@ type annotations stubs module
   - [IotSiteWiseInputIdentifierTypeDef](#iotsitewiseinputidentifiertypedef)
   - [IotTopicPublishActionTypeDef](#iottopicpublishactiontypedef)
   - [LambdaActionTypeDef](#lambdaactiontypedef)
-  - [ListAlarmModelVersionsResponseTypeDef](#listalarmmodelversionsresponsetypedef)
-  - [ListAlarmModelsResponseTypeDef](#listalarmmodelsresponsetypedef)
-  - [ListDetectorModelVersionsResponseTypeDef](#listdetectormodelversionsresponsetypedef)
-  - [ListDetectorModelsResponseTypeDef](#listdetectormodelsresponsetypedef)
-  - [ListInputRoutingsResponseTypeDef](#listinputroutingsresponsetypedef)
-  - [ListInputsResponseTypeDef](#listinputsresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListAlarmModelVersionsRequestTypeDef](#listalarmmodelversionsrequesttypedef)
+  - [ListAlarmModelVersionsResponseResponseTypeDef](#listalarmmodelversionsresponseresponsetypedef)
+  - [ListAlarmModelsRequestTypeDef](#listalarmmodelsrequesttypedef)
+  - [ListAlarmModelsResponseResponseTypeDef](#listalarmmodelsresponseresponsetypedef)
+  - [ListDetectorModelVersionsRequestTypeDef](#listdetectormodelversionsrequesttypedef)
+  - [ListDetectorModelVersionsResponseResponseTypeDef](#listdetectormodelversionsresponseresponsetypedef)
+  - [ListDetectorModelsRequestTypeDef](#listdetectormodelsrequesttypedef)
+  - [ListDetectorModelsResponseResponseTypeDef](#listdetectormodelsresponseresponsetypedef)
+  - [ListInputRoutingsRequestTypeDef](#listinputroutingsrequesttypedef)
+  - [ListInputRoutingsResponseResponseTypeDef](#listinputroutingsresponseresponsetypedef)
+  - [ListInputsRequestTypeDef](#listinputsrequesttypedef)
+  - [ListInputsResponseResponseTypeDef](#listinputsresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [LoggingOptionsTypeDef](#loggingoptionstypedef)
   - [NotificationActionTypeDef](#notificationactiontypedef)
   - [NotificationTargetActionsTypeDef](#notificationtargetactionstypedef)
@@ -73,8 +91,10 @@ type annotations stubs module
   - [OnExitLifecycleTypeDef](#onexitlifecycletypedef)
   - [OnInputLifecycleTypeDef](#oninputlifecycletypedef)
   - [PayloadTypeDef](#payloadtypedef)
+  - [PutLoggingOptionsRequestTypeDef](#putloggingoptionsrequesttypedef)
   - [RecipientDetailTypeDef](#recipientdetailtypedef)
   - [ResetTimerActionTypeDef](#resettimeractiontypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RoutedResourceTypeDef](#routedresourcetypedef)
   - [SMSConfigurationTypeDef](#smsconfigurationtypedef)
   - [SNSTopicPublishActionTypeDef](#snstopicpublishactiontypedef)
@@ -83,13 +103,19 @@ type annotations stubs module
   - [SetVariableActionTypeDef](#setvariableactiontypedef)
   - [SimpleRuleTypeDef](#simpleruletypedef)
   - [SqsActionTypeDef](#sqsactiontypedef)
-  - [StartDetectorModelAnalysisResponseTypeDef](#startdetectormodelanalysisresponsetypedef)
+  - [StartDetectorModelAnalysisRequestTypeDef](#startdetectormodelanalysisrequesttypedef)
+  - [StartDetectorModelAnalysisResponseResponseTypeDef](#startdetectormodelanalysisresponseresponsetypedef)
   - [StateTypeDef](#statetypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TransitionEventTypeDef](#transitioneventtypedef)
-  - [UpdateAlarmModelResponseTypeDef](#updatealarmmodelresponsetypedef)
-  - [UpdateDetectorModelResponseTypeDef](#updatedetectormodelresponsetypedef)
-  - [UpdateInputResponseTypeDef](#updateinputresponsetypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateAlarmModelRequestTypeDef](#updatealarmmodelrequesttypedef)
+  - [UpdateAlarmModelResponseResponseTypeDef](#updatealarmmodelresponseresponsetypedef)
+  - [UpdateDetectorModelRequestTypeDef](#updatedetectormodelrequesttypedef)
+  - [UpdateDetectorModelResponseResponseTypeDef](#updatedetectormodelresponseresponsetypedef)
+  - [UpdateInputRequestTypeDef](#updateinputrequesttypedef)
+  - [UpdateInputResponseResponseTypeDef](#updateinputresponseresponsetypedef)
 
 ## AcknowledgeFlowTypeDef
 
@@ -312,13 +338,38 @@ Required fields:
 
 - `timerName`: `str`
 
-## CreateAlarmModelResponseTypeDef
+## CreateAlarmModelRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents.type_defs import CreateAlarmModelResponseTypeDef
+from mypy_boto3_iotevents.type_defs import CreateAlarmModelRequestTypeDef
 ```
 
+Required fields:
+
+- `alarmModelName`: `str`
+- `roleArn`: `str`
+- `alarmRule`: [AlarmRuleTypeDef](./type_defs.md#alarmruletypedef)
+
 Optional fields:
+
+- `alarmModelDescription`: `str`
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `key`: `str`
+- `severity`: `int`
+- `alarmNotification`:
+  [AlarmNotificationTypeDef](./type_defs.md#alarmnotificationtypedef)
+- `alarmEventActions`:
+  [AlarmEventActionsTypeDef](./type_defs.md#alarmeventactionstypedef)
+- `alarmCapabilities`:
+  [AlarmCapabilitiesTypeDef](./type_defs.md#alarmcapabilitiestypedef)
+
+## CreateAlarmModelResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents.type_defs import CreateAlarmModelResponseResponseTypeDef
+```
+
+Required fields:
 
 - `creationTime`: `datetime`
 - `alarmModelArn`: `str`
@@ -326,36 +377,124 @@ Optional fields:
 - `lastUpdateTime`: `datetime`
 - `status`:
   [AlarmModelVersionStatusType](./literals.md#alarmmodelversionstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDetectorModelResponseTypeDef
+## CreateDetectorModelRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents.type_defs import CreateDetectorModelResponseTypeDef
+from mypy_boto3_iotevents.type_defs import CreateDetectorModelRequestTypeDef
 ```
 
+Required fields:
+
+- `detectorModelName`: `str`
+- `detectorModelDefinition`:
+  [DetectorModelDefinitionTypeDef](./type_defs.md#detectormodeldefinitiontypedef)
+- `roleArn`: `str`
+
 Optional fields:
+
+- `detectorModelDescription`: `str`
+- `key`: `str`
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `evaluationMethod`:
+  [EvaluationMethodType](./literals.md#evaluationmethodtype)
+
+## CreateDetectorModelResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents.type_defs import CreateDetectorModelResponseResponseTypeDef
+```
+
+Required fields:
 
 - `detectorModelConfiguration`:
   [DetectorModelConfigurationTypeDef](./type_defs.md#detectormodelconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateInputResponseTypeDef
+## CreateInputRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents.type_defs import CreateInputResponseTypeDef
+from mypy_boto3_iotevents.type_defs import CreateInputRequestTypeDef
 ```
 
+Required fields:
+
+- `inputName`: `str`
+- `inputDefinition`:
+  [InputDefinitionTypeDef](./type_defs.md#inputdefinitiontypedef)
+
 Optional fields:
+
+- `inputDescription`: `str`
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateInputResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents.type_defs import CreateInputResponseResponseTypeDef
+```
+
+Required fields:
 
 - `inputConfiguration`:
   [InputConfigurationTypeDef](./type_defs.md#inputconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAlarmModelResponseTypeDef
+## DeleteAlarmModelRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents.type_defs import DescribeAlarmModelResponseTypeDef
+from mypy_boto3_iotevents.type_defs import DeleteAlarmModelRequestTypeDef
 ```
 
+Required fields:
+
+- `alarmModelName`: `str`
+
+## DeleteDetectorModelRequestTypeDef
+
+```python
+from mypy_boto3_iotevents.type_defs import DeleteDetectorModelRequestTypeDef
+```
+
+Required fields:
+
+- `detectorModelName`: `str`
+
+## DeleteInputRequestTypeDef
+
+```python
+from mypy_boto3_iotevents.type_defs import DeleteInputRequestTypeDef
+```
+
+Required fields:
+
+- `inputName`: `str`
+
+## DescribeAlarmModelRequestTypeDef
+
+```python
+from mypy_boto3_iotevents.type_defs import DescribeAlarmModelRequestTypeDef
+```
+
+Required fields:
+
+- `alarmModelName`: `str`
+
 Optional fields:
+
+- `alarmModelVersion`: `str`
+
+## DescribeAlarmModelResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents.type_defs import DescribeAlarmModelResponseResponseTypeDef
+```
+
+Required fields:
 
 - `creationTime`: `datetime`
 - `alarmModelArn`: `str`
@@ -376,47 +515,91 @@ Optional fields:
   [AlarmEventActionsTypeDef](./type_defs.md#alarmeventactionstypedef)
 - `alarmCapabilities`:
   [AlarmCapabilitiesTypeDef](./type_defs.md#alarmcapabilitiestypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDetectorModelAnalysisResponseTypeDef
+## DescribeDetectorModelAnalysisRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents.type_defs import DescribeDetectorModelAnalysisResponseTypeDef
+from mypy_boto3_iotevents.type_defs import DescribeDetectorModelAnalysisRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `analysisId`: `str`
+
+## DescribeDetectorModelAnalysisResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents.type_defs import DescribeDetectorModelAnalysisResponseResponseTypeDef
+```
+
+Required fields:
 
 - `status`: [AnalysisStatusType](./literals.md#analysisstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDetectorModelResponseTypeDef
+## DescribeDetectorModelRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents.type_defs import DescribeDetectorModelResponseTypeDef
+from mypy_boto3_iotevents.type_defs import DescribeDetectorModelRequestTypeDef
 ```
 
+Required fields:
+
+- `detectorModelName`: `str`
+
 Optional fields:
+
+- `detectorModelVersion`: `str`
+
+## DescribeDetectorModelResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents.type_defs import DescribeDetectorModelResponseResponseTypeDef
+```
+
+Required fields:
 
 - `detectorModel`: [DetectorModelTypeDef](./type_defs.md#detectormodeltypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInputResponseTypeDef
+## DescribeInputRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents.type_defs import DescribeInputResponseTypeDef
+from mypy_boto3_iotevents.type_defs import DescribeInputRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `inputName`: `str`
+
+## DescribeInputResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents.type_defs import DescribeInputResponseResponseTypeDef
+```
+
+Required fields:
 
 - `input`: [InputTypeDef](./type_defs.md#inputtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLoggingOptionsResponseTypeDef
+## DescribeLoggingOptionsResponseResponseTypeDef
 
 ```python
-from mypy_boto3_iotevents.type_defs import DescribeLoggingOptionsResponseTypeDef
+from mypy_boto3_iotevents.type_defs import DescribeLoggingOptionsResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `loggingOptions`:
   [LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DetectorDebugOptionTypeDef
 
@@ -611,17 +794,34 @@ Optional fields:
 - `separator`: `str`
 - `payload`: [PayloadTypeDef](./type_defs.md#payloadtypedef)
 
-## GetDetectorModelAnalysisResultsResponseTypeDef
+## GetDetectorModelAnalysisResultsRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents.type_defs import GetDetectorModelAnalysisResultsResponseTypeDef
+from mypy_boto3_iotevents.type_defs import GetDetectorModelAnalysisResultsRequestTypeDef
 ```
 
+Required fields:
+
+- `analysisId`: `str`
+
 Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## GetDetectorModelAnalysisResultsResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents.type_defs import GetDetectorModelAnalysisResultsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `analysisResults`:
   `List`\[[AnalysisResultTypeDef](./type_defs.md#analysisresulttypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## InitializationConfigurationTypeDef
 
@@ -791,87 +991,190 @@ Optional fields:
 
 - `payload`: [PayloadTypeDef](./type_defs.md#payloadtypedef)
 
-## ListAlarmModelVersionsResponseTypeDef
+## ListAlarmModelVersionsRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents.type_defs import ListAlarmModelVersionsResponseTypeDef
+from mypy_boto3_iotevents.type_defs import ListAlarmModelVersionsRequestTypeDef
 ```
 
+Required fields:
+
+- `alarmModelName`: `str`
+
 Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListAlarmModelVersionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents.type_defs import ListAlarmModelVersionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `alarmModelVersionSummaries`:
   `List`\[[AlarmModelVersionSummaryTypeDef](./type_defs.md#alarmmodelversionsummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAlarmModelsResponseTypeDef
+## ListAlarmModelsRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents.type_defs import ListAlarmModelsResponseTypeDef
+from mypy_boto3_iotevents.type_defs import ListAlarmModelsRequestTypeDef
 ```
 
 Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListAlarmModelsResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents.type_defs import ListAlarmModelsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `alarmModelSummaries`:
   `List`\[[AlarmModelSummaryTypeDef](./type_defs.md#alarmmodelsummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDetectorModelVersionsResponseTypeDef
+## ListDetectorModelVersionsRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents.type_defs import ListDetectorModelVersionsResponseTypeDef
+from mypy_boto3_iotevents.type_defs import ListDetectorModelVersionsRequestTypeDef
 ```
 
+Required fields:
+
+- `detectorModelName`: `str`
+
 Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListDetectorModelVersionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents.type_defs import ListDetectorModelVersionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `detectorModelVersionSummaries`:
   `List`\[[DetectorModelVersionSummaryTypeDef](./type_defs.md#detectormodelversionsummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDetectorModelsResponseTypeDef
+## ListDetectorModelsRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents.type_defs import ListDetectorModelsResponseTypeDef
+from mypy_boto3_iotevents.type_defs import ListDetectorModelsRequestTypeDef
 ```
 
 Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListDetectorModelsResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents.type_defs import ListDetectorModelsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `detectorModelSummaries`:
   `List`\[[DetectorModelSummaryTypeDef](./type_defs.md#detectormodelsummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListInputRoutingsResponseTypeDef
+## ListInputRoutingsRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents.type_defs import ListInputRoutingsResponseTypeDef
+from mypy_boto3_iotevents.type_defs import ListInputRoutingsRequestTypeDef
 ```
 
+Required fields:
+
+- `inputIdentifier`:
+  [InputIdentifierTypeDef](./type_defs.md#inputidentifiertypedef)
+
 Optional fields:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListInputRoutingsResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents.type_defs import ListInputRoutingsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `routedResources`:
   `List`\[[RoutedResourceTypeDef](./type_defs.md#routedresourcetypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListInputsResponseTypeDef
+## ListInputsRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents.type_defs import ListInputsResponseTypeDef
+from mypy_boto3_iotevents.type_defs import ListInputsRequestTypeDef
 ```
 
 Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListInputsResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents.type_defs import ListInputsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `inputSummaries`:
   `List`\[[InputSummaryTypeDef](./type_defs.md#inputsummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_iotevents.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `resourceArn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LoggingOptionsTypeDef
 
@@ -961,6 +1264,17 @@ Required fields:
 - `contentExpression`: `str`
 - `type`: [PayloadTypeType](./literals.md#payloadtypetype)
 
+## PutLoggingOptionsRequestTypeDef
+
+```python
+from mypy_boto3_iotevents.type_defs import PutLoggingOptionsRequestTypeDef
+```
+
+Required fields:
+
+- `loggingOptions`:
+  [LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef)
+
 ## RecipientDetailTypeDef
 
 ```python
@@ -980,6 +1294,20 @@ from mypy_boto3_iotevents.type_defs import ResetTimerActionTypeDef
 Required fields:
 
 - `timerName`: `str`
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_iotevents.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## RoutedResourceTypeDef
 
@@ -1090,15 +1418,28 @@ Optional fields:
 - `useBase64`: `bool`
 - `payload`: [PayloadTypeDef](./type_defs.md#payloadtypedef)
 
-## StartDetectorModelAnalysisResponseTypeDef
+## StartDetectorModelAnalysisRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents.type_defs import StartDetectorModelAnalysisResponseTypeDef
+from mypy_boto3_iotevents.type_defs import StartDetectorModelAnalysisRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `detectorModelDefinition`:
+  [DetectorModelDefinitionTypeDef](./type_defs.md#detectormodeldefinitiontypedef)
+
+## StartDetectorModelAnalysisResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents.type_defs import StartDetectorModelAnalysisResponseResponseTypeDef
+```
+
+Required fields:
 
 - `analysisId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## StateTypeDef
 
@@ -1115,6 +1456,17 @@ Optional fields:
 - `onInput`: [OnInputLifecycleTypeDef](./type_defs.md#oninputlifecycletypedef)
 - `onEnter`: [OnEnterLifecycleTypeDef](./type_defs.md#onenterlifecycletypedef)
 - `onExit`: [OnExitLifecycleTypeDef](./type_defs.md#onexitlifecycletypedef)
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_iotevents.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1143,13 +1495,47 @@ Optional fields:
 
 - `actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 
-## UpdateAlarmModelResponseTypeDef
+## UntagResourceRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents.type_defs import UpdateAlarmModelResponseTypeDef
+from mypy_boto3_iotevents.type_defs import UntagResourceRequestTypeDef
 ```
 
+Required fields:
+
+- `resourceArn`: `str`
+- `tagKeys`: `List`\[`str`\]
+
+## UpdateAlarmModelRequestTypeDef
+
+```python
+from mypy_boto3_iotevents.type_defs import UpdateAlarmModelRequestTypeDef
+```
+
+Required fields:
+
+- `alarmModelName`: `str`
+- `roleArn`: `str`
+- `alarmRule`: [AlarmRuleTypeDef](./type_defs.md#alarmruletypedef)
+
 Optional fields:
+
+- `alarmModelDescription`: `str`
+- `severity`: `int`
+- `alarmNotification`:
+  [AlarmNotificationTypeDef](./type_defs.md#alarmnotificationtypedef)
+- `alarmEventActions`:
+  [AlarmEventActionsTypeDef](./type_defs.md#alarmeventactionstypedef)
+- `alarmCapabilities`:
+  [AlarmCapabilitiesTypeDef](./type_defs.md#alarmcapabilitiestypedef)
+
+## UpdateAlarmModelResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents.type_defs import UpdateAlarmModelResponseResponseTypeDef
+```
+
+Required fields:
 
 - `creationTime`: `datetime`
 - `alarmModelArn`: `str`
@@ -1157,25 +1543,66 @@ Optional fields:
 - `lastUpdateTime`: `datetime`
 - `status`:
   [AlarmModelVersionStatusType](./literals.md#alarmmodelversionstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateDetectorModelResponseTypeDef
+## UpdateDetectorModelRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents.type_defs import UpdateDetectorModelResponseTypeDef
+from mypy_boto3_iotevents.type_defs import UpdateDetectorModelRequestTypeDef
 ```
 
+Required fields:
+
+- `detectorModelName`: `str`
+- `detectorModelDefinition`:
+  [DetectorModelDefinitionTypeDef](./type_defs.md#detectormodeldefinitiontypedef)
+- `roleArn`: `str`
+
 Optional fields:
+
+- `detectorModelDescription`: `str`
+- `evaluationMethod`:
+  [EvaluationMethodType](./literals.md#evaluationmethodtype)
+
+## UpdateDetectorModelResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents.type_defs import UpdateDetectorModelResponseResponseTypeDef
+```
+
+Required fields:
 
 - `detectorModelConfiguration`:
   [DetectorModelConfigurationTypeDef](./type_defs.md#detectormodelconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateInputResponseTypeDef
+## UpdateInputRequestTypeDef
 
 ```python
-from mypy_boto3_iotevents.type_defs import UpdateInputResponseTypeDef
+from mypy_boto3_iotevents.type_defs import UpdateInputRequestTypeDef
 ```
+
+Required fields:
+
+- `inputName`: `str`
+- `inputDefinition`:
+  [InputDefinitionTypeDef](./type_defs.md#inputdefinitiontypedef)
 
 Optional fields:
 
+- `inputDescription`: `str`
+
+## UpdateInputResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotevents.type_defs import UpdateInputResponseResponseTypeDef
+```
+
+Required fields:
+
 - `inputConfiguration`:
   [InputConfigurationTypeDef](./type_defs.md#inputconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

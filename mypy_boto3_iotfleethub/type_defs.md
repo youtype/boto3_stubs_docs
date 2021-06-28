@@ -9,11 +9,20 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 IoTFleetHub module](#typed-dictionaries-for-boto3-iotfleethub-module)
   - [ApplicationSummaryTypeDef](#applicationsummarytypedef)
-  - [CreateApplicationResponseTypeDef](#createapplicationresponsetypedef)
-  - [DescribeApplicationResponseTypeDef](#describeapplicationresponsetypedef)
-  - [ListApplicationsResponseTypeDef](#listapplicationsresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [CreateApplicationRequestTypeDef](#createapplicationrequesttypedef)
+  - [CreateApplicationResponseResponseTypeDef](#createapplicationresponseresponsetypedef)
+  - [DeleteApplicationRequestTypeDef](#deleteapplicationrequesttypedef)
+  - [DescribeApplicationRequestTypeDef](#describeapplicationrequesttypedef)
+  - [DescribeApplicationResponseResponseTypeDef](#describeapplicationresponseresponsetypedef)
+  - [ListApplicationsRequestTypeDef](#listapplicationsrequesttypedef)
+  - [ListApplicationsResponseResponseTypeDef](#listapplicationsresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateApplicationRequestTypeDef](#updateapplicationrequesttypedef)
 
 ## ApplicationSummaryTypeDef
 
@@ -35,21 +44,64 @@ Optional fields:
 - `applicationState`:
   [ApplicationStateType](./literals.md#applicationstatetype)
 
-## CreateApplicationResponseTypeDef
+## CreateApplicationRequestTypeDef
 
 ```python
-from mypy_boto3_iotfleethub.type_defs import CreateApplicationResponseTypeDef
+from mypy_boto3_iotfleethub.type_defs import CreateApplicationRequestTypeDef
+```
+
+Required fields:
+
+- `applicationName`: `str`
+- `roleArn`: `str`
+
+Optional fields:
+
+- `applicationDescription`: `str`
+- `clientToken`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateApplicationResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotfleethub.type_defs import CreateApplicationResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `applicationId`: `str`
 - `applicationArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeApplicationResponseTypeDef
+## DeleteApplicationRequestTypeDef
 
 ```python
-from mypy_boto3_iotfleethub.type_defs import DescribeApplicationResponseTypeDef
+from mypy_boto3_iotfleethub.type_defs import DeleteApplicationRequestTypeDef
+```
+
+Required fields:
+
+- `applicationId`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
+
+## DescribeApplicationRequestTypeDef
+
+```python
+from mypy_boto3_iotfleethub.type_defs import DescribeApplicationRequestTypeDef
+```
+
+Required fields:
+
+- `applicationId`: `str`
+
+## DescribeApplicationResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotfleethub.type_defs import DescribeApplicationResponseResponseTypeDef
 ```
 
 Required fields:
@@ -57,41 +109,64 @@ Required fields:
 - `applicationId`: `str`
 - `applicationArn`: `str`
 - `applicationName`: `str`
+- `applicationDescription`: `str`
 - `applicationUrl`: `str`
 - `applicationState`:
   [ApplicationStateType](./literals.md#applicationstatetype)
 - `applicationCreationDate`: `int`
 - `applicationLastUpdateDate`: `int`
 - `roleArn`: `str`
-
-Optional fields:
-
-- `applicationDescription`: `str`
 - `ssoClientId`: `str`
 - `errorMessage`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListApplicationsResponseTypeDef
+## ListApplicationsRequestTypeDef
 
 ```python
-from mypy_boto3_iotfleethub.type_defs import ListApplicationsResponseTypeDef
+from mypy_boto3_iotfleethub.type_defs import ListApplicationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `nextToken`: `str`
+
+## ListApplicationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotfleethub.type_defs import ListApplicationsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `applicationSummaries`:
   `List`\[[ApplicationSummaryTypeDef](./type_defs.md#applicationsummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_iotfleethub.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_iotfleethub.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `resourceArn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_iotfleethub.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -104,3 +179,55 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_iotfleethub.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_iotfleethub.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## UntagResourceRequestTypeDef
+
+```python
+from mypy_boto3_iotfleethub.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tagKeys`: `List`\[`str`\]
+
+## UpdateApplicationRequestTypeDef
+
+```python
+from mypy_boto3_iotfleethub.type_defs import UpdateApplicationRequestTypeDef
+```
+
+Required fields:
+
+- `applicationId`: `str`
+
+Optional fields:
+
+- `applicationName`: `str`
+- `applicationDescription`: `str`
+- `clientToken`: `str`

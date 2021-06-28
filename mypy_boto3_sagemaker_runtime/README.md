@@ -52,8 +52,9 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker_runtime.type_defs import InvokeEndpointOutputTypeDef, ...
+from mypy_boto3_sagemaker_runtime.type_defs import InvokeEndpointInputTypeDef, ...
 ```
 
-- [InvokeEndpointOutputTypeDef](./type_defs.md#invokeendpointoutputtypedef)
+- [InvokeEndpointInputTypeDef](./type_defs.md#invokeendpointinputtypedef)
+- [InvokeEndpointOutputResponseTypeDef](./type_defs.md#invokeendpointoutputresponsetypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

@@ -102,25 +102,36 @@ Exceptions:
 
 ### accept_inbound_cross_cluster_search_connection
 
+Allows the destination domain owner to accept an inbound cross-cluster search
+connection request.
+
 Type annotations for
 `boto3.client("es").accept_inbound_cross_cluster_search_connection` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.accept_inbound_cross_cluster_search_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.accept_inbound_cross_cluster_search_connection)
 
+Arguments mapping described in
+[AcceptInboundCrossClusterSearchConnectionRequestTypeDef](./type_defs.md#acceptinboundcrossclustersearchconnectionrequesttypedef).
+
 Keyword-only arguments:
 
 - `CrossClusterSearchConnectionId`: `str` *(required)*
 
 Returns
-[AcceptInboundCrossClusterSearchConnectionResponseTypeDef](./type_defs.md#acceptinboundcrossclustersearchconnectionresponsetypedef).
+[AcceptInboundCrossClusterSearchConnectionResponseResponseTypeDef](./type_defs.md#acceptinboundcrossclustersearchconnectionresponseresponsetypedef).
 
 ### add_tags
+
+Attaches tags to an existing Elasticsearch domain.
 
 Type annotations for `boto3.client("es").add_tags` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.add_tags)
+
+Arguments mapping described in
+[AddTagsRequestTypeDef](./type_defs.md#addtagsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -129,10 +140,15 @@ Keyword-only arguments:
 
 ### associate_package
 
+Associates a package with an Amazon ES domain.
+
 Type annotations for `boto3.client("es").associate_package` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.associate_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.associate_package)
+
+Arguments mapping described in
+[AssociatePackageRequestTypeDef](./type_defs.md#associatepackagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -140,9 +156,11 @@ Keyword-only arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[AssociatePackageResponseTypeDef](./type_defs.md#associatepackageresponsetypedef).
+[AssociatePackageResponseResponseTypeDef](./type_defs.md#associatepackageresponseresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("es").can_paginate` method.
 
@@ -157,25 +175,35 @@ Returns `bool`.
 
 ### cancel_elasticsearch_service_software_update
 
+Cancels a scheduled service software update for an Amazon ES domain.
+
 Type annotations for
 `boto3.client("es").cancel_elasticsearch_service_software_update` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.cancel_elasticsearch_service_software_update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.cancel_elasticsearch_service_software_update)
 
+Arguments mapping described in
+[CancelElasticsearchServiceSoftwareUpdateRequestTypeDef](./type_defs.md#cancelelasticsearchservicesoftwareupdaterequesttypedef).
+
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
 Returns
-[CancelElasticsearchServiceSoftwareUpdateResponseTypeDef](./type_defs.md#cancelelasticsearchservicesoftwareupdateresponsetypedef).
+[CancelElasticsearchServiceSoftwareUpdateResponseResponseTypeDef](./type_defs.md#cancelelasticsearchservicesoftwareupdateresponseresponsetypedef).
 
 ### create_elasticsearch_domain
+
+Creates a new Elasticsearch domain.
 
 Type annotations for `boto3.client("es").create_elasticsearch_domain` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.create_elasticsearch_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.create_elasticsearch_domain)
+
+Arguments mapping described in
+[CreateElasticsearchDomainRequestTypeDef](./type_defs.md#createelasticsearchdomainrequesttypedef).
 
 Keyword-only arguments:
 
@@ -206,15 +234,21 @@ Keyword-only arguments:
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateElasticsearchDomainResponseTypeDef](./type_defs.md#createelasticsearchdomainresponsetypedef).
+[CreateElasticsearchDomainResponseResponseTypeDef](./type_defs.md#createelasticsearchdomainresponseresponsetypedef).
 
 ### create_outbound_cross_cluster_search_connection
+
+Creates a new cross-cluster search connection from a source domain to a
+destination domain.
 
 Type annotations for
 `boto3.client("es").create_outbound_cross_cluster_search_connection` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.create_outbound_cross_cluster_search_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.create_outbound_cross_cluster_search_connection)
+
+Arguments mapping described in
+[CreateOutboundCrossClusterSearchConnectionRequestTypeDef](./type_defs.md#createoutboundcrossclustersearchconnectionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -227,14 +261,19 @@ Keyword-only arguments:
 - `ConnectionAlias`: `str` *(required)*
 
 Returns
-[CreateOutboundCrossClusterSearchConnectionResponseTypeDef](./type_defs.md#createoutboundcrossclustersearchconnectionresponsetypedef).
+[CreateOutboundCrossClusterSearchConnectionResponseResponseTypeDef](./type_defs.md#createoutboundcrossclustersearchconnectionresponseresponsetypedef).
 
 ### create_package
+
+Create a package for use with Amazon ES domains.
 
 Type annotations for `boto3.client("es").create_package` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.create_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.create_package)
+
+Arguments mapping described in
+[CreatePackageRequestTypeDef](./type_defs.md#createpackagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -246,23 +285,31 @@ Keyword-only arguments:
 - `PackageDescription`: `str`
 
 Returns
-[CreatePackageResponseTypeDef](./type_defs.md#createpackageresponsetypedef).
+[CreatePackageResponseResponseTypeDef](./type_defs.md#createpackageresponseresponsetypedef).
 
 ### delete_elasticsearch_domain
+
+Permanently deletes the specified Elasticsearch domain and all of its data.
 
 Type annotations for `boto3.client("es").delete_elasticsearch_domain` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.delete_elasticsearch_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_elasticsearch_domain)
 
+Arguments mapping described in
+[DeleteElasticsearchDomainRequestTypeDef](./type_defs.md#deleteelasticsearchdomainrequesttypedef).
+
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
 Returns
-[DeleteElasticsearchDomainResponseTypeDef](./type_defs.md#deleteelasticsearchdomainresponsetypedef).
+[DeleteElasticsearchDomainResponseResponseTypeDef](./type_defs.md#deleteelasticsearchdomainresponseresponsetypedef).
 
 ### delete_elasticsearch_service_role
+
+Deletes the service-linked role that Elasticsearch Service uses to manage and
+maintain VPC domains.
 
 Type annotations for `boto3.client("es").delete_elasticsearch_service_role`
 method.
@@ -272,20 +319,29 @@ Boto3 documentation:
 
 ### delete_inbound_cross_cluster_search_connection
 
+Allows the destination domain owner to delete an existing inbound cross-cluster
+search connection.
+
 Type annotations for
 `boto3.client("es").delete_inbound_cross_cluster_search_connection` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.delete_inbound_cross_cluster_search_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_inbound_cross_cluster_search_connection)
 
+Arguments mapping described in
+[DeleteInboundCrossClusterSearchConnectionRequestTypeDef](./type_defs.md#deleteinboundcrossclustersearchconnectionrequesttypedef).
+
 Keyword-only arguments:
 
 - `CrossClusterSearchConnectionId`: `str` *(required)*
 
 Returns
-[DeleteInboundCrossClusterSearchConnectionResponseTypeDef](./type_defs.md#deleteinboundcrossclustersearchconnectionresponsetypedef).
+[DeleteInboundCrossClusterSearchConnectionResponseResponseTypeDef](./type_defs.md#deleteinboundcrossclustersearchconnectionresponseresponsetypedef).
 
 ### delete_outbound_cross_cluster_search_connection
+
+Allows the source domain owner to delete an existing outbound cross-cluster
+search connection.
 
 Type annotations for
 `boto3.client("es").delete_outbound_cross_cluster_search_connection` method.
@@ -293,33 +349,47 @@ Type annotations for
 Boto3 documentation:
 [ElasticsearchService.Client.delete_outbound_cross_cluster_search_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_outbound_cross_cluster_search_connection)
 
+Arguments mapping described in
+[DeleteOutboundCrossClusterSearchConnectionRequestTypeDef](./type_defs.md#deleteoutboundcrossclustersearchconnectionrequesttypedef).
+
 Keyword-only arguments:
 
 - `CrossClusterSearchConnectionId`: `str` *(required)*
 
 Returns
-[DeleteOutboundCrossClusterSearchConnectionResponseTypeDef](./type_defs.md#deleteoutboundcrossclustersearchconnectionresponsetypedef).
+[DeleteOutboundCrossClusterSearchConnectionResponseResponseTypeDef](./type_defs.md#deleteoutboundcrossclustersearchconnectionresponseresponsetypedef).
 
 ### delete_package
+
+Delete the package.
 
 Type annotations for `boto3.client("es").delete_package` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.delete_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_package)
 
+Arguments mapping described in
+[DeletePackageRequestTypeDef](./type_defs.md#deletepackagerequesttypedef).
+
 Keyword-only arguments:
 
 - `PackageID`: `str` *(required)*
 
 Returns
-[DeletePackageResponseTypeDef](./type_defs.md#deletepackageresponsetypedef).
+[DeletePackageResponseResponseTypeDef](./type_defs.md#deletepackageresponseresponsetypedef).
 
 ### describe_domain_auto_tunes
+
+Provides scheduled Auto-Tune action details for the Elasticsearch domain, such
+as Auto-Tune action type, description, severity, and scheduled date.
 
 Type annotations for `boto3.client("es").describe_domain_auto_tunes` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.describe_domain_auto_tunes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_domain_auto_tunes)
+
+Arguments mapping described in
+[DescribeDomainAutoTunesRequestTypeDef](./type_defs.md#describedomainautotunesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -328,23 +398,33 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeDomainAutoTunesResponseTypeDef](./type_defs.md#describedomainautotunesresponsetypedef).
+[DescribeDomainAutoTunesResponseResponseTypeDef](./type_defs.md#describedomainautotunesresponseresponsetypedef).
 
 ### describe_elasticsearch_domain
+
+Returns domain configuration information about the specified Elasticsearch
+domain, including the domain ID, domain endpoint, and domain ARN.
 
 Type annotations for `boto3.client("es").describe_elasticsearch_domain` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.describe_elasticsearch_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_domain)
 
+Arguments mapping described in
+[DescribeElasticsearchDomainRequestTypeDef](./type_defs.md#describeelasticsearchdomainrequesttypedef).
+
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
 Returns
-[DescribeElasticsearchDomainResponseTypeDef](./type_defs.md#describeelasticsearchdomainresponsetypedef).
+[DescribeElasticsearchDomainResponseResponseTypeDef](./type_defs.md#describeelasticsearchdomainresponseresponsetypedef).
 
 ### describe_elasticsearch_domain_config
+
+Provides cluster configuration information about the specified Elasticsearch
+domain, such as the state, creation date, update version, and update date for
+cluster options.
 
 Type annotations for `boto3.client("es").describe_elasticsearch_domain_config`
 method.
@@ -352,14 +432,20 @@ method.
 Boto3 documentation:
 [ElasticsearchService.Client.describe_elasticsearch_domain_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_domain_config)
 
+Arguments mapping described in
+[DescribeElasticsearchDomainConfigRequestTypeDef](./type_defs.md#describeelasticsearchdomainconfigrequesttypedef).
+
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
 Returns
-[DescribeElasticsearchDomainConfigResponseTypeDef](./type_defs.md#describeelasticsearchdomainconfigresponsetypedef).
+[DescribeElasticsearchDomainConfigResponseResponseTypeDef](./type_defs.md#describeelasticsearchdomainconfigresponseresponsetypedef).
 
 ### describe_elasticsearch_domains
+
+Returns domain configuration information about the specified Elasticsearch
+domains, including the domain ID, domain endpoint, and domain ARN.
 
 Type annotations for `boto3.client("es").describe_elasticsearch_domains`
 method.
@@ -367,20 +453,29 @@ method.
 Boto3 documentation:
 [ElasticsearchService.Client.describe_elasticsearch_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_domains)
 
+Arguments mapping described in
+[DescribeElasticsearchDomainsRequestTypeDef](./type_defs.md#describeelasticsearchdomainsrequesttypedef).
+
 Keyword-only arguments:
 
 - `DomainNames`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeElasticsearchDomainsResponseTypeDef](./type_defs.md#describeelasticsearchdomainsresponsetypedef).
+[DescribeElasticsearchDomainsResponseResponseTypeDef](./type_defs.md#describeelasticsearchdomainsresponseresponsetypedef).
 
 ### describe_elasticsearch_instance_type_limits
+
+Describe Elasticsearch Limits for a given InstanceType and
+ElasticsearchVersion.
 
 Type annotations for
 `boto3.client("es").describe_elasticsearch_instance_type_limits` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.describe_elasticsearch_instance_type_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_instance_type_limits)
+
+Arguments mapping described in
+[DescribeElasticsearchInstanceTypeLimitsRequestTypeDef](./type_defs.md#describeelasticsearchinstancetypelimitsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -391,9 +486,12 @@ Keyword-only arguments:
 - `DomainName`: `str`
 
 Returns
-[DescribeElasticsearchInstanceTypeLimitsResponseTypeDef](./type_defs.md#describeelasticsearchinstancetypelimitsresponsetypedef).
+[DescribeElasticsearchInstanceTypeLimitsResponseResponseTypeDef](./type_defs.md#describeelasticsearchinstancetypelimitsresponseresponsetypedef).
 
 ### describe_inbound_cross_cluster_search_connections
+
+Lists all the inbound cross-cluster search connections for a destination
+domain.
 
 Type annotations for
 `boto3.client("es").describe_inbound_cross_cluster_search_connections` method.
@@ -401,6 +499,9 @@ Type annotations for
 Boto3 documentation:
 [ElasticsearchService.Client.describe_inbound_cross_cluster_search_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_inbound_cross_cluster_search_connections)
 
+Arguments mapping described in
+[DescribeInboundCrossClusterSearchConnectionsRequestTypeDef](./type_defs.md#describeinboundcrossclustersearchconnectionsrequesttypedef).
+
 Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -408,9 +509,11 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeInboundCrossClusterSearchConnectionsResponseTypeDef](./type_defs.md#describeinboundcrossclustersearchconnectionsresponsetypedef).
+[DescribeInboundCrossClusterSearchConnectionsResponseResponseTypeDef](./type_defs.md#describeinboundcrossclustersearchconnectionsresponseresponsetypedef).
 
 ### describe_outbound_cross_cluster_search_connections
+
+Lists all the outbound cross-cluster search connections for a source domain.
 
 Type annotations for
 `boto3.client("es").describe_outbound_cross_cluster_search_connections` method.
@@ -418,6 +521,9 @@ Type annotations for
 Boto3 documentation:
 [ElasticsearchService.Client.describe_outbound_cross_cluster_search_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_outbound_cross_cluster_search_connections)
 
+Arguments mapping described in
+[DescribeOutboundCrossClusterSearchConnectionsRequestTypeDef](./type_defs.md#describeoutboundcrossclustersearchconnectionsrequesttypedef).
+
 Keyword-only arguments:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
@@ -425,14 +531,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeOutboundCrossClusterSearchConnectionsResponseTypeDef](./type_defs.md#describeoutboundcrossclustersearchconnectionsresponsetypedef).
+[DescribeOutboundCrossClusterSearchConnectionsResponseResponseTypeDef](./type_defs.md#describeoutboundcrossclustersearchconnectionsresponseresponsetypedef).
 
 ### describe_packages
+
+Describes all packages available to Amazon ES.
 
 Type annotations for `boto3.client("es").describe_packages` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.describe_packages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_packages)
+
+Arguments mapping described in
+[DescribePackagesRequestTypeDef](./type_defs.md#describepackagesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -442,15 +553,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribePackagesResponseTypeDef](./type_defs.md#describepackagesresponsetypedef).
+[DescribePackagesResponseResponseTypeDef](./type_defs.md#describepackagesresponseresponsetypedef).
 
 ### describe_reserved_elasticsearch_instance_offerings
+
+Lists available reserved Elasticsearch instance offerings.
 
 Type annotations for
 `boto3.client("es").describe_reserved_elasticsearch_instance_offerings` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.describe_reserved_elasticsearch_instance_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_reserved_elasticsearch_instance_offerings)
+
+Arguments mapping described in
+[DescribeReservedElasticsearchInstanceOfferingsRequestTypeDef](./type_defs.md#describereservedelasticsearchinstanceofferingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -459,15 +575,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeReservedElasticsearchInstanceOfferingsResponseTypeDef](./type_defs.md#describereservedelasticsearchinstanceofferingsresponsetypedef).
+[DescribeReservedElasticsearchInstanceOfferingsResponseResponseTypeDef](./type_defs.md#describereservedelasticsearchinstanceofferingsresponseresponsetypedef).
 
 ### describe_reserved_elasticsearch_instances
+
+Returns information about reserved Elasticsearch instances for this account.
 
 Type annotations for
 `boto3.client("es").describe_reserved_elasticsearch_instances` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.describe_reserved_elasticsearch_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_reserved_elasticsearch_instances)
+
+Arguments mapping described in
+[DescribeReservedElasticsearchInstancesRequestTypeDef](./type_defs.md#describereservedelasticsearchinstancesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -476,14 +597,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeReservedElasticsearchInstancesResponseTypeDef](./type_defs.md#describereservedelasticsearchinstancesresponsetypedef).
+[DescribeReservedElasticsearchInstancesResponseResponseTypeDef](./type_defs.md#describereservedelasticsearchinstancesresponseresponsetypedef).
 
 ### dissociate_package
+
+Dissociates a package from the Amazon ES domain.
 
 Type annotations for `boto3.client("es").dissociate_package` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.dissociate_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.dissociate_package)
+
+Arguments mapping described in
+[DissociatePackageRequestTypeDef](./type_defs.md#dissociatepackagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -491,9 +617,11 @@ Keyword-only arguments:
 - `DomainName`: `str` *(required)*
 
 Returns
-[DissociatePackageResponseTypeDef](./type_defs.md#dissociatepackageresponsetypedef).
+[DissociatePackageResponseResponseTypeDef](./type_defs.md#dissociatepackageresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("es").generate_presigned_url` method.
 
@@ -511,25 +639,36 @@ Returns `str`.
 
 ### get_compatible_elasticsearch_versions
 
+Returns a list of upgrade compatible Elastisearch versions.
+
 Type annotations for `boto3.client("es").get_compatible_elasticsearch_versions`
 method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.get_compatible_elasticsearch_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.get_compatible_elasticsearch_versions)
 
+Arguments mapping described in
+[GetCompatibleElasticsearchVersionsRequestTypeDef](./type_defs.md#getcompatibleelasticsearchversionsrequesttypedef).
+
 Keyword-only arguments:
 
 - `DomainName`: `str`
 
 Returns
-[GetCompatibleElasticsearchVersionsResponseTypeDef](./type_defs.md#getcompatibleelasticsearchversionsresponsetypedef).
+[GetCompatibleElasticsearchVersionsResponseResponseTypeDef](./type_defs.md#getcompatibleelasticsearchversionsresponseresponsetypedef).
 
 ### get_package_version_history
+
+Returns a list of versions of the package, along with their creation time and
+commit message.
 
 Type annotations for `boto3.client("es").get_package_version_history` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.get_package_version_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.get_package_version_history)
+
+Arguments mapping described in
+[GetPackageVersionHistoryRequestTypeDef](./type_defs.md#getpackageversionhistoryrequesttypedef).
 
 Keyword-only arguments:
 
@@ -538,14 +677,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetPackageVersionHistoryResponseTypeDef](./type_defs.md#getpackageversionhistoryresponsetypedef).
+[GetPackageVersionHistoryResponseResponseTypeDef](./type_defs.md#getpackageversionhistoryresponseresponsetypedef).
 
 ### get_upgrade_history
+
+Retrieves the complete history of the last 10 upgrades that were performed on
+the domain.
 
 Type annotations for `boto3.client("es").get_upgrade_history` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.get_upgrade_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.get_upgrade_history)
+
+Arguments mapping described in
+[GetUpgradeHistoryRequestTypeDef](./type_defs.md#getupgradehistoryrequesttypedef).
 
 Keyword-only arguments:
 
@@ -554,23 +699,32 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetUpgradeHistoryResponseTypeDef](./type_defs.md#getupgradehistoryresponsetypedef).
+[GetUpgradeHistoryResponseResponseTypeDef](./type_defs.md#getupgradehistoryresponseresponsetypedef).
 
 ### get_upgrade_status
+
+Retrieves the latest status of the last upgrade or upgrade eligibility check
+that was performed on the domain.
 
 Type annotations for `boto3.client("es").get_upgrade_status` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.get_upgrade_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.get_upgrade_status)
 
+Arguments mapping described in
+[GetUpgradeStatusRequestTypeDef](./type_defs.md#getupgradestatusrequesttypedef).
+
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
 Returns
-[GetUpgradeStatusResponseTypeDef](./type_defs.md#getupgradestatusresponsetypedef).
+[GetUpgradeStatusResponseResponseTypeDef](./type_defs.md#getupgradestatusresponseresponsetypedef).
 
 ### list_domain_names
+
+Returns the name of all Elasticsearch domains owned by the current user's
+account.
 
 Type annotations for `boto3.client("es").list_domain_names` method.
 
@@ -578,14 +732,19 @@ Boto3 documentation:
 [ElasticsearchService.Client.list_domain_names](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_domain_names)
 
 Returns
-[ListDomainNamesResponseTypeDef](./type_defs.md#listdomainnamesresponsetypedef).
+[ListDomainNamesResponseResponseTypeDef](./type_defs.md#listdomainnamesresponseresponsetypedef).
 
 ### list_domains_for_package
+
+Lists all Amazon ES domains associated with the package.
 
 Type annotations for `boto3.client("es").list_domains_for_package` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.list_domains_for_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_domains_for_package)
+
+Arguments mapping described in
+[ListDomainsForPackageRequestTypeDef](./type_defs.md#listdomainsforpackagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -594,15 +753,23 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListDomainsForPackageResponseTypeDef](./type_defs.md#listdomainsforpackageresponsetypedef).
+[ListDomainsForPackageResponseResponseTypeDef](./type_defs.md#listdomainsforpackageresponseresponsetypedef).
 
 ### list_elasticsearch_instance_types
+
+List all Elasticsearch instance types that are supported for given
+ElasticsearchVersion See also:
+`AWS API Documentation <https://docs.aws.amazon.c om/goto/WebAPI/es-2015-01-01/ListElasticsearchInstanceTypes>`\_
+**Request Syntax** response = client.list_elasticsearch_instance_types( ...
 
 Type annotations for `boto3.client("es").list_elasticsearch_instance_types`
 method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.list_elasticsearch_instance_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_elasticsearch_instance_types)
+
+Arguments mapping described in
+[ListElasticsearchInstanceTypesRequestTypeDef](./type_defs.md#listelasticsearchinstancetypesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -612,14 +779,22 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListElasticsearchInstanceTypesResponseTypeDef](./type_defs.md#listelasticsearchinstancetypesresponsetypedef).
+[ListElasticsearchInstanceTypesResponseResponseTypeDef](./type_defs.md#listelasticsearchinstancetypesresponseresponsetypedef).
 
 ### list_elasticsearch_versions
+
+List all supported Elasticsearch versions See also:
+`AWS API Documentation <http s://docs.aws.amazon.com/goto/WebAPI/es-2015-01-01/ListElasticsearchVersions>`\_
+**Request Syntax** response = client.list_elasticsearch_versions(
+MaxResults=123, NextToken='string' ).
 
 Type annotations for `boto3.client("es").list_elasticsearch_versions` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.list_elasticsearch_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_elasticsearch_versions)
+
+Arguments mapping described in
+[ListElasticsearchVersionsRequestTypeDef](./type_defs.md#listelasticsearchversionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -627,14 +802,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListElasticsearchVersionsResponseTypeDef](./type_defs.md#listelasticsearchversionsresponsetypedef).
+[ListElasticsearchVersionsResponseResponseTypeDef](./type_defs.md#listelasticsearchversionsresponseresponsetypedef).
 
 ### list_packages_for_domain
+
+Lists all packages associated with the Amazon ES domain.
 
 Type annotations for `boto3.client("es").list_packages_for_domain` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.list_packages_for_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_packages_for_domain)
+
+Arguments mapping described in
+[ListPackagesForDomainRequestTypeDef](./type_defs.md#listpackagesfordomainrequesttypedef).
 
 Keyword-only arguments:
 
@@ -643,28 +823,39 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListPackagesForDomainResponseTypeDef](./type_defs.md#listpackagesfordomainresponsetypedef).
+[ListPackagesForDomainResponseResponseTypeDef](./type_defs.md#listpackagesfordomainresponseresponsetypedef).
 
 ### list_tags
+
+Returns all tags for the given Elasticsearch domain.
 
 Type annotations for `boto3.client("es").list_tags` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_tags)
 
+Arguments mapping described in
+[ListTagsRequestTypeDef](./type_defs.md#listtagsrequesttypedef).
+
 Keyword-only arguments:
 
 - `ARN`: `str` *(required)*
 
-Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
+Returns
+[ListTagsResponseResponseTypeDef](./type_defs.md#listtagsresponseresponsetypedef).
 
 ### purchase_reserved_elasticsearch_instance_offering
+
+Allows you to purchase reserved Elasticsearch instances.
 
 Type annotations for
 `boto3.client("es").purchase_reserved_elasticsearch_instance_offering` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.purchase_reserved_elasticsearch_instance_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.purchase_reserved_elasticsearch_instance_offering)
+
+Arguments mapping described in
+[PurchaseReservedElasticsearchInstanceOfferingRequestTypeDef](./type_defs.md#purchasereservedelasticsearchinstanceofferingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -673,9 +864,12 @@ Keyword-only arguments:
 - `InstanceCount`: `int`
 
 Returns
-[PurchaseReservedElasticsearchInstanceOfferingResponseTypeDef](./type_defs.md#purchasereservedelasticsearchinstanceofferingresponsetypedef).
+[PurchaseReservedElasticsearchInstanceOfferingResponseResponseTypeDef](./type_defs.md#purchasereservedelasticsearchinstanceofferingresponseresponsetypedef).
 
 ### reject_inbound_cross_cluster_search_connection
+
+Allows the destination domain owner to reject an inbound cross-cluster search
+connection request.
 
 Type annotations for
 `boto3.client("es").reject_inbound_cross_cluster_search_connection` method.
@@ -683,19 +877,27 @@ Type annotations for
 Boto3 documentation:
 [ElasticsearchService.Client.reject_inbound_cross_cluster_search_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.reject_inbound_cross_cluster_search_connection)
 
+Arguments mapping described in
+[RejectInboundCrossClusterSearchConnectionRequestTypeDef](./type_defs.md#rejectinboundcrossclustersearchconnectionrequesttypedef).
+
 Keyword-only arguments:
 
 - `CrossClusterSearchConnectionId`: `str` *(required)*
 
 Returns
-[RejectInboundCrossClusterSearchConnectionResponseTypeDef](./type_defs.md#rejectinboundcrossclustersearchconnectionresponsetypedef).
+[RejectInboundCrossClusterSearchConnectionResponseResponseTypeDef](./type_defs.md#rejectinboundcrossclustersearchconnectionresponseresponsetypedef).
 
 ### remove_tags
+
+Removes the specified set of tags from the specified Elasticsearch domain.
 
 Type annotations for `boto3.client("es").remove_tags` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.remove_tags)
+
+Arguments mapping described in
+[RemoveTagsRequestTypeDef](./type_defs.md#removetagsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -704,26 +906,37 @@ Keyword-only arguments:
 
 ### start_elasticsearch_service_software_update
 
+Schedules a service software update for an Amazon ES domain.
+
 Type annotations for
 `boto3.client("es").start_elasticsearch_service_software_update` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.start_elasticsearch_service_software_update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.start_elasticsearch_service_software_update)
 
+Arguments mapping described in
+[StartElasticsearchServiceSoftwareUpdateRequestTypeDef](./type_defs.md#startelasticsearchservicesoftwareupdaterequesttypedef).
+
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
 Returns
-[StartElasticsearchServiceSoftwareUpdateResponseTypeDef](./type_defs.md#startelasticsearchservicesoftwareupdateresponsetypedef).
+[StartElasticsearchServiceSoftwareUpdateResponseResponseTypeDef](./type_defs.md#startelasticsearchservicesoftwareupdateresponseresponsetypedef).
 
 ### update_elasticsearch_domain_config
+
+Modifies the cluster configuration of the specified Elasticsearch domain,
+setting as setting the instance type and the number of instances.
 
 Type annotations for `boto3.client("es").update_elasticsearch_domain_config`
 method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.update_elasticsearch_domain_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.update_elasticsearch_domain_config)
+
+Arguments mapping described in
+[UpdateElasticsearchDomainConfigRequestTypeDef](./type_defs.md#updateelasticsearchdomainconfigrequesttypedef).
 
 Keyword-only arguments:
 
@@ -752,14 +965,19 @@ Keyword-only arguments:
   [AutoTuneOptionsTypeDef](./type_defs.md#autotuneoptionstypedef)
 
 Returns
-[UpdateElasticsearchDomainConfigResponseTypeDef](./type_defs.md#updateelasticsearchdomainconfigresponsetypedef).
+[UpdateElasticsearchDomainConfigResponseResponseTypeDef](./type_defs.md#updateelasticsearchdomainconfigresponseresponsetypedef).
 
 ### update_package
+
+Updates a package for use with Amazon ES domains.
 
 Type annotations for `boto3.client("es").update_package` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.update_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.update_package)
+
+Arguments mapping described in
+[UpdatePackageRequestTypeDef](./type_defs.md#updatepackagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -770,14 +988,20 @@ Keyword-only arguments:
 - `CommitMessage`: `str`
 
 Returns
-[UpdatePackageResponseTypeDef](./type_defs.md#updatepackageresponsetypedef).
+[UpdatePackageResponseResponseTypeDef](./type_defs.md#updatepackageresponseresponsetypedef).
 
 ### upgrade_elasticsearch_domain
+
+Allows you to either upgrade your domain or perform an Upgrade eligibility
+check to a compatible Elasticsearch version.
 
 Type annotations for `boto3.client("es").upgrade_elasticsearch_domain` method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.upgrade_elasticsearch_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.upgrade_elasticsearch_domain)
+
+Arguments mapping described in
+[UpgradeElasticsearchDomainRequestTypeDef](./type_defs.md#upgradeelasticsearchdomainrequesttypedef).
 
 Keyword-only arguments:
 
@@ -786,7 +1010,7 @@ Keyword-only arguments:
 - `PerformCheckOnly`: `bool`
 
 Returns
-[UpgradeElasticsearchDomainResponseTypeDef](./type_defs.md#upgradeelasticsearchdomainresponsetypedef).
+[UpgradeElasticsearchDomainResponseResponseTypeDef](./type_defs.md#upgradeelasticsearchdomainresponseresponsetypedef).
 
 ### get_paginator
 

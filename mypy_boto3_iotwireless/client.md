@@ -114,12 +114,17 @@ Exceptions:
 
 ### associate_aws_account_with_partner_account
 
+Associates a partner account with your AWS account.
+
 Type annotations for
 `boto3.client("iotwireless").associate_aws_account_with_partner_account`
 method.
 
 Boto3 documentation:
 [IoTWireless.Client.associate_aws_account_with_partner_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.associate_aws_account_with_partner_account)
+
+Arguments mapping described in
+[AssociateAwsAccountWithPartnerAccountRequestTypeDef](./type_defs.md#associateawsaccountwithpartneraccountrequesttypedef).
 
 Keyword-only arguments:
 
@@ -130,15 +135,20 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[AssociateAwsAccountWithPartnerAccountResponseTypeDef](./type_defs.md#associateawsaccountwithpartneraccountresponsetypedef).
+[AssociateAwsAccountWithPartnerAccountResponseResponseTypeDef](./type_defs.md#associateawsaccountwithpartneraccountresponseresponsetypedef).
 
 ### associate_wireless_device_with_thing
+
+Associates a wireless device with a thing.
 
 Type annotations for
 `boto3.client("iotwireless").associate_wireless_device_with_thing` method.
 
 Boto3 documentation:
 [IoTWireless.Client.associate_wireless_device_with_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.associate_wireless_device_with_thing)
+
+Arguments mapping described in
+[AssociateWirelessDeviceWithThingRequestTypeDef](./type_defs.md#associatewirelessdevicewiththingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -149,6 +159,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### associate_wireless_gateway_with_certificate
 
+Associates a wireless gateway with a certificate.
+
 Type annotations for
 `boto3.client("iotwireless").associate_wireless_gateway_with_certificate`
 method.
@@ -156,21 +168,29 @@ method.
 Boto3 documentation:
 [IoTWireless.Client.associate_wireless_gateway_with_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.associate_wireless_gateway_with_certificate)
 
+Arguments mapping described in
+[AssociateWirelessGatewayWithCertificateRequestTypeDef](./type_defs.md#associatewirelessgatewaywithcertificaterequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `IotCertificateId`: `str` *(required)*
 
 Returns
-[AssociateWirelessGatewayWithCertificateResponseTypeDef](./type_defs.md#associatewirelessgatewaywithcertificateresponsetypedef).
+[AssociateWirelessGatewayWithCertificateResponseResponseTypeDef](./type_defs.md#associatewirelessgatewaywithcertificateresponseresponsetypedef).
 
 ### associate_wireless_gateway_with_thing
+
+Associates a wireless gateway with a thing.
 
 Type annotations for
 `boto3.client("iotwireless").associate_wireless_gateway_with_thing` method.
 
 Boto3 documentation:
 [IoTWireless.Client.associate_wireless_gateway_with_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.associate_wireless_gateway_with_thing)
+
+Arguments mapping described in
+[AssociateWirelessGatewayWithThingRequestTypeDef](./type_defs.md#associatewirelessgatewaywiththingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -180,6 +200,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("iotwireless").can_paginate` method.
 
@@ -194,10 +216,15 @@ Returns `bool`.
 
 ### create_destination
 
+Creates a new destination that maps a device message to an AWS IoT rule.
+
 Type annotations for `boto3.client("iotwireless").create_destination` method.
 
 Boto3 documentation:
 [IoTWireless.Client.create_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_destination)
+
+Arguments mapping described in
+[CreateDestinationRequestTypeDef](./type_defs.md#createdestinationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -211,15 +238,20 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 
 Returns
-[CreateDestinationResponseTypeDef](./type_defs.md#createdestinationresponsetypedef).
+[CreateDestinationResponseResponseTypeDef](./type_defs.md#createdestinationresponseresponsetypedef).
 
 ### create_device_profile
+
+Creates a new device profile.
 
 Type annotations for `boto3.client("iotwireless").create_device_profile`
 method.
 
 Boto3 documentation:
 [IoTWireless.Client.create_device_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_device_profile)
+
+Arguments mapping described in
+[CreateDeviceProfileRequestTypeDef](./type_defs.md#createdeviceprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -230,15 +262,20 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 
 Returns
-[CreateDeviceProfileResponseTypeDef](./type_defs.md#createdeviceprofileresponsetypedef).
+[CreateDeviceProfileResponseResponseTypeDef](./type_defs.md#createdeviceprofileresponseresponsetypedef).
 
 ### create_service_profile
+
+Creates a new service profile.
 
 Type annotations for `boto3.client("iotwireless").create_service_profile`
 method.
 
 Boto3 documentation:
 [IoTWireless.Client.create_service_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_service_profile)
+
+Arguments mapping described in
+[CreateServiceProfileRequestTypeDef](./type_defs.md#createserviceprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -249,15 +286,20 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 
 Returns
-[CreateServiceProfileResponseTypeDef](./type_defs.md#createserviceprofileresponsetypedef).
+[CreateServiceProfileResponseResponseTypeDef](./type_defs.md#createserviceprofileresponseresponsetypedef).
 
 ### create_wireless_device
+
+Provisions a wireless device.
 
 Type annotations for `boto3.client("iotwireless").create_wireless_device`
 method.
 
 Boto3 documentation:
 [IoTWireless.Client.create_wireless_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_wireless_device)
+
+Arguments mapping described in
+[CreateWirelessDeviceRequestTypeDef](./type_defs.md#createwirelessdevicerequesttypedef).
 
 Keyword-only arguments:
 
@@ -271,15 +313,20 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateWirelessDeviceResponseTypeDef](./type_defs.md#createwirelessdeviceresponsetypedef).
+[CreateWirelessDeviceResponseResponseTypeDef](./type_defs.md#createwirelessdeviceresponseresponsetypedef).
 
 ### create_wireless_gateway
+
+Provisions a wireless gateway.
 
 Type annotations for `boto3.client("iotwireless").create_wireless_gateway`
 method.
 
 Boto3 documentation:
 [IoTWireless.Client.create_wireless_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_wireless_gateway)
+
+Arguments mapping described in
+[CreateWirelessGatewayRequestTypeDef](./type_defs.md#createwirelessgatewayrequesttypedef).
 
 Keyword-only arguments:
 
@@ -291,9 +338,11 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 
 Returns
-[CreateWirelessGatewayResponseTypeDef](./type_defs.md#createwirelessgatewayresponsetypedef).
+[CreateWirelessGatewayResponseResponseTypeDef](./type_defs.md#createwirelessgatewayresponseresponsetypedef).
 
 ### create_wireless_gateway_task
+
+Creates a task for a wireless gateway.
 
 Type annotations for `boto3.client("iotwireless").create_wireless_gateway_task`
 method.
@@ -301,21 +350,29 @@ method.
 Boto3 documentation:
 [IoTWireless.Client.create_wireless_gateway_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_wireless_gateway_task)
 
+Arguments mapping described in
+[CreateWirelessGatewayTaskRequestTypeDef](./type_defs.md#createwirelessgatewaytaskrequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `WirelessGatewayTaskDefinitionId`: `str` *(required)*
 
 Returns
-[CreateWirelessGatewayTaskResponseTypeDef](./type_defs.md#createwirelessgatewaytaskresponsetypedef).
+[CreateWirelessGatewayTaskResponseResponseTypeDef](./type_defs.md#createwirelessgatewaytaskresponseresponsetypedef).
 
 ### create_wireless_gateway_task_definition
+
+Creates a gateway task definition.
 
 Type annotations for
 `boto3.client("iotwireless").create_wireless_gateway_task_definition` method.
 
 Boto3 documentation:
 [IoTWireless.Client.create_wireless_gateway_task_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.create_wireless_gateway_task_definition)
+
+Arguments mapping described in
+[CreateWirelessGatewayTaskDefinitionRequestTypeDef](./type_defs.md#createwirelessgatewaytaskdefinitionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -327,14 +384,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateWirelessGatewayTaskDefinitionResponseTypeDef](./type_defs.md#createwirelessgatewaytaskdefinitionresponsetypedef).
+[CreateWirelessGatewayTaskDefinitionResponseResponseTypeDef](./type_defs.md#createwirelessgatewaytaskdefinitionresponseresponsetypedef).
 
 ### delete_destination
+
+Deletes a destination.
 
 Type annotations for `boto3.client("iotwireless").delete_destination` method.
 
 Boto3 documentation:
 [IoTWireless.Client.delete_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_destination)
+
+Arguments mapping described in
+[DeleteDestinationRequestTypeDef](./type_defs.md#deletedestinationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -344,11 +406,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_device_profile
 
+Deletes a device profile.
+
 Type annotations for `boto3.client("iotwireless").delete_device_profile`
 method.
 
 Boto3 documentation:
 [IoTWireless.Client.delete_device_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_device_profile)
+
+Arguments mapping described in
+[DeleteDeviceProfileRequestTypeDef](./type_defs.md#deletedeviceprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -358,11 +425,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_service_profile
 
+Deletes a service profile.
+
 Type annotations for `boto3.client("iotwireless").delete_service_profile`
 method.
 
 Boto3 documentation:
 [IoTWireless.Client.delete_service_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_service_profile)
+
+Arguments mapping described in
+[DeleteServiceProfileRequestTypeDef](./type_defs.md#deleteserviceprofilerequesttypedef).
 
 Keyword-only arguments:
 
@@ -372,11 +444,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_wireless_device
 
+Deletes a wireless device.
+
 Type annotations for `boto3.client("iotwireless").delete_wireless_device`
 method.
 
 Boto3 documentation:
 [IoTWireless.Client.delete_wireless_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_wireless_device)
+
+Arguments mapping described in
+[DeleteWirelessDeviceRequestTypeDef](./type_defs.md#deletewirelessdevicerequesttypedef).
 
 Keyword-only arguments:
 
@@ -386,11 +463,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_wireless_gateway
 
+Deletes a wireless gateway.
+
 Type annotations for `boto3.client("iotwireless").delete_wireless_gateway`
 method.
 
 Boto3 documentation:
 [IoTWireless.Client.delete_wireless_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_wireless_gateway)
+
+Arguments mapping described in
+[DeleteWirelessGatewayRequestTypeDef](./type_defs.md#deletewirelessgatewayrequesttypedef).
 
 Keyword-only arguments:
 
@@ -400,11 +482,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_wireless_gateway_task
 
+Deletes a wireless gateway task.
+
 Type annotations for `boto3.client("iotwireless").delete_wireless_gateway_task`
 method.
 
 Boto3 documentation:
 [IoTWireless.Client.delete_wireless_gateway_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_wireless_gateway_task)
+
+Arguments mapping described in
+[DeleteWirelessGatewayTaskRequestTypeDef](./type_defs.md#deletewirelessgatewaytaskrequesttypedef).
 
 Keyword-only arguments:
 
@@ -414,11 +501,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_wireless_gateway_task_definition
 
+Deletes a wireless gateway task definition.
+
 Type annotations for
 `boto3.client("iotwireless").delete_wireless_gateway_task_definition` method.
 
 Boto3 documentation:
 [IoTWireless.Client.delete_wireless_gateway_task_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.delete_wireless_gateway_task_definition)
+
+Arguments mapping described in
+[DeleteWirelessGatewayTaskDefinitionRequestTypeDef](./type_defs.md#deletewirelessgatewaytaskdefinitionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -428,12 +520,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_aws_account_from_partner_account
 
+Disassociates your AWS account from a partner account.
+
 Type annotations for
 `boto3.client("iotwireless").disassociate_aws_account_from_partner_account`
 method.
 
 Boto3 documentation:
 [IoTWireless.Client.disassociate_aws_account_from_partner_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.disassociate_aws_account_from_partner_account)
+
+Arguments mapping described in
+[DisassociateAwsAccountFromPartnerAccountRequestTypeDef](./type_defs.md#disassociateawsaccountfrompartneraccountrequesttypedef).
 
 Keyword-only arguments:
 
@@ -445,11 +542,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_wireless_device_from_thing
 
+Disassociates a wireless device from its currently associated thing.
+
 Type annotations for
 `boto3.client("iotwireless").disassociate_wireless_device_from_thing` method.
 
 Boto3 documentation:
 [IoTWireless.Client.disassociate_wireless_device_from_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.disassociate_wireless_device_from_thing)
+
+Arguments mapping described in
+[DisassociateWirelessDeviceFromThingRequestTypeDef](./type_defs.md#disassociatewirelessdevicefromthingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -459,12 +561,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_wireless_gateway_from_certificate
 
+Disassociates a wireless gateway from its currently associated certificate.
+
 Type annotations for
 `boto3.client("iotwireless").disassociate_wireless_gateway_from_certificate`
 method.
 
 Boto3 documentation:
 [IoTWireless.Client.disassociate_wireless_gateway_from_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.disassociate_wireless_gateway_from_certificate)
+
+Arguments mapping described in
+[DisassociateWirelessGatewayFromCertificateRequestTypeDef](./type_defs.md#disassociatewirelessgatewayfromcertificaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -474,11 +581,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_wireless_gateway_from_thing
 
+Disassociates a wireless gateway from its currently associated thing.
+
 Type annotations for
 `boto3.client("iotwireless").disassociate_wireless_gateway_from_thing` method.
 
 Boto3 documentation:
 [IoTWireless.Client.disassociate_wireless_gateway_from_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.disassociate_wireless_gateway_from_thing)
+
+Arguments mapping described in
+[DisassociateWirelessGatewayFromThingRequestTypeDef](./type_defs.md#disassociatewirelessgatewayfromthingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -487,6 +599,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("iotwireless").generate_presigned_url`
 method.
@@ -505,33 +619,46 @@ Returns `str`.
 
 ### get_destination
 
+Gets information about a destination.
+
 Type annotations for `boto3.client("iotwireless").get_destination` method.
 
 Boto3 documentation:
 [IoTWireless.Client.get_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_destination)
+
+Arguments mapping described in
+[GetDestinationRequestTypeDef](./type_defs.md#getdestinationrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[GetDestinationResponseTypeDef](./type_defs.md#getdestinationresponsetypedef).
+[GetDestinationResponseResponseTypeDef](./type_defs.md#getdestinationresponseresponsetypedef).
 
 ### get_device_profile
+
+Gets information about a device profile.
 
 Type annotations for `boto3.client("iotwireless").get_device_profile` method.
 
 Boto3 documentation:
 [IoTWireless.Client.get_device_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_device_profile)
 
+Arguments mapping described in
+[GetDeviceProfileRequestTypeDef](./type_defs.md#getdeviceprofilerequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[GetDeviceProfileResponseTypeDef](./type_defs.md#getdeviceprofileresponsetypedef).
+[GetDeviceProfileResponseResponseTypeDef](./type_defs.md#getdeviceprofileresponseresponsetypedef).
 
 ### get_log_levels_by_resource_types
+
+Returns current default log-levels, or log levels by resource types, could be
+for wireless device log options or wireless gateway log options.
 
 Type annotations for
 `boto3.client("iotwireless").get_log_levels_by_resource_types` method.
@@ -540,14 +667,19 @@ Boto3 documentation:
 [IoTWireless.Client.get_log_levels_by_resource_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_log_levels_by_resource_types)
 
 Returns
-[GetLogLevelsByResourceTypesResponseTypeDef](./type_defs.md#getloglevelsbyresourcetypesresponsetypedef).
+[GetLogLevelsByResourceTypesResponseResponseTypeDef](./type_defs.md#getloglevelsbyresourcetypesresponseresponsetypedef).
 
 ### get_partner_account
+
+Gets information about a partner account.
 
 Type annotations for `boto3.client("iotwireless").get_partner_account` method.
 
 Boto3 documentation:
 [IoTWireless.Client.get_partner_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_partner_account)
+
+Arguments mapping described in
+[GetPartnerAccountRequestTypeDef](./type_defs.md#getpartneraccountrequesttypedef).
 
 Keyword-only arguments:
 
@@ -556,9 +688,12 @@ Keyword-only arguments:
   [PartnerTypeType](./literals.md#partnertypetype)) *(required)*
 
 Returns
-[GetPartnerAccountResponseTypeDef](./type_defs.md#getpartneraccountresponsetypedef).
+[GetPartnerAccountResponseResponseTypeDef](./type_defs.md#getpartneraccountresponseresponsetypedef).
 
 ### get_resource_log_level
+
+Fetches the log-level override if any for a given resource-ID and
+resource-type, coulde be a wireless device or a wireless gateway.
 
 Type annotations for `boto3.client("iotwireless").get_resource_log_level`
 method.
@@ -566,20 +701,29 @@ method.
 Boto3 documentation:
 [IoTWireless.Client.get_resource_log_level](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_resource_log_level)
 
+Arguments mapping described in
+[GetResourceLogLevelRequestTypeDef](./type_defs.md#getresourceloglevelrequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceIdentifier`: `str` *(required)*
 - `ResourceType`: `str` *(required)*
 
 Returns
-[GetResourceLogLevelResponseTypeDef](./type_defs.md#getresourceloglevelresponsetypedef).
+[GetResourceLogLevelResponseResponseTypeDef](./type_defs.md#getresourceloglevelresponseresponsetypedef).
 
 ### get_service_endpoint
+
+Gets the account-specific endpoint for Configuration and Update Server (CUPS)
+protocol or LoRaWAN Network Server (LNS) connections.
 
 Type annotations for `boto3.client("iotwireless").get_service_endpoint` method.
 
 Boto3 documentation:
 [IoTWireless.Client.get_service_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_service_endpoint)
+
+Arguments mapping described in
+[GetServiceEndpointRequestTypeDef](./type_defs.md#getserviceendpointrequesttypedef).
 
 Keyword-only arguments:
 
@@ -587,28 +731,38 @@ Keyword-only arguments:
   [WirelessGatewayServiceTypeType](./literals.md#wirelessgatewayservicetypetype)
 
 Returns
-[GetServiceEndpointResponseTypeDef](./type_defs.md#getserviceendpointresponsetypedef).
+[GetServiceEndpointResponseResponseTypeDef](./type_defs.md#getserviceendpointresponseresponsetypedef).
 
 ### get_service_profile
+
+Gets information about a service profile.
 
 Type annotations for `boto3.client("iotwireless").get_service_profile` method.
 
 Boto3 documentation:
 [IoTWireless.Client.get_service_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_service_profile)
 
+Arguments mapping described in
+[GetServiceProfileRequestTypeDef](./type_defs.md#getserviceprofilerequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[GetServiceProfileResponseTypeDef](./type_defs.md#getserviceprofileresponsetypedef).
+[GetServiceProfileResponseResponseTypeDef](./type_defs.md#getserviceprofileresponseresponsetypedef).
 
 ### get_wireless_device
+
+Gets information about a wireless device.
 
 Type annotations for `boto3.client("iotwireless").get_wireless_device` method.
 
 Boto3 documentation:
 [IoTWireless.Client.get_wireless_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_device)
+
+Arguments mapping described in
+[GetWirelessDeviceRequestTypeDef](./type_defs.md#getwirelessdevicerequesttypedef).
 
 Keyword-only arguments:
 
@@ -618,9 +772,11 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[GetWirelessDeviceResponseTypeDef](./type_defs.md#getwirelessdeviceresponsetypedef).
+[GetWirelessDeviceResponseResponseTypeDef](./type_defs.md#getwirelessdeviceresponseresponsetypedef).
 
 ### get_wireless_device_statistics
+
+Gets operating information about a wireless device.
 
 Type annotations for
 `boto3.client("iotwireless").get_wireless_device_statistics` method.
@@ -628,19 +784,27 @@ Type annotations for
 Boto3 documentation:
 [IoTWireless.Client.get_wireless_device_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_device_statistics)
 
+Arguments mapping described in
+[GetWirelessDeviceStatisticsRequestTypeDef](./type_defs.md#getwirelessdevicestatisticsrequesttypedef).
+
 Keyword-only arguments:
 
 - `WirelessDeviceId`: `str` *(required)*
 
 Returns
-[GetWirelessDeviceStatisticsResponseTypeDef](./type_defs.md#getwirelessdevicestatisticsresponsetypedef).
+[GetWirelessDeviceStatisticsResponseResponseTypeDef](./type_defs.md#getwirelessdevicestatisticsresponseresponsetypedef).
 
 ### get_wireless_gateway
+
+Gets information about a wireless gateway.
 
 Type annotations for `boto3.client("iotwireless").get_wireless_gateway` method.
 
 Boto3 documentation:
 [IoTWireless.Client.get_wireless_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway)
+
+Arguments mapping described in
+[GetWirelessGatewayRequestTypeDef](./type_defs.md#getwirelessgatewayrequesttypedef).
 
 Keyword-only arguments:
 
@@ -650,9 +814,12 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[GetWirelessGatewayResponseTypeDef](./type_defs.md#getwirelessgatewayresponsetypedef).
+[GetWirelessGatewayResponseResponseTypeDef](./type_defs.md#getwirelessgatewayresponseresponsetypedef).
 
 ### get_wireless_gateway_certificate
+
+Gets the ID of the certificate that is currently associated with a wireless
+gateway.
 
 Type annotations for
 `boto3.client("iotwireless").get_wireless_gateway_certificate` method.
@@ -660,14 +827,19 @@ Type annotations for
 Boto3 documentation:
 [IoTWireless.Client.get_wireless_gateway_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway_certificate)
 
+Arguments mapping described in
+[GetWirelessGatewayCertificateRequestTypeDef](./type_defs.md#getwirelessgatewaycertificaterequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[GetWirelessGatewayCertificateResponseTypeDef](./type_defs.md#getwirelessgatewaycertificateresponsetypedef).
+[GetWirelessGatewayCertificateResponseResponseTypeDef](./type_defs.md#getwirelessgatewaycertificateresponseresponsetypedef).
 
 ### get_wireless_gateway_firmware_information
+
+Gets the firmware version and other information about a wireless gateway.
 
 Type annotations for
 `boto3.client("iotwireless").get_wireless_gateway_firmware_information` method.
@@ -675,14 +847,19 @@ Type annotations for
 Boto3 documentation:
 [IoTWireless.Client.get_wireless_gateway_firmware_information](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway_firmware_information)
 
+Arguments mapping described in
+[GetWirelessGatewayFirmwareInformationRequestTypeDef](./type_defs.md#getwirelessgatewayfirmwareinformationrequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[GetWirelessGatewayFirmwareInformationResponseTypeDef](./type_defs.md#getwirelessgatewayfirmwareinformationresponsetypedef).
+[GetWirelessGatewayFirmwareInformationResponseResponseTypeDef](./type_defs.md#getwirelessgatewayfirmwareinformationresponseresponsetypedef).
 
 ### get_wireless_gateway_statistics
+
+Gets operating information about a wireless gateway.
 
 Type annotations for
 `boto3.client("iotwireless").get_wireless_gateway_statistics` method.
@@ -690,14 +867,19 @@ Type annotations for
 Boto3 documentation:
 [IoTWireless.Client.get_wireless_gateway_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway_statistics)
 
+Arguments mapping described in
+[GetWirelessGatewayStatisticsRequestTypeDef](./type_defs.md#getwirelessgatewaystatisticsrequesttypedef).
+
 Keyword-only arguments:
 
 - `WirelessGatewayId`: `str` *(required)*
 
 Returns
-[GetWirelessGatewayStatisticsResponseTypeDef](./type_defs.md#getwirelessgatewaystatisticsresponsetypedef).
+[GetWirelessGatewayStatisticsResponseResponseTypeDef](./type_defs.md#getwirelessgatewaystatisticsresponseresponsetypedef).
 
 ### get_wireless_gateway_task
+
+Gets information about a wireless gateway task.
 
 Type annotations for `boto3.client("iotwireless").get_wireless_gateway_task`
 method.
@@ -705,14 +887,19 @@ method.
 Boto3 documentation:
 [IoTWireless.Client.get_wireless_gateway_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway_task)
 
+Arguments mapping described in
+[GetWirelessGatewayTaskRequestTypeDef](./type_defs.md#getwirelessgatewaytaskrequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[GetWirelessGatewayTaskResponseTypeDef](./type_defs.md#getwirelessgatewaytaskresponsetypedef).
+[GetWirelessGatewayTaskResponseResponseTypeDef](./type_defs.md#getwirelessgatewaytaskresponseresponsetypedef).
 
 ### get_wireless_gateway_task_definition
+
+Gets information about a wireless gateway task definition.
 
 Type annotations for
 `boto3.client("iotwireless").get_wireless_gateway_task_definition` method.
@@ -720,44 +907,59 @@ Type annotations for
 Boto3 documentation:
 [IoTWireless.Client.get_wireless_gateway_task_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.get_wireless_gateway_task_definition)
 
+Arguments mapping described in
+[GetWirelessGatewayTaskDefinitionRequestTypeDef](./type_defs.md#getwirelessgatewaytaskdefinitionrequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[GetWirelessGatewayTaskDefinitionResponseTypeDef](./type_defs.md#getwirelessgatewaytaskdefinitionresponsetypedef).
+[GetWirelessGatewayTaskDefinitionResponseResponseTypeDef](./type_defs.md#getwirelessgatewaytaskdefinitionresponseresponsetypedef).
 
 ### list_destinations
+
+Lists the destinations registered to your AWS account.
 
 Type annotations for `boto3.client("iotwireless").list_destinations` method.
 
 Boto3 documentation:
 [IoTWireless.Client.list_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_destinations)
 
+Arguments mapping described in
+[ListDestinationsRequestTypeDef](./type_defs.md#listdestinationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListDestinationsResponseTypeDef](./type_defs.md#listdestinationsresponsetypedef).
+[ListDestinationsResponseResponseTypeDef](./type_defs.md#listdestinationsresponseresponsetypedef).
 
 ### list_device_profiles
+
+Lists the device profiles registered to your AWS account.
 
 Type annotations for `boto3.client("iotwireless").list_device_profiles` method.
 
 Boto3 documentation:
 [IoTWireless.Client.list_device_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_device_profiles)
 
+Arguments mapping described in
+[ListDeviceProfilesRequestTypeDef](./type_defs.md#listdeviceprofilesrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListDeviceProfilesResponseTypeDef](./type_defs.md#listdeviceprofilesresponsetypedef).
+[ListDeviceProfilesResponseResponseTypeDef](./type_defs.md#listdeviceprofilesresponseresponsetypedef).
 
 ### list_partner_accounts
+
+Lists the partner accounts associated with your AWS account.
 
 Type annotations for `boto3.client("iotwireless").list_partner_accounts`
 method.
@@ -765,15 +967,20 @@ method.
 Boto3 documentation:
 [IoTWireless.Client.list_partner_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_partner_accounts)
 
+Arguments mapping described in
+[ListPartnerAccountsRequestTypeDef](./type_defs.md#listpartneraccountsrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListPartnerAccountsResponseTypeDef](./type_defs.md#listpartneraccountsresponsetypedef).
+[ListPartnerAccountsResponseResponseTypeDef](./type_defs.md#listpartneraccountsresponseresponsetypedef).
 
 ### list_service_profiles
+
+Lists the service profiles registered to your AWS account.
 
 Type annotations for `boto3.client("iotwireless").list_service_profiles`
 method.
@@ -781,15 +988,20 @@ method.
 Boto3 documentation:
 [IoTWireless.Client.list_service_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_service_profiles)
 
+Arguments mapping described in
+[ListServiceProfilesRequestTypeDef](./type_defs.md#listserviceprofilesrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListServiceProfilesResponseTypeDef](./type_defs.md#listserviceprofilesresponsetypedef).
+[ListServiceProfilesResponseResponseTypeDef](./type_defs.md#listserviceprofilesresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Lists the tags (metadata) you have assigned to the resource.
 
 Type annotations for `boto3.client("iotwireless").list_tags_for_resource`
 method.
@@ -797,20 +1009,28 @@ method.
 Boto3 documentation:
 [IoTWireless.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### list_wireless_devices
+
+Lists the wireless devices registered to your AWS account.
 
 Type annotations for `boto3.client("iotwireless").list_wireless_devices`
 method.
 
 Boto3 documentation:
 [IoTWireless.Client.list_wireless_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_wireless_devices)
+
+Arguments mapping described in
+[ListWirelessDevicesRequestTypeDef](./type_defs.md#listwirelessdevicesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -823,15 +1043,20 @@ Keyword-only arguments:
   [WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype)
 
 Returns
-[ListWirelessDevicesResponseTypeDef](./type_defs.md#listwirelessdevicesresponsetypedef).
+[ListWirelessDevicesResponseResponseTypeDef](./type_defs.md#listwirelessdevicesresponseresponsetypedef).
 
 ### list_wireless_gateway_task_definitions
+
+List the wireless gateway tasks definitions registered to your AWS account.
 
 Type annotations for
 `boto3.client("iotwireless").list_wireless_gateway_task_definitions` method.
 
 Boto3 documentation:
 [IoTWireless.Client.list_wireless_gateway_task_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_wireless_gateway_task_definitions)
+
+Arguments mapping described in
+[ListWirelessGatewayTaskDefinitionsRequestTypeDef](./type_defs.md#listwirelessgatewaytaskdefinitionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -841,9 +1066,11 @@ Keyword-only arguments:
   [WirelessGatewayTaskDefinitionTypeType](./literals.md#wirelessgatewaytaskdefinitiontypetype))
 
 Returns
-[ListWirelessGatewayTaskDefinitionsResponseTypeDef](./type_defs.md#listwirelessgatewaytaskdefinitionsresponsetypedef).
+[ListWirelessGatewayTaskDefinitionsResponseResponseTypeDef](./type_defs.md#listwirelessgatewaytaskdefinitionsresponseresponsetypedef).
 
 ### list_wireless_gateways
+
+Lists the wireless gateways registered to your AWS account.
 
 Type annotations for `boto3.client("iotwireless").list_wireless_gateways`
 method.
@@ -851,21 +1078,30 @@ method.
 Boto3 documentation:
 [IoTWireless.Client.list_wireless_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.list_wireless_gateways)
 
+Arguments mapping described in
+[ListWirelessGatewaysRequestTypeDef](./type_defs.md#listwirelessgatewaysrequesttypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListWirelessGatewaysResponseTypeDef](./type_defs.md#listwirelessgatewaysresponsetypedef).
+[ListWirelessGatewaysResponseResponseTypeDef](./type_defs.md#listwirelessgatewaysresponseresponsetypedef).
 
 ### put_resource_log_level
+
+Sets the log-level override for a resource-ID and resource-type, could be a
+wireless gateway or a wireless device.
 
 Type annotations for `boto3.client("iotwireless").put_resource_log_level`
 method.
 
 Boto3 documentation:
 [IoTWireless.Client.put_resource_log_level](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.put_resource_log_level)
+
+Arguments mapping described in
+[PutResourceLogLevelRequestTypeDef](./type_defs.md#putresourceloglevelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -877,6 +1113,9 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### reset_all_resource_log_levels
 
+Remove log-level overrides if any for all resources (both wireless devices and
+wireless gateways).
+
 Type annotations for
 `boto3.client("iotwireless").reset_all_resource_log_levels` method.
 
@@ -887,11 +1126,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### reset_resource_log_level
 
+Remove log-level override if any for a specific resource-ID and resource-type,
+could be a wireless device or a wireless gateway.
+
 Type annotations for `boto3.client("iotwireless").reset_resource_log_level`
 method.
 
 Boto3 documentation:
 [IoTWireless.Client.reset_resource_log_level](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.reset_resource_log_level)
+
+Arguments mapping described in
+[ResetResourceLogLevelRequestTypeDef](./type_defs.md#resetresourceloglevelrequesttypedef).
 
 Keyword-only arguments:
 
@@ -902,11 +1147,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### send_data_to_wireless_device
 
+Sends a decrypted application data frame to a device.
+
 Type annotations for `boto3.client("iotwireless").send_data_to_wireless_device`
 method.
 
 Boto3 documentation:
 [IoTWireless.Client.send_data_to_wireless_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.send_data_to_wireless_device)
+
+Arguments mapping described in
+[SendDataToWirelessDeviceRequestTypeDef](./type_defs.md#senddatatowirelessdevicerequesttypedef).
 
 Keyword-only arguments:
 
@@ -917,14 +1167,19 @@ Keyword-only arguments:
   [WirelessMetadataTypeDef](./type_defs.md#wirelessmetadatatypedef)
 
 Returns
-[SendDataToWirelessDeviceResponseTypeDef](./type_defs.md#senddatatowirelessdeviceresponsetypedef).
+[SendDataToWirelessDeviceResponseResponseTypeDef](./type_defs.md#senddatatowirelessdeviceresponseresponsetypedef).
 
 ### tag_resource
+
+Adds a tag to a resource.
 
 Type annotations for `boto3.client("iotwireless").tag_resource` method.
 
 Boto3 documentation:
 [IoTWireless.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -935,24 +1190,34 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### test_wireless_device
 
+Simulates a provisioned device by sending an uplink data payload of `Hello` .
+
 Type annotations for `boto3.client("iotwireless").test_wireless_device` method.
 
 Boto3 documentation:
 [IoTWireless.Client.test_wireless_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.test_wireless_device)
+
+Arguments mapping described in
+[TestWirelessDeviceRequestTypeDef](./type_defs.md#testwirelessdevicerequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[TestWirelessDeviceResponseTypeDef](./type_defs.md#testwirelessdeviceresponsetypedef).
+[TestWirelessDeviceResponseResponseTypeDef](./type_defs.md#testwirelessdeviceresponseresponsetypedef).
 
 ### untag_resource
+
+Removes one or more tags from a resource.
 
 Type annotations for `boto3.client("iotwireless").untag_resource` method.
 
 Boto3 documentation:
 [IoTWireless.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -963,10 +1228,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_destination
 
+Updates properties of a destination.
+
 Type annotations for `boto3.client("iotwireless").update_destination` method.
 
 Boto3 documentation:
 [IoTWireless.Client.update_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_destination)
+
+Arguments mapping described in
+[UpdateDestinationRequestTypeDef](./type_defs.md#updatedestinationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -980,11 +1250,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_log_levels_by_resource_types
 
+Set default log level, or log levels by resource types, could be for wireless
+device log options or wireless gateways log options.
+
 Type annotations for
 `boto3.client("iotwireless").update_log_levels_by_resource_types` method.
 
 Boto3 documentation:
 [IoTWireless.Client.update_log_levels_by_resource_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_log_levels_by_resource_types)
+
+Arguments mapping described in
+[UpdateLogLevelsByResourceTypesRequestTypeDef](./type_defs.md#updateloglevelsbyresourcetypesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -998,11 +1274,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_partner_account
 
+Updates properties of a partner account.
+
 Type annotations for `boto3.client("iotwireless").update_partner_account`
 method.
 
 Boto3 documentation:
 [IoTWireless.Client.update_partner_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_partner_account)
+
+Arguments mapping described in
+[UpdatePartnerAccountRequestTypeDef](./type_defs.md#updatepartneraccountrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1017,11 +1298,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_wireless_device
 
+Updates properties of a wireless device.
+
 Type annotations for `boto3.client("iotwireless").update_wireless_device`
 method.
 
 Boto3 documentation:
 [IoTWireless.Client.update_wireless_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_wireless_device)
+
+Arguments mapping described in
+[UpdateWirelessDeviceRequestTypeDef](./type_defs.md#updatewirelessdevicerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1036,11 +1322,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_wireless_gateway
 
+Updates properties of a wireless gateway.
+
 Type annotations for `boto3.client("iotwireless").update_wireless_gateway`
 method.
 
 Boto3 documentation:
 [IoTWireless.Client.update_wireless_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client.update_wireless_gateway)
+
+Arguments mapping described in
+[UpdateWirelessGatewayRequestTypeDef](./type_defs.md#updatewirelessgatewayrequesttypedef).
 
 Keyword-only arguments:
 

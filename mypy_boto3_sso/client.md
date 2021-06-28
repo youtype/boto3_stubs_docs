@@ -59,6 +59,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("sso").can_paginate` method.
 
 Boto3 documentation:
@@ -71,6 +73,8 @@ Arguments:
 Returns `bool`.
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("sso").generate_presigned_url` method.
 
@@ -88,10 +92,16 @@ Returns `str`.
 
 ### get_role_credentials
 
+Returns the STS short-term credentials for a given role name that is assigned
+to the user.
+
 Type annotations for `boto3.client("sso").get_role_credentials` method.
 
 Boto3 documentation:
 [SSO.Client.get_role_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.get_role_credentials)
+
+Arguments mapping described in
+[GetRoleCredentialsRequestTypeDef](./type_defs.md#getrolecredentialsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -100,14 +110,19 @@ Keyword-only arguments:
 - `accessToken`: `str` *(required)*
 
 Returns
-[GetRoleCredentialsResponseTypeDef](./type_defs.md#getrolecredentialsresponsetypedef).
+[GetRoleCredentialsResponseResponseTypeDef](./type_defs.md#getrolecredentialsresponseresponsetypedef).
 
 ### list_account_roles
+
+Lists all roles that are assigned to the user for a given AWS account.
 
 Type annotations for `boto3.client("sso").list_account_roles` method.
 
 Boto3 documentation:
 [SSO.Client.list_account_roles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.list_account_roles)
+
+Arguments mapping described in
+[ListAccountRolesRequestTypeDef](./type_defs.md#listaccountrolesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -117,14 +132,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAccountRolesResponseTypeDef](./type_defs.md#listaccountrolesresponsetypedef).
+[ListAccountRolesResponseResponseTypeDef](./type_defs.md#listaccountrolesresponseresponsetypedef).
 
 ### list_accounts
+
+Lists all AWS accounts assigned to the user.
 
 Type annotations for `boto3.client("sso").list_accounts` method.
 
 Boto3 documentation:
 [SSO.Client.list_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.list_accounts)
+
+Arguments mapping described in
+[ListAccountsRequestTypeDef](./type_defs.md#listaccountsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -133,14 +153,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef).
+[ListAccountsResponseResponseTypeDef](./type_defs.md#listaccountsresponseresponsetypedef).
 
 ### logout
+
+Removes the client- and server-side session that is associated with the user.
 
 Type annotations for `boto3.client("sso").logout` method.
 
 Boto3 documentation:
 [SSO.Client.logout](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.logout)
+
+Arguments mapping described in
+[LogoutRequestTypeDef](./type_defs.md#logoutrequesttypedef).
 
 Keyword-only arguments:
 

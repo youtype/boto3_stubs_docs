@@ -128,6 +128,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("ecs").can_paginate` method.
 
 Boto3 documentation:
@@ -141,10 +143,15 @@ Returns `bool`.
 
 ### create_capacity_provider
 
+Creates a new capacity provider.
+
 Type annotations for `boto3.client("ecs").create_capacity_provider` method.
 
 Boto3 documentation:
 [ECS.Client.create_capacity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_capacity_provider)
+
+Arguments mapping described in
+[CreateCapacityProviderRequestTypeDef](./type_defs.md#createcapacityproviderrequesttypedef).
 
 Keyword-only arguments:
 
@@ -155,14 +162,19 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateCapacityProviderResponseTypeDef](./type_defs.md#createcapacityproviderresponsetypedef).
+[CreateCapacityProviderResponseResponseTypeDef](./type_defs.md#createcapacityproviderresponseresponsetypedef).
 
 ### create_cluster
+
+Creates a new Amazon ECS cluster.
 
 Type annotations for `boto3.client("ecs").create_cluster` method.
 
 Boto3 documentation:
 [ECS.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_cluster)
+
+Arguments mapping described in
+[CreateClusterRequestTypeDef](./type_defs.md#createclusterrequesttypedef).
 
 Keyword-only arguments:
 
@@ -177,14 +189,19 @@ Keyword-only arguments:
   `List`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
 
 Returns
-[CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
+[CreateClusterResponseResponseTypeDef](./type_defs.md#createclusterresponseresponsetypedef).
 
 ### create_service
+
+Runs and maintains a desired number of tasks from a specified task definition.
 
 Type annotations for `boto3.client("ecs").create_service` method.
 
 Boto3 documentation:
 [ECS.Client.create_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_service)
+
+Arguments mapping described in
+[CreateServiceRequestTypeDef](./type_defs.md#createservicerequesttypedef).
 
 Keyword-only arguments:
 
@@ -221,14 +238,19 @@ Keyword-only arguments:
 - `enableExecuteCommand`: `bool`
 
 Returns
-[CreateServiceResponseTypeDef](./type_defs.md#createserviceresponsetypedef).
+[CreateServiceResponseResponseTypeDef](./type_defs.md#createserviceresponseresponsetypedef).
 
 ### create_task_set
+
+Create a task set in the specified cluster and service.
 
 Type annotations for `boto3.client("ecs").create_task_set` method.
 
 Boto3 documentation:
 [ECS.Client.create_task_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_task_set)
+
+Arguments mapping described in
+[CreateTaskSetRequestTypeDef](./type_defs.md#createtasksetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -251,14 +273,20 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateTaskSetResponseTypeDef](./type_defs.md#createtasksetresponsetypedef).
+[CreateTaskSetResponseResponseTypeDef](./type_defs.md#createtasksetresponseresponsetypedef).
 
 ### delete_account_setting
+
+Disables an account setting for a specified IAM user, IAM role, or the root
+user for an account.
 
 Type annotations for `boto3.client("ecs").delete_account_setting` method.
 
 Boto3 documentation:
 [ECS.Client.delete_account_setting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_account_setting)
+
+Arguments mapping described in
+[DeleteAccountSettingRequestTypeDef](./type_defs.md#deleteaccountsettingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -266,14 +294,19 @@ Keyword-only arguments:
 - `principalArn`: `str`
 
 Returns
-[DeleteAccountSettingResponseTypeDef](./type_defs.md#deleteaccountsettingresponsetypedef).
+[DeleteAccountSettingResponseResponseTypeDef](./type_defs.md#deleteaccountsettingresponseresponsetypedef).
 
 ### delete_attributes
+
+Deletes one or more custom attributes from an Amazon ECS resource.
 
 Type annotations for `boto3.client("ecs").delete_attributes` method.
 
 Boto3 documentation:
 [ECS.Client.delete_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_attributes)
+
+Arguments mapping described in
+[DeleteAttributesRequestTypeDef](./type_defs.md#deleteattributesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -282,42 +315,57 @@ Keyword-only arguments:
 - `cluster`: `str`
 
 Returns
-[DeleteAttributesResponseTypeDef](./type_defs.md#deleteattributesresponsetypedef).
+[DeleteAttributesResponseResponseTypeDef](./type_defs.md#deleteattributesresponseresponsetypedef).
 
 ### delete_capacity_provider
+
+Deletes the specified capacity provider.
 
 Type annotations for `boto3.client("ecs").delete_capacity_provider` method.
 
 Boto3 documentation:
 [ECS.Client.delete_capacity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_capacity_provider)
 
+Arguments mapping described in
+[DeleteCapacityProviderRequestTypeDef](./type_defs.md#deletecapacityproviderrequesttypedef).
+
 Keyword-only arguments:
 
 - `capacityProvider`: `str` *(required)*
 
 Returns
-[DeleteCapacityProviderResponseTypeDef](./type_defs.md#deletecapacityproviderresponsetypedef).
+[DeleteCapacityProviderResponseResponseTypeDef](./type_defs.md#deletecapacityproviderresponseresponsetypedef).
 
 ### delete_cluster
+
+Deletes the specified cluster.
 
 Type annotations for `boto3.client("ecs").delete_cluster` method.
 
 Boto3 documentation:
 [ECS.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_cluster)
 
+Arguments mapping described in
+[DeleteClusterRequestTypeDef](./type_defs.md#deleteclusterrequesttypedef).
+
 Keyword-only arguments:
 
 - `cluster`: `str` *(required)*
 
 Returns
-[DeleteClusterResponseTypeDef](./type_defs.md#deleteclusterresponsetypedef).
+[DeleteClusterResponseResponseTypeDef](./type_defs.md#deleteclusterresponseresponsetypedef).
 
 ### delete_service
+
+Deletes a specified service within a cluster.
 
 Type annotations for `boto3.client("ecs").delete_service` method.
 
 Boto3 documentation:
 [ECS.Client.delete_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_service)
+
+Arguments mapping described in
+[DeleteServiceRequestTypeDef](./type_defs.md#deleteservicerequesttypedef).
 
 Keyword-only arguments:
 
@@ -326,14 +374,19 @@ Keyword-only arguments:
 - `force`: `bool`
 
 Returns
-[DeleteServiceResponseTypeDef](./type_defs.md#deleteserviceresponsetypedef).
+[DeleteServiceResponseResponseTypeDef](./type_defs.md#deleteserviceresponseresponsetypedef).
 
 ### delete_task_set
+
+Deletes a specified task set within a service.
 
 Type annotations for `boto3.client("ecs").delete_task_set` method.
 
 Boto3 documentation:
 [ECS.Client.delete_task_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_task_set)
+
+Arguments mapping described in
+[DeleteTaskSetRequestTypeDef](./type_defs.md#deletetasksetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -343,15 +396,20 @@ Keyword-only arguments:
 - `force`: `bool`
 
 Returns
-[DeleteTaskSetResponseTypeDef](./type_defs.md#deletetasksetresponsetypedef).
+[DeleteTaskSetResponseResponseTypeDef](./type_defs.md#deletetasksetresponseresponsetypedef).
 
 ### deregister_container_instance
+
+Deregisters an Amazon ECS container instance from the specified cluster.
 
 Type annotations for `boto3.client("ecs").deregister_container_instance`
 method.
 
 Boto3 documentation:
 [ECS.Client.deregister_container_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.deregister_container_instance)
+
+Arguments mapping described in
+[DeregisterContainerInstanceRequestTypeDef](./type_defs.md#deregistercontainerinstancerequesttypedef).
 
 Keyword-only arguments:
 
@@ -360,28 +418,38 @@ Keyword-only arguments:
 - `force`: `bool`
 
 Returns
-[DeregisterContainerInstanceResponseTypeDef](./type_defs.md#deregistercontainerinstanceresponsetypedef).
+[DeregisterContainerInstanceResponseResponseTypeDef](./type_defs.md#deregistercontainerinstanceresponseresponsetypedef).
 
 ### deregister_task_definition
+
+Deregisters the specified task definition by family and revision.
 
 Type annotations for `boto3.client("ecs").deregister_task_definition` method.
 
 Boto3 documentation:
 [ECS.Client.deregister_task_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.deregister_task_definition)
 
+Arguments mapping described in
+[DeregisterTaskDefinitionRequestTypeDef](./type_defs.md#deregistertaskdefinitionrequesttypedef).
+
 Keyword-only arguments:
 
 - `taskDefinition`: `str` *(required)*
 
 Returns
-[DeregisterTaskDefinitionResponseTypeDef](./type_defs.md#deregistertaskdefinitionresponsetypedef).
+[DeregisterTaskDefinitionResponseResponseTypeDef](./type_defs.md#deregistertaskdefinitionresponseresponsetypedef).
 
 ### describe_capacity_providers
+
+Describes one or more of your capacity providers.
 
 Type annotations for `boto3.client("ecs").describe_capacity_providers` method.
 
 Boto3 documentation:
 [ECS.Client.describe_capacity_providers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_capacity_providers)
+
+Arguments mapping described in
+[DescribeCapacityProvidersRequestTypeDef](./type_defs.md#describecapacityprovidersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -392,14 +460,19 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeCapacityProvidersResponseTypeDef](./type_defs.md#describecapacityprovidersresponsetypedef).
+[DescribeCapacityProvidersResponseResponseTypeDef](./type_defs.md#describecapacityprovidersresponseresponsetypedef).
 
 ### describe_clusters
+
+Describes one or more of your clusters.
 
 Type annotations for `boto3.client("ecs").describe_clusters` method.
 
 Boto3 documentation:
 [ECS.Client.describe_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_clusters)
+
+Arguments mapping described in
+[DescribeClustersRequestTypeDef](./type_defs.md#describeclustersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -407,14 +480,19 @@ Keyword-only arguments:
 - `include`: `List`\[[ClusterFieldType](./literals.md#clusterfieldtype)\]
 
 Returns
-[DescribeClustersResponseTypeDef](./type_defs.md#describeclustersresponsetypedef).
+[DescribeClustersResponseResponseTypeDef](./type_defs.md#describeclustersresponseresponsetypedef).
 
 ### describe_container_instances
+
+Describes one or more container instances.
 
 Type annotations for `boto3.client("ecs").describe_container_instances` method.
 
 Boto3 documentation:
 [ECS.Client.describe_container_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_container_instances)
+
+Arguments mapping described in
+[DescribeContainerInstancesRequestTypeDef](./type_defs.md#describecontainerinstancesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -424,14 +502,19 @@ Keyword-only arguments:
   [ContainerInstanceFieldType](./literals.md#containerinstancefieldtype))\]
 
 Returns
-[DescribeContainerInstancesResponseTypeDef](./type_defs.md#describecontainerinstancesresponsetypedef).
+[DescribeContainerInstancesResponseResponseTypeDef](./type_defs.md#describecontainerinstancesresponseresponsetypedef).
 
 ### describe_services
+
+Describes the specified services running in your cluster.
 
 Type annotations for `boto3.client("ecs").describe_services` method.
 
 Boto3 documentation:
 [ECS.Client.describe_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_services)
+
+Arguments mapping described in
+[DescribeServicesRequestTypeDef](./type_defs.md#describeservicesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -441,14 +524,19 @@ Keyword-only arguments:
   [ServiceFieldType](./literals.md#servicefieldtype))\]
 
 Returns
-[DescribeServicesResponseTypeDef](./type_defs.md#describeservicesresponsetypedef).
+[DescribeServicesResponseResponseTypeDef](./type_defs.md#describeservicesresponseresponsetypedef).
 
 ### describe_task_definition
+
+Describes a task definition.
 
 Type annotations for `boto3.client("ecs").describe_task_definition` method.
 
 Boto3 documentation:
 [ECS.Client.describe_task_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_task_definition)
+
+Arguments mapping described in
+[DescribeTaskDefinitionRequestTypeDef](./type_defs.md#describetaskdefinitionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -457,14 +545,19 @@ Keyword-only arguments:
   [TaskDefinitionFieldType](./literals.md#taskdefinitionfieldtype))\]
 
 Returns
-[DescribeTaskDefinitionResponseTypeDef](./type_defs.md#describetaskdefinitionresponsetypedef).
+[DescribeTaskDefinitionResponseResponseTypeDef](./type_defs.md#describetaskdefinitionresponseresponsetypedef).
 
 ### describe_task_sets
+
+Describes the task sets in the specified cluster and service.
 
 Type annotations for `boto3.client("ecs").describe_task_sets` method.
 
 Boto3 documentation:
 [ECS.Client.describe_task_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_task_sets)
+
+Arguments mapping described in
+[DescribeTaskSetsRequestTypeDef](./type_defs.md#describetasksetsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -475,14 +568,19 @@ Keyword-only arguments:
   [TaskSetFieldType](./literals.md#tasksetfieldtype))\]
 
 Returns
-[DescribeTaskSetsResponseTypeDef](./type_defs.md#describetasksetsresponsetypedef).
+[DescribeTaskSetsResponseResponseTypeDef](./type_defs.md#describetasksetsresponseresponsetypedef).
 
 ### describe_tasks
+
+Describes a specified task or tasks.
 
 Type annotations for `boto3.client("ecs").describe_tasks` method.
 
 Boto3 documentation:
 [ECS.Client.describe_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_tasks)
+
+Arguments mapping described in
+[DescribeTasksRequestTypeDef](./type_defs.md#describetasksrequesttypedef).
 
 Keyword-only arguments:
 
@@ -492,14 +590,19 @@ Keyword-only arguments:
   [TaskFieldType](./literals.md#taskfieldtype))\]
 
 Returns
-[DescribeTasksResponseTypeDef](./type_defs.md#describetasksresponsetypedef).
+[DescribeTasksResponseResponseTypeDef](./type_defs.md#describetasksresponseresponsetypedef).
 
 ### discover_poll_endpoint
+
+.
 
 Type annotations for `boto3.client("ecs").discover_poll_endpoint` method.
 
 Boto3 documentation:
 [ECS.Client.discover_poll_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.discover_poll_endpoint)
+
+Arguments mapping described in
+[DiscoverPollEndpointRequestTypeDef](./type_defs.md#discoverpollendpointrequesttypedef).
 
 Keyword-only arguments:
 
@@ -507,14 +610,19 @@ Keyword-only arguments:
 - `cluster`: `str`
 
 Returns
-[DiscoverPollEndpointResponseTypeDef](./type_defs.md#discoverpollendpointresponsetypedef).
+[DiscoverPollEndpointResponseResponseTypeDef](./type_defs.md#discoverpollendpointresponseresponsetypedef).
 
 ### execute_command
+
+Runs a command remotely on a container within a task.
 
 Type annotations for `boto3.client("ecs").execute_command` method.
 
 Boto3 documentation:
 [ECS.Client.execute_command](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.execute_command)
+
+Arguments mapping described in
+[ExecuteCommandRequestTypeDef](./type_defs.md#executecommandrequesttypedef).
 
 Keyword-only arguments:
 
@@ -525,9 +633,11 @@ Keyword-only arguments:
 - `container`: `str`
 
 Returns
-[ExecuteCommandResponseTypeDef](./type_defs.md#executecommandresponsetypedef).
+[ExecuteCommandResponseResponseTypeDef](./type_defs.md#executecommandresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("ecs").generate_presigned_url` method.
 
@@ -545,10 +655,15 @@ Returns `str`.
 
 ### list_account_settings
 
+Lists the account settings for a specified principal.
+
 Type annotations for `boto3.client("ecs").list_account_settings` method.
 
 Boto3 documentation:
 [ECS.Client.list_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_account_settings)
+
+Arguments mapping described in
+[ListAccountSettingsRequestTypeDef](./type_defs.md#listaccountsettingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -560,14 +675,20 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAccountSettingsResponseTypeDef](./type_defs.md#listaccountsettingsresponsetypedef).
+[ListAccountSettingsResponseResponseTypeDef](./type_defs.md#listaccountsettingsresponseresponsetypedef).
 
 ### list_attributes
+
+Lists the attributes for Amazon ECS resources within a specified target type
+and cluster.
 
 Type annotations for `boto3.client("ecs").list_attributes` method.
 
 Boto3 documentation:
 [ECS.Client.list_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_attributes)
+
+Arguments mapping described in
+[ListAttributesRequestTypeDef](./type_defs.md#listattributesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -580,14 +701,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAttributesResponseTypeDef](./type_defs.md#listattributesresponsetypedef).
+[ListAttributesResponseResponseTypeDef](./type_defs.md#listattributesresponseresponsetypedef).
 
 ### list_clusters
+
+Returns a list of existing clusters.
 
 Type annotations for `boto3.client("ecs").list_clusters` method.
 
 Boto3 documentation:
 [ECS.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_clusters)
+
+Arguments mapping described in
+[ListClustersRequestTypeDef](./type_defs.md#listclustersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -595,14 +721,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef).
+[ListClustersResponseResponseTypeDef](./type_defs.md#listclustersresponseresponsetypedef).
 
 ### list_container_instances
+
+Returns a list of container instances in a specified cluster.
 
 Type annotations for `boto3.client("ecs").list_container_instances` method.
 
 Boto3 documentation:
 [ECS.Client.list_container_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_container_instances)
+
+Arguments mapping described in
+[ListContainerInstancesRequestTypeDef](./type_defs.md#listcontainerinstancesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -614,14 +745,19 @@ Keyword-only arguments:
   [ContainerInstanceStatusType](./literals.md#containerinstancestatustype)
 
 Returns
-[ListContainerInstancesResponseTypeDef](./type_defs.md#listcontainerinstancesresponsetypedef).
+[ListContainerInstancesResponseResponseTypeDef](./type_defs.md#listcontainerinstancesresponseresponsetypedef).
 
 ### list_services
+
+Returns a list of services.
 
 Type annotations for `boto3.client("ecs").list_services` method.
 
 Boto3 documentation:
 [ECS.Client.list_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_services)
+
+Arguments mapping described in
+[ListServicesRequestTypeDef](./type_defs.md#listservicesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -633,29 +769,41 @@ Keyword-only arguments:
   [SchedulingStrategyType](./literals.md#schedulingstrategytype)
 
 Returns
-[ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef).
+[ListServicesResponseResponseTypeDef](./type_defs.md#listservicesresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+List the tags for an Amazon ECS resource.
 
 Type annotations for `boto3.client("ecs").list_tags_for_resource` method.
 
 Boto3 documentation:
 [ECS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### list_task_definition_families
+
+Returns a list of task definition families that are registered to your account
+(which may include task definition families that no longer have any `ACTIVE`
+task definition revisions).
 
 Type annotations for `boto3.client("ecs").list_task_definition_families`
 method.
 
 Boto3 documentation:
 [ECS.Client.list_task_definition_families](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_task_definition_families)
+
+Arguments mapping described in
+[ListTaskDefinitionFamiliesRequestTypeDef](./type_defs.md#listtaskdefinitionfamiliesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -666,14 +814,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListTaskDefinitionFamiliesResponseTypeDef](./type_defs.md#listtaskdefinitionfamiliesresponsetypedef).
+[ListTaskDefinitionFamiliesResponseResponseTypeDef](./type_defs.md#listtaskdefinitionfamiliesresponseresponsetypedef).
 
 ### list_task_definitions
+
+Returns a list of task definitions that are registered to your account.
 
 Type annotations for `boto3.client("ecs").list_task_definitions` method.
 
 Boto3 documentation:
 [ECS.Client.list_task_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_task_definitions)
+
+Arguments mapping described in
+[ListTaskDefinitionsRequestTypeDef](./type_defs.md#listtaskdefinitionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -684,14 +837,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListTaskDefinitionsResponseTypeDef](./type_defs.md#listtaskdefinitionsresponsetypedef).
+[ListTaskDefinitionsResponseResponseTypeDef](./type_defs.md#listtaskdefinitionsresponseresponsetypedef).
 
 ### list_tasks
+
+Returns a list of tasks.
 
 Type annotations for `boto3.client("ecs").list_tasks` method.
 
 Boto3 documentation:
 [ECS.Client.list_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_tasks)
+
+Arguments mapping described in
+[ListTasksRequestTypeDef](./type_defs.md#listtasksrequesttypedef).
 
 Keyword-only arguments:
 
@@ -705,14 +863,20 @@ Keyword-only arguments:
 - `desiredStatus`: [DesiredStatusType](./literals.md#desiredstatustype)
 - `launchType`: [LaunchTypeType](./literals.md#launchtypetype)
 
-Returns [ListTasksResponseTypeDef](./type_defs.md#listtasksresponsetypedef).
+Returns
+[ListTasksResponseResponseTypeDef](./type_defs.md#listtasksresponseresponsetypedef).
 
 ### put_account_setting
+
+Modifies an account setting.
 
 Type annotations for `boto3.client("ecs").put_account_setting` method.
 
 Boto3 documentation:
 [ECS.Client.put_account_setting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_account_setting)
+
+Arguments mapping described in
+[PutAccountSettingRequestTypeDef](./type_defs.md#putaccountsettingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -721,14 +885,20 @@ Keyword-only arguments:
 - `principalArn`: `str`
 
 Returns
-[PutAccountSettingResponseTypeDef](./type_defs.md#putaccountsettingresponsetypedef).
+[PutAccountSettingResponseResponseTypeDef](./type_defs.md#putaccountsettingresponseresponsetypedef).
 
 ### put_account_setting_default
+
+Modifies an account setting for all IAM users on an account for whom no
+individual account setting has been specified.
 
 Type annotations for `boto3.client("ecs").put_account_setting_default` method.
 
 Boto3 documentation:
 [ECS.Client.put_account_setting_default](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_account_setting_default)
+
+Arguments mapping described in
+[PutAccountSettingDefaultRequestTypeDef](./type_defs.md#putaccountsettingdefaultrequesttypedef).
 
 Keyword-only arguments:
 
@@ -736,14 +906,19 @@ Keyword-only arguments:
 - `value`: `str` *(required)*
 
 Returns
-[PutAccountSettingDefaultResponseTypeDef](./type_defs.md#putaccountsettingdefaultresponsetypedef).
+[PutAccountSettingDefaultResponseResponseTypeDef](./type_defs.md#putaccountsettingdefaultresponseresponsetypedef).
 
 ### put_attributes
+
+Create or update an attribute on an Amazon ECS resource.
 
 Type annotations for `boto3.client("ecs").put_attributes` method.
 
 Boto3 documentation:
 [ECS.Client.put_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_attributes)
+
+Arguments mapping described in
+[PutAttributesRequestTypeDef](./type_defs.md#putattributesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -752,15 +927,21 @@ Keyword-only arguments:
 - `cluster`: `str`
 
 Returns
-[PutAttributesResponseTypeDef](./type_defs.md#putattributesresponsetypedef).
+[PutAttributesResponseResponseTypeDef](./type_defs.md#putattributesresponseresponsetypedef).
 
 ### put_cluster_capacity_providers
+
+Modifies the available capacity providers and the default capacity provider
+strategy for a cluster.
 
 Type annotations for `boto3.client("ecs").put_cluster_capacity_providers`
 method.
 
 Boto3 documentation:
 [ECS.Client.put_cluster_capacity_providers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_cluster_capacity_providers)
+
+Arguments mapping described in
+[PutClusterCapacityProvidersRequestTypeDef](./type_defs.md#putclustercapacityprovidersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -771,14 +952,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutClusterCapacityProvidersResponseTypeDef](./type_defs.md#putclustercapacityprovidersresponsetypedef).
+[PutClusterCapacityProvidersResponseResponseTypeDef](./type_defs.md#putclustercapacityprovidersresponseresponsetypedef).
 
 ### register_container_instance
+
+.
 
 Type annotations for `boto3.client("ecs").register_container_instance` method.
 
 Boto3 documentation:
 [ECS.Client.register_container_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.register_container_instance)
+
+Arguments mapping described in
+[RegisterContainerInstanceRequestTypeDef](./type_defs.md#registercontainerinstancerequesttypedef).
 
 Keyword-only arguments:
 
@@ -794,14 +980,20 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[RegisterContainerInstanceResponseTypeDef](./type_defs.md#registercontainerinstanceresponsetypedef).
+[RegisterContainerInstanceResponseResponseTypeDef](./type_defs.md#registercontainerinstanceresponseresponsetypedef).
 
 ### register_task_definition
+
+Registers a new task definition from the supplied `family` and
+`containerDefinitions`.
 
 Type annotations for `boto3.client("ecs").register_task_definition` method.
 
 Boto3 documentation:
 [ECS.Client.register_task_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.register_task_definition)
+
+Arguments mapping described in
+[RegisterTaskDefinitionRequestTypeDef](./type_defs.md#registertaskdefinitionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -830,14 +1022,19 @@ Keyword-only arguments:
   [EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef)
 
 Returns
-[RegisterTaskDefinitionResponseTypeDef](./type_defs.md#registertaskdefinitionresponsetypedef).
+[RegisterTaskDefinitionResponseResponseTypeDef](./type_defs.md#registertaskdefinitionresponseresponsetypedef).
 
 ### run_task
+
+Starts a new task using the specified task definition.
 
 Type annotations for `boto3.client("ecs").run_task` method.
 
 Boto3 documentation:
 [ECS.Client.run_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.run_task)
+
+Arguments mapping described in
+[RunTaskRequestTypeDef](./type_defs.md#runtaskrequesttypedef).
 
 Keyword-only arguments:
 
@@ -863,14 +1060,21 @@ Keyword-only arguments:
 - `startedBy`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns [RunTaskResponseTypeDef](./type_defs.md#runtaskresponsetypedef).
+Returns
+[RunTaskResponseResponseTypeDef](./type_defs.md#runtaskresponseresponsetypedef).
 
 ### start_task
+
+Starts a new task from the specified task definition on the specified container
+instance or instances.
 
 Type annotations for `boto3.client("ecs").start_task` method.
 
 Boto3 documentation:
 [ECS.Client.start_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.start_task)
+
+Arguments mapping described in
+[StartTaskRequestTypeDef](./type_defs.md#starttaskrequesttypedef).
 
 Keyword-only arguments:
 
@@ -888,14 +1092,20 @@ Keyword-only arguments:
 - `startedBy`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns [StartTaskResponseTypeDef](./type_defs.md#starttaskresponsetypedef).
+Returns
+[StartTaskResponseResponseTypeDef](./type_defs.md#starttaskresponseresponsetypedef).
 
 ### stop_task
+
+Stops a running task.
 
 Type annotations for `boto3.client("ecs").stop_task` method.
 
 Boto3 documentation:
 [ECS.Client.stop_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.stop_task)
+
+Arguments mapping described in
+[StopTaskRequestTypeDef](./type_defs.md#stoptaskrequesttypedef).
 
 Keyword-only arguments:
 
@@ -903,15 +1113,21 @@ Keyword-only arguments:
 - `cluster`: `str`
 - `reason`: `str`
 
-Returns [StopTaskResponseTypeDef](./type_defs.md#stoptaskresponsetypedef).
+Returns
+[StopTaskResponseResponseTypeDef](./type_defs.md#stoptaskresponseresponsetypedef).
 
 ### submit_attachment_state_changes
+
+.
 
 Type annotations for `boto3.client("ecs").submit_attachment_state_changes`
 method.
 
 Boto3 documentation:
 [ECS.Client.submit_attachment_state_changes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.submit_attachment_state_changes)
+
+Arguments mapping described in
+[SubmitAttachmentStateChangesRequestTypeDef](./type_defs.md#submitattachmentstatechangesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -921,15 +1137,20 @@ Keyword-only arguments:
 - `cluster`: `str`
 
 Returns
-[SubmitAttachmentStateChangesResponseTypeDef](./type_defs.md#submitattachmentstatechangesresponsetypedef).
+[SubmitAttachmentStateChangesResponseResponseTypeDef](./type_defs.md#submitattachmentstatechangesresponseresponsetypedef).
 
 ### submit_container_state_change
+
+.
 
 Type annotations for `boto3.client("ecs").submit_container_state_change`
 method.
 
 Boto3 documentation:
 [ECS.Client.submit_container_state_change](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.submit_container_state_change)
+
+Arguments mapping described in
+[SubmitContainerStateChangeRequestTypeDef](./type_defs.md#submitcontainerstatechangerequesttypedef).
 
 Keyword-only arguments:
 
@@ -944,14 +1165,19 @@ Keyword-only arguments:
   `List`\[[NetworkBindingTypeDef](./type_defs.md#networkbindingtypedef)\]
 
 Returns
-[SubmitContainerStateChangeResponseTypeDef](./type_defs.md#submitcontainerstatechangeresponsetypedef).
+[SubmitContainerStateChangeResponseResponseTypeDef](./type_defs.md#submitcontainerstatechangeresponseresponsetypedef).
 
 ### submit_task_state_change
+
+.
 
 Type annotations for `boto3.client("ecs").submit_task_state_change` method.
 
 Boto3 documentation:
 [ECS.Client.submit_task_state_change](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.submit_task_state_change)
+
+Arguments mapping described in
+[SubmitTaskStateChangeRequestTypeDef](./type_defs.md#submittaskstatechangerequesttypedef).
 
 Keyword-only arguments:
 
@@ -965,19 +1191,24 @@ Keyword-only arguments:
   `List`\[[AttachmentStateChangeTypeDef](./type_defs.md#attachmentstatechangetypedef)\]
 - `managedAgents`:
   `List`\[[ManagedAgentStateChangeTypeDef](./type_defs.md#managedagentstatechangetypedef)\]
-- `pullStartedAt`: `datetime`
-- `pullStoppedAt`: `datetime`
-- `executionStoppedAt`: `datetime`
+- `pullStartedAt`: `Union`\[`datetime`, `str`\]
+- `pullStoppedAt`: `Union`\[`datetime`, `str`\]
+- `executionStoppedAt`: `Union`\[`datetime`, `str`\]
 
 Returns
-[SubmitTaskStateChangeResponseTypeDef](./type_defs.md#submittaskstatechangeresponsetypedef).
+[SubmitTaskStateChangeResponseResponseTypeDef](./type_defs.md#submittaskstatechangeresponseresponsetypedef).
 
 ### tag_resource
+
+Associates the specified tags to a resource with the specified `resourceArn`.
 
 Type annotations for `boto3.client("ecs").tag_resource` method.
 
 Boto3 documentation:
 [ECS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -988,10 +1219,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Deletes specified tags from a resource.
+
 Type annotations for `boto3.client("ecs").untag_resource` method.
 
 Boto3 documentation:
 [ECS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1002,10 +1238,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_capacity_provider
 
+Modifies the parameters for a capacity provider.
+
 Type annotations for `boto3.client("ecs").update_capacity_provider` method.
 
 Boto3 documentation:
 [ECS.Client.update_capacity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_capacity_provider)
+
+Arguments mapping described in
+[UpdateCapacityProviderRequestTypeDef](./type_defs.md#updatecapacityproviderrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1015,14 +1256,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateCapacityProviderResponseTypeDef](./type_defs.md#updatecapacityproviderresponsetypedef).
+[UpdateCapacityProviderResponseResponseTypeDef](./type_defs.md#updatecapacityproviderresponseresponsetypedef).
 
 ### update_cluster
+
+Updates the cluster.
 
 Type annotations for `boto3.client("ecs").update_cluster` method.
 
 Boto3 documentation:
 [ECS.Client.update_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_cluster)
+
+Arguments mapping described in
+[UpdateClusterRequestTypeDef](./type_defs.md#updateclusterrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1033,14 +1279,19 @@ Keyword-only arguments:
   [ClusterConfigurationTypeDef](./type_defs.md#clusterconfigurationtypedef)
 
 Returns
-[UpdateClusterResponseTypeDef](./type_defs.md#updateclusterresponsetypedef).
+[UpdateClusterResponseResponseTypeDef](./type_defs.md#updateclusterresponseresponsetypedef).
 
 ### update_cluster_settings
+
+Modifies the settings to use for a cluster.
 
 Type annotations for `boto3.client("ecs").update_cluster_settings` method.
 
 Boto3 documentation:
 [ECS.Client.update_cluster_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_cluster_settings)
+
+Arguments mapping described in
+[UpdateClusterSettingsRequestTypeDef](./type_defs.md#updateclustersettingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1050,14 +1301,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateClusterSettingsResponseTypeDef](./type_defs.md#updateclustersettingsresponsetypedef).
+[UpdateClusterSettingsResponseResponseTypeDef](./type_defs.md#updateclustersettingsresponseresponsetypedef).
 
 ### update_container_agent
+
+Updates the Amazon ECS container agent on a specified container instance.
 
 Type annotations for `boto3.client("ecs").update_container_agent` method.
 
 Boto3 documentation:
 [ECS.Client.update_container_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_container_agent)
+
+Arguments mapping described in
+[UpdateContainerAgentRequestTypeDef](./type_defs.md#updatecontaineragentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1065,15 +1321,20 @@ Keyword-only arguments:
 - `cluster`: `str`
 
 Returns
-[UpdateContainerAgentResponseTypeDef](./type_defs.md#updatecontaineragentresponsetypedef).
+[UpdateContainerAgentResponseResponseTypeDef](./type_defs.md#updatecontaineragentresponseresponsetypedef).
 
 ### update_container_instances_state
+
+Modifies the status of an Amazon ECS container instance.
 
 Type annotations for `boto3.client("ecs").update_container_instances_state`
 method.
 
 Boto3 documentation:
 [ECS.Client.update_container_instances_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_container_instances_state)
+
+Arguments mapping described in
+[UpdateContainerInstancesStateRequestTypeDef](./type_defs.md#updatecontainerinstancesstaterequesttypedef).
 
 Keyword-only arguments:
 
@@ -1084,14 +1345,19 @@ Keyword-only arguments:
 - `cluster`: `str`
 
 Returns
-[UpdateContainerInstancesStateResponseTypeDef](./type_defs.md#updatecontainerinstancesstateresponsetypedef).
+[UpdateContainerInstancesStateResponseResponseTypeDef](./type_defs.md#updatecontainerinstancesstateresponseresponsetypedef).
 
 ### update_service
+
+.
 
 Type annotations for `boto3.client("ecs").update_service` method.
 
 Boto3 documentation:
 [ECS.Client.update_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_service)
+
+Arguments mapping described in
+[UpdateServiceRequestTypeDef](./type_defs.md#updateservicerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1115,15 +1381,20 @@ Keyword-only arguments:
 - `enableExecuteCommand`: `bool`
 
 Returns
-[UpdateServiceResponseTypeDef](./type_defs.md#updateserviceresponsetypedef).
+[UpdateServiceResponseResponseTypeDef](./type_defs.md#updateserviceresponseresponsetypedef).
 
 ### update_service_primary_task_set
+
+Modifies which task set in a service is the primary task set.
 
 Type annotations for `boto3.client("ecs").update_service_primary_task_set`
 method.
 
 Boto3 documentation:
 [ECS.Client.update_service_primary_task_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_service_primary_task_set)
+
+Arguments mapping described in
+[UpdateServicePrimaryTaskSetRequestTypeDef](./type_defs.md#updateserviceprimarytasksetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1132,14 +1403,19 @@ Keyword-only arguments:
 - `primaryTaskSet`: `str` *(required)*
 
 Returns
-[UpdateServicePrimaryTaskSetResponseTypeDef](./type_defs.md#updateserviceprimarytasksetresponsetypedef).
+[UpdateServicePrimaryTaskSetResponseResponseTypeDef](./type_defs.md#updateserviceprimarytasksetresponseresponsetypedef).
 
 ### update_task_set
+
+Modifies a task set.
 
 Type annotations for `boto3.client("ecs").update_task_set` method.
 
 Boto3 documentation:
 [ECS.Client.update_task_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_task_set)
+
+Arguments mapping described in
+[UpdateTaskSetRequestTypeDef](./type_defs.md#updatetasksetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1149,7 +1425,7 @@ Keyword-only arguments:
 - `scale`: [ScaleTypeDef](./type_defs.md#scaletypedef) *(required)*
 
 Returns
-[UpdateTaskSetResponseTypeDef](./type_defs.md#updatetasksetresponsetypedef).
+[UpdateTaskSetResponseResponseTypeDef](./type_defs.md#updatetasksetresponseresponsetypedef).
 
 ### get_paginator
 

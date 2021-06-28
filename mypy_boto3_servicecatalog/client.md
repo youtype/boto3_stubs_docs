@@ -146,11 +146,16 @@ Exceptions:
 
 ### accept_portfolio_share
 
+Accepts an offer to share the specified portfolio.
+
 Type annotations for `boto3.client("servicecatalog").accept_portfolio_share`
 method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.accept_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.accept_portfolio_share)
+
+Arguments mapping described in
+[AcceptPortfolioShareInputTypeDef](./type_defs.md#acceptportfolioshareinputtypedef).
 
 Keyword-only arguments:
 
@@ -163,11 +168,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### associate_budget_with_resource
 
+Associates the specified budget with the specified resource.
+
 Type annotations for
 `boto3.client("servicecatalog").associate_budget_with_resource` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.associate_budget_with_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_budget_with_resource)
+
+Arguments mapping described in
+[AssociateBudgetWithResourceInputTypeDef](./type_defs.md#associatebudgetwithresourceinputtypedef).
 
 Keyword-only arguments:
 
@@ -178,11 +188,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### associate_principal_with_portfolio
 
+Associates the specified principal ARN with the specified portfolio.
+
 Type annotations for
 `boto3.client("servicecatalog").associate_principal_with_portfolio` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.associate_principal_with_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_principal_with_portfolio)
+
+Arguments mapping described in
+[AssociatePrincipalWithPortfolioInputTypeDef](./type_defs.md#associateprincipalwithportfolioinputtypedef).
 
 Keyword-only arguments:
 
@@ -196,11 +211,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### associate_product_with_portfolio
 
+Associates the specified product with the specified portfolio.
+
 Type annotations for
 `boto3.client("servicecatalog").associate_product_with_portfolio` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.associate_product_with_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_product_with_portfolio)
+
+Arguments mapping described in
+[AssociateProductWithPortfolioInputTypeDef](./type_defs.md#associateproductwithportfolioinputtypedef).
 
 Keyword-only arguments:
 
@@ -213,12 +233,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### associate_service_action_with_provisioning_artifact
 
+Associates a self-service action with a provisioning artifact.
+
 Type annotations for
 `boto3.client("servicecatalog").associate_service_action_with_provisioning_artifact`
 method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.associate_service_action_with_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_service_action_with_provisioning_artifact)
+
+Arguments mapping described in
+[AssociateServiceActionWithProvisioningArtifactInputTypeDef](./type_defs.md#associateserviceactionwithprovisioningartifactinputtypedef).
 
 Keyword-only arguments:
 
@@ -231,11 +256,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### associate_tag_option_with_resource
 
+Associate the specified TagOption with the specified portfolio or product.
+
 Type annotations for
 `boto3.client("servicecatalog").associate_tag_option_with_resource` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.associate_tag_option_with_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_tag_option_with_resource)
+
+Arguments mapping described in
+[AssociateTagOptionWithResourceInputTypeDef](./type_defs.md#associatetagoptionwithresourceinputtypedef).
 
 Keyword-only arguments:
 
@@ -246,12 +276,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### batch_associate_service_action_with_provisioning_artifact
 
+Associates multiple self-service actions with provisioning artifacts.
+
 Type annotations for
 `boto3.client("servicecatalog").batch_associate_service_action_with_provisioning_artifact`
 method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.batch_associate_service_action_with_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.batch_associate_service_action_with_provisioning_artifact)
+
+Arguments mapping described in
+[BatchAssociateServiceActionWithProvisioningArtifactInputTypeDef](./type_defs.md#batchassociateserviceactionwithprovisioningartifactinputtypedef).
 
 Keyword-only arguments:
 
@@ -261,9 +296,12 @@ Keyword-only arguments:
 - `AcceptLanguage`: `str`
 
 Returns
-[BatchAssociateServiceActionWithProvisioningArtifactOutputTypeDef](./type_defs.md#batchassociateserviceactionwithprovisioningartifactoutputtypedef).
+[BatchAssociateServiceActionWithProvisioningArtifactOutputResponseTypeDef](./type_defs.md#batchassociateserviceactionwithprovisioningartifactoutputresponsetypedef).
 
 ### batch_disassociate_service_action_from_provisioning_artifact
+
+Disassociates a batch of self-service actions from the specified provisioning
+artifact.
 
 Type annotations for
 `boto3.client("servicecatalog").batch_disassociate_service_action_from_provisioning_artifact`
@@ -272,6 +310,9 @@ method.
 Boto3 documentation:
 [ServiceCatalog.Client.batch_disassociate_service_action_from_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.batch_disassociate_service_action_from_provisioning_artifact)
 
+Arguments mapping described in
+[BatchDisassociateServiceActionFromProvisioningArtifactInputTypeDef](./type_defs.md#batchdisassociateserviceactionfromprovisioningartifactinputtypedef).
+
 Keyword-only arguments:
 
 - `ServiceActionAssociations`:
@@ -280,9 +321,11 @@ Keyword-only arguments:
 - `AcceptLanguage`: `str`
 
 Returns
-[BatchDisassociateServiceActionFromProvisioningArtifactOutputTypeDef](./type_defs.md#batchdisassociateserviceactionfromprovisioningartifactoutputtypedef).
+[BatchDisassociateServiceActionFromProvisioningArtifactOutputResponseTypeDef](./type_defs.md#batchdisassociateserviceactionfromprovisioningartifactoutputresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("servicecatalog").can_paginate` method.
 
@@ -297,10 +340,16 @@ Returns `bool`.
 
 ### copy_product
 
+Copies the specified source product to the specified target product or a new
+product.
+
 Type annotations for `boto3.client("servicecatalog").copy_product` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.copy_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.copy_product)
+
+Arguments mapping described in
+[CopyProductInputTypeDef](./type_defs.md#copyproductinputtypedef).
 
 Keyword-only arguments:
 
@@ -315,14 +364,20 @@ Keyword-only arguments:
 - `CopyOptions`: `List`\[`Literal['CopyTags']` (see
   [CopyOptionType](./literals.md#copyoptiontype))\]
 
-Returns [CopyProductOutputTypeDef](./type_defs.md#copyproductoutputtypedef).
+Returns
+[CopyProductOutputResponseTypeDef](./type_defs.md#copyproductoutputresponsetypedef).
 
 ### create_constraint
+
+Creates a constraint.
 
 Type annotations for `boto3.client("servicecatalog").create_constraint` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.create_constraint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_constraint)
+
+Arguments mapping described in
+[CreateConstraintInputTypeDef](./type_defs.md#createconstraintinputtypedef).
 
 Keyword-only arguments:
 
@@ -335,14 +390,19 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[CreateConstraintOutputTypeDef](./type_defs.md#createconstraintoutputtypedef).
+[CreateConstraintOutputResponseTypeDef](./type_defs.md#createconstraintoutputresponsetypedef).
 
 ### create_portfolio
+
+Creates a portfolio.
 
 Type annotations for `boto3.client("servicecatalog").create_portfolio` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.create_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_portfolio)
+
+Arguments mapping described in
+[CreatePortfolioInputTypeDef](./type_defs.md#createportfolioinputtypedef).
 
 Keyword-only arguments:
 
@@ -354,15 +414,20 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreatePortfolioOutputTypeDef](./type_defs.md#createportfoliooutputtypedef).
+[CreatePortfolioOutputResponseTypeDef](./type_defs.md#createportfoliooutputresponsetypedef).
 
 ### create_portfolio_share
+
+Shares the specified portfolio with the specified account or organization node.
 
 Type annotations for `boto3.client("servicecatalog").create_portfolio_share`
 method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.create_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_portfolio_share)
+
+Arguments mapping described in
+[CreatePortfolioShareInputTypeDef](./type_defs.md#createportfolioshareinputtypedef).
 
 Keyword-only arguments:
 
@@ -374,14 +439,19 @@ Keyword-only arguments:
 - `ShareTagOptions`: `bool`
 
 Returns
-[CreatePortfolioShareOutputTypeDef](./type_defs.md#createportfolioshareoutputtypedef).
+[CreatePortfolioShareOutputResponseTypeDef](./type_defs.md#createportfolioshareoutputresponsetypedef).
 
 ### create_product
+
+Creates a product.
 
 Type annotations for `boto3.client("servicecatalog").create_product` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.create_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_product)
+
+Arguments mapping described in
+[CreateProductInputTypeDef](./type_defs.md#createproductinputtypedef).
 
 Keyword-only arguments:
 
@@ -401,15 +471,20 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateProductOutputTypeDef](./type_defs.md#createproductoutputtypedef).
+[CreateProductOutputResponseTypeDef](./type_defs.md#createproductoutputresponsetypedef).
 
 ### create_provisioned_product_plan
+
+Creates a plan.
 
 Type annotations for
 `boto3.client("servicecatalog").create_provisioned_product_plan` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.create_provisioned_product_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_provisioned_product_plan)
+
+Arguments mapping described in
+[CreateProvisionedProductPlanInputTypeDef](./type_defs.md#createprovisionedproductplaninputtypedef).
 
 Keyword-only arguments:
 
@@ -429,15 +504,21 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateProvisionedProductPlanOutputTypeDef](./type_defs.md#createprovisionedproductplanoutputtypedef).
+[CreateProvisionedProductPlanOutputResponseTypeDef](./type_defs.md#createprovisionedproductplanoutputresponsetypedef).
 
 ### create_provisioning_artifact
+
+Creates a provisioning artifact (also known as a version) for the specified
+product.
 
 Type annotations for
 `boto3.client("servicecatalog").create_provisioning_artifact` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.create_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_provisioning_artifact)
+
+Arguments mapping described in
+[CreateProvisioningArtifactInputTypeDef](./type_defs.md#createprovisioningartifactinputtypedef).
 
 Keyword-only arguments:
 
@@ -449,15 +530,20 @@ Keyword-only arguments:
 - `AcceptLanguage`: `str`
 
 Returns
-[CreateProvisioningArtifactOutputTypeDef](./type_defs.md#createprovisioningartifactoutputtypedef).
+[CreateProvisioningArtifactOutputResponseTypeDef](./type_defs.md#createprovisioningartifactoutputresponsetypedef).
 
 ### create_service_action
+
+Creates a self-service action.
 
 Type annotations for `boto3.client("servicecatalog").create_service_action`
 method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.create_service_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_service_action)
+
+Arguments mapping described in
+[CreateServiceActionInputTypeDef](./type_defs.md#createserviceactioninputtypedef).
 
 Keyword-only arguments:
 
@@ -473,14 +559,19 @@ Keyword-only arguments:
 - `AcceptLanguage`: `str`
 
 Returns
-[CreateServiceActionOutputTypeDef](./type_defs.md#createserviceactionoutputtypedef).
+[CreateServiceActionOutputResponseTypeDef](./type_defs.md#createserviceactionoutputresponsetypedef).
 
 ### create_tag_option
+
+Creates a TagOption.
 
 Type annotations for `boto3.client("servicecatalog").create_tag_option` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.create_tag_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_tag_option)
+
+Arguments mapping described in
+[CreateTagOptionInputTypeDef](./type_defs.md#createtagoptioninputtypedef).
 
 Keyword-only arguments:
 
@@ -488,14 +579,19 @@ Keyword-only arguments:
 - `Value`: `str` *(required)*
 
 Returns
-[CreateTagOptionOutputTypeDef](./type_defs.md#createtagoptionoutputtypedef).
+[CreateTagOptionOutputResponseTypeDef](./type_defs.md#createtagoptionoutputresponsetypedef).
 
 ### delete_constraint
+
+Deletes the specified constraint.
 
 Type annotations for `boto3.client("servicecatalog").delete_constraint` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.delete_constraint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_constraint)
+
+Arguments mapping described in
+[DeleteConstraintInputTypeDef](./type_defs.md#deleteconstraintinputtypedef).
 
 Keyword-only arguments:
 
@@ -506,10 +602,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_portfolio
 
+Deletes the specified portfolio.
+
 Type annotations for `boto3.client("servicecatalog").delete_portfolio` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.delete_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_portfolio)
+
+Arguments mapping described in
+[DeletePortfolioInputTypeDef](./type_defs.md#deleteportfolioinputtypedef).
 
 Keyword-only arguments:
 
@@ -520,11 +621,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_portfolio_share
 
+Stops sharing the specified portfolio with the specified account or
+organization node.
+
 Type annotations for `boto3.client("servicecatalog").delete_portfolio_share`
 method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.delete_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_portfolio_share)
+
+Arguments mapping described in
+[DeletePortfolioShareInputTypeDef](./type_defs.md#deleteportfolioshareinputtypedef).
 
 Keyword-only arguments:
 
@@ -535,14 +642,19 @@ Keyword-only arguments:
   [OrganizationNodeTypeDef](./type_defs.md#organizationnodetypedef)
 
 Returns
-[DeletePortfolioShareOutputTypeDef](./type_defs.md#deleteportfolioshareoutputtypedef).
+[DeletePortfolioShareOutputResponseTypeDef](./type_defs.md#deleteportfolioshareoutputresponsetypedef).
 
 ### delete_product
+
+Deletes the specified product.
 
 Type annotations for `boto3.client("servicecatalog").delete_product` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.delete_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_product)
+
+Arguments mapping described in
+[DeleteProductInputTypeDef](./type_defs.md#deleteproductinputtypedef).
 
 Keyword-only arguments:
 
@@ -553,11 +665,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_provisioned_product_plan
 
+Deletes the specified plan.
+
 Type annotations for
 `boto3.client("servicecatalog").delete_provisioned_product_plan` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.delete_provisioned_product_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_provisioned_product_plan)
+
+Arguments mapping described in
+[DeleteProvisionedProductPlanInputTypeDef](./type_defs.md#deleteprovisionedproductplaninputtypedef).
 
 Keyword-only arguments:
 
@@ -569,11 +686,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_provisioning_artifact
 
+Deletes the specified provisioning artifact (also known as a version) for the
+specified product.
+
 Type annotations for
 `boto3.client("servicecatalog").delete_provisioning_artifact` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.delete_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_provisioning_artifact)
+
+Arguments mapping described in
+[DeleteProvisioningArtifactInputTypeDef](./type_defs.md#deleteprovisioningartifactinputtypedef).
 
 Keyword-only arguments:
 
@@ -585,11 +708,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_service_action
 
+Deletes a self-service action.
+
 Type annotations for `boto3.client("servicecatalog").delete_service_action`
 method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.delete_service_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_service_action)
+
+Arguments mapping described in
+[DeleteServiceActionInputTypeDef](./type_defs.md#deleteserviceactioninputtypedef).
 
 Keyword-only arguments:
 
@@ -600,10 +728,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_tag_option
 
+Deletes the specified TagOption.
+
 Type annotations for `boto3.client("servicecatalog").delete_tag_option` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.delete_tag_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_tag_option)
+
+Arguments mapping described in
+[DeleteTagOptionInputTypeDef](./type_defs.md#deletetagoptioninputtypedef).
 
 Keyword-only arguments:
 
@@ -613,11 +746,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_constraint
 
+Gets information about the specified constraint.
+
 Type annotations for `boto3.client("servicecatalog").describe_constraint`
 method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.describe_constraint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_constraint)
+
+Arguments mapping described in
+[DescribeConstraintInputTypeDef](./type_defs.md#describeconstraintinputtypedef).
 
 Keyword-only arguments:
 
@@ -625,9 +763,11 @@ Keyword-only arguments:
 - `AcceptLanguage`: `str`
 
 Returns
-[DescribeConstraintOutputTypeDef](./type_defs.md#describeconstraintoutputtypedef).
+[DescribeConstraintOutputResponseTypeDef](./type_defs.md#describeconstraintoutputresponsetypedef).
 
 ### describe_copy_product_status
+
+Gets the status of the specified copy product operation.
 
 Type annotations for
 `boto3.client("servicecatalog").describe_copy_product_status` method.
@@ -635,15 +775,20 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.describe_copy_product_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_copy_product_status)
 
+Arguments mapping described in
+[DescribeCopyProductStatusInputTypeDef](./type_defs.md#describecopyproductstatusinputtypedef).
+
 Keyword-only arguments:
 
 - `CopyProductToken`: `str` *(required)*
 - `AcceptLanguage`: `str`
 
 Returns
-[DescribeCopyProductStatusOutputTypeDef](./type_defs.md#describecopyproductstatusoutputtypedef).
+[DescribeCopyProductStatusOutputResponseTypeDef](./type_defs.md#describecopyproductstatusoutputresponsetypedef).
 
 ### describe_portfolio
+
+Gets information about the specified portfolio.
 
 Type annotations for `boto3.client("servicecatalog").describe_portfolio`
 method.
@@ -651,15 +796,20 @@ method.
 Boto3 documentation:
 [ServiceCatalog.Client.describe_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_portfolio)
 
+Arguments mapping described in
+[DescribePortfolioInputTypeDef](./type_defs.md#describeportfolioinputtypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `AcceptLanguage`: `str`
 
 Returns
-[DescribePortfolioOutputTypeDef](./type_defs.md#describeportfoliooutputtypedef).
+[DescribePortfolioOutputResponseTypeDef](./type_defs.md#describeportfoliooutputresponsetypedef).
 
 ### describe_portfolio_share_status
+
+Gets the status of the specified portfolio share operation.
 
 Type annotations for
 `boto3.client("servicecatalog").describe_portfolio_share_status` method.
@@ -667,20 +817,29 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.describe_portfolio_share_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_portfolio_share_status)
 
+Arguments mapping described in
+[DescribePortfolioShareStatusInputTypeDef](./type_defs.md#describeportfoliosharestatusinputtypedef).
+
 Keyword-only arguments:
 
 - `PortfolioShareToken`: `str` *(required)*
 
 Returns
-[DescribePortfolioShareStatusOutputTypeDef](./type_defs.md#describeportfoliosharestatusoutputtypedef).
+[DescribePortfolioShareStatusOutputResponseTypeDef](./type_defs.md#describeportfoliosharestatusoutputresponsetypedef).
 
 ### describe_portfolio_shares
+
+Returns a summary of each of the portfolio shares that were created for the
+specified portfolio.
 
 Type annotations for `boto3.client("servicecatalog").describe_portfolio_shares`
 method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.describe_portfolio_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_portfolio_shares)
+
+Arguments mapping described in
+[DescribePortfolioSharesInputTypeDef](./type_defs.md#describeportfoliosharesinputtypedef).
 
 Keyword-only arguments:
 
@@ -692,14 +851,19 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[DescribePortfolioSharesOutputTypeDef](./type_defs.md#describeportfoliosharesoutputtypedef).
+[DescribePortfolioSharesOutputResponseTypeDef](./type_defs.md#describeportfoliosharesoutputresponsetypedef).
 
 ### describe_product
+
+Gets information about the specified product.
 
 Type annotations for `boto3.client("servicecatalog").describe_product` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.describe_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_product)
+
+Arguments mapping described in
+[DescribeProductInputTypeDef](./type_defs.md#describeproductinputtypedef).
 
 Keyword-only arguments:
 
@@ -708,15 +872,20 @@ Keyword-only arguments:
 - `Name`: `str`
 
 Returns
-[DescribeProductOutputTypeDef](./type_defs.md#describeproductoutputtypedef).
+[DescribeProductOutputResponseTypeDef](./type_defs.md#describeproductoutputresponsetypedef).
 
 ### describe_product_as_admin
+
+Gets information about the specified product.
 
 Type annotations for `boto3.client("servicecatalog").describe_product_as_admin`
 method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.describe_product_as_admin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_product_as_admin)
+
+Arguments mapping described in
+[DescribeProductAsAdminInputTypeDef](./type_defs.md#describeproductasadmininputtypedef).
 
 Keyword-only arguments:
 
@@ -726,9 +895,11 @@ Keyword-only arguments:
 - `SourcePortfolioId`: `str`
 
 Returns
-[DescribeProductAsAdminOutputTypeDef](./type_defs.md#describeproductasadminoutputtypedef).
+[DescribeProductAsAdminOutputResponseTypeDef](./type_defs.md#describeproductasadminoutputresponsetypedef).
 
 ### describe_product_view
+
+Gets information about the specified product.
 
 Type annotations for `boto3.client("servicecatalog").describe_product_view`
 method.
@@ -736,21 +907,29 @@ method.
 Boto3 documentation:
 [ServiceCatalog.Client.describe_product_view](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_product_view)
 
+Arguments mapping described in
+[DescribeProductViewInputTypeDef](./type_defs.md#describeproductviewinputtypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `AcceptLanguage`: `str`
 
 Returns
-[DescribeProductViewOutputTypeDef](./type_defs.md#describeproductviewoutputtypedef).
+[DescribeProductViewOutputResponseTypeDef](./type_defs.md#describeproductviewoutputresponsetypedef).
 
 ### describe_provisioned_product
+
+Gets information about the specified provisioned product.
 
 Type annotations for
 `boto3.client("servicecatalog").describe_provisioned_product` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.describe_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioned_product)
+
+Arguments mapping described in
+[DescribeProvisionedProductInputTypeDef](./type_defs.md#describeprovisionedproductinputtypedef).
 
 Keyword-only arguments:
 
@@ -759,15 +938,20 @@ Keyword-only arguments:
 - `Name`: `str`
 
 Returns
-[DescribeProvisionedProductOutputTypeDef](./type_defs.md#describeprovisionedproductoutputtypedef).
+[DescribeProvisionedProductOutputResponseTypeDef](./type_defs.md#describeprovisionedproductoutputresponsetypedef).
 
 ### describe_provisioned_product_plan
+
+Gets information about the resource changes for the specified plan.
 
 Type annotations for
 `boto3.client("servicecatalog").describe_provisioned_product_plan` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.describe_provisioned_product_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioned_product_plan)
+
+Arguments mapping described in
+[DescribeProvisionedProductPlanInputTypeDef](./type_defs.md#describeprovisionedproductplaninputtypedef).
 
 Keyword-only arguments:
 
@@ -777,15 +961,21 @@ Keyword-only arguments:
 - `PageToken`: `str`
 
 Returns
-[DescribeProvisionedProductPlanOutputTypeDef](./type_defs.md#describeprovisionedproductplanoutputtypedef).
+[DescribeProvisionedProductPlanOutputResponseTypeDef](./type_defs.md#describeprovisionedproductplanoutputresponsetypedef).
 
 ### describe_provisioning_artifact
+
+Gets information about the specified provisioning artifact (also known as a
+version) for the specified product.
 
 Type annotations for
 `boto3.client("servicecatalog").describe_provisioning_artifact` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.describe_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioning_artifact)
+
+Arguments mapping described in
+[DescribeProvisioningArtifactInputTypeDef](./type_defs.md#describeprovisioningartifactinputtypedef).
 
 Keyword-only arguments:
 
@@ -797,15 +987,21 @@ Keyword-only arguments:
 - `Verbose`: `bool`
 
 Returns
-[DescribeProvisioningArtifactOutputTypeDef](./type_defs.md#describeprovisioningartifactoutputtypedef).
+[DescribeProvisioningArtifactOutputResponseTypeDef](./type_defs.md#describeprovisioningartifactoutputresponsetypedef).
 
 ### describe_provisioning_parameters
+
+Gets information about the configuration required to provision the specified
+product using the specified provisioning artifact.
 
 Type annotations for
 `boto3.client("servicecatalog").describe_provisioning_parameters` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.describe_provisioning_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioning_parameters)
+
+Arguments mapping described in
+[DescribeProvisioningParametersInputTypeDef](./type_defs.md#describeprovisioningparametersinputtypedef).
 
 Keyword-only arguments:
 
@@ -818,14 +1014,19 @@ Keyword-only arguments:
 - `PathName`: `str`
 
 Returns
-[DescribeProvisioningParametersOutputTypeDef](./type_defs.md#describeprovisioningparametersoutputtypedef).
+[DescribeProvisioningParametersOutputResponseTypeDef](./type_defs.md#describeprovisioningparametersoutputresponsetypedef).
 
 ### describe_record
+
+Gets information about the specified request operation.
 
 Type annotations for `boto3.client("servicecatalog").describe_record` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.describe_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_record)
+
+Arguments mapping described in
+[DescribeRecordInputTypeDef](./type_defs.md#describerecordinputtypedef).
 
 Keyword-only arguments:
 
@@ -835,9 +1036,11 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[DescribeRecordOutputTypeDef](./type_defs.md#describerecordoutputtypedef).
+[DescribeRecordOutputResponseTypeDef](./type_defs.md#describerecordoutputresponsetypedef).
 
 ### describe_service_action
+
+Describes a self-service action.
 
 Type annotations for `boto3.client("servicecatalog").describe_service_action`
 method.
@@ -845,15 +1048,21 @@ method.
 Boto3 documentation:
 [ServiceCatalog.Client.describe_service_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_service_action)
 
+Arguments mapping described in
+[DescribeServiceActionInputTypeDef](./type_defs.md#describeserviceactioninputtypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `AcceptLanguage`: `str`
 
 Returns
-[DescribeServiceActionOutputTypeDef](./type_defs.md#describeserviceactionoutputtypedef).
+[DescribeServiceActionOutputResponseTypeDef](./type_defs.md#describeserviceactionoutputresponsetypedef).
 
 ### describe_service_action_execution_parameters
+
+Finds the default parameters for a specific self-service action on a specific
+provisioned product and returns a map of the results to the user.
 
 Type annotations for
 `boto3.client("servicecatalog").describe_service_action_execution_parameters`
@@ -862,6 +1071,9 @@ method.
 Boto3 documentation:
 [ServiceCatalog.Client.describe_service_action_execution_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_service_action_execution_parameters)
 
+Arguments mapping described in
+[DescribeServiceActionExecutionParametersInputTypeDef](./type_defs.md#describeserviceactionexecutionparametersinputtypedef).
+
 Keyword-only arguments:
 
 - `ProvisionedProductId`: `str` *(required)*
@@ -869,9 +1081,11 @@ Keyword-only arguments:
 - `AcceptLanguage`: `str`
 
 Returns
-[DescribeServiceActionExecutionParametersOutputTypeDef](./type_defs.md#describeserviceactionexecutionparametersoutputtypedef).
+[DescribeServiceActionExecutionParametersOutputResponseTypeDef](./type_defs.md#describeserviceactionexecutionparametersoutputresponsetypedef).
 
 ### describe_tag_option
+
+Gets information about the specified TagOption.
 
 Type annotations for `boto3.client("servicecatalog").describe_tag_option`
 method.
@@ -879,14 +1093,19 @@ method.
 Boto3 documentation:
 [ServiceCatalog.Client.describe_tag_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_tag_option)
 
+Arguments mapping described in
+[DescribeTagOptionInputTypeDef](./type_defs.md#describetagoptioninputtypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[DescribeTagOptionOutputTypeDef](./type_defs.md#describetagoptionoutputtypedef).
+[DescribeTagOptionOutputResponseTypeDef](./type_defs.md#describetagoptionoutputresponsetypedef).
 
 ### disable_aws_organizations_access
+
+Disable portfolio sharing through AWS Organizations feature.
 
 Type annotations for
 `boto3.client("servicecatalog").disable_aws_organizations_access` method.
@@ -898,11 +1117,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_budget_from_resource
 
+Disassociates the specified budget from the specified resource.
+
 Type annotations for
 `boto3.client("servicecatalog").disassociate_budget_from_resource` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.disassociate_budget_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_budget_from_resource)
+
+Arguments mapping described in
+[DisassociateBudgetFromResourceInputTypeDef](./type_defs.md#disassociatebudgetfromresourceinputtypedef).
 
 Keyword-only arguments:
 
@@ -913,11 +1137,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_principal_from_portfolio
 
+Disassociates a previously associated principal ARN from a specified portfolio.
+
 Type annotations for
 `boto3.client("servicecatalog").disassociate_principal_from_portfolio` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.disassociate_principal_from_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_principal_from_portfolio)
+
+Arguments mapping described in
+[DisassociatePrincipalFromPortfolioInputTypeDef](./type_defs.md#disassociateprincipalfromportfolioinputtypedef).
 
 Keyword-only arguments:
 
@@ -929,11 +1158,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_product_from_portfolio
 
+Disassociates the specified product from the specified portfolio.
+
 Type annotations for
 `boto3.client("servicecatalog").disassociate_product_from_portfolio` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.disassociate_product_from_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_product_from_portfolio)
+
+Arguments mapping described in
+[DisassociateProductFromPortfolioInputTypeDef](./type_defs.md#disassociateproductfromportfolioinputtypedef).
 
 Keyword-only arguments:
 
@@ -945,12 +1179,18 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_service_action_from_provisioning_artifact
 
+Disassociates the specified self-service action association from the specified
+provisioning artifact.
+
 Type annotations for
 `boto3.client("servicecatalog").disassociate_service_action_from_provisioning_artifact`
 method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.disassociate_service_action_from_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_service_action_from_provisioning_artifact)
+
+Arguments mapping described in
+[DisassociateServiceActionFromProvisioningArtifactInputTypeDef](./type_defs.md#disassociateserviceactionfromprovisioningartifactinputtypedef).
 
 Keyword-only arguments:
 
@@ -963,11 +1203,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_tag_option_from_resource
 
+Disassociates the specified TagOption from the specified resource.
+
 Type annotations for
 `boto3.client("servicecatalog").disassociate_tag_option_from_resource` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.disassociate_tag_option_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_tag_option_from_resource)
+
+Arguments mapping described in
+[DisassociateTagOptionFromResourceInputTypeDef](./type_defs.md#disassociatetagoptionfromresourceinputtypedef).
 
 Keyword-only arguments:
 
@@ -977,6 +1222,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### enable_aws_organizations_access
+
+Enable portfolio sharing feature through AWS Organizations.
 
 Type annotations for
 `boto3.client("servicecatalog").enable_aws_organizations_access` method.
@@ -988,11 +1235,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### execute_provisioned_product_plan
 
+Provisions or modifies a product based on the resource changes for the
+specified plan.
+
 Type annotations for
 `boto3.client("servicecatalog").execute_provisioned_product_plan` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.execute_provisioned_product_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.execute_provisioned_product_plan)
+
+Arguments mapping described in
+[ExecuteProvisionedProductPlanInputTypeDef](./type_defs.md#executeprovisionedproductplaninputtypedef).
 
 Keyword-only arguments:
 
@@ -1001,9 +1254,11 @@ Keyword-only arguments:
 - `AcceptLanguage`: `str`
 
 Returns
-[ExecuteProvisionedProductPlanOutputTypeDef](./type_defs.md#executeprovisionedproductplanoutputtypedef).
+[ExecuteProvisionedProductPlanOutputResponseTypeDef](./type_defs.md#executeprovisionedproductplanoutputresponsetypedef).
 
 ### execute_provisioned_product_service_action
+
+Executes a self-service action against a provisioned product.
 
 Type annotations for
 `boto3.client("servicecatalog").execute_provisioned_product_service_action`
@@ -1011,6 +1266,9 @@ method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.execute_provisioned_product_service_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.execute_provisioned_product_service_action)
+
+Arguments mapping described in
+[ExecuteProvisionedProductServiceActionInputTypeDef](./type_defs.md#executeprovisionedproductserviceactioninputtypedef).
 
 Keyword-only arguments:
 
@@ -1021,9 +1279,11 @@ Keyword-only arguments:
 - `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
 
 Returns
-[ExecuteProvisionedProductServiceActionOutputTypeDef](./type_defs.md#executeprovisionedproductserviceactionoutputtypedef).
+[ExecuteProvisionedProductServiceActionOutputResponseTypeDef](./type_defs.md#executeprovisionedproductserviceactionoutputresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("servicecatalog").generate_presigned_url`
 method.
@@ -1042,6 +1302,8 @@ Returns `str`.
 
 ### get_aws_organizations_access_status
 
+Get the Access Status for AWS Organization portfolio share feature.
+
 Type annotations for
 `boto3.client("servicecatalog").get_aws_organizations_access_status` method.
 
@@ -1049,15 +1311,22 @@ Boto3 documentation:
 [ServiceCatalog.Client.get_aws_organizations_access_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.get_aws_organizations_access_status)
 
 Returns
-[GetAWSOrganizationsAccessStatusOutputTypeDef](./type_defs.md#getawsorganizationsaccessstatusoutputtypedef).
+[GetAWSOrganizationsAccessStatusOutputResponseTypeDef](./type_defs.md#getawsorganizationsaccessstatusoutputresponsetypedef).
 
 ### get_provisioned_product_outputs
+
+This API takes either a `ProvisonedProductId` or a `ProvisionedProductName` ,
+along with a list of one or more output keys, and responds with the key/value
+pairs of those outputs.
 
 Type annotations for
 `boto3.client("servicecatalog").get_provisioned_product_outputs` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.get_provisioned_product_outputs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.get_provisioned_product_outputs)
+
+Arguments mapping described in
+[GetProvisionedProductOutputsInputTypeDef](./type_defs.md#getprovisionedproductoutputsinputtypedef).
 
 Keyword-only arguments:
 
@@ -1069,15 +1338,21 @@ Keyword-only arguments:
 - `PageToken`: `str`
 
 Returns
-[GetProvisionedProductOutputsOutputTypeDef](./type_defs.md#getprovisionedproductoutputsoutputtypedef).
+[GetProvisionedProductOutputsOutputResponseTypeDef](./type_defs.md#getprovisionedproductoutputsoutputresponsetypedef).
 
 ### import_as_provisioned_product
+
+Requests the import of a resource as a Service Catalog provisioned product that
+is associated to a Service Catalog product and provisioning artifact.
 
 Type annotations for
 `boto3.client("servicecatalog").import_as_provisioned_product` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.import_as_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.import_as_provisioned_product)
+
+Arguments mapping described in
+[ImportAsProvisionedProductInputTypeDef](./type_defs.md#importasprovisionedproductinputtypedef).
 
 Keyword-only arguments:
 
@@ -1089,15 +1364,20 @@ Keyword-only arguments:
 - `AcceptLanguage`: `str`
 
 Returns
-[ImportAsProvisionedProductOutputTypeDef](./type_defs.md#importasprovisionedproductoutputtypedef).
+[ImportAsProvisionedProductOutputResponseTypeDef](./type_defs.md#importasprovisionedproductoutputresponsetypedef).
 
 ### list_accepted_portfolio_shares
+
+Lists all portfolios for which sharing was accepted by this account.
 
 Type annotations for
 `boto3.client("servicecatalog").list_accepted_portfolio_shares` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.list_accepted_portfolio_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_accepted_portfolio_shares)
+
+Arguments mapping described in
+[ListAcceptedPortfolioSharesInputTypeDef](./type_defs.md#listacceptedportfoliosharesinputtypedef).
 
 Keyword-only arguments:
 
@@ -1108,15 +1388,20 @@ Keyword-only arguments:
   [PortfolioShareTypeType](./literals.md#portfoliosharetypetype)
 
 Returns
-[ListAcceptedPortfolioSharesOutputTypeDef](./type_defs.md#listacceptedportfoliosharesoutputtypedef).
+[ListAcceptedPortfolioSharesOutputResponseTypeDef](./type_defs.md#listacceptedportfoliosharesoutputresponsetypedef).
 
 ### list_budgets_for_resource
+
+Lists all the budgets associated to the specified resource.
 
 Type annotations for `boto3.client("servicecatalog").list_budgets_for_resource`
 method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.list_budgets_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_budgets_for_resource)
+
+Arguments mapping described in
+[ListBudgetsForResourceInputTypeDef](./type_defs.md#listbudgetsforresourceinputtypedef).
 
 Keyword-only arguments:
 
@@ -1126,15 +1411,20 @@ Keyword-only arguments:
 - `PageToken`: `str`
 
 Returns
-[ListBudgetsForResourceOutputTypeDef](./type_defs.md#listbudgetsforresourceoutputtypedef).
+[ListBudgetsForResourceOutputResponseTypeDef](./type_defs.md#listbudgetsforresourceoutputresponsetypedef).
 
 ### list_constraints_for_portfolio
+
+Lists the constraints for the specified portfolio and product.
 
 Type annotations for
 `boto3.client("servicecatalog").list_constraints_for_portfolio` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.list_constraints_for_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_constraints_for_portfolio)
+
+Arguments mapping described in
+[ListConstraintsForPortfolioInputTypeDef](./type_defs.md#listconstraintsforportfolioinputtypedef).
 
 Keyword-only arguments:
 
@@ -1145,14 +1435,19 @@ Keyword-only arguments:
 - `PageToken`: `str`
 
 Returns
-[ListConstraintsForPortfolioOutputTypeDef](./type_defs.md#listconstraintsforportfoliooutputtypedef).
+[ListConstraintsForPortfolioOutputResponseTypeDef](./type_defs.md#listconstraintsforportfoliooutputresponsetypedef).
 
 ### list_launch_paths
+
+Lists the paths to the specified product.
 
 Type annotations for `boto3.client("servicecatalog").list_launch_paths` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.list_launch_paths](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_launch_paths)
+
+Arguments mapping described in
+[ListLaunchPathsInputTypeDef](./type_defs.md#listlaunchpathsinputtypedef).
 
 Keyword-only arguments:
 
@@ -1162,15 +1457,20 @@ Keyword-only arguments:
 - `PageToken`: `str`
 
 Returns
-[ListLaunchPathsOutputTypeDef](./type_defs.md#listlaunchpathsoutputtypedef).
+[ListLaunchPathsOutputResponseTypeDef](./type_defs.md#listlaunchpathsoutputresponsetypedef).
 
 ### list_organization_portfolio_access
+
+Lists the organization nodes that have access to the specified portfolio.
 
 Type annotations for
 `boto3.client("servicecatalog").list_organization_portfolio_access` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.list_organization_portfolio_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_organization_portfolio_access)
+
+Arguments mapping described in
+[ListOrganizationPortfolioAccessInputTypeDef](./type_defs.md#listorganizationportfolioaccessinputtypedef).
 
 Keyword-only arguments:
 
@@ -1183,15 +1483,20 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[ListOrganizationPortfolioAccessOutputTypeDef](./type_defs.md#listorganizationportfolioaccessoutputtypedef).
+[ListOrganizationPortfolioAccessOutputResponseTypeDef](./type_defs.md#listorganizationportfolioaccessoutputresponsetypedef).
 
 ### list_portfolio_access
+
+Lists the account IDs that have access to the specified portfolio.
 
 Type annotations for `boto3.client("servicecatalog").list_portfolio_access`
 method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.list_portfolio_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolio_access)
+
+Arguments mapping described in
+[ListPortfolioAccessInputTypeDef](./type_defs.md#listportfolioaccessinputtypedef).
 
 Keyword-only arguments:
 
@@ -1202,14 +1507,19 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[ListPortfolioAccessOutputTypeDef](./type_defs.md#listportfolioaccessoutputtypedef).
+[ListPortfolioAccessOutputResponseTypeDef](./type_defs.md#listportfolioaccessoutputresponsetypedef).
 
 ### list_portfolios
+
+Lists all portfolios in the catalog.
 
 Type annotations for `boto3.client("servicecatalog").list_portfolios` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.list_portfolios](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolios)
+
+Arguments mapping described in
+[ListPortfoliosInputTypeDef](./type_defs.md#listportfoliosinputtypedef).
 
 Keyword-only arguments:
 
@@ -1218,15 +1528,20 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[ListPortfoliosOutputTypeDef](./type_defs.md#listportfoliosoutputtypedef).
+[ListPortfoliosOutputResponseTypeDef](./type_defs.md#listportfoliosoutputresponsetypedef).
 
 ### list_portfolios_for_product
+
+Lists all portfolios that the specified product is associated with.
 
 Type annotations for
 `boto3.client("servicecatalog").list_portfolios_for_product` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.list_portfolios_for_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolios_for_product)
+
+Arguments mapping described in
+[ListPortfoliosForProductInputTypeDef](./type_defs.md#listportfoliosforproductinputtypedef).
 
 Keyword-only arguments:
 
@@ -1236,15 +1551,20 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[ListPortfoliosForProductOutputTypeDef](./type_defs.md#listportfoliosforproductoutputtypedef).
+[ListPortfoliosForProductOutputResponseTypeDef](./type_defs.md#listportfoliosforproductoutputresponsetypedef).
 
 ### list_principals_for_portfolio
+
+Lists all principal ARNs associated with the specified portfolio.
 
 Type annotations for
 `boto3.client("servicecatalog").list_principals_for_portfolio` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.list_principals_for_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_principals_for_portfolio)
+
+Arguments mapping described in
+[ListPrincipalsForPortfolioInputTypeDef](./type_defs.md#listprincipalsforportfolioinputtypedef).
 
 Keyword-only arguments:
 
@@ -1254,15 +1574,21 @@ Keyword-only arguments:
 - `PageToken`: `str`
 
 Returns
-[ListPrincipalsForPortfolioOutputTypeDef](./type_defs.md#listprincipalsforportfoliooutputtypedef).
+[ListPrincipalsForPortfolioOutputResponseTypeDef](./type_defs.md#listprincipalsforportfoliooutputresponsetypedef).
 
 ### list_provisioned_product_plans
+
+Lists the plans for the specified provisioned product or all plans to which the
+user has access.
 
 Type annotations for
 `boto3.client("servicecatalog").list_provisioned_product_plans` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.list_provisioned_product_plans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_provisioned_product_plans)
+
+Arguments mapping described in
+[ListProvisionedProductPlansInputTypeDef](./type_defs.md#listprovisionedproductplansinputtypedef).
 
 Keyword-only arguments:
 
@@ -1274,9 +1600,12 @@ Keyword-only arguments:
   [AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef)
 
 Returns
-[ListProvisionedProductPlansOutputTypeDef](./type_defs.md#listprovisionedproductplansoutputtypedef).
+[ListProvisionedProductPlansOutputResponseTypeDef](./type_defs.md#listprovisionedproductplansoutputresponsetypedef).
 
 ### list_provisioning_artifacts
+
+Lists all provisioning artifacts (also known as versions) for the specified
+product.
 
 Type annotations for
 `boto3.client("servicecatalog").list_provisioning_artifacts` method.
@@ -1284,15 +1613,21 @@ Type annotations for
 Boto3 documentation:
 [ServiceCatalog.Client.list_provisioning_artifacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_provisioning_artifacts)
 
+Arguments mapping described in
+[ListProvisioningArtifactsInputTypeDef](./type_defs.md#listprovisioningartifactsinputtypedef).
+
 Keyword-only arguments:
 
 - `ProductId`: `str` *(required)*
 - `AcceptLanguage`: `str`
 
 Returns
-[ListProvisioningArtifactsOutputTypeDef](./type_defs.md#listprovisioningartifactsoutputtypedef).
+[ListProvisioningArtifactsOutputResponseTypeDef](./type_defs.md#listprovisioningartifactsoutputresponsetypedef).
 
 ### list_provisioning_artifacts_for_service_action
+
+Lists all provisioning artifacts (also known as versions) for the specified
+self-service action.
 
 Type annotations for
 `boto3.client("servicecatalog").list_provisioning_artifacts_for_service_action`
@@ -1300,6 +1635,9 @@ method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.list_provisioning_artifacts_for_service_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_provisioning_artifacts_for_service_action)
+
+Arguments mapping described in
+[ListProvisioningArtifactsForServiceActionInputTypeDef](./type_defs.md#listprovisioningartifactsforserviceactioninputtypedef).
 
 Keyword-only arguments:
 
@@ -1309,15 +1647,20 @@ Keyword-only arguments:
 - `AcceptLanguage`: `str`
 
 Returns
-[ListProvisioningArtifactsForServiceActionOutputTypeDef](./type_defs.md#listprovisioningartifactsforserviceactionoutputtypedef).
+[ListProvisioningArtifactsForServiceActionOutputResponseTypeDef](./type_defs.md#listprovisioningartifactsforserviceactionoutputresponsetypedef).
 
 ### list_record_history
+
+Lists the specified requests or all performed requests.
 
 Type annotations for `boto3.client("servicecatalog").list_record_history`
 method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.list_record_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_record_history)
+
+Arguments mapping described in
+[ListRecordHistoryInputTypeDef](./type_defs.md#listrecordhistoryinputtypedef).
 
 Keyword-only arguments:
 
@@ -1330,15 +1673,20 @@ Keyword-only arguments:
 - `PageToken`: `str`
 
 Returns
-[ListRecordHistoryOutputTypeDef](./type_defs.md#listrecordhistoryoutputtypedef).
+[ListRecordHistoryOutputResponseTypeDef](./type_defs.md#listrecordhistoryoutputresponsetypedef).
 
 ### list_resources_for_tag_option
+
+Lists the resources associated with the specified TagOption.
 
 Type annotations for
 `boto3.client("servicecatalog").list_resources_for_tag_option` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.list_resources_for_tag_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_resources_for_tag_option)
+
+Arguments mapping described in
+[ListResourcesForTagOptionInputTypeDef](./type_defs.md#listresourcesfortagoptioninputtypedef).
 
 Keyword-only arguments:
 
@@ -1348,15 +1696,20 @@ Keyword-only arguments:
 - `PageToken`: `str`
 
 Returns
-[ListResourcesForTagOptionOutputTypeDef](./type_defs.md#listresourcesfortagoptionoutputtypedef).
+[ListResourcesForTagOptionOutputResponseTypeDef](./type_defs.md#listresourcesfortagoptionoutputresponsetypedef).
 
 ### list_service_actions
+
+Lists all self-service actions.
 
 Type annotations for `boto3.client("servicecatalog").list_service_actions`
 method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.list_service_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_service_actions)
+
+Arguments mapping described in
+[ListServiceActionsInputTypeDef](./type_defs.md#listserviceactionsinputtypedef).
 
 Keyword-only arguments:
 
@@ -1365,9 +1718,12 @@ Keyword-only arguments:
 - `PageToken`: `str`
 
 Returns
-[ListServiceActionsOutputTypeDef](./type_defs.md#listserviceactionsoutputtypedef).
+[ListServiceActionsOutputResponseTypeDef](./type_defs.md#listserviceactionsoutputresponsetypedef).
 
 ### list_service_actions_for_provisioning_artifact
+
+Returns a paginated list of self-service actions associated with the specified
+Product ID and Provisioning Artifact ID.
 
 Type annotations for
 `boto3.client("servicecatalog").list_service_actions_for_provisioning_artifact`
@@ -1375,6 +1731,9 @@ method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.list_service_actions_for_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_service_actions_for_provisioning_artifact)
+
+Arguments mapping described in
+[ListServiceActionsForProvisioningArtifactInputTypeDef](./type_defs.md#listserviceactionsforprovisioningartifactinputtypedef).
 
 Keyword-only arguments:
 
@@ -1385,9 +1744,12 @@ Keyword-only arguments:
 - `AcceptLanguage`: `str`
 
 Returns
-[ListServiceActionsForProvisioningArtifactOutputTypeDef](./type_defs.md#listserviceactionsforprovisioningartifactoutputtypedef).
+[ListServiceActionsForProvisioningArtifactOutputResponseTypeDef](./type_defs.md#listserviceactionsforprovisioningartifactoutputresponsetypedef).
 
 ### list_stack_instances_for_provisioned_product
+
+Returns summary information about stack instances that are associated with the
+specified `CFN_STACKSET` type provisioned product.
 
 Type annotations for
 `boto3.client("servicecatalog").list_stack_instances_for_provisioned_product`
@@ -1395,6 +1757,9 @@ method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.list_stack_instances_for_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_stack_instances_for_provisioned_product)
+
+Arguments mapping described in
+[ListStackInstancesForProvisionedProductInputTypeDef](./type_defs.md#liststackinstancesforprovisionedproductinputtypedef).
 
 Keyword-only arguments:
 
@@ -1404,14 +1769,19 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[ListStackInstancesForProvisionedProductOutputTypeDef](./type_defs.md#liststackinstancesforprovisionedproductoutputtypedef).
+[ListStackInstancesForProvisionedProductOutputResponseTypeDef](./type_defs.md#liststackinstancesforprovisionedproductoutputresponsetypedef).
 
 ### list_tag_options
+
+Lists the specified TagOptions or all TagOptions.
 
 Type annotations for `boto3.client("servicecatalog").list_tag_options` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.list_tag_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_tag_options)
+
+Arguments mapping described in
+[ListTagOptionsInputTypeDef](./type_defs.md#listtagoptionsinputtypedef).
 
 Keyword-only arguments:
 
@@ -1421,14 +1791,19 @@ Keyword-only arguments:
 - `PageToken`: `str`
 
 Returns
-[ListTagOptionsOutputTypeDef](./type_defs.md#listtagoptionsoutputtypedef).
+[ListTagOptionsOutputResponseTypeDef](./type_defs.md#listtagoptionsoutputresponsetypedef).
 
 ### provision_product
+
+Provisions the specified product.
 
 Type annotations for `boto3.client("servicecatalog").provision_product` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.provision_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.provision_product)
+
+Arguments mapping described in
+[ProvisionProductInputTypeDef](./type_defs.md#provisionproductinputtypedef).
 
 Keyword-only arguments:
 
@@ -1449,15 +1824,20 @@ Keyword-only arguments:
 - `NotificationArns`: `List`\[`str`\]
 
 Returns
-[ProvisionProductOutputTypeDef](./type_defs.md#provisionproductoutputtypedef).
+[ProvisionProductOutputResponseTypeDef](./type_defs.md#provisionproductoutputresponsetypedef).
 
 ### reject_portfolio_share
+
+Rejects an offer to share the specified portfolio.
 
 Type annotations for `boto3.client("servicecatalog").reject_portfolio_share`
 method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.reject_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.reject_portfolio_share)
+
+Arguments mapping described in
+[RejectPortfolioShareInputTypeDef](./type_defs.md#rejectportfolioshareinputtypedef).
 
 Keyword-only arguments:
 
@@ -1470,11 +1850,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### scan_provisioned_products
 
+Lists the provisioned products that are available (not terminated).
+
 Type annotations for `boto3.client("servicecatalog").scan_provisioned_products`
 method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.scan_provisioned_products](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.scan_provisioned_products)
+
+Arguments mapping described in
+[ScanProvisionedProductsInputTypeDef](./type_defs.md#scanprovisionedproductsinputtypedef).
 
 Keyword-only arguments:
 
@@ -1485,14 +1870,19 @@ Keyword-only arguments:
 - `PageToken`: `str`
 
 Returns
-[ScanProvisionedProductsOutputTypeDef](./type_defs.md#scanprovisionedproductsoutputtypedef).
+[ScanProvisionedProductsOutputResponseTypeDef](./type_defs.md#scanprovisionedproductsoutputresponsetypedef).
 
 ### search_products
+
+Gets information about the products to which the caller has access.
 
 Type annotations for `boto3.client("servicecatalog").search_products` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.search_products](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.search_products)
+
+Arguments mapping described in
+[SearchProductsInputTypeDef](./type_defs.md#searchproductsinputtypedef).
 
 Keyword-only arguments:
 
@@ -1506,15 +1896,21 @@ Keyword-only arguments:
 - `PageToken`: `str`
 
 Returns
-[SearchProductsOutputTypeDef](./type_defs.md#searchproductsoutputtypedef).
+[SearchProductsOutputResponseTypeDef](./type_defs.md#searchproductsoutputresponsetypedef).
 
 ### search_products_as_admin
+
+Gets information about the products for the specified portfolio or all
+products.
 
 Type annotations for `boto3.client("servicecatalog").search_products_as_admin`
 method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.search_products_as_admin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.search_products_as_admin)
+
+Arguments mapping described in
+[SearchProductsAsAdminInputTypeDef](./type_defs.md#searchproductsasadmininputtypedef).
 
 Keyword-only arguments:
 
@@ -1531,15 +1927,21 @@ Keyword-only arguments:
   [ProductSourceType](./literals.md#productsourcetype))
 
 Returns
-[SearchProductsAsAdminOutputTypeDef](./type_defs.md#searchproductsasadminoutputtypedef).
+[SearchProductsAsAdminOutputResponseTypeDef](./type_defs.md#searchproductsasadminoutputresponsetypedef).
 
 ### search_provisioned_products
+
+Gets information about the provisioned products that meet the specified
+criteria.
 
 Type annotations for
 `boto3.client("servicecatalog").search_provisioned_products` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.search_provisioned_products](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.search_provisioned_products)
+
+Arguments mapping described in
+[SearchProvisionedProductsInputTypeDef](./type_defs.md#searchprovisionedproductsinputtypedef).
 
 Keyword-only arguments:
 
@@ -1555,15 +1957,20 @@ Keyword-only arguments:
 - `PageToken`: `str`
 
 Returns
-[SearchProvisionedProductsOutputTypeDef](./type_defs.md#searchprovisionedproductsoutputtypedef).
+[SearchProvisionedProductsOutputResponseTypeDef](./type_defs.md#searchprovisionedproductsoutputresponsetypedef).
 
 ### terminate_provisioned_product
+
+Terminates the specified provisioned product.
 
 Type annotations for
 `boto3.client("servicecatalog").terminate_provisioned_product` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.terminate_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.terminate_provisioned_product)
+
+Arguments mapping described in
+[TerminateProvisionedProductInputTypeDef](./type_defs.md#terminateprovisionedproductinputtypedef).
 
 Keyword-only arguments:
 
@@ -1575,14 +1982,19 @@ Keyword-only arguments:
 - `RetainPhysicalResources`: `bool`
 
 Returns
-[TerminateProvisionedProductOutputTypeDef](./type_defs.md#terminateprovisionedproductoutputtypedef).
+[TerminateProvisionedProductOutputResponseTypeDef](./type_defs.md#terminateprovisionedproductoutputresponsetypedef).
 
 ### update_constraint
+
+Updates the specified constraint.
 
 Type annotations for `boto3.client("servicecatalog").update_constraint` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.update_constraint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_constraint)
+
+Arguments mapping described in
+[UpdateConstraintInputTypeDef](./type_defs.md#updateconstraintinputtypedef).
 
 Keyword-only arguments:
 
@@ -1592,14 +2004,19 @@ Keyword-only arguments:
 - `Parameters`: `str`
 
 Returns
-[UpdateConstraintOutputTypeDef](./type_defs.md#updateconstraintoutputtypedef).
+[UpdateConstraintOutputResponseTypeDef](./type_defs.md#updateconstraintoutputresponsetypedef).
 
 ### update_portfolio
+
+Updates the specified portfolio.
 
 Type annotations for `boto3.client("servicecatalog").update_portfolio` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.update_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_portfolio)
+
+Arguments mapping described in
+[UpdatePortfolioInputTypeDef](./type_defs.md#updateportfolioinputtypedef).
 
 Keyword-only arguments:
 
@@ -1612,15 +2029,20 @@ Keyword-only arguments:
 - `RemoveTags`: `List`\[`str`\]
 
 Returns
-[UpdatePortfolioOutputTypeDef](./type_defs.md#updateportfoliooutputtypedef).
+[UpdatePortfolioOutputResponseTypeDef](./type_defs.md#updateportfoliooutputresponsetypedef).
 
 ### update_portfolio_share
+
+Updates the specified portfolio share.
 
 Type annotations for `boto3.client("servicecatalog").update_portfolio_share`
 method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.update_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_portfolio_share)
+
+Arguments mapping described in
+[UpdatePortfolioShareInputTypeDef](./type_defs.md#updateportfolioshareinputtypedef).
 
 Keyword-only arguments:
 
@@ -1632,14 +2054,19 @@ Keyword-only arguments:
 - `ShareTagOptions`: `bool`
 
 Returns
-[UpdatePortfolioShareOutputTypeDef](./type_defs.md#updateportfolioshareoutputtypedef).
+[UpdatePortfolioShareOutputResponseTypeDef](./type_defs.md#updateportfolioshareoutputresponsetypedef).
 
 ### update_product
+
+Updates the specified product.
 
 Type annotations for `boto3.client("servicecatalog").update_product` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.update_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_product)
+
+Arguments mapping described in
+[UpdateProductInputTypeDef](./type_defs.md#updateproductinputtypedef).
 
 Keyword-only arguments:
 
@@ -1656,15 +2083,20 @@ Keyword-only arguments:
 - `RemoveTags`: `List`\[`str`\]
 
 Returns
-[UpdateProductOutputTypeDef](./type_defs.md#updateproductoutputtypedef).
+[UpdateProductOutputResponseTypeDef](./type_defs.md#updateproductoutputresponsetypedef).
 
 ### update_provisioned_product
+
+Requests updates to the configuration of the specified provisioned product.
 
 Type annotations for
 `boto3.client("servicecatalog").update_provisioned_product` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.update_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioned_product)
+
+Arguments mapping described in
+[UpdateProvisionedProductInputTypeDef](./type_defs.md#updateprovisionedproductinputtypedef).
 
 Keyword-only arguments:
 
@@ -1685,15 +2117,20 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[UpdateProvisionedProductOutputTypeDef](./type_defs.md#updateprovisionedproductoutputtypedef).
+[UpdateProvisionedProductOutputResponseTypeDef](./type_defs.md#updateprovisionedproductoutputresponsetypedef).
 
 ### update_provisioned_product_properties
+
+Requests updates to the properties of the specified provisioned product.
 
 Type annotations for
 `boto3.client("servicecatalog").update_provisioned_product_properties` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.update_provisioned_product_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioned_product_properties)
+
+Arguments mapping described in
+[UpdateProvisionedProductPropertiesInputTypeDef](./type_defs.md#updateprovisionedproductpropertiesinputtypedef).
 
 Keyword-only arguments:
 
@@ -1705,15 +2142,21 @@ Keyword-only arguments:
 - `AcceptLanguage`: `str`
 
 Returns
-[UpdateProvisionedProductPropertiesOutputTypeDef](./type_defs.md#updateprovisionedproductpropertiesoutputtypedef).
+[UpdateProvisionedProductPropertiesOutputResponseTypeDef](./type_defs.md#updateprovisionedproductpropertiesoutputresponsetypedef).
 
 ### update_provisioning_artifact
+
+Updates the specified provisioning artifact (also known as a version) for the
+specified product.
 
 Type annotations for
 `boto3.client("servicecatalog").update_provisioning_artifact` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.update_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioning_artifact)
+
+Arguments mapping described in
+[UpdateProvisioningArtifactInputTypeDef](./type_defs.md#updateprovisioningartifactinputtypedef).
 
 Keyword-only arguments:
 
@@ -1727,15 +2170,20 @@ Keyword-only arguments:
   [ProvisioningArtifactGuidanceType](./literals.md#provisioningartifactguidancetype)
 
 Returns
-[UpdateProvisioningArtifactOutputTypeDef](./type_defs.md#updateprovisioningartifactoutputtypedef).
+[UpdateProvisioningArtifactOutputResponseTypeDef](./type_defs.md#updateprovisioningartifactoutputresponsetypedef).
 
 ### update_service_action
+
+Updates a self-service action.
 
 Type annotations for `boto3.client("servicecatalog").update_service_action`
 method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.update_service_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_service_action)
+
+Arguments mapping described in
+[UpdateServiceActionInputTypeDef](./type_defs.md#updateserviceactioninputtypedef).
 
 Keyword-only arguments:
 
@@ -1748,14 +2196,19 @@ Keyword-only arguments:
 - `AcceptLanguage`: `str`
 
 Returns
-[UpdateServiceActionOutputTypeDef](./type_defs.md#updateserviceactionoutputtypedef).
+[UpdateServiceActionOutputResponseTypeDef](./type_defs.md#updateserviceactionoutputresponsetypedef).
 
 ### update_tag_option
+
+Updates the specified TagOption.
 
 Type annotations for `boto3.client("servicecatalog").update_tag_option` method.
 
 Boto3 documentation:
 [ServiceCatalog.Client.update_tag_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_tag_option)
+
+Arguments mapping described in
+[UpdateTagOptionInputTypeDef](./type_defs.md#updatetagoptioninputtypedef).
 
 Keyword-only arguments:
 
@@ -1764,7 +2217,7 @@ Keyword-only arguments:
 - `Active`: `bool`
 
 Returns
-[UpdateTagOptionOutputTypeDef](./type_defs.md#updatetagoptionoutputtypedef).
+[UpdateTagOptionOutputResponseTypeDef](./type_defs.md#updatetagoptionoutputresponsetypedef).
 
 ### get_paginator
 

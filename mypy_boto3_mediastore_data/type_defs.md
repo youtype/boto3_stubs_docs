@@ -8,38 +8,76 @@ type annotations stubs module
 [mypy_boto3_mediastore_data](https://pypi.org/project/mypy-boto3-mediastore-data/).
 
 - [Typed dictionaries for boto3 MediaStoreData module](#typed-dictionaries-for-boto3-mediastoredata-module)
-  - [DescribeObjectResponseTypeDef](#describeobjectresponsetypedef)
-  - [GetObjectResponseTypeDef](#getobjectresponsetypedef)
+  - [DeleteObjectRequestTypeDef](#deleteobjectrequesttypedef)
+  - [DescribeObjectRequestTypeDef](#describeobjectrequesttypedef)
+  - [DescribeObjectResponseResponseTypeDef](#describeobjectresponseresponsetypedef)
+  - [GetObjectRequestTypeDef](#getobjectrequesttypedef)
+  - [GetObjectResponseResponseTypeDef](#getobjectresponseresponsetypedef)
   - [ItemTypeDef](#itemtypedef)
-  - [ListItemsResponseTypeDef](#listitemsresponsetypedef)
+  - [ListItemsRequestTypeDef](#listitemsrequesttypedef)
+  - [ListItemsResponseResponseTypeDef](#listitemsresponseresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutObjectResponseTypeDef](#putobjectresponsetypedef)
+  - [PutObjectRequestTypeDef](#putobjectrequesttypedef)
+  - [PutObjectResponseResponseTypeDef](#putobjectresponseresponsetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
 
-## DescribeObjectResponseTypeDef
+## DeleteObjectRequestTypeDef
 
 ```python
-from mypy_boto3_mediastore_data.type_defs import DescribeObjectResponseTypeDef
+from mypy_boto3_mediastore_data.type_defs import DeleteObjectRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Path`: `str`
+
+## DescribeObjectRequestTypeDef
+
+```python
+from mypy_boto3_mediastore_data.type_defs import DescribeObjectRequestTypeDef
+```
+
+Required fields:
+
+- `Path`: `str`
+
+## DescribeObjectResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediastore_data.type_defs import DescribeObjectResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ETag`: `str`
 - `ContentType`: `str`
 - `ContentLength`: `int`
 - `CacheControl`: `str`
 - `LastModified`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetObjectResponseTypeDef
+## GetObjectRequestTypeDef
 
 ```python
-from mypy_boto3_mediastore_data.type_defs import GetObjectResponseTypeDef
+from mypy_boto3_mediastore_data.type_defs import GetObjectRequestTypeDef
 ```
 
 Required fields:
 
-- `StatusCode`: `int`
+- `Path`: `str`
 
 Optional fields:
+
+- `Range`: `str`
+
+## GetObjectResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediastore_data.type_defs import GetObjectResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Body`: `StreamingBody`
 - `CacheControl`: `str`
@@ -48,6 +86,9 @@ Optional fields:
 - `ContentType`: `str`
 - `ETag`: `str`
 - `LastModified`: `datetime`
+- `StatusCode`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ItemTypeDef
 
@@ -64,16 +105,30 @@ Optional fields:
 - `ContentType`: `str`
 - `ContentLength`: `int`
 
-## ListItemsResponseTypeDef
+## ListItemsRequestTypeDef
 
 ```python
-from mypy_boto3_mediastore_data.type_defs import ListItemsResponseTypeDef
+from mypy_boto3_mediastore_data.type_defs import ListItemsRequestTypeDef
 ```
 
 Optional fields:
 
+- `Path`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListItemsResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediastore_data.type_defs import ListItemsResponseResponseTypeDef
+```
+
+Required fields:
+
 - `Items`: `List`\[[ItemTypeDef](./type_defs.md#itemtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -87,15 +142,51 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## PutObjectResponseTypeDef
+## PutObjectRequestTypeDef
 
 ```python
-from mypy_boto3_mediastore_data.type_defs import PutObjectResponseTypeDef
+from mypy_boto3_mediastore_data.type_defs import PutObjectRequestTypeDef
 ```
 
+Required fields:
+
+- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `Path`: `str`
+
 Optional fields:
+
+- `ContentType`: `str`
+- `CacheControl`: `str`
+- `StorageClass`: `Literal['TEMPORAL']` (see
+  [StorageClassType](./literals.md#storageclasstype))
+- `UploadAvailability`:
+  [UploadAvailabilityType](./literals.md#uploadavailabilitytype)
+
+## PutObjectResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediastore_data.type_defs import PutObjectResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ContentSHA256`: `str`
 - `ETag`: `str`
 - `StorageClass`: `Literal['TEMPORAL']` (see
   [StorageClassType](./literals.md#storageclasstype))
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_mediastore_data.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`

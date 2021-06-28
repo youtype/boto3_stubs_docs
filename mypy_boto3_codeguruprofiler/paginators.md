@@ -29,14 +29,14 @@ Boto3 documentation:
 
 Arguments for `ListProfileTimesPaginator.paginate` method:
 
-- `endTime`: `datetime` *(required)*
+- `endTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `period`: [AggregationPeriodType](./literals.md#aggregationperiodtype)
   *(required)*
 - `profilingGroupName`: `str` *(required)*
-- `startTime`: `datetime` *(required)*
+- `startTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `orderBy`: [OrderByType](./literals.md#orderbytype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProfileTimesPaginator.paginate` returns
-`Iterator`\[[ListProfileTimesResponseTypeDef](./type_defs.md#listprofiletimesresponsetypedef)\].
+`Iterator`\[[ListProfileTimesResponseResponseTypeDef](./type_defs.md#listprofiletimesresponseresponsetypedef)\].

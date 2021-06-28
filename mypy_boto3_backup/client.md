@@ -110,6 +110,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("backup").can_paginate` method.
 
 Boto3 documentation:
@@ -123,10 +125,15 @@ Returns `bool`.
 
 ### create_backup_plan
 
+Creates a backup plan using a backup plan name and backup rules.
+
 Type annotations for `boto3.client("backup").create_backup_plan` method.
 
 Boto3 documentation:
 [Backup.Client.create_backup_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_backup_plan)
+
+Arguments mapping described in
+[CreateBackupPlanInputTypeDef](./type_defs.md#createbackupplaninputtypedef).
 
 Keyword-only arguments:
 
@@ -136,14 +143,20 @@ Keyword-only arguments:
 - `CreatorRequestId`: `str`
 
 Returns
-[CreateBackupPlanOutputTypeDef](./type_defs.md#createbackupplanoutputtypedef).
+[CreateBackupPlanOutputResponseTypeDef](./type_defs.md#createbackupplanoutputresponsetypedef).
 
 ### create_backup_selection
+
+Creates a JSON document that specifies a set of resources to assign to a backup
+plan.
 
 Type annotations for `boto3.client("backup").create_backup_selection` method.
 
 Boto3 documentation:
 [Backup.Client.create_backup_selection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_backup_selection)
+
+Arguments mapping described in
+[CreateBackupSelectionInputTypeDef](./type_defs.md#createbackupselectioninputtypedef).
 
 Keyword-only arguments:
 
@@ -153,14 +166,19 @@ Keyword-only arguments:
 - `CreatorRequestId`: `str`
 
 Returns
-[CreateBackupSelectionOutputTypeDef](./type_defs.md#createbackupselectionoutputtypedef).
+[CreateBackupSelectionOutputResponseTypeDef](./type_defs.md#createbackupselectionoutputresponsetypedef).
 
 ### create_backup_vault
+
+Creates a logical container where backups are stored.
 
 Type annotations for `boto3.client("backup").create_backup_vault` method.
 
 Boto3 documentation:
 [Backup.Client.create_backup_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_backup_vault)
+
+Arguments mapping described in
+[CreateBackupVaultInputTypeDef](./type_defs.md#createbackupvaultinputtypedef).
 
 Keyword-only arguments:
 
@@ -170,28 +188,39 @@ Keyword-only arguments:
 - `CreatorRequestId`: `str`
 
 Returns
-[CreateBackupVaultOutputTypeDef](./type_defs.md#createbackupvaultoutputtypedef).
+[CreateBackupVaultOutputResponseTypeDef](./type_defs.md#createbackupvaultoutputresponsetypedef).
 
 ### delete_backup_plan
+
+Deletes a backup plan.
 
 Type annotations for `boto3.client("backup").delete_backup_plan` method.
 
 Boto3 documentation:
 [Backup.Client.delete_backup_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_plan)
 
+Arguments mapping described in
+[DeleteBackupPlanInputTypeDef](./type_defs.md#deletebackupplaninputtypedef).
+
 Keyword-only arguments:
 
 - `BackupPlanId`: `str` *(required)*
 
 Returns
-[DeleteBackupPlanOutputTypeDef](./type_defs.md#deletebackupplanoutputtypedef).
+[DeleteBackupPlanOutputResponseTypeDef](./type_defs.md#deletebackupplanoutputresponsetypedef).
 
 ### delete_backup_selection
+
+Deletes the resource selection associated with a backup plan that is specified
+by the `SelectionId` .
 
 Type annotations for `boto3.client("backup").delete_backup_selection` method.
 
 Boto3 documentation:
 [Backup.Client.delete_backup_selection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_selection)
+
+Arguments mapping described in
+[DeleteBackupSelectionInputTypeDef](./type_defs.md#deletebackupselectioninputtypedef).
 
 Keyword-only arguments:
 
@@ -200,10 +229,15 @@ Keyword-only arguments:
 
 ### delete_backup_vault
 
+Deletes the backup vault identified by its name.
+
 Type annotations for `boto3.client("backup").delete_backup_vault` method.
 
 Boto3 documentation:
 [Backup.Client.delete_backup_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault)
+
+Arguments mapping described in
+[DeleteBackupVaultInputTypeDef](./type_defs.md#deletebackupvaultinputtypedef).
 
 Keyword-only arguments:
 
@@ -211,11 +245,16 @@ Keyword-only arguments:
 
 ### delete_backup_vault_access_policy
 
+Deletes the policy document that manages permissions on a backup vault.
+
 Type annotations for `boto3.client("backup").delete_backup_vault_access_policy`
 method.
 
 Boto3 documentation:
 [Backup.Client.delete_backup_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault_access_policy)
+
+Arguments mapping described in
+[DeleteBackupVaultAccessPolicyInputTypeDef](./type_defs.md#deletebackupvaultaccesspolicyinputtypedef).
 
 Keyword-only arguments:
 
@@ -223,11 +262,16 @@ Keyword-only arguments:
 
 ### delete_backup_vault_notifications
 
+Deletes event notifications for the specified backup vault.
+
 Type annotations for `boto3.client("backup").delete_backup_vault_notifications`
 method.
 
 Boto3 documentation:
 [Backup.Client.delete_backup_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault_notifications)
+
+Arguments mapping described in
+[DeleteBackupVaultNotificationsInputTypeDef](./type_defs.md#deletebackupvaultnotificationsinputtypedef).
 
 Keyword-only arguments:
 
@@ -235,10 +279,15 @@ Keyword-only arguments:
 
 ### delete_recovery_point
 
+Deletes the recovery point specified by a recovery point ID.
+
 Type annotations for `boto3.client("backup").delete_recovery_point` method.
 
 Boto3 documentation:
 [Backup.Client.delete_recovery_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_recovery_point)
+
+Arguments mapping described in
+[DeleteRecoveryPointInputTypeDef](./type_defs.md#deleterecoverypointinputtypedef).
 
 Keyword-only arguments:
 
@@ -247,47 +296,65 @@ Keyword-only arguments:
 
 ### describe_backup_job
 
+Returns backup job details for the specified `BackupJobId` .
+
 Type annotations for `boto3.client("backup").describe_backup_job` method.
 
 Boto3 documentation:
 [Backup.Client.describe_backup_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_backup_job)
+
+Arguments mapping described in
+[DescribeBackupJobInputTypeDef](./type_defs.md#describebackupjobinputtypedef).
 
 Keyword-only arguments:
 
 - `BackupJobId`: `str` *(required)*
 
 Returns
-[DescribeBackupJobOutputTypeDef](./type_defs.md#describebackupjoboutputtypedef).
+[DescribeBackupJobOutputResponseTypeDef](./type_defs.md#describebackupjoboutputresponsetypedef).
 
 ### describe_backup_vault
+
+Returns metadata about a backup vault specified by its name.
 
 Type annotations for `boto3.client("backup").describe_backup_vault` method.
 
 Boto3 documentation:
 [Backup.Client.describe_backup_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_backup_vault)
 
+Arguments mapping described in
+[DescribeBackupVaultInputTypeDef](./type_defs.md#describebackupvaultinputtypedef).
+
 Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 
 Returns
-[DescribeBackupVaultOutputTypeDef](./type_defs.md#describebackupvaultoutputtypedef).
+[DescribeBackupVaultOutputResponseTypeDef](./type_defs.md#describebackupvaultoutputresponsetypedef).
 
 ### describe_copy_job
+
+Returns metadata associated with creating a copy of a resource.
 
 Type annotations for `boto3.client("backup").describe_copy_job` method.
 
 Boto3 documentation:
 [Backup.Client.describe_copy_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_copy_job)
 
+Arguments mapping described in
+[DescribeCopyJobInputTypeDef](./type_defs.md#describecopyjobinputtypedef).
+
 Keyword-only arguments:
 
 - `CopyJobId`: `str` *(required)*
 
 Returns
-[DescribeCopyJobOutputTypeDef](./type_defs.md#describecopyjoboutputtypedef).
+[DescribeCopyJobOutputResponseTypeDef](./type_defs.md#describecopyjoboutputresponsetypedef).
 
 ### describe_global_settings
+
+Describes the global settings of the AWS account, including whether it is opted
+in to cross-account backup.
 
 Type annotations for `boto3.client("backup").describe_global_settings` method.
 
@@ -295,9 +362,13 @@ Boto3 documentation:
 [Backup.Client.describe_global_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_global_settings)
 
 Returns
-[DescribeGlobalSettingsOutputTypeDef](./type_defs.md#describeglobalsettingsoutputtypedef).
+[DescribeGlobalSettingsOutputResponseTypeDef](./type_defs.md#describeglobalsettingsoutputresponsetypedef).
 
 ### describe_protected_resource
+
+Returns information about a saved resource, including the last time it was
+backed up, its Amazon Resource Name (ARN), and the AWS service type of the
+saved resource.
 
 Type annotations for `boto3.client("backup").describe_protected_resource`
 method.
@@ -305,19 +376,28 @@ method.
 Boto3 documentation:
 [Backup.Client.describe_protected_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_protected_resource)
 
+Arguments mapping described in
+[DescribeProtectedResourceInputTypeDef](./type_defs.md#describeprotectedresourceinputtypedef).
+
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[DescribeProtectedResourceOutputTypeDef](./type_defs.md#describeprotectedresourceoutputtypedef).
+[DescribeProtectedResourceOutputResponseTypeDef](./type_defs.md#describeprotectedresourceoutputresponsetypedef).
 
 ### describe_recovery_point
+
+Returns metadata associated with a recovery point, including ID, status,
+encryption, and lifecycle.
 
 Type annotations for `boto3.client("backup").describe_recovery_point` method.
 
 Boto3 documentation:
 [Backup.Client.describe_recovery_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_recovery_point)
+
+Arguments mapping described in
+[DescribeRecoveryPointInputTypeDef](./type_defs.md#describerecoverypointinputtypedef).
 
 Keyword-only arguments:
 
@@ -325,9 +405,11 @@ Keyword-only arguments:
 - `RecoveryPointArn`: `str` *(required)*
 
 Returns
-[DescribeRecoveryPointOutputTypeDef](./type_defs.md#describerecoverypointoutputtypedef).
+[DescribeRecoveryPointOutputResponseTypeDef](./type_defs.md#describerecoverypointoutputresponsetypedef).
 
 ### describe_region_settings
+
+Returns the current service opt-in settings for the Region.
 
 Type annotations for `boto3.client("backup").describe_region_settings` method.
 
@@ -335,29 +417,41 @@ Boto3 documentation:
 [Backup.Client.describe_region_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_region_settings)
 
 Returns
-[DescribeRegionSettingsOutputTypeDef](./type_defs.md#describeregionsettingsoutputtypedef).
+[DescribeRegionSettingsOutputResponseTypeDef](./type_defs.md#describeregionsettingsoutputresponsetypedef).
 
 ### describe_restore_job
+
+Returns metadata associated with a restore job that is specified by a job ID.
 
 Type annotations for `boto3.client("backup").describe_restore_job` method.
 
 Boto3 documentation:
 [Backup.Client.describe_restore_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_restore_job)
 
+Arguments mapping described in
+[DescribeRestoreJobInputTypeDef](./type_defs.md#describerestorejobinputtypedef).
+
 Keyword-only arguments:
 
 - `RestoreJobId`: `str` *(required)*
 
 Returns
-[DescribeRestoreJobOutputTypeDef](./type_defs.md#describerestorejoboutputtypedef).
+[DescribeRestoreJobOutputResponseTypeDef](./type_defs.md#describerestorejoboutputresponsetypedef).
 
 ### disassociate_recovery_point
+
+Deletes the specified continuous backup recovery point from AWS Backup and
+releases control of that continuous backup to the source service, such as
+Amazon RDS.
 
 Type annotations for `boto3.client("backup").disassociate_recovery_point`
 method.
 
 Boto3 documentation:
 [Backup.Client.disassociate_recovery_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.disassociate_recovery_point)
+
+Arguments mapping described in
+[DisassociateRecoveryPointInputTypeDef](./type_defs.md#disassociaterecoverypointinputtypedef).
 
 Keyword-only arguments:
 
@@ -366,20 +460,27 @@ Keyword-only arguments:
 
 ### export_backup_plan_template
 
+Returns the backup plan that is specified by the plan ID as a backup template.
+
 Type annotations for `boto3.client("backup").export_backup_plan_template`
 method.
 
 Boto3 documentation:
 [Backup.Client.export_backup_plan_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.export_backup_plan_template)
 
+Arguments mapping described in
+[ExportBackupPlanTemplateInputTypeDef](./type_defs.md#exportbackupplantemplateinputtypedef).
+
 Keyword-only arguments:
 
 - `BackupPlanId`: `str` *(required)*
 
 Returns
-[ExportBackupPlanTemplateOutputTypeDef](./type_defs.md#exportbackupplantemplateoutputtypedef).
+[ExportBackupPlanTemplateOutputResponseTypeDef](./type_defs.md#exportbackupplantemplateoutputresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("backup").generate_presigned_url` method.
 
@@ -397,10 +498,15 @@ Returns `str`.
 
 ### get_backup_plan
 
+Returns `BackupPlan` details for the specified `BackupPlanId`.
+
 Type annotations for `boto3.client("backup").get_backup_plan` method.
 
 Boto3 documentation:
 [Backup.Client.get_backup_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_plan)
+
+Arguments mapping described in
+[GetBackupPlanInputTypeDef](./type_defs.md#getbackupplaninputtypedef).
 
 Keyword-only arguments:
 
@@ -408,23 +514,30 @@ Keyword-only arguments:
 - `VersionId`: `str`
 
 Returns
-[GetBackupPlanOutputTypeDef](./type_defs.md#getbackupplanoutputtypedef).
+[GetBackupPlanOutputResponseTypeDef](./type_defs.md#getbackupplanoutputresponsetypedef).
 
 ### get_backup_plan_from_json
+
+Returns a valid JSON document specifying a backup plan or an error.
 
 Type annotations for `boto3.client("backup").get_backup_plan_from_json` method.
 
 Boto3 documentation:
 [Backup.Client.get_backup_plan_from_json](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_plan_from_json)
 
+Arguments mapping described in
+[GetBackupPlanFromJSONInputTypeDef](./type_defs.md#getbackupplanfromjsoninputtypedef).
+
 Keyword-only arguments:
 
 - `BackupPlanTemplateJson`: `str` *(required)*
 
 Returns
-[GetBackupPlanFromJSONOutputTypeDef](./type_defs.md#getbackupplanfromjsonoutputtypedef).
+[GetBackupPlanFromJSONOutputResponseTypeDef](./type_defs.md#getbackupplanfromjsonoutputresponsetypedef).
 
 ### get_backup_plan_from_template
+
+Returns the template specified by its `templateId` as a backup plan.
 
 Type annotations for `boto3.client("backup").get_backup_plan_from_template`
 method.
@@ -432,19 +545,28 @@ method.
 Boto3 documentation:
 [Backup.Client.get_backup_plan_from_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_plan_from_template)
 
+Arguments mapping described in
+[GetBackupPlanFromTemplateInputTypeDef](./type_defs.md#getbackupplanfromtemplateinputtypedef).
+
 Keyword-only arguments:
 
 - `BackupPlanTemplateId`: `str` *(required)*
 
 Returns
-[GetBackupPlanFromTemplateOutputTypeDef](./type_defs.md#getbackupplanfromtemplateoutputtypedef).
+[GetBackupPlanFromTemplateOutputResponseTypeDef](./type_defs.md#getbackupplanfromtemplateoutputresponsetypedef).
 
 ### get_backup_selection
+
+Returns selection metadata and a document in JSON format that specifies a list
+of resources that are associated with a backup plan.
 
 Type annotations for `boto3.client("backup").get_backup_selection` method.
 
 Boto3 documentation:
 [Backup.Client.get_backup_selection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_selection)
+
+Arguments mapping described in
+[GetBackupSelectionInputTypeDef](./type_defs.md#getbackupselectioninputtypedef).
 
 Keyword-only arguments:
 
@@ -452,9 +574,12 @@ Keyword-only arguments:
 - `SelectionId`: `str` *(required)*
 
 Returns
-[GetBackupSelectionOutputTypeDef](./type_defs.md#getbackupselectionoutputtypedef).
+[GetBackupSelectionOutputResponseTypeDef](./type_defs.md#getbackupselectionoutputresponsetypedef).
 
 ### get_backup_vault_access_policy
+
+Returns the access policy document that is associated with the named backup
+vault.
 
 Type annotations for `boto3.client("backup").get_backup_vault_access_policy`
 method.
@@ -462,14 +587,19 @@ method.
 Boto3 documentation:
 [Backup.Client.get_backup_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_vault_access_policy)
 
+Arguments mapping described in
+[GetBackupVaultAccessPolicyInputTypeDef](./type_defs.md#getbackupvaultaccesspolicyinputtypedef).
+
 Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 
 Returns
-[GetBackupVaultAccessPolicyOutputTypeDef](./type_defs.md#getbackupvaultaccesspolicyoutputtypedef).
+[GetBackupVaultAccessPolicyOutputResponseTypeDef](./type_defs.md#getbackupvaultaccesspolicyoutputresponsetypedef).
 
 ### get_backup_vault_notifications
+
+Returns event notifications for the specified backup vault.
 
 Type annotations for `boto3.client("backup").get_backup_vault_notifications`
 method.
@@ -477,14 +607,19 @@ method.
 Boto3 documentation:
 [Backup.Client.get_backup_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_vault_notifications)
 
+Arguments mapping described in
+[GetBackupVaultNotificationsInputTypeDef](./type_defs.md#getbackupvaultnotificationsinputtypedef).
+
 Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 
 Returns
-[GetBackupVaultNotificationsOutputTypeDef](./type_defs.md#getbackupvaultnotificationsoutputtypedef).
+[GetBackupVaultNotificationsOutputResponseTypeDef](./type_defs.md#getbackupvaultnotificationsoutputresponsetypedef).
 
 ### get_recovery_point_restore_metadata
+
+Returns a set of metadata key-value pairs that were used to create the backup.
 
 Type annotations for
 `boto3.client("backup").get_recovery_point_restore_metadata` method.
@@ -492,15 +627,20 @@ Type annotations for
 Boto3 documentation:
 [Backup.Client.get_recovery_point_restore_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_recovery_point_restore_metadata)
 
+Arguments mapping described in
+[GetRecoveryPointRestoreMetadataInputTypeDef](./type_defs.md#getrecoverypointrestoremetadatainputtypedef).
+
 Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 - `RecoveryPointArn`: `str` *(required)*
 
 Returns
-[GetRecoveryPointRestoreMetadataOutputTypeDef](./type_defs.md#getrecoverypointrestoremetadataoutputtypedef).
+[GetRecoveryPointRestoreMetadataOutputResponseTypeDef](./type_defs.md#getrecoverypointrestoremetadataoutputresponsetypedef).
 
 ### get_supported_resource_types
+
+Returns the AWS resource types supported by AWS Backup.
 
 Type annotations for `boto3.client("backup").get_supported_resource_types`
 method.
@@ -509,14 +649,20 @@ Boto3 documentation:
 [Backup.Client.get_supported_resource_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_supported_resource_types)
 
 Returns
-[GetSupportedResourceTypesOutputTypeDef](./type_defs.md#getsupportedresourcetypesoutputtypedef).
+[GetSupportedResourceTypesOutputResponseTypeDef](./type_defs.md#getsupportedresourcetypesoutputresponsetypedef).
 
 ### list_backup_jobs
+
+Returns a list of existing backup jobs for an authenticated account for the
+last 30 days.
 
 Type annotations for `boto3.client("backup").list_backup_jobs` method.
 
 Boto3 documentation:
 [Backup.Client.list_backup_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_jobs)
+
+Arguments mapping described in
+[ListBackupJobsInputTypeDef](./type_defs.md#listbackupjobsinputtypedef).
 
 Keyword-only arguments:
 
@@ -525,15 +671,18 @@ Keyword-only arguments:
 - `ByResourceArn`: `str`
 - `ByState`: [BackupJobStateType](./literals.md#backupjobstatetype)
 - `ByBackupVaultName`: `str`
-- `ByCreatedBefore`: `datetime`
-- `ByCreatedAfter`: `datetime`
+- `ByCreatedBefore`: `Union`\[`datetime`, `str`\]
+- `ByCreatedAfter`: `Union`\[`datetime`, `str`\]
 - `ByResourceType`: `str`
 - `ByAccountId`: `str`
 
 Returns
-[ListBackupJobsOutputTypeDef](./type_defs.md#listbackupjobsoutputtypedef).
+[ListBackupJobsOutputResponseTypeDef](./type_defs.md#listbackupjobsoutputresponsetypedef).
 
 ### list_backup_plan_templates
+
+Returns metadata of your saved backup plan templates, including the template
+ID, name, and the creation and deletion dates.
 
 Type annotations for `boto3.client("backup").list_backup_plan_templates`
 method.
@@ -541,20 +690,30 @@ method.
 Boto3 documentation:
 [Backup.Client.list_backup_plan_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_plan_templates)
 
+Arguments mapping described in
+[ListBackupPlanTemplatesInputTypeDef](./type_defs.md#listbackupplantemplatesinputtypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
 Returns
-[ListBackupPlanTemplatesOutputTypeDef](./type_defs.md#listbackupplantemplatesoutputtypedef).
+[ListBackupPlanTemplatesOutputResponseTypeDef](./type_defs.md#listbackupplantemplatesoutputresponsetypedef).
 
 ### list_backup_plan_versions
+
+Returns version metadata of your backup plans, including Amazon Resource Names
+(ARNs), backup plan IDs, creation and deletion dates, plan names, and version
+IDs.
 
 Type annotations for `boto3.client("backup").list_backup_plan_versions` method.
 
 Boto3 documentation:
 [Backup.Client.list_backup_plan_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_plan_versions)
+
+Arguments mapping described in
+[ListBackupPlanVersionsInputTypeDef](./type_defs.md#listbackupplanversionsinputtypedef).
 
 Keyword-only arguments:
 
@@ -563,14 +722,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListBackupPlanVersionsOutputTypeDef](./type_defs.md#listbackupplanversionsoutputtypedef).
+[ListBackupPlanVersionsOutputResponseTypeDef](./type_defs.md#listbackupplanversionsoutputresponsetypedef).
 
 ### list_backup_plans
+
+Returns a list of existing backup plans for an authenticated account.
 
 Type annotations for `boto3.client("backup").list_backup_plans` method.
 
 Boto3 documentation:
 [Backup.Client.list_backup_plans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_plans)
+
+Arguments mapping described in
+[ListBackupPlansInputTypeDef](./type_defs.md#listbackupplansinputtypedef).
 
 Keyword-only arguments:
 
@@ -579,14 +743,20 @@ Keyword-only arguments:
 - `IncludeDeleted`: `bool`
 
 Returns
-[ListBackupPlansOutputTypeDef](./type_defs.md#listbackupplansoutputtypedef).
+[ListBackupPlansOutputResponseTypeDef](./type_defs.md#listbackupplansoutputresponsetypedef).
 
 ### list_backup_selections
+
+Returns an array containing metadata of the resources associated with the
+target backup plan.
 
 Type annotations for `boto3.client("backup").list_backup_selections` method.
 
 Boto3 documentation:
 [Backup.Client.list_backup_selections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_selections)
+
+Arguments mapping described in
+[ListBackupSelectionsInputTypeDef](./type_defs.md#listbackupselectionsinputtypedef).
 
 Keyword-only arguments:
 
@@ -595,14 +765,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListBackupSelectionsOutputTypeDef](./type_defs.md#listbackupselectionsoutputtypedef).
+[ListBackupSelectionsOutputResponseTypeDef](./type_defs.md#listbackupselectionsoutputresponsetypedef).
 
 ### list_backup_vaults
+
+Returns a list of recovery point storage containers along with information
+about them.
 
 Type annotations for `boto3.client("backup").list_backup_vaults` method.
 
 Boto3 documentation:
 [Backup.Client.list_backup_vaults](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_vaults)
+
+Arguments mapping described in
+[ListBackupVaultsInputTypeDef](./type_defs.md#listbackupvaultsinputtypedef).
 
 Keyword-only arguments:
 
@@ -610,14 +786,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListBackupVaultsOutputTypeDef](./type_defs.md#listbackupvaultsoutputtypedef).
+[ListBackupVaultsOutputResponseTypeDef](./type_defs.md#listbackupvaultsoutputresponsetypedef).
 
 ### list_copy_jobs
+
+Returns metadata about your copy jobs.
 
 Type annotations for `boto3.client("backup").list_copy_jobs` method.
 
 Boto3 documentation:
 [Backup.Client.list_copy_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_copy_jobs)
+
+Arguments mapping described in
+[ListCopyJobsInputTypeDef](./type_defs.md#listcopyjobsinputtypedef).
 
 Keyword-only arguments:
 
@@ -625,20 +806,28 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `ByResourceArn`: `str`
 - `ByState`: [CopyJobStateType](./literals.md#copyjobstatetype)
-- `ByCreatedBefore`: `datetime`
-- `ByCreatedAfter`: `datetime`
+- `ByCreatedBefore`: `Union`\[`datetime`, `str`\]
+- `ByCreatedAfter`: `Union`\[`datetime`, `str`\]
 - `ByResourceType`: `str`
 - `ByDestinationVaultArn`: `str`
 - `ByAccountId`: `str`
 
-Returns [ListCopyJobsOutputTypeDef](./type_defs.md#listcopyjobsoutputtypedef).
+Returns
+[ListCopyJobsOutputResponseTypeDef](./type_defs.md#listcopyjobsoutputresponsetypedef).
 
 ### list_protected_resources
+
+Returns an array of resources successfully backed up by AWS Backup, including
+the time the resource was saved, an Amazon Resource Name (ARN) of the resource,
+and a resource type.
 
 Type annotations for `boto3.client("backup").list_protected_resources` method.
 
 Boto3 documentation:
 [Backup.Client.list_protected_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_protected_resources)
+
+Arguments mapping described in
+[ListProtectedResourcesInputTypeDef](./type_defs.md#listprotectedresourcesinputtypedef).
 
 Keyword-only arguments:
 
@@ -646,15 +835,21 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListProtectedResourcesOutputTypeDef](./type_defs.md#listprotectedresourcesoutputtypedef).
+[ListProtectedResourcesOutputResponseTypeDef](./type_defs.md#listprotectedresourcesoutputresponsetypedef).
 
 ### list_recovery_points_by_backup_vault
+
+Returns detailed information about the recovery points stored in a backup
+vault.
 
 Type annotations for
 `boto3.client("backup").list_recovery_points_by_backup_vault` method.
 
 Boto3 documentation:
 [Backup.Client.list_recovery_points_by_backup_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_recovery_points_by_backup_vault)
+
+Arguments mapping described in
+[ListRecoveryPointsByBackupVaultInputTypeDef](./type_defs.md#listrecoverypointsbybackupvaultinputtypedef).
 
 Keyword-only arguments:
 
@@ -664,13 +859,16 @@ Keyword-only arguments:
 - `ByResourceArn`: `str`
 - `ByResourceType`: `str`
 - `ByBackupPlanId`: `str`
-- `ByCreatedBefore`: `datetime`
-- `ByCreatedAfter`: `datetime`
+- `ByCreatedBefore`: `Union`\[`datetime`, `str`\]
+- `ByCreatedAfter`: `Union`\[`datetime`, `str`\]
 
 Returns
-[ListRecoveryPointsByBackupVaultOutputTypeDef](./type_defs.md#listrecoverypointsbybackupvaultoutputtypedef).
+[ListRecoveryPointsByBackupVaultOutputResponseTypeDef](./type_defs.md#listrecoverypointsbybackupvaultoutputresponsetypedef).
 
 ### list_recovery_points_by_resource
+
+Returns detailed information about recovery points of the type specified by a
+resource Amazon Resource Name (ARN).
 
 Type annotations for `boto3.client("backup").list_recovery_points_by_resource`
 method.
@@ -678,6 +876,9 @@ method.
 Boto3 documentation:
 [Backup.Client.list_recovery_points_by_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_recovery_points_by_resource)
 
+Arguments mapping described in
+[ListRecoveryPointsByResourceInputTypeDef](./type_defs.md#listrecoverypointsbyresourceinputtypedef).
+
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
@@ -685,33 +886,45 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListRecoveryPointsByResourceOutputTypeDef](./type_defs.md#listrecoverypointsbyresourceoutputtypedef).
+[ListRecoveryPointsByResourceOutputResponseTypeDef](./type_defs.md#listrecoverypointsbyresourceoutputresponsetypedef).
 
 ### list_restore_jobs
+
+Returns a list of jobs that AWS Backup initiated to restore a saved resource,
+including metadata about the recovery process.
 
 Type annotations for `boto3.client("backup").list_restore_jobs` method.
 
 Boto3 documentation:
 [Backup.Client.list_restore_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_restore_jobs)
 
+Arguments mapping described in
+[ListRestoreJobsInputTypeDef](./type_defs.md#listrestorejobsinputtypedef).
+
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `ByAccountId`: `str`
-- `ByCreatedBefore`: `datetime`
-- `ByCreatedAfter`: `datetime`
+- `ByCreatedBefore`: `Union`\[`datetime`, `str`\]
+- `ByCreatedAfter`: `Union`\[`datetime`, `str`\]
 - `ByStatus`: [RestoreJobStatusType](./literals.md#restorejobstatustype)
 
 Returns
-[ListRestoreJobsOutputTypeDef](./type_defs.md#listrestorejobsoutputtypedef).
+[ListRestoreJobsOutputResponseTypeDef](./type_defs.md#listrestorejobsoutputresponsetypedef).
 
 ### list_tags
+
+Returns a list of key-value pairs assigned to a target recovery point, backup
+plan, or backup vault.
 
 Type annotations for `boto3.client("backup").list_tags` method.
 
 Boto3 documentation:
 [Backup.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_tags)
+
+Arguments mapping described in
+[ListTagsInputTypeDef](./type_defs.md#listtagsinputtypedef).
 
 Keyword-only arguments:
 
@@ -719,15 +932,22 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns [ListTagsOutputTypeDef](./type_defs.md#listtagsoutputtypedef).
+Returns
+[ListTagsOutputResponseTypeDef](./type_defs.md#listtagsoutputresponsetypedef).
 
 ### put_backup_vault_access_policy
+
+Sets a resource-based policy that is used to manage access permissions on the
+target backup vault.
 
 Type annotations for `boto3.client("backup").put_backup_vault_access_policy`
 method.
 
 Boto3 documentation:
 [Backup.Client.put_backup_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.put_backup_vault_access_policy)
+
+Arguments mapping described in
+[PutBackupVaultAccessPolicyInputTypeDef](./type_defs.md#putbackupvaultaccesspolicyinputtypedef).
 
 Keyword-only arguments:
 
@@ -736,11 +956,16 @@ Keyword-only arguments:
 
 ### put_backup_vault_notifications
 
+Turns on notifications on a backup vault for the specified topic and events.
+
 Type annotations for `boto3.client("backup").put_backup_vault_notifications`
 method.
 
 Boto3 documentation:
 [Backup.Client.put_backup_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.put_backup_vault_notifications)
+
+Arguments mapping described in
+[PutBackupVaultNotificationsInputTypeDef](./type_defs.md#putbackupvaultnotificationsinputtypedef).
 
 Keyword-only arguments:
 
@@ -752,10 +977,15 @@ Keyword-only arguments:
 
 ### start_backup_job
 
+Starts an on-demand backup job for the specified resource.
+
 Type annotations for `boto3.client("backup").start_backup_job` method.
 
 Boto3 documentation:
 [Backup.Client.start_backup_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_backup_job)
+
+Arguments mapping described in
+[StartBackupJobInputTypeDef](./type_defs.md#startbackupjobinputtypedef).
 
 Keyword-only arguments:
 
@@ -770,14 +1000,19 @@ Keyword-only arguments:
 - `BackupOptions`: `Dict`\[`str`, `str`\]
 
 Returns
-[StartBackupJobOutputTypeDef](./type_defs.md#startbackupjoboutputtypedef).
+[StartBackupJobOutputResponseTypeDef](./type_defs.md#startbackupjoboutputresponsetypedef).
 
 ### start_copy_job
+
+Starts a job to create a one-time copy of the specified resource.
 
 Type annotations for `boto3.client("backup").start_copy_job` method.
 
 Boto3 documentation:
 [Backup.Client.start_copy_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_copy_job)
+
+Arguments mapping described in
+[StartCopyJobInputTypeDef](./type_defs.md#startcopyjobinputtypedef).
 
 Keyword-only arguments:
 
@@ -788,14 +1023,20 @@ Keyword-only arguments:
 - `IdempotencyToken`: `str`
 - `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
 
-Returns [StartCopyJobOutputTypeDef](./type_defs.md#startcopyjoboutputtypedef).
+Returns
+[StartCopyJobOutputResponseTypeDef](./type_defs.md#startcopyjoboutputresponsetypedef).
 
 ### start_restore_job
+
+Recovers the saved resource identified by an Amazon Resource Name (ARN).
 
 Type annotations for `boto3.client("backup").start_restore_job` method.
 
 Boto3 documentation:
 [Backup.Client.start_restore_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_restore_job)
+
+Arguments mapping described in
+[StartRestoreJobInputTypeDef](./type_defs.md#startrestorejobinputtypedef).
 
 Keyword-only arguments:
 
@@ -806,14 +1047,19 @@ Keyword-only arguments:
 - `ResourceType`: `str`
 
 Returns
-[StartRestoreJobOutputTypeDef](./type_defs.md#startrestorejoboutputtypedef).
+[StartRestoreJobOutputResponseTypeDef](./type_defs.md#startrestorejoboutputresponsetypedef).
 
 ### stop_backup_job
+
+Attempts to cancel a job to create a one-time backup of a resource.
 
 Type annotations for `boto3.client("backup").stop_backup_job` method.
 
 Boto3 documentation:
 [Backup.Client.stop_backup_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.stop_backup_job)
+
+Arguments mapping described in
+[StopBackupJobInputTypeDef](./type_defs.md#stopbackupjobinputtypedef).
 
 Keyword-only arguments:
 
@@ -821,10 +1067,16 @@ Keyword-only arguments:
 
 ### tag_resource
 
+Assigns a set of key-value pairs to a recovery point, backup plan, or backup
+vault identified by an Amazon Resource Name (ARN).
+
 Type annotations for `boto3.client("backup").tag_resource` method.
 
 Boto3 documentation:
 [Backup.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceInputTypeDef](./type_defs.md#tagresourceinputtypedef).
 
 Keyword-only arguments:
 
@@ -833,10 +1085,18 @@ Keyword-only arguments:
 
 ### untag_resource
 
+Removes a set of key-value pairs from a recovery point, backup plan, or backup
+vault identified by an Amazon Resource Name (ARN) See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/backup-2018-11-15/UntagResource>`\_
+**Request Syntax** response = client.untag_reso...
+
 Type annotations for `boto3.client("backup").untag_resource` method.
 
 Boto3 documentation:
 [Backup.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceInputTypeDef](./type_defs.md#untagresourceinputtypedef).
 
 Keyword-only arguments:
 
@@ -845,10 +1105,16 @@ Keyword-only arguments:
 
 ### update_backup_plan
 
+Updates an existing backup plan identified by its `backupPlanId` with the input
+document in JSON format.
+
 Type annotations for `boto3.client("backup").update_backup_plan` method.
 
 Boto3 documentation:
 [Backup.Client.update_backup_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_backup_plan)
+
+Arguments mapping described in
+[UpdateBackupPlanInputTypeDef](./type_defs.md#updatebackupplaninputtypedef).
 
 Keyword-only arguments:
 
@@ -857,14 +1123,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateBackupPlanOutputTypeDef](./type_defs.md#updatebackupplanoutputtypedef).
+[UpdateBackupPlanOutputResponseTypeDef](./type_defs.md#updatebackupplanoutputresponsetypedef).
 
 ### update_global_settings
+
+Updates the current global settings for the AWS account.
 
 Type annotations for `boto3.client("backup").update_global_settings` method.
 
 Boto3 documentation:
 [Backup.Client.update_global_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_global_settings)
+
+Arguments mapping described in
+[UpdateGlobalSettingsInputTypeDef](./type_defs.md#updateglobalsettingsinputtypedef).
 
 Keyword-only arguments:
 
@@ -872,11 +1143,16 @@ Keyword-only arguments:
 
 ### update_recovery_point_lifecycle
 
+Sets the transition lifecycle of a recovery point.
+
 Type annotations for `boto3.client("backup").update_recovery_point_lifecycle`
 method.
 
 Boto3 documentation:
 [Backup.Client.update_recovery_point_lifecycle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_recovery_point_lifecycle)
+
+Arguments mapping described in
+[UpdateRecoveryPointLifecycleInputTypeDef](./type_defs.md#updaterecoverypointlifecycleinputtypedef).
 
 Keyword-only arguments:
 
@@ -885,14 +1161,19 @@ Keyword-only arguments:
 - `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
 
 Returns
-[UpdateRecoveryPointLifecycleOutputTypeDef](./type_defs.md#updaterecoverypointlifecycleoutputtypedef).
+[UpdateRecoveryPointLifecycleOutputResponseTypeDef](./type_defs.md#updaterecoverypointlifecycleoutputresponsetypedef).
 
 ### update_region_settings
+
+Updates the current service opt-in settings for the Region.
 
 Type annotations for `boto3.client("backup").update_region_settings` method.
 
 Boto3 documentation:
 [Backup.Client.update_region_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_region_settings)
+
+Arguments mapping described in
+[UpdateRegionSettingsInputTypeDef](./type_defs.md#updateregionsettingsinputtypedef).
 
 Keyword-only arguments:
 

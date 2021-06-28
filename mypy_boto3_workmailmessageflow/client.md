@@ -56,6 +56,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("workmailmessageflow").can_paginate` method.
 
 Boto3 documentation:
@@ -68,6 +70,8 @@ Arguments:
 Returns `bool`.
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for
 `boto3.client("workmailmessageflow").generate_presigned_url` method.
@@ -86,26 +90,36 @@ Returns `str`.
 
 ### get_raw_message_content
 
+Retrieves the raw content of an in-transit email message, in MIME format.
+
 Type annotations for
 `boto3.client("workmailmessageflow").get_raw_message_content` method.
 
 Boto3 documentation:
 [WorkMailMessageFlow.Client.get_raw_message_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client.get_raw_message_content)
 
+Arguments mapping described in
+[GetRawMessageContentRequestTypeDef](./type_defs.md#getrawmessagecontentrequesttypedef).
+
 Keyword-only arguments:
 
 - `messageId`: `str` *(required)*
 
 Returns
-[GetRawMessageContentResponseTypeDef](./type_defs.md#getrawmessagecontentresponsetypedef).
+[GetRawMessageContentResponseResponseTypeDef](./type_defs.md#getrawmessagecontentresponseresponsetypedef).
 
 ### put_raw_message_content
+
+Updates the raw content of an in-transit email message, in MIME format.
 
 Type annotations for
 `boto3.client("workmailmessageflow").put_raw_message_content` method.
 
 Boto3 documentation:
 [WorkMailMessageFlow.Client.put_raw_message_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client.put_raw_message_content)
+
+Arguments mapping described in
+[PutRawMessageContentRequestTypeDef](./type_defs.md#putrawmessagecontentrequesttypedef).
 
 Keyword-only arguments:
 

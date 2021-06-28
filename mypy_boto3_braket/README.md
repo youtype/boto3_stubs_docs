@@ -99,18 +99,28 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_braket.type_defs import CancelQuantumTaskResponseTypeDef, ...
+from mypy_boto3_braket.type_defs import CancelQuantumTaskRequestTypeDef, ...
 ```
 
-- [CancelQuantumTaskResponseTypeDef](./type_defs.md#cancelquantumtaskresponsetypedef)
-- [CreateQuantumTaskResponseTypeDef](./type_defs.md#createquantumtaskresponsetypedef)
+- [CancelQuantumTaskRequestTypeDef](./type_defs.md#cancelquantumtaskrequesttypedef)
+- [CancelQuantumTaskResponseResponseTypeDef](./type_defs.md#cancelquantumtaskresponseresponsetypedef)
+- [CreateQuantumTaskRequestTypeDef](./type_defs.md#createquantumtaskrequesttypedef)
+- [CreateQuantumTaskResponseResponseTypeDef](./type_defs.md#createquantumtaskresponseresponsetypedef)
 - [DeviceSummaryTypeDef](./type_defs.md#devicesummarytypedef)
-- [GetDeviceResponseTypeDef](./type_defs.md#getdeviceresponsetypedef)
-- [GetQuantumTaskResponseTypeDef](./type_defs.md#getquantumtaskresponsetypedef)
-- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [GetDeviceRequestTypeDef](./type_defs.md#getdevicerequesttypedef)
+- [GetDeviceResponseResponseTypeDef](./type_defs.md#getdeviceresponseresponsetypedef)
+- [GetQuantumTaskRequestTypeDef](./type_defs.md#getquantumtaskrequesttypedef)
+- [GetQuantumTaskResponseResponseTypeDef](./type_defs.md#getquantumtaskresponseresponsetypedef)
+- [ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef)
+- [ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [QuantumTaskSummaryTypeDef](./type_defs.md#quantumtasksummarytypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [SearchDevicesFilterTypeDef](./type_defs.md#searchdevicesfiltertypedef)
-- [SearchDevicesResponseTypeDef](./type_defs.md#searchdevicesresponsetypedef)
+- [SearchDevicesRequestTypeDef](./type_defs.md#searchdevicesrequesttypedef)
+- [SearchDevicesResponseResponseTypeDef](./type_defs.md#searchdevicesresponseresponsetypedef)
 - [SearchQuantumTasksFilterTypeDef](./type_defs.md#searchquantumtasksfiltertypedef)
-- [SearchQuantumTasksResponseTypeDef](./type_defs.md#searchquantumtasksresponsetypedef)
+- [SearchQuantumTasksRequestTypeDef](./type_defs.md#searchquantumtasksrequesttypedef)
+- [SearchQuantumTasksResponseResponseTypeDef](./type_defs.md#searchquantumtasksresponseresponsetypedef)
+- [TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef)
+- [UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef)

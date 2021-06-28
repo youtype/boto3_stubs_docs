@@ -77,8 +77,12 @@ from mypy_boto3_finspace_data.type_defs import ChangesetInfoTypeDef, ...
 ```
 
 - [ChangesetInfoTypeDef](./type_defs.md#changesetinfotypedef)
-- [CreateChangesetResponseTypeDef](./type_defs.md#createchangesetresponsetypedef)
+- [CreateChangesetRequestTypeDef](./type_defs.md#createchangesetrequesttypedef)
+- [CreateChangesetResponseResponseTypeDef](./type_defs.md#createchangesetresponseresponsetypedef)
 - [CredentialsTypeDef](./type_defs.md#credentialstypedef)
 - [ErrorInfoTypeDef](./type_defs.md#errorinfotypedef)
-- [GetProgrammaticAccessCredentialsResponseTypeDef](./type_defs.md#getprogrammaticaccesscredentialsresponsetypedef)
-- [GetWorkingLocationResponseTypeDef](./type_defs.md#getworkinglocationresponsetypedef)
+- [GetProgrammaticAccessCredentialsRequestTypeDef](./type_defs.md#getprogrammaticaccesscredentialsrequesttypedef)
+- [GetProgrammaticAccessCredentialsResponseResponseTypeDef](./type_defs.md#getprogrammaticaccesscredentialsresponseresponsetypedef)
+- [GetWorkingLocationRequestTypeDef](./type_defs.md#getworkinglocationrequesttypedef)
+- [GetWorkingLocationResponseResponseTypeDef](./type_defs.md#getworkinglocationresponseresponsetypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

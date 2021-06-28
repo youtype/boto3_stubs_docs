@@ -8,18 +8,31 @@ type annotations stubs module
 [mypy_boto3_kinesis](https://pypi.org/project/mypy-boto3-kinesis/).
 
 - [Typed dictionaries for boto3 Kinesis module](#typed-dictionaries-for-boto3-kinesis-module)
+  - [AddTagsToStreamInputTypeDef](#addtagstostreaminputtypedef)
   - [ChildShardTypeDef](#childshardtypedef)
   - [ConsumerDescriptionTypeDef](#consumerdescriptiontypedef)
   - [ConsumerTypeDef](#consumertypedef)
-  - [DescribeLimitsOutputTypeDef](#describelimitsoutputtypedef)
-  - [DescribeStreamConsumerOutputTypeDef](#describestreamconsumeroutputtypedef)
-  - [DescribeStreamOutputTypeDef](#describestreamoutputtypedef)
-  - [DescribeStreamSummaryOutputTypeDef](#describestreamsummaryoutputtypedef)
+  - [CreateStreamInputTypeDef](#createstreaminputtypedef)
+  - [DecreaseStreamRetentionPeriodInputTypeDef](#decreasestreamretentionperiodinputtypedef)
+  - [DeleteStreamInputTypeDef](#deletestreaminputtypedef)
+  - [DeregisterStreamConsumerInputTypeDef](#deregisterstreamconsumerinputtypedef)
+  - [DescribeLimitsOutputResponseTypeDef](#describelimitsoutputresponsetypedef)
+  - [DescribeStreamConsumerInputTypeDef](#describestreamconsumerinputtypedef)
+  - [DescribeStreamConsumerOutputResponseTypeDef](#describestreamconsumeroutputresponsetypedef)
+  - [DescribeStreamInputTypeDef](#describestreaminputtypedef)
+  - [DescribeStreamOutputResponseTypeDef](#describestreamoutputresponsetypedef)
+  - [DescribeStreamSummaryInputTypeDef](#describestreamsummaryinputtypedef)
+  - [DescribeStreamSummaryOutputResponseTypeDef](#describestreamsummaryoutputresponsetypedef)
+  - [DisableEnhancedMonitoringInputTypeDef](#disableenhancedmonitoringinputtypedef)
+  - [EnableEnhancedMonitoringInputTypeDef](#enableenhancedmonitoringinputtypedef)
   - [EnhancedMetricsTypeDef](#enhancedmetricstypedef)
-  - [EnhancedMonitoringOutputTypeDef](#enhancedmonitoringoutputtypedef)
-  - [GetRecordsOutputTypeDef](#getrecordsoutputtypedef)
-  - [GetShardIteratorOutputTypeDef](#getsharditeratoroutputtypedef)
+  - [EnhancedMonitoringOutputResponseTypeDef](#enhancedmonitoringoutputresponsetypedef)
+  - [GetRecordsInputTypeDef](#getrecordsinputtypedef)
+  - [GetRecordsOutputResponseTypeDef](#getrecordsoutputresponsetypedef)
+  - [GetShardIteratorInputTypeDef](#getsharditeratorinputtypedef)
+  - [GetShardIteratorOutputResponseTypeDef](#getsharditeratoroutputresponsetypedef)
   - [HashKeyRangeTypeDef](#hashkeyrangetypedef)
+  - [IncreaseStreamRetentionPeriodInputTypeDef](#increasestreamretentionperiodinputtypedef)
   - [InternalFailureExceptionTypeDef](#internalfailureexceptiontypedef)
   - [KMSAccessDeniedExceptionTypeDef](#kmsaccessdeniedexceptiontypedef)
   - [KMSDisabledExceptionTypeDef](#kmsdisabledexceptiontypedef)
@@ -27,32 +40,57 @@ type annotations stubs module
   - [KMSNotFoundExceptionTypeDef](#kmsnotfoundexceptiontypedef)
   - [KMSOptInRequiredTypeDef](#kmsoptinrequiredtypedef)
   - [KMSThrottlingExceptionTypeDef](#kmsthrottlingexceptiontypedef)
-  - [ListShardsOutputTypeDef](#listshardsoutputtypedef)
-  - [ListStreamConsumersOutputTypeDef](#liststreamconsumersoutputtypedef)
-  - [ListStreamsOutputTypeDef](#liststreamsoutputtypedef)
-  - [ListTagsForStreamOutputTypeDef](#listtagsforstreamoutputtypedef)
+  - [ListShardsInputTypeDef](#listshardsinputtypedef)
+  - [ListShardsOutputResponseTypeDef](#listshardsoutputresponsetypedef)
+  - [ListStreamConsumersInputTypeDef](#liststreamconsumersinputtypedef)
+  - [ListStreamConsumersOutputResponseTypeDef](#liststreamconsumersoutputresponsetypedef)
+  - [ListStreamsInputTypeDef](#liststreamsinputtypedef)
+  - [ListStreamsOutputResponseTypeDef](#liststreamsoutputresponsetypedef)
+  - [ListTagsForStreamInputTypeDef](#listtagsforstreaminputtypedef)
+  - [ListTagsForStreamOutputResponseTypeDef](#listtagsforstreamoutputresponsetypedef)
+  - [MergeShardsInputTypeDef](#mergeshardsinputtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutRecordOutputTypeDef](#putrecordoutputtypedef)
-  - [PutRecordsOutputTypeDef](#putrecordsoutputtypedef)
+  - [PutRecordInputTypeDef](#putrecordinputtypedef)
+  - [PutRecordOutputResponseTypeDef](#putrecordoutputresponsetypedef)
+  - [PutRecordsInputTypeDef](#putrecordsinputtypedef)
+  - [PutRecordsOutputResponseTypeDef](#putrecordsoutputresponsetypedef)
   - [PutRecordsRequestEntryTypeDef](#putrecordsrequestentrytypedef)
   - [PutRecordsResultEntryTypeDef](#putrecordsresultentrytypedef)
   - [RecordTypeDef](#recordtypedef)
-  - [RegisterStreamConsumerOutputTypeDef](#registerstreamconsumeroutputtypedef)
+  - [RegisterStreamConsumerInputTypeDef](#registerstreamconsumerinputtypedef)
+  - [RegisterStreamConsumerOutputResponseTypeDef](#registerstreamconsumeroutputresponsetypedef)
+  - [RemoveTagsFromStreamInputTypeDef](#removetagsfromstreaminputtypedef)
   - [ResourceInUseExceptionTypeDef](#resourceinuseexceptiontypedef)
   - [ResourceNotFoundExceptionTypeDef](#resourcenotfoundexceptiontypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SequenceNumberRangeTypeDef](#sequencenumberrangetypedef)
   - [ShardFilterTypeDef](#shardfiltertypedef)
   - [ShardTypeDef](#shardtypedef)
+  - [SplitShardInputTypeDef](#splitshardinputtypedef)
+  - [StartStreamEncryptionInputTypeDef](#startstreamencryptioninputtypedef)
   - [StartingPositionTypeDef](#startingpositiontypedef)
+  - [StopStreamEncryptionInputTypeDef](#stopstreamencryptioninputtypedef)
   - [StreamDescriptionSummaryTypeDef](#streamdescriptionsummarytypedef)
   - [StreamDescriptionTypeDef](#streamdescriptiontypedef)
   - [SubscribeToShardEventStreamTypeDef](#subscribetoshardeventstreamtypedef)
   - [SubscribeToShardEventTypeDef](#subscribetoshardeventtypedef)
-  - [SubscribeToShardOutputTypeDef](#subscribetoshardoutputtypedef)
+  - [SubscribeToShardInputTypeDef](#subscribetoshardinputtypedef)
+  - [SubscribeToShardOutputResponseTypeDef](#subscribetoshardoutputresponsetypedef)
   - [TagTypeDef](#tagtypedef)
-  - [UpdateShardCountOutputTypeDef](#updateshardcountoutputtypedef)
+  - [UpdateShardCountInputTypeDef](#updateshardcountinputtypedef)
+  - [UpdateShardCountOutputResponseTypeDef](#updateshardcountoutputresponsetypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
+
+## AddTagsToStreamInputTypeDef
+
+```python
+from mypy_boto3_kinesis.type_defs import AddTagsToStreamInputTypeDef
+```
+
+Required fields:
+
+- `StreamName`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## ChildShardTypeDef
 
@@ -93,10 +131,58 @@ Required fields:
 - `ConsumerStatus`: [ConsumerStatusType](./literals.md#consumerstatustype)
 - `ConsumerCreationTimestamp`: `datetime`
 
-## DescribeLimitsOutputTypeDef
+## CreateStreamInputTypeDef
 
 ```python
-from mypy_boto3_kinesis.type_defs import DescribeLimitsOutputTypeDef
+from mypy_boto3_kinesis.type_defs import CreateStreamInputTypeDef
+```
+
+Required fields:
+
+- `StreamName`: `str`
+- `ShardCount`: `int`
+
+## DecreaseStreamRetentionPeriodInputTypeDef
+
+```python
+from mypy_boto3_kinesis.type_defs import DecreaseStreamRetentionPeriodInputTypeDef
+```
+
+Required fields:
+
+- `StreamName`: `str`
+- `RetentionPeriodHours`: `int`
+
+## DeleteStreamInputTypeDef
+
+```python
+from mypy_boto3_kinesis.type_defs import DeleteStreamInputTypeDef
+```
+
+Required fields:
+
+- `StreamName`: `str`
+
+Optional fields:
+
+- `EnforceConsumerDeletion`: `bool`
+
+## DeregisterStreamConsumerInputTypeDef
+
+```python
+from mypy_boto3_kinesis.type_defs import DeregisterStreamConsumerInputTypeDef
+```
+
+Optional fields:
+
+- `StreamARN`: `str`
+- `ConsumerName`: `str`
+- `ConsumerARN`: `str`
+
+## DescribeLimitsOutputResponseTypeDef
+
+```python
+from mypy_boto3_kinesis.type_defs import DescribeLimitsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -106,10 +192,22 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeStreamConsumerOutputTypeDef
+## DescribeStreamConsumerInputTypeDef
 
 ```python
-from mypy_boto3_kinesis.type_defs import DescribeStreamConsumerOutputTypeDef
+from mypy_boto3_kinesis.type_defs import DescribeStreamConsumerInputTypeDef
+```
+
+Optional fields:
+
+- `StreamARN`: `str`
+- `ConsumerName`: `str`
+- `ConsumerARN`: `str`
+
+## DescribeStreamConsumerOutputResponseTypeDef
+
+```python
+from mypy_boto3_kinesis.type_defs import DescribeStreamConsumerOutputResponseTypeDef
 ```
 
 Required fields:
@@ -119,10 +217,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeStreamOutputTypeDef
+## DescribeStreamInputTypeDef
 
 ```python
-from mypy_boto3_kinesis.type_defs import DescribeStreamOutputTypeDef
+from mypy_boto3_kinesis.type_defs import DescribeStreamInputTypeDef
+```
+
+Required fields:
+
+- `StreamName`: `str`
+
+Optional fields:
+
+- `Limit`: `int`
+- `ExclusiveStartShardId`: `str`
+
+## DescribeStreamOutputResponseTypeDef
+
+```python
+from mypy_boto3_kinesis.type_defs import DescribeStreamOutputResponseTypeDef
 ```
 
 Required fields:
@@ -132,10 +245,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeStreamSummaryOutputTypeDef
+## DescribeStreamSummaryInputTypeDef
 
 ```python
-from mypy_boto3_kinesis.type_defs import DescribeStreamSummaryOutputTypeDef
+from mypy_boto3_kinesis.type_defs import DescribeStreamSummaryInputTypeDef
+```
+
+Required fields:
+
+- `StreamName`: `str`
+
+## DescribeStreamSummaryOutputResponseTypeDef
+
+```python
+from mypy_boto3_kinesis.type_defs import DescribeStreamSummaryOutputResponseTypeDef
 ```
 
 Required fields:
@@ -144,6 +267,30 @@ Required fields:
   [StreamDescriptionSummaryTypeDef](./type_defs.md#streamdescriptionsummarytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DisableEnhancedMonitoringInputTypeDef
+
+```python
+from mypy_boto3_kinesis.type_defs import DisableEnhancedMonitoringInputTypeDef
+```
+
+Required fields:
+
+- `StreamName`: `str`
+- `ShardLevelMetrics`:
+  `List`\[[MetricsNameType](./literals.md#metricsnametype)\]
+
+## EnableEnhancedMonitoringInputTypeDef
+
+```python
+from mypy_boto3_kinesis.type_defs import EnableEnhancedMonitoringInputTypeDef
+```
+
+Required fields:
+
+- `StreamName`: `str`
+- `ShardLevelMetrics`:
+  `List`\[[MetricsNameType](./literals.md#metricsnametype)\]
 
 ## EnhancedMetricsTypeDef
 
@@ -156,10 +303,10 @@ Optional fields:
 - `ShardLevelMetrics`:
   `List`\[[MetricsNameType](./literals.md#metricsnametype)\]
 
-## EnhancedMonitoringOutputTypeDef
+## EnhancedMonitoringOutputResponseTypeDef
 
 ```python
-from mypy_boto3_kinesis.type_defs import EnhancedMonitoringOutputTypeDef
+from mypy_boto3_kinesis.type_defs import EnhancedMonitoringOutputResponseTypeDef
 ```
 
 Required fields:
@@ -172,10 +319,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRecordsOutputTypeDef
+## GetRecordsInputTypeDef
 
 ```python
-from mypy_boto3_kinesis.type_defs import GetRecordsOutputTypeDef
+from mypy_boto3_kinesis.type_defs import GetRecordsInputTypeDef
+```
+
+Required fields:
+
+- `ShardIterator`: `str`
+
+Optional fields:
+
+- `Limit`: `int`
+
+## GetRecordsOutputResponseTypeDef
+
+```python
+from mypy_boto3_kinesis.type_defs import GetRecordsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -188,10 +349,28 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetShardIteratorOutputTypeDef
+## GetShardIteratorInputTypeDef
 
 ```python
-from mypy_boto3_kinesis.type_defs import GetShardIteratorOutputTypeDef
+from mypy_boto3_kinesis.type_defs import GetShardIteratorInputTypeDef
+```
+
+Required fields:
+
+- `StreamName`: `str`
+- `ShardId`: `str`
+- `ShardIteratorType`:
+  [ShardIteratorTypeType](./literals.md#sharditeratortypetype)
+
+Optional fields:
+
+- `StartingSequenceNumber`: `str`
+- `Timestamp`: `Union`\[`datetime`, `str`\]
+
+## GetShardIteratorOutputResponseTypeDef
+
+```python
+from mypy_boto3_kinesis.type_defs import GetShardIteratorOutputResponseTypeDef
 ```
 
 Required fields:
@@ -210,6 +389,17 @@ Required fields:
 
 - `StartingHashKey`: `str`
 - `EndingHashKey`: `str`
+
+## IncreaseStreamRetentionPeriodInputTypeDef
+
+```python
+from mypy_boto3_kinesis.type_defs import IncreaseStreamRetentionPeriodInputTypeDef
+```
+
+Required fields:
+
+- `StreamName`: `str`
+- `RetentionPeriodHours`: `int`
 
 ## InternalFailureExceptionTypeDef
 
@@ -281,10 +471,25 @@ Optional fields:
 
 - `message`: `str`
 
-## ListShardsOutputTypeDef
+## ListShardsInputTypeDef
 
 ```python
-from mypy_boto3_kinesis.type_defs import ListShardsOutputTypeDef
+from mypy_boto3_kinesis.type_defs import ListShardsInputTypeDef
+```
+
+Optional fields:
+
+- `StreamName`: `str`
+- `NextToken`: `str`
+- `ExclusiveStartShardId`: `str`
+- `MaxResults`: `int`
+- `StreamCreationTimestamp`: `Union`\[`datetime`, `str`\]
+- `ShardFilter`: [ShardFilterTypeDef](./type_defs.md#shardfiltertypedef)
+
+## ListShardsOutputResponseTypeDef
+
+```python
+from mypy_boto3_kinesis.type_defs import ListShardsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -294,10 +499,26 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListStreamConsumersOutputTypeDef
+## ListStreamConsumersInputTypeDef
 
 ```python
-from mypy_boto3_kinesis.type_defs import ListStreamConsumersOutputTypeDef
+from mypy_boto3_kinesis.type_defs import ListStreamConsumersInputTypeDef
+```
+
+Required fields:
+
+- `StreamARN`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `StreamCreationTimestamp`: `Union`\[`datetime`, `str`\]
+
+## ListStreamConsumersOutputResponseTypeDef
+
+```python
+from mypy_boto3_kinesis.type_defs import ListStreamConsumersOutputResponseTypeDef
 ```
 
 Required fields:
@@ -307,10 +528,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListStreamsOutputTypeDef
+## ListStreamsInputTypeDef
 
 ```python
-from mypy_boto3_kinesis.type_defs import ListStreamsOutputTypeDef
+from mypy_boto3_kinesis.type_defs import ListStreamsInputTypeDef
+```
+
+Optional fields:
+
+- `Limit`: `int`
+- `ExclusiveStartStreamName`: `str`
+
+## ListStreamsOutputResponseTypeDef
+
+```python
+from mypy_boto3_kinesis.type_defs import ListStreamsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -320,10 +552,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForStreamOutputTypeDef
+## ListTagsForStreamInputTypeDef
 
 ```python
-from mypy_boto3_kinesis.type_defs import ListTagsForStreamOutputTypeDef
+from mypy_boto3_kinesis.type_defs import ListTagsForStreamInputTypeDef
+```
+
+Required fields:
+
+- `StreamName`: `str`
+
+Optional fields:
+
+- `ExclusiveStartTagKey`: `str`
+- `Limit`: `int`
+
+## ListTagsForStreamOutputResponseTypeDef
+
+```python
+from mypy_boto3_kinesis.type_defs import ListTagsForStreamOutputResponseTypeDef
 ```
 
 Required fields:
@@ -332,6 +579,18 @@ Required fields:
 - `HasMoreTags`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## MergeShardsInputTypeDef
+
+```python
+from mypy_boto3_kinesis.type_defs import MergeShardsInputTypeDef
+```
+
+Required fields:
+
+- `StreamName`: `str`
+- `ShardToMerge`: `str`
+- `AdjacentShardToMerge`: `str`
 
 ## PaginatorConfigTypeDef
 
@@ -345,10 +604,27 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## PutRecordOutputTypeDef
+## PutRecordInputTypeDef
 
 ```python
-from mypy_boto3_kinesis.type_defs import PutRecordOutputTypeDef
+from mypy_boto3_kinesis.type_defs import PutRecordInputTypeDef
+```
+
+Required fields:
+
+- `StreamName`: `str`
+- `Data`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `PartitionKey`: `str`
+
+Optional fields:
+
+- `ExplicitHashKey`: `str`
+- `SequenceNumberForOrdering`: `str`
+
+## PutRecordOutputResponseTypeDef
+
+```python
+from mypy_boto3_kinesis.type_defs import PutRecordOutputResponseTypeDef
 ```
 
 Required fields:
@@ -359,10 +635,22 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutRecordsOutputTypeDef
+## PutRecordsInputTypeDef
 
 ```python
-from mypy_boto3_kinesis.type_defs import PutRecordsOutputTypeDef
+from mypy_boto3_kinesis.type_defs import PutRecordsInputTypeDef
+```
+
+Required fields:
+
+- `Records`:
+  `List`\[[PutRecordsRequestEntryTypeDef](./type_defs.md#putrecordsrequestentrytypedef)\]
+- `StreamName`: `str`
+
+## PutRecordsOutputResponseTypeDef
+
+```python
+from mypy_boto3_kinesis.type_defs import PutRecordsOutputResponseTypeDef
 ```
 
 Required fields:
@@ -411,7 +699,7 @@ from mypy_boto3_kinesis.type_defs import RecordTypeDef
 Required fields:
 
 - `SequenceNumber`: `str`
-- `Data`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `Data`: `bytes`
 - `PartitionKey`: `str`
 
 Optional fields:
@@ -419,10 +707,21 @@ Optional fields:
 - `ApproximateArrivalTimestamp`: `datetime`
 - `EncryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
 
-## RegisterStreamConsumerOutputTypeDef
+## RegisterStreamConsumerInputTypeDef
 
 ```python
-from mypy_boto3_kinesis.type_defs import RegisterStreamConsumerOutputTypeDef
+from mypy_boto3_kinesis.type_defs import RegisterStreamConsumerInputTypeDef
+```
+
+Required fields:
+
+- `StreamARN`: `str`
+- `ConsumerName`: `str`
+
+## RegisterStreamConsumerOutputResponseTypeDef
+
+```python
+from mypy_boto3_kinesis.type_defs import RegisterStreamConsumerOutputResponseTypeDef
 ```
 
 Required fields:
@@ -430,6 +729,17 @@ Required fields:
 - `Consumer`: [ConsumerTypeDef](./type_defs.md#consumertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## RemoveTagsFromStreamInputTypeDef
+
+```python
+from mypy_boto3_kinesis.type_defs import RemoveTagsFromStreamInputTypeDef
+```
+
+Required fields:
+
+- `StreamName`: `str`
+- `TagKeys`: `List`\[`str`\]
 
 ## ResourceInUseExceptionTypeDef
 
@@ -492,7 +802,7 @@ Required fields:
 Optional fields:
 
 - `ShardId`: `str`
-- `Timestamp`: `datetime`
+- `Timestamp`: `Union`\[`datetime`, `str`\]
 
 ## ShardTypeDef
 
@@ -512,6 +822,30 @@ Optional fields:
 - `ParentShardId`: `str`
 - `AdjacentParentShardId`: `str`
 
+## SplitShardInputTypeDef
+
+```python
+from mypy_boto3_kinesis.type_defs import SplitShardInputTypeDef
+```
+
+Required fields:
+
+- `StreamName`: `str`
+- `ShardToSplit`: `str`
+- `NewStartingHashKey`: `str`
+
+## StartStreamEncryptionInputTypeDef
+
+```python
+from mypy_boto3_kinesis.type_defs import StartStreamEncryptionInputTypeDef
+```
+
+Required fields:
+
+- `StreamName`: `str`
+- `EncryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
+- `KeyId`: `str`
+
 ## StartingPositionTypeDef
 
 ```python
@@ -525,7 +859,19 @@ Required fields:
 Optional fields:
 
 - `SequenceNumber`: `str`
-- `Timestamp`: `datetime`
+- `Timestamp`: `Union`\[`datetime`, `str`\]
+
+## StopStreamEncryptionInputTypeDef
+
+```python
+from mypy_boto3_kinesis.type_defs import StopStreamEncryptionInputTypeDef
+```
+
+Required fields:
+
+- `StreamName`: `str`
+- `EncryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
+- `KeyId`: `str`
 
 ## StreamDescriptionSummaryTypeDef
 
@@ -622,10 +968,23 @@ Optional fields:
 - `ChildShards`:
   `List`\[[ChildShardTypeDef](./type_defs.md#childshardtypedef)\]
 
-## SubscribeToShardOutputTypeDef
+## SubscribeToShardInputTypeDef
 
 ```python
-from mypy_boto3_kinesis.type_defs import SubscribeToShardOutputTypeDef
+from mypy_boto3_kinesis.type_defs import SubscribeToShardInputTypeDef
+```
+
+Required fields:
+
+- `ConsumerARN`: `str`
+- `ShardId`: `str`
+- `StartingPosition`:
+  [StartingPositionTypeDef](./type_defs.md#startingpositiontypedef)
+
+## SubscribeToShardOutputResponseTypeDef
+
+```python
+from mypy_boto3_kinesis.type_defs import SubscribeToShardOutputResponseTypeDef
 ```
 
 Required fields:
@@ -649,10 +1008,23 @@ Optional fields:
 
 - `Value`: `str`
 
-## UpdateShardCountOutputTypeDef
+## UpdateShardCountInputTypeDef
 
 ```python
-from mypy_boto3_kinesis.type_defs import UpdateShardCountOutputTypeDef
+from mypy_boto3_kinesis.type_defs import UpdateShardCountInputTypeDef
+```
+
+Required fields:
+
+- `StreamName`: `str`
+- `TargetShardCount`: `int`
+- `ScalingType`: `Literal['UNIFORM_SCALING']` (see
+  [ScalingTypeType](./literals.md#scalingtypetype))
+
+## UpdateShardCountOutputResponseTypeDef
+
+```python
+from mypy_boto3_kinesis.type_defs import UpdateShardCountOutputResponseTypeDef
 ```
 
 Required fields:

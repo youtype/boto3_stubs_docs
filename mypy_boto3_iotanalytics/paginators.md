@@ -37,7 +37,7 @@ Arguments for `ListChannelsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListChannelsPaginator.paginate` returns
-`Iterator`\[[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef)\].
+`Iterator`\[[ListChannelsResponseResponseTypeDef](./type_defs.md#listchannelsresponseresponsetypedef)\].
 
 ## ListDatasetContentsPaginator
 
@@ -59,13 +59,13 @@ Boto3 documentation:
 Arguments for `ListDatasetContentsPaginator.paginate` method:
 
 - `datasetName`: `str` *(required)*
-- `scheduledOnOrAfter`: `datetime`
-- `scheduledBefore`: `datetime`
+- `scheduledOnOrAfter`: `Union`\[`datetime`, `str`\]
+- `scheduledBefore`: `Union`\[`datetime`, `str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDatasetContentsPaginator.paginate` returns
-`Iterator`\[[ListDatasetContentsResponseTypeDef](./type_defs.md#listdatasetcontentsresponsetypedef)\].
+`Iterator`\[[ListDatasetContentsResponseResponseTypeDef](./type_defs.md#listdatasetcontentsresponseresponsetypedef)\].
 
 ## ListDatasetsPaginator
 
@@ -90,7 +90,7 @@ Arguments for `ListDatasetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDatasetsPaginator.paginate` returns
-`Iterator`\[[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef)\].
+`Iterator`\[[ListDatasetsResponseResponseTypeDef](./type_defs.md#listdatasetsresponseresponsetypedef)\].
 
 ## ListDatastoresPaginator
 
@@ -115,7 +115,7 @@ Arguments for `ListDatastoresPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDatastoresPaginator.paginate` returns
-`Iterator`\[[ListDatastoresResponseTypeDef](./type_defs.md#listdatastoresresponsetypedef)\].
+`Iterator`\[[ListDatastoresResponseResponseTypeDef](./type_defs.md#listdatastoresresponseresponsetypedef)\].
 
 ## ListPipelinesPaginator
 
@@ -140,4 +140,4 @@ Arguments for `ListPipelinesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPipelinesPaginator.paginate` returns
-`Iterator`\[[ListPipelinesResponseTypeDef](./type_defs.md#listpipelinesresponsetypedef)\].
+`Iterator`\[[ListPipelinesResponseResponseTypeDef](./type_defs.md#listpipelinesresponseresponsetypedef)\].

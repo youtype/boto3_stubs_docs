@@ -38,7 +38,7 @@ Arguments for `DescribeObjectsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeObjectsPaginator.paginate` returns
-`Iterator`\[[DescribeObjectsOutputTypeDef](./type_defs.md#describeobjectsoutputtypedef)\].
+`Iterator`\[[DescribeObjectsOutputResponseTypeDef](./type_defs.md#describeobjectsoutputresponsetypedef)\].
 
 ## ListPipelinesPaginator
 
@@ -63,7 +63,7 @@ Arguments for `ListPipelinesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPipelinesPaginator.paginate` returns
-`Iterator`\[[ListPipelinesOutputTypeDef](./type_defs.md#listpipelinesoutputtypedef)\].
+`Iterator`\[[ListPipelinesOutputResponseTypeDef](./type_defs.md#listpipelinesoutputresponsetypedef)\].
 
 ## QueryObjectsPaginator
 
@@ -91,4 +91,4 @@ Arguments for `QueryObjectsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `QueryObjectsPaginator.paginate` returns
-`Iterator`\[[QueryObjectsOutputTypeDef](./type_defs.md#queryobjectsoutputtypedef)\].
+`Iterator`\[[QueryObjectsOutputResponseTypeDef](./type_defs.md#queryobjectsoutputresponsetypedef)\].

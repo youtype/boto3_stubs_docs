@@ -10,6 +10,9 @@ type annotations stubs module
 - [Typed dictionaries for boto3 PersonalizeEvents module](#typed-dictionaries-for-boto3-personalizeevents-module)
   - [EventTypeDef](#eventtypedef)
   - [ItemTypeDef](#itemtypedef)
+  - [PutEventsRequestTypeDef](#puteventsrequesttypedef)
+  - [PutItemsRequestTypeDef](#putitemsrequesttypedef)
+  - [PutUsersRequestTypeDef](#putusersrequesttypedef)
   - [UserTypeDef](#usertypedef)
 
 ## EventTypeDef
@@ -21,7 +24,7 @@ from mypy_boto3_personalize_events.type_defs import EventTypeDef
 Required fields:
 
 - `eventType`: `str`
-- `sentAt`: `datetime`
+- `sentAt`: `Union`\[`datetime`, `str`\]
 
 Optional fields:
 
@@ -45,6 +48,44 @@ Required fields:
 Optional fields:
 
 - `properties`: `str`
+
+## PutEventsRequestTypeDef
+
+```python
+from mypy_boto3_personalize_events.type_defs import PutEventsRequestTypeDef
+```
+
+Required fields:
+
+- `trackingId`: `str`
+- `sessionId`: `str`
+- `eventList`: `List`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
+
+Optional fields:
+
+- `userId`: `str`
+
+## PutItemsRequestTypeDef
+
+```python
+from mypy_boto3_personalize_events.type_defs import PutItemsRequestTypeDef
+```
+
+Required fields:
+
+- `datasetArn`: `str`
+- `items`: `List`\[[ItemTypeDef](./type_defs.md#itemtypedef)\]
+
+## PutUsersRequestTypeDef
+
+```python
+from mypy_boto3_personalize_events.type_defs import PutUsersRequestTypeDef
+```
+
+Required fields:
+
+- `datasetArn`: `str`
+- `users`: `List`\[[UserTypeDef](./type_defs.md#usertypedef)\]
 
 ## UserTypeDef
 

@@ -40,7 +40,7 @@ Arguments for `BatchGetTracesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `BatchGetTracesPaginator.paginate` returns
-`Iterator`\[[BatchGetTracesResultTypeDef](./type_defs.md#batchgettracesresulttypedef)\].
+`Iterator`\[[BatchGetTracesResultResponseTypeDef](./type_defs.md#batchgettracesresultresponsetypedef)\].
 
 ## GetGroupsPaginator
 
@@ -64,7 +64,7 @@ Arguments for `GetGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetGroupsPaginator.paginate` returns
-`Iterator`\[[GetGroupsResultTypeDef](./type_defs.md#getgroupsresulttypedef)\].
+`Iterator`\[[GetGroupsResultResponseTypeDef](./type_defs.md#getgroupsresultresponsetypedef)\].
 
 ## GetSamplingRulesPaginator
 
@@ -89,7 +89,7 @@ Arguments for `GetSamplingRulesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetSamplingRulesPaginator.paginate` returns
-`Iterator`\[[GetSamplingRulesResultTypeDef](./type_defs.md#getsamplingrulesresulttypedef)\].
+`Iterator`\[[GetSamplingRulesResultResponseTypeDef](./type_defs.md#getsamplingrulesresultresponsetypedef)\].
 
 ## GetSamplingStatisticSummariesPaginator
 
@@ -114,7 +114,7 @@ Arguments for `GetSamplingStatisticSummariesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetSamplingStatisticSummariesPaginator.paginate` returns
-`Iterator`\[[GetSamplingStatisticSummariesResultTypeDef](./type_defs.md#getsamplingstatisticsummariesresulttypedef)\].
+`Iterator`\[[GetSamplingStatisticSummariesResultResponseTypeDef](./type_defs.md#getsamplingstatisticsummariesresultresponsetypedef)\].
 
 ## GetServiceGraphPaginator
 
@@ -134,15 +134,15 @@ Boto3 documentation:
 
 Arguments for `GetServiceGraphPaginator.paginate` method:
 
-- `StartTime`: `datetime` *(required)*
-- `EndTime`: `datetime` *(required)*
+- `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
+- `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `GroupName`: `str`
 - `GroupARN`: `str`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetServiceGraphPaginator.paginate` returns
-`Iterator`\[[GetServiceGraphResultTypeDef](./type_defs.md#getservicegraphresulttypedef)\].
+`Iterator`\[[GetServiceGraphResultResponseTypeDef](./type_defs.md#getservicegraphresultresponsetypedef)\].
 
 ## GetTimeSeriesServiceStatisticsPaginator
 
@@ -163,8 +163,8 @@ Boto3 documentation:
 
 Arguments for `GetTimeSeriesServiceStatisticsPaginator.paginate` method:
 
-- `StartTime`: `datetime` *(required)*
-- `EndTime`: `datetime` *(required)*
+- `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
+- `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `GroupName`: `str`
 - `GroupARN`: `str`
 - `EntitySelectorExpression`: `str`
@@ -174,7 +174,7 @@ Arguments for `GetTimeSeriesServiceStatisticsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTimeSeriesServiceStatisticsPaginator.paginate` returns
-`Iterator`\[[GetTimeSeriesServiceStatisticsResultTypeDef](./type_defs.md#gettimeseriesservicestatisticsresulttypedef)\].
+`Iterator`\[[GetTimeSeriesServiceStatisticsResultResponseTypeDef](./type_defs.md#gettimeseriesservicestatisticsresultresponsetypedef)\].
 
 ## GetTraceGraphPaginator
 
@@ -199,7 +199,7 @@ Arguments for `GetTraceGraphPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTraceGraphPaginator.paginate` returns
-`Iterator`\[[GetTraceGraphResultTypeDef](./type_defs.md#gettracegraphresulttypedef)\].
+`Iterator`\[[GetTraceGraphResultResponseTypeDef](./type_defs.md#gettracegraphresultresponsetypedef)\].
 
 ## GetTraceSummariesPaginator
 
@@ -220,8 +220,8 @@ Boto3 documentation:
 
 Arguments for `GetTraceSummariesPaginator.paginate` method:
 
-- `StartTime`: `datetime` *(required)*
-- `EndTime`: `datetime` *(required)*
+- `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
+- `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `TimeRangeType`: [TimeRangeTypeType](./literals.md#timerangetypetype)
 - `Sampling`: `bool`
 - `SamplingStrategy`:
@@ -231,4 +231,4 @@ Arguments for `GetTraceSummariesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTraceSummariesPaginator.paginate` returns
-`Iterator`\[[GetTraceSummariesResultTypeDef](./type_defs.md#gettracesummariesresulttypedef)\].
+`Iterator`\[[GetTraceSummariesResultResponseTypeDef](./type_defs.md#gettracesummariesresultresponsetypedef)\].

@@ -89,19 +89,27 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_macie.type_defs import AssociateS3ResourcesResultTypeDef, ...
+from mypy_boto3_macie.type_defs import AssociateMemberAccountRequestTypeDef, ...
 ```
 
-- [AssociateS3ResourcesResultTypeDef](./type_defs.md#associates3resourcesresulttypedef)
+- [AssociateMemberAccountRequestTypeDef](./type_defs.md#associatememberaccountrequesttypedef)
+- [AssociateS3ResourcesRequestTypeDef](./type_defs.md#associates3resourcesrequesttypedef)
+- [AssociateS3ResourcesResultResponseTypeDef](./type_defs.md#associates3resourcesresultresponsetypedef)
 - [ClassificationTypeTypeDef](./type_defs.md#classificationtypetypedef)
 - [ClassificationTypeUpdateTypeDef](./type_defs.md#classificationtypeupdatetypedef)
-- [DisassociateS3ResourcesResultTypeDef](./type_defs.md#disassociates3resourcesresulttypedef)
+- [DisassociateMemberAccountRequestTypeDef](./type_defs.md#disassociatememberaccountrequesttypedef)
+- [DisassociateS3ResourcesRequestTypeDef](./type_defs.md#disassociates3resourcesrequesttypedef)
+- [DisassociateS3ResourcesResultResponseTypeDef](./type_defs.md#disassociates3resourcesresultresponsetypedef)
 - [FailedS3ResourceTypeDef](./type_defs.md#faileds3resourcetypedef)
-- [ListMemberAccountsResultTypeDef](./type_defs.md#listmemberaccountsresulttypedef)
-- [ListS3ResourcesResultTypeDef](./type_defs.md#lists3resourcesresulttypedef)
+- [ListMemberAccountsRequestTypeDef](./type_defs.md#listmemberaccountsrequesttypedef)
+- [ListMemberAccountsResultResponseTypeDef](./type_defs.md#listmemberaccountsresultresponsetypedef)
+- [ListS3ResourcesRequestTypeDef](./type_defs.md#lists3resourcesrequesttypedef)
+- [ListS3ResourcesResultResponseTypeDef](./type_defs.md#lists3resourcesresultresponsetypedef)
 - [MemberAccountTypeDef](./type_defs.md#memberaccounttypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [S3ResourceClassificationTypeDef](./type_defs.md#s3resourceclassificationtypedef)
 - [S3ResourceClassificationUpdateTypeDef](./type_defs.md#s3resourceclassificationupdatetypedef)
 - [S3ResourceTypeDef](./type_defs.md#s3resourcetypedef)
-- [UpdateS3ResourcesResultTypeDef](./type_defs.md#updates3resourcesresulttypedef)
+- [UpdateS3ResourcesRequestTypeDef](./type_defs.md#updates3resourcesrequesttypedef)
+- [UpdateS3ResourcesResultResponseTypeDef](./type_defs.md#updates3resourcesresultresponsetypedef)

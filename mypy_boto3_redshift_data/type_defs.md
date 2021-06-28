@@ -8,32 +8,53 @@ type annotations stubs module
 [mypy_boto3_redshift_data](https://pypi.org/project/mypy-boto3-redshift-data/).
 
 - [Typed dictionaries for boto3 RedshiftDataAPIService module](#typed-dictionaries-for-boto3-redshiftdataapiservice-module)
-  - [CancelStatementResponseTypeDef](#cancelstatementresponsetypedef)
+  - [CancelStatementRequestTypeDef](#cancelstatementrequesttypedef)
+  - [CancelStatementResponseResponseTypeDef](#cancelstatementresponseresponsetypedef)
   - [ColumnMetadataTypeDef](#columnmetadatatypedef)
-  - [DescribeStatementResponseTypeDef](#describestatementresponsetypedef)
-  - [DescribeTableResponseTypeDef](#describetableresponsetypedef)
-  - [ExecuteStatementOutputTypeDef](#executestatementoutputtypedef)
+  - [DescribeStatementRequestTypeDef](#describestatementrequesttypedef)
+  - [DescribeStatementResponseResponseTypeDef](#describestatementresponseresponsetypedef)
+  - [DescribeTableRequestTypeDef](#describetablerequesttypedef)
+  - [DescribeTableResponseResponseTypeDef](#describetableresponseresponsetypedef)
+  - [ExecuteStatementInputTypeDef](#executestatementinputtypedef)
+  - [ExecuteStatementOutputResponseTypeDef](#executestatementoutputresponsetypedef)
   - [FieldTypeDef](#fieldtypedef)
-  - [GetStatementResultResponseTypeDef](#getstatementresultresponsetypedef)
-  - [ListDatabasesResponseTypeDef](#listdatabasesresponsetypedef)
-  - [ListSchemasResponseTypeDef](#listschemasresponsetypedef)
-  - [ListStatementsResponseTypeDef](#liststatementsresponsetypedef)
-  - [ListTablesResponseTypeDef](#listtablesresponsetypedef)
+  - [GetStatementResultRequestTypeDef](#getstatementresultrequesttypedef)
+  - [GetStatementResultResponseResponseTypeDef](#getstatementresultresponseresponsetypedef)
+  - [ListDatabasesRequestTypeDef](#listdatabasesrequesttypedef)
+  - [ListDatabasesResponseResponseTypeDef](#listdatabasesresponseresponsetypedef)
+  - [ListSchemasRequestTypeDef](#listschemasrequesttypedef)
+  - [ListSchemasResponseResponseTypeDef](#listschemasresponseresponsetypedef)
+  - [ListStatementsRequestTypeDef](#liststatementsrequesttypedef)
+  - [ListStatementsResponseResponseTypeDef](#liststatementsresponseresponsetypedef)
+  - [ListTablesRequestTypeDef](#listtablesrequesttypedef)
+  - [ListTablesResponseResponseTypeDef](#listtablesresponseresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SqlParameterTypeDef](#sqlparametertypedef)
   - [StatementDataTypeDef](#statementdatatypedef)
   - [TableMemberTypeDef](#tablemembertypedef)
 
-## CancelStatementResponseTypeDef
+## CancelStatementRequestTypeDef
 
 ```python
-from mypy_boto3_redshift_data.type_defs import CancelStatementResponseTypeDef
+from mypy_boto3_redshift_data.type_defs import CancelStatementRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## CancelStatementResponseResponseTypeDef
+
+```python
+from mypy_boto3_redshift_data.type_defs import CancelStatementResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Status`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ColumnMetadataTypeDef
 
@@ -57,17 +78,23 @@ Optional fields:
 - `tableName`: `str`
 - `typeName`: `str`
 
-## DescribeStatementResponseTypeDef
+## DescribeStatementRequestTypeDef
 
 ```python
-from mypy_boto3_redshift_data.type_defs import DescribeStatementResponseTypeDef
+from mypy_boto3_redshift_data.type_defs import DescribeStatementRequestTypeDef
 ```
 
 Required fields:
 
 - `Id`: `str`
 
-Optional fields:
+## DescribeStatementResponseResponseTypeDef
+
+```python
+from mypy_boto3_redshift_data.type_defs import DescribeStatementResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ClusterIdentifier`: `str`
 - `CreatedAt`: `datetime`
@@ -76,6 +103,7 @@ Optional fields:
 - `Duration`: `int`
 - `Error`: `str`
 - `HasResultSet`: `bool`
+- `Id`: `str`
 - `QueryParameters`:
   `List`\[[SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)\]
 - `QueryString`: `str`
@@ -86,24 +114,70 @@ Optional fields:
 - `SecretArn`: `str`
 - `Status`: [StatusStringType](./literals.md#statusstringtype)
 - `UpdatedAt`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTableResponseTypeDef
+## DescribeTableRequestTypeDef
 
 ```python
-from mypy_boto3_redshift_data.type_defs import DescribeTableResponseTypeDef
+from mypy_boto3_redshift_data.type_defs import DescribeTableRequestTypeDef
 ```
 
+Required fields:
+
+- `ClusterIdentifier`: `str`
+- `Database`: `str`
+
 Optional fields:
+
+- `ConnectedDatabase`: `str`
+- `DbUser`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Schema`: `str`
+- `SecretArn`: `str`
+- `Table`: `str`
+
+## DescribeTableResponseResponseTypeDef
+
+```python
+from mypy_boto3_redshift_data.type_defs import DescribeTableResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ColumnList`:
   `List`\[[ColumnMetadataTypeDef](./type_defs.md#columnmetadatatypedef)\]
 - `NextToken`: `str`
 - `TableName`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ExecuteStatementOutputTypeDef
+## ExecuteStatementInputTypeDef
 
 ```python
-from mypy_boto3_redshift_data.type_defs import ExecuteStatementOutputTypeDef
+from mypy_boto3_redshift_data.type_defs import ExecuteStatementInputTypeDef
+```
+
+Required fields:
+
+- `ClusterIdentifier`: `str`
+- `Sql`: `str`
+
+Optional fields:
+
+- `Database`: `str`
+- `DbUser`: `str`
+- `Parameters`:
+  `List`\[[SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)\]
+- `SecretArn`: `str`
+- `StatementName`: `str`
+- `WithEvent`: `bool`
+
+## ExecuteStatementOutputResponseTypeDef
+
+```python
+from mypy_boto3_redshift_data.type_defs import ExecuteStatementOutputResponseTypeDef
 ```
 
 Required fields:
@@ -125,77 +199,168 @@ from mypy_boto3_redshift_data.type_defs import FieldTypeDef
 
 Optional fields:
 
-- `blobValue`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `blobValue`: `bytes`
 - `booleanValue`: `bool`
 - `doubleValue`: `float`
 - `isNull`: `bool`
 - `longValue`: `int`
 - `stringValue`: `str`
 
-## GetStatementResultResponseTypeDef
+## GetStatementResultRequestTypeDef
 
 ```python
-from mypy_boto3_redshift_data.type_defs import GetStatementResultResponseTypeDef
+from mypy_boto3_redshift_data.type_defs import GetStatementResultRequestTypeDef
 ```
 
 Required fields:
 
-- `Records`: `List`\[`List`\[[FieldTypeDef](./type_defs.md#fieldtypedef)\]\]
+- `Id`: `str`
 
 Optional fields:
+
+- `NextToken`: `str`
+
+## GetStatementResultResponseResponseTypeDef
+
+```python
+from mypy_boto3_redshift_data.type_defs import GetStatementResultResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ColumnMetadata`:
   `List`\[[ColumnMetadataTypeDef](./type_defs.md#columnmetadatatypedef)\]
 - `NextToken`: `str`
+- `Records`: `List`\[`List`\[[FieldTypeDef](./type_defs.md#fieldtypedef)\]\]
 - `TotalNumRows`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDatabasesResponseTypeDef
-
-```python
-from mypy_boto3_redshift_data.type_defs import ListDatabasesResponseTypeDef
-```
-
-Optional fields:
-
-- `Databases`: `List`\[`str`\]
-- `NextToken`: `str`
-
-## ListSchemasResponseTypeDef
+## ListDatabasesRequestTypeDef
 
 ```python
-from mypy_boto3_redshift_data.type_defs import ListSchemasResponseTypeDef
-```
-
-Optional fields:
-
-- `NextToken`: `str`
-- `Schemas`: `List`\[`str`\]
-
-## ListStatementsResponseTypeDef
-
-```python
-from mypy_boto3_redshift_data.type_defs import ListStatementsResponseTypeDef
+from mypy_boto3_redshift_data.type_defs import ListDatabasesRequestTypeDef
 ```
 
 Required fields:
 
-- `Statements`:
-  `List`\[[StatementDataTypeDef](./type_defs.md#statementdatatypedef)\]
+- `ClusterIdentifier`: `str`
 
 Optional fields:
 
+- `Database`: `str`
+- `DbUser`: `str`
+- `MaxResults`: `int`
 - `NextToken`: `str`
+- `SecretArn`: `str`
 
-## ListTablesResponseTypeDef
+## ListDatabasesResponseResponseTypeDef
 
 ```python
-from mypy_boto3_redshift_data.type_defs import ListTablesResponseTypeDef
+from mypy_boto3_redshift_data.type_defs import ListDatabasesResponseResponseTypeDef
+```
+
+Required fields:
+
+- `Databases`: `List`\[`str`\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListSchemasRequestTypeDef
+
+```python
+from mypy_boto3_redshift_data.type_defs import ListSchemasRequestTypeDef
+```
+
+Required fields:
+
+- `ClusterIdentifier`: `str`
+- `Database`: `str`
+
+Optional fields:
+
+- `ConnectedDatabase`: `str`
+- `DbUser`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `SchemaPattern`: `str`
+- `SecretArn`: `str`
+
+## ListSchemasResponseResponseTypeDef
+
+```python
+from mypy_boto3_redshift_data.type_defs import ListSchemasResponseResponseTypeDef
+```
+
+Required fields:
+
+- `NextToken`: `str`
+- `Schemas`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListStatementsRequestTypeDef
+
+```python
+from mypy_boto3_redshift_data.type_defs import ListStatementsRequestTypeDef
 ```
 
 Optional fields:
 
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `RoleLevel`: `bool`
+- `StatementName`: `str`
+- `Status`: [StatusStringType](./literals.md#statusstringtype)
+
+## ListStatementsResponseResponseTypeDef
+
+```python
+from mypy_boto3_redshift_data.type_defs import ListStatementsResponseResponseTypeDef
+```
+
+Required fields:
+
+- `NextToken`: `str`
+- `Statements`:
+  `List`\[[StatementDataTypeDef](./type_defs.md#statementdatatypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListTablesRequestTypeDef
+
+```python
+from mypy_boto3_redshift_data.type_defs import ListTablesRequestTypeDef
+```
+
+Required fields:
+
+- `ClusterIdentifier`: `str`
+- `Database`: `str`
+
+Optional fields:
+
+- `ConnectedDatabase`: `str`
+- `DbUser`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `SchemaPattern`: `str`
+- `SecretArn`: `str`
+- `TablePattern`: `str`
+
+## ListTablesResponseResponseTypeDef
+
+```python
+from mypy_boto3_redshift_data.type_defs import ListTablesResponseResponseTypeDef
+```
+
+Required fields:
+
 - `NextToken`: `str`
 - `Tables`: `List`\[[TableMemberTypeDef](./type_defs.md#tablemembertypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PaginatorConfigTypeDef
 

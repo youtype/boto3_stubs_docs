@@ -111,10 +111,15 @@ Exceptions:
 
 ### accept_invitation
 
+Accepts the invitation to be monitored by a GuardDuty administrator account.
+
 Type annotations for `boto3.client("guardduty").accept_invitation` method.
 
 Boto3 documentation:
 [GuardDuty.Client.accept_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.accept_invitation)
+
+Arguments mapping described in
+[AcceptInvitationRequestTypeDef](./type_defs.md#acceptinvitationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -126,10 +131,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### archive_findings
 
+Archives GuardDuty findings that are specified by the list of finding IDs.
+
 Type annotations for `boto3.client("guardduty").archive_findings` method.
 
 Boto3 documentation:
 [GuardDuty.Client.archive_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.archive_findings)
+
+Arguments mapping described in
+[ArchiveFindingsRequestTypeDef](./type_defs.md#archivefindingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -139,6 +149,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("guardduty").can_paginate` method.
 
@@ -153,10 +165,15 @@ Returns `bool`.
 
 ### create_detector
 
+Creates a single Amazon GuardDuty detector.
+
 Type annotations for `boto3.client("guardduty").create_detector` method.
 
 Boto3 documentation:
 [GuardDuty.Client.create_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_detector)
+
+Arguments mapping described in
+[CreateDetectorRequestTypeDef](./type_defs.md#createdetectorrequesttypedef).
 
 Keyword-only arguments:
 
@@ -169,14 +186,19 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateDetectorResponseTypeDef](./type_defs.md#createdetectorresponsetypedef).
+[CreateDetectorResponseResponseTypeDef](./type_defs.md#createdetectorresponseresponsetypedef).
 
 ### create_filter
+
+Creates a filter using the specified finding criteria.
 
 Type annotations for `boto3.client("guardduty").create_filter` method.
 
 Boto3 documentation:
 [GuardDuty.Client.create_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_filter)
+
+Arguments mapping described in
+[CreateFilterRequestTypeDef](./type_defs.md#createfilterrequesttypedef).
 
 Keyword-only arguments:
 
@@ -191,14 +213,20 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateFilterResponseTypeDef](./type_defs.md#createfilterresponsetypedef).
+[CreateFilterResponseResponseTypeDef](./type_defs.md#createfilterresponseresponsetypedef).
 
 ### create_ip_set
+
+Creates a new IPSet, which is called a trusted IP list in the console user
+interface.
 
 Type annotations for `boto3.client("guardduty").create_ip_set` method.
 
 Boto3 documentation:
 [GuardDuty.Client.create_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_ip_set)
+
+Arguments mapping described in
+[CreateIPSetRequestTypeDef](./type_defs.md#createipsetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -211,14 +239,19 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateIPSetResponseTypeDef](./type_defs.md#createipsetresponsetypedef).
+[CreateIPSetResponseResponseTypeDef](./type_defs.md#createipsetresponseresponsetypedef).
 
 ### create_members
+
+.
 
 Type annotations for `boto3.client("guardduty").create_members` method.
 
 Boto3 documentation:
 [GuardDuty.Client.create_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_members)
+
+Arguments mapping described in
+[CreateMembersRequestTypeDef](./type_defs.md#createmembersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -228,15 +261,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateMembersResponseTypeDef](./type_defs.md#createmembersresponsetypedef).
+[CreateMembersResponseResponseTypeDef](./type_defs.md#createmembersresponseresponsetypedef).
 
 ### create_publishing_destination
+
+Creates a publishing destination to export findings to.
 
 Type annotations for `boto3.client("guardduty").create_publishing_destination`
 method.
 
 Boto3 documentation:
 [GuardDuty.Client.create_publishing_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_publishing_destination)
+
+Arguments mapping described in
+[CreatePublishingDestinationRequestTypeDef](./type_defs.md#createpublishingdestinationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -249,14 +287,19 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns
-[CreatePublishingDestinationResponseTypeDef](./type_defs.md#createpublishingdestinationresponsetypedef).
+[CreatePublishingDestinationResponseResponseTypeDef](./type_defs.md#createpublishingdestinationresponseresponsetypedef).
 
 ### create_sample_findings
+
+Generates example findings of types specified by the list of finding types.
 
 Type annotations for `boto3.client("guardduty").create_sample_findings` method.
 
 Boto3 documentation:
 [GuardDuty.Client.create_sample_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_sample_findings)
+
+Arguments mapping described in
+[CreateSampleFindingsRequestTypeDef](./type_defs.md#createsamplefindingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -267,11 +310,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### create_threat_intel_set
 
+Creates a new ThreatIntelSet.
+
 Type annotations for `boto3.client("guardduty").create_threat_intel_set`
 method.
 
 Boto3 documentation:
 [GuardDuty.Client.create_threat_intel_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_threat_intel_set)
+
+Arguments mapping described in
+[CreateThreatIntelSetRequestTypeDef](./type_defs.md#createthreatintelsetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -285,28 +333,39 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateThreatIntelSetResponseTypeDef](./type_defs.md#createthreatintelsetresponsetypedef).
+[CreateThreatIntelSetResponseResponseTypeDef](./type_defs.md#createthreatintelsetresponseresponsetypedef).
 
 ### decline_invitations
+
+Declines invitations sent to the current member account by AWS accounts
+specified by their account IDs.
 
 Type annotations for `boto3.client("guardduty").decline_invitations` method.
 
 Boto3 documentation:
 [GuardDuty.Client.decline_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.decline_invitations)
 
+Arguments mapping described in
+[DeclineInvitationsRequestTypeDef](./type_defs.md#declineinvitationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `AccountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DeclineInvitationsResponseTypeDef](./type_defs.md#declineinvitationsresponsetypedef).
+[DeclineInvitationsResponseResponseTypeDef](./type_defs.md#declineinvitationsresponseresponsetypedef).
 
 ### delete_detector
+
+Deletes an Amazon GuardDuty detector that is specified by the detector ID.
 
 Type annotations for `boto3.client("guardduty").delete_detector` method.
 
 Boto3 documentation:
 [GuardDuty.Client.delete_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_detector)
+
+Arguments mapping described in
+[DeleteDetectorRequestTypeDef](./type_defs.md#deletedetectorrequesttypedef).
 
 Keyword-only arguments:
 
@@ -316,10 +375,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_filter
 
+Deletes the filter specified by the filter name.
+
 Type annotations for `boto3.client("guardduty").delete_filter` method.
 
 Boto3 documentation:
 [GuardDuty.Client.delete_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_filter)
+
+Arguments mapping described in
+[DeleteFilterRequestTypeDef](./type_defs.md#deletefilterrequesttypedef).
 
 Keyword-only arguments:
 
@@ -330,24 +394,35 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_invitations
 
+Deletes invitations sent to the current member account by AWS accounts
+specified by their account IDs.
+
 Type annotations for `boto3.client("guardduty").delete_invitations` method.
 
 Boto3 documentation:
 [GuardDuty.Client.delete_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_invitations)
+
+Arguments mapping described in
+[DeleteInvitationsRequestTypeDef](./type_defs.md#deleteinvitationsrequesttypedef).
 
 Keyword-only arguments:
 
 - `AccountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DeleteInvitationsResponseTypeDef](./type_defs.md#deleteinvitationsresponsetypedef).
+[DeleteInvitationsResponseResponseTypeDef](./type_defs.md#deleteinvitationsresponseresponsetypedef).
 
 ### delete_ip_set
+
+Deletes the IPSet specified by the `ipSetId`.
 
 Type annotations for `boto3.client("guardduty").delete_ip_set` method.
 
 Boto3 documentation:
 [GuardDuty.Client.delete_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_ip_set)
+
+Arguments mapping described in
+[DeleteIPSetRequestTypeDef](./type_defs.md#deleteipsetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -358,10 +433,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_members
 
+Deletes GuardDuty member accounts (to the current GuardDuty administrator
+account) specified by the account IDs.
+
 Type annotations for `boto3.client("guardduty").delete_members` method.
 
 Boto3 documentation:
 [GuardDuty.Client.delete_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_members)
+
+Arguments mapping described in
+[DeleteMembersRequestTypeDef](./type_defs.md#deletemembersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -369,15 +450,20 @@ Keyword-only arguments:
 - `AccountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DeleteMembersResponseTypeDef](./type_defs.md#deletemembersresponsetypedef).
+[DeleteMembersResponseResponseTypeDef](./type_defs.md#deletemembersresponseresponsetypedef).
 
 ### delete_publishing_destination
+
+Deletes the publishing definition with the specified `destinationId` .
 
 Type annotations for `boto3.client("guardduty").delete_publishing_destination`
 method.
 
 Boto3 documentation:
 [GuardDuty.Client.delete_publishing_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_publishing_destination)
+
+Arguments mapping described in
+[DeletePublishingDestinationRequestTypeDef](./type_defs.md#deletepublishingdestinationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -388,11 +474,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_threat_intel_set
 
+Deletes the ThreatIntelSet specified by the ThreatIntelSet ID.
+
 Type annotations for `boto3.client("guardduty").delete_threat_intel_set`
 method.
 
 Boto3 documentation:
 [GuardDuty.Client.delete_threat_intel_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_threat_intel_set)
+
+Arguments mapping described in
+[DeleteThreatIntelSetRequestTypeDef](./type_defs.md#deletethreatintelsetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -403,20 +494,29 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_organization_configuration
 
+Returns information about the account selected as the delegated administrator
+for GuardDuty.
+
 Type annotations for
 `boto3.client("guardduty").describe_organization_configuration` method.
 
 Boto3 documentation:
 [GuardDuty.Client.describe_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.describe_organization_configuration)
 
+Arguments mapping described in
+[DescribeOrganizationConfigurationRequestTypeDef](./type_defs.md#describeorganizationconfigurationrequesttypedef).
+
 Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 
 Returns
-[DescribeOrganizationConfigurationResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponsetypedef).
+[DescribeOrganizationConfigurationResponseResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponseresponsetypedef).
 
 ### describe_publishing_destination
+
+Returns information about the publishing destination specified by the provided
+`destinationId` .
 
 Type annotations for
 `boto3.client("guardduty").describe_publishing_destination` method.
@@ -424,21 +524,30 @@ Type annotations for
 Boto3 documentation:
 [GuardDuty.Client.describe_publishing_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.describe_publishing_destination)
 
+Arguments mapping described in
+[DescribePublishingDestinationRequestTypeDef](./type_defs.md#describepublishingdestinationrequesttypedef).
+
 Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `DestinationId`: `str` *(required)*
 
 Returns
-[DescribePublishingDestinationResponseTypeDef](./type_defs.md#describepublishingdestinationresponsetypedef).
+[DescribePublishingDestinationResponseResponseTypeDef](./type_defs.md#describepublishingdestinationresponseresponsetypedef).
 
 ### disable_organization_admin_account
+
+Disables an AWS account within the Organization as the GuardDuty delegated
+administrator.
 
 Type annotations for
 `boto3.client("guardduty").disable_organization_admin_account` method.
 
 Boto3 documentation:
 [GuardDuty.Client.disable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.disable_organization_admin_account)
+
+Arguments mapping described in
+[DisableOrganizationAdminAccountRequestTypeDef](./type_defs.md#disableorganizationadminaccountrequesttypedef).
 
 Keyword-only arguments:
 
@@ -448,11 +557,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_from_master_account
 
+Disassociates the current GuardDuty member account from its administrator
+account.
+
 Type annotations for
 `boto3.client("guardduty").disassociate_from_master_account` method.
 
 Boto3 documentation:
 [GuardDuty.Client.disassociate_from_master_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.disassociate_from_master_account)
+
+Arguments mapping described in
+[DisassociateFromMasterAccountRequestTypeDef](./type_defs.md#disassociatefrommasteraccountrequesttypedef).
 
 Keyword-only arguments:
 
@@ -462,10 +577,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_members
 
+Disassociates GuardDuty member accounts (to the current GuardDuty administrator
+account) specified by the account IDs.
+
 Type annotations for `boto3.client("guardduty").disassociate_members` method.
 
 Boto3 documentation:
 [GuardDuty.Client.disassociate_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.disassociate_members)
+
+Arguments mapping described in
+[DisassociateMembersRequestTypeDef](./type_defs.md#disassociatemembersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -473,15 +594,21 @@ Keyword-only arguments:
 - `AccountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DisassociateMembersResponseTypeDef](./type_defs.md#disassociatemembersresponsetypedef).
+[DisassociateMembersResponseResponseTypeDef](./type_defs.md#disassociatemembersresponseresponsetypedef).
 
 ### enable_organization_admin_account
+
+Enables an AWS account within the organization as the GuardDuty delegated
+administrator.
 
 Type annotations for
 `boto3.client("guardduty").enable_organization_admin_account` method.
 
 Boto3 documentation:
 [GuardDuty.Client.enable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.enable_organization_admin_account)
+
+Arguments mapping described in
+[EnableOrganizationAdminAccountRequestTypeDef](./type_defs.md#enableorganizationadminaccountrequesttypedef).
 
 Keyword-only arguments:
 
@@ -490,6 +617,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("guardduty").generate_presigned_url` method.
 
@@ -507,38 +636,54 @@ Returns `str`.
 
 ### get_detector
 
+Retrieves an Amazon GuardDuty detector specified by the detectorId.
+
 Type annotations for `boto3.client("guardduty").get_detector` method.
 
 Boto3 documentation:
 [GuardDuty.Client.get_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_detector)
+
+Arguments mapping described in
+[GetDetectorRequestTypeDef](./type_defs.md#getdetectorrequesttypedef).
 
 Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 
 Returns
-[GetDetectorResponseTypeDef](./type_defs.md#getdetectorresponsetypedef).
+[GetDetectorResponseResponseTypeDef](./type_defs.md#getdetectorresponseresponsetypedef).
 
 ### get_filter
+
+Returns the details of the filter specified by the filter name.
 
 Type annotations for `boto3.client("guardduty").get_filter` method.
 
 Boto3 documentation:
 [GuardDuty.Client.get_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_filter)
 
+Arguments mapping described in
+[GetFilterRequestTypeDef](./type_defs.md#getfilterrequesttypedef).
+
 Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `FilterName`: `str` *(required)*
 
-Returns [GetFilterResponseTypeDef](./type_defs.md#getfilterresponsetypedef).
+Returns
+[GetFilterResponseResponseTypeDef](./type_defs.md#getfilterresponseresponsetypedef).
 
 ### get_findings
+
+Describes Amazon GuardDuty findings specified by finding IDs.
 
 Type annotations for `boto3.client("guardduty").get_findings` method.
 
 Boto3 documentation:
 [GuardDuty.Client.get_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_findings)
+
+Arguments mapping described in
+[GetFindingsRequestTypeDef](./type_defs.md#getfindingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -547,15 +692,20 @@ Keyword-only arguments:
 - `SortCriteria`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
 
 Returns
-[GetFindingsResponseTypeDef](./type_defs.md#getfindingsresponsetypedef).
+[GetFindingsResponseResponseTypeDef](./type_defs.md#getfindingsresponseresponsetypedef).
 
 ### get_findings_statistics
+
+Lists Amazon GuardDuty findings statistics for the specified detector ID.
 
 Type annotations for `boto3.client("guardduty").get_findings_statistics`
 method.
 
 Boto3 documentation:
 [GuardDuty.Client.get_findings_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_findings_statistics)
+
+Arguments mapping described in
+[GetFindingsStatisticsRequestTypeDef](./type_defs.md#getfindingsstatisticsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -567,9 +717,12 @@ Keyword-only arguments:
   [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
 
 Returns
-[GetFindingsStatisticsResponseTypeDef](./type_defs.md#getfindingsstatisticsresponsetypedef).
+[GetFindingsStatisticsResponseResponseTypeDef](./type_defs.md#getfindingsstatisticsresponseresponsetypedef).
 
 ### get_invitations_count
+
+Returns the count of all GuardDuty membership invitations that were sent to the
+current member account except the currently accepted invitation.
 
 Type annotations for `boto3.client("guardduty").get_invitations_count` method.
 
@@ -577,71 +730,100 @@ Boto3 documentation:
 [GuardDuty.Client.get_invitations_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_invitations_count)
 
 Returns
-[GetInvitationsCountResponseTypeDef](./type_defs.md#getinvitationscountresponsetypedef).
+[GetInvitationsCountResponseResponseTypeDef](./type_defs.md#getinvitationscountresponseresponsetypedef).
 
 ### get_ip_set
+
+Retrieves the IPSet specified by the `ipSetId` .
 
 Type annotations for `boto3.client("guardduty").get_ip_set` method.
 
 Boto3 documentation:
 [GuardDuty.Client.get_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_ip_set)
 
+Arguments mapping described in
+[GetIPSetRequestTypeDef](./type_defs.md#getipsetrequesttypedef).
+
 Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `IpSetId`: `str` *(required)*
 
-Returns [GetIPSetResponseTypeDef](./type_defs.md#getipsetresponsetypedef).
+Returns
+[GetIPSetResponseResponseTypeDef](./type_defs.md#getipsetresponseresponsetypedef).
 
 ### get_master_account
+
+Provides the details for the GuardDuty administrator account associated with
+the current GuardDuty member account.
 
 Type annotations for `boto3.client("guardduty").get_master_account` method.
 
 Boto3 documentation:
 [GuardDuty.Client.get_master_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_master_account)
 
+Arguments mapping described in
+[GetMasterAccountRequestTypeDef](./type_defs.md#getmasteraccountrequesttypedef).
+
 Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 
 Returns
-[GetMasterAccountResponseTypeDef](./type_defs.md#getmasteraccountresponsetypedef).
+[GetMasterAccountResponseResponseTypeDef](./type_defs.md#getmasteraccountresponseresponsetypedef).
 
 ### get_member_detectors
+
+Describes which data sources are enabled for the member account's detector.
 
 Type annotations for `boto3.client("guardduty").get_member_detectors` method.
 
 Boto3 documentation:
 [GuardDuty.Client.get_member_detectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_member_detectors)
 
+Arguments mapping described in
+[GetMemberDetectorsRequestTypeDef](./type_defs.md#getmemberdetectorsrequesttypedef).
+
 Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `AccountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[GetMemberDetectorsResponseTypeDef](./type_defs.md#getmemberdetectorsresponsetypedef).
+[GetMemberDetectorsResponseResponseTypeDef](./type_defs.md#getmemberdetectorsresponseresponsetypedef).
 
 ### get_members
+
+Retrieves GuardDuty member accounts (of the current GuardDuty administrator
+account) specified by the account IDs.
 
 Type annotations for `boto3.client("guardduty").get_members` method.
 
 Boto3 documentation:
 [GuardDuty.Client.get_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_members)
 
+Arguments mapping described in
+[GetMembersRequestTypeDef](./type_defs.md#getmembersrequesttypedef).
+
 Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `AccountIds`: `List`\[`str`\] *(required)*
 
-Returns [GetMembersResponseTypeDef](./type_defs.md#getmembersresponsetypedef).
+Returns
+[GetMembersResponseResponseTypeDef](./type_defs.md#getmembersresponseresponsetypedef).
 
 ### get_threat_intel_set
+
+Retrieves the ThreatIntelSet that is specified by the ThreatIntelSet ID.
 
 Type annotations for `boto3.client("guardduty").get_threat_intel_set` method.
 
 Boto3 documentation:
 [GuardDuty.Client.get_threat_intel_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_threat_intel_set)
+
+Arguments mapping described in
+[GetThreatIntelSetRequestTypeDef](./type_defs.md#getthreatintelsetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -649,14 +831,20 @@ Keyword-only arguments:
 - `ThreatIntelSetId`: `str` *(required)*
 
 Returns
-[GetThreatIntelSetResponseTypeDef](./type_defs.md#getthreatintelsetresponsetypedef).
+[GetThreatIntelSetResponseResponseTypeDef](./type_defs.md#getthreatintelsetresponseresponsetypedef).
 
 ### get_usage_statistics
+
+Lists Amazon GuardDuty usage statistics over the last 30 days for the specified
+detector ID.
 
 Type annotations for `boto3.client("guardduty").get_usage_statistics` method.
 
 Boto3 documentation:
 [GuardDuty.Client.get_usage_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_usage_statistics)
+
+Arguments mapping described in
+[GetUsageStatisticsRequestTypeDef](./type_defs.md#getusagestatisticsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -670,14 +858,22 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetUsageStatisticsResponseTypeDef](./type_defs.md#getusagestatisticsresponsetypedef).
+[GetUsageStatisticsResponseResponseTypeDef](./type_defs.md#getusagestatisticsresponseresponsetypedef).
 
 ### invite_members
+
+Invites other AWS accounts (created as members of the current AWS account by
+CreateMembers) to enable GuardDuty, and allow the current AWS account to view
+and manage these accounts' findings on their behalf as the GuardDuty
+administrator account.
 
 Type annotations for `boto3.client("guardduty").invite_members` method.
 
 Boto3 documentation:
 [GuardDuty.Client.invite_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.invite_members)
+
+Arguments mapping described in
+[InviteMembersRequestTypeDef](./type_defs.md#invitemembersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -687,14 +883,19 @@ Keyword-only arguments:
 - `Message`: `str`
 
 Returns
-[InviteMembersResponseTypeDef](./type_defs.md#invitemembersresponsetypedef).
+[InviteMembersResponseResponseTypeDef](./type_defs.md#invitemembersresponseresponsetypedef).
 
 ### list_detectors
+
+Lists detectorIds of all the existing Amazon GuardDuty detector resources.
 
 Type annotations for `boto3.client("guardduty").list_detectors` method.
 
 Boto3 documentation:
 [GuardDuty.Client.list_detectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_detectors)
+
+Arguments mapping described in
+[ListDetectorsRequestTypeDef](./type_defs.md#listdetectorsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -702,14 +903,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListDetectorsResponseTypeDef](./type_defs.md#listdetectorsresponsetypedef).
+[ListDetectorsResponseResponseTypeDef](./type_defs.md#listdetectorsresponseresponsetypedef).
 
 ### list_filters
+
+Returns a paginated list of the current filters.
 
 Type annotations for `boto3.client("guardduty").list_filters` method.
 
 Boto3 documentation:
 [GuardDuty.Client.list_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_filters)
+
+Arguments mapping described in
+[ListFiltersRequestTypeDef](./type_defs.md#listfiltersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -718,14 +924,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListFiltersResponseTypeDef](./type_defs.md#listfiltersresponsetypedef).
+[ListFiltersResponseResponseTypeDef](./type_defs.md#listfiltersresponseresponsetypedef).
 
 ### list_findings
+
+Lists Amazon GuardDuty findings for the specified detector ID.
 
 Type annotations for `boto3.client("guardduty").list_findings` method.
 
 Boto3 documentation:
 [GuardDuty.Client.list_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_findings)
+
+Arguments mapping described in
+[ListFindingsRequestTypeDef](./type_defs.md#listfindingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -737,14 +948,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef).
+[ListFindingsResponseResponseTypeDef](./type_defs.md#listfindingsresponseresponsetypedef).
 
 ### list_invitations
+
+Lists all GuardDuty membership invitations that were sent to the current AWS
+account.
 
 Type annotations for `boto3.client("guardduty").list_invitations` method.
 
 Boto3 documentation:
 [GuardDuty.Client.list_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_invitations)
+
+Arguments mapping described in
+[ListInvitationsRequestTypeDef](./type_defs.md#listinvitationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -752,14 +969,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef).
+[ListInvitationsResponseResponseTypeDef](./type_defs.md#listinvitationsresponseresponsetypedef).
 
 ### list_ip_sets
+
+Lists the IPSets of the GuardDuty service specified by the detector ID.
 
 Type annotations for `boto3.client("guardduty").list_ip_sets` method.
 
 Boto3 documentation:
 [GuardDuty.Client.list_ip_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_ip_sets)
+
+Arguments mapping described in
+[ListIPSetsRequestTypeDef](./type_defs.md#listipsetsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -767,14 +989,21 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns [ListIPSetsResponseTypeDef](./type_defs.md#listipsetsresponsetypedef).
+Returns
+[ListIPSetsResponseResponseTypeDef](./type_defs.md#listipsetsresponseresponsetypedef).
 
 ### list_members
+
+Lists details about all member accounts for the current GuardDuty administrator
+account.
 
 Type annotations for `boto3.client("guardduty").list_members` method.
 
 Boto3 documentation:
 [GuardDuty.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_members)
+
+Arguments mapping described in
+[ListMembersRequestTypeDef](./type_defs.md#listmembersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -784,9 +1013,11 @@ Keyword-only arguments:
 - `OnlyAssociated`: `str`
 
 Returns
-[ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef).
+[ListMembersResponseResponseTypeDef](./type_defs.md#listmembersresponseresponsetypedef).
 
 ### list_organization_admin_accounts
+
+Lists the accounts configured as GuardDuty delegated administrators.
 
 Type annotations for
 `boto3.client("guardduty").list_organization_admin_accounts` method.
@@ -794,15 +1025,21 @@ Type annotations for
 Boto3 documentation:
 [GuardDuty.Client.list_organization_admin_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_organization_admin_accounts)
 
+Arguments mapping described in
+[ListOrganizationAdminAccountsRequestTypeDef](./type_defs.md#listorganizationadminaccountsrequesttypedef).
+
 Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef).
+[ListOrganizationAdminAccountsResponseResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponseresponsetypedef).
 
 ### list_publishing_destinations
+
+Returns a list of publishing destinations associated with the specified
+`dectectorId` .
 
 Type annotations for `boto3.client("guardduty").list_publishing_destinations`
 method.
@@ -810,6 +1047,9 @@ method.
 Boto3 documentation:
 [GuardDuty.Client.list_publishing_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_publishing_destinations)
 
+Arguments mapping described in
+[ListPublishingDestinationsRequestTypeDef](./type_defs.md#listpublishingdestinationsrequesttypedef).
+
 Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
@@ -817,28 +1057,39 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListPublishingDestinationsResponseTypeDef](./type_defs.md#listpublishingdestinationsresponsetypedef).
+[ListPublishingDestinationsResponseResponseTypeDef](./type_defs.md#listpublishingdestinationsresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Lists tags for a resource.
 
 Type annotations for `boto3.client("guardduty").list_tags_for_resource` method.
 
 Boto3 documentation:
 [GuardDuty.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### list_threat_intel_sets
+
+Lists the ThreatIntelSets of the GuardDuty service specified by the detector
+ID.
 
 Type annotations for `boto3.client("guardduty").list_threat_intel_sets` method.
 
 Boto3 documentation:
 [GuardDuty.Client.list_threat_intel_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_threat_intel_sets)
+
+Arguments mapping described in
+[ListThreatIntelSetsRequestTypeDef](./type_defs.md#listthreatintelsetsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -847,9 +1098,11 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListThreatIntelSetsResponseTypeDef](./type_defs.md#listthreatintelsetsresponsetypedef).
+[ListThreatIntelSetsResponseResponseTypeDef](./type_defs.md#listthreatintelsetsresponseresponsetypedef).
 
 ### start_monitoring_members
+
+Turns on GuardDuty monitoring of the specified member accounts.
 
 Type annotations for `boto3.client("guardduty").start_monitoring_members`
 method.
@@ -857,15 +1110,20 @@ method.
 Boto3 documentation:
 [GuardDuty.Client.start_monitoring_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.start_monitoring_members)
 
+Arguments mapping described in
+[StartMonitoringMembersRequestTypeDef](./type_defs.md#startmonitoringmembersrequesttypedef).
+
 Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `AccountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[StartMonitoringMembersResponseTypeDef](./type_defs.md#startmonitoringmembersresponsetypedef).
+[StartMonitoringMembersResponseResponseTypeDef](./type_defs.md#startmonitoringmembersresponseresponsetypedef).
 
 ### stop_monitoring_members
+
+Stops GuardDuty monitoring for the specified member accounts.
 
 Type annotations for `boto3.client("guardduty").stop_monitoring_members`
 method.
@@ -873,20 +1131,28 @@ method.
 Boto3 documentation:
 [GuardDuty.Client.stop_monitoring_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.stop_monitoring_members)
 
+Arguments mapping described in
+[StopMonitoringMembersRequestTypeDef](./type_defs.md#stopmonitoringmembersrequesttypedef).
+
 Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `AccountIds`: `List`\[`str`\] *(required)*
 
 Returns
-[StopMonitoringMembersResponseTypeDef](./type_defs.md#stopmonitoringmembersresponsetypedef).
+[StopMonitoringMembersResponseResponseTypeDef](./type_defs.md#stopmonitoringmembersresponseresponsetypedef).
 
 ### tag_resource
+
+Adds tags to a resource.
 
 Type annotations for `boto3.client("guardduty").tag_resource` method.
 
 Boto3 documentation:
 [GuardDuty.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -897,10 +1163,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### unarchive_findings
 
+Unarchives GuardDuty findings specified by the `findingIds` .
+
 Type annotations for `boto3.client("guardduty").unarchive_findings` method.
 
 Boto3 documentation:
 [GuardDuty.Client.unarchive_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.unarchive_findings)
+
+Arguments mapping described in
+[UnarchiveFindingsRequestTypeDef](./type_defs.md#unarchivefindingsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -911,10 +1182,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Removes tags from a resource.
+
 Type annotations for `boto3.client("guardduty").untag_resource` method.
 
 Boto3 documentation:
 [GuardDuty.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -925,10 +1201,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_detector
 
+Updates the Amazon GuardDuty detector specified by the detectorId.
+
 Type annotations for `boto3.client("guardduty").update_detector` method.
 
 Boto3 documentation:
 [GuardDuty.Client.update_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_detector)
+
+Arguments mapping described in
+[UpdateDetectorRequestTypeDef](./type_defs.md#updatedetectorrequesttypedef).
 
 Keyword-only arguments:
 
@@ -943,10 +1224,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_filter
 
+Updates the filter specified by the filter name.
+
 Type annotations for `boto3.client("guardduty").update_filter` method.
 
 Boto3 documentation:
 [GuardDuty.Client.update_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_filter)
+
+Arguments mapping described in
+[UpdateFilterRequestTypeDef](./type_defs.md#updatefilterrequesttypedef).
 
 Keyword-only arguments:
 
@@ -959,15 +1245,20 @@ Keyword-only arguments:
   [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
 
 Returns
-[UpdateFilterResponseTypeDef](./type_defs.md#updatefilterresponsetypedef).
+[UpdateFilterResponseResponseTypeDef](./type_defs.md#updatefilterresponseresponsetypedef).
 
 ### update_findings_feedback
+
+Marks the specified GuardDuty findings as useful or not useful.
 
 Type annotations for `boto3.client("guardduty").update_findings_feedback`
 method.
 
 Boto3 documentation:
 [GuardDuty.Client.update_findings_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_findings_feedback)
+
+Arguments mapping described in
+[UpdateFindingsFeedbackRequestTypeDef](./type_defs.md#updatefindingsfeedbackrequesttypedef).
 
 Keyword-only arguments:
 
@@ -980,10 +1271,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_ip_set
 
+Updates the IPSet specified by the IPSet ID.
+
 Type annotations for `boto3.client("guardduty").update_ip_set` method.
 
 Boto3 documentation:
 [GuardDuty.Client.update_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_ip_set)
+
+Arguments mapping described in
+[UpdateIPSetRequestTypeDef](./type_defs.md#updateipsetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -997,11 +1293,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_member_detectors
 
+Contains information on member accounts to be updated.
+
 Type annotations for `boto3.client("guardduty").update_member_detectors`
 method.
 
 Boto3 documentation:
 [GuardDuty.Client.update_member_detectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_member_detectors)
+
+Arguments mapping described in
+[UpdateMemberDetectorsRequestTypeDef](./type_defs.md#updatememberdetectorsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1011,15 +1312,20 @@ Keyword-only arguments:
   [DataSourceConfigurationsTypeDef](./type_defs.md#datasourceconfigurationstypedef)
 
 Returns
-[UpdateMemberDetectorsResponseTypeDef](./type_defs.md#updatememberdetectorsresponsetypedef).
+[UpdateMemberDetectorsResponseResponseTypeDef](./type_defs.md#updatememberdetectorsresponseresponsetypedef).
 
 ### update_organization_configuration
+
+Updates the delegated administrator account with the values provided.
 
 Type annotations for
 `boto3.client("guardduty").update_organization_configuration` method.
 
 Boto3 documentation:
 [GuardDuty.Client.update_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_organization_configuration)
+
+Arguments mapping described in
+[UpdateOrganizationConfigurationRequestTypeDef](./type_defs.md#updateorganizationconfigurationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1032,11 +1338,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_publishing_destination
 
+Updates information about the publishing destination specified by the
+`destinationId` .
+
 Type annotations for `boto3.client("guardduty").update_publishing_destination`
 method.
 
 Boto3 documentation:
 [GuardDuty.Client.update_publishing_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_publishing_destination)
+
+Arguments mapping described in
+[UpdatePublishingDestinationRequestTypeDef](./type_defs.md#updatepublishingdestinationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1049,11 +1361,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_threat_intel_set
 
+Updates the ThreatIntelSet specified by the ThreatIntelSet ID.
+
 Type annotations for `boto3.client("guardduty").update_threat_intel_set`
 method.
 
 Boto3 documentation:
 [GuardDuty.Client.update_threat_intel_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_threat_intel_set)
+
+Arguments mapping described in
+[UpdateThreatIntelSetRequestTypeDef](./type_defs.md#updatethreatintelsetrequesttypedef).
 
 Keyword-only arguments:
 

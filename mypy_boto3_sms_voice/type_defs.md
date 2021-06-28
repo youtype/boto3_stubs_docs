@@ -10,15 +10,24 @@ type annotations stubs module
 - [Typed dictionaries for boto3 PinpointSMSVoice module](#typed-dictionaries-for-boto3-pinpointsmsvoice-module)
   - [CallInstructionsMessageTypeTypeDef](#callinstructionsmessagetypetypedef)
   - [CloudWatchLogsDestinationTypeDef](#cloudwatchlogsdestinationtypedef)
+  - [CreateConfigurationSetEventDestinationRequestTypeDef](#createconfigurationseteventdestinationrequesttypedef)
+  - [CreateConfigurationSetRequestTypeDef](#createconfigurationsetrequesttypedef)
+  - [DeleteConfigurationSetEventDestinationRequestTypeDef](#deleteconfigurationseteventdestinationrequesttypedef)
+  - [DeleteConfigurationSetRequestTypeDef](#deleteconfigurationsetrequesttypedef)
   - [EventDestinationDefinitionTypeDef](#eventdestinationdefinitiontypedef)
   - [EventDestinationTypeDef](#eventdestinationtypedef)
-  - [GetConfigurationSetEventDestinationsResponseTypeDef](#getconfigurationseteventdestinationsresponsetypedef)
+  - [GetConfigurationSetEventDestinationsRequestTypeDef](#getconfigurationseteventdestinationsrequesttypedef)
+  - [GetConfigurationSetEventDestinationsResponseResponseTypeDef](#getconfigurationseteventdestinationsresponseresponsetypedef)
   - [KinesisFirehoseDestinationTypeDef](#kinesisfirehosedestinationtypedef)
-  - [ListConfigurationSetsResponseTypeDef](#listconfigurationsetsresponsetypedef)
+  - [ListConfigurationSetsRequestTypeDef](#listconfigurationsetsrequesttypedef)
+  - [ListConfigurationSetsResponseResponseTypeDef](#listconfigurationsetsresponseresponsetypedef)
   - [PlainTextMessageTypeTypeDef](#plaintextmessagetypetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SSMLMessageTypeTypeDef](#ssmlmessagetypetypedef)
-  - [SendVoiceMessageResponseTypeDef](#sendvoicemessageresponsetypedef)
+  - [SendVoiceMessageRequestTypeDef](#sendvoicemessagerequesttypedef)
+  - [SendVoiceMessageResponseResponseTypeDef](#sendvoicemessageresponseresponsetypedef)
   - [SnsDestinationTypeDef](#snsdestinationtypedef)
+  - [UpdateConfigurationSetEventDestinationRequestTypeDef](#updateconfigurationseteventdestinationrequesttypedef)
   - [VoiceMessageContentTypeDef](#voicemessagecontenttypedef)
 
 ## CallInstructionsMessageTypeTypeDef
@@ -41,6 +50,53 @@ Optional fields:
 
 - `IamRoleArn`: `str`
 - `LogGroupArn`: `str`
+
+## CreateConfigurationSetEventDestinationRequestTypeDef
+
+```python
+from mypy_boto3_sms_voice.type_defs import CreateConfigurationSetEventDestinationRequestTypeDef
+```
+
+Required fields:
+
+- `ConfigurationSetName`: `str`
+
+Optional fields:
+
+- `EventDestination`:
+  [EventDestinationDefinitionTypeDef](./type_defs.md#eventdestinationdefinitiontypedef)
+- `EventDestinationName`: `str`
+
+## CreateConfigurationSetRequestTypeDef
+
+```python
+from mypy_boto3_sms_voice.type_defs import CreateConfigurationSetRequestTypeDef
+```
+
+Optional fields:
+
+- `ConfigurationSetName`: `str`
+
+## DeleteConfigurationSetEventDestinationRequestTypeDef
+
+```python
+from mypy_boto3_sms_voice.type_defs import DeleteConfigurationSetEventDestinationRequestTypeDef
+```
+
+Required fields:
+
+- `ConfigurationSetName`: `str`
+- `EventDestinationName`: `str`
+
+## DeleteConfigurationSetRequestTypeDef
+
+```python
+from mypy_boto3_sms_voice.type_defs import DeleteConfigurationSetRequestTypeDef
+```
+
+Required fields:
+
+- `ConfigurationSetName`: `str`
 
 ## EventDestinationDefinitionTypeDef
 
@@ -77,16 +133,28 @@ Optional fields:
 - `SnsDestination`:
   [SnsDestinationTypeDef](./type_defs.md#snsdestinationtypedef)
 
-## GetConfigurationSetEventDestinationsResponseTypeDef
+## GetConfigurationSetEventDestinationsRequestTypeDef
 
 ```python
-from mypy_boto3_sms_voice.type_defs import GetConfigurationSetEventDestinationsResponseTypeDef
+from mypy_boto3_sms_voice.type_defs import GetConfigurationSetEventDestinationsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ConfigurationSetName`: `str`
+
+## GetConfigurationSetEventDestinationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_sms_voice.type_defs import GetConfigurationSetEventDestinationsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `EventDestinations`:
   `List`\[[EventDestinationTypeDef](./type_defs.md#eventdestinationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## KinesisFirehoseDestinationTypeDef
 
@@ -99,16 +167,29 @@ Optional fields:
 - `DeliveryStreamArn`: `str`
 - `IamRoleArn`: `str`
 
-## ListConfigurationSetsResponseTypeDef
+## ListConfigurationSetsRequestTypeDef
 
 ```python
-from mypy_boto3_sms_voice.type_defs import ListConfigurationSetsResponseTypeDef
+from mypy_boto3_sms_voice.type_defs import ListConfigurationSetsRequestTypeDef
 ```
 
 Optional fields:
 
+- `NextToken`: `str`
+- `PageSize`: `str`
+
+## ListConfigurationSetsResponseResponseTypeDef
+
+```python
+from mypy_boto3_sms_voice.type_defs import ListConfigurationSetsResponseResponseTypeDef
+```
+
+Required fields:
+
 - `ConfigurationSets`: `List`\[`str`\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PlainTextMessageTypeTypeDef
 
@@ -122,6 +203,20 @@ Optional fields:
 - `Text`: `str`
 - `VoiceId`: `str`
 
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_sms_voice.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
 ## SSMLMessageTypeTypeDef
 
 ```python
@@ -134,15 +229,32 @@ Optional fields:
 - `Text`: `str`
 - `VoiceId`: `str`
 
-## SendVoiceMessageResponseTypeDef
+## SendVoiceMessageRequestTypeDef
 
 ```python
-from mypy_boto3_sms_voice.type_defs import SendVoiceMessageResponseTypeDef
+from mypy_boto3_sms_voice.type_defs import SendVoiceMessageRequestTypeDef
 ```
 
 Optional fields:
 
+- `CallerId`: `str`
+- `ConfigurationSetName`: `str`
+- `Content`:
+  [VoiceMessageContentTypeDef](./type_defs.md#voicemessagecontenttypedef)
+- `DestinationPhoneNumber`: `str`
+- `OriginationPhoneNumber`: `str`
+
+## SendVoiceMessageResponseResponseTypeDef
+
+```python
+from mypy_boto3_sms_voice.type_defs import SendVoiceMessageResponseResponseTypeDef
+```
+
+Required fields:
+
 - `MessageId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## SnsDestinationTypeDef
 
@@ -153,6 +265,22 @@ from mypy_boto3_sms_voice.type_defs import SnsDestinationTypeDef
 Optional fields:
 
 - `TopicArn`: `str`
+
+## UpdateConfigurationSetEventDestinationRequestTypeDef
+
+```python
+from mypy_boto3_sms_voice.type_defs import UpdateConfigurationSetEventDestinationRequestTypeDef
+```
+
+Required fields:
+
+- `ConfigurationSetName`: `str`
+- `EventDestinationName`: `str`
+
+Optional fields:
+
+- `EventDestination`:
+  [EventDestinationDefinitionTypeDef](./type_defs.md#eventdestinationdefinitiontypedef)
 
 ## VoiceMessageContentTypeDef
 

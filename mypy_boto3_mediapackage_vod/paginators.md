@@ -36,7 +36,7 @@ Arguments for `ListAssetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssetsPaginator.paginate` returns
-`Iterator`\[[ListAssetsResponseTypeDef](./type_defs.md#listassetsresponsetypedef)\].
+`Iterator`\[[ListAssetsResponseResponseTypeDef](./type_defs.md#listassetsresponseresponsetypedef)\].
 
 ## ListPackagingConfigurationsPaginator
 
@@ -62,7 +62,7 @@ Arguments for `ListPackagingConfigurationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPackagingConfigurationsPaginator.paginate` returns
-`Iterator`\[[ListPackagingConfigurationsResponseTypeDef](./type_defs.md#listpackagingconfigurationsresponsetypedef)\].
+`Iterator`\[[ListPackagingConfigurationsResponseResponseTypeDef](./type_defs.md#listpackagingconfigurationsresponseresponsetypedef)\].
 
 ## ListPackagingGroupsPaginator
 
@@ -87,4 +87,4 @@ Arguments for `ListPackagingGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPackagingGroupsPaginator.paginate` returns
-`Iterator`\[[ListPackagingGroupsResponseTypeDef](./type_defs.md#listpackaginggroupsresponsetypedef)\].
+`Iterator`\[[ListPackagingGroupsResponseResponseTypeDef](./type_defs.md#listpackaginggroupsresponseresponsetypedef)\].

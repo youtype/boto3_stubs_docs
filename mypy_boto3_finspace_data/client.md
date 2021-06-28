@@ -58,6 +58,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("finspace-data").can_paginate` method.
 
 Boto3 documentation:
@@ -71,10 +73,15 @@ Returns `bool`.
 
 ### create_changeset
 
+Creates a new changeset in a FinSpace dataset.
+
 Type annotations for `boto3.client("finspace-data").create_changeset` method.
 
 Boto3 documentation:
 [FinSpaceData.Client.create_changeset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.create_changeset)
+
+Arguments mapping described in
+[CreateChangesetRequestTypeDef](./type_defs.md#createchangesetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -88,9 +95,11 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateChangesetResponseTypeDef](./type_defs.md#createchangesetresponsetypedef).
+[CreateChangesetResponseResponseTypeDef](./type_defs.md#createchangesetresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("finspace-data").generate_presigned_url`
 method.
@@ -109,11 +118,16 @@ Returns `str`.
 
 ### get_programmatic_access_credentials
 
+Request programmatic credentials to use with Habanero SDK.
+
 Type annotations for
 `boto3.client("finspace-data").get_programmatic_access_credentials` method.
 
 Boto3 documentation:
 [FinSpaceData.Client.get_programmatic_access_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.get_programmatic_access_credentials)
+
+Arguments mapping described in
+[GetProgrammaticAccessCredentialsRequestTypeDef](./type_defs.md#getprogrammaticaccesscredentialsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -121,9 +135,12 @@ Keyword-only arguments:
 - `durationInMinutes`: `int`
 
 Returns
-[GetProgrammaticAccessCredentialsResponseTypeDef](./type_defs.md#getprogrammaticaccesscredentialsresponsetypedef).
+[GetProgrammaticAccessCredentialsResponseResponseTypeDef](./type_defs.md#getprogrammaticaccesscredentialsresponseresponsetypedef).
 
 ### get_working_location
+
+A temporary Amazon S3 location to copy your files from a source location to
+stage or use as a scratch space in Habanero notebook.
 
 Type annotations for `boto3.client("finspace-data").get_working_location`
 method.
@@ -131,9 +148,12 @@ method.
 Boto3 documentation:
 [FinSpaceData.Client.get_working_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.get_working_location)
 
+Arguments mapping described in
+[GetWorkingLocationRequestTypeDef](./type_defs.md#getworkinglocationrequesttypedef).
+
 Keyword-only arguments:
 
 - `locationType`: [locationTypeType](./literals.md#locationtypetype)
 
 Returns
-[GetWorkingLocationResponseTypeDef](./type_defs.md#getworkinglocationresponsetypedef).
+[GetWorkingLocationResponseResponseTypeDef](./type_defs.md#getworkinglocationresponseresponsetypedef).

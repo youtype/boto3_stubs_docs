@@ -10,7 +10,9 @@ type annotations stubs module
 - [Typed dictionaries for boto3 SSM module](#typed-dictionaries-for-boto3-ssm-module)
   - [AccountSharingInfoTypeDef](#accountsharinginfotypedef)
   - [ActivationTypeDef](#activationtypedef)
-  - [AssociateOpsItemRelatedItemResponseTypeDef](#associateopsitemrelateditemresponsetypedef)
+  - [AddTagsToResourceRequestTypeDef](#addtagstoresourcerequesttypedef)
+  - [AssociateOpsItemRelatedItemRequestTypeDef](#associateopsitemrelateditemrequesttypedef)
+  - [AssociateOpsItemRelatedItemResponseResponseTypeDef](#associateopsitemrelateditemresponseresponsetypedef)
   - [AssociationDescriptionTypeDef](#associationdescriptiontypedef)
   - [AssociationExecutionFilterTypeDef](#associationexecutionfiltertypedef)
   - [AssociationExecutionTargetTypeDef](#associationexecutiontargettypedef)
@@ -28,7 +30,9 @@ type annotations stubs module
   - [AutomationExecutionMetadataTypeDef](#automationexecutionmetadatatypedef)
   - [AutomationExecutionTypeDef](#automationexecutiontypedef)
   - [BaselineOverrideTypeDef](#baselineoverridetypedef)
-  - [CancelMaintenanceWindowExecutionResultTypeDef](#cancelmaintenancewindowexecutionresulttypedef)
+  - [CancelCommandRequestTypeDef](#cancelcommandrequesttypedef)
+  - [CancelMaintenanceWindowExecutionRequestTypeDef](#cancelmaintenancewindowexecutionrequesttypedef)
+  - [CancelMaintenanceWindowExecutionResultResponseTypeDef](#cancelmaintenancewindowexecutionresultresponsetypedef)
   - [CloudWatchOutputConfigTypeDef](#cloudwatchoutputconfigtypedef)
   - [CommandFilterTypeDef](#commandfiltertypedef)
   - [CommandInvocationTypeDef](#commandinvocationtypedef)
@@ -40,55 +44,111 @@ type annotations stubs module
   - [ComplianceStringFilterTypeDef](#compliancestringfiltertypedef)
   - [ComplianceSummaryItemTypeDef](#compliancesummaryitemtypedef)
   - [CompliantSummaryTypeDef](#compliantsummarytypedef)
-  - [CreateActivationResultTypeDef](#createactivationresulttypedef)
+  - [CreateActivationRequestTypeDef](#createactivationrequesttypedef)
+  - [CreateActivationResultResponseTypeDef](#createactivationresultresponsetypedef)
   - [CreateAssociationBatchRequestEntryTypeDef](#createassociationbatchrequestentrytypedef)
-  - [CreateAssociationBatchResultTypeDef](#createassociationbatchresulttypedef)
-  - [CreateAssociationResultTypeDef](#createassociationresulttypedef)
-  - [CreateDocumentResultTypeDef](#createdocumentresulttypedef)
-  - [CreateMaintenanceWindowResultTypeDef](#createmaintenancewindowresulttypedef)
-  - [CreateOpsItemResponseTypeDef](#createopsitemresponsetypedef)
-  - [CreateOpsMetadataResultTypeDef](#createopsmetadataresulttypedef)
-  - [CreatePatchBaselineResultTypeDef](#createpatchbaselineresulttypedef)
-  - [DeleteInventoryResultTypeDef](#deleteinventoryresulttypedef)
-  - [DeleteMaintenanceWindowResultTypeDef](#deletemaintenancewindowresulttypedef)
-  - [DeleteParametersResultTypeDef](#deleteparametersresulttypedef)
-  - [DeletePatchBaselineResultTypeDef](#deletepatchbaselineresulttypedef)
-  - [DeregisterPatchBaselineForPatchGroupResultTypeDef](#deregisterpatchbaselineforpatchgroupresulttypedef)
-  - [DeregisterTargetFromMaintenanceWindowResultTypeDef](#deregistertargetfrommaintenancewindowresulttypedef)
-  - [DeregisterTaskFromMaintenanceWindowResultTypeDef](#deregistertaskfrommaintenancewindowresulttypedef)
+  - [CreateAssociationBatchRequestTypeDef](#createassociationbatchrequesttypedef)
+  - [CreateAssociationBatchResultResponseTypeDef](#createassociationbatchresultresponsetypedef)
+  - [CreateAssociationRequestTypeDef](#createassociationrequesttypedef)
+  - [CreateAssociationResultResponseTypeDef](#createassociationresultresponsetypedef)
+  - [CreateDocumentRequestTypeDef](#createdocumentrequesttypedef)
+  - [CreateDocumentResultResponseTypeDef](#createdocumentresultresponsetypedef)
+  - [CreateMaintenanceWindowRequestTypeDef](#createmaintenancewindowrequesttypedef)
+  - [CreateMaintenanceWindowResultResponseTypeDef](#createmaintenancewindowresultresponsetypedef)
+  - [CreateOpsItemRequestTypeDef](#createopsitemrequesttypedef)
+  - [CreateOpsItemResponseResponseTypeDef](#createopsitemresponseresponsetypedef)
+  - [CreateOpsMetadataRequestTypeDef](#createopsmetadatarequesttypedef)
+  - [CreateOpsMetadataResultResponseTypeDef](#createopsmetadataresultresponsetypedef)
+  - [CreatePatchBaselineRequestTypeDef](#createpatchbaselinerequesttypedef)
+  - [CreatePatchBaselineResultResponseTypeDef](#createpatchbaselineresultresponsetypedef)
+  - [CreateResourceDataSyncRequestTypeDef](#createresourcedatasyncrequesttypedef)
+  - [DeleteActivationRequestTypeDef](#deleteactivationrequesttypedef)
+  - [DeleteAssociationRequestTypeDef](#deleteassociationrequesttypedef)
+  - [DeleteDocumentRequestTypeDef](#deletedocumentrequesttypedef)
+  - [DeleteInventoryRequestTypeDef](#deleteinventoryrequesttypedef)
+  - [DeleteInventoryResultResponseTypeDef](#deleteinventoryresultresponsetypedef)
+  - [DeleteMaintenanceWindowRequestTypeDef](#deletemaintenancewindowrequesttypedef)
+  - [DeleteMaintenanceWindowResultResponseTypeDef](#deletemaintenancewindowresultresponsetypedef)
+  - [DeleteOpsMetadataRequestTypeDef](#deleteopsmetadatarequesttypedef)
+  - [DeleteParameterRequestTypeDef](#deleteparameterrequesttypedef)
+  - [DeleteParametersRequestTypeDef](#deleteparametersrequesttypedef)
+  - [DeleteParametersResultResponseTypeDef](#deleteparametersresultresponsetypedef)
+  - [DeletePatchBaselineRequestTypeDef](#deletepatchbaselinerequesttypedef)
+  - [DeletePatchBaselineResultResponseTypeDef](#deletepatchbaselineresultresponsetypedef)
+  - [DeleteResourceDataSyncRequestTypeDef](#deleteresourcedatasyncrequesttypedef)
+  - [DeregisterManagedInstanceRequestTypeDef](#deregistermanagedinstancerequesttypedef)
+  - [DeregisterPatchBaselineForPatchGroupRequestTypeDef](#deregisterpatchbaselineforpatchgrouprequesttypedef)
+  - [DeregisterPatchBaselineForPatchGroupResultResponseTypeDef](#deregisterpatchbaselineforpatchgroupresultresponsetypedef)
+  - [DeregisterTargetFromMaintenanceWindowRequestTypeDef](#deregistertargetfrommaintenancewindowrequesttypedef)
+  - [DeregisterTargetFromMaintenanceWindowResultResponseTypeDef](#deregistertargetfrommaintenancewindowresultresponsetypedef)
+  - [DeregisterTaskFromMaintenanceWindowRequestTypeDef](#deregistertaskfrommaintenancewindowrequesttypedef)
+  - [DeregisterTaskFromMaintenanceWindowResultResponseTypeDef](#deregistertaskfrommaintenancewindowresultresponsetypedef)
   - [DescribeActivationsFilterTypeDef](#describeactivationsfiltertypedef)
-  - [DescribeActivationsResultTypeDef](#describeactivationsresulttypedef)
-  - [DescribeAssociationExecutionTargetsResultTypeDef](#describeassociationexecutiontargetsresulttypedef)
-  - [DescribeAssociationExecutionsResultTypeDef](#describeassociationexecutionsresulttypedef)
-  - [DescribeAssociationResultTypeDef](#describeassociationresulttypedef)
-  - [DescribeAutomationExecutionsResultTypeDef](#describeautomationexecutionsresulttypedef)
-  - [DescribeAutomationStepExecutionsResultTypeDef](#describeautomationstepexecutionsresulttypedef)
-  - [DescribeAvailablePatchesResultTypeDef](#describeavailablepatchesresulttypedef)
-  - [DescribeDocumentPermissionResponseTypeDef](#describedocumentpermissionresponsetypedef)
-  - [DescribeDocumentResultTypeDef](#describedocumentresulttypedef)
-  - [DescribeEffectiveInstanceAssociationsResultTypeDef](#describeeffectiveinstanceassociationsresulttypedef)
-  - [DescribeEffectivePatchesForPatchBaselineResultTypeDef](#describeeffectivepatchesforpatchbaselineresulttypedef)
-  - [DescribeInstanceAssociationsStatusResultTypeDef](#describeinstanceassociationsstatusresulttypedef)
-  - [DescribeInstanceInformationResultTypeDef](#describeinstanceinformationresulttypedef)
-  - [DescribeInstancePatchStatesForPatchGroupResultTypeDef](#describeinstancepatchstatesforpatchgroupresulttypedef)
-  - [DescribeInstancePatchStatesResultTypeDef](#describeinstancepatchstatesresulttypedef)
-  - [DescribeInstancePatchesResultTypeDef](#describeinstancepatchesresulttypedef)
-  - [DescribeInventoryDeletionsResultTypeDef](#describeinventorydeletionsresulttypedef)
-  - [DescribeMaintenanceWindowExecutionTaskInvocationsResultTypeDef](#describemaintenancewindowexecutiontaskinvocationsresulttypedef)
-  - [DescribeMaintenanceWindowExecutionTasksResultTypeDef](#describemaintenancewindowexecutiontasksresulttypedef)
-  - [DescribeMaintenanceWindowExecutionsResultTypeDef](#describemaintenancewindowexecutionsresulttypedef)
-  - [DescribeMaintenanceWindowScheduleResultTypeDef](#describemaintenancewindowscheduleresulttypedef)
-  - [DescribeMaintenanceWindowTargetsResultTypeDef](#describemaintenancewindowtargetsresulttypedef)
-  - [DescribeMaintenanceWindowTasksResultTypeDef](#describemaintenancewindowtasksresulttypedef)
-  - [DescribeMaintenanceWindowsForTargetResultTypeDef](#describemaintenancewindowsfortargetresulttypedef)
-  - [DescribeMaintenanceWindowsResultTypeDef](#describemaintenancewindowsresulttypedef)
-  - [DescribeOpsItemsResponseTypeDef](#describeopsitemsresponsetypedef)
-  - [DescribeParametersResultTypeDef](#describeparametersresulttypedef)
-  - [DescribePatchBaselinesResultTypeDef](#describepatchbaselinesresulttypedef)
-  - [DescribePatchGroupStateResultTypeDef](#describepatchgroupstateresulttypedef)
-  - [DescribePatchGroupsResultTypeDef](#describepatchgroupsresulttypedef)
-  - [DescribePatchPropertiesResultTypeDef](#describepatchpropertiesresulttypedef)
-  - [DescribeSessionsResponseTypeDef](#describesessionsresponsetypedef)
+  - [DescribeActivationsRequestTypeDef](#describeactivationsrequesttypedef)
+  - [DescribeActivationsResultResponseTypeDef](#describeactivationsresultresponsetypedef)
+  - [DescribeAssociationExecutionTargetsRequestTypeDef](#describeassociationexecutiontargetsrequesttypedef)
+  - [DescribeAssociationExecutionTargetsResultResponseTypeDef](#describeassociationexecutiontargetsresultresponsetypedef)
+  - [DescribeAssociationExecutionsRequestTypeDef](#describeassociationexecutionsrequesttypedef)
+  - [DescribeAssociationExecutionsResultResponseTypeDef](#describeassociationexecutionsresultresponsetypedef)
+  - [DescribeAssociationRequestTypeDef](#describeassociationrequesttypedef)
+  - [DescribeAssociationResultResponseTypeDef](#describeassociationresultresponsetypedef)
+  - [DescribeAutomationExecutionsRequestTypeDef](#describeautomationexecutionsrequesttypedef)
+  - [DescribeAutomationExecutionsResultResponseTypeDef](#describeautomationexecutionsresultresponsetypedef)
+  - [DescribeAutomationStepExecutionsRequestTypeDef](#describeautomationstepexecutionsrequesttypedef)
+  - [DescribeAutomationStepExecutionsResultResponseTypeDef](#describeautomationstepexecutionsresultresponsetypedef)
+  - [DescribeAvailablePatchesRequestTypeDef](#describeavailablepatchesrequesttypedef)
+  - [DescribeAvailablePatchesResultResponseTypeDef](#describeavailablepatchesresultresponsetypedef)
+  - [DescribeDocumentPermissionRequestTypeDef](#describedocumentpermissionrequesttypedef)
+  - [DescribeDocumentPermissionResponseResponseTypeDef](#describedocumentpermissionresponseresponsetypedef)
+  - [DescribeDocumentRequestTypeDef](#describedocumentrequesttypedef)
+  - [DescribeDocumentResultResponseTypeDef](#describedocumentresultresponsetypedef)
+  - [DescribeEffectiveInstanceAssociationsRequestTypeDef](#describeeffectiveinstanceassociationsrequesttypedef)
+  - [DescribeEffectiveInstanceAssociationsResultResponseTypeDef](#describeeffectiveinstanceassociationsresultresponsetypedef)
+  - [DescribeEffectivePatchesForPatchBaselineRequestTypeDef](#describeeffectivepatchesforpatchbaselinerequesttypedef)
+  - [DescribeEffectivePatchesForPatchBaselineResultResponseTypeDef](#describeeffectivepatchesforpatchbaselineresultresponsetypedef)
+  - [DescribeInstanceAssociationsStatusRequestTypeDef](#describeinstanceassociationsstatusrequesttypedef)
+  - [DescribeInstanceAssociationsStatusResultResponseTypeDef](#describeinstanceassociationsstatusresultresponsetypedef)
+  - [DescribeInstanceInformationRequestTypeDef](#describeinstanceinformationrequesttypedef)
+  - [DescribeInstanceInformationResultResponseTypeDef](#describeinstanceinformationresultresponsetypedef)
+  - [DescribeInstancePatchStatesForPatchGroupRequestTypeDef](#describeinstancepatchstatesforpatchgrouprequesttypedef)
+  - [DescribeInstancePatchStatesForPatchGroupResultResponseTypeDef](#describeinstancepatchstatesforpatchgroupresultresponsetypedef)
+  - [DescribeInstancePatchStatesRequestTypeDef](#describeinstancepatchstatesrequesttypedef)
+  - [DescribeInstancePatchStatesResultResponseTypeDef](#describeinstancepatchstatesresultresponsetypedef)
+  - [DescribeInstancePatchesRequestTypeDef](#describeinstancepatchesrequesttypedef)
+  - [DescribeInstancePatchesResultResponseTypeDef](#describeinstancepatchesresultresponsetypedef)
+  - [DescribeInventoryDeletionsRequestTypeDef](#describeinventorydeletionsrequesttypedef)
+  - [DescribeInventoryDeletionsResultResponseTypeDef](#describeinventorydeletionsresultresponsetypedef)
+  - [DescribeMaintenanceWindowExecutionTaskInvocationsRequestTypeDef](#describemaintenancewindowexecutiontaskinvocationsrequesttypedef)
+  - [DescribeMaintenanceWindowExecutionTaskInvocationsResultResponseTypeDef](#describemaintenancewindowexecutiontaskinvocationsresultresponsetypedef)
+  - [DescribeMaintenanceWindowExecutionTasksRequestTypeDef](#describemaintenancewindowexecutiontasksrequesttypedef)
+  - [DescribeMaintenanceWindowExecutionTasksResultResponseTypeDef](#describemaintenancewindowexecutiontasksresultresponsetypedef)
+  - [DescribeMaintenanceWindowExecutionsRequestTypeDef](#describemaintenancewindowexecutionsrequesttypedef)
+  - [DescribeMaintenanceWindowExecutionsResultResponseTypeDef](#describemaintenancewindowexecutionsresultresponsetypedef)
+  - [DescribeMaintenanceWindowScheduleRequestTypeDef](#describemaintenancewindowschedulerequesttypedef)
+  - [DescribeMaintenanceWindowScheduleResultResponseTypeDef](#describemaintenancewindowscheduleresultresponsetypedef)
+  - [DescribeMaintenanceWindowTargetsRequestTypeDef](#describemaintenancewindowtargetsrequesttypedef)
+  - [DescribeMaintenanceWindowTargetsResultResponseTypeDef](#describemaintenancewindowtargetsresultresponsetypedef)
+  - [DescribeMaintenanceWindowTasksRequestTypeDef](#describemaintenancewindowtasksrequesttypedef)
+  - [DescribeMaintenanceWindowTasksResultResponseTypeDef](#describemaintenancewindowtasksresultresponsetypedef)
+  - [DescribeMaintenanceWindowsForTargetRequestTypeDef](#describemaintenancewindowsfortargetrequesttypedef)
+  - [DescribeMaintenanceWindowsForTargetResultResponseTypeDef](#describemaintenancewindowsfortargetresultresponsetypedef)
+  - [DescribeMaintenanceWindowsRequestTypeDef](#describemaintenancewindowsrequesttypedef)
+  - [DescribeMaintenanceWindowsResultResponseTypeDef](#describemaintenancewindowsresultresponsetypedef)
+  - [DescribeOpsItemsRequestTypeDef](#describeopsitemsrequesttypedef)
+  - [DescribeOpsItemsResponseResponseTypeDef](#describeopsitemsresponseresponsetypedef)
+  - [DescribeParametersRequestTypeDef](#describeparametersrequesttypedef)
+  - [DescribeParametersResultResponseTypeDef](#describeparametersresultresponsetypedef)
+  - [DescribePatchBaselinesRequestTypeDef](#describepatchbaselinesrequesttypedef)
+  - [DescribePatchBaselinesResultResponseTypeDef](#describepatchbaselinesresultresponsetypedef)
+  - [DescribePatchGroupStateRequestTypeDef](#describepatchgroupstaterequesttypedef)
+  - [DescribePatchGroupStateResultResponseTypeDef](#describepatchgroupstateresultresponsetypedef)
+  - [DescribePatchGroupsRequestTypeDef](#describepatchgroupsrequesttypedef)
+  - [DescribePatchGroupsResultResponseTypeDef](#describepatchgroupsresultresponsetypedef)
+  - [DescribePatchPropertiesRequestTypeDef](#describepatchpropertiesrequesttypedef)
+  - [DescribePatchPropertiesResultResponseTypeDef](#describepatchpropertiesresultresponsetypedef)
+  - [DescribeSessionsRequestTypeDef](#describesessionsrequesttypedef)
+  - [DescribeSessionsResponseResponseTypeDef](#describesessionsresponseresponsetypedef)
+  - [DisassociateOpsItemRelatedItemRequestTypeDef](#disassociateopsitemrelateditemrequesttypedef)
   - [DocumentDefaultVersionDescriptionTypeDef](#documentdefaultversiondescriptiontypedef)
   - [DocumentDescriptionTypeDef](#documentdescriptiontypedef)
   - [DocumentFilterTypeDef](#documentfiltertypedef)
@@ -104,30 +164,54 @@ type annotations stubs module
   - [EffectivePatchTypeDef](#effectivepatchtypedef)
   - [FailedCreateAssociationTypeDef](#failedcreateassociationtypedef)
   - [FailureDetailsTypeDef](#failuredetailstypedef)
-  - [GetAutomationExecutionResultTypeDef](#getautomationexecutionresulttypedef)
-  - [GetCalendarStateResponseTypeDef](#getcalendarstateresponsetypedef)
-  - [GetCommandInvocationResultTypeDef](#getcommandinvocationresulttypedef)
-  - [GetConnectionStatusResponseTypeDef](#getconnectionstatusresponsetypedef)
-  - [GetDefaultPatchBaselineResultTypeDef](#getdefaultpatchbaselineresulttypedef)
-  - [GetDeployablePatchSnapshotForInstanceResultTypeDef](#getdeployablepatchsnapshotforinstanceresulttypedef)
-  - [GetDocumentResultTypeDef](#getdocumentresulttypedef)
-  - [GetInventoryResultTypeDef](#getinventoryresulttypedef)
-  - [GetInventorySchemaResultTypeDef](#getinventoryschemaresulttypedef)
-  - [GetMaintenanceWindowExecutionResultTypeDef](#getmaintenancewindowexecutionresulttypedef)
-  - [GetMaintenanceWindowExecutionTaskInvocationResultTypeDef](#getmaintenancewindowexecutiontaskinvocationresulttypedef)
-  - [GetMaintenanceWindowExecutionTaskResultTypeDef](#getmaintenancewindowexecutiontaskresulttypedef)
-  - [GetMaintenanceWindowResultTypeDef](#getmaintenancewindowresulttypedef)
-  - [GetMaintenanceWindowTaskResultTypeDef](#getmaintenancewindowtaskresulttypedef)
-  - [GetOpsItemResponseTypeDef](#getopsitemresponsetypedef)
-  - [GetOpsMetadataResultTypeDef](#getopsmetadataresulttypedef)
-  - [GetOpsSummaryResultTypeDef](#getopssummaryresulttypedef)
-  - [GetParameterHistoryResultTypeDef](#getparameterhistoryresulttypedef)
-  - [GetParameterResultTypeDef](#getparameterresulttypedef)
-  - [GetParametersByPathResultTypeDef](#getparametersbypathresulttypedef)
-  - [GetParametersResultTypeDef](#getparametersresulttypedef)
-  - [GetPatchBaselineForPatchGroupResultTypeDef](#getpatchbaselineforpatchgroupresulttypedef)
-  - [GetPatchBaselineResultTypeDef](#getpatchbaselineresulttypedef)
-  - [GetServiceSettingResultTypeDef](#getservicesettingresulttypedef)
+  - [GetAutomationExecutionRequestTypeDef](#getautomationexecutionrequesttypedef)
+  - [GetAutomationExecutionResultResponseTypeDef](#getautomationexecutionresultresponsetypedef)
+  - [GetCalendarStateRequestTypeDef](#getcalendarstaterequesttypedef)
+  - [GetCalendarStateResponseResponseTypeDef](#getcalendarstateresponseresponsetypedef)
+  - [GetCommandInvocationRequestTypeDef](#getcommandinvocationrequesttypedef)
+  - [GetCommandInvocationResultResponseTypeDef](#getcommandinvocationresultresponsetypedef)
+  - [GetConnectionStatusRequestTypeDef](#getconnectionstatusrequesttypedef)
+  - [GetConnectionStatusResponseResponseTypeDef](#getconnectionstatusresponseresponsetypedef)
+  - [GetDefaultPatchBaselineRequestTypeDef](#getdefaultpatchbaselinerequesttypedef)
+  - [GetDefaultPatchBaselineResultResponseTypeDef](#getdefaultpatchbaselineresultresponsetypedef)
+  - [GetDeployablePatchSnapshotForInstanceRequestTypeDef](#getdeployablepatchsnapshotforinstancerequesttypedef)
+  - [GetDeployablePatchSnapshotForInstanceResultResponseTypeDef](#getdeployablepatchsnapshotforinstanceresultresponsetypedef)
+  - [GetDocumentRequestTypeDef](#getdocumentrequesttypedef)
+  - [GetDocumentResultResponseTypeDef](#getdocumentresultresponsetypedef)
+  - [GetInventoryRequestTypeDef](#getinventoryrequesttypedef)
+  - [GetInventoryResultResponseTypeDef](#getinventoryresultresponsetypedef)
+  - [GetInventorySchemaRequestTypeDef](#getinventoryschemarequesttypedef)
+  - [GetInventorySchemaResultResponseTypeDef](#getinventoryschemaresultresponsetypedef)
+  - [GetMaintenanceWindowExecutionRequestTypeDef](#getmaintenancewindowexecutionrequesttypedef)
+  - [GetMaintenanceWindowExecutionResultResponseTypeDef](#getmaintenancewindowexecutionresultresponsetypedef)
+  - [GetMaintenanceWindowExecutionTaskInvocationRequestTypeDef](#getmaintenancewindowexecutiontaskinvocationrequesttypedef)
+  - [GetMaintenanceWindowExecutionTaskInvocationResultResponseTypeDef](#getmaintenancewindowexecutiontaskinvocationresultresponsetypedef)
+  - [GetMaintenanceWindowExecutionTaskRequestTypeDef](#getmaintenancewindowexecutiontaskrequesttypedef)
+  - [GetMaintenanceWindowExecutionTaskResultResponseTypeDef](#getmaintenancewindowexecutiontaskresultresponsetypedef)
+  - [GetMaintenanceWindowRequestTypeDef](#getmaintenancewindowrequesttypedef)
+  - [GetMaintenanceWindowResultResponseTypeDef](#getmaintenancewindowresultresponsetypedef)
+  - [GetMaintenanceWindowTaskRequestTypeDef](#getmaintenancewindowtaskrequesttypedef)
+  - [GetMaintenanceWindowTaskResultResponseTypeDef](#getmaintenancewindowtaskresultresponsetypedef)
+  - [GetOpsItemRequestTypeDef](#getopsitemrequesttypedef)
+  - [GetOpsItemResponseResponseTypeDef](#getopsitemresponseresponsetypedef)
+  - [GetOpsMetadataRequestTypeDef](#getopsmetadatarequesttypedef)
+  - [GetOpsMetadataResultResponseTypeDef](#getopsmetadataresultresponsetypedef)
+  - [GetOpsSummaryRequestTypeDef](#getopssummaryrequesttypedef)
+  - [GetOpsSummaryResultResponseTypeDef](#getopssummaryresultresponsetypedef)
+  - [GetParameterHistoryRequestTypeDef](#getparameterhistoryrequesttypedef)
+  - [GetParameterHistoryResultResponseTypeDef](#getparameterhistoryresultresponsetypedef)
+  - [GetParameterRequestTypeDef](#getparameterrequesttypedef)
+  - [GetParameterResultResponseTypeDef](#getparameterresultresponsetypedef)
+  - [GetParametersByPathRequestTypeDef](#getparametersbypathrequesttypedef)
+  - [GetParametersByPathResultResponseTypeDef](#getparametersbypathresultresponsetypedef)
+  - [GetParametersRequestTypeDef](#getparametersrequesttypedef)
+  - [GetParametersResultResponseTypeDef](#getparametersresultresponsetypedef)
+  - [GetPatchBaselineForPatchGroupRequestTypeDef](#getpatchbaselineforpatchgrouprequesttypedef)
+  - [GetPatchBaselineForPatchGroupResultResponseTypeDef](#getpatchbaselineforpatchgroupresultresponsetypedef)
+  - [GetPatchBaselineRequestTypeDef](#getpatchbaselinerequesttypedef)
+  - [GetPatchBaselineResultResponseTypeDef](#getpatchbaselineresultresponsetypedef)
+  - [GetServiceSettingRequestTypeDef](#getservicesettingrequesttypedef)
+  - [GetServiceSettingResultResponseTypeDef](#getservicesettingresultresponsetypedef)
   - [InstanceAggregatedAssociationOverviewTypeDef](#instanceaggregatedassociationoverviewtypedef)
   - [InstanceAssociationOutputLocationTypeDef](#instanceassociationoutputlocationtypedef)
   - [InstanceAssociationOutputUrlTypeDef](#instanceassociationoutputurltypedef)
@@ -149,23 +233,40 @@ type annotations stubs module
   - [InventoryItemTypeDef](#inventoryitemtypedef)
   - [InventoryResultEntityTypeDef](#inventoryresultentitytypedef)
   - [InventoryResultItemTypeDef](#inventoryresultitemtypedef)
-  - [LabelParameterVersionResultTypeDef](#labelparameterversionresulttypedef)
-  - [ListAssociationVersionsResultTypeDef](#listassociationversionsresulttypedef)
-  - [ListAssociationsResultTypeDef](#listassociationsresulttypedef)
-  - [ListCommandInvocationsResultTypeDef](#listcommandinvocationsresulttypedef)
-  - [ListCommandsResultTypeDef](#listcommandsresulttypedef)
-  - [ListComplianceItemsResultTypeDef](#listcomplianceitemsresulttypedef)
-  - [ListComplianceSummariesResultTypeDef](#listcompliancesummariesresulttypedef)
-  - [ListDocumentMetadataHistoryResponseTypeDef](#listdocumentmetadatahistoryresponsetypedef)
-  - [ListDocumentVersionsResultTypeDef](#listdocumentversionsresulttypedef)
-  - [ListDocumentsResultTypeDef](#listdocumentsresulttypedef)
-  - [ListInventoryEntriesResultTypeDef](#listinventoryentriesresulttypedef)
-  - [ListOpsItemEventsResponseTypeDef](#listopsitemeventsresponsetypedef)
-  - [ListOpsItemRelatedItemsResponseTypeDef](#listopsitemrelateditemsresponsetypedef)
-  - [ListOpsMetadataResultTypeDef](#listopsmetadataresulttypedef)
-  - [ListResourceComplianceSummariesResultTypeDef](#listresourcecompliancesummariesresulttypedef)
-  - [ListResourceDataSyncResultTypeDef](#listresourcedatasyncresulttypedef)
-  - [ListTagsForResourceResultTypeDef](#listtagsforresourceresulttypedef)
+  - [LabelParameterVersionRequestTypeDef](#labelparameterversionrequesttypedef)
+  - [LabelParameterVersionResultResponseTypeDef](#labelparameterversionresultresponsetypedef)
+  - [ListAssociationVersionsRequestTypeDef](#listassociationversionsrequesttypedef)
+  - [ListAssociationVersionsResultResponseTypeDef](#listassociationversionsresultresponsetypedef)
+  - [ListAssociationsRequestTypeDef](#listassociationsrequesttypedef)
+  - [ListAssociationsResultResponseTypeDef](#listassociationsresultresponsetypedef)
+  - [ListCommandInvocationsRequestTypeDef](#listcommandinvocationsrequesttypedef)
+  - [ListCommandInvocationsResultResponseTypeDef](#listcommandinvocationsresultresponsetypedef)
+  - [ListCommandsRequestTypeDef](#listcommandsrequesttypedef)
+  - [ListCommandsResultResponseTypeDef](#listcommandsresultresponsetypedef)
+  - [ListComplianceItemsRequestTypeDef](#listcomplianceitemsrequesttypedef)
+  - [ListComplianceItemsResultResponseTypeDef](#listcomplianceitemsresultresponsetypedef)
+  - [ListComplianceSummariesRequestTypeDef](#listcompliancesummariesrequesttypedef)
+  - [ListComplianceSummariesResultResponseTypeDef](#listcompliancesummariesresultresponsetypedef)
+  - [ListDocumentMetadataHistoryRequestTypeDef](#listdocumentmetadatahistoryrequesttypedef)
+  - [ListDocumentMetadataHistoryResponseResponseTypeDef](#listdocumentmetadatahistoryresponseresponsetypedef)
+  - [ListDocumentVersionsRequestTypeDef](#listdocumentversionsrequesttypedef)
+  - [ListDocumentVersionsResultResponseTypeDef](#listdocumentversionsresultresponsetypedef)
+  - [ListDocumentsRequestTypeDef](#listdocumentsrequesttypedef)
+  - [ListDocumentsResultResponseTypeDef](#listdocumentsresultresponsetypedef)
+  - [ListInventoryEntriesRequestTypeDef](#listinventoryentriesrequesttypedef)
+  - [ListInventoryEntriesResultResponseTypeDef](#listinventoryentriesresultresponsetypedef)
+  - [ListOpsItemEventsRequestTypeDef](#listopsitemeventsrequesttypedef)
+  - [ListOpsItemEventsResponseResponseTypeDef](#listopsitemeventsresponseresponsetypedef)
+  - [ListOpsItemRelatedItemsRequestTypeDef](#listopsitemrelateditemsrequesttypedef)
+  - [ListOpsItemRelatedItemsResponseResponseTypeDef](#listopsitemrelateditemsresponseresponsetypedef)
+  - [ListOpsMetadataRequestTypeDef](#listopsmetadatarequesttypedef)
+  - [ListOpsMetadataResultResponseTypeDef](#listopsmetadataresultresponsetypedef)
+  - [ListResourceComplianceSummariesRequestTypeDef](#listresourcecompliancesummariesrequesttypedef)
+  - [ListResourceComplianceSummariesResultResponseTypeDef](#listresourcecompliancesummariesresultresponsetypedef)
+  - [ListResourceDataSyncRequestTypeDef](#listresourcedatasyncrequesttypedef)
+  - [ListResourceDataSyncResultResponseTypeDef](#listresourcedatasyncresultresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResultResponseTypeDef](#listtagsforresourceresultresponsetypedef)
   - [LoggingInfoTypeDef](#logginginfotypedef)
   - [MaintenanceWindowAutomationParametersTypeDef](#maintenancewindowautomationparameterstypedef)
   - [MaintenanceWindowExecutionTaskIdentityTypeDef](#maintenancewindowexecutiontaskidentitytypedef)
@@ -182,6 +283,7 @@ type annotations stubs module
   - [MaintenanceWindowTaskParameterValueExpressionTypeDef](#maintenancewindowtaskparametervalueexpressiontypedef)
   - [MaintenanceWindowTaskTypeDef](#maintenancewindowtasktypedef)
   - [MetadataValueTypeDef](#metadatavaluetypedef)
+  - [ModifyDocumentPermissionRequestTypeDef](#modifydocumentpermissionrequesttypedef)
   - [NonCompliantSummaryTypeDef](#noncompliantsummarytypedef)
   - [NotificationConfigTypeDef](#notificationconfigtypedef)
   - [OpsAggregatorTypeDef](#opsaggregatortypedef)
@@ -221,14 +323,23 @@ type annotations stubs module
   - [PatchStatusTypeDef](#patchstatustypedef)
   - [PatchTypeDef](#patchtypedef)
   - [ProgressCountersTypeDef](#progresscounterstypedef)
-  - [PutInventoryResultTypeDef](#putinventoryresulttypedef)
-  - [PutParameterResultTypeDef](#putparameterresulttypedef)
-  - [RegisterDefaultPatchBaselineResultTypeDef](#registerdefaultpatchbaselineresulttypedef)
-  - [RegisterPatchBaselineForPatchGroupResultTypeDef](#registerpatchbaselineforpatchgroupresulttypedef)
-  - [RegisterTargetWithMaintenanceWindowResultTypeDef](#registertargetwithmaintenancewindowresulttypedef)
-  - [RegisterTaskWithMaintenanceWindowResultTypeDef](#registertaskwithmaintenancewindowresulttypedef)
+  - [PutComplianceItemsRequestTypeDef](#putcomplianceitemsrequesttypedef)
+  - [PutInventoryRequestTypeDef](#putinventoryrequesttypedef)
+  - [PutInventoryResultResponseTypeDef](#putinventoryresultresponsetypedef)
+  - [PutParameterRequestTypeDef](#putparameterrequesttypedef)
+  - [PutParameterResultResponseTypeDef](#putparameterresultresponsetypedef)
+  - [RegisterDefaultPatchBaselineRequestTypeDef](#registerdefaultpatchbaselinerequesttypedef)
+  - [RegisterDefaultPatchBaselineResultResponseTypeDef](#registerdefaultpatchbaselineresultresponsetypedef)
+  - [RegisterPatchBaselineForPatchGroupRequestTypeDef](#registerpatchbaselineforpatchgrouprequesttypedef)
+  - [RegisterPatchBaselineForPatchGroupResultResponseTypeDef](#registerpatchbaselineforpatchgroupresultresponsetypedef)
+  - [RegisterTargetWithMaintenanceWindowRequestTypeDef](#registertargetwithmaintenancewindowrequesttypedef)
+  - [RegisterTargetWithMaintenanceWindowResultResponseTypeDef](#registertargetwithmaintenancewindowresultresponsetypedef)
+  - [RegisterTaskWithMaintenanceWindowRequestTypeDef](#registertaskwithmaintenancewindowrequesttypedef)
+  - [RegisterTaskWithMaintenanceWindowResultResponseTypeDef](#registertaskwithmaintenancewindowresultresponsetypedef)
   - [RelatedOpsItemTypeDef](#relatedopsitemtypedef)
-  - [ResetServiceSettingResultTypeDef](#resetservicesettingresulttypedef)
+  - [RemoveTagsFromResourceRequestTypeDef](#removetagsfromresourcerequesttypedef)
+  - [ResetServiceSettingRequestTypeDef](#resetservicesettingrequesttypedef)
+  - [ResetServiceSettingResultResponseTypeDef](#resetservicesettingresultresponsetypedef)
   - [ResolvedTargetsTypeDef](#resolvedtargetstypedef)
   - [ResourceComplianceSummaryItemTypeDef](#resourcecompliancesummaryitemtypedef)
   - [ResourceDataSyncAwsOrganizationsSourceTypeDef](#resourcedatasyncawsorganizationssourcetypedef)
@@ -238,38 +349,63 @@ type annotations stubs module
   - [ResourceDataSyncS3DestinationTypeDef](#resourcedatasyncs3destinationtypedef)
   - [ResourceDataSyncSourceTypeDef](#resourcedatasyncsourcetypedef)
   - [ResourceDataSyncSourceWithStateTypeDef](#resourcedatasyncsourcewithstatetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [ResultAttributeTypeDef](#resultattributetypedef)
-  - [ResumeSessionResponseTypeDef](#resumesessionresponsetypedef)
+  - [ResumeSessionRequestTypeDef](#resumesessionrequesttypedef)
+  - [ResumeSessionResponseResponseTypeDef](#resumesessionresponseresponsetypedef)
   - [ReviewInformationTypeDef](#reviewinformationtypedef)
   - [RunbookTypeDef](#runbooktypedef)
   - [S3OutputLocationTypeDef](#s3outputlocationtypedef)
   - [S3OutputUrlTypeDef](#s3outputurltypedef)
   - [ScheduledWindowExecutionTypeDef](#scheduledwindowexecutiontypedef)
-  - [SendCommandResultTypeDef](#sendcommandresulttypedef)
+  - [SendAutomationSignalRequestTypeDef](#sendautomationsignalrequesttypedef)
+  - [SendCommandRequestTypeDef](#sendcommandrequesttypedef)
+  - [SendCommandResultResponseTypeDef](#sendcommandresultresponsetypedef)
   - [ServiceSettingTypeDef](#servicesettingtypedef)
   - [SessionFilterTypeDef](#sessionfiltertypedef)
   - [SessionManagerOutputUrlTypeDef](#sessionmanageroutputurltypedef)
   - [SessionTypeDef](#sessiontypedef)
   - [SeveritySummaryTypeDef](#severitysummarytypedef)
-  - [StartAutomationExecutionResultTypeDef](#startautomationexecutionresulttypedef)
-  - [StartChangeRequestExecutionResultTypeDef](#startchangerequestexecutionresulttypedef)
-  - [StartSessionResponseTypeDef](#startsessionresponsetypedef)
+  - [StartAssociationsOnceRequestTypeDef](#startassociationsoncerequesttypedef)
+  - [StartAutomationExecutionRequestTypeDef](#startautomationexecutionrequesttypedef)
+  - [StartAutomationExecutionResultResponseTypeDef](#startautomationexecutionresultresponsetypedef)
+  - [StartChangeRequestExecutionRequestTypeDef](#startchangerequestexecutionrequesttypedef)
+  - [StartChangeRequestExecutionResultResponseTypeDef](#startchangerequestexecutionresultresponsetypedef)
+  - [StartSessionRequestTypeDef](#startsessionrequesttypedef)
+  - [StartSessionResponseResponseTypeDef](#startsessionresponseresponsetypedef)
   - [StepExecutionFilterTypeDef](#stepexecutionfiltertypedef)
   - [StepExecutionTypeDef](#stepexecutiontypedef)
+  - [StopAutomationExecutionRequestTypeDef](#stopautomationexecutionrequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TargetLocationTypeDef](#targetlocationtypedef)
   - [TargetTypeDef](#targettypedef)
-  - [TerminateSessionResponseTypeDef](#terminatesessionresponsetypedef)
-  - [UnlabelParameterVersionResultTypeDef](#unlabelparameterversionresulttypedef)
-  - [UpdateAssociationResultTypeDef](#updateassociationresulttypedef)
-  - [UpdateAssociationStatusResultTypeDef](#updateassociationstatusresulttypedef)
-  - [UpdateDocumentDefaultVersionResultTypeDef](#updatedocumentdefaultversionresulttypedef)
-  - [UpdateDocumentResultTypeDef](#updatedocumentresulttypedef)
-  - [UpdateMaintenanceWindowResultTypeDef](#updatemaintenancewindowresulttypedef)
-  - [UpdateMaintenanceWindowTargetResultTypeDef](#updatemaintenancewindowtargetresulttypedef)
-  - [UpdateMaintenanceWindowTaskResultTypeDef](#updatemaintenancewindowtaskresulttypedef)
-  - [UpdateOpsMetadataResultTypeDef](#updateopsmetadataresulttypedef)
-  - [UpdatePatchBaselineResultTypeDef](#updatepatchbaselineresulttypedef)
+  - [TerminateSessionRequestTypeDef](#terminatesessionrequesttypedef)
+  - [TerminateSessionResponseResponseTypeDef](#terminatesessionresponseresponsetypedef)
+  - [UnlabelParameterVersionRequestTypeDef](#unlabelparameterversionrequesttypedef)
+  - [UnlabelParameterVersionResultResponseTypeDef](#unlabelparameterversionresultresponsetypedef)
+  - [UpdateAssociationRequestTypeDef](#updateassociationrequesttypedef)
+  - [UpdateAssociationResultResponseTypeDef](#updateassociationresultresponsetypedef)
+  - [UpdateAssociationStatusRequestTypeDef](#updateassociationstatusrequesttypedef)
+  - [UpdateAssociationStatusResultResponseTypeDef](#updateassociationstatusresultresponsetypedef)
+  - [UpdateDocumentDefaultVersionRequestTypeDef](#updatedocumentdefaultversionrequesttypedef)
+  - [UpdateDocumentDefaultVersionResultResponseTypeDef](#updatedocumentdefaultversionresultresponsetypedef)
+  - [UpdateDocumentMetadataRequestTypeDef](#updatedocumentmetadatarequesttypedef)
+  - [UpdateDocumentRequestTypeDef](#updatedocumentrequesttypedef)
+  - [UpdateDocumentResultResponseTypeDef](#updatedocumentresultresponsetypedef)
+  - [UpdateMaintenanceWindowRequestTypeDef](#updatemaintenancewindowrequesttypedef)
+  - [UpdateMaintenanceWindowResultResponseTypeDef](#updatemaintenancewindowresultresponsetypedef)
+  - [UpdateMaintenanceWindowTargetRequestTypeDef](#updatemaintenancewindowtargetrequesttypedef)
+  - [UpdateMaintenanceWindowTargetResultResponseTypeDef](#updatemaintenancewindowtargetresultresponsetypedef)
+  - [UpdateMaintenanceWindowTaskRequestTypeDef](#updatemaintenancewindowtaskrequesttypedef)
+  - [UpdateMaintenanceWindowTaskResultResponseTypeDef](#updatemaintenancewindowtaskresultresponsetypedef)
+  - [UpdateManagedInstanceRoleRequestTypeDef](#updatemanagedinstancerolerequesttypedef)
+  - [UpdateOpsItemRequestTypeDef](#updateopsitemrequesttypedef)
+  - [UpdateOpsMetadataRequestTypeDef](#updateopsmetadatarequesttypedef)
+  - [UpdateOpsMetadataResultResponseTypeDef](#updateopsmetadataresultresponsetypedef)
+  - [UpdatePatchBaselineRequestTypeDef](#updatepatchbaselinerequesttypedef)
+  - [UpdatePatchBaselineResultResponseTypeDef](#updatepatchbaselineresultresponsetypedef)
+  - [UpdateResourceDataSyncRequestTypeDef](#updateresourcedatasyncrequesttypedef)
+  - [UpdateServiceSettingRequestTypeDef](#updateservicesettingrequesttypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
 ## AccountSharingInfoTypeDef
@@ -302,15 +438,43 @@ Optional fields:
 - `CreatedDate`: `datetime`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## AssociateOpsItemRelatedItemResponseTypeDef
+## AddTagsToResourceRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import AssociateOpsItemRelatedItemResponseTypeDef
+from mypy_boto3_ssm.type_defs import AddTagsToResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceType`:
+  [ResourceTypeForTaggingType](./literals.md#resourcetypefortaggingtype)
+- `ResourceId`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## AssociateOpsItemRelatedItemRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import AssociateOpsItemRelatedItemRequestTypeDef
+```
+
+Required fields:
+
+- `OpsItemId`: `str`
+- `AssociationType`: `str`
+- `ResourceType`: `str`
+- `ResourceUri`: `str`
+
+## AssociateOpsItemRelatedItemResponseResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import AssociateOpsItemRelatedItemResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AssociationId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## AssociationDescriptionTypeDef
 
@@ -656,15 +820,41 @@ Optional fields:
 - `ApprovedPatchesEnableNonSecurity`: `bool`
 - `Sources`: `List`\[[PatchSourceTypeDef](./type_defs.md#patchsourcetypedef)\]
 
-## CancelMaintenanceWindowExecutionResultTypeDef
+## CancelCommandRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import CancelMaintenanceWindowExecutionResultTypeDef
+from mypy_boto3_ssm.type_defs import CancelCommandRequestTypeDef
 ```
+
+Required fields:
+
+- `CommandId`: `str`
 
 Optional fields:
 
+- `InstanceIds`: `List`\[`str`\]
+
+## CancelMaintenanceWindowExecutionRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import CancelMaintenanceWindowExecutionRequestTypeDef
+```
+
+Required fields:
+
 - `WindowExecutionId`: `str`
+
+## CancelMaintenanceWindowExecutionResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import CancelMaintenanceWindowExecutionResultResponseTypeDef
+```
+
+Required fields:
+
+- `WindowExecutionId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CloudWatchOutputConfigTypeDef
 
@@ -863,16 +1053,36 @@ Optional fields:
 - `SeveritySummary`:
   [SeveritySummaryTypeDef](./type_defs.md#severitysummarytypedef)
 
-## CreateActivationResultTypeDef
+## CreateActivationRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import CreateActivationResultTypeDef
+from mypy_boto3_ssm.type_defs import CreateActivationRequestTypeDef
 ```
+
+Required fields:
+
+- `IamRole`: `str`
 
 Optional fields:
 
+- `Description`: `str`
+- `DefaultInstanceName`: `str`
+- `RegistrationLimit`: `int`
+- `ExpirationDate`: `Union`\[`datetime`, `str`\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateActivationResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import CreateActivationResultResponseTypeDef
+```
+
+Required fields:
+
 - `ActivationId`: `str`
 - `ActivationCode`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateAssociationBatchRequestEntryTypeDef
 
@@ -906,157 +1116,534 @@ Optional fields:
 - `TargetLocations`:
   `List`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
 
-## CreateAssociationBatchResultTypeDef
+## CreateAssociationBatchRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import CreateAssociationBatchResultTypeDef
+from mypy_boto3_ssm.type_defs import CreateAssociationBatchRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Entries`:
+  `List`\[[CreateAssociationBatchRequestEntryTypeDef](./type_defs.md#createassociationbatchrequestentrytypedef)\]
+
+## CreateAssociationBatchResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import CreateAssociationBatchResultResponseTypeDef
+```
+
+Required fields:
 
 - `Successful`:
   `List`\[[AssociationDescriptionTypeDef](./type_defs.md#associationdescriptiontypedef)\]
 - `Failed`:
   `List`\[[FailedCreateAssociationTypeDef](./type_defs.md#failedcreateassociationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateAssociationResultTypeDef
+## CreateAssociationRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import CreateAssociationResultTypeDef
+from mypy_boto3_ssm.type_defs import CreateAssociationRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+
 Optional fields:
+
+- `DocumentVersion`: `str`
+- `InstanceId`: `str`
+- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `ScheduleExpression`: `str`
+- `OutputLocation`:
+  [InstanceAssociationOutputLocationTypeDef](./type_defs.md#instanceassociationoutputlocationtypedef)
+- `AssociationName`: `str`
+- `AutomationTargetParameterName`: `str`
+- `MaxErrors`: `str`
+- `MaxConcurrency`: `str`
+- `ComplianceSeverity`:
+  [AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype)
+- `SyncCompliance`:
+  [AssociationSyncComplianceType](./literals.md#associationsynccompliancetype)
+- `ApplyOnlyAtCronInterval`: `bool`
+- `CalendarNames`: `List`\[`str`\]
+- `TargetLocations`:
+  `List`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
+
+## CreateAssociationResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import CreateAssociationResultResponseTypeDef
+```
+
+Required fields:
 
 - `AssociationDescription`:
   [AssociationDescriptionTypeDef](./type_defs.md#associationdescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDocumentResultTypeDef
+## CreateDocumentRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import CreateDocumentResultTypeDef
+from mypy_boto3_ssm.type_defs import CreateDocumentRequestTypeDef
 ```
 
+Required fields:
+
+- `Content`: `str`
+- `Name`: `str`
+
 Optional fields:
+
+- `Requires`:
+  `List`\[[DocumentRequiresTypeDef](./type_defs.md#documentrequirestypedef)\]
+- `Attachments`:
+  `List`\[[AttachmentsSourceTypeDef](./type_defs.md#attachmentssourcetypedef)\]
+- `DisplayName`: `str`
+- `VersionName`: `str`
+- `DocumentType`: [DocumentTypeType](./literals.md#documenttypetype)
+- `DocumentFormat`: [DocumentFormatType](./literals.md#documentformattype)
+- `TargetType`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateDocumentResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import CreateDocumentResultResponseTypeDef
+```
+
+Required fields:
 
 - `DocumentDescription`:
   [DocumentDescriptionTypeDef](./type_defs.md#documentdescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateMaintenanceWindowResultTypeDef
+## CreateMaintenanceWindowRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import CreateMaintenanceWindowResultTypeDef
+from mypy_boto3_ssm.type_defs import CreateMaintenanceWindowRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+- `Schedule`: `str`
+- `Duration`: `int`
+- `Cutoff`: `int`
+- `AllowUnassociatedTargets`: `bool`
+
 Optional fields:
+
+- `Description`: `str`
+- `StartDate`: `str`
+- `EndDate`: `str`
+- `ScheduleTimezone`: `str`
+- `ScheduleOffset`: `int`
+- `ClientToken`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateMaintenanceWindowResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import CreateMaintenanceWindowResultResponseTypeDef
+```
+
+Required fields:
 
 - `WindowId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateOpsItemResponseTypeDef
+## CreateOpsItemRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import CreateOpsItemResponseTypeDef
+from mypy_boto3_ssm.type_defs import CreateOpsItemRequestTypeDef
 ```
 
+Required fields:
+
+- `Description`: `str`
+- `Source`: `str`
+- `Title`: `str`
+
 Optional fields:
+
+- `OpsItemType`: `str`
+- `OperationalData`: `Dict`\[`str`,
+  [OpsItemDataValueTypeDef](./type_defs.md#opsitemdatavaluetypedef)\]
+- `Notifications`:
+  `List`\[[OpsItemNotificationTypeDef](./type_defs.md#opsitemnotificationtypedef)\]
+- `Priority`: `int`
+- `RelatedOpsItems`:
+  `List`\[[RelatedOpsItemTypeDef](./type_defs.md#relatedopsitemtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Category`: `str`
+- `Severity`: `str`
+- `ActualStartTime`: `Union`\[`datetime`, `str`\]
+- `ActualEndTime`: `Union`\[`datetime`, `str`\]
+- `PlannedStartTime`: `Union`\[`datetime`, `str`\]
+- `PlannedEndTime`: `Union`\[`datetime`, `str`\]
+
+## CreateOpsItemResponseResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import CreateOpsItemResponseResponseTypeDef
+```
+
+Required fields:
 
 - `OpsItemId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateOpsMetadataResultTypeDef
+## CreateOpsMetadataRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import CreateOpsMetadataResultTypeDef
+from mypy_boto3_ssm.type_defs import CreateOpsMetadataRequestTypeDef
 ```
 
+Required fields:
+
+- `ResourceId`: `str`
+
 Optional fields:
+
+- `Metadata`: `Dict`\[`str`,
+  [MetadataValueTypeDef](./type_defs.md#metadatavaluetypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateOpsMetadataResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import CreateOpsMetadataResultResponseTypeDef
+```
+
+Required fields:
 
 - `OpsMetadataArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePatchBaselineResultTypeDef
+## CreatePatchBaselineRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import CreatePatchBaselineResultTypeDef
+from mypy_boto3_ssm.type_defs import CreatePatchBaselineRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+
 Optional fields:
+
+- `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
+- `GlobalFilters`:
+  [PatchFilterGroupTypeDef](./type_defs.md#patchfiltergrouptypedef)
+- `ApprovalRules`:
+  [PatchRuleGroupTypeDef](./type_defs.md#patchrulegrouptypedef)
+- `ApprovedPatches`: `List`\[`str`\]
+- `ApprovedPatchesComplianceLevel`:
+  [PatchComplianceLevelType](./literals.md#patchcomplianceleveltype)
+- `ApprovedPatchesEnableNonSecurity`: `bool`
+- `RejectedPatches`: `List`\[`str`\]
+- `RejectedPatchesAction`: [PatchActionType](./literals.md#patchactiontype)
+- `Description`: `str`
+- `Sources`: `List`\[[PatchSourceTypeDef](./type_defs.md#patchsourcetypedef)\]
+- `ClientToken`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreatePatchBaselineResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import CreatePatchBaselineResultResponseTypeDef
+```
+
+Required fields:
 
 - `BaselineId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteInventoryResultTypeDef
+## CreateResourceDataSyncRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DeleteInventoryResultTypeDef
+from mypy_boto3_ssm.type_defs import CreateResourceDataSyncRequestTypeDef
+```
+
+Required fields:
+
+- `SyncName`: `str`
+
+Optional fields:
+
+- `S3Destination`:
+  [ResourceDataSyncS3DestinationTypeDef](./type_defs.md#resourcedatasyncs3destinationtypedef)
+- `SyncType`: `str`
+- `SyncSource`:
+  [ResourceDataSyncSourceTypeDef](./type_defs.md#resourcedatasyncsourcetypedef)
+
+## DeleteActivationRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DeleteActivationRequestTypeDef
+```
+
+Required fields:
+
+- `ActivationId`: `str`
+
+## DeleteAssociationRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DeleteAssociationRequestTypeDef
 ```
 
 Optional fields:
+
+- `Name`: `str`
+- `InstanceId`: `str`
+- `AssociationId`: `str`
+
+## DeleteDocumentRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DeleteDocumentRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+Optional fields:
+
+- `DocumentVersion`: `str`
+- `VersionName`: `str`
+- `Force`: `bool`
+
+## DeleteInventoryRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DeleteInventoryRequestTypeDef
+```
+
+Required fields:
+
+- `TypeName`: `str`
+
+Optional fields:
+
+- `SchemaDeleteOption`:
+  [InventorySchemaDeleteOptionType](./literals.md#inventoryschemadeleteoptiontype)
+- `DryRun`: `bool`
+- `ClientToken`: `str`
+
+## DeleteInventoryResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DeleteInventoryResultResponseTypeDef
+```
+
+Required fields:
 
 - `DeletionId`: `str`
 - `TypeName`: `str`
 - `DeletionSummary`:
   [InventoryDeletionSummaryTypeDef](./type_defs.md#inventorydeletionsummarytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteMaintenanceWindowResultTypeDef
+## DeleteMaintenanceWindowRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DeleteMaintenanceWindowResultTypeDef
+from mypy_boto3_ssm.type_defs import DeleteMaintenanceWindowRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `WindowId`: `str`
 
-## DeleteParametersResultTypeDef
+## DeleteMaintenanceWindowResultResponseTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DeleteParametersResultTypeDef
+from mypy_boto3_ssm.type_defs import DeleteMaintenanceWindowResultResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `WindowId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteOpsMetadataRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DeleteOpsMetadataRequestTypeDef
+```
+
+Required fields:
+
+- `OpsMetadataArn`: `str`
+
+## DeleteParameterRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DeleteParameterRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+## DeleteParametersRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DeleteParametersRequestTypeDef
+```
+
+Required fields:
+
+- `Names`: `List`\[`str`\]
+
+## DeleteParametersResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DeleteParametersResultResponseTypeDef
+```
+
+Required fields:
 
 - `DeletedParameters`: `List`\[`str`\]
 - `InvalidParameters`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeletePatchBaselineResultTypeDef
+## DeletePatchBaselineRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DeletePatchBaselineResultTypeDef
+from mypy_boto3_ssm.type_defs import DeletePatchBaselineRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `BaselineId`: `str`
 
-## DeregisterPatchBaselineForPatchGroupResultTypeDef
+## DeletePatchBaselineResultResponseTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DeregisterPatchBaselineForPatchGroupResultTypeDef
+from mypy_boto3_ssm.type_defs import DeletePatchBaselineResultResponseTypeDef
 ```
 
+Required fields:
+
+- `BaselineId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteResourceDataSyncRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DeleteResourceDataSyncRequestTypeDef
+```
+
+Required fields:
+
+- `SyncName`: `str`
+
 Optional fields:
+
+- `SyncType`: `str`
+
+## DeregisterManagedInstanceRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DeregisterManagedInstanceRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+
+## DeregisterPatchBaselineForPatchGroupRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DeregisterPatchBaselineForPatchGroupRequestTypeDef
+```
+
+Required fields:
 
 - `BaselineId`: `str`
 - `PatchGroup`: `str`
 
-## DeregisterTargetFromMaintenanceWindowResultTypeDef
+## DeregisterPatchBaselineForPatchGroupResultResponseTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DeregisterTargetFromMaintenanceWindowResultTypeDef
+from mypy_boto3_ssm.type_defs import DeregisterPatchBaselineForPatchGroupResultResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `BaselineId`: `str`
+- `PatchGroup`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeregisterTargetFromMaintenanceWindowRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DeregisterTargetFromMaintenanceWindowRequestTypeDef
+```
+
+Required fields:
 
 - `WindowId`: `str`
 - `WindowTargetId`: `str`
 
-## DeregisterTaskFromMaintenanceWindowResultTypeDef
+Optional fields:
+
+- `Safe`: `bool`
+
+## DeregisterTargetFromMaintenanceWindowResultResponseTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DeregisterTaskFromMaintenanceWindowResultTypeDef
+from mypy_boto3_ssm.type_defs import DeregisterTargetFromMaintenanceWindowResultResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `WindowId`: `str`
+- `WindowTargetId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeregisterTaskFromMaintenanceWindowRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DeregisterTaskFromMaintenanceWindowRequestTypeDef
+```
+
+Required fields:
 
 - `WindowId`: `str`
 - `WindowTaskId`: `str`
+
+## DeregisterTaskFromMaintenanceWindowResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DeregisterTaskFromMaintenanceWindowResultResponseTypeDef
+```
+
+Required fields:
+
+- `WindowId`: `str`
+- `WindowTaskId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeActivationsFilterTypeDef
 
@@ -1070,347 +1657,845 @@ Optional fields:
   [DescribeActivationsFilterKeysType](./literals.md#describeactivationsfilterkeystype)
 - `FilterValues`: `List`\[`str`\]
 
-## DescribeActivationsResultTypeDef
+## DescribeActivationsRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribeActivationsResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribeActivationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`:
+  `List`\[[DescribeActivationsFilterTypeDef](./type_defs.md#describeactivationsfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeActivationsResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribeActivationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `ActivationList`:
   `List`\[[ActivationTypeDef](./type_defs.md#activationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAssociationExecutionTargetsResultTypeDef
+## DescribeAssociationExecutionTargetsRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribeAssociationExecutionTargetsResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribeAssociationExecutionTargetsRequestTypeDef
 ```
 
+Required fields:
+
+- `AssociationId`: `str`
+- `ExecutionId`: `str`
+
 Optional fields:
+
+- `Filters`:
+  `List`\[[AssociationExecutionTargetsFilterTypeDef](./type_defs.md#associationexecutiontargetsfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeAssociationExecutionTargetsResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribeAssociationExecutionTargetsResultResponseTypeDef
+```
+
+Required fields:
 
 - `AssociationExecutionTargets`:
   `List`\[[AssociationExecutionTargetTypeDef](./type_defs.md#associationexecutiontargettypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAssociationExecutionsResultTypeDef
+## DescribeAssociationExecutionsRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribeAssociationExecutionsResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribeAssociationExecutionsRequestTypeDef
 ```
 
+Required fields:
+
+- `AssociationId`: `str`
+
 Optional fields:
+
+- `Filters`:
+  `List`\[[AssociationExecutionFilterTypeDef](./type_defs.md#associationexecutionfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeAssociationExecutionsResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribeAssociationExecutionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `AssociationExecutions`:
   `List`\[[AssociationExecutionTypeDef](./type_defs.md#associationexecutiontypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAssociationResultTypeDef
+## DescribeAssociationRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribeAssociationResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribeAssociationRequestTypeDef
 ```
 
 Optional fields:
+
+- `Name`: `str`
+- `InstanceId`: `str`
+- `AssociationId`: `str`
+- `AssociationVersion`: `str`
+
+## DescribeAssociationResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribeAssociationResultResponseTypeDef
+```
+
+Required fields:
 
 - `AssociationDescription`:
   [AssociationDescriptionTypeDef](./type_defs.md#associationdescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAutomationExecutionsResultTypeDef
+## DescribeAutomationExecutionsRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribeAutomationExecutionsResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribeAutomationExecutionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`:
+  `List`\[[AutomationExecutionFilterTypeDef](./type_defs.md#automationexecutionfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeAutomationExecutionsResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribeAutomationExecutionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `AutomationExecutionMetadataList`:
   `List`\[[AutomationExecutionMetadataTypeDef](./type_defs.md#automationexecutionmetadatatypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAutomationStepExecutionsResultTypeDef
+## DescribeAutomationStepExecutionsRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribeAutomationStepExecutionsResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribeAutomationStepExecutionsRequestTypeDef
 ```
 
+Required fields:
+
+- `AutomationExecutionId`: `str`
+
 Optional fields:
+
+- `Filters`:
+  `List`\[[StepExecutionFilterTypeDef](./type_defs.md#stepexecutionfiltertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `ReverseOrder`: `bool`
+
+## DescribeAutomationStepExecutionsResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribeAutomationStepExecutionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `StepExecutions`:
   `List`\[[StepExecutionTypeDef](./type_defs.md#stepexecutiontypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAvailablePatchesResultTypeDef
+## DescribeAvailablePatchesRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribeAvailablePatchesResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribeAvailablePatchesRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`:
+  `List`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeAvailablePatchesResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribeAvailablePatchesResultResponseTypeDef
+```
+
+Required fields:
 
 - `Patches`: `List`\[[PatchTypeDef](./type_defs.md#patchtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDocumentPermissionResponseTypeDef
+## DescribeDocumentPermissionRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribeDocumentPermissionResponseTypeDef
+from mypy_boto3_ssm.type_defs import DescribeDocumentPermissionRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+- `PermissionType`: `Literal['Share']` (see
+  [DocumentPermissionTypeType](./literals.md#documentpermissiontypetype))
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeDocumentPermissionResponseResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribeDocumentPermissionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AccountIds`: `List`\[`str`\]
 - `AccountSharingInfoList`:
   `List`\[[AccountSharingInfoTypeDef](./type_defs.md#accountsharinginfotypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDocumentResultTypeDef
+## DescribeDocumentRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribeDocumentResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribeDocumentRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+
 Optional fields:
+
+- `DocumentVersion`: `str`
+- `VersionName`: `str`
+
+## DescribeDocumentResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribeDocumentResultResponseTypeDef
+```
+
+Required fields:
 
 - `Document`:
   [DocumentDescriptionTypeDef](./type_defs.md#documentdescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEffectiveInstanceAssociationsResultTypeDef
+## DescribeEffectiveInstanceAssociationsRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribeEffectiveInstanceAssociationsResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribeEffectiveInstanceAssociationsRequestTypeDef
 ```
 
+Required fields:
+
+- `InstanceId`: `str`
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeEffectiveInstanceAssociationsResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribeEffectiveInstanceAssociationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Associations`:
   `List`\[[InstanceAssociationTypeDef](./type_defs.md#instanceassociationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEffectivePatchesForPatchBaselineResultTypeDef
+## DescribeEffectivePatchesForPatchBaselineRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribeEffectivePatchesForPatchBaselineResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribeEffectivePatchesForPatchBaselineRequestTypeDef
 ```
 
+Required fields:
+
+- `BaselineId`: `str`
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeEffectivePatchesForPatchBaselineResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribeEffectivePatchesForPatchBaselineResultResponseTypeDef
+```
+
+Required fields:
 
 - `EffectivePatches`:
   `List`\[[EffectivePatchTypeDef](./type_defs.md#effectivepatchtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInstanceAssociationsStatusResultTypeDef
+## DescribeInstanceAssociationsStatusRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribeInstanceAssociationsStatusResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribeInstanceAssociationsStatusRequestTypeDef
 ```
 
+Required fields:
+
+- `InstanceId`: `str`
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeInstanceAssociationsStatusResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribeInstanceAssociationsStatusResultResponseTypeDef
+```
+
+Required fields:
 
 - `InstanceAssociationStatusInfos`:
   `List`\[[InstanceAssociationStatusInfoTypeDef](./type_defs.md#instanceassociationstatusinfotypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInstanceInformationResultTypeDef
+## DescribeInstanceInformationRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribeInstanceInformationResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribeInstanceInformationRequestTypeDef
 ```
 
 Optional fields:
+
+- `InstanceInformationFilterList`:
+  `List`\[[InstanceInformationFilterTypeDef](./type_defs.md#instanceinformationfiltertypedef)\]
+- `Filters`:
+  `List`\[[InstanceInformationStringFilterTypeDef](./type_defs.md#instanceinformationstringfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeInstanceInformationResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribeInstanceInformationResultResponseTypeDef
+```
+
+Required fields:
 
 - `InstanceInformationList`:
   `List`\[[InstanceInformationTypeDef](./type_defs.md#instanceinformationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInstancePatchStatesForPatchGroupResultTypeDef
+## DescribeInstancePatchStatesForPatchGroupRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribeInstancePatchStatesForPatchGroupResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribeInstancePatchStatesForPatchGroupRequestTypeDef
 ```
 
+Required fields:
+
+- `PatchGroup`: `str`
+
 Optional fields:
+
+- `Filters`:
+  `List`\[[InstancePatchStateFilterTypeDef](./type_defs.md#instancepatchstatefiltertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeInstancePatchStatesForPatchGroupResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribeInstancePatchStatesForPatchGroupResultResponseTypeDef
+```
+
+Required fields:
 
 - `InstancePatchStates`:
   `List`\[[InstancePatchStateTypeDef](./type_defs.md#instancepatchstatetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInstancePatchStatesResultTypeDef
+## DescribeInstancePatchStatesRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribeInstancePatchStatesResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribeInstancePatchStatesRequestTypeDef
 ```
 
+Required fields:
+
+- `InstanceIds`: `List`\[`str`\]
+
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeInstancePatchStatesResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribeInstancePatchStatesResultResponseTypeDef
+```
+
+Required fields:
 
 - `InstancePatchStates`:
   `List`\[[InstancePatchStateTypeDef](./type_defs.md#instancepatchstatetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInstancePatchesResultTypeDef
+## DescribeInstancePatchesRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribeInstancePatchesResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribeInstancePatchesRequestTypeDef
 ```
 
+Required fields:
+
+- `InstanceId`: `str`
+
 Optional fields:
+
+- `Filters`:
+  `List`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeInstancePatchesResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribeInstancePatchesResultResponseTypeDef
+```
+
+Required fields:
 
 - `Patches`:
   `List`\[[PatchComplianceDataTypeDef](./type_defs.md#patchcompliancedatatypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInventoryDeletionsResultTypeDef
+## DescribeInventoryDeletionsRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribeInventoryDeletionsResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribeInventoryDeletionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `DeletionId`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeInventoryDeletionsResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribeInventoryDeletionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `InventoryDeletions`:
   `List`\[[InventoryDeletionStatusItemTypeDef](./type_defs.md#inventorydeletionstatusitemtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeMaintenanceWindowExecutionTaskInvocationsResultTypeDef
+## DescribeMaintenanceWindowExecutionTaskInvocationsRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowExecutionTaskInvocationsResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowExecutionTaskInvocationsRequestTypeDef
 ```
 
+Required fields:
+
+- `WindowExecutionId`: `str`
+- `TaskId`: `str`
+
 Optional fields:
+
+- `Filters`:
+  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeMaintenanceWindowExecutionTaskInvocationsResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowExecutionTaskInvocationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `WindowExecutionTaskInvocationIdentities`:
   `List`\[[MaintenanceWindowExecutionTaskInvocationIdentityTypeDef](./type_defs.md#maintenancewindowexecutiontaskinvocationidentitytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeMaintenanceWindowExecutionTasksResultTypeDef
+## DescribeMaintenanceWindowExecutionTasksRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowExecutionTasksResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowExecutionTasksRequestTypeDef
 ```
 
+Required fields:
+
+- `WindowExecutionId`: `str`
+
 Optional fields:
+
+- `Filters`:
+  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeMaintenanceWindowExecutionTasksResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowExecutionTasksResultResponseTypeDef
+```
+
+Required fields:
 
 - `WindowExecutionTaskIdentities`:
   `List`\[[MaintenanceWindowExecutionTaskIdentityTypeDef](./type_defs.md#maintenancewindowexecutiontaskidentitytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeMaintenanceWindowExecutionsResultTypeDef
+## DescribeMaintenanceWindowExecutionsRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowExecutionsResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowExecutionsRequestTypeDef
 ```
 
+Required fields:
+
+- `WindowId`: `str`
+
 Optional fields:
+
+- `Filters`:
+  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeMaintenanceWindowExecutionsResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowExecutionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `WindowExecutions`:
   `List`\[[MaintenanceWindowExecutionTypeDef](./type_defs.md#maintenancewindowexecutiontypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeMaintenanceWindowScheduleResultTypeDef
+## DescribeMaintenanceWindowScheduleRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowScheduleResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowScheduleRequestTypeDef
 ```
 
 Optional fields:
+
+- `WindowId`: `str`
+- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `ResourceType`:
+  [MaintenanceWindowResourceTypeType](./literals.md#maintenancewindowresourcetypetype)
+- `Filters`:
+  `List`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeMaintenanceWindowScheduleResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowScheduleResultResponseTypeDef
+```
+
+Required fields:
 
 - `ScheduledWindowExecutions`:
   `List`\[[ScheduledWindowExecutionTypeDef](./type_defs.md#scheduledwindowexecutiontypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeMaintenanceWindowTargetsResultTypeDef
+## DescribeMaintenanceWindowTargetsRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowTargetsResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowTargetsRequestTypeDef
 ```
 
+Required fields:
+
+- `WindowId`: `str`
+
 Optional fields:
+
+- `Filters`:
+  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeMaintenanceWindowTargetsResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowTargetsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Targets`:
   `List`\[[MaintenanceWindowTargetTypeDef](./type_defs.md#maintenancewindowtargettypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeMaintenanceWindowTasksResultTypeDef
+## DescribeMaintenanceWindowTasksRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowTasksResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowTasksRequestTypeDef
 ```
 
+Required fields:
+
+- `WindowId`: `str`
+
 Optional fields:
+
+- `Filters`:
+  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeMaintenanceWindowTasksResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowTasksResultResponseTypeDef
+```
+
+Required fields:
 
 - `Tasks`:
   `List`\[[MaintenanceWindowTaskTypeDef](./type_defs.md#maintenancewindowtasktypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeMaintenanceWindowsForTargetResultTypeDef
+## DescribeMaintenanceWindowsForTargetRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowsForTargetResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowsForTargetRequestTypeDef
 ```
 
+Required fields:
+
+- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `ResourceType`:
+  [MaintenanceWindowResourceTypeType](./literals.md#maintenancewindowresourcetypetype)
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeMaintenanceWindowsForTargetResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowsForTargetResultResponseTypeDef
+```
+
+Required fields:
 
 - `WindowIdentities`:
   `List`\[[MaintenanceWindowIdentityForTargetTypeDef](./type_defs.md#maintenancewindowidentityfortargettypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeMaintenanceWindowsResultTypeDef
+## DescribeMaintenanceWindowsRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowsResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`:
+  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeMaintenanceWindowsResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowsResultResponseTypeDef
+```
+
+Required fields:
 
 - `WindowIdentities`:
   `List`\[[MaintenanceWindowIdentityTypeDef](./type_defs.md#maintenancewindowidentitytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeOpsItemsResponseTypeDef
+## DescribeOpsItemsRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribeOpsItemsResponseTypeDef
+from mypy_boto3_ssm.type_defs import DescribeOpsItemsRequestTypeDef
 ```
 
 Optional fields:
+
+- `OpsItemFilters`:
+  `List`\[[OpsItemFilterTypeDef](./type_defs.md#opsitemfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeOpsItemsResponseResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribeOpsItemsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `OpsItemSummaries`:
   `List`\[[OpsItemSummaryTypeDef](./type_defs.md#opsitemsummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeParametersResultTypeDef
+## DescribeParametersRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribeParametersResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribeParametersRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`:
+  `List`\[[ParametersFilterTypeDef](./type_defs.md#parametersfiltertypedef)\]
+- `ParameterFilters`:
+  `List`\[[ParameterStringFilterTypeDef](./type_defs.md#parameterstringfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeParametersResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribeParametersResultResponseTypeDef
+```
+
+Required fields:
 
 - `Parameters`:
   `List`\[[ParameterMetadataTypeDef](./type_defs.md#parametermetadatatypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePatchBaselinesResultTypeDef
+## DescribePatchBaselinesRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribePatchBaselinesResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribePatchBaselinesRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`:
+  `List`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribePatchBaselinesResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribePatchBaselinesResultResponseTypeDef
+```
+
+Required fields:
 
 - `BaselineIdentities`:
   `List`\[[PatchBaselineIdentityTypeDef](./type_defs.md#patchbaselineidentitytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePatchGroupStateResultTypeDef
+## DescribePatchGroupStateRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribePatchGroupStateResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribePatchGroupStateRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `PatchGroup`: `str`
+
+## DescribePatchGroupStateResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribePatchGroupStateResultResponseTypeDef
+```
+
+Required fields:
 
 - `Instances`: `int`
 - `InstancesWithInstalledPatches`: `int`
@@ -1424,40 +2509,106 @@ Optional fields:
 - `InstancesWithCriticalNonCompliantPatches`: `int`
 - `InstancesWithSecurityNonCompliantPatches`: `int`
 - `InstancesWithOtherNonCompliantPatches`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePatchGroupsResultTypeDef
+## DescribePatchGroupsRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribePatchGroupsResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribePatchGroupsRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `int`
+- `Filters`:
+  `List`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
+- `NextToken`: `str`
+
+## DescribePatchGroupsResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribePatchGroupsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Mappings`:
   `List`\[[PatchGroupPatchBaselineMappingTypeDef](./type_defs.md#patchgrouppatchbaselinemappingtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePatchPropertiesResultTypeDef
+## DescribePatchPropertiesRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribePatchPropertiesResultTypeDef
+from mypy_boto3_ssm.type_defs import DescribePatchPropertiesRequestTypeDef
 ```
 
+Required fields:
+
+- `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
+- `Property`: [PatchPropertyType](./literals.md#patchpropertytype)
+
 Optional fields:
+
+- `PatchSet`: [PatchSetType](./literals.md#patchsettype)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribePatchPropertiesResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribePatchPropertiesResultResponseTypeDef
+```
+
+Required fields:
 
 - `Properties`: `List`\[`Dict`\[`str`, `str`\]\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSessionsResponseTypeDef
+## DescribeSessionsRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import DescribeSessionsResponseTypeDef
+from mypy_boto3_ssm.type_defs import DescribeSessionsRequestTypeDef
 ```
+
+Required fields:
+
+- `State`: [SessionStateType](./literals.md#sessionstatetype)
 
 Optional fields:
 
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`:
+  `List`\[[SessionFilterTypeDef](./type_defs.md#sessionfiltertypedef)\]
+
+## DescribeSessionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DescribeSessionsResponseResponseTypeDef
+```
+
+Required fields:
+
 - `Sessions`: `List`\[[SessionTypeDef](./type_defs.md#sessiontypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DisassociateOpsItemRelatedItemRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import DisassociateOpsItemRelatedItemRequestTypeDef
+```
+
+Required fields:
+
+- `OpsItemId`: `str`
+- `AssociationId`: `str`
 
 ## DocumentDefaultVersionDescriptionTypeDef
 
@@ -1694,36 +2845,79 @@ Optional fields:
 - `FailureType`: `str`
 - `Details`: `Dict`\[`str`, `List`\[`str`\]\]
 
-## GetAutomationExecutionResultTypeDef
+## GetAutomationExecutionRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import GetAutomationExecutionResultTypeDef
+from mypy_boto3_ssm.type_defs import GetAutomationExecutionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AutomationExecutionId`: `str`
+
+## GetAutomationExecutionResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import GetAutomationExecutionResultResponseTypeDef
+```
+
+Required fields:
 
 - `AutomationExecution`:
   [AutomationExecutionTypeDef](./type_defs.md#automationexecutiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCalendarStateResponseTypeDef
+## GetCalendarStateRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import GetCalendarStateResponseTypeDef
+from mypy_boto3_ssm.type_defs import GetCalendarStateRequestTypeDef
 ```
 
+Required fields:
+
+- `CalendarNames`: `List`\[`str`\]
+
 Optional fields:
+
+- `AtTime`: `str`
+
+## GetCalendarStateResponseResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import GetCalendarStateResponseResponseTypeDef
+```
+
+Required fields:
 
 - `State`: [CalendarStateType](./literals.md#calendarstatetype)
 - `AtTime`: `str`
 - `NextTransitionTime`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCommandInvocationResultTypeDef
+## GetCommandInvocationRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import GetCommandInvocationResultTypeDef
+from mypy_boto3_ssm.type_defs import GetCommandInvocationRequestTypeDef
 ```
 
+Required fields:
+
+- `CommandId`: `str`
+- `InstanceId`: `str`
+
 Optional fields:
+
+- `PluginName`: `str`
+
+## GetCommandInvocationResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import GetCommandInvocationResultResponseTypeDef
+```
+
+Required fields:
 
 - `CommandId`: `str`
 - `InstanceId`: `str`
@@ -1744,49 +2938,109 @@ Optional fields:
 - `StandardErrorUrl`: `str`
 - `CloudWatchOutputConfig`:
   [CloudWatchOutputConfigTypeDef](./type_defs.md#cloudwatchoutputconfigtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetConnectionStatusResponseTypeDef
+## GetConnectionStatusRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import GetConnectionStatusResponseTypeDef
+from mypy_boto3_ssm.type_defs import GetConnectionStatusRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Target`: `str`
+
+## GetConnectionStatusResponseResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import GetConnectionStatusResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Target`: `str`
 - `Status`: [ConnectionStatusType](./literals.md#connectionstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDefaultPatchBaselineResultTypeDef
+## GetDefaultPatchBaselineRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import GetDefaultPatchBaselineResultTypeDef
+from mypy_boto3_ssm.type_defs import GetDefaultPatchBaselineRequestTypeDef
 ```
 
 Optional fields:
+
+- `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
+
+## GetDefaultPatchBaselineResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import GetDefaultPatchBaselineResultResponseTypeDef
+```
+
+Required fields:
 
 - `BaselineId`: `str`
 - `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDeployablePatchSnapshotForInstanceResultTypeDef
+## GetDeployablePatchSnapshotForInstanceRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import GetDeployablePatchSnapshotForInstanceResultTypeDef
+from mypy_boto3_ssm.type_defs import GetDeployablePatchSnapshotForInstanceRequestTypeDef
 ```
 
+Required fields:
+
+- `InstanceId`: `str`
+- `SnapshotId`: `str`
+
 Optional fields:
+
+- `BaselineOverride`:
+  [BaselineOverrideTypeDef](./type_defs.md#baselineoverridetypedef)
+
+## GetDeployablePatchSnapshotForInstanceResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import GetDeployablePatchSnapshotForInstanceResultResponseTypeDef
+```
+
+Required fields:
 
 - `InstanceId`: `str`
 - `SnapshotId`: `str`
 - `SnapshotDownloadUrl`: `str`
 - `Product`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDocumentResultTypeDef
+## GetDocumentRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import GetDocumentResultTypeDef
+from mypy_boto3_ssm.type_defs import GetDocumentRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+
 Optional fields:
+
+- `VersionName`: `str`
+- `DocumentVersion`: `str`
+- `DocumentFormat`: [DocumentFormatType](./literals.md#documentformattype)
+
+## GetDocumentResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import GetDocumentResultResponseTypeDef
+```
+
+Required fields:
 
 - `Name`: `str`
 - `CreatedDate`: `datetime`
@@ -1803,38 +3057,85 @@ Optional fields:
 - `AttachmentsContent`:
   `List`\[[AttachmentContentTypeDef](./type_defs.md#attachmentcontenttypedef)\]
 - `ReviewStatus`: [ReviewStatusType](./literals.md#reviewstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetInventoryResultTypeDef
+## GetInventoryRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import GetInventoryResultTypeDef
+from mypy_boto3_ssm.type_defs import GetInventoryRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`:
+  `List`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
+- `Aggregators`:
+  `List`\[[InventoryAggregatorTypeDef](./type_defs.md#inventoryaggregatortypedef)\]
+- `ResultAttributes`:
+  `List`\[[ResultAttributeTypeDef](./type_defs.md#resultattributetypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## GetInventoryResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import GetInventoryResultResponseTypeDef
+```
+
+Required fields:
 
 - `Entities`:
   `List`\[[InventoryResultEntityTypeDef](./type_defs.md#inventoryresultentitytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetInventorySchemaResultTypeDef
+## GetInventorySchemaRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import GetInventorySchemaResultTypeDef
+from mypy_boto3_ssm.type_defs import GetInventorySchemaRequestTypeDef
 ```
 
 Optional fields:
+
+- `TypeName`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Aggregator`: `bool`
+- `SubType`: `bool`
+
+## GetInventorySchemaResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import GetInventorySchemaResultResponseTypeDef
+```
+
+Required fields:
 
 - `Schemas`:
   `List`\[[InventoryItemSchemaTypeDef](./type_defs.md#inventoryitemschematypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMaintenanceWindowExecutionResultTypeDef
+## GetMaintenanceWindowExecutionRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import GetMaintenanceWindowExecutionResultTypeDef
+from mypy_boto3_ssm.type_defs import GetMaintenanceWindowExecutionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `WindowExecutionId`: `str`
+
+## GetMaintenanceWindowExecutionResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import GetMaintenanceWindowExecutionResultResponseTypeDef
+```
+
+Required fields:
 
 - `WindowExecutionId`: `str`
 - `TaskIds`: `List`\[`str`\]
@@ -1843,14 +3144,28 @@ Optional fields:
 - `StatusDetails`: `str`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMaintenanceWindowExecutionTaskInvocationResultTypeDef
+## GetMaintenanceWindowExecutionTaskInvocationRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import GetMaintenanceWindowExecutionTaskInvocationResultTypeDef
+from mypy_boto3_ssm.type_defs import GetMaintenanceWindowExecutionTaskInvocationRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `WindowExecutionId`: `str`
+- `TaskId`: `str`
+- `InvocationId`: `str`
+
+## GetMaintenanceWindowExecutionTaskInvocationResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import GetMaintenanceWindowExecutionTaskInvocationResultResponseTypeDef
+```
+
+Required fields:
 
 - `WindowExecutionId`: `str`
 - `TaskExecutionId`: `str`
@@ -1866,14 +3181,27 @@ Optional fields:
 - `EndTime`: `datetime`
 - `OwnerInformation`: `str`
 - `WindowTargetId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMaintenanceWindowExecutionTaskResultTypeDef
+## GetMaintenanceWindowExecutionTaskRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import GetMaintenanceWindowExecutionTaskResultTypeDef
+from mypy_boto3_ssm.type_defs import GetMaintenanceWindowExecutionTaskRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `WindowExecutionId`: `str`
+- `TaskId`: `str`
+
+## GetMaintenanceWindowExecutionTaskResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import GetMaintenanceWindowExecutionTaskResultResponseTypeDef
+```
+
+Required fields:
 
 - `WindowExecutionId`: `str`
 - `TaskExecutionId`: `str`
@@ -1891,14 +3219,26 @@ Optional fields:
 - `StatusDetails`: `str`
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMaintenanceWindowResultTypeDef
+## GetMaintenanceWindowRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import GetMaintenanceWindowResultTypeDef
+from mypy_boto3_ssm.type_defs import GetMaintenanceWindowRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `WindowId`: `str`
+
+## GetMaintenanceWindowResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import GetMaintenanceWindowResultResponseTypeDef
+```
+
+Required fields:
 
 - `WindowId`: `str`
 - `Name`: `str`
@@ -1915,14 +3255,27 @@ Optional fields:
 - `Enabled`: `bool`
 - `CreatedDate`: `datetime`
 - `ModifiedDate`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMaintenanceWindowTaskResultTypeDef
+## GetMaintenanceWindowTaskRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import GetMaintenanceWindowTaskResultTypeDef
+from mypy_boto3_ssm.type_defs import GetMaintenanceWindowTaskRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `WindowId`: `str`
+- `WindowTaskId`: `str`
+
+## GetMaintenanceWindowTaskResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import GetMaintenanceWindowTaskResultResponseTypeDef
+```
+
+Required fields:
 
 - `WindowId`: `str`
 - `WindowTaskId`: `str`
@@ -1941,104 +3294,251 @@ Optional fields:
 - `LoggingInfo`: [LoggingInfoTypeDef](./type_defs.md#logginginfotypedef)
 - `Name`: `str`
 - `Description`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetOpsItemResponseTypeDef
+## GetOpsItemRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import GetOpsItemResponseTypeDef
+from mypy_boto3_ssm.type_defs import GetOpsItemRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `OpsItemId`: `str`
+
+## GetOpsItemResponseResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import GetOpsItemResponseResponseTypeDef
+```
+
+Required fields:
 
 - `OpsItem`: [OpsItemTypeDef](./type_defs.md#opsitemtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetOpsMetadataResultTypeDef
+## GetOpsMetadataRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import GetOpsMetadataResultTypeDef
+from mypy_boto3_ssm.type_defs import GetOpsMetadataRequestTypeDef
 ```
 
+Required fields:
+
+- `OpsMetadataArn`: `str`
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## GetOpsMetadataResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import GetOpsMetadataResultResponseTypeDef
+```
+
+Required fields:
 
 - `ResourceId`: `str`
 - `Metadata`: `Dict`\[`str`,
   [MetadataValueTypeDef](./type_defs.md#metadatavaluetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetOpsSummaryResultTypeDef
+## GetOpsSummaryRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import GetOpsSummaryResultTypeDef
+from mypy_boto3_ssm.type_defs import GetOpsSummaryRequestTypeDef
 ```
 
 Optional fields:
+
+- `SyncName`: `str`
+- `Filters`: `List`\[[OpsFilterTypeDef](./type_defs.md#opsfiltertypedef)\]
+- `Aggregators`:
+  `List`\[[OpsAggregatorTypeDef](./type_defs.md#opsaggregatortypedef)\]
+- `ResultAttributes`:
+  `List`\[[OpsResultAttributeTypeDef](./type_defs.md#opsresultattributetypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## GetOpsSummaryResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import GetOpsSummaryResultResponseTypeDef
+```
+
+Required fields:
 
 - `Entities`: `List`\[[OpsEntityTypeDef](./type_defs.md#opsentitytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetParameterHistoryResultTypeDef
+## GetParameterHistoryRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import GetParameterHistoryResultTypeDef
+from mypy_boto3_ssm.type_defs import GetParameterHistoryRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+
 Optional fields:
+
+- `WithDecryption`: `bool`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## GetParameterHistoryResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import GetParameterHistoryResultResponseTypeDef
+```
+
+Required fields:
 
 - `Parameters`:
   `List`\[[ParameterHistoryTypeDef](./type_defs.md#parameterhistorytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetParameterResultTypeDef
+## GetParameterRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import GetParameterResultTypeDef
+from mypy_boto3_ssm.type_defs import GetParameterRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+
 Optional fields:
+
+- `WithDecryption`: `bool`
+
+## GetParameterResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import GetParameterResultResponseTypeDef
+```
+
+Required fields:
 
 - `Parameter`: [ParameterTypeDef](./type_defs.md#parametertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetParametersByPathResultTypeDef
+## GetParametersByPathRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import GetParametersByPathResultTypeDef
+from mypy_boto3_ssm.type_defs import GetParametersByPathRequestTypeDef
 ```
 
+Required fields:
+
+- `Path`: `str`
+
 Optional fields:
+
+- `Recursive`: `bool`
+- `ParameterFilters`:
+  `List`\[[ParameterStringFilterTypeDef](./type_defs.md#parameterstringfiltertypedef)\]
+- `WithDecryption`: `bool`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## GetParametersByPathResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import GetParametersByPathResultResponseTypeDef
+```
+
+Required fields:
 
 - `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetParametersResultTypeDef
+## GetParametersRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import GetParametersResultTypeDef
+from mypy_boto3_ssm.type_defs import GetParametersRequestTypeDef
 ```
 
+Required fields:
+
+- `Names`: `List`\[`str`\]
+
 Optional fields:
+
+- `WithDecryption`: `bool`
+
+## GetParametersResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import GetParametersResultResponseTypeDef
+```
+
+Required fields:
 
 - `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 - `InvalidParameters`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPatchBaselineForPatchGroupResultTypeDef
+## GetPatchBaselineForPatchGroupRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import GetPatchBaselineForPatchGroupResultTypeDef
+from mypy_boto3_ssm.type_defs import GetPatchBaselineForPatchGroupRequestTypeDef
 ```
 
+Required fields:
+
+- `PatchGroup`: `str`
+
 Optional fields:
+
+- `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
+
+## GetPatchBaselineForPatchGroupResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import GetPatchBaselineForPatchGroupResultResponseTypeDef
+```
+
+Required fields:
 
 - `BaselineId`: `str`
 - `PatchGroup`: `str`
 - `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPatchBaselineResultTypeDef
+## GetPatchBaselineRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import GetPatchBaselineResultTypeDef
+from mypy_boto3_ssm.type_defs import GetPatchBaselineRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `BaselineId`: `str`
+
+## GetPatchBaselineResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import GetPatchBaselineResultResponseTypeDef
+```
+
+Required fields:
 
 - `BaselineId`: `str`
 - `Name`: `str`
@@ -2058,17 +3558,31 @@ Optional fields:
 - `ModifiedDate`: `datetime`
 - `Description`: `str`
 - `Sources`: `List`\[[PatchSourceTypeDef](./type_defs.md#patchsourcetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetServiceSettingResultTypeDef
+## GetServiceSettingRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import GetServiceSettingResultTypeDef
+from mypy_boto3_ssm.type_defs import GetServiceSettingRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `SettingId`: `str`
+
+## GetServiceSettingResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import GetServiceSettingResultResponseTypeDef
+```
+
+Required fields:
 
 - `ServiceSetting`:
   [ServiceSettingTypeDef](./type_defs.md#servicesettingtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## InstanceAggregatedAssociationOverviewTypeDef
 
@@ -2397,95 +3911,229 @@ Optional fields:
 - `CaptureTime`: `str`
 - `ContentHash`: `str`
 
-## LabelParameterVersionResultTypeDef
+## LabelParameterVersionRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import LabelParameterVersionResultTypeDef
+from mypy_boto3_ssm.type_defs import LabelParameterVersionRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+- `Labels`: `List`\[`str`\]
+
 Optional fields:
+
+- `ParameterVersion`: `int`
+
+## LabelParameterVersionResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import LabelParameterVersionResultResponseTypeDef
+```
+
+Required fields:
 
 - `InvalidLabels`: `List`\[`str`\]
 - `ParameterVersion`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAssociationVersionsResultTypeDef
+## ListAssociationVersionsRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import ListAssociationVersionsResultTypeDef
+from mypy_boto3_ssm.type_defs import ListAssociationVersionsRequestTypeDef
 ```
 
+Required fields:
+
+- `AssociationId`: `str`
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListAssociationVersionsResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import ListAssociationVersionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `AssociationVersions`:
   `List`\[[AssociationVersionInfoTypeDef](./type_defs.md#associationversioninfotypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAssociationsResultTypeDef
+## ListAssociationsRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import ListAssociationsResultTypeDef
+from mypy_boto3_ssm.type_defs import ListAssociationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `AssociationFilterList`:
+  `List`\[[AssociationFilterTypeDef](./type_defs.md#associationfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListAssociationsResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import ListAssociationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Associations`:
   `List`\[[AssociationTypeDef](./type_defs.md#associationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListCommandInvocationsResultTypeDef
+## ListCommandInvocationsRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import ListCommandInvocationsResultTypeDef
+from mypy_boto3_ssm.type_defs import ListCommandInvocationsRequestTypeDef
 ```
 
 Optional fields:
+
+- `CommandId`: `str`
+- `InstanceId`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`:
+  `List`\[[CommandFilterTypeDef](./type_defs.md#commandfiltertypedef)\]
+- `Details`: `bool`
+
+## ListCommandInvocationsResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import ListCommandInvocationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `CommandInvocations`:
   `List`\[[CommandInvocationTypeDef](./type_defs.md#commandinvocationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListCommandsResultTypeDef
+## ListCommandsRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import ListCommandsResultTypeDef
+from mypy_boto3_ssm.type_defs import ListCommandsRequestTypeDef
 ```
 
 Optional fields:
+
+- `CommandId`: `str`
+- `InstanceId`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Filters`:
+  `List`\[[CommandFilterTypeDef](./type_defs.md#commandfiltertypedef)\]
+
+## ListCommandsResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import ListCommandsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Commands`: `List`\[[CommandTypeDef](./type_defs.md#commandtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListComplianceItemsResultTypeDef
+## ListComplianceItemsRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import ListComplianceItemsResultTypeDef
+from mypy_boto3_ssm.type_defs import ListComplianceItemsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`:
+  `List`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
+- `ResourceIds`: `List`\[`str`\]
+- `ResourceTypes`: `List`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListComplianceItemsResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import ListComplianceItemsResultResponseTypeDef
+```
+
+Required fields:
 
 - `ComplianceItems`:
   `List`\[[ComplianceItemTypeDef](./type_defs.md#complianceitemtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListComplianceSummariesResultTypeDef
+## ListComplianceSummariesRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import ListComplianceSummariesResultTypeDef
+from mypy_boto3_ssm.type_defs import ListComplianceSummariesRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`:
+  `List`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListComplianceSummariesResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import ListComplianceSummariesResultResponseTypeDef
+```
+
+Required fields:
 
 - `ComplianceSummaryItems`:
   `List`\[[ComplianceSummaryItemTypeDef](./type_defs.md#compliancesummaryitemtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDocumentMetadataHistoryResponseTypeDef
+## ListDocumentMetadataHistoryRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import ListDocumentMetadataHistoryResponseTypeDef
+from mypy_boto3_ssm.type_defs import ListDocumentMetadataHistoryRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+- `Metadata`: `Literal['DocumentReviews']` (see
+  [DocumentMetadataEnumType](./literals.md#documentmetadataenumtype))
+
 Optional fields:
+
+- `DocumentVersion`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListDocumentMetadataHistoryResponseResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import ListDocumentMetadataHistoryResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Name`: `str`
 - `DocumentVersion`: `str`
@@ -2493,38 +4141,92 @@ Optional fields:
 - `Metadata`:
   [DocumentMetadataResponseInfoTypeDef](./type_defs.md#documentmetadataresponseinfotypedef)
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDocumentVersionsResultTypeDef
+## ListDocumentVersionsRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import ListDocumentVersionsResultTypeDef
+from mypy_boto3_ssm.type_defs import ListDocumentVersionsRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListDocumentVersionsResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import ListDocumentVersionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `DocumentVersions`:
   `List`\[[DocumentVersionInfoTypeDef](./type_defs.md#documentversioninfotypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDocumentsResultTypeDef
+## ListDocumentsRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import ListDocumentsResultTypeDef
+from mypy_boto3_ssm.type_defs import ListDocumentsRequestTypeDef
 ```
 
 Optional fields:
+
+- `DocumentFilterList`:
+  `List`\[[DocumentFilterTypeDef](./type_defs.md#documentfiltertypedef)\]
+- `Filters`:
+  `List`\[[DocumentKeyValuesFilterTypeDef](./type_defs.md#documentkeyvaluesfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListDocumentsResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import ListDocumentsResultResponseTypeDef
+```
+
+Required fields:
 
 - `DocumentIdentifiers`:
   `List`\[[DocumentIdentifierTypeDef](./type_defs.md#documentidentifiertypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListInventoryEntriesResultTypeDef
+## ListInventoryEntriesRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import ListInventoryEntriesResultTypeDef
+from mypy_boto3_ssm.type_defs import ListInventoryEntriesRequestTypeDef
 ```
 
+Required fields:
+
+- `InstanceId`: `str`
+- `TypeName`: `str`
+
 Optional fields:
+
+- `Filters`:
+  `List`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListInventoryEntriesResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import ListInventoryEntriesResultResponseTypeDef
+```
+
+Required fields:
 
 - `TypeName`: `str`
 - `InstanceId`: `str`
@@ -2532,76 +4234,167 @@ Optional fields:
 - `CaptureTime`: `str`
 - `Entries`: `List`\[`Dict`\[`str`, `str`\]\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListOpsItemEventsResponseTypeDef
+## ListOpsItemEventsRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import ListOpsItemEventsResponseTypeDef
+from mypy_boto3_ssm.type_defs import ListOpsItemEventsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`:
+  `List`\[[OpsItemEventFilterTypeDef](./type_defs.md#opsitemeventfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListOpsItemEventsResponseResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import ListOpsItemEventsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `Summaries`:
   `List`\[[OpsItemEventSummaryTypeDef](./type_defs.md#opsitemeventsummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListOpsItemRelatedItemsResponseTypeDef
+## ListOpsItemRelatedItemsRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import ListOpsItemRelatedItemsResponseTypeDef
+from mypy_boto3_ssm.type_defs import ListOpsItemRelatedItemsRequestTypeDef
 ```
 
 Optional fields:
+
+- `OpsItemId`: `str`
+- `Filters`:
+  `List`\[[OpsItemRelatedItemsFilterTypeDef](./type_defs.md#opsitemrelateditemsfiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListOpsItemRelatedItemsResponseResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import ListOpsItemRelatedItemsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `Summaries`:
   `List`\[[OpsItemRelatedItemSummaryTypeDef](./type_defs.md#opsitemrelateditemsummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListOpsMetadataResultTypeDef
+## ListOpsMetadataRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import ListOpsMetadataResultTypeDef
+from mypy_boto3_ssm.type_defs import ListOpsMetadataRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`:
+  `List`\[[OpsMetadataFilterTypeDef](./type_defs.md#opsmetadatafiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListOpsMetadataResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import ListOpsMetadataResultResponseTypeDef
+```
+
+Required fields:
 
 - `OpsMetadataList`:
   `List`\[[OpsMetadataTypeDef](./type_defs.md#opsmetadatatypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListResourceComplianceSummariesResultTypeDef
+## ListResourceComplianceSummariesRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import ListResourceComplianceSummariesResultTypeDef
+from mypy_boto3_ssm.type_defs import ListResourceComplianceSummariesRequestTypeDef
 ```
 
 Optional fields:
+
+- `Filters`:
+  `List`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListResourceComplianceSummariesResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import ListResourceComplianceSummariesResultResponseTypeDef
+```
+
+Required fields:
 
 - `ResourceComplianceSummaryItems`:
   `List`\[[ResourceComplianceSummaryItemTypeDef](./type_defs.md#resourcecompliancesummaryitemtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListResourceDataSyncResultTypeDef
+## ListResourceDataSyncRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import ListResourceDataSyncResultTypeDef
+from mypy_boto3_ssm.type_defs import ListResourceDataSyncRequestTypeDef
 ```
 
 Optional fields:
+
+- `SyncType`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListResourceDataSyncResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import ListResourceDataSyncResultResponseTypeDef
+```
+
+Required fields:
 
 - `ResourceDataSyncItems`:
   `List`\[[ResourceDataSyncItemTypeDef](./type_defs.md#resourcedatasyncitemtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResultTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import ListTagsForResourceResultTypeDef
+from mypy_boto3_ssm.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceType`:
+  [ResourceTypeForTaggingType](./literals.md#resourcetypefortaggingtype)
+- `ResourceId`: `str`
+
+## ListTagsForResourceResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import ListTagsForResourceResultResponseTypeDef
+```
+
+Required fields:
 
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LoggingInfoTypeDef
 
@@ -2740,7 +4533,7 @@ Optional fields:
 
 - `ClientContext`: `str`
 - `Qualifier`: `str`
-- `Payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+- `Payload`: `bytes`
 
 ## MaintenanceWindowRunCommandParametersTypeDef
 
@@ -2853,6 +4646,24 @@ from mypy_boto3_ssm.type_defs import MetadataValueTypeDef
 Optional fields:
 
 - `Value`: `str`
+
+## ModifyDocumentPermissionRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import ModifyDocumentPermissionRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `PermissionType`: `Literal['Share']` (see
+  [DocumentPermissionTypeType](./literals.md#documentpermissiontypetype))
+
+Optional fields:
+
+- `AccountIdsToAdd`: `List`\[`str`\]
+- `AccountIdsToRemove`: `List`\[`str`\]
+- `SharedDocumentVersion`: `str`
 
 ## NonCompliantSummaryTypeDef
 
@@ -3439,67 +5250,206 @@ Optional fields:
 - `CancelledSteps`: `int`
 - `TimedOutSteps`: `int`
 
-## PutInventoryResultTypeDef
+## PutComplianceItemsRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import PutInventoryResultTypeDef
+from mypy_boto3_ssm.type_defs import PutComplianceItemsRequestTypeDef
 ```
 
+Required fields:
+
+- `ResourceId`: `str`
+- `ResourceType`: `str`
+- `ComplianceType`: `str`
+- `ExecutionSummary`:
+  [ComplianceExecutionSummaryTypeDef](./type_defs.md#complianceexecutionsummarytypedef)
+- `Items`:
+  `List`\[[ComplianceItemEntryTypeDef](./type_defs.md#complianceitementrytypedef)\]
+
 Optional fields:
+
+- `ItemContentHash`: `str`
+- `UploadType`:
+  [ComplianceUploadTypeType](./literals.md#complianceuploadtypetype)
+
+## PutInventoryRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import PutInventoryRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `Items`:
+  `List`\[[InventoryItemTypeDef](./type_defs.md#inventoryitemtypedef)\]
+
+## PutInventoryResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import PutInventoryResultResponseTypeDef
+```
+
+Required fields:
 
 - `Message`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutParameterResultTypeDef
+## PutParameterRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import PutParameterResultTypeDef
+from mypy_boto3_ssm.type_defs import PutParameterRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+- `Value`: `str`
+
 Optional fields:
+
+- `Description`: `str`
+- `Type`: [ParameterTypeType](./literals.md#parametertypetype)
+- `KeyId`: `str`
+- `Overwrite`: `bool`
+- `AllowedPattern`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tier`: [ParameterTierType](./literals.md#parametertiertype)
+- `Policies`: `str`
+- `DataType`: `str`
+
+## PutParameterResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import PutParameterResultResponseTypeDef
+```
+
+Required fields:
 
 - `Version`: `int`
 - `Tier`: [ParameterTierType](./literals.md#parametertiertype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RegisterDefaultPatchBaselineResultTypeDef
+## RegisterDefaultPatchBaselineRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import RegisterDefaultPatchBaselineResultTypeDef
+from mypy_boto3_ssm.type_defs import RegisterDefaultPatchBaselineRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `BaselineId`: `str`
 
-## RegisterPatchBaselineForPatchGroupResultTypeDef
+## RegisterDefaultPatchBaselineResultResponseTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import RegisterPatchBaselineForPatchGroupResultTypeDef
+from mypy_boto3_ssm.type_defs import RegisterDefaultPatchBaselineResultResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `BaselineId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## RegisterPatchBaselineForPatchGroupRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import RegisterPatchBaselineForPatchGroupRequestTypeDef
+```
+
+Required fields:
 
 - `BaselineId`: `str`
 - `PatchGroup`: `str`
 
-## RegisterTargetWithMaintenanceWindowResultTypeDef
+## RegisterPatchBaselineForPatchGroupResultResponseTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import RegisterTargetWithMaintenanceWindowResultTypeDef
+from mypy_boto3_ssm.type_defs import RegisterPatchBaselineForPatchGroupResultResponseTypeDef
 ```
 
+Required fields:
+
+- `BaselineId`: `str`
+- `PatchGroup`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## RegisterTargetWithMaintenanceWindowRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import RegisterTargetWithMaintenanceWindowRequestTypeDef
+```
+
+Required fields:
+
+- `WindowId`: `str`
+- `ResourceType`:
+  [MaintenanceWindowResourceTypeType](./literals.md#maintenancewindowresourcetypetype)
+- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+
 Optional fields:
+
+- `OwnerInformation`: `str`
+- `Name`: `str`
+- `Description`: `str`
+- `ClientToken`: `str`
+
+## RegisterTargetWithMaintenanceWindowResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import RegisterTargetWithMaintenanceWindowResultResponseTypeDef
+```
+
+Required fields:
 
 - `WindowTargetId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RegisterTaskWithMaintenanceWindowResultTypeDef
+## RegisterTaskWithMaintenanceWindowRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import RegisterTaskWithMaintenanceWindowResultTypeDef
+from mypy_boto3_ssm.type_defs import RegisterTaskWithMaintenanceWindowRequestTypeDef
 ```
+
+Required fields:
+
+- `WindowId`: `str`
+- `TaskArn`: `str`
+- `TaskType`:
+  [MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype)
 
 Optional fields:
 
+- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `ServiceRoleArn`: `str`
+- `TaskParameters`: `Dict`\[`str`,
+  [MaintenanceWindowTaskParameterValueExpressionTypeDef](./type_defs.md#maintenancewindowtaskparametervalueexpressiontypedef)\]
+- `TaskInvocationParameters`:
+  [MaintenanceWindowTaskInvocationParametersTypeDef](./type_defs.md#maintenancewindowtaskinvocationparameterstypedef)
+- `Priority`: `int`
+- `MaxConcurrency`: `str`
+- `MaxErrors`: `str`
+- `LoggingInfo`: [LoggingInfoTypeDef](./type_defs.md#logginginfotypedef)
+- `Name`: `str`
+- `Description`: `str`
+- `ClientToken`: `str`
+
+## RegisterTaskWithMaintenanceWindowResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import RegisterTaskWithMaintenanceWindowResultResponseTypeDef
+```
+
+Required fields:
+
 - `WindowTaskId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## RelatedOpsItemTypeDef
 
@@ -3511,16 +5461,41 @@ Required fields:
 
 - `OpsItemId`: `str`
 
-## ResetServiceSettingResultTypeDef
+## RemoveTagsFromResourceRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import ResetServiceSettingResultTypeDef
+from mypy_boto3_ssm.type_defs import RemoveTagsFromResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceType`:
+  [ResourceTypeForTaggingType](./literals.md#resourcetypefortaggingtype)
+- `ResourceId`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## ResetServiceSettingRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import ResetServiceSettingRequestTypeDef
+```
+
+Required fields:
+
+- `SettingId`: `str`
+
+## ResetServiceSettingResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import ResetServiceSettingResultResponseTypeDef
+```
+
+Required fields:
 
 - `ServiceSetting`:
   [ServiceSettingTypeDef](./type_defs.md#servicesettingtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ResolvedTargetsTypeDef
 
@@ -3665,6 +5640,20 @@ Optional fields:
 - `State`: `str`
 - `EnableAllOpsDataSources`: `bool`
 
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
 ## ResultAttributeTypeDef
 
 ```python
@@ -3675,17 +5664,29 @@ Required fields:
 
 - `TypeName`: `str`
 
-## ResumeSessionResponseTypeDef
+## ResumeSessionRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import ResumeSessionResponseTypeDef
+from mypy_boto3_ssm.type_defs import ResumeSessionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `SessionId`: `str`
+
+## ResumeSessionResponseResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import ResumeSessionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `SessionId`: `str`
 - `TokenValue`: `str`
 - `StreamUrl`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ReviewInformationTypeDef
 
@@ -3754,15 +5755,64 @@ Optional fields:
 - `Name`: `str`
 - `ExecutionTime`: `str`
 
-## SendCommandResultTypeDef
+## SendAutomationSignalRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import SendCommandResultTypeDef
+from mypy_boto3_ssm.type_defs import SendAutomationSignalRequestTypeDef
 ```
+
+Required fields:
+
+- `AutomationExecutionId`: `str`
+- `SignalType`: [SignalTypeType](./literals.md#signaltypetype)
 
 Optional fields:
 
+- `Payload`: `Dict`\[`str`, `List`\[`str`\]\]
+
+## SendCommandRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import SendCommandRequestTypeDef
+```
+
+Required fields:
+
+- `DocumentName`: `str`
+
+Optional fields:
+
+- `InstanceIds`: `List`\[`str`\]
+- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `DocumentVersion`: `str`
+- `DocumentHash`: `str`
+- `DocumentHashType`:
+  [DocumentHashTypeType](./literals.md#documenthashtypetype)
+- `TimeoutSeconds`: `int`
+- `Comment`: `str`
+- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `OutputS3Region`: `str`
+- `OutputS3BucketName`: `str`
+- `OutputS3KeyPrefix`: `str`
+- `MaxConcurrency`: `str`
+- `MaxErrors`: `str`
+- `ServiceRoleArn`: `str`
+- `NotificationConfig`:
+  [NotificationConfigTypeDef](./type_defs.md#notificationconfigtypedef)
+- `CloudWatchOutputConfig`:
+  [CloudWatchOutputConfigTypeDef](./type_defs.md#cloudwatchoutputconfigtypedef)
+
+## SendCommandResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import SendCommandResultResponseTypeDef
+```
+
+Required fields:
+
 - `Command`: [CommandTypeDef](./type_defs.md#commandtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ServiceSettingTypeDef
 
@@ -3835,37 +5885,115 @@ Optional fields:
 - `InformationalCount`: `int`
 - `UnspecifiedCount`: `int`
 
-## StartAutomationExecutionResultTypeDef
+## StartAssociationsOnceRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import StartAutomationExecutionResultTypeDef
+from mypy_boto3_ssm.type_defs import StartAssociationsOnceRequestTypeDef
 ```
 
+Required fields:
+
+- `AssociationIds`: `List`\[`str`\]
+
+## StartAutomationExecutionRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import StartAutomationExecutionRequestTypeDef
+```
+
+Required fields:
+
+- `DocumentName`: `str`
+
 Optional fields:
+
+- `DocumentVersion`: `str`
+- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `ClientToken`: `str`
+- `Mode`: [ExecutionModeType](./literals.md#executionmodetype)
+- `TargetParameterName`: `str`
+- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `TargetMaps`: `List`\[`Dict`\[`str`, `List`\[`str`\]\]\]
+- `MaxConcurrency`: `str`
+- `MaxErrors`: `str`
+- `TargetLocations`:
+  `List`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## StartAutomationExecutionResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import StartAutomationExecutionResultResponseTypeDef
+```
+
+Required fields:
 
 - `AutomationExecutionId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartChangeRequestExecutionResultTypeDef
+## StartChangeRequestExecutionRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import StartChangeRequestExecutionResultTypeDef
+from mypy_boto3_ssm.type_defs import StartChangeRequestExecutionRequestTypeDef
 ```
 
+Required fields:
+
+- `DocumentName`: `str`
+- `Runbooks`: `List`\[[RunbookTypeDef](./type_defs.md#runbooktypedef)\]
+
 Optional fields:
+
+- `ScheduledTime`: `Union`\[`datetime`, `str`\]
+- `DocumentVersion`: `str`
+- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `ChangeRequestName`: `str`
+- `ClientToken`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ScheduledEndTime`: `Union`\[`datetime`, `str`\]
+- `ChangeDetails`: `str`
+
+## StartChangeRequestExecutionResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import StartChangeRequestExecutionResultResponseTypeDef
+```
+
+Required fields:
 
 - `AutomationExecutionId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartSessionResponseTypeDef
+## StartSessionRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import StartSessionResponseTypeDef
+from mypy_boto3_ssm.type_defs import StartSessionRequestTypeDef
 ```
 
+Required fields:
+
+- `Target`: `str`
+
 Optional fields:
+
+- `DocumentName`: `str`
+- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+
+## StartSessionResponseResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import StartSessionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `SessionId`: `str`
 - `TokenValue`: `str`
 - `StreamUrl`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## StepExecutionFilterTypeDef
 
@@ -3912,6 +6040,20 @@ Optional fields:
 - `TargetLocation`:
   [TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)
 
+## StopAutomationExecutionRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import StopAutomationExecutionRequestTypeDef
+```
+
+Required fields:
+
+- `AutomationExecutionId`: `str`
+
+Optional fields:
+
+- `Type`: [StopTypeType](./literals.md#stoptypetype)
+
 ## TagTypeDef
 
 ```python
@@ -3948,78 +6090,231 @@ Optional fields:
 - `Key`: `str`
 - `Values`: `List`\[`str`\]
 
-## TerminateSessionResponseTypeDef
+## TerminateSessionRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import TerminateSessionResponseTypeDef
+from mypy_boto3_ssm.type_defs import TerminateSessionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `SessionId`: `str`
 
-## UnlabelParameterVersionResultTypeDef
+## TerminateSessionResponseResponseTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import UnlabelParameterVersionResultTypeDef
+from mypy_boto3_ssm.type_defs import TerminateSessionResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `SessionId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UnlabelParameterVersionRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import UnlabelParameterVersionRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `ParameterVersion`: `int`
+- `Labels`: `List`\[`str`\]
+
+## UnlabelParameterVersionResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import UnlabelParameterVersionResultResponseTypeDef
+```
+
+Required fields:
 
 - `RemovedLabels`: `List`\[`str`\]
 - `InvalidLabels`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateAssociationResultTypeDef
+## UpdateAssociationRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import UpdateAssociationResultTypeDef
+from mypy_boto3_ssm.type_defs import UpdateAssociationRequestTypeDef
 ```
 
+Required fields:
+
+- `AssociationId`: `str`
+
 Optional fields:
+
+- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `DocumentVersion`: `str`
+- `ScheduleExpression`: `str`
+- `OutputLocation`:
+  [InstanceAssociationOutputLocationTypeDef](./type_defs.md#instanceassociationoutputlocationtypedef)
+- `Name`: `str`
+- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `AssociationName`: `str`
+- `AssociationVersion`: `str`
+- `AutomationTargetParameterName`: `str`
+- `MaxErrors`: `str`
+- `MaxConcurrency`: `str`
+- `ComplianceSeverity`:
+  [AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype)
+- `SyncCompliance`:
+  [AssociationSyncComplianceType](./literals.md#associationsynccompliancetype)
+- `ApplyOnlyAtCronInterval`: `bool`
+- `CalendarNames`: `List`\[`str`\]
+- `TargetLocations`:
+  `List`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
+
+## UpdateAssociationResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import UpdateAssociationResultResponseTypeDef
+```
+
+Required fields:
 
 - `AssociationDescription`:
   [AssociationDescriptionTypeDef](./type_defs.md#associationdescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateAssociationStatusResultTypeDef
+## UpdateAssociationStatusRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import UpdateAssociationStatusResultTypeDef
+from mypy_boto3_ssm.type_defs import UpdateAssociationStatusRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Name`: `str`
+- `InstanceId`: `str`
+- `AssociationStatus`:
+  [AssociationStatusTypeDef](./type_defs.md#associationstatustypedef)
+
+## UpdateAssociationStatusResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import UpdateAssociationStatusResultResponseTypeDef
+```
+
+Required fields:
 
 - `AssociationDescription`:
   [AssociationDescriptionTypeDef](./type_defs.md#associationdescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateDocumentDefaultVersionResultTypeDef
+## UpdateDocumentDefaultVersionRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import UpdateDocumentDefaultVersionResultTypeDef
+from mypy_boto3_ssm.type_defs import UpdateDocumentDefaultVersionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Name`: `str`
+- `DocumentVersion`: `str`
+
+## UpdateDocumentDefaultVersionResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import UpdateDocumentDefaultVersionResultResponseTypeDef
+```
+
+Required fields:
 
 - `Description`:
   [DocumentDefaultVersionDescriptionTypeDef](./type_defs.md#documentdefaultversiondescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateDocumentResultTypeDef
+## UpdateDocumentMetadataRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import UpdateDocumentResultTypeDef
+from mypy_boto3_ssm.type_defs import UpdateDocumentMetadataRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+- `DocumentReviews`:
+  [DocumentReviewsTypeDef](./type_defs.md#documentreviewstypedef)
+
 Optional fields:
+
+- `DocumentVersion`: `str`
+
+## UpdateDocumentRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import UpdateDocumentRequestTypeDef
+```
+
+Required fields:
+
+- `Content`: `str`
+- `Name`: `str`
+
+Optional fields:
+
+- `Attachments`:
+  `List`\[[AttachmentsSourceTypeDef](./type_defs.md#attachmentssourcetypedef)\]
+- `DisplayName`: `str`
+- `VersionName`: `str`
+- `DocumentVersion`: `str`
+- `DocumentFormat`: [DocumentFormatType](./literals.md#documentformattype)
+- `TargetType`: `str`
+
+## UpdateDocumentResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import UpdateDocumentResultResponseTypeDef
+```
+
+Required fields:
 
 - `DocumentDescription`:
   [DocumentDescriptionTypeDef](./type_defs.md#documentdescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateMaintenanceWindowResultTypeDef
+## UpdateMaintenanceWindowRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import UpdateMaintenanceWindowResultTypeDef
+from mypy_boto3_ssm.type_defs import UpdateMaintenanceWindowRequestTypeDef
 ```
 
+Required fields:
+
+- `WindowId`: `str`
+
 Optional fields:
+
+- `Name`: `str`
+- `Description`: `str`
+- `StartDate`: `str`
+- `EndDate`: `str`
+- `Schedule`: `str`
+- `ScheduleTimezone`: `str`
+- `ScheduleOffset`: `int`
+- `Duration`: `int`
+- `Cutoff`: `int`
+- `AllowUnassociatedTargets`: `bool`
+- `Enabled`: `bool`
+- `Replace`: `bool`
+
+## UpdateMaintenanceWindowResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import UpdateMaintenanceWindowResultResponseTypeDef
+```
+
+Required fields:
 
 - `WindowId`: `str`
 - `Name`: `str`
@@ -4033,14 +6328,35 @@ Optional fields:
 - `Cutoff`: `int`
 - `AllowUnassociatedTargets`: `bool`
 - `Enabled`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateMaintenanceWindowTargetResultTypeDef
+## UpdateMaintenanceWindowTargetRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import UpdateMaintenanceWindowTargetResultTypeDef
+from mypy_boto3_ssm.type_defs import UpdateMaintenanceWindowTargetRequestTypeDef
 ```
 
+Required fields:
+
+- `WindowId`: `str`
+- `WindowTargetId`: `str`
+
 Optional fields:
+
+- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `OwnerInformation`: `str`
+- `Name`: `str`
+- `Description`: `str`
+- `Replace`: `bool`
+
+## UpdateMaintenanceWindowTargetResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import UpdateMaintenanceWindowTargetResultResponseTypeDef
+```
+
+Required fields:
 
 - `WindowId`: `str`
 - `WindowTargetId`: `str`
@@ -4048,14 +6364,44 @@ Optional fields:
 - `OwnerInformation`: `str`
 - `Name`: `str`
 - `Description`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateMaintenanceWindowTaskResultTypeDef
+## UpdateMaintenanceWindowTaskRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import UpdateMaintenanceWindowTaskResultTypeDef
+from mypy_boto3_ssm.type_defs import UpdateMaintenanceWindowTaskRequestTypeDef
 ```
 
+Required fields:
+
+- `WindowId`: `str`
+- `WindowTaskId`: `str`
+
 Optional fields:
+
+- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `TaskArn`: `str`
+- `ServiceRoleArn`: `str`
+- `TaskParameters`: `Dict`\[`str`,
+  [MaintenanceWindowTaskParameterValueExpressionTypeDef](./type_defs.md#maintenancewindowtaskparametervalueexpressiontypedef)\]
+- `TaskInvocationParameters`:
+  [MaintenanceWindowTaskInvocationParametersTypeDef](./type_defs.md#maintenancewindowtaskinvocationparameterstypedef)
+- `Priority`: `int`
+- `MaxConcurrency`: `str`
+- `MaxErrors`: `str`
+- `LoggingInfo`: [LoggingInfoTypeDef](./type_defs.md#logginginfotypedef)
+- `Name`: `str`
+- `Description`: `str`
+- `Replace`: `bool`
+
+## UpdateMaintenanceWindowTaskResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import UpdateMaintenanceWindowTaskResultResponseTypeDef
+```
+
+Required fields:
 
 - `WindowId`: `str`
 - `WindowTaskId`: `str`
@@ -4072,24 +6418,112 @@ Optional fields:
 - `LoggingInfo`: [LoggingInfoTypeDef](./type_defs.md#logginginfotypedef)
 - `Name`: `str`
 - `Description`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateOpsMetadataResultTypeDef
+## UpdateManagedInstanceRoleRequestTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import UpdateOpsMetadataResultTypeDef
+from mypy_boto3_ssm.type_defs import UpdateManagedInstanceRoleRequestTypeDef
 ```
 
+Required fields:
+
+- `InstanceId`: `str`
+- `IamRole`: `str`
+
+## UpdateOpsItemRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import UpdateOpsItemRequestTypeDef
+```
+
+Required fields:
+
+- `OpsItemId`: `str`
+
 Optional fields:
+
+- `Description`: `str`
+- `OperationalData`: `Dict`\[`str`,
+  [OpsItemDataValueTypeDef](./type_defs.md#opsitemdatavaluetypedef)\]
+- `OperationalDataToDelete`: `List`\[`str`\]
+- `Notifications`:
+  `List`\[[OpsItemNotificationTypeDef](./type_defs.md#opsitemnotificationtypedef)\]
+- `Priority`: `int`
+- `RelatedOpsItems`:
+  `List`\[[RelatedOpsItemTypeDef](./type_defs.md#relatedopsitemtypedef)\]
+- `Status`: [OpsItemStatusType](./literals.md#opsitemstatustype)
+- `Title`: `str`
+- `Category`: `str`
+- `Severity`: `str`
+- `ActualStartTime`: `Union`\[`datetime`, `str`\]
+- `ActualEndTime`: `Union`\[`datetime`, `str`\]
+- `PlannedStartTime`: `Union`\[`datetime`, `str`\]
+- `PlannedEndTime`: `Union`\[`datetime`, `str`\]
+
+## UpdateOpsMetadataRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import UpdateOpsMetadataRequestTypeDef
+```
+
+Required fields:
 
 - `OpsMetadataArn`: `str`
 
-## UpdatePatchBaselineResultTypeDef
+Optional fields:
+
+- `MetadataToUpdate`: `Dict`\[`str`,
+  [MetadataValueTypeDef](./type_defs.md#metadatavaluetypedef)\]
+- `KeysToDelete`: `List`\[`str`\]
+
+## UpdateOpsMetadataResultResponseTypeDef
 
 ```python
-from mypy_boto3_ssm.type_defs import UpdatePatchBaselineResultTypeDef
+from mypy_boto3_ssm.type_defs import UpdateOpsMetadataResultResponseTypeDef
 ```
 
+Required fields:
+
+- `OpsMetadataArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdatePatchBaselineRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import UpdatePatchBaselineRequestTypeDef
+```
+
+Required fields:
+
+- `BaselineId`: `str`
+
 Optional fields:
+
+- `Name`: `str`
+- `GlobalFilters`:
+  [PatchFilterGroupTypeDef](./type_defs.md#patchfiltergrouptypedef)
+- `ApprovalRules`:
+  [PatchRuleGroupTypeDef](./type_defs.md#patchrulegrouptypedef)
+- `ApprovedPatches`: `List`\[`str`\]
+- `ApprovedPatchesComplianceLevel`:
+  [PatchComplianceLevelType](./literals.md#patchcomplianceleveltype)
+- `ApprovedPatchesEnableNonSecurity`: `bool`
+- `RejectedPatches`: `List`\[`str`\]
+- `RejectedPatchesAction`: [PatchActionType](./literals.md#patchactiontype)
+- `Description`: `str`
+- `Sources`: `List`\[[PatchSourceTypeDef](./type_defs.md#patchsourcetypedef)\]
+- `Replace`: `bool`
+
+## UpdatePatchBaselineResultResponseTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import UpdatePatchBaselineResultResponseTypeDef
+```
+
+Required fields:
 
 - `BaselineId`: `str`
 - `Name`: `str`
@@ -4108,6 +6542,32 @@ Optional fields:
 - `ModifiedDate`: `datetime`
 - `Description`: `str`
 - `Sources`: `List`\[[PatchSourceTypeDef](./type_defs.md#patchsourcetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateResourceDataSyncRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import UpdateResourceDataSyncRequestTypeDef
+```
+
+Required fields:
+
+- `SyncName`: `str`
+- `SyncType`: `str`
+- `SyncSource`:
+  [ResourceDataSyncSourceTypeDef](./type_defs.md#resourcedatasyncsourcetypedef)
+
+## UpdateServiceSettingRequestTypeDef
+
+```python
+from mypy_boto3_ssm.type_defs import UpdateServiceSettingRequestTypeDef
+```
+
+Required fields:
+
+- `SettingId`: `str`
+- `SettingValue`: `str`
 
 ## WaiterConfigTypeDef
 

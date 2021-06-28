@@ -162,11 +162,16 @@ Exceptions:
 
 ### add_source_identifier_to_subscription
 
+Adds a source identifier to an existing event notification subscription.
+
 Type annotations for
 `boto3.client("docdb").add_source_identifier_to_subscription` method.
 
 Boto3 documentation:
 [DocDB.Client.add_source_identifier_to_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.add_source_identifier_to_subscription)
+
+Arguments mapping described in
+[AddSourceIdentifierToSubscriptionMessageTypeDef](./type_defs.md#addsourceidentifiertosubscriptionmessagetypedef).
 
 Keyword-only arguments:
 
@@ -174,14 +179,19 @@ Keyword-only arguments:
 - `SourceIdentifier`: `str` *(required)*
 
 Returns
-[AddSourceIdentifierToSubscriptionResultTypeDef](./type_defs.md#addsourceidentifiertosubscriptionresulttypedef).
+[AddSourceIdentifierToSubscriptionResultResponseTypeDef](./type_defs.md#addsourceidentifiertosubscriptionresultresponsetypedef).
 
 ### add_tags_to_resource
+
+Adds metadata tags to an Amazon DocumentDB resource.
 
 Type annotations for `boto3.client("docdb").add_tags_to_resource` method.
 
 Boto3 documentation:
 [DocDB.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.add_tags_to_resource)
+
+Arguments mapping described in
+[AddTagsToResourceMessageTypeDef](./type_defs.md#addtagstoresourcemessagetypedef).
 
 Keyword-only arguments:
 
@@ -190,11 +200,17 @@ Keyword-only arguments:
 
 ### apply_pending_maintenance_action
 
+Applies a pending maintenance action to a resource (for example, to an Amazon
+DocumentDB instance).
+
 Type annotations for `boto3.client("docdb").apply_pending_maintenance_action`
 method.
 
 Boto3 documentation:
 [DocDB.Client.apply_pending_maintenance_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.apply_pending_maintenance_action)
+
+Arguments mapping described in
+[ApplyPendingMaintenanceActionMessageTypeDef](./type_defs.md#applypendingmaintenanceactionmessagetypedef).
 
 Keyword-only arguments:
 
@@ -203,9 +219,11 @@ Keyword-only arguments:
 - `OptInType`: `str` *(required)*
 
 Returns
-[ApplyPendingMaintenanceActionResultTypeDef](./type_defs.md#applypendingmaintenanceactionresulttypedef).
+[ApplyPendingMaintenanceActionResultResponseTypeDef](./type_defs.md#applypendingmaintenanceactionresultresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("docdb").can_paginate` method.
 
@@ -220,11 +238,16 @@ Returns `bool`.
 
 ### copy_db_cluster_parameter_group
 
+Copies the specified cluster parameter group.
+
 Type annotations for `boto3.client("docdb").copy_db_cluster_parameter_group`
 method.
 
 Boto3 documentation:
 [DocDB.Client.copy_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.copy_db_cluster_parameter_group)
+
+Arguments mapping described in
+[CopyDBClusterParameterGroupMessageTypeDef](./type_defs.md#copydbclusterparametergroupmessagetypedef).
 
 Keyword-only arguments:
 
@@ -234,14 +257,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CopyDBClusterParameterGroupResultTypeDef](./type_defs.md#copydbclusterparametergroupresulttypedef).
+[CopyDBClusterParameterGroupResultResponseTypeDef](./type_defs.md#copydbclusterparametergroupresultresponsetypedef).
 
 ### copy_db_cluster_snapshot
+
+Copies a snapshot of a cluster.
 
 Type annotations for `boto3.client("docdb").copy_db_cluster_snapshot` method.
 
 Boto3 documentation:
 [DocDB.Client.copy_db_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.copy_db_cluster_snapshot)
+
+Arguments mapping described in
+[CopyDBClusterSnapshotMessageTypeDef](./type_defs.md#copydbclustersnapshotmessagetypedef).
 
 Keyword-only arguments:
 
@@ -254,14 +282,19 @@ Keyword-only arguments:
 - `SourceRegion`: `str`
 
 Returns
-[CopyDBClusterSnapshotResultTypeDef](./type_defs.md#copydbclustersnapshotresulttypedef).
+[CopyDBClusterSnapshotResultResponseTypeDef](./type_defs.md#copydbclustersnapshotresultresponsetypedef).
 
 ### create_db_cluster
+
+Creates a new Amazon DocumentDB cluster.
 
 Type annotations for `boto3.client("docdb").create_db_cluster` method.
 
 Boto3 documentation:
 [DocDB.Client.create_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.create_db_cluster)
+
+Arguments mapping described in
+[CreateDBClusterMessageTypeDef](./type_defs.md#createdbclustermessagetypedef).
 
 Keyword-only arguments:
 
@@ -288,15 +321,20 @@ Keyword-only arguments:
 - `SourceRegion`: `str`
 
 Returns
-[CreateDBClusterResultTypeDef](./type_defs.md#createdbclusterresulttypedef).
+[CreateDBClusterResultResponseTypeDef](./type_defs.md#createdbclusterresultresponsetypedef).
 
 ### create_db_cluster_parameter_group
+
+Creates a new cluster parameter group.
 
 Type annotations for `boto3.client("docdb").create_db_cluster_parameter_group`
 method.
 
 Boto3 documentation:
 [DocDB.Client.create_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.create_db_cluster_parameter_group)
+
+Arguments mapping described in
+[CreateDBClusterParameterGroupMessageTypeDef](./type_defs.md#createdbclusterparametergroupmessagetypedef).
 
 Keyword-only arguments:
 
@@ -306,14 +344,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDBClusterParameterGroupResultTypeDef](./type_defs.md#createdbclusterparametergroupresulttypedef).
+[CreateDBClusterParameterGroupResultResponseTypeDef](./type_defs.md#createdbclusterparametergroupresultresponsetypedef).
 
 ### create_db_cluster_snapshot
+
+Creates a snapshot of a cluster.
 
 Type annotations for `boto3.client("docdb").create_db_cluster_snapshot` method.
 
 Boto3 documentation:
 [DocDB.Client.create_db_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.create_db_cluster_snapshot)
+
+Arguments mapping described in
+[CreateDBClusterSnapshotMessageTypeDef](./type_defs.md#createdbclustersnapshotmessagetypedef).
 
 Keyword-only arguments:
 
@@ -322,14 +365,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDBClusterSnapshotResultTypeDef](./type_defs.md#createdbclustersnapshotresulttypedef).
+[CreateDBClusterSnapshotResultResponseTypeDef](./type_defs.md#createdbclustersnapshotresultresponsetypedef).
 
 ### create_db_instance
+
+Creates a new instance.
 
 Type annotations for `boto3.client("docdb").create_db_instance` method.
 
 Boto3 documentation:
 [DocDB.Client.create_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.create_db_instance)
+
+Arguments mapping described in
+[CreateDBInstanceMessageTypeDef](./type_defs.md#createdbinstancemessagetypedef).
 
 Keyword-only arguments:
 
@@ -344,14 +392,19 @@ Keyword-only arguments:
 - `PromotionTier`: `int`
 
 Returns
-[CreateDBInstanceResultTypeDef](./type_defs.md#createdbinstanceresulttypedef).
+[CreateDBInstanceResultResponseTypeDef](./type_defs.md#createdbinstanceresultresponsetypedef).
 
 ### create_db_subnet_group
+
+Creates a new subnet group.
 
 Type annotations for `boto3.client("docdb").create_db_subnet_group` method.
 
 Boto3 documentation:
 [DocDB.Client.create_db_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.create_db_subnet_group)
+
+Arguments mapping described in
+[CreateDBSubnetGroupMessageTypeDef](./type_defs.md#createdbsubnetgroupmessagetypedef).
 
 Keyword-only arguments:
 
@@ -361,14 +414,19 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDBSubnetGroupResultTypeDef](./type_defs.md#createdbsubnetgroupresulttypedef).
+[CreateDBSubnetGroupResultResponseTypeDef](./type_defs.md#createdbsubnetgroupresultresponsetypedef).
 
 ### create_event_subscription
+
+Creates an Amazon DocumentDB event notification subscription.
 
 Type annotations for `boto3.client("docdb").create_event_subscription` method.
 
 Boto3 documentation:
 [DocDB.Client.create_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.create_event_subscription)
+
+Arguments mapping described in
+[CreateEventSubscriptionMessageTypeDef](./type_defs.md#createeventsubscriptionmessagetypedef).
 
 Keyword-only arguments:
 
@@ -381,14 +439,20 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateEventSubscriptionResultTypeDef](./type_defs.md#createeventsubscriptionresulttypedef).
+[CreateEventSubscriptionResultResponseTypeDef](./type_defs.md#createeventsubscriptionresultresponsetypedef).
 
 ### create_global_cluster
+
+Creates an Amazon DocumentDB global cluster that can span multiple multiple
+Regions.
 
 Type annotations for `boto3.client("docdb").create_global_cluster` method.
 
 Boto3 documentation:
 [DocDB.Client.create_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.create_global_cluster)
+
+Arguments mapping described in
+[CreateGlobalClusterMessageTypeDef](./type_defs.md#createglobalclustermessagetypedef).
 
 Keyword-only arguments:
 
@@ -401,14 +465,19 @@ Keyword-only arguments:
 - `StorageEncrypted`: `bool`
 
 Returns
-[CreateGlobalClusterResultTypeDef](./type_defs.md#createglobalclusterresulttypedef).
+[CreateGlobalClusterResultResponseTypeDef](./type_defs.md#createglobalclusterresultresponsetypedef).
 
 ### delete_db_cluster
+
+Deletes a previously provisioned cluster.
 
 Type annotations for `boto3.client("docdb").delete_db_cluster` method.
 
 Boto3 documentation:
 [DocDB.Client.delete_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_db_cluster)
+
+Arguments mapping described in
+[DeleteDBClusterMessageTypeDef](./type_defs.md#deletedbclustermessagetypedef).
 
 Keyword-only arguments:
 
@@ -417,9 +486,11 @@ Keyword-only arguments:
 - `FinalDBSnapshotIdentifier`: `str`
 
 Returns
-[DeleteDBClusterResultTypeDef](./type_defs.md#deletedbclusterresulttypedef).
+[DeleteDBClusterResultResponseTypeDef](./type_defs.md#deletedbclusterresultresponsetypedef).
 
 ### delete_db_cluster_parameter_group
+
+Deletes a specified cluster parameter group.
 
 Type annotations for `boto3.client("docdb").delete_db_cluster_parameter_group`
 method.
@@ -427,44 +498,62 @@ method.
 Boto3 documentation:
 [DocDB.Client.delete_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_db_cluster_parameter_group)
 
+Arguments mapping described in
+[DeleteDBClusterParameterGroupMessageTypeDef](./type_defs.md#deletedbclusterparametergroupmessagetypedef).
+
 Keyword-only arguments:
 
 - `DBClusterParameterGroupName`: `str` *(required)*
 
 ### delete_db_cluster_snapshot
 
+Deletes a cluster snapshot.
+
 Type annotations for `boto3.client("docdb").delete_db_cluster_snapshot` method.
 
 Boto3 documentation:
 [DocDB.Client.delete_db_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_db_cluster_snapshot)
+
+Arguments mapping described in
+[DeleteDBClusterSnapshotMessageTypeDef](./type_defs.md#deletedbclustersnapshotmessagetypedef).
 
 Keyword-only arguments:
 
 - `DBClusterSnapshotIdentifier`: `str` *(required)*
 
 Returns
-[DeleteDBClusterSnapshotResultTypeDef](./type_defs.md#deletedbclustersnapshotresulttypedef).
+[DeleteDBClusterSnapshotResultResponseTypeDef](./type_defs.md#deletedbclustersnapshotresultresponsetypedef).
 
 ### delete_db_instance
+
+Deletes a previously provisioned instance.
 
 Type annotations for `boto3.client("docdb").delete_db_instance` method.
 
 Boto3 documentation:
 [DocDB.Client.delete_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_db_instance)
 
+Arguments mapping described in
+[DeleteDBInstanceMessageTypeDef](./type_defs.md#deletedbinstancemessagetypedef).
+
 Keyword-only arguments:
 
 - `DBInstanceIdentifier`: `str` *(required)*
 
 Returns
-[DeleteDBInstanceResultTypeDef](./type_defs.md#deletedbinstanceresulttypedef).
+[DeleteDBInstanceResultResponseTypeDef](./type_defs.md#deletedbinstanceresultresponsetypedef).
 
 ### delete_db_subnet_group
+
+Deletes a subnet group.
 
 Type annotations for `boto3.client("docdb").delete_db_subnet_group` method.
 
 Boto3 documentation:
 [DocDB.Client.delete_db_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_db_subnet_group)
+
+Arguments mapping described in
+[DeleteDBSubnetGroupMessageTypeDef](./type_defs.md#deletedbsubnetgroupmessagetypedef).
 
 Keyword-only arguments:
 
@@ -472,38 +561,54 @@ Keyword-only arguments:
 
 ### delete_event_subscription
 
+Deletes an Amazon DocumentDB event notification subscription.
+
 Type annotations for `boto3.client("docdb").delete_event_subscription` method.
 
 Boto3 documentation:
 [DocDB.Client.delete_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_event_subscription)
+
+Arguments mapping described in
+[DeleteEventSubscriptionMessageTypeDef](./type_defs.md#deleteeventsubscriptionmessagetypedef).
 
 Keyword-only arguments:
 
 - `SubscriptionName`: `str` *(required)*
 
 Returns
-[DeleteEventSubscriptionResultTypeDef](./type_defs.md#deleteeventsubscriptionresulttypedef).
+[DeleteEventSubscriptionResultResponseTypeDef](./type_defs.md#deleteeventsubscriptionresultresponsetypedef).
 
 ### delete_global_cluster
+
+Deletes a global cluster.
 
 Type annotations for `boto3.client("docdb").delete_global_cluster` method.
 
 Boto3 documentation:
 [DocDB.Client.delete_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.delete_global_cluster)
 
+Arguments mapping described in
+[DeleteGlobalClusterMessageTypeDef](./type_defs.md#deleteglobalclustermessagetypedef).
+
 Keyword-only arguments:
 
 - `GlobalClusterIdentifier`: `str` *(required)*
 
 Returns
-[DeleteGlobalClusterResultTypeDef](./type_defs.md#deleteglobalclusterresulttypedef).
+[DeleteGlobalClusterResultResponseTypeDef](./type_defs.md#deleteglobalclusterresultresponsetypedef).
 
 ### describe_certificates
+
+Returns a list of certificate authority (CA) certificates provided by Amazon
+DocumentDB for this account.
 
 Type annotations for `boto3.client("docdb").describe_certificates` method.
 
 Boto3 documentation:
 [DocDB.Client.describe_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_certificates)
+
+Arguments mapping described in
+[DescribeCertificatesMessageTypeDef](./type_defs.md#describecertificatesmessagetypedef).
 
 Keyword-only arguments:
 
@@ -512,15 +617,21 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-Returns [CertificateMessageTypeDef](./type_defs.md#certificatemessagetypedef).
+Returns
+[CertificateMessageResponseTypeDef](./type_defs.md#certificatemessageresponsetypedef).
 
 ### describe_db_cluster_parameter_groups
+
+Returns a list of `DBClusterParameterGroup` descriptions.
 
 Type annotations for
 `boto3.client("docdb").describe_db_cluster_parameter_groups` method.
 
 Boto3 documentation:
 [DocDB.Client.describe_db_cluster_parameter_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_cluster_parameter_groups)
+
+Arguments mapping described in
+[DescribeDBClusterParameterGroupsMessageTypeDef](./type_defs.md#describedbclusterparametergroupsmessagetypedef).
 
 Keyword-only arguments:
 
@@ -530,15 +641,20 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DBClusterParameterGroupsMessageTypeDef](./type_defs.md#dbclusterparametergroupsmessagetypedef).
+[DBClusterParameterGroupsMessageResponseTypeDef](./type_defs.md#dbclusterparametergroupsmessageresponsetypedef).
 
 ### describe_db_cluster_parameters
+
+Returns the detailed parameter list for a particular cluster parameter group.
 
 Type annotations for `boto3.client("docdb").describe_db_cluster_parameters`
 method.
 
 Boto3 documentation:
 [DocDB.Client.describe_db_cluster_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_cluster_parameters)
+
+Arguments mapping described in
+[DescribeDBClusterParametersMessageTypeDef](./type_defs.md#describedbclusterparametersmessagetypedef).
 
 Keyword-only arguments:
 
@@ -549,9 +665,12 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DBClusterParameterGroupDetailsTypeDef](./type_defs.md#dbclusterparametergroupdetailstypedef).
+[DBClusterParameterGroupDetailsResponseTypeDef](./type_defs.md#dbclusterparametergroupdetailsresponsetypedef).
 
 ### describe_db_cluster_snapshot_attributes
+
+Returns a list of cluster snapshot attribute names and values for a manual DB
+cluster snapshot.
 
 Type annotations for
 `boto3.client("docdb").describe_db_cluster_snapshot_attributes` method.
@@ -559,20 +678,28 @@ Type annotations for
 Boto3 documentation:
 [DocDB.Client.describe_db_cluster_snapshot_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_cluster_snapshot_attributes)
 
+Arguments mapping described in
+[DescribeDBClusterSnapshotAttributesMessageTypeDef](./type_defs.md#describedbclustersnapshotattributesmessagetypedef).
+
 Keyword-only arguments:
 
 - `DBClusterSnapshotIdentifier`: `str` *(required)*
 
 Returns
-[DescribeDBClusterSnapshotAttributesResultTypeDef](./type_defs.md#describedbclustersnapshotattributesresulttypedef).
+[DescribeDBClusterSnapshotAttributesResultResponseTypeDef](./type_defs.md#describedbclustersnapshotattributesresultresponsetypedef).
 
 ### describe_db_cluster_snapshots
+
+Returns information about cluster snapshots.
 
 Type annotations for `boto3.client("docdb").describe_db_cluster_snapshots`
 method.
 
 Boto3 documentation:
 [DocDB.Client.describe_db_cluster_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_cluster_snapshots)
+
+Arguments mapping described in
+[DescribeDBClusterSnapshotsMessageTypeDef](./type_defs.md#describedbclustersnapshotsmessagetypedef).
 
 Keyword-only arguments:
 
@@ -586,14 +713,19 @@ Keyword-only arguments:
 - `IncludePublic`: `bool`
 
 Returns
-[DBClusterSnapshotMessageTypeDef](./type_defs.md#dbclustersnapshotmessagetypedef).
+[DBClusterSnapshotMessageResponseTypeDef](./type_defs.md#dbclustersnapshotmessageresponsetypedef).
 
 ### describe_db_clusters
+
+Returns information about provisioned Amazon DocumentDB clusters.
 
 Type annotations for `boto3.client("docdb").describe_db_clusters` method.
 
 Boto3 documentation:
 [DocDB.Client.describe_db_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_clusters)
+
+Arguments mapping described in
+[DescribeDBClustersMessageTypeDef](./type_defs.md#describedbclustersmessagetypedef).
 
 Keyword-only arguments:
 
@@ -602,15 +734,21 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-Returns [DBClusterMessageTypeDef](./type_defs.md#dbclustermessagetypedef).
+Returns
+[DBClusterMessageResponseTypeDef](./type_defs.md#dbclustermessageresponsetypedef).
 
 ### describe_db_engine_versions
+
+Returns a list of the available engines.
 
 Type annotations for `boto3.client("docdb").describe_db_engine_versions`
 method.
 
 Boto3 documentation:
 [DocDB.Client.describe_db_engine_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_engine_versions)
+
+Arguments mapping described in
+[DescribeDBEngineVersionsMessageTypeDef](./type_defs.md#describedbengineversionsmessagetypedef).
 
 Keyword-only arguments:
 
@@ -625,14 +763,19 @@ Keyword-only arguments:
 - `ListSupportedTimezones`: `bool`
 
 Returns
-[DBEngineVersionMessageTypeDef](./type_defs.md#dbengineversionmessagetypedef).
+[DBEngineVersionMessageResponseTypeDef](./type_defs.md#dbengineversionmessageresponsetypedef).
 
 ### describe_db_instances
+
+Returns information about provisioned Amazon DocumentDB instances.
 
 Type annotations for `boto3.client("docdb").describe_db_instances` method.
 
 Boto3 documentation:
 [DocDB.Client.describe_db_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_instances)
+
+Arguments mapping described in
+[DescribeDBInstancesMessageTypeDef](./type_defs.md#describedbinstancesmessagetypedef).
 
 Keyword-only arguments:
 
@@ -641,14 +784,20 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-Returns [DBInstanceMessageTypeDef](./type_defs.md#dbinstancemessagetypedef).
+Returns
+[DBInstanceMessageResponseTypeDef](./type_defs.md#dbinstancemessageresponsetypedef).
 
 ### describe_db_subnet_groups
+
+Returns a list of `DBSubnetGroup` descriptions.
 
 Type annotations for `boto3.client("docdb").describe_db_subnet_groups` method.
 
 Boto3 documentation:
 [DocDB.Client.describe_db_subnet_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_db_subnet_groups)
+
+Arguments mapping described in
+[DescribeDBSubnetGroupsMessageTypeDef](./type_defs.md#describedbsubnetgroupsmessagetypedef).
 
 Keyword-only arguments:
 
@@ -658,15 +807,21 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DBSubnetGroupMessageTypeDef](./type_defs.md#dbsubnetgroupmessagetypedef).
+[DBSubnetGroupMessageResponseTypeDef](./type_defs.md#dbsubnetgroupmessageresponsetypedef).
 
 ### describe_engine_default_cluster_parameters
+
+Returns the default engine and system parameter information for the cluster
+database engine.
 
 Type annotations for
 `boto3.client("docdb").describe_engine_default_cluster_parameters` method.
 
 Boto3 documentation:
 [DocDB.Client.describe_engine_default_cluster_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_engine_default_cluster_parameters)
+
+Arguments mapping described in
+[DescribeEngineDefaultClusterParametersMessageTypeDef](./type_defs.md#describeenginedefaultclusterparametersmessagetypedef).
 
 Keyword-only arguments:
 
@@ -676,14 +831,20 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeEngineDefaultClusterParametersResultTypeDef](./type_defs.md#describeenginedefaultclusterparametersresulttypedef).
+[DescribeEngineDefaultClusterParametersResultResponseTypeDef](./type_defs.md#describeenginedefaultclusterparametersresultresponsetypedef).
 
 ### describe_event_categories
+
+Displays a list of categories for all event source types, or, if specified, for
+a specified source type.
 
 Type annotations for `boto3.client("docdb").describe_event_categories` method.
 
 Boto3 documentation:
 [DocDB.Client.describe_event_categories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_event_categories)
+
+Arguments mapping described in
+[DescribeEventCategoriesMessageTypeDef](./type_defs.md#describeeventcategoriesmessagetypedef).
 
 Keyword-only arguments:
 
@@ -691,15 +852,20 @@ Keyword-only arguments:
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[EventCategoriesMessageTypeDef](./type_defs.md#eventcategoriesmessagetypedef).
+[EventCategoriesMessageResponseTypeDef](./type_defs.md#eventcategoriesmessageresponsetypedef).
 
 ### describe_event_subscriptions
+
+Lists all the subscription descriptions for a customer account.
 
 Type annotations for `boto3.client("docdb").describe_event_subscriptions`
 method.
 
 Boto3 documentation:
 [DocDB.Client.describe_event_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_event_subscriptions)
+
+Arguments mapping described in
+[DescribeEventSubscriptionsMessageTypeDef](./type_defs.md#describeeventsubscriptionsmessagetypedef).
 
 Keyword-only arguments:
 
@@ -709,35 +875,47 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[EventSubscriptionsMessageTypeDef](./type_defs.md#eventsubscriptionsmessagetypedef).
+[EventSubscriptionsMessageResponseTypeDef](./type_defs.md#eventsubscriptionsmessageresponsetypedef).
 
 ### describe_events
+
+Returns events related to instances, security groups, snapshots, and DB
+parameter groups for the past 14 days.
 
 Type annotations for `boto3.client("docdb").describe_events` method.
 
 Boto3 documentation:
 [DocDB.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_events)
 
+Arguments mapping described in
+[DescribeEventsMessageTypeDef](./type_defs.md#describeeventsmessagetypedef).
+
 Keyword-only arguments:
 
 - `SourceIdentifier`: `str`
 - `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
 - `Duration`: `int`
 - `EventCategories`: `List`\[`str`\]
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-Returns [EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef).
+Returns
+[EventsMessageResponseTypeDef](./type_defs.md#eventsmessageresponsetypedef).
 
 ### describe_global_clusters
+
+Returns information about Amazon DocumentDB global clusters.
 
 Type annotations for `boto3.client("docdb").describe_global_clusters` method.
 
 Boto3 documentation:
 [DocDB.Client.describe_global_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_global_clusters)
+
+Arguments mapping described in
+[DescribeGlobalClustersMessageTypeDef](./type_defs.md#describeglobalclustersmessagetypedef).
 
 Keyword-only arguments:
 
@@ -747,15 +925,20 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[GlobalClustersMessageTypeDef](./type_defs.md#globalclustersmessagetypedef).
+[GlobalClustersMessageResponseTypeDef](./type_defs.md#globalclustersmessageresponsetypedef).
 
 ### describe_orderable_db_instance_options
+
+Returns a list of orderable instance options for the specified engine.
 
 Type annotations for
 `boto3.client("docdb").describe_orderable_db_instance_options` method.
 
 Boto3 documentation:
 [DocDB.Client.describe_orderable_db_instance_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_orderable_db_instance_options)
+
+Arguments mapping described in
+[DescribeOrderableDBInstanceOptionsMessageTypeDef](./type_defs.md#describeorderabledbinstanceoptionsmessagetypedef).
 
 Keyword-only arguments:
 
@@ -769,15 +952,21 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[OrderableDBInstanceOptionsMessageTypeDef](./type_defs.md#orderabledbinstanceoptionsmessagetypedef).
+[OrderableDBInstanceOptionsMessageResponseTypeDef](./type_defs.md#orderabledbinstanceoptionsmessageresponsetypedef).
 
 ### describe_pending_maintenance_actions
+
+Returns a list of resources (for example, instances) that have at least one
+pending maintenance action.
 
 Type annotations for
 `boto3.client("docdb").describe_pending_maintenance_actions` method.
 
 Boto3 documentation:
 [DocDB.Client.describe_pending_maintenance_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.describe_pending_maintenance_actions)
+
+Arguments mapping described in
+[DescribePendingMaintenanceActionsMessageTypeDef](./type_defs.md#describependingmaintenanceactionsmessagetypedef).
 
 Keyword-only arguments:
 
@@ -787,14 +976,19 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 
 Returns
-[PendingMaintenanceActionsMessageTypeDef](./type_defs.md#pendingmaintenanceactionsmessagetypedef).
+[PendingMaintenanceActionsMessageResponseTypeDef](./type_defs.md#pendingmaintenanceactionsmessageresponsetypedef).
 
 ### failover_db_cluster
+
+Forces a failover for a cluster.
 
 Type annotations for `boto3.client("docdb").failover_db_cluster` method.
 
 Boto3 documentation:
 [DocDB.Client.failover_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.failover_db_cluster)
+
+Arguments mapping described in
+[FailoverDBClusterMessageTypeDef](./type_defs.md#failoverdbclustermessagetypedef).
 
 Keyword-only arguments:
 
@@ -802,9 +996,11 @@ Keyword-only arguments:
 - `TargetDBInstanceIdentifier`: `str`
 
 Returns
-[FailoverDBClusterResultTypeDef](./type_defs.md#failoverdbclusterresulttypedef).
+[FailoverDBClusterResultResponseTypeDef](./type_defs.md#failoverdbclusterresultresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("docdb").generate_presigned_url` method.
 
@@ -822,24 +1018,35 @@ Returns `str`.
 
 ### list_tags_for_resource
 
+Lists all tags on an Amazon DocumentDB resource.
+
 Type annotations for `boto3.client("docdb").list_tags_for_resource` method.
 
 Boto3 documentation:
 [DocDB.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.list_tags_for_resource)
+
+Arguments mapping described in
+[ListTagsForResourceMessageTypeDef](./type_defs.md#listtagsforresourcemessagetypedef).
 
 Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
-Returns [TagListMessageTypeDef](./type_defs.md#taglistmessagetypedef).
+Returns
+[TagListMessageResponseTypeDef](./type_defs.md#taglistmessageresponsetypedef).
 
 ### modify_db_cluster
+
+Modifies a setting for an Amazon DocumentDB cluster.
 
 Type annotations for `boto3.client("docdb").modify_db_cluster` method.
 
 Boto3 documentation:
 [DocDB.Client.modify_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.modify_db_cluster)
+
+Arguments mapping described in
+[ModifyDBClusterMessageTypeDef](./type_defs.md#modifydbclustermessagetypedef).
 
 Keyword-only arguments:
 
@@ -859,15 +1066,20 @@ Keyword-only arguments:
 - `DeletionProtection`: `bool`
 
 Returns
-[ModifyDBClusterResultTypeDef](./type_defs.md#modifydbclusterresulttypedef).
+[ModifyDBClusterResultResponseTypeDef](./type_defs.md#modifydbclusterresultresponsetypedef).
 
 ### modify_db_cluster_parameter_group
+
+Modifies the parameters of a cluster parameter group.
 
 Type annotations for `boto3.client("docdb").modify_db_cluster_parameter_group`
 method.
 
 Boto3 documentation:
 [DocDB.Client.modify_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.modify_db_cluster_parameter_group)
+
+Arguments mapping described in
+[ModifyDBClusterParameterGroupMessageTypeDef](./type_defs.md#modifydbclusterparametergroupmessagetypedef).
 
 Keyword-only arguments:
 
@@ -876,15 +1088,21 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[DBClusterParameterGroupNameMessageTypeDef](./type_defs.md#dbclusterparametergroupnamemessagetypedef).
+[DBClusterParameterGroupNameMessageResponseTypeDef](./type_defs.md#dbclusterparametergroupnamemessageresponsetypedef).
 
 ### modify_db_cluster_snapshot_attribute
+
+Adds an attribute and values to, or removes an attribute and values from, a
+manual cluster snapshot.
 
 Type annotations for
 `boto3.client("docdb").modify_db_cluster_snapshot_attribute` method.
 
 Boto3 documentation:
 [DocDB.Client.modify_db_cluster_snapshot_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.modify_db_cluster_snapshot_attribute)
+
+Arguments mapping described in
+[ModifyDBClusterSnapshotAttributeMessageTypeDef](./type_defs.md#modifydbclustersnapshotattributemessagetypedef).
 
 Keyword-only arguments:
 
@@ -894,14 +1112,19 @@ Keyword-only arguments:
 - `ValuesToRemove`: `List`\[`str`\]
 
 Returns
-[ModifyDBClusterSnapshotAttributeResultTypeDef](./type_defs.md#modifydbclustersnapshotattributeresulttypedef).
+[ModifyDBClusterSnapshotAttributeResultResponseTypeDef](./type_defs.md#modifydbclustersnapshotattributeresultresponsetypedef).
 
 ### modify_db_instance
+
+Modifies settings for an instance.
 
 Type annotations for `boto3.client("docdb").modify_db_instance` method.
 
 Boto3 documentation:
 [DocDB.Client.modify_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.modify_db_instance)
+
+Arguments mapping described in
+[ModifyDBInstanceMessageTypeDef](./type_defs.md#modifydbinstancemessagetypedef).
 
 Keyword-only arguments:
 
@@ -915,14 +1138,19 @@ Keyword-only arguments:
 - `PromotionTier`: `int`
 
 Returns
-[ModifyDBInstanceResultTypeDef](./type_defs.md#modifydbinstanceresulttypedef).
+[ModifyDBInstanceResultResponseTypeDef](./type_defs.md#modifydbinstanceresultresponsetypedef).
 
 ### modify_db_subnet_group
+
+Modifies an existing subnet group.
 
 Type annotations for `boto3.client("docdb").modify_db_subnet_group` method.
 
 Boto3 documentation:
 [DocDB.Client.modify_db_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.modify_db_subnet_group)
+
+Arguments mapping described in
+[ModifyDBSubnetGroupMessageTypeDef](./type_defs.md#modifydbsubnetgroupmessagetypedef).
 
 Keyword-only arguments:
 
@@ -931,14 +1159,19 @@ Keyword-only arguments:
 - `DBSubnetGroupDescription`: `str`
 
 Returns
-[ModifyDBSubnetGroupResultTypeDef](./type_defs.md#modifydbsubnetgroupresulttypedef).
+[ModifyDBSubnetGroupResultResponseTypeDef](./type_defs.md#modifydbsubnetgroupresultresponsetypedef).
 
 ### modify_event_subscription
+
+Modifies an existing Amazon DocumentDB event notification subscription.
 
 Type annotations for `boto3.client("docdb").modify_event_subscription` method.
 
 Boto3 documentation:
 [DocDB.Client.modify_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.modify_event_subscription)
+
+Arguments mapping described in
+[ModifyEventSubscriptionMessageTypeDef](./type_defs.md#modifyeventsubscriptionmessagetypedef).
 
 Keyword-only arguments:
 
@@ -949,14 +1182,19 @@ Keyword-only arguments:
 - `Enabled`: `bool`
 
 Returns
-[ModifyEventSubscriptionResultTypeDef](./type_defs.md#modifyeventsubscriptionresulttypedef).
+[ModifyEventSubscriptionResultResponseTypeDef](./type_defs.md#modifyeventsubscriptionresultresponsetypedef).
 
 ### modify_global_cluster
+
+Modify a setting for an Amazon DocumentDB global cluster.
 
 Type annotations for `boto3.client("docdb").modify_global_cluster` method.
 
 Boto3 documentation:
 [DocDB.Client.modify_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.modify_global_cluster)
+
+Arguments mapping described in
+[ModifyGlobalClusterMessageTypeDef](./type_defs.md#modifyglobalclustermessagetypedef).
 
 Keyword-only arguments:
 
@@ -965,14 +1203,19 @@ Keyword-only arguments:
 - `DeletionProtection`: `bool`
 
 Returns
-[ModifyGlobalClusterResultTypeDef](./type_defs.md#modifyglobalclusterresulttypedef).
+[ModifyGlobalClusterResultResponseTypeDef](./type_defs.md#modifyglobalclusterresultresponsetypedef).
 
 ### reboot_db_instance
+
+You might need to reboot your instance, usually for maintenance reasons.
 
 Type annotations for `boto3.client("docdb").reboot_db_instance` method.
 
 Boto3 documentation:
 [DocDB.Client.reboot_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.reboot_db_instance)
+
+Arguments mapping described in
+[RebootDBInstanceMessageTypeDef](./type_defs.md#rebootdbinstancemessagetypedef).
 
 Keyword-only arguments:
 
@@ -980,14 +1223,19 @@ Keyword-only arguments:
 - `ForceFailover`: `bool`
 
 Returns
-[RebootDBInstanceResultTypeDef](./type_defs.md#rebootdbinstanceresulttypedef).
+[RebootDBInstanceResultResponseTypeDef](./type_defs.md#rebootdbinstanceresultresponsetypedef).
 
 ### remove_from_global_cluster
+
+Detaches an Amazon DocumentDB secondary cluster from a global cluster.
 
 Type annotations for `boto3.client("docdb").remove_from_global_cluster` method.
 
 Boto3 documentation:
 [DocDB.Client.remove_from_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.remove_from_global_cluster)
+
+Arguments mapping described in
+[RemoveFromGlobalClusterMessageTypeDef](./type_defs.md#removefromglobalclustermessagetypedef).
 
 Keyword-only arguments:
 
@@ -995,9 +1243,12 @@ Keyword-only arguments:
 - `DbClusterIdentifier`: `str` *(required)*
 
 Returns
-[RemoveFromGlobalClusterResultTypeDef](./type_defs.md#removefromglobalclusterresulttypedef).
+[RemoveFromGlobalClusterResultResponseTypeDef](./type_defs.md#removefromglobalclusterresultresponsetypedef).
 
 ### remove_source_identifier_from_subscription
+
+Removes a source identifier from an existing Amazon DocumentDB event
+notification subscription.
 
 Type annotations for
 `boto3.client("docdb").remove_source_identifier_from_subscription` method.
@@ -1005,20 +1256,28 @@ Type annotations for
 Boto3 documentation:
 [DocDB.Client.remove_source_identifier_from_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.remove_source_identifier_from_subscription)
 
+Arguments mapping described in
+[RemoveSourceIdentifierFromSubscriptionMessageTypeDef](./type_defs.md#removesourceidentifierfromsubscriptionmessagetypedef).
+
 Keyword-only arguments:
 
 - `SubscriptionName`: `str` *(required)*
 - `SourceIdentifier`: `str` *(required)*
 
 Returns
-[RemoveSourceIdentifierFromSubscriptionResultTypeDef](./type_defs.md#removesourceidentifierfromsubscriptionresulttypedef).
+[RemoveSourceIdentifierFromSubscriptionResultResponseTypeDef](./type_defs.md#removesourceidentifierfromsubscriptionresultresponsetypedef).
 
 ### remove_tags_from_resource
+
+Removes metadata tags from an Amazon DocumentDB resource.
 
 Type annotations for `boto3.client("docdb").remove_tags_from_resource` method.
 
 Boto3 documentation:
 [DocDB.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.remove_tags_from_resource)
+
+Arguments mapping described in
+[RemoveTagsFromResourceMessageTypeDef](./type_defs.md#removetagsfromresourcemessagetypedef).
 
 Keyword-only arguments:
 
@@ -1027,11 +1286,16 @@ Keyword-only arguments:
 
 ### reset_db_cluster_parameter_group
 
+Modifies the parameters of a cluster parameter group to the default value.
+
 Type annotations for `boto3.client("docdb").reset_db_cluster_parameter_group`
 method.
 
 Boto3 documentation:
 [DocDB.Client.reset_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.reset_db_cluster_parameter_group)
+
+Arguments mapping described in
+[ResetDBClusterParameterGroupMessageTypeDef](./type_defs.md#resetdbclusterparametergroupmessagetypedef).
 
 Keyword-only arguments:
 
@@ -1040,15 +1304,20 @@ Keyword-only arguments:
 - `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 Returns
-[DBClusterParameterGroupNameMessageTypeDef](./type_defs.md#dbclusterparametergroupnamemessagetypedef).
+[DBClusterParameterGroupNameMessageResponseTypeDef](./type_defs.md#dbclusterparametergroupnamemessageresponsetypedef).
 
 ### restore_db_cluster_from_snapshot
+
+Creates a new cluster from a snapshot or cluster snapshot.
 
 Type annotations for `boto3.client("docdb").restore_db_cluster_from_snapshot`
 method.
 
 Boto3 documentation:
 [DocDB.Client.restore_db_cluster_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.restore_db_cluster_from_snapshot)
+
+Arguments mapping described in
+[RestoreDBClusterFromSnapshotMessageTypeDef](./type_defs.md#restoredbclusterfromsnapshotmessagetypedef).
 
 Keyword-only arguments:
 
@@ -1066,9 +1335,11 @@ Keyword-only arguments:
 - `DeletionProtection`: `bool`
 
 Returns
-[RestoreDBClusterFromSnapshotResultTypeDef](./type_defs.md#restoredbclusterfromsnapshotresulttypedef).
+[RestoreDBClusterFromSnapshotResultResponseTypeDef](./type_defs.md#restoredbclusterfromsnapshotresultresponsetypedef).
 
 ### restore_db_cluster_to_point_in_time
+
+Restores a cluster to an arbitrary point in time.
 
 Type annotations for
 `boto3.client("docdb").restore_db_cluster_to_point_in_time` method.
@@ -1076,11 +1347,14 @@ Type annotations for
 Boto3 documentation:
 [DocDB.Client.restore_db_cluster_to_point_in_time](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.restore_db_cluster_to_point_in_time)
 
+Arguments mapping described in
+[RestoreDBClusterToPointInTimeMessageTypeDef](./type_defs.md#restoredbclustertopointintimemessagetypedef).
+
 Keyword-only arguments:
 
 - `DBClusterIdentifier`: `str` *(required)*
 - `SourceDBClusterIdentifier`: `str` *(required)*
-- `RestoreToTime`: `datetime`
+- `RestoreToTime`: `Union`\[`datetime`, `str`\]
 - `UseLatestRestorableTime`: `bool`
 - `Port`: `int`
 - `DBSubnetGroupName`: `str`
@@ -1091,35 +1365,45 @@ Keyword-only arguments:
 - `DeletionProtection`: `bool`
 
 Returns
-[RestoreDBClusterToPointInTimeResultTypeDef](./type_defs.md#restoredbclustertopointintimeresulttypedef).
+[RestoreDBClusterToPointInTimeResultResponseTypeDef](./type_defs.md#restoredbclustertopointintimeresultresponsetypedef).
 
 ### start_db_cluster
+
+Restarts the stopped cluster that is specified by `DBClusterIdentifier`.
 
 Type annotations for `boto3.client("docdb").start_db_cluster` method.
 
 Boto3 documentation:
 [DocDB.Client.start_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.start_db_cluster)
 
+Arguments mapping described in
+[StartDBClusterMessageTypeDef](./type_defs.md#startdbclustermessagetypedef).
+
 Keyword-only arguments:
 
 - `DBClusterIdentifier`: `str` *(required)*
 
 Returns
-[StartDBClusterResultTypeDef](./type_defs.md#startdbclusterresulttypedef).
+[StartDBClusterResultResponseTypeDef](./type_defs.md#startdbclusterresultresponsetypedef).
 
 ### stop_db_cluster
+
+Stops the running cluster that is specified by `DBClusterIdentifier`.
 
 Type annotations for `boto3.client("docdb").stop_db_cluster` method.
 
 Boto3 documentation:
 [DocDB.Client.stop_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB.Client.stop_db_cluster)
 
+Arguments mapping described in
+[StopDBClusterMessageTypeDef](./type_defs.md#stopdbclustermessagetypedef).
+
 Keyword-only arguments:
 
 - `DBClusterIdentifier`: `str` *(required)*
 
 Returns
-[StopDBClusterResultTypeDef](./type_defs.md#stopdbclusterresulttypedef).
+[StopDBClusterResultResponseTypeDef](./type_defs.md#stopdbclusterresultresponsetypedef).
 
 ### get_paginator
 

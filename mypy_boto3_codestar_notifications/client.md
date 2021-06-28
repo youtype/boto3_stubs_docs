@@ -72,6 +72,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("codestar-notifications").can_paginate`
 method.
 
@@ -86,11 +88,16 @@ Returns `bool`.
 
 ### create_notification_rule
 
+Creates a notification rule for a resource.
+
 Type annotations for
 `boto3.client("codestar-notifications").create_notification_rule` method.
 
 Boto3 documentation:
 [CodeStarNotifications.Client.create_notification_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.create_notification_rule)
+
+Arguments mapping described in
+[CreateNotificationRuleRequestTypeDef](./type_defs.md#createnotificationrulerequesttypedef).
 
 Keyword-only arguments:
 
@@ -106,9 +113,11 @@ Keyword-only arguments:
   [NotificationRuleStatusType](./literals.md#notificationrulestatustype)
 
 Returns
-[CreateNotificationRuleResultTypeDef](./type_defs.md#createnotificationruleresulttypedef).
+[CreateNotificationRuleResultResponseTypeDef](./type_defs.md#createnotificationruleresultresponsetypedef).
 
 ### delete_notification_rule
+
+Deletes a notification rule for a resource.
 
 Type annotations for
 `boto3.client("codestar-notifications").delete_notification_rule` method.
@@ -116,20 +125,28 @@ Type annotations for
 Boto3 documentation:
 [CodeStarNotifications.Client.delete_notification_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.delete_notification_rule)
 
+Arguments mapping described in
+[DeleteNotificationRuleRequestTypeDef](./type_defs.md#deletenotificationrulerequesttypedef).
+
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 
 Returns
-[DeleteNotificationRuleResultTypeDef](./type_defs.md#deletenotificationruleresulttypedef).
+[DeleteNotificationRuleResultResponseTypeDef](./type_defs.md#deletenotificationruleresultresponsetypedef).
 
 ### delete_target
+
+Deletes a specified target for notifications.
 
 Type annotations for `boto3.client("codestar-notifications").delete_target`
 method.
 
 Boto3 documentation:
 [CodeStarNotifications.Client.delete_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.delete_target)
+
+Arguments mapping described in
+[DeleteTargetRequestTypeDef](./type_defs.md#deletetargetrequesttypedef).
 
 Keyword-only arguments:
 
@@ -140,20 +157,27 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_notification_rule
 
+Returns information about a specified notification rule.
+
 Type annotations for
 `boto3.client("codestar-notifications").describe_notification_rule` method.
 
 Boto3 documentation:
 [CodeStarNotifications.Client.describe_notification_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.describe_notification_rule)
 
+Arguments mapping described in
+[DescribeNotificationRuleRequestTypeDef](./type_defs.md#describenotificationrulerequesttypedef).
+
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 
 Returns
-[DescribeNotificationRuleResultTypeDef](./type_defs.md#describenotificationruleresulttypedef).
+[DescribeNotificationRuleResultResponseTypeDef](./type_defs.md#describenotificationruleresultresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for
 `boto3.client("codestar-notifications").generate_presigned_url` method.
@@ -172,11 +196,17 @@ Returns `str`.
 
 ### list_event_types
 
+Returns information about the event types available for configuring
+notifications.
+
 Type annotations for `boto3.client("codestar-notifications").list_event_types`
 method.
 
 Boto3 documentation:
 [CodeStarNotifications.Client.list_event_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_event_types)
+
+Arguments mapping described in
+[ListEventTypesRequestTypeDef](./type_defs.md#listeventtypesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -186,15 +216,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListEventTypesResultTypeDef](./type_defs.md#listeventtypesresulttypedef).
+[ListEventTypesResultResponseTypeDef](./type_defs.md#listeventtypesresultresponsetypedef).
 
 ### list_notification_rules
+
+Returns a list of the notification rules for an AWS account.
 
 Type annotations for
 `boto3.client("codestar-notifications").list_notification_rules` method.
 
 Boto3 documentation:
 [CodeStarNotifications.Client.list_notification_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_notification_rules)
+
+Arguments mapping described in
+[ListNotificationRulesRequestTypeDef](./type_defs.md#listnotificationrulesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -204,9 +239,11 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListNotificationRulesResultTypeDef](./type_defs.md#listnotificationrulesresulttypedef).
+[ListNotificationRulesResultResponseTypeDef](./type_defs.md#listnotificationrulesresultresponsetypedef).
 
 ### list_tags_for_resource
+
+Returns a list of the tags associated with a notification rule.
 
 Type annotations for
 `boto3.client("codestar-notifications").list_tags_for_resource` method.
@@ -214,20 +251,28 @@ Type annotations for
 Boto3 documentation:
 [CodeStarNotifications.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
+[ListTagsForResourceResultResponseTypeDef](./type_defs.md#listtagsforresourceresultresponsetypedef).
 
 ### list_targets
+
+Returns a list of the notification rule targets for an AWS account.
 
 Type annotations for `boto3.client("codestar-notifications").list_targets`
 method.
 
 Boto3 documentation:
 [CodeStarNotifications.Client.list_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_targets)
+
+Arguments mapping described in
+[ListTargetsRequestTypeDef](./type_defs.md#listtargetsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -236,14 +281,22 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns [ListTargetsResultTypeDef](./type_defs.md#listtargetsresulttypedef).
+Returns
+[ListTargetsResultResponseTypeDef](./type_defs.md#listtargetsresultresponsetypedef).
 
 ### subscribe
+
+Creates an association between a notification rule and an SNS topic so that the
+associated target can receive notifications when the events described in the
+rule are triggered.
 
 Type annotations for `boto3.client("codestar-notifications").subscribe` method.
 
 Boto3 documentation:
 [CodeStarNotifications.Client.subscribe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.subscribe)
+
+Arguments mapping described in
+[SubscribeRequestTypeDef](./type_defs.md#subscriberequesttypedef).
 
 Keyword-only arguments:
 
@@ -251,9 +304,12 @@ Keyword-only arguments:
 - `Target`: [TargetTypeDef](./type_defs.md#targettypedef) *(required)*
 - `ClientRequestToken`: `str`
 
-Returns [SubscribeResultTypeDef](./type_defs.md#subscriberesulttypedef).
+Returns
+[SubscribeResultResponseTypeDef](./type_defs.md#subscriberesultresponsetypedef).
 
 ### tag_resource
+
+Associates a set of provided tags with a notification rule.
 
 Type annotations for `boto3.client("codestar-notifications").tag_resource`
 method.
@@ -261,14 +317,22 @@ method.
 Boto3 documentation:
 [CodeStarNotifications.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.tag_resource)
 
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
 
-Returns [TagResourceResultTypeDef](./type_defs.md#tagresourceresulttypedef).
+Returns
+[TagResourceResultResponseTypeDef](./type_defs.md#tagresourceresultresponsetypedef).
 
 ### unsubscribe
+
+Removes an association between a notification rule and an Amazon SNS topic so
+that subscribers to that topic stop receiving notifications when the events
+described in the rule are triggered.
 
 Type annotations for `boto3.client("codestar-notifications").unsubscribe`
 method.
@@ -276,20 +340,30 @@ method.
 Boto3 documentation:
 [CodeStarNotifications.Client.unsubscribe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.unsubscribe)
 
+Arguments mapping described in
+[UnsubscribeRequestTypeDef](./type_defs.md#unsubscriberequesttypedef).
+
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 - `TargetAddress`: `str` *(required)*
 
-Returns [UnsubscribeResultTypeDef](./type_defs.md#unsubscriberesulttypedef).
+Returns
+[UnsubscribeResultResponseTypeDef](./type_defs.md#unsubscriberesultresponsetypedef).
 
 ### untag_resource
+
+Removes the association between one or more provided tags and a notification
+rule.
 
 Type annotations for `boto3.client("codestar-notifications").untag_resource`
 method.
 
 Boto3 documentation:
 [CodeStarNotifications.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -300,11 +374,16 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_notification_rule
 
+Updates a notification rule for a resource.
+
 Type annotations for
 `boto3.client("codestar-notifications").update_notification_rule` method.
 
 Boto3 documentation:
 [CodeStarNotifications.Client.update_notification_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.update_notification_rule)
+
+Arguments mapping described in
+[UpdateNotificationRuleRequestTypeDef](./type_defs.md#updatenotificationrulerequesttypedef).
 
 Keyword-only arguments:
 

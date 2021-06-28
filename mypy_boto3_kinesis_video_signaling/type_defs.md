@@ -8,20 +8,41 @@ type annotations stubs module
 [mypy_boto3_kinesis_video_signaling](https://pypi.org/project/mypy-boto3-kinesis-video-signaling/).
 
 - [Typed dictionaries for boto3 KinesisVideoSignalingChannels module](#typed-dictionaries-for-boto3-kinesisvideosignalingchannels-module)
-  - [GetIceServerConfigResponseTypeDef](#geticeserverconfigresponsetypedef)
+  - [GetIceServerConfigRequestTypeDef](#geticeserverconfigrequesttypedef)
+  - [GetIceServerConfigResponseResponseTypeDef](#geticeserverconfigresponseresponsetypedef)
   - [IceServerTypeDef](#iceservertypedef)
-  - [SendAlexaOfferToMasterResponseTypeDef](#sendalexaoffertomasterresponsetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [SendAlexaOfferToMasterRequestTypeDef](#sendalexaoffertomasterrequesttypedef)
+  - [SendAlexaOfferToMasterResponseResponseTypeDef](#sendalexaoffertomasterresponseresponsetypedef)
 
-## GetIceServerConfigResponseTypeDef
+## GetIceServerConfigRequestTypeDef
 
 ```python
-from mypy_boto3_kinesis_video_signaling.type_defs import GetIceServerConfigResponseTypeDef
+from mypy_boto3_kinesis_video_signaling.type_defs import GetIceServerConfigRequestTypeDef
 ```
+
+Required fields:
+
+- `ChannelARN`: `str`
 
 Optional fields:
 
+- `ClientId`: `str`
+- `Service`: `Literal['TURN']` (see [ServiceType](./literals.md#servicetype))
+- `Username`: `str`
+
+## GetIceServerConfigResponseResponseTypeDef
+
+```python
+from mypy_boto3_kinesis_video_signaling.type_defs import GetIceServerConfigResponseResponseTypeDef
+```
+
+Required fields:
+
 - `IceServerList`:
   `List`\[[IceServerTypeDef](./type_defs.md#iceservertypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## IceServerTypeDef
 
@@ -36,12 +57,40 @@ Optional fields:
 - `Password`: `str`
 - `Ttl`: `int`
 
-## SendAlexaOfferToMasterResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_kinesis_video_signaling.type_defs import SendAlexaOfferToMasterResponseTypeDef
+from mypy_boto3_kinesis_video_signaling.type_defs import ResponseMetadataTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## SendAlexaOfferToMasterRequestTypeDef
+
+```python
+from mypy_boto3_kinesis_video_signaling.type_defs import SendAlexaOfferToMasterRequestTypeDef
+```
+
+Required fields:
+
+- `ChannelARN`: `str`
+- `SenderClientId`: `str`
+- `MessagePayload`: `str`
+
+## SendAlexaOfferToMasterResponseResponseTypeDef
+
+```python
+from mypy_boto3_kinesis_video_signaling.type_defs import SendAlexaOfferToMasterResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Answer`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

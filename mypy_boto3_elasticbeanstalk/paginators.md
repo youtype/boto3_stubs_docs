@@ -39,7 +39,7 @@ Arguments for `DescribeApplicationVersionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeApplicationVersionsPaginator.paginate` returns
-`Iterator`\[[ApplicationVersionDescriptionsMessageTypeDef](./type_defs.md#applicationversiondescriptionsmessagetypedef)\].
+`Iterator`\[[ApplicationVersionDescriptionsMessageResponseTypeDef](./type_defs.md#applicationversiondescriptionsmessageresponsetypedef)\].
 
 ## DescribeEnvironmentManagedActionHistoryPaginator
 
@@ -67,7 +67,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEnvironmentManagedActionHistoryPaginator.paginate` returns
-`Iterator`\[[DescribeEnvironmentManagedActionHistoryResultTypeDef](./type_defs.md#describeenvironmentmanagedactionhistoryresulttypedef)\].
+`Iterator`\[[DescribeEnvironmentManagedActionHistoryResultResponseTypeDef](./type_defs.md#describeenvironmentmanagedactionhistoryresultresponsetypedef)\].
 
 ## DescribeEnvironmentsPaginator
 
@@ -93,12 +93,12 @@ Arguments for `DescribeEnvironmentsPaginator.paginate` method:
 - `EnvironmentIds`: `List`\[`str`\]
 - `EnvironmentNames`: `List`\[`str`\]
 - `IncludeDeleted`: `bool`
-- `IncludedDeletedBackTo`: `datetime`
+- `IncludedDeletedBackTo`: `Union`\[`datetime`, `str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEnvironmentsPaginator.paginate` returns
-`Iterator`\[[EnvironmentDescriptionsMessageTypeDef](./type_defs.md#environmentdescriptionsmessagetypedef)\].
+`Iterator`\[[EnvironmentDescriptionsMessageResponseTypeDef](./type_defs.md#environmentdescriptionsmessageresponsetypedef)\].
 
 ## DescribeEventsPaginator
 
@@ -127,13 +127,13 @@ Arguments for `DescribeEventsPaginator.paginate` method:
 - `PlatformArn`: `str`
 - `RequestId`: `str`
 - `Severity`: [EventSeverityType](./literals.md#eventseveritytype)
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEventsPaginator.paginate` returns
-`Iterator`\[[EventDescriptionsMessageTypeDef](./type_defs.md#eventdescriptionsmessagetypedef)\].
+`Iterator`\[[EventDescriptionsMessageResponseTypeDef](./type_defs.md#eventdescriptionsmessageresponsetypedef)\].
 
 ## ListPlatformVersionsPaginator
 
@@ -160,4 +160,4 @@ Arguments for `ListPlatformVersionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPlatformVersionsPaginator.paginate` returns
-`Iterator`\[[ListPlatformVersionsResultTypeDef](./type_defs.md#listplatformversionsresulttypedef)\].
+`Iterator`\[[ListPlatformVersionsResultResponseTypeDef](./type_defs.md#listplatformversionsresultresponsetypedef)\].

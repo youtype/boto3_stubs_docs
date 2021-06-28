@@ -8,45 +8,83 @@ type annotations stubs module
 [mypy_boto3_codestar](https://pypi.org/project/mypy-boto3-codestar/).
 
 - [Typed dictionaries for boto3 CodeStar module](#typed-dictionaries-for-boto3-codestar-module)
-  - [AssociateTeamMemberResultTypeDef](#associateteammemberresulttypedef)
+  - [AssociateTeamMemberRequestTypeDef](#associateteammemberrequesttypedef)
+  - [AssociateTeamMemberResultResponseTypeDef](#associateteammemberresultresponsetypedef)
   - [CodeCommitCodeDestinationTypeDef](#codecommitcodedestinationtypedef)
   - [CodeDestinationTypeDef](#codedestinationtypedef)
   - [CodeSourceTypeDef](#codesourcetypedef)
   - [CodeTypeDef](#codetypedef)
-  - [CreateProjectResultTypeDef](#createprojectresulttypedef)
-  - [CreateUserProfileResultTypeDef](#createuserprofileresulttypedef)
-  - [DeleteProjectResultTypeDef](#deleteprojectresulttypedef)
-  - [DeleteUserProfileResultTypeDef](#deleteuserprofileresulttypedef)
-  - [DescribeProjectResultTypeDef](#describeprojectresulttypedef)
-  - [DescribeUserProfileResultTypeDef](#describeuserprofileresulttypedef)
+  - [CreateProjectRequestTypeDef](#createprojectrequesttypedef)
+  - [CreateProjectResultResponseTypeDef](#createprojectresultresponsetypedef)
+  - [CreateUserProfileRequestTypeDef](#createuserprofilerequesttypedef)
+  - [CreateUserProfileResultResponseTypeDef](#createuserprofileresultresponsetypedef)
+  - [DeleteProjectRequestTypeDef](#deleteprojectrequesttypedef)
+  - [DeleteProjectResultResponseTypeDef](#deleteprojectresultresponsetypedef)
+  - [DeleteUserProfileRequestTypeDef](#deleteuserprofilerequesttypedef)
+  - [DeleteUserProfileResultResponseTypeDef](#deleteuserprofileresultresponsetypedef)
+  - [DescribeProjectRequestTypeDef](#describeprojectrequesttypedef)
+  - [DescribeProjectResultResponseTypeDef](#describeprojectresultresponsetypedef)
+  - [DescribeUserProfileRequestTypeDef](#describeuserprofilerequesttypedef)
+  - [DescribeUserProfileResultResponseTypeDef](#describeuserprofileresultresponsetypedef)
+  - [DisassociateTeamMemberRequestTypeDef](#disassociateteammemberrequesttypedef)
   - [GitHubCodeDestinationTypeDef](#githubcodedestinationtypedef)
-  - [ListProjectsResultTypeDef](#listprojectsresulttypedef)
-  - [ListResourcesResultTypeDef](#listresourcesresulttypedef)
-  - [ListTagsForProjectResultTypeDef](#listtagsforprojectresulttypedef)
-  - [ListTeamMembersResultTypeDef](#listteammembersresulttypedef)
-  - [ListUserProfilesResultTypeDef](#listuserprofilesresulttypedef)
+  - [ListProjectsRequestTypeDef](#listprojectsrequesttypedef)
+  - [ListProjectsResultResponseTypeDef](#listprojectsresultresponsetypedef)
+  - [ListResourcesRequestTypeDef](#listresourcesrequesttypedef)
+  - [ListResourcesResultResponseTypeDef](#listresourcesresultresponsetypedef)
+  - [ListTagsForProjectRequestTypeDef](#listtagsforprojectrequesttypedef)
+  - [ListTagsForProjectResultResponseTypeDef](#listtagsforprojectresultresponsetypedef)
+  - [ListTeamMembersRequestTypeDef](#listteammembersrequesttypedef)
+  - [ListTeamMembersResultResponseTypeDef](#listteammembersresultresponsetypedef)
+  - [ListUserProfilesRequestTypeDef](#listuserprofilesrequesttypedef)
+  - [ListUserProfilesResultResponseTypeDef](#listuserprofilesresultresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ProjectStatusTypeDef](#projectstatustypedef)
   - [ProjectSummaryTypeDef](#projectsummarytypedef)
   - [ResourceTypeDef](#resourcetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3LocationTypeDef](#s3locationtypedef)
-  - [TagProjectResultTypeDef](#tagprojectresulttypedef)
+  - [TagProjectRequestTypeDef](#tagprojectrequesttypedef)
+  - [TagProjectResultResponseTypeDef](#tagprojectresultresponsetypedef)
   - [TeamMemberTypeDef](#teammembertypedef)
   - [ToolchainSourceTypeDef](#toolchainsourcetypedef)
   - [ToolchainTypeDef](#toolchaintypedef)
-  - [UpdateTeamMemberResultTypeDef](#updateteammemberresulttypedef)
-  - [UpdateUserProfileResultTypeDef](#updateuserprofileresulttypedef)
+  - [UntagProjectRequestTypeDef](#untagprojectrequesttypedef)
+  - [UpdateProjectRequestTypeDef](#updateprojectrequesttypedef)
+  - [UpdateTeamMemberRequestTypeDef](#updateteammemberrequesttypedef)
+  - [UpdateTeamMemberResultResponseTypeDef](#updateteammemberresultresponsetypedef)
+  - [UpdateUserProfileRequestTypeDef](#updateuserprofilerequesttypedef)
+  - [UpdateUserProfileResultResponseTypeDef](#updateuserprofileresultresponsetypedef)
   - [UserProfileSummaryTypeDef](#userprofilesummarytypedef)
 
-## AssociateTeamMemberResultTypeDef
+## AssociateTeamMemberRequestTypeDef
 
 ```python
-from mypy_boto3_codestar.type_defs import AssociateTeamMemberResultTypeDef
+from mypy_boto3_codestar.type_defs import AssociateTeamMemberRequestTypeDef
 ```
+
+Required fields:
+
+- `projectId`: `str`
+- `userArn`: `str`
+- `projectRole`: `str`
 
 Optional fields:
 
 - `clientRequestToken`: `str`
+- `remoteAccessAllowed`: `bool`
+
+## AssociateTeamMemberResultResponseTypeDef
+
+```python
+from mypy_boto3_codestar.type_defs import AssociateTeamMemberResultResponseTypeDef
+```
+
+Required fields:
+
+- `clientRequestToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CodeCommitCodeDestinationTypeDef
 
@@ -93,68 +131,140 @@ Required fields:
 - `destination`:
   [CodeDestinationTypeDef](./type_defs.md#codedestinationtypedef)
 
-## CreateProjectResultTypeDef
+## CreateProjectRequestTypeDef
 
 ```python
-from mypy_boto3_codestar.type_defs import CreateProjectResultTypeDef
+from mypy_boto3_codestar.type_defs import CreateProjectRequestTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+- `id`: `str`
+
+Optional fields:
+
+- `description`: `str`
+- `clientRequestToken`: `str`
+- `sourceCode`: `List`\[[CodeTypeDef](./type_defs.md#codetypedef)\]
+- `toolchain`: [ToolchainTypeDef](./type_defs.md#toolchaintypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateProjectResultResponseTypeDef
+
+```python
+from mypy_boto3_codestar.type_defs import CreateProjectResultResponseTypeDef
 ```
 
 Required fields:
 
 - `id`: `str`
 - `arn`: `str`
-
-Optional fields:
-
 - `clientRequestToken`: `str`
 - `projectTemplateId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateUserProfileResultTypeDef
+## CreateUserProfileRequestTypeDef
 
 ```python
-from mypy_boto3_codestar.type_defs import CreateUserProfileResultTypeDef
+from mypy_boto3_codestar.type_defs import CreateUserProfileRequestTypeDef
 ```
 
 Required fields:
 
 - `userArn`: `str`
+- `displayName`: `str`
+- `emailAddress`: `str`
 
 Optional fields:
 
+- `sshPublicKey`: `str`
+
+## CreateUserProfileResultResponseTypeDef
+
+```python
+from mypy_boto3_codestar.type_defs import CreateUserProfileResultResponseTypeDef
+```
+
+Required fields:
+
+- `userArn`: `str`
 - `displayName`: `str`
 - `emailAddress`: `str`
 - `sshPublicKey`: `str`
 - `createdTimestamp`: `datetime`
 - `lastModifiedTimestamp`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteProjectResultTypeDef
+## DeleteProjectRequestTypeDef
 
 ```python
-from mypy_boto3_codestar.type_defs import DeleteProjectResultTypeDef
+from mypy_boto3_codestar.type_defs import DeleteProjectRequestTypeDef
 ```
+
+Required fields:
+
+- `id`: `str`
 
 Optional fields:
 
-- `stackId`: `str`
-- `projectArn`: `str`
+- `clientRequestToken`: `str`
+- `deleteStack`: `bool`
 
-## DeleteUserProfileResultTypeDef
+## DeleteProjectResultResponseTypeDef
 
 ```python
-from mypy_boto3_codestar.type_defs import DeleteUserProfileResultTypeDef
+from mypy_boto3_codestar.type_defs import DeleteProjectResultResponseTypeDef
+```
+
+Required fields:
+
+- `stackId`: `str`
+- `projectArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteUserProfileRequestTypeDef
+
+```python
+from mypy_boto3_codestar.type_defs import DeleteUserProfileRequestTypeDef
 ```
 
 Required fields:
 
 - `userArn`: `str`
 
-## DescribeProjectResultTypeDef
+## DeleteUserProfileResultResponseTypeDef
 
 ```python
-from mypy_boto3_codestar.type_defs import DescribeProjectResultTypeDef
+from mypy_boto3_codestar.type_defs import DeleteUserProfileResultResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `userArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeProjectRequestTypeDef
+
+```python
+from mypy_boto3_codestar.type_defs import DescribeProjectRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
+## DescribeProjectResultResponseTypeDef
+
+```python
+from mypy_boto3_codestar.type_defs import DescribeProjectResultResponseTypeDef
+```
+
+Required fields:
 
 - `name`: `str`
 - `id`: `str`
@@ -165,24 +275,46 @@ Optional fields:
 - `stackId`: `str`
 - `projectTemplateId`: `str`
 - `status`: [ProjectStatusTypeDef](./type_defs.md#projectstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeUserProfileResultTypeDef
+## DescribeUserProfileRequestTypeDef
 
 ```python
-from mypy_boto3_codestar.type_defs import DescribeUserProfileResultTypeDef
+from mypy_boto3_codestar.type_defs import DescribeUserProfileRequestTypeDef
 ```
 
 Required fields:
 
 - `userArn`: `str`
-- `createdTimestamp`: `datetime`
-- `lastModifiedTimestamp`: `datetime`
 
-Optional fields:
+## DescribeUserProfileResultResponseTypeDef
 
+```python
+from mypy_boto3_codestar.type_defs import DescribeUserProfileResultResponseTypeDef
+```
+
+Required fields:
+
+- `userArn`: `str`
 - `displayName`: `str`
 - `emailAddress`: `str`
 - `sshPublicKey`: `str`
+- `createdTimestamp`: `datetime`
+- `lastModifiedTimestamp`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DisassociateTeamMemberRequestTypeDef
+
+```python
+from mypy_boto3_codestar.type_defs import DisassociateTeamMemberRequestTypeDef
+```
+
+Required fields:
+
+- `projectId`: `str`
+- `userArn`: `str`
 
 ## GitHubCodeDestinationTypeDef
 
@@ -203,72 +335,140 @@ Optional fields:
 
 - `description`: `str`
 
-## ListProjectsResultTypeDef
+## ListProjectsRequestTypeDef
 
 ```python
-from mypy_boto3_codestar.type_defs import ListProjectsResultTypeDef
+from mypy_boto3_codestar.type_defs import ListProjectsRequestTypeDef
+```
+
+Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListProjectsResultResponseTypeDef
+
+```python
+from mypy_boto3_codestar.type_defs import ListProjectsResultResponseTypeDef
 ```
 
 Required fields:
 
 - `projects`:
   `List`\[[ProjectSummaryTypeDef](./type_defs.md#projectsummarytypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListResourcesRequestTypeDef
+
+```python
+from mypy_boto3_codestar.type_defs import ListResourcesRequestTypeDef
+```
+
+Required fields:
+
+- `projectId`: `str`
 
 Optional fields:
 
 - `nextToken`: `str`
+- `maxResults`: `int`
 
-## ListResourcesResultTypeDef
+## ListResourcesResultResponseTypeDef
 
 ```python
-from mypy_boto3_codestar.type_defs import ListResourcesResultTypeDef
+from mypy_boto3_codestar.type_defs import ListResourcesResultResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForProjectResultTypeDef
+## ListTagsForProjectRequestTypeDef
 
 ```python
-from mypy_boto3_codestar.type_defs import ListTagsForProjectResultTypeDef
+from mypy_boto3_codestar.type_defs import ListTagsForProjectRequestTypeDef
 ```
+
+Required fields:
+
+- `id`: `str`
 
 Optional fields:
 
-- `tags`: `Dict`\[`str`, `str`\]
 - `nextToken`: `str`
+- `maxResults`: `int`
 
-## ListTeamMembersResultTypeDef
+## ListTagsForProjectResultResponseTypeDef
 
 ```python
-from mypy_boto3_codestar.type_defs import ListTeamMembersResultTypeDef
+from mypy_boto3_codestar.type_defs import ListTagsForProjectResultResponseTypeDef
+```
+
+Required fields:
+
+- `tags`: `Dict`\[`str`, `str`\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListTeamMembersRequestTypeDef
+
+```python
+from mypy_boto3_codestar.type_defs import ListTeamMembersRequestTypeDef
+```
+
+Required fields:
+
+- `projectId`: `str`
+
+Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListTeamMembersResultResponseTypeDef
+
+```python
+from mypy_boto3_codestar.type_defs import ListTeamMembersResultResponseTypeDef
 ```
 
 Required fields:
 
 - `teamMembers`:
   `List`\[[TeamMemberTypeDef](./type_defs.md#teammembertypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListUserProfilesRequestTypeDef
+
+```python
+from mypy_boto3_codestar.type_defs import ListUserProfilesRequestTypeDef
+```
 
 Optional fields:
 
 - `nextToken`: `str`
+- `maxResults`: `int`
 
-## ListUserProfilesResultTypeDef
+## ListUserProfilesResultResponseTypeDef
 
 ```python
-from mypy_boto3_codestar.type_defs import ListUserProfilesResultTypeDef
+from mypy_boto3_codestar.type_defs import ListUserProfilesResultResponseTypeDef
 ```
 
 Required fields:
 
 - `userProfiles`:
   `List`\[[UserProfileSummaryTypeDef](./type_defs.md#userprofilesummarytypedef)\]
-
-Optional fields:
-
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -317,6 +517,20 @@ Required fields:
 
 - `id`: `str`
 
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_codestar.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
 ## S3LocationTypeDef
 
 ```python
@@ -328,15 +542,28 @@ Optional fields:
 - `bucketName`: `str`
 - `bucketKey`: `str`
 
-## TagProjectResultTypeDef
+## TagProjectRequestTypeDef
 
 ```python
-from mypy_boto3_codestar.type_defs import TagProjectResultTypeDef
+from mypy_boto3_codestar.type_defs import TagProjectRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `id`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## TagProjectResultResponseTypeDef
+
+```python
+from mypy_boto3_codestar.type_defs import TagProjectResultResponseTypeDef
+```
+
+Required fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## TeamMemberTypeDef
 
@@ -378,22 +605,66 @@ Optional fields:
 - `roleArn`: `str`
 - `stackParameters`: `Dict`\[`str`, `str`\]
 
-## UpdateTeamMemberResultTypeDef
+## UntagProjectRequestTypeDef
 
 ```python
-from mypy_boto3_codestar.type_defs import UpdateTeamMemberResultTypeDef
+from mypy_boto3_codestar.type_defs import UntagProjectRequestTypeDef
 ```
 
+Required fields:
+
+- `id`: `str`
+- `tags`: `List`\[`str`\]
+
+## UpdateProjectRequestTypeDef
+
+```python
+from mypy_boto3_codestar.type_defs import UpdateProjectRequestTypeDef
+```
+
+Required fields:
+
+- `id`: `str`
+
 Optional fields:
+
+- `name`: `str`
+- `description`: `str`
+
+## UpdateTeamMemberRequestTypeDef
+
+```python
+from mypy_boto3_codestar.type_defs import UpdateTeamMemberRequestTypeDef
+```
+
+Required fields:
+
+- `projectId`: `str`
+- `userArn`: `str`
+
+Optional fields:
+
+- `projectRole`: `str`
+- `remoteAccessAllowed`: `bool`
+
+## UpdateTeamMemberResultResponseTypeDef
+
+```python
+from mypy_boto3_codestar.type_defs import UpdateTeamMemberResultResponseTypeDef
+```
+
+Required fields:
 
 - `userArn`: `str`
 - `projectRole`: `str`
 - `remoteAccessAllowed`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateUserProfileResultTypeDef
+## UpdateUserProfileRequestTypeDef
 
 ```python
-from mypy_boto3_codestar.type_defs import UpdateUserProfileResultTypeDef
+from mypy_boto3_codestar.type_defs import UpdateUserProfileRequestTypeDef
 ```
 
 Required fields:
@@ -405,8 +676,23 @@ Optional fields:
 - `displayName`: `str`
 - `emailAddress`: `str`
 - `sshPublicKey`: `str`
+
+## UpdateUserProfileResultResponseTypeDef
+
+```python
+from mypy_boto3_codestar.type_defs import UpdateUserProfileResultResponseTypeDef
+```
+
+Required fields:
+
+- `userArn`: `str`
+- `displayName`: `str`
+- `emailAddress`: `str`
+- `sshPublicKey`: `str`
 - `createdTimestamp`: `datetime`
 - `lastModifiedTimestamp`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UserProfileSummaryTypeDef
 

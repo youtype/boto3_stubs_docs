@@ -24,7 +24,7 @@ def get_identity_exists_waiter() -> IdentityExistsWaiter:
 ```
 
 Boto3 documentation:
-[SES.Waiter.identity_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Waiter.identity_exists)
+[SES.Waiter.identity_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Waiter.IdentityExists)
 
 Arguments for `IdentityExistsWaiter.wait` method:
 

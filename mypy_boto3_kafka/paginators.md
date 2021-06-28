@@ -40,7 +40,7 @@ Arguments for `ListClusterOperationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListClusterOperationsPaginator.paginate` returns
-`Iterator`\[[ListClusterOperationsResponseTypeDef](./type_defs.md#listclusteroperationsresponsetypedef)\].
+`Iterator`\[[ListClusterOperationsResponseResponseTypeDef](./type_defs.md#listclusteroperationsresponseresponsetypedef)\].
 
 ## ListClustersPaginator
 
@@ -65,7 +65,7 @@ Arguments for `ListClustersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListClustersPaginator.paginate` returns
-`Iterator`\[[ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef)\].
+`Iterator`\[[ListClustersResponseResponseTypeDef](./type_defs.md#listclustersresponseresponsetypedef)\].
 
 ## ListConfigurationRevisionsPaginator
 
@@ -91,7 +91,7 @@ Arguments for `ListConfigurationRevisionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListConfigurationRevisionsPaginator.paginate` returns
-`Iterator`\[[ListConfigurationRevisionsResponseTypeDef](./type_defs.md#listconfigurationrevisionsresponsetypedef)\].
+`Iterator`\[[ListConfigurationRevisionsResponseResponseTypeDef](./type_defs.md#listconfigurationrevisionsresponseresponsetypedef)\].
 
 ## ListConfigurationsPaginator
 
@@ -116,7 +116,7 @@ Arguments for `ListConfigurationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListConfigurationsPaginator.paginate` returns
-`Iterator`\[[ListConfigurationsResponseTypeDef](./type_defs.md#listconfigurationsresponsetypedef)\].
+`Iterator`\[[ListConfigurationsResponseResponseTypeDef](./type_defs.md#listconfigurationsresponseresponsetypedef)\].
 
 ## ListKafkaVersionsPaginator
 
@@ -141,7 +141,7 @@ Arguments for `ListKafkaVersionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListKafkaVersionsPaginator.paginate` returns
-`Iterator`\[[ListKafkaVersionsResponseTypeDef](./type_defs.md#listkafkaversionsresponsetypedef)\].
+`Iterator`\[[ListKafkaVersionsResponseResponseTypeDef](./type_defs.md#listkafkaversionsresponseresponsetypedef)\].
 
 ## ListNodesPaginator
 
@@ -166,7 +166,7 @@ Arguments for `ListNodesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListNodesPaginator.paginate` returns
-`Iterator`\[[ListNodesResponseTypeDef](./type_defs.md#listnodesresponsetypedef)\].
+`Iterator`\[[ListNodesResponseResponseTypeDef](./type_defs.md#listnodesresponseresponsetypedef)\].
 
 ## ListScramSecretsPaginator
 
@@ -192,4 +192,4 @@ Arguments for `ListScramSecretsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListScramSecretsPaginator.paginate` returns
-`Iterator`\[[ListScramSecretsResponseTypeDef](./type_defs.md#listscramsecretsresponsetypedef)\].
+`Iterator`\[[ListScramSecretsResponseResponseTypeDef](./type_defs.md#listscramsecretsresponseresponsetypedef)\].

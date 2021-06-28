@@ -8,7 +8,8 @@ type annotations stubs module
 [mypy_boto3_apprunner](https://pypi.org/project/mypy-boto3-apprunner/).
 
 - [Typed dictionaries for boto3 AppRunner module](#typed-dictionaries-for-boto3-apprunner-module)
-  - [AssociateCustomDomainResponseTypeDef](#associatecustomdomainresponsetypedef)
+  - [AssociateCustomDomainRequestTypeDef](#associatecustomdomainrequesttypedef)
+  - [AssociateCustomDomainResponseResponseTypeDef](#associatecustomdomainresponseresponsetypedef)
   - [AuthenticationConfigurationTypeDef](#authenticationconfigurationtypedef)
   - [AutoScalingConfigurationSummaryTypeDef](#autoscalingconfigurationsummarytypedef)
   - [AutoScalingConfigurationTypeDef](#autoscalingconfigurationtypedef)
@@ -18,42 +19,79 @@ type annotations stubs module
   - [CodeRepositoryTypeDef](#coderepositorytypedef)
   - [ConnectionSummaryTypeDef](#connectionsummarytypedef)
   - [ConnectionTypeDef](#connectiontypedef)
-  - [CreateAutoScalingConfigurationResponseTypeDef](#createautoscalingconfigurationresponsetypedef)
-  - [CreateConnectionResponseTypeDef](#createconnectionresponsetypedef)
-  - [CreateServiceResponseTypeDef](#createserviceresponsetypedef)
+  - [CreateAutoScalingConfigurationRequestTypeDef](#createautoscalingconfigurationrequesttypedef)
+  - [CreateAutoScalingConfigurationResponseResponseTypeDef](#createautoscalingconfigurationresponseresponsetypedef)
+  - [CreateConnectionRequestTypeDef](#createconnectionrequesttypedef)
+  - [CreateConnectionResponseResponseTypeDef](#createconnectionresponseresponsetypedef)
+  - [CreateServiceRequestTypeDef](#createservicerequesttypedef)
+  - [CreateServiceResponseResponseTypeDef](#createserviceresponseresponsetypedef)
   - [CustomDomainTypeDef](#customdomaintypedef)
-  - [DeleteAutoScalingConfigurationResponseTypeDef](#deleteautoscalingconfigurationresponsetypedef)
-  - [DeleteConnectionResponseTypeDef](#deleteconnectionresponsetypedef)
-  - [DeleteServiceResponseTypeDef](#deleteserviceresponsetypedef)
-  - [DescribeAutoScalingConfigurationResponseTypeDef](#describeautoscalingconfigurationresponsetypedef)
-  - [DescribeCustomDomainsResponseTypeDef](#describecustomdomainsresponsetypedef)
-  - [DescribeServiceResponseTypeDef](#describeserviceresponsetypedef)
-  - [DisassociateCustomDomainResponseTypeDef](#disassociatecustomdomainresponsetypedef)
+  - [DeleteAutoScalingConfigurationRequestTypeDef](#deleteautoscalingconfigurationrequesttypedef)
+  - [DeleteAutoScalingConfigurationResponseResponseTypeDef](#deleteautoscalingconfigurationresponseresponsetypedef)
+  - [DeleteConnectionRequestTypeDef](#deleteconnectionrequesttypedef)
+  - [DeleteConnectionResponseResponseTypeDef](#deleteconnectionresponseresponsetypedef)
+  - [DeleteServiceRequestTypeDef](#deleteservicerequesttypedef)
+  - [DeleteServiceResponseResponseTypeDef](#deleteserviceresponseresponsetypedef)
+  - [DescribeAutoScalingConfigurationRequestTypeDef](#describeautoscalingconfigurationrequesttypedef)
+  - [DescribeAutoScalingConfigurationResponseResponseTypeDef](#describeautoscalingconfigurationresponseresponsetypedef)
+  - [DescribeCustomDomainsRequestTypeDef](#describecustomdomainsrequesttypedef)
+  - [DescribeCustomDomainsResponseResponseTypeDef](#describecustomdomainsresponseresponsetypedef)
+  - [DescribeServiceRequestTypeDef](#describeservicerequesttypedef)
+  - [DescribeServiceResponseResponseTypeDef](#describeserviceresponseresponsetypedef)
+  - [DisassociateCustomDomainRequestTypeDef](#disassociatecustomdomainrequesttypedef)
+  - [DisassociateCustomDomainResponseResponseTypeDef](#disassociatecustomdomainresponseresponsetypedef)
   - [EncryptionConfigurationTypeDef](#encryptionconfigurationtypedef)
   - [HealthCheckConfigurationTypeDef](#healthcheckconfigurationtypedef)
   - [ImageConfigurationTypeDef](#imageconfigurationtypedef)
   - [ImageRepositoryTypeDef](#imagerepositorytypedef)
   - [InstanceConfigurationTypeDef](#instanceconfigurationtypedef)
-  - [ListAutoScalingConfigurationsResponseTypeDef](#listautoscalingconfigurationsresponsetypedef)
-  - [ListConnectionsResponseTypeDef](#listconnectionsresponsetypedef)
-  - [ListOperationsResponseTypeDef](#listoperationsresponsetypedef)
-  - [ListServicesResponseTypeDef](#listservicesresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListAutoScalingConfigurationsRequestTypeDef](#listautoscalingconfigurationsrequesttypedef)
+  - [ListAutoScalingConfigurationsResponseResponseTypeDef](#listautoscalingconfigurationsresponseresponsetypedef)
+  - [ListConnectionsRequestTypeDef](#listconnectionsrequesttypedef)
+  - [ListConnectionsResponseResponseTypeDef](#listconnectionsresponseresponsetypedef)
+  - [ListOperationsRequestTypeDef](#listoperationsrequesttypedef)
+  - [ListOperationsResponseResponseTypeDef](#listoperationsresponseresponsetypedef)
+  - [ListServicesRequestTypeDef](#listservicesrequesttypedef)
+  - [ListServicesResponseResponseTypeDef](#listservicesresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [OperationSummaryTypeDef](#operationsummarytypedef)
-  - [PauseServiceResponseTypeDef](#pauseserviceresponsetypedef)
-  - [ResumeServiceResponseTypeDef](#resumeserviceresponsetypedef)
+  - [PauseServiceRequestTypeDef](#pauseservicerequesttypedef)
+  - [PauseServiceResponseResponseTypeDef](#pauseserviceresponseresponsetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [ResumeServiceRequestTypeDef](#resumeservicerequesttypedef)
+  - [ResumeServiceResponseResponseTypeDef](#resumeserviceresponseresponsetypedef)
   - [ServiceSummaryTypeDef](#servicesummarytypedef)
   - [ServiceTypeDef](#servicetypedef)
   - [SourceCodeVersionTypeDef](#sourcecodeversiontypedef)
   - [SourceConfigurationTypeDef](#sourceconfigurationtypedef)
-  - [StartDeploymentResponseTypeDef](#startdeploymentresponsetypedef)
+  - [StartDeploymentRequestTypeDef](#startdeploymentrequesttypedef)
+  - [StartDeploymentResponseResponseTypeDef](#startdeploymentresponseresponsetypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TagTypeDef](#tagtypedef)
-  - [UpdateServiceResponseTypeDef](#updateserviceresponsetypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateServiceRequestTypeDef](#updateservicerequesttypedef)
+  - [UpdateServiceResponseResponseTypeDef](#updateserviceresponseresponsetypedef)
 
-## AssociateCustomDomainResponseTypeDef
+## AssociateCustomDomainRequestTypeDef
 
 ```python
-from mypy_boto3_apprunner.type_defs import AssociateCustomDomainResponseTypeDef
+from mypy_boto3_apprunner.type_defs import AssociateCustomDomainRequestTypeDef
+```
+
+Required fields:
+
+- `ServiceArn`: `str`
+- `DomainName`: `str`
+
+Optional fields:
+
+- `EnableWWWSubdomain`: `bool`
+
+## AssociateCustomDomainResponseResponseTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import AssociateCustomDomainResponseResponseTypeDef
 ```
 
 Required fields:
@@ -61,6 +99,8 @@ Required fields:
 - `DNSTarget`: `str`
 - `ServiceArn`: `str`
 - `CustomDomain`: [CustomDomainTypeDef](./type_defs.md#customdomaintypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## AuthenticationConfigurationTypeDef
 
@@ -199,37 +239,99 @@ Optional fields:
 - `Status`: [ConnectionStatusType](./literals.md#connectionstatustype)
 - `CreatedAt`: `datetime`
 
-## CreateAutoScalingConfigurationResponseTypeDef
+## CreateAutoScalingConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_apprunner.type_defs import CreateAutoScalingConfigurationResponseTypeDef
+from mypy_boto3_apprunner.type_defs import CreateAutoScalingConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `AutoScalingConfigurationName`: `str`
+
+Optional fields:
+
+- `MaxConcurrency`: `int`
+- `MinSize`: `int`
+- `MaxSize`: `int`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateAutoScalingConfigurationResponseResponseTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import CreateAutoScalingConfigurationResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `AutoScalingConfiguration`:
   [AutoScalingConfigurationTypeDef](./type_defs.md#autoscalingconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateConnectionResponseTypeDef
+## CreateConnectionRequestTypeDef
 
 ```python
-from mypy_boto3_apprunner.type_defs import CreateConnectionResponseTypeDef
+from mypy_boto3_apprunner.type_defs import CreateConnectionRequestTypeDef
+```
+
+Required fields:
+
+- `ConnectionName`: `str`
+- `ProviderType`: `Literal['GITHUB']` (see
+  [ProviderTypeType](./literals.md#providertypetype))
+
+Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateConnectionResponseResponseTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import CreateConnectionResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `Connection`: [ConnectionTypeDef](./type_defs.md#connectiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateServiceResponseTypeDef
+## CreateServiceRequestTypeDef
 
 ```python
-from mypy_boto3_apprunner.type_defs import CreateServiceResponseTypeDef
+from mypy_boto3_apprunner.type_defs import CreateServiceRequestTypeDef
+```
+
+Required fields:
+
+- `ServiceName`: `str`
+- `SourceConfiguration`:
+  [SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef)
+
+Optional fields:
+
+- `InstanceConfiguration`:
+  [InstanceConfigurationTypeDef](./type_defs.md#instanceconfigurationtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `EncryptionConfiguration`:
+  [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
+- `HealthCheckConfiguration`:
+  [HealthCheckConfigurationTypeDef](./type_defs.md#healthcheckconfigurationtypedef)
+- `AutoScalingConfigurationArn`: `str`
+
+## CreateServiceResponseResponseTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import CreateServiceResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `Service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
 - `OperationId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CustomDomainTypeDef
 
@@ -249,53 +351,116 @@ Optional fields:
 - `CertificateValidationRecords`:
   `List`\[[CertificateValidationRecordTypeDef](./type_defs.md#certificatevalidationrecordtypedef)\]
 
-## DeleteAutoScalingConfigurationResponseTypeDef
+## DeleteAutoScalingConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_apprunner.type_defs import DeleteAutoScalingConfigurationResponseTypeDef
+from mypy_boto3_apprunner.type_defs import DeleteAutoScalingConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `AutoScalingConfigurationArn`: `str`
+
+## DeleteAutoScalingConfigurationResponseResponseTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import DeleteAutoScalingConfigurationResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `AutoScalingConfiguration`:
   [AutoScalingConfigurationTypeDef](./type_defs.md#autoscalingconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteConnectionResponseTypeDef
+## DeleteConnectionRequestTypeDef
 
 ```python
-from mypy_boto3_apprunner.type_defs import DeleteConnectionResponseTypeDef
+from mypy_boto3_apprunner.type_defs import DeleteConnectionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
-- `Connection`: [ConnectionTypeDef](./type_defs.md#connectiontypedef)
+- `ConnectionArn`: `str`
 
-## DeleteServiceResponseTypeDef
+## DeleteConnectionResponseResponseTypeDef
 
 ```python
-from mypy_boto3_apprunner.type_defs import DeleteServiceResponseTypeDef
+from mypy_boto3_apprunner.type_defs import DeleteConnectionResponseResponseTypeDef
+```
+
+Required fields:
+
+- `Connection`: [ConnectionTypeDef](./type_defs.md#connectiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteServiceRequestTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import DeleteServiceRequestTypeDef
+```
+
+Required fields:
+
+- `ServiceArn`: `str`
+
+## DeleteServiceResponseResponseTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import DeleteServiceResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `Service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
 - `OperationId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAutoScalingConfigurationResponseTypeDef
+## DescribeAutoScalingConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_apprunner.type_defs import DescribeAutoScalingConfigurationResponseTypeDef
+from mypy_boto3_apprunner.type_defs import DescribeAutoScalingConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `AutoScalingConfigurationArn`: `str`
+
+## DescribeAutoScalingConfigurationResponseResponseTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import DescribeAutoScalingConfigurationResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `AutoScalingConfiguration`:
   [AutoScalingConfigurationTypeDef](./type_defs.md#autoscalingconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeCustomDomainsResponseTypeDef
+## DescribeCustomDomainsRequestTypeDef
 
 ```python
-from mypy_boto3_apprunner.type_defs import DescribeCustomDomainsResponseTypeDef
+from mypy_boto3_apprunner.type_defs import DescribeCustomDomainsRequestTypeDef
+```
+
+Required fields:
+
+- `ServiceArn`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeCustomDomainsResponseResponseTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import DescribeCustomDomainsResponseResponseTypeDef
 ```
 
 Required fields:
@@ -304,25 +469,47 @@ Required fields:
 - `ServiceArn`: `str`
 - `CustomDomains`:
   `List`\[[CustomDomainTypeDef](./type_defs.md#customdomaintypedef)\]
-
-Optional fields:
-
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeServiceResponseTypeDef
+## DescribeServiceRequestTypeDef
 
 ```python
-from mypy_boto3_apprunner.type_defs import DescribeServiceResponseTypeDef
+from mypy_boto3_apprunner.type_defs import DescribeServiceRequestTypeDef
+```
+
+Required fields:
+
+- `ServiceArn`: `str`
+
+## DescribeServiceResponseResponseTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import DescribeServiceResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `Service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociateCustomDomainResponseTypeDef
+## DisassociateCustomDomainRequestTypeDef
 
 ```python
-from mypy_boto3_apprunner.type_defs import DisassociateCustomDomainResponseTypeDef
+from mypy_boto3_apprunner.type_defs import DisassociateCustomDomainRequestTypeDef
+```
+
+Required fields:
+
+- `ServiceArn`: `str`
+- `DomainName`: `str`
+
+## DisassociateCustomDomainResponseResponseTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import DisassociateCustomDomainResponseResponseTypeDef
 ```
 
 Required fields:
@@ -330,6 +517,8 @@ Required fields:
 - `DNSTarget`: `str`
 - `ServiceArn`: `str`
 - `CustomDomain`: [CustomDomainTypeDef](./type_defs.md#customdomaintypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## EncryptionConfigurationTypeDef
 
@@ -397,72 +586,134 @@ Optional fields:
 - `Memory`: `str`
 - `InstanceRoleArn`: `str`
 
-## ListAutoScalingConfigurationsResponseTypeDef
+## ListAutoScalingConfigurationsRequestTypeDef
 
 ```python
-from mypy_boto3_apprunner.type_defs import ListAutoScalingConfigurationsResponseTypeDef
+from mypy_boto3_apprunner.type_defs import ListAutoScalingConfigurationsRequestTypeDef
+```
+
+Optional fields:
+
+- `AutoScalingConfigurationName`: `str`
+- `LatestOnly`: `bool`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListAutoScalingConfigurationsResponseResponseTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import ListAutoScalingConfigurationsResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `AutoScalingConfigurationSummaryList`:
   `List`\[[AutoScalingConfigurationSummaryTypeDef](./type_defs.md#autoscalingconfigurationsummarytypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListConnectionsRequestTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import ListConnectionsRequestTypeDef
+```
 
 Optional fields:
 
+- `ConnectionName`: `str`
+- `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListConnectionsResponseTypeDef
+## ListConnectionsResponseResponseTypeDef
 
 ```python
-from mypy_boto3_apprunner.type_defs import ListConnectionsResponseTypeDef
+from mypy_boto3_apprunner.type_defs import ListConnectionsResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `ConnectionSummaryList`:
   `List`\[[ConnectionSummaryTypeDef](./type_defs.md#connectionsummarytypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListOperationsRequestTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import ListOperationsRequestTypeDef
+```
+
+Required fields:
+
+- `ServiceArn`: `str`
 
 Optional fields:
 
 - `NextToken`: `str`
+- `MaxResults`: `int`
 
-## ListOperationsResponseTypeDef
+## ListOperationsResponseResponseTypeDef
 
 ```python
-from mypy_boto3_apprunner.type_defs import ListOperationsResponseTypeDef
+from mypy_boto3_apprunner.type_defs import ListOperationsResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `OperationSummaryList`:
   `List`\[[OperationSummaryTypeDef](./type_defs.md#operationsummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListServicesResponseTypeDef
+## ListServicesRequestTypeDef
 
 ```python
-from mypy_boto3_apprunner.type_defs import ListServicesResponseTypeDef
+from mypy_boto3_apprunner.type_defs import ListServicesRequestTypeDef
+```
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListServicesResponseResponseTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import ListServicesResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `ServiceSummaryList`:
   `List`\[[ServiceSummaryTypeDef](./type_defs.md#servicesummarytypedef)\]
-
-Optional fields:
-
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_apprunner.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_apprunner.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceArn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## OperationSummaryTypeDef
 
@@ -480,33 +731,65 @@ Optional fields:
 - `EndedAt`: `datetime`
 - `UpdatedAt`: `datetime`
 
-## PauseServiceResponseTypeDef
+## PauseServiceRequestTypeDef
 
 ```python
-from mypy_boto3_apprunner.type_defs import PauseServiceResponseTypeDef
+from mypy_boto3_apprunner.type_defs import PauseServiceRequestTypeDef
+```
+
+Required fields:
+
+- `ServiceArn`: `str`
+
+## PauseServiceResponseResponseTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import PauseServiceResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `Service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
-
-Optional fields:
-
 - `OperationId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ResumeServiceResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_apprunner.type_defs import ResumeServiceResponseTypeDef
+from mypy_boto3_apprunner.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## ResumeServiceRequestTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import ResumeServiceRequestTypeDef
+```
+
+Required fields:
+
+- `ServiceArn`: `str`
+
+## ResumeServiceResponseResponseTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import ResumeServiceResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `Service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
-
-Optional fields:
-
 - `OperationId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ServiceSummaryTypeDef
 
@@ -582,15 +865,38 @@ Optional fields:
 - `AuthenticationConfiguration`:
   [AuthenticationConfigurationTypeDef](./type_defs.md#authenticationconfigurationtypedef)
 
-## StartDeploymentResponseTypeDef
+## StartDeploymentRequestTypeDef
 
 ```python
-from mypy_boto3_apprunner.type_defs import StartDeploymentResponseTypeDef
+from mypy_boto3_apprunner.type_defs import StartDeploymentRequestTypeDef
+```
+
+Required fields:
+
+- `ServiceArn`: `str`
+
+## StartDeploymentResponseResponseTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import StartDeploymentResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `OperationId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -603,13 +909,46 @@ Optional fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## UpdateServiceResponseTypeDef
+## UntagResourceRequestTypeDef
 
 ```python
-from mypy_boto3_apprunner.type_defs import UpdateServiceResponseTypeDef
+from mypy_boto3_apprunner.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## UpdateServiceRequestTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import UpdateServiceRequestTypeDef
+```
+
+Required fields:
+
+- `ServiceArn`: `str`
+
+Optional fields:
+
+- `SourceConfiguration`:
+  [SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef)
+- `InstanceConfiguration`:
+  [InstanceConfigurationTypeDef](./type_defs.md#instanceconfigurationtypedef)
+- `AutoScalingConfigurationArn`: `str`
+- `HealthCheckConfiguration`:
+  [HealthCheckConfigurationTypeDef](./type_defs.md#healthcheckconfigurationtypedef)
+
+## UpdateServiceResponseResponseTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import UpdateServiceResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `Service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
 - `OperationId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

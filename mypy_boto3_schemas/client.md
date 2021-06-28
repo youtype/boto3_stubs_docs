@@ -93,6 +93,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("schemas").can_paginate` method.
 
 Boto3 documentation:
@@ -106,10 +108,15 @@ Returns `bool`.
 
 ### create_discoverer
 
+Creates a discoverer.
+
 Type annotations for `boto3.client("schemas").create_discoverer` method.
 
 Boto3 documentation:
 [Schemas.Client.create_discoverer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.create_discoverer)
+
+Arguments mapping described in
+[CreateDiscovererRequestTypeDef](./type_defs.md#creatediscovererrequesttypedef).
 
 Keyword-only arguments:
 
@@ -118,14 +125,19 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateDiscovererResponseTypeDef](./type_defs.md#creatediscovererresponsetypedef).
+[CreateDiscovererResponseResponseTypeDef](./type_defs.md#creatediscovererresponseresponsetypedef).
 
 ### create_registry
+
+Creates a registry.
 
 Type annotations for `boto3.client("schemas").create_registry` method.
 
 Boto3 documentation:
 [Schemas.Client.create_registry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.create_registry)
+
+Arguments mapping described in
+[CreateRegistryRequestTypeDef](./type_defs.md#createregistryrequesttypedef).
 
 Keyword-only arguments:
 
@@ -134,14 +146,19 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateRegistryResponseTypeDef](./type_defs.md#createregistryresponsetypedef).
+[CreateRegistryResponseResponseTypeDef](./type_defs.md#createregistryresponseresponsetypedef).
 
 ### create_schema
+
+Creates a schema definition.
 
 Type annotations for `boto3.client("schemas").create_schema` method.
 
 Boto3 documentation:
 [Schemas.Client.create_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.create_schema)
+
+Arguments mapping described in
+[CreateSchemaRequestTypeDef](./type_defs.md#createschemarequesttypedef).
 
 Keyword-only arguments:
 
@@ -153,14 +170,19 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateSchemaResponseTypeDef](./type_defs.md#createschemaresponsetypedef).
+[CreateSchemaResponseResponseTypeDef](./type_defs.md#createschemaresponseresponsetypedef).
 
 ### delete_discoverer
+
+Deletes a discoverer.
 
 Type annotations for `boto3.client("schemas").delete_discoverer` method.
 
 Boto3 documentation:
 [Schemas.Client.delete_discoverer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_discoverer)
+
+Arguments mapping described in
+[DeleteDiscovererRequestTypeDef](./type_defs.md#deletediscovererrequesttypedef).
 
 Keyword-only arguments:
 
@@ -168,10 +190,15 @@ Keyword-only arguments:
 
 ### delete_registry
 
+Deletes a Registry.
+
 Type annotations for `boto3.client("schemas").delete_registry` method.
 
 Boto3 documentation:
 [Schemas.Client.delete_registry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_registry)
+
+Arguments mapping described in
+[DeleteRegistryRequestTypeDef](./type_defs.md#deleteregistryrequesttypedef).
 
 Keyword-only arguments:
 
@@ -179,10 +206,15 @@ Keyword-only arguments:
 
 ### delete_resource_policy
 
+Delete the resource-based policy attached to the specified registry.
+
 Type annotations for `boto3.client("schemas").delete_resource_policy` method.
 
 Boto3 documentation:
 [Schemas.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_resource_policy)
+
+Arguments mapping described in
+[DeleteResourcePolicyRequestTypeDef](./type_defs.md#deleteresourcepolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -190,10 +222,15 @@ Keyword-only arguments:
 
 ### delete_schema
 
+Delete a schema definition.
+
 Type annotations for `boto3.client("schemas").delete_schema` method.
 
 Boto3 documentation:
 [Schemas.Client.delete_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_schema)
+
+Arguments mapping described in
+[DeleteSchemaRequestTypeDef](./type_defs.md#deleteschemarequesttypedef).
 
 Keyword-only arguments:
 
@@ -202,10 +239,18 @@ Keyword-only arguments:
 
 ### delete_schema_version
 
+Delete the schema version definition See also:
+`AWS API Documentation <https://d ocs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/DeleteSchemaVersion>`\_
+**Request Syntax** response = client.delete_schema_version(
+RegistryName='string', SchemaName='string', SchemaVers...
+
 Type annotations for `boto3.client("schemas").delete_schema_version` method.
 
 Boto3 documentation:
 [Schemas.Client.delete_schema_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_schema_version)
+
+Arguments mapping described in
+[DeleteSchemaVersionRequestTypeDef](./type_defs.md#deleteschemaversionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -215,10 +260,15 @@ Keyword-only arguments:
 
 ### describe_code_binding
 
+Describe the code binding URI.
+
 Type annotations for `boto3.client("schemas").describe_code_binding` method.
 
 Boto3 documentation:
 [Schemas.Client.describe_code_binding](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.describe_code_binding)
+
+Arguments mapping described in
+[DescribeCodeBindingRequestTypeDef](./type_defs.md#describecodebindingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -228,42 +278,57 @@ Keyword-only arguments:
 - `SchemaVersion`: `str`
 
 Returns
-[DescribeCodeBindingResponseTypeDef](./type_defs.md#describecodebindingresponsetypedef).
+[DescribeCodeBindingResponseResponseTypeDef](./type_defs.md#describecodebindingresponseresponsetypedef).
 
 ### describe_discoverer
+
+Describes the discoverer.
 
 Type annotations for `boto3.client("schemas").describe_discoverer` method.
 
 Boto3 documentation:
 [Schemas.Client.describe_discoverer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.describe_discoverer)
 
+Arguments mapping described in
+[DescribeDiscovererRequestTypeDef](./type_defs.md#describediscovererrequesttypedef).
+
 Keyword-only arguments:
 
 - `DiscovererId`: `str` *(required)*
 
 Returns
-[DescribeDiscovererResponseTypeDef](./type_defs.md#describediscovererresponsetypedef).
+[DescribeDiscovererResponseResponseTypeDef](./type_defs.md#describediscovererresponseresponsetypedef).
 
 ### describe_registry
+
+Describes the registry.
 
 Type annotations for `boto3.client("schemas").describe_registry` method.
 
 Boto3 documentation:
 [Schemas.Client.describe_registry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.describe_registry)
 
+Arguments mapping described in
+[DescribeRegistryRequestTypeDef](./type_defs.md#describeregistryrequesttypedef).
+
 Keyword-only arguments:
 
 - `RegistryName`: `str` *(required)*
 
 Returns
-[DescribeRegistryResponseTypeDef](./type_defs.md#describeregistryresponsetypedef).
+[DescribeRegistryResponseResponseTypeDef](./type_defs.md#describeregistryresponseresponsetypedef).
 
 ### describe_schema
+
+Retrieve the schema definition.
 
 Type annotations for `boto3.client("schemas").describe_schema` method.
 
 Boto3 documentation:
 [Schemas.Client.describe_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.describe_schema)
+
+Arguments mapping described in
+[DescribeSchemaRequestTypeDef](./type_defs.md#describeschemarequesttypedef).
 
 Keyword-only arguments:
 
@@ -272,14 +337,22 @@ Keyword-only arguments:
 - `SchemaVersion`: `str`
 
 Returns
-[DescribeSchemaResponseTypeDef](./type_defs.md#describeschemaresponsetypedef).
+[DescribeSchemaResponseResponseTypeDef](./type_defs.md#describeschemaresponseresponsetypedef).
 
 ### export_schema
+
+See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/ExportSchema>`\_
+**Request Syntax** response = client.export_schema( RegistryName='string',
+SchemaName='string', SchemaVersion='string', Type='string' ).
 
 Type annotations for `boto3.client("schemas").export_schema` method.
 
 Boto3 documentation:
 [Schemas.Client.export_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.export_schema)
+
+Arguments mapping described in
+[ExportSchemaRequestTypeDef](./type_defs.md#exportschemarequesttypedef).
 
 Keyword-only arguments:
 
@@ -289,9 +362,11 @@ Keyword-only arguments:
 - `SchemaVersion`: `str`
 
 Returns
-[ExportSchemaResponseTypeDef](./type_defs.md#exportschemaresponsetypedef).
+[ExportSchemaResponseResponseTypeDef](./type_defs.md#exportschemaresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("schemas").generate_presigned_url` method.
 
@@ -309,10 +384,15 @@ Returns `str`.
 
 ### get_code_binding_source
 
+Get the code binding source URI.
+
 Type annotations for `boto3.client("schemas").get_code_binding_source` method.
 
 Boto3 documentation:
 [Schemas.Client.get_code_binding_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.get_code_binding_source)
+
+Arguments mapping described in
+[GetCodeBindingSourceRequestTypeDef](./type_defs.md#getcodebindingsourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -322,14 +402,19 @@ Keyword-only arguments:
 - `SchemaVersion`: `str`
 
 Returns
-[GetCodeBindingSourceResponseTypeDef](./type_defs.md#getcodebindingsourceresponsetypedef).
+[GetCodeBindingSourceResponseResponseTypeDef](./type_defs.md#getcodebindingsourceresponseresponsetypedef).
 
 ### get_discovered_schema
+
+Get the discovered schema that was generated based on sampled events.
 
 Type annotations for `boto3.client("schemas").get_discovered_schema` method.
 
 Boto3 documentation:
 [Schemas.Client.get_discovered_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.get_discovered_schema)
+
+Arguments mapping described in
+[GetDiscoveredSchemaRequestTypeDef](./type_defs.md#getdiscoveredschemarequesttypedef).
 
 Keyword-only arguments:
 
@@ -337,28 +422,38 @@ Keyword-only arguments:
 - `Type`: [TypeType](./literals.md#typetype) *(required)*
 
 Returns
-[GetDiscoveredSchemaResponseTypeDef](./type_defs.md#getdiscoveredschemaresponsetypedef).
+[GetDiscoveredSchemaResponseResponseTypeDef](./type_defs.md#getdiscoveredschemaresponseresponsetypedef).
 
 ### get_resource_policy
+
+Retrieves the resource-based policy attached to a given registry.
 
 Type annotations for `boto3.client("schemas").get_resource_policy` method.
 
 Boto3 documentation:
 [Schemas.Client.get_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.get_resource_policy)
 
+Arguments mapping described in
+[GetResourcePolicyRequestTypeDef](./type_defs.md#getresourcepolicyrequesttypedef).
+
 Keyword-only arguments:
 
 - `RegistryName`: `str`
 
 Returns
-[GetResourcePolicyResponseTypeDef](./type_defs.md#getresourcepolicyresponsetypedef).
+[GetResourcePolicyResponseResponseTypeDef](./type_defs.md#getresourcepolicyresponseresponsetypedef).
 
 ### list_discoverers
+
+List the discoverers.
 
 Type annotations for `boto3.client("schemas").list_discoverers` method.
 
 Boto3 documentation:
 [Schemas.Client.list_discoverers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_discoverers)
+
+Arguments mapping described in
+[ListDiscoverersRequestTypeDef](./type_defs.md#listdiscoverersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -368,14 +463,19 @@ Keyword-only arguments:
 - `SourceArnPrefix`: `str`
 
 Returns
-[ListDiscoverersResponseTypeDef](./type_defs.md#listdiscoverersresponsetypedef).
+[ListDiscoverersResponseResponseTypeDef](./type_defs.md#listdiscoverersresponseresponsetypedef).
 
 ### list_registries
+
+List the registries.
 
 Type annotations for `boto3.client("schemas").list_registries` method.
 
 Boto3 documentation:
 [Schemas.Client.list_registries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_registries)
+
+Arguments mapping described in
+[ListRegistriesRequestTypeDef](./type_defs.md#listregistriesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -385,14 +485,19 @@ Keyword-only arguments:
 - `Scope`: `str`
 
 Returns
-[ListRegistriesResponseTypeDef](./type_defs.md#listregistriesresponsetypedef).
+[ListRegistriesResponseResponseTypeDef](./type_defs.md#listregistriesresponseresponsetypedef).
 
 ### list_schema_versions
+
+Provides a list of the schema versions and related information.
 
 Type annotations for `boto3.client("schemas").list_schema_versions` method.
 
 Boto3 documentation:
 [Schemas.Client.list_schema_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_schema_versions)
+
+Arguments mapping described in
+[ListSchemaVersionsRequestTypeDef](./type_defs.md#listschemaversionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -402,14 +507,19 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListSchemaVersionsResponseTypeDef](./type_defs.md#listschemaversionsresponsetypedef).
+[ListSchemaVersionsResponseResponseTypeDef](./type_defs.md#listschemaversionsresponseresponsetypedef).
 
 ### list_schemas
+
+List the schemas.
 
 Type annotations for `boto3.client("schemas").list_schemas` method.
 
 Boto3 documentation:
 [Schemas.Client.list_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_schemas)
+
+Arguments mapping described in
+[ListSchemasRequestTypeDef](./type_defs.md#listschemasrequesttypedef).
 
 Keyword-only arguments:
 
@@ -419,28 +529,41 @@ Keyword-only arguments:
 - `SchemaNamePrefix`: `str`
 
 Returns
-[ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef).
+[ListSchemasResponseResponseTypeDef](./type_defs.md#listschemasresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Get tags for resource.
 
 Type annotations for `boto3.client("schemas").list_tags_for_resource` method.
 
 Boto3 documentation:
 [Schemas.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### put_code_binding
+
+Put code binding URI See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/PutCodeBinding>`\_
+**Request Syntax** response = client.put_code_binding( Language='string',
+RegistryName='string', SchemaName='string', SchemaVersi...
 
 Type annotations for `boto3.client("schemas").put_code_binding` method.
 
 Boto3 documentation:
 [Schemas.Client.put_code_binding](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.put_code_binding)
+
+Arguments mapping described in
+[PutCodeBindingRequestTypeDef](./type_defs.md#putcodebindingrequesttypedef).
 
 Keyword-only arguments:
 
@@ -450,14 +573,19 @@ Keyword-only arguments:
 - `SchemaVersion`: `str`
 
 Returns
-[PutCodeBindingResponseTypeDef](./type_defs.md#putcodebindingresponsetypedef).
+[PutCodeBindingResponseResponseTypeDef](./type_defs.md#putcodebindingresponseresponsetypedef).
 
 ### put_resource_policy
+
+The name of the policy.
 
 Type annotations for `boto3.client("schemas").put_resource_policy` method.
 
 Boto3 documentation:
 [Schemas.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.put_resource_policy)
+
+Arguments mapping described in
+[PutResourcePolicyRequestTypeDef](./type_defs.md#putresourcepolicyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -466,14 +594,22 @@ Keyword-only arguments:
 - `RevisionId`: `str`
 
 Returns
-[PutResourcePolicyResponseTypeDef](./type_defs.md#putresourcepolicyresponsetypedef).
+[PutResourcePolicyResponseResponseTypeDef](./type_defs.md#putresourcepolicyresponseresponsetypedef).
 
 ### search_schemas
+
+Search the schemas See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/SearchSchemas>`\_
+**Request Syntax** response = client.search_schemas( Keywords='string',
+Limit=123, NextToken='string', RegistryName='string' ).
 
 Type annotations for `boto3.client("schemas").search_schemas` method.
 
 Boto3 documentation:
 [Schemas.Client.search_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.search_schemas)
+
+Arguments mapping described in
+[SearchSchemasRequestTypeDef](./type_defs.md#searchschemasrequesttypedef).
 
 Keyword-only arguments:
 
@@ -483,42 +619,61 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[SearchSchemasResponseTypeDef](./type_defs.md#searchschemasresponsetypedef).
+[SearchSchemasResponseResponseTypeDef](./type_defs.md#searchschemasresponseresponsetypedef).
 
 ### start_discoverer
+
+Starts the discoverer See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/StartDiscoverer>`\_
+**Request Syntax** response = client.start_discoverer( DiscovererId='string' ).
 
 Type annotations for `boto3.client("schemas").start_discoverer` method.
 
 Boto3 documentation:
 [Schemas.Client.start_discoverer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.start_discoverer)
 
+Arguments mapping described in
+[StartDiscovererRequestTypeDef](./type_defs.md#startdiscovererrequesttypedef).
+
 Keyword-only arguments:
 
 - `DiscovererId`: `str` *(required)*
 
 Returns
-[StartDiscovererResponseTypeDef](./type_defs.md#startdiscovererresponsetypedef).
+[StartDiscovererResponseResponseTypeDef](./type_defs.md#startdiscovererresponseresponsetypedef).
 
 ### stop_discoverer
+
+Stops the discoverer See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/StopDiscoverer>`\_
+**Request Syntax** response = client.stop_discoverer( DiscovererId='string' ).
 
 Type annotations for `boto3.client("schemas").stop_discoverer` method.
 
 Boto3 documentation:
 [Schemas.Client.stop_discoverer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.stop_discoverer)
 
+Arguments mapping described in
+[StopDiscovererRequestTypeDef](./type_defs.md#stopdiscovererrequesttypedef).
+
 Keyword-only arguments:
 
 - `DiscovererId`: `str` *(required)*
 
 Returns
-[StopDiscovererResponseTypeDef](./type_defs.md#stopdiscovererresponsetypedef).
+[StopDiscovererResponseResponseTypeDef](./type_defs.md#stopdiscovererresponseresponsetypedef).
 
 ### tag_resource
+
+Add tags to a resource.
 
 Type annotations for `boto3.client("schemas").tag_resource` method.
 
 Boto3 documentation:
 [Schemas.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -527,10 +682,15 @@ Keyword-only arguments:
 
 ### untag_resource
 
+Removes tags from a resource.
+
 Type annotations for `boto3.client("schemas").untag_resource` method.
 
 Boto3 documentation:
 [Schemas.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -539,10 +699,18 @@ Keyword-only arguments:
 
 ### update_discoverer
 
+Updates the discoverer See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/UpdateDiscoverer>`\_
+**Request Syntax** response = client.update_discoverer( Description='string',
+DiscovererId='string' ).
+
 Type annotations for `boto3.client("schemas").update_discoverer` method.
 
 Boto3 documentation:
 [Schemas.Client.update_discoverer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.update_discoverer)
+
+Arguments mapping described in
+[UpdateDiscovererRequestTypeDef](./type_defs.md#updatediscovererrequesttypedef).
 
 Keyword-only arguments:
 
@@ -550,14 +718,19 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[UpdateDiscovererResponseTypeDef](./type_defs.md#updatediscovererresponsetypedef).
+[UpdateDiscovererResponseResponseTypeDef](./type_defs.md#updatediscovererresponseresponsetypedef).
 
 ### update_registry
+
+Updates a registry.
 
 Type annotations for `boto3.client("schemas").update_registry` method.
 
 Boto3 documentation:
 [Schemas.Client.update_registry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.update_registry)
+
+Arguments mapping described in
+[UpdateRegistryRequestTypeDef](./type_defs.md#updateregistryrequesttypedef).
 
 Keyword-only arguments:
 
@@ -565,14 +738,19 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[UpdateRegistryResponseTypeDef](./type_defs.md#updateregistryresponsetypedef).
+[UpdateRegistryResponseResponseTypeDef](./type_defs.md#updateregistryresponseresponsetypedef).
 
 ### update_schema
+
+Updates the schema definition .
 
 Type annotations for `boto3.client("schemas").update_schema` method.
 
 Boto3 documentation:
 [Schemas.Client.update_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.update_schema)
+
+Arguments mapping described in
+[UpdateSchemaRequestTypeDef](./type_defs.md#updateschemarequesttypedef).
 
 Keyword-only arguments:
 
@@ -584,7 +762,7 @@ Keyword-only arguments:
 - `Type`: [TypeType](./literals.md#typetype)
 
 Returns
-[UpdateSchemaResponseTypeDef](./type_defs.md#updateschemaresponsetypedef).
+[UpdateSchemaResponseResponseTypeDef](./type_defs.md#updateschemaresponseresponsetypedef).
 
 ### get_paginator
 

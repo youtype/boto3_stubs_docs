@@ -104,19 +104,33 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_cloud9.type_defs import CreateEnvironmentEC2ResultTypeDef, ...
+from mypy_boto3_cloud9.type_defs import CreateEnvironmentEC2RequestTypeDef, ...
 ```
 
-- [CreateEnvironmentEC2ResultTypeDef](./type_defs.md#createenvironmentec2resulttypedef)
-- [CreateEnvironmentMembershipResultTypeDef](./type_defs.md#createenvironmentmembershipresulttypedef)
-- [DescribeEnvironmentMembershipsResultTypeDef](./type_defs.md#describeenvironmentmembershipsresulttypedef)
-- [DescribeEnvironmentStatusResultTypeDef](./type_defs.md#describeenvironmentstatusresulttypedef)
-- [DescribeEnvironmentsResultTypeDef](./type_defs.md#describeenvironmentsresulttypedef)
+- [CreateEnvironmentEC2RequestTypeDef](./type_defs.md#createenvironmentec2requesttypedef)
+- [CreateEnvironmentEC2ResultResponseTypeDef](./type_defs.md#createenvironmentec2resultresponsetypedef)
+- [CreateEnvironmentMembershipRequestTypeDef](./type_defs.md#createenvironmentmembershiprequesttypedef)
+- [CreateEnvironmentMembershipResultResponseTypeDef](./type_defs.md#createenvironmentmembershipresultresponsetypedef)
+- [DeleteEnvironmentMembershipRequestTypeDef](./type_defs.md#deleteenvironmentmembershiprequesttypedef)
+- [DeleteEnvironmentRequestTypeDef](./type_defs.md#deleteenvironmentrequesttypedef)
+- [DescribeEnvironmentMembershipsRequestTypeDef](./type_defs.md#describeenvironmentmembershipsrequesttypedef)
+- [DescribeEnvironmentMembershipsResultResponseTypeDef](./type_defs.md#describeenvironmentmembershipsresultresponsetypedef)
+- [DescribeEnvironmentStatusRequestTypeDef](./type_defs.md#describeenvironmentstatusrequesttypedef)
+- [DescribeEnvironmentStatusResultResponseTypeDef](./type_defs.md#describeenvironmentstatusresultresponsetypedef)
+- [DescribeEnvironmentsRequestTypeDef](./type_defs.md#describeenvironmentsrequesttypedef)
+- [DescribeEnvironmentsResultResponseTypeDef](./type_defs.md#describeenvironmentsresultresponsetypedef)
 - [EnvironmentLifecycleTypeDef](./type_defs.md#environmentlifecycletypedef)
 - [EnvironmentMemberTypeDef](./type_defs.md#environmentmembertypedef)
 - [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
-- [ListEnvironmentsResultTypeDef](./type_defs.md#listenvironmentsresulttypedef)
-- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [ListEnvironmentsRequestTypeDef](./type_defs.md#listenvironmentsrequesttypedef)
+- [ListEnvironmentsResultResponseTypeDef](./type_defs.md#listenvironmentsresultresponsetypedef)
+- [ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef)
+- [ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)
-- [UpdateEnvironmentMembershipResultTypeDef](./type_defs.md#updateenvironmentmembershipresulttypedef)
+- [UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef)
+- [UpdateEnvironmentMembershipRequestTypeDef](./type_defs.md#updateenvironmentmembershiprequesttypedef)
+- [UpdateEnvironmentMembershipResultResponseTypeDef](./type_defs.md#updateenvironmentmembershipresultresponsetypedef)
+- [UpdateEnvironmentRequestTypeDef](./type_defs.md#updateenvironmentrequesttypedef)

@@ -61,6 +61,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("iot-jobs-data").can_paginate` method.
 
 Boto3 documentation:
@@ -74,11 +76,16 @@ Returns `bool`.
 
 ### describe_job_execution
 
+Gets details of a job execution.
+
 Type annotations for `boto3.client("iot-jobs-data").describe_job_execution`
 method.
 
 Boto3 documentation:
 [IoTJobsDataPlane.Client.describe_job_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.describe_job_execution)
+
+Arguments mapping described in
+[DescribeJobExecutionRequestTypeDef](./type_defs.md#describejobexecutionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -88,9 +95,11 @@ Keyword-only arguments:
 - `executionNumber`: `int`
 
 Returns
-[DescribeJobExecutionResponseTypeDef](./type_defs.md#describejobexecutionresponsetypedef).
+[DescribeJobExecutionResponseResponseTypeDef](./type_defs.md#describejobexecutionresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("iot-jobs-data").generate_presigned_url`
 method.
@@ -109,26 +118,37 @@ Returns `str`.
 
 ### get_pending_job_executions
 
+Gets the list of all jobs for a thing that are not in a terminal status.
+
 Type annotations for `boto3.client("iot-jobs-data").get_pending_job_executions`
 method.
 
 Boto3 documentation:
 [IoTJobsDataPlane.Client.get_pending_job_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.get_pending_job_executions)
 
+Arguments mapping described in
+[GetPendingJobExecutionsRequestTypeDef](./type_defs.md#getpendingjobexecutionsrequesttypedef).
+
 Keyword-only arguments:
 
 - `thingName`: `str` *(required)*
 
 Returns
-[GetPendingJobExecutionsResponseTypeDef](./type_defs.md#getpendingjobexecutionsresponsetypedef).
+[GetPendingJobExecutionsResponseResponseTypeDef](./type_defs.md#getpendingjobexecutionsresponseresponsetypedef).
 
 ### start_next_pending_job_execution
+
+Gets and starts the next pending (status IN_PROGRESS or QUEUED) job execution
+for a thing.
 
 Type annotations for
 `boto3.client("iot-jobs-data").start_next_pending_job_execution` method.
 
 Boto3 documentation:
 [IoTJobsDataPlane.Client.start_next_pending_job_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.start_next_pending_job_execution)
+
+Arguments mapping described in
+[StartNextPendingJobExecutionRequestTypeDef](./type_defs.md#startnextpendingjobexecutionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -137,15 +157,20 @@ Keyword-only arguments:
 - `stepTimeoutInMinutes`: `int`
 
 Returns
-[StartNextPendingJobExecutionResponseTypeDef](./type_defs.md#startnextpendingjobexecutionresponsetypedef).
+[StartNextPendingJobExecutionResponseResponseTypeDef](./type_defs.md#startnextpendingjobexecutionresponseresponsetypedef).
 
 ### update_job_execution
+
+Updates the status of a job execution.
 
 Type annotations for `boto3.client("iot-jobs-data").update_job_execution`
 method.
 
 Boto3 documentation:
 [IoTJobsDataPlane.Client.update_job_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.update_job_execution)
+
+Arguments mapping described in
+[UpdateJobExecutionRequestTypeDef](./type_defs.md#updatejobexecutionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -161,4 +186,4 @@ Keyword-only arguments:
 - `executionNumber`: `int`
 
 Returns
-[UpdateJobExecutionResponseTypeDef](./type_defs.md#updatejobexecutionresponsetypedef).
+[UpdateJobExecutionResponseResponseTypeDef](./type_defs.md#updatejobexecutionresponseresponsetypedef).

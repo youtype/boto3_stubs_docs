@@ -44,7 +44,7 @@ Arguments for `DescribeResourceCollectionHealthPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeResourceCollectionHealthPaginator.paginate` returns
-`Iterator`\[[DescribeResourceCollectionHealthResponseTypeDef](./type_defs.md#describeresourcecollectionhealthresponsetypedef)\].
+`Iterator`\[[DescribeResourceCollectionHealthResponseResponseTypeDef](./type_defs.md#describeresourcecollectionhealthresponseresponsetypedef)\].
 
 ## GetCostEstimationPaginator
 
@@ -69,7 +69,7 @@ Arguments for `GetCostEstimationPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetCostEstimationPaginator.paginate` returns
-`Iterator`\[[GetCostEstimationResponseTypeDef](./type_defs.md#getcostestimationresponsetypedef)\].
+`Iterator`\[[GetCostEstimationResponseResponseTypeDef](./type_defs.md#getcostestimationresponseresponsetypedef)\].
 
 ## GetResourceCollectionPaginator
 
@@ -97,7 +97,7 @@ Arguments for `GetResourceCollectionPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetResourceCollectionPaginator.paginate` returns
-`Iterator`\[[GetResourceCollectionResponseTypeDef](./type_defs.md#getresourcecollectionresponsetypedef)\].
+`Iterator`\[[GetResourceCollectionResponseResponseTypeDef](./type_defs.md#getresourcecollectionresponseresponsetypedef)\].
 
 ## ListAnomaliesForInsightPaginator
 
@@ -125,7 +125,7 @@ Arguments for `ListAnomaliesForInsightPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAnomaliesForInsightPaginator.paginate` returns
-`Iterator`\[[ListAnomaliesForInsightResponseTypeDef](./type_defs.md#listanomaliesforinsightresponsetypedef)\].
+`Iterator`\[[ListAnomaliesForInsightResponseResponseTypeDef](./type_defs.md#listanomaliesforinsightresponseresponsetypedef)\].
 
 ## ListEventsPaginator
 
@@ -153,7 +153,7 @@ Arguments for `ListEventsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEventsPaginator.paginate` returns
-`Iterator`\[[ListEventsResponseTypeDef](./type_defs.md#listeventsresponsetypedef)\].
+`Iterator`\[[ListEventsResponseResponseTypeDef](./type_defs.md#listeventsresponseresponsetypedef)\].
 
 ## ListInsightsPaginator
 
@@ -181,7 +181,7 @@ Arguments for `ListInsightsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListInsightsPaginator.paginate` returns
-`Iterator`\[[ListInsightsResponseTypeDef](./type_defs.md#listinsightsresponsetypedef)\].
+`Iterator`\[[ListInsightsResponseResponseTypeDef](./type_defs.md#listinsightsresponseresponsetypedef)\].
 
 ## ListNotificationChannelsPaginator
 
@@ -206,7 +206,7 @@ Arguments for `ListNotificationChannelsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListNotificationChannelsPaginator.paginate` returns
-`Iterator`\[[ListNotificationChannelsResponseTypeDef](./type_defs.md#listnotificationchannelsresponsetypedef)\].
+`Iterator`\[[ListNotificationChannelsResponseResponseTypeDef](./type_defs.md#listnotificationchannelsresponseresponsetypedef)\].
 
 ## ListRecommendationsPaginator
 
@@ -233,7 +233,7 @@ Arguments for `ListRecommendationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRecommendationsPaginator.paginate` returns
-`Iterator`\[[ListRecommendationsResponseTypeDef](./type_defs.md#listrecommendationsresponsetypedef)\].
+`Iterator`\[[ListRecommendationsResponseResponseTypeDef](./type_defs.md#listrecommendationsresponseresponsetypedef)\].
 
 ## SearchInsightsPaginator
 
@@ -263,4 +263,4 @@ Arguments for `SearchInsightsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchInsightsPaginator.paginate` returns
-`Iterator`\[[SearchInsightsResponseTypeDef](./type_defs.md#searchinsightsresponsetypedef)\].
+`Iterator`\[[SearchInsightsResponseResponseTypeDef](./type_defs.md#searchinsightsresponseresponsetypedef)\].

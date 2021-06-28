@@ -78,10 +78,16 @@ Exceptions:
 
 ### associate_created_artifact
 
+Associates a created artifact of an AWS cloud resource, the target receiving
+the migration, with the migration task performed by a migration tool.
+
 Type annotations for `boto3.client("mgh").associate_created_artifact` method.
 
 Boto3 documentation:
 [MigrationHub.Client.associate_created_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.associate_created_artifact)
+
+Arguments mapping described in
+[AssociateCreatedArtifactRequestTypeDef](./type_defs.md#associatecreatedartifactrequesttypedef).
 
 Keyword-only arguments:
 
@@ -95,11 +101,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### associate_discovered_resource
 
+Associates a discovered resource ID from Application Discovery Service with a
+migration task.
+
 Type annotations for `boto3.client("mgh").associate_discovered_resource`
 method.
 
 Boto3 documentation:
 [MigrationHub.Client.associate_discovered_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.associate_discovered_resource)
+
+Arguments mapping described in
+[AssociateDiscoveredResourceRequestTypeDef](./type_defs.md#associatediscoveredresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -114,6 +126,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("mgh").can_paginate` method.
 
 Boto3 documentation:
@@ -127,11 +141,18 @@ Returns `bool`.
 
 ### create_progress_update_stream
 
+Creates a progress update stream which is an AWS resource used for access
+control as well as a namespace for migration task names that is implicitly
+linked to your AWS account.
+
 Type annotations for `boto3.client("mgh").create_progress_update_stream`
 method.
 
 Boto3 documentation:
 [MigrationHub.Client.create_progress_update_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.create_progress_update_stream)
+
+Arguments mapping described in
+[CreateProgressUpdateStreamRequestTypeDef](./type_defs.md#createprogressupdatestreamrequesttypedef).
 
 Keyword-only arguments:
 
@@ -142,11 +163,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_progress_update_stream
 
+Deletes a progress update stream, including all of its tasks, which was
+previously created as an AWS resource used for access control.
+
 Type annotations for `boto3.client("mgh").delete_progress_update_stream`
 method.
 
 Boto3 documentation:
 [MigrationHub.Client.delete_progress_update_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.delete_progress_update_stream)
+
+Arguments mapping described in
+[DeleteProgressUpdateStreamRequestTypeDef](./type_defs.md#deleteprogressupdatestreamrequesttypedef).
 
 Keyword-only arguments:
 
@@ -157,24 +184,34 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_application_state
 
+Gets the migration status of an application.
+
 Type annotations for `boto3.client("mgh").describe_application_state` method.
 
 Boto3 documentation:
 [MigrationHub.Client.describe_application_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.describe_application_state)
+
+Arguments mapping described in
+[DescribeApplicationStateRequestTypeDef](./type_defs.md#describeapplicationstaterequesttypedef).
 
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 
 Returns
-[DescribeApplicationStateResultTypeDef](./type_defs.md#describeapplicationstateresulttypedef).
+[DescribeApplicationStateResultResponseTypeDef](./type_defs.md#describeapplicationstateresultresponsetypedef).
 
 ### describe_migration_task
+
+Retrieves a list of all attributes associated with a specific migration task.
 
 Type annotations for `boto3.client("mgh").describe_migration_task` method.
 
 Boto3 documentation:
 [MigrationHub.Client.describe_migration_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.describe_migration_task)
+
+Arguments mapping described in
+[DescribeMigrationTaskRequestTypeDef](./type_defs.md#describemigrationtaskrequesttypedef).
 
 Keyword-only arguments:
 
@@ -182,15 +219,21 @@ Keyword-only arguments:
 - `MigrationTaskName`: `str` *(required)*
 
 Returns
-[DescribeMigrationTaskResultTypeDef](./type_defs.md#describemigrationtaskresulttypedef).
+[DescribeMigrationTaskResultResponseTypeDef](./type_defs.md#describemigrationtaskresultresponsetypedef).
 
 ### disassociate_created_artifact
+
+Disassociates a created artifact of an AWS resource with a migration task
+performed by a migration tool that was previously associated.
 
 Type annotations for `boto3.client("mgh").disassociate_created_artifact`
 method.
 
 Boto3 documentation:
 [MigrationHub.Client.disassociate_created_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.disassociate_created_artifact)
+
+Arguments mapping described in
+[DisassociateCreatedArtifactRequestTypeDef](./type_defs.md#disassociatecreatedartifactrequesttypedef).
 
 Keyword-only arguments:
 
@@ -203,11 +246,17 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### disassociate_discovered_resource
 
+Disassociate an Application Discovery Service discovered resource from a
+migration task.
+
 Type annotations for `boto3.client("mgh").disassociate_discovered_resource`
 method.
 
 Boto3 documentation:
 [MigrationHub.Client.disassociate_discovered_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.disassociate_discovered_resource)
+
+Arguments mapping described in
+[DisassociateDiscoveredResourceRequestTypeDef](./type_defs.md#disassociatediscoveredresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -219,6 +268,8 @@ Keyword-only arguments:
 Returns `Dict`\[`str`, `Any`\].
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("mgh").generate_presigned_url` method.
 
@@ -236,10 +287,16 @@ Returns `str`.
 
 ### import_migration_task
 
+Registers a new migration task which represents a server, database, etc., being
+migrated to AWS by a migration tool.
+
 Type annotations for `boto3.client("mgh").import_migration_task` method.
 
 Boto3 documentation:
 [MigrationHub.Client.import_migration_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.import_migration_task)
+
+Arguments mapping described in
+[ImportMigrationTaskRequestTypeDef](./type_defs.md#importmigrationtaskrequesttypedef).
 
 Keyword-only arguments:
 
@@ -251,10 +308,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### list_application_states
 
+Lists all the migration statuses for your applications.
+
 Type annotations for `boto3.client("mgh").list_application_states` method.
 
 Boto3 documentation:
 [MigrationHub.Client.list_application_states](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_application_states)
+
+Arguments mapping described in
+[ListApplicationStatesRequestTypeDef](./type_defs.md#listapplicationstatesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -263,15 +325,21 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListApplicationStatesResultTypeDef](./type_defs.md#listapplicationstatesresulttypedef).
+[ListApplicationStatesResultResponseTypeDef](./type_defs.md#listapplicationstatesresultresponsetypedef).
 
 ### list_created_artifacts
+
+Lists the created artifacts attached to a given migration task in an update
+stream.
 
 Type annotations for `boto3.client("mgh").list_created_artifacts` method.
 
 Boto3 documentation:
 [MigrationHub.Client.list_created_artifacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_created_artifacts)
 
+Arguments mapping described in
+[ListCreatedArtifactsRequestTypeDef](./type_defs.md#listcreatedartifactsrequesttypedef).
+
 Keyword-only arguments:
 
 - `ProgressUpdateStream`: `str` *(required)*
@@ -280,15 +348,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListCreatedArtifactsResultTypeDef](./type_defs.md#listcreatedartifactsresulttypedef).
+[ListCreatedArtifactsResultResponseTypeDef](./type_defs.md#listcreatedartifactsresultresponsetypedef).
 
 ### list_discovered_resources
+
+Lists discovered resources associated with the given `MigrationTask` .
 
 Type annotations for `boto3.client("mgh").list_discovered_resources` method.
 
 Boto3 documentation:
 [MigrationHub.Client.list_discovered_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_discovered_resources)
 
+Arguments mapping described in
+[ListDiscoveredResourcesRequestTypeDef](./type_defs.md#listdiscoveredresourcesrequesttypedef).
+
 Keyword-only arguments:
 
 - `ProgressUpdateStream`: `str` *(required)*
@@ -297,14 +370,20 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDiscoveredResourcesResultTypeDef](./type_defs.md#listdiscoveredresourcesresulttypedef).
+[ListDiscoveredResourcesResultResponseTypeDef](./type_defs.md#listdiscoveredresourcesresultresponsetypedef).
 
 ### list_migration_tasks
+
+Lists all, or filtered by resource name, migration tasks associated with the
+user account making this call.
 
 Type annotations for `boto3.client("mgh").list_migration_tasks` method.
 
 Boto3 documentation:
 [MigrationHub.Client.list_migration_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_migration_tasks)
+
+Arguments mapping described in
+[ListMigrationTasksRequestTypeDef](./type_defs.md#listmigrationtasksrequesttypedef).
 
 Keyword-only arguments:
 
@@ -313,14 +392,20 @@ Keyword-only arguments:
 - `ResourceName`: `str`
 
 Returns
-[ListMigrationTasksResultTypeDef](./type_defs.md#listmigrationtasksresulttypedef).
+[ListMigrationTasksResultResponseTypeDef](./type_defs.md#listmigrationtasksresultresponsetypedef).
 
 ### list_progress_update_streams
+
+Lists progress update streams associated with the user account making this
+call.
 
 Type annotations for `boto3.client("mgh").list_progress_update_streams` method.
 
 Boto3 documentation:
 [MigrationHub.Client.list_progress_update_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_progress_update_streams)
+
+Arguments mapping described in
+[ListProgressUpdateStreamsRequestTypeDef](./type_defs.md#listprogressupdatestreamsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -328,38 +413,49 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListProgressUpdateStreamsResultTypeDef](./type_defs.md#listprogressupdatestreamsresulttypedef).
+[ListProgressUpdateStreamsResultResponseTypeDef](./type_defs.md#listprogressupdatestreamsresultresponsetypedef).
 
 ### notify_application_state
+
+Sets the migration state of an application.
 
 Type annotations for `boto3.client("mgh").notify_application_state` method.
 
 Boto3 documentation:
 [MigrationHub.Client.notify_application_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.notify_application_state)
 
+Arguments mapping described in
+[NotifyApplicationStateRequestTypeDef](./type_defs.md#notifyapplicationstaterequesttypedef).
+
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `Status`: [ApplicationStatusType](./literals.md#applicationstatustype)
   *(required)*
-- `UpdateDateTime`: `datetime`
+- `UpdateDateTime`: `Union`\[`datetime`, `str`\]
 - `DryRun`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
 
 ### notify_migration_task_state
 
+Notifies Migration Hub of the current status, progress, or other detail
+regarding a migration task.
+
 Type annotations for `boto3.client("mgh").notify_migration_task_state` method.
 
 Boto3 documentation:
 [MigrationHub.Client.notify_migration_task_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.notify_migration_task_state)
+
+Arguments mapping described in
+[NotifyMigrationTaskStateRequestTypeDef](./type_defs.md#notifymigrationtaskstaterequesttypedef).
 
 Keyword-only arguments:
 
 - `ProgressUpdateStream`: `str` *(required)*
 - `MigrationTaskName`: `str` *(required)*
 - `Task`: [TaskTypeDef](./type_defs.md#tasktypedef) *(required)*
-- `UpdateDateTime`: `datetime` *(required)*
+- `UpdateDateTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `NextUpdateSeconds`: `int` *(required)*
 - `DryRun`: `bool`
 
@@ -367,10 +463,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_resource_attributes
 
+.
+
 Type annotations for `boto3.client("mgh").put_resource_attributes` method.
 
 Boto3 documentation:
 [MigrationHub.Client.put_resource_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.put_resource_attributes)
+
+Arguments mapping described in
+[PutResourceAttributesRequestTypeDef](./type_defs.md#putresourceattributesrequesttypedef).
 
 Keyword-only arguments:
 

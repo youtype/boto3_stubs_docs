@@ -85,6 +85,8 @@ Exceptions:
 
 ### can_paginate
 
+Check if an operation can be paginated.
+
 Type annotations for `boto3.client("transfer").can_paginate` method.
 
 Boto3 documentation:
@@ -98,10 +100,17 @@ Returns `bool`.
 
 ### create_access
 
+Used by administrators to choose which groups in the directory should have
+access to upload and download files over the enabled protocols using Amazon Web
+Services Transfer Family.
+
 Type annotations for `boto3.client("transfer").create_access` method.
 
 Boto3 documentation:
 [Transfer.Client.create_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_access)
+
+Arguments mapping described in
+[CreateAccessRequestTypeDef](./type_defs.md#createaccessrequesttypedef).
 
 Keyword-only arguments:
 
@@ -117,14 +126,20 @@ Keyword-only arguments:
 - `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
 
 Returns
-[CreateAccessResponseTypeDef](./type_defs.md#createaccessresponsetypedef).
+[CreateAccessResponseResponseTypeDef](./type_defs.md#createaccessresponseresponsetypedef).
 
 ### create_server
+
+Instantiates an auto-scaling virtual server based on the selected file transfer
+protocol in Amazon Web Services.
 
 Type annotations for `boto3.client("transfer").create_server` method.
 
 Boto3 documentation:
 [Transfer.Client.create_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_server)
+
+Arguments mapping described in
+[CreateServerRequestTypeDef](./type_defs.md#createserverrequesttypedef).
 
 Keyword-only arguments:
 
@@ -144,14 +159,20 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateServerResponseTypeDef](./type_defs.md#createserverresponsetypedef).
+[CreateServerResponseResponseTypeDef](./type_defs.md#createserverresponseresponsetypedef).
 
 ### create_user
+
+Creates a user and associates them with an existing file transfer protocol-
+enabled server.
 
 Type annotations for `boto3.client("transfer").create_user` method.
 
 Boto3 documentation:
 [Transfer.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_user)
+
+Arguments mapping described in
+[CreateUserRequestTypeDef](./type_defs.md#createuserrequesttypedef).
 
 Keyword-only arguments:
 
@@ -168,14 +189,21 @@ Keyword-only arguments:
 - `SshPublicKeyBody`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
+Returns
+[CreateUserResponseResponseTypeDef](./type_defs.md#createuserresponseresponsetypedef).
 
 ### delete_access
+
+Allows you to delete the access specified in the `ServerID` and `ExternalID`
+parameters.
 
 Type annotations for `boto3.client("transfer").delete_access` method.
 
 Boto3 documentation:
 [Transfer.Client.delete_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_access)
+
+Arguments mapping described in
+[DeleteAccessRequestTypeDef](./type_defs.md#deleteaccessrequesttypedef).
 
 Keyword-only arguments:
 
@@ -184,10 +212,15 @@ Keyword-only arguments:
 
 ### delete_server
 
+Deletes the file transfer protocol-enabled server that you specify.
+
 Type annotations for `boto3.client("transfer").delete_server` method.
 
 Boto3 documentation:
 [Transfer.Client.delete_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_server)
+
+Arguments mapping described in
+[DeleteServerRequestTypeDef](./type_defs.md#deleteserverrequesttypedef).
 
 Keyword-only arguments:
 
@@ -195,10 +228,15 @@ Keyword-only arguments:
 
 ### delete_ssh_public_key
 
+Deletes a user's Secure Shell (SSH) public key.
+
 Type annotations for `boto3.client("transfer").delete_ssh_public_key` method.
 
 Boto3 documentation:
 [Transfer.Client.delete_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_ssh_public_key)
+
+Arguments mapping described in
+[DeleteSshPublicKeyRequestTypeDef](./type_defs.md#deletesshpublickeyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -208,10 +246,16 @@ Keyword-only arguments:
 
 ### delete_user
 
+Deletes the user belonging to a file transfer protocol-enabled server you
+specify.
+
 Type annotations for `boto3.client("transfer").delete_user` method.
 
 Boto3 documentation:
 [Transfer.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_user)
+
+Arguments mapping described in
+[DeleteUserRequestTypeDef](./type_defs.md#deleteuserrequesttypedef).
 
 Keyword-only arguments:
 
@@ -220,10 +264,16 @@ Keyword-only arguments:
 
 ### describe_access
 
+Describes the access that is assigned to the specific file transfer protocol-
+enabled server, as identified by its `ServerId` property and its `ExternalID` .
+
 Type annotations for `boto3.client("transfer").describe_access` method.
 
 Boto3 documentation:
 [Transfer.Client.describe_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_access)
+
+Arguments mapping described in
+[DescribeAccessRequestTypeDef](./type_defs.md#describeaccessrequesttypedef).
 
 Keyword-only arguments:
 
@@ -231,9 +281,12 @@ Keyword-only arguments:
 - `ExternalId`: `str` *(required)*
 
 Returns
-[DescribeAccessResponseTypeDef](./type_defs.md#describeaccessresponsetypedef).
+[DescribeAccessResponseResponseTypeDef](./type_defs.md#describeaccessresponseresponsetypedef).
 
 ### describe_security_policy
+
+Describes the security policy that is attached to your file transfer protocol-
+enabled server.
 
 Type annotations for `boto3.client("transfer").describe_security_policy`
 method.
@@ -241,33 +294,48 @@ method.
 Boto3 documentation:
 [Transfer.Client.describe_security_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_security_policy)
 
+Arguments mapping described in
+[DescribeSecurityPolicyRequestTypeDef](./type_defs.md#describesecuritypolicyrequesttypedef).
+
 Keyword-only arguments:
 
 - `SecurityPolicyName`: `str` *(required)*
 
 Returns
-[DescribeSecurityPolicyResponseTypeDef](./type_defs.md#describesecuritypolicyresponsetypedef).
+[DescribeSecurityPolicyResponseResponseTypeDef](./type_defs.md#describesecuritypolicyresponseresponsetypedef).
 
 ### describe_server
+
+Describes a file transfer protocol-enabled server that you specify by passing
+the `ServerId` parameter.
 
 Type annotations for `boto3.client("transfer").describe_server` method.
 
 Boto3 documentation:
 [Transfer.Client.describe_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_server)
 
+Arguments mapping described in
+[DescribeServerRequestTypeDef](./type_defs.md#describeserverrequesttypedef).
+
 Keyword-only arguments:
 
 - `ServerId`: `str` *(required)*
 
 Returns
-[DescribeServerResponseTypeDef](./type_defs.md#describeserverresponsetypedef).
+[DescribeServerResponseResponseTypeDef](./type_defs.md#describeserverresponseresponsetypedef).
 
 ### describe_user
+
+Describes the user assigned to the specific file transfer protocol-enabled
+server, as identified by its `ServerId` property.
 
 Type annotations for `boto3.client("transfer").describe_user` method.
 
 Boto3 documentation:
 [Transfer.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_user)
+
+Arguments mapping described in
+[DescribeUserRequestTypeDef](./type_defs.md#describeuserrequesttypedef).
 
 Keyword-only arguments:
 
@@ -275,9 +343,11 @@ Keyword-only arguments:
 - `UserName`: `str` *(required)*
 
 Returns
-[DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef).
+[DescribeUserResponseResponseTypeDef](./type_defs.md#describeuserresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("transfer").generate_presigned_url` method.
 
@@ -295,10 +365,17 @@ Returns `str`.
 
 ### import_ssh_public_key
 
+Adds a Secure Shell (SSH) public key to a user account identified by a
+`UserName` value assigned to the specific file transfer protocol-enabled
+server, identified by `ServerId` .
+
 Type annotations for `boto3.client("transfer").import_ssh_public_key` method.
 
 Boto3 documentation:
 [Transfer.Client.import_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.import_ssh_public_key)
+
+Arguments mapping described in
+[ImportSshPublicKeyRequestTypeDef](./type_defs.md#importsshpublickeyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -307,14 +384,19 @@ Keyword-only arguments:
 - `UserName`: `str` *(required)*
 
 Returns
-[ImportSshPublicKeyResponseTypeDef](./type_defs.md#importsshpublickeyresponsetypedef).
+[ImportSshPublicKeyResponseResponseTypeDef](./type_defs.md#importsshpublickeyresponseresponsetypedef).
 
 ### list_accesses
+
+Lists the details for all the accesses you have on your server.
 
 Type annotations for `boto3.client("transfer").list_accesses` method.
 
 Boto3 documentation:
 [Transfer.Client.list_accesses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_accesses)
+
+Arguments mapping described in
+[ListAccessesRequestTypeDef](./type_defs.md#listaccessesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -323,44 +405,62 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAccessesResponseTypeDef](./type_defs.md#listaccessesresponsetypedef).
+[ListAccessesResponseResponseTypeDef](./type_defs.md#listaccessesresponseresponsetypedef).
 
 ### list_security_policies
+
+Lists the security policies that are attached to your file transfer protocol-
+enabled servers.
 
 Type annotations for `boto3.client("transfer").list_security_policies` method.
 
 Boto3 documentation:
 [Transfer.Client.list_security_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_security_policies)
 
+Arguments mapping described in
+[ListSecurityPoliciesRequestTypeDef](./type_defs.md#listsecuritypoliciesrequesttypedef).
+
 Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListSecurityPoliciesResponseTypeDef](./type_defs.md#listsecuritypoliciesresponsetypedef).
+[ListSecurityPoliciesResponseResponseTypeDef](./type_defs.md#listsecuritypoliciesresponseresponsetypedef).
 
 ### list_servers
+
+Lists the file transfer protocol-enabled servers that are associated with your
+Amazon Web Services account.
 
 Type annotations for `boto3.client("transfer").list_servers` method.
 
 Boto3 documentation:
 [Transfer.Client.list_servers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_servers)
 
+Arguments mapping described in
+[ListServersRequestTypeDef](./type_defs.md#listserversrequesttypedef).
+
 Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
 Returns
-[ListServersResponseTypeDef](./type_defs.md#listserversresponsetypedef).
+[ListServersResponseResponseTypeDef](./type_defs.md#listserversresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Lists all of the tags associated with the Amazon Resource Name (ARN) that you
+specify.
 
 Type annotations for `boto3.client("transfer").list_tags_for_resource` method.
 
 Boto3 documentation:
 [Transfer.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_tags_for_resource)
+
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -369,14 +469,20 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### list_users
+
+Lists the users for a file transfer protocol-enabled server that you specify by
+passing the `ServerId` parameter.
 
 Type annotations for `boto3.client("transfer").list_users` method.
 
 Boto3 documentation:
 [Transfer.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_users)
+
+Arguments mapping described in
+[ListUsersRequestTypeDef](./type_defs.md#listusersrequesttypedef).
 
 Keyword-only arguments:
 
@@ -384,14 +490,21 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
+Returns
+[ListUsersResponseResponseTypeDef](./type_defs.md#listusersresponseresponsetypedef).
 
 ### start_server
+
+Changes the state of a file transfer protocol-enabled server from `OFFLINE` to
+`ONLINE`.
 
 Type annotations for `boto3.client("transfer").start_server` method.
 
 Boto3 documentation:
 [Transfer.Client.start_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.start_server)
+
+Arguments mapping described in
+[StartServerRequestTypeDef](./type_defs.md#startserverrequesttypedef).
 
 Keyword-only arguments:
 
@@ -399,10 +512,16 @@ Keyword-only arguments:
 
 ### stop_server
 
+Changes the state of a file transfer protocol-enabled server from `ONLINE` to
+`OFFLINE`.
+
 Type annotations for `boto3.client("transfer").stop_server` method.
 
 Boto3 documentation:
 [Transfer.Client.stop_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.stop_server)
+
+Arguments mapping described in
+[StopServerRequestTypeDef](./type_defs.md#stopserverrequesttypedef).
 
 Keyword-only arguments:
 
@@ -410,10 +529,16 @@ Keyword-only arguments:
 
 ### tag_resource
 
+Attaches a key-value pair to a resource, as identified by its Amazon Resource
+Name (ARN).
+
 Type annotations for `boto3.client("transfer").tag_resource` method.
 
 Boto3 documentation:
 [Transfer.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -422,10 +547,17 @@ Keyword-only arguments:
 
 ### test_identity_provider
 
+If the `IdentityProviderType` of a file transfer protocol-enabled server is
+`AWS_DIRECTORY_SERVICE` or `API_Gateway` , tests whether your identity provider
+is set up successfully.
+
 Type annotations for `boto3.client("transfer").test_identity_provider` method.
 
 Boto3 documentation:
 [Transfer.Client.test_identity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.test_identity_provider)
+
+Arguments mapping described in
+[TestIdentityProviderRequestTypeDef](./type_defs.md#testidentityproviderrequesttypedef).
 
 Keyword-only arguments:
 
@@ -436,14 +568,20 @@ Keyword-only arguments:
 - `UserPassword`: `str`
 
 Returns
-[TestIdentityProviderResponseTypeDef](./type_defs.md#testidentityproviderresponsetypedef).
+[TestIdentityProviderResponseResponseTypeDef](./type_defs.md#testidentityproviderresponseresponsetypedef).
 
 ### untag_resource
+
+Detaches a key-value pair from a resource, as identified by its Amazon Resource
+Name (ARN).
 
 Type annotations for `boto3.client("transfer").untag_resource` method.
 
 Boto3 documentation:
 [Transfer.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -452,10 +590,16 @@ Keyword-only arguments:
 
 ### update_access
 
+Allows you to update parameters for the access specified in the `ServerID` and
+`ExternalID` parameters.
+
 Type annotations for `boto3.client("transfer").update_access` method.
 
 Boto3 documentation:
 [Transfer.Client.update_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_access)
+
+Arguments mapping described in
+[UpdateAccessRequestTypeDef](./type_defs.md#updateaccessrequesttypedef).
 
 Keyword-only arguments:
 
@@ -471,14 +615,20 @@ Keyword-only arguments:
 - `Role`: `str`
 
 Returns
-[UpdateAccessResponseTypeDef](./type_defs.md#updateaccessresponsetypedef).
+[UpdateAccessResponseResponseTypeDef](./type_defs.md#updateaccessresponseresponsetypedef).
 
 ### update_server
+
+Updates the file transfer protocol-enabled server's properties after that
+server has been created.
 
 Type annotations for `boto3.client("transfer").update_server` method.
 
 Boto3 documentation:
 [Transfer.Client.update_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_server)
+
+Arguments mapping described in
+[UpdateServerRequestTypeDef](./type_defs.md#updateserverrequesttypedef).
 
 Keyword-only arguments:
 
@@ -497,14 +647,19 @@ Keyword-only arguments:
 - `SecurityPolicyName`: `str`
 
 Returns
-[UpdateServerResponseTypeDef](./type_defs.md#updateserverresponsetypedef).
+[UpdateServerResponseResponseTypeDef](./type_defs.md#updateserverresponseresponsetypedef).
 
 ### update_user
+
+Assigns new properties to a user.
 
 Type annotations for `boto3.client("transfer").update_user` method.
 
 Boto3 documentation:
 [Transfer.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_user)
+
+Arguments mapping described in
+[UpdateUserRequestTypeDef](./type_defs.md#updateuserrequesttypedef).
 
 Keyword-only arguments:
 
@@ -519,7 +674,8 @@ Keyword-only arguments:
 - `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
 - `Role`: `str`
 
-Returns [UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef).
+Returns
+[UpdateUserResponseResponseTypeDef](./type_defs.md#updateuserresponseresponsetypedef).
 
 ### get_paginator
 

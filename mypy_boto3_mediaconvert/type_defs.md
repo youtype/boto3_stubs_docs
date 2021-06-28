@@ -13,6 +13,7 @@ type annotations stubs module
   - [AccelerationSettingsTypeDef](#accelerationsettingstypedef)
   - [AiffSettingsTypeDef](#aiffsettingstypedef)
   - [AncillarySourceSettingsTypeDef](#ancillarysourcesettingstypedef)
+  - [AssociateCertificateRequestTypeDef](#associatecertificaterequesttypedef)
   - [AudioChannelTaggingSettingsTypeDef](#audiochanneltaggingsettingstypedef)
   - [AudioCodecSettingsTypeDef](#audiocodecsettingstypedef)
   - [AudioDescriptionTypeDef](#audiodescriptiontypedef)
@@ -27,6 +28,7 @@ type annotations stubs module
   - [AvcIntraSettingsTypeDef](#avcintrasettingstypedef)
   - [AvcIntraUhdSettingsTypeDef](#avcintrauhdsettingstypedef)
   - [BurninDestinationSettingsTypeDef](#burnindestinationsettingstypedef)
+  - [CancelJobRequestTypeDef](#canceljobrequesttypedef)
   - [CaptionDescriptionPresetTypeDef](#captiondescriptionpresettypedef)
   - [CaptionDescriptionTypeDef](#captiondescriptiontypedef)
   - [CaptionDestinationSettingsTypeDef](#captiondestinationsettingstypedef)
@@ -40,16 +42,25 @@ type annotations stubs module
   - [CmfcSettingsTypeDef](#cmfcsettingstypedef)
   - [ColorCorrectorTypeDef](#colorcorrectortypedef)
   - [ContainerSettingsTypeDef](#containersettingstypedef)
-  - [CreateJobResponseTypeDef](#createjobresponsetypedef)
-  - [CreateJobTemplateResponseTypeDef](#createjobtemplateresponsetypedef)
-  - [CreatePresetResponseTypeDef](#createpresetresponsetypedef)
-  - [CreateQueueResponseTypeDef](#createqueueresponsetypedef)
+  - [CreateJobRequestTypeDef](#createjobrequesttypedef)
+  - [CreateJobResponseResponseTypeDef](#createjobresponseresponsetypedef)
+  - [CreateJobTemplateRequestTypeDef](#createjobtemplaterequesttypedef)
+  - [CreateJobTemplateResponseResponseTypeDef](#createjobtemplateresponseresponsetypedef)
+  - [CreatePresetRequestTypeDef](#createpresetrequesttypedef)
+  - [CreatePresetResponseResponseTypeDef](#createpresetresponseresponsetypedef)
+  - [CreateQueueRequestTypeDef](#createqueuerequesttypedef)
+  - [CreateQueueResponseResponseTypeDef](#createqueueresponseresponsetypedef)
   - [DashAdditionalManifestTypeDef](#dashadditionalmanifesttypedef)
   - [DashIsoEncryptionSettingsTypeDef](#dashisoencryptionsettingstypedef)
   - [DashIsoGroupSettingsTypeDef](#dashisogroupsettingstypedef)
   - [DeinterlacerTypeDef](#deinterlacertypedef)
-  - [DescribeEndpointsResponseTypeDef](#describeendpointsresponsetypedef)
+  - [DeleteJobTemplateRequestTypeDef](#deletejobtemplaterequesttypedef)
+  - [DeletePresetRequestTypeDef](#deletepresetrequesttypedef)
+  - [DeleteQueueRequestTypeDef](#deletequeuerequesttypedef)
+  - [DescribeEndpointsRequestTypeDef](#describeendpointsrequesttypedef)
+  - [DescribeEndpointsResponseResponseTypeDef](#describeendpointsresponseresponsetypedef)
   - [DestinationSettingsTypeDef](#destinationsettingstypedef)
+  - [DisassociateCertificateRequestTypeDef](#disassociatecertificaterequesttypedef)
   - [DolbyVisionLevel6MetadataTypeDef](#dolbyvisionlevel6metadatatypedef)
   - [DolbyVisionTypeDef](#dolbyvisiontypedef)
   - [DvbNitSettingsTypeDef](#dvbnitsettingstypedef)
@@ -69,19 +80,25 @@ type annotations stubs module
   - [FileGroupSettingsTypeDef](#filegroupsettingstypedef)
   - [FileSourceSettingsTypeDef](#filesourcesettingstypedef)
   - [FrameCaptureSettingsTypeDef](#framecapturesettingstypedef)
-  - [GetJobResponseTypeDef](#getjobresponsetypedef)
-  - [GetJobTemplateResponseTypeDef](#getjobtemplateresponsetypedef)
-  - [GetPresetResponseTypeDef](#getpresetresponsetypedef)
-  - [GetQueueResponseTypeDef](#getqueueresponsetypedef)
+  - [GetJobRequestTypeDef](#getjobrequesttypedef)
+  - [GetJobResponseResponseTypeDef](#getjobresponseresponsetypedef)
+  - [GetJobTemplateRequestTypeDef](#getjobtemplaterequesttypedef)
+  - [GetJobTemplateResponseResponseTypeDef](#getjobtemplateresponseresponsetypedef)
+  - [GetPresetRequestTypeDef](#getpresetrequesttypedef)
+  - [GetPresetResponseResponseTypeDef](#getpresetresponseresponsetypedef)
+  - [GetQueueRequestTypeDef](#getqueuerequesttypedef)
+  - [GetQueueResponseResponseTypeDef](#getqueueresponseresponsetypedef)
   - [H264QvbrSettingsTypeDef](#h264qvbrsettingstypedef)
   - [H264SettingsTypeDef](#h264settingstypedef)
   - [H265QvbrSettingsTypeDef](#h265qvbrsettingstypedef)
   - [H265SettingsTypeDef](#h265settingstypedef)
   - [Hdr10MetadataTypeDef](#hdr10metadatatypedef)
+  - [Hdr10PlusTypeDef](#hdr10plustypedef)
   - [HlsAdditionalManifestTypeDef](#hlsadditionalmanifesttypedef)
   - [HlsCaptionLanguageMappingTypeDef](#hlscaptionlanguagemappingtypedef)
   - [HlsEncryptionSettingsTypeDef](#hlsencryptionsettingstypedef)
   - [HlsGroupSettingsTypeDef](#hlsgroupsettingstypedef)
+  - [HlsRenditionGroupSettingsTypeDef](#hlsrenditiongroupsettingstypedef)
   - [HlsSettingsTypeDef](#hlssettingstypedef)
   - [HopDestinationTypeDef](#hopdestinationtypedef)
   - [Id3InsertionTypeDef](#id3insertiontypedef)
@@ -98,11 +115,16 @@ type annotations stubs module
   - [JobTemplateTypeDef](#jobtemplatetypedef)
   - [JobTypeDef](#jobtypedef)
   - [KantarWatermarkSettingsTypeDef](#kantarwatermarksettingstypedef)
-  - [ListJobTemplatesResponseTypeDef](#listjobtemplatesresponsetypedef)
-  - [ListJobsResponseTypeDef](#listjobsresponsetypedef)
-  - [ListPresetsResponseTypeDef](#listpresetsresponsetypedef)
-  - [ListQueuesResponseTypeDef](#listqueuesresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListJobTemplatesRequestTypeDef](#listjobtemplatesrequesttypedef)
+  - [ListJobTemplatesResponseResponseTypeDef](#listjobtemplatesresponseresponsetypedef)
+  - [ListJobsRequestTypeDef](#listjobsrequesttypedef)
+  - [ListJobsResponseResponseTypeDef](#listjobsresponseresponsetypedef)
+  - [ListPresetsRequestTypeDef](#listpresetsrequesttypedef)
+  - [ListPresetsResponseResponseTypeDef](#listpresetsresponseresponsetypedef)
+  - [ListQueuesRequestTypeDef](#listqueuesrequesttypedef)
+  - [ListQueuesResponseResponseTypeDef](#listqueuesresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [M2tsScte35EsamTypeDef](#m2tsscte35esamtypedef)
   - [M2tsSettingsTypeDef](#m2tssettingstypedef)
   - [M3u8SettingsTypeDef](#m3u8settingstypedef)
@@ -119,6 +141,7 @@ type annotations stubs module
   - [MsSmoothEncryptionSettingsTypeDef](#mssmoothencryptionsettingstypedef)
   - [MsSmoothGroupSettingsTypeDef](#mssmoothgroupsettingstypedef)
   - [MxfSettingsTypeDef](#mxfsettingstypedef)
+  - [MxfXavcProfileSettingsTypeDef](#mxfxavcprofilesettingstypedef)
   - [NexGuardFileMarkerSettingsTypeDef](#nexguardfilemarkersettingstypedef)
   - [NielsenConfigurationTypeDef](#nielsenconfigurationtypedef)
   - [NielsenNonLinearWatermarkSettingsTypeDef](#nielsennonlinearwatermarksettingstypedef)
@@ -154,6 +177,7 @@ type annotations stubs module
   - [SpekeKeyProviderCmafTypeDef](#spekekeyprovidercmaftypedef)
   - [SpekeKeyProviderTypeDef](#spekekeyprovidertypedef)
   - [StaticKeyProviderTypeDef](#statickeyprovidertypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TeletextDestinationSettingsTypeDef](#teletextdestinationsettingstypedef)
   - [TeletextSourceSettingsTypeDef](#teletextsourcesettingstypedef)
   - [TimecodeBurninTypeDef](#timecodeburnintypedef)
@@ -162,9 +186,13 @@ type annotations stubs module
   - [TimingTypeDef](#timingtypedef)
   - [TrackSourceSettingsTypeDef](#tracksourcesettingstypedef)
   - [TtmlDestinationSettingsTypeDef](#ttmldestinationsettingstypedef)
-  - [UpdateJobTemplateResponseTypeDef](#updatejobtemplateresponsetypedef)
-  - [UpdatePresetResponseTypeDef](#updatepresetresponsetypedef)
-  - [UpdateQueueResponseTypeDef](#updatequeueresponsetypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateJobTemplateRequestTypeDef](#updatejobtemplaterequesttypedef)
+  - [UpdateJobTemplateResponseResponseTypeDef](#updatejobtemplateresponseresponsetypedef)
+  - [UpdatePresetRequestTypeDef](#updatepresetrequesttypedef)
+  - [UpdatePresetResponseResponseTypeDef](#updatepresetresponseresponsetypedef)
+  - [UpdateQueueRequestTypeDef](#updatequeuerequesttypedef)
+  - [UpdateQueueResponseResponseTypeDef](#updatequeueresponseresponsetypedef)
   - [Vc3SettingsTypeDef](#vc3settingstypedef)
   - [VideoCodecSettingsTypeDef](#videocodecsettingstypedef)
   - [VideoDescriptionTypeDef](#videodescriptiontypedef)
@@ -176,6 +204,13 @@ type annotations stubs module
   - [Vp9SettingsTypeDef](#vp9settingstypedef)
   - [WavSettingsTypeDef](#wavsettingstypedef)
   - [WebvttDestinationSettingsTypeDef](#webvttdestinationsettingstypedef)
+  - [WebvttHlsSourceSettingsTypeDef](#webvtthlssourcesettingstypedef)
+  - [Xavc4kIntraCbgProfileSettingsTypeDef](#xavc4kintracbgprofilesettingstypedef)
+  - [Xavc4kIntraVbrProfileSettingsTypeDef](#xavc4kintravbrprofilesettingstypedef)
+  - [Xavc4kProfileSettingsTypeDef](#xavc4kprofilesettingstypedef)
+  - [XavcHdIntraCbgProfileSettingsTypeDef](#xavchdintracbgprofilesettingstypedef)
+  - [XavcHdProfileSettingsTypeDef](#xavchdprofilesettingstypedef)
+  - [XavcSettingsTypeDef](#xavcsettingstypedef)
 
 ## AacSettingsTypeDef
 
@@ -255,6 +290,16 @@ Optional fields:
 - `SourceAncillaryChannelNumber`: `int`
 - `TerminateCaptions`:
   [AncillaryTerminateCaptionsType](./literals.md#ancillaryterminatecaptionstype)
+
+## AssociateCertificateRequestTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import AssociateCertificateRequestTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
 
 ## AudioChannelTaggingSettingsTypeDef
 
@@ -354,6 +399,8 @@ Optional fields:
 - `DefaultSelection`:
   [AudioDefaultSelectionType](./literals.md#audiodefaultselectiontype)
 - `ExternalAudioFileInput`: `str`
+- `HlsRenditionGroupSettings`:
+  [HlsRenditionGroupSettingsTypeDef](./type_defs.md#hlsrenditiongroupsettingstypedef)
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `Offset`: `int`
 - `Pids`: `List`\[`int`\]
@@ -500,6 +547,16 @@ Optional fields:
 - `XPosition`: `int`
 - `YPosition`: `int`
 
+## CancelJobRequestTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import CancelJobRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
 ## CaptionDescriptionPresetTypeDef
 
 ```python
@@ -601,6 +658,8 @@ Optional fields:
   [TeletextSourceSettingsTypeDef](./type_defs.md#teletextsourcesettingstypedef)
 - `TrackSourceSettings`:
   [TrackSourceSettingsTypeDef](./type_defs.md#tracksourcesettingstypedef)
+- `WebvttHlsSourceSettings`:
+  [WebvttHlsSourceSettingsTypeDef](./type_defs.md#webvtthlssourcesettingstypedef)
 
 ## ChannelMappingTypeDef
 
@@ -663,6 +722,8 @@ Optional fields:
 - `Encryption`:
   [CmafEncryptionSettingsTypeDef](./type_defs.md#cmafencryptionsettingstypedef)
 - `FragmentLength`: `int`
+- `ImageBasedTrickPlay`:
+  [CmafImageBasedTrickPlayType](./literals.md#cmafimagebasedtrickplaytype)
 - `ManifestCompression`:
   [CmafManifestCompressionType](./literals.md#cmafmanifestcompressiontype)
 - `ManifestDurationFormat`:
@@ -718,6 +779,8 @@ Optional fields:
 - `Contrast`: `int`
 - `Hdr10Metadata`: [Hdr10MetadataTypeDef](./type_defs.md#hdr10metadatatypedef)
 - `Hue`: `int`
+- `SampleRangeConversion`:
+  [SampleRangeConversionType](./literals.md#samplerangeconversiontype)
 - `Saturation`: `int`
 
 ## ContainerSettingsTypeDef
@@ -738,45 +801,145 @@ Optional fields:
 - `MpdSettings`: [MpdSettingsTypeDef](./type_defs.md#mpdsettingstypedef)
 - `MxfSettings`: [MxfSettingsTypeDef](./type_defs.md#mxfsettingstypedef)
 
-## CreateJobResponseTypeDef
+## CreateJobRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import CreateJobResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import CreateJobRequestTypeDef
 ```
 
+Required fields:
+
+- `Role`: `str`
+- `Settings`: [JobSettingsTypeDef](./type_defs.md#jobsettingstypedef)
+
 Optional fields:
+
+- `AccelerationSettings`:
+  [AccelerationSettingsTypeDef](./type_defs.md#accelerationsettingstypedef)
+- `BillingTagsSource`:
+  [BillingTagsSourceType](./literals.md#billingtagssourcetype)
+- `ClientRequestToken`: `str`
+- `HopDestinations`:
+  `List`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
+- `JobTemplate`: `str`
+- `Priority`: `int`
+- `Queue`: `str`
+- `SimulateReservedQueue`:
+  [SimulateReservedQueueType](./literals.md#simulatereservedqueuetype)
+- `StatusUpdateInterval`:
+  [StatusUpdateIntervalType](./literals.md#statusupdateintervaltype)
+- `Tags`: `Dict`\[`str`, `str`\]
+- `UserMetadata`: `Dict`\[`str`, `str`\]
+
+## CreateJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import CreateJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Job`: [JobTypeDef](./type_defs.md#jobtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateJobTemplateResponseTypeDef
+## CreateJobTemplateRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import CreateJobTemplateResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import CreateJobTemplateRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+- `Settings`:
+  [JobTemplateSettingsTypeDef](./type_defs.md#jobtemplatesettingstypedef)
+
 Optional fields:
+
+- `AccelerationSettings`:
+  [AccelerationSettingsTypeDef](./type_defs.md#accelerationsettingstypedef)
+- `Category`: `str`
+- `Description`: `str`
+- `HopDestinations`:
+  `List`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
+- `Priority`: `int`
+- `Queue`: `str`
+- `StatusUpdateInterval`:
+  [StatusUpdateIntervalType](./literals.md#statusupdateintervaltype)
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## CreateJobTemplateResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import CreateJobTemplateResponseResponseTypeDef
+```
+
+Required fields:
 
 - `JobTemplate`: [JobTemplateTypeDef](./type_defs.md#jobtemplatetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePresetResponseTypeDef
+## CreatePresetRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import CreatePresetResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import CreatePresetRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+- `Settings`: [PresetSettingsTypeDef](./type_defs.md#presetsettingstypedef)
+
 Optional fields:
+
+- `Category`: `str`
+- `Description`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## CreatePresetResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import CreatePresetResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Preset`: [PresetTypeDef](./type_defs.md#presettypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateQueueResponseTypeDef
+## CreateQueueRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import CreateQueueResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import CreateQueueRequestTypeDef
 ```
+
+Required fields:
+
+- `Name`: `str`
 
 Optional fields:
 
+- `Description`: `str`
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
+- `ReservationPlanSettings`:
+  [ReservationPlanSettingsTypeDef](./type_defs.md#reservationplansettingstypedef)
+- `Status`: [QueueStatusType](./literals.md#queuestatustype)
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## CreateQueueResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import CreateQueueResponseResponseTypeDef
+```
+
+Required fields:
+
 - `Queue`: [QueueTypeDef](./type_defs.md#queuetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DashAdditionalManifestTypeDef
 
@@ -823,6 +986,8 @@ Optional fields:
 - `FragmentLength`: `int`
 - `HbbtvCompliance`:
   [DashIsoHbbtvComplianceType](./literals.md#dashisohbbtvcompliancetype)
+- `ImageBasedTrickPlay`:
+  [DashIsoImageBasedTrickPlayType](./literals.md#dashisoimagebasedtrickplaytype)
 - `MinBufferTime`: `int`
 - `MinFinalSegmentLength`: `float`
 - `MpdProfile`: [DashIsoMpdProfileType](./literals.md#dashisompdprofiletype)
@@ -847,16 +1012,60 @@ Optional fields:
 - `Control`: [DeinterlacerControlType](./literals.md#deinterlacercontroltype)
 - `Mode`: [DeinterlacerModeType](./literals.md#deinterlacermodetype)
 
-## DescribeEndpointsResponseTypeDef
+## DeleteJobTemplateRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import DescribeEndpointsResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import DeleteJobTemplateRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+## DeletePresetRequestTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import DeletePresetRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+## DeleteQueueRequestTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import DeleteQueueRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+## DescribeEndpointsRequestTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import DescribeEndpointsRequestTypeDef
 ```
 
 Optional fields:
 
+- `MaxResults`: `int`
+- `Mode`: [DescribeEndpointsModeType](./literals.md#describeendpointsmodetype)
+- `NextToken`: `str`
+
+## DescribeEndpointsResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import DescribeEndpointsResponseResponseTypeDef
+```
+
+Required fields:
+
 - `Endpoints`: `List`\[[EndpointTypeDef](./type_defs.md#endpointtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DestinationSettingsTypeDef
 
@@ -868,6 +1077,16 @@ Optional fields:
 
 - `S3Settings`:
   [S3DestinationSettingsTypeDef](./type_defs.md#s3destinationsettingstypedef)
+
+## DisassociateCertificateRequestTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import DisassociateCertificateRequestTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
 
 ## DolbyVisionLevel6MetadataTypeDef
 
@@ -990,14 +1209,18 @@ Optional fields:
 - `Bitrate`: `int`
 - `BitstreamMode`: `Literal['COMPLETE_MAIN']` (see
   [Eac3AtmosBitstreamModeType](./literals.md#eac3atmosbitstreammodetype))
-- `CodingMode`: `Literal['CODING_MODE_9_1_6']` (see
-  [Eac3AtmosCodingModeType](./literals.md#eac3atmoscodingmodetype))
+- `CodingMode`:
+  [Eac3AtmosCodingModeType](./literals.md#eac3atmoscodingmodetype)
 - `DialogueIntelligence`:
   [Eac3AtmosDialogueIntelligenceType](./literals.md#eac3atmosdialogueintelligencetype)
+- `DownmixControl`:
+  [Eac3AtmosDownmixControlType](./literals.md#eac3atmosdownmixcontroltype)
 - `DynamicRangeCompressionLine`:
   [Eac3AtmosDynamicRangeCompressionLineType](./literals.md#eac3atmosdynamicrangecompressionlinetype)
 - `DynamicRangeCompressionRf`:
   [Eac3AtmosDynamicRangeCompressionRfType](./literals.md#eac3atmosdynamicrangecompressionrftype)
+- `DynamicRangeControl`:
+  [Eac3AtmosDynamicRangeControlType](./literals.md#eac3atmosdynamicrangecontroltype)
 - `LoRoCenterMixLevel`: `float`
 - `LoRoSurroundMixLevel`: `float`
 - `LtRtCenterMixLevel`: `float`
@@ -1167,45 +1390,93 @@ Optional fields:
 - `MaxCaptures`: `int`
 - `Quality`: `int`
 
-## GetJobResponseTypeDef
+## GetJobRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import GetJobResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import GetJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## GetJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import GetJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Job`: [JobTypeDef](./type_defs.md#jobtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetJobTemplateResponseTypeDef
+## GetJobTemplateRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import GetJobTemplateResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import GetJobTemplateRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Name`: `str`
+
+## GetJobTemplateResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import GetJobTemplateResponseResponseTypeDef
+```
+
+Required fields:
 
 - `JobTemplate`: [JobTemplateTypeDef](./type_defs.md#jobtemplatetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPresetResponseTypeDef
+## GetPresetRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import GetPresetResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import GetPresetRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Name`: `str`
+
+## GetPresetResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import GetPresetResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Preset`: [PresetTypeDef](./type_defs.md#presettypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetQueueResponseTypeDef
+## GetQueueRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import GetQueueResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import GetQueueRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Name`: `str`
+
+## GetQueueResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import GetQueueResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Queue`: [QueueTypeDef](./type_defs.md#queuetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## H264QvbrSettingsTypeDef
 
@@ -1378,6 +1649,17 @@ Optional fields:
 - `WhitePointX`: `int`
 - `WhitePointY`: `int`
 
+## Hdr10PlusTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import Hdr10PlusTypeDef
+```
+
+Optional fields:
+
+- `MasteringMonitorNits`: `int`
+- `TargetMonitorNits`: `int`
+
 ## HlsAdditionalManifestTypeDef
 
 ```python
@@ -1451,6 +1733,8 @@ Optional fields:
   [HlsDirectoryStructureType](./literals.md#hlsdirectorystructuretype)
 - `Encryption`:
   [HlsEncryptionSettingsTypeDef](./type_defs.md#hlsencryptionsettingstypedef)
+- `ImageBasedTrickPlay`:
+  [HlsImageBasedTrickPlayType](./literals.md#hlsimagebasedtrickplaytype)
 - `ManifestCompression`:
   [HlsManifestCompressionType](./literals.md#hlsmanifestcompressiontype)
 - `ManifestDurationFormat`:
@@ -1472,6 +1756,18 @@ Optional fields:
   [HlsTimedMetadataId3FrameType](./literals.md#hlstimedmetadataid3frametype)
 - `TimedMetadataId3Period`: `int`
 - `TimestampDeltaMilliseconds`: `int`
+
+## HlsRenditionGroupSettingsTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import HlsRenditionGroupSettingsTypeDef
+```
+
+Optional fields:
+
+- `RenditionGroupId`: `str`
+- `RenditionLanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+- `RenditionName`: `str`
 
 ## HlsSettingsTypeDef
 
@@ -1814,60 +2110,135 @@ Optional fields:
 - `Metadata7`: `str`
 - `Metadata8`: `str`
 
-## ListJobTemplatesResponseTypeDef
+## ListJobTemplatesRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import ListJobTemplatesResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import ListJobTemplatesRequestTypeDef
 ```
 
 Optional fields:
+
+- `Category`: `str`
+- `ListBy`: [JobTemplateListByType](./literals.md#jobtemplatelistbytype)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Order`: [OrderType](./literals.md#ordertype)
+
+## ListJobTemplatesResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import ListJobTemplatesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `JobTemplates`:
   `List`\[[JobTemplateTypeDef](./type_defs.md#jobtemplatetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListJobsResponseTypeDef
+## ListJobsRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import ListJobsResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import ListJobsRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Order`: [OrderType](./literals.md#ordertype)
+- `Queue`: `str`
+- `Status`: [JobStatusType](./literals.md#jobstatustype)
+
+## ListJobsResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import ListJobsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Jobs`: `List`\[[JobTypeDef](./type_defs.md#jobtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPresetsResponseTypeDef
+## ListPresetsRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import ListPresetsResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import ListPresetsRequestTypeDef
 ```
 
 Optional fields:
+
+- `Category`: `str`
+- `ListBy`: [PresetListByType](./literals.md#presetlistbytype)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Order`: [OrderType](./literals.md#ordertype)
+
+## ListPresetsResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import ListPresetsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `Presets`: `List`\[[PresetTypeDef](./type_defs.md#presettypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListQueuesResponseTypeDef
+## ListQueuesRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import ListQueuesResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import ListQueuesRequestTypeDef
 ```
 
 Optional fields:
+
+- `ListBy`: [QueueListByType](./literals.md#queuelistbytype)
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `Order`: [OrderType](./literals.md#ordertype)
+
+## ListQueuesResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import ListQueuesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `Queues`: `List`\[[QueueTypeDef](./type_defs.md#queuetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Arn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ResourceTags`: [ResourceTagsTypeDef](./type_defs.md#resourcetagstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## M2tsScte35EsamTypeDef
 
@@ -2180,6 +2551,20 @@ Optional fields:
 
 - `AfdSignaling`: [MxfAfdSignalingType](./literals.md#mxfafdsignalingtype)
 - `Profile`: [MxfProfileType](./literals.md#mxfprofiletype)
+- `XavcProfileSettings`:
+  [MxfXavcProfileSettingsTypeDef](./type_defs.md#mxfxavcprofilesettingstypedef)
+
+## MxfXavcProfileSettingsTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import MxfXavcProfileSettingsTypeDef
+```
+
+Optional fields:
+
+- `DurationMode`:
+  [MxfXavcDurationModeType](./literals.md#mxfxavcdurationmodetype)
+- `MaxAncDataSize`: `int`
 
 ## NexGuardFileMarkerSettingsTypeDef
 
@@ -2378,7 +2763,7 @@ Optional fields:
 from mypy_boto3_mediaconvert.type_defs import OutputTypeDef
 ```
 
-Required fields:
+Optional fields:
 
 - `AudioDescriptions`:
   `List`\[[AudioDescriptionTypeDef](./type_defs.md#audiodescriptiontypedef)\]
@@ -2393,8 +2778,6 @@ Required fields:
 - `Preset`: `str`
 - `VideoDescription`:
   [VideoDescriptionTypeDef](./type_defs.md#videodescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -2464,6 +2847,8 @@ from mypy_boto3_mediaconvert.type_defs import ProresSettingsTypeDef
 
 Optional fields:
 
+- `ChromaSampling`:
+  [ProresChromaSamplingType](./literals.md#proreschromasamplingtype)
 - `CodecProfile`:
   [ProresCodecProfileType](./literals.md#prorescodecprofiletype)
 - `FramerateControl`:
@@ -2685,6 +3070,17 @@ Optional fields:
 - `StaticKeyValue`: `str`
 - `Url`: `str`
 
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
 ## TeletextDestinationSettingsTypeDef
 
 ```python
@@ -2777,35 +3173,113 @@ Optional fields:
 - `StylePassthrough`:
   [TtmlStylePassthroughType](./literals.md#ttmlstylepassthroughtype)
 
-## UpdateJobTemplateResponseTypeDef
+## UntagResourceRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import UpdateJobTemplateResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import UntagResourceRequestTypeDef
 ```
 
+Required fields:
+
+- `Arn`: `str`
+
 Optional fields:
+
+- `TagKeys`: `List`\[`str`\]
+
+## UpdateJobTemplateRequestTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import UpdateJobTemplateRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+Optional fields:
+
+- `AccelerationSettings`:
+  [AccelerationSettingsTypeDef](./type_defs.md#accelerationsettingstypedef)
+- `Category`: `str`
+- `Description`: `str`
+- `HopDestinations`:
+  `List`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
+- `Priority`: `int`
+- `Queue`: `str`
+- `Settings`:
+  [JobTemplateSettingsTypeDef](./type_defs.md#jobtemplatesettingstypedef)
+- `StatusUpdateInterval`:
+  [StatusUpdateIntervalType](./literals.md#statusupdateintervaltype)
+
+## UpdateJobTemplateResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import UpdateJobTemplateResponseResponseTypeDef
+```
+
+Required fields:
 
 - `JobTemplate`: [JobTemplateTypeDef](./type_defs.md#jobtemplatetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdatePresetResponseTypeDef
+## UpdatePresetRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import UpdatePresetResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import UpdatePresetRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+
 Optional fields:
+
+- `Category`: `str`
+- `Description`: `str`
+- `Settings`: [PresetSettingsTypeDef](./type_defs.md#presetsettingstypedef)
+
+## UpdatePresetResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import UpdatePresetResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Preset`: [PresetTypeDef](./type_defs.md#presettypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateQueueResponseTypeDef
+## UpdateQueueRequestTypeDef
 
 ```python
-from mypy_boto3_mediaconvert.type_defs import UpdateQueueResponseTypeDef
+from mypy_boto3_mediaconvert.type_defs import UpdateQueueRequestTypeDef
 ```
+
+Required fields:
+
+- `Name`: `str`
 
 Optional fields:
 
+- `Description`: `str`
+- `ReservationPlanSettings`:
+  [ReservationPlanSettingsTypeDef](./type_defs.md#reservationplansettingstypedef)
+- `Status`: [QueueStatusType](./literals.md#queuestatustype)
+
+## UpdateQueueResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import UpdateQueueResponseResponseTypeDef
+```
+
+Required fields:
+
 - `Queue`: [QueueTypeDef](./type_defs.md#queuetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## Vc3SettingsTypeDef
 
@@ -2850,6 +3324,7 @@ Optional fields:
 - `Vc3Settings`: [Vc3SettingsTypeDef](./type_defs.md#vc3settingstypedef)
 - `Vp8Settings`: [Vp8SettingsTypeDef](./type_defs.md#vp8settingstypedef)
 - `Vp9Settings`: [Vp9SettingsTypeDef](./type_defs.md#vp9settingstypedef)
+- `XavcSettings`: [XavcSettingsTypeDef](./type_defs.md#xavcsettingstypedef)
 
 ## VideoDescriptionTypeDef
 
@@ -2902,6 +3377,7 @@ Optional fields:
   [ColorCorrectorTypeDef](./type_defs.md#colorcorrectortypedef)
 - `Deinterlacer`: [DeinterlacerTypeDef](./type_defs.md#deinterlacertypedef)
 - `DolbyVision`: [DolbyVisionTypeDef](./type_defs.md#dolbyvisiontypedef)
+- `Hdr10Plus`: [Hdr10PlusTypeDef](./type_defs.md#hdr10plustypedef)
 - `ImageInserter`: [ImageInserterTypeDef](./type_defs.md#imageinsertertypedef)
 - `NoiseReducer`: [NoiseReducerTypeDef](./type_defs.md#noisereducertypedef)
 - `PartnerWatermarking`:
@@ -3013,3 +3489,127 @@ Optional fields:
 
 - `StylePassthrough`:
   [WebvttStylePassthroughType](./literals.md#webvttstylepassthroughtype)
+
+## WebvttHlsSourceSettingsTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import WebvttHlsSourceSettingsTypeDef
+```
+
+Optional fields:
+
+- `RenditionGroupId`: `str`
+- `RenditionLanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+- `RenditionName`: `str`
+
+## Xavc4kIntraCbgProfileSettingsTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import Xavc4kIntraCbgProfileSettingsTypeDef
+```
+
+Optional fields:
+
+- `XavcClass`:
+  [Xavc4kIntraCbgProfileClassType](./literals.md#xavc4kintracbgprofileclasstype)
+
+## Xavc4kIntraVbrProfileSettingsTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import Xavc4kIntraVbrProfileSettingsTypeDef
+```
+
+Optional fields:
+
+- `XavcClass`:
+  [Xavc4kIntraVbrProfileClassType](./literals.md#xavc4kintravbrprofileclasstype)
+
+## Xavc4kProfileSettingsTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import Xavc4kProfileSettingsTypeDef
+```
+
+Optional fields:
+
+- `BitrateClass`:
+  [Xavc4kProfileBitrateClassType](./literals.md#xavc4kprofilebitrateclasstype)
+- `CodecProfile`:
+  [Xavc4kProfileCodecProfileType](./literals.md#xavc4kprofilecodecprofiletype)
+- `FlickerAdaptiveQuantization`:
+  [XavcFlickerAdaptiveQuantizationType](./literals.md#xavcflickeradaptivequantizationtype)
+- `GopBReference`: [XavcGopBReferenceType](./literals.md#xavcgopbreferencetype)
+- `GopClosedCadence`: `int`
+- `HrdBufferSize`: `int`
+- `QualityTuningLevel`:
+  [Xavc4kProfileQualityTuningLevelType](./literals.md#xavc4kprofilequalitytuningleveltype)
+- `Slices`: `int`
+
+## XavcHdIntraCbgProfileSettingsTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import XavcHdIntraCbgProfileSettingsTypeDef
+```
+
+Optional fields:
+
+- `XavcClass`:
+  [XavcHdIntraCbgProfileClassType](./literals.md#xavchdintracbgprofileclasstype)
+
+## XavcHdProfileSettingsTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import XavcHdProfileSettingsTypeDef
+```
+
+Optional fields:
+
+- `BitrateClass`:
+  [XavcHdProfileBitrateClassType](./literals.md#xavchdprofilebitrateclasstype)
+- `FlickerAdaptiveQuantization`:
+  [XavcFlickerAdaptiveQuantizationType](./literals.md#xavcflickeradaptivequantizationtype)
+- `GopBReference`: [XavcGopBReferenceType](./literals.md#xavcgopbreferencetype)
+- `GopClosedCadence`: `int`
+- `HrdBufferSize`: `int`
+- `InterlaceMode`: [XavcInterlaceModeType](./literals.md#xavcinterlacemodetype)
+- `QualityTuningLevel`:
+  [XavcHdProfileQualityTuningLevelType](./literals.md#xavchdprofilequalitytuningleveltype)
+- `Slices`: `int`
+- `Telecine`:
+  [XavcHdProfileTelecineType](./literals.md#xavchdprofiletelecinetype)
+
+## XavcSettingsTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import XavcSettingsTypeDef
+```
+
+Optional fields:
+
+- `AdaptiveQuantization`:
+  [XavcAdaptiveQuantizationType](./literals.md#xavcadaptivequantizationtype)
+- `EntropyEncoding`:
+  [XavcEntropyEncodingType](./literals.md#xavcentropyencodingtype)
+- `FramerateControl`:
+  [XavcFramerateControlType](./literals.md#xavcframeratecontroltype)
+- `FramerateConversionAlgorithm`:
+  [XavcFramerateConversionAlgorithmType](./literals.md#xavcframerateconversionalgorithmtype)
+- `FramerateDenominator`: `int`
+- `FramerateNumerator`: `int`
+- `Profile`: [XavcProfileType](./literals.md#xavcprofiletype)
+- `SlowPal`: [XavcSlowPalType](./literals.md#xavcslowpaltype)
+- `Softness`: `int`
+- `SpatialAdaptiveQuantization`:
+  [XavcSpatialAdaptiveQuantizationType](./literals.md#xavcspatialadaptivequantizationtype)
+- `TemporalAdaptiveQuantization`:
+  [XavcTemporalAdaptiveQuantizationType](./literals.md#xavctemporaladaptivequantizationtype)
+- `Xavc4kIntraCbgProfileSettings`:
+  [Xavc4kIntraCbgProfileSettingsTypeDef](./type_defs.md#xavc4kintracbgprofilesettingstypedef)
+- `Xavc4kIntraVbrProfileSettings`:
+  [Xavc4kIntraVbrProfileSettingsTypeDef](./type_defs.md#xavc4kintravbrprofilesettingstypedef)
+- `Xavc4kProfileSettings`:
+  [Xavc4kProfileSettingsTypeDef](./type_defs.md#xavc4kprofilesettingstypedef)
+- `XavcHdIntraCbgProfileSettings`:
+  [XavcHdIntraCbgProfileSettingsTypeDef](./type_defs.md#xavchdintracbgprofilesettingstypedef)
+- `XavcHdProfileSettings`:
+  [XavcHdProfileSettingsTypeDef](./type_defs.md#xavchdprofilesettingstypedef)

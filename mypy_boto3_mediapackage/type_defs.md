@@ -13,15 +13,24 @@ type annotations stubs module
   - [CmafEncryptionTypeDef](#cmafencryptiontypedef)
   - [CmafPackageCreateOrUpdateParametersTypeDef](#cmafpackagecreateorupdateparameterstypedef)
   - [CmafPackageTypeDef](#cmafpackagetypedef)
-  - [ConfigureLogsResponseTypeDef](#configurelogsresponsetypedef)
-  - [CreateChannelResponseTypeDef](#createchannelresponsetypedef)
-  - [CreateHarvestJobResponseTypeDef](#createharvestjobresponsetypedef)
-  - [CreateOriginEndpointResponseTypeDef](#createoriginendpointresponsetypedef)
+  - [ConfigureLogsRequestTypeDef](#configurelogsrequesttypedef)
+  - [ConfigureLogsResponseResponseTypeDef](#configurelogsresponseresponsetypedef)
+  - [CreateChannelRequestTypeDef](#createchannelrequesttypedef)
+  - [CreateChannelResponseResponseTypeDef](#createchannelresponseresponsetypedef)
+  - [CreateHarvestJobRequestTypeDef](#createharvestjobrequesttypedef)
+  - [CreateHarvestJobResponseResponseTypeDef](#createharvestjobresponseresponsetypedef)
+  - [CreateOriginEndpointRequestTypeDef](#createoriginendpointrequesttypedef)
+  - [CreateOriginEndpointResponseResponseTypeDef](#createoriginendpointresponseresponsetypedef)
   - [DashEncryptionTypeDef](#dashencryptiontypedef)
   - [DashPackageTypeDef](#dashpackagetypedef)
-  - [DescribeChannelResponseTypeDef](#describechannelresponsetypedef)
-  - [DescribeHarvestJobResponseTypeDef](#describeharvestjobresponsetypedef)
-  - [DescribeOriginEndpointResponseTypeDef](#describeoriginendpointresponsetypedef)
+  - [DeleteChannelRequestTypeDef](#deletechannelrequesttypedef)
+  - [DeleteOriginEndpointRequestTypeDef](#deleteoriginendpointrequesttypedef)
+  - [DescribeChannelRequestTypeDef](#describechannelrequesttypedef)
+  - [DescribeChannelResponseResponseTypeDef](#describechannelresponseresponsetypedef)
+  - [DescribeHarvestJobRequestTypeDef](#describeharvestjobrequesttypedef)
+  - [DescribeHarvestJobResponseResponseTypeDef](#describeharvestjobresponseresponsetypedef)
+  - [DescribeOriginEndpointRequestTypeDef](#describeoriginendpointrequesttypedef)
+  - [DescribeOriginEndpointResponseResponseTypeDef](#describeoriginendpointresponseresponsetypedef)
   - [EgressAccessLogsTypeDef](#egressaccesslogstypedef)
   - [EncryptionContractConfigurationTypeDef](#encryptioncontractconfigurationtypedef)
   - [HarvestJobTypeDef](#harvestjobtypedef)
@@ -32,21 +41,32 @@ type annotations stubs module
   - [HlsPackageTypeDef](#hlspackagetypedef)
   - [IngestEndpointTypeDef](#ingestendpointtypedef)
   - [IngressAccessLogsTypeDef](#ingressaccesslogstypedef)
-  - [ListChannelsResponseTypeDef](#listchannelsresponsetypedef)
-  - [ListHarvestJobsResponseTypeDef](#listharvestjobsresponsetypedef)
-  - [ListOriginEndpointsResponseTypeDef](#listoriginendpointsresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListChannelsRequestTypeDef](#listchannelsrequesttypedef)
+  - [ListChannelsResponseResponseTypeDef](#listchannelsresponseresponsetypedef)
+  - [ListHarvestJobsRequestTypeDef](#listharvestjobsrequesttypedef)
+  - [ListHarvestJobsResponseResponseTypeDef](#listharvestjobsresponseresponsetypedef)
+  - [ListOriginEndpointsRequestTypeDef](#listoriginendpointsrequesttypedef)
+  - [ListOriginEndpointsResponseResponseTypeDef](#listoriginendpointsresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [MssEncryptionTypeDef](#mssencryptiontypedef)
   - [MssPackageTypeDef](#msspackagetypedef)
   - [OriginEndpointTypeDef](#originendpointtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [RotateChannelCredentialsResponseTypeDef](#rotatechannelcredentialsresponsetypedef)
-  - [RotateIngestEndpointCredentialsResponseTypeDef](#rotateingestendpointcredentialsresponsetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [RotateChannelCredentialsRequestTypeDef](#rotatechannelcredentialsrequesttypedef)
+  - [RotateChannelCredentialsResponseResponseTypeDef](#rotatechannelcredentialsresponseresponsetypedef)
+  - [RotateIngestEndpointCredentialsRequestTypeDef](#rotateingestendpointcredentialsrequesttypedef)
+  - [RotateIngestEndpointCredentialsResponseResponseTypeDef](#rotateingestendpointcredentialsresponseresponsetypedef)
   - [S3DestinationTypeDef](#s3destinationtypedef)
   - [SpekeKeyProviderTypeDef](#spekekeyprovidertypedef)
   - [StreamSelectionTypeDef](#streamselectiontypedef)
-  - [UpdateChannelResponseTypeDef](#updatechannelresponsetypedef)
-  - [UpdateOriginEndpointResponseTypeDef](#updateoriginendpointresponsetypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateChannelRequestTypeDef](#updatechannelrequesttypedef)
+  - [UpdateChannelResponseResponseTypeDef](#updatechannelresponseresponsetypedef)
+  - [UpdateOriginEndpointRequestTypeDef](#updateoriginendpointrequesttypedef)
+  - [UpdateOriginEndpointResponseResponseTypeDef](#updateoriginendpointresponseresponsetypedef)
 
 ## AuthorizationTypeDef
 
@@ -125,13 +145,30 @@ Optional fields:
 - `StreamSelection`:
   [StreamSelectionTypeDef](./type_defs.md#streamselectiontypedef)
 
-## ConfigureLogsResponseTypeDef
+## ConfigureLogsRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage.type_defs import ConfigureLogsResponseTypeDef
+from mypy_boto3_mediapackage.type_defs import ConfigureLogsRequestTypeDef
 ```
 
+Required fields:
+
+- `Id`: `str`
+
 Optional fields:
+
+- `EgressAccessLogs`:
+  [EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef)
+- `IngressAccessLogs`:
+  [IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef)
+
+## ConfigureLogsResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediapackage.type_defs import ConfigureLogsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `Description`: `str`
@@ -142,14 +179,31 @@ Optional fields:
 - `IngressAccessLogs`:
   [IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateChannelResponseTypeDef
+## CreateChannelRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage.type_defs import CreateChannelResponseTypeDef
+from mypy_boto3_mediapackage.type_defs import CreateChannelRequestTypeDef
 ```
 
+Required fields:
+
+- `Id`: `str`
+
 Optional fields:
+
+- `Description`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## CreateChannelResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediapackage.type_defs import CreateChannelResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `Description`: `str`
@@ -160,14 +214,30 @@ Optional fields:
 - `IngressAccessLogs`:
   [IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateHarvestJobResponseTypeDef
+## CreateHarvestJobRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage.type_defs import CreateHarvestJobResponseTypeDef
+from mypy_boto3_mediapackage.type_defs import CreateHarvestJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `EndTime`: `str`
+- `Id`: `str`
+- `OriginEndpointId`: `str`
+- `S3Destination`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
+- `StartTime`: `str`
+
+## CreateHarvestJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediapackage.type_defs import CreateHarvestJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `ChannelId`: `str`
@@ -178,14 +248,43 @@ Optional fields:
 - `S3Destination`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
 - `StartTime`: `str`
 - `Status`: [StatusType](./literals.md#statustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateOriginEndpointResponseTypeDef
+## CreateOriginEndpointRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage.type_defs import CreateOriginEndpointResponseTypeDef
+from mypy_boto3_mediapackage.type_defs import CreateOriginEndpointRequestTypeDef
 ```
 
+Required fields:
+
+- `ChannelId`: `str`
+- `Id`: `str`
+
 Optional fields:
+
+- `Authorization`: [AuthorizationTypeDef](./type_defs.md#authorizationtypedef)
+- `CmafPackage`:
+  [CmafPackageCreateOrUpdateParametersTypeDef](./type_defs.md#cmafpackagecreateorupdateparameterstypedef)
+- `DashPackage`: [DashPackageTypeDef](./type_defs.md#dashpackagetypedef)
+- `Description`: `str`
+- `HlsPackage`: [HlsPackageTypeDef](./type_defs.md#hlspackagetypedef)
+- `ManifestName`: `str`
+- `MssPackage`: [MssPackageTypeDef](./type_defs.md#msspackagetypedef)
+- `Origination`: [OriginationType](./literals.md#originationtype)
+- `StartoverWindowSeconds`: `int`
+- `Tags`: `Dict`\[`str`, `str`\]
+- `TimeDelaySeconds`: `int`
+- `Whitelist`: `List`\[`str`\]
+
+## CreateOriginEndpointResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediapackage.type_defs import CreateOriginEndpointResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `Authorization`: [AuthorizationTypeDef](./type_defs.md#authorizationtypedef)
@@ -203,6 +302,8 @@ Optional fields:
 - `TimeDelaySeconds`: `int`
 - `Url`: `str`
 - `Whitelist`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DashEncryptionTypeDef
 
@@ -248,13 +349,43 @@ Optional fields:
 - `UtcTiming`: [UtcTimingType](./literals.md#utctimingtype)
 - `UtcTimingUri`: `str`
 
-## DescribeChannelResponseTypeDef
+## DeleteChannelRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage.type_defs import DescribeChannelResponseTypeDef
+from mypy_boto3_mediapackage.type_defs import DeleteChannelRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## DeleteOriginEndpointRequestTypeDef
+
+```python
+from mypy_boto3_mediapackage.type_defs import DeleteOriginEndpointRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## DescribeChannelRequestTypeDef
+
+```python
+from mypy_boto3_mediapackage.type_defs import DescribeChannelRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## DescribeChannelResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediapackage.type_defs import DescribeChannelResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `Description`: `str`
@@ -265,14 +396,26 @@ Optional fields:
 - `IngressAccessLogs`:
   [IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeHarvestJobResponseTypeDef
+## DescribeHarvestJobRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage.type_defs import DescribeHarvestJobResponseTypeDef
+from mypy_boto3_mediapackage.type_defs import DescribeHarvestJobRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## DescribeHarvestJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediapackage.type_defs import DescribeHarvestJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `ChannelId`: `str`
@@ -283,14 +426,26 @@ Optional fields:
 - `S3Destination`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
 - `StartTime`: `str`
 - `Status`: [StatusType](./literals.md#statustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeOriginEndpointResponseTypeDef
+## DescribeOriginEndpointRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage.type_defs import DescribeOriginEndpointResponseTypeDef
+from mypy_boto3_mediapackage.type_defs import DescribeOriginEndpointRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+
+## DescribeOriginEndpointResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediapackage.type_defs import DescribeOriginEndpointResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `Authorization`: [AuthorizationTypeDef](./type_defs.md#authorizationtypedef)
@@ -308,6 +463,8 @@ Optional fields:
 - `TimeDelaySeconds`: `int`
 - `Url`: `str`
 - `Whitelist`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## EgressAccessLogsTypeDef
 
@@ -469,50 +626,104 @@ Optional fields:
 
 - `LogGroupName`: `str`
 
-## ListChannelsResponseTypeDef
+## ListChannelsRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage.type_defs import ListChannelsResponseTypeDef
+from mypy_boto3_mediapackage.type_defs import ListChannelsRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListChannelsResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediapackage.type_defs import ListChannelsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Channels`: `List`\[[ChannelTypeDef](./type_defs.md#channeltypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListHarvestJobsResponseTypeDef
+## ListHarvestJobsRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage.type_defs import ListHarvestJobsResponseTypeDef
+from mypy_boto3_mediapackage.type_defs import ListHarvestJobsRequestTypeDef
 ```
 
 Optional fields:
+
+- `IncludeChannelId`: `str`
+- `IncludeStatus`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListHarvestJobsResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediapackage.type_defs import ListHarvestJobsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `HarvestJobs`:
   `List`\[[HarvestJobTypeDef](./type_defs.md#harvestjobtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListOriginEndpointsResponseTypeDef
+## ListOriginEndpointsRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage.type_defs import ListOriginEndpointsResponseTypeDef
+from mypy_boto3_mediapackage.type_defs import ListOriginEndpointsRequestTypeDef
 ```
 
 Optional fields:
+
+- `ChannelId`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListOriginEndpointsResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediapackage.type_defs import ListOriginEndpointsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `OriginEndpoints`:
   `List`\[[OriginEndpointTypeDef](./type_defs.md#originendpointtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_mediapackage.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceArn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediapackage.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## MssEncryptionTypeDef
 
@@ -576,13 +787,37 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## RotateChannelCredentialsResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_mediapackage.type_defs import RotateChannelCredentialsResponseTypeDef
+from mypy_boto3_mediapackage.type_defs import ResponseMetadataTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## RotateChannelCredentialsRequestTypeDef
+
+```python
+from mypy_boto3_mediapackage.type_defs import RotateChannelCredentialsRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+## RotateChannelCredentialsResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediapackage.type_defs import RotateChannelCredentialsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `Description`: `str`
@@ -593,14 +828,27 @@ Optional fields:
 - `IngressAccessLogs`:
   [IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RotateIngestEndpointCredentialsResponseTypeDef
+## RotateIngestEndpointCredentialsRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage.type_defs import RotateIngestEndpointCredentialsResponseTypeDef
+from mypy_boto3_mediapackage.type_defs import RotateIngestEndpointCredentialsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Id`: `str`
+- `IngestEndpointId`: `str`
+
+## RotateIngestEndpointCredentialsResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediapackage.type_defs import RotateIngestEndpointCredentialsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `Description`: `str`
@@ -611,6 +859,8 @@ Optional fields:
 - `IngressAccessLogs`:
   [IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## S3DestinationTypeDef
 
@@ -655,13 +905,49 @@ Optional fields:
 - `MinVideoBitsPerSecond`: `int`
 - `StreamOrder`: [StreamOrderType](./literals.md#streamordertype)
 
-## UpdateChannelResponseTypeDef
+## TagResourceRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage.type_defs import UpdateChannelResponseTypeDef
+from mypy_boto3_mediapackage.type_defs import TagResourceRequestTypeDef
 ```
 
+Required fields:
+
+- `ResourceArn`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## UntagResourceRequestTypeDef
+
+```python
+from mypy_boto3_mediapackage.type_defs import UntagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## UpdateChannelRequestTypeDef
+
+```python
+from mypy_boto3_mediapackage.type_defs import UpdateChannelRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
 Optional fields:
+
+- `Description`: `str`
+
+## UpdateChannelResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediapackage.type_defs import UpdateChannelResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `Description`: `str`
@@ -672,14 +958,41 @@ Optional fields:
 - `IngressAccessLogs`:
   [IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateOriginEndpointResponseTypeDef
+## UpdateOriginEndpointRequestTypeDef
 
 ```python
-from mypy_boto3_mediapackage.type_defs import UpdateOriginEndpointResponseTypeDef
+from mypy_boto3_mediapackage.type_defs import UpdateOriginEndpointRequestTypeDef
 ```
 
+Required fields:
+
+- `Id`: `str`
+
 Optional fields:
+
+- `Authorization`: [AuthorizationTypeDef](./type_defs.md#authorizationtypedef)
+- `CmafPackage`:
+  [CmafPackageCreateOrUpdateParametersTypeDef](./type_defs.md#cmafpackagecreateorupdateparameterstypedef)
+- `DashPackage`: [DashPackageTypeDef](./type_defs.md#dashpackagetypedef)
+- `Description`: `str`
+- `HlsPackage`: [HlsPackageTypeDef](./type_defs.md#hlspackagetypedef)
+- `ManifestName`: `str`
+- `MssPackage`: [MssPackageTypeDef](./type_defs.md#msspackagetypedef)
+- `Origination`: [OriginationType](./literals.md#originationtype)
+- `StartoverWindowSeconds`: `int`
+- `TimeDelaySeconds`: `int`
+- `Whitelist`: `List`\[`str`\]
+
+## UpdateOriginEndpointResponseResponseTypeDef
+
+```python
+from mypy_boto3_mediapackage.type_defs import UpdateOriginEndpointResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `Authorization`: [AuthorizationTypeDef](./type_defs.md#authorizationtypedef)
@@ -697,3 +1010,5 @@ Optional fields:
 - `TimeDelaySeconds`: `int`
 - `Url`: `str`
 - `Whitelist`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

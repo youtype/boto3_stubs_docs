@@ -114,12 +114,18 @@ Exceptions:
 
 ### accept_direct_connect_gateway_association_proposal
 
+Accepts a proposal request to attach a virtual private gateway or transit
+gateway to a Direct Connect gateway.
+
 Type annotations for
 `boto3.client("directconnect").accept_direct_connect_gateway_association_proposal`
 method.
 
 Boto3 documentation:
 [DirectConnect.Client.accept_direct_connect_gateway_association_proposal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.accept_direct_connect_gateway_association_proposal)
+
+Arguments mapping described in
+[AcceptDirectConnectGatewayAssociationProposalRequestTypeDef](./type_defs.md#acceptdirectconnectgatewayassociationproposalrequesttypedef).
 
 Keyword-only arguments:
 
@@ -130,15 +136,20 @@ Keyword-only arguments:
   `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 
 Returns
-[AcceptDirectConnectGatewayAssociationProposalResultTypeDef](./type_defs.md#acceptdirectconnectgatewayassociationproposalresulttypedef).
+[AcceptDirectConnectGatewayAssociationProposalResultResponseTypeDef](./type_defs.md#acceptdirectconnectgatewayassociationproposalresultresponsetypedef).
 
 ### allocate_connection_on_interconnect
+
+Deprecated.
 
 Type annotations for
 `boto3.client("directconnect").allocate_connection_on_interconnect` method.
 
 Boto3 documentation:
 [DirectConnect.Client.allocate_connection_on_interconnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.allocate_connection_on_interconnect)
+
+Arguments mapping described in
+[AllocateConnectionOnInterconnectRequestTypeDef](./type_defs.md#allocateconnectiononinterconnectrequesttypedef).
 
 Keyword-only arguments:
 
@@ -148,15 +159,21 @@ Keyword-only arguments:
 - `interconnectId`: `str` *(required)*
 - `vlan`: `int` *(required)*
 
-Returns [ConnectionTypeDef](./type_defs.md#connectiontypedef).
+Returns [ConnectionResponseTypeDef](./type_defs.md#connectionresponsetypedef).
 
 ### allocate_hosted_connection
+
+Creates a hosted connection on the specified interconnect or a link aggregation
+group (LAG) of interconnects.
 
 Type annotations for `boto3.client("directconnect").allocate_hosted_connection`
 method.
 
 Boto3 documentation:
 [DirectConnect.Client.allocate_hosted_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.allocate_hosted_connection)
+
+Arguments mapping described in
+[AllocateHostedConnectionRequestTypeDef](./type_defs.md#allocatehostedconnectionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -167,15 +184,21 @@ Keyword-only arguments:
 - `vlan`: `int` *(required)*
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns [ConnectionTypeDef](./type_defs.md#connectiontypedef).
+Returns [ConnectionResponseTypeDef](./type_defs.md#connectionresponsetypedef).
 
 ### allocate_private_virtual_interface
+
+Provisions a private virtual interface to be owned by the specified AWS
+account.
 
 Type annotations for
 `boto3.client("directconnect").allocate_private_virtual_interface` method.
 
 Boto3 documentation:
 [DirectConnect.Client.allocate_private_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.allocate_private_virtual_interface)
+
+Arguments mapping described in
+[AllocatePrivateVirtualInterfaceRequestTypeDef](./type_defs.md#allocateprivatevirtualinterfacerequesttypedef).
 
 Keyword-only arguments:
 
@@ -185,15 +208,21 @@ Keyword-only arguments:
   [NewPrivateVirtualInterfaceAllocationTypeDef](./type_defs.md#newprivatevirtualinterfaceallocationtypedef)
   *(required)*
 
-Returns [VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef).
+Returns
+[VirtualInterfaceResponseTypeDef](./type_defs.md#virtualinterfaceresponsetypedef).
 
 ### allocate_public_virtual_interface
+
+Provisions a public virtual interface to be owned by the specified AWS account.
 
 Type annotations for
 `boto3.client("directconnect").allocate_public_virtual_interface` method.
 
 Boto3 documentation:
 [DirectConnect.Client.allocate_public_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.allocate_public_virtual_interface)
+
+Arguments mapping described in
+[AllocatePublicVirtualInterfaceRequestTypeDef](./type_defs.md#allocatepublicvirtualinterfacerequesttypedef).
 
 Keyword-only arguments:
 
@@ -203,15 +232,22 @@ Keyword-only arguments:
   [NewPublicVirtualInterfaceAllocationTypeDef](./type_defs.md#newpublicvirtualinterfaceallocationtypedef)
   *(required)*
 
-Returns [VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef).
+Returns
+[VirtualInterfaceResponseTypeDef](./type_defs.md#virtualinterfaceresponsetypedef).
 
 ### allocate_transit_virtual_interface
+
+Provisions a transit virtual interface to be owned by the specified AWS
+account.
 
 Type annotations for
 `boto3.client("directconnect").allocate_transit_virtual_interface` method.
 
 Boto3 documentation:
 [DirectConnect.Client.allocate_transit_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.allocate_transit_virtual_interface)
+
+Arguments mapping described in
+[AllocateTransitVirtualInterfaceRequestTypeDef](./type_defs.md#allocatetransitvirtualinterfacerequesttypedef).
 
 Keyword-only arguments:
 
@@ -222,9 +258,11 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[AllocateTransitVirtualInterfaceResultTypeDef](./type_defs.md#allocatetransitvirtualinterfaceresulttypedef).
+[AllocateTransitVirtualInterfaceResultResponseTypeDef](./type_defs.md#allocatetransitvirtualinterfaceresultresponsetypedef).
 
 ### associate_connection_with_lag
+
+Associates an existing connection with a link aggregation group (LAG).
 
 Type annotations for
 `boto3.client("directconnect").associate_connection_with_lag` method.
@@ -232,14 +270,20 @@ Type annotations for
 Boto3 documentation:
 [DirectConnect.Client.associate_connection_with_lag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.associate_connection_with_lag)
 
+Arguments mapping described in
+[AssociateConnectionWithLagRequestTypeDef](./type_defs.md#associateconnectionwithlagrequesttypedef).
+
 Keyword-only arguments:
 
 - `connectionId`: `str` *(required)*
 - `lagId`: `str` *(required)*
 
-Returns [ConnectionTypeDef](./type_defs.md#connectiontypedef).
+Returns [ConnectionResponseTypeDef](./type_defs.md#connectionresponsetypedef).
 
 ### associate_hosted_connection
+
+Associates a hosted connection and its virtual interfaces with a link
+aggregation group (LAG) or interconnect.
 
 Type annotations for
 `boto3.client("directconnect").associate_hosted_connection` method.
@@ -247,20 +291,29 @@ Type annotations for
 Boto3 documentation:
 [DirectConnect.Client.associate_hosted_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.associate_hosted_connection)
 
+Arguments mapping described in
+[AssociateHostedConnectionRequestTypeDef](./type_defs.md#associatehostedconnectionrequesttypedef).
+
 Keyword-only arguments:
 
 - `connectionId`: `str` *(required)*
 - `parentConnectionId`: `str` *(required)*
 
-Returns [ConnectionTypeDef](./type_defs.md#connectiontypedef).
+Returns [ConnectionResponseTypeDef](./type_defs.md#connectionresponsetypedef).
 
 ### associate_mac_sec_key
+
+Associates a MAC Security (MACsec) Connection Key Name (CKN)/ Connectivity
+Association Key (CAK) pair with an AWS Direct Connect dedicated connection.
 
 Type annotations for `boto3.client("directconnect").associate_mac_sec_key`
 method.
 
 Boto3 documentation:
 [DirectConnect.Client.associate_mac_sec_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.associate_mac_sec_key)
+
+Arguments mapping described in
+[AssociateMacSecKeyRequestTypeDef](./type_defs.md#associatemacseckeyrequesttypedef).
 
 Keyword-only arguments:
 
@@ -270,9 +323,12 @@ Keyword-only arguments:
 - `cak`: `str`
 
 Returns
-[AssociateMacSecKeyResponseTypeDef](./type_defs.md#associatemacseckeyresponsetypedef).
+[AssociateMacSecKeyResponseResponseTypeDef](./type_defs.md#associatemacseckeyresponseresponsetypedef).
 
 ### associate_virtual_interface
+
+Associates a virtual interface with a specified link aggregation group (LAG) or
+connection.
 
 Type annotations for
 `boto3.client("directconnect").associate_virtual_interface` method.
@@ -280,14 +336,20 @@ Type annotations for
 Boto3 documentation:
 [DirectConnect.Client.associate_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.associate_virtual_interface)
 
+Arguments mapping described in
+[AssociateVirtualInterfaceRequestTypeDef](./type_defs.md#associatevirtualinterfacerequesttypedef).
+
 Keyword-only arguments:
 
 - `virtualInterfaceId`: `str` *(required)*
 - `connectionId`: `str` *(required)*
 
-Returns [VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef).
+Returns
+[VirtualInterfaceResponseTypeDef](./type_defs.md#virtualinterfaceresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("directconnect").can_paginate` method.
 
@@ -302,25 +364,36 @@ Returns `bool`.
 
 ### confirm_connection
 
+Confirms the creation of the specified hosted connection on an interconnect.
+
 Type annotations for `boto3.client("directconnect").confirm_connection` method.
 
 Boto3 documentation:
 [DirectConnect.Client.confirm_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.confirm_connection)
+
+Arguments mapping described in
+[ConfirmConnectionRequestTypeDef](./type_defs.md#confirmconnectionrequesttypedef).
 
 Keyword-only arguments:
 
 - `connectionId`: `str` *(required)*
 
 Returns
-[ConfirmConnectionResponseTypeDef](./type_defs.md#confirmconnectionresponsetypedef).
+[ConfirmConnectionResponseResponseTypeDef](./type_defs.md#confirmconnectionresponseresponsetypedef).
 
 ### confirm_private_virtual_interface
+
+Accepts ownership of a private virtual interface created by another AWS
+account.
 
 Type annotations for
 `boto3.client("directconnect").confirm_private_virtual_interface` method.
 
 Boto3 documentation:
 [DirectConnect.Client.confirm_private_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.confirm_private_virtual_interface)
+
+Arguments mapping described in
+[ConfirmPrivateVirtualInterfaceRequestTypeDef](./type_defs.md#confirmprivatevirtualinterfacerequesttypedef).
 
 Keyword-only arguments:
 
@@ -329,9 +402,11 @@ Keyword-only arguments:
 - `directConnectGatewayId`: `str`
 
 Returns
-[ConfirmPrivateVirtualInterfaceResponseTypeDef](./type_defs.md#confirmprivatevirtualinterfaceresponsetypedef).
+[ConfirmPrivateVirtualInterfaceResponseResponseTypeDef](./type_defs.md#confirmprivatevirtualinterfaceresponseresponsetypedef).
 
 ### confirm_public_virtual_interface
+
+Accepts ownership of a public virtual interface created by another AWS account.
 
 Type annotations for
 `boto3.client("directconnect").confirm_public_virtual_interface` method.
@@ -339,14 +414,20 @@ Type annotations for
 Boto3 documentation:
 [DirectConnect.Client.confirm_public_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.confirm_public_virtual_interface)
 
+Arguments mapping described in
+[ConfirmPublicVirtualInterfaceRequestTypeDef](./type_defs.md#confirmpublicvirtualinterfacerequesttypedef).
+
 Keyword-only arguments:
 
 - `virtualInterfaceId`: `str` *(required)*
 
 Returns
-[ConfirmPublicVirtualInterfaceResponseTypeDef](./type_defs.md#confirmpublicvirtualinterfaceresponsetypedef).
+[ConfirmPublicVirtualInterfaceResponseResponseTypeDef](./type_defs.md#confirmpublicvirtualinterfaceresponseresponsetypedef).
 
 ### confirm_transit_virtual_interface
+
+Accepts ownership of a transit virtual interface created by another AWS
+account.
 
 Type annotations for
 `boto3.client("directconnect").confirm_transit_virtual_interface` method.
@@ -354,20 +435,28 @@ Type annotations for
 Boto3 documentation:
 [DirectConnect.Client.confirm_transit_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.confirm_transit_virtual_interface)
 
+Arguments mapping described in
+[ConfirmTransitVirtualInterfaceRequestTypeDef](./type_defs.md#confirmtransitvirtualinterfacerequesttypedef).
+
 Keyword-only arguments:
 
 - `virtualInterfaceId`: `str` *(required)*
 - `directConnectGatewayId`: `str` *(required)*
 
 Returns
-[ConfirmTransitVirtualInterfaceResponseTypeDef](./type_defs.md#confirmtransitvirtualinterfaceresponsetypedef).
+[ConfirmTransitVirtualInterfaceResponseResponseTypeDef](./type_defs.md#confirmtransitvirtualinterfaceresponseresponsetypedef).
 
 ### create_bgp_peer
+
+Creates a BGP peer on the specified virtual interface.
 
 Type annotations for `boto3.client("directconnect").create_bgp_peer` method.
 
 Boto3 documentation:
 [DirectConnect.Client.create_bgp_peer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_bgp_peer)
+
+Arguments mapping described in
+[CreateBGPPeerRequestTypeDef](./type_defs.md#createbgppeerrequesttypedef).
 
 Keyword-only arguments:
 
@@ -375,14 +464,20 @@ Keyword-only arguments:
 - `newBGPPeer`: [NewBGPPeerTypeDef](./type_defs.md#newbgppeertypedef)
 
 Returns
-[CreateBGPPeerResponseTypeDef](./type_defs.md#createbgppeerresponsetypedef).
+[CreateBGPPeerResponseResponseTypeDef](./type_defs.md#createbgppeerresponseresponsetypedef).
 
 ### create_connection
+
+Creates a connection between a customer network and a specific AWS Direct
+Connect location.
 
 Type annotations for `boto3.client("directconnect").create_connection` method.
 
 Boto3 documentation:
 [DirectConnect.Client.create_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_connection)
+
+Arguments mapping described in
+[CreateConnectionRequestTypeDef](./type_defs.md#createconnectionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -394,9 +489,12 @@ Keyword-only arguments:
 - `providerName`: `str`
 - `requestMACSec`: `bool`
 
-Returns [ConnectionTypeDef](./type_defs.md#connectiontypedef).
+Returns [ConnectionResponseTypeDef](./type_defs.md#connectionresponsetypedef).
 
 ### create_direct_connect_gateway
+
+Creates a Direct Connect gateway, which is an intermediate object that enables
+you to connect a set of virtual interfaces and virtual private gateways.
 
 Type annotations for
 `boto3.client("directconnect").create_direct_connect_gateway` method.
@@ -404,15 +502,21 @@ Type annotations for
 Boto3 documentation:
 [DirectConnect.Client.create_direct_connect_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_direct_connect_gateway)
 
+Arguments mapping described in
+[CreateDirectConnectGatewayRequestTypeDef](./type_defs.md#createdirectconnectgatewayrequesttypedef).
+
 Keyword-only arguments:
 
 - `directConnectGatewayName`: `str` *(required)*
 - `amazonSideAsn`: `int`
 
 Returns
-[CreateDirectConnectGatewayResultTypeDef](./type_defs.md#createdirectconnectgatewayresulttypedef).
+[CreateDirectConnectGatewayResultResponseTypeDef](./type_defs.md#createdirectconnectgatewayresultresponsetypedef).
 
 ### create_direct_connect_gateway_association
+
+Creates an association between a Direct Connect gateway and a virtual private
+gateway.
 
 Type annotations for
 `boto3.client("directconnect").create_direct_connect_gateway_association`
@@ -420,6 +524,9 @@ method.
 
 Boto3 documentation:
 [DirectConnect.Client.create_direct_connect_gateway_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_direct_connect_gateway_association)
+
+Arguments mapping described in
+[CreateDirectConnectGatewayAssociationRequestTypeDef](./type_defs.md#createdirectconnectgatewayassociationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -430,9 +537,12 @@ Keyword-only arguments:
 - `virtualGatewayId`: `str`
 
 Returns
-[CreateDirectConnectGatewayAssociationResultTypeDef](./type_defs.md#createdirectconnectgatewayassociationresulttypedef).
+[CreateDirectConnectGatewayAssociationResultResponseTypeDef](./type_defs.md#createdirectconnectgatewayassociationresultresponsetypedef).
 
 ### create_direct_connect_gateway_association_proposal
+
+Creates a proposal to associate the specified virtual private gateway or
+transit gateway with the specified Direct Connect gateway.
 
 Type annotations for
 `boto3.client("directconnect").create_direct_connect_gateway_association_proposal`
@@ -440,6 +550,9 @@ method.
 
 Boto3 documentation:
 [DirectConnect.Client.create_direct_connect_gateway_association_proposal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_direct_connect_gateway_association_proposal)
+
+Arguments mapping described in
+[CreateDirectConnectGatewayAssociationProposalRequestTypeDef](./type_defs.md#createdirectconnectgatewayassociationproposalrequesttypedef).
 
 Keyword-only arguments:
 
@@ -452,15 +565,21 @@ Keyword-only arguments:
   `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 
 Returns
-[CreateDirectConnectGatewayAssociationProposalResultTypeDef](./type_defs.md#createdirectconnectgatewayassociationproposalresulttypedef).
+[CreateDirectConnectGatewayAssociationProposalResultResponseTypeDef](./type_defs.md#createdirectconnectgatewayassociationproposalresultresponsetypedef).
 
 ### create_interconnect
+
+Creates an interconnect between an AWS Direct Connect Partner's network and a
+specific AWS Direct Connect location.
 
 Type annotations for `boto3.client("directconnect").create_interconnect`
 method.
 
 Boto3 documentation:
 [DirectConnect.Client.create_interconnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_interconnect)
+
+Arguments mapping described in
+[CreateInterconnectRequestTypeDef](./type_defs.md#createinterconnectrequesttypedef).
 
 Keyword-only arguments:
 
@@ -471,14 +590,22 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `providerName`: `str`
 
-Returns [InterconnectTypeDef](./type_defs.md#interconnecttypedef).
+Returns
+[InterconnectResponseTypeDef](./type_defs.md#interconnectresponsetypedef).
 
 ### create_lag
+
+Creates a link aggregation group (LAG) with the specified number of bundled
+physical dedicated connections between the customer network and a specific AWS
+Direct Connect location.
 
 Type annotations for `boto3.client("directconnect").create_lag` method.
 
 Boto3 documentation:
 [DirectConnect.Client.create_lag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_lag)
+
+Arguments mapping described in
+[CreateLagRequestTypeDef](./type_defs.md#createlagrequesttypedef).
 
 Keyword-only arguments:
 
@@ -492,15 +619,20 @@ Keyword-only arguments:
 - `providerName`: `str`
 - `requestMACSec`: `bool`
 
-Returns [LagTypeDef](./type_defs.md#lagtypedef).
+Returns [LagResponseTypeDef](./type_defs.md#lagresponsetypedef).
 
 ### create_private_virtual_interface
+
+Creates a private virtual interface.
 
 Type annotations for
 `boto3.client("directconnect").create_private_virtual_interface` method.
 
 Boto3 documentation:
 [DirectConnect.Client.create_private_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_private_virtual_interface)
+
+Arguments mapping described in
+[CreatePrivateVirtualInterfaceRequestTypeDef](./type_defs.md#createprivatevirtualinterfacerequesttypedef).
 
 Keyword-only arguments:
 
@@ -509,15 +641,21 @@ Keyword-only arguments:
   [NewPrivateVirtualInterfaceTypeDef](./type_defs.md#newprivatevirtualinterfacetypedef)
   *(required)*
 
-Returns [VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef).
+Returns
+[VirtualInterfaceResponseTypeDef](./type_defs.md#virtualinterfaceresponsetypedef).
 
 ### create_public_virtual_interface
+
+Creates a public virtual interface.
 
 Type annotations for
 `boto3.client("directconnect").create_public_virtual_interface` method.
 
 Boto3 documentation:
 [DirectConnect.Client.create_public_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_public_virtual_interface)
+
+Arguments mapping described in
+[CreatePublicVirtualInterfaceRequestTypeDef](./type_defs.md#createpublicvirtualinterfacerequesttypedef).
 
 Keyword-only arguments:
 
@@ -526,15 +664,21 @@ Keyword-only arguments:
   [NewPublicVirtualInterfaceTypeDef](./type_defs.md#newpublicvirtualinterfacetypedef)
   *(required)*
 
-Returns [VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef).
+Returns
+[VirtualInterfaceResponseTypeDef](./type_defs.md#virtualinterfaceresponsetypedef).
 
 ### create_transit_virtual_interface
+
+Creates a transit virtual interface.
 
 Type annotations for
 `boto3.client("directconnect").create_transit_virtual_interface` method.
 
 Boto3 documentation:
 [DirectConnect.Client.create_transit_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.create_transit_virtual_interface)
+
+Arguments mapping described in
+[CreateTransitVirtualInterfaceRequestTypeDef](./type_defs.md#createtransitvirtualinterfacerequesttypedef).
 
 Keyword-only arguments:
 
@@ -544,14 +688,20 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateTransitVirtualInterfaceResultTypeDef](./type_defs.md#createtransitvirtualinterfaceresulttypedef).
+[CreateTransitVirtualInterfaceResultResponseTypeDef](./type_defs.md#createtransitvirtualinterfaceresultresponsetypedef).
 
 ### delete_bgp_peer
+
+Deletes the specified BGP peer on the specified virtual interface with the
+specified customer address and ASN.
 
 Type annotations for `boto3.client("directconnect").delete_bgp_peer` method.
 
 Boto3 documentation:
 [DirectConnect.Client.delete_bgp_peer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_bgp_peer)
+
+Arguments mapping described in
+[DeleteBGPPeerRequestTypeDef](./type_defs.md#deletebgppeerrequesttypedef).
 
 Keyword-only arguments:
 
@@ -561,22 +711,29 @@ Keyword-only arguments:
 - `bgpPeerId`: `str`
 
 Returns
-[DeleteBGPPeerResponseTypeDef](./type_defs.md#deletebgppeerresponsetypedef).
+[DeleteBGPPeerResponseResponseTypeDef](./type_defs.md#deletebgppeerresponseresponsetypedef).
 
 ### delete_connection
+
+Deletes the specified connection.
 
 Type annotations for `boto3.client("directconnect").delete_connection` method.
 
 Boto3 documentation:
 [DirectConnect.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_connection)
 
+Arguments mapping described in
+[DeleteConnectionRequestTypeDef](./type_defs.md#deleteconnectionrequesttypedef).
+
 Keyword-only arguments:
 
 - `connectionId`: `str` *(required)*
 
-Returns [ConnectionTypeDef](./type_defs.md#connectiontypedef).
+Returns [ConnectionResponseTypeDef](./type_defs.md#connectionresponsetypedef).
 
 ### delete_direct_connect_gateway
+
+Deletes the specified Direct Connect gateway.
 
 Type annotations for
 `boto3.client("directconnect").delete_direct_connect_gateway` method.
@@ -584,14 +741,20 @@ Type annotations for
 Boto3 documentation:
 [DirectConnect.Client.delete_direct_connect_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_direct_connect_gateway)
 
+Arguments mapping described in
+[DeleteDirectConnectGatewayRequestTypeDef](./type_defs.md#deletedirectconnectgatewayrequesttypedef).
+
 Keyword-only arguments:
 
 - `directConnectGatewayId`: `str` *(required)*
 
 Returns
-[DeleteDirectConnectGatewayResultTypeDef](./type_defs.md#deletedirectconnectgatewayresulttypedef).
+[DeleteDirectConnectGatewayResultResponseTypeDef](./type_defs.md#deletedirectconnectgatewayresultresponsetypedef).
 
 ### delete_direct_connect_gateway_association
+
+Deletes the association between the specified Direct Connect gateway and
+virtual private gateway.
 
 Type annotations for
 `boto3.client("directconnect").delete_direct_connect_gateway_association`
@@ -600,6 +763,9 @@ method.
 Boto3 documentation:
 [DirectConnect.Client.delete_direct_connect_gateway_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_direct_connect_gateway_association)
 
+Arguments mapping described in
+[DeleteDirectConnectGatewayAssociationRequestTypeDef](./type_defs.md#deletedirectconnectgatewayassociationrequesttypedef).
+
 Keyword-only arguments:
 
 - `associationId`: `str`
@@ -607,9 +773,12 @@ Keyword-only arguments:
 - `virtualGatewayId`: `str`
 
 Returns
-[DeleteDirectConnectGatewayAssociationResultTypeDef](./type_defs.md#deletedirectconnectgatewayassociationresulttypedef).
+[DeleteDirectConnectGatewayAssociationResultResponseTypeDef](./type_defs.md#deletedirectconnectgatewayassociationresultresponsetypedef).
 
 ### delete_direct_connect_gateway_association_proposal
+
+Deletes the association proposal request between the specified Direct Connect
+gateway and virtual private gateway or transit gateway.
 
 Type annotations for
 `boto3.client("directconnect").delete_direct_connect_gateway_association_proposal`
@@ -618,14 +787,19 @@ method.
 Boto3 documentation:
 [DirectConnect.Client.delete_direct_connect_gateway_association_proposal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_direct_connect_gateway_association_proposal)
 
+Arguments mapping described in
+[DeleteDirectConnectGatewayAssociationProposalRequestTypeDef](./type_defs.md#deletedirectconnectgatewayassociationproposalrequesttypedef).
+
 Keyword-only arguments:
 
 - `proposalId`: `str` *(required)*
 
 Returns
-[DeleteDirectConnectGatewayAssociationProposalResultTypeDef](./type_defs.md#deletedirectconnectgatewayassociationproposalresulttypedef).
+[DeleteDirectConnectGatewayAssociationProposalResultResponseTypeDef](./type_defs.md#deletedirectconnectgatewayassociationproposalresultresponsetypedef).
 
 ### delete_interconnect
+
+Deletes the specified interconnect.
 
 Type annotations for `boto3.client("directconnect").delete_interconnect`
 method.
@@ -633,27 +807,37 @@ method.
 Boto3 documentation:
 [DirectConnect.Client.delete_interconnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_interconnect)
 
+Arguments mapping described in
+[DeleteInterconnectRequestTypeDef](./type_defs.md#deleteinterconnectrequesttypedef).
+
 Keyword-only arguments:
 
 - `interconnectId`: `str` *(required)*
 
 Returns
-[DeleteInterconnectResponseTypeDef](./type_defs.md#deleteinterconnectresponsetypedef).
+[DeleteInterconnectResponseResponseTypeDef](./type_defs.md#deleteinterconnectresponseresponsetypedef).
 
 ### delete_lag
+
+Deletes the specified link aggregation group (LAG).
 
 Type annotations for `boto3.client("directconnect").delete_lag` method.
 
 Boto3 documentation:
 [DirectConnect.Client.delete_lag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_lag)
 
+Arguments mapping described in
+[DeleteLagRequestTypeDef](./type_defs.md#deletelagrequesttypedef).
+
 Keyword-only arguments:
 
 - `lagId`: `str` *(required)*
 
-Returns [LagTypeDef](./type_defs.md#lagtypedef).
+Returns [LagResponseTypeDef](./type_defs.md#lagresponsetypedef).
 
 ### delete_virtual_interface
+
+Deletes a virtual interface.
 
 Type annotations for `boto3.client("directconnect").delete_virtual_interface`
 method.
@@ -661,20 +845,28 @@ method.
 Boto3 documentation:
 [DirectConnect.Client.delete_virtual_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.delete_virtual_interface)
 
+Arguments mapping described in
+[DeleteVirtualInterfaceRequestTypeDef](./type_defs.md#deletevirtualinterfacerequesttypedef).
+
 Keyword-only arguments:
 
 - `virtualInterfaceId`: `str` *(required)*
 
 Returns
-[DeleteVirtualInterfaceResponseTypeDef](./type_defs.md#deletevirtualinterfaceresponsetypedef).
+[DeleteVirtualInterfaceResponseResponseTypeDef](./type_defs.md#deletevirtualinterfaceresponseresponsetypedef).
 
 ### describe_connection_loa
+
+Deprecated.
 
 Type annotations for `boto3.client("directconnect").describe_connection_loa`
 method.
 
 Boto3 documentation:
 [DirectConnect.Client.describe_connection_loa](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_connection_loa)
+
+Arguments mapping described in
+[DescribeConnectionLoaRequestTypeDef](./type_defs.md#describeconnectionloarequesttypedef).
 
 Keyword-only arguments:
 
@@ -684,9 +876,11 @@ Keyword-only arguments:
   [LoaContentTypeType](./literals.md#loacontenttypetype))
 
 Returns
-[DescribeConnectionLoaResponseTypeDef](./type_defs.md#describeconnectionloaresponsetypedef).
+[DescribeConnectionLoaResponseResponseTypeDef](./type_defs.md#describeconnectionloaresponseresponsetypedef).
 
 ### describe_connections
+
+Displays the specified connection or all connections in this Region.
 
 Type annotations for `boto3.client("directconnect").describe_connections`
 method.
@@ -694,13 +888,19 @@ method.
 Boto3 documentation:
 [DirectConnect.Client.describe_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_connections)
 
+Arguments mapping described in
+[DescribeConnectionsRequestTypeDef](./type_defs.md#describeconnectionsrequesttypedef).
+
 Keyword-only arguments:
 
 - `connectionId`: `str`
 
-Returns [ConnectionsTypeDef](./type_defs.md#connectionstypedef).
+Returns
+[ConnectionsResponseTypeDef](./type_defs.md#connectionsresponsetypedef).
 
 ### describe_connections_on_interconnect
+
+Deprecated.
 
 Type annotations for
 `boto3.client("directconnect").describe_connections_on_interconnect` method.
@@ -708,13 +908,20 @@ Type annotations for
 Boto3 documentation:
 [DirectConnect.Client.describe_connections_on_interconnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_connections_on_interconnect)
 
+Arguments mapping described in
+[DescribeConnectionsOnInterconnectRequestTypeDef](./type_defs.md#describeconnectionsoninterconnectrequesttypedef).
+
 Keyword-only arguments:
 
 - `interconnectId`: `str` *(required)*
 
-Returns [ConnectionsTypeDef](./type_defs.md#connectionstypedef).
+Returns
+[ConnectionsResponseTypeDef](./type_defs.md#connectionsresponsetypedef).
 
 ### describe_direct_connect_gateway_association_proposals
+
+Describes one or more association proposals for connection between a virtual
+private gateway or transit gateway and a Direct Connect gateway.
 
 Type annotations for
 `boto3.client("directconnect").describe_direct_connect_gateway_association_proposals`
@@ -722,6 +929,9 @@ method.
 
 Boto3 documentation:
 [DirectConnect.Client.describe_direct_connect_gateway_association_proposals](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_direct_connect_gateway_association_proposals)
+
+Arguments mapping described in
+[DescribeDirectConnectGatewayAssociationProposalsRequestTypeDef](./type_defs.md#describedirectconnectgatewayassociationproposalsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -732,9 +942,12 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeDirectConnectGatewayAssociationProposalsResultTypeDef](./type_defs.md#describedirectconnectgatewayassociationproposalsresulttypedef).
+[DescribeDirectConnectGatewayAssociationProposalsResultResponseTypeDef](./type_defs.md#describedirectconnectgatewayassociationproposalsresultresponsetypedef).
 
 ### describe_direct_connect_gateway_associations
+
+Lists the associations between your Direct Connect gateways and virtual private
+gateways and transit gateways.
 
 Type annotations for
 `boto3.client("directconnect").describe_direct_connect_gateway_associations`
@@ -742,6 +955,9 @@ method.
 
 Boto3 documentation:
 [DirectConnect.Client.describe_direct_connect_gateway_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_direct_connect_gateway_associations)
+
+Arguments mapping described in
+[DescribeDirectConnectGatewayAssociationsRequestTypeDef](./type_defs.md#describedirectconnectgatewayassociationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -753,9 +969,12 @@ Keyword-only arguments:
 - `virtualGatewayId`: `str`
 
 Returns
-[DescribeDirectConnectGatewayAssociationsResultTypeDef](./type_defs.md#describedirectconnectgatewayassociationsresulttypedef).
+[DescribeDirectConnectGatewayAssociationsResultResponseTypeDef](./type_defs.md#describedirectconnectgatewayassociationsresultresponsetypedef).
 
 ### describe_direct_connect_gateway_attachments
+
+Lists the attachments between your Direct Connect gateways and virtual
+interfaces.
 
 Type annotations for
 `boto3.client("directconnect").describe_direct_connect_gateway_attachments`
@@ -763,6 +982,9 @@ method.
 
 Boto3 documentation:
 [DirectConnect.Client.describe_direct_connect_gateway_attachments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_direct_connect_gateway_attachments)
+
+Arguments mapping described in
+[DescribeDirectConnectGatewayAttachmentsRequestTypeDef](./type_defs.md#describedirectconnectgatewayattachmentsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -772,15 +994,21 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeDirectConnectGatewayAttachmentsResultTypeDef](./type_defs.md#describedirectconnectgatewayattachmentsresulttypedef).
+[DescribeDirectConnectGatewayAttachmentsResultResponseTypeDef](./type_defs.md#describedirectconnectgatewayattachmentsresultresponsetypedef).
 
 ### describe_direct_connect_gateways
+
+Lists all your Direct Connect gateways or only the specified Direct Connect
+gateway.
 
 Type annotations for
 `boto3.client("directconnect").describe_direct_connect_gateways` method.
 
 Boto3 documentation:
 [DirectConnect.Client.describe_direct_connect_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_direct_connect_gateways)
+
+Arguments mapping described in
+[DescribeDirectConnectGatewaysRequestTypeDef](./type_defs.md#describedirectconnectgatewaysrequesttypedef).
 
 Keyword-only arguments:
 
@@ -789,9 +1017,12 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeDirectConnectGatewaysResultTypeDef](./type_defs.md#describedirectconnectgatewaysresulttypedef).
+[DescribeDirectConnectGatewaysResultResponseTypeDef](./type_defs.md#describedirectconnectgatewaysresultresponsetypedef).
 
 ### describe_hosted_connections
+
+Lists the hosted connections that have been provisioned on the specified
+interconnect or link aggregation group (LAG).
 
 Type annotations for
 `boto3.client("directconnect").describe_hosted_connections` method.
@@ -799,19 +1030,28 @@ Type annotations for
 Boto3 documentation:
 [DirectConnect.Client.describe_hosted_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_hosted_connections)
 
+Arguments mapping described in
+[DescribeHostedConnectionsRequestTypeDef](./type_defs.md#describehostedconnectionsrequesttypedef).
+
 Keyword-only arguments:
 
 - `connectionId`: `str` *(required)*
 
-Returns [ConnectionsTypeDef](./type_defs.md#connectionstypedef).
+Returns
+[ConnectionsResponseTypeDef](./type_defs.md#connectionsresponsetypedef).
 
 ### describe_interconnect_loa
+
+Deprecated.
 
 Type annotations for `boto3.client("directconnect").describe_interconnect_loa`
 method.
 
 Boto3 documentation:
 [DirectConnect.Client.describe_interconnect_loa](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_interconnect_loa)
+
+Arguments mapping described in
+[DescribeInterconnectLoaRequestTypeDef](./type_defs.md#describeinterconnectloarequesttypedef).
 
 Keyword-only arguments:
 
@@ -821,9 +1061,12 @@ Keyword-only arguments:
   [LoaContentTypeType](./literals.md#loacontenttypetype))
 
 Returns
-[DescribeInterconnectLoaResponseTypeDef](./type_defs.md#describeinterconnectloaresponsetypedef).
+[DescribeInterconnectLoaResponseResponseTypeDef](./type_defs.md#describeinterconnectloaresponseresponsetypedef).
 
 ### describe_interconnects
+
+Lists the interconnects owned by the AWS account or only the specified
+interconnect.
 
 Type annotations for `boto3.client("directconnect").describe_interconnects`
 method.
@@ -831,31 +1074,46 @@ method.
 Boto3 documentation:
 [DirectConnect.Client.describe_interconnects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_interconnects)
 
+Arguments mapping described in
+[DescribeInterconnectsRequestTypeDef](./type_defs.md#describeinterconnectsrequesttypedef).
+
 Keyword-only arguments:
 
 - `interconnectId`: `str`
 
-Returns [InterconnectsTypeDef](./type_defs.md#interconnectstypedef).
+Returns
+[InterconnectsResponseTypeDef](./type_defs.md#interconnectsresponsetypedef).
 
 ### describe_lags
+
+Describes all your link aggregation groups (LAG) or the specified LAG.
 
 Type annotations for `boto3.client("directconnect").describe_lags` method.
 
 Boto3 documentation:
 [DirectConnect.Client.describe_lags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_lags)
 
+Arguments mapping described in
+[DescribeLagsRequestTypeDef](./type_defs.md#describelagsrequesttypedef).
+
 Keyword-only arguments:
 
 - `lagId`: `str`
 
-Returns [LagsTypeDef](./type_defs.md#lagstypedef).
+Returns [LagsResponseTypeDef](./type_defs.md#lagsresponsetypedef).
 
 ### describe_loa
+
+Gets the LOA-CFA for a connection, interconnect, or link aggregation group
+(LAG).
 
 Type annotations for `boto3.client("directconnect").describe_loa` method.
 
 Boto3 documentation:
 [DirectConnect.Client.describe_loa](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_loa)
+
+Arguments mapping described in
+[DescribeLoaRequestTypeDef](./type_defs.md#describeloarequesttypedef).
 
 Keyword-only arguments:
 
@@ -868,28 +1126,37 @@ Returns [LoaTypeDef](./type_defs.md#loatypedef).
 
 ### describe_locations
 
+Lists the AWS Direct Connect locations in the current AWS Region.
+
 Type annotations for `boto3.client("directconnect").describe_locations` method.
 
 Boto3 documentation:
 [DirectConnect.Client.describe_locations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_locations)
 
-Returns [LocationsTypeDef](./type_defs.md#locationstypedef).
+Returns [LocationsResponseTypeDef](./type_defs.md#locationsresponsetypedef).
 
 ### describe_tags
+
+Describes the tags associated with the specified AWS Direct Connect resources.
 
 Type annotations for `boto3.client("directconnect").describe_tags` method.
 
 Boto3 documentation:
 [DirectConnect.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_tags)
 
+Arguments mapping described in
+[DescribeTagsRequestTypeDef](./type_defs.md#describetagsrequesttypedef).
+
 Keyword-only arguments:
 
 - `resourceArns`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeTagsResponseTypeDef](./type_defs.md#describetagsresponsetypedef).
+[DescribeTagsResponseResponseTypeDef](./type_defs.md#describetagsresponseresponsetypedef).
 
 ### describe_virtual_gateways
+
+Lists the virtual private gateways owned by the AWS account.
 
 Type annotations for `boto3.client("directconnect").describe_virtual_gateways`
 method.
@@ -897,9 +1164,12 @@ method.
 Boto3 documentation:
 [DirectConnect.Client.describe_virtual_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_virtual_gateways)
 
-Returns [VirtualGatewaysTypeDef](./type_defs.md#virtualgatewaystypedef).
+Returns
+[VirtualGatewaysResponseTypeDef](./type_defs.md#virtualgatewaysresponsetypedef).
 
 ### describe_virtual_interfaces
+
+Displays all virtual interfaces for an AWS account.
 
 Type annotations for
 `boto3.client("directconnect").describe_virtual_interfaces` method.
@@ -907,14 +1177,20 @@ Type annotations for
 Boto3 documentation:
 [DirectConnect.Client.describe_virtual_interfaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_virtual_interfaces)
 
+Arguments mapping described in
+[DescribeVirtualInterfacesRequestTypeDef](./type_defs.md#describevirtualinterfacesrequesttypedef).
+
 Keyword-only arguments:
 
 - `connectionId`: `str`
 - `virtualInterfaceId`: `str`
 
-Returns [VirtualInterfacesTypeDef](./type_defs.md#virtualinterfacestypedef).
+Returns
+[VirtualInterfacesResponseTypeDef](./type_defs.md#virtualinterfacesresponsetypedef).
 
 ### disassociate_connection_from_lag
+
+Disassociates a connection from a link aggregation group (LAG).
 
 Type annotations for
 `boto3.client("directconnect").disassociate_connection_from_lag` method.
@@ -922,14 +1198,20 @@ Type annotations for
 Boto3 documentation:
 [DirectConnect.Client.disassociate_connection_from_lag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.disassociate_connection_from_lag)
 
+Arguments mapping described in
+[DisassociateConnectionFromLagRequestTypeDef](./type_defs.md#disassociateconnectionfromlagrequesttypedef).
+
 Keyword-only arguments:
 
 - `connectionId`: `str` *(required)*
 - `lagId`: `str` *(required)*
 
-Returns [ConnectionTypeDef](./type_defs.md#connectiontypedef).
+Returns [ConnectionResponseTypeDef](./type_defs.md#connectionresponsetypedef).
 
 ### disassociate_mac_sec_key
+
+Removes the association between a MAC Security (MACsec) security key and an AWS
+Direct Connect dedicated connection.
 
 Type annotations for `boto3.client("directconnect").disassociate_mac_sec_key`
 method.
@@ -937,15 +1219,20 @@ method.
 Boto3 documentation:
 [DirectConnect.Client.disassociate_mac_sec_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.disassociate_mac_sec_key)
 
+Arguments mapping described in
+[DisassociateMacSecKeyRequestTypeDef](./type_defs.md#disassociatemacseckeyrequesttypedef).
+
 Keyword-only arguments:
 
 - `connectionId`: `str` *(required)*
 - `secretARN`: `str` *(required)*
 
 Returns
-[DisassociateMacSecKeyResponseTypeDef](./type_defs.md#disassociatemacseckeyresponsetypedef).
+[DisassociateMacSecKeyResponseResponseTypeDef](./type_defs.md#disassociatemacseckeyresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("directconnect").generate_presigned_url`
 method.
@@ -964,11 +1251,16 @@ Returns `str`.
 
 ### list_virtual_interface_test_history
 
+Lists the virtual interface failover test history.
+
 Type annotations for
 `boto3.client("directconnect").list_virtual_interface_test_history` method.
 
 Boto3 documentation:
 [DirectConnect.Client.list_virtual_interface_test_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.list_virtual_interface_test_history)
+
+Arguments mapping described in
+[ListVirtualInterfaceTestHistoryRequestTypeDef](./type_defs.md#listvirtualinterfacetesthistoryrequesttypedef).
 
 Keyword-only arguments:
 
@@ -980,15 +1272,22 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListVirtualInterfaceTestHistoryResponseTypeDef](./type_defs.md#listvirtualinterfacetesthistoryresponsetypedef).
+[ListVirtualInterfaceTestHistoryResponseResponseTypeDef](./type_defs.md#listvirtualinterfacetesthistoryresponseresponsetypedef).
 
 ### start_bgp_failover_test
+
+Starts the virtual interface failover test that verifies your configuration
+meets your resiliency requirements by placing the BGP peering session in the
+DOWN state.
 
 Type annotations for `boto3.client("directconnect").start_bgp_failover_test`
 method.
 
 Boto3 documentation:
 [DirectConnect.Client.start_bgp_failover_test](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.start_bgp_failover_test)
+
+Arguments mapping described in
+[StartBgpFailoverTestRequestTypeDef](./type_defs.md#startbgpfailovertestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -997,9 +1296,11 @@ Keyword-only arguments:
 - `testDurationInMinutes`: `int`
 
 Returns
-[StartBgpFailoverTestResponseTypeDef](./type_defs.md#startbgpfailovertestresponsetypedef).
+[StartBgpFailoverTestResponseResponseTypeDef](./type_defs.md#startbgpfailovertestresponseresponsetypedef).
 
 ### stop_bgp_failover_test
+
+Stops the virtual interface failover test.
 
 Type annotations for `boto3.client("directconnect").stop_bgp_failover_test`
 method.
@@ -1007,19 +1308,27 @@ method.
 Boto3 documentation:
 [DirectConnect.Client.stop_bgp_failover_test](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.stop_bgp_failover_test)
 
+Arguments mapping described in
+[StopBgpFailoverTestRequestTypeDef](./type_defs.md#stopbgpfailovertestrequesttypedef).
+
 Keyword-only arguments:
 
 - `virtualInterfaceId`: `str` *(required)*
 
 Returns
-[StopBgpFailoverTestResponseTypeDef](./type_defs.md#stopbgpfailovertestresponsetypedef).
+[StopBgpFailoverTestResponseResponseTypeDef](./type_defs.md#stopbgpfailovertestresponseresponsetypedef).
 
 ### tag_resource
+
+Adds the specified tags to the specified AWS Direct Connect resource.
 
 Type annotations for `boto3.client("directconnect").tag_resource` method.
 
 Boto3 documentation:
 [DirectConnect.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1030,10 +1339,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Removes one or more tags from the specified AWS Direct Connect resource.
+
 Type annotations for `boto3.client("directconnect").untag_resource` method.
 
 Boto3 documentation:
 [DirectConnect.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1044,10 +1358,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_connection
 
+Updates the AWS Direct Connect dedicated connection configuration.
+
 Type annotations for `boto3.client("directconnect").update_connection` method.
 
 Boto3 documentation:
 [DirectConnect.Client.update_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.update_connection)
+
+Arguments mapping described in
+[UpdateConnectionRequestTypeDef](./type_defs.md#updateconnectionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1055,9 +1374,11 @@ Keyword-only arguments:
 - `connectionName`: `str`
 - `encryptionMode`: `str`
 
-Returns [ConnectionTypeDef](./type_defs.md#connectiontypedef).
+Returns [ConnectionResponseTypeDef](./type_defs.md#connectionresponsetypedef).
 
 ### update_direct_connect_gateway_association
+
+Updates the specified attributes of the Direct Connect gateway association.
 
 Type annotations for
 `boto3.client("directconnect").update_direct_connect_gateway_association`
@@ -1065,6 +1386,9 @@ method.
 
 Boto3 documentation:
 [DirectConnect.Client.update_direct_connect_gateway_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.update_direct_connect_gateway_association)
+
+Arguments mapping described in
+[UpdateDirectConnectGatewayAssociationRequestTypeDef](./type_defs.md#updatedirectconnectgatewayassociationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1075,14 +1399,19 @@ Keyword-only arguments:
   `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 
 Returns
-[UpdateDirectConnectGatewayAssociationResultTypeDef](./type_defs.md#updatedirectconnectgatewayassociationresulttypedef).
+[UpdateDirectConnectGatewayAssociationResultResponseTypeDef](./type_defs.md#updatedirectconnectgatewayassociationresultresponsetypedef).
 
 ### update_lag
+
+Updates the attributes of the specified link aggregation group (LAG).
 
 Type annotations for `boto3.client("directconnect").update_lag` method.
 
 Boto3 documentation:
 [DirectConnect.Client.update_lag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.update_lag)
+
+Arguments mapping described in
+[UpdateLagRequestTypeDef](./type_defs.md#updatelagrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1091,9 +1420,11 @@ Keyword-only arguments:
 - `minimumLinks`: `int`
 - `encryptionMode`: `str`
 
-Returns [LagTypeDef](./type_defs.md#lagtypedef).
+Returns [LagResponseTypeDef](./type_defs.md#lagresponsetypedef).
 
 ### update_virtual_interface_attributes
+
+Updates the specified attributes of the specified virtual private interface.
 
 Type annotations for
 `boto3.client("directconnect").update_virtual_interface_attributes` method.
@@ -1101,12 +1432,16 @@ Type annotations for
 Boto3 documentation:
 [DirectConnect.Client.update_virtual_interface_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.update_virtual_interface_attributes)
 
+Arguments mapping described in
+[UpdateVirtualInterfaceAttributesRequestTypeDef](./type_defs.md#updatevirtualinterfaceattributesrequesttypedef).
+
 Keyword-only arguments:
 
 - `virtualInterfaceId`: `str` *(required)*
 - `mtu`: `int`
 
-Returns [VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef).
+Returns
+[VirtualInterfaceResponseTypeDef](./type_defs.md#virtualinterfaceresponsetypedef).
 
 ### get_paginator
 

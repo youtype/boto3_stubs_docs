@@ -8,19 +8,46 @@ type annotations stubs module
 [mypy_boto3_workmailmessageflow](https://pypi.org/project/mypy-boto3-workmailmessageflow/).
 
 - [Typed dictionaries for boto3 WorkMailMessageFlow module](#typed-dictionaries-for-boto3-workmailmessageflow-module)
-  - [GetRawMessageContentResponseTypeDef](#getrawmessagecontentresponsetypedef)
+  - [GetRawMessageContentRequestTypeDef](#getrawmessagecontentrequesttypedef)
+  - [GetRawMessageContentResponseResponseTypeDef](#getrawmessagecontentresponseresponsetypedef)
+  - [PutRawMessageContentRequestTypeDef](#putrawmessagecontentrequesttypedef)
   - [RawMessageContentTypeDef](#rawmessagecontenttypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3ReferenceTypeDef](#s3referencetypedef)
 
-## GetRawMessageContentResponseTypeDef
+## GetRawMessageContentRequestTypeDef
 
 ```python
-from mypy_boto3_workmailmessageflow.type_defs import GetRawMessageContentResponseTypeDef
+from mypy_boto3_workmailmessageflow.type_defs import GetRawMessageContentRequestTypeDef
+```
+
+Required fields:
+
+- `messageId`: `str`
+
+## GetRawMessageContentResponseResponseTypeDef
+
+```python
+from mypy_boto3_workmailmessageflow.type_defs import GetRawMessageContentResponseResponseTypeDef
 ```
 
 Required fields:
 
 - `messageContent`: `StreamingBody`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## PutRawMessageContentRequestTypeDef
+
+```python
+from mypy_boto3_workmailmessageflow.type_defs import PutRawMessageContentRequestTypeDef
+```
+
+Required fields:
+
+- `messageId`: `str`
+- `content`:
+  [RawMessageContentTypeDef](./type_defs.md#rawmessagecontenttypedef)
 
 ## RawMessageContentTypeDef
 
@@ -31,6 +58,20 @@ from mypy_boto3_workmailmessageflow.type_defs import RawMessageContentTypeDef
 Required fields:
 
 - `s3Reference`: [S3ReferenceTypeDef](./type_defs.md#s3referencetypedef)
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_workmailmessageflow.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
 
 ## S3ReferenceTypeDef
 

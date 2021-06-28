@@ -25,7 +25,7 @@ def get_node_associated_waiter() -> NodeAssociatedWaiter:
 ```
 
 Boto3 documentation:
-[OpsWorksCM.Waiter.node_associated](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Waiter.node_associated)
+[OpsWorksCM.Waiter.node_associated](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Waiter.NodeAssociated)
 
 Arguments for `NodeAssociatedWaiter.wait` method:
 

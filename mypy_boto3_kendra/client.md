@@ -99,10 +99,15 @@ Exceptions:
 
 ### batch_delete_document
 
+Removes one or more documents from an index.
+
 Type annotations for `boto3.client("kendra").batch_delete_document` method.
 
 Boto3 documentation:
 [kendra.Client.batch_delete_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.batch_delete_document)
+
+Arguments mapping described in
+[BatchDeleteDocumentRequestTypeDef](./type_defs.md#batchdeletedocumentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -112,14 +117,21 @@ Keyword-only arguments:
   [DataSourceSyncJobMetricTargetTypeDef](./type_defs.md#datasourcesyncjobmetrictargettypedef)
 
 Returns
-[BatchDeleteDocumentResponseTypeDef](./type_defs.md#batchdeletedocumentresponsetypedef).
+[BatchDeleteDocumentResponseResponseTypeDef](./type_defs.md#batchdeletedocumentresponseresponsetypedef).
 
 ### batch_get_document_status
+
+Returns the indexing status for one or more documents submitted with the
+`BatchPutDocument <https://docs.aws.amazon.com/kendra/latest/dg/API_BatchPutDocument.html>`\_\_
+operation.
 
 Type annotations for `boto3.client("kendra").batch_get_document_status` method.
 
 Boto3 documentation:
 [kendra.Client.batch_get_document_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.batch_get_document_status)
+
+Arguments mapping described in
+[BatchGetDocumentStatusRequestTypeDef](./type_defs.md#batchgetdocumentstatusrequesttypedef).
 
 Keyword-only arguments:
 
@@ -129,14 +141,19 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchGetDocumentStatusResponseTypeDef](./type_defs.md#batchgetdocumentstatusresponsetypedef).
+[BatchGetDocumentStatusResponseResponseTypeDef](./type_defs.md#batchgetdocumentstatusresponseresponsetypedef).
 
 ### batch_put_document
+
+Adds one or more documents to an index.
 
 Type annotations for `boto3.client("kendra").batch_put_document` method.
 
 Boto3 documentation:
 [kendra.Client.batch_put_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.batch_put_document)
+
+Arguments mapping described in
+[BatchPutDocumentRequestTypeDef](./type_defs.md#batchputdocumentrequesttypedef).
 
 Keyword-only arguments:
 
@@ -146,9 +163,11 @@ Keyword-only arguments:
 - `RoleArn`: `str`
 
 Returns
-[BatchPutDocumentResponseTypeDef](./type_defs.md#batchputdocumentresponsetypedef).
+[BatchPutDocumentResponseResponseTypeDef](./type_defs.md#batchputdocumentresponseresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("kendra").can_paginate` method.
 
@@ -163,10 +182,15 @@ Returns `bool`.
 
 ### clear_query_suggestions
 
+Clears existing query suggestions from an index.
+
 Type annotations for `boto3.client("kendra").clear_query_suggestions` method.
 
 Boto3 documentation:
 [kendra.Client.clear_query_suggestions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.clear_query_suggestions)
+
+Arguments mapping described in
+[ClearQuerySuggestionsRequestTypeDef](./type_defs.md#clearquerysuggestionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -174,10 +198,15 @@ Keyword-only arguments:
 
 ### create_data_source
 
+Creates a data source that you use to with an Amazon Kendra index.
+
 Type annotations for `boto3.client("kendra").create_data_source` method.
 
 Boto3 documentation:
 [kendra.Client.create_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.create_data_source)
+
+Arguments mapping described in
+[CreateDataSourceRequestTypeDef](./type_defs.md#createdatasourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -193,14 +222,19 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns
-[CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef).
+[CreateDataSourceResponseResponseTypeDef](./type_defs.md#createdatasourceresponseresponsetypedef).
 
 ### create_faq
+
+Creates an new set of frequently asked question (FAQ) questions and answers.
 
 Type annotations for `boto3.client("kendra").create_faq` method.
 
 Boto3 documentation:
 [kendra.Client.create_faq](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.create_faq)
+
+Arguments mapping described in
+[CreateFaqRequestTypeDef](./type_defs.md#createfaqrequesttypedef).
 
 Keyword-only arguments:
 
@@ -213,14 +247,20 @@ Keyword-only arguments:
 - `FileFormat`: [FaqFileFormatType](./literals.md#faqfileformattype)
 - `ClientToken`: `str`
 
-Returns [CreateFaqResponseTypeDef](./type_defs.md#createfaqresponsetypedef).
+Returns
+[CreateFaqResponseResponseTypeDef](./type_defs.md#createfaqresponseresponsetypedef).
 
 ### create_index
+
+Creates a new Amazon Kendra index.
 
 Type annotations for `boto3.client("kendra").create_index` method.
 
 Boto3 documentation:
 [kendra.Client.create_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.create_index)
+
+Arguments mapping described in
+[CreateIndexRequestTypeDef](./type_defs.md#createindexrequesttypedef).
 
 Keyword-only arguments:
 
@@ -238,9 +278,11 @@ Keyword-only arguments:
   [UserContextPolicyType](./literals.md#usercontextpolicytype)
 
 Returns
-[CreateIndexResponseTypeDef](./type_defs.md#createindexresponsetypedef).
+[CreateIndexResponseResponseTypeDef](./type_defs.md#createindexresponseresponsetypedef).
 
 ### create_query_suggestions_block_list
+
+Creates a block list to exlcude certain queries from suggestions.
 
 Type annotations for
 `boto3.client("kendra").create_query_suggestions_block_list` method.
@@ -248,6 +290,9 @@ Type annotations for
 Boto3 documentation:
 [kendra.Client.create_query_suggestions_block_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.create_query_suggestions_block_list)
 
+Arguments mapping described in
+[CreateQuerySuggestionsBlockListRequestTypeDef](./type_defs.md#createquerysuggestionsblocklistrequesttypedef).
+
 Keyword-only arguments:
 
 - `IndexId`: `str` *(required)*
@@ -259,15 +304,20 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateQuerySuggestionsBlockListResponseTypeDef](./type_defs.md#createquerysuggestionsblocklistresponsetypedef).
+[CreateQuerySuggestionsBlockListResponseResponseTypeDef](./type_defs.md#createquerysuggestionsblocklistresponseresponsetypedef).
 
 ### create_thesaurus
+
+Creates a thesaurus for an index.
 
 Type annotations for `boto3.client("kendra").create_thesaurus` method.
 
 Boto3 documentation:
 [kendra.Client.create_thesaurus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.create_thesaurus)
 
+Arguments mapping described in
+[CreateThesaurusRequestTypeDef](./type_defs.md#createthesaurusrequesttypedef).
+
 Keyword-only arguments:
 
 - `IndexId`: `str` *(required)*
@@ -279,14 +329,19 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns
-[CreateThesaurusResponseTypeDef](./type_defs.md#createthesaurusresponsetypedef).
+[CreateThesaurusResponseResponseTypeDef](./type_defs.md#createthesaurusresponseresponsetypedef).
 
 ### delete_data_source
+
+Deletes an Amazon Kendra data source.
 
 Type annotations for `boto3.client("kendra").delete_data_source` method.
 
 Boto3 documentation:
 [kendra.Client.delete_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_data_source)
+
+Arguments mapping described in
+[DeleteDataSourceRequestTypeDef](./type_defs.md#deletedatasourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -295,10 +350,15 @@ Keyword-only arguments:
 
 ### delete_faq
 
+Removes an FAQ from an index.
+
 Type annotations for `boto3.client("kendra").delete_faq` method.
 
 Boto3 documentation:
 [kendra.Client.delete_faq](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_faq)
+
+Arguments mapping described in
+[DeleteFaqRequestTypeDef](./type_defs.md#deletefaqrequesttypedef).
 
 Keyword-only arguments:
 
@@ -307,10 +367,15 @@ Keyword-only arguments:
 
 ### delete_index
 
+Deletes an existing Amazon Kendra index.
+
 Type annotations for `boto3.client("kendra").delete_index` method.
 
 Boto3 documentation:
 [kendra.Client.delete_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_index)
+
+Arguments mapping described in
+[DeleteIndexRequestTypeDef](./type_defs.md#deleteindexrequesttypedef).
 
 Keyword-only arguments:
 
@@ -318,11 +383,16 @@ Keyword-only arguments:
 
 ### delete_query_suggestions_block_list
 
+Deletes a block list used for query suggestions for an index.
+
 Type annotations for
 `boto3.client("kendra").delete_query_suggestions_block_list` method.
 
 Boto3 documentation:
 [kendra.Client.delete_query_suggestions_block_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_query_suggestions_block_list)
+
+Arguments mapping described in
+[DeleteQuerySuggestionsBlockListRequestTypeDef](./type_defs.md#deletequerysuggestionsblocklistrequesttypedef).
 
 Keyword-only arguments:
 
@@ -331,10 +401,15 @@ Keyword-only arguments:
 
 ### delete_thesaurus
 
+Deletes an existing Amazon Kendra thesaurus.
+
 Type annotations for `boto3.client("kendra").delete_thesaurus` method.
 
 Boto3 documentation:
 [kendra.Client.delete_thesaurus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_thesaurus)
+
+Arguments mapping described in
+[DeleteThesaurusRequestTypeDef](./type_defs.md#deletethesaurusrequesttypedef).
 
 Keyword-only arguments:
 
@@ -343,10 +418,15 @@ Keyword-only arguments:
 
 ### describe_data_source
 
+Gets information about a Amazon Kendra data source.
+
 Type annotations for `boto3.client("kendra").describe_data_source` method.
 
 Boto3 documentation:
 [kendra.Client.describe_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_data_source)
+
+Arguments mapping described in
+[DescribeDataSourceRequestTypeDef](./type_defs.md#describedatasourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -354,38 +434,52 @@ Keyword-only arguments:
 - `IndexId`: `str` *(required)*
 
 Returns
-[DescribeDataSourceResponseTypeDef](./type_defs.md#describedatasourceresponsetypedef).
+[DescribeDataSourceResponseResponseTypeDef](./type_defs.md#describedatasourceresponseresponsetypedef).
 
 ### describe_faq
+
+Gets information about an FAQ list.
 
 Type annotations for `boto3.client("kendra").describe_faq` method.
 
 Boto3 documentation:
 [kendra.Client.describe_faq](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_faq)
 
+Arguments mapping described in
+[DescribeFaqRequestTypeDef](./type_defs.md#describefaqrequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `IndexId`: `str` *(required)*
 
 Returns
-[DescribeFaqResponseTypeDef](./type_defs.md#describefaqresponsetypedef).
+[DescribeFaqResponseResponseTypeDef](./type_defs.md#describefaqresponseresponsetypedef).
 
 ### describe_index
+
+Describes an existing Amazon Kendra index See also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/kendra-2019-02-03/DescribeIndex>`\_
+**Request Syntax** response = client.describe_index( Id='string' ).
 
 Type annotations for `boto3.client("kendra").describe_index` method.
 
 Boto3 documentation:
 [kendra.Client.describe_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_index)
 
+Arguments mapping described in
+[DescribeIndexRequestTypeDef](./type_defs.md#describeindexrequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[DescribeIndexResponseTypeDef](./type_defs.md#describeindexresponsetypedef).
+[DescribeIndexResponseResponseTypeDef](./type_defs.md#describeindexresponseresponsetypedef).
 
 ### describe_query_suggestions_block_list
+
+Describes a block list used for query suggestions for an index.
 
 Type annotations for
 `boto3.client("kendra").describe_query_suggestions_block_list` method.
@@ -393,15 +487,20 @@ Type annotations for
 Boto3 documentation:
 [kendra.Client.describe_query_suggestions_block_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_query_suggestions_block_list)
 
+Arguments mapping described in
+[DescribeQuerySuggestionsBlockListRequestTypeDef](./type_defs.md#describequerysuggestionsblocklistrequesttypedef).
+
 Keyword-only arguments:
 
 - `IndexId`: `str` *(required)*
 - `Id`: `str` *(required)*
 
 Returns
-[DescribeQuerySuggestionsBlockListResponseTypeDef](./type_defs.md#describequerysuggestionsblocklistresponsetypedef).
+[DescribeQuerySuggestionsBlockListResponseResponseTypeDef](./type_defs.md#describequerysuggestionsblocklistresponseresponsetypedef).
 
 ### describe_query_suggestions_config
+
+Describes the settings of query suggestions for an index.
 
 Type annotations for `boto3.client("kendra").describe_query_suggestions_config`
 method.
@@ -409,19 +508,27 @@ method.
 Boto3 documentation:
 [kendra.Client.describe_query_suggestions_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_query_suggestions_config)
 
+Arguments mapping described in
+[DescribeQuerySuggestionsConfigRequestTypeDef](./type_defs.md#describequerysuggestionsconfigrequesttypedef).
+
 Keyword-only arguments:
 
 - `IndexId`: `str` *(required)*
 
 Returns
-[DescribeQuerySuggestionsConfigResponseTypeDef](./type_defs.md#describequerysuggestionsconfigresponsetypedef).
+[DescribeQuerySuggestionsConfigResponseResponseTypeDef](./type_defs.md#describequerysuggestionsconfigresponseresponsetypedef).
 
 ### describe_thesaurus
+
+Describes an existing Amazon Kendra thesaurus.
 
 Type annotations for `boto3.client("kendra").describe_thesaurus` method.
 
 Boto3 documentation:
 [kendra.Client.describe_thesaurus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_thesaurus)
+
+Arguments mapping described in
+[DescribeThesaurusRequestTypeDef](./type_defs.md#describethesaurusrequesttypedef).
 
 Keyword-only arguments:
 
@@ -429,9 +536,11 @@ Keyword-only arguments:
 - `IndexId`: `str` *(required)*
 
 Returns
-[DescribeThesaurusResponseTypeDef](./type_defs.md#describethesaurusresponsetypedef).
+[DescribeThesaurusResponseResponseTypeDef](./type_defs.md#describethesaurusresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("kendra").generate_presigned_url` method.
 
@@ -449,10 +558,15 @@ Returns `str`.
 
 ### get_query_suggestions
 
+Fetches the queries that are suggested to your users.
+
 Type annotations for `boto3.client("kendra").get_query_suggestions` method.
 
 Boto3 documentation:
 [kendra.Client.get_query_suggestions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.get_query_suggestions)
+
+Arguments mapping described in
+[GetQuerySuggestionsRequestTypeDef](./type_defs.md#getquerysuggestionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -461,15 +575,20 @@ Keyword-only arguments:
 - `MaxSuggestionsCount`: `int`
 
 Returns
-[GetQuerySuggestionsResponseTypeDef](./type_defs.md#getquerysuggestionsresponsetypedef).
+[GetQuerySuggestionsResponseResponseTypeDef](./type_defs.md#getquerysuggestionsresponseresponsetypedef).
 
 ### list_data_source_sync_jobs
+
+Gets statistics about synchronizing Amazon Kendra with a data source.
 
 Type annotations for `boto3.client("kendra").list_data_source_sync_jobs`
 method.
 
 Boto3 documentation:
 [kendra.Client.list_data_source_sync_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_data_source_sync_jobs)
+
+Arguments mapping described in
+[ListDataSourceSyncJobsRequestTypeDef](./type_defs.md#listdatasourcesyncjobsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -482,15 +601,20 @@ Keyword-only arguments:
   [DataSourceSyncJobStatusType](./literals.md#datasourcesyncjobstatustype)
 
 Returns
-[ListDataSourceSyncJobsResponseTypeDef](./type_defs.md#listdatasourcesyncjobsresponsetypedef).
+[ListDataSourceSyncJobsResponseResponseTypeDef](./type_defs.md#listdatasourcesyncjobsresponseresponsetypedef).
 
 ### list_data_sources
+
+Lists the data sources that you have created.
 
 Type annotations for `boto3.client("kendra").list_data_sources` method.
 
 Boto3 documentation:
 [kendra.Client.list_data_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_data_sources)
 
+Arguments mapping described in
+[ListDataSourcesRequestTypeDef](./type_defs.md#listdatasourcesrequesttypedef).
+
 Keyword-only arguments:
 
 - `IndexId`: `str` *(required)*
@@ -498,29 +622,40 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef).
+[ListDataSourcesResponseResponseTypeDef](./type_defs.md#listdatasourcesresponseresponsetypedef).
 
 ### list_faqs
+
+Gets a list of FAQ lists associated with an index.
 
 Type annotations for `boto3.client("kendra").list_faqs` method.
 
 Boto3 documentation:
 [kendra.Client.list_faqs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_faqs)
 
+Arguments mapping described in
+[ListFaqsRequestTypeDef](./type_defs.md#listfaqsrequesttypedef).
+
 Keyword-only arguments:
 
 - `IndexId`: `str` *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns [ListFaqsResponseTypeDef](./type_defs.md#listfaqsresponsetypedef).
+Returns
+[ListFaqsResponseResponseTypeDef](./type_defs.md#listfaqsresponseresponsetypedef).
 
 ### list_indices
+
+Lists the Amazon Kendra indexes that you have created.
 
 Type annotations for `boto3.client("kendra").list_indices` method.
 
 Boto3 documentation:
 [kendra.Client.list_indices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_indices)
+
+Arguments mapping described in
+[ListIndicesRequestTypeDef](./type_defs.md#listindicesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -528,9 +663,11 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListIndicesResponseTypeDef](./type_defs.md#listindicesresponsetypedef).
+[ListIndicesResponseResponseTypeDef](./type_defs.md#listindicesresponseresponsetypedef).
 
 ### list_query_suggestions_block_lists
+
+Lists the block lists used for query suggestions for an index.
 
 Type annotations for
 `boto3.client("kendra").list_query_suggestions_block_lists` method.
@@ -538,6 +675,9 @@ Type annotations for
 Boto3 documentation:
 [kendra.Client.list_query_suggestions_block_lists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_query_suggestions_block_lists)
 
+Arguments mapping described in
+[ListQuerySuggestionsBlockListsRequestTypeDef](./type_defs.md#listquerysuggestionsblocklistsrequesttypedef).
+
 Keyword-only arguments:
 
 - `IndexId`: `str` *(required)*
@@ -545,28 +685,38 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListQuerySuggestionsBlockListsResponseTypeDef](./type_defs.md#listquerysuggestionsblocklistsresponsetypedef).
+[ListQuerySuggestionsBlockListsResponseResponseTypeDef](./type_defs.md#listquerysuggestionsblocklistsresponseresponsetypedef).
 
 ### list_tags_for_resource
+
+Gets a list of tags associated with a specified resource.
 
 Type annotations for `boto3.client("kendra").list_tags_for_resource` method.
 
 Boto3 documentation:
 [kendra.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_tags_for_resource)
 
+Arguments mapping described in
+[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
 
 ### list_thesauri
+
+Lists the Amazon Kendra thesauri associated with an index.
 
 Type annotations for `boto3.client("kendra").list_thesauri` method.
 
 Boto3 documentation:
 [kendra.Client.list_thesauri](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_thesauri)
+
+Arguments mapping described in
+[ListThesauriRequestTypeDef](./type_defs.md#listthesaurirequesttypedef).
 
 Keyword-only arguments:
 
@@ -575,14 +725,19 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListThesauriResponseTypeDef](./type_defs.md#listthesauriresponsetypedef).
+[ListThesauriResponseResponseTypeDef](./type_defs.md#listthesauriresponseresponsetypedef).
 
 ### query
+
+Searches an active index.
 
 Type annotations for `boto3.client("kendra").query` method.
 
 Boto3 documentation:
 [kendra.Client.query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.query)
+
+Arguments mapping described in
+[QueryRequestTypeDef](./type_defs.md#queryrequesttypedef).
 
 Keyword-only arguments:
 
@@ -603,9 +758,12 @@ Keyword-only arguments:
 - `UserContext`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `VisitorId`: `str`
 
-Returns [QueryResultTypeDef](./type_defs.md#queryresulttypedef).
+Returns
+[QueryResultResponseTypeDef](./type_defs.md#queryresultresponsetypedef).
 
 ### start_data_source_sync_job
+
+Starts a synchronization job for a data source.
 
 Type annotations for `boto3.client("kendra").start_data_source_sync_job`
 method.
@@ -613,20 +771,28 @@ method.
 Boto3 documentation:
 [kendra.Client.start_data_source_sync_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.start_data_source_sync_job)
 
+Arguments mapping described in
+[StartDataSourceSyncJobRequestTypeDef](./type_defs.md#startdatasourcesyncjobrequesttypedef).
+
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `IndexId`: `str` *(required)*
 
 Returns
-[StartDataSourceSyncJobResponseTypeDef](./type_defs.md#startdatasourcesyncjobresponsetypedef).
+[StartDataSourceSyncJobResponseResponseTypeDef](./type_defs.md#startdatasourcesyncjobresponseresponsetypedef).
 
 ### stop_data_source_sync_job
+
+Stops a running synchronization job.
 
 Type annotations for `boto3.client("kendra").stop_data_source_sync_job` method.
 
 Boto3 documentation:
 [kendra.Client.stop_data_source_sync_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.stop_data_source_sync_job)
+
+Arguments mapping described in
+[StopDataSourceSyncJobRequestTypeDef](./type_defs.md#stopdatasourcesyncjobrequesttypedef).
 
 Keyword-only arguments:
 
@@ -635,10 +801,16 @@ Keyword-only arguments:
 
 ### submit_feedback
 
+Enables you to provide feedback to Amazon Kendra to improve the performance of
+the service.
+
 Type annotations for `boto3.client("kendra").submit_feedback` method.
 
 Boto3 documentation:
 [kendra.Client.submit_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.submit_feedback)
+
+Arguments mapping described in
+[SubmitFeedbackRequestTypeDef](./type_defs.md#submitfeedbackrequesttypedef).
 
 Keyword-only arguments:
 
@@ -651,10 +823,15 @@ Keyword-only arguments:
 
 ### tag_resource
 
+Adds the specified tag to the specified index, FAQ, or data source resource.
+
 Type annotations for `boto3.client("kendra").tag_resource` method.
 
 Boto3 documentation:
 [kendra.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -665,10 +842,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Removes a tag from an index, FAQ, or a data source.
+
 Type annotations for `boto3.client("kendra").untag_resource` method.
 
 Boto3 documentation:
 [kendra.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -679,10 +861,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_data_source
 
+Updates an existing Amazon Kendra data source.
+
 Type annotations for `boto3.client("kendra").update_data_source` method.
 
 Boto3 documentation:
 [kendra.Client.update_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.update_data_source)
+
+Arguments mapping described in
+[UpdateDataSourceRequestTypeDef](./type_defs.md#updatedatasourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -697,10 +884,15 @@ Keyword-only arguments:
 
 ### update_index
 
+Updates an existing Amazon Kendra index.
+
 Type annotations for `boto3.client("kendra").update_index` method.
 
 Boto3 documentation:
 [kendra.Client.update_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.update_index)
+
+Arguments mapping described in
+[UpdateIndexRequestTypeDef](./type_defs.md#updateindexrequesttypedef).
 
 Keyword-only arguments:
 
@@ -719,11 +911,16 @@ Keyword-only arguments:
 
 ### update_query_suggestions_block_list
 
+Updates a block list used for query suggestions for an index.
+
 Type annotations for
 `boto3.client("kendra").update_query_suggestions_block_list` method.
 
 Boto3 documentation:
 [kendra.Client.update_query_suggestions_block_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.update_query_suggestions_block_list)
+
+Arguments mapping described in
+[UpdateQuerySuggestionsBlockListRequestTypeDef](./type_defs.md#updatequerysuggestionsblocklistrequesttypedef).
 
 Keyword-only arguments:
 
@@ -736,11 +933,16 @@ Keyword-only arguments:
 
 ### update_query_suggestions_config
 
+Updates the settings of query suggestions for an index.
+
 Type annotations for `boto3.client("kendra").update_query_suggestions_config`
 method.
 
 Boto3 documentation:
 [kendra.Client.update_query_suggestions_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.update_query_suggestions_config)
+
+Arguments mapping described in
+[UpdateQuerySuggestionsConfigRequestTypeDef](./type_defs.md#updatequerysuggestionsconfigrequesttypedef).
 
 Keyword-only arguments:
 
@@ -753,10 +955,15 @@ Keyword-only arguments:
 
 ### update_thesaurus
 
+Updates a thesaurus file associated with an index.
+
 Type annotations for `boto3.client("kendra").update_thesaurus` method.
 
 Boto3 documentation:
 [kendra.Client.update_thesaurus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.update_thesaurus)
+
+Arguments mapping described in
+[UpdateThesaurusRequestTypeDef](./type_defs.md#updatethesaurusrequesttypedef).
 
 Keyword-only arguments:
 

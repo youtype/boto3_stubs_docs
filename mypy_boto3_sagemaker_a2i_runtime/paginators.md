@@ -30,11 +30,11 @@ Boto3 documentation:
 Arguments for `ListHumanLoopsPaginator.paginate` method:
 
 - `FlowDefinitionArn`: `str` *(required)*
-- `CreationTimeAfter`: `datetime`
-- `CreationTimeBefore`: `datetime`
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListHumanLoopsPaginator.paginate` returns
-`Iterator`\[[ListHumanLoopsResponseTypeDef](./type_defs.md#listhumanloopsresponsetypedef)\].
+`Iterator`\[[ListHumanLoopsResponseResponseTypeDef](./type_defs.md#listhumanloopsresponseresponsetypedef)\].

@@ -9,27 +9,46 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 OpsWorksCM module](#typed-dictionaries-for-boto3-opsworkscm-module)
   - [AccountAttributeTypeDef](#accountattributetypedef)
-  - [AssociateNodeResponseTypeDef](#associatenoderesponsetypedef)
+  - [AssociateNodeRequestTypeDef](#associatenoderequesttypedef)
+  - [AssociateNodeResponseResponseTypeDef](#associatenoderesponseresponsetypedef)
   - [BackupTypeDef](#backuptypedef)
-  - [CreateBackupResponseTypeDef](#createbackupresponsetypedef)
-  - [CreateServerResponseTypeDef](#createserverresponsetypedef)
-  - [DescribeAccountAttributesResponseTypeDef](#describeaccountattributesresponsetypedef)
-  - [DescribeBackupsResponseTypeDef](#describebackupsresponsetypedef)
-  - [DescribeEventsResponseTypeDef](#describeeventsresponsetypedef)
-  - [DescribeNodeAssociationStatusResponseTypeDef](#describenodeassociationstatusresponsetypedef)
-  - [DescribeServersResponseTypeDef](#describeserversresponsetypedef)
-  - [DisassociateNodeResponseTypeDef](#disassociatenoderesponsetypedef)
+  - [CreateBackupRequestTypeDef](#createbackuprequesttypedef)
+  - [CreateBackupResponseResponseTypeDef](#createbackupresponseresponsetypedef)
+  - [CreateServerRequestTypeDef](#createserverrequesttypedef)
+  - [CreateServerResponseResponseTypeDef](#createserverresponseresponsetypedef)
+  - [DeleteBackupRequestTypeDef](#deletebackuprequesttypedef)
+  - [DeleteServerRequestTypeDef](#deleteserverrequesttypedef)
+  - [DescribeAccountAttributesResponseResponseTypeDef](#describeaccountattributesresponseresponsetypedef)
+  - [DescribeBackupsRequestTypeDef](#describebackupsrequesttypedef)
+  - [DescribeBackupsResponseResponseTypeDef](#describebackupsresponseresponsetypedef)
+  - [DescribeEventsRequestTypeDef](#describeeventsrequesttypedef)
+  - [DescribeEventsResponseResponseTypeDef](#describeeventsresponseresponsetypedef)
+  - [DescribeNodeAssociationStatusRequestTypeDef](#describenodeassociationstatusrequesttypedef)
+  - [DescribeNodeAssociationStatusResponseResponseTypeDef](#describenodeassociationstatusresponseresponsetypedef)
+  - [DescribeServersRequestTypeDef](#describeserversrequesttypedef)
+  - [DescribeServersResponseResponseTypeDef](#describeserversresponseresponsetypedef)
+  - [DisassociateNodeRequestTypeDef](#disassociatenoderequesttypedef)
+  - [DisassociateNodeResponseResponseTypeDef](#disassociatenoderesponseresponsetypedef)
   - [EngineAttributeTypeDef](#engineattributetypedef)
-  - [ExportServerEngineAttributeResponseTypeDef](#exportserverengineattributeresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ExportServerEngineAttributeRequestTypeDef](#exportserverengineattributerequesttypedef)
+  - [ExportServerEngineAttributeResponseResponseTypeDef](#exportserverengineattributeresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [RestoreServerResponseTypeDef](#restoreserverresponsetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [RestoreServerRequestTypeDef](#restoreserverrequesttypedef)
+  - [RestoreServerResponseResponseTypeDef](#restoreserverresponseresponsetypedef)
   - [ServerEventTypeDef](#servereventtypedef)
   - [ServerTypeDef](#servertypedef)
-  - [StartMaintenanceResponseTypeDef](#startmaintenanceresponsetypedef)
+  - [StartMaintenanceRequestTypeDef](#startmaintenancerequesttypedef)
+  - [StartMaintenanceResponseResponseTypeDef](#startmaintenanceresponseresponsetypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TagTypeDef](#tagtypedef)
-  - [UpdateServerEngineAttributesResponseTypeDef](#updateserverengineattributesresponsetypedef)
-  - [UpdateServerResponseTypeDef](#updateserverresponsetypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateServerEngineAttributesRequestTypeDef](#updateserverengineattributesrequesttypedef)
+  - [UpdateServerEngineAttributesResponseResponseTypeDef](#updateserverengineattributesresponseresponsetypedef)
+  - [UpdateServerRequestTypeDef](#updateserverrequesttypedef)
+  - [UpdateServerResponseResponseTypeDef](#updateserverresponseresponsetypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
 ## AccountAttributeTypeDef
@@ -44,15 +63,30 @@ Optional fields:
 - `Maximum`: `int`
 - `Used`: `int`
 
-## AssociateNodeResponseTypeDef
+## AssociateNodeRequestTypeDef
 
 ```python
-from mypy_boto3_opsworkscm.type_defs import AssociateNodeResponseTypeDef
+from mypy_boto3_opsworkscm.type_defs import AssociateNodeRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ServerName`: `str`
+- `NodeName`: `str`
+- `EngineAttributes`:
+  `List`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
+
+## AssociateNodeResponseResponseTypeDef
+
+```python
+from mypy_boto3_opsworkscm.type_defs import AssociateNodeResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NodeAssociationStatusToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## BackupTypeDef
 
@@ -87,93 +121,245 @@ Optional fields:
 - `ToolsVersion`: `str`
 - `UserArn`: `str`
 
-## CreateBackupResponseTypeDef
+## CreateBackupRequestTypeDef
 
 ```python
-from mypy_boto3_opsworkscm.type_defs import CreateBackupResponseTypeDef
+from mypy_boto3_opsworkscm.type_defs import CreateBackupRequestTypeDef
 ```
 
+Required fields:
+
+- `ServerName`: `str`
+
 Optional fields:
+
+- `Description`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateBackupResponseResponseTypeDef
+
+```python
+from mypy_boto3_opsworkscm.type_defs import CreateBackupResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Backup`: [BackupTypeDef](./type_defs.md#backuptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateServerResponseTypeDef
+## CreateServerRequestTypeDef
 
 ```python
-from mypy_boto3_opsworkscm.type_defs import CreateServerResponseTypeDef
+from mypy_boto3_opsworkscm.type_defs import CreateServerRequestTypeDef
 ```
 
+Required fields:
+
+- `Engine`: `str`
+- `ServerName`: `str`
+- `InstanceProfileArn`: `str`
+- `InstanceType`: `str`
+- `ServiceRoleArn`: `str`
+
 Optional fields:
+
+- `AssociatePublicIpAddress`: `bool`
+- `CustomDomain`: `str`
+- `CustomCertificate`: `str`
+- `CustomPrivateKey`: `str`
+- `DisableAutomatedBackup`: `bool`
+- `EngineModel`: `str`
+- `EngineVersion`: `str`
+- `EngineAttributes`:
+  `List`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
+- `BackupRetentionCount`: `int`
+- `KeyPair`: `str`
+- `PreferredMaintenanceWindow`: `str`
+- `PreferredBackupWindow`: `str`
+- `SecurityGroupIds`: `List`\[`str`\]
+- `SubnetIds`: `List`\[`str`\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `BackupId`: `str`
+
+## CreateServerResponseResponseTypeDef
+
+```python
+from mypy_boto3_opsworkscm.type_defs import CreateServerResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Server`: [ServerTypeDef](./type_defs.md#servertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAccountAttributesResponseTypeDef
+## DeleteBackupRequestTypeDef
 
 ```python
-from mypy_boto3_opsworkscm.type_defs import DescribeAccountAttributesResponseTypeDef
+from mypy_boto3_opsworkscm.type_defs import DeleteBackupRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `BackupId`: `str`
+
+## DeleteServerRequestTypeDef
+
+```python
+from mypy_boto3_opsworkscm.type_defs import DeleteServerRequestTypeDef
+```
+
+Required fields:
+
+- `ServerName`: `str`
+
+## DescribeAccountAttributesResponseResponseTypeDef
+
+```python
+from mypy_boto3_opsworkscm.type_defs import DescribeAccountAttributesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Attributes`:
   `List`\[[AccountAttributeTypeDef](./type_defs.md#accountattributetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeBackupsResponseTypeDef
+## DescribeBackupsRequestTypeDef
 
 ```python
-from mypy_boto3_opsworkscm.type_defs import DescribeBackupsResponseTypeDef
+from mypy_boto3_opsworkscm.type_defs import DescribeBackupsRequestTypeDef
 ```
 
 Optional fields:
+
+- `BackupId`: `str`
+- `ServerName`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeBackupsResponseResponseTypeDef
+
+```python
+from mypy_boto3_opsworkscm.type_defs import DescribeBackupsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Backups`: `List`\[[BackupTypeDef](./type_defs.md#backuptypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEventsResponseTypeDef
+## DescribeEventsRequestTypeDef
 
 ```python
-from mypy_boto3_opsworkscm.type_defs import DescribeEventsResponseTypeDef
+from mypy_boto3_opsworkscm.type_defs import DescribeEventsRequestTypeDef
 ```
 
+Required fields:
+
+- `ServerName`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeEventsResponseResponseTypeDef
+
+```python
+from mypy_boto3_opsworkscm.type_defs import DescribeEventsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ServerEvents`:
   `List`\[[ServerEventTypeDef](./type_defs.md#servereventtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeNodeAssociationStatusResponseTypeDef
+## DescribeNodeAssociationStatusRequestTypeDef
 
 ```python
-from mypy_boto3_opsworkscm.type_defs import DescribeNodeAssociationStatusResponseTypeDef
+from mypy_boto3_opsworkscm.type_defs import DescribeNodeAssociationStatusRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `NodeAssociationStatusToken`: `str`
+- `ServerName`: `str`
+
+## DescribeNodeAssociationStatusResponseResponseTypeDef
+
+```python
+from mypy_boto3_opsworkscm.type_defs import DescribeNodeAssociationStatusResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NodeAssociationStatus`:
   [NodeAssociationStatusType](./literals.md#nodeassociationstatustype)
 - `EngineAttributes`:
   `List`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeServersResponseTypeDef
+## DescribeServersRequestTypeDef
 
 ```python
-from mypy_boto3_opsworkscm.type_defs import DescribeServersResponseTypeDef
+from mypy_boto3_opsworkscm.type_defs import DescribeServersRequestTypeDef
 ```
 
 Optional fields:
+
+- `ServerName`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeServersResponseResponseTypeDef
+
+```python
+from mypy_boto3_opsworkscm.type_defs import DescribeServersResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Servers`: `List`\[[ServerTypeDef](./type_defs.md#servertypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociateNodeResponseTypeDef
+## DisassociateNodeRequestTypeDef
 
 ```python
-from mypy_boto3_opsworkscm.type_defs import DisassociateNodeResponseTypeDef
+from mypy_boto3_opsworkscm.type_defs import DisassociateNodeRequestTypeDef
 ```
+
+Required fields:
+
+- `ServerName`: `str`
+- `NodeName`: `str`
 
 Optional fields:
 
+- `EngineAttributes`:
+  `List`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
+
+## DisassociateNodeResponseResponseTypeDef
+
+```python
+from mypy_boto3_opsworkscm.type_defs import DisassociateNodeResponseResponseTypeDef
+```
+
+Required fields:
+
 - `NodeAssociationStatusToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## EngineAttributeTypeDef
 
@@ -186,28 +372,63 @@ Optional fields:
 - `Name`: `str`
 - `Value`: `str`
 
-## ExportServerEngineAttributeResponseTypeDef
+## ExportServerEngineAttributeRequestTypeDef
 
 ```python
-from mypy_boto3_opsworkscm.type_defs import ExportServerEngineAttributeResponseTypeDef
+from mypy_boto3_opsworkscm.type_defs import ExportServerEngineAttributeRequestTypeDef
 ```
 
+Required fields:
+
+- `ExportAttributeName`: `str`
+- `ServerName`: `str`
+
 Optional fields:
+
+- `InputAttributes`:
+  `List`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
+
+## ExportServerEngineAttributeResponseResponseTypeDef
+
+```python
+from mypy_boto3_opsworkscm.type_defs import ExportServerEngineAttributeResponseResponseTypeDef
+```
+
+Required fields:
 
 - `EngineAttribute`:
   [EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)
 - `ServerName`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_opsworkscm.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_opsworkscm.type_defs import ListTagsForResourceRequestTypeDef
 ```
+
+Required fields:
+
+- `ResourceArn`: `str`
 
 Optional fields:
 
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_opsworkscm.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
+
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## PaginatorConfigTypeDef
 
@@ -221,15 +442,47 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## RestoreServerResponseTypeDef
+## ResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_opsworkscm.type_defs import RestoreServerResponseTypeDef
+from mypy_boto3_opsworkscm.type_defs import ResponseMetadataTypeDef
 ```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## RestoreServerRequestTypeDef
+
+```python
+from mypy_boto3_opsworkscm.type_defs import RestoreServerRequestTypeDef
+```
+
+Required fields:
+
+- `BackupId`: `str`
+- `ServerName`: `str`
 
 Optional fields:
 
+- `InstanceType`: `str`
+- `KeyPair`: `str`
+
+## RestoreServerResponseResponseTypeDef
+
+```python
+from mypy_boto3_opsworkscm.type_defs import RestoreServerResponseResponseTypeDef
+```
+
+Required fields:
+
 - `Server`: [ServerTypeDef](./type_defs.md#servertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ServerEventTypeDef
 
@@ -279,15 +532,43 @@ Optional fields:
 - `SubnetIds`: `List`\[`str`\]
 - `ServerArn`: `str`
 
-## StartMaintenanceResponseTypeDef
+## StartMaintenanceRequestTypeDef
 
 ```python
-from mypy_boto3_opsworkscm.type_defs import StartMaintenanceResponseTypeDef
+from mypy_boto3_opsworkscm.type_defs import StartMaintenanceRequestTypeDef
 ```
+
+Required fields:
+
+- `ServerName`: `str`
 
 Optional fields:
 
+- `EngineAttributes`:
+  `List`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
+
+## StartMaintenanceResponseResponseTypeDef
+
+```python
+from mypy_boto3_opsworkscm.type_defs import StartMaintenanceResponseResponseTypeDef
+```
+
+Required fields:
+
 - `Server`: [ServerTypeDef](./type_defs.md#servertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_opsworkscm.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -300,25 +581,72 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## UpdateServerEngineAttributesResponseTypeDef
+## UntagResourceRequestTypeDef
 
 ```python
-from mypy_boto3_opsworkscm.type_defs import UpdateServerEngineAttributesResponseTypeDef
+from mypy_boto3_opsworkscm.type_defs import UntagResourceRequestTypeDef
 ```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## UpdateServerEngineAttributesRequestTypeDef
+
+```python
+from mypy_boto3_opsworkscm.type_defs import UpdateServerEngineAttributesRequestTypeDef
+```
+
+Required fields:
+
+- `ServerName`: `str`
+- `AttributeName`: `str`
 
 Optional fields:
 
-- `Server`: [ServerTypeDef](./type_defs.md#servertypedef)
+- `AttributeValue`: `str`
 
-## UpdateServerResponseTypeDef
+## UpdateServerEngineAttributesResponseResponseTypeDef
 
 ```python
-from mypy_boto3_opsworkscm.type_defs import UpdateServerResponseTypeDef
+from mypy_boto3_opsworkscm.type_defs import UpdateServerEngineAttributesResponseResponseTypeDef
 ```
+
+Required fields:
+
+- `Server`: [ServerTypeDef](./type_defs.md#servertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateServerRequestTypeDef
+
+```python
+from mypy_boto3_opsworkscm.type_defs import UpdateServerRequestTypeDef
+```
+
+Required fields:
+
+- `ServerName`: `str`
 
 Optional fields:
 
+- `DisableAutomatedBackup`: `bool`
+- `BackupRetentionCount`: `int`
+- `PreferredMaintenanceWindow`: `str`
+- `PreferredBackupWindow`: `str`
+
+## UpdateServerResponseResponseTypeDef
+
+```python
+from mypy_boto3_opsworkscm.type_defs import UpdateServerResponseResponseTypeDef
+```
+
+Required fields:
+
 - `Server`: [ServerTypeDef](./type_defs.md#servertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## WaiterConfigTypeDef
 

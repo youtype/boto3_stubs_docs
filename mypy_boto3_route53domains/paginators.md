@@ -35,7 +35,7 @@ Arguments for `ListDomainsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDomainsPaginator.paginate` returns
-`Iterator`\[[ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef)\].
+`Iterator`\[[ListDomainsResponseResponseTypeDef](./type_defs.md#listdomainsresponseresponsetypedef)\].
 
 ## ListOperationsPaginator
 
@@ -56,12 +56,12 @@ Boto3 documentation:
 
 Arguments for `ListOperationsPaginator.paginate` method:
 
-- `SubmittedSince`: `datetime`
+- `SubmittedSince`: `Union`\[`datetime`, `str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOperationsPaginator.paginate` returns
-`Iterator`\[[ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef)\].
+`Iterator`\[[ListOperationsResponseResponseTypeDef](./type_defs.md#listoperationsresponseresponsetypedef)\].
 
 ## ViewBillingPaginator
 
@@ -82,10 +82,10 @@ Boto3 documentation:
 
 Arguments for `ViewBillingPaginator.paginate` method:
 
-- `Start`: `datetime`
-- `End`: `datetime`
+- `Start`: `Union`\[`datetime`, `str`\]
+- `End`: `Union`\[`datetime`, `str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ViewBillingPaginator.paginate` returns
-`Iterator`\[[ViewBillingResponseTypeDef](./type_defs.md#viewbillingresponsetypedef)\].
+`Iterator`\[[ViewBillingResponseResponseTypeDef](./type_defs.md#viewbillingresponseresponsetypedef)\].

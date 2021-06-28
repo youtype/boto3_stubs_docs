@@ -62,10 +62,16 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_iot_data.type_defs import DeleteThingShadowResponseTypeDef, ...
+from mypy_boto3_iot_data.type_defs import DeleteThingShadowRequestTypeDef, ...
 ```
 
-- [DeleteThingShadowResponseTypeDef](./type_defs.md#deletethingshadowresponsetypedef)
-- [GetThingShadowResponseTypeDef](./type_defs.md#getthingshadowresponsetypedef)
-- [ListNamedShadowsForThingResponseTypeDef](./type_defs.md#listnamedshadowsforthingresponsetypedef)
-- [UpdateThingShadowResponseTypeDef](./type_defs.md#updatethingshadowresponsetypedef)
+- [DeleteThingShadowRequestTypeDef](./type_defs.md#deletethingshadowrequesttypedef)
+- [DeleteThingShadowResponseResponseTypeDef](./type_defs.md#deletethingshadowresponseresponsetypedef)
+- [GetThingShadowRequestTypeDef](./type_defs.md#getthingshadowrequesttypedef)
+- [GetThingShadowResponseResponseTypeDef](./type_defs.md#getthingshadowresponseresponsetypedef)
+- [ListNamedShadowsForThingRequestTypeDef](./type_defs.md#listnamedshadowsforthingrequesttypedef)
+- [ListNamedShadowsForThingResponseResponseTypeDef](./type_defs.md#listnamedshadowsforthingresponseresponsetypedef)
+- [PublishRequestTypeDef](./type_defs.md#publishrequesttypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [UpdateThingShadowRequestTypeDef](./type_defs.md#updatethingshadowrequesttypedef)
+- [UpdateThingShadowResponseResponseTypeDef](./type_defs.md#updatethingshadowresponseresponsetypedef)

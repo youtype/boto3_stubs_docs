@@ -9,57 +9,110 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 WorkSpaces module](#typed-dictionaries-for-boto3-workspaces-module)
   - [AccountModificationTypeDef](#accountmodificationtypedef)
-  - [AssociateConnectionAliasResultTypeDef](#associateconnectionaliasresulttypedef)
+  - [AssociateConnectionAliasRequestTypeDef](#associateconnectionaliasrequesttypedef)
+  - [AssociateConnectionAliasResultResponseTypeDef](#associateconnectionaliasresultresponsetypedef)
+  - [AssociateIpGroupsRequestTypeDef](#associateipgroupsrequesttypedef)
+  - [AuthorizeIpRulesRequestTypeDef](#authorizeiprulesrequesttypedef)
   - [ClientPropertiesResultTypeDef](#clientpropertiesresulttypedef)
   - [ClientPropertiesTypeDef](#clientpropertiestypedef)
   - [ComputeTypeTypeDef](#computetypetypedef)
   - [ConnectionAliasAssociationTypeDef](#connectionaliasassociationtypedef)
   - [ConnectionAliasPermissionTypeDef](#connectionaliaspermissiontypedef)
   - [ConnectionAliasTypeDef](#connectionaliastypedef)
-  - [CopyWorkspaceImageResultTypeDef](#copyworkspaceimageresulttypedef)
-  - [CreateConnectionAliasResultTypeDef](#createconnectionaliasresulttypedef)
-  - [CreateIpGroupResultTypeDef](#createipgroupresulttypedef)
-  - [CreateWorkspaceBundleResultTypeDef](#createworkspacebundleresulttypedef)
-  - [CreateWorkspacesResultTypeDef](#createworkspacesresulttypedef)
+  - [CopyWorkspaceImageRequestTypeDef](#copyworkspaceimagerequesttypedef)
+  - [CopyWorkspaceImageResultResponseTypeDef](#copyworkspaceimageresultresponsetypedef)
+  - [CreateConnectionAliasRequestTypeDef](#createconnectionaliasrequesttypedef)
+  - [CreateConnectionAliasResultResponseTypeDef](#createconnectionaliasresultresponsetypedef)
+  - [CreateIpGroupRequestTypeDef](#createipgrouprequesttypedef)
+  - [CreateIpGroupResultResponseTypeDef](#createipgroupresultresponsetypedef)
+  - [CreateTagsRequestTypeDef](#createtagsrequesttypedef)
+  - [CreateWorkspaceBundleRequestTypeDef](#createworkspacebundlerequesttypedef)
+  - [CreateWorkspaceBundleResultResponseTypeDef](#createworkspacebundleresultresponsetypedef)
+  - [CreateWorkspacesRequestTypeDef](#createworkspacesrequesttypedef)
+  - [CreateWorkspacesResultResponseTypeDef](#createworkspacesresultresponsetypedef)
   - [DefaultWorkspaceCreationPropertiesTypeDef](#defaultworkspacecreationpropertiestypedef)
-  - [DescribeAccountModificationsResultTypeDef](#describeaccountmodificationsresulttypedef)
-  - [DescribeAccountResultTypeDef](#describeaccountresulttypedef)
-  - [DescribeClientPropertiesResultTypeDef](#describeclientpropertiesresulttypedef)
-  - [DescribeConnectionAliasPermissionsResultTypeDef](#describeconnectionaliaspermissionsresulttypedef)
-  - [DescribeConnectionAliasesResultTypeDef](#describeconnectionaliasesresulttypedef)
-  - [DescribeIpGroupsResultTypeDef](#describeipgroupsresulttypedef)
-  - [DescribeTagsResultTypeDef](#describetagsresulttypedef)
-  - [DescribeWorkspaceBundlesResultTypeDef](#describeworkspacebundlesresulttypedef)
-  - [DescribeWorkspaceDirectoriesResultTypeDef](#describeworkspacedirectoriesresulttypedef)
-  - [DescribeWorkspaceImagePermissionsResultTypeDef](#describeworkspaceimagepermissionsresulttypedef)
-  - [DescribeWorkspaceImagesResultTypeDef](#describeworkspaceimagesresulttypedef)
-  - [DescribeWorkspaceSnapshotsResultTypeDef](#describeworkspacesnapshotsresulttypedef)
-  - [DescribeWorkspacesConnectionStatusResultTypeDef](#describeworkspacesconnectionstatusresulttypedef)
-  - [DescribeWorkspacesResultTypeDef](#describeworkspacesresulttypedef)
+  - [DeleteConnectionAliasRequestTypeDef](#deleteconnectionaliasrequesttypedef)
+  - [DeleteIpGroupRequestTypeDef](#deleteipgrouprequesttypedef)
+  - [DeleteTagsRequestTypeDef](#deletetagsrequesttypedef)
+  - [DeleteWorkspaceBundleRequestTypeDef](#deleteworkspacebundlerequesttypedef)
+  - [DeleteWorkspaceImageRequestTypeDef](#deleteworkspaceimagerequesttypedef)
+  - [DeregisterWorkspaceDirectoryRequestTypeDef](#deregisterworkspacedirectoryrequesttypedef)
+  - [DescribeAccountModificationsRequestTypeDef](#describeaccountmodificationsrequesttypedef)
+  - [DescribeAccountModificationsResultResponseTypeDef](#describeaccountmodificationsresultresponsetypedef)
+  - [DescribeAccountResultResponseTypeDef](#describeaccountresultresponsetypedef)
+  - [DescribeClientPropertiesRequestTypeDef](#describeclientpropertiesrequesttypedef)
+  - [DescribeClientPropertiesResultResponseTypeDef](#describeclientpropertiesresultresponsetypedef)
+  - [DescribeConnectionAliasPermissionsRequestTypeDef](#describeconnectionaliaspermissionsrequesttypedef)
+  - [DescribeConnectionAliasPermissionsResultResponseTypeDef](#describeconnectionaliaspermissionsresultresponsetypedef)
+  - [DescribeConnectionAliasesRequestTypeDef](#describeconnectionaliasesrequesttypedef)
+  - [DescribeConnectionAliasesResultResponseTypeDef](#describeconnectionaliasesresultresponsetypedef)
+  - [DescribeIpGroupsRequestTypeDef](#describeipgroupsrequesttypedef)
+  - [DescribeIpGroupsResultResponseTypeDef](#describeipgroupsresultresponsetypedef)
+  - [DescribeTagsRequestTypeDef](#describetagsrequesttypedef)
+  - [DescribeTagsResultResponseTypeDef](#describetagsresultresponsetypedef)
+  - [DescribeWorkspaceBundlesRequestTypeDef](#describeworkspacebundlesrequesttypedef)
+  - [DescribeWorkspaceBundlesResultResponseTypeDef](#describeworkspacebundlesresultresponsetypedef)
+  - [DescribeWorkspaceDirectoriesRequestTypeDef](#describeworkspacedirectoriesrequesttypedef)
+  - [DescribeWorkspaceDirectoriesResultResponseTypeDef](#describeworkspacedirectoriesresultresponsetypedef)
+  - [DescribeWorkspaceImagePermissionsRequestTypeDef](#describeworkspaceimagepermissionsrequesttypedef)
+  - [DescribeWorkspaceImagePermissionsResultResponseTypeDef](#describeworkspaceimagepermissionsresultresponsetypedef)
+  - [DescribeWorkspaceImagesRequestTypeDef](#describeworkspaceimagesrequesttypedef)
+  - [DescribeWorkspaceImagesResultResponseTypeDef](#describeworkspaceimagesresultresponsetypedef)
+  - [DescribeWorkspaceSnapshotsRequestTypeDef](#describeworkspacesnapshotsrequesttypedef)
+  - [DescribeWorkspaceSnapshotsResultResponseTypeDef](#describeworkspacesnapshotsresultresponsetypedef)
+  - [DescribeWorkspacesConnectionStatusRequestTypeDef](#describeworkspacesconnectionstatusrequesttypedef)
+  - [DescribeWorkspacesConnectionStatusResultResponseTypeDef](#describeworkspacesconnectionstatusresultresponsetypedef)
+  - [DescribeWorkspacesRequestTypeDef](#describeworkspacesrequesttypedef)
+  - [DescribeWorkspacesResultResponseTypeDef](#describeworkspacesresultresponsetypedef)
+  - [DisassociateConnectionAliasRequestTypeDef](#disassociateconnectionaliasrequesttypedef)
+  - [DisassociateIpGroupsRequestTypeDef](#disassociateipgroupsrequesttypedef)
   - [FailedCreateWorkspaceRequestTypeDef](#failedcreateworkspacerequesttypedef)
   - [FailedWorkspaceChangeRequestTypeDef](#failedworkspacechangerequesttypedef)
   - [ImagePermissionTypeDef](#imagepermissiontypedef)
-  - [ImportWorkspaceImageResultTypeDef](#importworkspaceimageresulttypedef)
+  - [ImportWorkspaceImageRequestTypeDef](#importworkspaceimagerequesttypedef)
+  - [ImportWorkspaceImageResultResponseTypeDef](#importworkspaceimageresultresponsetypedef)
   - [IpRuleItemTypeDef](#ipruleitemtypedef)
-  - [ListAvailableManagementCidrRangesResultTypeDef](#listavailablemanagementcidrrangesresulttypedef)
-  - [MigrateWorkspaceResultTypeDef](#migrateworkspaceresulttypedef)
+  - [ListAvailableManagementCidrRangesRequestTypeDef](#listavailablemanagementcidrrangesrequesttypedef)
+  - [ListAvailableManagementCidrRangesResultResponseTypeDef](#listavailablemanagementcidrrangesresultresponsetypedef)
+  - [MigrateWorkspaceRequestTypeDef](#migrateworkspacerequesttypedef)
+  - [MigrateWorkspaceResultResponseTypeDef](#migrateworkspaceresultresponsetypedef)
   - [ModificationStateTypeDef](#modificationstatetypedef)
+  - [ModifyAccountRequestTypeDef](#modifyaccountrequesttypedef)
+  - [ModifyClientPropertiesRequestTypeDef](#modifyclientpropertiesrequesttypedef)
+  - [ModifySelfservicePermissionsRequestTypeDef](#modifyselfservicepermissionsrequesttypedef)
+  - [ModifyWorkspaceAccessPropertiesRequestTypeDef](#modifyworkspaceaccesspropertiesrequesttypedef)
+  - [ModifyWorkspaceCreationPropertiesRequestTypeDef](#modifyworkspacecreationpropertiesrequesttypedef)
+  - [ModifyWorkspacePropertiesRequestTypeDef](#modifyworkspacepropertiesrequesttypedef)
+  - [ModifyWorkspaceStateRequestTypeDef](#modifyworkspacestaterequesttypedef)
   - [OperatingSystemTypeDef](#operatingsystemtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [RebootRequestTypeDef](#rebootrequesttypedef)
-  - [RebootWorkspacesResultTypeDef](#rebootworkspacesresulttypedef)
+  - [RebootWorkspacesRequestTypeDef](#rebootworkspacesrequesttypedef)
+  - [RebootWorkspacesResultResponseTypeDef](#rebootworkspacesresultresponsetypedef)
   - [RebuildRequestTypeDef](#rebuildrequesttypedef)
-  - [RebuildWorkspacesResultTypeDef](#rebuildworkspacesresulttypedef)
+  - [RebuildWorkspacesRequestTypeDef](#rebuildworkspacesrequesttypedef)
+  - [RebuildWorkspacesResultResponseTypeDef](#rebuildworkspacesresultresponsetypedef)
+  - [RegisterWorkspaceDirectoryRequestTypeDef](#registerworkspacedirectoryrequesttypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [RestoreWorkspaceRequestTypeDef](#restoreworkspacerequesttypedef)
+  - [RevokeIpRulesRequestTypeDef](#revokeiprulesrequesttypedef)
   - [RootStorageTypeDef](#rootstoragetypedef)
   - [SelfservicePermissionsTypeDef](#selfservicepermissionstypedef)
   - [SnapshotTypeDef](#snapshottypedef)
   - [StartRequestTypeDef](#startrequesttypedef)
-  - [StartWorkspacesResultTypeDef](#startworkspacesresulttypedef)
+  - [StartWorkspacesRequestTypeDef](#startworkspacesrequesttypedef)
+  - [StartWorkspacesResultResponseTypeDef](#startworkspacesresultresponsetypedef)
   - [StopRequestTypeDef](#stoprequesttypedef)
-  - [StopWorkspacesResultTypeDef](#stopworkspacesresulttypedef)
+  - [StopWorkspacesRequestTypeDef](#stopworkspacesrequesttypedef)
+  - [StopWorkspacesResultResponseTypeDef](#stopworkspacesresultresponsetypedef)
   - [TagTypeDef](#tagtypedef)
   - [TerminateRequestTypeDef](#terminaterequesttypedef)
-  - [TerminateWorkspacesResultTypeDef](#terminateworkspacesresulttypedef)
+  - [TerminateWorkspacesRequestTypeDef](#terminateworkspacesrequesttypedef)
+  - [TerminateWorkspacesResultResponseTypeDef](#terminateworkspacesresultresponsetypedef)
+  - [UpdateConnectionAliasPermissionRequestTypeDef](#updateconnectionaliaspermissionrequesttypedef)
+  - [UpdateRulesOfIpGroupRequestTypeDef](#updaterulesofipgrouprequesttypedef)
+  - [UpdateWorkspaceBundleRequestTypeDef](#updateworkspacebundlerequesttypedef)
+  - [UpdateWorkspaceImagePermissionRequestTypeDef](#updateworkspaceimagepermissionrequesttypedef)
   - [UserStorageTypeDef](#userstoragetypedef)
   - [WorkspaceAccessPropertiesTypeDef](#workspaceaccesspropertiestypedef)
   - [WorkspaceBundleTypeDef](#workspacebundletypedef)
@@ -89,15 +142,50 @@ Optional fields:
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
 
-## AssociateConnectionAliasResultTypeDef
+## AssociateConnectionAliasRequestTypeDef
 
 ```python
-from mypy_boto3_workspaces.type_defs import AssociateConnectionAliasResultTypeDef
+from mypy_boto3_workspaces.type_defs import AssociateConnectionAliasRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `AliasId`: `str`
+- `ResourceId`: `str`
+
+## AssociateConnectionAliasResultResponseTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import AssociateConnectionAliasResultResponseTypeDef
+```
+
+Required fields:
 
 - `ConnectionIdentifier`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## AssociateIpGroupsRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import AssociateIpGroupsRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+- `GroupIds`: `List`\[`str`\]
+
+## AuthorizeIpRulesRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import AuthorizeIpRulesRequestTypeDef
+```
+
+Required fields:
+
+- `GroupId`: `str`
+- `UserRules`: `List`\[[IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef)\]
 
 ## ClientPropertiesResultTypeDef
 
@@ -171,59 +259,157 @@ Optional fields:
 - `Associations`:
   `List`\[[ConnectionAliasAssociationTypeDef](./type_defs.md#connectionaliasassociationtypedef)\]
 
-## CopyWorkspaceImageResultTypeDef
+## CopyWorkspaceImageRequestTypeDef
 
 ```python
-from mypy_boto3_workspaces.type_defs import CopyWorkspaceImageResultTypeDef
+from mypy_boto3_workspaces.type_defs import CopyWorkspaceImageRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+- `SourceImageId`: `str`
+- `SourceRegion`: `str`
+
 Optional fields:
+
+- `Description`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CopyWorkspaceImageResultResponseTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import CopyWorkspaceImageResultResponseTypeDef
+```
+
+Required fields:
 
 - `ImageId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateConnectionAliasResultTypeDef
+## CreateConnectionAliasRequestTypeDef
 
 ```python
-from mypy_boto3_workspaces.type_defs import CreateConnectionAliasResultTypeDef
+from mypy_boto3_workspaces.type_defs import CreateConnectionAliasRequestTypeDef
 ```
 
+Required fields:
+
+- `ConnectionString`: `str`
+
 Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateConnectionAliasResultResponseTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import CreateConnectionAliasResultResponseTypeDef
+```
+
+Required fields:
 
 - `AliasId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateIpGroupResultTypeDef
+## CreateIpGroupRequestTypeDef
 
 ```python
-from mypy_boto3_workspaces.type_defs import CreateIpGroupResultTypeDef
+from mypy_boto3_workspaces.type_defs import CreateIpGroupRequestTypeDef
 ```
 
+Required fields:
+
+- `GroupName`: `str`
+
 Optional fields:
+
+- `GroupDesc`: `str`
+- `UserRules`: `List`\[[IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateIpGroupResultResponseTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import CreateIpGroupResultResponseTypeDef
+```
+
+Required fields:
 
 - `GroupId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateWorkspaceBundleResultTypeDef
+## CreateTagsRequestTypeDef
 
 ```python
-from mypy_boto3_workspaces.type_defs import CreateWorkspaceBundleResultTypeDef
+from mypy_boto3_workspaces.type_defs import CreateTagsRequestTypeDef
 ```
 
+Required fields:
+
+- `ResourceId`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateWorkspaceBundleRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import CreateWorkspaceBundleRequestTypeDef
+```
+
+Required fields:
+
+- `BundleName`: `str`
+- `BundleDescription`: `str`
+- `ImageId`: `str`
+- `ComputeType`: [ComputeTypeTypeDef](./type_defs.md#computetypetypedef)
+- `UserStorage`: [UserStorageTypeDef](./type_defs.md#userstoragetypedef)
+
 Optional fields:
+
+- `RootStorage`: [RootStorageTypeDef](./type_defs.md#rootstoragetypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateWorkspaceBundleResultResponseTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import CreateWorkspaceBundleResultResponseTypeDef
+```
+
+Required fields:
 
 - `WorkspaceBundle`:
   [WorkspaceBundleTypeDef](./type_defs.md#workspacebundletypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateWorkspacesResultTypeDef
+## CreateWorkspacesRequestTypeDef
 
 ```python
-from mypy_boto3_workspaces.type_defs import CreateWorkspacesResultTypeDef
+from mypy_boto3_workspaces.type_defs import CreateWorkspacesRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `Workspaces`:
+  `List`\[[WorkspaceRequestTypeDef](./type_defs.md#workspacerequesttypedef)\]
+
+## CreateWorkspacesResultResponseTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import CreateWorkspacesResultResponseTypeDef
+```
+
+Required fields:
 
 - `FailedRequests`:
   `List`\[[FailedCreateWorkspaceRequestTypeDef](./type_defs.md#failedcreateworkspacerequesttypedef)\]
 - `PendingRequests`:
   `List`\[[WorkspaceTypeDef](./type_defs.md#workspacetypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DefaultWorkspaceCreationPropertiesTypeDef
 
@@ -240,172 +426,440 @@ Optional fields:
 - `UserEnabledAsLocalAdministrator`: `bool`
 - `EnableMaintenanceMode`: `bool`
 
-## DescribeAccountModificationsResultTypeDef
+## DeleteConnectionAliasRequestTypeDef
 
 ```python
-from mypy_boto3_workspaces.type_defs import DescribeAccountModificationsResultTypeDef
+from mypy_boto3_workspaces.type_defs import DeleteConnectionAliasRequestTypeDef
+```
+
+Required fields:
+
+- `AliasId`: `str`
+
+## DeleteIpGroupRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import DeleteIpGroupRequestTypeDef
+```
+
+Required fields:
+
+- `GroupId`: `str`
+
+## DeleteTagsRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import DeleteTagsRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceId`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## DeleteWorkspaceBundleRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import DeleteWorkspaceBundleRequestTypeDef
 ```
 
 Optional fields:
+
+- `BundleId`: `str`
+
+## DeleteWorkspaceImageRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import DeleteWorkspaceImageRequestTypeDef
+```
+
+Required fields:
+
+- `ImageId`: `str`
+
+## DeregisterWorkspaceDirectoryRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import DeregisterWorkspaceDirectoryRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+
+## DescribeAccountModificationsRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import DescribeAccountModificationsRequestTypeDef
+```
+
+Optional fields:
+
+- `NextToken`: `str`
+
+## DescribeAccountModificationsResultResponseTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import DescribeAccountModificationsResultResponseTypeDef
+```
+
+Required fields:
 
 - `AccountModifications`:
   `List`\[[AccountModificationTypeDef](./type_defs.md#accountmodificationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAccountResultTypeDef
+## DescribeAccountResultResponseTypeDef
 
 ```python
-from mypy_boto3_workspaces.type_defs import DescribeAccountResultTypeDef
+from mypy_boto3_workspaces.type_defs import DescribeAccountResultResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `DedicatedTenancySupport`:
   [DedicatedTenancySupportResultEnumType](./literals.md#dedicatedtenancysupportresultenumtype)
 - `DedicatedTenancyManagementCidrRange`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeClientPropertiesResultTypeDef
+## DescribeClientPropertiesRequestTypeDef
 
 ```python
-from mypy_boto3_workspaces.type_defs import DescribeClientPropertiesResultTypeDef
+from mypy_boto3_workspaces.type_defs import DescribeClientPropertiesRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceIds`: `List`\[`str`\]
+
+## DescribeClientPropertiesResultResponseTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import DescribeClientPropertiesResultResponseTypeDef
+```
+
+Required fields:
 
 - `ClientPropertiesList`:
   `List`\[[ClientPropertiesResultTypeDef](./type_defs.md#clientpropertiesresulttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeConnectionAliasPermissionsResultTypeDef
+## DescribeConnectionAliasPermissionsRequestTypeDef
 
 ```python
-from mypy_boto3_workspaces.type_defs import DescribeConnectionAliasPermissionsResultTypeDef
+from mypy_boto3_workspaces.type_defs import DescribeConnectionAliasPermissionsRequestTypeDef
 ```
 
+Required fields:
+
+- `AliasId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeConnectionAliasPermissionsResultResponseTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import DescribeConnectionAliasPermissionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `AliasId`: `str`
 - `ConnectionAliasPermissions`:
   `List`\[[ConnectionAliasPermissionTypeDef](./type_defs.md#connectionaliaspermissiontypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeConnectionAliasesResultTypeDef
+## DescribeConnectionAliasesRequestTypeDef
 
 ```python
-from mypy_boto3_workspaces.type_defs import DescribeConnectionAliasesResultTypeDef
+from mypy_boto3_workspaces.type_defs import DescribeConnectionAliasesRequestTypeDef
 ```
 
 Optional fields:
+
+- `AliasIds`: `List`\[`str`\]
+- `ResourceId`: `str`
+- `Limit`: `int`
+- `NextToken`: `str`
+
+## DescribeConnectionAliasesResultResponseTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import DescribeConnectionAliasesResultResponseTypeDef
+```
+
+Required fields:
 
 - `ConnectionAliases`:
   `List`\[[ConnectionAliasTypeDef](./type_defs.md#connectionaliastypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeIpGroupsResultTypeDef
+## DescribeIpGroupsRequestTypeDef
 
 ```python
-from mypy_boto3_workspaces.type_defs import DescribeIpGroupsResultTypeDef
+from mypy_boto3_workspaces.type_defs import DescribeIpGroupsRequestTypeDef
 ```
 
 Optional fields:
+
+- `GroupIds`: `List`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeIpGroupsResultResponseTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import DescribeIpGroupsResultResponseTypeDef
+```
+
+Required fields:
 
 - `Result`:
   `List`\[[WorkspacesIpGroupTypeDef](./type_defs.md#workspacesipgrouptypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTagsResultTypeDef
+## DescribeTagsRequestTypeDef
 
 ```python
-from mypy_boto3_workspaces.type_defs import DescribeTagsResultTypeDef
+from mypy_boto3_workspaces.type_defs import DescribeTagsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceId`: `str`
+
+## DescribeTagsResultResponseTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import DescribeTagsResultResponseTypeDef
+```
+
+Required fields:
 
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeWorkspaceBundlesResultTypeDef
+## DescribeWorkspaceBundlesRequestTypeDef
 
 ```python
-from mypy_boto3_workspaces.type_defs import DescribeWorkspaceBundlesResultTypeDef
+from mypy_boto3_workspaces.type_defs import DescribeWorkspaceBundlesRequestTypeDef
 ```
 
 Optional fields:
+
+- `BundleIds`: `List`\[`str`\]
+- `Owner`: `str`
+- `NextToken`: `str`
+
+## DescribeWorkspaceBundlesResultResponseTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import DescribeWorkspaceBundlesResultResponseTypeDef
+```
+
+Required fields:
 
 - `Bundles`:
   `List`\[[WorkspaceBundleTypeDef](./type_defs.md#workspacebundletypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeWorkspaceDirectoriesResultTypeDef
+## DescribeWorkspaceDirectoriesRequestTypeDef
 
 ```python
-from mypy_boto3_workspaces.type_defs import DescribeWorkspaceDirectoriesResultTypeDef
+from mypy_boto3_workspaces.type_defs import DescribeWorkspaceDirectoriesRequestTypeDef
 ```
 
 Optional fields:
+
+- `DirectoryIds`: `List`\[`str`\]
+- `Limit`: `int`
+- `NextToken`: `str`
+
+## DescribeWorkspaceDirectoriesResultResponseTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import DescribeWorkspaceDirectoriesResultResponseTypeDef
+```
+
+Required fields:
 
 - `Directories`:
   `List`\[[WorkspaceDirectoryTypeDef](./type_defs.md#workspacedirectorytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeWorkspaceImagePermissionsResultTypeDef
+## DescribeWorkspaceImagePermissionsRequestTypeDef
 
 ```python
-from mypy_boto3_workspaces.type_defs import DescribeWorkspaceImagePermissionsResultTypeDef
+from mypy_boto3_workspaces.type_defs import DescribeWorkspaceImagePermissionsRequestTypeDef
 ```
 
+Required fields:
+
+- `ImageId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeWorkspaceImagePermissionsResultResponseTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import DescribeWorkspaceImagePermissionsResultResponseTypeDef
+```
+
+Required fields:
 
 - `ImageId`: `str`
 - `ImagePermissions`:
   `List`\[[ImagePermissionTypeDef](./type_defs.md#imagepermissiontypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeWorkspaceImagesResultTypeDef
+## DescribeWorkspaceImagesRequestTypeDef
 
 ```python
-from mypy_boto3_workspaces.type_defs import DescribeWorkspaceImagesResultTypeDef
+from mypy_boto3_workspaces.type_defs import DescribeWorkspaceImagesRequestTypeDef
 ```
 
 Optional fields:
+
+- `ImageIds`: `List`\[`str`\]
+- `ImageType`: [ImageTypeType](./literals.md#imagetypetype)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeWorkspaceImagesResultResponseTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import DescribeWorkspaceImagesResultResponseTypeDef
+```
+
+Required fields:
 
 - `Images`:
   `List`\[[WorkspaceImageTypeDef](./type_defs.md#workspaceimagetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeWorkspaceSnapshotsResultTypeDef
+## DescribeWorkspaceSnapshotsRequestTypeDef
 
 ```python
-from mypy_boto3_workspaces.type_defs import DescribeWorkspaceSnapshotsResultTypeDef
+from mypy_boto3_workspaces.type_defs import DescribeWorkspaceSnapshotsRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `WorkspaceId`: `str`
+
+## DescribeWorkspaceSnapshotsResultResponseTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import DescribeWorkspaceSnapshotsResultResponseTypeDef
+```
+
+Required fields:
 
 - `RebuildSnapshots`:
   `List`\[[SnapshotTypeDef](./type_defs.md#snapshottypedef)\]
 - `RestoreSnapshots`:
   `List`\[[SnapshotTypeDef](./type_defs.md#snapshottypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeWorkspacesConnectionStatusResultTypeDef
+## DescribeWorkspacesConnectionStatusRequestTypeDef
 
 ```python
-from mypy_boto3_workspaces.type_defs import DescribeWorkspacesConnectionStatusResultTypeDef
+from mypy_boto3_workspaces.type_defs import DescribeWorkspacesConnectionStatusRequestTypeDef
 ```
 
 Optional fields:
+
+- `WorkspaceIds`: `List`\[`str`\]
+- `NextToken`: `str`
+
+## DescribeWorkspacesConnectionStatusResultResponseTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import DescribeWorkspacesConnectionStatusResultResponseTypeDef
+```
+
+Required fields:
 
 - `WorkspacesConnectionStatus`:
   `List`\[[WorkspaceConnectionStatusTypeDef](./type_defs.md#workspaceconnectionstatustypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeWorkspacesResultTypeDef
+## DescribeWorkspacesRequestTypeDef
 
 ```python
-from mypy_boto3_workspaces.type_defs import DescribeWorkspacesResultTypeDef
+from mypy_boto3_workspaces.type_defs import DescribeWorkspacesRequestTypeDef
 ```
 
 Optional fields:
 
+- `WorkspaceIds`: `List`\[`str`\]
+- `DirectoryId`: `str`
+- `UserName`: `str`
+- `BundleId`: `str`
+- `Limit`: `int`
+- `NextToken`: `str`
+
+## DescribeWorkspacesResultResponseTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import DescribeWorkspacesResultResponseTypeDef
+```
+
+Required fields:
+
 - `Workspaces`: `List`\[[WorkspaceTypeDef](./type_defs.md#workspacetypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DisassociateConnectionAliasRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import DisassociateConnectionAliasRequestTypeDef
+```
+
+Required fields:
+
+- `AliasId`: `str`
+
+## DisassociateIpGroupsRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import DisassociateIpGroupsRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+- `GroupIds`: `List`\[`str`\]
 
 ## FailedCreateWorkspaceRequestTypeDef
 
@@ -442,15 +896,36 @@ Optional fields:
 
 - `SharedAccountId`: `str`
 
-## ImportWorkspaceImageResultTypeDef
+## ImportWorkspaceImageRequestTypeDef
 
 ```python
-from mypy_boto3_workspaces.type_defs import ImportWorkspaceImageResultTypeDef
+from mypy_boto3_workspaces.type_defs import ImportWorkspaceImageRequestTypeDef
 ```
+
+Required fields:
+
+- `Ec2ImageId`: `str`
+- `IngestionProcess`:
+  [WorkspaceImageIngestionProcessType](./literals.md#workspaceimageingestionprocesstype)
+- `ImageName`: `str`
+- `ImageDescription`: `str`
 
 Optional fields:
 
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Applications`: `List`\[[ApplicationType](./literals.md#applicationtype)\]
+
+## ImportWorkspaceImageResultResponseTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import ImportWorkspaceImageResultResponseTypeDef
+```
+
+Required fields:
+
 - `ImageId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## IpRuleItemTypeDef
 
@@ -463,27 +938,57 @@ Optional fields:
 - `ipRule`: `str`
 - `ruleDesc`: `str`
 
-## ListAvailableManagementCidrRangesResultTypeDef
+## ListAvailableManagementCidrRangesRequestTypeDef
 
 ```python
-from mypy_boto3_workspaces.type_defs import ListAvailableManagementCidrRangesResultTypeDef
+from mypy_boto3_workspaces.type_defs import ListAvailableManagementCidrRangesRequestTypeDef
 ```
 
+Required fields:
+
+- `ManagementCidrRangeConstraint`: `str`
+
 Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListAvailableManagementCidrRangesResultResponseTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import ListAvailableManagementCidrRangesResultResponseTypeDef
+```
+
+Required fields:
 
 - `ManagementCidrRanges`: `List`\[`str`\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## MigrateWorkspaceResultTypeDef
+## MigrateWorkspaceRequestTypeDef
 
 ```python
-from mypy_boto3_workspaces.type_defs import MigrateWorkspaceResultTypeDef
+from mypy_boto3_workspaces.type_defs import MigrateWorkspaceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `SourceWorkspaceId`: `str`
+- `BundleId`: `str`
+
+## MigrateWorkspaceResultResponseTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import MigrateWorkspaceResultResponseTypeDef
+```
+
+Required fields:
 
 - `SourceWorkspaceId`: `str`
 - `TargetWorkspaceId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ModificationStateTypeDef
 
@@ -496,6 +1001,90 @@ Optional fields:
 - `Resource`:
   [ModificationResourceEnumType](./literals.md#modificationresourceenumtype)
 - `State`: [ModificationStateEnumType](./literals.md#modificationstateenumtype)
+
+## ModifyAccountRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import ModifyAccountRequestTypeDef
+```
+
+Optional fields:
+
+- `DedicatedTenancySupport`: `Literal['ENABLED']` (see
+  [DedicatedTenancySupportEnumType](./literals.md#dedicatedtenancysupportenumtype))
+- `DedicatedTenancyManagementCidrRange`: `str`
+
+## ModifyClientPropertiesRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import ModifyClientPropertiesRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceId`: `str`
+- `ClientProperties`:
+  [ClientPropertiesTypeDef](./type_defs.md#clientpropertiestypedef)
+
+## ModifySelfservicePermissionsRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import ModifySelfservicePermissionsRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceId`: `str`
+- `SelfservicePermissions`:
+  [SelfservicePermissionsTypeDef](./type_defs.md#selfservicepermissionstypedef)
+
+## ModifyWorkspaceAccessPropertiesRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import ModifyWorkspaceAccessPropertiesRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceId`: `str`
+- `WorkspaceAccessProperties`:
+  [WorkspaceAccessPropertiesTypeDef](./type_defs.md#workspaceaccesspropertiestypedef)
+
+## ModifyWorkspaceCreationPropertiesRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import ModifyWorkspaceCreationPropertiesRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceId`: `str`
+- `WorkspaceCreationProperties`:
+  [WorkspaceCreationPropertiesTypeDef](./type_defs.md#workspacecreationpropertiestypedef)
+
+## ModifyWorkspacePropertiesRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import ModifyWorkspacePropertiesRequestTypeDef
+```
+
+Required fields:
+
+- `WorkspaceId`: `str`
+- `WorkspaceProperties`:
+  [WorkspacePropertiesTypeDef](./type_defs.md#workspacepropertiestypedef)
+
+## ModifyWorkspaceStateRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import ModifyWorkspaceStateRequestTypeDef
+```
+
+Required fields:
+
+- `WorkspaceId`: `str`
+- `WorkspaceState`:
+  [TargetWorkspaceStateType](./literals.md#targetworkspacestatetype)
 
 ## OperatingSystemTypeDef
 
@@ -529,16 +1118,29 @@ Required fields:
 
 - `WorkspaceId`: `str`
 
-## RebootWorkspacesResultTypeDef
+## RebootWorkspacesRequestTypeDef
 
 ```python
-from mypy_boto3_workspaces.type_defs import RebootWorkspacesResultTypeDef
+from mypy_boto3_workspaces.type_defs import RebootWorkspacesRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `RebootWorkspaceRequests`:
+  `List`\[[RebootRequestTypeDef](./type_defs.md#rebootrequesttypedef)\]
+
+## RebootWorkspacesResultResponseTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import RebootWorkspacesResultResponseTypeDef
+```
+
+Required fields:
 
 - `FailedRequests`:
   `List`\[[FailedWorkspaceChangeRequestTypeDef](./type_defs.md#failedworkspacechangerequesttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## RebuildRequestTypeDef
 
@@ -550,16 +1152,82 @@ Required fields:
 
 - `WorkspaceId`: `str`
 
-## RebuildWorkspacesResultTypeDef
+## RebuildWorkspacesRequestTypeDef
 
 ```python
-from mypy_boto3_workspaces.type_defs import RebuildWorkspacesResultTypeDef
+from mypy_boto3_workspaces.type_defs import RebuildWorkspacesRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `RebuildWorkspaceRequests`:
+  `List`\[[RebuildRequestTypeDef](./type_defs.md#rebuildrequesttypedef)\]
+
+## RebuildWorkspacesResultResponseTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import RebuildWorkspacesResultResponseTypeDef
+```
+
+Required fields:
 
 - `FailedRequests`:
   `List`\[[FailedWorkspaceChangeRequestTypeDef](./type_defs.md#failedworkspacechangerequesttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## RegisterWorkspaceDirectoryRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import RegisterWorkspaceDirectoryRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+- `EnableWorkDocs`: `bool`
+
+Optional fields:
+
+- `SubnetIds`: `List`\[`str`\]
+- `EnableSelfService`: `bool`
+- `Tenancy`: [TenancyType](./literals.md#tenancytype)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
+## RestoreWorkspaceRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import RestoreWorkspaceRequestTypeDef
+```
+
+Required fields:
+
+- `WorkspaceId`: `str`
+
+## RevokeIpRulesRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import RevokeIpRulesRequestTypeDef
+```
+
+Required fields:
+
+- `GroupId`: `str`
+- `UserRules`: `List`\[`str`\]
 
 ## RootStorageTypeDef
 
@@ -605,16 +1273,29 @@ Optional fields:
 
 - `WorkspaceId`: `str`
 
-## StartWorkspacesResultTypeDef
+## StartWorkspacesRequestTypeDef
 
 ```python
-from mypy_boto3_workspaces.type_defs import StartWorkspacesResultTypeDef
+from mypy_boto3_workspaces.type_defs import StartWorkspacesRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `StartWorkspaceRequests`:
+  `List`\[[StartRequestTypeDef](./type_defs.md#startrequesttypedef)\]
+
+## StartWorkspacesResultResponseTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import StartWorkspacesResultResponseTypeDef
+```
+
+Required fields:
 
 - `FailedRequests`:
   `List`\[[FailedWorkspaceChangeRequestTypeDef](./type_defs.md#failedworkspacechangerequesttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## StopRequestTypeDef
 
@@ -626,16 +1307,29 @@ Optional fields:
 
 - `WorkspaceId`: `str`
 
-## StopWorkspacesResultTypeDef
+## StopWorkspacesRequestTypeDef
 
 ```python
-from mypy_boto3_workspaces.type_defs import StopWorkspacesResultTypeDef
+from mypy_boto3_workspaces.type_defs import StopWorkspacesRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `StopWorkspaceRequests`:
+  `List`\[[StopRequestTypeDef](./type_defs.md#stoprequesttypedef)\]
+
+## StopWorkspacesResultResponseTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import StopWorkspacesResultResponseTypeDef
+```
+
+Required fields:
 
 - `FailedRequests`:
   `List`\[[FailedWorkspaceChangeRequestTypeDef](./type_defs.md#failedworkspacechangerequesttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## TagTypeDef
 
@@ -661,16 +1355,75 @@ Required fields:
 
 - `WorkspaceId`: `str`
 
-## TerminateWorkspacesResultTypeDef
+## TerminateWorkspacesRequestTypeDef
 
 ```python
-from mypy_boto3_workspaces.type_defs import TerminateWorkspacesResultTypeDef
+from mypy_boto3_workspaces.type_defs import TerminateWorkspacesRequestTypeDef
+```
+
+Required fields:
+
+- `TerminateWorkspaceRequests`:
+  `List`\[[TerminateRequestTypeDef](./type_defs.md#terminaterequesttypedef)\]
+
+## TerminateWorkspacesResultResponseTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import TerminateWorkspacesResultResponseTypeDef
+```
+
+Required fields:
+
+- `FailedRequests`:
+  `List`\[[FailedWorkspaceChangeRequestTypeDef](./type_defs.md#failedworkspacechangerequesttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateConnectionAliasPermissionRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import UpdateConnectionAliasPermissionRequestTypeDef
+```
+
+Required fields:
+
+- `AliasId`: `str`
+- `ConnectionAliasPermission`:
+  [ConnectionAliasPermissionTypeDef](./type_defs.md#connectionaliaspermissiontypedef)
+
+## UpdateRulesOfIpGroupRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import UpdateRulesOfIpGroupRequestTypeDef
+```
+
+Required fields:
+
+- `GroupId`: `str`
+- `UserRules`: `List`\[[IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef)\]
+
+## UpdateWorkspaceBundleRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import UpdateWorkspaceBundleRequestTypeDef
 ```
 
 Optional fields:
 
-- `FailedRequests`:
-  `List`\[[FailedWorkspaceChangeRequestTypeDef](./type_defs.md#failedworkspacechangerequesttypedef)\]
+- `BundleId`: `str`
+- `ImageId`: `str`
+
+## UpdateWorkspaceImagePermissionRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import UpdateWorkspaceImagePermissionRequestTypeDef
+```
+
+Required fields:
+
+- `ImageId`: `str`
+- `AllowCopyImage`: `bool`
+- `SharedAccountId`: `str`
 
 ## UserStorageTypeDef
 

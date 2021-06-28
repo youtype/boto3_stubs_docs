@@ -26,7 +26,7 @@ def get_function_active_waiter() -> FunctionActiveWaiter:
 ```
 
 Boto3 documentation:
-[Lambda.Waiter.function_active](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.function_active)
+[Lambda.Waiter.function_active](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.FunctionActive)
 
 Arguments for `FunctionActiveWaiter.wait` method:
 
@@ -48,7 +48,7 @@ def get_function_exists_waiter() -> FunctionExistsWaiter:
 ```
 
 Boto3 documentation:
-[Lambda.Waiter.function_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.function_exists)
+[Lambda.Waiter.function_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.FunctionExists)
 
 Arguments for `FunctionExistsWaiter.wait` method:
 
@@ -70,7 +70,7 @@ def get_function_updated_waiter() -> FunctionUpdatedWaiter:
 ```
 
 Boto3 documentation:
-[Lambda.Waiter.function_updated](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.function_updated)
+[Lambda.Waiter.function_updated](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.FunctionUpdated)
 
 Arguments for `FunctionUpdatedWaiter.wait` method:
 

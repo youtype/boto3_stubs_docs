@@ -34,7 +34,7 @@ Arguments for `ListMemberAccountsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMemberAccountsPaginator.paginate` returns
-`Iterator`\[[ListMemberAccountsResultTypeDef](./type_defs.md#listmemberaccountsresulttypedef)\].
+`Iterator`\[[ListMemberAccountsResultResponseTypeDef](./type_defs.md#listmemberaccountsresultresponsetypedef)\].
 
 ## ListS3ResourcesPaginator
 
@@ -60,4 +60,4 @@ Arguments for `ListS3ResourcesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListS3ResourcesPaginator.paginate` returns
-`Iterator`\[[ListS3ResourcesResultTypeDef](./type_defs.md#lists3resourcesresulttypedef)\].
+`Iterator`\[[ListS3ResourcesResultResponseTypeDef](./type_defs.md#lists3resourcesresultresponsetypedef)\].

@@ -38,7 +38,7 @@ Arguments for `DescribeImageTagsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeImageTagsPaginator.paginate` returns
-`Iterator`\[[DescribeImageTagsResponseTypeDef](./type_defs.md#describeimagetagsresponsetypedef)\].
+`Iterator`\[[DescribeImageTagsResponseResponseTypeDef](./type_defs.md#describeimagetagsresponseresponsetypedef)\].
 
 ## DescribeImagesPaginator
 
@@ -67,7 +67,7 @@ Arguments for `DescribeImagesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeImagesPaginator.paginate` returns
-`Iterator`\[[DescribeImagesResponseTypeDef](./type_defs.md#describeimagesresponsetypedef)\].
+`Iterator`\[[DescribeImagesResponseResponseTypeDef](./type_defs.md#describeimagesresponseresponsetypedef)\].
 
 ## DescribeRegistriesPaginator
 
@@ -92,7 +92,7 @@ Arguments for `DescribeRegistriesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeRegistriesPaginator.paginate` returns
-`Iterator`\[[DescribeRegistriesResponseTypeDef](./type_defs.md#describeregistriesresponsetypedef)\].
+`Iterator`\[[DescribeRegistriesResponseResponseTypeDef](./type_defs.md#describeregistriesresponseresponsetypedef)\].
 
 ## DescribeRepositoriesPaginator
 
@@ -119,4 +119,4 @@ Arguments for `DescribeRepositoriesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeRepositoriesPaginator.paginate` returns
-`Iterator`\[[DescribeRepositoriesResponseTypeDef](./type_defs.md#describerepositoriesresponsetypedef)\].
+`Iterator`\[[DescribeRepositoriesResponseResponseTypeDef](./type_defs.md#describerepositoriesresponseresponsetypedef)\].

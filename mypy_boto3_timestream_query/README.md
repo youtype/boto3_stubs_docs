@@ -86,17 +86,20 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_timestream_query.type_defs import CancelQueryResponseTypeDef, ...
+from mypy_boto3_timestream_query.type_defs import CancelQueryRequestTypeDef, ...
 ```
 
-- [CancelQueryResponseTypeDef](./type_defs.md#cancelqueryresponsetypedef)
+- [CancelQueryRequestTypeDef](./type_defs.md#cancelqueryrequesttypedef)
+- [CancelQueryResponseResponseTypeDef](./type_defs.md#cancelqueryresponseresponsetypedef)
 - [ColumnInfoTypeDef](./type_defs.md#columninfotypedef)
 - [DatumTypeDef](./type_defs.md#datumtypedef)
-- [DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef)
+- [DescribeEndpointsResponseResponseTypeDef](./type_defs.md#describeendpointsresponseresponsetypedef)
 - [EndpointTypeDef](./type_defs.md#endpointtypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
-- [QueryResponseTypeDef](./type_defs.md#queryresponsetypedef)
+- [QueryRequestTypeDef](./type_defs.md#queryrequesttypedef)
+- [QueryResponseResponseTypeDef](./type_defs.md#queryresponseresponsetypedef)
 - [QueryStatusTypeDef](./type_defs.md#querystatustypedef)
+- [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RowTypeDef](./type_defs.md#rowtypedef)
 - [TimeSeriesDataPointTypeDef](./type_defs.md#timeseriesdatapointtypedef)
 - [TypeTypeDef](./type_defs.md#typetypedef)

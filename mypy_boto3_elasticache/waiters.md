@@ -28,7 +28,7 @@ def get_cache_cluster_available_waiter() -> CacheClusterAvailableWaiter:
 ```
 
 Boto3 documentation:
-[ElastiCache.Waiter.cache_cluster_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Waiter.cache_cluster_available)
+[ElastiCache.Waiter.cache_cluster_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Waiter.CacheClusterAvailable)
 
 Arguments for `CacheClusterAvailableWaiter.wait` method:
 
@@ -54,7 +54,7 @@ def get_cache_cluster_deleted_waiter() -> CacheClusterDeletedWaiter:
 ```
 
 Boto3 documentation:
-[ElastiCache.Waiter.cache_cluster_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Waiter.cache_cluster_deleted)
+[ElastiCache.Waiter.cache_cluster_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Waiter.CacheClusterDeleted)
 
 Arguments for `CacheClusterDeletedWaiter.wait` method:
 
@@ -80,7 +80,7 @@ def get_replication_group_available_waiter() -> ReplicationGroupAvailableWaiter:
 ```
 
 Boto3 documentation:
-[ElastiCache.Waiter.replication_group_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Waiter.replication_group_available)
+[ElastiCache.Waiter.replication_group_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Waiter.ReplicationGroupAvailable)
 
 Arguments for `ReplicationGroupAvailableWaiter.wait` method:
 
@@ -104,7 +104,7 @@ def get_replication_group_deleted_waiter() -> ReplicationGroupDeletedWaiter:
 ```
 
 Boto3 documentation:
-[ElastiCache.Waiter.replication_group_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Waiter.replication_group_deleted)
+[ElastiCache.Waiter.replication_group_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Waiter.ReplicationGroupDeleted)
 
 Arguments for `ReplicationGroupDeletedWaiter.wait` method:
 

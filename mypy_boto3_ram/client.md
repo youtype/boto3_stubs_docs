@@ -96,11 +96,16 @@ Exceptions:
 
 ### accept_resource_share_invitation
 
+Accepts an invitation to a resource share from another AWS account.
+
 Type annotations for `boto3.client("ram").accept_resource_share_invitation`
 method.
 
 Boto3 documentation:
 [RAM.Client.accept_resource_share_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.accept_resource_share_invitation)
+
+Arguments mapping described in
+[AcceptResourceShareInvitationRequestTypeDef](./type_defs.md#acceptresourceshareinvitationrequesttypedef).
 
 Keyword-only arguments:
 
@@ -108,14 +113,20 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[AcceptResourceShareInvitationResponseTypeDef](./type_defs.md#acceptresourceshareinvitationresponsetypedef).
+[AcceptResourceShareInvitationResponseResponseTypeDef](./type_defs.md#acceptresourceshareinvitationresponseresponsetypedef).
 
 ### associate_resource_share
+
+Associates the specified resource share with the specified principals and
+resources.
 
 Type annotations for `boto3.client("ram").associate_resource_share` method.
 
 Boto3 documentation:
 [RAM.Client.associate_resource_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.associate_resource_share)
+
+Arguments mapping described in
+[AssociateResourceShareRequestTypeDef](./type_defs.md#associateresourcesharerequesttypedef).
 
 Keyword-only arguments:
 
@@ -125,15 +136,20 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[AssociateResourceShareResponseTypeDef](./type_defs.md#associateresourceshareresponsetypedef).
+[AssociateResourceShareResponseResponseTypeDef](./type_defs.md#associateresourceshareresponseresponsetypedef).
 
 ### associate_resource_share_permission
+
+Associates a permission with a resource share.
 
 Type annotations for `boto3.client("ram").associate_resource_share_permission`
 method.
 
 Boto3 documentation:
 [RAM.Client.associate_resource_share_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.associate_resource_share_permission)
+
+Arguments mapping described in
+[AssociateResourceSharePermissionRequestTypeDef](./type_defs.md#associateresourcesharepermissionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -144,9 +160,11 @@ Keyword-only arguments:
 - `permissionVersion`: `int`
 
 Returns
-[AssociateResourceSharePermissionResponseTypeDef](./type_defs.md#associateresourcesharepermissionresponsetypedef).
+[AssociateResourceSharePermissionResponseResponseTypeDef](./type_defs.md#associateresourcesharepermissionresponseresponsetypedef).
 
 ### can_paginate
+
+Check if an operation can be paginated.
 
 Type annotations for `boto3.client("ram").can_paginate` method.
 
@@ -161,10 +179,15 @@ Returns `bool`.
 
 ### create_resource_share
 
+Creates a resource share.
+
 Type annotations for `boto3.client("ram").create_resource_share` method.
 
 Boto3 documentation:
 [RAM.Client.create_resource_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.create_resource_share)
+
+Arguments mapping described in
+[CreateResourceShareRequestTypeDef](./type_defs.md#createresourcesharerequesttypedef).
 
 Keyword-only arguments:
 
@@ -177,14 +200,19 @@ Keyword-only arguments:
 - `permissionArns`: `List`\[`str`\]
 
 Returns
-[CreateResourceShareResponseTypeDef](./type_defs.md#createresourceshareresponsetypedef).
+[CreateResourceShareResponseResponseTypeDef](./type_defs.md#createresourceshareresponseresponsetypedef).
 
 ### delete_resource_share
+
+Deletes the specified resource share.
 
 Type annotations for `boto3.client("ram").delete_resource_share` method.
 
 Boto3 documentation:
 [RAM.Client.delete_resource_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.delete_resource_share)
+
+Arguments mapping described in
+[DeleteResourceShareRequestTypeDef](./type_defs.md#deleteresourcesharerequesttypedef).
 
 Keyword-only arguments:
 
@@ -192,14 +220,20 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[DeleteResourceShareResponseTypeDef](./type_defs.md#deleteresourceshareresponsetypedef).
+[DeleteResourceShareResponseResponseTypeDef](./type_defs.md#deleteresourceshareresponseresponsetypedef).
 
 ### disassociate_resource_share
+
+Disassociates the specified principals or resources from the specified resource
+share.
 
 Type annotations for `boto3.client("ram").disassociate_resource_share` method.
 
 Boto3 documentation:
 [RAM.Client.disassociate_resource_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.disassociate_resource_share)
+
+Arguments mapping described in
+[DisassociateResourceShareRequestTypeDef](./type_defs.md#disassociateresourcesharerequesttypedef).
 
 Keyword-only arguments:
 
@@ -209,15 +243,20 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[DisassociateResourceShareResponseTypeDef](./type_defs.md#disassociateresourceshareresponsetypedef).
+[DisassociateResourceShareResponseResponseTypeDef](./type_defs.md#disassociateresourceshareresponseresponsetypedef).
 
 ### disassociate_resource_share_permission
+
+Disassociates an AWS RAM permission from a resource share.
 
 Type annotations for
 `boto3.client("ram").disassociate_resource_share_permission` method.
 
 Boto3 documentation:
 [RAM.Client.disassociate_resource_share_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.disassociate_resource_share_permission)
+
+Arguments mapping described in
+[DisassociateResourceSharePermissionRequestTypeDef](./type_defs.md#disassociateresourcesharepermissionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -226,9 +265,11 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[DisassociateResourceSharePermissionResponseTypeDef](./type_defs.md#disassociateresourcesharepermissionresponsetypedef).
+[DisassociateResourceSharePermissionResponseResponseTypeDef](./type_defs.md#disassociateresourcesharepermissionresponseresponsetypedef).
 
 ### enable_sharing_with_aws_organization
+
+Enables resource sharing within your AWS Organization.
 
 Type annotations for `boto3.client("ram").enable_sharing_with_aws_organization`
 method.
@@ -237,9 +278,11 @@ Boto3 documentation:
 [RAM.Client.enable_sharing_with_aws_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.enable_sharing_with_aws_organization)
 
 Returns
-[EnableSharingWithAwsOrganizationResponseTypeDef](./type_defs.md#enablesharingwithawsorganizationresponsetypedef).
+[EnableSharingWithAwsOrganizationResponseResponseTypeDef](./type_defs.md#enablesharingwithawsorganizationresponseresponsetypedef).
 
 ### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
 
 Type annotations for `boto3.client("ram").generate_presigned_url` method.
 
@@ -257,10 +300,15 @@ Returns `str`.
 
 ### get_permission
 
+Gets the contents of an AWS RAM permission in JSON format.
+
 Type annotations for `boto3.client("ram").get_permission` method.
 
 Boto3 documentation:
 [RAM.Client.get_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_permission)
+
+Arguments mapping described in
+[GetPermissionRequestTypeDef](./type_defs.md#getpermissionrequesttypedef).
 
 Keyword-only arguments:
 
@@ -268,14 +316,19 @@ Keyword-only arguments:
 - `permissionVersion`: `int`
 
 Returns
-[GetPermissionResponseTypeDef](./type_defs.md#getpermissionresponsetypedef).
+[GetPermissionResponseResponseTypeDef](./type_defs.md#getpermissionresponseresponsetypedef).
 
 ### get_resource_policies
+
+Gets the policies for the specified resources that you own and have shared.
 
 Type annotations for `boto3.client("ram").get_resource_policies` method.
 
 Boto3 documentation:
 [RAM.Client.get_resource_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_policies)
+
+Arguments mapping described in
+[GetResourcePoliciesRequestTypeDef](./type_defs.md#getresourcepoliciesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -285,15 +338,20 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetResourcePoliciesResponseTypeDef](./type_defs.md#getresourcepoliciesresponsetypedef).
+[GetResourcePoliciesResponseResponseTypeDef](./type_defs.md#getresourcepoliciesresponseresponsetypedef).
 
 ### get_resource_share_associations
+
+Gets the resources or principals for the resource shares that you own.
 
 Type annotations for `boto3.client("ram").get_resource_share_associations`
 method.
 
 Boto3 documentation:
 [RAM.Client.get_resource_share_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_share_associations)
+
+Arguments mapping described in
+[GetResourceShareAssociationsRequestTypeDef](./type_defs.md#getresourceshareassociationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -309,15 +367,20 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetResourceShareAssociationsResponseTypeDef](./type_defs.md#getresourceshareassociationsresponsetypedef).
+[GetResourceShareAssociationsResponseResponseTypeDef](./type_defs.md#getresourceshareassociationsresponseresponsetypedef).
 
 ### get_resource_share_invitations
+
+Gets the invitations that you have received for resource shares.
 
 Type annotations for `boto3.client("ram").get_resource_share_invitations`
 method.
 
 Boto3 documentation:
 [RAM.Client.get_resource_share_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_share_invitations)
+
+Arguments mapping described in
+[GetResourceShareInvitationsRequestTypeDef](./type_defs.md#getresourceshareinvitationsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -327,14 +390,20 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetResourceShareInvitationsResponseTypeDef](./type_defs.md#getresourceshareinvitationsresponsetypedef).
+[GetResourceShareInvitationsResponseResponseTypeDef](./type_defs.md#getresourceshareinvitationsresponseresponsetypedef).
 
 ### get_resource_shares
+
+Gets the resource shares that you own or the resource shares that are shared
+with you.
 
 Type annotations for `boto3.client("ram").get_resource_shares` method.
 
 Boto3 documentation:
 [RAM.Client.get_resource_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.get_resource_shares)
+
+Arguments mapping described in
+[GetResourceSharesRequestTypeDef](./type_defs.md#getresourcesharesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -350,15 +419,21 @@ Keyword-only arguments:
 - `permissionArn`: `str`
 
 Returns
-[GetResourceSharesResponseTypeDef](./type_defs.md#getresourcesharesresponsetypedef).
+[GetResourceSharesResponseResponseTypeDef](./type_defs.md#getresourcesharesresponseresponsetypedef).
 
 ### list_pending_invitation_resources
+
+Lists the resources in a resource share that is shared with you but that the
+invitation is still pending for.
 
 Type annotations for `boto3.client("ram").list_pending_invitation_resources`
 method.
 
 Boto3 documentation:
 [RAM.Client.list_pending_invitation_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_pending_invitation_resources)
+
+Arguments mapping described in
+[ListPendingInvitationResourcesRequestTypeDef](./type_defs.md#listpendinginvitationresourcesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -367,14 +442,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListPendingInvitationResourcesResponseTypeDef](./type_defs.md#listpendinginvitationresourcesresponsetypedef).
+[ListPendingInvitationResourcesResponseResponseTypeDef](./type_defs.md#listpendinginvitationresourcesresponseresponsetypedef).
 
 ### list_permissions
+
+Lists the AWS RAM permissions.
 
 Type annotations for `boto3.client("ram").list_permissions` method.
 
 Boto3 documentation:
 [RAM.Client.list_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_permissions)
+
+Arguments mapping described in
+[ListPermissionsRequestTypeDef](./type_defs.md#listpermissionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -383,14 +463,20 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef).
+[ListPermissionsResponseResponseTypeDef](./type_defs.md#listpermissionsresponseresponsetypedef).
 
 ### list_principals
+
+Lists the principals that you have shared resources with or that have shared
+resources with you.
 
 Type annotations for `boto3.client("ram").list_principals` method.
 
 Boto3 documentation:
 [RAM.Client.list_principals](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_principals)
+
+Arguments mapping described in
+[ListPrincipalsRequestTypeDef](./type_defs.md#listprincipalsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -404,15 +490,20 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListPrincipalsResponseTypeDef](./type_defs.md#listprincipalsresponsetypedef).
+[ListPrincipalsResponseResponseTypeDef](./type_defs.md#listprincipalsresponseresponsetypedef).
 
 ### list_resource_share_permissions
+
+Lists the AWS RAM permissions that are associated with a resource share.
 
 Type annotations for `boto3.client("ram").list_resource_share_permissions`
 method.
 
 Boto3 documentation:
 [RAM.Client.list_resource_share_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_resource_share_permissions)
+
+Arguments mapping described in
+[ListResourceSharePermissionsRequestTypeDef](./type_defs.md#listresourcesharepermissionsrequesttypedef).
 
 Keyword-only arguments:
 
@@ -421,14 +512,19 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListResourceSharePermissionsResponseTypeDef](./type_defs.md#listresourcesharepermissionsresponsetypedef).
+[ListResourceSharePermissionsResponseResponseTypeDef](./type_defs.md#listresourcesharepermissionsresponseresponsetypedef).
 
 ### list_resource_types
+
+Lists the shareable resource types supported by AWS RAM.
 
 Type annotations for `boto3.client("ram").list_resource_types` method.
 
 Boto3 documentation:
 [RAM.Client.list_resource_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_resource_types)
+
+Arguments mapping described in
+[ListResourceTypesRequestTypeDef](./type_defs.md#listresourcetypesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -436,14 +532,20 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListResourceTypesResponseTypeDef](./type_defs.md#listresourcetypesresponsetypedef).
+[ListResourceTypesResponseResponseTypeDef](./type_defs.md#listresourcetypesresponseresponsetypedef).
 
 ### list_resources
+
+Lists the resources that you added to a resource shares or the resources that
+are shared with you.
 
 Type annotations for `boto3.client("ram").list_resources` method.
 
 Boto3 documentation:
 [RAM.Client.list_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.list_resources)
+
+Arguments mapping described in
+[ListResourcesRequestTypeDef](./type_defs.md#listresourcesrequesttypedef).
 
 Keyword-only arguments:
 
@@ -457,9 +559,13 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef).
+[ListResourcesResponseResponseTypeDef](./type_defs.md#listresourcesresponseresponsetypedef).
 
 ### promote_resource_share_created_from_policy
+
+Resource shares that were created by attaching a policy to a resource are
+visible only to the resource share owner, and the resource share cannot be
+modified in AWS RAM.
 
 Type annotations for
 `boto3.client("ram").promote_resource_share_created_from_policy` method.
@@ -467,14 +573,19 @@ Type annotations for
 Boto3 documentation:
 [RAM.Client.promote_resource_share_created_from_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.promote_resource_share_created_from_policy)
 
+Arguments mapping described in
+[PromoteResourceShareCreatedFromPolicyRequestTypeDef](./type_defs.md#promoteresourcesharecreatedfrompolicyrequesttypedef).
+
 Keyword-only arguments:
 
 - `resourceShareArn`: `str` *(required)*
 
 Returns
-[PromoteResourceShareCreatedFromPolicyResponseTypeDef](./type_defs.md#promoteresourcesharecreatedfrompolicyresponsetypedef).
+[PromoteResourceShareCreatedFromPolicyResponseResponseTypeDef](./type_defs.md#promoteresourcesharecreatedfrompolicyresponseresponsetypedef).
 
 ### reject_resource_share_invitation
+
+Rejects an invitation to a resource share from another AWS account.
 
 Type annotations for `boto3.client("ram").reject_resource_share_invitation`
 method.
@@ -482,20 +593,28 @@ method.
 Boto3 documentation:
 [RAM.Client.reject_resource_share_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.reject_resource_share_invitation)
 
+Arguments mapping described in
+[RejectResourceShareInvitationRequestTypeDef](./type_defs.md#rejectresourceshareinvitationrequesttypedef).
+
 Keyword-only arguments:
 
 - `resourceShareInvitationArn`: `str` *(required)*
 - `clientToken`: `str`
 
 Returns
-[RejectResourceShareInvitationResponseTypeDef](./type_defs.md#rejectresourceshareinvitationresponsetypedef).
+[RejectResourceShareInvitationResponseResponseTypeDef](./type_defs.md#rejectresourceshareinvitationresponseresponsetypedef).
 
 ### tag_resource
+
+Adds the specified tags to the specified resource share that you own.
 
 Type annotations for `boto3.client("ram").tag_resource` method.
 
 Boto3 documentation:
 [RAM.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -506,10 +625,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
+Removes the specified tags from the specified resource share that you own.
+
 Type annotations for `boto3.client("ram").untag_resource` method.
 
 Boto3 documentation:
 [RAM.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
 
 Keyword-only arguments:
 
@@ -520,10 +644,15 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_resource_share
 
+Updates the specified resource share that you own.
+
 Type annotations for `boto3.client("ram").update_resource_share` method.
 
 Boto3 documentation:
 [RAM.Client.update_resource_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client.update_resource_share)
+
+Arguments mapping described in
+[UpdateResourceShareRequestTypeDef](./type_defs.md#updateresourcesharerequesttypedef).
 
 Keyword-only arguments:
 
@@ -533,7 +662,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[UpdateResourceShareResponseTypeDef](./type_defs.md#updateresourceshareresponsetypedef).
+[UpdateResourceShareResponseResponseTypeDef](./type_defs.md#updateresourceshareresponseresponsetypedef).
 
 ### get_paginator
 

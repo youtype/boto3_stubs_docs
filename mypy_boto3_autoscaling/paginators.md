@@ -43,7 +43,7 @@ Arguments for `DescribeAutoScalingGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAutoScalingGroupsPaginator.paginate` returns
-`Iterator`\[[AutoScalingGroupsTypeTypeDef](./type_defs.md#autoscalinggroupstypetypedef)\].
+`Iterator`\[[AutoScalingGroupsTypeResponseTypeDef](./type_defs.md#autoscalinggroupstyperesponsetypedef)\].
 
 ## DescribeAutoScalingInstancesPaginator
 
@@ -69,7 +69,7 @@ Arguments for `DescribeAutoScalingInstancesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAutoScalingInstancesPaginator.paginate` returns
-`Iterator`\[[AutoScalingInstancesTypeTypeDef](./type_defs.md#autoscalinginstancestypetypedef)\].
+`Iterator`\[[AutoScalingInstancesTypeResponseTypeDef](./type_defs.md#autoscalinginstancestyperesponsetypedef)\].
 
 ## DescribeLaunchConfigurationsPaginator
 
@@ -95,7 +95,7 @@ Arguments for `DescribeLaunchConfigurationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLaunchConfigurationsPaginator.paginate` returns
-`Iterator`\[[LaunchConfigurationsTypeTypeDef](./type_defs.md#launchconfigurationstypetypedef)\].
+`Iterator`\[[LaunchConfigurationsTypeResponseTypeDef](./type_defs.md#launchconfigurationstyperesponsetypedef)\].
 
 ## DescribeLoadBalancerTargetGroupsPaginator
 
@@ -121,7 +121,7 @@ Arguments for `DescribeLoadBalancerTargetGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLoadBalancerTargetGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeLoadBalancerTargetGroupsResponseTypeDef](./type_defs.md#describeloadbalancertargetgroupsresponsetypedef)\].
+`Iterator`\[[DescribeLoadBalancerTargetGroupsResponseResponseTypeDef](./type_defs.md#describeloadbalancertargetgroupsresponseresponsetypedef)\].
 
 ## DescribeLoadBalancersPaginator
 
@@ -147,7 +147,7 @@ Arguments for `DescribeLoadBalancersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLoadBalancersPaginator.paginate` returns
-`Iterator`\[[DescribeLoadBalancersResponseTypeDef](./type_defs.md#describeloadbalancersresponsetypedef)\].
+`Iterator`\[[DescribeLoadBalancersResponseResponseTypeDef](./type_defs.md#describeloadbalancersresponseresponsetypedef)\].
 
 ## DescribeNotificationConfigurationsPaginator
 
@@ -173,7 +173,7 @@ Arguments for `DescribeNotificationConfigurationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeNotificationConfigurationsPaginator.paginate` returns
-`Iterator`\[[DescribeNotificationConfigurationsAnswerTypeDef](./type_defs.md#describenotificationconfigurationsanswertypedef)\].
+`Iterator`\[[DescribeNotificationConfigurationsAnswerResponseTypeDef](./type_defs.md#describenotificationconfigurationsanswerresponsetypedef)\].
 
 ## DescribePoliciesPaginator
 
@@ -201,7 +201,7 @@ Arguments for `DescribePoliciesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribePoliciesPaginator.paginate` returns
-`Iterator`\[[PoliciesTypeTypeDef](./type_defs.md#policiestypetypedef)\].
+`Iterator`\[[PoliciesTypeResponseTypeDef](./type_defs.md#policiestyperesponsetypedef)\].
 
 ## DescribeScalingActivitiesPaginator
 
@@ -229,7 +229,7 @@ Arguments for `DescribeScalingActivitiesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScalingActivitiesPaginator.paginate` returns
-`Iterator`\[[ActivitiesTypeTypeDef](./type_defs.md#activitiestypetypedef)\].
+`Iterator`\[[ActivitiesTypeResponseTypeDef](./type_defs.md#activitiestyperesponsetypedef)\].
 
 ## DescribeScheduledActionsPaginator
 
@@ -252,13 +252,13 @@ Arguments for `DescribeScheduledActionsPaginator.paginate` method:
 
 - `AutoScalingGroupName`: `str`
 - `ScheduledActionNames`: `List`\[`str`\]
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
+- `StartTime`: `Union`\[`datetime`, `str`\]
+- `EndTime`: `Union`\[`datetime`, `str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScheduledActionsPaginator.paginate` returns
-`Iterator`\[[ScheduledActionsTypeTypeDef](./type_defs.md#scheduledactionstypetypedef)\].
+`Iterator`\[[ScheduledActionsTypeResponseTypeDef](./type_defs.md#scheduledactionstyperesponsetypedef)\].
 
 ## DescribeTagsPaginator
 
@@ -284,4 +284,4 @@ Arguments for `DescribeTagsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTagsPaginator.paginate` returns
-`Iterator`\[[TagsTypeTypeDef](./type_defs.md#tagstypetypedef)\].
+`Iterator`\[[TagsTypeResponseTypeDef](./type_defs.md#tagstyperesponsetypedef)\].

@@ -25,7 +25,7 @@ def get_job_complete_waiter() -> JobCompleteWaiter:
 ```
 
 Boto3 documentation:
-[ElasticTranscoder.Waiter.job_complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Waiter.job_complete)
+[ElasticTranscoder.Waiter.job_complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Waiter.JobComplete)
 
 Arguments for `JobCompleteWaiter.wait` method:
 

@@ -8,8 +8,10 @@ type annotations stubs module
 [mypy_boto3_greengrass](https://pypi.org/project/mypy-boto3-greengrass/).
 
 - [Typed dictionaries for boto3 Greengrass module](#typed-dictionaries-for-boto3-greengrass-module)
-  - [AssociateRoleToGroupResponseTypeDef](#associateroletogroupresponsetypedef)
-  - [AssociateServiceRoleToAccountResponseTypeDef](#associateserviceroletoaccountresponsetypedef)
+  - [AssociateRoleToGroupRequestTypeDef](#associateroletogrouprequesttypedef)
+  - [AssociateRoleToGroupResponseResponseTypeDef](#associateroletogroupresponseresponsetypedef)
+  - [AssociateServiceRoleToAccountRequestTypeDef](#associateserviceroletoaccountrequesttypedef)
+  - [AssociateServiceRoleToAccountResponseResponseTypeDef](#associateserviceroletoaccountresponseresponsetypedef)
   - [BulkDeploymentMetricsTypeDef](#bulkdeploymentmetricstypedef)
   - [BulkDeploymentResultTypeDef](#bulkdeploymentresulttypedef)
   - [BulkDeploymentTypeDef](#bulkdeploymenttypedef)
@@ -18,31 +20,59 @@ type annotations stubs module
   - [ConnectorTypeDef](#connectortypedef)
   - [CoreDefinitionVersionTypeDef](#coredefinitionversiontypedef)
   - [CoreTypeDef](#coretypedef)
-  - [CreateConnectorDefinitionResponseTypeDef](#createconnectordefinitionresponsetypedef)
-  - [CreateConnectorDefinitionVersionResponseTypeDef](#createconnectordefinitionversionresponsetypedef)
-  - [CreateCoreDefinitionResponseTypeDef](#createcoredefinitionresponsetypedef)
-  - [CreateCoreDefinitionVersionResponseTypeDef](#createcoredefinitionversionresponsetypedef)
-  - [CreateDeploymentResponseTypeDef](#createdeploymentresponsetypedef)
-  - [CreateDeviceDefinitionResponseTypeDef](#createdevicedefinitionresponsetypedef)
-  - [CreateDeviceDefinitionVersionResponseTypeDef](#createdevicedefinitionversionresponsetypedef)
-  - [CreateFunctionDefinitionResponseTypeDef](#createfunctiondefinitionresponsetypedef)
-  - [CreateFunctionDefinitionVersionResponseTypeDef](#createfunctiondefinitionversionresponsetypedef)
-  - [CreateGroupCertificateAuthorityResponseTypeDef](#creategroupcertificateauthorityresponsetypedef)
-  - [CreateGroupResponseTypeDef](#creategroupresponsetypedef)
-  - [CreateGroupVersionResponseTypeDef](#creategroupversionresponsetypedef)
-  - [CreateLoggerDefinitionResponseTypeDef](#createloggerdefinitionresponsetypedef)
-  - [CreateLoggerDefinitionVersionResponseTypeDef](#createloggerdefinitionversionresponsetypedef)
-  - [CreateResourceDefinitionResponseTypeDef](#createresourcedefinitionresponsetypedef)
-  - [CreateResourceDefinitionVersionResponseTypeDef](#createresourcedefinitionversionresponsetypedef)
-  - [CreateSoftwareUpdateJobResponseTypeDef](#createsoftwareupdatejobresponsetypedef)
-  - [CreateSubscriptionDefinitionResponseTypeDef](#createsubscriptiondefinitionresponsetypedef)
-  - [CreateSubscriptionDefinitionVersionResponseTypeDef](#createsubscriptiondefinitionversionresponsetypedef)
+  - [CreateConnectorDefinitionRequestTypeDef](#createconnectordefinitionrequesttypedef)
+  - [CreateConnectorDefinitionResponseResponseTypeDef](#createconnectordefinitionresponseresponsetypedef)
+  - [CreateConnectorDefinitionVersionRequestTypeDef](#createconnectordefinitionversionrequesttypedef)
+  - [CreateConnectorDefinitionVersionResponseResponseTypeDef](#createconnectordefinitionversionresponseresponsetypedef)
+  - [CreateCoreDefinitionRequestTypeDef](#createcoredefinitionrequesttypedef)
+  - [CreateCoreDefinitionResponseResponseTypeDef](#createcoredefinitionresponseresponsetypedef)
+  - [CreateCoreDefinitionVersionRequestTypeDef](#createcoredefinitionversionrequesttypedef)
+  - [CreateCoreDefinitionVersionResponseResponseTypeDef](#createcoredefinitionversionresponseresponsetypedef)
+  - [CreateDeploymentRequestTypeDef](#createdeploymentrequesttypedef)
+  - [CreateDeploymentResponseResponseTypeDef](#createdeploymentresponseresponsetypedef)
+  - [CreateDeviceDefinitionRequestTypeDef](#createdevicedefinitionrequesttypedef)
+  - [CreateDeviceDefinitionResponseResponseTypeDef](#createdevicedefinitionresponseresponsetypedef)
+  - [CreateDeviceDefinitionVersionRequestTypeDef](#createdevicedefinitionversionrequesttypedef)
+  - [CreateDeviceDefinitionVersionResponseResponseTypeDef](#createdevicedefinitionversionresponseresponsetypedef)
+  - [CreateFunctionDefinitionRequestTypeDef](#createfunctiondefinitionrequesttypedef)
+  - [CreateFunctionDefinitionResponseResponseTypeDef](#createfunctiondefinitionresponseresponsetypedef)
+  - [CreateFunctionDefinitionVersionRequestTypeDef](#createfunctiondefinitionversionrequesttypedef)
+  - [CreateFunctionDefinitionVersionResponseResponseTypeDef](#createfunctiondefinitionversionresponseresponsetypedef)
+  - [CreateGroupCertificateAuthorityRequestTypeDef](#creategroupcertificateauthorityrequesttypedef)
+  - [CreateGroupCertificateAuthorityResponseResponseTypeDef](#creategroupcertificateauthorityresponseresponsetypedef)
+  - [CreateGroupRequestTypeDef](#creategrouprequesttypedef)
+  - [CreateGroupResponseResponseTypeDef](#creategroupresponseresponsetypedef)
+  - [CreateGroupVersionRequestTypeDef](#creategroupversionrequesttypedef)
+  - [CreateGroupVersionResponseResponseTypeDef](#creategroupversionresponseresponsetypedef)
+  - [CreateLoggerDefinitionRequestTypeDef](#createloggerdefinitionrequesttypedef)
+  - [CreateLoggerDefinitionResponseResponseTypeDef](#createloggerdefinitionresponseresponsetypedef)
+  - [CreateLoggerDefinitionVersionRequestTypeDef](#createloggerdefinitionversionrequesttypedef)
+  - [CreateLoggerDefinitionVersionResponseResponseTypeDef](#createloggerdefinitionversionresponseresponsetypedef)
+  - [CreateResourceDefinitionRequestTypeDef](#createresourcedefinitionrequesttypedef)
+  - [CreateResourceDefinitionResponseResponseTypeDef](#createresourcedefinitionresponseresponsetypedef)
+  - [CreateResourceDefinitionVersionRequestTypeDef](#createresourcedefinitionversionrequesttypedef)
+  - [CreateResourceDefinitionVersionResponseResponseTypeDef](#createresourcedefinitionversionresponseresponsetypedef)
+  - [CreateSoftwareUpdateJobRequestTypeDef](#createsoftwareupdatejobrequesttypedef)
+  - [CreateSoftwareUpdateJobResponseResponseTypeDef](#createsoftwareupdatejobresponseresponsetypedef)
+  - [CreateSubscriptionDefinitionRequestTypeDef](#createsubscriptiondefinitionrequesttypedef)
+  - [CreateSubscriptionDefinitionResponseResponseTypeDef](#createsubscriptiondefinitionresponseresponsetypedef)
+  - [CreateSubscriptionDefinitionVersionRequestTypeDef](#createsubscriptiondefinitionversionrequesttypedef)
+  - [CreateSubscriptionDefinitionVersionResponseResponseTypeDef](#createsubscriptiondefinitionversionresponseresponsetypedef)
   - [DefinitionInformationTypeDef](#definitioninformationtypedef)
+  - [DeleteConnectorDefinitionRequestTypeDef](#deleteconnectordefinitionrequesttypedef)
+  - [DeleteCoreDefinitionRequestTypeDef](#deletecoredefinitionrequesttypedef)
+  - [DeleteDeviceDefinitionRequestTypeDef](#deletedevicedefinitionrequesttypedef)
+  - [DeleteFunctionDefinitionRequestTypeDef](#deletefunctiondefinitionrequesttypedef)
+  - [DeleteGroupRequestTypeDef](#deletegrouprequesttypedef)
+  - [DeleteLoggerDefinitionRequestTypeDef](#deleteloggerdefinitionrequesttypedef)
+  - [DeleteResourceDefinitionRequestTypeDef](#deleteresourcedefinitionrequesttypedef)
+  - [DeleteSubscriptionDefinitionRequestTypeDef](#deletesubscriptiondefinitionrequesttypedef)
   - [DeploymentTypeDef](#deploymenttypedef)
   - [DeviceDefinitionVersionTypeDef](#devicedefinitionversiontypedef)
   - [DeviceTypeDef](#devicetypedef)
-  - [DisassociateRoleFromGroupResponseTypeDef](#disassociaterolefromgroupresponsetypedef)
-  - [DisassociateServiceRoleFromAccountResponseTypeDef](#disassociateservicerolefromaccountresponsetypedef)
+  - [DisassociateRoleFromGroupRequestTypeDef](#disassociaterolefromgrouprequesttypedef)
+  - [DisassociateRoleFromGroupResponseResponseTypeDef](#disassociaterolefromgroupresponseresponsetypedef)
+  - [DisassociateServiceRoleFromAccountResponseResponseTypeDef](#disassociateservicerolefromaccountresponseresponsetypedef)
   - [ErrorDetailTypeDef](#errordetailtypedef)
   - [FunctionConfigurationEnvironmentTypeDef](#functionconfigurationenvironmenttypedef)
   - [FunctionConfigurationTypeDef](#functionconfigurationtypedef)
@@ -52,98 +82,184 @@ type annotations stubs module
   - [FunctionExecutionConfigTypeDef](#functionexecutionconfigtypedef)
   - [FunctionRunAsConfigTypeDef](#functionrunasconfigtypedef)
   - [FunctionTypeDef](#functiontypedef)
-  - [GetAssociatedRoleResponseTypeDef](#getassociatedroleresponsetypedef)
-  - [GetBulkDeploymentStatusResponseTypeDef](#getbulkdeploymentstatusresponsetypedef)
-  - [GetConnectivityInfoResponseTypeDef](#getconnectivityinforesponsetypedef)
-  - [GetConnectorDefinitionResponseTypeDef](#getconnectordefinitionresponsetypedef)
-  - [GetConnectorDefinitionVersionResponseTypeDef](#getconnectordefinitionversionresponsetypedef)
-  - [GetCoreDefinitionResponseTypeDef](#getcoredefinitionresponsetypedef)
-  - [GetCoreDefinitionVersionResponseTypeDef](#getcoredefinitionversionresponsetypedef)
-  - [GetDeploymentStatusResponseTypeDef](#getdeploymentstatusresponsetypedef)
-  - [GetDeviceDefinitionResponseTypeDef](#getdevicedefinitionresponsetypedef)
-  - [GetDeviceDefinitionVersionResponseTypeDef](#getdevicedefinitionversionresponsetypedef)
-  - [GetFunctionDefinitionResponseTypeDef](#getfunctiondefinitionresponsetypedef)
-  - [GetFunctionDefinitionVersionResponseTypeDef](#getfunctiondefinitionversionresponsetypedef)
-  - [GetGroupCertificateAuthorityResponseTypeDef](#getgroupcertificateauthorityresponsetypedef)
-  - [GetGroupCertificateConfigurationResponseTypeDef](#getgroupcertificateconfigurationresponsetypedef)
-  - [GetGroupResponseTypeDef](#getgroupresponsetypedef)
-  - [GetGroupVersionResponseTypeDef](#getgroupversionresponsetypedef)
-  - [GetLoggerDefinitionResponseTypeDef](#getloggerdefinitionresponsetypedef)
-  - [GetLoggerDefinitionVersionResponseTypeDef](#getloggerdefinitionversionresponsetypedef)
-  - [GetResourceDefinitionResponseTypeDef](#getresourcedefinitionresponsetypedef)
-  - [GetResourceDefinitionVersionResponseTypeDef](#getresourcedefinitionversionresponsetypedef)
-  - [GetServiceRoleForAccountResponseTypeDef](#getserviceroleforaccountresponsetypedef)
-  - [GetSubscriptionDefinitionResponseTypeDef](#getsubscriptiondefinitionresponsetypedef)
-  - [GetSubscriptionDefinitionVersionResponseTypeDef](#getsubscriptiondefinitionversionresponsetypedef)
-  - [GetThingRuntimeConfigurationResponseTypeDef](#getthingruntimeconfigurationresponsetypedef)
+  - [GetAssociatedRoleRequestTypeDef](#getassociatedrolerequesttypedef)
+  - [GetAssociatedRoleResponseResponseTypeDef](#getassociatedroleresponseresponsetypedef)
+  - [GetBulkDeploymentStatusRequestTypeDef](#getbulkdeploymentstatusrequesttypedef)
+  - [GetBulkDeploymentStatusResponseResponseTypeDef](#getbulkdeploymentstatusresponseresponsetypedef)
+  - [GetConnectivityInfoRequestTypeDef](#getconnectivityinforequesttypedef)
+  - [GetConnectivityInfoResponseResponseTypeDef](#getconnectivityinforesponseresponsetypedef)
+  - [GetConnectorDefinitionRequestTypeDef](#getconnectordefinitionrequesttypedef)
+  - [GetConnectorDefinitionResponseResponseTypeDef](#getconnectordefinitionresponseresponsetypedef)
+  - [GetConnectorDefinitionVersionRequestTypeDef](#getconnectordefinitionversionrequesttypedef)
+  - [GetConnectorDefinitionVersionResponseResponseTypeDef](#getconnectordefinitionversionresponseresponsetypedef)
+  - [GetCoreDefinitionRequestTypeDef](#getcoredefinitionrequesttypedef)
+  - [GetCoreDefinitionResponseResponseTypeDef](#getcoredefinitionresponseresponsetypedef)
+  - [GetCoreDefinitionVersionRequestTypeDef](#getcoredefinitionversionrequesttypedef)
+  - [GetCoreDefinitionVersionResponseResponseTypeDef](#getcoredefinitionversionresponseresponsetypedef)
+  - [GetDeploymentStatusRequestTypeDef](#getdeploymentstatusrequesttypedef)
+  - [GetDeploymentStatusResponseResponseTypeDef](#getdeploymentstatusresponseresponsetypedef)
+  - [GetDeviceDefinitionRequestTypeDef](#getdevicedefinitionrequesttypedef)
+  - [GetDeviceDefinitionResponseResponseTypeDef](#getdevicedefinitionresponseresponsetypedef)
+  - [GetDeviceDefinitionVersionRequestTypeDef](#getdevicedefinitionversionrequesttypedef)
+  - [GetDeviceDefinitionVersionResponseResponseTypeDef](#getdevicedefinitionversionresponseresponsetypedef)
+  - [GetFunctionDefinitionRequestTypeDef](#getfunctiondefinitionrequesttypedef)
+  - [GetFunctionDefinitionResponseResponseTypeDef](#getfunctiondefinitionresponseresponsetypedef)
+  - [GetFunctionDefinitionVersionRequestTypeDef](#getfunctiondefinitionversionrequesttypedef)
+  - [GetFunctionDefinitionVersionResponseResponseTypeDef](#getfunctiondefinitionversionresponseresponsetypedef)
+  - [GetGroupCertificateAuthorityRequestTypeDef](#getgroupcertificateauthorityrequesttypedef)
+  - [GetGroupCertificateAuthorityResponseResponseTypeDef](#getgroupcertificateauthorityresponseresponsetypedef)
+  - [GetGroupCertificateConfigurationRequestTypeDef](#getgroupcertificateconfigurationrequesttypedef)
+  - [GetGroupCertificateConfigurationResponseResponseTypeDef](#getgroupcertificateconfigurationresponseresponsetypedef)
+  - [GetGroupRequestTypeDef](#getgrouprequesttypedef)
+  - [GetGroupResponseResponseTypeDef](#getgroupresponseresponsetypedef)
+  - [GetGroupVersionRequestTypeDef](#getgroupversionrequesttypedef)
+  - [GetGroupVersionResponseResponseTypeDef](#getgroupversionresponseresponsetypedef)
+  - [GetLoggerDefinitionRequestTypeDef](#getloggerdefinitionrequesttypedef)
+  - [GetLoggerDefinitionResponseResponseTypeDef](#getloggerdefinitionresponseresponsetypedef)
+  - [GetLoggerDefinitionVersionRequestTypeDef](#getloggerdefinitionversionrequesttypedef)
+  - [GetLoggerDefinitionVersionResponseResponseTypeDef](#getloggerdefinitionversionresponseresponsetypedef)
+  - [GetResourceDefinitionRequestTypeDef](#getresourcedefinitionrequesttypedef)
+  - [GetResourceDefinitionResponseResponseTypeDef](#getresourcedefinitionresponseresponsetypedef)
+  - [GetResourceDefinitionVersionRequestTypeDef](#getresourcedefinitionversionrequesttypedef)
+  - [GetResourceDefinitionVersionResponseResponseTypeDef](#getresourcedefinitionversionresponseresponsetypedef)
+  - [GetServiceRoleForAccountResponseResponseTypeDef](#getserviceroleforaccountresponseresponsetypedef)
+  - [GetSubscriptionDefinitionRequestTypeDef](#getsubscriptiondefinitionrequesttypedef)
+  - [GetSubscriptionDefinitionResponseResponseTypeDef](#getsubscriptiondefinitionresponseresponsetypedef)
+  - [GetSubscriptionDefinitionVersionRequestTypeDef](#getsubscriptiondefinitionversionrequesttypedef)
+  - [GetSubscriptionDefinitionVersionResponseResponseTypeDef](#getsubscriptiondefinitionversionresponseresponsetypedef)
+  - [GetThingRuntimeConfigurationRequestTypeDef](#getthingruntimeconfigurationrequesttypedef)
+  - [GetThingRuntimeConfigurationResponseResponseTypeDef](#getthingruntimeconfigurationresponseresponsetypedef)
   - [GroupCertificateAuthorityPropertiesTypeDef](#groupcertificateauthoritypropertiestypedef)
   - [GroupInformationTypeDef](#groupinformationtypedef)
   - [GroupOwnerSettingTypeDef](#groupownersettingtypedef)
   - [GroupVersionTypeDef](#groupversiontypedef)
-  - [ListBulkDeploymentDetailedReportsResponseTypeDef](#listbulkdeploymentdetailedreportsresponsetypedef)
-  - [ListBulkDeploymentsResponseTypeDef](#listbulkdeploymentsresponsetypedef)
-  - [ListConnectorDefinitionVersionsResponseTypeDef](#listconnectordefinitionversionsresponsetypedef)
-  - [ListConnectorDefinitionsResponseTypeDef](#listconnectordefinitionsresponsetypedef)
-  - [ListCoreDefinitionVersionsResponseTypeDef](#listcoredefinitionversionsresponsetypedef)
-  - [ListCoreDefinitionsResponseTypeDef](#listcoredefinitionsresponsetypedef)
-  - [ListDeploymentsResponseTypeDef](#listdeploymentsresponsetypedef)
-  - [ListDeviceDefinitionVersionsResponseTypeDef](#listdevicedefinitionversionsresponsetypedef)
-  - [ListDeviceDefinitionsResponseTypeDef](#listdevicedefinitionsresponsetypedef)
-  - [ListFunctionDefinitionVersionsResponseTypeDef](#listfunctiondefinitionversionsresponsetypedef)
-  - [ListFunctionDefinitionsResponseTypeDef](#listfunctiondefinitionsresponsetypedef)
-  - [ListGroupCertificateAuthoritiesResponseTypeDef](#listgroupcertificateauthoritiesresponsetypedef)
-  - [ListGroupVersionsResponseTypeDef](#listgroupversionsresponsetypedef)
-  - [ListGroupsResponseTypeDef](#listgroupsresponsetypedef)
-  - [ListLoggerDefinitionVersionsResponseTypeDef](#listloggerdefinitionversionsresponsetypedef)
-  - [ListLoggerDefinitionsResponseTypeDef](#listloggerdefinitionsresponsetypedef)
-  - [ListResourceDefinitionVersionsResponseTypeDef](#listresourcedefinitionversionsresponsetypedef)
-  - [ListResourceDefinitionsResponseTypeDef](#listresourcedefinitionsresponsetypedef)
-  - [ListSubscriptionDefinitionVersionsResponseTypeDef](#listsubscriptiondefinitionversionsresponsetypedef)
-  - [ListSubscriptionDefinitionsResponseTypeDef](#listsubscriptiondefinitionsresponsetypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListBulkDeploymentDetailedReportsRequestTypeDef](#listbulkdeploymentdetailedreportsrequesttypedef)
+  - [ListBulkDeploymentDetailedReportsResponseResponseTypeDef](#listbulkdeploymentdetailedreportsresponseresponsetypedef)
+  - [ListBulkDeploymentsRequestTypeDef](#listbulkdeploymentsrequesttypedef)
+  - [ListBulkDeploymentsResponseResponseTypeDef](#listbulkdeploymentsresponseresponsetypedef)
+  - [ListConnectorDefinitionVersionsRequestTypeDef](#listconnectordefinitionversionsrequesttypedef)
+  - [ListConnectorDefinitionVersionsResponseResponseTypeDef](#listconnectordefinitionversionsresponseresponsetypedef)
+  - [ListConnectorDefinitionsRequestTypeDef](#listconnectordefinitionsrequesttypedef)
+  - [ListConnectorDefinitionsResponseResponseTypeDef](#listconnectordefinitionsresponseresponsetypedef)
+  - [ListCoreDefinitionVersionsRequestTypeDef](#listcoredefinitionversionsrequesttypedef)
+  - [ListCoreDefinitionVersionsResponseResponseTypeDef](#listcoredefinitionversionsresponseresponsetypedef)
+  - [ListCoreDefinitionsRequestTypeDef](#listcoredefinitionsrequesttypedef)
+  - [ListCoreDefinitionsResponseResponseTypeDef](#listcoredefinitionsresponseresponsetypedef)
+  - [ListDeploymentsRequestTypeDef](#listdeploymentsrequesttypedef)
+  - [ListDeploymentsResponseResponseTypeDef](#listdeploymentsresponseresponsetypedef)
+  - [ListDeviceDefinitionVersionsRequestTypeDef](#listdevicedefinitionversionsrequesttypedef)
+  - [ListDeviceDefinitionVersionsResponseResponseTypeDef](#listdevicedefinitionversionsresponseresponsetypedef)
+  - [ListDeviceDefinitionsRequestTypeDef](#listdevicedefinitionsrequesttypedef)
+  - [ListDeviceDefinitionsResponseResponseTypeDef](#listdevicedefinitionsresponseresponsetypedef)
+  - [ListFunctionDefinitionVersionsRequestTypeDef](#listfunctiondefinitionversionsrequesttypedef)
+  - [ListFunctionDefinitionVersionsResponseResponseTypeDef](#listfunctiondefinitionversionsresponseresponsetypedef)
+  - [ListFunctionDefinitionsRequestTypeDef](#listfunctiondefinitionsrequesttypedef)
+  - [ListFunctionDefinitionsResponseResponseTypeDef](#listfunctiondefinitionsresponseresponsetypedef)
+  - [ListGroupCertificateAuthoritiesRequestTypeDef](#listgroupcertificateauthoritiesrequesttypedef)
+  - [ListGroupCertificateAuthoritiesResponseResponseTypeDef](#listgroupcertificateauthoritiesresponseresponsetypedef)
+  - [ListGroupVersionsRequestTypeDef](#listgroupversionsrequesttypedef)
+  - [ListGroupVersionsResponseResponseTypeDef](#listgroupversionsresponseresponsetypedef)
+  - [ListGroupsRequestTypeDef](#listgroupsrequesttypedef)
+  - [ListGroupsResponseResponseTypeDef](#listgroupsresponseresponsetypedef)
+  - [ListLoggerDefinitionVersionsRequestTypeDef](#listloggerdefinitionversionsrequesttypedef)
+  - [ListLoggerDefinitionVersionsResponseResponseTypeDef](#listloggerdefinitionversionsresponseresponsetypedef)
+  - [ListLoggerDefinitionsRequestTypeDef](#listloggerdefinitionsrequesttypedef)
+  - [ListLoggerDefinitionsResponseResponseTypeDef](#listloggerdefinitionsresponseresponsetypedef)
+  - [ListResourceDefinitionVersionsRequestTypeDef](#listresourcedefinitionversionsrequesttypedef)
+  - [ListResourceDefinitionVersionsResponseResponseTypeDef](#listresourcedefinitionversionsresponseresponsetypedef)
+  - [ListResourceDefinitionsRequestTypeDef](#listresourcedefinitionsrequesttypedef)
+  - [ListResourceDefinitionsResponseResponseTypeDef](#listresourcedefinitionsresponseresponsetypedef)
+  - [ListSubscriptionDefinitionVersionsRequestTypeDef](#listsubscriptiondefinitionversionsrequesttypedef)
+  - [ListSubscriptionDefinitionVersionsResponseResponseTypeDef](#listsubscriptiondefinitionversionsresponseresponsetypedef)
+  - [ListSubscriptionDefinitionsRequestTypeDef](#listsubscriptiondefinitionsrequesttypedef)
+  - [ListSubscriptionDefinitionsResponseResponseTypeDef](#listsubscriptiondefinitionsresponseresponsetypedef)
+  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
+  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
   - [LocalDeviceResourceDataTypeDef](#localdeviceresourcedatatypedef)
   - [LocalVolumeResourceDataTypeDef](#localvolumeresourcedatatypedef)
   - [LoggerDefinitionVersionTypeDef](#loggerdefinitionversiontypedef)
   - [LoggerTypeDef](#loggertypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResetDeploymentsResponseTypeDef](#resetdeploymentsresponsetypedef)
+  - [ResetDeploymentsRequestTypeDef](#resetdeploymentsrequesttypedef)
+  - [ResetDeploymentsResponseResponseTypeDef](#resetdeploymentsresponseresponsetypedef)
   - [ResourceAccessPolicyTypeDef](#resourceaccesspolicytypedef)
   - [ResourceDataContainerTypeDef](#resourcedatacontainertypedef)
   - [ResourceDefinitionVersionTypeDef](#resourcedefinitionversiontypedef)
   - [ResourceDownloadOwnerSettingTypeDef](#resourcedownloadownersettingtypedef)
   - [ResourceTypeDef](#resourcetypedef)
+  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RuntimeConfigurationTypeDef](#runtimeconfigurationtypedef)
   - [S3MachineLearningModelResourceDataTypeDef](#s3machinelearningmodelresourcedatatypedef)
   - [SageMakerMachineLearningModelResourceDataTypeDef](#sagemakermachinelearningmodelresourcedatatypedef)
   - [SecretsManagerSecretResourceDataTypeDef](#secretsmanagersecretresourcedatatypedef)
-  - [StartBulkDeploymentResponseTypeDef](#startbulkdeploymentresponsetypedef)
+  - [StartBulkDeploymentRequestTypeDef](#startbulkdeploymentrequesttypedef)
+  - [StartBulkDeploymentResponseResponseTypeDef](#startbulkdeploymentresponseresponsetypedef)
+  - [StopBulkDeploymentRequestTypeDef](#stopbulkdeploymentrequesttypedef)
   - [SubscriptionDefinitionVersionTypeDef](#subscriptiondefinitionversiontypedef)
   - [SubscriptionTypeDef](#subscriptiontypedef)
+  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
   - [TelemetryConfigurationTypeDef](#telemetryconfigurationtypedef)
   - [TelemetryConfigurationUpdateTypeDef](#telemetryconfigurationupdatetypedef)
-  - [UpdateConnectivityInfoResponseTypeDef](#updateconnectivityinforesponsetypedef)
-  - [UpdateGroupCertificateConfigurationResponseTypeDef](#updategroupcertificateconfigurationresponsetypedef)
+  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UpdateConnectivityInfoRequestTypeDef](#updateconnectivityinforequesttypedef)
+  - [UpdateConnectivityInfoResponseResponseTypeDef](#updateconnectivityinforesponseresponsetypedef)
+  - [UpdateConnectorDefinitionRequestTypeDef](#updateconnectordefinitionrequesttypedef)
+  - [UpdateCoreDefinitionRequestTypeDef](#updatecoredefinitionrequesttypedef)
+  - [UpdateDeviceDefinitionRequestTypeDef](#updatedevicedefinitionrequesttypedef)
+  - [UpdateFunctionDefinitionRequestTypeDef](#updatefunctiondefinitionrequesttypedef)
+  - [UpdateGroupCertificateConfigurationRequestTypeDef](#updategroupcertificateconfigurationrequesttypedef)
+  - [UpdateGroupCertificateConfigurationResponseResponseTypeDef](#updategroupcertificateconfigurationresponseresponsetypedef)
+  - [UpdateGroupRequestTypeDef](#updategrouprequesttypedef)
+  - [UpdateLoggerDefinitionRequestTypeDef](#updateloggerdefinitionrequesttypedef)
+  - [UpdateResourceDefinitionRequestTypeDef](#updateresourcedefinitionrequesttypedef)
+  - [UpdateSubscriptionDefinitionRequestTypeDef](#updatesubscriptiondefinitionrequesttypedef)
+  - [UpdateThingRuntimeConfigurationRequestTypeDef](#updatethingruntimeconfigurationrequesttypedef)
   - [VersionInformationTypeDef](#versioninformationtypedef)
 
-## AssociateRoleToGroupResponseTypeDef
+## AssociateRoleToGroupRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import AssociateRoleToGroupResponseTypeDef
+from mypy_boto3_greengrass.type_defs import AssociateRoleToGroupRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
-- `AssociatedAt`: `str`
+- `GroupId`: `str`
+- `RoleArn`: `str`
 
-## AssociateServiceRoleToAccountResponseTypeDef
+## AssociateRoleToGroupResponseResponseTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import AssociateServiceRoleToAccountResponseTypeDef
+from mypy_boto3_greengrass.type_defs import AssociateRoleToGroupResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `AssociatedAt`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## AssociateServiceRoleToAccountRequestTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import AssociateServiceRoleToAccountRequestTypeDef
+```
+
+Required fields:
+
+- `RoleArn`: `str`
+
+## AssociateServiceRoleToAccountResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import AssociateServiceRoleToAccountResponseResponseTypeDef
+```
+
+Required fields:
+
+- `AssociatedAt`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## BulkDeploymentMetricsTypeDef
 
@@ -251,13 +367,27 @@ Optional fields:
 
 - `SyncShadow`: `bool`
 
-## CreateConnectorDefinitionResponseTypeDef
+## CreateConnectorDefinitionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import CreateConnectorDefinitionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import CreateConnectorDefinitionRequestTypeDef
 ```
 
 Optional fields:
+
+- `AmznClientToken`: `str`
+- `InitialVersion`:
+  [ConnectorDefinitionVersionTypeDef](./type_defs.md#connectordefinitionversiontypedef)
+- `Name`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateConnectorDefinitionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import CreateConnectorDefinitionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
@@ -266,27 +396,60 @@ Optional fields:
 - `LatestVersion`: `str`
 - `LatestVersionArn`: `str`
 - `Name`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateConnectorDefinitionVersionResponseTypeDef
+## CreateConnectorDefinitionVersionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import CreateConnectorDefinitionVersionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import CreateConnectorDefinitionVersionRequestTypeDef
 ```
 
+Required fields:
+
+- `ConnectorDefinitionId`: `str`
+
 Optional fields:
+
+- `AmznClientToken`: `str`
+- `Connectors`: `List`\[[ConnectorTypeDef](./type_defs.md#connectortypedef)\]
+
+## CreateConnectorDefinitionVersionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import CreateConnectorDefinitionVersionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
 - `Version`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateCoreDefinitionResponseTypeDef
+## CreateCoreDefinitionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import CreateCoreDefinitionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import CreateCoreDefinitionRequestTypeDef
 ```
 
 Optional fields:
+
+- `AmznClientToken`: `str`
+- `InitialVersion`:
+  [CoreDefinitionVersionTypeDef](./type_defs.md#coredefinitionversiontypedef)
+- `Name`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateCoreDefinitionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import CreateCoreDefinitionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
@@ -295,38 +458,90 @@ Optional fields:
 - `LatestVersion`: `str`
 - `LatestVersionArn`: `str`
 - `Name`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateCoreDefinitionVersionResponseTypeDef
+## CreateCoreDefinitionVersionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import CreateCoreDefinitionVersionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import CreateCoreDefinitionVersionRequestTypeDef
 ```
 
+Required fields:
+
+- `CoreDefinitionId`: `str`
+
 Optional fields:
+
+- `AmznClientToken`: `str`
+- `Cores`: `List`\[[CoreTypeDef](./type_defs.md#coretypedef)\]
+
+## CreateCoreDefinitionVersionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import CreateCoreDefinitionVersionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
 - `Version`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDeploymentResponseTypeDef
+## CreateDeploymentRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import CreateDeploymentResponseTypeDef
+from mypy_boto3_greengrass.type_defs import CreateDeploymentRequestTypeDef
 ```
 
+Required fields:
+
+- `DeploymentType`: [DeploymentTypeType](./literals.md#deploymenttypetype)
+- `GroupId`: `str`
+
 Optional fields:
+
+- `AmznClientToken`: `str`
+- `DeploymentId`: `str`
+- `GroupVersionId`: `str`
+
+## CreateDeploymentResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import CreateDeploymentResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DeploymentArn`: `str`
 - `DeploymentId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDeviceDefinitionResponseTypeDef
+## CreateDeviceDefinitionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import CreateDeviceDefinitionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import CreateDeviceDefinitionRequestTypeDef
 ```
 
 Optional fields:
+
+- `AmznClientToken`: `str`
+- `InitialVersion`:
+  [DeviceDefinitionVersionTypeDef](./type_defs.md#devicedefinitionversiontypedef)
+- `Name`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateDeviceDefinitionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import CreateDeviceDefinitionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
@@ -335,27 +550,60 @@ Optional fields:
 - `LatestVersion`: `str`
 - `LatestVersionArn`: `str`
 - `Name`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDeviceDefinitionVersionResponseTypeDef
+## CreateDeviceDefinitionVersionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import CreateDeviceDefinitionVersionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import CreateDeviceDefinitionVersionRequestTypeDef
 ```
 
+Required fields:
+
+- `DeviceDefinitionId`: `str`
+
 Optional fields:
+
+- `AmznClientToken`: `str`
+- `Devices`: `List`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
+
+## CreateDeviceDefinitionVersionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import CreateDeviceDefinitionVersionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
 - `Version`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateFunctionDefinitionResponseTypeDef
+## CreateFunctionDefinitionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import CreateFunctionDefinitionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import CreateFunctionDefinitionRequestTypeDef
 ```
 
 Optional fields:
+
+- `AmznClientToken`: `str`
+- `InitialVersion`:
+  [FunctionDefinitionVersionTypeDef](./type_defs.md#functiondefinitionversiontypedef)
+- `Name`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateFunctionDefinitionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import CreateFunctionDefinitionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
@@ -364,37 +612,90 @@ Optional fields:
 - `LatestVersion`: `str`
 - `LatestVersionArn`: `str`
 - `Name`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateFunctionDefinitionVersionResponseTypeDef
+## CreateFunctionDefinitionVersionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import CreateFunctionDefinitionVersionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import CreateFunctionDefinitionVersionRequestTypeDef
 ```
 
+Required fields:
+
+- `FunctionDefinitionId`: `str`
+
 Optional fields:
+
+- `AmznClientToken`: `str`
+- `DefaultConfig`:
+  [FunctionDefaultConfigTypeDef](./type_defs.md#functiondefaultconfigtypedef)
+- `Functions`: `List`\[[FunctionTypeDef](./type_defs.md#functiontypedef)\]
+
+## CreateFunctionDefinitionVersionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import CreateFunctionDefinitionVersionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
 - `Version`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateGroupCertificateAuthorityResponseTypeDef
+## CreateGroupCertificateAuthorityRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import CreateGroupCertificateAuthorityResponseTypeDef
+from mypy_boto3_greengrass.type_defs import CreateGroupCertificateAuthorityRequestTypeDef
 ```
 
+Required fields:
+
+- `GroupId`: `str`
+
 Optional fields:
+
+- `AmznClientToken`: `str`
+
+## CreateGroupCertificateAuthorityResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import CreateGroupCertificateAuthorityResponseResponseTypeDef
+```
+
+Required fields:
 
 - `GroupCertificateAuthorityArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateGroupResponseTypeDef
+## CreateGroupRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import CreateGroupResponseTypeDef
+from mypy_boto3_greengrass.type_defs import CreateGroupRequestTypeDef
 ```
 
+Required fields:
+
+- `Name`: `str`
+
 Optional fields:
+
+- `AmznClientToken`: `str`
+- `InitialVersion`: [GroupVersionTypeDef](./type_defs.md#groupversiontypedef)
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import CreateGroupResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
@@ -403,27 +704,66 @@ Optional fields:
 - `LatestVersion`: `str`
 - `LatestVersionArn`: `str`
 - `Name`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateGroupVersionResponseTypeDef
+## CreateGroupVersionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import CreateGroupVersionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import CreateGroupVersionRequestTypeDef
 ```
 
+Required fields:
+
+- `GroupId`: `str`
+
 Optional fields:
+
+- `AmznClientToken`: `str`
+- `ConnectorDefinitionVersionArn`: `str`
+- `CoreDefinitionVersionArn`: `str`
+- `DeviceDefinitionVersionArn`: `str`
+- `FunctionDefinitionVersionArn`: `str`
+- `LoggerDefinitionVersionArn`: `str`
+- `ResourceDefinitionVersionArn`: `str`
+- `SubscriptionDefinitionVersionArn`: `str`
+
+## CreateGroupVersionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import CreateGroupVersionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
 - `Version`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateLoggerDefinitionResponseTypeDef
+## CreateLoggerDefinitionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import CreateLoggerDefinitionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import CreateLoggerDefinitionRequestTypeDef
 ```
 
 Optional fields:
+
+- `AmznClientToken`: `str`
+- `InitialVersion`:
+  [LoggerDefinitionVersionTypeDef](./type_defs.md#loggerdefinitionversiontypedef)
+- `Name`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateLoggerDefinitionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import CreateLoggerDefinitionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
@@ -432,27 +772,60 @@ Optional fields:
 - `LatestVersion`: `str`
 - `LatestVersionArn`: `str`
 - `Name`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateLoggerDefinitionVersionResponseTypeDef
+## CreateLoggerDefinitionVersionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import CreateLoggerDefinitionVersionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import CreateLoggerDefinitionVersionRequestTypeDef
 ```
 
+Required fields:
+
+- `LoggerDefinitionId`: `str`
+
 Optional fields:
+
+- `AmznClientToken`: `str`
+- `Loggers`: `List`\[[LoggerTypeDef](./type_defs.md#loggertypedef)\]
+
+## CreateLoggerDefinitionVersionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import CreateLoggerDefinitionVersionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
 - `Version`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateResourceDefinitionResponseTypeDef
+## CreateResourceDefinitionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import CreateResourceDefinitionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import CreateResourceDefinitionRequestTypeDef
 ```
 
 Optional fields:
+
+- `AmznClientToken`: `str`
+- `InitialVersion`:
+  [ResourceDefinitionVersionTypeDef](./type_defs.md#resourcedefinitionversiontypedef)
+- `Name`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateResourceDefinitionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import CreateResourceDefinitionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
@@ -461,39 +834,97 @@ Optional fields:
 - `LatestVersion`: `str`
 - `LatestVersionArn`: `str`
 - `Name`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateResourceDefinitionVersionResponseTypeDef
+## CreateResourceDefinitionVersionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import CreateResourceDefinitionVersionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import CreateResourceDefinitionVersionRequestTypeDef
 ```
 
+Required fields:
+
+- `ResourceDefinitionId`: `str`
+
 Optional fields:
+
+- `AmznClientToken`: `str`
+- `Resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
+
+## CreateResourceDefinitionVersionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import CreateResourceDefinitionVersionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
 - `Version`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateSoftwareUpdateJobResponseTypeDef
+## CreateSoftwareUpdateJobRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import CreateSoftwareUpdateJobResponseTypeDef
+from mypy_boto3_greengrass.type_defs import CreateSoftwareUpdateJobRequestTypeDef
 ```
 
+Required fields:
+
+- `S3UrlSignerRole`: `str`
+- `SoftwareToUpdate`:
+  [SoftwareToUpdateType](./literals.md#softwaretoupdatetype)
+- `UpdateTargets`: `List`\[`str`\]
+- `UpdateTargetsArchitecture`:
+  [UpdateTargetsArchitectureType](./literals.md#updatetargetsarchitecturetype)
+- `UpdateTargetsOperatingSystem`:
+  [UpdateTargetsOperatingSystemType](./literals.md#updatetargetsoperatingsystemtype)
+
 Optional fields:
+
+- `AmznClientToken`: `str`
+- `UpdateAgentLogLevel`:
+  [UpdateAgentLogLevelType](./literals.md#updateagentlogleveltype)
+
+## CreateSoftwareUpdateJobResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import CreateSoftwareUpdateJobResponseResponseTypeDef
+```
+
+Required fields:
 
 - `IotJobArn`: `str`
 - `IotJobId`: `str`
 - `PlatformSoftwareVersion`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateSubscriptionDefinitionResponseTypeDef
+## CreateSubscriptionDefinitionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import CreateSubscriptionDefinitionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import CreateSubscriptionDefinitionRequestTypeDef
 ```
 
 Optional fields:
+
+- `AmznClientToken`: `str`
+- `InitialVersion`:
+  [SubscriptionDefinitionVersionTypeDef](./type_defs.md#subscriptiondefinitionversiontypedef)
+- `Name`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## CreateSubscriptionDefinitionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import CreateSubscriptionDefinitionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
@@ -502,19 +933,39 @@ Optional fields:
 - `LatestVersion`: `str`
 - `LatestVersionArn`: `str`
 - `Name`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateSubscriptionDefinitionVersionResponseTypeDef
+## CreateSubscriptionDefinitionVersionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import CreateSubscriptionDefinitionVersionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import CreateSubscriptionDefinitionVersionRequestTypeDef
 ```
 
+Required fields:
+
+- `SubscriptionDefinitionId`: `str`
+
 Optional fields:
+
+- `AmznClientToken`: `str`
+- `Subscriptions`:
+  `List`\[[SubscriptionTypeDef](./type_defs.md#subscriptiontypedef)\]
+
+## CreateSubscriptionDefinitionVersionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import CreateSubscriptionDefinitionVersionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Id`: `str`
 - `Version`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DefinitionInformationTypeDef
 
@@ -532,6 +983,86 @@ Optional fields:
 - `LatestVersionArn`: `str`
 - `Name`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
+
+## DeleteConnectorDefinitionRequestTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import DeleteConnectorDefinitionRequestTypeDef
+```
+
+Required fields:
+
+- `ConnectorDefinitionId`: `str`
+
+## DeleteCoreDefinitionRequestTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import DeleteCoreDefinitionRequestTypeDef
+```
+
+Required fields:
+
+- `CoreDefinitionId`: `str`
+
+## DeleteDeviceDefinitionRequestTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import DeleteDeviceDefinitionRequestTypeDef
+```
+
+Required fields:
+
+- `DeviceDefinitionId`: `str`
+
+## DeleteFunctionDefinitionRequestTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import DeleteFunctionDefinitionRequestTypeDef
+```
+
+Required fields:
+
+- `FunctionDefinitionId`: `str`
+
+## DeleteGroupRequestTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import DeleteGroupRequestTypeDef
+```
+
+Required fields:
+
+- `GroupId`: `str`
+
+## DeleteLoggerDefinitionRequestTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import DeleteLoggerDefinitionRequestTypeDef
+```
+
+Required fields:
+
+- `LoggerDefinitionId`: `str`
+
+## DeleteResourceDefinitionRequestTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import DeleteResourceDefinitionRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceDefinitionId`: `str`
+
+## DeleteSubscriptionDefinitionRequestTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import DeleteSubscriptionDefinitionRequestTypeDef
+```
+
+Required fields:
+
+- `SubscriptionDefinitionId`: `str`
 
 ## DeploymentTypeDef
 
@@ -573,25 +1104,39 @@ Optional fields:
 
 - `SyncShadow`: `bool`
 
-## DisassociateRoleFromGroupResponseTypeDef
+## DisassociateRoleFromGroupRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import DisassociateRoleFromGroupResponseTypeDef
+from mypy_boto3_greengrass.type_defs import DisassociateRoleFromGroupRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
 
-- `DisassociatedAt`: `str`
+- `GroupId`: `str`
 
-## DisassociateServiceRoleFromAccountResponseTypeDef
+## DisassociateRoleFromGroupResponseResponseTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import DisassociateServiceRoleFromAccountResponseTypeDef
+from mypy_boto3_greengrass.type_defs import DisassociateRoleFromGroupResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `DisassociatedAt`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DisassociateServiceRoleFromAccountResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import DisassociateServiceRoleFromAccountResponseResponseTypeDef
+```
+
+Required fields:
+
+- `DisassociatedAt`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ErrorDetailTypeDef
 
@@ -712,24 +1257,46 @@ Optional fields:
 - `FunctionConfiguration`:
   [FunctionConfigurationTypeDef](./type_defs.md#functionconfigurationtypedef)
 
-## GetAssociatedRoleResponseTypeDef
+## GetAssociatedRoleRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import GetAssociatedRoleResponseTypeDef
+from mypy_boto3_greengrass.type_defs import GetAssociatedRoleRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `GroupId`: `str`
+
+## GetAssociatedRoleResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import GetAssociatedRoleResponseResponseTypeDef
+```
+
+Required fields:
 
 - `AssociatedAt`: `str`
 - `RoleArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBulkDeploymentStatusResponseTypeDef
+## GetBulkDeploymentStatusRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import GetBulkDeploymentStatusResponseTypeDef
+from mypy_boto3_greengrass.type_defs import GetBulkDeploymentStatusRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `BulkDeploymentId`: `str`
+
+## GetBulkDeploymentStatusResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import GetBulkDeploymentStatusResponseResponseTypeDef
+```
+
+Required fields:
 
 - `BulkDeploymentMetrics`:
   [BulkDeploymentMetricsTypeDef](./type_defs.md#bulkdeploymentmetricstypedef)
@@ -740,26 +1307,50 @@ Optional fields:
   `List`\[[ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)\]
 - `ErrorMessage`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetConnectivityInfoResponseTypeDef
+## GetConnectivityInfoRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import GetConnectivityInfoResponseTypeDef
+from mypy_boto3_greengrass.type_defs import GetConnectivityInfoRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ThingName`: `str`
+
+## GetConnectivityInfoResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import GetConnectivityInfoResponseResponseTypeDef
+```
+
+Required fields:
 
 - `ConnectivityInfo`:
   `List`\[[ConnectivityInfoTypeDef](./type_defs.md#connectivityinfotypedef)\]
 - `Message`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetConnectorDefinitionResponseTypeDef
+## GetConnectorDefinitionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import GetConnectorDefinitionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import GetConnectorDefinitionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ConnectorDefinitionId`: `str`
+
+## GetConnectorDefinitionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import GetConnectorDefinitionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
@@ -769,14 +1360,31 @@ Optional fields:
 - `LatestVersionArn`: `str`
 - `Name`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetConnectorDefinitionVersionResponseTypeDef
+## GetConnectorDefinitionVersionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import GetConnectorDefinitionVersionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import GetConnectorDefinitionVersionRequestTypeDef
 ```
 
+Required fields:
+
+- `ConnectorDefinitionId`: `str`
+- `ConnectorDefinitionVersionId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+
+## GetConnectorDefinitionVersionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import GetConnectorDefinitionVersionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
@@ -785,14 +1393,26 @@ Optional fields:
 - `Id`: `str`
 - `NextToken`: `str`
 - `Version`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCoreDefinitionResponseTypeDef
+## GetCoreDefinitionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import GetCoreDefinitionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import GetCoreDefinitionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `CoreDefinitionId`: `str`
+
+## GetCoreDefinitionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import GetCoreDefinitionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
@@ -802,14 +1422,27 @@ Optional fields:
 - `LatestVersionArn`: `str`
 - `Name`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCoreDefinitionVersionResponseTypeDef
+## GetCoreDefinitionVersionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import GetCoreDefinitionVersionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import GetCoreDefinitionVersionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `CoreDefinitionId`: `str`
+- `CoreDefinitionVersionId`: `str`
+
+## GetCoreDefinitionVersionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import GetCoreDefinitionVersionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
@@ -818,14 +1451,27 @@ Optional fields:
 - `Id`: `str`
 - `NextToken`: `str`
 - `Version`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDeploymentStatusResponseTypeDef
+## GetDeploymentStatusRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import GetDeploymentStatusResponseTypeDef
+from mypy_boto3_greengrass.type_defs import GetDeploymentStatusRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DeploymentId`: `str`
+- `GroupId`: `str`
+
+## GetDeploymentStatusResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import GetDeploymentStatusResponseResponseTypeDef
+```
+
+Required fields:
 
 - `DeploymentStatus`: `str`
 - `DeploymentType`: [DeploymentTypeType](./literals.md#deploymenttypetype)
@@ -833,14 +1479,26 @@ Optional fields:
   `List`\[[ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)\]
 - `ErrorMessage`: `str`
 - `UpdatedAt`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDeviceDefinitionResponseTypeDef
+## GetDeviceDefinitionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import GetDeviceDefinitionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import GetDeviceDefinitionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `DeviceDefinitionId`: `str`
+
+## GetDeviceDefinitionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import GetDeviceDefinitionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
@@ -850,14 +1508,31 @@ Optional fields:
 - `LatestVersionArn`: `str`
 - `Name`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDeviceDefinitionVersionResponseTypeDef
+## GetDeviceDefinitionVersionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import GetDeviceDefinitionVersionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import GetDeviceDefinitionVersionRequestTypeDef
 ```
 
+Required fields:
+
+- `DeviceDefinitionId`: `str`
+- `DeviceDefinitionVersionId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+
+## GetDeviceDefinitionVersionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import GetDeviceDefinitionVersionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
@@ -866,14 +1541,26 @@ Optional fields:
 - `Id`: `str`
 - `NextToken`: `str`
 - `Version`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFunctionDefinitionResponseTypeDef
+## GetFunctionDefinitionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import GetFunctionDefinitionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import GetFunctionDefinitionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `FunctionDefinitionId`: `str`
+
+## GetFunctionDefinitionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import GetFunctionDefinitionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
@@ -883,14 +1570,31 @@ Optional fields:
 - `LatestVersionArn`: `str`
 - `Name`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFunctionDefinitionVersionResponseTypeDef
+## GetFunctionDefinitionVersionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import GetFunctionDefinitionVersionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import GetFunctionDefinitionVersionRequestTypeDef
 ```
 
+Required fields:
+
+- `FunctionDefinitionId`: `str`
+- `FunctionDefinitionVersionId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+
+## GetFunctionDefinitionVersionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import GetFunctionDefinitionVersionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
@@ -899,38 +1603,75 @@ Optional fields:
 - `Id`: `str`
 - `NextToken`: `str`
 - `Version`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetGroupCertificateAuthorityResponseTypeDef
+## GetGroupCertificateAuthorityRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import GetGroupCertificateAuthorityResponseTypeDef
+from mypy_boto3_greengrass.type_defs import GetGroupCertificateAuthorityRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `CertificateAuthorityId`: `str`
+- `GroupId`: `str`
+
+## GetGroupCertificateAuthorityResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import GetGroupCertificateAuthorityResponseResponseTypeDef
+```
+
+Required fields:
 
 - `GroupCertificateAuthorityArn`: `str`
 - `GroupCertificateAuthorityId`: `str`
 - `PemEncodedCertificate`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetGroupCertificateConfigurationResponseTypeDef
+## GetGroupCertificateConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import GetGroupCertificateConfigurationResponseTypeDef
+from mypy_boto3_greengrass.type_defs import GetGroupCertificateConfigurationRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `GroupId`: `str`
+
+## GetGroupCertificateConfigurationResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import GetGroupCertificateConfigurationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `CertificateAuthorityExpiryInMilliseconds`: `str`
 - `CertificateExpiryInMilliseconds`: `str`
 - `GroupId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetGroupResponseTypeDef
+## GetGroupRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import GetGroupResponseTypeDef
+from mypy_boto3_greengrass.type_defs import GetGroupRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `GroupId`: `str`
+
+## GetGroupResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import GetGroupResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
@@ -940,28 +1681,53 @@ Optional fields:
 - `LatestVersionArn`: `str`
 - `Name`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetGroupVersionResponseTypeDef
+## GetGroupVersionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import GetGroupVersionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import GetGroupVersionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `GroupId`: `str`
+- `GroupVersionId`: `str`
+
+## GetGroupVersionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import GetGroupVersionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
 - `Definition`: [GroupVersionTypeDef](./type_defs.md#groupversiontypedef)
 - `Id`: `str`
 - `Version`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLoggerDefinitionResponseTypeDef
+## GetLoggerDefinitionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import GetLoggerDefinitionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import GetLoggerDefinitionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `LoggerDefinitionId`: `str`
+
+## GetLoggerDefinitionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import GetLoggerDefinitionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
@@ -971,14 +1737,31 @@ Optional fields:
 - `LatestVersionArn`: `str`
 - `Name`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLoggerDefinitionVersionResponseTypeDef
+## GetLoggerDefinitionVersionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import GetLoggerDefinitionVersionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import GetLoggerDefinitionVersionRequestTypeDef
 ```
 
+Required fields:
+
+- `LoggerDefinitionId`: `str`
+- `LoggerDefinitionVersionId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+
+## GetLoggerDefinitionVersionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import GetLoggerDefinitionVersionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
@@ -986,14 +1769,26 @@ Optional fields:
   [LoggerDefinitionVersionTypeDef](./type_defs.md#loggerdefinitionversiontypedef)
 - `Id`: `str`
 - `Version`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResourceDefinitionResponseTypeDef
+## GetResourceDefinitionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import GetResourceDefinitionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import GetResourceDefinitionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceDefinitionId`: `str`
+
+## GetResourceDefinitionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import GetResourceDefinitionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
@@ -1003,14 +1798,27 @@ Optional fields:
 - `LatestVersionArn`: `str`
 - `Name`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResourceDefinitionVersionResponseTypeDef
+## GetResourceDefinitionVersionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import GetResourceDefinitionVersionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import GetResourceDefinitionVersionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceDefinitionId`: `str`
+- `ResourceDefinitionVersionId`: `str`
+
+## GetResourceDefinitionVersionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import GetResourceDefinitionVersionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
@@ -1018,25 +1826,39 @@ Optional fields:
   [ResourceDefinitionVersionTypeDef](./type_defs.md#resourcedefinitionversiontypedef)
 - `Id`: `str`
 - `Version`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetServiceRoleForAccountResponseTypeDef
+## GetServiceRoleForAccountResponseResponseTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import GetServiceRoleForAccountResponseTypeDef
+from mypy_boto3_greengrass.type_defs import GetServiceRoleForAccountResponseResponseTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `AssociatedAt`: `str`
 - `RoleArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSubscriptionDefinitionResponseTypeDef
+## GetSubscriptionDefinitionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import GetSubscriptionDefinitionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import GetSubscriptionDefinitionRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `SubscriptionDefinitionId`: `str`
+
+## GetSubscriptionDefinitionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import GetSubscriptionDefinitionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
@@ -1046,14 +1868,31 @@ Optional fields:
 - `LatestVersionArn`: `str`
 - `Name`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSubscriptionDefinitionVersionResponseTypeDef
+## GetSubscriptionDefinitionVersionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import GetSubscriptionDefinitionVersionResponseTypeDef
+from mypy_boto3_greengrass.type_defs import GetSubscriptionDefinitionVersionRequestTypeDef
 ```
 
+Required fields:
+
+- `SubscriptionDefinitionId`: `str`
+- `SubscriptionDefinitionVersionId`: `str`
+
 Optional fields:
+
+- `NextToken`: `str`
+
+## GetSubscriptionDefinitionVersionResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import GetSubscriptionDefinitionVersionResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Arn`: `str`
 - `CreationTimestamp`: `str`
@@ -1062,17 +1901,31 @@ Optional fields:
 - `Id`: `str`
 - `NextToken`: `str`
 - `Version`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetThingRuntimeConfigurationResponseTypeDef
+## GetThingRuntimeConfigurationRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import GetThingRuntimeConfigurationResponseTypeDef
+from mypy_boto3_greengrass.type_defs import GetThingRuntimeConfigurationRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ThingName`: `str`
+
+## GetThingRuntimeConfigurationResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import GetThingRuntimeConfigurationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `RuntimeConfiguration`:
   [RuntimeConfigurationTypeDef](./type_defs.md#runtimeconfigurationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GroupCertificateAuthorityPropertiesTypeDef
 
@@ -1128,254 +1981,565 @@ Optional fields:
 - `ResourceDefinitionVersionArn`: `str`
 - `SubscriptionDefinitionVersionArn`: `str`
 
-## ListBulkDeploymentDetailedReportsResponseTypeDef
+## ListBulkDeploymentDetailedReportsRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import ListBulkDeploymentDetailedReportsResponseTypeDef
+from mypy_boto3_greengrass.type_defs import ListBulkDeploymentDetailedReportsRequestTypeDef
 ```
 
+Required fields:
+
+- `BulkDeploymentId`: `str`
+
 Optional fields:
+
+- `MaxResults`: `str`
+- `NextToken`: `str`
+
+## ListBulkDeploymentDetailedReportsResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import ListBulkDeploymentDetailedReportsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Deployments`:
   `List`\[[BulkDeploymentResultTypeDef](./type_defs.md#bulkdeploymentresulttypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListBulkDeploymentsResponseTypeDef
+## ListBulkDeploymentsRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import ListBulkDeploymentsResponseTypeDef
+from mypy_boto3_greengrass.type_defs import ListBulkDeploymentsRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `str`
+- `NextToken`: `str`
+
+## ListBulkDeploymentsResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import ListBulkDeploymentsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `BulkDeployments`:
   `List`\[[BulkDeploymentTypeDef](./type_defs.md#bulkdeploymenttypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListConnectorDefinitionVersionsResponseTypeDef
+## ListConnectorDefinitionVersionsRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import ListConnectorDefinitionVersionsResponseTypeDef
+from mypy_boto3_greengrass.type_defs import ListConnectorDefinitionVersionsRequestTypeDef
 ```
 
+Required fields:
+
+- `ConnectorDefinitionId`: `str`
+
 Optional fields:
+
+- `MaxResults`: `str`
+- `NextToken`: `str`
+
+## ListConnectorDefinitionVersionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import ListConnectorDefinitionVersionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `Versions`:
   `List`\[[VersionInformationTypeDef](./type_defs.md#versioninformationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListConnectorDefinitionsResponseTypeDef
+## ListConnectorDefinitionsRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import ListConnectorDefinitionsResponseTypeDef
+from mypy_boto3_greengrass.type_defs import ListConnectorDefinitionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `str`
+- `NextToken`: `str`
+
+## ListConnectorDefinitionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import ListConnectorDefinitionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Definitions`:
   `List`\[[DefinitionInformationTypeDef](./type_defs.md#definitioninformationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListCoreDefinitionVersionsResponseTypeDef
+## ListCoreDefinitionVersionsRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import ListCoreDefinitionVersionsResponseTypeDef
+from mypy_boto3_greengrass.type_defs import ListCoreDefinitionVersionsRequestTypeDef
 ```
 
+Required fields:
+
+- `CoreDefinitionId`: `str`
+
 Optional fields:
+
+- `MaxResults`: `str`
+- `NextToken`: `str`
+
+## ListCoreDefinitionVersionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import ListCoreDefinitionVersionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `Versions`:
   `List`\[[VersionInformationTypeDef](./type_defs.md#versioninformationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListCoreDefinitionsResponseTypeDef
+## ListCoreDefinitionsRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import ListCoreDefinitionsResponseTypeDef
+from mypy_boto3_greengrass.type_defs import ListCoreDefinitionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `str`
+- `NextToken`: `str`
+
+## ListCoreDefinitionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import ListCoreDefinitionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Definitions`:
   `List`\[[DefinitionInformationTypeDef](./type_defs.md#definitioninformationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDeploymentsResponseTypeDef
+## ListDeploymentsRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import ListDeploymentsResponseTypeDef
+from mypy_boto3_greengrass.type_defs import ListDeploymentsRequestTypeDef
 ```
 
+Required fields:
+
+- `GroupId`: `str`
+
 Optional fields:
+
+- `MaxResults`: `str`
+- `NextToken`: `str`
+
+## ListDeploymentsResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import ListDeploymentsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Deployments`:
   `List`\[[DeploymentTypeDef](./type_defs.md#deploymenttypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDeviceDefinitionVersionsResponseTypeDef
+## ListDeviceDefinitionVersionsRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import ListDeviceDefinitionVersionsResponseTypeDef
+from mypy_boto3_greengrass.type_defs import ListDeviceDefinitionVersionsRequestTypeDef
 ```
 
+Required fields:
+
+- `DeviceDefinitionId`: `str`
+
 Optional fields:
+
+- `MaxResults`: `str`
+- `NextToken`: `str`
+
+## ListDeviceDefinitionVersionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import ListDeviceDefinitionVersionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `Versions`:
   `List`\[[VersionInformationTypeDef](./type_defs.md#versioninformationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDeviceDefinitionsResponseTypeDef
+## ListDeviceDefinitionsRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import ListDeviceDefinitionsResponseTypeDef
+from mypy_boto3_greengrass.type_defs import ListDeviceDefinitionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `str`
+- `NextToken`: `str`
+
+## ListDeviceDefinitionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import ListDeviceDefinitionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Definitions`:
   `List`\[[DefinitionInformationTypeDef](./type_defs.md#definitioninformationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFunctionDefinitionVersionsResponseTypeDef
+## ListFunctionDefinitionVersionsRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import ListFunctionDefinitionVersionsResponseTypeDef
+from mypy_boto3_greengrass.type_defs import ListFunctionDefinitionVersionsRequestTypeDef
 ```
 
+Required fields:
+
+- `FunctionDefinitionId`: `str`
+
 Optional fields:
+
+- `MaxResults`: `str`
+- `NextToken`: `str`
+
+## ListFunctionDefinitionVersionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import ListFunctionDefinitionVersionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `Versions`:
   `List`\[[VersionInformationTypeDef](./type_defs.md#versioninformationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFunctionDefinitionsResponseTypeDef
+## ListFunctionDefinitionsRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import ListFunctionDefinitionsResponseTypeDef
+from mypy_boto3_greengrass.type_defs import ListFunctionDefinitionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `str`
+- `NextToken`: `str`
+
+## ListFunctionDefinitionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import ListFunctionDefinitionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Definitions`:
   `List`\[[DefinitionInformationTypeDef](./type_defs.md#definitioninformationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListGroupCertificateAuthoritiesResponseTypeDef
+## ListGroupCertificateAuthoritiesRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import ListGroupCertificateAuthoritiesResponseTypeDef
+from mypy_boto3_greengrass.type_defs import ListGroupCertificateAuthoritiesRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `GroupId`: `str`
+
+## ListGroupCertificateAuthoritiesResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import ListGroupCertificateAuthoritiesResponseResponseTypeDef
+```
+
+Required fields:
 
 - `GroupCertificateAuthorities`:
   `List`\[[GroupCertificateAuthorityPropertiesTypeDef](./type_defs.md#groupcertificateauthoritypropertiestypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListGroupVersionsResponseTypeDef
+## ListGroupVersionsRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import ListGroupVersionsResponseTypeDef
+from mypy_boto3_greengrass.type_defs import ListGroupVersionsRequestTypeDef
 ```
 
+Required fields:
+
+- `GroupId`: `str`
+
 Optional fields:
+
+- `MaxResults`: `str`
+- `NextToken`: `str`
+
+## ListGroupVersionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import ListGroupVersionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `Versions`:
   `List`\[[VersionInformationTypeDef](./type_defs.md#versioninformationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListGroupsResponseTypeDef
+## ListGroupsRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import ListGroupsResponseTypeDef
+from mypy_boto3_greengrass.type_defs import ListGroupsRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `str`
+- `NextToken`: `str`
+
+## ListGroupsResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import ListGroupsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Groups`:
   `List`\[[GroupInformationTypeDef](./type_defs.md#groupinformationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListLoggerDefinitionVersionsResponseTypeDef
+## ListLoggerDefinitionVersionsRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import ListLoggerDefinitionVersionsResponseTypeDef
+from mypy_boto3_greengrass.type_defs import ListLoggerDefinitionVersionsRequestTypeDef
 ```
 
+Required fields:
+
+- `LoggerDefinitionId`: `str`
+
 Optional fields:
+
+- `MaxResults`: `str`
+- `NextToken`: `str`
+
+## ListLoggerDefinitionVersionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import ListLoggerDefinitionVersionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `Versions`:
   `List`\[[VersionInformationTypeDef](./type_defs.md#versioninformationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListLoggerDefinitionsResponseTypeDef
+## ListLoggerDefinitionsRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import ListLoggerDefinitionsResponseTypeDef
+from mypy_boto3_greengrass.type_defs import ListLoggerDefinitionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `str`
+- `NextToken`: `str`
+
+## ListLoggerDefinitionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import ListLoggerDefinitionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Definitions`:
   `List`\[[DefinitionInformationTypeDef](./type_defs.md#definitioninformationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListResourceDefinitionVersionsResponseTypeDef
+## ListResourceDefinitionVersionsRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import ListResourceDefinitionVersionsResponseTypeDef
+from mypy_boto3_greengrass.type_defs import ListResourceDefinitionVersionsRequestTypeDef
 ```
 
+Required fields:
+
+- `ResourceDefinitionId`: `str`
+
 Optional fields:
+
+- `MaxResults`: `str`
+- `NextToken`: `str`
+
+## ListResourceDefinitionVersionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import ListResourceDefinitionVersionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `Versions`:
   `List`\[[VersionInformationTypeDef](./type_defs.md#versioninformationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListResourceDefinitionsResponseTypeDef
+## ListResourceDefinitionsRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import ListResourceDefinitionsResponseTypeDef
+from mypy_boto3_greengrass.type_defs import ListResourceDefinitionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `str`
+- `NextToken`: `str`
+
+## ListResourceDefinitionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import ListResourceDefinitionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Definitions`:
   `List`\[[DefinitionInformationTypeDef](./type_defs.md#definitioninformationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSubscriptionDefinitionVersionsResponseTypeDef
+## ListSubscriptionDefinitionVersionsRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import ListSubscriptionDefinitionVersionsResponseTypeDef
+from mypy_boto3_greengrass.type_defs import ListSubscriptionDefinitionVersionsRequestTypeDef
 ```
 
+Required fields:
+
+- `SubscriptionDefinitionId`: `str`
+
 Optional fields:
+
+- `MaxResults`: `str`
+- `NextToken`: `str`
+
+## ListSubscriptionDefinitionVersionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import ListSubscriptionDefinitionVersionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `NextToken`: `str`
 - `Versions`:
   `List`\[[VersionInformationTypeDef](./type_defs.md#versioninformationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSubscriptionDefinitionsResponseTypeDef
+## ListSubscriptionDefinitionsRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import ListSubscriptionDefinitionsResponseTypeDef
+from mypy_boto3_greengrass.type_defs import ListSubscriptionDefinitionsRequestTypeDef
 ```
 
 Optional fields:
+
+- `MaxResults`: `str`
+- `NextToken`: `str`
+
+## ListSubscriptionDefinitionsResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import ListSubscriptionDefinitionsResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Definitions`:
   `List`\[[DefinitionInformationTypeDef](./type_defs.md#definitioninformationtypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceResponseTypeDef
+## ListTagsForResourceRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import ListTagsForResourceResponseTypeDef
+from mypy_boto3_greengrass.type_defs import ListTagsForResourceRequestTypeDef
 ```
 
-Optional fields:
+Required fields:
+
+- `ResourceArn`: `str`
+
+## ListTagsForResourceResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import ListTagsForResourceResponseResponseTypeDef
+```
+
+Required fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## LocalDeviceResourceDataTypeDef
 
@@ -1441,16 +2605,33 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## ResetDeploymentsResponseTypeDef
+## ResetDeploymentsRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import ResetDeploymentsResponseTypeDef
+from mypy_boto3_greengrass.type_defs import ResetDeploymentsRequestTypeDef
 ```
+
+Required fields:
+
+- `GroupId`: `str`
 
 Optional fields:
 
+- `AmznClientToken`: `str`
+- `Force`: `bool`
+
+## ResetDeploymentsResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import ResetDeploymentsResponseResponseTypeDef
+```
+
+Required fields:
+
 - `DeploymentArn`: `str`
 - `DeploymentId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ResourceAccessPolicyTypeDef
 
@@ -1519,6 +2700,20 @@ Required fields:
 - `ResourceDataContainer`:
   [ResourceDataContainerTypeDef](./type_defs.md#resourcedatacontainertypedef)
 
+## ResponseMetadataTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import ResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `RequestId`: `str`
+- `HostId`: `str`
+- `HTTPStatusCode`: `int`
+- `HTTPHeaders`: `Dict`\[`str`, `Any`\]
+- `RetryAttempts`: `int`
+
 ## RuntimeConfigurationTypeDef
 
 ```python
@@ -1567,15 +2762,43 @@ Optional fields:
 - `ARN`: `str`
 - `AdditionalStagingLabelsToDownload`: `List`\[`str`\]
 
-## StartBulkDeploymentResponseTypeDef
+## StartBulkDeploymentRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import StartBulkDeploymentResponseTypeDef
+from mypy_boto3_greengrass.type_defs import StartBulkDeploymentRequestTypeDef
 ```
+
+Required fields:
+
+- `ExecutionRoleArn`: `str`
+- `InputFileUri`: `str`
 
 Optional fields:
 
+- `AmznClientToken`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## StartBulkDeploymentResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import StartBulkDeploymentResponseResponseTypeDef
+```
+
+Required fields:
+
 - `BulkDeploymentArn`: `str`
+- `BulkDeploymentId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## StopBulkDeploymentRequestTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import StopBulkDeploymentRequestTypeDef
+```
+
+Required fields:
+
 - `BulkDeploymentId`: `str`
 
 ## SubscriptionDefinitionVersionTypeDef
@@ -1602,6 +2825,20 @@ Required fields:
 - `Subject`: `str`
 - `Target`: `str`
 
+## TagResourceRequestTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import TagResourceRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+
+Optional fields:
+
+- `tags`: `Dict`\[`str`, `str`\]
+
 ## TelemetryConfigurationTypeDef
 
 ```python
@@ -1627,28 +2864,199 @@ Required fields:
 
 - `Telemetry`: [TelemetryType](./literals.md#telemetrytype)
 
-## UpdateConnectivityInfoResponseTypeDef
+## UntagResourceRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import UpdateConnectivityInfoResponseTypeDef
+from mypy_boto3_greengrass.type_defs import UntagResourceRequestTypeDef
 ```
 
+Required fields:
+
+- `ResourceArn`: `str`
+- `TagKeys`: `List`\[`str`\]
+
+## UpdateConnectivityInfoRequestTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import UpdateConnectivityInfoRequestTypeDef
+```
+
+Required fields:
+
+- `ThingName`: `str`
+
 Optional fields:
+
+- `ConnectivityInfo`:
+  `List`\[[ConnectivityInfoTypeDef](./type_defs.md#connectivityinfotypedef)\]
+
+## UpdateConnectivityInfoResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import UpdateConnectivityInfoResponseResponseTypeDef
+```
+
+Required fields:
 
 - `Message`: `str`
 - `Version`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateGroupCertificateConfigurationResponseTypeDef
+## UpdateConnectorDefinitionRequestTypeDef
 
 ```python
-from mypy_boto3_greengrass.type_defs import UpdateGroupCertificateConfigurationResponseTypeDef
+from mypy_boto3_greengrass.type_defs import UpdateConnectorDefinitionRequestTypeDef
 ```
 
+Required fields:
+
+- `ConnectorDefinitionId`: `str`
+
 Optional fields:
+
+- `Name`: `str`
+
+## UpdateCoreDefinitionRequestTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import UpdateCoreDefinitionRequestTypeDef
+```
+
+Required fields:
+
+- `CoreDefinitionId`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+
+## UpdateDeviceDefinitionRequestTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import UpdateDeviceDefinitionRequestTypeDef
+```
+
+Required fields:
+
+- `DeviceDefinitionId`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+
+## UpdateFunctionDefinitionRequestTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import UpdateFunctionDefinitionRequestTypeDef
+```
+
+Required fields:
+
+- `FunctionDefinitionId`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+
+## UpdateGroupCertificateConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import UpdateGroupCertificateConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `GroupId`: `str`
+
+Optional fields:
+
+- `CertificateExpiryInMilliseconds`: `str`
+
+## UpdateGroupCertificateConfigurationResponseResponseTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import UpdateGroupCertificateConfigurationResponseResponseTypeDef
+```
+
+Required fields:
 
 - `CertificateAuthorityExpiryInMilliseconds`: `str`
 - `CertificateExpiryInMilliseconds`: `str`
 - `GroupId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateGroupRequestTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import UpdateGroupRequestTypeDef
+```
+
+Required fields:
+
+- `GroupId`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+
+## UpdateLoggerDefinitionRequestTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import UpdateLoggerDefinitionRequestTypeDef
+```
+
+Required fields:
+
+- `LoggerDefinitionId`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+
+## UpdateResourceDefinitionRequestTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import UpdateResourceDefinitionRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceDefinitionId`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+
+## UpdateSubscriptionDefinitionRequestTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import UpdateSubscriptionDefinitionRequestTypeDef
+```
+
+Required fields:
+
+- `SubscriptionDefinitionId`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+
+## UpdateThingRuntimeConfigurationRequestTypeDef
+
+```python
+from mypy_boto3_greengrass.type_defs import UpdateThingRuntimeConfigurationRequestTypeDef
+```
+
+Required fields:
+
+- `ThingName`: `str`
+
+Optional fields:
+
+- `TelemetryConfiguration`:
+  [TelemetryConfigurationUpdateTypeDef](./type_defs.md#telemetryconfigurationupdatetypedef)
 
 ## VersionInformationTypeDef
 
